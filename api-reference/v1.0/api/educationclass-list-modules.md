@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 Retrieve a list of [module](../resources/educationmodule.md) objects. Only teachers, students, and applications with application permissions can perform this operation.
 
 A teacher or an application with application permissions can see all module objects for the class. Students can only see published modules.
@@ -24,16 +22,19 @@ A teacher or an application with application permissions can see all module obje
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationclass_list_modules" } -->
+
 [!INCLUDE [permissions-table](../includes/permissions/educationclass-list-modules-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/classes/{id}/modules
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 The available `$expand` option for this method is: `resources`.
@@ -71,7 +72,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

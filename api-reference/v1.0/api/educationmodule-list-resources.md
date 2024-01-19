@@ -11,20 +11,22 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 Get all the [educationModuleResource](../resources/educationmoduleresource.md) objects associated with a [module](../resources/educationmodule.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationmodule_list_resources" } -->
+
 [!INCLUDE [permissions-table](../includes/permissions/educationmodule-list-resources-permissions.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/classes/{id}/modules/{id}/resources
 ```
@@ -33,34 +35,40 @@ GET /education/classes/{id}/modules/{id}/resources
 
 This method supports the `$expand` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [educationModuleResource](../resources/educationmoduleresource.md) objects in the response body.
 
 ## Example
+
 ### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "get_moduleresources_1"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/ba8e4215-4fb2-4dba-abe7-a8f2585177d3/resources
 ```
 
 ### Response
+
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

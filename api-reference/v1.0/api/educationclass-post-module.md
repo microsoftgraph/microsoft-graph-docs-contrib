@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 Create a new [module](../resources/educationmodule.md) in a [class](../resources/educationclass.md).
 
 Only teachers in a class can create a module. Modules start in the `draft` state, which means that students won't see the modules until publication.
@@ -20,38 +18,47 @@ Only teachers in a class can create a module. Modules start in the `draft` state
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationclass_post_module" } -->
+
 [!INCLUDE [permissions-table](../includes/permissions/educationclass-post-module-permissions.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /education/classes/{id}/modules
 ```
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json. Required. |
+
+| Header        | Value                       |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of an [educationModule](../resources/educationmodule.md) object.
 
 ## Response
+
 If successful, this method returns a `201 OK` response code and an [educationModule](../resources/educationmodule.md) object in the request body.
 
 ## Example
 
 ### Request
+
 Here's an example of the request.
 
 <!-- {
   "blockType": "request",
   "name": "create_educationmodule_from_educationclass"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules
 Content-type: application/json
@@ -63,15 +70,17 @@ Content-type: application/json
 ```
 
 ### Response
+
 Here's an example of the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationModule"
 } -->
+
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json

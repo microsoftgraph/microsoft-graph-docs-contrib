@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete an existing [module](../resources/educationmodule.md) in a [class](../resources/educationclass.md). Only teachers within a class can delete modules.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -22,6 +20,7 @@ Delete an existing [module](../resources/educationmodule.md) in a [class](../res
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationmodule_delete" } -->
+
 [!INCLUDE [permissions-table](../includes/permissions/educationmodule-delete-permissions.md)]
 
 ## HTTP request
@@ -62,6 +61,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-856
 ```
 
 ### Response
+
 The following example shows the response.
 
 <!-- {

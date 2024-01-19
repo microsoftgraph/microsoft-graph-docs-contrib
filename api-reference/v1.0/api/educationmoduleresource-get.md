@@ -11,63 +11,73 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the properties of a [resource](../resources/educationmoduleresource.md) associated with a [module](../resources/educationmodule.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationmoduleresource_get" } -->
+
 [!INCLUDE [permissions-table](../includes/permissions/educationmoduleresource-get-permissions.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/classes/{class-id}/modules/{module-id}/resources/{resource-id}
 ```
 
 ## Optional query parameters
 
-This method supports the  `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an [educationModuleResource](../resources/educationmoduleresource.md) object in the response body.
 
 ## Examples
+
 ### Example 1: Get an educationWordResource
+
 #### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "get_educationmoduleresource_e1"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/24eda3bf-32e5-4c70-a14d-831e606a2e4f/resources/e37696c1-78f9-43b4-aff4-dbad0ff5ff93
 ```
 
 #### Response
+
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationWordResource"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -100,22 +110,26 @@ Content-type: application/json
         }
     }
 }
-    
+
 ```
 
 ### Example 2: Get an educationLinkResource
+
 #### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "get_educationlinkresource_from_educationmodule_e2"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/4a46c2c9-64ca-4487-950e-b3e74fb82873/resources/51db9183-99af-426a-81b2-27a6031e6a10
 ```
 
 #### Response
+
 The following example shows the response.
 
 <!-- {
@@ -123,6 +137,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationLinkResource"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -158,18 +173,22 @@ Content-type: application/json
 ```
 
 ### Example 3: Get an educationExcelResource
+
 #### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "get_educationexcelresource_from_educationmodule_e3"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/24eda3bf-32e5-4c70-a14d-831e606a2e4f/resources/726c6174-bb3f-4b9f-bea0-4b6d49d0cda5
 ```
 
 #### Response
+
 The following example shows the response.
 
 <!-- {
@@ -177,6 +196,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationExcelResource"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -212,18 +232,22 @@ Content-type: application/json
 ```
 
 ### Example 4: Get an educationPowerPointResource
+
 #### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "get_educationpowerpointresource_from_educationmodule_e4"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/24eda3bf-32e5-4c70-a14d-831e606a2e4f/resources/896c2111-4d04-4b07-8a32-4565f3ba8597
 ```
 
 #### Response
+
 The following example shows the response.
 
 <!-- {
@@ -231,6 +255,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationPowerPointResource"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -266,18 +291,22 @@ Content-type: application/json
 ```
 
 ### Example 5: Get an educationFileResource
+
 #### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "get_educationfileresource_from_educationmodule_e5"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/24eda3bf-32e5-4c70-a14d-831e606a2e4f/resources/f78606dd-c8c9-445d-8ad7-1cd1b7940645
 ```
 
 #### Response
+
 The following example shows the response.
 
 <!-- {
@@ -285,6 +314,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationFileResource"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -320,18 +350,22 @@ Content-type: application/json
 ```
 
 ### Example 6: Get an educationMediaResource
+
 #### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "get_educationmediaresource_from_educationmodule_e6"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/24eda3bf-32e5-4c70-a14d-831e606a2e4f/resources/dc25cc0a-f135-4c91-b5af-b13e1ca3c9c8
 ```
 
 #### Response
+
 The following example shows the response.
 
 <!-- {
@@ -339,6 +373,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationMediaResource"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -374,18 +409,22 @@ Content-type: application/json
 ```
 
 ### Example 7: Get an educationChannelResource
+
 #### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "get_educationchannelresource_from_educationmodule_e6"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/24eda3bf-32e5-4c70-a14d-831e606a2e4f/resources/7c4d9607-e1db-497f-b4e4-7de68b370842
 ```
 
 #### Response
+
 The following example shows the response.
 
 <!-- {
@@ -393,6 +432,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationChannelResource"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -428,18 +468,22 @@ Content-type: application/json
 ```
 
 ### Example 8: Get an educationLinkedAssignmentResource
+
 #### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "get_educationlinkedassignmentresource_from_educationmodule_e6"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/24eda3bf-32e5-4c70-a14d-831e606a2e4f/resources/935c8f17-32d6-4615-9587-72091798aee1
 ```
 
 #### Response
+
 The following example shows the response.
 
 <!-- {
@@ -447,6 +491,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationLinkedAssignmentResource"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 Create a [resource](../resources/educationmoduleresource.md) in a [module](../resources/educationmodule.md). Only teachers can perform this operation.
 
 You can create the following types of module resources:
@@ -26,32 +24,39 @@ You can create the following types of module resources:
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationWordResource](../resources/educationwordresource.md)
 
-Every resource has an **@odata.type** property to indicate which type of resource is being created. 
+Every resource has an **@odata.type** property to indicate which type of resource is being created.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > To upload a module resource, you need to first [set up the resources folder](../api/educationmodule-setupresourcesfolder.md) for the [educationModule](../resources/educationmodule.md) where the files will be uploaded.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationmodule_post_resources" } -->
+
 [!INCLUDE [permissions-table](../includes/permissions/educationmodule-post-resources-permissions.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /education/classes/{class-id}/modules/{module-id}/resources
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
-In the request body, supply a JSON representation of one of the following resource types: 
+
+In the request body, supply a JSON representation of one of the following resource types:
 
 - [educationChannelResource](../resources/educationchannelresource.md)
 - [educationExcelResource](../resources/educationexcelresource.md)
@@ -62,20 +67,25 @@ In the request body, supply a JSON representation of one of the following resour
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationWordResource](../resources/educationwordresource.md)
 
->**Note:** You can't use this operation to create an [educationExternalResource](../resources/educationexternalresource.md).
+> **Note:** You can't use this operation to create an [educationExternalResource](../resources/educationexternalresource.md).
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and an [educationModuleResource](../resources/educationmoduleresource.md) object in the response body.
 
 ## Examples
+
 ## Example 1: Create an educationLinkResource
+
 ### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "create_educationlinkresource_from_educationmodule"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
 Content-type: application/json
@@ -90,15 +100,17 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationLinkResource"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -133,13 +145,16 @@ Content-type: application/json
 ```
 
 ## Example 2: Create an educationWordResource
+
 ### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "create_educationwordresource_from_educationmodule"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/97acf4f0-d62f-4b98-8827-6ac805fb6949/resources
 Content-type: application/json
@@ -156,15 +171,17 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationWordResource"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -199,13 +216,16 @@ Content-type: application/json
 ```
 
 ## Example 3: Create an educationFileResource
+
 ### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "create_educationfileresource_from_educationmodule"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/1babf0b0-c885-4f9d-b008-5b0de0cb835d/resources
 Content-type: application/json
@@ -222,15 +242,17 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationFileResource"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -265,13 +287,16 @@ Content-type: application/json
 ```
 
 ## Example 4: Create an educationExcelResource
+
 ### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "create_educationexcelresource_from_educationmodule"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/6a8242df-f2b6-4fdb-9b80-66b847ef8e75/resources
 Content-type: application/json
@@ -288,15 +313,17 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationExcelResource"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -331,13 +358,16 @@ Content-type: application/json
 ```
 
 ## Example 5: Create an educationPowerPointResource
+
 ### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "create_educationpowerpointresource_from_educationmodule"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/c75c2706-f352-47b4-a11e-f1292305c1d1/resources
 Content-type: application/json
@@ -352,16 +382,17 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
-
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationPowerPointResource"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -396,13 +427,16 @@ Content-type: application/json
 ```
 
 ## Example 6: Create an educationMediaResource
+
 ### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "create_educationmediaresource_from_educationmodule"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
 Content-type: application/json
@@ -417,15 +451,17 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationMediaResource"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -460,13 +496,16 @@ Content-type: application/json
 ```
 
 ## Example 7: Create an educationChannelResource
+
 ### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "create_educationChannelResource_from_educationmodule"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/fe180ab6-4070-40e7-9e9c-eda234fe126a/resources
 Content-type: application/json
@@ -481,15 +520,17 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationChannelResource"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -524,13 +565,16 @@ Content-type: application/json
 ```
 
 ## Example 8: Create an educationLinkedAssignmentResource
+
 ### Request
+
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "create_educationLinkedAssignmentResource_from_educationmodule"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/1babf0b0-c885-4f9d-b008-5b0de0cb835d/resources
 Content-type: application/json
@@ -545,15 +589,17 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationLinkedAssignmentResource"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
