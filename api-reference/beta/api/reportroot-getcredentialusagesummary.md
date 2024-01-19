@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getcredentialusagesummary" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getcredentialusagesummary-permissions.md)]
 
+[!INCLUDE [rbac-reports-registration-usage-apis](../includes/rbac-for-apis/rbac-reports-registration-usage-apis.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
