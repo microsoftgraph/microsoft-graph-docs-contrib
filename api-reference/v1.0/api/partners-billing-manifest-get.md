@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.partners.billing
 
+[!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
+
 
 Read the properties and relationships of a [manifest](../resources/partners-billing-manifest.md) object.
 
