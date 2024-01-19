@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to search questions and answers
 
-You can use the Microsoft Search API in Microsoft Graph to search questions and answers (Q&As). The [**qna**](/graph/api/resources/search-qna) resource represents Q&As in Microsoft Search. Administrators can create Q&As in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas) or via the [Create qna](/graph/api/search-searchentity-post-qnas) API.
+You can use the Microsoft Search API in Microsoft Graph to search questions and answers (Q&As). The [qna](/graph/api/resources/search-qna) resource represents Q&As in Microsoft Search. Administrators can create Q&As in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas) or via the [Create qna](/graph/api/search-searchentity-post-qnas) API.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -74,8 +74,8 @@ Content-type: application/json
 
 ## Known issues
 
-- Sorting, aggregation, and pagination aren't supported for [qna]((/graph/api/resources/search-qna) searches.
-- Combination search with non-Answer entityTypes (that is, driveItem, list) isn't supported. Only combination search with the other Answer entityTypes bookmarks, qna and acronym is supported.
+- Sorting, aggregation, and pagination aren't supported for [qna](/graph/api/resources/search-qna) searches.
+- Combination search with non-answer **entityTypes** (for example, `driveItem` and `list`) isn't supported. Only combination search with the other answer **entityTypes** `bookmark`, `qna`, and `acronym` is supported.
 
 ## Next steps
 
