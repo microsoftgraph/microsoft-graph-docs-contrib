@@ -7,7 +7,8 @@ ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
-ms.date: 05/25/2023
+ms.date: 12/21/2023
+#Customer intent: As a developer, I want to understand how to authenticate and authorize my app to call Microsoft Graph.
 ---
 
 # Authentication and authorization basics
@@ -42,6 +43,9 @@ In this access scenario, a user has signed into a client application and the cli
 Delegated access requires *delegated permissions*, also referred to as *scopes*. Scopes are permissions that are exposed by a given resource and they represent the operations that an app can perform on behalf of a user.
 
 Because both the app and the user must be authorized to make the request, the resource grants the client app the delegated permissions, for the client app to access data on behalf of the specified user. For the user, the actions that they can perform on the resource rely on the permissions that they have to access the resource. For example, the user might be the owner of the resource, or they might be assigned a particular role through a role-based access control system (RBAC) such as [Microsoft Entra RBAC](/azure/active-directory/roles/custom-overview).
+
+> [!NOTE]
+> Endpoints and APIs with the `/me` alias operate on the signed-in user only and are therefore called in delegated access scenarios.
 
 ### App-only access (access without a user)
 

@@ -9,6 +9,7 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "breadcrumb/**",
           "concepts/sdks/snippets/dotnet/**",
           "concepts/sdks/snippets/go/**",
           "concepts/sdks/snippets/java/**",
@@ -20,6 +21,14 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      {
+        "files": [
+          "**.md",
+          "**.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "concepts/breadcrumb"
       }
     ],
     "resource": [

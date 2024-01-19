@@ -35,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerCertificateProfileBase/rootCertificate
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/rootCertificateForServerValidation
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/rootCertificatesForServerValidation/{androidDeviceOwnerTrustedRootCertificateId}
 ```
 
 ## Request headers
