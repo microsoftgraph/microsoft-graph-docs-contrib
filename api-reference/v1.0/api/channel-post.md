@@ -528,12 +528,6 @@ Content-Length: 0
 
 The following example shows how to create a shared channel shared with host team.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_shared_channel_with_host"
-}-->
-
 ```http
 POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
