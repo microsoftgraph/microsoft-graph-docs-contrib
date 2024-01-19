@@ -13,6 +13,8 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
+
 Export the unbilled Azure usage data for a specific billing period and a given currency.
 
 ## Permissions
