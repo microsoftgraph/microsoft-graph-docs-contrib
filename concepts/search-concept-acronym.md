@@ -77,8 +77,8 @@ Content-type: application/json
 
 ## Known issues
 
-- Sorting, aggregation, and pagination are not supported for acronym searches.
-- Combination searches with non-answer entity types (for example, driveItem, list) are not supported. 
+- Sorting, aggregation, and pagination aren't supported for acronym searches.
+- Combination searches with non-answer entity types (for example, **driveItem** and **list**) aren't supported. 
 
 ## Next steps
 
