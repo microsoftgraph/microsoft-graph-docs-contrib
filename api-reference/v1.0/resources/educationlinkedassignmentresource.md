@@ -11,14 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 A subclass of [educationResource](educationresource.md) that represents a link to an [educationAssignment](educationassignment.md). Only assignments from the same class can be attached to the module.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|url|String|URL of the actual assignment.|
+
+| Property | Type   | Description                   |
+| :------- | :----- | :---------------------------- |
+| url      | String | URL of the actual assignment. |
 
 ## JSON representation
 
