@@ -1677,6 +1677,9 @@ Possible values for user account types (group membership), per Windows definitio
 | adminConfirmedServicePrincipalCompromised |
 | adminDismissedAllRiskForServicePrincipal  |
 | m365DAdminDismissedDetection              |
+| userChangedPasswordOnPremises             |
+| adminDismissedRiskForSignIn               |
+| adminConfirmedAccountSafe                 |
 
 ### riskEventTypes values
 
