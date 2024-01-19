@@ -4,9 +4,11 @@ ms.localizationpriority: high
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-Directory permissions provide the highest level of privilege for accessing directory resources such as [user](/graph/api/resources/user), [group](/graph/api/resources/group), and [device](/graph/api/resources/device) in an organization.
+Directory permissions provide the highest level of privilege for managing directory resources such as [user](/graph/api/resources/user), [group](/graph/api/resources/group), [application](/graph/api/resources/application), and [device](/graph/api/resources/device) in an organization. 
 
-They also exclusively control access to other directory resources like: [organizational contacts](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true) and [schema extensions](/graph/api/resources/schemaextension?view=graph-rest-beta&preserve-view=true), as well as many directory resources including administrative units, directory roles, directory settings, and policies.
+The Directory.ReadWrite.All permission grants access that is broadly equivalent to a global tenant admin. Apps that are granted Directory.ReadWrite.All can read, update, and delete the full range of directory resources. In many cases, apps with Directory.ReadWrite.All can also authorize *other* apps, users, and devices to access and modify directory resources. 
+
+Directory permissions should be granted only when necessary. For example, Directory permissions exclusively control access to certain functionality, like [schema extensions](/graph/api/resources/schemaextension?view=graph-rest-beta&preserve-view=true).
 
 Before December 3rd, 2020, when the application permission *Directory.ReadWrite.All* was granted, the [Directory Writers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions) directory role was also assigned. This directory role isn't removed automatically when the associated application permissions are revoked. To remove an application's access to read or write to the directory, customers must also remove any directory roles that were granted to the application.
 
