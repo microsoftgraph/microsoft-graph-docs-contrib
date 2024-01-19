@@ -531,7 +531,7 @@ The following example shows how to create a shared channel shared with host team
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_shared_channel"
+  "name": "create_shared_channel_with_host"
 }-->
 
 ```http
