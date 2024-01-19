@@ -12297,6 +12297,8 @@ items:
                     items:
                       - name: List
                         href: api/accesspackagecatalog-list-accesspackageresources.md
+                      - name: Refresh
+                        href: api/accesspackageresource-refresh.md
                   - name: Access package resource role
                     href: resources/accesspackageresourcerole.md
                     items:
