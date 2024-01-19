@@ -47,6 +47,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code with a [userTeamwork](../resources/userteamwork.md) object in the response body.
 
+[!INCLUDE [supported-regions](../../includes/teamwork-supported-regions.md)]
+
 ## Examples
 
 ### Request
