@@ -533,15 +533,91 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
+### Example 5: Using `$top` and `$expand` to get assignments
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_assignments_top_expand"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?\$top=1&\$expand=gradingScheme
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
-  "type": "#page.annotation",
-  "description": "List assignments",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_grading_schemes_beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments",
+    "@odata.nextLink": "https://canary.graph.microsoft.com/testprodbetaeduAsg_grading_schemes_beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?%5C$top=1&%5C$expand=gradingScheme&$skiptoken=MyZRVkZCUVVGQlFVRklaMFZCUVVGQlFVRkJRWGxCUVVGQlpFZENSalZ2UWxWNVZVOUhhMUl5YlVGdk1GVjVaejA5",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignments?$select=addedStudentAction,addToCalendarAction",
+    "value": [
+        {
+            "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+            "displayName": "Reading test 09.14",
+            "closeDateTime": null,
+            "dueDateTime": "2024-09-16T00:00:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "feedbackResourcesFolderUrl": null,
+            "createdDateTime": "2023-11-07T15:33:41.7275583Z",
+            "lastModifiedDateTime": "2023-11-07T15:33:41.8103305Z",
+            "allowStudentsToAddResourcesToSubmission": true,
+            "status": "draft",
+            "notificationChannelUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22e98aaae1-7c98-4e65-bb62-1994fe410552%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "moduleUrl": null,
+            "id": "e98aaae1-7c98-4e65-bb62-1994fe410552",
+            "instructions": {
+                "content": "Read chapter 4",
+                "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 50
+            },
+            "assignTo": {
+                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            }
+        }
+    ]
 }
 -->
