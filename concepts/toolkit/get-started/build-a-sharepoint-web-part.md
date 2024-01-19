@@ -22,16 +22,12 @@ This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint
 
 Follow the steps to [Set up your SharePoint Framework development environment](/sharepoint/dev/spfx/set-up-your-development-environment) and then [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
 
-## Add the Microsoft Graph Toolkit SharePoint Framework package
+## Add the Microsoft Graph Toolkit packages
 
-To prevent multiple SharePoint Framework components from registering their own set of Microsoft Graph Toolkit components on the page, you should deploy the Microsoft Graph Toolkit SharePoint Framework package to your tenant and reference Microsoft Graph Toolkit components that you use in your solution from this package.
-
-The Microsoft Graph Toolkit SharePoint Framework package contains a SharePoint Framework library that registers a single instance of Microsoft Graph Toolkit components in SharePoint.
-
-Install the Microsoft Graph Toolkit SharePoint Framework npm package using the following command:
+The Microsoft Graph Toolkit publishes multiple packages that are needed to build a SharePoint Framework web part. Install the Microsoft Graph Toolkit npm packages using the following command:
 
 ```bash
-npm install @microsoft/mgt-spfx
+npm install @microsoft/mgt-element @microsoft/mgt-components @microsoft/mgt-sharepoint-provider
 ```
 
 ## Add the SharePoint Provider
@@ -41,7 +37,8 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 First, add the provider to your web part. Locate the `src\webparts\<your-project>\<your-web-part>.ts` file in your project folder, and add the following line to the top of your file, right below the existing `import` statements:
 
 ```ts
-import { Providers, SharePointProvider } from "@microsoft/mgt-spfx";
+import { Providers } from '@microsoft/mgt-element';
+import { SharePointProvider } from "@microsoft/mgt-sharepoint-provider";
 ```
 
 Next, you need to initialize the provider with the authenticated context inside the `onInit()` method of your web part. In the same file, add the following code right before the `public render(): void {` line:
@@ -54,14 +51,56 @@ protected async onInit() {
 }
 ```
 
+## Set up disambiguation
+
+To ensure that your web part will work if there are multiple web part solutions using Microsoft Graph Toolkit in a single page you must use disambiguation. For more background on this please read the [main disambiguation](../customize-components/disambiguation.md) article.
+
+First update your imports from `@microsoft/mgt-element`
+
+```ts
+import { Providers, customElementHelper } from '@microsoft/mgt-element';
+```
+
+Next update the `onInit()` method to set up disambiguation. The string used for disambiguation be unique to your SharePoint Framework solution:
+
+```ts
+protected async onInit() {
+  if (!Providers.globalProvider) {
+    Providers.globalProvider = new SharePointProvider(this.context);
+  }
+  customElementsHelper.withDisambiguation('contoso-hr-solution');
+}
+```
+
 ## Add components
 
-Now, you can start adding components to your web part. Simply add the components to the HTML inside of the `render()` method, and the components will use the SharePoint context to access Microsoft Graph. For example, to add the [Person component](../components/person.md), your code will look like:
+Now, you can start adding components to your web part. First import the relevant register functions:
+
+```ts
+import { registerMgtPersonComponent } from '@microsoft/mgt-components';
+```
+
+> [!NOTE]
+> The registration functions use a naming convention of `registerMgt{Name}Component()`, so for the people picker control this function would be `registerMgtPeoplePickerComponent()`.
+
+Then call the register functions after configuring disambiguation in your `onInit()` method:
+
+```ts
+protected async onInit() {
+  if (!Providers.globalProvider) {
+    Providers.globalProvider = new SharePointProvider(this.context);
+  }
+  customElementsHelper.withDisambiguation('contoso-hr-solution');
+  registerMgtPersonComponent();
+}
+```
+
+And simply add the components to the HTML inside of the `render()` method, and the components will use the SharePoint context to access Microsoft Graph. For example, to add the [Person component](../components/person.md), your code will look like:
 
 ```ts
 public render(): void {
     this.domElement.innerHTML = `
-      <mgt-person person-query="me" view="twolines"></mgt-person>
+      <mgt-contoso-hr-solution-person person-query="me" view="twolines"></mgt-person>
     `;
 }
 ```
@@ -99,15 +138,6 @@ Determine which Microsoft Graph API permissions you need depending on the compon
   }
 ]
 ```
-
-## Deploy the Microsoft Graph Toolkit SharePoint Framework package
-
-Before deploying your SharePoint Framework package to your tenant, you will need to deploy the Microsoft Graph Toolkit SharePoint Framework package to your tenant. You can download the package corresponding to the version of Microsoft Graph Toolkit that you used in your project, from the [Releases](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases) section on GitHub.
-
-> [!IMPORTANT]
-> Because only one version of the SharePoint Framework library for Microsoft Graph Toolkit can be installed in the tenant, before you use the Microsoft Graph Toolkit in your solution, determine whether your organization or customer already has a version of the SharePoint Framework library deployed and use the same version.
-
-After downloading the Microsoft Graph Toolkit SharePoint Framework .sppkg package, upload it to your SharePoint Online App Catalog. Go to the [More features page of your SharePoint admin center](https://admin.microsoft.com/sharepoint?page=classicfeatures&modern=true). Select **Open** under **Apps**, then click **App Catalog**, and **Distribute apps for SharePoint**. Upload your `.sppkg` file, and click **Deploy**.
 
 ## Build and deploy your web part
 
