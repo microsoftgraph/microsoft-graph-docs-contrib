@@ -759,6 +759,22 @@
         {
           "ChangeList": [
             {
+              "Id": "8b7c0f90-8e8f-476a-b1da-d8d13f135fc3",
+              "ApiChange": "Enumeration",
+              "ChangedApiName": "endpointType",
+              "ChangeType": "Addition",
+              "Description": "Added the **endpointType** enumeration type.",
+              "Target": "endpointType"
+            },
+            {
+              "Id": "8b7c0f90-8e8f-476a-b1da-d8d13f135fc3",
+              "ApiChange": "Resource",
+              "ChangedApiName": "communicationsIdentitySet",
+              "ChangeType": "Addition",
+              "Description": "Added the [communicationsIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/communicationsIdentitySet?view=graph-rest-beta) resource.",
+              "Target": "communicationsIdentitySet"
+            },
+            {
               "Id": "edef20ed-4fde-4e6e-88b4-5b726bcf3750",
               "ApiChange": "Property",
               "ChangedApiName": "associatedIdentity",
