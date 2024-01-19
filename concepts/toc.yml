@@ -815,7 +815,7 @@ items:
             href: search-concept-messages.md
           - name: Search people
             href: search-concept-person.md
-          - name: Search qnas
+          - name: Search Q&As
             href: search-concept-qna.md
           - name: Search Teams messages
             href: search-concept-chat-messages.md
