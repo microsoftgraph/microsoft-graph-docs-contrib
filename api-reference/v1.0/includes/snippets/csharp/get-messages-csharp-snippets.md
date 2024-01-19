@@ -12,5 +12,10 @@ var result = await graphClient.Me.Messages.GetAsync((requestConfiguration) =>
 	requestConfiguration.QueryParameters.Select = new string []{ "sender","subject" };
 });
 
+var result = await graphClient.Users["user@domain.com"].Messages.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "sender","subject" };
+});
+
 
 ```
