@@ -41,7 +41,7 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPack
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -63,6 +63,8 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 
 
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
