@@ -20,13 +20,13 @@ The only property is **question**, which could be an [accessPackageTextInputQues
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|question|[accessPackageQuestion](accesspackagequestion.md)|The question asked in order to get the value of the attribute|
+|question|[accessPackageQuestion](accesspackagequestion.md)|The question asked in order to get the value of the attribute.|
 
 ## Relationships
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageResourceAttributeQuestion"
