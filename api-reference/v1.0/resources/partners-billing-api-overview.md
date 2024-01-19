@@ -8,6 +8,8 @@ doc_type: resourcePageType
 ms.custom: zt-include
 ---
 
+[!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
+
 # Use the Microsoft Graph API to export partner billing data
 
 As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in the Cloud Solution Provider programs can request to export their billed and unbilled data to Azure Blob Storage asynchronously. this removes the need to maintain an open connection for hours and loop through millions of transactions iteratively. The asynchronous API provides a way to quickly access billing and reconciliation data in manageable chunks.

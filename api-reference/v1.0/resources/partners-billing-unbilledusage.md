@@ -11,6 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.partners.billing
 
+[!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
 Represents details for unbilled Azure usage data.
 
