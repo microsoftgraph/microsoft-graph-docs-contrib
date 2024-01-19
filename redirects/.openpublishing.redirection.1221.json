@@ -289,11 +289,6 @@
       "source_path_from_root": "/api-reference/beta/api/application-delete-extensionproperty.md",
       "redirect_url": "/graph/api/extensionproperty-delete?view=graph-rest-beta",
       "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/api-reference/beta/api/iteminsightssettings-get.md",
-      "redirect_url": "/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta",
-      "redirect_document_id": false
     }
   ]
 }
