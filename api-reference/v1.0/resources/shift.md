@@ -39,7 +39,7 @@ The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource.
 
 <!-- {
   "blockType": "resource",
