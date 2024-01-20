@@ -29,7 +29,7 @@ The duration of a shift can't be less than 1 minute or longer than 24 hours.
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | createdDateTime		|DateTimeOffset        |The timestamp on which this **shift** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers when they are [shared](../api/schedule-share.md), which copies the changes to the **sharedShift** property.|
+| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. They are visible to employees when they are [shared](../api/schedule-share.md), which copies the changes to the **sharedShift** property.|
 | id			|String      |ID of the **shift**.|
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **shift**.|
 | lastModifiedDateTime		|DateTimeOffset        |The timestamp on which this **shift** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
