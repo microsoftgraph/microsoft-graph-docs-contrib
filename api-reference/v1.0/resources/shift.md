@@ -29,12 +29,12 @@ The duration of a shift can't be less than 1 minute or longer than 24 hours.
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | createdDateTime		|DateTimeOffset        |The timestamp on which this **shift** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift** are only visible to managers until they are [shared](../api/schedule-share.md). It would need to be shared with team members for visibility. Sharing changes to the **draftShift** property copies those changes to the **sharedShift** property. You can't update the **sharedShift** property if you're updating the **draftShift** property. The **draftShift** property must be empty to update the **sharedShift** property. To streamline the user experience, update the **draftShift** property and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.|
+| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers when they are [shared](../api/schedule-share.md), which copies the changes to the **sharedShift** property.|
 | id			|String      |ID of the **shift**.|
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **shift**.|
 | lastModifiedDateTime		|DateTimeOffset        |The timestamp on which this **shift** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | schedulingGroupId 		|String      |ID of the scheduling group the **shift** is part of. Required. |
-| sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. You can't update the **sharedShift** property if you're updating the **draftShift** property. Updates to the **sharedShift** property send notifications to users in the Teams client.|
+| sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. Updates to the **sharedShift** property send notifications to users in the Teams client.|
 | userId 			|String      |ID of the user assigned to the **shift**. Required. |
 
 ## JSON representation
