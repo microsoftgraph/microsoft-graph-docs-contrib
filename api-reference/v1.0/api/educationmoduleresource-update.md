@@ -87,7 +87,7 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_classworkv1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('24eda3bf-32e5-4c70-a14d-831e606a2e4f')/resources/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('24eda3bf-32e5-4c70-a14d-831e606a2e4f')/resources/$entity",
     "id": "896c2111-4d04-4b07-8a32-4565f3ba8597",
     "resource": {
         "@odata.type": "#microsoft.graph.educationPowerPointResource",

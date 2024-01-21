@@ -202,7 +202,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_classworkv1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('24eda3bf-32e5-4c70-a14d-831e606a2e4f')/resources/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('24eda3bf-32e5-4c70-a14d-831e606a2e4f')/resources/$entity",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/modules('<guid>')/resources('<guid>')?$select=resource",
     "id": "726c6174-bb3f-4b9f-bea0-4b6d49d0cda5",
     "resource": {
@@ -261,7 +261,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_classworkv1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('24eda3bf-32e5-4c70-a14d-831e606a2e4f')/resources/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('24eda3bf-32e5-4c70-a14d-831e606a2e4f')/resources/$entity",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/modules('<guid>')/resources('<guid>')?$select=resource",
     "id": "896c2111-4d04-4b07-8a32-4565f3ba8597",
     "resource": {
@@ -497,7 +497,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_classworkv1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('24eda3bf-32e5-4c70-a14d-831e606a2e4f')/resources/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('24eda3bf-32e5-4c70-a14d-831e606a2e4f')/resources/$entity",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/modules('<guid>')/resources('<guid>')?$select=resource",
     "id": "935c8f17-32d6-4615-9587-72091798aee1",
     "resource": {
@@ -505,7 +505,7 @@ Content-type: application/json
         "displayName": "2024-02-28T17_32_00_000Z",
         "createdDateTime": "2024-01-17T19:45:52.8511626Z",
         "lastModifiedDateTime": "2024-01-17T19:45:52.8511645Z",
-        "url": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_classworkv1/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/78286026-f32e-4895-af80-b00ee0b3dfe8/",
+        "url": "https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/78286026-f32e-4895-af80-b00ee0b3dfe8/",
         "createdBy": {
             "application": null,
             "device": null,

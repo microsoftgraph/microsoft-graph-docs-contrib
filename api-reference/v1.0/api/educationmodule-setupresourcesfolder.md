@@ -84,7 +84,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_classworkv1/$metadata#educationModule",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationModule",
     "@odata.type": "#microsoft.graph.educationModule",
     "displayName": "Module 1",
     "description": "",
