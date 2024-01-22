@@ -12211,9 +12211,9 @@ items:
                     href: resources/accesspackageassignmentrequest.md
                     items:
                       - name: List
-                        href: api/entitlementmanagement-list-assignmentrequests.md
+                        href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
                       - name: Create
-                        href: api/entitlementmanagement-post-assignmentrequests.md
+                        href: api/entitlementmanagement-post-accesspackageassignmentrequests.md
                       - name: Get
                         href: api/accesspackageassignmentrequest-get.md
                       - name: Delete
