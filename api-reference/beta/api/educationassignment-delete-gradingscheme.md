@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://canary.graph.microsoft.com/testprodbetaeduAsg_grading_schemes_beta//education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingSchemes/6efa8011-e94e-4175-a100-4bda60d20765
+DELETE https://graph.microsoft.com/beta//education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingSchemes/6efa8011-e94e-4175-a100-4bda60d20765
 ```
 
 ### Response

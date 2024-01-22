@@ -566,8 +566,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_grading_schemes_beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments",
-    "@odata.nextLink": "https://canary.graph.microsoft.com/testprodbetaeduAsg_grading_schemes_beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?%5C$top=1&%5C$expand=gradingScheme&$skiptoken=MyZRVkZCUVVGQlFVRklaMFZCUVVGQlFVRkJRWGxCUVVGQlpFZENSalZ2UWxWNVZVOUhhMUl5YlVGdk1GVjVaejA5",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?%5C$top=1&%5C$expand=gradingScheme&$skiptoken=MyZRVkZCUVVGQlFVRklaMFZCUVVGQlFVRkJRWGxCUVVGQlpFZENSalZ2UWxWNVZVOUhhMUl5YlVGdk1GVjVaejA5",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignments?$select=addedStudentAction,addToCalendarAction",
     "value": [
         {
