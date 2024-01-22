@@ -52,7 +52,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
-An example of a request:
+The following example shows a request.
 <!-- {
   "blockType": "ignored"
 }
@@ -97,7 +97,7 @@ Content-Type: application/json
 ```
 
 ### Response
-Example of the response:
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

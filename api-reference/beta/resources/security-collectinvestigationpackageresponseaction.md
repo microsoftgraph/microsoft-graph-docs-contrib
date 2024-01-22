@@ -1,6 +1,6 @@
 ---
 title: "collectInvestigationPackageResponseAction resource type"
-description: "Describes a response action to collect details for an investigation package."
+description: "Describes a response action that collects details for an investigation package."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a response action to collect details for an investigation package.
+Describes a response action that collects details for an investigation package.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 

@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-An example of a request:
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_detectionrule"
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/security/rules/detectionRules?$top=3
 
 
 ### Response
-Example of the response:
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
