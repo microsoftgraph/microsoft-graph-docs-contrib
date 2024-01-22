@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom detection rules are types of protection rules you can design and tweak using advanced hunting queries.
+Custom detection rules are types of protection rules you can design and tweak using [advanced hunting](../api/security-security-runhuntingquery.md) queries.
 These rules let you proactively monitor various events and system states, including suspected breach activity and misconfigured endpoints.
 A custom detection rule automatically recognizes security events when they occur, and triggers alerts and response actions.
 You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
