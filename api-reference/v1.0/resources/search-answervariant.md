@@ -42,7 +42,7 @@ The following JSON representation shows the resource type.
   "description": "String",
   "displayName": "String",
   "languageTags": ["String"],
-  "platforms": ["String"],
+  "platforms": "String",
   "webUrl": "String"
 }
 ```
