@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the advanced hunting query that defines the behavior of a [custom detection rule](../resources/security-detectionrule.md).
+Describes the [advanced hunting](../api/security-security-runhuntingquery.md) query that defines the behavior of a [custom detection rule](../resources/security-detectionrule.md).
 
 ## Properties
 | Property             | Type           | Description                                                                |

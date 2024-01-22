@@ -17,15 +17,6 @@ Namespace: microsoft.graph
 
 Remote help - response we provide back to the helper after getting response from pubSub
 
-## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List requestRemoteHelpSessionAccessResponses](../api/intune-remoteassistance-requestremotehelpsessionaccessresponse-list.md)|[requestRemoteHelpSessionAccessResponse](../resources/intune-remoteassistance-requestremotehelpsessionaccessresponse.md) collection|List properties and relationships of the [requestRemoteHelpSessionAccessResponse](../resources/intune-remoteassistance-requestremotehelpsessionaccessresponse.md) objects.|
-|[Get requestRemoteHelpSessionAccessResponse](../api/intune-remoteassistance-requestremotehelpsessionaccessresponse-get.md)|[requestRemoteHelpSessionAccessResponse](../resources/intune-remoteassistance-requestremotehelpsessionaccessresponse.md)|Read properties and relationships of the [requestRemoteHelpSessionAccessResponse](../resources/intune-remoteassistance-requestremotehelpsessionaccessresponse.md) object.|
-|[Create requestRemoteHelpSessionAccessResponse](../api/intune-remoteassistance-requestremotehelpsessionaccessresponse-create.md)|[requestRemoteHelpSessionAccessResponse](../resources/intune-remoteassistance-requestremotehelpsessionaccessresponse.md)|Create a new [requestRemoteHelpSessionAccessResponse](../resources/intune-remoteassistance-requestremotehelpsessionaccessresponse.md) object.|
-|[Delete requestRemoteHelpSessionAccessResponse](../api/intune-remoteassistance-requestremotehelpsessionaccessresponse-delete.md)|None|Deletes a [requestRemoteHelpSessionAccessResponse](../resources/intune-remoteassistance-requestremotehelpsessionaccessresponse.md).|
-|[Update requestRemoteHelpSessionAccessResponse](../api/intune-remoteassistance-requestremotehelpsessionaccessresponse-update.md)|[requestRemoteHelpSessionAccessResponse](../resources/intune-remoteassistance-requestremotehelpsessionaccessresponse.md)|Update the properties of a [requestRemoteHelpSessionAccessResponse](../resources/intune-remoteassistance-requestremotehelpsessionaccessresponse.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -41,7 +32,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.requestRemoteHelpSessionAccessResponse"
 }
 -->

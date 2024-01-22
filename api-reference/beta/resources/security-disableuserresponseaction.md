@@ -1,6 +1,6 @@
 ---
 title: "disableUserResponseAction resource type"
-description: "Describes a response action that blocks a user."
+description: "Describes a response action that temporarily prevents a user from logging in to the on premises network."
 author: "mmekler"
 ms.prod: "security"
 doc_type: resourcePageType
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a response action that temporarily disables a user's account.
-This response action temporarily prevents a user from logging in to the on-premises.
+Describes a response action that temporarily prevents a user from logging in to the on premises network.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 

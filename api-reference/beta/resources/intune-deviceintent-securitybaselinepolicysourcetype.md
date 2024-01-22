@@ -20,5 +20,5 @@ Authoring source of a policy
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|deviceConfiguration|0|Not yet documented|
-|deviceIntent|1|Not yet documented|
+|deviceConfiguration|0||
+|deviceIntent|1||
