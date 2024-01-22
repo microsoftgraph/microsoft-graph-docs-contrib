@@ -19,7 +19,7 @@ After you create your Q&As, you can use the Microsoft Graph Search API to search
 ### Request
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -43,7 +43,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
   {
    "@odata.type": "#microsoft.graph.searchResponse",
