@@ -69,7 +69,7 @@ If successful, this method returns a `204 No Content` response code and an [educ
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "set_defaultGradingScheme"
+  "name": "set_defaultGradingScheme_using_put"
 }
 -->
 ``` http
