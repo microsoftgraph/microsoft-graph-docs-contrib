@@ -17,15 +17,6 @@ Namespace: microsoft.graph
 
 Remote help - response we provide back to the helper on retrieve session API call
 
-## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List retrieveRemoteHelpSessionResponses](../api/intune-remoteassistance-retrieveremotehelpsessionresponse-list.md)|[retrieveRemoteHelpSessionResponse](../resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md) collection|List properties and relationships of the [retrieveRemoteHelpSessionResponse](../resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md) objects.|
-|[Get retrieveRemoteHelpSessionResponse](../api/intune-remoteassistance-retrieveremotehelpsessionresponse-get.md)|[retrieveRemoteHelpSessionResponse](../resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md)|Read properties and relationships of the [retrieveRemoteHelpSessionResponse](../resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md) object.|
-|[Create retrieveRemoteHelpSessionResponse](../api/intune-remoteassistance-retrieveremotehelpsessionresponse-create.md)|[retrieveRemoteHelpSessionResponse](../resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md)|Create a new [retrieveRemoteHelpSessionResponse](../resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md) object.|
-|[Delete retrieveRemoteHelpSessionResponse](../api/intune-remoteassistance-retrieveremotehelpsessionresponse-delete.md)|None|Deletes a [retrieveRemoteHelpSessionResponse](../resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md).|
-|[Update retrieveRemoteHelpSessionResponse](../api/intune-remoteassistance-retrieveremotehelpsessionresponse-update.md)|[retrieveRemoteHelpSessionResponse](../resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md)|Update the properties of a [retrieveRemoteHelpSessionResponse](../resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -47,7 +38,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.retrieveRemoteHelpSessionResponse"
 }
 -->

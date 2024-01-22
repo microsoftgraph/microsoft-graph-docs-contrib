@@ -1708,6 +1708,7 @@ Namespace: microsoft.graph
 | acronym            |
 | bookmark           |
 | chatMessage        |
+| qna                |
 | unknownFutureValue |
 
 ### searchAlterationType values
