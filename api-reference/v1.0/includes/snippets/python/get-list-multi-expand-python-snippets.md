@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = ListItemRequestBuilder.ListItemRequestBuilderGetQueryParameters(
 		select = ["id","name","lastModifiedDateTime"],
-		expand = ["columns(select=name,description)","items",")"],
+		expand = ["columns(select=name,description)","items(expand=fields(select=Name,Color,Quantity)",")"],
 )
 
 request_configuration = ListItemRequestBuilder.ListItemRequestBuilderGetRequestConfiguration(

@@ -23,9 +23,6 @@ Before you can access metered APIs and services in Microsoft Graph, you must com
 - Create an application registration in Microsoft Entra ID for the application that will be making calls to the metered Microsoft 365 APIs and services.
 - If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) now in the tenant that includes the application registration.
 - You must have contributor permissions to the active Azure subscription you want to use, as well as application owner permissions for the target application registration.
-- If you plan to use protected APIs, submit a request form, as applicable:
-  - [Teams protected API request form](https://aka.ms/teamsgraph/requestaccess)
-  - [SharePoint protected API request form](https://aka.ms/PreviewSPOPremiumAPI)
 
 ## Enable an application
 To enable an application to use metered APIs and services in Microsoft Graph, it must be associated with an Azure subscription. To create this association, you must create an Azure resource of type **Microsoft.GraphServices/accounts**. The Azure resource connects a single Microsoft Entra application registration with the Azure subscription where the application's usage of metered APIs is billed.

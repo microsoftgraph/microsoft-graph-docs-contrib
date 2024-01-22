@@ -51,6 +51,7 @@ PATCH /deviceManagement/monitoring/alertRules/{alertRuleId}
 |notificationChannels|[microsoft.graph.deviceManagement.notificationChannel](../resources/devicemanagement-notificationchannel.md) collection|The notification channels of the rule selected by the user. Optional.|
 |severity|microsoft.graph.deviceManagement.ruleSeverityType|The severity of the rule. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`. Optional.|
 |threshold|[microsoft.graph.deviceManagement.ruleThreshold](../resources/devicemanagement-rulethreshold.md)|The threshold of the rule. Optional.|
+|conditions|[microsoft.graph.deviceManagement.ruleCondition](../resources/devicemanagement-rulecondition.md) collection|The conditions of the rule. Conditions determine when to send an alert. Optional.|
 
 ## Response
 
@@ -60,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,6 +81,15 @@ Content-Type: application/json
       "operator": "greaterOrEqual",
       "target": 90
   },
+  "conditions": [
+      {
+        "relationshipType": "or",
+        "conditionCategory": "azureNetworkConnectionCheckFailures",
+        "aggregation": "count",
+        "operator": "greaterOrEqual",
+        "thresholdValue": "90"
+      }
+  ],
   "notificationChannels": [
       {
         "notificationChannelType": "portal",
@@ -160,6 +170,15 @@ Content-Type: application/json
       "operator": "greaterOrEqual",
       "target": 90
   },
+  "conditions": [
+      {
+        "relationshipType": "or",
+        "conditionCategory": "azureNetworkConnectionCheckFailures",
+        "aggregation": "count",
+        "operator": "greaterOrEqual",
+        "thresholdValue": "90"
+      }
+  ],
   "notificationChannels": [
       {
         "notificationChannelType": "portal",

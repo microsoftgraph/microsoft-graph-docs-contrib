@@ -32,7 +32,7 @@ One of the following [permissions](/graph/permissions-reference) is required to 
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All
 
-In addition to the required permissions, the user operations that the calling user can perform are bounded to the privileges granted to the calling user via specific [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference). For more information, see the *Who can reset passwords?* and *Who can update sensitive attributes?* sections.
+In addition to the required permissions, the user operations that the calling user can perform are bounded to the privileges granted to the calling user via specific [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). For more information, see the *Who can reset passwords?* and *Who can update sensitive attributes?* sections.
 
 ### Default user permissions
 
@@ -168,6 +168,5 @@ For more information about search limitations for guest users, see [Compare memb
 |[`/users/{id}/events`](../api/user-list-events.md) | Lists the user's upcoming events in their calendar. |
 |[`/users/{id}/drive`](../api/drive-get.md)| Gets the user's OneDrive file store. |
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Lists the groups that the user is a member of. |
+|[`/users/{id}/permissionGrants`](../api/user-list-permissiongrants.md)| List all resource-specific permission grants of a user. |
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

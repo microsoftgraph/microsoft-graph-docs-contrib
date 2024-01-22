@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -224,7 +224,7 @@ Content-type: application/json
                 "name": "Facebook",
                 "clientId": "clientIdFromFacebook",
                 "clientSecret": "*******"
-              }  
+              }
           ]
       },
       {
@@ -238,7 +238,7 @@ Content-type: application/json
                 "name": "Facebook",
                 "clientId": "clientIdFromFacebook",
                 "clientSecret": "*******"
-              }  
+              }
           ]
       }
    ]
@@ -253,6 +253,6 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
     "Error: list_b2xUserFlows/container/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: list_b2xUserFlows_expand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+    "Error: listb2xUserFlowsexpand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->

@@ -14,7 +14,7 @@ Get the properties and relationships of the specified identity provider configur
 
 Among the types of providers derived from identityProviderBase, you can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) resource in Microsoft Entra ID. In Azure AD B2C, this operation can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

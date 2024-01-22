@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Gets diagnostics validation status for a given user.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

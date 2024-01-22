@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -28,12 +28,9 @@ request_body = EvaluateClassificationResultsPostRequestBody(
 	],
 )
 
-request_configuration = EvaluateClassificationResultsRequestBuilder.EvaluateClassificationResultsRequestBuilderPostRequestConfiguration(
-headers = {
-		'User-Agent' : "ContosoLOBApp/1.0",
-}
+request_configuration = EvaluateClassificationResultsRequestBuilder.EvaluateClassificationResultsRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("User-Agent", "ContosoLOBApp/1.0")
 
-)
 
 result = await graph_client.information_protection.policy.labels.evaluate_classification_results.post(request_body, request_configuration = request_configuration)
 

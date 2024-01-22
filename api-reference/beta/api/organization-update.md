@@ -24,17 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "organization_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organization-update-permissions.md)]
 
-The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
-
-* Global Administrator
-* Partner Tier2 Support
-* Billing Administrator
-
-**Note**: To update the **onPremisesSyncEnabled** property requires that the calling user to have one of the following Microsoft Entra roles: 
-
-* Global Administrator
-* Directory Synchronization Accounts
-* Hybrid Identity Administrator
+[!INCLUDE [rbac-organization-apis-write](../includes/rbac-for-apis/rbac-organization-apis-write.md)]
 
 ## HTTP request
 

@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 553
+Content-Length: 884
 
 {
   "value": {
@@ -78,6 +78,17 @@ Content-Length: 553
     "batteryAgeInDays": 0,
     "fullBatteryDrainCount": 5,
     "deviceBatteryCount": 2,
+    "deviceBatteriesDetails": [
+      {
+        "@odata.type": "microsoft.graph.userExperienceAnalyticsDeviceBatteryDetail",
+        "batteryId": "Battery Id value",
+        "maxCapacityPercentage": 5,
+        "fullBatteryDrainCount": 5
+      }
+    ],
+    "deviceBatteryTags": [
+      "Device Battery Tags value"
+    ],
     "deviceBatteryHealthScore": 8,
     "healthStatus": "insufficientData"
   }

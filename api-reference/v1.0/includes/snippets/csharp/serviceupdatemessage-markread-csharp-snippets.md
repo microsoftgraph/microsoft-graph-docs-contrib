@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Admin.ServiceAnnouncement.Messages.MarkRead;
 
-var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.MarkRead.MarkReadPostRequestBody
+var requestBody = new MarkReadPostRequestBody
 {
 	MessageIds = new List<string>
 	{
@@ -16,6 +17,8 @@ var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.MarkRea
 		"MC167983",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Admin.ServiceAnnouncement.Messages.MarkRead.PostAsync(requestBody);
 
 

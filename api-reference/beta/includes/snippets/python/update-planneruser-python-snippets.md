@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -30,13 +30,10 @@ request_body = PlannerUser(
 	),
 )
 
-request_configuration = PlannerRequestBuilder.PlannerRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "return=representation",
-		'If-Match' : "W/\"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=\"",
-}
+request_configuration = PlannerRequestBuilder.PlannerRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
+request_configuration.headers.add("If-Match", "W/\"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=\"")
 
-)
 
 result = await graph_client.me.planner.patch(request_body, request_configuration = request_configuration)
 

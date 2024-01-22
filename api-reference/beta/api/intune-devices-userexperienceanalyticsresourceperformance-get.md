@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 682
+Content-Length: 921
 
 {
   "value": {
@@ -81,7 +81,14 @@ Content-Length: 682
     "ramSpikeTimeScore": 1,
     "ramSpikeTimePercentageThreshold": 10.333333333333334,
     "deviceResourcePerformanceScore": 14,
-    "averageSpikeTimeScore": 5
+    "averageSpikeTimeScore": 5,
+    "machineType": "physical",
+    "cpuDisplayName": "Cpu Display Name value",
+    "totalProcessorCoreCount": 7,
+    "cpuClockSpeedInMHz": 6.0,
+    "totalRamInMB": 4.0,
+    "diskType": "hdd",
+    "healthStatus": "insufficientData"
   }
 }
 ```

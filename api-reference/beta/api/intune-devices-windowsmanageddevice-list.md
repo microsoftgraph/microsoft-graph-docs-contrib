@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10418
+Content-Length: 10601
 
 {
   "value": [
@@ -286,7 +286,11 @@ Content-Length: 10418
       ],
       "enrollmentProfileName": "Enrollment Profile Name value",
       "bootstrapTokenEscrowed": true,
-      "deviceFirmwareConfigurationInterfaceManaged": true
+      "deviceFirmwareConfigurationInterfaceManaged": true,
+      "deviceIdentityAttestationDetail": {
+        "@odata.type": "microsoft.graph.deviceIdentityAttestationDetail",
+        "deviceIdentityAttestationStatus": "trusted"
+      }
     }
   ]
 }

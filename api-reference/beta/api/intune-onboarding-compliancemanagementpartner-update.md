@@ -71,7 +71,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/complianceManagementPartners/{complianceManagementPartnerId}
 Content-type: application/json
-Content-length: 1711
+Content-length: 1762
 
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartner",
@@ -85,10 +85,11 @@ Content-length: 1711
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -96,10 +97,11 @@ Content-length: 1711
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -107,10 +109,11 @@ Content-length: 1711
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]
@@ -122,7 +125,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1760
+Content-Length: 1811
 
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartner",
@@ -137,10 +140,11 @@ Content-Length: 1760
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -148,10 +152,11 @@ Content-Length: 1760
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -159,10 +164,11 @@ Content-Length: 1760
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]

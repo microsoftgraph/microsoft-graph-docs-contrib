@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Me.FindMeetingTimes;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Me.FindMeetingTimes.FindMeetingTimesPostRequestBody
+var requestBody = new FindMeetingTimesPostRequestBody
 {
 	Attendees = new List<AttendeeBase>
 	{
@@ -60,6 +62,8 @@ var requestBody = new Microsoft.Graph.Beta.Me.FindMeetingTimes.FindMeetingTimesP
 	ReturnSuggestionReasons = true,
 	MinimumAttendeePercentage = 100d,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.FindMeetingTimes.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");

@@ -8,6 +8,7 @@ ms.prod: "extensions"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 02/02/2023
+#Customer intent: As a developer, I want to learn how to store lightweight data to Microsoft Entra groups through Microsoft Graph, and avoid using an external database system.
 ---
 
 # Add custom data to groups using schema extensions 
