@@ -56,7 +56,7 @@ The following table shows the properties that are available when you create an [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `201 Created` response code.
 
 ## Examples
 
@@ -91,7 +91,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.search.acronym"
 }-->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
