@@ -47,10 +47,6 @@ The following table lists some common use cases for the threat intelligence APIs
 | Read details about a vulnerability.      | [vulnerability](../resources/security-vulnerability.md)             | [Methods of vulnerability](../resources/security-vulnerability.md#methods)             |
 | Read WHOIS details for a **host**.          | [whoisRecord](../resources/security-whoisrecord.md)                               | [Methods of whoisRecord](../resources/security-whoisrecord.md#methods)                               |
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 
 The threat intelligence APIs in Microsoft Graph can help protect your organization from modern cyber threats. To learn more:

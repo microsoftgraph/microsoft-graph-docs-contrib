@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|Unique ID of the permissions request change event within Permissions Management. Inherited from [entity](../resources/entity.md).|
 |modificationDateTime|DateTimeOffset|Time when the change occurred.|
 |permissionsRequestId|String|The ID of the **scheduledPermissionsRequest** object.|
-|statusDetail|statusDetail|The status that the request changed to. The possible values are: `submitted`, `approved`, `completed`, `canceled`, `rejected`, `unknownFutureValue`.|
+|statusDetail|statusDetail|The current status of the request. The possible values are: `submitted`, `approved`, `completed`, `canceled`, `rejected`, `unknownFutureValue`.|
 |ticketId|String|Represents the ticketing system identifier.|
 
 ## Relationships
