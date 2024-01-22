@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), callers can automatically retry a user's request for access to an access package. It's performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestState** is in a `DeliveryFailed` or `PartiallyDelivered` state. 
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), callers can automatically retry a user's request for access to an access package. It's performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestState** is in a `DeliveryFailed` or `PartiallyDelivered` state.
+
+> [!NOTE]
+> The *accessPackageAssignmentRequests* call will be retired soon. Please use the *assignmentRequests* call instead.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,6 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
+POST /identityGovernance/entitlementManagement/assignmentRequests/{id}/reprocess
 POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}/reprocess
 ```
 

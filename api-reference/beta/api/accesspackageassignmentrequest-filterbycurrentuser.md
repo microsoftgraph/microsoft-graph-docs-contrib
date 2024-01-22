@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a list of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects filtered on the signed-in user.
 
+> [!NOTE]
+> The *accessPackageAssignmentRequests* call will be retired soon. Please use the *assignmentRequests* call instead.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -29,6 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+GET /identityGovernance/entitlementManagement/assignmentRequests/filterByCurrentUser(on='parameterValue')
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/filterByCurrentUser(on='parameterValue')
 ```
 

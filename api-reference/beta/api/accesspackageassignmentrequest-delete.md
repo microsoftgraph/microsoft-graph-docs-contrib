@@ -17,6 +17,9 @@ Delete an [accessPackageAssignmentRequest](../resources/accesspackageassignmentr
 
 This request can be made to remove a denied or completed request.  You can't delete an access package assignment request if it has any **accessPackageAssignment** objects.
 
+> [!NOTE]
+> The *accessPackageAssignmentRequests* call will be retired soon. Please use the *assignmentRequests* call instead.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -31,6 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
+DELETE /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageAssignmentRequestId}
 DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}
 ```
 

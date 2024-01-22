@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancelable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
 
+> [!NOTE]
+> The *accessPackageAssignmentRequests* call will be retired soon. Please use the *assignmentRequests* call instead.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -29,6 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+POST /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageAssignmentRequestId}/cancel
 POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}/cancel
 ```
 

@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.  This operation is used to assign a user to an access package, or to remove an access package assignment.
 
+> [!NOTE]
+> The *accessPackageAssignmentRequests* will be retired soon. Please use the *assignmentRequests* call instead.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -29,6 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
+POST /identityGovernance/entitlementManagement/assignmentRequests
 POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 ```
 
