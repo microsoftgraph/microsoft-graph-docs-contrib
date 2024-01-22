@@ -372,15 +372,63 @@
         "ChangedApiName": "LIST",
         "ChangeType": "Addition",
         "Description": "Added the **LIST** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
-        "Target": "accessPackageAssignmentRequest"
+        "Target": "accessPackageSubject"
+      },
+{
+        "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
+        "ApiChange": "method",
+        "ChangedApiName": "POST",
+        "ChangeType": "Addition",
+        "Description": "Added the **POST** method to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Target": "accessPackageSubject"
       },
 {
         "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
         "ApiChange": "Method",
-        "ChangedApiName": "POST",
+        "ChangedApiName": "GET",
         "ChangeType": "Addition",
-        "Description": "Added the **POST** method to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
-        "Target": "accessPackageAssignmentRequest"
+        "Description": "Added the **GET** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Target": "accessPackageSubject"
+      },
+{
+        "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
+        "ApiChange": "Method",
+        "ChangedApiName": "DELETE",
+        "ChangeType": "Addition",
+        "Description": "Added the assignmentRequests **DELETE** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Target": "accessPackageSubject"
+      },
+{
+        "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
+        "ApiChange": "Method",
+        "ChangedApiName": "filterByCurrentUser",
+        "ChangeType": "Addition",
+        "Description": "Added the assignmentRequests **filterByCurrentUser** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Target": "accessPackageSubject"
+      },
+{
+        "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
+        "ApiChange": "Method",
+        "ChangedApiName": "CANCEL",
+        "ChangeType": "Addition",
+        "Description": "Added the assignmentRequests **CANCEL** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Target": "accessPackageSubject"
+      },
+{
+        "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
+        "ApiChange": "Method",
+        "ChangedApiName": "REPROCESS",
+        "ChangeType": "Addition",
+        "Description": "Added the assignmentRequests **REPROCESS** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Target": "accessPackageSubject"
+      },
+{
+        "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
+        "ApiChange": "Method",
+        "ChangedApiName": "RESUME",
+        "ChangeType": "Addition",
+        "Description": "Added the assignmentRequests **RESUME** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Target": "accessPackageSubject"
       }
       ],
       "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
