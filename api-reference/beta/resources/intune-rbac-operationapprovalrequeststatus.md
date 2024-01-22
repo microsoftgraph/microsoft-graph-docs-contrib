@@ -1,6 +1,6 @@
 ---
 title: "operationApprovalRequestStatus enum type"
-description: "Status of the current Approval Request"
+description: "Indicates the status of the Approval Request. The status of a request will change when an action is successfully performed on it, such as when it is `approved` or `rejected`, or when the request's expiration DateTime passes and the result is `expired`."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,16 +15,16 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Status of the current Approval Request
+Indicates the status of the Approval Request. The status of a request will change when an action is successfully performed on it, such as when it is `approved` or `rejected`, or when the request's expiration DateTime passes and the result is `expired`.
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Unknown Status|
-|needsApproval|1|Approval request needs approval before the action can be completed.|
-|approved|2|Approval request approved, action can now be completed.|
-|rejected|3|Approval request rejected, action not approved and no further action can be taken.|
-|cancelled|4|Approval request cancelled by the user, requiring no further action.|
-|completed|5|Approval request completed, requiring no further action.|
-|expired|6|Approval request has expired, a new approval must be made in order to complete this request.|
-|unknownFutureValue|99|Placeholder for future Operation Approval Request Statuses.|
+|unknown|0|Default. Indicates that the request approval status is unknown, and that the status has not been assigned to the approval request.|
+|needsApproval|1|Indicates that the approval request needs approval before the operation can be completed.|
+|approved|2|Indicates that the approval request has been approved. The operation can now be completed.|
+|rejected|3|Indicates that the approval request has been rejected. No further action can be taken to complete the operation or to modify the request.|
+|cancelled|4|Indicates that the approval request has been cancelled by the request's requestor. No further action can be taken to complete the operation or to modify the request.|
+|completed|5|Indicates that the approval request has been completed. This status is feature agnostic and does not indicate success or failure of the operation. No further action is necessary for the operation or to modify the request.|
+|expired|6|Indicates that the approval request has expired. No further action can be taken to complete the operation or to modify the request. A new approval request must be made and approved in order to complete the operation.|
+|unknownFutureValue|7|Evolvable enumeration sentinel value. Do not use.|

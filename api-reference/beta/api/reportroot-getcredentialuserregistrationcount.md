@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getcredentialuserregistrationcount" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getcredentialuserregistrationcount-permissions.md)]
 
+[!INCLUDE [rbac-reports-registration-usage-apis](../includes/rbac-for-apis/rbac-reports-registration-usage-apis.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
