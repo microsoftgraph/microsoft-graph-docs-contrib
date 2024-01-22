@@ -20,5 +20,5 @@ CertificateStore types
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|user|1|Not yet documented|
-|machine|2|Not yet documented|
+|user|1||
+|machine|2||

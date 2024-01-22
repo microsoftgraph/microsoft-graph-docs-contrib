@@ -35,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerCertificateProfileBase/rootCertificate
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/rootCertificateForServerValidation
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/rootCertificatesForServerValidation/{androidDeviceOwnerTrustedRootCertificateId}
 ```
 
 ## Request headers
