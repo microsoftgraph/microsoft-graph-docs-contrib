@@ -29,7 +29,7 @@ The Group Policy Object file uploaded by admin.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |groupPolicyObjectId|Guid|The Group Policy Object GUID from GPO Xml content|
 |ouDistinguishedName|String|The distinguished name of the OU.|
 |createdDateTime|DateTimeOffset|The date and time at which the GroupPolicy was first uploaded.|
