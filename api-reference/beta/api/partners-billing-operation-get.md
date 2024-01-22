@@ -13,6 +13,8 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
+
 Read the properties and relationships of an [operation](../resources/partners-billing-operation.md) object.
 
 ## Permissions
