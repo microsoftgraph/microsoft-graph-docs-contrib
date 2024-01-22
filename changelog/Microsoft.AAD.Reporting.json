@@ -73,23 +73,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "relyingPartyDetailedSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingPartyDetailedSummary?view=graph-rest-1.0) resource",
+          "Description": "Added the [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingPartyDetailedSummary?view=graph-rest-1.0) resource and its related methods.",
           "Target": "relyingPartyDetailedSummary"
-        },
-        {
-          "Id": "5aaf550a-6692-4944-be8c-e80e52389f39",
-          "ApiChange": "Method",
-          "ChangedApiName": "getRelyingPartyDetailedSummary",
-          "ChangeType": "Addition",
-          "Description": "Added the [getRelyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/reportRoot?view=graph-rest-1.0) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/reportRoot?view=graph-rest-1.0) resource.",
-          "Target": "reportRoot"
         }
       ],
       "Id": "5aaf550a-6692-4944-be8c-e80e52389f39",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-01-12T14:28:01.2592722Z",
-      "WorkloadArea": "Reports and audit",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
     {
