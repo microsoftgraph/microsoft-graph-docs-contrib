@@ -771,7 +771,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "communicationsIdentitySet",
               "ChangeType": "Addition",
-              "Description": "Added the [communicationsIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/communicationsIdentitySet?view=graph-rest-beta) resource.",
+              "Description": "Changed the type in the **identity** property of the (https://learn.microsoft.com/en-us/graph/api/resources/callrecords-organizer?view=graph-rest-beta) resource.",
               "Target": "communicationsIdentitySet"
             },
             {
