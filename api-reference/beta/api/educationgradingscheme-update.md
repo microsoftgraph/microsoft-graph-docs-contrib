@@ -73,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingschemes/69911dea-bc5c-406a-8743-81d06225a3a1
+PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingschemes/d0c2769f-cd0f-4e30-8d1d-9312270de5c4
 Content-Type: application/json
 
 {
@@ -96,10 +96,26 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes/$entity",
-    "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
+    "id": "d0c2769f-cd0f-4e30-8d1d-9312270de5c4",
     "displayName": "New GradingScheme name",
     "hidePointsDuringGrading": false,
-    "grades": []
+    "grades": [
+        {
+            "displayName": "Great",
+            "minPercentage": 82,
+            "defaultPercentage": null
+        },
+        {
+            "displayName": "Good",
+            "minPercentage": 70,
+            "defaultPercentage": null
+        },
+        {
+            "displayName": "Okay",
+            "minPercentage": 0,
+            "defaultPercentage": null
+        }
+    ]
 }
 ```
 
@@ -140,7 +156,7 @@ Content-Type: application/json
                     "minPercentage": 0
                 }
             ]
-        },
+        },        
         {
             "@removed": {
                 "reason": "deleted"
@@ -168,15 +184,31 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes/$delta",
     "value": [
         {
-            "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
-            "displayName": "New GradingScheme name",
-            "hidePointsDuringGrading": false,
-            "grades": []
-        },
-        {
             "id": "d0c2769f-cd0f-4e30-8d1d-9312270de5c4",
             "displayName": "New Qualitative Scheme",
             "hidePointsDuringGrading": false,
+            "grades": [
+                {
+                    "displayName": "Great",
+                    "minPercentage": 82,
+                    "defaultPercentage": null
+                },
+                {
+                    "displayName": "Good",
+                    "minPercentage": 70,
+                    "defaultPercentage": null
+                },
+                {
+                    "displayName": "Okay",
+                    "minPercentage": 0,
+                    "defaultPercentage": null
+                }
+            ]
+        },
+        {
+            "id": "e445acb2-145e-466f-a070-f677d4178f93",
+            "displayName": "New Pass - fail Scheme created",
+            "hidePointsDuringGrading": true,
             "grades": [
                 {
                     "displayName": "Great",

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PUT /education/classes/{educationClassId}/assignments/{assignmentid}/gradingScheme/ref
+PUT /education/classes/{educationClassId}/assignments/{assignmentid}/gradingScheme/$ref
 ```
 
 ## Request headers
@@ -73,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta//education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/e98aaae1-7c98-4e65-bb62-1994fe410552/gradingScheme/$ref
+PUT https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/e98aaae1-7c98-4e65-bb62-1994fe410552/gradingScheme/$ref
 Content-Type: application/json
 
 {

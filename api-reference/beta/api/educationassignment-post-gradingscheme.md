@@ -93,19 +93,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.educationGradingScheme",
-  "id": "3d1120c3-858a-9731-710d-a214adb6b657",
-  "displayName": "String",
-  "grades": [
-    {
-      "@odata.type": "microsoft.graph.educationGradingSchemeGrade"
-    }
-  ],
-  "hidePointsDuringGrading": "Boolean"
-}
+HTTP/1.1 204 No Content
 ```
 
