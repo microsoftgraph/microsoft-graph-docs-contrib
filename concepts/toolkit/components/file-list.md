@@ -13,9 +13,19 @@ The File List component displays [a list of multiple folders and files](/graph/a
 
 The following example displays a file using the `mgt-file-list` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-list--file-list&source=docs" height="250"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-list--file-list&source=docs)
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-file-list-html--file-list&source=docs" height="250"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-file-list-html--file-list&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-file-list-react--file-list&source=docs" height="250"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-file-list-react--file-list&source=docs).
+
+---
 
 ## Properties
 

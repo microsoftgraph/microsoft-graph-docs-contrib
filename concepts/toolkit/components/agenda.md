@@ -21,9 +21,9 @@ The following example shows the signed-in user's calendar events displayed using
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-agenda-react--agenda&source=docs&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-agenda-react--agenda&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/components-mgt-agenda-react--agenda&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-agenda-react--agenda&source=docs).
 
 ---
 
