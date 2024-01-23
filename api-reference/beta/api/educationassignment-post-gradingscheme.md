@@ -60,7 +60,7 @@ You can specify the following properties when creating an **educationGradingSche
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [educationGradingScheme](../resources/educationgradingscheme.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an [educationGradingScheme](../resources/educationgradingscheme.md) object in the response body.
 
 ## Examples
 
