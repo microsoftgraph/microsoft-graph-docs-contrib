@@ -779,7 +779,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "associatedIdentity",
               "ChangeType": "Change",
-              "Description": "Changed the **associatedIdentity** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
+              "Description": "Changed the type in the **associatedIdentity** property of the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-beta) resource.",
               "Target": "participantEndpoint"
             },
             {
@@ -787,7 +787,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "identity",
               "ChangeType": "Change",
-              "Description": "Changed the **identity** property to the [participantBase](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantBase?view=graph-rest-1.0) resource.",
+              "Description": "Changed the type in the **identity** property of the [participantBase](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantBase?view=graph-rest-beta) resource.",
               "Target": "participantBase"
             }
           ],
