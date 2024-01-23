@@ -108,7 +108,7 @@ To manage delegated admin relationships, the calling principal must be in the pa
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 

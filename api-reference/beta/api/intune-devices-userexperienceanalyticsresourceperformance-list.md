@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -62,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 726
+Content-Length: 979
 
 {
   "value": [
@@ -81,7 +79,14 @@ Content-Length: 726
       "ramSpikeTimeScore": 1,
       "ramSpikeTimePercentageThreshold": 10.333333333333334,
       "deviceResourcePerformanceScore": 14,
-      "averageSpikeTimeScore": 5
+      "averageSpikeTimeScore": 5,
+      "machineType": "physical",
+      "cpuDisplayName": "Cpu Display Name value",
+      "totalProcessorCoreCount": 7,
+      "cpuClockSpeedInMHz": 6.0,
+      "totalRamInMB": 4.0,
+      "diskType": "hdd",
+      "healthStatus": "insufficientData"
     }
   ]
 }
