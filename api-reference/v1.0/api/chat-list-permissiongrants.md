@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [chat](../resources/chat.md). This list specifies the Microsoft Entra apps that have access to the **chat**, along with the corresponding kind of resource-specific access that each app has.
+List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [chat](../resources/chat.md). This list specifies the Microsoft Entra apps that have access to the **chat**, along with the corresponding resource-specific access that each app has.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -35,7 +35,7 @@ GET /chats/{chat-id}/permissionGrants
 
 ## Optional query parameters
 
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This operation doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -158,3 +158,4 @@ Content-type: application/json
 ## See also
 - [List permission grants of a team](team-list-permissionGrants.md)
 - [List permission grants of a group](group-list-permissionGrants.md)
+- [List permission grants of a user](user-list-permissiongrants.md)

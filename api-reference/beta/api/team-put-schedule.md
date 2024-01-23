@@ -1,7 +1,7 @@
 ---
 title: "Create or replace schedule"
 description: "Create or replace a **schedule** object."
-author: "nkramer"
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -138,7 +138,9 @@ Content-type: application/json
   "openShiftsEnabled": true,
   "swapShiftsRequestsEnabled": true,
   "offerShiftRequestsEnabled": true,
-  "timeOffRequestsEnabled": true
+  "timeOffRequestsEnabled": true,
+  "startDayOfWeek": "Sunday",
+  "activitiesIncludedWhenCopyingShiftsEnabled": true
 }
 ```
 
@@ -166,6 +168,8 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
    "swapShiftsRequestsEnabled":true,
    "offerShiftRequestsEnabled":true,
    "timeOffRequestsEnabled":true,
+   "startDayOfWeek": "Tuesday",
+   "activitiesIncludedWhenCopyingShiftsEnabled": true,
    "timeClockEnabled":true,
    "timeClockSettings":{
       "approvedLocation":{
@@ -235,6 +239,8 @@ Content-type: application/json
    "swapShiftsRequestsEnabled":true,
    "offerShiftRequestsEnabled":true,
    "timeOffRequestsEnabled":true,
+   "startDayOfWeek": "Tuesday",
+   "activitiesIncludedWhenCopyingShiftsEnabled": true,
    "timeClockEnabled":true,
    "timeClockSettings":{
       "approvedLocation":{

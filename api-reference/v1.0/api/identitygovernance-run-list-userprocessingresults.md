@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get user processing results of a workflow [run](../resources/identitygovernance-run.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

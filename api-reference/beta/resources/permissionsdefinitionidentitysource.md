@@ -2,6 +2,7 @@
 title: "permissionsDefinitionIdentitySource resource type"
 description: "An abstract type that defines the source of an identity that's requesting permissions through Permissions Management."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

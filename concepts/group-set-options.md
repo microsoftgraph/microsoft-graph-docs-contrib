@@ -6,6 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: jodah
 ms.localizationpriority: high
 ms.date: 08/13/2022
+#Customer intent: As a developer, I want to learn how to use Microsoft Graph to set specific group behaviors and provision sepcific resources, so that I can tailor the group's functionality and capabilities to meet the needs of my organization.
 ---
 
 # Set Microsoft 365 group behaviors and provisioning options

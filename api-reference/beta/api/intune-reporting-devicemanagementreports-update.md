@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for this entity|
+|id|String|Unique identifier for this entity.|
 
 
 
