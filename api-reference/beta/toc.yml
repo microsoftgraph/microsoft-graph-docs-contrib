@@ -16598,11 +16598,11 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: List
                     href: api/simulationautomation-list-runs.md
-          - name: Audit Log Query (preview)
+          - name: Audit log query (preview)
             items:
               - name: Overview
                 href: resources/security-api-overview.md
-              - name: Audit Log Query
+              - name: Audit log query
                 href: resources/security-auditlogquery.md
                 items: 
                   - name: List
@@ -16611,14 +16611,14 @@ items:
                     href: api/security-auditcoreroot-post-auditlogqueries.md
                   - name: Get
                     href: api/security-auditlogquery-get.md
-              - name: Audit Log Record
+              - name: Audit log record
                 href: resources/security-auditlogrecord.md
                 items:
                   - name: List
                     href: api/security-auditlogquery-list-records.md
-              - name: Audit Log Data
+              - name: Audit log data
                 href: resources/security-auditdata.md
-              - name: Default Audit Log Data
+              - name: Default audit log data
                 href: resources/security-defaultauditdata.md
           - name: eDiscovery (preview)
             items:
