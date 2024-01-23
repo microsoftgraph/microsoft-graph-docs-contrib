@@ -21,18 +21,18 @@ Represents a presenter of a virtual event.
 | ------ | ----------- | ---------- |
 | [Create](../api/virtualevent-post-presenter.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 | [Get](../api/virtualeventtown-get-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
-| [List](../api/virtualeventtownhall-list-presenters.md)| [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Get the virtualEventPresenter resources from the presenters navigation property. |
-| [Update](../api/virtualeventtown-update-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
-| [Delete](../api/virtualeventtown-delete-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [List](../api/virtualeventtownhall-list-presenters.md)| [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Get a collection of [virtualEventPresenter](../resources/virtualeventpresenter.md) objects. |
+| [Update](../api/virtualeventtown-update-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Update the properties of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [Delete](../api/virtualeventtown-delete-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Delete a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|email|String|Email address of the presenter.|
-|id|String|Unique identifier of the presenter. Inherited from [entity](../resources/entity.md).|
-|identity|[communicationsUserIdentity](../resources/communicationsuseridentity.md)|Identity information of the presenter.|
-|presenterDetails|[virtualEventPresenterDetails](../resources/virtualeventpresenterdetails.md)|Other detail information of the presenter.|
+| email | String | Email address of the presenter. |
+| id | String | Unique identifier of the presenter. Inherited from [entity](../resources/entity.md). |
+| identity | [communicationsUserIdentity](../resources/communicationsuseridentity.md)|Identity information of the presenter. |
+| presenterDetails | [virtualEventPresenterDetails](../resources/virtualeventpresenterdetails.md)| Other detail information of the presenter. |
 
 ## JSON representation
 
@@ -50,11 +50,7 @@ Here's a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.virtualEventPresenter",
   "email": "String",
   "id": "String (identifier)",
-  "identity": {
-    "@odata.type": "microsoft.graph.communicationsUserIdentity"
-  },
-  "presenterDetails": {
-    "@odata.type": "microsoft.graph.virtualEventPresenterDetails"
-  }
+  "identity": {"@odata.type": "microsoft.graph.communicationsUserIdentity"},
+  "presenterDetails": {"@odata.type": "microsoft.graph.virtualEventPresenterDetails"}
 }
 ```

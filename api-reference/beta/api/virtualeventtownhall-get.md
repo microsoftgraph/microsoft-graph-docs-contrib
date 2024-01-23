@@ -22,11 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
   "name": "virtualeventtownhall-get-permissions"
 }
 -->
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported.|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|VirtualEvent.Read.All|
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventtownhall-get-permissions.md)]
 
 ## HTTP request
 
@@ -37,9 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /solutions/virtualEvents/townhalls/{townhallId}
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

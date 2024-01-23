@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /solutions/virtualEvents/events/publish
+POST /solutions/virtualEvents/townhalls/publish
 ```
 
 ## Request headers
