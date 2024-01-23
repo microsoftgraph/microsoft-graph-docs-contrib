@@ -12,7 +12,7 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new Community
 {
 	DisplayName = "Financial Advice for Software Engineers",
-	Description = "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.",
+	Description = "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for their clients.",
 	Privacy = CommunityPrivacy.Public,
 };
 

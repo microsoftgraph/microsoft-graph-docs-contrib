@@ -43,7 +43,6 @@ The following considerations support the use of this integration pattern:
 
 ## See also
 
-- [Best practices in cloud applications]([./../webhooks.md](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices))
-- [Training: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
-- [Microsoft Graph fundamentals](/training/basics-learn-graph)
+- [Best practices in cloud applications](/azure/architecture/best-practices/index-best-practices)
+- [Microsoft Graph fundamentals](/training/paths/m365-msgraph-fundamentals/)
 

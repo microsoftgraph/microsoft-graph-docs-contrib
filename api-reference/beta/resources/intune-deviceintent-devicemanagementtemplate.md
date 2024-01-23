@@ -25,9 +25,9 @@ Entity that represents a defined collection of device settings
 |[Create deviceManagementTemplate](../api/intune-deviceintent-devicemanagementtemplate-create.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Create a new [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) object.|
 |[Delete deviceManagementTemplate](../api/intune-deviceintent-devicemanagementtemplate-delete.md)|None|Deletes a [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md).|
 |[Update deviceManagementTemplate](../api/intune-deviceintent-devicemanagementtemplate-update.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Update the properties of a [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) object.|
-|[createInstance action](../api/intune-deviceintent-devicemanagementtemplate-createinstance.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Not yet documented|
-|[compare function](../api/intune-deviceintent-devicemanagementtemplate-compare.md)|[deviceManagementSettingComparison](../resources/intune-deviceintent-devicemanagementsettingcomparison.md) collection|Not yet documented|
-|[importOffice365DeviceConfigurationPolicies action](../api/intune-deviceintent-devicemanagementtemplate-importoffice365deviceconfigurationpolicies.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) collection|Not yet documented|
+|[createInstance action](../api/intune-deviceintent-devicemanagementtemplate-createinstance.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)||
+|[compare function](../api/intune-deviceintent-devicemanagementtemplate-compare.md)|[deviceManagementSettingComparison](../resources/intune-deviceintent-devicemanagementsettingcomparison.md) collection||
+|[importOffice365DeviceConfigurationPolicies action](../api/intune-deviceintent-devicemanagementtemplate-importoffice365deviceconfigurationpolicies.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) collection||
 
 ## Properties
 |Property|Type|Description|
