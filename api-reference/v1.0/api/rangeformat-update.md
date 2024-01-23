@@ -102,8 +102,6 @@ Content-type: application/json
 This request updates the font style, size, and color of the first cell.
 
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_font"
@@ -176,8 +174,6 @@ Content-type: application/json
 ##### Request
 This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.
 
-
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -333,8 +329,6 @@ Content-type: application/json
 ##### Request
 This request updates the font style, size, and color of the third cell. The underline property takes **Single** or **Double** as values.
 
-
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
