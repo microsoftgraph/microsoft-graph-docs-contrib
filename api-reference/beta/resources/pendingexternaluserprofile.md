@@ -33,7 +33,7 @@ Represents an external user profile for an external user in the Microsoft Entra 
 |createdBy|String|The object ID of the user or principal who created the pending external user profile or invited the external user. Read-only. Not nullable. |
 |createdDateTime|DateTimeOffset|Date and time when this pending external user profile was created. Not nullable. Read-only. |
 |companyName|String|The company name of the pending external user profile. Supports `$filter` (`eq`, `startswith`). |
-|deletedDateTime|DateTimeOffset|Date and time when the pending external user profile was deleted. Always `null` when the object isn't been deleted. |
+|deletedDateTime|DateTimeOffset|Date and time when the pending external user profile was deleted. Always `null` when the object isn't deleted. |
 |department|String|The department of the pending external user profile. |
 |displayName|String|The display name of the pending external user profile.|
 |epoch|Int|The version number of the pending external user profile. Incremented with each update to the entity. Read-only. Not nullable.|
