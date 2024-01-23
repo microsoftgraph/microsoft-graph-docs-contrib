@@ -13,9 +13,19 @@ The Picker component uses `mgt-get` to query the Microsoft Graph API then render
 
 The following example shows the use of the `mgt-picker` component to select a task list from a user's task lists. You can use the code editor to see how [properties and attributes](#properties-and-attributes) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-picker--picker&source=docs" height="500"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-picker--picker&source=docs)
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-picker-html--picker&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-picker-html--picker&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-picker-react--picker&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-picker-react--picker&source=docs).
+
+---
 
 ## Properties and attributes
 
