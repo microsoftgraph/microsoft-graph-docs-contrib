@@ -1,9 +1,9 @@
 ---
 title: "virtualEventTownhall resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Contains information about a virtual event townhall."
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,46 +13,59 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Contains information about a virtual event townhall.
 
 Inherits from [virtualEvent](../resources/virtualevent.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List virtualEventTownhalls](../api/virtualeventtownhall-list.md)|[virtualEventTownhall](../resources/virtualeventtownhall.md) collection|Get a list of the [virtualEventTownhall](../resources/virtualeventtownhall.md) objects and their properties.|
-|[Get virtualEventTownhall](../api/virtualeventtownhall-get.md)|[virtualEventTownhall](../resources/virtualeventtownhall.md)|Read the properties and relationships of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.|
-|[Update virtualEventTownhall](../api/virtualeventtownhall-update.md)|[virtualEventTownhall](../resources/virtualeventtownhall.md)|Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.|
-|[Delete virtualEventTownhall](../api/virtualeventtownhall-delete.md)|None|Delete a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.|
-|[getByUserIdAndRole](../api/virtualeventtownhall-getbyuseridandrole.md)|[virtualEventTownhall](../resources/virtualeventtownhall.md) collection|**TODO: Add Description**|
-|[getByUserRole](../api/virtualeventtownhall-getbyuserrole.md)|[virtualEventTownhall](../resources/virtualeventtownhall.md) collection|**TODO: Add Description**|
-|[Get presenter](../api/virtualeventtownhall-get-presenter.md)|[virtualEventPresenter](../resources/virtualeventpresenter.md)|Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object.|
-|[List presenters](../api/virtualeventtownhall-list-presenters.md)|[virtualEventPresenter](../resources/virtualeventpresenter.md) collection|Get the virtualEventPresenter resources from the presenters navigation property.|
-|[Create virtualEventPresenter](../api/virtualeventtownhall-post-presenters.md)|[virtualEventPresenter](../resources/virtualeventpresenter.md)|Create a new virtualEventPresenter object.|
-|[List sessions](../api/virtualeventtownhall-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get the virtualEventSession resources from the sessions navigation property.|
-|[Create virtualEventSession](../api/virtualeventtownhall-post-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md)|Create a new virtualEventSession object.|
+| [Create](../api/solutionsroot-post-virtualeventtownhall.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
+| [Get](../api/virtualeventtownhall-get.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Read the properties and relationships of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
+| [Update](../api/virtualeventtownhall-update.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
+| [Publish](../api/virtualeventtownhall-publish.md) | None | Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
+| [Cancel](../api/virtualeventtownhall-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
+| [List by user role](../api/virtualeventtownhall-getbyuseridandrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a [virtualEventTownhall](../resources/virtualeventtownhall.md) collection where the signed-in user is either the organizer or a co-organizer. |
+| [List by user ID and role](../api/virtualeventtownhall-getbyuserrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a [virtualEventTownhall](../resources/virtualeventtownhall.md) collection where the specified user is either the organizer or a co-organizer. |
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|audience|meetingAudience|**TODO: Add Description**.The possible values are: `everyone`, `organization`, `unknownFutureValue`.|
-|coOrganizers|[communicationsUserIdentity](../resources/communicationsuseridentity.md) collection|**TODO: Add Description**|
-|createdBy|[communicationsIdentitySet](../resources/communicationsidentityset.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md).|
-|description|[itemBody](../resources/itembody.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md).|
-|displayName|String|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md).|
-|endDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|invitedAttendees|[communicationsUserIdentity](../resources/communicationsuseridentity.md) collection|**TODO: Add Description**|
-|isInviteOnly|Boolean|**TODO: Add Description**|
-|startDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md).|
-|status|virtualEventStatus|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md).The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
+| audience | [meetingAudience](#meetingaudience-values) | To whom the townhall is visible. |
+| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the townhall. |
+| createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of who created the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| description | [itemBody](../resources/itembody.md) | Description of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| displayName | String | Display name of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| id | String | Unique identifier of the townhall. Inherited from [entity](../resources/entity.md).|
+| invitedAttendees | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Invited people to the townhall. |
+| isInviteOnly | Boolean | Indicates whether the townhall is only open to invited people and groups in your organization. Can only be `true` when the value of the **audience** property is `organization`. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| status | [virtualEventStatus](#virtualeventstatus-values) | Status of the townhall. |
+
+### meetingAudience values
+
+| Value | Description |
+| ----- | ----------- |
+| everyone | The townhall is open to anyone. Choose this if there will be attendees outside your organization. |
+| organization | The townhall is open to people in your organization and guests of your organization. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+### virtualEventStatus values
+
+| Value | Description |
+| ----- | ----------- |
+| draft | The virtual event is in draft and only visible to the organizer. |
+| published | The organizer published the virtual event and it's visible to the audience. || canceled | The organizer canceled the virtual event. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|presenters|[virtualEventPresenter](../resources/virtualeventpresenter.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.virtualEvent](../resources/virtualevent.md)|
-|sessions|[virtualEventSession](../resources/virtualeventsession.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.virtualEvent](../resources/virtualevent.md)|
+| presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md).|
+| sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -70,30 +83,13 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "status": "String",
   "displayName": "String",
-  "description": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "endDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.communicationsIdentitySet"
-  },
+  "description": {"@odata.type": "microsoft.graph.itemBody"},
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
   "audience": "String",
-  "coOrganizers": [
-    {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
-    }
-  ],
-  "invitedAttendees": [
-    {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
-    }
-  ],
+  "coOrganizers": [{"@odata.type": "microsoft.graph.communicationsUserIdentity"}],
+  "invitedAttendees": [{"@odata.type": "microsoft.graph.communicationsUserIdentity"}],
   "isInviteOnly": "Boolean"
 }
 ```
-
