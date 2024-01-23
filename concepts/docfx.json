@@ -9,6 +9,7 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "breadcrumb/**",
           "concepts/sdks/snippets/dotnet/**",
           "concepts/sdks/snippets/go/**",
           "concepts/sdks/snippets/java/**",

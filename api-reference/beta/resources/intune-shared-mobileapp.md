@@ -23,13 +23,13 @@ An abstract class containing the base properties for Intune mobile apps.
 |[List mobileApps](../api/intune-shared-mobileapp-list.md)|[mobileApp](../resources/intune-shared-mobileapp.md) collection|List properties and relationships of the [mobileApp](../resources/intune-shared-mobileapp.md) objects.|
 |[Get mobileApp](../api/intune-shared-mobileapp-get.md)|[mobileApp](../resources/intune-shared-mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune-shared-mobileapp.md) object.|
 |**Apps**|
-|[assign action](../api/intune-shared-mobileapp-assign.md)|None|Not yet documented|
-|[getMobileAppCount function](../api/intune-shared-mobileapp-getmobileappcount.md)|Int64|Not yet documented|
-|[getTopMobileApps function](../api/intune-shared-mobileapp-gettopmobileapps.md)|[mobileApp](../resources/intune-shared-mobileapp.md) collection|Not yet documented|
-|[updateRelationships action](../api/intune-shared-mobileapp-updaterelationships.md)|None|Not yet documented|
-|[getRelatedAppStates function](../api/intune-shared-mobileapp-getrelatedappstates.md)|[mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md) collection|Not yet documented|
+|[assign action](../api/intune-shared-mobileapp-assign.md)|None||
+|[getMobileAppCount function](../api/intune-shared-mobileapp-getmobileappcount.md)|Int64||
+|[getTopMobileApps function](../api/intune-shared-mobileapp-gettopmobileapps.md)|[mobileApp](../resources/intune-shared-mobileapp.md) collection||
+|[updateRelationships action](../api/intune-shared-mobileapp-updaterelationships.md)|None||
+|[getRelatedAppStates function](../api/intune-shared-mobileapp-getrelatedappstates.md)|[mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md) collection||
 |**Policy Set**|
-|[hasPayloadLinks action](../api/intune-shared-mobileapp-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
+|[hasPayloadLinks action](../api/intune-shared-mobileapp-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
 
 ## Properties
 |Property|Type|Description|
