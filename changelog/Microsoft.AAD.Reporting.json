@@ -53,7 +53,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5aaf550a-6692-4944-be8c-e80e52389f39",
+          "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
           "ApiChange": "Enumeration",
           "ChangedApiName": "migrationStatus",
           "ChangeType": "Addition",
@@ -61,26 +61,26 @@
           "Target": "migrationStatus"
         },
         {
-          "Id": "5aaf550a-6692-4944-be8c-e80e52389f39",
-          "ApiChange": "Resource",
-          "ChangedApiName": "keyValuePair",
-          "ChangeType": "Addition",
-          "Description": "Added the [keyValuePair](https://learn.microsoft.com/en-us/graph/api/resources/keyValuePair?view=graph-rest-1.0) resource type.",
-          "Target": "keyValuePair"
-        },
-        {
-          "Id": "5aaf550a-6692-4944-be8c-e80e52389f39",
+          "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
           "ApiChange": "Resource",
           "ChangedApiName": "relyingPartyDetailedSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingPartyDetailedSummary?view=graph-rest-1.0) resource and its related methods.",
+          "Description": "Added the [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingPartyDetailedSummary?view=graph-rest-1.0) resource.",
           "Target": "relyingPartyDetailedSummary"
+        },
+        {
+          "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getRelyingPartyDetailedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [getRelyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/reportRoot-getRelyingPartyDetailedSummary?view=graph-rest-1.0) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportRoot"
         }
       ],
-      "Id": "5aaf550a-6692-4944-be8c-e80e52389f39",
+      "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2024-01-12T14:28:01.2592722Z",
+      "CreatedDateTime": "2024-01-22T00:00:00.5014179Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
