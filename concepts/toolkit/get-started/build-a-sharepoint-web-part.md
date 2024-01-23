@@ -30,7 +30,8 @@ Follow the steps to [Set up your SharePoint Framework development environment](/
 
 Follow the directions [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) but when asked what template you would like to use choose React
 
-> [!IMPORTANT] You must choose React when selecting your framework when using `yo @microsoft/sharepoint`
+> [!IMPORTANT]
+> You must choose React when selecting your framework when using `yo @microsoft/sharepoint`
 
 ## Add the Microsoft Graph Toolkit packages
 
