@@ -27,16 +27,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
 PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 ```
-## Optional request headers
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+
+## Request headers
+
+| Name                | Description                                                                    |
+|:--------------------|:-------------------------------------------------------------------------------|
+| Authorization       | Bearer {code}. Required.                                                       |
+| Workbook-Session-Id | Workbook session Id that determines if changes are persisted or not. Optional. |
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |height|double|Represents the height, in points, of the chart object.|
 |left|double|The distance, in points, from the left side of the chart to the worksheet origin.|
