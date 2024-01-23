@@ -15,6 +15,16 @@ Namespace: microsoft.graph
 
 Represents a presenter of a virtual event.
 
+## Methods
+
+| Method | Return Type |Description |
+| ------ | ----------- | ---------- |
+| [Create](../api/virtualevent-post-presenter.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [Get](../api/virtualeventtown-get-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [List](../api/virtualeventtownhall-list-presenters.md)| [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Get the virtualEventPresenter resources from the presenters navigation property. |
+| [Update](../api/virtualeventtown-update-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [Delete](../api/virtualeventtown-delete-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+
 ## Properties
 
 |Property|Type|Description|
