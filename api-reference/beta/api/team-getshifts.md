@@ -42,7 +42,7 @@ GET /users/{id | user-principal-name}/joinedTeams/getShifts
 This method supports the `$top` and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 > [!NOTE]
-> The `$filter` parameter supports the **sharedShift/startDateTime**, **sharedShift/endDateTime**, **userID** and **teamId** properties. It doesn't support the use of the same property more than once in a query. For example, the following query doesn't work: `sharedShift/startDateTime ge 2024-05-09T00:00:00Z and sharedShift/startDateTime le 2024-05-09T23:59:59Z`; however, the following query works: `sharedShift/startDateTime ge 2024-05-09T00:00:00Z and sharedShift/endDateTime le 2024-05-09T23:59:59Z`.
+> The `$filter` parameter supports the **sharedShift/startDateTime**, **sharedShift/endDateTime**, **userId** and **teamInfo/teamId** properties. It doesn't support the use of the same property more than once in a query. For example, the following query doesn't work: `sharedShift/startDateTime ge 2024-05-09T00:00:00Z and sharedShift/startDateTime le 2024-05-09T23:59:59Z`; however, the following query works: `sharedShift/startDateTime ge 2024-05-09T00:00:00Z and sharedShift/endDateTime le 2024-05-09T23:59:59Z`.
 
 ## Request headers
 

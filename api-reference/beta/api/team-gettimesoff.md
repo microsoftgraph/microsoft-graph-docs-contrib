@@ -42,7 +42,7 @@ GET /users/{id | user-principal-name}/joinedTeams/getTimesOff
 This method supports the `$top`, `$orderby`, `$select` and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 > [!NOTE]
-> The `$filter` parameter supports the **sharedTimeOff/startDateTime**, **sharedTimeOff/endDateTime**, **userID** and **teamId** properties. It doesn't support the use of the same property more than once in a query. For example, the following query doesn't work: `sharedTimeOff/startDateTime ge 2024-05-09T00:00:00Z and sharedTimeOff/startDateTime le 2024-05-09T23:59:59Z`; however, the following query works: `sharedTimeOff/startDateTime ge 2024-05-09T00:00:00Z and sharedTimeOff/endDateTime le 2024-05-09T23:59:59Z`.
+> The `$filter` parameter supports the **sharedTimeOff/startDateTime**, **sharedTimeOff/endDateTime**, **userID** and **teamInfo/teamId** properties. It doesn't support the use of the same property more than once in a query. For example, the following query doesn't work: `sharedTimeOff/startDateTime ge 2024-05-09T00:00:00Z and sharedTimeOff/startDateTime le 2024-05-09T23:59:59Z`; however, the following query works: `sharedTimeOff/startDateTime ge 2024-05-09T00:00:00Z and sharedTimeOff/endDateTime le 2024-05-09T23:59:59Z`.
 
 ## Request headers
 
