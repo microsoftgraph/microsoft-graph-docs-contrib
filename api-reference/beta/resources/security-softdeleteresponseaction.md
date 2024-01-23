@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes an email response action that moves the email message to a deleted folder in the cloud. Only administrators can perform this response action. End users must go to the Deleted folder within the Deleted items folder to perform this operation.
+Describes an email response action that moves the email message to a deleted folder in the cloud. Only administrators can perform this response action. End users must go to the Deleted folder within the Deleted items folder to move their deleted messages to the cloud.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 

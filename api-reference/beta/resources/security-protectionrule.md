@@ -1,6 +1,6 @@
 ---
 title: "protectionRule resource type"
-description: "Represents an abstract rule, which contains basic properties such as ID, name, and so on."
+description: "Represents a rule, which contains basic properties such as ID, name, and so on."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract rule, which contains basic properties such as ID, name, and so on.
+Represents a rule, which contains basic properties such as ID, name, and so on.
 This type is abstract.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).

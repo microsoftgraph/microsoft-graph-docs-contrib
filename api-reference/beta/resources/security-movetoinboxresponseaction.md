@@ -1,6 +1,6 @@
 ---
 title: "moveToInboxResponseAction resource type"
-description: "Describes an email response action that moves the email message to the Inbox."
+description: "Describes an email response action that moves the email message to the user's Inbox."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes an email response action that moves the email message to the Inbox.
+Describes an email response action that moves the email message to the user's Inbox.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 

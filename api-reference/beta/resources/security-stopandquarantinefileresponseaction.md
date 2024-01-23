@@ -1,6 +1,6 @@
 ---
 title: "stopAndQuarantineFileResponseAction resource type"
-description: "Describes a 'Stop and Quarantine File' response action."
+description: "Describes response action that moves the file from its current location to quarantine."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes response action stops and quarantines a file.
-Deletes the file from its current location and places a copy in quarantine.
+Describes response action that moves the file from its current location to quarantine.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 

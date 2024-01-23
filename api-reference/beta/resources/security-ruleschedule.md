@@ -1,6 +1,6 @@
 ---
 title: "ruleSchedule resource type"
-description: "Describes how often the custom detection rule runs, and when it next runs."
+description: "Represents how often the custom detection rule runs, and when it next runs."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- Describes how often the [custom detection rule](../resources/security-detectionrule.md) runs, and when it next runs.
+Represents how often the [custom detection rule](../resources/security-detectionrule.md) runs, and when it next runs.
 
 ## Properties
 | Property        | Type           | Description                                                                                                                                       |

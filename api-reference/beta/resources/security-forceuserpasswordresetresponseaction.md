@@ -1,6 +1,6 @@
 ---
 title: "forceUserPasswordResetResponseAction resource type"
-description: "Describes a response action that forces a password reset for a user."
+description: "Describes a response action that prompts the user to change their password the next time they sign in."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a response action that forces a password reset for a user.
-Prompts the user to change their password the next time they sign in.
+Describes a response action that prompts the user to change their password the next time they sign in.
 
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).

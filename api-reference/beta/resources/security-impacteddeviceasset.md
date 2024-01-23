@@ -1,6 +1,6 @@
 ---
 title: "impactedDeviceAsset resource type"
-description: "Describes a device that was identified in an alert triggered by a custom detection rule."
+description: "Represents a device that was identified in an alert triggered by a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a device that was identified in an alert triggered by a [custom detection rule](../resources/security-detectionrule.md).
+Represents a device that was identified in an alert triggered by a [custom detection rule](../resources/security-detectionrule.md).
 
 Inherits from [microsoft.graph.security.impactedAsset](../resources/security-impactedasset.md).
 
