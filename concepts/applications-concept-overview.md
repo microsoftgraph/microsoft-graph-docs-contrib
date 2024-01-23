@@ -13,11 +13,11 @@ ms.date: 01/23/2024
 
 # Applications API overview
 
-Microsoft Entra ID is an Identity and Access Management (IAM) system. A core part of its functionality is the [Microsoft identity platform](/entra/identity-platform/v2-overview), which provides authentication and authorization services for *registered applications*. Microsoft Graph APIs allow you to register and manage your application, enabling you to use Microsoft's IAM capabilities.
+Microsoft Entra ID is an Identity and Access Management (IAM) system. A core part of its functionality is the [Microsoft identity platform](/entra/identity-platform/v2-overview), which provides authentication and authorization services for *registered applications*. Microsoft Graph APIs allow you to register and manage your application programmatically, enabling you to use Microsoft's IAM capabilities.
 
 ## Building blocks of an application in Microsoft Entra ID
 
-A Microsoft Entra application is defined by an **application** object and a **service principal** object. There's only one application object for your application across Microsoft Entra, but there can be multiple service principal objects for your application.
+A Microsoft Entra application is defined by an **application** object and a **service principal** object. There's only one application object for your application across Microsoft Entra, but there can be multiple service principal objects for your application. 
 
 ## Application registration
 
@@ -64,7 +64,7 @@ You can use Microsoft Graph APIs for application management to perform the follo
 
 ## Other resources
 
-- Learn more about [application and service principal objects in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals).
+- Learn more about [the relationship between applications and service principals in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals#relationship-between-application-objects-and-service-principals).
 - [What is application management?](/entra/identity/enterprise-apps/what-is-application-management)
 
 ## Next step
