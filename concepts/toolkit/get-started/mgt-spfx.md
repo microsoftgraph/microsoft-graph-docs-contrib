@@ -85,6 +85,7 @@ export default class MgtDemoWebPart extends BaseClientSideWebPart<IMgtDemoWebPar
     if (!Providers.globalProvider) {
       Providers.globalProvider = new SharePointProvider(this.context);
     }
+    return super.onInit();
   }
 
   public render(): void {
@@ -118,7 +119,7 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 ```
 
 >[!IMPORTANT]
-> Make sure that you web part class does not import any Microsoft Graph Toolkit resources from `@microsoft/mgt-react`.
+> Make sure that your root web part class does not import any Microsoft Graph Toolkit resources from `@microsoft/mgt-react`, these should only be imported inside the lazy loaded React components.
 
 
 ## See also

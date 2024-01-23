@@ -9,7 +9,8 @@ author: sebastienlevert
 
 This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint client-side web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Getting started involves the following steps:
 
-1. Set up your development environment and create a web part.
+1. Set up your development environment.
+1. Create your web part project.
 1. Add the Microsoft Graph Toolkit SharePoint Framework package.
 1. Add the SharePoint Provider.
 1. Add components.
@@ -20,7 +21,182 @@ This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint
 
 ## Set up your SharePoint Framework development environment and create a new web part
 
-Follow the steps to [Set up your SharePoint Framework development environment](/sharepoint/dev/spfx/set-up-your-development-environment) and then [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
+Follow the steps to [Set up your SharePoint Framework development environment](/sharepoint/dev/spfx/set-up-your-development-environment).
+
+
+# [React based web parts](#tab/react)
+
+## Create your web part project
+
+Follow the directions [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) but when asked what template you would like to use choose React
+
+> [!IMPORTANT] You must choose React when selecting your framework when using `yo @microsoft/sharepoint`
+
+## Add the Microsoft Graph Toolkit packages
+
+The Microsoft Graph Toolkit publishes multiple packages that are needed to build a SharePoint Framework web part, installing the `@microsoft/mgt-react`, `@microsoft/mgt-sharepoint-provider` and `@microsoft/mgt-spfx-utils` packages will install the necessary dependencies.
+
+```bash
+npm install @microsoft/mgt-react
+```
+
+## Add the SharePoint Provider
+
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). SharePoint web parts always exist in an authenticated context because the user has already had to sign in in order to get to the page that hosts your web part. Use this context to initialize the [SharePoint provider](../providers/sharepoint.md).
+
+First, add the provider to your web part. Locate the `src\webparts\<your-project>\<your-web-part>.ts` file in your project folder, and add the following line to the top of your file, right below the existing `import` statements:
+
+```ts
+import { Providers } from '@microsoft/mgt-element';
+import { SharePointProvider } from "@microsoft/mgt-sharepoint-provider";
+```
+
+Next, you need to initialize the provider with the authenticated context inside the `onInit()` method of your web part. In the same file, add the following code right before the `public render(): void {` line:
+
+```ts
+protected async onInit() {
+  if (!Providers.globalProvider) {
+    Providers.globalProvider = new SharePointProvider(this.context);
+  }
+}
+```
+
+## Set up disambiguation
+
+To ensure that your web part will work if there are multiple web part solutions using Microsoft Graph Toolkit in a single page you must use disambiguation. For more background on this please read the [main disambiguation](../customize-components/disambiguation.md) article.
+
+First update your imports from `@microsoft/mgt-element` and add one for the `lazyLoadComponent` helper.
+
+```ts
+import { Providers, customElementHelper } from "@microsoft/mgt-element";
+import { lazyLoadComponent } from "@microsoft/mgt-spfx-utils";
+```
+
+Next update the `onInit()` method of the root web part to set up disambiguation. The string used for disambiguation be unique to your SharePoint Framework solution:
+
+```ts
+protected async onInit(): Promise<void> {
+  if (!Providers.globalProvider) {
+    Providers.globalProvider = new SharePointProvider(this.context);
+  }
+  customElementHelper.withDisambiguation('contoso-hr-solution');
+  return super.onInit();
+}
+```
+
+## Update the import and rendering of the React component
+
+First convert the import of the component to use [`React.lazy`](https://react.dev/reference/react/lazy#reference). Locate the statement `import <WebPartName> from './components/<WebPartName>;` and update it to the following
+
+```ts
+const MgtComponent = React.lazy(
+  () =>
+    import(/* webpackChunkName: 'mgt-react-component' */ "./components/<WebPartName>")
+);
+```
+
+Then modify the render method to use the `lazyLoadComponent` helper:
+
+```ts
+  public render(): void {
+    const element = lazyLoadComponent<IHelloWorldProps>(MgtComponent, {
+      description: this.properties.description,
+      isDarkTheme: this._isDarkTheme,
+      environmentMessage: this._environmentMessage,
+      hasTeamsContext: !!this.context.sdks.microsoftTeams,
+      userDisplayName: this.context.pageContext.user.displayName
+    });
+
+    ReactDom.render(element, this.domElement);
+  }
+```
+
+Now your web part should look like this:
+
+```ts
+import * as React from "react";
+import * as ReactDom from "react-dom";
+import { Version } from "@microsoft/sp-core-library";
+import {
+  type IPropertyPaneConfiguration,
+  PropertyPaneTextField,
+} from "@microsoft/sp-property-pane";
+import { BaseClientSideWebPart } from "@microsoft/sp-webpart-base";
+import { IReadonlyTheme } from "@microsoft/sp-component-base";
+import { Providers, customElementHelper } from "@microsoft/mgt-element";
+import { lazyLoadComponent } from "@microsoft/mgt-spfx-utils";
+import { SharePointProvider } from "@microsoft/mgt-sharepoint-provider";
+
+import * as strings from "HelloWorldWebPartStrings";
+const HelloWorld = React.lazy(
+  () =>
+    import(
+      /* webpackChunkName: 'mgt-react-component' */ "./components/HelloWorld"
+    )
+);
+import { IHelloWorldProps } from "./components/IHelloWorldProps";
+
+export interface IHelloWorldWebPartProps {
+  description: string;
+}
+
+export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorldWebPartProps> {
+  private _isDarkTheme: boolean = false;
+  private _environmentMessage: string = "";
+
+  public render(): void {
+    const element = lazyLoadComponent<IHelloWorldProps>(HelloWorld, {
+      description: this.properties.description,
+      isDarkTheme: this._isDarkTheme,
+      environmentMessage: this._environmentMessage,
+      hasTeamsContext: !!this.context.sdks.microsoftTeams,
+      userDisplayName: this.context.pageContext.user.displayName,
+    });
+
+    ReactDom.render(element, this.domElement);
+  }
+
+  protected async onInit(): Promise<void> {
+    if (!Providers.globalProvider) {
+      Providers.globalProvider = new SharePointProvider(this.context);
+    }
+    customElementHelper.withDisambiguation("contoso-hr-solution");
+    return super.onInit();
+  }
+  // [...] trimmed for brevity
+}
+```
+
+## Add components
+
+And simply add the components to React component. Locate and open the `src\webparts\<your-project>\components\<your-component>.tsx` file and add the import for the component you wish to use, in this case the `Person` component, and then update the `render()` method to use the Person component. Now your component should look like this:
+
+```tsx
+import * as React from 'react';
+import type { IHelloWorldProps } from './IHelloWorldProps';
+import { Person } from '@microsoft/mgt-react';
+
+export default class HelloWorld extends React.Component<IHelloWorldProps, {}> {
+  public render(): React.ReactElement<IHelloWorldProps> {
+    return (<Person personQuery="me" view="twolines" />);
+  }
+}
+```
+
+Or if you prefer to use React Functional Components:
+
+```tsx
+import * as React from 'react';
+import type { IHelloWorldProps } from './IHelloWorldProps';
+import { Person, ViewType } from '@microsoft/mgt-react';
+
+const HelloWorld = (props: IHelloWorldProps): React.ReactElement => <Person personQuery="me" view={ViewType.twolines} />;
+
+export default HelloWorld;
+```
+
+
+# [No framework web parts](#tab/html)
 
 ## Add the Microsoft Graph Toolkit packages
 
@@ -105,8 +281,7 @@ public render(): void {
 }
 ```
 
-> [!NOTE]
-> If you're building a web part using React, see the [@microsoft/mgt-spfx docs](./mgt-spfx.md#react) to learn how to use `@microsoft/mgt-react`.
+---
 
 ## Configure permissions
 
