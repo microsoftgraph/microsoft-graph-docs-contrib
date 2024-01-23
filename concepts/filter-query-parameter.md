@@ -212,7 +212,7 @@ The following table shows some examples that use the `$filter` query parameter. 
 
 > [!NOTE]
 >
-> + Examples marked with <sup>[*](#*)</sup> are only supported with [advanced query capabilities](/graph/aad-advanced-queries).
+> + Examples marked with <sup>*</sup> are only supported with [advanced query capabilities](/graph/aad-advanced-queries).
 > + Click the examples to try them in [Graph Explorer][graph-explorer].
 
 | Description                                                                                                                           | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -239,9 +239,9 @@ These examples show how to use `$filter` to match against supported properties a
 
 > [!NOTE]
 >
-> + Examples marked with <sup>*</sup> are only supported with [advanced query capabilities](/graph/aad-advanced-queries).
-> 
 > + GUID and DateTimeOffset values aren't enclosed in quotes in `$filter` expressions.
+
+<sup><a name="*"></a>* </sup> : This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
 
 ### For single primitive types like String, Int, and dates
 
@@ -261,8 +261,6 @@ These examples show how to use `$filter` to match against supported properties a
 | `not` and `in`         | `~/users?$filter=not(userType in ('Member'))`<sup>[*](#*)</sup>                                                                                     |
 | `contains`             | `~/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')` |
 | `has`                  | `~/identity/conditionalAccess/templates?$filter=scenarios has 'secureFoundation'`                                                  |
-
-<sup><a name="*"></a>*</sup>: This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
 
 ### For a collection of primitive types
 
@@ -288,7 +286,6 @@ For the list of all properties of directory objects that support count of a coll
 no examples available for ge and le
 -->
 
-<sup><a name="*"></a>*</sup>: This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
 
 ### For GUID types
 
@@ -308,7 +305,6 @@ no examples available for ge and le
 Hiding because the latest iteration of the report doesn't include these properties.
 -->
 
-<sup><a name="*"></a>*</sup>: This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
 
 ### For a collection of GUID types
 
@@ -318,7 +314,6 @@ Hiding because the latest iteration of the report doesn't include these properti
 | `le`         | `~/devices?$filter=alternativeSecurityIds/any(a:a/type le 2)`<sup>[*](#*)</sup> |
 | `ge`         | `~/devices?$filter=alternativeSecurityIds/any(a:a/type ge 2)`<sup>[*](#*)</sup> |
 
-<sup><a name="*"></a>*</sup>: This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
 
 ### For a collection of complex types
 
@@ -329,7 +324,6 @@ Hiding because the latest iteration of the report doesn't include these properti
 | `startsWith`   | `~/users?$filter=authorizationInfo/certificateUserIds/any(x:startswith(x,'987654321'))`<sup>[*](#*)</sup>  |
 | `endsWith`     | `~/users?$filter=proxyAddresses/any(p:endsWith(p,'OnMicrosoft.com'))`<sup>[*](#*)</sup>                    |
 
-<sup><a name="*"></a>*</sup>: This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
 
 ## See also
 
