@@ -33,10 +33,10 @@ You can use Microsoft Graph Toolkit in your application by installing the `npm` 
 
 # [package](#tab/package)
 
-Using the toolkit via ES6 modules gives you full control of the bundling process and allows you to bundle only the code that you need for your application. To use the ES6 modules, add the package to your project:
+Using the toolkit via ES6 modules gives you full control of the bundling process and allows you to bundle only the code that you need for your application. To use the ES6 modules, add the `@microsoft/mgt-element`, `@microsoft/mgt-components`, and `@microsoft/mgt-msal2-provider` packages to your project:
 
 ```cmd
-npm install @microsoft/mgt
+npm install @microsoft/mgt-element @microsoft/mgt-components @microsoft/mgt-msal2-provider
 ```
 
 To use the components as a custom element in HTML they must be registered, importing and executing the necessary component registration function will set allow you to use them in your code. Here's how you do that for the agenda and login components:
