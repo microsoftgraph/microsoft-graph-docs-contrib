@@ -11652,8 +11652,6 @@ items:
                     href: api/domain-promote.md
               - name: External user profiles
                 items:
-                - name: Overview
-                  href: resources/extendeddirectory-overview.md
                 - name: External user profile
                   href: resources/externaluserprofile.md
                   items:
