@@ -27,7 +27,7 @@ The first step for the Microsoft identity platform to trust your application is 
 - Whether the app is multitenant or single-tenant
 - Where the app is located
 - Where to send replies after authentication
-- Basic identification information for the app, and much more
+- Basic identification information for the app, and more
 
 Use the [application resource type](/graph/api/resources/application) and its associated methods in Microsoft Graph to manage application registration objects programmatically.
 
@@ -36,13 +36,13 @@ Use the [application resource type](/graph/api/resources/application) and its as
 Every registered application in Microsoft Entra ID has a corresponding service principal object in every tenant where it needs to access the tenant's resources. A service principal derives its common and default properties from the application object. The service principal allows you to define the following parameters:
 
 - The identity providers users can use to access the app
-- Who can use the app, and much more
+- Who can use the app, and more
 
 Use the [servicePrincipal resource type](/graph/api/resources/serviceprincipal) and its associated methods in Microsoft Graph to manage service principals programmatically.
 
 ## How can you manage apps using Microsoft Graph APIs?
 
-You can use Microsoft Graph APIs for application management to perform the following tasks and much more:
+You can use Microsoft Graph APIs for application management to perform the following tasks and more:
 
 - For **application objects**:
   - Create and manage applications programmatically.
