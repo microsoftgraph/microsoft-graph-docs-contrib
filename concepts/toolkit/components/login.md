@@ -20,13 +20,13 @@ The following example shows the `mgt-login` component with a signed-in user.
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-login-html--login&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-login-html--login&source=docs" height="350"></iframe>
 
 [Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-login-html--login&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-login-react--login&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-login-react--login&source=docs" height="350"></iframe>
 
 [Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-login-react--login&source=docs).
 

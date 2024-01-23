@@ -20,15 +20,15 @@ The following example displays the signed-in user's Microsoft Planner tasks usin
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-planner-html--tasks&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-planner-html--planner&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-planner-html--tasks&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-planner-html--planner&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-planner-react--tasks&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-planner-react--planner&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-planner-react--tasks&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-planner-react--planner&source=docs).
 
 ---
 

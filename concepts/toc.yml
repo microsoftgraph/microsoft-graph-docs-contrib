@@ -253,7 +253,7 @@ items:
             - name: Picker
               href: toolkit/components/picker.md
             - name: Planner tasks
-              href: toolkit/components/tasks.md
+              href: toolkit/components/planner.md
             - name: Search box
               href: toolkit/components/search-box.md
             - name: Search results

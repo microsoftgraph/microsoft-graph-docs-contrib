@@ -276,7 +276,7 @@ items:
           - name: Picker
             href: /graph/toolkit/components/picker?context=graph/api/beta
           - name: Planner tasks
-            href: /graph/toolkit/components/tasks?context=graph/api/beta
+            href: /graph/toolkit/components/planner?context=graph/api/beta
           - name: Search box
             href: /graph/toolkit/components/search-box?context=graph/api/beta
           - name: Search results

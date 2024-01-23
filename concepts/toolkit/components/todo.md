@@ -13,15 +13,17 @@ The To Do component is used to enable the signed-in user to view, add, remove, c
 
 The following example displays the signed-in user's Microsoft To Do tasks using the `mgt-todo` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-todo-html--tasks&source=docs" height="500"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-todo-html--tasks&source=docs).
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-todo-html--todos&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-todo-html--todos&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-todo-react--tasks&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-todo-react--todos&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-todo-html--tasks&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-todo-react--todos&source=docs).
 
 ---
 

@@ -17,13 +17,13 @@ The following example displays a person using the `mgt-person` component. You ca
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-person-html--person&source=docs" height="250"></iframe>
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-person-html--person&source=docs" height="400"></iframe>
 
 [Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-person-html--person&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-person-react--person&source=docs" height="250"></iframe>
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-person-react--person&source=docs" height="400"></iframe>
 
 [Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-person-react--person&source=docs).
 
