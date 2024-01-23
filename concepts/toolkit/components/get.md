@@ -13,9 +13,19 @@ You can use `mgt-get` to make any GET query from Microsoft Graph directly in you
 
 The following example shows the use of the `mgt-get` component to display a user's emails. You can use the code editor to see how [properties and attributes](#properties-and-attributes) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-get--get-email&source=docs" height="500"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-get--get-email&source=docs)
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-get-html--get&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-get-html--get&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-get-react--get&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-get-react--get&source=docs).
+
+---
 
 ## Properties and attributes
 

@@ -15,7 +15,7 @@ The following example shows the signed-in user's calendar events displayed using
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-agenda-html--agenda&source=docs&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-agenda-html--agenda&source=docs" height="500"></iframe>
 
 [Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-agenda-html--agenda&source=docs).
 
