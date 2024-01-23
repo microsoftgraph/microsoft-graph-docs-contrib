@@ -17,15 +17,6 @@ Namespace: microsoft.graph
 
 Remote help - response we provide back to the helper after getting response from pubSub
 
-## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List extendRemoteHelpSessionResponses](../api/intune-remoteassistance-extendremotehelpsessionresponse-list.md)|[extendRemoteHelpSessionResponse](../resources/intune-remoteassistance-extendremotehelpsessionresponse.md) collection|List properties and relationships of the [extendRemoteHelpSessionResponse](../resources/intune-remoteassistance-extendremotehelpsessionresponse.md) objects.|
-|[Get extendRemoteHelpSessionResponse](../api/intune-remoteassistance-extendremotehelpsessionresponse-get.md)|[extendRemoteHelpSessionResponse](../resources/intune-remoteassistance-extendremotehelpsessionresponse.md)|Read properties and relationships of the [extendRemoteHelpSessionResponse](../resources/intune-remoteassistance-extendremotehelpsessionresponse.md) object.|
-|[Create extendRemoteHelpSessionResponse](../api/intune-remoteassistance-extendremotehelpsessionresponse-create.md)|[extendRemoteHelpSessionResponse](../resources/intune-remoteassistance-extendremotehelpsessionresponse.md)|Create a new [extendRemoteHelpSessionResponse](../resources/intune-remoteassistance-extendremotehelpsessionresponse.md) object.|
-|[Delete extendRemoteHelpSessionResponse](../api/intune-remoteassistance-extendremotehelpsessionresponse-delete.md)|None|Deletes a [extendRemoteHelpSessionResponse](../resources/intune-remoteassistance-extendremotehelpsessionresponse.md).|
-|[Update extendRemoteHelpSessionResponse](../api/intune-remoteassistance-extendremotehelpsessionresponse-update.md)|[extendRemoteHelpSessionResponse](../resources/intune-remoteassistance-extendremotehelpsessionresponse.md)|Update the properties of a [extendRemoteHelpSessionResponse](../resources/intune-remoteassistance-extendremotehelpsessionresponse.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -41,7 +32,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.extendRemoteHelpSessionResponse"
 }
 -->
