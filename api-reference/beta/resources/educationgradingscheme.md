@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List educationGradingScheme objects](../api/educationassignment-list-gradingscheme.md)|[educationGradingScheme](../resources/educationgradingscheme.md) collection|Get a list of the [educationGradingScheme](../resources/educationgradingscheme.md) objects and their properties.|
+|[List educationGradingScheme objects](../api/educationassignmentsettings-get.md)|[educationGradingScheme](../resources/educationgradingscheme.md) collection|Get a list of the [educationGradingScheme](../resources/educationgradingscheme.md) objects and their properties.|
 |[Create educationGradingScheme](../api/educationassignment-post-gradingscheme.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Create a new [educationGradingScheme](../resources/educationgradingscheme.md) object.|
 |[Get educationGradingScheme](../api/educationgradingscheme-get.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Read the properties and relationships of an [educationGradingScheme](../resources/educationgradingscheme.md) object.|
 |[Update educationGradingScheme](../api/educationgradingscheme-update.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Update the properties of an [educationGradingScheme](../resources/educationgradingscheme.md) object.|
