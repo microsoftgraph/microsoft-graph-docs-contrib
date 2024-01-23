@@ -15,9 +15,19 @@ The person component also uses the [mgt-person-card](./person-card.md) to displa
 
 The following example displays a person using the `mgt-person` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person--person&source=docs" height="250"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person--person&source=docs)
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-person-html--person&source=docs" height="250"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-person-html--person&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-person-react--person&source=docs" height="250"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-person-react--person&source=docs).
+
+---
 
 ## Setting the person details
 

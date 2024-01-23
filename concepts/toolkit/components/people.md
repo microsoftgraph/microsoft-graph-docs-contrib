@@ -15,9 +15,19 @@ This component uses multiple [mgt-person](./person.md) controls, but it can be b
 
 The following example shows a group of people displayed using the `mgt-people` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people--people&source=docs" height="350"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-people--people&source=docs)
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-people-html--people&source=docs" height="350"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-people-html--people&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-people-react--people&source=docs" height="350"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-people-react--people&source=docs).
+
+---
 
 ## Properties
 
