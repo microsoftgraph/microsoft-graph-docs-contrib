@@ -7,7 +7,7 @@ ms.prod: "w10"
 doc_type: conceptualPageType
 ---
 
-# Deploy an expedited security update using the Windows Update for Business deployment service
+# Deploy an expedited quality update using the Windows Update for Business deployment service
 
 With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited security updates, and driver updates. This topic focuses on deployments of expedited security updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).  For information about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
 
