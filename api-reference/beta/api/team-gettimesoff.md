@@ -93,9 +93,14 @@ Content-Type: application/json
   "value": [
     {
       "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-      "userName": "John Doe",
-      "teamId": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
-      "teamName": "Contoso Team",
+      "teamInfo": {
+        "displayName": "Contoso Team",
+        "teamId": "172b0cce-e65d-44ce-9a49-91d9f2e8493a"
+      },
+      "userInfo": {
+        "displayName": "John Smith",
+        "teamId": "c5d0c76b-80c4-481c-be50-923cd8d680a1"
+      },
       "createdDateTime": "2019-03-14T05:35:57.755Z",
       "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
       "lastModifiedBy": {

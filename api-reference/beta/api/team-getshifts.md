@@ -97,9 +97,18 @@ Content-Type: application/json
       "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
       "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
       "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-      "schedulingGroupName": "Cashiers",
-      "teamId": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
-      "teamName": "Contoso Team",
+      "schedulingGroupInfo": {
+        "displayName": "Cashiers",
+        "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
+      },
+      "teamInfo": {
+        "displayName": "Contoso Team",
+        "teamId": "172b0cce-e65d-44ce-9a49-91d9f2e8493a"
+      },
+      "userInfo": {
+        "displayName": "John Smith",
+        "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1"
+      },
       "lastModifiedBy": {
         "application": null,
         "device": null,

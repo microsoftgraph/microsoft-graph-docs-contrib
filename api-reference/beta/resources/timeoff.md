@@ -40,10 +40,9 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | lastModifiedBy       | [identitySet](identityset.md) | The identity of the user who last updated this **timeOff**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | lastModifiedDateTime | DateTimeOffset                | The date and time when this **timeOff** was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | sharedTimeOff        | [timeOffItem](timeoffitem.md) | The shared version of this **timeOff** that is viewable by both employees and managers. |
-| teamId               | String                        | ID of the team that the **timeOff** applies to. |
-| teamName             | String                        | Display name of the team that the **timeOff** applies to. |
-| userId               | String                        | ID of the user assigned to the **timeOff**. Required. |
-| userName             | String                        | Display name of the user assigned to the **timeOff**. |
+| teamInfo             | [shiftsTeamInfo](shiftsteaminfo.md)                  | Information of the team that the **timeOff** is in. |
+| userId               | String                      | ID of the user assigned to the **timeOff**. Required. |
+| userInfo             | [shiftsUserInfo](shiftsuserinfo.md)                  | Information of the user assigned to the **timeOff**. |
 
 ## JSON representation
 
@@ -67,10 +66,9 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "sharedTimeOff": {"@odata.type": "microsoft.graph.timeOffItem"},
-  "teamId": "String",
-  "teamName": "String",
+  "teamInfo": "microsoft.graph.shiftsTeamInfo",
   "userId": "String",
-  "userName": "String"
+  "userInfo": "microsoft.graph.shiftsUserInfo"
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "openShift resource type"
 description: "Represents an unassigned open shift in a schedule."
-author: "raulfernandes"
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -41,10 +41,9 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | lastModifiedBy        | [identitySet](identityset.md)     | Identity of the user who last modified the **openShift** object. Inherited from [changeTrackedEntity](changetrackedentity.md).|
 | lastModifiedDateTime  | DateTimeOffset                    | Date and time when the **openShift** was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](changetrackedentity.md).|
 | schedulingGroupId     | String                            | The ID of the [schedulingGroup](schedulinggroup.md) that contains the **openShift**.  |
-| schedulingGroupName   | String                            | The name of the [schedulingGroup](schedulinggroup.md) that contains the **openShift**.|
+| schedulingGroupInfo  | [schedulingGroupInfo](schedulinggroupinfo.md)  | Information of the scheduling group the **shift** is part of. |
 | sharedOpenShift       | [openShiftItem](openshiftitem.md) | The shared version of this **openShift** that is viewable by both employees and managers.                         |
-| teamId                | String                            | The ID of the [team](team.md) in which the **openShift** is located.        |
-| teamName              | String                            | The name of the [team](team.md) in which the **openShift** is located.      |
+| teamInfo             | [shiftsTeamInfo](shiftsteaminfo.md)                  | Information of the team that the **openShift** is in. |
 
 ## Relationships
 
@@ -73,9 +72,8 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "schedulingGroupId": "String",
-  "schedulingGroupName": "String",
+  "schedulingGroupInfo": "microsoft.graph.schedulingGroupInfo",
   "sharedOpenShift": {"@odata.type": "microsoft.graph.openShiftItem"},
-  "teamId": "String",
-  "teamName": "String"
+  "teamInfo": "microsoft.graph.shiftsTeamInfo"
 }
 ```

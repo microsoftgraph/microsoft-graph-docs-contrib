@@ -1,7 +1,7 @@
 ---
 title: "team: getOpenShifts"
 description: "Get all openShift objects across all teams a user is a direct member of."
-author: "raulfernandes"
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -170,9 +170,14 @@ Content-Type: application/json
         "startDateTime": "2018-10-04T00:58:45.340Z",
         "theme": "white"
       },
-      "schedulingGroupName": "Cashiers",
-      "teamId": "228940ed-ff84-4e25-b129-1b395cf78be0",
-      "teamName": "Downtown shop"
+      "schedulingGroupInfo": {
+        "displayName": "Cashiers",
+        "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
+      },
+      "teamInfo": {
+        "displayName": "Contoso Team",
+        "teamId": "172b0cce-e65d-44ce-9a49-91d9f2e8493a"
+      }
     }
   ]
 }
