@@ -22,7 +22,7 @@ Remember that a user may not have an `alternateMobile` number without a `mobile`
 
 If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted. Have the user change their default authentication method, and then delete the number.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

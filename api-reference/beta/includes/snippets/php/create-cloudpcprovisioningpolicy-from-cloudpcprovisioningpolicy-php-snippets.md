@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CloudPcProvisioningPolicy();
@@ -14,11 +14,8 @@ $requestBody->setOdataType('#microsoft.graph.cloudPcProvisioningPolicy');
 $requestBody->setDescription('Description value');
 $requestBody->setDisplayName('Display Name value');
 $domainJoinConfiguration = new CloudPcDomainJoinConfiguration();
+$domainJoinConfiguration->setDomainJoinType(new CloudPcDomainJoinType('hybridAzureADJoin'));
 $domainJoinConfiguration->setOnPremisesConnectionId('16ee6c71-fc10-438b-88ac-daa1ccafffff');
-$additionalData = [
-	'domainJoinType' => 'hybridAzureADJoin',
-];
-$domainJoinConfiguration->setAdditionalData($additionalData);
 $requestBody->setDomainJoinConfiguration($domainJoinConfiguration);
 $domainJoinConfigurationsCloudPcDomainJoinConfiguration1 = new CloudPcDomainJoinConfiguration();
 $domainJoinConfigurationsCloudPcDomainJoinConfiguration1->setOnPremisesConnectionId('16ee6c71-fc10-438b-88ac-daa1ccafffff');

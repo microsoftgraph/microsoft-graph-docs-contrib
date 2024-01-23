@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -71,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9966
+Content-Length: 10141
 
 {
   "value": {
@@ -293,7 +291,11 @@ Content-Length: 9966
     ],
     "enrollmentProfileName": "Enrollment Profile Name value",
     "bootstrapTokenEscrowed": true,
-    "deviceFirmwareConfigurationInterfaceManaged": true
+    "deviceFirmwareConfigurationInterfaceManaged": true,
+    "deviceIdentityAttestationDetail": {
+      "@odata.type": "microsoft.graph.deviceIdentityAttestationDetail",
+      "deviceIdentityAttestationStatus": "trusted"
+    }
   }
 }
 ```
