@@ -37,7 +37,7 @@ Follow the directions [create a new web part](/sharepoint/dev/spfx/web-parts/get
 The Microsoft Graph Toolkit publishes multiple packages that are needed to build a SharePoint Framework web part, installing the `@microsoft/mgt-react`, `@microsoft/mgt-sharepoint-provider` and `@microsoft/mgt-spfx-utils` packages will install the necessary dependencies.
 
 ```bash
-npm install @microsoft/mgt-react
+npm install @microsoft/mgt-react @microsoft/mgt-sharepoint-provider @microsoft/mgt-spfx-utils
 ```
 
 ## Add the SharePoint Provider
@@ -197,6 +197,10 @@ export default HelloWorld;
 
 
 # [No framework web parts](#tab/html)
+
+## Create your web part project
+
+Follow the directions [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
 
 ## Add the Microsoft Graph Toolkit packages
 
