@@ -127,7 +127,8 @@ Here is a JSON representation of the resource.
     "v10_15": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   },
   "buildNumber": "String",
   "versionNumber": "String",

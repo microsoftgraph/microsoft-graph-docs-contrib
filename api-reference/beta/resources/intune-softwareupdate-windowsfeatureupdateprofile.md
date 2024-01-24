@@ -25,7 +25,7 @@ Windows Feature Update Profile
 |[Create windowsFeatureUpdateProfile](../api/intune-softwareupdate-windowsfeatureupdateprofile-create.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Create a new [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.|
 |[Delete windowsFeatureUpdateProfile](../api/intune-softwareupdate-windowsfeatureupdateprofile-delete.md)|None|Deletes a [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md).|
 |[Update windowsFeatureUpdateProfile](../api/intune-softwareupdate-windowsfeatureupdateprofile-update.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Update the properties of a [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.|
-|[assign action](../api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -40,6 +40,7 @@ Windows Feature Update Profile
 |roleScopeTagIds|String collection|List of Scope Tags for this Feature Update entity.|
 |deployableContentDisplayName|String|Friendly display name of the quality update profile deployable content|
 |endOfSupportDate|DateTimeOffset|The last supported date for a feature update|
+|installLatestWindows10OnWindows11IneligibleDevice|Boolean|If true, the latest Microsoft Windows 10 update will be installed on devices ineligible for Microsoft Windows 11|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -73,6 +74,7 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "deployableContentDisplayName": "String",
-  "endOfSupportDate": "String (timestamp)"
+  "endOfSupportDate": "String (timestamp)",
+  "installLatestWindows10OnWindows11IneligibleDevice": true
 }
 ```
