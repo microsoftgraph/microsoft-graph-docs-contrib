@@ -1,6 +1,6 @@
 ---
 title: "softDeleteResponseAction resource type"
-description: "Describes an email response action that moves the email message to a deleted folder in the cloud."
+description: "Describes the soft delete response action, which moves the email message to a Deleted folder in the cloud but doesn't delete the email message permanently."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes an email response action that moves the email message to a deleted folder in the cloud. Only administrators can perform this response action. End users must go to the Deleted folder within the Deleted items folder to move their deleted messages to the cloud.
+Describes the soft delete response action, which moves the email message to a Deleted folder in the cloud but doesn't delete the email message permanently. Only administrators can perform this response action.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 
