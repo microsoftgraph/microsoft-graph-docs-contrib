@@ -35,6 +35,12 @@ Request with a 'user id' or 'userPrincipalName' is only accessible by the user o
 GET /users/{id | userPrincipalName}/settings/
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
 ## Request body
 
 Don't supply a request body for this method.
