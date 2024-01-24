@@ -45,7 +45,7 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|submissionAnimationDisabled|Boolean|Indicates whether turn-in celebration animation will be shown. A value of `true` indicates that the animation will not be shown. Default value is `false`.|
+|submissionAnimationDisabled|Boolean|Indicates whether to show the turn-in celebration animation. A value of `true` indicates to skip the animation. Default value is `false`.|
 
 
 

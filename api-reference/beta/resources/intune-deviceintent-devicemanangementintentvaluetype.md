@@ -1,6 +1,6 @@
 ---
 title: "deviceManangementIntentValueType enum type"
-description: "Not yet documented"
+description: "Intune Deviceintent Devicemanangementintentvaluetype Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Members
 |Member|Value|Description|
