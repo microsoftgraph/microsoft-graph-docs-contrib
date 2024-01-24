@@ -1,6 +1,6 @@
 ---
 title: "analyzedEmail: remediate"
-description: "**TODO: Add Description**"
+description: "**Remediation means to take prescribed action against a threat. The analyzedEmails/remediate API is to remove potential threats from end-user's mailboxes by triggering email purge actions like move to junk, move to deleted items, soft delete, hard delete or move to inbox etc. These APIs enable scenarios and use cases such as SOAR integration, playbooks, and automations.**"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Remediation means to take prescribed action against a threat. The analyzedEmails/remediate API is to remove potential threats from end-user's mailboxes by triggering email purge actions like move to junk, move to deleted items, soft delete, hard delete or move to inbox etc. These APIs enable scenarios and use cases such as SOAR integration, playbooks, and automations.
 
 ## Permissions
 
@@ -51,13 +51,13 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|severity|microsoft.graph.security.remediationSeverity|**TODO: Add Description**.The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
-|action|microsoft.graph.security.remediationAction|**TODO: Add Description**.The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
-|approverUpn|String|**TODO: Add Description**|
-|remediateSendersCopy|Boolean|**TODO: Add Description**|
-|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|**TODO: Add Description**|
+|displayName|String| Name of the remediation. This will also be used as reference in the action center |
+|description|String| Description of the Remediation |
+|severity|microsoft.graph.security.remediationSeverity| Severity of the remediation .The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
+|action|microsoft.graph.security.remediationAction|Types of Move and Delete actions supported.The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
+|approverUpn|String| This is the person to trcak |
+|remediateSendersCopy|Boolean|This will ensures purge sender's copy of the email in case of intra org and out bound emails|
+|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|GET unique key to identify single email ; this can be found from the analyzedemails or analyzedemails/Id|
 
 ## Response
 
