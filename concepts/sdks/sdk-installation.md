@@ -11,17 +11,13 @@ Microsoft Graph SDKs can be included in your projects via GitHub and popular pla
 
 SDKs are available in the following languages:
 
-- [Install a Microsoft Graph SDK](#install-a-microsoft-graph-sdk)
-  - [Install the Microsoft Graph .NET SDK](#install-the-microsoft-graph-net-sdk)
-    - [dotnet CLI](#dotnet-cli)
-    - [Package Manager Console](#package-manager-console)
-  - [Install the Microsoft Graph Go SDK](#install-the-microsoft-graph-go-sdk)
-  - [Install the Microsoft Graph Java SDK](#install-the-microsoft-graph-java-sdk)
-  - [Install the Microsoft Graph JavaScript SDK](#install-the-microsoft-graph-javascript-sdk)
-  - [Install the Microsoft Graph PHP SDK](#install-the-microsoft-graph-php-sdk)
-  - [Install the Microsoft Graph PowerShell SDK](#install-the-microsoft-graph-powershell-sdk)
-  - [Install the Microsoft Graph Python SDK](#install-the-microsoft-graph-python-sdk)
-  - [See also](#see-also)
+- [.NET](#install-the-microsoft-graph-net-sdk)
+- [Go](#install-the-microsoft-graph-go-sdk)
+- [Java](#install-the-microsoft-graph-java-sdk)
+- [JavaScript](#install-the-microsoft-graph-javascript-sdk)
+- [PHP](#install-the-microsoft-graph-php-sdk)
+- [PowerShell](#install-the-microsoft-graph-powershell-sdk)
+- [Python](#install-the-microsoft-graph-python-sdk)
 
 ## Install the Microsoft Graph .NET SDK
 
