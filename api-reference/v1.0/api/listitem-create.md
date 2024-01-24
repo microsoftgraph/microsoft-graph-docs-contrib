@@ -30,6 +30,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /sites/{site-id}/lists/{list-id}/items
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
 ## Request body
 
 In the request body, supply a JSON representation of the [listItem][] resource to create.

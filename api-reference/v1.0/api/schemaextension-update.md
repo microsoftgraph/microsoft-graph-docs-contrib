@@ -39,12 +39,12 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /schemaExtensions/{id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Content-Type   | application/json |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
