@@ -5,7 +5,7 @@ resource: repository
 configuration:
   resourceManagementConfiguration:
     scheduledSearches:
-    - description: Step 1 (do not merge) - Add inactive-2-weeks label to pull requests with no activity for 14 days
+    - description: 'Step 1 (do not merge) - Add inactive-2-weeks label to pull requests with no activity for 14 days'
       frequencies:
       - daily:
           time: 11:00
@@ -56,7 +56,7 @@ configuration:
               > Pull requests that are inactive more than 6 weeks will be automatically closed.
         - addLabel:
             label: inactive-2-weeks
-    - description: Step 2 (do not merge) - Add inactive-4-weeks label to pull requests with no activity for 28 days
+    - description: 'Step 2 (do not merge) - Add inactive-4-weeks label to pull requests with no activity for 28 days'
       frequencies:
       - daily:
           time: 11:00
@@ -109,7 +109,7 @@ configuration:
             label: inactive-2-weeks
         - addLabel:
             label: inactive-4-weeks
-    - description: Step 3 (do not merge) - Add no recent activity label to pull requests with no activity for 42 days
+    - description: 'Step 3 (do not merge) - Add no recent activity label to pull requests with no activity for 42 days'
       frequencies:
       - daily:
           time: 11:00
@@ -162,7 +162,7 @@ configuration:
             label: inactive-4-weeks
         - addLabel:
             label: no recent activity
-    - description: Step 1 (changes requested) - Add inactive-2-weeks label to pull requests with no activity for 14 days
+    - description: 'Step 1 (changes requested) - Add inactive-2-weeks label to pull requests with no activity for 14 days'
       frequencies:
       - daily:
           time: 11:00
@@ -205,7 +205,7 @@ configuration:
               > Pull requests that are inactive more than 6 weeks will be automatically closed.
         - addLabel:
             label: inactive-2-weeks
-    - description: Step 2 (changes requested) - Add inactive-4-weeks label to pull requests with no activity for 28 days
+    - description: 'Step 2 (changes requested) - Add inactive-4-weeks label to pull requests with no activity for 28 days'
       frequencies:
       - daily:
           time: 11:00
@@ -250,7 +250,7 @@ configuration:
             label: inactive-2-weeks
         - addLabel:
             label: inactive-4-weeks
-    - description: Step 3 (changes requested) - Add no recent activity label to pull requests with no activity for 42 days
+    - description: 'Step 3 (changes requested) - Add no recent activity label to pull requests with no activity for 42 days'
       frequencies:
       - daily:
           time: 11:00
@@ -295,7 +295,7 @@ configuration:
             label: inactive-4-weeks
         - addLabel:
             label: no recent activity
-    - description: Step 1 (content review complete) - Add inactive-2-weeks label to pull requests with no activity for 14 days
+    - description: 'Step 1 (content review complete) - Add inactive-2-weeks label to pull requests with no activity for 14 days'
       frequencies:
       - daily:
           time: 11:00
@@ -336,7 +336,7 @@ configuration:
               > Pull requests that are inactive more than 6 weeks will be automatically closed.
         - addLabel:
             label: inactive-2-weeks
-    - description: Step 2 (content review complete) - Add inactive-4-weeks label to pull requests with no activity for 14 days
+    - description: 'Step 2 (content review complete) - Add inactive-4-weeks label to pull requests with no activity for 14 days'
       frequencies:
       - daily:
           time: 11:00
@@ -379,7 +379,7 @@ configuration:
             label: inactive-2-weeks
         - addLabel:
             label: inactive-4-weeks
-    - description: Step 3 (content review complete) - Add no recent activity label to pull requests with no activity for 14 days
+    - description: 'Step 3 (content review complete) - Add no recent activity label to pull requests with no activity for 14 days'
       frequencies:
       - daily:
           time: 11:00
