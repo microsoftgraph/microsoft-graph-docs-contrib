@@ -18211,9 +18211,9 @@ items:
                       - name: Get
                         href: api/virtualeventwebinar-get.md
                       - name: List by user role
-                        href: api/virtualeventwebinar-getbyuserrole.md
+                        href: api/virtualevent-getbyuserrole.md
                       - name: List by user ID and role
-                        href: api/virtualeventwebinar-getbyuseridandrole.md
+                        href: api/virtualevent-getbyuseridandrole.md
                       - name: Registration
                         href: resources/virtualeventregistration.md
                         items:
@@ -18221,6 +18221,23 @@ items:
                             href: api/virtualeventregistration-list.md
                           - name: Get
                             href: api/virtualeventregistration-get.md
+                  - name: Townhall
+                    href: resources/virtualeventtownhall.md
+                    items:
+                      - name: Create
+                        href: api/solutionsroot-post-virtualeventtownhall.md
+                      - name: Get
+                        href: api/virtualeventtownhall-get.md
+                      - name: Publish
+                        href: api/virtualevent-publish.md
+                      - name: Cancel
+                        href: api/virtualevent-cancel.md
+                      - name: Update
+                        href: api/virtualeventtownhall-update.md
+                      - name: List by user role
+                        href: api/virtualevent-getbyuserrole.md
+                      - name: List by user ID and role
+                        href: api/virtualevent-getbyuseridandrole.md
                   - name: Session
                     href: resources/virtualeventsession.md
                     items:
@@ -18228,6 +18245,15 @@ items:
                         href: api/virtualeventsession-list.md
                       - name: Get
                         href: api/virtualeventsession-get.md
+                  - name: Presenter
+                    href: resources/virtualeventpresenter.md
+                    items:
+                      - name: Create
+                        href: api/virtualevent-post-presenters.md
+                      - name: Get
+                        href: api/virtualeventpresenter-get.md
+                      - name: Delete
+                        href: api/virtualeventpresenter-delete.md
           - name: Devices (preview)
             items:
               - name: Provisioned device
