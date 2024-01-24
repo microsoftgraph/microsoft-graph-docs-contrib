@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 Get a list of [auditLogQuery](../resources/security-auditlogquery.md) objects and their properties.
 
 ## Permissions
-Through the Microsoft Purview Audit Search Graph API, auditing data can be accessed using the following permissions which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Through the Microsoft Purview Audit Search Graph API, auditing data can be accessed using the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Microsoft 365 service|Delegated (work or school account)|Delegated (personal Microsoft account)|Application
 |:---|:---|:---|:---|
@@ -46,7 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
