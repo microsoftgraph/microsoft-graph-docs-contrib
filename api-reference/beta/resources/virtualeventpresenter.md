@@ -19,7 +19,7 @@ Represents a presenter of a virtual event.
 
 | Method | Return Type |Description |
 | ------ | ----------- | ---------- |
-| [Create](../api/virtualevent-post-presenter.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [Create](../api/virtualevent-post-presenters.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 | [Get](../api/virtualeventtown-get-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 | [List](../api/virtualeventtownhall-list-presenters.md)| [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Get a collection of [virtualEventPresenter](../resources/virtualeventpresenter.md) objects. |
 | [Update](../api/virtualeventtown-update-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Update the properties of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
