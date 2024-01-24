@@ -39,6 +39,6 @@ For delegated scenarios, the calling user must be a member user or have at least
 - Global Reader
 - Volume Licensing Business Center User
 - Volume Licensing Service Center User
-- Modern Commerce User
+- Modern Commerce Administrator
 - Microsoft Store for Business User
 - Directory Reviewer

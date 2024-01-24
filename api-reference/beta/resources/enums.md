@@ -1,6 +1,6 @@
 ---
 title: "Enum values"
-description: "Microsoft Graph enumeration values"
+description: "Microsoft Graph enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: "non-product-specific"
@@ -1708,6 +1708,7 @@ Namespace: microsoft.graph
 | acronym            |
 | bookmark           |
 | chatMessage        |
+| qna                |
 | unknownFutureValue |
 
 ### searchAlterationType values
@@ -4590,4 +4591,12 @@ Possible values for user account types (group membership), per Windows definitio
 |enabled|
 |notConfigured|
 |noRecentDataCollected|
+|unknownFutureValue|
+
+### printReleaseType values 
+
+|Member|
+|:---|
+|direct|
+|qrCode|
 |unknownFutureValue|

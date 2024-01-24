@@ -22,7 +22,7 @@ This tutorial guides you to use the access reviews API to review access to a sec
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or EMS E5 license enabled.
++ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled.
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator or Identity Governance Administrator role.
   + [Optional] Open a new **incognito**, **anonymous**, or **InPrivate browser** window. You'll sign in later in this tutorial.
 + Grant yourself the following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.

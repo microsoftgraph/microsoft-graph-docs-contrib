@@ -41,6 +41,7 @@ You can use several properties to customize the component.
 | excluded-file-extensions | excludedFileExtensions | String array of file extensions to be excluded from file upload. Must also set the `enable-file-upload` attribute to `true`.                                              |
 | max-file-size            | maxFileSize            | A number representing the maximum file upload size (KB). Must also set the `enable-file-upload` attribute to `true`.                                                      |
 | max-upload-file          | maxUploadFile          | A number representing the maximum number of files allowed to be uploaded. The default value is `10` files. Must also set the `enable-file-upload` attribute to `true`.    |
+| disable-open-on-click    | disableOpenOnClick     | Boolean to enable or disable the default behavior of opening a file in separate browser tab when clicked.                                                                 |
 
 The following example changes the behavior of the component to fetch a file list from a specific query.
 
