@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of virtual events where the signed-in user is either the organizer or a coorganizer. Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md) and [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Get a collection of virtual events where the signed-in user is either the organizer or a coorganizer. Currently the supported virtual event type is: [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -32,7 +32,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /solutions/virtualEvents/webinars/getByUserRole(role='{role}')
-GET /solutions/virtualEvents/townhalls/getByUserRole(role='{role}')
 ```
 
 ## Function parameters
