@@ -14,7 +14,7 @@ configuration:
       - isPullRequest
       - isNotPartOfMilestone:
           milestone: Community Contributions
-      - isLabeledWith:
+      - hasLabel:
           label: do not merge
       - isNotLabeledWith:
           label: ready for content review
@@ -65,9 +65,9 @@ configuration:
       - isPullRequest
       - isNotPartOfMilestone:
           milestone: Community Contributions
-      - isLabeledWith:
+      - hasLabel:
           label: do not merge
-      - isLabeledWith:
+      - hasLabel:
           label: inactive-2-weeks
       - isNotLabeledWith:
           label: ready for content review
@@ -118,9 +118,9 @@ configuration:
       - isPullRequest
       - isNotPartOfMilestone:
           milestone: Community Contributions
-      - isLabeledWith:
+      - hasLabel:
           label: do not merge
-      - isLabeledWith:
+      - hasLabel:
           label: inactive-4-weeks
       - isNotLabeledWith:
           label: ready for content review
@@ -171,7 +171,7 @@ configuration:
       - isPullRequest
       - isNotPartOfMilestone:
           milestone: Community Contributions
-      - isLabeledWith:
+      - hasLabel:
           label: changes requested
       - isNotLabeledWith:
           label: review feedback addressed
@@ -214,9 +214,9 @@ configuration:
       - isPullRequest
       - isNotPartOfMilestone:
           milestone: Community Contributions
-      - isLabeledWith:
+      - hasLabel:
           label: inactive-2-weeks
-      - isLabeledWith:
+      - hasLabel:
           label: changes requested
       - isNotLabeledWith:
           label: review feedback addressed
@@ -259,9 +259,9 @@ configuration:
       - isPullRequest
       - isNotPartOfMilestone:
           milestone: Community Contributions
-      - isLabeledWith:
+      - hasLabel:
           label: inactive-4-weeks
-      - isLabeledWith:
+      - hasLabel:
           label: changes requested
       - isNotLabeledWith:
           label: review feedback addressed
@@ -304,7 +304,7 @@ configuration:
       - isPullRequest
       - isNotPartOfMilestone:
           milestone: Community Contributions
-      - isLabeledWith:
+      - hasLabel:
           label: content review complete
       - isNotLabeledWith:
           label: ready to merge
@@ -345,9 +345,9 @@ configuration:
       - isPullRequest
       - isNotPartOfMilestone:
           milestone: Community Contributions
-      - isLabeledWith:
+      - hasLabel:
           label: inactive-2-weeks
-      - isLabeledWith:
+      - hasLabel:
           label: content review complete
       - isNotLabeledWith:
           label: ready to merge
@@ -388,9 +388,9 @@ configuration:
       - isPullRequest
       - isNotPartOfMilestone:
           milestone: Community Contributions
-      - isLabeledWith:
+      - hasLabel:
           label: inactive-4-weeks
-      - isLabeledWith:
+      - hasLabel:
           label: content review complete
       - isNotLabeledWith:
           label: ready to merge
@@ -431,7 +431,7 @@ configuration:
       - isPullRequest
       - isNotPartOfMilestone:
           milestone: Community Contributions
-      - isLabeledWith:
+      - hasLabel:
           label: no recent activity
       - isNotLabeledWith:
           label: ready for content review
