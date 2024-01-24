@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.
+Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event. Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md) and [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -34,10 +34,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-To list all sessions of a webinar:
-
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions
+GET /solutions/virtualEvents/townhalls/{townhallId}/sessions
 ```
 
 ## Optional query parameters

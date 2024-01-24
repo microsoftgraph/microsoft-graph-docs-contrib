@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.
+Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object. Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md) and [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -34,10 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-To get a session of a webinar:
 
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}
+GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}
 ```
 
 ## Optional query parameters
