@@ -1,7 +1,7 @@
-﻿{
+{
   "changelog": [
     {
-      "ChangeList": [                
+      "ChangeList": [
         {
           "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
           "ApiChange": "Enum type",
@@ -25,7 +25,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [blob](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-blob?view=graph-rest-beta) resource type.",
           "Target": "blob"
-        },                
+        },
         {
           "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
           "ApiChange": "Resource",
@@ -122,8 +122,8 @@
       "WorkloadArea": "Reports",
       "SubArea": "Partner billing reports"
     },
-	{
-      "ChangeList": [                
+    {
+      "ChangeList": [
         {
           "Id": "abf7f5a2-4842-4016-a573-08731f5cb362",
           "ApiChange": "Enum type",
@@ -147,7 +147,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [blob](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-blob?view=graph-rest-1.0) resource type.",
           "Target": "blob"
-        },                
+        },
         {
           "Id": "abf7f5a2-4842-4016-a573-08731f5cb362",
           "ApiChange": "Resource",
