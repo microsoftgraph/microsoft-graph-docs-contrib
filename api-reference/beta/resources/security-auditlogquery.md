@@ -15,7 +15,6 @@ Namespace: microsoft.graph.security
 
 Represents an audit log query that is used to query and retrieve relevant audit log records.
 
-
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
@@ -44,11 +43,13 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |userPrincipalNameFilters|String collection|The UPN (user principal name) of the user who performed the action (specified in the operation property) that resulted in the record being logged; for example, _my_name@my_domain_name_.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |records|[microsoft.graph.security.auditLogRecord](../resources/security-auditlogrecord.md) collection|An individual audit log record.|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -86,4 +87,3 @@ The following JSON representation shows the resource type.
   "status": "String"
 }
 ```
-

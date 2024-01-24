@@ -15,7 +15,6 @@ Namespace: microsoft.graph.security
 
 Represents a JSON object containing the actual audit log data.
 
-
 Inherits from [auditData](../resources/security-auditdata.md).
 
 ## Properties
@@ -35,4 +34,3 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.security.defaultAuditData"
 }
 ```
-

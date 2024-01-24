@@ -15,11 +15,12 @@ Namespace: microsoft.graph.security
 
 An abstract type that supports the audit logs of various Microsoft 365 services like [defaultAuditData](../resources/security-defaultauditdata.md), which contains the JSON files of these Microsoft 365 services.
 
-
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -31,4 +32,3 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.security.auditData"
 }
 ```
-
