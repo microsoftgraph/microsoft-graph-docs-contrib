@@ -51,6 +51,12 @@ To access the team site for a group:
 GET /groups/{group-id}/sites/root
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
 ## Examples
 
 ### Example 1: Get a site using the site ID
