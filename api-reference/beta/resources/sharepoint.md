@@ -165,10 +165,6 @@ The following example returns information about the `SPListItem` with integer ID
 GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com:/teams/hr/benefits:/lists/5771e865-4e91-48b8-a0de-35a25d4e52fe/items/42
 ```
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 [site]: site.md
 [list]: list.md
 [drive]: drive.md
