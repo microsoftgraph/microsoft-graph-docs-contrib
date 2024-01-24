@@ -3,7 +3,7 @@ title: "List auditLogRecords"
 description: "Get a list of auditLogRecord objects and their properties."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "auditlogquery"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 

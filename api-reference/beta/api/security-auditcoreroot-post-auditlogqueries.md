@@ -3,7 +3,7 @@ title: "Create auditLogQuery"
 description: "Create a new auditLogQuery object."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "auditlogquery"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
