@@ -56,7 +56,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [auditLogRecord](../resources/auditlogrecord.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [auditLogRecord](../resources/security-auditlogrecord.md) objects in the response body.
 
 ## Examples
 
