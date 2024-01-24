@@ -1,6 +1,6 @@
 ---
 title: "user: deletePasswordSingleSignOnCredentials"
-description: "Delete Password Single Sign-On credentials for a service principal that is associated to a user."
+description: "Delete password-based single sign-on credentials for a service principal that is associated to a user."
 author: "AllisonAm"
 ms.localizationpriority: medium
 ms.prod: "users"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete Password Single Sign-On credential for a given service principal that is associated to a given user.
-
-For applications using Password Single Sign-On, administrators can configure sign-in credentials for users and groups that are assigned to the application. Administrators and users may delete their credentials 
+Delete the password-based single sign-on credentials for a given user to a given service principal.
 
 ## Permissions
 
@@ -84,7 +82,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

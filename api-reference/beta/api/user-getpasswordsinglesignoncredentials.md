@@ -1,6 +1,6 @@
 ---
 title: "user: getPasswordSingleSignOnCredentials"
-description: "Get all Password Single Sign-On credentials associated to a given user."
+description: "Get the list of password-based single sign-on credentials for a given user. This API returns the encrypted passwords as null or empty strings."
 author: "AllisonAm"
 ms.localizationpriority: medium
 ms.prod: "users"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of Password Single Sign-On credentials for a given user. Passwords are never returned, and instead are always returned as null or empty strings.
-
-For applications using Password Single Sign-On, administrators can configure sign-in credentials for users and groups that are assigned to the application. Administrators and users are able to retrieve a list of credentials for that user's assigned Password Single Sign-On applications.
+Get the list of password-based single sign-on credentials for a given user. This API returns the encrypted passwords as null or empty strings.
 
 ## Permissions
 
