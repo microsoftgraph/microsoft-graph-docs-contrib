@@ -16618,10 +16618,6 @@ items:
                 items:
                   - name: List
                     href: api/security-auditlogquery-list-records.md
-              - name: Audit log data
-                href: resources/security-auditdata.md
-              - name: Default audit log data
-                href: resources/security-defaultauditdata.md
           - name: eDiscovery (preview)
             items:
               - name: Case
