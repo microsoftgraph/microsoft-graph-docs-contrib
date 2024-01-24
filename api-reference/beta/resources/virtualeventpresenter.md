@@ -20,9 +20,9 @@ Represents a presenter of a virtual event.
 | Method | Return Type |Description |
 | ------ | ----------- | ---------- |
 | [Create](../api/virtualevent-post-presenters.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
-| [Get](../api/virtualeventtown-get-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [Get](../api/virtualeventpresenter-get.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 | [List](../api/virtualeventtownhall-list-presenters.md)| [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Get a collection of [virtualEventPresenter](../resources/virtualeventpresenter.md) objects. |
-| [Update](../api/virtualeventtown-update-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Update the properties of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [Update](../api/virtualeventpresenter-update.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Update the properties of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 | [Delete](../api/virtualeventtown-delete-presenter.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Delete a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 
 ## Properties
