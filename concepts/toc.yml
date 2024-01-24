@@ -164,7 +164,7 @@ items:
               href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
             - name: App-only authentication
               href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-        - name: Use the CLI (preview)
+        - name: Use the CLI
           items:
             - name: CLI overview
               href: cli/overview.md
@@ -296,8 +296,6 @@ items:
             displayName: users
           - name: Default user permissions
             href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
-          - name: "Training: Access user data"
-            href: /training/modules/msgraph-access-user-data
       - name: Groups
         items:
           - name: Overview
@@ -309,8 +307,6 @@ items:
             href: group-set-options.md
           - name: Microsoft 365 group settings
             href: group-directory-settings.md
-          - name: "Training: Manage group lifecycle"
-            href: /training/modules/msgraph-access-group-data
       - name: Applications
         items:
           - name: Overview
@@ -343,6 +339,8 @@ items:
                 href: synchronization-configure-with-custom-target-attributes.md
               - name: Synchronize directory extension attributes
                 href: synchronization-configure-with-directory-extension-attributes.md
+              - name: Configure cross-tenant synchronization
+                href: /entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure-graph?tabs=ms-graph&toc=/graph/toc.json
       - name: Accessing data at scale
         items:
           - name: Microsoft Graph Data Connect overview
@@ -792,6 +790,8 @@ items:
             displayName: report, reports
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
+          - name: Partner billing (preview)
+            href: partners-billing-concept-overview.md
       - name: Search
         items:
           - name: Overview
@@ -1022,9 +1022,6 @@ items:
               - name: Advanced query capabilities
                 displayName: OData query parameters, OData
                 href: aad-advanced-queries.md
-              - name: "Training: Optimize requests with query parameters"
-                displayName: OData query parameters, OData
-                href: /training/modules/optimize-data-usage
           - name: Batching
             href: json-batching.md
             displayName: Batch request
@@ -1036,9 +1033,6 @@ items:
               - name: Service-specific limits
                 displayName: throttling
                 href: throttling-limits.md
-              - name: "Training: Optimize network traffic"
-                href: /training/modules/optimize-network-traffic
-                displayName: throttling
           - name: Enable metered APIs
             href: metered-api-setup.md
           - name: Work with Graph Explorer
@@ -1054,10 +1048,8 @@ items:
       - name: Change notifications
         items:
           - name: Overview
-            href: webhooks.md
-            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
-          - name: "Training: Use change notifications"
-            href: /training/modules/msgraph-changenotifications-trackchanges
+            href: change-notifications-overview.md
+            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hub, Azure Event Grid
           - name: Notifications delivery channels
             items:
               - name: Notifications through webhooks
@@ -1067,9 +1059,9 @@ items:
               - name: Notifications through Azure Event Grid (preview)
                 href: /azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext
           - name: Lifecycle notifications for subscriptions
-            href: webhooks-lifecycle.md
+            href: change-notifications-lifecycle-events.md
           - name: Rich notifications
-            href: webhooks-with-resource-data.md
+            href: change-notifications-with-resource-data.md
           - name: Notifications for cloud printing
             href: universal-print-webhook-notifications.md
           - name: Notifications for Microsoft Teams resources
@@ -1187,9 +1179,9 @@ items:
           - name: Microsoft Entra service limits
             displayName: Azure AD service limits and restrictions
             href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
-      - name: API v1.0 reference
-        href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
-        displayName: Microsoft Graph REST API v1.0 reference
-      - name: API beta reference
-        href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
-        displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta
+  - name: API v1.0 reference
+    href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
+    displayName: Microsoft Graph REST API v1.0 reference
+  - name: API beta reference
+    href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
+    displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta
