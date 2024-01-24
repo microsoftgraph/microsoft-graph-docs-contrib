@@ -200,7 +200,7 @@ Content-type: application/json
     "@odata.type": "microsoft.graph.sitePage",
     "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
     "name": "test.aspx",
-    "webUrl": "SitePages/test.aspx",
+    "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/test.aspx",
     "title": "test",
     "pageLayout": "article",
     "showComments": true,
