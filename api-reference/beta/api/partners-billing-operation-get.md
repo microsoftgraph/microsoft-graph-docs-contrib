@@ -21,12 +21,8 @@ Read the properties and relationships of an [operation](../resources/partners-bi
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "operation-get-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/partners-permissions.md)]
+<!-- { "blockType": "permissions", "name": "partners_billing_operation_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/partners-billing-operation-get-permissions.md)]
 
 ## HTTP request
 
