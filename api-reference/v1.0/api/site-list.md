@@ -66,6 +66,12 @@ To list all root-level site collections in an organization:
 GET /sites?$filter=siteCollection/root ne null
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
 ## Examples
 
 ### Example 1: List sites using query parameters

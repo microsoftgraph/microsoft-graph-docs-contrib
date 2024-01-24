@@ -49,6 +49,12 @@ If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-m
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.
 Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**. The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
+## Request headers
+
+|Name |Description |
+|:--------------|:------------|
+|Authorization |Bearer {code}. Required. |
+
 ## Request body
 
 Don't supply a request body for this method.

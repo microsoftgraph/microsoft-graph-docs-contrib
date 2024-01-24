@@ -3169,3 +3169,11 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |facebook|
 |unknownFutureValue|
+
+### printReleaseType values 
+
+|Member|
+|:---|
+|direct|
+|qrCode|
+|unknownFutureValue|
