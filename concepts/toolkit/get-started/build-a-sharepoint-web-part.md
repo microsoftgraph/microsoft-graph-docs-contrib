@@ -11,7 +11,7 @@ This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint
 
 1. Set up your development environment.
 1. Create your web part project.
-1. Add the Microsoft Graph Toolkit SharePoint Framework package.
+1. Add the Microsoft Graph Toolkit packages.
 1. Add the SharePoint Provider.
 1. Add components.
 1. Configure permissions.
@@ -35,10 +35,10 @@ Follow the directions [create a new web part](/sharepoint/dev/spfx/web-parts/get
 
 ## Add the Microsoft Graph Toolkit packages
 
-The Microsoft Graph Toolkit publishes multiple packages that are needed to build a SharePoint Framework web part, installing the `@microsoft/mgt-react`, `@microsoft/mgt-sharepoint-provider` and `@microsoft/mgt-spfx-utils` packages will install the necessary dependencies.
+The Microsoft Graph Toolkit publishes multiple packages that are needed to build a SharePoint Framework web part, installing the `@microsoft/mgt-element`, `@microsoft/mgt-react`, `@microsoft/mgt-sharepoint-provider` and `@microsoft/mgt-spfx-utils` packages will install the necessary dependencies.
 
 ```bash
-npm install @microsoft/mgt-react @microsoft/mgt-sharepoint-provider @microsoft/mgt-spfx-utils
+npm install @microsoft/mgt-element @microsoft/mgt-react @microsoft/mgt-sharepoint-provider @microsoft/mgt-spfx-utils
 ```
 
 ## Add the SharePoint Provider
