@@ -307,6 +307,8 @@ configuration:
       - isLabeledWith:
           label: content review complete
       - isNotLabeledWith:
+          label: ready to merge
+      - isNotLabeledWith:
           label: blocked
       - isNotLabeledWith:
           label: inactive-2-weeks
@@ -348,6 +350,8 @@ configuration:
       - isLabeledWith:
           label: content review complete
       - isNotLabeledWith:
+          label: ready to merge
+      - isNotLabeledWith:
           label: blocked
       - isNotLabeledWith:
           label: inactive-4-weeks
@@ -388,6 +392,8 @@ configuration:
           label: inactive-4-weeks
       - isLabeledWith:
           label: content review complete
+      - isNotLabeledWith:
+          label: ready to merge
       - isNotLabeledWith:
           label: blocked
       - isNotLabeledWith:
