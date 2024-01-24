@@ -34,6 +34,12 @@ POST /me/drive/items/{item-id}/unfollow
 POST /users/{user-id}/drive/items/{item-id}/unfollow
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
 ## Request body
 
 No request body is required.
