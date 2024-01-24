@@ -16607,7 +16607,7 @@ items:
                 items: 
                   - name: List
                     href: api/security-auditcoreroot-list-auditlogqueries.md
-                  - name: Post
+                  - name: Create
                     href: api/security-auditcoreroot-post-auditlogqueries.md
                   - name: Get
                     href: api/security-auditlogquery-get.md
