@@ -7543,8 +7543,8 @@ items:
                     href: resources/attacksimulationtrainingusercoverage.md
                   - name: Get training coverage for users
                     href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
-         - name: Partner billing reports
-           items:
+          - name: Partner billing reports
+            items:
               - name: Overview
                 href: resources/partners-billing-api-overview.md
               - name: Billed usage
