@@ -10,7 +10,7 @@ description: "Use the Microsoft Graph connectors SDK to create custom Microsoft 
 
 # Microsoft Graph connectors SDK overview
 
-The Microsoft Graph connectors SDK simplifies the process of building high-quality, efficient, and resilient connectors in scenarios where you can't find a pre-built connector for the data source you want to index into Microsoft Graph.
+The Microsoft Graph connectors SDK simplifies the process of building high-quality, efficient, and resilient connectors for data source that don't have a prebuilt connector, but that you want to index into Microsoft Graph.
 
 The SDK includes the framework and contract components to help you write the code and the tools to test your code.
 
@@ -24,13 +24,13 @@ The connectors SDK includes the following components:
 
 - **Custom connector template**: If you want to [develop your custom connector in C#](/graph/custom-connector-sdk-sample-create), you can download the template from Visual Studio Marketplace and get started quickly. You can also choose to develop your custom connector in any of the languages in this [list](https://grpc.io/docs/languages/).
 
-- **Contracts**: These are [gRPC](https://grpc.io/docs/what-is-grpc/) protocol buffer files that contain the contracts for interaction between the Microsoft platform (Microsoft Graph connector agent) and your custom connector code.
+- **Contracts**: Contracts are [gRPC](https://grpc.io/docs/what-is-grpc/) protocol buffer files that contain the contracts for interaction between the Microsoft platform (Microsoft Graph connector agent) and your custom connector code.
 
 - **Microsoft Graph connector agent**: A lightweight software component that manages connector capabilities and coordinates between the Microsoft 365 admin center and your custom connector code.
 
-    [Download the latest version](https://aka.ms/gca/) of the connector agent and run the installation configuration assistant. For more details, see [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent/).
+    [Download the latest version](https://aka.ms/gca/) of the connector agent and run the installation configuration assistant. For more information, see [Microsoft Graph connector agent](/MicrosoftSearch/graph-connector-agent/).
 
-- **Connectors SDK test utility**: Includes pre-built test scenarios that you can use to test your custom connector code and communicate with the connector agent platform.
+- **Connectors SDK test utility**: Includes prebuilt test scenarios that you can use to test your custom connector code and communicate with the connector agent platform.
 
 ## Microsoft Graph connector agent capabilities
 
@@ -46,7 +46,7 @@ It includes the following capabilities:
 
 - **Delete, difference, and cycle detection**: The agent is capable of detecting items deleted from your data source based on the items sent by your connector during periodic full crawls. The agent then takes care of deleting the item from the Microsoft index as well.
 
-    The agent also detects items that have changed since the last crawl by computing a hash of the item and comparing it with the hash of the item seen previously. To make crawls faster, the agent sends the data to be indexed only when the item has changed.
+    The agent also detects items that changed since the last crawl by computing a hash of the item and comparing it with the hash of the item seen previously. To make crawls faster, the agent sends the data to be indexed only when the item changes.
 
     The agent also detects duplicate items that arise from data sources that have linked items (like websites) and skips crawling these items.
 
