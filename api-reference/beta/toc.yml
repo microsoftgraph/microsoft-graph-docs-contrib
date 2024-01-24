@@ -16611,6 +16611,8 @@ items:
                     href: api/security-auditcoreroot-post-auditlogqueries.md
                   - name: Get
                     href: api/security-auditlogquery-get.md
+                  - name: List audit log records
+                    href: api/security-auditlogquery-list-records.md
               - name: Audit log record
                 href: resources/security-auditlogrecord.md
                 items:
