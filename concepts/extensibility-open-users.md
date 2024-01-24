@@ -199,7 +199,9 @@ Content-Type: application/json
 
 ## Step 3. Change roaming profile information
 
-The user can choose to change their roaming profile information. The app calls Microsoft Graph by running the following query.
+The user can choose to change their roaming profile information. The app calls Microsoft Graph by running the following query. The request returns a `204 No Content` response code.
+
+You must include all properties in the request body as well, even if you want to update only a subset of them. Otherwise, Microsoft Graph removes the properties you don't pass in. To delete data but keep a property, set the property value to `null`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -251,11 +253,11 @@ Content-type: application/json
 
 ---
 
-The request returns a `204 No Content` response code.
+
 
 ## Step 4. Delete a user's roaming profile
 
-The user decides that they don't want a roaming profile anymore, so they delete it and the app calls Microsoft Graph by running the following request.
+The user decides that they don't want a roaming profile anymore. To delete the extension property, the app calls Microsoft Graph by running the following request. The request returns a `204 No Content` response code.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -299,8 +301,6 @@ DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSetting
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-The request returns a `204 No Content` response code.
 
 ## See also
 

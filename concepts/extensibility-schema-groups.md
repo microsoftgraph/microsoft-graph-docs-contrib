@@ -384,7 +384,7 @@ Content-type: application/json
 
 ## Step 4. Update custom data in a group
 
-The following request updates the **courseType** property in the `graphlearn_courses` extension for the group to `Hybrid`. Though you want to update only the **courseType** property, you must include the other properties and their existing values in the request body as well. Otherwise, Microsoft Graph will set them to `null` and remove their data.
+The following request updates the **courseType** property in the `graphlearn_courses` extension for the group to `Hybrid`. Though you want to update only the **courseType** property, you must include the other properties and their existing values in the request body as well. Otherwise, Microsoft Graph sets them to `null` and removes their data.
 
 The following request returns a `204 No Content` response.
 
