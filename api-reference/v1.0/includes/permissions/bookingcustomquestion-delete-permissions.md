@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Not supported.|Bookings.Manage.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All|
+|Delegated (work or school account)|BookingsAppointment.ReadWrite.All|Bookings.Manage.All, Bookings.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Bookings.Manage.All, Bookings.ReadWrite.All|
+|Application|Bookings.ReadWrite.All|Bookings.Manage.All|
 
