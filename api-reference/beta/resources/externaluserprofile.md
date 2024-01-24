@@ -75,9 +75,7 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.physicalOfficeAddress"
   },
   "supervisorId": "String",
-  "epoch": "Integer",
-  "puid": "String",
-  "remoteTenantId": "String"
+  "epoch": "Integer"
 }
 ```
 

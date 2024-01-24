@@ -1,6 +1,6 @@
 ---
 title: "pendingExternalUserProfile resource type"
-description: "Represents an external user profile for an external user in the Microsoft Entra tenant that is unredeemed."
+description: "Represents an external user profile in the Microsoft Entra tenant that is pending redemption."
 ms.localizationpriority: high
 author: "jkdouglas"
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an external user profile for an external user in the Microsoft Entra tenant that is unredeemed.
+Represents an external user profile in the Microsoft Entra tenant that is pending redemption.
 
 ## Methods
 
@@ -32,8 +32,8 @@ Represents an external user profile for an external user in the Microsoft Entra 
 |address|[physicalOfficeAddress](physicalofficeaddress.md)|The office address of the pending external user profile.|
 |createdBy|String|The object ID of the user or principal who created the pending external user profile or invited the external user. Read-only. Not nullable. |
 |createdDateTime|DateTimeOffset|Date and time when this pending external user profile was created. Not nullable. Read-only. |
-|companyName|String|The company name of the pending external user profile. Supports `$filter` (`eq`, `startswith`). |
-|deletedDateTime|DateTimeOffset|Date and time when the pending external user profile was deleted. Always `null` when the object isn't deleted. |
+|companyName|String|The company name of the pending external user profile. Supports the `$filter` (eq, startswith) query parameter. |
+|deletedDateTime|DateTimeOffset|Date and time when the pending external user profile was deleted. Always `null` when the object isn't been deleted. |
 |department|String|The department of the pending external user profile. |
 |displayName|String|The display name of the pending external user profile.|
 |epoch|Int|The version number of the pending external user profile. Incremented with each update to the entity. Read-only. Not nullable.|
@@ -42,7 +42,7 @@ Represents an external user profile for an external user in the Microsoft Entra 
 |isEnabled|Boolean|Represents whether the pending external user profile is enabled in the directory.|
 |jobTitle|String|The job title of the external user profile.|
 |phoneNumber|String|The phone number of the pending external user profile. Must be in E.164 format.|
-|supervisorId|String|The object ID of the supervisor of the pending external user profile. Supports `$filter` (`eq`, `startswith`).|
+|supervisorId|String|The object ID of the supervisor of the pending external user profile. Supports the `$filter` (eq, startswith) query parameter.|
 
 ## Relationships
 
