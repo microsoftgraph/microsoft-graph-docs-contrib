@@ -3,7 +3,7 @@ title: "auditData resource type"
 description: "Abstract type that supports the audit logs of various Microsoft 365 services."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "auditlogquery"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
