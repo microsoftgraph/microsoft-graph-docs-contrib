@@ -33,6 +33,12 @@ POST /sites/{siteId}/drive/items/{itemId}/checkout
 POST /users/{userId}/drive/items/{itemId}/checkout
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
 ## Request body
 
 Don't supply a request body for this method.

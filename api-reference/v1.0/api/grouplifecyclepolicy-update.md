@@ -30,12 +30,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 PATCH /groupLifecyclePolicies/{id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json          |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
