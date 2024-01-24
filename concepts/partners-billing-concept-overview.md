@@ -43,10 +43,10 @@ Use the [Get operation](/graph/api/partners-billing-operation-get) endpoint to p
 
 Looking for the API reference for this service?
 
-[Partner billing API in Microsoft Graph beta](/graph/api/resources/partners-billing-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Partner billing reports API in Microsoft Graph v1.0](/graph/api/resources/partners-billing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Partner billing reports API in Microsoft Graph beta](/graph/api/resources/partners-billing-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 
-- To learn more about the partner billing reports API in Microsoft Graph v1.0, see [Use the Microsoft Graph API to export partner billing data](/graph/api/resources/partners-billing-api-overview?view=graph-rest-1.0&preserve-view=true).
-- To learn more about the partner billing reports API in Microsoft Graph beta, see [Use the Microsoft Graph API to export partner billing data](/graph/api/resources/partners-billing-api-overview?view=graph-rest-beta&preserve-view=true).
+- To learn more about the partner billing reports API, see [Use the Microsoft Graph API to export partner billing data](/graph/api/resources/partners-billing-api-overview).
 - Try the partner billing API in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
