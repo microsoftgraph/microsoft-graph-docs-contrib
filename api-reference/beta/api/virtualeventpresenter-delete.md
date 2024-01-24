@@ -1,28 +1,30 @@
 ---
-title: "Remove presenters"
-description: "Remove a virtualEventPresenter object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "Delete virtualEventPresenter"
+description: "Delete a virtualEventPresenter object."
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Remove presenters
+# Delete virtualEventPresenter
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [virtualEventPresenter](../resources/virtualeventpresenter.md) object.
+Remove a [virtualEventPresenter](../resources/virtualeventpresenter.md) from a virtual event. Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
-  "name": "virtualeventsession-delete-presenters-permissions"
+  "name": "virtualeventpresenter-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventsession-delete-presenters-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventpresenter-delete-permissions.md)]
 
 ## HTTP request
 
@@ -31,15 +33,17 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /users/{usersId}/virtualEvents/webinars/{virtualEventWebinarId}/sessions/{virtualEventSessionId}/presenters/{id}/$ref
+DELETE /solutions/virtualEvents/townhalls/{townhallId}/presenters/{id}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -49,18 +53,19 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_presenters_from_virtualeventsession"
+  "name": "delete_presenters_from_virtualeventtownhall"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/users/{usersId}/virtualEvents/webinars/{virtualEventWebinarId}/sessions/{virtualEventSessionId}/presenters/{id}/$ref
+DELETE https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742/presenters/7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -71,4 +76,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-

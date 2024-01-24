@@ -37,19 +37,22 @@ POST /solutions/virtualEvents/townhalls/{townhallId}/presenters
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [virtualEventPresenter](../resources/virtualeventpresenter.md) object.
 
 You can specify the following properties when creating a **virtualEventPresenter**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|identity|[communicationsUserIdentity](../resources/communicationsuseridentity.md)|Identity information of the presenter.|
+| email | String | Email address of the presenter. |
+| identity | [communicationsUserIdentity](../resources/communicationsuseridentity.md) | Identity information of the presenter.|
 
 ## Response
 
@@ -58,6 +61,7 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -65,18 +69,20 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/{virtualEventId}/presenters
+POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742/presenters
 Content-Type: application/json
 
 {
   "identity": {
-    "id": ""
-  }
+    "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
+    "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+  },
+  "email": "kenneth.brown@contoso.com"
 }
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -90,16 +96,12 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.virtualEventPresenter",
-  "id": "831affc2-4c8a-9929-50e7-02964563b6e4",
+  "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
   "identity": {
-    "@odata.type": "microsoft.graph.communicationsUserIdentity"
+    "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
+    "displayName": "Kennth Brown",
+    "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
   },
-  "email": "String",
-  "presenterDetails": {
-    "@odata.type": "microsoft.graph.virtualEventPresenterDetails"
-  },
-  "profilePhoto": "Stream"
+  "email": "kenneth.brown@contoso.com"
 }
 ```
-
