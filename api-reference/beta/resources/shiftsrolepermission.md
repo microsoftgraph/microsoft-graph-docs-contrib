@@ -1,6 +1,6 @@
----
+    ---
 title: "shiftsRolePermission resource type"
-description: "Defines permissions for a role in a Shifts schedule."
+description: "Represents permissions for a role in a Shifts schedule."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -18,13 +18,13 @@ Represents permissions for a role in a Shifts schedule.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedResourceActions|String collection|Permissions that are allowed for a role. Permissions not in this collection are disabled.|
+|allowedResourceActions|String collection|The permissions that are allowed for a role. Permissions that aren't in this collection are disabled.|
 
 ### Supported resource actions
 |Resource Action|Description|
 |:---|:---|
-|`CanModifyShiftRequestsCapabilities`|User’ role ability to enable or disable the following Shifts setting for their team: Open shifts, Swap shifts requests and Offer shifts requests.|
-|`CanModifyTimeClockCapabilities`|User’ role ability to enable or disable the Time clock Shifts setting for their team.|
+|`CanModifyShiftRequestsCapabilities`|The abilities of users having the role to open shifts, swap shifts, and request and offer shifts for their team.|
+|`CanModifyTimeClockCapabilities`|The ability of users having the role to modify the Time clock Shifts setting for their team.|
 |`CanModifyTimeClockGeoFencingSettings`|Takes precedent on Time clock being enabled. User’ role ability to enable or disable Time clock location detection in Shifts setting for their team.|
 |`CanModifyTimeOffRequestsCapabilities`|User’ role ability to enable or disable Time off requests in Shifts setting for their team.|
 |`CanModifyTimeOffReasons`|User’ role ability (or not) to add, edit, and delete of Time off reasons in Shifts settings for their team.|

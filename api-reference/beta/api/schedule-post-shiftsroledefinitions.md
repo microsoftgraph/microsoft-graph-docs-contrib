@@ -72,7 +72,7 @@ You can specify the following properties when creating/updating a **shiftsRoleDe
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -80,7 +80,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 #### Request
 
-The following example shows a request enabling the modification of scheduling groups and time off reasons by schedule owners.
+The following example shows a request that enables the modification of scheduling groups and time off reasons by schedule owners.
 <!-- {
   "blockType": "request",
   "name": "patch-shiftsRoleDefinitions-example"

@@ -24,10 +24,10 @@ Represents a single role's definition in a Shifts schedule.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Description of the role.|
-|displayName|String|Display name of the role.|
-|id|String|Id of the role.|
-|shiftsRolePermissions|[shiftsRolePermission](../resources/shiftsrolepermission.md) collection|Contains the definition for role permissions within the role.|
+|description|String|The description of the role.|
+|displayName|String|The display name of the role.|
+|id|String|The ID of the role.|
+|shiftsRolePermissions|[shiftsRolePermission](../resources/shiftsrolepermission.md) collection|The collection of role permissions within the role.|
 
 ## Relationships
 None.
