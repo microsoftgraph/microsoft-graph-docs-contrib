@@ -52,7 +52,7 @@ You can specify the following properties when creating a **virtualEventTownhall*
 | description | [itemBody](../resources/itembody.md) | Description of the townhall. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the townhall. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the townhall. |
-| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the townhall. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the townhall. |
 | invitedAttendees | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Invited people to the townhall. |
 | isInviteOnly | Boolean | Indicates whether the townhall is only open to invited people and groups in your organization. Can only be `true` when the value of the **audience** property is `organization`. |
 
