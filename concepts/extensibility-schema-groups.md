@@ -336,6 +336,8 @@ Content-Type: application/json
 
 If you have an existing group, you can also extend it with custom data as follows. The request returns a `204 No Content` response.
 
+# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "schemaextensions-groups-updateGroupWithExtension"
