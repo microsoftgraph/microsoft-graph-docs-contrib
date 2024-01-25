@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "cancel",
           "ChangeType": "Addition",
-          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualevent-cancel?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/resources/virtualEvent?view=graph-rest-beta) resource.",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualevent-cancel?view=graph-rest-beta) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/resources/virtualEventTownhall?view=graph-rest-beta) resource.",
           "Target": "virtualEvent"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "publish",
           "ChangeType": "Addition",
-          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/virtualevent-publish?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/resources/virtualEvent?view=graph-rest-beta) resource.",
+          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/virtualevent-publish?view=graph-rest-beta) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/resources/virtualEventTownhall?view=graph-rest-beta) resource.",
           "Target": "virtualEvent"
         }
       ],
