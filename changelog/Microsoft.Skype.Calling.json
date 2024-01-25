@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "cancel",
           "ChangeType": "Addition",
-          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualEvent?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/virtualEvent?view=graph-rest-beta) resource.",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualevent-cancel?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/resources/virtualEvent?view=graph-rest-beta) resource.",
           "Target": "virtualEvent"
         },
         {
@@ -47,24 +47,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "publish",
           "ChangeType": "Addition",
-          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/virtualEvent?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/virtualEvent?view=graph-rest-beta) resource.",
+          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/virtualevent-publish?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/resources/virtualEvent?view=graph-rest-beta) resource.",
           "Target": "virtualEvent"
-        },
-        {
-          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
-          "ApiChange": "Method",
-          "ChangedApiName": "getByUserIdAndRole",
-          "ChangeType": "Addition",
-          "Description": "Added the [getByUserIdAndRole](https://learn.microsoft.com/en-us/graph/api/virtualEventTownhall?view=graph-rest-beta) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/virtualEventTownhall?view=graph-rest-beta) resource.",
-          "Target": "virtualEventTownhall"
-        },
-        {
-          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
-          "ApiChange": "Method",
-          "ChangedApiName": "getByUserRole",
-          "ChangeType": "Addition",
-          "Description": "Added the [getByUserRole](https://learn.microsoft.com/en-us/graph/api/virtualEventTownhall?view=graph-rest-beta) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/virtualEventTownhall?view=graph-rest-beta) resource.",
-          "Target": "virtualEventTownhall"
         }
       ],
       "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
