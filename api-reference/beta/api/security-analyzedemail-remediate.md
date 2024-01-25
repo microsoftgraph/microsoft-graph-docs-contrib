@@ -1,18 +1,19 @@
 ---
-title: "Triger move and delete remediation Action "
-description: " Triger move and delete action against a threat."
+title: "Trigger move and delete remediation Action "
+description: " Trigger move and delete action against a threat."
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Triger move and delete email remediation Action 
+# Trigger move and delete email remediation Action 
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remediation means to take prescribed action against a threat. The analyzedEmails/remediate API is to remove potential threats from end-user's mailboxes by triggering email purge actions like move to junk, move to deleted items, soft delete, hard delete or move to inbox etc. These APIs enable scenarios and use cases such as SOAR integration, playbooks, and automations.
+Remediation means to take prescribed action against a threat. The analyzedEmails/remediate API is to remove potential threats from end-user's mailboxes by triggering email purge actions like move to junk, move to deleted items, soft delete, hard delete or move to inbox etc. These APIs enable scenarios and use cases such as SOAR integration, playbooks, and automations. For more information read [email remediation, trigger action and track actions](microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365.md). 
+
 
 ## Permissions
 
@@ -60,7 +61,7 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code and the cation status can be trcaked through the location header wtth bulkId. 
+If successful, this action returns a `204 No Content` response code and the cation status can be tracked through the location header wtth bulkId. 
 
 >**Note:** The response of the action can be trcaked in https://security.microsoft.com/action-center/history 
 
