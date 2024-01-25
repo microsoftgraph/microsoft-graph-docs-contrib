@@ -17,15 +17,15 @@ The following example shows the use of the `mgt-person-card` component with a `m
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-person-properties--person-card&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-person-properties--person-card&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-person-properties--person-card&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-person-properties--person-card&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-person-react--person-card&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-person-react--person-card&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-person-react--person-card&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-person-react--person-card&source=docs).
 
 ---
 
@@ -35,15 +35,15 @@ The following example shows the use of the `mgt-person-card` component. Use the 
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-person-card-html--person-card&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-person-card-html--person-card&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-person-card-html--person-card&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-person-card-html--person-card&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-person-card-react--person-card&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-person-card-react--person-card&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-person-card-react--person-card&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-person-card-react--person-card&source=docs).
 
 ---
 

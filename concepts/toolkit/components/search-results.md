@@ -15,15 +15,15 @@ The following example shows the use of the `mgt-search-results` component to the
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-search-results-html--search-results&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-search-results-html--search-results&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-search-results-html--search-results&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-search-results-html--search-results&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-search-results-react--search-results&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-search-results-react--search-results&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-search-results-react--search-results&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-search-results-react--search-results&source=docs).
 
 ---
 

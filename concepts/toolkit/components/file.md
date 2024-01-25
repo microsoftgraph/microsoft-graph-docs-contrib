@@ -15,15 +15,15 @@ The following example displays a file using the `mgt-file` component. You can us
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-file-html--file&source=docs" height="250"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-file-html--file&source=docs" height="250"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-file-html--file&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-file-html--file&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-file-react--file&source=docs" height="250"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-file-react--file&source=docs" height="250"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-file-react--file&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-file-react--file&source=docs).
 
 ---
 

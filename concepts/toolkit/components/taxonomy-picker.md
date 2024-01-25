@@ -20,15 +20,15 @@ The following example shows the use of the `mgt-taxonomy-picker` component to se
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-taxonomy-picker-html--taxonomy-picker&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-taxonomy-picker-html--taxonomy-picker&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-taxonomy-picker-html--taxonomy-picker&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-taxonomy-picker-html--taxonomy-picker&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-taxonomy-picker-react--taxonomy-picker&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-taxonomy-picker-react--taxonomy-picker&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-taxonomy-picker-react--taxonomy-picker&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-taxonomy-picker-react--taxonomy-picker&source=docs).
 
 ---
 

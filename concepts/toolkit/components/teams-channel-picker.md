@@ -15,15 +15,15 @@ The following example shows the `mgt-teams-channel-picker` component. Start sear
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-teams-channel-picker-html--teams-channel-picker&source=docs" height="450"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-teams-channel-picker-html--teams-channel-picker&source=docs" height="450"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-teams-channel-picker-html--teams-channel-picker&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-teams-channel-picker-html--teams-channel-picker&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-teams-channel-picker-react--teams-channel-picker&source=docs" height="450"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-teams-channel-picker-react--teams-channel-picker&source=docs" height="450"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-teams-channel-picker-react--teams-channel-picker&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-teams-channel-picker-react--teams-channel-picker&source=docs).
 
 ---
 

@@ -15,15 +15,15 @@ The following example shows the use of the `mgt-search-box` component to enable 
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-search-box-html--search-box&source=docs" height="200"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-search-box-html--search-box&source=docs" height="200"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-search-box-html--search-box&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-search-box-html--search-box&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/pr/2934/iframe.html?id=components-mgt-search-box-react--search-box&source=docs" height="200"></iframe>
+<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-search-box-react--search-box&source=docs" height="200"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/pr/2934/?path=/story/components-mgt-search-box-react--search-box&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-search-box-react--search-box&source=docs).
 
 ---
 
