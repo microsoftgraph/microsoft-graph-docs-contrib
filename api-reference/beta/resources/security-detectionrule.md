@@ -1,6 +1,6 @@
 ---
 title: "detectionRule resource type"
-description: "Represents a custom detection rule that uses an advanced hunting query to automatically recognize security events when they occur, and trigger alerts and response actions."
+description: "Represents a custom detection rule written in **Advanced hunting** to automatically recognize security events when they occur, and to trigger alerts and response actions."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
