@@ -83,15 +83,7 @@
                 "ChangeType": "Addition",
                 "Description": "Added the **devicePlatformType** enumeration type.",
                 "Target": "devicePlatformType"
-              },  
-              {
-                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "platform",
-                "ChangeType": "Addition",
-                "Description": "Added the **platform** enumeration type.",
-                "Target": "platform"
-              }, 
+              },
               {
                 "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
                 "ApiChange": "Relationship",
