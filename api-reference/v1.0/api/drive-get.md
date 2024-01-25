@@ -107,6 +107,12 @@ GET /drives/{driveId}
 
 These methods support the [$select query parameter][odata-query-parameters] to shape the response.
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
 ## Response
 
 Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.

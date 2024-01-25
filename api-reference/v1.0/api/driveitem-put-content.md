@@ -50,6 +50,13 @@ PUT /sites/{site-id}/drive/items/{parent-id}:/{filename}:/content
 PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|text/plain. Required.|
+
 ## Request body
 
 The contents of the request body should be the binary stream of the file to be uploaded.
