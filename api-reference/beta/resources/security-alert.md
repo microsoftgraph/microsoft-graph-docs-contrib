@@ -60,7 +60,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 |threatDisplayName|String|The threat associated with this alert.|
 |threatFamilyName|String|Threat family associated with this alert.|
 |title|String|Brief identifying string value describing the alert.|
-|systemTags|Collection(String)|The system tags associated with the alert|
+|systemTags|String collection|The system tags associated with the alert|
 
 ### alertClassification values 
 
