@@ -1,13 +1,12 @@
 ---
-title: "analyzedEmail: remediate"
-description: "**Remediation means to take prescribed action against a threat. The analyzedEmails/remediate API is to remove potential threats from end-user's mailboxes by triggering email purge actions like move to junk, move to deleted items, soft delete, hard delete or move to inbox etc. These APIs enable scenarios and use cases such as SOAR integration, playbooks, and automations.**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "Triger move and delete remediation Action "
+description: " Triger move and delete action against a threat."
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# analyzedEmail: remediate
+# Triger move and delete email remediation Action 
 
 Namespace: microsoft.graph.security
 
@@ -55,13 +54,15 @@ The following table lists the parameters that are required when you call this ac
 |description|String| Description of the Remediation |
 |severity|microsoft.graph.security.remediationSeverity| Severity of the remediation .The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
 |action|microsoft.graph.security.remediationAction|Types of Move and Delete actions supported.The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
-|approverUpn|String| This is the person to trcak |
+|approverUpn|String| This is to track who has trigged the action |
 |remediateSendersCopy|Boolean|This will ensures purge sender's copy of the email in case of intra org and out bound emails|
-|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|GET unique key to identify single email ; this can be found from the analyzedemails or analyzedemails/Id|
+|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|GET unique key to identify single email ; This can be found from the analyzedemails , analyzedemails/Id or runHuntingQuery/reportId
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `204 No Content` response code and the cation status can be trcaked through the location header wtth bulkId. 
+
+>**Note:** The response of the action can be trcaked in https://security.microsoft.com/action-center/history 
 
 ## Examples
 
@@ -78,78 +79,20 @@ POST https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/reme
 Content-Type: application/json
 
 {
-  "displayName": "String",
-  "description": "String",
-  "severity": "String",
-  "action": "String",
-  "approverUpn": "String",
-  "remediateSendersCopy": "Boolean",
-  "analyzedEmails": [
-    {
-      "@odata.type": "#microsoft.graph.security.analyzedEmail",
-      "id": "String (identifier)",
-      "loggedDateTime": "String (timestamp)",
-      "networkMessageId": "String",
-      "internetMessageId": "String",
-      "senderDetail": {
-        "@odata.type": "microsoft.graph.security.analyzedEmailSenderDetail"
-      },
-      "recipientEmailAddresses": [
-        "String"
-      ],
-      "distributionList": "String",
-      "subject": "String",
-      "returnPath": "String",
-      "directionality": "String",
-      "originalDelivery": {
-        "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
-      },
-      "latestDelivery": {
-        "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
-      },
-      "attachmentsCount": "Integer",
-      "attachments": [
+    "displayName": "Clean up Phish email",
+    "description": "Delete email",
+    "severity": "medium",
+    "action": "softDelete",
+    "remediateSendersCopy": "true",
+    "approverUpn": "Jejne@conoso.onmicrosoft.com",
+    "analyzedEmails": [
         {
-          "@odata.type": "microsoft.graph.security.analyzedEmailAttachment"
-        }
-      ],
-      "urlsCount": "Integer",
-      "urls": [
+            "id": "73ca4154-58d8-43d0-a890-08dc18c52e6d-1311265001240363512-1"
+        },
         {
-          "@odata.type": "microsoft.graph.security.analyzedEmailUrl"
+            "id": "73ca4154-58d8-43d0-a890-08dc18c52e6d-13805748846361900678-1"
         }
-      ],
-      "language": "String",
-      "sizeInBytes": "Integer",
-      "alertIds": [
-        "String"
-      ],
-      "exchangeTransportRules": [
-        {
-          "@odata.type": "microsoft.graph.security.analyzedEmailExchangeTransportRuleInfo"
-        }
-      ],
-      "overrideSources": [
-        "String"
-      ],
-      "threatType": "String",
-      "detectionMethods": [
-        "String"
-      ],
-      "contexts": [
-        "String"
-      ],
-      "authenticationDetails": {
-        "@odata.type": "microsoft.graph.security.analyzedEmailAuthenticationDetail"
-      },
-      "phishConfidenceLevel": "String",
-      "spamConfidenceLevel": "String",
-      "bulkComplaintLevel": "String",
-      "emailClusterId": "String",
-      "policyAction": "String",
-      "policy": "String"
-    }
-  ]
+    ]
 }
 ```
 
