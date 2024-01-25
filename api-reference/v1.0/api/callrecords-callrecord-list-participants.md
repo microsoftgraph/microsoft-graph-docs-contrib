@@ -106,7 +106,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-          "@odata.type": "#microsoft.graph.callRecords.userIdentity",
+          "@odata.type": "#microsoft.graph.userIdentity",
           "id": "00005994-851d-4988-bbc3-413bbf089e13",
           "displayName": "Anette Thomsen",
           "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
@@ -129,7 +129,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-          "@odata.type": "#microsoft.graph.callRecords.userIdentity",
+          "@odata.type": "#microsoft.graph.userIdentity",
           "id": "13fd6bf0-f646-4b82-b0ad-cd28ce10d6e3",
           "displayName": "Daichi Maruyama",
           "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",

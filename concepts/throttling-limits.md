@@ -66,15 +66,34 @@ The preceding limits apply to the following resources:
 
 ### Call records limits
 
-The limits listed in the following table apply to the following resource:
+The limits listed in the following table apply to the following resources:
 
 - [callRecord](/graph/api/resources/callrecords-callrecord)
+- [participant](/graph/api/resources/callrecords-participant_v2)
+- [session](/graph/api/resources/callrecords-session)
 
 | Limit type      | Limit    |
 | -------------- | ------------ |
 | Per tenant | 10,000 requests per 20 seconds |
 | Per application per tenant  | 1,500 requests per 20 seconds |
 | Per call record | 10 requests per 20 seconds (first page) <br/> 50 requests per 5 minutes (subsequent pages) |
+| List call records | 15 requests per 20 seconds (first page) <br/> 55 requests per 5 minutes (subsequent pages) |
+
+### PSTN call records limits
+
+The limits listed in the following table apply to the following resources:
+
+- [directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow)
+- [pstnBlockedUsersLogRow](/graph/api/resources/callrecords-pstnblockeduserslogrow)
+- [pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow)
+- [pstnOnlineMeetingDialoutReport](/graph/api/resources/callrecords-pstnonlinemeetingdialoutreport)
+- [smsLogRow](/graph/api/resources/callrecords-smslogrow)
+
+| Limit type      | Limit    |
+| -------------- | ------------ |
+| Per tenant | 1,000 requests per 60 seconds |
+| Per application per tenant  | 200 requests per 60 seconds |
+| Per collection | 50 requests per 60 seconds |
 
 ## Excel service limits
 
