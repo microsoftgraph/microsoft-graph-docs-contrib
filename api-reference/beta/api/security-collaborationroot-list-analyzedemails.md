@@ -1,13 +1,15 @@
 ---
-title: "List analyzedEmail objects"
+title: "List analyzedEmails "
 description: "Get a list of the microsoft.graph.security.analyzedEmail objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ajaj-shaikh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
 # List analyzedEmail objects
+This API allows Security Operations teams to have direct access to hunt (query) for threats, IOCs, attack vectors, and evidences for entire tenant. This is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats.  It consists of email metadata, verdict information, related underlying entities (attachments/URL),additional  filters, and more.
+
 
 Namespace: microsoft.graph.security
 
@@ -38,13 +40,27 @@ GET /security/collaboration/analyzedEmails
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response: $count, $filter, $skip, $top. For general information, see [OData query parameters](/graph/query-parameters).
+<!-- {
+  "blockType": "request"
+}
+-->
+``` http
+GET /security/analyzedMessages?startTime=2023-06-27&endTime=2023-06-28&$filter=networkMessageId eq '35a870a1-dd73-4238-6ad3-08db76b14071’
+```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+
+## Parameter /Properties
+|Parameter|Type|Description
+|:---|:---|:---|
+|startTime|DateTime|Start time of the email search |
+|endTime|DateTime|End time of the email search |
+
 
 ## Request body
 
