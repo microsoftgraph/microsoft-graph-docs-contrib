@@ -32,7 +32,7 @@ To complete these instructions, you need the following resources and privileges:
 - You'll run the requests in this article as a user. You must complete the following steps:
     - Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
     - In the app you've signed in to, consent to the *Application.Read.All* and *AppRoleAssignment.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
-    - Get the object ID of the client service principal to which you'll grant app roles. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`. This information is exposed in the Enterprise Applications in the Azure Portal, find your Service Principal under All Applications.
+    - Get the object ID of the client service principal to which you'll grant app roles. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`. In the Microsoft Entra admin center, navigate to **Identity** > expand **Applications** > select **Enterprise applications** > select **App applications** tab and find the client service principal. Select it and on the **Overview** page, copy the Object ID value.
 
 <!--
 > [!CAUTION]
@@ -143,15 +143,11 @@ In this step, you'll grant your app an app role that's exposed by Microsoft Grap
 The following request grants your client app (the principal of ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`) an app role of ID `df021288-bdef-4463-88db-98f22de89214` that's exposed by a resource service principal of ID `7ea9e944-71ce-443d-811c-71e8047b557a`.
 
 > [!NOTE] 
-> If you are using Python you need to import the following libraries:
+> If you're using the Python SDK, import the following libraries:
 > ```
 > from msgraph.generated.models.app_role_assignment import AppRoleAssignment
 > from msgraph.generated.models.service_principal import ServicePrincipal
 > ```
-
-> [!IMPORTANT]  
-> The Service Principal that will be used for the Credentials Authentication must have enough authority to be able to add or remove permissions.
-
 
 # [HTTP](#tab/http)
 <!-- {
