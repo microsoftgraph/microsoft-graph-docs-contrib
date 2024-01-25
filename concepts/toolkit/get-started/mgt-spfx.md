@@ -1,50 +1,41 @@
 ---
-title: "SharePoint Framework library for Microsoft Graph Toolkit"
-description: "Use the SharePoint Framework library for Microsoft Graph Toolkit to use Microsoft Graph Toolkit in SharePoint Framework solutions."
+title: "Building SharePoint Framework customizations using Microsoft Graph Toolkit"
+description: "Use the Microsoft Graph Toolkit to develop SharePoint Framework solutions."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# SharePoint Framework library for Microsoft Graph Toolkit
+# Microsoft Graph Toolkit in SharePoint Framework solutions
 
-Use the SharePoint Framework library for Microsoft Graph Toolkit to use Microsoft Graph Toolkit in SharePoint Framework solutions.
+Use the Microsoft Graph Toolkit in your SharePoint Framework solutions.
 
 > [!IMPORTANT]
-> If you're building on Microsoft Graph Toolkit v3.0.0 or higher, we recommend that you consider using [Disambiguation](../customize-components/disambiguation.md) for your SharePoint Framework web parts. 
-
-To prevent multiple components from registering their own set of Microsoft Graph Toolkit components on the page, you should deploy this library to your tenant and reference Microsoft Graph Toolkit components that you use in your solution from this library.
-
-> [!CAUTION]
-> The SharePoint Framework library for Microsoft Graph Toolkit is meant to be used with **SharePoint Framework extensions and non-isolated web parts**. If you're building isolated web parts, don't use the SharePoint Framework library for Microsoft Graph Toolkit. Instead, load Microsoft Graph Toolkit directly from the @microsoft/mgt (or @microsoft/mgt-react if you use React) package. SharePoint Framework doesn't support referencing library components from isolated web parts and doing so will cause runtime errors in the isolated web part.
-
-
-## Prerequisites
-
-Before you deploy your SharePoint Framework package to your tenant, you will need to deploy the `@microsoft/mgt-spfx` SharePoint Framework package to your tenant. You can download the package that corresponds to the version of `@microsoft/mgt-spfx` that you used in your project from the [Releases](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases) section on GitHub. This package needs to be uploaded to the App Catalog and deplyoed to all sites.
-
->[!IMPORTANT]
->Because only one version of the SharePoint Framework library for Microsoft Graph Toolkit can be installed in the tenant, before you use the Microsoft Graph Toolkit in your solution, determine whether your organization or customer already has a version of the SharePoint Framework library deployed and use the same version.
+> The `@microsoft/mgt-spfx` package has been discontinued, use [disambiguation](../customize-components/disambiguation.md) for your SharePoint Framework web parts. 
 
 ## Installation
 
-To load Microsoft Graph Toolkit components from the library, add the `@microsoft/mgt-spfx` package as a runtime dependency to your SharePoint Framework project:
+To load Microsoft Graph Toolkit components from the library, add the `@microsoft/mgt-element`, `@microsoft/mgt-components`, and `@microsoft/mgt-sharepoint-provider` packages as a runtime dependency to your SharePoint Framework project:
 
 ```bash
-npm install @microsoft/mgt-spfx
+npm install @microsoft/mgt-element @microsoft/mgt-components @microsoft/mgt-sharepoint-provider
 ```
 
 or
 
 ```bash
-yarn add @microsoft/mgt-spfx
+yarn add @microsoft/mgt-element @microsoft/mgt-components @microsoft/mgt-sharepoint-provider
 ```
 
 ## Usage
 
-When building SharePoint Framework web parts and extensions, reference the Microsoft Graph Toolkit `Provider` and `SharePointProvider` from the `@microsoft/mgt-spfx` package. This will ensure that your solution will use Microsoft Graph Toolkit components that are already registered on the page, rather than instantiating its own. The instantiation process is the same for all web parts no matter which JavaScript framework they use.
+When building SharePoint Framework web parts and extensions, reference the Microsoft Graph Toolkit `customElementsHelper`, `Provider` and `SharePointProvider` from the `@microsoft/mgt-element` and `@microsoft/mgt-sharepoint-provider`. If you are not using React then you should also import the component registration functions from `@microsoft/mgt-components` packages.
+
+### For non-React based solutions
 
 ```ts
-import { Providers, SharePointProvider } from '@microsoft/mgt-spfx';
+import { customElementsHelper, Providers } from '@microsoft/mgt-element';
+import { SharePointProvider } from "@microsoft/mgt-sharepoint-provider";
+import { registerMgtPersonComponent } from '@microsoft/mgt-components';
 
 // [...] trimmed for brevity
 
@@ -53,26 +44,14 @@ export default class MgtWebPart extends BaseClientSideWebPart<IMgtWebPartProps> 
     if (!Providers.globalProvider) {
       Providers.globalProvider = new SharePointProvider(this.context);
     }
-  }
-
-  // [...] trimmed for brevity
-}
-```
-
-When building web parts using a framework other than React, you can load components directly in your web part:
-
-```ts
-export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoFrameworkWebPartProps> {
-  protected async onInit() {
-    if (!Providers.globalProvider) {
-      Providers.globalProvider = new SharePointProvider(this.context);
-    }
+    customElementsHelper.withDisambigutaion('contoso-hr-solution');
+    registerMgtPersonComponent();
   }
 
   public render(): void {
     this.domElement.innerHTML = `
       <div>
-        <mgt-person person-query="me"></mgt-person>
+        <mgt-contoso-hr-solution-person person-query="me"></mgt-person>
       </div>`;
   }
 
@@ -82,11 +61,49 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 
 ### React
 
-If you're building a web part using React, you can use the `@microsoft/mgt-react` package. However, make sure to import all React components from the `@microsoft/mgt-react/dist/es6/spfx` path. This will ensure that your solution will only use Microsoft Graph Toolkit components that are already registered on the page, rather than instantiating its own.
+If you're building a web part using React, you can use the `@microsoft/mgt-react` package and skip the manual registration of components. However, you will need to ensure that you lazy load your React component from the web part to make use of disambiguation.
+
+```ts
+// [...] trimmed for brevity
+import { Providers, customElementHelper } from "@microsoft/mgt-element";
+import { SharePointProvider } from "@microsoft/mgt-sharepoint-provider";
+import { lazyLoadComponent } from "@microsoft/mgt-spfx-utils";
+
+
+// Async import of component that imports the React Components
+const MgtReact = React.lazy(
+  () =>
+    import(/* webpackChunkName: 'mgt-react-component' */ "./components/MgtReact")
+);
+
+// set the disambiguation before initializing any web part
+customElementHelper.withDisambiguation("mgt-demo-client-side-solution");
+
+export default class MgtDemoWebPart extends BaseClientSideWebPart<IMgtDemoWebPartProps> {
+  // set the global provider
+  protected async onInit(): Promise<void> {
+    if (!Providers.globalProvider) {
+      Providers.globalProvider = new SharePointProvider(this.context);
+    }
+    return super.onInit();
+  }
+
+  public render(): void {
+    const element = lazyLoadComponent(MgtReact, {
+      description: this.properties.description
+    });
+
+    ReactDom.render(element, this.domElement);
+  }
+// [...] trimmed for brevity
+}
+```
+
+Then in the underlying React components the Microsoft Graph Toolkit component can be used directly.
 
 ```tsx
-import { Person } from '@microsoft/mgt-react/dist/es6/spfx';
-import { ViewType } from '@microsoft/mgt-spfx';
+import { Person } from '@microsoft/mgt-react';
+import { ViewType } from '@microsoft/mgt-components';
 
 // [...] trimmed for brevity
 
@@ -102,11 +119,8 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 ```
 
 >[!IMPORTANT]
-> Make sure all Microsoft Graph Toolkit imports in your solution are from either:
-> * `@microsoft/mgt-spfx` or
-> * `@microsoft/mgt-react/dist/es6/spfx`
-> 
-> Do not import from any other Microsoft Graph Toolkit packages (`@microsoft/mgt-*`) to avoid packaging your own copy of the toolkit and colliding with the shared library.
+> Make sure that your root web part class does not import any Microsoft Graph Toolkit resources from `@microsoft/mgt-react`, these should only be imported inside the lazy loaded React components.
+
 
 ## See also
 
