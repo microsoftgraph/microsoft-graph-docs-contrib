@@ -44,10 +44,10 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |redirectIncidentId|String|Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents. In such a case, the **status** property is `redirected`. |
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`, and `awaitingAction`.|
-|customTags|String collection|Array of custom tags associated with an incident.|
-|systemTags|Collection(String)|The system tags accocisted with the incident|
-|description|String|A reach text string describing the incident (could be an HTML)|
-|recommendedActions|String|A reach text string that represents the actions that are reccomnded to take in order to resolve the incident (could be an HTML)|
+|customTags|Collection(String)|The collection of custom tags that are associated with an incident.|
+|systemTags|Collection(String)|The collection of system tags that are associated with the incident.|
+|description|String|A rich text string describing the incident (could be an HTML)|
+|recommendedActions|String|A rich text string that represents the actions that are reccomnded to take in order to resolve the incident (could be an HTML)|
 |recommendedHuntingQueries|Collection(microsoft.graph.security.recommendedHuntingQuery)|List of hunting kql queries related to the incdient|
 
 

@@ -1,6 +1,6 @@
 ---
 title: "recommendedHuntingQuery resource type"
-description: "Hunting kql query related to the incident"
+description: "Represents a Kusto Query Language (KQL) advanced hunting query."
 ms.date: 01/29/2023
 author: "AviadHasidof"
 ms.localizationpriority: medium
@@ -14,18 +14,18 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Hunting kql query related to the incident
+Represents a Kusto Query Language (KQL) advanced hunting query.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|kqlText|String|The hunting query in Kusto Query Language (KQL)|
+|kqlText|String|The query string.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following template is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.recommendedHuntingQuery"
