@@ -93,10 +93,13 @@ The following is a full working example using mgt-loader, the MSAL2 Provider ini
 This is an example using the ES6 modules, the MSAL2 Provider initialized in HTML, and the Login component:
 
 ```html
-<script
-  type="module"
-  src="node_modules/@microsoft/mgt/dist/es6/index.js"
-></script>
+<script type="module">
+  import { registerMgtMsal2Provider } from 'node_modules/@microsoft/mgt-msal2-provider/dist/es6/index.js';
+  import { registerMgtLoginComponent } from 'node_modules/@microsoft/mgt-components/dist/es6/index.js';
+  registerMgtMsal2Provider();
+  registerMgtLoginComponent();
+</script>
+
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```
@@ -107,11 +110,14 @@ This is an example using the ES6 modules, the MSAL2 Provider initialized in Java
 
 ```javascript
 import { Providers } from "@microsoft/mgt-element";
+import { registerMgtLoginComponent } from '@microsoft/mgt-components';
 import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",
 });
+
+registerMgtLoginComponent();
 
 function component() {
   const element = document.createElement("div");
@@ -168,15 +174,19 @@ If you're using the `mgt-loader` library, you can access the `Provider` and `Pro
 
 # [JavaScript](#tab/JavaScript)
 
-If you're using the toolkit via the npm packages, you can import the `Provider` and `ProviderState` from `@microsoft/mgt`.
+If you're using the toolkit via the npm packages, you can import the `Provider` and `ProviderState` from `@microsoft/mgt-element`.
 
 ```javascript
 import { Providers, ProviderState } from "@microsoft/mgt-element";
+import { registerMgtLoginComponent, registerMgtAgendaComponent } from '@microsoft/mgt-components';
 import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",
 });
+
+registerMgtLoginComponent();
+registerMgtAgendaComponent();
 
 const loadAgenda = () => {
   if (Providers.globalProvider.state === ProviderState.SignedIn) {
