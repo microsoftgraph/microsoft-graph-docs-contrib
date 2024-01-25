@@ -21,13 +21,11 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Create](../api/solutionsroot-post-virtualeventtownhall.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
+| [Create](../api/virtualeventsroot-post-townhalls.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
 | [Get](../api/virtualeventtownhall-get.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Read the properties and relationships of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
 | [Update](../api/virtualeventtownhall-update.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
 | [Publish](../api/virtualevent-publish.md) | None | Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
 | [Cancel](../api/virtualevent-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
-| [List by user role](../api/virtualevent-getbyuseridandrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a [virtualEventTownhall](../resources/virtualeventtownhall.md) collection where the signed-in user is either the organizer or a co-organizer. |
-| [List by user ID and role](../api/virtualevent-getbyuserrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a [virtualEventTownhall](../resources/virtualeventtownhall.md) collection where the specified user is either the organizer or a co-organizer. |
 
 ## Properties
 
@@ -35,11 +33,11 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 |:---|:---|:---|
 | audience | [meetingAudience](#meetingaudience-values) | To whom the townhall is visible. |
 | coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the townhall. |
-| createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of who created the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of who created the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). Read-only. |
 | description | [itemBody](../resources/itembody.md) | Description of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | displayName | String | Display name of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| id | String | Unique identifier of the townhall. Inherited from [entity](../resources/entity.md).|
+| id | String | Unique identifier of the townhall. Inherited from [entity](../resources/entity.md). Read-only. |
 | invitedAttendees | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Invited people to the townhall. |
 | isInviteOnly | Boolean | Indicates whether the townhall is only open to invited people and groups in your organization. Can only be `true` when the value of the **audience** property is `organization`. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
@@ -62,12 +60,14 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 | presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md).|
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -1,9 +1,9 @@
 ---
 title: "Update virtualEventTownhall"
 description: "Update the properties of a virtualEventTownhall object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
@@ -31,34 +32,27 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH ** Entity URI for microsoft.graph.virtualEventTownhall not found
+PATCH /solutions/virtualEvents/townhalls/{id}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|status|virtualEventStatus|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`. Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
-|description|[itemBody](../resources/itembody.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
-|startDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
-|endDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
-|createdBy|[communicationsIdentitySet](../resources/communicationsidentityset.md)|**TODO: Add Description** Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
-|audience|meetingAudience|**TODO: Add Description**. The possible values are: `everyone`, `organization`, `unknownFutureValue`. Optional.|
-|coOrganizers|[communicationsUserIdentity](../resources/communicationsuseridentity.md) collection|**TODO: Add Description** Optional.|
-|invitedAttendees|[communicationsUserIdentity](../resources/communicationsuseridentity.md) collection|**TODO: Add Description** Optional.|
-|isInviteOnly|Boolean|**TODO: Add Description** Optional.|
-
-
+| displayName | String | Display name of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
+| description | [itemBody](../resources/itembody.md) | Description of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
+| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the townhall. Optional. |
 
 ## Response
 
