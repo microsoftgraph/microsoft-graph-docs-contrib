@@ -19,7 +19,48 @@ The following example shows the use of the `mgt-picker` component to select a ta
 
 ## Properties and attributes
 
-You can use several attributes to change the behavior of the component. The required attributes are `key-name` for example `displayName` and `resource` for example `/users`
+You can use several attributes to change the behavior of the component. It has required attributes such as `resource` for example `/users` and `key-name` for example `displayName`.
+
+`key-name` also supports nested values. For example, in the following response:
+```js
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",
+    "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
+    "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+    },
+    "certification": {
+           "isPublisherAttested": true,
+           "isCertifiedByMicrosoft": true,
+           "lastCertificationDateTime": "2021-05-11T23:26:20Z",
+           "certificationExpirationDateTime": "2022-05-11T23:26:20Z",
+           "certificationDetailsUrl": "https://learn.microsoft.com/microsoft-365-app-certification/forward/azure/631a96bc-a705-4eda-9f99-fdaf9f54f6a2"
+    },
+    "tags": [],
+    "tokenEncryptionKeyId": null,
+    "api": {
+        "requestedAccessTokenVersion": 2,
+        "acceptMappedClaims": null,
+        "knownClientApplications": [],
+        "oauth2PermissionScopes": [],
+        "preAuthorizedApplications": []
+    },
+    "appRoles": [],
+    "web": {
+        "redirectUris": [],
+        "homePageUrl": null,
+        "logoutUrl": null,
+        "implicitGrantSettings": {
+            "enableIdTokenIssuance": false,
+            "enableAccessTokenIssuance": false
+        }
+    }
+}
+```
+
+your `key-name` attribute value could be `web.homePageUrl` or `verifiedPublisher.displayName`.
 
 | Attribute                 | Property                | Description                                                                                                                                                                                                                           |
 | ------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
