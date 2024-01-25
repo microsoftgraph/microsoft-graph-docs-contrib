@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Publish a virtual event. Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Publish a virtual event so that it's visible to its audience. Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -64,7 +64,6 @@ POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/bce9a3ca
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -73,4 +72,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-

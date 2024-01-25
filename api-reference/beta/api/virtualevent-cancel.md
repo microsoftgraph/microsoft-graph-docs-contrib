@@ -64,7 +64,6 @@ POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/bce9a3ca
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -73,4 +72,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-

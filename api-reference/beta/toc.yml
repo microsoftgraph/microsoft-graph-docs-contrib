@@ -18233,11 +18233,6 @@ items:
                       - name: Cancel
                         href: api/virtualevent-cancel.md
                       - name: Update
-                        href: api/virtualeventtownhall-update.md
-                      - name: List by user role
-                        href: api/virtualevent-getbyuserrole.md
-                      - name: List by user ID and role
-                        href: api/virtualevent-getbyuseridandrole.md
                   - name: Session
                     href: resources/virtualeventsession.md
                     items:
