@@ -57,7 +57,7 @@ The following table shows the properties that are available when you create an [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code.
+If successful, this method returns a `201 Created` response code with the ID of the acronym created.
 
 ## Examples
 
