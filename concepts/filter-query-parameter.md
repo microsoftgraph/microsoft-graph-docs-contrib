@@ -241,7 +241,7 @@ These examples show how to use `$filter` to match against supported properties a
 >
 > + GUID and DateTimeOffset values aren't enclosed in quotes in `$filter` expressions.
 
-<sup><a name="?"></a> ** </sup> : This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
+<sup><a name="**"></a> ** </sup> : This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
 
 ### For single primitive types like String, Int, and dates
 
