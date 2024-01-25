@@ -3199,3 +3199,10 @@ Possible values for user account types (group membership), per Windows definitio
 | windowsMobile |
 | macOS         |
 
+### printReleaseType values 
+
+|Member|
+|:---|
+|direct|
+|qrCode|
+|unknownFutureValue|

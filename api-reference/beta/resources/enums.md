@@ -1,6 +1,6 @@
 ---
 title: "Enum values"
-description: "Microsoft Graph enumeration values"
+description: "Microsoft Graph enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: "non-product-specific"
@@ -4621,3 +4621,11 @@ Possible values for user account types (group membership), per Windows definitio
 | windows       |
 | windowsMobile |
 | macOS         |
+
+### printReleaseType values 
+
+|Member|
+|:---|
+|direct|
+|qrCode|
+|unknownFutureValue|
