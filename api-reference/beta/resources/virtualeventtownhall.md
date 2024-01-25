@@ -56,7 +56,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Value | Description |
 | ----- | ----------- |
 | draft | The virtual event is in draft and only visible to the organizer. |
-| published | The organizer published the virtual event and it's visible to the audience. || canceled | The organizer canceled the virtual event. |
+| published | The organizer published the virtual event and it's visible to the audience. |
+| canceled | The organizer canceled the virtual event. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
