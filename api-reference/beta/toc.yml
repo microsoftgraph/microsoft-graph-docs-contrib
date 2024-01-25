@@ -18225,7 +18225,7 @@ items:
                     href: resources/virtualeventtownhall.md
                     items:
                       - name: Create
-                        href: api/virtualeventsroot-post-townhall.md
+                        href: api/virtualeventsroot-post-townhalls.md
                       - name: Get
                         href: api/virtualeventtownhall-get.md
                       - name: Publish
