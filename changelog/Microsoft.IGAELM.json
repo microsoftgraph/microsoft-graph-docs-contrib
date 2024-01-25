@@ -371,7 +371,7 @@
         "ApiChange": "Method",
         "ChangedApiName": "LIST",
         "ChangeType": "Addition",
-        "Description": "Added the **LIST** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Description": "Added the **LIST** method to the [assignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
         "Target": "accessPackageSubject"
       },
 {
@@ -379,7 +379,7 @@
         "ApiChange": "method",
         "ChangedApiName": "POST",
         "ChangeType": "Addition",
-        "Description": "Added the **POST** method to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Description": "Added the **POST** method to the [assignmentRequests](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
         "Target": "accessPackageSubject"
       },
 {
@@ -387,7 +387,7 @@
         "ApiChange": "Method",
         "ChangedApiName": "GET",
         "ChangeType": "Addition",
-        "Description": "Added the **GET** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Description": "Added the assignmentRequests **GET** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
         "Target": "accessPackageSubject"
       },
 {
