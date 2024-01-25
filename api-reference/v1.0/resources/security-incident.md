@@ -44,7 +44,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`, and `awaitingAction`.|
 |tenantId|String|The Microsoft Entra tenant in which the alert was created.|
 |systemTags|String collection|The system tags accocisted with the incident|
-|description|String|A reach text string describing the incident (could be an HTML)|
+|description|String|A reach text string describing the incident|
 
 
 
