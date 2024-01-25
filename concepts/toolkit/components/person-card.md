@@ -237,26 +237,31 @@ For more information about handling events, see [events](../customize-components
 
 ## Microsoft Graph permissions
 
-The Person-Card control uses the following Microsoft Graph APIs and permissions.
+The Person-Card control uses the following Microsoft Graph APIs and permissions. For each API called the user must have at least one of the listed permissions.
 
 | Configuration                                                                                          | Permission         | API                                                                                                           | Section      |
 | ------------------------------------------------------------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------------- | ------------ |
-| `personDetails` set with user's `id` but without e-mail, or `userId` set, or `personQuery` set to `me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people), [/users/{id}/photo/$value](/graph/api/profilephoto-get)           | Default      |
-| `personQuery` set to a value different than `me`                                                       | People.Read        | [/me/people/?$search=](/graph/api/user-list-people)                                                           | Default      |
-| `personQuery` set to a value different than `me` and `config.useContactApis` set to `true` (default)   | Contacts.Read      | [/me/contacts/\*](/graph/api/user-list-contacts)                                                              | Default      |
-| `showPresence` set to `true`                                                                           | Presence.Read.All  | [/users/{id}/presence](/graph/api/presence-get)                                                               | Default      |
-| `sections.organization` enabled (default)                                                              | User.Read.All      | [/users/{id}/manager](/graph/api/user-list-manager)                                                           | Organization |
-| `sections.organization.showWorksWith` set (default)                                                    | People.Read.All    | [/users/{id}/people](/graph/api/user-list-people)                                                             | Organization |
-| `sections.mailMessages` enabled (default)                                                              | Mail.ReadBasic     | [/me/messages](/graph/api/user-list-messages)                                                                 | Messages     |
-| `sections.files` enabled (default)                                                                     | Sites.Read.All     | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files        |
-| `sections.profile` enabled (default)                                                                   | User.Read.All      | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true)                         | Profile      |
+| In all configurations                                                                                  | User.Read, User.ReadWrite                                                                                                          | [/me](/graph/api/user-get)                                                                             | Default      |
+| `personDetails` set with user's `id` but without e-mail, or `userId` set                               | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All                                 | [/users/{id}](/graph/api/user-get)                       | Default      |
+| `personDetails` set with user's `id` but without e-mail, or `userId` set                               | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                                                                              | [/users/{id}/photo/$value](/graph/api/profilephoto-get)  | Default      |
+| `personQuery` set to `me`                                                                              | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All      | [/me](/graph/api/user-get), [/users/{id}/photo/$value](/graph/api/profilephoto-get)           | Default      |
+| `personQuery` set to `me`                                                                              | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All                                                   | [/me/photo/$value](/graph/api/profilephoto-get)           | Default      |
+| `personQuery` set to a value different than `me`                                                       | People.Read, People.Read.All                                                                                                       | [/me/people/?$search=](/graph/api/user-list-people)                                                           | Default      |
+| `personQuery` set to a value different than `me` and `config.useContactApis` set to `true` (default)   | Contacts.Read, Contacts.ReadWrite                                                                                                  | [/me/contacts/\*](/graph/api/user-list-contacts)                                                              | Default      |
+| `personQuery` set to a value different than `me` and `config.useContactApis` set to `false`            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                                                                              | [/users/{id}/photo/$value](/graph/api/profilephoto-get)  | Default      |
+| `showPresence` set to `true`                                                                           | Presence.Read.All                                                                                                                  | [/users/{id}/presence](/graph/api/presence-get)                                                               | Default      |
+| `sections.organization` enabled (default)                                                              | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All                                 | [/users/{id}?$expand=manager($levels=max)](/graph/api/user-list-manager), [/users/${id}/directReports](/graph/api/user-list-manager) | Organization |
+| `sections.organization.showWorksWith` set (default)                                                    | People.Read.All                                                                                                                    | [/users/{id}/people](/graph/api/user-list-people)                                                             | Organization |
+| `sections.mailMessages` enabled (default)                                                              | Mail.ReadBasic, Mail.Read, Mail.ReadWrite                                                                                          | [/me/messages](/graph/api/user-list-messages)                                                                 | Messages     |
+| `sections.files` enabled (default)                                                                     | Sites.Read.All, Sites.ReadWrite.All                                                                                                | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files        |
+| `sections.profile` enabled (default)                                                                   | User.Read.All, User.ReadWrite.All                                                                                                  | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true)                         | Profile      |
 
-The `MgtPersonCard` class also exposes a `getScopes` static method that returns an array of scopes required for the person card to function based on the global person card configuration.
+The `getMgtPersonCardScopes()` function returns an array of scopes required for the person card to function based on the global person card configuration.
 
 ```ts
-import { MgtPersonCard } from `@microsoft/mgt`;
+import { getMgtPersonCardScopes } from `@microsoft/mgt-components`;
 
-const neededScopes = MgtPersonCard.getScopes();
+const neededScopes = getMgtPersonCardScopes();
 ```
 
 ### Subcomponents
