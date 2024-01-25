@@ -77,6 +77,7 @@ The following example shows a response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/microsoft365Apps/installationOptions/$entity",
     "updateChannel": "current",

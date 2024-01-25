@@ -71,6 +71,7 @@ The following examples show a requet to set the Microsoft 365 update channel.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/admin/microsoft365Apps/installationOptions
 Content-Type: application/json
+
 {
   "updateChannel": "current"
 }
@@ -86,6 +87,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
+
 ```
 ### Example 2: Set the Microsoft 365 apps installation options
 
@@ -95,6 +97,7 @@ The follown example shows a request to set the Microsoft 365 apps installation o
 ``` http
 PATCH https://graph.microsoft.com/v1.0/admin/microsoft365Apps/installationOptions
 Content-Type: application/json
+
 {
   "appsForWindows": {
     "isMicrosoft365AppsEnabled": true,
@@ -113,6 +116,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
+
 ```
 
 ### Example 3: Update channel and installation options
@@ -123,6 +127,7 @@ The following example shows a request to set Microsoft 365 apps update channel a
 ``` http
 PATCH https://graph.microsoft.com/v1.0/admin/microsoft365Apps/installationOptions
 Content-Type: application/json
+
 {
   "updateChannel": "monthlyEnterprise",
   "appsForWindows": {
@@ -149,4 +154,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
+
 ```
