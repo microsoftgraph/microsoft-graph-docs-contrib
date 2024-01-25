@@ -15,9 +15,6 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties and relationships of an  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-> [!NOTE]
-> The *accessPackageAssignmentRequests* call will be retired soon. Please use the *assignmentRequests* call instead.
-
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -28,6 +25,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-get-permissions.md)]
 
 ## HTTP request
+
+> [!NOTE]
+> The `/accessPackageAssignmentRequests` path will be retired soon. Use the `/assignmentRequests` path instead.
 
 <!-- { "blockType": "ignored" } -->
 
