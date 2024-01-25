@@ -1917,14 +1917,6 @@
           "ChangeType": "Addition",
           "Description": "Added the `forms` property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
-        },
-        {
-          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
-          "ApiChange": "Resource",
-          "ChangedApiName": "Dictionary",
-          "ChangeType": "Addition",
-          "Description": "Added the [Dictionary](https://learn.microsoft.com/en-us/graph/api/resources/Dictionary?view=graph-rest-beta) resource type.",
-          "Target": "Dictionary"
         }
       ],
       "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
