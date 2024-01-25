@@ -3188,17 +3188,6 @@ Possible values for user account types (group membership), per Windows definitio
 | iOSMobileApplicationManagement|
 | unknownFutureValue|
 
-### platform values
-
-| Member        |
-|:--------------|
-| unknown       |
-| ios           |
-| android       |
-| windows       |
-| windowsMobile |
-| macOS         |
-
 ### printReleaseType values 
 
 |Member|
