@@ -49,7 +49,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.search.acronym"
 }-->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
