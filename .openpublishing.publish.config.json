@@ -73,8 +73,8 @@
     },
     {
       "path_to_root": "concepts/sdks/snippets/java",
-      "url": "https://github.com/microsoftgraph/msgraph-snippets-java",
-      "branch": "main",
+      "url": "https://github.com/ramsessanchez/msgraph-snippets-java",
+      "branch": "rsh/v6-snippets",
       "branch_mapping": {}
     },
     {
