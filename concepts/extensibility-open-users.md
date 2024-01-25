@@ -7,23 +7,24 @@ ms.prod: "extensions"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.topic: tutorial
-ms.date: 01/24/2024
+ms.date: 01/25/2024
 #Customer intent: As a developer, I want to learn how to store lightweight data to Microsoft Entra users through Microsoft Graph, and avoid using an external database system.
 ---
 
 # Add custom data to users using open extensions
 
-This article demonstrates how to use [open extensions](/graph/api/resources/opentypeextension).
+In this tutorial, you lean how to use [open extensions](/graph/api/resources/opentypeextension).
 
-Imagine you're building an application that is available on multiple client platforms, such as desktop and mobile. You want to let users configure their UI experience so it's consistent no matter which device they use to sign in to your app.
+Imagine you're building an application that's available on multiple client platforms, such as desktop and mobile. You want to let users configure their UI experience so it's consistent no matter which device they use to sign in to your app.
 
 For this scenario, this article shows you how to:
 
 > [!div class="checklist"]
-> * Represent some roaming profile information about the user using open extensions.
-> * Query the user and return the roaming profile.
-> * Change the user's roaming profile information stored in the open extension.
-> * Delete the user's roaming profile information.
+>
+> - Represent some roaming profile information about the user using open extensions.
+> - Query the user and return the roaming profile.
+> - Change the user's roaming profile information stored in the open extension.
+> - Delete the user's roaming profile information.
 
 > [!NOTE]
 > Apart from users, open extensions are also supported and can be managed for [other resource types](extensibility-overview.md#comparison-of-extension-types).
@@ -32,7 +33,7 @@ For this scenario, this article shows you how to:
 
 To reproduce the steps in this article, you need the following privileges:
 
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge).
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) and the user you want to store the roaming profile for.
 - Grant the app the *User.ReadWrite* delegated permission for the signed-in user.
 
 ## Step 1. Add roaming profile information
@@ -117,10 +118,9 @@ Content-Type: application/json
 
 ## Step 2. Retrieve roaming profile information
 
-When the user signs in to the app from another device, the app calls Microsoft Graph to retrieve the user's profile details and expand the **extensions** navigation property to get their roaming settings.
+When the user signs in to the app from another device, the app calls Microsoft Graph to retrieve the user's profile details and expand the **extensions** navigation property to get their roaming settings, then uses this data to provide the same experience as on the other device.
 
 ### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -253,8 +253,6 @@ Content-type: application/json
 
 ---
 
-
-
 ## Step 4. Delete a user's roaming profile
 
 The user decides that they don't want a roaming profile anymore. To delete the extension property, the app calls Microsoft Graph by running the following request. The request returns a `204 No Content` response code.
@@ -302,7 +300,7 @@ DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSetting
 
 ---
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](extensibility-overview.md)
 - [Add custom data to groups using schema extensions](extensibility-schema-groups.md)

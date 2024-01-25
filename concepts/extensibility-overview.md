@@ -6,6 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.prod: "extensions"
+ms.topic: overview
 ms.custom: graphiamtop20
 ms.date: 11/29/2023
 #Customer intent: As a developer, I want to learn how to store lightweight data to Microsoft Graph resources and avoid using an external database system, and use the data to customize authentication and other experiences.
@@ -1066,10 +1067,10 @@ The following table compares the extension types, which should help you decide w
 
 The same privileges that your app requires to read from or write to a resource instance are also required to manage any extensions data on that resource instance. For example, in a delegated scenario, an app can only update any user's extension data if it's granted the *User.ReadWrite.All* permission and the signed-in user has a supported Microsoft Entra administrator role.
 
-## Next steps
+## Related content
 
-- [Add custom data to users using open extensions](extensibility-open-users.md)
-- [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
+- [Tutorial: Add custom data to users using open extensions](extensibility-open-users.md)
+- [Tutorial: Add custom data to groups using schema extensions](extensibility-schema-groups.md)
 
 <!-- Links -->
 

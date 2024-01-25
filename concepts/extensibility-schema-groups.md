@@ -7,24 +7,26 @@ ms.prod: "extensions"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.topic: tutorial
-ms.date: 01/24/2024
+ms.date: 01/25/2024
 #Customer intent: As a developer, I want to learn how to store lightweight data to Microsoft Entra groups through Microsoft Graph, and avoid using an external database system.
 ---
 
 # Add custom data to groups using schema extensions 
 
-This article demonstrates how to use [schema extensions](/graph/api/resources/schemaextension).
+In this tutorial, you learn how to use [schema extensions](/graph/api/resources/schemaextension).
 
-Imagine you're a developer in a Learning Management Software company called **Graph Learn** that builds training courses and materials for businesses. You use the collaborative experience of Microsoft 365 groups to deliver course content and record exercises among participants for both online courses and instructor-led courses. You want to make the Microsoft 365 groups used for training courses easily identifiable as training courses, which will allow other developers to discover your groups and build rich experiences on top of your learning courses.
+Imagine you're a developer in a Learning Management Software company called **Bellows College** that builds training courses and materials for businesses. You use the collaborative experience of Microsoft 365 groups to deliver course content and record exercises among participants for both online courses and instructor-led courses. You want to make the Microsoft 365 groups used for training courses easily identifiable as training courses, which allows other developers to discover your groups and build rich experiences on top of your learning courses.
 
 For this scenario, this article shows you how to:
 
 > [!div class="checklist"]
-> * View available schema extension definitions that you could use.
-> * Register a schema extension definition that targets groups for training courses.
-> * Create a new group with custom data based on the schema extension definition that you registered.
-> * Add, update, or remove custom data in an existing group based on a schema extension definition.
-> * Read a group and the extension data.
+>
+> - Discover available schema extension definitions that you could use.
+> - Register a schema extension definition that targets groups for training courses.
+> - Create a new group with custom data based on the schema extension definition that you registered.
+> - Add, update, or remove custom data in an existing group based on a schema extension definition.
+> - Read a group and the extension data.
+> - Delete the schema extension definition and the extension data.
 
 > [!NOTE]
 > Apart from groups, schema extensions are also supported and can be managed for [other resource types](extensibility-overview.md#comparison-of-extension-types).
@@ -35,11 +37,11 @@ To reproduce the steps in this article, you need the following privileges:
 
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge).
 - Grant the app the *Group.ReadWrite.All* and *Application.ReadWrite.All* delegated permissions for the signed-in user.
-- Be assigned ownership of an application that will own the schema extension definition. In this tutorial, the application is named *extensions-application* and has **appId** `d1e6f196-fca3-48ad-8cd3-1a98e3bd46d2`.
+- Be the owner of an application that you assign ownership of the schema extension definition in this tutorial. In this tutorial, the application is named *extensions-application* and has **appId** `d1e6f196-fca3-48ad-8cd3-1a98e3bd46d2`.
 
 ## Step 1. View available schema extensions
 
-First, as a developer, you might want the app to reuse any existing schema extension definitions if they're fit for purpose. In the following example, you query schema extensions that are named (by the **id**) `graphlearn_courses`. Assume that the response shows there are no schema extensions that are named `graphlearn_courses` in your tenant.
+First, as a developer, you might want the app to reuse any existing schema extension definitions if they're fit for purpose. In the following example, you query schema extensions that are named (by the **id**) `bellowscollege_courses`. Assume that the response shows there are no schema extensions that are named `bellowscollege_courses` in your tenant.
 
 ### Request
 
@@ -49,7 +51,7 @@ First, as a developer, you might want the app to reuse any existing schema exten
   "name": "schemaextensions-groups-get"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_courses'
+GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'bellowscollege_courses'
 ```
 
 # [C#](#tab/csharp)
@@ -104,18 +106,21 @@ Content-Type: application/json
 }
 ```
 
-You can also query by the id as a path paremeter as follows: `GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_courses`. If there are no schema extensions that match the id, the response will be `404 Not Found`.
+You can also query by the **id** as a path parameter as follows: `GET https://graph.microsoft.com/v1.0/schemaExtensions/bellowscollege_courses`. If there are no schema extensions that match the ID, the response is `404 Not Found`.
 
 ## Step 2. Register a schema extension definition
 
 You want to create and register a new extension definition for training courses on the **group** resource. Specify the following properties:
 
-- **id**: When creating a schema extension definition, you should provide a string for the **id** property. One way to do this is to concatenate a *verified* vanity domain name for your tenant with a name for the schema extension. For example, if the domain is `graphlearn.com`, and the name of the schema extension is `courses`, then you can use the **id** `graphlearn_courses`. An alternative way to assign **id** is to provide only a schema name, such as `courses`, and let Microsoft Graph automatically generate the **id** for you by prefixing the provided name with a random alphanumeric string.
-  - This **id** becomes the name of the schema extension property on a group.
+- **id**: Provide a string for this property following one of two ways:
+  - Option 1: Concatenate a *verified* vanity domain name for your tenant with a name for the schema extension. For example, if the domain is `bellowscollege.com`, and the name of the schema extension is `courses`, then you can use the **id** `bellowscollege_courses`. 
+  - Option 2: An alternative way is to provide only a schema name, such as `courses`, and let Microsoft Graph automatically generate the **id** for you by prefixing the provided name with a random alphanumeric string.
+
+    This **id** becomes the name of the schema extension property on a group.
 - **description**
 - **targetTypes**: Specify the resource types that the schema extension can be applied to. In this example, the resource type is `Group`. You can add more resource types by updating the schema extension definition later.
 - **properties**: Specify the custom properties that make up the schema. In this example, specify the `courseId`, `courseName` and `courseType` custom properties and their types. Only additive changes are permitted after you create the schema extension definition.
-- **owner**: Specify the application that owns the schema extension definition. If you're running this example from an app that you're not assigned as owner, specify the appId of the application that you own in the **owner** property.
+- **owner**: Specify the application that owns the schema extension definition. If you're running this example from an app that you're not assigned as owner, specify the **appId** of the application that you're assigned in the **owner** property.
 
 ### Request
 
@@ -129,8 +134,8 @@ POST https://graph.microsoft.com/v1.0/schemaExtensions
 Content-type: application/json
 
 {
-    "id": "graphlearn_courses",
-    "description": "Graph Learn training courses extensions",
+    "id": "bellowscollege_courses",
+    "description": "Bellows College training courses extensions",
     "targetTypes": [
         "Group"
     ],
@@ -203,8 +208,8 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#schemaExtensions/$entity",
-    "id": "graphlearn_courses",
-    "description": "Graph Learn training courses extensions",
+    "id": "bellowscollege_courses",
+    "description": "Bellows College training courses extensions",
     "targetTypes": [
         "Group"
     ],
@@ -229,13 +234,13 @@ Content-Type: application/json
 
 ## Step 3. Extend a group with custom data
 
-This section shows you how to extend a group with custom data either during group creation or by updating an existing group.
+You can extend a group with custom data either during group creation or by updating an existing group.
 
 ### Option 1: Create a new group with extended data
 
-The following request creates a new group and uses the `graphlearn_courses` schema extension to extend the group with custom data. If you have an existing group, you can also extend it with custom data by updating the group with the extension data.
+The following request creates a new group and uses the `bellowscollege_courses` schema extension to extend the group with custom data. If you have an existing group, you can also extend it with custom data by updating the group with the extension data.
 
-The response won't mirror back any data extensions. You need to explicitly `$select` the extension by name using a `GET /group/{id}` operation.
+The response doesn't mirror back any data extensions. You need to explicitly `$select` the extension by name using a `GET /group/{id}` operation.
 
 #### Request
 
@@ -257,7 +262,7 @@ Content-type: application/json
     "mailEnabled": true,
     "mailNickname": "newMan202403",
     "securityEnabled": false,
-    "graphlearn_courses": {
+    "bellowscollege_courses": {
         "courseId": "123",
         "courseName": "New Managers",
         "courseType": "Online"
@@ -321,7 +326,7 @@ Content-Type: application/json
     "groupTypes": [
         "Unified"
     ],
-    "mail": "newMan202403@M365x56085806.onmicrosoft.com",
+    "mail": "newMan202403@bellowscollege.com",
     "mailEnabled": true,
     "mailNickname": "newMan202403"
 }
@@ -340,7 +345,7 @@ PATCH https://graph.microsoft.com/v1.0/groups/dfc8016f-db97-4c47-a582-49cb8f8493
 Content-type: application/json
 
 {
-    "graphlearn_courses": {
+    "bellowscollege_courses": {
         "courseId": "123",
         "courseName": "New Managers",
         "courseType": "Online"
@@ -384,7 +389,7 @@ Content-type: application/json
 
 ## Step 4. Update custom data in a group
 
-The following request updates the **courseType** property in the `graphlearn_courses` extension for the group to `Hybrid`. Though you want to update only the **courseType** property, you must include the other properties and their existing values in the request body as well. Otherwise, Microsoft Graph sets them to `null` and removes their data.
+The following request updates the **courseType** property in the `bellowscollege_courses` extension for the group to `Hybrid`. Though you want to update only the **courseType** property, you must include the other properties and their existing values in the request body as well. Otherwise, Microsoft Graph sets them to `null` and removes their data.
 
 The following request returns a `204 No Content` response.
 
@@ -397,7 +402,7 @@ PATCH https://graph.microsoft.com/v1.0/groups/dfc8016f-db97-4c47-a582-49cb8f8493
 Content-type: application/json
 
 {
-    "graphlearn_courses": {
+    "bellowscollege_courses": {
         "courseId": "123",
         "courseName": "New Managers",
         "courseType": "Hybrid"
@@ -407,9 +412,9 @@ Content-type: application/json
 
 ## Step 5. Get a group and its extension data
 
-To get the custom data in a group, use `$select` to include the extension by name (in this case by `graphlearn_courses`).
+To get the custom data in a group, use `$select` to include the extension by name.
 
-Apart from filtering by the **id** of the schema extension, you can also filter by the extension property values. The following example looks for the group that has the `graphlearn_courses` extension with a `courseId` property value matching `123`, and gets the extension data and the **displayName**, **id**, and **description** properties of the group.
+Apart from filtering by the **id** of the schema extension, you can also filter by the extension property values. The following example looks for the group that has the `bellowscollege_courses` extension with a `courseId` property value matching `123`, and gets the extension data and the **displayName**, **id**, and **description** properties of the group.
 
 ### Request
 
@@ -419,7 +424,7 @@ Apart from filtering by the **id** of the schema extension, you can also filter 
   "name": "schemaextensions-groups-getGroupSelectExtension"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId eq '123'&$select=displayName,id,description,graphlearn_courses
+GET https://graph.microsoft.com/v1.0/groups?$filter=bellowscollege_courses/courseId eq '123'&$select=displayName,id,description,bellowscollege_courses
 ```
 
 # [C#](#tab/csharp)
@@ -468,13 +473,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(displayName,id,description,graphlearn_courses)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(displayName,id,description,bellowscollege_courses)",
     "value": [
         {
             "displayName": "New Managers March 2024",
             "id": "8fb45944-4085-449f-b95d-f7dd74a1b081",
             "description": "New Managers training course for March 2024",
-            "graphlearn_courses": {
+            "bellowscollege_courses": {
                 "@odata.type": "#microsoft.graph.ComplexExtensionValue",
                 "courseType": "Hybrid",
                 "courseName": "New Managers",
@@ -487,25 +492,33 @@ Content-Type: application/json
 
 ## Step 6: Delete extension data and schema extension definition
 
-You can delete a schema extension definition if you no longer need it. If resource instances have the extension property applied, deleting the schema extension definition doesn't delete the extension data in the resource instances. Instead, the extension data is available but nolonger accessible. You can recreate the schema extension definition with the same configurato - if you used the verified domain for the schema extension **id** - to explicitly delete the extension data.
+You can delete a schema extension definition if you no longer need it. If resource instances have the extension property applied, deleting the schema extension definition doesn't delete the extension data in the resource instances. Instead, the extension data is available but no longer accessible. You can recreate the schema extension definition with the same configuration - if you used the verified domain for the schema extension **id** - to be able to delete the extension data.
 
-The following request deletes the `graphlearn_courses` schema extension property and its associated data from the group. The request returns a `204 No Content` response.
+The following request deletes the `bellowscollege_courses` schema extension property and its associated data from the group. The request returns a `204 No Content` response.
 
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-deleteExtensionProperty"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/8fb45944-4085-449f-b95d-f7dd74a1b081
 
 {
-    "graphlearn_courses": null
+    "bellowscollege_courses": null
 }
 ```
 
-The following request deletes the `graphlearn_courses` schema extension definition. The request returns a `204 No Content` response.
+The following request deletes the `bellowscollege_courses` schema extension definition. The request returns a `204 No Content` response.
 
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-deleteExtensionDefinition"
+}-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_courses
+DELETE https://graph.microsoft.com/v1.0/schemaExtensions/bellowscollege_courses
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](extensibility-overview.md)
 - [Add custom data to users using open extensions (preview)](extensibility-open-users.md)
