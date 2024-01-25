@@ -69,7 +69,7 @@ The preceding limits apply to the following resources:
 The limits listed in the following table apply to the following resources:
 
 - [callRecord](/graph/api/resources/callrecords-callrecord)
-- [participant](/graph/api/resources/callrecords-participant_v2)
+- [participant](/graph/api/resources/callrecords-participant)
 - [session](/graph/api/resources/callrecords-session)
 
 | Limit type      | Limit    |
