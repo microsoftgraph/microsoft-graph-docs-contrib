@@ -4491,12 +4491,12 @@ items:
               - name: Admin Microsoft 365 apps
                 href: resources/adminmicrosoft365apps.md
               - name: Installation options
-                href: resources/m365appsInstallationoptions.md
+                href: resources/m365appsinstallationoptions.md
                 items:
                   - name: Get
-                    href: api/m365AppsInstallationOptions-get.md
+                    href: api/m365appsinstallationoptions-get.md
                   - name: Update
-                    href: api/m365AppsInstallationOptions-update.md
+                    href: api/m365appsinstallationoptions-update.md
           - name: Service health and communications
             items:
               - name: Overview

@@ -16,6 +16,7 @@
           "concepts/sdks/snippets/python/**",
           "concepts/sdks/snippets/typescript/**",
           "concepts/includes/connecting-external-content/snippets/**",
+          "concepts/changelog-archive.md",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
