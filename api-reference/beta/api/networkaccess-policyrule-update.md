@@ -37,7 +37,7 @@ PATCH /networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
