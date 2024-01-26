@@ -1,6 +1,6 @@
 ---
 title: "relyingPartyDetailedSummary resource type"
-description: "Enables customers to get the summary of ADFS relying Parties Information on Daily/Weekly/Monthly."
+description: "Represents the summary of AD FS relying parties' information on daily, weekly, or monthly frequency."
 author: "gmcnamara-microsoft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-Enables customers to get the summary of ADFS relying Parties Information on Daily/Weekly/Monthly.
+Represents the summary of AD FS relying parties' information on daily, weekly, or monthly frequency.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -21,27 +19,25 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List relyingPartyDetailedSummary objects](../api/relyingpartydetailedsummary-list.md)|[relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) collection|Get a list of the [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) objects and their properties.|
-|[Get relyingPartyDetailedSummary](../api/relyingpartydetailedsummary-get.md)|[relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md)|Read the properties and relationships of a [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) object.|
-|[Update relyingPartyDetailedSummary](../api/relyingpartydetailedsummary-update.md)|[relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md)|Update the properties of a [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) object.|
-|[Delete relyingPartyDetailedSummary](../api/relyingpartydetailedsummary-delete.md)|None|Delete a [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) object.|
+|[reportRoot: getRelyingPartyDetailedSummary](../api/reportroot-getrelyingpartydetailedsummary.md)|  [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) collection|Get a summary of AD FS relying parties information.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|failedSignInCount|Int64|# of failed sign ins on AD FS in the period specified.|
-|id|String|Unique Identifier generated at API. Inherited from [entity](../resources/entity.md).|
-|migrationStatus|migrationStatus|Indication of whether we believe the app can be easily moved to AAD. The possible values are: `ready`, `needsReview`, `additionalStepsRequired`, `unknownFutureValue`.|
-|relyingPartyId|String|This identifier is used to identify the relying party to this Federation Service. It's used when issuing claims to the relying party.|
-|relyingPartyName|String|Name of website or other entity on the Internet that uses an identity provider to authenticate a user who wants to log in.|
+|failedSignInCount|Int64|Number of failed sign ins on AD FS in the period specified.<br/><br/> Supports `$orderby`, `$filter` (`eq`).|
+|id|String|Unique identifier for the report. Inherited from [entity](../resources/entity.md).|
+|migrationStatus|migrationStatus|Indicates whether the app can be easily moved to Entra ID. The possible values are: `ready`, `needsReview`, `additionalStepsRequired`, `unknownFutureValue`.<br/><br/> Supports `$orderby`, `$filter` (`eq`).|
+|migrationValidationDetails|[keyValuePair](../resources/keyvaluepair.md) collection|Specifies all the validations checks done on applications config details.|
+|relyingPartyId|String|Identifies the relying party to this federation service. It's used when issuing claims to the relying party.<br/><br/> Supports `$orderby`, `$filter` (`eq`).|
+|relyingPartyName|String|Name of the relying party's website or other entity on the Internet that uses an identity provider to authenticate a user who wants to log in.<br/><br/> Supports `$orderby`, `$filter` (`eq`).|
 |replyUrls|String collection|Specifies where the relying party expects to receive the token.|
-|serviceId|String|Uniquely identifies the AD forest.|
-|signInSuccessRate|Double|# of successful / (# Successful + #failed sign ins) on AD FS in the period specified.|
-|successfulSignInCount|Int64|# of successful sign ins on AD FS.|
-|totalSignInCount|Int64|# of successful + failed sign ins on AD FS in the period specified.|
-|uniqueUserCount|Int64|# of unique users that signed into the application. |
-<!--|migrationValidationDetails|[keyValuePair](../resources/intune-keyvaluepair.md) collection|**TODO: Add Description**|-->
+|serviceId|String|Uniquely identifies the Active Directory forest.<br/><br/> Supports `$orderby`, `$filter` (`eq`).|
+|signInSuccessRate|Double|Calculated as `Number of successful / (Number of successful + Number of failed sign ins)` or `successfulSignInCount / totalSignInCount` on AD FS in the period specified.<br/><br/> Supports `$orderby`, `$filter` (`eq`).|
+|successfulSignInCount|Int64|Number of successful sign ins on AD FS.<br/><br/> Supports `$orderby`, `$filter` (`eq`).|
+|totalSignInCount|Int64|Number of successful + failed sign ins on AD FS in the period specified.<br/><br/> Supports `$orderby`, `$filter` (`eq`).|
+|uniqueUserCount|Int64|Number of unique users that signed into the application.<br/><br/> Supports `$orderby`, `$filter` (`eq`).|
+
 
 ## Relationships
 None.

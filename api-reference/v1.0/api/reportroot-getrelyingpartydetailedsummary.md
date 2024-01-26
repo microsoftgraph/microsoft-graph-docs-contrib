@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getRelyingPartyDetailedSummary"
-description: "Get a summary of ADFS relying Parties Information."
+description: "Get a summary of AD FS relying parties information."
 author: "gmcnamara-microsoft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,8 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-
-Get a summary of ADFS relying Parties Information.
+Get a summary of AD FS relying parties information.
 
 ## Permissions
 
@@ -33,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /reports/getRelyingPartyDetailedSummary
+GET /reports/getRelyingPartyDetailedSummary(period='parameterValue')
 ```
 
 ## Function parameters
@@ -42,7 +41,7 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|period|String|Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D1, D7, D30. These values follow the format Dn where n represents the number of days over which the report is aggregated.|
+|period|String|Specifies the length of time over which the report is aggregated. The supported values are: D1, D7, D30. These values follow the format `Dn` where n represents the number of days over which the report is aggregated.|
 
 
 ## Request headers
@@ -90,28 +89,33 @@ Content-Type: application/json
 
 {
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.relyingPartyDetailedSummary",
-      "id": "String (identifier)",
-      "relyingPartyId": "String",
-      "serviceId": "String",
-      "relyingPartyName": "String",
-      "successfulSignInCount": "Integer",
-      "failedSignInCount": "Integer",
-      "totalSignInCount": "Integer",
-      "signInSuccessRate": "Double",
-      "uniqueUserCount": "Integer",
-      "migrationStatus": "String",
-      "migrationValidationDetails": [
         {
-          "@odata.type": "microsoft.graph.keyValuePair"
+            "@odata.type": "#microsoft.graph.relyingPartyDetailedSummary",
+            "id": "31b45f83-0f5c-40be-80af-02e918f3b55b",
+            "relyingPartyId": "https://customer.contoso.com/mgmt",
+            "serviceId": "4cce6fff-4ccc-41fe-8521-bce16ea521e9",
+            "relyingPartyName": "Contoso",
+            "successfulSignInCount": 0,
+            "failedSignInCount": 225,
+            "totalSignInCount": 225,
+            "signInSuccessRate": 0,
+            "uniqueUserCount": 1,
+            "migrationStatus": "ready",
+            "replyUrls": [
+                "https://adfshelp.microsoft.com/Contoso/tokenresponse"
+            ],
+            "migrationValidationDetails": [
+                {
+                    "name": "AdditionalWSFedEndpointCheckResult",
+                    "value": "{\"result\": 0, \"message\": \"No additional WS-Federation endpoints were found.\"}"
+                },
+                {
+                    "name": "AllowedAuthenticationClassReferencesCheckResult",
+                    "value": "{\"result\": 0, \"message\": \"AllowedAuthenticationClassReferences is not set up.\"}"
+                }
+            ]
         }
-      ],
-      "replyUrls": [
-        "String"
-      ]
-    }
-  ]
+    ]
 }
 ```
 

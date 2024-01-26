@@ -1,7 +1,7 @@
 ---
 title: "reportRoot resource type"
 description: "Represents a container for Microsoft Entra reporting resources."
-author: "gmcnamara-microsoft"
+author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

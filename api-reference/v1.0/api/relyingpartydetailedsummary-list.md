@@ -32,16 +32,11 @@ GET /reports/getRelyingPartyDetailedSummary(period='{period}')
 
 | Parameter | Description |
 |:----------|:----------|
-| period | Required. The supported values are: D1, D7, D30. These values follow the format Dn where n represents the number of days over which the report is aggregated.|
+| period | Required. The supported values are: D1, D7, D30. These values follow the format `Dn` where n represents the number of days over which the report is aggregated.|
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response.
-
-- You can use the `$filter` parameter to filter by relyingPartyId, migrationStatus and other attributes. For example, $filter= relyingPartyId eq 'identifier'.
-- You can use `$orderby`, `$top`, and `$skip` query parameters in any GET request.
-
-For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$orderby`, `$top`, and `$skip` OData query parameters to help customize the response. The default page size is 100 records and the maximum with `$top` is 500 records. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -64,7 +59,6 @@ If successful, this method returns a `200 OK` response code and the requested [r
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_relyingpartydetailedsummary"
@@ -92,28 +86,33 @@ Content-type: application/json
 
 {
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.relyingPartyDetailedSummary",
-      "id": "bff5a169-eeb4-5159-b7f6-c5bb9464a6ca",
-      "relyingPartyId": "String",
-      "serviceId": "String",
-      "relyingPartyName": "String",
-      "successfulSignInCount": "Integer",
-      "failedSignInCount": "Integer",
-      "totalSignInCount": "Integer",
-      "signInSuccessRate": "Double",
-      "uniqueUserCount": "Integer",
-      "migrationStatus": "String",
-      "migrationValidationDetails": [
         {
-          "@odata.type": "microsoft.graph.keyValuePair"
+            "@odata.type": "#microsoft.graph.relyingPartyDetailedSummary",
+            "id": "31b45f83-0f5c-40be-80af-02e918f3b55b",
+            "relyingPartyId": "https://customer.contoso.com/mgmt",
+            "serviceId": "4cce6fff-4ccc-41fe-8521-bce16ea521e9",
+            "relyingPartyName": "Contoso",
+            "successfulSignInCount": 0,
+            "failedSignInCount": 225,
+            "totalSignInCount": 225,
+            "signInSuccessRate": 0,
+            "uniqueUserCount": 1,
+            "migrationStatus": "ready",
+            "replyUrls": [
+                "https://adfshelp.microsoft.com/Contoso/tokenresponse"
+            ],
+            "migrationValidationDetails": [
+                {
+                    "name": "AdditionalWSFedEndpointCheckResult",
+                    "value": "{\"result\": 0, \"message\": \"No additional WS-Federation endpoints were found.\"}"
+                },
+                {
+                    "name": "AllowedAuthenticationClassReferencesCheckResult",
+                    "value": "{\"result\": 0, \"message\": \"AllowedAuthenticationClassReferences is not set up.\"}"
+                }
+            ]
         }
-      ],
-      "replyUrls": [
-        "String"
-      ]
-    }
-  ]
+    ]
 }
 ```
 
