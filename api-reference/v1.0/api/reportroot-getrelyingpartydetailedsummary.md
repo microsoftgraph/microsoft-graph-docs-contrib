@@ -39,6 +39,10 @@ GET /reports/getRelyingPartyDetailedSummary(period='parameterValue')
 In the request URL, provide the following query parameters with values.
 The following table lists the parameters that are required when you call this function.
 
+## Optional query parameters
+
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 |Parameter|Type|Description|
 |:---|:---|:---|
 |period|String|Specifies the length of time over which the report is aggregated. The supported values are: D1, D7, D30. These values follow the format `Dn` where n represents the number of days over which the report is aggregated.|
@@ -69,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/reports/getRelyingPartyDetailedSummary(period='parameterValue')
+GET https://graph.microsoft.com/v1.0/reports/getRelyingPartyDetailedSummary(period='D7')
 ```
 
 
