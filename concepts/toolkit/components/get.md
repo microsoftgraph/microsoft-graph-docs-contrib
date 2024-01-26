@@ -24,12 +24,12 @@ You can use several attributes to change the behavior of the component. The only
 | Attribute | Property  | Description |
 | --- | --- | --- |
 | resource | resource | The resource to get from Microsoft Graph (for example, `/me`). |
-| scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component and a supported provider ensure that the user has consented to at least one of the provided permissions. |
-| version | version | Optional API version to use when making the GET request. Default is `v1.0`.  |
-| max-pages | maxPages | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 will get all pages.  |
-| polling-rate | pollingRate | Optional number of milliseconds. When set, the component polls the request URI for updates in the defined interval. If using a delta query, polling will always query the delta API. The template will only refresh when the data changes. |
-| cache-enabled | cacheEnabled | Optional Boolean. When set, it indicates that the response from the resource will be cached. Override if `refresh()` is called or if `pollingRate` is in use. Default is `false`. |
-| cache-invalidation-period | cacheInvalidationPeriod | Optional number of milliseconds. When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period will be modified by this value. Default is `0` and will use the default invalidation period. |
+| scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component and a supported provider ensure that the user consents to at least one of the provided permissions. |
+| version | version | Optional API version to use when making the `GET` request. Default is `v1.0`.  |
+| max-pages | maxPages | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 retrieves all pages.  |
+| polling-rate | pollingRate | Optional number of milliseconds. When set, the component polls the request URI for updates in the defined interval. If using a delta query, polling always queries the delta API. The template only refreshes when the data changes. |
+| cache-enabled | cacheEnabled | Optional Boolean. When set, it indicates that the response from the resource is cached. Override if `refresh()` is called or if `pollingRate` is in use. Default is `false`. |
+| cache-invalidation-period | cacheInvalidationPeriod | Optional number of milliseconds. When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period modifies this value. Default is `0` and uses the default invalidation period. |
 | type | type | Optional type of the expected response. Default is `json`. Supports `json` or `image` (only be supported on endpoints ending with `/photo/value$`). |
 | N/A | response | Read-only response from Microsoft Graph if request was successful.  |
 | N/A |error| Read-only error from Microsoft Graph if request wasn't successful. |
@@ -38,7 +38,7 @@ You can use several attributes to change the behavior of the component. The only
 
 | Method | Description |
 | --- | --- |
-| refresh(force?:boolean) | Call the method to refresh the data. By default, the UI will only update if the data changes. Pass `true` to force the component to update.  |
+| refresh(force?: boolean) | Call the method to refresh the data. By default, the UI only updates if the data changes. Pass `true` to force the component to update.  |
 
 ## Events
 
@@ -58,14 +58,14 @@ The `mgt-get` component supports several [templates](../customize-components/tem
 | Data type | Data context | Description |
 | --- | --- | --- |
 | default | The response from Microsoft Graph. | The default template is required to render the data coming from Microsoft Graph. |
-| value | Data item from the returned `value` array | Use the `value` template instead of the `default` template when expecting the response from the graph to contain an array of items - such as **messages**, **files**, or **users**. The `value` template will automatically be repeated for each item returned by the resource. The `value` template will also start rendering the items as soon as they are ready (unlike the default template).|
-| error | The error from Microsoft Graph. | This template is used if there is an error making the request. |
+| value | Data item from the returned `value` array | Use the `value` template instead of the `default` template when expecting the response from the graph to contain an array of items - such as **messages**, **files**, or **users**. The `value` template is automatically repeated for each item returned by the resource. The `value` template also starts rendering the items as soon as they're ready (unlike the default template).|
+| error | The error from Microsoft Graph. | This template is used if there's an error making the request. |
 | loading | N/A | This template is used while the request is being made. |
 | no-data | N/A | This template is used when the request returned no data. |
 
 ## Microsoft Graph permissions
 
-Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. Microsoft Graph Toolkit will check that the current user has consented to at least one of the supplied `scopes`. For more information about permissions, see Microsoft Graph [permissions reference](../../permissions-reference.md).
+Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. Microsoft Graph Toolkit checks that the current user has consented to at least one of the supplied `scopes`. For more information about permissions, see Microsoft Graph [permissions reference](../../permissions-reference.md).
 
 ## Authentication
 
@@ -79,7 +79,7 @@ To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidation
 |-----------|-----------|-------|
 |`response`|Complete response retrieved from Microsoft Graph for the query specified in the `resource` property of `mgt-get`|
 
-See [Caching](../customize-components/cache.md) for more details.
+For more information, see [Caching](../customize-components/cache.md).
 
 ## Localization
 
