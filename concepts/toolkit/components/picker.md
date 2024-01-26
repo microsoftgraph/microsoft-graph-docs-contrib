@@ -28,10 +28,10 @@ You can use several attributes to change the behavior of the component. The requ
 | key-name                  | keyName                 | The key to be rendered in the picker (for example, `displayName`).                                                                                                                                                                    |
 | selected-value            | selectedValue           | Optional. The value to be set as the currently selected option in the picker. Must be present in the options provided from the Microsoft Graph query.                                                                                 |
 | scopes                    | scopes                  | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component and a supported provider ensure that the user has consented to at least one of the provided permissions.             |
-| version                   | version                 | Optional API version to use when making the GET request. Default is `v1.0`.                                                                                                                                                           |
-| max-pages                 | maxPages                | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 will get all pages.                                                                                                               |
-| cache-enabled             | cacheEnabled            | Optional Boolean. When set, it indicates that the response from the resource will be cached. Override if `refresh()` is called or if `pollingRate` is in use. Default is `false`.                                                     |
-| cache-invalidation-period | cacheInvalidationPeriod | Optional number of milliseconds. When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period will be modified by this value. Default is `0` and will use the default invalidation period. |
+| version                   | version                 | Optional API version to use when making the `GET` request. Default is `v1.0`.                                                                                                                                                           |
+| max-pages                 | maxPages                | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 retrieves all pages.                                                                                                               |
+| cache-enabled             | cacheEnabled            | Optional Boolean. When set, it indicates that the response from the resource is cached. Override if `refresh()` is called or if `pollingRate` is in use. Default is `false`.                                                     |
+| cache-invalidation-period | cacheInvalidationPeriod | Optional number of milliseconds. When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period modifies this value. Default is `0` and uses the default invalidation period. |
 | N/A                       | response                | Read-only response from Microsoft Graph if request was successful.                                                                                                                                                                    |
 | N/A                       | error                   | Read-only error from Microsoft Graph if request wasn't successful.                                                                                                                                                                    |
 
@@ -61,13 +61,13 @@ To learn more, see [styling components](../customize-components/style.md).
 
 | Method                  | Description                                                                                                                                 |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| refresh(force?:boolean) | Call the method to refresh the data. By default, the UI will only update if the data changes. Pass `true` to force the component to update. |
+| refresh(force?: boolean) | Call the method to refresh the data. By default, the UI only updates if the data changes. Pass `true` to force the component to update. |
 
 ## Events
 
 | Event              | When is it emitted                                                     | Custom data                                                                                                                                                                              | Cancelable | Bubbles | Works with custom template |
 | ------------------ | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------: | :-----: | :------------------------: |
-| `selectionChanged` | Fired when there is a change in the selected resource in the dropdown. | `{ response: any, error: any }`. The `response` property contains the response retrieved from Microsoft Graph. The `error` property contains information about the error if one occurred |     No     |   Yes   |            Yes             |
+| `selectionChanged` | Fired when there's a change in the selected resource in the dropdown. | `{ response: any, error: any }`. The `response` property contains the response retrieved from Microsoft Graph. The `error` property contains information about the error if one occurred |     No     |   Yes   |            Yes             |
 
 > [!TIP]
 > For more information about the data returned in the `response` property see the API reference of the API that you used in the `resource` property of the Picker component.
@@ -80,7 +80,7 @@ The `mgt-picker` component supports several [templates](../customize-components/
 
 | Data type | Data context                    | Description                                                         |
 | --------- | ------------------------------- | ------------------------------------------------------------------- |
-| error     | The error from Microsoft Graph. | This template is used if there is an error making the request. |
+| error     | The error from Microsoft Graph. | This template is used if there's an error making the request. |
 | loading   | N/A                             | This template is used while the request is being made.              |
 | no-data   | N/A                             | This template is used when the request returned no data.            |
 
@@ -104,7 +104,7 @@ The `mgt-picker` component supports several [templates](../customize-components/
 
 ## Microsoft Graph permissions
 
-Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. Microsoft Graph Toolkit will check that the current user has consented to at least one of the supplied `scopes`. For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
+Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. Microsoft Graph Toolkit checks that the current user has consented to at least one of the supplied `scopes`. For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
 
 ## Authentication
 

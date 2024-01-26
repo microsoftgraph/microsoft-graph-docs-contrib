@@ -28,7 +28,7 @@ yarn add @microsoft/mgt-element @microsoft/mgt-components @microsoft/mgt-sharepo
 
 ## Usage
 
-When building SharePoint Framework web parts and extensions, reference the Microsoft Graph Toolkit `customElementsHelper`, `Provider` and `SharePointProvider` from the `@microsoft/mgt-element` and `@microsoft/mgt-sharepoint-provider`. If you are not using React then you should also import the component registration functions from `@microsoft/mgt-components` packages.
+When building SharePoint Framework web parts and extensions, reference the Microsoft Graph Toolkit `customElementsHelper`, `Provider` and `SharePointProvider` from the `@microsoft/mgt-element` and `@microsoft/mgt-sharepoint-provider`. If you aren't using React, then you should also import the component registration functions from `@microsoft/mgt-components` packages.
 
 ### For non-React based solutions
 
@@ -61,7 +61,7 @@ export default class MgtWebPart extends BaseClientSideWebPart<IMgtWebPartProps> 
 
 ### React
 
-If you're building a web part using React, you can use the `@microsoft/mgt-react` package and skip the manual registration of components. However, you will need to ensure that you lazy load your React component from the web part to make use of disambiguation.
+If you're building a web part using React, you can use the `@microsoft/mgt-react` package and skip the manual registration of components. However, ensure that you lazy load your React component from the web part to make use of disambiguation.
 
 ```ts
 // [...] trimmed for brevity

@@ -7,7 +7,7 @@ author: sebastienlevert
 
 # Build a SharePoint web part with the Microsoft Graph Toolkit
 
-This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint client-side web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Getting started involves the following steps:
+This article covers how to use Microsoft Graph Toolkit components in a [SharePoint client-side web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Getting started involves the following steps:
 
 1. Set up your development environment.
 1. Create your web part project.
@@ -28,14 +28,14 @@ Follow the steps to [Set up your SharePoint Framework development environment](/
 
 ## Create your web part project
 
-Follow the directions [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) but when asked what template you would like to use choose React
+Follow the directions [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) but when asked what template you would like to use, choose React.
 
 > [!IMPORTANT]
 > You must choose React when selecting your framework when using `yo @microsoft/sharepoint`
 
 ## Add the Microsoft Graph Toolkit packages
 
-The Microsoft Graph Toolkit publishes multiple packages that are needed to build a SharePoint Framework web part, installing the `@microsoft/mgt-element`, `@microsoft/mgt-react`, `@microsoft/mgt-sharepoint-provider` and `@microsoft/mgt-spfx-utils` packages will install the necessary dependencies.
+The Microsoft Graph Toolkit publishes multiple packages that are needed to build a SharePoint Framework web part, installing the `@microsoft/mgt-element`, `@microsoft/mgt-react`, `@microsoft/mgt-sharepoint-provider` and `@microsoft/mgt-spfx-utils` packages install the necessary dependencies.
 
 ```bash
 npm install @microsoft/mgt-element @microsoft/mgt-react @microsoft/mgt-sharepoint-provider @microsoft/mgt-spfx-utils
@@ -43,7 +43,7 @@ npm install @microsoft/mgt-element @microsoft/mgt-react @microsoft/mgt-sharepoin
 
 ## Add the SharePoint Provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). SharePoint web parts always exist in an authenticated context because the user has already had to sign in in order to get to the page that hosts your web part. Use this context to initialize the [SharePoint provider](../providers/sharepoint.md).
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). SharePoint web parts always exist in an authenticated context because the user is authenticated in order to get to the page that hosts your web part. Use this context to initialize the [SharePoint provider](../providers/sharepoint.md).
 
 First, add the provider to your web part. Locate the `src\webparts\<your-project>\<your-web-part>.ts` file in your project folder, and add the following line to the top of your file, right below the existing `import` statements:
 
@@ -64,7 +64,7 @@ protected async onInit() {
 
 ## Set up disambiguation
 
-To ensure that your web part will work if there are multiple web part solutions using Microsoft Graph Toolkit in a single page you must use disambiguation. For more background on this please read the [main disambiguation](../customize-components/disambiguation.md) article.
+To ensure that your web part works if there are multiple web part solutions using Microsoft Graph Toolkit in a single page, you must use disambiguation. For more background on this, read the [main disambiguation](../customize-components/disambiguation.md) article.
 
 First update your imports from `@microsoft/mgt-element` and add one for the `lazyLoadComponent` helper.
 
@@ -73,7 +73,7 @@ import { Providers, customElementHelper } from "@microsoft/mgt-element";
 import { lazyLoadComponent } from "@microsoft/mgt-spfx-utils";
 ```
 
-Next update the `onInit()` method of the root web part to set up disambiguation. The string used for disambiguation be unique to your SharePoint Framework solution:
+Next update the `onInit()` method of the root web part to set up disambiguation. The string used for disambiguation must be unique to your SharePoint Framework solution:
 
 ```ts
 protected async onInit(): Promise<void> {
@@ -170,7 +170,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
 
 ## Add components
 
-And simply add the components to React component. Locate and open the `src\webparts\<your-project>\components\<your-component>.tsx` file and add the import for the component you wish to use, in this case the `Person` component, and then update the `render()` method to use the Person component. Now your component should look like this:
+Add the components to the React component. Locate and open the `src\webparts\<your-project>\components\<your-component>.tsx` file and add the import for the component you wish to use, in this case the `Person` component, and then update the `render()` method to use the Person component. Now your component should look like this:
 
 ```tsx
 import * as React from 'react';
@@ -213,7 +213,7 @@ npm install @microsoft/mgt-element @microsoft/mgt-components @microsoft/mgt-shar
 
 ## Add the SharePoint Provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). SharePoint web parts always exist in an authenticated context because the user has already had to sign in in order to get to the page that hosts your web part. Use this context to initialize the [SharePoint provider](../providers/sharepoint.md).
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). SharePoint web parts always exist in an authenticated context because the user is authenticated in order to get to the page that hosts your web part. Use this context to initialize the [SharePoint provider](../providers/sharepoint.md).
 
 First, add the provider to your web part. Locate the `src\webparts\<your-project>\<your-web-part>.ts` file in your project folder, and add the following line to the top of your file, right below the existing `import` statements:
 
@@ -234,7 +234,7 @@ protected async onInit() {
 
 ## Set up disambiguation
 
-To ensure that your web part will work if there are multiple web part solutions using Microsoft Graph Toolkit in a single page you must use disambiguation. For more background on this please read the [main disambiguation](../customize-components/disambiguation.md) article.
+To ensure that your web part works if there are multiple web part solutions using Microsoft Graph Toolkit in a single page, you must use disambiguation. For more background on this, read the [main disambiguation](../customize-components/disambiguation.md) article.
 
 First update your imports from `@microsoft/mgt-element`
 
@@ -242,7 +242,7 @@ First update your imports from `@microsoft/mgt-element`
 import { Providers, customElementHelper } from '@microsoft/mgt-element';
 ```
 
-Next update the `onInit()` method to set up disambiguation. The string used for disambiguation be unique to your SharePoint Framework solution:
+Next update the `onInit()` method to set up disambiguation. The string used for disambiguation must be unique to your SharePoint Framework solution:
 
 ```ts
 protected async onInit() {
@@ -276,7 +276,7 @@ protected async onInit() {
 }
 ```
 
-And simply add the components to the HTML inside of the `render()` method, and the components will use the SharePoint context to access Microsoft Graph. For example, to add the [Person component](../components/person.md), your code will look like:
+Add the components to the HTML inside of the `render()` method, and the components use the SharePoint context to access Microsoft Graph. For example, to add the [Person component](../components/person.md), your code looks like:
 
 ```ts
 public render(): void {
@@ -298,13 +298,13 @@ To add the permissions to your solution package, locate and open the `config\pac
 "isDomainIsolated": false,
 ```
 
-Just below that line, add the following:
+Just below that line, add the following line:
 
 ```json
 "webApiPermissionRequests":[],
 ```
 
-Determine which Microsoft Graph API permissions you need depending on the components you're using. Each component's documentation page provides a list of the permissions that component requires. You will need to add each permission required to `webApiPermissionRequests`. For example, if you're using the Person component and the Agenda component, your `webApiPermissionRequests` might look like:
+Determine which Microsoft Graph API permissions you need to depend on the components you're using. Each component's documentation page provides a list of the permissions that component requires. You'll need to add each permission required to `webApiPermissionRequests`. For example, if you're using the Person component and the Agenda component, your `webApiPermissionRequests` might look like:
 
 ```json
 "webApiPermissionRequests": [
@@ -321,7 +321,7 @@ Determine which Microsoft Graph API permissions you need depending on the compon
 
 ## Build and deploy your web part
 
-Now, you will build your application and deploy it to SharePoint. Build your application by running the following commands:
+Now, you'll build your application and deploy it to SharePoint. Build your application by running the following commands:
 
 ```bash
 gulp build
@@ -329,7 +329,7 @@ gulp bundle
 gulp package-solution
 ```
 
-In the `sharepoint/solution` folder, there will be a new `.sppkg` file. You will need to upload this file to your SharePoint Online App Catalog. Go to the [More features page of your SharePoint admin center](https://admin.microsoft.com/sharepoint?page=classicfeatures&modern=true). Select **Open** under **Apps**, then click **App Catalog**, and **Distribute apps for SharePoint**. Upload your `.sppkg` file, and click **Deploy**.
+In the `sharepoint/solution` folder, there is a new `.sppkg` file. You need to upload this file to your SharePoint Online App Catalog. Go to the [More features page of your SharePoint admin center](https://admin.microsoft.com/sharepoint?page=classicfeatures&modern=true). Select **Open** under **Apps**, then select **App Catalog**, and **Distribute apps for SharePoint**. Upload your `.sppkg` file, and select **Deploy**.
 
 Next, you need to approve the permissions as an administrator.
 
@@ -337,7 +337,7 @@ Go to your **SharePoint Admin center**. In the left-hand navigation, select **Ad
 
 ## Test your web part
 
-You're now ready to add your web part to a SharePoint page and test it out. You will need to use the hosted workbench to test web parts that use the Microsoft Graph Toolkit because the components need the authenticated context in order to call Microsoft Graph. You can find your hosted workbench at **https://<YOUR_TENANT>.sharepoint.com/\_layouts/15/workbench.aspx**.
+You're now ready to add your web part to a SharePoint page and test it out. You'll need to use the hosted workbench to test web parts that use the Microsoft Graph Toolkit because the components need the authenticated context in order to call Microsoft Graph. You can find your hosted workbench at **https://<YOUR_TENANT>.sharepoint.com/\_layouts/15/workbench.aspx**.
 
 Open the `config\serve.json` file in your project and replace the value of `initialPage` with the URL for your hosted workbench:
 
@@ -351,7 +351,7 @@ Save the file and then run the following command in the console to build and pre
 gulp serve
 ```
 
-Your hosted workbench will automatically open in your browser. Add your web part to the page and you should see your web part with the Microsoft Graph Toolkit components in action! As long as the gulp serve command is still running in your console, you can continue to make edits to your code and then just refresh your browser to see your changes.
+Your hosted workbench automatically opens in your browser. Add your web part to the page and you should see your web part with the Microsoft Graph Toolkit components in action! As long as the gulp serve command is still running in your console, you can continue to make edits to your code and then just refresh your browser to see your changes.
 
 ## Next Steps
 
