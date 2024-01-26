@@ -51,7 +51,6 @@ Here's an example of how to call this API.
 ##### Request
 Here's an example of the request.
 
-# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -61,16 +60,6 @@ Here's an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=2)
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/workbookrange-columnsafter-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/workbookrange-columnsafter-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 Here's an example of the response. Note: The response object shown here might be shortened for readability.

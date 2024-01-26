@@ -38,6 +38,13 @@ One of the following permissions is required to call this API. To learn more, in
 POST /chats/{chat-id}/installedApps/{app-installation-id}/upgrade
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
 ## Request body
 
 In the request body, supply a JSON representation of the parameters.
