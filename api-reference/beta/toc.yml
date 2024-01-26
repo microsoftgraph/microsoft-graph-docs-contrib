@@ -15880,8 +15880,8 @@ items:
                     - name: Relying party detailed summary
                       href: resources/relyingpartydetailedsummary.md
                       items:
-                        - name: List
-                          href: api/relyingpartydetailedsummary-list.md
+                        - name: Get relying party detailed dummary
+                          href: api/reportroot-getrelyingpartydetailedsummary.md
                 - name: Application credential activity
                   href: resources/appcredentialsigninactivity.md
                   items:

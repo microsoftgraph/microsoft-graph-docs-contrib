@@ -19,7 +19,7 @@ Represents a relying party configured with Active Directory Federation Services 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/relyingpartydetailedsummary-list.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | Retrieve a list of **relyingPartyDetailedSummary** objects. |
+|[List relyingPartyDetailedSummary](../api/reportroot-getrelyingpartydetailedsummary.md)|  [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) collection|Get a summary of AD FS relying parties information.|
 
 
 ## Properties

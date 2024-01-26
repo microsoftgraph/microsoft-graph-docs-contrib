@@ -1,19 +1,19 @@
 ---
-title: "reportRoot: getRelyingPartyDetailedSummary"
-description: "Get a summary of AD FS relying parties information."
-author: "gmcnamara-microsoft"
+title: "List relyingPartyDetailedSummary"
+description: "Retrieve a list of relyingPartyDetailedSummary objects."
 ms.localizationpriority: medium
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
-doc_type: apiPageType
+doc_type: "apiPageType"
 ---
 
-# reportRoot: getRelyingPartyDetailedSummary
+# List relyingPartyDetailedSummary
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a summary of AD FS relying parties information.
+Retrieve a list of **relyingPartyDetailedSummary** objects.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -21,8 +21,8 @@ Get a summary of AD FS relying parties information.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "reportroot-getrelyingpartydetailedsummary-permissions" } -->
-[!INCLUDE [permissions-table](../includes/permissions/reportroot-getrelyingpartydetailedsummary-permissions.md)]
+<!-- { "blockType": "permissions", "name": "relyingpartydetailedsummary_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/relyingpartydetailedsummary-list-permissions.md)]
 
 ## HTTP request
 
@@ -31,18 +31,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /reports/getRelyingPartyDetailedSummary(period='{period}')
 ```
-
 ## Function parameters
-In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
 
-|Parameter|Type|Description|
-|:---|:---|:---|
-|period|String|Specifies the length of time over which the report is aggregated. The supported values are: D1, D7, D30. These values follow the format `Dn` where n represents the number of days over which the report is aggregated.|
+| Parameter | Description |
+|:----------|:----------|
+| period | Required. The supported values are: D1, D7, D30. These values follow the format Dn where n represents the number of days over which the report is aggregated.|
 
 ## Optional query parameters
 
-This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response.
+
+- You can use the `$filter` parameter to filter by relyingPartyId, migrationStatus and other attributes. For example, $filter= relyingPartyId eq 'identifier'.
+- You can use `$orderby`, `$top`, and `$skip` query parameters in any GET request.
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -68,11 +70,11 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "reportrootthis.getrelyingpartydetailedsummary"
+  "name": "get_relyingpartydetailedsummary"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(period='D7')
+GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(period='period_value')
 ```
 
 # [C#](#tab/csharp)
@@ -148,14 +150,16 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get relyingPartyDetailedSummary",
+  "description": "reportRoot: getRelyingPartyDetailedSummary",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+      "Error: reportrootthis.getrelyingpartydetailedsummary/container/signInSuccessRate:
+            Expected type Double but actual was Int64. Property: signInSuccessRate, actual value: '0'"
+  ]
 }-->
 
 
