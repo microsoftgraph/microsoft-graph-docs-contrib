@@ -34,7 +34,7 @@ You can use several attributes to change the behavior of the component. The only
 | Attribute | Property  | Description |
 | --- | --- | --- |
 | resource | resource | The resource to get from Microsoft Graph (for example, `/me`). |
-| scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component uses these scopes (with a supported provider) to ensure that the user has consented to the right permission. |
+| scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component and a supported provider ensure that the user has consented to at least one of the provided permissions. |
 | version | version | Optional API version to use when making the GET request. Default is `v1.0`.  |
 | max-pages | maxPages | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 will get all pages.  |
 | polling-rate | pollingRate | Optional number of milliseconds. When set, the component polls the request URI for updates in the defined interval. If using a delta query, polling will always query the delta API. The template will only refresh when the data changes. |
@@ -75,7 +75,7 @@ The `mgt-get` component supports several [templates](../customize-components/tem
 
 ## Microsoft Graph permissions
 
-Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. For more information about permissions, see Microsoft Graph [permissions reference](../../permissions-reference.md).
+Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. Microsoft Graph Toolkit will check that the current user has consented to at least one of the supplied `scopes`. For more information about permissions, see Microsoft Graph [permissions reference](../../permissions-reference.md).
 
 ## Authentication
 

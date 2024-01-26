@@ -142,11 +142,13 @@ For more information about handling events, see [events](../customize-components
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions.
+This component uses the following Microsoft Graph APIs, for each API call one of the listed permissions is required.
 
-| Configuration | Permission     | API                                                       |
-| ------------- | -------------- | --------------------------------------------------------- |
-| default       | Calendars.Read | [/me/calendarview](/graph/api/calendar-list-calendarview) |
+| Configuration               | Permission     | API                                                       |
+| -------------               | -------------- | --------------------------------------------------------- |
+| default                     | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite | [/me/calendarview](/graph/api/calendar-list-calendarview) |
+| `group-id` specified        | Group.Read.All, Group.ReadWrite.All | [/groups/{groupId}/calendar/calendarview](/graph/api/group-list-calendarview) |
+| `event-query` specified     | as optionally supplied in the `event-query` | as supplied in the `event-query` |
 
 The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the permission to the end of the string, delimited by `|`.
 

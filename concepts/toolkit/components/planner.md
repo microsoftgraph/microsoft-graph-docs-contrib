@@ -171,36 +171,35 @@ For more information about handling events, see [events](../customize-components
 
 ## Templates
 
-The `tasks` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` property to one of the following values:
+The `planner` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` property to one of the following values:
 
 | Data type    | Data context                | Description                                        |
 | ------------ | --------------------------- | -------------------------------------------------- |
 | task         | task: a planner task object | replaces the whole default task.                   |
 | task-details | task: a planner task object | template replaces the details section of the task. |
 
-The following example defines a template for the tasks component.
+The following example defines a template for the planner component.
 
 ```html
-<mgt-tasks>
+<mgt-planner>
   <template data-type="task-details">
     <div>Owner: {{task.owner}}</div>
     <div>Importance Level: {{task.importance}}</div>
   </template>
-</mgt-tasks>
+</mgt-planner>
 ```
 
 ## Microsoft Graph permissions
 
-This control uses the following Microsoft Graph APIs and permissions.
+This control uses the following Microsoft Graph APIs and permissions. For each API called the user must have at least one of the listed permissions.
 
-| Configuration                                                                 | Permission          | API                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ----------------------------------------------------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| default behavior                                                              | Group.Read.All      | [/me/planner/plans](/graph/api/planneruser-list-plans?tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?tabs=http)                                                                                                                                                                                                 |
-| `groupId` set                                                                 | Group.Read.All      | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans?tabs=http), [/planner/plans/${planId}/buckets](/graph/api/planner-list-buckets), [/planner/buckets/${bucketId}/tasks](/graph/api/planner-list-buckets)                                                                                                                                                                                                          |
-| `targetId` set                                                                | Group.Read.All      | [/planner/plans/${planId}](/graph/api/plannerplan-get?tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?tabs=http)                                                                                                                                                                                                 |
-| create, update or delete task                                                 | Group.ReadWrite.All | [/planner/tasks](/graph/api/planner-post-tasks?tabs=http)                                                                                                                                                                                                                                                                                                                                                                              |
-
-Fetching and reading tasks with the `mgt-planner` component requires the Groups.Read.All permission. Adding, updating, or removing tasks requires the Groups.ReadWrite.All permission.
+| Configuration                                                                 | Permission                                                            | API                                                                                                                                                                                                                         |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| in all configurations                                                         | User.Read, User.ReadWrite                                             | [/me](/graph/api/user-get)                                                                                                                                                                                                  |
+| default behavior                                                              | Tasks.Read, Group.Read.All, Tasks.ReadWrite, Group.ReadWrite.All      | [/me/planner/plans](/graph/api/planneruser-list-plans), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerbucket-list-tasks)                  |
+| `groupId` set                                                                 | Tasks.Read, Group.Read.All, Tasks.ReadWrite, Group.ReadWrite.All      | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans), [/planner/plans/${planId}/buckets](/graph/api/planner-list-buckets), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerbucket-list-tasks)     |
+| `targetId` set                                                                | Tasks.Read, Group.Read.All, Tasks.ReadWrite, Group.ReadWrite.All      | [/planner/plans/${planId}](/graph/api/plannerplan-get), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerbucket-list-tasks)                  |
+| create, update or delete task                                                 | Tasks.ReadWrite, Group.ReadWrite.All                                  | [POST /planner/tasks](/graph/api/planner-post-tasks), [PATCH /planner/tasks/${taskId}](/graph/api/plannertask-update), [DELETE /planner/tasks/${taskId}](/graph/api/plannertask-delete)                                     |
 
 ### Subcomponents
 

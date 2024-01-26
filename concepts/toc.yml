@@ -282,6 +282,8 @@ items:
               href: toolkit/customize-components/templates.md
             - name: Disambiguation of components
               href: toolkit/customize-components/disambiguation.md
+        - name: Permissions
+          href: toolkit/permissions.md
         - name: Upgrading to v3
           href: toolkit/upgrade.md
   - name: Services and features

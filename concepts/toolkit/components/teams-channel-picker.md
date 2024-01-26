@@ -129,12 +129,13 @@ The following example shows how to use the `error` template.
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions by default.
+This component uses the following Microsoft Graph APIs and permissions by default. For each API called the user must have at least one of the listed permissions.
 
-| API                                                 | Permission            |
-| --------------------------------------------------- | --------------------- |
-| [/me/joinedTeams](/graph/api/user-list-joinedteams) | Team.ReadBasic.All    |
-| [/teams/${id}/channels](/graph/api/channel-list)    | Channel.ReadBasic.All |
+| Configuration | Permission                                                                                                | API                                                 |
+| ------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| default       | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All  | [/me/joinedTeams](/graph/api/user-list-joinedteams)           |
+| default       | Team.ReadBasic.All	TeamSettings.Read.All, TeamSettings.ReadWrite.All                                     | [/teams/${teamId}/photo/$value](/graph/api/profilephoto-get)  |
+| default       | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All                            | [/teams/${id}/channels](/graph/api/channel-list)              |
 
 ## Authentication
 
