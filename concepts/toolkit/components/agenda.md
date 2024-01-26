@@ -15,15 +15,15 @@ The following example shows the signed-in user's calendar events displayed using
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-agenda-html--agenda&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda-html--agenda&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-agenda-html--agenda&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-agenda-html--agenda&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-agenda-react--agenda&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda-react--agenda&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-agenda-react--agenda&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-agenda-react--agenda&source=docs).
 
 ---
 

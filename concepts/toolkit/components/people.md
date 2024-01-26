@@ -17,15 +17,15 @@ The following example shows a group of people displayed using the `mgt-people` c
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-people-html--people&source=docs" height="350"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-html--people&source=docs" height="350"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-people-html--people&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-people-html--people&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-people-react--people&source=docs" height="350"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-react--people&source=docs" height="350"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-people-react--people&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-people-react--people&source=docs).
 
 ---
 

@@ -15,15 +15,15 @@ The following example shows the `mgt-people-picker` component. Start searching f
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-people-picker-html--people-picker&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker-html--people-picker&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-people-picker-html--people-picker&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-people-picker-html--people-picker&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-people-picker-react--people-picker&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker-react--people-picker&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-people-picker-react--people-picker&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-people-picker-react--people-picker&source=docs).
 
 ---
 

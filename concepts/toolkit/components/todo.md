@@ -15,15 +15,15 @@ The following example displays the signed-in user's Microsoft To Do tasks using 
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-todo-html--todos&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo-html--todos&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-todo-html--todos&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-todo-html--todos&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-todo-react--todos&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo-react--todos&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-todo-react--todos&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-todo-react--todos&source=docs).
 
 ---
 

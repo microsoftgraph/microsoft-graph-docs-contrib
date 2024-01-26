@@ -17,15 +17,15 @@ The following example shows how the theme toggle sets the light or dark mode bas
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-theme-toggle-html--user-preference-driven&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-theme-toggle-html--user-preference-driven&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-theme-toggle-html--user-preference-driven&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-theme-toggle-html--user-preference-driven&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-theme-toggle-react--user-preference-driven&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-theme-toggle-react--user-preference-driven&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-theme-toggle-react--user-preference-driven&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-theme-toggle-react--user-preference-driven&source=docs).
 
 ---
 

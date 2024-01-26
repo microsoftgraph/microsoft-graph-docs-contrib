@@ -15,15 +15,15 @@ The following example shows the use of the `mgt-picker` component to select a ta
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-picker-html--picker&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-picker-html--picker&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-picker-html--picker&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-picker-html--picker&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-picker-react--picker&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-picker-react--picker&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-picker-react--picker&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-picker-react--picker&source=docs).
 
 ---
 

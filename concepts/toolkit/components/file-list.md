@@ -15,15 +15,15 @@ The following example displays a file using the `mgt-file-list` component. You c
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-file-list-html--file-list&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-list-html--file-list&source=docs" height="500"></iframe>
  
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-file-list-html--file-list&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-list-html--file-list&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=components-mgt-file-list-react--file-list&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-list-react--file-list&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/components-mgt-file-list-react--file-list&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-list-react--file-list&source=docs).
 
 ---
 

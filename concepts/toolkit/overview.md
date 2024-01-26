@@ -13,15 +13,15 @@ Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application
 
 # [HTML](#tab/html)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=samples-embed--login-to-show-agenda&source=docs&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=samples-embed--login-to-show-agenda&source=docs&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/samples-embed--login-to-show-agenda&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/samples-embed--login-to-show-agenda&source=docs).
 
 # [React](#tab/react)
 
-<iframe src="https://mgt.dev/next/iframe.html?id=samples-embed--login-to-show-agenda-react&source=docs&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=samples-embed--login-to-show-agenda-react&source=docs&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/next/?path=/story/samples-embed--login-to-show-agenda-react&source=docs).
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/samples-embed--login-to-show-agenda-react&source=docs).
 
 ---
 
