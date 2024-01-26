@@ -295,179 +295,27 @@
         {
             "ChangeList": [
                 {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "default",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `default` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "unknownFutureValue",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `unknownFutureValue` member to the **cloudPcProvisioningPolicyImageType** enumeration.",
+                    "Target": "cloudPcProvisioningPolicyImageType"
                 },
                 {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "australia",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `australia` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "canada",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `canada` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "usCentral",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `usCentral` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "usEast",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `usEast` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "usWest",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `usWest` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "france",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `france` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "germany",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `germany` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "europeUnion",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `europeUnion` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "unitedKingdom",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `unitedKingdom` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "japan",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `japan` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "asia",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `asia` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "india",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `india` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "southAmerica",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `southAmerica` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "euap",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `euap` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "usGovernment",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `usGovernment` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "usGovernmentDOD",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `usGovernmentDOD` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "unknownFutureValue",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `unknownFutureValue` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "norway",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `norway` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "switzerland",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `switzerland` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
-                },
-                {
-                  "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                  "ApiChange": "Member",
-                  "ChangedApiName": "southKorea",
-                  "ChangeType": "Addition",
-                  "Description": "Added the `southKorea` member to the **cloudPcRegionGroup** enumeration.",
-                  "Target": "cloudPcRegionGroup"
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcRestorePointFrequencyType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcRestorePointFrequencyType** enumeration type.",
+                    "Target": "cloudPcRestorePointFrequencyType"
                 },
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
                     "ApiChange": "Property",
                     "ChangedApiName": "windowsSetting",
                     "ChangeType": "Addition",
-                    "Description": "Added the new `windowsSetting` property to the **cloudPcProvisioningPolicy** in order to replace old property `windowsSettings`.",
+                    "Description": "Added the **windowsSetting** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
                     "Target": "cloudPcProvisioningPolicy"
                 },
                 {
@@ -475,23 +323,23 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "windowsSettings",
                     "ChangeType": "Deprecation",
-                    "Description": "Deprecated the `windowsSettings` property. Goind forward, use the new `windowsSetting` property.",
+                    "Description": "Deprecated the **windowsSettings** property of the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource. The **windowsSettings** property will stop returning data on January 31, 2024. Going forward, use the **windowsSetting** property.",
                     "Target": "cloudPcProvisioningPolicy"
-                },
-                {
-                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                    "ApiChange": "ComplexType",
-                    "ChangedApiName": "cloudPcWindowsSetting",
-                    "ChangeType": "Addition",
-                    "Description": "Added new ComplexType `cloudPcWindowsSetting`",
-                    "Target": "cloudPcWindowsSetting"
                 },
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
                     "ApiChange": "Property",
                     "ChangedApiName": "domainJoinType",
                     "ChangeType": "Addition",
-                    "Description": "Added new property `domainJoinType` to `cloudPcDomainJoinConfiguration`",
+                    "Description": "Added the **domainJoinType** property to the [cloudPcDomainJoinConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcDomainJoinConfiguration"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "type",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **type** property of the [cloudPcDomainJoinConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource. The **type** property will stop returning data on January 31, 2024. Going forward, use the **domainJoinType** property.",
                     "Target": "cloudPcDomainJoinConfiguration"
                 },
                 {
@@ -499,31 +347,23 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "managedType",
                     "ChangeType": "Addition",
-                    "Description": "Added new property `managedType` to `microsoftManagedDesktop`",
+                    "Description": "Added the **managedType** property to the [microsoftManagedDesktop](https://learn.microsoft.com/en-us/graph/api/resources/microsoftManagedDesktop?view=graph-rest-beta) resource.",
                     "Target": "microsoftManagedDesktop"
                 },
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "unknownFutureValue",
-                    "ChangeType": "Addition",
-                    "Description": "Added new member `unknownFutureValue` to `cloudPcProvisioningPolicyImageType`",
-                    "Target": "cloudPcProvisioningPolicyImageType"
-                },
-                {
-                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                    "ApiChange": "EnumType",
-                    "ChangedApiName": "cloudPcRestorePointFrequencyType",
-                    "ChangeType": "Addition",
-                    "Description": "Added new EnumType cloudPcRestorePointFrequencyType",
-                    "Target": "cloudPcRestorePointFrequencyType"
+                    "ApiChange": "Property",
+                    "ChangedApiName": "type",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **type** property of the [microsoftManagedDesktop](https://learn.microsoft.com/en-us/graph/api/resources/microsoftManagedDesktop?view=graph-rest-beta) resource. The **type** property will stop returning data on January 31, 2024. Going forward, use the **managedType** property.",
+                    "Target": "microsoftManagedDesktop"
                 },
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
                     "ApiChange": "Property",
                     "ChangedApiName": "frequencyType",
                     "ChangeType": "Addition",
-                    "Description": "Added the new `frequencyType` property to the **cloudPcRestorePointSetting** in order to replace old property `frequencyInHours`.",
+                    "Description": "Added the **frequencyType** property to the [cloudPcRestorePointSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcRestorePointSetting?view=graph-rest-beta) resource.",
                     "Target": "cloudPcRestorePointSetting"
                 },
                 {
@@ -531,14 +371,22 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "frequencyInHours",
                     "ChangeType": "Deprecation",
-                    "Description": "Deprecated the `frequencyInHours` property. Goind forward, use the new `frequencyType` property.",
+                    "Description": "Deprecated the **frequencyInHours** property of the [cloudPcRestorePointSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcRestorePointSetting?view=graph-rest-beta) resource. The **frequencyInHours** property will stop returning data on January 31, 2024. Going forward, use the **frequencyType** property.",
                     "Target": "cloudPcRestorePointSetting"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcWindowsSetting",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcWindowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcWindowsSetting?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcWindowsSetting"
                 }
             ],
             "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "2023-12-04T06:58:17.7596296Z",
+            "CreatedDateTime": "2024-01-30T06:58:17.7596296Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
