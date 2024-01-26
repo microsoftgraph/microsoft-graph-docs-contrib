@@ -32,7 +32,7 @@ To complete these instructions, you need the following resources and privileges:
 - You'll run the requests in this article as a user. You must complete the following steps:
     - Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
     - In the app you've signed in to, consent to the *Application.Read.All* and *AppRoleAssignment.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
-    - Get the object ID of the client service principal to which you'll grant app roles. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`. In the Microsoft Entra admin center, navigate to **Identity** > expand **Applications** > select **Enterprise applications** > select **App applications** tab and find the client service principal. Select it and on the **Overview** page, copy the Object ID value.
+    - Get the object ID of the client service principal to which you'll grant app roles. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`. In the Microsoft Entra admin center, go to **Identity** > **Applications** > **Enterprise applications** > **App applications** to find the client service principal. Select it and on the **Overview** page, copy the Object ID value.
 
 <!--
 > [!CAUTION]
