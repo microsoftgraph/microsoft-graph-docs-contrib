@@ -131,7 +131,7 @@ For more information about handling events, see [events](../customize-components
 
 ## Templates
 
-The `mgt-person` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
+The `mgt-person` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` to one of the following values:
 
 | Data type | Data context | Description |
 | --------- | ------------ | ----------- |

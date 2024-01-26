@@ -146,7 +146,7 @@ This control uses the following Microsoft Graph APIs and permissions. For each A
 
 ## Templates
 
-The `mgt-file` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
+The `mgt-file` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` to one of the following values:
 
 | Data Type | Data Context                  | Description                                                       |
 | --------- | ----------------------------- | ----------------------------------------------------------------- |
