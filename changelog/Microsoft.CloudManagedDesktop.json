@@ -1035,6 +1035,14 @@
                     "ChangeType": "Addition",
                     "Description": "Added the **domainJoinConfigurations** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
                     "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "32581844-a1d3-11ed-a8fc-0242ac120002",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "domainJoinConfiguration",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **domainJoinConfiguration** property of the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource. The **domainJoinConfiguration** property stopped returning data on June 30, 2023. Going forward, use the **domainJoinConfigurations** property.",
+                    "Target": "cloudPcProvisioningPolicy"
                 }
             ],
             "Id": "32581844-a1d3-11ed-a8fc-0242ac120002",
