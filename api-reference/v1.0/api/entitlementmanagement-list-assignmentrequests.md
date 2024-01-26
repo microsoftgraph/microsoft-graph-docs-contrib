@@ -1,5 +1,5 @@
 ---
-title: "List accessPackageAssignmentRequests"
+title: "List assignmentRequests"
 description: "Retrieve a list of accessPackageAssignmentRequest objects."
 author: "markwahl-msft"
 ms.localizationpriority: medium

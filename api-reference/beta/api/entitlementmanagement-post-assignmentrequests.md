@@ -1,6 +1,6 @@
 ---
-title: "List assignmentRequests"
-description: "Get the accessPackageAssignmentRequest resources from the assignmentRequests navigation property."
+title: "Create accessPackageAssignmentRequest"
+description: "Create a new accessPackageAssignmentRequest object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -78,7 +78,7 @@ The following is an example of the request for a direct assignment, in which the
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests
 Content-type: application/json
 
 {
@@ -133,7 +133,7 @@ The following example shows how to remove an assignment.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests
 Content-type: application/json
 
 {
@@ -181,7 +181,7 @@ The following example shows how a user can request an access package assignment 
   "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_packageID"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests
 Content-type: application/json
 
 {
@@ -228,7 +228,7 @@ The following example shows how a user can request an access package assignment 
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests
 Content-type: application/json
 
 {
@@ -327,7 +327,7 @@ The following example shows how an admin can request updates to an assignment to
   "name": "update_accesspackageassignmentrequest_from_accesspackageassignmentrequests_requestor_answer_to_approver"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests
 Content-type: application/json
 
 {

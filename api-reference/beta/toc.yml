@@ -12214,9 +12214,9 @@ items:
                         href: api/entitlementmanagement-list-assignmentrequests.md
                       - name: Create
                         href: api/entitlementmanagement-post-assignmentrequests.md
-                      - name: List(deprecated)
+                      - name: List (deprecated)
                         href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
-                      - name: Create(deprecated)
+                      - name: Create (deprecated)
                         href: api/entitlementmanagement-post-accesspackageassignmentrequests.md
                       - name: Get
                         href: api/accesspackageassignmentrequest-get.md

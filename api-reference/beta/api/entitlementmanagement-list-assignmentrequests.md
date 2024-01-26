@@ -1,5 +1,5 @@
 ---
-title: "List accessPackageAssignmentRequests"
+title: "List assignmentRequests"
 description: "Retrieve a list of accessPackageAssignmentRequest objects."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /identityGovernance/entitlementManagement/assignmentRequests
 ```
 
-## Query parameters
+## Optional query parameters
 
 This method supports the `$select`, `$expand` and `$filter` OData query parameters to help customize the response.  Not all attributes of an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) are supported for filtering.
 
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests
 ```
 
 ### Response
