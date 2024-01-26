@@ -15,13 +15,13 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
-Represents details for billed Azure usage data.
+Represents details for billed reconciliation data.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[export](../api/partners-billing-billedusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export the billed Azure usage data.|
+|[export](../api/partners-billing-billedusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export the billed invoice reconciliation data.|
 
 ## Properties
 
