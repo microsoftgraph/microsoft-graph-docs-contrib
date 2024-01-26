@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [incident](../resources/security-incident.md) objects that Microsoft 365 Defender has created to track attacks in an organization.
+Get a list of [incident](../resources/security-incident.md) objects that Microsoft 365 Defender created to track attacks in an organization.
 
 Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple [alert](../resources/security-alert.md) objects. Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an **incident**. 
 
@@ -72,8 +72,12 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [incident](../resources/security-incident.md) objects in the response body.
 
 ## Examples
+
 ### Example 1: List all incidents
+
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -120,6 +124,9 @@ GET https://graph.microsoft.com/beta/security/incidents
 ---
 
 #### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -179,6 +186,9 @@ Content-Type: application/json
 ### Example 2: List all incidents with their alerts
 #### Request
 
+The following example shows a request.
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -224,6 +234,9 @@ GET https://graph.microsoft.com/beta/security/incidents?$expand=alerts
 ---
 
 #### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

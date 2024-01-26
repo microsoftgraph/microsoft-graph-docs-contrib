@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [alert](../resources/security-alert.md) resources that have been created to track suspicious activities in an organization.
+Get a list of [alert](../resources/security-alert.md) resources that were created to track suspicious activities in an organization.
 
 This operation lets you filter and sort through alerts to create an informed cyber security response. It exposes a collection of alerts that were flagged in your network, within the time range you specified in your environment retention policy. The most recent alerts are displayed at the top of the list.
 
@@ -71,6 +71,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -116,6 +118,9 @@ GET https://graph.microsoft.com/beta/security/alerts_v2
 ---
 
 ### Response
+
+The following example shows a response.
+
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

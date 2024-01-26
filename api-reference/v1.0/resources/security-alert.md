@@ -1,6 +1,6 @@
 ---
 title: "alert resource type"
-description: "Represents potential security issues within a customer's tenant that Microsoft 365 Defender has identified."
+description: "Represents potential security issues within a customer's tenant that Microsoft 365 Defender identified."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
@@ -12,16 +12,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-This resource corresponds to the latest generation of alerts in the Microsoft Graph security API, representing potential security issues within a customer's tenant that Microsoft 365 Defender, or a security provider integrated with Microsoft 365 Defender, has identified.
+This resource corresponds to the latest generation of alerts in the Microsoft Graph security API, representing potential security issues within a customer's tenant that Microsoft 365 Defender, or a security provider integrated with Microsoft 365 Defender, identified.
 
-When detecting a threat, a security provider creates an alert in the system. Microsoft 365 Defender pulls this alert data from the security provider, and consumes the alert data to return valuable clues in an [alert](security-alert.md) resource about any related attack, impacted assets, and associated [evidence](security-alertevidence.md). It automatically correlates other alerts with the same attack techniques or the same attacker into an [incident](security-incident.md) to provide a broader context of an attack. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
+When a security provider detects a threat, it creates an alert in the system. Microsoft 365 Defender pulls this alert data from the security provider, and consumes the alert data to return valuable clues in an [alert](security-alert.md) resource about any related attack, impacted assets, and associated [evidence](security-alertevidence.md). It automatically correlates other alerts with the same attack techniques or the same attacker into an [incident](security-incident.md) to provide a broader context of an attack. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
 [!INCLUDE [alerts-callout-two-types](../includes/alerts-callout-two-types.md)]
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List alerts_v2](../api/security-list-alerts_v2.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of [alert](../resources/security-alert.md) resources that have been created to track suspicious activities in an organization.|
+|[List alerts_v2](../api/security-list-alerts_v2.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of [alert](../resources/security-alert.md) resources created to track suspicious activities in an organization.|
 |[Get alert](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Get the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 |[Update alert](../api/security-alert-update.md)|[microsoft.graph.security.alert](../resources/security-alert.md)|Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 |[Create comment for alert](../api/security-alert-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [alert](../resources/security-alert.md) based on the specified alert **id** property.|
@@ -58,7 +58,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 |threatDisplayName|String|The threat associated with this alert.|
 |threatFamilyName|String|Threat family associated with this alert.|
 |title|String|Brief identifying string value describing the alert.|
-|systemTags|String collection|The system tags accocisted with the alert|
+|systemTags|String collection|The system tags associated with the alert|
 
 ### alertClassification values 
 
@@ -77,7 +77,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | unknown		             | No determination value was set yet.                                                                                          |
 | apt			             | A true positive alert that detected an advanced persistent threat.                                                           |
 | malware                    | A true positive alert that detected malicious software.                                                                      |
-| securityPersonnel          | A true positive alert that detected valid suspicious activity that was performed by someone on the customer's security team. |
+| securityPersonnel          | A true positive alert that detected valid suspicious activity that someone on the customer's security team performed. |
 | securityTesting            | The alert detected valid suspicious activity that was performed as part of a known security testing.                         |
 | unwantedSoftware           | The alert detected unwanted software.                                                                                        |
 | multiStagedAttack          | A true positive alert that detected multiple kill-chain attack stages.                                                       |
@@ -96,9 +96,9 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
 | unknown		     | Unknown severity.       |
-| informational		 | Alerts that may not be actionable or considered harmful to the network but can drive organizational security awareness on potential security issues.     |
-| low                | Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands and clearing logs, that often don't indicate an advanced threat that targets the organization. It can also come from an isolated security tool that is tested by a user in your organization.  |
-| medium             | Alerts generated from detections and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be due to internal security testing, they're valid detections and require investigation as they may be a part of an advanced attack. |
+| informational		 | Alerts that might not be actionable or considered harmful to the network but can drive organizational security awareness on potential security issues.     |
+| low                | Alerts on threats associated with prevalent malware. For example, hack-tools, nonmalware hack tools, such as running exploration commands and clearing logs, that often don't indicate an advanced threat that targets the organization. It can also come from an isolated security tool that a user in your organization is testing.  |
+| medium             | Alerts generated from detections and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This severity level includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be due to internal security testing, they're valid detections and require investigation as they might be a part of an advanced attack. |
 | high               | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk because of the severity of damage they can inflict on assets. Some examples are: credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 

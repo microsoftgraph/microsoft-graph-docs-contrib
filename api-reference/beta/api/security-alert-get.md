@@ -1,6 +1,6 @@
 ---
 title: "Get alert"
-description: "Retrieve the properties and relationships of an security alert object."
+description: "Retrieve the properties and relationships of a security alert object."
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of an [alert](../resources/security-alert.md) in an organization based on the specified alert **id** property.
+Get the properties and relationships of an [alert](../resources/security-alert.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -50,6 +50,7 @@ If successful, this method returns a `200 OK` response code and an [alert](../re
 ## Examples
 
 ### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,6 +98,7 @@ GET https://graph.microsoft.com/beta/security/alerts_v2/da637578995287051192_756
 ---
 
 ### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
