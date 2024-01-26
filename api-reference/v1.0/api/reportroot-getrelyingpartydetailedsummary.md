@@ -123,3 +123,15 @@ Content-Type: application/json
 }
 ```
 
+<!-- {
+  "type": "#page.annotation",
+  "description": "reportRoot: getRelyingPartyDetailedSummary",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: reportrootthis.getrelyingpartydetailedsummary/container/signInSuccessRate:
+            Expected type Double but actual was Int64. Property: signInSuccessRate, actual value: '0'"
+  ]
+}-->
+
