@@ -19,7 +19,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[reportRoot: getRelyingPartyDetailedSummary](../api/reportroot-getrelyingpartydetailedsummary.md)|  [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) collection|Get a summary of AD FS relying parties information.|
+|[List relyingPartyDetailedSummary](../api/reportroot-getrelyingpartydetailedsummary.md)|  [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) collection|Get a summary of AD FS relying parties information.|
 
 ## Properties
 
