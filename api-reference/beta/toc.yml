@@ -16353,6 +16353,12 @@ items:
             items:
               - name: Overview
                 href: resources/partners-billing-api-overview.md
+              - name: Billed invoice reconciliation
+                items:
+                  - name: Billed invoice reconciliation
+                    href: resources/partners-billing-billedreconciliation.md
+                  - name: Export
+                    href: api/partners-billing-billedreconciliation-export.md
               - name: Billed usage
                 items:
                   - name: Billed usage
@@ -16371,6 +16377,12 @@ items:
                     href: resources/partners-billing-operation.md
                   - name: Get
                     href: api/partners-billing-operation-get.md
+              - name: Unbilled non-usage reconciliation
+                items:
+                  - name: Unbilled non-usage reconciliation
+                    href: resources/partners-billing-unbilledreconciliation.md
+                  - name: Export
+                    href: api/partners-billing-unbilledreconciliation-export.md
               - name: Unbilled usage
                 items:
                   - name: Unbilled usage
