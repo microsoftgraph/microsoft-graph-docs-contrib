@@ -16602,6 +16602,24 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: List
                     href: api/simulationautomation-list-runs.md
+          - name: Audit log query (preview)
+            items:
+              - name: Audit log query
+                href: resources/security-auditlogquery.md
+                items: 
+                  - name: List
+                    href: api/security-auditcoreroot-list-auditlogqueries.md
+                  - name: Create
+                    href: api/security-auditcoreroot-post-auditlogqueries.md
+                  - name: Get
+                    href: api/security-auditlogquery-get.md
+                  - name: List audit log records
+                    href: api/security-auditlogquery-list-records.md
+              - name: Audit log record
+                href: resources/security-auditlogrecord.md
+                items:
+                  - name: List
+                    href: api/security-auditlogquery-list-records.md
           - name: eDiscovery (preview)
             items:
               - name: Case
