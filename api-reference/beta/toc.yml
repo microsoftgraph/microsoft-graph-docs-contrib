@@ -16600,8 +16600,6 @@ items:
                     href: api/simulationautomation-list-runs.md
           - name: Audit log query (preview)
             items:
-              - name: Overview
-                href: resources/security-api-overview.md
               - name: Audit log query
                 href: resources/security-auditlogquery.md
                 items: 
