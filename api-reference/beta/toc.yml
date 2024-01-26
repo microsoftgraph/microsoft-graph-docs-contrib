@@ -12297,6 +12297,8 @@ items:
                     items:
                       - name: List
                         href: api/accesspackagecatalog-list-accesspackageresources.md
+                      - name: Refresh
+                        href: api/accesspackageresource-refresh.md
                   - name: Access package resource role
                     href: resources/accesspackageresourcerole.md
                     items:
@@ -13042,6 +13044,8 @@ items:
                         href: resources/authenticationcombinationconfiguration.md
                       - name: FIDO2 combination configuration
                         href: resources/fido2combinationconfiguration.md
+                      - name: x509 certificate combination configuration
+                        href: resources/x509certificatecombinationconfiguration.md
                       - name: Create
                         href: api/authenticationstrengthpolicy-post-combinationconfigurations.md
                       - name: List
@@ -16345,6 +16349,34 @@ items:
                     href: resources/attacksimulationtrainingusercoverage.md
                   - name: Get training coverage for users
                     href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+          - name: Partner billing reports (preview)
+            items:
+              - name: Overview
+                href: resources/partners-billing-api-overview.md
+              - name: Billed usage
+                items:
+                  - name: Billed usage
+                    href: resources/partners-billing-billedusage.md
+                  - name: Export
+                    href: api/partners-billing-billedusage-export.md
+              - name: Manifest
+                items:
+                  - name: Manifest
+                    href: resources/partners-billing-manifest.md
+                  - name: Get
+                    href: api/partners-billing-manifest-get.md
+              - name: Operation
+                items:
+                  - name: Operation
+                    href: resources/partners-billing-operation.md
+                  - name: Get
+                    href: api/partners-billing-operation-get.md
+              - name: Unbilled usage
+                items:
+                  - name: Unbilled usage
+                    href: resources/partners-billing-unbilledusage.md
+                  - name: Export
+                    href: api/partners-billing-unbilledusage-export.md
       - name: Search
         items:
           - name: Query
@@ -16566,6 +16598,24 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: List
                     href: api/simulationautomation-list-runs.md
+          - name: Audit log query (preview)
+            items:
+              - name: Audit log query
+                href: resources/security-auditlogquery.md
+                items: 
+                  - name: List
+                    href: api/security-auditcoreroot-list-auditlogqueries.md
+                  - name: Create
+                    href: api/security-auditcoreroot-post-auditlogqueries.md
+                  - name: Get
+                    href: api/security-auditlogquery-get.md
+                  - name: List audit log records
+                    href: api/security-auditlogquery-list-records.md
+              - name: Audit log record
+                href: resources/security-auditlogrecord.md
+                items:
+                  - name: List
+                    href: api/security-auditlogquery-list-records.md
           - name: eDiscovery (preview)
             items:
               - name: Case
