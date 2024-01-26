@@ -15,7 +15,12 @@ Namespace: microsoft.graph.security
 Read the properties and relationships of an [auditLogQuery](../resources/security-auditlogquery.md) object.
 
 ## Permissions
-Through the Microsoft Purview Audit Search Graph API, auditing data can be accessed using the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 
 |Microsoft 365 Service|Delegated (work or school account)|Delegated (personal Microsoft account)|Application
 |:---|:---|:---|:---|
