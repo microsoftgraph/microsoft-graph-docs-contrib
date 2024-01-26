@@ -41,7 +41,7 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 
 ### [Java](#tab/java)
 
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="ResumeUpload":::
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="ResumeSnippet":::
 
 ### [PHP](#tab/PHP)
 
