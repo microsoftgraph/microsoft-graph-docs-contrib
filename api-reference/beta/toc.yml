@@ -12211,8 +12211,12 @@ items:
                     href: resources/accesspackageassignmentrequest.md
                     items:
                       - name: List
-                        href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
+                        href: api/entitlementmanagement-list-assignmentrequests.md
                       - name: Create
+                        href: api/entitlementmanagement-post-assignmentrequests.md
+                      - name: List (deprecated)
+                        href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
+                      - name: Create (deprecated)
                         href: api/entitlementmanagement-post-accesspackageassignmentrequests.md
                       - name: Get
                         href: api/accesspackageassignmentrequest-get.md
@@ -15880,8 +15884,8 @@ items:
                     - name: Relying party detailed summary
                       href: resources/relyingpartydetailedsummary.md
                       items:
-                        - name: List
-                          href: api/relyingpartydetailedsummary-list.md
+                        - name: Get relying party detailed dummary
+                          href: api/reportroot-getrelyingpartydetailedsummary.md
                 - name: Application credential activity
                   href: resources/appcredentialsigninactivity.md
                   items:
@@ -16598,6 +16602,24 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: List
                     href: api/simulationautomation-list-runs.md
+          - name: Audit log query (preview)
+            items:
+              - name: Audit log query
+                href: resources/security-auditlogquery.md
+                items: 
+                  - name: List
+                    href: api/security-auditcoreroot-list-auditlogqueries.md
+                  - name: Create
+                    href: api/security-auditcoreroot-post-auditlogqueries.md
+                  - name: Get
+                    href: api/security-auditlogquery-get.md
+                  - name: List audit log records
+                    href: api/security-auditlogquery-list-records.md
+              - name: Audit log record
+                href: resources/security-auditlogrecord.md
+                items:
+                  - name: List
+                    href: api/security-auditlogquery-list-records.md
           - name: eDiscovery (preview)
             items:
               - name: Case

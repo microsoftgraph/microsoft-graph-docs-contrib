@@ -39,7 +39,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | if-none-match | eTag. Optional. If this request header is included and the eTag (or cTag) provided matches the current tag on the file, a  `304 Not Modified` response is returned.|
 
 ## Request body
