@@ -60,7 +60,7 @@ This method supports the `$top`, `$skiptoken`, and `$filter` OData query paramet
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
