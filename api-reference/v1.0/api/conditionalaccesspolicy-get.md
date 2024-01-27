@@ -62,7 +62,7 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{id}
+GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/6b5e999b-0ba8-4186-a106-e0296c1c4358
 ```
 
 # [C#](#tab/csharp)
