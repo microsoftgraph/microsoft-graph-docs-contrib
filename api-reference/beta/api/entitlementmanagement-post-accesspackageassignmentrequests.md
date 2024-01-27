@@ -26,6 +26,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+> [!NOTE]
+> This API will be retired soon. Use the [Post assignmentRequests](../api/entitlementmanagement-post-assignmentrequests.md) API instead.
+
 <!-- { "blockType": "ignored" } -->
 
 ```http

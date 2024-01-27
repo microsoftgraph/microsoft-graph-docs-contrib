@@ -28,9 +28,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+> [!NOTE]
+> The `/accessPackageAssignmentRequests` path will be retired soon. Use the `/assignmentRequests` path instead.
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
+DELETE /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageAssignmentRequestId}
 DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}
 ```
 
