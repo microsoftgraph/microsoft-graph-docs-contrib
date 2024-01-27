@@ -29,6 +29,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |branches|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|Branches represent locations for connectivity.|
+|remoteNetworks|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) collection|Remote network (for ex: branch offices) represent locations that are connected to Global Secure Access through an IPsec tunnel.|
 
 ## JSON representation
 Here's is a JSON representation of the resource.
