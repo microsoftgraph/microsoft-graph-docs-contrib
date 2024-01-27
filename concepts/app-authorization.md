@@ -25,11 +25,11 @@ You find the following types of applications in the portal:
 
 All single-tenant apps are populated in the table by default. Only approved, denied, or expired multitenant apps are included in the table. Other apps might be shown in the table with the following statuses:
 
-- **Pending authorization**—Apps that haven't been acted upon yet. This status is only possible for single-tenant apps. Apps in this state will always fail at runtime.
-- **Approved** — Apps that an admin has approved to access Microsoft 365 data for your tenant.
-- **Denied**—Apps that an admin has denied accessing Microsoft 365 data for your tenant. Apps in this state will always fail at runtime.
-- **Expired**—Apps that an admin has approved to access Microsoft 365 data for your tenant, but the approval expired. Apps in this state will always fail at runtime.
-- **Update available**—Apps that an admin has previously reviewed and acted upon, but have since been updated. Apps in this state continue working as per previous authorization. When the admin provides a new approval, the new definition of the app overwrites the old one.
+- **Pending authorization** — Apps that haven't been acted upon yet. This status is only possible for single-tenant apps. Apps in this state always fail at runtime.
+- **Approved** — Apps that an admin approved to access Microsoft 365 data for your tenant.
+- **Denied** — Apps that an admin denied accessing Microsoft 365 data for your tenant. Apps in this state always fail at runtime.
+- **Expired** — Apps that an admin approved to access Microsoft 365 data for your tenant, but the approval expired. Apps in this state always fail at runtime.
+- **Update available** — Apps that an admin has previously reviewed and acted upon, but have since been updated. Apps in this state continue working as per previous authorization. When the admin provides a new approval, the new definition of the app overwrites the old one.
 
 ### App details view
 
@@ -39,11 +39,11 @@ Select an app from the table to launch the app details view, which provides more
 
 First, the wizard shows overview information about the application:
 
-- **Developer**—The user name of the developer who registered the application.
+- **Developer** — The user name of the developer who registered the application.
 
-- **Data destination**—The sink where the data will be delivered. If approved, this app can move the requested data to any location within the listed sink.
+- **Data destination** — The sink where the data will be delivered. If approved, this app can move the requested data to any location within the listed sink.
 
-- **App publisher**—The Microsoft Entra tenant ID where the app is registered. For single-tenant apps, this should be the same Microsoft Entra tenant ID as your tenant.
+- **App publisher** — The Microsoft Entra tenant ID where the app is registered. For single-tenant apps, this should be the same Microsoft Entra tenant ID as your tenant.
 
 ![Screenshot showing the app details view for a teams call records dataset sample in Data Connect portal.](images/authorization-app-details-dataset.png)
 
