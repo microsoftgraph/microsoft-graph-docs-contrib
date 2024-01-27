@@ -20,7 +20,7 @@ The landing page of the Data Connect applications portal provides a quick view o
 
 You find the following types of applications in the portal:
 
-- **Single-tenant apps—Applications that are registered in your tenant, and require access to data. These apps are typically enterprise scenarios.
+- **Single-tenant apps** — Applications that are registered in your tenant, and require access to data. These apps are typically enterprise scenarios.
 - **Multi-tenant applications** — Applications that are hosted in another tenant, and require access to data from your tenant. These apps are typically ISV scenarios. Review these apps carefully. When you authorize multi-tenant apps, data from your tenant can be migrated to the app developer's tenant.
 
 All single-tenant apps are populated in the table by default. Only approved, denied, or expired multitenant apps are included in the table. Other apps might be shown in the table with the following statuses:
