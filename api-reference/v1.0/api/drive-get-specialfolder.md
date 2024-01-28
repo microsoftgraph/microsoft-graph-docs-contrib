@@ -58,7 +58,7 @@ This method supports the `$expand` and `$select` [OData query parameters](/graph
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
