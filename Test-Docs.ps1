@@ -36,7 +36,7 @@ elseif ($useNuGetPackage -eq $false -and [string]::IsNullOrWhiteSpace($apiDoctor
 
 # Check if docs subpath has been set
 if ([string]::IsNullOrWhiteSpace($docsSubPath)) {
-	Write-Host "API Doctor subpath has not been set. Aborting..."
+	Write-Host "Docs subpath has not been set. Aborting..."
 	exit 1
 }
 
