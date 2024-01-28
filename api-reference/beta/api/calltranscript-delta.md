@@ -74,7 +74,7 @@ See also what you'll do in the [next round to get additional transcripts](#examp
 
 #### Initial request
 
-In this example, the call transcripts are being synchronized for the first time, so the initial sync request does not include any state token. This round will return all transcripts available at the time.
+In this example, the call transcripts are being synchronized for the first time, so the initial sync request does not include any state token. This round returns all transcripts available at the time.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -88,8 +88,7 @@ The response includes two call transcripts and a `@odata.nextLink` response head
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callTranscript",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callTranscript)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -137,8 +136,7 @@ The second response returns the next 2 call transcripts and a `@odata.nextLink` 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callTranscript",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callTranscript)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -185,8 +183,7 @@ The third response returns the only remaining transcripts and a `@odata.deltaLin
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callTranscript",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callTranscript)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -227,8 +224,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callTranscript",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callTranscript)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -238,14 +234,14 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(callTranscript)",
     "@odata.deltaLink": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/getAllTranscripts/delta?$deltatoken=aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_yjz2nsMoh1gXNtXii7s78HapCi5woifXqwXlVNxICh8wUUnvE2gExsa8eZ2Vy_ch5rVIhm067_1mUPML3iYUVyg.3o0rhgaBUduuxOr98An5pjBDP5JjKUiVWku3flSiOsk",
     "value": [
-              {
+        {
             "@odata.type": "#microsoft.graph.callTranscript",
             "meetingId": "MSo4YjA4MWVmNi00NzkyLTRkZWYtYjJjOS1jMzYzYTFiZjQxZDUqMCoqMTk6bWVldGluZ19IMU4xMlgxSTBOekF0Wm1ReU8xQzIxMU5HWTFMV0UwTTJFdFpXTTFOVFkxWW1Rd05HTTBAdGhyZWFkLnYy",
             "meetingOrganizerId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
             "transcriptContentUrl": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/MSo4YjA4MWVmNi00NzkyLTRkZWYtYjJjOS1jMzYzYTFiZjQxZDUqMCoqMTk6bWVldGluZ19IMU4xMlgxSTBOekF0Wm1ReU8xQzIxMU5HWTFMV0UwTTJFdFpXTTFOVFkxWW1Rd05HTTBAdGhyZWFkLnYy/transcripts/MSMjMCMjZDMzYWQzM2EtMmVhYS0zM2FjLWJkZWItMjMzNjMyNjExYzRl/content",
             "createdDateTime": "2023-08-11T21:29:42.6514074Z",
             "id": "MSMjMCMjZDMzYWQzM2EtMmVhYS0zM2FjLWJkZWItMjMzNjMyNjExYzRl"
-      }
+        }
     ]
 }
 ```
