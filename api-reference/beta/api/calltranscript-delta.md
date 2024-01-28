@@ -74,7 +74,7 @@ See also what you'll do in the [next round to get additional transcripts](#examp
 
 #### Initial request
 
-In this example, the call transcripts are being synchronized for the first time, so the initial sync request does not include any state token. This round returns all transcripts available at the time.
+In this example, the call transcripts are being synchronized for the first time, so the initial sync request doesn't include any state token. This round returns all transcripts available at the time.
 
 <!-- { "blockType": "ignored" } -->
 ```http
