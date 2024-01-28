@@ -1,13 +1,13 @@
 ---
-title: "unbillednonusagereconciliation: export"
-description: "Export the unbilled reconciliation data for a specific billing period and a given currency."
+title: "unbilledReconciliation: export"
+description: "Export the unbilled non-usage reconciliation data for a specific billing period and a given currency."
 author: "sourishdeb"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: apiPageType
 ---
 
-# unbillednonusagereconciliation: export
+# unbilledReconciliation: export
 
 Namespace: microsoft.graph.partners.billing
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
-Export the unbilled reconciliation data for a specific billing period and a given currency.
+Export the unbilled non-usage reconciliation data for a specific billing period and a given currency.
 
 ## Permissions
 
@@ -66,7 +66,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "unbilledreconciliationthis.export"
+  "name": "unbilledReconciliationthis.export"
 }
 -->
 ``` http

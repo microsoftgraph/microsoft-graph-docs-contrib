@@ -1,6 +1,6 @@
 ---
-title: "Billedinvoicereconciliation: export"
-description: "Export the billed reconciliation data."
+title: "billedReconciliation: export"
+description: "Export the billed invoice reconciliation data."
 author: "sourishdeb"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
-Export the billed reconciliation data.
+Export the billed invoice reconciliation data.
 
 ## Permissions
 
