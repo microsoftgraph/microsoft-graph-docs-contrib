@@ -45,6 +45,10 @@ The following properties are deprecated:
 - **sku** and **skuDisplayName** properties on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) in favor of the **skuName** property.
 - **statusDetails** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) in favor of the  **errorCode** property, to identify why an upload failed. The **errorCode** property is of type [cloudPcDeviceImageErrorCode](/graph/api/resources/cloudpcdeviceimage#cloudpcdeviceimageerrorcode-values?view=graph-rest-beta&preserve-view=true).
 - **id** property on [cloudPcSourceDeviceImage](/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta&preserve-view=true) in favor of the **resourceId** property, to get the fully qualified unique identifier of the source image resource in Azure.
+- **windowsSettings** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) in favor of the **windowsSetting** property.
+- **type** property on [cloudPcDomainJoinConfiguration](/graph/api/resources/cloudpcdomainjoinconfiguration?view=graph-rest-beta&preserve-view=true) in favor of the **domainJoinType** property.
+- **type** property on [microsoftManagedDesktop](/graph/api/resources/microsoftmanageddesktop?view=graph-rest-beta&preserve-view=true) in favor of the **managedType** property.
+- **frequencyInHours** property on [cloudPcRestorePointSetting](/graph/api/resources/cloudpcrestorepointsetting?view=graph-rest-beta&preserve-view=true) in favor of the **frequencyType** property.
 
 ### Reports | Partner billing reports
 
