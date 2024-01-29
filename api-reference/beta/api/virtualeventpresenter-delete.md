@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [virtualEventPresenter](../resources/virtualeventpresenter.md) from a virtual event. Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Remove a [virtualEventPresenter](../resources/virtualeventpresenter.md) from a virtual event. 
+
+Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 ## Permissions
 
@@ -44,7 +46,7 @@ DELETE /solutions/virtualEvents/townhalls/{townhallId}/presenters/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,10 +56,12 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "delete_presenters_from_virtualeventtownhall"
+  "name": "delete_presenters_from_virtualeventtownhall",
+  "sampleKeys": ["502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742", "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b"]
 }
 -->
 ``` http
@@ -66,7 +70,8 @@ DELETE https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/502dad
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
