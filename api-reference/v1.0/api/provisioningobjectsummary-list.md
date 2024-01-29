@@ -42,7 +42,7 @@ This method supports the `$filter` (`eq`, `contains`, `gt`, `lt`), `$orderby`, `
 
 | Header        | Value                      |
 |:--------------|:---------------------------|
-| Authorization | Bearer {token} (required)  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
