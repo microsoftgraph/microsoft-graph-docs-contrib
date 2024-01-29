@@ -72,6 +72,7 @@ You can use several properties to customize the component.
 | line4-property  | line4Property  | Sets the property of the personDetails to use for the fourth line of text. Default is `email`.|
 | show-presence   | showPresence   | Set flag to display person presence - default is `false`.|
 | usage | usage | Specify where the component is being used in order to add customized personalization for it. Currently only supports `people` as used in the people component. |
+| person-card      | personCardInteraction | Sets the behavior to show the person card on the rendered person component. The allowed values are `none`, `hover` or `click`. Default is `none`. |
 
 ## CSS custom properties
 
