@@ -20,7 +20,8 @@ Represents the details of a [schedulingGroup](schedulingGroup.md).
 | Property             | Type                          | Description            |
 | -------------------- | ----------------------------- | ---------------------- |
 | displayName          | `string`                      | The display name for the `schedulingGroup`. Required.      |
-| schedulingGroupId    | `string`                      | ID of the `schedulingGroup`.  
+| schedulingGroupId    | `string`                      | ID of the `schedulingGroup`.  |
+| code                 | `string`                      | The code for the `schedulingGroup`. |
 
 ## JSON representation
 
@@ -34,7 +35,8 @@ The following JSON representation shows the resource type.
 ```json
 {
   "displayName": "String",
-  "schedulingGroupId": "String"
+  "schedulingGroupId": "String",
+  "code": "String"
 }
 ```
 
