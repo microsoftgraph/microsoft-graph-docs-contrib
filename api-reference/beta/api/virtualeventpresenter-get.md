@@ -47,7 +47,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [virtualEventP
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_virtualeventpresenter"
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/events/{virtualEven
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -82,16 +82,16 @@ Content-Type: application/json
 
 {
   "value": {
-      "@odata.type": "#microsoft.graph.virtualEventPresenter",
-      "id": "831affc2-4c8a-9929-50e7-02964563b6e4",
-      "identity": {
-        "@odata.type": "microsoft.graph.communicationsUserIdentity"
-      },
-      "email": "String",
-      "presenterDetails": {
-        "@odata.type": "microsoft.graph.virtualEventPresenterDetails"
-      },
-      "profilePhoto": "Stream"
-    }
+    "@odata.type": "#microsoft.graph.virtualEventPresenter",
+    "id": "831affc2-4c8a-9929-50e7-02964563b6e4",
+    "identity": {
+      "@odata.type": "microsoft.graph.communicationsUserIdentity"
+    },
+    "email": "String",
+    "presenterDetails": {
+      "@odata.type": "microsoft.graph.virtualEventPresenterDetails"
+    },
+    "profilePhoto": "Stream"
+  }
 }
 ```
