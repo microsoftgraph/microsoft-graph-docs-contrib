@@ -1,0 +1,77 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License.
+
+# Pipeline for validating Microsoft Graph docs using API Doctor
+
+trigger:
+  branches:
+    include:
+    - live
+    - main
+  paths:
+    include:
+    - api-reference/*
+    
+pr:
+  branches:
+    include:
+    - live
+    - main
+  paths:
+    include:
+    - api-reference/*
+    
+pool:
+    vmImage: 'windows-latest'
+          
+parameters:
+  - name: useNuGetPackage
+    displayName: "Use API Doctor NuGet Package (If disabled, source code from GitHub will be used)?"
+    type: boolean
+    default: true
+    
+  - name: apiDoctorNuGetVersion
+    default: "1.2.2312.152"
+    displayName: "API Doctor NuGet Package Version"
+    
+  - name: apiDoctorGitRepoUrl
+    default: "https://github.com/OneDrive/apidoctor.git"
+    displayName: "API Doctor Git Repo URL"
+    
+  - name: apiDoctorGitBranch
+    default: "master"
+    displayName: "API Doctor Git branch"
+
+steps:
+  - checkout: self
+    displayName: 'Checkout Microsoft Graph docs'
+    clean: true
+    fetchDepth: 1
+      
+  - task: UseDotNet@2
+    displayName: 'Use .NET Core SDK 6.x'
+    inputs:
+      version: 6.x
+  
+  - task: PowerShell@2
+    displayName: 'Run API Doctor Script'
+    env:
+      USE_NUGET_PACKAGE: ${{ parameters.useNuGetPackage }}
+      API_DOCTOR_NUGET_VERSION: ${{ parameters.apiDoctorNuGetVersion }}
+      API_DOCTOR_GIT_REPO_URL: ${{ parameters.apiDoctorGitRepoUrl }}
+      API_DOCTOR_GIT_BRANCH: ${{ parameters.apiDoctorGitBranch }}
+    inputs:
+      filePath: Test-Docs.ps1
+      arguments: -cleanUp
+      script: |
+        Write-Host "Executing API Doctor script with the following parameters:"       
+        
+        if($env:USE_NUGET_PACKAGE -eq 'True') {
+            Write-Host " - API Doctor NuGet Version: $($env:API_DOCTOR_NUGET_VERSION)"
+        }
+        else 
+        {   
+            Write-Host "API Doctor Git Repo:"
+            Write-Host "- URL: $($env:API_DOCTOR_GIT_REPO_URL)"
+            Write-Host "- Branch: $($env:API_DOCTOR_GIT_BRANCH)"
+        }

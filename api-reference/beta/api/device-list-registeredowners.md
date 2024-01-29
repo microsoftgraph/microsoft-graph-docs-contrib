@@ -46,7 +46,7 @@ Some queries are supported only when you use the **ConsistencyLevel** header set
 ## Request headers
 | Name       | Description|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -26,10 +26,11 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |[Delete windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|None|Deletes a [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md).|
 |[assignUserToDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|None|Assigns user to Autopilot devices.|
 |[unassignUserFromDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|None|Unassigns the user from an Autopilot device.|
+|[allowNextEnrollment action](../api/intune-enrollment-windowsautopilotdeviceidentity-allownextenrollment.md)|None|Unblocks next autopilot enrollment.|
 |[updateDeviceProperties action](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|None|Updates properties on Autopilot devices.|
 |[assignResourceAccountToDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|None|Assigns resource account to Autopilot devices.|
 |[unassignResourceAccountFromDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|None|Unassigns the resource account from an Autopilot device.|
-|[deleteDevices action](../api/intune-enrollment-windowsautopilotdeviceidentity-deletedevices.md)|[deletedWindowsAutopilotDeviceState](../resources/intune-enrollment-deletedwindowsautopilotdevicestate.md) collection|Not yet documented|
+|[deleteDevices action](../api/intune-enrollment-windowsautopilotdeviceidentity-deletedevices.md)|[deletedWindowsAutopilotDeviceState](../resources/intune-enrollment-deletedwindowsautopilotdevicestate.md) collection||
 
 ## Properties
 |Property|Type|Description|
@@ -60,6 +61,7 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |deviceFriendlyName|String|Surface Hub Device Friendly Name|
 |remediationState|[windowsAutopilotDeviceRemediationState](../resources/intune-enrollment-windowsautopilotdeviceremediationstate.md)|Device Remediation State. Possible values are: `unknown`, `noRemediationRequired`, `automaticRemediationRequired`, `manualRemediationRequired`, `unknownFutureValue`.|
 |remediationStateLastModifiedDateTime|DateTimeOffset|RemediationState set time of Autopilot device.|
+|userlessEnrollmentStatus|[windowsAutopilotUserlessEnrollmentStatus](../resources/intune-enrollment-windowsautopilotuserlessenrollmentstatus.md)|Enrollment status for userless enrollments. Possible values are: `unknown`, `allowed`, `blocked`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -103,6 +105,7 @@ Here is a JSON representation of the resource.
   "deviceAccountPassword": "String",
   "deviceFriendlyName": "String",
   "remediationState": "String",
-  "remediationStateLastModifiedDateTime": "String (timestamp)"
+  "remediationStateLastModifiedDateTime": "String (timestamp)",
+  "userlessEnrollmentStatus": "String"
 }
 ```

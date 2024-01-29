@@ -64,7 +64,7 @@ This method supports the `$filter` (`eq` and `in` operators) OData query paramet
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
