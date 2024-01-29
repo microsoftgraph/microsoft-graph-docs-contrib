@@ -361,7 +361,7 @@ In this example, the access review scope is all users who are assigned to any of
 }
 ```
 
-## Next steps
+## Related content
 
 + [Assign reviewers to your access review definition](/graph/accessreviews-reviewers-concept)
 + [Try out tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Microsoft Entra resources

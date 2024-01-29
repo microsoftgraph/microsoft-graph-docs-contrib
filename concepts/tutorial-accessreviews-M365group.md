@@ -925,8 +925,7 @@ Content-type: text/plain
 
 Congratulations! You've created an access review for guest users in Microsoft 365 groups in your tenant, and scheduled it quarterly. The group owners will review access during these cycles, choosing either to approve or deny access.
 
-## See also
-
+## Related content
 
 + [Access reviews API](/graph/api/resources/accessreviewsv2-overview)
 + [What are Microsoft Entra access reviews?](/azure/active-directory/governance/access-reviews-overview)

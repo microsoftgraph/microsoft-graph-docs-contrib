@@ -284,7 +284,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 ---
 
-## Next steps
+## Additional resources
 
 See the following Azure Event Hubs quick starts:
 
@@ -292,3 +292,7 @@ See the following Azure Event Hubs quick starts:
 - [Java](/azure/event-hubs/event-hubs-java-get-started-send)
 - [Python](/azure/event-hubs/get-started-python-send-v2)
 - [JavaScript](/azure/event-hubs/get-started-node-send-v2)
+
+## Related content
+
+- [Change notifications overview](/graph/change-notifications-overview)

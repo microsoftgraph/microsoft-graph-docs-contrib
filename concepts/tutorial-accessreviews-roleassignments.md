@@ -917,7 +917,7 @@ HTTP/1.1 204 No Content
 
 You've learned how to review access to privileged roles in Microsoft Entra and generate an auditable access review history report for compliance reporting. Your organization can use the access reviews API to continually govern privileged access to its resources including both Microsoft Entra roles and Azure resource roles. In addition to users and groups, you can also review access by applications and service principals to privileged roles.
 
-## See also
+## Related content
 
 + [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root)
 + [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)

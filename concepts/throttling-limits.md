@@ -499,3 +499,7 @@ The preceding information applies to the following resources:
 ## Viva Engage service limits
 
 Viva Engage API calls are subject to rate limiting, allowing 10 requests per user, per app, within a 30-second time period. When you exceed the rate limit, all subsequent requests return a `429 Too Many Requests` response code. 
+
+## Related content
+
+- [Best practices for working with Microsoft Graph](best-practices-concept)

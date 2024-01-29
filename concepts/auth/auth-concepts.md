@@ -117,10 +117,8 @@ You don't need to use an authentication library to get an access token. To learn
 - [Get access on behalf of a user](../auth-v2-user.md)
 - [Get access without a user](../auth-v2-service.md)
 
-## See also
+## Related content
 
 - [Microsoft identity platform documentation](/azure/active-directory/develop/).
 - [Choose a Microsoft Graph authentication provider based on scenario](../sdks/choose-authentication-providers.md).
 - [Overview of Microsoft Graph permissions](/graph/permissions-overview).
-- Use the [Get started](https://developer.microsoft.com/graph/get-started) page to find the libraries, samples, training content, and other resources for your favorite platform.
-- See our [Microsoft Graph samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=) on GitHub.

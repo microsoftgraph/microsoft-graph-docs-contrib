@@ -102,3 +102,9 @@ If SDKs retry throttled requests automatically when they are not batched, thrott
 ## Next steps
 
 - Identify the [throttling limits](throttling-limits.md) that apply for each Microsoft Graph resource.
+- 
+- 
+## Next step
+
+> [!div class="nextstepaction"]
+> [Identify the throttling limits for different Microsoft Graph resources](throttling-limits.md)

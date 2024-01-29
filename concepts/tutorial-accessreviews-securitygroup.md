@@ -1004,7 +1004,7 @@ You've created an access review in which the principals have self-attested to th
 
 This tutorial has demonstrated one of the scenarios by the Microsoft Entra access reviews API. The access reviews API supports different scenarios through a combination of resources, principals, and reviewers to suit your access attestation needs. For more information, see the [access reviews API](/graph/api/resources/accessreviewsv2-overview).
 
-## See also
+## Related content
 
 + [What are Microsoft Entra access reviews?](/azure/active-directory/governance/access-reviews-overview)
 + [Review access for yourself to groups or applications in Microsoft Entra access reviews](/azure/active-directory/governance/review-your-access)

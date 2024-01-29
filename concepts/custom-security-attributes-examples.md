@@ -1252,7 +1252,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## Next steps
+## Next step
 
-- [Overview of custom security attributes using the Microsoft Graph API](/graph/api/resources/custom-security-attributes-overview)
-- [What are custom security attributes in Microsoft Entra ID?](/azure/active-directory/fundamentals/custom-security-attributes-overview)
+> [!div class="nextstepaction"]
+> [Overview of custom security attributes using the Microsoft Graph API](/graph/api/resources/custom-security-attributes-overview)
