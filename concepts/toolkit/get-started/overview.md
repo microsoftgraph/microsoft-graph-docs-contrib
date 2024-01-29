@@ -87,14 +87,16 @@ You may also configure the provider imperatively:
 <mgt-agenda></mgt-agenda>
 ```
 
-# [unpkg](#tab/html)
+# [CDN](#tab/html)
 
-To use the toolkit via `mgt-loader`, add the reference in a script to your code:
+To use the toolkit via a CDN, add the following script and markup to your html page:
 
 ```html
-<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
-
-<mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
+<script type="module">
+  import { registerMgtComponents, Providers, Msal2Provider } from 'https://unpkg.com/@microsoft/mgt@4';
+  Providers.globalProvider = new Msal2Provider({clientId: '[CLIENT-ID]'});
+  registerMgtComponents();
+</script>
 <mgt-login></mgt-login>
 ```
 
@@ -130,7 +132,7 @@ Providers are available via a single package and can be installed as needed. The
 
 <b>@microsoft/mgt</b>
 
-The `@microsoft/mgt` package is a wrapper package that includes all the preceding packages and re-exports them so they're available via a single package that you can install. This package also includes the `mgt-loader.js` script which will load and register all the components into a web page.
+The `@microsoft/mgt` package is a wrapper package that includes all the preceding packages and re-exports them so they're available via a single package that you can install. This package also includes the `mgt.js` script which can be used via a CDN link.
 
 <b>@microsoft/mgt-react</b>
 
