@@ -138,7 +138,7 @@ npm i --save-dev babel-loader@8.3.0 @babel/plugin-transform-optional-chaining @b
 
 ### Modify the webpack configuration
 
-SharePoint Framework provides an extensibility model to [modify the webpack configuration](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/toolchain/extending-webpack-in-build-pipeline) used to bundle the web parts. Locate and open `gulpfile.js`. Add the following code above the line containing `build.initialize(require('gulp'));`
+SharePoint Framework provides an extensibility model to [modify the webpack configuration](https://learn.microsoft.com/sharepoint/dev/spfx/toolchain/extending-webpack-in-build-pipeline) used to bundle the web parts. Locate and open `gulpfile.js`. Add the following code above the line containing `build.initialize(require('gulp'));`
 
 ```JavaScript
 const litFolders = ['node_modules/lit/', 'node_modules/@lit/', 'node_modules/lit-html/'];
