@@ -1,5 +1,5 @@
 ---
-title: "Review guest access to your Microsoft 365 groups using the access reviews API in Microsoft Graph"
+title: "Review guest access to your Microsoft 365 groups using access reviews APIs"
 description: "Learn how to use the access reviews API to review external/guest user access to your organization's resources through Microsoft 365 groups in your Microsoft Entra tenant."
 author: "FaithOmbongi"
 ms.author: ombongifaith
@@ -10,7 +10,7 @@ ms.date: 11/01/2022
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use the access reviews APIs to review and attest to the access that principals have to resources in my organization, so that I can ensure proper security and compliance in my organization.
 ---
 
-# Review guest access to your Microsoft 365 groups using the access reviews API in Microsoft Graph
+# Review guest access to your Microsoft 365 groups using access reviews APIs
 
 The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. In cross-tenant collaboration, external users can have access resources such as files, notes, calendars, and even Teams conversations. This access can be efficiently managed through Microsoft 365 groups. Using the access reviews API, organizations can therefore periodically attest to principals that have access to such groups and by extension, other resources in the organization.
 

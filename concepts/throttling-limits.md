@@ -502,4 +502,4 @@ Viva Engage API calls are subject to rate limiting, allowing 10 requests per use
 
 ## Related content
 
-- [Best practices for working with Microsoft Graph](best-practices-concept)
+- [Best practices for working with Microsoft Graph](best-practices-concept.md)
