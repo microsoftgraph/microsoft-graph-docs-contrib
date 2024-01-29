@@ -18608,6 +18608,10 @@ items:
                     href: api/team-list-permissiongrants.md
                   - name: Get open shifts across all joined teams
                     href: api/team-getopenshifts.md
+                  - name: Get shifts across all joined teams
+                    href: api/team-getshifts.md
+                  - name: Get time offs across all joined teams
+                    href: api/team-gettimesoff.md
                   - name: Team template
                     items:
                       - name: Team template
