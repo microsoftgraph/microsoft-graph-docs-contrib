@@ -49,7 +49,7 @@ You can use the `$expand=canvasLayout` query string parameter to include the con
 
 | Name       | Description |
 |:---------------|:--------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 | Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. We recommend including this header when the response will be used in another request. |
 
@@ -97,6 +97,10 @@ GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-page-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-page-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -186,6 +190,10 @@ GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-sitepage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-sitepage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
