@@ -618,7 +618,7 @@ The following example shows a request.
 
 > **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in body as `../hostedContents/1/$value`.).
 
-**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`.
+**contentBytes** must be set to binary string Base64-encoded bytes. You can convert an item to binary Base64-encoded bytes in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`, for example.
 
 
 # [HTTP](#tab/http)
@@ -743,7 +743,7 @@ The following example shows a request.
 > * The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in content as `../hostedContents/1/$value`.).
 > * The maximum possible size of hosted content is 4 MB.
 
-**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`.
+**contentBytes** must be set to binary string Base64-encoded bytes. You can convert an item to binary Base64-encoded bytes in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`, for example.
 
 
 # [HTTP](#tab/http)
@@ -883,7 +883,7 @@ Content-type: application/json
 }
 ```
 
-### Example 7 : @mention a channel in a channel message
+### Example 7: @mention a channel in a channel message
 
 #### Request
 The following example shows a request. For information about how to get a list of channels in a team, see [List channels](../api/channel-list.md).
@@ -1177,7 +1177,7 @@ Content-type: application/json
 }
 ```
 
-### Example 9 : @mention a tag in a channel message
+### Example 9: @mention a tag in a channel message
 
 #### Request
 The following example shows a request. For information about how to get a list of tags in a team, see [List teamworkTags](../api/teamworktag-list.md).
