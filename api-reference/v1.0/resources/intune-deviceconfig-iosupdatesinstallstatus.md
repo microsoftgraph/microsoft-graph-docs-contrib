@@ -36,3 +36,4 @@ Not yet documented
 |notSupportedOperation|-2016330701|Not yet documented|
 |sharedDeviceUserLoggedInError|-2016330699|Not yet documented|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|Not yet documented|
+|unknown|-2016327712|Not yet documented|
