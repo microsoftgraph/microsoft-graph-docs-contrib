@@ -51,7 +51,6 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_delete",
