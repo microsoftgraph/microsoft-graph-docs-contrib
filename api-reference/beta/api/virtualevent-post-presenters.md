@@ -1,6 +1,6 @@
 ---
 title: "Create virtualEventPresenter"
-description: "Create a new virtualEventPresenter object."
+description: "Create a new virtualEventPresenter object to a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new virtualEventPresenter object to a virtual event. Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object to a virtual event. 
+
+Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 ## Permissions
 
@@ -47,7 +49,7 @@ POST /solutions/virtualEvents/townhalls/{townhallId}/presenters
 
 In the request body, supply a JSON representation of the [virtualEventPresenter](../resources/virtualeventpresenter.md) object.
 
-You can specify the following properties when creating a **virtualEventPresenter**.
+You can specify the following properties when you create a **virtualEventPresenter**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -62,10 +64,12 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "create_virtualeventpresenter_from_"
+  "name": "create_virtualeventpresenter_from_",
+  "sampleKeys": ["502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742"]
 }
 -->
 ``` http
@@ -83,7 +87,8 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
