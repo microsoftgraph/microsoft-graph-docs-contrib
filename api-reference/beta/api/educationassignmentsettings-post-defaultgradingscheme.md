@@ -49,7 +49,6 @@ In the request body, supply a JSON representation of the [educationGradingScheme
 
 You can specify the following properties when creating an **educationGradingScheme**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the grading scheme.|
