@@ -24,18 +24,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+> [!NOTE]
+> The `/accessPackageAssignmentRequests` path will be retired soon. Use the `/assignmentRequests` path instead.
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+POST /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageAssignmentRequestId}/cancel
 POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}/cancel
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply a JSON representation of an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.

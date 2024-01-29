@@ -39,7 +39,7 @@ DELETE /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/userSource
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -50,9 +50,6 @@ Use the employee learning APIs to do the following:
    - [Update details of learning course activity ](../api/learningcourseactivity-update.md) by using **learningCourseActivityId**.
    - [Delete learning course activity](../api/learningcourseactivity-delete.md)
    
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 - [Enable employee learning using the collaborative capabilities in Teams](/graph/teams-concept-overview#enable-employee-learning-using-the-collaborative-capabilities-in-teams).
 - Try the employee learning API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

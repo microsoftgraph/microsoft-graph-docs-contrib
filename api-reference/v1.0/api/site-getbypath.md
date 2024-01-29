@@ -1,6 +1,5 @@
 ---
 author: spgraph-docs-team
-ms.date: 09/10/2017
 title: Get SharePoint site by path
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -39,6 +38,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /sites/{hostname}:/{relative-path}
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
 ## Example
 
 ### Request

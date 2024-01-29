@@ -49,7 +49,7 @@ https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
