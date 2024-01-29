@@ -245,7 +245,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create, read, update and delete applications and service principals without a signed-in user.  Does not allow management of consent grants. | Allows the app to create, read, update and delete applications and service principals on behalf of the signed-in user. Does not allow management of consent grants. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [Application.ReadWrite.All](../includes/permissions-notes/Application.ReadWrite.All.md)]
+[!INCLUDE [Application.ReadWrite.All](../includes/permissions-notes/application.readwrite.all.md)]
 
 ---
 
@@ -258,7 +258,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create other applications, and fully manage those applications (read, update, update application secrets and delete), without a signed-in user.  It cannot update any apps that it is not an owner of. | - 
 | AdminConsentRequired | Yes | - 
 
-[!INCLUDE [Application.ReadWrite.OwnedBy](../includes/permissions-notes/Application.ReadWrite.OwnedBy.md)]
+[!INCLUDE [Application.ReadWrite.OwnedBy](../includes/permissions-notes/application.readwrite.ownedby.md)]
 
 ---
 
@@ -282,7 +282,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, without a signed-in user. | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [AppRoleAssignment.ReadWrite.All](../includes/permissions-notes/AppRoleAssignment.ReadWrite.All.md)]
+[!INCLUDE [AppRoleAssignment.ReadWrite.All](../includes/permissions-notes/approleassignment.readwrite.all.md)]
 
 ---
 
@@ -603,7 +603,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read events of all calendars without a signed-in user. | Allows the app to read events in user calendars .  
 | AdminConsentRequired | Yes | No 
 
-[!INCLUDE [Calendars.Read](../includes/permissions-notes/Calendars.Read.md)]
+[!INCLUDE [Calendars.Read](../includes/permissions-notes/calendars.read.md)]
 
 ---
 
@@ -649,7 +649,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create, read, update, and delete events of all calendars without a signed-in user. | Allows the app to create, read, update, and delete events in user calendars.  
 | AdminConsentRequired | Yes | No 
 
-[!INCLUDE [Calendars.ReadWrite](../includes/permissions-notes/Calendars.ReadWrite.md)]
+[!INCLUDE [Calendars.ReadWrite](../includes/permissions-notes/calendars.readwrite.md)]
 
 ---
 
@@ -684,7 +684,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read all PSTN and direct routing call log data without a signed-in user. | - 
 | AdminConsentRequired | Yes | - 
 
-[!INCLUDE [CallRecord-PstnCalls.Read.All](../includes/permissions-notes/CallRecord-PstnCalls.Read.All.md)]
+[!INCLUDE [CallRecord-PstnCalls.Read.All](../includes/permissions-notes/callrecord-pstncalls.read.all.md)]
 
 ---
 
@@ -697,7 +697,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read call records for all calls and online meetings without a signed-in user. | - 
 | AdminConsentRequired | Yes | - 
 
-[!INCLUDE [CallRecords.Read.All](../includes/permissions-notes/CallRecords.Read.All.md)]
+[!INCLUDE [CallRecords.Read.All](../includes/permissions-notes/callrecords.read.all.md)]
 
 ---
 
@@ -1238,7 +1238,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read all contacts in all mailboxes without a signed-in user. | Allows the app to read user contacts.   
 | AdminConsentRequired | Yes | No 
 
-[!INCLUDE [Contacts.Read](../includes/permissions-notes/Contacts.Read.md)]
+[!INCLUDE [Contacts.Read](../includes/permissions-notes/contacts.read.md)]
 
 ---
 
@@ -1262,7 +1262,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user. | Allows the app to create, read, update, and delete user contacts.  
 | AdminConsentRequired | Yes | No 
 
-[!INCLUDE [Contacts.ReadWrite](../includes/permissions-notes/Contacts.ReadWrite.md)]
+[!INCLUDE [Contacts.ReadWrite](../includes/permissions-notes/contacts.readwrite.md)]
 
 ---
 
@@ -1528,7 +1528,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and write all device properties without a signed in user.  Does not allow device creation, device deletion or update of device alternative security identifiers. | - 
 | AdminConsentRequired | Yes | - 
 
-[!INCLUDE [Device.ReadWrite.All](../includes/permissions-notes/Device.ReadWrite.All.md)]
+[!INCLUDE [Device.ReadWrite.All](../includes/permissions-notes/device.readwrite.all.md)]
 
 ---
 
@@ -1563,7 +1563,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune, without a signed-in user. | Allows the app to read the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [DeviceManagementApps.Read.All](../includes/permissions-notes/DeviceManagementApps.Read.All.md)]
+[!INCLUDE [DeviceManagementApps.Read.All](../includes/permissions-notes/devicemanagementapps.read.all.md)]
 
 ---
 
@@ -1576,7 +1576,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and write the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune, without a signed-in user. | Allows the app to read and write the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [DeviceManagementApps.ReadWrite.All](../includes/permissions-notes/DeviceManagementApps.ReadWrite.All.md)]
+[!INCLUDE [DeviceManagementApps.ReadWrite.All](../includes/permissions-notes/devicemanagementapps.readwrite.all.md)]
 
 ---
 
@@ -1589,7 +1589,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups, without a signed-in user. | Allows the app to read properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [DeviceManagementConfiguration.Read.All](../includes/permissions-notes/DeviceManagementConfiguration.Read.All.md)]
+[!INCLUDE [DeviceManagementConfiguration.Read.All](../includes/permissions-notes/devicemanagementconfiguration.read.all.md)]
 
 ---
 
@@ -1602,7 +1602,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and write properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups, without a signed-in user. | Allows the app to read and write properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [DeviceManagementConfiguration.ReadWrite.All](../includes/permissions-notes/DeviceManagementConfiguration.ReadWrite.All.md)]
+[!INCLUDE [DeviceManagementConfiguration.ReadWrite.All](../includes/permissions-notes/devicemanagementconfiguration.readwrite.all.md)]
 
 ---
 
@@ -1615,7 +1615,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to perform remote high impact actions such as wiping the device or resetting the passcode on devices managed by Microsoft Intune, without a signed-in user. | Allows the app to perform remote high impact actions such as wiping the device or resetting the passcode on devices managed by Microsoft Intune. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [DeviceManagementManagedDevices.PrivilegedOperations.All](../includes/permissions-notes/DeviceManagementManagedDevices.PrivilegedOperations.All.md)]
+[!INCLUDE [DeviceManagementManagedDevices.PrivilegedOperations.All](../includes/permissions-notes/devicemanagementmanageddevices.privilegedoperations.all.md)]
 
 ---
 
@@ -1628,7 +1628,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read the properties of devices managed by Microsoft Intune, without a signed-in user. | Allows the app to read the properties of devices managed by Microsoft Intune. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [DeviceManagementManagedDevices.Read.All](../includes/permissions-notes/DeviceManagementManagedDevices.Read.All.md)]
+[!INCLUDE [DeviceManagementManagedDevices.Read.All](../includes/permissions-notes/devicemanagementmanageddevices.read.all.md)]
 
 ---
 
@@ -1641,7 +1641,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and write the properties of devices managed by Microsoft Intune, without a signed-in user. Does not allow high impact operations such as remote wipe and password reset on the device's owner | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device's owner. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [DeviceManagementManagedDevices.ReadWrite.All](../includes/permissions-notes/DeviceManagementManagedDevices.ReadWrite.All.md)]
+[!INCLUDE [DeviceManagementManagedDevices.ReadWrite.All](../includes/permissions-notes/devicemanagementmanageddevices.readwrite.all.md)]
 
 ---
 
@@ -1654,7 +1654,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings, without a signed-in user. | Allows the app to read the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [DeviceManagementRBAC.Read.All](../includes/permissions-notes/DeviceManagementRBAC.Read.All.md)]
+[!INCLUDE [DeviceManagementRBAC.Read.All](../includes/permissions-notes/devicemanagementrbac.read.all.md)]
 
 ---
 
@@ -1667,7 +1667,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and write the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings, without a signed-in user. | Allows the app to read and write the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [DeviceManagementRBAC.ReadWrite.All](../includes/permissions-notes/DeviceManagementRBAC.ReadWrite.All.md)]
+[!INCLUDE [DeviceManagementRBAC.ReadWrite.All](../includes/permissions-notes/devicemanagementrbac.readwrite.all.md)]
 
 ---
 
@@ -1680,7 +1680,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read Microsoft Intune service properties including device enrollment and third party service connection configuration, without a signed-in user. | Allows the app to read Microsoft Intune service properties including device enrollment and third party service connection configuration. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [DeviceManagementServiceConfig.Read.All](../includes/permissions-notes/DeviceManagementServiceConfig.Read.All.md)]
+[!INCLUDE [DeviceManagementServiceConfig.Read.All](../includes/permissions-notes/devicemanagementserviceconfig.read.all.md)]
 
 ---
 
@@ -1693,7 +1693,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and write Microsoft Intune service properties including device enrollment and third party service connection configuration, without a signed-in user. | Allows the app to read and write Microsoft Intune service properties including device enrollment and third party service connection configuration. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [DeviceManagementServiceConfig.ReadWrite.All](../includes/permissions-notes/DeviceManagementServiceConfig.ReadWrite.All.md)]
+[!INCLUDE [DeviceManagementServiceConfig.ReadWrite.All](../includes/permissions-notes/devicemanagementserviceconfig.readwrite.all.md)]
 
 ---
 
@@ -1706,7 +1706,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to have the same access to information in the directory as the signed-in user. 
 | AdminConsentRequired | - | Yes 
 
-[!INCLUDE [Directory.AccessAsUser.All](../includes/permissions-notes/Directory.AccessAsUser.All.md)]
+[!INCLUDE [Directory.AccessAsUser.All](../includes/permissions-notes/directory.accessasuser.all.md)]
 
 ---
 
@@ -1719,7 +1719,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read data in your organization's directory, such as users, groups and apps, without a signed-in user. | Allows the app to read data in your organization's directory, such as users, groups and apps. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [Directory.Read.All](../includes/permissions-notes/Directory.Read.All.md)]
+[!INCLUDE [Directory.Read.All](../includes/permissions-notes/directory.read.all.md)]
 
 ---
 
@@ -1732,7 +1732,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user.  Does not allow user or group deletion. | Allows the app to read and write data in your organization's directory, such as users, and groups.  It does not allow the app to delete users or groups, or reset user passwords. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [Directory.ReadWrite.All](../includes/permissions-notes/Directory.ReadWrite.All.md)]
+[!INCLUDE [Directory.ReadWrite.All](../includes/permissions-notes/directory.readwrite.all.md)]
 
 ---
 
@@ -2297,7 +2297,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read the signed-in user's files. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [Files.Read](../includes/permissions-notes/Files.Read.md)]
+[!INCLUDE [Files.Read](../includes/permissions-notes/files.read.md)]
 
 ---
 
@@ -2321,7 +2321,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | (Preview) Allows the app to read files that the user selects. The app has access for several hours after the user selects a file. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [Files.Read.Selected](../includes/permissions-notes/Files.Read.Selected.md)]
+[!INCLUDE [Files.Read.Selected](../includes/permissions-notes/files.read.selected.md)]
 
 ---
 
@@ -2334,7 +2334,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read, create, update and delete the signed-in user's files. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [Files.ReadWrite](../includes/permissions-notes/Files.ReadWrite.md)]
+[!INCLUDE [Files.ReadWrite](../includes/permissions-notes/files.readwrite.md)]
 
 ---
 
@@ -2369,7 +2369,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | (Preview) Allows the app to read and write files that the user selects. The app has access for several hours after the user selects a file. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [Files.ReadWrite.Selected](../includes/permissions-notes/Files.ReadWrite.Selected.md)]
+[!INCLUDE [Files.ReadWrite.Selected](../includes/permissions-notes/files.readwrite.selected.md)]
 
 ---
 
@@ -2426,7 +2426,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read group properties and memberships, and read conversations for all groups, without a signed-in user. | Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access.  
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [Group.Read.All](../includes/permissions-notes/Group.Read.All.md)]
+[!INCLUDE [Group.Read.All](../includes/permissions-notes/group.read.all.md)]
 
 ---
 
@@ -2439,7 +2439,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create groups, read all group properties and memberships, update group properties and memberships, and delete groups. Also allows the app to read and write conversations. All of these operations can be performed by the app without a signed-in user. | Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Additionally allows group owners to manage their groups and allows group members to update group content. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [Group.ReadWrite.All](../includes/permissions-notes/Group.ReadWrite.All.md)]
+[!INCLUDE [Group.ReadWrite.All](../includes/permissions-notes/group.readwrite.all.md)]
 
 ---
 
@@ -2947,7 +2947,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read mail in all mailboxes without a signed-in user. | Allows the app to read the signed-in user's mailbox. 
 | AdminConsentRequired | Yes | No 
 
-[!INCLUDE [Mail.Read](../includes/permissions-notes/Mail.Read.md)]
+[!INCLUDE [Mail.Read](../includes/permissions-notes/mail.read.md)]
 
 ---
 
@@ -2960,7 +2960,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read mail a user can access, including their own and shared mail. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [Mail.Read.Shared](../includes/permissions-notes/Mail.Read.Shared.md)]
+[!INCLUDE [Mail.Read.Shared](../includes/permissions-notes/mail.read.shared.md)]
 
 ---
 
@@ -3006,7 +3006,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail. | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.  
 | AdminConsentRequired | Yes | No 
 
-[!INCLUDE [Mail.ReadWrite](../includes/permissions-notes/Mail.ReadWrite.md)]
+[!INCLUDE [Mail.ReadWrite](../includes/permissions-notes/mail.readwrite.md)]
 
 ---
 
@@ -3019,7 +3019,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to create, read, update, and delete mail a user has permission to access, including their own and shared mail. Does not include permission to send mail. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [Mail.ReadWrite.Shared](../includes/permissions-notes/Mail.ReadWrite.Shared.md)]
+[!INCLUDE [Mail.ReadWrite.Shared](../includes/permissions-notes/mail.readwrite.shared.md)]
 
 ---
 
@@ -3032,7 +3032,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to send mail as any user without a signed-in user. | Allows the app to send mail as users in the organization.  
 | AdminConsentRequired | Yes | No 
 
-[!INCLUDE [Mail.Send](../includes/permissions-notes/Mail.Send.md)]
+[!INCLUDE [Mail.Send](../includes/permissions-notes/mail.send.md)]
 
 ---
 
@@ -3045,7 +3045,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to send mail as the signed-in user, including sending on-behalf of others. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [Mail.Send.Shared](../includes/permissions-notes/Mail.Send.Shared.md)]
+[!INCLUDE [Mail.Send.Shared](../includes/permissions-notes/mail.send.shared.md)]
 
 ---
 
@@ -3058,7 +3058,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read user's mailbox settings without a signed-in user. Does not include permission to send mail. | Allows the app to the read user's mailbox settings. Does not include permission to send mail. 
 | AdminConsentRequired | Yes | No 
 
-[!INCLUDE [MailboxSettings.Read](../includes/permissions-notes/MailboxSettings.Read.md)]
+[!INCLUDE [MailboxSettings.Read](../includes/permissions-notes/mailboxsettings.read.md)]
 
 ---
 
@@ -3071,7 +3071,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to create, read, update, and delete user's mailbox settings without a signed-in user. Does not include permission to send mail. | Allows the app to create, read, update, and delete user's mailbox settings. Does not include permission to send mail. 
 | AdminConsentRequired | Yes | No 
 
-[!INCLUDE [MailboxSettings.ReadWrite](../includes/permissions-notes/MailboxSettings.ReadWrite.md)]
+[!INCLUDE [MailboxSettings.ReadWrite](../includes/permissions-notes/mailboxsettings.readwrite.md)]
 
 ---
 
@@ -3317,7 +3317,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read online meeting artifacts in your organization, without a signed-in user. | Allows the app to read online meeting artifacts on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | No 
 
-[!INCLUDE [OnlineMeetingArtifact.Read.All](../includes/permissions-notes/OnlineMeetingArtifact.Read.All.md)]
+[!INCLUDE [OnlineMeetingArtifact.Read.All](../includes/permissions-notes/onlinemeetingartifact.read.all.md)]
 
 ---
 
@@ -3330,7 +3330,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read all recordings of all online meetings, without a signed-in user. | Allows the app to read all recordings of online meetings, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [OnlineMeetingRecording.Read.All](../includes/permissions-notes/OnlineMeetingRecording.Read.All.md)]
+[!INCLUDE [OnlineMeetingRecording.Read.All](../includes/permissions-notes/onlinemeetingrecording.read.all.md)]
 
 ---
 
@@ -3343,7 +3343,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read online meeting details on behalf of the signed-in user. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [OnlineMeetings.Read](../includes/permissions-notes/OnlineMeetings.Read.md)]
+[!INCLUDE [OnlineMeetings.Read](../includes/permissions-notes/onlinemeetings.read.md)]
 
 ---
 
@@ -3367,7 +3367,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to read and create online meetings on behalf of the signed-in user. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [OnlineMeetings.ReadWrite](../includes/permissions-notes/OnlineMeetings.ReadWrite.md)]
+[!INCLUDE [OnlineMeetings.ReadWrite](../includes/permissions-notes/onlinemeetings.readwrite.md)]
 
 ---
 
@@ -3391,7 +3391,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read all transcripts of all online meetings, without a signed-in user. | Allows the app to read all transcripts of online meetings, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [OnlineMeetingTranscript.Read.All](../includes/permissions-notes/OnlineMeetingTranscript.Read.All.md)]
+[!INCLUDE [OnlineMeetingTranscript.Read.All](../includes/permissions-notes/onlinemeetingtranscript.read.all.md)]
 
 ---
 
@@ -4132,7 +4132,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the application to create print jobs on behalf of the signed-in user and upload document content to print jobs that the signed-in user created. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [PrintJob.Create](../includes/permissions-notes/PrintJob.Create.md)]
+[!INCLUDE [PrintJob.Create](../includes/permissions-notes/printjob.create.md)]
 
 ---
 
@@ -4156,7 +4156,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the application to read the metadata and document content of print jobs that the signed-in user created. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [PrintJob.Read](../includes/permissions-notes/PrintJob.Read.md)]
+[!INCLUDE [PrintJob.Read](../includes/permissions-notes/printjob.read.md)]
 
 ---
 
@@ -4169,7 +4169,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the application to read the metadata and document content of print jobs without a signed-in user.  | Allows the application to read the metadata and document content of print jobs on behalf of the signed-in user.  
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [PrintJob.Read.All](../includes/permissions-notes/PrintJob.Read.All.md)]
+[!INCLUDE [PrintJob.Read.All](../includes/permissions-notes/printjob.read.all.md)]
 
 ---
 
@@ -4182,7 +4182,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the application to read the metadata of print jobs that the signed-in user created. Does not allow access to print job document content. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [PrintJob.ReadBasic](../includes/permissions-notes/PrintJob.ReadBasic.md)]
+[!INCLUDE [PrintJob.ReadBasic](../includes/permissions-notes/printjob.readbasic.md)]
 
 ---
 
@@ -4195,7 +4195,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the application to read the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Allows the application to read the metadata of print jobs on behalf of the signed-in user. Does not allow access to print job document content. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [PrintJob.ReadBasic.All](../includes/permissions-notes/PrintJob.ReadBasic.All.md)]
+[!INCLUDE [PrintJob.ReadBasic.All](../includes/permissions-notes/printjob.readbasic.all.md)]
 
 ---
 
@@ -4208,7 +4208,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the application to read and update the metadata and document content of print jobs that the signed-in user created. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [PrintJob.ReadWrite](../includes/permissions-notes/PrintJob.ReadWrite.md)]
+[!INCLUDE [PrintJob.ReadWrite](../includes/permissions-notes/printjob.readwrite.md)]
 
 ---
 
@@ -4221,7 +4221,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the application to read and update the metadata and document content of print jobs without a signed-in user. | Allows the application to read and update the metadata and document content of print jobs on behalf of the signed-in user.  
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [PrintJob.ReadWrite.All](../includes/permissions-notes/PrintJob.ReadWrite.All.md)]
+[!INCLUDE [PrintJob.ReadWrite.All](../includes/permissions-notes/printjob.readwrite.all.md)]
 
 ---
 
@@ -4234,7 +4234,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the application to read and update the metadata of print jobs that the signed-in user created. Does not allow access to print job document content. 
 | AdminConsentRequired | - | No 
 
-[!INCLUDE [PrintJob.ReadWriteBasic](../includes/permissions-notes/PrintJob.ReadWriteBasic.md)]
+[!INCLUDE [PrintJob.ReadWriteBasic](../includes/permissions-notes/printjob.readwritebasic.md)]
 
 ---
 
@@ -4247,7 +4247,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the application to read and update the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Allows the application to read and update the metadata of print jobs on behalf of the signed-in user. Does not allow access to print job document content. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [PrintJob.ReadWriteBasic.All](../includes/permissions-notes/PrintJob.ReadWriteBasic.All.md)]
+[!INCLUDE [PrintJob.ReadWriteBasic.All](../includes/permissions-notes/printjob.readwritebasic.all.md)]
 
 ---
 
@@ -4625,7 +4625,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, without a signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. 
 | AdminConsentRequired | Yes | Yes 
 
-[!INCLUDE [RoleManagement.ReadWrite.Directory](../includes/permissions-notes/RoleManagement.ReadWrite.Directory.md)]
+[!INCLUDE [RoleManagement.ReadWrite.Directory](../includes/permissions-notes/rolemanagement.readwrite.directory.md)]
 
 ---
 
@@ -6206,10 +6206,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | - | b340eb25-3456-403f-be2f-af7a0d370277 
-| DisplayText | - | Read all users' basic profiles 
-| Description | - | Allows the app to read a basic set of profile properties of other users in your organization on behalf of the signed-in user. This includes display name, first and last name, email address and photo. 
-| AdminConsentRequired | - | No 
+| Identifier | 97235f07-e226-4f63-ace3-39588e11d3a1 | b340eb25-3456-403f-be2f-af7a0d370277 
+| DisplayText | Read all users' basic profiles | Read all users' basic profiles 
+| Description | Allows the app to read a basic set of profile properties of other users in your organization without a signed-in user. Includes display name, first and last name, email address, open extensions, and photo. | Allows the app to read a basic set of profile properties of other users in your organization on behalf of the signed-in user. This includes display name, first and last name, email address and photo. 
+| AdminConsentRequired | Yes | No 
 
 ---
 

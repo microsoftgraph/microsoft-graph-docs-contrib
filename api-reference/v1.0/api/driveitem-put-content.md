@@ -54,7 +54,7 @@ PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|text/plain. Required.|
 
 ## Request body
