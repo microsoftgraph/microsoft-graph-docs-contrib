@@ -1,6 +1,6 @@
 ---
 title: shiftsUserInfo resource type
-description: A description of the user in a schedule.
+description: Represents the details of a user in a schedule.
 author: shanemalone
 ms.localizationpriority: high
 ms.prod: microsoft-teams
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Information about the user in a [schedule](schedule.md).
+Represents the details of a user in a [schedule](schedule.md).
 
 ## Properties
 
@@ -24,7 +24,7 @@ Information about the user in a [schedule](schedule.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -41,7 +41,7 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | lastModifiedBy        | [identitySet](identityset.md)     | Identity of the user who last modified the **openShift** object. Inherited from [changeTrackedEntity](changetrackedentity.md).|
 | lastModifiedDateTime  | DateTimeOffset                    | Date and time when the **openShift** was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](changetrackedentity.md).|
 | schedulingGroupId     | String                            | The ID of the [schedulingGroup](schedulinggroup.md) that contains the **openShift**.  |
-| schedulingGroupInfo  | [schedulingGroupInfo](schedulinggroupinfo.md)  | Information of the scheduling group the **shift** is part of. |
+| schedulingGroupInfo  | [schedulingGroupInfo](schedulinggroupinfo.md)  | Information about the scheduling group to which the **shift** belongs. |
 | sharedOpenShift       | [openShiftItem](openshiftitem.md) | The shared version of this **openShift** that is viewable by both employees and managers.                         |
 | teamInfo             | [shiftsTeamInfo](shiftsteaminfo.md)                  | Information of the team that the **openShift** is in. |
 

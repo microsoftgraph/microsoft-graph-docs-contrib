@@ -1,6 +1,6 @@
 ---
 title: "team: getShifts"
-description: "Get all Shift objects across all teams a user is a direct member of."
+description: "Get all shift objects across all teams to which a user is a direct member."
 author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all [shift](../resources/shift.md) objects across all teams a user is a direct member of.
+Get all [shift](../resources/shift.md) objects across all teams to which a user is a direct member.
 
 ## Permissions
 

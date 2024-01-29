@@ -1,6 +1,6 @@
 ---
 title: schedulingGroupInfo resource type
-description: A description of the scheduling group.
+description: Represents the details of a scheduling group .
 author: shanemalone
 ms.localizationpriority: high
 ms.prod: microsoft-teams
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Information about the [schedulingGroup](schedulingGroup.md).
+Represents the details of a [schedulingGroup](schedulingGroup.md).
 
 ## Properties
 
@@ -24,7 +24,7 @@ Information about the [schedulingGroup](schedulingGroup.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
