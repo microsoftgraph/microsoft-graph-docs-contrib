@@ -51,9 +51,9 @@ PATCH /education/classes/{educationClassId}/assignmentSettings/gradingSchemes/{e
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Required.|
-|grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|**TODO: Add Description** Optional.|
-|hidePointsDuringGrading|Boolean|**TODO: Add Description** Required.|
+|displayName|String|The name of the grading scheme.|
+|grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The name of the grading scheme.|
+|hidePointsDuringGrading|Boolean|Display setting for our UI. Whether teachers can grade with points in addition to letter grades.|
 
 
 
