@@ -15,7 +15,7 @@ This article covers how to use Microsoft Graph Toolkit components in a [SharePoi
 1. Add the SharePoint Provider.
 1. Add components.
 1. Configure permissions.
-1. Deploy the Microsoft Graph Toolkit SharePoint Framework package.
+1. Configure webpack
 1. Build and deploy your web part.
 1. Test your web part.
 
@@ -318,6 +318,49 @@ Determine which Microsoft Graph API permissions you need to depend on the compon
   }
 ]
 ```
+
+## Configure webpack
+
+In order to build your web part the SharePoint Framework webpack configuration must be updated to correctly handle modern JavaScript with optional chaining and nullish coalescing through additional Babel transforms.
+
+### Install Babel packages
+
+To correctly handle dependencies that emit ES2021 based code a babel loader and some transforms need to be added as dev dependencies to the project
+
+```bash
+npm i --save-dev babel-loader@8.3.0 @babel/plugin-transform-optional-chaining @babel/plugin-transform-nullish-coalescing-operator @babel/plugin-transform-logical-assignment-operators
+```
+
+### Modify the webpack configuration
+
+SharePoint Framework provides an extensibility model to [modify the webpack configuration](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/toolchain/extending-webpack-in-build-pipeline) used to bundle the web parts. Locate and open `gulpfile.js`. Add the following code above the line containing `build.initialize(require('gulp'));`
+
+```JavaScript
+const litFolders = ['node_modules/lit/', 'node_modules/@lit/', 'node_modules/lit-html/'];
+build.configureWebpack.mergeConfig({
+  additionalConfiguration: generatedConfiguration => {
+    generatedConfiguration.module.rules.push({
+      test: /\.js$/,
+      // only run on lit packages
+      include: resourcePath => 
+        litFolders.some(litFolder => resourcePath.includes(litFolder)),
+      use: {
+        loader: 'babel-loader',
+        options: {
+          plugins: [
+            '@babel/plugin-transform-optional-chaining',
+            '@babel/plugin-transform-nullish-coalescing-operator',
+            '@babel/plugin-transform-logical-assignment-operators'
+          ]
+        }
+      }
+    });
+    return generatedConfiguration;
+  }
+});
+```
+
+This ensures that the code from the `lit` library is correctly processed by the SharePoint Framework build chain.
 
 ## Build and deploy your web part
 

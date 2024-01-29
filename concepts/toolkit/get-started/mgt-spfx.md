@@ -118,8 +118,52 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 }
 ```
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Make sure that your root web part class does not import any Microsoft Graph Toolkit resources from `@microsoft/mgt-react`, these should only be imported inside the lazy loaded React components.
+
+## Configure webpack
+
+In order to build your web part the SharePoint Framework webpack configuration must be updated to correctly handle modern JavaScript with optional chaining and nullish coalescing through additional Babel transforms.
+
+> ![IMPORTANT]
+> If you do not configure webpack to process modern JavaScript then you will be unable to build web parts that use Microsoft Graph Toolkit. 
+
+### Install Babel packages
+
+To correctly handle dependencies that emit ES2021 based code a babel loader and some transforms need to be added as dev dependencies to the project
+
+```bash
+npm i --save-dev babel-loader@8.3.0 @babel/plugin-transform-optional-chaining @babel/plugin-transform-nullish-coalescing-operator @babel/plugin-transform-logical-assignment-operators
+```
+
+### Modify the webpack configuration
+
+SharePoint Framework provides an extensibility model to [modify the webpack configuration](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/toolchain/extending-webpack-in-build-pipeline) used to bundle the web parts. Locate and open `gulpfile.js`. Add the following code above the line containing `build.initialize(require('gulp'));`
+
+```JavaScript
+const litFolders = ['node_modules/lit/', 'node_modules/@lit/', 'node_modules/lit-html/'];
+build.configureWebpack.mergeConfig({
+  additionalConfiguration: generatedConfiguration => {
+    generatedConfiguration.module.rules.push({
+      test: /\.js$/,
+      // only run on lit packages
+      include: resourcePath => 
+        litFolders.some(litFolder => resourcePath.includes(litFolder)),
+      use: {
+        loader: 'babel-loader',
+        options: {
+          plugins: [
+            '@babel/plugin-transform-optional-chaining',
+            '@babel/plugin-transform-nullish-coalescing-operator',
+            '@babel/plugin-transform-logical-assignment-operators'
+          ]
+        }
+      }
+    });
+    return generatedConfiguration;
+  }
+});
+```
 
 
 ## See also
