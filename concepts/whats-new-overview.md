@@ -24,7 +24,7 @@ The [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generall
 
 ### Identity and access | Governance
 
-- Through the **attributes** property of the [accessPackageResource resource type](/graph/api/resources/accesspackageresource), you can now view details of the attributes that are collected from the requestor and sent to the resource application.
+Through the **attributes** property of the [accessPackageResource resource type](/graph/api/resources/accesspackageresource), you can now view details of the attributes that are collected from the requestor and sent to the resource application.
 
 ### Teamwork and communications | Calls and online meetings
 Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant) in a [call](/graph/api/resources/call). For more information, see [JSON payload examples](/graph/api/application-post-calls#notification---roster) of notifications with delta roster disabled or enabled.
