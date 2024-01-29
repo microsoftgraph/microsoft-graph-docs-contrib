@@ -1,6 +1,6 @@
 ---
 title: "virtualEventPresenter resource type"
-description: "Information about a virtual event presenter."
+description: "Represents information about a presenter of a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a presenter of a virtual event.
+Represents information about a presenter of a virtual event.
 
 ## Methods
 
@@ -34,7 +34,7 @@ Represents a presenter of a virtual event.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
