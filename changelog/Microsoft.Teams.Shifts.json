@@ -573,7 +573,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getShifts",
           "ChangeType": "Addition",
-          "Description": "Added the [getShifts](https://learn.microsoft.com/en-us/graph/api/team-getShifts?view=graph-rest-beta) method to the [team](https://learn.microsoft.com/en-us/graph/api/team?view=graph-rest-beta) resource.",
+          "Description": "Added the [getShifts](https://learn.microsoft.com/en-us/graph/api/team-getShifts?view=graph-rest-beta) method to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
           "Target": "team"
         },
         {
@@ -581,7 +581,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getTimesOff",
           "ChangeType": "Addition",
-          "Description": "Added the [getTimesOff](https://learn.microsoft.com/en-us/graph/api/team-getTimesOff?view=graph-rest-beta) method to the [team](https://learn.microsoft.com/en-us/graph/api/team?view=graph-rest-beta) resource.",
+          "Description": "Added the [getTimesOff](https://learn.microsoft.com/en-us/graph/api/team-getTimesOff?view=graph-rest-beta) method to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
           "Target": "team"
         }
       ],
