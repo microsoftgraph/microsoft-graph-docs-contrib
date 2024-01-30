@@ -26,6 +26,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | [Update](../api/virtualeventtownhall-update.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
 | [Publish](../api/virtualevent-publish.md) | None | Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
 | [Cancel](../api/virtualevent-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
+| [List by user role](../api/virtualeventtownhall-getbyuserrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a **virtualEventTownhall** collection where the signed-in user is either the organizer or a coorganizer. |
+| [List by user ID and role](../api/virtualeventtownhall-getbyuseridandrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a **virtualEventTownhall** collection where the specified user is either the organizer or a coorganizer. |
 
 ## Properties
 
