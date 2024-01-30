@@ -1,6 +1,6 @@
 ---
 title: "virtualEventTownhall resource type"
-description: "Represents information about a virtual event townhall."
+description: "Represents information about a virtual event town hall."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about a virtual event townhall.
+Represents information about a virtual event town hall.
 
 Inherits from [virtualEvent](../resources/virtualevent.md).
 
@@ -31,24 +31,24 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-| audience | [meetingAudience](#meetingaudience-values) | To whom the townhall is visible. |
-| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the townhall. |
-| createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of who created the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). Read-only. |
-| description | [itemBody](../resources/itembody.md) | Description of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| displayName | String | Display name of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the townhall ends. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| id | String | Unique identifier of the townhall. Inherited from [entity](../resources/entity.md). Read-only. |
-| invitedAttendees | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Invited people to the townhall. |
-| isInviteOnly | Boolean | Indicates whether the townhall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the townhall starts. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| status | [virtualEventStatus](#virtualeventstatus-values) | Status of the townhall. |
+| audience | [meetingAudience](#meetingaudience-values) | To whom the town hall is visible. |
+| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. |
+| createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of who created the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Read-only. |
+| description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| displayName | String | Display name of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| id | String | Unique identifier of the town hall. Inherited from [entity](../resources/entity.md). Read-only. |
+| invitedAttendees | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Invited people to the town hall. |
+| isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| status | [virtualEventStatus](#virtualeventstatus-values) | Status of the town hall. |
 
 ### meetingAudience values
 
 | Value | Description |
 | ----- | ----------- |
-| everyone | The townhall is open to anyone. Select this choice to include attendees from outside your organization. |
-| organization | The townhall is open to people in your organization and guests of your organization. |
+| everyone | The town hall is open to anyone. Select this choice to include attendees from outside your organization. |
+| organization | The town hall is open to people in your organization and guests of your organization. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### virtualEventStatus values
@@ -64,8 +64,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-| presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md).|
-| sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md).|
+| sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## JSON representation
 
@@ -95,4 +95,3 @@ The following JSON representation shows the resource type.
   "status": "String"
 }
 ```
-
