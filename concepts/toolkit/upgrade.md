@@ -33,9 +33,9 @@ becomes
 <mgt-login></mgt-login>
 ```
 
-### Deprecating `mgt-spfx` for building SharePoint Framework web parts
+### Removing the `mgt-spfx` package for building SharePoint Framework web parts
 
-Microsoft Graph Toolkit v4.0 deprecates the `@microsoft/mgt-spfx` package for building SharePoint Framework web parts. To ensure a great experience for our SharePoint developers, we improved our `@microsoft/mgt-spfx-utils` package and our [disambiguation](./customize-components/disambiguation.md) capabilities to offer seemless integration between SPFx and the Toolkit. This breaking change paves the way for a better developer experience and more features in the future.
+Microsoft Graph Toolkit v4.0 removes the `@microsoft/mgt-spfx` package for building SharePoint Framework web parts. To ensure a great experience for our SharePoint developers, we improved our `@microsoft/mgt-spfx-utils` package and our [disambiguation](./customize-components/disambiguation.md) capabilities to offer seemless integration between SPFx and the Toolkit. This breaking change paves the way for a better developer experience and more features in the future.
 
 ### Enums are now string unions
 
@@ -59,7 +59,7 @@ To better align with the Microsoft 365 naming, `mgt-tasks` was renamed to `mgt-p
 
 We took the opportunity to simplify and adhere to a least privileged approach for the permissions required by `mgt-person` and `mgt-planner`.
 
-* In applications using `mgt-person` with `fetch-image` and `person-detail`, users needs to consent to `Group.Read.All` or `Group.ReadWrite.All` as the previous behavior was breaking for group images.
+* In applications using `mgt-person`, users could need to consent to new permissions scopes. Please refer to our entire [permissions table](./components/person.md#microsoft-graph-permissions) for the component.
 * Minimal permission for `mgt-planner` changed from `Group.ReadWrite.All` to `Tasks.ReadWrite` for write operations and from `Group.Read.All` to `Tasks.Read` for read operations.
 
 ### `prepScopes()` is now aware of the consented permission scopes
