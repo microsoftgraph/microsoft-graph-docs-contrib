@@ -46,7 +46,7 @@ POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

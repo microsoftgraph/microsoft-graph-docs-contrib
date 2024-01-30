@@ -3,7 +3,6 @@ title: "sites: getAllSites"
 description: "List all sites across geographies in an organization - OneDrive API"
 author: tushar20
 ms.author: tkanaujia
-ms.date: 5/3/2023
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -31,6 +30,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /sites/getAllSites
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Examples
 

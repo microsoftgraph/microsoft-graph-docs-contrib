@@ -112,9 +112,11 @@ When a principal's *temporary active* membership or ownership of a group expires
 - The principal's details are automatically removed from the **members** and **owners** relationships.
 - If changes to the group are tracked using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` indicates the removed group member or owner.
 
-## PIM for groups and identity security with Zero Trust
+<!-- Start of: Link to ZT guidance: H2 section -->
 
-PIM APIs support organizations to adopt a Zero Trust approach to secure the identities in their organization. For more information about Zero Trust, see [Securing identity with Zero Trust](/security/zero-trust/deploy/identity#secure-privileged-access-with-privileged-identity-management).
+[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+
+<!-- End of: Link to ZT guidance -->
 
 ## Permissions and privileges
 

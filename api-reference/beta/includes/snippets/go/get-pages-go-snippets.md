@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-pages, err := graphClient.Sites().BySiteId("site-id").Pages().ByBaseSitePageId("baseSitePage-id").Get(context.Background(), nil)
+graphSitePage, err := graphClient.Sites().BySiteId("site-id").Pages().GraphSitePage().Get(context.Background(), nil)
 
 
 ```
