@@ -1,6 +1,6 @@
 ---
 title: "alertRecord: changeAlertRecordsPortalNotificationAsSent"
-description: "Set a list of alert records' notification status to sent via setting isPortalNotificationSent property to true for current user."
+description: "Change the `isPortalNotificationSent` property to true for a list of alert records for the current user."
 author: "abbyzhccc"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the status of the notification associated with the specified [alertRecord](../resources/devicemanagement-alertrecord.md) on the Microsoft EndPoint Manager admin center as sent, by setting the **isPortalNotificationSent** property of the [portal notification](../resources/devicemanagement-portalnotification.md) to `true`.
+Set the **isPortalNotificationSent** property of all [portal notification](../resources/devicemanagement-portalnotification.md) resources associated with the specified [alertRecord](../resources/devicemanagement-alertrecord.md) to `true`, marking them as sent. A maximum of 100 [alertRecord](../resources/devicemanagement-alertrecord.md) IDs can be received at one time, and a maximum of 100 [portal notification](../resources/devicemanagement-portalnotification.md) can be changed in the **isPortalNotificationSent** property status.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,7 +38,7 @@ Post https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/c
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -46,7 +46,7 @@ Post https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/c
 
 |Property|Type|Description|
 |:---|:---|:---|
-|alertRecordIds| String collection | The list of alertRecord Id. Max count is 100.|
+|alertRecordIds| String collection | A list of up to 100 [alertRecord](../resources/devicemanagement-alertrecord.md) IDs.|
 
 ## Response
 
