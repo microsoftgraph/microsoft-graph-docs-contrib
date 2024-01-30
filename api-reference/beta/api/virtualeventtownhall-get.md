@@ -77,32 +77,47 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.virtualEventTownhall",
     "id": "fc6e8c15-2fd7-1dd5-caa0-87056e6a12be",
-    "status": "String",
-    "displayName": "String",
+    "status": "published",
+    "displayName": "The Impact of Tech on Our Lives",
     "description": {
-      "@odata.type": "microsoft.graph.itemBody"
+      "content": "Discusses how technology has changed the way we communicate, work, and interact with each other.",
+      "contentType": "Html"
     },
     "startDateTime": {
-      "@odata.type": "microsoft.graph.dateTimeTimeZone"
+      "dateTime": "2023-11-30T16:30:00",
+      "timeZone": "Eastern Standard Time"
     },
     "endDateTime": {
-      "@odata.type": "microsoft.graph.dateTimeTimeZone"
+      "dateTime": "2023-11-30T17:00:00",
+      "timeZone": "Eastern Standard Time"
     },
     "createdBy": {
-      "@odata.type": "microsoft.graph.communicationsIdentitySet"
+      "@odata.type": "microsoft.graph.communicationsIdentitySet",
+      "application": null,
+      "device": null,
+      "user": {
+        "@odata.type": "#microsoft.graph.communicationsUserIdentity",
+        "id": "b7ef013a-c73c-4ec7-8ccb-e56290f45f68",
+        "displayName": "Diane Demoss",
+        "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     },
-    "audience": "String",
+    "audience": "everyone",
     "coOrganizers": [
       {
-        "@odata.type": "microsoft.graph.communicationsUserIdentity"
+        "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
+        "displayName": "Kenneth Brown",
+        "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
       }
     ],
     "invitedAttendees": [
       {
-        "@odata.type": "microsoft.graph.communicationsUserIdentity"
+        "@odata.type": "microsoft.graph.communicationsUserIdentity",
+        "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
+        "displayName": "Emilee Pham",
+        "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
       }
     ],
-    "isInviteOnly": "Boolean"
+    "isInviteOnly": "false"
   }
 }
 ```
