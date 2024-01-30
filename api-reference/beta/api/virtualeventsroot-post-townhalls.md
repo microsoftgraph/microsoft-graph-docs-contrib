@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_virtualevent_from_"
+  "name": "create_virtualeventtownhall"
 }
 -->
 ``` http
@@ -101,7 +101,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.virtualEvent"
+  "@odata.type": "microsoft.graph.virtualEventTownhall"
 }
 -->
 ``` http

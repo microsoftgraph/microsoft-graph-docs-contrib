@@ -102,13 +102,14 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.virtualEventTownhall"
 }
 -->
 ``` http
@@ -118,16 +119,19 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.virtualEventTownhall",
   "id": "fc6e8c15-2fd7-1dd5-caa0-87056e6a12be",
-  "status": "String",
-  "displayName": "String",
+  "status": "draft",
+  "displayName": "The Impact of Tech on Our Lives",
   "description": {
-    "@odata.type": "microsoft.graph.itemBody"
+    "content": "<p>Discusses how technology has changed the way we communicate, work, and interact with each other.<p>",
+    "contentType": "html"
   },
   "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+    "dateTime": "2023-03-30T10:10:00",
+    "timeZone": "Pacific Standard Time"
   },
   "endDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+    "dateTime": "2023-03-30T17:10:00",
+    "timeZone": "Pacific Standard Time"
   },
   "createdBy": {
     "@odata.type": "microsoft.graph.communicationsIdentitySet"
