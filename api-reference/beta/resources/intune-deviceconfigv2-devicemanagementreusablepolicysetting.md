@@ -25,7 +25,7 @@ Graph model for a reusable setting
 |[Create deviceManagementReusablePolicySetting](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-create.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|Create a new [deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) object.|
 |[Delete deviceManagementReusablePolicySetting](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-delete.md)|None|Deletes a [deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md).|
 |[Update deviceManagementReusablePolicySetting](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-update.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|Update the properties of a [deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) object.|
-|[clone action](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-clone.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|Not yet documented|
+|[clone action](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-clone.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)||
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +34,7 @@ Graph model for a reusable setting
 |displayName|String|reusable setting display name supplied by user.|
 |description|String|reusable setting description supplied by user.|
 |settingDefinitionId|String|setting definition id associated with this reusable setting.|
-|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|reusable setting configuration instance|
+|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|reusable setting configuration instance|
 |createdDateTime|DateTimeOffset|reusable setting creation date and time. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|date and time when reusable setting was last modified. This property is read-only.|
 |version|Int32|version number for reusable setting. Valid values 0 to 2147483647. This property is read-only.|

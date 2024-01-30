@@ -36,7 +36,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ## Request headers
 | Name       | Value|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone | A string representing a specific time zone for the response, for example, "Pacific Standard Time". Optional. UTC is used if this header is not specified.|
 
 ## Request body

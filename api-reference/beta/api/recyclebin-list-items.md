@@ -39,7 +39,7 @@ This method supports the `$select` and `$top` OData query parameters to customiz
 
 |Name          |Description              |
 |:-------------|:------------------------|
-|Authorization |Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request Body
 
