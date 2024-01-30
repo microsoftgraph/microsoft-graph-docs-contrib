@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event. Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md) and [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.
+
+Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md) and [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -41,7 +43,7 @@ GET /solutions/virtualEvents/townhalls/{townhallId}/sessions
 
 ## Optional query parameters
 
-This method does not support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
