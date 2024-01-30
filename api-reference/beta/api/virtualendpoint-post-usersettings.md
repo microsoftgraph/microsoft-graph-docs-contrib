@@ -81,6 +81,7 @@ Content-Type: application/json
   "localAdminEnabled": true,
   "restorePointSetting": {
     "frequencyInHours": 16,
+    "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   }
 }
@@ -140,6 +141,7 @@ Content-Type: application/json
   "localAdminEnabled": true,
   "restorePointSetting": {
     "frequencyInHours": 16,
+    "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   },
   "lastModifiedDateTime": "2021-02-01T10:29:57Z"  

@@ -150,6 +150,9 @@ Content-Type: application/json
       "windowsSettings": {
         "language": "en-US"
       },
+      "windowsSetting": {
+          "locale": "en-US"
+      },
       "managedBy": "windows365",
       "provisioningType": "dedicated"
     }

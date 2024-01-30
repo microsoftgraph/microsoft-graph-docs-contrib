@@ -150,6 +150,9 @@ Content-Type: application/json
     "windowsSettings": {
       "language": "en-US"
     },
+    "windowsSetting": {
+        "locale": "en-US"
+    },
     "managedBy": "windows365",
     "provisioningType": "dedicated"
 }
@@ -250,6 +253,9 @@ Content-Type: application/json
     "windowsSettings": {
       "language": "en-US"
     },
+    "windowsSetting": {
+        "locale": "en-US"
+    },
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",
@@ -282,7 +288,7 @@ The following is an example of a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,displayName,domainJoinConfiguration,imageDisplayName,imageId,imageType,onPremisesConnectionId,windowsSettings,managedBy,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,displayName,domainJoinConfiguration,imageDisplayName,imageId,imageType,onPremisesConnectionId,windowsSetting,managedBy,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
 ```
 
 # [C#](#tab/csharp)
@@ -367,6 +373,9 @@ Content-Type: application/json
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
     "windowsSettings": {
       "language": "en-US"
+    },
+    "windowsSetting": {
+        "locale": "en-US"
     },
     "provisioningType": "dedicated"
 }
