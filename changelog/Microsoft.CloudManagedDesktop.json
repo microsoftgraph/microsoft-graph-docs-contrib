@@ -7,7 +7,7 @@
                   "ApiChange": "Method",
                   "ChangedApiName": "getShiftWorkCloudPcAccessState",
                   "ChangeType": "Change",
-                  "Description": "Changed deprecation date.",
+                  "Description": "Deprecated the [getShiftWorkCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getShiftWorkCloudPcAccessState?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Goind forward, use the [getFrontlineCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getFrontlineCloudPcAccessState?view=graph-rest-beta) API. Depreaction date changed to to April 24, 2024.",
                   "Target": "cloudPC"
                 },
                 {
@@ -15,7 +15,7 @@
                   "ApiChange": "Method",
                   "ChangedApiName": "getSharedUseLicenseUsageReport",
                   "ChangeType": "Change",
-                  "Description": "Changed deprecation date.",
+                  "Description": "Deprecated the [getSharedUseLicenseUsageReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getSharedUseLicenseUsageReport?view=graph-rest-beta) method of the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource. Depreaction date changed to to April 24, 2024",
                   "Target": "cloudPcReports"
                 },
                 {
@@ -23,7 +23,7 @@
                   "ApiChange": "Method",
                   "ChangedApiName": "cloudPcSharedUseServicePlan",
                   "ChangeType": "Change",
-                  "Description": "Changed deprecation date.",
+                  "Description": "Deprecated the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods. Depreaction date changed to to April 24, 2024.",
                   "Target": "cloudPcSharedUseServicePlan"
                 },
                 {
@@ -31,7 +31,7 @@
                   "ApiChange": "Method",
                   "ChangedApiName": "cloudPcSharedUseServicePlans",
                   "ChangeType": "Change",
-                  "Description": "Changed deprecation date.",
+                  "Description": "Deprecated the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods. Depreaction date changed to to April 24, 2024.",
                   "Target": "cloudPcSharedUseServicePlan"
                 },
                 {
@@ -39,7 +39,7 @@
                   "ApiChange": "Resource",
                   "ChangedApiName": "cloudPcSharedUseServicePlan",
                   "ChangeType": "Change",
-                  "Description": "Changed deprecation date.",
+                  "Description": "Deprecated the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods. Depreaction date changed to to April 24, 2024.",
                   "Target": "cloudPcSharedUseServicePlan"
                 }
               ],
