@@ -1,6 +1,6 @@
 ---
 title: "virtualEvent resource type"
-description: "Information about a virtual event."
+description: "Represents an abstract base type for a virtual event. "
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a base virtual event. 
+Represents an abstract base type for a virtual event. 
 
-This is an abstract type. The base type of [virtualEventWebinar](virtualEventWebinar.md).
+Base type of [virtualEventTownhall](virtualeventtownhall.md) and [virtualEventWebinar](virtualeventwebinar.md).
 
 Inherits from [entity](../resources/entity.md).
 
 > [!TIP]
-> This is an abstract type and can't be used directly. Use the derived type [virtualEventWebinar](virtualEventWebinar.md) instead.
+> This is an abstract type and can't be used directly. Use the derived types [virtualEventTownhall](virtualeventtownhall.md) or [virtualEventWebinar](virtualeventwebinar.md) instead.
 
 ## Properties
 
