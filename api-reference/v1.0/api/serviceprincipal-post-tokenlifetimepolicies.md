@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Assign a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) to a [servicePrincipal](../resources/serviceprincipal.md). You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
+Assign a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) to a [servicePrincipal](../resources/serviceprincipal.md). You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per service principal.
 
 ## Permissions
 

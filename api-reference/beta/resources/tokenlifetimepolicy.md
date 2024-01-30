@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a policy that can control the lifetime of a JWT access token, an ID token or a SAML 1.1/2.0 token issued by Microsoft Entra ID. You can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization.  For more scenario details see [Configurable token lifetimes in the Microsoft identity platform](/entra/identity-platform/configurable-token-lifetimes).
+Represents a policy that can control the lifetime of a JWT access token, an ID token or a SAML 1.1/2.0 token issued by Microsoft Entra ID. You can set token lifetimes for all apps in your organization, for a multitenant application, or for a specific service principal in your organization.  For more scenario details, see [Configurable token lifetimes in the Microsoft identity platform](/entra/identity-platform/configurable-token-lifetimes).
 
-Configuring this policy for refresh tokens and session tokens is not supported.
+Configuring this policy for refresh tokens and session tokens isn't supported.
 
 Inherits from [stsPolicy](stsPolicy.md).
 
@@ -42,7 +42,7 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 ### Properties of a token lifetime policy definition
 
-The properties below form the JSON object that represents a token lifetime policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the **definition** property. An example is shown below in JSON format:
+The following JSON object shows the properties in a token lifetime policy definition property. This JSON object must be **converted to a string with quotations escaped** to be inserted into the **definition** property as shown in the example.
 
 <!-- {
   "blockType": "ignored"
@@ -53,9 +53,9 @@ The properties below form the JSON object that represents a token lifetime polic
   ]
 ```
 
->Note: All time durations in these properties are specified in the format "dd.hh:mm:ss".
-
->Note: Max values for properties denoted in "days" are 1 second short of the denoted number of days. For example, the max value of 1 days is specified as "23:59:59".
+> [!NOTE]
+> All time durations in these properties are specified in the format "dd.hh:mm:ss".
+> Maximum values for properties denoted in "days" are 1 second short of the denoted number of days. For example, the max value of 1 days is specified as "23:59:59".
 
 | Property       | Type    |Description| Min Value | Max Value | Default Value|
 |:---------------|:--------|:----------|:--------|:--------|:----|
@@ -70,7 +70,7 @@ The properties below form the JSON object that represents a token lifetime polic
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
