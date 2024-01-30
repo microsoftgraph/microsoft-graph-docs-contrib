@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "60037f2b-1ce0-4e10-9b3c-f7d0129153cd",
+          "ApiChange": "Permission",
+          "ChangedApiName": "VirtualEvent.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added delegated permission **VirtualEvent.ReadWrite** to read the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-beta) resource.",
+          "Target": "virtualEvent"
+        }
+      ],
+      "Id": "60037f2b-1ce0-4e10-9b3c-f7d0129153cd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-15T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
           "ApiChange": "Enumeration",
           "ChangedApiName": "meetingAudience",
@@ -3728,6 +3746,48 @@
       "CreatedDateTime": "2023-10-04T15:37:11Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b524d566-dbdc-4646-815f-7f56e9abab69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removedState",
+          "ChangeType": "Addition",
+          "Description": "Added the [removedState](https://learn.microsoft.com/en-us/graph/api/resources/removedState?view=graph-rest-1.0) resource type.",
+          "Target": "removedState"
+        },
+        {
+          "Id": "b524d566-dbdc-4646-815f-7f56e9abab69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deltaParticipants",
+          "ChangeType": "Addition",
+          "Description": "Added the [deltaParticipants](https://learn.microsoft.com/en-us/graph/api/resources/deltaParticipants?view=graph-rest-1.0) resource type.",
+          "Target": "deltaParticipants"
+        },
+        {
+          "Id": "b524d566-dbdc-4646-815f-7f56e9abab69",
+          "ApiChange": "Property",
+          "ChangedApiName": "removedState",
+          "ChangeType": "Addition",
+          "Description": "Added the **removedState** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        },
+        {
+          "Id": "b524d566-dbdc-4646-815f-7f56e9abab69",
+          "ApiChange": "Property",
+          "ChangedApiName": "rosterSequenceNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the **rosterSequenceNumber** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "b524d566-dbdc-4646-815f-7f56e9abab69",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-11T14:33:56.7633181Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     }
   ],
   "changelog": [
@@ -3762,6 +3822,42 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-09T18:20:26.249248Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    }
+  ],
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "29615f9c-c662-4e67-b4a0-aa90be732267",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sendDtmfCompletionReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **sendDtmfCompletionReason** enumeration type.",
+          "Target": "sendDtmfCompletionReason"
+        },
+        {
+          "Id": "29615f9c-c662-4e67-b4a0-aa90be732267",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendDtmfTonesOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [sendDtmfTonesOperation](https://learn.microsoft.com/en-us/graph/api/resources/sendDtmfTonesOperation?view=graph-rest-1.0) resource.",
+          "Target": "sendDtmfTonesOperation"
+        },
+        {
+          "Id": "29615f9c-c662-4e67-b4a0-aa90be732267",
+          "ApiChange": "Method",
+          "ChangedApiName": "sendDtmfTones",
+          "ChangeType": "Addition",
+          "Description": "Added the [sendDtmfTones](https://learn.microsoft.com/en-us/graph/api/call-senddtmftones?view=graph-rest-1.0) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
+          "Target": "call"
+        }
+      ],
+      "Id": "29615f9c-c662-4e67-b4a0-aa90be732267",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-05T18:20:26.249248Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }

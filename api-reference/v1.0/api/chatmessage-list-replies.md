@@ -15,7 +15,7 @@ List all the replies to a [message](../resources/chatmessage.md) in a [channel](
 
 This method lists only the replies of the specified message, if any. To get the message itself, simply call [get channel message](chatmessage-get.md).
 
-> **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
+> **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/change-notifications-api-overview.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -44,7 +44,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
