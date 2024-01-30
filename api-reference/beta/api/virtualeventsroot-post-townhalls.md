@@ -43,18 +43,18 @@ POST /solutions/virtualEvents/townhalls
 ## Request body
 In the request body, supply a JSON representation of the [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
-You can specify the following properties when creating a **virtualEventTownhall**.
+You can specify the following properties when you create a **virtualEventTownhall**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-| audience | meetingAudience | To whom the townhall is visible. Possible values are: `everyone`, `organization`. |
-| displayName | String | Display name of the townhall. |
-| description | [itemBody](../resources/itembody.md) | Description of the townhall. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the townhall. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the townhall. |
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the townhall. |
-| invitedAttendees | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Invited people to the townhall. |
-| isInviteOnly | Boolean | Indicates whether the townhall is only open to invited people and groups in your organization. Can only be `true` when the value of the **audience** property is `organization`. |
+| audience | [meetingAudience](../resources/virtualeventtownhall.md#meetingaudience-values) | To whom the town hall is visible. Possible values are: `everyone`, `organization`, `unknownFutureValue`. |
+| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. |
+| description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| displayName | String | Display name of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| invitedAttendees | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Invited people to the town hall. |
+| isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## Response
 
@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventtownhall"
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
