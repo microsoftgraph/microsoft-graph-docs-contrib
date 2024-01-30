@@ -18225,6 +18225,39 @@ items:
                     href: api/presence-setstatusmessage.md
               - name: Virtual event
                 items:
+                  - name: Presenter
+                    href: resources/virtualeventpresenter.md
+                    items:
+                      - name: Create
+                        href: api/virtualevent-post-presenters.md
+                      - name: Get
+                        href: api/virtualeventpresenter-get.md
+                      - name: Delete
+                        href: api/virtualeventpresenter-delete.md
+                  - name: Session
+                    href: resources/virtualeventsession.md
+                    items:
+                      - name: List
+                        href: api/virtualeventsession-list.md
+                      - name: Get
+                        href: api/virtualeventsession-get.md
+                  - name: Town hall
+                    href: resources/virtualeventtownhall.md
+                    items:
+                      - name: Create
+                        href: api/virtualeventsroot-post-townhalls.md
+                      - name: Get
+                        href: api/virtualeventtownhall-get.md
+                      - name: Update
+                        href: api/virtualeventtownhall-update.md
+                      - name: Cancel
+                        href: api/virtualevent-cancel.md
+                      - name: List by user ID and role
+                        href: api/virtualeventtownhall-getbyuseridandrole.md
+                      - name: List by user role
+                        href: api/virtualeventtownhall-getbyuserrole.md
+                      - name: Publish
+                        href: api/virtualevent-publish.md
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
                     items:
@@ -18243,34 +18276,6 @@ items:
                             href: api/virtualeventregistration-list.md
                           - name: Get
                             href: api/virtualeventregistration-get.md
-                  - name: Townhall
-                    href: resources/virtualeventtownhall.md
-                    items:
-                      - name: Create
-                        href: api/virtualeventsroot-post-townhalls.md
-                      - name: Get
-                        href: api/virtualeventtownhall-get.md
-                      - name: Publish
-                        href: api/virtualevent-publish.md
-                      - name: Cancel
-                        href: api/virtualevent-cancel.md
-                      - name: Update
-                  - name: Session
-                    href: resources/virtualeventsession.md
-                    items:
-                      - name: List
-                        href: api/virtualeventsession-list.md
-                      - name: Get
-                        href: api/virtualeventsession-get.md
-                  - name: Presenter
-                    href: resources/virtualeventpresenter.md
-                    items:
-                      - name: Create
-                        href: api/virtualevent-post-presenters.md
-                      - name: Get
-                        href: api/virtualeventpresenter-get.md
-                      - name: Delete
-                        href: api/virtualeventpresenter-delete.md
           - name: Devices (preview)
             items:
               - name: Provisioned device
