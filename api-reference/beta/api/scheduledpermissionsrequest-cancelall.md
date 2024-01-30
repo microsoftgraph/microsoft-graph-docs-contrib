@@ -34,7 +34,7 @@ POST /identityGovernance/permissionsManagement/scheduledPermissionsRequests/{sch
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Do not supply a request body for this method.
@@ -66,7 +66,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/s
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.

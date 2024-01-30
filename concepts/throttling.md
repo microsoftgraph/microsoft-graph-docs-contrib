@@ -2,6 +2,9 @@
 title: "Microsoft Graph throttling guidance"
 description: "Find best practices for maintaining optimal performance of the Microsoft Graph service if an overwhelming number of requests occurs."
 ms.localizationpriority: high
+author: FaithOmbongi
+ms.reviewer: Luca.Spolidoro
+ms.date: 01/22/2024
 ms.custom: graphiamtop20
 #Customer intent: As a developer integrating with Microsoft Graph, I want to understand how to avoid throttling and how to handle throttling when it occurs.
 ---
