@@ -43,7 +43,7 @@ This method supports `$skiptoken`, `$top` and `$filter` OData query parameters t
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

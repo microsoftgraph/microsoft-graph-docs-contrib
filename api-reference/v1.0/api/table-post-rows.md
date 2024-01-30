@@ -39,7 +39,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 
 | Name | Description |
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required.|
 | Prefer  | respond-async. Indicates that the request is an async request. Optional.  |
 | Workbook-Session-Id  | {Workbook-Session-Id}. Created from the **createSession** request. Optional.|
