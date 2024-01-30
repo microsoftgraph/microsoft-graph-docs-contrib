@@ -306,4 +306,3 @@ The control exposes the following variables that can be localized. For details a
 | ---------------- | --------------- |
 | photoFor         | `Photo for`     |
 | emailAddress     | `Email address` |
-| initials         | `Initials`      |
