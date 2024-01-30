@@ -41,7 +41,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | invitedAttendees | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Invited people to the town hall. |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| status | [virtualEventStatus](#virtualeventstatus-values) | Status of the town hall. |
+| status | [virtualEventStatus](#virtualeventstatus-values) | Status of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ### meetingAudience values
 
