@@ -16,7 +16,7 @@ The corresponding app must already be [installed in the chat](../api/chat-list-i
 
 > **Notes**:
 > * If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then the tab is effectively added to the meeting.
-> * If the app manifest for a given **appId** contains a static tab that matches the current scope (**chat** or **groupChat**), the static tab is pinned by default.
+> * If the app manifest for a given **appId** contains a static tab that matches the current scope (`chat`/`groupChat`), the static tab is pinned by default.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
