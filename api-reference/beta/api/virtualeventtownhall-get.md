@@ -101,6 +101,7 @@ Content-Type: application/json
       "id": "b7ef013a-c73c-4ec7-8ccb-e56290f45f68",
       "displayName": "Diane Demoss",
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+    }
   },
   "audience": "everyone",
   "coOrganizers": [
