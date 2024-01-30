@@ -17,7 +17,7 @@ Update the properties of the specified [tab](../resources/teamstab.md).
 This can be used to configure the content of the tab.
 
 > [!NOTE] 
-> Updating static tab is not allowed. HTTP error code 400 Bad Request would be returned.
+> You aren't allowed to update a static tab. This API returns a `400 Bad Request` response code in the response body if used to update a static tab.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
