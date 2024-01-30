@@ -17,7 +17,7 @@ var requestBody = new User
 			"extkmpdyld2_graphLearnCourses" , new 
 			{
 				CourseType = "Instructor-led",
-				CourseId = null,
+				CourseId = (string) null,
 			}
 		},
 	},
