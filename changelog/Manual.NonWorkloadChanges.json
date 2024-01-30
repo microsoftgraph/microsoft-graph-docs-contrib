@@ -83,7 +83,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "task,task-details",
           "ChangeType": "Addition",
-          "Description": "Added the **task** and **task-details** templates to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/planner).",
+          "Description": "Added the **task** and **task-details** templates to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
           "Target": "tasks component"
         },
         {
@@ -91,7 +91,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isNewTaskVisible",
           "ChangeType": "Addition",
-          "Description": "Added the **isNewTaskVisible** property to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/planner).",
+          "Description": "Added the **isNewTaskVisible** property to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
           "Target": "tasks component"
         },
         {
@@ -99,7 +99,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "group-id",
           "ChangeType": "Addition",
-          "Description": "Added the **group-id** attribute to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/planner).",
+          "Description": "Added the **group-id** attribute to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
           "Target": "tasks component"
         },
         {
@@ -107,7 +107,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "taskFilter",
           "ChangeType": "Addition",
-          "Description": "Added the **taskFilter** property to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/planner).",
+          "Description": "Added the **taskFilter** property to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
           "Target": "tasks component"
         },
         {
