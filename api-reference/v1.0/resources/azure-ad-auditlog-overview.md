@@ -60,11 +60,4 @@ Activity reports are available for features that you've licensed. If you have a 
   - [directoryAudit](directoryaudit.md) resource type.
   - [signIn](signin.md) resource type. 
   - [provisioningObjectSummary](provisioningobjectsummary.md) resource type.
-  - [customSecurityAttributeAudit](customsecurityattributeaudit.md) resource type.
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-  ]
-}
--->
+<!--  - [customSecurityAttributeAudit](customsecurityattributeaudit.md) resource type. -->
