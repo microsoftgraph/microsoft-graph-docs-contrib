@@ -19,12 +19,9 @@ request_body = VlookupPostRequestBody(
 	range_lookup = False,
 )
 
-request_configuration = VlookupRequestBuilder.VlookupRequestBuilderPostRequestConfiguration(
-headers = {
-		'workbook-session-id' : "{session-id}",
-}
+request_configuration = VlookupRequestBuilder.VlookupRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("workbook-session-id", "{session-id}")
 
-)
 
 result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.functions.vlookup.post(request_body, request_configuration = request_configuration)
 

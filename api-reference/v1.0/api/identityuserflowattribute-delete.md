@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Delete a custom [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

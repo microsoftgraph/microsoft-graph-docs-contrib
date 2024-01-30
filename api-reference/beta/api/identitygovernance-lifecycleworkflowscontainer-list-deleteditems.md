@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of the deleted workflow objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
