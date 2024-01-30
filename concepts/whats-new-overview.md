@@ -22,6 +22,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 The [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generally available, laying the foundation for future Cloud PC updates to the `v1.0` path.
 
+### Education
+
+Use the **webURL** property to get the deep link URL of an [educationSubmission](/graph/api/resources/educationsubmission).
+
 ### Identity and access | Governance
 
 Through the **attributes** property of the [accessPackageResource resource type](/graph/api/resources/accesspackageresource), you can now view details of the attributes that are collected from the requestor and sent to the resource application.
