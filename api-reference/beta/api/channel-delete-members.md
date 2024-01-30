@@ -35,7 +35,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
