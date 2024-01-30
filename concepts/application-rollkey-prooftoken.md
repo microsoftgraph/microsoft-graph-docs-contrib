@@ -20,10 +20,10 @@ As part of the request validation for these methods, a proof of possession of an
 
 The token should contain the following claims:
 
-- `aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.
-- `iss` - Issuer should be the __id__ of the __application__ or __servicePrincipal__ object on which the call is made.
-- `nbf` - Not before time.
-- `exp` - Expiration time should be "nbf" + 10 mins.
+- **aud**: Audience needs to be `00000002-0000-0000-c000-000000000000`.
+- **iss**: Issuer should be the ID of the **application** or **servicePrincipal** object that initiates the request.
+- **nbf**: Not before time.
+- **exp**: Expiration time should be the value of **nbf** + 10 minutes.
 
 You can use the following code examples to generate this proof of possession token.
 
