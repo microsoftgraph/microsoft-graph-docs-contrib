@@ -10732,7 +10732,7 @@ items:
               - name: Get delta
                 href: api/educationcategory-delta.md
           - name: Grading category
-            href: resources/educationgradingcategory.md
+            href: resources/educationgradingscheme.md
             items:
               - name: Add grading category
                 href: api/educationassignment-post-gradingcategory.md
@@ -10740,6 +10740,15 @@ items:
                 href: api/educationgradingcategory-update.md
               - name: Delete grading category
                 href: api/educationassignment-delete-gradingcategory.md
+          - name: Grading Schemes
+            href: resources/educationgradingscheme.md
+            items:
+              - name: Add grading scheme
+                href: api/educationassignmentsettings-post-gradingschemes.md
+              - name: Update grading scheme
+                href: api/educationassignmentsettings-update.md
+              - name: Delete grading scheme
+                href: api/educationassignment-delete-gradingscheme.md
           - name: Module
             href: resources/educationmodule.md
             items:
