@@ -13,9 +13,19 @@ The File component is used to represent an individual [file/folder from OneDrive
 
 The following example displays a file using the `mgt-file` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file--file&source=docs" height="250"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file--file&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-html--file&source=docs" height="250"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-html--file&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-react--file&source=docs" height="250"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-react--file&source=docs).
+
+---
 
 ## Properties
 

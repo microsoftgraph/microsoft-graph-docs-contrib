@@ -13,9 +13,19 @@ You can use `mgt-search-results` to make search queries to Microsoft Graph direc
 
 The following example shows the use of the `mgt-search-results` component to the most relevant documents. You can use the code editor to see how [properties and attributes](#properties-and-attributes) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=preview-mgt-search-results--search-results&source=docs" height="500"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/preview-mgt-search-results--search-results&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-search-results-html--search-results&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-search-results-html--search-results&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-search-results-react--search-results&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-search-results-react--search-results&source=docs).
+
+---
 
 ## Properties and attributes
 

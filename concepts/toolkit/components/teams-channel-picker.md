@@ -13,9 +13,19 @@ You can use the `mgt-teams-channel-picker` component to enable searches for Micr
 
 The following example shows the `mgt-teams-channel-picker` component. Start searching for a channel or team to see the results render.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker--teams-channel-picker&source=docs" height="450"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker-html--teams-channel-picker&source=docs" height="450"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker-html--teams-channel-picker&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker-react--teams-channel-picker&source=docs" height="450"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker-react--teams-channel-picker&source=docs).
+
+---
 
 ## Getting the selected channel
 

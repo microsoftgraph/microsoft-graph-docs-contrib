@@ -1250,10 +1250,10 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Addition        | NA          | Added the `inherit-details` attribute to the [person card component](./toolkit/components/person.md). |
 | Addition        | NA         | Added the `selectedPeople` property to the [people picker component](./toolkit/components/people-picker.md). |
 | Addition        | NA        | Added the `loading` and `error` templates to the [people picker component](./toolkit/components/people-picker.md). |
-| Addition        | NA        | Added the `task` and `task-details` templates to the [tasks component](./toolkit/components/tasks.md). |
-| Addition        | NA          | Added the `isNewTaskVisible` property to the [tasks component](./toolkit/components/tasks.md). |
-| Addition        | NA        | Added the `group-id` attribute to the [tasks component](./toolkit/components/tasks.md). |
-| Addition        | NA          | Added the `taskFilter` property to the [tasks component](./toolkit/components/tasks.md). |
+| Addition        | NA        | Added the `task` and `task-details` templates to the [tasks component](./toolkit/components/planner.md). |
+| Addition        | NA          | Added the `isNewTaskVisible` property to the [tasks component](./toolkit/components/planner.md). |
+| Addition        | NA        | Added the `group-id` attribute to the [tasks component](./toolkit/components/planner.md). |
+| Addition        | NA          | Added the `taskFilter` property to the [tasks component](./toolkit/components/planner.md). |
 | Addition        | NA         | Added the `eventClick` event to the [agenda component](./toolkit/components/agenda.md). |
 | Addition        | NA          | Added the `person-card` attribute to the [people component](./toolkit/components/people.md). |
 | Addition        | NA          | Added the `user-ids` attribute to the [people component](./toolkit/components/people.md). |

@@ -18,9 +18,19 @@ In addition, a user is able to assign a single or multiple Microsoft Graph users
 
 The following example displays the signed-in user's Microsoft Planner tasks using the `mgt-planner` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-planner--tasks&source=docs" height="500"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-planner--tasks&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-planner-html--planner&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-planner-html--planner&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-planner-react--planner&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-planner-react--planner&source=docs).
+
+---
 
 ## Properties
 

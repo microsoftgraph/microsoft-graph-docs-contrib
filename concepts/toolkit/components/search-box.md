@@ -13,9 +13,19 @@ The Search box component renders an input control allowing searching for capabil
 
 The following example shows the use of the `mgt-search-box` component to enable users to type a query that would be sent to other components for rendering. You can use the code editor to see how [properties and attributes](#properties-and-attributes) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=preview-mgt-search-box--search-box&source=docs" height="500"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/preview-mgt-search-box--search-box&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-search-box-html--search-box&source=docs" height="200"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-search-box-html--search-box&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-search-box-react--search-box&source=docs" height="200"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-search-box-react--search-box&source=docs).
+
+---
 
 ## Properties and attributes
 
