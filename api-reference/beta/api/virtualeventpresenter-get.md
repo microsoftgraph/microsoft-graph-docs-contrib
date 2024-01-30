@@ -82,16 +82,15 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.virtualEventPresenter",
-    "id": "831affc2-4c8a-9929-50e7-02964563b6e4",
-    "identity": {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
-    },
-    "email": "String",
-    "presenterDetails": {
-      "@odata.type": "microsoft.graph.virtualEventPresenterDetails"
-    },
-    "profilePhoto": "Stream"
-  }
+      "@odata.type": "#microsoft.graph.virtualEventPresenter",
+      "id": "831affc2-4c8a-9929-50e7-02964563b6e4",
+      "identity": {
+        "@odata.type": "microsoft.graph.communicationsUserIdentity",
+        "displayName": "Diane Demoss",
+        "id": "831affc2-4c8a-9929-50e7-02964563b6e4",
+        "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+      },
+      "email": "DianeDemoss@contoso.com"
+    }
 }
 ```
