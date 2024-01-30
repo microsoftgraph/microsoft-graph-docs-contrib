@@ -113,7 +113,7 @@ Content-Type: application/json
   "endDateTime": {
     "dateTime": "2024-03-31T17:00:00",
     "timeZone": "Pacific Standard Time"
-  }
+  },
   "createdBy": {
     "application": null,
     "device": null,
