@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object. Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md) and [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object. 
+
+Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md) and [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
