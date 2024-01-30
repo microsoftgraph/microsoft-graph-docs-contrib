@@ -1,6 +1,6 @@
 ---
 title: "Create virtualEventTownhall"
-description: "Create a new virtualEventTownhall object."
+description: "Create a new virtualEventTownhall object in draft mode."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -48,7 +48,7 @@ You can specify the following properties when you create a **virtualEventTownhal
 |Property|Type|Description|
 |:---|:---|:---|
 | audience | [meetingAudience](../resources/virtualeventtownhall.md#meetingaudience-values) | To whom the town hall is visible. Possible values are: `everyone`, `organization`, `unknownFutureValue`. |
-| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. |
 | description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | displayName | String | Display name of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. Inherited from [virtualEvent](../resources/virtualevent.md). |

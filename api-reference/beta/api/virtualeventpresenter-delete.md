@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [virtualEventPresenter](../resources/virtualeventpresenter.md) from a virtual event. 
+Delete a [virtualEventPresenter](../resources/virtualeventpresenter.md) from a virtual event.
 
 Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
 

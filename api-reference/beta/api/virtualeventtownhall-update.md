@@ -48,7 +48,7 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. Optional. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. Optional. |
 | description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
 | displayName | String | Display name of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
@@ -68,37 +68,18 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta** Entity URI for microsoft.graph.virtualEventTownhall not found
+PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/fc6e8c15-2fd7-1dd5-caa0-87056e6a12be
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.virtualEventTownhall",
-  "status": "String",
-  "displayName": "String",
-  "description": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
   "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+    "dateTime": "2024-03-31T10:00:00",
+    "timeZone": "Pacific Standard Time"
   },
   "endDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.communicationsIdentitySet"
-  },
-  "audience": "String",
-  "coOrganizers": [
-    {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
-    }
-  ],
-  "invitedAttendees": [
-    {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
-    }
-  ],
-  "isInviteOnly": "Boolean"
+    "dateTime": "2024-03-31T17:00:00",
+    "timeZone": "Pacific Standard Time"
+  }
 }
 ```
 
@@ -126,27 +107,39 @@ Content-Type: application/json
     "contentType": "html"
   },
   "startDateTime": {
-    "dateTime": "2023-03-30T10:10:00",
+    "dateTime": "2024-03-31T10:00:00",
     "timeZone": "Pacific Standard Time"
   },
   "endDateTime": {
-    "dateTime": "2023-03-30T17:10:00",
+    "dateTime": "2024-03-31T17:00:00",
     "timeZone": "Pacific Standard Time"
-  },
+  }
   "createdBy": {
-    "@odata.type": "microsoft.graph.communicationsIdentitySet"
+    "application": null,
+    "device": null,
+    "user": {
+      "@odata.type": "#microsoft.graph.communicationsUserIdentity",
+      "id": "b7ef013a-c73c-4ec7-8ccb-e56290f45f68",
+      "displayName": "Diane Demoss",
+      "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+    }
   },
-  "audience": "String",
+  "audience": "organization",
+  "isInviteOnly": false,  
   "coOrganizers": [
     {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
+      "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
+      "displayName": "Kenneth Brown",
+      "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
   ],
   "invitedAttendees": [
     {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
+      "@odata.type": "microsoft.graph.communicationsUserIdentity",
+      "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
+      "displayName": "Emilee Pham",
+      "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
-  ],
-  "isInviteOnly": "Boolean"
+  ]
 }
 ```

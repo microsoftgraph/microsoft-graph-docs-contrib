@@ -18252,10 +18252,6 @@ items:
                         href: api/virtualeventtownhall-update.md
                       - name: Cancel
                         href: api/virtualevent-cancel.md
-                      - name: List by user ID and role
-                        href: api/virtualeventtownhall-getbyuseridandrole.md
-                      - name: List by user role
-                        href: api/virtualeventtownhall-getbyuserrole.md
                       - name: Publish
                         href: api/virtualevent-publish.md
                   - name: Webinar

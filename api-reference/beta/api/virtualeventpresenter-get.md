@@ -38,15 +38,14 @@ One of the following permissions is required to call this API. To learn more, in
 GET /solutions/virtualEvents/events/{virtualEventId}/presenters/{presenterId}
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
