@@ -43,7 +43,7 @@ POST /chats/{chat-id}/tabs
 In the request body include a JSON representation of a [teamsTab](../resources/teamstab.md).
 
 > [!NOTE] 
-> When you pin a static tab, Teams takes the **displayName** and **configuration** from the app manifest. If these properties are specified in the request body, this API returns a `400 Bad Request` response code in the response body.
+> When you pin a static tab, Teams takes the **displayName** and **configuration** from the app manifest. If these properties are specified in the request body, this API returns a `400 Bad Request` response code.
 
 ## Response
 
