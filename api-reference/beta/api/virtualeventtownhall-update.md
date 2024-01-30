@@ -48,11 +48,11 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| displayName | String | Display name of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| description | [itemBody](../resources/itembody.md) | Description of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the townhall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the townhall. Optional. |
+| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. Optional. |
+| description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
+| displayName | String | Display name of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
 
 ## Response
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [virt
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_virtualeventtownhall"
@@ -104,7 +104,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -150,4 +150,3 @@ Content-Type: application/json
   "isInviteOnly": "Boolean"
 }
 ```
-
