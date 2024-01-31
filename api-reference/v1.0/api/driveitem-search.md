@@ -48,7 +48,7 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Example
 

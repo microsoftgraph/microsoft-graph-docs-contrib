@@ -1514,7 +1514,7 @@ DELETE https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/a4b35718-
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configuration-api) to fetch all the roles from that AWS account. For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 - [Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping).

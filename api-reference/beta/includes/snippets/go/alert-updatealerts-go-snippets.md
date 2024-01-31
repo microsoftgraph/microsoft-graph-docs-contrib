@@ -51,7 +51,7 @@ vendor := "String"
 vendorInformation.SetVendor(&vendor) 
 alert.SetVendorInformation(vendorInformation)
 
-value := []graphmodels.alertable {
+value := []graphmodels.Alertable {
 	alert,
 }
 requestBody.SetValue(value)
