@@ -404,6 +404,6 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Microsoft Graph delta query](delta-query-overview.md) overview.

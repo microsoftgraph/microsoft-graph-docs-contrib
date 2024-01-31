@@ -1,6 +1,5 @@
 ---
 author: spgraph-docs-team
-ms.date: 09/10/2017
 title: Access shared items
 ms.localizationpriority: medium
 description: "Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL."
@@ -55,11 +54,13 @@ string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.Get
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
 
-## Optional request headers
+## Request headers
 
-| Name       | Type   | Description                                                    |
-|:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | Optional. Set to one of the `prefer` values documented below.  |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+| Prefer | Optional. String. Set to one of the `prefer` values documented below.  |
 
 ### Prefer header values
 

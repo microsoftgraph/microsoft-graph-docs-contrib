@@ -25,10 +25,10 @@ Entity that represents a single Microsoft Tunnel server
 |[Create microsoftTunnelServer](../api/intune-mstunnel-microsofttunnelserver-create.md)|[microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md)|Create a new [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) object.|
 |[Delete microsoftTunnelServer](../api/intune-mstunnel-microsofttunnelserver-delete.md)|None|Deletes a [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md).|
 |[Update microsoftTunnelServer](../api/intune-mstunnel-microsofttunnelserver-update.md)|[microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md)|Update the properties of a [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) object.|
-|[getHealthMetrics action](../api/intune-mstunnel-microsofttunnelserver-gethealthmetrics.md)|[keyLongValuePair](../resources/intune-shared-keylongvaluepair.md) collection|Not yet documented|
-|[getHealthMetricTimeSeries action](../api/intune-mstunnel-microsofttunnelserver-gethealthmetrictimeseries.md)|[metricTimeSeriesDataPoint](../resources/intune-mstunnel-metrictimeseriesdatapoint.md) collection|Not yet documented|
-|[createServerLogCollectionRequest action](../api/intune-mstunnel-microsofttunnelserver-createserverlogcollectionrequest.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Not yet documented|
-|[generateServerLogCollectionRequest action](../api/intune-mstunnel-microsofttunnelserver-generateserverlogcollectionrequest.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Not yet documented|
+|[getHealthMetrics action](../api/intune-mstunnel-microsofttunnelserver-gethealthmetrics.md)|[keyLongValuePair](../resources/intune-shared-keylongvaluepair.md) collection||
+|[getHealthMetricTimeSeries action](../api/intune-mstunnel-microsofttunnelserver-gethealthmetrictimeseries.md)|[metricTimeSeriesDataPoint](../resources/intune-mstunnel-metrictimeseriesdatapoint.md) collection||
+|[createServerLogCollectionRequest action](../api/intune-mstunnel-microsofttunnelserver-createserverlogcollectionrequest.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)||
+|[generateServerLogCollectionRequest action](../api/intune-mstunnel-microsofttunnelserver-generateserverlogcollectionrequest.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)||
 
 ## Properties
 |Property|Type|Description|

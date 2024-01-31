@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDeviceImage: getSourceImages"
-description: "View a list of all managed image resources from you Azure subscriptions. These source images can be uploaded and used on Cloud PCs."
+description: "Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects. View a list of all the managed image resources from your Microsoft Entra subscriptions.
+Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects that can be uploaded and used on Cloud PCs. View a list of all the managed image resources from your Microsoft Entra subscriptions.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -39,7 +39,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/getSourceImages
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -53,6 +53,7 @@ If successful, this function returns a `200 OK` response code and a [cloudPcSour
 
 ### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +102,9 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -114,13 +117,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcSourceDeviceImage)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.cloudPcSourceDeviceImage",
-      "id": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Compute/images/ExampleImage",
-      "displayName": "Display Name value",
+      "id": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
+      "resourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
+      "displayName": "exampleImageForDev",
       "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-      "subscriptionDisplayName": "Subscription Display Name value"
+      "subscriptionDisplayName": "Reserved for IT"
     }
   ]
 }
