@@ -97,7 +97,7 @@ Looking for the API reference for this service?
 - [Microsoft Entra identity and access management API in Microsoft Graph v1.0](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0&preserve-view=true)
 - [Microsoft Entra identity and access management API in Microsoft Graph beta](/graph/api/resources/azure-ad-overview?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Next step
 
-- Find out more about [Microsoft Entra REST APIs and features and the related Microsoft Graph resources](/graph/api/resources/azure-ad-overview).
-- To start building apps using Microsoft Entra APIs, see [authentication and authorization basics](/graph/auth/auth-concepts).
+> [!div class="nextstepaction"]
+> [Microsoft Entra REST APIs and features and the related Microsoft Graph resources](/graph/api/resources/azure-ad-overview)

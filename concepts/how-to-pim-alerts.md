@@ -815,6 +815,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/al
 HTTP/1.1 200 OK
 ```
 
-## See also
+## Related content
 
 + [Tutorial: Assign Microsoft Entra roles through PIM](tutorial-assign-azureadroles.md).
