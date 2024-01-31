@@ -208,4 +208,4 @@ The following table indicates the areas that are supported for the corresponding
 ## See also
 
 - [Azure Synapse and Azure Data Factory connector for Microsoft 365 data](/azure/data-factory/connector-office-365)
-- [Policies and billing](data-connect-policies.md)
+<!--- [Policies and billing](data-connect-policies.md)-->
