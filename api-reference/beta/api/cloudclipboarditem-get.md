@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a list of [cloud
 The following example shows a request of getting all the [cloudClipboardItem](../resources/cloudclipboarditem.md) of a user.
 <!-- {
   "blockType": "request",
-  "name": "get_cloudclipboarditem"
+  "name": "get_cloudclipboarditems"
 }
 -->
 ``` http
@@ -89,7 +89,7 @@ The following example shows the response of getting all [cloudClipboardItem](../
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.pdrs.cloudClipboardItem"
+  "@odata.type": "Collection(microsoft.graph.cloudClipboardItem)"
 }
 -->
 ``` http
@@ -99,7 +99,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.pdrs.cloudClipboardItem",
+      "@odata.type": "#microsoft.graph.cloudClipboardItem",
       "id": "292bcf2f-b37e-49d0-8882-1e33dd5c2273",
       "payloads": [
         {
@@ -122,7 +122,7 @@ Content-Type: application/json
 The following example shows a request of getting a single [cloudClipboardItem](../resources/cloudclipboarditem.md) by id.
 <!-- {
   "blockType": "request",
-  "name": "get_cloudclipboarditem"
+  "name": "get_cloudclipboarditemById"
 }
 -->
 ``` http
@@ -134,7 +134,7 @@ The following example shows the response of getting a single [cloudClipboardItem
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.pdrs.cloudClipboardItem"
+  "@odata.type": "Collection(microsoft.graph.cloudClipboardItem)"
 }
 -->
 ``` http
@@ -144,7 +144,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.pdrs.cloudClipboardItem",
+      "@odata.type": "#microsoft.graph.cloudClipboardItem",
       "id": "292bcf2f-b37e-49d0-8882-1e33dd5c2273",
       "payloads": [
         {
