@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
-# List assigned tokenLifetimePolicy
+# List assigned tokenLifetimePolicies
 
 Namespace: microsoft.graph
 
@@ -35,6 +35,10 @@ You can address the application using either its **id** or **appId**. **id** and
 GET /applications/{id}/tokenLifetimePolicies
 GET /applications(appId='{appId}')/tokenLifetimePolicies
 ```
+
+## Optional query parameters
+
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
