@@ -27,7 +27,7 @@ groupId := "64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
 target.SetGroupId(&groupId) 
 cloudPcUserSettingAssignment.SetTarget(target)
 
-assignments := []graphmodels.cloudPcUserSettingAssignmentable {
+assignments := []graphmodels.CloudPcUserSettingAssignmentable {
 	cloudPcUserSettingAssignment,
 }
 requestBody.SetAssignments(assignments)

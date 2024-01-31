@@ -40,7 +40,7 @@ The following table shows the parameters that can be used with this function.
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session ID that indicates whether changes are persisted. Optional.|
 
 ## Request body
@@ -74,7 +74,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.

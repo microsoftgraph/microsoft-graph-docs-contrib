@@ -47,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

@@ -507,7 +507,7 @@ Content-Type: application/json
 }
 ```
 
-## Next steps
+## Related content
 
 - [Execute employee offboarding tasks in real-time on their last day of work with the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-offboard-custom-workflow-portal)
 - [Overview of Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)

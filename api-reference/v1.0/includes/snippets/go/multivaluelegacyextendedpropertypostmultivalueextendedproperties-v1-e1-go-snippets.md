@@ -57,7 +57,7 @@ attendee1.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee1.SetType(&type) 
 
-attendees := []graphmodels.attendeeable {
+attendees := []graphmodels.Attendeeable {
 	attendee,
 	attendee1,
 }
