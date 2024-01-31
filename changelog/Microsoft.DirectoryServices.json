@@ -2,6 +2,32 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "4a813244-6ed7-414e-be31-a56e49d52e09",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OrganizationalBranding.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `OrganizationalBranding.Read.All` delegated and application permissions to the read operations of [organizationalBranding](https://learn.microsoft.com/graph/resources/organizationalbranding?view=graph-rest-1.0). Instead of using the `Organization.Read.All` permission to read tenant branding information, we recommend that you use the more granular and lesser privileged `OrganizationalBranding.Read.All` permission.",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "4a813244-6ed7-414e-be31-a56e49d52e09",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OrganizationalBranding.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `OrganizationalBranding.ReadWrite.All` delegated and application permissions to the read and write operations of [organizationalBranding](https://learn.microsoft.com/graph/resources/organizationalbranding?view=graph-rest-1.0). Instead of using the `Organization.ReadWrite.All` permission to manage tenant branding, we recommend that you use the more granular and lesser privileged `OrganizationalBranding.ReadWrite.All` permission.",
+          "Target": "organizationalBranding"
+        }
+      ],
+      "Id": "4a813244-6ed7-414e-be31-a56e49d52e09",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-31T00:00:00.304139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    }
+    {
+      "ChangeList": [
       {
         "Id": "8b9db607-81fd-4013-af2e-d6cb709aa313",
         "ApiChange": "Enumeration",
