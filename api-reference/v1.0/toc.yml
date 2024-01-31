@@ -7264,7 +7264,7 @@ items:
                     - name: Relying party detailed summary
                       href: resources/relyingpartydetailedsummary.md
                       items:
-                        - name: Get relying party detailed dummary
+                        - name: Get relying party detailed summary
                           href: api/reportroot-getrelyingpartydetailedsummary.md
                 - name: Registration and usage
                   items:
