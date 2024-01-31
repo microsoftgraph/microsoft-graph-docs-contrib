@@ -89,7 +89,8 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.application",
   "name": "upsert_application_create"
-} -->
+}
+-->
 
 ```http
 HTTP/1.1 201 Created
@@ -182,6 +183,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "application_upsert_update"
+}
 -->
 
 ``` http
