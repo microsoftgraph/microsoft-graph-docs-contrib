@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
-> **Note**: We don't recommend using this API for data migration. It does not have the throughput necessary for a typical migration.
-
-> **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+> **Notes:**
+> - We don't recommend using this API for data migration. It does not have the throughput necessary for a typical migration.
+> - It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -475,9 +475,9 @@ Content-type: application/json
 #### Request
 The following example shows a request.
 
->**Note:** 
-> * The file must already be in SharePoint. To find the file properties, GET the **driveItem** for the file. For example, /drives/{id}/items/{id}. Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.
-> * Graph API supports the `OpenUrl` card action. Bots are required for other card actions.
+>**Notes:**
+> - The file must already be in SharePoint. To find the file properties, GET the **driveItem** for the file. For example: `/drives/{id}/items/{id}`. The attachment ID is the GUID in the **eTag** of the **driveItem**. The attachment **contentURL** is the **webUrl** of the **driveItem** folder plus the name of the **driveItem**. The attachment name is the name of the **driveItem**.
+> - Microsoft Graph supports the `OpenUrl` card action. Bots are required for other card actions.
 
 
 # [HTTP](#tab/http)
