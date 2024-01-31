@@ -306,4 +306,5 @@ Not applicable.
 
 ## Next step
 
-> Learn how to [examine API differences](migrate-azure-ad-graph-audit-api-use.md) and review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [!div class="nextstepaction"]
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)

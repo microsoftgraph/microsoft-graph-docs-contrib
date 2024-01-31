@@ -280,23 +280,8 @@ In this article, you walked through the low-level protocol details usually requi
 
 MSAL and other supported authentication libraries simplify the process for you by handling details such as validation, cookie handling, token caching, and secure connections, allowing you to focus on the functionality of your application.
 
-Microsoft has built and maintains a wide selection of code samples that demonstrate usage of supported authentication libraries with the Microsoft identity platform. To access these code samples, see the [Next steps](#next-steps).
+Microsoft has built and maintains a wide selection of code samples that demonstrate usage of supported authentication libraries with the Microsoft identity platform. To access these code samples, see the [Microsoft identity platform code samples](/entra/identity-platform/sample-v2-code?tabs=apptype#service--daemon).
 
-## Next steps
+## Related content
 
-This article is part of the following series of articles on authentication and authorization for Microsoft Graph through the Microsoft identity platform.
-
-1. Article 1: [Authentication and authorization basics](./auth/auth-concepts.md)
-1. Article 2: [Register an application with the Microsoft identity platform](./auth-register-app-v2.md)
-1. Article 3: [Get access on behalf of a user](./auth-v2-user.md)
-1. Article 4: [Get access without a user](./auth-v2-service.md)
-
-Next, choose from code samples that are built and maintained by Microsoft to run custom apps that use supported authentication libraries and call Microsoft Graph with their own identities.
-
-> [!div class="nextstepaction"]
-> [Microsoft Graph tutorials >](/graph/tutorials)
-
-<!--
-> [!div class="nextstepaction"]
-> [Microsoft identity platform code samples >](/azure/active-directory/develop/sample-v2-code#service--daemon)
--->
+- Choose from code samples that are built and maintained by Microsoft to run custom apps that use supported authentication libraries, sign-in users, and call Microsoft Graph. See [Microsoft Graph tutorials](/graph/tutorials).
