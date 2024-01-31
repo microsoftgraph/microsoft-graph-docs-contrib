@@ -597,7 +597,7 @@ When a workflow is scheduled, Lifecycle Workflows will check every three hours f
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Automate employee offboarding tasks after their last day of work with the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-scheduled-leaver-portal)
 - [Overview of Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
