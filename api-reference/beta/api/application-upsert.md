@@ -75,7 +75,7 @@ Content-Type: application/json
 Prefer: create-if-missing
 
 {
-  "displayName": "Display name",
+  "displayName": "Display name"
 }
 ```
 
@@ -156,7 +156,6 @@ Content-type: application/json
 
 The following example updates the application because the specified application exists.
 
-
 #### Request
 
 The following example shows a request.
@@ -172,7 +171,7 @@ Content-Type: application/json
 Prefer: create-if-missing
 
 {
-  "displayName": "Display name",
+  "displayName": "Display name"
 }
 ```
 
@@ -183,7 +182,7 @@ The following example shows the response.
   "blockType": "response",
   "truncated": true
   "@odata.type": "microsoft.graph.application",
-  "name": "upsert_application_create"
+  "name": "upsert_application_update"
 -->
 
 ``` http
