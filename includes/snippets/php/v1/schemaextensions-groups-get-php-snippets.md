@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new SchemaExtensionsRequestBuilderGetRequestConfiguration();
 $queryParameters = SchemaExtensionsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "id eq 'graphlearn_test'";
+$queryParameters->filter = "id eq 'bellowscollege_courses'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
