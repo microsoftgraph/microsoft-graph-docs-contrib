@@ -1049,7 +1049,7 @@ The following table compares the extension types, which should help you decide w
 | Managed via | Microsoft Graph <br/> Exchange admin center | Microsoft Graph | Microsoft Graph | Microsoft Graph |
 | Sync data from on-premises to extensions using [AD connect][] | Yes, for users | [Yes][ADConnect-YES] | No | No |
 | Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | [Yes][DynamicMembership-YES] | No | No |
-| Usable for customizing token claims | Yes | [Yes][DirectoryExt-CustomClaims] | No | No |
+| Usable for customizing token claims | Yes | Yes [1][DirectoryExt-CustomClaims-Concept], [2][DirectoryExt-CustomClaims-HowTo] | No | No |
 | Available in Azure AD B2C | Yes | [Yes][B2CDirectoryExt] | Yes | Yes |
 | Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2 Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> |
 
@@ -1091,6 +1091,7 @@ The same privileges that your app requires to read from or write to a resource i
 [ADConnect-YES]: /azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions
 [dynamic membership rules]: /azure/active-directory/enterprise-users/groups-dynamic-membership
 [DynamicMembership-YES]: /azure/active-directory/enterprise-users/groups-dynamic-membership#extension-properties-and-custom-extension-properties
-[DirectoryExt-CustomClaims]: /azure/active-directory/develop/active-directory-optional-claims#configuring-directory-extension-optional-claims
+[DirectoryExt-CustomClaims-Concept]: /entra/identity-platform/schema-extensions
+[DirectoryExt-CustomClaims-HowTo]: /entra/identity-platform/optional-claims#configure-directory-extension-optional-claims
 [B2CDirectoryExt]: /azure/active-directory-b2c/user-profile-attributes#extension-attributes
 [MAPI-named-property]: /office/client-developer/outlook/mapi/mapi-named-properties
