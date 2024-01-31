@@ -70,7 +70,7 @@ In a delegated (user) context, an application calls the access reviews API on be
 
 In an application context, an application calls the access reviews API without a signed-in user present. A typical scenario is a scheduled background script regularly collecting decisions for all access reviews.
 
-## Next steps 
+## Related content
 
 + [Use the access reviews API](/graph/api/resources/accessreviewsv2-overview)
 + [Read more about Microsoft Entra access reviews](/azure/active-directory/governance/access-reviews-overview)

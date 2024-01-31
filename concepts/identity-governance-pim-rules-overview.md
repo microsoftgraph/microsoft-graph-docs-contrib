@@ -86,7 +86,7 @@ The following image shows the notification role settings on the Microsoft Entra 
 | 16 | Send notifications when eligible members activate this role: Notification to activated user (requestor) | `Notification_Requestor_EndUser_Assignment` / unifiedRoleManagementPolicyNotificationRule | Requestor |
 | 17 | Send notifications when eligible members activate this role: Request to approve an activation | `Notification_Approver_EndUser_Assignment` / unifiedRoleManagementPolicyNotificationRule | Approver |
 
-## See also
+## Related content
 
 + [Overview of role management through the privileged identity management (PIM) API](/graph/api/resources/privilegedidentitymanagementv3-overview)
 + [Use PIM APIs in Microsoft Graph to update rules](how-to-pim-update-rules.md)

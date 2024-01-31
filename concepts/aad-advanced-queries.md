@@ -529,7 +529,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 + [Use query parameters to customize responses](/graph/query-parameters)
 + [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635)
