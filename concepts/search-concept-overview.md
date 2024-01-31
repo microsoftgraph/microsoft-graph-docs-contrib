@@ -22,7 +22,7 @@ The Microsoft Search API provides one unified search endpoint that you can use t
 
 Use [Microsoft Graph connectors](/microsoftsearch/connectors-overview) to include data outside of the Microsoft cloud in your search experience. For instance, connect to an organization's human resources database or product catalog. Then use the Microsoft Search API to seamlessly [query](/graph/api/search-query) the external data source.
 
-Browse the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery) to find ready-to-use connectors. Alternatively, you can [build your own connectors](/graph/api/resources/indexing-api-overview#common-use-cases) to index external custom items and query specific external data sources.
+Browse the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery) to find ready-to-use connectors. Alternatively, you can [build your own connectors](/graph/api/resources/connectors-api-overview#common-use-cases) to index external custom items and query specific external data sources.
 
 ### Consistent, up-to-date search experience
 
@@ -44,7 +44,7 @@ Looking for the API reference for this service?
 
 - [Use the Microsoft Search API to query data v1.0](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)
 - [Use the Microsoft Search API to query data beta](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
-- [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview)
+- [Use the Microsoft Search API to index data](/graph/api/resources/connectors-api-overview)
 - [Use the Microsoft Search API to manage administrative search answers beta](/graph/api/resources/search-api-answers-overview?view=graph-rest-beta&preserve-view=true) (preview)
 
 ## Next steps
