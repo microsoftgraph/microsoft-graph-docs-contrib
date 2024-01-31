@@ -405,7 +405,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcWindowsSetting",
                     "ChangeType": "Addition",
-                    "Description": "Added the **cloudPcWindowsSetting** resource type.",
+                    "Description": "Added the [cloudPcWindowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcWindowsSetting?view=graph-rest-beta) resource type.",
                     "Target": "cloudPcWindowsSetting"
                 }
             ],
