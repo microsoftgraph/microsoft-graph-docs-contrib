@@ -1373,6 +1373,13 @@ items:
                 href: api/subscription-delete.md
               - name: Reauthorize
                 href: api/subscription-reauthorize.md
+      - name: Cloud clipboards
+        items:
+          - name: Cloud clipboard
+            href: resources/cloudclipboarditem.md
+            items:
+              - name: Get
+                href: api/cloudclipboarditem-get.md
       - name: Compliance
         displayName: Compliance API, Microsoft Graph Compliance API
         items:
