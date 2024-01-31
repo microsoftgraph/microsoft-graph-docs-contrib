@@ -1049,7 +1049,7 @@ The following table compares the extension types, which should help you decide w
 | Managed via | Microsoft Graph <br/> Exchange admin center | Microsoft Graph | Microsoft Graph | Microsoft Graph |
 | Sync data from on-premises to extensions using [AD connect][] | Yes, for users | [Yes][ADConnect-YES] | No | No |
 | Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | [Yes][DynamicMembership-YES] | No | No |
-| Usable for customizing token claims | Yes | Yes [1][DirectoryExt-CustomClaims-Concept], [2][DirectoryExt-CustomClaims-HowTo] | No | No |
+| Usable for customizing token claims | Yes | Yes ([1][DirectoryExt-CustomClaims-Concept], [2][DirectoryExt-CustomClaims-HowTo]) | No | No |
 | Available in Azure AD B2C | Yes | [Yes][B2CDirectoryExt] | Yes | Yes |
 | Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2 Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> |
 
