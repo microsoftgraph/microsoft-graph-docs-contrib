@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "deletePasswordSingleSignOnCredentials",
           "ChangeType": "Addition",
-          "Description": "Added the [deletePasswordSingleSignOnCredentials](https://docs.microsoft.com/en-us/graph/api/user-deletepasswordsinglesignoncredentials?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource for deleting the [password-based single sign-on](https://docs.microsoft.com/en-us/graph/api/resources/passwordsinglesignoncredentialset?view=graph-rest-beta) credentials for a user to a given service principal.",
+          "Description": "Added the [deletePasswordSingleSignOnCredentials](https://learn.microsoft.com/en-us/graph/api/user-deletepasswordsinglesignoncredentials?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource for deleting the [password-based single sign-on](https://learn.microsoft.com/en-us/graph/api/resources/passwordsinglesignoncredentialset?view=graph-rest-beta) credentials for a user to a given service principal.",
           "Target": "user"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPasswordSingleSignOnCredentials",
           "ChangeType": "Addition",
-          "Description": "[getPasswordSingleSignOnCredentials](https://docs.microsoft.com/en-us/graph/api/user-getpasswordsinglesignoncredentials?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource for retrieving the [password-based single sign-on](https://docs.microsoft.com/en-us/graph/api/resources/passwordsinglesignoncredentialset?view=graph-rest-beta) credentials for a user.",
+          "Description": "[getPasswordSingleSignOnCredentials](https://learn.microsoft.com/en-us/graph/api/user-getpasswordsinglesignoncredentials?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource for retrieving the [password-based single sign-on](https://learn.microsoft.com/en-us/graph/api/resources/passwordsinglesignoncredentialset?view=graph-rest-beta) credentials for a user.",
           "Target": "user"
         }
       ],
