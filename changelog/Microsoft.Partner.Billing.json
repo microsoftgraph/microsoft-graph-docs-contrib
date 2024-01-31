@@ -139,14 +139,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [billedReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billedreconciliation?view=graph-rest-beta) resource and a supported method.",
           "Target": "billedReconciliation"
-        },
-        {
-          "Id": "b9c98ce4-20c9-48d8-9023-52bde6ceb89f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "unbilledReconciliation",
-          "ChangeType": "Addition",
-          "Description": "Added the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-unbilledreconciliation?view=graph-rest-beta) resource and a supported method.",
-          "Target": "unbilledReconciliation"
         }
       ],
       "Id": "b9c98ce4-20c9-48d8-9023-52bde6ceb89f",
