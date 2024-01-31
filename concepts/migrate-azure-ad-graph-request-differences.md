@@ -96,4 +96,4 @@ When migrating your apps to Microsoft Graph, update references that use `$links`
 ## Next step
 
 > [!div class="nextstepaction"]
-> Learn about [service feature differences](migrate-azure-ad-graph-feature-differences.md) and review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)

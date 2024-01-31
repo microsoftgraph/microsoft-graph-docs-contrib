@@ -1056,11 +1056,11 @@ items:
                     href: resources/tokenlifetimepolicy.md
                     items:
                       - name: Assign
-                        href: api/application-post-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-post-tokenlifetimepolicies.md
                       - name: List
-                        href: api/application-list-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-list-tokenlifetimepolicies.md
                       - name: Remove
-                        href: api/application-delete-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-delete-tokenlifetimepolicies.md
               - name: Single sign on
                 items:
                   - name: Create password single sign on credentials
@@ -1919,10 +1919,8 @@ items:
                 items:
                   - name: Cloud PC reports
                     href: resources/cloudpcreports.md
-                  - name: Get remote action status reports
-                    href: api/cloudpcreports-getactionstatusreports.md
-                  - name: Get raw remote connection reports
-                    href: api/cloudpcreports-getrawremoteconnectionreports.md
+                  - name: Get Cloud PC recommendation reports
+                    href: api/cloudpcreports-getcloudpcrecommendationreports.md
                   - name: Get connection quality reports
                     href: api/cloudpcreports-getconnectionqualityreports.md
                   - name: Get daily aggregated remote connection reports
@@ -1931,16 +1929,20 @@ items:
                     href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
                   - name: Get inaccessible Cloud PC reports
                     href: api/cloudpcreports-getinaccessiblecloudpcreports.md
-                  - name: Get real time remote connection latency
+                  - name: Get raw remote connection reports
+                    href: api/cloudpcreports-getrawremoteconnectionreports.md
+                  - name: Get real-time remote connection latency
                     href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
-                  - name: Get real time remote connection status
-                    href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+                  - name: Get real-time remote connection status
+                    href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md                    
+                  - name: Get remote action status reports
+                    href: api/cloudpcreports-getactionstatusreports.md
                   - name: Get shared-use license usage reports (deprecated)
                     href: api/cloudpcreports-getshareduselicenseusagereport.md
-                  - name: Get Windows 365 Frontline reports
-                    href: api/cloudpcreports-getfrontlinereport.md
                   - name: Get total aggregated remote connection reports
                     href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+                  - name: Get Windows 365 Frontline reports
+                    href: api/cloudpcreports-getfrontlinereport.md
                   - name: Export to download report
                     items:
                       - name: Cloud PC export job
@@ -12211,8 +12213,12 @@ items:
                     href: resources/accesspackageassignmentrequest.md
                     items:
                       - name: List
-                        href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
+                        href: api/entitlementmanagement-list-assignmentrequests.md
                       - name: Create
+                        href: api/entitlementmanagement-post-assignmentrequests.md
+                      - name: List (deprecated)
+                        href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
+                      - name: Create (deprecated)
                         href: api/entitlementmanagement-post-accesspackageassignmentrequests.md
                       - name: Get
                         href: api/accesspackageassignmentrequest-get.md
@@ -15880,8 +15886,8 @@ items:
                     - name: Relying party detailed summary
                       href: resources/relyingpartydetailedsummary.md
                       items:
-                        - name: List
-                          href: api/relyingpartydetailedsummary-list.md
+                        - name: Get relying party detailed dummary
+                          href: api/reportroot-getrelyingpartydetailedsummary.md
                 - name: Application credential activity
                   href: resources/appcredentialsigninactivity.md
                   items:
@@ -16598,6 +16604,24 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: List
                     href: api/simulationautomation-list-runs.md
+          - name: Audit log query (preview)
+            items:
+              - name: Audit log query
+                href: resources/security-auditlogquery.md
+                items: 
+                  - name: List
+                    href: api/security-auditcoreroot-list-auditlogqueries.md
+                  - name: Create
+                    href: api/security-auditcoreroot-post-auditlogqueries.md
+                  - name: Get
+                    href: api/security-auditlogquery-get.md
+                  - name: List audit log records
+                    href: api/security-auditlogquery-list-records.md
+              - name: Audit log record
+                href: resources/security-auditlogrecord.md
+                items:
+                  - name: List
+                    href: api/security-auditlogquery-list-records.md
           - name: eDiscovery (preview)
             items:
               - name: Case

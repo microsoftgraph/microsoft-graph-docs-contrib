@@ -62,7 +62,7 @@ The value of `mobilePhoneMethodId` for the `mobile` phoneType is `3179e48a-750b-
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
