@@ -29,34 +29,10 @@
         {
           "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
           "ApiChange": "Resource",
-          "ChangedApiName": "cloudClipboardRoot",
-          "ChangeType": "Addition",
-          "Description": "Added the [cloudClipboardRoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardRoot?view=graph-rest-beta) resource.",
-          "Target": "cloudClipboardRoot"
-        },
-        {
-          "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
-          "ApiChange": "Resource",
           "ChangedApiName": "userSettings",
           "ChangeType": "Addition",
           "Description": "Added the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource.",
           "Target": "userSettings"
-        },
-        {
-          "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "windowsSetting",
-          "ChangeType": "Addition",
-          "Description": "Added the [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowsSetting?view=graph-rest-beta) resource.",
-          "Target": "windowsSetting"
-        },
-        {
-          "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "windowsSettingInstance",
-          "ChangeType": "Addition",
-          "Description": "Added the [windowsSettingInstance](https://learn.microsoft.com/en-us/graph/api/resources/windowsSettingInstance?view=graph-rest-beta) resource.",
-          "Target": "windowsSettingInstance"
         }
       ],
       "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",

@@ -26,10 +26,10 @@ Here is the table for the possible `formatName` values and their corresponding W
 | ------------------------------| ------------------------------------- | --------------------------------------- |
 | AnsiText                      | ANSI Text Format                      | CF_TEXT                                 |
 | Text                          | Unicode Text Format                   | CF_UNICODETEXT                          |
-| UniformResourceLocatorW       | Unicode URL Format                    | [CFSTR_INETURLW](https://learn.microsoft.com/en-us/windows/win32/shell/clipboard#cfstr_ineturl)                          |
-| UniformResourceLocator        | ANSI URI Format                       | [CFSTR_INETURLA](https://learn.microsoft.com/en-us/windows/win32/shell/clipboard#cfstr_ineturl)                          |
-| RichTextFormat                | Rich Text Format                      | [Registered Clipboard Format](https://learn.microsoft.com/en-us/windows/win32/dataxchg/clipboard-formats#registered-clipboard-formats)  |
-| HTMLFormat                    | HTML Format                           | [CF_HTML](https://learn.microsoft.com/en-us/windows/win32/dataxchg/html-clipboard-format)  |
+| UniformResourceLocatorW       | Unicode URL Format                    | [CFSTR_INETURLW](/windows/win32/shell/clipboard#cfstr_ineturl)                          |
+| UniformResourceLocator        | ANSI URI Format                       | [CFSTR_INETURLA](/windows/win32/shell/clipboard#cfstr_ineturl)                          |
+| RichTextFormat                | Rich Text Format                      | [Registered Clipboard Format](/windows/win32/dataxchg/clipboard-formats#registered-clipboard-formats)  |
+| HTMLFormat                    | HTML Format                           | [CF_HTML](/windows/win32/dataxchg/html-clipboard-format)  |
 | {Custom}                      | Custom Format defined by clients      | N/A  |
 
 ## Relationships

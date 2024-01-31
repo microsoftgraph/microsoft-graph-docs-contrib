@@ -28,7 +28,7 @@ Represents the information and properties of [cloudClipboardItem](../resources/c
 |expirationDateTime|DateTimeOffset|Set by the server. DateTime in UTC when the object will be expired and after that the object will be no longer available. Default TTL is 12 hours after  the creation. |
 |id|Guid|The unique identifier of the object.|
 |lastModifiedDateTime|DateTimeOffset|Set by the server. DateTime in UTC when the object was modified on the server.|
-|payloads|[cloudClipboardItemPayload](../resources/cloudclipboarditempayload.md) collection| A [cloudClipboardItem](../resources/cloudclipboarditem.md) can have multiple [cloudClipboardItemPayload](../resources/cloudclipboarditempayload.md) objects in the `payloads`. As it is specified in the doc [here](https://learn.microsoft.com/en-us/windows/win32/dataxchg/clipboard-formats#multiple-clipboard-formats), "a window can place more than one clipboard object on the clipboard, each representing the same information in a different clipboard format."|
+|payloads|[cloudClipboardItemPayload](../resources/cloudclipboarditempayload.md) collection| A [cloudClipboardItem](../resources/cloudclipboarditem.md) can have multiple [cloudClipboardItemPayload](../resources/cloudclipboarditempayload.md) objects in the `payloads`. As it is specified in the doc [here](/windows/win32/dataxchg/clipboard-formats#multiple-clipboard-formats), "a window can place more than one clipboard object on the clipboard, each representing the same information in a different clipboard format."|
 
 ## Relationships
 None.
