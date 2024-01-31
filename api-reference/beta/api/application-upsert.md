@@ -90,6 +90,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.application",
   "name": "upsert_application_create"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -161,7 +162,7 @@ The following example updates the application because the specified application 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "upsert_application_update"
+  "name": "application_upsert_update"
 }
 -->
 
@@ -180,7 +181,7 @@ Prefer: create-if-missing
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "name": "upsert_application_update"
+  "name": "application_upsert_update"
 -->
 
 ``` http
