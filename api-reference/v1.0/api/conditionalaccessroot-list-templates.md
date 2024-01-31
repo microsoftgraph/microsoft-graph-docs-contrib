@@ -37,7 +37,7 @@ This method supports the `$filter` and `$select` OData query parameters to help 
 ## Request headers
 | Name            |Description|
 |:----------------|:----------|
-| Authorization   | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional. |
 
 ## Request body

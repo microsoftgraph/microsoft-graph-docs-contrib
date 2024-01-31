@@ -295,7 +295,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |insights|[officeGraphInsights](officegraphinsights.md) | Read-only. Nullable.|
 |licenseDetails|[licenseDetails](licensedetails.md) collection|A collection of this user's license details. Read-only.|
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
-|manager|[directoryObject](directoryobject.md)|The user or contact that is this user's manager. Read-only. (HTTP Methods: GET, PUT, DELETE.). Supports `$expand`.|
+|manager|[directoryObject](directoryobject.md)|The user or contact that is this user's manager. Read-only. Supports `$expand`.|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable. Supports `$expand`. |
 |messages|[message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
 |onenote|[onenote](onenote.md)| Read-only.|

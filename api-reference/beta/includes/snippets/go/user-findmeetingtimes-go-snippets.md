@@ -36,7 +36,7 @@ address := "alexw@contoso.onmicrosoft.com"
 emailAddress.SetAddress(&address) 
 attendeeBase.SetEmailAddress(emailAddress)
 
-attendees := []graphmodels.attendeeBaseable {
+attendees := []graphmodels.AttendeeBaseable {
 	attendeeBase,
 }
 requestBody.SetAttendees(attendees)
@@ -53,7 +53,7 @@ locationConstraintItem.SetResolveAvailability(&resolveAvailability)
 displayName := "Conf room Hood"
 locationConstraintItem.SetDisplayName(&displayName) 
 
-locations := []graphmodels.locationConstraintItemable {
+locations := []graphmodels.LocationConstraintItemable {
 	locationConstraintItem,
 }
 locationConstraint.SetLocations(locations)

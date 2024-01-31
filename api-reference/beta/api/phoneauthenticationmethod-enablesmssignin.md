@@ -56,7 +56,7 @@ The value of `id` for the `mobile` phoneType is `3179e48a-750b-4051-897c-87b9720
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

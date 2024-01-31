@@ -58,11 +58,9 @@ Inherits from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp
 |fileName|String|The name of the main Lob application file. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |packageId|String|The package identifier.|
-|identityName|String|The Identity Name. This property is being deprecated in 2302(February 2023).|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |versionName|String|The version name of managed Android Line of Business (LoB) app.|
 |versionCode|String|The version code of managed Android Line of Business (LoB) app.|
-|identityVersion|String|The identity version. This property is being deprecated in 2302(February 2023).|
 |targetedPlatforms|[androidTargetedPlatforms](../resources/intune-apps-androidtargetedplatforms.md)|The platforms to which the application can be targeted. If not specified, will defauilt to Android Device Administrator. Possible values are: `androidDeviceAdministrator`, `androidOpenSourceProject`, `unknownFutureValue`.|
 
 ## Relationships
@@ -116,7 +114,6 @@ Here is a JSON representation of the resource.
   "fileName": "String",
   "size": 1024,
   "packageId": "String",
-  "identityName": "String",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
     "v4_0": true,
@@ -138,7 +135,6 @@ Here is a JSON representation of the resource.
   },
   "versionName": "String",
   "versionCode": "String",
-  "identityVersion": "String",
   "targetedPlatforms": "String"
 }
 ```

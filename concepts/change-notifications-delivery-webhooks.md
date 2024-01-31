@@ -332,7 +332,7 @@ In this article, you learned how to receive change notifications through webhook
 3. As long as the subscription is still valid and changes occur to the subscribed resource, Microsoft Graph will send change notifications to the **notificationUrl** endpoint.
 4. Regularly renew the subscription to maintain its validity and continue receiving updates on the subscribed changes.
 
-## See also
+## Related content
 
 - [subscription resource type](/graph/api/resources/subscription)
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
