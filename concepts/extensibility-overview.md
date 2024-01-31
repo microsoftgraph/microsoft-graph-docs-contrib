@@ -1087,10 +1087,10 @@ The same privileges that your app requires to read from or write to a resource i
 [todoTask]: /graph/api/resources/todotask
 [todoTaskList]: /graph/api/resources/todotasklist
 [servicePrincipal]: /graph/api/resources/serviceprincipal
-[AD connect]: /azure/active-directory/hybrid/whatis-hybrid-identity?context=/azure/active-directory/enterprise-users/context/ugr-context
-[ADConnect-YES]: /azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions
-[dynamic membership rules]: /azure/active-directory/enterprise-users/groups-dynamic-membership
-[DynamicMembership-YES]: /azure/active-directory/enterprise-users/groups-dynamic-membership#extension-properties-and-custom-extension-properties
+[AD connect]: /entra/identity/hybrid/whatis-hybrid-identity?context=%2Fazure%2Factive-directory%2Fenterprise-users%2Fcontext%2Fugr-context
+[ADConnect-YES]: /entra/identity/hybrid/connect/how-to-connect-sync-feature-directory-extensions
+[dynamic membership rules]: /entra/identity/users/groups-dynamic-membership
+[DynamicMembership-YES]: /entra/identity/users/groups-dynamic-membership#extension-properties-and-custom-extension-properties
 [DirectoryExt-CustomClaims-Concept]: /entra/identity-platform/schema-extensions
 [DirectoryExt-CustomClaims-HowTo]: /entra/identity-platform/optional-claims#configure-directory-extension-optional-claims
 [B2CDirectoryExt]: /azure/active-directory-b2c/user-profile-attributes#extension-attributes
