@@ -1056,11 +1056,11 @@ items:
                     href: resources/tokenlifetimepolicy.md
                     items:
                       - name: Assign
-                        href: api/application-post-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-post-tokenlifetimepolicies.md
                       - name: List
-                        href: api/application-list-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-list-tokenlifetimepolicies.md
                       - name: Remove
-                        href: api/application-delete-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-delete-tokenlifetimepolicies.md
               - name: Single sign on
                 items:
                   - name: Create password single sign on credentials
@@ -1926,10 +1926,8 @@ items:
                 items:
                   - name: Cloud PC reports
                     href: resources/cloudpcreports.md
-                  - name: Get remote action status reports
-                    href: api/cloudpcreports-getactionstatusreports.md
-                  - name: Get raw remote connection reports
-                    href: api/cloudpcreports-getrawremoteconnectionreports.md
+                  - name: Get Cloud PC recommendation reports
+                    href: api/cloudpcreports-getcloudpcrecommendationreports.md
                   - name: Get connection quality reports
                     href: api/cloudpcreports-getconnectionqualityreports.md
                   - name: Get daily aggregated remote connection reports
@@ -1938,16 +1936,20 @@ items:
                     href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
                   - name: Get inaccessible Cloud PC reports
                     href: api/cloudpcreports-getinaccessiblecloudpcreports.md
-                  - name: Get real time remote connection latency
+                  - name: Get raw remote connection reports
+                    href: api/cloudpcreports-getrawremoteconnectionreports.md
+                  - name: Get real-time remote connection latency
                     href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
-                  - name: Get real time remote connection status
-                    href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+                  - name: Get real-time remote connection status
+                    href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md                    
+                  - name: Get remote action status reports
+                    href: api/cloudpcreports-getactionstatusreports.md
                   - name: Get shared-use license usage reports (deprecated)
                     href: api/cloudpcreports-getshareduselicenseusagereport.md
-                  - name: Get Windows 365 Frontline reports
-                    href: api/cloudpcreports-getfrontlinereport.md
                   - name: Get total aggregated remote connection reports
                     href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+                  - name: Get Windows 365 Frontline reports
+                    href: api/cloudpcreports-getfrontlinereport.md
                   - name: Export to download report
                     items:
                       - name: Cloud PC export job

@@ -1481,16 +1481,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4
 No Content - 204
 ```
 
-## See also
+## Related content
 
 In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do:
 
 - [Working with the Microsoft Entra entitlement management API](/graph/api/resources/entitlementmanagement-overview)
-- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog)
-- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest)
-- [accessPackage](/graph/api/resources/accesspackage)
-- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope)
-- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy)
-- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest)
-- [group](/graph/api/resources/group)
-- [user](/graph/api/resources/user)
