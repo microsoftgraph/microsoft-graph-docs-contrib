@@ -318,8 +318,6 @@ The following example shows the response. The value of the **preferredDataLocati
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group",
   "name": "upsert_update_prepopulated_group"
 } -->
 

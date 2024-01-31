@@ -172,8 +172,6 @@ Prefer: create-if-missing
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
-  "@odata.type": "microsoft.graph.group",
   "name": "upsert_update_serviceprincipal"
 }
 -->

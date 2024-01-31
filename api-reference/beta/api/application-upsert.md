@@ -180,8 +180,6 @@ Prefer: create-if-missing
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
-  "@odata.type": "microsoft.graph.application",
   "name": "upsert_application_update"
 -->
 
