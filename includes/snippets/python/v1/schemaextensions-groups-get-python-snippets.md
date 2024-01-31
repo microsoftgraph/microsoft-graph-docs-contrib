@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = SchemaExtensionsRequestBuilder.SchemaExtensionsRequestBuilderGetQueryParameters(
-		filter = "id eq 'graphlearn_test'",
+		filter = "id eq 'bellowscollege_courses'",
 )
 
 request_configuration = SchemaExtensionsRequestBuilder.SchemaExtensionsRequestBuilderGetRequestConfiguration(

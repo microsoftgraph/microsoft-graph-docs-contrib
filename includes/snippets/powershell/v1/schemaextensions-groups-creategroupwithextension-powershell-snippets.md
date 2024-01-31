@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	displayName = "New Managers March 2017"
-	description = "New Managers training course for March 2017"
+	displayName = "New Managers March 2024"
+	description = "New Managers training course for March 2024"
 	groupTypes = @(
 		"Unified"
 	)
 	mailEnabled = $true
-	mailNickname = "newMan201703"
+	mailNickname = "newMan202403"
 	securityEnabled = $false
 }
 

@@ -35,7 +35,7 @@ POST /print/printers/{id}/jobs/{id}/redirect
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the ID of the printer that the print job should be redirected to.
