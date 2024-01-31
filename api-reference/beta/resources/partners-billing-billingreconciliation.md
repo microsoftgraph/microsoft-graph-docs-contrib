@@ -29,8 +29,7 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|billed|[microsoft.graph.partners.billing.billedReconciliation](partners-billing-billingreconciliation.md)|Represents details for billed invoice reconciliation data.|
-|unbilled|[microsoft.graph.partners.billing.unbilledReconciliation](partners-billing-unbilledreconciliation.md)|Represents details for unbilled non-usage reconciliation data.|
+|billed|[microsoft.graph.partners.billing.billedReconciliation](partners-billing-billedreconciliation.md)|Represents details for billed invoice reconciliation data.|
 
 ## JSON representation
 

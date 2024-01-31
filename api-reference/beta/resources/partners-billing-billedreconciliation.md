@@ -7,7 +7,7 @@ ms.prod: "reports"
 doc_type: resourcePageType
 ---
 
-# billedUsage resource type
+# billedreconciliation resource type
 
 Namespace: microsoft.graph.partners.billing
 

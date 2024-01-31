@@ -56,14 +56,7 @@ The partner billing API provides methods and actions that allow Microsoft direct
 
 | Use case | API |
 |--|--|
-| Create a new export operation to export billed invoice reconciliation data | [billedUsage: export](../api/partners-billing-billedreconciliation-export.md) |
-| Poll for operation status update | [Get operation](../api/partners-billing-operation-get.md) |
-
-### Unbilled non-usage reconciliation data
-
-| Use case | API |
-|--|--|
-| Create a new export operation to export unbilled non-usage reconciliation data | [unbilledUsage: export](../api/partners-billing-unbilledreconciliation-export.md) |
+| Create a new export operation to export billed invoice reconciliation data | [billedReconciliation: export](../api/partners-billing-billedreconciliation-export.md) |
 | Poll for operation status update | [Get operation](../api/partners-billing-operation-get.md) |
 
 
@@ -77,7 +70,7 @@ Use the [billedUsage: export](../api/partners-billing-billedusage-export.md) or 
 
 ### Non-usage line-item endpoint
 
-Use the [Billedinvoicereconciliation: export](../api/partners-billing-billedreconciliation-export.md) or [unbillednonusagereconciliation: export](../api/partners-billing-unbilledreconciliation-export.md) API to access billed invoice reconciliation and unbilled non-usage reconciliation line items. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
+Use the [billedReconciliation: export](../api/partners-billing-billedreconciliation-export.md) API to access billed invoice reconciliation line items. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
 
 
 ### Operation status endpoint

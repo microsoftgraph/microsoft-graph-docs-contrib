@@ -32,7 +32,7 @@ None.
 |manifests|[microsoft.graph.partners.billing.manifest](partners-billing-manifest.md) collection|Represents metadata for the exported data.|
 |operations|[microsoft.graph.partners.billing.operation](partners-billing-operation.md) collection|Represents an operation to export the billing data of a partner.|
 |usage|[microsoft.graph.partners.billing.azureUsage](partners-billing-azureusage.md)|Represents details for billed and unbilled Azure usage data.|
-|reconciliation|[microsoft.graph.partners.billing.billingreconciliation](partners-billing-billingreconciliation.md)|Represents details for billed invoice reconciliation and unbilled non-usage reconciliation data.|
+|reconciliation|[microsoft.graph.partners.billing.billingreconciliation](partners-billing-billingreconciliation.md)|Represents details for billed invoice reconciliation data.|
 
 ## JSON representation
 
