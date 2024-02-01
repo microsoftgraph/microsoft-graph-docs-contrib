@@ -1378,7 +1378,8 @@ items:
           - name: Cloud clipboard
             href: resources/cloudclipboarditem.md
             items:
-              - name: Get
+              - List cloud clipboards
+              - name: Get cloud clipboard
                 href: api/cloudclipboarditem-get.md
       - name: Compliance
         displayName: Compliance API, Microsoft Graph Compliance API

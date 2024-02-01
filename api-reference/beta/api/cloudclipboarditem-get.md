@@ -1,19 +1,19 @@
 ---
-title: "Get cloudClipboardItems"
-description: "Read the properties and relationships of a cloudClipboardItem object or a list of cloudClipbaordItems. "
+title: "Get cloudClipboardItem(s)"
+description: "Read the properties and relationships of a cloudClipboardItem object. "
 author: "yuechen7"
 ms.localizationpriority: medium
 ms.prod: "pdrs"
 doc_type: apiPageType
 ---
 
-# Get cloudClipboardItems
+# Get cloudClipboardItem(s)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a list of [cloudClipboardItem](../resources/cloudclipboarditem.md) objects. The API only allows getting [cloudClipboardItem](../resources/cloudclipboarditem.md) objects for 
+Read the properties and relationships of a [cloudClipboardItem](../resources/cloudclipboarditem.md) object. The API only allows getting a [cloudClipboardItem](../resources/cloudclipboarditem.md) object for 
 - The signed-in user's own [cloudClipboardItem](../resources/cloudclipboarditem.md).
 - An app on behalf of the user if the user has given delegated access to it.
 
@@ -36,10 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-Get all cloud clipboard items of the signed-in user.
-``` http
-GET /me/cloudClipboard/items/
-```
 
 Get a single cloud clipboard item by passing an item id.
 ``` http
@@ -50,14 +46,11 @@ GET /me/cloudClipboard/items/{cloudClipboardItemId}
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-- $skipToken: A token returned in the @odata.nextLink URL in the response of the previous GET [cloudClipboardItem](../resources/cloudclipboarditem.md) request, indicating there are more [cloudClipboardItem](../resources/cloudclipboarditem.md) objects  to fetch for the user. 
-
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Prefer |odata.maxpagesize={x}. Optional. Specifies a preferred integer {x} page size for paginated results. Acceptable values are 1 to 200, inclusive. If not specified in the header, the default page size is 110. 
 
 ## Request body
 
@@ -65,64 +58,17 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [cloudClipboardItem](../resources/cloudclipboarditem.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a list of [cloudClipboardItem](../resources/cloudclipboarditem.md) objects or a single [cloudClipboardItem](../resources/cloudclipboarditem.md) object, depending on the request, in the response body.
 
 ## Examples
 
 
 ### Request
 
-The following example shows a request of getting all the [cloudClipboardItem](../resources/cloudclipboarditem.md) of a user.
-<!-- {
-  "blockType": "request",
-  "name": "get_cloudclipboarditems"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/me/cloudClipboard/items
-```
-
-### Response
-
-The following example shows the response of getting all [cloudClipboardItem](../resources/cloudclipboarditem.md).
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudClipboardItem)"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.cloudClipboardItem",
-      "id": "292bcf2f-b37e-49d0-8882-1e33dd5c2273",
-      "payloads": [
-        {
-          "@odata.type": "microsoft.graph.cloudClipboardItemPayload",
-          "content": "UHVsbCBSZXF1ZXN0IDk0MTU0MTQ6IFJlbWZCByZXBsYWNlZCB3aXRoIHN1bW1hcnkgbWVzc2FnZS4=",
-          "formatName": "Text"
-        }
-      ],
-      "createdDateTime": "2023-08-10T16:56:25.413Z",
-      "lastModifiedDateTime": "2022-06-06T17:04:58.000Z",
-      "expirationDateTime": "2023-08-11T04:56:25.387Z"
-    }
-  ],
-  "@odata.nextLink": "https://graph.microsoft.com/beta/me/cloudClipboard/items?$skiptoken=lastModifiedDateTime%20le%202024-01-31T01:14:29.675Z"
-}
-```
-
-### Request
-
 The following example shows a request of getting a single [cloudClipboardItem](../resources/cloudclipboarditem.md) by id.
 <!-- {
   "blockType": "request",
-  "name": "get_cloudclipboarditemById"
+  "name": "get_cloudclipboarditem"
 }
 -->
 ``` http
@@ -134,7 +80,7 @@ The following example shows the response of getting a single [cloudClipboardItem
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudClipboardItem)"
+  "@odata.type": "microsoft.graph.cloudClipboardItem"
 }
 -->
 ``` http
@@ -142,22 +88,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
+  "@odata.type": "#microsoft.graph.cloudClipboardItem",
+  "id": "292bcf2f-b37e-49d0-8882-1e33dd5c2273",
+  "payloads": [
     {
-      "@odata.type": "#microsoft.graph.cloudClipboardItem",
-      "id": "292bcf2f-b37e-49d0-8882-1e33dd5c2273",
-      "payloads": [
-        {
-          "@odata.type": "microsoft.graph.cloudClipboardItemPayload",
-          "content": "UHVsbCBSZXF1ZXN0IDk0MTU0MTQ6IFJlbWZCByZXBsYWNlZCB3aXRoIHN1bW1hcnkgbWVzc2FnZS4=",
-          "formatName": "Text"
-        }
-      ],
-      "createdDateTime": "2023-08-10T16:56:25.413Z",
-      "lastModifiedDateTime": "2022-06-06T17:04:58.000Z",
-      "expirationDateTime": "2023-08-11T04:56:25.387Z"
+      "@odata.type": "microsoft.graph.cloudClipboardItemPayload"
+      "content": "UHVsbCBSZXF1ZXN0IDk0MTU0MTQ6IFJlbWZCByZXBsYWNlZCB3aXRoIHN1bW1hcnkgbWVzc2FnZS4=",
+      "formatName": "Text"
     }
-  ]
+  ],
+  "createdDateTime": "2023-08-10T16:56:25.413Z",
+  "lastModifiedDateTime": "2022-06-06T17:04:58.000Z",
+  "expirationDateTime": "2023-08-11T04:56:25.387Z"
 }
 ```
-
