@@ -97,7 +97,7 @@ Content-Type: application/json
       "id": "292bcf2f-b37e-49d0-8882-1e33dd5c2273",
       "payloads": [
         {
-          "@odata.type": "microsoft.graph.cloudClipboardItemPayload"
+          "@odata.type": "microsoft.graph.cloudClipboardItemPayload",
           "content": "UHVsbCBSZXF1ZXN0IDk0MTU0MTQ6IFJlbWZCByZXBsYWNlZCB3aXRoIHN1bW1hcnkgbWVzc2FnZS4=",
           "formatName": "Text"
         }
