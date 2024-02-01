@@ -218,7 +218,7 @@ Microsoft Entra ID resources and their relationships that derive from [directory
 > [!NOTE]
 >
 > - After tokenization, the tokens are matched independently of the original casing, and they are matched in any order. For example, displayName `李四(David Li)` matches search strings such as `李四(David Li)`, `李四`, `David`, `Li`, `David)`, `(李四`, `Li 李`.
-> - A change in the alphabet, such as from Latin to Cyrillic or Chinese, doesn't create a new token. For example, displayName `蓝色group` matches only the `蓝色group` and `蓝色` search strings, but not `group` or `蓝`; while displayName `group蓝色` matches only the `group蓝色` and `group` search strings, but not `蓝色` or `蓝`.
+> - A change in the alphabet, such as from Latin to Cyrillic or Chinese, doesn't create a new token. For example, displayName `蓝色group` matches the `蓝色group` and `蓝色` search strings, but not `group`; while displayName `group蓝色` matches the `group蓝色` and `group` search strings, but not `蓝色` or `蓝`.
 > - The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior.
 For example:
 
