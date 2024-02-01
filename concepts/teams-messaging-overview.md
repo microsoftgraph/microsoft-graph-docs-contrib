@@ -559,6 +559,8 @@ Represents users, applications (bots, webhooks etc), channels, teams or tags bei
     ],
 ```
 
+> **Note:** @mentions can also appear inside cards
+
 ### messageType
 
 Represents the type of message. The values in use are 
