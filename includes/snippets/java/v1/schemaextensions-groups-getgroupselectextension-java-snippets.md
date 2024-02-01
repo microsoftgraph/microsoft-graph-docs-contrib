@@ -8,8 +8,8 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 GroupCollectionPage groups = graphClient.groups()
 	.buildRequest()
-	.filter("graphlearn_courses/courseId eq '123'")
-	.select("displayName,id,description,graphlearn_courses")
+	.filter("bellowscollege_courses/courseId eq '123'")
+	.select("displayName,id,description,bellowscollege_courses")
 	.get();
 
 ```
