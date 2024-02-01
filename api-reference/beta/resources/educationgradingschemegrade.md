@@ -18,7 +18,7 @@ Adding Grading Shemes to the existing class-wide Settings.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultPercentage|Int32|The mid point of the grade's range. |    No    |    No    | If the teacher assigns a grade, we need to compute how many points they've assigned. By default, if you give an A (with range 90-100%), we'll assign 95% of the max points. But you can change this per your preference / school policy.|
+|defaultPercentage|Int32|The mid point of the grade's range. |
 |displayName|String|The name of the grading scheme.|
 |minPercentage|Int32|The minimum percentage of the total points needed to achieve this grade.|
 

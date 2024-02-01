@@ -10732,7 +10732,7 @@ items:
               - name: Get delta
                 href: api/educationcategory-delta.md
           - name: Grading category
-            href: resources/educationgradingscheme.md
+            href: resources/educationgradingcategory.md
             items:
               - name: Add grading category
                 href: api/educationassignment-post-gradingcategory.md

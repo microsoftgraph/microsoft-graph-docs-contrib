@@ -7,13 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Create educationGradingScheme
+# Add educationGradingScheme
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new educationGradingScheme object.
+Add a new [educationGradingScheme](../resources/educationgradingscheme.md) object to an educationAssignment.
 
 ## Permissions
 
@@ -21,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "educationassignmentsettings-post-gradingschemes-permissions"
+  "name": "educationassignment-post-gradingscheme-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/educationassignmentsettings-post-gradingschemes-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/educationassignment-post-gradingscheme-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PUT /education/classes/{educationClassId}/assignments/{assignmentid}/gradingScheme/$ref
+PUT /education/classes/{educationClassId}/assignmentSettings/defaultGradingScheme/$ref
 ```
 
 ## Request headers
@@ -52,14 +52,14 @@ You can specify the following properties when creating an **educationGradingSche
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the grading scheme.|
-|grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The grades that make up the scheme.|
+|grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The name of the grading scheme.|
 |hidePointsDuringGrading|Boolean|Display setting for our UI. Whether teachers can grade with points in addition to letter grades.|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [educationGradingScheme](../resources/educationgradingscheme.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an [educationGradingScheme](../resources/educationgradingscheme.md) object in the response body.
 
 ## Examples
 
@@ -68,11 +68,11 @@ If successful, this method returns a `201 Created` response code and an [educati
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_educationgradingscheme_from_"
+  "name": "set_defaultGradingScheme"
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/e98aaae1-7c98-4e65-bb62-1994fe410552/gradingScheme/$ref
+PUT https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/defaultGradingScheme/$ref
 Content-Type: application/json
 
 {
@@ -86,10 +86,9 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true  
+  "truncated": true
 }
 -->
 ``` http
 HTTP/1.1 204 No Content
 ```
-
