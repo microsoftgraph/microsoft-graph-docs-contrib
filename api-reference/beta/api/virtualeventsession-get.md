@@ -37,14 +37,21 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
+To get a session of a webinar:
+
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}
+```
+
+To get a session of a town hall:
+
+``` http
 GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}
 ```
 
 ## Optional query parameters
 
-This method does not support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
