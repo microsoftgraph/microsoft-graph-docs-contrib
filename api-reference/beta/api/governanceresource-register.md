@@ -46,7 +46,7 @@ This method **only** supports the `$select` and `$expand` [OData query parameter
 
 | Name | Description |
 |:---- |:----------- |
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json |
 
 ## Request body

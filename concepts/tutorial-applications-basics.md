@@ -587,7 +587,7 @@ PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46f
 }
 ```
 
-## See also
+## Related content
 
 + [Properties of an enterprise application (service principal)](/azure/active-directory/manage-apps/application-properties)
 + [Add a certificate to an app using Microsoft Graph](/graph/applications-how-to-add-certificate)

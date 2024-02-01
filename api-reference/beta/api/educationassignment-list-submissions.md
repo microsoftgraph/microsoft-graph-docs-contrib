@@ -47,7 +47,7 @@ All [properties](/graph/api/resources/educationsubmission#properties) are suppor
 
 | Header        | Value                                     |
 | :------------ | :---------------------------------------- |
-| Authorization | Bearer {token}. Required.                 |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer        | `include-unknown-enum-members`. Optional. |
 
 ## Request body
