@@ -1,5 +1,5 @@
 ---
-title: "Get cloudClipboardItem(s)"
+title: "Get cloudClipboardItem"
 description: "Read the properties and relationships of a cloudClipboardItem object. "
 author: "yuechen7"
 ms.localizationpriority: medium
@@ -7,8 +7,7 @@ ms.prod: "pdrs"
 doc_type: apiPageType
 ---
 
-# Get cloudClipboardItem(s)
-
+# Get cloudClipboardItem
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -58,7 +57,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [cloudClipboardItem](../resources/cloudclipboarditem.md) objects or a single [cloudClipboardItem](../resources/cloudclipboarditem.md) object, depending on the request, in the response body.
+If successful, this method returns a `200 OK` response code and a [cloudClipboardItem](../resources/cloudclipboarditem.md) object in the response body.
 
 ## Examples
 
