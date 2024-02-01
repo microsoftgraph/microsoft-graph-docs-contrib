@@ -1047,7 +1047,7 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/application
 No Content - 204
 ```
 
-## See also
+## Related content
 
 - [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy)
 - [application](/graph/api/resources/application)
