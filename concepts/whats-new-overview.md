@@ -30,6 +30,15 @@ Use the **webURL** property to get the deep link URL of an [educationSubmission]
 
 Through the **attributes** property of the [accessPackageResource resource type](/graph/api/resources/accesspackageresource), you can now view details of the attributes that are collected from the requestor and sent to the resource application.
 
+### Reports | Partner billing reports
+
+The new partner billing API in Microsoft Graph offers Microsoft direct partners a faster, more efficient way to export their high-volume billed and unbilled Azure usage data. Partners can quickly create export operations, monitor their status, and retrieve manifests using the following APIs:
+
+- [billedUsage: export](/graph/api/partners-billing-billedusage-export)
+- [unbilledUsage: export](/graph/api/partners-billing-unbilledusage-export)
+- [Get operation](/graph/api/partners-billing-operation-get)
+- [Get manifest](/graph/api/partners-billing-manifest-get)
+
 ### Teamwork and communications | Calls and online meetings
 Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant) in a [call](/graph/api/resources/call). For more information, see [JSON payload examples](/graph/api/application-post-calls#notification---roster) of notifications with delta roster disabled or enabled.
 
