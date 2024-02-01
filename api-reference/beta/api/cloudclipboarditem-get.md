@@ -43,7 +43,7 @@ GET /me/cloudClipboard/items/{cloudClipboardItemId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+N/A.
 
 ## Request headers
 
@@ -92,7 +92,7 @@ Content-Type: application/json
   "payloads": [
     {
       "@odata.type": "microsoft.graph.cloudClipboardItemPayload",
-      "content": "UHVsbCBSZXF1ZXN0IDk0MTU0MTQ6IFJlbWZCByZXBsYWNlZCB3aXRoIHN1bW1hcnkgbWVzc2FnZS4=",
+      "content": "aGVsbG8sIHdvcmxkIQ==",
       "formatName": "Text"
     }
   ],

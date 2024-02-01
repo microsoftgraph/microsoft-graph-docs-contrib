@@ -42,9 +42,10 @@ GET /user/cloudClipboard/items
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response. 
 
-- $skipToken: A token returned in the @odata.nextLink URL in the response of the previous GET [cloudClipboardItem](../resources/cloudclipboarditem.md) request, indicating there are more [cloudClipboardItem](../resources/cloudclipboarditem.md) objects  to fetch for the user. 
+`$skipToken` is a token returned in the `@odata.nextLink` URL in the response of the previous List [cloudClipboardItem](../resources/cloudclipboarditem.md) objects request, indicating there are more [cloudClipboardItem](../resources/cloudclipboarditem.md) objects to fetch for the user. 
+
 
 ## Request headers
 
@@ -98,7 +99,7 @@ Content-Type: application/json
       "payloads": [
         {
           "@odata.type": "microsoft.graph.cloudClipboardItemPayload",
-          "content": "UHVsbCBSZXF1ZXN0IDk0MTU0MTQ6IFJlbWZCByZXBsYWNlZCB3aXRoIHN1bW1hcnkgbWVzc2FnZS4=",
+          "content": "aGVsbG8sIHdvcmxkIQ==",
           "formatName": "Text"
         }
       ],
