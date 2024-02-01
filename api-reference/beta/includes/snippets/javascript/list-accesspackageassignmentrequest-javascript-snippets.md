@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let getRelyingPartyDetailedSummary = await client.api('/reports/getRelyingPartyDetailedSummary(period='period_value')')
+let assignmentRequests = await client.api('/identityGovernance/entitlementManagement/assignmentRequests')
 	.version('beta')
 	.get();
 

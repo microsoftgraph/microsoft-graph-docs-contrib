@@ -32,7 +32,7 @@ Simple migration projects should experience no issues in these areas.
 
 However, if you use new features, services, or add additional capabilities, you may need new permissions and end-user consent may be required.  In such cases, consent is requested when tokens are refreshed.
 
-## Next Steps
+## Next step
 
-- Learn [authentication library](migrate-azure-ad-graph-authentication-library.md) differences between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [!div class="nextstepaction"]
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)

@@ -422,7 +422,7 @@ Though you added Azure AD Graph permissions, you haven't granted these permissio
 When using Microsoft Graph and any related SDKs, you can grant permissions to an app registration without the need to use the Microsoft Entra admin center and selecting the *Grant admin consent for [Company]* button on the API permissions page. For more information, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
 -->
 
-## See also
+## Related content
 
 - [application object](/graph/api/resources/application)
 - [Grant permissions programmatically without interactive consent](/graph/permissions-grant-via-msgraph)
