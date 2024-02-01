@@ -30,7 +30,7 @@ Here is the table for the possible `formatName` values and their corresponding W
 | UniformResourceLocator        | ANSI URI Format                       | [CFSTR_INETURLA](/windows/win32/shell/clipboard#cfstr_ineturl)                          |
 | RichTextFormat                | Rich Text Format                      | [Registered Clipboard Format](/windows/win32/dataxchg/clipboard-formats#registered-clipboard-formats)  |
 | HTMLFormat                    | HTML Format                           | [CF_HTML](/windows/win32/dataxchg/html-clipboard-format)  |
-| {Custom}                      | Custom Format defined by clients to identify application-specific formats.       | N/A  |
+| {Custom}                      | Custom Format defined by clients to identify application-specific formats. It can only be understood and handled by the client that created it.   | N/A  |
 
 ## Relationships
 None.
