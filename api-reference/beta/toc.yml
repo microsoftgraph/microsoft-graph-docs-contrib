@@ -1378,7 +1378,8 @@ items:
           - name: Cloud clipboard
             href: resources/cloudclipboarditem.md
             items:
-              - List cloud clipboards
+              - name: List cloud clipboards
+                href: api/cloudclipboardroot-list-items.md
               - name: Get cloud clipboard
                 href: api/cloudclipboarditem-get.md
       - name: Compliance
