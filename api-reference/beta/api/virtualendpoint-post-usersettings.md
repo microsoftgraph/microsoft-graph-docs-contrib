@@ -51,10 +51,10 @@ The following table lists the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The setting name as it appears in the UI. |
-|lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
-|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `True`.  |
+|lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `true`.  |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created (that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
-|selfServiceEnabled (deprecated)|Boolean|To turn on the self service option, change this setting to `True`. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
+|selfServiceEnabled (deprecated)|Boolean|To turn on the self service option, change this setting to `true`. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
 
 ## Response
 
@@ -64,7 +64,8 @@ If successful, this method returns a `201 Created` response code and a [cloudPcU
 
 ### Request
 
-# [HTTP](#tab/http)
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_cloudpcusersetting_from_"
@@ -81,46 +82,14 @@ Content-Type: application/json
   "localAdminEnabled": true,
   "restorePointSetting": {
     "frequencyInHours": 16,
+    "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   }
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpcusersetting-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-cloudpcusersetting-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcusersetting-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-cloudpcusersetting-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-cloudpcusersetting-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-cloudpcusersetting-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpcusersetting-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-cloudpcusersetting-from--python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -140,9 +109,9 @@ Content-Type: application/json
   "localAdminEnabled": true,
   "restorePointSetting": {
     "frequencyInHours": 16,
+    "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   },
   "lastModifiedDateTime": "2021-02-01T10:29:57Z"  
 }
 ```
-
