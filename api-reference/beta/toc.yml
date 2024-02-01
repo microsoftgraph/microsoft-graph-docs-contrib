@@ -6,6 +6,8 @@ items:
   - name: API changelog
     href: https://developer.microsoft.com/en-us/graph/changelog
     displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
+  - name: Quick start
+    href: https://developer.microsoft.com/en-us/graph/quick-start
   - name: Authentication and authorization
     href: /graph/auth/index?context=graph/api/beta
   - name: Permissions reference
