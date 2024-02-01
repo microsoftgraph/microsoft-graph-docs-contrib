@@ -21,7 +21,7 @@ Represents details for billed invoice reconciliation data.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[export](../api/partners-billing-billedreconciliation-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export the billed invoice reconciliation data.|
+|[export](../api/partners-billing-billedreconciliation-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Exports the billed invoice reconciliation data.|
 
 ## Properties
 
