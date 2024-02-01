@@ -29,14 +29,6 @@
         {
           "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
           "ApiChange": "Resource",
-          "ChangedApiName": "cloudClipboardRoot",
-          "ChangeType": "Addition",
-          "Description": "Added the [cloudClipboardRoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardRoot?view=graph-rest-beta) resource.",
-          "Target": "cloudClipboardRoot"
-        },
-        {
-          "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
-          "ApiChange": "Resource",
           "ChangedApiName": "userSettings",
           "ChangeType": "Addition",
           "Description": "Added the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource.",
