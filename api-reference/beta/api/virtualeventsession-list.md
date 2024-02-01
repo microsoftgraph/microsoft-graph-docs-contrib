@@ -62,10 +62,10 @@ Currently, only the following properties are filled out on a virtualEventSession
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
-| endDateTime           | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session end time.   |
+| endDateTime           | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session end time.   |
 | id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).    |
 | joinWebUrl | String | The join URL of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
-| startDateTime | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session start time. |
+| startDateTime | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session start time. |
 | subject | String | The subject of the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 
 ## Examples
