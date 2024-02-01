@@ -1,19 +1,19 @@
 ---
-title: "virtualEvent: getByUserRole"
-description: "List all virtual events where the signed-in user is either the organizer a coorganizer."
+title: "virtualEventWebinar: getByUserRole"
+description: "Get a list of virtualEventWebinar objects where the signed-in user is either the organizer a coorganizer."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualEvent: getByUserRole
+# virtualEventWebinar: getByUserRole
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of virtual events where the signed-in user is either the organizer or a coorganizer.
+Get a list of [virtualEventWebinar](../resources/virtualeventwebinar.md) objects where the signed-in user is either the organizer or a coorganizer.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -21,8 +21,8 @@ Get a collection of virtual events where the signed-in user is either the organi
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "virtualevent_getbyuserrole" } -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualevent-getbyuserrole-permissions.md)]
+<!-- { "blockType": "permissions", "name": "virtualeventwebinar_getbyuserrole" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventwebinar-getbyuserrole-permissions.md)]
 
 ## HTTP request
 
@@ -54,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [virtualEventWebinar](../resources/virtualeventwebinar.md)/[virtualEventTownhall](../resources/virtualeventtownhall.md)  collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [virtualEventWebinar](../resources/virtualeventwebinar.md) objects in the response body.
 
 ## Examples
 
