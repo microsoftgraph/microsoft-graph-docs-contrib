@@ -263,6 +263,53 @@ Content-type: application/json
 }
 ```
 
+### Example 5: Publish an app with missing information in manifest to the app catalog
+
+#### Request
+
+The following example shows a request.
+
+```http
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
+Content-type: application/zip
+
+[Zip file containing a Teams app package with manifest property missing or error]
+```
+
+For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
+
+#### Response
+
+The following example shows the response.
+
+```json
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "name | Required properties are missing from object: [].; developer.websiteUrl | String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
+        "innerError": {
+            "code": "UnableToParseTeamsAppManifest",
+            "message": "name | Required properties are missing from object: [].; developer.websiteUrl | String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
+            "details": [
+                {
+                    "code": "SchemaError_Required",
+                    "message": "Required properties are missing from object: [].",
+                    "target": "name"
+                },
+                {
+                    "code": "SchemaError_Pattern",
+                    "message": "String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
+                    "target": "developer.websiteUrl"
+                }
+            ],
+            "date": "2024-01-18T21:47:58",
+            "request-id": "d1878136-bc88-421a-b342-c3d883db31a1",
+            "client-request-id": "d1878136-bc88-421a-b342-c3d883db31a1"
+        }
+    }
+}
+```
+
 ## See also
 
 - [App catalog C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/csharp)
