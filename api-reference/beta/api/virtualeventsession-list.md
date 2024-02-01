@@ -36,8 +36,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To list all sessions of a webinar:
+
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions
+```
+
+To list all sessions of a town hall:
+
+``` http
 GET /solutions/virtualEvents/townhalls/{townhallId}/sessions
 ```
 
