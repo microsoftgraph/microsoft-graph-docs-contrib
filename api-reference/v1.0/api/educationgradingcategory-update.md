@@ -30,7 +30,7 @@ PATCH /education/classes/{classId}/assignmentSettings/gradingCategories/{grading
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

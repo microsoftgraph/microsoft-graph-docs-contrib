@@ -37,7 +37,7 @@ If a resource is **not** shown in this list, it's already available in the [v1.0
 | [TrustedCasForPasswordAuth](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration) <br> v1.0&nbsp;-&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration) | |
 | [UserIdentity](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[objectIdentity](/graph/api/resources/objectidentity?view=graph-rest-beta&preserve-view=true) <br> v1.0&nbsp;-&nbsp;[objectIdentity](/graph/api/resources/objectidentity) |  New modeling for the identifiers used to sign into a user account, called **objectIdentity**. Supports Azure AD B2C scenarios. |
 
-## Next Steps
+## Next step
 
-- Learn about [entity property differences](migrate-azure-ad-graph-property-differences.md) between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [!div class="nextstepaction"]
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)

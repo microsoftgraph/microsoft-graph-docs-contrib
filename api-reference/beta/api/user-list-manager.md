@@ -56,7 +56,7 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 
 | Header           | Value                                                                                          |
 | :--------------- | :--------------------------------------------------------------------------------------------- |
-| Authorization    | Bearer {token}. Required.                                                                      |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. Required when the request includes the `$levels=n` in the `$expand` query parameter. |
 
 ## Request body
