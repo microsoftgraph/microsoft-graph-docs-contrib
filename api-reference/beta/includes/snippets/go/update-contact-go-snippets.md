@@ -35,7 +35,7 @@ typedEmailAddress1.SetType(&type)
 otherLabel := "Volunteer work"
 typedEmailAddress1.SetOtherLabel(&otherLabel) 
 
-emailAddresses := []graphmodels.typedEmailAddressable {
+emailAddresses := []graphmodels.TypedEmailAddressable {
 	typedEmailAddress,
 	typedEmailAddress1,
 }

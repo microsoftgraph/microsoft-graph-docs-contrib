@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of. (For example, multifactor authentication, self-service password reset, and passwordless authentication.)
+Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of. For example, multifactor authentication, self-service password reset, and passwordless authentication. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
 Inherits from [entity](../resources/entity.md).
 

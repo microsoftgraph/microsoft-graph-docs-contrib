@@ -564,7 +564,7 @@ HTTP/1.1 204 No Content
 ```
 
 
-## See also
+## Related content
 
 - [Automate employee onboarding tasks before their first day of work with the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-onboard-custom-workflow-portal)
 - [Overview of Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
