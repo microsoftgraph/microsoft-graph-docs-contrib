@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 ReportRootGetRelyingPartyDetailedSummaryCollectionPage getRelyingPartyDetailedSummary = graphClient.reports()
 	.getRelyingPartyDetailedSummary(ReportRootGetRelyingPartyDetailedSummaryParameterSet
 		.newBuilder()
-		.withPeriod("period_value")
+		.withPeriod("D7")
 		.build())
 	.buildRequest()
 	.get();

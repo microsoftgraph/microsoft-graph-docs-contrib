@@ -7,11 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 SchemaExtension schemaExtension = new SchemaExtension();
-schemaExtension.id = "graphlearn_courses";
-schemaExtension.description = "Graph Learn training courses extensions";
+schemaExtension.id = "bellowscollege_courses";
+schemaExtension.description = "Bellows College training courses extensions";
 LinkedList<String> targetTypesList = new LinkedList<String>();
 targetTypesList.add("Group");
 schemaExtension.targetTypes = targetTypesList;
+schemaExtension.owner = "d1e6f196-fca3-48ad-8cd3-1a98e3bd46d2";
 LinkedList<ExtensionSchemaProperty> propertiesList = new LinkedList<ExtensionSchemaProperty>();
 ExtensionSchemaProperty properties = new ExtensionSchemaProperty();
 properties.name = "courseId";

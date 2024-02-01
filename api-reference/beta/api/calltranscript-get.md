@@ -60,7 +60,7 @@ GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
