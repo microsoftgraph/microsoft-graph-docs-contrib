@@ -1,5 +1,5 @@
 ---
-title: "List callRecord participants"
+title: "List participants_v2"
 description: "Get the list of participants associated with a callRecord."
 ms.localizationpriority: medium
 author: "mcm223"
@@ -7,11 +7,11 @@ ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
-# List callRecord participants
+# List participants_v2
 
 Namespace: microsoft.graph.callRecords
 
-Get the list of [participants](../resources/callrecords-participant.md) associated with a [callRecord](../resources/callrecords-callrecord.md).
+Get the list of [participant](../resources/callrecords-participant.md) objects associated with a [callRecord](../resources/callrecords-callrecord.md).
 
 ## Permissions
 
@@ -56,13 +56,13 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.callRecords.participant](../resources/callrecords-participant.md) objects in the response body.
 
-When a result set spans multiple pages, Microsoft Graph returns that page with an **@odata.nextLink** property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the **@odata.nextLink** URL in each response, until all the results are returned. For more information, see [paging Microsoft Graph data in your app](/graph/paging). The maximum page size for participants is 130 entries.
+When a result set spans multiple pages, Microsoft Graph returns that page with an **@odata.nextLink** property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the **@odata.nextLink** URL in each response, until all the results are returned. For more information, see [Paging Microsoft Graph data in your app](/graph/paging). The maximum page size for participants is 130 entries.
 
 ## Examples
 
 ### Request
 
-The following example shows a request to get the list of [participants](../resources/callrecords-participant.md) for a [callRecord](../resources/callrecords-callrecord.md).
+The following example shows a request to get the list of [participant](../resources/callrecords-participant.md) objects for a [callRecord](../resources/callrecords-callrecord.md).
 
 <!-- {
   "blockType": "request",
