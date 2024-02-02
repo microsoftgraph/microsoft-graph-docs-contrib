@@ -15,18 +15,15 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualeventtownhall-get-presenter-permissions"
-}
--->
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported.|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|VirtualEvent.Read.All|
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "virtualeventsession_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventpresenter-get-permissions.md)]
+
+> [!NOTE]
+>
+> To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. This allows the authorized application to access registrants' information from virtual events created by that specific user.
 
 ## HTTP request
 
@@ -35,11 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /solutions/virtualEvents/events/{virtualEventId}/presenters/{presenterId}
+GET /solutions/virtualEvents/townhalls/{townhallId}/presenters/{presenterId}
 ```
-
-## Optional query parameters
-This method doesn't currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -58,6 +52,7 @@ If successful, this method returns a `200 OK` response code and a [virtualEventP
 ## Examples
 
 ### Request
+
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -65,11 +60,11 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/events/{virtualEventId}/presenters/{presenterId}
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/fc6e8c15-2fd7-1dd5-caa0-87056e6a12be/presenters/831affc2-4c8a-9929-50e7-02964563b6e4
 ```
 
-
 ### Response
+
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

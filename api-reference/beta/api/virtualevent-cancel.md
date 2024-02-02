@@ -14,9 +14,10 @@ Namespace: microsoft.graph
 
 Cancel a virtual event.
 
-Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md). A canceled town hall will have its status set to `canceled` permanently. You can still get a canceled town hall using the [Get virtualEventTownhall](../api/virtualeventtownhall-get.md) method.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
