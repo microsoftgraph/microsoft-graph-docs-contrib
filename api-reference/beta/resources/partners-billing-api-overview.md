@@ -1,5 +1,5 @@
 ---
-title: "Use the Microsoft Graph API to export partner billing data (preview)"
+title: "Use the Microsoft Graph API to export partner billing data"
 description: "The partner billing API in Microsoft Graph offers Microsoft direct partners a faster, more efficient way to export their high-volume billed and unbilled Azure usage data."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.custom: zt-include
 ---
 
-# Use the Microsoft Graph API to export partner billing data (preview)
+# Use the Microsoft Graph API to export partner billing data
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

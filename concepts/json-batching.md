@@ -219,6 +219,6 @@ For a list of current limitations related to batching, see [known issues](https:
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
 [throttling-and-batching]: throttling.md#throttling-and-batching
 
-## See also
+## Related content
 
 For more information about the JSON batch request/response format, see the [OData JSON Format Version 4.01 specification](http://docs.oasis-open.org/odata/odata-json-format/v4.01/odata-json-format-v4.01.html#sec_BatchRequestsandResponses), section _Batch Requests and Responses_.

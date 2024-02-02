@@ -33,7 +33,7 @@ PATCH /print/printers/{id}/jobs/{id}
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the values of the relevant [printJob](../resources/printjob.md) fields. Existing properties that are not included in the request body will maintain their previous values. 

@@ -45,7 +45,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, 
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -97,6 +97,10 @@ GET /sites/{site-id}/pages/microsoft.graph.sitePage
 [!INCLUDE [sample-code](../includes/snippets/php/get-pages-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-pages-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-pages-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -123,7 +127,7 @@ Content-type: application/json
         {
             "id": "08f48aa6-02e3-407c-bbcb-ff61cec653fa",
             "name": "sample.aspx",
-            "webUrl": "SitePages/sample.aspx",
+            "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/sample.aspx",
             "title": "sample",
             "pageLayout": "article",
             "showComments": true,
@@ -170,7 +174,7 @@ Content-type: application/json
         {
             "id": "7d87eee1-7c77-46b5-b2c4-ad6e4e432a8e",
             "name": "Home.aspx",
-            "webUrl": "SitePages/Home.aspx",
+            "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Home.aspx",
             "title": "Home",
             "pageLayout": "home",
             "showComments": true,
