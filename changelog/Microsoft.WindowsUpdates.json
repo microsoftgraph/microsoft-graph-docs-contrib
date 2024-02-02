@@ -1,5 +1,63 @@
 {
     "changelog": [
+        { 
+            "ChangeList": [
+                {
+                "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "applicableContent",
+                "ChangeType": "Deletion",
+                "Description": "Removed the **applicableContent** resource.",
+                "Target": "applicableContent"
+                },
+                {
+                "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "applicableContentDeviceMatch",
+                "ChangeType": "Deletion",
+                "Description": "Removed the **applicableContentDeviceMatch** resource.",
+                "Target": "applicableContentDeviceMatch"
+                },
+                {
+                "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "applicableContent",
+                "ChangeType": "Addition",
+                "Description": "Added the [applicableContent](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicableContent?view=graph-rest-beta) resource.",
+                "Target": "applicableContent"
+                },
+                {
+                "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "applicableContentDeviceMatch",
+                "ChangeType": "Addition",
+                "Description": "Added the [applicableContentDeviceMatch](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicableContentDeviceMatch?view=graph-rest-beta) resource.",
+                "Target": "applicableContentDeviceMatch"
+                },
+                {
+                "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                "ApiChange": "Property",
+                "ChangedApiName": "applicableContent",
+                "ChangeType": "Deletion",
+                "Description": "Removed the **applicableContent** property from the [deploymentAudience](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-deploymentAudience?view=graph-rest-beta) resource.",
+                "Target": "deploymentAudience"
+                },
+                {
+                "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                "ApiChange": "Relationship",
+                "ChangedApiName": "applicableContent",
+                "ChangeType": "Addition",
+                "Description": "Added the **applicableContent** relationship to the [deploymentAudience](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-deploymentAudience?view=graph-rest-beta) resource.",
+                "Target": "deploymentAudience"
+                }
+            ],
+            "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+            "Cloud": "Review",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-31T23:34:50.3183446Z",
+            "WorkloadArea": "Microsoft.WindowsUpdates",
+            "SubArea": ""
+        },
         {
             "ChangeList": [
                 {
