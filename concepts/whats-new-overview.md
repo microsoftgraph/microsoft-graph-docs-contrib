@@ -88,7 +88,7 @@ The new partner billing API in Microsoft Graph offers Microsoft direct partners 
 
 ### Users
 
-Added the [deletePasswordSingleSignOnCredentials](/graph/api/user-deletepasswordsinglesignoncredentials?view=graph-rest-beta&preserve-view=true) and [getPasswordSingleSignOnCredentials](/graph/api/user-getpasswordsinglesignoncredentials?view=graph-rest-beta&preserve-view=true) methods to the [user](/graph/api/resources/user?view=graph-rest-beta) resource for deleting and retrieving the password-based single sign-on credentials for a user to a given service principal.
+Added the [deletePasswordSingleSignOnCredentials](/graph/api/user-deletepasswordsinglesignoncredentials?view=graph-rest-beta&preserve-view=true) and [getPasswordSingleSignOnCredentials](/graph/api/user-getpasswordsinglesignoncredentials?view=graph-rest-beta&preserve-view=true) methods to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource for deleting and retrieving the password-based single sign-on credentials for a user to a given service principal.
 
 ## December 2023: New and generally available
 
