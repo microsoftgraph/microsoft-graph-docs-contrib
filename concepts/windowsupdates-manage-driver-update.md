@@ -154,7 +154,8 @@ Content-type: application/json
 
 After devices are added to a deployment audience, you can browse and review a catalog of [applicable content](/graph/api/resources/windowsupdates-applicablecontent) for drivers and firmware that are better than what is currently installed on the collection of devices in a deployment audience. The applicable content also provides a matched devices list of Microsoft Entra devices that are applicable for each driver.
 
-The following example shows how to get the inventory of driver updates available for devices in an existing deployment audience.
+The following example shows how to get the inventory of driver updates available for devices in an existing deployment audience. Note: each page of results returns up to 100 catalogEntries. Use the returned continuation token to see more results.
+
 ### Request
 
 ```http
@@ -187,12 +188,14 @@ Content-type: application/json
             }, 
               "matchedDevices": [], 
               "matchedDevices@odata.nextLink":"https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/f660d844-30b7-46e4-a6cf-47e36164d3cb/applicableContent/5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c/matchedDevices"
-        }
-    ]
+        }, 
+        ...99 entries
+    ], 
+    "@odata.nextLink":"https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/f660d844-30b7-46e4-a6cf-47e36164d3cb/applicableContent?$expand=catalogEntry&$skiptoken=%5b%7B%22token%22%3a%22%2bRID%3a~nx5uAPpQsrzgSQAAAAAAA%3d7b1e923b%22range%22%3a%7b22min%22%3a%max%22%3a22FF%227D%7D%5d"
 }
 ```
 
-Due to the fact that `matchedDevice` lists are often large, the default return behavior when a caller expands the navigation property `matchedDevices` is an empty collection and a continuation token to get the first page of results. The following example shows how to get the list of `matchedDevices` for a given `catalogEntry`.
+Due to the fact that `matchedDevice` lists are often large, the default return behavior when a caller expands the navigation property `matchedDevices` is an empty collection and a continuation token to get the first page of results. Each page contains 100 entries. The following example shows how to get the list of `matchedDevices` for a given `catalogEntry`.
 
 ### Request
 
