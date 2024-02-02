@@ -39,7 +39,7 @@ If the same **updatableAsset** resource is included in the **exclusions** and **
 |:---|:---|:---|
 |exclusions|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to exclude from the audience.|
 |members|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to include in the audience.|
-|applicableContent|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection|Content eligible to deploy to devices in the audience. Not nullable. Read-only.|
+|applicableContent|[microsoft.graph.windowsUpdates.applicableContent](./windowsupdates-applicablecontent.md) collection|Content eligible to deploy to devices in the audience. Not nullable. Read-only.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

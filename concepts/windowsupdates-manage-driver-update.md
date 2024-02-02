@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Manage driver approvals using the Windows Update for Business deployment service
 
-With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](/graph/windowsupdates-deployments) of Windows 10 and Windows 11 feature updates, expedited security updates, and driver updates. This topic focuses on managing the deployments of driver updates. For information about deploying feature updates, see [Deploy a feature update](/graph/windowsupdates-deploy-update). For information about deploying expedited security updates, see [Deploy an expedited security update](/graph/windowsupdates-deploy-expedited-update).
+With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](../api-reference/beta/resources/windowsupdates-deployment.md) of Windows 10 and Windows 11 feature updates, expedited quality updates, and driver updates. This topic focuses on managing the deployments of driver updates. For information about deploying feature updates, see [Deploy a feature update](./windowsupdates-deploy-update.md). For information about deploying expedited quality updates, see [Deploy an expedited quality update](./windowsupdates-deploy-expedited-update.md).
 
 When devices enrolled in the Windows Update for Business deployment service scan Windows Update, the deployment service collects scan results of applicable drivers that are better than what is currently installed on the device.  The service then catalogs them to be browsed, approved, and scheduled for deployment.  Only content that has been approved using the deployment service will be offered to devices as long as it remains enrolled in driver management.
 
@@ -154,8 +154,7 @@ Content-type: application/json
 
 After devices are added to a deployment audience, you can browse and review a catalog of [applicable content](/graph/api/resources/windowsupdates-applicablecontent) for drivers and firmware that are better than what is currently installed on the collection of devices in a deployment audience. The applicable content also provides a matched devices list of Microsoft Entra devices that are applicable for each driver.
 
-The following example shows how to get the inventory of driver updates available for devices in an existing deployment audience. Note: Due to the fact that matchedDevice lists are often large, the default return behavior when a caller expands the navigation property matchedDevices is an empty collection and a continuation token to get the first page of results.
-
+The following example shows how to get the inventory of driver updates available for devices in an existing deployment audience.
 ### Request
 
 ```http
@@ -190,6 +189,39 @@ Content-type: application/json
               "matchedDevices@odata.nextLink":"https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/f660d844-30b7-46e4-a6cf-47e36164d3cb/applicableContent/5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c/matchedDevices"
         }
     ]
+}
+```
+
+Due to the fact that `matchedDevice` lists are often large, the default return behavior when a caller expands the navigation property `matchedDevices` is an empty collection and a continuation token to get the first page of results. The following example shows how to get the list of `matchedDevices` for a given `catalogEntry`.
+
+### Request
+
+```http
+GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/f660d844-30b7-46e4-a6cf-47e36164d3cb/applicableContent/5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c/matchedDevices
+```
+
+### Response
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "value": [
+        {   
+          "deviceId": "id-1",
+          "recommendedBy": ["Microsoft", "Contoso"]             
+        }, 
+        {   
+          "deviceId": "id-2",
+          "recommendedBy": ["Microsoft", "Contoso"]             
+        }, 
+        {   
+          "deviceId": "id-3",
+          "recommendedBy": ["Microsoft", "Contoso"]             
+        }, 
+        ...97 entries
+    ], 
+   "@odata.nextLink":"https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/f660d844-30b7-46e4-a6cf-47e36164d3cb/applicableContent/5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c/matchedDevices?$skiptoken=deviceId:{id-97}"
 }
 ```
 
