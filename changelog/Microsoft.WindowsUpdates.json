@@ -47,7 +47,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": " deviceId",
                     "ChangeType": "Addition",
-                    "Description": "Added the ** deviceId** navigation property from the [windowsupdates-applicablecontentdevicematch](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicablecontentdevicematch?view=graph-rest-beta) resource.",
+                    "Description": "Added the **deviceId** navigation property from the [windowsupdates-applicablecontentdevicematch](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicablecontentdevicematch?view=graph-rest-beta) resource.",
                     "Target": "applicablecontentdevicematch"
                 }
                   {
@@ -55,7 +55,7 @@
                     "ApiChange": "Relationship",
                     "ChangedApiName": " device",
                     "ChangeType": "Deletion",
-                    "Description": "Deleted the ** device** property to the [windowsupdates-applicablecontentdevicematch](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicablecontentdevicematch?view=graph-rest-beta) resource.",
+                    "Description": "Deleted the **device** property to the [windowsupdates-applicablecontentdevicematch](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicablecontentdevicematch?view=graph-rest-beta) resource.",
                     "Target": "applicablecontentdevicematch"
                 }
             ],
