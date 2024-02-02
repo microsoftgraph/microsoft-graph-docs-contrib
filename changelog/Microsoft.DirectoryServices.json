@@ -8967,7 +8967,7 @@
     {
       "ChangeList": [
           {
-              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
               "ApiChange": "Resource",
               "ChangedApiName": "federatedTokenValidationPolicy",
               "ChangeType": "Addition",
@@ -8975,7 +8975,7 @@
               "Target": "federatedTokenValidationPolicy"
           },
           {
-              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
               "ApiChange": "Property",
               "ChangedApiName": "validatingDomains",
               "ChangeType": "Addition",
@@ -8983,7 +8983,7 @@
               "Target": "federatedTokenValidationPolicy"
           },
           {
-              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
               "ApiChange": "Method",
               "ChangedApiName": "LIST",
               "ChangeType": "Addition",
@@ -8991,7 +8991,7 @@
               "Target": "federatedTokenValidationPolicy"
           },
           {
-              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
               "ApiChange": "Method",
               "ChangedApiName": "CREATE",
               "ChangeType": "Addition",
@@ -8999,7 +8999,7 @@
               "Target": "federatedTokenValidationPolicy"
           },
           {
-              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
               "ApiChange": "Method",
               "ChangedApiName": "GET",
               "ChangeType": "Addition",
@@ -9007,7 +9007,7 @@
               "Target": "federatedTokenValidationPolicy"
           },
           {
-              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
               "ApiChange": "Method",
               "ChangedApiName": "UPDATE",
               "ChangeType": "Addition",
@@ -9015,7 +9015,7 @@
               "Target": "federatedTokenValidationPolicy"
           },
           {
-              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
               "ApiChange": "Method",
               "ChangedApiName": "DELETE",
               "ChangeType": "Addition",
@@ -9023,7 +9023,7 @@
               "Target": "federatedTokenValidationPolicy"
           }
       ],
-      "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+      "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-01-02T23:45:05.2808371Z",
