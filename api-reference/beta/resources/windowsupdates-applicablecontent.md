@@ -31,8 +31,8 @@ Represents content applicable for offering to the related collection of devices.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.windowsUpdates.applicableContent"
-  "keyProperty": "catalogEntryId",
+  "@odata.type": "microsoft.graph.windowsUpdates.applicableContent",
+  "keyProperty": "catalogEntryId"
 }
 -->
 ``` json
