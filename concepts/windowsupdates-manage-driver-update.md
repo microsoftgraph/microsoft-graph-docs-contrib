@@ -154,12 +154,12 @@ Content-type: application/json
 
 After devices are added to a deployment audience, you can browse and review a catalog of [applicable content](/graph/api/resources/windowsupdates-applicablecontent) for drivers and firmware that are better than what is currently installed on the collection of devices in a deployment audience. The applicable content also provides a matched devices list of Microsoft Entra devices that are applicable for each driver.
 
-The following example shows how to get the inventory of driver updates available for devices in an existing deployment audience.
+The following example shows how to get the inventory of driver updates available for devices in an existing deployment audience. Note: Due to the fact that matchedDevice lists are often large, the default return behavior when a caller expands the navigation property matchedDevices is an empty collection and a continuation token to get the first page of results.
 
 ### Request
 
 ```http
-GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/f660d844-30b7-46e4-a6cf-47e36164d3cb/applicableContent
+GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/f660d844-30b7-46e4-a6cf-47e36164d3cb/applicableContent?$expand=catalogEntry,matchedDevices
 ```
 
 ### Response
@@ -168,18 +168,11 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/f
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deploymentAudiences('f660d844-30b7-46e4-a6cf-47e36164d3cb')/applicableContent",
     "value": [
         {
-            "matchedDevices": [
-                {
-                    "recommendedBy": [
-                        "Microsoft"
-                    ],
-                    "deviceId": "fb95f07d-9e73-411d-99ab-7eca3a5122b1"
-                }
-            ],
-            "catalogEntry": {
+            "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deploymentAudiences('f660d844-30b7-46e4-a6cf-47e36164d3cb')/applicableContent", 
+            "catalogEntryId": "5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c,
+             "catalogEntry": {
                 "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateCatalogEntry",
                 "id": "5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c",
                 "displayName": "",
@@ -192,8 +185,11 @@ Content-type: application/json
                 "manufacturer": "",
                 "version": "",
                 "versionDateTime": ""
-            }
-        },
+            }, 
+              "matchedDevices": [], 
+              "matchedDevices@odata.nextLink":"https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/f660d844-30b7-46e4-a6cf-47e36164d3cb/applicableContent/5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c/matchedDevices"
+        }
+    ]
 }
 ```
 
