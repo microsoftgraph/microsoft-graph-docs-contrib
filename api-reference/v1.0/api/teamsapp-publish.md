@@ -141,7 +141,7 @@ Content-Type: application/json
 }
 ```
 
-If there is any error or missing information in your app manifest, you gets the following response:
+If there is any error or missing information in your app manifest, you'll get the following response:
 
 ```json
 {
