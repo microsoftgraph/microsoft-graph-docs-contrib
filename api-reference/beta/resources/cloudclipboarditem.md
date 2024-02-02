@@ -50,7 +50,9 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "payloads": [
     {
-      "@odata.type": "microsoft.graph.cloudClipboardItemPayload"
+      "@odata.type": "microsoft.graph.cloudClipboardItemPayload",
+      "content": "String",
+      "formatName": "String"
     }
   ],
   "createdDateTime": "String (timestamp)",

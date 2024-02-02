@@ -100,7 +100,7 @@ Content-Type: application/json
         {
           "@odata.type": "microsoft.graph.cloudClipboardItemPayload",
           "content": "aGVsbG8sIHdvcmxkIQ==",
-          "formatName": "Text"
+          "formatName": "TextBase64"
         }
       ],
       "createdDateTime": "2023-08-10T16:56:25.413Z",

@@ -24,12 +24,12 @@ Represents the information about the actual content of a [cloudClipboardItem](..
 ### FormatName details
 |FormatName |Description |Corresponding Windows Clipboard Formats |
 |:---|:---|:---|
-| AnsiText                      | ANSI Text Format                      | CF_TEXT                                 |
-| Text                          | Unicode Text Format                   | CF_UNICODETEXT                          |
-| UniformResourceLocatorW       | Unicode URL Format                    | [CFSTR_INETURLW](/windows/win32/shell/clipboard#cfstr_ineturl)                          |
-| UniformResourceLocator        | ANSI URI Format                       | [CFSTR_INETURLA](/windows/win32/shell/clipboard#cfstr_ineturl)                          |
-| RichTextFormat                | Rich Text Format                      | [Registered Clipboard Format](/windows/win32/dataxchg/clipboard-formats#registered-clipboard-formats)  |
-| HTMLFormat                    | HTML Format                           | [CF_HTML](/windows/win32/dataxchg/html-clipboard-format)  |
+| AnsiTextBase64                      | ANSI Text Format                      | CF_TEXT                                 |
+| TextBase64                          | Unicode Text Format                   | CF_UNICODETEXT                          |
+| UniformResourceLocatorWBase64       | Unicode URL Format                    | [CFSTR_INETURLW](/windows/win32/shell/clipboard#cfstr_ineturl)                          |
+| UniformResourceLocatorBase64        | ANSI URI Format                       | [CFSTR_INETURLA](/windows/win32/shell/clipboard#cfstr_ineturl)                          |
+| RichTextFormatBase64                | Rich Text Format                      | [Registered Clipboard Format](/windows/win32/dataxchg/clipboard-formats#registered-clipboard-formats)  |
+| HTMLFormatBase64                    | HTML Format                           | [CF_HTML](/windows/win32/dataxchg/html-clipboard-format)  |
 | {Custom}                      | Custom Format defined by clients to identify application-specific formats. It can only be understood and handled by the client that created it.   | N/A  |
 
 ## Relationships
