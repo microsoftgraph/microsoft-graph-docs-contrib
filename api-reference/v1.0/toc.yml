@@ -8728,7 +8728,7 @@ items:
               - name: Online meetings
                 items:
                   - name: Attendance report
-                    href: resources/meetingAttendanceReport.md
+                    href: resources/meetingattendancereport.md
                     items:
                       - name: List
                         href: api/meetingattendancereport-list.md
