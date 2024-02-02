@@ -387,8 +387,7 @@ Limits are expressed as requests per second (rps).
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
-A maximum of 3000 messages per app per day can be sent to a given channel 
-(except when using [migration mode](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
@@ -519,3 +518,7 @@ The preceding information applies to the following resources:
 ## Viva Engage service limits
 
 Viva Engage API calls are subject to rate limiting, allowing 10 requests per user, per app, within a 30-second time period. When you exceed the rate limit, all subsequent requests return a `429 Too Many Requests` response code. 
+
+## Related content
+
+- [Best practices for working with Microsoft Graph](best-practices-concept.md)

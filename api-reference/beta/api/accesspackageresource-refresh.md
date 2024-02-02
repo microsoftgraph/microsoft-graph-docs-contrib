@@ -89,7 +89,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 
 ---
 
-
 ### Response
 
 The following example shows the response.
