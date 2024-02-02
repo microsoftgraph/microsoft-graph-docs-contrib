@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PUT /education/classes/{educationClassId}/assignmentSettings/defaultGradingScheme/$ref
+POST /education/classes/{educationClassId}/assignmentSettings/gradingSchemes
 ```
 
 ## Request headers
@@ -54,8 +54,6 @@ You can specify the following properties when creating an **educationGradingSche
 |displayName|String|The name of the grading scheme.|
 |grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The name of the grading scheme.|
 |hidePointsDuringGrading|Boolean|Display setting for our UI. Whether teachers can grade with points in addition to letter grades.|
-
-
 
 ## Response
 

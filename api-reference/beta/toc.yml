@@ -10744,11 +10744,11 @@ items:
             href: resources/educationgradingscheme.md
             items:
               - name: Add grading scheme
-                href: api/educationassignmentsettings-post-gradingschemes.md
+                href: api/educationgradingscheme-post.md
               - name: Update grading scheme
                 href: api/educationassignmentsettings-update.md
               - name: Delete grading scheme
-                href: api/educationassignment-delete-gradingscheme.md
+                href: api/educationgradingscheme-delete.md
           - name: Module
             href: resources/educationmodule.md
             items:

@@ -533,7 +533,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Using `$top` and `$expand` to get assignments
+### Example 5: $expand to get an assignment's gradingScheme
 
 #### Request
 

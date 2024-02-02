@@ -151,32 +151,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings(defaultGradingScheme())/$entity",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_grading_schemes_beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings(defaultGradingScheme())/$entity",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignmentSettings?$select=submissionAnimationDisabled",
     "submissionAnimationDisabled": true,
-    "gradingCategories@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
-    "gradingCategories": [
-        {
-            "id": "21ca44c0-c44b-4fda-8f6a-dd56e86650e9",
-            "displayName": "Lab",
-            "percentageWeight": 10
-        },
-        {
-            "id": "f216fee5-870b-42de-b847-c38e810dffb7",
-            "displayName": "Homework",
-            "percentageWeight": 80
-        },
-        {
-            "id": "db8f13e7-b71a-4c91-9934-b915f4ac49b7",
-            "displayName": "Test",
-            "percentageWeight": 10
-        }
-    ],
-    "gradingSchemes@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes",
+    "gradingCategories@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_grading_schemes_beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories": [],
+    "gradingSchemes@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_grading_schemes_beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes",
     "gradingSchemes": [
         {
             "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
-            "displayName": "Points",
+            "displayName": "New GradingScheme name 01",
             "hidePointsDuringGrading": false,
             "grades": []
         },
@@ -196,39 +180,13 @@ Content-Type: application/json
                     "defaultPercentage": 0
                 }
             ]
-        },
+        }        
     ],
     "defaultGradingScheme": {
-        "id": "a8e4cbbd-1f4c-4652-aeef-34bc0498d2a2",
-        "displayName": "Pass - fail Scheme",
-        "hidePointsDuringGrading": true,
-        "grades": [
-            {
-                "displayName": "A",
-                "minPercentage": 90,
-                "defaultPercentage": null
-            },
-            {
-                "displayName": "B",
-                "minPercentage": 80,
-                "defaultPercentage": null
-            },
-            {
-                "displayName": "C",
-                "minPercentage": 70,
-                "defaultPercentage": null
-            },
-            {
-                "displayName": "D",
-                "minPercentage": 60,
-                "defaultPercentage": null
-            },
-            {
-                "displayName": "F",
-                "minPercentage": 0,
-                "defaultPercentage": null
-            }
-        ]
+        "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
+        "displayName": "New GradingScheme name 01",
+        "hidePointsDuringGrading": false,
+        "grades": []
     }
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: "educationGradingScheme resource type"
-description: "Add grading Schemes to the existing classes"
+description: "Use custom schemes for grading"
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add grading Schemes to the existing classes
-
+Use custom schemes for grading
 
 Inherits from [entity](../resources/entity.md).
 
