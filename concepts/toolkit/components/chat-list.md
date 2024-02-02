@@ -28,7 +28,9 @@ The following example displays a conversation using the `mgt-chat-list` componen
 
 | Attribute                         | Property            | Description                                                                                            |
 | --------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ |
-| None                              | chatThreadsPerPage  | The number of chat threads to render initially and subsequent Load more clicks. Required.              |
+| None                              | chatThreadsPerPage  | The number of chat threads to render initially and subsequent `Load more` clicks. Required. |
+| None                              | selectedChatId  | Sets the default selected Chat thread based on the Chat Id. |
+| None                              | lastReadTimeInterval  | Interval in seconds by which the the current timestamp is cached to indicate user has seen a chat thread. Defaults to 30 seconds. |
 | None                              | menuItems           | Array of `ChatListMenuItem` that can be passed into the component to render menu item(s). A `Mark all as read` menu item will be added. When clicked, this button will unbold all chat threads. |
 | None                              | buttonItems         | Array of `ChatListButtonItem` that can be passed into the component to render button(s). |
 
@@ -42,11 +44,11 @@ The following events are fired from the component.
 
 | Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
 | ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-| `onLoaded` | Fired when all chat threads are loaded. | No | No | No | No |
-| `onUnselected` | Fired when user selects a different chat thread. | GraphChatThread | No | No | No |
-| `onSelected` | Fired when user selects a chat thread. | `GraphChat` | No | No | No |
-| `onMessageReceived` | Fired when a user chat message is receieved. | `ChatMessage` | No | No | No |
-| `onAllMessagesRead` | Fired when user clicks on `Mark all as read`. | string array of chat id | No | No | No |
+| `onLoaded` | Fired after the first page of chat threads are loaded. | No | No | No | No |
+| `onUnselected` | Fired after a user selects a different chat thread if there was one previously selected. | GraphChatThread | No | No | No |
+| `onSelected` | Fired after a user selects a different chat thread. | `GraphChat` | No | No | No |
+| `onMessageReceived` | Fired after a chat message is received. | `ChatMessage` | No | No | No |
+| `onAllMessagesRead` | Fired after all messages are marked as read as a result of the user selecting the `Mark all as read` option. | string array of chat id | No | No | No |
 
 ## Templates
 
