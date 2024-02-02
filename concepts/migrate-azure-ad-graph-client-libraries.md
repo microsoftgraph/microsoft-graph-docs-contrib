@@ -155,7 +155,7 @@ The [C# console snippets app](https://github.com/microsoftgraph/console-csharp-s
 
 The Azure AD Graph client library supports only the .NET platform.  However, Microsoft Graph client library supports additional [platforms and languages](/graph) that you may find more useful for your solutions.
 
-## Next Steps
+## Next step
 
-- Learn how to [deploy, test, and extend](./migrate-azure-ad-graph-deploy-test-extend.md) apps you've migrated to Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [!div class="nextstepaction"]
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)
