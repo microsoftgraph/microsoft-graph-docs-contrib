@@ -1,6 +1,6 @@
 ---
 title: schedulingGroupInfo resource type
-description: Represents the details of a scheduling group .
+description: Represents the details of a scheduling group.
 author: shanemalone
 ms.localizationpriority: high
 ms.prod: microsoft-teams
