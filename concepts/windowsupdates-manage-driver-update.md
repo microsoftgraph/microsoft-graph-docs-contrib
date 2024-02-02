@@ -154,7 +154,7 @@ Content-type: application/json
 
 After devices are added to a deployment audience, you can browse and review a catalog of [applicable content](../api-reference/beta/resources/windowsupdates-applicablecontent.md) for drivers and firmware that are better than what is currently installed on the collection of devices in a deployment audience. The applicable content also provides a matched devices list of Microsoft Entra devices that are applicable for each driver.
 
-The following example shows how to get the inventory of driver updates available for devices in an existing deployment audience. Note: each page of results returns up to 100 catalogEntries. Use the returned continuation token to see more results.
+The following example shows how to get the inventory of driver updates available for devices in an existing deployment audience. Note: each page of results returns up to 100 catalog entries. Use the returned continuation token to see more results.
 
 ### Request
 
@@ -195,7 +195,7 @@ Content-type: application/json
 }
 ```
 
-Due to the fact that `matchedDevice` lists are often large, the default return behavior when a caller expands the navigation property matchedDevices is an empty collection and a continuation token to get the first page of results. The following example shows how to get the list of matchedDevices for a given `catalogEntry`.
+Due to the large size of  `matchedDevice` lists, the default return behavior when a caller expands the navigation property matchedDevices is an empty collection and a continuation token to get the first page of results. The following example shows how to get the list of matchedDevices for a given `catalogEntry`.
 Note: each page of results returns up to 100 devices. Use the returned continuation token to see more results.
 
 ### Request
