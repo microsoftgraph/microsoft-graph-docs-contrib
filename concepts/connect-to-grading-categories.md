@@ -45,6 +45,10 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 
 ## Post a grading category
 
+Update an existing grading category
+
+- [Post a grading category](/graph/api/educationassignment-post-gradingcategory): This is used to update a grading category.
+
 ```http
 PUT /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
 ```
@@ -54,7 +58,7 @@ PUT /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
 The following example shows a request. 
 
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/28992cce-fac0-4950-a836-5a524ded8599/gradingCategory/$ref
+PUT https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/28992cce-fac0-4950-a836-5a524ded8599/gradingCategory/$ref
 Content-type: application/json
 
 {
@@ -71,6 +75,10 @@ HTTP/1.1 204 No Content
 ```
 
 ## Update a grading category
+
+Update a single gradingCategory 
+
+- [Update single gradingCategory](/graph/api/educationgradingcategory-update): This is used to update a single gradingCategory.
 
 ### Example 1: 
 
@@ -190,6 +198,10 @@ Content-type: application/json
 ```
 
 ## Delete grading categories
+
+Remove a grading category 
+
+- [Remove gradingCategory](/graph/api/educationassignment-delete-gradingcategory): This is used to remove gradingCategory.
 
 ```http
 DELETE /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
