@@ -453,7 +453,7 @@ Content-Type: application/json
 
 ---
 
-## See also
+## Related content
 
 - [authenticationBehaviors resource type](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true)
 - [Migrate away from using email claims for user identification or authorization](/azure/active-directory/develop/migrate-off-email-claim-authorization)
