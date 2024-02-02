@@ -9,7 +9,7 @@
           "properties": {
             "ChangeList": {
               "type": "array",
-              "items": [
+              "items":
                 {
                   "type": "object",
                   "properties": {
@@ -42,7 +42,6 @@
                     "Target"
                   ]
                 }
-              ]
             },
             "Id": {
               "type": "string"

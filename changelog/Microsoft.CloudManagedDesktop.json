@@ -3949,7 +3949,7 @@
                 {
                     "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
                     "ApiChange": "Property",
-                    "ChangeApiName": "partnerAgentInstallResults",
+                    "ChangedApiName": "partnerAgentInstallResults",
                     "ChangeType": "Addition",
                     "Description": "Added the **partnerAgentInstallResults** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
