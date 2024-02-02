@@ -18,7 +18,7 @@ Represents content applicable for offering to the related collection of devices.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|catalogEntryId|String|ID of the catalog entry for the update or content.|
+|catalogEntryId|String|ID of the catalog entry for the applicable content.|
 
 ## Relationships
 | Relationship | Type                                                                                       | Description                              |
