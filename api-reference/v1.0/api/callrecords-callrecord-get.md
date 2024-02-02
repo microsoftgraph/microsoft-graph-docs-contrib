@@ -13,14 +13,12 @@ Namespace: microsoft.graph.callRecords
 
 Retrieve the properties and relationships of a [callRecord](../resources/callrecords-callrecord.md) object.
 
-There are two ways to get the **id** of a **callRecord**:
-
+You can get the **id** of a **callRecord** in two ways:
 * Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) to the `/communications/callRecords` endpoint.
 * Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
 
 > [!WARNING]
->
-> A call record is created after a call or meeting ends and remains available for **30 days**. Requests for call records older than 30 days will receive a `404 Not Found` response.
+> A call record is created after a call or meeting ends and remains available for **30 days**. This API doesn't return call records older than 30 days, and requests for such records result in a `404 Not Found` response code.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -45,7 +43,7 @@ This method supports the following OData query parameters to help customize the 
 
 | Name      |Description|
 |:----------|:----------|
-| $select | Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. Only supported for `callRecord` and `session` resources. |
+| $select | Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. Only supported for **callRecord** and [session](../resources/callrecords-session.md) resources. |
 | $expand | Use the `$expand` query parameter to include the expanded resource or collection referenced by a single relationship (**participants_v2** or **sessions** and **segments**) in your results. For an example, see [Get session and segment details](#example-2-get-session-and-segment-details). |
 
 ## Request headers
@@ -54,7 +52,7 @@ This method supports the following OData query parameters to help customize the 
 |:----------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
-| Prefer: include-unknown-enum-members | Enables evolveable enum values beyond the sentinel value. For more information, see [Best Practices for working with Microsoft Graph](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Optional. |
+| Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. For more information, see [Best Practices for working with Microsoft Graph](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Optional. |
 | Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |
 
 ## Request body
@@ -63,9 +61,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) object in the response body. A request for a call record older than 30 days receive a `404 Not Found` response.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) object in the response body. A request for a call record older than 30 days returns a `404 Not Found` response code.
 
-When a result set spans multiple pages, Microsoft Graph returns that page with an **@odata.nextLink** property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the **@odata.nextLink** URL in each response, until all the results are returned. For more information, see [paging Microsoft Graph data in your app](/graph/paging). Maximum page size: 130 entries for participants and 60 entries for sessions.
+When a result set spans multiple pages, Microsoft Graph returns that page with an **@odata.nextLink** property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the **@odata.nextLink** URL in each response, until all the results are returned. For more information, see [Paging Microsoft Graph data in your app](/graph/paging). Maximum page size: 130 entries for participants and 60 entries for sessions.
 
 ## Examples
 
@@ -351,4 +349,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
