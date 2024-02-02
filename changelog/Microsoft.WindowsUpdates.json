@@ -42,6 +42,22 @@
                     "Description": "Added the **catalogEntryId** property to the [windowsupdates-applicableContent](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicableContent?view=graph-rest-beta) resource.",
                     "Target": "applicableContent"
                 }
+                 {
+                    "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                    "ApiChange": "Property",
+                    "ChangedApiName": " deviceId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the ** deviceId** navigation property from the [windowsupdates-applicablecontentdevicematch](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicablecontentdevicematch?view=graph-rest-beta) resource.",
+                    "Target": "applicablecontentdevicematch"
+                }
+                  {
+                    "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": " device",
+                    "ChangeType": "Deletion",
+                    "Description": "Deleted the ** device** property to the [windowsupdates-applicablecontentdevicematch](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicablecontentdevicematch?view=graph-rest-beta) resource.",
+                    "Target": "applicablecontentdevicematch"
+                }
             ],
             "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
             "Cloud": "Review",
