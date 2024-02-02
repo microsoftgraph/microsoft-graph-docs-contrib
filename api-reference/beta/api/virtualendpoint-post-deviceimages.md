@@ -39,7 +39,7 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 | Name          | Description                |
 | :------------ | :------------------------  |
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.|
 
 ## Request body
@@ -50,11 +50,9 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The image's display name.|
-|sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
-|operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
-|osBuildNumber|String|The image's OS build version. For example: 1909.|
-|version|String|The image version. For example: 0.0.1, 1.5.13.|
+|displayName|String|The display name of this image.|
+|sourceImageResourceId|String|The ID of the source image resource on Azure. The required ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|version|String|The image version. For example, `0.0.1` and `1.5.13`.|
 
 ## Response
 
@@ -64,6 +62,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcD
 
 ### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,11 +76,8 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceIma
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
-  "displayName": "Display Name value",
-  "osBuildNumber": "OS Build Number value",
-  "operatingSystem": "Operating System value",
-  "version": "Version value",
+  "displayName": "ImageForDev",
+  "version": "0.0.1",
   "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage"
 }
 ```
@@ -122,7 +118,9 @@ Content-Type: application/json
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -135,17 +133,18 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/deviceImages/$entity",
   "id": "eda7ed64-7705-4079-9d08-c2bd883fffff",
-  "displayName": "Display Name value",
-  "osBuildNumber": "OS Build Number value",
-  "operatingSystem": "Operating System value",
-  "version": "Version value",
-  "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage",
-  "lastModifiedDateTime": "2020-11-03T07:03:44.97Z",
+  "displayName": "ImageForDev",
+  "osBuildNumber": null,
+  "operatingSystem": null,
+  "version": "0.0.1",
+  "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
+  "lastModifiedDateTime": "2023-11-03T07:03:44.97Z",
   "status": "pending",
   "statusDetails": null,
-  "osStatus":"supported",
-  "expirationDate":"2022-11-10"
+  "errorCode": null,
+  "osStatus": null,
+  "expirationDate": null
 }
 ```

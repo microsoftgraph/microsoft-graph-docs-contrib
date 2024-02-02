@@ -147,7 +147,7 @@ Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

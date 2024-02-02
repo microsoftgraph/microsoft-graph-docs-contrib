@@ -44,7 +44,7 @@ This method does not support [OData query parameters](/graph/query-parameters) t
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes/a6a
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-customappscope-exchangeonlineprovider-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-customappscope-exchangeonlineprovider-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
