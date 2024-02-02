@@ -5,6 +5,7 @@ author: "michaelvenables"
 ms.author: "rimisra"
 ms.localizationpriority: high
 ms.prod: "data-connect"
+#Customer intent: As a data analyst, I want to understand the datasets, regions, and storage locations supported by Microsoft Graph Data Connect, so that I can determine if it meets my data analysis needs.
 ---
 
 # Datasets, regions, and sinks supported by Microsoft Graph Data Connect
@@ -43,8 +44,8 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 | Dataset name | Description | Learn more |
 | --- | --- | --- |
-| Contact_v0 | Provides contact details available from each user’s address book. | [Contact_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact.md) |
-| Contact_v1 | Provides the contact details available from each user’s address book. | [Contact_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact1.md) |
+| Contact_v0 | Provides contact details available from each user's address book. | [Contact_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact.md) |
+| Contact_v1 | Provides the contact details available from each user's address book. | [Contact_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact1.md) |
 
 ### Devices and Licenses
 | Dataset name | Description | Learn more |
@@ -85,7 +86,7 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 | --- | --- | --- |
 | Inbox_v1 | Provides the messages from users' mail folders. | [Inbox_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-inbox.md) |
 | Mailfolder_v0 | Provides information on all the folders created in a user's mailbox. | [Mailfolder_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailfolder.md) |
-| Mailfolder_v2 | Provides the information on all mail folders created in a user’s mailbox. | [Mailfolder_v2 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailfolder2.md) |
+| Mailfolder_v2 | Provides the information on all mail folders created in a user's mailbox. | [Mailfolder_v2 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailfolder2.md) |
 
 ### Mailbox settings
 
@@ -207,4 +208,4 @@ The following table indicates the areas that are supported for the corresponding
 ## See also
 
 - [Azure Synapse and Azure Data Factory connector for Microsoft 365 data](/azure/data-factory/connector-office-365)
-- [Policies and billing](data-connect-policies.md)
+<!--- [Policies and billing](data-connect-policies.md)-->
