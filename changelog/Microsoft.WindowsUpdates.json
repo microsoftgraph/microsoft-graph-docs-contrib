@@ -5,7 +5,7 @@
                 {
                 "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
                 "ApiChange": "Property",
-                "ChangedApiName": "deploymentAudience",
+                "ChangedApiName": "applicableContent",
                 "ChangeType": "Deletion",
                 "Description": "Removed the **applicableContent** property from the [windowsupdates-deploymentAudience](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-deploymentAudience?view=graph-rest-beta) resource.",
                 "Target": "deploymentAudience"
@@ -13,7 +13,7 @@
                 {
                 "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
                 "ApiChange": "Relationship",
-                "ChangedApiName": "deploymentAudience",
+                "ChangedApiName": "applicableContent",
                 "ChangeType": "Addition",
                 "Description": "Added the **applicableContent** relationship to the [windowsupdates-deploymentAudience](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-deploymentAudience?view=graph-rest-beta) resource.",
                 "Target": "deploymentAudience"
@@ -21,7 +21,7 @@
                 {
                     "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
                     "ApiChange": "Property",
-                    "ChangedApiName": "applicableContent",
+                    "ChangedApiName": "matchedDevices",
                     "ChangeType": "Deletion",
                     "Description": "Removed the **matchedDevices** property from the [windowsupdates-applicableContent](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicableContent?view=graph-rest-beta) resource.",
                     "Target": "applicableContent"
@@ -29,7 +29,7 @@
                 {
                     "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
                     "ApiChange": "Relationship",
-                    "ChangedApiName": "applicableContent",
+                    "ChangedApiName": "matchedDevices",
                     "ChangeType": "Addition",
                     "Description": "Added the **matchedDevices** relationship to the [windowsupdates-applicableContent](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicableContent?view=graph-rest-beta) resource.",
                     "Target": "applicableContent"
@@ -37,7 +37,7 @@
                 {
                     "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
                     "ApiChange": "Property",
-                    "ChangedApiName": "applicableContent",
+                    "ChangedApiName": "catalogEntryId",
                     "ChangeType": "Addition",
                     "Description": "Added the **catalogEntryId** property to the [windowsupdates-applicableContent](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicableContent?view=graph-rest-beta) resource.",
                     "Target": "applicableContent"
