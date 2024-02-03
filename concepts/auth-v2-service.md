@@ -128,11 +128,6 @@ https://localhost/myapp/permissions?admin_consent=True&tenant=38d49456-54d4-455d
 | state         | A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.
 | admin_consent | Set to **True**.
 
-
-> **Try**: You can try this for yourself by pasting the following request in a browser. If you sign in as a global administrator for a Microsoft Entra tenant, you will be presented with the administrator consent dialog box for the app.
-> 
-> https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=https://localhost/myapp/permissions 
-
 ## 4. Request an access token
 
 In the OAuth 2.0 client credentials grant flow, you use the application ID and client secret values that you saved when you registered your app to request an access token directly from the Microsoft identity platform `/token` endpoint.
