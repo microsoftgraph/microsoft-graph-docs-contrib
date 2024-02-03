@@ -35,7 +35,7 @@ POST /external/connections
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -55,6 +55,8 @@ You can specify the following properties when creating an [externalConnection](.
 ## Response
 
 If successful, this method returns a `201 Created` response code and an [externalConnection](../resources/externalconnectors-externalconnection.md) object in the response body.
+
+>**Note:** When you create an external connection with a broken adaptive card for the result layout, the first call will fail with a `503 Service Unavailable`. When you try the call again, the second call will fail with a `409 Conflict` response that states that a connection with the same name already exists. This happens because the connection was created even though the first call failed with `503 Service Unavailable`. For more details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=19908).
 
 ## Examples
 

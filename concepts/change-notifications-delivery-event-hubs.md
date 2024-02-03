@@ -6,6 +6,7 @@ ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
 ms.date: 03/23/2023
+#customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources through Azure Event Hubs so I can build apps that process the changes according to the business requirements.
 ---
 
 # Receive change notifications through Azure Event Hubs
@@ -283,11 +284,11 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 ---
 
-## Next steps
+## Related content
 
-See the following Azure Event Hubs quick starts:
-
-- [.NET Core](/azure/event-hubs/get-started-dotnet-standard-send-v2)
-- [Java](/azure/event-hubs/event-hubs-java-get-started-send)
-- [Python](/azure/event-hubs/get-started-python-send-v2)
-- [JavaScript](/azure/event-hubs/get-started-node-send-v2)
+- [Change notifications overview](/graph/change-notifications-overview)
+- See the following Azure Event Hubs quick starts:
+    - [.NET Core](/azure/event-hubs/get-started-dotnet-standard-send-v2)
+    - [Java](/azure/event-hubs/event-hubs-java-get-started-send)
+    - [Python](/azure/event-hubs/get-started-python-send-v2)
+    - [JavaScript](/azure/event-hubs/get-started-node-send-v2)

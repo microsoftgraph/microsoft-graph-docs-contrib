@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new OAuth2PermissionGrant
 {
@@ -16,6 +17,8 @@ var requestBody = new OAuth2PermissionGrant
 	PrincipalId = "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5",
 	Scope = "User.Read.All Group.Read.All",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Oauth2PermissionGrants.PostAsync(requestBody);
 
 

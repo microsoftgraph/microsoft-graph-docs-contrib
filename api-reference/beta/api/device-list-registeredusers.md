@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Global Administrator
 * Users
@@ -75,7 +75,7 @@ Some queries are supported only when you use the **ConsistencyLevel** header set
 ## Request headers
 | Name       | Description|
 |:-----------|:------|
-| Authorization  |Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Create an [appManagementPolicy](../resources/appManagementPolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -36,7 +36,7 @@ POST /policies/appManagementPolicies
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 > [!IMPORTANT]

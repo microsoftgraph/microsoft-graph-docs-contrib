@@ -41,7 +41,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -63,17 +63,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 541
+Content-Length: 556
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
     "id": "705b021c-021c-705b-1c02-5b701c025b70",
     "target": {
-      "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+      "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
       "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
       "deviceAndAppManagementAssignmentFilterType": "include",
-      "collectionId": "Collection Id value"
+      "targetType": "user",
+      "entraObjectId": "Entra Object Id value"
     },
     "source": "policySets",
     "sourceId": "Source Id value"

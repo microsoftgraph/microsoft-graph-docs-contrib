@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get the [taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) resources for a [run](../resources/identitygovernance-run.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -42,7 +42,7 @@ This method supports the `$select`, `$orderby`, `$expand`, and `$filter` OData q
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

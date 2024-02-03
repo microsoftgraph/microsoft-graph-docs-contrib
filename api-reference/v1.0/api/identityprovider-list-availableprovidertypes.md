@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieves all identity provider types available in a directory.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -40,7 +40,7 @@ GET /identityProviders/availableProviderTypes
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

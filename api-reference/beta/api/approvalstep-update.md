@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Apply approve or deny decision on an [approvalStep](../resources/approvalStep.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -65,7 +65,7 @@ PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -38,7 +38,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 588
+Content-Length: 648
 
 {
   "value": [
@@ -73,6 +73,8 @@ Content-Length: 588
       "name": "Name value",
       "size": 4,
       "sizeEncrypted": 13,
+      "sizeInBytes": 11,
+      "sizeEncryptedInBytes": 4,
       "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
       "manifest": "bWFuaWZlc3Q=",
       "uploadState": "transientError",

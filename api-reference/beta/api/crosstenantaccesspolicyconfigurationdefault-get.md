@@ -39,7 +39,7 @@ GET /policies/crossTenantAccessPolicy/default
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -59,7 +59,6 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
   "name": "get_crosstenantaccesspolicyconfigurationdefault"
 }
 -->
-
 ``` http
 GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 ```
@@ -241,6 +240,15 @@ Content-Type: application/json
         }
       ]
     }
+  },
+  "invitationRedemptionIdentityProviderConfiguration": 
+  { 
+        "primaryIdentityProviderPrecedenceOrder": [ 
+            "externalFederation", 
+            "azureActiveDirectory", 
+            "socialIdentityProviders" 
+        ],
+        "fallbackIdentityProvider": "defaultConfiguredIdp" 
   }
 }
 ```

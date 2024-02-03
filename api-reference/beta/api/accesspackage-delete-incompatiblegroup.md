@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Remove a [group](../resources/group.md) from the list of groups that have been marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -36,7 +36,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibl
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body

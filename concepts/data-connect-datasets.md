@@ -5,6 +5,7 @@ author: "michaelvenables"
 ms.author: "rimisra"
 ms.localizationpriority: high
 ms.prod: "data-connect"
+#Customer intent: As a data analyst, I want to understand the datasets, regions, and storage locations supported by Microsoft Graph Data Connect, so that I can determine if it meets my data analysis needs.
 ---
 
 # Datasets, regions, and sinks supported by Microsoft Graph Data Connect
@@ -16,6 +17,16 @@ Microsoft Graph Data Connect supports a variety of datasets, data regions, and s
 Microsoft Graph Data Connect currently supports the following datasets. To view the schemas for each dataset, create a new dataset in Azure Synapse or Azure Data Factory and go to the Schema tab.
 
 <a name='azure-active-directory'></a>
+
+### Activities
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| OutlookContactActivity_v0 | Provides employees' activity with their contacts in Microsoft Outlook. | [OutlookContactActivity_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-outlookcontactactivity.md) |
+| OutlookMailActivity_v0 | Provides employees' activity with their email in Outlook. | [OutlookMailActivity_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-outlookmailactivity.md) |
+| OutlookMeetingActivity_v0 | Provides employees' activity with their meetings in Outlook. | [OutlookMeetingActivity_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-outlookmeetingactivity.md) |
+| TeamsChannelActivity_v0 | Providesemployees' activity with their channels in Microsoft Teams. | [TeamsChannelActivity_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamschannelactivity.md) |
+| TeamsConversationActivity_v0 | Provides employees' activity with their teams and chats in Teams. | [TeamsConversationActivity_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamsconversationactivity.md) |
 
 ### Call records
 
@@ -33,8 +44,15 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 | Dataset name | Description | Learn more |
 | --- | --- | --- |
-| Contact_v0 | Provides contact details available from each user’s address book. | [Contact_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact.md) |
-| Contact_v1 | Provides the contact details available from each user’s address book. | [Contact_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact1.md) |
+| Contact_v0 | Provides contact details available from each user's address book. | [Contact_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact.md) |
+| Contact_v1 | Provides the contact details available from each user's address book. | [Contact_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact1.md) |
+
+### Devices and Licenses
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| OwnedDevices_v0 | Provides detailed information related to all the devices that are owned by each user in the organization. | [OwnedDevices_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-owneddevices.md) |
+| RegisteredDevices_v0 | Provides detailed information related to all the devices that a user is registered on in the organization. | [RegisteredDevices_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-registereddevices.md) |
+| LicenseDetails_v0 | Provides details for users' licenses that are directly assigned and those transitively assigned through memberships in licensed groups. | [LicenseDetails_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-licensedetails.md) |
 
 ### Event
 
@@ -68,7 +86,7 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 | --- | --- | --- |
 | Inbox_v1 | Provides the messages from users' mail folders. | [Inbox_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-inbox.md) |
 | Mailfolder_v0 | Provides information on all the folders created in a user's mailbox. | [Mailfolder_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailfolder.md) |
-| Mailfolder_v2 | Provides the information on all mail folders created in a user’s mailbox. | [Mailfolder_v2 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailfolder2.md) |
+| Mailfolder_v2 | Provides the information on all mail folders created in a user's mailbox. | [Mailfolder_v2 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailfolder2.md) |
 
 ### Mailbox settings
 
@@ -104,6 +122,7 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 | --- | --- | --- |
 | TodoTaskFolders_v0 | Identifies task folders in Microsoft Outlook that track user-level work items. | [TodoTaskFolders_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-todotaskfolders.md) |
 | TodoTasks_v0 | Identifies tasks in Microsoft Outlook that track user-level work items. | [TodoTasks_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-todotasks.md) |
+| PlannerTasks_v0 | Identifies tasks in Planner that track user-level work items. | [PlannerTasks_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-plannertasks.md) |
 
 ### User
 
@@ -114,15 +133,14 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 ### OneDrive and SharePoint Online
 
-The OneDrive and SharePoint Online datasets are available after 48 hours (about two days). For example, you can query data for 07/01 starting on 07/03.  
-
-The data available is from the last 21 days (about three weeks). For example, if you would like to query data for 07/01, you can do so from 07/03 to 07/24. 
-
 | Dataset name | Description | Sample and Schema |
 | --- | --- | --- |
-| BasicDataSet_v0.SharePointPermissions_v1 | Contains information about sharing permissions.(Formerly known as DocumentSharingDataset_v0_Preview)| <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointPermissions_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointPermissions_v1.md)</li></ul>
-| BasicDataSet_v0.SharePointSites_v1  | Contains information about SharePoint sites.(Formerly known as SharePointSitesDataset_v0_Preview)| <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointSites_v1.json) </li><li> [Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointSites_v1.md)</li></ul>
-| BasicDataSet_v0.SharePointGroups_v1 | Contains SharePoint group information, including details about group members.(Formerly known as SharePointGroupsDataset_v0_Preview) | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointGroups_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointGroups_v1.md)</li></ul>
+| SharePointSites_v1  | Contains information about SharePoint sites. (Formerly known as SharePointSitesDataset_v0_Preview)| [SharePointSites_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointsites.md) |
+| SharePointPermissions_v1 | Contains information about sharing permissions. (Formerly DocumentSharingDataset_v0_Preview) | [SharePointPermissions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointpermissions.md) |
+| SharePointGroups_v1 | Contains SharePoint group information, including details about group members. (Formerly SharePointGroupsDataset_v0_Preview) | [SharePointGroups_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointgroups.md) |
+| SharePointFiles_v1  | Contains information about SharePoint files. (Coming in January 2024.) | [SharePointFiles_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfiles.md) |
+| SharePointFileActions_v1 | Contains information about SharePoint file actions. (Coming in January 2024.) | [SharePointFileActions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfileactions.md) |
+| OneDriveSyncHealth_v1 | Contains information about devices running OneDrive for Business. (Coming in January 2024.) | [OneDriveSyncHealth_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-onedrivesynchealth.md) |
 
 ### Viva Insights
 
@@ -159,7 +177,6 @@ The following table indicates which Microsoft 365 regions are supported and the 
 
 Sinks are the output location that Azure Synapse or Azure Data Factory uses to place data in Azure storage. Microsoft Graph Data Connect supports the following sink storage types:
 
-- [Azure Data Lake Storage Gen1](/azure/data-lake-store/data-lake-store-overview)
 - [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction)
 - [Azure Storage Blob](/azure/storage/blobs/storage-blobs-overview)
 - [Azure SQL DB](https://azure.microsoft.com/products/azure-sql/database/?ef_id=_k_790773b85b8d1e4ef64317867aeee8a0_k_&OCID=AIDcmm5edswduu_SEM__k_790773b85b8d1e4ef64317867aeee8a0_k_&msclkid=790773b85b8d1e4ef64317867aeee8a0) (mapping data flows only)
@@ -191,4 +208,4 @@ The following table indicates the areas that are supported for the corresponding
 ## See also
 
 - [Azure Synapse and Azure Data Factory connector for Microsoft 365 data](/azure/data-factory/connector-office-365)
-- [Policies and billing](data-connect-policies.md)
+<!--- [Policies and billing](data-connect-policies.md)-->

@@ -8,11 +8,12 @@ ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 09/28/2023
+#customer intent: As a developer building apps that call Microsoft Entra ID APIs on Microsoft Graph, I want to understand the advanced query capabilities, so that my app can efficiently access and retrieve specific data, and avoid errors.
 ---
 
 # Advanced query capabilities on Microsoft Entra ID objects
 
-As Microsoft Entra ID continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Microsoft Entra ID objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
+As Microsoft Entra continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Microsoft Entra ID objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
 
 The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Microsoft Entra ID to increase support and improve the performance of the query requests. However, these advanced query capabilities aren't available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, except for `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
@@ -109,7 +110,7 @@ ConsistencyLevel: eventual
 
 ---
 
-## Microsoft Graph objects that support advanced query capabilities
+## Microsoft Entra ID (directory) objects that support advanced query capabilities
 
 These advanced query capabilities are supported only on directory objects and their relationships, including the following frequently used objects:
 
@@ -528,7 +529,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 + [Use query parameters to customize responses](/graph/query-parameters)
 + [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635)

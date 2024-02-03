@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete a [connectedOrganization](../resources/connectedorganization.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -37,7 +37,7 @@ DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

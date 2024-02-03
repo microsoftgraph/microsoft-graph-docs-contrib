@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgBetaUserAppRoleAssignment -UserId $userId
+Get-MgBetaUserAppRoleAssignment -UserId $userId -CountVariable CountVar  -ConsistencyLevel eventual 
+
 
 ```

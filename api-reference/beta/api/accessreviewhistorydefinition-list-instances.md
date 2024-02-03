@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the [instances](../resources/accessreviewhistoryinstance.md) of an [access review history definition](../resources/accessreviewhistorydefinition.md) created in the last 30 days.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDef
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

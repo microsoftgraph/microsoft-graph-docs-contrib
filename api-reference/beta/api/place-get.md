@@ -48,7 +48,7 @@ For more information about OData query options, see [OData query parameters](/gr
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

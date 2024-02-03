@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Microsoft Entra ID.
 
-In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 + Global Administrator
 + Global Reader
 + Reports Reader
@@ -55,6 +55,12 @@ GET /auditLogs/signIns
 ## Optional query parameters
 
 This method supports the `$top`, `$skiptoken`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -133,7 +139,7 @@ Content-type: application/json
     "value": [
         {
             "id": "66ea54eb-6301-4ee5-be62-ff5a759b0100",
-            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+            "createdDateTime": "2023-12-01T16:03:35Z",
             "userDisplayName": "Test Contoso",
             "userPrincipalName": "testaccount1@contoso.com",
             "userId": "26be570a-ae82-4189-b4e2-a37c6808512d",
@@ -267,7 +273,7 @@ Content-type: application/json
     "value": [
         {
             "id": "66ea54eb-6301-4ee5-be62-ff5a759b0100",
-            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+            "createdDateTime": "2023-12-01T16:03:32Z",
             "userDisplayName": "Test Contoso",
             "userPrincipalName": "testaccount1@contoso.com",
             "userId": "26be570a-ae82-4189-b4e2-a37c6808512d",

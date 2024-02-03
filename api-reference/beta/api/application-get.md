@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-get-permissions.md)]
 
-[!INCLUDE [permissions-applicationreadwriteownedby-disclaimer](../../includes/permissions-applicationreadwriteownedby-disclaimer.md)]
+
 
 ## HTTP request
 
@@ -46,7 +46,7 @@ The use of `$select` to get **keyCredentials** for applications has a throttling
 ## Request headers
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

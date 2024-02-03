@@ -38,7 +38,7 @@ GET /deviceManagement/monitoring/alertRules/{alertRuleId}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -127,6 +127,15 @@ Content-Type: application/json
         "operator": "greaterOrEqual",
         "target": 2
     },
+    "conditions": [
+        {
+            "relationshipType": "or",
+            "conditionCategory": "imageUploadFailures",
+            "aggregation": "count",
+            "operator": "greaterOrEqual",
+            "thresholdValue": "2"
+        }
+    ],
     "notificationChannels": [
         {
             "notificationChannelType": "portal",

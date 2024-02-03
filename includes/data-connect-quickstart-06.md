@@ -14,7 +14,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
 
-1. Sign in to the portal using an account with an [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Ensure that you are signed-in with your developer account that has privileges to create Azure resources within your subscription.
+1. Sign in to the portal using an account with an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [Application Developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Ensure that you are signed-in with your developer account that has privileges to create Azure resources within your subscription.
 
 1. On the left pane, select **Create a resource**.
 
@@ -160,7 +160,7 @@ Now that you've created the pipeline, it's time to run it.
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
-1. Sign in to the Azure portal with an account that has either the [Application administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Make sure you are using your **developer** account, which has the necessary privileges to create Azure resources within your subscription.
+1. Sign in to the Azure portal with an account that has either the [Application administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [Application developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Make sure you are using your **developer** account, which has the necessary privileges to create Azure resources within your subscription.
 
 1. On the home page, select **Create a resource**.
 

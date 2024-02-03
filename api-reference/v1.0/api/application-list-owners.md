@@ -21,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_list_owners" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-list-owners-permissions.md)]
 
-[!INCLUDE [permissions-applicationreadwriteownedby-disclaimer](../../includes/permissions-applicationreadwriteownedby-disclaimer.md)]
+
 
 ## HTTP request
 
@@ -38,7 +38,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Read the properties of a [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -36,7 +36,7 @@ GET /policies/defaultAppManagementPolicy
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -46,7 +46,7 @@ POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -73,7 +73,7 @@ If successful, this action returns a `200 OK` response code and a [permission](.
 }
 -->
 ``` http
-POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 Content-Type: application/json
 
 {

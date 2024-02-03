@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = NamedLocationsRequestBuilder.NamedLocationsRequestBuilderGetQueryParameters(
-		filter = "microsoft.graph.countryNamedLocation/countriesAndRegions/any",
+		filter = "microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')",
 )
 
 request_configuration = NamedLocationsRequestBuilder.NamedLocationsRequestBuilderGetRequestConfiguration(

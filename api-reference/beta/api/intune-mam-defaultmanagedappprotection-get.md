@@ -41,7 +41,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6360
+Content-Length: 6666
 
 {
   "value": {
@@ -127,6 +127,7 @@ Content-Length: 6360
     "appActionIfUnableToAuthenticateUser": "wipe",
     "dialerRestrictionLevel": "managedApps",
     "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
+    "protectedMessagingRedirectAppType": "anyManagedApp",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -199,7 +200,10 @@ Content-Length: 6360
     "requireClass3Biometrics": true,
     "requirePinAfterBiometricChange": true,
     "fingerprintAndBiometricEnabled": true,
-    "minimumWarningSdkVersion": "Minimum Warning Sdk Version value"
+    "minimumWarningSdkVersion": "Minimum Warning Sdk Version value",
+    "messagingRedirectAppUrlScheme": "Messaging Redirect App Url Scheme value",
+    "messagingRedirectAppDisplayName": "Messaging Redirect App Display Name value",
+    "messagingRedirectAppPackageId": "Messaging Redirect App Package Id value"
   }
 }
 ```

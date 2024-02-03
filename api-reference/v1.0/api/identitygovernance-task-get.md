@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a specific task from a [workflow](../resources/identitygovernance-workflow.md) or [workflowVersion](../resources/identitygovernance-workflowversion.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -54,7 +54,7 @@ This method does not support OData query parameters to help customize the respon
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

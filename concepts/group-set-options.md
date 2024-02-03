@@ -6,6 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: jodah
 ms.localizationpriority: high
 ms.date: 08/13/2022
+#Customer intent: As a developer, I want to learn how to use Microsoft Graph to set specific group behaviors and provision sepcific resources, so that I can tailor the group's functionality and capabilities to meet the needs of my organization.
 ---
 
 # Set Microsoft 365 group behaviors and provisioning options
@@ -35,7 +36,7 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 | :----------------------------------------------- | :------------------------------------------------------- | :---------------------------------------------------------------- |
 | Team                                             | Provision this group as a team in Microsoft Teams. Additionally, this value can also be added on [group update](/graph/api/group-update) through a `PATCH` operation, in order to provision a team from an existing Microsoft 365 group. | The group is a regular Microsoft 365 group without Teams capabilities. |
 
-## See also
+## Related content
 
 - [Overview of Microsoft 365 groups in Microsoft Graph](microsoft365-groups-concept-overview.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)

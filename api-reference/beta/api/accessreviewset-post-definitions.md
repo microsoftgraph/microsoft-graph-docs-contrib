@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -34,7 +34,7 @@ POST /identityGovernance/accessReviews/definitions
 ## Request headers
 | Name         | Description |
 |:-------------|:------------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body

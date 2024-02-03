@@ -39,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2092
+Content-Length: 2389
 
 {
   "value": [
@@ -105,6 +105,13 @@ Content-Length: 2092
       "wiFiSecurityType": "wep",
       "preSharedKey": "Pre Shared Key value",
       "preSharedKeyIsSet": true,
+      "proxySetting": "manual",
+      "proxyManualAddress": "Proxy Manual Address value",
+      "proxyManualPort": 15,
+      "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+      "proxyExclusionList": [
+        "Proxy Exclusion List value"
+      ],
       "eapType": "eapTtls",
       "trustedServerCertificateNames": [
         "Trusted Server Certificate Names value"

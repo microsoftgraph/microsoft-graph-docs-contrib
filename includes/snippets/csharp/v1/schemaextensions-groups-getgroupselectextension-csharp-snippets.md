@@ -6,12 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
-
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Groups.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "graphlearn_courses/courseId eq '123'";
-	requestConfiguration.QueryParameters.Select = new string []{ "displayName","id","description","graphlearn_courses" };
+	requestConfiguration.QueryParameters.Filter = "bellowscollege_courses/courseId eq '123'";
+	requestConfiguration.QueryParameters.Select = new string []{ "displayName","id","description","bellowscollege_courses" };
 });
 
 

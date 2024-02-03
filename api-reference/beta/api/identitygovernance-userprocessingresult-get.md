@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get the user processing result of a user processing result of a [run](../resources/identitygovernance-run.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -44,7 +44,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

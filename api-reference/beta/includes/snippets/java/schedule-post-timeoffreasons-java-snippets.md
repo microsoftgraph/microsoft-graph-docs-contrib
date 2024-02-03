@@ -8,6 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 TimeOffReason timeOffReason = new TimeOffReason();
 timeOffReason.displayName = "Vacation";
+timeOffReason.code = "VacationCode";
 timeOffReason.iconType = TimeOffReasonIconType.PLANE;
 timeOffReason.isActive = true;
 
