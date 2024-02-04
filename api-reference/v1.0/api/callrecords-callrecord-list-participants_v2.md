@@ -1,6 +1,6 @@
 ---
 title: "List participants_v2"
-description: "Get the list of participants associated with a callRecord."
+description: "Get the list of participant objects associated with a callRecord."
 ms.localizationpriority: medium
 author: "mcm223"
 ms.prod: "cloud-communications"
@@ -144,7 +144,7 @@ Content-type: application/json
 
 <!-- {
   "type": "#page.annotation",
-  "description": "List participants",
+  "description": "List participants_v2",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
