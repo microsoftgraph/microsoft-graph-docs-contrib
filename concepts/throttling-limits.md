@@ -128,7 +128,7 @@ The preceding limits apply to the following resources:
 ### Identity and access reports best practices
 Microsoft Entra reporting APIs are throttled when Microsoft Entra ID receives too many calls during a given timeframe from a tenant or app. Calls may also be throttled if the service takes too long to respond. If your requests still fail with a `429 Too Many Requests` error code despite applying the [best practices to handle throttling](throttling.md#best-practices-to-handle-throttling), try reducing the amount of data returned. Try these approaches first:
 - Use filters to target your query to just the data you need. If you only need a certain type of event or a subset of users, for example, filter out other events using the `$filter` and `$select` query parameters to reduce the size of your response object and the risk of throttling.
-- If you need a broad set of Microsoft Entra ID reporting data, use `$filter` on the **createdDateTime** to limit the number of sign-in events you query in a single call. Then, iterate through the next timespan until you have all the records you need. For example, if you are being throttled, you can begin with a call that requests three days of data and iterate with shorter timespans until your requests are no longer throttled.
+- If you need a broad set of Microsoft Entra ID reporting data, use `$filter` on the **createdDateTime** to limit the number of sign-in events you query in a single call. Then, iterate through the next timespan until you have all the records you need. For example, if you're being throttled, you can begin with a call that requests three days of data and iterate with shorter timespans until your requests are no longer throttled.
 
 
 ## Identity and access service limits
@@ -430,7 +430,7 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 
 ### Limits per app ID and mailbox combination
 
-The Outlook service applies limits to each app ID and mailbox combination - that is, a specific app accessing a specific user or group mailbox. Exceeding the limit for one mailbox does not affect the ability of the application to access another mailbox.
+The Outlook service applies limits to each app ID and mailbox combination - that is, a specific app accessing a specific user or group mailbox. Exceeding the limit for one mailbox doesn't affect the ability of the application to access another mailbox.
 
 | Limit                                                             | Applies to              |
 |-------------------------------------------------------------------|-------------------------|
