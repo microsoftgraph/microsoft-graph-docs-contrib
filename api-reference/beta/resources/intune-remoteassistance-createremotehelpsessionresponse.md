@@ -17,15 +17,6 @@ Namespace: microsoft.graph
 
 Remote help - response we provide back to the helper after successfully creating an ACS session
 
-## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List createRemoteHelpSessionResponses](../api/intune-remoteassistance-createremotehelpsessionresponse-list.md)|[createRemoteHelpSessionResponse](../resources/intune-remoteassistance-createremotehelpsessionresponse.md) collection|List properties and relationships of the [createRemoteHelpSessionResponse](../resources/intune-remoteassistance-createremotehelpsessionresponse.md) objects.|
-|[Get createRemoteHelpSessionResponse](../api/intune-remoteassistance-createremotehelpsessionresponse-get.md)|[createRemoteHelpSessionResponse](../resources/intune-remoteassistance-createremotehelpsessionresponse.md)|Read properties and relationships of the [createRemoteHelpSessionResponse](../resources/intune-remoteassistance-createremotehelpsessionresponse.md) object.|
-|[Create createRemoteHelpSessionResponse](../api/intune-remoteassistance-createremotehelpsessionresponse-create.md)|[createRemoteHelpSessionResponse](../resources/intune-remoteassistance-createremotehelpsessionresponse.md)|Create a new [createRemoteHelpSessionResponse](../resources/intune-remoteassistance-createremotehelpsessionresponse.md) object.|
-|[Delete createRemoteHelpSessionResponse](../api/intune-remoteassistance-createremotehelpsessionresponse-delete.md)|None|Deletes a [createRemoteHelpSessionResponse](../resources/intune-remoteassistance-createremotehelpsessionresponse.md).|
-|[Update createRemoteHelpSessionResponse](../api/intune-remoteassistance-createremotehelpsessionresponse-update.md)|[createRemoteHelpSessionResponse](../resources/intune-remoteassistance-createremotehelpsessionresponse.md)|Update the properties of a [createRemoteHelpSessionResponse](../resources/intune-remoteassistance-createremotehelpsessionresponse.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -39,7 +30,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.createRemoteHelpSessionResponse"
 }
 -->

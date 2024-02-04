@@ -219,7 +219,7 @@ In the Sample Prompts section, provide two sample prompts that Microsoft can use
 
 ### Connection Description
 
-In Connection Description section, provide the `description` property for your custom Microsoft Graph connection. Microsoft will use this to ensure that your Microsoft Graph connection has a rich description for Copilot for Microsfot 365. This description is optional.
+In Connection Description section, provide the `description` property for your custom Microsoft Graph connection. Microsoft will use this to ensure that your Microsoft Graph connection has a rich description for Copilot for Microsoft 365. This description is optional.
 
 ### Activity Settings
 

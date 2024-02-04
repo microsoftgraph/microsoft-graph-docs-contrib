@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete a user's [Software OATH token authentication method](../resources/softwareoathauthenticationmethod.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -57,7 +57,7 @@ DELETE /users/{id | userPrincipalName}/authentication/softwareOathMethods/{id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

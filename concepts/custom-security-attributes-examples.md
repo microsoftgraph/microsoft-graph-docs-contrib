@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "directory-management"
 ms.date: 02/14/2023
+#Customer intent: As a Microsoft Entra ID administrator, I want to assign, update, list, or remove custom security attribute assignments for users and service principals, so that I can store information, categorize objects, and enforce fine-grained access control over specific Azure resources using Azure attribute-based access control (Azure ABAC).
 ---
 
 # Manage custom security attribute assignments
@@ -1251,7 +1252,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## Next steps
+## Next step
 
-- [Overview of custom security attributes using the Microsoft Graph API](/graph/api/resources/custom-security-attributes-overview)
-- [What are custom security attributes in Microsoft Entra ID?](/azure/active-directory/fundamentals/custom-security-attributes-overview)
+> [!div class="nextstepaction"]
+> [Overview of custom security attributes using the Microsoft Graph API](/graph/api/resources/custom-security-attributes-overview)
