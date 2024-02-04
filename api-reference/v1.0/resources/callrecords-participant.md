@@ -1,13 +1,13 @@
 ---
 author: "mcm223"
 description: "Represents the identity of a participant in a callRecord."
-title: "callRecord participant resource type"
+title: "participant resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "cloud-communications"
 ---
 
-# callRecord participant resource type
+# participant resource type
 
 Namespace: microsoft.graph.callRecords
 
@@ -19,7 +19,7 @@ Inherits from [participantBase](callrecords-participantbase.md).
 
 | Method          | Return Type                                                                                     | Description                                                   |
 |:----------------|:------------------------------------------------------------------------------------------------|:--------------------------------------------------------------|
-| [List participants](../api/callrecords-callrecord-list-participants_v2.md)|[microsoft.graph.callRecords.participant](callrecords-participant.md) collection|Get the list of [participants](../resources/callrecords-participant.md) associated with a [callRecord](../resources/callrecords-callrecord.md).|
+| [List participants_v2](../api/callrecords-callrecord-list-participants_v2.md)|[microsoft.graph.callRecords.participant](callrecords-participant.md) collection|Get the list of [participant](../resources/callrecords-participant.md) objects associated with a [callRecord](../resources/callrecords-callrecord.md).|
 
 ## Properties
 
