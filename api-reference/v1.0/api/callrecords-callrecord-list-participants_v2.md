@@ -87,6 +87,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/$metadata#communications/callRecords('614e3ff0-4728-4394-8c03-52fb3b967fde')/participants_v2",
   "@odata.nextLink": "https://graph.microsoft.com/v1.0/communications/callRecords/614e3ff0-4728-4394-8c03-52fb3b967fde/participants_v2",
