@@ -21,9 +21,9 @@ Inherits from [identity](identity.md).
 
 | Property          | Type   | Description                                                                            |
 |:------------------|:-------|:---------------------------------------------------------------------------------------|
-| displayName       | String | The identity's display name. This might not always be available or up-to-date. |
+| displayName       | String | The display name of the identity. This might not always be available or up-to-date. |
 | id                | String | Unique identifier for the identity. Nullable. When the unique identifier is unavailable, the **displayName** property is provided for the identity, but the **id** property isn't included in the response. |
-| ipAddress         | String | Indicates the client IP address used by user performing the activity (audit log only). |
+| ipAddress         | String | Indicates the client IP address associated with the user performing the activity (audit log only). |
 | userPrincipalName | String | The **userPrincipalName** attribute of the user.                                           |
 
 ## JSON representation
