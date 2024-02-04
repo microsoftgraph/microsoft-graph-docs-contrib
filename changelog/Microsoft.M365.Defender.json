@@ -1868,9 +1868,9 @@
       "Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-06-27T09:38:57.9798452Z",
-      "WorkloadArea": "Microsoft.M365.Defender",
-      "SubArea": ""
+      "CreatedDateTime": "2024-01-31T09:38:57.9798452Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Custom detection rules"
 	},
 	{
 		"ChangeList": [
