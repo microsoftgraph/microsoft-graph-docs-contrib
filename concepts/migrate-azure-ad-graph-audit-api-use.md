@@ -31,7 +31,7 @@ You'll also want to verify the permissions required for the features your app is
 
 To learn more, see [Permissions](permissions-reference.md).
 
-## Next Steps
+## Next step
 
-- Learn about [app registration, permissions and consent differences](migrate-azure-ad-graph-app-registration.md) between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [!div class="nextstepaction"]
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)

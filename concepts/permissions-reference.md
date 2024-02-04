@@ -6541,6 +6541,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
-## See also
+## Related content
 
 + [Overview of Microsoft Graph permissions](permissions-overview.md)
