@@ -80,6 +80,7 @@ Content-type: application/json
       "contentSources": [
         "/external/connections/connectionfriendlyname"
       ],
+      "region": "US",
       "query": {
         "queryString": "contoso product"
       },
@@ -186,6 +187,7 @@ Content-type: application/json
       "entityTypes": [
         "listItem"
       ],
+      "region": "US",
       "query": {
         "queryString": "contoso",
         "queryTemplate":"{searchTerms} CreatedBy:Bob"
