@@ -20,7 +20,8 @@ Represents specific settings for the Microsoft Managed Desktop that enables cust
 |Property|Type|Description|
 |:---|:---|:---|
 |profile|String|The name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.|
-|type|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates whether the provisioning policy enables Microsoft Managed Desktop. It indicates the type of plan under which the device is managed if the provisioning policy is enabled. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`.|
+|managedType|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates the provisioning policy associated with Microsoft Managed Desktop settings. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`. The default value is `notManaged`.|
+|type (deprecated)|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates whether the provisioning policy enables Microsoft Managed Desktop and, if enabled, specifies the type of plan managing the device. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`. The **type** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **managedType** property.|
 
 ### microsoftManagedDesktopType values
 
@@ -38,7 +39,8 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.microsoftManagedDesktop"
@@ -48,7 +50,8 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.microsoftManagedDesktop",
-  "type": "String",
-  "profile": "String"
+  "managedType": "String",
+  "profile": "String",
+  "type": "String"
 }
 ```
