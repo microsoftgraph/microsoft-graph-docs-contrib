@@ -788,7 +788,7 @@ items:
             displayName: report, reports
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
-          - name: Partner billing (preview)
+          - name: Partner billing
             href: partners-billing-concept-overview.md
       - name: Search
         items:
