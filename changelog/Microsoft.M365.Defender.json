@@ -1887,7 +1887,7 @@
 				"ApiChange": "Property",
 				"ChangedApiName": "systemTags",
 				"ChangeType": "Addition",
-				"Description": "Added **systemTags** property to [incdient](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
+				"Description": "Added **systemTags** property to [incident](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
 				"Target": "systemTags"
 			},
 			{
@@ -1895,7 +1895,7 @@
 				"ApiChange": "Property",
 				"ChangedApiName": "description",
 				"ChangeType": "Addition",
-				"Description": "Added **description** property to [incdient](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
+				"Description": "Added **description** property to [incident](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
 				"Target": "description"
 			},
 			{
@@ -1903,7 +1903,7 @@
 				"ApiChange": "Property",
 				"ChangedApiName": "recommendedActions",
 				"ChangeType": "Addition",
-				"Description": "Added **recommendedActions** property to [incdient](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
+				"Description": "Added **recommendedActions** property to [incident](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
 				"Target": "recommendedActions"
 			},
 			{
@@ -1911,7 +1911,7 @@
 				"ApiChange": "Property",
 				"ChangedApiName": "recommendedHuntingQueries",
 				"ChangeType": "Addition",
-				"Description": "Added **recommendedHuntingQueries** property to [incdient](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
+				"Description": "Added **recommendedHuntingQueries** property to [incident](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
 				"Target": "recommendedHuntingQueries"
 			},
 			{
