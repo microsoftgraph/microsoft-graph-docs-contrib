@@ -133,7 +133,8 @@ Content-type: application/json
     ],
     "audioDeviceName": null,
     "videoDeviceName": null,
-    "displayDeviceName": "surface hub"
+    "displayDeviceName": "surface hub",
+    "placeId": "62cfc8cb-fc2b-4783-aeea-f9ce0f8e2904"
 }
 ```
 ### Example 2: Get a workspace
@@ -205,7 +206,8 @@ Content-type: application/json
     "isWheelChairAccessible": false,
     "tags": [
       "bean bags"
-    ]
+    ],
+    "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
 }
 ```
 ### Example 3: Get a room list
@@ -265,7 +267,8 @@ Content-type: application/json
   },
   "geoCoordinates": null,
   "phone": null,
-  "emailAddress": "bldg1@contoso.com"
+  "emailAddress": "bldg1@contoso.com",
+  "placeId": "406bd1b2-237c-4710-bda2-8b7900d61b27"
 }
 ```
 
