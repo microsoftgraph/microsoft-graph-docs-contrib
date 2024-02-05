@@ -68,7 +68,7 @@ Each app in the app catalog must have a unique manifest ID.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [teamsApp](../resources/teamsapp.md) object.
+If successful, this method returns a `200 OK` response code and a [teamsApp](../resources/teamsapp.md) object. If the app manifest has any validation errors, the request returns an error response with details about the schema errors.
 
 ## Examples
 
