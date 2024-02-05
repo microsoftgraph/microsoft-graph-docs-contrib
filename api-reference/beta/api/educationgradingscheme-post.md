@@ -70,14 +70,19 @@ The following example shows a request.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/defaultGradingScheme/$ref
+POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingSchemes
 Content-Type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingSchemes/69911dea-bc5c-406a-8743-81d06225a3a1"
+    "displayName": "New name 02",
+    "grades": [
+        {
+            "displayName": "Only grade",
+            "minPercentage": 0
+        }
+    ]
 }
 ```
-
 
 ### Response
 The following example shows the response.
@@ -87,6 +92,20 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 204 No Content
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes/$entity",
+    "id": "6cf7c7f5-553e-42d0-b88c-e10db227f84f",
+    "displayName": "New name 02",
+    "hidePointsDuringGrading": false,
+    "grades": [
+        {
+            "displayName": "Only grade",
+            "minPercentage": 0,
+            "defaultPercentage": null
+        }
+    ]
+}
 ```

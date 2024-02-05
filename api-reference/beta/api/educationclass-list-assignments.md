@@ -545,7 +545,7 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?\$top=1&\$expand=gradingScheme
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?&expand=gradingScheme
 ```
 
 #### Response
@@ -566,8 +566,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?%5C$top=1&%5C$expand=gradingScheme&$skiptoken=MyZRVkZCUVVGQlFVRklaMFZCUVVGQlFVRkJRWGxCUVVGQlpFZENSalZ2UWxWNVZVOUhhMUl5YlVGdk1GVjVaejA5",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments(gradingScheme())",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments?expand=gradingScheme&$skiptoken=MyZRVkZCUVVGQlFVRkpkMFZCUVVGQlFVRkJRWGxCUVVGQkwzbEVTMVV2UkhWVE1EWllOa3R4ZW1NMmVtSndaejA5",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignments?$select=addedStudentAction,addToCalendarAction",
     "value": [
         {
@@ -581,7 +581,7 @@ Content-type: application/json
             "resourcesFolderUrl": null,
             "feedbackResourcesFolderUrl": null,
             "createdDateTime": "2023-11-07T15:33:41.7275583Z",
-            "lastModifiedDateTime": "2023-11-07T15:33:41.8103305Z",
+            "lastModifiedDateTime": "2024-01-23T13:45:12.7951103Z",
             "allowStudentsToAddResourcesToSubmission": true,
             "status": "draft",
             "notificationChannelUrl": null,
@@ -613,9 +613,85 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                     "displayName": null
                 }
+            },
+            "gradingScheme": {
+                "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
+                "displayName": "New GradingScheme name 01",
+                "hidePointsDuringGrading": false,
+                "grades": []
+            }
+        },
+        {
+            "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+            "displayName": "2021-03-04T21_28_06_105Z",
+            "closeDateTime": "2024-02-28T20:56:00Z",
+            "dueDateTime": "2024-02-28T20:56:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "feedbackResourcesFolderUrl": null,
+            "createdDateTime": "2024-01-23T15:26:34.2014918Z",
+            "lastModifiedDateTime": "2024-01-23T15:26:34.2131218Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "draft",
+            "notificationChannelUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22efd1d933-d440-4169-9c12-6ef39b654d3b%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "moduleUrl": null,
+            "id": "efd1d933-d440-4169-9c12-6ef39b654d3b",
+            "instructions": {
+                "content": "2021-03-04T21_28_06_105Z",
+                "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 100
+            },
+            "assignTo": {
+                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                    "displayName": null
+                }
+            },
+            "gradingScheme": {
+                "id": "d0c2769f-cd0f-4e30-8d1d-9312270de5c4",
+                "displayName": "New GradingScheme name",
+                "hidePointsDuringGrading": false,
+                "grades": [
+                    {
+                        "displayName": "Great",
+                        "minPercentage": 82,
+                        "defaultPercentage": null
+                    },
+                    {
+                        "displayName": "Good",
+                        "minPercentage": 70,
+                        "defaultPercentage": null
+                    },
+                    {
+                        "displayName": "Okay",
+                        "minPercentage": 0,
+                        "defaultPercentage": null
+                    }
+                ]
             }
         }
     ]

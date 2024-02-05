@@ -1,6 +1,6 @@
 ---
 title: "educationGradingSchemeGrade resource type"
-description: "Adding Grading Shemes to the existing class-wide Settings."
+description: "The individual grade ranges that make up a grading scheme."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adding Grading Shemes to the existing class-wide Settings.
+The individual grade ranges that make up a grading scheme.
 
 ## Properties
 |Property|Type|Description|

@@ -477,6 +477,38 @@ Content-type: application/json
                     "defaultPercentage": 0
                 }
             ]
+        },
+        {
+            "id": "291f9918-b52c-4cf0-b94f-55982a82995f",
+            "displayName": "Letters",
+            "hidePointsDuringGrading": false,
+            "grades": [
+                {
+                    "displayName": "A",
+                    "minPercentage": 90,
+                    "defaultPercentage": null
+                },
+                {
+                    "displayName": "B",
+                    "minPercentage": 80,
+                    "defaultPercentage": null
+                },
+                {
+                    "displayName": "C",
+                    "minPercentage": 70,
+                    "defaultPercentage": null
+                },
+                {
+                    "displayName": "D",
+                    "minPercentage": 60,
+                    "defaultPercentage": null
+                },
+                {
+                    "displayName": "F",
+                    "minPercentage": 0,
+                    "defaultPercentage": null
+                }
+            ]
         }
     ]
 }

@@ -1,5 +1,5 @@
 ---
-title: "Add educationGradingScheme"
+title: "Set default educationGradingScheme"
 description: "Add defaultGradingScheme by posting to the defaultGradingScheme collection."
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Add educationGradingScheme
+# Set default educationGradingScheme
 
 Namespace: microsoft.graph
 
@@ -45,17 +45,7 @@ PUT /education/classes/{educationClassId}/assignmentSettings/defaultGradingSchem
 
 ## Request body
 
-In the request body, supply a JSON representation of the [educationGradingScheme](../resources/educationgradingscheme.md) object.
-
-You can specify the following properties when creating an **educationGradingScheme**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|The name of the grading scheme.|
-|grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The grades that make up the scheme.|
-|hidePointsDuringGrading|Boolean|Display setting for our UI. Whether teachers can grade with points in addition to letter grades.|
-
-
+In the request body, supply the odata.id of the existing [gradingScheme](../resources/educationgradingscheme.md) object to set a default grading scheme.
 
 ## Response
 

@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Create educationGradingScheme
+# Add educationGradingScheme
 
 Namespace: microsoft.graph
 
@@ -45,16 +45,7 @@ PUT /education/classes/{educationClassId}/assignments/{assignmentid}/gradingSche
 
 ## Request body
 
-In the request body, supply a JSON representation of the [educationGradingScheme](../resources/educationgradingscheme.md) object.
-
-You can specify the following properties when creating an **educationGradingScheme**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|The name of the grading scheme.|
-|grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The grades that make up the scheme.|
-|hidePointsDuringGrading|Boolean|Display setting for our UI. Whether teachers can grade with points in addition to letter grades.|
-
+In the request body, supply the odata.id of the existing gradingScheme object to add to this assignment.
 
 ## Response
 
