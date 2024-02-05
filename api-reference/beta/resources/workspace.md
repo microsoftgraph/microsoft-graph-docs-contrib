@@ -43,6 +43,7 @@ In Exchange Online, each workspace is associated with a workspace mailbox. Deriv
 | nickname               | String                                            | Specifies a nickname for the workspace, for example, "quiet workspace". |
 | phone                  | String                                            | The phone number of the workspace. |
 | tags                   | String collection                                 | Specifies additional features of the workspace, for example, details like the type of view or furniture type. |
+| placeId                | String                                            | An alternate immutable unique identifier of the place. |
 
 ### bookingType values
 
@@ -89,7 +90,8 @@ The following is a JSON representation of the resource.
   "tags": [
     "String"
   ],
-  "floorLabel": "String"
+  "floorLabel": "String",
+  "placeId": "String (alternate identifier)"
 }
 ```
 

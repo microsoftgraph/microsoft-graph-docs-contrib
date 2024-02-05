@@ -48,6 +48,7 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the place location in latitude, longitude and (optionally) altitude coordinates. |
 | id             | String                                            | Unique identifier for the place. Read-only. |
 | phone          | String                                            | The phone number of the place. |
+| placeId        | String                                            | An alternate immutable unique identifier of the place. |
 
 ## Relationships
 
@@ -71,7 +72,8 @@ Here's a JSON representation of the resource.
   "displayName": "String",
   "id": "String (identifier)",
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
-  "phone": "String"
+  "phone": "String",
+  "placeId": "String (alternate identifier)"
 }
 ```
 
