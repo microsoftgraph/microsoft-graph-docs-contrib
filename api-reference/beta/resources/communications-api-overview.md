@@ -23,7 +23,7 @@ This API provides calling functionality as well as the ability to create and ret
 
 One of the following [permissions](/graph/permissions-reference#calls-permissions) is required to access the cloud communications API. These permissions need to be granted by the administrator.
 
-| Scenario     | Permissions                                                                                                                      |
+| Scenario      | Permissions                                                                                                                     |
 |:--------------|:--------------------------------------------------------------------------------------------------------------------------------|
 | Call records  | CallRecords.Read.All                                                                                                            |
 | Calling       | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.AccessMedia.All |
@@ -44,7 +44,7 @@ The following table lists some of the common uses for the cloud communications A
 |Meetings|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true&preserve-view=true)| [Methods for meetings](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#methods&preserve-view=true)|
 |Presence | [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) | [Methods for presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true#methods) |
 | Retrieving call records | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true&preserve-view=true) | [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true&preserve-view=true) |
-| Virtual events | [virtualEvent](../resources/virtualevent.md) | [Methods for virtualEventTownhall](../resources/virtualeventtownhall.md#methods?view=graph-rest-beta&preserve-view=true), [Methods for virtualEventWebinar](../resources/virtualeventwebinar.md#methods?view=graph-rest-beta&preserve-view=true) |
+| Virtual events | [virtualEvent](/graph/api/resources/virtualevent?view=graph-rest-beta&preserve-view=true) | [Methods for virtualEventTownhall](/graph/api/resources/virtualeventtownhall#methods?view=graph-rest-beta&preserve-view=true), [Methods for virtualEventWebinar](/graph/api/resources/virtualeventwebinar#methods?view=graph-rest-beta&preserve-view=true) |
 
 ## Common properties
 
