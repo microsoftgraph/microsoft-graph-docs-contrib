@@ -193,3 +193,12 @@ Specifies whether the task title can be changed. Accepted values are:
 * `allow`: Task title can be changed.
 
 The collection must contain only one of these values.
+
+### approvalAttachment
+
+The **approvalAttachment** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules), providing default values and overrides for specific conditions. Accepted values are:
+
+* `block`: Approval can't be changed.
+* `add`: New approval can be added.
+* `remove`: Existing approval can be removed.
+* `allow`: All Approval actions are allowed.
