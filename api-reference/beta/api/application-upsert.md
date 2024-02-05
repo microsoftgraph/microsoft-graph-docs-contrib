@@ -153,7 +153,7 @@ Content-type: application/json
 
 ### Example 2: Update an existing application
 
-The following example updates the application because the specified application exists.
+The following example updates the application because an application with the specified **uniqueName** value exists.
 
 #### Request
 
