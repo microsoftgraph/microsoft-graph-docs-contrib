@@ -213,7 +213,7 @@ Content-Type: application/json
     "healthCheckStatus": "failed",
     "type": "hybridAzureADJoin",
     "connectionType": "hybridAzureADJoin",
-    "healthCheckStatusDetail": {
+    "healthCheckStatusDetails": {
       "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
       "startDateTime": "2020-11-03T12:43:14Z",
       "endDateTime": "2020-11-03T12:43:32Z",
