@@ -1,9 +1,9 @@
 ---
 title: "plannerTaskDetails resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the additional information about a task. Each task object has a details object."
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "TarkanSevilmis"
+ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
@@ -13,66 +13,67 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the additional information about a task. Each [task](plannertask.md) object has a details object.
 
-
-Inherits from [plannerDelta](../resources/plannerdelta.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List plannerTaskDetails objects](../api/plannertask-list-details.md)|[plannerTaskDetails](../resources/plannertaskdetails.md) collection|Get a list of the [plannerTaskDetails](../resources/plannertaskdetails.md) objects and their properties.|
-|[Create plannerTaskDetails](../api/plannertask-post-details.md)|[plannerTaskDetails](../resources/plannertaskdetails.md)|Create a new [plannerTaskDetails](../resources/plannertaskdetails.md) object.|
-|[Get plannerTaskDetails](../api/plannertaskdetails-get.md)|[plannerTaskDetails](../resources/plannertaskdetails.md)|Read the properties and relationships of a [plannerTaskDetails](../resources/plannertaskdetails.md) object.|
-|[Update plannerTaskDetails](../api/plannertaskdetails-update.md)|[plannerTaskDetails](../resources/plannertaskdetails.md)|Update the properties of a [plannerTaskDetails](../resources/plannertaskdetails.md) object.|
-|[Delete plannerTaskDetails](../api/plannertask-delete-details.md)|None|Delete a [plannerTaskDetails](../resources/plannertaskdetails.md) object.|
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Get plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |Read properties and relationships of **plannerTaskDetails** object.|
+|[Update](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)	|Update **plannerTaskDetails** object. |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
 |approvalAttachment|[plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md)|**TODO: Add Description**|
-|checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|**TODO: Add Description**|
-|completionRequirements|[plannerTaskCompletionRequirementDetails](../resources/plannertaskcompletionrequirementdetails.md)|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|notes|[itemBody](../resources/itembody.md)|**TODO: Add Description**|
-|previewType|plannerPreviewType|**TODO: Add Description**.The possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
-|references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|**TODO: Add Description**|
+|checklist|[plannerChecklistItems](plannerchecklistitems.md)|The collection of checklist items on the task.|
+|completionRequirements|[plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md)|Contains detailed information about requirements on the task.|
+|description|String|Description of the task.|
+|id|String| Read-only. ID of the task details. It's 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|notes|[itemBody](itembody.md)|Rich text description of the task. To be used by HTML-aware clients. For backwards compatibility, a plain-text version of the HTML description will be synced to the "description" field. If this field hasn't previously been set but "description" has been, the existing description is synchronized to "notes" with minimal whitespace-preserving HTML markup. Setting both "description" and "notes" is an error and will result in an exception.|
+|previewType|string|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.|
+|references|[plannerExternalReferences](plannerexternalreferences.md)|The collection of references on the task.|
 
 ## Relationships
 None.
 
+
 ## JSON representation
-The following JSON representation shows the resource type.
+Here's a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.plannerTaskDetails",
-  "baseType": "microsoft.graph.plannerDelta",
-  "openType": false
-}
--->
-``` json
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.plannerTaskDetails"
+}-->
+
+```json
 {
-  "@odata.type": "#microsoft.graph.plannerTaskDetails",
-  "id": "String (identifier)",
+  "checklist": {"@odata.type": "microsoft.graph.plannerChecklistItems"},
+  "completionRequirements": {"@odata.type": "microsoft.graph.plannerTaskCompletionRequirementDetails"},
   "description": "String",
-  "notes": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
+  "id": "String (identifier)",
+  "notes": {"@odata.type": "microsoft.graph.itemBody"},
   "previewType": "String",
-  "references": {
-    "@odata.type": "microsoft.graph.plannerExternalReferences"
-  },
-  "checklist": {
-    "@odata.type": "microsoft.graph.plannerChecklistItems"
-  },
-  "completionRequirements": {
-    "@odata.type": "microsoft.graph.plannerTaskCompletionRequirementDetails"
-  },
-  "approvalAttachment": {
-    "@odata.type": "microsoft.graph.plannerBaseApprovalAttachment"
-  }
+  "references": {"@odata.type": "microsoft.graph.plannerExternalReferences"},
+  "approvalAttachment": {"@odata.type": "microsoft.graph.plannerBaseApprovalAttachment"}
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "plannerTaskDetails resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
 

@@ -1,9 +1,9 @@
 ---
 title: "plannerTaskCompletionRequirementDetails resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents detailed information about completionRequirements for a plannerTask."
+author: "prasad5596"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
@@ -13,33 +13,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents detailed information about [completionRequirements](plannertask.md#plannertaskcompletionrequirements-values) for a [plannerTask](plannertask.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalRequirement|[plannerApprovalRequirement](../resources/plannerapprovalrequirement.md)|**TODO: Add Description**|
-|checklistRequirement|[plannerChecklistRequirement](../resources/plannerchecklistrequirement.md)|**TODO: Add Description**|
+|approvalRequirement |[plannerApprovalRequirement](../resources/plannerapprovalrequirement.md)|**TODO: Add Description**|
+|checklistRequirement|[plannerChecklistRequirement](plannerchecklistrequirement.md)|Information about the requirements for completing the checklist.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
-The following JSON representation shows the resource type.
-<!-- {
+
+The following is a JSON representation of the resource.
+
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerTaskCompletionRequirementDetails"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerTaskCompletionRequirementDetails",
-  "checklistRequirement": {
-    "@odata.type": "microsoft.graph.plannerChecklistRequirement"
-  },
-  "approvalRequirement": {
-    "@odata.type": "microsoft.graph.plannerApprovalRequirement"
-  }
+  "checklistRequirement": {"@odata.type": "microsoft.graph.plannerChecklistRequirement"}
+  "approvalRequirement":  {"@odata.type": "microsoft.graph.plannerApprovalRequirement" }
 }
 ```
-
