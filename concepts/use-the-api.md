@@ -52,7 +52,7 @@ Microsoft Graph uses the HTTP method on your request to determine what your requ
 | :----- | :------------------------------------------- |
 | GET    | Read data from a resource.                   |
 | POST   | Create a new resource, or perform an action. |
-| PATCH  | Update a resource with new values.           |
+| PATCH  | Update a resource with new values, or upsert a resource (create if resource doesn't exist, update otherwise). |
 | PUT    | Replace a resource with a new one.           |
 | DELETE | Remove a resource.                           |
 

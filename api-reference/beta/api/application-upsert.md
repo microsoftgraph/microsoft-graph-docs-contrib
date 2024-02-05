@@ -18,8 +18,6 @@ Create a new [application](../resources/application.md) object if it doesn't exi
 > [!IMPORTANT]
 > Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./application-addpassword.md) and [removePassword](./application-removepassword.md) methods to update the password or secret for an application.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -28,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-You can create or update an application by specifying the **uniqueName** client-provided alternate key.
+To create or update an application, specify the **uniqueName** client-provided alternate key.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,13 +49,13 @@ In the request body, supply a JSON representation of the [application](../resour
 If successful:
 
 - If an application object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [application](../resources/application.md) object in the response body.
-- If an application object with **uniqueName** already exists, this method updates the [application](../resources/application.md) object and returns a `204 No Content` response code, and does not return anything in the response body.
+- If an application object with **uniqueName** already exists, this method updates the [application](../resources/application.md) object and returns a `204 No Content` response code.
 
 ## Examples
 
 ### Example 1: Create a new application if it doesn't exist
 
-The following example creates an application because the specified application does not exist.
+The following example creates an application because an application with the specified **uniqueName** value doesn't exist.
 
 #### Request
 
@@ -70,7 +68,7 @@ The following example shows a request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/applications(uniqueName='uniqueName')
+PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')
 Content-Type: application/json
 Prefer: create-if-missing
 
@@ -87,8 +85,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.application",
-  "name": "upsert_application_create"
+  "@odata.type": "microsoft.graph.application"
 }
 -->
 
@@ -140,7 +137,7 @@ Content-type: application/json
     },
     "passwordCredentials": [],
     "requiredResourceAccess": [],
-    "uniqueName": "uniqueName",
+    "uniqueName": "app-65278",
     "web": {
         "redirectUris": [],
         "homePageUrl": null,
@@ -168,7 +165,7 @@ The following example shows a request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/applications(uniqueName='uniqueName')
+PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')
 Content-Type: application/json
 Prefer: create-if-missing
 
@@ -181,8 +178,7 @@ Prefer: create-if-missing
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "name": "application_upsert_update"
+  "blockType": "response"
 }
 -->
 
