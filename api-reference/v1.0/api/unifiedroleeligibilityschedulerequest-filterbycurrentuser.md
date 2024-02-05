@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "unifiedroleeligibilityschedulerequest_filterbycurrentuser" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleeligibilityschedulerequest-filterbycurrentuser-permissions.md)]
 
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
+
 ## HTTP request
 
 <!-- {

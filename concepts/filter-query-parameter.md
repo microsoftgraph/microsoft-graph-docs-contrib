@@ -325,7 +325,7 @@ Hiding because the latest iteration of the report doesn't include these properti
 | `endsWith`     | `~/users?$filter=proxyAddresses/any(p:endsWith(p,'OnMicrosoft.com'))`<sup> [ ** ](#**) </sup>                    |
 
 
-## See also
+## Related content
 
 + [Advanced query capabilities on directory objects](/graph/aad-advanced-queries)
 
