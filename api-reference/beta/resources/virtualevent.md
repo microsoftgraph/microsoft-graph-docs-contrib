@@ -39,7 +39,16 @@ Inherits from [entity](../resources/entity.md).
 |endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones).|
 |id|String|Unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones).|
-|status|virtualEventStatus|Status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
+|status|[virtualEventStatus](#virtualeventstatus-values)|Status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
+
+### virtualEventStatus values
+
+| Value | Description |
+| ----- | ----------- |
+| draft | The virtual event is in draft and only visible to the organizer. |
+| published | The organizer published the virtual event and it's visible to the audience. |
+| canceled | The organizer canceled the virtual event. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
