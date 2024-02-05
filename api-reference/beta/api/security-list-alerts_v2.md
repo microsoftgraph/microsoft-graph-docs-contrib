@@ -37,7 +37,7 @@ GET /security/alerts_v2
 ## Optional query parameters
 This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`.
 
-The following properties support `$filter` : **assignedTo**, **classification**, **determination**, **createdDateTime**, **lastUpdateDateTime**, **severity**, **serviceSource** and **status**.
+The following properties support `$filter` : **assignedTo**, **classification**, **determination**, **createdDateTime**, **lastUpdateDateTime**, **severity**, **serviceSource**, and **status**.
 
 Use `@odata.nextLink` for pagination.
 
