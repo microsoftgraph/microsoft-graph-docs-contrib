@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
   "name": "virtualeventsroot-post-events-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventsroot-post-events-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventsroot-post-townhalls-permissions.md)]
 
 ## HTTP request
 
