@@ -22,6 +22,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|connectionInfo|[connectionInfo](../resources/connectioninfo.md)|Connection information of an environment used to connect to a resource. |
 |createdDateTime|DateTimeOffset|The date and time that this object was created. <br>The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|The description of this object.|
 |displayName|String|The display name of this object.|
