@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- {
   "blockType": "permissions",
-  "name": "virtualeventsroot-post-events-permissions"
+  "name": "virtualeventsroot-post-townhalls-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventsroot-post-townhalls-permissions.md)]
