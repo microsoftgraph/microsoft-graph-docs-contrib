@@ -263,7 +263,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Publish an app to the app catalog with an error in the app manifest
+### Example 4: Publish an app to the app catalog with an error in the app manifest
 
 #### Request
 
