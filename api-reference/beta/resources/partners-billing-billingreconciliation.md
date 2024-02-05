@@ -29,7 +29,7 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|billed|[microsoft.graph.partners.billing.billedReconciliation](partners-billing-billedreconciliation.md)|Represents details for billed invoice reconciliation data.|
+|billed|[microsoft.graph.partners.billing.billedReconciliation](/partners-billing-billedreconciliation.md)|Represents details for billed invoice reconciliation data.|
 
 ## JSON representation
 
