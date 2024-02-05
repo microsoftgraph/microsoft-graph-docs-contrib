@@ -13,6 +13,8 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
+
 Represents an export operation that is still running, which indicates that the files aren't ready yet.
 
 Inherits from [operation](../resources/partners-billing-operation.md).

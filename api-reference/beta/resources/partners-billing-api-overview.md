@@ -1,5 +1,5 @@
 ---
-title: "Use the Microsoft Graph API to export partner billing data (preview)"
+title: "Use the Microsoft Graph API to export partner billing data"
 description: "The partner billing API in Microsoft Graph offers Microsoft direct partners a faster, more efficient way to export their high-volume billed and unbilled Azure usage data."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
@@ -8,7 +8,11 @@ doc_type: resourcePageType
 ms.custom: zt-include
 ---
 
-# Use the Microsoft Graph API to export partner billing data (preview)
+# Use the Microsoft Graph API to export partner billing data
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
 As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in the Cloud Solution Provider programs can request to export their billed and unbilled data to Azure Blob Storage asynchronously. this removes the need to maintain an open connection for hours and loop through millions of transactions iteratively. The asynchronous API provides a way to quickly access billing and reconciliation data in manageable chunks.
 
