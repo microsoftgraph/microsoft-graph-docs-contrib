@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "include-unknown-enum-members"));
 
-graphClient.education().classes("72a7baec-c3e9-4213-a850-f62de0adad5f").assignments("7192332b-e904-4891-81e2-356242ab1858").submissions("02bb5de1-7205-2a25-fe33-f99cf53de1c4")
+graphClient.education().classes("37d99af7-cfc5-4e3b-8566-f7d40e4a2070").assignments("4cc928e3-666c-4360-8688-a15776ce53b4").submissions("5883eaeb-9760-f8e0-6832-a122c4f020be")
 	.reassign()
 	.buildRequest( requestOptions )
 	.post();

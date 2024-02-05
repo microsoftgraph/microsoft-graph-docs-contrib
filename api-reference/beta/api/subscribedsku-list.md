@@ -36,11 +36,14 @@ GET /subscribedSkus
 
 This method supports only the `$select` [OData query parameter](/graph//query-parameters) to help customize the response. It does not support `$filter`.
 
+> [!NOTE]
+> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search` parameter.
+
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

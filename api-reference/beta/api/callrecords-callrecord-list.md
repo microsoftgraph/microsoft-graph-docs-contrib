@@ -22,13 +22,10 @@ Get the list of [callRecord](../resources/callrecords-callrecord.md) objects and
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | CallRecords.Read.All |
+<!-- { "blockType": "permissions", "name": "callrecords_callrecord_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/callrecords-callrecord-list-permissions.md)]
 
 ## HTTP request
 
@@ -51,7 +48,7 @@ This method supports the following OData query parameters to help customize the 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. This value must be equal to or less than the maximum allowable page size. Optional. |
 | Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. For more information, see [Best practices for working with Microsoft Graph](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Optional. |
 | Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |

@@ -12,7 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [customAuthenticationExtension](../resources/customauthenticationextension.md) objects and their properties. Currently, only [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) objects are returned.
+Get a list of the [customAuthenticationExtension](../resources/customauthenticationextension.md) objects and their properties. The following derived types are supported.
+
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -38,7 +42,7 @@ This method supports the `$select` and `$filter` OData query parameters to help 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -19,13 +19,10 @@ Get the list of [participants](../resources/callrecords-participant.md) associat
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | CallRecords.Read.All |
+<!-- { "blockType": "permissions", "name": "callrecords_callrecord_list_participants" } -->
+[!INCLUDE [permissions-table](../includes/permissions/callrecords-callrecord-list-participants-permissions.md)]
 
 ## HTTP request
 
@@ -47,7 +44,7 @@ This method supports the following OData query parameter to help customize the r
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. This value must be equal to or less than the maximum allowable page size. Optional. |
 | Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. For more information, see [Best practices for working with Microsoft Graph](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Optional. |
 | Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |
@@ -102,6 +99,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/614e3ff0-4728-43
 [!INCLUDE [sample-code](../includes/snippets/php/list-callrecord-participants-v2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-callrecord-participants-v2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-callrecord-participants-v2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -143,7 +144,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-          "@odata.type": "#microsoft.graph.callRecords.userIdentity",
+          "@odata.type": "#microsoft.graph.userIdentity",
           "id": "00005994-851d-4988-bbc3-413bbf089e13",
           "displayName": "Anette Thomsen",
           "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
@@ -166,7 +167,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-          "@odata.type": "#microsoft.graph.callRecords.userIdentity",
+          "@odata.type": "#microsoft.graph.userIdentity",
           "id": "13fd6bf0-f646-4b82-b0ad-cd28ce10d6e3",
           "displayName": "Daichi Maruyama",
           "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",

@@ -30,6 +30,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/drive/recent
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
 ## Response
 This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive has recently accessed.
 

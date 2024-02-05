@@ -35,13 +35,13 @@ GET /teams/{team-id}/permissionGrants
 
 ## Optional query parameters
 
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This operation doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
 | Header           | Value                      |
 | :--------------- | :------------------------- |
-| Authorization    | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -148,3 +148,4 @@ Content-type: application/json
 ## See also
 - [List permission grants of a group](group-list-permissionGrants.md)
 - [List permission grants of a chat](chat-list-permissionGrants.md)
+- [List permission grants of a user](user-list-permissiongrants.md)

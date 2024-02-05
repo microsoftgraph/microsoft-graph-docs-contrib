@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 Create an online meeting on behalf of a user.
 
 > [!TIP]
-> This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
+> - This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
+> - This API doesn't create a Teams Live Event.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -42,7 +43,7 @@ POST /users/{userId}/onlineMeetings
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required. |
 | Accept-Language  | Language. Optional. |
 

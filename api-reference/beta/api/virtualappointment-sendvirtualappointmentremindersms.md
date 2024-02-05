@@ -19,13 +19,10 @@ Send an SMS reminder to external attendees for a Teams Virtual Appointment. This
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                          |
-|:---------------------------------------|:-----------------------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | VirtualAppointment.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported.                                                                                       |
-| Application                            | VirtualAppointment.ReadWrite.All                                        |
+<!-- { "blockType": "permissions", "name": "virtualappointment_sendvirtualappointmentremindersms" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]
 
 
 ## HTTP request
@@ -43,7 +40,7 @@ POST /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentRemi
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional.       |
 
 ## Request body
@@ -64,6 +61,7 @@ If successful, this method returns a `202 Accepted` response code.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "virtualappointment_sendVirtualAppointmentReminderSms",
@@ -78,6 +76,32 @@ POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRh
 "remindBeforeTimeInMinutesType": "mins15"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/virtualappointment-sendvirtualappointmentremindersms-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/virtualappointment-sendvirtualappointmentremindersms-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/virtualappointment-sendvirtualappointmentremindersms-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/virtualappointment-sendvirtualappointmentremindersms-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/virtualappointment-sendvirtualappointmentremindersms-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/virtualappointment-sendvirtualappointmentremindersms-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
