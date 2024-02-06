@@ -1,19 +1,19 @@
 ---
-title: "List participants"
-description: "Get the list of participants associated with a callRecord."
+title: "List participants_v2"
+description: "Get the list of participant objects associated with a callRecord."
 ms.localizationpriority: medium
 author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
-# List participants
+# List participants_v2
 
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [participants](../resources/callrecords-participant.md) associated with a [callRecord](../resources/callrecords-callrecord.md).
+Get the list of [participant](../resources/callrecords-participant.md) objects associated with a [callRecord](../resources/callrecords-callrecord.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -21,8 +21,8 @@ Get the list of [participants](../resources/callrecords-participant.md) associat
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "callrecords_callrecord_list_participants" } -->
-[!INCLUDE [permissions-table](../includes/permissions/callrecords-callrecord-list-participants-permissions.md)]
+<!-- { "blockType": "permissions", "name": "callrecords_callrecord_list_participants_v2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/callrecords-callrecord-list-participants_v2-permissions.md)]
 
 ## HTTP request
 
@@ -63,7 +63,7 @@ When a result set spans multiple pages, Microsoft Graph returns that page with a
 
 ### Request
 
-The following example shows a request to get the list of [participants](../resources/callrecords-participant.md) for a [callRecord](../resources/callrecords-callrecord.md).
+The following example shows a request to get the list of [participant](../resources/callrecords-participant.md) objects for a [callRecord](../resources/callrecords-callrecord.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -144,7 +144,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-          "@odata.type": "#microsoft.graph.callRecords.userIdentity",
+          "@odata.type": "#microsoft.graph.userIdentity",
           "id": "00005994-851d-4988-bbc3-413bbf089e13",
           "displayName": "Anette Thomsen",
           "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
@@ -167,7 +167,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-          "@odata.type": "#microsoft.graph.callRecords.userIdentity",
+          "@odata.type": "#microsoft.graph.userIdentity",
           "id": "13fd6bf0-f646-4b82-b0ad-cd28ce10d6e3",
           "displayName": "Daichi Maruyama",
           "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
@@ -181,7 +181,7 @@ Content-type: application/json
 
 <!-- {
   "type": "#page.annotation",
-  "description": "List participants",
+  "description": "List participants_v2",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
