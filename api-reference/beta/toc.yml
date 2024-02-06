@@ -16382,13 +16382,7 @@ items:
                   - name: Operation
                     href: resources/partners-billing-operation.md
                   - name: Get
-                    href: api/partners-billing-operation-get.md
-              - name: Unbilled non-usage reconciliation
-                items:
-                  - name: Unbilled non-usage reconciliation
-                    href: resources/partners-billing-unbilledreconciliation.md
-                  - name: Export
-                    href: api/partners-billing-unbilledreconciliation-export.md
+                    href: api/partners-billing-operation-get.md              
               - name: Unbilled usage
                 items:
                   - name: Unbilled usage
