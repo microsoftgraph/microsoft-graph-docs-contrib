@@ -21,8 +21,8 @@ Represents the information about the actual content of a [cloudClipboardItem](..
 |content|String|The `formatName` version of the value of a cloud clipboard **encoded in base64**.|
 |formatName|String|Refer to the table below.|
 
-### Formatname details
-|Formatname |Description |Corresponding Windows clipboard formats |
+### Format name details
+|Format name |Description |Corresponding Windows clipboard formats |
 |:---|:---|:---|
 | AnsiTextBase64                      | ANSI text format                      | CF_TEXT                                 |
 | TextBase64                          | Unicode text format                   | CF_UNICODETEXT                          |
