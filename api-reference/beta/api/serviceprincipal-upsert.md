@@ -67,7 +67,7 @@ The following example creates a servicePrincipal because the specified servicePr
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -85,14 +85,12 @@ Prefer: create-if-missing
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal",
-  "name": "upsert_create_serviceprincipal"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -171,8 +169,7 @@ Prefer: create-if-missing
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "name": "upsert_update_serviceprincipal"
+  "blockType": "response"
 }
 -->
 

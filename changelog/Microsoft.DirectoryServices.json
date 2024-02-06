@@ -37,6 +37,24 @@
         "Target": "group"
       },
       {
+        "Id": "c0d56d21-5f89-4543-a8b9-6b9ae2a3000e",
+        "ApiChange": "Property",
+        "ChangedApiName": "uniqueName",
+        "ChangeType": "Addition",
+        "Description": "Added the `uniqueName` property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+        "Target": "group"
+      }
+    ],
+    "Id": "600172aa-3469-46ad-ac4a-5f6fb9237036",
+    "Cloud": "Prod",
+    "Version": "beta",
+    "CreatedDateTime": "2024-01-30T16:45:20.304139Z",
+    "WorkloadArea": "Groups",
+    "SubArea": ""
+    },
+    {
+      "ChangeList": [
+      {
         "Id": "fe521c87-3059-48df-8f92-b56575f04c5f",
         "ApiChange": "Method",
         "ChangedApiName": "PATCH",
@@ -53,14 +71,6 @@
         "Target": "servicePrincipal"
       },
       {
-        "Id": "c0d56d21-5f89-4543-a8b9-6b9ae2a3000e",
-        "ApiChange": "Property",
-        "ChangedApiName": "uniqueName",
-        "ChangeType": "Addition",
-        "Description": "Added the `uniqueName` property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
-        "Target": "group"
-      },
-      {
         "Id": "372bc515-5a4e-4be3-a3eb-5b2ba6dc96eb",
         "ApiChange": "Property",
         "ChangedApiName": "uniqueName",
@@ -69,12 +79,12 @@
         "Target": "application"
       }
     ],
-    "Id": "600172aa-3469-46ad-ac4a-5f6fb9237036",
+    "Id": "150111d9-e06e-492c-89b9-befbff1b5032",
     "Cloud": "Prod",
     "Version": "beta",
     "CreatedDateTime": "2024-01-30T16:45:20.304139Z",
-    "WorkloadArea": "Identity and access",
-    "SubArea": "Identity and sign-in"
+    "WorkloadArea": "Applications",
+    "SubArea": ""
     },
     {
       "ChangeList": [

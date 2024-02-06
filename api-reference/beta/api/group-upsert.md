@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [group](../resources/group.md) object if it doesn't exist, or update the properties of an existing [group](../resources/group.md) object.
+You can create or update the following types of group:
 
 - Microsoft 365 group (unified group)
 - Security group
 
-This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
+ By default, this operation returns only a subset of the properties for each group. For a list of properties that are returned by default, see thethe [Properties](../resources/group.md#properties) section of the [group](../resources/group.md) resource. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
 
 **Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -31,11 +30,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_post_groups" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-post-groups-permissions.md)]
 
-For an app create a group with owners or members while it has the *Group.Create* permission, the app must have the privileges to read the object type that it wants to assign as the group owner or member. Therefore:
-+ The app can assign itself as the group's owner or member.
-+ To create the group with users as owners or members, the app must have at least the *User.Read.All* permission.
-+ To create the group with other service principals as owners or members, the app must have at least the *Application.Read.All* permission.
-+ To create the group with either users or service principals as owners or members, the app must have at least the *Directory.Read.All* permission.
+In order for an app with Group.Create permission to create a group with owners or members, it must have the privileges to read the object type that it wants to assign as the group owner or member. Therefore:
+
+- The app can assign itself as the group's owner or member.
+- To create the group with users as owners or members, the app must have at least the *User.Read.All* permission.
+- To create the group with other service principals as owners or members, the app must have at least the *Application.Read.All* permission.
+- To create the group with either users or service principals as owners or members, the app must have at least the *Directory.Read.All* permission.
 
 ## HTTP request
 
@@ -131,8 +131,7 @@ The following example shows the response. The value of the **preferredDataLocati
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group",
-  "name": "upsert_group_create"
+  "@odata.type": "microsoft.graph.group"
 } -->
 
 ```http
@@ -221,8 +220,7 @@ The following is an example of a successful response. It includes only default p
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group",
-  "name": "upsert_create_prepopulated_group"
+  "@odata.type": "microsoft.graph.group"
 } -->
 
 ```http
@@ -317,8 +315,7 @@ Content-Type: application/json
 The following example shows the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 <!-- {
-  "blockType": "response",
-  "name": "upsert_update_prepopulated_group"
+  "blockType": "response"
 } -->
 
 ``` http
