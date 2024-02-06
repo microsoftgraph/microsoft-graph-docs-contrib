@@ -254,7 +254,7 @@ The `mgt-file-list` component supports many [templates](../customize-components/
 ## Microsoft Graph permissions
 
 
-This component uses the following Microsoft Graph APIs, for each API call one of the listed permissions is required.
+This component uses the following Microsoft Graph APIs. For each API call, one of the permissions listed is required.
 
 | Configuration                                                      | Permissions                                                                                           | API                                                                                                                                                                                                                        |
 | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -276,7 +276,7 @@ This component uses the following Microsoft Graph APIs, for each API call one of
 
 ### Subcomponents
 
-The `mgt-file-list` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-file](file.md).
+The `mgt-file-list` component consists of one or more subcomponents that might require permissions other than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-file](file.md).
 
 ## Authentication
 
