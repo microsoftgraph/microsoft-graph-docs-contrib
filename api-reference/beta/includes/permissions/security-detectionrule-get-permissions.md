@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Not supported.|Not supported.|
+|Delegated (work or school account)|CustomDetection.Read.All|CustomDetection.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|CallRecords.Read.All|Not available.|
+|Application|CustomDetection.Read.All|CustomDetection.ReadWrite.All|
+
