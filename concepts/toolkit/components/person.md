@@ -256,7 +256,7 @@ The following properties are available on the config object.
 
 ## Microsoft Graph permissions
 
-This control uses the following Microsoft Graph APIs and permissions. For each API called the user must have at least one of the listed permissions. Some configurations can result in multiple calls to Microsoft Graph, when these calls could use different permissions there are separate rows for each API and permission set.
+This control uses the following Microsoft Graph APIs and permissions. For each API called, the user must have at least one of the permissions listed. Some configurations can result in multiple calls to Microsoft Graph. When these calls can use different permissions, each API and permission set is in a separate row.
 
 | Configuration | Permission | API |
 | ------------- | ---------- | --- |
