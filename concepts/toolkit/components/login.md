@@ -121,7 +121,7 @@ The `mgt-login` component supports several [templates](../customize-components/t
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs. For each of the listed API requests one of the listed permissions is required.
+This component uses the following Microsoft Graph APIs. For each of the API requests, one of the permissions listed is required.
 
 | Configuration | Permission | API                               |
 | ------------- | ---------- | --------------------------------- |
