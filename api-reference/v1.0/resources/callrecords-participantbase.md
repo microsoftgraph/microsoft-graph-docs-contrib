@@ -21,7 +21,7 @@ Base type of [organizer](callrecords-organizer.md) and [participant](callrecords
 | Property    | Type                          | Description                                     |
 |:------------|:------------------------------|:------------------------------------------------|
 | id          | String                        | Unique identifier for the call participant.     |
-| identity    | [communicationsIdentitySet](communicationsidentityset.md) | The identity of the call participant. |
+| identity    | [microsoft.graph.communicationsIdentitySet](communicationsidentityset.md) | The identity of the call participant. |
 
 ## JSON representation
 
