@@ -22,7 +22,7 @@ An entity of type `chatMessageAttachment` is returned as part of the [Get channe
 |:---------------|:--------|:----------|
 |id|string| Read-only. Unique id of the attachment.|
 |contentType| string | The media type of the content attachment. It can have the following values: <br><ul><li>`reference`: Attachment is a link to another file. Populate the contentURL with the link to the object.</li><li>Any contentTypes supported by the Bot Framework's [Attachment object](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object)</li><li>`application/vnd.microsoft.card.codesnippet`: A code snippet. </li><li>`application/vnd.microsoft.card.announcement`: An announcement header. </li>|
-|contentUrl|string|URL for the content of the attachment. Supported protocols: http, https, file and data.|
+|contentUrl|string|URL for the content of the attachment. |
 |content|string|The content of the attachment. If the attachment is a [rich card](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference), set the property to the rich card object. This property and contentUrl are mutually exclusive.|
 |name|string|Name of the attachment.|
 |teamsAppId| string |The ID of the Teams app that is associated with the attachment. The property is specifically used to attribute a Teams message card to the specified app.|
