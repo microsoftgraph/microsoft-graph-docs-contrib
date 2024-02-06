@@ -50,6 +50,9 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.accessPackageResourceEnvironment",
   "id": "String (identifier)",
+  "connectionInfo": {
+    "@odata.type": "microsoft.graph.connectionInfo"
+  },
   "displayName": "String",
   "description": "String",
   "originSystem": "String",
