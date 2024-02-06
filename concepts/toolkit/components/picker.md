@@ -29,7 +29,7 @@ The following example shows the use of the `mgt-picker` component to select a ta
 
 ## Properties and attributes
 
-You can use several attributes to change the behavior of the component. It has required attributes such as `resource` for example `/users` and `key-name` for example `displayName`.
+You can use several attributes to change the behavior of the component. The component has required attributes, such as `resource` - for example, `/users` - and `key-name` - for example, `displayName`.
 
 `key-name` also supports nested values. For example, in the following response:
 ```js
@@ -155,7 +155,7 @@ The `mgt-picker` component supports several [templates](../customize-components/
 
 ## Microsoft Graph permissions
 
-Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. Microsoft Graph Toolkit checks that the current user has consented to at least one of the supplied `scopes`. For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
+Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. Microsoft Graph Toolkit verifies that the current user has consented to at least one of the supplied `scopes`. For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
 
 ## Authentication
 
