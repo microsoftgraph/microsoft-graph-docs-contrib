@@ -19,8 +19,7 @@ Microsoft Entra ID Protection continually evaluates [user risks](riskyuser.md) a
 For more information about risk detection, see [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection) and [What are risk detections?](/entra/id-protection/concept-identity-protection-risks)
 
 >[!NOTE]
-> 1. You must have a Microsoft Entra ID P1 or P2 license to use the risk detection API.
-> 2. The availability of risk detection data is governed by the [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+> The availability of risk detection data is governed by the [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## Methods
 
