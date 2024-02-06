@@ -42,8 +42,8 @@ In Exchange Online, each workspace is associated with a workspace mailbox. Deriv
 | label                  | String                                            | Specifies a descriptive label for the workspace, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the workspace, for example, "quiet workspace". |
 | phone                  | String                                            | The phone number of the workspace. |
-| tags                   | String collection                                 | Specifies additional features of the workspace, for example, details like the type of view or furniture type. |
 | placeId                | String                                            | An alternate immutable unique identifier of the place. |
+| tags                   | String collection                                 | Specifies additional features of the workspace, for example, details like the type of view or furniture type. |
 
 ### bookingType values
 

@@ -44,9 +44,9 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
 | phone                  | String                                            | The phone number of the room. |
+| placeId                | String                                            | An alternate immutable unique identifier of the place. |
 | tags                   | String collection                                 | Specifies additional features of the room, for example, details like the type of view or furniture type. |
 | videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
-| placeId                | String                                            | An alternate immutable unique identifier of the place. |
 
 ### bookingType values
 
