@@ -3897,7 +3897,7 @@
             "Target": "cloudPcOnPremisesConnectionStatusDetail"
             },
             {
-            "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+            "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
             "ApiChange": "Resource",
             "ChangedApiName": "cloudPcOnPremisesConnectionHealthCheck",
             "ChangeType": "Addition",
@@ -3905,7 +3905,7 @@
             "Target": "cloudPcOnPremisesConnectionHealthCheck"
             },
             {
-                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
                 "ApiChange": "Method",
                 "ChangedApiName": "runHealthChecks",
                 "ChangeType": "Addition",
