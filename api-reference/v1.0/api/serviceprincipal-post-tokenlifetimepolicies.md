@@ -54,6 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "assign_tokenlifetimepolicy_to_serviceprincipal"
@@ -67,6 +68,16 @@ Content-Type: application/json
     "@odata.id": "https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4"
 }
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/assign-tokenlifetimepolicy-to-serviceprincipal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assign-tokenlifetimepolicy-to-serviceprincipal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

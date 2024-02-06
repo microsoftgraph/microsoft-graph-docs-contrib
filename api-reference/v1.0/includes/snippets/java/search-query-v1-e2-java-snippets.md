@@ -11,6 +11,7 @@ SearchRequest requests = new SearchRequest();
 LinkedList<EntityType> entityTypesList = new LinkedList<EntityType>();
 entityTypesList.add(EntityType.LIST_ITEM);
 requests.entityTypes = entityTypesList;
+requests.region = "US";
 SearchQuery query = new SearchQuery();
 query.queryString = "contoso";
 query.queryTemplate = "{searchTerms} CreatedBy:Bob";
