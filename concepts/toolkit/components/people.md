@@ -105,7 +105,7 @@ The following examples show how to use the `person` template.
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions. For each API called the user must have at least one of the listed permissions.
+This component uses the following Microsoft Graph APIs and permissions. For each API called, the user must have at least one of the permissions listed.
 
 | Configuration         | Permission                                                                                                | API                                                                                         |
 | --------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
