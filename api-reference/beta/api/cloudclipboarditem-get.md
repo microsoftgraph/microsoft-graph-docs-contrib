@@ -74,6 +74,7 @@ The following example shows a request of getting a single [cloudClipboardItem](.
 GET https://graph.microsoft.com/beta/user/cloudClipboard/items/{cloudClipboardItemId}
 ```
 
+### Response
 The following example shows the response of getting a single [cloudClipboardItem](../resources/cloudclipboarditem.md) by id.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

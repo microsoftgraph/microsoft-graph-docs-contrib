@@ -21,16 +21,16 @@ Represents the information about the actual content of a [cloudClipboardItem](..
 |content|String|The `formatName` version of the value of a cloud clipboard **encoded in base64**.|
 |formatName|String|Refer to the table below.|
 
-### FormatName details
-|FormatName |Description |Corresponding Windows Clipboard Formats |
+### Formatname details
+|Formatname |Description |Corresponding Windows clipboard formats |
 |:---|:---|:---|
-| AnsiTextBase64                      | ANSI Text Format                      | CF_TEXT                                 |
-| TextBase64                          | Unicode Text Format                   | CF_UNICODETEXT                          |
-| UniformResourceLocatorWBase64       | Unicode URL Format                    | [CFSTR_INETURLW](/windows/win32/shell/clipboard#cfstr_ineturl)                          |
-| UniformResourceLocatorBase64        | ANSI URI Format                       | [CFSTR_INETURLA](/windows/win32/shell/clipboard#cfstr_ineturl)                          |
-| RichTextFormatBase64                | Rich Text Format                      | [Registered Clipboard Format](/windows/win32/dataxchg/clipboard-formats#registered-clipboard-formats)  |
-| HTMLFormatBase64                    | HTML Format                           | [CF_HTML](/windows/win32/dataxchg/html-clipboard-format)  |
-| {Custom}                      | Custom Format defined by clients to identify application-specific formats. It can only be understood and handled by the client that created it.   | N/A  |
+| AnsiTextBase64                      | ANSI text format                      | CF_TEXT                                 |
+| TextBase64                          | Unicode text format                   | CF_UNICODETEXT                          |
+| UniformResourceLocatorWBase64       | Unicode uri format                    | [CFSTR_INETURLW](/windows/win32/shell/clipboard#cfstr_ineturl)                          |
+| UniformResourceLocatorBase64        | ANSI uri format                       | [CFSTR_INETURLA](/windows/win32/shell/clipboard#cfstr_ineturl)                          |
+| RichTextFormatBase64                | Rich text format                      | [Registered Clipboard Format](/windows/win32/dataxchg/clipboard-formats#registered-clipboard-formats)  |
+| HTMLFormatBase64                    | HTML format                           | [CF_HTML](/windows/win32/dataxchg/html-clipboard-format)  |
+| {Custom}                      | Custom format defined by clients to identify application-specific formats. It can only be understood and handled by the client that created it.   | N/A  |
 
 ## Relationships
 None.
