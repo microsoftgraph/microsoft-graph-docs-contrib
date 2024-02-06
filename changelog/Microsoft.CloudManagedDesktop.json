@@ -596,6 +596,22 @@
                     "Description": "Added the **bulkActions** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
                     "Target": "virtualEndpoint"
                 },
+                 {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "List",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-bulkactions?view=graph-rest-beta) method to [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                 {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "Create",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-post-bulkactions?view=graph-rest-beta) method to [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                },
                 {
                     "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
                     "ApiChange": "Resource",
