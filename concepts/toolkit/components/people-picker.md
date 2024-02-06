@@ -7,7 +7,7 @@ author: sebastienlevert
 
 # People picker component in Microsoft Graph Toolkit
 
-You can use the `mgt-people-picker` web component to search for people and/or groups. By default, the component searches for all people and users in the organization, but you can change the behavior to also search for groups, or only groups. You can also filter the search to a specific group. Additionally, you can allow the user to enter and select any email address.
+You can use the `mgt-people-picker` web component to search for people, groups, or both. By default, the component searches for all people and users in the organization, but you can change the behavior to also search for groups, or only groups. You can also filter the search to a specific group. You can also allow the user to enter and select any email address.
 
 ## Example
 
@@ -227,7 +227,7 @@ The control uses the global authentication provider described in the [authentica
 | `people`     | List of people | Used when `type` is set to `PersonType.person` or `PersonType.any` |
 | `users`      | List of users  | Used when `groupId` specified                                      |
 
-For more information on how to configure the cache, see [Caching](../customize-components/cache.md).
+For more information about how to configure the cache, see [Caching](../customize-components/cache.md).
 
 ## Extend for more control
 
