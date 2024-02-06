@@ -34,11 +34,11 @@ PATCH /applications(uniqueName='{uniqueName}')
 ```
 
 ## Request headers
-| Name       | Description|
-|:-----------|:----------|
+| Name          | Description|
+|:--------------|:----------|
 | Authorization | Bearer {token}. Required.  |
-| Content-Type | application/json. Required. |
-|Prefer| `create-if-missing`. Required for upsert behavior, otherwise PATCH is treated as regular update.|
+| Content-Type  | application/json. Required. |
+| Prefer        | `create-if-missing`. Required for upsert behavior, otherwise the request is treated as an update operation. |
 
 ## Request body
 
