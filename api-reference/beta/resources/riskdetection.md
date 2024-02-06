@@ -16,7 +16,7 @@ Represents information about a detected risk in a Microsoft Entra tenant.
 
 Microsoft Entra ID Protection continually evaluates [user risks](riskyuser.md) and app or user [sign-in](signin.md) risks based on various signals and machine learning. This API provides programmatic access to all risk detections in your Microsoft Entra environment.
 
-For more information about risk detection, see [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection) and [What are risk detections?](/entra/id-protection/concept-identity-protection-risks)
+For more information about risk detection, see [Microsoft Entra ID Protection](/entra/id-protection/overview-identity-protection) and [What are risk detections?](/entra/id-protection/concept-identity-protection-risks)
 
 >[!NOTE]
 > The availability of risk detection data is governed by the [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
