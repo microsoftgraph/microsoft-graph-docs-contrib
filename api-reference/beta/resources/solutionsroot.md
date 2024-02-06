@@ -53,7 +53,7 @@ https://graph.microsoft.com/{version}/virtualEvents/webinars
 None.
 
 ## Properties
-None.
+None. 
 
 ## Relationships
 | Relationship | Type	|Description|
