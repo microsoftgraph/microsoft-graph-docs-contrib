@@ -135,7 +135,7 @@ To learn more, see [styling components](../customize-components/style.md).
 
 ## Microsoft Graph APIs and permissions
 
-This control uses the following Microsoft Graph APIs and permissions. For each API call one of the listed permissions is required.
+This control uses the following Microsoft Graph APIs and permissions. For each API call, one of the permissions listed is required.
 
 | Configuration                                                                                    | Permission Scopes                          | API                                                                            |
 | ------------------------------------------------------------------------------------------------ | ------------------------------------------ | ------------------------------------------------------------------------------ |
