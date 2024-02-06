@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 SchemaExtensionCollectionPage schemaExtensions = graphClient.schemaExtensions()
 	.buildRequest()
-	.filter("id eq 'graphlearn_test'")
+	.filter("id eq 'bellowscollege_courses'")
 	.get();
 
 ```

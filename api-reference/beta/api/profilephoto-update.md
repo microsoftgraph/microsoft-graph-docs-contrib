@@ -104,7 +104,7 @@ PUT /users/{id | userPrincipalName}/photo/$value
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | e.g., image/jpeg. Required.  |
 
 ## Request body

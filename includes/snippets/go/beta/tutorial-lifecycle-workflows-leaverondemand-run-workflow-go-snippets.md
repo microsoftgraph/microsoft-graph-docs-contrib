@@ -23,7 +23,7 @@ user := graphmodels.NewUser()
 id := "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
 user.SetId(&id) 
 
-subjects := []graphmodels.userable {
+subjects := []graphmodels.Userable {
 	user,
 }
 requestBody.SetSubjects(subjects)

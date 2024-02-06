@@ -38,7 +38,7 @@ This method supports the `$filter` query parameter for only the **accountEnabled
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. Required. |
 
 ## Request body
