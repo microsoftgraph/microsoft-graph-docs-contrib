@@ -29,7 +29,7 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|billed|[microsoft.graph.partners.billing.billedReconciliation](partners-billing-billedreconciliation.md)|Represents details for billed invoice reconciliation data.|
+|billed|[microsoft.graph.partners.billing.billedreconciliation](partners-billing-billedreconciliation.md)|Represents details for billed invoice reconciliation data.|
 
 ## JSON representation
 
@@ -38,13 +38,13 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.partners.billing.billingReconciliation",
+  "@odata.type": "microsoft.graph.partners.billing.billingreconciliation",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.partners.billing.billingReconciliation"
+  "@odata.type": "#microsoft.graph.partners.billing.billingreconciliation"
 }
 ```
