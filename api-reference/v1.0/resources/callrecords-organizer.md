@@ -20,7 +20,7 @@ Inherits from [participantBase](callrecords-participantbase.md).
 | Property | Type                       | Description                                             |
 |:---------|:------------------------------|:--------------------------------------------------------|
 | id       | String                        | Unique identifier for the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
-| identity | [communicationsIdentitySet](communicationsidentityset.md) | The identity of the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
+| identity | [microsoft.graph.communicationsIdentitySet](communicationsidentityset.md) | The identity of the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
 
 ## JSON representation
 
