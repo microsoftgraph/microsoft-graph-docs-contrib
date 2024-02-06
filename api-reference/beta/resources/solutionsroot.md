@@ -22,18 +22,33 @@ https://graph.microsoft.com/{version}/solutions/
 ```
 
 <!-- { "blockType": "ignored" } -->
-To access Bookings businesses, use the following URL:
+To access Bookings businesses, use the following syntax:
 
 ```http
 https://graph.microsoft.com/{version}/solutions/bookingBusinesses 
 ```
 
-To access Bookings currencies, use the following URL:
+To access Bookings currencies, use the following syntax:
 
 <!-- { "blockType": "ignored" } -->
 ```http
 https://graph.microsoft.com/{version}/solutions/bookingCurrencies 
 ```
+
+To access business scenarios, use the folloing syntax:
+
+<!-- { "blockType": "ignored" } -->
+```http
+https://graph.microsoft.com/{version}/solutions/businessScenarios 
+```
+
+To access virtual event webinars, use the following syntax:
+
+<!-- { "blockType": "ignored" } -->
+```http
+https://graph.microsoft.com/{version}/virtualEvents/webinars
+```
+
 ## Methods
 None.
 
