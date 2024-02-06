@@ -1,6 +1,6 @@
 ---
 title: "Set default educationGradingScheme"
-description: "Add defaultGradingScheme by posting to the defaultGradingScheme collection."
+description: "Set the defaultGradingScheme on the assignmentSettings."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"

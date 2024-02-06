@@ -151,19 +151,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_grading_schemes_beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings(defaultGradingScheme())/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings(defaultGradingScheme())/$entity",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignmentSettings?$select=submissionAnimationDisabled",
     "submissionAnimationDisabled": true,
-    "gradingCategories@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_grading_schemes_beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
     "gradingCategories": [],
-    "gradingSchemes@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_grading_schemes_beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes",
+    "gradingSchemes@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes",
     "gradingSchemes": [
-        {
-            "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
-            "displayName": "New GradingScheme name 01",
-            "hidePointsDuringGrading": false,
-            "grades": []
-        },
         {
             "id": "696290ba-1925-490e-a5d2-026bad0dbdc1",
             "displayName": "New name for Pass/Fail Scheme",
@@ -180,13 +174,36 @@ Content-Type: application/json
                     "defaultPercentage": 0
                 }
             ]
-        }        
+        },
+        {
+            "id": "641a8d5e-38cb-4530-9af8-9e5e4dde9aa7",
+            "displayName": "New GradingScheme 02",
+            "hidePointsDuringGrading": false,
+            "grades": [
+                {
+                    "displayName": "Only grade",
+                    "minPercentage": 0,
+                    "defaultPercentage": null
+                }
+            ]
+        }
     ],
     "defaultGradingScheme": {
-        "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
-        "displayName": "New GradingScheme name 01",
+        "id": "696290ba-1925-490e-a5d2-026bad0dbdc1",
+        "displayName": "New name for Pass/Fail Scheme",
         "hidePointsDuringGrading": false,
-        "grades": []
+        "grades": [
+            {
+                "displayName": "Pass",
+                "minPercentage": 60,
+                "defaultPercentage": 100
+            },
+            {
+                "displayName": "Fail",
+                "minPercentage": 0,
+                "defaultPercentage": 0
+            }
+        ]
     }
 }
 ```
