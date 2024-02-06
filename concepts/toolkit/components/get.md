@@ -75,7 +75,7 @@ The `mgt-get` component supports several [templates](../customize-components/tem
 
 ## Microsoft Graph permissions
 
-Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. Microsoft Graph Toolkit checks that the current user has consented to at least one of the supplied `scopes`. For more information about permissions, see Microsoft Graph [permissions reference](../../permissions-reference.md).
+Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. Microsoft Graph Toolkit verifies that the current user has consented to at least one of the supplied `scopes`. For more information about permissions, see Microsoft Graph [permissions reference](../../permissions-reference.md).
 
 ## Authentication
 
