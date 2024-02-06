@@ -18267,7 +18267,7 @@ items:
                     href: resources/virtualeventsession.md
                     items:
                       - name: List
-                        href: api/virtualeventsession-list.md
+                        href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
           - name: Devices (preview)
