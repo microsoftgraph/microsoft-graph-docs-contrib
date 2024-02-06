@@ -73,8 +73,5 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "bookingBusinesses": [{ "@odata.type": "microsoft.graph.bookingBusiness" }],
-  "bookingCurrencies": [{ "@odata.type": "microsoft.graph.bookingCurrency" }],
-  "businessScenarios": [{ "@odata.type": "microsoft.graph.businessScenario" }],
-  "virtualEvents": [ { "@odata.type": "microsoft.graph.virtualEventsRoot" } ]
+  "@odata.type": "#microsoft.graph.solutionsRoot"
 }
