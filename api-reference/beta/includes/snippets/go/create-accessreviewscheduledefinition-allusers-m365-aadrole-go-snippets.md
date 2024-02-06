@@ -56,7 +56,7 @@ accessReviewReviewerScope.SetQueryType(&queryType)
 queryRoot := "decisions"
 accessReviewReviewerScope.SetQueryRoot(&queryRoot) 
 
-reviewers := []graphmodels.accessReviewReviewerScopeable {
+reviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
 }
 requestBody.SetReviewers(reviewers)
@@ -68,7 +68,7 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-backupReviewers := []graphmodels.accessReviewReviewerScopeable {
+backupReviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
 }
 requestBody.SetBackupReviewers(backupReviewers)
@@ -80,7 +80,7 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-fallbackReviewers := []graphmodels.accessReviewReviewerScopeable {
+fallbackReviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)

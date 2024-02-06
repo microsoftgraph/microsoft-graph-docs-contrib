@@ -21,7 +21,7 @@ Users are the representation of a Microsoft Entra work or school user account or
 
 You can use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to a user. The **user** resource provides straightforward way for you to access and manipulate user resources without having to perform extra calls, look up specific authentication information, and directly issue queries against other Microsoft Graph resources.
 
-You can access a users's information and manage their data [on their behalf](auth-v2-user.md) or as [an app with it's own identity](auth-v2-service.md).
+You can access a user's information and manage their data [on their behalf](auth-v2-user.md) or as [an app with its own identity](auth-v2-service.md).
 
 ### Manage users in your organization
 

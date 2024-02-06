@@ -34,7 +34,7 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}/submissions/{sub
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

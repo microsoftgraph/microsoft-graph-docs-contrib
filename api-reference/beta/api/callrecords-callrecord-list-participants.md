@@ -44,7 +44,7 @@ This method supports the following OData query parameter to help customize the r
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. This value must be equal to or less than the maximum allowable page size. Optional. |
 | Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. For more information, see [Best practices for working with Microsoft Graph](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Optional. |
 | Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |
@@ -144,7 +144,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-          "@odata.type": "#microsoft.graph.callRecords.userIdentity",
+          "@odata.type": "#microsoft.graph.userIdentity",
           "id": "00005994-851d-4988-bbc3-413bbf089e13",
           "displayName": "Anette Thomsen",
           "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
@@ -167,7 +167,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-          "@odata.type": "#microsoft.graph.callRecords.userIdentity",
+          "@odata.type": "#microsoft.graph.userIdentity",
           "id": "13fd6bf0-f646-4b82-b0ad-cd28ce10d6e3",
           "displayName": "Daichi Maruyama",
           "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",

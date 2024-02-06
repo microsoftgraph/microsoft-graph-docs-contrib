@@ -358,6 +358,7 @@ Limits are expressed as requests per second (rps).
 | POST /teams/```{team-id}```/[sendActivityNotification](/graph/api/team-sendactivitynotification) | 5 rps | 50 rps |
 | POST /chats/```{chat-id}```/[sendActivityNotification](/graph/api/chat-sendactivitynotification) | 5 rps | 50 rps |
 | POST /users/```{user-id}```/teamwork/[sendActivityNotification](/graph/api/userteamwork-sendactivitynotification) | 5 rps | 50 rps |
+| POST /teamwork/[sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients) | 2 rps | 20 rps |
 | GET /teams/```{team-id}```/[members](/graph/api/team-get-members) | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/[channels](/graph/api/channel-get) | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/channels/```{channel-id}```/[members](/graph/api/channel-get-members) | 60 rps | 1200 rps |
@@ -367,8 +368,7 @@ Limits are expressed as requests per second (rps).
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
-A maximum of 3000 messages per app per day can be sent to a given channel 
-(except when using [migration mode](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
@@ -499,3 +499,7 @@ The preceding information applies to the following resources:
 ## Viva Engage service limits
 
 Viva Engage API calls are subject to rate limiting, allowing 10 requests per user, per app, within a 30-second time period. When you exceed the rate limit, all subsequent requests return a `429 Too Many Requests` response code. 
+
+## Related content
+
+- [Best practices for working with Microsoft Graph](best-practices-concept.md)
