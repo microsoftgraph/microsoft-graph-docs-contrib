@@ -257,7 +257,7 @@ For more information about handling events, see [events](../customize-components
 
 ## Microsoft Graph permissions
 
-The Person-Card control uses the following Microsoft Graph APIs and permissions. For each API called the user must have at least one of the listed permissions.
+The Person-Card control uses the following Microsoft Graph APIs and permissions. For each API called, the user must have at least one of the permissions listed.
 
 | Configuration                                                                                          | Permission         | API                                                                                                           | Section      |
 | ------------------------------------------------------------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------------- | ------------ |
@@ -307,7 +307,7 @@ The Person-Card control uses the global authentication provider described in the
 | `presence`   | Person's presence         | Used, when `showPresence` is set to `true`                                |
 | `users`      | Person's user information | Used when `userId` is specified or the `personQuery` is set to `me`       |
 
-For more information on how to configure the cache, see [Caching](../customize-components/cache.md).
+For more information about how to configure the cache, see [Caching](../customize-components/cache.md).
 
 ## Localization
 
