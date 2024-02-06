@@ -36,7 +36,7 @@ To export reconciliation data, the calling principal must be in the partner tena
 
 ## Common use cases
 
-The partner billing API provides methods and actions that allow Microsoft direct partners to export their high-volume billed and unbilled reconciliation and Azure usage data.
+The partner billing API provides methods and actions that allow Microsoft direct partners to export their high-volume billed reconciliation data and billed and unbilled Azure usage data.
 
 ### Billed usage data
 
