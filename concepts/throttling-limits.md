@@ -369,6 +369,8 @@ Limits are expressed as requests per second (rps).
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 
+A maximum of 1 request per second per user can be issued when doing POST message in a given chat or channel (Not supported for migration).
+
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
