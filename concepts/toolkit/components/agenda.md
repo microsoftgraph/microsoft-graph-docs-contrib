@@ -38,8 +38,8 @@ By default, the `mgt-agenda` component fetches events from the `/me/calendarview
 | show-max           | showMax           | A number to indicate the maximum number of events to show. The default value isn't set (no maximum).                                                                                                                                                                                                                                       |
 | group-id           | groupId           | A string ID for a group calendar to use instead of the current signed in user's calendar.                                                                                                                                                                                                                                                   |
 | event-query        | eventQuery        | A string that represents an alternative query to be used when fetching events from Microsoft Graph. Optionally, add the delegated scope at the end of the string by delimiting it with `                                                                                                                                                    | ` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`). |
-| events             | events            | An array of events to get or set the list of events rendered by the component. Use this property to access the events loaded by the component. Set this value to load your own events. The `date`, `days`, or `event-query` attributes have no effect if set by developer.                                                      |
-| group-by-day       | groupByDay        | A Boolean value to group events by day. By default events aren't grouped.                                                                                                                                                                                                                                                                 |
+| events             | events            | An array of events to get or set the list of events rendered by the component. Use this property to access the events loaded by the component. Set this value to load your own events. The `date`, `days`, or `event-query` attributes have no effect if set by the developer.                                                      |
+| group-by-day       | groupByDay        | A Boolean value to group events by day. By default, events aren't grouped.                                                                                                                                                                                                                                                                 |
 | preferred-timezone | preferredTimezone | Name of the IANA time zone to use when displaying events retrieved from Microsoft Graph; for example, `America/Los_Angeles`. For a list of IANA time zones, see [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). By default, events render using the current time zone settings of the device. |
 
 The following example changes the behavior of the component to fetch data for a specific date and up to three days.
@@ -142,7 +142,7 @@ For more information about handling events, see [events](../customize-components
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs, for each API call one of the listed permissions is required.
+This component uses the following Microsoft Graph APIs. For each API call, one of the permissions listed is required.
 
 | Configuration               | Permission     | API                                                       |
 | -------------               | -------------- | --------------------------------------------------------- |
@@ -154,7 +154,7 @@ The component allows you to specify a different Microsoft Graph query to call (s
 
 ### Subcomponents
 
-The `mgt-agenda` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-people](people.md).
+The `mgt-agenda` component consists of one or more subcomponents that might require permissions other than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-people](people.md).
 
 ## Authentication
 
