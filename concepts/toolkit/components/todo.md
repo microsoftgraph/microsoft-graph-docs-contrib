@@ -107,7 +107,7 @@ The following example defines a template for the tasks component.
 
 ## Microsoft Graph permissions
 
-This control uses the following Microsoft Graph APIs and permissions. For each API called the user must have at least one of the listed permissions.
+This control uses the following Microsoft Graph APIs and permissions. For each API called, the user must have at least one of the listed permissions.
 
 | Configuration | Permission | API |
 | ------------- | ---------- | --- |
