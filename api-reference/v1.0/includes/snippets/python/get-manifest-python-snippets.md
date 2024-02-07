@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.directory.deleted_items.by_directory_object_id('directoryObject-id').delete()
+result = await graph_client.reports.partners.billing.manifests.by_manifest_id('manifest-id').get()
 
 
 ```
