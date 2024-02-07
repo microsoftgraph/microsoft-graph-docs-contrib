@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Delete an [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -37,7 +37,7 @@ DELETE /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

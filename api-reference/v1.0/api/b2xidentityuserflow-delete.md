@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Delete a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -38,7 +38,7 @@ DELETE /identity/b2xUserFlows/{id}
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

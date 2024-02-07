@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Delete the photo for the signed-in user or the specified group. 
 
+> [!NOTE]
+> 
+> The delete operation supports only user or group photos, but _not Outlook contact nor Teams photos_.
 
 ## Permissions
 
@@ -60,7 +63,7 @@ DELETE /groups/{id}/photo/$value
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

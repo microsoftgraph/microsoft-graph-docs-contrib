@@ -38,6 +38,7 @@ Represents a logical container for all the definitions and versions of the same 
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamtemplate",
 }-->
 

@@ -25,17 +25,27 @@ For more information about rules for Microsoft Entra roles and examples of updat
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+<a name='for-pim-for-azure-ad-roles'></a>
 
 ### For PIM for Microsoft Entra roles
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 
-<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicyrule_update" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicyrule-update-permissions.md)]
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ### For PIM for groups
-
-<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicyrule_update_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicyrule-update-2-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|RoleManagementPolicy.ReadWrite.AzureADGroup|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RoleManagementPolicy.ReadWrite.AzureADGroup|
 
 ## HTTP request
 
@@ -51,7 +61,7 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{un
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

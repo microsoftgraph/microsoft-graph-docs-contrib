@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Not yet documented
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -36,7 +38,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -62,7 +64,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_books_managedebook_assign_assign_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assign
-
 Content-type: application/json
 Content-length: 312
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 List application and service principal objects that are assigned an [appManagementPolicy](../resources/appManagementPolicy.md) policy object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -48,7 +48,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

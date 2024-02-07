@@ -38,7 +38,7 @@ GET /deviceAppManagement/mobileApps
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1987
+Content-Length: 1889
 
 {
   "value": [
@@ -96,7 +96,6 @@ Content-Length: 1987
       "fileName": "File Name value",
       "size": 4,
       "packageId": "Package Id value",
-      "identityName": "Identity Name value",
       "minimumSupportedOperatingSystem": {
         "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
         "v4_0": true,
@@ -118,7 +117,6 @@ Content-Length: 1987
       },
       "versionName": "Version Name value",
       "versionCode": "Version Code value",
-      "identityVersion": "Identity Version value",
       "targetedPlatforms": "androidOpenSourceProject"
     }
   ]

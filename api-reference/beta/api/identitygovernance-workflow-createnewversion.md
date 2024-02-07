@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Create a new version of the [workflow](../resources/identitygovernance-workflow.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -41,7 +41,7 @@ POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/createNewVers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
