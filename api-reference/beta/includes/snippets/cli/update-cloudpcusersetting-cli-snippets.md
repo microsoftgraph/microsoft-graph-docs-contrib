@@ -11,6 +11,7 @@ mgc-beta device-management virtual-endpoint user-settings patch --cloud-pc-user-
   "selfServiceEnabled": true,\
   "restorePointSetting": {\
     "frequencyInHours": 16,\
+    "frequencyType": "sixteenHours",\
     "userRestoreEnabled": true\
   },\
   "localAdminEnabled": false,\

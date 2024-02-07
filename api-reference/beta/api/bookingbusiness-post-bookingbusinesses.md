@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses
+POST /solutions/bookingbusinesses
 
 ```
 ## Request headers
@@ -53,7 +53,7 @@ The following example shows a request.
   "name": "create_bookingbusiness_from_bookingbusinesses"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses
 Content-type: application/json
 
 {
@@ -120,7 +120,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses/$entity",
     "id":"fourthcoffee@contoso.onmicrosoft.com",
     "displayName":"Fourth Coffee",
     "businessType":"",
