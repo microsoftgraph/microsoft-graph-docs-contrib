@@ -104,7 +104,7 @@ And then add the following to your template:
 <mgt-person person-query="me" view="twolines"></mgt-person>
 ```
 
-> **Note:** The register component functions should be invoked close to their use in sub components, this ensures that in larger application where code splitting and tree shaking are used during bundling the weight of those component can be deferred until necessary
+> **Note:** The register component functions should be invoked close to their use in subcomponents. This ensures that in larger applications where code splitting and tree shaking are used during bundling, the weight of those components can be deferred until necessary.
 
 ## Customizing components with Angular
 
