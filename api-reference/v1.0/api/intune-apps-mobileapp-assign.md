@@ -61,7 +61,7 @@ If successful, this action returns a `204 No Content` response code.
 Here is an example of the request.
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_apps_mobileapp_assign_assign_action" }-->
+<!-- { "blockType": "ignored" , "name" : "intune_apps_mobileapp_assign_assign_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assign
 Content-type: application/json
