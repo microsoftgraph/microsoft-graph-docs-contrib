@@ -15,12 +15,6 @@ The result of a Cloud PC Azure network connection health check.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run the health checks of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
-
 ## Properties
 
 |Property|Type|Description|
