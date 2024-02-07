@@ -64,7 +64,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_books_managedebook_assign_assign_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assign
-
 Content-type: application/json
 Content-length: 312
 
