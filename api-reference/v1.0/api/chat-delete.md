@@ -14,8 +14,8 @@ Soft-delete a [chat](../resources/chat.md). When invoked with delegated permissi
 
 >**Note:** 
 <br>This delete operation is not supported for non-admin users.
-<br>Federated chat – Only tenant admins for the user who initiated the chat will be able to delete the chat.  For example, if a user from Tenant A creates a thread and then adds a user from Tenant B, only the admin from Tenant A will be able to delete the thread. The admin from Tenant B will not be able to delete the thread.
-<br>This API is only for deleting 1:1 chat, meeting chat and group chat threads.  It does not support deleting channel chat threads.
+<br>Federated chat – Only tenant admins for the user who initiated the chat will be able to delete the chat.  For example, if a user from tenant A creates a thread and then adds a user from tenant B, only the admin from tenant A will be able to delete the thread. The admin from tenant B will not be able to delete the thread.
+<br>This API is only for deleting 1:1 chats, meeting chats, and group chat threads.  It does not support deleting channel chat threads.
 <br>Once threads are deleted, tenant admins will have 7 days to restore threads. Threads that have been deleted for over 7 days may not be able to be restored.
 <br>Supported rate: one delete request per second per tenant 
 

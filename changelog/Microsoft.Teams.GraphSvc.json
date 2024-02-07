@@ -25,7 +25,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deletedChat",
           "ChangeType": "Addition",
-          "Description": "Added the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-v1.0) resource",
+          "Description": "Added the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-v1.0) resource and its methods",
           "Target": "deletedChat"
         },
         {
