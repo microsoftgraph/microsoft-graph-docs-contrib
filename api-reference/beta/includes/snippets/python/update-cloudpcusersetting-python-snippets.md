@@ -14,6 +14,7 @@ request_body = CloudPcUserSetting(
 	self_service_enabled = True,
 	restore_point_setting = CloudPcRestorePointSetting(
 		frequency_in_hours = 16,
+		frequency_type = CloudPcRestorePointFrequencyType.SixteenHours,
 		user_restore_enabled = True,
 	),
 	local_admin_enabled = False,
