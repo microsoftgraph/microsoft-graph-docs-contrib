@@ -47,11 +47,11 @@ PATCH /groups/(uniqueName='uniqueName')
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
-|Prefer| `create-if-missing`. Required for upsert behavior, otherwise PATCH is treated as a regular update.|
+| Name          | Description  |
+|:--------------|:---|
+| Authorization | Bearer {token}. Required.|
+| Content-Type  | application/json. Required.|
+| Prefer        | `create-if-missing`. Required for upsert behavior, otherwise the request is treated as an update operation. |
 
 ## Request body
 
@@ -94,9 +94,9 @@ If successful:
 
 ## Examples
 
-### Example 1: Create a Microsoft 365 group, if it doesn't already exist
+### Example 1: Create a Microsoft 365 group if it doesn't exist
 
-The following example creates a Microsoft 365 group because the specified group does not exist. Because the owners have not been specified, the calling user is automatically added as the owner of the group.
+The following example creates a Microsoft 365 group because a group with the specified **uniqueName** value does not exist. Because the owners have not been specified, the calling user is automatically added as the owner of the group.
 
 #### Request
 
@@ -176,9 +176,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create a security group with an owner and members, if it doesn't already exist
+### Example 2: Create a security group with an owner and members if it doesn't exist
 
-The following example creates a security group with an owner and members specified, because the specified group does not exist. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) API or JSON batching.
+The following example creates a security group with an owner and members specified because a group with the specified **uniqueName** value does not exist. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add multiple additional members by using  [add member](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) API or JSON batching.
 
 #### Request
 

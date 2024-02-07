@@ -18,8 +18,6 @@ Create a new [servicePrincipal](../resources/serviceprincipal.md) object if it d
 > [!IMPORTANT]
 > Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords or secrets for a servicePrincipal.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -42,28 +40,28 @@ PATCH /servicePrincipals(appId='appId')
 ```
 
 ## Request headers
-| Name       | Description|
-|:-----------|:----------|
+| Name          | Description|
+|:--------------|:----------|
 | Authorization | Bearer {token}. Required.  |
-| Content-Type | application/json. Required. |
-|Prefer| `create-if-missing`. Required for upsert behavior, otherwise PATCH is treated as plain update.|
+| Content-Type  | application/json. Required. |
+| Prefer        | `create-if-missing`. Required for upsert behavior, otherwise the request is treated as an update operation. |
 
 ## Request body
 
-In the request body, supply a JSON representation of a [serviceprincipal](../resources/serviceprincipal.md) object.
+In the request body, supply a JSON representation of a [servicePrincipal](../resources/serviceprincipal.md) object.
 
 ## Response
 
 If successful:
 
-- If a servicePrincipal with the **appId** doesn't exist, this method returns a `201 Created` response code and a new [servicePrincipal](../resources/servicePrincipal.md) object in the response body.
-- If a servicePrincipal with the **appId** already exists, this method updates the [servicePrincipal](../resources/servicePrincipal.md) object and returns a `204 No Content` response code.
+- If a servicePrincipal with **appId** doesn't exist, this method returns a `201 Created` response code and a new [servicePrincipal](../resources/servicePrincipal.md) object in the response body.
+- If a servicePrincipal with **appId** already exists, this method updates the [servicePrincipal](../resources/servicePrincipal.md) object and returns a `204 No Content` response code.
 
 ## Examples
 
 ### Example 1: Create a new servicePrincipal if it doesn't exist
 
-The following example creates a servicePrincipal because the specified servicePrincipal does not exist.
+The following example creates a servicePrincipal because a servicePrincipal with the specified **appId** value doesn't exist.
 
 #### Request
 
@@ -79,7 +77,7 @@ Content-type: application/json
 Prefer: create-if-missing
 
 {
-  "displayName": "foo"
+  "displayName": "My app instance"
 }
 ```
 
@@ -90,7 +88,8 @@ The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -106,7 +105,7 @@ Content-type: application/json
     "applicationTemplateId": null,
     "appOwnerOrganizationId": "1bc1c026-2f7b-48a5-98da-afa2fd8bc7bc",
     "appRoleAssignmentRequired": false,
-    "displayName": "foo",
+    "displayName": "My app instance",
     "errorUrl": null,
     "homepage": null,
     "loginUrl": null,
@@ -144,7 +143,7 @@ Content-type: application/json
 
 ### Example 2: Update an existing servicePrincipal
 
-The following example updates the servicePrincipal because the specified servicePrincipal exists.
+The following example updates the servicePrincipal because a servicePrincipal with the specified **appId** value exists.
 
 #### Request
 
@@ -161,7 +160,7 @@ Content-type: application/json
 Prefer: create-if-missing
 
 {
-  "displayName": "foo"
+  "displayName": "My app instance"
 }
 ```
 
