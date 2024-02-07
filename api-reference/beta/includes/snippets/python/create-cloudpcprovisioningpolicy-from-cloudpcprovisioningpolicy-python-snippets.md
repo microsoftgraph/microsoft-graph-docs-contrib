@@ -35,6 +35,9 @@ request_body = CloudPcProvisioningPolicy(
 	windows_settings = CloudPcWindowsSettings(
 		language = "en-US",
 	),
+	windows_setting = CloudPcWindowsSetting(
+		locale = "en-US",
+	),
 	provisioning_type = CloudPcProvisioningType.Dedicated,
 )
 

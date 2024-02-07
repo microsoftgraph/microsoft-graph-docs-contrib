@@ -13,6 +13,7 @@ $requestBody = new QueryPostRequestBody();
 $requestsSearchRequest1 = new SearchRequest();
 $requestsSearchRequest1->setEntityTypes([new EntityType('externalItem'),	]);
 $requestsSearchRequest1->setContentSources(['/external/connections/connectionfriendlyname', 	]);
+$requestsSearchRequest1->setRegion('US');
 $requestsSearchRequest1Query = new SearchQuery();
 $requestsSearchRequest1Query->setQueryString('contoso product');
 $requestsSearchRequest1->setQuery($requestsSearchRequest1Query);

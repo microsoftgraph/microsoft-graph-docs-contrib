@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Directory().DeletedItems().ByDirectoryObjectId("directoryObject-id").Delete(context.Background(), nil)
+manifests, err := graphClient.Reports().Partners().Billing().Manifests().ByManifestId("manifest-id").Get(context.Background(), nil)
 
 
 ```

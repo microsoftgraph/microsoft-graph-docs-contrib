@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses
+GET /solutions/bookingbusinesses
 ```
 
 ## Optional query parameters
@@ -64,7 +64,7 @@ The following example gets the Bookings businesses in a tenant.
   "name": "get_bookingbusinesses"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses
 ```
 
 # [C#](#tab/csharp)
@@ -114,7 +114,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses",
     "value":[
         {
             "id":"Contosolunchdelivery@contoso.onmicrosoft.com",
@@ -141,7 +141,7 @@ Bookings businesses in the tenant.
   "name": "query_bookingbusinesses"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses?query=Adventure
 ```
 
 # [C#](#tab/csharp)
@@ -191,7 +191,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses",
     "value":[
         {
             "id":"AdventureWorksCycles@M365B960066.onmicrosoft.com",
