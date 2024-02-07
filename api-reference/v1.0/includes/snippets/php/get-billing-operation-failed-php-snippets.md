@@ -10,6 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->directory()->deletedItems()->byDirectoryObjectId('directoryObject-id')->delete()->wait();
+$result = $graphServiceClient->reports()->partners()->billing()->operations()->byOperationId('operation-id')->get()->wait();
 
 ```

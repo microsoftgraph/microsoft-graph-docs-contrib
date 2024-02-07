@@ -5,6 +5,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc directory deleted-items delete --directory-object-id {directoryObject-id}
+mgc reports partners billing operations get --operation-id {operation-id}
 
 ```
