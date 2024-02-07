@@ -1,16 +1,16 @@
 ---
-title: "Building SharePoint Framework customizations using Microsoft Graph Toolkit"
-description: "Use the Microsoft Graph Toolkit to develop SharePoint Framework solutions."
+title: "Microsoft Graph Toolkit in SharePoint Framework solutions"
+description: "Use Microsoft Graph Toolkit to develop SharePoint Framework solutions."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
 # Microsoft Graph Toolkit in SharePoint Framework solutions
 
-Use the Microsoft Graph Toolkit in your SharePoint Framework solutions.
+Use Microsoft Graph Toolkit in your SharePoint Framework solutions.
 
 > [!IMPORTANT]
-> The `@microsoft/mgt-spfx` package has been discontinued, use [disambiguation](../customize-components/disambiguation.md) for your SharePoint Framework web parts. 
+> The `@microsoft/mgt-spfx` package has been discontinued. Use [disambiguation](../customize-components/disambiguation.md) for your SharePoint Framework web parts. 
 
 ## Installation
 
@@ -28,7 +28,7 @@ yarn add @microsoft/mgt-element @microsoft/mgt-components @microsoft/mgt-sharepo
 
 ## Usage
 
-When building SharePoint Framework web parts and extensions, reference the Microsoft Graph Toolkit `customElementsHelper`, `Provider` and `SharePointProvider` from the `@microsoft/mgt-element` and `@microsoft/mgt-sharepoint-provider`. If you aren't using React, then you should also import the component registration functions from `@microsoft/mgt-components` packages.
+When building SharePoint Framework web parts and extensions, reference the Microsoft Graph Toolkit `customElementsHelper`, `Provider`, and `SharePointProvider` from the `@microsoft/mgt-element` and `@microsoft/mgt-sharepoint-provider`. If you aren't using React, you should also import the component registration functions from `@microsoft/mgt-components` packages.
 
 ### For non-React based solutions
 
@@ -61,7 +61,7 @@ export default class MgtWebPart extends BaseClientSideWebPart<IMgtWebPartProps> 
 
 ### React
 
-If you're building a web part using React, you can use the `@microsoft/mgt-react` package and skip the manual registration of components. However, ensure that you lazy load your React component from the web part to make use of disambiguation.
+If you're building a web part using React, you can use the `@microsoft/mgt-react` package and skip the manual registration of components. However, make sure that you lazy load your React component from the web part to make use of disambiguation.
 
 ```ts
 // [...] trimmed for brevity
@@ -99,7 +99,7 @@ export default class MgtDemoWebPart extends BaseClientSideWebPart<IMgtDemoWebPar
 }
 ```
 
-Then in the underlying React components the Microsoft Graph Toolkit component can be used directly.
+In the underlying React components, the Microsoft Graph Toolkit component can be used directly.
 
 ```tsx
 import { Person } from '@microsoft/mgt-react';
@@ -119,18 +119,18 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 ```
 
 > [!IMPORTANT]
-> Make sure that your root web part class does not import any Microsoft Graph Toolkit resources from `@microsoft/mgt-react`, these should only be imported inside the lazy loaded React components.
+> Make sure that your root web part class does not import any Microsoft Graph Toolkit resources from `@microsoft/mgt-react`. These should only be imported inside the lazy loaded React components.
 
 ## Configure webpack
 
-In order to build your web part the SharePoint Framework webpack configuration must be updated to correctly handle modern JavaScript with optional chaining and nullish coalescing through additional Babel transforms.
+To build your web part, you must update the SharePoint Framework webpack configuration to correctly handle modern JavaScript with optional chaining and nullish coalescing through additional Babel transforms.
 
 > ![IMPORTANT]
-> If you do not configure webpack to process modern JavaScript then you will be unable to build web parts that use Microsoft Graph Toolkit. 
+> If you don't configure webpack to process modern JavaScript, you won't be able to build web parts that use Microsoft Graph Toolkit. 
 
 ### Install Babel packages
 
-To correctly handle dependencies that emit ES2021 based code a babel loader and some transforms need to be added as dev dependencies to the project
+To correctly handle dependencies that emit ES2021 based code, add a babel loader and some transforms as dev dependencies to the project.
 
 ```bash
 npm i --save-dev babel-loader@8.3.0 @babel/plugin-transform-optional-chaining @babel/plugin-transform-nullish-coalescing-operator @babel/plugin-transform-logical-assignment-operators
@@ -138,7 +138,7 @@ npm i --save-dev babel-loader@8.3.0 @babel/plugin-transform-optional-chaining @b
 
 ### Modify the webpack configuration
 
-SharePoint Framework provides an extensibility model to [modify the webpack configuration](/sharepoint/dev/spfx/toolchain/extending-webpack-in-build-pipeline) used to bundle the web parts. Locate and open `gulpfile.js`. Add the following code above the line containing `build.initialize(require('gulp'));`
+SharePoint Framework provides an extensibility model to [modify the webpack configuration](/sharepoint/dev/spfx/toolchain/extending-webpack-in-build-pipeline) used to bundle the web parts. Locate and open `gulpfile.js`. Add the following code above the line that contains `build.initialize(require('gulp'));`:
 
 ```JavaScript
 const litFolders = ['node_modules/lit/', 'node_modules/@lit/', 'node_modules/lit-html/'];
