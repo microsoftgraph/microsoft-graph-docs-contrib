@@ -80,7 +80,7 @@ Update a single gradingCategory
 
 - [Update single gradingCategory](/graph/api/educationgradingcategory-update): This is used to update a single gradingCategory.
 
-### Example 1: 
+### Example 1: Update a single grading category
 
 ```http
 PATCH /education/classes/{classId}/assignmentSettings/gradingCategories/{gradingCategoryId}
@@ -117,7 +117,7 @@ Content-type: application/json
     "percentageWeight": 30
 }
 ```
-### Example 2: 
+### Example 2: Use a delta payload to create, update and/or delete grading categories
 
 ```http
 PATCH /education/classes/{classId}/assignmentSettings/
@@ -226,7 +226,5 @@ HTTP/1.1 204 No Content
 ## Permissions
 
 The assignments API supports delegated (per user) only. 
-
-## Filtering data
 
 Assignment API endpoints return a large amount of data. You can use the [filter](/graph/query-parameters#filter-parameter) [OData query parameter](/graph/query-parameters) to handle the data as needed. 
