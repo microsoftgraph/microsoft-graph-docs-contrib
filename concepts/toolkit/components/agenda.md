@@ -136,7 +136,7 @@ The following events are fired from the control.
 
 | Event        | When is it emitted                | Custom data                                  | Cancelable | Bubbles |     Works with custom template      |
 | ------------ | --------------------------------- | -------------------------------------------- | :--------: | :-----: | :---------------------------------: |
-| `eventClick` | The user selects or taps an event. | Selected [event](/graph/api/resources/event) |     No     |   No    | Yes, with custom **event** template |
+| `eventClick` | The user selects or taps an event. | The selected [event](/graph/api/resources/event) |     No     |   No    | Yes, with custom **event** template |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
@@ -148,7 +148,7 @@ This component uses the following Microsoft Graph APIs. For each API call, one o
 | -------------               | -------------- | --------------------------------------------------------- |
 | default                     | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite | [/me/calendarview](/graph/api/calendar-list-calendarview) |
 | `group-id` specified        | Group.Read.All, Group.ReadWrite.All | [/groups/{groupId}/calendar/calendarview](/graph/api/group-list-calendarview) |
-| `event-query` specified     | as optionally supplied in the `event-query` | as supplied in the `event-query` |
+| `event-query` specified     | As optionally supplied in the `event-query` | The API that was supplied in the `event-query` |
 
 The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the permission to the end of the string, delimited by `|`.
 
