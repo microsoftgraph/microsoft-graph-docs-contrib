@@ -66,7 +66,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_devices_manageddevice_cleanwindowsdevice_cleanwindowsdevice_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}/cleanWindowsDevice
-
 Content-type: application/json
 Content-length: 28
 

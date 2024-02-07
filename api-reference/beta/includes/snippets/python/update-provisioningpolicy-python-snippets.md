@@ -19,6 +19,9 @@ request_body = CloudPcProvisioningPolicy(
 	windows_settings = CloudPcWindowsSettings(
 		language = "en-US",
 	),
+	windows_setting = CloudPcWindowsSetting(
+		locale = "en-US",
+	),
 )
 
 result = await graph_client.device_management.virtual_endpoint.provisioning_policies.by_cloud_pc_provisioning_policy_id('cloudPcProvisioningPolicy-id').patch(request_body)

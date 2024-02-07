@@ -14,6 +14,7 @@ request_body = QueryPostRequestBody(
 			entity_types = [
 				EntityType.ListItem,
 			],
+			region = "US",
 			query = SearchQuery(
 				query_string = "contoso",
 				query_template = "{searchTerms} CreatedBy:Bob",
