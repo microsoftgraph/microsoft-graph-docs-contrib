@@ -4,14 +4,6 @@
       "ChangeList": [
         {
           "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "windowsSettingType",
-          "ChangeType": "Addition",
-          "Description": "Added the **windowsSettingType** enumeration type.",
-          "Target": "windowsSettingType"
-        },
-        {
-          "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudClipboardItemPayload",
           "ChangeType": "Addition",
@@ -25,14 +17,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [cloudClipboardItem](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItem?view=graph-rest-beta) resource.",
           "Target": "cloudClipboardItem"
-        },
-        {
-          "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "userSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource.",
-          "Target": "userSettings"
         }
       ],
       "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",

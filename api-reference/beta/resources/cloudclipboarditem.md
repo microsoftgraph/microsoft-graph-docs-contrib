@@ -21,7 +21,7 @@ Currently, the feature is supported between Windows devices and [SwiftKey app](h
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get cloudClipboardItem](../api/cloudclipboarditem-get.md)|[cloudClipboardItem](../resources/cloudclipboarditem.md)|Read the properties and relationships of a [cloudClipboardItem](../resources/cloudclipboarditem.md) object.|
-|[Get cloudClipboardItems](../api/cloudclipboarditem-get.md)|Collection of [cloudClipboardItem](../resources/cloudclipboarditem.md)|Read the properties and relationships of a list of [cloudClipboardItem](../resources/cloudclipboarditem.md) objects of a given user.|
+|[List cloudClipboardItems](../api/cloudclipboardroot-list-items.md)|Collection of [cloudClipboardItem](../resources/cloudclipboarditem.md)|Read the properties and relationships of a list of [cloudClipboardItem](../resources/cloudclipboarditem.md) objects of a given user.|
 
 ## Properties
 |Property|Type|Description|
