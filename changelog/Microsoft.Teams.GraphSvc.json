@@ -50,7 +50,7 @@
           "ChangedApiName": "delete",
           "ChangeType": "Addition",
           "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/chat-delete?view=graph-rest-v1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-v1.0) resource.",
-          "Target": "deletedChat"
+          "Target": "chat"
         },
         {
           "Id": "08431a23-87e6-4517-90d8-10f9767f42f5",
