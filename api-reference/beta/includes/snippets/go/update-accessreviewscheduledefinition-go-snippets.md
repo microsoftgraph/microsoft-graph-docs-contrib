@@ -36,7 +36,7 @@ instanceEnumerationScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 instanceEnumerationScope.SetQueryType(&queryType) 
 requestBody.SetInstanceEnumerationScope(instanceEnumerationScope)
-reviewers := []graphmodels.accessReviewReviewerScopeable {
+reviewers := []graphmodels.AccessReviewReviewerScopeable {
 
 }
 requestBody.SetReviewers(reviewers)

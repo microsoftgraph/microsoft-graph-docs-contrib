@@ -92,7 +92,7 @@ For more information about using Microsoft Graph to configure rules, see [Overvi
 [!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
-
+<!--
 ## Permissions and privileges
 
 To call the [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md) and [Create roleEligibilityScheduleRequests](../api/rbacapplication-post-roleeligibilityschedulerequests.md) APIs with admin actions, the calling app must:
@@ -106,9 +106,11 @@ The app must also be assigned the appropriate permissions to retrieve their role
 
 For more information about permissions to call PIM APIs, see the [Microsoft Graph permissions reference: Role management permissions](/graph/permissions-reference#role-management-permissions).
 
+-->
+
 ## Licensing
 
-The tenant where Privileged Identity Management is being used must have enough purchased or trial licenses. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
+The tenant where Privileged Identity Management is being used must have enough purchased or trial licenses. For more information, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
 
 ## See also
 
