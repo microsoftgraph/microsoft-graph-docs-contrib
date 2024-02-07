@@ -28,14 +28,14 @@ Follow the steps to [Set up your SharePoint Framework development environment](/
 
 ## Create your web part project
 
-Follow the directions [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) but when asked what template you would like to use, choose React.
+Follow the directions to [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part). When asked what template you would like to use, choose React.
 
 > [!IMPORTANT]
-> You must choose React when selecting your framework when using `yo @microsoft/sharepoint`
+> You must choose React when selecting your framework when you use `yo @microsoft/sharepoint`.
 
 ## Add the Microsoft Graph Toolkit packages
 
-The Microsoft Graph Toolkit publishes multiple packages that are needed to build a SharePoint Framework web part, installing the `@microsoft/mgt-element`, `@microsoft/mgt-react`, `@microsoft/mgt-sharepoint-provider` and `@microsoft/mgt-spfx-utils` packages install the necessary dependencies.
+The Microsoft Graph Toolkit publishes multiple packages that are needed to build a SharePoint Framework web part. Installing the `@microsoft/mgt-element`, `@microsoft/mgt-react`, `@microsoft/mgt-sharepoint-provider`, and `@microsoft/mgt-spfx-utils` packages installs the necessary dependencies.
 
 ```bash
 npm install @microsoft/mgt-element @microsoft/mgt-react @microsoft/mgt-sharepoint-provider @microsoft/mgt-spfx-utils
@@ -52,7 +52,7 @@ import { Providers } from '@microsoft/mgt-element';
 import { SharePointProvider } from "@microsoft/mgt-sharepoint-provider";
 ```
 
-Next, you need to initialize the provider with the authenticated context inside the `onInit()` method of your web part. In the same file, add the following code right before the `public render(): void {` line:
+Next, initialize the provider with the authenticated context inside the `onInit()` method of your web part. In the same file, add the following code right before the `public render(): void {` line:
 
 ```ts
 protected async onInit() {
@@ -64,16 +64,16 @@ protected async onInit() {
 
 ## Set up disambiguation
 
-To ensure that your web part works if there are multiple web part solutions using Microsoft Graph Toolkit in a single page, you must use disambiguation. For more background on this, read the [main disambiguation](../customize-components/disambiguation.md) article.
+To ensure that your web part works if there are multiple web part solutions using Microsoft Graph Toolkit in a single page, you must use disambiguation. For more information, see the [disambiguation](../customize-components/disambiguation.md).
 
-First update your imports from `@microsoft/mgt-element` and add one for the `lazyLoadComponent` helper.
+First, update your imports from `@microsoft/mgt-element` and add one for the `lazyLoadComponent` helper.
 
 ```ts
 import { Providers, customElementHelper } from "@microsoft/mgt-element";
 import { lazyLoadComponent } from "@microsoft/mgt-spfx-utils";
 ```
 
-Next update the `onInit()` method of the root web part to set up disambiguation. The string used for disambiguation must be unique to your SharePoint Framework solution:
+Next, update the `onInit()` method of the root web part to set up disambiguation. The string used for disambiguation must be unique to your SharePoint Framework solution:
 
 ```ts
 protected async onInit(): Promise<void> {
@@ -87,7 +87,7 @@ protected async onInit(): Promise<void> {
 
 ## Update the import and rendering of the React component
 
-First convert the import of the component to use [`React.lazy`](https://react.dev/reference/react/lazy#reference). Locate the statement `import <WebPartName> from './components/<WebPartName>;` and update it to the following
+First, convert the import of the component to use [`React.lazy`](https://react.dev/reference/react/lazy#reference). Locate the statement `import <WebPartName> from './components/<WebPartName>;` and update it to the following:
 
 ```ts
 const MgtComponent = React.lazy(
@@ -96,7 +96,7 @@ const MgtComponent = React.lazy(
 );
 ```
 
-Then modify the render method to use the `lazyLoadComponent` helper:
+Next, modify the render method to use the `lazyLoadComponent` helper:
 
 ```ts
   public render(): void {
@@ -170,7 +170,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
 
 ## Add components
 
-Add the components to the React component. Locate and open the `src\webparts\<your-project>\components\<your-component>.tsx` file and add the import for the component you wish to use, in this case the `Person` component, and then update the `render()` method to use the Person component. Now your component should look like this:
+Add the components to the React component. Locate and open the `src\webparts\<your-project>\components\<your-component>.tsx` file and add the import for the component you want to use - in this case, the `Person` component - and then update the `render()` method to use the Person component. Now your component should look like this:
 
 ```tsx
 import * as React from 'react';
@@ -201,11 +201,11 @@ export default HelloWorld;
 
 ## Create your web part project
 
-Follow the directions [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
+Follow the directions to [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
 
 ## Add the Microsoft Graph Toolkit packages
 
-The Microsoft Graph Toolkit publishes multiple packages that are needed to build a SharePoint Framework web part. Install the Microsoft Graph Toolkit npm packages using the following command:
+The Microsoft Graph Toolkit publishes multiple packages that are needed to build a SharePoint Framework web part. Install the Microsoft Graph Toolkit npm packages by using the following command:
 
 ```bash
 npm install @microsoft/mgt-element @microsoft/mgt-components @microsoft/mgt-sharepoint-provider
@@ -222,7 +222,7 @@ import { Providers } from '@microsoft/mgt-element';
 import { SharePointProvider } from "@microsoft/mgt-sharepoint-provider";
 ```
 
-Next, you need to initialize the provider with the authenticated context inside the `onInit()` method of your web part. In the same file, add the following code right before the `public render(): void {` line:
+Next, initialize the provider with the authenticated context inside the `onInit()` method of your web part. In the same file, add the following code right before the `public render(): void {` line:
 
 ```ts
 protected async onInit() {
@@ -234,15 +234,15 @@ protected async onInit() {
 
 ## Set up disambiguation
 
-To ensure that your web part works if there are multiple web part solutions using Microsoft Graph Toolkit in a single page, you must use disambiguation. For more background on this, read the [main disambiguation](../customize-components/disambiguation.md) article.
+To ensure that your web part works if there are multiple web part solutions using Microsoft Graph Toolkit in a single page, you must use disambiguation. For more information, see the [disambiguation](../customize-components/disambiguation.md) article.
 
-First update your imports from `@microsoft/mgt-element`
+First, update your imports from `@microsoft/mgt-element`
 
 ```ts
 import { Providers, customElementHelper } from '@microsoft/mgt-element';
 ```
 
-Next update the `onInit()` method to set up disambiguation. The string used for disambiguation must be unique to your SharePoint Framework solution:
+Next, update the `onInit()` method to set up disambiguation. The string used for disambiguation must be unique to your SharePoint Framework solution:
 
 ```ts
 protected async onInit() {
@@ -262,9 +262,9 @@ import { registerMgtPersonComponent } from '@microsoft/mgt-components';
 ```
 
 > [!NOTE]
-> The registration functions use a naming convention of `registerMgt{Name}Component()`, so for the people picker control this function would be `registerMgtPeoplePickerComponent()`.
+> The registration functions use a naming convention of `registerMgt{Name}Component()`. For the people picker control, this function would be `registerMgtPeoplePickerComponent()`.
 
-Then call the register functions after configuring disambiguation in your `onInit()` method:
+Call the register functions after configuring disambiguation in your `onInit()` method:
 
 ```ts
 protected async onInit() {
@@ -304,7 +304,7 @@ Just below that line, add the following line:
 "webApiPermissionRequests":[],
 ```
 
-Determine which Microsoft Graph API permissions you need to depend on the components you're using. Each component's documentation page provides a list of the permissions that component requires. You'll need to add each permission required to `webApiPermissionRequests`. For example, if you're using the Person component and the Agenda component, your `webApiPermissionRequests` might look like:
+Determine which Microsoft Graph API permissions you need to depend on the components you're using. Each component's documentation page provides a list of the permissions that component requires. You'll need to add each required permission to `webApiPermissionRequests`. For example, if you're using the Person component and the Agenda component, your `webApiPermissionRequests` might look like:
 
 ```json
 "webApiPermissionRequests": [
@@ -321,11 +321,11 @@ Determine which Microsoft Graph API permissions you need to depend on the compon
 
 ## Configure webpack
 
-In order to build your web part the SharePoint Framework webpack configuration must be updated to correctly handle modern JavaScript with optional chaining and nullish coalescing through additional Babel transforms.
+In order to build your web part, the SharePoint Framework webpack configuration must be updated to correctly handle modern JavaScript with optional chaining and nullish coalescing through additional Babel transforms.
 
 ### Install Babel packages
 
-To correctly handle dependencies that emit ES2021 based code a babel loader and some transforms need to be added as dev dependencies to the project
+To correctly handle dependencies that emit ES2021 based code, a babel loader and some transforms need to be added as dev dependencies to the project.
 
 ```bash
 npm i --save-dev babel-loader@8.3.0 @babel/plugin-transform-optional-chaining @babel/plugin-transform-nullish-coalescing-operator @babel/plugin-transform-logical-assignment-operators
