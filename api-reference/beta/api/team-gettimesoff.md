@@ -82,7 +82,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.timeoff)"
+  "@odata.type": "Collection(microsoft.graph.timeOff)"
 }
 -->
 ``` http
