@@ -49,7 +49,7 @@ This method supports the `$expand` [OData query parameter](/graph/query-paramete
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -36,7 +36,7 @@ DELETE /users/{user-id | user-principal-name}/teamwork/installedApps/{app-instal
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

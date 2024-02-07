@@ -1,0 +1,117 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License.
+
+# Pipeline for validating Microsoft Graph docs using API Doctor
+
+trigger:
+  branches:
+    include:
+      - live
+      - main
+  paths:
+    include:
+      - api-reference/*
+
+pr:
+  branches:
+    include:
+      - live
+      - main
+  paths:
+    include:
+      - api-reference/*
+
+parameters:
+  - name: useNuGetPackage
+    displayName: "Use API Doctor NuGet Package (If disabled, source code from GitHub will be used)?"
+    type: boolean
+    default: true
+
+  - name: apiDoctorNuGetVersion
+    default: "1.2.2312.152"
+    displayName: "API Doctor NuGet Package Version"
+
+  - name: apiDoctorGitRepoUrl
+    default: "https://github.com/OneDrive/apidoctor.git"
+    displayName: "API Doctor Git Repo URL"
+
+  - name: apiDoctorGitBranch
+    default: "master"
+    displayName: "API Doctor Git branch"
+
+resources:
+  repositories:
+    - repository: 1ESPipelineTemplates
+      type: git
+      name: 1ESPipelineTemplates/1ESPipelineTemplates
+      ref: refs/tags/release
+
+extends:
+  template: v1/1ES.Official.PipelineTemplate.yml@1ESPipelineTemplates
+  parameters:
+    pool:
+      name: Azure-Pipelines-1ESPT-ExDShared
+      image: windows-2022
+      os: windows
+    sdl:
+      credscan:
+        suppressionsFile: $(Build.SourcesDirectory)\.azure-pipelines\.config\CredScanSuppressions.json
+    customBuildTags:
+      - ES365AIMigrationTooling
+
+    stages:
+      - stage: ValidateDocs
+        displayName: "Validate docs"
+        jobs:
+          - job: RunAPIDoctorScript
+            displayName: "Run API Doctor script"
+            variables:
+              USE_NUGET_PACKAGE: ${{ parameters.useNuGetPackage }}
+              API_DOCTOR_NUGET_VERSION: ${{ parameters.apiDoctorNuGetVersion }}
+              API_DOCTOR_GIT_REPO_URL: ${{ parameters.apiDoctorGitRepoUrl }}
+              API_DOCTOR_GIT_BRANCH: ${{ parameters.apiDoctorGitBranch }}
+            steps:
+              - pwsh: |
+                  Write-Host "Executing API Doctor script with the following parameters:"  
+                  if ($env:USE_NUGET_PACKAGE -eq $true) {
+                    if ([string]::IsNullOrWhiteSpace($env:USE_NUGET_PACKAGE)) {
+                      Write-Host "API Doctor NuGet package version has not been set. Aborting..."
+                      exit 1
+                    }
+                    Write-Host " - API Doctor NuGet Version: $($env:API_DOCTOR_NUGET_VERSION)"
+                  }
+                  else {
+                    if ([string]::IsNullOrWhiteSpace($env:API_DOCTOR_GIT_REPO_URL)) {
+                      Write-Host "API Doctor Git Repo URL has not been set. Aborting..."
+                      exit 1
+                    }              
+                    Write-Host " - API Doctor Git Repo URL: $($env:API_DOCTOR_GIT_REPO_URL)"
+                    Write-Host " - API Doctor Git Branch: $($env:API_DOCTOR_GIT_BRANCH)"
+                  }
+                displayName: "Evaluate pipeline parameters"
+
+              - checkout: self
+                displayName: "Checkout Microsoft Graph docs"
+                clean: true
+                fetchDepth: 1
+
+              - task: UseDotNet@2
+                displayName: "Use .NET Core SDK 6.x"
+                inputs:
+                  version: 6.x
+
+              - task: PowerShell@2
+                displayName: "Validate v1.0 docs"
+                env:
+                  DOCS_SUB_PATH: \api-reference\v1.0
+                inputs:
+                  filePath: Test-Docs.ps1
+                  arguments: -cleanUp
+
+              - task: PowerShell@2
+                displayName: "Validate beta docs"
+                env:
+                  DOCS_SUB_PATH: \api-reference\beta
+                inputs:
+                  filePath: Test-Docs.ps1
+                  arguments: -cleanUp
