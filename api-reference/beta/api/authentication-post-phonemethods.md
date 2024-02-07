@@ -20,7 +20,7 @@ Adding a phone number makes it available for use in both Azure multifactor authe
 
 Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system attempts to register the number for use in that system.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -45,7 +45,7 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

@@ -26,9 +26,6 @@ To enable the Dynamics 365 Business Central API, you must ensure that the **Envi
 :::image type="content" source="dynamics-tenant-admin-environment.png" alt-text="Business Central Admin Center setup":::
 
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 The Dynamics 365 Business Central API can open up new ways for you to engage with users. To learn more, see the following:
 

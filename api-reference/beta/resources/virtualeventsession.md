@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a session in a [virtualEvent](../resources/virtualevent.md)
+Represents a session in a [virtualEvent](../resources/virtualevent.md).
 
 Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
@@ -21,12 +21,12 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List virtualEventSessions](../api/virtualeventsession-list.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
+|[List sessions](../api/virtualevent-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
 |[Get virtualEventSession](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
 
 ## Properties
 
-Currently, only the following properties are filled out on a **virtualEventSession** object when it's returned. All other properties on the returned **virtualEventSession** object are null.
+Currently, only the following properties are filled out on a virtualEventSession object when it's returned. All other properties on the returned virtualEventSession object are null.
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |

@@ -90,7 +90,7 @@ The following APIs support the `model=B` parameter.
 
 | APIs or [change notification](/graph/api/subscription-post-subscriptions) `resources` | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing) | Notes |
 |:---------------------------------------------------------------|:----------------|:-------|:------|
-| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMessges</li><li>/teams/getAllMessages</li><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li></ul> | None | $0.00075 per message |  |
+| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMessages</li><li>/teams/getAllMessages</li><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li></ul> | None | $0.00075 per message |  |
 | [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMembers</li><li>/teams/getAllMembers</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMembers</li></ul> | None  | $0.00075 per notification | |
 | [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/appCatalogs/teamsApps/{app-id}/installedToChats</li></ul> | None | $0.00075 per message |  |
 | APIs: <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /users/{user-id}/chats/getAllRetainedMessages](/graph/api/chat-getallretainedmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li></ul> | None | $0.00075 per message | Requests that return an empty list are charged as one message. |
@@ -133,14 +133,12 @@ These APIs support an [evaluation mode](#evaluation-mode-default-requirements) t
 | Not configured | Evaluation mode capacity is available for download. Beyond that, the API fails with error code `402` (Payment Required). |
 | Configured | Unlimited meeting content is available for download and priced based on per minute of content, as described in the following table. Engineering RPS limits still apply. |
 
-The following table lists the price for use for Teams meeting APIs.
+The following table lists the prices for using Teams meeting APIs, applicable to both beta and v1.0 endpoints.
 
 | APIs | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing) | Notes |
 |:---------------------------------------------------------------|:----------------|:-------|:------|
-| Teams meeting transcript APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li></ul>  | None |  $0.024* per minute | The duration is rounded down to nearest minute. |
-| Teams meeting recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  | None | $0.03* per minute | The duration is rounded down to nearest minute. |
-
-*The price for use is applicable starting October 3, 2023. The price for use is subject to change in the future.
+| Teams meeting recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  | None | $0.003 per minute | The duration is rounded down to the nearest minute. |
+| Teams meeting transcript APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li></ul>  | None |  $0.0022 per minute | The duration is rounded down to the nearest minute. |
 
 
 ## Payment and billing

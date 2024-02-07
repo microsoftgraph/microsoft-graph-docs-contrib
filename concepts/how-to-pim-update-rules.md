@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "governance"
 ms.date: 09/27/2023
+#Customer intent: As a developer, I want to update settings and rules in Privileged Identity Management (PIM) using Microsoft Graph APIs, so that I can manage the activation, approval, and expiration settings for different roles and groups in PIM.
 ---
 
 # Update rules in PIM using Microsoft Graph
@@ -469,7 +470,7 @@ Content-Type: application/json
 
 ---
 
-## See also
+## Related content
 
 + [Overview of role management through the privileged identity management (PIM) API](/graph/api/resources/privilegedidentitymanagementv3-overview)
 + [Overview of rules for Microsoft Entra roles in privileged identity management (PIM) APIs in Microsoft Graph](identity-governance-pim-rules-overview.md)

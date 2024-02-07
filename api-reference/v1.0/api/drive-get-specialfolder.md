@@ -54,6 +54,12 @@ The follow special folder names are available in OneDrive and OneDrive for Busin
 
 This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
 ## Response
 
 This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.

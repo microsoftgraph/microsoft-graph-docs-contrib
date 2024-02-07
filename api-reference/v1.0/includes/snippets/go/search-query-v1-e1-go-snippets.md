@@ -29,6 +29,8 @@ contentSources := []string {
 	"/external/connections/connectionfriendlyname",
 }
 searchRequest.SetContentSources(contentSources)
+region := "US"
+searchRequest.SetRegion(&region) 
 query := graphmodels.NewSearchQuery()
 queryString := "contoso product"
 query.SetQueryString(&queryString) 
