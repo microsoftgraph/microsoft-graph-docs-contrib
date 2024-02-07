@@ -64,7 +64,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_onboarding_devicemanagementexchangeconnector_sync_sync_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
-
 Content-type: application/json
 Content-length: 31
 

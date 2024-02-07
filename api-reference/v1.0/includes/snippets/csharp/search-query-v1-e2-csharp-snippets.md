@@ -20,6 +20,7 @@ var requestBody = new QueryPostRequestBody
 			{
 				EntityType.ListItem,
 			},
+			Region = "US",
 			Query = new SearchQuery
 			{
 				QueryString = "contoso",

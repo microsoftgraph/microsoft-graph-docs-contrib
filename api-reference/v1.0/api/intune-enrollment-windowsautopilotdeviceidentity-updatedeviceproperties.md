@@ -67,7 +67,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_enrollment_windowsautopilotdeviceidentity_updatedeviceproperties_updatedeviceproperties_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/updateDeviceProperties
-
 Content-type: application/json
 Content-length: 187
 
