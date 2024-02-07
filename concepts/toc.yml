@@ -284,7 +284,7 @@ items:
               href: toolkit/customize-components/disambiguation.md
         - name: Permissions
           href: toolkit/permissions.md
-        - name: Upgrading to v3
+        - name: Upgrade to the latest version
           href: toolkit/upgrade.md
   - name: Services and features
     expanded: true
