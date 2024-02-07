@@ -1,13 +1,13 @@
 ---
-title: "cloudPcOnPremisesConnectionStatusDetails resource type"
+title: "cloudPcOnPremisesConnectionStatusDetail resource type"
 description: "The status details of a Cloud PC Azure network connection."
-author: "AshleyYangSZ"
+author: "wcchen101"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcOnPremisesConnectionStatusDetails resource type
+# cloudPcOnPremisesConnectionStatusDetail resource type
 
 Namespace: microsoft.graph
 

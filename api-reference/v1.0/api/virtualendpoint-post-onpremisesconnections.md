@@ -75,7 +75,7 @@ The following is an example of a request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections
+POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/onPremisesConnections
 Content-Type: application/json
 
 {

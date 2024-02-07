@@ -3869,7 +3869,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "onPremisesConnections",
                 "ChangeType": "Addition",
-                "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
                 "Target": "virtualEndpoint"
             },
             {
@@ -3877,7 +3877,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "onPremisesConnections",
                 "ChangeType": "Addition",
-                "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
                 "Target": "virtualEndpoint"
             },
             {
@@ -3909,7 +3909,31 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "runHealthChecks",
                 "ChangeType": "Addition",
-                "Description": "Added the [runHealthChecks](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta) method to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+                "Description": "Added the [runHealthChecks](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-1.0) method to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-1.0) resource.",
+                "Target": "cloudPcOnPremisesConnection"
+            },
+            {
+                "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "cloudPcOnPremisesConnectionHealthCheckErrorType",
+                "ChangeType": "Addition",
+                "Description": "Added **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration type.",
+                "Target": "cloudPcOnPremisesConnection"
+            },
+            {
+                "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "cloudPcOnPremisesConnectionStatus",
+                "ChangeType": "Addition",
+                "Description": "Added **cloudPcOnPremisesConnectionStatus** enumeration type.",
+                "Target": "cloudPcOnPremisesConnection"
+            },
+            {
+                "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "cloudPcOnPremisesConnectionType",
+                "ChangeType": "Addition",
+                "Description": "Added **cloudPcOnPremisesConnectionType** enumeration type.",
                 "Target": "cloudPcOnPremisesConnection"
             }
         ],
