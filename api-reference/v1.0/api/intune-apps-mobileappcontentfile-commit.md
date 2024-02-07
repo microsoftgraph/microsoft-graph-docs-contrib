@@ -58,10 +58,9 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "ignored" , "name" : "intune_apps_mobileappcontentfile_commit_commit_action" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_mobileappcontentfile_commit_commit_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/commit
-
 Content-type: application/json
 Content-length: 399
 
