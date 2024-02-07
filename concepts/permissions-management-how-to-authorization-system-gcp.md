@@ -1118,6 +1118,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/pe
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges/{id}
 ```
 
-## See also
+## Related content
 
 + [Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs (preview)](/graph/api/resources/permissions-management-api-overview?view=graph-rest-beta&preserve-view=true)

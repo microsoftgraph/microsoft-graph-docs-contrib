@@ -49,7 +49,7 @@ This function *requires* the `$filter` (`eq`) OData query parameter to return 
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

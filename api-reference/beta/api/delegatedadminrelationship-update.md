@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "delegatedadminrelationship_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/delegatedadminrelationship-update-permissions.md)]
 
+[!INCLUDE [rbac-gdap-apis-customer-only](../includes/rbac-for-apis/rbac-gdap-apis-customer-only.md)]
+
 ## HTTP request
 
 <!-- {
@@ -35,7 +37,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminRelationship** to be updated. Retrieve the ETag value from a LIST or GET operation. Required.|
 |Content-Type|application/json. Required.|
 

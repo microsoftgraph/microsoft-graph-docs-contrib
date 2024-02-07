@@ -33,7 +33,7 @@ PATCH /planner/plans/{plan-id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | If-Match  | Last known ETag value for the plannerPlan to be updated. Required.|
 
 ## Request body
