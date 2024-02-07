@@ -66,7 +66,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_devices_manageddevice_deleteuserfromsharedappledevice_deleteuserfromsharedappledevice_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}/deleteUserFromSharedAppleDevice
-
 Content-type: application/json
 Content-length: 56
 

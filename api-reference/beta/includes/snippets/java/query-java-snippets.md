@@ -14,6 +14,7 @@ requests.entityTypes = entityTypesList;
 LinkedList<String> contentSourcesList = new LinkedList<String>();
 contentSourcesList.add("/external/connections/connectionfriendlyname");
 requests.contentSources = contentSourcesList;
+requests.region = "US";
 SearchQuery query = new SearchQuery();
 query.queryString = "contoso product";
 requests.query = query;
