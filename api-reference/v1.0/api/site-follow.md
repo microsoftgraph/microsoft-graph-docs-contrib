@@ -27,6 +27,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /users/{user-id}/followedSites/add
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
 ## Request body
 
 In the request body, supply an array of JSON objects with the ID parameter mentioned in the table below. 

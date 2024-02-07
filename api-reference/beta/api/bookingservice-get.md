@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/services/{id}
+GET /solutions/bookingbusinesses/{id}/services/{id}
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ Here's an example of the request.
   "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "57da6774-a087-4d69-b0e6-6fb82c339976"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 ```
 
 # [C#](#tab/csharp)
@@ -109,7 +109,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/services/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/services/$entity",
     "id": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "displayName": "Bento",
     "defaultDuration": "PT30M",

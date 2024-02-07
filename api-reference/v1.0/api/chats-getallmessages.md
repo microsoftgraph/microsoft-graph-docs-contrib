@@ -15,7 +15,7 @@ Get all [messages](../resources/chatmessage.md) from all [chats](../resources/ch
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -52,7 +52,7 @@ GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 202
 ## Request headers
 | Header        | Value                     |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

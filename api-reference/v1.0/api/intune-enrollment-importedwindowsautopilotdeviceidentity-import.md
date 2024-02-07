@@ -38,7 +38,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -64,7 +64,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_enrollment_importedwindowsautopilotdeviceidentity_import_import_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/import
-
 Content-type: application/json
 Content-length: 808
 
