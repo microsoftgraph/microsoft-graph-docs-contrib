@@ -71,7 +71,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_reporting_devicemanagementreports_gethistoricalreport_gethistoricalreport_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getHistoricalReport
-
 Content-type: application/json
 Content-length: 242
 

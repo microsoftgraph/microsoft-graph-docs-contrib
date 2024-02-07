@@ -253,10 +253,10 @@ items:
             - name: Picker
               href: toolkit/components/picker.md
             - name: Planner tasks
-              href: toolkit/components/tasks.md
-            - name: Search box (preview)
+              href: toolkit/components/planner.md
+            - name: Search box
               href: toolkit/components/search-box.md
-            - name: Search results (preview)
+            - name: Search results
               href: toolkit/components/search-results.md
             - name: Taxonomy picker
               href: toolkit/components/taxonomy-picker.md
@@ -264,7 +264,7 @@ items:
               href: toolkit/components/teams-channel-picker.md
             - name: Theme toggle
               href: toolkit/components/theme-toggle.md
-            - name: To-do tasks
+            - name: To Do tasks
               href: toolkit/components/todo.md
         - name: Customize components
           items:
@@ -282,7 +282,9 @@ items:
               href: toolkit/customize-components/templates.md
             - name: Disambiguation of components
               href: toolkit/customize-components/disambiguation.md
-        - name: Upgrading to v3
+        - name: Permissions
+          href: toolkit/permissions.md
+        - name: Upgrade to the latest version
           href: toolkit/upgrade.md
   - name: Services and features
     expanded: true
@@ -788,7 +790,7 @@ items:
             displayName: report, reports
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
-          - name: Partner billing (preview)
+          - name: Partner billing
             href: partners-billing-concept-overview.md
       - name: Search
         items:
