@@ -7,13 +7,15 @@ author: sebastienlevert
 
 # Upgrade to the latest version of Microsoft Graph Toolkit
 
-This article provides a summary of the breaking changes introduced in Microsoft Graph Toolkit per version and how these changes might affect your solution.
+This article provides a summary of the breaking changes introduced in Microsoft Graph Toolkit versions and how these changes might affect your solution.
 
 ## Microsoft Graph Toolkit v4.0
 
 ### Dropping support for ES5 and `mgt-loader`
 
-Microsoft Graph Toolkit v4.0 drops support for ES5 and using `mgt-loader` as the way to import the Toolkit in your application via CDN. If you're using `mgt-loader`, you must change your code to import the modules.
+Microsoft Graph Toolkit v4.0 drops support for ES5 and using `mgt-loader` as the way to import the toolkit in your application via CDN. If you're using `mgt-loader`, you must change your code to import the modules.
+
+The following code:
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
@@ -21,7 +23,7 @@ Microsoft Graph Toolkit v4.0 drops support for ES5 and using `mgt-loader` as the
 <mgt-login></mgt-login>
 ```
 
-becomes
+Becomes the following:
 
 ```html
 <script type="module">
@@ -35,11 +37,11 @@ becomes
 
 ### Removing the `mgt-spfx` package for building SharePoint Framework web parts
 
-Microsoft Graph Toolkit v4.0 removes the `@microsoft/mgt-spfx` package for building SharePoint Framework web parts. To ensure a great experience for our SharePoint developers, we improved our `@microsoft/mgt-spfx-utils` package and our [disambiguation](./customize-components/disambiguation.md) capabilities to offer seemless integration between SPFx and the Toolkit. This breaking change paves the way for a better developer experience and more features in the future.
+Microsoft Graph Toolkit v4.0 removes the `@microsoft/mgt-spfx` package for building SharePoint Framework web parts. To ensure a great experience for our SharePoint developers, we improved our `@microsoft/mgt-spfx-utils` package and our [disambiguation](./customize-components/disambiguation.md) capabilities to offer seamless integration between SPFx and the toolkit. This breaking change paves the way for a better developer experience and more features in the future.
 
 ### Enums are now string unions
 
-Microsoft Graph Toolkit v4.0 changes the way enums are defined. Instead of using `enum` to define the values, we now use string unions. This change allows us to provide better typings and a better and uniform developer experience, especially for React developers. This change affects `AvatarType`, `ViewType`, `UserType`, `PersonType`, `GroupType`, `ResponseType` and `PersonCardInteraction`. For example, instead of using `ViewType` like this:
+Microsoft Graph Toolkit v4.0 changes the way enums are defined. Instead of using `enum` to define the values, the toolkit now uses string unions. This change provides better typings and a better and uniform developer experience, especially for React developers. This change affects `AvatarType`, `ViewType`, `UserType`, `PersonType`, `GroupType`, `ResponseType`, and `PersonCardInteraction`. For example, instead of using `ViewType` like this:
 
 ```ts
 <Person personQuery="me" view={ViewType.twolines}></Person>
@@ -59,19 +61,19 @@ To better align with the Microsoft 365 naming, `mgt-tasks` was renamed to `mgt-p
 
 We took the opportunity to simplify and adhere to a least privileged approach for the permissions required by `mgt-person` and `mgt-planner`.
 
-* In applications using `mgt-person`, users could need to consent to new permissions scopes. Please refer to our entire [permissions table](./components/person.md#microsoft-graph-permissions) for the component.
+* In applications using `mgt-person`, users might need to consent to new permissions scopes; for details, see the [permissions table](./components/person.md#microsoft-graph-permissions) for the component.
 * Minimal permission for `mgt-planner` changed from `Group.ReadWrite.All` to `Tasks.ReadWrite` for write operations and from `Group.Read.All` to `Tasks.Read` for read operations.
 
 ### `prepScopes()` is now aware of the consented permission scopes
 
-The `prepScopes()` function now accepts an array of scopes that is checked against the set of currently consented permission scopes for the current user. If any of the supplied scopes are found, then no extra scopes are requested. If no match is found, then the user is prompted to consent to the first scope in the supplied array of scopes. This helps with the user experience and allows developers to use a least privileged approach.
+The `prepScopes()` function now accepts an array of scopes that is checked against the set of currently consented permission scopes for the current user. If any of the supplied scopes are found, no extra scopes are requested. If no match is found, the user is prompted to consent to the first scope in the supplied array of scopes. This helps with the user experience and allows developers to use a least privileged approach.
 
 ### Registering components is now required
 
 Developers must explicitly call the register function for all web components used in their application when using components from` @microsoft/mgt-components`. Importing from the root of `@microsoft/mgt-components` no longer has an automatic registration side effect. For example, instead of using `import { Person } from '@microsoft/mgt-components';` you must use `import { Person } from '@microsoft/mgt-components;` and call `registerMgtPersonComponent()`.
 
 > [!NOTE]
-> Components from `@microsoft/mgt-react` will automatically register the underlying web component when they are used for the first time. In cases where the React components are not used, components won't automatically be registered in the browser. This leads to a breaking change when these applications emit raw web component markup rather than using the wrapper components. Make sure you use the `registerMgt{Name}Component()` functions.
+> Components from `@microsoft/mgt-react` automatically register the underlying web component when they are used for the first time. In cases where the React components aren't used, components won't automatically be registered in the browser. This leads to a breaking change when these applications emit raw web component markup rather than using the wrapper components. Make sure you use the `registerMgt{Name}Component()` functions.
 
 ### `MgtPersonCard` no longer has a static config property
 
@@ -79,7 +81,7 @@ This config moved to the `MgtPersonCardConfig` class to allow developers to impo
 
 ### `mgt-people-picker` doesn't show presence by default
 
-The default behavior of `mgt-people-picker` changes so that the user presence isn't shown unless the `show-presence` attribute or the `showPresence` property are set. This change helps improve performance for applications that don't need to show presence and to embrace a least privileged approach.
+The default behavior of `mgt-people-picker` changes so that the user presence isn't shown unless the `show-presence` attribute or the `showPresence` property is set. This change helps improve performance for applications that don't need to show presence and to embrace a least privileged approach.
 
 ## Microsoft Graph Toolkit v3.0
 
