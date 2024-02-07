@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 Community community = new Community();
 community.displayName = "Financial Advice for Software Engineers";
-community.description = "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.";
+community.description = "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for their clients.";
 community.privacy = CommunityPrivacy.PUBLIC;
 
 graphClient.employeeExperience().communities()

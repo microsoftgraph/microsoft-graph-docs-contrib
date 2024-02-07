@@ -38,7 +38,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -64,7 +64,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_onboarding_deviceenrollmentconfiguration_setpriority_setpriority_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/setPriority
-
 Content-type: application/json
 Content-length: 21
 

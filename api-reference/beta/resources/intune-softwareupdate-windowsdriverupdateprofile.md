@@ -25,8 +25,8 @@ Windows Driver Update Profile
 |[Create windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-create.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|Create a new [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) object.|
 |[Delete windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-delete.md)|None|Deletes a [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md).|
 |[Update windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-update.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|Update the properties of a [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) object.|
-|[assign action](../api/intune-softwareupdate-windowsdriverupdateprofile-assign.md)|None|Not yet documented|
-|[executeAction action](../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md)|[bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md)|Not yet documented|
+|[assign action](../api/intune-softwareupdate-windowsdriverupdateprofile-assign.md)|None||
+|[executeAction action](../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md)|[bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md)||
 |[syncInventory action](../api/intune-softwareupdate-windowsdriverupdateprofile-syncinventory.md)|None|Sync the driver inventory of a WindowsDriverUpdateProfile.|
 
 ## Properties

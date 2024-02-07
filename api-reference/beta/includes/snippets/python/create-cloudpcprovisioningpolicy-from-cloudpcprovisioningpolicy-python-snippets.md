@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -34,6 +34,9 @@ request_body = CloudPcProvisioningPolicy(
 	on_premises_connection_id = "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
 	windows_settings = CloudPcWindowsSettings(
 		language = "en-US",
+	),
+	windows_setting = CloudPcWindowsSetting(
+		locale = "en-US",
 	),
 	provisioning_type = CloudPcProvisioningType.Dedicated,
 )

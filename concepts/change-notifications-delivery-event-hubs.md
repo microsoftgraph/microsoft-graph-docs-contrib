@@ -284,11 +284,11 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 ---
 
-## Next steps
+## Related content
 
-See the following Azure Event Hubs quick starts:
-
-- [.NET Core](/azure/event-hubs/get-started-dotnet-standard-send-v2)
-- [Java](/azure/event-hubs/event-hubs-java-get-started-send)
-- [Python](/azure/event-hubs/get-started-python-send-v2)
-- [JavaScript](/azure/event-hubs/get-started-node-send-v2)
+- [Change notifications overview](/graph/change-notifications-overview)
+- See the following Azure Event Hubs quick starts:
+    - [.NET Core](/azure/event-hubs/get-started-dotnet-standard-send-v2)
+    - [Java](/azure/event-hubs/event-hubs-java-get-started-send)
+    - [Python](/azure/event-hubs/get-started-python-send-v2)
+    - [JavaScript](/azure/event-hubs/get-started-node-send-v2)

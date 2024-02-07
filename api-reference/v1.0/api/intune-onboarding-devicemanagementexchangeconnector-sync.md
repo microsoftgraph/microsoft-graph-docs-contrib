@@ -38,7 +38,7 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -64,7 +64,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_onboarding_devicemanagementexchangeconnector_sync_sync_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
-
 Content-type: application/json
 Content-length: 31
 

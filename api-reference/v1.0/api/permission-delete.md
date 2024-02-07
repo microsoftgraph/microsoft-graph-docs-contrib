@@ -37,11 +37,13 @@ DELETE /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name          | Type   | Description                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+| if-match      | String. If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 ## Response
 

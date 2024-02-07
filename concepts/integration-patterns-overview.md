@@ -38,7 +38,7 @@ Use the following decision tree to choose an integration option based on your ar
 - Application integration requirements - Use Microsoft Graph APIs.
 - Data integration scenarios:
   - Outbound flow of Microsoft 365 data:
-    - For high data latency and high data volume - Use Data connect.
+    - For high data latency and high data volume - Use Data Connect.
     - For high data latency and low data volume - Use Microsoft Graph APIs or notifications
     - For low data latency and high data volume -Use Microsoft Graph notifications via Event Hub.
     - For low data latency and low data volume - Use Microsoft Graph notifications via webhooks.
