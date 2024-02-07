@@ -20,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "tenantrelationship_post_delegatedadminrelationships" } -->
 [!INCLUDE [permissions-table](../includes/permissions/tenantrelationship-post-delegatedadminrelationships-permissions.md)]
 
+[!INCLUDE [rbac-gdap-apis-customer-only](../includes/rbac-for-apis/rbac-gdap-apis-customer-only.md)]
+
 ## HTTP request
 
 <!-- {
@@ -33,7 +35,7 @@ POST /tenantRelationships/delegatedAdminRelationships
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

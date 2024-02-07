@@ -38,7 +38,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,7 +65,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_enrollment_windowsautopilotdeviceidentity_assignusertodevice_assignusertodevice_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/assignUserToDevice
-
 Content-type: application/json
 Content-length: 113
 

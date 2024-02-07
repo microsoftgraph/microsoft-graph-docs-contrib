@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/publish
+POST /solutions/bookingbusinesses/{id}/publish
 ```
 ## Request headers
 | Name       | Description|
@@ -52,7 +52,7 @@ The following example shows a request.
   "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/publish
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/publish
 ```
 
 # [C#](#tab/csharp)

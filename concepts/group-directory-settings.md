@@ -6,6 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: jodah
 ms.localizationpriority: high
 ms.date: 06/08/2022
+#Customer intent: As a developer, I want to learn how to use Microsoft Graph to configure tenant-wide and object-specific settings for Microsoft 365 groups, security groups, consent policies, password rules, and prohibited sames.
 ---
 
 # Overview of group settings
@@ -66,7 +67,7 @@ Only one setting is available in this collection.
 | AllowToAddGuests | Boolean | Indicates whether guest users can be added to all or specific Microsoft 365 groups. The default setting is `true`. This setting can be overwritten when: <br/><li>**EnableMIPLabels** is `true` and a guest policy is applied when a sensitivity label is assigned to a group </ul><li>**AllowToAddGuests** is `false` at the tenant-level, the group-level setting is overwritten </ul> |
 
 
-## Next steps
+## Related content
 
 + [groupSettingTemplate resource type](/graph/api/resources/groupsettingtemplate?view=graph-rest-1.0&preserve-view=true)
 + [groupSettings resource type](/graph/api/resources/groupsetting?view=graph-rest-1.0&preserve-view=true)

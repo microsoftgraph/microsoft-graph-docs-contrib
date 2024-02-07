@@ -13,7 +13,7 @@ PlannerPlanContainer container = new PlannerPlanContainer();
 container.containerId = "groupId";
 container.type = PlannerContainerType.GROUP;
 
-graphClient.planner().plans("planId")
+graphClient.planner().plans("{planId}")
 	.moveToContainer(PlannerPlanMoveToContainerParameterSet
 		.newBuilder()
 		.withContainer(container)

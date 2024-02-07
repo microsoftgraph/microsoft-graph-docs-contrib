@@ -1,6 +1,6 @@
 ---
 title: "Enum values"
-description: "Microsoft Graph enumeration values"
+description: "Microsoft Graph enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: "non-product-specific"
@@ -513,16 +513,16 @@ Namespace: microsoft.graph
 | :----------------- | :---- | :------------------------------------------------------------------------------------ |
 | notRequired        | 0     | No multifactor authentication is required for a user to complete device registration. |
 | required           | 1     | Multifactor authentication is required for a user to complete device registration.    |
-| unknownFutureValue | 2     | Evolvable enumeration sentinel value. Do not use.                                     |
+| unknownFutureValue | 2     | Evolvable enumeration sentinel value. Don't use.                                     |
 
 ### policyScope values
 
 | Member             | Value | Description                                                                    |
 | :----------------- | :---- | :----------------------------------------------------------------------------- |
-| none               | 0     | The policy does not apply to any users or groups in the organization.          |
+| none               | 0     | The policy doesn't apply to any users or groups in the organization.          |
 | all                | 1     | The policy applies to all users and groups in the organization. Default value. |
 | selected           | 2     | The policy applies to specific users or groups in the organization.            |
-| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Do not use.                              |
+| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use.                              |
 
 ### appCredentialRestrictionType values
 
@@ -1708,6 +1708,7 @@ Namespace: microsoft.graph
 | acronym            |
 | bookmark           |
 | chatMessage        |
+| qna                |
 | unknownFutureValue |
 
 ### searchAlterationType values
@@ -2620,7 +2621,7 @@ Possible values for user account types (group membership), per Windows definitio
 | passthroughAuthentication | Passthrough Authentication    |
 | seamlessSso               | Seamless Single Sign-on       |
 | passwordHashSync          | Password Hash Synchronization |
-| emailAsAlternateId        | Email as an alternate id      |
+| emailAsAlternateId        | Email as an alternate ID      |
 | unknownFutureValue        | A sentinel member             |
 
 ### tokenIssuerType values
@@ -2658,7 +2659,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member              | Int value | Description                                                                                                        |
 | :------------------ | :-------- | :----------------------------------------------------------------------------------------------------------------- |
-| None                | 0         | Default value. This is the value on a message when the user has not taken an action on the message blocked by DLP. |
+| None                | 0         | Default value. This is the value on a message when the user hasn't taken an action on the message blocked by DLP. |
 | Override            | 1         | Sender has overridden the message verdict and sent the message anyway.                                             |
 | ReportFalsePositive | 2         | Sender has reported the message verdict to the admins as a false positive.                                         |
 
@@ -2666,9 +2667,9 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member                            | Int value | Description                                                                                                                                                                                                                                                           |
 | :-------------------------------- | :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| None                              | 0         | User is not allowed to override the message. User is not allowed to report a message as false positive if policyTip is not provided. In all other scenarios, user can report a message as false positive.                                                             |
-| AllowFalsePositiveOverride        | 1         | User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
-| AllowOverrideWithoutJustification | 2         | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`.                                                                                                                        |
+| None                              | 0         | User isn't allowed to override the message. User isn't allowed to report a message as false positive if policyTip isn't provided. In all other scenarios, user can report a message as false positive.                                                             |
+| AllowFalsePositiveOverride        | 1         | User isn't allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
+| AllowOverrideWithoutJustification | 2         | User is allowed to override the block and send the message. Justification text isn't required. Exclusive to `AllowOverrideWithJustification`.                                                                                                                        |
 | AllowOverrideWithJustification    | 4         | User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.                                                                                                                         |
 
 ### entityType values
@@ -2915,10 +2916,10 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### threatExpectedAssessment values
 
-| Member  | Value | Description                       |
-| :------ | :---- | :-------------------------------- |
-| block   | 1     | The threat should be blocked.     |
-| unblock | 2     | The threat should not be blocked. |
+| Member  | Value | Description                      |
+| :------ | :---- | :------------------------------- |
+| block   | 1     | The threat should be blocked.    |
+| unblock | 2     | The threat shouldn't be blocked. |
 
 ### threatCategory values
 
@@ -3048,7 +3049,7 @@ Possible values for user account types (group membership), per Windows definitio
 | Member             | Value | Description                                                                                                                                                                                                      |
 | :----------------- | :---- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | configured         | 0     | Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.                                                        |
-| proposed           | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`. |
+| proposed           | 1     | Connected Organizations that are automatically created by the system have this state value. They aren't included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`. |
 | unknownFutureValue | 2     | A sentinel member.                                                                                                                                                                                               |
 
 ### identityUserFlowAttributeDataType values
@@ -3109,13 +3110,14 @@ Possible values for user account types (group membership), per Windows definitio
 | :------ |
 | custom  |
 | gallery |
+| unknownFutureValue |
 
 ### chatType values
 
 | Member             | Value | Description                                                                                                                                                        |
 | :----------------- | :---- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| oneOnOne           | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat, the member cannot be removed / added.                                       |
-| group              | 1     | Indicates that the chat is a Group chat. The roster size (of at least 2 person) can be updated for this type of chat. The members can be removed / added later on. |
+| oneOnOne           | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat, the member can't be removed / added.                                       |
+| group              | 1     | Indicates that the chat is a Group chat. The roster size (of at least two person) can be updated for this type of chat. The members can be removed / added later on. |
 | meeting            | 2     | Indicates that the chat is a Meeting chat, which is created as a side effect of creation of an OnlineMeeting.                                                      |
 | unknownFutureValue | 3     | Sentinel value to indicate future values.                                                                                                                          |
 
@@ -3636,26 +3638,26 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### teamworkDeviceActivityState values
 
-| Member             | Value | Description                                       |
-| :----------------- | :---- | :------------------------------------------------ |
-| unknown            | 0     | Unknown state.                                    |
-| busy               | 1     | The device is busy.                               |
-| idle               | 2     | The device is idle.                               |
-| unavailable        | 3     | The device is unavailable.                        |
-| unknownFutureValue | 4     | Evolvable enumeration sentinel value. Do not use. |
+| Member             | Value | Description                                      |
+| :----------------- | :---- | :----------------------------------------------- |
+| unknown            | 0     | Unknown state.                                   |
+| busy               | 1     | The device is busy.                              |
+| idle               | 2     | The device is idle.                              |
+| unavailable        | 3     | The device is unavailable.                       |
+| unknownFutureValue | 4     | Evolvable enumeration sentinel value. Don't use. |
 
 ### teamworkDeviceOperationType values
 
-| Member                            | Value | Description                                       |
-| :-------------------------------- | :---- | :------------------------------------------------ |
-| deviceRestart                     | 0     | Restart a device.                                 |
-| configUpdate                      | 1     | Update the device configuration.                  |
-| deviceDiagnostics                 | 2     | Get the device logs.                              |
-| softwareUpdate                    | 3     | Update a software on the device.                  |
-| deviceManagementAgentConfigUpdate | 4     | Update the device agent configuration.            |
-| remoteLogin                       | 5     | Device remote login.                              |
-| remoteLogout                      | 6     | Device remote logout.                             |
-| unknownFutureValue                | 7     | Evolvable enumeration sentinel value. Do not use. |
+| Member                            | Value | Description                                      |
+| :-------------------------------- | :---- | :----------------------------------------------- |
+| deviceRestart                     | 0     | Restart a device.                                |
+| configUpdate                      | 1     | Update the device configuration.                 |
+| deviceDiagnostics                 | 2     | Get the device logs.                             |
+| softwareUpdate                    | 3     | Update a software on the device.                 |
+| deviceManagementAgentConfigUpdate | 4     | Update the device agent configuration.           |
+| remoteLogin                       | 5     | Device remote login.                             |
+| remoteLogout                      | 6     | Device remote logout.                            |
+| unknownFutureValue                | 7     | Evolvable enumeration sentinel value. Don't use. |
 
 ### teamworkSoftwareFreshness values
 
@@ -3664,7 +3666,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknown            | 0     | Unknown value.                                                                |
 | latest             | 1     | Indicates whether a device component runs the latest version of the software. |
 | updateAvailable    | 2     | Indicates that a software update is available for a device component.         |
-| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Do not use.                             |
+| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use.                              |
 
 ### teamworkSoftwareType values
 
@@ -3687,7 +3689,7 @@ Possible values for user account types (group membership), per Windows definitio
 | teamsDefaultAndSkype | 2     | Supports both `Skype` and `Teams`. Default is `Teams`. |
 | skypeOnly            | 3     | Supports only `Skype`.                                 |
 | teamsOnly            | 4     | Supports only `Teams`.                                 |
-| unknownFutureValue   | 5     | Evolvable enumeration sentinel value. Do not use.      |
+| unknownFutureValue   | 5     | Evolvable enumeration sentinel value. Don't use.       |
 
 ### longRunningOperationStatus values
 
@@ -4416,6 +4418,12 @@ Possible values for user account types (group membership), per Windows definitio
 |rejected|
 |unknownFutureValue|
 
+### socialIdentitySourceType values
+
+|Member|
+|:---|
+|facebook|
+|unknownFutureValue|
 
 ### authorizationSystemActionSeverity values 
 
@@ -4585,3 +4593,20 @@ Possible values for user account types (group membership), per Windows definitio
 |notConfigured|
 |noRecentDataCollected|
 |unknownFutureValue|
+
+### printReleaseType values 
+
+|Member|
+|:---|
+|direct|
+|qrCode|
+|unknownFutureValue|
+
+### bookingPageAccessControl values 
+
+|Member|
+|:---|
+|unrestricted|
+|restrictedToOrganization|
+|unknownFutureValue|
+

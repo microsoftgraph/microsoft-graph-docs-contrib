@@ -27,16 +27,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend
 PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/legend
 ```
-## Optional request headers
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |overlay|boolean|Boolean value for whether the chart legend should overlap with the main body of the chart.|
 |position|string|Represents the position of the legend on the chart. The possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|

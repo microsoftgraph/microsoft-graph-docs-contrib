@@ -33,6 +33,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /sites/{site-id}/lists/{list-id}/columns
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
 ## Request body
 
 In the request body, supply a JSON representation of the [columnDefinition][] resource to add.  

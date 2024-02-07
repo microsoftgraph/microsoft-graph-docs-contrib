@@ -38,7 +38,7 @@ POST /deviceManagement/reports/getSettingNonComplianceReport
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -72,7 +72,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_reporting_devicemanagementreports_getsettingnoncompliancereport_getsettingnoncompliancereport_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getSettingNonComplianceReport
-
 Content-type: application/json
 Content-length: 278
 

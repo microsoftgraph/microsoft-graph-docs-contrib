@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementDerivedCredentialSettings resource type"
-description: "Not yet documented"
+description: "Intune Shared Devicemanagementderivedcredentialsettings Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

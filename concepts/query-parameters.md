@@ -8,6 +8,8 @@ ms.prod: "applications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 08/22/2023
+#Customer intent: As a developer building apps that consume Microsoft Graph APIs, I want to learn how to use OData query parameters, so that I can control the data retrieval and optimize data usage.
+
 ---
 
 # Use query parameters to customize responses
@@ -899,9 +901,8 @@ However, it is important to note that query parameters specified in a request mi
 [skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
 [top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
-## See also
+## Related content
 
 - [Advanced query capabilities on directory objects](/graph/aad-advanced-queries)
 - [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
 - [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=Query%20parameters&search=)
-- [Training module: Optimize data usage when using Microsoft Graph with query parameters](/training/modules/optimize-data-usage)

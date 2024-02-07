@@ -38,10 +38,6 @@ Microsoft Graph controls access to resources via permissions. As a developer, yo
 |List, get, create, update, delete or assign user settings|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|[User settings overview](../resources/cloudpcusersetting.md)|
 |Set up rules to alert issues on the Microsoft Endpoint Manager admin center with provisioning Cloud PCs, uploading Cloud PC images, and checking Azure network connections. |[alertRecord](devicemanagement-alertrecord.md), [alertRule](devicemanagement-alertrule.md) | [Alert monitoring API](devicemanagement-monitoring.md) |
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 - Check out the [overview for Windows 365 Cloud PC on Microsoft Graph](/graph/cloudpc-concept-overview).
 - Try out the Windows 365 Cloud PCs APIs by using the [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
