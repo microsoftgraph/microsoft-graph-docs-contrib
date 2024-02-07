@@ -64,7 +64,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_deviceconfig_devicecompliancepolicy_assign_assign_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
-
 Content-type: application/json
 Content-length: 336
 
