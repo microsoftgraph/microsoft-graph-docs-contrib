@@ -18080,7 +18080,7 @@ items:
                       - name: Call record
                         href: resources/callrecords-callrecord.md
                       - name: List
-                        href: api/callrecords-callrecord-list.md
+                        href: api/callrecords-cloudcommunications-list-callrecords.md
                       - name: Get
                         href: api/callrecords-callrecord-get.md
                   - name: Direct routing calls
@@ -18094,7 +18094,7 @@ items:
                       - name: Participant
                         href: resources/callrecords-participant.md
                       - name: List
-                        href: api/callrecords-callrecord-list-participants.md
+                        href: api/callrecords-callrecord-list-participants_v2.md
                   - name: PSTN blocked users log row
                     items:
                       - name: PSTN blocked users log row
@@ -18273,7 +18273,7 @@ items:
                     href: resources/virtualeventsession.md
                     items:
                       - name: List
-                        href: api/virtualeventsession-list.md
+                        href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
           - name: Devices (preview)

@@ -64,7 +64,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_enrollment_importedwindowsautopilotdeviceidentity_import_import_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/import
-
 Content-type: application/json
 Content-length: 808
 

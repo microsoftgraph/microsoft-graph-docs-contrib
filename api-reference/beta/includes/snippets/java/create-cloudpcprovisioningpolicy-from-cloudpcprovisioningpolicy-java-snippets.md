@@ -32,6 +32,9 @@ cloudPcProvisioningPolicy.onPremisesConnectionId = "4e47d0f6-6f77-44f0-8893-c0fe
 CloudPcWindowsSettings windowsSettings = new CloudPcWindowsSettings();
 windowsSettings.language = "en-US";
 cloudPcProvisioningPolicy.windowsSettings = windowsSettings;
+CloudPcWindowsSetting windowsSetting = new CloudPcWindowsSetting();
+windowsSetting.locale = "en-US";
+cloudPcProvisioningPolicy.windowsSetting = windowsSetting;
 cloudPcProvisioningPolicy.provisioningType = CloudPcProvisioningType.DEDICATED;
 
 graphClient.deviceManagement().virtualEndpoint().provisioningPolicies()
