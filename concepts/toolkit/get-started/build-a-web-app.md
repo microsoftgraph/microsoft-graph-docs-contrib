@@ -22,7 +22,7 @@ You can use Microsoft Graph Toolkit in your application by installing the npm pa
 
 # [CDN](#tab/html)
 
-To use the toolkit via a CDN, add the following script and markup to your html page:
+To use the toolkit via a CDN, add the following script and markup to your HTML page:
 
 ```html
 <script type="module">
@@ -71,7 +71,7 @@ Providers.globalProvider = new Msal2Provider({
 
 # [HTML](#tab/HTML)
 
-If you prefer to use a declarative approach you can alter the initialization script and add the `mgt-msal2-provider` component to your HTML page and set the `client-id` to your application client-id.
+If you prefer to use a declarative approach, you can alter the initialization script and add the `mgt-msal2-provider` component to your HTML page, and set the `client-id` to your application client-id.
 
 ```html
 <script type="module">
@@ -84,8 +84,6 @@ If you prefer to use a declarative approach you can alter the initialization scr
 </script>
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 ```
-
----
 
 The client ID is the only property required to initialize the provider, but you can set additional options. For the full list, see [MSAL2 Provider](../providers/msal2.md).
 
@@ -123,7 +121,7 @@ document.body.appendChild(component());
 
 # [HTML](#tab/HTML)
 
-The following is a full working example loading MGT from a CDN, the MSAL2 Provider initialized in JavaScript, and the Login component:
+The following is a full working example that shows loading Microsoft Graph Toolkit from a CDN, the MSAL2 Provider initialized in JavaScript, and the Login component:
 
 ```html
 <script type="module">
@@ -138,7 +136,7 @@ The following is a full working example loading MGT from a CDN, the MSAL2 Provid
 <mgt-login></mgt-login>
 ```
 
-This is an example using the ES6 modules, the MSAL2 Provider initialized in HTML, and the Login component:
+The following example uses the ES6 modules, the MSAL2 Provider initialized in HTML, and the Login component:
 
 ```html
 <script type="module">
@@ -152,11 +150,9 @@ This is an example using the ES6 modules, the MSAL2 Provider initialized in HTML
 <mgt-login></mgt-login>
 ```
 
----
-
 ## Test your app
 
-In order to test your app, MSAL requires the page to be hosted in a web server for the authentication redirects.
+To test your app, MSAL requires the page to be hosted in a web server for the authentication redirects.
 
 If you're just getting started and want to play around, you can use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code or any similar lightweight development server. Download the extension and open your HTML file using live server.
 
@@ -198,7 +194,7 @@ Providers.onProviderUpdated(loadAgenda);
 
 # [HTML](#tab/HTML)
 
-If you're using the toolkit from a CDN the you will need to access JavaScript functions and object using a module script in much the same way as you would when using the toolkit via npm packages
+If you're using the toolkit from a CDN, you need to access JavaScript functions and objects by using a module script in the same way that you would when using the toolkit via npm packages.
 
 ```html
 <!DOCTYPE html>
@@ -231,7 +227,6 @@ If you're using the toolkit from a CDN the you will need to access JavaScript fu
 </html>
 ```
 
----
 
 ## Next Steps
 
