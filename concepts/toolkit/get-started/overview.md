@@ -39,7 +39,7 @@ Using the toolkit via ES6 modules gives you full control of the bundling process
 npm install @microsoft/mgt-element @microsoft/mgt-components @microsoft/mgt-msal2-provider
 ```
 
-To use the components as a custom element in HTML they must be registered, importing and executing the necessary component registration function will set allow you to use them in your code. Here's how you do that for the agenda and login components:
+To use the components as a custom element in HTML, they must be registered. To use the components in your code, import and run the necessary component registration function. The following example shows how to do that for the agenda and login components:
 
 ```html
 <script type="module">
@@ -55,7 +55,7 @@ To use the components as a custom element in HTML they must be registered, impor
 <mgt-agenda></mgt-agenda>
 ```
 
-As a shortcut if you wish to register all the components from `@microsoft/mgt-components` you can use the `registerMgtComponents()` helper method. Declarative usage of providers still requires the appropriate provider is separately registered as they are sourced from different packages. 
+As a shortcut, if you want to register all the components from `@microsoft/mgt-components`, you can use the `registerMgtComponents()` helper method. Declarative usage of providers still requires that the appropriate provider is registered separately because they are sourced from different packages. 
 
 ```html
 <script type="module">
@@ -71,9 +71,9 @@ As a shortcut if you wish to register all the components from `@microsoft/mgt-co
 ```
 
 > [!IMPORTANT]
-> When working with a tree-shaking supporting bundler such as Webpack or Rollup, you will want to import and register the individual components. This will ensure that any unused components are tree-shaken out of your builds.
+> When working with a tree-shaking supporting bundler such as Webpack or Rollup, you will want to import and register the individual components. This ensures that any unused components are tree-shaken out of your builds.
 
-You may also configure the provider imperatively:
+You can also configure the provider imperatively, as shown in the following example:
 
 ```html
 <script type="module">
@@ -89,7 +89,7 @@ You may also configure the provider imperatively:
 
 # [CDN](#tab/html)
 
-To use the toolkit via a CDN, add the following script and markup to your html page:
+To use the toolkit via a CDN, add the following script and markup to your HTML page:
 
 ```html
 <script type="module">
@@ -100,11 +100,9 @@ To use the toolkit via a CDN, add the following script and markup to your html p
 <mgt-login></mgt-login>
 ```
 
----
-
 ### Packages
 
-Microsoft Graph Toolkit is made up of several packages, allowing you to only include the code that you need for your applications.
+Microsoft Graph Toolkit is made up of several packages. This allows you to include only the code that you need for your applications.
 
 <b>@microsoft/mgt-element</b>
 
@@ -132,7 +130,7 @@ Providers are available via a single package and can be installed as needed. The
 
 <b>@microsoft/mgt</b>
 
-The `@microsoft/mgt` package is a wrapper package that includes all the preceding packages and re-exports them so they're available via a single package that you can install. This package also includes the `mgt.js` script which can be used via a CDN link.
+The `@microsoft/mgt` package is a wrapper package that includes all the preceding packages and re-exports them so they're available via a single package that you can install. This package also includes the `mgt.js` script, which can be used via a CDN link.
 
 <b>@microsoft/mgt-react</b>
 
