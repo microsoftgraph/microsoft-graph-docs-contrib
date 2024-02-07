@@ -17,6 +17,7 @@ request_body = QueryPostRequestBody(
 			content_sources = [
 				"/external/connections/connectionfriendlyname",
 			],
+			region = "US",
 			query = SearchQuery(
 				query_string = "contoso product",
 			),
