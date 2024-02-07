@@ -1,5 +1,5 @@
 ---
-title: "List virtualEventSessions"
+title: "List sessions"
 description: "Get a list of all virtualEventSession objects under a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List virtualEventSessions
+# List sessions
 
 Namespace: microsoft.graph
 
@@ -42,7 +42,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions
 
 ## Optional query parameters
 
-This method does not support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
