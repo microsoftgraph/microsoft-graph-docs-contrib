@@ -72,7 +72,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_reporting_devicemanagementreports_getconfigurationpolicynoncompliancereport_getconfigurationpolicynoncompliancereport_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getConfigurationPolicyNonComplianceReport
-
 Content-type: application/json
 Content-length: 278
 

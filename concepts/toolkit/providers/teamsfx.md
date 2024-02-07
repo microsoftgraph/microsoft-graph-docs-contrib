@@ -48,7 +48,7 @@ Now you can add any component in your HTML page or in your `render()` method whe
 public render(): void {
   return (
       <div>
-        <Person personQuery="me" view={PersonViewType.threelines}></Person>
+        <Person personQuery="me" view={ViewType.threelines}></Person>
       </div>
   );
 }
