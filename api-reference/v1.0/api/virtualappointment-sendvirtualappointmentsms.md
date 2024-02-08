@@ -88,6 +88,7 @@ POST https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRh
     "messageType": "confirmation"
 } 
 ```
+---
 
 ### Response
 
