@@ -39,7 +39,7 @@ This method supports the `$skip`, `$top`, `$count`, `$filter`, `$orderby`, and `
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

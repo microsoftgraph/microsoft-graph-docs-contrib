@@ -41,7 +41,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 388
+Content-Length: 441
 
 {
   "value": {
@@ -73,6 +73,7 @@ Content-Length: 388
     "description": "Description value",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "policyType": "deviceWipe",
+    "policyPlatform": "androidDeviceAdministrator",
     "approverGroupIds": [
       "Approver Group Ids value"
     ]

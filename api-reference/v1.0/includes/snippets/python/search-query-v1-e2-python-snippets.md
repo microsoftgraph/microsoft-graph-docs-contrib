@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,6 +14,7 @@ request_body = QueryPostRequestBody(
 			entity_types = [
 				EntityType.ListItem,
 			],
+			region = "US",
 			query = SearchQuery(
 				query_string = "contoso",
 				query_template = "{searchTerms} CreatedBy:Bob",
