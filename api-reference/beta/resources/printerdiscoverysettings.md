@@ -39,6 +39,6 @@ The following JSON shows a representation of the resource.
 }
 ```
 
-## Credit notice
+### Credit notice
 
 **AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.
