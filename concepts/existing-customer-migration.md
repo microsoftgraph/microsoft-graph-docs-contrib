@@ -35,7 +35,7 @@ Existing Data Connect customers can perform a one-click automatic migration from
 
 The new experience requires that each app consents to one list of datasets, and each dataset be mapped to only one set of columns and one scope.
 
-For tenants that meet this requirement, the tenant admin can complete the migration in the Microsoft 365 admin portal by selecting the **Enable new Microsoft Graph Data Connect authorization experience** checkbox. 
+For tenants that meet this requirement, the tenant admin can complete the migration in the Microsoft 365 admin portal by selecting the **Enable new Microsoft Graph Data Connect authorization experience** checkbox and clicking **Save**. Once complete, please review the migrated applications in the MGDC app registration portal. 
 
 ![A screenshot showing how to enable the new experience for data connect in the Microsoft 365 admin center.](../concepts/images/data-connect-new-consent-flow-one-click-enable-mgdc.png)
 
@@ -47,7 +47,11 @@ Your tenant requires special attention if it has active consents with any of the
 - Multiple destination sinks per app registration
 - A combination of any of these
 
-Upon one-click migration, the active consents will merge under each corresponding app and dataset. An app can have multiple datasets, and each dataset has a set of consented Columns and Scopes. All sinks consented for an app previously will continue to be consented for the app after migration.
+Upon one-click migration, the active consents will be merged where applicable. 
+
+If there are multiple PAM consents corresponding to the same app and dataset combination, then the migration will take a superset of the column sets and scopes from the PAM consents for that app and dataset combination. Once migration is complete, you will be able to view this final result in the MGDC app registration portal and modify any of the above properties as desired.
+
+If there are multiple PAM consents corresponding to the same app, then the migration will take a superset of all the destination sinks from the PAM consents for that app. Once migration is complete, pipelines will continue working for one app with multiple sinks until you modify your app registration. The new MGDC onboarding experience only supports 1 sink per registered app, but in order to facilitate a smooth migration, there is support for multiple sinks immediately after migration. When you go to the MGDC app registration portal you will be presented a warning about the same. In order to continue modifying the migrated app, you will need to modify all pipelines using that app to use a single destination sink.
 
 For example, consider the following consents:
 
@@ -57,18 +61,24 @@ For example, consider the following consents:
 
 After migration, the consents will merge because they are under the same application: 
 
-**Application**: `Productivity_Analysis`; **Sink**: [`Storage_Account_1`, `Storage_Account_2`]; 
-  [ **Dataset**: `Message_v1`; **Columns**: [SentTime, Message], 
-  **Dataset**: `DirectReports_v1`; **Columns**: [Direct Report] ]; 
-  **Scope**: [Legal, Engineering]
+**Application**: `Productivity_Analysis`
+|--**Sink**: [`Storage_Account_1`, `Storage_Account_2`] 
+|-- **Datasets**
+|---- **Dataset**: `Message_v1`;  **Columns**: [SentTime, Message]; **Scope**: [Legal, Engineering]
+|---- **Dataset**: `DirectReports_v1`; **Columns**: [Direct Report]; **Scope**: [Engineering]
  
 > [!NOTE]
-> When merging consents, new consents can be introduced. In this example, the consent for extracting Columns [Message] data for the group [Legal] has been introduced and for [SentTime] data of the group [Engineering]. Similarly, both sinks will have consent to the datasets, columns, and scopes. If this is not the desired state, either revoke the consents that you do not want migrated in PAM prior to migration or fix any unintended changes in the new experiences after migration. For any questions, reach out to dataconnect@microsoft.com.
+> With special cases, when merging consents, new consents can be introduced. In this example, the migration newly enables extracting the `Message` column for the `Legal` group and the `SentTime` column for the `Engineering` group. In addition, the data can now be delivered to any of the two sinks.  
+>
+>If this is not the desired state, customers can either revoke the consents that they do not want migrated in PAM prior to migration or correct it after migration by updating the MGDC app registration and re-approving that updated registration. For any questions, reach out to dataconnect@microsoft.com.
 
 ## Option 3: Automatic migration
 
 <!-- Update 12/15/2023 changed date per developer guidance to mid 2024. -->
 
 Between March 31st, 2024 and April 30th, 2024, existing Microsoft Graph Data Connect customers who didn't perform the one-click automatic migration will be migrated automatically to the new onboarding experience on their first pipeline run of Microsoft Graph Data Connect. During this time, no new PAM requests will be created. In both cases (one-click migration and automatic migration), MGDC will convert all your approved PAM requests for MGDC into MGDC app registrations and authorizations for the new experience so that existing pipelines continue working without any required modifications. 
+
+> [!NOTE]
+> The migration logic during automatic migration will be the same as that described in the One-click automatic migration section above. 
 
 After April 30th, 2024, if your tenant has not been migrated to the new experience, your tenant's PAM approvals will NOT be converted and you will need to manually use the new onboarding experience to enable your pipelines again after this date.
