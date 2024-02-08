@@ -98,6 +98,7 @@ Content-type: application/json
     "displayName":"Bento",
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
+    "isCustomerAllowedToManageBooking": true,
     "languageTag": "en-US",
     "isHiddenFromCustomers":false,
     "notes":"Home-cooked special",
@@ -178,6 +179,7 @@ Content-type: application/json
     "staffMemberIds": [],
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
+    "isCustomerAllowedToManageBooking": true,
     "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "defaultLocation": {
         "displayName": "Contoso Lunch Delivery",

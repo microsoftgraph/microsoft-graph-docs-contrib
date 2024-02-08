@@ -115,6 +115,7 @@ Content-type: application/json
     "invoiceId":"1001",
     "invoiceStatus@odata.type":"#microsoft.graph.bookingInvoiceStatus",
     "invoiceStatus":"open",
+    "isCustomerAllowedToManageBooking": true,
     "invoiceUrl":"theInvoiceUrl",
     "isLocationOnline": true,
     "optOutOfCustomerEmail": false,
@@ -304,6 +305,7 @@ Content-type: application/json
     "invoiceId": "1001",
     "invoiceStatus": "open",
     "invoiceUrl": "theInvoiceUrl",
+    "isCustomerAllowedToManageBooking": true,
     "customerLocation": {
         "displayName": "Customer",
         "locationEmailAddress": null,

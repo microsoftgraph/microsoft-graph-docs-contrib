@@ -54,6 +54,7 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String|A service name.|
 |id|String| Read-only.|
 |isAnonymousJoinEnabled|Boolean|`True` if the URL to join the appointment anonymously (**anonymousJoinWebUrl**) will be generated for the appointment booked for this service.|
+|isCustomerAllowedToManageBooking|Boolean|True indicates that the customer will be allowed to manage booking created by staff. Default value is false.|
 |isHiddenFromCustomers|Boolean|True means this service isn't available to customers for booking.|
 |isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
 |languageTag|String|The language of the self-service booking page.|

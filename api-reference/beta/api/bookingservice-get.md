@@ -125,6 +125,7 @@ Content-type: application/json
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
     "isAnonymousJoinEnabled": false,
+    "isCustomerAllowedToManageBooking": true,
     "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "defaultLocation": {
         "displayName": "Contoso Lunch Delivery",
