@@ -39,7 +39,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object was not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
-|ID|String|The unique identifier for the object. For example, 12345678-9abc-def0-1234-56789abcde. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and don't rely on it being a GUID. Key. Not nullable. Read-only. Inherited from [directoryObject](../resources/directoryobject.md).|
+|id|String|The unique identifier for the object. Key. Not nullable. Read-only. Inherited from [directoryObject](../resources/directoryobject.md).|
 |validatingDomains|[validatingDomains](../resources/validatingdomains.md)|Verified Microsoft Entra ID domains for which Microsoft Entra validates that federated account's root domain matches with mapped Microsoft Entra account's root domain.|
 
 ## Relationships
