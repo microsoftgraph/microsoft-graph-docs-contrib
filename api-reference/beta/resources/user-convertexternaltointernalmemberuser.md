@@ -1,6 +1,6 @@
 ---
 title: "user: convertExternalToInternalMemberUser"
-description: "Converts an external user to an internal member"
+description: "Convert an external user to an internal member."
 author: "yyuank"
 ms.localizationpriority: medium
 ms.prod: "users"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API converts an externally authenticated user into an internal user. The user will be able to sign into the host tenant as an internal user and access resources as a member.
+Convert an externally authenticated user into an internal user. The user will be able to sign into the host tenant as an internal user and access resources as a member.
 
 ## Permissions
 
@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/user-convertexternaltointernalmemberuser-permissions.md)]
+
+In delegated scenarios, the calling user must have at least the *User Administrator* [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -52,19 +54,18 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userPrincipalName|String|Required for cloud users to change the user principal name to. Not requried for on-prem synced users, as their userPrincipalName is managed on-prem.|
+|mail|String|Optional. |
 |passwordProfile|[passwordProfile](../resources/passwordprofile.md)|Required value for users whose authentication is managed in the cloud.|
-|mail|String|Optional|
-
+|userPrincipalName|String|Required for cloud users to change the **userPrincipalName**. Not requried for on-premises synced users, as their **userPrincipalName** is managed on-prem.|
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the id, displayName, userPrincipalName and convertedToInternalUserDateTime in the response. If the mail property is also set as part of API conversion then the mail property will also be returned with other default parameters.
+If successful, this method returns a `200 OK` response code and a [user](../resources/user.md) object with the default properties, including the **convertedToInternalUserDateTime** property in the response. 
 
 ## Examples
 
-### Example 1: Convert user and reset password on next login for a cloud user
+### Example 1: Convert a cloud user and require them to reset their password on next sign in
 
 #### Request
 
@@ -75,13 +76,15 @@ The following example shows a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/users/id/convertExternalToInternalMemberUser
+POST https://graph.microsoft.com/beta/users/0b8cc234-ef87-4015-9785-cbb42000d41c/convertExternalToInternalMemberUser
 Content-type: application/json
 
-{ 
-  "userPrincipalName": "newUpn@contoso.com",
-  "passwordProfile": { "password": "te$tPassw0rd", "forceChangePasswordNextLogin": "true" }
-
+{
+    "userPrincipalName": "AdeleVance@contoso.com",
+    "passwordProfile": {
+        "password": "Zdi087#2jhkahf",
+        "forceChangePasswordNextSignIn": "true"
+    }
 }
 ```
 
@@ -100,15 +103,41 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "ddbc5871-cc95-4b99-a162-ecdc91ece43e"
-    "displayName" : "user1Name",
-    "userPrincipalName" : "newUpn@contoso.com",
-    "convertedToInternalUserDateTime" : "9999-12-31T23:59:59.9999999"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "id": "0b8cc234-ef87-4015-9785-cbb42000d41c",
+    "accountEnabled": true,
+    "displayName": "Adele Vance",
+    "mail": "AdeleV@woodgrove.com",
+    "mailNickname": "AdeleV_woodgrove.com#EXT#",
+    "otherMails": [
+        "AdeleV@woodgrove.com"
+    ],
+    "proxyAddresses": [
+        "SMTP:AdeleV@woodgrove.com",
+        "smtp:AdeleVance@contoso.com",
+        "smtp:AdeleV_woodgrove.com#EXT#@contoso.com"
+    ],
+    "userPrincipalName": "AdeleVance@contoso.com",
+    "convertedToInternalUserDateTime": "2024-02-05T20:16:37.5012924Z",
+    "externalUserState": null,
+    "externalUserStateChangeDateTime": "2019-10-31T18:10:01Z",
+    "userType": "Member",
+    "identities": [
+        {
+            "signInType": "userPrincipalName",
+            "issuer": "contoso.com",
+            "issuerAssignedId": "AdeleVance@contoso.com"
+        }
+    ],
+    "passwordProfile": {
+        "password": null,
+        "forceChangePasswordNextSignIn": true,
+        "forceChangePasswordNextSignInWithMfa": false
+    }
 }
-
 ```
 
-### Example 2: Convert User and Reset Password on Next Login for a cloud-only user with mail address
+### Example 2: Convert a cloud user, change their mail address, and require password reset on next sign in
 
 #### Request
 
@@ -119,13 +148,16 @@ The following example shows a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/users/id/convertExternalToInternalMemberUser
+POST https://graph.microsoft.com/beta/users/0b8cc234-ef87-4015-9785-cbb42000d41c/convertExternalToInternalMemberUser
 Content-type: application/json
 
 {
-    "userprincipalName": "newUpn@contoso.com"
-    "passwordProfile": { "password": "te$tPassw0rd", "forceChangePasswordNextLogin": true },
-    "mail": "newMail@contoso.com"
+    "userPrincipalName": "AdeleVance@contoso.com",
+    "passwordProfile": {
+        "password": "Zdi087#2jhkahf",
+        "forceChangePasswordNextSignIn": "true"
+    }
+    "mail": "AdeleV@contoso.com"
 }
 ```
 
@@ -144,11 +176,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "ddbc5871-cc95-4b99-a162-ecdc91ece43e"
-    "displayName" : "user1Name",
-    "userPrincipalName" : "newUpn@contoso.com",
-    "convertedToInternalUserDateTime" : "9999-12-31T23:59:59.9999999",
-    "mail": "newMail@contoso.com"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "id": "0b8cc234-ef87-4015-9785-cbb42000d41c",
+    "displayName": "Adele Vance",
+    "mail": "AdeleV@contoso.com",
+    "userPrincipalName": "AdeleVance@contoso.com"
 }
 ```
 
@@ -163,8 +195,7 @@ The following example shows a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/users/id/convertExternalToInternalMemberUser
-
+POST https://graph.microsoft.com/beta/users/0b8cc234-ef87-4015-9785-cbb42000d41c/convertExternalToInternalMemberUser
 ```
 
 #### Response
@@ -180,11 +211,12 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
-    "id": "ddbc5871-cc95-4b99-a162-ecdc91ece43e"
+    "id": "0b8cc234-ef87-4015-9785-cbb42000d41c"
     "displayName" : "user1Name",
     "userPrincipalName" : "newUpn@contoso.com",
-    "convertedToInternalUserDateTime" : "9999-12-31T23:59:59.9999999"
+    "convertedToInternalUserDateTime" : "2024-12-31T23:59:59.9999999"
 }
 ```
 
