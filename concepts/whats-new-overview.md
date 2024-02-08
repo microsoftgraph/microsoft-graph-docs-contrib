@@ -20,6 +20,16 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](upgrade.md)
 
+## February 2024: New in preview only
+
+### Device and app management | Cloud PC
+
+The following properties are deprecated:
+
+- **type** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) in favor of the **connectionType** property.
+- **healthCheckStatusDetails** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) in favor of the **healthCheckStatusDetail** property.
+- **additionalDetails** property on [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true) in favor of the **additionalDetail** property.
+
 ## January 2024: New and generally available
 
 ### Device and app management | Cloud PC
