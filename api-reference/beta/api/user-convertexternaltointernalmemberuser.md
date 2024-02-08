@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Convert an externally authenticated user into an internal user. The user is able to sign into the host tenant as an internal user and access resources as a member. For more information about how the two user types differ, see [What are the default user permissions in Microsoft Entra ID?](/entra/fundamentals/users-default-permissions?context=graph%2Fcontext)
+Convert an externally authenticated user into an internal user. The user is able to sign into the host tenant as an internal user and access resources as a member. <!--For more information about how the two user types differ, see [What are the default user permissions in Microsoft Entra ID?](/entra/fundamentals/users-default-permissions?context=graph%2Fcontext).-->
 
 ## Permissions
 
