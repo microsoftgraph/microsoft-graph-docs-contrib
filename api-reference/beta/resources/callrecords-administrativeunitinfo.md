@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an object that expose information about the administrative units associated to a call .
+Represents an object that expose information about the administrative units associated to a user .
 
 ## Properties
 
