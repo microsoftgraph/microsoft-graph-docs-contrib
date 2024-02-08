@@ -28,6 +28,7 @@ For those countries, the three or four last digits of the external phone number 
 
 |Property|Type|Description|
 |:---|:---|:---|
+|administrativeUnitInfos| [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection|Collection of administrative units associated to a call.|
 |callCharge|Decimal|Amount of money or cost of the SMS that is charged.|
 |currency|String|Currency used to calculate the cost of the call. For details, see [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217).|
 |destinationContext|String|Indicates whether the SMS was `Domestic` (within a country or region) or `International` (outside a country or region) based on the user's location.|
@@ -62,6 +63,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.callRecords.smsLogRow",
+  "administrativeUnitInfos": [{"@odata.type": "microsoft.graph.callRecords.administrativeUnitInfo"}],
   "callCharge": "Decimal",
   "currency": "String",
   "destinationContext": "String",

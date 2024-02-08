@@ -7,13 +7,13 @@ doc_type: resourcePageType
 ms.prod: "cloud-communications"
 ---
 
-# participantBase resource type
+# administrativeUnitInfo resource type
 
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an object that expose information about the administrative units associated to a call [participantBase](callrecords-participantbase.md).
+Represents an object that expose information about the administrative units associated to a call .
 
 ## Properties
 

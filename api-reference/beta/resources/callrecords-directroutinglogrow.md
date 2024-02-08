@@ -19,12 +19,13 @@ Represents a row of data in the direct routing call log. Each row maps to one ca
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow collection](callrecords-directroutinglogrow.md)| List **directRoutingLogRow** objects for a call record. |
+| [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md) collection| List **directRoutingLogRow** objects for a call record. |
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
+|administrativeUnitInfos| [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md)  collection |Collection of administrative units associated to a call.|
 |calleeNumber|String|Number of the user or bot who received the call ([E.164](https://en.wikipedia.org/wiki/E.164) format, but may include more data).|
 |callEndSubReason|Int32|In addition to the SIP codes, Microsoft has own subcodes that indicate the specific issue.|
 |callerNumber|String|Number of the user or bot who made the call ([E.164](https://en.wikipedia.org/wiki/E.164) format, but may include more data).|
@@ -43,6 +44,7 @@ Represents a row of data in the direct routing call log. Each row maps to one ca
 |signalingLocation|String|The data center used for signaling for both bypass and non-bypass calls.|
 |startDateTime|DateTimeOffset|Call start time.<br/>For failed and unanswered calls, this can be equal to invite or failure time.|
 |successfulCall|Boolean|Success or attempt.|
+|transferorCorrelationId|String|Correlation Id of the call to the transferor.|
 |trunkFullyQualifiedDomainName|String|Fully qualified domain name of the session border controller.|
 |userCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
@@ -66,6 +68,7 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.callRecords.directRoutingLogRow",
+  "administrativeUnitInfos": [{"@odata.type": "microsoft.graph.callRecords.administrativeUnitInfo"}],
   "calleeNumber": "String",
   "callEndSubReason": "Int32",
   "callerNumber": "String",
@@ -84,6 +87,7 @@ Here's a JSON representation of the resource.
   "signalingLocation": "String",
   "startDateTime": "String (timestamp)",
   "successfulCall": "Boolean",
+  "transferorCorrelationId": "String",
   "trunkFullyQualifiedDomainName": "String",
   "userCountryCode": "String",
   "userDisplayName": "String",
