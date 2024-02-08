@@ -1,6 +1,6 @@
 ---
 title: "teamsTab resource type"
-description: "Represents a tab that's pinned (attached) to a channel or a chat."
+description: "Represents a tab pinned (attached) to a channel or a chat."
 ms.localizationpriority: medium
 author: "AkJo"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a tab that's pinned (attached) to a [channel](channel.md) or a [chat](chat.md).
+Represents a tab pinned (attached) to a [channel](channel.md) or a [chat](chat.md).
 
 For more information on tabs, see [Build tabs for Teams](/microsoftteams/platform/tabs/what-are-tabs).
 
@@ -43,7 +43,7 @@ For more information on tabs, see [Build tabs for Teams](/microsoftteams/platfor
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 <!-- {
