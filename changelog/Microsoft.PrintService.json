@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "30fad8c5-8dfe-462e-908f-3b1dd226db11",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "incompatiblePrinterSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **incompatiblePrinterSettings** enumeration type.",
+          "Target": "incompatiblePrinterSettings"
+        },
+        {
+          "Id": "30fad8c5-8dfe-462e-908f-3b1dd226db11",
+          "ApiChange": "Resource",
+          "ChangedApiName": "airPrintSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [airPrintSettings](https://learn.microsoft.com/en-us/graph/api/resources/airPrintSettings?view=graph-rest-beta) resource type.",
+          "Target": "airPrintSettings"
+        },
+        {
+          "Id": "30fad8c5-8dfe-462e-908f-3b1dd226db11",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerDiscoverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerDiscoverySettings](https://learn.microsoft.com/en-us/graph/api/resources/printerDiscoverySettings?view=graph-rest-beta) resource type.",
+          "Target": "printerDiscoverySettings"
+        },
+        {
+          "Id": "30fad8c5-8dfe-462e-908f-3b1dd226db11",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerDiscoverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **printerDiscoverySettings** property to the [printSettings](https://learn.microsoft.com/en-us/graph/api/resources/printSettings?view=graph-rest-beta) resource.",
+          "Target": "printSettings"
+        }
+      ],
+      "Id": "30fad8c5-8dfe-462e-908f-3b1dd226db11",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-07T01:02:44.3382557Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7b2dbcc5-7e7e-435f-92ea-5e3d2dbecd5b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "printReleaseType",
