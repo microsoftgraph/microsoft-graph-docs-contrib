@@ -61,10 +61,10 @@ For example, consider the following consents:
 
 After migration, the consents will merge because they are under the same application: 
 
-**Application**: `Productivity_Analysis`
-|--**Sink**: [`Storage_Account_1`, `Storage_Account_2`] 
-|-- **Datasets**
-|---- **Dataset**: `Message_v1`;  **Columns**: [SentTime, Message]; **Scope**: [Legal, Engineering]
+**Application**: `Productivity_Analysis` \
+|-- **Sink**: [`Storage_Account_1`, `Storage_Account_2`] \
+|-- **Datasets**: \
+|---- **Dataset**: `Message_v1`;  **Columns**: [SentTime, Message]; **Scope**: [Legal, Engineering] \
 |---- **Dataset**: `DirectReports_v1`; **Columns**: [Direct Report]; **Scope**: [Engineering]
  
 > [!NOTE]
