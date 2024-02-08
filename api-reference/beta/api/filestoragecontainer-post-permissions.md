@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of the [permission](../resourc
 
 |     Name    |                              Type                              | Description                                                                |
 |:-----------:|:--------------------------------------------------------------:|----------------------------------------------------------------------------|
-| roles       | String                                                         | The type of permissions. Either `reader`, `writer`, `manager`, or `owner`. |
+| roles       | Collection(String)                                             | The type of permissions. Either `reader`, `writer`, `manager`, or `owner`. |
 | grantedToV2 | [sharePointIdentitySet](../resources/sharepointidentityset.md) | For user type permissions, the details of the user for this permission.    |
 
 ## Response
