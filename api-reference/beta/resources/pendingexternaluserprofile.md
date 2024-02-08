@@ -1,6 +1,6 @@
 ---
 title: "pendingExternalUserProfile resource type"
-description: "Represents an external user profile in the Microsoft Entra tenant that is pending redemption."
+description: "Represents an external user profile in the Microsoft Entra tenant that has not yet consented to sharing data with the tenant."
 ms.localizationpriority: high
 author: "jkdouglas"
 ms.prod: "directory-management"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an external user profile in the Microsoft Entra tenant that is pending redemption.
+Represents an external user profile in the Microsoft Entra tenant that has not yet consented to sharing data with the tenant.
+
+Inherits from [externalProfile](externalprofile.md).
 
 ## Methods
 

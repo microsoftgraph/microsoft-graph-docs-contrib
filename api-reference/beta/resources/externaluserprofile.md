@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents the profile of an external user in a Microsoft Entra tenant. This profile is created when a user redeems their [pendingExternalUserProfile](pendingexternaluserprofile.md). The pending external user profile can be created through the [Create pendingExternalUserProfile](../api/directory-post-pendingexternaluserprofile.md) API.
 
+Inherits from [externalProfile](externalprofile.md).
+
 ## Methods
 
 | Method         | Return Type | Description |
