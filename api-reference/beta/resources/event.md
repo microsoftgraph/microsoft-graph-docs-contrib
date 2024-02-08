@@ -78,6 +78,7 @@ This resource supports:
 |exceptionOccurrences|[event](event.md) collection|Contains the **id** property values of the event instances that are exceptions in a recurring series.<br>Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees. Exceptions do not include cancelled occurrences.<br><br>Returned only on $select and $expand in a [GET](../api/event-get.md) operation which specifies the id of a series master event (that is, the seriesMasterId property value).|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
+|iCalUId|String|A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.|
 |id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Case-sensitive and read-only.|
 |importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
@@ -108,7 +109,7 @@ This resource supports:
 |subject|String|The text of the event's subject line.|
 |transactionId|String|A custom identifier specified by a client app for the server to avoid redundant [POST](../api/calendar-post-events.md) operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set **transactionId** when creating an event, you cannot change **transactionId** in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.|
 |type|String|The event type. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only|
-|uid|String|A unique identifier for calendar events. For recurring events, the value is the same for the series master and all of its occurrences including exceptions. This property will replace the current iCalUid property defined in the [event resource](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), which is different for each instance in a series.|
+|uid|String|A unique identifier for calendar events. For recurring events, the value is the same for the series master and all of its occurrences including exceptions.|
 |webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL cannot be accessed from within an iFrame.|
 
 > [!NOTE]
