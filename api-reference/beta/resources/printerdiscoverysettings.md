@@ -34,7 +34,7 @@ The following JSON shows a representation of the resource.
 {
   "@odata.type": "#microsoft.graph.printerDiscoverySettings",
   "airPrint": {
-    "incompatiblePrinters": "hide"
+    "@odata.type": "microsoft.graph.airPrintSettings"
   }
 }
 ```
