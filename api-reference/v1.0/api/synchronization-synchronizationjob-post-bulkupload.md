@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Perform a new bulk upload using the synchronization job. Use this API endpoint to ingest data into the Microsoft Entra synchronization service. The synchronization service will apply the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
+Perform a new bulk upload using the synchronization job. Use this API endpoint to ingest data into the Microsoft Entra synchronization service. The synchronization service applies the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
 
 > [!NOTE]
 > This API is in public preview and available for use only with [API-driven inbound provisioning apps](/azure/active-directory/app-provisioning/inbound-provisioning-api-configure-app).
@@ -55,9 +55,9 @@ In the request body, supply a [bulkUpload](../resources/synchronization-bulkuplo
 | HTTP Status Code | Explanation |
 |:---|:---|
 | 202 (Accepted) | The bulk request is staged for execution and will be processed by the associated provisioning job. The `Location` key in the response header points to the [provisioning logs endpoint](provisioningobjectsummary-list.md) that can be used to check the status of the bulk request provisioning. |
-| 400 (Bad Request) | Request is unparsable, syntactically incorrect or violates the schema. The most common cause of this error is the absence of the request header `Content-Type`. Make sure it is present and set to `application/scim+json`.|
+| 400 (Bad Request) | Request is unparsable, syntactically incorrect or violates the schema. The most common cause of this error is the absence of the request header `Content-Type`. Make sure it's present and set to `application/scim+json`.|
 | 401 (Unauthorized) | The authorization header is invalid or missing. Ensure that the authorization header has a valid access token. |
-| 403 (Forbidden) |  Operation is not permitted based on the supplied authorization. Make sure that the API client has the Graph API permission `SynchronizationData-User.Upload`.|
+| 403 (Forbidden) |  Operation isn't permitted based on the supplied authorization. Make sure that the API client has the Graph API permission `SynchronizationData-User.Upload`.|
 
 ## Examples
 
@@ -70,7 +70,7 @@ In the request body, supply a [bulkUpload](../resources/synchronization-bulkuplo
 #### Request
 The following bulk request uses the SCIM standard Core User and Enterprise User schema. It has two user operations in the **Operations** array. You can send a maximum of 50 user operations in each bulk request.
 
-**Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. It will resolve the manager reference using the `manager.value` field. Specify the `externalId` of the user's manager in this field. In the example below, the provisioning service will assign *Barbara Jensen* as the manager for *Kathy Jensen*.
+**Processing details:** The provisioning service reads the two user records. It uses the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. It resolves the manager reference using the `manager.value` field. Specify the `externalId` of the user's manager in this field. In the example below, the provisioning service assigns *Barbara Jensen* as the manager for *Kathy Jensen*.
 
 
 <!-- {
@@ -242,9 +242,9 @@ Content-Type: application/json
 ### Example 2: Bulk upload using SCIM custom schema namespace
 
 #### Request
-The following bulk request uses the SCIM standard Core User and Enterprise User schema. It also has an additional custom schema namespace called `urn:contoso:employee` with two attributes `HireDate` and `JobCode`. The `schemas` array in the data object is updated to include the custom schema namespace.
+The following bulk request uses the SCIM standard Core User and Enterprise User schema. It has another custom schema namespace called `urn:contoso:employee` with two attributes `HireDate` and `JobCode`. The `schemas` array in the data object is updated to include the custom schema namespace.
 
-**Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. If you have included the two custom attributes `urn:contoso:employee:HireDate` and `urn:contoso:employee:JobCode` in your provisioning job attribute mapping, it will be processed, and the corresponding target attributes will be set.
+**Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. If you include the two custom attributes `urn:contoso:employee:HireDate` and `urn:contoso:employee:JobCode` in your provisioning job attribute mapping, it is processed, and the corresponding target attributes are set.
 
 
 <!-- {
@@ -427,7 +427,7 @@ Content-Type: application/json
 
 #### Request
 
-The following bulk request illustrates how to update attributes of an existing Microsoft Entra user, to change the user's department and set that the user cannot sign in.  This example assumes you have configured a mapping for the **externalId**, **department** and **active** fields, and you have an existing Microsoft Entra user that has attribute matching the **externalId**.  
+The following bulk request illustrates how to update attributes of an existing Microsoft Entra user, to change the user's department and set that the user can't sign in.  This example assumes you have configured a mapping for the **externalId**, **department** and **active** fields, and you have an existing Microsoft Entra user that has attribute matching the **externalId**.  
 
 <!-- {
   "blockType": "request",
