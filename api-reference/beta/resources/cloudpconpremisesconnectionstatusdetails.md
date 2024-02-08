@@ -1,5 +1,5 @@
 ---
-title: "cloudPcOnPremisesConnectionStatusDetails resource type"
+title: "cloudPcOnPremisesConnectionStatusDetails resource type (deprecated)"
 description: "The status details of a Cloud PC Azure network connection."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcOnPremisesConnectionStatusDetails resource type
+# cloudPcOnPremisesConnectionStatusDetails resource type (deprecated)
 
 Namespace: microsoft.graph
 
