@@ -46,12 +46,12 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 None.
 
 ## JSON representation
-This is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.federatedTokenValidationPolicy",
-  "baseType": "Microsoft.DirectoryServices.directoryObject",
+  "baseType": "microsoft.graph.directoryObject",
   "openType": false
 }
 -->
