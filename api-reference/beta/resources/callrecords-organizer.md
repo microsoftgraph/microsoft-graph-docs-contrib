@@ -34,14 +34,16 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.callRecords.organizer",
   "optionalProperties": [
     "id",
-    "identity"
+    "identity",
+    "administrativeUnitInfos"
   ],
   "openType": true
 } -->
 ```json
 {
   "id": "String (identity)",
-  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"}
+  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
+  "administrativeUnitInfos": [{"@odata.type": "microsoft.graph.callRecords.administrativeUnitInfo"}]
 }
 ```
 
