@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!CAUTION]
+> The **cloudPcOnPremisesConnectionStatusDetails** resource is deprecated and stopped returning data on January 31, 2024. Going forward, use the [cloudPcOnPremisesConnectionStatusDetail](../resources/cloudpconpremisesconnectionstatusdetail) resource.
+
 The status details of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
