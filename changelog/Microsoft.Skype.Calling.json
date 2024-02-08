@@ -3963,7 +3963,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendVirtualAppointmentReminderSms",
           "ChangeType": "Addition",
-          "Description": "Added the [sendVirtualAppointmentReminderSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-1.0) method to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sendVirtualAppointmentReminderSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-1.0) method.",
           "Target": "onlineMeeting"
         },
         {
@@ -3971,7 +3971,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendVirtualAppointmentSms",
           "ChangeType": "Addition",
-          "Description": "Added the [sendVirtualAppointmentSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0) method to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sendVirtualAppointmentSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0) method.",
           "Target": "onlineMeeting"
         }
       ],
