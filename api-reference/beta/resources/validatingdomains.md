@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the types of domains to which the federated token validation will apply.
+Defines the types of domains to which the federated token validation applies.
 This is an abstract type.
 
 ## Properties
