@@ -63,10 +63,12 @@ After migration, the consents will merge because they are under the same applica
   **Scope**: [Legal, Engineering]
  
 > [!NOTE]
-> When merging consents, new consents can be introduced. In this example, the consent for extracting Columns [Message] data for the group [Legal] has been introduced and for [SentTime] data of the group [Engineering]. Similarly, both sinks will have consent to the datasets, columns, and scopes. If this is not the desired state, review the consents and revoke those that would conflict. For any questions, reach out to dataconnect@microsoft.com.
+> When merging consents, new consents can be introduced. In this example, the consent for extracting Columns [Message] data for the group [Legal] has been introduced and for [SentTime] data of the group [Engineering]. Similarly, both sinks will have consent to the datasets, columns, and scopes. If this is not the desired state, either revoke the consents that you do not want migrated in PAM prior to migration or fix any unintended changes in the new experiences after migration. For any questions, reach out to dataconnect@microsoft.com.
 
 ## Option 3: Automatic migration
 
 <!-- Update 12/15/2023 changed date per developer guidance to mid 2024. -->
 
-Starting in mid-2024, existing Microsoft Graph Data Connect customers who didn't perform the one-click automatic migration will be migrated automatically to the new onboarding experience. Any customer who is not migrated by this time will be migrated to the new experience on their first run of Microsoft Graph Data Connect.
+Between March 31st, 2024 and April 30th, 2024, existing Microsoft Graph Data Connect customers who didn't perform the one-click automatic migration will be migrated automatically to the new onboarding experience on their first pipeline run of Microsoft Graph Data Connect. During this time, no new PAM requests will be created. In both cases (one-click migration and automatic migration), MGDC will convert all your approved PAM requests for MGDC into MGDC app registrations and authorizations for the new experience so that existing pipelines continue working without any required modifications. 
+
+After April 30th, 2024, if your tenant has not been migrated to the new experience, your tenant's PAM approvals will NOT be converted and you will need to manually use the new onboarding experience to enable your pipelines again after this date.
