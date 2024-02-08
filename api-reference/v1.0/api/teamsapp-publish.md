@@ -269,6 +269,10 @@ Content-type: application/json
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "create_teamsapp_4"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
@@ -278,9 +282,16 @@ Content-type: application/zip
 
 #### Response
 
-If there are any errors or missing information in your app manifest, API sends the following response:
+The following example shows the response.
 
-```json
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "error": {
         "code": "BadRequest",
@@ -306,6 +317,7 @@ If there are any errors or missing information in your app manifest, API sends t
         }
     }
 }
+```
 ```
 
 ## See also
