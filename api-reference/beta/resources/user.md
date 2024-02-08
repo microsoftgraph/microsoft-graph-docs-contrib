@@ -434,6 +434,7 @@ The following is a JSON representation of the resource.
   },
   "companyName": "String",
   "consentProvidedForMinor": "String",
+  "convertedToInternalUserDateTime": "String (timestamp)",
   "country": "String",
   "createdDateTime": "2019-02-07T21:53:13.067Z",
   "creationType": "String",
