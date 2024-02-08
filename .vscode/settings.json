@@ -4,5 +4,13 @@
     ],
     "cSpell.words": [
         "skiptoken"
+    ],
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "workload.mapping.v1.json"
+            ],
+            "url": "file:///C%3a/Source/Repos/msgraph-toc-gen/schema/workload.mapping.schema.json"
+        }
     ]
 }
