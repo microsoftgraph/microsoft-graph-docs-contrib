@@ -18,7 +18,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2024: New and generally available
 
-Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](upgrade.md)
+Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](/graph/toolkit/upgrade)
 
 ## January 2024: New and generally available
 

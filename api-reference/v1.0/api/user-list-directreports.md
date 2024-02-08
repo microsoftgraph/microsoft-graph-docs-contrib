@@ -38,6 +38,8 @@ GET /users/{id | userPrincipalName}/directReports
 
 To retrieve the user and their direct reports, use the `$expand` query parameter:
 
+>**Note**: `$expand` returns a maximum of 20 objects. For details, see [query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=directReports
