@@ -119,7 +119,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following example shows a request disabling all permissions by passing an empty collection as the value for `allowedResourceActions`.
+The following example shows a request that disables all permissions by passing an empty collection as the value for `allowedResourceActions`.
 <!-- {
   "blockType": "request",
   "name": "patch-shiftsRoleDefinitions-example2"
