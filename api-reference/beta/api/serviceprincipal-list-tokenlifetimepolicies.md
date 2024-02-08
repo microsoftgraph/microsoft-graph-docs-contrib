@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/2a8f9e7a-af01-413a-9592-c
 
 ---
 
-
 ### Response
 
 The following example shows the response.

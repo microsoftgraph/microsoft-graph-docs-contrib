@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.teams.item.schedule.offerShiftRequests.offer_shift_requests_request_builder import OfferShiftRequestsRequestBuilder
+from msgraph.generated.models.offer_shift_request import OfferShiftRequest
 
 graph_client = GraphServiceClient(credentials, scopes)
 

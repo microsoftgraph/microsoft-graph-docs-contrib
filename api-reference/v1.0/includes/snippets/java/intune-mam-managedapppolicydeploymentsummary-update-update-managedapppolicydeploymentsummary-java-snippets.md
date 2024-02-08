@@ -4,24 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ManagedAppPolicyDeploymentSummary managedAppPolicyDeploymentSummary = new ManagedAppPolicyDeploymentSummary();
-managedAppPolicyDeploymentSummary.displayName = "Display Name value";
-managedAppPolicyDeploymentSummary.configurationDeployedUserCount = 14;
-managedAppPolicyDeploymentSummary.lastRefreshTime = OffsetDateTimeSerializer.deserialize("2017-01-01T08:01:30.1240368+00:00");
-LinkedList<ManagedAppPolicyDeploymentSummaryPerApp> configurationDeploymentSummaryPerAppList = new LinkedList<ManagedAppPolicyDeploymentSummaryPerApp>();
-ManagedAppPolicyDeploymentSummaryPerApp configurationDeploymentSummaryPerApp = new ManagedAppPolicyDeploymentSummaryPerApp();
+managedAppPolicyDeploymentSummary.setOdataType("#microsoft.graph.managedAppPolicyDeploymentSummary");
+managedAppPolicyDeploymentSummary.setDisplayName("Display Name value");
+managedAppPolicyDeploymentSummary.setConfigurationDeployedUserCount(14);
+OffsetDateTime lastRefreshTime = OffsetDateTime.parse("2017-01-01T00:01:30.1240368-08:00");
+managedAppPolicyDeploymentSummary.setLastRefreshTime(lastRefreshTime);
+LinkedList<ManagedAppPolicyDeploymentSummaryPerApp> configurationDeploymentSummaryPerApp = new LinkedList<ManagedAppPolicyDeploymentSummaryPerApp>();
+ManagedAppPolicyDeploymentSummaryPerApp managedAppPolicyDeploymentSummaryPerApp = new ManagedAppPolicyDeploymentSummaryPerApp();
+managedAppPolicyDeploymentSummaryPerApp.setOdataType("microsoft.graph.managedAppPolicyDeploymentSummaryPerApp");
 AndroidMobileAppIdentifier mobileAppIdentifier = new AndroidMobileAppIdentifier();
-mobileAppIdentifier.packageId = "Package Id value";
-configurationDeploymentSummaryPerApp.mobileAppIdentifier = mobileAppIdentifier;
-configurationDeploymentSummaryPerApp.configurationAppliedUserCount = 13;
-configurationDeploymentSummaryPerAppList.add(configurationDeploymentSummaryPerApp);
-managedAppPolicyDeploymentSummary.configurationDeploymentSummaryPerApp = configurationDeploymentSummaryPerAppList;
-managedAppPolicyDeploymentSummary.version = "Version value";
+mobileAppIdentifier.setOdataType("microsoft.graph.androidMobileAppIdentifier");
+mobileAppIdentifier.setPackageId("Package Id value");
+managedAppPolicyDeploymentSummaryPerApp.setMobileAppIdentifier(mobileAppIdentifier);
+managedAppPolicyDeploymentSummaryPerApp.setConfigurationAppliedUserCount(13);
+configurationDeploymentSummaryPerApp.add(managedAppPolicyDeploymentSummaryPerApp);
+managedAppPolicyDeploymentSummary.setConfigurationDeploymentSummaryPerApp(configurationDeploymentSummaryPerApp);
+managedAppPolicyDeploymentSummary.setVersion("Version value");
+ManagedAppPolicyDeploymentSummary result = graphClient.deviceAppManagement().iosManagedAppProtections().byIosManagedAppProtectionId("{iosManagedAppProtection-id}").deploymentSummary().patch(managedAppPolicyDeploymentSummary);
 
-graphClient.deviceAppManagement().iosManagedAppProtections("{iosManagedAppProtectionId}").deploymentSummary()
-	.buildRequest()
-	.patch(managedAppPolicyDeploymentSummary);
 
 ```

@@ -95,7 +95,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/getPasswordSingleSignOnCre
 
 ---
 
-
 ### Response
 
 The following example shows the response.

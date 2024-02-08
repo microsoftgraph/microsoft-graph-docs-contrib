@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.vpp_token import VppToken
 
 graph_client = GraphServiceClient(credentials, scopes)
 

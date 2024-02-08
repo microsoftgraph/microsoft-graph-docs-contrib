@@ -15,6 +15,6 @@ $queryParameters->query = "Adventure";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->bookingBusinesses()->get($requestConfiguration)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->get($requestConfiguration)->wait();
 
 ```

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.send_virtual_appointment_sms_post_request_body import SendVirtualAppointmentSmsPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
