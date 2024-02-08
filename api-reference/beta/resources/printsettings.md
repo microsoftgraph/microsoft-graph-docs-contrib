@@ -36,9 +36,7 @@ The following JSON shows a representation of the resource.
 {
   "documentConversionEnabled": true,
   "printerDiscoverySettings": {
-    "airPrint": {
-      "incompatiblePrinters": "hide"
-    }
+    "@odata.type": "microsoft.graph.printerDiscoverySettings"
   }
 }
 ```
