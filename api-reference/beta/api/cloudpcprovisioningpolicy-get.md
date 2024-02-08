@@ -44,7 +44,7 @@ This method supports `$select` and `$expand` OData query parameters to help cust
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcProvis
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -150,6 +150,9 @@ Content-Type: application/json
     "windowsSettings": {
       "language": "en-US"
     },
+    "windowsSetting": {
+        "locale": "en-US"
+    },
     "managedBy": "windows365",
     "provisioningType": "dedicated"
 }
@@ -159,7 +162,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -250,6 +253,9 @@ Content-Type: application/json
     "windowsSettings": {
       "language": "en-US"
     },
+    "windowsSetting": {
+        "locale": "en-US"
+    },
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",
@@ -271,7 +277,7 @@ The following example shows a request that retrieves the selected properties of 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -282,7 +288,7 @@ The following is an example of a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,displayName,domainJoinConfiguration,imageDisplayName,imageId,imageType,onPremisesConnectionId,windowsSettings,managedBy,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,domainJoinConfiguration,imageDisplayName,imageId,imageType,onPremisesConnectionId,windowsSetting,managedBy,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
 ```
 
 # [C#](#tab/csharp)
@@ -367,6 +373,9 @@ Content-Type: application/json
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
     "windowsSettings": {
       "language": "en-US"
+    },
+    "windowsSetting": {
+        "locale": "en-US"
     },
     "provisioningType": "dedicated"
 }

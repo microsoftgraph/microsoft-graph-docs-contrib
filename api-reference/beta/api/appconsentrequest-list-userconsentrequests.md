@@ -38,7 +38,7 @@ This method supports the `$select`, `$skip`, `$top`, `$filter` (`eq`), and `$o
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

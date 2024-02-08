@@ -41,7 +41,7 @@ DELETE /users/{userId}/onlineMeetings/{onlineMeetingId}/virtualAppointment
 ## Request headers
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional.       |
 
 ## Request body

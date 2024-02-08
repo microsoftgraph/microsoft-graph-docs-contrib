@@ -10,7 +10,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Group(
 	additional_data = {
-			"graphlearn_courses" : {
+			"bellowscollege_courses" : {
 					"course_id" : "123",
 					"course_name" : "New Managers",
 					"course_type" : "Online",

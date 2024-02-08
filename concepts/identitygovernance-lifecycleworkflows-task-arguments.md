@@ -88,6 +88,6 @@ The following example shows a task configuration to add a user to a Teams team. 
 }
 ```
 
-## Next steps
+## Related content
 
 + [Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
