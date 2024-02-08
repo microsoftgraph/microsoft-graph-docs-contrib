@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/{id}
+DELETE /solutions/bookingBusinesses/{id}
 
 ```
 ## Request headers
@@ -52,7 +52,7 @@ Here's an example of the request.
   "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
+DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
 ```
 
 # [C#](#tab/csharp)
