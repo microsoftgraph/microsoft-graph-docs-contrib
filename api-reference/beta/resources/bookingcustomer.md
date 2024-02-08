@@ -1,7 +1,7 @@
 ---
 title: "bookingCustomer resource type"
 description: "Represents a customer of a bookingBusiness."
-ms.localizationpriority: medium
+ms.localizationpriority: Normal
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: resourcePageType
@@ -23,16 +23,18 @@ Represents a customer of a [bookingBusiness](bookingbusiness.md).
 |[List customers](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md) collection | Get a list of **bookingCustomer** objects. |
 |[Create bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Create a new **bookingCustomer** object. |
 |[Get bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Read the properties and relationships of a **bookingCustomer** object.|
-|[Update](../api/bookingcustomer-update.md) | None	|Update a **bookingCustomer** object. |
+|[Update](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md)	|Update a **bookingCustomer** object. |
 |[Delete](../api/bookingcustomer-delete.md) | None |Delete a **bookingCustomer** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business and other addresses.|
+|createdDateTime|DateTimeOffset|The date, time and timezone when the customer was created.|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
 |id|String| The ID of the customer. Read-only.|
+|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the customer was last updated.|
 |phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
 
 ## Relationships
@@ -53,9 +55,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.bookingCustomer",
+  "id": "String (identifier)",
   "displayName": "String",
   "emailAddress": "String",
-  "id": "String (identifier)",
   "addresses": [
     {
       "@odata.type": "microsoft.graph.physicalAddress"
@@ -65,9 +68,10 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.phone"
     }
-  ]
+  ],
+  "createdDateTime": "String (timestamp)",
+  "lastUpdatedDateTime": "String (timestamp)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -11,7 +11,8 @@ mgc search query post --body '{\
       "entityTypes": [\
         "listItem"\
       ],\
-      "query": {\
+        "region": "US",\
+        "query": {\
         "queryString": "contoso",\
         "queryTemplate":"{searchTerms} CreatedBy:Bob"\
       },\
