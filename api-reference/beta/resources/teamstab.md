@@ -1,6 +1,6 @@
 ---
 title: "teamsTab resource type"
-description: "Represents a tab that's pinned (attached) to a channel or a chat."
+description: "Represents a tab pinned (attached) to a channel or a chat."
 ms.localizationpriority: medium
 author: "AkJo"
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a tab that's pinned (attached) to a [channel](channel.md) or a [chat](chat.md).
+Represents a tab pinned (attached) to a [channel](channel.md) or a [chat](chat.md).
 
 For more information on tabs, see [Build tabs for Teams](/microsoftteams/platform/tabs/what-are-tabs).
 
