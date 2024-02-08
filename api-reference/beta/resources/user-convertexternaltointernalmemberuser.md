@@ -35,7 +35,6 @@ In delegated scenarios, the calling user must have at least the *User Administra
 }
 -->
 ``` http
-POST /me/convertExternalToInternalMemberUser
 POST /users/{usersId}/convertExternalToInternalMemberUser
 ```
 
