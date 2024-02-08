@@ -11,6 +11,7 @@ cloudPcUserSetting.displayName = "Example";
 cloudPcUserSetting.selfServiceEnabled = true;
 CloudPcRestorePointSetting restorePointSetting = new CloudPcRestorePointSetting();
 restorePointSetting.frequencyInHours = 16;
+restorePointSetting.frequencyType = CloudPcRestorePointFrequencyType.SIXTEEN_HOURS;
 restorePointSetting.userRestoreEnabled = true;
 cloudPcUserSetting.restorePointSetting = restorePointSetting;
 cloudPcUserSetting.localAdminEnabled = false;

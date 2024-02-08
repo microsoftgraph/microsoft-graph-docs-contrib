@@ -15,9 +15,19 @@ A user is able to use the theme toggle component to set the default theme to `li
 
 The following example shows how the theme toggle sets the light or dark mode based on the user's preference.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-theme-toggle--user-preference-driven&source=docs&viewMode=story" height="500"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-theme-toggle--user-preference-driven&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-theme-toggle-html--user-preference-driven&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-theme-toggle-html--user-preference-driven&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-theme-toggle-react--user-preference-driven&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-theme-toggle-react--user-preference-driven&source=docs).
+
+---
 
 ## Properties
 

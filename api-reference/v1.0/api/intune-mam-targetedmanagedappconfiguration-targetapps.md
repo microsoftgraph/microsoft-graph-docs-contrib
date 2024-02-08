@@ -65,7 +65,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_mam_targetedmanagedappconfiguration_targetapps_targetapps_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/targetApps
-
 Content-type: application/json
 Content-length: 378
 

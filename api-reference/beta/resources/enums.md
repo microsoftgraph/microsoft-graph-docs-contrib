@@ -3110,6 +3110,7 @@ Possible values for user account types (group membership), per Windows definitio
 | :------ |
 | custom  |
 | gallery |
+| unknownFutureValue |
 
 ### chatType values
 
@@ -4612,3 +4613,12 @@ Possible values for user account types (group membership), per Windows definitio
 |direct|
 |qrCode|
 |unknownFutureValue|
+
+### bookingPageAccessControl values 
+
+|Member|
+|:---|
+|unrestricted|
+|restrictedToOrganization|
+|unknownFutureValue|
+
