@@ -20,8 +20,8 @@ Inherits from [bookingsAvailability](../resources/bookingsavailability.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|availabilityType|bookingsServiceAvailabilityType|Availability type defined by the given bookingsAvailability.The possible values are: `bookWhenStaffAreFree`, `notBookable`, `customWeeklyHours`, `unknownFutureValue`.|
-|businessHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The hours of operation in a week. This is set to null if the availability type is not customWeeklyHours|
+|availabilityType|bookingsServiceAvailabilityType|Availability type defined by the given bookingsAvailability. The possible values are: `bookWhenStaffAreFree`, `notBookable`, `customWeeklyHours`, `unknownFutureValue`.|
+|businessHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The hours of operation in a week. Business Hours is set to null if the availability type isn't customWeeklyHours.|
 |endDate|Date|End date of the availability window|
 |startDate|Date|Start date of the availability window|
 

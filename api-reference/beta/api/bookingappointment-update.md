@@ -52,7 +52,7 @@ PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 |customerName|String|The customer's name.|
 |customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. <br> You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by **customerId**.|
 |customerPhone|String|The customer's phone number.|
-|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
+|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment contains a list of customer information and each unit indicates the properties of a customer who is part of that appointment. Optional.|
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
@@ -63,15 +63,15 @@ PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 |isCustomerAllowedToManageBooking|Boolean|True indicates that the customer will be allowed to manage booking created by staff. Default value is false.|
 |invoiceUrl|String|The URL of the invoice in Microsoft Bookings.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment. Required.|
-|isLocationOnline|Boolean|True indicates that the appointment will be held online. Default value is false.|
+|isLocationOnline|Boolean|True indicates that the appointment is held online. Default value is false.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in the appointment. Required. |
-|optOutOfCustomerEmail|Boolean|True indicates that the [bookingCustomer](../resources/bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
+|optOutOfCustomerEmail|Boolean|True indicates that the [bookingCustomer](../resources/bookingcustomer.md) for this appointment doesn't wish to receive a confirmation for this appointment.|
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 |price|Double|The regular price for an appointment for the specified [bookingService](../resources/bookingservice.md).|
 |priceType|bookingPriceType| A setting to provide flexibility for the pricing structure of services. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
 |reminders|[bookingReminder](../resources/bookingreminder.md) collection|The collection of customer reminders sent for this appointment. The value of this property is available only when reading this **bookingAppointment** by its ID.|
-|selfServiceAppointmentId|String|An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.|
+|selfServiceAppointmentId|String|Another tracking ID for the appointment, if the appointment was created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of customer.|
 |serviceId|String|The ID of the [bookingService](../resources/bookingservice.md) associated with this appointment.|
 |serviceLocation|[location](../resources/location.md)|The location where the service is delivered.|
 |serviceName|String|The name of the **bookingService** associated with this appointment.<br>This property is optional when creating a new appointment. If not specified, it is computed from the service associated with the appointment by the **serviceId** property.|
