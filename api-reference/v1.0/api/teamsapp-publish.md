@@ -318,7 +318,6 @@ Content-type: application/json
     }
 }
 ```
-```
 
 ## See also
 
