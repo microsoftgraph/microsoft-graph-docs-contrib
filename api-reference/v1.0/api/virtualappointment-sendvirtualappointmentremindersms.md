@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Send an SMS reminder to external attendees for a Teams Virtual Appointment. This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) and attendees must have a valid United States phone number to receive SMS notifications.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -22,7 +20,11 @@ Send an SMS reminder to external attendees for a Teams Virtual Appointment. This
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "virtualappointment_sendvirtualappointmentremindersms" } -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]
+| Permission type                        | Permissions (from least to most privileged)                                                          |
+|:---------------------------------------|:-----------------------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | VirtualAppointmentNotification.Send |
+| Delegated (personal Microsoft account) | Not supported.                                                                                       |
+| Application                            | VirtualAppointmentNotification.Send                                        |
 
 
 ## HTTP request
@@ -69,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentReminderSms
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentReminderSms
 
 { 
     "attendees": [ 
