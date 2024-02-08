@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Convert an externally authenticated user into an internal user. The user will be able to sign into the host tenant as an internal user and access resources as a member. For more information about how the two user types differ, see [What are the default user permissions in Microsoft Entra ID?](/entra/fundamentals/users-default-permissions?context=graph%2Fcontext)
+Convert an externally authenticated user into an internal user. The user is able to sign into the host tenant as an internal user and access resources as a member. For more information about how the two user types differ, see [What are the default user permissions in Microsoft Entra ID?](/entra/fundamentals/users-default-permissions?context=graph%2Fcontext)
 
 ## Permissions
 
@@ -55,8 +55,8 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |mail|String|Optional. |
-|passwordProfile|[passwordProfile](../resources/passwordprofile.md)|Required value for users whose authentication is managed in the cloud.|
-|userPrincipalName|String|Required for cloud users to change the **userPrincipalName**. Not requried for on-premises synced users, as their **userPrincipalName** is managed on-prem.|
+|passwordProfile|[passwordProfile](../resources/passwordprofile.md)|Required for users whose authentication is managed in the cloud.|
+|userPrincipalName|String|Required for cloud users to change the **userPrincipalName**. Not required for on-premises synced users, as their **userPrincipalName** is managed on-premises.|
 
 
 ## Response
@@ -156,7 +156,7 @@ Content-type: application/json
     "passwordProfile": {
         "password": "Zdi087#2jhkahf",
         "forceChangePasswordNextSignIn": "true"
-    }
+    },
     "mail": "AdeleV@contoso.com"
 }
 ```
@@ -213,7 +213,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "0b8cc234-ef87-4015-9785-cbb42000d41c"
+    "id": "0b8cc234-ef87-4015-9785-cbb42000d41c",
     "displayName" : "user1Name",
     "userPrincipalName" : "newUpn@contoso.com",
     "convertedToInternalUserDateTime" : "2024-12-31T23:59:59.9999999"
