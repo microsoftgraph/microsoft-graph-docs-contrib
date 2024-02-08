@@ -18,7 +18,7 @@ Represents tenant-wide settings to configure the behavior of printers when print
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|incompatiblePrinters|incompatiblePrinterSettings|This enum describes whether Universal Print hides printers from macOS when they don't support all capabilities required by the operating system as defined by AirPrint.|
+|incompatiblePrinters|[incompatiblePrinterSettings](#incompatibleprintersettings-values)|Describes whether Universal Print hides printers from macOS when they don't support all capabilities required by the operating system as defined by AirPrint.|
 
 ### incompatiblePrinterSettings values 
 
@@ -44,6 +44,6 @@ The following JSON shows a representation of the resource.
 }
 ```
 
-## Credit notice
+### Credit notice
 
 **AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.
