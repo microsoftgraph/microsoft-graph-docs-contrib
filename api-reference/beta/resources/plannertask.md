@@ -103,6 +103,8 @@ Here's a JSON representation of the resource.
   "dueDateTime": "String (timestamp)",
   "hasDescription": "Boolean",
   "id": "String (identifier)",
+  "isOnMyDay": "Boolean",
+  "isOnMyDayLastModifiedDate": "Date",
   "orderHint": "String",
   "percentComplete": "Int32",
   "planId": "String",
