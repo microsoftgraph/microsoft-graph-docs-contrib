@@ -226,5 +226,3 @@ HTTP/1.1 204 No Content
 ## Permissions
 
 The assignments API supports delegated (per user) only. 
-
-Assignment API endpoints return a large amount of data. You can use the [filter](/graph/query-parameters#filter-parameter) [OData query parameter](/graph/query-parameters) to handle the data as needed. 
