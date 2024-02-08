@@ -40,7 +40,7 @@ The following JSON shows a representation of the resource.
 -->
 ``` json
 {
-  "incompatiblePrinters": "hide"
+  "incompatiblePrinters": "string"
 }
 ```
 
