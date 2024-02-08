@@ -33,7 +33,7 @@ POST /deviceManagement/virtualEndpoint/crossCloudGovernmentOrganizationMapping
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 |X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the Microsoft Entra token of the government cloud tenant.|
 

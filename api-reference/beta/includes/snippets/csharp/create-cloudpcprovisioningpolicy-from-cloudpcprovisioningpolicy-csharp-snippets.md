@@ -16,13 +16,8 @@ var requestBody = new CloudPcProvisioningPolicy
 	DisplayName = "Display Name value",
 	DomainJoinConfiguration = new CloudPcDomainJoinConfiguration
 	{
+		DomainJoinType = CloudPcDomainJoinType.HybridAzureADJoin,
 		OnPremisesConnectionId = "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"domainJoinType" , "hybridAzureADJoin"
-			},
-		},
 	},
 	DomainJoinConfigurations = new List<CloudPcDomainJoinConfiguration>
 	{
@@ -46,6 +41,10 @@ var requestBody = new CloudPcProvisioningPolicy
 	WindowsSettings = new CloudPcWindowsSettings
 	{
 		Language = "en-US",
+	},
+	WindowsSetting = new CloudPcWindowsSetting
+	{
+		Locale = "en-US",
 	},
 	ProvisioningType = CloudPcProvisioningType.Dedicated,
 };
