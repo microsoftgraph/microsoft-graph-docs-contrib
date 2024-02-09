@@ -32,7 +32,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
 |anonymousJoinWebUrl|String|The URL of the meeting to join anonymously.|
-|appointmentLabel|String|User can stamp a custom label on the appointment.|
+|appointmentLabel|String|The user can stamp a custom label on the appointment.|
 |createdDateTime|DateTimeOffset|The date, time, and timezone when the appointment was created.	|
 |customerEmailAddress|String|The SMTP address of the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
 |customerId|String|The ID of the [bookingCustomer](bookingcustomer.md) for this appointment. If no ID is specified when an appointment is created, then a new **bookingCustomer** object is created. Once set, you should consider the **customerId** immutable.|
