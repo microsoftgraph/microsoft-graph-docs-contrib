@@ -15,6 +15,8 @@ Namespace: microsoft.graph.partners.billing
 
 Export the unbilled Azure usage data for a specific billing period and a given currency.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

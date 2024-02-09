@@ -4,24 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<EdiscoveryReviewTag> tagsToAddList = new LinkedList<EdiscoveryReviewTag>();
-EdiscoveryReviewTag tagsToAdd = new EdiscoveryReviewTag();
-tagsToAdd.id = "d3d99dc704a74801b792b3e1e722aa0d";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-tagsToAddList.add(tagsToAdd);
-EdiscoveryReviewTagCollectionResponse ediscoveryReviewTagCollectionResponse = new EdiscoveryReviewTagCollectionResponse();
-ediscoveryReviewTagCollectionResponse.value = tagsToAddList;
-EdiscoveryReviewTagCollectionPage ediscoveryReviewTagCollectionPage = new EdiscoveryReviewTagCollectionPage(ediscoveryReviewTagCollectionResponse, null);
+com.microsoft.graph.security.cases.ediscoverycases.item.reviewsets.item.queries.item.microsoftgraphsecurityapplytags.ApplyTagsPostRequestBody applyTagsPostRequestBody = new com.microsoft.graph.security.cases.ediscoverycases.item.reviewsets.item.queries.item.microsoftgraphsecurityapplytags.ApplyTagsPostRequestBody();
+LinkedList<com.microsoft.graph.models.security.EdiscoveryReviewTag> tagsToAdd = new LinkedList<com.microsoft.graph.models.security.EdiscoveryReviewTag>();
+com.microsoft.graph.models.security.EdiscoveryReviewTag ediscoveryReviewTag = new com.microsoft.graph.models.security.EdiscoveryReviewTag();
+ediscoveryReviewTag.setId("d3d99dc704a74801b792b3e1e722aa0d");
+tagsToAdd.add(ediscoveryReviewTag);
+applyTagsPostRequestBody.setTagsToAdd(tagsToAdd);
+graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").reviewSets().byEdiscoveryReviewSetId("{ediscoveryReviewSet-id}").queries().byEdiscoveryReviewSetQueryId("{ediscoveryReviewSetQuery-id}").microsoftGraphSecurityApplyTags().post(applyTagsPostRequestBody);
 
-graphClient.security().cases().ediscoveryCases("58399dff-cebe-478f-b1af-d3227f1fd645").reviewSets("63ef0fd7-0db2-45eb-a9d7-7d75c8239873").queries("5f426fdc-f027-40db-b7cc-453cf06dc996")
-	.applyTags(EdiscoveryReviewSetQueryApplyTagsParameterSet
-		.newBuilder()
-		.withTagsToAdd(tagsToAddList)
-		.withTagsToRemove(null)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

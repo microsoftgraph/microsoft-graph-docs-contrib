@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OnenoteSection onenoteSection = new OnenoteSection();
-onenoteSection.displayName = "Section name";
+onenoteSection.setDisplayName("Section name");
+OnenoteSection result = graphClient.me().onenote().sectionGroups().bySectionGroupId("{sectionGroup-id}").sections().post(onenoteSection);
 
-graphClient.me().onenote().sectionGroups("{id}").sections()
-	.buildRequest()
-	.post(onenoteSection);
 
 ```

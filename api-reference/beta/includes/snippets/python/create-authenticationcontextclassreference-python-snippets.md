@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.authentication_context_class_reference import AuthenticationContextClassReference
 
 graph_client = GraphServiceClient(credentials, scopes)
 

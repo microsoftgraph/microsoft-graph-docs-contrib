@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String clientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.communications().calls("{id}")
-	.subscribeToTone(CallSubscribeToToneParameterSet
-		.newBuilder()
-		.withClientContext(clientContext)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.communications.calls.item.subscribetotone.SubscribeToTonePostRequestBody subscribeToTonePostRequestBody = new com.microsoft.graph.beta.communications.calls.item.subscribetotone.SubscribeToTonePostRequestBody();
+subscribeToTonePostRequestBody.setClientContext("fd1c7836-4d84-4e24-b6aa-23188688cc54");
+var result = graphClient.communications().calls().byCallId("{call-id}").subscribeToTone().post(subscribeToTonePostRequestBody);
+
 
 ```
