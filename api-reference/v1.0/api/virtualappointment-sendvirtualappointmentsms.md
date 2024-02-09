@@ -52,7 +52,7 @@ In the request body, supply a JSON object with the following parameters.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |attendees|[attendeeNotificationInfo](../resources/attendeeNotificationInfo.md) collection|Represents the phone number and time zone of an external attendee. Required.|
-|messageType|[virtualAppointmentMessageType](../resources/virtualAppointmentMessageType.md) collection|Indicates the type of SMS notification to send. The possible values are: `confirmation`, `reschedule`, and `cancellation`. Required.|
+|messageType|[virtualAppointmentMessageType](../resources/virtualappointmentmessagetype.md) collection|Indicates the type of SMS notification to send. The possible values are: `confirmation`, `reschedule`, and `cancellation`. Required.|
 
 ## Response
 
@@ -114,6 +114,7 @@ POST https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRh
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
