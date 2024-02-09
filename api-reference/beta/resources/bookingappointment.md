@@ -52,7 +52,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl|String|The URL of the invoice in Microsoft Bookings.|
 |isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
-|isLocationOnline|Boolean|True indicates that the appointment is held online. Default value is false.|
+|isLocationOnline|Boolean|Indicates that the appointment is held online. The default value is `false`.|
 |joinWebUrl|String|The URL of the online meeting for the appointment.|
 |lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the booking business was last updated.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in an appointment. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation.|
