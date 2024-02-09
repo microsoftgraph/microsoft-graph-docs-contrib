@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.mark_as_not_junk_post_request_body import MarkAsNotJunkPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

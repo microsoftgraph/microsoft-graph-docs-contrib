@@ -18636,6 +18636,10 @@ items:
                     href: api/team-list-permissiongrants.md
                   - name: Get open shifts across all joined teams
                     href: api/team-getopenshifts.md
+                  - name: Get shifts across all joined teams
+                    href: api/team-getshifts.md
+                  - name: Get time offs across all joined teams
+                    href: api/team-gettimesoff.md
                   - name: Team template
                     items:
                       - name: Team template
@@ -18780,6 +18784,8 @@ items:
                     href: api/shift-delete.md
                   - name: Stage for deletion
                     href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get shifts across all joined teams
+                    href: api/team-getshifts.md
               - name: Shift preferences
                 href: resources/shiftpreferences.md
                 items:
@@ -18838,6 +18844,8 @@ items:
                     href: api/timeoff-delete.md
                   - name: Stage for deletion
                     href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get times off across all joined teams
+                    href: api/team-gettimesoff.md
               - name: Time off reason
                 href: resources/timeoffreason.md
                 items:

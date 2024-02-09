@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-MeetingAttendanceReportCollectionPage attendanceReports = graphClient.solutions().virtualEvents().webinars("{webinarId}").sessions("{sessionId}").attendanceReports()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+MeetingAttendanceReportCollectionResponse result = graphClient.solutions().virtualEvents().webinars().byVirtualEventWebinarId("{virtualEventWebinar-id}").sessions().byVirtualEventSessionId("{virtualEventSession-id}").attendanceReports().get();
+
 
 ```

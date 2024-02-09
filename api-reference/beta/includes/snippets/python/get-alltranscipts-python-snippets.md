@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.onlineMeetings.getAllTranscripts.get_all_transcripts_request_builder import GetAllTranscriptsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
