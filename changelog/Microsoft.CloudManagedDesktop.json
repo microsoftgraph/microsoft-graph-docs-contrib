@@ -4301,7 +4301,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "type",
             "ChangeType": "Deprecation",
-            "Description": "Deprecated the **type** property of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource. The **type** property will stop returning data on January 31, 2024. Going forward, use the **connectionType** property.",
+            "Description": "Deprecated the **type** property of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource. The **type** property stopped returning data on January 31, 2024. Going forward, use the **connectionType** property.",
             "Target": "cloudPcOnPremisesConnection"
           },
           {
@@ -4317,7 +4317,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "healthCheckStatusDetails",
             "ChangeType": "Deprecation",
-            "Description": "Deprecated the **healthCheckStatusDetails** property of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource. The **healthCheckStatusDetails** property will stop returning data on January 31, 2024. Going forward, use the **healthCheckStatusDetail** property.",
+            "Description": "Deprecated the **healthCheckStatusDetails** property of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource. The **healthCheckStatusDetails** property stopped returning data on January 31, 2024. Going forward, use the **healthCheckStatusDetail** property.",
             "Target": "cloudPcOnPremisesConnection"
           },
           {
@@ -4333,7 +4333,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "additionalDetails",
             "ChangeType": "Deprecation",
-            "Description": "Deprecated the **additionalDetails** property of the [cloudPcOnPremisesConnectionHealthCheck](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta) resource. The **additionalDetails** property will stop returning data on January 31, 2024. Going forward, use the **additionalDetail** property.",
+            "Description": "Deprecated the **additionalDetails** property of the [cloudPcOnPremisesConnectionHealthCheck](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta) resource. The **additionalDetails** property stopped returning data on January 31, 2024. Going forward, use the **additionalDetail** property.",
             "Target": "cloudPcOnPremisesConnectionHealthCheck"
           },
           {
@@ -4349,7 +4349,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "cloudPcOnPremisesConnectionStatusDetails",
             "ChangeType": "Deprecation",
-            "Description": "Deprecated the [cloudPcOnPremisesConnectionStatusDetails](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetails?view=graph-rest-beta) resource. The **cloudPcOnPremisesConnectionStatusDetails** resource will stop returning data on January 31, 2024. Going forward, use the [cloudPcOnPremisesConnectionStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetail?view=graph-rest-beta) resource.",
+            "Description": "Deprecated the [cloudPcOnPremisesConnectionStatusDetails](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetails?view=graph-rest-beta) resource. The **cloudPcOnPremisesConnectionStatusDetails** resource stopped returning data on January 31, 2024. Going forward, use the [cloudPcOnPremisesConnectionStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetail?view=graph-rest-beta) resource.",
             "Target": "cloudPcOnPremisesConnectionStatusDetails"
           },            
           {
