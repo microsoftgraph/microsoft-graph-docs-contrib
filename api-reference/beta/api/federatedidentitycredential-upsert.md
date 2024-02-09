@@ -50,10 +50,9 @@ The following table lists the properties that are required when you create the [
 
 ## Response
 
-If successful:
+If successful, if an application object with **name** doesn't exist, this method returns a `201 Created` response code and a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object in the response body.
 
-- If an application object with **name** doesn't exist, this method returns a `201 Created` response code and a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object in the response body.
-- If an application object with **name** already exists, this method updates the [federatedIdentityCredential](../resources/federatedidentitycredential.md) object and returns a `204 No Content` response code.
+If an application object with **name** already exists, this method updates the [federatedIdentityCredential](../resources/federatedidentitycredential.md) object and returns a `204 No Content` response code.
 
 ## Examples
 

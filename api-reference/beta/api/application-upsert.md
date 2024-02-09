@@ -46,10 +46,9 @@ In the request body, supply a JSON representation of the [application](../resour
 
 ## Response
 
-If successful:
+If successful, if an application object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [application](../resources/application.md) object in the response body.
 
-- If an application object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [application](../resources/application.md) object in the response body.
-- If an application object with **uniqueName** already exists, this method updates the [application](../resources/application.md) object and returns a `204 No Content` response code.
+If an application object with **uniqueName** already exists, this method updates the [application](../resources/application.md) object and returns a `204 No Content` response code.
 
 ## Examples
 
