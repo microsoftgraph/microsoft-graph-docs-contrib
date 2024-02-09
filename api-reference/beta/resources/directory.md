@@ -1,6 +1,6 @@
 ---
 title: "directory resource type (deleted items)"
-description: ". Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
+description: "Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
 ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
@@ -15,7 +15,14 @@ Namespace: microsoft.graph
 
 Represents a deleted item in the directory. A deleted item is sent to the deleted items "container." Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
-Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md), and [user](user.md) resources.
+Currently, deleted items functionality is supported for the the following resources:
+- [administrative unit](../resources/administrativeunit.md)
+- [application](application.md)
+- [externalUserProfile](../resources/externaluserprofilemd)
+- [group](group.md)
+- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
+- [servicePrincipal](../resources/serviceprincipal.md)
+- [user](user.md)
 
 Inherits from [entity](entity.md).
 

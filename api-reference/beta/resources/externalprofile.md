@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines an external profile. The base type for [externalUserProfile](externaluserprofile.md) and [pendingExternalUserProfile](pendingexternaluserprofile.md).
+Defines an external profile. This object is the base type for [externalUserProfile](externaluserprofile.md) and [pendingExternalUserProfile](pendingexternaluserprofile.md) resource types.
 
 Inherits from [directoryObject](../resources/directoryobject.md).
 
@@ -28,9 +28,9 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |deletedDateTime|DateTimeOffset|Date and time when this external user profile was deleted. Always `null` when the object isn't deleted. Inherited from [directoryObject](../resources/directoryobject.md). |
 |department|String|The department of the external user profile. |
 |displayName|String|The display name of the external user profile.|
-|id|String|The unique identifier for the external user profile. For example, 12345678-9abc-def0-1234-56789abcde. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and don't rely on it being a GUID. Key. Not nullable. Read-only. Inherited from [entity](../resources/entity.md).|
-|isDiscoverable|Boolean|Represents whether the external user profile is discoverable in the directory. When `true`, this external profile shows up in Teams search. When `false`, this external profile doesn't show up in Teams search. |
-|isEnabled|Boolean|Represents whether the external user profile is enabled in the directory. This property is peer to the `accountEnabled` property on the [User](user.md) object. |
+|id|String|The unique identifier for the external user profile. Not nullable. Read-only. Inherited from [entity](../resources/entity.md).|
+|isDiscoverable|Boolean|Represents whether the external user profile is discoverable in the directory. When `true`, this external profile shows up in Teams search. |
+|isEnabled|Boolean|Represents whether the external user profile is enabled in the directory. This property is peer to the `accountEnabled` property on the [user](user.md) object. |
 |jobTitle|String|The job title of the external user profile.|
 |phoneNumber|String|The phone number of the external user profile. Must be in E164 format.|
 |supervisorId|String|The object ID of the supervisor of the external user profile. Supports `$filter` (`eq`, `startswith`).|

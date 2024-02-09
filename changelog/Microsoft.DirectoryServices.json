@@ -23,7 +23,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "externalUserProfiles",
           "ChangeType": "Addition",
-          "Description": "Added the **externalUserProfiles** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Description": "Added the **externalUserProfiles** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource. Deleted external user profiles can also be managed via the deletedItems functionality.",
           "Target": "directory"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "pendingExternalUserProfiles",
           "ChangeType": "Addition",
-          "Description": "Added the **pendingExternalUserProfiles** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Description": "Added the **pendingExternalUserProfiles** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource. Deleted pending external user profiles can also be managed via the deletedItems functionality.",
           "Target": "directory"
         }
       ],

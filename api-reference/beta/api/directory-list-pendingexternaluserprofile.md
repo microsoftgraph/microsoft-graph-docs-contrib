@@ -106,7 +106,6 @@ Content-type: application/json
                   "state":"WA",
                   "street":"One Microsoft Way"
                   },
-            "epoch":1,
             "createdBy":"67670e18-bf37-416c-b5c8-3bfdaad757cc",
             "supervisorId":null,
             "companyName":null
@@ -129,7 +128,6 @@ Content-type: application/json
                   "state":"WA",
                   "street":"One Microsoft Way"
                   },
-            "epoch":2,
             "createdBy":"67670e18-bf37-416c-b5c8-3bfdaad757cc",
             "supervisorId":null,
             "companyName":null
@@ -188,7 +186,6 @@ Content-type: application/json
                   "state":"WA",
                   "street":"One Microsoft Way"
                   },
-            "epoch":1,
             "createdBy":"67670e18-bf37-416c-b5c8-3bfdaad757cc",
             "supervisorId":null,
             "companyName":null

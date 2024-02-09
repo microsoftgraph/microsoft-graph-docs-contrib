@@ -98,7 +98,6 @@ Content-type: application/json
       "state": null,
       "street": null
   },
-  "epoch":1,
   "createdBy":"67670e18-bf37-416c-b5c8-3bfdaad757cc",
   "supervisorId":"fffba82a-fffc-ff3c-83e1-fc8ff9dfff",
   "companyName":"Vendor Market"
