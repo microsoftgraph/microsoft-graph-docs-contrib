@@ -4,25 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationAssignment educationAssignment = new EducationAssignment();
-educationAssignment.dueDateTime = OffsetDateTimeSerializer.deserialize("2022-09-16T00:00:00Z");
-educationAssignment.displayName = "Reading test 09.14";
+OffsetDateTime dueDateTime = OffsetDateTime.parse("2022-09-16T00:00:00Z");
+educationAssignment.setDueDateTime(dueDateTime);
+educationAssignment.setDisplayName("Reading test 09.14");
 EducationItemBody instructions = new EducationItemBody();
-instructions.contentType = BodyType.TEXT;
-instructions.content = "Read chapter 4";
-educationAssignment.instructions = instructions;
+instructions.setContentType(BodyType.Text);
+instructions.setContent("Read chapter 4");
+educationAssignment.setInstructions(instructions);
 EducationAssignmentPointsGradeType grading = new EducationAssignmentPointsGradeType();
-grading.maxPoints = 50;
-educationAssignment.grading = grading;
+grading.setOdataType("#microsoft.graph.educationAssignmentPointsGradeType");
+grading.setMaxPoints(50f);
+educationAssignment.setGrading(grading);
 EducationAssignmentClassRecipient assignTo = new EducationAssignmentClassRecipient();
-educationAssignment.assignTo = assignTo;
-educationAssignment.status = EducationAssignmentStatus.DRAFT;
-educationAssignment.allowStudentsToAddResourcesToSubmission = true;
+assignTo.setOdataType("#microsoft.graph.educationAssignmentClassRecipient");
+educationAssignment.setAssignTo(assignTo);
+educationAssignment.setStatus(EducationAssignmentStatus.Draft);
+educationAssignment.setAllowStudentsToAddResourcesToSubmission(true);
+EducationAssignment result = graphClient.education().classes().byEducationClassId("{educationClass-id}").assignments().post(educationAssignment);
 
-graphClient.education().classes("72a7baec-c3e9-4213-a850-f62de0adad5f").assignments()
-	.buildRequest()
-	.post(educationAssignment);
 
 ```

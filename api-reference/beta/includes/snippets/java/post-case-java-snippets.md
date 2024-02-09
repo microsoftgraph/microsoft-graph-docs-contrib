@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Case _case = new Case();
-_case.displayName = "My Case 1";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.compliance().ediscovery().cases()
-	.buildRequest()
-	.post(_case);
+com.microsoft.graph.beta.models.ediscovery.CaseEscaped caseEscaped = new com.microsoft.graph.beta.models.ediscovery.CaseEscaped();
+caseEscaped.setDisplayName("My Case 1");
+com.microsoft.graph.models.ediscovery.Case result = graphClient.compliance().ediscovery().cases().post(caseEscaped);
+
 
 ```

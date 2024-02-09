@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.groups.item.transitiveMembers.graph.user.user_request_builder import UserRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

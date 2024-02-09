@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.publish_post_request_body import PublishPostRequestBody
+from msgraph.generated.models.browser_site import BrowserSite
+from msgraph.generated.models.browser_shared_cookie import BrowserSharedCookie
 
 graph_client = GraphServiceClient(credentials, scopes)
 

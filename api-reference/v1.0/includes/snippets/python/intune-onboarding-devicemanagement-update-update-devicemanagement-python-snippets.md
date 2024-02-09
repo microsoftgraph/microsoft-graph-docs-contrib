@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_management import DeviceManagement
+from msgraph.generated.models.intune_brand import IntuneBrand
+from msgraph.generated.models.rgb_color import RgbColor
+from msgraph.generated.models.mime_content import MimeContent
 
 graph_client = GraphServiceClient(credentials, scopes)
 

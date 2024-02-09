@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows_mobile_m_s_i import WindowsMobileMSI
+from msgraph.generated.models.mime_content import MimeContent
 
 graph_client = GraphServiceClient(credentials, scopes)
 

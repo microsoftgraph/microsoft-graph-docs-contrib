@@ -4,38 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationRubricOutcome educationOutcome = new EducationRubricOutcome();
-LinkedList<RubricQualityFeedbackModel> rubricQualityFeedbackList = new LinkedList<RubricQualityFeedbackModel>();
-RubricQualityFeedbackModel rubricQualityFeedback = new RubricQualityFeedbackModel();
-rubricQualityFeedback.qualityId = "9a145aa8-f3d9-43a1-8f77-5387ff0693f2";
+educationOutcome.setOdataType("#microsoft.graph.educationRubricOutcome");
+LinkedList<RubricQualityFeedbackModel> rubricQualityFeedback = new LinkedList<RubricQualityFeedbackModel>();
+RubricQualityFeedbackModel rubricQualityFeedbackModel = new RubricQualityFeedbackModel();
+rubricQualityFeedbackModel.setQualityId("9a145aa8-f3d9-43a1-8f77-5387ff0693f2");
 EducationItemBody feedback = new EducationItemBody();
-feedback.content = "This is feedback specific to the first quality of the rubric.";
-feedback.contentType = BodyType.TEXT;
-rubricQualityFeedback.feedback = feedback;
-rubricQualityFeedbackList.add(rubricQualityFeedback);
-RubricQualityFeedbackModel rubricQualityFeedback1 = new RubricQualityFeedbackModel();
-rubricQualityFeedback1.qualityId = "d2331fb2-2761-402e-8de6-93e0afaa076e";
+feedback.setContent("This is feedback specific to the first quality of the rubric.");
+feedback.setContentType(BodyType.Text);
+rubricQualityFeedbackModel.setFeedback(feedback);
+rubricQualityFeedback.add(rubricQualityFeedbackModel);
+RubricQualityFeedbackModel rubricQualityFeedbackModel1 = new RubricQualityFeedbackModel();
+rubricQualityFeedbackModel1.setQualityId("d2331fb2-2761-402e-8de6-93e0afaa076e");
 EducationItemBody feedback1 = new EducationItemBody();
-feedback1.content = "This is feedback specific to the second quality of the rubric.";
-feedback1.contentType = BodyType.TEXT;
-rubricQualityFeedback1.feedback = feedback1;
-rubricQualityFeedbackList.add(rubricQualityFeedback1);
-educationOutcome.rubricQualityFeedback = rubricQualityFeedbackList;
-LinkedList<RubricQualitySelectedColumnModel> rubricQualitySelectedLevelsList = new LinkedList<RubricQualitySelectedColumnModel>();
-RubricQualitySelectedColumnModel rubricQualitySelectedLevels = new RubricQualitySelectedColumnModel();
-rubricQualitySelectedLevels.qualityId = "9a145aa8-f3d9-43a1-8f77-5387ff0693f2";
-rubricQualitySelectedLevels.columnId = "4fb17a1d-5681-46c2-a295-4e305c3eae23";
-rubricQualitySelectedLevelsList.add(rubricQualitySelectedLevels);
-RubricQualitySelectedColumnModel rubricQualitySelectedLevels1 = new RubricQualitySelectedColumnModel();
-rubricQualitySelectedLevels1.qualityId = "d2331fb2-2761-402e-8de6-93e0afaa076e";
-rubricQualitySelectedLevels1.columnId = "aac076bf-51ba-48c5-a2e0-ee235b0b9740";
-rubricQualitySelectedLevelsList.add(rubricQualitySelectedLevels1);
-educationOutcome.rubricQualitySelectedLevels = rubricQualitySelectedLevelsList;
+feedback1.setContent("This is feedback specific to the second quality of the rubric.");
+feedback1.setContentType(BodyType.Text);
+rubricQualityFeedbackModel1.setFeedback(feedback1);
+rubricQualityFeedback.add(rubricQualityFeedbackModel1);
+educationOutcome.setRubricQualityFeedback(rubricQualityFeedback);
+LinkedList<RubricQualitySelectedColumnModel> rubricQualitySelectedLevels = new LinkedList<RubricQualitySelectedColumnModel>();
+RubricQualitySelectedColumnModel rubricQualitySelectedColumnModel = new RubricQualitySelectedColumnModel();
+rubricQualitySelectedColumnModel.setQualityId("9a145aa8-f3d9-43a1-8f77-5387ff0693f2");
+rubricQualitySelectedColumnModel.setColumnId("4fb17a1d-5681-46c2-a295-4e305c3eae23");
+rubricQualitySelectedLevels.add(rubricQualitySelectedColumnModel);
+RubricQualitySelectedColumnModel rubricQualitySelectedColumnModel1 = new RubricQualitySelectedColumnModel();
+rubricQualitySelectedColumnModel1.setQualityId("d2331fb2-2761-402e-8de6-93e0afaa076e");
+rubricQualitySelectedColumnModel1.setColumnId("aac076bf-51ba-48c5-a2e0-ee235b0b9740");
+rubricQualitySelectedLevels.add(rubricQualitySelectedColumnModel1);
+educationOutcome.setRubricQualitySelectedLevels(rubricQualitySelectedLevels);
+EducationOutcome result = graphClient.education().classes().byEducationClassId("{educationClass-id}").assignments().byEducationAssignmentId("{educationAssignment-id}").submissions().byEducationSubmissionId("{educationSubmission-id}").outcomes().byEducationOutcomeId("{educationOutcome-id}").patch(educationOutcome);
 
-graphClient.education().classes("acdefc6b-2dc6-4e71-b1e9-6d9810ab1793").assignments("cf6005fc-9e13-44a2-a6ac-a53322006454").submissions("d1bee293-d8bb-48d4-af3e-c8cb0e3c7fe7").outcomes("9c0f2850-ff8f-4fd6-b3ac-e23077b59141")
-	.buildRequest()
-	.patch(educationOutcome);
 
 ```
