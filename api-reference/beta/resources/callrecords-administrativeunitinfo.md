@@ -1,6 +1,6 @@
 ---
 author: "Datar89"
-description: "Represents an object that expose information about the administrative units associated to a call participant."
+description: "Represents an object that exposes information about the administrative units associated to a call participant."
 title: "administrativeUnitInfo resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an object that expose information about the administrative units associated to a participant[participantBase](callrecords-participantbase.md).
+Represents an object that exposes information about the administrative units associated to a [participant](callrecords-participantbase.md).
 
 ## Properties
 
