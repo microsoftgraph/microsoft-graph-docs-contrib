@@ -51,7 +51,7 @@ The following example shows a request.
   "sampleKeys": ["9a5e4047-c1dc-4243-9628-580d3c64b80c"],
   "name": "create_educationcategory_from_class_beta_e1"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/9a5e4047-c1dc-4243-9628-580d3c64b80c/assignmentCategories
 Content-type: application/json
 

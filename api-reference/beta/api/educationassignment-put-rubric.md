@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "create_educationrubric_from_educationassignment"
 }-->
 
-```http
+```msgraph-interactive
 PUT https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/rubric/$ref
 Content-type: application/json
 

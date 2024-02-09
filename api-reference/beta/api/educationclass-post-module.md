@@ -53,7 +53,7 @@ Here's an example of the request.
   "blockType": "request",
   "name": "create_educationmodule_from_educationclass"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules
 Content-type: application/json
 

@@ -60,7 +60,7 @@ Here's an example of the request.
   "sampleKeys": ["11014", "19002"]
 }-->
 
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/education/classes/11014/assignmentCategories/19002
 ```
 

@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
   "name": "update_educationassignmentdefaults_e1"
 }
 -->
-``` http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
 Content-Type: application/json
 

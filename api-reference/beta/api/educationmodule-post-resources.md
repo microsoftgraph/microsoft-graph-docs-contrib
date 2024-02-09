@@ -77,7 +77,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_educationlinkresource_from_educationmodule"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
 Content-type: application/json
 
@@ -176,7 +176,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_educationwordresource_from_educationmodule"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
 Content-type: application/json
 
@@ -277,7 +277,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_educationfileresource_from_educationmodule"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
 Content-type: application/json
 
@@ -378,7 +378,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_educationexcelresource_from_educationmodule"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
 Content-type: application/json
 
@@ -479,7 +479,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_educationpowerpointresource_from_educationmodule"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
 Content-type: application/json
 
@@ -579,7 +579,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_educationmediaresource_from_educationmodule"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
 Content-type: application/json
 
@@ -678,7 +678,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_educationChannelResource_from_educationmodule"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/modules/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
 Content-type: application/json
 
@@ -777,7 +777,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_educationLinkedAssignmentResource_from_educationmodule"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
 Content-type: application/json
 

@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "update_educationassignmentsettings"
 }
 -->
-``` http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 Content-Type: application/json
 
@@ -140,7 +140,7 @@ The following example shows a request.
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
   "name": "update_gradingCategories"
 }-->
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
 Content-type: application/json
 
@@ -248,7 +248,7 @@ The following example shows a request.
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
   "name": "update_gradingCategories_delta"
 }-->
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
 Content-type: application/json
 

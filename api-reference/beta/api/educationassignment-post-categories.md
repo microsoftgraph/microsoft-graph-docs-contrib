@@ -50,7 +50,7 @@ The following example shows a request.
   "name": "add_educationcategory_to_educationassignment",
   "sampleKeys": ["11021", "19002"]
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/$ref
 Content-type: application/json
 

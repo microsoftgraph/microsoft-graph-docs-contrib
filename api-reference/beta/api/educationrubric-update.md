@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "update_educationrubric"
 }-->
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/education/me/rubrics/{id}
 Content-type: application/json
 
