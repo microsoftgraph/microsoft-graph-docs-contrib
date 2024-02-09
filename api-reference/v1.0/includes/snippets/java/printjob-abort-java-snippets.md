@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String reason = "String";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.print().printers("{printerId}").jobs("{printJobId}")
-	.abort(PrintJobAbortParameterSet
-		.newBuilder()
-		.withReason(reason)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.print.printers.item.jobs.item.abort.AbortPostRequestBody abortPostRequestBody = new com.microsoft.graph.print.printers.item.jobs.item.abort.AbortPostRequestBody();
+abortPostRequestBody.setReason("String");
+graphClient.print().printers().byPrinterId("{printer-id}").jobs().byPrintJobId("{printJob-id}").abort().post(abortPostRequestBody);
+
 
 ```

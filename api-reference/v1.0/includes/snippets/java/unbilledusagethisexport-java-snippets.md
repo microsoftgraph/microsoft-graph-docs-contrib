@@ -4,22 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String currencyCode = "USD";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-AttributeSet attributeSet = AttributeSet.FULL;
+com.microsoft.graph.reports.partners.billing.usage.unbilled.microsoftgraphpartnersbillingexport.ExportPostRequestBody exportPostRequestBody = new com.microsoft.graph.reports.partners.billing.usage.unbilled.microsoftgraphpartnersbillingexport.ExportPostRequestBody();
+exportPostRequestBody.setCurrencyCode("USD");
+exportPostRequestBody.setAttributeSet(com.microsoft.graph.models.partners.billing.AttributeSet.Full);
+exportPostRequestBody.setBillingPeriod(com.microsoft.graph.models.partners.billing.BillingPeriod.Current);
+var result = graphClient.reports().partners().billing().usage().unbilled().microsoftGraphPartnersBillingExport().post(exportPostRequestBody);
 
-BillingPeriod billingPeriod = BillingPeriod.CURRENT;
-
-graphClient.reports().partners().billing().usage().unbilled()
-	.export(UnbilledUsageExportParameterSet
-		.newBuilder()
-		.withCurrencyCode(currencyCode)
-		.withBillingPeriod(billingPeriod)
-		.withAttributeSet(attributeSet)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const assign = Content-type: application/json
-Content-length: 338
-
-{
+const assign = {
   assignments: [
     {
       '@odata.type': '#microsoft.graph.targetedManagedAppPolicyAssignment',

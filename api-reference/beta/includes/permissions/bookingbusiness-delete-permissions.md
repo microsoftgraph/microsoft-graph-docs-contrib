@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|Bookings.Manage.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BookingsAppointment.ReadWrite.All|Not available.|
+|Application|Not supported.|Not supported.|
 

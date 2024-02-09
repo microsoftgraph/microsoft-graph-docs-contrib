@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.on_attribute_collection_submit_custom_extension import OnAttributeCollectionSubmitCustomExtension
+from msgraph.generated.models.azure_ad_token_authentication import AzureAdTokenAuthentication
+from msgraph.generated.models.http_request_endpoint import HttpRequestEndpoint
+from msgraph.generated.models.custom_extension_client_configuration import CustomExtensionClientConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
