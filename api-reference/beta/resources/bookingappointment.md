@@ -51,7 +51,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |invoiceId|String|The ID of the invoice.|
 |invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl|String|The URL of the invoice in Microsoft Bookings.|
-|isCustomerAllowedToManageBooking|Boolean|True indicates that the customer can manage booking created by staff. Default value is false.|
+|isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
 |isLocationOnline|Boolean|True indicates that the appointment is held online. Default value is false.|
 |joinWebUrl|String|The URL of the online meeting for the appointment.|
 |lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the booking business was last updated.|
