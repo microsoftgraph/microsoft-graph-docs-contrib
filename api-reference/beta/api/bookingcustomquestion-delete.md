@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
+DELETE /solutions/bookingbusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/80b5ddda-1e3b-4c9d-abe2-d606cc075e2e
+DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/80b5ddda-1e3b-4c9d-abe2-d606cc075e2e
 ```
 
 # [C#](#tab/csharp)
@@ -85,10 +85,6 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-bookingcustomquestions-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingcustomquestions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

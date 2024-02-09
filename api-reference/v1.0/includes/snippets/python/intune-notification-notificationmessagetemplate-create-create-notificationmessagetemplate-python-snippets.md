@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.notification_message_template import NotificationMessageTemplate
 
 graph_client = GraphServiceClient(credentials, scopes)
 

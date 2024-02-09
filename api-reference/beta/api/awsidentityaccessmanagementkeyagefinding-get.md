@@ -60,10 +60,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxBd3NJZGVudGl0eUFjY2Vzc01hbmFnZW1lbnRLZXlBZ2VGaW5kaW5nLDIyMDE4/microsoft.graph.awsIdentityAccessManagementKeyAgeFinding
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-awsidentityaccessmanagementkeyagefinding-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-awsidentityaccessmanagementkeyagefinding-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

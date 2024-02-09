@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DeviceConfigurationAssignment deviceConfigurationAssignment = graphClient.deviceManagement().deviceConfigurations("{deviceConfigurationId}").assignments("{deviceConfigurationAssignmentId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+DeviceConfigurationAssignment result = graphClient.deviceManagement().deviceConfigurations().byDeviceConfigurationId("{deviceConfiguration-id}").assignments().byDeviceConfigurationAssignmentId("{deviceConfigurationAssignment-id}").get();
+
 
 ```
