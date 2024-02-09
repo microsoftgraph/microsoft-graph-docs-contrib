@@ -19,7 +19,7 @@ Represents the availability details of a booking service in a scheduling policy.
 |Property|Type|Description|
 |:---|:---|:---|
 |availabilityType|bookingsServiceAvailabilityType|Availability type defined by the given bookingsAvailability. The possible values are: `bookWhenStaffAreFree`, `notBookable`, `customWeeklyHours`, `unknownFutureValue`.|
-|businessHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The hours of operation in a week. The business hours value is set to null if the availability type isn't customWeeklyHours.|
+|businessHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The hours of operation in a week. The business hours value is set to `null` if the availability type isn't customWeeklyHours.|
 
 ## Relationships
 None.
