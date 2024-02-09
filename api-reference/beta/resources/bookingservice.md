@@ -42,7 +42,7 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 |displayName|String|A service name.|
 |id|String|The ID of that service, in a GUID format. Read-only.|
 |isAnonymousJoinEnabled|Boolean|Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service. The default value is `false`. |
-|isCustomerAllowedToManageBooking|Boolean|True indicates that the customer can manage booking created by staff. Default value is false.|
+|isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
 |isHiddenFromCustomers|Boolean|True means this service isn't available to customers for booking.|
 |isLocationOnline|Boolean|Indicates that the appointments for the service are held online. The default value is `false`.|
 |languageTag|String|The language of the self service booking page.
