@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Channel channel = new Channel();
-channel.displayName = "UpdateChannelModeration";
-channel.description = "Update channel moderation.";
+channel.setDisplayName("UpdateChannelModeration");
+channel.setDescription("Update channel moderation.");
 ChannelModerationSettings moderationSettings = new ChannelModerationSettings();
-moderationSettings.userNewMessageRestriction = UserNewMessageRestriction.MODERATORS;
-moderationSettings.replyRestriction = ReplyRestriction.EVERYONE;
-moderationSettings.allowNewMessageFromBots = true;
-moderationSettings.allowNewMessageFromConnectors = true;
-channel.moderationSettings = moderationSettings;
+moderationSettings.setUserNewMessageRestriction(UserNewMessageRestriction.Moderators);
+moderationSettings.setReplyRestriction(ReplyRestriction.Everyone);
+moderationSettings.setAllowNewMessageFromBots(true);
+moderationSettings.setAllowNewMessageFromConnectors(true);
+channel.setModerationSettings(moderationSettings);
+Channel result = graphClient.teams().byTeamId("{team-id}").channels().byChannelId("{channel-id}").patch(channel);
 
-graphClient.teams("893075dd-2487-4122-925f-022c42e20265").channels("19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2")
-	.buildRequest()
-	.patch(channel);
 
 ```

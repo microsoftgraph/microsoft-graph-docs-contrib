@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.source_system_definition import SourceSystemDefinition
+from msgraph.generated.models.user_matching_setting import UserMatchingSetting
+from msgraph.generated.models.user_match_target_reference_value import UserMatchTargetReferenceValue
+from msgraph.generated.models.identifier_type_reference_value import IdentifierTypeReferenceValue
 
 graph_client = GraphServiceClient(credentials, scopes)
 

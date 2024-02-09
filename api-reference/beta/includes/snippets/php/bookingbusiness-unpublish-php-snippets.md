@@ -10,6 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->unpublish()->post()->wait();
+$graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->unpublish()->post()->wait();
 
 ```

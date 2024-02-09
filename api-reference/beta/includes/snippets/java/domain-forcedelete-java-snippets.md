@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Boolean disableUserAccounts = true;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.domains("contoso.com")
-	.forceDelete(DomainForceDeleteParameterSet
-		.newBuilder()
-		.withDisableUserAccounts(disableUserAccounts)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.domains.item.forcedelete.ForceDeletePostRequestBody forceDeletePostRequestBody = new com.microsoft.graph.beta.domains.item.forcedelete.ForceDeletePostRequestBody();
+forceDeletePostRequestBody.setDisableUserAccounts(true);
+graphClient.domains().byDomainId("{domain-id}").forceDelete().post(forceDeletePostRequestBody);
+
 
 ```

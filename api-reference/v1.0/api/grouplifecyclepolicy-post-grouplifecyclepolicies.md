@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
