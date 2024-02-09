@@ -58,7 +58,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [virtualEventSession](../resources/virtualeventsession.md) objects in the response body.
 
-Currently, only the following properties are filled out on a virtualEventSession object in the list virtualEventSession method. All other properties on the returned virtualEventSession object are null. To get all of the properties of a virtualEventSession, use the [Get virtualEventSession](../api/virtualeventsession-get.md) method.
+Currently, only the following properties of a **virtualEventSession** object contain data when the object is returned by this method. All other properties are null. To get all the properties of a **virtualEventSession**, use the [Get virtualEventSession](../api/virtualeventsession-get.md) method.
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
@@ -72,7 +72,7 @@ Currently, only the following properties are filled out on a virtualEventSession
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
