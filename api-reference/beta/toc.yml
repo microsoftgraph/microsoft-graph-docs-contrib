@@ -785,6 +785,8 @@ items:
                         href: api/federatedidentitycredential-get.md
                       - name: Update
                         href: api/federatedidentitycredential-update.md
+                      - name: Upsert
+                        href: api/federatedidentitycredential-upsert.md                        
                       - name: Delete
                         href: api/federatedidentitycredential-delete.md
               - name: Owners

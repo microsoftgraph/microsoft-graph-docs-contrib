@@ -25,14 +25,14 @@
       "CreatedDateTime": "2024-01-31T00:00:00.304139Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
-    },
-    {
-      "ChangeList": [
+  },
+  {
+    "ChangeList": [
       {
         "Id": "92b81fc6-e655-4cba-abc4-24def81fa8d0",
         "ApiChange": "Method",
         "ChangedApiName": "PATCH",
-        "ChangeType": "Change",
+        "ChangeType": "Addition",
         "Description": "Added the [upsert](https://learn.microsoft.com/en-us/graph/api/group-upsert?view=graph-rest-beta) capability to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) entity.",
         "Target": "group"
       },
@@ -51,22 +51,30 @@
     "CreatedDateTime": "2024-01-30T16:45:20.304139Z",
     "WorkloadArea": "Groups",
     "SubArea": ""
-    },
-    {
-      "ChangeList": [
+  },
+  {
+    "ChangeList": [
       {
         "Id": "fe521c87-3059-48df-8f92-b56575f04c5f",
         "ApiChange": "Method",
         "ChangedApiName": "PATCH",
-        "ChangeType": "Change",
+        "ChangeType": "Addition",
         "Description": "Added the [upsert](https://learn.microsoft.com/en-us/graph/api/application-upsert?view=graph-rest-beta) capability to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) entity.",
+        "Target": "application"
+      },
+      {
+        "Id": "925edcec-b6df-4f78-a952-27bab1c4b630",
+        "ApiChange": "Method",
+        "ChangedApiName": "PATCH",
+        "ChangeType": "Addition",
+        "Description": "Added the [upsert](https://learn.microsoft.com/en-us/graph/api/federatedIdentityCredential-upsert?view=graph-rest-beta) capability to the [application](https://learn.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-beta) entity.",
         "Target": "application"
       },
       {
         "Id": "a266dbe5-685d-451c-90ae-edabbc66c967",
         "ApiChange": "Method",
         "ChangedApiName": "PATCH",
-        "ChangeType": "Change",
+        "ChangeType": "Addition",
         "Description": "Added the [upsert](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-upsert?view=graph-rest-beta) capability to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta) entity.",
         "Target": "servicePrincipal"
       },
@@ -85,8 +93,8 @@
     "CreatedDateTime": "2024-01-30T16:45:20.304139Z",
     "WorkloadArea": "Applications",
     "SubArea": ""
-    },
-    {
+  },
+  {
       "ChangeList": [
       {
         "Id": "8b9db607-81fd-4013-af2e-d6cb709aa313",
