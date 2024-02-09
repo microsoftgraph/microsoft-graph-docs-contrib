@@ -1,6 +1,6 @@
 ---
 title: "pendingExternalUserProfile resource type"
-description: "Represents an external user profile in the Microsoft Entra tenant that has not yet consented to sharing data with the tenant."
+description: "Represents an external user profile in the Microsoft Entra tenant that hasn't consented to share data with the tenant."
 ms.localizationpriority: high
 author: "jkdouglas"
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an external user profile in the Microsoft Entra tenant that has not yet consented to sharing data with the tenant.
+Represents an external user profile in the Microsoft Entra tenant that hasn't consented to share data with the tenant.
 
 Inherits from [externalProfile](externalprofile.md).
 
@@ -35,7 +35,7 @@ Inherits from [externalProfile](externalprofile.md).
 |createdBy|String|The object ID of the user or principal who created the pending external user profile or invited the external user. Inherited from [externalProfile](../resources/externalprofile.md). Read-only. Not nullable. |
 |createdDateTime|DateTimeOffset|Date and time when this pending external user profile was created. Inherited from [externalProfile](../resources/externalprofile.md). Not nullable. Read-only. |
 |companyName|String|The company name of the pending external user profile. Inherited from [externalProfile](../resources/externalprofile.md). Supports the `$filter` (`eq`, `startswith`) query parameter.  |
-|deletedDateTime|DateTimeOffset|Date and time when the pending external user profile was deleted. Always `null` when the object isn't been deleted. Inherited from [externalProfile](../resources/externalprofile.md). |
+|deletedDateTime|DateTimeOffset|Date and time when the pending external user profile was deleted. Always `null` when the object isn't deleted. Inherited from [externalProfile](../resources/externalprofile.md). |
 |department|String|The department of the pending external user profile. Inherited from [externalProfile](../resources/externalprofile.md). |
 |displayName|String|The display name of the pending external user profile. Inherited from [externalProfile](../resources/externalprofile.md).|
 |id|String|The unique identifier for the pending external user profile. Not nullable. Read-only.|
