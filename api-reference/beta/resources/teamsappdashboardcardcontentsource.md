@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| `sourceType` | `teamsAppDashboardCardContentSourceType` | Represents the type of source that powers the content of the dashboard card. |
+| `sourceType` | `teamsAppDashboardCardContentSourceType` | Represents the type of source that powers the content of the dashboard card. Only source type bot is allowed|
 | `botConfiguration` | [teamsAppdashboardCardBotConfiguration](../resources/teamsappdashboardcardbotconfiguration.md) | The configuration for the bot source. Required if `sourceType` is set to `bot`. |
 
 ## Relationships
@@ -35,7 +35,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppDashboardCardContentSource",
- 
 }
 ```
 
