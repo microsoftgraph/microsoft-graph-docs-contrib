@@ -16,7 +16,7 @@ Represents basic location attributes such as name, physical address, and geograp
 ### Using the places API
 Exchange Online administrators can organize meeting rooms in a tenant into room lists. Using the places API, you can get all the room lists or rooms in the tenant, or get all the rooms in a specific room list.
 
-Places like [room](room.md), [workspace](workspace.md), and [roomList](roomlist.md) contain the basic **id**, display name, and email address. In addition, they contain navigational information like physical address and geographical coordinates, and in the case of rooms, other relevant information such as AV capabilities, floor number, and capacity.
+Places like [room](room.md) and [roomList](roomlist.md) contain the basic **id**, display name, and email address. In addition, they contain navigational information like physical address and geographical coordinates, and in the case of rooms, other relevant information such as AV capabilities, floor number, and capacity.
 
 The [findRooms](/graph/api/user-findrooms) and [findRoomLists](/graph/api/user-findroomlists) functions support similar lookup for rooms and room lists in a tenant. The following table compares the places API and these functions. 
 
