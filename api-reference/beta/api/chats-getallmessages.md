@@ -57,7 +57,7 @@ This method supports different filtering scenarios:
 |Get messages sent by user id              |$filter=from/user/id eq '{oid}'                                                         ||
 |Get control(system event) messages        |$filter=messageType eq 'systemEventMessage'                                             ||
 |Exclude control (system event) messages   |$filter=messageType ne 'systemEventMessage'                                             ||
->**Note:** These filter clauses can be joined using the `or` operator as well as been defined multiple times with different values.
+>**Note:** These filter clauses can be joined using the `or` operator. A filter clause can appear more than once in a query, and it can filter on a different value each time it appears within the query.
 
 ## Request headers
 | Header       | Value |
