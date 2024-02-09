@@ -45,7 +45,7 @@ The following is a JSON representation of the resource.
   "maximumAdvance": "String (timestamp)",
   "minimumLeadTime": "String (timestamp)",
   "sendConfirmationsToOwner": true,
-  "timeSlotInterval": "String (timestamp)"
+  "timeSlotInterval": "String (timestamp)",
   "isMeetingInviteToCustomersEnabled": "Boolean",
   "generalAvailability": {
     "@odata.type": "microsoft.graph.bookingsAvailability"

@@ -148,7 +148,7 @@ The following is a JSON representation of the resource.
   },
   "invoiceId": "String",
   "invoiceStatus": "String",
-  "invoiceUrl": "String"
+  "invoiceUrl": "String",
   "isCustomerAllowedToManageBooking": "Boolean",
 }
 ```

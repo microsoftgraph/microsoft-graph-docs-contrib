@@ -60,7 +60,7 @@ PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 |invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone of the invoice for this appointment.|
 |invoiceId|String|The ID of the invoice.|
 |invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
-|isCustomerAllowedToManageBooking|Boolean|True indicates that the customer can manage booking created by staff. Default value is false.|
+|isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
 |invoiceUrl|String|The URL of the invoice in Microsoft Bookings.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment. Required.|
 |isLocationOnline|Boolean|True indicates that the appointment is held online. Default value is false.|
