@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents basic location attributes such as name, physical address, and geographic coordinates. This is the base type for richer location types such as [room](room.md) and [roomList](roomlist.md).
+Represents basic location attributes such as name, physical address, and geographic coordinates. This resource is the base type for richer location types such as [room](room.md) and [roomList](roomlist.md).
 
 ### Using the places API
 Exchange Online administrators can organize meeting rooms in a tenant into room lists. Using the places API, you can get all the room lists or rooms in the tenant, or get all the rooms in a specific room list.
