@@ -23,7 +23,7 @@ If you're an existing Data Connect customer and you want to get started with the
 5. Choose **Save**. This reenables Data Connect for your tenant with the new onboarding experience.
 6. Follow the steps in the [onboarding guide](./onboarding-experience-overview.md) to register the apps that you require and work with your tenant administrator to get them authorized for Data Connect.
 
-![A screenshot showing how to enable data connect in the Microsoft 365 admin center.](../concepts/images/data-connect-new-consent-flow-enable-mgdc.png)
+![A screenshot of the Microsoft 365 admin center with the new Data Connect authorization experience highlighted.](../concepts/images/data-connect-new-consent-flow-enable-mgdc.png)
 
 This option is available today. If you choose this option, none of your existing Privileged Access Management (PAM) authorizations are migrated to the new experience. You need to register the apps and work with your tenant admin to get them authorized.
 
