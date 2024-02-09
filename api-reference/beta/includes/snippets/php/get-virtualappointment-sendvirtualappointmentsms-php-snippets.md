@@ -6,12 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SendVirtualAppointmentSmsPostRequestBody();
-$requestBody->setPhoneNumbers(['+13129224122', '+1242421412', 	]);
 $additionalData = [
+	'phoneNumbers' => [
+'+13129224122', '+1242421412', ],
 	'virtualAppointmentSmsType' => 'confirmation',
 ];
 $requestBody->setAdditionalData($additionalData);

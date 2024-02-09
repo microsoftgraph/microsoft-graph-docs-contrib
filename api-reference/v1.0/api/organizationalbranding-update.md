@@ -36,7 +36,7 @@ PUT /organization/{organizationId}/branding/localizations/{organizationalBrandin
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 |Accept-Language|A valid ISO 639-1 locale. Required.|
 

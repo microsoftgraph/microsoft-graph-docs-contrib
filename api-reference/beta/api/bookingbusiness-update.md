@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}
+PATCH /solutions/bookingbusinesses/{id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -62,7 +62,7 @@ The following example updates the business email address and scheduling policy, 
   "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
+PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/fabrikam@contoso.onmicrosoft.com
 Content-type: application/json
 
 {

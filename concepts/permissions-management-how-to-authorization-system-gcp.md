@@ -7,7 +7,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "multicloud-permissions-management"
-ms.date: 11/22/2023
+ms.date: 01/05/2024
 #CustomerIntent: As a developer, I want a one-stop shop for all the common tasks I can program through the permissions management APIs so that I don't have to visit all API docs one at a time.
 ---
 
@@ -1097,7 +1097,7 @@ Content-Type: application/json
 Either the requestor or an administrator can cancel an approved request, while only the requestor can cancel a pending (**statusDetail** of `submitted`) request.
 
 ```http
-POST https://graph.microsoft.com/beta/permissionsManagement/scheduledPermissionsRequests/{id}/cancelAll
+POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests/{id}/cancelAll
 ```
 
 ## List details of all permission requests
@@ -1118,6 +1118,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/pe
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges/{id}
 ```
 
-## See also
+## Related content
 
 + [Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs (preview)](/graph/api/resources/permissions-management-api-overview?view=graph-rest-beta&preserve-view=true)
