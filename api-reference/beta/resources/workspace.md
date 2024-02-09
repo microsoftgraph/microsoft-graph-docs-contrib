@@ -43,14 +43,14 @@ In Exchange Online, each workspace is associated with a workspace mailbox. Deriv
 | nickname               | String                                            | Specifies a nickname for the workspace, for example, "quiet workspace". |
 | phone                  | String                                            | The phone number of the workspace. |
 | placeId                | String                                            | An alternate immutable unique identifier of the place. |
-| tags                   | String collection                                 | Specifies additional features of the workspace, for example, details like the type of view or furniture type. |
+| tags                   | String collection                                 | Specifies other features of the workspace; for example, the type of view or furniture type. |
 
 ### bookingType values
 
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
 | standard | The workspace can be reserved based on the other settings in this cmdlet. This is the default value. |
-| reserved | The workspace is available only on a first come, first served basis. It cannot be reserved.|
+| reserved | The workspace is available only on a first come, first served basis. It can't be reserved.|
 
 ## Relationships
 
