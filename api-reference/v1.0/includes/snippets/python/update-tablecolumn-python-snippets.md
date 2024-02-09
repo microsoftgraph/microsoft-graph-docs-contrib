@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.workbook_table_column import WorkbookTableColumn
 
 graph_client = GraphServiceClient(credentials, scopes)
 

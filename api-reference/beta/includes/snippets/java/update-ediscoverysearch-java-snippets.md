@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoverySearch ediscoverySearch = new EdiscoverySearch();
-ediscoverySearch.displayName = "Teams search";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("{ediscoveryCaseId}").searches("{ediscoverySearchId}")
-	.buildRequest()
-	.patch(ediscoverySearch);
+com.microsoft.graph.beta.models.security.EdiscoverySearch ediscoverySearch = new com.microsoft.graph.beta.models.security.EdiscoverySearch();
+ediscoverySearch.setDisplayName("Teams search");
+com.microsoft.graph.models.security.EdiscoverySearch result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").searches().byEdiscoverySearchId("{ediscoverySearch-id}").patch(ediscoverySearch);
+
 
 ```

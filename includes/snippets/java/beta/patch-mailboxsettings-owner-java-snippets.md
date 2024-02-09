@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MailboxSettings mailboxSettings = new MailboxSettings();
-mailboxSettings.delegateMeetingMessageDeliveryOptions = DelegateMeetingMessageDeliveryOptions.SEND_TO_DELEGATE_AND_PRINCIPAL;
+mailboxSettings.setDelegateMeetingMessageDeliveryOptions(DelegateMeetingMessageDeliveryOptions.SendToDelegateAndPrincipal);
+MailboxSettings result = graphClient.users().byUserId("{user-id}").mailboxSettings().patch(mailboxSettings);
 
-graphClient.customRequest("/users/AlexW@contoso.OnMicrosoft.com/mailboxsettings", MailboxSettings.class)
-	.buildRequest()
-	.patch(mailboxSettings);
 
 ```
