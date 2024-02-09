@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-```http
+```msgraph-interactive
 PUT /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
 ```
 
