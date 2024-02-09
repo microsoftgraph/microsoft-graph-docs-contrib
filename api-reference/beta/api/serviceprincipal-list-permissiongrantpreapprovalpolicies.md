@@ -61,10 +61,6 @@ If successful, this method returns a `200 OK` response code and a [permissionGra
 GET /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-permissiongrantpreapprovalpolicies-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-get-permissiongrantpreapprovalpolicies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

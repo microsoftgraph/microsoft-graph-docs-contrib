@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("filter", "definitions/any(a:a/languageTag eq 'en-US')"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-TeamTemplateCollectionPage teamTemplates = graphClient.teamwork().teamTemplates()
-	.buildRequest( requestOptions )
-	.filter("definitions/any(a:a/languageTag eq 'en-US')")
-	.expand("definitions")
-	.get();
+TeamTemplateCollectionResponse result = graphClient.teamwork().teamTemplates().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"definitions"};
+	requestConfiguration.queryParameters.filter = "definitions/any(a:a/languageTag eq 'en-US')";
+});
+
 
 ```

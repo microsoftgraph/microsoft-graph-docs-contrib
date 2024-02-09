@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Custodian custodian = new Custodian();
-custodian.email = "AdeleV@contoso.com";
-custodian.applyHoldToSources = false;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.compliance().ediscovery().cases("2192ca408ea2410eba3bec8ae873be6b").custodians()
-	.buildRequest()
-	.post(custodian);
+com.microsoft.graph.beta.models.ediscovery.Custodian custodian = new com.microsoft.graph.beta.models.ediscovery.Custodian();
+custodian.setEmail("AdeleV@contoso.com");
+custodian.setApplyHoldToSources(true);
+com.microsoft.graph.models.ediscovery.Custodian result = graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").custodians().post(custodian);
+
 
 ```

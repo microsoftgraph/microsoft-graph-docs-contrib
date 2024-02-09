@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
-requestOptions.add(new QueryOption("$search", "\"displayName:tier\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-UserCollectionPage user = graphClient.groups("{id}").transitiveMembers().microsoft.graph.user()
-	.buildRequest( requestOptions )
-	.select("displayName,id")
-	.orderBy("displayName")
-	.get();
+UserCollectionResponse result = graphClient.groups().byGroupId("{group-id}").transitiveMembers().graphUser().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.count = true;
+	requestConfiguration.queryParameters.orderby = new String []{"displayName"};
+	requestConfiguration.queryParameters.search = "\"displayName:tier\"";
+	requestConfiguration.queryParameters.select = new String []{"displayName", "id"};
+	requestConfiguration.headers.add("ConsistencyLevel", "eventual");
+});
+
 
 ```

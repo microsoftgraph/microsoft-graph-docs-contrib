@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Authorization", "Bearer {token}"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 SwapShiftsChangeRequest swapShiftsChangeRequest = new SwapShiftsChangeRequest();
-swapShiftsChangeRequest.senderShiftId = "5ad10161-6524-4c7c-9beb-4e8677ba2f6d";
-swapShiftsChangeRequest.senderMessage = "I can't make my shift, any chance we can swap?";
-swapShiftsChangeRequest.recipientUserId = "567c8ea5-9e32-422a-a663-8270201699cd";
-swapShiftsChangeRequest.recipientShiftId = "e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c";
+swapShiftsChangeRequest.setSenderShiftId("5ad10161-6524-4c7c-9beb-4e8677ba2f6d");
+swapShiftsChangeRequest.setSenderMessage("I can't make my shift, any chance we can swap?");
+swapShiftsChangeRequest.setRecipientUserId("567c8ea5-9e32-422a-a663-8270201699cd");
+swapShiftsChangeRequest.setRecipientShiftId("e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c");
+SwapShiftsChangeRequest result = graphClient.teams().byTeamId("{team-id}").schedule().swapShiftsChangeRequests().post(swapShiftsChangeRequest, requestConfiguration -> {
+	requestConfiguration.headers.add("Authorization", "Bearer {token}");
+});
 
-graphClient.teams("788b75d2-a911-48c0-a5e2-dc98480457e3").schedule().swapShiftsChangeRequests()
-	.buildRequest( requestOptions )
-	.post(swapShiftsChangeRequest);
 
 ```

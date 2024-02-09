@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-BaseSitePage baseSitePage = graphClient.sites("{site-id}").pages("{page-id}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+BaseSitePage result = graphClient.sites().bySiteId("{site-id}").pages().byBaseSitePageId("{baseSitePage-id}").get();
+
 
 ```
