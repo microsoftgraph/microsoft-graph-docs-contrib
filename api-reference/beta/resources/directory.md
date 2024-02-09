@@ -18,7 +18,7 @@ Represents a deleted item in the directory. A deleted item is sent to the delete
 Currently, deleted items functionality is supported for the the following resources:
 - [administrative unit](../resources/administrativeunit.md)
 - [application](application.md)
-- [externalUserProfile](../resources/externaluserprofilemd)
+- [externalUserProfile](../resources/externaluserprofile.md)
 - [group](group.md)
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
