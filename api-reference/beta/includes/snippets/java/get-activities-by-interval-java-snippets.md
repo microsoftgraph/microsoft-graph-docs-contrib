@@ -4,16 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DriveItemGetActivitiesByIntervalCollectionPage getActivitiesByInterval = graphClient.drives("{drive-id}").items("{item-id}")
-	.getActivitiesByInterval(DriveItemGetActivitiesByIntervalParameterSet
-		.newBuilder()
-		.withStartDateTime("2017-01-01")
-		.withEndDateTime("2017-01-3")
-		.withInterval("day")
-		.build())
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").getActivitiesByIntervalWithStartDateTimeWithEndDateTimeWithInterval("{endDateTime}", "{interval}", "{startDateTime}").get();
+
 
 ```

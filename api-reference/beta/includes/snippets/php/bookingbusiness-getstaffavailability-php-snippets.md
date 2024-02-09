@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GetStaffAvailabilityPostRequestBody();
@@ -20,6 +20,6 @@ $endDateTime->setDateTime('2022-01-26T17:00:00');
 $endDateTime->setTimeZone('Pacific Standard Time');
 $requestBody->setEndDateTime($endDateTime);
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->getStaffAvailability()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->getStaffAvailability()->post($requestBody)->wait();
 
 ```

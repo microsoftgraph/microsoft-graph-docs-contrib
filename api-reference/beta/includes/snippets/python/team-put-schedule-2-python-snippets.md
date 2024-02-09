@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.schedule import Schedule
+from msgraph.generated.models.time_clock_settings import TimeClockSettings
+from msgraph.generated.models.geo_coordinates import GeoCoordinates
 
 graph_client = GraphServiceClient(credentials, scopes)
 

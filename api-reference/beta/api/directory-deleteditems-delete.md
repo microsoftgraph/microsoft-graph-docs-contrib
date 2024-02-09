@@ -41,7 +41,7 @@ DELETE /directory/deleteditems/{id}
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;code&gt; *Required*|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json |
 
 ## Request body
@@ -63,10 +63,6 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 ```http
 DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-directory-deleteditem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-directory-deleteditem-javascript-snippets.md)]

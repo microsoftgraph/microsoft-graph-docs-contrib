@@ -371,7 +371,7 @@ GET https://graph.microsoft.com/beta/users?$filter=endsWith(userPrincipalName,'%
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/get-users-missing-advancedqueryparams-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -529,7 +529,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 + [Use query parameters to customize responses](/graph/query-parameters)
 + [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635)

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.identity.b2cUserFlows.item.languages.languages_request_builder import LanguagesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

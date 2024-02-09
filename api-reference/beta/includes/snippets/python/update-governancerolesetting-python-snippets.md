@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.governance_role_setting import GovernanceRoleSetting
+from msgraph.generated.models.governance_rule_setting import GovernanceRuleSetting
 
 graph_client = GraphServiceClient(credentials, scopes)
 

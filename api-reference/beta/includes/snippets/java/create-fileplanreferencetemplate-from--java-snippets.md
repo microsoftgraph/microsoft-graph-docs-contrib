@@ -4,15 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-FilePlanReferenceTemplate filePlanReferenceTemplate = new FilePlanReferenceTemplate();
-filePlanReferenceTemplate.displayName = "String";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.models.security.FilePlanReferenceTemplate filePlanReferenceTemplate = new com.microsoft.graph.beta.models.security.FilePlanReferenceTemplate();
+filePlanReferenceTemplate.setOdataType("#microsoft.graph.security.filePlanReferenceTemplate");
+filePlanReferenceTemplate.setDisplayName("String");
 IdentitySet createdBy = new IdentitySet();
-filePlanReferenceTemplate.createdBy = createdBy;
+createdBy.setOdataType("microsoft.graph.identitySet");
+filePlanReferenceTemplate.setCreatedBy(createdBy);
+com.microsoft.graph.models.security.FilePlanReferenceTemplate result = graphClient.security().labels().filePlanReferences().post(filePlanReferenceTemplate);
 
-graphClient.security().labels().filePlanReferences()
-	.buildRequest()
-	.post(filePlanReferenceTemplate);
 
 ```

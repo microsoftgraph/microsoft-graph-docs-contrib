@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /solutions/bookingBusinesses/{id}/getStaffAvailability
 ```
 
-## Request header
+## Request headers
 
 |Name |Description |
 |:--------------|:------------|

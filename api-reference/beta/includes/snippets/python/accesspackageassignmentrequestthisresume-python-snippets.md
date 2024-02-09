@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.resume_post_request_body import ResumePostRequestBody
+from msgraph.generated.models.access_package_assignment_request_callback_data import AccessPackageAssignmentRequestCallbackData
 
 graph_client = GraphServiceClient(credentials, scopes)
 
