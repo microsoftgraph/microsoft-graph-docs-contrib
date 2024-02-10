@@ -29,6 +29,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 PATCH /external/connections/{id}/schema
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
 In the request body, supply a JSON representation of a [schema](../resources/externalconnectors-schema.md) object.
 
 When you register a custom item schema, the **schema** object **must** have the **baseType** property set to `microsoft.graph.externalItem` and **must** contain the **properties** property. The **properties** object **must** contain at least one property, up to a maximum of 128.

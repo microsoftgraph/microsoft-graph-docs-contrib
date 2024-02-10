@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ChannelGetAllMessagesCollectionPage getAllMessages = graphClient.teamwork().deletedTeams("fbe2bf47-16c8-47cf-b4a5-4b9b187c508b").channels()
-	.getAllMessages()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.teamwork().deletedTeams().byDeletedTeamId("{deletedTeam-id}").channels().getAllMessages().get();
+
 
 ```

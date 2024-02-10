@@ -25,7 +25,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |:---|:---|:---|
 |[List managedAppProtections](../api/intune-mam-managedappprotection-list.md)|[managedAppProtection](../resources/intune-mam-managedappprotection.md) collection|List properties and relationships of the [managedAppProtection](../resources/intune-mam-managedappprotection.md) objects.|
 |[Get managedAppProtection](../api/intune-mam-managedappprotection-get.md)|[managedAppProtection](../resources/intune-mam-managedappprotection.md)|Read properties and relationships of the [managedAppProtection](../resources/intune-mam-managedappprotection.md) object.|
-|[targetApps action](../api/intune-mam-managedappprotection-targetapps.md)|None|Not yet documented|
+|[targetApps action](../api/intune-mam-managedappprotection-targetapps.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -83,6 +83,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Possible values are: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|The classes of dialer apps that are allowed to click-to-open a phone number. Possible values are: `allApps`, `managedApps`, `customApp`, `blocked`.|
 |gracePeriodToBlockAppsDuringOffClockHours|Duration|A grace period before blocking app access during off clock hours.|
+|protectedMessagingRedirectAppType|[messagingRedirectAppType](../resources/intune-mam-messagingredirectapptype.md)|Defines how app messaging redirection is protected by an App Protection Policy. Default is anyApp. Possible values are: `anyApp`, `anyManagedApp`, `specificApps`, `blocked`.|
 
 ## Relationships
 None
@@ -156,6 +157,7 @@ Here is a JSON representation of the resource.
   ],
   "appActionIfUnableToAuthenticateUser": "String",
   "dialerRestrictionLevel": "String",
-  "gracePeriodToBlockAppsDuringOffClockHours": "String (duration)"
+  "gracePeriodToBlockAppsDuringOffClockHours": "String (duration)",
+  "protectedMessagingRedirectAppType": "String"
 }
 ```

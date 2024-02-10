@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CloudPcProvisioningPolicy();
@@ -36,6 +36,9 @@ $requestBody->setOnPremisesConnectionId('4e47d0f6-6f77-44f0-8893-c0fe1701ffff');
 $windowsSettings = new CloudPcWindowsSettings();
 $windowsSettings->setLanguage('en-US');
 $requestBody->setWindowsSettings($windowsSettings);
+$windowsSetting = new CloudPcWindowsSetting();
+$windowsSetting->setLocale('en-US');
+$requestBody->setWindowsSetting($windowsSetting);
 $requestBody->setProvisioningType(new CloudPcProvisioningType('dedicated'));
 
 $result = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->post($requestBody)->wait();

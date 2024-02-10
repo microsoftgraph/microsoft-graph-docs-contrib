@@ -35,7 +35,7 @@ POST /security/threatSubmission/emailThreats
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -68,7 +68,7 @@ POST https://graph.microsoft.com/beta/security/threatSubmission/emailThreats
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.emailUrlThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "spam",
   "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
   "messageUrl": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="

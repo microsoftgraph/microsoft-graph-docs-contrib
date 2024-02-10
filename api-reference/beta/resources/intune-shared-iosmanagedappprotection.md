@@ -29,7 +29,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 |[Delete iosManagedAppProtection](../api/intune-shared-iosmanagedappprotection-delete.md)|None|Deletes a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md).|
 |[Update iosManagedAppProtection](../api/intune-shared-iosmanagedappprotection-update.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Update the properties of a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.|
 |**Policy Set**|
-|[hasPayloadLinks action](../api/intune-shared-iosmanagedappprotection-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
+|[hasPayloadLinks action](../api/intune-shared-iosmanagedappprotection-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
 
 ## Properties
 |Property|Type|Description|

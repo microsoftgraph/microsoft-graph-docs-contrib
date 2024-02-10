@@ -588,7 +588,7 @@ decryptedPayload += decipher.final('utf8');
 
 ---
 
-## See also
+## Related content
 
 - [Set up notifications for changes in user data](change-notifications-overview.md)
 - [Subscription resource type](/graph/api/resources/subscription)

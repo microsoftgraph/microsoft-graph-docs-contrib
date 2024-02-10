@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.custom_task_extension import CustomTaskExtension
+from msgraph.generated.models.logic_app_trigger_endpoint_configuration import LogicAppTriggerEndpointConfiguration
+from msgraph.generated.models.custom_extension_authentication_configuration import CustomExtensionAuthenticationConfiguration
+from msgraph.generated.models.custom_extension_client_configuration import CustomExtensionClientConfiguration
+from msgraph.generated.models.custom_task_extension_callback_configuration import CustomTaskExtensionCallbackConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
