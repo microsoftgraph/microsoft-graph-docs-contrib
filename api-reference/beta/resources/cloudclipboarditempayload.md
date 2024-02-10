@@ -3,7 +3,7 @@ title: "cloudClipboardItemPayload resource type"
 description: "Information about the content of cloudClipboardItem."
 author: "yuechen7"
 ms.localizationpriority: medium
-ms.prod: "pdrs"
+ms.prod: "project-rome"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "List cloudClipboardItem objects"
 description: "Get a list of the cloudClipboardItem objects and their properties."
 author: "yuechen7"
 ms.localizationpriority: medium
-ms.prod: "pdrs"
+ms.prod: "project-rome"
 doc_type: apiPageType
 ---
 
