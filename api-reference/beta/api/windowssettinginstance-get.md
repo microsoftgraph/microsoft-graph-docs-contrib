@@ -92,6 +92,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.windowsSettingInstance",
     "id": "9715f1d9-49d1-4b94-041b-443ac419d417",
     "payload": "String (Base64 encoded JSON)",
     "lastModifiedDateTime": "String (timestamp)",

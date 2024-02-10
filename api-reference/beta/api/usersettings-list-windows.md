@@ -67,7 +67,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_windowssetting"
+  "name": "list_windowssetting1"
 }
 -->
 
@@ -95,6 +95,7 @@ Content-Type: application/json
 {
   "value": [
     {
+      "@odata.type": "#microsoft.graph.windowsSetting",
       "id": "default$windows.data.fileexplorerclassic.searchsettings",
       "windowsDeviceId": "String",
       "settingType": "String",
@@ -110,6 +111,7 @@ Content-Type: application/json
             ]
     },
     {
+      "@odata.type": "#microsoft.graph.windowsSetting",
       "id": "default$windows.data.input.devices.pensyncedsettings",
       "windowsDeviceId": "String",
       "settingType": "String",
@@ -133,7 +135,7 @@ The following example shows a filter by `roaming` settingType request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_windowssetting"
+  "name": "list_windowssetting2"
 }
 -->
 
@@ -161,6 +163,7 @@ Content-Type: application/json
 {
   "value": [
     {
+      "@odata.type": "#microsoft.graph.windowsSetting",
       "id": "default$windows.data.fileexplorerclassic.shellstatesettings",
       "settingType": "roaming",
       "payloadType": "String",
@@ -175,6 +178,7 @@ Content-Type: application/json
             ]
     },
     {
+      "@odata.type": "#microsoft.graph.windowsSetting",
       "id": "default$windows.data.fileexplorerclassic.cabinetstatesettings",
       "settingType": "roaming",
       "payloadType": "String",
@@ -197,7 +201,7 @@ The following example shows a filter by `backup` settingType request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_windowssetting"
+  "name": "list_windowssetting3"
 }
 -->
 
@@ -225,6 +229,7 @@ Content-Type: application/json
 {
   "value": [
     {
+      "@odata.type": "#microsoft.graph.windowsSetting",
       "id": "{67585f9f-ee4b-4dd8-808e-d88375d66ef7}$windows.data.apps.devicemetadata",
       "windowsDeviceId": "String",
       "settingType": "backup",
@@ -240,6 +245,7 @@ Content-Type: application/json
             ]
     },
     {
+      "@odata.type": "#microsoft.graph.windowsSetting",
       "id": "{55f26da7-5824-4937-9028-9bba274f049f}$windows.data.apps.devicemetadata",
       "windowsDeviceId": "String",      
       "settingType": "backup",
@@ -263,7 +269,7 @@ The following example shows a filter by windowsDeviceId request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_windowssetting"
+  "name": "list_windowssetting4"
 }
 -->
 
@@ -291,6 +297,7 @@ Content-Type: application/json
 {
   "value": [
     {
+      "@odata.type": "#microsoft.graph.windowsSetting",
       "id": "{67585f9f-ee4b-4dd8-808e-d88375d66ef7}$windows.data.apps.devicemetadata",
       "windowsDeviceId": "67585f9f-ee4b-4dd8-808e-d88375d66ef7",
       "settingType": "backup",

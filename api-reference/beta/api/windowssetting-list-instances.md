@@ -87,6 +87,7 @@ Content-Type: application/json
 {
   "value": [
     {
+      "@odata.type": "#microsoft.graph.windowsSettingInstance",
       "id": "9715f1d9-49d1-4b94-041b-443ac419d417",
       "payload": "String (Base64 encoded JSON)",
       "lastModifiedDateTime": "String (timestamp)",
@@ -94,6 +95,7 @@ Content-Type: application/json
       "expirationDateTime": "String (timestamp)"
     },
     {
+      "@odata.type": "#microsoft.graph.windowsSettingInstance",
       "id": "6984732f-86b0-8e31-dc02-37fce0df6d61",
       "payload": "String (Base64 encoded JSON)",
       "lastModifiedDateTime": "String (timestamp)",

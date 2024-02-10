@@ -85,6 +85,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.windowsSetting",
   "id": "default$windows.data.fileexplorerclassic.searchsettings",
   "windowsDeviceId": "String",
   "settingType": "String",
