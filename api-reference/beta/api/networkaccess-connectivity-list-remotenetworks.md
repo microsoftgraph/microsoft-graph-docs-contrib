@@ -1,5 +1,5 @@
 ---
-title: "List remote networks"
+title: "List remoteNetworks"
 description: "Retrieve a list of remote networks within a tenant connected to the Global Secure Access."
 author: abhijeetsinha
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
-# List remote networks
+# List remoteNetworks
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of remote networks within a tenant connected to the Global Secure Access.
+Retrieve a list of remote networks within a tenant connected to the Global Secure Access services.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -57,45 +57,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 The following is an example of a request.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_remoteNetwork"
-}
--->
+
 ``` http
 GET https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-remotenetwork-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-remotenetwork-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-remotenetwork-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-remotenetwork-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-remotenetwork-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-remotenetwork-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-remotenetwork-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.
