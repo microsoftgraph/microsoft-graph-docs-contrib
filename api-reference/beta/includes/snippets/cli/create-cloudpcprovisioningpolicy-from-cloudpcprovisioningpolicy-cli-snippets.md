@@ -32,6 +32,9 @@ mgc-beta device-management virtual-endpoint provisioning-policies create --body 
     "windowsSettings": {\
         "language": "en-US"\
     },\
+    "windowsSetting": {\
+        "locale": "en-US"\
+    },\
     "provisioningType": "dedicated"\
 }\
 '

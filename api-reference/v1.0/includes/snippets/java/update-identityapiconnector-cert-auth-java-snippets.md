@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IdentityApiConnector identityApiConnector = new IdentityApiConnector();
 Pkcs12Certificate authenticationConfiguration = new Pkcs12Certificate();
-authenticationConfiguration.pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA";
-authenticationConfiguration.password = "secret";
-identityApiConnector.authenticationConfiguration = authenticationConfiguration;
+authenticationConfiguration.setOdataType("#microsoft.graph.pkcs12Certificate");
+authenticationConfiguration.setPkcs12Value("eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA");
+authenticationConfiguration.setPassword("secret");
+identityApiConnector.setAuthenticationConfiguration(authenticationConfiguration);
+IdentityApiConnector result = graphClient.identity().apiConnectors().byIdentityApiConnectorId("{identityApiConnector-id}").patch(identityApiConnector);
 
-graphClient.identity().apiConnectors("be1f769b-9b13-437e-b540-79a905c4932c")
-	.buildRequest()
-	.patch(identityApiConnector);
 
 ```

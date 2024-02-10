@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const group = {
-    graphlearn_courses: {
+    bellowscollege_courses: {
         courseId: '123',
         courseName: 'New Managers',
         courseType: 'Online'

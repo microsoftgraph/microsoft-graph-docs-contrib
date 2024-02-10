@@ -33,7 +33,7 @@ POST /search/query
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -74,7 +74,8 @@ Content-type: application/json
       "contentSources": [
         "/external/connections/connectionfriendlyname"
       ],
-      "query": {
+       "region": "US",
+       "query": {
         "queryString": "contoso product"
       },
       "from": 0,
@@ -179,7 +180,8 @@ Content-type: application/json
       "entityTypes": [
         "listItem"
       ],
-      "query": {
+        "region": "US",
+        "query": {
         "queryString": "contoso",
         "queryTemplate":"{searchTerms} CreatedBy:Bob"
       },

@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.inference_classification_override import InferenceClassificationOverride
+from msgraph.generated.models.email_address import EmailAddress
 
 graph_client = GraphServiceClient(credentials, scopes)
 
