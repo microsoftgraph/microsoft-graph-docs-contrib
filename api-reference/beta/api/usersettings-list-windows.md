@@ -36,7 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 Get a list of Windows settings for the signed-in user.
 
-````http
 ``` http
 GET /me/settings/windows
 ````
