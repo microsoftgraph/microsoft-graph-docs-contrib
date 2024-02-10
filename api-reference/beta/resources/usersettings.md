@@ -40,6 +40,12 @@ Configure [contactMergeSuggestions](../resources/contactmergesuggestions.md):
   - Determining whether suggestion to merge duplicate contacts for a user is enabled.
   - Disabling or enabling suggestion to merge duplicate contacts for a user.
 
+Export user's Windows settings and values stored in cloud.
+  - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects.
+  - Get a filtered list of the user's [windowsSetting](../resources/windowssetting.md) objects by passing,
+    - [windowssettingtype](../resources/enums.md#windowssettingtype-values) in filter query.
+    - [windowsDeviceId](../resources/windowssetting.md#properties) in filter query.
+
 Inherits from [entity](entity.md). To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
 
 > [!NOTE]
@@ -50,6 +56,7 @@ Inherits from [entity](entity.md). To learn how to get or update user settings, 
 |:---------------|:--------|:----------|
 |[Get user settings](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
 |[Update user settings](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
+|[List windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the windowsSetting resources from the windows navigation property.|
 
 ## Properties
 
@@ -67,7 +74,7 @@ Inherits from [entity](entity.md). To learn how to get or update user settings, 
 |itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
 |regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The user's preferences for languages, regional locale and date/time formatting. |
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
-
+|windows|[windowsSetting](../resources/windowssetting.md) collection|The Windows settings of the user stored in cloud.|
 
 
 ## JSON representation
