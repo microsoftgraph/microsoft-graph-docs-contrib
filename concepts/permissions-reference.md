@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.prod: applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 01/18/2024
+ms.date: 02/09/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -661,6 +661,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Read and write user and shared calendars 
 | Description | - | Allows the app to create, read, update and delete events in all calendars in the organization user has permissions to access. This includes delegate and shared calendars. 
 | AdminConsentRequired | - | No 
+
+---
+
+### CallEvents.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 43431c03-960e-400f-87c6-8f910321dca3 
+| DisplayText | - | Read call event data 
+| Description | - | Allows the app to read call event information for an organization for the signed-in user. 
+| AdminConsentRequired | - | Yes 
 
 ---
 
@@ -1438,6 +1449,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 12338004-21f4-4896-bf5e-b75dfaf1016d | 8b0160d4-5743-482b-bb27-efc0a485ca4a 
 | DisplayText | Read and write custom security attribute definitions | Read and write custom security attribute definitions 
 | Description | Allows the app to read and write custom security attribute definitions for the tenant without a signed in user. | Allows the app to read and write custom security attribute definitions for the tenant on behalf of a signed in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### CustomTags.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | ab8a5872-7c88-47a6-8141-7becce939190 | de6ea87d-10bd-467c-8682-d525a0c61b89 
+| DisplayText | Read all custom tags data | Read all custom tags data 
+| Description | Read custom tags data, without a signed-in user | Read custom tags data on behalf of the signed-in user 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### CustomTags.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2f503208-e509-4e39-974c-8cc16e5785c9 | 2f1bbe0a-f34b-4efb-9edb-8db8dcb50eca 
+| DisplayText | Read and write custom tags data | Read and write custom tags data 
+| Description | Read and write custom tags data, without a signed-in user | Read and write custom tags data on behalf of the signed-in user 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -5073,10 +5106,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | 883ea226-0bf2-4a8f-9f9d-92c9162a727d | - 
-| DisplayText | Access selected site collections | - 
-| Description | Allow the application to access a subset of site collections without a signed in user.  The specific site collections and the permissions granted will be configured in SharePoint Online. | - 
-| AdminConsentRequired | Yes | - 
+| Identifier | 883ea226-0bf2-4a8f-9f9d-92c9162a727d | f89c84ef-20d0-4b54-87e9-02e856d66d53 
+| DisplayText | Access selected site collections | Access selected Sites, on behalf of the signed-in user 
+| Description | Allow the application to access a subset of site collections without a signed in user.  The specific site collections and the permissions granted will be configured in SharePoint Online. | Allow the application to access a subset of site collections on behalf of the signed-in user.  The specific site collections and the permissions granted will be configured in SharePoint Online. 
+| AdminConsentRequired | Yes | No 
 
 ---
 
@@ -6103,6 +6136,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Topic.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 79c4c76f-409a-4f98-884d-e2c09291ec26 
+| DisplayText | - | Read topic items 
+| Description | - | Allows the app to read topics data on behalf of the signed-in user. 
+| AdminConsentRequired | - | Yes 
+
+---
+
 ### TrustFrameworkKeySet.Read.All
 
 | Category | Application | Delegated |
@@ -6419,6 +6463,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read-write all virtual appointments for users, as authorized by online meetings app access policy | - 
 | Description | Allows the application to read and write virtual appointments for all users, without a signed-in user. The app must also be authorized to access an individual user's data by the online meetings application access policy. | - 
 | AdminConsentRequired | Yes | - 
+
+---
+
+### VirtualAppointmentNotification.Send
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 97e45b36-1250-48e4-bd70-2df6dab7e94a | 20d02fff-a0ef-49e7-a46e-019d4a6523b7 
+| DisplayText | Send notification regarding virtual appointments as any user | Send notification regarding virtual appointments for the signed-in user 
+| Description | Allows the application to send notification regarding virtual appointments as any user, without a signed-in user. The app must also be authorized to access an individual user's data by the online meetings application access policy. | Allows an application to send notifications for virtual appointments for the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
 
 ---
 

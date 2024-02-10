@@ -11658,6 +11658,32 @@ items:
                     href: api/domain-verify.md
                   - name: Promote domain
                     href: api/domain-promote.md
+              - name: External user profiles
+                items:
+                - name: External user profile
+                  href: resources/externaluserprofile.md
+                  items:
+                  - name: List
+                    href: api/directory-list-pendingexternaluserprofile.md
+                  - name: Get
+                    href: api/externaluserprofile-get.md
+                  - name: Update
+                    href: api/externaluserprofile-update.md
+                  - name: Delete
+                    href: api/directory-delete-externaluserprofiles.md
+                - name: Pending external user profile
+                  href: resources/pendingexternaluserprofile.md
+                  items:
+                  - name: List
+                    href: api/directory-list-pendingexternaluserprofile.md
+                  - name: Get
+                    href: api/pendingexternaluserprofile-get.md
+                  - name: Create
+                    href: api/directory-post-pendingexternaluserprofile.md
+                  - name: Update
+                    href: api/pendingexternaluserprofile-update.md
+                  - name: Delete
+                    href: api/directory-delete-pendingexternaluserprofiles.md
               - name: Feature rollout policy
                 href: resources/featurerolloutpolicy.md
                 items:
