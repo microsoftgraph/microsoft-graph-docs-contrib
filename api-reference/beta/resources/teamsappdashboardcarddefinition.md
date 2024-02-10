@@ -42,7 +42,9 @@ Represents the different rendering sizes for a dashboard card.
 
 ## Relationships
 
-None.
+| Relationship | Type	| Description |
+|:---------------|:--------|:----------|
+|appDefinitions|[teamsAppDefinition](teamsappdefinition.md) collection| The details for each version of the app. |
 
 ## JSON representation
 
