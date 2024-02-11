@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.directory.recommendations.recommendations_request_builder import RecommendationsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

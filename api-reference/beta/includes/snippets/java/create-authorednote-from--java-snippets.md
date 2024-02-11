@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AuthoredNote authoredNote = new AuthoredNote();
 ItemBody content = new ItemBody();
-content.content = "Please take a look at the files tagged with follow up";
-content.contentType = BodyType.TEXT;
-authoredNote.content = content1;
+content.setContent("Please take a look at the files tagged with follow up");
+content.setContentType(BodyType.Text);
+authoredNote.setContent(content);
+AuthoredNote result = graphClient.privacy().subjectRightsRequests().bySubjectRightsRequestId("{subjectRightsRequest-id}").notes().post(authoredNote);
 
-graphClient.privacy().subjectRightsRequests("{subjectRightsRequestId}").notes()
-	.buildRequest()
-	.post(authoredNote);
 
 ```

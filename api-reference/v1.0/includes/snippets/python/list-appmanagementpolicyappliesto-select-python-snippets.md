@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.policies.appManagementPolicies.item.appliesTo.applies_to_request_builder import AppliesToRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

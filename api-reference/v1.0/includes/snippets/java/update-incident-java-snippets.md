@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Incident incident = new Incident();
-incident.classification = AlertClassification.TRUE_POSITIVE;
-incident.determination = AlertDetermination.MULTI_STAGED_ATTACK;
-LinkedList<String> customTagsList = new LinkedList<String>();
-customTagsList.add("Demo");
-incident.customTags = customTagsList;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().incidents("2972395")
-	.buildRequest()
-	.patch(incident);
+com.microsoft.graph.models.security.Incident incident = new com.microsoft.graph.models.security.Incident();
+incident.setClassification(com.microsoft.graph.models.security.AlertClassification.TruePositive);
+incident.setDetermination(com.microsoft.graph.models.security.AlertDetermination.MultiStagedAttack);
+LinkedList<String> customTags = new LinkedList<String>();
+customTags.add("Demo");
+incident.setCustomTags(customTags);
+com.microsoft.graph.models.security.Incident result = graphClient.security().incidents().byIncidentId("{incident-id}").patch(incident);
+
 
 ```

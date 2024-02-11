@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.workbook_comment_reply import WorkbookCommentReply
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PublishedResource publishedResource = new PublishedResource();
-publishedResource.displayName = "Demo provisioning (updated)";
+publishedResource.setDisplayName("Demo provisioning (updated)");
+PublishedResource result = graphClient.onPremisesPublishingProfiles().byOnPremisesPublishingProfileId("{onPremisesPublishingProfile-id}").publishedResources().byPublishedResourceId("{publishedResource-id}").patch(publishedResource);
 
-graphClient.onPremisesPublishingProfiles("provisioning").publishedResources("1234b780-965f-4149-85c5-a8c73e58b67d")
-	.buildRequest()
-	.patch(publishedResource);
 
 ```

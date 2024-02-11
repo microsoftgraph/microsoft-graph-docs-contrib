@@ -4,40 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-OffsetDateTime startDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 01:49:21");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 02:19:21");
-
-String subject = "Create a meeting with customId provided";
-
-String externalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56";
-
+com.microsoft.graph.beta.users.item.onlinemeetings.createorget.CreateOrGetPostRequestBody createOrGetPostRequestBody = new com.microsoft.graph.beta.users.item.onlinemeetings.createorget.CreateOrGetPostRequestBody();
+OffsetDateTime startDateTime = OffsetDateTime.parse("2020-02-06T01:49:21.3524945+00:00");
+createOrGetPostRequestBody.setStartDateTime(startDateTime);
+OffsetDateTime endDateTime = OffsetDateTime.parse("2020-02-06T02:19:21.3524945+00:00");
+createOrGetPostRequestBody.setEndDateTime(endDateTime);
+createOrGetPostRequestBody.setSubject("Create a meeting with customId provided");
+createOrGetPostRequestBody.setExternalId("7eb8263f-d0e0-4149-bb1c-1f0476083c56");
 MeetingParticipants participants = new MeetingParticipants();
-LinkedList<MeetingParticipantInfo> attendeesList = new LinkedList<MeetingParticipantInfo>();
-MeetingParticipantInfo attendees = new MeetingParticipantInfo();
+LinkedList<MeetingParticipantInfo> attendees = new LinkedList<MeetingParticipantInfo>();
+MeetingParticipantInfo meetingParticipantInfo = new MeetingParticipantInfo();
 IdentitySet identity = new IdentitySet();
 Identity user = new Identity();
-user.id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000";
-identity.user = user;
-attendees.identity = identity;
-attendees.role = OnlineMeetingRole.PRESENTER;
-attendees.upn = "test1@contoso.com";
-attendeesList.add(attendees);
-participants.attendees = attendeesList;
+user.setId("1f35f2e6-9cab-44ad-8d5a-b74c14720000");
+identity.setUser(user);
+meetingParticipantInfo.setIdentity(identity);
+meetingParticipantInfo.setRole(OnlineMeetingRole.Presenter);
+meetingParticipantInfo.setUpn("test1@contoso.com");
+attendees.add(meetingParticipantInfo);
+participants.setAttendees(attendees);
+createOrGetPostRequestBody.setParticipants(participants);
+var result = graphClient.me().onlineMeetings().createOrGet().post(createOrGetPostRequestBody);
 
-graphClient.me().onlineMeetings()
-	.createOrGet(OnlineMeetingCreateOrGetParameterSet
-		.newBuilder()
-		.withChatInfo(null)
-		.withEndDateTime(endDateTime)
-		.withExternalId(externalId)
-		.withParticipants(participants)
-		.withStartDateTime(startDateTime)
-		.withSubject(subject)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Eastern Standard Time\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OutlookTask outlookTask = new OutlookTask();
 DateTimeTimeZone dueDateTime = new DateTimeTimeZone();
-dueDateTime.dateTime = "2016-05-06T16:00:00";
-dueDateTime.timeZone = "Eastern Standard Time";
-outlookTask.dueDateTime = dueDateTime;
+dueDateTime.setDateTime("2016-05-06T16:00:00");
+dueDateTime.setTimeZone("Eastern Standard Time");
+outlookTask.setDueDateTime(dueDateTime);
+OutlookTask result = graphClient.me().outlook().tasks().byOutlookTaskId("{outlookTask-id}").patch(outlookTask, requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "outlook.timezone=\"Eastern Standard Time\"");
+});
 
-graphClient.me().outlook().tasks("AAMkADA1MTHgwAAA=")
-	.buildRequest( requestOptions )
-	.patch(outlookTask);
 
 ```
