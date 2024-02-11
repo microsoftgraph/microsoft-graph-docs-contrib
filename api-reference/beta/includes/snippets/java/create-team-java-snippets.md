@@ -4,26 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Team team = new Team();
 TeamMemberSettings memberSettings = new TeamMemberSettings();
-memberSettings.allowCreateUpdateChannels = true;
-team.memberSettings = memberSettings;
+memberSettings.setAllowCreateUpdateChannels(true);
+team.setMemberSettings(memberSettings);
 TeamMessagingSettings messagingSettings = new TeamMessagingSettings();
-messagingSettings.allowUserEditMessages = true;
-messagingSettings.allowUserDeleteMessages = true;
-team.messagingSettings = messagingSettings;
+messagingSettings.setAllowUserEditMessages(true);
+messagingSettings.setAllowUserDeleteMessages(true);
+team.setMessagingSettings(messagingSettings);
 TeamFunSettings funSettings = new TeamFunSettings();
-funSettings.allowGiphy = true;
-funSettings.giphyContentRating = GiphyRatingType.STRICT;
-team.funSettings = funSettings;
+funSettings.setAllowGiphy(true);
+funSettings.setGiphyContentRating(GiphyRatingType.Strict);
+team.setFunSettings(funSettings);
 TeamDiscoverySettings discoverySettings = new TeamDiscoverySettings();
-discoverySettings.showInTeamsSearchAndSuggestions = true;
-team.discoverySettings = discoverySettings;
+discoverySettings.setShowInTeamsSearchAndSuggestions(true);
+team.setDiscoverySettings(discoverySettings);
+Team result = graphClient.groups().byGroupId("{group-id}").team().put(team);
 
-graphClient.groups("{id}").team()
-	.buildRequest()
-	.put(team);
 
 ```

@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.online_meeting import OnlineMeeting
+from msgraph.generated.models.join_meeting_id_settings import JoinMeetingIdSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,22 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 VppToken vppToken = new VppToken();
-vppToken.organizationName = "Organization Name value";
-vppToken.vppTokenAccountType = VppTokenAccountType.EDUCATION;
-vppToken.appleId = "Apple Id value";
-vppToken.expirationDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:57:57.2481234+00:00");
-vppToken.lastSyncDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T08:02:49.3205976+00:00");
-vppToken.token = "Token value";
-vppToken.state = VppTokenState.VALID;
-vppToken.lastSyncStatus = VppTokenSyncStatus.IN_PROGRESS;
-vppToken.automaticallyUpdateApps = true;
-vppToken.countryOrRegion = "Country Or Region value";
+vppToken.setOdataType("#microsoft.graph.vppToken");
+vppToken.setOrganizationName("Organization Name value");
+vppToken.setVppTokenAccountType(VppTokenAccountType.Education);
+vppToken.setAppleId("Apple Id value");
+OffsetDateTime expirationDateTime = OffsetDateTime.parse("2016-12-31T23:57:57.2481234-08:00");
+vppToken.setExpirationDateTime(expirationDateTime);
+OffsetDateTime lastSyncDateTime = OffsetDateTime.parse("2017-01-01T00:02:49.3205976-08:00");
+vppToken.setLastSyncDateTime(lastSyncDateTime);
+vppToken.setToken("Token value");
+vppToken.setState(VppTokenState.Valid);
+vppToken.setLastSyncStatus(VppTokenSyncStatus.InProgress);
+vppToken.setAutomaticallyUpdateApps(true);
+vppToken.setCountryOrRegion("Country Or Region value");
+VppToken result = graphClient.deviceAppManagement().vppTokens().byVppTokenId("{vppToken-id}").patch(vppToken);
 
-graphClient.deviceAppManagement().vppTokens("{vppTokenId}")
-	.buildRequest()
-	.patch(vppToken);
 
 ```
