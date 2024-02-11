@@ -1,6 +1,6 @@
 ---
 title: "plannerApprovalRequirement resource type"
-description: "**TODO: Add Description**"
+description: "The **plannerApprovalRequirement** resource represents approval completion requirement on a [plannerTask](plannertask.md)."
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a approval completion requirement on a [plannerTask](plannertask.md).
+The **plannerApprovalRequirement** resource represents approval completion requirement on a [plannerTask](plannertask.md).
 
 ## Properties
 |Property|Type|Description|

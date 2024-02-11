@@ -1,6 +1,6 @@
 ---
 title: "plannerBasicApprovalAttachment resource type"
-description: "**TODO: Add Description**"
+description: "The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, that will added on a [plannerTask](plannertask.md)"
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the approval attachment, which is of type basic, that will added on a [plannerTask](plannertask.md)
+The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, that will added on a [plannerTask](plannertask.md)
 
 Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md).
 
