@@ -1889,6 +1889,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **additionalData** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-1.0) resource.",
           "Target": "alert"
+        },
+        {
+          "Id": "db423a07-75ca-482d-8f04-1d04f087f565",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftSentinel",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftSentinel` member to the **serviceSource** enumeration.",
+          "Target": "serviceSource"
         }
       ],
       "Id": "db423a07-75ca-482d-8f04-1d04f087f565",
@@ -1915,6 +1923,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **additionalData** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
           "Target": "alert"
+        },
+        {
+          "Id": "9b72fe2b-b375-467e-9d74-b62aff7bba94",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftSentinel",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftSentinel` member to the **serviceSource** enumeration.",
+          "Target": "serviceSource"
         }
       ],
       "Id": "9b72fe2b-b375-467e-9d74-b62aff7bba94",
