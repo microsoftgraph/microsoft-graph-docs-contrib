@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 BrowserSite browserSite = new BrowserSite();
-browserSite.webUrl = "www.microsoft.com";
-browserSite.targetEnvironment = BrowserSiteTargetEnvironment.MICROSOFT_EDGE;
-browserSite.mergeType = BrowserSiteMergeType.DEFAULT;
-browserSite.compatibilityMode = BrowserSiteCompatibilityMode.DEFAULT;
-browserSite.allowRedirect = false;
-browserSite.comment = "Updating to Edge.";
+browserSite.setWebUrl("www.microsoft.com");
+browserSite.setTargetEnvironment(BrowserSiteTargetEnvironment.MicrosoftEdge);
+browserSite.setMergeType(BrowserSiteMergeType.Default);
+browserSite.setCompatibilityMode(BrowserSiteCompatibilityMode.Default);
+browserSite.setAllowRedirect(false);
+browserSite.setComment("Updating to Edge.");
+BrowserSite result = graphClient.admin().edge().internetExplorerMode().siteLists().byBrowserSiteListId("{browserSiteList-id}").sites().byBrowserSiteId("{browserSite-id}").patch(browserSite);
 
-graphClient.admin().edge().internetExplorerMode().siteLists("972a5778-df43-45fd-9c2a-5dd944c7a1ce").sites("7cf831d2-8a9b-4826-b120-911566f6fd6a")
-	.buildRequest()
-	.patch(browserSite);
 
 ```

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.checkin_post_request_body import CheckinPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

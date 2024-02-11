@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryNoncustodialDataSource ediscoveryNoncustodialDataSource = graphClient.security().cases().ediscoveryCases("b0073e4e-4184-41c6-9eb7-8c8cc3e2288b").noncustodialDataSources("35393639323133394345384344303043")
-	.buildRequest()
-	.expand("dataSource")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.security.EdiscoveryNoncustodialDataSource result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").noncustodialDataSources().byEdiscoveryNoncustodialDataSourceId("{ediscoveryNoncustodialDataSource-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"dataSource"};
+});
+
 
 ```
