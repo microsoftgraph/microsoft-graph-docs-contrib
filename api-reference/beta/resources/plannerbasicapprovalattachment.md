@@ -1,9 +1,9 @@
 ---
 title: "plannerBasicApprovalAttachment resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ShravanthiReddy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
@@ -13,16 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the approval attachment, which is of type basic, that will added on a [plannerTask](plannertask.md)
 
 Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalId|String|**TODO: Add Description**|
-|status|plannerApprovalStatus|**TODO: Add Description** Inherited from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md).The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`.|
+|approvalId|String|Identifier of the approval|
+|status|plannerApprovalStatus|Status of the approval. Inherited from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md).The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`.|
 
 ## Relationships
 None.

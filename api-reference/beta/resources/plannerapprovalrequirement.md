@@ -1,9 +1,9 @@
 ---
 title: "plannerApprovalRequirement resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ShravanthiReddy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a approval completion requirement on a [plannerTask](plannertask.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isApprovalRequired|Boolean|**TODO: Add Description**|
+|isApprovalRequired|Boolean|Specifies if approval is required, to complete the [plannerTask](plannertask.md).|
 
 ## Relationships
 None.

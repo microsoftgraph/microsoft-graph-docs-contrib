@@ -1,9 +1,9 @@
 ---
 title: "plannerBaseApprovalAttachment resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ShravanthiReddy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the base approval attachment, that will added on a [plannerTask](plannertask.md).
 This is an abstract type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|status|plannerApprovalStatus|**TODO: Add Description**.The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`.|
+|status|plannerApprovalStatus|Status of the approval.The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`.|
 
 ## Relationships
 None.
