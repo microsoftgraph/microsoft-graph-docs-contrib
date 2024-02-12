@@ -54,7 +54,7 @@ The following example shows a request.
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "a5ca6dda-f220-43ca-81e4-02396b99f398"],
   "name": "update_gradingCategoties"
 }-->
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070//assignmentSettings/gradingCategories/a5ca6dda-f220-43ca-81e4-02396b99f398
 Content-type: application/json
 

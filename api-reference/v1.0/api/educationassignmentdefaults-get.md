@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [educationAss
   "name": "get_educationassignmentdefaults"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentDefaults
 ```
 

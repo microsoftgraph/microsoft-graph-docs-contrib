@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "update_educationrubric"
 }-->
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
 Content-type: application/json
 

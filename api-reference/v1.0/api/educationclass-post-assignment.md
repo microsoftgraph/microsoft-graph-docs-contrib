@@ -49,7 +49,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_educationassignment_from_educationclass"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments
 Content-type: application/json
 

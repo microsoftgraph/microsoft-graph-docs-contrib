@@ -48,7 +48,7 @@ The following example shows a request.
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "c2eeaaf2-766c-4b90-9a17-61625bc5a47d"],
   "name": "delete_gradingCategories"
 }-->
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/c2eeaaf2-766c-4b90-9a17-61625bc5a47d/gradingCategory/$ref
 
 ```

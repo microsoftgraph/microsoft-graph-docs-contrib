@@ -57,7 +57,7 @@ The following example shows a request.
   "name": "delete_educationrubric"
 }-->
 
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
 ```
 
