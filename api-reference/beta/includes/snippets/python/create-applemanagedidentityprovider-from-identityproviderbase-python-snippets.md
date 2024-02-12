@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.apple_managed_identity_provider import AppleManagedIdentityProvider
 
 graph_client = GraphServiceClient(credentials, scopes)
 

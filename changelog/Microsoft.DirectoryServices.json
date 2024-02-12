@@ -3,20 +3,44 @@
     {
       "ChangeList": [
         {
-          "Id": "4496e9d1-6019-4068-a26b-6328d1bd8137",
-          "ApiChange": "Permission",
-          "ChangedApiName": "Organizational Branding Administrator",
+          "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pendingExternalUserProfiles",
           "ChangeType": "Addition",
-          "Description": "Added the `Organizational Branding Administrator` Microsoft Entra role to the read and write operations of [organizationalBranding](https://learn.microsoft.com/graph/api/resources/organizationalbranding?view=graph-rest-1.0). Where only the *Global Administrator* was previously authorized to manage tenant branding, you can now use the lesser privileged *Organizational Branding Administrator* role instead.",
-          "Target": "organizationalBranding"
+          "Description": "Added the [pendingExternalUserProfile](https://learn.microsoft.com/en-us/graph/api/resources/pendingexternaluserprofile?view=graph-rest-beta) resource and associated methods. This entity exposes basic information used to represent a pending external user profile in your Microsoft Entra tenant.",
+          "Target": "pendingExternalUserProfile"
+        },
+        {
+          "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalUserProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalUserProfile](https://learn.microsoft.com/en-us/graph/api/resources/externaluserprofile?view=graph-rest-beta) resource and associated methods. This entity exposes basic information used to represent an external user profile in your Microsoft Entra tenant.",
+          "Target": "externalUserProfile"
+        },
+        {
+          "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "externalUserProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalUserProfiles** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource. Deleted external user profiles can also be managed via the deletedItems functionality.",
+          "Target": "directory"
+        },
+        {
+          "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "pendingExternalUserProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the **pendingExternalUserProfiles** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource. Deleted pending external user profiles can also be managed via the deletedItems functionality.",
+          "Target": "directory"
         }
       ],
-      "Id": "4496e9d1-6019-4068-a26b-6328d1bd8137",
+      "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
       "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2024-01-31T00:00:00.304139Z",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-09T00:00:00.0123959Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -1041,8 +1065,8 @@
       "SubArea": "Identity and sign-in"
     },
     {
-      "ChangeList": [
-        {
+    "ChangeList": [
+      {
           "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
           "ApiChange": "Permission",
           "ChangedApiName": "Synchronization.ReadWrite.All",
@@ -4078,6 +4102,24 @@
       "CreatedDateTime": "2021-12-01T00:00:00.2532422Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4496e9d1-6019-4068-a26b-6328d1bd8137",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Organizational Branding Administrator",
+          "ChangeType": "Addition",
+          "Description": "Added the `Organizational Branding Administrator` Microsoft Entra role to the read and write operations of [organizationalBranding](https://learn.microsoft.com/graph/api/resources/organizationalbranding?view=graph-rest-1.0). Where only the *Global Administrator* was previously authorized to manage tenant branding, you can now use the lesser privileged *Organizational Branding Administrator* role instead.",
+          "Target": "organizationalBranding"
+        }
+      ],
+      "Id": "4496e9d1-6019-4068-a26b-6328d1bd8137",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-02-12T00:00:00.304139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [

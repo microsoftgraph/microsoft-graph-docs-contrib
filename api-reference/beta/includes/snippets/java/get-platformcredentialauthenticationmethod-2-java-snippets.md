@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-PlatformCredentialAuthenticationMethodCollectionPage platformCredentialMethods = graphClient.me().authentication().platformCredentialMethods()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+PlatformCredentialAuthenticationMethodCollectionResponse result = graphClient.me().authentication().platformCredentialMethods().get();
+
 
 ```

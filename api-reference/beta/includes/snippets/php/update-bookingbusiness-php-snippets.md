@@ -19,6 +19,6 @@ $schedulingPolicy->setSendConfirmationsToOwner(true);
 $schedulingPolicy->setAllowStaffSelection(true);
 $requestBody->setSchedulingPolicy($schedulingPolicy);
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->patch($requestBody)->wait();
 
 ```

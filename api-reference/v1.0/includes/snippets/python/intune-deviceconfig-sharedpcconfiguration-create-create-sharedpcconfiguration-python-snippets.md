@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.shared_p_c_configuration import SharedPCConfiguration
+from msgraph.generated.models.shared_p_c_account_manager_policy import SharedPCAccountManagerPolicy
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 InternalDomainFederation internalDomainFederation = new InternalDomainFederation();
-internalDomainFederation.displayName = "Contoso name change";
-internalDomainFederation.federatedIdpMfaBehavior = FederatedIdpMfaBehavior.ACCEPT_IF_MFA_DONE_BY_FEDERATED_IDP;
+internalDomainFederation.setDisplayName("Contoso name change");
+internalDomainFederation.setFederatedIdpMfaBehavior(FederatedIdpMfaBehavior.AcceptIfMfaDoneByFederatedIdp);
+InternalDomainFederation result = graphClient.domains().byDomainId("{domain-id}").federationConfiguration().byInternalDomainFederationId("{internalDomainFederation-id}").patch(internalDomainFederation);
 
-graphClient.domains("contoso.com").federationConfiguration("6601d14b-d113-8f64-fda2-9b5ddda18ecc")
-	.buildRequest()
-	.patch(internalDomainFederation);
 
 ```

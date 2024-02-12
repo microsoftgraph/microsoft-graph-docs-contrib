@@ -4,40 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.teams.item.sendactivitynotification.SendActivityNotificationPostRequestBody sendActivityNotificationPostRequestBody = new com.microsoft.graph.beta.teams.item.sendactivitynotification.SendActivityNotificationPostRequestBody();
 TeamworkActivityTopic topic = new TeamworkActivityTopic();
-topic.source = TeamworkActivityTopicSource.ENTITY_URL;
-topic.value = "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7";
-
-String activityType = "pendingFinanceApprovalRequests";
-
+topic.setSource(TeamworkActivityTopicSource.EntityUrl);
+topic.setValue("https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7");
+sendActivityNotificationPostRequestBody.setTopic(topic);
+sendActivityNotificationPostRequestBody.setActivityType("pendingFinanceApprovalRequests");
 ItemBody previewText = new ItemBody();
-previewText.content = "Internal spending team has a pending finance approval requests";
-
+previewText.setContent("Internal spending team has a pending finance approval requests");
+sendActivityNotificationPostRequestBody.setPreviewText(previewText);
 ChannelMembersNotificationRecipient recipient = new ChannelMembersNotificationRecipient();
-recipient.teamId = "e8bece96-d393-4b9b-b8da-69cedef1a7e7";
-recipient.channelId = "19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2";
+recipient.setOdataType("microsoft.graph.channelMembersNotificationRecipient");
+recipient.setTeamId("e8bece96-d393-4b9b-b8da-69cedef1a7e7");
+recipient.setChannelId("19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2");
+sendActivityNotificationPostRequestBody.setRecipient(recipient);
+LinkedList<KeyValuePair> templateParameters = new LinkedList<KeyValuePair>();
+KeyValuePair keyValuePair = new KeyValuePair();
+keyValuePair.setName("pendingRequestCount");
+keyValuePair.setValue("5");
+templateParameters.add(keyValuePair);
+sendActivityNotificationPostRequestBody.setTemplateParameters(templateParameters);
+graphClient.teams().byTeamId("{team-id}").sendActivityNotification().post(sendActivityNotificationPostRequestBody);
 
-LinkedList<KeyValuePair> templateParametersList = new LinkedList<KeyValuePair>();
-KeyValuePair templateParameters = new KeyValuePair();
-templateParameters.name = "pendingRequestCount";
-templateParameters.value = "5";
-
-templateParametersList.add(templateParameters);
-
-graphClient.teams("e8bece96-d393-4b9b-b8da-69cedef1a7e7")
-	.sendActivityNotification(TeamSendActivityNotificationParameterSet
-		.newBuilder()
-		.withTopic(topic)
-		.withActivityType(activityType)
-		.withChainId(null)
-		.withPreviewText(previewText)
-		.withTeamsAppId(null)
-		.withTemplateParameters(templateParametersList)
-		.withRecipient(recipient)
-		.build())
-	.buildRequest()
-	.post();
 
 ```
