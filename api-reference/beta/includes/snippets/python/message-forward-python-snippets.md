@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.forward_post_request_body import ForwardPostRequestBody
+from msgraph.generated.models.message import Message
+from msgraph.generated.models.recipient import Recipient
+from msgraph.generated.models.email_address import EmailAddress
 
 graph_client = GraphServiceClient(credentials, scopes)
 

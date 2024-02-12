@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DriveItem driveItem = new DriveItem();
-driveItem.name = "Shared legal agreements";
+driveItem.setName("Shared legal agreements");
+DriveItem result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").patch(driveItem);
 
-graphClient.drive().items("{bundle-id}")
-	.buildRequest()
-	.patch(driveItem);
 
 ```

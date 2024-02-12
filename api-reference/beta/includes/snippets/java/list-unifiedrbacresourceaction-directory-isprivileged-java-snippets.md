@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UnifiedRbacResourceActionCollectionPage resourceActions = graphClient.roleManagement().directory().resourceNamespaces("microsoft.directory").resourceActions()
-	.buildRequest()
-	.filter("isPrivileged eq true")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UnifiedRbacResourceActionCollectionResponse result = graphClient.roleManagement().directory().resourceNamespaces().byUnifiedRbacResourceNamespaceId("{unifiedRbacResourceNamespace-id}").resourceActions().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "isPrivileged eq true";
+});
+
 
 ```

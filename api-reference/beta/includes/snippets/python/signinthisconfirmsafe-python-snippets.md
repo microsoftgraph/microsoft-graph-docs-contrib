@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.confirm_safe_post_request_body import ConfirmSafePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

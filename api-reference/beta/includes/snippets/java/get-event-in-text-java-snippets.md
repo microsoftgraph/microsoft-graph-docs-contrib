@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "outlook.body-content-type=\"text\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Event event = graphClient.me().events("AAMkAGI1AAAoZDOFAAA=")
-	.buildRequest( requestOptions )
-	.select("subject,body,bodyPreview")
-	.get();
+Event result = graphClient.me().events().byEventId("{event-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"subject", "body", "bodyPreview"};
+	requestConfiguration.headers.add("Prefer", "outlook.body-content-type=\"text\"");
+});
+
 
 ```

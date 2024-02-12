@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "outlook.body-content-type=\"text\""));
-requestOptions.add(new QueryOption("startDateTime", "2017-01-01T19:00:00-08:00"));
-requestOptions.add(new QueryOption("endDateTime", "2017-10-01T19:00:00.00-08:00"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-EventCollectionPage calendarView = graphClient.groups("02bd9fd6-8f93-4758-87c3-1fb73740a315").calendarView()
-	.buildRequest( requestOptions )
-	.get();
+EventCollectionResponse result = graphClient.groups().byGroupId("{group-id}").calendarView().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.startDateTime = "2017-01-01T19:00:00-08:00";
+	requestConfiguration.queryParameters.endDateTime = "2017-10-01T19:00:00.00-08:00";
+	requestConfiguration.headers.add("Prefer", "outlook.body-content-type=\"text\"");
+});
+
 
 ```

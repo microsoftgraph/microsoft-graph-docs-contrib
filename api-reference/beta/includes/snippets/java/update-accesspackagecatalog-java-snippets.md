@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessPackageCatalog accessPackageCatalog = new AccessPackageCatalog();
-accessPackageCatalog.displayName = "Catalog One";
+accessPackageCatalog.setDisplayName("Catalog One");
+AccessPackageCatalog result = graphClient.identityGovernance().entitlementManagement().accessPackageCatalogs().byAccessPackageCatalogId("{accessPackageCatalog-id}").patch(accessPackageCatalog);
 
-graphClient.identityGovernance().entitlementManagement().accessPackageCatalogs("{accessPackageCatalogId}")
-	.buildRequest()
-	.patch(accessPackageCatalog);
 
 ```

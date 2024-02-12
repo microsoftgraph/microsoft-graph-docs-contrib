@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AccessPackageResourceCollectionPage accessPackageResources = graphClient.identityGovernance().entitlementManagement().accessPackageCatalogs("cec5d6ab-c75d-47c0-9c1c-92e89f66e384").accessPackageResources()
-	.buildRequest()
-	.filter("(displayName eq 'Marketing resources')")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AccessPackageResourceCollectionResponse result = graphClient.identityGovernance().entitlementManagement().accessPackageCatalogs().byAccessPackageCatalogId("{accessPackageCatalog-id}").accessPackageResources().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "(displayName eq 'Marketing resources')";
+});
+
 
 ```
