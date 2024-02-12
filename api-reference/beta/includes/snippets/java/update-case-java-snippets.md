@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Case _case = new Case();
-_case.displayName = "My Case 1 - Renamed";
-_case.description = "Updated description";
-_case.externalId = "Updated externalId";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.compliance().ediscovery().cases("061b9a92-8926-4bd9-b41d-abf35edc7583")
-	.buildRequest()
-	.patch(_case);
+com.microsoft.graph.beta.models.ediscovery.CaseEscaped caseEscaped = new com.microsoft.graph.beta.models.ediscovery.CaseEscaped();
+caseEscaped.setDisplayName("My Case 1 - Renamed");
+caseEscaped.setDescription("Updated description");
+caseEscaped.setExternalId("Updated externalId");
+com.microsoft.graph.models.ediscovery.Case result = graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").patch(caseEscaped);
+
 
 ```

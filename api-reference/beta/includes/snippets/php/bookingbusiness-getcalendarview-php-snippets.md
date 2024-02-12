@@ -16,6 +16,6 @@ $queryParameters->end = "2018-05-10T00:00:00Z";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->calendarView()->get($requestConfiguration)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->calendarView()->get($requestConfiguration)->wait();
 
 ```

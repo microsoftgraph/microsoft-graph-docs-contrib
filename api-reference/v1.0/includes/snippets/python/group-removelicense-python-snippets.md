@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.assign_license_post_request_body import AssignLicensePostRequestBody
+from msgraph.generated.models.assigned_license import AssignedLicense
 
 graph_client = GraphServiceClient(credentials, scopes)
 

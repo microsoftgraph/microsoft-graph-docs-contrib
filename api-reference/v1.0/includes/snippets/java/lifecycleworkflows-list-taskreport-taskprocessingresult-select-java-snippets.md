@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TaskProcessingResultCollectionPage taskProcessingResults = graphClient.identityGovernance().lifecycleWorkflows().workflows("15239232-66ed-445b-8292-2f5bbb2eb833").taskReports("443c7611-45df-48c0-bf5e-dc6068c402f0").taskProcessingResults()
-	.buildRequest()
-	.select("id,failureReason,processingStatus,subject,task")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.identitygovernance.TaskProcessingResultCollectionResponse result = graphClient.identityGovernance().lifecycleWorkflows().workflows().byWorkflowId("{workflow-id}").taskReports().byTaskReportId("{taskReport-id}").taskProcessingResults().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"id", "failureReason", "processingStatus", "subject", "task"};
+});
+
 
 ```

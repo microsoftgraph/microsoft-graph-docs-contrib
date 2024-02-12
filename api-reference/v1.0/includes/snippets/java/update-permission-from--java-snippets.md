@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Permission permission = new Permission();
-LinkedList<String> rolesList = new LinkedList<String>();
-rolesList.add("read");
-permission.roles = rolesList;
+LinkedList<String> roles = new LinkedList<String>();
+roles.add("read");
+permission.setRoles(roles);
+Permission result = graphClient.sites().bySiteId("{site-id}").permissions().byPermissionId("{permission-id}").patch(permission);
 
-graphClient.sites("{sitesId}").permissions("{permissionId}")
-	.buildRequest()
-	.patch(permission);
 
 ```

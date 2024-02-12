@@ -4,19 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UUID keyId = UUID.fromString("f0b0b335-1d71-4883-8f98-567911bfdca6");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String proof = "eyJ0eXAiOiJ...";
+com.microsoft.graph.applications.item.removekey.RemoveKeyPostRequestBody removeKeyPostRequestBody = new com.microsoft.graph.applications.item.removekey.RemoveKeyPostRequestBody();
+removeKeyPostRequestBody.setKeyId(UUID.fromString("f0b0b335-1d71-4883-8f98-567911bfdca6"));
+removeKeyPostRequestBody.setProof("eyJ0eXAiOiJ...");
+graphClient.applications().byApplicationId("{application-id}").removeKey().post(removeKeyPostRequestBody);
 
-graphClient.applications("{id}")
-	.removeKey(ApplicationRemoveKeyParameterSet
-		.newBuilder()
-		.withKeyId(keyId)
-		.withProof(proof)
-		.build())
-	.buildRequest()
-	.post();
 
 ```
