@@ -86,17 +86,17 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsSetting",
-  "id": "default$windows.data.fileexplorerclassic.searchsettings",
-  "windowsDeviceId": "String",
-  "settingType": "String",
-  "payloadType": "String",
+  "id": "{67585f9f-ee4b-4dd8-808e-d88375d66ef7}$windows.data.apps.devicemetadata",
+  "windowsDeviceId": "67585f9f-ee4b-4dd8-808e-d88375d66ef7",
+  "settingType": "backup",
+  "payloadType": "windows.data.apps.devicemetadata",
   "instances": [
             {
-                "id": "9715f1d9-49d1-4b94-041b-443ac419d417",
-                "payload": "String (Base64 encoded JSON)",
-                "lastModifiedDateTime": "String (timestamp)",
-                "createdDateTime": "String (timestamp)",
-                "expirationDateTime": "String (timestamp)"
+                "id": "14b50191-10e5-4da5-9099-8c909b8458bd",
+                "payload": "VGhpcyBpcyBqdXN0IGFuIGV4YW1wbGUh",
+                "lastModifiedDateTime": "2024-10-31T23:30:41Z",
+                "createdDateTime": "2024-02-12T19:34:35.223Z",
+                "expirationDateTime": "2034-02-09T19:34:33.771Z"
             }
         ]
 }

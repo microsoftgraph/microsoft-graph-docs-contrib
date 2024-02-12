@@ -89,18 +89,18 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.windowsSettingInstance",
       "id": "9715f1d9-49d1-4b94-041b-443ac419d417",
-      "payload": "String (Base64 encoded JSON)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)",
-      "expirationDateTime": "String (timestamp)"
+      "payload": "VGhpcyBpcyBqdXN0IGFuIGV4YW1wbGUh",
+      "lastModifiedDateTime": "2024-10-31T23:30:41Z",
+      "createdDateTime": "2024-02-12T19:34:35.223Z",
+      "expirationDateTime": "2034-02-09T19:34:33.771Z"
     },
     {
       "@odata.type": "#microsoft.graph.windowsSettingInstance",
       "id": "6984732f-86b0-8e31-dc02-37fce0df6d61",
-      "payload": "String (Base64 encoded JSON)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)",
-      "expirationDateTime": "String (timestamp)"
+      "payload": "VGhpcyBpcyBhbm90aGVyIGp1c3QgYW4gZXhhbXBsZSE=",
+      "lastModifiedDateTime": "2024-10-31T23:30:41Z",
+      "createdDateTime": "2024-02-12T19:34:35.223Z",
+      "expirationDateTime": "2034-02-09T19:34:33.771Z"
     }
   ]
 }

@@ -41,7 +41,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |id|String|The unique identifier of the object.|
 |payloadType|String|The type of setting payloads contained in the *instances* navigation property.|
-|settingType|windowsSettingType|The type of setting. Possible values are: `roaming`, `backup`, `unknownFutureValue`. `unknownFutureValue` is a future placeholder and not a real settingType.|
+|settingType|windowsSettingType|The type of setting. Possible values are: `roaming`, `backup`, `unknownFutureValue`. *unknownFutureValue* is a future placeholder and not a real settingType.|
 |windowsDeviceId|String|A unique identifier for the device the setting belongs to if it is of the settingType `backup`.|
 
 ## Relationships
