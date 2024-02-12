@@ -476,7 +476,7 @@ Content-type: application/json
 The following example shows a request.
 
 >**Notes:**
-> - The file must be already in SharePoint. To access the file properties, you need to [GET the **driveItem** for the file](https://learn.microsoft.com/en-us/graph/api/driveitem-get?view=graph-rest-1.0&tabs=http). The **eTag** of the **driveItem** has a GUID that is your attachment ID, the **webDavUrl** of the **driveItem** is your attachment **contentURL**, and you can use the **driveItem's** name as your attachment name. You can use /drives/{drive-id}/items/{item-id} to get a drive item resource. To get **webDavUrl**, you have to explicitly select it via $select=webDavUrl or $select=*,webDavUrl.
+> - The file to attach must be already in SharePoint. To access the file properties, [GET the **driveItem** for the file](https://learn.microsoft.com/en-us/graph/api/driveitem-get?view=graph-rest-1.0&tabs=http). The **eTag** of the **driveItem** has a GUID that is your attachment ID. The **webDavUrl** of the **driveItem** is your attachment **contentURL**. You can use the name of the **driveItem** as your attachment name. You can use /drives/{drive-id}/items/{item-id} to get a drive item resource. To get **webDavUrl**, you have to explicitly select it via $select=webDavUrl or $select=*,webDavUrl.
 > - Microsoft Graph supports the `OpenUrl` card action. Bots are required for other card actions.
 
 

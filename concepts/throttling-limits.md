@@ -369,7 +369,11 @@ Limits are expressed as requests per second (rps).
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 
+<<<<<<< HEAD
 A maximum of 1 request per second per user can be issued when doing POST message in a given chat or channel (This throttling limit is not supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+=======
+A maximum of 1 request per second per user can be issued when using the POST method to send messages in a given chat or channel. Not supported for migration.
+>>>>>>> 858886d8dc0e6327281d0b6048a0ccd36b25a3c0
 
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)

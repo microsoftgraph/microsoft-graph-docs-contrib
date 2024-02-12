@@ -16,6 +16,9 @@ cloudPcProvisioningPolicy.imageType = CloudPcProvisioningPolicyImageType.CUSTOM;
 CloudPcWindowsSettings windowsSettings = new CloudPcWindowsSettings();
 windowsSettings.language = "en-US";
 cloudPcProvisioningPolicy.windowsSettings = windowsSettings;
+CloudPcWindowsSetting windowsSetting = new CloudPcWindowsSetting();
+windowsSetting.locale = "en-US";
+cloudPcProvisioningPolicy.windowsSetting = windowsSetting;
 
 graphClient.deviceManagement().virtualEndpoint().provisioningPolicies("{id}")
 	.buildRequest()
