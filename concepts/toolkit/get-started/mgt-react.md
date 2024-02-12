@@ -123,7 +123,7 @@ const App = (props) => {
 
 The `template` prop allows you to specify which template to overwrite. In this case, the `MyEvent` component is repeated for every event, and the `event` object is passed as part of the `dataContext` properties.
 
-## See also
+## Related content
 
 * [Get started with the Microsoft Graph Toolkit in React](./use-toolkit-with-react.md)
 * [Learn about authentication providers](../providers/providers.md)

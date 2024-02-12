@@ -99,7 +99,7 @@ Looking for the API reference for this service?
 - View the API usage [limits](throttling-limits.md#cloud-communication-service-limits).
 - Learn how to [manage phone numbers](cloud-communications-phone-number.md) for your bots.
 
-## See also
+## Related content
 
 - [Delegated and application permissions](/azure/active-directory/develop/v1-permissions-and-consent)
 - [Calls permissions](./permissions-reference.md)

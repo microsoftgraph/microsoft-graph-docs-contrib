@@ -110,7 +110,7 @@ If you attempt an API call to access an online meeting or virtual event without 
 
 Follow the steps in this article to create and/or grant an application access policy that contains the app ID to the user ID.
 
-## See also
+## Related content
 
 - [Permissions reference](permissions-reference.md)
 - [New-CsApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy)

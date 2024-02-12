@@ -52,7 +52,7 @@ addresses are non-deliverable, the component generates non-delivery reports.
 For more details about report messages, see [DSNs and NDRs in Exchange Server](/exchange/mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages?view=exchserver-2019).
 
 
-## See also
+## Related content
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md).
 - [Automate creating, sending, and processing messages](outlook-create-send-messages.md).
 - [Send messages with MIME content](outlook-send-mime-message.md).

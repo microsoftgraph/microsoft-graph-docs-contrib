@@ -22,18 +22,25 @@ items:
         items:
           - name: Overview
             href: integration-patterns-overview.md
+            displayName: architecture, scenarios
           - name: Analyze Microsoft Graph data
             href: patterns/analyze-storage-data.md
+            displayName: Microsoft Graph Data Connect, scenario
           - name: Build interactive apps
             href: patterns/interactive-applications.md
+            displayName: Microsoft 365 services, REST API, scenario
           - name: Build interactive apps with real-time feed
             href: patterns/interactive-app-with-change-notifications-via-webhooks.md
+            displayName: change notifications, Microsoft 365 services, scenario
           - name: Get real-time data updates
             href: patterns/notifications-in-push-mode.md
+            displayName: change notifications, scenario
           - name: Retrieve events at your speed
             href: patterns/notifications-in-pull-mode.md
+            displayName: change notifications, data loss prevention, DLP, scenario
           - name: Augment Microsoft search
             href: patterns/augment-search-experience-with-custom-data.md
+            displayName: Microsoft Graph connectiors, Copilot for Microsoft 365, scenario
       - name: Metered APIs
         items:
           - name: Overview
