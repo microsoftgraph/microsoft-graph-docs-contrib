@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 InsightsSettings insightsSettings = new InsightsSettings();
-insightsSettings.disabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981";
+insightsSettings.setDisabledForGroup("edbfe4fb-ec70-4300-928f-dbb2ae86c981");
+InsightsSettings result = graphClient.organization().byOrganizationId("{organization-id}").settings().itemInsights().patch(insightsSettings);
 
-graphClient.organization("{organizationId}").settings().itemInsights()
-	.buildRequest()
-	.patch(insightsSettings);
 
 ```

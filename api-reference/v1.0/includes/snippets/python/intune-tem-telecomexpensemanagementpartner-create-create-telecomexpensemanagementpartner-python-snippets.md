@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.telecom_expense_management_partner import TelecomExpenseManagementPartner
 
 graph_client = GraphServiceClient(credentials, scopes)
 

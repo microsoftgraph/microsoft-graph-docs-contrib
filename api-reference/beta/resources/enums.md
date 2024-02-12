@@ -4602,6 +4602,14 @@ Possible values for user account types (group membership), per Windows definitio
 |qrCode|
 |unknownFutureValue|
 
+### bookingPageAccessControl values 
+
+|Member|
+|:---|
+|unrestricted|
+|restrictedToOrganization|
+|unknownFutureValue|
+
 ### workplaceSensorType values
 
 | Member | Value| Description |

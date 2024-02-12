@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.dismiss_post_request_body import DismissPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

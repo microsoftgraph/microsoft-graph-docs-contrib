@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-NoncustodialDataSource noncustodialDataSource = new NoncustodialDataSource();
-noncustodialDataSource.applyHoldToSource = true;
-UserSource dataSource = new UserSource();
-dataSource.email = "adelev@contoso.com";
-noncustodialDataSource.dataSource = dataSource;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.compliance().ediscovery().cases("5b840b94-f821-4c4a-8cad-3a90062bf51a").noncustodialDataSources()
-	.buildRequest()
-	.post(noncustodialDataSource);
+com.microsoft.graph.beta.models.ediscovery.NoncustodialDataSource noncustodialDataSource = new com.microsoft.graph.beta.models.ediscovery.NoncustodialDataSource();
+noncustodialDataSource.setApplyHoldToSource(true);
+com.microsoft.graph.beta.models.ediscovery.UserSource dataSource = new com.microsoft.graph.beta.models.ediscovery.UserSource();
+dataSource.setOdataType("microsoft.graph.ediscovery.userSource");
+dataSource.setEmail("adelev@contoso.com");
+noncustodialDataSource.setDataSource(dataSource);
+com.microsoft.graph.models.ediscovery.NoncustodialDataSource result = graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").noncustodialDataSources().post(noncustodialDataSource);
+
 
 ```
