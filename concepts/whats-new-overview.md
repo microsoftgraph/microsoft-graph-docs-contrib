@@ -22,12 +22,6 @@ Microsoft Graph Toolkit v4 is now available. For details about changes in the la
 
 ## February 2024: New in preview only
 
-### Teamwork and communications | Shift management
-
-Added the ability to [get shifts](/graph/api/team-getshifts) and [get time offs](/graph/api/team-gettimesoff) across all teams that a user is a direct member of.
-
-## February 2024: New in preview only
-
 ### Device and app management | Cloud PC
 
 The following properties are deprecated:
@@ -35,6 +29,10 @@ The following properties are deprecated:
 - **type** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) in favor of the **connectionType** property.
 - **healthCheckStatusDetails** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) in favor of the **healthCheckStatusDetail** property.
 - **additionalDetails** property on [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true) in favor of the **additionalDetail** property.
+
+### Teamwork and communications | Shift management
+
+Added the ability to [get shifts](/graph/api/team-getshifts) and [get time offs](/graph/api/team-gettimesoff) across all teams that a user is a direct member of.
 
 ## January 2024: New and generally available
 
