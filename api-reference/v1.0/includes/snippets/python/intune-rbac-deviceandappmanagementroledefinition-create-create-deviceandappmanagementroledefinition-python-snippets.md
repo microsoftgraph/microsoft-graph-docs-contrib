@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_and_app_management_role_definition import DeviceAndAppManagementRoleDefinition
+from msgraph.generated.models.role_permission import RolePermission
+from msgraph.generated.models.resource_action import ResourceAction
 
 graph_client = GraphServiceClient(credentials, scopes)
 

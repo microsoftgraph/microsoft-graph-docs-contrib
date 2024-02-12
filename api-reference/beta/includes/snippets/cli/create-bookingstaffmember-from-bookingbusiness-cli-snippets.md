@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta booking-businesses staff-members create --booking-business-id {bookingBusiness-id} --body '{\
+mgc-beta solutions booking-businesses staff-members create --booking-business-id {bookingBusiness-id} --body '{\
     "@odata.type":"#microsoft.graph.bookingStaffMember",\
     "colorIndex":1,\
     "displayName":"Dana Swope",\

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.planner.buckets.item.planner_bucket_item_request_builder import PlannerBucketItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

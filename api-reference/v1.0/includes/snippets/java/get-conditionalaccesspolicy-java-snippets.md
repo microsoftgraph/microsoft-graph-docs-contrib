@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ConditionalAccessPolicy conditionalAccessPolicy = graphClient.identity().conditionalAccess().policies("6b5e999b-0ba8-4186-a106-e0296c1c4358")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ConditionalAccessPolicy result = graphClient.identity().conditionalAccess().policies().byConditionalAccessPolicyId("{conditionalAccessPolicy-id}").get();
+
 
 ```
