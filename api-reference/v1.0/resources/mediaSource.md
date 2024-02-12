@@ -1,6 +1,6 @@
 ---
 author: MarcMroz
-description: "The mediaSource resource contains metadata about source of the media (audio or video) drive item."
+description: "Contains metadata about the source of the media (audio or video) drive item."
 title: mediaSource resource type
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -8,9 +8,9 @@ doc_type: "resourcePageType"
 ---
 # mediaSource resource type
 
-The **mediaSource** resource contains metadata about the source of media (audio or video) drive item.
+Contains metadata about the source of the media (audio or video) drive item.
 
-It is available on the media property of [driveItem][item-resource] resources.
+It is available on the media property of the [driveItem][item-resource] resources.
 
 ## Properties
 
