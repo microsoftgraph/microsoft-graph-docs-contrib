@@ -142,7 +142,7 @@ This resource supports:
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -172,7 +172,7 @@ Here is a JSON representation of the resource
   "exceptionOccurrences":["microsoft.graph.event"],
   "hasAttachments": true,
   "hideAttendees": false,
-  "uid": "string",
+  "iCalUId": "String",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -202,6 +202,7 @@ Here is a JSON representation of the resource
   "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "string",
   "type": "String",
+  "uid": "String",
   "webLink": "string",
 
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
@@ -215,11 +216,11 @@ Here is a JSON representation of the resource
 
 ## See also
 
-- [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
-- [Get incremental changes to events in a folder](/graph/delta-query-events)
-- [Add custom data to resources using extensions](/graph/extensibility-overview)
-- [Add custom data to users using open extensions](/graph/extensibility-open-users)
-- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
+- [Use delta query to track changes in Microsoft Graph data.](/graph/delta-query-overview)
+- [Get incremental changes to events in a folder.](/graph/delta-query-events)
+- [Add custom data to resources using extensions.](/graph/extensibility-overview)
+- [Add custom data to users using open extensions.](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions].(/graph/extensibility-schema-groups)
 - [Bulk meetings C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-bulk-meetings/csharp)
 - [Bulk meetings Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-bulk-meetings/nodejs)
 
