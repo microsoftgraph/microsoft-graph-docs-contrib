@@ -4,28 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OpenIdConnectProvider identityProvider = new OpenIdConnectProvider();
-identityProvider.name = "Login with the Contoso identity provider";
-identityProvider.type = "OpenIDConnect";
-identityProvider.clientId = "56433757-cadd-4135-8431-2c9e3fd68ae8";
-identityProvider.clientSecret = "12345";
+identityProvider.setOdataType("microsoft.graph.openIdConnectProvider");
+identityProvider.setName("Login with the Contoso identity provider");
+identityProvider.setType("OpenIDConnect");
+identityProvider.setClientId("56433757-cadd-4135-8431-2c9e3fd68ae8");
+identityProvider.setClientSecret("12345");
 ClaimsMapping claimsMapping = new ClaimsMapping();
-claimsMapping.userId = "myUserId";
-claimsMapping.givenName = "myGivenName";
-claimsMapping.surname = "mySurname";
-claimsMapping.email = "myEmail";
-claimsMapping.displayName = "myDisplayName";
-identityProvider.claimsMapping = claimsMapping;
-identityProvider.domainHint = "mycustomoidc";
-identityProvider.metadataUrl = "https://mycustomoidc.com/.well-known/openid-configuration";
-identityProvider.responseMode = OpenIdConnectResponseMode.FORM_POST;
-identityProvider.responseType = EnumSet.of(OpenIdConnectResponseTypes.CODE);
-identityProvider.scope = "openid";
+claimsMapping.setUserId("myUserId");
+claimsMapping.setGivenName("myGivenName");
+claimsMapping.setSurname("mySurname");
+claimsMapping.setEmail("myEmail");
+claimsMapping.setDisplayName("myDisplayName");
+identityProvider.setClaimsMapping(claimsMapping);
+identityProvider.setDomainHint("mycustomoidc");
+identityProvider.setMetadataUrl("https://mycustomoidc.com/.well-known/openid-configuration");
+identityProvider.setResponseMode(OpenIdConnectResponseMode.Form_post);
+identityProvider.setResponseType(EnumSet.of(OpenIdConnectResponseTypes.Code));
+identityProvider.setScope("openid");
+IdentityProvider result = graphClient.identityProviders().post(identityProvider);
 
-graphClient.identityProviders()
-	.buildRequest()
-	.post(identityProvider);
 
 ```

@@ -4,24 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcProvisioningPolicy cloudPcProvisioningPolicy = new CloudPcProvisioningPolicy();
-cloudPcProvisioningPolicy.displayName = "HR provisioning policy";
-cloudPcProvisioningPolicy.description = "Provisioning policy for India HR employees";
-cloudPcProvisioningPolicy.onPremisesConnectionId = "4e47d0f6-6f77-44f0-8893-c0fe1701ffff";
-cloudPcProvisioningPolicy.imageId = "Image ID value";
-cloudPcProvisioningPolicy.imageDisplayName = "Image Display Name value";
-cloudPcProvisioningPolicy.imageType = CloudPcProvisioningPolicyImageType.CUSTOM;
+cloudPcProvisioningPolicy.setOdataType("#microsoft.graph.cloudPcProvisioningPolicy");
+cloudPcProvisioningPolicy.setDisplayName("HR provisioning policy");
+cloudPcProvisioningPolicy.setDescription("Provisioning policy for India HR employees");
+cloudPcProvisioningPolicy.setOnPremisesConnectionId("4e47d0f6-6f77-44f0-8893-c0fe1701ffff");
+cloudPcProvisioningPolicy.setImageId("Image ID value");
+cloudPcProvisioningPolicy.setImageDisplayName("Image Display Name value");
+cloudPcProvisioningPolicy.setImageType(CloudPcProvisioningPolicyImageType.Custom);
 CloudPcWindowsSettings windowsSettings = new CloudPcWindowsSettings();
-windowsSettings.language = "en-US";
-cloudPcProvisioningPolicy.windowsSettings = windowsSettings;
+windowsSettings.setLanguage("en-US");
+cloudPcProvisioningPolicy.setWindowsSettings(windowsSettings);
 CloudPcWindowsSetting windowsSetting = new CloudPcWindowsSetting();
-windowsSetting.locale = "en-US";
-cloudPcProvisioningPolicy.windowsSetting = windowsSetting;
+windowsSetting.setLocale("en-US");
+cloudPcProvisioningPolicy.setWindowsSetting(windowsSetting);
+CloudPcProvisioningPolicy result = graphClient.deviceManagement().virtualEndpoint().provisioningPolicies().byCloudPcProvisioningPolicyId("{cloudPcProvisioningPolicy-id}").patch(cloudPcProvisioningPolicy);
 
-graphClient.deviceManagement().virtualEndpoint().provisioningPolicies("{id}")
-	.buildRequest()
-	.patch(cloudPcProvisioningPolicy);
 
 ```

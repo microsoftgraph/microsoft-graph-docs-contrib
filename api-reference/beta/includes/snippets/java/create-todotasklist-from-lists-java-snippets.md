@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TodoTaskList todoTaskList = new TodoTaskList();
-todoTaskList.displayName = "Travel items";
+todoTaskList.setDisplayName("Travel items");
+TodoTaskList result = graphClient.me().todo().lists().post(todoTaskList);
 
-graphClient.me().todo().lists()
-	.buildRequest()
-	.post(todoTaskList);
 
 ```
