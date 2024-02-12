@@ -22,6 +22,10 @@ Microsoft Graph Toolkit v4 is now available. For details about changes in the la
 
 ## February 2024: New in preview only
 
+### Calendars
+
+Use the **iCalUId** property on [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to get the unique identifier for an event across calendars.
+
 ### Teamwork and communications | Shift management
 
 Added the ability to [get shifts](/graph/api/team-getshifts) and [get time offs](/graph/api/team-gettimesoff) across all teams that a user is a direct member of.
