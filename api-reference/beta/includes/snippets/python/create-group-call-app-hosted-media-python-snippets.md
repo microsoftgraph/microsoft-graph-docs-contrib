@@ -4,9 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.call import Call
+from msgraph.generated.models.participant_info import ParticipantInfo
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.identity import Identity
+from msgraph.generated.models.invitation_participant_info import InvitationParticipantInfo
+from msgraph.generated.models.modality import Modality
+from msgraph.generated.models.app_hosted_media_config import AppHostedMediaConfig
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Call(
 	odata_type = "#microsoft.graph.call",
@@ -47,10 +54,10 @@ request_body = Call(
 				),
 			),
 		),
-	]
+	],
 	requested_modalities = [
 		Modality.Audio,
-	]
+	],
 	media_config = AppHostedMediaConfig(
 		odata_type = "#microsoft.graph.appHostedMediaConfig",
 		blob = "<Media Session Configuration>",
@@ -59,7 +66,7 @@ request_body = Call(
 	tenant_id = "aa67bd4c-8475-432d-bd41-39f255720e0a",
 )
 
-result = await graph_client.communications.calls.post(body = request_body)
+result = await graph_client.communications.calls.post(request_body)
 
 
 ```

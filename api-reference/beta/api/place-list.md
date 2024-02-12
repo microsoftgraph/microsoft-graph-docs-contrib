@@ -34,15 +34,14 @@ By default, this operation returns up to 100 places per page.
 
 Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. For details about how they compare, see [Using the places API](../resources/place.md#using-the-places-api).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Place.Read.All |
-| Delegated (personal Microsoft account) | Not supported |
-| Application                            | Place.Read.All |
+<!-- { "blockType": "permissions", "name": "place_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/place-list-permissions.md)]
 
 ## HTTP request
 
@@ -96,11 +95,11 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -160,7 +159,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note**: The response object shown here might be shortened for readability.
 
@@ -207,7 +206,8 @@ Content-type: application/json
       ],
       "audioDeviceName": null,
       "videoDeviceName": null,
-      "displayDeviceName": "surface hub"
+      "displayDeviceName": "surface hub",
+      "placeId": "080ed1a0-7b54-4995-85a5-eeec751786f5"
     },
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
@@ -238,7 +238,8 @@ Content-type: application/json
       ],
       "audioDeviceName": null,
       "videoDeviceName": null,
-      "displayDeviceName": "surface hub"
+      "displayDeviceName": "surface hub",
+      "placeId": "282c6d10-f8d4-441e-9f7f-edd2e554f61d"
     }
   ]
 }
@@ -261,7 +262,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.workspace
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note**: The response object shown here might be shortened for readability.
 
@@ -303,7 +304,8 @@ Content-type: application/json
       "isWheelChairAccessible": false,
       "tags": [
         "bean bags"
-      ]
+      ],
+      "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
     },
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
@@ -330,7 +332,8 @@ Content-type: application/json
       "tags": [
         "benches",
         "nice view"
-      ]
+      ],
+      "placeId": "ca4e4ca8-4e92-4a83-afe4-5104c0ca1de3"
     }
   ]
 }
@@ -387,7 +390,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note**: The response object shown here might be shortened for readability.
 
@@ -418,7 +421,8 @@ Content-type: application/json
       },
       "geoCoordinates": null,
       "phone": null,
-      "emailAddress": "bldg1@contoso.com"
+      "emailAddress": "bldg1@contoso.com",
+      "placeId": "406bd1b2-237c-4710-bda2-8b7900d61b27"
     },
     {
       "id": "DC404124-302A-92AA-F98D-7B4DEB0C1706",
@@ -432,7 +436,8 @@ Content-type: application/json
       },
       "geoCoordinates": null,
       "phone": null,
-      "emailAddress": "bldg2@contoso.com"
+      "emailAddress": "bldg2@contoso.com",
+      "placeId": "25709e2a-4c17-49ab-b591-1daf8d9b786d"
     }
   ]
 }
@@ -456,15 +461,15 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-rooms-in-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/get-rooms-in-roomlist-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-rooms-in-roomlist-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -476,22 +481,22 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-rooms-in-roomlist-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-rooms-in-roomlist-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/get-rooms-in-roomlist-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note**: The response object shown here might be shortened for readability.
 
@@ -539,7 +544,8 @@ Content-type: application/json
       ],
       "audioDeviceName": null,
       "videoDeviceName": null,
-      "displayDeviceName": "surface hub"
+      "displayDeviceName": "surface hub",
+      "placeId": "62cfc8cb-fc2b-4783-aeea-f9ce0f8e2904"
     }
   ]
 }
@@ -563,15 +569,15 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-workspaces-in-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/get-workspaces-in-roomlist-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-workspaces-in-roomlist-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -583,22 +589,22 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-workspaces-in-roomlist-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-workspaces-in-roomlist-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/get-workspaces-in-roomlist-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note**: The response object shown here might be shortened for readability.
 
@@ -642,7 +648,8 @@ Content-type: application/json
       "tags": [
         "benches",
         "nice view"
-      ]
+      ],
+      "placeId": "ca4e4ca8-4e92-4a83-afe4-5104c0ca1de3"
     }
   ]
 }

@@ -13,13 +13,10 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of rangefill object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "rangefill_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rangefill-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +34,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
@@ -50,7 +47,6 @@ If successful, this method returns a `200 OK` response code and [WorkbookRangeFi
 ##### Request
 Here's an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_rangefill"
@@ -58,16 +54,6 @@ Here's an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/fill
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-rangefill-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-rangefill-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 Here's an example of the response. Note: The response object shown here might be shortened for readability.

@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.reject_post_request_body import RejectPostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RejectPostRequestBody(
 	reason = RejectReason.None,
 )
 
-await graph_client.communications.calls.by_call_id('call-id').reject.post(body = request_body)
+await graph_client.communications.calls.by_call_id('call-id').reject.post(request_body)
 
 
 ```

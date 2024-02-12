@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unified_group_source import UnifiedGroupSource
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnifiedGroupSource(
 	included_sources = SourceType.Mailbox | SourceType.Site,
@@ -15,7 +16,7 @@ request_body = UnifiedGroupSource(
 	}
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').custodians.by_custodian_id('custodian-id').unified_group_sources.post(body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').custodians.by_custodian_id('custodian-id').unified_group_sources.post(request_body)
 
 
 ```

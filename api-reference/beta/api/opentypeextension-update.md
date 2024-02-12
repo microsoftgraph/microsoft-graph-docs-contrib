@@ -25,6 +25,8 @@ The data in an extension can be primitive types, or arrays of primitive types.
 
 See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Depending on the resource that the extension was created in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
@@ -76,7 +78,7 @@ See the [Request body](#request-body) section about including in the request bod
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body
@@ -240,6 +242,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-opentypeextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-opentypeextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

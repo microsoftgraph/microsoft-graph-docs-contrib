@@ -4,9 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.retention_event import RetentionEvent
+from msgraph.generated.models.event_query import EventQuery
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.event_propagation_result import EventPropagationResult
+from msgraph.generated.models.retention_event_status import RetentionEventStatus
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RetentionEvent(
 	odata_type = "#microsoft.graph.security.retentionEvent",
@@ -16,7 +21,7 @@ request_body = RetentionEvent(
 		EventQuery(
 			odata_type = "microsoft.graph.security.eventQueries",
 		),
-	]
+	],
 	event_trigger_date_time = "String (timestamp)",
 	created_by = IdentitySet(
 		odata_type = "microsoft.graph.identitySet",
@@ -25,14 +30,14 @@ request_body = RetentionEvent(
 		EventPropagationResult(
 			odata_type = "microsoft.graph.security.eventPropagationResult",
 		),
-	]
+	],
 	event_status = RetentionEventStatus(
 		odata_type = "microsoft.graph.security.retentionEventStatus",
 	),
 	last_status_update_date_time = "String (timestamp)",
 )
 
-result = await graph_client.security.triggers.retention_events.post(body = request_body)
+result = await graph_client.security.triggers.retention_events.post(request_body)
 
 
 ```

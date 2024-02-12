@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.program import Program
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Program(
 	display_name = "testprogram3",
 	description = "test description",
 )
 
-result = await graph_client.programs.post(body = request_body)
+result = await graph_client.programs.post(request_body)
 
 
 ```

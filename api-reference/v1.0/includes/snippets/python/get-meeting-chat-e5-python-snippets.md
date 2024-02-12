@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.chats.item.chat_item_request_builder import ChatItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = ChatRequestBuilder.ChatRequestBuilderGetQueryParameters(
+query_params = ChatItemRequestBuilder.ChatItemRequestBuilderGetQueryParameters(
 		expand = ["lastMessagePreview"],
 )
 
-request_configuration = ChatRequestBuilder.ChatRequestBuilderGetRequestConfiguration(
+request_configuration = ChatItemRequestBuilder.ChatItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

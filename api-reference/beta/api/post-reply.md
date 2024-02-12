@@ -17,9 +17,11 @@ Reply to a post and add a new post to the specified thread in a group conversati
 
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
@@ -36,7 +38,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

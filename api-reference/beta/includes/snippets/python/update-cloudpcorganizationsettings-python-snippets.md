@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.cloud_pc_organization_settings import CloudPcOrganizationSettings
+from msgraph.generated.models.cloud_pc_windows_settings import CloudPcWindowsSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CloudPcOrganizationSettings(
 	odata_type = "#microsoft.graph.cloudPcOrganizationSettings",
@@ -18,7 +20,7 @@ request_body = CloudPcOrganizationSettings(
 	),
 )
 
-result = await graph_client.device_management.virtual_endpoint.organization_settings.patch(body = request_body)
+result = await graph_client.device_management.virtual_endpoint.organization_settings.patch(request_body)
 
 
 ```

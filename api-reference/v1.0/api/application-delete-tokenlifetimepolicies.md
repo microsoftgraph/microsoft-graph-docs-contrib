@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Remove a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) from an [application](../resources/application.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,28 +28,23 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{applicationObjectId}/tokenLifetimePolicies/{tokenLifetimePolicyId}/$ref
-
 DELETE /applications(appId='{appId}')/tokenLifetimePolicies/{tokenLifetimePolicyId}/$ref
-
-DELETE /servicePrincipals/{servicePrincipalObjectId}/tokenLifetimePolicies/{tokenLifetimePolicyId}/$ref
-
-DELETE /servicePrincipals(appId='{appId}')/tokenLifetimePolicies/{tokenLifetimePolicyId}/$ref
 ```
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -106,7 +103,7 @@ DELETE https://graph.microsoft.com/v1.0/applications/3ccc9971-9ae7-45d6-8de8-263
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

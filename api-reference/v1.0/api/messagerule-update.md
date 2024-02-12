@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 Change writable properties on a [messageRule](../resources/messagerule.md) object and save the changes.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | MailboxSettings.ReadWrite    |
-|Delegated (personal Microsoft account) | MailboxSettings.ReadWrite    |
-|Application | MailboxSettings.ReadWrite |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "messagerule_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/messagerule-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -29,17 +28,20 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /me/mailFolders/inbox/messageRules/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
-## Optional request headers
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will
 maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | Actions to be taken on a message when the corresponding conditions are fulfilled. |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | Conditions that when fulfilled, will trigger the corresponding actions for that rule. |

@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.o_auth2_permission_grant import OAuth2PermissionGrant
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = OAuth2PermissionGrant(
 	client_id = "ef969797-201d-4f6b-960c-e9ed5f31dab5",
@@ -15,7 +16,7 @@ request_body = OAuth2PermissionGrant(
 	scope = "DelegatedPermissionGrant.ReadWrite.All",
 )
 
-result = await graph_client.oauth2_permission_grants.post(body = request_body)
+result = await graph_client.oauth2_permission_grants.post(request_body)
 
 
 ```

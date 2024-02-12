@@ -9,7 +9,7 @@ ms.prod: search
 
 # Microsoft Graph connectors overview
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365) is a complete, intelligent solution that empowers users and organizations with innovative productivity experiences and rich insights to increase efficiency and drive business growth. Microsoft Graph is the data fabric that powers these intelligent experiences, and the [Microsoft Search API](/graph/api/resources/indexing-api-overview) provides access to this data and intelligence.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) is a complete, intelligent solution that empowers users and organizations with innovative productivity experiences and rich insights to increase efficiency and drive business growth. Microsoft Graph is the data fabric that powers these intelligent experiences, and the [Microsoft Search API](/graph/api/resources/connectors-api-overview) provides access to this data and intelligence.
 
 Although most information workers spend much of their work time within productivity applications such as Microsoft 365, they also need a way to integrate that environment with the enterprise applications and other on-premises and SaaS cloud software and services that they use. Examples include enterprise resource planning (ERP) applications, customer resource management (CRM) applications, intranet applications, wikis, blogs, and social networking sites.
 
@@ -22,7 +22,7 @@ Today, with Microsoft Graph connectors, the data you bring in from your organiza
 - [Microsoft 365 app](https://microsoft365.com) (formerly known as [Office.com](https://office.com))
 
 >[!NOTE]
->Microsoft Graph connectors for Microsoft 365 Copilot are in early access preview. For details about how to build a Microsoft Graph connetor that is integrated with Microsoft 365 Copilot, see [Copilot for Microsoft Graph connectors](/graph/connecting-external-content-experiences#Copilot). 
+>For details about how to build a Microsoft Graph connetor that is integrated with Microsoft 365 Copilot, see [Copilot for Microsoft Graph connectors](/graph/connecting-external-content-experiences#microsoft-365-copilot). 
 
 ## Get started with custom connectors
 
@@ -32,7 +32,7 @@ To learn more about the existing Microsoft Graph connectors, visit the [Microsof
 
 ## Build a custom connector
 
-While the existing connectors help connect to popular services, you might want to integrate with services that aren't available in the connectors gallery. You can use the Microsoft Graph connectors API to build custom connectors to bring your external data into Microsoft 365 experiences within your organization.
+While the existing connectors help connect to popular services, you might want to integrate with services that aren't available in the connectors gallery. You can use the Microsoft Graph connectors APIs or the Microsoft Graph connectors SDK to build custom connectors to bring your external data into Microsoft 365 experiences within your organization. Use the Microsoft Graph connectors REST APIs to build a custom Microsoft Graph connection if you want full control to ensure that your Microsoft Graph connection meets your requirements. Use the Microsoft Graph connectors SDK if you want to minimize coding. The SDK is comprised of a framework, contract components, and tools to help you write and test your code.
 
 To get started, see the following:
 

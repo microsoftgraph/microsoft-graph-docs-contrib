@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.acronym import Acronym
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Acronym(
 	display_name = "GDPR",
@@ -16,7 +17,7 @@ request_body = Acronym(
 	state = AnswerState.Published,
 )
 
-result = await graph_client.search.acronyms.post(body = request_body)
+result = await graph_client.search.acronyms.post(request_body)
 
 
 ```

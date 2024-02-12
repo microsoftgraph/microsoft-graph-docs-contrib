@@ -1,0 +1,15 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+<?php
+
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->byWorkflowId('workflow-id')->tasks()->byTaskId('task-id')->get()->wait();
+
+```

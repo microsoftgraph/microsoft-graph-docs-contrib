@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.extension import Extension
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Extension(
 	additional_data = {
@@ -16,7 +17,7 @@ request_body = Extension(
 	}
 )
 
-result = await graph_client.me.extensions.by_extension_id('extension-id').patch(body = request_body)
+result = await graph_client.me.extensions.by_extension_id('extension-id').patch(request_body)
 
 
 ```

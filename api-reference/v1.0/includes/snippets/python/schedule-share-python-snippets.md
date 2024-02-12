@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.share_post_request_body import SharePostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SharePostRequestBody(
 	notify_team = True,
@@ -14,7 +15,7 @@ request_body = SharePostRequestBody(
 	end_date_time = "2018-10-15T00:00:00.000Z",
 )
 
-await graph_client.teams.by_team_id('team-id').schedule.share.post(body = request_body)
+await graph_client.teams.by_team_id('team-id').schedule.share.post(request_body)
 
 
 ```

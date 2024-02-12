@@ -23,6 +23,8 @@ To archive a team, the team and [group](../resources/group.md) must have an owne
 
 To restore a team from its archived state, use the API to [unarchive](team-unarchive.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -44,7 +46,7 @@ POST /teams/{id}/archive
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request, you may _optionally_ include the `shouldSetSpoSiteReadOnlyForMembers` parameter in a JSON body, as follows.
@@ -63,6 +65,7 @@ If archiving is started successfully, this method returns a `202 Accepted` respo
 ### Request
 The following is an example of a request.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -70,6 +73,10 @@ The following is an example of a request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/archive
+
+{
+
+}
 ```
 
 # [C#](#tab/csharp)

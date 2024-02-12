@@ -4,16 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.query_post_request_body import QueryPostRequestBody
+from msgraph.generated.models.search_request import SearchRequest
+from msgraph.generated.models.entity_type import EntityType
+from msgraph.generated.models.search_query import SearchQuery
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = QueryPostRequestBody(
 	requests = [
 		SearchRequest(
 			entity_types = [
 				EntityType.ChatMessage,
-			]
+			],
 			query = SearchQuery(
 				query_string = "test",
 			),
@@ -21,10 +25,10 @@ request_body = QueryPostRequestBody(
 			size = 15,
 			enable_top_results = True,
 		),
-	]
+	],
 )
 
-result = await graph_client.search.query.post(body = request_body)
+result = await graph_client.search.query.post(request_body)
 
 
 ```

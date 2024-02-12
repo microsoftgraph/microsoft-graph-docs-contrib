@@ -8,13 +8,14 @@ ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 08/22/2023
+#Customer intent: As a developer building apps that consume Microsoft Graph APIs, I want to learn how to use search expressions to get only the items that meet specific criteria, and reduce the amount of data the app processes, improving app efficiency.
 ---
 
 # Use the $search query parameter
 
 In addition to [other OData query parameters](/graph/query-parameters), Microsoft Graph supports the `$search` query parameter to restrict the results of a request to match a search criterion.
 
-The support for the `$search` query parameter varies by entity, with some, such as Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), supporting `$search` only in [advanced queries](/graph/aad-advanced-queries).
+The support for the `$search` query parameter varies by entity, with some, such as Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), supporting `$search` only in [advanced queries](/graph/aad-advanced-queries).
 
 > [!NOTE]
 > The `$search` query parameter is currently not available in Azure AD B2C tenants.
@@ -204,7 +205,7 @@ To learn more about the People API, see [Get information about relevant people](
 > [!NOTE]
 > There's a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185) related to `$search` on directory objects for values that contain an ampersand (&) symbol.
 
-Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in [advanced queries](./aad-advanced-queries.md). The search implementation does **not** support "contains" logic. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
+Microsoft Entra ID resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in [advanced queries](./aad-advanced-queries.md). The search implementation does **not** support "contains" logic. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
 
 - **Spaces**: `hello world` => `hello`, `world`
 - **Different casing**⁽<sup>1</sup>⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
@@ -216,7 +217,8 @@ Azure AD resources and their relationships that derive from [directoryObject](/g
 
 > [!NOTE]
 >
-> - After tokenization, the tokens are matched independently of the original casing, and they are matched in any order. For example, displayName `李四(David Li)` will match search strings such as `李四(David Li)`, `李四`, `David`, `Li`, `David)`, `(李四`, `Li 李`.
+> - After tokenization, the tokens are matched independently of the original casing, and they are matched in any order. For example, displayName `李四(David Li)` matches search strings such as `李四(David Li)`, `李四`, `David`, `Li`, `David)`, `(李四`, `Li 李`.
+> - A change in the alphabet, such as from Latin to Cyrillic or Chinese, doesn't create a new token. For example, displayName `蓝色group` matches the `蓝色group` and `蓝色` search strings, but not `group`; while displayName `group蓝色` matches the `group蓝色` and `group` search strings, but not `蓝色` or `蓝`.
 > - The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior.
 For example:
 
@@ -244,7 +246,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/search-groups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

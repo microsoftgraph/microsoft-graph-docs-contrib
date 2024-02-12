@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 Update the properties of the [event](../resources/event.md) object.
 
 <!-- markdownlint-disable MD001 -->
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ### Notes for updating specific properties
 
 Note the following behaviors or recommendations when updating the corresponding properties:
@@ -33,7 +36,7 @@ Note the following behaviors or recommendations when updating the corresponding 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:------------------------------------|
 | Delegated (work or school account)     | Calendars.ReadWrite                 |

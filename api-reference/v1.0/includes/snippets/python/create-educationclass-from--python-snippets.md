@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.education_class import EducationClass
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.education_term import EducationTerm
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationClass(
 	odata_type = "#microsoft.graph.educationClass",
@@ -27,7 +30,7 @@ request_body = EducationClass(
 	),
 )
 
-result = await graph_client.education.classes.post(body = request_body)
+result = await graph_client.education.classes.post(request_body)
 
 
 ```

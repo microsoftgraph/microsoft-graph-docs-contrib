@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Retrieve a list of the group's owners. The owners are a set of users who are allowed to modify the group object. Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                              |
-| :------------------------------------- | :------------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                                           |
-| Application                            | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
+<!-- { "blockType": "permissions", "name": "group_list_owners" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-list-owners-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -37,7 +36,9 @@ GET /groups/{id}/owners
 
 ## Optional query parameters
 
-This method supports the `$filter`, `$count`, `$select`, `$search`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. OData cast is also enabled, for example, you can cast to get just the group owners that are users. You can use `$search` on the **displayName** and **description** properties. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
+This method supports the `$filter`, `$count`, `$select`, `$search`, `$top`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. OData cast is also enabled, for example, you can cast to get just the group owners that are users. You can use `$search` on the **displayName** and **description** properties.
+
+Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 
@@ -47,7 +48,7 @@ This method supports the `$filter`, `$count`, `$select`, `$search`, and `$expand
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,7 +58,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -106,7 +107,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/owners
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

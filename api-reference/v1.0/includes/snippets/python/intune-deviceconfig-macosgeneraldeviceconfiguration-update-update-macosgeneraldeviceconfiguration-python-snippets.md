@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.mac_o_s_general_device_configuration import MacOSGeneralDeviceConfiguration
+from msgraph.generated.models.app_list_item import AppListItem
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MacOSGeneralDeviceConfiguration(
 	odata_type = "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -21,11 +23,11 @@ request_body = MacOSGeneralDeviceConfiguration(
 			app_store_url = "https://example.com/appStoreUrl/",
 			app_id = "App Id value",
 		),
-	]
+	],
 	compliant_app_list_type = AppListType.AppsInListCompliant,
 	email_in_domain_suffixes = [
 		"Email In Domain Suffixes value",
-	]
+	],
 	password_block_simple = True,
 	password_expiration_days = 6,
 	password_minimum_character_set_count = 0,
@@ -37,7 +39,7 @@ request_body = MacOSGeneralDeviceConfiguration(
 	password_required = True,
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body)
 
 
 ```

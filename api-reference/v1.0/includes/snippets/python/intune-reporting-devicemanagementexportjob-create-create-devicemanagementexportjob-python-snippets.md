@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_management_export_job import DeviceManagementExportJob
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceManagementExportJob(
 	odata_type = "#microsoft.graph.deviceManagementExportJob",
@@ -14,7 +15,7 @@ request_body = DeviceManagementExportJob(
 	filter = "Filter value",
 	select = [
 		"Select value",
-	]
+	],
 	format = DeviceManagementReportFileFormat.Pdf,
 	snapshot_id = "Snapshot Id value",
 	localization_type = DeviceManagementExportJobLocalizationType.ReplaceLocalizableValues,
@@ -24,7 +25,7 @@ request_body = DeviceManagementExportJob(
 	expiration_date_time = "2016-12-31T23:57:57.2481234-08:00",
 )
 
-result = await graph_client.device_management.reports.export_jobs.post(body = request_body)
+result = await graph_client.device_management.reports.export_jobs.post(request_body)
 
 
 ```

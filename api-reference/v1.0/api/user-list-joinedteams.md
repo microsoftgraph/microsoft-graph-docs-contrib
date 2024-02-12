@@ -14,8 +14,12 @@ Namespace: microsoft.graph
 
 
 Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.
+
 >**Note:** This API doesn't return the host team of the shared channel that the user is a direct member of. Use the [List associated teams](../api/associatedteaminfo-list.md) API, to retrieve the host teams of the shared channels that the user has access to.
  
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -40,11 +44,11 @@ This method does not currently support the [OData query parameters](/graph/query
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

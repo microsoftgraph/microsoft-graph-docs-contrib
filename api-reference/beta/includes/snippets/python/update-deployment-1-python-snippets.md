@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.deployment import Deployment
+from msgraph.generated.models.deployment_state import DeploymentState
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Deployment(
 	odata_type = "#microsoft.graph.windowsUpdates.deployment",
@@ -16,7 +18,7 @@ request_body = Deployment(
 	),
 )
 
-result = await graph_client.admin.windows.updates.deployments.by_deployment_id('deployment-id').patch(body = request_body)
+result = await graph_client.admin.windows.updates.deployments.by_deployment_id('deployment-id').patch(request_body)
 
 
 ```

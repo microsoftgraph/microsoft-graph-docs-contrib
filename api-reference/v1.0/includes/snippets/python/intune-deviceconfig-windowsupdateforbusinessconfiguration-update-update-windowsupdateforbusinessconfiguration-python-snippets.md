@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows_update_for_business_configuration import WindowsUpdateForBusinessConfiguration
+from msgraph.generated.models.windows_update_scheduled_install import WindowsUpdateScheduledInstall
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = WindowsUpdateForBusinessConfiguration(
 	odata_type = "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -55,7 +57,7 @@ request_body = WindowsUpdateForBusinessConfiguration(
 	allow_windows11_upgrade = True,
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body)
 
 
 ```

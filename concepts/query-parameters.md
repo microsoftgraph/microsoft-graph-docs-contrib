@@ -8,6 +8,8 @@ ms.prod: "applications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 08/22/2023
+#Customer intent: As a developer building apps that consume Microsoft Graph APIs, I want to learn how to use OData query parameters, so that I can control the data retrieval and optimize data usage.
+
 ---
 
 # Use query parameters to customize responses
@@ -419,7 +421,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 > [!NOTE]
 > + Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
 > 
-> + With Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` typically returns a maximum of 100 items for the expanded relationship and has no [@odata.nextLink](./paging.md). See more [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=Query%20parameters&search=).
+> + With Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` typically returns a maximum of 20 items for the expanded relationship and has no [@odata.nextLink](./paging.md). For details, see [query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
 >
 > + `$expand` is not currently supported with [advanced queries](/graph/aad-advanced-queries).
 
@@ -685,6 +687,12 @@ Use the `$search` query parameter to restrict the results of a request to match 
 
 Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. With `$select`, you can specify a subset or a superset of the default properties.
 
+When you make a GET request without using `$select` to limit the amount of properties data, Microsoft Graph includes a **@microsoft.graph.tips** property that provides a best practice recommendation for using `$select` similar to the following message:
+
+```html
+"@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET groups?$select=appMetadata,assignedLabels",
+```
+
 For example, when retrieving the messages of the signed-in user, you can specify that only the **from** and **subject** properties be returned:
 
 
@@ -734,7 +742,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 > [!IMPORTANT]
 > In general, we recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 >
-> In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
+> In `v1.0`, some Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
 
 ## skip parameter
 
@@ -893,9 +901,8 @@ However, it is important to note that query parameters specified in a request mi
 [skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
 [top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
-## See also
+## Related content
 
 - [Advanced query capabilities on directory objects](/graph/aad-advanced-queries)
 - [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
 - [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=Query%20parameters&search=)
-- [Training module: Optimize data usage when using Microsoft Graph with query parameters](/training/modules/optimize-data-usage)

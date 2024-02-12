@@ -1,6 +1,6 @@
 ---
 title: "authenticationAppPolicyDetails resource type"
-description: "Provides details of the Azure AD policies applied to a user and client authentication app during the authentication step."
+description: "Provides details of the Microsoft Entra policies applied to a user and client authentication app during the authentication step."
 author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides details of the Azure AD policies applied to a user and client authentication app during the authentication step.
+Provides details of the Microsoft Entra policies applied to a user and client authentication app during the authentication step.
 
 ## Properties
 |Property|Type|Description|
@@ -42,4 +42,3 @@ The following is a JSON representation of the resource.
   "authenticationEvaluation": "String"
 }
 ```
-

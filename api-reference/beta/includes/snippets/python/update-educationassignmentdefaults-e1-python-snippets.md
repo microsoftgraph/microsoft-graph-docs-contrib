@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.education_assignment_defaults import EducationAssignmentDefaults
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationAssignmentDefaults(
 	added_student_action = EducationAddedStudentAction.AssignIfOpen,
@@ -14,7 +15,7 @@ request_body = EducationAssignmentDefaults(
 	notification_channel_url = "https://graph.microsoft.com/beta/teams('id')/channels('id')",
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').assignment_defaults.patch(body = request_body)
+result = await graph_client.education.classes.by_education_class_id('educationClass-id').assignment_defaults.patch(request_body)
 
 
 ```

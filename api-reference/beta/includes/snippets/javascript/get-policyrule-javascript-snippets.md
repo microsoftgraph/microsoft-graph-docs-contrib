@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let policyRule = await client.api('/networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules/{RuleId)')
+let policyRule = await client.api('/networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules/{ruleId}')
 	.version('beta')
 	.get();
 

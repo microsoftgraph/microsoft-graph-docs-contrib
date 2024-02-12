@@ -17,9 +17,11 @@ Use this API to create a new mail folder in the root folder of the user's mailbo
 
 If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Mail.ReadWrite    |
@@ -35,7 +37,7 @@ POST /users/{id | userPrincipalName}/mailFolders
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body

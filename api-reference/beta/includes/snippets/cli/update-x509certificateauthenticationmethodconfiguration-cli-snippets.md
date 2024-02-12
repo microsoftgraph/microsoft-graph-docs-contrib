@@ -31,6 +31,9 @@ mgc-beta policies authentication-methods-policy authentication-method-configurat
             }\
         ]\
     },\
+    "issuerHintsConfiguration": {\
+        "state": "disabled"\
+    },\
     "includeTargets": [\
         {\
             "targetType": "group",\

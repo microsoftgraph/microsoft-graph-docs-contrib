@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.servicePrincipals.item.synchronization.jobs.item.restart.restart_request_builder import RestartRequestBuilder
+from msgraph.generated.models.restart_post_request_body import RestartPostRequestBody
+from msgraph.generated.models.synchronization_job_restart_criteria import SynchronizationJobRestartCriteria
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RestartPostRequestBody(
 	criteria = SynchronizationJobRestartCriteria(
@@ -14,14 +17,11 @@ request_body = RestartPostRequestBody(
 	),
 )
 
-request_configuration = RestartRequestBuilder.RestartRequestBuilderPostRequestConfiguration(
-headers = {
-		'Authorization' : "Bearer <token>",
-}
+request_configuration = RestartRequestBuilder.RestartRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Authorization", "Bearer <token>")
 
-)
 
-await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.jobs.by_job_id('synchronizationJob-id').restart.post(body = request_body, request_configuration = request_configuration)
+await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.jobs.by_synchronization_job_id('synchronizationJob-id').restart.post(request_body, request_configuration = request_configuration)
 
 
 ```

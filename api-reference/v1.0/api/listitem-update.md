@@ -12,15 +12,14 @@ Namespace: microsoft.graph
 
 Update the properties on a **[listItem][]**.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "listitem_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/listitem-update-permissions.md)]
 
 ## HTTP request
 
@@ -36,11 +35,13 @@ Update column values on a listItem.
 PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
-## Optional request headers
+## Request headers
 
-| Name       | Value | Description
-|:-----------|:------|:--------------------------------------------------------
-| _if-match_ | etag  | If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+| _if-match_ | `etag`. If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.
 
 ## Request body
 In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
@@ -79,6 +80,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-listitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

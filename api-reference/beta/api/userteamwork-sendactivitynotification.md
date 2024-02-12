@@ -12,16 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send an activity feed notification to a user. For more details about sending notifications and the requirements for doing so, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+Send an activity feed notification to a user. For more information, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)  |
-|:---------------------------------------|:---------------------------------------------|
-| Delegated (work or school account)     | TeamsActivity.Send                           |
-| Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | TeamsActivity.Send, TeamsActivity.Send.User  |
+<!-- { "blockType": "permissions", "name": "userteamwork_sendactivitynotification" } -->
+[!INCLUDE [permissions-table](../includes/permissions/userteamwork-sendactivitynotification-permissions.md)]
 
 >**Note:** The `TeamsActivity.Send.User` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -38,7 +37,7 @@ POST /users/{userId | user-principal-name}/teamwork/sendActivityNotification
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -48,11 +47,12 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Topic of the notification. Specifies the resource being talked about.|
-|activityType|String|Activity type. This must be declared in the [Teams app manifest](/microsoftteams/platform/overview).|
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|The topic of the notification. Specifies the resource being talked about.|
+|activityType|String|The activity type must be declared in the [Teams app manifest](/microsoftteams/platform/overview), except for `systemDefault` [Reserved activity type](/graph/teams-send-activityfeednotifications/#reserved-activity-types), which provides free-form text in the `Actor+Reason` line of the notification.|
 |chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
-|previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
+|previewText|[itemBody](../resources/itembody.md)|The preview text for the notification. Microsoft Teams only shows the first 150 characters.|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|The values for the template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview).|
+| teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user.  Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
 
@@ -141,9 +141,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Notify a user about an event using custom topic
+### Example 2: Notify a user about an event using a custom topic
 
-If you want to link an aspect that is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
+If you want to link an aspect that Microsoft Graph doesn't represent, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
 
 #### Request
 

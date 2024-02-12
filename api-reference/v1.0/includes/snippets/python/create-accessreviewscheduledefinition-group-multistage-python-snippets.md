@@ -4,9 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_review_schedule_definition import AccessReviewScheduleDefinition
+from msgraph.generated.models.access_review_query_scope import AccessReviewQueryScope
+from msgraph.generated.models.access_review_stage_settings import AccessReviewStageSettings
+from msgraph.generated.models.access_review_reviewer_scope import AccessReviewReviewerScope
+from msgraph.generated.models.access_review_schedule_settings import AccessReviewScheduleSettings
+from msgraph.generated.models.patterned_recurrence import PatternedRecurrence
+from msgraph.generated.models.recurrence_pattern import RecurrencePattern
+from msgraph.generated.models.recurrence_range import RecurrenceRange
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessReviewScheduleDefinition(
 	display_name = "Group Multi-stage Access Review",
@@ -25,19 +33,19 @@ request_body = AccessReviewScheduleDefinition(
 			decisions_that_will_move_to_next_stage = [
 				"NotReviewed",
 				"Approve",
-			]
+			],
 			reviewers = [
 				AccessReviewReviewerScope(
 					query = "/users/398164b1-5196-49dd-ada2-364b49f99b27",
 					query_type = "MicrosoftGraph",
 				),
-			]
+			],
 		),
 		AccessReviewStageSettings(
 			stage_id = "2",
 			depends_on = [
 				"1",
-			]
+			],
 			duration_in_days = 2,
 			recommendations_enabled = True,
 			reviewers = [
@@ -46,15 +54,15 @@ request_body = AccessReviewScheduleDefinition(
 					query_type = "MicrosoftGraph",
 					query_root = "decisions",
 				),
-			]
+			],
 			fallback_reviewers = [
 				AccessReviewReviewerScope(
 					query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
 					query_type = "MicrosoftGraph",
 				),
-			]
+			],
 		),
-	]
+	],
 	settings = AccessReviewScheduleSettings(
 		instance_duration_in_days = 4,
 		recurrence = PatternedRecurrence(
@@ -71,7 +79,7 @@ request_body = AccessReviewScheduleDefinition(
 	),
 )
 
-result = await graph_client.identity_governance.acce_reviews.definitions.post(body = request_body)
+result = await graph_client.identity_governance.access_reviews.definitions.post(request_body)
 
 
 ```

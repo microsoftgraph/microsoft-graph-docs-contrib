@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.booking_business import BookingBusiness
+from msgraph.generated.models.physical_address import PhysicalAddress
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BookingBusiness(
 	display_name = "Fourth Coffee",
@@ -26,7 +28,7 @@ request_body = BookingBusiness(
 	default_currency_iso = "USD",
 )
 
-result = await graph_client.solutions.booking_businesses.post(body = request_body)
+result = await graph_client.solutions.booking_businesses.post(request_body)
 
 
 ```

@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.calendar import Calendar
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Calendar(
 	name = "Social events",
 )
 
-result = await graph_client.me.calendar.patch(body = request_body)
+result = await graph_client.me.calendar.patch(request_body)
 
 
 ```

@@ -10,13 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-const workbookTableColumn = {
-  index: {
-  }
-};
-
-await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/columns/ItemAt')
+let workbookTableColumn = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/columns/ItemAt(index=8)')
 	.version('beta')
-	.post(workbookTableColumn);
+	.get();
 
 ```

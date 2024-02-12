@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.on_premises_directory_synchronization import OnPremisesDirectorySynchronization
+from msgraph.generated.models.on_premises_directory_synchronization_configuration import OnPremisesDirectorySynchronizationConfiguration
+from msgraph.generated.models.on_premises_accidental_deletion_prevention import OnPremisesAccidentalDeletionPrevention
+from msgraph.generated.models.on_premises_directory_synchronization_feature import OnPremisesDirectorySynchronizationFeature
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = OnPremisesDirectorySynchronization(
 	configuration = OnPremisesDirectorySynchronizationConfiguration(
@@ -22,7 +26,7 @@ request_body = OnPremisesDirectorySynchronization(
 	),
 )
 
-result = await graph_client.directory.on_premise_synchronization.by_on_premise_synchronization_id('onPremisesDirectorySynchronization-id').patch(body = request_body)
+result = await graph_client.directory.on_premises_synchronization.by_on_premises_directory_synchronization_id('onPremisesDirectorySynchronization-id').patch(request_body)
 
 
 ```

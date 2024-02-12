@@ -1,6 +1,6 @@
 ---
 title: "cloudRealtimeCommunicationInfo resource type"
-description: "Microsoft realtime communication information related to the user."
+description: "Microsoft real-time communication information related to the user."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
@@ -22,7 +22,7 @@ Represents a group of properties that relate to Microsoft real-time communicatio
 | isSipEnabled                | Boolean  | Indicates whether the user has a SIP-enabled client registered for them. Read-only.              |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"

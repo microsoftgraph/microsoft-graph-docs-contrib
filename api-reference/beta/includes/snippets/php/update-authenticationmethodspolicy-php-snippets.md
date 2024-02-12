@@ -6,13 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AuthenticationMethodsPolicy();
 $registrationEnforcement = new RegistrationEnforcement();
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign = new AuthenticationMethodsRegistrationCampaign();
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setSnoozeDurationInDays(1);
+$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setEnforceRegistrationAfterAllowedSnoozes(true);
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setState(new AdvancedConfigState('enabled'));
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setExcludeTargets([	]);
 $includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1 = new AuthenticationMethodsRegistrationCampaignIncludeTarget();

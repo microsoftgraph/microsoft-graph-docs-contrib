@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CreateNewVersionPostRequestBody();
@@ -24,7 +24,7 @@ $additionalData = [
 		],
 		'trigger' => [
 			'@odata.type' => '#microsoft.graph.identityGovernance.timeBasedAttributeTrigger',
-			'timeBasedAttribute' => 'employeeHireDate',
+			'timeBasedAttribute' => new WorkflowTriggerTimeBasedAttribute('employeeHireDate'),
 			'offsetInDays' => 0,
 		],
 	],

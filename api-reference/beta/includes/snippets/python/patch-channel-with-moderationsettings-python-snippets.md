@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.channel import Channel
+from msgraph.generated.models.channel_moderation_settings import ChannelModerationSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Channel(
 	display_name = "UpdateChannelModeration",
@@ -19,7 +21,7 @@ request_body = Channel(
 	),
 )
 
-result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').patch(body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').patch(request_body)
 
 
 ```

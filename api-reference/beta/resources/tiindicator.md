@@ -13,21 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Threat intelligence (TI) indicators represent data used to identify malicious activities. If your organization works with threat indicators, either by generating your own, obtaining them from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, you might want to use these indicators in various security tools for matching with log data. The Microsoft Graph Security API **tiIndicators** entity allows you to upload your threat indicators to Microsoft security tools for the actions of allow, block, or alert.
+Represents data used to identify malicious activities. 
 
-Threat indicators uploaded via **tiIndicators** will be used with Microsoft threat intelligence to provide a customized security solution for your organization. When using the **tiIndicators** entity, you specify the Microsoft security solution you want to utilize the indicators for via the **targetProduct** property and you specify the action (allow, block, or alert) to which the security solution should apply the indicators via the **action** property.
+If your organization works with threat indicators, either by generating your own, obtaining them from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, you might want to use these indicators in various security tools for matching with log data. The **tiIndicators** entity allows you to upload your threat indicators to Microsoft security tools for the actions of allow, block, or alert.
 
-Current **targetProduct** support includes the following:
+Threat indicators uploaded via **tiIndicator** are used with Microsoft threat intelligence to provide a customized security solution for your organization. When using the **tiIndicator** entity, specify the Microsoft security solution you want to utilize the indicators via the **targetProduct** property, and specify the action (allow, block, or alert) to which the security solution should apply the indicators via the **action** property.
 
-- **Azure Sentinel** – Supports all documented **tiIndicators** methods listed in the following section.
+Currently, **targetProduct** supports the following products:
+
 - **Microsoft Defender for Endpoint** – Supports the following **tiIndicators** methods:
      - [Get tiIndicator](../api/tiindicator-get.md)
      - [Create tiIndicator](../api/tiindicators-post.md)
      - [List tiIndicators](../api/tiindicators-list.md)
      - [Update](../api/tiindicator-update.md)
      - [Delete](../api/tiindicator-delete.md)
-
-     Support for the bulk methods is coming soon.
 
   > [!NOTE]
   >The following indicator types are supported by Microsoft Defender for Endpoint targetProduct:
@@ -37,6 +36,8 @@ Current **targetProduct** support includes the following:
 
    There's a limit of 15,000 indicators per tenant for Microsoft Defender for Endpoint.
 
+- **Microsoft Sentinel** – Only existing customers can use the **tiIndicator** API to send threat intelligence indicators to Microsoft Sentinel. For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel](/azure/sentinel/connect-threat-intelligence-tip).
+  
 For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## Methods
@@ -70,8 +71,8 @@ For details about the types of indicators supported and limits on indicator coun
 |:-------------|:------------|:------------|
 |action|string| The action to apply if the indicator is matched from within the targetProduct security tool. Possible values are: `unknown`, `allow`, `block`, `alert`. **Required.**|
 |activityGroupNames|String collection|The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.|
-|additionalInformation|String|A catchall area into which extra data from the indicator not covered by the other tiIndicator properties may be placed. Data placed into additionalInformation will typically not be utilized by the targetProduct security tool.|
-|azureTenantId|String| Stamped by the system when the indicator is ingested. The Azure Active Directory tenant id of submitting client. **Required.**|
+|additionalInformation|String|A catchall area for extra data from the indicator that is not specifically covered by other tiIndicator properties. The security tool specified by targetProduct typically does not utilize this data.|
+|azureTenantId|String| Stamped by the system when the indicator is ingested. The Microsoft Entra tenant id of submitting client. **Required.**|
 |confidence|Int32|An integer representing the confidence the data within the indicator accurately identifies malicious behavior. Acceptable values are 0 – 100 with 100 being the highest.|
 |description|String| Brief description (100 characters or less) of the threat represented by the indicator. **Required.**|
 |diamondModel|[diamondModel](#diamondmodel-values)|The area of the Diamond Model in which this indicator exists. Possible values are: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
@@ -182,7 +183,7 @@ For information about this model, see [The Diamond Model](http://diamondmodel.or
 |Phishing|Indicators relating to a phishing campaign.|
 |Proxy|Indicator is that of a proxy service.|
 |PUA|Potentially Unwanted Application.|
-|WatchList|This is the generic bucket into which indicators are placed when it can't be determined exactly what the threat is or will require manual interpretation. This should typically not be used by partners submitting data into the system.|
+|WatchList|This is the generic bucket for indicators for which the threat cannot be determined or which require manual interpretation. Partners submitting data into the system should not use this property.|
 
 ### tlpLevel values
 

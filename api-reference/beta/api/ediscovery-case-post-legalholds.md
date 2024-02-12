@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Create a new [legalHold](../resources/ediscovery-legalhold.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,14 +42,14 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
 
 In the request body, supply a JSON representation of the [legalHold](../resources/ediscovery-legalhold.md) object.
 
-The following table shows the properties that are required when you create the [legalHold](../resources/ediscovery-legalhold.md).
+The following table lists the properties that are required when you create the [legalHold](../resources/ediscovery-legalhold.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

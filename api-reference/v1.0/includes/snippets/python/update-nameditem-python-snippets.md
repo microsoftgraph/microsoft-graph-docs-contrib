@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.workbook_named_item import WorkbookNamedItem
+from msgraph.generated.models.json import Json
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = WorkbookNamedItem(
 	type = "type-value",
@@ -17,7 +19,7 @@ request_body = WorkbookNamedItem(
 	visible = True,
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.names.by_name_id('workbookNamedItem-id').patch(body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.names.by_workbook_named_item_id('workbookNamedItem-id').patch(request_body)
 
 
 ```

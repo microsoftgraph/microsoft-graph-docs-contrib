@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.attribute_set import AttributeSet
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AttributeSet(
 	id = "Engineering",
@@ -14,7 +15,7 @@ request_body = AttributeSet(
 	max_attributes_per_set = 25,
 )
 
-result = await graph_client.directory.attribute_sets.post(body = request_body)
+result = await graph_client.directory.attribute_sets.post(request_body)
 
 
 ```

@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_vpp_e_book_assignment import IosVppEBookAssignment
+from msgraph.generated.models.device_and_app_management_assignment_target import DeviceAndAppManagementAssignmentTarget
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IosVppEBookAssignment(
 	odata_type = "#microsoft.graph.iosVppEBookAssignment",
@@ -16,7 +18,7 @@ request_body = IosVppEBookAssignment(
 	install_intent = InstallIntent.Required,
 )
 
-result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').assignments.post(body = request_body)
+result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').assignments.post(request_body)
 
 
 ```

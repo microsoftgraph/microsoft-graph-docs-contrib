@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.clock_in_post_request_body import ClockInPostRequestBody
+from msgraph.generated.models.item_body import ItemBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ClockInPostRequestBody(
 	notes = ItemBody(
@@ -18,7 +20,7 @@ request_body = ClockInPostRequestBody(
 	}
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.time_cards.clock_in.post(body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.time_cards.clock_in.post(request_body)
 
 
 ```

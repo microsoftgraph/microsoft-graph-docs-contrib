@@ -6,6 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Invoke-MgBetaArchiveTeam -TeamId $teamId
+$params = @{
+}
+
+Invoke-MgBetaArchiveTeam -TeamId $teamId -BodyParameter $params
 
 ```

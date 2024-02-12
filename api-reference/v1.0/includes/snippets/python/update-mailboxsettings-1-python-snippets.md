@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.mailbox_settings import MailboxSettings
+from msgraph.generated.models.automatic_replies_setting import AutomaticRepliesSetting
+from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MailboxSettings(
 	automatic_replies_setting = AutomaticRepliesSetting(
@@ -25,7 +28,7 @@ request_body = MailboxSettings(
 	}
 )
 
-result = await graph_client.me.mailbox_settings.patch(body = request_body)
+result = await graph_client.me.mailbox_settings.patch(request_body)
 
 
 ```

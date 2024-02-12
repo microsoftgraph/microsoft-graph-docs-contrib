@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: ""
+description: "Intune Mam Targetedmanagedappprotection Assign Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -40,7 +40,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

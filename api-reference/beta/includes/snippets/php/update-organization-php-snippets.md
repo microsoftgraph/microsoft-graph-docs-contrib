@@ -6,11 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Organization();
 $requestBody->setMarketingNotificationEmails(['marketing@contoso.com', 	]);
+$requestBody->setOnPremisesSyncEnabled(true);
 $privacyProfile = new PrivacyProfile();
 $privacyProfile->setContactEmail('alice@contoso.com');
 $privacyProfile->setStatementUrl('https://contoso.com/privacyStatement');

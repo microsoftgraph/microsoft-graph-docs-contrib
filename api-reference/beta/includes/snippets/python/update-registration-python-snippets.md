@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.meeting_registration import MeetingRegistration
+from msgraph.generated.models.meeting_speaker import MeetingSpeaker
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MeetingRegistration(
 	subject = "Microsoft Ignite: Day 1",
@@ -21,10 +23,10 @@ request_body = MeetingRegistration(
 			display_name = "Fred Ryan",
 			bio = "CVP",
 		),
-	]
+	],
 )
 
-result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').registration.patch(body = request_body)
+result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').registration.patch(request_body)
 
 
 ```

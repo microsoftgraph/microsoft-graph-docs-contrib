@@ -1,6 +1,6 @@
 ---
 title: "accessReviewDecision resource type (deprecated)"
-description: "The accessReviewDecision represents an Azure AD access review decision of a particular entity's access."
+description: "The accessReviewDecision represents a Microsoft Entra access review decision of a particular entity's access."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessReviewDecision` represents an Azure AD access review decision of a particular entity's access.  Within an access review, or an instance of a recurring access review, there's one `accessReviewDecision` per reviewed user.  For example, if a group has two guests and one nonguest as members, and an access review of guests is performed for that group, then there will be two access review decision objects.  If a reviewer changes their decision, or another reviewer overrides them, then the `accessReviewDecision` is updated.
+In the Microsoft Entra [access reviews](accessreviews-root.md) feature, the `accessReviewDecision` represents a Microsoft Entra access review decision of a particular entity's access.  Within an access review, or an instance of a recurring access review, there's one `accessReviewDecision` per reviewed user.  For example, if a group has two guests and one nonguest as members, and an access review of guests is performed for that group, then there will be two access review decision objects.  If a reviewer changes their decision, or another reviewer overrides them, then the `accessReviewDecision` is updated.
 
 
 ## Methods
@@ -102,5 +102,3 @@ Here's a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DelegatedAdminRelationship();
@@ -26,6 +26,7 @@ $unifiedRolesArray []= $unifiedRolesUnifiedRole2;
 $accessDetails->setUnifiedRoles($unifiedRolesArray);
 
 $requestBody->setAccessDetails($accessDetails);
+$requestBody->setAutoExtendDuration(new \DateInterval('P180D'));
 
 $result = $graphServiceClient->tenantRelationships()->delegatedAdminRelationships()->post($requestBody)->wait();
 

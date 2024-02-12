@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.print.printers.by_printer_id('printer-id').jobs.by_job_id('printJob-id').abort.post()
+await graph_client.print.printers.by_printer_id('printer-id').jobs.by_print_job_id('printJob-id').abort.post(None)
 
 
 ```

@@ -4,9 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.event import Event
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph.generated.models.attendee import Attendee
+from msgraph.generated.models.email_address import EmailAddress
+from msgraph.generated.models.single_value_legacy_extended_property import SingleValueLegacyExtendedProperty
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Event(
 	subject = "Celebrate Thanksgiving",
@@ -30,16 +36,16 @@ request_body = Event(
 			),
 			type = AttendeeType.Required,
 		),
-	]
+	],
 	single_value_extended_properties = [
 		SingleValueLegacyExtendedProperty(
 			id = "String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
 			value = "Food",
 		),
-	]
+	],
 )
 
-result = await graph_client.me.events.post(body = request_body)
+result = await graph_client.me.events.post(request_body)
 
 
 ```

@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.approval_stage import ApprovalStage
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ApprovalStage(
 	review_result = "Approve",
 	justification = "OK",
 )
 
-result = await graph_client.identity_governance.entitlement_management.acce_package_assignment_approvals.by_acce_package_assignment_approval_id('approval-id').stages.by_stage_id('approvalStage-id').patch(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_approvals.by_approval_id('approval-id').stages.by_approval_stage_id('approvalStage-id').patch(request_body)
 
 
 ```

@@ -1,12 +1,13 @@
 ---
 title: "Review app registration, permissions, and consent migration issues"
-description: "Describes app registration, permission, and consent migration from Azure Active Directory (Azure AD) to Microsoft Graph API."
+description: "Describes app registration, permission, and consent migration from Azure AD Graph to Microsoft Graph."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
+#Customer intent: As a developer, I want to learn what to review in my app registration, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Review app registration, permissions, and consent
@@ -17,7 +18,7 @@ For any app update, there are three areas to consider:
 
 - **App registration**: You can continue to use your existing app registration (`appId`) in your application code.  
 
-    You do **not** have to re-register your app to migrate to Microsoft Graph. Simply update the code, test heavily, and then deploy your update.  
+    You do **not** have to re-register your app to migrate to Microsoft Graph. Update the code, test heavily, and then deploy your update.  
 
 - **Permissions**: You should change your configured permissions to the equivalent Microsoft Graph permissions. Delegated permissions which were granted for Azure Active Directory (Azure AD) Graph will be implicitly considered granted for Microsoft Graph also. Application permissions (app roles) will need to be granted again.
 
@@ -31,7 +32,7 @@ Simple migration projects should experience no issues in these areas.
 
 However, if you use new features, services, or add additional capabilities, you may need new permissions and end-user consent may be required.  In such cases, consent is requested when tokens are refreshed.
 
-## Next Steps
+## Next step
 
-- Learn [authentication library](migrate-azure-ad-graph-authentication-library.md) differences between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [!div class="nextstepaction"]
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)

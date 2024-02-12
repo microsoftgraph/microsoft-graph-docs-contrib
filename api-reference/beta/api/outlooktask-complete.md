@@ -24,15 +24,14 @@ The **completedDateTime** property represents the date when the task is finished
 
 By default, this operation (and the POST, GET, and PATCH task operations) returns date-related properties in UTC. You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.ReadWrite    |
-|Delegated (personal Microsoft account) | Tasks.ReadWrite    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "outlooktask_complete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/outlooktask-complete-permissions.md)]
 
 ## HTTP request
 
@@ -47,12 +46,12 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.roleManagement.cloudPC.roleAssignments.role_assignments_request_builder import RoleAssignmentsRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = RoleAssignmentsRequestBuilder.RoleAssignmentsRequestBuilderGetQueryParameters(
 		filter = "roleDefinitionId eq 'b5c08161-a7af-481c-ace2-a20a69a48fb1'",

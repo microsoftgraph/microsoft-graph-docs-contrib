@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_compliance_policy_device_state_summary import DeviceCompliancePolicyDeviceStateSummary
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceCompliancePolicyDeviceStateSummary(
 	odata_type = "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
@@ -21,7 +22,7 @@ request_body = DeviceCompliancePolicyDeviceStateSummary(
 	conflict_device_count = 3,
 )
 
-result = await graph_client.device_management.device_compliance_policy_device_state_summary.patch(body = request_body)
+result = await graph_client.device_management.device_compliance_policy_device_state_summary.patch(request_body)
 
 
 ```

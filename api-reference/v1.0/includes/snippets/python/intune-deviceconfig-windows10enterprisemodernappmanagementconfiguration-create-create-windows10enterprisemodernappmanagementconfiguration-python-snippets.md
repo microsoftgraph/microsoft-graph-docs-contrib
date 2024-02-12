@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows10_enterprise_modern_app_management_configuration import Windows10EnterpriseModernAppManagementConfiguration
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Windows10EnterpriseModernAppManagementConfiguration(
 	odata_type = "#microsoft.graph.windows10EnterpriseModernAppManagementConfiguration",
@@ -16,7 +17,7 @@ request_body = Windows10EnterpriseModernAppManagementConfiguration(
 	uninstall_built_in_apps = True,
 )
 
-result = await graph_client.device_management.device_configurations.post(body = request_body)
+result = await graph_client.device_management.device_configurations.post(request_body)
 
 
 ```

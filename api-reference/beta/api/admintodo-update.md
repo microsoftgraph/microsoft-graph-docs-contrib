@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [adminTodo](../resources/admintodo.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -36,7 +38,7 @@ PATCH /admin/todo
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -109,7 +111,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

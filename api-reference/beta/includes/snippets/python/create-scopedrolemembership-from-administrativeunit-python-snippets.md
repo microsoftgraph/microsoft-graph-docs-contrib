@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.scoped_role_membership import ScopedRoleMembership
+from msgraph.generated.models.identity import Identity
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ScopedRoleMembership(
 	role_id = "roleId-value",
@@ -15,7 +17,7 @@ request_body = ScopedRoleMembership(
 	),
 )
 
-result = await graph_client.administrative_units.by_administrative_unit_id('administrativeUnit-id').scoped_role_members.post(body = request_body)
+result = await graph_client.administrative_units.by_administrative_unit_id('administrativeUnit-id').scoped_role_members.post(request_body)
 
 
 ```

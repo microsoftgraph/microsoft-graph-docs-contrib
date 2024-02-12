@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.extension_property import ExtensionProperty
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ExtensionProperty(
 	name = "jobGroup",
@@ -14,10 +15,10 @@ request_body = ExtensionProperty(
 	is_multi_valued = True,
 	target_objects = [
 		"User",
-	]
+	],
 )
 
-result = await graph_client.applications.by_application_id('application-id').extension_properties.post(body = request_body)
+result = await graph_client.applications.by_application_id('application-id').extension_properties.post(request_body)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "deletedItemContainer resource type"
-description: "A container for deleted lifecycle workflow objects during the period before they are permanently deleted."
+description: "A container for deleted lifecycle workflow objects during the period before they're permanently deleted."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A container for deleted lifecycle workflow objects during the period before they are permanently deleted. Azure AD may permanently delete the workflows after 30 days, or you may [permanently delete the workflows](../api/identitygovernance-deletedItemcontainer-delete.md), or you may [restore the deleted workflow and its associated objects](../api/identitygovernance-workflow-restore.md).
+A container for deleted lifecycle workflow objects during the period before they're permanently deleted. Microsoft Entra ID Governance may permanently delete the workflows after 30 days, or you may [permanently delete the workflows](../api/identitygovernance-deletedItemcontainer-delete.md), or you may [restore the deleted workflow and its associated objects](../api/identitygovernance-workflow-restore.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

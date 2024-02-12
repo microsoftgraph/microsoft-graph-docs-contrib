@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.admin_dynamics import AdminDynamics
+from msgraph.generated.models.customer_voice_settings import CustomerVoiceSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AdminDynamics(
 	odata_type = "#microsoft.graph.adminDynamics",
@@ -18,7 +20,7 @@ request_body = AdminDynamics(
 	),
 )
 
-result = await graph_client.admin.dynamics.patch(body = request_body)
+result = await graph_client.admin.dynamics.patch(request_body)
 
 
 ```

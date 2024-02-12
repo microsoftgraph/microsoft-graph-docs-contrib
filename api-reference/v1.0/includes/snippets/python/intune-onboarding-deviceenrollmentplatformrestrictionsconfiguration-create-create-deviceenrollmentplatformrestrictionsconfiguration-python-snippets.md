@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_enrollment_platform_restrictions_configuration import DeviceEnrollmentPlatformRestrictionsConfiguration
+from msgraph.generated.models.device_enrollment_platform_restriction import DeviceEnrollmentPlatformRestriction
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceEnrollmentPlatformRestrictionsConfiguration(
 	odata_type = "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -51,7 +53,7 @@ request_body = DeviceEnrollmentPlatformRestrictionsConfiguration(
 	),
 )
 
-result = await graph_client.device_management.device_enrollment_configurations.post(body = request_body)
+result = await graph_client.device_management.device_enrollment_configurations.post(request_body)
 
 
 ```

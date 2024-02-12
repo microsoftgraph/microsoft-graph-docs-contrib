@@ -4,20 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.add_members_by_id_post_request_body import AddMembersByIdPostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AddMembersByIdPostRequestBody(
 	ids = [
 		"String",
 		"String",
 		"String",
-	]
+	],
 	member_entity_type = "#microsoft.graph.windowsUpdates.azureADDevice",
 )
 
-await graph_client.admin.windows.updates.updatable_assets.by_updatable_asset_id('updatableAsset-id').microsoft_graph_window_update_add_member_by_id.post(body = request_body)
+await graph_client.admin.windows.updates.updatable_assets.by_updatable_asset_id('updatableAsset-id').microsoft_graph_windows_updates_add_members_by_id.post(request_body)
 
 
 ```

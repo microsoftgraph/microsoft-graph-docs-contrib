@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.add_activities_post_request_body import AddActivitiesPostRequestBody
+from msgraph.generated.models.external_activity import ExternalActivity
+from msgraph.generated.models.identity import Identity
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AddActivitiesPostRequestBody(
 	activities = [
@@ -19,10 +22,10 @@ request_body = AddActivitiesPostRequestBody(
 				id = "1f0c997e-99f7-43f1-8cca-086f8d42be8d",
 			),
 		),
-	]
+	],
 )
 
-result = await graph_client.external.connections.by_connection_id('externalConnection-id').items.by_item_id('externalItem-id').microsoft_graph_external_connector_add_activities.post(body = request_body)
+result = await graph_client.external.connections.by_external_connection_id('externalConnection-id').items.by_external_item_id('externalItem-id').microsoft_graph_external_connectors_add_activities.post(request_body)
 
 
 ```

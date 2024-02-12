@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.booking_staff_member import BookingStaffMember
+from msgraph.generated.models.booking_work_hours import BookingWorkHours
+from msgraph.generated.models.booking_work_time_slot import BookingWorkTimeSlot
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BookingStaffMember(
 	odata_type = "#microsoft.graph.bookingStaffMember",
@@ -25,7 +28,7 @@ request_body = BookingStaffMember(
 					end_time = "17:00:00.0000000",
 					start_time = "08:00:00.0000000",
 				),
-			]
+			],
 			additional_data = {
 					"day@odata_type" : "#microsoft.graph.dayOfWeek",
 					"time_slots@odata_type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)",
@@ -40,7 +43,7 @@ request_body = BookingStaffMember(
 					end_time = "17:00:00.0000000",
 					start_time = "08:00:00.0000000",
 				),
-			]
+			],
 			additional_data = {
 					"day@odata_type" : "#microsoft.graph.dayOfWeek",
 					"time_slots@odata_type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)",
@@ -55,7 +58,7 @@ request_body = BookingStaffMember(
 					end_time = "17:00:00.0000000",
 					start_time = "08:00:00.0000000",
 				),
-			]
+			],
 			additional_data = {
 					"day@odata_type" : "#microsoft.graph.dayOfWeek",
 					"time_slots@odata_type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)",
@@ -70,7 +73,7 @@ request_body = BookingStaffMember(
 					end_time = "17:00:00.0000000",
 					start_time = "08:00:00.0000000",
 				),
-			]
+			],
 			additional_data = {
 					"day@odata_type" : "#microsoft.graph.dayOfWeek",
 					"time_slots@odata_type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)",
@@ -85,13 +88,13 @@ request_body = BookingStaffMember(
 					end_time = "17:00:00.0000000",
 					start_time = "08:00:00.0000000",
 				),
-			]
+			],
 			additional_data = {
 					"day@odata_type" : "#microsoft.graph.dayOfWeek",
 					"time_slots@odata_type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)",
 			}
 		),
-	]
+	],
 	is_email_notification_enabled = False,
 	additional_data = {
 			"role@odata_type" : "#microsoft.graph.bookingStaffRole",
@@ -99,7 +102,7 @@ request_body = BookingStaffMember(
 	}
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').staff_members.post(body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').staff_members.post(request_body)
 
 
 ```

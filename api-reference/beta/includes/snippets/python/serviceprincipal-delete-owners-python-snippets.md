@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.$ref_delete_request_body import $refDeleteRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = $refDeleteRequestBody(
 	additional_data = {
@@ -14,7 +15,7 @@ request_body = $refDeleteRequestBody(
 	}
 )
 
-await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').owners.by_owner_id('directoryObject-id').ref.delete(body = request_body)
+await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').owners.by_directory_object_id('directoryObject-id').ref.delete(request_body)
 
 
 ```

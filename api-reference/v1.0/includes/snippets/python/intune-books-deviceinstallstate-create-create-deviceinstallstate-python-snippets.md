@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_install_state import DeviceInstallState
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceInstallState(
 	odata_type = "#microsoft.graph.deviceInstallState",
@@ -20,7 +21,7 @@ request_body = DeviceInstallState(
 	user_name = "User Name value",
 )
 
-result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').device_states.post(body = request_body)
+result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').device_states.post(request_body)
 
 
 ```

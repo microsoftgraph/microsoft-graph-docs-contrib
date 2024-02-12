@@ -21,7 +21,8 @@ mgc-beta tenant-relationships delegated-admin-relationships create --body '{\
         "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"\
       }\
     ]\
-  }\
+  },\
+  "autoExtendDuration": "P180D"\
 }\
 '
 

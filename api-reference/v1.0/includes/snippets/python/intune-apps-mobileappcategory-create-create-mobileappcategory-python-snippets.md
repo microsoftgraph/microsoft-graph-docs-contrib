@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.mobile_app_category import MobileAppCategory
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MobileAppCategory(
 	odata_type = "#microsoft.graph.mobileAppCategory",
 	display_name = "Display Name value",
 )
 
-result = await graph_client.device_app_management.mobile_app_categories.post(body = request_body)
+result = await graph_client.device_app_management.mobile_app_categories.post(request_body)
 
 
 ```

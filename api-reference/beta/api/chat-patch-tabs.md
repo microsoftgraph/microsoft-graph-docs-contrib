@@ -18,6 +18,8 @@ This can be used to configure the content of the tab.
 
 > **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab pinned in the meeting will be updated.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +45,7 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and the updated **te
 ### Example 1: Update the name of a tab in a chat
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

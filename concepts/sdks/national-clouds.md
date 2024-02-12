@@ -48,6 +48,10 @@ The following example configures an [Interactive authentication provider](choose
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/NationalClouds.java" id="NationalCloudSnippet":::
 
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/NationalClouds.php" id="NationalCloudSnippet":::
+
 ### [PowerShell](#tab/powershell)
 
 ```powershell

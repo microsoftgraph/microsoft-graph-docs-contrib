@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.room_list import RoomList
+from msgraph.generated.models.physical_address import PhysicalAddress
+from msgraph.generated.models.outlook_geo_coordinates import OutlookGeoCoordinates
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RoomList(
 	odata_type = "microsoft.graph.roomList",
@@ -28,7 +31,7 @@ request_body = RoomList(
 	),
 )
 
-result = await graph_client.places.by_place_id('place-id').patch(body = request_body)
+result = await graph_client.places.by_place_id('place-id').patch(request_body)
 
 
 ```

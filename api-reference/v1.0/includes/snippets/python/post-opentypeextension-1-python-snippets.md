@@ -4,9 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.message import Message
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.recipient import Recipient
+from msgraph.generated.models.email_address import EmailAddress
+from msgraph.generated.models.extension import Extension
+from msgraph.generated.models.open_type_extension import OpenTypeExtension
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Message(
 	subject = "Annual review",
@@ -20,7 +26,7 @@ request_body = Message(
 				address = "rufus@contoso.com",
 			),
 		),
-	]
+	],
 	extensions = [
 		OpenTypeExtension(
 			odata_type = "microsoft.graph.openTypeExtension",
@@ -31,10 +37,10 @@ request_body = Message(
 					"deal_value" : 10000,
 			}
 		),
-	]
+	],
 )
 
-result = await graph_client.me.messages.post(body = request_body)
+result = await graph_client.me.messages.post(request_body)
 
 
 ```

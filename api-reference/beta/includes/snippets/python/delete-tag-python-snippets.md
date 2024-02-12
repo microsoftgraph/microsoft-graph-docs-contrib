@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.compliance.ediscovery.cases.item.tags.item.tag_item_request_builder import TagItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = TagRequestBuilder.TagRequestBuilderDeleteQueryParameters(
+query_params = TagItemRequestBuilder.TagItemRequestBuilderDeleteQueryParameters(
 		forcedelete = "true",
 )
 
-request_configuration = TagRequestBuilder.TagRequestBuilderDeleteRequestConfiguration(
+request_configuration = TagItemRequestBuilder.TagItemRequestBuilderDeleteRequestConfiguration(
 query_parameters = query_params,
 )
 

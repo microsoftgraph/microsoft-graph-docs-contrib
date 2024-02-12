@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.regional_and_language_settings import RegionalAndLanguageSettings
+from msgraph.generated.models.locale_info import LocaleInfo
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RegionalAndLanguageSettings(
 	authoring_languages = [
@@ -16,13 +18,13 @@ request_body = RegionalAndLanguageSettings(
 		LocaleInfo(
 			locale = "es-MX",
 		),
-	]
+	],
 	default_regional_format = LocaleInfo(
 		locale = "en-US",
 	),
 )
 
-result = await graph_client.me.settings.regional_and_language_settings.patch(body = request_body)
+result = await graph_client.me.settings.regional_and_language_settings.patch(request_body)
 
 
 ```

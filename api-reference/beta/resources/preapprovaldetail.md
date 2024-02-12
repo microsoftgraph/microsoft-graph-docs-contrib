@@ -1,6 +1,6 @@
 ---
 title: "preApprovalDetail resource type"
-description: "A preApprovalDetail describes a list of conditions under which an app can be pre-approved for consent."
+description: "A preApprovalDetail describes a list of conditions under which an app can be preapproved for consent."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A preApprovalDetail describes a list of conditions under which the app has been pre-approved for consent. The conditions include permissions, resource scope type, and sensitivity labels that have been tagged for the resource scope.
+A preApprovalDetail describes a list of conditions under which the app has been preapproved for consent. The conditions include permissions, resource scope type, and sensitivity labels that have been tagged for the resource scope.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |permissions|[preApprovedPermissions](../resources/preapprovedpermissions.md)|Specifies the permissions being preapproved for consent. Required.|
-|scopeType|resourceScopeType| The resource type the pre-approval applies to. Possible values: `group` for [groups](../resources/group.md) and [teams](../resources/team.md), or `chat` for [chats](../resources/chat.md). Required.|
-|sensitivityLabels|[scopeSensitivityLabels](../resources/scopesensitivitylabels.md)|Conditions on the [sensitivity labels](/microsoftteams/sensitivity-labels) of the target resource scope the pre-approval applies to. Required.
+|scopeType|resourceScopeType| The resource type the preapproval applies to. Possible values: `group` for [groups](../resources/group.md) and [teams](../resources/team.md), or `chat` for [chats](../resources/chat.md). Required.|
+|sensitivityLabels|[scopeSensitivityLabels](../resources/scopesensitivitylabels.md)|Conditions on the [sensitivity labels](/microsoftteams/sensitivity-labels) of the target resource scope the preapproval applies to. Required.
 
 
 

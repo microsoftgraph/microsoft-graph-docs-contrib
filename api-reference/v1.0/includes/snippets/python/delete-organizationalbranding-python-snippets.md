@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.branding_delete_request_body import BrandingDeleteRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BrandingDeleteRequestBody(
 	additional_data = {
@@ -14,7 +15,7 @@ request_body = BrandingDeleteRequestBody(
 	}
 )
 
-await graph_client.organization.by_organization_id('organization-id').branding.delete(body = request_body)
+await graph_client.organization.by_organization_id('organization-id').branding.delete(request_body)
 
 
 ```

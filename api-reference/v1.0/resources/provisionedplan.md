@@ -23,7 +23,7 @@ The **provisionedPlans** property of the [user](user.md) entity and the [organiz
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

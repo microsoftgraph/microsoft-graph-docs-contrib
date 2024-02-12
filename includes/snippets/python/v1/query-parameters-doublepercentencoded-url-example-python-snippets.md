@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.users_request_builder import UsersRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = UsersRequestBuilder.UsersRequestBuilderGetQueryParameters(
 		filter = "startswith(givenName, 'J')",

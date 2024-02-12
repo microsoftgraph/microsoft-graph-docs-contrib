@@ -21,7 +21,7 @@ Represents details about a coachmark location.
 |:---|:---|:---|
 |length|Int32|Length of coachmark.|
 |offset|Int32|Offset of coachmark.|
-|type|coachmarkLocationType|Type of coachmark location. The possible values are: `unknown`, `fromEmail`, `subject`, `externalTag`, `displayName`, `messageBody`, `unknownFutureValue`.|
+|type|[coachmarkLocationType](#coachmarklocationtype-values)|Type of coachmark location. The possible values are: `unknown`, `fromEmail`, `subject`, `externalTag`, `displayName`, `messageBody`, `unknownFutureValue`.|
 
 ### coachmarkLocationType values
 
@@ -37,7 +37,7 @@ Represents details about a coachmark location.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.coachmarkLocation"

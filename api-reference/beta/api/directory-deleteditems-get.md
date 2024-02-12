@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md).
+Retrieve the properties of a recently deleted [administrative unit](../resources/administrativeunit.md), [application](../resources/application.md), [externalUserProfile](../resources/externaluserprofile.md), [group](../resources/group.md), [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) objects from [deleted items](../resources/directory.md).
 
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -25,7 +27,9 @@ The following table shows the least privileged permission or permissions require
 |:-|:-|:-|:-|
 | [administrativeUnit](../resources/administrativeunit.md) | AdministrativeUnit.Read.All | Not supported. | AdministrativeUnit.Read.All |
 | [application](../resources/application.md) | Application.Read.All | Not supported. | Application.Read.All |
+| [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.Read.All | Not supported | ExternalUserProfile.Read.All |
 | [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
+| [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.Read.All | Not supported | PendingExternalUserProfile.Read.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.Read.All | Not supported. | Application.Read.All |
 | [user](../resources/user.md) | User.Read.All | Not supported. | User.Read.All |
 
@@ -41,11 +45,11 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -102,7 +106,7 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-9
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

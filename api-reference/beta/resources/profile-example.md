@@ -11,11 +11,11 @@ doc_type: "conceptualPageType"
 
 Namespace: microsoft.graph
 
-Microsoft Graph applications can use the Profile API to retrieve the profile of the signed-in user or another user with a valid Azure AD or Microsoft account. This information can be used in applications to assist in contextualizing another user, providing a richer experience for the user within the application or as a mechanism for storing extended information about the user which can also be used within Microsoft 365.
+Microsoft Graph applications can use the Profile API to retrieve the profile of the signed-in user or another user with a valid Microsoft Entra ID or Microsoft account. This information can be used in applications to help contextualizing another user, providing a richer experience for the user within the application or as a mechanism for storing extended information about the user that can also be used within Microsoft 365.
 
 ## Authorization
 
-To call the People API in Microsoft Graph, your app will need the appropriate permissions:
+To call the People API in Microsoft Graph, your app needs the appropriate permissions:
 
 * User.Read - Use to make general Profile API calls; for example, `https://graph.microsoft.com/beta/me/profile/`. User.Read requires end user consent.
 
@@ -28,7 +28,7 @@ The requests in this section get the people most relevant to the signed-in user 
 GET https://graph.microsoft.com/beta/me/profile/
 ```
 
-The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.
+The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top*, to limit the response to three records.
 
 ```http
 HTTP/1.1 200 OK
@@ -270,5 +270,3 @@ Content-type: application/json
     "webAccounts": []
 }
 ```
-
-

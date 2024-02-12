@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Represents a [Trust Framework](/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom) policy (also called [custom policy](/azure/active-directory-b2c/active-directory-b2c-overview-custom)) in [Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview). A Trust Framework policy gives full control over the user journeys. Use it to:
 
 * Customize the sign-up and sign-in experiences fully.
-* Federate to any SAML, Open ID Connect, or OAuth2 identity provider.
+* Federate to any SAML, OpenID Connect, or OAuth2 identity provider.
 * Integrate with other systems or user data stores by calling REST endpoints.
 * Transform claims and customize tokens issued to the relying party application.
 
@@ -60,5 +60,3 @@ The following is a JSON representation of the resource.
 
 - [trustFrameworkPolicy schema](/azure/active-directory-b2c/trustframeworkpolicy) for information about the schema elements.
 - [trustFrameworkPolicy.xsd](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/blob/master/TrustFrameworkPolicy_0.3.0.0.xsd)
-
-

@@ -1,6 +1,6 @@
 ---
 title: "Update accessReview (deprecated)"
-description: "In the Azure AD access reviews feature, update an existing accessReview object to change one or more of its properties."
+description: "In the Microsoft Entra access reviews feature, update an existing accessReview object to change one or more of its properties."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.prod: "governance"
@@ -15,19 +15,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to change one or more of its properties.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to change one or more of its properties.
 
 This API is not intended to change the reviewers or decisions of a review.  To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs.  To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API. To apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API. 
 
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | AccessReview.ReadWrite.Membership |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "accessreview_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accessreview-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -146,5 +145,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

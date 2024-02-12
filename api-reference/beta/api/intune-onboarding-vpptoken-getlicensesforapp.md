@@ -1,6 +1,6 @@
 ---
 title: "getLicensesForApp function"
-description: ""
+description: "Intune Onboarding Vpptoken Getlicensesforapp Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -38,7 +38,7 @@ GET /deviceAppManagement/vppTokens/getLicensesForApp
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

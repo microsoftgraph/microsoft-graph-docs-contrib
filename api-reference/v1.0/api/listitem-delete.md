@@ -15,17 +15,14 @@ Removes an item from a [list][].
 
 [list]: ../resources/list.md
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-To delete an item, the user must have granted the application write access to the item to be deleted.
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "listitem_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/listitem-delete-permissions.md)]
 
 ## HTTP request
 
@@ -35,11 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name       | Value | Description
-|:-----------|:------|:--------------------------------------------------------
-| _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| _if-match_ | ``etag`If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
 
 ## Request body
 

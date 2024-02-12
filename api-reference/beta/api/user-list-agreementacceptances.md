@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the signed-in user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Retrieve a user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AgreementAcceptance.Read, AgreementAcceptance.Read.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "user_list_agreementacceptances" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-agreementacceptances-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,10 +38,10 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [agreementAcceptance](../resources/agreementacceptance.md) objects in the response body.
 ## Example
@@ -116,7 +116,7 @@ Content-type: application/json
             "deviceOSVersion": null,
             "agreementFileId": "08033369-8972-42a3-8533-90bbd2757a01",
             "userDisplayName": "Megan Bowen",
-            "userPrincipalName": "MeganB@M365x43961174.OnMicrosoft.com",
+            "userPrincipalName": "MeganB@Contoso.com",
             "userEmail": "MeganB@M365x43961174.OnMicrosoft.com",
             "recordedDateTime": "2022-03-04T14:11:22.6658376Z",
             "expirationDateTime": null,

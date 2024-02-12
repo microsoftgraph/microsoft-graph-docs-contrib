@@ -15,11 +15,13 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a printer share.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription.
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
@@ -47,7 +49,7 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

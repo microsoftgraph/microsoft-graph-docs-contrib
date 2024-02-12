@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.move_post_request_body import MovePostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MovePostRequestBody(
 	destination_id = "destinationId-value",
 )
 
-result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').move.post(body = request_body)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').move.post(request_body)
 
 
 ```

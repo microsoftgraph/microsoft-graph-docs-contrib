@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.tentatively_accept_post_request_body import TentativelyAcceptPostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TentativelyAcceptPostRequestBody(
 	comment = "I will probably be able to make it.",
 	send_response = True,
 )
 
-await graph_client.me.events.by_event_id('event-id').tentatively_accept.post(body = request_body)
+await graph_client.me.events.by_event_id('event-id').tentatively_accept.post(request_body)
 
 
 ```

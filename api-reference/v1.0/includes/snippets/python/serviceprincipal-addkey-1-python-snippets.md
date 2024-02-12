@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.add_key_post_request_body import AddKeyPostRequestBody
+from msgraph.generated.models.key_credential import KeyCredential
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AddKeyPostRequestBody(
 	key_credential = KeyCredential(
@@ -18,7 +20,7 @@ request_body = AddKeyPostRequestBody(
 	proof = "eyJ0eXAiOiJ...",
 )
 
-result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').add_key.post(body = request_body)
+result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').add_key.post(request_body)
 
 
 ```

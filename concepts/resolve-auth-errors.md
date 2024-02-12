@@ -1,9 +1,8 @@
 ---
 title: "Resolve Microsoft Graph authorization errors"
 description: "Find out how to resolve Microsoft Graph 401 and 403 authorization errors."
-author: "FaithOmbongi"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.custom: graphiamtop20
 ---
 
 # Resolve Microsoft Graph authorization errors
@@ -28,7 +27,7 @@ Make sure that your application is presenting a valid access token to Microsoft 
 Verify that you have requested the correct set of permissions based on the Microsoft Graph APIs your app calls. The least privileged permissions that we recommend are provided in all the Microsoft Graph API method reference topics. Additionally, those permissions must be granted to the application by a user or an administrator. Granting permissions normally happens through a consent page or by granting permissions using the Microsoft Entra admin center application registration blade.
 
 * [Microsoft Graph permissions](./permissions-reference.md)
-* [Understanding Azure AD permissions and consent](/azure/active-directory/develop/v2-permissions-and-consent)
+* [Understanding Microsoft Entra permissions and consent](/azure/active-directory/develop/v2-permissions-and-consent)
 
 ### 403 Forbidden error: Did your app acquire a token to match chosen permissions?
 
@@ -58,7 +57,7 @@ API services like Microsoft Graph check that the *aud* claim (audience) in the r
 Based on an organization's CA policies, a user accessing Microsoft Graph resources via your app might be challenged for additional information that is not present in the access token your app originally acquired. In this case, your app receives a 400 with an *interaction_required* error during access token acquisition or a 403 with *insufficient_claims* error when calling Microsoft Graph. In both cases, the error response contains additional information that can be presented to the authorize endpoint to challenge the user for additional information (like multi-factor authentication or device enrollment).
 
 * [Handling conditional access challenges using MSAL](/azure/active-directory/develop/msal-handling-exceptions#conditional-access-and-claims-challenges)
-* [Developer guidance for Azure Active Directory conditional access](/azure/active-directory/develop/conditional-access-dev-guide)
+* [Developer guidance for Microsoft Entra Conditional Access](/azure/active-directory/develop/conditional-access-dev-guide)
 
 ### 403 Forbidden: Access to OData is disabled
 

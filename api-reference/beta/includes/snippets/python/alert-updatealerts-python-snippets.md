@@ -4,9 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.update_alerts_post_request_body import UpdateAlertsPostRequestBody
+from msgraph.generated.models.alert import Alert
+from msgraph.generated.models.alert_feedback import AlertFeedback
+from msgraph.generated.models.alert_status import AlertStatus
+from msgraph.generated.models.security_vendor_information import SecurityVendorInformation
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UpdateAlertsPostRequestBody(
 	value = [
@@ -15,7 +20,7 @@ request_body = UpdateAlertsPostRequestBody(
 			closed_date_time = "String (timestamp)",
 			comments = [
 				"String",
-			]
+			],
 			feedback = AlertFeedback(
 				additional_data = {
 						"@odata_type" : "microsoft.graph.alertFeedback",
@@ -29,16 +34,16 @@ request_body = UpdateAlertsPostRequestBody(
 			),
 			tags = [
 				"String",
-			]
+			],
 			vendor_information = SecurityVendorInformation(
 				provider = "String",
 				vendor = "String",
 			),
 		),
-	]
+	],
 )
 
-result = await graph_client.security.alerts.update_alerts.post(body = request_body)
+result = await graph_client.security.alerts.update_alerts.post(request_body)
 
 
 ```

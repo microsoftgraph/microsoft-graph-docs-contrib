@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.mac_o_s_custom_configuration import MacOSCustomConfiguration
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MacOSCustomConfiguration(
 	odata_type = "#microsoft.graph.macOSCustomConfiguration",
@@ -18,7 +19,7 @@ request_body = MacOSCustomConfiguration(
 	payload = base64.urlsafe_b64decode("cGF5bG9hZA=="),
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body)
 
 
 ```

@@ -12,30 +12,33 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of **plannerbucket** object.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Tasks.ReadWrite.All |
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "plannerbucket_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/plannerbucket-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/buckets/{id}
 ```
-## Optional request headers
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 | If-Match  | Last known ETag value for the **plannerBucket** to be updated. Required.|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |name|String|Name of the bucket.|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](../resources/planner-order-hint-format.md).|

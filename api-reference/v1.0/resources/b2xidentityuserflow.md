@@ -1,6 +1,6 @@
 ---
 title: "b2xIdentityUserFlow resource type"
-description: "Represents a self-service sign up user flow within an Azure Active Directory tenant."
+description: "Represents a self-service sign up user flow within a Microsoft Entra tenant."
 ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ author: "nanguil"
 
 Namespace: microsoft.graph
 
-Represents a self-service sign up user flow within an Azure Active Directory tenant.
+Represents a self-service sign up user flow within a Microsoft Entra tenant.
 
 User flows are used to enable a [self-service sign up](/azure/active-directory/external-identities/self-service-sign-up-overview) experience for guest users on an application. User flows define the experience the end user sees while signing up, including which [identity providers](/azure/active-directory/external-identities/identity-providers) they can use to authenticate, along with which attributes are collected as part of the sign up process.
 

@@ -11,7 +11,7 @@ author: "sarahwxy"
 You can use Microsoft Graph to consume user information stored in Microsoft 365 in custom applications. By using Connected Services in Visual Studio, you can grant your application access to the following Microsoft 365 services:
 
 - Outlook: mail, calendars, and contacts 
-- Azure Active Directory: users, groups, and directories 
+- Microsoft Entra ID: users, groups, and directories 
 - OneDrive: files
 - OneNote: notes and notebooks
 - SharePoint: sites, lists, and document libraries

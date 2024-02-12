@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.pendingAccessReviewInstances.item.decisions.decisions_request_builder import DecisionsRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = DecisionsRequestBuilder.DecisionsRequestBuilderGetQueryParameters(
 		top = 100,
@@ -17,7 +18,7 @@ request_configuration = DecisionsRequestBuilder.DecisionsRequestBuilderGetReques
 query_parameters = query_params,
 )
 
-result = await graph_client.me.pending_acce_review_instances.by_pending_acce_review_instance_id('accessReviewInstance-id').decisions.get(request_configuration = request_configuration)
+result = await graph_client.me.pending_access_review_instances.by_access_review_instance_id('accessReviewInstance-id').decisions.get(request_configuration = request_configuration)
 
 
 ```

@@ -14,17 +14,16 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [DriveItem](../resources/driveitem.md) by using its ID or path.
-Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
+Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-delete-permissions.md)]
 
 ## HTTP request
 
@@ -42,11 +41,11 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
+| if-match      | String | If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted. |
 
 ## Example
 
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 
 
 # [HTTP](#tab/http)

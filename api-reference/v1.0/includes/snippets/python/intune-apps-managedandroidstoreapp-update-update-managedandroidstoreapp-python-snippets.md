@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.managed_android_store_app import ManagedAndroidStoreApp
+from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.android_minimum_operating_system import AndroidMinimumOperatingSystem
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ManagedAndroidStoreApp(
 	odata_type = "#microsoft.graph.managedAndroidStoreApp",
@@ -50,7 +53,7 @@ request_body = ManagedAndroidStoreApp(
 	),
 )
 
-result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(body = request_body)
+result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(request_body)
 
 
 ```

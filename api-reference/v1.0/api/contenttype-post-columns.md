@@ -14,17 +14,16 @@ Namespace: microsoft.graph
 
 Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
   
 
-|Permission type | Permissions (from least to most privileged) |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application | Sites.Manage.All, Sites.FullControl.All |
+<!-- { "blockType": "permissions", "name": "contenttype_post_columns" } -->
+[!INCLUDE [permissions-table](../includes/permissions/contenttype-post-columns-permissions.md)]
 
   
 
@@ -35,6 +34,13 @@ One of the following permissions is required to call this API. To learn more, in
 POST /sites/{site-id}/contentTypes/{contentType-id}/columns
 POST /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -59,7 +65,7 @@ POST https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-
 Content-Type: application/json
 
 {
-	"sourceColumn@odata.bind": "https://graph.microsoft.com/v1.0/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103"
+    "sourceColumn@odata.bind": "https://graph.microsoft.com/v1.0/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103"
 }
 ```
 

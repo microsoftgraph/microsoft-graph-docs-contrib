@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.terms_and_conditions import TermsAndConditions
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TermsAndConditions(
 	odata_type = "#microsoft.graph.termsAndConditions",
@@ -18,7 +19,7 @@ request_body = TermsAndConditions(
 	version = 7,
 )
 
-result = await graph_client.device_management.term_and_conditions.by_term_and_condition_id('termsAndConditions-id').patch(body = request_body)
+result = await graph_client.device_management.terms_and_conditions.by_terms_and_conditions_id('termsAndConditions-id').patch(request_body)
 
 
 ```

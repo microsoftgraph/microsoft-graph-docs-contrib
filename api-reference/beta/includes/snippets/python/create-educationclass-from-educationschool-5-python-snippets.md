@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.reference_create import ReferenceCreate
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ReferenceCreate(
 	odata_id = "https://graph.microsoft.com/beta/education/classes/11006",
 )
 
-await graph_client.education.schools.by_school_id('educationSchool-id').classes.ref.post(body = request_body)
+await graph_client.education.schools.by_education_school_id('educationSchool-id').classes.ref.post(request_body)
 
 
 ```

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AppCredentialSignInActivityCollectionPage appCredentialSignInActivities = graphClient.reports().appCredentialSignInActivities()
-	.buildRequest()
-	.filter("appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AppCredentialSignInActivityCollectionResponse result = graphClient.reports().appCredentialSignInActivities().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'";
+});
+
 
 ```

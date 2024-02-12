@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # States, transitions, and limitations for submissions in Microsoft Graph
 
-Submissions are an important part in the interaction between teachers' and students' actions. about the changes in the submission states during the process flow and which education APIs in Microsoft Graph are involved.
+Submissions are an important part of the interaction between teachers' and students' actions.  This relates to changes in the submission state during the process flow and which education APIs in Microsoft Graph are involved.
 
 ## Submission states and transitions
 
@@ -23,6 +23,7 @@ The status is a read-only property in the submission. It changes based on the ac
 | Submitted	| The state after the student turns in the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
 | Returned | The state after the teacher has returned an assignment to the student. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
 | Reassigned | The state after the teacher has returned the assignment to the student for revision. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
+| Excuse | Teachers can mark a submission as excused to indicate that the submission has no further action for the student.| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/excuse` |
 
 The following diagram shows the state transition flow.
 
@@ -35,15 +36,22 @@ The following diagram shows the state transition flow.
 | Working |	Turn in	| Submitted |
 | Working |	Return for revision	| Reassigned |
 | Working |	Return | Returned |
+| Working | Excuse | Excused |
 | Submitted	| Undo Turn in | Working |
 | Submitted | Return | Returned |
 | Submitted | Return for revision | Reassigned |
+| Submitted | Excuse | Excused |
 | Returned | Turn in | Submitted |
 | Returned | Return | Returned |
 | Returned | Return for revision | Reassigned |
+| Returned | Excuse | Excused |
 | Reassigned | Turn in | Submitted |
 | Reassigned | Return | Returned |
 | Reassigned | Return for revision | Reassigned |
+| Reassigned | Excuse | Excused |
+| Excused | Return for revision | Reassigned |
+| Excused | Return | Returned |
+| Excused | Turn in | Submitted |
 
 > [!NOTE]
 > Any action and state transition not listed in the table is not allowed.
@@ -60,6 +68,7 @@ In this case, all the calls are asynchronous, which means the operation starts, 
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` | Async | Poll |
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` | Async | Poll |
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` | Async | Poll |
+| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/excuse` | Async | Poll |
 
 ### Limits
 

@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.country_named_location import CountryNamedLocation
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CountryNamedLocation(
 	odata_type = "#microsoft.graph.countryNamedLocation",
@@ -14,11 +15,11 @@ request_body = CountryNamedLocation(
 	countries_and_regions = [
 		"US",
 		"GB",
-	]
+	],
 	include_unknown_countries_and_regions = True,
 )
 
-result = await graph_client.identity.conditional_access.named_locations.post(body = request_body)
+result = await graph_client.identity.conditional_access.named_locations.post(request_body)
 
 
 ```

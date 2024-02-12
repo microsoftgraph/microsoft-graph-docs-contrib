@@ -1,6 +1,6 @@
 ---
 title: "Add tab to channel"
-description: "Adds (pins) a tab to the specified channel within a team. "
+description: "Add (pin) a tab to the specified channel within a team. "
 author: "nkramer"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -11,12 +11,12 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+Add (pin) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). The app must be [preinstalled in the team](../api/team-list-installedapps.md) and have the [configurableTabs](/microsoftteams/platform/resources/schema/manifest-schema#configurabletabs) property defined in the app manifest.
 
-
-Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
-The corresponding app must already be [installed in the team](../api/team-list-installedapps.md).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -38,7 +38,7 @@ POST /teams/{team-id}/channels/{channel-id}/tabs
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -50,9 +50,9 @@ If successful, this method returns a `201 Created` response code.
 
 ## Example
 
-#### Request
+### Request
 
-The following is an example of the request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -98,15 +98,20 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 [!INCLUDE [sample-code](../includes/snippets/php/channelposttabs-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/channelposttabs-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/channelposttabs-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### Response
+### Response
 
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,7 +131,6 @@ Content-type: application/json
     "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
     "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
   },
-  "sortOrderIndex": "20",
   "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"
 }
 ```

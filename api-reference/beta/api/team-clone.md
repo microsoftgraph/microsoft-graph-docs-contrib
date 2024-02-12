@@ -32,6 +32,8 @@ If the user who opens the tab doesn't have permission to configure apps, they se
 
 Cloning is a long-running operation. After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) returned by the `Location:` header to see if it's `running`, `succeeded`, or `failed`. You should continue to GET until the status isn't `running`. The recommended delay between GETs is 5 seconds.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +55,7 @@ POST /teams/{id}/clone
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body

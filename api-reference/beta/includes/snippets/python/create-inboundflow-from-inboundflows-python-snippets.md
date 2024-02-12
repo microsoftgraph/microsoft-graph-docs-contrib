@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.inbound_file_flow import InboundFileFlow
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = InboundFileFlow(
 	odata_type = "#microsoft.graph.industryData.inboundFileFlow",
@@ -20,7 +21,7 @@ request_body = InboundFileFlow(
 	}
 )
 
-result = await graph_client.external.industry_data.inbound_flows.post(body = request_body)
+result = await graph_client.external.industry_data.inbound_flows.post(request_body)
 
 
 ```

@@ -23,9 +23,11 @@ There are two scenarios where an app can get a message in another user's mail fo
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Mail.ReadBasic, Mail.Read    |
@@ -63,7 +65,7 @@ Use the `$value` parameter to get the MIME content of a message.
 | Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

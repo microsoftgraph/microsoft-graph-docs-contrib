@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.schema_extension import SchemaExtension
+from msgraph.generated.models.extension_schema_property import ExtensionSchemaProperty
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SchemaExtension(
-	id = "graphlearn_courses",
-	description = "Graph Learn training courses extensions",
+	id = "bellowscollege_courses",
+	description = "Bellows College training courses extensions",
 	target_types = [
 		"Group",
-	]
+	],
+	owner = "d1e6f196-fca3-48ad-8cd3-1a98e3bd46d2",
 	properties = [
 		ExtensionSchemaProperty(
 			name = "courseId",
@@ -27,10 +30,10 @@ request_body = SchemaExtension(
 			name = "courseType",
 			type = "String",
 		),
-	]
+	],
 )
 
-result = await graph_client.schema_extensions.post(body = request_body)
+result = await graph_client.schema_extensions.post(request_body)
 
 
 ```

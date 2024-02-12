@@ -18,15 +18,14 @@ applying [state tokens](/graph/delta-query-overview) in one or more of these cal
 you can query for incremental changes in the mail folders. This allows you to maintain and synchronize
 a local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+<!-- { "blockType": "permissions", "name": "mailfolder_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/mailfolder-delta-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

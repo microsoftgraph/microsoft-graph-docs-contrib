@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.admin_todo import AdminTodo
+from msgraph.generated.models.todo_settings import TodoSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AdminTodo(
 	odata_type = "#microsoft.graph.adminTodo",
@@ -18,7 +20,7 @@ request_body = AdminTodo(
 	),
 )
 
-result = await graph_client.admin.todo.patch(body = request_body)
+result = await graph_client.admin.todo.patch(request_body)
 
 
 ```

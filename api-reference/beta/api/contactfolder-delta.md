@@ -20,15 +20,14 @@ applying [state tokens](/graph/delta-query-overview) in one or more of these cal
 you can query for incremental changes in the contact folders. This allows you to maintain and synchronize 
 a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite    |
-|Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite    |
-|Application | Contacts.Read, Contacts.ReadWrite |
+<!-- { "blockType": "permissions", "name": "contactfolder_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/contactfolder-delta-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

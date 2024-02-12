@@ -44,8 +44,8 @@ For those countries, the three or four last digits of the external phone number 
 |tenantCountryCode|String|Country code of the tenant. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
-|userId|String|The unique identifier (GUID) of the user in Azure Active Directory.|
-|userPrincipalName|String|The user principal name (sign-in name) in Azure Active Directory. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
+|userId|String|The unique identifier (GUID) of the user in Microsoft Entra ID.|
+|userPrincipalName|String|The user principal name (sign-in name) in Microsoft Entra ID. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
 
 ## Relationships
 

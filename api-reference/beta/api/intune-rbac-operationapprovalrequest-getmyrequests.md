@@ -1,6 +1,6 @@
 ---
 title: "getMyRequests function"
-description: ""
+description: "Intune Rbac Operationapprovalrequest Getmyrequests Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -38,7 +38,7 @@ GET /deviceManagement/operationApprovalRequests/getMyRequests
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1741
+Content-Length: 1822
 
 {
   "value": [
@@ -109,7 +109,10 @@ Content-Length: 1741
       "status": "needsApproval",
       "requestJustification": "Request Justification value",
       "approvalJustification": "Approval Justification value",
-      "operationApprovalPolicies": "Operation Approval Policies value"
+      "operationApprovalPolicies": "Operation Approval Policies value",
+      "requiredOperationApprovalPolicyTypes": [
+        "deviceWipe"
+      ]
     }
   ]
 }

@@ -21,6 +21,8 @@ An attachment can be one of the following types:
 
 All these types of attachments are derived from the [attachment](../resources/attachment.md) resource.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ### Get the raw contents of a file or item attachment
 You can append the path segment `/$value` to get the raw contents of a file or item attachment.
 
@@ -145,7 +147,7 @@ Use `$expand` to get the properties of an item attachment (contact, event, or me
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -336,7 +338,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAM
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-and-expand-item-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -464,7 +466,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAM
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-and-expand-nested-item-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

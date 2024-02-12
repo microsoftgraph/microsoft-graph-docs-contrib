@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.onlineMeetings.item.attendanceReports.item.meeting_attendance_report_item_request_builder import MeetingAttendanceReportItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = MeetingAttendanceReportRequestBuilder.MeetingAttendanceReportRequestBuilderGetQueryParameters(
+query_params = MeetingAttendanceReportItemRequestBuilder.MeetingAttendanceReportItemRequestBuilderGetQueryParameters(
 		expand = ["attendanceRecords"],
 )
 
-request_configuration = MeetingAttendanceReportRequestBuilder.MeetingAttendanceReportRequestBuilderGetRequestConfiguration(
+request_configuration = MeetingAttendanceReportItemRequestBuilder.MeetingAttendanceReportItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').attendance_reports.by_attendance_report_id('meetingAttendanceReport-id').get(request_configuration = request_configuration)
+result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').attendance_reports.by_meeting_attendance_report_id('meetingAttendanceReport-id').get(request_configuration = request_configuration)
 
 
 ```

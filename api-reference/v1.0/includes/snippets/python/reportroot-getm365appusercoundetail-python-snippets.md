@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.reports.getM365AppUserDetail(period='{period}').get_m365_app_user_detail_with_period_request_builder import GetM365AppUserDetailWithPeriodRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = GetM365AppUserDetailWithPeriodRequestBuilder.GetM365AppUserDetailWithPeriodRequestBuilderGetQueryParameters(
 		format = "text/csv",
@@ -16,7 +17,7 @@ request_configuration = GetM365AppUserDetailWithPeriodRequestBuilder.GetM365AppU
 query_parameters = query_params,
 )
 
-await graph_client.reports.get_m365_app_user_detail(period='{period}'.get(request_configuration = request_configuration)
+await graph_client.reports.get_m365_app_user_detail_with_period("{period}").get(request_configuration = request_configuration)
 
 
 ```

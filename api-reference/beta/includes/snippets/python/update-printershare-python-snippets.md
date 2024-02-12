@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.printer_share import PrinterShare
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PrinterShare(
 	display_name = "ShareName",
@@ -16,7 +17,7 @@ request_body = PrinterShare(
 	}
 )
 
-result = await graph_client.print.shares.by_share_id('printerShare-id').patch(body = request_body)
+result = await graph_client.print.shares.by_printer_share_id('printerShare-id').patch(request_body)
 
 
 ```

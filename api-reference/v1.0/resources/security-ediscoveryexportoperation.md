@@ -18,7 +18,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get caseOperation](../api/security-caseoperation-get.md)|Resource | The **exportFileMetadata** property returned by the method will provide downloadUrl, fileName and size of exported content |
+|[Get caseOperation](../api/security-caseoperation-get.md)|Resource | The **exportFileMetadata** property returned by the method provides downloadUrl, fileName and size of exported content |
 
 ## Properties
 |Property|Type|Description|
@@ -29,8 +29,8 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |createdDateTime|DateTimeOffset| The date and time the export was created.|
 |description|String| The description provided for the export.|
 |exportFileMetaData | [microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md)| Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**.  |
-|exportOptions|microsoft.graph.security.exportOptions| The options provided for the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`,  `tags`.|
-|exportStructure|microsoft.graph.security.exportFileStructure|The options provided that specify the structure of the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
+|exportOptions|microsoft.graph.security.exportOptions| The options provided for the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`,  `tags`.|
+|exportStructure|microsoft.graph.security.exportFileStructure|The options that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
 |id|String| The ID for the operation. Read-only. |
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation.|
@@ -53,17 +53,17 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |:----|-----------|
 |None|Default file structure.|
 |directory|All files in a single folder called Native files.|
-|pst|Mails will be grouped in pst format.|
+|pst|Mails are grouped in pst format.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |reviewSet|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|	Review set from where documents are exported.|
-|reviewSetQuery|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|The review set query which is used to filter the documents for export.|
+|reviewSetQuery|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|The review set query that is used to filter the documents for export.|
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

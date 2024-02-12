@@ -4,9 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unified_role_management_policy_approval_rule import UnifiedRoleManagementPolicyApprovalRule
+from msgraph.generated.models.unified_role_management_policy_rule_target import UnifiedRoleManagementPolicyRuleTarget
+from msgraph.generated.models.unified_role_management_policy_rule_target_operations import UnifiedRoleManagementPolicyRuleTargetOperations
+from msgraph.generated.models.approval_settings import ApprovalSettings
+from msgraph.generated.models.unified_approval_stage import UnifiedApprovalStage
+from msgraph.generated.models.subject_set import SubjectSet
+from msgraph.generated.models.single_user import SingleUser
+from msgraph.generated.models.group_members import GroupMembers
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnifiedRoleManagementPolicyApprovalRule(
 	odata_type = "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
@@ -16,12 +24,12 @@ request_body = UnifiedRoleManagementPolicyApprovalRule(
 		caller = "EndUser",
 		operations = [
 			UnifiedRoleManagementPolicyRuleTargetOperations.All,
-		]
+		],
 		level = "Assignment",
 		inheritable_settings = [
-		]
+		],
 		enforced_settings = [
-		]
+		],
 	),
 	setting = ApprovalSettings(
 		odata_type = "microsoft.graph.approvalSettings",
@@ -44,16 +52,16 @@ request_body = UnifiedRoleManagementPolicyApprovalRule(
 						odata_type = "#microsoft.graph.groupMembers",
 						group_id = "14f2746d-7d6f-4ac6-acd8-8cac318b041b",
 					),
-				]
+				],
 				is_escalation_enabled = False,
 				escalation_approvers = [
-				]
+				],
 			),
-		]
+		],
 	),
 )
 
-result = await graph_client.policies.role_management_policies.by_role_management_policie_id('unifiedRoleManagementPolicy-id').rules.by_rule_id('unifiedRoleManagementPolicyRule-id').patch(body = request_body)
+result = await graph_client.policies.role_management_policies.by_unified_role_management_policy_id('unifiedRoleManagementPolicy-id').rules.by_unified_role_management_policy_rule_id('unifiedRoleManagementPolicyRule-id').patch(request_body)
 
 
 ```

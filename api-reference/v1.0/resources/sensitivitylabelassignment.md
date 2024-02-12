@@ -26,8 +26,8 @@ Provides details about a sensitivity label assigned to a [file](./driveitem.md) 
 |:------------------ |:-----------------------------------------------|
 | standard           | The assignment method for the label is standard.|
 | privileged         | The assignment method for the label is privileged. Indicates that the label is applied manually by a user or by an admin.|
-| auto               | Indicates that the label is applied automatically by the system due to a configured policy, such as default label or auto-classification of sensitive content.|
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+| auto               | Indicates that the label is applied automatically by the system due to a configured policy, such as default label or autoclassification of sensitive content.|
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -35,7 +35,7 @@ Provides details about a sensitivity label assigned to a [file](./driveitem.md) 
 |labels|[extractSensitivityLabelsResult](./extractsensitivitylabelsresult.md)|List of sensitivity labels assigned to a file.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.sensitivityLabelAssignment"

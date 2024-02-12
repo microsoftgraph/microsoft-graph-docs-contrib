@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # List governanceResources
@@ -17,13 +18,15 @@ Namespace: microsoft.graph
 
 Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
-| Azure AD | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | PrivilegedAccess.Read.AzureAD |
+| Microsoft Entra ID | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | PrivilegedAccess.Read.AzureAD |
 | Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | PrivilegedAccess.Read.AzureResources |
 | [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | PrivilegedAccess.Read.AzureADGroup |
 
@@ -41,7 +44,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Authorization  | Bearer {code}|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [governanceResource](../resources/governanceresource.md) objects in the response body.
 ## Examples
@@ -109,7 +112,7 @@ Content-Length: 1289
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceResources",
-	"value":[
+    "value":[
         {
             "id": "fb016e3a-c3ed-4d9d-96b6-a54cd4f0b735",
             "externalId": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/resourceGroups/AnujRG/providers/Microsoft.Storage/storageAccounts/anujstoragefimdev",
@@ -137,7 +140,7 @@ Content-Length: 1289
             "registeredDateTime": "2018-04-05T22:30:37.13Z",
             "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         }
-	]
+    ]
 }
 ```
 
@@ -154,5 +157,3 @@ Content-Length: 1289
   ]
 }
 -->
-
-

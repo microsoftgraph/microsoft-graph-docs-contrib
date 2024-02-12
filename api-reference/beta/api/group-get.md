@@ -15,17 +15,16 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [group](../resources/group.md) object.
 
-This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query. Because the **group** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
+This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that aren't_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and aren't returned in the `$select` query. Because the **group** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                            |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                                         |
-| Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "group_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-get-permissions.md)]
 
 ## HTTP request
 
@@ -37,7 +36,7 @@ GET /groups/{id}
 
 ## Optional query parameters
 
-You can use `$select` to get specific group properties, including those that are not returned by default. Extension properties also support query parameters as follows:
+You can use `$select` to get specific group properties, including properties that aren't returned by default. Extension properties also support query parameters as follows:
 
 | Extension type       | Comments                                                                       |
 |----------------------|--------------------------------------------------------------------------------|
@@ -55,7 +54,7 @@ For more information on OData query options, see [OData Query Parameters](/graph
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -67,7 +66,7 @@ If successful, this method returns a `200 OK` response code and [group](../resou
 
 #### Request
 
-The following is an example of a GET request.
+Here's an example  of a GET request.
 
 # [HTTP](#tab/http)
 
@@ -117,7 +116,7 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 
 #### Response
 
-The following is an example of the response. It includes only the default properties.
+Here's an example  of the response. It includes only the default properties.
 
 > **Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 
@@ -183,11 +182,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Return additional properties by using $select
+### Example 2: Return properties by using $select
 
 #### Request
 
-The following is an example of a GET request.
+Here's an example  of a GET request.
 
 # [HTTP](#tab/http)
 
@@ -237,7 +236,7 @@ GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 
 #### Response
 
-The following is an example of the response which includes the requested non-default properties.
+Here's an example  of the response that includes the requested nondefault properties.
 
 <!-- {
   "blockType": "response",
@@ -264,7 +263,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -278,7 +277,7 @@ GET https://graph.microsoft.com/beta/groups/1cdf9c18-a7dc-46b1-b47f-094d5656376d
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 <!-- {
   "blockType": "response",

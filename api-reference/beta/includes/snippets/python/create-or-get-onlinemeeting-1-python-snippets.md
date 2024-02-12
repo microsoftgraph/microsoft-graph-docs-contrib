@@ -4,9 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.create_or_get_post_request_body import CreateOrGetPostRequestBody
+from msgraph.generated.models.meeting_participants import MeetingParticipants
+from msgraph.generated.models.meeting_participant_info import MeetingParticipantInfo
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.identity import Identity
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CreateOrGetPostRequestBody(
 	start_date_time = "2020-02-06T01:49:21.3524945+00:00",
@@ -24,11 +29,11 @@ request_body = CreateOrGetPostRequestBody(
 				role = OnlineMeetingRole.Presenter,
 				upn = "test1@contoso.com",
 			),
-		]
+		],
 	),
 )
 
-result = await graph_client.me.online_meetings.create_or_get.post(body = request_body)
+result = await graph_client.me.online_meetings.create_or_get.post(request_body)
 
 
 ```

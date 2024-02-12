@@ -1,6 +1,6 @@
 ---
 title: "accessPackageSubject resource type"
-description: "In Azure AD entitlement management, a subject of an access package assignment."
+description: "In Microsoft Entra entitlement management, a subject of an access package assignment."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.  It may represent a requestor from a connected organization who isn't yet in the tenant.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.  It may represent a requestor from a connected organization who isn't yet in the tenant.
 
 ## Methods
 
@@ -53,4 +53,3 @@ Here's a JSON representation of the resource.
   "subjectType": "String"
 }
 ```
-

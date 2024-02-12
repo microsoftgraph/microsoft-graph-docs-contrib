@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.print_connector import PrintConnector
+from msgraph.generated.models.printer_location import PrinterLocation
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PrintConnector(
 	display_name = "ConnectorName",
@@ -20,7 +22,7 @@ request_body = PrintConnector(
 	),
 )
 
-result = await graph_client.print.connectors.by_connector_id('printConnector-id').patch(body = request_body)
+result = await graph_client.print.connectors.by_print_connector_id('printConnector-id').patch(request_body)
 
 
 ```

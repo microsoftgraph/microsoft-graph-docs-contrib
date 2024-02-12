@@ -22,6 +22,8 @@ This method supports federation. For one-on-one chats, at least one chat member 
 >
 > The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,11 +51,11 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

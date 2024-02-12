@@ -4,9 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.content_type import ContentType
+from msgraph.generated.models.document_set import DocumentSet
+from msgraph.generated.models.content_type_info import ContentTypeInfo
+from msgraph.generated.models.document_set_content import DocumentSetContent
+from msgraph.generated.models.column_definition import ColumnDefinition
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ContentType(
 	name = "updatedCt",
@@ -17,7 +22,7 @@ request_body = ContentType(
 				id = "0x0101",
 				name = "Document",
 			),
-		]
+		],
 		default_contents = [
 			DocumentSetContent(
 				file_name = "a.txt",
@@ -31,7 +36,7 @@ request_body = ContentType(
 					id = "0x0101",
 				),
 			),
-		]
+		],
 		shared_columns = [
 			ColumnDefinition(
 				name = "Description",
@@ -41,17 +46,17 @@ request_body = ContentType(
 				name = "Address",
 				id = "fc2e188e-ba91-48c9-9dd3-16431afddd50",
 			),
-		]
+		],
 		welcome_page_columns = [
 			ColumnDefinition(
 				name = "Address",
 				id = "fc2e188e-ba91-48c9-9dd3-16431afddd50",
 			),
-		]
+		],
 	),
 )
 
-result = await graph_client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').patch(body = request_body)
+result = await graph_client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').patch(request_body)
 
 
 ```

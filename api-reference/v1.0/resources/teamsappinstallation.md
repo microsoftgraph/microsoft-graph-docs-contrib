@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team or user's personal scope that the app is added to.
+Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the personal scope of a [user](user.md). Any bots that are part of the app become part of any team or user's personal scope that the app is added to.
 
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
@@ -35,8 +35,8 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the perso
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | A unique ID (not the Teams app ID). |
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|The set of resource-specific permissions consented to while installing or upgrading the teamsApp.|
+| id                  | string   | A unique ID (not the Teams app ID). |
 
 ## Relationships
 
@@ -47,7 +47,7 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the perso
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -57,8 +57,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string",
-  "consentedPermissionSet": "#microsoft.graph.teamsAppPermissionSet"
+  "consentedPermissionSet": "#microsoft.graph.teamsAppPermissionSet",
+  "id": "string"
 }
 ```
 

@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.identity_api_connector import IdentityApiConnector
+from msgraph.generated.models.pkcs12_certificate import Pkcs12Certificate
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IdentityApiConnector(
 	display_name = "Test API",
@@ -18,7 +20,7 @@ request_body = IdentityApiConnector(
 	),
 )
 
-result = await graph_client.identity.api_connectors.post(body = request_body)
+result = await graph_client.identity.api_connectors.post(request_body)
 
 
 ```

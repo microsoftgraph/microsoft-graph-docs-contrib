@@ -4,9 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.win32_lob_app import Win32LobApp
+from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.win32_lob_app_rule import Win32LobAppRule
+from msgraph.generated.models.win32_lob_app_registry_rule import Win32LobAppRegistryRule
+from msgraph.generated.models.win32_lob_app_install_experience import Win32LobAppInstallExperience
+from msgraph.generated.models.win32_lob_app_return_code import Win32LobAppReturnCode
+from msgraph.generated.models.win32_lob_app_msi_information import Win32LobAppMsiInformation
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Win32LobApp(
 	odata_type = "#microsoft.graph.win32LobApp",
@@ -46,7 +53,7 @@ request_body = Win32LobApp(
 			operator = Win32LobAppRuleOperator.Equal,
 			comparison_value = "Comparison Value value",
 		),
-	]
+	],
 	install_experience = Win32LobAppInstallExperience(
 		odata_type = "microsoft.graph.win32LobAppInstallExperience",
 		run_as_account = RunAsAccountType.User,
@@ -58,7 +65,7 @@ request_body = Win32LobApp(
 			return_code = 10,
 			type = Win32LobAppReturnCodeType.Success,
 		),
-	]
+	],
 	msi_information = Win32LobAppMsiInformation(
 		odata_type = "microsoft.graph.win32LobAppMsiInformation",
 		product_code = "Product Code value",
@@ -73,7 +80,7 @@ request_body = Win32LobApp(
 	minimum_supported_windows_release = "Minimum Supported Windows Release value",
 )
 
-result = await graph_client.device_app_management.mobile_apps.post(body = request_body)
+result = await graph_client.device_app_management.mobile_apps.post(request_body)
 
 
 ```

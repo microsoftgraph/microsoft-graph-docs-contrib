@@ -38,7 +38,7 @@ Represents the state of device compliance for each managed device belonging to a
 |osVersion|String|The version of the operating system for the managed device. Optional. Read-only.|
 |ownerType|String|The type of owner for the managed device. Optional. Read-only.|
 |tenantDisplayName|String|The display name for the managed tenant. Optional. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
 
 ## Relationships
 None.

@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.add_post_request_body import AddPostRequestBody
+from msgraph.generated.models.conversation_member import ConversationMember
+from msgraph.generated.models.aad_user_conversation_member import AadUserConversationMember
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AddPostRequestBody(
 	values = [
 		AadUserConversationMember(
 			odata_type = "microsoft.graph.aadUserConversationMember",
 			roles = [
-			]
+			],
 			additional_data = {
 					"user@odata_bind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')",
 			}
@@ -22,15 +25,15 @@ request_body = AddPostRequestBody(
 			odata_type = "microsoft.graph.aadUserConversationMember",
 			roles = [
 				"owner",
-			]
+			],
 			additional_data = {
 					"user@odata_bind" : "https://graph.microsoft.com/v1.0/users('alex@contoso.com')",
 			}
 		),
-	]
+	],
 )
 
-result = await graph_client.teams.by_team_id('team-id').members.add.post(body = request_body)
+result = await graph_client.teams.by_team_id('team-id').members.add.post(request_body)
 
 
 ```

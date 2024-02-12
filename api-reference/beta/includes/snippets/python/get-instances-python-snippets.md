@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.events.item.instances.instances_request_builder import InstancesRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = InstancesRequestBuilder.InstancesRequestBuilderGetQueryParameters(
 		start_date_time = "2019-04-08T09:00:00.0000000",

@@ -3,7 +3,7 @@ title: "privateAccessForwardingRule resource type"
 description: "A private access forwarding rule is a rule within a network configuration that enables the forwarding or routing of network traffic for private access."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -28,13 +28,13 @@ None.
 |destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|maintains the list of potential destinations and destination types that the user could be accessing in the context of a forwarding policy, including IPs and FQDNs/URLs Inherited from [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md).|
 |id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |name|String|Name. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
-|ruleType|microsoft.graph.networkaccess.networkDestinationType|Destination Type. Inherited from [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md).The possible values are: `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`|
+|ruleType|microsoft.graph.networkaccess.networkDestinationType|Destination Type. Inherited from [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md). The possible values are: `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

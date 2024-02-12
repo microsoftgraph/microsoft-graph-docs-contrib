@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.teams_tab import TeamsTab
+from msgraph.generated.models.teams_tab_configuration import TeamsTabConfiguration
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TeamsTab(
 	display_name = "My Contoso Tab",
@@ -21,7 +23,7 @@ request_body = TeamsTab(
 	}
 )
 
-result = await graph_client.chats.by_chat_id('chat-id').tabs.post(body = request_body)
+result = await graph_client.chats.by_chat_id('chat-id').tabs.post(request_body)
 
 
 ```

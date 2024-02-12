@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.detected_app import DetectedApp
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DetectedApp(
 	odata_type = "#microsoft.graph.detectedApp",
@@ -18,7 +19,7 @@ request_body = DetectedApp(
 	platform = DetectedAppPlatformType.Windows,
 )
 
-result = await graph_client.device_management.detected_apps.by_detected_app_id('detectedApp-id').patch(body = request_body)
+result = await graph_client.device_management.detected_apps.by_detected_app_id('detectedApp-id').patch(request_body)
 
 
 ```
