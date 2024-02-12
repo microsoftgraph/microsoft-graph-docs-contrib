@@ -6,13 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SchemaExtension();
-$requestBody->setId('graphlearn_courses');
-$requestBody->setDescription('Graph Learn training courses extensions');
+$requestBody->setId('bellowscollege_courses');
+$requestBody->setDescription('Bellows College training courses extensions');
 $requestBody->setTargetTypes(['Group', 	]);
+$requestBody->setOwner('d1e6f196-fca3-48ad-8cd3-1a98e3bd46d2');
 $propertiesExtensionSchemaProperty1 = new ExtensionSchemaProperty();
 $propertiesExtensionSchemaProperty1->setName('courseId');
 $propertiesExtensionSchemaProperty1->setType('Integer');

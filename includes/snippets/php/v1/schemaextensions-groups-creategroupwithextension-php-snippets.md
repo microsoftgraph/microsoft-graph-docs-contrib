@@ -6,18 +6,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Group();
-$requestBody->setDisplayName('New Managers March 2017');
-$requestBody->setDescription('New Managers training course for March 2017');
+$requestBody->setDisplayName('New Managers March 2024');
+$requestBody->setDescription('New Managers training course for March 2024');
 $requestBody->setGroupTypes(['Unified', 	]);
 $requestBody->setMailEnabled(true);
-$requestBody->setMailNickname('newMan201703');
+$requestBody->setMailNickname('newMan202403');
 $requestBody->setSecurityEnabled(false);
 $additionalData = [
-	'graphlearn_courses' => [
+	'bellowscollege_courses' => [
 		'courseId' => '123',
 		'courseName' => 'New Managers',
 		'courseType' => 'Online',

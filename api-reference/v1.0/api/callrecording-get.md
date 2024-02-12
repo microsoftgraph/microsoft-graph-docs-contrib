@@ -24,13 +24,10 @@ For a recording, this API returns the metadata of the single recording associate
 
 ## Permissions
 
-One of the following permissions is required to call this API. For more information, including how to choose permissions, see [permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                        |
-|:---------------------------------------|:-------------------------------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetingRecording.Read.All                                    |
-| Delegated (personal Microsoft account) | Not supported.                                                     |
-| Application                            | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat |
+<!-- { "blockType": "permissions", "name": "callrecording_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/callrecording-get-permissions.md)]
 
 > **Notes:**
 >
@@ -66,7 +63,7 @@ This method doesn't support the [OData query parameters](/graph/query-parameters
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -119,6 +116,10 @@ GET https://graph.microsoft.com/v1.0/users/b935e675-5e67-48b9-8d45-249d5f88e964/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecording-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -204,6 +205,10 @@ GET  https://graph.microsoft.com/v1.0/users/b935e675-5e67-48b9-8d45-249d5f88e964
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-content-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecording-content-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

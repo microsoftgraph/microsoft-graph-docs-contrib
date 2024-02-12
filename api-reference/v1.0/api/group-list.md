@@ -63,7 +63,7 @@ For more information on OData query options, see [OData query parameters](/graph
 
 | Name             | Description                                                                                                                                                                                                                                                                     |
 | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Authorization    | Bearer {token}. Required.                                                                                                                                                                                                                                                       |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
@@ -209,6 +209,7 @@ Content-type: application/json
       "resourceBehaviorOptions": [],
       "resourceProvisioningOptions": [],
       "securityEnabled": false,
+      "serviceProvisioningErrors": [],
       "theme": null,
       "visibility": null,
       "onPremisesProvisioningErrors": []
@@ -451,7 +452,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-video-count-search-notin-adb2c-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

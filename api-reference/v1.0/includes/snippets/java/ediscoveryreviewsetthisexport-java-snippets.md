@@ -4,25 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String outputName = "Export via API";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String description = "Export for the Contoso investigation";
+com.microsoft.graph.security.cases.ediscoverycases.item.reviewsets.item.microsoftgraphsecurityexport.ExportPostRequestBody exportPostRequestBody = new com.microsoft.graph.security.cases.ediscoverycases.item.reviewsets.item.microsoftgraphsecurityexport.ExportPostRequestBody();
+exportPostRequestBody.setOutputName("Export via API");
+exportPostRequestBody.setDescription("Export for the Contoso investigation");
+exportPostRequestBody.setExportOptions(EnumSet.of(com.microsoft.graph.models.security.ExportOptions.OriginalFiles, com.microsoft.graph.models.security.ExportOptions.Tags));
+exportPostRequestBody.setExportStructure(com.microsoft.graph.models.security.ExportFileStructure.Directory);
+graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").reviewSets().byEdiscoveryReviewSetId("{ediscoveryReviewSet-id}").microsoftGraphSecurityExport().post(exportPostRequestBody);
 
-EnumSet<ExportOptions> exportOptions = EnumSet.of(ExportOptions.ORIGINAL_FILES,ExportOptions.TAGS);
-
-ExportFileStructure exportStructure = ExportFileStructure.DIRECTORY;
-
-graphClient.security().cases().ediscoveryCases("58399dff-cebe-478f-b1af-d3227f1fd645").reviewSets("273f11a1-17aa-419c-981d-ff10d33e420f")
-	.export(EdiscoveryReviewSetExportParameterSet
-		.newBuilder()
-		.withOutputName(outputName)
-		.withDescription(description)
-		.withExportOptions(exportOptions)
-		.withExportStructure(exportStructure)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

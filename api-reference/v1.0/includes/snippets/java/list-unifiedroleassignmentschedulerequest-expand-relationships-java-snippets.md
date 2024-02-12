@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UnifiedRoleAssignmentScheduleRequestCollectionPage roleAssignmentScheduleRequests = graphClient.roleManagement().directory().roleAssignmentScheduleRequests()
-	.buildRequest()
-	.expand("roleDefinitionId")
-	.select("principalId,action,roleDefinitionId")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UnifiedRoleAssignmentScheduleRequestCollectionResponse result = graphClient.roleManagement().directory().roleAssignmentScheduleRequests().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"principalId", "action", "roleDefinitionId"};
+	requestConfiguration.queryParameters.expand = new String []{"roleDefinition", "activatedUsing", "principal", "targetSchedule"};
+});
+
 
 ```

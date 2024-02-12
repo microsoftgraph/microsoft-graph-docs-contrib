@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 LanguageProficiency languageProficiency = new LanguageProficiency();
-languageProficiency.displayName = "Norwegian Bokmål";
-languageProficiency.tag = "nb-NO";
-languageProficiency.spoken = LanguageProficiencyLevel.NATIVE_OR_BILINGUAL;
-languageProficiency.written = LanguageProficiencyLevel.NATIVE_OR_BILINGUAL;
-languageProficiency.reading = LanguageProficiencyLevel.NATIVE_OR_BILINGUAL;
+languageProficiency.setDisplayName("Norwegian Bokmål");
+languageProficiency.setTag("nb-NO");
+languageProficiency.setSpoken(LanguageProficiencyLevel.NativeOrBilingual);
+languageProficiency.setWritten(LanguageProficiencyLevel.NativeOrBilingual);
+languageProficiency.setReading(LanguageProficiencyLevel.NativeOrBilingual);
+LanguageProficiency result = graphClient.me().profile().languages().post(languageProficiency);
 
-graphClient.me().profile().languages()
-	.buildRequest()
-	.post(languageProficiency);
 
 ```
