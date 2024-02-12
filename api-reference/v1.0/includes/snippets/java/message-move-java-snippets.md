@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String destinationId = "deleteditems";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().messages("AAMkADhAAATs28OAAA=")
-	.move(MessageMoveParameterSet
-		.newBuilder()
-		.withDestinationId(destinationId)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.users.item.messages.item.move.MovePostRequestBody movePostRequestBody = new com.microsoft.graph.users.item.messages.item.move.MovePostRequestBody();
+movePostRequestBody.setDestinationId("deleteditems");
+var result = graphClient.me().messages().byMessageId("{message-id}").move().post(movePostRequestBody);
+
 
 ```

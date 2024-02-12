@@ -1,6 +1,6 @@
 ---
 title: "symantecCodeSigningCertificate resource type"
-description: ""
+description: "Intune Apps Symanteccodesigningcertificate Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -15,15 +15,13 @@ Namespace: microsoft.graph
 
 Create a new [community](../resources/community.md) in Viva Engage.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "employeeexperience-post-communities-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "employeeexperience_post_communities" } -->
 [!INCLUDE [permissions-table](../includes/permissions/employeeexperience-post-communities-permissions.md)]
 
 ## HTTP request
@@ -40,7 +38,7 @@ POST /employeeExperience/communities
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -79,7 +77,7 @@ Content-Type: application/json
 
 {
   "displayName": "Financial Advice for Software Engineers",
-  "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.",
+  "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for their clients.",
   "privacy": "public"
 }
 ```
@@ -149,7 +147,7 @@ Content-Type: application/json
 
 {
   "displayName": "Financial Advice for Software Engineers",
-  "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.",
+  "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for their clients.",
   "privacy": "public",
   "owners@odata.bind": [
     "https://graph.microsoft.com/beta/users/26be1845-4119-4801-a799-aea79d09f1a2"

@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.enriched_audit_logs import EnrichedAuditLogs
+from msgraph.generated.models.enriched_audit_logs_settings import EnrichedAuditLogsSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

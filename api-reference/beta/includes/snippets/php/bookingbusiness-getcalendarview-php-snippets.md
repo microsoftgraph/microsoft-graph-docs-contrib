@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new CalendarViewRequestBuilderGetRequestConfiguration();
@@ -16,6 +16,6 @@ $queryParameters->end = "2018-05-10T00:00:00Z";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->calendarView()->get($requestConfiguration)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->calendarView()->get($requestConfiguration)->wait();
 
 ```

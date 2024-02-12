@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.onPremisesPublishingProfiles.item.agentGroups.agent_groups_request_builder import AgentGroupsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

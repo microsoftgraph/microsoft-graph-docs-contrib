@@ -15,6 +15,9 @@ mgc-beta device-management virtual-endpoint provisioning-policies patch --cloud-
   "imageType": "custom",\
   "windowsSettings": {\
     "language": "en-US"\
+  },\
+  "windowsSetting": {\
+      "locale": "en-US"\
   }\
 }\
 '

@@ -7,7 +7,7 @@ ms.reviewer: keylimesoda
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 08/15/2023
+ms.date: 01/03/2024
 #customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources through webhooks, so that I can build apps that process the changes according to business requirements.
 ---
 
@@ -332,9 +332,8 @@ In this article, you learned how to receive change notifications through webhook
 3. As long as the subscription is still valid and changes occur to the subscribed resource, Microsoft Graph will send change notifications to the **notificationUrl** endpoint.
 4. Regularly renew the subscription to maintain its validity and continue receiving updates on the subscribed changes.
 
-## See also
+## Related content
 
-- [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [subscription resource type](/graph/api/resources/subscription)
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
 - [Lifecycle notifications](./change-notifications-lifecycle-events.md)

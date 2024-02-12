@@ -164,7 +164,7 @@ items:
               href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
             - name: App-only authentication
               href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-        - name: Use the CLI (preview)
+        - name: Use the CLI
           items:
             - name: CLI overview
               href: cli/overview.md
@@ -253,10 +253,10 @@ items:
             - name: Picker
               href: toolkit/components/picker.md
             - name: Planner tasks
-              href: toolkit/components/tasks.md
-            - name: Search box (preview)
+              href: toolkit/components/planner.md
+            - name: Search box
               href: toolkit/components/search-box.md
-            - name: Search results (preview)
+            - name: Search results
               href: toolkit/components/search-results.md
             - name: Taxonomy picker
               href: toolkit/components/taxonomy-picker.md
@@ -264,7 +264,7 @@ items:
               href: toolkit/components/teams-channel-picker.md
             - name: Theme toggle
               href: toolkit/components/theme-toggle.md
-            - name: To-do tasks
+            - name: To Do tasks
               href: toolkit/components/todo.md
         - name: Customize components
           items:
@@ -282,7 +282,9 @@ items:
               href: toolkit/customize-components/templates.md
             - name: Disambiguation of components
               href: toolkit/customize-components/disambiguation.md
-        - name: Upgrading to v3
+        - name: Permissions
+          href: toolkit/permissions.md
+        - name: Upgrade to the latest version
           href: toolkit/upgrade.md
   - name: Services and features
     expanded: true
@@ -294,8 +296,6 @@ items:
             displayName: users
           - name: Default user permissions
             href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
-          - name: "Training: Access user data"
-            href: /training/modules/msgraph-access-user-data
       - name: Groups
         items:
           - name: Overview
@@ -307,8 +307,6 @@ items:
             href: group-set-options.md
           - name: Microsoft 365 group settings
             href: group-directory-settings.md
-          - name: "Training: Manage group lifecycle"
-            href: /training/modules/msgraph-access-group-data
       - name: Applications
         items:
           - name: Overview
@@ -341,6 +339,8 @@ items:
                 href: synchronization-configure-with-custom-target-attributes.md
               - name: Synchronize directory extension attributes
                 href: synchronization-configure-with-directory-extension-attributes.md
+              - name: Configure cross-tenant synchronization
+                href: /entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure-graph?tabs=ms-graph&toc=/graph/toc.json
       - name: Accessing data at scale
         items:
           - name: Microsoft Graph Data Connect overview
@@ -790,6 +790,8 @@ items:
             displayName: report, reports
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
+          - name: Partner billing
+            href: partners-billing-concept-overview.md
       - name: Search
         items:
           - name: Overview
@@ -1020,9 +1022,6 @@ items:
               - name: Advanced query capabilities
                 displayName: OData query parameters, OData
                 href: aad-advanced-queries.md
-              - name: "Training: Optimize requests with query parameters"
-                displayName: OData query parameters, OData
-                href: /training/modules/optimize-data-usage
           - name: Batching
             href: json-batching.md
             displayName: Batch request
@@ -1034,9 +1033,6 @@ items:
               - name: Service-specific limits
                 displayName: throttling
                 href: throttling-limits.md
-              - name: "Training: Optimize network traffic"
-                href: /training/modules/optimize-network-traffic
-                displayName: throttling
           - name: Enable metered APIs
             href: metered-api-setup.md
           - name: Work with Graph Explorer
@@ -1183,9 +1179,9 @@ items:
           - name: Microsoft Entra service limits
             displayName: Azure AD service limits and restrictions
             href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
-      - name: API v1.0 reference
-        href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
-        displayName: Microsoft Graph REST API v1.0 reference
-      - name: API beta reference
-        href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
-        displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta
+  - name: API v1.0 reference
+    href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
+    displayName: Microsoft Graph REST API v1.0 reference
+  - name: API beta reference
+    href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
+    displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta
