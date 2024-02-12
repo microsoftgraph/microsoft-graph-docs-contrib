@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.privileged_access_group_eligibility_schedule_request import PrivilegedAccessGroupEligibilityScheduleRequest
+from msgraph.generated.models.request_schedule import RequestSchedule
+from msgraph.generated.models.expiration_pattern import ExpirationPattern
 
 graph_client = GraphServiceClient(credentials, scopes)
 

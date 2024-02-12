@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.cross_tenant_access_policy_configuration_default import CrossTenantAccessPolicyConfigurationDefault
+from msgraph.generated.models.default_invitation_redemption_identity_provider_configuration import DefaultInvitationRedemptionIdentityProviderConfiguration
+from msgraph.generated.models.b2b_identity_providers_type import B2bIdentityProvidersType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

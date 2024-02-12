@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.security.attackSimulation.landingPages.landing_pages_request_builder import LandingPagesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
