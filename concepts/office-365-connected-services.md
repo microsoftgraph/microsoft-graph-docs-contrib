@@ -24,7 +24,7 @@ This article describes how to configure Connected Services in Visual Studio to u
 To use the Office 365 Connected Services with Microsoft Graph, you need to:
 
 - Download [Visual Studio](https://visualstudio.microsoft.com/vs/). If you already have it, update to the latest version.
-- Get a Microsoft 365 subscription. To get a free trial developer subscription, join the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
+- Get a Microsoft 365 subscription. If you don't have a Microsoft 365 subscription, you might qualify for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](https://learn.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
 
 ## Get the starter project
 
