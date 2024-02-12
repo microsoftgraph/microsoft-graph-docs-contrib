@@ -49,6 +49,8 @@ This operation also supports [date range parameters](/graph/query-parameters) 
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
 
+This operation also supports [from parameters](/microsoftteams/export-teams-content#export-api-filters) to query for messages sent by specific users, as shown in the following example.
+
 ## Request headers
 | Header        | Value                     |
 |:--------------|:--------------------------|
