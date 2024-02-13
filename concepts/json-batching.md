@@ -7,13 +7,15 @@ ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.custom: graphiamtop20
-ms.date: 02/13/2024
+ms.date: 02/14/2024
 #Customer intent: As a developer, I want to learn how to use Microsoft Graph to combine multiple requests into a single JSON batch request, so that I can optimize my application.
 ---
 
 # Combine multiple HTTP requests using JSON batching
 
-JSON batching allows you to optimize your application by combining multiple requests (up to 20) into a single JSON object. For example, a client wants to compose a view of the following unrelated data:
+JSON batching allows you to optimize your application by combining multiple requests (up to 20) into a single JSON object. 
+
+Consider a client that wants to compose a view of the following unrelated data:
 
 - An image stored in OneDrive
 - A list of Planner tasks
@@ -27,7 +29,7 @@ Microsoft Graph implements the `$batch` [OData URL path segment](http://docs.oas
 
 ## Example - First JSON batch request
 
-First you construct the JSON batch request for the previous example. In this scenario, the individual requests aren't interdependent and therefore can be placed into the batch request in any order.
+First, you construct the JSON batch request for the example scenario. In this scenario, the individual requests aren't interdependent and therefore can be placed into the batch request in any order.
 
 ```http
 POST https://graph.microsoft.com/v1.0/$batch
@@ -167,7 +169,7 @@ The status code on a batch response is typically `200` or `400`. If the batch re
 
 ## Sequencing requests with the dependsOn property
 
-You can specify individual requests to be executed in a specified order by using the **dependsOn** property. This property is an array of strings that references the **id** of a different individual request. For example, in the following request, the client is specifying that requests should be run in the order request 1 then request 2, then request 4, then request 3.
+You can specify the requests in the batch to be executed in a specified order by using the **dependsOn** property. This property is an array of strings that references the **id** of a different individual request. For example, in the following request, the client is specifying that requests should be run in the order request 1 then request 2, then request 4, then request 3.
 
 ```json
 {
