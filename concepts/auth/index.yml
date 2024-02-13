@@ -60,7 +60,7 @@ landingContent:
           - text: Authorization errors
             url: ../resolve-auth-errors.md
           - text: Service-specific throttling limits
-            url: ../resolve-auth-errors.md
+            url: ../throttling-limits.md
   - title: Auth SDKs - MSAL
     linkLists:
       - linkListType: download
