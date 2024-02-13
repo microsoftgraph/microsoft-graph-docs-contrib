@@ -497,7 +497,7 @@ In step 2, if Adele replied tentative or declined, and did not propose a differe
 - In step 3, Alex would receive an **eventMessageResponse** with the **responseType** property set to `tentativelyAccepted` (or `decline` if Adele declined). Alex would not find a **proposedNewTime** property in this instance of **eventMessageResponse**.
 - In step 4, Alex would not find a **proposedNewTime** property in the associated **event** either.
 
-## See also
+## Related content
 - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
 - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
 - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
