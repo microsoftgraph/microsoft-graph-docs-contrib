@@ -51,7 +51,7 @@ In the request body, supply a JSON object with the following parameters.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|attendees|[attendeeNotificationInfo](../resources/attendeeNotificationInfo.md) collection|Represents the phone number and time zone of an external attendee. Required.|
+|attendees|[attendeeNotificationInfo](../resources/attendeenotificationinfo.md) collection|Represents the phone number and time zone of an external attendee. Required.|
 |messageType|[virtualAppointmentMessageType](../resources/virtualappointmentmessagetype.md) collection|Indicates the type of SMS notification to send. The possible values are: `confirmation`, `reschedule`, and `cancellation`. Required.|
 
 ## Response

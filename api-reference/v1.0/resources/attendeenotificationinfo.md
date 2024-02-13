@@ -1,5 +1,5 @@
 ---
-title: "attendeeotificationInfo resource type"
+title: "attendeeNotificationInfo resource type"
 description: "Represents information about an external attendee."
 author: "benmicrosoft"
 ms.localizationpriority: medium
