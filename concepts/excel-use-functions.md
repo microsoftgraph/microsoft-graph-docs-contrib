@@ -110,7 +110,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-## See also
+## Related content
 
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)

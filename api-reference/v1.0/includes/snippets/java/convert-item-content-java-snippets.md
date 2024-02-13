@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("format", "{format}"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-InputStream stream = graphClient.customRequest("/me/drive/items/{item-id}/content", InputStream.class)
-	.buildRequest( requestOptions )
-	.get();
+graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").content().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.format = "{format}";
+});
+
 
 ```

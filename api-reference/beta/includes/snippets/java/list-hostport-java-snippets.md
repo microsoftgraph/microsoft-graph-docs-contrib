@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-HostPortCollectionWithReferencesPage ports = graphClient.security().threatIntelligence().hosts("8.8.8.8").ports()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.security.HostPortCollectionResponse result = graphClient.security().threatIntelligence().hosts().byHostId("{host-id}").ports().get();
+
 
 ```

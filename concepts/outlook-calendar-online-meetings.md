@@ -425,7 +425,7 @@ PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAGu0AABIGYDaAAA=
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/update-meeting-online-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -535,7 +535,7 @@ Content-type: application/json
 
 
 
-## See also
+## Related content
 - For information on Microsoft Teams interoperability with Microsoft 365, see:
   - [How Exchange and Microsoft Teams interact](/microsoftteams/exchange-teams-interact)
   - [Setting your coexistence and upgrade settings](/microsoftteams/setting-your-coexistence-and-upgrade-settings)

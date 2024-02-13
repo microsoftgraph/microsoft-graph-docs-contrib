@@ -4,28 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CaseSettings caseSettings = new CaseSettings();
-RedundancyDetectionSettings redundancyDetection = new RedundancyDetectionSettings();
-redundancyDetection.isEnabled = false;
-redundancyDetection.similarityThreshold = 70;
-redundancyDetection.minWords = 12;
-redundancyDetection.maxWords = 400000;
-caseSettings.redundancyDetection = redundancyDetection;
-TopicModelingSettings topicModeling = new TopicModelingSettings();
-topicModeling.isEnabled = false;
-topicModeling.ignoreNumbers = false;
-topicModeling.topicCount = 50;
-topicModeling.dynamicallyAdjustTopicCount = false;
-caseSettings.topicModeling = topicModeling;
-OcrSettings ocr = new OcrSettings();
-ocr.isEnabled = true;
-ocr.maxImageSize = 12000;
-caseSettings.ocr = ocr;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.compliance().ediscovery().cases("{caseId}").settings()
-	.buildRequest()
-	.patch(caseSettings);
+com.microsoft.graph.beta.models.ediscovery.CaseSettings caseSettings = new com.microsoft.graph.beta.models.ediscovery.CaseSettings();
+com.microsoft.graph.beta.models.ediscovery.RedundancyDetectionSettings redundancyDetection = new com.microsoft.graph.beta.models.ediscovery.RedundancyDetectionSettings();
+redundancyDetection.setIsEnabled(false);
+redundancyDetection.setSimilarityThreshold(70);
+redundancyDetection.setMinWords(12);
+redundancyDetection.setMaxWords(400000);
+caseSettings.setRedundancyDetection(redundancyDetection);
+com.microsoft.graph.beta.models.ediscovery.TopicModelingSettings topicModeling = new com.microsoft.graph.beta.models.ediscovery.TopicModelingSettings();
+topicModeling.setIsEnabled(false);
+topicModeling.setIgnoreNumbers(false);
+topicModeling.setTopicCount(50);
+topicModeling.setDynamicallyAdjustTopicCount(false);
+caseSettings.setTopicModeling(topicModeling);
+com.microsoft.graph.beta.models.ediscovery.OcrSettings ocr = new com.microsoft.graph.beta.models.ediscovery.OcrSettings();
+ocr.setIsEnabled(true);
+ocr.setMaxImageSize(12000);
+caseSettings.setOcr(ocr);
+com.microsoft.graph.models.ediscovery.CaseSettings result = graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").settings().patch(caseSettings);
+
 
 ```

@@ -4,7 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.chat_message import ChatMessage
+from msgraph.generated.models.chat_message_from_identity_set import ChatMessageFromIdentitySet
+from msgraph.generated.models.identity import Identity
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.chat_message_attachment import ChatMessageAttachment
+from msgraph.generated.models.chat_message_mention import ChatMessageMention
+from msgraph.generated.models.chat_message_mentioned_identity_set import ChatMessageMentionedIdentitySet
+from msgraph.generated.models.chat_message_reaction import ChatMessageReaction
+from msgraph.generated.models.chat_message_history_item import ChatMessageHistoryItem
 
 graph_client = GraphServiceClient(credentials, scopes)
 

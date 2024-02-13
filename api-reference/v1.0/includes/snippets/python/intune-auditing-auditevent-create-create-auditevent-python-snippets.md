@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.audit_event import AuditEvent
+from msgraph.generated.models.audit_actor import AuditActor
+from msgraph.generated.models.audit_resource import AuditResource
+from msgraph.generated.models.audit_property import AuditProperty
 
 graph_client = GraphServiceClient(credentials, scopes)
 

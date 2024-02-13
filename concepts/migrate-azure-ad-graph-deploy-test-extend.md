@@ -40,7 +40,7 @@ This is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-
     - Explore the [Microsoft Graph blog](https://developer.microsoft.com/graph/blogs) for the latest news about Microsoft Graph and some great learning series.
     - The [changelog](/graph/changelog) summarizes service and document updates. Following these updates will help you track new APIs introduced to /beta (preview) and those promoted to v1.0 (GA).  These new APIs can provide new ways for you to add more value and new experiences to your apps.  
 
-## See also
+## Related content
 
 If you run into problems or need help during the migration process, you can:
 
@@ -50,7 +50,7 @@ If you run into problems or need help during the migration process, you can:
   - **Apps that use the REST API**: explore [quick starts and samples](https://developer.microsoft.com/graph/get-started), choose your platform of choice and run through the quick start or search for an appropriate sample
   - **App that uses the .NET client library**: review [console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
-## Next Steps
+See also:
 
 - Use [quick starts and samples](https://developer.microsoft.com/graph/get-started) to come up to speed quickly.
 - Use [client libraries and SDKs](/graph/sdks/sdks-overview) to develop custom applications 

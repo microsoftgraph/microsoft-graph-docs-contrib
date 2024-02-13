@@ -12,9 +12,9 @@ ms.date: 11/01/2022
 
 # Manage access to resources using the entitlement management APIs in Microsoft Graph
 
-Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
+Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Microsoft Entra entitlement management](/entra/id-governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
 
-In this tutorial, you learn how to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
+In this tutorial, you learn how to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.  This tutorial uses the [entitlement management beta APIs](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true); entitlement management also has [v1.0 APIs](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-1.0&preserve-view=true).
 
 > [!NOTE]
 > The response objects shown in this tutorial might be shortened for readability.
@@ -22,9 +22,9 @@ In this tutorial, you learn how to develop code to create a package of resources
 ## Prerequisites
 
 To successfully complete this tutorial, make sure that you have the required prerequisites:
-- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). The following licenses are required in your tenant:
+- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/entra/id-governance/entitlement-management-overview#license-requirements). For this tutorial, one of the following licenses is required in your tenant:
     - Microsoft Entra ID P2
-    - Enterprise Mobility + Security (EMS) E5 license
+    - Microsoft Entra ID Governance
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 - Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All`.
 
@@ -218,7 +218,7 @@ An *access package* is a bundle of resources that a team or project needs and is
 
 ### Get the catalog identifier
 
-To add resources to the catalog, you must first get the identifier of it. If you are using the General catalog, run the following request to get its identifier. If you are using a different calalog, change the filter value in the request to the name of your catalog. Record the value of the **id** property that is returned to use later in this tutorial.
+To add resources to the catalog, you must first get the identifier of it. If you are using the General catalog, run the following request to get its identifier. If you are using a different catalog, change the filter value in the request to the name of your catalog. Record the value of the **id** property that is returned to use later in this tutorial.
 
 #### Request
 
@@ -1481,16 +1481,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4
 No Content - 204
 ```
 
-## See also
+## Related content
 
 In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do:
 
 - [Working with the Microsoft Entra entitlement management API](/graph/api/resources/entitlementmanagement-overview)
-- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog)
-- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest)
-- [accessPackage](/graph/api/resources/accesspackage)
-- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope)
-- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy)
-- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest)
-- [group](/graph/api/resources/group)
-- [user](/graph/api/resources/user)

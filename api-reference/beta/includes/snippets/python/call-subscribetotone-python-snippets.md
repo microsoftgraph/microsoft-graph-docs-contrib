@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.subscribe_to_tone_post_request_body import SubscribeToTonePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

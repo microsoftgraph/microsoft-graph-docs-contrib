@@ -46,7 +46,7 @@ For more information, see [OData query parameters](/graph/query-parameters).
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -74,10 +74,6 @@ The following example specifies the **id** of a **room** to get its properties.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/places/979e9793-3e91-40eb-b18c-0ea937893956
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-room-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-room-javascript-snippets.md)]
@@ -130,10 +126,6 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicrosoft.com
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-roomlist-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-roomlist-javascript-snippets.md)]

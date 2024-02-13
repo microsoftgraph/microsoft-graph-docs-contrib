@@ -20,16 +20,16 @@ The landing page of the Data Connect applications portal provides a quick view o
 
 You find the following types of applications in the portal:
 
-- **Single-tenant apps—Applications that are registered in your tenant, and require access to data. These apps are typically enterprise scenarios.
-- **Multi-tenant applications** — Applications that are hosted in another tenant, and require access to data from your tenant. These apps are typically ISV scenarios. Review these apps carefully. When you authorize multi-tenant apps, data from your tenant can be migrated to the app developer's tenant.
+- **Single-tenant apps** — Applications that are registered in your tenant, and require access to data. These apps are typically enterprise scenarios.
+- **Multitenant applications** — Applications that are hosted in another tenant, and require access to data from your tenant. These apps are typically ISV scenarios. Review these apps carefully. When you authorize multitenant apps, data from your tenant can be migrated to the app developer's tenant.
 
 All single-tenant apps are populated in the table by default. Only approved, denied, or expired multitenant apps are included in the table. Other apps might be shown in the table with the following statuses:
 
-- **Pending authorization**—Apps that haven't been acted upon yet. This status is only possible for single-tenant apps. Apps in this state will always fail at runtime.
-- **Approved** — Apps that an admin has approved to access Microsoft 365 data for your tenant.
-- **Denied**—Apps that an admin has denied accessing Microsoft 365 data for your tenant. Apps in this state will always fail at runtime.
-- **Expired**—Apps that an admin has approved to access Microsoft 365 data for your tenant, but the approval expired. Apps in this state will always fail at runtime.
-- **Update available**—Apps that an admin has previously reviewed and acted upon, but have since been updated. Apps in this state continue working as per previous authorization. When the admin provides a new approval, the new definition of the app overwrites the old one.
+- **Pending authorization** — Apps that haven't been acted upon yet. This status is only possible for single-tenant apps. Apps in this state always fail at runtime.
+- **Approved** — Apps that an admin approved to access Microsoft 365 data for your tenant.
+- **Denied** — Apps that an admin denied accessing Microsoft 365 data for your tenant. Apps in this state always fail at runtime.
+- **Expired** — Apps that an admin approved to access Microsoft 365 data for your tenant, but the approval expired. Apps in this state always fail at runtime.
+- **Update available** — Apps that an admin previously reviewed and acted upon, but have since been updated. Apps in this state continue working as per previous authorization. When the admin provides a new approval, the new definition of the app overwrites the old one.
 
 ### App details view
 
@@ -39,11 +39,11 @@ Select an app from the table to launch the app details view, which provides more
 
 First, the wizard shows overview information about the application:
 
-- **Developer**—The user name of the developer who registered the application.
+- **Developer** — The user name of the developer who registered the application.
 
-- **Data destination**—The sink where the data will be delivered. If approved, this app can move the requested data to any location within the listed sink.
+- **Data destination** — The sink where the data is delivered. If approved, this app can move the requested data to any location within the listed sink.
 
-- **App publisher**—The Microsoft Entra tenant ID where the app is registered. For single-tenant apps, this should be the same Microsoft Entra tenant ID as your tenant.
+- **App publisher** — The Microsoft Entra tenant ID where the app is registered. For single-tenant apps, this value is the same Microsoft Entra tenant ID as your tenant.
 
 ![Screenshot showing the app details view for a teams call records dataset sample in Data Connect portal.](images/authorization-app-details-dataset.png)
 
@@ -70,7 +70,7 @@ If an unexpected error occurs, the error message includes an error code. Make a 
 
 To discover multitenant applications, select **Add new multi-tenant app** above the app summary table. If your tenant is enabled for cross-tenant data migration, you'll see two text boxes. After you enter the application ID and tenant ID, choose **Find**, and the portal will launch the app details view for the app you're searching for.
 
-![Screenshot showing page for adding a multi-tenant app in Data Connect portal.](images/authorization-multitenant-app-search.png)
+![Screenshot showing page for adding a multitenant app in Data Connect portal.](images/authorization-multitenant-app-search.png)
 
 ### Microsoft 365 audit logs
 
@@ -94,10 +94,10 @@ Authorization validations applied during runtime include:
 - The found app authorization is approved.
 - The application's tenant ID for the incoming request matches the found app authorization's app registration tenant ID.
 - The dataset for the incoming request is one of the datasets in the found app authorization.
-- The columns in the incoming request are a subset of those that were authorized for the requested dataset.
+- The columns in the incoming request are a subset of the columns that were authorized for the requested dataset.
 - The destination tenant ID matches the found app authorization's destination tenant ID.
 - The destination location for the incoming request is contained within the destination sink in the found app authorization.
 - The scope for the incoming request aligns with the scope in the found app authorization.
-  - If the app is authorized for all users/groups in the tenant, any scope will pass this validation.
-  - If the app is authorized for a list of groups, any subset of the authorized groups will pass this validation.
+  - If the app is authorized for all users/groups in the tenant, any scope passes this validation.
+  - If the app is authorized for a list of groups, any subset of the authorized groups passes this validation.
   - If the app is authorized for a scope filter URI, the incoming request must precisely match the authorized value.

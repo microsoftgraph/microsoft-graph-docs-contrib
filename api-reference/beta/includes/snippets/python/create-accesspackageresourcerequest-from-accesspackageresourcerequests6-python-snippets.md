@@ -4,7 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_resource_request import AccessPackageResourceRequest
+from msgraph.generated.models.access_package_resource import AccessPackageResource
+from msgraph.generated.models.access_package_resource_attribute import AccessPackageResourceAttribute
+from msgraph.generated.models.access_package_resource_attribute_question import AccessPackageResourceAttributeQuestion
+from msgraph.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
+from msgraph.generated.models.access_package_localized_content import AccessPackageLocalizedContent
+from msgraph.generated.models.access_package_localized_text import AccessPackageLocalizedText
+from msgraph.generated.models.access_package_user_directory_attribute_store import AccessPackageUserDirectoryAttributeStore
 
 graph_client = GraphServiceClient(credentials, scopes)
 

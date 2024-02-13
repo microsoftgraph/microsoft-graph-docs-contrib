@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/services
+GET /solutions/bookingbusinesses/{id}/services
 ```
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -52,7 +52,7 @@ Here's an example of the request.
   "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/services
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/services
 ```
 
 # [C#](#tab/csharp)
@@ -79,10 +79,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/php/get-services-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-services-1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-services-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,7 +100,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/services",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/services",
     "value": [
         {
             "id": "f9b9121f-aed7-4c8c-bb3a-a1796a0b0b2d",

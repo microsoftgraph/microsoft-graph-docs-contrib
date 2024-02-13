@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("select", "c300x400_crop"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-ThumbnailSetCollectionPage thumbnails = graphClient.me().drive().items("{item-id}").thumbnails()
-	.buildRequest( requestOptions )
-	.get();
+ThumbnailSetCollectionResponse result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").thumbnails().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"c300x400_crop"};
+});
+
 
 ```

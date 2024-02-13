@@ -64,7 +64,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json |
 
 ## Request body

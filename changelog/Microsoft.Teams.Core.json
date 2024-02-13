@@ -6700,7 +6700,75 @@
       "Id": "5dedaf94-507f-4a37-8e66-0350ad7eca5f",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-11-29T17:17:00.1619923Z",
+      "CreatedDateTime": "2023-12-20T17:17:00.1619923Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "47dac851-8291-4426-9b81-65fd845b9193",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppId** parameter to the [userTeamwork: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/userteamwork-sendactivitynotification?view=graph-rest-1.0) method.",
+          "Target": "userTeamwork"
+        },
+		{
+          "Id": "47dac851-8291-4426-9b81-65fd845b9193",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppId** parameter to the [chat: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/chat-sendactivitynotification?view=graph-rest-1.0) method.",
+          "Target": "chat"
+        },
+		{
+          "Id": "47dac851-8291-4426-9b81-65fd845b9193",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppId** parameter to the [team: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/team-sendactivitynotification?view=graph-rest-1.0) method.",
+          "Target": "team"
+        }
+      ],
+      "Id": "47dac851-8291-4426-9b81-65fd845b9193",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-29T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+		{
+          "Id": "b3799e5b-038b-4b53-9668-206d1f4bdce6",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppId** parameter to the [userTeamwork: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta) method.",
+          "Target": "userTeamwork"
+        },
+		{
+          "Id": "b3799e5b-038b-4b53-9668-206d1f4bdce6",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppId** parameter to the [chat: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/chat-sendactivitynotification?view=graph-rest-beta) method.",
+          "Target": "chat"
+        },
+		{
+          "Id": "b3799e5b-038b-4b53-9668-206d1f4bdce6",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppId** parameter to the [team: sendActivityNotification](https://learn.microsoft.com/en-us/graph/api/team-sendactivitynotification?view=graph-rest-beta) method.",
+          "Target": "team"
+        }
+      ],
+      "Id": "b3799e5b-038b-4b53-9668-206d1f4bdce6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-29T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }

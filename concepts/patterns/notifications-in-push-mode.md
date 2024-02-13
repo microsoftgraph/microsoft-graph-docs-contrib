@@ -46,9 +46,8 @@ The following considerations support the use of this integration pattern:
 
 - **Solution complexity**: The webhook solution also requires custom code to maintain subscriptions, and encryption keys to process the data. This solution is highly complex because of the number of components involved and the scalability and availability requirements.
 
-## See also
+## Related content
 
-- [Change notifications](./../webhooks.md)
-- [Training: use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
+- [Change notifications](./../change-notifications-overview.md)
 - [Real-time presence with Microsoft 365](/azure/architecture/solution-ideas/articles/presence-microsoft-365-power-platform)
   

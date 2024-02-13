@@ -4,36 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AndroidWorkProfileCompliancePolicy deviceCompliancePolicy = new AndroidWorkProfileCompliancePolicy();
-deviceCompliancePolicy.description = "Description value";
-deviceCompliancePolicy.displayName = "Display Name value";
-deviceCompliancePolicy.version = 7;
-deviceCompliancePolicy.passwordRequired = true;
-deviceCompliancePolicy.passwordMinimumLength = 5;
-deviceCompliancePolicy.passwordRequiredType = AndroidRequiredPasswordType.ALPHABETIC;
-deviceCompliancePolicy.passwordMinutesOfInactivityBeforeLock = 5;
-deviceCompliancePolicy.passwordExpirationDays = 6;
-deviceCompliancePolicy.passwordPreviousPasswordBlockCount = 2;
-deviceCompliancePolicy.securityPreventInstallAppsFromUnknownSources = true;
-deviceCompliancePolicy.securityDisableUsbDebugging = true;
-deviceCompliancePolicy.securityRequireVerifyApps = true;
-deviceCompliancePolicy.deviceThreatProtectionEnabled = true;
-deviceCompliancePolicy.deviceThreatProtectionRequiredSecurityLevel = DeviceThreatProtectionLevel.SECURED;
-deviceCompliancePolicy.securityBlockJailbrokenDevices = true;
-deviceCompliancePolicy.osMinimumVersion = "Os Minimum Version value";
-deviceCompliancePolicy.osMaximumVersion = "Os Maximum Version value";
-deviceCompliancePolicy.minAndroidSecurityPatchLevel = "Min Android Security Patch Level value";
-deviceCompliancePolicy.storageRequireEncryption = true;
-deviceCompliancePolicy.securityRequireSafetyNetAttestationBasicIntegrity = true;
-deviceCompliancePolicy.securityRequireSafetyNetAttestationCertifiedDevice = true;
-deviceCompliancePolicy.securityRequireGooglePlayServices = true;
-deviceCompliancePolicy.securityRequireUpToDateSecurityProviders = true;
-deviceCompliancePolicy.securityRequireCompanyPortalAppIntegrity = true;
+deviceCompliancePolicy.setOdataType("#microsoft.graph.androidWorkProfileCompliancePolicy");
+deviceCompliancePolicy.setDescription("Description value");
+deviceCompliancePolicy.setDisplayName("Display Name value");
+deviceCompliancePolicy.setVersion(7);
+deviceCompliancePolicy.setPasswordRequired(true);
+deviceCompliancePolicy.setPasswordMinimumLength(5);
+deviceCompliancePolicy.setPasswordRequiredType(AndroidRequiredPasswordType.Alphabetic);
+deviceCompliancePolicy.setPasswordMinutesOfInactivityBeforeLock(5);
+deviceCompliancePolicy.setPasswordExpirationDays(6);
+deviceCompliancePolicy.setPasswordPreviousPasswordBlockCount(2);
+deviceCompliancePolicy.setSecurityPreventInstallAppsFromUnknownSources(true);
+deviceCompliancePolicy.setSecurityDisableUsbDebugging(true);
+deviceCompliancePolicy.setSecurityRequireVerifyApps(true);
+deviceCompliancePolicy.setDeviceThreatProtectionEnabled(true);
+deviceCompliancePolicy.setDeviceThreatProtectionRequiredSecurityLevel(DeviceThreatProtectionLevel.Secured);
+deviceCompliancePolicy.setSecurityBlockJailbrokenDevices(true);
+deviceCompliancePolicy.setOsMinimumVersion("Os Minimum Version value");
+deviceCompliancePolicy.setOsMaximumVersion("Os Maximum Version value");
+deviceCompliancePolicy.setMinAndroidSecurityPatchLevel("Min Android Security Patch Level value");
+deviceCompliancePolicy.setStorageRequireEncryption(true);
+deviceCompliancePolicy.setSecurityRequireSafetyNetAttestationBasicIntegrity(true);
+deviceCompliancePolicy.setSecurityRequireSafetyNetAttestationCertifiedDevice(true);
+deviceCompliancePolicy.setSecurityRequireGooglePlayServices(true);
+deviceCompliancePolicy.setSecurityRequireUpToDateSecurityProviders(true);
+deviceCompliancePolicy.setSecurityRequireCompanyPortalAppIntegrity(true);
+DeviceCompliancePolicy result = graphClient.deviceManagement().deviceCompliancePolicies().byDeviceCompliancePolicyId("{deviceCompliancePolicy-id}").patch(deviceCompliancePolicy);
 
-graphClient.deviceManagement().deviceCompliancePolicies("{deviceCompliancePolicyId}")
-	.buildRequest()
-	.patch(deviceCompliancePolicy);
 
 ```
