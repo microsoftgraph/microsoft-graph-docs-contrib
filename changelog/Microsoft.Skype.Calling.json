@@ -3869,6 +3869,14 @@
         {
           "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
           "ApiChange": "Enumeration",
+          "ChangedApiName": "virtualAppointmentSmsType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **virtualAppointmentSmsType** enumeration type.",
+          "Target": "virtualAppointmentSmsType"
+        },
+        {
+          "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+          "ApiChange": "Enumeration",
           "ChangedApiName": "remindBeforeTimeInMinutesType",
           "ChangeType": "Addition",
           "Description": "Added the **remindBeforeTimeInMinutesType** enumeration type.",

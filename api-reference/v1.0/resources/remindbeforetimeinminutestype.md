@@ -4,7 +4,7 @@ description: "Represents information about the type of SMS reminder."
 author: "benmicrosoft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
-doc_type: resourcePageType
+doc_type: enumPageType
 ---
 
 # remindBeforeTimeInMinutesType enum type
