@@ -275,10 +275,8 @@ Content-type: application/json
 
 The following example shows a request.
 
-<!-- {
-  "blockType": "request",
-  "name": "create_teamsapp_4"
-}-->
+<!-- { "blockType": "ignored" } -->
+
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
@@ -290,10 +288,7 @@ Content-type: application/zip
 
 The following example shows the response.
 
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp"
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
