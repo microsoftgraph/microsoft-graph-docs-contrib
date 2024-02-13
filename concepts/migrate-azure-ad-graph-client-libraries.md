@@ -149,7 +149,7 @@ The following steps assume your app is already using ADAL to acquire access toke
 
 7. Build and fix any resource, property, navigation, and service action errors, generally related to name changes.
 
-## See also
+## Related content
 
 The [C# console snippets app](https://github.com/microsoftgraph/console-csharp-snippets-sample) highlights more of the differences between Microsoft Graph client library and Azure AD Graph client library.
 

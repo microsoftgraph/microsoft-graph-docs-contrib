@@ -509,6 +509,6 @@ Another factor related to throttling is request concurrency. We don't recommend 
 
 Concurrent write requests to the same workbook don’t usually run in parallel (although in some cases they do); rather, they are often the cause of throttling, timeout (when requests are queued on servers), merge conflict (when concurrent sessions are involved) and other types of failures. They also complicate error handling; for example, when you receive a failure response, there is no way to confirm the status of other pending requests, which makes it difficult to determine or to recover the state of the workbook.
 
-## See also
+## Related content
 
 * [Use the Excel REST API](/graph/api/resources/excel)
