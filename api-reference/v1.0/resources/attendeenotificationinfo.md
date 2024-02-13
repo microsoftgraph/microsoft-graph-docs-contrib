@@ -29,13 +29,13 @@ The following JSON representation shows the resource type.
   "optionalProperties": [
   ],
    "@odata.type": "#microsoft.graph.attendeeNotificationInfo",
-   }-->
+}-->
    ```json
 {
 "attendeeNotificationInfo": [
-{
+  {
     "@odata.type": "#microsoft.graph.attendeeNotificationInfo",
-}
+  }
 ],
     "phoneNumber": "String",
     "timeZone": "String",
