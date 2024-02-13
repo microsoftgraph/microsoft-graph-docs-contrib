@@ -41,7 +41,6 @@ landingContent:
         links:
           - text: Permissions reference
             url: ../permissions-reference.md
-          - text: Microsoft Entra admin roles
   - title: Manage your app
     linkLists:
       - linkListType: how-to-guide
