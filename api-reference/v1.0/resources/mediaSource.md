@@ -1,5 +1,5 @@
 ---
-author: MarcMroz
+author: ZeljkoTodorovic
 description: "Contains metadata about the source of the media (audio or video) drive item."
 title: mediaSource resource type
 ms.localizationpriority: medium
@@ -10,13 +10,13 @@ doc_type: "resourcePageType"
 
 Contains metadata about the source of the media (audio or video) drive item.
 
-It is available on the media property of the [driveItem][item-resource] resources.
+It is available on the media property of the [driveItem](driveitem.md) resources.
 
 ## Properties
 
 | Property                 | Type                       | Description                                                                                      |
 | :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
-| **contentCategory**      | mediaSourceContentCategory | Enumeration value that indicates the media content category.                                     |
+| contentCategory          | mediaSourceContentCategory | Enumeration value that indicates the media content category.                                     |
 
 ### mediaSourceContentCategory values
 
@@ -34,7 +34,7 @@ It is available on the media property of the [driveItem][item-resource] resource
 | unknownFutureValue  | Marker value for future compatibility.              |
 
 ## JSON representation
-
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -52,8 +52,6 @@ It is available on the media property of the [driveItem][item-resource] resource
 ## See also
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
-
-[item-resource]: ../resources/driveitem.md
 
 <!-- {
   "type": "#page.annotation",

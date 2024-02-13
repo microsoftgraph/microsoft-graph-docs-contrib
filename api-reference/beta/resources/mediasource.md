@@ -10,13 +10,13 @@ doc_type: "resourcePageType"
 
 The **mediaSource** resource contains metadata about the source of media (audio or video) drive item.
 
-It is available on the media property of [driveItem][item-resource] resources.
+It is available on the media property of [driveItem](driveitem.md) resources.
 
 ## Properties
 
 | Property                 | Type                       | Description                                                                                      |
 | :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
-| **contentCategory**      | mediaSourceContentCategory | Enumeration value that indicates the media content category.                                     |
+| contentCategory          | mediaSourceContentCategory | Enumeration value that indicates the media content category.                                     |
 
 ### mediaSourceContentCategory values
 
@@ -34,7 +34,7 @@ It is available on the media property of [driveItem][item-resource] resources.
 | unknownFutureValue  | Marker value for future compatibility.              |
 
 ## JSON representation
-
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -52,8 +52,6 @@ It is available on the media property of [driveItem][item-resource] resources.
 ## See also
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
-
-[item-resource]: ../resources/driveitem.md
 
 <!-- {
   "type": "#page.annotation",
