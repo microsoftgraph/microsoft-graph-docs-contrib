@@ -60,7 +60,7 @@ This method supports optional OData query parameters to help customize the respo
 
 | Name          | Description                                                                                                                                                                    |
 | :------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer &lt;token&gt;                                                                                                                                                           |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json                                                                                                                                                               |
 | Prefer        | return=minimal <br><br>Specifying this header with a request that uses a `@odata.deltaLink` would return only the object properties that have changed since the last round. Optional. |
 

@@ -4,25 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String source = "Contoso.SodCheckProcess";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String type = "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated";
-
+com.microsoft.graph.beta.identitygovernance.entitlementmanagement.accesspackageassignmentrequests.item.resume.ResumePostRequestBody resumePostRequestBody = new com.microsoft.graph.beta.identitygovernance.entitlementmanagement.accesspackageassignmentrequests.item.resume.ResumePostRequestBody();
+resumePostRequestBody.setSource("Contoso.SodCheckProcess");
+resumePostRequestBody.setType("microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated");
 AccessPackageAssignmentRequestCallbackData data = new AccessPackageAssignmentRequestCallbackData();
-data.stage = AccessPackageCustomExtensionStage.ASSIGNMENT_REQUEST_CREATED;
-data.customExtensionStageInstanceId = "957d0c50-466b-4840-bb5b-c92cea7141ff";
-data.customExtensionStageInstanceDetail = "This user is all verified";
+data.setOdataType("microsoft.graph.accessPackageAssignmentRequestCallbackData");
+data.setStage(AccessPackageCustomExtensionStage.AssignmentRequestCreated);
+data.setCustomExtensionStageInstanceId("957d0c50-466b-4840-bb5b-c92cea7141ff");
+data.setCustomExtensionStageInstanceDetail("This user is all verified");
+resumePostRequestBody.setData(data);
+graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentRequests().byAccessPackageAssignmentRequestId("{accessPackageAssignmentRequest-id}").resume().post(resumePostRequestBody);
 
-graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentRequests("0e60f18c-b2a0-4887-9da8-da2e30a39d99")
-	.resume(AccessPackageAssignmentRequestResumeParameterSet
-		.newBuilder()
-		.withSource(source)
-		.withType(type)
-		.withData(data)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

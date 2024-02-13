@@ -31,16 +31,19 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/a
 PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/categoryAxis/title
 PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/categoryAxis/title
 ```
-## Optional request headers
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |text|string|Represents the axis title.|
 |visible|boolean|A boolean that specifies the visibility of an axis title.|

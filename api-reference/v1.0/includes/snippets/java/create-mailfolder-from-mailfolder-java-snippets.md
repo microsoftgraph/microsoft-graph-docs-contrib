@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MailFolder mailFolder = new MailFolder();
-mailFolder.displayName = "displayName-value";
-mailFolder.isHidden = true;
+mailFolder.setDisplayName("displayName-value");
+mailFolder.setIsHidden(true);
+MailFolder result = graphClient.me().mailFolders().byMailFolderId("{mailFolder-id}").childFolders().post(mailFolder);
 
-graphClient.me().mailFolders("{id}").childFolders()
-	.buildRequest()
-	.post(mailFolder);
 
 ```

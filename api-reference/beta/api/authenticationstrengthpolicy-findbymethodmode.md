@@ -52,7 +52,7 @@ The following table shows the parameters that must be used with this function.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/fin
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/authenticationstrengthpolicythisfindbymethodmode-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/authenticationstrengthpolicythisfindbymethodmode-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
 ms.date: 08/14/2023
+#Customer intent: As a developer integrating with Microsoft Graph, I want to learn how to programmatically create and manage applications and service principals in my tenant.
 ---
 
 # Manage a Microsoft Entra application using Microsoft Graph
@@ -271,7 +272,7 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-application-basics-grant-approleassignmentrequired-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -586,7 +587,7 @@ PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46f
 }
 ```
 
-## See also
+## Related content
 
 + [Properties of an enterprise application (service principal)](/azure/active-directory/manage-apps/application-properties)
 + [Add a certificate to an app using Microsoft Graph](/graph/applications-how-to-add-certificate)

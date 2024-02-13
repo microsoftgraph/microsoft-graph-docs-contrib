@@ -62,7 +62,7 @@ This method supports th `$select` and `$expand` OData query parameters to help c
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -89,7 +89,7 @@ The following example shows a request.
   "sampleKeys": ["lAPpYvVpN0KRkAEhdxReELhrmgjL6CxJqkHAeKoLUSA-11"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReELhrmgjL6CxJqkHAeKoLUSA-11
 ```
 
@@ -167,7 +167,7 @@ The following is an example of the request with the `$expand` query parameter.
   "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition
 ```
 

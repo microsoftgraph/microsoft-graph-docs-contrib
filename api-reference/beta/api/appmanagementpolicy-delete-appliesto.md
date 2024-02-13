@@ -43,7 +43,7 @@ DELETE /servicePrincipals/{servicePrincipalObjectId}/appManagementPolicies/{appM
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -151,7 +151,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/f284860e-368c-4a1f-889
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/remove-appliesto-e2-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

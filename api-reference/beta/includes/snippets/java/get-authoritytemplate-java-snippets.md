@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AuthorityTemplate authorityTemplate = graphClient.security().labels().authorities("{authorityTemplateId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.security.AuthorityTemplate result = graphClient.security().labels().authorities().byAuthorityTemplateId("{authorityTemplate-id}").get();
+
 
 ```

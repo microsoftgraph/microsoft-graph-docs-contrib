@@ -32,11 +32,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 DELETE /sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name       | Value | Description
-|:-----------|:------|:--------------------------------------------------------
-| _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| _if-match_ | ``etag`If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
 
 ## Request body
 

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.identity.authenticationEventsFlows.authentication_events_flows_request_builder import AuthenticationEventsFlowsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

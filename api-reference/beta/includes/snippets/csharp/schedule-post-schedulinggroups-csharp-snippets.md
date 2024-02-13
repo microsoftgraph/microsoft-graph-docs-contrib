@@ -13,6 +13,7 @@ var requestBody = new SchedulingGroup
 {
 	DisplayName = "Cashiers",
 	IsActive = true,
+	Code = "CashierCode",
 	UserIds = new List<string>
 	{
 		"c5d0c76b-80c4-481c-be50-923cd8d680a1",

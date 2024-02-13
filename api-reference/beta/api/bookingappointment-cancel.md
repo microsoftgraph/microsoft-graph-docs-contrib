@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/appointments/{id}/cancel
+POST /solutions/bookingBusinesses/{id}/appointments/{id}/cancel
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ Here's an example of the request.
   "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "AAMkADKoAAA="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel
+POST https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel
 Content-type: application/json
 
 {

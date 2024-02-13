@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.case_settings import CaseSettings
+from msgraph.generated.models.redundancy_detection_settings import RedundancyDetectionSettings
+from msgraph.generated.models.topic_modeling_settings import TopicModelingSettings
+from msgraph.generated.models.ocr_settings import OcrSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 
