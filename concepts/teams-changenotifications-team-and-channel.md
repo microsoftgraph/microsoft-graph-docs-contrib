@@ -323,7 +323,7 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-## See also
+## Related content
 
 - [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)

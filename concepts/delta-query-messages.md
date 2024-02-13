@@ -550,7 +550,7 @@ The response contains a `@odata.deltaLink`. This indicates that all changes in t
     ]
 }
 ```
-## See also
+## Related content
 
 - [Microsoft Graph delta query](delta-query-overview.md)
 - [Get incremental changes to events in a calendar view](delta-query-events.md)
