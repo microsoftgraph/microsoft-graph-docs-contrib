@@ -67,9 +67,7 @@ HTTP/1.1 200 OK
       "id": "id",
       "status": "status",
       "platform": "platform",
-      "kind": "formFactor",
-      "model": "model",
-      "manufacturer": "manufacturer",
+      "kind": "formFactor"
     }
   ]
 }
@@ -113,8 +111,6 @@ Content-type: application/json
     {
       "Name": "JimSurface",
       "id": "6841b3db-2b55-467b-ad84-79a41a4ef665",
-      "Manufacturer": "Microsoft Corporation",
-      "Model": "Surface Book",
       "Kind": "Tablet",
       "Status": "Unknown",
       "Platform": "Windows"

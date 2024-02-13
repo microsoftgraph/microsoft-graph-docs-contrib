@@ -166,7 +166,7 @@ build.configureWebpack.mergeConfig({
 ```
 
 
-## See also
+## Related content
 
 * [Build a SharePoint web part with the Microsoft Graph Toolkit](./build-a-sharepoint-web-part.md)
 * [Learn about authentication providers](../providers/providers.md)

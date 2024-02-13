@@ -541,7 +541,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Microsoft Graph delta query](delta-query-overview.md)
 - [Get incremental changes to messages](delta-query-messages.md)
