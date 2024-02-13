@@ -43,7 +43,7 @@ When you sign in to Graph Explorer and run the same query, the response is retur
 
 ## Modify data in Graph Explorer
 
-To try POST, PUT, PATCH, and DELETE requests, sign in to Graph Explorer by using a Microsoft 365 account. This can be an organizational account for testing or demonstration purposes. To get a free instant sandbox preconfigured with sample data packs to test with, join the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
+To try POST, PUT, PATCH, and DELETE requests, sign in to Graph Explorer by using a Microsoft 365 account. This can be an organizational account for testing or demonstration purposes. If you don't have a Microsoft 365 tenant, you might qualify for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
 
 > [!IMPORTANT]
 > If you choose to sign in by using your organizational account, running a non-GET request might affect the data in the tenant.

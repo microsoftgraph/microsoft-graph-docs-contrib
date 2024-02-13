@@ -457,7 +457,7 @@ The following example shows how to use Adaptive Card templating to render search
 </html>
 ```
 
-## See also
+## Related content
 
 - [Create a layout to customize search results](/microsoftsearch/customize-results-layout)
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

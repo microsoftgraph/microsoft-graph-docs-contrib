@@ -207,7 +207,7 @@ The authenticity of notifications can either be validated using **clientState** 
 ### How can I get a list of active subscriptions?
 For details about how to retrieve a list of webhook subscriptions, see [List subscriptions](/graph/api/subscription-list).
 
-## See also
+## Related content
 
 - To learn more about the cloud printing API in Microsoft Graph, see [Universal Print cloud printing API overview](/graph/universal-print-concept-overview).
 - For suggestions or feedback about the cloud printing API in Microsoft Graph, visit the [Universal Print tech community](https://aka.ms/community/UniversalPrint).
