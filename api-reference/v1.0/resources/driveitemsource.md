@@ -16,8 +16,8 @@ It's available on the source property of [driveItem](driveitem.md) resources.
 
 | Property                 | Type                       | Description                                                                                      |
 | :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
-| application          | driveItemSourceApplication | Enumeration value that indicates the source application where the file was created.              |
-| externalId           | string                     | The external identifier for the drive item from the source.                                      |
+| application              | driveItemSourceApplication | Enumeration value that indicates the source application where the file was created.              |
+| externalId               | string                     | The external identifier for the drive item from the source.                                      |
 
 ### driveItemSourceApplication values
 
