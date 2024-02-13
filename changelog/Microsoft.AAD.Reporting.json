@@ -2091,6 +2091,24 @@
     {
       "ChangeList": [
         {
+          "Id": "50d9727a-7a50-4c7f-aa93-6dfd4cafda1b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activeUsersBreakdownMetric",
+          "ChangeType": "Deprecation",
+          "Description": "The Active Users Breakdown Metric [activeUsersBreakdownMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeUsersBreakdownMetric?view=graph-rest-beta) resource is deprecated and will stop returning data on March 9, 2024. Please use the existing Active Users API.",
+          "Target": "activeUsersBreakdownMetric"
+        }
+      ],
+      "Id": "50d9727a-7a50-4c7f-aa93-6dfd4cafda1b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-12T12:01:40.1569988Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1748a700-32f6-42aa-8cfe-f190c0f27b21",
           "ApiChange": "Resource",
           "ChangedApiName": "relyingPartyDetailedSummary,listing",

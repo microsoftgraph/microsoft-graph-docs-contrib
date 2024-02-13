@@ -1,5 +1,5 @@
 ---
-title: "activeUsersBreakdownMetric resource type"
+title: "activeUsersBreakdownMetric resource type (deprecated)"
 description: "Represents breakdown insights of daily and monthly user activity on apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
@@ -7,11 +7,14 @@ ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# activeUsersBreakdownMetric resource type
+# activeUsersBreakdownMetric resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The `activeUsersBreakdown` resource type is deprecated and will stop retuening data on March 9, 2024.
 
 Represents breakdown insights of daily and monthly user activity on apps registered in your tenant that is configured for Microsoft Entra External ID for customers.
 
@@ -20,8 +23,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily activeUsersBreakdown](../api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md)|[activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) collection|Get a list of daily [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
-|[List monthly activeUsersBreakdown](../api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md)|[activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) collection|Get a list of monthly [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List daily activeUsersBreakdown (deprecated)](../api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md)|[activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) collection|Get a list of daily [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List monthly activeUsersBreakdown (deprecated)](../api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md)|[activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) collection|Get a list of monthly [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|
