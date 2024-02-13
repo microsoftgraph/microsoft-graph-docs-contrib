@@ -15,6 +15,8 @@ Get the properties and relationships of an [assignment](../resources/educationas
 
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
+You can use the `Prefer` header in your request to get the `inactive` status in case the assignment is deactivated; otherwise, you will get an `unknownFutureValue` value in the response.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -37,6 +39,8 @@ This method supports the  `$select` OData query parameters to help customize the
 | Header       | Value |
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json. Required. |
+| Prefer        | include-unknown-enum-members. Optional. |
 
 ## Request body
 Don't supply a request body for this method.
@@ -45,17 +49,20 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.
 
 ## Example
-### Request
+
+### Example 1: Get education assignment
+
+#### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys":["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],
+  "sampleKeys":["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","c0f133b9-615c-4119-876c-c1848fd0a99a"],
   "name": "get_educationassignment"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b
+GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/c0f133b9-615c-4119-876c-c1848fd0a99a
 ```
 
 # [C#](#tab/csharp)
@@ -108,30 +115,33 @@ Content-type: application/json
 Content-length: 279
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments/$entity",
-    "classId": "f4a941ff-9da6-4707-ba5b-0eae93cad0b4",
-    "displayName": "07.30 SubmissionsUploadResource Word2",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_v1-inactive-canary/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments/$entity",
+    "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+    "displayName": "Inactive assignment",
     "closeDateTime": null,
-    "dueDateTime": "2021-08-01T06:59:00Z",
+    "dueDateTime": "2024-03-30T18:29:00Z",
     "assignDateTime": null,
-    "assignedDateTime": "2021-07-30T16:01:32.5518042Z",
+    "assignedDateTime": "2024-02-13T14:41:07.9250378Z",
     "allowLateSubmissions": true,
-    "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeU6BLWBcGc_R6UgCKyYyTin/items/016XPCQECCTNQDGB5U4RCZFBXZBV5ZX24X",
-    "createdDateTime": "2021-07-30T16:00:52.1918016Z",
-    "lastModifiedDateTime": "2021-07-30T19:39:09.6384593Z",
+    "resourcesFolderUrl": null,
+    "feedbackResourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ7ONF5UOYTXZVEKCZE43FTQRH2S",
+    "createdDateTime": "2024-02-13T14:40:43.8825959Z",
+    "lastModifiedDateTime": "2024-02-13T15:12:14.6154569Z",
     "allowStudentsToAddResourcesToSubmission": true,
     "status": "assigned",
     "notificationChannelUrl": null,
-    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7b%22subEntityId%22%3a%22%7b%5c%22version%5c%22%3a%5c%221.0%5c%22%2c%5c%22config%5c%22%3a%7b%5c%22classes%5c%22%3a%5b%7b%5c%22id%5c%22%3a%5c%22f4a941ff-9da6-4707-ba5b-0eae93cad0b4%5c%22%2c%5c%22displayName%5c%22%3anull%2c%5c%22assignmentIds%5c%22%3a%5b%5c%223c77de7f-539b-49e1-9c96-1274f2f0ee3b%5c%22%5d%7d%5d%7d%2c%5c%22action%5c%22%3a%5c%22navigate%5c%22%2c%5c%22view%5c%22%3a%5c%22assignment-viewer%5c%22%7d%22%2c%22channelId%22%3anull%7d",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22c0f133b9-615c-4119-876c-c1848fd0a99a%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "none",
     "addedStudentAction": "none",
-    "id": "3c77de7f-539b-49e1-9c96-1274f2f0ee3b",
+    "moduleUrl": null,
+    "id": "c0f133b9-615c-4119-876c-c1848fd0a99a",
     "instructions": {
-        "content": "<div style=\"font-family: inherit; font-size: inherit; color: inherit;\">upload a word document</div>",
-        "contentType": "html"
+        "content": "",
+        "contentType": "text"
     },
     "grading": {
         "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-        "maxPoints": 10
+        "maxPoints": 100
     },
     "assignTo": {
         "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
@@ -140,7 +150,7 @@ Content-length: 279
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -148,7 +158,156 @@ Content-length: 279
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "00000003-0000-0000-c000-000000000000",
+            "displayName": null
+        }
+    }
+}
+```
+
+### Example 2: Get assignment in inactive state with optional Prefer header
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a","2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
+  "name": "get_inactiveAssignment_withheader"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d280896e289a/assignments/2b8090d7-8de9-4fb4-af5d-2e2f68ae098a
+Prefer: include-unknown-enum-members
+```
+#### Response
+The following is an example of the response with status as inactive, when `Prefer: include-unknown-enum-members` is provided in the request header.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments/$entity",
+    "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+    "displayName": "Inactive assignment",
+    "closeDateTime": null,
+    "dueDateTime": "2024-02-14T18:29:00Z",
+    "assignDateTime": null,
+    "assignedDateTime": "2024-02-13T14:41:07.9250378Z",
+    "allowLateSubmissions": true,
+    "resourcesFolderUrl": null,
+    "feedbackResourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ7ONF5UOYTXZVEKCZE43FTQRH2S",
+    "createdDateTime": "2024-02-13T14:40:43.8825959Z",
+    "lastModifiedDateTime": "2024-02-13T14:53:47.3794641Z",
+    "allowStudentsToAddResourcesToSubmission": true,
+    "status": "inactive",
+    "notificationChannelUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22c0f133b9-615c-4119-876c-c1848fd0a99a%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "none",
+    "addedStudentAction": "none",
+    "moduleUrl": null,
+    "id": "c0f133b9-615c-4119-876c-c1848fd0a99a",
+    "instructions": {
+        "content": "",
+        "contentType": "text"
+    },
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 100
+    },
+    "assignTo": {
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
+            "displayName": null
+        }
+    }
+}
+```
+
+## Example 3: Get assignment in inactive state without optional Prefer header
+#### Request
+The following is an example of the request, where the status is `unknownFutureValue`. `Prefer: include-unknown-enum-members` is not provided in the request header.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a","2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
+  "name": "getinactiveAssignment"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d280896e289a/assignments/2b8090d7-8de9-4fb4-af5d-2e2f68ae098a
+```
+#### Response
+The following is an example of the response when `Prefer: include-unknown-enum-members` is not provided in the request header.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('ffac078e-1b63-42d0-bc2a-d280896e289a')/assignments/$entity",
+    "classId": "ffac078e-1b63-42d0-bc2a-d280896e289a",
+    "displayName": "Check-inactive",
+    "closeDateTime": null,
+    "dueDateTime": "2023-03-26T18:29:00Z",
+    "assignDateTime": null,
+    "assignedDateTime": "2023-03-17T19:41:56.3040589Z",
+    "allowLateSubmissions": true,
+    "resourcesFolderUrl": null,
+    "feedbackResourcesFolderUrl": null,
+    "createdDateTime": "2023-03-17T19:40:33.7277546Z",
+    "lastModifiedDateTime": "2023-03-17T21:03:07.4999252Z",
+    "allowStudentsToAddResourcesToSubmission": true,
+    "status": "unknownFutureValue",
+    "notificationChannelUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22ffac078e-1b63-42d0-bc2a-d280896e289a%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%222b8090d7-8de9-4fb4-af5d-2e2f68ae098a%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "none",
+    "addedStudentAction": "none",
+    "id": "2b8090d7-8de9-4fb4-af5d-2e2f68ae098a",
+    "grading": null,
+    "instructions": {
+        "content": "Check-inactive",
+        "contentType": "html"
+    },
+    "assignTo": {
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
             "displayName": null
         }
     }
