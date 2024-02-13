@@ -1,6 +1,6 @@
 ---
 title: "workplaceSensorDeviceTelemetry resource type"
-description: "Sensor device telemetry represents the data collected and reported by a sensor on a device, such as occupancy, people count, inferred occupancy, temperature, and more."
+description: "Represents the data collected and reported by a sensor on a device, such as occupancy, people count, inferred occupancy, temperature, and more."
 author: "ms-amakumar"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -19,18 +19,21 @@ Represents the data collected and reported by a sensor on physical or environmen
 
 |Property|Type|Description|
 |:---|:---|:---|
-|boolValue|Boolean|The sensor’s value as a true or false. Use it for sensors that report binary values, such as occupancy or heartbeat.|
-|deviceId|String|The user-defined unique identifier of the device provided at the time of creation. Don't use the system generated device's identifier.|
-|intValue|Int32|The sensor’s value as an integer. Use it for sensors that report numerical values, such as people count. |
+|boolValue|Boolean|The value of the sensor can be `true` or `false`. Use it for sensors that report binary values, such as occupancy or heartbeat.|
+|deviceId|String|The user-defined unique identifier of the device provided at the time of creation. Don't use the system generated identifier of the device.|
+|intValue|Int32|The value of the sensor as an integer. Use it for sensors that report numerical values, such as people count. |
 |sensorId|String|The user-defined unique identifier of the sensor on the device. Optional. If the device has multiple sensors of the same type, the property must be provided to identify each sensor. If the device has unique sensor types, the property can be omitted. The default value is the sensor type.|
-|sensorType|[workplaceSensorType](../resources/workplacesensor.md#workplacesensortype-values)| The type of sensor. The possible values are: `occupancy`, `peopleCount`, `inferredOccupancy`, `heartbeat`.|
-|timestamp|DateTimeOffset|The date and time when the sensor measured and reported its value. The value must be a valid date and time in ISO 8601 format, such as 2023-09-25T08:11:05Z. |
+|sensorType|[workplaceSensorType](../resources/workplacesensor.md#workplacesensortype-values)| The type of sensor. The possible values are: `occupancy`, `peopleCount`, `inferredOccupancy`, `heartbeat`, `unknownFutureValue`.|
+|timestamp|DateTimeOffset|The date and time when the sensor measured and reported its value. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.workplaceSensorDeviceTelemetry"
@@ -39,12 +42,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.workplaceSensorDeviceTelemetry",
+  "boolValue": "Boolean",
   "deviceId": "String",
+  "intValue": "Int32",
   "sensorId": "String",
   "sensorType": "String",
-  "boolValue": "Boolean",
-  "intValue": "Integer",
   "timestamp": "String (timestamp)"
 }
 ```
-
