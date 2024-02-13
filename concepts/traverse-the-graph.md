@@ -490,7 +490,7 @@ You can see all the functions that are available in the metadata. They appear as
 
 Like the power and ease of SDKs? While you can always use REST APIs to call Microsoft Graph, we also provide SDKs for many popular platforms. To explore the SDKs that are available, see [Code samples and SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks).
 
-## See also
+## Related content
 
 - [Use the Microsoft Graph API](use-the-api.md)
 - [Get auth tokens](./auth/index.yml)

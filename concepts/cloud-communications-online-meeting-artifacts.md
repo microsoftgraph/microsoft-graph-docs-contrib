@@ -41,6 +41,6 @@ Only the _OnlineMeetingArtifact.Read.All_ permissions are required to fetch onli
 
 After that date, the _OnlineMeetingArtifact.Read.All_ permissions will be required to fetch meeting artifacts; requests that don't have those permissions will be rejected.
 
-## See also
+## Related content
 
 - [Teams API overview](teams-concept-overview.md)
