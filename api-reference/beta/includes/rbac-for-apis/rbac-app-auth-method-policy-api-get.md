@@ -4,5 +4,5 @@ ms.topic: include
 ms.author: saumadan
 ---
 
-To configure application authentication method policies, the calling user must be assigned at least the *Global reader* [directory role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+To read the default application authentication method policy, the calling user must be assigned at least the *Global Reader* [directory role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
