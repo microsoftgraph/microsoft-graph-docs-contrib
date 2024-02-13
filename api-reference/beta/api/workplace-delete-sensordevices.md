@@ -41,7 +41,7 @@ DELETE /workplace/sensorDevices/{id}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "delete_workplacesensordevice"
@@ -62,7 +62,7 @@ DELETE https://graph.microsoft.com/beta/workplace/sensorDevices/ade7078f-4bf5-42
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
