@@ -35,7 +35,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
 If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. 
-See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end 
+See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header isn't specified, the start and end 
 times are returned in UTC.
 
 You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to 
@@ -71,7 +71,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
-| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header isn't specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
 Don't supply a request body for this method.
@@ -88,7 +88,7 @@ The following example gets the specified event. It specifies the following:
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
 
-The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body. 
+The request doesn't specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body. 
 
 
 # [HTTP](#tab/http)
@@ -137,7 +137,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ---
 
 #### Response
-Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format. 
+The following example shows the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format. 
 
 <!-- {
   "blockType": "response",
@@ -278,7 +278,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 #### Response
-Here is an example of the response. The **body** property is returned in text format. 
+The following example shows the response. The **body** property is returned in text format. 
 
 <!-- {
   "blockType": "response",
@@ -309,7 +309,7 @@ Preference-Applied: outlook.body-content-type="text"
 ### Example 3: Get an event that specifies more than one location
 #### Request
 
-The following example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
+The following example shows how to get an event that specifies more than one location. The request specifies a `$select` query parameter 
 to return specific properties. 
 
 
@@ -358,9 +358,9 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=?$select=subj
 ---
 
 #### Response
-Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
+The following example shows the response. The **locations** property includes details for the three locations that the event is organized for. 
 
-Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, 
+Because the request doesn't specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, 
 the **start** and **end** properties are displayed in the default UTC time zone, and the body is in the default HTML format.  
 
 <!-- {
@@ -377,8 +377,8 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
-   "iCalUId": "040000008200E00074=",
-   "uid": "040000008200E00074C=",
+  "iCalUId": "040000008200E00074=",
+  "uid": "040000008200E00074C=",
   "subject":"Plan summer company picnic",
   "bodyPreview":"Let's kick-start this event planning!",
   "body":{
@@ -464,7 +464,7 @@ Content-type: application/json
 ### Example 4: Expand a series master event
 #### Request
 
-The following example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties. 
+The following example shows how to expand a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties. 
 
 
 # [HTTP](#tab/http)
