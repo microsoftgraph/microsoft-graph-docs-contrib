@@ -46,6 +46,9 @@ Use the `model` query parameter to specify the [payment model](/graph/teams-lice
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
 ```
+
+This operation also supports [from parameters](/microsoftteams/export-teams-content#export-api-filters) to query for messages sent by specific users.
+
 >**Note:** If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ## Request headers
