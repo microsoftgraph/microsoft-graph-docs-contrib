@@ -35,21 +35,22 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## Optional query parameters
 
-This method supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
-
-```http
-GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
-```
-Use the `model` query parameter to specify the [payment model](/graph/teams-licenses) that applies to your scenario, as shown in the following examples.  
+You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
+as shown in the following examples.
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
 ```
 
-This operation also supports [from parameters](/microsoftteams/export-teams-content#export-api-filters) to query for messages sent by specific users.
+This operation also supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
->**Note:** If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+``` http
+GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+```
+
+This operation also supports [from parameters](/microsoftteams/export-teams-content#export-api-filters) to query for messages sent by specific users.
 
 ## Request headers
 | Header       | Value |
