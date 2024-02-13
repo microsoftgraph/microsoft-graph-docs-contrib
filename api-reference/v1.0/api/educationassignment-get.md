@@ -268,29 +268,34 @@ The following is an example of the response when `Prefer: include-unknown-enum-m
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('ffac078e-1b63-42d0-bc2a-d280896e289a')/assignments/$entity",
-    "classId": "ffac078e-1b63-42d0-bc2a-d280896e289a",
-    "displayName": "Check-inactive",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignments('<guid>')?$select=addedStudentAction,addToCalendarAction",
+    "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+    "displayName": "Inactive assignment",
     "closeDateTime": null,
-    "dueDateTime": "2023-03-26T18:29:00Z",
+    "dueDateTime": "2024-03-30T18:29:00Z",
     "assignDateTime": null,
-    "assignedDateTime": "2023-03-17T19:41:56.3040589Z",
+    "assignedDateTime": "2024-02-13T14:41:07.9250378Z",
     "allowLateSubmissions": true,
     "resourcesFolderUrl": null,
-    "feedbackResourcesFolderUrl": null,
-    "createdDateTime": "2023-03-17T19:40:33.7277546Z",
-    "lastModifiedDateTime": "2023-03-17T21:03:07.4999252Z",
+    "feedbackResourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ7ONF5UOYTXZVEKCZE43FTQRH2S",
+    "createdDateTime": "2024-02-13T14:40:43.8825959Z",
+    "lastModifiedDateTime": "2024-02-13T16:21:25.8167968Z",
     "allowStudentsToAddResourcesToSubmission": true,
     "status": "unknownFutureValue",
     "notificationChannelUrl": null,
-    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22ffac078e-1b63-42d0-bc2a-d280896e289a%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%222b8090d7-8de9-4fb4-af5d-2e2f68ae098a%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22c0f133b9-615c-4119-876c-c1848fd0a99a%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
     "addToCalendarAction": "none",
     "addedStudentAction": "none",
-    "id": "2b8090d7-8de9-4fb4-af5d-2e2f68ae098a",
-    "grading": null,
+    "moduleUrl": null,
+    "id": "c0f133b9-615c-4119-876c-c1848fd0a99a",
     "instructions": {
-        "content": "Check-inactive",
-        "contentType": "html"
+        "content": "",
+        "contentType": "text"
+    },
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 100
     },
     "assignTo": {
         "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
@@ -299,7 +304,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -307,7 +312,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+            "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
             "displayName": null
         }
     }
