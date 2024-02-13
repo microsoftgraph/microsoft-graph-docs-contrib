@@ -26,6 +26,10 @@ Microsoft Graph Toolkit v4 is now available. For details about changes in the la
 
 Added the ability to [get shifts](/graph/api/team-getshifts) and [get time offs](/graph/api/team-gettimesoff) across all teams that a user is a direct member of.
 
+### Identity and access | Directory management
+
+Updated the descriptions of the **model** and **manufacturer** properties in the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to clarify their read-only status, replacing the outdated descriptions related to Project Rome sign-ins.
+
 ## January 2024: New and generally available
 
 ### Device and app management | Cloud PC
@@ -63,7 +67,6 @@ For Azure AD Connect cloud sync scenarios, you can now specify organizational un
 - Use the **errorMessage** property in the [cloudPcPartnerAgentInstallResult](/graph/api/resources/cloudpcpartneragentinstallresult) to access a detailed error message for instances where the installation of a partner agent on a Cloud PC fails.
 - [Get the device recommendation reports for Cloud PCs](/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true), such as the usage category report.
 - [Get the remote action status reports](/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta&preserve-view=true), including data such as the Cloud PC ID, Cloud PC device display name, action taken, and action state.
-
 
 The following properties are deprecated:
 
