@@ -1111,6 +1111,23 @@ items:
             href: extensibility-open-users.md
           - name: Use schema extensions
             href: extensibility-schema-groups.md
+      - name: Microsoft Graph activity logs (preview)
+        href: microsoft-graph-activity-logs-overview.md
+      - name: Configure Connected Services
+        displayName: Configure Connected Services in Visual Studio
+        href: office-365-connected-services.md
+      - name: Best practices
+        href: best-practices-concept.md
+        displayName: Microsoft Graph, Best practices for working with Microsoft Graph
+      - name: Known issues
+        href: https://developer.microsoft.com/graph/known-issues
+        displayName: Microsoft Graph, Known issues with Microsoft Graph
+      - name: Errors
+        href: errors.md
+        displayName: Microsoft Graph error responses and error resource types
+      - name: Microsoft Entra service limits
+        displayName: Azure AD service limits and restrictions
+        href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
       - name: Migrate
         items:
           - name: Azure AD Graph
@@ -1164,28 +1181,6 @@ items:
                 href: migrate-exchange-web-services-api-mapping.md
           - name: Outlook REST APIs
             href: /outlook/rest/compare-graph?context=graph/context
-      - name: Microsoft Graph activity logs (preview)
-        href: microsoft-graph-activity-logs-overview.md
-      - name: Configure Connected Services
-        displayName: Configure Connected Services in Visual Studio
-        href: office-365-connected-services.md
-      - name: Resources
-        expanded: true
-        items:
-          - name: Best practices
-            href: best-practices-concept.md
-            displayName: Microsoft Graph, Best practices for working with Microsoft Graph
-          - name: Known issues
-            href: https://developer.microsoft.com/graph/known-issues
-            displayName: Microsoft Graph, Known issues with Microsoft Graph
-          - name: API changelog
-            href: changelog.md
-          - name: Errors
-            href: errors.md
-            displayName: Microsoft Graph error responses and error resource types
-          - name: Microsoft Entra service limits
-            displayName: Azure AD service limits and restrictions
-            href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
   - name: API v1.0 reference
     href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
     displayName: Microsoft Graph REST API v1.0 reference
