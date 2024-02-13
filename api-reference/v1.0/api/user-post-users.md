@@ -59,8 +59,8 @@ The following table lists the properties that are required when you create a use
 
 Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
->[!NOTE]
->Federated users created using this API will be forced to sign in every 12 hours by default.  For more information on how to change this, see [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+> [!NOTE]
+> Federated users created via this API are forced to sign in every 12 hours by default. For information about how to change this, see [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 ## Response
 
@@ -72,7 +72,7 @@ If successful, this method returns `201 Created` response code and [user](../res
 
 #### Request
 
-Here is an example of the request. 
+The following example shows a request. 
 
 # [HTTP](#tab/http)
 <!-- {
@@ -134,7 +134,9 @@ In the request body, supply a JSON representation of [user](../resources/user.md
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -244,7 +246,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 
