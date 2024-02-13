@@ -5,12 +5,8 @@ summary: Learn how to authenticate and get your app authorized to securely acces
 
 metadata: 
   ms.topic: landing-page
-  ms.date: 12/08/2022
+  ms.date: 02/14/2024
   author: FaithOmbongi
-  services: active-directory
-  ms.service: active-directory
-  ms.workload: identity
-  ms.author: ombongifaith
   ms.reviewer: jawoods  
   ms.custom: graphiamtop20   
 
