@@ -153,6 +153,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees)/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
     "id":"AAMkAGIAAAoZDOFAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "subject":"Orientation ",
     "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
     "body":{
@@ -293,6 +295,8 @@ Preference-Applied: outlook.body-content-type="text"
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview)/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
     "id":"AAMkAGI1AAAoZDOFAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "subject":"Orientation ",
     "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
     "body":{
@@ -373,6 +377,8 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
+   "iCalUId": "040000008200E00074=",
+   "uid": "040000008200E00074C=",
   "subject":"Plan summer company picnic",
   "bodyPreview":"Let's kick-start this event planning!",
   "body":{
@@ -522,6 +528,8 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
+  "iCalUId": "040000008200E00074=",
+  "uid": "040000008200E00074C=",
   "subject": "Daily stand-up",
   "cancelledOccurrences": [
      "OID.AAMkADAGAADDdm4NAAA=.2020-04-30",
