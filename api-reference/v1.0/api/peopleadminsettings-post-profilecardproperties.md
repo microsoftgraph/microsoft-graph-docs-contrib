@@ -17,7 +17,7 @@ For more information about how to add properties to the profile card for an orga
 
 [!INCLUDE [profilecardproperty-add-remove-note](../../../includes/profilecardproperty-add-remove-note.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -40,7 +40,7 @@ POST /admin/people/profileCardProperties
 
 | Name          |Description                  |
 |:--------------|:----------------------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 > **Note:** To avoid encoding issues that malform the payload, use `Content-Type: application/json; charset=utf-8`.

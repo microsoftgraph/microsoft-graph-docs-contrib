@@ -4,28 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UnifiedRoleAssignmentScheduleRequest unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequest();
-unifiedRoleAssignmentScheduleRequest.action = UnifiedRoleScheduleRequestActions.SELF_ACTIVATE;
-unifiedRoleAssignmentScheduleRequest.principalId = "071cc716-8147-4397-a5ba-b2105951cc0b";
-unifiedRoleAssignmentScheduleRequest.roleDefinitionId = "8424c6f0-a189-499e-bbd0-26c1753c96d4";
-unifiedRoleAssignmentScheduleRequest.directoryScopeId = "/";
-unifiedRoleAssignmentScheduleRequest.justification = "I need access to the Attribute Administrator role to manage attributes to be assigned to restricted AUs";
+unifiedRoleAssignmentScheduleRequest.setAction(UnifiedRoleScheduleRequestActions.SelfActivate);
+unifiedRoleAssignmentScheduleRequest.setPrincipalId("071cc716-8147-4397-a5ba-b2105951cc0b");
+unifiedRoleAssignmentScheduleRequest.setRoleDefinitionId("8424c6f0-a189-499e-bbd0-26c1753c96d4");
+unifiedRoleAssignmentScheduleRequest.setDirectoryScopeId("/");
+unifiedRoleAssignmentScheduleRequest.setJustification("I need access to the Attribute Administrator role to manage attributes to be assigned to restricted AUs");
 RequestSchedule scheduleInfo = new RequestSchedule();
-scheduleInfo.startDateTime = OffsetDateTimeSerializer.deserialize("2022-04-14T00:00:00Z");
+OffsetDateTime startDateTime = OffsetDateTime.parse("2022-04-14T00:00:00.000Z");
+scheduleInfo.setStartDateTime(startDateTime);
 ExpirationPattern expiration = new ExpirationPattern();
-expiration.type = ExpirationPatternType.AFTER_DURATION;
-expiration.duration = DatatypeFactory.newInstance().newDuration("PT5H");
-scheduleInfo.expiration = expiration;
-unifiedRoleAssignmentScheduleRequest.scheduleInfo = scheduleInfo;
+expiration.setType(ExpirationPatternType.AfterDuration);
+PeriodAndDuration duration = PeriodAndDuration.ofDuration(Duration.parse("PT5H"));
+expiration.setDuration(duration);
+scheduleInfo.setExpiration(expiration);
+unifiedRoleAssignmentScheduleRequest.setScheduleInfo(scheduleInfo);
 TicketInfo ticketInfo = new TicketInfo();
-ticketInfo.ticketNumber = "CONTOSO:Normal-67890";
-ticketInfo.ticketSystem = "MS Project";
-unifiedRoleAssignmentScheduleRequest.ticketInfo = ticketInfo;
+ticketInfo.setTicketNumber("CONTOSO:Normal-67890");
+ticketInfo.setTicketSystem("MS Project");
+unifiedRoleAssignmentScheduleRequest.setTicketInfo(ticketInfo);
+UnifiedRoleAssignmentScheduleRequest result = graphClient.roleManagement().directory().roleAssignmentScheduleRequests().post(unifiedRoleAssignmentScheduleRequest);
 
-graphClient.roleManagement().directory().roleAssignmentScheduleRequests()
-	.buildRequest()
-	.post(unifiedRoleAssignmentScheduleRequest);
 
 ```

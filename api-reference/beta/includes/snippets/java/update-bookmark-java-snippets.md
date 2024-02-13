@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Bookmark bookmark = new Bookmark();
-bookmark.description = "Book a fancy vacation in Tuscany or browse museums in Florence.";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.search().bookmarks("{bookmarksId}")
-	.buildRequest()
-	.patch(bookmark);
+com.microsoft.graph.beta.models.search.Bookmark bookmark = new com.microsoft.graph.beta.models.search.Bookmark();
+bookmark.setDescription("Book a fancy vacation in Tuscany or browse museums in Florence.");
+com.microsoft.graph.models.search.Bookmark result = graphClient.search().bookmarks().byBookmarkId("{bookmark-id}").patch(bookmark);
+
 
 ```

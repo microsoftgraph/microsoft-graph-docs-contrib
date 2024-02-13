@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Program program = new Program();
-program.displayName = "testprogram3";
-program.description = "test description";
+program.setDisplayName("testprogram3");
+program.setDescription("test description");
+Program result = graphClient.programs().post(program);
 
-graphClient.programs()
-	.buildRequest()
-	.post(program);
 
 ```

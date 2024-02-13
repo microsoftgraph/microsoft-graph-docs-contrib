@@ -30,7 +30,7 @@ tiIndicator1.SetId(&id)
 additionalInformation := "test again"
 tiIndicator1.SetAdditionalInformation(&additionalInformation) 
 
-value := []graphmodels.tiIndicatorable {
+value := []graphmodels.TiIndicatorable {
 	tiIndicator,
 	tiIndicator1,
 }

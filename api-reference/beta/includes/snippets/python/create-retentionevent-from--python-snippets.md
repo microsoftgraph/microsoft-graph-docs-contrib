@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.retention_event import RetentionEvent
+from msgraph.generated.models.event_query import EventQuery
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.event_propagation_result import EventPropagationResult
+from msgraph.generated.models.retention_event_status import RetentionEventStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 

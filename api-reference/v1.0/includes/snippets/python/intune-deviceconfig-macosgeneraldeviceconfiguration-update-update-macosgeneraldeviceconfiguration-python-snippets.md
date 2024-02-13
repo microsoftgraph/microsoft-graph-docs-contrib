@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.mac_o_s_general_device_configuration import MacOSGeneralDeviceConfiguration
+from msgraph.generated.models.app_list_item import AppListItem
 
 graph_client = GraphServiceClient(credentials, scopes)
 

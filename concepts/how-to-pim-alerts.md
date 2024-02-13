@@ -281,7 +281,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/how-to-pim-alerts-get-alert-expand-relationships-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -815,6 +815,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/al
 HTTP/1.1 200 OK
 ```
 
-## See also
+## Related content
 
 + [Tutorial: Assign Microsoft Entra roles through PIM](tutorial-assign-azureadroles.md).

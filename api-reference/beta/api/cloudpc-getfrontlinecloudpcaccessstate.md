@@ -32,14 +32,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To get the frontline Cloud PC access state of the signed-in user using delegated permission:
+
 ``` http
 GET /me/cloudPCs/{cloudPCId}/getFrontlineCloudPcAccessState
+```
+
+To get the frontline Cloud PC access state of a signed-in administrator using delegated permission or application permission:
+
+``` http
+GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getFrontlineCloudPcAccessState
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -52,7 +61,79 @@ If the Cloud PC was provisioned as a dedicated device, this method returns a `40
 
 ## Examples
 
-### Request
+### Example 1: Get the frontline Cloud PC access state for the signed-in user
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "user_cloudpc.getFrontlineCloudPcAccessState"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/me/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/getFrontlineCloudPcAccessState
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-cloudpcgetfrontlinecloudpcaccessstate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-cloudpcgetfrontlinecloudpcaccessstate-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-cloudpcgetfrontlinecloudpcaccessstate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-cloudpcgetfrontlinecloudpcaccessstate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-cloudpcgetfrontlinecloudpcaccessstate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-cloudpcgetfrontlinecloudpcaccessstate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-cloudpcgetfrontlinecloudpcaccessstate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-cloudpcgetfrontlinecloudpcaccessstate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "string"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Edm.String",
+    "value": "noLicensesAvailable"
+}
+```
+
+### Example 2: Get the frontline Cloud PC access state for the administrator
+
+#### Request
 
 The following example shows a request.
 
@@ -63,7 +144,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/getFrontlineCloudPcAccessState
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/getFrontlineCloudPcAccessState
 ```
 
 # [C#](#tab/csharp)
@@ -100,7 +181,7 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d332
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 

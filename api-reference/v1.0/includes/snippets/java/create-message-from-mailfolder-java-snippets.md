@@ -4,21 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Message message = new Message();
-message.receivedDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
-message.sentDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
-message.hasAttachments = true;
-message.subject = "subject-value";
+OffsetDateTime receivedDateTime = OffsetDateTime.parse("datetime-value");
+message.setReceivedDateTime(receivedDateTime);
+OffsetDateTime sentDateTime = OffsetDateTime.parse("datetime-value");
+message.setSentDateTime(sentDateTime);
+message.setHasAttachments(true);
+message.setSubject("subject-value");
 ItemBody body = new ItemBody();
-body.contentType = BodyType.TEXT;
-body.content = "content-value";
-message.body = body;
-message.bodyPreview = "bodyPreview-value";
+body.setContentType(BodyType.Text);
+body.setContent("content-value");
+message.setBody(body);
+message.setBodyPreview("bodyPreview-value");
+Message result = graphClient.me().mailFolders().byMailFolderId("{mailFolder-id}").messages().post(message);
 
-graphClient.me().mailFolders("{id}").messages()
-	.buildRequest()
-	.post(message);
 
 ```
