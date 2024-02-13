@@ -27,7 +27,7 @@ Applications can retrieve a [call record](/graph/api/resources/callrecords-callr
 
 Organizations that use Microsoft Teams to connect to the public switched telephone network (PSTN) usually want to track this usage to understand the associated costs. The [getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) and [getDirectRoutingCalls](/graph/api/callrecords-callrecord-getdirectroutingcalls) functions return a projection of [call record](/graph/api/resources/callrecords-callrecord) data in a tabular format.
 
-## See also
+## Related content
 
 - [Call records permissions](./permissions-reference.md)
 - [Teams API overview](teams-concept-overview.md)
