@@ -75,7 +75,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 | Content-Type  | application/json. Required.  |
 
 ## Request body
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+In the request body, supply a JSON representation of the [event](../resources/event.md) object.
 
 Since the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the event while creating it.
 
@@ -168,7 +168,7 @@ Content-type: application/json
 #### Response
 
 The following example shows the response that demonstrates how the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
-In the request body, supply a JSON representation of the [event](../resources/event.md) object.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -274,8 +274,6 @@ Content-type: application/json
 
 #### Request
 The next example request specifies three locations where the organizer and attendees can attend the meeting from.
-
-In the request body, supply a JSON representation of the [event](../resources/event.md) object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -523,8 +521,6 @@ Content-type: application/json
 #### Request
 The third example shows how to create a recurring event that occurs once a week. The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.
 
-In the request body, supply a JSON representation of the [event](../resources/event.md) object.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -736,8 +732,6 @@ Content-type: application/json
 #### Request
 The fourth example shows how to create a daily recurring event. The event occurs from 12:00pm to 2:00pm, every day starting February 25, 2020, for two occurrences.
 
-In the request body, supply a JSON representation of the [event](../resources/event.md) object.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -944,8 +938,6 @@ Content-type: application/json
 #### Request
 The following example shows a request that creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
 times in the response.
-
-In the request body, supply a JSON representation of the [event](../resources/event.md) object.
 
 # [HTTP](#tab/http)
 <!-- {
