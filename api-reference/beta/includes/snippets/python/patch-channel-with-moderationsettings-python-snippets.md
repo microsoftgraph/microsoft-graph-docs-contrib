@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.channel import Channel
+from msgraph.generated.models.channel_moderation_settings import ChannelModerationSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

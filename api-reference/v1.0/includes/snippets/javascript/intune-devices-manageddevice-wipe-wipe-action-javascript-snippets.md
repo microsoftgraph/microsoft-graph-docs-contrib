@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const wipe = Content-type: application/json
-Content-length: 141
-
-{
+const wipe = {
   keepEnrollmentData: true,
   keepUserData: true,
   macOsUnlockCode: 'Mac Os Unlock Code value',

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-PermissionCollectionPage permissions = graphClient.sites("f2d90359-865b-4b6c-8848-d2722dd630e5").permissions()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+PermissionCollectionResponse result = graphClient.sites().bySiteId("{site-id}").permissions().get();
+
 
 ```

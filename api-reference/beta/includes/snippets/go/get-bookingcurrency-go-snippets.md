@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-bookingCurrencies, err := graphClient.BookingCurrencies().ByBookingCurrencyId("bookingCurrency-id").Get(context.Background(), nil)
+bookingCurrencies, err := graphClient.Solutions().BookingCurrencies().ByBookingCurrencyId("bookingCurrency-id").Get(context.Background(), nil)
 
 
 ```

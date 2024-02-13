@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Workflow workflow = new Workflow();
-workflow.description = "Configure new hire tasks for onboarding employees on their first day";
-workflow.displayName = "Australia Onboard new hire employee";
-workflow.isEnabled = true;
-workflow.isSchedulingEnabled = false;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.identityGovernance().lifecycleWorkflows().workflows("156ce798-1eb6-4e0a-8515-e79f54d04390")
-	.buildRequest()
-	.patch(workflow);
+com.microsoft.graph.models.identitygovernance.Workflow workflow = new com.microsoft.graph.models.identitygovernance.Workflow();
+workflow.setDescription("Configure new hire tasks for onboarding employees on their first day");
+workflow.setDisplayName("Australia Onboard new hire employee");
+workflow.setIsEnabled(true);
+workflow.setIsSchedulingEnabled(false);
+com.microsoft.graph.models.identitygovernance.Workflow result = graphClient.identityGovernance().lifecycleWorkflows().workflows().byWorkflowId("{workflow-id}").patch(workflow);
+
 
 ```

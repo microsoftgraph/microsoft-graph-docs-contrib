@@ -22,7 +22,7 @@ The following RBAC providers are currently supported:
 
 In contrast, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) does not support update.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

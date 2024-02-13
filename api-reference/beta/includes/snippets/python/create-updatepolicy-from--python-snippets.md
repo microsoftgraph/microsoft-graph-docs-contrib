@@ -4,7 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.update_policy import UpdatePolicy
+from msgraph.generated.models.deployment_audience import DeploymentAudience
+from msgraph.generated.models.compliance_change import ComplianceChange
+from msgraph.generated.models.content_approval import ContentApproval
+from msgraph.generated.models.compliance_change_rule import ComplianceChangeRule
+from msgraph.generated.models.content_approval_rule import ContentApprovalRule
+from msgraph.generated.models.driver_update_filter import DriverUpdateFilter
+from msgraph.generated.models.deployment_settings import DeploymentSettings
+from msgraph.generated.models.schedule_settings import ScheduleSettings
+from msgraph.generated.models.rate_driven_rollout_settings import RateDrivenRolloutSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

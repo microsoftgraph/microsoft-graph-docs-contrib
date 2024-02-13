@@ -169,6 +169,6 @@ The following table shows the names of the datasets and the columns for which th
 | **BasicDataSet_v0.Contact_v0**<br>**BasicDataSet_v0.Contact_v1**   | EmailAddresses                                          |
 | **BasicDataSet_v0.CalendarView_v0**                                | Organizer, Attendees                                    |
 
-## See also
+## Related content
 
 - [Data Connect frequently asked questions](data-connect-faq.md)

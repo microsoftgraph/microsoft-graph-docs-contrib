@@ -4,18 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MacOSCustomConfiguration deviceConfiguration = new MacOSCustomConfiguration();
-deviceConfiguration.description = "Description value";
-deviceConfiguration.displayName = "Display Name value";
-deviceConfiguration.version = 7;
-deviceConfiguration.payloadName = "Payload Name value";
-deviceConfiguration.payloadFileName = "Payload File Name value";
-deviceConfiguration.payload = Base64.getDecoder().decode("cGF5bG9hZA==");
+deviceConfiguration.setOdataType("#microsoft.graph.macOSCustomConfiguration");
+deviceConfiguration.setDescription("Description value");
+deviceConfiguration.setDisplayName("Display Name value");
+deviceConfiguration.setVersion(7);
+deviceConfiguration.setPayloadName("Payload Name value");
+deviceConfiguration.setPayloadFileName("Payload File Name value");
+byte[] payload = Base64.getDecoder().decode("cGF5bG9hZA==");
+deviceConfiguration.setPayload(payload);
+DeviceConfiguration result = graphClient.deviceManagement().deviceConfigurations().post(deviceConfiguration);
 
-graphClient.deviceManagement().deviceConfigurations()
-	.buildRequest()
-	.post(deviceConfiguration);
 
 ```

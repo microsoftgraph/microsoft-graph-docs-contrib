@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-PassiveDnsRecord passiveDnsRecord = graphClient.security().threatIntelligence().passiveDnsRecords("Y29udG9zby5jb20kJDIwLjEwMy44NS4zMyQkZmFsc2U=")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.security.PassiveDnsRecord result = graphClient.security().threatIntelligence().passiveDnsRecords().byPassiveDnsRecordId("{passiveDnsRecord-id}").get();
+
 
 ```
