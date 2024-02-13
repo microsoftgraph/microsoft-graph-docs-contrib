@@ -47,5 +47,4 @@ The following considerations support the use of this integration pattern:
 ## Related content
 
 - [Best practices in cloud applications](/azure/architecture/best-practices/index-best-practices)
-- [Microsoft Graph fundamentals](training/paths/m365-msgraph-fundamentals/)
 
