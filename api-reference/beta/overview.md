@@ -28,12 +28,13 @@ https://graph.microsoft.com/beta/{resource}?[query_parameters]
 For details, see [Use the Microsoft Graph API](/graph/use-the-api).
 
 ## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) in the beta endpoint.
+Find out [what's new](/graph/whats-new-overview) in the beta endpoint.
 
-Explore the [changelog](https://developer.microsoft.com/en-us/graph/changelog) for more details about changes to Microsoft Graph APIs.
+Explore the [API changelog](https://developer.microsoft.com/en-us/graph/changelog) for more details about changes to Microsoft Graph APIs.
 
-## See also
+## Related content
 
 - [Overview of Microsoft Graph](/graph/overview)
 - [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 - [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start)
+- [Use Microsoft Graph SDKs](/graph/sdks/sdks-overview)
