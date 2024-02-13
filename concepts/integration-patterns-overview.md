@@ -33,7 +33,7 @@ Based on many known scenarios in the Microsoft Graph ecosystem, the following ar
 
 Use the following decision tree to choose an integration option based on your architecture requirements.
 
-![decisionTree](./images/decisiontree.png)
+![A diagram that lists business scenarios and the associated integration pattern options](./images/decisiontree.png)
 
 - Application integration requirements - Use Microsoft Graph APIs.
 - Data integration scenarios:
@@ -57,6 +57,6 @@ To explore each of the integration options in more detail, see the following top
 
 ## Related content
 
-- [Azure and Microsoft 365 scenarios](./azure/architecture/solutions/microsoft-365-scenarios)
-- [Cloud design patterns](./azure/architecture/patterns/)
+- [Azure and Microsoft 365 scenarios](/azure/architecture/solutions/microsoft-365-scenarios)
+- [Cloud design patterns](/azure/architecture/patterns/)
   

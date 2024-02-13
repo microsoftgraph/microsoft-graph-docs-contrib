@@ -50,7 +50,7 @@ If you run into problems or need help during the migration process, you can:
   - **Apps that use the REST API**: explore [quick starts and samples](https://developer.microsoft.com/graph/get-started), choose your platform of choice and run through the quick start or search for an appropriate sample
   - **App that uses the .NET client library**: review [console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
-## Related content
+See also:
 
 - Use [quick starts and samples](https://developer.microsoft.com/graph/get-started) to come up to speed quickly.
 - Use [client libraries and SDKs](/graph/sdks/sdks-overview) to develop custom applications 

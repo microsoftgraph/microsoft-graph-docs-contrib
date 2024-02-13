@@ -4,7 +4,8 @@ description: "Documentation for the Microsoft Graph REST API beta endpoint, whic
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: "non-product-specific"
-author: "angelgolfer-ms"
+author: "lauragra"
+ms.topic: overview
 ---
 
 # Microsoft Graph REST API beta endpoint reference

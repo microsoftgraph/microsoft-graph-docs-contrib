@@ -48,6 +48,6 @@ The following considerations support the use of this integration pattern:
 
 ## Related content
 
-- [Overview of Microsoft Graph Data Connect](./../data-connect-concept-overview.md)
-- [Training: Build your first Microsoft Graph Data Connect application](/training/modules/data-connect-quickstart)
+- [Overview of Microsoft Graph Data Connect](/graph/data-connect-concept-overview)
+- [Training: Build your first Microsoft Graph Data Connect application](/graph/data-connect-quickstart)
 

@@ -43,5 +43,5 @@ The following considerations support the use of this integration pattern:
 
 ## Related content
 
-- [Microsoft Graph connectors overview](./../connecting-external-content-connectors-overview.md)
-- [Training: Build your first Microsoft Graph Data Connect application](/training/modules/data-connect-quickstart)
+- [Microsoft Graph connectors overview](/graph/connecting-external-content-connectors-overview)
+- [Training: Build your first Microsoft Graph Data Connect application](/graph/data-connect-quickstart)
