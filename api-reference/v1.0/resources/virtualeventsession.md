@@ -24,6 +24,8 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 ## Properties
 
+| Property              | Type                                          | Description    |
+| :-------------------- | :-------------------------------------------- | :------------------------------------ |
 | allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
