@@ -189,6 +189,6 @@ Be aware of the following limits and error condition:
 - If **getSchedule** cannot identify a specified user or resource, it returns a single schedule item and indicates the error. 
 
 
-## See also
+## Related content
 - [Permissions reference](permissions-reference.md)
 - [Find possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
