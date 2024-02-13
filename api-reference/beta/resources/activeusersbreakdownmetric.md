@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The `activeUsersBreakdown` resource type is deprecated and will stop retuening data on March 9, 2024.
+> The `activeUsersBreakdown` resource type is deprecated and will stop returning data on March 9, 2024.
 
 Represents breakdown insights of daily and monthly user activity on apps registered in your tenant that is configured for Microsoft Entra External ID for customers.
 

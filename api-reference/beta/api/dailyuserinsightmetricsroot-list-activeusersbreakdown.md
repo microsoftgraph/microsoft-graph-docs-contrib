@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The `activeUsersBreakdown` API is deprecated and will stop retuening data on March 9, 2024.
+> The `activeUsersBreakdown` API is deprecated and will stop returning data on March 9, 2024.
 
 Get a list of daily [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.
 
