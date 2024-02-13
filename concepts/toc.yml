@@ -1128,59 +1128,59 @@ items:
       - name: Microsoft Entra service limits
         displayName: Azure AD service limits and restrictions
         href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
-      - name: Migrate
+  - name: Migrate
+    items:
+    - name: Azure AD Graph
+      items:
+      - name: Migrate Azure AD Graph apps
+        href: migrate-azure-ad-graph-overview.md
+        displayName: Migration, Azure AD Graph, migrate
+      - name: Checklist to migrate apps
+        href: migrate-azure-ad-graph-planning-checklist.md
+      - name: "1: Review differences"
+        expanded: true
         items:
-          - name: Azure AD Graph
-            items:
-              - name: Migrate Azure AD Graph apps
-                href: migrate-azure-ad-graph-overview.md
-                displayName: Migration, Azure AD Graph, migrate
-              - name: Checklist to migrate apps
-                href: migrate-azure-ad-graph-planning-checklist.md
-              - name: "1: Review differences"
-                expanded: true
-                items:
-                  - name: Requests
-                    href: migrate-azure-ad-graph-request-differences.md
-                  - name: Service features
-                    href: migrate-azure-ad-graph-feature-differences.md
-                  - name: Resource types
-                    href: migrate-azure-ad-graph-resource-differences.md
-                  - name: Entity properties
-                    href: migrate-azure-ad-graph-property-differences.md
-                  - name: Methods
-                    href: migrate-azure-ad-graph-method-differences.md
-                  - name: Permissions
-                    href: migrate-azure-ad-graph-permissions-differences.md
-              - name: "2: Examine API use"
-                href: migrate-azure-ad-graph-audit-api-use.md
-              - name: "3: Review app details"
-                expanded: true
-                items:
-                  - name: App registration
-                    href: migrate-azure-ad-graph-app-registration.md
-                  - name: Auth libraries
-                    href: migrate-azure-ad-graph-authentication-library.md
-                  - name: .NET client libraries
-                    href: migrate-azure-ad-graph-client-libraries.md
-              - name: "4: Deploy, test, and extend"
-                href: migrate-azure-ad-graph-deploy-test-extend.md
-              - name: Azure AD Graph migration FAQ
-                href: migrate-azure-ad-graph-faq.md
-                displayName: migrate, frequently asked questions
-              - name: Configure Azure AD Graph permissions
-                href: migrate-azure-ad-graph-configure-permissions.md
-          - name: Exchange Web Services
-            items:
-              - name: Migrate EWS apps
-                href: migrate-exchange-web-services-overview.md
-                displayName: Migration, Exchange Web Services, EWS, migrate
-              - name: Authentication
-                href: migrate-exchange-web-services-authentication.md
-              - name: API mapping
-                href: migrate-exchange-web-services-api-mapping.md
-          - name: Outlook REST APIs
-            href: /outlook/rest/compare-graph?context=graph/context
+        - name: Requests
+          href: migrate-azure-ad-graph-request-differences.md
+        - name: Service features
+          href: migrate-azure-ad-graph-feature-differences.md
+        - name: Resource types
+          href: migrate-azure-ad-graph-resource-differences.md
+        - name: Entity properties
+          href: migrate-azure-ad-graph-property-differences.md
+        - name: Methods
+          href: migrate-azure-ad-graph-method-differences.md
+        - name: Permissions
+          href: migrate-azure-ad-graph-permissions-differences.md
+      - name: "2: Examine API use"
+        href: migrate-azure-ad-graph-audit-api-use.md
+      - name: "3: Review app details"
+        expanded: true
+        items:
+        - name: App registration
+          href: migrate-azure-ad-graph-app-registration.md
+        - name: Auth libraries
+          href: migrate-azure-ad-graph-authentication-library.md
+        - name: .NET client libraries
+          href: migrate-azure-ad-graph-client-libraries.md
+      - name: "4: Deploy, test, and extend"
+        href: migrate-azure-ad-graph-deploy-test-extend.md
+      - name: Azure AD Graph migration FAQ
+        href: migrate-azure-ad-graph-faq.md
+        displayName: migrate, frequently asked questions
+      - name: Configure Azure AD Graph permissions
+        href: migrate-azure-ad-graph-configure-permissions.md
+    - name: Exchange Web Services
+      items:
+      - name: Migrate EWS apps
+        href: migrate-exchange-web-services-overview.md
+        displayName: Migration, Exchange Web Services, EWS, migrate
+      - name: Authentication
+        href: migrate-exchange-web-services-authentication.md
+      - name: API mapping
+        href: migrate-exchange-web-services-api-mapping.md
+    - name: Outlook REST APIs
+      href: /outlook/rest/compare-graph?context=graph/context
   - name: API v1.0 reference
     href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
     displayName: Microsoft Graph REST API v1.0 reference
