@@ -81,7 +81,7 @@ Since the **event** resource supports [extensions](/graph/extensibility-overview
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [event](../resources/event.md) object in the response body.
 
 ## Examples
 
