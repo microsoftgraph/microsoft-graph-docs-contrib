@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,7 +40,7 @@ POST /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPro
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,16 +67,17 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}/assignments
 Content-type: application/json
-Content-length: 463
+Content-length: 476
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
   "intent": "remove",
   "target": {
-    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
-    "collectionId": "Collection Id value"
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   },
   "sourceId": "Source Id value"
 }
@@ -85,17 +88,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 512
+Content-Length: 525
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
   "id": "4ebb8d4e-8d4e-4ebb-4e8d-bb4e4e8dbb4e",
   "intent": "remove",
   "target": {
-    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
-    "collectionId": "Collection Id value"
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   },
   "sourceId": "Source Id value"
 }

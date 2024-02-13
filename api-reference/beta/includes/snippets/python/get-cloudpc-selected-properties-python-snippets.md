@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.deviceManagement.virtualEndpoint.cloudPCs.item.cloud_p_c_item_request_builder import CloudPCItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = CloudPCRequestBuilder.CloudPCRequestBuilderGetQueryParameters(
+query_params = CloudPCItemRequestBuilder.CloudPCItemRequestBuilderGetQueryParameters(
 		select = ["id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult"],
 )
 
-request_configuration = CloudPCRequestBuilder.CloudPCRequestBuilderGetRequestConfiguration(
+request_configuration = CloudPCItemRequestBuilder.CloudPCItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

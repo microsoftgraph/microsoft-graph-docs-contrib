@@ -4,9 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.log_teleconference_device_quality_post_request_body import LogTeleconferenceDeviceQualityPostRequestBody
+from msgraph.generated.models.teleconference_device_quality import TeleconferenceDeviceQuality
+from msgraph.generated.models.teleconference_device_media_quality import TeleconferenceDeviceMediaQuality
+from msgraph.generated.models.teleconference_device_audio_quality import TeleconferenceDeviceAudioQuality
+from msgraph.generated.models.teleconference_device_video_quality import TeleconferenceDeviceVideoQuality
+from msgraph.generated.models.teleconference_device_screen_sharing_quality import TeleconferenceDeviceScreenSharingQuality
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = LogTeleconferenceDeviceQualityPostRequestBody(
 	quality = TeleconferenceDeviceQuality(
@@ -89,11 +95,11 @@ request_body = LogTeleconferenceDeviceQualityPostRequestBody(
 				maximum_inbound_jitter = "PT0.023S",
 				maximum_outbound_jitter = "PT0.024S",
 			),
-		]
+		],
 	),
 )
 
-await graph_client.communications.calls.log_teleconference_device_quality.post(body = request_body)
+await graph_client.communications.calls.log_teleconference_device_quality.post(request_body)
 
 
 ```

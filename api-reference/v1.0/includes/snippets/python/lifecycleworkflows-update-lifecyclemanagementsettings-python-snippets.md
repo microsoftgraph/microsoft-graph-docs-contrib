@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.lifecycle_management_settings import LifecycleManagementSettings
+from msgraph.generated.models.email_settings import EmailSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = LifecycleManagementSettings(
 	workflow_schedule_interval_in_hours = 3,
@@ -19,7 +21,7 @@ request_body = LifecycleManagementSettings(
 	}
 )
 
-result = await graph_client.identity_governance.lifecycle_workflows.settings.patch(body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.settings.patch(request_body)
 
 
 ```

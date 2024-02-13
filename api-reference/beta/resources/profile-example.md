@@ -11,7 +11,7 @@ doc_type: "conceptualPageType"
 
 Namespace: microsoft.graph
 
-Microsoft Graph applications can use the Profile API to retrieve the profile of the signed-in user or another user with a valid Azure AD or Microsoft account. This information can be used in applications to help contextualizing another user, providing a richer experience for the user within the application or as a mechanism for storing extended information about the user that can also be used within Microsoft 365.
+Microsoft Graph applications can use the Profile API to retrieve the profile of the signed-in user or another user with a valid Microsoft Entra ID or Microsoft account. This information can be used in applications to help contextualizing another user, providing a richer experience for the user within the application or as a mechanism for storing extended information about the user that can also be used within Microsoft 365.
 
 ## Authorization
 
@@ -270,5 +270,3 @@ Content-type: application/json
     "webAccounts": []
 }
 ```
-
-

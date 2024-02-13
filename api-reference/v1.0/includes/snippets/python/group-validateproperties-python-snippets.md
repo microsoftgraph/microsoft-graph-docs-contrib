@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.validate_properties_post_request_body import ValidatePropertiesPostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ValidatePropertiesPostRequestBody(
 	display_name = "Myprefix_test_mysuffix",
@@ -14,7 +15,7 @@ request_body = ValidatePropertiesPostRequestBody(
 	on_behalf_of_user_id = UUID("onBehalfOfUserId-value"),
 )
 
-await graph_client.groups.by_group_id('group-id').validate_properties.post(body = request_body)
+await graph_client.groups.by_group_id('group-id').validate_properties.post(request_body)
 
 
 ```

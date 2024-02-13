@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.identityGovernance.lifecycleWorkflows.workflows.item.runs.item.userProcessingResults.item.user_processing_result_item_request_builder import UserProcessingResultItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = UserProcessingResultRequestBuilder.UserProcessingResultRequestBuilderGetQueryParameters(
+query_params = UserProcessingResultItemRequestBuilder.UserProcessingResultItemRequestBuilderGetQueryParameters(
 		select = ["id","failedTasksCount","processingStatus","totalTasksCount","totalUnprocessedTasksCount","subject"],
 )
 
-request_configuration = UserProcessingResultRequestBuilder.UserProcessingResultRequestBuilderGetRequestConfiguration(
+request_configuration = UserProcessingResultItemRequestBuilder.UserProcessingResultItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

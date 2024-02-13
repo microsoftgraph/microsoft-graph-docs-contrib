@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.certificate_based_auth_configuration import CertificateBasedAuthConfiguration
+from msgraph.generated.models.certificate_authority import CertificateAuthority
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CertificateBasedAuthConfiguration(
 	certificate_authorities = [
@@ -14,10 +16,10 @@ request_body = CertificateBasedAuthConfiguration(
 			is_root_authority = True,
 			certificate = base64.urlsafe_b64decode("Binary"),
 		),
-	]
+	],
 )
 
-result = await graph_client.organization.by_organization_id('organization-id').certificate_based_auth_configuration.post(body = request_body)
+result = await graph_client.organization.by_organization_id('organization-id').certificate_based_auth_configuration.post(request_body)
 
 
 ```

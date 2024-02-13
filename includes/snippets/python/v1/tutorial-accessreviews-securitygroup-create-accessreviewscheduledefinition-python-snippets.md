@@ -4,9 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_review_schedule_definition import AccessReviewScheduleDefinition
+from msgraph.generated.models.access_review_scope import AccessReviewScope
+from msgraph.generated.models.access_review_schedule_settings import AccessReviewScheduleSettings
+from msgraph.generated.models.patterned_recurrence import PatternedRecurrence
+from msgraph.generated.models.recurrence_range import RecurrenceRange
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessReviewScheduleDefinition(
 	display_name = "One-time self-review for members of Building security",
@@ -46,7 +51,7 @@ request_body = AccessReviewScheduleDefinition(
 	),
 )
 
-result = await graph_client.identity_governance.acce_reviews.definitions.post(body = request_body)
+result = await graph_client.identity_governance.access_reviews.definitions.post(request_body)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "identityUserFlowAttribute resource type"
-description: "Represents attributes that can be added to a user flow in an Azure AD workforce tenant, an Azure AD for customers tenant, and an Azure AD B2C tenant."
+description: "Represents attributes that can be added to a user flow in a Microsoft Entra workforce tenant, a Microsoft Entra ID for customers tenant, and an Azure AD B2C tenant."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
@@ -11,9 +11,9 @@ author: "nanguil"
 
 Namespace: microsoft.graph
 
-Represents attributes that can be added to a user flow in an Azure AD workforce tenant, an Azure AD for customers tenant, and an Azure AD B2C tenant.
+Represents attributes that can be added to a user flow in a Microsoft Entra workforce tenant, a Microsoft Entra ID for customers tenant, and an Azure AD B2C tenant.
 
-Configuring user flow attributes in your Azure AD or Azure AD B2C tenant allows you to collect information about a user during sign-up. You can choose to collect a built-in set of attribute; for example, Given Name, Surname, City, and Postal Code; or you can configure custom user flow attributes. Custom user flow attributes are an abstraction over [directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions).
+Configuring user flow attributes in your Microsoft Entra ID or Azure AD B2C tenant allows you to collect information about a user during sign-up. You can choose to collect a built-in set of attribute; for example, Given Name, Surname, City, and Postal Code; or you can configure custom user flow attributes. Custom user flow attributes are an abstraction over [directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions).
 
 [identityBuiltInUserFlowAttributes](../resources/identitybuiltinuserflowattribute.md) and [identityCustomUserFlowAttributes](../resources/identitycustomuserflowattribute.md) both inherit from this base type.
 

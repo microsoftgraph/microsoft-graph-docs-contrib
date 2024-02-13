@@ -4,9 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_device_features_configuration import IosDeviceFeaturesConfiguration
+from msgraph.generated.models.ios_home_screen_item import IosHomeScreenItem
+from msgraph.generated.models.ios_home_screen_folder import IosHomeScreenFolder
+from msgraph.generated.models.ios_home_screen_folder_page import IosHomeScreenFolderPage
+from msgraph.generated.models.ios_home_screen_app import IosHomeScreenApp
+from msgraph.generated.models.ios_home_screen_page import IosHomeScreenPage
+from msgraph.generated.models.ios_notification_settings import IosNotificationSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IosDeviceFeaturesConfiguration(
 	odata_type = "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -29,11 +36,11 @@ request_body = IosDeviceFeaturesConfiguration(
 							display_name = "Display Name value",
 							bundle_i_d = "Bundle ID value",
 						),
-					]
+					],
 				),
-			]
+			],
 		),
-	]
+	],
 	home_screen_pages = [
 		IosHomeScreenPage(
 			odata_type = "microsoft.graph.iosHomeScreenPage",
@@ -52,13 +59,13 @@ request_body = IosDeviceFeaturesConfiguration(
 									display_name = "Display Name value",
 									bundle_i_d = "Bundle ID value",
 								),
-							]
+							],
 						),
-					]
+					],
 				),
-			]
+			],
 		),
-	]
+	],
 	notification_settings = [
 		IosNotificationSettings(
 			odata_type = "microsoft.graph.iosNotificationSettings",
@@ -72,10 +79,10 @@ request_body = IosDeviceFeaturesConfiguration(
 			badges_enabled = True,
 			sounds_enabled = True,
 		),
-	]
+	],
 )
 
-result = await graph_client.device_management.device_configurations.post(body = request_body)
+result = await graph_client.device_management.device_configurations.post(request_body)
 
 
 ```

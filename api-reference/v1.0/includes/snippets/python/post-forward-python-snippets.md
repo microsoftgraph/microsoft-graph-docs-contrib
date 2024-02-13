@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.forward_post_request_body import ForwardPostRequestBody
+from msgraph.generated.models.recipient import Recipient
+from msgraph.generated.models.email_address import EmailAddress
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ForwardPostRequestBody(
 	comment = "comment-value",
@@ -17,10 +20,10 @@ request_body = ForwardPostRequestBody(
 				address = "address-value",
 			),
 		),
-	]
+	],
 )
 
-await graph_client.groups.by_group_id('group-id').threads.by_thread_id('conversationThread-id').posts.by_post_id('post-id').forward.post(body = request_body)
+await graph_client.groups.by_group_id('group-id').threads.by_conversation_thread_id('conversationThread-id').posts.by_post_id('post-id').forward.post(request_body)
 
 
 ```

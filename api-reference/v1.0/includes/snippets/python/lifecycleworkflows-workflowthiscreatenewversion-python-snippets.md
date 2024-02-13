@@ -4,9 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.create_new_version_post_request_body import CreateNewVersionPostRequestBody
+from msgraph.generated.models.workflow import Workflow
+from msgraph.generated.models.trigger_and_scope_based_conditions import TriggerAndScopeBasedConditions
+from msgraph.generated.models.rule_based_subject_set import RuleBasedSubjectSet
+from msgraph.generated.models.time_based_attribute_trigger import TimeBasedAttributeTrigger
+from msgraph.generated.models.task import Task
+from msgraph.generated.models.key_value_pair import KeyValuePair
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CreateNewVersionPostRequestBody(
 	workflow = Workflow(
@@ -35,7 +42,7 @@ request_body = CreateNewVersionPostRequestBody(
 				is_enabled = True,
 				task_definition_id = "6fc52c9d-398b-4305-9763-15f42c1676fc",
 				arguments = [
-				]
+				],
 			),
 			Task(
 				continue_on_error = False,
@@ -44,13 +51,13 @@ request_body = CreateNewVersionPostRequestBody(
 				is_enabled = True,
 				task_definition_id = "70b29d51-b59a-4773-9280-8841dfd3f2ea",
 				arguments = [
-				]
+				],
 			),
-		]
+		],
 	),
 )
 
-result = await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').microsoft_graph_identity_governance_create_new_version.post(body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').microsoft_graph_identity_governance_create_new_version.post(request_body)
 
 
 ```

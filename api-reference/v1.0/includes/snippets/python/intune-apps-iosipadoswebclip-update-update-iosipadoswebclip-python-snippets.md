@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.iosi_pad_o_s_web_clip import IosiPadOSWebClip
+from msgraph.generated.models.mime_content import MimeContent
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IosiPadOSWebClip(
 	odata_type = "#microsoft.graph.iosiPadOSWebClip",
@@ -29,7 +31,7 @@ request_body = IosiPadOSWebClip(
 	use_managed_browser = True,
 )
 
-result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(body = request_body)
+result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(request_body)
 
 
 ```

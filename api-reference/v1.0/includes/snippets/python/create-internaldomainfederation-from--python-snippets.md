@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.internal_domain_federation import InternalDomainFederation
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = InternalDomainFederation(
 	odata_type = "#microsoft.graph.internalDomainFederation",
@@ -24,7 +25,7 @@ request_body = InternalDomainFederation(
 	federated_idp_mfa_behavior = FederatedIdpMfaBehavior.RejectMfaByFederatedIdp,
 )
 
-result = await graph_client.domains.by_domain_id('domain-id').federation_configuration.post(body = request_body)
+result = await graph_client.domains.by_domain_id('domain-id').federation_configuration.post(request_body)
 
 
 ```

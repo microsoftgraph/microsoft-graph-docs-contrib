@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_management_reports import DeviceManagementReports
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceManagementReports(
 	odata_type = "#microsoft.graph.deviceManagementReports",
 )
 
-result = await graph_client.device_management.reports.patch(body = request_body)
+result = await graph_client.device_management.reports.patch(request_body)
 
 
 ```

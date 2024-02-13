@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_review import AccessReview
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessReview(
 	display_name = "TestReview new name",
 )
 
-result = await graph_client.acces_reviews.by_acces_review_id('accessReview-id').patch(body = request_body)
+result = await graph_client.access_reviews.by_access_review_id('accessReview-id').patch(request_body)
 
 
 ```

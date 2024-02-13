@@ -4,64 +4,66 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ExternalUsersSelfServiceSignUpEventsFlow authenticationEventsFlow = new ExternalUsersSelfServiceSignUpEventsFlow();
+authenticationEventsFlow.setOdataType("#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow");
 OnAttributeCollectionExternalUsersSelfServiceSignUp onAttributeCollection = new OnAttributeCollectionExternalUsersSelfServiceSignUp();
+onAttributeCollection.setOdataType("#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp");
 AuthenticationAttributeCollectionPage attributeCollectionPage = new AuthenticationAttributeCollectionPage();
-attributeCollectionPage.customStringsFileId = null;
-LinkedList<AuthenticationAttributeCollectionPageViewConfiguration> viewsList = new LinkedList<AuthenticationAttributeCollectionPageViewConfiguration>();
-AuthenticationAttributeCollectionPageViewConfiguration views = new AuthenticationAttributeCollectionPageViewConfiguration();
-views.title = null;
-views.description = null;
-LinkedList<AuthenticationAttributeCollectionInputConfiguration> inputsList = new LinkedList<AuthenticationAttributeCollectionInputConfiguration>();
-AuthenticationAttributeCollectionInputConfiguration inputs = new AuthenticationAttributeCollectionInputConfiguration();
-inputs.attribute = "email";
-inputs.label = "Email Address";
-inputs.inputType = AuthenticationAttributeCollectionInputType.TEXT;
-inputs.defaultValue = null;
-inputs.hidden = true;
-inputs.editable = false;
-inputs.writeToDirectory = true;
-inputs.required = true;
-inputs.validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$";
-LinkedList<AuthenticationAttributeCollectionOptionConfiguration> optionsList = new LinkedList<AuthenticationAttributeCollectionOptionConfiguration>();
-inputs.options = optionsList;
-inputsList.add(inputs);
-AuthenticationAttributeCollectionInputConfiguration inputs1 = new AuthenticationAttributeCollectionInputConfiguration();
-inputs1.attribute = "displayName";
-inputs1.label = "Display Name";
-inputs1.inputType = AuthenticationAttributeCollectionInputType.TEXT;
-inputs1.defaultValue = null;
-inputs1.hidden = false;
-inputs1.editable = true;
-inputs1.writeToDirectory = true;
-inputs1.required = false;
-inputs1.validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$";
-LinkedList<AuthenticationAttributeCollectionOptionConfiguration> optionsList1 = new LinkedList<AuthenticationAttributeCollectionOptionConfiguration>();
-inputs1.options = optionsList1;
-inputsList.add(inputs1);
-AuthenticationAttributeCollectionInputConfiguration inputs2 = new AuthenticationAttributeCollectionInputConfiguration();
-inputs2.attribute = "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor";
-inputs2.label = "Favorite color";
-inputs2.inputType = AuthenticationAttributeCollectionInputType.TEXT;
-inputs2.defaultValue = null;
-inputs2.hidden = false;
-inputs2.editable = true;
-inputs2.writeToDirectory = true;
-inputs2.required = false;
-inputs2.validationRegEx = "^.*";
-LinkedList<AuthenticationAttributeCollectionOptionConfiguration> optionsList2 = new LinkedList<AuthenticationAttributeCollectionOptionConfiguration>();
-inputs2.options = optionsList2;
-inputsList.add(inputs2);
-views.inputs = inputsList;
-viewsList.add(views);
-attributeCollectionPage.views = viewsList;
-onAttributeCollection.attributeCollectionPage = attributeCollectionPage;
-authenticationEventsFlow.onAttributeCollection = onAttributeCollection;
+attributeCollectionPage.setCustomStringsFileId(null);
+LinkedList<AuthenticationAttributeCollectionPageViewConfiguration> views = new LinkedList<AuthenticationAttributeCollectionPageViewConfiguration>();
+AuthenticationAttributeCollectionPageViewConfiguration authenticationAttributeCollectionPageViewConfiguration = new AuthenticationAttributeCollectionPageViewConfiguration();
+authenticationAttributeCollectionPageViewConfiguration.setTitle(null);
+authenticationAttributeCollectionPageViewConfiguration.setDescription(null);
+LinkedList<AuthenticationAttributeCollectionInputConfiguration> inputs = new LinkedList<AuthenticationAttributeCollectionInputConfiguration>();
+AuthenticationAttributeCollectionInputConfiguration authenticationAttributeCollectionInputConfiguration = new AuthenticationAttributeCollectionInputConfiguration();
+authenticationAttributeCollectionInputConfiguration.setAttribute("email");
+authenticationAttributeCollectionInputConfiguration.setLabel("Email Address");
+authenticationAttributeCollectionInputConfiguration.setInputType(AuthenticationAttributeCollectionInputType.Text);
+authenticationAttributeCollectionInputConfiguration.setDefaultValue(null);
+authenticationAttributeCollectionInputConfiguration.setHidden(true);
+authenticationAttributeCollectionInputConfiguration.setEditable(false);
+authenticationAttributeCollectionInputConfiguration.setWriteToDirectory(true);
+authenticationAttributeCollectionInputConfiguration.setRequired(true);
+authenticationAttributeCollectionInputConfiguration.setValidationRegEx("^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$");
+LinkedList<AuthenticationAttributeCollectionOptionConfiguration> options = new LinkedList<AuthenticationAttributeCollectionOptionConfiguration>();
+authenticationAttributeCollectionInputConfiguration.setOptions(options);
+inputs.add(authenticationAttributeCollectionInputConfiguration);
+AuthenticationAttributeCollectionInputConfiguration authenticationAttributeCollectionInputConfiguration1 = new AuthenticationAttributeCollectionInputConfiguration();
+authenticationAttributeCollectionInputConfiguration1.setAttribute("displayName");
+authenticationAttributeCollectionInputConfiguration1.setLabel("Display Name");
+authenticationAttributeCollectionInputConfiguration1.setInputType(AuthenticationAttributeCollectionInputType.Text);
+authenticationAttributeCollectionInputConfiguration1.setDefaultValue(null);
+authenticationAttributeCollectionInputConfiguration1.setHidden(false);
+authenticationAttributeCollectionInputConfiguration1.setEditable(true);
+authenticationAttributeCollectionInputConfiguration1.setWriteToDirectory(true);
+authenticationAttributeCollectionInputConfiguration1.setRequired(false);
+authenticationAttributeCollectionInputConfiguration1.setValidationRegEx("^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$");
+LinkedList<AuthenticationAttributeCollectionOptionConfiguration> options1 = new LinkedList<AuthenticationAttributeCollectionOptionConfiguration>();
+authenticationAttributeCollectionInputConfiguration1.setOptions(options1);
+inputs.add(authenticationAttributeCollectionInputConfiguration1);
+AuthenticationAttributeCollectionInputConfiguration authenticationAttributeCollectionInputConfiguration2 = new AuthenticationAttributeCollectionInputConfiguration();
+authenticationAttributeCollectionInputConfiguration2.setAttribute("extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor");
+authenticationAttributeCollectionInputConfiguration2.setLabel("Favorite color");
+authenticationAttributeCollectionInputConfiguration2.setInputType(AuthenticationAttributeCollectionInputType.Text);
+authenticationAttributeCollectionInputConfiguration2.setDefaultValue(null);
+authenticationAttributeCollectionInputConfiguration2.setHidden(false);
+authenticationAttributeCollectionInputConfiguration2.setEditable(true);
+authenticationAttributeCollectionInputConfiguration2.setWriteToDirectory(true);
+authenticationAttributeCollectionInputConfiguration2.setRequired(false);
+authenticationAttributeCollectionInputConfiguration2.setValidationRegEx("^.*");
+LinkedList<AuthenticationAttributeCollectionOptionConfiguration> options2 = new LinkedList<AuthenticationAttributeCollectionOptionConfiguration>();
+authenticationAttributeCollectionInputConfiguration2.setOptions(options2);
+inputs.add(authenticationAttributeCollectionInputConfiguration2);
+authenticationAttributeCollectionPageViewConfiguration.setInputs(inputs);
+views.add(authenticationAttributeCollectionPageViewConfiguration);
+attributeCollectionPage.setViews(views);
+onAttributeCollection.setAttributeCollectionPage(attributeCollectionPage);
+authenticationEventsFlow.setOnAttributeCollection(onAttributeCollection);
+AuthenticationEventsFlow result = graphClient.identity().authenticationEventsFlows().byAuthenticationEventsFlowId("{authenticationEventsFlow-id}").patch(authenticationEventsFlow);
 
-graphClient.identity().authenticationEventsFlows("0313cc37-d421-421d-857b-87804d61e33e")
-	.buildRequest()
-	.patch(authenticationEventsFlow);
 
 ```

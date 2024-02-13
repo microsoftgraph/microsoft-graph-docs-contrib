@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.feature_rollout_policy import FeatureRolloutPolicy
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = FeatureRolloutPolicy(
 	display_name = "PasswordHashSync Rollout Policy",
@@ -15,7 +16,7 @@ request_body = FeatureRolloutPolicy(
 	is_applied_to_organization = False,
 )
 
-result = await graph_client.policies.feature_rollout_policies.by_feature_rollout_policie_id('featureRolloutPolicy-id').patch(body = request_body)
+result = await graph_client.policies.feature_rollout_policies.by_feature_rollout_policy_id('featureRolloutPolicy-id').patch(request_body)
 
 
 ```

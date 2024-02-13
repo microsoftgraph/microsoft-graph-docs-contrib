@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.shift import Shift
+from msgraph.generated.models.shift_item import ShiftItem
+from msgraph.generated.models.shift_activity import ShiftActivity
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Shift(
 	id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
@@ -26,7 +29,7 @@ request_body = Shift(
 				code = "",
 				display_name = "Lunch",
 			),
-		]
+		],
 	),
 	draft_shift = ShiftItem(
 		display_name = "Day shift",
@@ -42,11 +45,11 @@ request_body = Shift(
 				code = "",
 				display_name = "Lunch",
 			),
-		]
+		],
 	),
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.shifts.post(body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.shifts.post(request_body)
 
 
 ```

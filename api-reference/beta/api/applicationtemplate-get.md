@@ -19,13 +19,10 @@ Retrieve the properties of an [applicationTemplate](../resources/applicationtemp
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | None. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | None. |
+<!-- { "blockType": "permissions", "name": "applicationtemplate_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/applicationtemplate-get-permissions.md)]
 
 Additional permissions aren't required to call this API, as long as your application has a valid access token to call Microsoft Graph.
 
@@ -70,7 +67,7 @@ Here's an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applicationTemplates/{id}
+GET https://graph.microsoft.com/beta/applicationTemplates/00000007-0000-0000-c000-000000000000
 ```
 
 # [C#](#tab/csharp)
@@ -124,14 +121,30 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"id" : "id-value",
-	"displayName" : "displayName-value",
-	"homePageUrl" : "homePageUrl-value",
-	"supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
-	"logoUrl" : "logoUrl-value",
-	"categories" : ["categories-value"],
-	"publisher" : "publisher-value",
-	"description" : "description-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applicationTemplates('<guid>')?$select=appCategory,categories",
+    "id": "00000007-0000-0000-c000-000000000000",
+    "displayName": "Dynamics CRM Online",
+    "homePageUrl": "http://www.microsoft.com/dynamics/crm",
+    "supportedSingleSignOnModes": [
+        "oidc",
+        "external"
+    ],
+    "supportedProvisioningTypes": [],
+    "logoUrl": "https://az495088.vo.msecnd.net/app-logo/crm_215.png",
+    "categories": [
+        "crm",
+        "productivity",
+        "collaboration",
+        "businessMgmt"
+    ],
+    "publisher": "Microsoft Corporation",
+    "description": null,
+    "supportedClaimConfiguration": null,
+    "informationalUrls": {
+        "singleSignOnDocumentationUrl": null,
+        "appSignUpUrl": "http://go.microsoft.com/fwlink/?LinkId=252780"
+    }
 }
 ```
 

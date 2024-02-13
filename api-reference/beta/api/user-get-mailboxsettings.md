@@ -36,13 +36,10 @@ This `GET` operation returns the user's preferred time zone in the format that t
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
-|Delegated (personal Microsoft account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
-|Application | MailboxSettings.Read, MailboxSettings.ReadWrite |
+<!-- { "blockType": "permissions", "name": "user_get_mailboxsettings" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-get-mailboxsettings-permissions.md)]
 
 ## HTTP request
 
@@ -89,7 +86,7 @@ This method supports some of the [OData Query Parameters](/graph/query-parameter
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -244,7 +241,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-2-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -384,7 +381,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-4-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -435,7 +432,10 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": ["Error: get_mailboxsettings_4:
+  "suppressions": [
+    "Error: get_mailboxsettings_4:
+      Unable to locate a definition for resource type: microsoft.graph.userPurpose",
+    "Error: getmailboxsettings4:
       Unable to locate a definition for resource type: microsoft.graph.userPurpose"
   ]
 }

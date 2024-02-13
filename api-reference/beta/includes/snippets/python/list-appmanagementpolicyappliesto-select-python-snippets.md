@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.policies.appManagementPolicies.item.appliesTo.applies_to_request_builder import AppliesToRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = AppliesToRequestBuilder.AppliesToRequestBuilderGetQueryParameters(
 		select = ["id","appId","displayName","createdDateTime"],
@@ -16,7 +17,7 @@ request_configuration = AppliesToRequestBuilder.AppliesToRequestBuilderGetReques
 query_parameters = query_params,
 )
 
-result = await graph_client.policies.app_management_policies.by_app_management_policie_id('appManagementPolicy-id').applie_to.get(request_configuration = request_configuration)
+result = await graph_client.policies.app_management_policies.by_app_management_policy_id('appManagementPolicy-id').applies_to.get(request_configuration = request_configuration)
 
 
 ```

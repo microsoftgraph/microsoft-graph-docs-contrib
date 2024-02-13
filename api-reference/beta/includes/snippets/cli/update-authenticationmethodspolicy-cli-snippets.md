@@ -9,6 +9,7 @@ mgc-beta policies authentication-methods-policy patch --body '{\
   "registrationEnforcement": {\
     "authenticationMethodsRegistrationCampaign": {\
         "snoozeDurationInDays": 1,\
+        "enforceRegistrationAfterAllowedSnoozes": true,\
         "state": "enabled",\
         "excludeTargets": [],\
         "includeTargets": [\

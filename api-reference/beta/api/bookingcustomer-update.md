@@ -19,19 +19,16 @@ Update the properties of a [bookingCustomer](../resources/bookingcustomer.md) ob
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
+<!-- { "blockType": "permissions", "name": "bookingcustomer_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingcustomer-update-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}/customers/{id}
+PATCH /solutions/bookingbusinesses/{id}/customers/{id}
 ```
 
 ## Optional request headers
@@ -63,7 +60,7 @@ Here's an example of the request.
   "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "8bb19078-0f45-4efb-b2c5-da78b860f73a"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
+PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
 Content-type: application/json
 
 {
@@ -96,10 +93,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-bookingcustomer-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingcustomer-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-bookingcustomer-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -118,7 +111,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/customers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/customers/$entity",
     "id": "8bb19078-0f45-4efb-b2c5-da78b860f73a",
     "displayName": "Adele",
     "emailAddress": "adele@relecloud.com"

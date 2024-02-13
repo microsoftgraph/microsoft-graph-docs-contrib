@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.custom_access_package_workflow_extension import CustomAccessPackageWorkflowExtension
+from msgraph.generated.models.logic_app_trigger_endpoint_configuration import LogicAppTriggerEndpointConfiguration
+from msgraph.generated.models.azure_ad_token_authentication import AzureAdTokenAuthentication
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CustomAccessPackageWorkflowExtension(
 	display_name = "test_action_0124",
@@ -23,7 +26,7 @@ request_body = CustomAccessPackageWorkflowExtension(
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.acce_package_catalogs.by_acce_package_catalog_id('accessPackageCatalog-id').custom_acces_package_workflow_extensions.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_catalogs.by_access_package_catalog_id('accessPackageCatalog-id').custom_access_package_workflow_extensions.post(request_body)
 
 
 ```

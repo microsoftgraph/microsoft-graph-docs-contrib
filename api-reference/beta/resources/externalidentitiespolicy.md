@@ -1,6 +1,6 @@
 ---
 title: "externalIdentitiesPolicy resource type"
-description: "Represents the tenant-wide policy that controls whether external users can leave an Azure AD tenant via self-service controls."
+description: "Represents the tenant-wide policy that controls whether external users can leave a Microsoft Entra tenant via self-service controls."
 author: "KuiGithui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the tenant-wide policy that controls whether external users can leave the guest Azure AD tenant via self-service controls. When permitted by the administrator, external users can leave the guest Azure AD tenant through the **organizations** menu of the [My Account](https://myaccount.microsoft.com/) portal.
+Represents the tenant-wide policy that controls whether external users can leave the guest Microsoft Entra tenant via self-service controls. When permitted by the administrator, external users can leave the guest Microsoft Entra tenant through the **organizations** menu of the [My Account](https://myaccount.microsoft.com/) portal.
 
 Inherits from [policyBase](../resources/policybase.md).
 

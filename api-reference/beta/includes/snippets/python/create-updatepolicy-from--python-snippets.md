@@ -4,9 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.update_policy import UpdatePolicy
+from msgraph.generated.models.deployment_audience import DeploymentAudience
+from msgraph.generated.models.compliance_change import ComplianceChange
+from msgraph.generated.models.content_approval import ContentApproval
+from msgraph.generated.models.compliance_change_rule import ComplianceChangeRule
+from msgraph.generated.models.content_approval_rule import ContentApprovalRule
+from msgraph.generated.models.driver_update_filter import DriverUpdateFilter
+from msgraph.generated.models.deployment_settings import DeploymentSettings
+from msgraph.generated.models.schedule_settings import ScheduleSettings
+from msgraph.generated.models.rate_driven_rollout_settings import RateDrivenRolloutSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UpdatePolicy(
 	odata_type = "#microsoft.graph.windowsUpdates.updatePolicy",
@@ -17,7 +27,7 @@ request_body = UpdatePolicy(
 		ContentApproval(
 			odata_type = "#microsoft.graph.windowsUpdates.contentApproval",
 		),
-	]
+	],
 	compliance_change_rules = [
 		ContentApprovalRule(
 			odata_type = "#microsoft.graph.windowsUpdates.contentApprovalRule",
@@ -26,7 +36,7 @@ request_body = UpdatePolicy(
 			),
 			duration_before_deployment_start = "P7D",
 		),
-	]
+	],
 	deployment_settings = DeploymentSettings(
 		odata_type = "microsoft.graph.windowsUpdates.deploymentSettings",
 		schedule = ScheduleSettings(
@@ -41,7 +51,7 @@ request_body = UpdatePolicy(
 	),
 )
 
-result = await graph_client.admin.windows.updates.update_policies.post(body = request_body)
+result = await graph_client.admin.windows.updates.update_policies.post(request_body)
 
 
 ```

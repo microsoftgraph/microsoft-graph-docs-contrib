@@ -49,7 +49,7 @@ Represents a defined collection of Azure resource information that can be used t
 |subnetId|String|The ID of the target subnet. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}`.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |subscriptionName|String|The name of the target Azure subscription. Read-only.|
-|type|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|Specifies how the provisioned Cloud PC is joined to Azure Active Directory. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
+|type|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|Specifies how the provisioned Cloud PC is joined to Microsoft Entra ID. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |virtualNetworkId|String|The ID of the target virtual network. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}`.|
 
 ### cloudPcManagementService values
@@ -65,8 +65,8 @@ Represents a defined collection of Azure resource information that can be used t
 
 |Member|Description|
 |:---|:---|
-|hybridAzureADJoin|Joined to on-premises Active Directory and Azure AD. Only hybrid users can be assigned and sign into the Cloud PC.|
-|azureADJoin|Joined only to Azure AD. Cloud-only and hybrid users can be assigned and sign into the Cloud PC.|
+|hybridAzureADJoin|Joined to on-premises Active Directory and Microsoft Entra ID. Only hybrid users can be assigned and sign into the Cloud PC.|
+|azureADJoin|Joined only to Microsoft Entra ID. Cloud-only and hybrid users can be assigned and sign into the Cloud PC.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcOnPremisesConnectionStatus values

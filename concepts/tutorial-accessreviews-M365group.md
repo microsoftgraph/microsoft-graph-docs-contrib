@@ -1,15 +1,16 @@
 ---
-title: "Review guest access to your Microsoft 365 groups using the access reviews API in Microsoft Graph"
-description: "Learn how to use the access reviews API to review external/guest user access to your organization's resources through Microsoft 365 groups in your Azure AD tenant."
+title: "Review guest access to your Microsoft 365 groups using access reviews APIs"
+description: "Learn how to use the access reviews API to review external/guest user access to your organization's resources through Microsoft 365 groups in your Microsoft Entra tenant."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 11/01/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want to use the access reviews APIs to review and attest to the access that principals have to resources in my organization, so that I can ensure proper security and compliance in my organization.
 ---
 
-# Review guest access to your Microsoft 365 groups using the access reviews API in Microsoft Graph
+# Review guest access to your Microsoft 365 groups using access reviews APIs
 
 The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. In cross-tenant collaboration, external users can have access resources such as files, notes, calendars, and even Teams conversations. This access can be efficiently managed through Microsoft 365 groups. Using the access reviews API, organizations can therefore periodically attest to principals that have access to such groups and by extension, other resources in the organization.
 
@@ -22,8 +23,8 @@ Let's assume that you've granted access to external users (also called *guest us
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled. 
-+ An account in a different Azure AD tenant or a social identity that you can invite as a guest user (B2B user).
++ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled. 
++ An account in a different Microsoft Entra tenant or a social identity that you can invite as a guest user (B2B user).
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 + Grant yourself the following delegated permissions: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.
 
@@ -924,9 +925,8 @@ Content-type: text/plain
 
 Congratulations! You've created an access review for guest users in Microsoft 365 groups in your tenant, and scheduled it quarterly. The group owners will review access during these cycles, choosing either to approve or deny access.
 
-## See also
-
+## Related content
 
 + [Access reviews API](/graph/api/resources/accessreviewsv2-overview)
-+ [What are Azure AD access reviews?](/azure/active-directory/governance/access-reviews-overview)
-+ [Review access to groups and applications in Azure AD access reviews](/azure/active-directory/governance/perform-access-review)
++ [What are Microsoft Entra access reviews?](/azure/active-directory/governance/access-reviews-overview)
++ [Review access to groups and applications in Microsoft Entra access reviews](/azure/active-directory/governance/perform-access-review)

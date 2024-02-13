@@ -4,9 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.conversation import Conversation
+from msgraph.generated.models.conversation_thread import ConversationThread
+from msgraph.generated.models.post import Post
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.extension import Extension
+from msgraph.generated.models.open_type_extension import OpenTypeExtension
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Conversation(
 	topic = "Does anyone have a second?",
@@ -29,17 +35,17 @@ request_body = Conversation(
 										"Employees only",
 										"Add spouse or guest",
 										"Add family",
-									]
+									],
 							}
 						),
-					]
+					],
 				),
-			]
+			],
 		),
-	]
+	],
 )
 
-result = await graph_client.groups.by_group_id('group-id').conversations.post(body = request_body)
+result = await graph_client.groups.by_group_id('group-id').conversations.post(request_body)
 
 
 ```

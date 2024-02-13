@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -40,7 +42,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -62,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3124
+Content-Length: 3185
 
 {
   "value": [
@@ -127,6 +129,7 @@ Content-Length: 3124
       "appActionIfUnableToAuthenticateUser": "wipe",
       "dialerRestrictionLevel": "managedApps",
       "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
+      "protectedMessagingRedirectAppType": "anyManagedApp",
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged",
       "appGroupType": "allCoreMicrosoftApps"

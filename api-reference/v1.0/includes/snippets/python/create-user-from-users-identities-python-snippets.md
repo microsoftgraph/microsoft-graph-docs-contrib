@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.user import User
+from msgraph.generated.models.object_identity import ObjectIdentity
+from msgraph.generated.models.password_profile import PasswordProfile
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = User(
 	display_name = "John Smith",
@@ -26,7 +29,7 @@ request_body = User(
 			issuer = "facebook.com",
 			issuer_assigned_id = "5eecb0cd",
 		),
-	]
+	],
 	password_profile = PasswordProfile(
 		password = "password-value",
 		force_change_password_next_sign_in = False,
@@ -34,7 +37,7 @@ request_body = User(
 	password_policies = "DisablePasswordExpiration",
 )
 
-result = await graph_client.users.post(body = request_body)
+result = await graph_client.users.post(request_body)
 
 
 ```

@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Sites.Item.ContentTypes.Item.CopyToDefaultContentLocation;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.CopyToDefaultContentLocation.CopyToDefaultContentLocationPostRequestBody
+var requestBody = new CopyToDefaultContentLocationPostRequestBody
 {
 	SourceFile = new ItemReference
 	{
@@ -20,6 +22,8 @@ var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.CopyToDefault
 	},
 	DestinationFileName = "newname.txt",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].CopyToDefaultContentLocation.PostAsync(requestBody);
 
 

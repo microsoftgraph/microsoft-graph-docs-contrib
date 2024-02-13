@@ -19,13 +19,10 @@ Create a new [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "identitycontainer_post_b2cuserflows" } -->
+[!INCLUDE [permissions-table](../includes/permissions/identitycontainer-post-b2cuserflows-permissions.md)]
 
 The work or school account needs to belong to one of the following roles:
 
@@ -44,7 +41,7 @@ POST /identity/b2cUserFlows
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -243,18 +240,6 @@ Content-type: application/json
 }
 ```
 
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create b2CUserFlow",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: create_b2cUserFlow_from_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'",
-    "Error: create_b2cUserFlow_from_b2cUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
-  ]
-}-->
-
 ### Example 3: Create a user flow with the default values and configuration for API connectors
 
 #### Request
@@ -353,6 +338,12 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: create_b2cUserFlow_from_b2cuserflows_apiconnectors/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+    "Error: create_b2cUserFlow_from_b2cuserflows_apiconnectors/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: createb2cuserflowfromb2cuserflowsidentityProvider/userFlowTypeVersion:
+      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'",
+    "Error: createb2cuserflowfromb2cuserflowsapiconnectors/userFlowTypeVersion:
+      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: createb2cuserflowfrom_b2cuserflows/userFlowTypeVersion:
+      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
   ]
 }-->

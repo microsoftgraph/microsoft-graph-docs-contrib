@@ -27,7 +27,7 @@ configuration := &graphplanner.PlannerTaskItemRequestBuilderPatchRequestConfigur
 requestBody := graphmodels.NewPlannerTask()
 assignments := graphmodels.NewPlannerAssignments()
 additionalData := map[string]interface{}{
-"fbab97d0-4932-4511-b675-204639209557" := graphmodels.New()
+"fbab97d0-4932-4511-b675-204639209557" := graphmodels.NewPlannerAssignment()
 orderHint := "N9917 U2883!"
 "fbab97d0-4932-4511-b675-204639209557".SetOrderHint(&orderHint) 
 	assignments.Set"fbab97d0-4932-4511-b675-204639209557"("fbab97d0-4932-4511-b675-204639209557")

@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.forward_post_request_body import ForwardPostRequestBody
+from msgraph.generated.models.recipient import Recipient
+from msgraph.generated.models.email_address import EmailAddress
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ForwardPostRequestBody(
 	to_recipients = [
@@ -16,11 +19,11 @@ request_body = ForwardPostRequestBody(
 				name = "Dana Swope",
 			),
 		),
-	]
+	],
 	comment = "Dana, hope you can make this meeting.",
 )
 
-await graph_client.me.events.by_event_id('event-id').forward.post(body = request_body)
+await graph_client.me.events.by_event_id('event-id').forward.post(request_body)
 
 
 ```

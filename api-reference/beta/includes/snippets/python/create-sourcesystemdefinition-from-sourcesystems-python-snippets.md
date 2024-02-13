@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.source_system_definition import SourceSystemDefinition
+from msgraph.generated.models.user_matching_setting import UserMatchingSetting
+from msgraph.generated.models.user_match_target_reference_value import UserMatchTargetReferenceValue
+from msgraph.generated.models.identifier_type_reference_value import IdentifierTypeReferenceValue
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SourceSystemDefinition(
 	display_name = "Rostering source",
@@ -35,10 +39,10 @@ request_body = SourceSystemDefinition(
 					"role_group@odata_bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups('students')",
 			}
 		),
-	]
+	],
 )
 
-result = await graph_client.external.industry_data.source_systems.post(body = request_body)
+result = await graph_client.external.industry_data.source_systems.post(request_body)
 
 
 ```

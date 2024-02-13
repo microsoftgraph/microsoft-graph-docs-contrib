@@ -36,7 +36,7 @@ Represents an audit event for managed tenants in Microsoft 365 Lighthouse.
 |ipAddress|String|The IP address of where the activity was initiated. This may be an IPv4 or IPv6 address. Required. Read-only.|
 |requestBody|String|The raw HTTP request body. Some sensitive information may be removed.|
 |requestUrl|String|The raw HTTP request URL. Required. Read-only.|
-|tenantIds|String|The collection of Azure Active Directory tenant identifiers for the [managed tenants](../resources/managedtenants-tenant.md) that were affected by a change, and is formatted as a list of comma-separated values. Required. Read-only.|
+|tenantIds|String|The collection of Microsoft Entra tenant identifiers for the [managed tenants](../resources/managedtenants-tenant.md) that were affected by a change, and is formatted as a list of comma-separated values. Required. Read-only.|
 |tenantNames|String|The collection of tenant names that were affected by a change, and is formatted as a list of comma-separated values. Required. Read-only.|
 
 ## Relationships
@@ -70,4 +70,3 @@ Here's a JSON representation of the resource.
   "tenantNames": "String"
 }
 ```
-

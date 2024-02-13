@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.create_upload_session_post_request_body import CreateUploadSessionPostRequestBody
+from msgraph.generated.models.attachment_item import AttachmentItem
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CreateUploadSessionPostRequestBody(
 	attachment_item = AttachmentItem(
@@ -18,7 +20,7 @@ request_body = CreateUploadSessionPostRequestBody(
 	),
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').attachments.create_upload_session.post(body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').attachments.create_upload_session.post(request_body)
 
 
 ```

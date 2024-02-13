@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.planner.rosters.by_roster_id('plannerRoster-id').members.get()
+result = await graph_client.planner.rosters.by_planner_roster_id('plannerRoster-id').members.get()
 
 
 ```

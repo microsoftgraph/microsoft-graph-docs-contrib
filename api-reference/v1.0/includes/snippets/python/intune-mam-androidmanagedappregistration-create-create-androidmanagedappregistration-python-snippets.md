@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.android_managed_app_registration import AndroidManagedAppRegistration
+from msgraph.generated.models.managed_app_flagged_reason import ManagedAppFlaggedReason
+from msgraph.generated.models.android_mobile_app_identifier import AndroidMobileAppIdentifier
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AndroidManagedAppRegistration(
 	odata_type = "#microsoft.graph.androidManagedAppRegistration",
@@ -19,7 +22,7 @@ request_body = AndroidManagedAppRegistration(
 	device_name = "Device Name value",
 	flagged_reasons = [
 		ManagedAppFlaggedReason.RootedDevice,
-	]
+	],
 	user_id = "User Id value",
 	app_identifier = AndroidMobileAppIdentifier(
 		odata_type = "microsoft.graph.androidMobileAppIdentifier",
@@ -28,7 +31,7 @@ request_body = AndroidManagedAppRegistration(
 	version = "Version value",
 )
 
-result = await graph_client.device_app_management.managed_app_registrations.post(body = request_body)
+result = await graph_client.device_app_management.managed_app_registrations.post(request_body)
 
 
 ```

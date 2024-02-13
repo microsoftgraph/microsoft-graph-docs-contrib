@@ -4,16 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.call import Call
+from msgraph.generated.models.modality import Modality
+from msgraph.generated.models.service_hosted_media_config import ServiceHostedMediaConfig
+from msgraph.generated.models.media_info import MediaInfo
+from msgraph.generated.models.chat_info import ChatInfo
+from msgraph.generated.models.organizer_meeting_info import OrganizerMeetingInfo
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.identity import Identity
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Call(
 	odata_type = "#microsoft.graph.call",
 	callback_uri = "https://bot.contoso.com/callback",
 	requested_modalities = [
 		Modality.Audio,
-	]
+	],
 	media_config = ServiceHostedMediaConfig(
 		odata_type = "#microsoft.graph.serviceHostedMediaConfig",
 		pre_fetch_media = [
@@ -25,7 +33,7 @@ request_body = Call(
 				uri = "https://cdn.contoso.com/cool.wav",
 				resource_id = "86dc814b-c172-4428-9112-60f8ecae1edb",
 			),
-		]
+		],
 	),
 	chat_info = ChatInfo(
 		odata_type = "#microsoft.graph.chatInfo",
@@ -49,7 +57,7 @@ request_body = Call(
 	),
 )
 
-result = await graph_client.communications.calls.post(body = request_body)
+result = await graph_client.communications.calls.post(request_body)
 
 
 ```

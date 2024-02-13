@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a managed handler for the starting authentication step in an external identities user flow on an Azure AD workforce or customer tenant. It defines whether a user can sign up, that is create an account; otherwise, a user will is only able to sign-in.
+This is a managed handler for the starting authentication step in an external identities user flow on a Microsoft Entra workforce or customer tenant. It defines whether a user can sign up, that is create an account; otherwise, a user will is only able to sign-in.
 
 Inherits from [onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md).
 
@@ -38,4 +38,3 @@ Here's a JSON representation of the resource.
   "isSignUpAllowed": "Boolean"
 }
 ```
-

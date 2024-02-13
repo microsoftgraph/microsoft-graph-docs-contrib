@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.subscription import Subscription
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Subscription(
 	change_type = "created,updated",
@@ -17,7 +18,7 @@ request_body = Subscription(
 	client_state = "<secretClientState>",
 )
 
-result = await graph_client.subscriptions.post(body = request_body)
+result = await graph_client.subscriptions.post(request_body)
 
 
 ```

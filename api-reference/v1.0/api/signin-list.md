@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs. 
+Retrieve the Microsoft Entra user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs. 
 
-The maximum and default page size is 1,000 objects and by default, the most recent sign-ins are returned first. Only sign-in events that occurred within the Azure Active Directory (Azure AD) [default retention period](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) are available.
+The maximum and default page size is 1,000 objects and by default, the most recent sign-ins are returned first. Only sign-in events that occurred within the Microsoft Entra ID [default retention period](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) are available.
 
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
@@ -31,15 +31,17 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported   |
 |Application | AuditLog.Read.All and Directory.Read.All  |
 
-Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Microsoft Entra ID.
 
-In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 + Global Administrator
 + Global Reader
 + Reports Reader
 + Security Administrator
 + Security Operator
 + Security Reader
+
+### Viewing applied conditional access (CA) policies in sign-ins
 
 [!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
@@ -53,6 +55,12 @@ GET /auditLogs/signIns
 ## Optional query parameters
 
 This method supports the `$top`, `$skiptoken`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -131,7 +139,7 @@ Content-type: application/json
     "value": [
         {
             "id": "66ea54eb-6301-4ee5-be62-ff5a759b0100",
-            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+            "createdDateTime": "2023-12-01T16:03:35Z",
             "userDisplayName": "Test Contoso",
             "userPrincipalName": "testaccount1@contoso.com",
             "userId": "26be570a-ae82-4189-b4e2-a37c6808512d",
@@ -223,7 +231,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-signins-2-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -265,7 +273,7 @@ Content-type: application/json
     "value": [
         {
             "id": "66ea54eb-6301-4ee5-be62-ff5a759b0100",
-            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+            "createdDateTime": "2023-12-01T16:03:32Z",
             "userDisplayName": "Test Contoso",
             "userPrincipalName": "testaccount1@contoso.com",
             "userId": "26be570a-ae82-4189-b4e2-a37c6808512d",
@@ -339,4 +347,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

@@ -14,7 +14,8 @@ mgc search query post --body '{\
       "contentSources": [\
         "/external/connections/connectionfriendlyname"\
       ],\
-      "query": {\
+       "region": "US",\
+       "query": {\
         "queryString": "contoso product"\
       },\
       "from": 0,\

@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents a feature rollout policy associated with a directory object. Creating a feature rollout policy helps tenant administrators to pilot features of Azure AD with a specific group before enabling features for entire organization. This minimizes the impact and helps administrators to test and rollout authentication related features gradually.
+Represents a feature rollout policy associated with a directory object. Creating a feature rollout policy helps tenant administrators to pilot features of Microsoft Entra ID with a specific group before enabling features for entire organization. This minimizes the impact and helps administrators to test and rollout authentication related features gradually.
 
 The following are limitations of feature rollout:
 
@@ -23,8 +23,8 @@ The following are pre-requisites for each of the features that are currently sup
 
 ### Passthrough Authentication
 
-* Identify a server running Windows Server 2012 R2 or later where you want the [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) Agent to run. Ensure that the server is domain-joined, can authenticate selected users with Active Directory, and can communicate with Azure AD on outbound ports / URLs.
-* [Download](https://aka.ms/getauthagent) & install the Microsoft Azure AD Connect Authentication Agent on the server.
+* Identify a server running Windows Server 2012 R2 or later where you want the [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) Agent to run. Ensure that the server is domain-joined, can authenticate selected users with Active Directory, and can communicate with Microsoft Entra ID on outbound ports / URLs.
+* [Download](https://aka.ms/getauthagent) & install the Microsoft Entra Connect Authentication Agent on the server.
 * To enable high availability, install additional Authentication Agents on other servers as described [here](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability).
 * Ensure that you have configured your [Smart Lockout](/azure/active-directory/authentication/howto-password-smart-lockout) settings appropriately. This is to ensure that your users’ on-premises Active Directory accounts don’t get locked out by bad actors.
 
@@ -34,7 +34,7 @@ The following are pre-requisites for each of the features that are currently sup
 
 ### PasswordHashSync
 
-* Enable [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) from the “Optional features” page in Azure AD Connect.
+* Enable [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) from the “Optional features” page in Microsoft Entra Connect.
 
 ### EmailAsAlternateId
 
@@ -112,5 +112,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

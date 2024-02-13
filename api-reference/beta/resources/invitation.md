@@ -1,6 +1,6 @@
 ---
 title: "invitation resource type"
-description: "Represents an invitation that is used to add external users to an organization as part of Azure Active Directory business-to-business (Azure AD B2B) collaboration."
+description: "Represents an invitation that is used to add external users to an organization as part of Microsoft Entra business-to-business (Microsoft Entra B2B) collaboration."
 ms.localizationpriority: medium
 author: "ppolkadots"
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an invitation that is used to add external users to an organization as part of Azure Active Directory business-to-business (Azure AD B2B) collaboration.
+Represents an invitation that is used to add external users to an organization as part of Microsoft Entra business-to-business (Microsoft Entra B2B) collaboration.
 
 The invitation process uses the following flow:
 
@@ -94,5 +94,3 @@ Here's a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.work_position import WorkPosition
+from msgraph.generated.models.position_detail import PositionDetail
+from msgraph.generated.models.company_detail import CompanyDetail
+from msgraph.generated.models.physical_address import PhysicalAddress
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = WorkPosition(
 	detail = PositionDetail(
@@ -29,7 +33,7 @@ request_body = WorkPosition(
 	is_current = True,
 )
 
-result = await graph_client.me.profile.positions.post(body = request_body)
+result = await graph_client.me.profile.positions.post(request_body)
 
 
 ```

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +39,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

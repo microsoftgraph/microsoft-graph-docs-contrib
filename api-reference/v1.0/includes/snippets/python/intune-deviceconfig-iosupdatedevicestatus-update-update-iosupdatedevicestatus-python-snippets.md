@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_update_device_status import IosUpdateDeviceStatus
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IosUpdateDeviceStatus(
 	odata_type = "#microsoft.graph.iosUpdateDeviceStatus",
@@ -23,7 +24,7 @@ request_body = IosUpdateDeviceStatus(
 	user_principal_name = "User Principal Name value",
 )
 
-result = await graph_client.device_management.io_update_statuses.by_io_update_statuse_id('iosUpdateDeviceStatus-id').patch(body = request_body)
+result = await graph_client.device_management.ios_update_statuses.by_ios_update_device_status_id('iosUpdateDeviceStatus-id').patch(request_body)
 
 
 ```

@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.device_management.io_update_statuses.by_io_update_statuse_id('iosUpdateDeviceStatus-id').get()
+result = await graph_client.device_management.ios_update_statuses.by_ios_update_device_status_id('iosUpdateDeviceStatus-id').get()
 
 
 ```

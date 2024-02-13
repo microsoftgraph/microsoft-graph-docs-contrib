@@ -19,17 +19,17 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md)
 - [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md)
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md)
+- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
+- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EventListener.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EventListener.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "identitycontainer_post_authenticationeventlisteners" } -->
+[!INCLUDE [permissions-table](../includes/permissions/identitycontainer-post-authenticationeventlisteners-permissions.md)]
 
 ## HTTP request
 
@@ -44,7 +44,7 @@ POST /identity/authenticationEventListeners
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -57,6 +57,8 @@ You can specify the following properties when creating an **authenticationEventL
 |authenticationEventsFlowId|String|The identifier of the authentication events flow. Optional.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |handler|[onAttributeCollectionHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onAttributeCollectionListener** listener type.|
+|handler|[onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)|The handler to invoke when conditions are met. Can be set for the **onAttributeCollectionStartListener** listener type.|
+|handler|[onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)|The handler to invoke when conditions are met. Can be set for the **onAttributeCollectionSubmitListener** listener type.|
 |handler|[onAuthenticationMethodLoadStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onAuthenticationMethodLoadStartListener** listener type.|
 |handler|[onInteractiveAuthFlowStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onInteractiveAuthFlowStartListener** listener type.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
@@ -69,12 +71,15 @@ If successful, this method returns a `201 Created` response code and an [authent
 
 ## Examples
 
-### Request
-The following is an example of a request to create a onTokenIssuanceStartListener.
+### Example 1: Create an onTokenIssuanceStartListener object
+
+#### Request
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationeventlistener_from_"
+  "name": "create_authenticationeventlistener_onTokenIssuanceStartListener"
 }
 -->
 ``` http
@@ -105,41 +110,41 @@ Content-length: 312
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-ontokenissuancestartlistener-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationeventlistener-from--cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationeventlistener-ontokenissuancestartlistener-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-ontokenissuancestartlistener-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-ontokenissuancestartlistener-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-ontokenissuancestartlistener-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-from--php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-ontokenissuancestartlistener-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-from--powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-ontokenissuancestartlistener-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-from--python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-ontokenissuancestartlistener-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
-The following is an example of the response
+#### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -176,3 +181,209 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Create an onAttributeCollectionStartListener object
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onAttributeCollectionStartListener"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.onAttributeCollectionStartListener",
+    "priority": 500,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false,
+            "includeApplications": [
+                {
+                    "appId": "a7eed01f-a333-4983-bc6b-d359ec9e5eef"
+                }
+            ]
+        }
+    },
+    "handler": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionStartCustomExtensionHandler",
+        "customExtension": {
+            "id": "2d9c3e8d-88a9-444e-8c4c-f0c6c4fe1c02"
+        }
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-onattributecollectionstartlistener-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationeventlistener-onattributecollectionstartlistener-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-onattributecollectionstartlistener-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-onattributecollectionstartlistener-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-onattributecollectionstartlistener-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-onattributecollectionstartlistener-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-onattributecollectionstartlistener-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-onattributecollectionstartlistener-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
+    "@odata.type": "#microsoft.graph.onAttributeCollectionStartListener",
+    "id": "1b025b34-6547-4714-b948-43f79b70c429",
+    "priority": 500,
+    "authenticationEventsFlowId": null,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false
+        }
+    },
+    "handler": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionStartCustomExtensionHandler",
+        "configuration": null
+    }
+}
+```
+
+### Example 3: Create an onAttributeCollectionSubmitListener object
+
+#### Request
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onAttributeCollectionSubmitListener"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitListener",
+    "priority": 500,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false,
+            "includeApplications": [
+                {
+                    "appId": "a7eed01f-a333-4983-bc6b-d359ec9e5eef"
+                }
+            ]
+        }
+    },
+    "handler": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler",
+        "customExtension": {
+            "id": "66867d1f-7824-4f38-aad1-75da1ad09ee2"
+        }
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-onattributecollectionsubmitlistener-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationeventlistener-onattributecollectionsubmitlistener-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-onattributecollectionsubmitlistener-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-onattributecollectionsubmitlistener-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-onattributecollectionsubmitlistener-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-onattributecollectionsubmitlistener-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-onattributecollectionsubmitlistener-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-onattributecollectionsubmitlistener-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
+    "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitListener",
+    "id": "2066575e-fc31-4ac7-b07c-81b85f074441",
+    "priority": 500,
+    "authenticationEventsFlowId": null,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false
+        }
+    },
+    "handler": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler",
+        "configuration": null
+    }
+}
+```

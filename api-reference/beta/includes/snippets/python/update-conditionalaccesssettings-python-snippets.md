@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.conditional_access_settings import ConditionalAccessSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ConditionalAccessSettings(
 	signaling_status = Status.Disabled,
@@ -15,7 +16,7 @@ request_body = ConditionalAccessSettings(
 	}
 )
 
-result = await graph_client.network_access.settings.conditional_access.patch(body = request_body)
+result = await graph_client.network_access.settings.conditional_access.patch(request_body)
 
 
 ```

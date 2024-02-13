@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_resource_role_scope import AccessPackageResourceRoleScope
+from msgraph.generated.models.access_package_resource_role import AccessPackageResourceRole
+from msgraph.generated.models.access_package_resource import AccessPackageResource
+from msgraph.generated.models.access_package_resource_scope import AccessPackageResourceScope
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageResourceRoleScope(
 	role = AccessPackageResourceRole(
@@ -29,7 +33,7 @@ request_body = AccessPackageResourceRoleScope(
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.acce_packages.by_acce_package_id('accessPackage-id').resource_role_scopes.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_packages.by_access_package_id('accessPackage-id').resource_role_scopes.post(request_body)
 
 
 ```

@@ -17,13 +17,10 @@ Update the properties of a [customAuthenticationExtension](../resources/customau
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "customauthenticationextension_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/customauthenticationextension-update-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ PATCH /identity/customAuthenticationExtensions/{customAuthenticationExtensionId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -51,6 +48,8 @@ You must specify the `@odata.type` property when updating a [customAuthenticatio
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |description|String|Description for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |displayName|String|Display name for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|handler|[onAttributeCollectionStartCustomExtensionHandler](../resources/onattributecollectionstartcustomextensionhandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionStartCustomExtensionListener** listener type.|
+|handler|[onAttributeCollectionSubmitCustomExtensionHandler](../resources/onattributecollectionsubmitcustomextensionhandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionSubmitCustomExtensionListener** listener type.|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 
 
@@ -131,7 +130,7 @@ Content-length: 468
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

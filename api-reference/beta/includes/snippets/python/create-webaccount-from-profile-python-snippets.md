@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.web_account import WebAccount
+from msgraph.generated.models.service_information import ServiceInformation
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = WebAccount(
 	description = "My Github contributions!",
@@ -17,7 +19,7 @@ request_body = WebAccount(
 	),
 )
 
-result = await graph_client.me.profile.web_accounts.post(body = request_body)
+result = await graph_client.me.profile.web_accounts.post(request_body)
 
 
 ```

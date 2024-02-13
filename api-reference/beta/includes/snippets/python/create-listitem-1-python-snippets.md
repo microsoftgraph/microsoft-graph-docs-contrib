@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.list_item import ListItem
+from msgraph.generated.models.field_value_set import FieldValueSet
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ListItem(
 	fields = FieldValueSet(
@@ -18,7 +20,7 @@ request_body = ListItem(
 	),
 )
 
-result = await graph_client.sites.by_site_id('site-id').lists.by_list_id('list-id').items.post(body = request_body)
+result = await graph_client.sites.by_site_id('site-id').lists.by_list_id('list-id').items.post(request_body)
 
 
 ```

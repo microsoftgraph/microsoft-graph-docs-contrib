@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unified_role_eligibility_schedule_request import UnifiedRoleEligibilityScheduleRequest
+from msgraph.generated.models.request_schedule import RequestSchedule
+from msgraph.generated.models.expiration_pattern import ExpirationPattern
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnifiedRoleEligibilityScheduleRequest(
 	action = UnifiedRoleScheduleRequestActions.AdminAssign,
@@ -23,7 +26,7 @@ request_body = UnifiedRoleEligibilityScheduleRequest(
 	),
 )
 
-result = await graph_client.role_management.directory.role_eligibility_schedule_requests.post(body = request_body)
+result = await graph_client.role_management.directory.role_eligibility_schedule_requests.post(request_body)
 
 
 ```

@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.education_assignment import EducationAssignment
+from msgraph.generated.models.education_item_body import EducationItemBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationAssignment(
 	display_name = "Reading and review test 09.03 #5",
@@ -18,7 +20,7 @@ request_body = EducationAssignment(
 	added_student_action = EducationAddedStudentAction.None,
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').patch(body = request_body)
+result = await graph_client.education.classes.by_education_class_id('educationClass-id').assignments.by_education_assignment_id('educationAssignment-id').patch(request_body)
 
 
 ```

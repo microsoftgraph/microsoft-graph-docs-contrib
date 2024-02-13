@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a user's direct reports.
+Get a user's direct reports. Returns the users and contacts for whom this user is assigned as manager. This API doesn't support getting the direct report chain beyond the specified user's direct reports.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -28,22 +28,37 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
+
+To retrieve the direct reports of a user:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/directReports
 GET /users/{id | userPrincipalName}/directReports
 ```
+
+To retrieve the user and their direct reports, use the `$expand` query parameter:
+
+>**Note**: `$expand` returns a maximum of 20 objects. For details, see [query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me?$expand=directReports
+GET /users/{id | userPrincipalName}?$expand=directReports
+```
+
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$select`, `$count`, `$expand`, and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response. You can use `$select` nested in the `$expand` expression. For example, `me?$expand=($select=id,displayName)`. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json  |
+| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

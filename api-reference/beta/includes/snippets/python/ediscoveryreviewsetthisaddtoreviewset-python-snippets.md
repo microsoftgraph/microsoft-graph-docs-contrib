@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.add_to_review_set_post_request_body import AddToReviewSetPostRequestBody
+from msgraph.generated.models.ediscovery_search import EdiscoverySearch
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AddToReviewSetPostRequestBody(
 	search = EdiscoverySearch(
@@ -15,7 +17,7 @@ request_body = AddToReviewSetPostRequestBody(
 	additional_data_options = AdditionalDataOptions.LinkedFiles,
 )
 
-await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').review_sets.by_review_set_id('ediscoveryReviewSet-id').microsoft_graph_security_add_to_review_set.post(body = request_body)
+await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').review_sets.by_ediscovery_review_set_id('ediscoveryReviewSet-id').microsoft_graph_security_add_to_review_set.post(request_body)
 
 
 ```

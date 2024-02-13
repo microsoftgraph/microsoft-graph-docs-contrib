@@ -18,18 +18,15 @@ Delete a [staff member](../resources/bookingstaffmember.md) in the specified [bo
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+<!-- { "blockType": "permissions", "name": "bookingstaffmember_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingstaffmember-delete-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/{id}/staffMembers/{id}
+DELETE /solutions/bookingbusinesses/{id}/staffMembers/{id}
 
 ```
 ## Request headers
@@ -55,7 +52,7 @@ Here's an example of the request.
   "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "5fae928f-6d2d-417a-ad96-4b0caeb362d6"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/5fae928f-6d2d-417a-ad96-4b0caeb362d6
+DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/5fae928f-6d2d-417a-ad96-4b0caeb362d6
 ```
 
 # [C#](#tab/csharp)
@@ -80,10 +77,6 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-bookingstaffmember-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingstaffmember-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

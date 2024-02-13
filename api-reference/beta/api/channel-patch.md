@@ -41,7 +41,7 @@ PATCH /teams/{team-id}/channels/{channel-id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -74,7 +74,7 @@ PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e2026
 
 #### Response
 
-Here is an example of the response. 
+Here's an example of the response. 
 <!-- {
   "blockType": "response"
 } -->
@@ -149,7 +149,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 <!-- {
   "blockType": "response"

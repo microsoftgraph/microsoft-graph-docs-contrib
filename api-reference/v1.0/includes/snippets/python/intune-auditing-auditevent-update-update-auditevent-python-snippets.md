@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.audit_event import AuditEvent
+from msgraph.generated.models.audit_actor import AuditActor
+from msgraph.generated.models.audit_resource import AuditResource
+from msgraph.generated.models.audit_property import AuditProperty
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AuditEvent(
 	odata_type = "#microsoft.graph.auditEvent",
@@ -17,7 +21,7 @@ request_body = AuditEvent(
 		audit_actor_type = "Audit Actor Type value",
 		user_permissions = [
 			"User Permissions value",
-		]
+		],
 		application_id = "Application Id value",
 		application_display_name = "Application Display Name value",
 		user_principal_name = "User Principal Name value",
@@ -45,18 +49,18 @@ request_body = AuditEvent(
 					old_value = "Old Value value",
 					new_value = "New Value value",
 				),
-			]
+			],
 			audit_resource_type = "Audit Resource Type value",
 			resource_id = "Resource Id value",
 			additional_data = {
 					"type" : "Type value",
 			}
 		),
-	]
+	],
 	category = "Category value",
 )
 
-result = await graph_client.device_management.audit_events.by_audit_event_id('auditEvent-id').patch(body = request_body)
+result = await graph_client.device_management.audit_events.by_audit_event_id('auditEvent-id').patch(request_body)
 
 
 ```

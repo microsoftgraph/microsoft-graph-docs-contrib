@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.copy_to_default_content_location_post_request_body import CopyToDefaultContentLocationPostRequestBody
+from msgraph.generated.models.item_reference import ItemReference
+from msgraph.generated.models.sharepoint_ids import SharepointIds
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CopyToDefaultContentLocationPostRequestBody(
 	source_file = ItemReference(
@@ -18,7 +21,7 @@ request_body = CopyToDefaultContentLocationPostRequestBody(
 	destination_file_name = "newname.txt",
 )
 
-await graph_client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').copy_to_default_content_location.post(body = request_body)
+await graph_client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').copy_to_default_content_location.post(request_body)
 
 
 ```

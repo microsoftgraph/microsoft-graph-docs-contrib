@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.user import User
+from msgraph.generated.models.on_premises_extension_attributes import OnPremisesExtensionAttributes
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = User(
 	on_premises_extension_attributes = OnPremisesExtensionAttributes(
@@ -15,7 +17,7 @@ request_body = User(
 	),
 )
 
-result = await graph_client.users.by_user_id('user-id').patch(body = request_body)
+result = await graph_client.users.by_user_id('user-id').patch(request_body)
 
 
 ```

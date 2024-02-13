@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.messages.item.attachments.item.attachment_item_request_builder import AttachmentItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = AttachmentRequestBuilder.AttachmentRequestBuilderGetQueryParameters(
+query_params = AttachmentItemRequestBuilder.AttachmentItemRequestBuilderGetQueryParameters(
 		expand = ["microsoft.graph.itemattachment/item"],
 )
 
-request_configuration = AttachmentRequestBuilder.AttachmentRequestBuilderGetRequestConfiguration(
+request_configuration = AttachmentItemRequestBuilder.AttachmentItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

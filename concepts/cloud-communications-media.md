@@ -41,5 +41,5 @@ For an example that shows you how to create a bot that uses application-hosted m
 
 ## See also
 
-- [Calls permissions](./permissions-reference.md#calls-permissions)
+- [Calls permissions](./permissions-reference.md)
 - [Teams API overview](teams-concept-overview.md)

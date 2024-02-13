@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph.generated.models.requestor_settings import RequestorSettings
+from msgraph.generated.models.user_set import UserSet
+from msgraph.generated.models.custom_extension_handler import CustomExtensionHandler
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageAssignmentPolicy(
 	id = "5540a08f-8ab5-43f6-a923-015275799197",
@@ -18,20 +22,20 @@ request_body = AccessPackageAssignmentPolicy(
 		accept_requests = True,
 		scope_type = "AllExistingDirectorySubjects",
 		allowed_requestors = [
-		]
+		],
 	),
 	access_review_settings = None,
 	custom_extension_handlers = [
-	]
+	],
 	additional_data = {
-			"expiration" : (
-				type = "afterDuration",
-				duration = "P365D",
-			),
+			"expiration" : {
+					"type" : "afterDuration",
+					"duration" : "P365D",
+			},
 	}
 )
 
-result = await graph_client.identity_governance.entitlement_management.acce_package_assignment_policies.by_acces_package_assignment_policie_id('accessPackageAssignmentPolicy-id').put(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_policies.by_access_package_assignment_policy_id('accessPackageAssignmentPolicy-id').put(request_body)
 
 
 ```

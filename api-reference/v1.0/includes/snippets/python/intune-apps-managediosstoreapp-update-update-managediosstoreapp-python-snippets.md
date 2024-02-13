@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.managed_i_o_s_store_app import ManagedIOSStoreApp
+from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.ios_device_type import IosDeviceType
+from msgraph.generated.models.ios_minimum_operating_system import IosMinimumOperatingSystem
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ManagedIOSStoreApp(
 	odata_type = "#microsoft.graph.managedIOSStoreApp",
@@ -47,7 +51,7 @@ request_body = ManagedIOSStoreApp(
 	),
 )
 
-result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(body = request_body)
+result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(request_body)
 
 
 ```

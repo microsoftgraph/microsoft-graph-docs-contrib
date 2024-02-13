@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.operational_insights_connection import OperationalInsightsConnection
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = OperationalInsightsConnection(
 	odata_type = "#microsoft.graph.windowsUpdates.operationalInsightsConnection",
@@ -15,7 +16,7 @@ request_body = OperationalInsightsConnection(
 	workspace_name = "my-workspace",
 )
 
-result = await graph_client.admin.windows.updates.resource_connections.post(body = request_body)
+result = await graph_client.admin.windows.updates.resource_connections.post(request_body)
 
 
 ```

@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.url_assessment_request import UrlAssessmentRequest
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UrlAssessmentRequest(
 	odata_type = "#microsoft.graph.urlAssessmentRequest",
@@ -15,7 +16,7 @@ request_body = UrlAssessmentRequest(
 	category = ThreatCategory.Phishing,
 )
 
-result = await graph_client.information_protection.threat_assessment_requests.post(body = request_body)
+result = await graph_client.information_protection.threat_assessment_requests.post(request_body)
 
 
 ```

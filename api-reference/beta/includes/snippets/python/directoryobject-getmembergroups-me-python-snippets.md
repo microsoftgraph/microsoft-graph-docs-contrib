@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.get_member_groups_post_request_body import GetMemberGroupsPostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = GetMemberGroupsPostRequestBody(
 	security_enabled_only = True,
 )
 
-result = await graph_client.me.get_member_groups.post(body = request_body)
+result = await graph_client.me.get_member_groups.post(request_body)
 
 
 ```

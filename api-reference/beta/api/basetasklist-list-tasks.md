@@ -17,13 +17,10 @@ Namespace: microsoft.graph
 Get the [baseTask](../resources/basetask.md) resources from the tasks navigation property of a specific [baseTaskList](../resources/basetasklist.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
-|Delegated (personal Microsoft account)|Tasks.Read, Tasks.ReadWrite|
-|Application|Not supported|
+<!-- { "blockType": "permissions", "name": "basetasklist_list_tasks" } -->
+[!INCLUDE [permissions-table](../includes/permissions/basetasklist-list-tasks-permissions.md)]
 
 ## HTTP request
 
@@ -42,10 +39,10 @@ This method supports `$expand`, `$filter` and `$top`  [OData query parameters](/
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -65,10 +62,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/me/tasks/lists/AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNm/tasks
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-basetask-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-basetask-javascript-snippets.md)]

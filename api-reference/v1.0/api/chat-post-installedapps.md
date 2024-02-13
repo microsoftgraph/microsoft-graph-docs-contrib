@@ -45,7 +45,7 @@ POST /chats/{chat-id}/installedApps
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -69,6 +69,8 @@ If successful, this method returns a `201 Created` response code.
 ### Example 1: Install app in a chat
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -122,6 +124,8 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -136,6 +140,8 @@ HTTP/1.1 201 Created
 To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -207,6 +213,8 @@ Content-Type: application/json
 ---
 
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

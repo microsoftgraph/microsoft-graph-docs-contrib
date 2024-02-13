@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A **preApprovedPermissions** type describes the set of permissions that are pre-approved for the resource. This is an abstract base type from which the following types are derived:
+A **preApprovedPermissions** type describes the set of permissions that are pre-approved for the resource. The type is an abstract base type from which the following types are derived:
 
 * [allPreApprovedPermissions](allPreApprovedPermissions.md) indicates all permissions for all APIs are pre-approved
 * [allPreApprovedPermissionsOnResourceApp](allPreApprovedPermissionsOnResourceApp.md) indicates all permissions for a specified API are pre-approved
@@ -29,7 +29,7 @@ A **preApprovedPermissions** type describes the set of permissions that are pre-
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.preApprovedPermissions"

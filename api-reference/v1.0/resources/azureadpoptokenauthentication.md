@@ -1,6 +1,6 @@
 ---
 title: "azureAdPopTokenAuthentication resource type"
-description: "Defines the Azure AD Proof Of Possession (PoP) used to authenticate with a workflow extension."
+description: "Defines the Microsoft Entra Proof Of Possession (PoP) used to authenticate with a workflow extension."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"

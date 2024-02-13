@@ -7,15 +7,25 @@ author: sebastienlevert
 
 # File component in Microsoft Graph Toolkit
 
-The File component is used to represent an individual [file/folder from OneDrive or SharePoint](/graph/onedrive-concept-overview) by displaying information such as the file/folder name, an icon indicating the file type, and other properties such as the author, last modified date, or other details. You can provide the identifiers for a file and the component will generate the query to retrieve the file based on the identifiers provided. This component can be used on its own or as part of the [mgt-file-list](./file-list.md) components.
+The File component is used to represent an individual [file/folder from OneDrive or SharePoint](/graph/onedrive-concept-overview). The component displays information such as the file or folder name, the file type icon, and the author and last modified date. You can provide the identifiers for a file and the component generates the query to retrieve the file based on the identifiers provided. This component can be used on its own or as part of the [mgt-file-list](./file-list.md) components.
 
 ## Example
 
 The following example displays a file using the `mgt-file` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file--file&source=docs" height="250"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file--file&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-html--file&source=docs" height="250"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-html--file&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-react--file&source=docs" height="250"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-react--file&source=docs).
+
+---
 
 ## Properties
 
@@ -24,7 +34,7 @@ You can use several properties to customize the component.
 | Attribute      | Property      | Description                                                                                                                                                                                                                                                                                                                                                                                                               |
 | -------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | file-query     | fileQuery     | The full query or path to the file to be retrieved.                                                                                                                                                                                                                                                                                                                                                                       |
-| user-id        | userId        | ID of the user. This is used to get the file for a specified user. Must also provide `item-id`, `item-path`, `insight-type` or `insight-id`.                                                                                                                                                                                                                                                                              |
+| user-id        | userId        | ID of the user. This property is used to get the file for a specified user. Must also provide `item-id`, `item-path`, `insight-type` or `insight-id`.                                                                                                                                                                                                                                                                              |
 | drive-id       | driveId       | The ID of the drive the file belongs to. Must also provide either `item-id` or `item-path`.                                                                                                                                                                                                                                                                                                                               |
 | group-id       | groupId       | ID of the group the file belongs to. Must also provide either `item-id` or `item-path`.                                                                                                                                                                                                                                                                                                                                   |
 | site-id        | siteId        | ID of the site the file belongs to. Must also provide either `item-id` or `item-path`. Provide the `list-id` too if you’re referencing a file from a specific list.                                                                                                                                                                                                                                                       |
@@ -125,31 +135,28 @@ To learn more, see [styling components](../customize-components/style.md).
 
 ## Microsoft Graph APIs and permissions
 
-This control uses the following Microsoft Graph APIs and permissions.
+This control uses the following Microsoft Graph APIs and permissions. For each API call, one of the permissions listed is required.
 
 | Configuration                                                                                    | Permission Scopes                          | API                                                                            |
 | ------------------------------------------------------------------------------------------------ | ------------------------------------------ | ------------------------------------------------------------------------------ |
-| Developer provides `{drive-id}` AND `{item-id}`                                                  | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}`                                       |
-| Developer provides `{drive-id}` AND `{item-path}`                                                | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}`                                     |
-| Developer provides `{group-id}` AND `{item-id}`                                                  | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/drive/items/{item-id}`                                 |
-| Developer provides `{group-id}` AND `{item-path}`                                                | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/drive/root:/{item-path}`                               |
-| Developer provides ONLY `{item-id}`                                                              | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}`                                                |
-| Developer provides ONLY `{item-path}`                                                            | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root:/{item-path}`                                              |
-| Developer provides `{site-id}` AND `{item-id}`                                                   | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}`                                   |
-| Developer provides `{site-id}` AND `{item-path}`                                                 | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/root:/{item-path}`                                 |
-| Developer provides `{site-id}` AND `{list-id}` AND `{item-id}`                                   | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/lists/{list-id}/items/{item-id}/driveItem`               |
-| Developer provides `{user-id}` AND `{item-id}`                                                   | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}`                                   |
-| Developer provides `{user-id}` AND `{item-path}`                                                 | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/root:/{item-path}`                                 |
-| `insight-type` is set to `trending` AND developer provides `{insight-id}`                        | Sites.Read.All                             | `GET /me/insights/trending/{insight-id}/resource`                              |
-| Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `trending` | Sites.Read.All                             | `GET /users/{id or userPrincipalName}/insights/trending/{insight-id}/resource` |
-| `insight-type` is set to `used` AND developer provides `{insight-id}`                            | Sites.Read.All                             | `GET /me/insights/used/{id}/resource`                                          |
-| Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `used`     | Sites.Read.All                             | `GET /users/{id or userPrincipalName}/insights/used/{id}/resource`             |
-| `insight-type` is `shared` AND developer provides `{insight-id}`                                 | Sites.Read.All                             | `GET /me/insights/shared/{id}/resource`                                        |
-| Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `shared`   | Sites.Read.All                             | `GET /users/{id or userPrincipalName}/insights/shared/{id}/resource`           |
+| Developer provides `{drive-id}` AND `{item-id}`                                                  | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /drives/{drive-id}/items/{item-id}](/graph/api/driveitem-get)                          |
+| Developer provides `{drive-id}` AND `{item-path}`                                                | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /drives/{drive-id}/root:/{item-path}](/graph/api/driveitem-get)                        |
+| Developer provides `{group-id}` AND `{item-id}`                                                  | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get)                    |
+| Developer provides `{group-id}` AND `{item-path}`                                                | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /groups/{group-id}/drive/root:/{item-path}](/graph/api/driveitem-get)                  |
+| Developer provides ONLY `{item-id}`                                                              | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /me/drive/items/{item-id}](/graph/api/driveitem-get)                                   |
+| Developer provides ONLY `{item-path}`                                                            | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /me/drive/root:/{item-path}](/graph/api/driveitem-get)                                 |
+| Developer provides `{site-id}` AND `{item-id}`                                                   | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /sites/{site-id}/drive/items/{item-id}](/graph/api/driveitem-get)                      |
+| Developer provides `{site-id}` AND `{item-path}`                                                 | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /sites/{site-id}/drive/root:/{item-path}](/graph/api/driveitem-get)                    |
+| Developer provides `{site-id}` AND `{list-id}` AND `{item-id}`                                   | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /sites/{site-id}/lists/{list-id}/items/{item-id}/driveItem](/graph/api/driveitem-get)  |
+| Developer provides `{user-id}` AND `{item-id}`                                                   | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /users/{user-id}/drive/items/{item-id}](/graph/api/driveitem-get)                      |
+| Developer provides `{user-id}` AND `{item-path}`                                                 | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /users/{user-id}/drive/root:/{item-path}](/graph/api/driveitem-get)                    |
+| `insight-type` is set to `trending` AND developer provides `{insight-id}`                        | Sites.Read.All, Sites.ReadWrite.All                                                                                                        | [GET /me/insights/trending/{insight-id}/resource](/graph/api/insights-list-trending)        |
+| `insight-type` is set to `used` AND developer provides `{insight-id}`                            | Sites.Read.All, Sites.ReadWrite.All                                                                                                        | [GET /me/insights/used/{id}/resource](/graph/api/insights-list-used)                        |
+| `insight-type` is `shared` AND developer provides `{insight-id}`                                 | Sites.Read.All, Sites.ReadWrite.All                                                                                                        | [GET /me/insights/shared/{id}/resource](/graph/api/insights-list-shared)                    |
 
 ## Templates
 
-The `mgt-file` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
+The `mgt-file` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` to one of the following values:
 
 | Data Type | Data Context                  | Description                                                       |
 | --------- | ----------------------------- | ----------------------------------------------------------------- |

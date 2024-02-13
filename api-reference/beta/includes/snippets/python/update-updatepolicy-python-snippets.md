@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.update_policy import UpdatePolicy
+from msgraph.generated.models.deployment_settings import DeploymentSettings
+from msgraph.generated.models.schedule_settings import ScheduleSettings
+from msgraph.generated.models.rate_driven_rollout_settings import RateDrivenRolloutSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UpdatePolicy(
 	odata_type = "#microsoft.graph.windowsUpdates.updatePolicy",
@@ -24,7 +28,7 @@ request_body = UpdatePolicy(
 	),
 )
 
-result = await graph_client.admin.windows.updates.update_policies.by_update_policie_id('updatePolicy-id').patch(body = request_body)
+result = await graph_client.admin.windows.updates.update_policies.by_update_policy_id('updatePolicy-id').patch(request_body)
 
 
 ```

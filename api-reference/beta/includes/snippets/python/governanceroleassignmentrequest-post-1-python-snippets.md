@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.governance_role_assignment_request import GovernanceRoleAssignmentRequest
+from msgraph.generated.models.governance_schedule import GovernanceSchedule
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = GovernanceRoleAssignmentRequest(
 	role_definition_id = "ea48ad5e-e3b0-4d10-af54-39a45bbfe68d",
@@ -22,7 +24,7 @@ request_body = GovernanceRoleAssignmentRequest(
 	),
 )
 
-result = await graph_client.privileged_access.by_privileged_acce_id('privilegedAccess-id').role_assignment_requests.post(body = request_body)
+result = await graph_client.privileged_access.by_privileged_access_id('privilegedAccess-id').role_assignment_requests.post(request_body)
 
 
 ```

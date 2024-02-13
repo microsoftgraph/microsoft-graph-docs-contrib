@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the summary of number of users registered for each authentication method.
+Represents the summary of number of users registered for each authentication method. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
 ## Methods
 
@@ -40,7 +40,7 @@ The value `privilegedAdmin` consists of the following privileged admin roles:
 * User Administrator
 * Authentication Administrator
 
-The value `admin` includes all Azure Active Directory admin roles.
+The value `admin` includes all Microsoft Entra admin roles.
 
 ## Relationships
 

@@ -16,7 +16,7 @@ Represents an error from a failed workbook operation.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |code|String| The error code.|
-|innererror|error object| Optional. Additional error objects that may be more specific than the top level error.|
+|innererror|error object| Optional. Other error objects that may be more specific than the top level error.|
 |message|String| The error message.|
 
 ## JSON representation

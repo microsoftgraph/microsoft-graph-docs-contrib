@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.android_work_profile_general_device_configuration import AndroidWorkProfileGeneralDeviceConfiguration
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AndroidWorkProfileGeneralDeviceConfiguration(
 	odata_type = "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
@@ -49,7 +50,7 @@ request_body = AndroidWorkProfileGeneralDeviceConfiguration(
 	security_require_verify_apps = True,
 )
 
-result = await graph_client.device_management.device_configurations.post(body = request_body)
+result = await graph_client.device_management.device_configurations.post(request_body)
 
 
 ```

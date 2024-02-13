@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.informationProtection.policy.labels.evaluateClassificationResults.evaluate_classification_results_request_builder import EvaluateClassificationResultsRequestBuilder
+from msgraph.generated.models.evaluate_classification_results_post_request_body import EvaluateClassificationResultsPostRequestBody
+from msgraph.generated.models.content_info import ContentInfo
+from msgraph.generated.models.classification_result import ClassificationResult
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EvaluateClassificationResultsPostRequestBody(
 	content_info = ContentInfo(
@@ -25,17 +29,14 @@ request_body = EvaluateClassificationResultsPostRequestBody(
 			count = 4,
 			confidence_level = 75,
 		),
-	]
+	],
 )
 
-request_configuration = EvaluateClassificationResultsRequestBuilder.EvaluateClassificationResultsRequestBuilderPostRequestConfiguration(
-headers = {
-		'User-Agent' : "ContosoLOBApp/1.0",
-}
+request_configuration = EvaluateClassificationResultsRequestBuilder.EvaluateClassificationResultsRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("User-Agent", "ContosoLOBApp/1.0")
 
-)
 
-result = await graph_client.information_protection.policy.labels.evaluate_classification_results.post(body = request_body, request_configuration = request_configuration)
+result = await graph_client.information_protection.policy.labels.evaluate_classification_results.post(request_body, request_configuration = request_configuration)
 
 
 ```

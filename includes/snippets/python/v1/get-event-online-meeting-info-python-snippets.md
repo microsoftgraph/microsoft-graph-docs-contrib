@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.events.item.event_item_request_builder import EventItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = EventRequestBuilder.EventRequestBuilderGetQueryParameters(
+query_params = EventItemRequestBuilder.EventItemRequestBuilderGetQueryParameters(
 		select = ["isOnlineMeeting","onlineMeetingProvider","onlineMeeting"],
 )
 
-request_configuration = EventRequestBuilder.EventRequestBuilderGetRequestConfiguration(
+request_configuration = EventItemRequestBuilder.EventItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

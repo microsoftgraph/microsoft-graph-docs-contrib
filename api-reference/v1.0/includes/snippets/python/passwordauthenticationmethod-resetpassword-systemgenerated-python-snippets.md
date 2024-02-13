@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.reset_password_post_request_body import ResetPasswordPostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = ResetPasswordPostRequestBody(
+)
 
-result = await graph_client.users.by_user_id('user-id').authentication.methods.by_method_id('authenticationMethod-id').reset_password.post()
+result = await graph_client.users.by_user_id('user-id').authentication.methods.by_authentication_method_id('authenticationMethod-id').reset_password.post(request_body)
 
 
 ```

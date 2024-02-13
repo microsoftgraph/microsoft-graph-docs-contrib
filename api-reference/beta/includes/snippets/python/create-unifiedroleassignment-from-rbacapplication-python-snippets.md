@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unified_role_assignment import UnifiedRoleAssignment
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnifiedRoleAssignment(
 	odata_type = "#microsoft.graph.unifiedRoleAssignment",
@@ -15,7 +16,7 @@ request_body = UnifiedRoleAssignment(
 	directory_scope_id = "/",
 )
 
-result = await graph_client.role_management.directory.role_assignments.post(body = request_body)
+result = await graph_client.role_management.directory.role_assignments.post(request_body)
 
 
 ```

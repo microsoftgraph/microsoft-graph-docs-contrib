@@ -1,5 +1,5 @@
 ---
-title: "Azure AD application authentication methods API overview"
+title: "Microsoft Entra application authentication methods API overview"
 description: "Application authentication methods allow apps to acquire tokens to access data in Azure AD."
 ms.localizationpriority: medium
 author: "madansr7"
@@ -7,11 +7,11 @@ ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ---
 
-# Azure AD application authentication methods API overview 
+# Microsoft Entra application authentication methods API overview 
 
 Namespace: microsoft.graph
 
-Application authentication methods such as certificates and password secrets allow apps to acquire tokens to access data in Azure Active Directory (Azure AD). The policies allow IT admins to enforce best practices for how apps in their organizations use these application authentication methods. For example, an admin might configure a policy to block the use or limit the lifetime of password secrets, and use the creation date of the object to enforce the policy.
+Application authentication methods such as certificates and password secrets allow apps to acquire tokens to access data in Microsoft Entra ID. The policies allow IT admins to enforce best practices for how apps in their organizations use these application authentication methods. For example, an admin might configure a policy to block the use or limit the lifetime of password secrets, and use the creation date of the object to enforce the policy.
 
 These policies allow organizations to take advantage of the new app security hardening features. By enforcing restrictions that are based on the application or service principal created date, an organization can review their current app security posture, inventory apps, and enforce controls per their resourcing schedules and needs. This approach using the created date allows the organization to enforce the policy for new applications and also apply it to existing applications.
 
@@ -52,7 +52,7 @@ The application authentication methods policy API offers the following restricti
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).
-> Restricting customPasswordAddition restriction will block any legacy PowerShell modules that provide a client generated password secret for applications. This restriction still allows the application developer to request Azure AD-generated application password secrets.
+> Restricting customPasswordAddition restriction will block any legacy PowerShell modules that provide a client generated password secret for applications. This restriction still allows the application developer to request Microsoft Entra ID-generated application password secrets.
   
 ### Single vs multi-tenant apps
 
@@ -75,7 +75,7 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 ## Requirements
 
 - Management of application authentication method policies can be performed by a global administrator, application administrator, or cloud application administrator.
-- All app policy management operations require a [Microsoft Entra Workload Identities Premium license](/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
+- All app policy management operations require a [Microsoft Entra Workload ID Premium license](/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
 
 ## Next steps
 

@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.contact import Contact
+from msgraph.generated.models.typed_email_address import TypedEmailAddress
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Contact(
 	email_addresses = [
@@ -21,10 +23,10 @@ request_body = Contact(
 			type = EmailType.Other,
 			other_label = "Volunteer work",
 		),
-	]
+	],
 )
 
-result = await graph_client.me.contacts.by_contact_id('contact-id').patch(body = request_body)
+result = await graph_client.me.contacts.by_contact_id('contact-id').patch(request_body)
 
 
 ```

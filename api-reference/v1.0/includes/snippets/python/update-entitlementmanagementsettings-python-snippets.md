@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.entitlement_management_settings import EntitlementManagementSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EntitlementManagementSettings(
 	external_user_lifecycle_action = AccessPackageExternalUserLifecycleAction.None,
 )
 
-result = await graph_client.identity_governance.entitlement_management.settings.patch(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.settings.patch(request_body)
 
 
 ```

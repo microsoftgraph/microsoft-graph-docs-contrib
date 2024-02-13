@@ -41,7 +41,7 @@ Represents a tenant's secure score per control data. By default, this resource r
 |rank|Int32|Microsoft's stack ranking of control.|
 |remediation|String|Description of what the control will help remediate.|
 |remediationImpact|String|Description of the impact on users of the remediation.|
-|service|String|Service that owns the control (Exchange, Sharepoint, Azure AD).|
+|service|String|Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).|
 |threats|String collection|List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
 elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).|
 |tier|String|Control tier (Core, Defense in Depth, Advanced.)	|
@@ -98,4 +98,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

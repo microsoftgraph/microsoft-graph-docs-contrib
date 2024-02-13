@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.compliance_management_partner import ComplianceManagementPartner
+from msgraph.generated.models.compliance_management_partner_assignment import ComplianceManagementPartnerAssignment
+from msgraph.generated.models.configuration_manager_collection_assignment_target import ConfigurationManagerCollectionAssignmentTarget
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ComplianceManagementPartner(
 	odata_type = "#microsoft.graph.complianceManagementPartner",
@@ -24,7 +27,7 @@ request_body = ComplianceManagementPartner(
 				collection_id = "Collection Id value",
 			),
 		),
-	]
+	],
 	android_enrollment_assignments = [
 		ComplianceManagementPartnerAssignment(
 			odata_type = "microsoft.graph.complianceManagementPartnerAssignment",
@@ -33,7 +36,7 @@ request_body = ComplianceManagementPartner(
 				collection_id = "Collection Id value",
 			),
 		),
-	]
+	],
 	ios_enrollment_assignments = [
 		ComplianceManagementPartnerAssignment(
 			odata_type = "microsoft.graph.complianceManagementPartnerAssignment",
@@ -42,10 +45,10 @@ request_body = ComplianceManagementPartner(
 				collection_id = "Collection Id value",
 			),
 		),
-	]
+	],
 )
 
-result = await graph_client.device_management.compliance_management_partners.post(body = request_body)
+result = await graph_client.device_management.compliance_management_partners.post(request_body)
 
 
 ```

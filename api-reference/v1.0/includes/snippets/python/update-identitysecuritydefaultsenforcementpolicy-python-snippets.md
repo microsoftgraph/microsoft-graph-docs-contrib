@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.identity_security_defaults_enforcement_policy import IdentitySecurityDefaultsEnforcementPolicy
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IdentitySecurityDefaultsEnforcementPolicy(
 	is_enabled = False,
 )
 
-result = await graph_client.policies.identity_security_default_enforcement_policy.patch(body = request_body)
+result = await graph_client.policies.identity_security_defaults_enforcement_policy.patch(request_body)
 
 
 ```

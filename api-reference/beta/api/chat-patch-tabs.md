@@ -45,7 +45,7 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and the updated **te
 ### Example 1: Update the name of a tab in a chat
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

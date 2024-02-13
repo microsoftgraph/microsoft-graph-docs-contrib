@@ -4,9 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.workflow import Workflow
+from msgraph.generated.models.trigger_and_scope_based_conditions import TriggerAndScopeBasedConditions
+from msgraph.generated.models.rule_based_subject_set import RuleBasedSubjectSet
+from msgraph.generated.models.time_based_attribute_trigger import TimeBasedAttributeTrigger
+from msgraph.generated.models.task import Task
+from msgraph.generated.models.key_value_pair import KeyValuePair
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Workflow(
 	display_name = "Onboard pre-hire employee",
@@ -41,12 +47,12 @@ request_body = Workflow(
 					name = "tapIsUsableOnce",
 					value = "true",
 				),
-			]
+			],
 		),
-	]
+	],
 )
 
-result = await graph_client.identity_governance.lifecycle_workflows.workflows.post(body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.workflows.post(request_body)
 
 
 ```

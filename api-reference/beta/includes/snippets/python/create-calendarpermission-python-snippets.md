@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.calendar_permission import CalendarPermission
+from msgraph.generated.models.email_address import EmailAddress
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CalendarPermission(
 	email_address = EmailAddress(
@@ -18,7 +20,7 @@ request_body = CalendarPermission(
 	role = CalendarRoleType.Read,
 )
 
-result = await graph_client.users.by_user_id('user-id').calendar.calendar_permissions.post(body = request_body)
+result = await graph_client.users.by_user_id('user-id').calendar.calendar_permissions.post(request_body)
 
 
 ```

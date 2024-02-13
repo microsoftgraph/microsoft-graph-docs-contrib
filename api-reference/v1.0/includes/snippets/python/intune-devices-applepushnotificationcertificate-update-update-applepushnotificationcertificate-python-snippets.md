@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.apple_push_notification_certificate import ApplePushNotificationCertificate
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ApplePushNotificationCertificate(
 	odata_type = "#microsoft.graph.applePushNotificationCertificate",
@@ -19,7 +20,7 @@ request_body = ApplePushNotificationCertificate(
 	certificate = "Certificate value",
 )
 
-result = await graph_client.device_management.apple_push_notification_certificate.patch(body = request_body)
+result = await graph_client.device_management.apple_push_notification_certificate.patch(request_body)
 
 
 ```

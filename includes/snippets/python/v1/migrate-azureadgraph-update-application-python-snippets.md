@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.application import Application
+from msgraph.generated.models.required_resource_access import RequiredResourceAccess
+from msgraph.generated.models.resource_access import ResourceAccess
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Application(
 	required_resource_access = [
@@ -21,12 +24,12 @@ request_body = Application(
 					id = UUID("3afa6a7d-9b1a-42eb-948e-1650a849e176"),
 					type = "Role",
 				),
-			]
+			],
 		),
-	]
+	],
 )
 
-result = await graph_client.applications.by_application_id('application-id').patch(body = request_body)
+result = await graph_client.applications.by_application_id('application-id').patch(request_body)
 
 
 ```

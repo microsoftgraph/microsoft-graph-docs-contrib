@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAttachment()
 name := "name-value"
 requestBody.SetName(&name) 
 additionalData := map[string]interface{}{
-item := graphmodels.New()
+item := graphmodels.NewMessage()
 	requestBody.SetItem(item)
 }
 requestBody.SetAdditionalData(additionalData)

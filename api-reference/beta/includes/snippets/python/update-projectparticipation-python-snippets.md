@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.project_participation import ProjectParticipation
+from msgraph.generated.models.company_detail import CompanyDetail
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ProjectParticipation(
 	allowed_audiences = AllowedAudiences.Organization,
@@ -16,7 +18,7 @@ request_body = ProjectParticipation(
 	),
 )
 
-result = await graph_client.me.profile.projects.by_project_id('projectParticipation-id').patch(body = request_body)
+result = await graph_client.me.profile.projects.by_project_participation_id('projectParticipation-id').patch(request_body)
 
 
 ```

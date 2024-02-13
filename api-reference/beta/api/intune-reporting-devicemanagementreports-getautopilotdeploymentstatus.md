@@ -1,6 +1,6 @@
 ---
 title: "getAutopilotDeploymentStatus action"
-description: ""
+description: "Intune Reporting Devicemanagementreports Getautopilotdeploymentstatus Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -38,7 +38,7 @@ POST /deviceManagement/reports/getAutopilotDeploymentStatus
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

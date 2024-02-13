@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Create a new [team](../resources/team.md).
 
+> [!NOTE]
+> When you create a team, the SharePoint site of the general channel might fail to provision. If the site fails to provision after 5 minutes, use the [Get filesFolder](/graph/api/channel-get-filesfolder) API to trigger provisioning.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -44,7 +47,7 @@ POST /teams
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -538,6 +541,9 @@ To create a team from a non-standard base template, you want to change the `temp
 
 To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
+> [!Note]
+> It can take up to 24 hours for Teams users to see a custom template change in the gallery.
+
 #### Request
 
 # [HTTP](#tab/http)
@@ -644,7 +650,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/convert-team-from-non-standard-localized-e7-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

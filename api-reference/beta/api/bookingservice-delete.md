@@ -18,18 +18,15 @@ Delete a [bookingService](../resources/bookingservice.md) object in the specifie
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+<!-- { "blockType": "permissions", "name": "bookingservice_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingservice-delete-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/{id}/services/{id}
+DELETE /solutions/bookingbusinesses/{id}/services/{id}
 ```
 ## Request headers
 | Name       | Description|
@@ -37,15 +34,15 @@ DELETE /bookingBusinesses/{id}/services/{id}
 | Authorization  | Bearer {code}|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -54,7 +51,7 @@ The following is an example of the request.
   "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "57da6774-a087-4d69-b0e6-6fb82c339976"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 ```
 
 # [C#](#tab/csharp)
@@ -81,10 +78,6 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@c
 [!INCLUDE [sample-code](../includes/snippets/php/delete-bookingservice-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingservice-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-bookingservice-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -92,7 +85,7 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@c
 ---
 
 ### Response
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

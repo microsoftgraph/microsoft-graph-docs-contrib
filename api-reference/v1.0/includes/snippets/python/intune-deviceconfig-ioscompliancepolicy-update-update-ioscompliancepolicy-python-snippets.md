@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_compliance_policy import IosCompliancePolicy
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IosCompliancePolicy(
 	odata_type = "#microsoft.graph.iosCompliancePolicy",
@@ -29,7 +30,7 @@ request_body = IosCompliancePolicy(
 	managed_email_profile_required = True,
 )
 
-result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').patch(body = request_body)
+result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policy_id('deviceCompliancePolicy-id').patch(request_body)
 
 
 ```

@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.teams_app_installation import TeamsAppInstallation
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TeamsAppInstallation(
 	additional_data = {
@@ -14,7 +15,7 @@ request_body = TeamsAppInstallation(
 	}
 )
 
-result = await graph_client.teams.by_team_id('team-id').installed_apps.post(body = request_body)
+result = await graph_client.teams.by_team_id('team-id').installed_apps.post(request_body)
 
 
 ```

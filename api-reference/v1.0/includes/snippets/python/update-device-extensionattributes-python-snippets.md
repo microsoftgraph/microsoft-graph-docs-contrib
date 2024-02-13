@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device import Device
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Device(
 	additional_data = {
-			"extension_attributes" : (
-				extension_attribute1 = "BYOD-Device",
-			),
+			"extension_attributes" : {
+					"extension_attribute1" : "BYOD-Device",
+			},
 	}
 )
 
-result = await graph_client.devices.by_device_id('device-id').patch(body = request_body)
+result = await graph_client.devices.by_device_id('device-id').patch(request_body)
 
 
 ```

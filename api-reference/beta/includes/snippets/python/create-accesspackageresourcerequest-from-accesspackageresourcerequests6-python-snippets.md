@@ -4,9 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_resource_request import AccessPackageResourceRequest
+from msgraph.generated.models.access_package_resource import AccessPackageResource
+from msgraph.generated.models.access_package_resource_attribute import AccessPackageResourceAttribute
+from msgraph.generated.models.access_package_resource_attribute_question import AccessPackageResourceAttributeQuestion
+from msgraph.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
+from msgraph.generated.models.access_package_localized_content import AccessPackageLocalizedContent
+from msgraph.generated.models.access_package_localized_text import AccessPackageLocalizedText
+from msgraph.generated.models.access_package_user_directory_attribute_store import AccessPackageUserDirectoryAttributeStore
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageResourceRequest(
 	catalog_id = "26ac0c0a-08bc-4a7b-a313-839f58044ba5",
@@ -34,7 +42,7 @@ request_body = AccessPackageResourceRequest(
 						text = AccessPackageLocalizedContent(
 							default_text = "Title",
 							localized_texts = [
-							]
+							],
 						),
 					),
 				),
@@ -42,11 +50,11 @@ request_body = AccessPackageResourceRequest(
 					odata_type = "#microsoft.graph.accessPackageUserDirectoryAttributeStore",
 				),
 			),
-		]
+		],
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.acces_package_resource_requests.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_resource_requests.post(request_body)
 
 
 ```

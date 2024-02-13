@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LocalizedNotificationMessage localizedNotificationMessage = graphClient.deviceManagement().notificationMessageTemplates("{notificationMessageTemplateId}").localizedNotificationMessages("{localizedNotificationMessageId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+LocalizedNotificationMessage result = graphClient.deviceManagement().notificationMessageTemplates().byNotificationMessageTemplateId("{notificationMessageTemplate-id}").localizedNotificationMessages().byLocalizedNotificationMessageId("{localizedNotificationMessage-id}").get();
+
 
 ```

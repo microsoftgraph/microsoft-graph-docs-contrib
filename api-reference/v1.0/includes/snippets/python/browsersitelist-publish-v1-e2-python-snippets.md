@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.publish_post_request_body import PublishPostRequestBody
+from msgraph.generated.models.browser_site import BrowserSite
+from msgraph.generated.models.browser_shared_cookie import BrowserSharedCookie
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PublishPostRequestBody(
 	revision = "1.0",
@@ -17,15 +20,15 @@ request_body = PublishPostRequestBody(
 		BrowserSite(
 			id = "2e27cc86-3662-447e-b751-274fb9f869ea",
 		),
-	]
+	],
 	shared_cookies = [
 		BrowserSharedCookie(
 			id = "7f639835-23ab-4793-b1e6-1a06fad127a2",
 		),
-	]
+	],
 )
 
-result = await graph_client.admin.edge.internet_explorer_mode.site_lists.by_site_list_id('browserSiteList-id').publish.post(body = request_body)
+result = await graph_client.admin.edge.internet_explorer_mode.site_lists.by_browser_site_list_id('browserSiteList-id').publish.post(request_body)
 
 
 ```

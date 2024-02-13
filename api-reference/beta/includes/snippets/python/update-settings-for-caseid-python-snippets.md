@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.case_settings import CaseSettings
+from msgraph.generated.models.redundancy_detection_settings import RedundancyDetectionSettings
+from msgraph.generated.models.topic_modeling_settings import TopicModelingSettings
+from msgraph.generated.models.ocr_settings import OcrSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CaseSettings(
 	redundancy_detection = RedundancyDetectionSettings(
@@ -27,7 +31,7 @@ request_body = CaseSettings(
 	),
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').settings.patch(body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').settings.patch(request_body)
 
 
 ```

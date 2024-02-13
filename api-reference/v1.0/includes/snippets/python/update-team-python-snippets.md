@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.team import Team
+from msgraph.generated.models.team_member_settings import TeamMemberSettings
+from msgraph.generated.models.team_messaging_settings import TeamMessagingSettings
+from msgraph.generated.models.team_fun_settings import TeamFunSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Team(
 	member_settings = TeamMemberSettings(
@@ -22,7 +26,7 @@ request_body = Team(
 	),
 )
 
-result = await graph_client.teams.by_team_id('team-id').patch(body = request_body)
+result = await graph_client.teams.by_team_id('team-id').patch(request_body)
 
 
 ```

@@ -25,7 +25,7 @@ returns a collection of worksheet objects that are part of the workbook.
 
 ## Authorization and scopes
 
-You can use the [Azure AD v.20 endpoint](/graph/auth-register-app-v2) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Microsoft Entra v.20 endpoint](/graph/auth-register-app-v2) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
 One of the following [permission scopes](/graph/permissions-reference) is required to use the Excel resource:
 
@@ -1322,5 +1322,3 @@ Content-Type: application/json
 }
 ```
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
