@@ -29,15 +29,10 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "optionalProperties": [
   ],
-   "@odata.type": "#microsoft.graph.attendeeNotificationInfo",
+   "@odata.type": "microsoft.graph.attendeeNotificationInfo"
 }-->
    ```json
 {
-"attendeeNotificationInfo": [
-  {
-    "@odata.type": "#microsoft.graph.attendeeNotificationInfo",
-  }
-],
     "phoneNumber": "String",
     "timeZone": "String",
 }
