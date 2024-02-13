@@ -16,22 +16,26 @@ Namespace: microsoft.graph
 Represents a workplace in a tenant.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sensorDevices](../api/workplace-list-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|Retrieve a list of sensor devices created for a tenant.|
+|[List sensorDevices](../api/workplace-list-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|Retrieve a list of workplace sensor devices created for a tenant.|
 |[Create workplaceSensorDevice](../api/workplace-post-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Create a new sensor device.|
 
-<!-- ## Properties
-|Property|Type|Description|
-|:---|:---|:---| -->
+## Properties
+
+None.
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |sensorDevices|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|A collection of sensor devices.|
 
-<!-- ## JSON representation
-The following is a JSON representation of the resource. -->
+## JSON representation
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -39,10 +43,7 @@ The following is a JSON representation of the resource. -->
   "openType": false
 }
 -->
-<!-- ``` json
+``` json
 {
   "@odata.type": "#microsoft.graph.workplace"
 }
-``` -->
-
-
