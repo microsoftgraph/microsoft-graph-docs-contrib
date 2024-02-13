@@ -436,7 +436,7 @@ items:
           - name: Build cross-device apps
             href: cross-device-app-configuration.md
             displayName: cross device, Project Rome
-      - name: Customer booking (preview)
+      - name: Customer booking
         items:
           - name: Overview
             href: booking-concept-overview.md
