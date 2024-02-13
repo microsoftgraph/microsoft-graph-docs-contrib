@@ -396,7 +396,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 For more information on using call records, see [callRecord](../resources/callrecords-callrecord.md).
 

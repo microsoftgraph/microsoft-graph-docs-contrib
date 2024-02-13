@@ -95,5 +95,5 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 [List meetingAttendanceReports](../api/meetingattendancereport-list.md)
