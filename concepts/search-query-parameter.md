@@ -358,7 +358,7 @@ Both the string inputs you provide in `$search`, as well as the searchable prope
 [search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.0
 [search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
 
-## See also
+## Related content
 
 - [Use query parameters to customize responses](/graph/query-parameters)
 - [Advanced query capabilities on directory objects](/graph/aad-advanced-queries)

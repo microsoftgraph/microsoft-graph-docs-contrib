@@ -142,7 +142,7 @@ The previous example shows a notification corresponding to a chat message resour
 > [!NOTE]
 > GET calls always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation returns the updated resource.
 
-## See also
+## Related content
 
 * [Microsoft Graph change notifications](change-notifications-overview.md)
 * [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
