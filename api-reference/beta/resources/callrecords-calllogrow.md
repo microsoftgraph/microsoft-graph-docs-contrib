@@ -1,6 +1,6 @@
 ---
 title: "callLogRow resource type"
-description: "Represents the basic properties of the PSTN call log, Direct Routing call log, and SMS log."
+description: "Represents the basic properties of the PSTN call log, direct routing call log, and SMS log."
 author: "rihob"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the basic properties of the PSTN call log, Direct Routing call log, and SMS log.
+Represents the basic properties of the PSTN call log, direct routing call log, and SMS log.
 
 The base type for [microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md), [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md) and [microsoft.graph.callRecords.smsLogRow](callrecords-smslogrow.md).
 ## Properties
@@ -31,7 +31,7 @@ The base type for [microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstnc
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
