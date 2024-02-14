@@ -46,8 +46,7 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
   "teamsAppId": "string",
   "displayName": "string",
   "version": "string",
-  "authorization": "#microsoft.graph.teamsAppAuthorization",
-  "dashboardCards": "#microsoft.graph.teamsAppDashboardCardDefinition"
+  "authorization": "#microsoft.graph.teamsAppAuthorization"
 }
 ```
 
