@@ -47,10 +47,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinesspostservices",
-  "sampleKeys": ["{Contosolunchdelivery}@contoso.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{Contosolunchdelivery}@contoso.com/services
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/services
 Content-type: application/json
 
 {
@@ -178,7 +178,7 @@ Content-type: application/json
     "isLocationOnline": true,
     "isAnonymousJoinEnabled": false,
     "smsNotificationsEnabled": true,
-    "webUrl": "https://outlook.office365.com/owa/calendar/{Contosolunchdelivery}@contoso.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
+    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "defaultLocation": {
         "displayName": "Contoso Lunch Delivery",
         "locationEmailAddress": null,

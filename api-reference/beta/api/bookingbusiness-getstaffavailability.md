@@ -56,11 +56,11 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_getstaffavailability",
-  "sampleKeys": ["{contosolunchdelivery}@contoso.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/{contosolunchdelivery}@contoso.com/getStaffAvailability
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/getStaffAvailability
 Content-Type: application/json
 
 {

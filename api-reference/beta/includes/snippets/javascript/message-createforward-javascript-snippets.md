@@ -16,7 +16,7 @@ const message = {
     toRecipients: [
       {
         emailAddress: {
-          address: '{danas}@contoso.com',
+          address: 'danas@contoso.com',
           name: 'Dana Swope'
         }
       }

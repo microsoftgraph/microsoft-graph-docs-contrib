@@ -11,13 +11,13 @@ $params = @{
 		toRecipients = @(
 			@{
 				emailAddress = @{
-					address = "{samanthab}@contoso.com"
+					address = "samanthab@contoso.com"
 					name = "Samantha Booth"
 				}
 			}
 			@{
 				emailAddress = @{
-					address = "{randiw}@contoso.com"
+					address = "randiw@contoso.com"
 					name = "Randi Welch"
 				}
 			}

@@ -125,8 +125,8 @@ Content-type: application/json
             "id": "263a1289-8282-4bf7-91f7-550d9bba8c02",
             "displayName": "Sara Davis",
             "jobTitle": "Finance VP",
-            "mail": "{SaraD}@contoso.com",
-            "userPrincipalName": "{SaraD}@contoso.com"
+            "mail": "SaraD@contoso.com",
+            "userPrincipalName": "SaraD@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.group",

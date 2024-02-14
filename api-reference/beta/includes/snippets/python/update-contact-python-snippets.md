@@ -15,10 +15,10 @@ request_body = Contact(
 		TypedEmailAddress(
 			type = EmailType.Personal,
 			name = "Pavel Bansky",
-			address = "{pavelb}@contoso.com",
+			address = "pavelb@contoso.com",
 		),
 		TypedEmailAddress(
-			address = "{pavelb}@contoso.com",
+			address = "pavelb@contoso.com",
 			name = "Pavel Bansky",
 			type = EmailType.Other,
 			other_label = "Volunteer work",

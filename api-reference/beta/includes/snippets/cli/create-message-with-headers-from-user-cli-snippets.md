@@ -14,7 +14,7 @@ mgc-beta users messages create --user-id {user-id} --body '{
         "contentType":"HTML",
 \
         "content":"The group represents Washington."
-\{AlexW}@contoso.com
+\AlexW@contoso.com
     },
 \
     "toRecipients":[

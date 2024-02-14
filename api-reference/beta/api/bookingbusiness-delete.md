@@ -49,10 +49,10 @@ Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_bookingbusiness",
-  "sampleKeys": ["{fabrikam}@contoso.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/{fabrikam}@contoso.com
+DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/fabrikam@contoso.com
 ```
 
 # [C#](#tab/csharp)

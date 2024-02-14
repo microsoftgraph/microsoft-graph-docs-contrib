@@ -12,7 +12,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnifiedGroupSource(
 	group = Group(
-		mail = "{SOCTeam}@contoso.com",
+		mail = "SOCTeam@contoso.com",
 	),
 	included_sources = SourceType.Mailbox | SourceType.Site,
 )

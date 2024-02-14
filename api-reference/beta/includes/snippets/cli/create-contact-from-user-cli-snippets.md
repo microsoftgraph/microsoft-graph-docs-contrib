@@ -10,12 +10,12 @@ mgc-beta users contacts create --user-id {user-id} --body '{
   "givenName": "Pavel",
 \
   "surname": "Bansky",
-\{pavelb}@contoso.com
+\pavelb@contoso.com
   "emailAddresses": [
 \
     {
 \
-      "address": "{pavelb}@contoso.com,
+      "address": "pavelb@contoso.com,
 \
       "name": "Pavel Bansky",
 \

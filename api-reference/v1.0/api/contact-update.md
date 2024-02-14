@@ -188,11 +188,11 @@ Content-type: application/json
   "emailAddresses": [
     {
       "name": "Garth",
-      "address": "{garth}@contoso.com"
+      "address": "garth@contoso.com"
     }
   ],
   "imAddresses": [
-    "sip:{garthf}@contoso.com"
+    "sip:garthf@contoso.com"
   ],
   "jobTitle": "Web Marketing Manager",
   "companyName": "Contoso, Inc.",

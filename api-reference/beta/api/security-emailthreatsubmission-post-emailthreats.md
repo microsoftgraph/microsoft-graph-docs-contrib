@@ -70,7 +70,7 @@ Content-type: application/json
 {
   "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "spam",
-  "recipientEmailAddress": "{tifc}@contoso.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "messageUrl": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
 }
 ```
@@ -127,7 +127,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
   "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "spam",
-  "recipientEmailAddress": "{tifc}@contoso.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
   "createdDateTime": "2021-10-10T03:30:18.6890937Z",
   "contentType": "email",
@@ -138,7 +138,7 @@ Content-type: application/json
     "user": {
       "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
       "displayName": "Ronald Admin",
-      "email": "{tifc}@contoso.com"
+      "email": "tifc@contoso.com"
     }
   },
   "result": {
@@ -175,7 +175,7 @@ Content-type: application/json
 {
   "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "notSpam",
-  "recipientEmailAddress": "{tifc}@contoso.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "messageUrl": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
   "tenantAllowOrBlockListAction":
   {
@@ -203,7 +203,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
   "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "spam",
-  "recipientEmailAddress": "{tifc}@contoso.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
   "createdDateTime": "2021-10-10T03:30:18.6890937Z",
   "contentType": "email",
@@ -214,7 +214,7 @@ Content-type: application/json
     "user": {
       "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
       "displayName": "Ronald Admin",
-      "email": "{tifc}@contoso.com"
+      "email": "tifc@contoso.com"
     }
   },
   "result": {
@@ -257,7 +257,7 @@ Content-type: application/json
 {
   "@odata.type": "#microsoft.graph.security.emailContentThreatSubmission",
   "category": "spam",
-  "recipientEmailAddress": "{tifc}@contoso.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "fileContent": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
 }
 ```
@@ -279,7 +279,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
   "@odata.type": "#microsoft.graph.security.emailContentThreatSubmission",
   "category": "spam",
-  "recipientEmailAddress": "{tifc}@contoso.com",
+  "recipientEmailAddress": "tifc@contoso.com",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
   "createdDateTime": "2021-10-10T03:30:18.6890937Z",
   "contentType": "email",
@@ -290,7 +290,7 @@ Content-type: application/json
     "user": {
       "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
       "displayName": "Ronald Admin",
-      "email": "{tifc}@contoso.com"
+      "email": "tifc@contoso.com"
     }
   },
   "result": {

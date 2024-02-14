@@ -59,10 +59,10 @@ The following example updates the business email address and scheduling policy, 
 <!-- {
   "blockType": "request",
   "name": "update_bookingbusiness",
-  "sampleKeys": ["{fabrikam}@contoso.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/{fabrikam}@contoso.com
+PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/fabrikam@contoso.com
 Content-type: application/json
 
 {

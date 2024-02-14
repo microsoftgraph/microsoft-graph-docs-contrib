@@ -15,14 +15,14 @@ mgc-beta users send-mail post --user-id {user-id} --body '{
 \
       "contentType": "Text",
 \
-      "content": "The {samanthab}@contoso.com
+      "content": "The samanthab@contoso.com
 \
     },
 \
     "toRecipients": [
 \
       {
-\{danas}@contoso.com
+\danas@contoso.com
         "emailAddress": {
 \
           "address": "samanthab@contoso.onmicrosoft.com"

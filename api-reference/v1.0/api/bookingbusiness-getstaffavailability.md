@@ -55,11 +55,11 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_getstaffavailability",
-  "sampleKeys": ["{Contosolunchdelivery}@contoso.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{Contosolunchdelivery}@contoso.com/getStaffAvailability
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/getStaffAvailability
 Content-Type: application/json
 
 {

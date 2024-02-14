@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedGroupSource();
 $group = new Group();
-$group->setMail('{SOCTeam}@contoso.com');
+$group->setMail('SOCTeam@contoso.com');
 $requestBody->setGroup($group);
 $requestBody->setIncludedSources(new SourceType('mailbox, site'));
 

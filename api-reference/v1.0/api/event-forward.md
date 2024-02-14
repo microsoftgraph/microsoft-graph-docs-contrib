@@ -80,7 +80,7 @@ Content-type: application/json
   "ToRecipients":[
       {
         "EmailAddress": {
-          "Address":"{danas}@contoso.com",
+          "Address":"danas@contoso.com",
           "Name":"Dana Swope"
         }
       }

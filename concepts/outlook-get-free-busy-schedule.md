@@ -26,7 +26,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
 {
-    "Schedules": ["{AlexW}@contoso.com"],
+    "Schedules": ["AlexW@contoso.com"],
     "StartTime": {
         "dateTime": "2018-08-06T09:00:00",
         "timeZone": "Pacific Standard Time"
@@ -55,7 +55,7 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value":[
         {
-            "scheduleId":"{AlexW}@contoso.com",
+            "scheduleId":"AlexW@contoso.com",
             "availabilityView":"111111002222222200000000000000000000",
             "scheduleItems":[
                 {

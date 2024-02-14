@@ -11,7 +11,7 @@ mgc-beta users messages create-forward post --user-id {user-id} --message-id {me
 \
     "isDeliveryReceiptRequested": true,
 \
-    "toRecipients":[{danas}@contoso.com
+    "toRecipients":[danas@contoso.com
 \
       {
 \

@@ -19,7 +19,7 @@ mgc-beta groups conversations create --group-id {group-id} --body '{
 \
           "body":{
 \
-            "contentType":"{AdeleV}@contoso.com
+            "contentType":"AdeleV@contoso.com
 \
             "content":"The confirmation will come by the end of the week."
 \

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc information-protection threat-assessment-requests create --body '{
 \
-  "@odata.type": "#mi{tifc}@contoso.com
+  "@odata.type": "#mitifc@contoso.com
 \
   "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
 \

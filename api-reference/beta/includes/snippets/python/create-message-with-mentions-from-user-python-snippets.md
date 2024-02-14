@@ -18,7 +18,7 @@ request_body = Message(
 		Recipient(
 			email_address = EmailAddress(
 				name = "Samantha Booth",
-				address = "{samanthab}@contoso.com",
+				address = "samanthab@contoso.com",
 			),
 		),
 	],
@@ -26,7 +26,7 @@ request_body = Message(
 		Mention(
 			mentioned = EmailAddress(
 				name = "Dana Swope",
-				address = "{danas}@contoso.com",
+				address = "danas@contoso.com",
 			),
 		),
 	],

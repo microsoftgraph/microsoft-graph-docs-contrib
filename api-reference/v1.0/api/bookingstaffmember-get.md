@@ -54,10 +54,10 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["{Contosolunchdelivery}@contoso.com", "71d64d0e-7225-49b6-b0b1-070d476cda51"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com", "71d64d0e-7225-49b6-b0b1-070d476cda51"]
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{Contosolunchdelivery}@contoso.com/staffMembers/71d64d0e-7225-49b6-b0b1-070d476cda51
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/staffMembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
 
 ### Response
@@ -79,7 +79,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers/$entity",
     "id": "71d64d0e-7225-49b6-b0b1-070d476cda51",
     "displayName": "Samantha Booth",
-    "emailAddress": "{samanthab}@contoso.com",
+    "emailAddress": "samanthab@contoso.com",
     "availabilityIsAffectedByPersonalCalendar": true,
     "role": "administrator",
     "timeZone": "America/Chicago",

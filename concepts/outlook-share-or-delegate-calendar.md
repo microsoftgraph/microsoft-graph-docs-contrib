@@ -92,7 +92,7 @@ Use the least privileged delegated or application permission, `Calendars.Read`, 
   "name": "get_calendarperms"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{AlexW}@contoso.com/calendar/calendarPermissions
+GET https://graph.microsoft.com/beta/users/AlexW@contoso.com/calendar/calendarPermissions
 ```
 
 # [C#](#tab/csharp)
@@ -158,7 +158,7 @@ Content-type: application/json
             ],
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "{MeganB}@contoso.com"
+                "address": "MeganB@contoso.com"
             }
         },
         {
@@ -198,10 +198,10 @@ Use the least privileged delegated or application permission, `Calendars.ReadWri
 <!-- {
   "blockType": "request",
   "name": "update_calendarperm",
-  "sampleKeys": ["{AlexW}@contoso.com", "AAMkADAwAABf02bAAAA=", "L289RXhjaGFuZ2VMYWJQWRlbGVW"]
+  "sampleKeys": ["AlexW@contoso.com", "AAMkADAwAABf02bAAAA=", "L289RXhjaGFuZ2VMYWJQWRlbGVW"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{AlexW}@contoso.com/calendars/AAMkADAwAABf02bAAAA=/calendarPermissions/L289RXhjaGFuZ2VMYWJQWRlbGVW
+PATCH https://graph.microsoft.com/beta/users/AlexW@contoso.com/calendars/AAMkADAwAABf02bAAAA=/calendarPermissions/L289RXhjaGFuZ2VMYWJQWRlbGVW
 Content-type: application/json
 
 {
@@ -268,7 +268,7 @@ Content-type: application/json
     ],
     "emailAddress": {
         "name": "Adele Vance",
-        "address": "{AdeleV}@contoso.com"
+        "address": "AdeleV@contoso.com"
     }
 }
 ```
@@ -304,10 +304,10 @@ Use the least privileged delegated or application permission, `Calendars.Read`, 
 <!-- {
   "blockType": "request",
   "name": "get_calendar_props_owner",
-  "sampleKeys": ["{AlexW}@contoso.com"]
+  "sampleKeys": ["AlexW@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{AlexW}@contoso.com/calendar
+GET https://graph.microsoft.com/beta/users/AlexW@contoso.com/calendar
 ```
 
 # [C#](#tab/csharp)
@@ -374,7 +374,7 @@ Content-type: application/json
     "isRemovable": false,
     "owner": {
         "name": "Alex Wilber",
-        "address": "{AlexW}@contoso.com"
+        "address": "AlexW@contoso.com"
     }
 }
 ```
@@ -405,10 +405,10 @@ Use the least privileged delegated permission, `Calendars.Read.Shared`, or appli
 <!-- {
   "blockType": "request",
   "name": "get_calendar_props_delegate",
-  "sampleKeys": ["{meganb}@contoso.com", "AAMkADlAABhbftjAAA="]
+  "sampleKeys": ["meganb@contoso.com", "AAMkADlAABhbftjAAA="]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{meganb}@contoso.com/calendars/AAMkADlAABhbftjAAA=
+GET https://graph.microsoft.com/beta/users/meganb@contoso.com/calendars/AAMkADlAABhbftjAAA=
 ```
 
 # [C#](#tab/csharp)
@@ -475,7 +475,7 @@ Content-type: application/json
     "isRemovable": true,
     "owner": {
         "name": "Alex Wilber",
-        "address": "{AlexW}@contoso.com"
+        "address": "AlexW@contoso.com"
     }
 }
 ```
@@ -516,10 +516,10 @@ Use the least privileged delegated or application permission, `MailboxSettings.R
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_owner",
-  "sampleKeys": ["{AlexW}@contoso.com"]
+  "sampleKeys": ["AlexW@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{AlexW}@contoso.com/mailboxsettings
+GET https://graph.microsoft.com/beta/users/AlexW@contoso.com/mailboxsettings
 ```
 
 # [C#](#tab/csharp)
@@ -620,10 +620,10 @@ Use the least privileged delegated or application permission, `MailboxSettings.R
 <!-- {
   "blockType": "request",
   "name": "patch_mailboxsettings_owner",
-  "sampleKeys": ["{AlexW}@contoso.com"]
+  "sampleKeys": ["AlexW@contoso.com"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{AlexW}@contoso.com/mailboxsettings
+PATCH https://graph.microsoft.com/beta/users/AlexW@contoso.com/mailboxsettings
 Content-type: application/json
 
 {
@@ -694,10 +694,10 @@ Use the least privileged delegated or application permission, `Calendars.ReadWri
 <!-- {
   "blockType": "request",
   "name": "delete_sharee",
-  "sampleKeys": ["{AlexW}@contoso.com", "AAMkADAwAABf02bAAAA=", "L289RXhjaGFuZ2VMYWJTWVnYW5C"]
+  "sampleKeys": ["AlexW@contoso.com", "AAMkADAwAABf02bAAAA=", "L289RXhjaGFuZ2VMYWJTWVnYW5C"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/users/{AlexW}@contoso.com/calendars/AAMkADAwAABf02bAAAA=/calendarPermissions/L289RXhjaGFuZ2VMYWJTWVnYW5C
+DELETE https://graph.microsoft.com/beta/users/AlexW@contoso.com/calendars/AAMkADAwAABf02bAAAA=/calendarPermissions/L289RXhjaGFuZ2VMYWJTWVnYW5C
 ```
 
 # [C#](#tab/csharp)

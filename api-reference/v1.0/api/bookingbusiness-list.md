@@ -120,11 +120,11 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses",
     "value":[
         {
-            "id":"{Contosolunchdelivery}@contoso.com",
+            "id":"Contosolunchdelivery@contoso.com",
             "displayName":"Contoso lunch delivery",
         },
         {
-            "id":"{Fabrikam}@contoso.com",
+            "id":"Fabrikam@contoso.com",
             "displayName":"Fabrikam",
         }
     ]
@@ -161,7 +161,7 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses",
     "value":[
         {
-            "id":"{AdventureWorksCycles}@contoso.com",
+            "id":"AdventureWorksCycles@contoso.com",
             "displayName":"Adventure Works Cycles",
         }
     ]

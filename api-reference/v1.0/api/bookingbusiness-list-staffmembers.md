@@ -56,10 +56,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinessliststaffmembers",
-  "sampleKeys": ["{Contosolunchdelivery}@contoso.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{Contosolunchdelivery}@contoso.com/staffMembers
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/staffMembers
 ```
 
 # [C#](#tab/csharp)
@@ -176,7 +176,7 @@ Content-type: application/json
             "@odata.type":"#microsoft.graph.bookingStaffMember",
             "id":"71d64d0e-7225-49b6-b0b1-070d476cda51",
             "displayName":"Samantha Booth",
-            "emailAddress":"{samanthab}@contoso.com",
+            "emailAddress":"samanthab@contoso.com",
             "availabilityIsAffectedByPersonalCalendar":true,
             "role":"administrator",
             "timeZone":"America/Chicago",

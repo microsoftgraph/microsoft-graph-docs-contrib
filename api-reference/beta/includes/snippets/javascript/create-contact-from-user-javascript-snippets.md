@@ -15,12 +15,12 @@ const contact = {
   surname: 'Bansky',
   emailAddresses: [
     {
-      address: '{pavelb}@contoso.com',
+      address: 'pavelb@contoso.com',
       name: 'Pavel Bansky',
       type: 'personal'
     },
     {
-      address: '{pavelb}@contoso.com',
+      address: 'pavelb@contoso.com',
       name: 'Pavel Bansky',
       type: 'other',
       otherLabel: 'Volunteer work'

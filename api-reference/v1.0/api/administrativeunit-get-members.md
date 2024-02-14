@@ -83,11 +83,11 @@ Content-type: application/json
     "displayName": "MOD Administrator",
     "givenName": "MOD",
     "jobTitle": null,
-    "mail": "{admin}@contoso.com",
+    "mail": "admin@contoso.com",
     "mobilePhone": "5555555555",
     "officeLocation": null,
     "preferredLanguage": "en-US",
     "surname": "Administrator",
-    "userPrincipalName": "{admin}@contoso.com"
+    "userPrincipalName": "admin@contoso.com"
 }
 ```

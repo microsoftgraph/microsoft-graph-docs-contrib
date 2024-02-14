@@ -10,7 +10,7 @@ from msgraph.generated.models.user_source import UserSource
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UserSource(
-	email = "{admin}@contoso.com",
+	email = "admin@contoso.com",
 	included_sources = SourceType.Mailbox | SourceType.Site,
 )
 

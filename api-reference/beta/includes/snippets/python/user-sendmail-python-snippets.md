@@ -23,14 +23,14 @@ request_body = SendMailPostRequestBody(
 		to_recipients = [
 			Recipient(
 				email_address = EmailAddress(
-					address = "{samanthab}@contoso.com",
+					address = "samanthab@contoso.com",
 				),
 			),
 		],
 		cc_recipients = [
 			Recipient(
 				email_address = EmailAddress(
-					address = "{danas}@contoso.com",
+					address = "danas@contoso.com",
 				),
 			),
 		],

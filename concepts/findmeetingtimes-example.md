@@ -80,7 +80,7 @@ Content-type: application/json
       "type": "required",
       "emailAddress": {
         "name": "Samantha Booth",
-        "address": "{samanthab}@contoso.com"
+        "address": "samanthab@contoso.com"
       }
     }
   ],
@@ -155,7 +155,7 @@ Content-type: application/json
       "type": "required",
       "emailAddress": {
         "name": "Samantha Booth",
-        "address": "{samanthab}@contoso.com"
+        "address": "samanthab@contoso.com"
       }
     }
   ],
@@ -228,7 +228,7 @@ Content-Length: 714
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"{samanthab}@contoso.com"
+                            "address":"samanthab@contoso.com"
                         }
                     }
                 }

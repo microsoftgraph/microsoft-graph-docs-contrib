@@ -37,7 +37,7 @@ mgc-beta users events create --user-id {user-id} --body '{
 \
     "pattern": {
 \
-      "type": "week{AdeleV}@contoso.com
+      "type": "weekAdeleV@contoso.com
 \
       "interval": 1,
 \

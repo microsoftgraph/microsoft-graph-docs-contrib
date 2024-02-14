@@ -143,7 +143,7 @@ Content-Type: application/json
       "type": "required",
       "emailAddress": {
         "name": "Alex Wilbur",
-        "address": "{alexw}@contoso.com"
+        "address": "alexw@contoso.com"
       }
     }
   ],
@@ -236,7 +236,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "availability": "free",
                     "attendee": {
                         "emailAddress": {
-                            "address": "{alexw}@contoso.com"
+                            "address": "alexw@contoso.com"
                         }
                     }
                 }
@@ -267,7 +267,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "availability": "free",
                     "attendee": {
                         "emailAddress": {
-                            "address": "{alexw}@contoso.com"
+                            "address": "alexw@contoso.com"
                         }
                     }
                 }
@@ -298,7 +298,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "availability": "free",
                     "attendee": {
                         "emailAddress": {
-                            "address": "{alexw}@contoso.com"
+                            "address": "alexw@contoso.com"
                         }
                     }
                 }
@@ -329,7 +329,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "availability": "free",
                     "attendee": {
                         "emailAddress": {
-                            "address": "{alexw}@contoso.com"
+                            "address": "alexw@contoso.com"
                         }
                     }
                 }
@@ -360,7 +360,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "availability": "free",
                     "attendee": {
                         "emailAddress": {
-                            "address": "{alexw}@contoso.com"
+                            "address": "alexw@contoso.com"
                         }
                     }
                 }

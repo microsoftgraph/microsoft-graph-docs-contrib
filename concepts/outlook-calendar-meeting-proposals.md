@@ -46,7 +46,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "attendees": [
         {
           "emailAddress": {
-          "address":"{AdeleV}@contoso.com",
+          "address":"AdeleV@contoso.com",
           "name": "Adele Vance"
           },
           "type": "required"
@@ -133,14 +133,14 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "{AdeleV}@contoso.com"
+                "address": "AdeleV@contoso.com"
             }
         }
       ],
       "organizer": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "{AlexW}@contoso.com"
+            "address": "AlexW@contoso.com"
         }
       }
     }
@@ -257,20 +257,20 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
             "sender": {
                 "emailAddress": {
                     "name": "Adele Vance",
-                    "address": "{AdeleV}@contoso.com"
+                    "address": "AdeleV@contoso.com"
                 }
             },
             "from": {
                 "emailAddress": {
                     "name": "Adele Vance",
-                    "address": "{AdeleV}@contoso.com"
+                    "address": "AdeleV@contoso.com"
                 }
             },
             "toRecipients": [
                 {
                     "emailAddress": {
                         "name": "Alex Wilber",
-                        "address": "{AlexW}@contoso.com"
+                        "address": "AlexW@contoso.com"
                     }
                 }
             ],
@@ -361,14 +361,14 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
                 },
                 "emailAddress": {
                     "name": "Adele Vance",
-                    "address": "{AdeleV}@contoso.com"
+                    "address": "AdeleV@contoso.com"
                 }
             }
         ],
         "organizer": {
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "{AlexW}@contoso.com"
+                "address": "AlexW@contoso.com"
             }
         }
     }
@@ -476,14 +476,14 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "{AdeleV}@contoso.com"
+                "address": "AdeleV@contoso.com"
             }
         }
       ],
       "organizer": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "{AlexW}@contoso.com"
+            "address": "AlexW@contoso.com"
         }
       }
     }

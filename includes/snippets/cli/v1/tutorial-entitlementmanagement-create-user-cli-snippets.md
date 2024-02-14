@@ -9,7 +9,7 @@ mgc users create --body '{
 \
   "accountEnabled":true,
 \
-  "displayName":"Reques{Requestor1}@contoso.com
+  "displayName":"RequesRequestor1@contoso.com
 \
   "mailNickname":"Requestor1",
 \

@@ -49,10 +49,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_publish",
-  "sampleKeys": ["{contosolunchdelivery}@contoso.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/{contosolunchdelivery}@contoso.com/publish
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/publish
 ```
 
 # [C#](#tab/csharp)

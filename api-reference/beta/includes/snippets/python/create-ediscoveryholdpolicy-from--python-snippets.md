@@ -16,7 +16,7 @@ request_body = EdiscoveryHoldPolicy(
 			"user_sources@odata_bind" : [
 				{
 						"@odata_type" : "microsoft.graph.security.userSource",
-						"email" : "{SalesTeam}@contoso.com",
+						"email" : "SalesTeam@contoso.com",
 				},
 			],
 			"site_sources@odata_bind" : [

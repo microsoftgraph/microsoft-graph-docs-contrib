@@ -21,7 +21,7 @@ requestBody.SetClassifyAs(&classifyAs)
 senderEmailAddress := graphmodels.NewEmailAddress()
 name := "Samantha Booth"
 senderEmailAddress.SetName(&name)
-address := "{samanthab}@contoso.com"
+address := "samanthab@contoso.com"
 senderEmailAddress.SetAddress(&address)
 requestBody.SetSenderEmailAddress(senderEmailAddress)
 

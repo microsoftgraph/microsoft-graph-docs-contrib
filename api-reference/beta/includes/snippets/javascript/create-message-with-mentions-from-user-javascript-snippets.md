@@ -16,7 +16,7 @@ const message = {
       {
           emailAddress: {
               name: 'Samantha Booth',
-              address: '{samanthab}@contoso.com'
+              address: 'samanthab@contoso.com'
           }
       }
     ],
@@ -24,7 +24,7 @@ const message = {
       {
         mentioned: {
           name: 'Dana Swope',
-          address: '{danas}@contoso.com'
+          address: 'danas@contoso.com'
          }
       }
     ]

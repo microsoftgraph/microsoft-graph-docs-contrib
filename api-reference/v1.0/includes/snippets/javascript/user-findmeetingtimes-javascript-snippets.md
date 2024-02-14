@@ -16,7 +16,7 @@ const meetingTimeSuggestionsResult = {
       type: 'required',
       emailAddress: {
         name: 'Alex Wilbur',
-        address: '{alexw}@contoso.com'
+        address: 'alexw@contoso.com'
       }
     }
   ],

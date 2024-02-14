@@ -187,7 +187,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Johanna Lorenz",
-                "address": "{JohannaL}@contoso.com"
+                "address": "JohannaL@contoso.com"
             }
         },
         {
@@ -198,7 +198,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Retail",
-                "address": "{Retail}@contoso.com"
+                "address": "Retail@contoso.com"
             }
         },
         {
@@ -209,7 +209,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "{AlexW}@contoso.com"
+                "address": "AlexW@contoso.com"
             }
         },
         {
@@ -220,7 +220,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "{MeganB}@contoso.com"
+                "address": "MeganB@contoso.com"
             }
         },
         {
@@ -231,14 +231,14 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Nestor Wilke",
-                "address": "{NestorW}@contoso.com"
+                "address": "NestorW@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Retail",
-            "address": "{Retail}@contoso.com"
+            "address": "Retail@contoso.com"
         }
     }
 }

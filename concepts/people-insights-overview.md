@@ -91,11 +91,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "20/1109",
       "profession": "",
-      "userPrincipalName": "{LorrieF}@contoso.com",
-      "imAddress": "sip:{LorrieF}@contoso.com",
+      "userPrincipalName": "LorrieF@contoso.com",
+      "imAddress": "sip:LorrieF@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{LorrieF}@contoso.com",
+          "address": "LorrieF@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -126,11 +126,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "20/1101",
       "profession": "",
-      "userPrincipalName": "{MaynardD}@contoso.com",
-      "imAddress": "sip:{MaynardD}@contoso.com",
+      "userPrincipalName": "MaynardD@contoso.com",
+      "imAddress": "sip:MaynardD@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{MaynardD}@contoso.com",
+          "address": "MaynardD@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -161,11 +161,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "14/1102",
       "profession": "",
-      "userPrincipalName": "{DarrelH}@contoso.com",
-      "imAddress": "sip:{DarrelH}@contoso.com",
+      "userPrincipalName": "DarrelH@contoso.com",
+      "imAddress": "sip:DarrelH@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{DarrelH}@contoso.com",
+          "address": "DarrelH@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -216,11 +216,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "19/2109",
       "profession": "",
-      "userPrincipalName": "{FelixC}@contoso.com",
-      "imAddress": "sip:{FelixC}@contoso.com",
+      "userPrincipalName": "FelixC@contoso.com",
+      "imAddress": "sip:FelixC@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{FelixC}@contoso.com",
+          "address": "FelixC@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -251,11 +251,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "18/1106",
       "profession": "",
-      "userPrincipalName": "{LenoraR}@contoso.com",
-      "imAddress": "sip:{LenoraR}@contoso.com",
+      "userPrincipalName": "LenoraR@contoso.com",
+      "imAddress": "sip:LenoraR@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{LenoraR}@contoso.com",
+          "address": "LenoraR@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -286,11 +286,11 @@ Content-type: application/json
       "department": "Finance",
       "officeLocation": "98/2202",
       "profession": "",
-      "userPrincipalName": "{ManuelC}@contoso.com",
-      "imAddress": "sip:{ManuelC}@contoso.com",
+      "userPrincipalName": "ManuelC@contoso.com",
+      "imAddress": "sip:ManuelC@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{ManuelC}@contoso.com",
+          "address": "ManuelC@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -341,11 +341,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "18/2111",
       "profession": "",
-      "userPrincipalName": "{AdrianaR}@contoso.com",
-      "imAddress": "sip:{AdrianaR}@contoso.com",
+      "userPrincipalName": "AdrianaR@contoso.com",
+      "imAddress": "sip:AdrianaR@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{AdrianaR}@contoso.com",
+          "address": "AdrianaR@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -376,11 +376,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "131/1104",
       "profession": "",
-      "userPrincipalName": "{AlyceC}@contoso.com",
-      "imAddress": "sip:{AlyceC}@contoso.com",
+      "userPrincipalName": "AlyceC@contoso.com",
+      "imAddress": "sip:AlyceC@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{AlyceC}@contoso.com",
+          "address": "AlyceC@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -411,11 +411,11 @@ Content-type: application/json
       "department": "Operations",
       "officeLocation": "24/1106",
       "profession": "",
-      "userPrincipalName": "{AlyssaC}@contoso.com",
-      "imAddress": "sip:{AlyssaC}@contoso.com",
+      "userPrincipalName": "AlyssaC@contoso.com",
+      "imAddress": "sip:AlyssaC@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{AlyssaC}@contoso.com",
+          "address": "AlyssaC@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -538,7 +538,7 @@ Content-type: application/json
       "displayName": "Lorrie Frye",
       "scoredEmailAddresses": [
         {
-          "address": "{LorrieF}@contoso.com",
+          "address": "LorrieF@contoso.com",
           "relevanceScore": 8
         }
       ]
@@ -548,7 +548,7 @@ Content-type: application/json
       "displayName": "Maynard Denman",
       "scoredEmailAddresses": [
         {
-          "address": "{MaynardD}@contoso.com",
+          "address": "MaynardD@contoso.com",
           "relevanceScore": 8
         }
       ]
@@ -558,7 +558,7 @@ Content-type: application/json
       "displayName": "Darrel Halsey",
       "scoredEmailAddresses": [
         {
-          "address": "{DarrelH}@contoso.com",
+          "address": "DarrelH@contoso.com",
           "relevanceScore": 8
         }
       ]
@@ -599,11 +599,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "20/1109",
       "profession": "",
-      "userPrincipalName": "{LorrieF}@contoso.com",
-      "imAddress": "sip:{LorrieF}@contoso.com",
+      "userPrincipalName": "LorrieF@contoso.com",
+      "imAddress": "sip:LorrieF@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{LorrieF}@contoso.com",
+          "address": "LorrieF@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -634,11 +634,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "20/1101",
       "profession": "",
-      "userPrincipalName": "{MaynardD}@contoso.com",
-      "imAddress": "sip:{MaynardD}@contoso.com",
+      "userPrincipalName": "MaynardD@contoso.com",
+      "imAddress": "sip:MaynardD@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{MaynardD}@contoso.com",
+          "address": "MaynardD@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -669,11 +669,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "14/1102",
       "profession": "",
-      "userPrincipalName": "{DarrelH}@contoso.com",
-      "imAddress": "sip:{DarrelH}@contoso.com",
+      "userPrincipalName": "DarrelH@contoso.com",
+      "imAddress": "sip:DarrelH@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{DarrelH}@contoso.com",
+          "address": "DarrelH@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -717,7 +717,7 @@ Content-type: application/json
       "displayName": "Lorrie Frye",
       "scoredEmailAddresses": [
         {
-          "address": "{LorrieF}@contoso.com",
+          "address": "LorrieF@contoso.com",
           "relevanceScore": 8
         }
       ]
@@ -758,11 +758,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "19/2106",
       "profession": "",
-      "userPrincipalName": "{CliftonC}@contoso.com",
-      "imAddress": "sip:{CliftonC}@contoso.com",
+      "userPrincipalName": "CliftonC@contoso.com",
+      "imAddress": "sip:CliftonC@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{CliftonC}@contoso.com",
+          "address": "CliftonC@contoso.com",
           "relevanceScore": 20
         }
       ],
@@ -793,11 +793,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "20/2107",
       "profession": "",
-      "userPrincipalName": "{ShereeM}@contoso.com",
-      "imAddress": "sip:{ShereeM}@contoso.com",
+      "userPrincipalName": "ShereeM@contoso.com",
+      "imAddress": "sip:ShereeM@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{ShereeM}@contoso.com",
+          "address": "ShereeM@contoso.com",
           "relevanceScore": 10
         }
       ],
@@ -828,11 +828,11 @@ Content-type: application/json
       "department": "Engineering",
       "officeLocation": "23/2102",
       "profession": "",
-      "userPrincipalName": "{VincentM}@contoso.com",
-      "imAddress": "sip:{VincentM}@contoso.com",
+      "userPrincipalName": "VincentM@contoso.com",
+      "imAddress": "sip:VincentM@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{VincentM}@contoso.com",
+          "address": "VincentM@contoso.com",
           "relevanceScore": 10
         }
       ],
@@ -889,11 +889,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "19/3123",
       "profession": "",
-      "userPrincipalName": "{JanT}@contoso.com",
-      "imAddress": "sip:{JanT}@contoso.com",
+      "userPrincipalName": "JanT@contoso.com",
+      "imAddress": "sip:JanT@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "{JanT}@contoso.com",
+          "address": "JanT@contoso.com",
           "relevanceScore": -12.297347783416837
         }
       ],
@@ -954,11 +954,11 @@ Content-type: application/json
       "department": null,
       "officeLocation": null,
       "profession": "",
-      "userPrincipalName": "{JewellM}@contoso.com",
+      "userPrincipalName": "JewellM@contoso.com",
       "imAddress": null,
       "scoredEmailAddresses": [
         {
-          "address": "{JewellM}@contoso.com",
+          "address": "JewellM@contoso.com",
           "relevanceScore": -12.531408487977451
         }
       ],

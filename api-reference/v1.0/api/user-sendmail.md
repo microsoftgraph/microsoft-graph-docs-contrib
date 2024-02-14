@@ -99,14 +99,14 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "{frannis}@contoso.com"
+          "address": "frannis@contoso.com"
         }
       }
     ],
     "ccRecipients": [
       {
         "emailAddress": {
-          "address": "{danas}@contoso.com"
+          "address": "danas@contoso.com"
         }
       }
     ]
@@ -185,7 +185,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "{AlexW}@contoso.com"
+          "address": "AlexW@contoso.com"
         }
       }
     ],
@@ -272,7 +272,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "{meganb}@contoso.com"
+          "address": "meganb@contoso.com"
         }
       }
     ],
@@ -414,7 +414,7 @@ Content-type: application/json
   "toRecipients": [
     {
       "emailAddress": {
-        "address": "{meganb}@contoso.com"
+        "address": "meganb@contoso.com"
       }
     }
   ],

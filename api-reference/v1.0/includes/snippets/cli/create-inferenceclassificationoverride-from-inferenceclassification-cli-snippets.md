@@ -9,7 +9,7 @@ mgc users inference-classification overrides create --user-id {user-id} --body '
 \
   "classifyAs": "focused",
 \
-  "senderEmailAd{samanthab}@contoso.com
+  "senderEmailAdsamanthab@contoso.com
 \
     "name": "Samantha Booth",
 \

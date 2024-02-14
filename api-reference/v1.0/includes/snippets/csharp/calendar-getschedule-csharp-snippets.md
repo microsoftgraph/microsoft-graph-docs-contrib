@@ -14,8 +14,8 @@ var requestBody = new GetSchedulePostRequestBody
 {
 	Schedules = new List<string>
 	{
-		"{adelev}@contoso.com",
-		"{meganb}@contoso.com",
+		"adelev@contoso.com",
+		"meganb@contoso.com",
 	},
 	StartTime = new DateTimeTimeZone
 	{

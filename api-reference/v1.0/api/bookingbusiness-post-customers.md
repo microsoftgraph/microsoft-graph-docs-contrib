@@ -47,10 +47,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinesspostcustomers",
-  "sampleKeys": ["{Contosolunchdelivery}@contoso.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{Contosolunchdelivery}@contoso.com/customers
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/customers
 Content-type: application/json
 
 {

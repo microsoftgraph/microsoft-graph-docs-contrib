@@ -11,7 +11,7 @@ mgc users find-meeting-times post --user-id {user-id} --body '{
 \
     {
 \
-      "type": "requi{alexw}@contoso.com
+      "type": "requialexw@contoso.com
 \
       "emailAddress": {
 \

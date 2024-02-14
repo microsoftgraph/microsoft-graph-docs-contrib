@@ -121,13 +121,13 @@ Content-type: application/json
             "from": {
                 "emailAddress": {
                     "name": "HR Taskforce",
-                    "address": "{HRTaskforce}@contoso.com"
+                    "address": "HRTaskforce@contoso.com"
                 }
             },
             "sender": {
                 "emailAddress": {
                     "name": "Joni Sherman",
-                    "address": "{JoniS}@contoso.com"
+                    "address": "JoniS@contoso.com"
                 }
             }
         }

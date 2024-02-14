@@ -52,10 +52,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_bookingcustomer",
-  "sampleKeys": ["{contosolunchdelivery}@contoso.com", "8bb19078-0f45-4efb-b2c5-da78b860f73a"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "8bb19078-0f45-4efb-b2c5-da78b860f73a"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/{contosolunchdelivery}@contoso.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
 ```
 
 # [C#](#tab/csharp)

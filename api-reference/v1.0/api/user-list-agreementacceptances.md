@@ -113,8 +113,8 @@ Content-type: application/json
             "deviceOSVersion": null,
             "agreementFileId": "08033369-8972-42a3-8533-90bbd2757a01",
             "userDisplayName": "Megan Bowen",
-            "userPrincipalName": "{MeganB}@contoso.com",
-            "userEmail": "{MeganB}@contoso.com",
+            "userPrincipalName": "MeganB@contoso.com",
+            "userEmail": "MeganB@contoso.com",
             "recordedDateTime": "2022-03-04T14:11:22.6658376Z",
             "expirationDateTime": null,
             "state": "accepted"

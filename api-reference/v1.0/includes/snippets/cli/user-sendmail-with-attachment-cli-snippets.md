@@ -15,7 +15,7 @@ mgc users send-mail post --user-id {user-id} --body '{
 \
       "contentType": "Text",
 \
-      "content": "The {meganb}@contoso.com
+      "content": "The meganb@contoso.com
 \
     },
 \

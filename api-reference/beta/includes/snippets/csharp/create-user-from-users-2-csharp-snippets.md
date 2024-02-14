@@ -14,7 +14,7 @@ var requestBody = new User
 	AccountEnabled = true,
 	DisplayName = "Adele Vance",
 	MailNickname = "AdeleV",
-	UserPrincipalName = "{AdeleV}@contoso.com",
+	UserPrincipalName = "AdeleV@contoso.com",
 	PasswordProfile = new PasswordProfile
 	{
 		ForceChangePasswordNextSignIn = true,

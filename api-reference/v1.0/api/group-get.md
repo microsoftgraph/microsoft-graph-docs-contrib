@@ -146,7 +146,7 @@ Content-type: application/json
         "Unified"
     ],
     "isAssignableToRole": null,
-    "mail": "{HRTaskforce}@contoso.com",
+    "mail": "HRTaskforce@contoso.com",
     "mailEnabled": true,
     "mailNickname": "HRTaskforce",
     "membershipRule": null,
@@ -160,7 +160,7 @@ Content-type: application/json
     "preferredDataLocation": null,
     "preferredLanguage": null,
     "proxyAddresses": [
-        "SMTP:{HRTaskforce}@contoso.com",
+        "SMTP:HRTaskforce@contoso.com",
         "SPO:SPO_896cf652-b200-4b74-8111-c013f64406cf@SPO_dcd219dd-bc68-4b9b-bf0b-4a33a796be35"
     ],
     "renewedDateTime": "2020-01-24T19:01:14Z",

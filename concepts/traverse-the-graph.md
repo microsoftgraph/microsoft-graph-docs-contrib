@@ -74,12 +74,12 @@ Content-type: application/json
       "displayName":"CIE Administrator",
       "givenName":"CIE",
       "jobTitle":null,
-      "mail":"{admin}@contoso.com",
+      "mail":"admin@contoso.com",
       "mobilePhone":"+1 3528700812",
       "officeLocation":null,
       "preferredLanguage":"en-US",
       "surname":"Administrator",
-      "userPrincipalName":"{admin}@contoso.com"
+      "userPrincipalName":"admin@contoso.com"
     },
     {
       "id":"d66f2902-9d12-4ff8-ab01-21ec6706079f",
@@ -89,12 +89,12 @@ Content-type: application/json
       "displayName":"Alan Steiner",
       "givenName":"Alan",
       "jobTitle":"VP Corporate Marketing",
-      "mail":"{alans}@contoso.com",
+      "mail":"alans@contoso.com",
       "mobilePhone":null,
       "officeLocation":null,
       "preferredLanguage":"en-US",
       "surname":"Steiner",
-      "userPrincipalName":"{alans}@contoso.com"
+      "userPrincipalName":"alans@contoso.com"
     }
   ]
 }
@@ -165,13 +165,13 @@ The following request example uses the **userPrincipalName** value as the user's
 
 # [HTTP](#tab/http)
 ```http
-GET https://graph.microsoft.com/v1.0/users/john.{doe}@contoso.com HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 # [cURL](#tab/curl)
 ```bash
-curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.{doe}@contoso.com' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.com' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q'
 ```
 
@@ -192,7 +192,7 @@ content-length: 982
     "department": "Help Center",
     "displayName": "John Doe",
     "givenName": "John",
-    "userPrincipalName": "john.{doe}@contoso.com",
+    "userPrincipalName": "john.doe@contoso.com",
 
     ...
 }
@@ -223,13 +223,13 @@ To retrieve only the user's biographical data, such as the user's provided _Abou
 
 # [HTTP](#tab/http)
 ```http
-GET https://graph.microsoft.com/v1.0/users/john.{doe}@contoso.com?$select=displayName,aboutMe,skills HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 # [cURL](#tab/curl)
 ```bash
-curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.{doe}@contoso.com?%24select=displayName%2CaboutMe%2Cskills' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.com?%24select=displayName%2CaboutMe%2Cskills' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q'
 ```
 
@@ -329,13 +329,13 @@ To query the list of the direct reports of a user, you can use the following HTT
 
 # [HTTP](#tab/http)
 ```http
-GET https://graph.microsoft.com/v1.0/users/john.{doe}@contoso.com/directReports HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com/directReports HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 # [cURL](#tab/curl)
 ```bash
-curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.{doe}@contoso.com/directReports' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.com/directReports' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q'
 ```
 
@@ -435,7 +435,7 @@ content-length: 96
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "{garthf}@contoso.com"
+          "address": "garthf@contoso.com"
         }
       }
     ],
@@ -466,7 +466,7 @@ curl --location --request POST 'https://graph.microsoft.com/v1.0/me/sendMail' \
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "{garthf}@contoso.com"
+          "address": "garthf@contoso.com"
         }
       }
     ],

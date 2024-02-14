@@ -327,15 +327,15 @@ Content-type: application/json
                         "time": "0001-01-01T00:00:00Z"
                     },
                     "emailAddress": {
-                        "name": "{admin}@contoso.com",
-                        "address": "{admin}@contoso.com"
+                        "name": "admin@contoso.com",
+                        "address": "admin@contoso.com"
                     }
                 }
             ],
             "organizer": {
                 "emailAddress": {
                     "name": "Samantha Booth",
-                    "address": "{samanthab}@contoso.com"
+                    "address": "samanthab@contoso.com"
                 }
             },
             "onlineMeeting": {

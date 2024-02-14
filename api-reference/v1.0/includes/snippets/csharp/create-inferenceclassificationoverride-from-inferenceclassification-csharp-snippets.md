@@ -15,7 +15,7 @@ var requestBody = new InferenceClassificationOverride
 	SenderEmailAddress = new EmailAddress
 	{
 		Name = "Samantha Booth",
-		Address = "{samanthab}@contoso.com",
+		Address = "samanthab@contoso.com",
 	},
 };
 

@@ -91,7 +91,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"{adelev}@contoso.com",
+        "address":"adelev@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -221,14 +221,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "{AdeleV}@contoso.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Megan Bowen",
-            "address": "{MeganB}@contoso.com"
+            "address": "MeganB@contoso.com"
         }
     }
 }
@@ -268,7 +268,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"{adelev}@contoso.com",
+        "address":"adelev@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -398,14 +398,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "{AdeleV}@contoso.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Megan Bowen",
-            "address": "{MeganB}@contoso.com"
+            "address": "MeganB@contoso.com"
         }
     },
     "onlineMeeting": {

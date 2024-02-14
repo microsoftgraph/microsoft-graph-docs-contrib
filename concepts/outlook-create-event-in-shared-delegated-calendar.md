@@ -109,7 +109,7 @@ Content-type: application/json
             "canEdit": true,
             "owner": {
                 "name": "Adele Vance",
-                "address": "{AdeleV}@contoso.com"
+                "address": "AdeleV@contoso.com"
             }
         },
         {
@@ -122,7 +122,7 @@ Content-type: application/json
             "canEdit": true,
             "owner": {
                 "name": "Alex Wilber",
-                "address": "{AlexW}@contoso.com"
+                "address": "AlexW@contoso.com"
             }
         }
     ]
@@ -130,7 +130,7 @@ Content-type: application/json
 ```
 
 > [!NOTE]
-> Signed in as Adele, you can alternatively get the delegated calendar directly from Alex' mailbox, by specifying Alex' identity and the `calendar` shortcut, as in `GET https://graph.microsoft.com/v1.0/users/{AlexW}@contoso.com/calendar`. The returned calendar ID corresponds to only Alex' mailbox.
+> Signed in as Adele, you can alternatively get the delegated calendar directly from Alex' mailbox, by specifying Alex' identity and the `calendar` shortcut, as in `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.com/calendar`. The returned calendar ID corresponds to only Alex' mailbox.
 
 ## Step 2: Adele creates and sends an invitation on Alex' behalf
 
@@ -171,14 +171,14 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"{meganb}@contoso.com",
+        "address":"meganb@contoso.com",
         "name": "Megan Bowen"
       },
       "type": "required"
     },
     {
       "emailAddress": {
-        "address":"{ChristieC}@contoso.com",
+        "address":"ChristieC@contoso.com",
         "name": "Christie Cline"
       },
       "type": "required"
@@ -278,26 +278,26 @@ Content-type: application/json
     "sender": {
         "emailAddress": {
             "name": "Adele Vance",
-            "address": "{AdeleV}@contoso.com"
+            "address": "AdeleV@contoso.com"
         }
     },
     "from": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "{AlexW}@contoso.com"
+            "address": "AlexW@contoso.com"
         }
     },
     "toRecipients": [
         {
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "{MeganB}@contoso.com"
+                "address": "MeganB@contoso.com"
             }
         },
         {
             "emailAddress": {
                 "name": "Christie Cline",
-                "address": "{ChristieC}@contoso.com"
+                "address": "ChristieC@contoso.com"
             }
         }
     ],
@@ -373,7 +373,7 @@ Content-type: application/json
                 },
                 "emailAddress": {
                     "name": "Alex Wilber",
-                    "address": "{AlexW}@contoso.com"
+                    "address": "AlexW@contoso.com"
                 }
             },
             {
@@ -384,7 +384,7 @@ Content-type: application/json
                 },
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "{MeganB}@contoso.com"
+                    "address": "MeganB@contoso.com"
                 }
             },
             {
@@ -395,14 +395,14 @@ Content-type: application/json
                 },
                 "emailAddress": {
                     "name": "Christie Cline",
-                    "address": "{ChristieC}@contoso.com"
+                    "address": "ChristieC@contoso.com"
                 }
             }
         ],
         "organizer": {
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "{AlexW}@contoso.com"
+                "address": "AlexW@contoso.com"
             }
         }
     }
@@ -583,20 +583,20 @@ Content-type: application/json
     "sender": {
         "emailAddress": {
             "name": "Christie Cline",
-            "address": "{ChristieC}@contoso.com"
+            "address": "ChristieC@contoso.com"
         }
     },
     "from": {
         "emailAddress": {
             "name": "Christie Cline",
-            "address": "{ChristieC}@contoso.com"
+            "address": "ChristieC@contoso.com"
         }
     },
     "toRecipients": [
         {
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "{AdeleV}@contoso.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
@@ -751,7 +751,7 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "{MeganB}@contoso.com"
+                "address": "MeganB@contoso.com"
             }
         },
         {
@@ -762,14 +762,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Christie Cline",
-                "address": "{ChristieC}@contoso.com"
+                "address": "ChristieC@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "{AlexW}@contoso.com"
+            "address": "AlexW@contoso.com"
         }
     }
 }

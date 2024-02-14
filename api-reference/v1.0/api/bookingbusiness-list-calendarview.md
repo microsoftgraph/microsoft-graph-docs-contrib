@@ -65,10 +65,10 @@ Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "bookingbusinesslistcalendarview",
-  "sampleKeys": ["{Contosolunchdelivery}@contoso.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{Contosolunchdelivery}@contoso.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
 
 # [C#](#tab/csharp)

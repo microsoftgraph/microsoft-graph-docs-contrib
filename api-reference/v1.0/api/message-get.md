@@ -167,20 +167,20 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Adele Vance",
-            "address":"{adelev}@contoso.com"
+            "address":"adelev@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Adele Vance",
-            "address":"{adelev}@contoso.com"
+            "address":"adelev@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"{AlexW}@contoso.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],

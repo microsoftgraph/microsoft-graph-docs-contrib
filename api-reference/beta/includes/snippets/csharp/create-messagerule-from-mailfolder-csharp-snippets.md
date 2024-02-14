@@ -30,7 +30,7 @@ var requestBody = new MessageRule
 				EmailAddress = new EmailAddress
 				{
 					Name = "Alex Wilbur",
-					Address = "{AlexW}@contoso.com",
+					Address = "AlexW@contoso.com",
 				},
 			},
 		},

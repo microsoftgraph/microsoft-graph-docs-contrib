@@ -119,7 +119,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"{samanthab}@contoso.com",
+        "address":"samanthab@contoso.com",
         "name": "Samantha Booth"
       },
       "type": "required"
@@ -253,14 +253,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"{samanthab}@contoso.com"
+                "address":"samanthab@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Dana Swope",
-            "address":"{danas}@contoso.com"
+            "address":"danas@contoso.com"
         }
     }
 }
@@ -301,14 +301,14 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address": "{DanaS}@contoso.com",
+        "address": "DanaS@contoso.com",
         "name": "Dana Swope"
       },
       "type": "Required"
     },
     {
       "emailAddress": {
-        "address": "{AlexW}@contoso.com",
+        "address": "AlexW@contoso.com",
         "name": "Alex Wilber"
       },
       "type": "Required"
@@ -488,7 +488,7 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Dana Swope",
-        "address":"{DanaS}@contoso.com"
+        "address":"DanaS@contoso.com"
       }
     },
     {
@@ -499,14 +499,14 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Alex Wilber",
-        "address":"{AlexW}@contoso.com"
+        "address":"AlexW@contoso.com"
       }
     }
   ],
   "organizer":{
     "emailAddress":{
       "name":"Adele Vance",
-      "address":"{AdeleV}@contoso.com"
+      "address":"AdeleV@contoso.com"
     }
   }
 }
@@ -559,7 +559,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"{AdeleV}@contoso.com",
+        "address":"AdeleV@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -710,14 +710,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Adele Vance",
-                "address":"{AdeleV}@contoso.com"
+                "address":"AdeleV@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Alex Wilber",
-            "address":"{AlexW}@contoso.com"
+            "address":"AlexW@contoso.com"
         }
     },
 }
@@ -759,7 +759,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"{samanthab}@contoso.com",
+        "address":"samanthab@contoso.com",
         "name": "Samantha Booth"
       },
       "type": "required"
@@ -891,14 +891,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"{samanthab}@contoso.com"
+                "address":"samanthab@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Dana Swope",
-            "address":"{danas}@contoso.com"
+            "address":"danas@contoso.com"
         }
     },
     "onlineMeeting": {

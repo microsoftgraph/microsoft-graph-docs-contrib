@@ -123,7 +123,7 @@ Content-type: application/json
       {
         "emailAddress":{
           "name":"Alex Wilbur",
-          "address":"{AlexW}@contoso.com"
+          "address":"AlexW@contoso.com"
         }
       }
     ]

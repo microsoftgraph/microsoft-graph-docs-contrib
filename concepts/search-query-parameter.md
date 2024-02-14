@@ -173,11 +173,11 @@ Content-type: application/json
            "department": "Finance",
            "officeLocation": "12/1110",
            "profession": "",
-           "userPrincipalName": "{irenem}@contoso.com",
-           "imAddress": "sip:{irenem}@contoso.com",
+           "userPrincipalName": "irenem@contoso.com",
+           "imAddress": "sip:irenem@contoso.com",
            "scoredEmailAddresses": [
                {
-                   "address": "{irenem}@contoso.com",
+                   "address": "irenem@contoso.com",
                    "relevanceScore": -16.446060612802224
                }
            ],

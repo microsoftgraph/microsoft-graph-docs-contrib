@@ -22,14 +22,14 @@ mgc-beta users events create --user-id {user-id} --body '{
       "dateTime": "2017-08-30T11:00:00",
 \
       "timeZone": "Pacific Standard Time"
-\{DanaS}@contoso.com
+\DanaS@contoso.com
   },
 \
   "end": {
 \
       "dateTime": "2017-08-30T12:00:00",
 \
-      "timeZone": "P{AlexW}@contoso.com
+      "timeZone": "PAlexW@contoso.com
 \
   },
 \

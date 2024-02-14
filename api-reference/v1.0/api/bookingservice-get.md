@@ -54,10 +54,10 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["{Contosolunchdelivery}@contoso.com", "57da6774-a087-4d69-b0e6-6fb82c339976"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com", "57da6774-a087-4d69-b0e6-6fb82c339976"]
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{Contosolunchdelivery}@contoso.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 ```
 
 ### Response
@@ -91,7 +91,7 @@ Content-type: application/json
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
     "isAnonymousJoinEnabled": false,
-    "webUrl": "https://outlook.office365.com/owa/calendar/{Contosolunchdelivery}@contoso.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
+    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "customQuestions" : [
         {
             "questionId" : "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",

@@ -99,10 +99,10 @@ The following example changes the date of service by a day and updates the invoi
 <!-- {
   "blockType": "request",
   "name": "update_bookingappointment",
-  "sampleKeys": ["{contosolunchdelivery}@contoso.com", "AAMkADKnAAA="]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "AAMkADKnAAA="]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/solutions/bookingBusinesses/{contosolunchdelivery}@contoso.com/appointments/AAMkADKnAAA=
+PATCH https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.com/appointments/AAMkADKnAAA=
 Content-type: application/json
 
 {

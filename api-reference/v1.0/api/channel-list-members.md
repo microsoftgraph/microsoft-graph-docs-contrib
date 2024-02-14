@@ -129,7 +129,7 @@ Content-type: application/json
         "roles": [],
         "displayName": "Jane Doe",
         "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
-        "email": "{jdoe}@contoso.com"
+        "email": "jdoe@contoso.com"
     },
     {
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -139,7 +139,7 @@ Content-type: application/json
         ],
         "displayName": "Ace John",
         "userId": "b3246f44-c091-4627-96c6-25b18fa2c910",
-        "email": "{ajohn}@contoso.com"
+        "email": "ajohn@contoso.com"
     }
 ]
 }

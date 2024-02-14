@@ -14,7 +14,7 @@ const inferenceClassificationOverride = {
   classifyAs: 'focused',
   senderEmailAddress: {
     name: 'Samantha Booth',
-    address: '{samanthab}@contoso.com'
+    address: 'samanthab@contoso.com'
   }
 };
 

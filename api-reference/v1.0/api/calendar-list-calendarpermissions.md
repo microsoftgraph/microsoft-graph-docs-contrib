@@ -141,8 +141,8 @@ Content-type: application/json
                 "read"
             ],
             "emailAddress": {
-                "name": "{admin}@contoso.com",
-                "address": "{admin}@contoso.com"
+                "name": "admin@contoso.com",
+                "address": "admin@contoso.com"
             }
         },
         {

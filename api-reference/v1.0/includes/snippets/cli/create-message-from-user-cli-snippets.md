@@ -15,7 +15,7 @@ mgc users messages create --user-id {user-id} --body '{
 \
         "contentType":"HTML",
 \
-        "content":"They wer{AdeleV}@contoso.com
+        "content":"They werAdeleV@contoso.com
 \
     },
 \

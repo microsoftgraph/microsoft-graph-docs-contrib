@@ -10,7 +10,7 @@ mgc users contacts create --user-id {user-id} --body '{
   "givenName": "Pavel",
 \
   "surname": "Bansky",
-\{pavelb}@contoso.com
+\pavelb@contoso.com
   "emailAddresses": [
 \
     {

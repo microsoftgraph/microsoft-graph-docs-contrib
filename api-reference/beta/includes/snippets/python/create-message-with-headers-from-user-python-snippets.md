@@ -22,7 +22,7 @@ request_body = Message(
 	to_recipients = [
 		Recipient(
 			email_address = EmailAddress(
-				address = "{AlexW}@contoso.com",
+				address = "AlexW@contoso.com",
 			),
 		),
 	],

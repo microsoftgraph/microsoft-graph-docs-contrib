@@ -281,7 +281,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Tony Stark",
                     "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
-                    "email": "{starkt}@contoso.com"
+                    "email": "starkt@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -289,7 +289,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "{parkerp}@contoso.com"
+                    "email": "parkerp@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -297,7 +297,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "{furyn}@contoso.com"
+                    "email": "furyn@contoso.com"
                 }
             ]
         },
@@ -319,7 +319,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Tony Stark",
                     "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
-                    "email": "{starkt}@contoso.com"
+                    "email": "starkt@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -327,7 +327,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Bruce Banner",
                     "userId": "48bf9d52-dca7-4a5f-8398-37b95cc7bd83",
-                    "email": "{bannerb}@contoso.com"
+                    "email": "bannerb@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -335,7 +335,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "TChalla",
                     "userId": "9efb1aea-4f83-4673-bdcd-d3f3c7be28c2",
-                    "email": "{tchalla}@contoso.com"
+                    "email": "tchalla@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -343,7 +343,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Thor Odinson",
                     "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
-                    "email": "{odinsont}@contoso.com"
+                    "email": "odinsont@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -351,7 +351,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Steve Rogers",
                     "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
-                    "email": "{rogerss}@contoso.com"
+                    "email": "rogerss@contoso.com"
                 }
             ]
         },
@@ -373,7 +373,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "{furyn}@contoso.com"
+                    "email": "furyn@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -381,7 +381,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "{parkerp}@contoso.com"
+                    "email": "parkerp@contoso.com"
                 }
             ]
         }

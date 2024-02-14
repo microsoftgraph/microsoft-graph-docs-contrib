@@ -66,7 +66,7 @@ For a `User` entity, either the `id` or `userPrincipalName` property can be used
 The following example request uses the `userPrincipalName` value as the user's id.
 
 ```no-highlight
-GET https://graph.microsoft.com/v1.0/users/john.{doe}@contoso.com HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
@@ -85,7 +85,7 @@ content-length: 982
     "department": "Help Center",
     "displayName": "John Doe",
     "givenName": "John",
-    "userPrincipalName": "john.{doe}@contoso.com",
+    "userPrincipalName": "john.doe@contoso.com",
 
     ...
 }
@@ -97,7 +97,7 @@ To retrieve only the user's biographical data, such as the user's provided _Abou
 For example:
 
 ```no-highlight
-GET https://graph.microsoft.com/v1.0/users/john.{doe}@contoso.com?$select=displayName,aboutMe,skills HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
@@ -127,7 +127,7 @@ A manager holds a `directReports` relationship with the other users reporting to
 To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal.
 
 ```no-highlight
-GET https://graph.microsoft.com/v1.0/users/john.{doe}@contoso.com/directReports HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com/directReports HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
@@ -261,12 +261,12 @@ content-length: 986
             "mailNickname": "Jane",
             "mobile": null,
             "otherMails": [
-                "jane.{doe}@contoso.com"
+                "jane.doe@contoso.com"
             ],
             ......
             "surname": "Doe",
             "usageLocation": "US",
-            "userPrincipalName": "{help}@contoso.com",
+            "userPrincipalName": "help@contoso.com",
             "userType": "Member"
         },
 
@@ -294,7 +294,7 @@ content-length: 96
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "{garthf}@contoso.com"
+          "address": "garthf@contoso.com"
         }
       }
     ],

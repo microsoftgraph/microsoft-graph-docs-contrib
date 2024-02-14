@@ -20,7 +20,7 @@ request_body = SendMailPostRequestBody(
 			Recipient(
 				email_address = EmailAddress(
 					name = "Samantha Booth",
-					address = "{samanthab}@contoso.com",
+					address = "samanthab@contoso.com",
 				),
 			),
 		],
@@ -28,7 +28,7 @@ request_body = SendMailPostRequestBody(
 			Mention(
 				mentioned = EmailAddress(
 					name = "Dana Swope",
-					address = "{danas}@contoso.com",
+					address = "danas@contoso.com",
 				),
 			),
 		],

@@ -30,7 +30,7 @@ const event = {
   attendees: [
     {
       emailAddress: {
-        address: '{adelev}@contoso.com',
+        address: 'adelev@contoso.com',
         name: 'Adele Vance'
       },
       type: 'required'

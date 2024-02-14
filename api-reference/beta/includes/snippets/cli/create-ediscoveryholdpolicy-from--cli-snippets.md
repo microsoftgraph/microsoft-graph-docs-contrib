@@ -11,7 +11,7 @@ mgc-beta security cases ediscovery-cases legal-holds create --ediscovery-case-id
 \
     "description": "Created from Graph API",
 \
-    "userSources@odata{SalesTeam}@contoso.com
+    "userSources@odataSalesTeam@contoso.com
 \
         {
 \

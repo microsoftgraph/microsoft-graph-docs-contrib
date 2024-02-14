@@ -205,8 +205,8 @@ Received: from MWHPR22MB1007.namprd22.prod.outlook.com
  ([fe80::1d05:c2d3:92a:f8dc]) by MWHPR22MB1007.namprd22.prod.outlook.com
  ([fe80::1d05:c2d3:92a:f8dc%9]) with mapi id 15.20.1813.017; Mon, 22 Apr 2019
  19:48:16 +0000
-From: Adele Vance <{AdeleV}@contoso.com>
-To: Megan Bowen <{MeganB}@contoso.com>
+From: Adele Vance <AdeleV@contoso.com>
+To: Megan Bowen <MeganB@contoso.com>
 Subject: Press conference
 Thread-Topic: Press conference
 Thread-Index: AQHU+UQNzFWFTilRjECtpiWorLYxqA==

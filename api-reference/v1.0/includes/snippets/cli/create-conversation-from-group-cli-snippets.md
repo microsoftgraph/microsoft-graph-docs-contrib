@@ -19,7 +19,7 @@ mgc groups conversations create --group-id {group-id} --body '{
 \
                     "body": {
 \
-                        "contentType": "html{AdeleV}@contoso.com
+                        "contentType": "htmlAdeleV@contoso.com
 \
                         "content": "Contoso cares about you: Rest and Recharge"
 \

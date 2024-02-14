@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let place = await client.api('/places/{Building2Rooms}@contoso.com')
+let place = await client.api('/places/Building2Rooms@contoso.com')
 	.get();
 
 ```

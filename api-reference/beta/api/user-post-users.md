@@ -91,7 +91,7 @@ Content-type: application/json
   "accountEnabled": true,
   "displayName": "Adele Vance",
   "mailNickname": "AdeleV",
-  "userPrincipalName": "{AdeleV}@contoso.com",
+  "userPrincipalName": "AdeleV@contoso.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "xWwvJ]6NMw+bWH-d"
@@ -156,12 +156,12 @@ Content-type: application/json
     "displayName": "Adele Vance",
     "givenName": "Adele",
     "jobTitle": "Product Marketing Manager",
-    "mail": "{AdeleV}@contoso.com",
+    "mail": "AdeleV@contoso.com",
     "mobilePhone": "+1 425 555 0109",
     "officeLocation": "18/2111",
     "preferredLanguage": "en-US",
     "surname": "Vance",
-    "userPrincipalName": "{AdeleV}@contoso.com"
+    "userPrincipalName": "AdeleV@contoso.com"
 }
 ```
 

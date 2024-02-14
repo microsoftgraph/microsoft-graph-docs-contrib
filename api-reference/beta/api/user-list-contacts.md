@@ -144,13 +144,13 @@ Content-type: application/json
                 {
                     "type":"personal",
                     "name":"Elvis Blank",
-                    "address":"{elvisb}@contoso.com"
+                    "address":"elvisb@contoso.com"
                 },
                 {
                     "type":"other",
                     "otherLabel":"Volunteer work",
                     "name":"Elvis Blank",
-                    "address":"{elvisb}@contoso.com"
+                    "address":"elvisb@contoso.com"
                 }
             ]
         },
@@ -162,13 +162,13 @@ Content-type: application/json
                 {
                     "type":"personal",
                     "name":"Pavel Bansky",
-                    "address":"{pavelb}@contoso.com"
+                    "address":"pavelb@contoso.com"
                 },
                 {
                     "type":"other",
                     "otherLabel":"Volunteer work",
                     "name":"Pavel Bansky",
-                    "address":"{pavelb}@contoso.com"
+                    "address":"pavelb@contoso.com"
                 }
             ]
         }

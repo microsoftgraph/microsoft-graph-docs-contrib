@@ -133,7 +133,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Adele Vance",
             "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
-            "email": "{AdeleV}@contoso.com"
+            "email": "AdeleV@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -143,7 +143,7 @@ Content-Type: application/json
             ],
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "{admin}@contoso.com"
+            "email": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -151,7 +151,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Harry Johnson",
             "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
-            "email": "{harry}@contoso.com"
+            "email": "harry@contoso.com"
         }
     ]
 }
@@ -234,7 +234,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Adele Vance",
             "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
-            "email": "{AdeleV}@contoso.com"
+            "email": "AdeleV@contoso.com"
         }
     ]
 }
@@ -254,7 +254,7 @@ The following example shows a request to find the membership resources based on 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq '{admin}@contoso.com')
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@contoso.com')
 ```
 
 # [C#](#tab/csharp)
@@ -316,7 +316,7 @@ Content-Type: application/json
             ],
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "{admin}@contoso.com"
+            "email": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -324,7 +324,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Harry Johnson",
             "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
-            "email": "{harry}@contoso.com"
+            "email": "harry@contoso.com"
         }
     ]
 }
@@ -409,7 +409,7 @@ Content-Type: application/json
             ],
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "{admin}@contoso.com"
+            "email": "admin@contoso.com"
         }
     ]
 }

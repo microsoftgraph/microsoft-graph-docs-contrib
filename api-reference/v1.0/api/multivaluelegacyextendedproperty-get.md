@@ -281,7 +281,7 @@ Content-type: application/json
     "organizer": {
         "emailAddress": {
             "name": "MOD Administrator",
-            "address": "{admin}@contoso.com"
+            "address": "admin@contoso.com"
         }
     },
     "onlineMeeting": null,

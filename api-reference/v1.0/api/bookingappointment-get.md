@@ -57,10 +57,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "bookingappointment_get",
-  "sampleKeys": ["AAMkADKnAAA=", "{Contosolunchdelivery}@contoso.com"]
+  "sampleKeys": ["AAMkADKnAAA=", "Contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{Contosolunchdelivery}@contoso.com/appointments/AAMkADKnAAA=
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/appointments/AAMkADKnAAA=
 ```
 
 # [C#](#tab/csharp)

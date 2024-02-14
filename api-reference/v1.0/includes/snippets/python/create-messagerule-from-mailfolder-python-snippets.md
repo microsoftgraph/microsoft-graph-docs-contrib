@@ -27,7 +27,7 @@ request_body = MessageRule(
 			Recipient(
 				email_address = EmailAddress(
 					name = "Alex Wilbur",
-					address = "{AlexW}@contoso.com",
+					address = "AlexW@contoso.com",
 				),
 			),
 		],

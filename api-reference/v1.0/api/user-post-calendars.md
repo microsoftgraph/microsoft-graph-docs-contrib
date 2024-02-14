@@ -126,7 +126,7 @@ Content-type: application/json
     "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
-        "address":"{samanthab}@contoso.com"
+        "address":"samanthab@contoso.com"
     }
 }
 ```

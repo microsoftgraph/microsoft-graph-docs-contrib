@@ -118,7 +118,7 @@ Content-Type: application/json
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
             "id": "43434642-3137-3138-3432-374142313639",
-            "email": "{AlexW}@contoso.com",
+            "email": "AlexW@contoso.com",
             "includedSources": "mailbox",
             "siteWebUrl": null,
             "createdBy": {
@@ -135,7 +135,7 @@ Content-Type: application/json
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
             "id": "38423145-4639-4244-4437-464630424139",
-            "email": "{IrvinS}@contoso.com",
+            "email": "IrvinS@contoso.com",
             "includedSources": "mailbox",
             "siteWebUrl": null,
             "createdBy": {
@@ -152,7 +152,7 @@ Content-Type: application/json
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
             "id": "36304536-3033-3845-4639-394538443235",
-            "email": "{AllanD}@contoso.com",
+            "email": "AllanD@contoso.com",
             "includedSources": "mailbox",
             "siteWebUrl": null,
             "createdBy": {

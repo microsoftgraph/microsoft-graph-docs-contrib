@@ -19,7 +19,7 @@ mgc users mail-folders message-rules create --user-id {user-id} --mail-folder-id
 \
           "adele"
 \
-        ]{AlexW}@contoso.com
+        ]AlexW@contoso.com
 \
      },
 \

@@ -185,7 +185,7 @@ Content-type: application/json
               },
               "emailAddress": {
                   "name": "Joni Sherman",
-                  "address": "{JoniS}@contoso.com"
+                  "address": "JoniS@contoso.com"
               }
           },
           {
@@ -196,7 +196,7 @@ Content-type: application/json
               },
               "emailAddress": {
                   "name": "HR Taskforce",
-                  "address": "{HRTaskforce}@contoso.com"
+                  "address": "HRTaskforce@contoso.com"
               }
           },
           {
@@ -207,7 +207,7 @@ Content-type: application/json
               },
               "emailAddress": {
                   "name": "Megan Bowen",
-                  "address": "{MeganB}@contoso.com"
+                  "address": "MeganB@contoso.com"
               }
           },
           {
@@ -218,7 +218,7 @@ Content-type: application/json
               },
               "emailAddress": {
                   "name": "Lidia Holloway",
-                  "address": "{LidiaH}@contoso.com"
+                  "address": "LidiaH@contoso.com"
               }
           },
           {
@@ -229,14 +229,14 @@ Content-type: application/json
               },
               "emailAddress": {
                   "name": "Emily Braun",
-                  "address": "{EmilyB}@contoso.com"
+                  "address": "EmilyB@contoso.com"
               }
           }
       ],
       "organizer": {
           "emailAddress": {
               "name": "HR Taskforce",
-              "address": "{HRTaskforce}@contoso.com"
+              "address": "HRTaskforce@contoso.com"
           }
       }
     }

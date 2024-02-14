@@ -25,7 +25,7 @@ mgc users events create --user-id {user-id} --body '{
 \
   },
 \
-  "end": {{AdeleV}@contoso.com
+  "end": {AdeleV@contoso.com
 \
       "dateTime": "2019-11-20T14:00:00",
 \

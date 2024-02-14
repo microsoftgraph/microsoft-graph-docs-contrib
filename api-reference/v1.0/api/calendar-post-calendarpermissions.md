@@ -85,7 +85,7 @@ POST https://graph.microsoft.com/v1.0/me/calendar/calendarPermissions
 {
     "emailAddress": {
         "name": "Samantha Booth",
-        "address": "{samanthab}@contoso.com"
+        "address": "samanthab@contoso.com"
     },
     "isInsideOrganization": true,
     "isRemovable": true,
@@ -157,7 +157,7 @@ Content-type: application/json
     ],
     "emailAddress": {
         "name": "Samantha Booth",
-        "address": "{samanthab}@contoso.com"
+        "address": "samanthab@contoso.com"
     }
 }
 ```

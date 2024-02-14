@@ -357,7 +357,7 @@ Content-Type: application/json
             "id": "60caa50f-7863-4f48-bf97-2a8fb990b681",
             "assigneeId": "60caa50f-7863-4f48-bf97-2a8fb990b681",
             "assigneeDisplayName": "MOD Administrator",
-            "assigneeUserPrincipalName": "{admin}@contoso.com"
+            "assigneeUserPrincipalName": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
@@ -475,49 +475,49 @@ Content-Type: application/json
             "id": "143ebd3d-e522-485c-aa52-94675ee83e6c",
             "assigneeId": "143ebd3d-e522-485c-aa52-94675ee83e6c",
             "assigneeDisplayName": "Lidia Holloway",
-            "assigneeUserPrincipalName": "{LidiaH}@contoso.com"
+            "assigneeUserPrincipalName": "LidiaH@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "2832ca72-700e-4f20-a3c7-97028803a95b",
             "assigneeId": "2832ca72-700e-4f20-a3c7-97028803a95b",
             "assigneeDisplayName": "Microsoft Service Account",
-            "assigneeUserPrincipalName": "ms-{serviceaccount}@contoso.com"
+            "assigneeUserPrincipalName": "ms-serviceaccount@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "308110a6-4f71-49c2-bbef-c6dbda50b392",
             "assigneeId": "308110a6-4f71-49c2-bbef-c6dbda50b392",
             "assigneeDisplayName": "Allan Deyoung",
-            "assigneeUserPrincipalName": "{AllanD}@contoso.com"
+            "assigneeUserPrincipalName": "AllanD@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "31336492-bf1b-48bb-a072-e554e4f992fc",
             "assigneeId": "31336492-bf1b-48bb-a072-e554e4f992fc",
             "assigneeDisplayName": "Megan Bowen",
-            "assigneeUserPrincipalName": "{MeganB}@contoso.com"
+            "assigneeUserPrincipalName": "MeganB@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "60caa50f-7863-4f48-bf97-2a8fb990b681",
             "assigneeId": "60caa50f-7863-4f48-bf97-2a8fb990b681",
             "assigneeDisplayName": "MOD Administrator",
-            "assigneeUserPrincipalName": "{admin}@contoso.com"
+            "assigneeUserPrincipalName": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "6dd82b18-d45f-4346-bf87-e9700db41849",
             "assigneeId": "6dd82b18-d45f-4346-bf87-e9700db41849",
             "assigneeDisplayName": "Nestor Wilke",
-            "assigneeUserPrincipalName": "{NestorW}@contoso.com"
+            "assigneeUserPrincipalName": "NestorW@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "87404028-0c5b-4d0a-9d9d-3150e4b5ce74",
             "assigneeId": "87404028-0c5b-4d0a-9d9d-3150e4b5ce74",
             "assigneeDisplayName": "Isaiah Langer",
-            "assigneeUserPrincipalName": "{IsaiahL}@contoso.com"
+            "assigneeUserPrincipalName": "IsaiahL@contoso.com"
         }
     ]
 }

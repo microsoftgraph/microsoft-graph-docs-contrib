@@ -90,7 +90,7 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"{danas}@contoso.com",
+          "address":"danas@contoso.com",
           "name":"Dana Swope"
         }
       }
@@ -158,7 +158,7 @@ Content-type: application/json
   "sender": {
     "emailAddress": {
       "name": "Admin",
-      "address": "{admin}@contoso.com"
+      "address": "admin@contoso.com"
     }
   },
   "from": null,
@@ -166,7 +166,7 @@ Content-type: application/json
     {
       "emailAddress": {
         "name": "Dana Swope",
-        "address": "{danas}@contoso.com"
+        "address": "danas@contoso.com"
       }
     }
   ]

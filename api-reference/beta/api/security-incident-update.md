@@ -138,7 +138,7 @@ Content-Type: application/json
     "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
     "createdDateTime": "2021-08-13T08:43:35.5533333Z",
     "lastUpdateDateTime": "2021-09-30T09:35:45.1133333Z",
-    "assignedTo": "{KaiC}@contoso.com",
+    "assignedTo": "KaiC@contoso.com",
     "classification": "TruePositive",
     "determination": "MultiStagedAttack",
     "status": "Active",
@@ -149,7 +149,7 @@ Content-Type: application/json
     "comments": [
       {
 		"comment": "Demo incident",
-		"createdBy": "{DavidS}@contoso.com",
+		"createdBy": "DavidS@contoso.com",
 		"createdTime": "2021-09-30T12:07:37.2756993Z"
       }
     ]

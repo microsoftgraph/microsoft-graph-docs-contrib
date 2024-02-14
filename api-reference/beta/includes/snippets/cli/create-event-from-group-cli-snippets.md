@@ -25,7 +25,7 @@ mgc-beta groups events create --group-id {group-id} --body '{
 \
   },
 \
-  "end": {{adelev}@contoso.com
+  "end": {adelev@contoso.com
 \
       "dateTime": "2019-06-15T14:00:00",
 \

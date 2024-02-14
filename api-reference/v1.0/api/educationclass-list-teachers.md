@@ -109,7 +109,7 @@ Content-type: application/json
             "displayName": "Adele Vance",
             "givenName": "Adele",
             "surname": "Vance",
-            "userPrincipalName": "{AdeleV}@contoso.com",
+            "userPrincipalName": "AdeleV@contoso.com",
             "userType": "Member",
             "primaryRole": "teacher",
             "onPremisesInfo": {

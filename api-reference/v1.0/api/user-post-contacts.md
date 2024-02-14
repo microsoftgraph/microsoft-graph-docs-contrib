@@ -63,7 +63,7 @@ Content-type: application/json
   "surname": "Bansky",
   "emailAddresses": [
     {
-      "address": "{pavelb}@contoso.com",
+      "address": "pavelb@contoso.com",
       "name": "Pavel Bansky"
     }
   ],

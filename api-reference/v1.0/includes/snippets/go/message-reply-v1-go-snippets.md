@@ -22,14 +22,14 @@ message := graphmodels.NewMessage()
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
-address := "{samanthab}@contoso.com"
+address := "samanthab@contoso.com"
 emailAddress.SetAddress(&address)
 name := "Samantha Booth"
 emailAddress.SetName(&name)
 recipient.SetEmailAddress(emailAddress)
 recipient1 := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
-address := "{randiw}@contoso.com"
+address := "randiw@contoso.com"
 emailAddress.SetAddress(&address)
 name := "Randi Welch"
 emailAddress.SetName(&name)

@@ -133,7 +133,7 @@ Content-type: application/json
     ],
     "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
     "displayName": "Cameron White",
-    "email": "{CameronW}@contoso.com"
+    "email": "CameronW@contoso.com"
 }
 ```
 

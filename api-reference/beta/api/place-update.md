@@ -301,11 +301,11 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["{Building1RroomList}@contoso.com"],
+  "sampleKeys": ["Building1RroomList@contoso.com"],
   "name": "update_roomlist"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/places/{Building1RroomList}@contoso.com
+PATCH https://graph.microsoft.com/beta/places/Building1RroomList@contoso.com
 Content-type: application/json
 
 {

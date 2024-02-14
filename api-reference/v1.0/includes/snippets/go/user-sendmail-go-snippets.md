@@ -30,7 +30,7 @@ message.SetBody(body)
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
-address := "{frannis}@contoso.com"
+address := "frannis@contoso.com"
 emailAddress.SetAddress(&address)
 recipient.SetEmailAddress(emailAddress)
 
@@ -42,7 +42,7 @@ message.SetToRecipients(toRecipients)
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
-address := "{danas}@contoso.com"
+address := "danas@contoso.com"
 emailAddress.SetAddress(&address)
 recipient.SetEmailAddress(emailAddress)
 

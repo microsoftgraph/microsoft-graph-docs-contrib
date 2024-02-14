@@ -11,10 +11,10 @@ $params = @{
 		@{
 			type = "personal"
 			name = "Pavel Bansky"
-			address = "{pavelb}@contoso.com"
+			address = "pavelb@contoso.com"
 		}
 		@{
-			address = "{pavelb}@contoso.com"
+			address = "pavelb@contoso.com"
 			name = "Pavel Bansky"
 			type = "other"
 			otherLabel = "Volunteer work"

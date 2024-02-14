@@ -14,7 +14,7 @@ var requestBody = new CalendarPermission
 	EmailAddress = new EmailAddress
 	{
 		Name = "Samantha Booth",
-		Address = "{samanthab}@contoso.com",
+		Address = "samanthab@contoso.com",
 	},
 	IsInsideOrganization = true,
 	IsRemovable = true,

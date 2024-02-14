@@ -11,7 +11,7 @@ mgc-beta users messages create --user-id {user-id} --body '{
 \
     "toRecipients":[
 \
-      {{samanthab}@contoso.com
+      {samanthab@contoso.com
 \
           "emailAddress":{
 \
@@ -19,7 +19,7 @@ mgc-beta users messages create --user-id {user-id} --body '{
 \
               "address":"samanthab@contoso.onmicrosoft.com"
 \
-          }{danas}@contoso.com
+          }danas@contoso.com
 \
       }
 \

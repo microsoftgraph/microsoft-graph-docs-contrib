@@ -20,14 +20,14 @@ const sendMail = {
     toRecipients: [
       {
         emailAddress: {
-          address: '{frannis}@contoso.com'
+          address: 'frannis@contoso.com'
         }
       }
     ],
     ccRecipients: [
       {
         emailAddress: {
-          address: '{danas}@contoso.com'
+          address: 'danas@contoso.com'
         }
       }
     ]

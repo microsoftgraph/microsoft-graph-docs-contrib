@@ -127,13 +127,13 @@ Content-type: application/json
             "from":{
                 "emailAddress":{
                     "name":"Marketing",
-                    "address":"{Marketing}@contoso.com"
+                    "address":"Marketing@contoso.com"
                 }
             },
             "sender":{
                 "emailAddress":{
                     "name":"Marketing",
-                    "address":"{Marketing}@contoso.com"
+                    "address":"Marketing@contoso.com"
                 }
             }
         }

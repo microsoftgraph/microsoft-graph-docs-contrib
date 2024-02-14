@@ -155,7 +155,7 @@ Content-type: application/json
   "sender": {
     "emailAddress": {
       "name": "Admin",
-      "address": "{admin}@contoso.com"
+      "address": "admin@contoso.com"
     }
   },
   "from": null,
@@ -163,13 +163,13 @@ Content-type: application/json
     {
       "emailAddress": {
         "name": "Samantha Booth",
-        "address": "{samanthab}@contoso.com"
+        "address": "samanthab@contoso.com"
       }
     },
     {
       "emailAddress": {
         "name": "Randi Welch",
-        "address": "{randiw}@contoso.com"
+        "address": "randiw@contoso.com"
       }
     }
   ]

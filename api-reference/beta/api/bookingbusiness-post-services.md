@@ -49,10 +49,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_bookingservice_from_bookingbusiness",
-  "sampleKeys": ["{contosolunchdelivery}@contoso.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/{contosolunchdelivery}@contoso.com/services
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/services
 Content-type: application/json
 
 {
@@ -178,7 +178,7 @@ Content-type: application/json
     "staffMemberIds": [],
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
-    "webUrl": "https://outlook.office365.com/owa/calendar/{Contosolunchdelivery}@contoso.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
+    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "defaultLocation": {
         "displayName": "Contoso Lunch Delivery",
         "locationEmailAddress": null,

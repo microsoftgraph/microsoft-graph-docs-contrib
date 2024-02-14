@@ -17,13 +17,13 @@ request_body = CreateReplyPostRequestBody(
 		to_recipients = [
 			Recipient(
 				email_address = EmailAddress(
-					address = "{samanthab}@contoso.com",
+					address = "samanthab@contoso.com",
 					name = "Samantha Booth",
 				),
 			),
 			Recipient(
 				email_address = EmailAddress(
-					address = "{randiw}@contoso.com",
+					address = "randiw@contoso.com",
 					name = "Randi Welch",
 				),
 			),

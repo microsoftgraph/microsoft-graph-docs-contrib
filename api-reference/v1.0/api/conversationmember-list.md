@@ -131,7 +131,7 @@ Content-type: application/json
             "displayName": "SA-TeamsAdconnect",
             "visibleHistoryStartDateTime": "2022-04-25T11:52:22.765Z",
             "userId": "17e9526c-2286-41a1-aeeb-4badee766063",
-            "email": "SA-{TeamsAdconnect}@contoso.com",
+            "email": "SA-TeamsAdconnect@contoso.com",
             "tenantId": "8d237650-cdc1-40e1-899c-5601e055f3fe"
         },
         {
@@ -155,7 +155,7 @@ Content-type: application/json
             "displayName": "Megan Bowen",
             "visibleHistoryStartDateTime": "2022-04-25T11:52:22.765Z",
             "userId": "48d31887-5fad-4d73-a9f5-3c356e68a038",
-            "email": "{MeganB}@contoso.com",
+            "email": "MeganB@contoso.com",
             "tenantId": "dcd219dd-bc68-4b9b-bf0b-4a33a796be35"
         },
         {

@@ -25,7 +25,7 @@ request_body = SendMailPostRequestBody(
 		to_recipients = [
 			Recipient(
 				email_address = EmailAddress(
-					address = "{meganb}@contoso.com",
+					address = "meganb@contoso.com",
 				),
 			),
 		],

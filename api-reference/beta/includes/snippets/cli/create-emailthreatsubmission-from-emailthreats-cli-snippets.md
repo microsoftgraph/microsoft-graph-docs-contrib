@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 mgc-beta security threat-submission email-threats create --body '{
 \
   "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
-\{tifc}@contoso.com
+\tifc@contoso.com
   "category": "spam",
 \
   "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",

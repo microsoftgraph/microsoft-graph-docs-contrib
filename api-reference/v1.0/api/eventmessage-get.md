@@ -146,20 +146,20 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"{admin}@contoso.com"
+            "address":"admin@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"{admin}@contoso.com"
+            "address":"admin@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"{AlexW}@contoso.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -273,20 +273,20 @@ Content-type: application/json
    "sender":{
       "emailAddress":{
          "name":"Administrator",
-         "address":"{admin}@contoso.com"
+         "address":"admin@contoso.com"
       }
    },
    "from":{
       "emailAddress":{
          "name":"Administrator",
-         "address":"{admin}@contoso.com"
+         "address":"admin@contoso.com"
       }
    },
    "toRecipients":[
       {
          "emailAddress":{
             "name":"Alex Wilber",
-            "address":"{AlexW}@contoso.com"
+            "address":"AlexW@contoso.com"
          }
       }
    ],
@@ -356,7 +356,7 @@ Content-type: application/json
             },
             "emailAddress":{
                "name":"Administrator",
-               "address":"{admin}@contoso.com"
+               "address":"admin@contoso.com"
             }
          },
          {
@@ -367,14 +367,14 @@ Content-type: application/json
             },
             "emailAddress":{
                "name":"Alex Wilber",
-               "address":"{AlexW}@contoso.com"
+               "address":"AlexW@contoso.com"
             }
          }
       ],
       "organizer":{
          "emailAddress":{
             "name":"Administrator",
-            "address":"{admin}@contoso.com"
+            "address":"admin@contoso.com"
          }
       }
    }

@@ -100,7 +100,7 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
                 "canEdit": true,
                 "owner": {
                     "name": "Adele Vance",
-                    "address": "{AdeleV}@contoso.com"
+                    "address": "AdeleV@contoso.com"
                 }
             },
             {
@@ -113,7 +113,7 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
                 "canEdit": false,
                 "owner": {
                     "name": "Alex Wilber",
-                    "address": "{AlexW}@contoso.com"
+                    "address": "AlexW@contoso.com"
                 }
             }
         ]

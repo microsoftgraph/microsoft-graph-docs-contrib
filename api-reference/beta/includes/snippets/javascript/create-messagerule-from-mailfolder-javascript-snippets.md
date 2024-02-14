@@ -24,7 +24,7 @@ const messageRule = {
           {
              emailAddress: {
                 name: 'Alex Wilbur',
-                address: '{AlexW}@contoso.com'
+                address: 'AlexW@contoso.com'
               }
            }
         ],

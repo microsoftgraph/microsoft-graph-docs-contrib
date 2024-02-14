@@ -10,10 +10,10 @@ mgc-beta users contacts patch --user-id {user-id} --contact-id {contact-id} --bo
     "emailAddresses":[
 \
         {
-\{pavelb}@contoso.com
+\pavelb@contoso.com
             "type":"personal",
 \
-            "name":"Pa{pavelb}@contoso.com
+            "name":"Papavelb@contoso.com
 \
             "address":"pavelb@adatum.onmicrosoft.com"
 \

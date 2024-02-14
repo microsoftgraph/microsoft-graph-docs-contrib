@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ConversationMemberCollectionResponse result = graphClient.teams().byTeamId("{team-id}").members().get(requestConfiguration -> {
-	requestConfiguration.queryParameters.filter = "(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq '{admin}@contoso.com')";
+	requestConfiguration.queryParameters.filter = "(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@contoso.com')";
 });
 
 

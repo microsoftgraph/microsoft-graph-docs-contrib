@@ -139,7 +139,7 @@ Content-type: application/json
     "user": {
       "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
       "displayName": "Ronald Admin",
-      "email": "{tifc}@contoso.com"
+      "email": "tifc@contoso.com"
     }
   },
   "result": {

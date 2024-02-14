@@ -10,13 +10,13 @@ mgc-beta users messages create-reply post --user-id {user-id} --message-id {mess
   "message":{
 \
     "toRecipients":[
-\{samanthab}@contoso.com
+\samanthab@contoso.com
       {
 \
         "emailAddress": {
 \
           "address":"samanthab@contoso.onmicrosoft.com",
-\{randiw}@contoso.com
+\randiw@contoso.com
           "name":"Samantha Booth"
 \
         }

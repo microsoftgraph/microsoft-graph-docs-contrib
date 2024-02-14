@@ -102,7 +102,7 @@ Content-type: application/json
     "isRemovable": false,
     "owner": {
         "name": "Alex Wilber",
-        "address": "{AlexW}@contoso.com"
+        "address": "AlexW@contoso.com"
     }
 }
 ```
@@ -149,7 +149,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"{AdeleV}@contoso.com",
+        "address":"AdeleV@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -276,14 +276,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "{AdeleV}@contoso.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "{AlexW}@contoso.com"
+            "address": "AlexW@contoso.com"
         }
     },
     "onlineMeeting": {
@@ -495,14 +495,14 @@ Content-type: application/json
     "location": {
         "displayName": "Conf Room Baker",
         "locationType": "conferenceRoom",
-        "uniqueId": "{Baker}@contoso.com",
+        "uniqueId": "Baker@contoso.com",
         "uniqueIdType": "directory"
     },
     "locations": [
         {
             "displayName": "Conf Room Baker",
             "locationType": "conferenceRoom",
-            "uniqueId": "{Baker}@contoso.com",
+            "uniqueId": "Baker@contoso.com",
             "uniqueIdType": "directory"
         }
     ],
@@ -515,14 +515,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "{AdeleV}@contoso.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "{AlexW}@contoso.com"
+            "address": "AlexW@contoso.com"
         }
     },
     "onlineMeeting": {

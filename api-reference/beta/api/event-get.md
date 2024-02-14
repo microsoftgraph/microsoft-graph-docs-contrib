@@ -189,7 +189,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"{samanthab}@contoso.com"
+                "address":"samanthab@contoso.com"
             }
         },
         {
@@ -210,7 +210,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
             },
             "emailAddress":{
                 "name":"Dana Swope",
-                "address":"{danas}@contoso.com"
+                "address":"danas@contoso.com"
             }
         }
     ],
@@ -218,7 +218,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
     "organizer":{
         "emailAddress":{
             "name":"Samantha Booth",
-            "address":"{samanthab}@contoso.com"
+            "address":"samanthab@contoso.com"
         }
     }
 }
@@ -432,7 +432,7 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Dana Swope",
-        "address":"{DanaS}@contoso.com"
+        "address":"DanaS@contoso.com"
       }
     },
     {
@@ -443,14 +443,14 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Alex Wilber",
-        "address":"{AlexW}@contoso.com"
+        "address":"AlexW@contoso.com"
       }
     }
   ],
   "organizer":{
     "emailAddress":{
       "name":"Adele Vance",
-      "address":"{AdeleV}@contoso.com"
+      "address":"AdeleV@contoso.com"
     }
   }
 }

@@ -192,7 +192,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Samantha Booth",
-                        "address":"{samanthab}@contoso.com"
+                        "address":"samanthab@contoso.com"
                     }
                 },
                 {
@@ -203,14 +203,14 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Dana Swope",
-                        "address":"{danas}@contoso.com"
+                        "address":"danas@contoso.com"
                     }
                 }
             ],
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"{samanthab}@contoso.com"
+                    "address":"samanthab@contoso.com"
                 }
             }
         }

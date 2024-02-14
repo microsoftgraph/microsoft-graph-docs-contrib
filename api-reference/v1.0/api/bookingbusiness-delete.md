@@ -45,10 +45,10 @@ Here's an example of the request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["{fabrikam}@contoso.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{fabrikam}@contoso.com
+DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.com
 ```
 
 ### Response

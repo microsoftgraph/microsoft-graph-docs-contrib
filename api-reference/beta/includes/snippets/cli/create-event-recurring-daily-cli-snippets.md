@@ -25,7 +25,7 @@ mgc-beta users events create --user-id {user-id} --body '{
 \
   },
 \
-  "end": {{AlexW}@contoso.com
+  "end": {AlexW@contoso.com
 \
       "dateTime": "2020-02-25T14:00:00",
 \

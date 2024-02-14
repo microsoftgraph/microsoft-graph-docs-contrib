@@ -13,7 +13,7 @@ $params = @{
 			@{
 				emailAddress = @{
 					name = "Samantha Booth"
-					address = "{samanthab}@contoso.com"
+					address = "samanthab@contoso.com"
 				}
 			}
 		)
@@ -21,7 +21,7 @@ $params = @{
 			@{
 				mentioned = @{
 					name = "Dana Swope"
-					address = "{danas}@contoso.com"
+					address = "danas@contoso.com"
 				}
 			}
 		)

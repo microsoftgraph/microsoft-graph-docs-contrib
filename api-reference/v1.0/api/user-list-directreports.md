@@ -134,12 +134,12 @@ Content-type: application/json
             "displayName": "Conf Room Adams",
             "givenName": null,
             "jobTitle": null,
-            "mail": "{Adams}@contoso.com",
+            "mail": "Adams@contoso.com",
             "mobilePhone": null,
             "officeLocation": null,
             "preferredLanguage": null,
             "surname": null,
-            "userPrincipalName": "{Adams}@contoso.com"
+            "userPrincipalName": "Adams@contoso.com"
         }
     ]
 }

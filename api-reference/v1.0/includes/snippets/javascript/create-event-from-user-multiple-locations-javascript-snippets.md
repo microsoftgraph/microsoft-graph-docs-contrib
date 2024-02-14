@@ -27,14 +27,14 @@ const event = {
   attendees: [
     {
       emailAddress: {
-        address: '{DanaS}@contoso.com',
+        address: 'DanaS@contoso.com',
         name: 'Dana Swope'
       },
       type: 'Required'
     },
     {
       emailAddress: {
-        address: '{AlexW}@contoso.com',
+        address: 'AlexW@contoso.com',
         name: 'Alex Wilber'
       },
       type: 'Required'

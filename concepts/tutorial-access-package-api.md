@@ -51,7 +51,7 @@ Content-type: application/json
   "accountEnabled":true,
   "displayName":"Requestor1",
   "mailNickname":"Requestor1",
-  "userPrincipalName":"{Requestor1}@contoso.com",
+  "userPrincipalName":"Requestor1@contoso.com",
   "passwordProfile": {
     "forceChangePasswordNextSignIn":true,
     "password":"Contoso1234"
@@ -452,7 +452,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
       "originId": "e93e24d1-2b65-4a6c-a1dd-654a12225487",
       "originSystem": "AadGroup",
       "isPendingOnboarding": false,
-      "addedBy": "{admin}@contoso.com",
+      "addedBy": "admin@contoso.com",
       "addedOn": "2020-08-21T19:27:29.967Z"
     }
   ]
@@ -535,7 +535,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
         "originId": "e93e24d1-2b65-4a6c-a1dd-654a12225487",
         "originSystem": "AadGroup",
         "isPendingOnboarding": false,
-        "addedBy": "{admin}@contoso.com",
+        "addedBy": "admin@contoso.com",
         "addedOn": "2020-06-26T17:13:23.723Z",
         "accessPackageResourceScopes": []
       }
@@ -617,9 +617,9 @@ Content-type: application/json
   "description": "Access to resources for the campaign",
   "isHidden": false,
   "isRoleScopesVisible": false,
-  "createdBy": "{admin}@contoso.com",
+  "createdBy": "admin@contoso.com",
   "createdDateTime": "2020-08-21T19:45:33.2042281Z",
-  "modifiedBy": "{admin}@contoso.com",
+  "modifiedBy": "admin@contoso.com",
   "modifiedDateTime": "2020-08-21T19:45:33.2042281Z"
 }
 ```
@@ -699,9 +699,9 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages('88203d16-0e31-41d4-87b2-dd402f1435e9')/accessPackageResourceRoleScopes/$entity",
   "id": "e081321b-2802-4834-a6ca-6f598ce3cdf7_6dbd2209-9d14-4c76-b92b-fcb00e835fe1",
-  "createdBy": "{admin}@contoso.com",
+  "createdBy": "admin@contoso.com",
   "createdDateTime": "2020-08-21T19:56:00.6320729Z",
-  "modifiedBy": "{admin}@contoso.com",
+  "modifiedBy": "admin@contoso.com",
   "modifiedDateTime": "2020-08-21T19:56:00.6320729Z"
 }
 ```
@@ -805,9 +805,9 @@ Content-type: application/json
   "canExtend": false,
   "durationInDays": 30,
   "expirationDateTime": null,
-  "createdBy": "{admin}@contoso.com",
+  "createdBy": "admin@contoso.com",
   "createdDateTime": "2020-06-29T19:47:44.7399675Z",
-  "modifiedBy": "{admin}@contoso.com",
+  "modifiedBy": "admin@contoso.com",
   "modifiedDateTime": "2020-06-29T19:47:44.7555489Z",
   "accessReviewSettings": null,
   "requestorSettings": {

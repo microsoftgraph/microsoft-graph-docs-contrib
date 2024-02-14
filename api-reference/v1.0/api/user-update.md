@@ -65,7 +65,7 @@ In the request body, supply the values for relevant fields that should be update
 |employeeOrgData|[employeeOrgData](../resources/employeeorgdata.md) |Represents organization data (e.g. division and costCenter) associated with a user. |
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user's job title.|
-|mail|String|The SMTP address for the user, for example, {`jeff}@contoso.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. Cannot be updated to `null`. |
+|mail|String|The SMTP address for the user, for example, `jeff@contoso.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. Cannot be updated to `null`. |
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|

@@ -119,7 +119,7 @@ You can also revoke requests that were previously approved. Similar to approving
    You get a response similar to the following:
 
    ```powershell
-   AuthorizedBy          : {user}@contoso.com
+   AuthorizedBy          : user@contoso.com
    Type                  : Task
    AuthorizedAccess      : Data Access Request
    StartTimeUtc          : 7/24/2018 6:02:42 PM

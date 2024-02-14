@@ -25,7 +25,7 @@ mgc users calendars events create --user-id {user-id} --calendar-id {calendar-id
 \
   },
 \
-  "end": {{adelev}@contoso.com
+  "end": {adelev@contoso.com
 \
       "dateTime": "2019-03-10T14:00:00",
 \

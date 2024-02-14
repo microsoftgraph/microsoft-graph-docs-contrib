@@ -185,7 +185,7 @@ Content-type: application/json
       "givenName": "Adele",
       "jobTitle": "Retail Manager",
       "surname": "Vance",
-      "userPrincipalName": "{AdeleV}@contoso.com",
+      "userPrincipalName": "AdeleV@contoso.com",
       "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     },
     {

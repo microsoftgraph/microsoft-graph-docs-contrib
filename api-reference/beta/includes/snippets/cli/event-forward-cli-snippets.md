@@ -9,7 +9,7 @@ mgc-beta users events forward post --user-id {user-id} --event-id {event-id} --b
 \
   "ToRecipients":[
 \
-      {{danas}@contoso.com
+      {danas@contoso.com
 \
         "EmailAddress": {
 \

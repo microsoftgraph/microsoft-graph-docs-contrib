@@ -372,14 +372,14 @@ Content-type: application/json
                     },
                     "emailAddress": {
                         "name": "Samantha Booth",
-                        "address": "{samanthab}@contoso.com"
+                        "address": "samanthab@contoso.com"
                     }
                 }
             ],
             "organizer": {
                 "emailAddress": {
                     "name": "Samantha Booth",
-                    "address": "{samanthab}@contoso.com"
+                    "address": "samanthab@contoso.com"
                 }
             }
         },
@@ -456,14 +456,14 @@ Content-type: application/json
                     },
                     "emailAddress": {
                         "name": "Samantha Booth",
-                        "address": "{samanthab}@contoso.com"
+                        "address": "samanthab@contoso.com"
                     }
                 }
             ],
             "organizer": {
                 "emailAddress": {
                     "name": "Samantha Booth",
-                    "address": "{samanthab}@contoso.com"
+                    "address": "samanthab@contoso.com"
                 }
             }
         }

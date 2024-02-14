@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewThreatAssessmentRequest()
-recipientEmail := "{tifc}@contoso.com"
+recipientEmail := "tifc@contoso.com"
 requestBody.SetRecipientEmail(&recipientEmail)
 expectedAssessment := graphmodels.BLOCK_THREATEXPECTEDASSESSMENT
 requestBody.SetExpectedAssessment(&expectedAssessment)

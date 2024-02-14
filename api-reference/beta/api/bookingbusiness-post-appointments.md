@@ -64,10 +64,10 @@ The following example shows a request. This appointment does not involve booking
 <!-- {
   "blockType": "request",
   "name": "create_bookingappointment_from_bookingbusiness",
-  "sampleKeys": ["{contosolunchdelivery}@contoso.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/{contosolunchdelivery}@contoso.com/appointments
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/appointments
 Content-type: application/json
 
 {

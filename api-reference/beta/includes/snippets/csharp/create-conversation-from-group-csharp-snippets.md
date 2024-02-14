@@ -32,7 +32,7 @@ var requestBody = new Conversation
 							EmailAddress = new EmailAddress
 							{
 								Name = "Adele Vance",
-								Address = "{AdeleV}@contoso.com",
+								Address = "AdeleV@contoso.com",
 							},
 						},
 					},

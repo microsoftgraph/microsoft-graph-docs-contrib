@@ -164,7 +164,7 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"{samanthab}@contoso.com"
+                    "address":"samanthab@contoso.com"
                 }
             },
             "id":"AAMkADNVxRAAA="
@@ -191,7 +191,7 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"{samanthab}@contoso.com"
+                    "address":"samanthab@contoso.com"
                 }
             },
             "id":"AAMkADVxSAAA="
@@ -287,7 +287,7 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"{samanthab}@contoso.com"
+                    "address":"samanthab@contoso.com"
                 }
             },
             "id":"AAMkADVxTAAA="
@@ -314,7 +314,7 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"{samanthab}@contoso.com"
+                    "address":"samanthab@contoso.com"
                 }
             },
             "id":"AAMkADVxUAAA="
@@ -416,7 +416,7 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"{samanthab}@contoso.com"
+                    "address":"samanthab@contoso.com"
                 }
             },
             "id":"AAMkADj1HuAAA="
@@ -532,7 +532,7 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"{samanthab}@contoso.com"
+                    "address":"samanthab@contoso.com"
                 }
             },
             "id":"AAMkADj1HvAAA="
