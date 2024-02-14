@@ -1,6 +1,6 @@
 ---
 title: "Get workplaceSensorDevice"
-description: "Get the properties of a workplace sensor device. For example, you can use this method to get the device details like tags, mac address, and sensors on the device."
+description: "Get the properties of a workplace sensor device."
 author: "ms-amakumar"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of a workplace sensor device. For example, you can use this method to get the device details like tags, mac address, and sensors on the device.
+Get the properties of a workplace sensor device, including tags, MAC address, sensors, and more.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /workplace/sensorDevices/{id}
 ```
 
 ## Optional query parameters
-This operation supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
 
 ## Request headers
 | Name          | Description               |
@@ -42,7 +42,7 @@ This operation supports the `$select` [OData query parameter](/graph/query-param
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [workplaceSens
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_workplacesensordevice"
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/workplace/sensorDevices/ade7078f-4bf5-4239-
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,4 +107,3 @@ Content-Type: application/json
     ]
 }
 ```
-
