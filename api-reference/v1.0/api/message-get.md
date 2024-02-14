@@ -516,7 +516,7 @@ YW5vdGhlciBtYWlsLg0K
 ```
 
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)
