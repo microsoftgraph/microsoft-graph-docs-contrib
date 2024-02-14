@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|PlaceDevice.ReadWrite.All|
 
-For an app with delegated permissions to write workplace devices, the signed-in user must be a member of one of the following Microsoft Entra administrator roles: Global Administrator or Exchange Online management roles: TenantPlacesManagement.
+For an app with delegated permissions to write workplace devices, the signed-in user must be a member of one of the following Microsoft Entra administrator roles: either Global Administrator or one of the Exchange Online management roles, specifically TenantPlacesManagement.
 
 ## HTTP request
 
