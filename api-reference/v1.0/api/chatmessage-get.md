@@ -389,7 +389,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List messages in a channel](channel-list-messages.md)
 - [List messages in a chat](chat-list-messages.md)

@@ -163,7 +163,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Get log of PSTN calls](callrecords-callrecord-getpstncalls.md)
 * [Get log of direct routing calls](callrecords-callrecord-getdirectroutingcalls.md)

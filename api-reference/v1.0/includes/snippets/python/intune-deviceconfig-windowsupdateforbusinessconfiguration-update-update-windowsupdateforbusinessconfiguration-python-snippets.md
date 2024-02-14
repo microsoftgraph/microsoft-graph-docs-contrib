@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows_update_for_business_configuration import WindowsUpdateForBusinessConfiguration
+from msgraph.generated.models.windows_update_scheduled_install import WindowsUpdateScheduledInstall
 
 graph_client = GraphServiceClient(credentials, scopes)
 

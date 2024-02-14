@@ -4,23 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 B2cIdentityUserFlow b2cIdentityUserFlow = new B2cIdentityUserFlow();
-b2cIdentityUserFlow.id = "UserFlowWithAPIConnector";
-b2cIdentityUserFlow.userFlowType = UserFlowType.SIGN_UP_OR_SIGN_IN;
-b2cIdentityUserFlow.userFlowTypeVersion = 1;
+b2cIdentityUserFlow.setId("UserFlowWithAPIConnector");
+b2cIdentityUserFlow.setUserFlowType(UserFlowType.SignUpOrSignIn);
+b2cIdentityUserFlow.setUserFlowTypeVersion(1f);
 UserFlowApiConnectorConfiguration apiConnectorConfiguration = new UserFlowApiConnectorConfiguration();
 IdentityApiConnector postFederationSignup = new IdentityApiConnector();
-postFederationSignup.additionalDataManager().put("@odata.id", new JsonPrimitive("{apiConnectorId}"));
-apiConnectorConfiguration.postFederationSignup = postFederationSignup;
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("@odata.id", "{apiConnectorId}");
+postFederationSignup.setAdditionalData(additionalData);
+apiConnectorConfiguration.setPostFederationSignup(postFederationSignup);
 IdentityApiConnector postAttributeCollection = new IdentityApiConnector();
-postAttributeCollection.additionalDataManager().put("@odata.id", new JsonPrimitive("{apiConnectorId}"));
-apiConnectorConfiguration.postAttributeCollection = postAttributeCollection;
-b2cIdentityUserFlow.apiConnectorConfiguration = apiConnectorConfiguration;
+HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
+additionalData1.put("@odata.id", "{apiConnectorId}");
+postAttributeCollection.setAdditionalData(additionalData1);
+apiConnectorConfiguration.setPostAttributeCollection(postAttributeCollection);
+b2cIdentityUserFlow.setApiConnectorConfiguration(apiConnectorConfiguration);
+B2cIdentityUserFlow result = graphClient.identity().b2cUserFlows().post(b2cIdentityUserFlow);
 
-graphClient.identity().b2cUserFlows()
-	.buildRequest()
-	.post(b2cIdentityUserFlow);
 
 ```

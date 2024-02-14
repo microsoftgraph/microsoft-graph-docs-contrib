@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/{id}/appointments/{id}
+DELETE /solutions/bookingBusinesses/{id}/appointments/{id}
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ Here's an example of a request.
   "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "AAMkADKqAAA="]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKqAAA=
+DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKqAAA=
 ```
 
 # [C#](#tab/csharp)
@@ -83,10 +83,6 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-bookingappointment-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingappointment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

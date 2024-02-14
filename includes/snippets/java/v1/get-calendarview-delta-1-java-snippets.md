@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "odata.maxpagesize=2"));
-requestOptions.add(new QueryOption("startdatetime", "2016-12-01T00:00:00Z"));
-requestOptions.add(new QueryOption("enddatetime", "2016-12-30T00:00:00Z"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-EventDeltaCollectionPage delta = graphClient.me().calendarView()
-	.delta()
-	.buildRequest( requestOptions )
-	.get();
+var result = graphClient.me().calendarView().delta().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.startDateTime = "2016-12-01T00:00:00Z";
+	requestConfiguration.queryParameters.endDateTime = "2016-12-30T00:00:00Z";
+	requestConfiguration.headers.add("Prefer", "odata.maxpagesize=2");
+});
+
 
 ```

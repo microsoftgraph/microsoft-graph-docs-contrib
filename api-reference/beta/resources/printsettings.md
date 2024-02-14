@@ -18,11 +18,12 @@ Represents tenant-wide settings for the Universal Print service.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Boolean|Specifies whether document conversion is enabled for the tenant. If document conversion is enabled, Universal Print service will automatically convert documents into a format compatible with the printer (xps to pdf) when needed.|
+|documentConversionEnabled|Boolean|Specifies whether document conversion is enabled for the tenant. If document conversion is enabled, Universal Print service converts documents into a format compatible with the printer (xps to pdf) when needed.|
+|printerDiscoverySettings|[printerDiscoverySettings](../resources/printerdiscoverysettings.md)|Specifies settings that affect printer discovery when using Universal Print.|
 
 ## JSON representation
 
-The following is a JSON representation of printSettings.
+The following JSON shows a representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -33,8 +34,13 @@ The following is a JSON representation of printSettings.
 
 ```json
 {
-  "documentConversionEnabled": true
+  "documentConversionEnabled": true,
+  "printerDiscoverySettings": {
+    "@odata.type": "microsoft.graph.printerDiscoverySettings"
+  }
 }
 ```
 
+## Credit notice
 
+**AirPrint**, **Mac**, and **macOS** are trademarks of Apple, Inc., registered in the US and other countries/regions.

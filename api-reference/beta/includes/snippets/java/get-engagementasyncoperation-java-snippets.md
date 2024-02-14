@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EngagementAsyncOperation engagementAsyncOperation = graphClient.employeeExperience().engagementAsyncOperations("a6fdce1-c261-48bc-89de-1cfef658c0d5")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+EngagementAsyncOperation result = graphClient.employeeExperience().engagementAsyncOperations().byEngagementAsyncOperationId("{engagementAsyncOperation-id}").get();
+
 
 ```

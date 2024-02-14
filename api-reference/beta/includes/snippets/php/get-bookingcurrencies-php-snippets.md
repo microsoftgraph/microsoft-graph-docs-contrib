@@ -10,6 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->bookingCurrencies()->get()->wait();
+$result = $graphServiceClient->solutions()->bookingCurrencies()->get()->wait();
 
 ```

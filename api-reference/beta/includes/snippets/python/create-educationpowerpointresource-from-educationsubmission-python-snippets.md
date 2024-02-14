@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.education_submission_resource import EducationSubmissionResource
+from msgraph.generated.models.education_power_point_resource import EducationPowerPointResource
 
 graph_client = GraphServiceClient(credentials, scopes)
 

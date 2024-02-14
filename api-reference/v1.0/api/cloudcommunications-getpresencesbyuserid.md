@@ -156,5 +156,5 @@ Content-Length: 1574
 }
 -->
 
-## See also
+## Related content
 - [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)

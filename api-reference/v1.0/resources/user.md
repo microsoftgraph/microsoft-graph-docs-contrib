@@ -168,7 +168,7 @@ This resource supports:
 |givenName|String|The given name (first name) of the user. Maximum length is 64 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | hireDate | DateTimeOffset | The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`. <br><br>Returned only on `$select`. <br> **Note:** This property is specific to SharePoint Online. We recommend using the native **employeeHireDate** property to set and update hire date values using Microsoft Graph APIs. |
 |id|String|The unique identifier for the user. Should be treated as an opaque identifier. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `in`).|
-|identities|[objectIdentity](objectIdentity.md) collection| Represents the identities that can be used to sign in to this user account. Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account. It may contain multiple items with the same **signInType** value. <br><br>Returned only on `$select`. Supports `$filter` (`eq`) including on `null` values, only where the **signInType** is not `userPrincipalName`.|
+|identities|[objectIdentity](objectIdentity.md) collection| Represents the identities that can be used to sign in to this user account. Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account. It may contain multiple items with the same **signInType** value. <br><br>Returned only on `$select`. <br><br> Supports `$filter` (`eq`) with limitations. <!--Supports `$filter` (`eq`) including on `null` values, only where the **signInType** is not `userPrincipalName`.-->|
 |imAddresses|String collection|The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 |interests|String collection|A list for the user to describe their interests. <br><br>Returned only on `$select`.|
 |isResourceAccount|Boolean| Do not use – reserved for future use.|
@@ -579,7 +579,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)

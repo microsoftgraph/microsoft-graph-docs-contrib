@@ -1,10 +1,10 @@
 ---
-author: "Datar89"
-description: "Represents an object that exposes information about the administrative units associated to a call participant."
 title: "administrativeUnitInfo resource type"
+description: "Represents an object that exposes information about the administrative units associated to a call participant."
+author: "Datar89"
 ms.localizationpriority: medium
-doc_type: resourcePageType
 ms.prod: "cloud-communications"
+doc_type: resourcePageType
 ---
 
 # administrativeUnitInfo resource type

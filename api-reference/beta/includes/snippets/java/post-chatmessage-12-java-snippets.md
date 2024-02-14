@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
 ItemBody body = new ItemBody();
-body.contentType = BodyType.HTML;
-body.content = "<emoji alt=\"😶‍🌫️\"></emoji>";
-chatMessage.body = body;
+body.setContentType(BodyType.Html);
+body.setContent("<emoji alt=\"😶‍🌫️\"></emoji>");
+chatMessage.setBody(body);
+ChatMessage result = graphClient.chats().byChatId("{chat-id}").messages().post(chatMessage);
 
-graphClient.chats("19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2").messages()
-	.buildRequest()
-	.post(chatMessage);
 
 ```

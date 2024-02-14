@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.planner.tasks.item.details.details_request_builder import DetailsRequestBuilder
+from msgraph.generated.models.planner_task_details import PlannerTaskDetails
+from msgraph.generated.models.planner_external_references import PlannerExternalReferences
+from msgraph.generated.models.planner_external_reference import PlannerExternalReference
+from msgraph.generated.models.planner_checklist_items import PlannerChecklistItems
+from msgraph.generated.models.planner_checklist_item import PlannerChecklistItem
 
 graph_client = GraphServiceClient(credentials, scopes)
 
