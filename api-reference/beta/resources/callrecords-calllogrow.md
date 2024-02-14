@@ -45,7 +45,6 @@ The following JSON representation shows the resource type.
   "administrativeUnitInfos": [{"@odata.type": "microsoft.graph.callRecords.administrativeUnitInfo"}],
   "id": "String (identifier)",
   "otherPartyCountryCode": "String",
-  "usageCountryCode": "String",
   "userDisplayName": "String",
   "userId": "String",
   "userPrincipalName": "String"
