@@ -42,9 +42,9 @@ POST /workplace/sensorDevices/ingestTelemetry
 ## Request body
 In the request body, supply a JSON representation of the parameters. 
 
-The sensorId property may be omitted within the [workplaceSensorDeviceTelemetry](../resources/workplacesensordevicetelemetry.md) object for devices with unique sensor types. When this property is omitted, the sensorType value serves as the default identifier, consistent with the behavior of creating a device without specifying a sensorId.
+The **sensorId** property may be omitted within the [workplaceSensorDeviceTelemetry](../resources/workplacesensordevicetelemetry.md) object for devices with unique sensor types. When this property is omitted, the [sensorType](../resources/workplacesensor.md#workplacesensortype-values) value serves as the default identifier, consistent with the behavior when you create a device without a specified **sensorId**.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -52,13 +52,15 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
-### Example 1: Send sensor telemetry for a device with unique sensor types.
+### Example 1: Send sensor telemetry for a device with unique sensor types
+
+The following example shows how to send sensor telemetry for a device with unique sensor types.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "workplacesensordevicethis.ingesttelemetry.unique.sensor.type"
@@ -81,7 +83,7 @@ Content-Type: application/json
 ```
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -91,10 +93,12 @@ The following is an example of the response
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Send sensor telemetry for a device that has multiple sensors of the same type.
+### Example 2: Send sensor telemetry for a device that has multiple sensors of the same type
+
+The following example shows how to send sensor telemetry for a device that has multiple sensors of the same type.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "workplacesensordevicethis.ingesttelemetry.same.sensor.type"
@@ -126,7 +130,7 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -136,10 +140,12 @@ The following is an example of the response
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Ingest telemetry for multiple devices.
+### Example 3: Ingest telemetry for multiple devices
+
+The following example shows how to ingest telemetry for multiple devices.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "workplacesensordevicethis.ingesttelemetry.multiple.devices"
@@ -169,7 +175,7 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -178,4 +184,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-
