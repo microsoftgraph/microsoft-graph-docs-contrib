@@ -35,7 +35,7 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 
 | Supported values for resourceProvisioningOptions | Description |
 |:-|:-|
-| Team | Provision a team for this group in Microsoft Teams. Additionally, this value can also be added on [group update](/graph/api/group-update) through a `PATCH` operation, in order to provision a team from an existing Microsoft 365 group. If not set, the Microsoft 365 group isn't associated with a team. |
+| `Team` | Provision a team for this group in Microsoft Teams. Additionally, this value can also be added on [group update](/graph/api/group-update) through a `PATCH` operation, in order to provision a team from an existing Microsoft 365 group. If not set, the Microsoft 365 group isn't associated with a team. |
 
 ## Related content
 
