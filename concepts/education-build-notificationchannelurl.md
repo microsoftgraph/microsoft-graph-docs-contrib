@@ -245,7 +245,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Update educationAssignmentDefaults](/graph/api/educationassignmentdefaults-update)
 * [Update educationAssignment](/graph/api/educationassignment-update)

@@ -164,7 +164,7 @@ An active participant is represented as follows:
 - The **Id** property corresponds to participant ID, which is a unique identifier assigned to each participant in the meeting call.
 - The **Identity** property corresponds to the **communicationsIdentitySet**. For details, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta&preserve-view=true).
 
-## See also
+## Related content
 
 - [Microsoft Graph change notifications](/graph/webhooks)
 - [Microsoft Teams API overview](/graph/teams-concept-overview)

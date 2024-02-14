@@ -44,6 +44,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about a renamed **chat**](/graph/system-messages/#chat-renamed)
 - For more information about other types of events, see [System messages](/graph/system-messages).

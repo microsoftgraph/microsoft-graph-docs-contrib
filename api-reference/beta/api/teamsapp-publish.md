@@ -68,7 +68,7 @@ Each app in the app catalog must have a unique manifest ID.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [teamsApp](../resources/teamsapp.md) object.
+If successful, this method returns a `200 OK` response code and a [teamsApp](../resources/teamsapp.md) object. If the app manifest has any validation errors, the request returns an error response with details about the schema errors.
 
 ## Examples
 
@@ -277,7 +277,58 @@ Content-type: application/json
 }
 ```
 
-## See also
+### Example 4: Publish an app with an error in the app manifest to the app catalog 
+
+#### Request
+
+The following example shows a request.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
+Content-type: application/zip
+
+[Zip file containing a Teams app package]
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "name | Required properties are missing from object: [].; developer.websiteUrl | String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
+        "innerError": {
+            "code": "UnableToParseTeamsAppManifest",
+            "message": "name | Required properties are missing from object: [].; developer.websiteUrl | String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
+            "details": [
+                {
+                    "code": "SchemaError_Required",
+                    "message": "Required properties are missing from object: [].",
+                    "target": "name"
+                },
+                {
+                    "code": "SchemaError_Pattern",
+                    "message": "String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
+                    "target": "developer.websiteUrl"
+                }
+            ],
+            "date": "2024-01-18T21:47:58",
+            "request-id": "d1878136-bc88-421a-b342-c3d883db31a1",
+            "client-request-id": "d1878136-bc88-421a-b342-c3d883db31a1"
+        }
+    }
+}
+```
+
+## Related content
 
 - [App catalog C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/csharp)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
