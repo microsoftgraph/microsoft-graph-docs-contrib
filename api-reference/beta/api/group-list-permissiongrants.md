@@ -146,7 +146,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List permission grants of a chat](chat-list-permissiongrants.md)
 - [List permission grants of a team](team-list-permissiongrants.md)

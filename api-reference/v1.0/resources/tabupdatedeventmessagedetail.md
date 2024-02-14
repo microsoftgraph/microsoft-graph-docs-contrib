@@ -42,6 +42,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about an updated tab](/graph/system-messages/#tab-updated)
 - For more information about other types of events, see [System messages](/graph/system-messages).

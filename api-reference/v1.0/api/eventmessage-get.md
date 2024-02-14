@@ -146,20 +146,20 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.onmicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -177,8 +177,8 @@ Content-type: application/json
 
 ### Example 2
 #### Request
-The second example shows how to get the event associated with an event message. It uses 
-the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, 
+The second example shows how to get the event associated with an event message. It uses
+the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property,
 and apply an $expand parameter to get the properties of the event.
 
 # [HTTP](#tab/http)
@@ -226,7 +226,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1
 ---
 
 #### Response
-Here is an example of the response. The properties of the associated event are returned in the response. 
+Here is an example of the response. The properties of the associated event are returned in the response.
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -273,20 +273,20 @@ Content-type: application/json
    "sender":{
       "emailAddress":{
          "name":"Administrator",
-         "address":"admin@contoso.onmicrosoft.com"
+         "address":"admin@contoso.com"
       }
    },
    "from":{
       "emailAddress":{
          "name":"Administrator",
-         "address":"admin@contoso.onmicrosoft.com"
+         "address":"admin@contoso.com"
       }
    },
    "toRecipients":[
       {
          "emailAddress":{
             "name":"Alex Wilber",
-            "address":"AlexW@contoso.onmicrosoft.com"
+            "address":"AlexW@contoso.com"
          }
       }
    ],
@@ -356,7 +356,7 @@ Content-type: application/json
             },
             "emailAddress":{
                "name":"Administrator",
-               "address":"admin@contoso.onmicrosoft.com"
+               "address":"admin@contoso.com"
             }
          },
          {
@@ -367,19 +367,19 @@ Content-type: application/json
             },
             "emailAddress":{
                "name":"Alex Wilber",
-               "address":"AlexW@contoso.onmicrosoft.com"
+               "address":"AlexW@contoso.com"
             }
          }
       ],
       "organizer":{
          "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
          }
       }
    }
 }
-``` 
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

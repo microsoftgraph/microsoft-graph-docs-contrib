@@ -79,7 +79,7 @@ Content-type: application/json
     "mailNickname": "outlookgroup101",
     "preferredLanguage": null,
     "proxyAddresses": [
-        "smtp:outlookgroup101@microsoft.onmicrosoft.com",
+        "smtp:outlookgroup101@contoso.com",
         "SMTP:outlookgroup101@service.microsoft.com"
     ],
     "securityEnabled": false,

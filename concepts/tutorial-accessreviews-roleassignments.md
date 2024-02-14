@@ -783,7 +783,7 @@ Content-type: application/json
         "id": "10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6",
         "displayName": "MOD Administrator",
         "type": null,
-        "userPrincipalName": "admin@M365x43961174.onmicrosoft.com"
+        "userPrincipalName": "admin@contoso.com"
     },
     "scopes": [
         {

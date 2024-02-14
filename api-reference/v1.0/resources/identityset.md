@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 For examples about the usage of **identitySet** resources, see [driveItem](driveitem.md).
 

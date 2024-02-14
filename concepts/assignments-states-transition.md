@@ -79,6 +79,6 @@ The following limits apply to all API calls:
 * The maximum size allowed for resources is 500 MB.
 * Throttling limits apply; for details, see [Microsoft Graph throttling guidance](/graph/throttling).
 
-## See also
+## Related content
 
 - [States, transitions, and limitations for submissions](./submissions-states-transition.md)

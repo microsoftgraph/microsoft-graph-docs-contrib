@@ -14,7 +14,7 @@ AttendeeBase attendeeBase = new AttendeeBase();
 attendeeBase.setType(AttendeeType.Required);
 EmailAddress emailAddress = new EmailAddress();
 emailAddress.setName("Alex Wilbur");
-emailAddress.setAddress("alexw@contoso.onmicrosoft.com");
+emailAddress.setAddress("alexw@contoso.com");
 attendeeBase.setEmailAddress(emailAddress);
 attendees.add(attendeeBase);
 findMeetingTimesPostRequestBody.setAttendees(attendees);
