@@ -70,7 +70,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [Internet Explorer mode (IE mode)](https://www.microsoft.com/edge/business/ie-mode)
 - [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)

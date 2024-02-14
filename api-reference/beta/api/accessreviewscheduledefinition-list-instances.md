@@ -139,7 +139,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
 - [Get accessReviewInstance](accessreviewinstance-get.md)

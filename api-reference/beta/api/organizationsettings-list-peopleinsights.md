@@ -119,5 +119,5 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) for an organization.

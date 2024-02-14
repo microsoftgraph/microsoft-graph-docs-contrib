@@ -32,7 +32,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /identity/b2cUserFlows/{userflow-id}/userflowIdentityProviders/$ref
+POST /identity/b2cUserFlows/{userflow-id}/userflowIdentityProviders/$ref
 ```
 
 ## Request headers
@@ -66,12 +66,11 @@ The following example shows a request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signup/userflowIdentityProviders/$ref
+POST https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signup/userflowIdentityProviders/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}",
-  "@odata.type": "#microsoft.graph.identityProvider"
+  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}"
 }
 ```
 

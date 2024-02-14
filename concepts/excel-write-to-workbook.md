@@ -164,7 +164,7 @@ onWriteToExcel() {
 }
 ```
 
-## See also
+## Related content
 
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)

@@ -1121,7 +1121,7 @@ Content-type: application/json
 
 
 
-## See also
+## Related content
 
 - [Schedule repeating appointments as recurring events in Outlook](/graph/outlook-schedule-recurring-events)
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
