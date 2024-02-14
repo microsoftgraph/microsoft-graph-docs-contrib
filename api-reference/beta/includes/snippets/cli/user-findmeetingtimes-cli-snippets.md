@@ -17,7 +17,7 @@ mgc-beta users find-meeting-times post --user-id {user-id} --body '{
 \
         "name": "Alex Wilbur",
 \
-        "address": "alexw@contoso.onmicrosoft.com"
+        "address": "alexw@contoso.com"
 \
       }
 \

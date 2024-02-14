@@ -49,7 +49,7 @@ Download the [Microsoft Graph ASP.NET Connected Services MVC App Sample](https:/
 
     Go Microsoft Entra admin center to find your domain name. Sign in, expand the **Identity** menu > select **Overview**. The field **Primary domain** in **Basic information** section contains your domain name.
 
- > **Tip:** If your primary address is `admin@contoso.com`, your domain is `contoso.onmicrosoft.com`.
+ > **Tip:** If your primary address is `admin@contoso.com`, your domain is contoso.com`.
 
 2. Select **Create a new application registration** and complete the process of creating an app registration.
 3. For this tutorial, select the following permissions:

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc users calendar get-schedule post --user-id {user-id} --body '{
 \adelev@contoso.commeganb@contoso.com
-    "schedules": ["adelev@contoso.onmicrosoft.com", "meganb@contoso.onmicrosoft.com"],
+    "schedules": ["adelev@contoso.com", "meganb@contoso.com"],
 \
     "startTime": {
 \

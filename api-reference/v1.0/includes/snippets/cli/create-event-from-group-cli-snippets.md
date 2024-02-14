@@ -45,7 +45,7 @@ mgc groups events create --group-id {group-id} --body '{
 \
       "emailAddress": {
 \
-        "address":"adelev@contoso.onmicrosoft.com",
+        "address":"adelev@contoso.com",
 \
         "name": "Adele Vance"
 \

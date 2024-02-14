@@ -15,7 +15,7 @@ mgc-beta users messages create-reply post --user-id {user-id} --message-id {mess
 \
         "emailAddress": {
 \
-          "address":"samanthab@contoso.onmicrosoft.com",
+          "address":"samanthab@contoso.com",
 \randiw@contoso.com
           "name":"Samantha Booth"
 \
@@ -27,7 +27,7 @@ mgc-beta users messages create-reply post --user-id {user-id} --message-id {mess
 \
         "emailAddress":{
 \
-          "address":"randiw@contoso.onmicrosoft.com",
+          "address":"randiw@contoso.com",
 \
           "name":"Randi Welch"
 \

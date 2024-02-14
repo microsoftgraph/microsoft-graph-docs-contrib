@@ -17,7 +17,7 @@ mgc-beta security cases ediscovery-cases legal-holds create --ediscovery-case-id
 \
             "@odata.type": "microsoft.graph.security.userSource",
 \
-            "email": "SalesTeam@M365x809305.OnMicrosoft.com"
+            "email": "SalesTeam@contoso.com"
 \
         }
 \

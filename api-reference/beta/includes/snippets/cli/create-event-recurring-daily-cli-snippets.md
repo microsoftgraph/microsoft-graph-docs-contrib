@@ -45,7 +45,7 @@ mgc-beta users events create --user-id {user-id} --body '{
 \
       "emailAddress": {
 \
-        "address":"AlexW@contoso.OnMicrosoft.com",
+        "address":"AlexW@contoso.com",
 \
         "name": "Alex Wilbur"
 \

@@ -275,7 +275,7 @@ Content-Type: application/json
             "servicePlanId": "0e837228-8250-4047-8a80-d4a34ba11618",
             "servicePlanName": "Cloud PC Enterprise 8vCPU/32GB/512GB",
             "status": "failed",
-            "userPrincipalName": "akhkhare_contoso.com#EXT#@fabrikam.onmicrosoft.com",
+            "userPrincipalName": "akhkhare_contoso.com#EXT#@contoso.com",
             "lastModifiedDateTime": "2023-04-25T06:12:10Z",
             "managedDeviceId": null,
             "managedDeviceName": null,

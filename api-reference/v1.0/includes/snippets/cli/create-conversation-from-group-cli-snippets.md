@@ -33,7 +33,7 @@ mgc groups conversations create --group-id {group-id} --body '{
 \
                                 "name": "Adele Vance",
 \
-                                "address": "AdeleV@contoso.onmicrosoft.com"
+                                "address": "AdeleV@contoso.com"
 \
                             }
 \

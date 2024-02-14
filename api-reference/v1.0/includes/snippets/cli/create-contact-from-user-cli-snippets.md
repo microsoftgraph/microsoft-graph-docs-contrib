@@ -15,7 +15,7 @@ mgc users contacts create --user-id {user-id} --body '{
 \
     {
 \
-      "address": "pavelb@fabrikam.onmicrosoft.com",
+      "address": "pavelb@contoso.com",
 \
       "name": "Pavel Bansky"
 \

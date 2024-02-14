@@ -9,9 +9,9 @@ mgc users get-mail-tips post --user-id {user-id} --body '{
 \
     "Emaidanas@contoso.com
 \fannyd@contoso.com
-        "danas@contoso.onmicrosoft.com",
+        "danas@contoso.com",
 \
-        "fannyd@contoso.onmicrosoft.com"
+        "fannyd@contoso.com"
 \
     ],
 \

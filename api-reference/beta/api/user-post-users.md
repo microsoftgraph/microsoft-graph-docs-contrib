@@ -190,12 +190,12 @@ Content-type: application/json
   "identities": [
     {
       "signInType": "userName",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "johnsmith"
     },
     {
       "signInType": "emailAddress",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "jsmith@yahoo.com"
     },
     {
@@ -268,12 +268,12 @@ Content-type: application/json
   "identities": [
     {
       "signInType": "userName",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "johnsmith"
     },
     {
       "signInType": "emailAddress",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "jsmith@yahoo.com"
     },
     {

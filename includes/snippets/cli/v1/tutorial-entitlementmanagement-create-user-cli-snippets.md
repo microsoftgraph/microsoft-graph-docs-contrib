@@ -13,7 +13,7 @@ mgc users create --body '{
 \
   "mailNickname":"Requestor1",
 \
-  "userPrincipalName":"Requestor1@contoso.onmicrosoft.com",
+  "userPrincipalName":"Requestor1@contoso.com",
 \
   "passwordProfile": {
 \

@@ -45,7 +45,7 @@ mgc users events create --user-id {user-id} --body '{
 \
       "emailAddress": {
 \
-        "address":"AdeleV@contoso.OnMicrosoft.com",
+        "address":"AdeleV@contoso.com",
 \
         "name": "Adele Vance"
 \

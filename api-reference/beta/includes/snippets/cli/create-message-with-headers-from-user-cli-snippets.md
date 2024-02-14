@@ -23,7 +23,7 @@ mgc-beta users messages create --user-id {user-id} --body '{
 \
             "emailAddress":{
 \
-                "address":"AlexW@contoso.OnMicrosoft.com"
+                "address":"AlexW@contoso.com"
 \
             }
 \

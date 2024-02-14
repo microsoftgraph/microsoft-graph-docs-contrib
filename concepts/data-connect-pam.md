@@ -126,7 +126,7 @@ You can also revoke requests that were previously approved. Similar to approving
    EndTimeUtc            : 10/22/2018 6:02:42 PM
    Revoked               : True
    RevocationDateTimeUtc : 7/24/2018 9:12:55 PM
-   RevokedBy             : NAMPR00A001.prod.outlook.com/Microsoft Exchange Hosted  Organizations/tenant.onmicrosoft.com/user
+   RevokedBy             : NAMPR00A001.prod.outlook.com/Microsoft Exchange Hosted  Organizations/contoso.com/user
    RevocationComment     : Revoking this request!
    Identity              : bda75607-0d87-43cb-bdf1-284b18446b34
    DateCreatedUtc        : 1/1/0001 12:00:00 AM

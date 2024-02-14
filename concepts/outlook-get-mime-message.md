@@ -225,9 +225,9 @@ X-MS-Exchange-Organization-SCL: -1
 X-MS-TNEF-Correlator:
 X-MS-Exchange-Organization-RecordReviewCfmType: 0
 x-ms-publictraffictype: Email
-authentication-results: contoso.OnMicrosoft.com; dkim=none (message not
- signed) header.d=none;contoso.OnMicrosoft.com; dmarc=none action=none
- header.from=contoso.OnMicrosoft.com;
+authentication-results: contoso.com; dkim=none (message not
+ signed) header.d=none;contoso.com; dmarc=none action=none
+ header.from=contoso.com;
 x-originating-ip: [2001:4898:80e8:9:9607:7cf8:4576:961c]
 x-ms-office365-filtering-correlation-id: 88bed46b-a860-40fb-591e-08d6c75b76c1
 x-microsoft-antispam:

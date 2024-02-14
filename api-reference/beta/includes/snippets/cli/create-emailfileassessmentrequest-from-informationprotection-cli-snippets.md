@@ -9,7 +9,7 @@ mgc-beta information-protection threat-assessment-requests create --body '{
 \
   "@odata.type": "#mitifc@contoso.com
 \
-  "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmail": "tifc@contoso.com",
 \
   "expectedAssessment": "block",
 \

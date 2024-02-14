@@ -15,13 +15,13 @@ mgc-beta users contacts patch --user-id {user-id} --contact-id {contact-id} --bo
 \
             "name":"Papavelb@contoso.com
 \
-            "address":"pavelb@adatum.onmicrosoft.com"
+            "address":"pavelb@contoso.com"
 \
         },
 \
         {
 \
-          "address": "pavelb@fabrikam.onmicrosoft.com",
+          "address": "pavelb@contoso.com",
 \
           "name": "Pavel Bansky",
 \

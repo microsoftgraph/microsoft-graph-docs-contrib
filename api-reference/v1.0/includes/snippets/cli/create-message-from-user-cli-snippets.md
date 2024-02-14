@@ -25,7 +25,7 @@ mgc users messages create --user-id {user-id} --body '{
 \
             "emailAddress":{
 \
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"AdeleV@contoso.com"
 \
             }
 \

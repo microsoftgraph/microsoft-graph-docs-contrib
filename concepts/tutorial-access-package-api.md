@@ -34,7 +34,7 @@ In this step, you create a group named **Marketing resources** in the directory 
 
 ### Create a user account
 
-For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page. Record the value of the **id** property that is returned to be used later in the tutorial.
+For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change contoso.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page. Record the value of the **id** property that is returned to be used later in the tutorial.
 
 #### Request
 

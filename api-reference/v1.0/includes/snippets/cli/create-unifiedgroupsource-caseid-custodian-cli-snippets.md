@@ -9,7 +9,7 @@ mgc security cases ediscovery-cases custodians unified-group-sources create --ed
 \
     "group": {SOCTeam@contoso.com
 \
-        "mail": "SOCTeam@M365x809305.onmicrosoft.com"
+        "mail": "SOCTeam@contoso.com"
 \
     },
 \

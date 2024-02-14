@@ -247,7 +247,7 @@ odata-version: 4.0
 content-length: 986
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/contoso.onmicrosoft.com/$metadata#users",
+    "@odata.context": "https://graph.microsoft.com/v1.0/contoso.com/$metadata#users",
     "value": [
         {
             "id": "c95e3b3a-c33b-48da-a6e9-eb101e8a4205",

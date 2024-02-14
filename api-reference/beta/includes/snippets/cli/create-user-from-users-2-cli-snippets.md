@@ -13,7 +13,7 @@ mgc-beta users create --body '{
 \
   "mailNickname": "AdeleV",
 \
-  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+  "userPrincipalName": "AdeleV@contoso.com",
 \
   "passwordProfile" : {
 \

@@ -146,7 +146,7 @@ Content-Type: application/json
           "source": {
             "@odata.type": "graph.aadSource",
             "identityProviderType": "aad",
-            "domain": "mciemc1.onmicrosoft.com"
+            "domain": "contoso.com"
           },
           "authorizationSystem": {
             "@odata.type": "graph.azureAuthorizationSystem",

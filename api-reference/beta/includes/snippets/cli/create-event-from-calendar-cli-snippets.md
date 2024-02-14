@@ -45,7 +45,7 @@ mgc-beta users calendars events create --user-id {user-id} --calendar-id {calend
 \
       "emailAddress": {
 \
-        "address":"adelev@contoso.onmicrosoft.com",
+        "address":"adelev@contoso.com",
 \
         "name": "Adele Vance"
 \

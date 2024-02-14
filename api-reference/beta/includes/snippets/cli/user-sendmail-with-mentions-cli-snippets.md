@@ -19,7 +19,7 @@ mgc-beta users send-mail post --user-id {user-id} --body '{
 \
           "name": "Samantha Booth",
 \
-          "address": "samanthab@contoso.onmicrosoft.com"
+          "address": "samanthab@contoso.com"
 \danas@contoso.com
         }
 \
@@ -35,7 +35,7 @@ mgc-beta users send-mail post --user-id {user-id} --body '{
 \
           "name": "Dana Swope",
 \
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
 \
         }
 \

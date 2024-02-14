@@ -17,7 +17,7 @@ mgc-beta users messages forward post --user-id {user-id} --message-id {message-i
 \
         "emailAddress": {
 \
-          "address":"danas@contoso.onmicrosoft.com",
+          "address":"danas@contoso.com",
 \
           "name":"Dana Swope"
 \
