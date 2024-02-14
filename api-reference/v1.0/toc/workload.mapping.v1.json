@@ -5,41 +5,19 @@
       {
         "id": "Microsoft.AppManagement",
         "includedResources": [
-          "application"
+          "application",
+          "applicationTemplate"
         ]
       },
       {
         "id": "Microsoft.DirectoryServices",
         "includedResources": [
+          "federatedIdentityCredential",
           "servicePrincipal"
-        ]
-      },
-      {
-        "id": "Microsoft.IAM",
-        "includedResources": [
-          "synchronization"
         ]
       }
     ],
     "childNodes": [
-      {
-        "name": "Application",
-        "workloads": [
-          {
-            "id": "Microsoft.AppManagement",
-            "includedResources": [
-              "applicationTemplate"
-            ]
-          },
-          {
-            "id": "Microsoft.DirectoryServices",
-            "includedResources": [
-              "extensionProperty",
-              "federatedIdentityCredential"
-            ]
-          }
-        ]
-      },
       {
         "name": "Policies",
         "workloads": [
@@ -52,6 +30,35 @@
               "tokenIssuancePolicy",
               "tokenLifetimePolicy",
               "homeRealmDiscoveryPolicy"
+            ]
+          }
+        ],
+        "childNodes": [
+          {
+            "name": "Application authentication method policy",
+            "workloads": [
+              {
+                "id": "Microsoft.DirectoryServices",
+                "includedResources": [
+                  "tenantAppManagementPolicy",
+                  "appManagementPolicy"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Synchronization",
+        "overview": "resources/synchronization-overview.md",
+        "workloads": [
+          {
+            "id": "Microsoft.IAM",
+            "includedResources": [
+              "synchronization",
+              "synchronizationTemplate",
+              "synchronizationJob",
+              "synchronizationSchema"
             ]
           }
         ]
@@ -306,7 +313,7 @@
   },
   {
     "name": "Files",
-    "overview": "/graph/api/resources/onedrive?view=graph-rest-1.0",
+    "overview": "resources/onedrive.md",
     "workloads": [
       {
         "id": "Microsoft.FileServices",
@@ -321,8 +328,68 @@
   },
   {
     "name": "Identity and access",
-    "overview": "/graph/api/resources/azure-ad-overview?view=graph-rest-1.0",
+    "overview": "resources/azure-ad-overview.md",
     "childNodes": [
+      {
+        "name": "Directory management",
+        "workloads": [
+          {
+            "id": "Microsoft.DirectoryServices",
+            "includedResources": [
+              "administrativeUnit",
+              "bitlockerRecoveryKey",
+              "contract",
+              "authorizationPolicy",
+              "directory",
+              "device",
+              "deviceLocalCredentialInfo",
+              "directoryObject",
+              "directoryRole",
+              "directoryRoleTemplate",
+              "domain",
+              "onPremisesDirectorySynchronization",
+              "organization",
+              "orgContact",
+              "subscribedSku",
+              "tenantInformation"
+            ]
+          },
+          {
+            "id": "Microsoft.HybridAuthentication",
+            "includedResources": [
+              "featureRolloutPolicy"
+            ]
+          }
+        ],
+        "childNodes": [
+          {
+            "name": "Custom security attributes",
+            "workloads": [
+              {
+                "id": "Microsoft.DirectoryServices",
+                "includedResources": [
+                  "allowedValue",
+                  "attributeSet",
+                  "customSecurityAttributeDefinition"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Role management",
+            "workloads": [
+              {
+                "id": "Microsoft.DirectoryServices",
+                "includedResources": [
+                  "roleManagement",
+                  "roleDefinition",
+                  "roleAssignment"
+                ]
+              }
+            ]
+          }
+        ]
+      },
       {
         "name": "Governance",
         "overview": "resources/identitygovernance-overview.md",
@@ -411,50 +478,165 @@
         "overview": "resources/authenticationmethods-overview.md",
         "workloads": [
           {
-            "id": "Microsoft.AuthenticationMethodsPolicy"
+            "id": "Microsoft.PXS",
+            "includedResources": [
+              "dataPolicyOperation"
+            ]
           },
           {
-            "id": "Microsoft.BitLocker"
+            "id": "Microsoft.DirectoryServices",
+            "includedResources": [
+              "oAuth2PermissionGrant",
+              "organizationalBrandingProperties",
+              "organizationalBranding",
+              "organizationalBrandingLocalization"
+            ]
           },
           {
-            "id": "Microsoft.CPIM"
+            "id": "Microsoft.AADInviteMgr",
+            "includedResources": [
+              "invitation"
+            ]
+          }
+        ],
+        "childNodes": [
+          {
+            "name": "Authentication methods",
+            "workloads": [
+              {
+                "id": "Microsoft.StrongAuthenticationAPI",
+                "includedResources": [
+                  "authenticationMethod",
+                  "emailAuthenticationMethod",
+                  "fido2AuthenticationMethod",
+                  "phoneAuthenticationMethod",
+                  "microsoftAuthenticatorAuthenticationMethod",
+                  "passwordAuthenticationMethod",
+                  "softwareOathAuthenticationMethod",
+                  "temporaryAccessPassAuthenticationMethod",
+                  "windowsHelloForBusinessAuthenticationMethod"
+                ]
+              }
+            ]
           },
           {
-            "id": "Microsoft.HybridAuthentication"
+            "name": "Authentication methods policies",
+            "workloads": [
+              {
+                "id": "Microsoft.AuthenticationMethodsPolicy",
+                "includedResources": [
+                  "authenticationMethodsPolicy",
+                  "emailAuthenticationMethodConfiguration",
+                  "fido2AuthenticationMethodConfiguration",
+                  "microsoftAuthenticatorAuthenticationMethodConfiguration",
+                  "smsAuthenticationMethodConfiguration",
+                  "temporaryAccessPassAuthenticationMethodConfiguration",
+                  "softwareOathAuthenticationMethodConfiguration",
+                  "voiceAuthenticationMethodConfiguration",
+                  "x509CertificateAuthenticationMethodConfiguration"
+                ]
+              }
+            ]
           },
           {
-            "id": "Microsoft.identityProtectionServices"
+            "name": "Authentication strengths",
+            "workloads": [
+              {
+                "id": "Microsoft.AuthenticationMethodsPolicy",
+                "includedResources": [
+                  "authenticationStrengthPolicy",
+                  "authenticationCombinationConfiguration",
+                  "fido2CombinationConfiguration",
+                  "authenticationMethodModeDetail",
+                  "certificateBasedAuthConfiguration"
+                ]
+              }
+            ]
           },
           {
-            "id": "Microsoft.PXS"
+            "name": "Conditional access",
+            "workloads": [
+              {
+                "id": "Microsoft.IdentityProtectionServices",
+                "includedResources": [
+                  "conditionalAccessPolicy",
+                  "namedLocation",
+                  "countryNamedLocation",
+                  "ipNamedLocation",
+                  "authenticationContextClassReference",
+                  "conditionalAccessTemplate"
+                ]
+              }
+            ]
           },
           {
-            "id": "Microsoft.StrongAuthenticationAPI"
+            "name": "Cross-tenant access",
+            "workloads": [
+              {
+                "id": "Microsoft.DirectoryServices",
+                "includedResources": [
+                  "crossTenantAccessPolicy",
+                  "crossTenantAccessPolicyConfigurationDefault",
+                  "crossTenantAccessPolicyConfigurationPartner",
+                  "crossTenantIdentitySyncPolicyPartner"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Identity protection",
+            "workloads": [
+              {
+                "id": "Microsoft.IdentityProtectionServices",
+                "includedResources": [
+                  "riskDetection",
+                  "riskyUser",
+                  "servicePrincipalRiskDetection",
+                  "riskyServicePrincipal",
+                  "identitySecurityDefaultsEnforcementPolicy"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Identity providers",
+            "workloads": [
+              {
+                "id": "Microsoft.CPIM",
+                "includedResources": [
+                  "identityProvider",
+                  "builtInIdentityProvider",
+                  "socialIdentityProvider",
+                  "appleManagedIdentityProvider",
+                  "samlOrWsFedExternalDomainFederation",
+                  "internalDomainFederation"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "User flows",
+            "workloads": [
+              {
+                "id": "Microsoft.CPIM",
+                "includedResources": [
+                  "authenticationFlowsPolicy",
+                  "b2xIdentityUserFlow",
+                  "identityUserFlowAttribute",
+                  "identityUserFlowAttributeAssignment",
+                  "userFlowLanguageConfiguration",
+                  "identityApiConnector"
+                ]
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Directory management",
+        "name": "Granular delegated admin privileges",
         "workloads": [
           {
-            "id": "Microsoft.DirectoryServices"
-          },
-          {
-            "id": "Microsoft.AADInviteMgr"
-          },
-          {
-            "id": "Microsoft.IAM"
-          },
-          {
-            "id": "Microsoft.IAM.SSGM"
-          }
-        ]
-      },
-      {
-        "name": "Application proxy",
-        "workloads": [
-          {
-            "id": "Microsoft.AppProxy"
+            "id": "Microsoft.Partner.CustomerSvcAdmin"
           }
         ]
       }
@@ -676,7 +858,7 @@
   },
   {
     "name": "Sites and lists",
-    "overview": "/graph/api/resources/sharepoint?view=graph-rest-1.0",
+    "overview": "resources/sharepoint.md",
     "workloads": [
       {
         "id": "Microsoft.SharePoint"
@@ -714,14 +896,6 @@
     ],
     "childNodes": [
       {
-        "name": "Whiteboard",
-        "workloads": [
-          {
-            "id": "Microsoft.Whiteboard"
-          }
-        ]
-      },
-      {
         "name": "GraphSvc",
         "workloads": [
           {
@@ -749,10 +923,14 @@
   },
   {
     "name": "Workbooks and charts",
-    "overview": "/graph/api/resources/excel?view=graph-rest-1.0",
+    "overview": "resources/excel.md",
     "workloads": [
       {
-        "id": "Microsoft.Excel"
+        "id": "Microsoft.Excel",
+        "excludedResources": [
+          "workbookFunctions",
+          "workbookFunctionResult"
+        ]
       }
     ]
   }
