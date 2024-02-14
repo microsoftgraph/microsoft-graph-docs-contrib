@@ -1,5 +1,5 @@
 ---
-title: "List device links of a remote network"
+title: "List deviceLinkk"
 description: "Retrieve a list of device links associated with a specific remote network."
 author: abhijeetsinha
 ms.localizationpriority: medium
@@ -40,7 +40,7 @@ GET /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/deviceLinks
 
 ## Optional query parameters
 
-This method supports the `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$expand` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 
 ## Request headers
@@ -59,45 +59,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 The following is an example of a request.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_devicelink"
-}
--->
+
 ``` http
 GET hhttps://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/4ecfc62c-ec85-42fd-af37-5a93c7deb1d9/deviceLinks
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-devicelink-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-devicelink-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-devicelink-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-devicelink-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-devicelink-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-devicelink-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-devicelink-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.
@@ -140,5 +105,3 @@ Content-Type: application/json
     ]
 }
 ```
-
-

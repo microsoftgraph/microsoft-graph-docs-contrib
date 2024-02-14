@@ -1,5 +1,5 @@
 ---
-title: "Get remote network"
+title: "Get remoteNetwork"
 description: "Retrieve information about a specific remote network."
 author: abhijeetsinha
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
-# Get remote network
+# Get remoteNetwork
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -40,9 +40,9 @@ GET /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}
 
 ## Optional query parameters
 This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-| Pattern | Supported | Syntax                                                               | Notes       |
+| Pattern | Supported | Syntax                                                               |
 | ------- | :-------- | :------------------------------------------------------------------- | :---------- |
-| select  | ✔         | `/networkAccess/connectivity/remoteNetworks?$select=forwardingProfiles/id` | first level |
+| select  | ✔         | `/networkAccess/connectivity/remoteNetworks?$select=forwardingProfiles/id` |
 
 ## Request headers
 |Name|Description|
@@ -60,45 +60,10 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ### Request
 Here's an example of a request.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_remoteNetworks"
-}
--->
+
 ``` http
 GET https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/dc6a7efd-6b2b-4c6a-84e7-5dcf97e62e04
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-remotenetwork-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-remotenetwork-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-remotenetwork-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-remotenetwork-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-remotenetwork-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-remotenetwork-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-remotenetwork-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 Here's an example of the response.
@@ -178,5 +143,3 @@ Content-Type: application/json
     ]
 }
 ```
-
-

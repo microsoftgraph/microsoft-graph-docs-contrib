@@ -1,5 +1,5 @@
 ---
-title: "Create device link for a remote network"
+title: "Create deviceLink"
 description: "Create device link for a remote network"
 author: abhijeetsinha
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
-# Create device link for a remote network
+# Create deviceLink
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create device link for a remote network.
+Create device link for a remote network. To create a remote network and device link in the same request, refer to [Create remote network](networkaccess-connectivity-post-remotenetworks.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -56,22 +56,60 @@ You can specify the following properties when creating a **deviceLink**.
 |deviceVendor|microsoft.graph.networkaccess.deviceVendor|The vendor or manufacturer of the device associated with a device link. The possible values are: `barracudaNetworks`, `checkPoint`, `ciscoMeraki`, `citrix`, `fortinet`, `hpeAruba`, `netFoundry`, `nuage`, `openSystems`, `paloAltoNetworks`, `riverbedTechnology`, `silverPeak`, `vmWareSdWan`, `versa`, `other`. Required.|
 |tunnelConfiguration|[microsoft.graph.networkaccess.tunnelConfiguration](../resources/networkaccess-tunnelconfiguration.md)|The tunnel configuration settings associated with a device link. Required.|
 |bgpConfiguration|[microsoft.graph.networkaccess.bgpConfiguration](../resources/networkaccess-bgpconfiguration.md)|The Border Gateway Protocol (BGP) configuration settings associated with a device link. Required.|
+|redundancyConfiguration|[microsoft.graph.networkaccess.redundancyConfiguration](../resources/networkaccess-redundancyconfiguration.md)|The redundancy option for a device link specifies the specific details and configuration settings related to redundancy. Required.|
 
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object in the response body.
 
-## Examples
+## Example 1: Add a device link with default IKE policy
 
 ### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
+``` http
+POST https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/dc6a7efd-6b2b-4c6a-84e7-5dcf97e62e04/deviceLinks
+Content-Type: application/json
+{
+    "name": "CPE3",
+    "ipAddress": "20.55.91.42",
+    "deviceVendor": "ciscoMeraki",
+    "bandwidthCapacityInMbps": "mbps1000",
+    "bgpConfiguration": {
+        "localIpAddress": "192.168.1.2",
+        "peerIpAddress": "10.2.2.2",
+        "asn": 65533
+    },
+    "redundancyConfiguration": {
+        "redundancyTier": "zoneRedundancy",
+        "zoneLocalIpAddress": "192.168.1.3"
+    },
+    "tunnelConfiguration": {
+        "@odata.type": "#microsoft.graph.networkaccess.tunnelConfigurationIKEv2Default",
+        "preSharedKey": "test123"
+    }
+}
+```
+### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "request",
-  "name": "create_devicelink_from_"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.networkaccess.deviceLink"
 }
 -->
+``` http
+HTTP/1.1 204 No Content
+
+```
+
+## Example 2: Add a device link with custom IKE policy
+
+### Request
+The following example shows a request.
+
 ``` http
 POST https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/dc6a7efd-6b2b-4c6a-84e7-5dcf97e62e04/deviceLinks
 Content-Type: application/json
@@ -103,36 +141,6 @@ Content-Type: application/json
     "bandwidthCapacityInMbps": "mbps250"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-devicelink-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-devicelink-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-devicelink-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-devicelink-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-devicelink-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-devicelink-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-devicelink-from--python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.

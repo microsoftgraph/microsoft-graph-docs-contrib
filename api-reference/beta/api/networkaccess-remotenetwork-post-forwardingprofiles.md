@@ -1,5 +1,5 @@
 ---
-title: "Assign a forwarding profile to a remote network"
+title: "Assign forwardingProfile"
 description: "Assign a forwarding profile to a remote network"
 author: abhijeetsinha
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
-# Create forwardingProfile
+# Assign forwardingProfile
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign a forwarding profile to a remote network.
+Assign a forwarding profile to an existing remote network. To create a remote network with traffic forwarding profile, see [Create remoteNetwork](networkaccess-connectivity-post-remotenetworks.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/forwardingProfiles
+PATCH /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/forwardingProfiles
 ```
 
 ## Request headers
@@ -48,72 +48,35 @@ POST /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/forwardingProf
 ## Request body
 In the request body, supply a JSON representation of the [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) object.
 
-You can specify the following properties when creating a **forwardingProfile**.
+You can specify the following properties when associating a **forwardingProfile** to a remote network.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Name of the branch. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Required.|
-|description|String|Description. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Optional.|
-|state|microsoft.graph.networkaccess.status|Status. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). The possible values are: `enabled`, `disabled`. Required.|
-|associations|[microsoft.graph.networkaccess.association](../resources/networkaccess-association.md) collection|The forwarding profile collection represents a group of multiple forwarding profiles. Required.|
-
-
+|id|String|Id of the forwarding profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Required.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) object in the response body.
+If successful, this method returns a `OK 200` response code.
 
 ## Examples
+To get the id of forwarding profiles of your organization, refer to this article - [List forwardingProfiles](networkaccess-networkaccessroot-list-forwardingprofiles.md).
 
 ### Request
 The following is an example of a request.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_forwardingprofile_from_"
-}
--->
+
 ``` http
-POST https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/forwardingProfiles
+PATCH https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/forwardingProfiles
 Content-Type: application/json
 
 {
-    "name": "branch 1",
-    "region": "eastUS",
-    "deviceLinks":
-    [
+    "@context": "#$delta",
+    "value": [
         {
-            "name": "device link 1",
-            "ipAddress": "24.123.22.168",
-            "deviceVendor": "intel",
-            "bandwidthCapacityInMbps": "mbps250",
-            "bgpConfiguration":
-            {
-                "localIpAddress": "1.128.24.22",
-                "peerIpAddress": "1.128.24.28",
-                "asn": 4,
-            },
-            "redundancyConfiguration":
-            {
-                "zoneLocalIpAddress": "1.128.23.20",
-                "redundancyTier": "zoneRedundancy",
-            },
-            "tunnelConfiguration":
-            {
-                "@odata.type": "microsoft.graph.networkAccess.tunnelConfigurationIKEv2Default",
-                "preSharedKey": "/path/to/kv"
-            }
-        }
-    ],
-    "forwardingProfiles": [
-        {
-            "id": "8e30d8d6-3588-4d5f-a704-6bd843be5b8f"
+            "id": "1adaf535-1e31-4e14-983f-2270408162bf"
         }
     ]
 }
 ```
-
----
 
 ### Response
 The following example shows the response.
@@ -125,46 +88,8 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-    "@odata.context": "https://localhost:5001/networkaccess/connectivity/$metadata#remotenetworks/$entity",
-    "id": "c038928c-4100-4b8d-895d-f90ae38bafa1",
-    "name": "branch 1",
-    "region": "eastUS",
-    "connectivityState": "pending",
-    "version": "1.0.0",
-    "lastModifiedDateTime": "2021-01-05T00:00:00Z",
-    "deviceLinks": [
-        {
-            "id": "f29753d5-85b4-4cce-9194-10a287568973",
-            "name": "device link 1",
-            "ipAddress": "24.123.22.168",
-            "deviceVendor": "intel",
-            "bandwidthCapacityInMbps": "mbps250",
-            "bgpConfiguration":
-            {
-                "localIpAddress": "1.128.24.22",
-                "peerIpAddress": "1.128.24.28",
-                "asn": 4,
-            },
-            "redundancyConfiguration":
-            {
-                "zoneLocalIpAddress": "1.128.23.20",
-                "redundancyTier": "zoneRedundancy",
-            },
-            "tunnleConfiguration": {
-                "@odata.type": "#microsoft.graph.networkaccess.TunnleConfigurationIKEv2Deafult",
-                "preSharedKey": "/path/to/kv"
-            }
-        }
-    ],
-    "forwardingProfiles": [
-        {
-            "id": "8e30d8d6-3588-4d5f-a704-6bd843be5b8f"
-        }
-    ]
-}
 ```
 

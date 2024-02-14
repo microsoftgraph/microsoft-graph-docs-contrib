@@ -1,6 +1,6 @@
 ---
 title: "remote network resource type"
-description: "A remote network represents a location (for ex: branch office) where customer premises equipment (CPE) is connected to the nearest deployment of Global Secure Access service though IPsec tunnel(s)."
+description: "A remote network represents a location such as a branch office where customer premises equipment (CPE) is connected to the nearest deployment of Global Secure Access service though IPsec tunnels."
 author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A remote network represents a location (for ex: branch office) where customer premises equipment (CPE) is connected to the nearest deployment of Global Secure Access service though IPsec tunnel(s).
+A remote network represents a location such as a branch office where customer premises equipment (CPE) is connected to the nearest deployment of Global Secure Access service though IPsec tunnels.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List remoteNetwork](../api/networkaccess-connectivity-list-remotenetwork.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) collection|Get a list of the [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) objects and their properties.|
+|[List remoteNetworks](../api/networkaccess-connectivity-list-remotenetwork.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) collection|Get a list of the [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) objects and their properties.|
 |[Create remoteNetwork](../api/networkaccess-connectivity-post-remotenetwork.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md)|Create a new [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
 |[Get remoteNetwork](../api/networkaccess-remotenetwork-get.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
 |[Update remoteNetwork](../api/networkaccess-remotenetwork-update.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md)|Update the properties of a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
