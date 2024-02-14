@@ -3868,11 +3868,11 @@
         },
         {
           "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Parameter",
           "ChangedApiName": "virtualAppointmentSmsType",
           "ChangeType": "Deletion",
-          "Description": "Removed the **virtualAppointmentSmsType** enumeration type.",
-          "Target": "virtualAppointmentSmsType"
+          "Description": "Removed the `virtualAppointmentSmsType` parameter from the [virtualappointment-sendvirtualappointmentsms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-beta) method",
+          "Target": "virtualappointment-sendvirtualappointmentsms"
         },
         {
           "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
