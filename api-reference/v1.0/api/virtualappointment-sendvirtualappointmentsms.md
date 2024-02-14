@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Send an SMS notification to external attendees when a Teams Virtual Appointment is confirmed, rescheduled, or canceled. This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Attendees must have a valid United States phone number to receive these SMS notifications.
+Send an SMS notification to external attendees when a Teams virtual appointment is confirmed, rescheduled, or canceled. This feature requires [Teams premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Attendees must have a valid United States phone number to receive these SMS notifications.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
