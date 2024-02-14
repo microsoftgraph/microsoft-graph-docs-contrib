@@ -31,6 +31,7 @@ Represents the type of conditions that govern when the policy applies.
 |servicePrincipalRiskLevels|riskLevel collection| Service principal risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`, `unknownFutureValue`.|
 |signInRiskLevels|riskLevel collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
 |userRiskLevels|riskLevel collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
+|authenticationFlows|[conditionalAccessAuthenticationFlows](conditionalaccessauthenticationflows.md)| Authentication flows included in the policy scope |
 
 ## Relationships
 
@@ -48,7 +49,8 @@ The following is a JSON representation of the resource.
     "devices",
     "locations",
     "platforms",
-    "signInRiskLevels"
+    "signInRiskLevels",
+    "authenticationFlows"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessConditionSet",
   "baseType": null
@@ -66,7 +68,8 @@ The following is a JSON representation of the resource.
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
   "servicePrincipalRiskLevels": ["String"],
-  "signInRiskLevels": ["String"]
+  "signInRiskLevels": ["String"],
+  "authenticationFlows": {"@odata.type": "microsoft.graph.conditionalAccessAuthenticationFlows"} 
 }
 ```
 

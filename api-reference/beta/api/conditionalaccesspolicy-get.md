@@ -194,6 +194,9 @@ Content-type: application/json
             "excludeDevices": [
                 "Compliant"
             ]
+        },
+        "authenticationFlows": {
+            "deviceCodeFlow,authenticationTransfer"
         }
     },
     "grantControls": {
