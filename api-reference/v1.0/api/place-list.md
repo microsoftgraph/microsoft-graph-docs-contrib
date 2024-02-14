@@ -403,7 +403,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places('Building2Rooms%40M365x214355.onmicrosoft.com')/microsoft.graph.roomList/rooms",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places('Building2Rooms%40contoso.com')/microsoft.graph.roomList/rooms",
     "value": [
         {
             "id": "f4119db7-9a33-4bfe-a387-4444b9e7fd54",

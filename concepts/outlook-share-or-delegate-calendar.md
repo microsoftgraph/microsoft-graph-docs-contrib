@@ -456,7 +456,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('meganb%40contoso.OnMicrosoft.com')/calendars/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('meganb%40contoso.com')/calendars/$entity",
     "id": "AAMkADlAABhbftjAAA=",
     "name": "Alex Wilber",
     "color": "auto",

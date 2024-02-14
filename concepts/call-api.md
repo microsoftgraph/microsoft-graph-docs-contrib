@@ -170,7 +170,7 @@ odata-version: 4.0
 content-length: 147
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/Messages",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.com')/Messages",
   "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=1&$skip=1",
   "value": [
     {
@@ -210,7 +210,7 @@ The successful response returns a 200 OK status code and a payload containing th
 
 ```no-highlight
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/drive/root/children(name,type)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.com')/drive/root/children(name,type)",
   "value": [
     {
       "@odata.etag": "\"{896A8E4D-27BF-424B-A0DA-F073AE6570E2},2\"",
