@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |[Create workplaceSensorDevice](../api/workplace-post-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Create a new workplace sensor device.|
 |[Get workplaceSensorDevice](../api/workplacesensordevice-get.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Get the properties of a workplace sensor device, including tags, MAC address, sensors, and more.|
 |[Update workplaceSensorDevice](../api/workplacesensordevice-update.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Update the properties of a workplace sensor device.|
-|[Delete workplaceSensorDevice](../api/workplace-delete-sensordevices.md)|None|Delete a workplace sensor device.|
+|[Delete workplaceSensorDevice](../api/workplacesensordevice-delete.md)|None|Delete a workplace sensor device.|
 |[ingestTelemetry](../api/workplacesensordevice-ingesttelemetry.md)|None|Ingest sensor telemetry for a workplace sensor device.|
 
 ## Properties
