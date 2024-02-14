@@ -25,7 +25,7 @@ mgc-beta users create --body '{
 \
       "signInType": "emailAddress",
 \
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
 \
       "issuerAssignedId": "jsmith@yahoo.com"
 \
