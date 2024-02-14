@@ -17,8 +17,8 @@ Create an [event](../resources/event.md) in the user's default calendar or speci
 
 By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event. See [Propose new meeting times](/graph/outlook-calendar-meeting-proposals) for more information on how to propose a time, and how to receive and accept a new time proposal.
 
-You can specify the time zone for each of the start and end times of the event as part of their values, because the 
-**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. First [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
+You can specify the time zone for each of the start and end times of the event as part of their values, because the
+**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. First [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server.
 
 When an event is sent, the server sends invitations to all the attendees.
 
@@ -120,7 +120,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"samanthab@contoso.onmicrosoft.com",
+        "address":"samanthab@contoso.com",
         "name": "Samantha Booth"
       },
       "type": "required"
@@ -254,14 +254,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"samanthab@contoso.onmicrosoft.com"
+                "address":"samanthab@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Dana Swope",
-            "address":"danas@contoso.onmicrosoft.com"
+            "address":"danas@contoso.com"
         }
     }
 }
@@ -302,14 +302,14 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address": "DanaS@contoso.onmicrosoft.com",
+        "address": "DanaS@contoso.com",
         "name": "Dana Swope"
       },
       "type": "Required"
     },
     {
       "emailAddress": {
-        "address": "AlexW@contoso.onmicrosoft.com",
+        "address": "AlexW@contoso.com",
         "name": "Alex Wilber"
       },
       "type": "Required"
@@ -490,7 +490,7 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Dana Swope",
-        "address":"DanaS@contoso.onmicrosoft.com"
+        "address":"DanaS@contoso.com"
       }
     },
     {
@@ -501,14 +501,14 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Alex Wilber",
-        "address":"AlexW@contoso.onmicrosoft.com"
+        "address":"AlexW@contoso.com"
       }
     }
   ],
   "organizer":{
     "emailAddress":{
       "name":"Adele Vance",
-      "address":"AdeleV@contoso.onmicrosoft.com"
+      "address":"AdeleV@contoso.com"
     }
   }
 }
@@ -561,7 +561,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"AdeleV@contoso.onmicrosoft.com",
+        "address":"AdeleV@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -711,14 +711,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Adele Vance",
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"AdeleV@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Alex Wilber",
-            "address":"AlexW@contoso.onmicrosoft.com"
+            "address":"AlexW@contoso.com"
         }
     },
     "OnlineMeeting":null
@@ -761,7 +761,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"AlexW@contoso.OnMicrosoft.com",
+        "address":"AlexW@contoso.com",
         "name": "Alex Wilbur"
       },
       "type": "required"
@@ -918,14 +918,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "AlexW@contoso.OnMicrosoft.com"
+                "address": "AlexW@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Adele Vance",
-            "address": "AdeleV@contoso.OnMicrosoft.com"
+            "address": "AdeleV@contoso.com"
         }
     }
 }
@@ -968,7 +968,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"samanthab@contoso.onmicrosoft.com",
+        "address":"samanthab@contoso.com",
         "name": "Samantha Booth"
       },
       "type": "required"
@@ -1101,14 +1101,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"samanthab@contoso.onmicrosoft.com"
+                "address":"samanthab@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Dana Swope",
-            "address":"danas@contoso.onmicrosoft.com"
+            "address":"danas@contoso.com"
         }
     },
     "onlineMeeting": {

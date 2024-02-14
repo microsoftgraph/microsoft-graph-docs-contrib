@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
+Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md),
 or the default calendar of a Microsoft 365 [group](../resources/group.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -140,7 +140,7 @@ Content-type: application/json
     "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
-        "address":"samanthab@adatum.onmicrosoft.com"
+        "address":"samanthab@contoso.com"
     }
 }
 ```

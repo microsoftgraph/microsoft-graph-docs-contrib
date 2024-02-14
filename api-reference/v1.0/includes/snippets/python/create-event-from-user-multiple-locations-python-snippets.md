@@ -34,14 +34,14 @@ request_body = Event(
 	attendees = [
 		Attendee(
 			email_address = EmailAddress(
-				address = "DanaS@contoso.onmicrosoft.com",
+				address = "DanaS@contoso.com",
 				name = "Dana Swope",
 			),
 			type = AttendeeType.Required,
 		),
 		Attendee(
 			email_address = EmailAddress(
-				address = "AlexW@contoso.onmicrosoft.com",
+				address = "AlexW@contoso.com",
 				name = "Alex Wilber",
 			),
 			type = AttendeeType.Required,

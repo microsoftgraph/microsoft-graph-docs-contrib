@@ -69,7 +69,7 @@ In the request body, supply the values for relevant fields that should be update
 |identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Any update to **identities** will replace the entire collection and you must supply the userPrincipalName **signInType** identity in the collection.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user's job title.|
-|mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. Cannot be updated to `null`.|
+|mail|String|The SMTP address for the user, for example, `jeff@contoso.com`. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. Cannot be updated to `null`.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|
@@ -92,10 +92,10 @@ In the request body, supply the values for relevant fields that should be update
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). <br>NOTE: This property cannot contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
 |userType|String|A string value that can be used to classify user types in your directory, such as `Member` and `Guest`.          |
 
-Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
+Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **user** instance.
 
-> [!NOTE] 
+> [!NOTE]
 > - The following properties cannot be updated by an app with only application permissions: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **responsibilities**, **schools**, and **skills**.
 > - To update the following properties, you must specify them in their own PATCH request, without including the other properties listed in the table above: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **responsibilities**, **schools**, and **skills**.
 

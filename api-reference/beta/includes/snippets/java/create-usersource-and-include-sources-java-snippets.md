@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.models.security.UserSource userSource = new com.microsoft.graph.beta.models.security.UserSource();
-userSource.setEmail("admin@M365x809305.onmicrosoft.com");
+userSource.setEmail("admin@contoso.com");
 userSource.setIncludedSources(EnumSet.of(com.microsoft.graph.beta.models.security.SourceType.Mailbox, com.microsoft.graph.beta.models.security.SourceType.Site));
 com.microsoft.graph.models.security.UserSource result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").legalHolds().byEdiscoveryHoldPolicyId("{ediscoveryHoldPolicy-id}").userSources().post(userSource);
 
