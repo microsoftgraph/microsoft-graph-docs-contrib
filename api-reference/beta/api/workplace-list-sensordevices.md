@@ -1,18 +1,18 @@
 ---
-title: "List workplaceSensorDevices"
-description: "Retrieve a list of workplace sensor devices created for a tenant."
+title: "List sensorDevices"
+description: "Get a list of all workplace sensor devices created for a tenant."
 author: "ms-amakumar"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# List workplaceSensorDevices
+# List sensorDevices
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of workplace sensor devices created for a tenant.
+Get a list of all workplace sensor devices created for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /workplace/sensorDevices
 ```
 
 ## Optional query parameters
-This method supports the `$filter` (**deviceId**, **displayName**, **description**, **macAddress**, **manufacturer**, **ipV4Address**, **ipV6Address**, and **tags** properties), `$top`, `$select`, and `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$top`, `$select`, and `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response. You can use `$filter` on the **deviceId**, **displayName**, **description**, **macAddress**, **manufacturer**, **ipV4Address**, **ipV6Address**, and **tags** properties.
 
 ### Supported query patterns
 
@@ -44,7 +44,7 @@ This method supports the `$filter` (**deviceId**, **displayName**, **description
 | Filter                 | `/workplace/sensorDevices?$filter=Tags/Any(x: cast(x, 'String') eq 'Building A')` | Filter devices based on the tags. |
 | Filter                 | `/workplace/sensorDevices?$filter=cast(manufacturer, 'String') eq 'Contoso'` | Filter devices based on the manufacturer of the device. |
 | Filter                 | `/workplace/sensorDevices?$filter=cast(deviceId, 'String') eq 'contoso_9D6816'` |  Filter devices based on the user provided device identifier.|
-| Page limit             | `/workplace/sensorDevices?$top=20` | Get devices with a page size of 20. Default page size is 10. |
+| Page limit             | `/workplace/sensorDevices?$top=20` | Get devices with a page size of 20. The default page size is 10. |
 
 
 ## Request headers
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_workplacesensordevice"
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/workplace/sensorDevices
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
