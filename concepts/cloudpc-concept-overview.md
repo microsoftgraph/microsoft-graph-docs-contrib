@@ -23,15 +23,15 @@ Create [Azure network connections](/graph/api/resources/cloudpconpremisesconnect
 
 ### Provision Cloud PCs
 
-Create [provisioning policies](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) and assign to user groups to provision Cloud PCs to them when they have licenses assigned as well. After provisioning policy creation, you can also list, update, and delete provisioning policies. 
+Create [provisioning policies](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) and assign to user groups to provision Cloud PCs to them when they have licenses assigned as well. After provisioning policy creation, you can also list, update, and delete provisioning policies.
 
 ### Upload device images
 
 Upload and manage operating system [images](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) for Cloud PCs to determine which version of Windows with what apps and other image details should be used for Cloud PCs when provisioned.  
 
-### View end users’ Cloud PCs and their properties
+### View end users' Cloud PCs and their properties
 
-Once provisioned, list and view end users’ [Cloud PCs](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) and all associated properties. This Cloud PC visibility allows for hands-on management and ease of troubleshooting when needed. 
+Once provisioned, list and view end users' [Cloud PCs](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) and all associated properties. This Cloud PC visibility allows for hands-on management and ease of troubleshooting when needed. 
 
 ## API reference
 
@@ -42,4 +42,5 @@ Looking for the API reference for the service?
 
 ## Next step
 
-- Try out the Windows 365 Cloud PC APIs by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+> [!div class="nextstepaction"]
+> [Try the Windows 365 Cloud PC APIs by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)

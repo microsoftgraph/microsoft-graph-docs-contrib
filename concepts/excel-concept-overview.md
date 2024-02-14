@@ -51,10 +51,10 @@ Looking for the API reference for this service?
 - [Excel API in Microsoft Graph v1.0](/graph/api/resources/excel?view=graph-rest-1.0&preserve-view=true)
 - [Excel API in Microsoft Graph beta](/graph/api/resources/excel?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Related content
 
 - [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 - [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
 - [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
-- [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
+- [Update a range format in Excel with Microsoft Graph](excel-update-range-format.md)
 - [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)

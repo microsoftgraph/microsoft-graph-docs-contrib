@@ -136,11 +136,7 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
 
 On successful completion, you get HTTP 200 OK and the requested event, events, or calendar that Alex has shared with Adele.
 
-## Next steps
-
-Find out more about:
+## Related content
 
 - [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md)
 - [Share or delegate a calendar in Outlook (preview)](outlook-share-or-delegate-calendar.md)
-- [Why integrate with Outlook calendar](outlook-calendar-concept-overview.md)
-- The [calendar API](/graph/api/resources/calendar?view=graph-rest-1.0&preserve-view=true) in Microsoft Graph v1.0.

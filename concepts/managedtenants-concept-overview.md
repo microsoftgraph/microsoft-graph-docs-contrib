@@ -50,7 +50,7 @@ See [Microsoft 365 Lighthouse API in Microsoft Graph (preview)](/graph/api/resou
 > The Microsoft 365 Lighthouse API is defined in the OData subnamespace, `microsoft.graph.managedTenants`.
 
 
-## Next steps
+## Related content
 
 - Learn more about the [Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview?view=o365-worldwide&preserve-view=true) portal.
 - Find out about the [latest new features and updates](/graph/whats-new-overview) for the Lighthouse API.
