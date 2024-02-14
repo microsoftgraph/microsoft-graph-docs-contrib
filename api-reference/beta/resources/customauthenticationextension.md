@@ -74,7 +74,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 - [Configure a custom claim provider token issuance event (preview)](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context)
 

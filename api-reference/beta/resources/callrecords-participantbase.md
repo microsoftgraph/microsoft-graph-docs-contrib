@@ -47,6 +47,6 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 For examples that show how to use the **participant** and **organizer** resources, see [callRecord](callrecords-callrecord.md).

@@ -77,7 +77,7 @@ The following is a JSON representation of the resource.
   "shortDescription": "String"
 }
 ```
-## See also
+## Related content
 
 - [team](team.md)
 - [teamsTemplate](teamsTemplate.md)
