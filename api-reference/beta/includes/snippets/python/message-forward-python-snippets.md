@@ -18,7 +18,7 @@ request_body = ForwardPostRequestBody(
 		to_recipients = [
 			Recipient(
 				email_address = EmailAddress(
-					address = "danas@contoso.onmicrosoft.com",
+					address = "danas@contoso.com",
 					name = "Dana Swope",
 				),
 			),

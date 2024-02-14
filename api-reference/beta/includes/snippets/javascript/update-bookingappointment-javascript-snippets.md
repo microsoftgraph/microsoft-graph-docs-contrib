@@ -29,7 +29,7 @@ const bookingAppointment = {
     }
 };
 
-await client.api('/solutions/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=')
+await client.api('/solutions/bookingBusinesses/contosolunchdelivery@contoso.com/appointments/AAMkADKnAAA=')
 	.version('beta')
 	.update(bookingAppointment);
 
