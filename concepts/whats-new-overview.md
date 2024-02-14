@@ -24,7 +24,7 @@ Microsoft Graph Toolkit v4 is now available. For details about changes in the la
 
 ### Calendars | Places
 
-Use the [workplaceSensorDevice](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) API in Microsoft Graph to manage hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more.
+Onboard devices in Microsoft Places and ingest sensor telemetry using the new [workplaceSensorDevice](/graph/api/resources/workplacesensordevice?view=graph-rest-beta&preserve-view=true) API.
 
 ### Identity and access | Directory management
 
