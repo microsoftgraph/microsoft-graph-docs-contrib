@@ -15,7 +15,7 @@ request_body = Contact(
 	surname = "Bansky",
 	email_addresses = [
 		EmailAddress(
-			address = "pavelb@fabrikam.onmicrosoft.com",
+			address = "pavelb@contoso.com",
 			name = "Pavel Bansky",
 		),
 	],

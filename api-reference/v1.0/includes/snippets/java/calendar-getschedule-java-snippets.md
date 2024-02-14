@@ -10,8 +10,8 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.users.item.calendar.getschedule.GetSchedulePostRequestBody getSchedulePostRequestBody = new com.microsoft.graph.users.item.calendar.getschedule.GetSchedulePostRequestBody();
 LinkedList<String> schedules = new LinkedList<String>();
-schedules.add("adelev@contoso.onmicrosoft.com");
-schedules.add("meganb@contoso.onmicrosoft.com");
+schedules.add("adelev@contoso.com");
+schedules.add("meganb@contoso.com");
 getSchedulePostRequestBody.setSchedules(schedules);
 DateTimeTimeZone startTime = new DateTimeTimeZone();
 startTime.setDateTime("2019-03-15T09:00:00");

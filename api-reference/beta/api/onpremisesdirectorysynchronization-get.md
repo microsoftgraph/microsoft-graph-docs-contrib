@@ -138,7 +138,7 @@ Content-Type: application/json
       "successfulLinksProvisioningCount": 0,
       "successfulObjectsProvisioningCount": 0,
       "clientMachineName": "ABCD-SYNC-01",
-      "serviceAccount": "Synchronization-01@Contoso.onmicrosoft.com",
+      "serviceAccount": "Synchronization-01@contoso.com",
       "totalConnectorSpaceObjects": 123456789
     },
     "writebackConfiguration": {
