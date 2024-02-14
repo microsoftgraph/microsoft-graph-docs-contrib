@@ -1819,8 +1819,8 @@ Possible types of Windows settings.
 
 | Member             | Value | Description                                                                                                                                                                                           |
 | :----------------- | :---- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| roaming            | 0     | Windows setting is associated with a user account. It is consistent across all devices and any changes to the setting value are synced or applied to all Windows devices that the user owns.          |
-| backup             | 1     | Windows setting is linked to a specific device of a user. This type of setting is not synced across all devices that the user owns. In other words, this type of setting is unique to each device.    |
+| roaming            | 0     | Windows setting is associated with a user's account. It is consistent across all devices and any changes to the setting value are synced or applied to all Windows devices that the user owns.          |
+| backup             | 1     | Windows setting does not roam or sync accross devices. This type of setting is used in device backup and restore scenarios.|
 | unknownFutureValue | 2     | This is not a valid setting type. It is only a placeholder for any possible setting type that may be added in the future.                                                                             |
 
 ### workforceIntegrationEncryptionProtocol values

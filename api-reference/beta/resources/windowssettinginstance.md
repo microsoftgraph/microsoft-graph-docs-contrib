@@ -52,11 +52,11 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsSettingInstance",
-  "id": "String (identifier)",
-  "payload": "String (Base64 encoded JSON)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)"
+  "id": "6984732f-86b0-8e31-dc02-37fce0df6d61",
+  "payload": "VGhpcyBpcyBhbm90aGVyIGp1c3QgYW4gZXhhbXBsZSE=",
+  "lastModifiedDateTime": "2024-10-31T23:30:41Z",
+  "createdDateTime": "2024-02-12T19:34:35.223Z",
+  "expirationDateTime": "2034-02-09T19:34:33.771Z"
 }
 ```
 

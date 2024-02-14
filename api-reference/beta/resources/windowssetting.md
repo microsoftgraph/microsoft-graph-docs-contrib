@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 >Warning: The structure of the id of a **windowsSetting** is not guranateed and the caller should not take any dependency on it. The id should be treated as an opaque string.
 
-There are two types of **windowsSetting**: `roaming` and `backup`. More information about the types of **windowsSetting** can be found in the [windowsSettingType](enums.md) enum. A **windowsSetting** of type `backup` has a *windowsDeviceId* property that links the setting to a specific device.
+There are two types of **windowsSetting**: `roaming` and `backup`. More information about the types of **windowsSetting** can be found in the [windowsSettingType](enums.md#windowssettingtype-values) enum. A **windowsSetting** of type `backup` may have a *windowsDeviceId* property that links the setting to a specific device.
 
 When getting a list of **windowsSetting** objects, the result can be filtered by *windowsDeviceId* and *settingType* properties. For more information, see [List Windows settings stored in cloud](../api/usersettings-list-windows.md).
 
@@ -35,8 +35,8 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |id|String|The unique identifier of the object.|
 |payloadType|String|The type of setting payloads contained in the *instances* navigation property.|
-|settingType|windowsSettingType|The type of setting. Possible values are: `roaming`, `backup`, `unknownFutureValue`. *unknownFutureValue* is a future placeholder and not a real settingType.|
-|windowsDeviceId|String|A unique identifier for the device the setting belongs to if it is of the settingType `backup`.|
+|settingType|windowsSettingType|The type of setting. Possible values are: `roaming`, `backup`, `unknownFutureValue`.<br />Note, *unknownFutureValue* is a future placeholder and not a real settingType.|
+|windowsDeviceId|String|A unique identifier for the device the setting may belong to if it is of the settingType `backup`.|
 
 ## About the *payloadType* property
 ### Introduction
@@ -86,14 +86,13 @@ The *payload* is a base64 encoded JSON string, which has the properties of given
 There are several notable **payloadTypes** available in Windows that represent distinct setting structures used by distinguished features and experiences in the operating system. To learn more about them, see the list below.
 
 #### **Device Profile**: 
-This payloadType represents settings related to device profiles. A device profile contains additional information about the device on which the Windows operation system is hosted. If a user has multiple Windows devices, then multiple device profile **windowsSettings** will exist for the user. An example of a device profile **windowsSetting** is,
+This payloadType represents settings related to device profiles. A device profile contains additional information about the device on which the Windows operation system is hosted. If a user has multiple Windows devices, then multiple instances will exist for the user under the device profile **windowsSetting**. An example of a device profile **windowsSetting** is,
 
 ```json
 {
-    "id": "{95b3a2c8-482a-4a06-7b3a-da2a5a4b2c0f}$windows.data.platform.backuprestore.deviceprofile$deviceprofiles",
+    "id": "default$windows.data.platform.backuprestore.deviceprofile$deviceprofiles",
     "settingType": "backup",
     "payloadType": "windows.data.platform.backuprestore.deviceprofile",
-    "windowsDeviceId": "95b3a2c8-482a-4a06-7b3a-da2a5a4b2c0f",
     "instances": [
         {
             "id": "73b1a0b8-262a-4804-592a-b82a3a2a0c0d",
@@ -105,7 +104,7 @@ This payloadType represents settings related to device profiles. A device profil
     ]
 }
 ```
-The payload after decoding is given below for example.
+The payload after decoding is shown below for example.
 
 ```json
 {
@@ -128,7 +127,7 @@ The significance of the *profileId* is that it correlates with the *windowsDevic
 Following are the step by step instructions on how to find the corresponding device for a given *windowsDeviceId*:
 
 - Use the [List Windows settings stored in cloud](../api/usersettings-list-windows.md) API to list all the settings for the user.
-- Find the device profile related settings. As shown in the example above, the *payloadType* property of such settings will be `windows.data.platform.backuprestore.deviceprofile`.
+- Find the device profile related setting. As shown in the example above, the *payloadType* property of device profile setting will be `windows.data.platform.backuprestore.deviceprofile`.
 - Decode the *payload* of each setting instance to get the *profileIds* and corresponding *deviceDisplayNames*.
 - Find the *profileId* matching with the *windowsDeviceId* of the **windowsSetting** of type `backup` to identify the corresponding device.
 
