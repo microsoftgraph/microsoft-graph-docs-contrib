@@ -535,7 +535,7 @@ Content-type: application/json
 
 
 
-## See also
+## Related content
 - For information on Microsoft Teams interoperability with Microsoft 365, see:
   - [How Exchange and Microsoft Teams interact](/microsoftteams/exchange-teams-interact)
   - [Setting your coexistence and upgrade settings](/microsoftteams/setting-your-coexistence-and-upgrade-settings)

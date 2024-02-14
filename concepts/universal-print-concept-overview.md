@@ -91,6 +91,6 @@ Looking for the API reference for this service?
 
 We'd love to hear your feedback about the Universal Print APIs. Provide your suggestions on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
-## See also
+## Related content
 
 - [What is Universal Print](/universal-print/fundamentals/universal-print-whatis)
