@@ -42,7 +42,7 @@ OData defines the `any` and `all` operators to evaluate matches on multi-valued 
 
 ### `any` operator
 
-The `any` operator iteratively applies a Boolean expression to each item of a collection and returns `true` if the expression is `true` for *at least one item* of the collection, otherwise it returns `false`.  
+The `any` operator iteratively applies a Boolean expression to each item of a collection and returns `true` if the expression is `true` for *at least one item* of the collection, otherwise it returns `false`.
 The following query string shows the syntax for the `any` operator:
 
 ```http
@@ -255,7 +255,7 @@ These examples show how to use `$filter` to match against supported properties a
 | `in`                   | `~/users?$filter=mail in ('mail1@domain.com', 'mail2@domain.com')`  <br/><br/> **Note:** For query strings using `in` operator, the request is limited to 15 expressions in the filter clause by default or a URL length of 2,048 characters when using [advanced query capabilities](./aad-advanced-queries.md).                                                                                          |
 | `le`                   | `~/devices?$filter=registrationDateTime le 2021-01-02T12:00:00Z`<sup> [ ** ](#**) </sup>                                                                  |
 | `ge`                   | `~/devices?$filter=registrationDateTime ge 2021-01-02T12:00:00Z`<sup> [ ** ](#**) </sup>                                                                  |
-| `not` and `endsWith`   | `~/users?$filter=not(endsWith(mail, 'OnMicrosoft.com'))`<sup> [ ** ](#**) </sup>                                                                          |
+| `not` and `endsWith`   | `~/users?$filter=not(endsWith(mail, 'contoso.com'))`<sup> [ ** ](#**) </sup>                                                                          |
 | `not` and `startsWith` | `~/users?$filter=not(startsWith(mail, 'A'))`<sup> [ ** ](#**) </sup>                                                                                      |
 | `not` and `eq`         | `~/users?$filter=not(companyName eq 'Contoso E.A.')`<sup> [ ** ](#**) </sup>                                                                              |
 | `not` and `in`         | `~/users?$filter=not(userType in ('Member'))`<sup> [ ** ](#**) </sup>                                                                                     |
@@ -271,7 +271,7 @@ These examples show how to use `$filter` to match against supported properties a
 | `ne`                                     | `~/users?$filter=companyName ne null`<sup> [ ** ](#**) </sup>                             |
 | `startsWith`                             | `~/users?$filter=businessPhones/any(p:startsWith(p, '44'))`<sup> [ ** ](#**) </sup>       |
 | `endsWith`                               | `~/users?$filter=endsWith(mail,'@outlook.com')`<sup> [ ** ](#**) </sup>                   |
-| `not` and `endsWith`                     | `~/groups?$filter=not(endsWith(mail,'OnMicrosoft.com'))`<sup> [ ** ](#**) </sup>          |
+| `not` and `endsWith`                     | `~/groups?$filter=not(endsWith(mail,'contoso.com'))`<sup> [ ** ](#**) </sup>          |
 | `not` and `startsWith`                   | `~/groups?$filter=not(startsWith(mail,'Pineview'))`<sup> [ ** ](#**) </sup>               |
 | `not` and `eq`                           | `~/groups?$filter=not(mail eq 'PineviewSchoolStaff@Contoso.com')`<sup> [ ** ](#**) </sup> |
 | `eq` and `$count` for empty collections  | `~/users?$filter=assignedLicenses/$count eq 0`<sup> [ ** ](#**) </sup>                    |
@@ -281,8 +281,8 @@ These examples show how to use `$filter` to match against supported properties a
 
 For the list of all properties of directory objects that support count of a collection in a filter expression, see [Count of a collection in a filter expression](/graph/aad-advanced-queries#count-of-a-collection-in-a-filter-expression).
 
-<!--`in` - otherMails example; 
-`not` and `in`; 
+<!--`in` - otherMails example;
+`not` and `in`;
 no examples available for ge and le
 -->
 
@@ -322,7 +322,7 @@ Hiding because the latest iteration of the report doesn't include these properti
 | `eq`           | `~/users?$filter=authorizationInfo/certificateUserIds/any(x:x eq '9876543210@mil')`<sup> [ ** ](#**) </sup>      |
 | `not` and `eq` | `~/users?$filter=not(authorizationInfo/certificateUserIds/any(x:x eq '9876543210@mil'))`<sup> [ ** ](#**) </sup> |
 | `startsWith`   | `~/users?$filter=authorizationInfo/certificateUserIds/any(x:startswith(x,'987654321'))`<sup> [ ** ](#**) </sup>  |
-| `endsWith`     | `~/users?$filter=proxyAddresses/any(p:endsWith(p,'OnMicrosoft.com'))`<sup> [ ** ](#**) </sup>                    |
+| `endsWith`     | `~/users?$filter=proxyAddresses/any(p:endsWith(p,'contoso.com'))`<sup> [ ** ](#**) </sup>                    |
 
 
 ## Related content
