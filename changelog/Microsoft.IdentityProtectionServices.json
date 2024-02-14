@@ -1086,32 +1086,32 @@
       "CreatedDateTime": "2023-04-20T00:00:00.5059025Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
-      },
-      {
-        "ChangeList": [
+    },
+    {
+      "ChangeList": [
         {
-          "Id": "20b083d5-0c27-41e5-ad6d-d5a148ca584d",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "conditionalAccessTransferMethods",
-          "ChangeType": "Addition",
-          "Description": "Added the **conditionalAccessTransferMethods** enumeration type.",
-          "Target": "conditionalAccessTransferMethods"
+        "Id": "20b083d5-0c27-41e5-ad6d-d5a148ca584d",
+        "ApiChange": "Enumeration",
+        "ChangedApiName": "conditionalAccessTransferMethods",
+        "ChangeType": "Addition",
+        "Description": "Added the **conditionalAccessTransferMethods** enumeration type.",
+        "Target": "conditionalAccessTransferMethods"
         },
         {
-          "Id": "20b083d5-0c27-41e5-ad6d-d5a148ca584d",
-          "ApiChange": "Property",
-          "ChangedApiName": "transferMethods",
-          "ChangeType": "Addition",
-          "Description": "Added the **transferMethods** property to the [conditionalAccessAuthenticationFlows](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessAuthenticationFlows?view=graph-rest-beta) resource.",
-          "Target": "conditionalAccessAuthenticationFlows"
+        "Id": "20b083d5-0c27-41e5-ad6d-d5a148ca584d",
+        "ApiChange": "Property",
+        "ChangedApiName": "transferMethods",
+        "ChangeType": "Addition",
+        "Description": "Added the **transferMethods** property to the [conditionalAccessAuthenticationFlows](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessAuthenticationFlows?view=graph-rest-beta) resource.",
+        "Target": "conditionalAccessAuthenticationFlows"
         },
         {
-          "Id": "20b083d5-0c27-41e5-ad6d-d5a148ca584d",
-          "ApiChange": "Property",
-          "ChangedApiName": "authenticationFlows",
-          "ChangeType": "Addition",
-          "Description": "Added the **authenticationFlows** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource.",
-          "Target": "conditionalAccessConditionSet"
+        "Id": "20b083d5-0c27-41e5-ad6d-d5a148ca584d",
+        "ApiChange": "Property",
+        "ChangedApiName": "authenticationFlows",
+        "ChangeType": "Addition",
+        "Description": "Added the **authenticationFlows** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource.",
+        "Target": "conditionalAccessConditionSet"
         }
       ],
       "Id": "20b083d5-0c27-41e5-ad6d-d5a148ca584d",
