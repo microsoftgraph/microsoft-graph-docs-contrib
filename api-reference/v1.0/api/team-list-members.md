@@ -328,6 +328,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List members in channel](channel-list-members.md)
