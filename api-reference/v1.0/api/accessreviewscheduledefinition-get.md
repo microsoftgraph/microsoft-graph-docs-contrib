@@ -165,7 +165,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Create accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
 - [List accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
