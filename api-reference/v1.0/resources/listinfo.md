@@ -1,14 +1,14 @@
 ---
 author: spgraph-docs-team
 ms.date: 09/11/2017
-title: ListInfo
+title: listInfo resource type
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "The listInfo complex type provides additional information about a list."
 doc_type: resourcePageType
 ---
 
-# ListInfo resource
+# listInfo resource type
 
 Namespace: microsoft.graph
 

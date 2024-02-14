@@ -4,7 +4,7 @@ description: "The Microsoft Graph API enables programmatic access to Cloud PC in
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Working with Windows 365 Cloud PCs using the Microsoft Graph API

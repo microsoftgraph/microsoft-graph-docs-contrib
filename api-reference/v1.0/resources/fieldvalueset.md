@@ -1,14 +1,14 @@
 ---
 author: spgraph-docs-team
 ms.date: 09/11/2017
-title: FieldValueSet
+title: fieldValueSet resource type
 ms.localizationpriority: medium
 description: "Represents the column values in a listItem resource."
 ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 
-# FieldValueSet resource
+# fieldValueSet resource type
 
 Namespace: microsoft.graph
 

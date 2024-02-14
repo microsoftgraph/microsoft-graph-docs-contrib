@@ -1,14 +1,14 @@
 ---
 author: spgraph-docs-team
 ms.date: 09/10/2017
-title: SiteCollection
+title: siteCollection resource type
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "The siteCollection resource provides more information about a site collection."
 doc_type: resourcePageType
 ---
 
-# SiteCollection resource
+# siteCollection resource type
 
 Namespace: microsoft.graph
 

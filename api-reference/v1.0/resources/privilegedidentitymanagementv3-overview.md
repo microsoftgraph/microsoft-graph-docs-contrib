@@ -4,7 +4,7 @@ description: "Privileged Identity Management (PIM) is a feature of Microsoft Ent
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ms.date: 09/13/2023
 ---
 

@@ -4,7 +4,7 @@ description: "Using the search API, apps can search Microsoft 365 data in the co
 ms.localizationpriority: high
 author: "njerigrevious"
 ms.prod: "search"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Search API to query data
@@ -63,7 +63,7 @@ Control pagination of the search results by specifying the following two propert
 Note the following limits if you're searching the **event** or **message** entity:
 
 - **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
-- The maximum number of results per page (**size**) is 25 for **message** and **event**. 
+- The maximum number of results per page (**size**) is 25 for **message** and **event**.
 
 The upper limit for SharePoint or OneDrive items is 1000. A reasonable page size is 200. A larger page size generally incurs higher latency.
 
@@ -119,7 +119,7 @@ Note that collapsing results is currently supported for the following entity typ
 To use the collapse clause effectively, the properties you apply it to must be queryable, and either sortable or refinable.
 When using multi-level collapse,  it's important to note that each subsequent property's limit size specified in a multi-level request should be equal to or smaller than the previous one. If a subsequent property's limit size exceeds the previous one, the server will respond with an `HTTP 400 Bad Request` error.
 
-See [collapse search results](/graph/search-concept-collapse) for more collapse results examples. 
+See [collapse search results](/graph/search-concept-collapse) for more collapse results examples.
 
 ## Sort search results
 
