@@ -3921,6 +3921,14 @@
           "ChangeType": "Addition",
           "Description": "Added the `attendees` parameter to the [sendvirtualappointmentsms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-beta) method.",
           "Target": "virtualappointment-sendvirtualappointmentsms"
+        },
+         {
+          "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "messageType",
+          "ChangeType": "Addition",
+          "Description": "Added the `messageType` parameter to the [sendvirtualappointmentsms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-beta) method.",
+          "Target": "virtualappointment-sendvirtualappointmentsms"
         }
       ],
       "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
