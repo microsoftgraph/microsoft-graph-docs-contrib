@@ -1,9 +1,8 @@
 ---
 title: "conditionalAccessAuthenticationFlows resource type"
-description: "Represents authentication flows included in the policy scope."
+description: "Represents the authentication flows in scope for the policy"
+author: "nickludwig"
 ms.localizationpriority: medium
-author: "ludwignick"
-ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -14,30 +13,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents authentication flows included in the policy scope.
+Represents the authentication flows in scope for the policy.
 
 ## Properties
 
-| Property        | Type                             | Description                                                                                                                                          |
-|:----------------|:---------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| transferMethods | conditionalAccessTransferMethods | Transfer methods in scope for the policy. Possible values are `deviceCodeFlow`, `authenticationTransfer`, or `deviceCodeFlow,authenticationTransfer` |
+|Property|Type|Description|
+|:---|:---|:---|
+|transferMethods|conditionalAccessTransferMethods|Represents the transfer methods in scope for the policy.The possible values are: `none`, `deviceCodeFlow`, `authenticationTransfer`, `unknownFutureValue`.|
 
 ## Relationships
 
 None.
 
-## JSON Representation
+## JSON representation
 
-The following is a JSON representation of the resource.
-
-<!-- { 
-  "blockType": "resource", 
-  "optionalProperties": [],
-  "@odata.type": "{microsoft.graph.conditionalAccessAuthenticationFlows}"
-}-->
-
-```json
-{
-    "transferMethods": "String"
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.conditionalAccessAuthenticationFlows"
 }
-```
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.conditionalAccessAuthenticationFlows",
+  "transferMethods": "String"
+}
