@@ -4,7 +4,7 @@ description: "Cross-tenant access settings let you manage both B2B collaboration
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Cross-tenant access settings API overview
@@ -24,7 +24,7 @@ Granular controls let you determine the users, groups, and apps, both in your or
 + **Partner-specific access settings** which allow you to configure customized settings for individual organizations. For the configured organizations, this configuration takes precedence over the default settings. Therefore, while Microsoft Entra B2B collaboration and Microsoft Entra B2B direct connect might be disabled across your organization by default, you can enable these features for a specific external organization.
 
 > [!IMPORTANT]
-> 
+>
 > By configuring B2B direct connect outbound settings, you allow external organizations that you have enabled outbound settings with to access limited contact data about your users. Microsoft shares this data with those organizations to help them send a request to connect with your users. Data collected by external organizations, including limited contact data, is subject to the privacy policies and practices of those organizations.
 
 ## Default cross-tenant access settings
@@ -41,7 +41,7 @@ Unless you configure all the properties of the partner-specific object, some of 
 
 ## Inbound trust settings in cross-tenant access settings
 
-Inbound trust settings enable you to trust the MFA guest users perform in their home directories, preventing guest users from having to perform MFA both in their home directories and in your directory. With inbound trust settings, you enable a seamless authentication experience for your guest users and save on the MFA costs incurred by your organization.  
+Inbound trust settings enable you to trust the MFA guest users perform in their home directories, preventing guest users from having to perform MFA both in their home directories and in your directory. With inbound trust settings, you enable a seamless authentication experience for your guest users and save on the MFA costs incurred by your organization.
 
 For example, when you configure your trust settings to trust MFA, your MFA policies are still applied to guest users, but users who have already completed MFA in their home tenants don't have to complete MFA again in your tenant.
 
@@ -350,4 +350,4 @@ Cross-tenant access settings outbound controls are for controlling how **your or
 
 ## See also
 
-- [Tutorial: Configure cross-tenant synchronization](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure-graph?tabs=ms-graph&toc=/graph/toc.json) 
+- [Tutorial: Configure cross-tenant synchronization](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure-graph?tabs=ms-graph&toc=/graph/toc.json)
