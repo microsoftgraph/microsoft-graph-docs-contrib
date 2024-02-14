@@ -398,7 +398,7 @@ Content-type: application/json
 
 ## Related content
 
-For more information on using call records, see [callRecord](../resources/callrecords-callrecord.md).
+- [callRecord](../resources/callrecords-callrecord.md)
 
 <!-- {
   "type": "#page.annotation",
