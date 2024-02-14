@@ -1,5 +1,5 @@
 ---
-title: "ChartLegendFormat resource type"
+title: "workbookChartLegendFormat resource type"
 description: "Encapsulates the format properties of a chart legend."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartLegendFormat resource type
+# workbookChartLegendFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of an object, which includes background formating information. Read-only.|
-|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.|
+|fill|[workbookChartFill](chartfill.md)|Represents the fill format of an object, which includes background formating information. Read-only.|
+|font|[workbookChartFont](chartfont.md)|Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.|
 
 
 ## JSON representation

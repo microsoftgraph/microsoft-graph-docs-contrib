@@ -1,5 +1,5 @@
 ---
-title: "ChartGridlines resource type"
+title: "workbookChartGridlines resource type"
 description: "Represents major or minor gridlines on a chart axis."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartGridlines resource type
+# workbookChartGridlines resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ Represents major or minor gridlines on a chart axis.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartGridlines](../api/chartgridlines-get.md) | [WorkbookChartGridlines](chartgridlines.md) |Read properties and relationships of chartGridlines object.|
-|[Update](../api/chartgridlines-update.md) | [WorkbookChartGridlines](chartgridlines.md)	|Update ChartGridlines object. |
+|[Get ChartGridlines](../api/chartgridlines-get.md) | [workbookChartGridlines](chartgridlines.md) |Read properties and relationships of chartGridlines object.|
+|[Update](../api/chartgridlines-update.md) | [workbookChartGridlines](chartgridlines.md)	|Update ChartGridlines object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -29,7 +29,7 @@ Represents major or minor gridlines on a chart axis.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Represents the formatting of chart gridlines. Read-only.|
+|format|[workbookChartGridlinesFormat](chartgridlinesformat.md)|Represents the formatting of chart gridlines. Read-only.|
 
 ## JSON representation
 

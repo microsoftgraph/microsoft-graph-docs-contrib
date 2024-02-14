@@ -1,5 +1,5 @@
 ---
-title: "ChartPointFormat resource type"
+title: "workbookChartPointFormat resource type"
 description: "Represents formatting object for chart points."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartPointFormat resource type
+# workbookChartPointFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of a chart, which includes background formatting information. Read-only.|
+|fill|[workbookChartFill](chartfill.md)|Represents the fill format of a chart, which includes background formatting information. Read-only.|
 
 
 ## JSON representation

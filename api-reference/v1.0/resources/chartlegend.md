@@ -1,5 +1,5 @@
 ---
-title: "ChartLegend resource type"
+title: "workbookChartLegend resource type"
 description: "Represents the legend in a chart."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartLegend resource type
+# workbookChartLegend resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ Represents the legend in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLegend](../api/chartlegend-get.md) | [WorkbookChartLegend](chartlegend.md) |Read properties and relationships of chartLegend object.|
-|[Update](../api/chartlegend-update.md) | [WorkbookChartLegend](chartlegend.md)	|Update ChartLegend object. |
+|[Get ChartLegend](../api/chartlegend-get.md) | [workbookChartLegend](chartlegend.md) |Read properties and relationships of chartLegend object.|
+|[Update](../api/chartlegend-update.md) | [workbookChartLegend](chartlegend.md)	|Update ChartLegend object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -31,7 +31,7 @@ Represents the legend in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartLegendFormat](chartlegendformat.md)|Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.|
+|format|[workbookChartLegendFormat](chartlegendformat.md)|Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 

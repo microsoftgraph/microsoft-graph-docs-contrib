@@ -1,5 +1,5 @@
 ---
-title: "ChartLineFormat resource type"
+title: "workbookChartLineFormat resource type"
 description: "Encapsulates the formatting options for line elements."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartLineFormat resource type
+# workbookChartLineFormat resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ Enapsulates the formatting options for line elements.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Read properties and relationships of chartLineFormat object.|
-|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
+|[Get ChartLineFormat](../api/chartlineformat-get.md) | [workbookChartLineFormat](chartlineformat.md) |Read properties and relationships of chartLineFormat object.|
+|[Update](../api/chartlineformat-update.md) | [workbookChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
 |[Clear](../api/chartlineformat-clear.md)|None|Clear the line format of a chart element.|
 
 ## Properties

@@ -1,5 +1,5 @@
 ---
-title: "ChartFont resource type"
+title: "workbookChartFont resource type"
 description: "This object represents the font attributes (font name, font size, color, etc.) for a chart object."
 ms.localizationpriority: medium
 author: "lumine2008"
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartFont resource type
+# workbookChartFont resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](chartfont.md) |Read properties and relationships of chartFont object.|
-|[Update](../api/chartfont-update.md) | [WorkbookChartFont](chartfont.md)	|Update ChartFont object. |
+|[Get ChartFont](../api/chartfont-get.md) | [workbookChartFont](chartfont.md) |Read properties and relationships of chartFont object.|
+|[Update](../api/chartfont-update.md) | [workbookChartFont](chartfont.md)	|Update ChartFont object. |
 
 ## Properties
 | Property	   | Type	|Description|

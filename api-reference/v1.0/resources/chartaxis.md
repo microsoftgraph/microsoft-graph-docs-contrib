@@ -1,5 +1,5 @@
 ---
-title: "ChartAxis resource type"
+title: "workbookChartAxis resource type"
 description: "Represents a single axis in a chart."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartAxis resource type
+# workbookChartAxis resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ Represents a single axis in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis-get.md) | [WorkbookChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
-|[Update](../api/chartaxis-update.md) | [WorkbookChartAxis](chartaxis.md)	|Update ChartAxis object. |
+|[Get ChartAxis](../api/chartaxis-get.md) | [workbookChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
+|[Update](../api/chartaxis-update.md) | [workbookChartAxis](chartaxis.md)	|Update ChartAxis object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -33,10 +33,10 @@ Represents a single axis in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartAxisFormat](chartaxisformat.md)|Represents the formatting of a chart object, which includes line and font formatting. Read-only.|
-|majorGridlines|[WorkbookChartGridlines](chartgridlines.md)|Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.|
-|minorGridlines|[WorkbookChartGridlines](chartgridlines.md)|Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.|
-|title|[WorkbookChartAxisTitle](chartaxistitle.md)|Represents the axis title. Read-only.|
+|format|[workbookChartAxisFormat](chartaxisformat.md)|Represents the formatting of a chart object, which includes line and font formatting. Read-only.|
+|majorGridlines|[workbookChartGridlines](chartgridlines.md)|Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.|
+|minorGridlines|[workbookChartGridlines](chartgridlines.md)|Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.|
+|title|[workbookChartAxisTitle](chartaxistitle.md)|Represents the axis title. Read-only.|
 
 ## JSON representation
 

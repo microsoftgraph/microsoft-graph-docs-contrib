@@ -1,5 +1,5 @@
 ---
-title: "FilterCriteria resource type"
+title: "workbookFilterCriteria resource type"
 description: "Represents the filtering criteria applied to a column."
 ms.localizationpriority: medium
 author: "ruoyingl"
@@ -7,7 +7,7 @@ ms.prod: workbooks-and-charts
 doc_type: resourcePageType
 ---
 
-# FilterCriteria resource type
+# workbookFilterCriteria resource type
 
 Namespace: microsoft.graph
 

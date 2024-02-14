@@ -1,5 +1,5 @@
 ---
-title: "RangeSort resource type"
+title: "workbookRangeSort resource type"
 description: "Manages sorting operations on Range objects."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# RangeSort resource type
+# workbookRangeSort resource type
 
 Namespace: microsoft.graph
 
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 ```
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

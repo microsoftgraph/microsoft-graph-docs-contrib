@@ -1,5 +1,5 @@
 ---
-title: "ChartAxes resource type"
+title: "workbookChartAxes resource type"
 description: "Represents the chart axes."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartAxes resource type
+# workbookChartAxes resource type
 
 Namespace: microsoft.graph
 
@@ -23,9 +23,9 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|categoryAxis|[WorkbookChartAxis](chartaxis.md)|Represents the category axis in a chart. Read-only.|
-|seriesAxis|[WorkbookChartAxis](chartaxis.md)|Represents the series axis of a 3-dimensional chart. Read-only.|
-|valueAxis|[WorkbookChartAxis](chartaxis.md)|Represents the value axis in an axis. Read-only.|
+|categoryAxis|[workbookChartAxis](chartaxis.md)|Represents the category axis in a chart. Read-only.|
+|seriesAxis|[workbookChartAxis](chartaxis.md)|Represents the series axis of a 3-dimensional chart. Read-only.|
+|valueAxis|[workbookChartAxis](chartaxis.md)|Represents the value axis in an axis. Read-only.|
 
 ## JSON representation
 

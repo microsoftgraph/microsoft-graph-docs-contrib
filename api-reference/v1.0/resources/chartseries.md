@@ -1,5 +1,5 @@
 ---
-title: "ChartSeries resource type"
+title: "workbookChartSeries resource type"
 description: "Represents a series in a chart."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartSeries resource type
+# workbookChartSeries resource type
 
 Namespace: microsoft.graph
 
@@ -18,12 +18,12 @@ Represents a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartSeries](../api/chartseries-get.md) | [WorkbookChartSeries](chartseries.md) |Read properties and relationships of chartSeries object.|
-|[Create ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Create a new ChartPoints by posting to the points collection.|
-|[List points](../api/chartseries-list-points.md) |[ChartPoints](chartpoint.md) collection| Get a ChartPoints object collection.|
-|[Update](../api/chartseries-update.md) | [WorkbookChartSeries](chartseries.md)	|Update ChartSeries object. |
-|[List](../api/chartseries-list.md) | [WorkbookChartSeries](chartseries.md) collection |Get chartSeries object collection. |
-|[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](chartseries.md)|Retrieves a series based on its position in the collection|
+|[Get ChartSeries](../api/chartseries-get.md) | [workbookChartSeries](chartseries.md) |Read properties and relationships of chartSeries object.|
+|[Create ChartPoints](../api/chartseries-post-points.md) |[workbookChartPoints](chartpoint.md)| Create a new ChartPoints by posting to the points collection.|
+|[List points](../api/chartseries-list-points.md) |[workbookChartPoints](chartpoint.md) collection| Get a ChartPoints object collection.|
+|[Update](../api/chartseries-update.md) | [workbookChartSeries](chartseries.md)	|Update ChartSeries object. |
+|[List](../api/chartseries-list.md) | [workbookChartSeries](chartseries.md) collection |Get chartSeries object collection. |
+|[ItemAt](../api/chartseriescollection-itemat.md)|[workbookChartSeries](chartseries.md)|Retrieves a series based on its position in the collection|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -33,8 +33,8 @@ Represents a series in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartSeriesFormat](chartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
-|points|[WorkbookChartPoint](chartpoint.md) collection|Represents a collection of all points in the series. Read-only.|
+|format|[workbookChartSeriesFormat](chartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
+|points|[workbookChartPoint](chartpoint.md) collection|Represents a collection of all points in the series. Read-only.|
 
 ## JSON representation
 

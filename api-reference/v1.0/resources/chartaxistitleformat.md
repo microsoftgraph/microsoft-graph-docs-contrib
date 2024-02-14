@@ -1,5 +1,5 @@
 ---
-title: "ChartAxisTitleFormat resource type"
+title: "workbookChartAxisTitleFormat resource type"
 description: "Represents the chart axis title formatting."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartAxisTitleFormat resource type
+# workbookChartAxisTitleFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.|
+|font|[workbookChartFont](chartfont.md)|Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.|
 
 ## JSON representation
 

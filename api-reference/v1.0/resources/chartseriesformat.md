@@ -1,5 +1,5 @@
 ---
-title: "ChartSeriesFormat resource type"
+title: "workbookChartSeriesFormat resource type"
 description: "encapsulates the format properties for the chart series"
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartSeriesFormat resource type
+# workbookChartSeriesFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of a chart series, which includes background formatting information. Read-only.|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|Represents line formatting. Read-only.|
+|fill|[workbookChartFill](chartfill.md)|Represents the fill format of a chart series, which includes background formatting information. Read-only.|
+|line|[workbookChartLineFormat](chartlineformat.md)|Represents line formatting. Read-only.|
 
 
 ## JSON representation

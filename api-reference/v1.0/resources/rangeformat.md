@@ -1,5 +1,5 @@
 ---
-title: "RangeFormat resource type"
+title: "workbookRangeFormat resource type"
 description: "A format object encapsulating the range's font, fill, borders, alignment, and other properties."
 ms.localizationpriority: medium
 author: "lumine2008"
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# RangeFormat resource type
+# workbookRangeFormat resource type
 
 Namespace: microsoft.graph
 
@@ -18,10 +18,10 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFormat](../api/rangeformat-get.md) | [WorkbookRangeFormat](rangeformat.md) |Read properties and relationships of rangeFormat object.|
-|[Create RangeBorder](../api/rangeformat-post-borders.md) |[WorkbookRangeBorder](rangeborder.md)| Create a new RangeBorder by posting to the borders collection.|
-|[List borders](../api/rangeformat-list-borders.md) |[WorkbookRangeBorder](rangeborder.md) collection| Get a RangeBorder object collection.|
-|[Update](../api/rangeformat-update.md) | [WorkbookRangeFormat](rangeformat.md)	|Update RangeFormat object. |
+|[Get RangeFormat](../api/rangeformat-get.md) | [workbookRangeFormat](rangeformat.md) |Read properties and relationships of rangeFormat object.|
+|[Create RangeBorder](../api/rangeformat-post-borders.md) |[workbookRangeBorder](rangeborder.md)| Create a new RangeBorder by posting to the borders collection.|
+|[List borders](../api/rangeformat-list-borders.md) |[workbookRangeBorder](rangeborder.md) collection| Get a RangeBorder object collection.|
+|[Update](../api/rangeformat-update.md) | [workbookRangeFormat](rangeformat.md)	|Update RangeFormat object. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|None|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|None|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
 
@@ -37,10 +37,10 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|borders|[WorkbookRangeBorder](rangeborder.md) collection|Collection of border objects that apply to the overall range selected Read-only.|
-|fill|[WorkbookRangeFill](rangefill.md)|Returns the fill object defined on the overall range. Read-only.|
-|font|[WorkbookRangeFont](rangefont.md)|Returns the font object defined on the overall range selected Read-only.|
-|protection|[WorkbookFormatProtection](formatprotection.md)|Returns the format protection object for a range. Read-only.|
+|borders|[workbookRangeBorder](rangeborder.md) collection|Collection of border objects that apply to the overall range selected Read-only.|
+|fill|[workbookRangeFill](rangefill.md)|Returns the fill object defined on the overall range. Read-only.|
+|font|[workbookRangeFont](rangefont.md)|Returns the font object defined on the overall range selected Read-only.|
+|protection|[workbookFormatProtection](formatprotection.md)|Returns the format protection object for a range. Read-only.|
 
 ## JSON representation
 

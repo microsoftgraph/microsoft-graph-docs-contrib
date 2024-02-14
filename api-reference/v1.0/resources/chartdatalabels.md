@@ -1,5 +1,5 @@
 ---
-title: "ChartDataLabels resource type"
+title: "workbookChartDataLabels resource type"
 description: "Represents a collection of all the data labels on a chart point."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartDataLabels resource type
+# workbookChartDataLabels resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ Represents a collection of all the data labels on a chart point.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [WorkbookChartDataLabels](chartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
-|[Update](../api/chartdatalabels-update.md) | [WorkbookChartDataLabels](chartdatalabels.md)	|Update ChartDataLabels object. |
+|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [workbookChartDataLabels](chartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
+|[Update](../api/chartdatalabels-update.md) | [workbookChartDataLabels](chartdatalabels.md)	|Update ChartDataLabels object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -36,7 +36,7 @@ Represents a collection of all the data labels on a chart point.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|Represents the format of chart data labels, which includes fill and font formatting. Read-only.|
+|format|[workbookChartDataLabelFormat](chartdatalabelformat.md)|Represents the format of chart data labels, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 

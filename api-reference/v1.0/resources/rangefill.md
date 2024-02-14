@@ -1,5 +1,5 @@
 ---
-title: "RangeFill resource type"
+title: "workbookRangeFill resource type"
 description: "Represents the background of a range object."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# RangeFill resource type
+# workbookRangeFill resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ Represents the background of a range object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFill](../api/rangefill-get.md) | [WorkbookRangeFill](rangefill.md) |Read properties and relationships of rangeFill object.|
-|[Update](../api/rangefill-update.md) | [WorkbookRangeFill](rangefill.md)	|Update RangeFill object. |
+|[Get RangeFill](../api/rangefill-get.md) | [workbookRangeFill](rangefill.md) |Read properties and relationships of rangeFill object.|
+|[Update](../api/rangefill-update.md) | [workbookRangeFill](rangefill.md)	|Update RangeFill object. |
 |[Clear](../api/rangefill-clear.md)|None|Resets the range background.|
 
 ## Properties

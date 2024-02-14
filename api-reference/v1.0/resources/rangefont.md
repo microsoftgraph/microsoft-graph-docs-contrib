@@ -1,5 +1,5 @@
 ---
-title: "RangeFont resource type"
+title: "workbookRangeFont resource type"
 description: "This object represents the font attributes (font name, font size, color, etc.) for an object."
 ms.localizationpriority: medium
 author: "lumine2008"
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# RangeFont resource type
+# workbookRangeFont resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFont](../api/rangefont-get.md) | [WorkbookRangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
-|[Update](../api/rangefont-update.md) | [WorkbookRangeFont](rangefont.md)	|Update RangeFont object. |
+|[Get RangeFont](../api/rangefont-get.md) | [workbookRangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
+|[Update](../api/rangefont-update.md) | [workbookRangeFont](rangefont.md)	|Update RangeFont object. |
 
 ## Properties
 | Property	   | Type	|Description|

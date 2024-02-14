@@ -1,5 +1,5 @@
 ---
-title: "ChartTitle resource type"
+title: "workbookChartTitle resource type"
 description: "Represents a chart title object of a chart."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartTitle resource type
+# workbookChartTitle resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ Represents a chart title object of a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |Read properties and relationships of chartTitle object.|
-|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)	|Update ChartTitle object. |
+|[Get ChartTitle](../api/charttitle-get.md) | [workbookChartTitle](charttitle.md) |Read properties and relationships of chartTitle object.|
+|[Update](../api/charttitle-update.md) | [workbookChartTitle](charttitle.md)	|Update ChartTitle object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -31,7 +31,7 @@ Represents a chart title object of a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartTitleFormat](charttitleformat.md)|Represents the formatting of a chart title, which includes fill and font formatting. Read-only.|
+|format|[workbookChartTitleFormat](charttitleformat.md)|Represents the formatting of a chart title, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 

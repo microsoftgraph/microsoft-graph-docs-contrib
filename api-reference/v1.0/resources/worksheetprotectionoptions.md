@@ -1,5 +1,5 @@
 ---
-title: "WorksheetProtectionOptions resource type"
+title: "workbookWorksheetProtectionOptions resource type"
 description: "Represents the options in sheet protection."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# WorksheetProtectionOptions resource type
+# workbookWorksheetProtectionOptions resource type
 
 Namespace: microsoft.graph
 

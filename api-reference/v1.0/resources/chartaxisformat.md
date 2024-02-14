@@ -1,5 +1,5 @@
 ---
-title: "ChartAxisFormat resource type"
+title: "workbookChartAxisFormat resource type"
 description: "Encapsulates the format properties for the chart axis."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartAxisFormat resource type
+# workbookChartAxisFormat resource type
 
 Namespace: microsoft.graph
 
@@ -22,8 +22,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|Represents chart line formatting. Read-only.|
+|font|[workbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.|
+|line|[workbookChartLineFormat](chartlineformat.md)|Represents chart line formatting. Read-only.|
 
 
 ## JSON representation

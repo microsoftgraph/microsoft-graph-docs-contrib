@@ -1,5 +1,5 @@
 ---
-title: "ChartDataLabelFormat resource type"
+title: "workbookChartDataLabelFormat resource type"
 description: "Encapsulates the format properties for the chart data labels."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartDataLabelFormat resource type
+# workbookChartDataLabelFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of the current chart data label. Read-only.|
-|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.|
+|fill|[workbookChartFill](chartfill.md)|Represents the fill format of the current chart data label. Read-only.|
+|font|[workbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.|
 
 
 ## JSON representation

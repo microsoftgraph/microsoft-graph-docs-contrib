@@ -1,5 +1,5 @@
 ---
-title: "RangeBorder resource type"
+title: "workbookRangeBorder resource type"
 description: "Represents the border of an object."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# RangeBorder resource type
+# workbookRangeBorder resource type
 
 Namespace: microsoft.graph
 
@@ -18,10 +18,10 @@ Represents the border of an object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeBorder](../api/rangeborder-get.md) | [WorkbookRangeBorder](rangeborder.md) |Read properties and relationships of rangeBorder object.|
-|[Update](../api/rangeborder-update.md) | [WorkbookRangeBorder](rangeborder.md)	|Update RangeBorder object. |
-|[List](../api/rangeborder-list.md) | [WorkbookRangeBorder](rangeborder.md) collection |Get rangeBorder object collection. |
-|[Itemat](../api/rangebordercollection-itemat.md)|[WorkbookRangeBorder](rangeborder.md)|Gets a border object using its index|
+|[Get RangeBorder](../api/rangeborder-get.md) | [workbookRangeBorder](rangeborder.md) |Read properties and relationships of rangeBorder object.|
+|[Update](../api/rangeborder-update.md) | [workbookRangeBorder](rangeborder.md)	|Update RangeBorder object. |
+|[List](../api/rangeborder-list.md) | [workbookRangeBorder](rangeborder.md) collection |Get rangeBorder object collection. |
+|[Itemat](../api/rangebordercollection-itemat.md)|[workbookRangeBorder](rangeborder.md)|Gets a border object using its index|
 
 ## Properties
 | Property	   | Type	|Description|

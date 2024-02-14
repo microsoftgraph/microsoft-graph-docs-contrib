@@ -1,5 +1,5 @@
 ---
-title: "ChartTitleFormat resource type"
+title: "workbookChartTitleFormat resource type"
 description: "Encapsulates the format properties for the chart title."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartTitleFormat resource type
+# workbookChartTitleFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of an object, which includes background formatting information. Read-only.|
-|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.|
+|fill|[workbookChartFill](chartfill.md)|Represents the fill format of an object, which includes background formatting information. Read-only.|
+|font|[workbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.|
 
 
 

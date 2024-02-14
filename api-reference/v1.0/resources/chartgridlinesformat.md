@@ -1,5 +1,5 @@
 ---
-title: "ChartGridlinesFormat resource type"
+title: "workbookChartGridlinesFormat resource type"
 description: "Encapsulates the format properties for chart gridlines."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartGridlinesFormat resource type
+# workbookChartGridlinesFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|Represents chart line formatting. Read-only.|
+|line|[workbookChartLineFormat](chartlineformat.md)|Represents chart line formatting. Read-only.|
 
 
 ## JSON representation

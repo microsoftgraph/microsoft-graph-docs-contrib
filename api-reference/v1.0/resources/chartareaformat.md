@@ -1,5 +1,5 @@
 ---
-title: "ChartAreaFormat resource type"
+title: "workbookChartAreaFormat resource type"
 description: "Encapsulates the format properties for the overall chart area."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartAreaFormat resource type
+# workbookChartAreaFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of an object, which includes background formatting information. Read-only.|
-|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.|
+|fill|[workbookChartFill](chartfill.md)|Represents the fill format of an object, which includes background formatting information. Read-only.|
+|font|[workbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.|
 
 ## JSON representation
 
