@@ -88,7 +88,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"adelev@contoso.onmicrosoft.com",
+        "address":"{adelev}@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -215,14 +215,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "adelev@contoso.onmicrosoft.com"
+                "address": "{adelev}@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Retail",
-            "address": "Retail@contoso.onmicrosoft.com"
+            "address": "{Retail}@contoso.com"
         }
     }
 }

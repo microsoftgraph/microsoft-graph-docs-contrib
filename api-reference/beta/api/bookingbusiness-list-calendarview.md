@@ -64,10 +64,10 @@ Here's an example  of the request.
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_getcalendarview",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["{contosolunchdelivery}@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/{contosolunchdelivery}@contoso.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
 
 # [C#](#tab/csharp)
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdel
 ---
 
 ### Response
-Here's an example  of the response. 
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

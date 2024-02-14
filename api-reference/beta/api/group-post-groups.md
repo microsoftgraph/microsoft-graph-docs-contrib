@@ -195,7 +195,7 @@ Content-type: application/json
      "preferredDataLocation": "CAN",
      "preferredLanguage": null,
      "proxyAddresses": [
-         "SMTP:golfassist@contoso.onmicrosoft.com"
+         "SMTP:{golfassist}@contoso.com"
      ],
      "renewedDateTime": "2018-12-22T02:21:05Z",
      "resourceBehaviorOptions": [],

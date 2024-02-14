@@ -57,10 +57,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "bookingappointment_get",
-  "sampleKeys": ["AAMkADKnAAA=", "Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["AAMkADKnAAA=", "{Contosolunchdelivery}@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{Contosolunchdelivery}@contoso.com/appointments/AAMkADKnAAA=
 ```
 
 # [C#](#tab/csharp)
@@ -188,7 +188,7 @@ Content-type: application/json
             "emailAddress": "jordanm@contoso.com",
             "phone": "213-555-0199",
             "notes": null,
-            "location": 
+            "location":
             {
                 "displayName": "Customer",
                 "locationEmailAddress": null,
@@ -196,7 +196,7 @@ Content-type: application/json
                 "locationType": null,
                 "uniqueId": null,
                 "uniqueIdType": null,
-                "address": 
+                "address":
                 {
                     "street": "",
                     "city": "",

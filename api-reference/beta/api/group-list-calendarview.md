@@ -191,7 +191,7 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"HR Taskforce",
-                        "address":"HRTaskforce@contoso.onmicrosoft.com"
+                        "address":"{HRTaskforce}@contoso.com"
                     }
                 },
                 {
@@ -202,14 +202,14 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"Megan Bowen",
-                        "address":"MeganB@contoso.onmicrosoft.com"
+                        "address":"{MeganB}@contoso.com"
                     }
                 }
              ],
             "organizer":{
                 "emailAddress":{
                     "name":"HR Taskforce",
-                    "address":"HRTaskforce@contoso.onmicrosoft.com"
+                    "address":"{HRTaskforce}@contoso.com"
                 }
             }
         },
@@ -270,7 +270,7 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"HR Taskforce",
-                        "address":"HRTaskforce@contoso.onmicrosoft.com"
+                        "address":"{HRTaskforce}@contoso.com"
                     }
                 },
                 {
@@ -281,14 +281,14 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"Megan Bowen",
-                        "address":"MeganB@contoso.onmicrosoft.com"
+                        "address":"{MeganB}@contoso.com"
                     }
                 }
             ],
             "organizer":{
                 "emailAddress":{
                     "name":"HR Taskforce",
-                    "address":"HRTaskforce@contoso.onmicrosoft.com"
+                    "address":"{HRTaskforce}@contoso.com"
                 }
             }
         }

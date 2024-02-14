@@ -114,8 +114,8 @@ Content-type: application/json
     "objectId": "a382de66-b7bb-4c30-82b7-306c6ae6a4ae",
     "altSecId": null,
     "displayName": "Accessibility Test",
-    "principalName": "accessibility@contosodeb.onmicrosoft.com",
-    "email": "accessibility@contosodeb.onmicrosoft.com",
+    "principalName": "{accessibility}@contoso.com",
+    "email": "{accessibility}@contoso.com",
     "onPremisesSecurityIdentifier": null,
     "type": "User",
     "subjectLifecycle": "governed"

@@ -62,10 +62,10 @@ The following example shows a request. This appointment does not involve booking
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinesspostappointments",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["{Contosolunchdelivery}@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{Contosolunchdelivery}@contoso.com/appointments
 Content-type: application/json
 
 {

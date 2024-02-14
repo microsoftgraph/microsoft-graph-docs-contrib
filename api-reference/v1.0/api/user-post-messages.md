@@ -92,7 +92,7 @@ Content-type: application/json
     "toRecipients":[
         {
             "emailAddress":{
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"{AdeleV}@contoso.com"
             }
         }
     ]
@@ -180,7 +180,7 @@ Content-type: application/json
         {
             "emailAddress":{
                 "name":"Adele Vance",
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"{AdeleV}@contoso.com"
             }
         }
     ],
@@ -218,7 +218,7 @@ Content-type: application/json
     "toRecipients":[
         {
             "emailAddress":{
-                "address":"AlexW@contoso.OnMicrosoft.com"
+                "address":"{AlexW}@contoso.com"
             }
         }
     ],
@@ -315,7 +315,7 @@ Content-type: application/json
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.OnMicrosoft.com"
+                "address":"{AlexW}@contoso.com"
             }
         }
     ],

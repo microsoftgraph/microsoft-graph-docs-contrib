@@ -17,15 +17,15 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewMessage()
 subject := "Party planning"
-requestBody.SetSubject(&subject) 
+requestBody.SetSubject(&subject)
 
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 name := "Samantha Booth"
-emailAddress.SetName(&name) 
-address := "samanthab@contoso.onmicrosoft.com"
-emailAddress.SetAddress(&address) 
+emailAddress.SetName(&name)
+address := "{samanthab}@contoso.com"
+emailAddress.SetAddress(&address)
 recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
@@ -37,9 +37,9 @@ requestBody.SetToRecipients(toRecipients)
 mention := graphmodels.NewMention()
 mentioned := graphmodels.NewEmailAddress()
 name := "Dana Swope"
-mentioned.SetName(&name) 
-address := "danas@contoso.onmicrosoft.com"
-mentioned.SetAddress(&address) 
+mentioned.SetName(&name)
+address := "{danas}@contoso.com"
+mentioned.SetAddress(&address)
 mention.SetMentioned(mentioned)
 
 mentions := []graphmodels.Mentionable {

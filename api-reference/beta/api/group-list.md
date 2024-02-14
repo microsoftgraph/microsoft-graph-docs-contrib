@@ -169,7 +169,7 @@ Content-type: application/json
          "preferredDataLocation":"CAN",
          "preferredLanguage":null,
          "proxyAddresses":[
-            "smtp:golfassist@contoso.onmicrosoft.com",
+            "smtp:{golfassist}@contoso.com",
             "SMTP:golfassist@contoso.com"
          ],
          "renewedDateTime":"2018-12-22T02:21:05Z",
@@ -207,7 +207,7 @@ Content-type: application/json
          "preferredDataLocation":"CAN",
          "preferredLanguage":null,
          "proxyAddresses":[
-            "smtp:golftalk@contoso.onmicrosoft.com",
+            "smtp:{golftalk}@contoso.com",
             "SMTP:golftalk@contoso.com"
          ],
          "renewedDateTime":"2018-11-19T20:29:40Z",

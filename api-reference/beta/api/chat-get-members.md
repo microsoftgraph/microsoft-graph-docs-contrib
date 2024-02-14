@@ -137,7 +137,7 @@ Content-type: application/json
     "displayName": "John Doe",
     "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
     "userId": "2c8d2b5c-1849-4066-b57d-e7a0e9e44ec8",
-    "email": "johndoe@contoso.onmicrosoft.com",
+    "email": "{johndoe}@contoso.com",
     "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```

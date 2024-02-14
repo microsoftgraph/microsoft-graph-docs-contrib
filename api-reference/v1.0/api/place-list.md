@@ -343,11 +343,11 @@ The following example shows how to get a list of [room](../resources/room.md) ob
 <!-- {
   "blockType": "request",
   "name": "get_rooms_in_roomlist",
-  "sampleKeys": ["Building2Rooms@M365x214355.onmicrosoft.com"]
+  "sampleKeys": ["{Building2Rooms}@contoso.com"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicrosoft.com/microsoft.graph.roomlist/rooms
+GET https://graph.microsoft.com/v1.0/places/{Building2Rooms}@contoso.com/microsoft.graph.roomlist/rooms
 ```
 
 # [C#](#tab/csharp)
@@ -412,7 +412,7 @@ Content-type: application/json
             "geoCoordinates": null,
             "phone": "",
             "nickname": "Conf Room Rainier",
-            "emailAddress": "Rainier@M365x214355.onmicrosoft.com",
+            "emailAddress": "{Rainier}@contoso.com",
             "building": null,
             "floorNumber": null,
             "floorLabel": null,
@@ -432,7 +432,7 @@ Content-type: application/json
             "geoCoordinates": null,
             "phone": "",
             "nickname": "Conf Room Hood",
-            "emailAddress": "Hood@M365x214355.onmicrosoft.com",
+            "emailAddress": "{Hood}@contoso.com",
             "building": null,
             "floorNumber": null,
             "floorLabel": null,
@@ -452,7 +452,7 @@ Content-type: application/json
             "geoCoordinates": null,
             "phone": "",
             "nickname": "Conf Room Baker",
-            "emailAddress": "Baker@M365x214355.onmicrosoft.com",
+            "emailAddress": "{Baker}@contoso.com",
             "building": null,
             "floorNumber": null,
             "floorLabel": null,

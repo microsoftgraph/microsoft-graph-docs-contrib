@@ -56,10 +56,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinesslistservices",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["{Contosolunchdelivery}@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{Contosolunchdelivery}@contoso.com/services
 ```
 
 # [C#](#tab/csharp)
@@ -130,7 +130,7 @@ Content-type: application/json
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
             "isAnonymousJoinEnabled": false,
-            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4ABB9Qgce5",
+            "webUrl": "https://outlook.office365.com/owa/calendar/{Contosolunchdelivery}@contoso.com/bookings/s/gkcGIq92Z0u5h4ABB9Qgce5",
             "schedulingPolicy": null,
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
@@ -172,7 +172,7 @@ Content-type: application/json
             "isLocationOnline": true,
             "smsNotificationsEnabled": false,
             "isAnonymousJoinEnabled": false,
-            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gpcGIq92Z0u5h6ABB9Qgrt5",
+            "webUrl": "https://outlook.office365.com/owa/calendar/{Contosolunchdelivery}@contoso.com/bookings/s/gpcGIq92Z0u5h6ABB9Qgrt5",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
                 "locationEmailAddress": null,
@@ -220,7 +220,7 @@ Content-type: application/json
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
             "isAnonymousJoinEnabled": false,
-            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/bplGIq92Z0u5h4FWB9Qgvu7",
+            "webUrl": "https://outlook.office365.com/owa/calendar/{Contosolunchdelivery}@contoso.com/bookings/s/bplGIq92Z0u5h4FWB9Qgvu7",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
                 "locationEmailAddress": null,

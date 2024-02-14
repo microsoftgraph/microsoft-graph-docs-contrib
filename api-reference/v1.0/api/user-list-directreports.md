@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/me/directReports
 ---
 
 ### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -134,12 +134,12 @@ Content-type: application/json
             "displayName": "Conf Room Adams",
             "givenName": null,
             "jobTitle": null,
-            "mail": "Adams@Contoso.OnMicrosoft.com",
+            "mail": "{Adams}@contoso.com",
             "mobilePhone": null,
             "officeLocation": null,
             "preferredLanguage": null,
             "surname": null,
-            "userPrincipalName": "Adams@Contoso.OnMicrosoft.com"
+            "userPrincipalName": "{Adams}@contoso.com"
         }
     ]
 }
