@@ -152,7 +152,10 @@
     "overview": "resources/booking-api-overview.md",
     "workloads": [
       {
-        "id": "Microsoft.Bookings"
+        "id": "Microsoft.Bookings",
+        "excludedResources": [
+          "solutionsRoot"
+        ]
       }
     ]
   },
@@ -172,7 +175,10 @@
         "name": "Cloud printing",
         "workloads": [
           {
-            "id": "Microsoft.PrintService"
+            "id": "Microsoft.PrintService",
+            "excludedResources": [
+              "printUsage"
+            ]
           }
         ]
       },
@@ -259,7 +265,10 @@
         ]
       },
       {
-        "id": "Microsoft.EducationAssignment"
+        "id": "Microsoft.EducationAssignment",
+        "excludedResources": [
+          "educationRoot"
+        ]
       }
     ]
   },
@@ -307,7 +316,10 @@
     "overview": "resources/connectors-api-overview.md",
     "workloads": [
       {
-        "id": "Microsoft.SubstrateConnectors"
+        "id": "Microsoft.SubstrateConnectors",
+        "excludedResources": [
+          "external"
+        ]
       }
     ]
   },
@@ -790,7 +802,11 @@
     "overview": "resources/security-api-overview.md",
     "workloads": [
       {
-        "id": "Microsoft.Security.RecordsManagement"
+        "id": "Microsoft.Security.RecordsManagement",
+        "excludedResources": [
+          "triggersRoot",
+          "triggerTypesRoot"
+        ]
       },
       {
         "id": "Microsoft.SecurityDetectionsAndIncidents",
@@ -862,9 +878,6 @@
     "workloads": [
       {
         "id": "Microsoft.SharePoint"
-      },
-      {
-        "id": "Microsoft.SharePointSites"
       }
     ]
   },
@@ -882,25 +895,13 @@
     "overview": "resources/teams-api-overview.md",
     "workloads": [
       {
-        "id": "Microsoft.Teams"
-      },
-      {
-        "id": "Microsoft.Teams.Core"
-      },
-      {
         "id": "Microsoft.Teams.Shifts"
       },
       {
-        "id": "Microsoft.Teams.Chat"
-      }
-    ],
-    "childNodes": [
-      {
-        "name": "GraphSvc",
-        "workloads": [
-          {
-            "id": "Microsoft.Teams.GraphSvc"
-          }
+        "id": "Microsoft.Teams.GraphSvc",
+        "excludedResources": [
+          "appCatalogs",
+          "cloudCommunications"
         ]
       }
     ]
