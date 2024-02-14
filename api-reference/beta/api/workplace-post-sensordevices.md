@@ -44,20 +44,20 @@ POST /workplace/sensorDevices
 ## Request body
 In the request body, supply a JSON representation of the [workplaceSensorDevice](../resources/workplacesensordevice.md) object.
 
-You can specify the following properties when creating a **workplaceSensorDevice**.
+You can specify the following properties when you create a **workplaceSensorDevice**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The description of the device. Optional.|
 |deviceId|String|The user-defined unique identifier of the device provided at the time of creation. Required.|
 |displayName|String|The display name of the device. Optional.|
-|ipV4Address|String|The IPv4 Address of the device. Optional.|
-|ipV6Address|String|The IPv6 Address of the device. Optional.|
+|ipV4Address|String|The IPv4 address of the device. Optional.|
+|ipV6Address|String|The IPv6 address of the device. Optional.|
 |macAddress|String|The MAC address of the device. Optional.|
 |manufacturer|String|The manufacturer of the device. Required.|
-|placeId|String|The unique identifier of the place where the device is located. If the device is installed in a room featuring a mailbox, this property should match the ExternalDirectoryObjectId or Microsoft Entra object Id of the room mailbox. Optional.|
-|sensors|[workplaceSensor](../resources/workplacesensor.md) collection|A list of sensors associated with the device that collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature etc. Required.|
-|tags|String collection|A list of custom tags associated with the device. Supports $filter. Optional.|
+|placeId|String|The unique identifier of the place where the device is located. If the device is installed in a room equipped with a mailbox, this property should match the **ExternalDirectoryObjectId** or Microsoft Entra object ID of the room mailbox. Optional.|
+|sensors|[workplaceSensor](../resources/workplacesensor.md) collection|A list of sensors associated with the device that collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature, and more. Required.|
+|tags|String collection|A list of custom tags associated with the device. Supports `$filter`. Optional.|
 
 ## Response
 
@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [workplac
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_workplacesensordevice_from_"
@@ -104,7 +104,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -148,4 +148,3 @@ Content-Type: application/json
     ]
 }
 ```
-
