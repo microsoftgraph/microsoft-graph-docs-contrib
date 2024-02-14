@@ -3987,7 +3987,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendVirtualAppointmentSms",
           "ChangeType": "Addition",
-          "Description": "Added the [sendVirtualAppointmentSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0) method to the [virtualappointment](https://learn.microsoft.com/en-us/graph/api/resources/virtualappointment?view=graph-rest-1.0) resource..",
+          "Description": "Added the [sendVirtualAppointmentSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0) method to the [virtualappointment](https://learn.microsoft.com/en-us/graph/api/resources/virtualappointment?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
