@@ -1373,7 +1373,7 @@ items:
                   - name: Update
                     href: api/workplacesensordevice-update.md
                   - name: Delete
-                    href: api/workplace-delete-sensordevices.md
+                    href: api/workplacesensordevice-delete.md
                   - name: Ingest telemetry
                     href: api/workplacesensordevice-ingesttelemetry.md    
       - name: Change notifications
