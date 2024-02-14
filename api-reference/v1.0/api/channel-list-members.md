@@ -146,7 +146,7 @@ Content-type: application/json
 
 ```
 
-## See also
+## Related content
 
 - [List members of team](team-list-members.md)
 

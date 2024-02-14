@@ -348,7 +348,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get hosted content in app's icon](teamworkhostedcontent-get.md)
 - [List apps in catalog](appcatalogs-list-teamsapps.md)

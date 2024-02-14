@@ -160,7 +160,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Identify large gallery view participants in a roster](/graph/cloud-communications-identifylargegalleryview)
 

@@ -215,7 +215,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Create member in channel](channel-post-members.md)
 

@@ -49,6 +49,6 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 - [Response example for an event message about a shared channel](/graph/system-messages/#channel-shared)
 - [System messages](/graph/system-messages)
