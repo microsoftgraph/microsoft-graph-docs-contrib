@@ -1,5 +1,5 @@
 ---
-title: "activity resource type"
+title: "userActivity resource type"
 description: "Represents a single activity within an app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a history item that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity."
 ms.localizationpriority: medium
 ms.prod: "project-rome"
@@ -7,7 +7,7 @@ author: "ailae"
 doc_type: resourcePageType
 ---
 
-# activity resource type
+# userActivity resource type
 
 Namespace: microsoft.graph
 
@@ -23,10 +23,10 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 
 |Method | Return Type | Description|
 |:------|:------------|:-----------|
-|[Create or replace activity](../api/projectrome-put-activity.md) | [activity](projectrome-activity.md) |Creates or replaces an existing activity (upsert). The appActivityId needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe. |
+|[Create or replace activity](../api/projectrome-put-activity.md) | [userActivity](projectrome-activity.md) |Creates or replaces an existing activity (upsert). The appActivityId needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe. |
 |[Delete an activity](../api/projectrome-delete-activity.md) | No Content | Deletes the specified activity for that user from your app.|
-|[Get activities](../api/projectrome-get-activities.md) | Collection of [activities](projectrome-activity.md) | Gets the activities for your app for a given user.|
-|[Get recent activities](../api/projectrome-get-recent-activities.md) | Collection of [activities](projectrome-activity.md) | Gets the most recent activities for your app for a given user, sorted and based on the most recently created or updated [historyItems](projectrome-historyitem.md).|
+|[Get activities](../api/projectrome-get-activities.md) | Collection of [userActivities](projectrome-activity.md) | Gets the activities for your app for a given user.|
+|[Get recent activities](../api/projectrome-get-recent-activities.md) | Collection of [userActivities](projectrome-activity.md) | Gets the most recent activities for your app for a given user, sorted and based on the most recently created or updated [activityHistoryItems](projectrome-historyitem.md).|
 
 ## Properties
 

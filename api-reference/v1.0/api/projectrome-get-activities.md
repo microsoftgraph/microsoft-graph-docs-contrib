@@ -36,7 +36,7 @@ This method supports some [OData Query Parameters](/graph/query-parameters) to h
 
 - $expand for the **historyItems** navigation property.
 - $top to limit the maximum number of items across pages.
-- $filter on the **lastModifiedDateTime** property for either activities or **historyItems**, if expanded.
+- $filter on the **lastModifiedDateTime** property for either activities or **activityHistoryItems**, if expanded.
 
 The following are some examples of supported queries with URL encoding:
 
