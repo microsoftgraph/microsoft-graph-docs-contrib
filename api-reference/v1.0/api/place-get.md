@@ -106,7 +106,7 @@ Content-type: application/json
     "address": null,
     "geoCoordinates": null,
     "phone": "",
-    "emailAddress": "Building2Rooms@M365x214355.onmicrosoft.com"
+    "emailAddress": "Building2Rooms@contoso.com"
 }
 ```
 
@@ -120,11 +120,11 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 <!-- {
   "blockType": "request",
   "name": "get_roomlist",
-  "sampleKeys": ["Building2Rooms@M365x214355.onmicrosoft.com"]
+  "sampleKeys": ["Building2Rooms@contoso.com"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicrosoft.com
+GET https://graph.microsoft.com/v1.0/places/Building2Rooms@contoso.com
 ```
 
 # [JavaScript](#tab/javascript)
@@ -158,7 +158,7 @@ Content-type: application/json
     "address": null,
     "geoCoordinates": null,
     "phone": "",
-    "emailAddress": "Building2Rooms@M365x214355.onmicrosoft.com"
+    "emailAddress": "Building2Rooms@contoso.com"
 }
 ```
 

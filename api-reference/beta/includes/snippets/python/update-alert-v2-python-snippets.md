@@ -10,7 +10,7 @@ from msgraph.generated.models.alert import Alert
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Alert(
-	assigned_to = "secAdmin@contoso.onmicrosoft.com",
+	assigned_to = "secAdmin@contoso.com",
 	classification = AlertClassification.TruePositive,
 	determination = AlertDetermination.Malware,
 	status = AlertStatus.InProgress,
