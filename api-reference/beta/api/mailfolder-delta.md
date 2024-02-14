@@ -137,7 +137,7 @@ Content-type: application/json
 }
 ```
 
-### Related content
+## Related content
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)
 - [Get incremental changes to messages in a folder](/graph/delta-query-messages)
