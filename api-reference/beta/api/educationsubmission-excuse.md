@@ -1,7 +1,7 @@
 ---
 title: "educationSubmission: excuse"
 description: "Excuse an educationSubmission  object."
-author: "raghuchekuri"
+author: "raghuchek"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
