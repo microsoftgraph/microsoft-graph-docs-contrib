@@ -25,19 +25,14 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Get remoteNetwork](../api/networkaccess-remotenetwork-get.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
 |[Update remoteNetwork](../api/networkaccess-remotenetwork-update.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md)|Update the properties of a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
 |[Delete remoteNetwork](../api/networkaccess-connectivity-delete-remotenetworks.md)|None|Delete a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
-|[Get remoteNetworkConnectivityConfiguration](../api/networkaccess-remotenetworkconnectivityconfiguration-get.md)|[microsoft.graph.networkaccess.remoteNetworkConnectivityConfiguration](../resources/networkaccess-remotenetworkconnectivityconfiguration.md) collection|Get the connectivity configuration of a remote network which is used to set up IPsec tunnel on customer premise equipment (CPE).|
-|[List deviceLinks](../api/networkaccess-remotenetwork-list-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Get the list of device links associated with a specific remote network.|
-|[Create deviceLink](../api/networkaccess-remotenetwork-post-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md)|Create device link for a remote network.|
-|[List forwardingProfiles](../api/networkaccess-remotenetwork-list-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Get the forwarding profiles linked to this remote network.|
-[Create forwardingProfile](../api/networkaccess-remotenetwork-post-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Assign a new forwarding profile to a remote network.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier for the remote network. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|name|String|Name.|
-|region|String|Specify the region closest to your remote network. The possible value are: `eastUS`, `eastUS2`, `westUS`, `westUS2`, `westUS3`, `centralUS`, `northCentralUS`, `southCentralUS`, `northEurope`, `westEurope`, `franceCentral`, `germanyWestCentral`, `switzerlandNorth`, `ukSouth`, `canadaEast`, `canadaCentral`, `southAfricaWest`, `southAfricaNorth`, `uaeNorth`, `australiaEast`, `westCentralUS`, `centralIndia`, `southEastAsia`, `swedenCentral`, `southIndia`, `australiaSouthEast`, `koreaCentral`, `koreaSouth`, `polandCentral`, `brazilSouth`, `japanEast`, `japanWest`, `unknownFutureValue`.|
 |lastModifiedDateTime|DateTimeOffset|last modified time.|
+|name|String|Name.|
+|region|microsoft.graph.networkaccess.region|Specify the region closest to your remote network. The possible value are: `eastUS`, `eastUS2`, `westUS`, `westUS2`, `westUS3`, `centralUS`, `northCentralUS`, `southCentralUS`, `northEurope`, `westEurope`, `franceCentral`, `germanyWestCentral`, `switzerlandNorth`, `ukSouth`, `canadaEast`, `canadaCentral`, `southAfricaWest`, `southAfricaNorth`, `uaeNorth`, `australiaEast`, `westCentralUS`, `centralIndia`, `southEastAsia`, `swedenCentral`, `southIndia`, `australiaSouthEast`, `koreaCentral`, `koreaSouth`, `polandCentral`, `brazilSouth`, `japanEast`, `japanWest`, `unknownFutureValue`, `koreaSouth`.|
 |version|String|Remote network version.|
 
 ## Relationships
@@ -61,10 +56,10 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.networkaccess.remoteNetwork",
   "id": "String (identifier)",
+  "lastModifiedDateTime": "String (timestamp)",
   "name": "String",
-  "region": "String",
+  "region": "microsoft.graph.networkaccess.region",
   "version": "String",
-  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 

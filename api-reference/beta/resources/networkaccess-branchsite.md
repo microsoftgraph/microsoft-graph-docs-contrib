@@ -1,5 +1,5 @@
 ---
-title: "branch resource type"
+title: "branch resource type (deprecated)"
 description: "A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access services edge network."
 author: "Moti-ba"
 ms.localizationpriority: medium
@@ -7,13 +7,15 @@ ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
-# branchSite resource type
+# branchSite resource type (deprecated)
 
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access services edge network.
+
+**Use [remoteNetwork](networkaccess-remotenetwork.md) resource type**.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
