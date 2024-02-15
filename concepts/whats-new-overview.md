@@ -29,7 +29,7 @@ Updated the descriptions of the **model** and **manufacturer** properties in the
 
 ### Teamwork and communications | Shift management
 
-Added the ability to [get shifts](/graph/api/team-getshifts) and [get time offs](/graph/api/team-gettimesoff) across all teams that a user is a direct member of.
+Added the ability to [get shifts](/graph/api/team-getshifts?view=graph-rest-beta&preserve-view=true) and [get time offs](/graph/api/team-gettimesoff?view=graph-rest-beta&preserve-view=true) across all teams that a user is a direct member of.
 
 ## January 2024: New and generally available
 
