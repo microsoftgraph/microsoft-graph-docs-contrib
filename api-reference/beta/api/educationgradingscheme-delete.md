@@ -1,5 +1,5 @@
 ---
-title: "Delete educationGradingScheme"
+title: "Delete education grading scheme"
 description: "Delete an educationGradingScheme object."
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -40,7 +40,7 @@ DELETE /education/classes/{educationClassId}/assignmentSettings/gradingSchemes/{
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

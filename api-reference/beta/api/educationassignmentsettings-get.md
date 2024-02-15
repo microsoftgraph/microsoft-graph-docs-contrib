@@ -38,7 +38,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and an [educationAss
 
 ## Examples
 
-## Example 1: Get assignmentSettings
+## Example 1: Get an assignment settings object
 ### Request
 
 <!-- {
@@ -125,7 +125,7 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: Get defaultGradingScheme
+## Example 2: Get the default grading scheme for the assignment
 ### Request
 
 <!-- {

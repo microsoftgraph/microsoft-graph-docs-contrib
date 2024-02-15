@@ -37,7 +37,7 @@ GET /education/classes/{id}/assignments
 
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*`, which includes all the previous options.
+The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions`, and `*`, which includes all the previous options.
 
 All [properties](/graph/api/resources/educationassignment#properties) are supported for the query parameters `$filter` and `$orderby`.
 
@@ -45,7 +45,7 @@ All [properties](/graph/api/resources/educationassignment#properties) are suppor
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

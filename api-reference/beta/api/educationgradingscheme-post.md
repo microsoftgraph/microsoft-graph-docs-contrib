@@ -1,5 +1,5 @@
 ---
-title: "Create educationGradingScheme"
+title: "Create an education grading scheme"
 description: "Create a new educationGradingScheme object."
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new educationGradingScheme object
+Create a new educationGradingScheme object.
 
 ## Permissions
 
@@ -40,7 +40,7 @@ POST /education/classes/{educationClassId}/assignmentSettings/gradingSchemes
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

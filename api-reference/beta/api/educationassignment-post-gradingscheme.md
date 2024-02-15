@@ -40,7 +40,7 @@ PUT /education/classes/{educationClassId}/assignments/{assignmentid}/gradingSche
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -51,7 +51,7 @@ In the request body, supply the odata.id of the existing gradingScheme object to
 
 If successful, this method returns a `201 Created` response code and an [educationGradingScheme](../resources/educationgradingscheme.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 

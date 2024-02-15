@@ -1,5 +1,5 @@
 ---
-title: "Get educationGradingScheme"
+title: "Get and education grading scheme"
 description: "Read the properties and relationships of an educationGradingScheme object."
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -44,7 +44,7 @@ This method supports some of the OData query parameters to help customize the re
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

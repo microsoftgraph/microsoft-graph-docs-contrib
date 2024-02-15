@@ -1,5 +1,5 @@
 ---
-title: "Update educationGradingScheme"
+title: "Update an education grading scheme"
 description: "Update the properties of an educationGradingScheme object."
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -40,7 +40,7 @@ PATCH /education/classes/{educationClassId}/assignmentSettings/gradingSchemes/{e
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

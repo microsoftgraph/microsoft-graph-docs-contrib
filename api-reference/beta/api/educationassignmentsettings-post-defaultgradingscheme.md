@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add defaultGradingScheme by posting to the defaultGradingScheme collection.
+Add a defaultGradingScheme by posting to the defaultGradingScheme collection.
 
 ## Permissions
 
@@ -40,7 +40,7 @@ PUT /education/classes/{educationClassId}/assignmentSettings/defaultGradingSchem
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

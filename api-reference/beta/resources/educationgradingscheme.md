@@ -1,6 +1,6 @@
 ---
 title: "educationGradingScheme resource type"
-description: "Use custom schemes for grading"
+description: "Use custom schemes for grading."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use custom schemes for grading
+Use custom schemes for grading.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The name of the grading scheme. |
 |grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The grades that make up the scheme.|
 |hidePointsDuringGrading|Boolean|Display setting for our UI. Whether teachers can grade with points in addition to letter grades.|
-|id|String|The grading scheme's ID.  Inherited from [entity](../resources/entity.md).|
+|id|String|The grading scheme's ID. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
