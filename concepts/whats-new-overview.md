@@ -18,8 +18,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2024: New and generally available
 
-- Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](/graph/toolkit/upgrade).
-- Effective January 31, 2024, billing is now enabled for all Microsoft Graph Data Connect pipelines on Microsoft Fabric. Update your application in the [Microsoft Graph Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure) to use it with Fabric.
+Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](/graph/toolkit/upgrade).
+
+### Microsoft Graph Data Connect
+
+Effective January 31, 2024, billing is now enabled for all Microsoft Graph Data Connect pipelines on Microsoft Fabric. Update your application in the [Microsoft Graph Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure) to use it with Fabric.
 
 ## February 2024: New in preview only
 
