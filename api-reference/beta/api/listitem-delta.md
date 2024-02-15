@@ -389,7 +389,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance)
 

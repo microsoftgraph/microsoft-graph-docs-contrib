@@ -55,7 +55,7 @@ The following JSON representation shows the resource type.
 }
 -->
 
-## See also
+## Related content
 
 - [teamwork resource type](teamwork.md)
 - [userTeamwork resource type](userteamwork.md)

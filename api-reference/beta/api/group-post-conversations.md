@@ -86,7 +86,7 @@ Content-type: application/json
             {
               "emailAddress":{
                 "name":"Adele Vance",
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"AdeleV@contoso.com"
               }
             }
           ]
