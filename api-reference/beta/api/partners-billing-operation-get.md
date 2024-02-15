@@ -17,6 +17,8 @@ Namespace: microsoft.graph.partners.billing
 
 Read the properties and relationships of an [operation](../resources/partners-billing-operation.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -98,6 +100,10 @@ GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d
 [!INCLUDE [sample-code](../includes/snippets/php/get-billing-operation-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-billing-operation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-billing-operation-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -168,6 +174,10 @@ GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-billing-operation-failed-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-billing-operation-failed-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -243,6 +253,10 @@ GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-billing-operation-running-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-billing-operation-running-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -4,24 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ImportedWindowsAutopilotDeviceIdentity importedWindowsAutopilotDeviceIdentity = new ImportedWindowsAutopilotDeviceIdentity();
-importedWindowsAutopilotDeviceIdentity.groupTag = "Group Tag value";
-importedWindowsAutopilotDeviceIdentity.serialNumber = "Serial Number value";
-importedWindowsAutopilotDeviceIdentity.productKey = "Product Key value";
-importedWindowsAutopilotDeviceIdentity.importId = "Import Id value";
-importedWindowsAutopilotDeviceIdentity.hardwareIdentifier = Base64.getDecoder().decode("aGFyZHdhcmVJZGVudGlmaWVy");
+importedWindowsAutopilotDeviceIdentity.setOdataType("#microsoft.graph.importedWindowsAutopilotDeviceIdentity");
+importedWindowsAutopilotDeviceIdentity.setGroupTag("Group Tag value");
+importedWindowsAutopilotDeviceIdentity.setSerialNumber("Serial Number value");
+importedWindowsAutopilotDeviceIdentity.setProductKey("Product Key value");
+importedWindowsAutopilotDeviceIdentity.setImportId("Import Id value");
+byte[] hardwareIdentifier = Base64.getDecoder().decode("aGFyZHdhcmVJZGVudGlmaWVy");
+importedWindowsAutopilotDeviceIdentity.setHardwareIdentifier(hardwareIdentifier);
 ImportedWindowsAutopilotDeviceIdentityState state = new ImportedWindowsAutopilotDeviceIdentityState();
-state.deviceImportStatus = ImportedWindowsAutopilotDeviceIdentityImportStatus.PENDING;
-state.deviceRegistrationId = "Device Registration Id value";
-state.deviceErrorCode = 15;
-state.deviceErrorName = "Device Error Name value";
-importedWindowsAutopilotDeviceIdentity.state = state;
-importedWindowsAutopilotDeviceIdentity.assignedUserPrincipalName = "Assigned User Principal Name value";
+state.setOdataType("microsoft.graph.importedWindowsAutopilotDeviceIdentityState");
+state.setDeviceImportStatus(ImportedWindowsAutopilotDeviceIdentityImportStatus.Pending);
+state.setDeviceRegistrationId("Device Registration Id value");
+state.setDeviceErrorCode(15);
+state.setDeviceErrorName("Device Error Name value");
+importedWindowsAutopilotDeviceIdentity.setState(state);
+importedWindowsAutopilotDeviceIdentity.setAssignedUserPrincipalName("Assigned User Principal Name value");
+ImportedWindowsAutopilotDeviceIdentity result = graphClient.deviceManagement().importedWindowsAutopilotDeviceIdentities().post(importedWindowsAutopilotDeviceIdentity);
 
-graphClient.deviceManagement().importedWindowsAutopilotDeviceIdentities()
-	.buildRequest()
-	.post(importedWindowsAutopilotDeviceIdentity);
 
 ```

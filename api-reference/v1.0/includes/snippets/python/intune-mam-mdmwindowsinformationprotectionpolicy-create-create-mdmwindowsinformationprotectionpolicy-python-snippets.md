@@ -4,7 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.mdm_windows_information_protection_policy import MdmWindowsInformationProtectionPolicy
+from msgraph.generated.models.windows_information_protection_resource_collection import WindowsInformationProtectionResourceCollection
+from msgraph.generated.models.windows_information_protection_data_recovery_certificate import WindowsInformationProtectionDataRecoveryCertificate
+from msgraph.generated.models.windows_information_protection_app import WindowsInformationProtectionApp
+from msgraph.generated.models.windows_information_protection_store_app import WindowsInformationProtectionStoreApp
+from msgraph.generated.models.windows_information_protection_proxied_domain_collection import WindowsInformationProtectionProxiedDomainCollection
+from msgraph.generated.models.proxied_domain import ProxiedDomain
+from msgraph.generated.models.windows_information_protection_i_p_range_collection import WindowsInformationProtectionIPRangeCollection
+from msgraph.generated.models.ip_range import IpRange
+from msgraph.generated.models.i_pv6_range import IPv6Range
 
 graph_client = GraphServiceClient(credentials, scopes)
 

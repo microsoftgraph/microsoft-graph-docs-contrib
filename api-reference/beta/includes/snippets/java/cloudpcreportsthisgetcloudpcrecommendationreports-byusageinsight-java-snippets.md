@@ -4,31 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CloudPcReportName reportName = CloudPcReportName.CLOUD_PC_USAGE_CATEGORY_REPORTS;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<String> selectList = new LinkedList<String>();
-selectList.add("UsageInsight");
+com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getcloudpcrecommendationreports.GetCloudPcRecommendationReportsPostRequestBody getCloudPcRecommendationReportsPostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getcloudpcrecommendationreports.GetCloudPcRecommendationReportsPostRequestBody();
+getCloudPcRecommendationReportsPostRequestBody.setReportName(CloudPcReportName.CloudPcUsageCategoryReports);
+LinkedList<String> select = new LinkedList<String>();
+select.add("UsageInsight");
+getCloudPcRecommendationReportsPostRequestBody.setSelect(select);
+LinkedList<String> groupBy = new LinkedList<String>();
+groupBy.add("UsageInsight");
+getCloudPcRecommendationReportsPostRequestBody.setGroupBy(groupBy);
+getCloudPcRecommendationReportsPostRequestBody.setFilter("");
+graphClient.deviceManagement().virtualEndpoint().reports().getCloudPcRecommendationReports().post(getCloudPcRecommendationReportsPostRequestBody);
 
-LinkedList<String> groupByList = new LinkedList<String>();
-groupByList.add("UsageInsight");
-
-String filter = "";
-
-graphClient.deviceManagement().virtualEndpoint().reports()
-	.getCloudPcRecommendationReports(CloudPcReportsGetCloudPcRecommendationReportsParameterSet
-		.newBuilder()
-		.withReportName(reportName)
-		.withFilter(filter)
-		.withSelect(selectList)
-		.withSearch(null)
-		.withGroupBy(groupByList)
-		.withOrderBy(null)
-		.withSkip(null)
-		.withTop(null)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

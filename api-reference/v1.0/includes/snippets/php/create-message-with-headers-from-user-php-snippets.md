@@ -17,7 +17,7 @@ $body->setContent('The group represents Washington.');
 $requestBody->setBody($body);
 $toRecipientsRecipient1 = new Recipient();
 $toRecipientsRecipient1EmailAddress = new EmailAddress();
-$toRecipientsRecipient1EmailAddress->setAddress('AlexW@contoso.OnMicrosoft.com');
+$toRecipientsRecipient1EmailAddress->setAddress('AlexW@contoso.com');
 $toRecipientsRecipient1->setEmailAddress($toRecipientsRecipient1EmailAddress);
 $toRecipientsArray []= $toRecipientsRecipient1;
 $requestBody->setToRecipients($toRecipientsArray);

@@ -4,55 +4,62 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("User-Agent", "ContosoLOBApp/1.0"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
+com.microsoft.graph.beta.informationprotection.policy.labels.extractlabel.ExtractLabelPostRequestBody extractLabelPostRequestBody = new com.microsoft.graph.beta.informationprotection.policy.labels.extractlabel.ExtractLabelPostRequestBody();
 ContentInfo contentInfo = new ContentInfo();
-contentInfo.additionalDataManager().put("format@odata.type", new JsonPrimitive("#microsoft.graph.contentFormat"));
-contentInfo.format = ContentFormat.DEFAULT;
-contentInfo.identifier = null;
-contentInfo.additionalDataManager().put("state@odata.type", new JsonPrimitive("#microsoft.graph.contentState"));
-contentInfo.state = ContentState.REST;
-contentInfo.additionalDataManager().put("metadata@odata.type", new JsonPrimitive("#Collection(microsoft.graph.keyValuePair)"));
-LinkedList<KeyValuePair> metadataList = new LinkedList<KeyValuePair>();
-KeyValuePair metadata = new KeyValuePair();
-metadata.name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled";
-metadata.value = "True";
-metadataList.add(metadata);
-KeyValuePair metadata1 = new KeyValuePair();
-metadata1.name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method";
-metadata1.value = "Standard";
-metadataList.add(metadata1);
-KeyValuePair metadata2 = new KeyValuePair();
-metadata2.name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate";
-metadata2.value = "1/1/0001 12:00:00 AM";
-metadataList.add(metadata2);
-KeyValuePair metadata3 = new KeyValuePair();
-metadata3.name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId";
-metadata3.value = "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c";
-metadataList.add(metadata3);
-KeyValuePair metadata4 = new KeyValuePair();
-metadata4.name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name";
-metadata4.value = "Top Secret";
-metadataList.add(metadata4);
-KeyValuePair metadata5 = new KeyValuePair();
-metadata5.name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits";
-metadata5.value = "0";
-metadataList.add(metadata5);
-KeyValuePair metadata6 = new KeyValuePair();
-metadata6.name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId";
-metadata6.value = "00000000-0000-0000-0000-000000000000";
-metadataList.add(metadata6);
-contentInfo.metadata = metadataList;
+contentInfo.setOdataType("#microsoft.graph.contentInfo");
+contentInfo.setFormat(ContentFormat.Default);
+contentInfo.setIdentifier(null);
+contentInfo.setState(ContentState.Rest);
+LinkedList<KeyValuePair> metadata = new LinkedList<KeyValuePair>();
+KeyValuePair keyValuePair = new KeyValuePair();
+keyValuePair.setOdataType("#microsoft.graph.keyValuePair");
+keyValuePair.setName("MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled");
+keyValuePair.setValue("True");
+metadata.add(keyValuePair);
+KeyValuePair keyValuePair1 = new KeyValuePair();
+keyValuePair1.setOdataType("#microsoft.graph.keyValuePair");
+keyValuePair1.setName("MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method");
+keyValuePair1.setValue("Standard");
+metadata.add(keyValuePair1);
+KeyValuePair keyValuePair2 = new KeyValuePair();
+keyValuePair2.setOdataType("#microsoft.graph.keyValuePair");
+keyValuePair2.setName("MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate");
+keyValuePair2.setValue("1/1/0001 12:00:00 AM");
+metadata.add(keyValuePair2);
+KeyValuePair keyValuePair3 = new KeyValuePair();
+keyValuePair3.setOdataType("#microsoft.graph.keyValuePair");
+keyValuePair3.setName("MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId");
+keyValuePair3.setValue("cfa4cf1d-a337-4481-aa99-19d8f3d63f7c");
+metadata.add(keyValuePair3);
+KeyValuePair keyValuePair4 = new KeyValuePair();
+keyValuePair4.setOdataType("#microsoft.graph.keyValuePair");
+keyValuePair4.setName("MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name");
+keyValuePair4.setValue("Top Secret");
+metadata.add(keyValuePair4);
+KeyValuePair keyValuePair5 = new KeyValuePair();
+keyValuePair5.setOdataType("#microsoft.graph.keyValuePair");
+keyValuePair5.setName("MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits");
+keyValuePair5.setValue("0");
+metadata.add(keyValuePair5);
+KeyValuePair keyValuePair6 = new KeyValuePair();
+keyValuePair6.setOdataType("#microsoft.graph.keyValuePair");
+keyValuePair6.setName("MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId");
+keyValuePair6.setValue("00000000-0000-0000-0000-000000000000");
+metadata.add(keyValuePair6);
+contentInfo.setMetadata(metadata);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("format@odata.type", "#microsoft.graph.contentFormat");
+additionalData.put("state@odata.type", "#microsoft.graph.contentState");
+additionalData.put("metadata@odata.type", "#Collection(microsoft.graph.keyValuePair)");
+contentInfo.setAdditionalData(additionalData);
+extractLabelPostRequestBody.setContentInfo(contentInfo);
+var result = graphClient.informationProtection().policy().labels().extractLabel().post(extractLabelPostRequestBody, requestConfiguration -> {
+	requestConfiguration.headers.add("User-Agent", "ContosoLOBApp/1.0");
+});
 
-graphClient.informationProtection().policy().labels()
-	.extractLabel(InformationProtectionLabelExtractLabelParameterSet
-		.newBuilder()
-		.withContentInfo(contentInfo)
-		.build())
-	.buildRequest( requestOptions )
-	.post();
 
 ```

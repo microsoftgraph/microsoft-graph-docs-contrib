@@ -441,7 +441,7 @@ how errors are returned.
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-## See also
+## Related content
 
 [Large file upload](/graph/sdks/large-file-upload)
 
