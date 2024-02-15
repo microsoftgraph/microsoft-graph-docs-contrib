@@ -12,7 +12,7 @@ com.microsoft.graph.users.item.events.item.forward.ForwardPostRequestBody forwar
 LinkedList<Recipient> toRecipients = new LinkedList<Recipient>();
 Recipient recipient = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.setAddress("danas@contoso.onmicrosoft.com");
+emailAddress.setAddress("danas@contoso.com");
 emailAddress.setName("Dana Swope");
 recipient.setEmailAddress(emailAddress);
 toRecipients.add(recipient);

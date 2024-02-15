@@ -310,7 +310,7 @@ items:
             displayName: groups
           - name: Microsoft 365 groups
             href: microsoft365-groups-concept-overview.md
-          - name: Configure group options
+          - name: Microsoft 365 group behaviors and provisioning options
             href: group-set-options.md
           - name: Microsoft 365 group settings
             href: group-directory-settings.md

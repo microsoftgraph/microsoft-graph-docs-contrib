@@ -13,7 +13,7 @@ contact.setGivenName("Pavel");
 contact.setSurname("Bansky");
 LinkedList<EmailAddress> emailAddresses = new LinkedList<EmailAddress>();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.setAddress("pavelb@fabrikam.onmicrosoft.com");
+emailAddress.setAddress("pavelb@contoso.com");
 emailAddress.setName("Pavel Bansky");
 emailAddresses.add(emailAddress);
 contact.setEmailAddresses(emailAddresses);

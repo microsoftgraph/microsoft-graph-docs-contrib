@@ -18,7 +18,7 @@ $messageBody->setContent('The new cafeteria is open.');
 $message->setBody($messageBody);
 $toRecipientsRecipient1 = new Recipient();
 $toRecipientsRecipient1EmailAddress = new EmailAddress();
-$toRecipientsRecipient1EmailAddress->setAddress('meganb@contoso.onmicrosoft.com');
+$toRecipientsRecipient1EmailAddress->setAddress('meganb@contoso.com');
 $toRecipientsRecipient1->setEmailAddress($toRecipientsRecipient1EmailAddress);
 $toRecipientsArray []= $toRecipientsRecipient1;
 $message->setToRecipients($toRecipientsArray);
