@@ -61,24 +61,53 @@ The user ID or userPrincipalName are always the signed-in user's.
 | Update profile | `PATCH /me` or `PATCH /users/{id or userPrincipalName}` | User.ReadWrite |
 | Change password | `POST /users/{id or userPrincipalName}/authentication/methods/{id}/resetPassword`  where the authentication method ID is always `28c10230-6103-485e-b985-444c60001490`. | UserAuthenticationMethod.ReadWrite |
 
-### Sensitive actions for users
-
-The following table lists the sensitive actions on user objects. All users can read the sensitive properties. However, only some administrators can perform the following sensitive actions for some users.
-
-| Sensitive action | Sensitive property name |
-| --- | --- |
-| Disable or enable users | accountEnabled |
-| Update business phone | businessPhones |
-| Update mobile phone | mobilePhone |
-| Update on-premises immutable ID | onPremisesImmutableId |
-| Update other emails | otherMails |
-| Update password profile | passwordProfile |
-| Update user principal name | userPrincipalName |
-| Delete or restore users | Not applicable |
-
 ### Who can reset passwords
 
-In the following table, the columns list the roles that can reset passwords and invalidate refresh tokens. The rows list the roles for which their password can be reset.
+In the following table, the columns list the roles that can reset passwords and invalidate refresh tokens. The rows list the roles for which their password can be reset. For example, a Password Administrator can reset the password for Directory Readers, Guest Inviter, Password Administrator, and users with no administrator role. If a user is assigned any other role, the Password Administrator cannot reset their password.
+
+The following table is for roles assigned at the scope of a tenant. For roles assigned at the scope of an administrative unit, [further restrictions apply](/entra/identity/role-based-access-control/admin-units-assign-roles#roles-that-can-be-assigned-with-administrative-unit-scope).
+
+| Role that password can be reset | Password Admin | Helpdesk Admin | Auth Admin | User Admin | Privileged Auth Admin | Global Admin |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| Auth Admin | &nbsp; | &nbsp; | :white_check_mark: | &nbsp; | :white_check_mark: | :white_check_mark: |
+| Directory Readers | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Global Admin | &nbsp; | &nbsp; | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark:\* |
+| Groups Admin | &nbsp; | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Guest Inviter | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Helpdesk Admin | &nbsp; | :white_check_mark: | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Message Center Reader | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Password Admin | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Privileged Auth Admin | &nbsp; | &nbsp; | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
+| Privileged Role Admin | &nbsp; | &nbsp; | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
+| Reports Reader | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| User<br/>(no admin role) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| User<br/>(no admin role, but member or owner of a [role-assignable group](groups-concept.md)) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
+| User with a role scoped to a [restricted management administrative unit](./admin-units-restricted-management.md) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: |
+| User Admin | &nbsp; | &nbsp; | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Usage Summary Reports Reader | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| All custom roles |  |  |  |  | :white_check_mark: | :white_check_mark: |
+
+The ability to reset a password includes the ability to update the following sensitive properties required for [self-service password reset](/entra/identity/authentication/concept-sspr-howitworks):
+> - businessPhones
+> - mobilePhone
+> - otherMails
+
+### Who can perform sensitive actions
+
+Some administrators can perform the following sensitive actions for some users. All users can read the sensitive properties.
+
+| Sensitive action                | Sensitive property name |
+|---------------------------------|-------------------------|
+| Disable or enable users         | accountEnabled          |
+| Update business phone           | businessPhones          |
+| Update mobile phone             | mobilePhone             |
+| Update on-premises immutable ID | onPremisesImmutableId   |
+| Update other emails             | otherMails              |
+| Update password profile         | passwordProfile         |
+| Update user principal name      | userPrincipalName       |
+| Delete or restore users         | Not applicable          |
+
+In the following table, the columns list the roles that can perform sensitive actions. The rows list the roles for which the sensitive action can be performed upon.
 
 The following table is for roles assigned at the scope of a tenant. For roles assigned at the scope of an administrative unit, [further restrictions apply](/entra/identity/role-based-access-control/admin-units-assign-roles#roles-that-can-be-assigned-with-administrative-unit-scope).
 
@@ -101,14 +130,6 @@ The following table is for roles assigned at the scope of a tenant. For roles as
 | User Admin | &nbsp; | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | Usage Summary Reports Reader | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | All custom roles |  |  | :white_check_mark: | :white_check_mark: |
-
-\* A Global Administrator cannot remove their own Global Administrator assignment. This is to prevent a situation where an organization has 0 Global Administrators.
-
-> [!NOTE]
-> The ability to reset a password includes the ability to update the following sensitive properties required for [self-service password reset](/entra/identity/authentication/concept-sspr-howitworks):
-> - businessPhones
-> - mobilePhone
-> - otherMails
 
 ## User and group search limitations for guest users in organizations
 
