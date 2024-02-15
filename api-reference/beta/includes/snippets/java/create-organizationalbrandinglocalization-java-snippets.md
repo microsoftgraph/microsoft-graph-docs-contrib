@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OrganizationalBrandingLocalization organizationalBrandingLocalization = new OrganizationalBrandingLocalization();
-organizationalBrandingLocalization.backgroundColor = "#00000F";
-organizationalBrandingLocalization.id = "fr-FR";
-organizationalBrandingLocalization.signInPageText = " ";
+organizationalBrandingLocalization.setBackgroundColor("#00000F");
+organizationalBrandingLocalization.setId("fr-FR");
+organizationalBrandingLocalization.setSignInPageText(" ");
+OrganizationalBrandingLocalization result = graphClient.organization().byOrganizationId("{organization-id}").branding().localizations().post(organizationalBrandingLocalization);
 
-graphClient.organization("d69179bf-f4a4-41a9-a9de-249c0f2efb1d").branding().localizations()
-	.buildRequest()
-	.post(organizationalBrandingLocalization);
 
 ```

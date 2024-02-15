@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.directoryObjects.delta.delta_request_builder import DeltaRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

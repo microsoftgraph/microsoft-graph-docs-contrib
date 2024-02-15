@@ -19,7 +19,7 @@ Intelligent Security Graph brings together security intelligence from within Mic
 
 The [identity protection risk events API](identityprotection-overview.md) gives easy access for Microsoft Entra ID P1 and P2 customers to query [risk detections made by Microsoft Entra ID Protection](/azure/active-directory/active-directory-identityprotection-graph-getting-started) and use those events in SIEM systems and security applications.
 
-## See also
+## Related content
 
 - [Why use the security API?](/graph/security-concept-overview#why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph)
 - [Use the security API to integrate with Intelligent Security Graph](security-api-overview.md)

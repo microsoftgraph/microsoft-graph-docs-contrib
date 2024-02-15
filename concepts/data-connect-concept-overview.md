@@ -150,7 +150,7 @@ Microsoft Graph Data Connect consumption charges are billed using Azure subscrip
 
 Read more about the recent [Microsoft Graph Data Connect pricing updates](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-data-connect-pricing-updates-2).
 
-## See also
+## Related content
 
 - [Build your first Microsoft Graph Data Connect application (tutorial)](data-connect-quickstart.yml)
 - [Data Connect frequently asked questions](data-connect-faq.md)

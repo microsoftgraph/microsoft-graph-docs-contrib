@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ChannelCollectionWithReferencesPage incomingChannels = graphClient.teams("893075dd-2487-4122-925f-022c42e20265").incomingChannels()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ChannelCollectionResponse result = graphClient.teams().byTeamId("{team-id}").incomingChannels().get();
+
 
 ```

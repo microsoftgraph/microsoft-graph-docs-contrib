@@ -22,13 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "authenticationmethodsroot_usersregisteredbymethod" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationmethodsroot-usersregisteredbymethod-permissions.md)]
 
-To access the API, [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) is required:
-
-* Reports Reader
-* Security Reader
-* Security Administrator
-* Global Reader
-* Global Administrator
+[!INCLUDE [rbac-reports-registration-usage-apis](../includes/rbac-for-apis/rbac-reports-registration-usage-apis.md)]
 
 ## HTTP request
 
@@ -67,7 +61,7 @@ The value `admin` includes all Microsoft Entra admin roles.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -95,10 +89,6 @@ GET https://graph.microsoft.com/v1.0/reports/authenticationMethods/usersRegister
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/authenticationmethodsroot-usersregisteredbymethod-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/authenticationmethodsroot-usersregisteredbymethod-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

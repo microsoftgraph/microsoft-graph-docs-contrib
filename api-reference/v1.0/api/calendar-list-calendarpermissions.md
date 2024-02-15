@@ -52,7 +52,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -141,8 +141,8 @@ Content-type: application/json
                 "read"
             ],
             "emailAddress": {
-                "name": "admin@M365B877719.onmicrosoft.com",
-                "address": "admin@M365B877719.onmicrosoft.com"
+                "name": "admin@contoso.com",
+                "address": "admin@contoso.com"
             }
         },
         {

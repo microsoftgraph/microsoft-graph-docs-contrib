@@ -52,7 +52,7 @@ GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 202
 ## Request headers
 | Header        | Value                     |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -202,6 +202,6 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

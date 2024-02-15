@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.create_upload_session_post_request_body import CreateUploadSessionPostRequestBody
+from msgraph.generated.models.attachment_info import AttachmentInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

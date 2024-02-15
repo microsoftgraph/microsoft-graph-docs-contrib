@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.planner().tasks("{id}")
-	.buildRequest( requestOptions )
-	.delete();
+graphClient.planner().tasks().byPlannerTaskId("{plannerTask-id}").delete(requestConfiguration -> {
+	requestConfiguration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
+
 
 ```
