@@ -18,17 +18,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2024: New and generally available
 
-Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](/graph/toolkit/upgrade).
+- Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](/graph/toolkit/upgrade).
+- Effective January 31, 2024, billing is now enabled for all Microsoft Graph Data Connect pipelines on Microsoft Fabric. Update your application in the [Microsoft Graph Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure) to use it with Fabric.
 
 ## February 2024: New in preview only
-
-### Teamwork and communications | Shift management
-
-Added the ability to [get shifts](/graph/api/team-getshifts) and [get time offs](/graph/api/team-gettimesoff) across all teams that a user is a direct member of.
 
 ### Identity and access | Directory management
 
 Updated the descriptions of the **model** and **manufacturer** properties in the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to clarify their read-only status, replacing the outdated descriptions related to Project Rome sign-ins.
+
+### Teamwork and communications | Shift management
+
+Added the ability to [get shifts](/graph/api/team-getshifts) and [get time offs](/graph/api/team-gettimesoff) across all teams that a user is a direct member of.
 
 ## January 2024: New and generally available
 
