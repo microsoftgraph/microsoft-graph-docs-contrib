@@ -39,11 +39,11 @@ Microsoft Graph supports the use of delegated and application permissions to man
 
 Some user operations can be performed by the signed-in user against their own details. For such operations, the user can grant the app the Microsoft Graph permissions to access their own details. The [User.ReadBasic.All](/graph/permissions-reference#userreadbasicall), [User.Read](/graph/permissions-reference#userread), and [User.ReadWrite](/graph/permissions-reference#userreadwrite) permissions are such permissions.
 
-Other operations, including managing details for other users, require administrative privileges that are granted through other Microsoft Graph permissions and [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). In addition, other operations are considered sensitive and only limited administrators can perform them. For more information, see [Who can reset passwords](#who-can-reset-passwords) and [Who can update sensitive attributes](#who-can-perform-sensitive-actions) sections.
+Other operations, including managing details for other users, require administrative privileges that are granted through other Microsoft Graph permissions and [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). In addition, some operations are considered sensitive and only limited administrators can perform them. For more information, see [Who can reset passwords](#who-can-reset-passwords) and [Who can update sensitive attributes](#who-can-perform-sensitive-actions) sections.
 
 ### Default user permissions in Microsoft Entra ID
 
-There are two types of users in Microsoft Entra ID - members and guest users. Initially, member users are created natively in the tenant. Guest users join the tenant through redeeming their invitation. Guest users join and access the tenant as business-to-business (B2B) collaboration guests.
+There are two types of users in Microsoft Entra ID - members and guests. Initially, member users are created natively in the tenant. Guest users join the tenant through redeeming their invitation and access the tenant as business-to-business (B2B) collaboration guests.
 
 The set of default permissions depends on whether the user is a member or a guest user. For more information about what member users and guest users can do, see [What are the default user permissions in Microsoft Entra ID?](/entra/fundamentals/users-default-permissions?context=graph/context).
 
@@ -51,7 +51,7 @@ The set of default permissions depends on whether the user is a member or a gues
 
 There are also default permissions for customers in Microsoft Entra ID for customers. The following table indicates the API operations that enable customers to manage their own profile.
 
-The user ID or userPrincipalName are always the signed-in user's.
+The user ID or userPrincipalName is always the signed-in user's.
 
 | User operation | API operation | Permissions required |
 |--|--|--|
