@@ -86,13 +86,13 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"samanthab@contoso.onmicrosoft.com",
+          "address":"samanthab@contoso.com",
           "name":"Samantha Booth"
         }
       },
       {
         "emailAddress":{
-          "address":"randiw@contoso.onmicrosoft.com",
+          "address":"randiw@contoso.com",
           "name":"Randi Welch"
         }
       }

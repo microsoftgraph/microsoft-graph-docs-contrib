@@ -28,7 +28,7 @@ event.setLocation(location);
 LinkedList<Attendee> attendees = new LinkedList<Attendee>();
 Attendee attendee = new Attendee();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.setAddress("adelev@contoso.onmicrosoft.com");
+emailAddress.setAddress("adelev@contoso.com");
 emailAddress.setName("Adele Vance");
 attendee.setEmailAddress(emailAddress);
 attendee.setType(AttendeeType.Required);

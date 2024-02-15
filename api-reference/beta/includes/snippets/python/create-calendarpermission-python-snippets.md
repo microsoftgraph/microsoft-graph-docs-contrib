@@ -13,7 +13,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 request_body = CalendarPermission(
 	email_address = EmailAddress(
 		name = "Samantha Booth",
-		address = "samanthab@adatum.onmicrosoft.com",
+		address = "samanthab@contoso.com",
 	),
 	is_inside_organization = True,
 	is_removable = True,
