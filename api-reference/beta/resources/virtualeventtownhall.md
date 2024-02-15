@@ -38,7 +38,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | displayName | String | Display name of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | id | String | Unique identifier of the town hall. Inherited from [entity](../resources/entity.md). Read-only. |
-| invitedAttendees | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Invited people to the town hall. |
+| invitedAttendees | [identity](../resources/identity.md) collection | Invited people to the town hall. The supported identites are: [communicationsUserIdentity](../resources/communicationsuseridentity.md) and [communicationsGuestIdentity](../resources/communicationsguestidentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | status | [virtualEventStatus](#virtualeventstatus-values) | Status of the town hall. Possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`. Inherited from [virtualEvent](../resources/virtualevent.md). |

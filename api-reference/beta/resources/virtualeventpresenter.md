@@ -21,6 +21,7 @@ Represents information about a presenter of a virtual event.
 | ------ | ----------- | ---------- |
 | [Create](../api/virtualevent-post-presenters.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 | [Get](../api/virtualeventpresenter-get.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [List](../api/virtualevent-list-presenters.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Get the list of all [virtualEventPresenter](../resources/virtualeventwebinar.md) of a virtual event. |
 | [Delete](../api/virtualeventpresenter-delete.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Delete a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 
 ## Properties
