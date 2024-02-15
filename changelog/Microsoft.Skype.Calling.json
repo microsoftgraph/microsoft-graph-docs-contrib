@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "b431f36d-e22d-4af7-b67c-729c779785d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "email",
+          "ChangeType": "Addition",
+          "Description": "Added the **email** property to the [communicationsGuestIdentity](https://learn.microsoft.com/en-us/graph/api/resources/communicationsGuestIdentity?view=graph-rest-beta) resource.",
+          "Target": "communicationsGuestIdentity"
+        }
+      ],
+      "Id": "b431f36d-e22d-4af7-b67c-729c779785d5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-14T23:15:19.3741207Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "60037f2b-1ce0-4e10-9b3c-f7d0129153cd",
           "ApiChange": "Permission",
           "ChangedApiName": "VirtualEvent.ReadWrite",
