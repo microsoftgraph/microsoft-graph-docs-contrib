@@ -19,7 +19,7 @@ Represents a single role's definition in a Shifts schedule.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get shiftsRoleDefinition](../api/shiftsroledefinition-get.md)|[shiftsRoleDefinition](../resources/shiftsroledefinition.md)|Read the properties and relationships of a [shiftsRoleDefinition](../resources/shiftsroledefinition.md) object.|
-|[Set shiftsRoleDefinition](../api/schedule-post-shiftsroledefinitions.md)|[shiftsRoleDefinition](../resources/shiftsroledefinition.md)|Create/Update the properties of a [shiftsRoleDefinition](../resources/shiftsroledefinition.md) object.|
+|[Set shiftsRoleDefinition](../api/shiftsroledefinition-update.md)|[shiftsRoleDefinition](../resources/shiftsroledefinition.md)|Create/Update the properties of a [shiftsRoleDefinition](../resources/shiftsroledefinition.md) object.|
 
 ## Properties
 |Property|Type|Description|
