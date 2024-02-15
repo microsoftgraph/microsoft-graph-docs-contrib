@@ -50,7 +50,7 @@ In the request URL, provide the following query parameters with values.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -158,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Get log of PSTN calls in Microsoft Graph](callrecords-callrecord-getpstncalls.md)
 * [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)

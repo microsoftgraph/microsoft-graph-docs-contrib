@@ -50,7 +50,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept | application/json |
 
 ## Request body
@@ -199,7 +199,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - For details about the People API and more examples, see [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

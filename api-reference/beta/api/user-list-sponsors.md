@@ -42,7 +42,7 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 
 | Header           | Value                                                                                          |
 | :--------------- | :--------------------------------------------------------------------------------------------- |
-| Authorization    | Bearer {token}. Required.                                                                      |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -111,7 +111,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
-} 
+}
 -->
 ```http
 HTTP/1.1 200 OK
@@ -125,8 +125,8 @@ Content-type: application/json
             "id": "263a1289-8282-4bf7-91f7-550d9bba8c02",
             "displayName": "Sara Davis",
             "jobTitle": "Finance VP",
-            "mail": "SaraD@contoso.onmicrosoft.com",
-            "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
+            "mail": "SaraD@contoso.com",
+            "userPrincipalName": "SaraD@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.group",

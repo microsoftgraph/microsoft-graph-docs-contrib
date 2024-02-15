@@ -50,7 +50,7 @@ It's available on the source property of [driveItem][item-resource] resources.
 }
 ```
 
-## See also
+## Related content
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 

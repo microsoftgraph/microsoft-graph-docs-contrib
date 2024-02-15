@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CloudPcConnection cloudPcConnection = graphClient.tenantRelationships().managedTenants().cloudPcConnections("86789ee0-e31d-4bee-98e6-6f310bd327bb")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.managedtenants.CloudPcConnection result = graphClient.tenantRelationships().managedTenants().cloudPcConnections().byCloudPcConnectionId("{cloudPcConnection-id}").get();
+
 
 ```

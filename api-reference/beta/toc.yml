@@ -6,6 +6,8 @@ items:
   - name: API changelog
     href: https://developer.microsoft.com/en-us/graph/changelog
     displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
+  - name: Quick start
+    href: https://developer.microsoft.com/en-us/graph/quick-start
   - name: Authentication and authorization
     href: /graph/auth/index?context=graph/api/beta
   - name: Permissions reference
@@ -56,6 +58,10 @@ items:
                 href: api/user-invalidateallrefreshtokens.md
               - name: Retry service provisioning
                 href: api/user-retryserviceprovisioning.md
+              - name: Delete password-based SSO credential
+                href: api/user-deletepasswordsinglesignoncredentials.md
+              - name: Get password-based SSO credentials
+                href: api/user-getpasswordsinglesignoncredentials.md
           - name: App role assignment
             href: resources/approleassignment.md
             items:
@@ -1056,11 +1062,11 @@ items:
                     href: resources/tokenlifetimepolicy.md
                     items:
                       - name: Assign
-                        href: api/application-post-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-post-tokenlifetimepolicies.md
                       - name: List
-                        href: api/application-list-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-list-tokenlifetimepolicies.md
                       - name: Remove
-                        href: api/application-delete-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-delete-tokenlifetimepolicies.md
               - name: Single sign on
                 items:
                   - name: Create password single sign on credentials
@@ -1919,10 +1925,8 @@ items:
                 items:
                   - name: Cloud PC reports
                     href: resources/cloudpcreports.md
-                  - name: Get remote action status reports
-                    href: api/cloudpcreports-getactionstatusreports.md
-                  - name: Get raw remote connection reports
-                    href: api/cloudpcreports-getrawremoteconnectionreports.md
+                  - name: Get Cloud PC recommendation reports
+                    href: api/cloudpcreports-getcloudpcrecommendationreports.md
                   - name: Get connection quality reports
                     href: api/cloudpcreports-getconnectionqualityreports.md
                   - name: Get daily aggregated remote connection reports
@@ -1931,16 +1935,20 @@ items:
                     href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
                   - name: Get inaccessible Cloud PC reports
                     href: api/cloudpcreports-getinaccessiblecloudpcreports.md
-                  - name: Get real time remote connection latency
+                  - name: Get raw remote connection reports
+                    href: api/cloudpcreports-getrawremoteconnectionreports.md
+                  - name: Get real-time remote connection latency
                     href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
-                  - name: Get real time remote connection status
-                    href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+                  - name: Get real-time remote connection status
+                    href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md                    
+                  - name: Get remote action status reports
+                    href: api/cloudpcreports-getactionstatusreports.md
                   - name: Get shared-use license usage reports (deprecated)
                     href: api/cloudpcreports-getshareduselicenseusagereport.md
-                  - name: Get Windows 365 Frontline reports
-                    href: api/cloudpcreports-getfrontlinereport.md
                   - name: Get total aggregated remote connection reports
                     href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+                  - name: Get Windows 365 Frontline reports
+                    href: api/cloudpcreports-getfrontlinereport.md
                   - name: Export to download report
                     items:
                       - name: Cloud PC export job
@@ -11663,6 +11671,32 @@ items:
                     href: api/domain-verify.md
                   - name: Promote domain
                     href: api/domain-promote.md
+              - name: External user profiles
+                items:
+                - name: External user profile
+                  href: resources/externaluserprofile.md
+                  items:
+                  - name: List
+                    href: api/directory-list-externaluserprofiles.md
+                  - name: Get
+                    href: api/externaluserprofile-get.md
+                  - name: Update
+                    href: api/externaluserprofile-update.md
+                  - name: Delete
+                    href: api/directory-delete-externaluserprofiles.md
+                - name: Pending external user profile
+                  href: resources/pendingexternaluserprofile.md
+                  items:
+                  - name: List
+                    href: api/directory-list-pendingexternaluserprofile.md
+                  - name: Get
+                    href: api/pendingexternaluserprofile-get.md
+                  - name: Create
+                    href: api/directory-post-pendingexternaluserprofile.md
+                  - name: Update
+                    href: api/pendingexternaluserprofile-update.md
+                  - name: Delete
+                    href: api/directory-delete-pendingexternaluserprofiles.md
               - name: Feature rollout policy
                 href: resources/featurerolloutpolicy.md
                 items:
@@ -12224,8 +12258,12 @@ items:
                     href: resources/accesspackageassignmentrequest.md
                     items:
                       - name: List
-                        href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
+                        href: api/entitlementmanagement-list-assignmentrequests.md
                       - name: Create
+                        href: api/entitlementmanagement-post-assignmentrequests.md
+                      - name: List (deprecated)
+                        href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
+                      - name: Create (deprecated)
                         href: api/entitlementmanagement-post-accesspackageassignmentrequests.md
                       - name: Get
                         href: api/accesspackageassignmentrequest-get.md
@@ -15893,8 +15931,8 @@ items:
                     - name: Relying party detailed summary
                       href: resources/relyingpartydetailedsummary.md
                       items:
-                        - name: List
-                          href: api/relyingpartydetailedsummary-list.md
+                        - name: Get relying party detailed dummary
+                          href: api/reportroot-getrelyingpartydetailedsummary.md
                 - name: Application credential activity
                   href: resources/appcredentialsigninactivity.md
                   items:
@@ -16362,7 +16400,7 @@ items:
                     href: resources/attacksimulationtrainingusercoverage.md
                   - name: Get training coverage for users
                     href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
-          - name: Partner billing reports (preview)
+          - name: Partner billing reports
             items:
               - name: Overview
                 href: resources/partners-billing-api-overview.md
@@ -16471,6 +16509,18 @@ items:
                 href: resources/security-huntingrowresult.md
               - name: Single property schema
                 href: resources/security-singlepropertyschema.md
+          - name: Custom detection rules
+            items:
+              - name: List custom detection rules
+                href: api/security-detectionrule-list.md
+              - name: Get custom detection rule
+                href: api/security-detectionrule-get.md
+              - name: Create custom detection rule
+                href: api/security-detectionrule-post-detectionRules.md
+              - name: Update custom detection rule
+                href: api/security-detectionrule-update.md
+              - name: Delete custom detection rule
+                href: api/security-detectionrule-delete.md
           - name: Alerts and incidents
             items:
               - name: Alert
@@ -16611,6 +16661,24 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: List
                     href: api/simulationautomation-list-runs.md
+          - name: Audit log query (preview)
+            items:
+              - name: Audit log query
+                href: resources/security-auditlogquery.md
+                items: 
+                  - name: List
+                    href: api/security-auditcoreroot-list-auditlogqueries.md
+                  - name: Create
+                    href: api/security-auditcoreroot-post-auditlogqueries.md
+                  - name: Get
+                    href: api/security-auditlogquery-get.md
+                  - name: List audit log records
+                    href: api/security-auditlogquery-list-records.md
+              - name: Audit log record
+                href: resources/security-auditlogrecord.md
+                items:
+                  - name: List
+                    href: api/security-auditlogquery-list-records.md
           - name: eDiscovery (preview)
             items:
               - name: Case
@@ -18045,7 +18113,7 @@ items:
                       - name: Call record
                         href: resources/callrecords-callrecord.md
                       - name: List
-                        href: api/callrecords-callrecord-list.md
+                        href: api/callrecords-cloudcommunications-list-callrecords.md
                       - name: Get
                         href: api/callrecords-callrecord-get.md
                   - name: Direct routing calls
@@ -18059,7 +18127,7 @@ items:
                       - name: Participant
                         href: resources/callrecords-participant.md
                       - name: List
-                        href: api/callrecords-callrecord-list-participants.md
+                        href: api/callrecords-callrecord-list-participants_v2.md
                   - name: PSTN blocked users log row
                     items:
                       - name: PSTN blocked users log row
@@ -18238,7 +18306,7 @@ items:
                     href: resources/virtualeventsession.md
                     items:
                       - name: List
-                        href: api/virtualeventsession-list.md
+                        href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
           - name: Devices (preview)
@@ -18599,6 +18667,10 @@ items:
                     href: api/team-list-permissiongrants.md
                   - name: Get open shifts across all joined teams
                     href: api/team-getopenshifts.md
+                  - name: Get shifts across all joined teams
+                    href: api/team-getshifts.md
+                  - name: Get time offs across all joined teams
+                    href: api/team-gettimesoff.md
                   - name: Team template
                     items:
                       - name: Team template
@@ -18743,6 +18815,8 @@ items:
                     href: api/shift-delete.md
                   - name: Stage for deletion
                     href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get shifts across all joined teams
+                    href: api/team-getshifts.md
               - name: Shift preferences
                 href: resources/shiftpreferences.md
                 items:
@@ -18801,6 +18875,8 @@ items:
                     href: api/timeoff-delete.md
                   - name: Stage for deletion
                     href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get times off across all joined teams
+                    href: api/team-gettimesoff.md
               - name: Time off reason
                 href: resources/timeoffreason.md
                 items:

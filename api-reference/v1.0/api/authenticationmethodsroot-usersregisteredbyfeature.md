@@ -61,7 +61,7 @@ The value `admin` includes all Microsoft Entra admin roles.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -89,10 +89,6 @@ GET https://graph.microsoft.com/v1.0/reports/authenticationMethods/usersRegister
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/authenticationmethodsroot-usersregisteredbyfeature-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/authenticationmethodsroot-usersregisteredbyfeature-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

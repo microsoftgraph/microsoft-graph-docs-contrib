@@ -32,7 +32,7 @@ PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -128,7 +128,7 @@ Content-type: application/json
   "tenantId": "f2eea028-3898-4e55-b611-2e2d960f7512"
 }
 ```
-## See also
+## Related content
 
 - [Update member's role in a team](team-update-members.md)
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

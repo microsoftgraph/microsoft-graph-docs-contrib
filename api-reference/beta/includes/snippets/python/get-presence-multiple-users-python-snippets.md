@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.get_presences_by_user_id_post_request_body import GetPresencesByUserIdPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

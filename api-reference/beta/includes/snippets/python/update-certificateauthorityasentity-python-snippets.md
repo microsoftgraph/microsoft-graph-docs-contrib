@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.certificate_authority_as_entity import CertificateAuthorityAsEntity
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -35,7 +35,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Request body
@@ -81,7 +81,7 @@ Content-type: application/json
           {
              "emailAddress": {
                 "name": "Alex Wilbur",
-                "address": "AlexW@contoso.onmicrosoft.com"
+                "address": "AlexW@contoso.com"
               }
            }
         ],
@@ -154,7 +154,7 @@ Content-type: application/json
         {
           "emailAddress":{
             "name":"Alex Wilbur",
-            "address":"AlexW@contoso.onmicrosoft.com"
+            "address":"AlexW@contoso.com"
           }
         }
       ]

@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.start_hold_music_post_request_body import StartHoldMusicPostRequestBody
+from msgraph.generated.models.media_prompt import MediaPrompt
+from msgraph.generated.models.media_info import MediaInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -41,7 +41,7 @@ The available `$expand` options for this method are: `categories`, `resources`, 
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 | Prefer        | include-unknown-enum-members. Optional. |
 

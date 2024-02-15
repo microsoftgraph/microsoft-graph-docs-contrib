@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LandingPageCollectionPage landingPages = graphClient.security().attackSimulation().landingPages()
-	.buildRequest()
-	.filter("source eq 'tenant'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+LandingPageCollectionResponse result = graphClient.security().attackSimulation().landingPages().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "source eq 'tenant'";
+});
+
 
 ```
