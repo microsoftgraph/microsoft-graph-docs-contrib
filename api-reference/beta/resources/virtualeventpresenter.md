@@ -40,11 +40,7 @@ Here's a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.virtualEventPresenter",
   "email": "String",
   "id": "String (identifier)",
-  "identity": {
-    "@odata.type": "microsoft.graph.communicationsUserIdentity"
-  },
-  "presenterDetails": {
-    "@odata.type": "microsoft.graph.virtualEventPresenterDetails"
-  }
+  "identity": {"@odata.type": "microsoft.graph.identity"},
+  "presenterDetails": {"@odata.type": "microsoft.graph.virtualEventPresenterDetails"}
 }
 ```
