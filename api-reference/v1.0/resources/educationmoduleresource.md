@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A wrapper object that stores the resources associated with a module. The student won't be able to update this resource. This is a handout from the teacher to the student with nothing to be turned in.
+A wrapper object that stores the resources associated with a module. The student isn't able to update this resource. This resource is a handout from the teacher to the student with nothing to be turned in.
 
 ## Methods
 
@@ -28,15 +28,14 @@ A wrapper object that stores the resources associated with a module. The student
 | Property | Type                                      | Description                                                |
 | :------- | :---------------------------------------- | :--------------------------------------------------------- |
 | id       | String                                    | ID of this resource. Read-only.                            |
-| resource | [educationResource](educationresource.md) | Resource object that has been associated with this module. |
+| resource | [educationResource](educationresource.md) | Resource object that is with this module. |
 
 ## Relationships
 
 None.
 
 ## JSON representation
-
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

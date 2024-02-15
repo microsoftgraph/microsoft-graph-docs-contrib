@@ -50,11 +50,9 @@ If successful, this method returns a `200 Ok` response code and an [educationMod
 
 ## Example
 
-The following example shows how to call this API.
-
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -68,7 +66,7 @@ POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-
 
 ### Response
 
-The following is an example of a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

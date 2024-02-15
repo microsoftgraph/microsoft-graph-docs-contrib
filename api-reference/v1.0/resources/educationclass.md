@@ -37,7 +37,7 @@ Inherits from [entity](../resources/entity.md).
 | displayName          | String                                         | Name of the class.                                                 |
 | externalId           | String                                         | ID of the class from the syncing system.                           |
 | externalSource       | educationExternalSource                        | How this class was created. Possible values are: `sis`, `manual`.  |
-| externalSourceDetail | String                                         | The name of the external source this resources was generated from. |
+| externalSourceDetail | String                                         | The name of the external source this resource was generated from. |
 | externalName         | String                                         | Name of the class in the syncing system.                           |
 | grade                | String                                         | Grade level of the class.                                          |
 | id                   | String                                         | Object identifier. Inherited from [entity](../resources/entity.md). |
@@ -60,7 +60,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Create a new [module](../resources/educationmodule.md) in a [class](../resources/educationclass.md).
 
-Only teachers in a class can create a module. Modules start in the `draft` state, which means that students won't see the modules until publication.
+Only teachers in a class can create a module. Modules start in the `draft` state, which means that students can't see the modules until publication.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

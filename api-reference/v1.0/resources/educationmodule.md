@@ -1,6 +1,6 @@
 ---
 title: "educationModule resource type"
-description: "Represents a group or individual learning resources which are then arranged in a neat, systematic manner."
+description: "Represents group or individual learning resources."
 ms.localizationpriority: medium
 author: "v-rmanda"
 ms.prod: "education"
@@ -15,7 +15,7 @@ A module is associated with a [class](../resources/educationclass.md). Represent
 
 Only teachers or team owners can create modules. Modules contain read-only learning resources and assignments the teacher wants the student to complete.
 
-When a **module** is created, it is in a `draft` state. Students can't see the **module** until it is published. You can change the status of a **module** by using the [publish](../api/educationmodule-publish.md) action. You can't use a PATCH request to change the **module** status.
+When a **module** is created, it is in a `draft` state. Students can't see the **module** until it's published. You can change the status of a **module** by using the [publish](../api/educationmodule-publish.md) action. You can't use a PATCH request to change the **module** status.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 | [Pin](../api/educationmodule-pin.md)                                             | [educationModule](educationmodule.md)            | Pin an **educationModule** object.                                                           |
 | [Unpin](../api/educationmodule-unpin.md)                                         | [educationModule](educationmodule.md)            | Unpin an **educationModule** object.                                                         |
 | [Publish](../api/educationmodule-publish.md)                                     | [educationModule](educationmodule.md)            | Change the state of an **educationModule** object from draft to published.                   |
-| [Set up module resources folder](../api/educationmodule-setupresourcesfolder.md) | [educationModule](educationmodule.md)            | Create a SharePoint folder (under pre-defined location) to upload files as module resources. |
+| [Set up module resources folder](../api/educationmodule-setupresourcesfolder.md) | [educationModule](educationmodule.md)            | Create a SharePoint folder (under predefined location) to upload files as module resources. |
 
 ## Properties
 
@@ -56,7 +56,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

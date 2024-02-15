@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Update an [educationModule](../resources/educationmodule.md) object in a [class](../resources/educationclass.md).
 
-Only teachers in the class can perform this operation. Note that you can't use a PATCH request to change the status of a module. Use the [publish](../api/educationmodule-publish.md) action to change the module status.
+Only teachers in the class can perform this operation. You can't use a PATCH request to change the status of a module. Use the [publish](../api/educationmodule-publish.md) action to change the module status.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -42,7 +42,7 @@ PATCH /education/classes/{class-id}/modules/{module-id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property    | Type   | Description                |
 | :---------- | :----- | :------------------------- |

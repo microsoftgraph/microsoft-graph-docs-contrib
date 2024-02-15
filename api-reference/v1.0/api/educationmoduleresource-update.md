@@ -42,7 +42,7 @@ PATCH /education/classes/{class-id}/modules/{module-id}/resources/{resource-id}
 
 ## Request body
 
-In the request body, supply the new value for the **displayName** field that will be updated.
+In the request body, supply the new value for the **displayName** field.
 
 ## Response
 
