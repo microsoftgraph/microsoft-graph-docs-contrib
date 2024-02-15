@@ -187,12 +187,12 @@ Content-type: application/json
       "displayName": "Adele Vance",
       "givenName": "Adele",
       "jobTitle": "Retail Manager",
-      "mail": "AdeleV@contoso.onmicrosoft.com",
+      "mail": "AdeleV@contoso.com",
       "mobilePhone": "+1 425 555 0109",
       "officeLocation": "18/2111",
       "preferredLanguage": "en-US",
       "surname": "Vance",
-      "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+      "userPrincipalName": "AdeleV@contoso.com",
       "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     },
     {
@@ -477,7 +477,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 - [Get incremental changes for groups](/graph/delta-query-groups).

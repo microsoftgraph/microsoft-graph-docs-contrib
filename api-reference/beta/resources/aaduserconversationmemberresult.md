@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [Add members in bulk to team](../api/conversationmembers-add.md)
 

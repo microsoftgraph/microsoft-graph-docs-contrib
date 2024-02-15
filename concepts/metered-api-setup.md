@@ -174,7 +174,7 @@ After the subscription billing cycle runs, typically on the 5th day of the month
 
 The invoice will include details that allow you to understand the amount of usage your application generates, and for multi-tenant applications, where that usage is happening. For details, see [Understand your Azure invoice](/azure/cost-management-billing/understand/understand-invoice).
 
-## See also
+## Related content
 
 - [Overview of metered APIs and services in Microsoft Graph](/graph/metered-api-overview)
 - [Metered APIs and services in Microsoft Graph](/graph/metered-api-list)

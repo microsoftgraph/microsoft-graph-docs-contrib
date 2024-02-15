@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 LocalizedNotificationMessage localizedNotificationMessage = new LocalizedNotificationMessage();
-localizedNotificationMessage.locale = "Locale value";
-localizedNotificationMessage.subject = "Subject value";
-localizedNotificationMessage.messageTemplate = "Message Template value";
-localizedNotificationMessage.isDefault = true;
+localizedNotificationMessage.setOdataType("#microsoft.graph.localizedNotificationMessage");
+localizedNotificationMessage.setLocale("Locale value");
+localizedNotificationMessage.setSubject("Subject value");
+localizedNotificationMessage.setMessageTemplate("Message Template value");
+localizedNotificationMessage.setIsDefault(true);
+LocalizedNotificationMessage result = graphClient.deviceManagement().notificationMessageTemplates().byNotificationMessageTemplateId("{notificationMessageTemplate-id}").localizedNotificationMessages().post(localizedNotificationMessage);
 
-graphClient.deviceManagement().notificationMessageTemplates("{notificationMessageTemplateId}").localizedNotificationMessages()
-	.buildRequest()
-	.post(localizedNotificationMessage);
 
 ```

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.directory.federationConfigurations.item.identity_provider_base_item_request_builder import IdentityProviderBaseItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

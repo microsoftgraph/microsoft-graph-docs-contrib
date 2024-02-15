@@ -83,6 +83,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/bookingbusinesspostbookingbusiness-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/bookingbusinesspostbookingbusiness-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusinesspostbookingbusiness-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -114,7 +118,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses/$entity",
-    "id":"fourthcoffee@contoso.onmicrosoft.com",
+    "id":"fourthcoffee@contoso.com",
     "displayName":"Fourth Coffee",
     "businessType":"",
     "phone":"206-555-0100",

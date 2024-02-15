@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/appointments/{id}/cancel
+POST /solutions/bookingBusinesses/{id}/appointments/{id}/cancel
 ```
 
 ## Request headers
@@ -60,10 +60,10 @@ Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "bookingappointment_cancel",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "AAMkADKoAAA="]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "AAMkADKoAAA="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel
+POST https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.com/appointments/AAMkADKoAAA=/cancel
 Content-type: application/json
 
 {
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/bookingappointment-cancel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingappointment-cancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

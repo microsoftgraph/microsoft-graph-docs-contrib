@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ```http
-GET /bookingBusinesses/{bookingBusinessesId}/customQuestions
+GET /solutions/bookingbusinesses/{bookingBusinessesId}/customQuestions
 ```
 
 ## Optional query parameters
@@ -62,12 +62,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 <!-- {
   "blockType": "request",
   "name": "list_bookingcustomquestion",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customQuestions
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customQuestions
 ```
 
 # [C#](#tab/csharp)
@@ -92,10 +92,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-bookingcustomquestion-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-bookingcustomquestion-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -50,7 +50,7 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 
 [query](../api/search-query.md)
 
