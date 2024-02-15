@@ -40,9 +40,9 @@ Inherits from [entity](../resources/entity.md).
 
 ## About the *payloadType* property
 ### Introduction
-The payloadType defines the structure of a [windowsSettingInstance](./windowssettinginstance.md) payload. There are numerous payloadTypes in Windows which represent distinct setting structures used by different experiences in the operating system. As Windows evolves, more payloadTypes are created and onboarded to the cloud. 
+The *payloadType* defines the structure of a [windowsSettingInstance](./windowssettinginstance.md) payload. There are numerous payloadTypes in Windows which represent distinct setting structures used by different experiences in the operating system. As Windows evolves, more payloadTypes are created and onboarded to the cloud. Querying the API and exploring the settings available is the best way to learn about the various payloadTypes, but users and admins have control over which settings are uploaded to the cloud and most components do not upload default settings that the user has not customized.
 
-Following is an example of a windowsSetting from the API.
+Following is an example of a settingsInstance from the API.
 
 ```json
 {
@@ -60,8 +60,10 @@ Following is an example of a windowsSetting from the API.
     ]
 }
 ```
-The *payload* is a base64 encoded JSON string, which has the properties of given *payloadType* `windows.data.fileexplorerclassic.advancedsettings`. The decoded structure of the *payload* is shown below for example.
 
+In this example, the payloadType `windows.data.fileexplorerclassic.advancedsettings` represents some of the settings that the File Explorer backs up to the cloud. The base64 payload can be decoded to a UTF-8 string to see the JSON representation of this object.
+
+**Payload decoded:**
 ```json
 {
     "migratedFromSSF": false,
@@ -81,12 +83,20 @@ The *payload* is a base64 encoded JSON string, which has the properties of given
     "showCompColor": false
 }
 ```
-### Notable PayloadTypes
 
-There are several notable **payloadTypes** available in Windows that represent distinct setting structures used by distinguished features and experiences in the operating system. To learn more about them, see the list below.
+It is common for the properties in the object to be a subset of those available in the component’s user experience as component owners decide which settings provide the most value when uploaded to the cloud.
 
-#### **Device Profile**: 
-This payloadType represents settings related to device profiles. A device profile contains additional information about the device on which the Windows operation system is hosted. If a user has multiple Windows devices, then multiple instances will exist for the user under the device profile **windowsSetting**. An example of a device profile **windowsSetting** is,
+### PayloadTypes of particular interest
+
+Some payloadTypes have a special role in the Windows settings backup process.
+
+#### windows.data.platform.backuprestore.deviceprofile 
+Rather than being a setting the user has applied, this type records information about devices that have opted into settings backup features. Two properties in this object are useful for understanding the rest of the settings: deviceDisplayName and profileId. 
+
+- *deviceDisplayName* is the name of the computer which can be seen on the Windows settings system page.
+- *profileId* is an identifier used to link WindowsSettings items to the device that uploaded them. This property corresponds to **windowsSetting.windowsDeviceId** and can be used as a filter to get settings for a specific device from [List Windows settings stored in cloud](../api/usersettings-list-windows.md) API.
+
+Following is an example of this setting.
 
 ```json
 {
@@ -104,7 +114,7 @@ This payloadType represents settings related to device profiles. A device profil
     ]
 }
 ```
-The payload after decoding is shown below for example.
+**Payload decoded:**
 
 ```json
 {
@@ -120,22 +130,9 @@ The payload after decoding is shown below for example.
 }
 ```
 
-Two notable properties in the decoded payload are *deviceDisplayName* and *profileId*. The *deviceDisplayName* is the name of the device and the *profileId* is the unique identifier of it.
+#### windows.data.platform.settingsbackup.backupunitstore
 
-The significance of the *profileId* is that it correlates with the *windowsDeviceId* property of any **windowsSetting** of type `backup`. This helps to identify the device that a **windowsSetting** of type `backup` is associated with. 
-
-Following are the step by step instructions on how to find the corresponding device for a given *windowsDeviceId*:
-
-- Use the [List Windows settings stored in cloud](../api/usersettings-list-windows.md) API to list all the settings for the user.
-- Find the device profile related setting. As shown in the example above, the *payloadType* property of device profile setting will be `windows.data.platform.backuprestore.deviceprofile`.
-- Decode the *payload* of each setting instance to get the *profileIds* and corresponding *deviceDisplayNames*.
-- Find the *profileId* matching with the *windowsDeviceId* of the **windowsSetting** of type `backup` to identify the corresponding device.
-
-#### **Service Driven Onboarding**: 
-This payloadType represents settings related to service-driven onboarding.
-
-**TODO**
-
+Backupunitstore payloadType settings are unique in that the actual settings value is a blob in the data property. This is because backupunitstore settings are collected directly from the Windows registry, on disk files, or other at rest locations throughout Windows. These settings were not designed to be interoperable with experiences besides the components that created them, but they are included in this API for the sake of completeness.
 
 
 ## Relationships
@@ -156,10 +153,19 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsSetting",
-  "id": "String (identifier)",
-  "windowsDeviceId": "String",
-  "settingType": "String",
-  "payloadType": "String"
+  "id": "{67585f9f-ee4b-4dd8-808e-d88375d66ef7}$windows.data.apps.devicemetadata",
+  "windowsDeviceId": "67585f9f-ee4b-4dd8-808e-d88375d66ef7",
+  "settingType": "backup",
+  "payloadType": "windows.data.apps.devicemetadata",
+  "instances": [
+            {
+                "id": "14b50191-10e5-4da5-9099-8c909b8458bd",
+                "payload": "VGhpcyBpcyBqdXN0IGFuIGV4YW1wbGUh",
+                "lastModifiedDateTime": "2024-10-31T23:30:41Z",
+                "createdDateTime": "2024-02-12T19:34:35.223Z",
+                "expirationDateTime": "2034-02-09T19:34:33.771Z"
+            }
+        ]
 }
 ```
 
