@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GetSchedulePostRequestBody();
-$requestBody->setSchedules(['adelev@contoso.onmicrosoft.com', 'meganb@contoso.onmicrosoft.com', 	]);
+$requestBody->setSchedules(['adelev@contoso.com', 'meganb@contoso.com', 	]);
 $startTime = new DateTimeTimeZone();
 $startTime->setDateTime('2019-03-15T09:00:00');
 $startTime->setTimeZone('Pacific Standard Time');
