@@ -22,7 +22,7 @@ LinkedList<Recipient> newParticipants = new LinkedList<Recipient>();
 Recipient recipient = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
 emailAddress.setName("Adele Vance");
-emailAddress.setAddress("AdeleV@contoso.onmicrosoft.com");
+emailAddress.setAddress("AdeleV@contoso.com");
 recipient.setEmailAddress(emailAddress);
 newParticipants.add(recipient);
 post.setNewParticipants(newParticipants);

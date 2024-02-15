@@ -1725,7 +1725,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Cards reference](/microsoftteams/platform/concepts/cards/cards-reference)
 

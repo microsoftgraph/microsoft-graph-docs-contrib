@@ -13,10 +13,10 @@ LinkedList<TypedEmailAddress> emailAddresses = new LinkedList<TypedEmailAddress>
 TypedEmailAddress typedEmailAddress = new TypedEmailAddress();
 typedEmailAddress.setType(EmailType.Personal);
 typedEmailAddress.setName("Pavel Bansky");
-typedEmailAddress.setAddress("pavelb@adatum.onmicrosoft.com");
+typedEmailAddress.setAddress("pavelb@contoso.com");
 emailAddresses.add(typedEmailAddress);
 TypedEmailAddress typedEmailAddress1 = new TypedEmailAddress();
-typedEmailAddress1.setAddress("pavelb@fabrikam.onmicrosoft.com");
+typedEmailAddress1.setAddress("pavelb@contoso.com");
 typedEmailAddress1.setName("Pavel Bansky");
 typedEmailAddress1.setType(EmailType.Other);
 typedEmailAddress1.setOtherLabel("Volunteer work");
