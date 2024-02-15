@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.android_managed_app_protection import AndroidManagedAppProtection
+from msgraph.generated.models.managed_app_data_storage_location import ManagedAppDataStorageLocation
 
 graph_client = GraphServiceClient(credentials, scopes)
 

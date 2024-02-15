@@ -148,7 +148,7 @@ In addition, for delegated scenarios, the calling principal needs one of the fol
 Only the approver of the request can call the `/approval` and `/approvalStep` endpoints. They don't have to be assigned any Microsoft Entra roles.
 
 
-## See also
+## Related content
 
 - [Microsoft Entra security operations for Privileged Identity Management](/azure/active-directory/architecture/security-operations-privileged-identity-management?source=docs#privileged-identity-management-alerts) in the Microsoft Entra architecture center
 

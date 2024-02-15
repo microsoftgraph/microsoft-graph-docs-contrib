@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/organization
 ---
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -185,7 +185,7 @@ Content-type: application/json
                     "capabilities": "Email, OfficeCommunicationsOnline",
                     "isDefault": true,
                     "isInitial": true,
-                    "name": "Contoso.onmicrosoft.com",
+                    "name": "contoso.com",
                     "type": "Managed"
                 }
             ]

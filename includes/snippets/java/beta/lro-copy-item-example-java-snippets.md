@@ -4,20 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.drives.item.items.item.copy.CopyPostRequestBody copyPostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.copy.CopyPostRequestBody();
 ItemReference parentReference = new ItemReference();
-parentReference.path = "/drive/root:/Documents";
+parentReference.setPath("/drive/root:/Documents");
+copyPostRequestBody.setParentReference(parentReference);
+copyPostRequestBody.setName("Copy of LargeFolder1");
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").copy().post(copyPostRequestBody);
 
-String name = "Copy of LargeFolder1";
-
-graphClient.me().drive().items("{folder-item-id}")
-	.copy(DriveItemCopyParameterSet
-		.newBuilder()
-		.withName(name)
-		.withParentReference(parentReference)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

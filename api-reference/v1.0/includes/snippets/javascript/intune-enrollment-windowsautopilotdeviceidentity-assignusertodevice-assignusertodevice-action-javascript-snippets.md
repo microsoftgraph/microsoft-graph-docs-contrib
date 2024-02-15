@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const assignUserToDevice = Content-type: application/json
-Content-length: 113
-
-{
+const assignUserToDevice = {
   userPrincipalName: 'User Principal Name value',
   addressableUserName: 'Addressable User Name value'
 };

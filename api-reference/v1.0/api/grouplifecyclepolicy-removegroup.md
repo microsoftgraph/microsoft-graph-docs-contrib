@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Removes a group from a lifecycle policy.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
