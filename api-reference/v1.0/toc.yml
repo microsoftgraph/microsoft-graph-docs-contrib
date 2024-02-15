@@ -1259,6 +1259,15 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Delete a history item
                     href: api/projectrome-delete-historyitem.md
+          - name: Roaming data
+            items:
+              - name: Cloud clipboard
+                href: resources/cloudclipboarditem.md
+                items:
+                  - name: List cloud clipboards
+                    href: api/cloudclipboardroot-list-items.md
+                  - name: Get cloud clipboard
+                    href: api/cloudclipboarditem-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:

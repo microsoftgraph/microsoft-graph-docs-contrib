@@ -1,0 +1,48 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudClipboardItemPayload",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudClipboardItemPayload](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItemPayload?view=graph-rest-1.0) resource.",
+          "Target": "cloudClipboardItemPayload"
+        },
+        {
+          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudClipboardItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudClipboardItem](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItem?view=graph-rest-1.0) resource.",
+          "Target": "cloudClipboardItem"
+        }
+      ],
+      "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-02-15T07:50:07.082547Z",
+      "WorkloadArea": "Cross-device experiences",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b43e8afa-5f09-45a1-ac73-6df6403e6a20",
+          "ApiChange": "Resource",
+          "ChangedApiName": "user",
+          "ChangeType": "Addition",
+          "Description": "Added the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "b43e8afa-5f09-45a1-ac73-6df6403e6a20",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-02-15T07:50:07.0828002Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }
+  ]
+}
