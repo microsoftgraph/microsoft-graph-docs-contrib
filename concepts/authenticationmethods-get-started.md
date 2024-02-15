@@ -122,7 +122,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40M365x56085806.OnMicrosoft.com')/authentication/methods",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40contoso.com')/authentication/methods",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET users('<key>')/authentication/methods?$select=id",
     "value": [
         {
@@ -201,7 +201,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40M365x56085806.OnMicrosoft.com')/authentication/phoneMethods/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40contoso.com')/authentication/phoneMethods/$entity",
     "id": "3179e48a-750b-4051-897c-87b9720928f7",
     "phoneNumber": "+1 2065555555",
     "phoneType": "mobile",
@@ -270,7 +270,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40M365x56085806.OnMicrosoft.com')/authentication/methods",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40contoso.com')/authentication/methods",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET users('<key>')/authentication/methods?$select=id",
     "value": [
         {
