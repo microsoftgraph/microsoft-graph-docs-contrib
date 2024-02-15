@@ -16,9 +16,9 @@ Represents information about the type of SMS notification.
 ## Members
 The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
 
-|Member|Value|Description|
-|:---|:---|:---|
-| confirmation |0|Confirmation SMS message type. |
-| reschedule |1|Reschedule SMS message type. |
-| cancellation |2|Cancellation SMS message type. |
-| unknownFutureValue |10|Evolvable enumeration sentinel value. Do not use. |
+|Member|Description|
+|:---|:---|
+| confirmation |Confirmation SMS message type. |
+| reschedule |Reschedule SMS message type. |
+| cancellation |Cancellation SMS message type. |
+| unknownFutureValue |Evolvable enumeration sentinel value. Do not use. |
