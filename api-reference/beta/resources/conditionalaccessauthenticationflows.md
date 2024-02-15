@@ -28,14 +28,13 @@ None.
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.conditionalAccessAuthenticationFlows"
-}
--->
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.conditionalAccessAuthenticationFlows",
-  "transferMethods": "String"
+  "transferMethods": "String",
 }
 ```
