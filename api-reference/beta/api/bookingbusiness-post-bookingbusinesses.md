@@ -97,10 +97,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-bookingbusiness-from-bookingbusinesses-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-bookingbusiness-from-bookingbusinesses-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-bookingbusiness-from-bookingbusinesses-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -121,7 +117,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses/$entity",
-    "id":"fourthcoffee@contoso.onmicrosoft.com",
+    "id":"fourthcoffee@contoso.com",
     "displayName":"Fourth Coffee",
     "businessType":"",
     "phone":"206-555-0100",

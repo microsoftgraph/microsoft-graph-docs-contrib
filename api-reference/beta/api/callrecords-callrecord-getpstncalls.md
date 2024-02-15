@@ -159,7 +159,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-## See also
+## Related content
 
 - [Get aggregated report of the audio conferencing dial-out](callrecords-callrecord-getpstnonlinemeetingdialoutreport.md)
 - [Get log of users who are blocked from making PSTN calls](callrecords-callrecord-getpstnblockeduserslog.md)

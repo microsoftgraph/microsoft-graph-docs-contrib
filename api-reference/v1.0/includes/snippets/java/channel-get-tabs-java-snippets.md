@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TeamsTab teamsTab = graphClient.teams("{id}").channels("{id}").tabs("{id}")
-	.buildRequest()
-	.expand("teamsApp")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+TeamsTab result = graphClient.teams().byTeamId("{team-id}").channels().byChannelId("{channel-id}").tabs().byTeamsTabId("{teamsTab-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"teamsApp"};
+});
+
 
 ```

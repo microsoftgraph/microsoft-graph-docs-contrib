@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Fido2AuthenticationMethodConfiguration authenticationMethodConfiguration = new Fido2AuthenticationMethodConfiguration();
-authenticationMethodConfiguration.state = AuthenticationMethodState.ENABLED;
-authenticationMethodConfiguration.isAttestationEnforced = false;
+authenticationMethodConfiguration.setOdataType("#microsoft.graph.fido2AuthenticationMethodConfiguration");
+authenticationMethodConfiguration.setState(AuthenticationMethodState.Enabled);
+authenticationMethodConfiguration.setIsAttestationEnforced(true);
+AuthenticationMethodConfiguration result = graphClient.policies().authenticationMethodsPolicy().authenticationMethodConfigurations().byAuthenticationMethodConfigurationId("{authenticationMethodConfiguration-id}").patch(authenticationMethodConfiguration);
 
-graphClient.policies().authenticationMethodsPolicy().authenticationMethodConfigurations("fido2")
-	.buildRequest()
-	.patch(authenticationMethodConfiguration);
 
 ```

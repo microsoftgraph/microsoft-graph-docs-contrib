@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 User user = new User();
-user.accountEnabled = true;
-user.displayName = "Requestor1";
-user.mailNickname = "Requestor1";
-user.userPrincipalName = "Requestor1@contoso.onmicrosoft.com";
+user.setAccountEnabled(true);
+user.setDisplayName("Requestor1");
+user.setMailNickname("Requestor1");
+user.setUserPrincipalName("Requestor1@contoso.com");
 PasswordProfile passwordProfile = new PasswordProfile();
-passwordProfile.forceChangePasswordNextSignIn = true;
-passwordProfile.password = "Contoso1234";
-user.passwordProfile = passwordProfile;
+passwordProfile.setForceChangePasswordNextSignIn(true);
+passwordProfile.setPassword("Contoso1234");
+user.setPasswordProfile(passwordProfile);
+User result = graphClient.users().post(user);
 
-graphClient.users()
-	.buildRequest()
-	.post(user);
 
 ```

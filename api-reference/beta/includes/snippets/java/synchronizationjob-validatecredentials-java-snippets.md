@@ -4,29 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<SynchronizationSecretKeyStringValuePair> credentialsList = new LinkedList<SynchronizationSecretKeyStringValuePair>();
-SynchronizationSecretKeyStringValuePair credentials = new SynchronizationSecretKeyStringValuePair();
-credentials.key = SynchronizationSecret.USER_NAME;
-credentials.value = "user@domain.com";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-credentialsList.add(credentials);
-SynchronizationSecretKeyStringValuePair credentials1 = new SynchronizationSecretKeyStringValuePair();
-credentials1.key = SynchronizationSecret.PASSWORD;
-credentials1.value = "password-value";
+com.microsoft.graph.beta.serviceprincipals.item.synchronization.jobs.item.validatecredentials.ValidateCredentialsPostRequestBody validateCredentialsPostRequestBody = new com.microsoft.graph.beta.serviceprincipals.item.synchronization.jobs.item.validatecredentials.ValidateCredentialsPostRequestBody();
+LinkedList<SynchronizationSecretKeyStringValuePair> credentials = new LinkedList<SynchronizationSecretKeyStringValuePair>();
+SynchronizationSecretKeyStringValuePair synchronizationSecretKeyStringValuePair = new SynchronizationSecretKeyStringValuePair();
+synchronizationSecretKeyStringValuePair.setKey(SynchronizationSecret.UserName);
+synchronizationSecretKeyStringValuePair.setValue("user@domain.com");
+credentials.add(synchronizationSecretKeyStringValuePair);
+SynchronizationSecretKeyStringValuePair synchronizationSecretKeyStringValuePair1 = new SynchronizationSecretKeyStringValuePair();
+synchronizationSecretKeyStringValuePair1.setKey(SynchronizationSecret.Password);
+synchronizationSecretKeyStringValuePair1.setValue("password-value");
+credentials.add(synchronizationSecretKeyStringValuePair1);
+validateCredentialsPostRequestBody.setCredentials(credentials);
+graphClient.servicePrincipals().byServicePrincipalId("{servicePrincipal-id}").synchronization().jobs().bySynchronizationJobId("{synchronizationJob-id}").validateCredentials().post(validateCredentialsPostRequestBody);
 
-credentialsList.add(credentials1);
-
-graphClient.servicePrincipals("{id}").synchronization().jobs("{id}")
-	.validateCredentials(SynchronizationJobValidateCredentialsParameterSet
-		.newBuilder()
-		.withApplicationIdentifier(null)
-		.withTemplateId(null)
-		.withUseSavedCredentials(null)
-		.withCredentials(credentialsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

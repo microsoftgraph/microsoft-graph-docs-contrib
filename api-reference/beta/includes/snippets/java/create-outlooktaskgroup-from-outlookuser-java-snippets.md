@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OutlookTaskGroup outlookTaskGroup = new OutlookTaskGroup();
-outlookTaskGroup.name = "Leisure tasks";
+outlookTaskGroup.setName("Leisure tasks");
+OutlookTaskGroup result = graphClient.me().outlook().taskGroups().post(outlookTaskGroup);
 
-graphClient.me().outlook().taskGroups()
-	.buildRequest()
-	.post(outlookTaskGroup);
 
 ```

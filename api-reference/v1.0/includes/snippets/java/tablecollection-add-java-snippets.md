@@ -4,19 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String address = "Sheet1!A1:D5";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Boolean hasHeaders = true;
+com.microsoft.graph.drives.item.items.item.workbook.tables.add.AddPostRequestBody addPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.tables.add.AddPostRequestBody();
+addPostRequestBody.setAddress("Sheet1!A1:D5");
+addPostRequestBody.setHasHeaders(true);
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().tables().add().post(addPostRequestBody);
 
-graphClient.me().drive().items("{id}").workbook().tables()
-	.add(WorkbookTableAddParameterSet
-		.newBuilder()
-		.withAddress(address)
-		.withHasHeaders(hasHeaders)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -373,7 +373,7 @@ For notifications without resource data, the payload looks like the following. T
 
 The **resource** and **@odata.id** properties can be used to call Microsoft Graph to get the transcript or recording.
 
-## See also
+## Related content
 
 * [Microsoft Graph change notifications](change-notifications-overview.md)
 * [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)

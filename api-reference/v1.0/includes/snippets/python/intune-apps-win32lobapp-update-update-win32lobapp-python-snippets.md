@@ -4,7 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.win32_lob_app import Win32LobApp
+from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.win32_lob_app_rule import Win32LobAppRule
+from msgraph.generated.models.win32_lob_app_registry_rule import Win32LobAppRegistryRule
+from msgraph.generated.models.win32_lob_app_install_experience import Win32LobAppInstallExperience
+from msgraph.generated.models.win32_lob_app_return_code import Win32LobAppReturnCode
+from msgraph.generated.models.win32_lob_app_msi_information import Win32LobAppMsiInformation
 
 graph_client = GraphServiceClient(credentials, scopes)
 
