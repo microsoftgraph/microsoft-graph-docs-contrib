@@ -17,7 +17,7 @@ const bookingCustomQuestion = {
   answerOptions: []
 };
 
-await client.api('/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774')
+await client.api('/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774')
 	.version('beta')
 	.post(bookingCustomQuestion);
 
