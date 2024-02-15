@@ -1,5 +1,5 @@
 ---
-title: "page resource type"
+title: "onenotePage resource type"
 description: "A page in a OneNote notebook."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
@@ -7,7 +7,7 @@ ms.prod: notes
 doc_type: resourcePageType
 ---
 
-# page resource type
+# onenotePage resource type
 
 Namespace: microsoft.graph
 

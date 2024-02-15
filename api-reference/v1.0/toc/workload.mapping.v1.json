@@ -768,7 +768,8 @@
               "governanceInsight",
               "membershipOutlierInsight",
               "authenticationMethodsRoot",
-              "user"
+              "user",
+              "reportRoot"
             ]
           }
         ]
@@ -857,7 +858,10 @@
         "overview": "resources/threatassessment-api-overview.md",
         "workloads": [
           {
-            "id": "Microsoft.ThreatAssessment"
+            "id": "Microsoft.ThreatAssessment",
+            "excludedResources": [
+              "informationProtection"
+            ]
           }
         ]
       },
@@ -895,7 +899,10 @@
     "overview": "resources/teams-api-overview.md",
     "workloads": [
       {
-        "id": "Microsoft.Teams.Shifts"
+        "id": "Microsoft.Teams.Shifts",
+        "excludedResources": [
+          "scheduleChangeRequest"
+        ]
       },
       {
         "id": "Microsoft.Teams.GraphSvc",
