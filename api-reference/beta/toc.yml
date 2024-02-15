@@ -18739,7 +18739,7 @@ items:
                 href: resources/shiftsroledefinition.md
                 items:
                   - name: Create or replace
-                    href: api/schedule-post-shiftsroledefinitions.md
+                    href: api/shiftsroledefinition-update.md
                   - name: Get
                     href: api/shiftsroledefinition-get.md
               - name: Schedule
