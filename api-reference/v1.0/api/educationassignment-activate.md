@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 Activate an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers and students. This action can only be performed by a teacher on currently inactive assignments.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -51,7 +49,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a","2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","c0f133b9-615c-4119-876c-c1848fd0a99a"],
   "name": "post_activateAssignment"
 }-->
 ```msgraph-interactive
