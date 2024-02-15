@@ -152,7 +152,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-## See also
+## Related content
 
 - [Microsoft Teams direct routing usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center.
 - [Health dashboard for direct routing](/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center.

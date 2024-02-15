@@ -562,7 +562,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add member to team](team-post-members.md)
 

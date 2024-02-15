@@ -21,7 +21,7 @@ A tenant admin can configure for each **onPremisesPublishingProfile** the [time 
 
 For a tutorial about configuring Application Proxy, see [Automate the configuration of Application Proxy using the Microsoft Graph API](/graph/application-proxy-configure-api).
 
-## See also
+## Related content
 
 - [On-premises agent](onpremisesagent.md)
 - [On-premises agent group](onpremisesagentgroup.md)

@@ -430,7 +430,7 @@ Content-type: application/json
     "infoCatalogs": [],
     "isAssignableToRole": true,
     "isManagementRestricted": null,
-    "mail": "contosohelpdeskadministrators@M365x010717.onmicrosoft.com",
+    "mail": "contosohelpdeskadministrators@contoso.com",
     "mailEnabled": true,
     "mailNickname": "contosohelpdeskadministrators",
     "membershipRule": null,
@@ -444,7 +444,7 @@ Content-type: application/json
     "preferredDataLocation": "EU",
     "preferredLanguage": null,
     "proxyAddresses": [
-        "SMTP:contosohelpdeskadministrators@M365x010717.onmicrosoft.com"
+        "SMTP:contosohelpdeskadministrators@contoso.com"
     ],
     "renewedDateTime": "2021-09-21T07:23:06Z",
     "resourceBehaviorOptions": [],
