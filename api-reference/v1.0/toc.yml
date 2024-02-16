@@ -1268,6 +1268,17 @@ items:
                     href: api/cloudclipboardroot-list-items.md
                   - name: Get cloud clipboard
                     href: api/cloudclipboarditem-get.md
+              - name: Windows settings
+                href: resources/windowssetting.md
+                items:
+                  - name: List Windows settings
+                    href: api/usersettings-list-windows.md
+                  - name: Get Windows setting
+                    href: api/windowssetting-get.md
+                  - name: List Windows setting instances
+                    href: api/windowssetting-list-instances.md
+                  - name: Get Windows setting instance
+                    href: api/windowssettinginstance-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:
