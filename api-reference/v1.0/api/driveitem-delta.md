@@ -437,7 +437,7 @@ For more information about scanning scenarios, see [Best practices for discoveri
 
 In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
 
-## See also
+## Related content
 [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance)
 

@@ -417,7 +417,7 @@ HTTP/1.1 200 OK
 
 ```
 
-## See also
+## Related content
 
 * [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 * [Create channel](channel-post.md)

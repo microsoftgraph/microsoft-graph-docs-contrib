@@ -71,7 +71,7 @@ POST /directory/administrativeUnits/{id}/members
 In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added.
 
 ### Creating a new group
-The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit. 
+The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit.
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
@@ -151,7 +151,7 @@ In the request body, provide the `id` of the [user](../resources/user.md) or [gr
 
 #### Response
 The following example shows the response.
- 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -266,7 +266,7 @@ Content-type: application/json
 	 "preferredDataLocation": "CAN",
 	 "preferredLanguage": null,
 	 "proxyAddresses": [
-	     "SMTP:golfassist@contoso.onmicrosoft.com"
+	     "SMTP:golfassist@contoso.com"
 	 ],
 	 "renewedDateTime": "2018-12-22T02:21:05Z",
 	 "resourceBehaviorOptions": [],

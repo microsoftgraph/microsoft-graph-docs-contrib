@@ -37,7 +37,7 @@ The business flow template objects are automatically generated when the global a
 
 None.
 
-## See also
+## Related content
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
