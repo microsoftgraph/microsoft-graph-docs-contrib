@@ -34,9 +34,10 @@ This resource supports:
 | [Get user](../api/user-get.md) | [user](user.md) | Read properties and relationships of user object. |
 | [Update user](../api/user-update.md) | [user](user.md) | Update user object. |
 | [Delete user](../api/user-delete.md) | None | Delete user object. |
-| [Get delta](../api/user-delta.md) | user collection | Get incremental changes for users. |
+| [Get delta](../api/user-delta.md) | [user](user.md) collection | Get incremental changes for users. |
 | [changePassword](../api/user-changepassword.md) | None | Update your own password. |
-| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | None | Invalidate all of the user's refresh tokens issued to applications. |
+| [Convert external user to member user](../api/user-convertexternaltointernalmemberuser.md) | [user](user.md) | Convert an externally authenticated user into an internal user. . |
+| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | [user](user.md) | Invalidate all of the user's refresh tokens issued to applications. |
 | [validatePassword](../api/user-validatepassword.md)|[passwordValidationInformation](../resources/passwordvalidationinformation.md)|Validate a user's password against the organization's password validation policy and report whether the password is valid. |
 | **App role assignments**|||
 | [List appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles that a user has been assigned. |
