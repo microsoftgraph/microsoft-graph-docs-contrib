@@ -132,7 +132,7 @@ Following is an example of this setting.
 
 #### windows.data.platform.settingsbackup.backupunitstore
 
-The **backupUnitStore** payloadType settings are unique in that the actual settings value is a **blob** in the data property. This is because **backupUnitStore** settings are collected directly from the Windows registry, on disk files, or other at rest locations throughout Windows. These settings were not designed to be interoperable with experiences besides the components that created them, but they are included in this API for the sake of completeness.
+The **backupUnitStore** payloadType settings are unique in that the actual settings value is a **blob** in the data property. This is because **backupUnitStore** settings are collected directly from the Windows registry, on disk files, or other at rest locations throughout Windows. These settings were not designed to be interoperable with experiences besides the components that created them, but they have been included in this API for comprehensive coverage of all Windows settings in the cloud.
 
 
 ## Relationships
