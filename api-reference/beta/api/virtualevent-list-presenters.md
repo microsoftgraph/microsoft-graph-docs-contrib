@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-To list all presenters of a townhall:
+To list all presenters of a town hall:
 
 ``` http
 GET /solutions/virtualEvents/townhalls/{townhallId}/presenters
