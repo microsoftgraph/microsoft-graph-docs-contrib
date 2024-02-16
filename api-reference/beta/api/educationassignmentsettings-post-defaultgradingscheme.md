@@ -45,7 +45,7 @@ PUT /education/classes/{educationClassId}/assignmentSettings/defaultGradingSchem
 
 ## Request body
 
-In the request body, supply the odata.id of the existing [gradingScheme](../resources/educationgradingscheme.md) object to set a default grading scheme.
+In the request body, supply a JSON representation of a structure with the OData id of the existing [gradingScheme](../resources/educationgradingscheme.md) to add to this assignment.
 
 ## Response
 
