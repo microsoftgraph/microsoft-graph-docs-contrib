@@ -22,9 +22,13 @@ Microsoft Graph Toolkit v4 is now available. For details about changes in the la
 
 ## February 2024: New in preview only
 
+### Teamwork and communications | Calls and online meetings
+
+Microsoft Teams custom meeting templates (a Teams Premium feature) allow you to specify values for many of the meeting options available to meeting organizers. Use the **meetingTemplateId** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) to create an online meeting with a meeting template.
+
 ### Teamwork and communications | Shift management
 
-Added the ability to [get shifts](/graph/api/team-getshifts) and [get time offs](/graph/api/team-gettimesoff) across all teams that a user is a direct member of.
+Added the ability to [get shifts](/graph/api/team-getshifts?view=graph-rest-beta&preserve-view=true) and [get time offs](/graph/api/team-gettimesoff?view=graph-rest-beta&preserve-view=true) across all teams that a user is a direct member of.
 
 ### Identity and access | Directory management
 
