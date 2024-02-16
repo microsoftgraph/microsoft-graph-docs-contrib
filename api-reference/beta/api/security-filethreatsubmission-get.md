@@ -125,7 +125,7 @@ Content-Type: application/json
     "user": {
       "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
       "displayName": "Ronald Admin",
-      "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+      "email": "tifc@contoso.com"
     }
   },
   "result": {

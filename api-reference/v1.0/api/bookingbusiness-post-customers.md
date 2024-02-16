@@ -47,10 +47,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinesspostcustomers",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customers
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/customers
 Content-type: application/json
 
 {
@@ -139,7 +139,7 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.bookingCustomer",
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/customers/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/customers/$entity",
     "id": "36038f36-634e-44e4-9415-d7d59c2347aa",
     "displayName": "Joni Sherman",
     "emailAddress": "jonis@relecloud.com",

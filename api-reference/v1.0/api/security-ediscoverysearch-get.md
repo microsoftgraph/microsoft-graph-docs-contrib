@@ -123,7 +123,7 @@ Content-Type: application/json
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         },
         "application": {
             "id": "80ccca67-54bd-44ab-8625-4b79c4dc7775",

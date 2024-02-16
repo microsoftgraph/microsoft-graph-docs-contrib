@@ -216,7 +216,7 @@ HTTP/1.1 200 OK
     "synchronizationRules": []
 }
 ```
-## See also
+## Related content
 
 * [Configure synchronization with directory extension attributes](/graph/synchronization-configure-with-directory-extension-attributes)
 * [Configure synchronization with custom target attributes](/graph/synchronization-configure-with-custom-target-attributes)

@@ -19,7 +19,7 @@ You can create a subscription to the resource for which you want to be notified 
 
 The article guides you through the process of implementing your webhook endpoint, subscribing to and managing Microsoft Graph subscriptions, and how to receive change notifications through webhooks.
 
-## Implementing a webhook endpoint
+## Considerations for a webhook endpoint
 Before you can receive a notification via webhooks, you must create a publicly accessible, HTTPS-secured endpoint that is addressable via URL. If your endpoint isn't publicly accessible, Microsoft Graph won't send notifications to your endpoint.
 
 Your endpoint must provide correct, consistent, and timely HTTP responses in order to reliably receive notifications. If an endpoint doesn't respond in a timely manner, the change notification service may begin to drop notifications. Dropped notifications can't be recovered.

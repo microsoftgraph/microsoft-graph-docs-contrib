@@ -233,13 +233,13 @@ Content-type: application/json
     "createdBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "lastModifiedBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "parentReference": {
