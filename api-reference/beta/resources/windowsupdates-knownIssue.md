@@ -7,7 +7,7 @@ ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 
-# edition resource type
+# knownIssue resource type
 
 Namespace: microsoft.graph.windowsUpdates
 
