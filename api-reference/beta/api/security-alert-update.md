@@ -1,6 +1,6 @@
 ---
 title: "Update alert"
-description: "Update the properties of an alert object."
+description: "Update the properties of an alert."
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.
+Update the properties of an [alert](../resources/security-alert.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [aler
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -160,6 +160,7 @@ Content-type: application/json
     "firstActivityDateTime": "2021-04-26T07:45:50.116Z",
     "lastActivityDateTime": "2021-05-02T07:56:58.222Z",
     "comments": [],
-    "evidence": []
+    "evidence": [],
+    "systemTags" : []
 }
 ```
