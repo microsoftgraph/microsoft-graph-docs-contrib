@@ -34,7 +34,7 @@ POST /education/classes/{classId}/assignments/{assignmentId}/submissions/{submis
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer  | `include-unknown-enum-members`. Optional.  |
 
 ## Request body
@@ -285,7 +285,7 @@ HTTP/1.1 200 Ok
     }
 }
 ```
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 

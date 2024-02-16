@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.drives.item.items.item.workbook.functions.vlookup.vlookup_request_builder import VlookupRequestBuilder
+from msgraph.generated.models.vlookup_post_request_body import VlookupPostRequestBody
+from msgraph.generated.models.json import Json
 
 graph_client = GraphServiceClient(credentials, scopes)
 

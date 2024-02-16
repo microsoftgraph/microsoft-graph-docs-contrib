@@ -32,7 +32,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/7e4ec76c-8276-43ef-ba10-9
 ---
 
 ##### Response
-Here's an example of the response. 
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -109,7 +109,7 @@ Content-type: application/json
             "displayName": "Adele Vance",
             "givenName": "Adele",
             "surname": "Vance",
-            "userPrincipalName": "AdeleV@M365x214355.onmicrosoft.com",
+            "userPrincipalName": "AdeleV@contoso.com",
             "userType": "Member",
             "primaryRole": "teacher",
             "onPremisesInfo": {

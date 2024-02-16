@@ -54,7 +54,7 @@ Using `$expand=AppDefinitions` will return more information about the state of t
 
 | Header        | Value                     |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -733,7 +733,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List apps installed in a team](team-list-installedapps.md)
 - [List apps installed in a chat](chat-list-installedapps.md)

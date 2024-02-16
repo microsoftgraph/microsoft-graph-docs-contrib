@@ -50,7 +50,7 @@ This method requires the `$filter` (`eq`) OData query parameter to scope the tra
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header, `$count`, and `$filter` are required. For more information about the use of **ConsistencyLevel**, `$count`, and `$filter`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body

@@ -7,7 +7,7 @@ author: sebastienlevert
 
 # Microsoft Graph Toolkit React components
 
-The Microsoft Graph Toolkit React components (`mgt-react`) allow React developers to use the Microsoft Graph Toolkit in their React applications. The library wraps all Microsoft Graph Toolkit components and exports them as React components. We also provide another React library (`mgt-chat`) to enable chat scenarios that aren't available as regular web components.
+The Microsoft Graph Toolkit React components (`mgt-react`) allow React developers to use the Microsoft Graph Toolkit in their React applications. The library wraps all Microsoft Graph Toolkit components and exports them as React components. We also provide another React library (`mgt-chat`) to enable chat scenarios that aren't yet available as regular web components.
 
 ## What components can I use?
 
@@ -123,7 +123,7 @@ const App = (props) => {
 
 The `template` prop allows you to specify which template to overwrite. In this case, the `MyEvent` component is repeated for every event, and the `event` object is passed as part of the `dataContext` properties.
 
-## See also
+## Related content
 
 * [Get started with the Microsoft Graph Toolkit in React](./use-toolkit-with-react.md)
 * [Learn about authentication providers](../providers/providers.md)

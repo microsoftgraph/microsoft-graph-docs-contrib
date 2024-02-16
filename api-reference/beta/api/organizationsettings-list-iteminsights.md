@@ -40,7 +40,7 @@ GET /organization/{organizationId}/settings/itemInsights
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -122,5 +122,5 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 [Customize people insights privacy](/graph/insights-customize-people-insights-privacy) for an organization.

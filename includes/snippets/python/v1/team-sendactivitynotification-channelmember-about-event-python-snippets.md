@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.send_activity_notification_post_request_body import SendActivityNotificationPostRequestBody
+from msgraph.generated.models.teamwork_activity_topic import TeamworkActivityTopic
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.channel_members_notification_recipient import ChannelMembersNotificationRecipient
 
 graph_client = GraphServiceClient(credentials, scopes)
 

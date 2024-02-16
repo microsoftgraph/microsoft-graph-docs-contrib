@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.identityGovernance.lifecycleWorkflows.workflows.item.runs.item.userProcessingResults.item.taskProcessingResults.task_processing_results_request_builder import TaskProcessingResultsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

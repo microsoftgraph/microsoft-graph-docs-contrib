@@ -4,7 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.scheduled_permissions_request import ScheduledPermissionsRequest
+from msgraph.generated.models.aws_permissions_definition import AwsPermissionsDefinition
+from msgraph.generated.models.permissions_definition_authorization_system import PermissionsDefinitionAuthorizationSystem
+from msgraph.generated.models.aws_policy_permissions_definition_action import AwsPolicyPermissionsDefinitionAction
+from msgraph.generated.models.permissions_definition_aws_policy import PermissionsDefinitionAwsPolicy
+from msgraph.generated.models.permissions_definition_authorization_system_identity import PermissionsDefinitionAuthorizationSystemIdentity
+from msgraph.generated.models.saml_identity_source import SamlIdentitySource
+from msgraph.generated.models.request_schedule import RequestSchedule
+from msgraph.generated.models.expiration_pattern import ExpirationPattern
+from msgraph.generated.models.ticket_info import TicketInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

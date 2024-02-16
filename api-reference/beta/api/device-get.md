@@ -69,7 +69,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 ## Request headers
 | Name       | Description|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -128,7 +128,7 @@ GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 ---
 
 #### Response
-The following example shows a response for a device with no **hostNames**. 
+The following example shows a response for a device with no **hostNames**.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -152,7 +152,7 @@ Content-type: application/json
 }
 ```
 
-The following example shows a response for a device with **hostNames**. 
+The following example shows a response for a device with **hostNames**.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -170,7 +170,7 @@ Content-type: application/json
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
   "deviceVersion": 99,
-  "hostnames":["hostname1.contoso.onmicrosoft.com", "hostname1"]
+  "hostnames":["contoso.com", "hostname1"]
 }
 ```
 
@@ -260,7 +260,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
