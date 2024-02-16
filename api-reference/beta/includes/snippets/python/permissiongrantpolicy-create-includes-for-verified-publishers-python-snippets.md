@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.permission_grant_condition_set import PermissionGrantConditionSet
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -874,7 +874,7 @@ If your app has 50 users, and each user receives messages from 20 users and send
 
 For the most up-to-date pricing information, see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses).
 
-## See also
+## Related content
 
 - [Add reactions to chat messages](/graph/api/chatmessage-setreaction)
 - [Add @metions, images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples)

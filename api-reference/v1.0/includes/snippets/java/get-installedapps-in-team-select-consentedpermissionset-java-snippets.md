@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TeamsAppInstallation teamsAppInstallation = graphClient.teams("19[d86ec7f6b247d3b9e519b0bfef5d03@thread.v2").installedApps("N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg=")
-	.buildRequest()
-	.select("consentedPermissionSet,id")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+TeamsAppInstallation result = graphClient.teams().byTeamId("{team-id}").installedApps().byTeamsAppInstallationId("{teamsAppInstallation-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"consentedPermissionSet", "id"};
+});
+
 
 ```

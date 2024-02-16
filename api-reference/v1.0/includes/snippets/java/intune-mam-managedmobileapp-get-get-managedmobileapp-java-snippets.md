@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ManagedMobileApp managedMobileApp = graphClient.deviceAppManagement().iosManagedAppProtections("{iosManagedAppProtectionId}").apps("{managedMobileAppId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ManagedMobileApp result = graphClient.deviceAppManagement().iosManagedAppProtections().byIosManagedAppProtectionId("{iosManagedAppProtection-id}").apps().byManagedMobileAppId("{managedMobileApp-id}").get();
+
 
 ```

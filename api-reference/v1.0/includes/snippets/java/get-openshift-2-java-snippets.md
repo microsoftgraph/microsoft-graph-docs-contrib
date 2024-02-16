@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-OpenShiftCollectionPage openShifts = graphClient.teams("{id}").schedule().openShifts()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+OpenShiftCollectionResponse result = graphClient.teams().byTeamId("{team-id}").schedule().openShifts().get();
+
 
 ```

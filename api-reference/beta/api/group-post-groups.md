@@ -195,7 +195,7 @@ Content-type: application/json
      "preferredDataLocation": "CAN",
      "preferredLanguage": null,
      "proxyAddresses": [
-         "SMTP:golfassist@contoso.onmicrosoft.com"
+         "SMTP:golfassist@contoso.com"
      ],
      "renewedDateTime": "2018-12-22T02:21:05Z",
      "resourceBehaviorOptions": [],
@@ -480,7 +480,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
