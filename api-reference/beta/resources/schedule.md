@@ -30,6 +30,8 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | activitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts should include the activities.                                             |
 | enabled                   | Boolean            | Indicates whether the schedule is enabled for the team. Required.                                                |
 | id                        | string             | ID of the schedule.                                                                                              |
+| isCrossLocationShiftsEnabled | boolean         | Indicates whether the cross location marketplace feature is enabled on this schedule.                            |
+| isCrossLocationShiftRequestApprovalRequired | boolean | Indicates whether approval is required by a manager of this schedule for cross location shift requests.   |
 | offerShiftRequestsEnabled | Boolean            | Indicates whether offer shift requests are enabled for the schedule.                                             |
 | openShiftsEnabled         | Boolean            | Indicates whether open shifts are enabled for the schedule.                                                      |
 | provisionStatus           | operationStatus    | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |

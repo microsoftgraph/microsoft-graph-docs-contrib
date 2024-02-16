@@ -140,7 +140,9 @@ Content-type: application/json
   "offerShiftRequestsEnabled": true,
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Sunday",
-  "activitiesIncludedWhenCopyingShiftsEnabled": true
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true
 }
 ```
 
@@ -170,6 +172,8 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
    "timeOffRequestsEnabled":true,
    "startDayOfWeek": "Tuesday",
    "activitiesIncludedWhenCopyingShiftsEnabled": true,
+   "isCrossLocationShiftsEnabled": true,
+   "isCrossLocationShiftRequestApprovalRequired": true,
    "timeClockEnabled":true,
    "timeClockSettings":{
       "approvedLocation":{
@@ -241,6 +245,8 @@ Content-type: application/json
    "timeOffRequestsEnabled":true,
    "startDayOfWeek": "Tuesday",
    "activitiesIncludedWhenCopyingShiftsEnabled": true,
+   "isCrossLocationShiftsEnabled": true,
+   "isCrossLocationShiftRequestApprovalRequired": true,
    "timeClockEnabled":true,
    "timeClockSettings":{
       "approvedLocation":{
