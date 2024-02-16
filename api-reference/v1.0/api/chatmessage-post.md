@@ -612,7 +612,7 @@ The following example shows a request.
 
 > **Note:** The **temporaryId** in the **hostedContents** collection is a random ID but must be the same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in the body as `../hostedContents/1/$value`.)
 
-**contentBytes** must be set to binary string Base64-encoded bytes.  You can convert an item to binary Base64-encoded bytes in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`, for example. Microsoft .NET SDK users don't need to convert to Base64 encoded bytes as the SDK handles it for you.
+**contentBytes** must be set to binary string Base64-encoded bytes. You can convert an item to binary Base64-encoded bytes in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`, for example. Microsoft .NET SDK users don't need to convert to Base64 encoded bytes as the SDK handles it for you.
 
 
 # [HTTP](#tab/http)
