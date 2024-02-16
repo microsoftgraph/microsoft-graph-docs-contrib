@@ -1,6 +1,6 @@
 ---
 title: "List presenters"
-description: "Get the virtualEventPresenter resources from the presenters navigation property."
+description: "Get the list of all virtualEventPresenter objects of a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -48,7 +48,7 @@ GET /solutions/virtualEvents/townhalls/{townhallId}/presenters
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -58,10 +58,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_virtualeventpresenter"
+  "name": "list_virtualeventpresenter",
+  "sampleKeys": ["88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33"]
 }
 -->
 ``` http
@@ -70,7 +71,7 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/88b245ac-
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -92,7 +93,7 @@ Content-Type: application/json
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
       },
       "email": "DianeDemoss@contoso.com",
-      "presenterDetails": null,
+      "presenterDetails": null
     },
     {
       "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
