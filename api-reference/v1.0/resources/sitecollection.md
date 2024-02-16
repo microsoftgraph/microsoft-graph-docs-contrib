@@ -39,7 +39,7 @@ Here is a JSON representation of the resource.
 
 | Property name        | Type     | Description
 |:---------------------|:---------|:---------------------------------------------------
-| **dataLocationCode** | string   | The geographic region code for where this site collection resides. It will only be present for multi-geo tenants. Read-only.
+| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Only present for multi-geo tenants. Read-only.
 | **hostname**         | string   | The hostname for the site collection. Read-only.
 | **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only.
 
