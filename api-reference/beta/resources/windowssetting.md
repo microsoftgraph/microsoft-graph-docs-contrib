@@ -93,8 +93,8 @@ Some payloadTypes have a special role in the Windows settings backup process.
 #### windows.data.platform.backuprestore.deviceprofile 
 Rather than being a setting the user has applied, this type records information about devices that have opted into settings backup features. Two properties in this object are useful for understanding the rest of the settings: deviceDisplayName and profileId. 
 
-- *deviceDisplayName* is the name of the computer which can be seen on the Windows settings system page.
-- *profileId* is an identifier used to link WindowsSettings items to the device that uploaded them. This property corresponds to **windowsSetting.windowsDeviceId** and can be used as a filter to get settings for a specific device from [List Windows settings stored in cloud](../api/usersettings-list-windows.md) API.
+- *deviceDisplayName* is the name of the computer which can be seen in Windows system settings at "**Start** > **Settings** > **System**".
+- *profileId* is an identifier used to link **WindowsSettings** items to the device that uploaded them. This property corresponds to **windowsSetting.windowsDeviceId** and can be used as a filter to get settings for a specific device from [List Windows settings stored in cloud](../api/usersettings-list-windows.md) API.
 
 Following is an example of this setting.
 
@@ -132,7 +132,7 @@ Following is an example of this setting.
 
 #### windows.data.platform.settingsbackup.backupunitstore
 
-Backupunitstore payloadType settings are unique in that the actual settings value is a blob in the data property. This is because backupunitstore settings are collected directly from the Windows registry, on disk files, or other at rest locations throughout Windows. These settings were not designed to be interoperable with experiences besides the components that created them, but they are included in this API for the sake of completeness.
+The **backupUnitStore** payloadType settings are unique in that the actual settings value is a **blob** in the data property. This is because **backupUnitStore** settings are collected directly from the Windows registry, on disk files, or other at rest locations throughout Windows. These settings were not designed to be interoperable with experiences besides the components that created them, but they are included in this API for the sake of completeness.
 
 
 ## Relationships
