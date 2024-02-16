@@ -1,0 +1,21 @@
+items:
+- name: Subject rights request
+  items:
+  - name: Subject rights request
+    href: resources/subjectrightsrequest.md
+  - name: List subjectRightsRequests
+    href: api/subjectRightsRequest-list.md
+  - name: Create subjectRightsRequest
+    href: api/subjectRightsRequest-post.md
+  - name: Get subjectRightsRequest
+    href: api/subjectRightsRequest-get.md
+  - name: Update subjectRightsRequest
+    href: api/subjectRightsRequest-update.md
+  - name: getFinalAttachment
+    href: api/subjectRightsRequest-getfinalattachment.md
+  - name: getFinalReport
+    href: api/subjectRightsRequest-getfinalreport.md
+  - name: List notes
+    href: api/subjectRightsRequest-list-notes.md
+  - name: Create authoredNote
+    href: api/subjectRightsRequest-post-notes.md

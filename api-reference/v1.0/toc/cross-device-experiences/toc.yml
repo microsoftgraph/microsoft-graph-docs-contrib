@@ -1,0 +1,21 @@
+items:
+- name: Activity history item
+  items:
+  - name: Activity history item
+    href: resources/projectrome-historyitem.md
+  - name: Create or replace activityHistoryItem
+    href: api/projectrome-put-historyitem.md
+  - name: Delete a activityHistoryItem
+    href: api/projectrome-delete-historyitem.md
+- name: User activity
+  items:
+  - name: User activity
+    href: resources/projectrome-activity.md
+  - name: Create or replace activity
+    href: api/projectrome-put-activity.md
+  - name: Delete an activity
+    href: api/projectrome-delete-activity.md
+  - name: Get activities
+    href: api/projectrome-get-activities.md
+  - name: Get recent activities
+    href: api/projectrome-get-recent-activities.md

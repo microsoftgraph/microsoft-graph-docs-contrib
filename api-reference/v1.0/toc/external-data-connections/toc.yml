@@ -1,0 +1,75 @@
+items:
+- name: Connection operation
+  items:
+  - name: Connection operation
+    href: resources/externalconnectors-connectionoperation.md
+  - name: Get connectionOperation
+    href: api/externalconnectors-connectionoperation-get.md
+- name: External activity
+  items:
+  - name: External activity
+    href: resources/externalconnectors-externalactivity.md
+- name: External activity result
+  items:
+  - name: External activity result
+    href: resources/externalconnectors-externalactivityresult.md
+- name: External connection
+  items:
+  - name: External connection
+    href: resources/externalconnectors-externalconnection.md
+  - name: Create externalConnection
+    href: api/externalconnectors-external-post-connections.md
+  - name: List externalConnections
+    href: api/externalconnectors-externalconnection-list.md
+  - name: Get externalConnection
+    href: api/externalconnectors-externalconnection-get.md
+  - name: Update externalConnection
+    href: api/externalconnectors-externalconnection-update.md
+  - name: Delete externalConnection
+    href: api/externalconnectors-externalconnection-delete.md
+  - name: Create schema
+    href: api/externalconnectors-externalconnection-patch-schema.md
+  - name: Create externalItem
+    href: api/externalconnectors-externalconnection-put-items.md
+- name: External group
+  items:
+  - name: External group
+    href: resources/externalconnectors-externalgroup.md
+  - name: Create externalGroup
+    href: api/externalconnectors-externalconnection-post-groups.md
+  - name: Get externalGroup
+    href: api/externalconnectors-externalgroup-get.md
+  - name: Update externalGroup
+    href: api/externalconnectors-externalgroup-update.md
+  - name: Delete externalGroup
+    href: api/externalconnectors-externalgroup-delete.md
+- name: External item
+  items:
+  - name: External item
+    href: resources/externalconnectors-externalitem.md
+  - name: Create externalItem
+    href: api/externalconnectors-externalconnection-put-items.md
+  - name: Get externalItem
+    href: api/externalconnectors-externalitem-get.md
+  - name: Update externalItem
+    href: api/externalconnectors-externalitem-update.md
+  - name: Delete externalItem
+    href: api/externalconnectors-externalitem-delete.md
+  - name: Add activities
+    href: api/externalconnectors-externalitem-addactivities.md
+- name: Identity
+  items:
+  - name: Identity
+    href: resources/externalconnectors-identity.md
+  - name: Create identity
+    href: api/externalconnectors-externalgroup-post-members.md
+  - name: Delete identity
+    href: api/externalconnectors-externalgroupmember-delete.md
+- name: Schema
+  items:
+  - name: Schema
+    href: resources/externalconnectors-schema.md
+  - name: Create schema
+    href: api/externalconnectors-externalconnection-patch-schema.md
+  - name: Get schema
+    href: api/externalconnectors-schema-get.md
