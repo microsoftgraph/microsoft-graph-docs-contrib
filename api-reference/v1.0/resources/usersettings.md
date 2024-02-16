@@ -46,6 +46,12 @@ Export user's Windows settings and values stored in cloud.
     - [windowssettingtype](../resources/enums.md#windowssettingtype-values) in filter query.
     - [windowsDeviceId](../resources/windowssetting.md#properties) in filter query.
 
+Export user's Windows settings and values stored in cloud.
+  - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects.
+  - Get a filtered list of the user's [windowsSetting](../resources/windowssetting.md) objects by passing,
+    - [windowssettingtype](../resources/enums.md#windowssettingtype-values) in filter query.
+    - [windowsDeviceId](../resources/windowssetting.md#properties) in filter query.
+
 Inherits from [entity](entity.md). To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
 
 > [!NOTE]
@@ -65,6 +71,7 @@ Inherits from [entity](entity.md). To learn how to get or update user settings, 
 |contributionToContentDiscoveryDisabled|Boolean|When set to true, documents in the user's Office Delve are disabled. Users can control this setting in [Office Delve](https://support.office.com/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
 |contributionToContentDiscoveryAsOrganizationDisabled|Boolean|Reflects the [Office Delve organization level setting](https://support.office.com/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff). When set to true, the organization doesn't have access to Office Delve. This setting is read-only and can only be changed by administrators in the [SharePoint admin center](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 |id|String|Unique identifier of the user setting. Read-only. Inherited from [entity](entity.md).|
+<<<<<<< Updated upstream
 
 ## Relationships
 
@@ -76,6 +83,9 @@ Inherits from [entity](entity.md). To learn how to get or update user settings, 
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
 |windows|[windowsSetting](../resources/windowssetting.md) collection|The Windows settings of the user stored in cloud.|
 
+=======
+|windows|[windowsSetting](../resources/windowssetting.md) collection|The Windows settings of the user stored in cloud.|
+>>>>>>> Stashed changes
 
 ## JSON representation
 

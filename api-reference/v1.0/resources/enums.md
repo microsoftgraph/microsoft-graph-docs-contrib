@@ -1785,6 +1785,7 @@ Namespace: microsoft.graph
 | sunny              |
 | unknownFutureValue |
 
+<<<<<<< Updated upstream
 ### timeCardState values
 
 | Member             |
@@ -1813,6 +1814,8 @@ Namespace: microsoft.graph
 |system
 |unknownFutureValue
 
+=======
+>>>>>>> Stashed changes
 ### windowsSettingType values 
 
 Possible types of Windows settings.
@@ -1821,7 +1824,11 @@ Possible types of Windows settings.
 | :----------------- | :---- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | roaming            | 0     | Windows setting is associated with a user's account. It is consistent across all devices and any changes to the setting value are synced or applied to all Windows devices that the user owns.          |
 | backup             | 1     | Windows setting does not roam or sync accross devices. This type of setting is used in device backup and restore scenarios.|
+<<<<<<< Updated upstream
 | unknownFutureValue | 2     | This is not a valid setting type. It is only a placeholder for any possible setting type that may be added in the future.                                                                             |
+=======
+| unknownFutureValue | 2     | This is not a valid setting type. It is only a placeholder for any possible setting type that may be added in the future.  
+>>>>>>> Stashed changes
 
 ### workforceIntegrationEncryptionProtocol values
 
