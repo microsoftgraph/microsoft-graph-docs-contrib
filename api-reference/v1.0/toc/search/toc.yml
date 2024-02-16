@@ -5,10 +5,10 @@ items:
   - name: Entity
     items:
     - name: Entity
-      href: resources/entity.md
+      href: ../../resources/entity.md
   - name: Search entity
     items:
     - name: Search entity
-      href: resources/searchentity.md
+      href: ../../resources/searchentity.md
     - name: query
-      href: api/search-query.md
+      href: ../../api/search-query.md

@@ -2,241 +2,241 @@ items:
 - name: Event message
   items:
   - name: Event message
-    href: resources/eventmessage.md
+    href: ../../resources/eventmessage.md
   - name: Get eventMessage
-    href: api/eventmessage-get.md
+    href: ../../api/eventmessage-get.md
   - name: Update
-    href: api/eventmessage-update.md
+    href: ../../api/eventmessage-update.md
   - name: Delete
-    href: api/message-delete.md
+    href: ../../api/message-delete.md
   - name: copy
-    href: api/message-copy.md
+    href: ../../api/message-copy.md
   - name: createForward
-    href: api/message-createforward.md
+    href: ../../api/message-createforward.md
   - name: createReply
-    href: api/message-createreply.md
+    href: ../../api/message-createreply.md
   - name: createReplyAll
-    href: api/message-createreplyall.md
+    href: ../../api/message-createreplyall.md
   - name: forward
-    href: api/message-forward.md
+    href: ../../api/message-forward.md
   - name: move
-    href: api/message-move.md
+    href: ../../api/message-move.md
   - name: reply
-    href: api/message-reply.md
+    href: ../../api/message-reply.md
   - name: replyAll
-    href: api/message-replyall.md
+    href: ../../api/message-replyall.md
   - name: send
-    href: api/message-send.md
+    href: ../../api/message-send.md
   - name: List attachments
-    href: api/eventmessage-list-attachments.md
+    href: ../../api/eventmessage-list-attachments.md
   - name: Add attachment
-    href: api/eventmessage-post-attachments.md
+    href: ../../api/eventmessage-post-attachments.md
   - name: Create open extension
-    href: api/opentypeextension-post-opentypeextension.md
+    href: ../../api/opentypeextension-post-opentypeextension.md
   - name: Get open extension
-    href: api/opentypeextension-get.md
+    href: ../../api/opentypeextension-get.md
   - name: Create single-value extended property
-    href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+    href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
   - name: Get eventMessage with single-value extended property
-    href: api/singlevaluelegacyextendedproperty-get.md
+    href: ../../api/singlevaluelegacyextendedproperty-get.md
   - name: Create multi-value extended property
-    href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+    href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
   - name: Get eventMessage with multi-value extended property
-    href: api/multivaluelegacyextendedproperty-get.md
+    href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Calendar
   items:
   - name: Calendar
-    href: resources/calendar.md
+    href: ../../resources/calendar.md
   - name: List calendars
-    href: api/user-list-calendars.md
+    href: ../../api/user-list-calendars.md
   - name: Create calendar
-    href: api/user-post-calendars.md
+    href: ../../api/user-post-calendars.md
   - name: Get calendar
-    href: api/calendar-get.md
+    href: ../../api/calendar-get.md
   - name: Update
-    href: api/calendar-update.md
+    href: ../../api/calendar-update.md
   - name: Delete
-    href: api/calendar-delete.md
+    href: ../../api/calendar-delete.md
   - name: List calendarView
-    href: api/calendar-list-calendarview.md
+    href: ../../api/calendar-list-calendarview.md
   - name: List events
-    href: api/calendar-list-events.md
+    href: ../../api/calendar-list-events.md
   - name: Create event
-    href: api/calendar-post-events.md
+    href: ../../api/calendar-post-events.md
   - name: getSchedule
-    href: api/calendar-getschedule.md
+    href: ../../api/calendar-getschedule.md
   - name: findMeetingTimes
-    href: api/user-findmeetingtimes.md
+    href: ../../api/user-findmeetingtimes.md
   - name: Create single-value extended property
-    href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+    href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
   - name: Get calendar with single-value extended property
-    href: api/singlevaluelegacyextendedproperty-get.md
+    href: ../../api/singlevaluelegacyextendedproperty-get.md
   - name: Create multi-value extended property
-    href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+    href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
   - name: Get calendar with multi-value extended property
-    href: api/multivaluelegacyextendedproperty-get.md
+    href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Calendar group
   items:
   - name: Calendar group
-    href: resources/calendargroup.md
+    href: ../../resources/calendargroup.md
   - name: List calendar groups
-    href: api/user-list-calendargroups.md
+    href: ../../api/user-list-calendargroups.md
   - name: Create calendar group
-    href: api/user-post-calendargroups.md
+    href: ../../api/user-post-calendargroups.md
   - name: Get calendar group
-    href: api/calendargroup-get.md
+    href: ../../api/calendargroup-get.md
   - name: Update
-    href: api/calendargroup-update.md
+    href: ../../api/calendargroup-update.md
   - name: Delete
-    href: api/calendargroup-delete.md
+    href: ../../api/calendargroup-delete.md
   - name: List calendars
-    href: api/calendargroup-list-calendars.md
+    href: ../../api/calendargroup-list-calendars.md
   - name: Create Calendar
-    href: api/calendargroup-post-calendars.md
+    href: ../../api/calendargroup-post-calendars.md
 - name: Event
   items:
   - name: Event
-    href: resources/event.md
+    href: ../../resources/event.md
   - name: List events
-    href: api/user-list-events.md
+    href: ../../api/user-list-events.md
   - name: Create event
-    href: api/user-post-events.md
+    href: ../../api/user-post-events.md
   - name: Get event
-    href: api/event-get.md
+    href: ../../api/event-get.md
   - name: Update
-    href: api/event-update.md
+    href: ../../api/event-update.md
   - name: Delete
-    href: api/event-delete.md
+    href: ../../api/event-delete.md
   - name: delta
-    href: api/event-delta.md
+    href: ../../api/event-delta.md
   - name: forward
-    href: api/event-forward.md
+    href: ../../api/event-forward.md
   - name: cancel
-    href: api/event-cancel.md
+    href: ../../api/event-cancel.md
   - name: accept
-    href: api/event-accept.md
+    href: ../../api/event-accept.md
   - name: tentativelyAccept
-    href: api/event-tentativelyaccept.md
+    href: ../../api/event-tentativelyaccept.md
   - name: decline
-    href: api/event-decline.md
+    href: ../../api/event-decline.md
   - name: dismissReminder
-    href: api/event-dismissreminder.md
+    href: ../../api/event-dismissreminder.md
   - name: snoozeReminder
-    href: api/event-snoozereminder.md
+    href: ../../api/event-snoozereminder.md
   - name: List instances
-    href: api/event-list-instances.md
+    href: ../../api/event-list-instances.md
   - name: List attachments
-    href: api/event-list-attachments.md
+    href: ../../api/event-list-attachments.md
   - name: Add attachment
-    href: api/event-post-attachments.md
+    href: ../../api/event-post-attachments.md
   - name: Create open extension
-    href: api/opentypeextension-post-opentypeextension.md
+    href: ../../api/opentypeextension-post-opentypeextension.md
   - name: Get open extension
-    href: api/opentypeextension-get.md
+    href: ../../api/opentypeextension-get.md
   - name: Add schema extension values
-    href: graph/extensibility-schema-groups
+    href: ../../graph/extensibility-schema-groups
   - name: Create single-value extended property
-    href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+    href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
   - name: Get event with single-value extended property
-    href: api/singlevaluelegacyextendedproperty-get.md
+    href: ../../api/singlevaluelegacyextendedproperty-get.md
   - name: Create multi-value extended property
-    href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+    href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
   - name: Get event with multi-value extended property
-    href: api/multivaluelegacyextendedproperty-get.md
+    href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Outlook category
   items:
   - name: Outlook category
-    href: resources/outlookcategory.md
+    href: ../../resources/outlookcategory.md
   - name: List categories
-    href: api/outlookuser-list-mastercategories.md
+    href: ../../api/outlookuser-list-mastercategories.md
   - name: Get category
-    href: api/outlookcategory-get.md
+    href: ../../api/outlookcategory-get.md
   - name: Create
-    href: api/outlookuser-post-mastercategories.md
+    href: ../../api/outlookuser-post-mastercategories.md
   - name: Update
-    href: api/outlookcategory-update.md
+    href: ../../api/outlookcategory-update.md
   - name: Delete
-    href: api/outlookcategory-delete.md
+    href: ../../api/outlookcategory-delete.md
 - name: Attachment
   items:
   - name: Attachment
-    href: resources/attachment.md
+    href: ../../resources/attachment.md
   - name: Get attachment
-    href: api/attachment-get.md
+    href: ../../api/attachment-get.md
   - name: Add attachment to a user event
-    href: api/event-post-attachments.md
+    href: ../../api/event-post-attachments.md
   - name: Add attachment to a message
-    href: api/message-post-attachments.md
+    href: ../../api/message-post-attachments.md
   - name: Create session to attach large file
-    href: api/attachment-createuploadsession.md
+    href: ../../api/attachment-createuploadsession.md
   - name: Add attachment to a post
-    href: api/post-post-attachments.md
+    href: ../../api/post-post-attachments.md
   - name: List attachments of a user event
-    href: api/event-list-attachments.md
+    href: ../../api/event-list-attachments.md
   - name: List attachments of a message
-    href: api/message-list-attachments.md
+    href: ../../api/message-list-attachments.md
   - name: List attachments of a post
-    href: api/post-list-attachments.md
+    href: ../../api/post-list-attachments.md
   - name: Delete
-    href: api/attachment-delete.md
+    href: ../../api/attachment-delete.md
 - name: Calendar permission
   items:
   - name: Calendar permission
-    href: resources/calendarpermission.md
+    href: ../../resources/calendarpermission.md
   - name: List
-    href: api/calendar-list-calendarpermissions.md
+    href: ../../api/calendar-list-calendarpermissions.md
   - name: Create
-    href: api/calendar-post-calendarpermissions.md
+    href: ../../api/calendar-post-calendarpermissions.md
   - name: Get calendarPermission
-    href: api/calendarpermission-get.md
+    href: ../../api/calendarpermission-get.md
   - name: Update
-    href: api/calendarpermission-update.md
+    href: ../../api/calendarpermission-update.md
   - name: Delete
-    href: api/calendarpermission-delete.md
+    href: ../../api/calendarpermission-delete.md
 - name: Extended properties
   href: resources/extended-properties-overview.md
   items:
   - name: Single value legacy extended property
     items:
     - name: Single value legacy extended property
-      href: resources/singlevaluelegacyextendedproperty.md
+      href: ../../resources/singlevaluelegacyextendedproperty.md
     - name: Post
-      href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+      href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
     - name: Get
-      href: api/singlevaluelegacyextendedproperty-get.md
+      href: ../../api/singlevaluelegacyextendedproperty-get.md
   - name: Multi value legacy extended property
     items:
     - name: Multi value legacy extended property
-      href: resources/multivaluelegacyextendedproperty.md
+      href: ../../resources/multivaluelegacyextendedproperty.md
     - name: Post
-      href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+      href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
     - name: Get
-      href: api/multivaluelegacyextendedproperty-get.md
+      href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Places
   items:
   - name: Place
     items:
     - name: Place
-      href: resources/place.md
+      href: ../../resources/place.md
     - name: List places
-      href: api/place-list.md
+      href: ../../api/place-list.md
     - name: Get place
-      href: api/place-get.md
+      href: ../../api/place-get.md
     - name: Update place
-      href: api/place-update.md
+      href: ../../api/place-update.md
   - name: Room
     items:
     - name: Room
-      href: resources/room.md
+      href: ../../resources/room.md
     - name: List places
-      href: api/place-list.md
+      href: ../../api/place-list.md
     - name: Get place
-      href: api/place-get.md
+      href: ../../api/place-get.md
   - name: Room list
     items:
     - name: Room list
-      href: resources/roomlist.md
+      href: ../../resources/roomlist.md
     - name: List places
-      href: api/place-list.md
+      href: ../../api/place-list.md
     - name: Get place
-      href: api/place-get.md
+      href: ../../api/place-get.md

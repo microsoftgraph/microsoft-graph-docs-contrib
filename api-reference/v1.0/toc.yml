@@ -610,51 +610,51 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: Get open extension
         href: api/opentypeextension-get.md
-- name: Applications
-  href: toc/applications/toc.yml
-- name: Calendars
-  href: toc/calendars/toc.yml
-- name: Change notifications
-  href: toc/change-notifications/toc.yml
-- name: Compliance
-  href: toc/compliance/toc.yml
-- name: Cross-device experiences
-  href: toc/cross-device-experiences/toc.yml
-- name: Customer booking
-  href: toc/customer-booking/toc.yml
-- name: Devices and apps
-  href: toc/devices-and-apps/toc.yml
-- name: Education
-  href: toc/education/toc.yml
-- name: Extensions
-  href: toc/extensions/toc.yml
-- name: External data connections
-  href: toc/external-data-connections/toc.yml
-- name: Files
-  href: toc/files/toc.yml
-- name: Identity and access
-  href: toc/identity-and-access/toc.yml
-- name: Mail
-  href: toc/mail/toc.yml
-- name: Notes
-  href: toc/notes/toc.yml
-- name: People and workplace intelligence
-  href: toc/people-and-workplace-intelligence/toc.yml
-- name: Personal contacts
-  href: toc/personal-contacts/toc.yml
-- name: Reports
-  href: toc/reports/toc.yml
-- name: Search
-  href: toc/search/toc.yml
-- name: Security
-  href: toc/security/toc.yml
-- name: Sites and lists
-  href: toc/sites-and-lists/toc.yml
-- name: Tasks and plans
-  href: toc/tasks-and-plans/toc.yml
-- name: Teamwork and communications
-  href: toc/teamwork-and-communications/toc.yml
-- name: To-do tasks
-  href: toc/to-do-tasks/toc.yml
-- name: Workbooks and charts
-  href: toc/workbooks-and-charts/toc.yml
+  - name: Applications
+    href: toc/applications/toc.yml
+  - name: Calendars
+    href: toc/calendars/toc.yml
+  - name: Change notifications
+    href: toc/change-notifications/toc.yml
+  - name: Compliance
+    href: toc/compliance/toc.yml
+  - name: Cross-device experiences
+    href: toc/cross-device-experiences/toc.yml
+  - name: Customer booking
+    href: toc/customer-booking/toc.yml
+  - name: Devices and apps
+    href: toc/devices-and-apps/toc.yml
+  - name: Education
+    href: toc/education/toc.yml
+  - name: Extensions
+    href: toc/extensions/toc.yml
+  - name: External data connections
+    href: toc/external-data-connections/toc.yml
+  - name: Files
+    href: toc/files/toc.yml
+  - name: Identity and access
+    href: toc/identity-and-access/toc.yml
+  - name: Mail
+    href: toc/mail/toc.yml
+  - name: Notes
+    href: toc/notes/toc.yml
+  - name: People and workplace intelligence
+    href: toc/people-and-workplace-intelligence/toc.yml
+  - name: Personal contacts
+    href: toc/personal-contacts/toc.yml
+  - name: Reports
+    href: toc/reports/toc.yml
+  - name: Search
+    href: toc/search/toc.yml
+  - name: Security
+    href: toc/security/toc.yml
+  - name: Sites and lists
+    href: toc/sites-and-lists/toc.yml
+  - name: Tasks and plans
+    href: toc/tasks-and-plans/toc.yml
+  - name: Teamwork and communications
+    href: toc/teamwork-and-communications/toc.yml
+  - name: To-do tasks
+    href: toc/to-do-tasks/toc.yml
+  - name: Workbooks and charts
+    href: toc/workbooks-and-charts/toc.yml

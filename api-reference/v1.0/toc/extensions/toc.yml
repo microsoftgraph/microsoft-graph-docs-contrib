@@ -4,44 +4,44 @@ items:
   - name: Extension property
     items:
     - name: Extension property
-      href: resources/extensionproperty.md
+      href: ../../resources/extensionproperty.md
     - name: Create extensionProperties
-      href: api/application-post-extensionproperty.md
+      href: ../../api/application-post-extensionproperty.md
     - name: List extensionProperties
-      href: api/application-list-extensionproperty.md
+      href: ../../api/application-list-extensionproperty.md
     - name: Get extensionProperty
-      href: api/extensionproperty-get.md
+      href: ../../api/extensionproperty-get.md
     - name: Delete extensionProperty
-      href: api/extensionproperty-delete.md
+      href: ../../api/extensionproperty-delete.md
     - name: Get available extensions
-      href: api/directoryobject-getavailableextensionproperties.md
+      href: ../../api/directoryobject-getavailableextensionproperties.md
 - name: Open extensions
   items:
   - name: Open type extension
     items:
     - name: Open type extension
-      href: resources/opentypeextension.md
+      href: ../../resources/opentypeextension.md
     - name: Create
-      href: api/opentypeextension-post-opentypeextension.md
+      href: ../../api/opentypeextension-post-opentypeextension.md
     - name: Get
-      href: api/opentypeextension-get.md
+      href: ../../api/opentypeextension-get.md
     - name: Update
-      href: api/opentypeextension-update.md
+      href: ../../api/opentypeextension-update.md
     - name: Delete
-      href: api/opentypeextension-delete.md
+      href: ../../api/opentypeextension-delete.md
 - name: Schema extensions
   items:
   - name: Schema extension
     items:
     - name: Schema extension
-      href: resources/schemaextension.md
+      href: ../../resources/schemaextension.md
     - name: Create
-      href: api/schemaextension-post-schemaextensions.md
+      href: ../../api/schemaextension-post-schemaextensions.md
     - name: List
-      href: api/schemaextension-list.md
+      href: ../../api/schemaextension-list.md
     - name: Get
-      href: api/schemaextension-get.md
+      href: ../../api/schemaextension-get.md
     - name: Update
-      href: api/schemaextension-update.md
+      href: ../../api/schemaextension-update.md
     - name: Delete
-      href: api/schemaextension-delete.md
+      href: ../../api/schemaextension-delete.md
