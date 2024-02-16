@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 
 #### Request
 
-Here's an example  of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -124,7 +124,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -193,7 +193,7 @@ The following example shows how to add a passcode to a meeting. The passcode is 
 
 #### Request
 
-Here's an example  of a request.
+The following example shows a request.
 
 >**Note:** The passcode is automatically generated and a custom passcode is not supported.
 
@@ -254,7 +254,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -314,7 +314,7 @@ When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** 
 
 #### Request
 
-Here's an example  of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -386,7 +386,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
