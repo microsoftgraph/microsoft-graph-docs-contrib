@@ -23,12 +23,12 @@ Represents permissions for a role in a Shifts schedule.
 ### Supported resource actions
 |Resource Action|Description|
 |:---|:---|
-|`CanModifyShiftRequestsCapabilities`|Users that have a role that has this permission enabled will have the capability to modify the settings to enable or disable open shifts, swap shifts, and request and offer shifts for their team.|
-|`CanModifyTimeClockCapabilities`|Users that have a role that has this permission enabled will have the capability to modify the settings to enable or disable time clock setting for their team.|
-|`CanModifyTimeClockGeoFencingSettings`|Users that have a role that has this permission enabled will have the capability to enable or disable time clock location detection setting for their team.|
-|`CanModifyTimeOffRequestsCapabilities`|Users that have a role that has this permission enabled will have the capability to enable or disable time off requests setting for their team.|
-|`CanModifyTimeOffReasons`|Users that have a role that has this permission enabled will have the capability to to add, edit, and delete time off reasons for their team.|
-|`CanModifySchedulingGroups`|Users that have a role that has this permission enabled will have the capability to add, edit, and delete groups in Shifts. Regardless of the value of this permission, users that have an owner role will have the capability to add and delete team members on the groups.|
+|`CanModifyShiftRequestsCapabilities`|Roles with this permission have the capability to modify the settings to enable or disable open shifts, swap shifts, and request and offer shifts for their team.|
+|`CanModifyTimeClockCapabilities`|Roles with this permission enabled have the capability to modify the settings to enable or disable time clock setting for their team.|
+|`CanModifyTimeClockGeoFencingSettings`|Roles with this permission enabled have the capability to enable or disable time clock location detection setting for their team.|
+|`CanModifyTimeOffRequestsCapabilities`|Roles with this permission enabled have the capability to enable or disable time off requests setting for their team.|
+|`CanModifyTimeOffReasons`|Roles with this permission enabled have the capability to add, edit, and delete time off reasons for their team.|
+|`CanModifySchedulingGroups`|Roles with this permission enabled have the capability to add, edit, and delete groups in Shifts. Regardless of the value of this permission, users that have an owner role have the capability to add and delete team members on the groups.|
 
 
 ## Relationships
