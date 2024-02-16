@@ -63,14 +63,14 @@ If successful, this method returns a `200 OK` response code and an updated [educ
   "name": "update_educationassignmentdefaults_e1"
 }
 -->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
+``` http
+PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentDefaults
 Content-Type: application/json
 
 {
-  "addedStudentAction": "assignIfOpen",
-  "addToCalendarAction": "studentsAndTeamOwners",
-  "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
+    "addedStudentAction": "assignIfOpen",
+    "addToCalendarAction": "studentsAndTeamOwners",
+    "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/channels('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')"
 }
 ```
 
@@ -121,10 +121,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "addedStudentAction": "assignIfOpen",
-  "addToCalendarAction": "studentsAndTeamOwners",
-  "dueTime": "2021-08-30T23:59:00Z",
-  "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentDefaults/$entity",
+    "dueTime": "23:59:00.0000000",
+    "notificationChannelUrl": "https://graph.microsoft.com/v1.0/teams/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/channels/37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+    "addedStudentAction": "assignIfOpen",
+    "addToCalendarAction": "studentsAndTeamOwners"
 }
 ```
 ## Related content

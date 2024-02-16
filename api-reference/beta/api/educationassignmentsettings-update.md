@@ -67,8 +67,8 @@ The following example shows a request.
   "name": "update_educationassignmentsettings"
 }
 -->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
+``` http
+PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
 Content-Type: application/json
 
 {
@@ -126,7 +126,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "submissionAnimationDisabled": true
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "submissionAnimationDisabled": true,
+    "gradingCategories@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories": [
+        {
+            "id": "ea9ef2ff-2cf9-4423-ac6a-b95d8100e207",
+            "displayName": "Tests",
+            "percentageWeight": 40
+        },
+        {
+            "id": "a516e125-c6da-40ad-a300-39ab13568168",
+            "displayName": "new name 2",
+            "percentageWeight": 60
+        }
+    ]
 }
 ```
 

@@ -69,8 +69,8 @@ The following example shows a request.
   "name": "update_educationrubric"
 }-->
 
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/education/me/rubrics/{id}
+```http
+PATCH https://graph.microsoft.com/beta/education/me/rubrics/53bc2906-ec10-4a18-8a48-d82e549d5360
 Content-type: application/json
 
 {
@@ -129,47 +129,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/me/rubrics/$entity",
     "displayName": "Example Credit Rubric after display name patch",
-    "id": "c4459fcb-a761-4f70-ac5b-e9466cb77c2a",
+    "createdDateTime": "2024-02-15T16:44:09.167776Z",
+    "lastModifiedDateTime": "2024-02-15T16:44:44.6414076Z",
+    "id": "53bc2906-ec10-4a18-8a48-d82e549d5360",
+    "grading": null,
     "description": {
         "content": "This is an example of a credit rubric (no points)",
         "contentType": "text"
     },
-    "levels": [
-        {
-            "levelId": "dec665d4-cf1b-4481-ac61-1d5b6188f4f5",
-            "displayName": "Good",
-            "description": {
-                "content": "",
-                "contentType": "text"
-            }
-        },
-        {
-            "levelId": "3f2e4b0f-508e-4005-984b-17e061bc5377",
-            "displayName": "Poor",
-            "description": {
-                "content": "",
-                "contentType": "text"
-            }
-        }
-    ],
     "qualities": [
         {
-            "qualityId": "dc79dcbf-b536-4797-9c5b-902f28129fd0",
+            "qualityId": "d18657f0-5e4c-4ca3-a5e8-38ccd05fa69d",
+            "displayName": null,
+            "weight": null,
             "description": {
                 "content": "Argument",
                 "contentType": "text"
             },
             "criteria": [
                 {
-                    "id": "8937fa15-4a7c-4f27-bd01-ca3471d2d1d5",
                     "description": {
                         "content": "The essay's argument is persuasive.",
                         "contentType": "text"
                     }
                 },
                 {
-                    "id": "4dfb5263-1d3f-4f0a-93ef-d24d800d0f69",
                     "description": {
                         "content": "The essay's argument does not make sense.",
                         "contentType": "text"
@@ -178,21 +164,21 @@ Content-type: application/json
             ]
         },
         {
-            "qualityId": "7e087062-ac25-4629-8386-a946350936db",
+            "qualityId": "ce3fa04f-50d2-4b78-996e-88f93d50712b",
+            "displayName": null,
+            "weight": null,
             "description": {
                 "content": "Spelling and Grammar",
                 "contentType": "text"
             },
             "criteria": [
                 {
-                    "id": "12276eb2-122c-4ad2-ba92-335ea798c88e",
                     "description": {
                         "content": "The essay uses proper spelling and grammar with few or no errors.",
                         "contentType": "text"
                     }
                 },
                 {
-                    "id": "3db7e6b2-2b1b-4f8e-9fca-bea701159145",
                     "description": {
                         "content": "The essay has numerous errors in spelling and/or grammar.",
                         "contentType": "text"
@@ -200,7 +186,43 @@ Content-type: application/json
                 }
             ]
         }
-    ]
+    ],
+    "levels": [
+        {
+            "levelId": "7d0fa2c4-8718-4333-ad52-cee410cc8856",
+            "displayName": "Good",
+            "grading": null,
+            "description": {
+                "content": "",
+                "contentType": "text"
+            }
+        },
+        {
+            "levelId": "ebd28c78-ff5b-4bad-9c4f-48100ad3fbab",
+            "displayName": "Poor",
+            "grading": null,
+            "description": {
+                "content": "",
+                "contentType": "text"
+            }
+        }
+    ],
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
+            "displayName": null
+        }
+    }
 }
 ```
 
