@@ -55,11 +55,14 @@ There are also default permissions for customers in Microsoft Entra ID for custo
 
 The user ID or userPrincipalName is always the signed-in user's.
 
-| User operation | API operation | Permissions required |
-|--|--|--|
-| Read profile | `GET /me` or `GET /users/{id or userPrincipalName}` | User.Read |
-| Update profile | `PATCH /me` or `PATCH /users/{id or userPrincipalName}` | User.ReadWrite |
-| Change password | `POST /users/{id or userPrincipalName}/authentication/methods/{id}/resetPassword`  where the authentication method ID is always `28c10230-6103-485e-b985-444c60001490`. | UserAuthenticationMethod.ReadWrite |
+| User operation  | API operation                                           | Permissions required       |
+|-----------------|---------------------------------------------------------|----------------------------|
+| Read profile    | `GET /me` or `GET /users/{id or userPrincipalName}`     | User.Read                  |
+| Update profile  | `PATCH /me` or `PATCH /users/{id or userPrincipalName}` <br/><br/> The following properties are updatable: city, country, displayName, givenName, jobTitle, postalCode, state, streetAddress, surname, and preferredLanguage | User.ReadWrite             |
+| Change password | `POST /me/changePassword`                               | Directory.AccessAsUser.All |
+<!--
+| Reset password | `POST /users/{id or userPrincipalName}/authentication/methods/{id}/resetPassword`  where the authentication method ID is always `28c10230-6103-485e-b985-444c60001490`. | UserAuthenticationMethod.ReadWrite |
+-->
 
 ### Who can reset passwords
 
