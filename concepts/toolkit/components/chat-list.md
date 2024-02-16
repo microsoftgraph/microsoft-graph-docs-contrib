@@ -44,12 +44,12 @@ The following events are fired from the component.
 
 | Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template |
 | ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-| `onAllMessagesRead` | Fired after all messages are marked as read as a result of the user selecting the `Mark all as read` option. | string array of chat id | No | No | No |
-| `onConnectionChanged` | Fired when connection changes. True if we ChatList is connected and ready and False if not. | `Boolean` | No | No | No |
-| `onLoaded` | Fired when chat threads are loaded or reloaded. | `GraphChatThread` | No | No | No |
+| `onAllMessagesRead` | Fired after all messages are marked as read as a result of the user selecting the `Mark all as read` using the `markAllChatThreadsAsRead` method found in `IChatListActions`. | string array of chat id | No | No | No |
+| `onConnectionChanged` | Fired when connection status changes. `True` if ChatList is ready to be used and `False` if ChatList is encountering one or more issues and is not ready to be used. | `Boolean` | No | No | No |
+| `onLoaded` | Fired when chat threads are loaded or reloaded. We should note that this event can be fired more than one time as ChatList is loaded with additional chat threads to try to fill out any empty space on the bottom of the ChatList component. | `GraphChatThread` | No | No | No |
 | `onMessageReceived` | Fired after a chat message is received. | `ChatMessage` | No | No | No |
-| `onSelected` | Fired after a user selects a different chat thread. | `GraphChatThread` | No | No | No |
-| `onUnselected` | Fired after a user selects a different chat thread if there was one previously selected. | `GraphChatThread` | No | No | No |
+| `onSelected` | Fired after a user selects a different chat thread. The newly selected chat thread is returned. | `GraphChatThread` | No | No | No |
+| `onUnselected` | Fired after a user selects a different chat thread if there was one previously selected. The previously selected chat thread is returned. | `GraphChatThread` | No | No | No |
 
 ## Templates
 
