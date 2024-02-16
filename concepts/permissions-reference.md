@@ -6519,9 +6519,11 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ## Resource-specific consent (RSC) permissions
 
+Learn more about [RSC authorization framework and RSC permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+
 ---
 
-Learn more about [RSC authorization framework and RSC permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).| Name | ID | Display text | Description |
+| Name | ID | Display text | Description |
 |--|--|--|--|
 | Calls.AccessMedia.Chat | e716890c-c30a-4ac3-a0e3-551e7d9e8deb | Access media streams in calls associated with this chat or meeting | Allows the app to access media streams in calls associated with this chat or meeting, without a signed-in user. 
 | Calls.JoinGroupCalls.Chat | a01e73f1-94da-4f6d-9b73-02e4ea65560b | Join calls associated with this chat or meeting | Allows the app to join calls associated with this chat or meeting, without a signed-in user. 
