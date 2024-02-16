@@ -89,7 +89,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
-  "invitedAttendees": [{"@odata.type": "microsoft.graph.communicationsUserIdentity"}],
+  "invitedAttendees": [{"@odata.type": "microsoft.graph.identity"}],
   "isInviteOnly": "Boolean",
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "status": "String"
