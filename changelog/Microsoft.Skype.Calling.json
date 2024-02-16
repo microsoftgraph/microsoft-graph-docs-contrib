@@ -7,6 +7,14 @@
           "ApiChange": "Method",
           "ChangedApiName": "virtualEventPresenter",
           "ChangeType": "Addition",
+          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/virtualevent-list-presenters?view=graph-rest-beta) operation to the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventpresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventPresenter",
+          "ChangeType": "Addition",
           "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/virtualevent-post-presenters?view=graph-rest-beta) operation to the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventpresenter?view=graph-rest-beta) resource.",
           "Target": "virtualEventPresenter"
         },
