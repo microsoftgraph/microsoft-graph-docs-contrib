@@ -31,8 +31,8 @@ The following example displays a conversation using the `mgt-chat-list` componen
 | None                              | chatThreadsPerPage  | The number of chat threads to render initially and subsequent `Load more` clicks. Required. |
 | None                              | selectedChatId  | Sets the default selected Chat thread based on the Chat Id. |
 | None                              | lastReadTimeInterval  | Interval in seconds by which the the current timestamp is cached to indicate user has seen a chat thread. Defaults to 30 seconds. |
-| None                              | menuItems           | Array of `ChatListMenuItem` that can be passed into the component to render menu item(s). A `Mark all as read` menu item will be added. When clicked, this button will unbold all chat threads. |
-| None                              | buttonItems         | Array of `ChatListButtonItem` that can be passed into the component to render button(s). |
+| None                              | menuItems           | Array of `ChatListMenuItem` that can be passed into the component to render menu item(s). For each onClick event handler, the `IChatListActions` argument will provide actions that can be invoked such as `markAllChatThreadsAsRead` which will mark all visible chat threads as read. |
+| None                              | buttonItems         | Array of `ChatListButtonItem` that can be passed into the component to render button(s). For each onClick event handler, the `IChatListActions` argument will provide actions that can be invoked such as `markAllChatThreadsAsRead` which will mark all visible chat threads as read. |
 
 ## CSS custom properties
 
@@ -42,13 +42,14 @@ The `mgt-chat-list` component doesn't define CSS custom properties.
 
 The following events are fired from the component.
 
-| Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+| Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template |
 | ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-| `onLoaded` | Fired after the first page of chat threads are loaded. | No | No | No | No |
-| `onUnselected` | Fired after a user selects a different chat thread if there was one previously selected. | GraphChatThread | No | No | No |
-| `onSelected` | Fired after a user selects a different chat thread. | `GraphChat` | No | No | No |
-| `onMessageReceived` | Fired after a chat message is received. | `ChatMessage` | No | No | No |
 | `onAllMessagesRead` | Fired after all messages are marked as read as a result of the user selecting the `Mark all as read` option. | string array of chat id | No | No | No |
+| `onConnectionChanged` | Fired when connection changes. True if we ChatList is connected and ready and False if not. | `Boolean` | No | No | No |
+| `onLoaded` | Fired when chat threads are loaded or reloaded. | `GraphChatThread` | No | No | No |
+| `onMessageReceived` | Fired after a chat message is received. | `ChatMessage` | No | No | No |
+| `onSelected` | Fired after a user selects a different chat thread. | `GraphChatThread` | No | No | No |
+| `onUnselected` | Fired after a user selects a different chat thread if there was one previously selected. | `GraphChatThread` | No | No | No |
 
 ## Templates
 
@@ -61,6 +62,7 @@ This control uses the following Microsoft Graph APIs and permissions.
 | Configuration | Permission | API |
 | - | - | - |
 | User Id is inferred from logged in user. | Chat.Read, Chat.ReadWrite, Chat.ReadBasic | [/users/{userId}/chats/getAllmessages](/graph/teams-changenotifications-chatmessage#subscribe-to-changes-at-the-user-level), [/me/chats](/graph/api/chat-list) |
+| Chat Id is inferred from each loaded Chat Thread. | TeamsAppInstallation.ReadForChat, Chat.Read, Chat.ReadWrite | [/chats/{chat-id}/installedApps](/graph/api/chat-list-installedapps), [/chats/{id}](/graph/api/chat-get) |
 
 ## Authentication
 
