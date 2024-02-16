@@ -156,7 +156,7 @@ The `@odata.nextLink` URL indicates there are more messages in the folder to get
       "sender": {
         "emailAddress": {
           "name": "Dana Swope",
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       },
       "id": "AAMkADNkNAAASq35xAAA="
@@ -169,7 +169,7 @@ The `@odata.nextLink` URL indicates there are more messages in the folder to get
       "sender": {
         "emailAddress": {
           "name": "Samantha Booth",
-          "address": "samanthab@contoso.onmicrosoft.com"
+          "address": "samanthab@contoso.com"
         }
       },
       "id": "AQMkADNkNAAAVRMKAAAAA=="
@@ -232,7 +232,7 @@ more messages to get from the folder.
       "sender": {
         "emailAddress": {
           "name": "Randi Welch",
-          "address": "randiw@contoso.onmicrosoft.com"
+          "address": "randiw@contoso.com"
         }
       },
       "id": "AQMkADNkNAAAgWJAAAA"
@@ -336,7 +336,7 @@ The response contains a `@odata.deltaLink`. This indicates that all changes in t
       "sender": {
         "emailAddress": {
           "name": "Dana Swope",
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       },
       "id": "AAMkADNkNAAASq35xAAA="
@@ -550,7 +550,7 @@ The response contains a `@odata.deltaLink`. This indicates that all changes in t
     ]
 }
 ```
-## See also
+## Related content
 
 - [Microsoft Graph delta query](delta-query-overview.md)
 - [Get incremental changes to events in a calendar view](delta-query-events.md)

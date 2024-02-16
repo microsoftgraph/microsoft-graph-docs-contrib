@@ -129,7 +129,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - [List all teams](/graph/teams-list-all-teams)
 - [Get team](../api/team-get.md)
 - [List associated teams](../api/associatedteaminfo-list.md)

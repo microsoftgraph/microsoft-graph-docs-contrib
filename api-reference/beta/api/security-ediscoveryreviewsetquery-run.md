@@ -176,7 +176,7 @@ Content-Type: application/json
                 "Recipients": null,
                 "Author@odata.type": "#Collection(String)",
                 "Author": [
-                    "meganb@m365x809305.onmicrosoft.com"
+                    "meganb@contoso.com"
                 ],
                 "CreatedTime": "2021-09-14T12:00:53Z",
                 "Received": null,
