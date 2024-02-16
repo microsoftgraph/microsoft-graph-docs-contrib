@@ -61,7 +61,7 @@ Here's an example of the request.
   "name": "delete_educationrubric_from_educationassignment"
 }-->
 
-```msgraph-interactive
+```http
 DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/rubric/$ref
 ```
 

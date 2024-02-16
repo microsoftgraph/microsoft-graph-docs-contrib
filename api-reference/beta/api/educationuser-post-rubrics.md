@@ -60,7 +60,7 @@ The following is an example of the request to post a credit rubric (a rubric wit
   "name": "create_educationrubric_from_educationuser_1"
 }-->
 
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/education/me/rubrics
 Content-type: application/json
 
@@ -263,7 +263,7 @@ The following is an example of the request to post a rubric with points.
   "name": "create_educationrubric_from_educationuser_2"
 }-->
 
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/education/me/rubrics
 Content-type: application/json
 

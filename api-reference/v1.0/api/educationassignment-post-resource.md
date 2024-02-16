@@ -75,7 +75,7 @@ The following example shows a request.
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"],  
   "name": "create_educationlinkresource_from_educationassignment"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
 Content-type: application/json
 
@@ -179,7 +179,7 @@ The following example shows a request.
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"],  
   "name": "create_educationwordresource_from_educationassignment"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
 Content-type: application/json
 
@@ -284,7 +284,7 @@ The following example shows a request.
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"],  
   "name": "create_educationfileresource_from_educationassignment"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
 Content-type: application/json
 
@@ -391,7 +391,7 @@ The following example shows a request.
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
   "name": "create_educationexcelresource_from_educationassignment"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
 Content-type: application/json
 
@@ -494,7 +494,7 @@ The following example shows a request.
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
   "name": "create_educationpowerpointresource_from_educationassignment"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
 Content-type: application/json
 
@@ -597,7 +597,7 @@ The following example shows a request.
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
   "name": "create_educationmediaresource_from_educationassignment"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
 Content-type: application/json
 
@@ -701,7 +701,7 @@ The following example shows a request.
   "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461", "820371a1-4589-4a4a-8b40-9d5db94b9186"], 
   "name": "create_educationTeamsAppResource_from_educationassignmentsApp"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/820371a1-4589-4a4a-8b40-9d5db94b9186/resources
 Content-type: application/json
 

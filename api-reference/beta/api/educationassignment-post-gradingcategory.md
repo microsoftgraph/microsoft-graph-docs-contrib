@@ -50,7 +50,7 @@ The following example shows a request.
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","452184ea-a358-4a07-92b4-dce44601a612"],
   "name": "create_educationcategory_from_educationclass"
 }-->
-```msgraph-interactive
+```http
 PUT https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/452184ea-a358-4a07-92b4-dce44601a612/gradingCategory/$ref
 Content-type: application/json
 

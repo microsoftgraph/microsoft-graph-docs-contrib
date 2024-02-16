@@ -54,7 +54,7 @@ The following is an example of a request.
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","a3cce0ba-2008-4c4d-bf62-079408562d96"],
   "name": "educationassignment_setupfeedbackresourcesfolder"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/a3cce0ba-2008-4c4d-bf62-079408562d96/setUpFeedbackResourcesFolder
 Content-type: application/json
 

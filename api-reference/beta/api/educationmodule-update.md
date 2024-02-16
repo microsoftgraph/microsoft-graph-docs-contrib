@@ -57,7 +57,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "update_educationmodule"
 }-->
-```msgraph-interactive
+```http
 PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/ba8e4215-4fb2-4dba-abe7-a8f2585177d3
 Content-type: application/json
 

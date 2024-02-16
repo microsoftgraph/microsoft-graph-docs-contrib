@@ -52,7 +52,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_educationassignment_from_educationclass"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments
 Content-type: application/json
 

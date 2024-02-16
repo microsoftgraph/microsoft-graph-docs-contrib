@@ -48,7 +48,7 @@ The following example shows a request.
   "name": "add_educationcategory_to_educationassignment",
   "sampleKeys": ["11021", "19002", "ec98f158-341d-4fea-9f8c-14a250d489ac"]
 }-->
-```msgraph-interactive
+```http
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
 ```
 
