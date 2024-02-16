@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of user object.
 
-> **Note:** Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
->
-> This request might have replication delays for users that were recently created, updated, or deleted.
+This operation returns by default only a subset of the more commonly used properties for each user. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) for the user and specify the properties in a `$select` OData query option. Because the **user** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
+
+Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
