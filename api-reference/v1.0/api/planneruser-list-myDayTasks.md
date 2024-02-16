@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve a list of **plannertask** objects to be shown in MyDay view of the user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -54,7 +52,7 @@ Here's an example of the request.
   "name": "planneruser_get_myDayTasks"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/planner/myDayTasks
+GET https://graph.microsoft.com/v1.0/me/planner/myDayTasks
 ```
 ---
 

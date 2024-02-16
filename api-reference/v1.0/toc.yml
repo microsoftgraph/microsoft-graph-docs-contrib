@@ -8434,6 +8434,8 @@ items:
                 href: api/planner-post-tasks.md
               - name: Get tasks for user
                 href: api/planneruser-list-tasks.md
+              - name: List myDay tasks
+                href: api/planneruser-list-myDayTasks.md
               - name: Get task
                 href: api/plannertask-get.md
               - name: Update task

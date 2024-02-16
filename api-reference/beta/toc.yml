@@ -369,6 +369,8 @@ items:
                 href: api/planneruser-list-recentplans.md
               - name: List tasks
                 href: api/planneruser-list-tasks.md
+              - name: List myDay tasks
+                href: api/planneruser-list-myDayTasks.md
               - name: Update settings
                 href: api/planneruser-update.md
           - name: Preferred languages and regional formats (preview)
@@ -17716,6 +17718,8 @@ items:
                 href: api/plannertask-delete.md
               - name: List user's tasks
                 href: api/planneruser-list-tasks.md
+              - name: List myDay tasks
+                href: api/planneruser-list-myDayTasks.md
               - name: Get delta
                 href: api/plannertask-delta.md
           - name: Bucket
@@ -17851,6 +17855,8 @@ items:
                 href: api/planneruser-list-recentplans.md
               - name: List user's assigned tasks
                 href: api/planneruser-list-tasks.md
+              - name: List myDay tasks
+                href: api/planneruser-list-myDayTasks.md
           - name: Task details
             href: resources/plannertaskdetails.md
             items:
