@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unified_group_source import UnifiedGroupSource
+from msgraph.generated.models.group import Group
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnifiedGroupSource(
 	group = Group(
-		mail = "SOCTeam@M365x809305.onmicrosoft.com",
+		mail = "SOCTeam@contoso.com",
 	),
 	included_sources = SourceType.Mailbox | SourceType.Site,
 )

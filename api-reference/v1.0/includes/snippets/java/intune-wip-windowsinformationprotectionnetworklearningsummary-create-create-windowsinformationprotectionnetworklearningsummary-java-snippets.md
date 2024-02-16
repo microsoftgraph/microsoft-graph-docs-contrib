@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WindowsInformationProtectionNetworkLearningSummary windowsInformationProtectionNetworkLearningSummary = new WindowsInformationProtectionNetworkLearningSummary();
-windowsInformationProtectionNetworkLearningSummary.url = "Url value";
-windowsInformationProtectionNetworkLearningSummary.deviceCount = 11;
+windowsInformationProtectionNetworkLearningSummary.setOdataType("#microsoft.graph.windowsInformationProtectionNetworkLearningSummary");
+windowsInformationProtectionNetworkLearningSummary.setUrl("Url value");
+windowsInformationProtectionNetworkLearningSummary.setDeviceCount(11);
+WindowsInformationProtectionNetworkLearningSummary result = graphClient.deviceManagement().windowsInformationProtectionNetworkLearningSummaries().post(windowsInformationProtectionNetworkLearningSummary);
 
-graphClient.deviceManagement().windowsInformationProtectionNetworkLearningSummaries()
-	.buildRequest()
-	.post(windowsInformationProtectionNetworkLearningSummary);
 
 ```

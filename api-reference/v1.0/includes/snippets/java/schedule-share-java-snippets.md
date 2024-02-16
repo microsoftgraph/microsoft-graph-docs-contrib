@@ -4,22 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Boolean notifyTeam = true;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-OffsetDateTime startDateTime = OffsetDateTimeSerializer.deserialize("10/08/2018 00:00:00");
+com.microsoft.graph.teams.item.schedule.share.SharePostRequestBody sharePostRequestBody = new com.microsoft.graph.teams.item.schedule.share.SharePostRequestBody();
+sharePostRequestBody.setNotifyTeam(true);
+OffsetDateTime startDateTime = OffsetDateTime.parse("2018-10-08T00:00:00.000Z");
+sharePostRequestBody.setStartDateTime(startDateTime);
+OffsetDateTime endDateTime = OffsetDateTime.parse("2018-10-15T00:00:00.000Z");
+sharePostRequestBody.setEndDateTime(endDateTime);
+graphClient.teams().byTeamId("{team-id}").schedule().share().post(sharePostRequestBody);
 
-OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("10/15/2018 00:00:00");
-
-graphClient.teams("{teamId}").schedule()
-	.share(ScheduleShareParameterSet
-		.newBuilder()
-		.withNotifyTeam(notifyTeam)
-		.withStartDateTime(startDateTime)
-		.withEndDateTime(endDateTime)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -41,7 +41,7 @@ POST /groups/{id}/conversations
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json          |
 
 ## Request body
@@ -86,7 +86,7 @@ Content-type: application/json
             {
               "emailAddress":{
                 "name":"Adele Vance",
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"AdeleV@contoso.com"
               }
             }
           ]

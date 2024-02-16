@@ -4,28 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WindowsAutopilotDeviceIdentity windowsAutopilotDeviceIdentity = new WindowsAutopilotDeviceIdentity();
-windowsAutopilotDeviceIdentity.groupTag = "Group Tag value";
-windowsAutopilotDeviceIdentity.purchaseOrderIdentifier = "Purchase Order Identifier value";
-windowsAutopilotDeviceIdentity.serialNumber = "Serial Number value";
-windowsAutopilotDeviceIdentity.productKey = "Product Key value";
-windowsAutopilotDeviceIdentity.manufacturer = "Manufacturer value";
-windowsAutopilotDeviceIdentity.model = "Model value";
-windowsAutopilotDeviceIdentity.enrollmentState = EnrollmentState.ENROLLED;
-windowsAutopilotDeviceIdentity.lastContactedDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:58:44.2908994+00:00");
-windowsAutopilotDeviceIdentity.addressableUserName = "Addressable User Name value";
-windowsAutopilotDeviceIdentity.userPrincipalName = "User Principal Name value";
-windowsAutopilotDeviceIdentity.resourceName = "Resource Name value";
-windowsAutopilotDeviceIdentity.skuNumber = "Sku Number value";
-windowsAutopilotDeviceIdentity.systemFamily = "System Family value";
-windowsAutopilotDeviceIdentity.azureActiveDirectoryDeviceId = "Azure Active Directory Device Id value";
-windowsAutopilotDeviceIdentity.managedDeviceId = "Managed Device Id value";
-windowsAutopilotDeviceIdentity.displayName = "Display Name value";
+windowsAutopilotDeviceIdentity.setOdataType("#microsoft.graph.windowsAutopilotDeviceIdentity");
+windowsAutopilotDeviceIdentity.setGroupTag("Group Tag value");
+windowsAutopilotDeviceIdentity.setPurchaseOrderIdentifier("Purchase Order Identifier value");
+windowsAutopilotDeviceIdentity.setSerialNumber("Serial Number value");
+windowsAutopilotDeviceIdentity.setProductKey("Product Key value");
+windowsAutopilotDeviceIdentity.setManufacturer("Manufacturer value");
+windowsAutopilotDeviceIdentity.setModel("Model value");
+windowsAutopilotDeviceIdentity.setEnrollmentState(EnrollmentState.Enrolled);
+OffsetDateTime lastContactedDateTime = OffsetDateTime.parse("2016-12-31T23:58:44.2908994-08:00");
+windowsAutopilotDeviceIdentity.setLastContactedDateTime(lastContactedDateTime);
+windowsAutopilotDeviceIdentity.setAddressableUserName("Addressable User Name value");
+windowsAutopilotDeviceIdentity.setUserPrincipalName("User Principal Name value");
+windowsAutopilotDeviceIdentity.setResourceName("Resource Name value");
+windowsAutopilotDeviceIdentity.setSkuNumber("Sku Number value");
+windowsAutopilotDeviceIdentity.setSystemFamily("System Family value");
+windowsAutopilotDeviceIdentity.setAzureActiveDirectoryDeviceId("Azure Active Directory Device Id value");
+windowsAutopilotDeviceIdentity.setManagedDeviceId("Managed Device Id value");
+windowsAutopilotDeviceIdentity.setDisplayName("Display Name value");
+WindowsAutopilotDeviceIdentity result = graphClient.deviceManagement().windowsAutopilotDeviceIdentities().post(windowsAutopilotDeviceIdentity);
 
-graphClient.deviceManagement().windowsAutopilotDeviceIdentities()
-	.buildRequest()
-	.post(windowsAutopilotDeviceIdentity);
 
 ```

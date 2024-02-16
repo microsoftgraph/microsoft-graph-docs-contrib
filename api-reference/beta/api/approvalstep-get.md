@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties of an [approvalStep](../resources/approvalstep.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -65,7 +65,7 @@ GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/{i
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

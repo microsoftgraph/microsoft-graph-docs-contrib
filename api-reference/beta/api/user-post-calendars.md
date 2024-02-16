@@ -35,7 +35,7 @@ POST /users/{id | userPrincipalName}/calendars
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -133,7 +133,7 @@ Content-type: application/json
     "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
-        "address":"samanthab@adatum.onmicrosoft.com"
+        "address":"samanthab@contoso.com"
     }
 }
 ```

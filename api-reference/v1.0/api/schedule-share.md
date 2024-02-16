@@ -40,7 +40,7 @@ POST /teams/{teamId}/schedule/share
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
@@ -142,6 +142,6 @@ HTTP/1.1 200 OK
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

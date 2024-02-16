@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Removes a group from a lifecycle policy.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -34,7 +34,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json          |
 
 ## Request body

@@ -29,7 +29,7 @@ To get an EDU developer tenant:
 
 You will receive an email notification about you tenant request.
 
-## See also
+## Related content
 
 See the following resources to get started with your developer tenant:
 

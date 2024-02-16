@@ -106,6 +106,6 @@ $additionalData = [
 ];
 $requestBody->setAdditionalData($additionalData);
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->staffMembers()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->staffMembers()->post($requestBody)->wait();
 
 ```

@@ -258,7 +258,7 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 | externalUserState                                                   | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | faxNumber                                                           | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
 | givenName                                                           | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| identities/any(i:i/issuer)                                          | ![Default][RDS]     | ![NotSupported][NS] |                  | ![Default][RDS]     |
+| identities/any(i:i/issuer)                                          | ![Default][RDS]     | ![NotSupported][NS] |                  |      |
 | imAddresses/any(p:p)                                                | ![Default][RDS]     | ![Default][RDS]     |                  |                     |
 | infoCatalogs/any(p:p)                                               | ![Default][RDS]     | ![Default][RDS]     |                  |                     |
 | isLicenseReconciliationNeeded                                       | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |

@@ -57,7 +57,7 @@ In the request URL, provide the following query parameters with values.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -154,7 +154,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get log of PSTN calls](callrecords-callrecord-getpstncalls.md)
 - [Get log of sent/received SMS](callrecords-callrecord-getsmslog.md)

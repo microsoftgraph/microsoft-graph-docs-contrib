@@ -35,7 +35,7 @@ POST /print/printers/{id}/jobs/{id}/redirect
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the ID of the printer that the print job should be redirected to.
@@ -120,6 +120,10 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/printjob-redirect-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/printjob-redirect-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
