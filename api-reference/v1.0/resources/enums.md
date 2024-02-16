@@ -604,6 +604,13 @@ Namespace: microsoft.graph
 | assignIfOpen       |
 | unknownFutureValue |
 
+### educationModuleStatus values
+
+| Member             |
+| :----------------- |
+| draft              |
+| published          |
+
 ### fido2RestrictionEnforcementType values
 
 | Member |
