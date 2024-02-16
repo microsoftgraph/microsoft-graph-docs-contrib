@@ -22,7 +22,7 @@ Microsoft Graph Toolkit v4 is now available. For details about changes in the la
 
 ## February 2024: New in preview only
 
-### Calendars | Places
+### Calendars | Workplace
 
 Onboard devices in Microsoft Places and ingest sensor telemetry using the new [workplaceSensorDevice](/graph/api/resources/workplacesensordevice?view=graph-rest-beta&preserve-view=true) API.
 
