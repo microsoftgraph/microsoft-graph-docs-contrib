@@ -3,6 +3,36 @@
     {
       "ChangeList": [
         {
+        "ApiChange": "Property",
+        "ChangedApiName": "riskEventType",
+        "ChangeType": "Addition",
+        "Description": "Added `suspiciousSendingPatterns` as one of the possible values for the **riskEventType** property of the [riskDetection](https://learn.microsoft.com/graph/api/resources/riskdetection?view=graph-rest-beta) resource.",
+        "Target": "riskDetection"
+        }
+          ],
+      "Cloud": "Prod",
+      "Version": "beta",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+        {
+      "ChangeList": [
+        {
+        "ApiChange": "Property",
+        "ChangedApiName": "riskEventType",
+        "ChangeType": "Addition",
+        "Description": "Added `suspiciousSendingPatterns` as one of the possible values for the **riskEventType** property of the [riskDetection](https://learn.microsoft.com/graph/api/resources/riskdetection?view=graph-rest-1.0) resource.",
+        "Target": "riskDetection"
+        }
+      ],
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
         "Id": "83ca93af-83ee-4684-91fd-2ac58f1c58ee",
         "ApiChange": "Property",
         "ChangedApiName": "riskEventType",
