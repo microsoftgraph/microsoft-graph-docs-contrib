@@ -102,7 +102,7 @@ To call the permissions management APIs, the caller doesn't need any Microsoft G
 
 For more information, see [Permissions Management roles and permissions levels](/entra/permissions-management/product-roles-permissions)
 
-## See also
+## Related content
 
 - [What's Microsoft Entra Permissions Management](/entra/permissions-management/overview)
 - [Quickstart guide to Microsoft Entra Permissions Management](/entra/permissions-management/permissions-management-quickstart-guide)

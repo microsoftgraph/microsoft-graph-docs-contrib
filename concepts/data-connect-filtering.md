@@ -39,7 +39,7 @@ The following datasets require a filter to be provided on one of the correspondi
 > [!NOTE]
 > Pipelines requesting BasicDataSet_v0.CalendarView_v0 also require a DateTime filter, but no **dateFilterColumn** is specified in the SourceDataSet. However, a **startTime** and **endTime** are required, and only events that begin after the **startTime** and finish before the **endTime** are provided.
 
-## See also
+## Related content
 
 - [Integrate with PAM](data-connect-pam.md)
 - [Data Connect frequently asked questions](data-connect-faq.md)

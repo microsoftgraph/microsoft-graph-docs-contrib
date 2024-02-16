@@ -246,12 +246,12 @@ Content-Length: 407
     "displayName": "MOD Administrator",
     "givenName": "MOD",
     "jobTitle": null,
-    "mail": "admin@contoso.OnMicrosoft.com",
+    "mail": "admin@contoso.com",
     "mobilePhone": "425-555-0101",
     "officeLocation": null,
     "preferredLanguage": "en-US",
     "surname": "Administrator",
-    "userPrincipalName": "admin@contoso.onmicrosoft.com",
+    "userPrincipalName": "admin@contoso.com",
     "id": "10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6"
 }
 ```

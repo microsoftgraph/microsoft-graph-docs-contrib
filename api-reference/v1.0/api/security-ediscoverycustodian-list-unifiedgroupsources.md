@@ -127,7 +127,7 @@ Content-Type: application/json
                 }
             },
             "group": {
-                "email": "Design@M365x809305.onmicrosoft.com",
+                "email": "Design@contoso.com",
                 "webUrl": "https://m365x809305.sharepoint.com/sites/Design",
                 "id": "32e14fa4-3106-4bd2-a245-34bf0c718a7e",
                 "displayName": "Design (Mailbox)",
@@ -149,7 +149,7 @@ Content-Type: application/json
                 }
             },
             "group": {
-                "email": "ceoconnection@M365x809305.onmicrosoft.com",
+                "email": "ceoconnection@contoso.com",
                 "webUrl": "https://m365x809305.sharepoint.com/sites/ceoconnection",
                 "id": "21be9868-b58b-4f8b-800c-591e9ad8d4ec",
                 "displayName": "CEO Connection (Mailbox)",

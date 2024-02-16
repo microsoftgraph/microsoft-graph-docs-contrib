@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/me/agreementAcceptances
 ---
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,8 +113,8 @@ Content-type: application/json
             "deviceOSVersion": null,
             "agreementFileId": "08033369-8972-42a3-8533-90bbd2757a01",
             "userDisplayName": "Megan Bowen",
-            "userPrincipalName": "MeganB@M365x43961174.OnMicrosoft.com",
-            "userEmail": "MeganB@M365x43961174.OnMicrosoft.com",
+            "userPrincipalName": "MeganB@contoso.com",
+            "userEmail": "MeganB@contoso.com",
             "recordedDateTime": "2022-03-04T14:11:22.6658376Z",
             "expirationDateTime": null,
             "state": "accepted"

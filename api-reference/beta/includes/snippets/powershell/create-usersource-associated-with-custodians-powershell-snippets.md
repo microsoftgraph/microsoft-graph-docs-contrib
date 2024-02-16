@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
-	email = "admin@M365x809305.onmicrosoft.com"
+	email = "admin@contoso.com"
 	includedSources = "mailbox, site"
 }
 

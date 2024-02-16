@@ -11677,7 +11677,7 @@ items:
                   href: resources/externaluserprofile.md
                   items:
                   - name: List
-                    href: api/directory-list-pendingexternaluserprofile.md
+                    href: api/directory-list-externaluserprofiles.md
                   - name: Get
                     href: api/externaluserprofile-get.md
                   - name: Update
