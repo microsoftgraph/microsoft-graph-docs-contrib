@@ -1,6 +1,6 @@
 ---
 title: "educationGradingSchemeGrade resource type"
-description: "The individual grade ranges that make up a grading scheme."
+description: "An individual grade range that contributes to a grading scheme"
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
