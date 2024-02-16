@@ -819,18 +819,26 @@
               {
                 "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
                 "ApiChange": "Property",
-                "ChangedApiName": "id",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **id** property from the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-directRoutingLogRow?view=graph-rest-beta) resource.",
+                "ChangedApiName": "administrativeUnitInfos",
+                "ChangeType": "Addition",
+                "Description": "Added the **administrativeUnitInfos** property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
+                "Target": "pstnCallLogRow"
+              },
+              {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Property",
+                "ChangedApiName": "administrativeUnitInfos",
+                "ChangeType": "Addition",
+                "Description": "Added the **administrativeUnitInfos** property to the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-directRoutingLogRow?view=graph-rest-beta) resource.",
                 "Target": "directRoutingLogRow"
               },
               {
                 "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
                 "ApiChange": "Property",
-                "ChangedApiName": "otherPartyCountryCode",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **otherPartyCountryCode** property from the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-directRoutingLogRow?view=graph-rest-beta) resource.",
-                "Target": "directRoutingLogRow"
+                "ChangedApiName": "administrativeUnitInfos",
+                "ChangeType": "Addition",
+                "Description": "Added the **administrativeUnitInfos** property to the [smsLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-smsLogRow?view=graph-rest-beta) resource.",
+                "Target": "smsLogRow"
               },
               {
                 "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
@@ -839,110 +847,6 @@
                 "ChangeType": "Addition",
                 "Description": "Added the **transferorCorrelationId** property to the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-directRoutingLogRow?view=graph-rest-beta) resource.",
                 "Target": "directRoutingLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "userDisplayName",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **userDisplayName** property from the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-directRoutingLogRow?view=graph-rest-beta) resource.",
-                "Target": "directRoutingLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "userId",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **userId** property from the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-directRoutingLogRow?view=graph-rest-beta) resource.",
-                "Target": "directRoutingLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "userPrincipalName",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **userPrincipalName** property from the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-directRoutingLogRow?view=graph-rest-beta) resource.",
-                "Target": "directRoutingLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "id",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **id** property from the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
-                "Target": "pstnCallLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "otherPartyCountryCode",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **otherPartyCountryCode** property from the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
-                "Target": "pstnCallLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "userDisplayName",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **userDisplayName** property from the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
-                "Target": "pstnCallLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "userId",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **userId** property from the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
-                "Target": "pstnCallLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "userPrincipalName",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **userPrincipalName** property from the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
-                "Target": "pstnCallLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "id",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **id** property from the [smsLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-smsLogRow?view=graph-rest-beta) resource.",
-                "Target": "smsLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "otherPartyCountryCode",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **otherPartyCountryCode** property from the [smsLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-smsLogRow?view=graph-rest-beta) resource.",
-                "Target": "smsLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "userDisplayName",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **userDisplayName** property from the [smsLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-smsLogRow?view=graph-rest-beta) resource.",
-                "Target": "smsLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "userId",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **userId** property from the [smsLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-smsLogRow?view=graph-rest-beta) resource.",
-                "Target": "smsLogRow"
-              },
-              {
-                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
-                "ApiChange": "Property",
-                "ChangedApiName": "userPrincipalName",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **userPrincipalName** property from the [smsLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-smsLogRow?view=graph-rest-beta) resource.",
-                "Target": "smsLogRow"
               },
               {
                 "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
