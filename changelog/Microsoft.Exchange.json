@@ -2362,8 +2362,8 @@
       "Id": "b10ba647-3a60-4ca7-8cfb-de38906085b9",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2024-02-12T00:00:00",
-      "WorkloadArea": "Calendars",
+      "CreatedDateTime": "2024-02-16T00:00:00",
+      "WorkloadArea": "Calendar",
       "SubArea": ""
     }    
   ]
