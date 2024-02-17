@@ -7551,9 +7551,9 @@ items:
             items:
               - name: Overview
                 href: resources/partners-billing-api-overview.md
-              - name: Billed invoice reconciliation
+              - name: Billed reconciliation
                 items:
-                  - name: Billed invoice reconciliation
+                  - name: Billed reconciliation
                     href: resources/partners-billing-billedreconciliation.md
                   - name: Export
                     href: api/partners-billing-billedreconciliation-export.md
