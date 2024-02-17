@@ -262,7 +262,7 @@
           "Description": "Added the [billedReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billedreconciliation?view=graph-rest-1.0) resource and a supported method.",
           "Target": "billedReconciliation"
         },
-	    {
+        {
           "Id": "8b9489ef-dabc-47c9-982d-45afd83b4b1d",
           "ApiChange": "Relationship",
           "ChangedApiName": "reconciliation",
