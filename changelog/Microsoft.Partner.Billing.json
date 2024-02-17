@@ -244,14 +244,14 @@
       "WorkloadArea": "Reports",
       "SubArea": "Partner billing reports"
     },
-	{
+    {
       "ChangeList": [                               
         {
           "Id": "8b9489ef-dabc-47c9-982d-45afd83b4b1d",
           "ApiChange": "Resource",
           "ChangedApiName": "billingReconciliation",
           "ChangeType": "Addition",
-          "Description": "Added the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingreconciliation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingreconciliation?view=graph-rest-1.0) resource type.",
           "Target": "billingReconciliation"
         },
         {
@@ -259,7 +259,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "billedReconciliation",
           "ChangeType": "Addition",
-          "Description": "Added the [billedReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billedreconciliation?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [billedReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billedreconciliation?view=graph-rest-1.0) resource and a supported method.",
           "Target": "billedReconciliation"
         },
 	    {
@@ -267,7 +267,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "reconciliation",
           "ChangeType": "Addition",
-          "Description": "Added the **reconciliation** navigation property to the [billing](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billing?view=graph-rest-beta) resource.",
+          "Description": "Added the **reconciliation** relationship to the [billing](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billing?view=graph-rest-1.0) resource.",
           "Target": "partners-billing-billing"
         }
       ],
