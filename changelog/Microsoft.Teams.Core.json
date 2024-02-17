@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "2ace21aa-1e55-4d7e-b65e-d96d81b72805",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$filter`, `$select`, and `$top` query parameters for the [List members of channel](https://learn.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-beta) method.",
+          "Target": "channel"
+        },
+	{
+          "Id": "2ace21aa-1e55-4d7e-b65e-d96d81b72805",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$top` query parameter for the [List members of team](https://learn.microsoft.com/en-us/graph/api/team-list-members?view=graph-rest-beta) method.",
+          "Target": "team"
+        }
+      ],
+      "Id": "2ace21aa-1e55-4d7e-b65e-d96d81b72805",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-16T15:04:59.427Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cf035256-8f11-4150-a29d-edc2f90c8055",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$filter`, `$select`, and `$top` query parameters for the [List members of channel](https://learn.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-1.0) method.",
+          "Target": "channel"
+        },
+	{
+          "Id": "cf035256-8f11-4150-a29d-edc2f90c8055",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$top` query parameter for the [List members of team](https://learn.microsoft.com/en-us/graph/api/team-list-members?view=graph-rest-1.0) method.",
+          "Target": "team"
+        }
+      ],
+      "Id": "cf035256-8f11-4150-a29d-edc2f90c8055",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-02-16T15:04:59.427Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0c77d8f1-df1c-439e-b4c7-4dbdd871c586",
           "ApiChange": "Property",
           "ChangedApiName": "user",
