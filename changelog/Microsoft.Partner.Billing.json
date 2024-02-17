@@ -122,7 +122,7 @@
       "WorkloadArea": "Reports",
       "SubArea": "Partner billing reports"
     },
-	  {
+    {
       "ChangeList": [                               
         {
           "Id": "b9c98ce4-20c9-48d8-9023-52bde6ceb89f",
@@ -137,16 +137,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "billedReconciliation",
           "ChangeType": "Addition",
-          "Description": "Added the [billedReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billedreconciliation?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [billedReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billedreconciliation?view=graph-rest-beta) resource and a supported method.",
           "Target": "billedReconciliation"
         },
-	    {
+        {
           "Id": "b9c98ce4-20c9-48d8-9023-52bde6ceb89f",
           "ApiChange": "Relationship",
           "ChangedApiName": "reconciliation",
           "ChangeType": "Addition",
-          "Description": "Added the **reconciliation** navigation property to the [billing](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billing?view=graph-rest-beta) resource.",
-          "Target": "partners-billing-billing"
+          "Description": "Added the **reconciliation** relationship to the [billing](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billing?view=graph-rest-beta) resource.",
+          "Target": "billing"
         }
       ],
       "Id": "b9c98ce4-20c9-48d8-9023-52bde6ceb89f",
@@ -156,7 +156,7 @@
       "WorkloadArea": "Reports",
       "SubArea": "Partner billing reports"
     },
-        {
+    {
       "ChangeList": [
         {
           "Id": "abf7f5a2-4842-4016-a573-08731f5cb362",
