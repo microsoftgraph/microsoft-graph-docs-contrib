@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.external.authorizationSystems.authorization_systems_request_builder import AuthorizationSystemsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

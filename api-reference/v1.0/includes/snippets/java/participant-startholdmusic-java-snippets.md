@@ -4,22 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-MediaPrompt customMediaPrompt = new MediaPrompt();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.communications.calls.item.participants.item.startholdmusic.StartHoldMusicPostRequestBody startHoldMusicPostRequestBody = new com.microsoft.graph.communications.calls.item.participants.item.startholdmusic.StartHoldMusicPostRequestBody();
+MediaPrompt customPrompt = new MediaPrompt();
+customPrompt.setOdataType("#microsoft.graph.mediaPrompt");
 MediaInfo mediaInfo = new MediaInfo();
-mediaInfo.uri = "https://bot.contoso.com/onHold.wav";
-customPrompt.mediaInfo = mediaInfo;
+mediaInfo.setOdataType("#microsoft.graph.mediaInfo");
+mediaInfo.setUri("https://bot.contoso.com/onHold.wav");
+customPrompt.setMediaInfo(mediaInfo);
+startHoldMusicPostRequestBody.setCustomPrompt(customPrompt);
+startHoldMusicPostRequestBody.setClientContext("d45324c1-fcb5-430a-902c-f20af696537c");
+var result = graphClient.communications().calls().byCallId("{call-id}").participants().byParticipantId("{participant-id}").startHoldMusic().post(startHoldMusicPostRequestBody);
 
-String clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
-
-graphClient.communications().calls("e141b67c-90fd-455d-858b-b48a40b9cc8d").participants("fa1e9582-7145-4ca3-bcd8-577f561fcb6e")
-	.startHoldMusic(ParticipantStartHoldMusicParameterSet
-		.newBuilder()
-		.withCustomPrompt(customPrompt)
-		.withClientContext(clientContext)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

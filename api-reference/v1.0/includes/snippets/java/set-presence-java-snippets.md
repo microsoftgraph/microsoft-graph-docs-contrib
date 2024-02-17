@@ -4,25 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String sessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String availability = "Available";
+com.microsoft.graph.users.item.presence.setpresence.SetPresencePostRequestBody setPresencePostRequestBody = new com.microsoft.graph.users.item.presence.setpresence.SetPresencePostRequestBody();
+setPresencePostRequestBody.setSessionId("22553876-f5ab-4529-bffb-cfe50aa89f87");
+setPresencePostRequestBody.setAvailability("Available");
+setPresencePostRequestBody.setActivity("Available");
+PeriodAndDuration expirationDuration = PeriodAndDuration.ofDuration(Duration.parse("PT1H"));
+setPresencePostRequestBody.setExpirationDuration(expirationDuration);
+graphClient.users().byUserId("{user-id}").presence().setPresence().post(setPresencePostRequestBody);
 
-String activity = "Available";
-
-Duration expirationDuration = DatatypeFactory.newInstance().newDuration("PT1H");
-
-graphClient.users("fa8bf3dc-eca7-46b7-bad1-db199b62afc3").presence()
-	.setPresence(PresenceSetPresenceParameterSet
-		.newBuilder()
-		.withSessionId(sessionId)
-		.withAvailability(availability)
-		.withActivity(activity)
-		.withExpirationDuration(expirationDuration)
-		.build())
-	.buildRequest()
-	.post();
 
 ```
