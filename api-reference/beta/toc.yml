@@ -10716,7 +10716,7 @@ items:
                 href: api/educationassignment-activate.md
               - name: Deactivate assignment
                 href: api/educationassignment-deactivate.md
-              - name: Post gradingscheme
+              - name: Create grading scheme
                 href: api/educationassignment-post-gradingscheme.md
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
