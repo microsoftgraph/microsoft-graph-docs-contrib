@@ -18,6 +18,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2024: New and generally available
 
+### Microsoft Graph Toolkit
 Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](/graph/toolkit/upgrade).
 
 ## February 2024: New in preview only
@@ -26,13 +27,18 @@ Microsoft Graph Toolkit v4 is now available. For details about changes in the la
 
 Use the **iCalUId** property on [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to get the unique identifier for an event across calendars.
 
-### Teamwork and communications | Shift management
-
-Added the ability to [get shifts](/graph/api/team-getshifts) and [get time offs](/graph/api/team-gettimesoff) across all teams that a user is a direct member of.
-
 ### Identity and access | Directory management
 
 Updated the descriptions of the **model** and **manufacturer** properties in the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to clarify their read-only status, replacing the outdated descriptions related to Project Rome sign-ins.
+
+### Teamwork and communications | Messaging
+
+- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List members of channel](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true) method.
+- Enabled the `$top` query parameter for the [List members of team](/graph/api/team-list-members?view=graph-rest-beta&preserve-view=true) method.
+
+### Teamwork and communications | Shift management
+
+Added the ability to [get shifts](/graph/api/team-getshifts?view=graph-rest-beta&preserve-view=true) and [get time offs](/graph/api/team-gettimesoff?view=graph-rest-beta&preserve-view=true) across all teams that a user is a direct member of.
 
 ## January 2024: New and generally available
 
