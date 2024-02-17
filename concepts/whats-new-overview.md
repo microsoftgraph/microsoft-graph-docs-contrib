@@ -18,14 +18,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2024: New and generally available
 
+### Microsoft Graph Toolkit
 Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](/graph/toolkit/upgrade).
 
-### Teamwork and communications | Messaging
-
-- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List members of channel](/graph/api/channel-list-members) method.
-- Enabled the `$top` query parameter for the [List members of team](/graph/api/team-list-members) method.
-
 ## February 2024: New in preview only
+
+### Calendars
+
+Use the **iCalUId** property on [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to get the unique identifier for an event across calendars.
 
 ### Identity and access | Directory management
 
