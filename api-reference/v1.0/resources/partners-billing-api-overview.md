@@ -12,7 +12,7 @@ ms.custom: zt-include
 
 [!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
-As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in the Cloud Solution Provider programs can request to export their billed and unbilled data to Azure Blob Storage asynchronously. this removes the need to maintain an open connection for hours and loop through millions of transactions iteratively. The asynchronous API provides a way to quickly access billing and reconciliation data in manageable chunks.
+As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in the Cloud Solution Provider programs can request to export their billed and unbilled data to Azure Blob Storage asynchronously. This removes the need to maintain an open connection for hours and loop through millions of transactions iteratively. The asynchronous API provides a way to quickly access billing and reconciliation data in manageable chunks.
 
 The partner billing API is defined in the OData subnamespace `microsoft.graph.partners.billing`.
 
@@ -57,10 +57,9 @@ The partner billing API provides methods and actions that allow Microsoft direct
 | Create a new export operation to export billed invoice reconciliation data | [billedReconciliation: export](../api/partners-billing-billedreconciliation-export.md) |
 | Poll for operation status update | [Get operation](../api/partners-billing-operation-get.md) |
 
-
 ## Asynchronous data retrieval
 
-The download of reconciliation data is a long-running operation that consists of the following operations.
+The download of usage or reconciliation data is a long-running operation that consists of the following operations.
 
 ### Usage line-item endpoint
 
@@ -69,7 +68,6 @@ Use the [billedUsage: export](../api/partners-billing-billedusage-export.md) or 
 ### Non-usage line-item endpoint
 
 Use the [billedReconciliation: export](../api/partners-billing-billedreconciliation-export.md) API to access billed invoice reconciliation line items. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
-
 
 ### Operation status endpoint
 
