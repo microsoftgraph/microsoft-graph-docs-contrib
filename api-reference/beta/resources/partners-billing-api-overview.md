@@ -54,7 +54,7 @@ The partner billing API provides methods and actions that allow Microsoft direct
 
 ## Asynchronous data retrieval
 
-The download of reconciliation data is a long-running operation that consists of the following operations.
+The download of usage data is a long-running operation that consists of the following operations.
 
 ### Usage line-item endpoint
 
