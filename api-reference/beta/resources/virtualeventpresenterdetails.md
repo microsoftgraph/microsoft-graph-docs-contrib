@@ -19,17 +19,17 @@ Detail information of a virtual event presenter.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|photo|Stream|The content stream of the photo of the presenter.|
 |bio|[itemBody](../resources/itembody.md)|Bio of the presenter.|
 |company|String|The presenter's company name.|
 |jobTitle|String|The presenter's job title.|
 |linkedInProfileWebUrl|String|The presenter's LinkedIn profile URL.|
 |personalSiteWebUrl|String|The presenter's personal website URL.|
+|photo|Stream|The content stream of the presenter's photo.|
 |twitterProfileWebUrl|String|The presenter's Twitter profile URL.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.virtualEventPresenterDetails"
@@ -39,11 +39,11 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.virtualEventPresenterDetails",
   "bio": {"@odata.type": "microsoft.graph.itemBody"},
-  "photo": "Stream",
   "company": "String",
   "jobTitle": "String",
   "linkedInProfileWebUrl": "String",
   "personalSiteWebUrl": "String",
+  "photo": "Stream",
   "twitterProfileWebUrl": "String"
 }
 ```
