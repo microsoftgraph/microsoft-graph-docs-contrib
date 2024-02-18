@@ -22,7 +22,7 @@ LinkedList<Recipient> forwardTo = new LinkedList<Recipient>();
 Recipient recipient = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
 emailAddress.setName("Alex Wilbur");
-emailAddress.setAddress("AlexW@contoso.onmicrosoft.com");
+emailAddress.setAddress("AlexW@contoso.com");
 recipient.setEmailAddress(emailAddress);
 forwardTo.add(recipient);
 actions.setForwardTo(forwardTo);
