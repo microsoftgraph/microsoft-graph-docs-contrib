@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.send_virtual_appointment_sms_post_request_body import SendVirtualAppointmentSmsPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SendVirtualAppointmentSmsPostRequestBody(
-	phone_numbers = [
-		"+13129224122",
-		"+1242421412",
-	],
 	additional_data = {
+			"phone_numbers" : [
+				"+13129224122",
+				"+1242421412",
+			],
 			"virtual_appointment_sms_type" : "confirmation",
 	}
 )

@@ -99,7 +99,7 @@ Content-type: application/json
     "toRecipients":[
         {
             "emailAddress":{
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"AdeleV@contoso.com"
             }
         }
     ]
@@ -191,8 +191,8 @@ Content-type: application/json
     "toRecipients":[
         {
             "emailAddress":{
-                "name":"AdeleV@contoso.onmicrosoft.com",
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "name":"AdeleV@contoso.com",
+                "address":"AdeleV@contoso.com"
             }
         }
     ],
@@ -232,7 +232,7 @@ Content-type: application/json
       {
           "emailAddress":{
               "name":"Samantha Booth",
-              "address":"samanthab@contoso.onmicrosoft.com"
+              "address":"samanthab@contoso.com"
           }
       }
     ],
@@ -240,7 +240,7 @@ Content-type: application/json
       {
         "mentioned":{
           "name":"Dana Swope",
-          "address":"danas@contoso.onmicrosoft.com"
+          "address":"danas@contoso.com"
          }
       }
     ]
@@ -309,7 +309,7 @@ Content-type: application/json
     {
       "emailAddress":{
         "name":"Samantha Booth",
-        "address":"samanthab@contoso.onmicrosoft.com"
+        "address":"samanthab@contoso.com"
       }
     }
   ],
@@ -322,13 +322,13 @@ Content-type: application/json
       "id":"4577bba4-b063-4cea-9073-6f7ca815fcec",
       "mentioned":{
         "name":"Dana Swope",
-        "address":"danas@contoso.onmicrosoft.com"
+        "address":"danas@contoso.com"
       },
       "mentionText":null,
       "clientReference":null,
       "createdBy":{
         "name":"Randi Welch",
-        "address":"randiw@contoso.onmicrosoft.com"
+        "address":"randiw@contoso.com"
       },
       "createdDateTime":"2016-07-22T02:22:44Z",
       "serverCreatedDateTime":"2016-07-22T02:22:44.201Z",
@@ -362,7 +362,7 @@ Content-type: application/json
     "toRecipients":[
         {
             "emailAddress":{
-                "address":"AlexW@contoso.OnMicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -464,7 +464,7 @@ Content-type: application/json
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.OnMicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -592,7 +592,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcDeviceImage cloudPcDeviceImage = new CloudPcDeviceImage();
-cloudPcDeviceImage.displayName = "Display Name value";
-cloudPcDeviceImage.osBuildNumber = "OS Build Number value";
-cloudPcDeviceImage.operatingSystem = "Operating System value";
-cloudPcDeviceImage.version = "Version value";
-cloudPcDeviceImage.sourceImageResourceId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage";
+cloudPcDeviceImage.setDisplayName("ImageForDev");
+cloudPcDeviceImage.setVersion("0.0.1");
+cloudPcDeviceImage.setSourceImageResourceId("/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage");
+CloudPcDeviceImage result = graphClient.deviceManagement().virtualEndpoint().deviceImages().post(cloudPcDeviceImage);
 
-graphClient.deviceManagement().virtualEndpoint().deviceImages()
-	.buildRequest()
-	.post(cloudPcDeviceImage);
 
 ```

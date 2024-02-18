@@ -4,21 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> phoneNumbersList = new LinkedList<String>();
-phoneNumbersList.add("+13129224122");
-phoneNumbersList.add("+1242421412");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-RemindBeforeTimeInMinutesType remindBeforeTimeInMinutesType = RemindBeforeTimeInMinutesType.MINS15;
+com.microsoft.graph.beta.users.item.onlinemeetings.item.sendvirtualappointmentremindersms.SendVirtualAppointmentReminderSmsPostRequestBody sendVirtualAppointmentReminderSmsPostRequestBody = new com.microsoft.graph.beta.users.item.onlinemeetings.item.sendvirtualappointmentremindersms.SendVirtualAppointmentReminderSmsPostRequestBody();
+sendVirtualAppointmentReminderSmsPostRequestBody.setRemindBeforeTimeInMinutesType(RemindBeforeTimeInMinutesType.Mins15);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+LinkedList<String> phoneNumbers = new LinkedList<String>();
+phoneNumbers.add("+13129224122");
+phoneNumbers.add("+1242421412");
+additionalData.put("phoneNumbers", phoneNumbers);
+sendVirtualAppointmentReminderSmsPostRequestBody.setAdditionalData(additionalData);
+graphClient.me().onlineMeetings().byOnlineMeetingId("{onlineMeeting-id}").sendVirtualAppointmentReminderSms().post(sendVirtualAppointmentReminderSmsPostRequestBody);
 
-graphClient.me().onlineMeetings("MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi")
-	.sendVirtualAppointmentReminderSms(OnlineMeetingSendVirtualAppointmentReminderSmsParameterSet
-		.newBuilder()
-		.withPhoneNumbers(phoneNumbersList)
-		.withRemindBeforeTimeInMinutesType(remindBeforeTimeInMinutesType)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

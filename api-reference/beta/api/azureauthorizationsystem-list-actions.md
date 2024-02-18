@@ -1,5 +1,5 @@
 ---
-title: "# List actions (for an Azure authorization system)"
+title: "List actions (for an Azure authorization system)"
 description: "List the azureAuthorizationSystemTypeAction objects and their properties."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
@@ -16,13 +16,10 @@ Namespace: microsoft.graph
 List the [azureAuthorizationSystemTypeAction](../resources/azureauthorizationsystemtypeaction.md) objects and their properties.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported.|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "azureauthorizationsystem_list_actions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/azureauthorizationsystem-list-actions-permissions.md)]
 
 <!--
 [!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
@@ -44,7 +41,7 @@ This method supports the `$select`, `$filter`, `$count`, `$top`, and `$skipToken
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -68,10 +65,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/actions
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-azureauthorizationsystemtypeaction-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-azureauthorizationsystemtypeaction-javascript-snippets.md)]
@@ -142,10 +135,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/actions?$filter=service/id eq 'Microsoft.Storage'
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-azureauthorizationsystemtypeaction2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-azureauthorizationsystemtypeaction2-javascript-snippets.md)]

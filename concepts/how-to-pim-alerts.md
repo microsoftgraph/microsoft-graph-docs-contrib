@@ -281,7 +281,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/how-to-pim-alerts-get-alert-expand-relationships-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -357,7 +357,7 @@ Content-Type: application/json
             "id": "60caa50f-7863-4f48-bf97-2a8fb990b681",
             "assigneeId": "60caa50f-7863-4f48-bf97-2a8fb990b681",
             "assigneeDisplayName": "MOD Administrator",
-            "assigneeUserPrincipalName": "admin@M365x56085806.onmicrosoft.com"
+            "assigneeUserPrincipalName": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
@@ -475,49 +475,49 @@ Content-Type: application/json
             "id": "143ebd3d-e522-485c-aa52-94675ee83e6c",
             "assigneeId": "143ebd3d-e522-485c-aa52-94675ee83e6c",
             "assigneeDisplayName": "Lidia Holloway",
-            "assigneeUserPrincipalName": "LidiaH@M365x56085806.OnMicrosoft.com"
+            "assigneeUserPrincipalName": "LidiaH@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "2832ca72-700e-4f20-a3c7-97028803a95b",
             "assigneeId": "2832ca72-700e-4f20-a3c7-97028803a95b",
             "assigneeDisplayName": "Microsoft Service Account",
-            "assigneeUserPrincipalName": "ms-serviceaccount@M365x56085806.OnMicrosoft.com"
+            "assigneeUserPrincipalName": "ms-serviceaccount@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "308110a6-4f71-49c2-bbef-c6dbda50b392",
             "assigneeId": "308110a6-4f71-49c2-bbef-c6dbda50b392",
             "assigneeDisplayName": "Allan Deyoung",
-            "assigneeUserPrincipalName": "AllanD@M365x56085806.OnMicrosoft.com"
+            "assigneeUserPrincipalName": "AllanD@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "31336492-bf1b-48bb-a072-e554e4f992fc",
             "assigneeId": "31336492-bf1b-48bb-a072-e554e4f992fc",
             "assigneeDisplayName": "Megan Bowen",
-            "assigneeUserPrincipalName": "MeganB@M365x56085806.OnMicrosoft.com"
+            "assigneeUserPrincipalName": "MeganB@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "60caa50f-7863-4f48-bf97-2a8fb990b681",
             "assigneeId": "60caa50f-7863-4f48-bf97-2a8fb990b681",
             "assigneeDisplayName": "MOD Administrator",
-            "assigneeUserPrincipalName": "admin@M365x56085806.onmicrosoft.com"
+            "assigneeUserPrincipalName": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "6dd82b18-d45f-4346-bf87-e9700db41849",
             "assigneeId": "6dd82b18-d45f-4346-bf87-e9700db41849",
             "assigneeDisplayName": "Nestor Wilke",
-            "assigneeUserPrincipalName": "NestorW@M365x56085806.OnMicrosoft.com"
+            "assigneeUserPrincipalName": "NestorW@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "87404028-0c5b-4d0a-9d9d-3150e4b5ce74",
             "assigneeId": "87404028-0c5b-4d0a-9d9d-3150e4b5ce74",
             "assigneeDisplayName": "Isaiah Langer",
-            "assigneeUserPrincipalName": "IsaiahL@M365x56085806.OnMicrosoft.com"
+            "assigneeUserPrincipalName": "IsaiahL@contoso.com"
         }
     ]
 }
@@ -772,7 +772,7 @@ Remediating an alert incident means requesting Microsoft Entra ID to apply the m
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_3b0e753b-22fa-4c16-9bf2-470b80be80d6_RolesAssignedOutsidePimAlert/alertIncidents/9e864769-63e3-4635-8069-551bcd46183d/remediate 
+POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_3b0e753b-22fa-4c16-9bf2-470b80be80d6_RolesAssignedOutsidePimAlert/alertIncidents/9e864769-63e3-4635-8069-551bcd46183d/remediate
 ```
 
 # [C#](#tab/csharp)
@@ -815,6 +815,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/al
 HTTP/1.1 200 OK
 ```
 
-## See also
+## Related content
 
 + [Tutorial: Assign Microsoft Entra roles through PIM](tutorial-assign-azureadroles.md).

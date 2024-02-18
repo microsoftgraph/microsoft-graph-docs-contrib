@@ -4,7 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph.generated.models.requestor_settings import RequestorSettings
+from msgraph.generated.models.user_set import UserSet
+from msgraph.generated.models.access_package_question import AccessPackageQuestion
+from msgraph.generated.models.custom_extension_handler import CustomExtensionHandler
+from msgraph.generated.models.verifiable_credential_settings import VerifiableCredentialSettings
+from msgraph.generated.models.verifiable_credential_type import VerifiableCredentialType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

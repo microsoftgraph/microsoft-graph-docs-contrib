@@ -110,6 +110,6 @@ If you need more help troubleshooting an issue, you can raise an [issue](https:/
 
 You can also reach out to the [Microsoft Graph Connectors team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) for more help and troubleshooting.
 
-## See also
+## Related content
 
 - [Best practices](/graph/custom-connector-sdk-best-practices)

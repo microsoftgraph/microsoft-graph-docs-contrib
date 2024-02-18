@@ -61,10 +61,6 @@ For more information, see [Delete businessScenario](../api/businessscenario-dele
 |Configure business scenarios for Planner| [plannerPlanConfiguration](plannerplanconfiguration.md) [plannerTaskConfiguration](plannertaskconfiguration.md)|[Methods of plannerPlanConfiguration](plannerplanconfiguration.md#methods) [Methods of plannerTaskConfiguration](plannertaskconfiguration.md#methods)|
 |Create, read, update, and delete business scenario tasks in Planner| [businessScenarioTask](businessscenariotask.md)| [businessScenarioTask](businessscenariotask.md#methods)|
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 
 The business scenarios API allows apps to model and integrate real work business processes with a Microsoft 365 service over Microsoft Graph. To learn more:

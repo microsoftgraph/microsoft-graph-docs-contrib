@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -59,11 +59,11 @@ If successful, this method returns a `200 OK` response code and a [bookingCustom
 <!-- {
   "blockType": "request",
   "name": "bookingcustomquestionget",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
 ```
 
 # [C#](#tab/csharp)

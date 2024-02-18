@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Presence presence = graphClient.users("fa8bf3dc-eca7-46b7-bad1-db199b62afc3").presence()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+Presence result = graphClient.users().byUserId("{user-id}").presence().get();
+
 
 ```

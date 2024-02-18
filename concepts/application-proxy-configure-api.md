@@ -648,7 +648,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-get-approles-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -1047,7 +1047,7 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/application
 No Content - 204
 ```
 
-## See also
+## Related content
 
 - [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy)
 - [application](/graph/api/resources/application)

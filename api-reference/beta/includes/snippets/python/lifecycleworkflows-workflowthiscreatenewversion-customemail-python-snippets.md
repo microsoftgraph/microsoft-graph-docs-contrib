@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.create_new_version_post_request_body import CreateNewVersionPostRequestBody
+from msgraph.generated.models.trigger_and_scope_based_conditions import TriggerAndScopeBasedConditions
+from msgraph.generated.models.rule_based_subject_set import RuleBasedSubjectSet
+from msgraph.generated.models.time_based_attribute_trigger import TimeBasedAttributeTrigger
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -41,9 +41,8 @@ The following considerations support the use of this integration pattern:
 
 - **Solution complexity**: This solution requires custom code to orchestrate APIs, maintain notification subscriptions, and receive change notifications via webhooks. Although this solution doesn't require elasticity, it needs to support users under different network conditions and potentially handle a burst of change notifications. Therefore, this solution is highly complex.
 
-## See also
+## Related content
 
-- [Best practices in cloud applications]([./../webhooks.md](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices))
-- [Training: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
-- [Microsoft Graph fundamentals](/training/basics-learn-graph)
+- [Best practices in cloud applications](/azure/architecture/best-practices/index-best-practices)
+- [Microsoft Graph fundamentals](/training/paths/m365-msgraph-fundamentals/)
 

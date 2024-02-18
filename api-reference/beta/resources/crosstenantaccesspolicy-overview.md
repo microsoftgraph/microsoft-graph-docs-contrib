@@ -25,7 +25,7 @@ In the traditional Microsoft Entra B2B collaboration, any invited user from an o
 Granular controls let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in cross-tenant collaboration. These controls are implemented through:
 
 + **Default cross-tenant access settings** which set the baseline settings for inbound and outbound access and tenant restrictions.
-    + In Microsoft Entra B2B collaboration, both inbound and outbound access settings are enabled by default. This means that by default all your users can be invited to external organizations, and all your users can invite external users.
+    + In Microsoft Entra B2B collaboration, both inbound and outbound access settings are enabled by default. This default configuration means all your users can be invited to external organizations, and all your users can invite guest users.
     + In Microsoft Entra B2B direct connect, both inbound and outbound access settings are disabled by default.
     + The service default settings may be updated.
     + In Tenant Restrictions, all access settings are disabled by default.
@@ -35,27 +35,27 @@ Granular controls let you determine the users, groups, and apps, both in your or
 
 > [!IMPORTANT]
 > 
-> By configuring B2B direct connect outbound settings, you agree to allow external organizations that you have enabled outbound settings with to access limited contact data about your users. Microsoft shares this data with those organizations to help them send a request to connect with your users. Data collected by external organizations, including limited contact data, is subject to the privacy policies and practices of those organizations.
+> By configuring B2B direct connect outbound settings, you allow external organizations that you have enabled outbound settings with to access limited contact data about your users. Microsoft shares this data with those organizations to help them send a request to connect with your users. Data collected by external organizations, including limited contact data, is subject to the privacy policies and practices of those organizations.
 
 ## Default cross-tenant access settings
 
 Default cross-tenant access settings determine your stance for inbound and outbound collaboration and tenant restrictions with all other Microsoft Entra organizations. Any external collaboration with an organization not listed explicitly in your cross-tenant access settings inherit these default settings. Default settings are defined using the [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type.
 
-By default, Microsoft Entra ID assigns all Microsoft Entra tenants a service default configuration for cross-tenant access settings. You can override these service defaults with your own configuration to suit your organization. You can confirm whether you're using the service default settings or modified the default settings by looking at the **isServiceDefault** property returned when you query the default endpoint.
+By default, Microsoft Entra ID assigns all Microsoft Entra tenants a service default configuration for cross-tenant access settings. You can override these service defaults with your own configuration to suit your organization. You can confirm whether you're using the service default settings or custom settings by looking at the **isServiceDefault** property returned when you query the default endpoint.
 
 ## Partner cross-tenant access settings
 
 Partner-specific cross-tenant access settings determine your stance for inbound and outbound collaboration and tenant restrictions with a specific Microsoft Entra organization. Any collaboration with this organization inherits these partner-specific settings. Partner settings are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
 
-Even though you added a partner to your cross-tenant access settings, some of your default settings will apply. For example, if you configure only **b2bCollaborationInbound** for a partner in your cross-tenant access settings, all other settings for that partner configuration are inherited from the default cross-tenant access settings. When querying the partner endpoint, any property on the partner object that is `null` means that for that property, it's inheriting settings from the default policy.
+Unless you configure all the properties of the partner-specific object, some of your default settings might still apply. For example, if you configure only **b2bCollaborationInbound** for a partner in your cross-tenant access settings, the partner configuration inherits the other settings from the default cross-tenant access settings. When querying the partner endpoint, any property on the partner object that is `null` inherits settings from the default policy.
 
 ## Inbound trust settings in cross-tenant access settings
 
-Inbound trust settings enable you to trust the MFA external users perform in their home directories. This setting prevents external users from having to perform MFA both in their home directories and in your directory. With inbound trust settings, you enable a seamless authentication experience for your external users and save on the MFA costs incurred by your organization.  
+Inbound trust settings enable you to trust the MFA guest users perform in their home directories, preventing guest users from having to perform MFA both in their home directories and in your directory. With inbound trust settings, you enable a seamless authentication experience for your guest users and save on the MFA costs incurred by your organization.  
 
-For example, when you configure your trust settings to trust MFA, your MFA policies are still applied to external users, but users who already completed MFA in their home tenants will not have to complete MFA again in your tenant.
+For example, when you configure your trust settings to trust MFA, your MFA policies are still applied to guest users, but users who have already completed MFA in their home tenants don't have to complete MFA again in your tenant.
 
-Inbound trust settings also enable you to trust devices that are compliant, or Microsoft Entra hybrid joined in their home directories. With inbound trust settings in cross-tenant access settings, you can now protect access to your apps and resources by requiring that external users use compliant, or Microsoft Entra hybrid joined devices.
+Inbound trust settings also enable you to trust devices that are compliant, or Microsoft Entra hybrid joined in their home directories. With inbound trust settings in cross-tenant access settings, you can now protect access to your apps and resources by requiring that guest users use compliant, or Microsoft Entra hybrid joined devices.
 
 ## Inbound cross-tenant sync in cross-tenant access settings
 
@@ -379,8 +379,6 @@ Check if the guest user is from an externally federated partner before trying Az
 
 Cross-tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Microsoft Entra organizations. Tenant Restrictions are for controlling how your employees use **other Microsoft Entra organizations' accounts while the employee is on your networks or devices**. Critically, outbound controls work all the time because they're associated with your accounts, while Tenant Restrictions require more signals to be injected into the authentication requests to be enforced, because tenant restrictions are scoped to networks and devices, not accounts. Learn more about [tenant restrictions](/azure/active-directory/manage-apps/tenant-restrictions).
 
-## Next steps
+## Related content
 
-+ [Cross-tenant access settings documentation](/azure/active-directory/external-identities/cross-tenant-access-overview)
-+ [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type
-+ [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type
+- [Tutorial: Configure cross-tenant synchronization](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure-graph?tabs=ms-graph&toc=/graph/toc.json) 

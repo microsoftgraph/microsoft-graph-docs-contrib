@@ -34,7 +34,7 @@ DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/ho
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

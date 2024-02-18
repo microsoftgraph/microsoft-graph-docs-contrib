@@ -167,9 +167,6 @@ Engage with the community:
 - [Join the tech community](https://techcommunity.microsoft.com/t5/microsoft-graph-security-api/bd-p/SecurityGraphAPI)
 - [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for these API sets.
-
 ## Next steps
 
 The Microsoft Graph security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:
@@ -178,7 +175,7 @@ The Microsoft Graph security API can open up new ways for you to engage with dif
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
 - Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
 
-## See also
+## Related content
 
 [Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to these Microsoft Graph security API samples:
 

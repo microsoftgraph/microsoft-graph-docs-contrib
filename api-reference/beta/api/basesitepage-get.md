@@ -39,13 +39,13 @@ GET /sites/{site-id}/pages/{page-id}
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. 
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -147,13 +147,13 @@ Content-type: application/json
     "createdBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "lastModifiedBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "parentReference": {

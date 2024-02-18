@@ -4,34 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<WorkbookSortField> fieldsList = new LinkedList<WorkbookSortField>();
-WorkbookSortField fields = new WorkbookSortField();
-fields.key = 99;
-fields.sortOn = "sortOn-value";
-fields.ascending = true;
-fields.color = "color-value";
-fields.dataOption = "dataOption-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.drives.item.items.item.workbook.tables.item.sort.apply.ApplyPostRequestBody applyPostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.workbook.tables.item.sort.apply.ApplyPostRequestBody();
+LinkedList<WorkbookSortField> fields = new LinkedList<WorkbookSortField>();
+WorkbookSortField workbookSortField = new WorkbookSortField();
+workbookSortField.setKey(99);
+workbookSortField.setSortOn("sortOn-value");
+workbookSortField.setAscending(true);
+workbookSortField.setColor("color-value");
+workbookSortField.setDataOption("dataOption-value");
 WorkbookIcon icon = new WorkbookIcon();
-icon.set = "set-value";
-icon.index = 99;
-fields.icon = icon;
+icon.setSet("set-value");
+icon.setIndex(99);
+workbookSortField.setIcon(icon);
+fields.add(workbookSortField);
+applyPostRequestBody.setFields(fields);
+applyPostRequestBody.setMatchCase(true);
+applyPostRequestBody.setMethod("method-value");
+graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().tables().byWorkbookTableId("{workbookTable-id}").sort().apply().post(applyPostRequestBody);
 
-fieldsList.add(fields);
-
-Boolean matchCase = true;
-
-String method = "method-value";
-
-graphClient.me().drive().items("{id}").workbook().tables("{id|name}").sort()
-	.apply(WorkbookTableSortApplyParameterSet
-		.newBuilder()
-		.withFields(fieldsList)
-		.withMatchCase(matchCase)
-		.withMethod(method)
-		.build())
-	.buildRequest()
-	.post();
 
 ```
