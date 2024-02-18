@@ -233,7 +233,7 @@ Content-type: application/json
             "clientId": "fe1b3476-rdca-4bef-b321-076fde19750b",
             "clientSecret": "******",
             "scope": "openid",
-            "metadataUrl": "https://login.microsoftonline.com/sashawho.onmicrosoft.com/.well-known/openid-configuration",
+            "metadataUrl": "https://login.microsoftonline.com/contoso.com/.well-known/openid-configuration",
             "domainHint": "",
             "responseType": "code",
             "responseMode": "form_post",

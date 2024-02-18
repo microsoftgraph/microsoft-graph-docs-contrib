@@ -905,7 +905,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List apps installed in a team](team-list-installedapps.md)
 - [List apps installed in a chat](chat-list-installedapps.md)

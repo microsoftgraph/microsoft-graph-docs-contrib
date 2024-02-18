@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "appmanagementpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/appmanagementpolicy-get-permissions.md)]
 
+[!INCLUDE [rbac-app-auth-method-policy-api-get](../includes/rbac-for-apis/rbac-app-auth-method-policy-api-get.md)]
 
 ## HTTP request
 
