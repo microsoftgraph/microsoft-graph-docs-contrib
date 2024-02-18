@@ -9,6 +9,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **email** property to the [communicationsGuestIdentity](https://learn.microsoft.com/en-us/graph/api/resources/communicationsGuestIdentity?view=graph-rest-beta) resource.",
           "Target": "communicationsGuestIdentity"
+        },
+        {
+          "Id": "b431f36d-e22d-4af7-b67c-729c779785d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "identity",
+          "ChangeType": "Change",
+          "Description": "Changed the type in the **identity** property of the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventPresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
         }
       ],
       "Id": "b431f36d-e22d-4af7-b67c-729c779785d5",
