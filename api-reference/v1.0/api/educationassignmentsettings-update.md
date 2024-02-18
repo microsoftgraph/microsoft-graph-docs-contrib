@@ -137,7 +137,7 @@ The following example shows a request.
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
   "name": "update_gradingCategories"
 }-->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
 Content-type: application/json
 
@@ -243,7 +243,7 @@ The following example shows a request.
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
   "name": "update_gradingCategories_delta"
 }-->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
 Content-type: application/json
 
