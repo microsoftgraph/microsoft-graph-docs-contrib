@@ -19,6 +19,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ## February 2024: New and generally available
 
 ### Microsoft Graph Toolkit
+
 Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](/graph/toolkit/upgrade).
 
 ## February 2024: New in preview only
@@ -30,6 +31,10 @@ Use the **iCalUId** property on [event](/graph/api/resources/event?view=graph-re
 ### Identity and access | Directory management
 
 Updated the descriptions of the **model** and **manufacturer** properties in the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to clarify their read-only status, replacing the outdated descriptions related to Project Rome sign-ins.
+
+### Teamwork and communications | Calls and online meetings
+
+Removed the **profilePhoto** property on [virtualEventPresenter](/graph/api/resources/virtualeventpresenter?view=graph-rest-beta)  in favor of the **photo** property on [virtualEventPresenterDetails](/graph/api/resources/virtualeventpresenterdetails?view=graph-rest-beta).
 
 ### Teamwork and communications | Messaging
 
@@ -64,6 +69,7 @@ The new partner billing API in Microsoft Graph offers Microsoft direct partners 
 - [Get manifest](/graph/api/partners-billing-manifest-get)
 
 ### Teamwork and communications | Calls and online meetings
+
 Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant) in a [call](/graph/api/resources/call). For more information, see [JSON payload examples](/graph/api/application-post-calls#notification---roster) of notifications with delta roster disabled or enabled.
 
 ## January 2024: New in preview only
