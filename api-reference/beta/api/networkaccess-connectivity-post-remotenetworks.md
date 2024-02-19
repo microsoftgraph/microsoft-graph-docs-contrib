@@ -64,6 +64,11 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ### Request
 The following is an example of a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "create_remoteNetwork_basic"
+}
+-->
 ``` http
 POST https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks
 Content-Type: application/json
@@ -104,7 +109,7 @@ To get the ID of forwarding profiles of your organization, refer to this article
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_remoteNetwork_from_"
+  "name": "create_remoteNetwork_with_forwardingProfile"
 }
 -->
 ``` http
@@ -152,7 +157,7 @@ To get the ID of forwarding profiles of your organization, refer to this article
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_remoteNetwork_from_"
+  "name": "create_remoteNetwork_with_forwardingProfile_deviceLink"
 }
 -->
 ``` http

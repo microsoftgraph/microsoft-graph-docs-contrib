@@ -1,5 +1,5 @@
 ---
-title: "List deviceLinkk"
+title: "List deviceLinks"
 description: "Retrieve a list of device links associated with a specific remote network."
 author: abhijeetsinha
 ms.localizationpriority: medium

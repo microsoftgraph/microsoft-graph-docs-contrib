@@ -1,6 +1,6 @@
 ---
 title: "Get deviceLink"
-description: "Retrieve the device link associated with a specific branch."
+description: "Retrieve the device link associated with a specific branch or remote network."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the device link associated with a specific branch.
+Retrieve the device link associated with a specific branch or remote network.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -24,13 +24,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 ## HTTP request
-
+> [!NOTE]
+> The `/branches/{branchSiteId}/...` path will be retired soon. Use the `/remoteNetworks/{remoteNetworkId}/...` path instead.
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+GET /networkAccess
 ```
 
 ## Optional query parameters

@@ -52,7 +52,7 @@ You can specify the following properties when associating a **forwardingProfile*
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Id of the forwarding profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Required.|
+|id|String|ID of the forwarding profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Required.|
 
 ## Response
 
@@ -62,7 +62,7 @@ If successful, this method returns a `OK 200` response code.
 To get the id of forwarding profiles of your organization, refer to this article - [List forwardingProfiles](networkaccess-networkaccessroot-list-forwardingprofiles.md).
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 ``` http
 PATCH https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/forwardingProfiles
@@ -83,8 +83,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.networkaccess.forwardingProfile"
+  "truncated": true
 }
 -->
 ``` http

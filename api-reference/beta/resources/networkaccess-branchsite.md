@@ -13,9 +13,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access services edge network.
+> [!IMPORTANT]
+> Deprecated and to be retired soon. Use the [remoteNetwork resource type](../resources/networkaccess-remotenetwork.md) and its associated methods instead.
 
-**Use [remoteNetwork](networkaccess-remotenetwork.md) resource type**.
+A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access services edge network.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -27,10 +28,6 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Get branchSite](../api/networkaccess-branchsite-get.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
 |[Update branchSite](../api/networkaccess-branchsite-update.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Update the properties of a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
 |[Delete branchSite](../api/networkaccess-branchsite-delete.md)|None|Delete a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
-|[List deviceLinks](../api/networkaccess-branchsite-list-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Get the deviceLink resources from the deviceLinks navigation property.|
-|[Create deviceLink](../api/networkaccess-branchsite-post-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md)|Create a new deviceLink object.|
-|[List forwardingProfiles](../api/networkaccess-branchsite-list-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Get the forwardingProfile resources linked to this branchSite.|
-[Create forwardingProfile](../api/networkaccess-branchsite-post-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Create a new forwardingProfile object.|
 
 ## Properties
 |Property|Type|Description|
