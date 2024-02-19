@@ -732,7 +732,8 @@ Content-Type: application/json
     ]
 }
 ```
-### Example 8: List details of apps in the catalog that include dashboard cards
+
+### Example 8: List details of apps in the catalog that contain dashboard cards
 
 The following example lists only apps in the catalog that contain a dashboard card.
 
