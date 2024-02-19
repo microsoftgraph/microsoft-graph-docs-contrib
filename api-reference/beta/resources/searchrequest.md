@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 A search request formatted in a JSON blob. 
 
-The JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, sort options, requested aggregations and fields, and actual search query. See [examples](#see-also) of search requests on various resources.
+The JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, sort options, requested aggregations and fields, and actual search query. See [examples](#related-content) of search requests on various resources.
 
 > [!NOTE]
 > Be aware of [known limitations](search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results.
@@ -78,7 +78,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [Use query templates](/graph/search-concept-query-template)
 - [Search mail messages](/graph/search-concept-messages)
 - [Search calendar events](/graph/search-concept-events)
