@@ -1,6 +1,6 @@
 ---
 title: "teamsAppDashboardCardIcon resource type"
-description: "Represents a configuration for the icon of a dashboard card in a Microsoft Teams app."
+description: "Represents a configuration for the icon of a dashboard card in a teamsApp."
 author: "ashish-goel"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a configuration for the icon of a dashboard card in a Microsoft Teams app.
+Represents a configuration for the icon of a dashboard card in a [teamsApp](teamsapp.md).
 
 ## Properties
 
