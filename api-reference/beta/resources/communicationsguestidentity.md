@@ -40,6 +40,6 @@ The following JSON representation shows the resource type.
 {
   "displayName": "String",
   "email": "String",
-  "id": "String"
+  "id": "String (identifier)"
 }
 ```
