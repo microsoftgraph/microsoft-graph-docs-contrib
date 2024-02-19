@@ -116,7 +116,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             }
         },
@@ -130,7 +130,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             }
         },
@@ -143,7 +143,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             }
         },
@@ -157,7 +157,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             }
         },
@@ -170,7 +170,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             }
         }

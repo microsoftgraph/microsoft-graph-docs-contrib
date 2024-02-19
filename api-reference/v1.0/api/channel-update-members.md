@@ -128,7 +128,7 @@ Content-type: application/json
   "tenantId": "f2eea028-3898-4e55-b611-2e2d960f7512"
 }
 ```
-## See also
+## Related content
 
 - [Update member's role in a team](team-update-members.md)
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

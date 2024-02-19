@@ -306,7 +306,7 @@ Use the following command, where you replace `$profileCardPropertyId` with the I
  Remove-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
 ```
 
-## See also
+## Related content
 
 - [onPremisesExtensionAttributes resource type](/graph/api/resources/onpremisesextensionattributes)
 - [User resource type](/graph/api/resources/user)

@@ -114,7 +114,7 @@ Content-Type: application/json
     "displayName": "device01",
     "managedDeviceId": "",
     "managedDeviceName": "",
-    "userPrincipalName": "sally@lucernepublishing001.onmicrosoft.com",
+    "userPrincipalName": "sally@contoso.com",
     "servicePlanName": "CloudPC_Standard",
     "status": "NotProvisioned",
     "tenantId": "aa060093-1e81-45b4-bebc-652713194ef7",
