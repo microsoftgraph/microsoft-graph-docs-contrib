@@ -3055,7 +3055,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activeUsersBreakdownMetric",
           "ChangeType": "Deprecation",
-          "Description": "The [activeUsersBreakdownMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeUsersBreakdownMetric?view=graph-rest-beta) resource and its associated methods is deprecated and will stop returning data on March 9, 2024. Use the existing [activeUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeusersmetric.md?view=graph-rest-beta) resource type instead.",
+          "Description": "The [activeUsersBreakdownMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeUsersBreakdownMetric?view=graph-rest-beta) resource and its associated methods is deprecated and will stop returning data on March 9, 2024. Use the existing [activeUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeusersmetric?view=graph-rest-beta) resource type instead.",
           "Target": "activeUsersBreakdownMetric"
         }
       ],
