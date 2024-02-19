@@ -1415,6 +1415,20 @@ items:
                     href: api/browsersitelist-delete-sharedcookies.md
           - name: Cloud PC
             items:
+              - name: EndGracePeriod
+                href: api/cloudpc-endgraceperiod.md
+              - name: List for organization
+                href: api/virtualendpoint-list-cloudpcs.md
+              - name: Reboot
+                href: api/cloudpc-reboot.md
+              - name: Rename
+                href: api/cloudpc-rename.md
+              - name: Reprovision
+                href: api/cloudpc-reprovision.md
+              - name: Restore
+                href: api/cloudpc-start.md
+              - name: Troubleshoot
+                href: api/cloudpc-troubleshoot.md
               - name: Overview
                 href: resources/cloudpc-api-overview.md
               - name: Virtual endpoint
@@ -4672,7 +4686,7 @@ items:
               - name: Remove rubric from assignment
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
-                href: api/educationassignment-delta.md              
+                href: api/educationassignment-delta.md
               - name: Add grading category
                 href: api/educationassignment-post-gradingcategory.md
               - name: Update grading category
@@ -4741,7 +4755,7 @@ items:
             - name: Pin module
               href: api/educationmodule-pin.md
             - name: Unpin module
-              href: api/educationmodule-unpin.md                  
+              href: api/educationmodule-unpin.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
@@ -7336,6 +7350,8 @@ items:
                   items:
                     - name: List
                       href: api/provisioningobjectsummary-list.md
+          - name: Cloud PC provisioning policy
+            href: resources/cloudpcprovisioningpolicy.md
           - name: Microsoft 365 usage reports
             items:
               - name: Overview

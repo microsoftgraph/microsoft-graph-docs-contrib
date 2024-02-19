@@ -17,11 +17,20 @@ Use the Cloud PC API to provision and manage virtual desktops for employees in a
 
 Inherits from [entity](../resources/entity.md).
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.|
+
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier (ID) for the virtual endpoint. Read-only. Inherited from [entity](../resources/entity.md).|
+
+## Relationships
+|provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|Cloud PC provisioning policy.|
 
 ## JSON representation
 
