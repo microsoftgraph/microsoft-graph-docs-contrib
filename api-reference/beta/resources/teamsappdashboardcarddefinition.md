@@ -37,7 +37,6 @@ Inherits from [entity](entity.md).
 | large              | Renders a large-sized dashboard card.            |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
-
 ## Relationships
 
 | Relationship | Type	| Description |
@@ -57,11 +56,11 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppDashboardCardDefinition",
-  "contentSource": "{microsoft.graph.teamsAppDashboardCardContentSource}",
+  "contentSource": {"@odata.type": "microsoft.graph.teamsAppDashboardCardContentSource"},
   "defaultSize": "String",
   "description": "String",
   "displayName": "String",
-  "icon": "{microsoft.graph.teamsAppDashboardCardIcon}",
+  "icon": {"@odata.type": "microsoft.graph.teamsAppDashboardCardIcon"},
   "id": "String (identifier)",
   "pickerGroupId": "String"
 }
