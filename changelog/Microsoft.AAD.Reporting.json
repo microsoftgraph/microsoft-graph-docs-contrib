@@ -2095,7 +2095,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "relyingPartyDetailedSummary,listing",
           "ChangeType": "Addition",
-          "Description": "Added a new resource type [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta). This resource type supports [listing](https://learn.microsoft.com/en-us/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) the relying parties configured in Active Directory Federation Services.",
+          "Description": "Added a new resource type [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta). This resource type supports [listing](https://learn.microsoft.com/en-us/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-beta) the relying parties configured in Active Directory Federation Services.",
           "Target": "relyingPartyDetailedSummary,listing"
         }
       ],
