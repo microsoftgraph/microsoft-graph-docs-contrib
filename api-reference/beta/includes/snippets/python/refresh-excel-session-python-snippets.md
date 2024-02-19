@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.drives.item.items.item.workbook.refreshSession.refresh_session_request_builder import RefreshSessionRequestBuilder
+from msgraph.generated.models.refresh_session_post_request_body import RefreshSessionPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

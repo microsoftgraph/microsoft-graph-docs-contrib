@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.on_token_issuance_start_listener import OnTokenIssuanceStartListener
+from msgraph.generated.models.authentication_conditions import AuthenticationConditions
+from msgraph.generated.models.authentication_conditions_applications import AuthenticationConditionsApplications
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -14,7 +14,7 @@ var requestBody = new UnifiedGroupSource
 {
 	Group = new Group
 	{
-		Mail = "SOCTeam@M365x809305.onmicrosoft.com",
+		Mail = "SOCTeam@contoso.com",
 	},
 	IncludedSources = SourceType.Mailbox | SourceType.Site,
 };

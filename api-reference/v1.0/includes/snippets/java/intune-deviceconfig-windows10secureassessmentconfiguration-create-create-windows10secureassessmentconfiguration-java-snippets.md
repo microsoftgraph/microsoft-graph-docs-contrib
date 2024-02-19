@@ -4,20 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Windows10SecureAssessmentConfiguration deviceConfiguration = new Windows10SecureAssessmentConfiguration();
-deviceConfiguration.description = "Description value";
-deviceConfiguration.displayName = "Display Name value";
-deviceConfiguration.version = 7;
-deviceConfiguration.launchUri = "Launch Uri value";
-deviceConfiguration.configurationAccount = "Configuration Account value";
-deviceConfiguration.allowPrinting = true;
-deviceConfiguration.allowScreenCapture = true;
-deviceConfiguration.allowTextSuggestion = true;
+deviceConfiguration.setOdataType("#microsoft.graph.windows10SecureAssessmentConfiguration");
+deviceConfiguration.setDescription("Description value");
+deviceConfiguration.setDisplayName("Display Name value");
+deviceConfiguration.setVersion(7);
+deviceConfiguration.setLaunchUri("Launch Uri value");
+deviceConfiguration.setConfigurationAccount("Configuration Account value");
+deviceConfiguration.setAllowPrinting(true);
+deviceConfiguration.setAllowScreenCapture(true);
+deviceConfiguration.setAllowTextSuggestion(true);
+DeviceConfiguration result = graphClient.deviceManagement().deviceConfigurations().post(deviceConfiguration);
 
-graphClient.deviceManagement().deviceConfigurations()
-	.buildRequest()
-	.post(deviceConfiguration);
 
 ```

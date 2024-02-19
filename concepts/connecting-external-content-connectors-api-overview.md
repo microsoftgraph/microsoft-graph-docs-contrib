@@ -46,6 +46,6 @@ You can use the external group API to set permissions on external items ingested
 
 To learn more, see [Use external groups to manage permissions to Microsoft Graph connectors data sources](connecting-external-content-external-groups.md).
 
-## Next steps
+## Next step
 
 - [Build a custom connector](/graph/connecting-external-content-build-quickstart)

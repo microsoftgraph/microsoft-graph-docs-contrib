@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about call recording](/graph/system-messages/#call-recording)
 - For more information about other types of events, see [System messages](/graph/system-messages).
 

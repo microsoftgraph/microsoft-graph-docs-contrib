@@ -163,6 +163,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Update the task details associated with a scenario task](plannertaskdetails-update.md).

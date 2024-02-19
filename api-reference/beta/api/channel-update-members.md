@@ -131,7 +131,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Update member's role in a team](team-update-members.md)
 

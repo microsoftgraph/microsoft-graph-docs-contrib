@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-GroupCollectionPage groups = graphClient.groups()
-	.buildRequest( requestOptions )
-	.filter("createdDateTime ge 2021-11-01")
-	.get();
+GroupCollectionResponse result = graphClient.groups().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "createdDateTime ge 2021-11-01";
+	requestConfiguration.queryParameters.count = true;
+	requestConfiguration.headers.add("ConsistencyLevel", "eventual");
+});
+
 
 ```
