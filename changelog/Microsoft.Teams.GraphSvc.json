@@ -1658,7 +1658,7 @@
       "ChangeList": [
         {
           "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "teamsAppDashboardCardSize",
           "ChangeType": "Addition",
           "Description": "Added the **teamsAppDashboardCardSize** enumeration type.",
@@ -1666,7 +1666,7 @@
         },
         {
           "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "teamsAppDashboardCardSourceType",
           "ChangeType": "Addition",
           "Description": "Added the **teamsAppDashboardCardSourceType** enumeration type.",
@@ -1677,7 +1677,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppDashboardCardBotConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppDashboardCardBotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamsAppDashboardCardBotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardBotConfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamsAppDashboardCardBotConfiguration"
         },
         {
@@ -1685,7 +1685,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppDashboardCardContentSource",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppDashboardCardContentSource](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamsAppDashboardCardContentSource](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardContentSource?view=graph-rest-beta) resource type.",
           "Target": "teamsAppDashboardCardContentSource"
         },
         {
@@ -1693,7 +1693,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppDashboardCardIcon",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppDashboardCardIcon](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamsAppDashboardCardIcon](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardIcon?view=graph-rest-beta) resource type.",
           "Target": "teamsAppDashboardCardIcon"
         },
         {
@@ -1701,12 +1701,12 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppDashboardCardDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppDashboardCardDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource",
+          "Description": "Added the [teamsAppDashboardCardDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashBoardCardDefinition?view=graph-rest-beta) resource type.",
           "Target": "teamsAppDashboardCardDefinition"
         },
         {
           "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "dashboardCards",
           "ChangeType": "Addition",
           "Description": "Added the **dashboardCards** relationship to the [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
@@ -1718,7 +1718,7 @@
       "Version": "beta",
       "CreatedDateTime": "2024-01-10T04:07:57.4956807Z",
       "WorkloadArea": "Teamwork and Communications",
-      "SubArea": ""
+      "SubArea": "Apps"
     }
   ]
 }
