@@ -1,6 +1,6 @@
 ---
 title: "teamsAppDashboardCardContentSource resource type"
-description: "Represents a configuration for the source of the dashboard card's content of Teams App"
+description: "Represents a configuration for the source of the dashboard card content in a Microsoft Teams app."
 author: "ashish-goel"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -11,14 +11,23 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-## Properties
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-### dashboardCardContentSource
+Represents a configuration for the source of the dashboard card content in a [teamsApp](teamsapp.md).
+
+## Properties
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| `sourceType` | `teamsAppDashboardCardContentSourceType` | Represents the type of source that powers the content of the dashboard card. Only source type bot is allowed|
-| `botConfiguration` | [teamsAppdashboardCardBotConfiguration](../resources/teamsappdashboardcardbotconfiguration.md) | The configuration for the bot source. Required if `sourceType` is set to `bot`. |
+| botConfiguration | [teamsAppdashboardCardBotConfiguration](../resources/teamsappdashboardcardbotconfiguration.md) | The configuration for the bot source. Required if **sourceType** is set to `bot`. |
+| sourceType | [teamsAppDashboardCardSourceType](../resources/teamsappdashboardcardcontentsource.md#teamsappdashboardcardsourcetype-values) | Represents the type of source that powers the content of the dashboard card. The possible values are: `bot`, `unknownFutureValue`. |
+
+### teamsAppDashboardCardSourceType values
+
+| Member             | Description                                      |
+|:-------------------|:-------------------------------------------------|
+| bot                | **TODO**           |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
@@ -28,7 +37,7 @@ Namespace: microsoft.graph
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppDashboardCardContentSource"
@@ -37,6 +46,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppDashboardCardContentSource",
+  "botConfiguration": {"@odata.type": "microsoft.graph.teamsAppdashboardCardBotConfiguration"},
+  "sourceType": "String"
 }
 ```
 
