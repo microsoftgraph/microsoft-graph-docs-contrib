@@ -24,7 +24,7 @@ Rich relationship connecting a user to documents that are trending around the us
 | Property      | Type          	 				| Description  |
 | ------------- |---------------	 				| -------------|
 | id      				| String	 				| Unique identifier of the relationship. Read only. 	   |
-| lastModifiedDateTime  | DateTimeOffset            | |
+| lastModifiedDateTime  | DateTimeOffset            | *TODO*|
 | resourceReference     | [resourceReference](insights-resourcereference.md)  		| Reference properties of the trending document, such as the url and type of the document. |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)   	| Properties that you can use to visualize the document in your experience. |
 | weight     			| Double     				| Value indicating how much the document is currently trending. The larger the number, the more the document is currently trending around the user (the more relevant it is). Returned documents are sorted by this value.  |

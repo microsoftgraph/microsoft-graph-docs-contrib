@@ -76,7 +76,7 @@ Here's a JSON representation of the resource.
   "clientAppUsed": "String",
   "correlationId": "String",
   "conditionalAccessStatus": "string",
-  "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
+  "appliedConditionalAccessPolicies": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
   "isInteractive": true,
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},

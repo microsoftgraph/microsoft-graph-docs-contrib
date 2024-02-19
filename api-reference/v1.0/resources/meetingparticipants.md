@@ -17,8 +17,8 @@ Participants in a meeting.
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| attendees | [meetingParticipantInfo](meetingparticipantinfo.md) collection |  |
-| organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| attendees | [meetingParticipantInfo](meetingparticipantinfo.md) collection | *TODO* |
+| organizer | [meetingParticipantInfo](meetingparticipantinfo.md) | *TODO* |
 
 ## JSON representation
 

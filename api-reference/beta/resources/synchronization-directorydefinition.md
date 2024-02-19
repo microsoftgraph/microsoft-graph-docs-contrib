@@ -59,11 +59,6 @@ Here's a JSON representation of the resource.
   "discoverabilities": "String",
   "discoveryDateTime": "DateTimeOffset",
   "id": "String",
-  "metadata": [
-    {
-      "@odata.type": "microsoft.graph.stringKeyStringValuePair"
-    }
-  ],
   "name": "String",
   "objects": [
     {

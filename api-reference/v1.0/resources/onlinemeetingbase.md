@@ -40,6 +40,7 @@ Inherits from [entity](../resources/entity.md).
 | joinWebUrl | String | The join URL of the online meeting. Read-only. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
+| shareMeetingChatHistoryDefault | meetingChatHistoryDefaultMode | *TODO*|
 | subject | String | The subject of the online meeting. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type.  |
@@ -107,7 +108,6 @@ The following JSON representation shows the resource type.
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "recordAutomatically": "Boolean",
   "shareMeetingChatHistoryDefault": "microsoft.graph.meetingChatHistoryDefaultMode",
-  "startDateTime": "String (timestamp)",  
   "subject": "String",
   "videoTeleconferenceId": "String",
   "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}

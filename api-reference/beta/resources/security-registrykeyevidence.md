@@ -31,7 +31,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.registryKeyEvidence"
+  "@odata.type": "microsoft.graph.security.registryKeyEvidence",
+  "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
 ``` json

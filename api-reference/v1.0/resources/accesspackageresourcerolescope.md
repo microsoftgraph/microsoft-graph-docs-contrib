@@ -52,14 +52,13 @@ The following is a JSON representation of the resource.
 {
    "createdDateTime":"String (timestamp)",
    "id":"String (identifier)",
-   "modifiedDateTime":"String (timestamp)",
-   "accessPackageResourceRole":{
+   "role":{
       "id":"String (identifier)",
       "displayName":"String",
       "originSystem":"String",
       "originId":"String"
    },
-   "accessPackageResourceScope":{
+   "scope":{
       "id":"String (identifier)",
       "displayName":"String",
       "description":"String",

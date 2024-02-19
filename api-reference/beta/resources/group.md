@@ -281,7 +281,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "isFavorite": true,
   "isArchived": false,
-  "isAssignableRole": false,
+  "isAssignableToRole": false,
   "isSubscribedByMail": true,
   "licenseProcessingState": "String",
   "mail": "String",

@@ -25,6 +25,7 @@ Represents the status of a long-running workbook operation.
 |status|String| The current status of the operation. Possible values are: `notStarted`, `running`, `succeeded`, `failed`.|
 |error|[workbookOperationError](workbookoperationerror.md)| The error returned by the operation.|
 |resourceLocation|String| The resource URI for the result.|
+|statusCode| integer| Status code of the operation. | 
 
 ## Relationships
 

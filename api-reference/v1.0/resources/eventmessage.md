@@ -101,7 +101,6 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.message",
   "optionalProperties": [
     "attachments",
     "event",
@@ -109,8 +108,8 @@ Here is a JSON representation of the resource
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "baseType": "microsoft.graph.message",
   "@odata.type": "microsoft.graph.eventMessage",
+  "baseType": "microsoft.graph.message",
   "@odata.annotations": [
     {
       "property": "event",

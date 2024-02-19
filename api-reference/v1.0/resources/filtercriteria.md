@@ -13,6 +13,17 @@ Namespace: microsoft.graph
 
 Represents the filtering criteria applied to a column.
 
+## Properties
+| Property	      | Type	                 |Description|
+|:----------------|:-------------------------|:----------|
+| color           | String                   | *TODO*    |
+| criterion1      | String                   | *TODO*    |
+| criterion2      | String                   | *TODO*    |
+| dynamicCriteria | String                   | *TODO*    |
+| filterOn        | String                   | *TODO*    |
+| icon            | [workbookIcon](icon.md)  | *TODO*    |
+| values          | [Json](json.md)          | *TODO*    |
+
 ## JSON representation
 
 Here is a JSON representation of the resource.

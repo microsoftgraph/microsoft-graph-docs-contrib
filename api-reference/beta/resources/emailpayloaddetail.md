@@ -38,7 +38,8 @@ None.
 Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.emailPayloadDetail"
+  "@odata.type": "microsoft.graph.emailPayloadDetail",
+  "baseType": "microsoft.graph.payloadDetail"
 }
 -->
 ``` json

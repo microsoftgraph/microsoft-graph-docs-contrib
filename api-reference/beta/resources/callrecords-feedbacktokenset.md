@@ -29,7 +29,7 @@ Here's a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.callRecords.feedbackTokenSet",
-  "baseType": null
+  "openType": true
 }-->
 
 ```json

@@ -94,7 +94,8 @@ None.
 Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.deviceEvidence"
+  "@odata.type": "microsoft.graph.security.deviceEvidence",
+  "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
 ``` json

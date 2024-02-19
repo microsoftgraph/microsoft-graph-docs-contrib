@@ -149,7 +149,8 @@ Here is a JSON representation of the resource
     "singleValueExtendedProperties",
     "multiValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.event"
+  "@odata.type": "microsoft.graph.event",
+  "baseType": "microsoft.graph.outlookItem"
 }-->
 
 ```json

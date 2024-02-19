@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.eventPropagationResult",
-  "workload": "String",
+  "serviceName": "String",
   "location": "String",
   "status": "String",
   "statusInformation": "String"

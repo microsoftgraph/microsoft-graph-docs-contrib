@@ -32,7 +32,8 @@ None.
 Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.ipEvidence"
+  "@odata.type": "microsoft.graph.security.ipEvidence",
+  "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
 ``` json

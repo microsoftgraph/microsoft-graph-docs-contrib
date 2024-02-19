@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-
-
 Represents a review set query, which is used to query and cull data stored in a Microsoft Purview eDiscovery [reviewSet](security-ediscoveryreviewset.md).
 
 ## Methods
@@ -47,7 +45,8 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.ediscoveryReviewSetQuery",
-  "openType": false
+  "openType": false,
+  "baseType": "microsoft.graph.security.search"
 }
 -->
 ``` json

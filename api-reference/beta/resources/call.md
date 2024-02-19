@@ -162,7 +162,6 @@ Here's a JSON representation of the resource.
   "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
   "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
-  "replacesContext": "String",
   "requestedModalities": ["String"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "ringingTimeoutInSeconds": 99,
