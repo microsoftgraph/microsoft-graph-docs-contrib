@@ -4,20 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TeamsTab teamsTab = new TeamsTab();
-teamsTab.displayName = "My Contoso Tab";
-teamsTab.additionalDataManager().put("teamsApp@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8"));
+teamsTab.setDisplayName("My Contoso Tab");
 TeamsTabConfiguration configuration = new TeamsTabConfiguration();
-configuration.entityId = "2DCA2E6C7A10415CAF6B8AB6661B3154";
-configuration.contentUrl = "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView";
-configuration.websiteUrl = "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154";
-configuration.removeUrl = "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab";
-teamsTab.configuration = configuration;
+configuration.setEntityId("2DCA2E6C7A10415CAF6B8AB6661B3154");
+configuration.setContentUrl("https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView");
+configuration.setWebsiteUrl("https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154");
+configuration.setRemoveUrl("https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab");
+teamsTab.setConfiguration(configuration);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("teamsApp@odata.bind", "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8");
+teamsTab.setAdditionalData(additionalData);
+TeamsTab result = graphClient.chats().byChatId("{chat-id}").tabs().post(teamsTab);
 
-graphClient.chats("19:d65713bc498c4a428c71ef9353e6ce20@thread.v2").tabs()
-	.buildRequest()
-	.post(teamsTab);
 
 ```

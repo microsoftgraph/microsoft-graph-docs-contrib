@@ -20,6 +20,7 @@ Inherits from [entity](../resources/entity.md).
 | Method                                                   | Return type                                                 | Description                                                                                          |
 | :------------------------------------------------------- | :---------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
 | [List educationClasses](../api/educationclass-list.md)   | [educationClass](../resources/educationclass.md) collection | Get a list of the [educationClass](../resources/educationclass.md) objects and their properties.     |
+| [List modules](../api/educationclass-list-modules.md)    | [educationModule]collection  | Get an **educationModule** object collection.        |
 | [Create educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | Create a new [educationClass](../resources/educationclass.md) object.                                |
 | [Get educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Read the properties and relationships of an [educationClass](../resources/educationclass.md) object. |
 | [Update educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Update the properties of an [educationClass](../resources/educationclass.md) object.                 |
@@ -36,7 +37,7 @@ Inherits from [entity](../resources/entity.md).
 | displayName          | String                                         | Name of the class.                                                 |
 | externalId           | String                                         | ID of the class from the syncing system.                           |
 | externalSource       | educationExternalSource                        | How this class was created. Possible values are: `sis`, `manual`.  |
-| externalSourceDetail | String                                         | The name of the external source this resources was generated from. |
+| externalSourceDetail | String                                         | The name of the external source this resource was generated from. |
 | externalName         | String                                         | Name of the class in the syncing system.                           |
 | grade                | String                                         | Grade level of the class.                                          |
 | id                   | String                                         | Object identifier. Inherited from [entity](../resources/entity.md). |
@@ -53,12 +54,13 @@ Inherits from [entity](../resources/entity.md).
 |assignmentSettings| [educationAssignmentSettings](educationassignmentsettings.md) collection | Specifies class-level assignments settings. |
 | group        | [group](../resources/group.md)                                | The underlying Microsoft 365 group object.                |
 | members      | [educationUser](../resources/educationuser.md) collection     | All users in the class. Nullable.                         |
+| modules      | [educationModule] collection   | All modules in the class. Nullable. |
 | schools      | [educationSchool](../resources/educationschool.md) collection | All schools that this class is associated with. Nullable. |
 | teachers     | [educationUser](../resources/educationuser.md) collection     | All teachers in the class. Nullable.                      |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -90,3 +92,5 @@ The following is a JSON representation of the resource.
   }
 }
 ```
+
+[educationmodule]: educationmodule.md

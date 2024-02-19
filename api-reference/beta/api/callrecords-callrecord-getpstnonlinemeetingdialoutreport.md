@@ -154,7 +154,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get log of PSTN calls](callrecords-callrecord-getpstncalls.md)
 - [Get log of sent/received SMS](callrecords-callrecord-getsmslog.md)

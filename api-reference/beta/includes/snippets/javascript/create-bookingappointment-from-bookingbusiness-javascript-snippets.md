@@ -171,7 +171,7 @@ const bookingAppointment = {
     ]
 };
 
-await client.api('/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments')
+await client.api('/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/appointments')
 	.version('beta')
 	.post(bookingAppointment);
 

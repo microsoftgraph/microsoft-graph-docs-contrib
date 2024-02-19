@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.planner.plans.item.planner_plan_item_request_builder import PlannerPlanItemRequestBuilder
+from msgraph.generated.models.planner_plan import PlannerPlan
 
 graph_client = GraphServiceClient(credentials, scopes)
 

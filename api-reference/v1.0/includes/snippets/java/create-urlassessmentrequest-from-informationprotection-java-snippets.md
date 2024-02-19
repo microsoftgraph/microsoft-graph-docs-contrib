@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UrlAssessmentRequest threatAssessmentRequest = new UrlAssessmentRequest();
-threatAssessmentRequest.url = "http://test.com";
-threatAssessmentRequest.expectedAssessment = ThreatExpectedAssessment.BLOCK;
-threatAssessmentRequest.category = ThreatCategory.PHISHING;
+threatAssessmentRequest.setOdataType("#microsoft.graph.urlAssessmentRequest");
+threatAssessmentRequest.setUrl("http://test.com");
+threatAssessmentRequest.setExpectedAssessment(ThreatExpectedAssessment.Block);
+threatAssessmentRequest.setCategory(ThreatCategory.Phishing);
+ThreatAssessmentRequest result = graphClient.informationProtection().threatAssessmentRequests().post(threatAssessmentRequest);
 
-graphClient.informationProtection().threatAssessmentRequests()
-	.buildRequest()
-	.post(threatAssessmentRequest);
 
 ```
