@@ -2,7 +2,8 @@
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
