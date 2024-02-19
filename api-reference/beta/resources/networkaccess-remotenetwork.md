@@ -40,7 +40,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |connectivityConfiguration|[microsoft.graph.networkaccess.remoteNetworkConnectivityConfiguration](../resources/networkaccess-remotenetworkconnectivityconfiguration.md) collection|Specifies the connectivity details of all device links associated with a remote network.|
 |deviceLinks|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Each unique CPE device associated with a remote network is specified. Supports `$expand`.|
-|forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Each forwarding profile associated with a remote network is specified. Supports `$expand`.|
+|forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Each forwarding profile associated with a remote network is specified. Supports `$expand` and `$select`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
