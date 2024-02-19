@@ -1,6 +1,6 @@
 ---
 title: "teamsAppDashboardCardIcon resource type"
-description: "Represents a configuration for the dashboard card's icon of Teams App"
+description: "Represents a configuration for the icon of a dashboard card in a Microsoft Teams app."
 author: "ashish-goel"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -11,14 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-## Properties
+Represents a configuration for the icon of a dashboard card in a Microsoft Teams app.
 
-### teamsAppDashboardCardIcon
+## Properties
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| `iconUrl` | `string` |  The icon for the card, to be displayed in the toolbox and card bar, represented as URL. Recommended size for raster images is 28x28 pixels. If this field has a value, `officeFabricIconFontName` will be ignored. |
-| `officeUIFabricIconName` | `string` | Office UI Fabric/Fluent UI icon friendly name for the card. This value will be used if 'iconUrl' is not specified. Example: `officeUIFabricIconName: 'Search'` |
+| iconUrl | String |  The icon for the card, displayed in the toolbox and card bar, is represented as a URL. The preferred size for raster images is 28x28 pixels. If this property has a value, the **officeFabricIconFontName** property is ignored. |
+| officeUIFabricIconName | String | The friendly name of the Office UI Fabric/Fluent UI icon for the card that is used when the **iconUrl** property isn't specified. For example, `"officeUIFabricIconName": "Search"`. |
 
 ## Relationships
 
@@ -28,7 +28,7 @@ Namespace: microsoft.graph
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppDashboardCardIcon"
@@ -37,6 +37,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppDashboardCardIcon",
- 
+  "iconUrl": "String",
+  "officeUIFabricIconName": "String"
 }
 ```
