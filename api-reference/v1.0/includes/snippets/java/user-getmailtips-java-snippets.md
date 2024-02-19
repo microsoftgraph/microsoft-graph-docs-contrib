@@ -10,8 +10,8 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.users.item.getmailtips.GetMailTipsPostRequestBody getMailTipsPostRequestBody = new com.microsoft.graph.users.item.getmailtips.GetMailTipsPostRequestBody();
 LinkedList<String> emailAddresses = new LinkedList<String>();
-emailAddresses.add("danas@contoso.onmicrosoft.com");
-emailAddresses.add("fannyd@contoso.onmicrosoft.com");
+emailAddresses.add("danas@contoso.com");
+emailAddresses.add("fannyd@contoso.com");
 getMailTipsPostRequestBody.setEmailAddresses(emailAddresses);
 getMailTipsPostRequestBody.setMailTipsOptions(EnumSet.of(MailTipsType.AutomaticReplies, MailTipsType.MailboxFullStatus));
 var result = graphClient.me().getMailTips().post(getMailTipsPostRequestBody);

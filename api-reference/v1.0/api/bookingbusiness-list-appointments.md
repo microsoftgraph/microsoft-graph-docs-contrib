@@ -58,10 +58,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinesslistappointments",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/appointments
 ```
 
 # [C#](#tab/csharp)
@@ -114,7 +114,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/appointments",
     "value": [
         {
             "id": "AAMkADKoAAA=",

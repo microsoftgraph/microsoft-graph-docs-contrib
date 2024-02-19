@@ -169,7 +169,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List joinedTeams](/graph/api/user-list-joinedteams)
 - [List groups](/graph/api/group-list)

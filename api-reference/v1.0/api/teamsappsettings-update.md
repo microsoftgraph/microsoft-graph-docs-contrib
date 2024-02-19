@@ -187,6 +187,6 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

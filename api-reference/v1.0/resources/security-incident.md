@@ -20,7 +20,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List incidents](../api/security-list-incidents.md)|[microsoft.graph.security.incident](../resources/security-incident.md) collection|Get a list of [incident](../resources/security-incident.md) objects that Microsoft 365 Defender has created to track attacks in an organization.|
+|[List incidents](../api/security-list-incidents.md)|[microsoft.graph.security.incident](../resources/security-incident.md) collection|Get a list of [incident](../resources/security-incident.md) objects that Microsoft 365 Defender created to track attacks in an organization.|
 |[Get incident](../api/security-incident-get.md)|[microsoft.graph.security.incident](../resources/security-incident.md)|Read the properties and relationships of an [incident](../resources/security-incident.md) object.|
 |[Update incident](../api/security-incident-update.md)|[microsoft.graph.security.incident](../resources/security-incident.md)|Update the properties of an [incident](../resources/security-incident.md) object.|
 |[Create comment for incident](../api/security-incident-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [incident](../resources/security-incident.md) based on the specified incident **id** property.|
@@ -44,8 +44,9 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |redirectIncidentId|String|Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents. In such a case, the **status** property is `redirected`. |
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`, and `awaitingAction`.|
-|systemTags| string collection| Collection of system tags assoicated with an incident.|
 |tenantId|String|The Microsoft Entra tenant in which the alert was created.|
+|systemTags|String collection|The system tags associated with the incident|
+|description|String|A rich text string describing the incident|
 
 
 
@@ -58,8 +59,8 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 | resolved            | The incident is in resolved state.                                                                                                           |
 | inProgress          | The incident is in mitigation progress.                                                                                                      |
 | redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property.                        |
-| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                                                                            |
-| awaitingAction      | This incident has required actions from Defender Experts awaiting your action. This status can only be set by Microsoft 365 Defender experts.|
+| unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.                                                                                            |
+| awaitingAction      | This incident requires actions from Defender Experts awaiting your action. Only Microsoft 365 Defender experts can set this status.|
 
 
 
@@ -69,7 +70,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |alerts|[microsoft.graph.security.alert](security-alert.md) collection|The list of related alerts. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -101,6 +102,10 @@ The following is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.security.alertComment"
     }
   ],
+  "systemTags" : [
+    "String"
+  ],
+  "description" : "String",
   "lastModifiedBy": "String"
 }
 ```

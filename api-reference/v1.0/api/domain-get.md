@@ -96,11 +96,11 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["M365x214355.onmicrosoft.com"],
+  "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/domains/M365x214355.onmicrosoft.com
+GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 
 # [C#](#tab/csharp)
@@ -152,7 +152,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#domains/$entity",
     "authenticationType": "Managed",
     "availabilityStatus": null,
-    "id": "M365x214355.onmicrosoft.com",
+    "id": "contoso.com",
     "isAdminManaged": true,
     "isDefault": true,
     "isInitial": true,
