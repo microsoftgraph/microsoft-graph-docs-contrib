@@ -27,17 +27,19 @@ The details of a version of a [teamsApp](teamsapp.md).
 | version             | string   | The version number of the application.                 |
 | allowedInstallationScopes | teamsAppInstallationScope collection | A collection of scopes where the Teams app can be installed. Possible values are:</br>`team`—Indicates that the Teams app can be installed within a team and is authorized to access that team's data. </br>`groupChat`—Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data. </br> `personal`—Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data. |
 |authorization|[teamsAppAuthorization](../resources/teamsappauthorization.md)|Authorization requirements specified in the Teams app manifest.|
-|dashboardCards|[teamsAppDashboardCardDefinition](../resources/teamsappdashboardcarddefinition.md)|Dashboard Cards specified in the Teams app manifest.|
 
 ## Relationships
 
 | Relationship   | Type	                          | Description                                                 |
 |:-------------- |:------------------------------ |:----------------------------------------------------------- |
 | bot            |[teamworkBot](teamworkbot.md)   | The details of the bot specified in the Teams app manifest. |
-| colorIcon      |[teamsAppIcon](teamsappicon.md) | The color version of the Teams app's icon.                   |
+| colorIcon      |[teamsAppIcon](teamsappicon.md) | The color version of the Teams app's icon.                  |
+| dashboardCards |[teamsAppDashboardCardDefinition](../resources/teamsappdashboardcarddefinition.md)| Dashboard cards specified in the Teams app manifest.|
 | outlineIcon    |[teamsAppIcon](teamsappicon.md) | The outline version of the Teams app's icon.                 |
 
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -53,8 +55,7 @@ The details of a version of a [teamsApp](teamsapp.md).
   "azureADAppId": "string",
   "displayName": "string",
   "version": "string",
-  "authorization": "#microsoft.graph.teamsAppAuthorization",
-  "dashboardCards": "#microsoft.graph.teamsAppDashboardCardDefinition"
+  "authorization": "#microsoft.graph.teamsAppAuthorization"
 }
 ```
 
