@@ -134,28 +134,28 @@ Content-type: application/json
 {
     "schema": [
         {
-            "Name": "Timestamp",
-            "Type": "DateTime"
+            "name": "Timestamp",
+            "type": "DateTime"
         },
         {
-            "Name": "FileName",
-            "Type": "String"
+            "name": "FileName",
+            "type": "String"
         },
         {
-            "Name": "InitiatingProcessFileName",
-            "Type": "String"
+            "name": "InitiatingProcessFileName",
+            "type": "String"
         }
     ],
     "results": [
         {
-            "Timestamp": "2020-08-30T06:38:35.7664356Z",
-            "FileName": "conhost.exe",
-            "InitiatingProcessFileName": "powershell.exe"
+            "timestamp": "2020-08-30T06:38:35.7664356Z",
+            "fileName": "conhost.exe",
+            "initiatingProcessFileName": "powershell.exe"
         },
         {
-            "Timestamp": "2020-08-30T06:38:30.5163363Z",
-            "FileName": "conhost.exe",
-            "InitiatingProcessFileName": "powershell.exe"
+            "timestamp": "2020-08-30T06:38:30.5163363Z",
+            "fileName": "conhost.exe",
+            "initiatingProcessFileName": "powershell.exe"
         }
     ]
 }

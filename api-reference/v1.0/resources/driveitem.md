@@ -197,7 +197,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "analytics": {"@odata.type": "microsoft.graph.itemAnalytics"},
   "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
-  "retentionLabel": [{ "@odata.type": "microsoft.graph.itemRetentionLabel" }],
+  "retentionLabel": { "@odata.type": "microsoft.graph.itemRetentionLabel" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],

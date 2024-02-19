@@ -16,8 +16,8 @@ Namespace: microsoft.graph
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|categories|String collection||
-|changeKey|String||
+|categories|String collection|The categories associated with the item|
+|changeKey|String|Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
