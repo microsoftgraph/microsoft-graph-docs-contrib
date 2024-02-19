@@ -40,7 +40,7 @@ Auditing data can be accessed through Microsoft Purview Audit Search API via the
 }
 -->
 ``` http
-POST /security/auditCore/auditLogQueries
+POST /security/auditLog/queries
 ```
 
 ## Request headers
@@ -85,7 +85,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/auditCore/auditLogQueries
+POST https://graph.microsoft.com/beta/security/auditLog/queries
 Content-Type: application/json
 
 {
