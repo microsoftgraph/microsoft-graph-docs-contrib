@@ -1,6 +1,6 @@
 ---
 title: "teamsAppDashboardCardBotConfiguration resource type"
-description: "Represents a configuration for the dashboard card's bot of Teams App"
+description: "Represents a configuration for the dashboard card's bot of a teamsApp."
 author: "ashish-goel"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -11,13 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents a configuration for the dashboard card's bot of a [teamsApp](teamsapp.md).
+
 ## Properties
 
-### teamsAppDashboardCardBotConfiguration
-
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| `botId` | `string` | The unique Microsoft app ID for the bot as registered with the Bot Framework |
+| Property | Type   | Description                                                                   |
+|:---------|:-------|:------------------------------------------------------------------------------|
+| botId    | String | The unique Microsoft app ID for the bot as registered with the Bot Framework. |
 
 ## Relationships
 
@@ -27,7 +29,7 @@ Namespace: microsoft.graph
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppDashboardCardBotConfiguration"
@@ -36,7 +38,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppDashboardCardBotConfiguration",
- 
+  "botId": "String"
 }
 ```
-
