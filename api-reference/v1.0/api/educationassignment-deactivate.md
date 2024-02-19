@@ -158,7 +158,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationAssignment",
     "@odata.type": "#microsoft.graph.educationAssignment",
     "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
-    "displayName": "2023-07-26T19:04:55.525Z6684",
+    "displayName": "Inactive assignment",
     "closeDateTime": null,
     "dueDateTime": "2023-08-25T19:04:55.525Z",
     "assignDateTime": null,
