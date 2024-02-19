@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.teamwork_tag import TeamworkTag
 
 graph_client = GraphServiceClient(credentials, scopes)
 

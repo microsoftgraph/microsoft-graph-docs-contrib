@@ -50,6 +50,6 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 For examples that show how to use the **participant** resource, see [callRecord](callrecords-callrecord.md).

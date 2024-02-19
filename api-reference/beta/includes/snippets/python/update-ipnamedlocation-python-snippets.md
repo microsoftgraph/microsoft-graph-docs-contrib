@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ip_named_location import IpNamedLocation
+from msgraph.generated.models.ip_range import IpRange
+from msgraph.generated.models.i_pv4_cidr_range import IPv4CidrRange
 
 graph_client = GraphServiceClient(credentials, scopes)
 

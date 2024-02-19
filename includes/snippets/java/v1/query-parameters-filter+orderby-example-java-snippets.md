@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-MessageCollectionPage messages = graphClient.me().messages()
-	.buildRequest()
-	.filter("Subject eq 'welcome' and importance eq 'normal'")
-	.orderBy("subject,importance,receivedDateTime desc")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+MessageCollectionResponse result = graphClient.me().messages().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "Subject eq 'welcome' and importance eq 'normal'";
+	requestConfiguration.queryParameters.orderby = new String []{"subject", "importance", "receivedDateTime desc"};
+});
+
 
 ```

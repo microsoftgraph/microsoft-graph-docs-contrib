@@ -4,19 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String clientContext = "clientContext-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-RecordingStatus status = RecordingStatus.NOT_RECORDING;
+com.microsoft.graph.beta.communications.calls.item.updaterecordingstatus.UpdateRecordingStatusPostRequestBody updateRecordingStatusPostRequestBody = new com.microsoft.graph.beta.communications.calls.item.updaterecordingstatus.UpdateRecordingStatusPostRequestBody();
+updateRecordingStatusPostRequestBody.setClientContext("clientContext-value");
+updateRecordingStatusPostRequestBody.setStatus(RecordingStatus.NotRecording);
+var result = graphClient.communications().calls().byCallId("{call-id}").updateRecordingStatus().post(updateRecordingStatusPostRequestBody);
 
-graphClient.communications().calls("{id}")
-	.updateRecordingStatus(CallUpdateRecordingStatusParameterSet
-		.newBuilder()
-		.withStatus(status)
-		.withClientContext(clientContext)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

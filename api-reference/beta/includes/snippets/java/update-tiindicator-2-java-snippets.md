@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "return=representation"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TiIndicator tiIndicator = new TiIndicator();
-tiIndicator.additionalInformation = "additionalInformation-after-update";
-tiIndicator.confidence = 42;
-tiIndicator.description = "description-after-update";
+tiIndicator.setAdditionalInformation("additionalInformation-after-update");
+tiIndicator.setConfidence(42);
+tiIndicator.setDescription("description-after-update");
+TiIndicator result = graphClient.security().tiIndicators().byTiIndicatorId("{tiIndicator-id}").patch(tiIndicator, requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "return=representation");
+});
 
-graphClient.security().tiIndicators("{id}")
-	.buildRequest( requestOptions )
-	.patch(tiIndicator);
 
 ```

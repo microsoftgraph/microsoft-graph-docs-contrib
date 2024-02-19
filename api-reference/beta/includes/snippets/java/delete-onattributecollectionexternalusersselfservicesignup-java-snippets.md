@@ -4,10 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.identity().authenticationEventsFlows("0313cc37-d421-421d-857b-87804d61e33e").microsoft.graph.externalUsersSelfServiceSignUpEventsFlow().microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp().attributes().references()
-	.buildRequest()
-	.delete();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.identity.authenticationeventsflows.item.graphexternalusersselfservicesignupeventsflow.onattributecollection.graphonattributecollectionexternalusersselfservicesignup.attributes.ref.$refDeleteRequestBody refDeleteRequestBody = new com.microsoft.graph.beta.identity.authenticationeventsflows.item.graphexternalusersselfservicesignupeventsflow.onattributecollection.graphonattributecollectionexternalusersselfservicesignup.attributes.ref.$refDeleteRequestBody();
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("@odata.id", "https://graph.microsoft.com/beta/identity/userFlowAttributes/city");
+refDeleteRequestBody.setAdditionalData(additionalData);
+graphClient.identity().authenticationEventsFlows().byAuthenticationEventsFlowId("{authenticationEventsFlow-id}").graphExternalUsersSelfServiceSignUpEventsFlow().onAttributeCollection().graphOnAttributeCollectionExternalUsersSelfServiceSignUp().attributes().ref().delete(refDeleteRequestBody);
+
 
 ```

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.identityGovernance().lifecycleWorkflows().customTaskExtensions("2af4670b-47d3-460f-ad16-fc7d4c511d33")
-	.buildRequest()
-	.delete();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.identityGovernance().lifecycleWorkflows().customTaskExtensions().byCustomTaskExtensionId("{customTaskExtension-id}").delete();
+
 
 ```

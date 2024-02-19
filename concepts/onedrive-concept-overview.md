@@ -63,9 +63,6 @@ Looking for the API reference for this service?
 - [OneDrive file storage API in Microsoft Graph v1.0](/graph/api/resources/onedrive)
 - [OneDrive file storage API in Microsoft Graph beta](/graph/api/resources/onedrive)
 
-## Next steps
-
-Find out more about [using the OneDrive API][Drive API] in Microsoft Graph v1.0.
 
 [SharePoint]: sharepoint-concept-overview.md
 [file picker]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm

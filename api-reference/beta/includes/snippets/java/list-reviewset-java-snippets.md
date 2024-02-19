@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ReviewSetCollectionPage reviewSets = graphClient.compliance().ediscovery().cases("{caseId}").reviewSets()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.ediscovery.ReviewSetCollectionResponse result = graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").reviewSets().get();
+
 
 ```

@@ -63,6 +63,6 @@ The following JSON representation shows the resource type.
 }
 -->
 
-## See Also
+## Related content
 
 - [userTeamwork resource](userteamwork.md)

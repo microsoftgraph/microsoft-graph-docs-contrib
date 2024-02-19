@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UserCollectionPage users = graphClient.users()
-	.buildRequest()
-	.filter("isManagementRestricted eq true")
-	.select("displayName,userPrincipalName")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UserCollectionResponse result = graphClient.users().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "isManagementRestricted eq true";
+	requestConfiguration.queryParameters.select = new String []{"displayName", "userPrincipalName"};
+});
+
 
 ```

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-MeetingAttendanceReport meetingAttendanceReport = graphClient.me().onlineMeetings("MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ").attendanceReports("c9b6db1c-d5eb-427d-a5c0-20088d9b22d7")
-	.buildRequest()
-	.expand("attendanceRecords")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+MeetingAttendanceReport result = graphClient.me().onlineMeetings().byOnlineMeetingId("{onlineMeeting-id}").attendanceReports().byMeetingAttendanceReportId("{meetingAttendanceReport-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"attendanceRecords"};
+});
+
 
 ```

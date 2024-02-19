@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.education.classes.item.assignments.item.submissions.item.excuse.excuse_request_builder import ExcuseRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -98,6 +98,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/tablerowcollection-add-table-row-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-table-row-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -175,6 +179,10 @@ Workbook-Session-Id: {Workbook-Session-Id}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tablerowcollection-add-table-row-async-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-async-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
