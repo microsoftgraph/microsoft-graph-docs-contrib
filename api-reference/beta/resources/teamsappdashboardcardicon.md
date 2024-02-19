@@ -24,9 +24,7 @@ Represents a configuration for the icon of a dashboard card in a [teamsApp](team
 
 ## Relationships
 
-| Relationship | Type	| Description |
-|:---------------|:--------|:----------|
-|appDefinitions|[teamsAppDefinition](teamsappdefinition.md) collection| The details for each version of the app. |
+None
 
 ## JSON representation
 

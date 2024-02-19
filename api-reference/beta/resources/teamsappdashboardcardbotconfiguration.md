@@ -1,6 +1,6 @@
 ---
 title: "teamsAppDashboardCardBotConfiguration resource type"
-description: "Represents a configuration for the dashboard card's bot of a teamsApp."
+description: "Represents the bot configuration for a dashboard card in a Teams App"
 author: "ashish-goel"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,19 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a configuration for the dashboard card's bot of a [teamsApp](teamsapp.md).
+RRepresents the bot configuration for a dashboard card in a Teams App[teamsApp](teamsapp.md).
 
 ## Properties
 
-| Property | Type   | Description                                                                   |
-|:---------|:-------|:------------------------------------------------------------------------------|
-| botId    | String | The unique Microsoft app ID for the bot as registered with the Bot Framework. |
+### teamsAppDashboardCardBotConfiguration
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `botId` | `string` | The id of the bot associated with the specific [teamsAppDefinition](teamsappdefinition.md). This is a unique app ID for the bot as registered with the Bot Framework . This value is usually a GUID |
 
 ## Relationships
 
-| Relationship | Type	| Description |
-|:---------------|:--------|:----------|
-|appDefinitions|[teamsAppDefinition](teamsappdefinition.md) collection| The details for each version of the app. |
+None
 
 ## JSON representation
 

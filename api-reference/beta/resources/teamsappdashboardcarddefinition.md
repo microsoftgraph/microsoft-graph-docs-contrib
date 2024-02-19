@@ -39,9 +39,7 @@ Inherits from [entity](entity.md).
 
 ## Relationships
 
-| Relationship | Type	| Description |
-|:---------------|:--------|:----------|
-|appDefinitions|[teamsAppDefinition](teamsappdefinition.md) collection| The details for each version of the app. |
+None
 
 ## JSON representation
 

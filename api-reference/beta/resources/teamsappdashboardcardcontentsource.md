@@ -26,14 +26,12 @@ Represents a configuration for the source of the dashboard card content in a [te
 
 | Member             | Description                                      |
 |:-------------------|:-------------------------------------------------|
-| bot                | **TODO**           |
+| bot                | Dashboard card source type as  a bot.         |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
-| Relationship | Type	| Description |
-|:---------------|:--------|:----------|
-|appDefinitions|[teamsAppDefinition](teamsappdefinition.md) collection| The details for each version of the app. |
+None
 
 ## JSON representation
 
