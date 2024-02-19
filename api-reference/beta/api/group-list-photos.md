@@ -1,8 +1,7 @@
 ---
 title: "List photos"
 description: "Retrieve a list of profilePhoto objects."
-author: "yuhko-msft"
-ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+author: "kristinmcleod"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

@@ -1,8 +1,7 @@
 ---
 title: "Create conversation"
 description: "Create a new conversation by including a thread and a post. "
-author: "yuhko-msft"
-ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

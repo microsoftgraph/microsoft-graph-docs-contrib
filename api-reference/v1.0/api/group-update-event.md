@@ -1,8 +1,7 @@
 ---
 title: "Update event"
 description: "Update an event object."
-author: "yuhko-msft"
-ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

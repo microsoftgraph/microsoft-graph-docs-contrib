@@ -1,8 +1,7 @@
 ---
 title: "Get conversation"
-description: "Get a conversation object."
-author: "yuhko-msft"
-ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+description: "Get a group's conversation."
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -11,7 +10,7 @@ doc_type: apiPageType
 # Get conversation
 
 Namespace: microsoft.graph
-Get a [conversation](../resources/conversation.md) object.
+Get a group's [conversation](../resources/conversation.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
