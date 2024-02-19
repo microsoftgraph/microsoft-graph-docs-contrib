@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-RRepresents the bot configuration for a dashboard card in a Teams App[teamsApp](teamsapp.md).
+Represents the bot configuration for a dashboard card in a Teams App[teamsApp](teamsapp.md).
 
 ## Properties
 

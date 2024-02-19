@@ -26,7 +26,7 @@ Represents a configuration for the source of the dashboard card content in a [te
 
 | Member             | Description                                      |
 |:-------------------|:-------------------------------------------------|
-| bot                | Dashboard card source type as  a bot.         |
+| bot                | Dashboard card source type as a bot.         |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
