@@ -56,8 +56,8 @@ Use the following APIs to manage the details of a remote network that you've onb
 
 | Sample operations | Description |
 |--|--|
-| [Create a remote network](../api/networkaccess-connectivity-post-remotenetwork.md) <br/>[Create device links for a remote network](../api/networkaccess-remotenetwork-post-devicelinks.md) <br/>[Create forwarding profiles for a remote network](../api/networkaccess-remotenetwork-post-forwardingprofiles.md)| Create remote networks and their associated device links and forwarding profiles.|
-| [List remote networks](../api/networkaccess-connectivity-list-remotenetwork.md) <br/>[List device links for a remote network](../api/networkaccess-remotenetwork-list-devicelinks.md) <br/>[List forwarding profiles for a remote network](../api/networkaccess-remotenetwork-list-forwardingprofiles.md)| List remote networks and their associated device links and forwarding profiles.|
+| [Create a remote network](../api/networkaccess-connectivity-post-remotenetworks.md) <br/>[Create device links for a remote network](../api/networkaccess-remotenetwork-post-devicelinks.md) <br/>[Create forwarding profiles for a remote network](../api/networkaccess-remotenetwork-post-forwardingprofiles.md)| Create remote networks and their associated device links and forwarding profiles.|
+| [List remote networks](../api/networkaccess-connectivity-list-remotenetworks.md) <br/>[List device links for a remote network](../api/networkaccess-remotenetwork-list-devicelinks.md) <br/>[List forwarding profiles for a remote network](../api/networkaccess-remotenetwork-list-forwardingprofiles.md)| List remote networks and their associated device links and forwarding profiles.|
 
 ## Access controls
 

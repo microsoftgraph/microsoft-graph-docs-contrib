@@ -1,5 +1,5 @@
 ---
-title: "List forwardingProfiles"
+title: "List forwardingProfiles (for a remote network)"
 description: "Retrieve a list of traffic forwarding profiles associated with a remote network."
 author: abhijeetsinha
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
-# List forwardingProfiles
+# List forwardingProfiles (for a remote network)
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
