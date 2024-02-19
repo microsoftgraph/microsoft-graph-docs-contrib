@@ -2,7 +2,8 @@
 title: "groupSettingTemplate resource type"
 description: "Group setting templates represent system-defined settings available to the tenant."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: resourcePageType
 ---

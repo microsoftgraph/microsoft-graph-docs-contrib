@@ -2,7 +2,8 @@
 title: "Add members"
 description: "Add a member to a Microsoft 365 or security group through the members navigation property."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

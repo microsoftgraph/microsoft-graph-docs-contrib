@@ -1,7 +1,8 @@
 ---
 title: "List conversations"
 description: "Retrieve the list of conversations in this group."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

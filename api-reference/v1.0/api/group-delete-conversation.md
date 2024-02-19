@@ -1,7 +1,8 @@
 ---
 title: "Delete conversation"
 description: "Delete a conversation object."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
