@@ -1,5 +1,5 @@
 ---
-title: "remote network resource type"
+title: "remoteNetwork resource type"
 description: "A remote network represents a location such as a branch office where customer premises equipment (CPE) is connected to the nearest deployment of Global Secure Access service though IPsec tunnels."
 author: abhijeetsinha
 ms.localizationpriority: medium
