@@ -45,7 +45,8 @@ Represents an abstract type that provides the ability to launch a realistic phis
 | **Training** |  |  |
 |[List trainings](../api/attacksimulationroot-list-trainings.md)|[training](../resources/training.md) collection|Get a list of the [training](../resources/training.md) objects and their properties.|
 |[Get training](../api/training-get.md)|[training](../resources/training.md)|Get an attack simulation [training](../resources/training.md) for a tenant. |
-
+|[List trainingCampaigns](../api/attacksimulationroot-list-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md) collection|Get the trainingCampaign resources from the trainingCampaigns navigation property.|
+|[Create trainingCampaign](../api/attacksimulationroot-post-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md)|Create a new trainingCampaign object.|
 ## Properties
 
 None.
@@ -62,6 +63,7 @@ None.
 |simulationAutomations|[simulationAutomation](../resources/simulationautomation.md) collection|Represents simulation automation created to run on a tenant.|
 |simulations|[simulation](../resources/simulation.md) collection|Represents an attack simulation training campaign in a tenant.|
 |trainings|[training](../resources/training.md) collection|Represents details about attack simulation trainings.|
+|trainingCampaigns|[trainingCampaign](../resources/trainingcampaign.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 Here's a JSON representation of the resource.
