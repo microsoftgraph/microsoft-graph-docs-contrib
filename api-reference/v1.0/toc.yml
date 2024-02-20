@@ -1426,7 +1426,7 @@ items:
               - name: Reprovision
                 href: api/cloudpc-reprovision.md
               - name: Restore
-                href: api/cloudpc-start.md
+                href: api/cloudpc-restore.md
               - name: Troubleshoot
                 href: api/cloudpc-troubleshoot.md
               - name: Overview
