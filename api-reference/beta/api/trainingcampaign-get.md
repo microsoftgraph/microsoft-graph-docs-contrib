@@ -1,7 +1,7 @@
 ---
 title: "Get trainingCampaign"
 description: "Read the properties and relationships of a trainingCampaign object."
-author: "ak_graph"
+author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "campaignSchedule resource type"
 description: "Represents a schedule for launching a campaign"
-author: "ak_graph"
+author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType

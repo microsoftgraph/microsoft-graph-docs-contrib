@@ -1,7 +1,7 @@
 ---
 title: "List trainingCampaign objects"
 description: "Get a list of the trainingCampaign objects and their properties."
-author: "ak_graph"
+author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType

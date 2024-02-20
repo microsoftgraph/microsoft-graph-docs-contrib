@@ -1,7 +1,7 @@
 ---
 title: "trainingCampaignReportOverview resource type"
 description: "**TODO: Add Description**"
-author: "ak_graph"
+author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+TrainingCampaignReport presents a bird eye view on the progress of a trainingcampaign by generating a report which contains metrics regarding training completions by users
 
 ## Properties
 |Property|Type|Description|

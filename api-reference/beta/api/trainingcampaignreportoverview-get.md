@@ -1,7 +1,7 @@
 ---
 title: "Get Training campaign report overview"
 description: "Get an overview of a training campaign."
-author: "ak_graph"
+author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "userTrainingCompletionSummary resource type"
 description: "**TODO: Add Description**"
-author: "ak_graph"
+author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
