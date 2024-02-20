@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "activate",
           "ChangeType": "Addition",
-          "Description": "Added the [activate](https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-1.0) method to the [educationassignment](https://learn.microsoft.com/graph/api/resources/educationassignment?view=graph-rest-1.0) resource.",
+          "Description": "Added the [activate](https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-1.0) method to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationassignment?view=graph-rest-1.0) resource.",
           "Target": "educationAssignment"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "deactivate",
           "ChangeType": "Addition",
-          "Description": "Added the [deactivate](https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-1.0) method to the [educationassignment](https://learn.microsoft.com/graph/api/resources/educationassignment?view=graph-rest-1.0) resource.",
+          "Description": "Added the [deactivate](https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-1.0) method to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationassignment?view=graph-rest-1.0) resource.",
           "Target": "educationAssignment"
         }
       ],
@@ -31,11 +31,11 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-02-26T21:07:29.9361123Z",
-            "WorkloadArea": "Education",
+      "WorkloadArea": "Education",
       "SubArea": ""
     },
     {
-          "ChangeList": [
+      "ChangeList": [
         {
           "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
           "ApiChange": "Resource",
