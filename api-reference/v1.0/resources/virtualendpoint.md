@@ -30,6 +30,9 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The unique identifier (ID) for the virtual endpoint. Read-only. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
+|Property|Type|Description|
+|:---|:---|:---|
+|cloudPCs|[cloudPC](../resources/cloudpc.md) collection|This Cloud PC is also enrolled into Intune and managed through the Microsoft Endpoint Manager portal, so the Cloud PC also has a corresponding Intune managed device ID.|
 |provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|Cloud PC provisioning policy.|
 
 ## JSON representation

@@ -1415,24 +1415,27 @@ items:
                     href: api/browsersitelist-delete-sharedcookies.md
           - name: Cloud PC
             items:
-              - name: EndGracePeriod
-                href: api/cloudpc-endgraceperiod.md
-              - name: List for organization
-                href: api/virtualendpoint-list-cloudpcs.md
-              - name: Reboot
-                href: api/cloudpc-reboot.md
-              - name: Rename
-                href: api/cloudpc-rename.md
-              - name: Reprovision
-                href: api/cloudpc-reprovision.md
-              - name: Restore
-                href: api/cloudpc-restore.md
-              - name: Troubleshoot
-                href: api/cloudpc-troubleshoot.md
               - name: Overview
                 href: resources/cloudpc-api-overview.md
               - name: Virtual endpoint
                 href: resources/virtualendpoint.md
+              - name: Cloud PC
+                href: resources/cloudpc.md
+                items:
+                  - name: EndGracePeriod
+                    href: api/cloudpc-endgraceperiod.md
+                  - name: Get cloud PC
+                    href: api/cloudpc-get.md
+                  - name: List Cloud PCs
+                    href: api/virtualendpoint-list-cloudpcs.md
+                  - name: Reboot
+                    href: api/cloudpc-reboot.md
+                  - name: Rename
+                    href: api/cloudpc-rename.md
+                  - name: Restore
+                    href: api/cloudpc-restore.md
+                  - name: Troubleshoot
+                    href: api/cloudpc-troubleshoot.md
           - name: Cloud printing
             items:
               - name: Print
