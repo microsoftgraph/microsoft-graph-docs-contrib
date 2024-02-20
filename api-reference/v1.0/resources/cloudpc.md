@@ -1,7 +1,7 @@
 ---
 title: "cloudPC resource type"
 description: "Cloud managed virtual desktops."
-author: "Hanhan Xie"
+author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
@@ -79,9 +79,6 @@ The following JSON representation shows the resource type.
   "provisioningType": "String",
   "servicePlanId": "String",
   "servicePlanName": "String",
-  "servicePlanType": "String",
-  "status": "String",
-  "userAccountType": "String",
   "userPrincipalName": "String"
 }
 ```
