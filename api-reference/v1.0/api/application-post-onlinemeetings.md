@@ -14,8 +14,10 @@ Namespace: microsoft.graph
 Create an online meeting on behalf of a user.
 
 > [!TIP]
-> - This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
-> - This API doesn't create a Teams Live Event.
+>
+> * This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
+> * This API doesn't create a Teams Live Event.
+> * To retrieve meeting transcripts, use the [events API](graph/api/user-post-events#example-4-create-and-enable-an-event-as-an-online-meeting) instead of the other methods.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -38,6 +40,7 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
+>
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
