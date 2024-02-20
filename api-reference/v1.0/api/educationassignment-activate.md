@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: activate"
-description: "Activate an inactive assignment to signal that the assignment has further action items for teachers and students."
+description: "Activate an inactive assignment to signal that the assignment has further action items for teachers or students."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Activate an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers and students. This action can only be performed by a teacher on currently inactive assignments.
+Activate an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers or students. This action can only be performed by a teacher on currently inactive assignments.
 
 ## Permissions
 
