@@ -46,9 +46,9 @@ None
 The following JSON representation shows the resource type.
 <-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.teamsAppDashboardCardDefinition"
+  "@odata.type": "microsoft.graph.teamsAppDashboardCardDefinition",
   "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
+  "baseType": "microsoft.graph.entity"
 }
 -->
 ``` json
