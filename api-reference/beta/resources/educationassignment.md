@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |[Get delta](../api/educationassignment-delta.md)|[educationAssignment](../resources/educationassignment.md) collection|Get a list of newly created or updated **assignments** without having to perform a full read of the collection.|
 |[Add educationGradingCategory](../api/educationassignment-post-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Add gradingCategory by posting to the gradingCategory collection.|
 |[Remove educationGradingCategory](../api/educationassignment-delete-gradingcategory.md)|None|Remove an [educationGradingCategory](../resources/educationgradingcategory.md) object.|
-|[Activate assignment](../api/educationassignment-activate.md) |[educationAssignment](educationassignment.md) | Activate an inactive **educationAssignment** to signal that the assignment has action items for teachers and students.|
+|[Activate assignment](../api/educationassignment-activate.md) |[educationAssignment](educationassignment.md) | Activate an inactive **educationAssignment** to signal that the assignment has further action items for teachers or students.|
 |[Deactivate assignment](../api/educationassignment-deactivate.md) |[educationAssignment](educationassignment.md) | Mark an assigned **educationAssignment** as inactive to signal that the assignment has no further action items for both teachers and students.|
 
 ## Properties
