@@ -45,14 +45,6 @@
                 {
                     "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
                     "ApiChange": "Method",
-                    "ChangedApiName": "Reprovision",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [Reprovision](https://learn.microsoft.com/en-us/graph/api/cloudPc-reprovision) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-v1.0) resource.",
-                    "Target": "cloudPC"
-                },
-                {
-                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
-                    "ApiChange": "Method",
                     "ChangedApiName": "Rename",
                     "ChangeType": "Addition",
                     "Description": "Added the [Rename](https://learn.microsoft.com/en-us/graph/api/cloudPc-rename) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-v1.0) resource.",
@@ -81,7 +73,7 @@
                     "ChangeType": "Addition",
                     "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-v1.0) method to the[virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
                     "Target": "virtualEndpoint"
-                },
+                }
             ],
             "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
             "Cloud": "Prod",
