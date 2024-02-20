@@ -18,7 +18,7 @@ Represents a configuration for the source of the dashboard card content in a [te
 ## Properties
 
 | Property | Type | Description |
-| -------- | ---- | ----------- |
+|:-------- |:---- |:----------- |
 | botConfiguration | [teamsAppdashboardCardBotConfiguration](../resources/teamsappdashboardcardbotconfiguration.md) | The configuration for the bot source. Required if **sourceType** is set to `bot`. |
 | sourceType | [teamsAppDashboardCardSourceType](../resources/teamsappdashboardcardcontentsource.md#teamsappdashboardcardsourcetype-values) | Represents the type of source that powers the content of the dashboard card. The possible values are: `bot`, `unknownFutureValue`. |
 
