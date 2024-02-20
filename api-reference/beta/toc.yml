@@ -16558,6 +16558,24 @@ items:
                     href: api/usersimulationdetails-list.md
                   - name: Get simulation overview
                     href: api/simulationreportoverview-get.md
+              - name: TrainingCampaigns
+                items:
+                  - name: TrainingCampaign
+                    href: resources/trainingcampaign.md
+                  - name: List
+                    href: api/attacksimulationroot-list-trainingcampaigns.md
+                  - name: Create
+                    href: api/attacksimulationroot-post-trainingcampaigns.md
+                  - name: Get
+                    href: api/trainingcampaign-get.md
+                  - name: Update
+                    href: api/trainingcampaign-update.md
+                  - name: Delete
+                    href: api/attacksimulationroot-delete-trainingcampaigns.md
+                  - name: List trainingcampaign users
+                    href: api/usertrainingcampaigndetails-list.md
+                  - name: Get trainingcampaign overview
+                    href: api/trainingcampaignreportoverview-get.md
               - name: Attack simulation operation
                 items:
                   - name: Attack simulation operation
