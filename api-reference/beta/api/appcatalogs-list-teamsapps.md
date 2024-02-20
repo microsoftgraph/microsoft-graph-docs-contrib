@@ -756,7 +756,6 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "name": "list_teamsapp_with_dashboardcards",
   "@odata.type": "Collection(microsoft.graph.teamsApp)",
   "truncated": true
 } -->
