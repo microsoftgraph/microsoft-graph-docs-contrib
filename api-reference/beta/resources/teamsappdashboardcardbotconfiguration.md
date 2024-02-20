@@ -18,7 +18,7 @@ Represents the bot configuration for a dashboard card in a [teamsApp](teamsapp.m
 ## Properties
 
 | Property | Type | Description |
-| -------- | ---- | ----------- |
+|:-------- |:---- |:----------- |
 | botId | String | The ID (usually a GUID) of the bot associated with the specific [teamsAppDefinition](teamsappdefinition.md). This is a unique app ID for the bot as registered with the Bot Framework. |
 
 ## Relationships
