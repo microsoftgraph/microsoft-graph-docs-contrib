@@ -1,9 +1,9 @@
 ---
 title: "trainingCampaign resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents an training campaign in a tenant."
+author: "ak_graph"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, Training campaigns are a faster, more direct way to provide security training to users. Instead of creating and launching simulated phishing attacks that eventually lead to training, you can create and assign Training campaigns directly to users.
+
+A Training campaign contains one or more built-in Training modules that you select. Currently, there are over 70 Training modules to select from. For more information about Training modules, see Training modules for Training campaigns in Attack simulation training.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -30,19 +32,34 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|campaignSchedule|[campaignSchedule](../resources/campaignschedule.md)|**TODO: Add Description**|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|**TODO: Add Description**|
-|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|**TODO: Add Description**|
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|report|[trainingCampaignReport](../resources/trainingcampaignreport.md)|**TODO: Add Description**|
-|trainingSetting|[trainingSetting](../resources/trainingsetting.md)|**TODO: Add Description**|
+|campaignSchedule|[campaignSchedule](../resources/campaignschedule.md)|Details about the schedule and current status for a training campaign|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the training campaign|
+|createdDateTime|DateTimeOffset|Date and time of creation of the training campaign.|
+|description|String|Description of the training campaign.|
+|displayName|String|Display name of the training campaign. Supports `$filter` and `$orderby`.|
+|endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|Details about the end user notification setting.|
+|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users excluded from the training campaign.|
+|id|String|Unique identifier for the training campaign. Inherited from [entity](../resources/entity.md).|
+|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the .|
+|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the training campaign.|
+|lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the training campaign.|
+|report|[trainingCampaignReport](../resources/trainingcampaignreport.md)|Report of the training campaign.|
+|trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Details about the training settings for a training campaign.|
+
+### campaignStatus values 
+
+|Member|Description |
+|:---|:---|
+|unknown| The campaign status is not defined. |
+|draft| The campaign is in draft mode. |
+|inProgress| The campaign is in progress. |
+|scheduled| The campaign is scheduled. |
+|completed| The campaign has completed. |
+|failed| The campaign has failed. |
+|cancelled| The campaign is cancelled. |
+|excluded| The campaign is excluded. |
+|deleted| The campaign is in draft mode. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 None.
@@ -91,4 +108,7 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
+## Related content
+- [Training campaigns in Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-training-campaigns?view=o365-worldwide&preserve-view=true)
 
