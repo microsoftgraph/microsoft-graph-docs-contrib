@@ -49,7 +49,6 @@ In the request body, supply a JSON representation of the [trainingCampaign](../r
 
 You can specify the following properties when creating a **trainingCampaign**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the training campaign Optional.|
@@ -62,8 +61,6 @@ You can specify the following properties when creating a **trainingCampaign**.
 |lastModifiedDateTime|DateTimeOffset|Identity of the user who most recently modified the training campaign. Optional.|
 |trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Details about the training settings for a training campaign. Required.|
 |campaignSchedule|[campaignSchedule](../resources/campaignschedule.md)|Details about the schedule and current status for a training campaign Optional.|
-
-
 
 ## Response
 
