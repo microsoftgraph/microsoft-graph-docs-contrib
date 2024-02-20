@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Deactivate educationAssignment
+# educationAssignment: deactivate
 
 Namespace: microsoft.graph
 
@@ -44,16 +44,19 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and an [educationAssignment](../resources/educationassignment.md) object with `inactive` status in the response body.
 
 ## Examples
-`Inactive` is a new status for assignments, you can add the `Prefer` header in your request to get the status, otherwise you'll get an `unknownFutureValue` value in the response.
 
-### Example 1: Mark assignment inactive without optional Prefer header
+`Inactive` is a status option for assignments. Include the `Prefer` header in your request to get this status in your response; otherwise, the response value for the **status** property is `unknownFutureValue`.
+
+### Example 1: Mark an assignment inactive without the optional Prefer header
+
+The following example shows how to mark an assignment `inactive` without the optional `Prefer` header.
 
 #### Request
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","c0f133b9-615c-4119-876c-c1848fd0a99a"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "c0f133b9-615c-4119-876c-c1848fd0a99a"],
   "name": "post_deactivateAssignment_withoutheader"
 }-->
 ```msgraph-interactive
@@ -61,7 +64,8 @@ POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-
 ```
 
 #### Response
-Here's an example of the response when `Prefer: include-unknown-enum-members` isn't provided in the request header.
+
+The following example shows the response when `Prefer: include-unknown-enum-members` isn't provided in the request header.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -126,13 +130,16 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Mark assignment inactive with optional Prefer header
+### Example 2: Mark an assignment inactive with the optional Prefer header
+
+The following example shows how to mark an assignment `inactive` using the optional `Prefer` header.
+
 #### Request
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","2cb9ce0c-a4a1-40b8-b386-b43e0f05e7ed"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "2cb9ce0c-a4a1-40b8-b386-b43e0f05e7ed"],
   "name": "post_deactivateAssignment_withheader"
 }-->
 ```msgraph-interactive
@@ -141,7 +148,8 @@ Prefer: include-unknown-enum-members
 ```
 
 #### Response
-Here's an example of the response when the `Prefer: include-unknown-enum-members` is provided in the request header.
+
+The following example shows the response when `Prefer: include-unknown-enum-members` is provided in the request header.
 
 >**Note:** The response object shown here might be shortened for readability.
 
