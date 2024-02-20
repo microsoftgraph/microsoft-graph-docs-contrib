@@ -28,8 +28,8 @@ The following example displays a conversation using the `mgt-chat-list` componen
 
 | Attribute                         | Property            | Description                                                                                            |
 | --------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ |
-| None                              | chatThreadsPerPage  | The number of chat threads to render initially and subsequent `Load more` clicks. Required. |
-| None                              | selectedChatId  | Sets the default selected Chat thread based on the Chat Id. |
+| None                              | chatThreadsPerPage  | Set the number of chat threads to load. If there are more space on the bottom of the ChatList, additional chat threads will be loaded to fill out the empty space. After any empty space is filled and if there are more chat threads to load, this value will be used as the user scrolls down on the ChatList. Required. |
+| None                              | selectedChatId  | Set the selected Chat thread based on the Chat Id. If not defined or empty, the selected chat id will be unselected. |
 | None                              | lastReadTimeInterval  | Interval in seconds by which the the current timestamp is cached to indicate user has seen a chat thread. Defaults to 30 seconds. |
 | None                              | menuItems           | Array of `ChatListMenuItem` that can be passed into the component to render menu item(s). For each onClick event handler, the `IChatListActions` argument will provide actions that can be invoked such as `markAllChatThreadsAsRead` which will mark all visible chat threads as read. |
 | None                              | buttonItems         | Array of `ChatListButtonItem` that can be passed into the component to render button(s). For each onClick event handler, the `IChatListActions` argument will provide actions that can be invoked such as `markAllChatThreadsAsRead` which will mark all visible chat threads as read. |
