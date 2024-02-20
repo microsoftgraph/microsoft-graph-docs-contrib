@@ -23,6 +23,13 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |id|String|The unique identifier (ID) for the virtual endpoint. Read-only. Inherited from [entity](../resources/entity.md).|
 
+## Relationships
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+|deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on Cloud PC.|
+|galleryImages|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|The gallery image resource on Cloud PC.|
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
