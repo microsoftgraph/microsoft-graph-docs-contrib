@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. You can only update a relationship when it's in the `created` **status**. However, you can update the **autoExtendDuration** property when the relationship is in either the `created` or `active` **status** which are not long-running operation.
+Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. You can only update a relationship when it's in the `created` **status**. However, you can update the **autoExtendDuration** property when the relationship is in either the `created` or `active` **status** which are not long-running operations.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
