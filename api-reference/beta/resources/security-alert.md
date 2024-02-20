@@ -30,7 +30,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 
 ## Properties
 |Property|Type| Description|
-|:---|:---|:---|
+|:---|:---|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |actorDisplayName|String| The adversary or activity group that is associated with this alert.|
 |additionalData|microsoft.graph.security.dictionary| A collection of other alert properties, including user-defined properties. Any custom details defined in the alert, and any dynamic content in the alert details, are stored here. |
 |alertPolicyId|String| The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.|
