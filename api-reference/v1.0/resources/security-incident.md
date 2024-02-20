@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-An incident in Microsoft 365 Defender is a collection of correlated [alert](../resources/security-alert.md) instances and associated metadata that reflects the story of an attack in a tenant.
+An incident in Microsoft 365 Defender is a collection of correlated [alert](../resources/security-alert.md) instances and associated metadata that reflects the story of an attack on a tenant.
 
 Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant.
 Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.
@@ -41,13 +41,11 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |incidentWebUrl|String|The URL for the incident page in the Microsoft 365 Defender portal.|
 |lastModifiedBy|String|The identity that last modified the incident.|
 |lastUpdateDateTime|DateTimeOffset|Time when the incident was last updated.|
-|redirectIncidentId|String|Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents. In such a case, the **status** property is `redirected`. |
+|redirectIncidentId|String|Only populated in case an incident is grouped with another incident, as part of the logic that processes incidents. In such a case, the **status** property is `redirected`. |
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`, and `awaitingAction`.|
 |tenantId|String|The Microsoft Entra tenant in which the alert was created.|
-|systemTags|String collection|The system tags associated with the incident|
-|description|String|A rich text string describing the incident|
-
+|systemTags|String collection|The system tags associated with the incident.|
 
 
 ### incidentStatus values 
