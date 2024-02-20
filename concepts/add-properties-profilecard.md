@@ -95,21 +95,21 @@ The following table shows how the Microsoft Entra ID custom extension attribute 
 
 | Microsoft Entra ID custom extension attribute | Value to specify as directoryPropertyName |
 | ----------------------------------- | ----------------------------------------- |
-| extensionAttribute1 | customAttribute1 |
-| extensionAttribute2 | customAttribute2 |
-| extensionAttribute3 | customAttribute3 |
-| extensionAttribute4 | customAttribute4 |
-| extensionAttribute5 | customAttribute5 |
-| extensionAttribute6 | customAttribute6 |
-| extensionAttribute7 | customAttribute7 |
-| extensionAttribute8 | customAttribute8 |
-| extensionAttribute9 | customAttribute9 |
-| extensionAttribute10 | customAttribute10 |
-| extensionAttribute11 | customAttribute11 |
-| extensionAttribute12 | customAttribute12 |
-| extensionAttribute13 | customAttribute13 |
-| extensionAttribute14 | customAttribute14 |
-| extensionAttribute15 | customAttribute15 |
+| extensionAttribute1 | CustomAttribute1 |
+| extensionAttribute2 | CustomAttribute2 |
+| extensionAttribute3 | CustomAttribute3 |
+| extensionAttribute4 | CustomAttribute4 |
+| extensionAttribute5 | CustomAttribute5 |
+| extensionAttribute6 | CustomAttribute6 |
+| extensionAttribute7 | CustomAttribute7 |
+| extensionAttribute8 | CustomAttribute8 |
+| extensionAttribute9 | CustomAttribute9 |
+| extensionAttribute10 | CustomAttribute10 |
+| extensionAttribute12 | CustomAttribute12 |
+| extensionAttribute11 | CustomAttribute11 |
+| extensionAttribute13 | CustomAttribute13 |
+| extensionAttribute14 | CustomAttribute14 |
+| extensionAttribute15 | CustomAttribute15 |
 
 > [!IMPORTANT]
 > Custom profile card attributes are added for all users in the organization, requiring necessary precautions to prevent accidental exposure of sensitive data.
@@ -125,7 +125,7 @@ POST https://graph.microsoft.com/v1.0/admin/people/profileCardProperties
 Content-Type: application/json
 
 {
-  "directoryPropertyName": "customAttribute1",
+  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
       "displayName": "Cost center",
@@ -153,7 +153,7 @@ HTTP/1.1 201 OK
 Content-type: application/json
 
 {
-  "directoryPropertyName": "customAttribute1",
+  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
       "displayName": "Cost center",
@@ -170,16 +170,16 @@ Content-type: application/json
 
 ## Remove a custom attribute from the profile card
 
-Following the same mapping between Microsoft Entra ID custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can remove a custom attribute using the [delete](/graph/api/profilecardproperty-delete) operation, as shown in the following example.
+Following the same mapping between Microsoft Entra ID custom extension attributes and profile card custom attributes (such as `CustomAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can remove a custom attribute using the [delete](/graph/api/profilecardproperty-delete) operation, as shown in the following example.
 
 ### Example
 
-The following example removes the custom attribute `customAttribute5` from the organization settings. If successful, this method returns a `204 No Content` response code.
+The following example removes the custom attribute `CustomAttribute5` from the organization settings. If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
 ``` http
-DELETE https://graph.microsoft.com/v1.0/admin/people/profileCardProperties/customAttribute5
+DELETE https://graph.microsoft.com/v1.0/admin/people/profileCardProperties/CustomAttribute5
 ```
 
 > **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
