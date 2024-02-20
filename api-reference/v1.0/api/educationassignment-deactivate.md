@@ -183,7 +183,7 @@ Content-type: application/json
     "moduleUrl": null,
     "id": "2cb9ce0c-a4a1-40b8-b386-b43e0f05e7ed",
     "instructions": {
-        "content": "2021-03-04T21_28_06_105Z",
+        "content": "",
         "contentType": "text"
     },
     "grading": {

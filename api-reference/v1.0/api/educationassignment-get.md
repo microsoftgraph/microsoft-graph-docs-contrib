@@ -39,7 +39,6 @@ This method supports the  `$select` OData query parameter to help customize the 
 | Header       | Value |
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
 | Prefer        | include-unknown-enum-members. Optional. |
 
 ## Request body
