@@ -155,6 +155,7 @@ Content-Type: application/json
         "email": "yibsu",
         "id": null,
         "displayName": null
-    }
+    },
+    "customUrl" : null
 }
 ```
