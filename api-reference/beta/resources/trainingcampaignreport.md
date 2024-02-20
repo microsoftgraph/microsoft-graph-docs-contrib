@@ -1,6 +1,6 @@
 ---
 title: "trainingCampaignReport resource type"
-description: "**TODO: Add Description**"
+description: "Represents a report of a training campaign, including an overview and users who participated in the campaign."
 author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a report of a training campaign, including an overview and users who participated in the campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|campaignUsers|[userSimulationDetails](../resources/usersimulationdetails.md) collection|**TODO: Add Description**|
-|overview|[trainingCampaignReportOverview](../resources/trainingcampaignreportoverview.md)|**TODO: Add Description**|
+|campaignUsers|[userSimulationDetails](../resources/usersimulationdetails.md) collection|Overview of an attack simulation and training campaign.|
+|overview|[trainingCampaignReportOverview](../resources/trainingcampaignreportoverview.md)|The tenant users and their online actions in a training campaign.|
 
 ## Relationships
 None.

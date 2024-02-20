@@ -1,6 +1,6 @@
 ---
 title: "userTrainingCompletionSummary resource type"
-description: "**TODO: Add Description**"
+description: "Aggregate data of users training progress"
 author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Aggregate data of users training progress
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completedUsersCount|Int32|**TODO: Add Description**|
-|inProgressUsersCount|Int32|**TODO: Add Description**|
-|notCompletedUsersCount|Int32|**TODO: Add Description**|
-|notStartedUsersCount|Int32|**TODO: Add Description**|
-|previouslyAssignedUsersCount|Int32|**TODO: Add Description**|
+|completedUsersCount|Int32|count of users who have completed all training prior to the due date|
+|inProgressUsersCount|Int32|count of users who have started atleast one training|
+|notCompletedUsersCount|Int32|count of users who have not completed all trainings prior to the due date|
+|notStartedUsersCount|Int32|count of users who have not started any training|
+|previouslyAssignedUsersCount|Int32|count of users who have been previously assigned the same training|
 
 ## Relationships
 None.

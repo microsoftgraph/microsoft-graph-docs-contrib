@@ -1,6 +1,6 @@
 ---
 title: "trainingNotificationDelivery resource type"
-description: "**TODO: Add Description**"
+description: "Aggregate data of training mail delivery over the course of the training campaign"
 author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Aggregate data of training mail delivery over the course of the training campaign
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|failedMessageDeliveryCount|Int32|**TODO: Add Description**|
-|resolvedTargetsCount|Int32|**TODO: Add Description**|
-|successfulMessageDeliveryCount|Int32|**TODO: Add Description**|
+|failedMessageDeliveryCount|Int32|count of users for which mails could not delivered|
+|resolvedTargetsCount|Int32|count of users whose email address have been successfully resolved from target users|
+|successfulMessageDeliveryCount|Int32|count of users who have received a mail while the trainingcampaign is "inprogress" state|
 
 ## Relationships
 None.

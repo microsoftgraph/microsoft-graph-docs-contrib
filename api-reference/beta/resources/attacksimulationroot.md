@@ -63,7 +63,7 @@ None.
 |simulationAutomations|[simulationAutomation](../resources/simulationautomation.md) collection|Represents simulation automation created to run on a tenant.|
 |simulations|[simulation](../resources/simulation.md) collection|Represents an attack simulation training campaign in a tenant.|
 |trainings|[training](../resources/training.md) collection|Represents details about attack simulation trainings.|
-|trainingCampaigns|[trainingCampaign](../resources/trainingcampaign.md) collection|**TODO: Add Description**|
+|trainingCampaigns|[trainingCampaign](../resources/trainingcampaign.md) collection|Represents a training campaign in a tenant.|
 
 ## JSON representation
 Here's a JSON representation of the resource.

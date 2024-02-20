@@ -1,6 +1,6 @@
 ---
 title: "trainingCampaignReportOverview resource type"
-description: "**TODO: Add Description**"
+description: "Represents an overview report of a training campaign."
 author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-TrainingCampaignReport presents a bird eye view on the progress of a trainingcampaign by generating a report which contains metrics regarding training completions by users
+Represents an overview report of a training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|trainingModuleCompletion|[trainingEventsContent](../resources/trainingeventscontent.md)|**TODO: Add Description**|
-|trainingNotificationDeliveryStatus|[trainingNotificationDelivery](../resources/trainingnotificationdelivery.md)|**TODO: Add Description**|
-|userCompletionStatus|[userTrainingCompletionSummary](../resources/usertrainingcompletionsummary.md)|**TODO: Add Description**|
+|trainingModuleCompletion|[trainingEventsContent](../resources/trainingeventscontent.md)| Aggregate data of training completion|
+|trainingNotificationDeliveryStatus|[trainingNotificationDelivery](../resources/trainingnotificationdelivery.md)|Aggregate data of training mail delivery over the course of the training campaign|
+|userCompletionStatus|[userTrainingCompletionSummary](../resources/usertrainingcompletionsummary.md)|Aggregate data of users training progress|
 
 ## Relationships
 None.
