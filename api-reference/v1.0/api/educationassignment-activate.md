@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: activate"
-description: "Activate an inactive assignment to signal that the assignment has action items for teachers and students."
+description: "Activate an inactive assignment to signal that the assignment has further action items for teachers and students."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -12,8 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Activate an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers and students. This action can only be performed by a teacher on currently inactive assignments.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -49,7 +47,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","c0f133b9-615c-4119-876c-c1848fd0a99a"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "c0f133b9-615c-4119-876c-c1848fd0a99a"],
   "name": "post_activateAssignment"
 }-->
 ```msgraph-interactive
