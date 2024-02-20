@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.remove_all_access_for_user_post_request_body import RemoveAllAccessForUserPostRequestBody
+from msgraph.generated.models.teamwork_user_identity import TeamworkUserIdentity
 
 graph_client = GraphServiceClient(credentials, scopes)
 

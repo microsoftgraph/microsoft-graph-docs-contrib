@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -43,7 +45,7 @@ This method doesn't support the OData query parameters. For general information,
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -53,9 +55,20 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [virtualEventSession](../resources/virtualeventsession.md) objects in the response body.
 
+Currently, only the following properties of a **virtualEventSession** object contain data when the object is returned by this method. All other properties are null. To get all the properties of a **virtualEventSession**, use the [Get virtualEventSession](../api/virtualeventsession-get.md) method.
+
+| Property              | Type                                          | Description    |
+| :-------------------- | :-------------------------------------------- | :------------------------------------ |
+| endDateTime           | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session end time.   |
+| id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).    |
+| joinWebUrl | String | The join URL of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| startDateTime | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session start time. |
+| subject | String | The subject of the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+
 ## Examples
 
 ### Request
+
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -65,7 +78,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/solutions/virtualEvents/webinars/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions
 ```
-
 
 ### Response
 The following example shows the response.
@@ -89,18 +101,11 @@ Content-Type: application/json
       "endDateTime": "2023-08-09T22:00:00Z",
       "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
       "subject": "Session one",
-      "participants": {
-        "@odata.type": "microsoft.graph.meetingParticipants"
-      },
       "isBroadcast": null,
       "broadcastSettings": null,
       "capabilities": [],
       "audioConferencing": null,
-      "chatInfo": {
-        "threadId": "19:meeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5@thread.v2",
-        "messageId": "0",
-        "replyChainMessageId": null
-      },
+      "chatInfo": null,
       "videoTeleconferenceId": null,
       "externalId": null,
       "joinMeetingIdSettings": null,

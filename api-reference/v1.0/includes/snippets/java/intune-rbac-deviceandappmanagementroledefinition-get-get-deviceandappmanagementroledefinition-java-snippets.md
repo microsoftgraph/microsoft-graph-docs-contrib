@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RoleDefinition roleDefinition = graphClient.deviceManagement().roleDefinitions("{roleDefinitionId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+RoleDefinition result = graphClient.deviceManagement().roleDefinitions().byRoleDefinitionId("{roleDefinition-id}").get();
+
 
 ```

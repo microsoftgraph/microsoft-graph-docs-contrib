@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.compliance_management_partner import ComplianceManagementPartner
+from msgraph.generated.models.compliance_management_partner_assignment import ComplianceManagementPartnerAssignment
+from msgraph.generated.models.configuration_manager_collection_assignment_target import ConfigurationManagerCollectionAssignmentTarget
 
 graph_client = GraphServiceClient(credentials, scopes)
 

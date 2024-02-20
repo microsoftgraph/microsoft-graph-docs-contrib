@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Move a [planner plan](../resources/plannerplan.md) object from one [planner plan container](../resources/plannerplancontainer.md) to another. Planner plans can only be moved from a user container to a group container.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -30,7 +32,7 @@ POST /planner/plans/{planId}/moveToContainer
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 | If-Match  | Last known ETag value for the **plannerPlan** to be moved. Required.|
 

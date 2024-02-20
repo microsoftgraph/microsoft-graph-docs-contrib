@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Invitation invitation = new Invitation();
-invitation.invitedUserEmailAddress = "admin@fabrikam.com";
-invitation.inviteRedirectUrl = "https://myapp.contoso.com";
+invitation.setInvitedUserEmailAddress("admin@fabrikam.com");
+invitation.setInviteRedirectUrl("https://myapp.contoso.com");
+Invitation result = graphClient.invitations().post(invitation);
 
-graphClient.invitations()
-	.buildRequest()
-	.post(invitation);
 
 ```

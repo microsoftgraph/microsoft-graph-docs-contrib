@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
-> **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
-
-> **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+> **Notes:**
+> - We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
+> - It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -476,13 +476,14 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Send a message with file attachment in it
+### Example 4: Send a message with a file attachment in it
 
 #### Request
 The following example shows a request.
 
->**Note:** The file must already be in SharePoint. To find the file properties, GET the **driveItem** for the file. For example, /drives/{id}/items/{id}. Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.
-
+>**Notes:**
+> - The file to attach must already be in SharePoint. To access the file properties, [GET the **driveItem** for the file](/graph/api/driveitem-get). The **eTag** of the **driveItem** has a GUID that is your attachment ID. The **webDavUrl** of the **driveItem** is your attachment **contentURL**. You can use the name of the **driveItem** as your attachment name. You can use /drives/{drive-id}/items/{item-id} to get a drive item resource. To get **webDavUrl**, you have to explicitly select it via $select=webDavUrl or $select=*,webDavUrl.
+> - Microsoft Graph supports the `OpenUrl` card action. Bots are required for other card actions.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -617,7 +618,7 @@ The following example shows a request.
 
 > **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in body as `../hostedContents/1/$value`.).
 
-**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`.
+**contentBytes** must be set to binary string Base64-encoded bytes. You can convert an item to binary Base64-encoded bytes in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`, for example.
 
 
 # [HTTP](#tab/http)
@@ -742,7 +743,7 @@ The following example shows a request.
 > * The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in content as `../hostedContents/1/$value`.).
 > * The maximum possible size of hosted content is 4 MB.
 
-**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`.
+**contentBytes** must be set to binary string Base64-encoded bytes. You can convert an item to binary Base64-encoded bytes in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`, for example.
 
 
 # [HTTP](#tab/http)
@@ -882,7 +883,7 @@ Content-type: application/json
 }
 ```
 
-### Example 7 : @mention a channel in a channel message
+### Example 7: @mention a channel in a channel message
 
 #### Request
 The following example shows a request. For information about how to get a list of channels in a team, see [List channels](../api/channel-list.md).
@@ -1176,7 +1177,7 @@ Content-type: application/json
 }
 ```
 
-### Example 9 : @mention a tag in a channel message
+### Example 9: @mention a tag in a channel message
 
 #### Request
 The following example shows a request. For information about how to get a list of tags in a team, see [List teamworkTags](../api/teamworktag-list.md).
@@ -1724,7 +1725,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Cards reference](/microsoftteams/platform/concepts/cards/cards-reference)
 

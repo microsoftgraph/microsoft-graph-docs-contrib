@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.me.cloud_p_cs.by_cloud_p_c_id('cloudPC-id').get_frontline_cloud_pc_access_state.get()
+result = await graph_client.device_management.virtual_endpoint.cloud_p_cs.by_cloud_p_c_id('cloudPC-id').get_frontline_cloud_pc_access_state.get()
 
 
 ```

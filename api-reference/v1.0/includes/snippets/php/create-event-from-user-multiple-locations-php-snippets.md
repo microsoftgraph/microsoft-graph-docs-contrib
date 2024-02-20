@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Event();
@@ -25,14 +25,14 @@ $end->setTimeZone('Pacific Standard Time');
 $requestBody->setEnd($end);
 $attendeesAttendee1 = new Attendee();
 $attendeesAttendee1EmailAddress = new EmailAddress();
-$attendeesAttendee1EmailAddress->setAddress('DanaS@contoso.onmicrosoft.com');
+$attendeesAttendee1EmailAddress->setAddress('DanaS@contoso.com');
 $attendeesAttendee1EmailAddress->setName('Dana Swope');
 $attendeesAttendee1->setEmailAddress($attendeesAttendee1EmailAddress);
 $attendeesAttendee1->setType(new AttendeeType('required'));
 $attendeesArray []= $attendeesAttendee1;
 $attendeesAttendee2 = new Attendee();
 $attendeesAttendee2EmailAddress = new EmailAddress();
-$attendeesAttendee2EmailAddress->setAddress('AlexW@contoso.onmicrosoft.com');
+$attendeesAttendee2EmailAddress->setAddress('AlexW@contoso.com');
 $attendeesAttendee2EmailAddress->setName('Alex Wilber');
 $attendeesAttendee2->setEmailAddress($attendeesAttendee2EmailAddress);
 $attendeesAttendee2->setType(new AttendeeType('required'));

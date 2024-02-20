@@ -2,11 +2,10 @@
 title: "Request differences between Azure AD Graph and Microsoft Graph"
 description: "Describes how Microsoft Graph requests differ from Azure Active Directory (Azure AD) Graph requests, which helps migrate apps to the newer service."
 author: "FaithOmbongi"
-ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
-ms.date: 11/11/2022
+ms.date: 01/12/2024
 #Customer intent: As a developer, I want to understand how REST API endpoints differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
@@ -14,9 +13,9 @@ ms.date: 11/11/2022
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-Microsoft Graph and the Azure Active Directory (Azure AD) Graph API are both REST APIs and they each support OData conventions for query parameters. However, the syntax varies between these two APIs.
+Microsoft Graph and the Azure Active Directory (Azure AD) Graph API are both REST APIs that support OData conventions for query parameters. However, the syntax varies between these two APIs.
 
-Use [Graph Explorer](https://aka.ms/ge) to try these request patterns against your own data, as it's a great way to learn about the request and response differences.
+Use [Graph Explorer](https://aka.ms/ge) to try these request patterns against your own data and learn about the request and response differences before you update your code.
 
 ## Basic requests
 
@@ -24,61 +23,37 @@ The following table highlights the main request differences between the two APIs
 
 |Request details| Azure AD Graph | Microsoft Graph |
 |---|---|---|
-|Request syntax| `https://graph.windows.net/{tenant_id}/` <br> `{resource}?{version}&query-parameters` | `https://graph.microsoft.com/`<br>`{version}/{resource}?query-parameters`|
+|Request syntax| `https://graph.windows.net/{tenant_id}/{resource}?{version}&query-parameters` | `https://graph.microsoft.com/{version}/{resource}?query-parameters`|
 |Service&nbsp;endpoints:||
 |-&nbsp;Global|`https://graph.windows.net`|`https://graph.microsoft.com`|
 |-&nbsp;US&nbsp;Gov&nbsp;L4|`https://graph.microsoftazure.us`|`https://graph.microsoft.us`|
 |-&nbsp;US&nbsp;Gov&nbsp;L5&nbsp;(DOD)|`https://graph.microsoftazure.us`|`https://dod-graph.microsoft.us`|
-|-&nbsp;Germany|`https://graph.cloudapi.de`|`https://graph.microsoft.de`|
+|-&nbsp;Germany (Retired)|`https://graph.cloudapi.de`|`https://graph.microsoft.de`|
 |-&nbsp;China&nbsp;(21Vianet)| `https://graph.chinacloudapi.cn`|`https://microsoftgraph.chinacloudapi.cn`|
-|{tenant_id}|Specify the ID of the tenant in the request.|It's optional to specify a tenant ID in the request as it is inferred from the access token.<br><br>If you specify the tenant ID, it goes between the `{version}` and the `{resource}` in the request URL.|
+|{tenant_id}|Specify the tenant ID or domain name in the request.|Optional. The tenant ID is inferred from the access token.<br><br>If you specify the tenant ID, use this syntax: `https://graph.microsoft.com/{version}/{tenant_id}/{resource}?query-parameters`.|
 |{version}|Specify the release version of Azure AD Graph in the request using a required query parameter.|Specify the release version of Microsoft Graph in the request as part of the URL path just after the service endpoint.|
 
-You can continue to use the same query parameters in Microsoft Graph as Azure AD Graph.
+The query parameter syntax is the same for Microsoft Graph and Azure AD Graph. However, Microsoft Graph supports more query parameters and query capabilities than Azure AD Graph.
 
 ### Example request comparison
 
-Suppose you want a list of all users with names beginning with "Dan".
+Suppose you want a list of all users with names beginning with "Dan" in the Contoso tenant. The following table shows the request differences between Azure AD Graph and Microsoft Graph.
 
-In Azure AD Graph, you might use this request:
+|Azure AD Graph  |Microsoft Graph  |
+|---------|---------|
+|`GET https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6`  |  `GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`       |
 
-`GET https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6` or
+### Primary key identifiers: objectId vs id
 
-`GET https://graph.windows.net/myOrganization/users?$filter=startswith(givenName,'Dan')&api-version=1.6`
+In Azure AD Graph, all entity resource types have a unique identifier (or primary key) called **objectId**.  For most entities (unless otherwise stated) this identifier is called **id** in Microsoft Graph.
 
-
-This request:
-
-- Targets version 1.6 of Azure AD Graph.
-- Specifies `contoso.com` as the tenant ID. The alternative shows the use of an alias `myOrganization` based on the tenant ID in the access token.
-- Calls the users resource.
-- Uses the `$filter` query parameter to limit the response to given names that begin with `Dan`.
-
-Results include users with names like Daniel, Danforth, Danielle, Danerys, and so on.
-
-A similar request for Microsoft Graph would be:
-
-`GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`
-
-Here:
-
-- The version is `v1.0`.
-- The tenant ID is inferred from the access token (not shown).
-- The resource and `$filter` query parameter are the same as the Microsoft Entra ID query.
-
-> **NOTE**: If you're using the Azure AD Graph .NET client library, see [.NET client libraries](migrate-azure-ad-graph-client-libraries.md) for more specific strategies and assistance to move to the Microsoft Graph .NET client library.
-
-### Key identifiers: objectId vs id
-
-In Azure AD Graph, all entity resource types have a unique identifier (or key) called **objectId**.  For the most part (unless otherwise stated) this same identifier is called **id** in Microsoft Graph.
+In addition to the primary key, some entities support an alternate key identifier. For example, the **application** and **servicePrincipal** resources in Microsoft Graph support an alternate key identifier for their **appId** property.
 
 ## Default properties and $select
 
-Use the `$select` query parameter, in GET requests, to customize the response to include all the properties that your app requires.
+It's a best practice to only request the properties your app really needs. Use the `$select` query parameter, in GET requests, to customize the response to include only the properties that your app requires.
 
-Microsoft Graph **get** or **list** operations for user or group resources returns only a subset of all properties, known as the _default properties_. The default properties represent the most commonly-used properties for a resource. On the other hand, Azure AD Graph returns the full set of all properties for the respective resource.
-
-To get other properties in v1.0, your app needs to explicitly request them, using the `$select` query parameter. This includes any directory schema extensions your app might be using. It's a best practice to only request the properties your app really needs.
+In some cases in Microsoft Graph, for example, the **GET** or **LIST** operations for **user** and **group** resources, only a subset of all properties are returned. These _default properties_ represent the most commonly used properties for the resources. On the other hand, Azure AD Graph returns the full set of all properties for the respective resource. Where the resource returns only the default properties, your app needs to explicitly request other properties using the `$select` query parameter.
 
 To illustrate the difference, use Graph Explorer to run the following requests and compare the different responses.
 
@@ -87,21 +62,17 @@ GET https://graph.microsoft.com/v1.0/me/
 GET https://graph.microsoft.com/beta/me/
 ```
 
-Review the responses from each query. You'll notice that address information is returned by the /beta version, but not the /v1.0 version.  That's because the address properties aren't in the default property set.
-
-If your app relies on the address properties, you need to update your v1.0 requests to include the `$select` query parameter:
+Notice the difference in the responses. The `/beta` version returns more properties than the `/v1.0` version. If your app relies on the **streetAddress** property for example, you need to update your `v1.0` requests to use the `$select` query parameter to request for the **streetAddress** property in addition to other properties the app needs. For example:
 
 ```http
-https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,state,postalCode
+https://graph.microsoft.com/v1.0/me?$select=displayName,streetAddress,city,state,postalCode
 ```
-
-The response for this request would include the address properties.  It also includes the **displayName** property, but only because it was specified by the query parameter.
 
 To learn more about:
 
-- Default properties on user, see [users](/graph/api/resources/users)
+- Default properties on user and group resources, see [users](/graph/api/resources/users) and [groups](/graph/api/resources/groups-overview)
 - The `$select` parameter and other supported ODATA query parameters, see [Use query parameters to customize responses](./query-parameters.md).
-- This and other recommended optimizations, see [Best practices](./best-practices-concept.md).
+- Other recommended optimizations, see [Best practices](./best-practices-concept.md).
 
 ## Relationships and navigation properties
 
@@ -109,7 +80,7 @@ Relationships (or navigation properties) are a key concept in Azure AD Graph and
 
 Relationships also define memberships, such as the groups a user belongs to, the members belonging to a group or a directory role, and so on.
 
-Azure AD Graph requests use `$links` to indicate relationships between resources.  In Microsoft Graph this uses the OData  v4.01 `$ref` notation instead.
+Azure AD Graph requests use `$links` to indicate relationships between resources. Microsoft Graph uses the OData v4.01 `$ref` notation instead.
 
 The following table shows several examples:
 
@@ -120,9 +91,9 @@ The following table shows several examples:
 | List members      | `GET /groups/{id}/members`                | `GET /groups/{id}/members`              |
 | Remove member     | `DELETE /groups/{id}/$links/members/{id}` | `DELETE /groups/{id}/members/{id}/$ref` |
 
-When migrating your apps to Microsoft Graph, look for requests that use `$links` to associate resources; change these to use `$ref` instead.
+When migrating your apps to Microsoft Graph, update references that use `$links` to associate resources to use `$ref` instead.
 
-## Next Steps
+## Next step
 
-- Learn about [service feature differences](migrate-azure-ad-graph-feature-differences.md) between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [!div class="nextstepaction"]
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)

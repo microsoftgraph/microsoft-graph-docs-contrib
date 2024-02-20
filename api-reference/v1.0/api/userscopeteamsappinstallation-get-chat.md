@@ -38,7 +38,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -130,6 +130,6 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.roleManagement.directory.transitiveRoleAssignments.transitive_role_assignments_request_builder import TransitiveRoleAssignmentsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

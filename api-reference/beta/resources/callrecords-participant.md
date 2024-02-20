@@ -21,14 +21,14 @@ Inherits from [participantBase](callrecords-participantbase.md).
 
 | Method          | Return Type                                                                                     | Description                                                   |
 |:----------------|:------------------------------------------------------------------------------------------------|:--------------------------------------------------------------|
-| [List participants](../api/callrecords-callrecord-list-participants.md)|[microsoft.graph.callRecords.participant](callrecords-participant.md) collection|Get the list of [participants](../resources/callrecords-participant.md) associated with a [callRecord](../resources/callrecords-callrecord.md).|
+| [List participants_v2](../api/callrecords-callrecord-list-participants_v2.md)|[microsoft.graph.callRecords.participant](callrecords-participant.md) collection|Get the list of [participant](../resources/callrecords-participant.md) objects associated with a [callRecord](../resources/callrecords-callrecord.md).|
 
 ## Properties
 
 | Property | Type                       | Description                                             |
 |:---------|:------------------------------|:--------------------------------------------------------|
 | id       | String                        | Unique identifier for the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
-| identity | [identitySet](identityset.md) | The identity of the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
+| identity | [communicationsIdentitySet](communicationsidentityset.md) | The identity of the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
 
 ## JSON representation
 
@@ -46,10 +46,10 @@ The following JSON representation shows the resource type.
 ```json
 {
   "id": "String (identifier)",
-  "identity": {"@odata.type": "microsoft.graph.identitySet"}
+  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"}
 }
 ```
 
-## See also
+## Related content
 
 For examples that show how to use the **participant** resource, see [callRecord](callrecords-callrecord.md).
