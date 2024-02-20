@@ -57,7 +57,7 @@ The following example shows a request.
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "c0f133b9-615c-4119-876c-c1848fd0a99a"],
   "name": "post_deactivateAssignment_withoutheader"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/c0f133b9-615c-4119-876c-c1848fd0a99a/deactivate
 ```
 
@@ -140,7 +140,7 @@ The following example shows a request.
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "2cb9ce0c-a4a1-40b8-b386-b43e0f05e7ed"],
   "name": "post_deactivateAssignment_withheader"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/2cb9ce0c-a4a1-40b8-b386-b43e0f05e7ed/deactivate
 Prefer: include-unknown-enum-members
 ```
