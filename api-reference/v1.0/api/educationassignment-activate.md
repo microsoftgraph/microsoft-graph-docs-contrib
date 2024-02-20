@@ -50,7 +50,7 @@ The following example shows a request.
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "c0f133b9-615c-4119-876c-c1848fd0a99a"],
   "name": "post_activateAssignment"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/c0f133b9-615c-4119-876c-c1848fd0a99a/activate
 ```
 
