@@ -130,6 +130,7 @@ The following JSON representation shows the resource type.
         }
       ],
       "type": "String",
+      "resourceType": "String",
       "resourceId": "String"
     }
   ],

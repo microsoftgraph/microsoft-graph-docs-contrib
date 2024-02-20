@@ -20,7 +20,8 @@ Represents the audit resource. This shows the target edited resource entity, w
 |:---|:---|:---|
 |displayName|String|The resource entity display name.|
 |modifiedProperties|[cloudPcAuditProperty](../resources/cloudpcauditproperty.md) collection|A list of modified properties.|
-|type|String|The type of the audit resource.|
+|type|String|The type of the audit resource. (Will be deprecated after May 08 2024, please use resourceType instead.)|
+|resourceType|String|The type of the audit resource.|
 |resourceId|String|The ID of the audit resource.|
 
 ## Relationships
@@ -49,6 +50,7 @@ The following is a JSON representation of the resource.
     }
   ],
   "type": "String",
+  "resourceType": "String",
   "resourceId": "String"
 }
 ```
