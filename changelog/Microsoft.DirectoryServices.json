@@ -12134,6 +12134,24 @@
     {
       "ChangeList": [
         {
+          "Id": "f5ff0769-8a87-4b52-8fe3-ab614dba6d92",
+          "ApiChange": "Property",
+          "ChangedApiName": "supportedServices",
+          "ChangeType": "Change",
+          "Description": "Added `CustomURLDomains` as one of the values for **supportedServices** property of the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource type.",
+          "Target": "domain"
+        }
+      ],
+      "Id": "f5ff0769-8a87-4b52-8fe3-ab614dba6d92",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-20T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1dc3d6e0-9cfd-4ce6-8666-56a810f97951",
           "ApiChange": "Property",
           "ChangedApiName": "refreshTokensValidFromDateTime",
