@@ -113,7 +113,7 @@
     },
     {
       "name": "Change notifications",
-      "overview": "resources/webhooks.md",
+      "overview": "resources/change-notifications-api-overview.md",
       "workloads": [
         {
           "id": "Microsoft.SubscriptionServices",
@@ -161,7 +161,7 @@
       ]
     },
     {
-      "name": "Devices and apps",
+      "name": "Device and app management",
       "childNodes": [
         {
           "name": "Browser management",
@@ -377,6 +377,7 @@
           "childNodes": [
             {
               "name": "Custom security attributes",
+              "overview": "resources/custom-security-attributes-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.DirectoryServices",
@@ -463,6 +464,7 @@
             },
             {
               "name": "Lifecycle workflows",
+              "overview": "resources/identitygovernance-lifecycleworkflows-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.AAD.LCM",
@@ -488,7 +490,6 @@
         },
         {
           "name": "Identity and sign-in",
-          "overview": "resources/authenticationmethods-overview.md",
           "workloads": [
             {
               "id": "Microsoft.PXS",
@@ -515,6 +516,7 @@
           "childNodes": [
             {
               "name": "Authentication methods",
+              "overview": "resources/authenticationmethods-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.StrongAuthenticationAPI",
@@ -534,6 +536,7 @@
             },
             {
               "name": "Authentication methods policies",
+              "overview": "authenticationmethodspolicies-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.AuthenticationMethodsPolicy",
@@ -553,6 +556,7 @@
             },
             {
               "name": "Authentication strengths",
+              "overview": "authenticationstrengths-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.AuthenticationMethodsPolicy",
@@ -584,6 +588,7 @@
             },
             {
               "name": "Cross-tenant access",
+              "overview": "crosstenantaccesspolicy-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.DirectoryServices",
@@ -647,6 +652,7 @@
         },
         {
           "name": "Granular delegated admin privileges",
+          "overview": "delegatedadminrelationships-api-overview.md",
           "workloads": [
             {
               "id": "Microsoft.Partner.CustomerSvcAdmin"
@@ -777,6 +783,7 @@
         },
         {
           "name": "Microsoft 365 usage reports",
+          "overview": "resources/report.md",
           "workloads": [
             {
               "id": "Microsoft.O365Reporting"
@@ -946,7 +953,12 @@
   ],
   "resourceOverviews": [
     {
-
+      "resource": "federatedIdentityCredential",
+      "overview": "resources/federatedidentitycredentials-overview.md"
+    },
+    {
+      "resource": "subjectRightsRequest",
+      "overview": "resources/subjectrightsrequest-subjectrightsrequestapioverview.md"
     }
   ]
 }
