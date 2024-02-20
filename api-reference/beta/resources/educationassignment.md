@@ -17,7 +17,7 @@ Represents a task or unit of work assigned to a student or team member in a clas
 
 **Assignments** contain handouts and tasks that the teacher wants the student to work on. Each student **assignment** has an associated [submission](educationsubmissionresource.md) that contains any work their teacher asked to be turned in. Only teachers or team owners can create **assignments**. A teacher can add scores and feedback to the **submission** turned in by the student.
 
-When an **assignment** is created, it is in a Draft state. Students can't see the **assignment**, and **submissions** aren't created. You can change the status of an **assignment** by using the [publish](../api/educationassignment-publish.md) action. You can't use a PATCH request to change the **assignment** status.
+When an **assignment** is created, it is in a draft state. Students can't see the **assignment**, and **submissions** aren't created. You can change the status of an **assignment** by using the [publish](../api/educationassignment-publish.md) action. You can't use a PATCH request to change the **assignment** status.
 
 The **assignment** APIs are exposed in the class namespace.
 
@@ -72,7 +72,7 @@ Inherits from [entity](../resources/entity.md).
 |moduleUrl|string| The URL of the module from which to access the **assignment**.|
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the **assignment** publish notification. If not specified or null, defaults to the `General` channel. This field only applies to **assignments** where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** isn't allowed after the **assignment** has been published.|
 |resourcesFolderUrl|string| Folder URL where all the file resources for this **assignment** are stored.|
-|status|string| Status of the **Assignment**.  You can’t PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`, `unknownFutureValue` and `inactive`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `inactive`.|
+|status|string| Status of the **assignment**. You can't PATCH this value. Possible values are: `draft`, `scheduled`, `published`, `assigned`, `unknownFutureValue`, `inactive`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `inactive`.|
 |webUrl|string| The deep link URL for the given **assignment**.|
 
 ## Relationships
