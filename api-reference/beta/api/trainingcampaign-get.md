@@ -56,22 +56,27 @@ If successful, this method returns a `200 OK` response code and a [trainingCampa
 
 ## Examples
 
-### Request
+### Example 1: Get a training campaign
 
-The following example shows a request.
+The following example shows how to get an attack simulation campaign for a tenant.
+
+#### Request
+
+The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
-  "name": "get_trainingcampaign"
-}
--->
+  "blockType": "request"
+}-->
+
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns/{trainingCampaignId}
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -84,38 +89,207 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.trainingCampaign",
-    "id": "1b88f82e-bb8d-1b4b-24a1-7c49c95d89cf",
+    "id": "81c59451-2929-5b39-86f0-5a2b15f1314f",
+    "displayName": "graph toc update 2",
+    "description": "Graph Test",
+    "createdDateTime": "2024-02-18T08:36:07.6534871Z",
+    "lastModifiedDateTime": "2024-02-19T08:00:01.9417887Z",
+    "endUserNotificationSetting": null,
+    "includedAccountTarget": null,
+    "excludedAccountTarget": null,
+    "trainingSetting": null,
+    "report": null,
+    "campaignSchedule": {
+        "launchDateTime": "2024-02-18T08:37:44Z",
+        "completionDateTime": "2024-02-19T07:59:44Z",
+        "status": "completed"
+    },
     "createdBy": {
-      "@odata.type": "microsoft.graph.emailIdentity"
-    },
-    "createdDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "endUserNotificationSetting": {
-      "@odata.type": "microsoft.graph.endUserNotificationSetting"
-    },
-    "excludedAccountTarget": {
-      "@odata.type": "microsoft.graph.accountTargetContent"
-    },
-    "includedAccountTarget": {
-      "@odata.type": "microsoft.graph.accountTargetContent"
+        "email": "attacksim@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+        "id": "478a22cd-aecc-41df-b995-88c8de17aaf5",
+        "displayName": "attacksim"
     },
     "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.emailIdentity"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "report": {
-      "@odata.type": "microsoft.graph.trainingCampaignReport"
-    },
-    "trainingSetting": {
-      "@odata.type": "microsoft.graph.trainingSetting"
-    },
-    "campaignSchedule": {
-      "@odata.type": "microsoft.graph.campaignSchedule"
+        "email": "attacksim@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+        "id": "478a22cd-aecc-41df-b995-88c8de17aaf5",
+        "displayName": "attacksim"
     }
-  }
 }
 ```
 
+### Example 2: Get included account targets
+
+The following example shows how to get included account targets (users) for a Training campaign for a tenant.
+
+#### Request
+
+The following is an example of a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/includedAccountTarget
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accountTargetContent"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
+  "type": "addressBook",
+  "accountTargetEmails": [
+    "john@contoso.com"
+  ]
+}
+```
+
+### Example 3: Get excluded account targets
+
+The following example shows how to get excluded account targets (users) for a Training campaign for a tenant.
+
+#### Request
+
+The following is an example of a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/excludedAccountTarget
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accountTargetContent"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
+  "type": "addressBook",
+  "accountTargetEmails": [
+    "alie@contoso.com"
+  ]
+}
+```
+
+### Example 4: Get training setting
+
+The following example shows how to get training setting details for a training campaign.
+
+#### Request
+
+The following is an example of a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/trainingSetting
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.trainingSetting"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "trainingCompletionDuration": "0",
+  "completionDateTime": "2024-02-19T07:59:44Z",
+  "settingType": "microsoftManaged"
+}
+```
+
+### Example 5: Get end user notification setting 
+
+The following example shows how to get end user notification setting details for a training campaign.
+
+#### Request
+
+The following is an example of a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/endUserNotificationSetting
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.endUserNotificationSetting"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "settingType": "trainingSelected",
+  "positiveReinforcement": null,
+  "notificationPreference": "microsoft",
+  "trainingAssignment" : {
+    "deliveryFrequency": "unknown",
+    "defaultLanguage": "en",
+    "endUserNotification": {
+        "id": "36fb4dc1-7c37-4b96-9096-12e6d6014fae",
+        "displayName": "Microsoft default training only campaign-training assignment notification"
+    }
+  },
+    "trainingReminder" : {
+    "deliveryFrequency": "weekly",
+    "defaultLanguage": "en",
+    "endUserNotification": {
+        "id": "fe521249-9901-4584-a987-026a9980c58e",
+        "displayName": "Microsoft default training only campaign-training reminder notification"
+      }
+  }
+}
+```

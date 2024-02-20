@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completionDateTime|DateTimeOffset|**TODO: Add Description**|
-|launchDateTime|DateTimeOffset|**TODO: Add Description**|
-|status|campaignStatus|**TODO: Add Description**.The possible values are: `unknown`, `draft`, `inProgress`, `scheduled`, `completed`, `failed`, `cancelled`, `excluded`, `deleted`, `unknownFutureValue`.|
+|completionDateTime|DateTimeOffset|Campaign end time|
+|launchDateTime|DateTimeOffset|Campaign start datetime|
+|status|campaignStatus|Status shows the current state of the campaign.The possible values are: `unknown`, `draft`, `inProgress`, `scheduled`, `completed`, `failed`, `cancelled`, `excluded`, `deleted`, `unknownFutureValue`.|
 
 ## Relationships
 None.

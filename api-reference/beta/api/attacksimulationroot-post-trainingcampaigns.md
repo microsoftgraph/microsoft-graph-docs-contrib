@@ -52,24 +52,22 @@ You can specify the following properties when creating a **trainingCampaign**.
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|description|String|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Required.|
-|endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|**TODO: Add Description** Optional.|
-|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|**TODO: Add Description** Optional.|
-|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|**TODO: Add Description** Optional.|
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|report|[trainingCampaignReport](../resources/trainingcampaignreport.md)|**TODO: Add Description** Optional.|
-|trainingSetting|[trainingSetting](../resources/trainingsetting.md)|**TODO: Add Description** Optional.|
-|campaignSchedule|[campaignSchedule](../resources/campaignschedule.md)|**TODO: Add Description** Optional.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the training campaign Optional.|
+|createdDateTime|DateTimeOffset|Date and time of creation of the training campaign. Optional.|
+|description|String|Description of the training campaign. Optional.|
+|displayName|String|Display name of the training campaign. Required.|
+|endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|Details about the end user notification setting. Required.|
+|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users excluded from the training campaign. Optional.|
+|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the training campaign. Optional.|
+|lastModifiedDateTime|DateTimeOffset|Identity of the user who most recently modified the training campaign. Optional.|
+|trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Details about the training settings for a training campaign. Required.|
+|campaignSchedule|[campaignSchedule](../resources/campaignschedule.md)|Details about the schedule and current status for a training campaign Optional.|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [trainingCampaign](../resources/trainingcampaign.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and a tracking header named `location` in the response.
 
 ## Examples
 
@@ -86,79 +84,74 @@ POST https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaign
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.trainingCampaign",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endUserNotificationSetting": {
-    "@odata.type": "microsoft.graph.endUserNotificationSetting"
-  },
-  "excludedAccountTarget": {
-    "@odata.type": "microsoft.graph.accountTargetContent"
-  },
-  "includedAccountTarget": {
-    "@odata.type": "microsoft.graph.accountTargetContent"
-  },
-  "report": {
-    "@odata.type": "microsoft.graph.trainingCampaignReport"
-  },
-  "trainingSetting": {
-    "@odata.type": "microsoft.graph.trainingSetting"
-  },
-  "campaignSchedule": {
-    "@odata.type": "microsoft.graph.campaignSchedule"
-  }
+    "displayName": "Graph Training Campaign",
+    "description": "Graph Training Campaign Description",
+    "createdBy": {
+        "email": "john@contoso.com"
+    },
+    "lastModifiedBy": {
+        "email": "john@contoso.com"
+    },
+    "includedAccountTarget": {
+        "type": "addressBook",
+        "accountTargetEmails": [
+            "john@contoso.com"
+        ]
+    },
+    "endUserNotificationSetting": {
+        "notificationPreference": "microsoft",
+        "settingType": "trainingSelected",
+        "trainingReminder": {
+            "deliveryFrequency": "weekly",
+            "endUserNotification@odata.bind": "https://graph.microsoft.com/beta/security/attackSimulation/endUserNotifications('fe521249-9901-4584-a987-026a9980c58e')",
+            "defaultLanguage": "en"
+        },
+        "trainingAssignment": {
+            "endUserNotification@odata.bind": "https://graph.microsoft.com/beta/security/attackSimulation/endUserNotifications('36fb4dc1-7c37-4b96-9096-12e6d6014fae')",
+            "defaultLanguage": "en"
+        }
+    },
+    "trainingSetting": {
+        "settingType": "microsoftCustom",
+        "trainingAssignmentMappings": [
+            {
+                "assignedTo": [
+                    "allUsers"
+                ],
+                "training@odata.bind": "https://graph.microsoft.com/beta/security/attackSimulation/trainings('40454905-dc26-4f36-b854-3042a5362cb3')"
+            },
+            {
+                "assignedTo": [
+                    "allUsers"
+                ],
+                "training@odata.bind": "https://graph.microsoft.com/beta/security/attackSimulation/trainings('ea70ae06-3859-4818-be9d-270ee81d80a4')"
+            },
+            {
+                "assignedTo": [
+                    "allUsers"
+                ],
+                "training@odata.bind": "https://graph.microsoft.com/beta/security/attackSimulation/trainings('d733d88c-1b5a-48e3-a588-9910e41ac21d')"
+            }
+        ]
+    },
+    "campaignSchedule": {
+        "launchDateTime": "2024-02-15T07:59:44Z",
+        "completionDateTime": "2024-02-18T07:59:44Z",
+        "status": "Scheduled"
+    }
 }
 ```
-
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.trainingCampaign"
+  "truncated": true
 }
 -->
-``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
 
-{
-  "@odata.type": "#microsoft.graph.trainingCampaign",
-  "id": "1b88f82e-bb8d-1b4b-24a1-7c49c95d89cf",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
-  "createdDateTime": "String (timestamp)",
-  "description": "String",
-  "displayName": "String",
-  "endUserNotificationSetting": {
-    "@odata.type": "microsoft.graph.endUserNotificationSetting"
-  },
-  "excludedAccountTarget": {
-    "@odata.type": "microsoft.graph.accountTargetContent"
-  },
-  "includedAccountTarget": {
-    "@odata.type": "microsoft.graph.accountTargetContent"
-  },
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "report": {
-    "@odata.type": "microsoft.graph.trainingCampaignReport"
-  },
-  "trainingSetting": {
-    "@odata.type": "microsoft.graph.trainingSetting"
-  },
-  "campaignSchedule": {
-    "@odata.type": "microsoft.graph.campaignSchedule"
-  }
-}
+```http
+HTTP/1.1 202 Accepted 
 ```
-

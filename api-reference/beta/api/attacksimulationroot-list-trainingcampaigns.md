@@ -38,7 +38,25 @@ GET /security/attackSimulation/trainingCampaigns
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **campaignSchedule/completionDateTime**, **displayName**, **campaignSchedule/launchDateTime**, and **campaignSchedule/status** properties.
+
+If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
+
+The following are examples of their use:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/attackSimulation/trainingCampaigns?$count=true
+GET /security/attackSimulation/trainingCampaigns?$filter={property} eq '{property-value}'
+GET /security/attackSimulation/trainingCampaigns?$filter={property} eq '{property-value}'&$top=5
+GET /security/attackSimulation/trainingCampaigns?$orderby={property}
+GET /security/attackSimulation/trainingCampaigns?$skipToken={skipToken}
+GET /security/attackSimulation/trainingCampaigns?$top=1
+GET /security/attackSimulation/trainingCampaigns?$select={property}
+```
 
 ## Request headers
 
@@ -84,40 +102,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.trainingCampaign",
-      "id": "1b88f82e-bb8d-1b4b-24a1-7c49c95d89cf",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.emailIdentity"
-      },
-      "createdDateTime": "String (timestamp)",
-      "description": "String",
-      "displayName": "String",
-      "endUserNotificationSetting": {
-        "@odata.type": "microsoft.graph.endUserNotificationSetting"
-      },
-      "excludedAccountTarget": {
-        "@odata.type": "microsoft.graph.accountTargetContent"
-      },
-      "includedAccountTarget": {
-        "@odata.type": "microsoft.graph.accountTargetContent"
-      },
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.emailIdentity"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "report": {
-        "@odata.type": "microsoft.graph.trainingCampaignReport"
-      },
-      "trainingSetting": {
-        "@odata.type": "microsoft.graph.trainingSetting"
-      },
-      "campaignSchedule": {
-        "@odata.type": "microsoft.graph.campaignSchedule"
-      }
-    }
-  ]
+    "value": [
+        {
+            "@odata.etag": "W/\"dub9zfj4Rk68MmY/KYwXKgADRgyGsw==\"",
+            "id": "81c59451-2929-5b39-86f0-5a2b15f1314f",
+            "displayName": "Sample Training Campaign",
+            "description": "Sample Training Campaign Description",
+            "createdDateTime": "2024-02-18T08:36:07.6534871Z",
+            "lastModifiedDateTime": "2024-02-19T08:00:01.9417887Z",
+            "endUserNotificationSetting": null,
+            "includedAccountTarget": null,
+            "excludedAccountTarget": null,
+            "trainingSetting": null,
+            "campaignSchedule": {
+                "launchDateTime": "2024-02-18T08:37:44Z",
+                "completionDateTime": "2024-02-19T07:59:44Z",
+                "status": "completed"
+            },
+            "createdBy": {
+              "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+              "displayName": "Reed Flores",
+              "email": "reed@contoso.com"
+            },
+            "lastModifiedBy": {
+              "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+              "displayName": "Reed Flores",
+              "email": "reed@contoso.com"
+            },
+        }
+    ]
 }
 ```
 

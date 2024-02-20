@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 |endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|Details about the end user notification setting.|
 |excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users excluded from the training campaign.|
 |id|String|Unique identifier for the training campaign. Inherited from [entity](../resources/entity.md).|
-|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the .|
+|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the training campaign.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the training campaign.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the training campaign.|
 |report|[trainingCampaignReport](../resources/trainingcampaignreport.md)|Report of the training campaign.|
