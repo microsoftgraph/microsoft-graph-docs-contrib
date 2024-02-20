@@ -1985,7 +1985,39 @@
           "ApiChange": "Member",
           "ChangedApiName": "detectionSource",
           "ChangeType": "Addition",
-          "Description": "Added the `microsoftSentinel`, `nrtAlerts`, `scheduledAlerts`, `microsoftDefenderThreatIntelligenceAnalytics`, `builtInMl` members to the **detectionSource** enumeration.",
+          "Description": "Added the `microsoftSentinel` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+	{
+          "Id": "db423a07-75ca-482d-8f04-1d04f087f565",
+          "ApiChange": "Member",
+          "ChangedApiName": "detectionSource",
+          "ChangeType": "Addition",
+          "Description": "Added the `nrtAlerts` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+	{
+          "Id": "db423a07-75ca-482d-8f04-1d04f087f565",
+          "ApiChange": "Member",
+          "ChangedApiName": "detectionSource",
+          "ChangeType": "Addition",
+          "Description": "Added the `scheduledAlerts` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+	{
+          "Id": "db423a07-75ca-482d-8f04-1d04f087f565",
+          "ApiChange": "Member",
+          "ChangedApiName": "detectionSource",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderThreatIntelligenceAnalytics` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+	{
+          "Id": "db423a07-75ca-482d-8f04-1d04f087f565",
+          "ApiChange": "Member",
+          "ChangedApiName": "detectionSource",
+          "ChangeType": "Addition",
+          "Description": "Added the `builtInMl` member to the **detectionSource** enumeration.",
           "Target": "detectionSource"
         }
       ],
