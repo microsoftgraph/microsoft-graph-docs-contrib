@@ -733,6 +733,176 @@ Content-Type: application/json
 }
 ```
 
+### Example 8: List details of apps in the app catalog that contain dashboard cards
+
+The following example lists only apps in the app catalog that contain a dashboard card.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_with_dashboardcards"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($expand=dashboardCards)&$filter=appDefinitions/any(a:a/dashboardCards/$count+ne+0)
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_with_dashboardcards",
+  "@odata.type": "Collection(microsoft.graph.teamsApp)",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions(dashboardCards()))",
+  "value": [
+    {
+      "id": "ff43cabf-9244-4260-a68e-5403ec648e96",
+      "externalId": "c8d1b752-2762-4e8c-9aba-3537d339e17a",
+      "displayName": "Dashboard Card App",
+      "distributionMethod": "organization",
+      "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('ff43cabf-9244-4260-a68e-5403ec648e96')/appDefinitions(dashboardCards())",
+      "appDefinitions": [
+        {
+          "id": "ZmY0M2NhYmYtOTI0NC00MjYwLWE2OGUtNTQwM2VjNjQ4ZTk2IyMxLjAuMCMjUHVibGlzaGVk",
+          "teamsAppId": "ff43cabf-9244-4260-a68e-5403ec648e96",
+          "azureADAppId": null,
+          "displayName": "Dashboard Card App",
+          "version": "1.0.0",
+          "requiredResourceSpecificApplicationPermissions": [],
+          "publishingState": "published",
+          "shortdescription": "Test app with dashboard cards",
+          "description": "Test app with dashboard cards",
+          "lastModifiedDateTime": null,
+          "allowedInstallationScopes": "team,groupChat,personal",
+          "serializedInternalDefinition": null,
+          "createdBy": null,
+          "authorization": {
+            "requiredPermissionSet": {
+              "resourceSpecificPermissions": []
+            }
+          },
+          "dashboardCards@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('ff43cabf-9244-4260-a68e-5403ec648e96')/appDefinitions('ZmY0M2NhYmYtOTI0NC00MjYwLWE2OGUtNTQwM2VjNjQ4ZTk2IyMxLjAuMCMjUHVibGlzaGVk')/dashboardCards",
+          "dashboardCards": [
+            {
+              "id": "210a65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "displayName": "sample1",
+              "description": "this is the first sample of the card",
+              "pickerGroupId": "110a65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "defaultSize": "large",
+              "icon": {
+                "iconUrl": null,
+                "officeUIFabricIconName": "VivaLogo"
+              },
+              "contentSource": {
+                "sourceType": "bot",
+                "botConfiguration": {
+                  "botId": "19806762-da13-422d-837a-f1061bc1f572"
+                }
+              }
+            },
+            {
+              "id": "210a65de-24ce-445e-9e1e-dd4ef0f0114a",
+              "displayName": "sample2",
+              "description": "Second sample of dashboard card.",
+              "pickerGroupId": "110b65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "defaultSize": "medium",
+              "icon": {
+                "iconUrl": "https://publiccdn.contoso.com/icons/card-icon.svg",
+                "officeUIFabricIconName": null
+              },
+              "contentSource": {
+                "sourceType": "bot",
+                "botConfiguration": {
+                  "botId": "19806762-da13-422d-837a-f1061bc1f672"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4c3aa29d-ea6b-4e68-9ae0-9e6f1251eea0",
+      "externalId": "c85a15d9-b835-49f4-99d6-a5cbe89734d3",
+      "displayName": "Dashboard Card Test",
+      "distributionMethod": "organization",
+      "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('4c3aa29d-ea6b-4e68-9ae0-9e6f1251eea0')/appDefinitions(dashboardCards())",
+      "appDefinitions": [
+        {
+          "id": "NGMzYWEyOWQtZWE2Yi00ZTY4LTlhZTAtOWU2ZjEyNTFlZWEwIyMxLjAuMCMjUHVibGlzaGVk",
+          "teamsAppId": "4c3aa29d-ea6b-4e68-9ae0-9e6f1251eea0",
+          "azureADAppId": null,
+          "displayName": "Dashboard Card Test",
+          "version": "1.0.0",
+          "requiredResourceSpecificApplicationPermissions": [],
+          "publishingState": "published",
+          "shortdescription": "Test app with dashboard cards",
+          "description": "Test app with dashboard cards",
+          "lastModifiedDateTime": null,
+          "allowedInstallationScopes": "team,groupChat,personal",
+          "serializedInternalDefinition": null,
+          "createdBy": null,
+          "authorization": {
+            "requiredPermissionSet": {
+              "resourceSpecificPermissions": []
+            }
+          },
+          "dashboardCards@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('4c3aa29d-ea6b-4e68-9ae0-9e6f1251eea0')/appDefinitions('NGMzYWEyOWQtZWE2Yi00ZTY4LTlhZTAtOWU2ZjEyNTFlZWEwIyMxLjAuMCMjUHVibGlzaGVk')/dashboardCards",
+          "dashboardCards": [
+            {
+              "id": "210a65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "displayName": "sample1",
+              "description": "this is the first sample of the card",
+              "pickerGroupId": "110a65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "defaultSize": "large",
+              "icon": {
+                "iconUrl": null,
+                "officeUIFabricIconName": "VivaLogo"
+              },
+              "contentSource": {
+                "sourceType": "bot",
+                "botConfiguration": {
+                  "botId": "19806762-da13-422d-837a-f1061bc1f572"
+                }
+              }
+            },
+            {
+              "id": "210a65de-24ce-445e-9e1e-dd4ef0f0114a",
+              "displayName": "sample2",
+              "description": "Second sample of dashboard card.",
+              "pickerGroupId": "110b65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "defaultSize": "medium",
+              "icon": {
+                "iconUrl": "https://publiccdn.contoso.com/icons/card-icon.svg",
+                "officeUIFabricIconName": null
+              },
+              "contentSource": {
+                "sourceType": "bot",
+                "botConfiguration": {
+                  "botId": "19806762-da13-422d-837a-f1061bc1f672"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## Related content
 
