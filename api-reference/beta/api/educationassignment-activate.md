@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: activate"
-description: "Activate an inactive assignment to signal that the assignment has action items for teachers and students."
+description: "Activate an inactive assignment to signal that the assignment has further action items for teachers and students."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -52,7 +52,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a","2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
+  "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a", "2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
   "name": "post_activateAssignment"
 }-->
 ```http
