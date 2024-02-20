@@ -27,6 +27,11 @@ Microsoft Graph Toolkit v4 is now available. For details about changes in the la
 
 Use the **iCalUId** property on [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to get the unique identifier for an event across calendars.
 
+### Education
+
+- Teachers can [activate](/graph/api/educationassignment-activate) an inactive [assignment](/graph/api/resources/educationassignment) to signal that the assignment has further action items for teachers or students.
+- Teachers can [deactivate](/graph/api/educationassignment-deactivate) and mark an assignment as inactive to signal that the assignment has no further action items for teachers and students.
+
 ### Identity and access | Directory management
 
 Updated the descriptions of the **model** and **manufacturer** properties in the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to clarify their read-only status, replacing the outdated descriptions related to Project Rome sign-ins.
