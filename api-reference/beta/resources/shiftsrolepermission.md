@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Represents permissions for a role in a Shifts schedule.
 
+> [!NOTE]
+> This is solely used to restrict the Shifts app capabilities that are available to frontline managers on their teams in Shifts. It is different than Graph API permissions used to access Graph endpoints.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
