@@ -1,19 +1,17 @@
 ---
-title: "virtualAppointment: sendVirtualAppointmentReminderSms"
-description: "Send an SMS reminder to external attendees for a Teams Virtual Appointment."
+title: "virtualAppointment: sendVirtualAppointmentSms"
+description: "Send a virtual appointment SMS notification."
 author: "benmicrosoft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualAppointment: sendVirtualAppointmentReminderSms
+# virtualAppointment: sendVirtualAppointmentSms
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Send an SMS reminder to external attendees for a Teams Virtual Appointment. This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) and attendees must have a valid United States phone number to receive SMS notifications.
+Send an SMS notification to external attendees when a Teams virtual appointment is confirmed, rescheduled, or canceled. This feature requires [Teams premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Attendees must have a valid United States phone number to receive these SMS notifications.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -21,8 +19,12 @@ Send an SMS reminder to external attendees for a Teams Virtual Appointment. This
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "virtualappointment_sendvirtualappointmentremindersms" } -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]
+<!-- { "blockType": "permissions", "name": "virtualappointment_sendvirtualappointmentsms" } -->
+| Permission type                        | Permissions (from least to most privileged)                                                          |
+|:---------------------------------------|:-----------------------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | VirtualAppointmentNotification.Send |
+| Delegated (personal Microsoft account) | Not supported.                                                                                       |
+| Application                            | VirtualAppointmentNotification.Send                                        |
 
 
 ## HTTP request
@@ -32,8 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /me/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentReminderSms
-POST /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentReminderSms
+POST /me/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSms
+POST /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSms
 ```
 
 ## Request headers
@@ -44,12 +46,13 @@ POST /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentRemi
 | Accept-Language | Language. Optional.       |
 
 ## Request body
-In the request body, supply a JSON object with the following parameters:
+
+In the request body, supply a JSON object with the following parameters.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |attendees|[attendeeNotificationInfo](../resources/attendeenotificationinfo.md) collection|Represents the phone number and time zone of an external attendee. Required.|
-|remindBeforeTimeInMinutesType|[remindBeforeTimeInMinutesType](../resources/remindbeforetimeinminutestype.md) collection|Represents the reminder time interval. Required.|
+|messageType|[virtualAppointmentMessageType](../resources/virtualappointmentmessagetype.md) collection|Indicates the type of SMS notification to send. The possible values are: `confirmation`, `reschedule`, and `cancellation`. Required.|
 
 ## Response
 
@@ -64,12 +67,12 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "virtualappointment_sendVirtualAppointmentReminderSms",
+  "name": "get_virtualappointment_sendVirtualAppointmentSms",
   "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentReminderSms
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentSms
 
 { 
     "attendees": [ 
@@ -82,40 +85,34 @@ POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRh
             "timeZone": "Eastern Standard Time"
         }
     ], 
-    "remindBeforeTimeInMinutesType": "mins15"
+    "messageType": "confirmation"
 } 
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/virtualappointment-sendvirtualappointmentremindersms-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/virtualappointment-sendvirtualappointmentremindersms-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/[!INCLUDE [sample-code](../includes/snippets/snippet-not-available.md)]
+
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/virtualappointment-sendvirtualappointmentremindersms-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/virtualappointment-sendvirtualappointmentremindersms-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/virtualappointment-sendvirtualappointmentremindersms-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/virtualappointment-sendvirtualappointmentremindersms-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+[!INCLUDE [sample-code](../includes/snippets/snippet-not-available.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/virtualappointment-sendvirtualappointmentremindersms-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/virtualappointment-sendvirtualappointmentremindersms-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
