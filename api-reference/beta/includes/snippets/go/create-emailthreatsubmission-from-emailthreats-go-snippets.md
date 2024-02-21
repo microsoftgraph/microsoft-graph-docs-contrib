@@ -16,12 +16,12 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssecurity.NewEmailThreatSubmission()
-category := graphmodels.SPAM_SUBMISSIONCATEGORY
-requestBody.SetCategory(&category)
+category := graphmodels.SPAM_SUBMISSIONCATEGORY 
+requestBody.SetCategory(&category) 
 recipientEmailAddress := "tifc@contoso.com"
-requestBody.SetRecipientEmailAddress(&recipientEmailAddress)
+requestBody.SetRecipientEmailAddress(&recipientEmailAddress) 
 messageUrl := "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
-requestBody.SetMessageUrl(&messageUrl)
+requestBody.SetMessageUrl(&messageUrl) 
 
 emailThreats, err := graphClient.Security().ThreatSubmission().EmailThreats().Post(context.Background(), requestBody, nil)
 
