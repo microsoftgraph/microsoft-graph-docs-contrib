@@ -31,16 +31,15 @@ Represents a configuration for the source of the dashboard card content in a [te
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
 The following JSON representation shows the resource type.
-<-- {
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppDashboardCardContentSource"
-}
--->
+} -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppDashboardCardContentSource",
