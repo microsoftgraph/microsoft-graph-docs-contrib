@@ -36,7 +36,7 @@ Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Adminis
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
+POST /users/{id | userPrincipalName}/authentication/methods/{id}/resetPassword
 ```
 
 ## Request headers
@@ -84,7 +84,7 @@ Here's an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
+POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/methods/28c10230-6103-485e-b985-444c60001490/resetPassword
 Content-type: application/json
 
 {
@@ -141,7 +141,7 @@ Here's an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
+POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/methods/28c10230-6103-485e-b985-444c60001490/resetPassword
 
 {
 
