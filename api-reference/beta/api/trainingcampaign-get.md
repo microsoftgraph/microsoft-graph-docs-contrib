@@ -69,7 +69,7 @@ The following is an example of a request.
 }-->
 
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns/f1b13829-3829-f1b1-2938-b1f12938b1a
 ```
 
 ---
@@ -83,7 +83,7 @@ The following example shows the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.trainingCampaign",
-  "name" : "get_trainingcampaigns"
+  "name" : "get_trainingcampaign"
 }
 -->
 ``` http
@@ -132,7 +132,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/includedAccountTarget
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns/f1b13829-3829-f1b1-2938-b1f12938b1a/includedAccountTarget
 ```
 
 ---
@@ -175,7 +175,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/excludedAccountTarget
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns/f1b13829-3829-f1b1-2938-b1f12938b1a/excludedAccountTarget
 ```
 
 ---
@@ -219,7 +219,7 @@ The following is an example of a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/trainingSetting
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns/f1b13829-3829-f1b1-2938-b1f12938b1a/trainingSetting
 ```
 
 ---
@@ -261,7 +261,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/endUserNotificationSetting
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns/f1b13829-3829-f1b1-2938-b1f12938b1a/endUserNotificationSetting
 ```
 
 ---
