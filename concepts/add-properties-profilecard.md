@@ -247,7 +247,7 @@ $params = @{
 			displayName = "Cost Center"
 			localizations = @(
 				@{
-					languageTag = "ru-RU"
+					languageTag = "ru"
 					displayName = "центр затрат"
 				}
 			)
@@ -278,7 +278,7 @@ $params = @{
       displayName = "Cost Center"
 			localizations = @(
 				@{
-					languageTag = "nb-NO"
+					languageTag = "no"
 					displayName = "Kostnads Senter"
 				}
 			)
