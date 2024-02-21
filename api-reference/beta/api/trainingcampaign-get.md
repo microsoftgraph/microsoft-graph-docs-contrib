@@ -63,8 +63,6 @@ The following example shows how to get an attack simulation campaign for a tenan
 #### Request
 
 The following is an example of a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name" : "get_trainingcampaign"
@@ -128,8 +126,6 @@ The following example shows how to get included account targets (users) for a Tr
 #### Request
 
 The following is an example of a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name" : "get_trainingcampaign_includedtargets"
@@ -173,8 +169,6 @@ The following example shows how to get excluded account targets (users) for a Tr
 #### Request
 
 The following is an example of a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name" : "get_trainingcampaign_excludedtargets"
@@ -218,8 +212,6 @@ The following example shows how to get training setting details for a training c
 #### Request
 
 The following is an example of a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name" : "get_trainingcampaign_training"
@@ -263,8 +255,6 @@ The following example shows how to get end user notification setting details for
 #### Request
 
 The following is an example of a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name" : "get_trainingcampaign_eun"
