@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudClipboardItem",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudClipboardItem](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudClipboardItem](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItem?view=graph-rest-beta) resource and its methods.",
           "Target": "cloudClipboardItem"
         }
       ],
