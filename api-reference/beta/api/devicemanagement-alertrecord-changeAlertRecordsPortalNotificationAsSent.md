@@ -62,7 +62,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "alertrecordthis.setportalnotificationassent"
+  "name": "alertrecordthis.changeAlertRecordsPortalNotificationAsSent"
 }
 -->
 ``` http
