@@ -34,7 +34,6 @@ The details of a version of a [teamsApp](teamsapp.md).
 |:-------------- |:------------------------------ |:----------------------------------------------------------- |
 | bot            |[teamworkBot](teamworkbot.md)   | The details of the bot specified in the Teams app manifest. |
 | colorIcon      |[teamsAppIcon](teamsappicon.md) | The color version of the Teams app's icon.                   |
-| dashboardCards |[teamsAppDashboardCardBotConfiguration](../resources/teamsappdashboardcardbotconfiguration.md) collection| Dashboard cards specified in the Teams app manifest.|
 | outlineIcon    |[teamsAppIcon](teamsappicon.md) | The outline version of the Teams app's icon.                 |
 
 ## JSON representation
