@@ -21,11 +21,11 @@ The details of a version of a [teamsApp](teamsapp.md).
 |:------------------- |:-------- |:------------------------------------------------------ |
 | id                  | string   | A unique ID (not the Teams app ID).                     |
 | teamsAppId          | string   | The ID from the Teams app manifest.                    |
-| publishingState     | teamsAppPublishingState   | The published status of a specific version of a Teams app. Possible values are:</br>`submitted`—The specific version of the Teams app has been submitted and is under review. </br>`published`—The request to publish the specific version of the Teams app has been approved by the admin and the app is published. </br> `rejected` — The request to publish the specific version of the Teams app was rejected by the admin. |
+| publishingState     | string   | The published status of a specific version of a Teams app. Possible values are:</br>`submitted`—The specific version of the Teams app has been submitted and is under review. </br>`published`—The request to publish the specific version of the Teams app has been approved by the admin and the app is published. </br> `rejected` — The request to publish the specific version of the Teams app was rejected by the admin. |
 | azureADAppId        | string   | The WebApplicationInfo.Id from the Teams app manifest. |
 | displayName         | string   | The name of the app provided by the app developer.     |
 | version             | string   | The version number of the application.                 |
-| allowedInstallationScopes | teamsAppInstallationScope | A collection of scopes where the Teams app can be installed. Possible values are:</br>`team`—Indicates that the Teams app can be installed within a team and is authorized to access that team's data. </br>`groupChat`—Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data. </br> `personal`—Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data. |
+| allowedInstallationScopes | teamsAppInstallationScope collection | A collection of scopes where the Teams app can be installed. Possible values are:</br>`team`—Indicates that the Teams app can be installed within a team and is authorized to access that team's data. </br>`groupChat`—Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data. </br> `personal`—Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data. |
 |authorization|[teamsAppAuthorization](../resources/teamsappauthorization.md)|Authorization requirements specified in the Teams app manifest.|
 
 ## Relationships
@@ -33,8 +33,7 @@ The details of a version of a [teamsApp](teamsapp.md).
 | Relationship   | Type	                          | Description                                                 |
 |:-------------- |:------------------------------ |:----------------------------------------------------------- |
 | bot            |[teamworkBot](teamworkbot.md)   | The details of the bot specified in the Teams app manifest. |
-| colorIcon      |[teamsAppIcon](teamsappicon.md) | The color version of the Teams app's icon.                  |
-| dashboardCards |[teamsAppDashboardCardDefinition](../resources/teamsappdashboardcarddefinition.md) collection| Dashboard cards specified in the Teams app manifest.|
+| colorIcon      |[teamsAppIcon](teamsappicon.md) | The color version of the Teams app's icon.                   |
 | outlineIcon    |[teamsAppIcon](teamsappicon.md) | The outline version of the Teams app's icon.                 |
 
 ## JSON representation
@@ -49,14 +48,13 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "String (identifier)",
-  "teamsAppId": "String",
-  "publishingState": "String",
-  "azureADAppId": "String",
-  "displayName": "String",
-  "version": "String",
-  "authorization": {"@odata.type": "microsoft.graph.teamsAppAuthorization"},
-  "allowedInstallationScopes": "String"
+  "id": "string",
+  "teamsAppId": "string",
+  "publishingState": "#microsoft.graph.teamsAppPublishingState",
+  "azureADAppId": "string",
+  "displayName": "string",
+  "version": "string",
+  "authorization": "#microsoft.graph.teamsAppAuthorization"
 }
 ```
 
