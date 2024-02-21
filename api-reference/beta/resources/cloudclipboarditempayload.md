@@ -1,6 +1,6 @@
 ---
 title: "cloudClipboardItemPayload resource type"
-description: "Information about the content of cloudClipboardItem."
+description: "Contains the specific details of the content found within a cloudClipboardItem."
 author: "yuechen7"
 ms.localizationpriority: medium
 ms.prod: "project-rome"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information about the actual content of a [cloudClipboardItem](../resources/cloudclipboarditem.md).
+Contains the specific details of the content found within a [cloudClipboardItem](../resources/cloudclipboarditem.md).
 
 ## Properties
 |Property|Type|Description|
