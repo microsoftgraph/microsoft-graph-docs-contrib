@@ -55,6 +55,8 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns/f1b13829-3829-f1b1-2938-b1f12938b1a/report/overview
 ```
 
+---
+
 ### Response
 
 The following example shows a request.
