@@ -15956,7 +15956,7 @@ items:
                     href: resources/dailyuserinsightmetricsroot.md
                   - name: Monthly user insight
                     href: resources/monthlyuserinsightmetricsroot.md
-                  - name: Active users breakdown
+                  - name: Active users breakdown (deprecated)
                     href: resources/activeusersbreakdownmetric.md
                     items:
                     - name: List daily
@@ -16400,6 +16400,12 @@ items:
             items:
               - name: Overview
                 href: resources/partners-billing-api-overview.md
+              - name: Billed reconciliation
+                items:
+                  - name: Billed reconciliation
+                    href: resources/partners-billing-billedreconciliation.md
+                  - name: Export
+                    href: api/partners-billing-billedreconciliation-export.md
               - name: Billed usage
                 items:
                   - name: Billed usage
