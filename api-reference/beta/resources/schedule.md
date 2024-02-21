@@ -1,9 +1,9 @@
 ---
-title: schedule resource type
-description: A collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team.
+title: "schedule resource type"
+description: "Represents a collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects within a [team](../resources/team.md).
+Represents a collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects within a [team](../resources/team.md).
 
 ## Methods
 
@@ -73,22 +73,13 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "activitiesIncludedWhenCopyingShiftsEnabled": "Boolean",
-  "enabled": "Boolean",
-  "id": "String (identifier)",
+  "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
+  "enabled": true,
+  "timeZone": "America/Chicago",
+  "provisionStatus": "Completed",
+  "provisionStatusCode": null
   "isCrossLocationShiftRequestApprovalRequired": "Boolean",
-  "isCrossLocationShiftsEnabled": "Boolean",
-  "offerShiftRequestsEnabled": "Boolean",
-  "openShiftsEnabled": "Boolean",
-  "provisionStatus": "String",
-  "provisionStatusCode": "String",
-  "startDayOfWeek": "String",
-  "swapShiftsRequestsEnabled": "Boolean",
-  "timeClockEnabled": "Boolean",
-  "timeClockSettings": {"@odata.type": "microsoft.graph.timeClockSettings"},
-  "timeOffRequestsEnabled": "Boolean",
-  "timeZone": "String",
-  "workforceIntegrationIds": ["String"]
+  "isCrossLocationShiftsEnabled": "Boolean"
 }
 ```
 
