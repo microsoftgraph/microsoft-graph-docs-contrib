@@ -73,7 +73,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "cloudPcProvisioningPolicy",
                 "ChangeType": "Addition",
-                "Description": "Added the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource type under virtualEndpoint.",
+                "Description": "Added the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-1.0) resource type.",
                 "Target": "virtualEndpoint"
                 },
                 {
