@@ -49,13 +49,14 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "string",
-  "teamsAppId": "string",
-  "publishingState": "#microsoft.graph.teamsAppPublishingState",
-  "azureADAppId": "string",
-  "displayName": "string",
-  "version": "string",
-  "authorization": "#microsoft.graph.teamsAppAuthorization"
+  "id": "String (identifier)",
+  "teamsAppId": "String",
+  "publishingState": {"baseType": "microsoft.graph.teamsAppPublishingState"},
+  "azureADAppId": "String",
+  "displayName": "String",
+  "version": "String",
+  "authorization": {"baseType": "microsoft.graph.teamsAppAuthorization"},
+  "allowedInstallationScopes": ["String"]
 }
 ```
 
