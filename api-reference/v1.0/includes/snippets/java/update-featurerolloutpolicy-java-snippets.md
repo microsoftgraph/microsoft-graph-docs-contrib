@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 FeatureRolloutPolicy featureRolloutPolicy = new FeatureRolloutPolicy();
-featureRolloutPolicy.displayName = "PasswordHashSync Rollout Policy";
-featureRolloutPolicy.description = "PasswordHashSync Rollout Policy";
-featureRolloutPolicy.isEnabled = true;
-featureRolloutPolicy.isAppliedToOrganization = false;
+featureRolloutPolicy.setDisplayName("PasswordHashSync Rollout Policy");
+featureRolloutPolicy.setDescription("PasswordHashSync Rollout Policy");
+featureRolloutPolicy.setIsEnabled(true);
+featureRolloutPolicy.setIsAppliedToOrganization(false);
+FeatureRolloutPolicy result = graphClient.policies().featureRolloutPolicies().byFeatureRolloutPolicyId("{featureRolloutPolicy-id}").patch(featureRolloutPolicy);
 
-graphClient.policies().featureRolloutPolicies("d7ab4886-d7f0-441b-a5e6-e62d7328d18a")
-	.buildRequest()
-	.patch(featureRolloutPolicy);
 
 ```

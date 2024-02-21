@@ -2,6 +2,7 @@
 title: "List users"
 description: "Retrieve a list of user objects."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -231,7 +232,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identi
 
 #### Response
 
-Here's an example of the response. 
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -363,7 +364,7 @@ Content-type: application/json
       "displayName":"a",
       "mail":"a@contoso.com",
       "mailNickname":"a_contoso.com#EXT#",
-      "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
+      "userPrincipalName":"a_contoso.com#EXT#@contoso.com"
     }
   ]
 }
@@ -618,7 +619,7 @@ Content-type: application/json
       "displayName":"contosoAdmin1",
       "givenName":"Contoso Administrator",
       "mail":"'contosoadmin1@fabrikam.com",
-      "userPrincipalName":"contosoadmin1_fabrikam.com#EXT#@microsoft.onmicrosoft.com"
+      "userPrincipalName":"contosoadmin1_fabrikam.com#EXT#@contoso.com"
     }
   ]
 }
@@ -658,7 +659,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2b-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -855,9 +856,9 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the AuditLog.Read.All permission. 
+Here's an example of the request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the AuditLog.Read.All permission.
 
->**Note:** When you specify `$select=signInActivity` or `$filter=signInActivity` while listing users, the maximum page size for `$top` is 120. Requests with `$top` set higher than 120 will return pages with up to 120 users. signInActivity supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties. 
+>**Note:** When you specify `$select=signInActivity` or `$filter=signInActivity` while listing users, the maximum page size for `$top` is 120. Requests with `$top` set higher than 120 will return pages with up to 120 users. signInActivity supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties.
 
 # [HTTP](#tab/http)
 <!-- {

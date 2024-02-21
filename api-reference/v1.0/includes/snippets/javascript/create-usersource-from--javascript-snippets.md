@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const userSource = {
-    email: 'admin@M365x809305.onmicrosoft.com',
+    email: 'admin@contoso.com',
     includedSources: 'mailbox, site'
 };
 

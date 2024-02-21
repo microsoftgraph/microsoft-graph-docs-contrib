@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AdministrativeUnit administrativeUnit = new AdministrativeUnit();
-administrativeUnit.displayName = "Executive Division";
-administrativeUnit.description = "Executive division administration";
-administrativeUnit.isMemberManagementRestricted = true;
+administrativeUnit.setDisplayName("Executive Division");
+administrativeUnit.setDescription("Executive division administration");
+administrativeUnit.setIsMemberManagementRestricted(true);
+AdministrativeUnit result = graphClient.administrativeUnits().post(administrativeUnit);
 
-graphClient.administrativeUnits()
-	.buildRequest()
-	.post(administrativeUnit);
 
 ```

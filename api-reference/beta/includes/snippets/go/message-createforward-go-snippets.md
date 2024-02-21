@@ -24,7 +24,7 @@ message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested)
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
-address := "danas@contoso.onmicrosoft.com"
+address := "danas@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Dana Swope"
 emailAddress.SetName(&name) 

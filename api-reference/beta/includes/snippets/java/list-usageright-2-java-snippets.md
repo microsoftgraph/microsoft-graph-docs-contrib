@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UsageRightCollectionPage usageRights = graphClient.devices("{objectId}").usageRights()
-	.buildRequest()
-	.filter("state in ('active', 'suspended') and serviceIdentifier in ('ABCD')")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UsageRightCollectionResponse result = graphClient.devices().byDeviceId("{device-id}").usageRights().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "state in ('active', 'suspended') and serviceIdentifier in ('ABCD')";
+});
+
 
 ```

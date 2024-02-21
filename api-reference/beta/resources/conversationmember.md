@@ -76,7 +76,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [aadUserConversationMember](aaduserconversationmember.md)
 - [skypeForBusinessUserConversationMember](skypeForBusinessUserConversationMember.md)

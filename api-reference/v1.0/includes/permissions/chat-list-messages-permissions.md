@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|Chat.Read|Chat.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Chat.Read.All|Chat.ReadWrite.All, ChatMessage.Read.Chat|
+|Application|ChatMessage.Read.Chat|Chat.Read.All, Chat.ReadWrite.All|
 

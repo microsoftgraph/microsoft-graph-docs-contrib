@@ -298,7 +298,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related content
 
 - [Get accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
 

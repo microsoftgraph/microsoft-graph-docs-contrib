@@ -4,20 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcUserSetting cloudPcUserSetting = new CloudPcUserSetting();
-cloudPcUserSetting.displayName = "Example";
-cloudPcUserSetting.selfServiceEnabled = false;
-cloudPcUserSetting.localAdminEnabled = true;
+cloudPcUserSetting.setOdataType("#microsoft.graph.cloudPcUserSetting");
+cloudPcUserSetting.setDisplayName("Example");
+cloudPcUserSetting.setSelfServiceEnabled(false);
+cloudPcUserSetting.setLocalAdminEnabled(true);
 CloudPcRestorePointSetting restorePointSetting = new CloudPcRestorePointSetting();
-restorePointSetting.frequencyInHours = 16;
-restorePointSetting.frequencyType = CloudPcRestorePointFrequencyType.SIXTEEN_HOURS;
-restorePointSetting.userRestoreEnabled = true;
-cloudPcUserSetting.restorePointSetting = restorePointSetting;
+restorePointSetting.setFrequencyInHours(16);
+restorePointSetting.setFrequencyType(CloudPcRestorePointFrequencyType.SixteenHours);
+restorePointSetting.setUserRestoreEnabled(true);
+cloudPcUserSetting.setRestorePointSetting(restorePointSetting);
+CloudPcUserSetting result = graphClient.deviceManagement().virtualEndpoint().userSettings().post(cloudPcUserSetting);
 
-graphClient.deviceManagement().virtualEndpoint().userSettings()
-	.buildRequest()
-	.post(cloudPcUserSetting);
 
 ```

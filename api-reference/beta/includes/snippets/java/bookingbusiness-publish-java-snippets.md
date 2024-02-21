@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com")
-	.publish()
-	.buildRequest()
-	.post();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.solutions().bookingBusinesses().byBookingBusinessId("{bookingBusiness-id}").publish().post();
+
 
 ```

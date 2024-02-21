@@ -11658,6 +11658,32 @@ items:
                     href: api/domain-verify.md
                   - name: Promote domain
                     href: api/domain-promote.md
+              - name: External user profiles
+                items:
+                - name: External user profile
+                  href: resources/externaluserprofile.md
+                  items:
+                  - name: List
+                    href: api/directory-list-externaluserprofiles.md
+                  - name: Get
+                    href: api/externaluserprofile-get.md
+                  - name: Update
+                    href: api/externaluserprofile-update.md
+                  - name: Delete
+                    href: api/directory-delete-externaluserprofiles.md
+                - name: Pending external user profile
+                  href: resources/pendingexternaluserprofile.md
+                  items:
+                  - name: List
+                    href: api/directory-list-pendingexternaluserprofile.md
+                  - name: Get
+                    href: api/pendingexternaluserprofile-get.md
+                  - name: Create
+                    href: api/directory-post-pendingexternaluserprofile.md
+                  - name: Update
+                    href: api/pendingexternaluserprofile-update.md
+                  - name: Delete
+                    href: api/directory-delete-pendingexternaluserprofiles.md
               - name: Feature rollout policy
                 href: resources/featurerolloutpolicy.md
                 items:
@@ -15935,7 +15961,7 @@ items:
                     href: resources/dailyuserinsightmetricsroot.md
                   - name: Monthly user insight
                     href: resources/monthlyuserinsightmetricsroot.md
-                  - name: Active users breakdown
+                  - name: Active users breakdown (deprecated)
                     href: resources/activeusersbreakdownmetric.md
                     items:
                     - name: List daily
@@ -16379,6 +16405,12 @@ items:
             items:
               - name: Overview
                 href: resources/partners-billing-api-overview.md
+              - name: Billed reconciliation
+                items:
+                  - name: Billed reconciliation
+                    href: resources/partners-billing-billedreconciliation.md
+                  - name: Export
+                    href: api/partners-billing-billedreconciliation-export.md
               - name: Billed usage
                 items:
                   - name: Billed usage
@@ -18642,6 +18674,10 @@ items:
                     href: api/team-list-permissiongrants.md
                   - name: Get open shifts across all joined teams
                     href: api/team-getopenshifts.md
+                  - name: Get shifts across all joined teams
+                    href: api/team-getshifts.md
+                  - name: Get time offs across all joined teams
+                    href: api/team-gettimesoff.md
                   - name: Team template
                     items:
                       - name: Team template
@@ -18786,6 +18822,8 @@ items:
                     href: api/shift-delete.md
                   - name: Stage for deletion
                     href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get shifts across all joined teams
+                    href: api/team-getshifts.md
               - name: Shift preferences
                 href: resources/shiftpreferences.md
                 items:
@@ -18844,6 +18882,8 @@ items:
                     href: api/timeoff-delete.md
                   - name: Stage for deletion
                     href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get times off across all joined teams
+                    href: api/team-gettimesoff.md
               - name: Time off reason
                 href: resources/timeoffreason.md
                 items:
