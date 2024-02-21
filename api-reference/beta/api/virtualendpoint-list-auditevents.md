@@ -124,35 +124,35 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcAuditEvent",
       "id": "250473f5-029f-4037-813d-ba4768201d61",
       "displayName": "Display Name value",
-      "componentName": "Component Name value", 
-      "activity": "Activity value", 
-      "activityDateTime": "2021-02-14T13:10:51.814636+08:00", 
-      "activityType": " Activity Type value", 
-      "activityOperationType": "Activity Operation Type value", 
-      "activityResult": "Activity Result value", 
-      "correlationId": "a5c71cc6-2271-4d5c-9bfe-d94781e83fe6", 
+      "componentName": "Component Name value",
+      "activity": "Activity value",
+      "activityDateTime": "2021-02-14T13:10:51.814636+08:00",
+      "activityType": "Activity Type value",
+      "activityOperationType": "Activity Operation Type value",
+      "activityResult": "Activity Result value",
+      "correlationId": "a5c71cc6-2271-4d5c-9bfe-d94781e83fe6",
       "category": "Category value",
       "actor": {
-          "@odata.type": "microsoft.graph.cloudPcAuditActor",
-          "type": "Type value",
-          "userPermissions": [
-              "User Permissions value"
-          ],
-          "applicationId": "Application Id value",
-          "applicationDisplayName": "Application Display Name value",
-          "userPrincipalName": "User Principal Name value",
-          "servicePrincipalName": "Service Principal Name value",
-          "ipAddress": "Ip Address value",
-          "userId": "User Id value",
-          "userRoleScopeTags": [
-              {
-                  "@odata.type": "microsoft.graph.cloudPcUserRoleScopeTagInfo",
-                  "displayName": "Display Name value",
-                  "roleScopeTagId": "Role Scope Tag Id value"
-              }
-          ],
-          "remoteTenantId": "Remote Tenant Id value",
-          "remoteUserId": "Remote User Id value"
+        "@odata.type": "microsoft.graph.cloudPcAuditActor",
+        "type": "Type value",
+        "userPermissions": [
+          "User Permissions value"
+        ],
+        "applicationId": "Application Id value",
+        "applicationDisplayName": "Application Display Name value",
+        "userPrincipalName": "User Principal Name value",
+        "servicePrincipalName": "Service Principal Name value",
+        "ipAddress": "Ip Address value",
+        "userId": "User Id value",
+        "userRoleScopeTags": [
+          {
+            "@odata.type": "microsoft.graph.cloudPcUserRoleScopeTagInfo",
+            "displayName": "Display Name value",
+            "roleScopeTagId": "Role Scope Tag Id value"
+          }
+        ],
+        "remoteTenantId": "Remote Tenant Id value",
+        "remoteUserId": "Remote User Id value"
       },
       "resources": [
         {
@@ -170,7 +170,7 @@ Content-Type: application/json
           "resourceType": "Type value",
           "resourceId": "Resource Id value"
         }
-      ],
+      ]
     }
   ]
 }
