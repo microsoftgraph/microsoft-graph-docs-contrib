@@ -3184,3 +3184,13 @@ Possible values for user account types (group membership), per Windows definitio
 |direct|
 |qrCode|
 |unknownFutureValue|
+
+### educationAssignmentStatus values
+
+| Member             |
+| :----------------- |
+| draft              |
+| published          |
+| assigned           |
+| unknownFutureValue |
+| inactive           |
