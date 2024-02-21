@@ -85,7 +85,7 @@ The following example shows the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.trainingCampaign",
-  "name" : "get_trainingcampaign"
+  "name" : "get_trainingcampaigns"
 }
 -->
 ``` http
