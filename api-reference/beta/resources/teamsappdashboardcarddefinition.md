@@ -52,11 +52,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppDashboardCardDefinition",
-  "contentSource": {"@odata.type": "microsoft.graph.teamsAppDashboardCardContentSource"},
   "defaultSize": "String",
   "description": "String",
   "displayName": "String",
-  "icon": {"@odata.type": "microsoft.graph.teamsAppDashboardCardIcon"},
   "id": "String (identifier)",
   "pickerGroupId": "String"
 }
