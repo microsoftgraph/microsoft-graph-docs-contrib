@@ -307,3 +307,4 @@ Use the following command, where you replace `$profileCardPropertyId` with the I
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 - [Get profileCardProperty](/graph/api/profilecardproperty-get)
 - [Azure Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-azure)
+- [What languages is the profile card available in?](https://support.microsoft.com/en-au/office/what-languages-is-the-profile-card-available-in-32b8cdd5-390e-45f0-9231-0fe303cccfc1)
