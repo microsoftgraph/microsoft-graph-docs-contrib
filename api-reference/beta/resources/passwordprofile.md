@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "users"
 author: "yyuank"
+ms.reviewer: "iamut"
 ---
 
 # passwordProfile resource type
