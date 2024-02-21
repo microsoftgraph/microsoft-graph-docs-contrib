@@ -46,15 +46,16 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.teamsAppDashboardCardDefinition",
-  "baseType": "microsoft.graph.entity"
+  "@odata.type": "microsoft.graph.teamsAppDashboardCardDefinition"
 }-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppDashboardCardDefinition",
+  "contentSource": {"@odata.type": "microsoft.graph.teamsAppDashboardCardContentSource"},
   "defaultSize": "String",
   "description": "String",
   "displayName": "String",
+  "icon": {"@odata.type": "microsoft.graph.teamsAppDashboardCardIcon"},
   "id": "String (identifier)",
   "pickerGroupId": "String"
 }
