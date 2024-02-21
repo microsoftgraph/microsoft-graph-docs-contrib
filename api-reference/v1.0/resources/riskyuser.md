@@ -43,6 +43,7 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 |userDisplayName|String|Risky user display name.|
 |userPrincipalName|String|Risky user principal name.|
 
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

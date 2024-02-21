@@ -25,7 +25,7 @@ deviceComplianceScheduledActionForRule.SetId(&id)
 ruleName := "Rule Name value"
 deviceComplianceScheduledActionForRule.SetRuleName(&ruleName) 
 
-deviceComplianceScheduledActionForRules := []graphmodels.deviceComplianceScheduledActionForRuleable {
+deviceComplianceScheduledActionForRules := []graphmodels.DeviceComplianceScheduledActionForRuleable {
 	deviceComplianceScheduledActionForRule,
 }
 requestBody.SetDeviceComplianceScheduledActionForRules(deviceComplianceScheduledActionForRules)

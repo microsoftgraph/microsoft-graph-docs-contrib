@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.cloud_pc_provisioning_policy import CloudPcProvisioningPolicy
+from msgraph.generated.models.cloud_pc_windows_settings import CloudPcWindowsSettings
+from msgraph.generated.models.cloud_pc_windows_setting import CloudPcWindowsSetting
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -18,6 +21,9 @@ request_body = CloudPcProvisioningPolicy(
 	image_type = CloudPcProvisioningPolicyImageType.Custom,
 	windows_settings = CloudPcWindowsSettings(
 		language = "en-US",
+	),
+	windows_setting = CloudPcWindowsSetting(
+		locale = "en-US",
 	),
 )
 

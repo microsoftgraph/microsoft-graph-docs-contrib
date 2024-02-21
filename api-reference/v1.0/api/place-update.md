@@ -35,7 +35,7 @@ PATCH /places/{id | emailAddress}
 
 | Name       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body
@@ -192,10 +192,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_roomlist",
-  "sampleKeys": ["Building1RroomList@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Building1RroomList@contoso.com"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/places/Building1RroomList@contoso.onmicrosoft.com
+PATCH https://graph.microsoft.com/v1.0/places/Building1RroomList@contoso.com
 Content-type: application/json
 
 {

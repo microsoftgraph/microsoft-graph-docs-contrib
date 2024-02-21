@@ -4,21 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Event event = new Event();
-event.originalStartTimeZone = "originalStartTimeZone-value";
-event.originalEndTimeZone = "originalEndTimeZone-value";
+event.setOriginalStartTimeZone("originalStartTimeZone-value");
+event.setOriginalEndTimeZone("originalEndTimeZone-value");
 ResponseStatus responseStatus = new ResponseStatus();
-responseStatus.response = ResponseType.NONE;
-responseStatus.time = OffsetDateTimeSerializer.deserialize("datetime-value");
-event.responseStatus = responseStatus;
-event.uid = "iCalUId-value";
-event.reminderMinutesBeforeStart = 99;
-event.isReminderOn = true;
+responseStatus.setResponse(ResponseType.None);
+OffsetDateTime time = OffsetDateTime.parse("datetime-value");
+responseStatus.setTime(time);
+event.setResponseStatus(responseStatus);
+event.setUid("iCalUId-value");
+event.setReminderMinutesBeforeStart(99);
+event.setIsReminderOn(true);
+Event result = graphClient.groups().byGroupId("{group-id}").events().byEventId("{event-id}").patch(event);
 
-graphClient.groups("{id}").events("{id}")
-	.buildRequest()
-	.patch(event);
 
 ```

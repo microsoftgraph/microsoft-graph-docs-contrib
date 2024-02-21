@@ -42,7 +42,7 @@ This method supports `$select` OData query parameter to help customize the respo
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -165,7 +165,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Create accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
 - [List accessReviewScheduleDefinition](accessreviewset-list-definitions.md)

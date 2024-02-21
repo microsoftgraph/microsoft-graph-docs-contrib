@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
 	schedules = @(
-		"adelev@contoso.onmicrosoft.com"
-		"meganb@contoso.onmicrosoft.com"
+		"adelev@contoso.com"
+		"meganb@contoso.com"
 	)
 	startTime = @{
 		dateTime = "2019-03-15T09:00:00"

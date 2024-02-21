@@ -35,7 +35,7 @@ You can develop your custom Microsoft Graph connector in languages other than C\
 
 8. [Publish a connection](/graph/custom-connector-sdk-publish) for your custom connector on the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add).
 
-## See also
+## Related content
 
 * [Best practices](/graph/custom-connector-sdk-best-practices)
 * [Troubleshooting](/graph/custom-connector-sdk-troubleshooting)

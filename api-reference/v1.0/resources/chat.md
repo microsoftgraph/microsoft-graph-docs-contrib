@@ -116,7 +116,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [channel](channel.md)
 - [chatMessage](chatmessage.md)

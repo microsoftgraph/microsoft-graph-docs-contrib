@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.share_post_request_body import SharePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

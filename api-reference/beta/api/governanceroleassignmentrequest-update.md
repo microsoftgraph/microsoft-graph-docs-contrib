@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # Update governanceRoleAssignmentRequests
@@ -45,7 +46,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 ## Request body
 
-|Parameters	     |Type	                 |Required |Description|
+|Parameters         |Type                     |Required |Description|
 |:-------------|:----------------------|:--------|:----------|
 |reason        |String                 |✓        |The reason provided by the administrator for his decision.|
 |decision        |String                 |✓        |The administrator decision of the role assignment request. The value should be updated as `AdminApproved` or `AdminDenied`.|

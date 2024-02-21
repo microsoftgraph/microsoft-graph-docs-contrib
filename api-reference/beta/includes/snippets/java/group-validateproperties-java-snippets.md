@@ -4,22 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String displayName = "Myprefix_test_mysuffix";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String mailNickname = "Myprefix_test_mysuffix";
+com.microsoft.graph.beta.groups.item.validateproperties.ValidatePropertiesPostRequestBody validatePropertiesPostRequestBody = new com.microsoft.graph.beta.groups.item.validateproperties.ValidatePropertiesPostRequestBody();
+validatePropertiesPostRequestBody.setDisplayName("Myprefix_test_mysuffix");
+validatePropertiesPostRequestBody.setMailNickname("Myprefix_test_mysuffix");
+validatePropertiesPostRequestBody.setOnBehalfOfUserId(UUID.fromString("onBehalfOfUserId-value"));
+graphClient.groups().byGroupId("{group-id}").validateProperties().post(validatePropertiesPostRequestBody);
 
-UUID onBehalfOfUserId = UUID.fromString("onBehalfOfUserId-value");
-
-graphClient.groups("{id}")
-	.validateProperties(GroupValidatePropertiesParameterSet
-		.newBuilder()
-		.withDisplayName(displayName)
-		.withMailNickname(mailNickname)
-		.withOnBehalfOfUserId(onBehalfOfUserId)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Subdomain subdomain = graphClient.security().threatIntelligence().subdomains("bG9naW4uY29udG9zby5jb20kJGNvbnRvc28uY29t")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.security.Subdomain result = graphClient.security().threatIntelligence().subdomains().bySubdomainId("{subdomain-id}").get();
+
 
 ```

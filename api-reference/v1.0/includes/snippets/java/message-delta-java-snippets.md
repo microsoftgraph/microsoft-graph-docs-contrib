@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "odata.maxpagesize=2"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-MessageDeltaCollectionPage delta = graphClient.me().mailFolders("AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OAAuAAAAAAAiQ8W967B7TKBjgx9rVEURAQAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=").messages()
-	.delta()
-	.buildRequest( requestOptions )
-	.get();
+var result = graphClient.me().mailFolders().byMailFolderId("{mailFolder-id}").messages().delta().get(requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "odata.maxpagesize=2");
+});
+
 
 ```

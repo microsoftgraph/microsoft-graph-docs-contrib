@@ -52,7 +52,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -159,7 +159,7 @@ Content-Type: application/json
         }
       ]
     },
-    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "userPrincipalName": "pmitchell@contoso.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
     "provisioningType": "shared",
@@ -363,7 +363,7 @@ Content-Type: application/json
         }
       ]
     },
-    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "userPrincipalName": "pmitchell@contoso.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
     "provisioningType": "shared",

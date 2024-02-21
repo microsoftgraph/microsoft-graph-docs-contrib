@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MultiTenantOrganizationJoinRequestRecord multiTenantOrganizationJoinRequestRecord = new MultiTenantOrganizationJoinRequestRecord();
-multiTenantOrganizationJoinRequestRecord.addedByTenantId = "00000000-0000-0000-0000-000000000000";
+multiTenantOrganizationJoinRequestRecord.setAddedByTenantId("00000000-0000-0000-0000-000000000000");
+MultiTenantOrganizationJoinRequestRecord result = graphClient.tenantRelationships().multiTenantOrganization().joinRequest().patch(multiTenantOrganizationJoinRequestRecord);
 
-graphClient.tenantRelationships().multiTenantOrganization().joinRequest()
-	.buildRequest()
-	.patch(multiTenantOrganizationJoinRequestRecord);
 
 ```

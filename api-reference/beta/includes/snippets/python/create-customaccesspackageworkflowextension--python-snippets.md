@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.custom_access_package_workflow_extension import CustomAccessPackageWorkflowExtension
+from msgraph.generated.models.logic_app_trigger_endpoint_configuration import LogicAppTriggerEndpointConfiguration
+from msgraph.generated.models.azure_ad_token_authentication import AzureAdTokenAuthentication
 
 graph_client = GraphServiceClient(credentials, scopes)
 

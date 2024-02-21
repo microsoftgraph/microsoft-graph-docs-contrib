@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkbookNamedItem workbookNamedItem = new WorkbookNamedItem();
-workbookNamedItem.type = "type-value";
-workbookNamedItem.scope = "scope-value";
-workbookNamedItem.comment = "comment-value";
-JsonElement value = new JsonObject();
-workbookNamedItem.value = value;
-workbookNamedItem.visible = true;
+workbookNamedItem.setType("type-value");
+workbookNamedItem.setScope("scope-value");
+workbookNamedItem.setComment("comment-value");
+Json value = new Json();
+workbookNamedItem.setValue(value);
+workbookNamedItem.setVisible(true);
+WorkbookNamedItem result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().names().byWorkbookNamedItemId("{workbookNamedItem-id}").patch(workbookNamedItem);
 
-graphClient.me().drive().items("{id}").workbook().names("{name}")
-	.buildRequest()
-	.patch(workbookNamedItem);
 
 ```

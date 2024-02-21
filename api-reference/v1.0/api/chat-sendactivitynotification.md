@@ -10,7 +10,7 @@ doc_type: apiPageType
 # chat: sendActivityNotification
 Namespace: microsoft.graph
 
-Send an activity feed notification in scope of a chat. For more details about sending notifications and the requirements for doing so, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+Send an activity feed notification in scope of a chat. For more information about sending notifications and the requirements for doing so, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -35,7 +35,7 @@ POST /chats/{chatId}/sendActivityNotification
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -45,12 +45,13 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Topic of the notification. Specifies the resource being talked about.|
-|activityType|String|Activity type. This must be declared in the [Teams app manifest](/microsoftteams/platform/overview).|
-|chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
-|previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. For more details, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) and [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|The topic of the notification. Specifies the resource being talked about.|
+|activityType|String|The activity type. Activity types must be declared in the [Teams app manifest](/microsoftteams/platform/overview).|
+|chainId|Int64|Optional. The chain ID of the notification. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
+|previewText|[itemBody](../resources/itembody.md)|The preview text for the notification. Microsoft Teams shows the first 150 characters.|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|The values for the template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview).|
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|The recipient of the notification. For more information, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) and [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
+| teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user. Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityURL`:
 
@@ -67,7 +68,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Example 1: Notify a user about a task created in a chat
 
-The following example shows how you can send an activity feed notification for a new task created in a chat. For more details, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+The following example shows how you can send an activity feed notification for a new task created in a chat. For more information, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 #### Request
 
@@ -328,7 +329,7 @@ HTTP/1.1 204 No Content
 
 ### Example 4: Notify a user about an event in relation to a chat
 
-As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link to an aspect that is not part of the chat, or is not represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value for it. Also, `webUrl` is required when setting `topic` source to `text`.
+As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link to an aspect that isn't part of the chat, or isn't represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value for it. Also, `webUrl` is required when setting `topic` source to `text`.
 
 #### Request
 
@@ -416,7 +417,7 @@ HTTP/1.1 204 No Content
 
 ### Example 5: Notify the chat members about a task created in a chat
 
-The following example shows how you can send an activity feed notification to all chat members. This example is similar to previous examples. However, in this case, the **recipient** is a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Note that the **chatId** specified in the **recipient** must match the **chatId** specified in the request URL.
+The following example shows how you can send an activity feed notification to all chat members. This example is similar to previous examples. However, in this case, the **recipient** is a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). The **chatId** specified in the **recipient** must match the **chatId** specified in the request URL.
 
 #### Request
 
@@ -504,7 +505,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Activity feed notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/csharp)
 - [Activity feed notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/nodejs)
