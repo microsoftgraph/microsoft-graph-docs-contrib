@@ -29,17 +29,19 @@ Examples: To be added
 |title|String|The title of the known issue.|
 |resolvedDateTime|DateTimeOffset| The date and time when the known issue was resolved or mitigated.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |lastUpdatedDateTime|DateTimeOffset|The date and time when the known issue was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|originatingKnowledgeBaseArticle || |
-|resolvingKnowledgeBaseArticle|| |
-|safeguardHoldIds|| |
-|knownIssueHistories|||
 
 Supported Methods: GET
 
 Supported query parameters: filter(eq) status, filter(ge, le) startDateTime, filter(ge, le) lastUpdatedDateTime, filter(ge, le) resolvedDateTime
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|originatingKnowledgeBaseArticle | [microsoft.graph.windowsUpdates.knowledgeBaseArticlecollection](../resources/windowsupdates-knowledgeBaseArticlecollection.md) collection |Knowledge base article associated with the release when the known issue was first reported. |
+|resolvingKnowledgeBaseArticle| [microsoft.graph.windowsUpdates.knowledgeBaseArticlecollection](../resources/windowsupdates-knowledgeBaseArticlecollection.md) collection|Knowledge base article associated with the release when the known issue was resolved or mitigated. |
+|safeguardHoldIds|Edm.Int32 collection|List of safeguard hold idsassociated with the known issue.|
+|knownIssueHistories| [microsoft.graph.windowsUpdates.knownIssueHistories](../resources/windowsupdates-knownIssueHistories.md) collection|The history of the known Issue. |
+
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -60,7 +62,11 @@ The following is a JSON representation of the resource.
   "startDateTime": "DateTimeOffset",
   "title": "string",
   "resolvedDateTime": "DateTimeOffset",
-  "lastUpdatedDateTime": "DateTimeOffset",  
+  "lastUpdatedDateTime": "DateTimeOffset",
+  "originatingKnowledgeBaseArticle": "microsoft.graph.windowsUpdates.knowledgeBaseArticle", 
+  "resolvingKnowledgeBaseArticle": "microsoft.graph.windowsUpdates.knowledgeBaseArticle",
+  "safeguardHoldIds": "Collection(Edm.Int32)", 
+  "knownIssueHistories": "Collection(microsoft.graph.windowsUpdates.knownIssueHistoryItem)"
  
 }
 ```
