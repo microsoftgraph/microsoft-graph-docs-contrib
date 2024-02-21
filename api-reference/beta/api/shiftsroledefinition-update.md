@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Sets [shiftsRoleDefinition](../resources/shiftsroledefinition.md) object.
+Create or update a [shiftsRoleDefinition](../resources/shiftsroledefinition.md) object.
 
 ## Permissions
 

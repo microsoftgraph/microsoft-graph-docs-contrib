@@ -1,6 +1,6 @@
 ---
 title: schedule resource type
-description: A collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team.
+description: A collection of schedulingGroups, shifts, timeOffReasons, and timesOff within a team.
 author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
