@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ListItemCollectionResponse result = graphClient.sites().bySiteId("{site-id}").lists().byListId("{list-id}").items().get(requestConfiguration -> {
-	requestConfiguration.queryParameters.expand = new String []{"fields(select=Name,Color,Quantity)"};
+	requestConfiguration.queryParameters.expand = new String []{"fields($select=Name,Color,Quantity)"};
 });
 
 
