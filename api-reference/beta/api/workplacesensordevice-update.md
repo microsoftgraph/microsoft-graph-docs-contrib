@@ -50,7 +50,7 @@ The following table specifies the properties that can be updated.
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The description of the device. Optional.|
-|deviceId|String|The user-defined unique identifier of the device provided at the time of creation. Required. Read-Only.|
+|deviceId|String|The user-defined unique identifier of the device provided at the time of creation. Required. Read-only.|
 |displayName|String|The display name of the device. Optional.|
 |ipV4Address|String|The IPv4 address of the device. Optional.|
 |ipV6Address|String|The IPv6 address of the device. Optional.|
