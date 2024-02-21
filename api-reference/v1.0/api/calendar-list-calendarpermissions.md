@@ -141,8 +141,8 @@ Content-type: application/json
                 "read"
             ],
             "emailAddress": {
-                "name": "admin@M365B877719.onmicrosoft.com",
-                "address": "admin@M365B877719.onmicrosoft.com"
+                "name": "admin@contoso.com",
+                "address": "admin@contoso.com"
             }
         },
         {

@@ -273,7 +273,7 @@ A notification is removed from the user notification store only if it is expired
 await channel.DeleteUserNotificationAsync(notification.Id);
 ```
 
-## See also
+## Related content
 
 - [API reference](/windows/project-rome/notifications/api-reference-for-windows/) for the full set of APIs related to notification features in the SDK. 
 - [Client-side sample](https://github.com/Microsoft/project-rome/tree/master/Windows/samples/GraphNotificationsSample) for Windows UWP apps.
