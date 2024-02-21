@@ -252,6 +252,18 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Service health and communications",
+          "overview": "resources/service-communications-api-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.M365ServiceCommsPlatform",
+              "excludedResources": [
+                "serviceAnnouncementBase"
+              ]
+            }
+          ]
         }
       ]
     },
