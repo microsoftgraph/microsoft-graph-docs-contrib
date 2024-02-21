@@ -68,8 +68,8 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 |Status code|Status message|Description|
 |:---|:---|:---|
 |400|Bad Request|The request is malformed or incorrect, such as invalid page size or invalid `$skipToken` value.|
-|403|Forbidden|The caller doesn't have permission to perform the action. This usually indicates that the user has not consented to share [cloudClipboardItem](../resources/cloudclipboarditem.md).|
-|409|Conflict|The current state conflicts with what the request expects. This usually indicates that the user is not eligible for cloud clipboard feature because the user doesn't have at least two strongly authenticated devices.|
+|403|Forbidden|The caller cannot perform the action. This indicates that the user has not consented to share [cloudClipboardItem](../resources/cloudclipboarditem.md).|
+|409|Conflict|The current state conflicts with what the request expects. This usually indicates that the user is not eligible for the cloud clipboard feature because the user doesn't have at least two strongly authenticated devices.|
 |429|Too Many Requests|The request rate limit has been exceeded. Wait for the time specified in the `Retry-After` header and try again.| 
 
 ## Examples
