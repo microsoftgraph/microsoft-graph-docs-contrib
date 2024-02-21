@@ -27,14 +27,16 @@ Examples: To be added
 |isInService|Boolean| Represents an edition of a particular Windows product. [Add link] |
 |generalAvailabilityDateTime|DateTimeOffset|The date when the edition became available to the general customers for the first time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |endofServiceDateTime|DateTimeOffset|The date when the edition will reach or has already reached end of service. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
-|servicingPeriods|Navigation property| Collection of type microsoft.graph.windowsUpdates.servicingPeriod. Each object holds information of a servicing period related to the product edition.|
 
 Supported Methods: GET
 
 Supported query parameters: filter(eq) name, expand(editions,knownIssues, revisions)
 
 ## Relationships
-None.
+|Relationships|Type|Description|
+|:---|:---|:---|
+|servicingPeriods| [microsoft.graph.windowsUpdates.servicingPeriod](.../resources/windowsupdates.servicingPeriod.md)| Each object holds information of a servicing period related to the product edition.|
+
 
 ## JSON representation
 The following is a JSON representation of the resource.
