@@ -77,7 +77,7 @@ The following JSON representation shows the resource type.
   "enabled": true,
   "timeZone": "America/Chicago",
   "provisionStatus": "Completed",
-  "provisionStatusCode": null
+  "provisionStatusCode": null,
   "isCrossLocationShiftRequestApprovalRequired": "Boolean",
   "isCrossLocationShiftsEnabled": "Boolean"
 }
