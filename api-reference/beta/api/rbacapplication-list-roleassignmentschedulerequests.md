@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "rbacapplication_list_roleassignmentschedulerequests" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roleassignmentschedulerequests-permissions.md)]
 
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -44,7 +46,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

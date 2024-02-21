@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Group();
 $additionalData = [
-	'graphlearn_courses' => [
+	'bellowscollege_courses' => [
 		'courseId' => '123',
 		'courseName' => 'New Managers',
 		'courseType' => 'Online',

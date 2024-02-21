@@ -62,7 +62,7 @@ This method does not support the [OData query parameters](/graph/query-parameter
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -389,7 +389,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List messages in a channel](channel-list-messages.md)
 - [List messages in a chat](chat-list-messages.md)

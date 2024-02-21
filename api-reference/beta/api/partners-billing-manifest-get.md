@@ -17,6 +17,8 @@ Namespace: microsoft.graph.partners.billing
 
 Read the properties and relationships of a [manifest](../resources/partners-billing-manifest.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ This method doesn't support any OData query parameters to help customize the res
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -89,6 +91,10 @@ GET https://graph.microsoft.com/beta/reports/partners/billing/manifests/6fe687d7
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-manifest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-manifest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

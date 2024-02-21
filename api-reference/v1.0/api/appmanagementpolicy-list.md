@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "appmanagementpolicy_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/appmanagementpolicy-list-permissions.md)]
 
+[!INCLUDE [rbac-app-auth-method-policy-api-get](../includes/rbac-for-apis/rbac-app-auth-method-policy-api-get.md)]
+
 ## Optional query parameters
 
 This method supports the `$select`, `$filter`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -38,7 +40,7 @@ GET /policies/appManagementPolicies
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

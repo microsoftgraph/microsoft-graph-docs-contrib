@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. 
+Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -43,7 +43,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json |
 
 ## Request body
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/me/calendars
 ---
 
 ### Response
-Here's an example of the response. 
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -137,7 +137,7 @@ Content-type: application/json
             "isRemovable": false,
             "owner":{
                 "name":"Samantha Booth",
-                "address":"samanthab@adatum.onmicrosoft.com"
+                "address":"samanthab@contoso.com"
             }
         }
     ]

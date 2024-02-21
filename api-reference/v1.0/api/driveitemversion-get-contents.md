@@ -41,7 +41,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

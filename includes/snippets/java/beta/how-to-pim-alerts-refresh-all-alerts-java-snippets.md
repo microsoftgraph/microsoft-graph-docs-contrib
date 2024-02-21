@@ -4,19 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String scopeId = "/";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String scopeType = "DirectoryRole";
+com.microsoft.graph.beta.identitygovernance.rolemanagementalerts.alerts.refresh.RefreshPostRequestBody refreshPostRequestBody = new com.microsoft.graph.beta.identitygovernance.rolemanagementalerts.alerts.refresh.RefreshPostRequestBody();
+refreshPostRequestBody.setScopeId("/");
+refreshPostRequestBody.setScopeType("DirectoryRole");
+graphClient.identityGovernance().roleManagementAlerts().alerts().refresh().post(refreshPostRequestBody);
 
-graphClient.identityGovernance().roleManagementAlerts().alerts()
-	.refresh(UnifiedRoleManagementAlertRefreshParameterSet
-		.newBuilder()
-		.withScopeType(scopeType)
-		.withScopeId(scopeId)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

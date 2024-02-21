@@ -5,6 +5,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta applications app-management-policies ref delete --application-id {application-id} --app-management-policy-id {appManagementPolicy-id}
+mgc-beta applications app-management-policies ref-by-id delete --application-id {application-id} --app-management-policy-id {appManagementPolicy-id}
 
 ```

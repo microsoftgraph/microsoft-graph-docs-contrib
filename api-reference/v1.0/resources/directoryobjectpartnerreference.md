@@ -43,7 +43,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [Get directory objects from a list of ids](../api/directoryobject-getbyids.md)
 

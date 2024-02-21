@@ -412,6 +412,6 @@ Use the following definition to deserialize the **metadata** property and extrac
     }
 ```
 
-## See also
+## Related content
 
 - [Teams API overview](teams-concept-overview.md)
