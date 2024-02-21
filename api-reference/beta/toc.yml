@@ -1360,9 +1360,9 @@ items:
             items:
               - name: Workplace
                 href: resources/workplace.md
-              - name: Sensor device
+              - name: Workplace sensor device
                 items:
-                  - name: Sensor device
+                  - name: Workplace sensor device
                     href: resources/workplacesensordevice.md
                   - name: List
                     href: api/workplace-list-sensordevices.md
