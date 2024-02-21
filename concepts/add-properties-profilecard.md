@@ -199,24 +199,18 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 - **PowerShell module** - Install [module version 1.24.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
 - **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
 
-> [!NOTE]
-> The PowerShell commands for the profile card properties are only available in beta. Switch to the beta profile before you run the following commands.
-> ```powershell
->    Select-MgProfile beta
-> ```
-
 ### Confirm your current settings
 
 To get profile card properties configuration for an organization, use the following command.
 
 ```powershell
-   Get-MgBetaAdminPeopleProfileCardProperty
+   Get-MgAdminPeopleProfileCardProperty
 ```
 
 To get a specific profile card property configuration in an organization, use the following command.
 
 ```powershell
-   Get-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+   Get-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
 ```
 
 > [!NOTE]
