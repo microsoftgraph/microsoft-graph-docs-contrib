@@ -36,7 +36,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | openShiftsEnabled         | Boolean            | Indicates whether open shifts are enabled for the schedule.                                                      |
 | provisionStatus           | operationStatus    | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |
 | provisionStatusCode       | String             | Additional information about why schedule provisioning failed.                                                   |
-| startDayOfWeek            | String             | Indicates the start day of the week.                                                                             |
+| startDayOfWeek            | dayOfWeek          | Indicates the start day of the week. The possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. |
 | swapShiftsRequestsEnabled | Boolean            | Indicates whether swap shifts requests are enabled for the schedule.                                             |
 | timeClockEnabled          | Boolean            | Indicates whether time clock is enabled for the schedule.                                                        |
 | timeClockSettings         | [timeClockSettings](timeclocksettings.md)  | The time clock location settings for this schedule.                                      |
