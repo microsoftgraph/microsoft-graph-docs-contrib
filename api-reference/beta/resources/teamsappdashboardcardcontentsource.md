@@ -19,7 +19,7 @@ Represents a configuration for the source of the dashboard card content in a [te
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| botConfiguration | [teamsAppdashboardCardBotConfiguration](../resources/teamsappdashboardcardbotconfiguration.md) | The configuration for the bot source. Required if **sourceType** is set to `bot`. |
+| botConfiguration | [teamsAppDashboardCardBotConfiguration](../resources/teamsappdashboardcardbotconfiguration.md) | The configuration for the bot source. Required if **sourceType** is set to `bot`. |
 | sourceType | [teamsAppDashboardCardSourceType](../resources/teamsappdashboardcardcontentsource.md#teamsappdashboardcardsourcetype-values) | Represents the type of source that powers the content of the dashboard card. The possible values are: `bot`, `unknownFutureValue`. |
 
 ### teamsAppDashboardCardSourceType values
@@ -43,7 +43,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppDashboardCardContentSource",
-  "botConfiguration": {"@odata.type": "microsoft.graph.teamsAppdashboardCardBotConfiguration"},
+  "botConfiguration": {"@odata.type": "microsoft.graph.teamsAppDashboardCardBotConfiguration"},
   "sourceType": "String"
 }
 ```
