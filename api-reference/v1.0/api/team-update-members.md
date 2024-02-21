@@ -135,7 +135,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Update member in channel](channel-update-members.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

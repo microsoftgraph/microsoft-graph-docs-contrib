@@ -205,7 +205,7 @@ The following table indicates the areas that are supported for the corresponding
 | Supported data sinks  | ADLS gen2, Azure Blob  | ADLS gen2, Azure Blob, Azure SQL DB  |
 | Azure VNET IR   | Not supported | Supported |
 
-## See also
+## Related content
 
 - [Azure Synapse and Azure Data Factory connector for Microsoft 365 data](/azure/data-factory/connector-office-365)
 <!--- [Policies and billing](data-connect-policies.md)-->

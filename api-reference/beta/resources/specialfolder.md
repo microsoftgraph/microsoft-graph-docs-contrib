@@ -49,7 +49,7 @@ If a user deletes one, it is recreated when written to again.
 }
 ```
 
-## See also
+## Related content
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 

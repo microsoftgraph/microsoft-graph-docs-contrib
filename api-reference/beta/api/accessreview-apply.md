@@ -120,6 +120,6 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## See also
+## Related content
 
 - [How to complete an access review](/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)

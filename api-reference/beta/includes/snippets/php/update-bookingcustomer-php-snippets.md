@@ -13,6 +13,6 @@ $requestBody = new BookingCustomer();
 $requestBody->setDisplayName('Adele');
 $requestBody->setEmailAddress('adele@relecloud.com');
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->customers()->byBookingCustomerId('bookingCustomer-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->customers()->byBookingCustomerId('bookingCustomer-id')->patch($requestBody)->wait();
 
 ```

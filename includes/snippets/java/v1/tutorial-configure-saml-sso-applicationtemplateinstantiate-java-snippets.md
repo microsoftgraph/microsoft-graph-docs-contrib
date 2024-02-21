@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String displayName = "AWS Contoso";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.applicationTemplates("21ed01d2-ec13-4e9e-86c1-cd546719ebc4")
-	.instantiate(ApplicationTemplateInstantiateParameterSet
-		.newBuilder()
-		.withDisplayName(displayName)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.applicationtemplates.item.instantiate.InstantiatePostRequestBody instantiatePostRequestBody = new com.microsoft.graph.applicationtemplates.item.instantiate.InstantiatePostRequestBody();
+instantiatePostRequestBody.setDisplayName("AWS Contoso");
+var result = graphClient.applicationTemplates().byApplicationTemplateId("{applicationTemplate-id}").instantiate().post(instantiatePostRequestBody);
+
 
 ```

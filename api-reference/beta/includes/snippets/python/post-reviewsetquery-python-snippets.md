@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.review_set_query import ReviewSetQuery
 
 graph_client = GraphServiceClient(credentials, scopes)
 

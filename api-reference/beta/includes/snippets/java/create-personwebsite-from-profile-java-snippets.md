@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PersonWebsite personWebsite = new PersonWebsite();
-LinkedList<String> categoriesList = new LinkedList<String>();
-categoriesList.add("football");
-personWebsite.categories = categoriesList;
-personWebsite.displayName = "Lyn Damer";
-personWebsite.webUrl = "www.lyndamer.no";
+LinkedList<String> categories = new LinkedList<String>();
+categories.add("football");
+personWebsite.setCategories(categories);
+personWebsite.setDisplayName("Lyn Damer");
+personWebsite.setWebUrl("www.lyndamer.no");
+PersonWebsite result = graphClient.me().profile().websites().post(personWebsite);
 
-graphClient.me().profile().websites()
-	.buildRequest()
-	.post(personWebsite);
 
 ```

@@ -11,7 +11,7 @@ mgc-beta users messages create --user-id {user-id} --body '{\
       {\
           "emailAddress":{\
               "name":"Samantha Booth",\
-              "address":"samanthab@contoso.onmicrosoft.com"\
+              "address":"samanthab@contoso.com"\
           }\
       }\
     ],\
@@ -19,7 +19,7 @@ mgc-beta users messages create --user-id {user-id} --body '{\
       {\
         "mentioned":{\
           "name":"Dana Swope",\
-          "address":"danas@contoso.onmicrosoft.com"\
+          "address":"danas@contoso.com"\
          }\
       }\
     ]\

@@ -158,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Get log of PSTN calls in Microsoft Graph](callrecords-callrecord-getpstncalls.md)
 * [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
