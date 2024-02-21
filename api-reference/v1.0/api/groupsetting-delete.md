@@ -1,7 +1,8 @@
 ---
 title: "Delete a group setting"
 description: "Delete a group setting."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

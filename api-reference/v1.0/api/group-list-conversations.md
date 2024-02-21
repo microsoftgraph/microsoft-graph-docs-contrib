@@ -1,7 +1,7 @@
 ---
 title: "List conversations"
 description: "Retrieve the list of conversations in this group."
-author: "Jordanndahl"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

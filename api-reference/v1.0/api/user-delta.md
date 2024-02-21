@@ -3,6 +3,7 @@ title: "user: delta"
 description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection."
 ms.localizationpriority: high
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: apiPageType
 ---
