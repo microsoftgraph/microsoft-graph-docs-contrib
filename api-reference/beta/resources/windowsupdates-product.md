@@ -24,9 +24,6 @@ Examples:
 |name|String|The name of the product. Read-only.|
 |groupName|String|The name of the product group. Read-only.|
 |friendlyName|String|The name of the product. Read-only.|
-|editions|Navigation property| Represents an edition of a particular Windows product. [Add link] |
-|knownIssues|Navigation property| Represents a knonw issue related to a Windows product. [Add link] |
-|revisions|Navigation property|Represents product revision.|
 |releaseDateTime|DateTimeOffset|The release date for the content. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 
 Supported Methods: GET
@@ -34,7 +31,11 @@ Supported Methods: GET
 Supported query parameters: filter(eq) name, expand(editions,knownIssues, revisions)
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|editions|[microsoft.graph.windowsUpdates.edition](.../resources/windowsupdates-edition.md) collection| Represents an edition of a particular Windows product. |
+|knownIssues|[microsoft.graph.windowsUpdates.knownIssues](.../resources/windowsupdates-knownIssues.md) collection| Represents a knonw issue related to a Windows product. |
+|revisions|[microsoft.graph.windowsUpdates.productRevision](.../resources/windowsupdates-productRevision.md)|Represents a product revision.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
