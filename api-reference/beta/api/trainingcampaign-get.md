@@ -66,7 +66,8 @@ The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name" : "get_trainingcampaign"
 }-->
 
 ``` http
@@ -81,7 +82,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.trainingCampaign"
+  "@odata.type": "microsoft.graph.trainingCampaign",
+  "name" : get_trainingcampaign
 }
 -->
 ``` http
@@ -127,7 +129,8 @@ The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name" : "get_trainingcampaign_includedtargets"
 }
 -->
 ``` http
@@ -142,7 +145,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accountTargetContent"
+  "@odata.type": "microsoft.graph.accountTargetContent",
+  "name" : "get_trainingcampaign_includedtargets"
 }
 -->
 ``` http
@@ -168,7 +172,8 @@ The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name" : "get_trainingcampaign_excludedtargets"
 }
 -->
 ``` http
@@ -183,7 +188,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accountTargetContent"
+  "@odata.type": "microsoft.graph.accountTargetContent",
+  "name" : "get_trainingcampaign_excludedtargets"
 }
 -->
 ``` http
@@ -209,7 +215,8 @@ The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name" : "get_trainingcampaign_training"
 }
 -->
 
@@ -225,7 +232,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.trainingSetting"
+  "@odata.type": "microsoft.graph.trainingSetting",
+  "name" : "get_trainingcampaign_training"
 }
 -->
 ``` http
@@ -249,7 +257,8 @@ The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name" : "get_trainingcampaign_eun"
 }
 -->
 ``` http
@@ -264,7 +273,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.endUserNotificationSetting"
+  "@odata.type": "microsoft.graph.endUserNotificationSetting",
+  "name" : "get_trainingcampaign_eun"
 }
 -->
 ``` http
