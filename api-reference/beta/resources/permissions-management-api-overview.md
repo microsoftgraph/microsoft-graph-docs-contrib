@@ -120,9 +120,6 @@ For more information, see [Permissions Management roles and permissions levels](
   "suppressions": [
     "Error: /resources/permissions-management-api-overview.md:
       Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')",
-    "Error: /resources/permissions-management-api-overview.md:
-      Exception processing links.
       Value cannot be null. (Parameter 'linkUrl')"
   ]
 } -->

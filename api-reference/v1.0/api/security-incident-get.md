@@ -140,6 +140,7 @@ Content-type: application/json
     "systemTags" : [
         "Defender Experts"
     ],
-    "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ..."
+    "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
+    "lastModifiedBy": "DavidS@contoso.onmicrosoft.com"
 }
 ```
