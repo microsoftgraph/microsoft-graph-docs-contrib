@@ -24,16 +24,15 @@ Represents a configuration for the icon of a dashboard card in a [teamsApp](team
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
 The following JSON representation shows the resource type.
-<-- {
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppDashboardCardIcon"
-}
--->
+} -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppDashboardCardIcon",
