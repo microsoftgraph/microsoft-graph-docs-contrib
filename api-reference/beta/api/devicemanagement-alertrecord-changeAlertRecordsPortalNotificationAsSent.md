@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-Post https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/changeAlertRecordsPortalNotificationAsSent
+POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/changeAlertRecordsPortalNotificationAsSent
 
 {
   "alertRecordIds": [
@@ -76,7 +76,7 @@ Post https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/c
 
 }
 ```
-
+---
 ### Response
 
 The following example shows the response.
