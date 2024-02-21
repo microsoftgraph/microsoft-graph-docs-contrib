@@ -25,24 +25,6 @@
       "CreatedDateTime": "2024-01-31T21:05:42.4895813Z",
       "WorkloadArea": "Cross-device experiences",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "a371387b-f709-45bb-ae8c-e9e87d6f6641",
-          "ApiChange": "Resource",
-          "ChangedApiName": "user",
-          "ChangeType": "Addition",
-          "Description": "Added the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
-          "Target": "user"
-        }
-      ],
-      "Id": "a371387b-f709-45bb-ae8c-e9e87d6f6641",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-01-31T21:05:42.4902382Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
     }
   ]
 }
