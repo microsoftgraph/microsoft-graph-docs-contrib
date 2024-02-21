@@ -148,6 +148,7 @@ Content-type: application/json
         {
              "kqlText" : "AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == 'Potential Raspberry Robin worm command'  | join AlertEvidence on AlertId   | distinct DeviceId"
         }
-    ]
+    ],
+    "lastModifiedBy": "DavidS@contoso.onmicrosoft.com"
 }
 ```
