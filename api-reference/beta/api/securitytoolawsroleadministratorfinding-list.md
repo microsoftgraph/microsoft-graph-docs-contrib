@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.securityToolAwsRoleAdministratorFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.securityToolAwsRoleAdministratorFinding
 ```
 
 ## Optional query parameters
