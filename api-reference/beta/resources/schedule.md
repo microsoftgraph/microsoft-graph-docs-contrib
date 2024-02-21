@@ -85,7 +85,7 @@ The following JSON representation shows the resource type.
   "startDayOfWeek": "String",
   "swapShiftsRequestsEnabled": "Boolean",
   "timeClockEnabled": "Boolean",
-  "timeClockSettings": {"@odata.type": "microsoft.graph.timeClockSettings"}
+  "timeClockSettings": {"@odata.type": "microsoft.graph.timeClockSettings"},
   "timeOffRequestsEnabled": "Boolean",
   "timeZone": "String",
   "workforceIntegrationIds": ["String"]
