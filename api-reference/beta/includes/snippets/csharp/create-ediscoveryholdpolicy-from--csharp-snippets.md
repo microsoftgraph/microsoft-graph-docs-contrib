@@ -18,7 +18,7 @@ var requestBody = new EdiscoveryHoldPolicy
 		{
 			"userSources@odata.bind" , new List<object>
 			{
-				new
+				new 
 				{
 					OdataType = "microsoft.graph.security.userSource",
 					Email = "SalesTeam@contoso.com",
@@ -28,10 +28,10 @@ var requestBody = new EdiscoveryHoldPolicy
 		{
 			"siteSources@odata.bind" , new List<object>
 			{
-				new
+				new 
 				{
 					OdataType = "microsoft.graph.security.siteSource",
-					Site = new
+					Site = new 
 					{
 						WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret",
 					},
