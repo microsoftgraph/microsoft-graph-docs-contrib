@@ -74,6 +74,8 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')
 ```
 
+---
+
 #### Response
 
 The following example shows the response.
@@ -83,7 +85,7 @@ The following example shows the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.trainingCampaign",
-  "name" : get_trainingcampaign
+  "name" : "get_trainingcampaign"
 }
 -->
 ``` http
@@ -137,6 +139,8 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/includedAccountTarget
 ```
 
+---
+
 #### Response
 
 The following example shows the response.
@@ -179,6 +183,8 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/excludedAccountTarget
 ```
+
+---
 
 #### Response
 
@@ -224,6 +230,9 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/trainingSetting
 ```
 
+---
+
+
 #### Response
 
 The following example shows the response.
@@ -264,6 +273,8 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns('f1b13829-3829-f1b1-2938-b1f12938b1a')/endUserNotificationSetting
 ```
+
+---
 
 #### Response
 
