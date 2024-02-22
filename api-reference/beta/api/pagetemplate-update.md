@@ -77,22 +77,6 @@ The following is an example of a request.
 }
 -->
 
-```http
-PATCH https://graph.microsoft.com/beta/sites/{sitesId}/pagetemplates/{page-template-Id}
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.pageTemplate",
-  "title": "sample"
-}
-```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-pagetemplate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 The following is an example of the response
@@ -105,50 +89,3 @@ The following is an example of the response
   "truncated": true
 }
 -->
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.pageTemplate",
-  "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
-  "name": "sample.aspx",
-  "webUrl": "SitePages/Templates/sample.aspx",
-  "title": "sample",
-  "createdBy": {
-    "user": {
-      "displayName": "Rahul Mittal",
-      "email": "rahmit@contoso.com"
-    }
-  },
-  "lastModifiedBy": {
-    "user": {
-      "displayName": "Rahul Mittal",
-      "email": "rahmit@contoso.com"
-    }
-  },
-  "publishingState": {
-    "level": "checkout",
-    "versionId": "0.1",
-    "checkedOutBy": {
-      "user": {
-        "displayName": "Rahul Mittal",
-        "email": "rahmit@contoso.com"
-      }
-    }
-  },
-  "titleArea": {
-    "enableGradientEffect": true,
-    "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
-    "layout": "colorBlock",
-    "showAuthor": true,
-    "showPublishedDate": false,
-    "showTextBlockAboveTitle": false,
-    "textAboveTitle": "TEXT ABOVE TITLE",
-    "textAlignment": "left",
-    "title": "sample",
-    "imageSourceType": 2
-  }
-}
-```

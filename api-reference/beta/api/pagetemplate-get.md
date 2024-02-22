@@ -68,54 +68,10 @@ If successful, this method returns a `200` and a [pageTemplate](../resources/pag
 
 <!-- { "blockType": "request", "name": "get-page-template", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```msgraph-interactive
-GET /sites/{site-id}/pagetemplates/{page-template-id}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-pagetemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-pagetemplate-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.pageTemplate", "truncated": true } -->
 
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.type": "microsoft.graph.pageTemplate",
-  "description": "Here's the page description",
-  "id": "65e59907-59d5-44ff-a038-7c0bf3098c01",
-  "name": "Home.aspx",
-  "webUrl": "SitePages/Templates/Home.aspx",
-  "title": "Organization Home",
-  "thumbnailWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/00210d24-bba0-42e6-9a31-1d452a95dd75/thumbnails/large.jpg?file=163352059.jpg",
-  "createdBy": {
-    "user": {
-        "displayName": "Rahul Mittal",
-        "email": "rahmit@contoso.com"
-    }
-  },
-  "lastModifiedBy": {
-    "user": {
-        "displayName": "Rahul Mittal",
-        "email": "rahmit@contoso.com"
-    }
-  },
-  "publishingState": {
-    "level": "published",
-    "versionId": "1.0"
-  }
-}
-```
 
 <!--
 {
