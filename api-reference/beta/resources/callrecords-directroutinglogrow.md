@@ -44,7 +44,7 @@ Represents a row of data in the direct routing call log. Each row maps to one ca
 |signalingLocation|String|The data center used for signaling for both bypass and non-bypass calls.|
 |startDateTime|DateTimeOffset|Call start time.<br/>For failed and unanswered calls, this can be equal to invite or failure time.|
 |successfulCall|Boolean|Success or attempt.|
-|transferorCorrelationId|String|Correlation Id of the call to the transferor.|
+|transferorCorrelationId|String|Correlation ID of the call to the transferor.|
 |trunkFullyQualifiedDomainName|String|Fully qualified domain name of the session border controller.|
 |userCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
