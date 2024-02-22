@@ -23,6 +23,13 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |id|String|The unique identifier (ID) for the virtual endpoint. Read-only. Inherited from [entity](../resources/entity.md).|
 
+## Relationships
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+|provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|Cloud PC provisioning policy.|
+|userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) collection|Cloud PC user settings. |
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
