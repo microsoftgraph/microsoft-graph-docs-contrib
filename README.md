@@ -4,7 +4,7 @@ Thank you for your interest in Microsoft Graph documentation! For the best exper
 
 ## Give us your feedback
 
-**Coming soon:** In March 2024, we will be phasing out GitHub Issues as the feedback mechanism for content and replacing it with a new feedback system. For more information see: https://aka.ms/ContentUserFeedback.
+**Coming soon:** In March 2024, we will be phasing out the current feedback mechanism for content (GitHub Issues) described below and replacing it with a new feedback system. For more information see: https://aka.ms/ContentUserFeedback.
 
 Your feedback is important to us.
 
