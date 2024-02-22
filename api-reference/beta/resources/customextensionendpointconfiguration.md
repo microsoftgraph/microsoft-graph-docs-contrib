@@ -1,7 +1,7 @@
 ---
 title: "customExtensionEndpointConfiguration resource type"
 description: "Abstract base type that exposes the derived types used to configure the endpointConfiguration property of a custom extension."
-author: "currenmehta"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

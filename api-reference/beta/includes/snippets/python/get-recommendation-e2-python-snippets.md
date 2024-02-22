@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.directory.recommendations.recommendations_request_builder import RecommendationsRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = RecommendationsRequestBuilder.RecommendationsRequestBuilderGetQueryParameters(
 		filter = "recommendationType eq 'turnOffPerUserMFA'",
@@ -15,8 +17,7 @@ request_configuration = RecommendationsRequestBuilder.RecommendationsRequestBuil
 query_parameters = query_params,
 )
 
-
-result = await client.directory.recommendations.get(request_configuration = request_configuration)
+result = await graph_client.directory.recommendations.get(request_configuration = request_configuration)
 
 
 ```

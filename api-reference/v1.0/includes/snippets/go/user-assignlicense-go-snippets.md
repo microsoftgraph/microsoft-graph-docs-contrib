@@ -36,7 +36,7 @@ removeLicenses := []uuid.UUID {
 }
 requestBody.SetRemoveLicenses(removeLicenses)
 
-result, err := graphClient.Me().AssignLicense().Post(context.Background(), requestBody, nil)
+assignLicense, err := graphClient.Me().AssignLicense().Post(context.Background(), requestBody, nil)
 
 
 ```

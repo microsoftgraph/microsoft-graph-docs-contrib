@@ -4,45 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.send_activity_notification_post_request_body import SendActivityNotificationPostRequestBody
+from msgraph.generated.models.teamwork_activity_topic import TeamworkActivityTopic
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.aad_user_notification_recipient import AadUserNotificationRecipient
+from msgraph.generated.models.key_value_pair import KeyValuePair
 
-request_body = SendActivityNotificationPostRequestBody()
-topic = TeamworkActivityTopic()
-topic.source(TeamworkActivityTopicSource.EntityUrl('teamworkactivitytopicsource.entityurl'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-topic.value = 'https://graph.microsoft.com/beta/chats/{chatId}/messages/{messageId}'
+request_body = SendActivityNotificationPostRequestBody(
+	topic = TeamworkActivityTopic(
+		source = TeamworkActivityTopicSource.EntityUrl,
+		value = "https://graph.microsoft.com/beta/chats/{chatId}/messages/{messageId}",
+	),
+	activity_type = "approvalRequired",
+	preview_text = ItemBody(
+		content = "Deployment requires your approval",
+	),
+	recipient = AadUserNotificationRecipient(
+		odata_type = "microsoft.graph.aadUserNotificationRecipient",
+		user_id = "569363e2-4e49-4661-87f2-16f245c5d66a",
+	),
+	template_parameters = [
+		KeyValuePair(
+			name = "approvalTaskId",
+			value = "2020AAGGTAPP",
+		),
+	],
+)
 
-
-request_body.topic = topic
-request_body.activity_type = 'approvalRequired'
-
-preview_text = ItemBody()
-preview_text.content = 'Deployment requires your approval'
-
-
-request_body.preview_text = preview_text
-recipient = AadUserNotificationRecipient()
-recipient.@odata_type = 'microsoft.graph.aadUserNotificationRecipient'
-
-recipient.user_id = '569363e2-4e49-4661-87f2-16f245c5d66a'
-
-
-request_body.recipient = recipient
-template_parameters_key_value_pair1 = KeyValuePair()
-template_parameters_key_value_pair1.name = 'approvalTaskId'
-
-template_parameters_key_value_pair1.value = '2020AAGGTAPP'
-
-
-templateParametersArray []= templateParametersKeyValuePair1;
-request_body.templateparameters(templateParametersArray)
-
-
-
-
-
-await client.chats.by_chat_id('chat-id').send_activity_notification.post(request_body = request_body)
+await graph_client.chats.by_chat_id('chat-id').send_activity_notification.post(request_body)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().Labels().FilePlanReferences().Get(context.Background(), nil)
+filePlanReferences, err := graphClient.Security().Labels().FilePlanReferences().Get(context.Background(), nil)
 
 
 ```

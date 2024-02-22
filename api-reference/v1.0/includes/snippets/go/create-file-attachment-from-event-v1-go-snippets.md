@@ -21,7 +21,7 @@ requestBody.SetName(&name)
 contentBytes := []byte("base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
 requestBody.SetContentBytes(&contentBytes) 
 
-result, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
+attachments, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

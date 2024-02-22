@@ -53,7 +53,7 @@ extensions := []graphmodels.Extensionable {
 }
 requestBody.SetExtensions(extensions)
 
-result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Identity().CustomAuthenticationExtensions().ByCustomAuthenticationExtensionId("customAuthenticationExtension-id").ValidateAuthenticationConfiguration().Post(context.Background(), nil)
+validateAuthenticationConfiguration, err := graphClient.Identity().CustomAuthenticationExtensions().ByCustomAuthenticationExtensionId("customAuthenticationExtension-id").ValidateAuthenticationConfiguration().Post(context.Background(), nil)
 
 
 ```

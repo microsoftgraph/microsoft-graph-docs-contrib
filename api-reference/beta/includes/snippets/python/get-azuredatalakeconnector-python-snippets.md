@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-result = await client.external.industry_data.data_connectors.by_data_connector_id('industryDataConnector-id').get()
+result = await graph_client.external.industry_data.data_connectors.by_industry_data_connector_id('industryDataConnector-id').get()
 
 
 ```

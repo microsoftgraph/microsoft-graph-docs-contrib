@@ -19,7 +19,7 @@ requestBody := graphmodelsediscovery.NewLegalHold()
 description := "This is a description for a legalHold"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").LegalHolds().ByLegalHoldId("legalHold-id").Patch(context.Background(), requestBody, nil)
+legalHolds, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").LegalHolds().ByLegalHoldId("legalHold-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

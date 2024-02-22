@@ -50,7 +50,7 @@ additionalData := map[string]interface{}{
 descriptors.SetAdditionalData(additionalData)
 requestBody.SetDescriptors(descriptors)
 
-result, err := graphClient.Security().Labels().RetentionLabels().Post(context.Background(), requestBody, nil)
+retentionLabels, err := graphClient.Security().Labels().RetentionLabels().Post(context.Background(), requestBody, nil)
 
 
 ```

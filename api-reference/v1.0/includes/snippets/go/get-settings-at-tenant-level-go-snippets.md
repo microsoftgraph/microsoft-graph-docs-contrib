@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Admin().Sharepoint().Settings().Get(context.Background(), nil)
+settings, err := graphClient.Admin().Sharepoint().Settings().Get(context.Background(), nil)
 
 
 ```

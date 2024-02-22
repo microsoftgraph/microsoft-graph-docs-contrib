@@ -23,7 +23,7 @@ requestBody.SetHeight(&height)
 left := float64(99)
 requestBody.SetLeft(&left) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Charts().Post(context.Background(), requestBody, nil)
+charts, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").Charts().Post(context.Background(), requestBody, nil)
 
 
 ```

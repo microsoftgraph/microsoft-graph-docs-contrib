@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new ProfileCardProperty
 {
@@ -14,18 +15,21 @@ var requestBody = new ProfileCardProperty
 	{
 		new ProfileCardAnnotation
 		{
+			DisplayName = "Cost Center",
 			Localizations = new List<DisplayNameLocalization>
 			{
 				new DisplayNameLocalization
 				{
-					LanguageTag = "no-NB",
-					DisplayName = "Kostnads Senter",
+					LanguageTag = "nb-NO",
+					DisplayName = "Kostnadssenter",
 				},
 			},
 		},
 	},
 };
-var result = await graphClient.Organization["{organization-id}"].Settings.ProfileCardProperties["{profileCardProperty-id}"].PatchAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Admin.People.ProfileCardProperties["{profileCardProperty-id}"].PatchAsync(requestBody);
 
 
 ```

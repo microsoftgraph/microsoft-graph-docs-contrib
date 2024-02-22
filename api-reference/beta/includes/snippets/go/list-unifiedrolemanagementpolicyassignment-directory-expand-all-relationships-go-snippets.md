@@ -26,7 +26,7 @@ configuration := &graphpolicies.PoliciesRoleManagementPolicyAssignmentsRequestBu
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().RoleManagementPolicyAssignments().Get(context.Background(), configuration)
+roleManagementPolicyAssignments, err := graphClient.Policies().RoleManagementPolicyAssignments().Get(context.Background(), configuration)
 
 
 ```

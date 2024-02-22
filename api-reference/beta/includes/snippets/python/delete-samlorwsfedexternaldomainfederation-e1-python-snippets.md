@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-await client.directory.federation_configurations.by_federation_configuration_id('identityProviderBase-id').delete()
+await graph_client.directory.federation_configurations.by_identity_provider_base_id('identityProviderBase-id').delete()
 
 
 ```

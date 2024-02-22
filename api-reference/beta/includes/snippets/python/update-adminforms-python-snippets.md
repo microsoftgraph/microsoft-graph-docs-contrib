@@ -4,35 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.admin_forms import AdminForms
+from msgraph.generated.models.forms_settings import FormsSettings
 
-request_body = AdminForms()
-request_body.@odata_type = '#microsoft.graph.adminForms'
+graph_client = GraphServiceClient(credentials, scopes)
 
-settings = FormsSettings()
-settings.@odata_type = 'microsoft.graph.formsSettings'
+request_body = AdminForms(
+	odata_type = "#microsoft.graph.adminForms",
+	settings = FormsSettings(
+		odata_type = "microsoft.graph.formsSettings",
+		is_external_send_form_enabled = True,
+		is_external_share_collaboration_enabled = False,
+		is_external_share_result_enabled = False,
+		is_external_share_template_enabled = False,
+		is_record_identity_by_default_enabled = True,
+		is_bing_image_search_enabled = True,
+		is_in_org_forms_phishing_scan_enabled = False,
+	),
+)
 
-settings.is_external_send_form_enabled = True
-
-settings.is_external_share_collaboration_enabled = False
-
-settings.is_external_share_result_enabled = False
-
-settings.is_external_share_template_enabled = False
-
-settings.is_record_identity_by_default_enabled = True
-
-settings.is_bing_image_search_enabled = True
-
-settings.is_in_org_forms_phishing_scan_enabled = False
-
-
-request_body.settings = settings
-
-
-
-result = await client.admin.forms.patch(request_body = request_body)
+result = await graph_client.admin.forms.patch(request_body)
 
 
 ```

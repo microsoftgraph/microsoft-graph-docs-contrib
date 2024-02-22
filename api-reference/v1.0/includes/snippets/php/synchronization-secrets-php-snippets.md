@@ -6,49 +6,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new SynchronizationSecretKeyStringValuePair();
-$additionalData = [
-		'value' => $value1 = new ();
-$		value1->setKey('BaseAddress');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$		value1->setValue('user@domain.com');
-
-
-$valueArray []= $value1;
-$value2 = new ();
-$		value2->setKey('SecretToken');
-
-$		value2->setValue('password-value');
-
-
-$valueArray []= $value2;
-$value3 = new ();
-$		value3->setKey('SyncNotificationSettings');
-
-$		value3->setValue('{\"Enabled\":false,\"DeleteThresholdEnabled\":false}');
-
-
-$valueArray []= $value3;
-$value4 = new ();
-$		value4->setKey('SyncAll');
-
-$		value4->setValue('false');
-
-
-$valueArray []= $value4;
+$requestBody = new SecretsPutRequestBody();
+$valueSynchronizationSecretKeyStringValuePair1 = new SynchronizationSecretKeyStringValuePair();
+$valueSynchronizationSecretKeyStringValuePair1->setKey(new SynchronizationSecret('baseAddress'));
+$valueSynchronizationSecretKeyStringValuePair1->setValue('user@domain.com');
+$valueArray []= $valueSynchronizationSecretKeyStringValuePair1;
+$valueSynchronizationSecretKeyStringValuePair2 = new SynchronizationSecretKeyStringValuePair();
+$valueSynchronizationSecretKeyStringValuePair2->setKey(new SynchronizationSecret('secretToken'));
+$valueSynchronizationSecretKeyStringValuePair2->setValue('password-value');
+$valueArray []= $valueSynchronizationSecretKeyStringValuePair2;
+$valueSynchronizationSecretKeyStringValuePair3 = new SynchronizationSecretKeyStringValuePair();
+$valueSynchronizationSecretKeyStringValuePair3->setKey(new SynchronizationSecret('syncNotificationSettings'));
+$valueSynchronizationSecretKeyStringValuePair3->setValue('{\"Enabled\":false,\"DeleteThresholdEnabled\":false}');
+$valueArray []= $valueSynchronizationSecretKeyStringValuePair3;
+$valueSynchronizationSecretKeyStringValuePair4 = new SynchronizationSecretKeyStringValuePair();
+$valueSynchronizationSecretKeyStringValuePair4->setKey(new SynchronizationSecret('syncAll'));
+$valueSynchronizationSecretKeyStringValuePair4->setValue('false');
+$valueArray []= $valueSynchronizationSecretKeyStringValuePair4;
 $requestBody->setValue($valueArray);
 
 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->synchronization()->secrets()->put($requestBody);
-
+$result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->synchronization()->secrets()->put($requestBody)->wait();
 
 ```

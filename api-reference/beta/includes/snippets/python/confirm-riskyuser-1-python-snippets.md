@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.confirm_compromised_post_request_body import ConfirmCompromisedPostRequestBody
 
-request_body = ConfirmCompromisedPostRequestBody()
-request_body.UserIds(['29f270bb-4d23-4f68-8a57-dc73dc0d4caf', '20f91ec9-d140-4d90-9cd9-f618587a1471', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = ConfirmCompromisedPostRequestBody(
+	user_ids = [
+		"29f270bb-4d23-4f68-8a57-dc73dc0d4caf",
+		"20f91ec9-d140-4d90-9cd9-f618587a1471",
+	],
+)
 
-
-
-await client.risky_users.confirm_compromised.post(request_body = request_body)
+await graph_client.risky_users.confirm_compromised.post(request_body)
 
 
 ```

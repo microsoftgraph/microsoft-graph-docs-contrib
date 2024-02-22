@@ -1,7 +1,7 @@
 ---
 title: "message: createReply"
 description: "Create a draft to reply to the sender of a message in either JSON or MIME format."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -28,14 +28,13 @@ When using MIME format:
 
 Alternatively, [reply to a message](../api/message-reply.md) in a single operation.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "message_createreply" } -->
+[!INCLUDE [permissions-table](../includes/permissions/message-createreply-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +45,7 @@ POST /me/mailFolders/{id}/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
 ## Request headers
-| Name       | Type | Description| 
+| Name       | Type | Description|
 |:---------------|:--------|:----------
 | Authorization  | string  | Bearer {token}. Required.|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content.|
@@ -84,28 +83,32 @@ POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAAqldOAAA=/createR
 Content-Type: application/json
 
 {
-  "message":{  
+  "message":{
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"samanthab@contoso.onmicrosoft.com",
+          "address":"samanthab@contoso.com",
           "name":"Samantha Booth"
         }
       },
       {
         "emailAddress":{
-          "address":"randiw@contoso.onmicrosoft.com",
+          "address":"randiw@contoso.com",
           "name":"Randi Welch"
         }
       }
      ]
   },
-  "comment": "Samantha, Randi, would you name the group if the project is approved, please?" 
+  "comment": "Samantha, Randi, would you name the group if the project is approved, please?"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createreply-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-createreply-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -158,7 +161,7 @@ Content-type: application/json
   "sender": {
     "emailAddress": {
       "name": "Admin",
-      "address": "admin@contoso.onmicrosoft.com"
+      "address": "admin@contoso.com"
     }
   },
   "from": null,
@@ -166,13 +169,13 @@ Content-type: application/json
     {
       "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@contoso.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
       }
     },
     {
       "emailAddress": {
         "name": "Randi Welch",
-        "address": "randiw@contoso.onmicrosoft.com"
+        "address": "randiw@contoso.com"
       }
     }
   ]

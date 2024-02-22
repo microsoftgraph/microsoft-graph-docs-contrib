@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc communications calls play-prompt post --call-id {call-id} --body '{\
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",\
   "prompts": [\

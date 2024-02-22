@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Policies().ExternalIdentitiesPolicy().Get(context.Background(), nil)
+externalIdentitiesPolicy, err := graphClient.Policies().ExternalIdentitiesPolicy().Get(context.Background(), nil)
 
 
 ```

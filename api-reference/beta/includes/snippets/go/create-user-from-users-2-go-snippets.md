@@ -22,7 +22,7 @@ displayName := "Adele Vance"
 requestBody.SetDisplayName(&displayName) 
 mailNickname := "AdeleV"
 requestBody.SetMailNickname(&mailNickname) 
-userPrincipalName := "AdeleV@contoso.onmicrosoft.com"
+userPrincipalName := "AdeleV@contoso.com"
 requestBody.SetUserPrincipalName(&userPrincipalName) 
 passwordProfile := graphmodels.NewPasswordProfile()
 forceChangePasswordNextSignIn := true
@@ -31,7 +31,7 @@ password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password) 
 requestBody.SetPasswordProfile(passwordProfile)
 
-result, err := graphClient.Users().Post(context.Background(), requestBody, nil)
+users, err := graphClient.Users().Post(context.Background(), requestBody, nil)
 
 
 ```

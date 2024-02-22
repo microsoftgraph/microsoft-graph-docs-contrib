@@ -11,7 +11,7 @@ Microsoft Graph Toolkit components work great with web frameworks like Angular i
 
 ## Add the Microsoft Graph Toolkit
 
-First, you need to enable custom elements in your Angular application by adding the `CUSTOM_ELEMENT_SCHEMA` to the `@NgModule() decorator` in `app.module.ts`. The following example shows how to do this:
+First, you need to enable custom elements in your Angular application by adding the `CUSTOM_ELEMENTS_SCHEMA` to the `@NgModule() decorator` in `app.module.ts`. The following example shows how to do this:
 
 ```TypeScript
 import { BrowserModule } from '@angular/platform-browser';
@@ -68,15 +68,43 @@ export class AppComponent implements OnInit {
 
 ### Create an app/client ID
 
-In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD.
+In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Microsoft Entra ID.
 
 ## Add components
 
-Now, you can use any of the Microsoft Graph Toolkit components as you normally would in your HTML templates. For example, to add the [Person component](../components/person.md), add the following to your template:
+Now, you can register and use any of the Microsoft Graph Toolkit components as you normally would in your HTML templates. For example, to add the [Person component](../components/person.md), update the app to register the component:
+
+
+```TypeScript
+import { Component, OnInit } from '@angular/core';
+import { Providers } from '@microsoft/mgt-element';
+import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+import { registerMgtPersonComponent } from '@microsoft/mgt-components';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+
+    ngOnInit()
+    {
+        Providers.globalProvider = new Msal2Provider({
+            clientId: '<YOUR-CLIENT-ID>'
+        });
+        registerMgtPersonComponent();
+    }
+}
+```
+
+And then add the following to your template:
 
 ```html
 <mgt-person person-query="me" view="twolines"></mgt-person>
 ```
+
+> **Note:** The register component functions should be invoked close to their use in subcomponents. This ensures that in larger applications where code splitting and tree shaking are used during bundling, the weight of those components can be deferred until necessary.
 
 ## Customizing components with Angular
 
@@ -99,7 +127,9 @@ Import the `TemplateHelper` and use the `.setBindingSyntax()` method to set your
 
 ```TypeScript
 import { Component, OnInit } from '@angular/core';
-import { Providers, Msal2Provider, TemplateHelper } from '@microsoft/mgt';
+import { Providers, TemplateHelper } from '@microsoft/mgt-element';
+import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+import { registerMgtPersonComponent } from '@microsoft/mgt-components';
 
 @Component({
     selector: 'app-root',
@@ -112,6 +142,7 @@ export class AppComponent implements OnInit {
     {
         Providers.globalProvider = new Msal2Provider({ clientId: '<YOUR-CLIENT-ID>'})
         TemplateHelper.setBindingSyntax('[[',']]');
+        registerMgtPersonComponent();
     }
 }
 ```

@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.usageRights.usage_rights_request_builder import UsageRightsRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = UsageRightsRequestBuilder.UsageRightsRequestBuilderGetQueryParameters(
 		filter = "state in ('active', 'suspended') and serviceIdentifier in ('ABCD')",
@@ -15,8 +17,7 @@ request_configuration = UsageRightsRequestBuilder.UsageRightsRequestBuilderGetRe
 query_parameters = query_params,
 )
 
-
-result = await client.users.by_user_id('user-id').usage_rights.get(request_configuration = request_configuration)
+result = await graph_client.users.by_user_id('user-id').usage_rights.get(request_configuration = request_configuration)
 
 
 ```

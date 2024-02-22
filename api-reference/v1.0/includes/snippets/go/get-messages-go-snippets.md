@@ -22,7 +22,7 @@ configuration := &graphusers.ItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Messages().Get(context.Background(), configuration)
+messages, err := graphClient.Me().Messages().Get(context.Background(), configuration)
 
 
 ```

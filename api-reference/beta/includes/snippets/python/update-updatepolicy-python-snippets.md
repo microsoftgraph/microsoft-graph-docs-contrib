@@ -4,37 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.update_policy import UpdatePolicy
+from msgraph.generated.models.deployment_settings import DeploymentSettings
+from msgraph.generated.models.schedule_settings import ScheduleSettings
+from msgraph.generated.models.rate_driven_rollout_settings import RateDrivenRolloutSettings
 
-request_body = UpdatePolicy()
-request_body.@odata_type = '#microsoft.graph.windowsUpdates.updatePolicy'
+graph_client = GraphServiceClient(credentials, scopes)
 
-deployment_settings = DeploymentSettings()
-deployment_settings.@odata_type = 'microsoft.graph.windowsUpdates.deploymentSettings'
+request_body = UpdatePolicy(
+	odata_type = "#microsoft.graph.windowsUpdates.updatePolicy",
+	deployment_settings = DeploymentSettings(
+		odata_type = "microsoft.graph.windowsUpdates.deploymentSettings",
+		schedule = ScheduleSettings(
+			gradual_rollout = RateDrivenRolloutSettings(
+				odata_type = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+				duration_between_offers = "P1D",
+				additional_data = {
+						"device_per_offer" : 1000,
+				}
+			),
+		),
+	),
+)
 
-deployment_settingsschedule = ScheduleSettings()
-deployment_settingsschedulegradual_rollout = RateDrivenRolloutSettings()
-deployment_settingsschedulegradual_rollout.@odata_type = '#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings'
-
-deployment_settingsschedulegradual_rollout.durationbetweenoffers =  \DateInterval('P1D')
-
-additional_data = [
-'device_per_offer' => 1000,
-];
-deployment_settingsschedulegradual_rollout.additional_data(additional_data)
-
-
-
-deployment_settingsschedule.gradual_rollout = deployment_settingsschedulegradual_rollout
-
-deployment_settings.schedule = deployment_settingsschedule
-
-request_body.deployment_settings = deployment_settings
-
-
-
-result = await client.admin.windows.updates.update_policies.by_update_policie_id('updatePolicy-id').patch(request_body = request_body)
+result = await graph_client.admin.windows.updates.update_policies.by_update_policy_id('updatePolicy-id').patch(request_body)
 
 
 ```

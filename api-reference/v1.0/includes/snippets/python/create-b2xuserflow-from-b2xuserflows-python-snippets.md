@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.b2x_identity_user_flow import B2xIdentityUserFlow
 
-request_body = B2xIdentityUserFlow()
-request_body.id = 'Partner'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.userflowtype(UserFlowType.SignUpOrSignIn('userflowtype.signuporsignin'))
+request_body = B2xIdentityUserFlow(
+	id = "Partner",
+	user_flow_type = UserFlowType.SignUpOrSignIn,
+	user_flow_type_version = 1,
+)
 
-request_body.UserFlowTypeVersion = 1
-
-
-
-
-result = await client.identity.b2x_user_flows.post(request_body = request_body)
+result = await graph_client.identity.b2x_user_flows.post(request_body)
 
 
 ```

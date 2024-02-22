@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc identity-governance entitlement-management assignment-policies create --body '{\
     "displayName": "policy for external access requests",\
     "description": "policy for users from connected organizations to request access, with two stages of approval.",\

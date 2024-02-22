@@ -23,7 +23,7 @@ requestBody.SetName(&name)
 description := "Connection to index Contoso HR system"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.External().Connections().Post(context.Background(), requestBody, nil)
+connections, err := graphClient.External().Connections().Post(context.Background(), requestBody, nil)
 
 
 ```

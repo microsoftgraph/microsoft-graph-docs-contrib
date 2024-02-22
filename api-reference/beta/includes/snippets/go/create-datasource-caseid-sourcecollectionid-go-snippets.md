@@ -19,7 +19,7 @@ requestBody := graphmodelsediscovery.NewDataSource()
 email := "badguy@contoso.com"
 requestBody.SetEmail(&email) 
 
-result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").SourceCollections().BySourceCollectionId("sourceCollection-id").AdditionalSources().Post(context.Background(), requestBody, nil)
+additionalSources, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").SourceCollections().BySourceCollectionId("sourceCollection-id").AdditionalSources().Post(context.Background(), requestBody, nil)
 
 
 ```

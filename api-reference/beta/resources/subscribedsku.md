@@ -2,7 +2,7 @@
 title: "subscribedSku resource type"
 description: "Represents the subscribed SKU type."
 ms.localizationpriority: medium
-author: "jconley76"
+author: "frank-masuelli"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an SKU and its associated service plans.
+Represents information about a service SKU that a company is subscribed to.
 
 Inherits from [directoryObject](directoryobject.md).
 
@@ -73,7 +73,7 @@ The following is a JSON representation of the resource
 }
 ```
 
-## See also
+## Related content
 
 - [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 

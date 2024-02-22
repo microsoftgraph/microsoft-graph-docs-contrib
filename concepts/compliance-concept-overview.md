@@ -11,15 +11,15 @@ ms.custom: scenarios:getting-started
 
 The Microsoft Graph APIs for compliance and privacy provide functionality for organizations to automate repetitive tasks and integrate with their existing compliance tools to build predictable workflows that are often required to meet industry regulations.
 
-The compliance and privacy APIs are intended to help deliver on the vision of helping organizations adapt and extend Microsoft 365 Compliance to their own specific requirements, enable integration for existing custom or third-party solutions, and accelerate and support the use of Microsoft 365 solutions across the enterprise digital estate.
+The compliance and privacy APIs are intended to help deliver on the vision of helping organizations adapt and extend Microsoft 365 Compliance with their own specific requirements, enable integration for existing custom or third-party solutions, and accelerate and support the use of Microsoft 365 solutions across the enterprise digital estate.
 
 ## Electronic discovery (eDiscovery) (preview)
 
 ### Develop applications that ensure a repeatable, predictable, and standard process
 
-Organizations rely on [Microsoft 365 eDiscovery](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) capabilities to meet requirements to find the truth about what happened in their organization when they need to, based on internal or external requirements such as litigation, investigation, or regulatory compliance.
+Organizations rely on [Microsoft 365 eDiscovery](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) capabilities to meet requirements to find the truth about what happened in their organization when they need to. The need to find the truth may be based on internal or external requirements such as litigation, investigation, or regulatory compliance.
 
-In many organizations, eDiscovery workflows are frequent, critical, and high volume. In the cases where there are common repeated tasks or a high volume of activities, the APIs will help provide a scalable way to repeat processes consistently and effectively.
+In many organizations, eDiscovery workflows are frequent, critical, and high volume. In the cases where there are common repeated tasks or a high volume of activities, the APIs help provide a scalable way to repeat processes consistently and effectively.
 
 ### Manage your eDiscovery workflows
 
@@ -58,7 +58,7 @@ Looking for the API reference for these services?
 - [Microsoft Graph subject rights request API v1.0](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview)
 - [Microsoft Graph subject rights request API beta](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Related content
 
 - Explore your own data from the user resource in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Explore the [Microsoft Graph compliance APIs](/graph/api/resources/complianceapioverview).

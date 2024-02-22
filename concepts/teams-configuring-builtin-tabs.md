@@ -101,7 +101,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 ## Wiki tabs
 
 For wiki tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.wiki`.
-Wiki tabs do not support configuration through Microsoft Graph.
+Wiki tabs don't support configuration through Microsoft Graph.
 Note, however, that there isn't much to configure -
 in an unconfigured wiki tab, the first user just needs to select **Set up tab** to configure it.
 
@@ -139,6 +139,6 @@ Configuration is not supported.
 
 Custom tabs built using SharePoint Framework can be created using Microsoft Graph, but configuration is not supported.
 
-## See also
+## Related content
 
 - [Microsoft Teams API overview](teams-concept-overview.md)

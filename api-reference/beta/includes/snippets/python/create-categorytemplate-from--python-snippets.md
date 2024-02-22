@@ -4,23 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.category_template import CategoryTemplate
+from msgraph.generated.models.identity_set import IdentitySet
 
-request_body = CategoryTemplate()
-request_body.@odata_type = '#microsoft.graph.security.categoryTemplate'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'String'
+request_body = CategoryTemplate(
+	odata_type = "#microsoft.graph.security.categoryTemplate",
+	display_name = "String",
+	created_by = IdentitySet(
+		odata_type = "microsoft.graph.identitySet",
+	),
+)
 
-created_by = IdentitySet()
-created_by.@odata_type = 'microsoft.graph.identitySet'
-
-
-request_body.created_by = created_by
-
-
-
-result = await client.security.labels.categories.post(request_body = request_body)
+result = await graph_client.security.labels.categories.post(request_body)
 
 
 ```

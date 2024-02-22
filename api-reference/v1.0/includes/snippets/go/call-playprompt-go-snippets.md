@@ -34,7 +34,7 @@ prompts := []graphmodels.Promptable {
 }
 requestBody.SetPrompts(prompts)
 
-result, err := graphClient.Communications().Calls().ByCallId("call-id").PlayPrompt().Post(context.Background(), requestBody, nil)
+playPrompt, err := graphClient.Communications().Calls().ByCallId("call-id").PlayPrompt().Post(context.Background(), requestBody, nil)
 
 
 ```

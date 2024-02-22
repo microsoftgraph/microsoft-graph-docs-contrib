@@ -25,7 +25,7 @@ configuration := &graphusers.ItemMailFoldersRequestBuilderGetRequestConfiguratio
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().MailFolders().Get(context.Background(), configuration)
+mailFolders, err := graphClient.Me().MailFolders().Get(context.Background(), configuration)
 
 
 ```

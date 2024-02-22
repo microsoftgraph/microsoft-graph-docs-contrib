@@ -23,12 +23,12 @@ ediscoveryReviewTag := graphmodelssecurity.NewEdiscoveryReviewTag()
 id := "d3d99dc704a74801b792b3e1e722aa0d"
 ediscoveryReviewTag.SetId(&id) 
 
-tagsToAdd := []graphmodelssecurity.ediscoveryReviewTagable {
+tagsToAdd := []graphmodelssecurity.EdiscoveryReviewTagable {
 	ediscoveryReviewTag,
 }
 requestBody.SetTagsToAdd(tagsToAdd)
 
-graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().ByReviewSetId("ediscoveryReviewSet-id").Queries().ByQuerieId("ediscoveryReviewSetQuery-id").MicrosoftGraphSecurityApplyTags().Post(context.Background(), requestBody, nil)
+graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().ByEdiscoveryReviewSetId("ediscoveryReviewSet-id").Queries().ByEdiscoveryReviewSetQueryId("ediscoveryReviewSetQuery-id").MicrosoftGraphSecurityApplyTags().Post(context.Background(), requestBody, nil)
 
 
 ```

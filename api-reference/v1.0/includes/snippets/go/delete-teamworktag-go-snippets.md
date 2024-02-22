@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Teams().ByTeamId("team-id").Tags().ByTagId("teamworkTag-id").Delete(context.Background(), nil)
+graphClient.Teams().ByTeamId("team-id").Tags().ByTeamworkTagId("teamworkTag-id").Delete(context.Background(), nil)
 
 
 ```

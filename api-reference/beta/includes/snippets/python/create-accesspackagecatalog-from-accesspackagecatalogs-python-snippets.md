@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_catalog import AccessPackageCatalog
 
-request_body = AccessPackageCatalog()
-request_body.display_name = 'sales'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'for employees working with sales and outside sales partners'
+request_body = AccessPackageCatalog(
+	display_name = "sales",
+	description = "for employees working with sales and outside sales partners",
+	is_externally_visible = True,
+)
 
-request_body.is_externally_visible = True
-
-
-
-
-result = await client.identity_governance.entitlement_management.acces_package_catalogs.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_catalogs.post(request_body)
 
 
 ```

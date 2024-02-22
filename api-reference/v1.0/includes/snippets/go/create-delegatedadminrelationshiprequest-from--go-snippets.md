@@ -19,7 +19,7 @@ requestBody := graphmodels.NewDelegatedAdminRelationshipRequest()
 action := graphmodels.LOCKFORAPPROVAL_DELEGATEDADMINRELATIONSHIPREQUESTACTION 
 requestBody.SetAction(&action) 
 
-result, err := graphClient.TenantRelationships().DelegatedAdminRelationships().ByDelegatedAdminRelationshipId("delegatedAdminRelationship-id").Requests().Post(context.Background(), requestBody, nil)
+requests, err := graphClient.TenantRelationships().DelegatedAdminRelationships().ByDelegatedAdminRelationshipId("delegatedAdminRelationship-id").Requests().Post(context.Background(), requestBody, nil)
 
 
 ```

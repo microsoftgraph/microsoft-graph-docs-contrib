@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.drives.item.bundles.bundles_request_builder import BundlesRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = BundlesRequestBuilder.BundlesRequestBuilderGetQueryParameters(
 		filter = "bundle/album ne null",
@@ -15,8 +17,7 @@ request_configuration = BundlesRequestBuilder.BundlesRequestBuilderGetRequestCon
 query_parameters = query_params,
 )
 
-
-result = await client.drives.by_drive_id('drive-id').bundles.get(request_configuration = request_configuration)
+result = await graph_client.drives.by_drive_id('drive-id').bundles.get(request_configuration = request_configuration)
 
 
 ```

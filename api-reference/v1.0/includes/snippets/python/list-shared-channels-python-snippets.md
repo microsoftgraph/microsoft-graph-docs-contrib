@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.teams.item.channels.channels_request_builder import ChannelsRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = ChannelsRequestBuilder.ChannelsRequestBuilderGetQueryParameters(
 		filter = "membershipType eq 'shared'",
@@ -15,8 +17,7 @@ request_configuration = ChannelsRequestBuilder.ChannelsRequestBuilderGetRequestC
 query_parameters = query_params,
 )
 
-
-result = await client.teams.by_team_id('team-id').channels.get(request_configuration = request_configuration)
+result = await graph_client.teams.by_team_id('team-id').channels.get(request_configuration = request_configuration)
 
 
 ```

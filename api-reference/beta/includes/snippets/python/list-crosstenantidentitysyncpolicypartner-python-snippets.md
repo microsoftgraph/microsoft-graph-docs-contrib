@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.policies.crossTenantAccessPolicy.partners.partners_request_builder import PartnersRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = PartnersRequestBuilder.PartnersRequestBuilderGetQueryParameters(
 		select = ["tenantId"],
@@ -16,8 +18,7 @@ request_configuration = PartnersRequestBuilder.PartnersRequestBuilderGetRequestC
 query_parameters = query_params,
 )
 
-
-result = await client.policies.cro_tenant_acce_policy.partners.get(request_configuration = request_configuration)
+result = await graph_client.policies.cross_tenant_access_policy.partners.get(request_configuration = request_configuration)
 
 
 ```

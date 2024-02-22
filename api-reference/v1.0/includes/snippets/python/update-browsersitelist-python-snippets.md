@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.browser_site_list import BrowserSiteList
 
-request_body = BrowserSiteList()
-request_body.display_name = 'Production Site List A'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Production site list for team A'
+request_body = BrowserSiteList(
+	display_name = "Production Site List A",
+	description = "Production site list for team A",
+)
 
-
-
-
-result = await client.admin.edge.internet_explorer_mode.site_lists.by_site_list_id('browserSiteList-id').patch(request_body = request_body)
+result = await graph_client.admin.edge.internet_explorer_mode.site_lists.by_browser_site_list_id('browserSiteList-id').patch(request_body)
 
 
 ```

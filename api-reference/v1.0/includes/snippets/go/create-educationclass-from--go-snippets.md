@@ -39,7 +39,7 @@ requestBody.SetGrade(&grade)
 term := graphmodels.NewEducationTerm()
 requestBody.SetTerm(term)
 
-result, err := graphClient.Education().Classes().Post(context.Background(), requestBody, nil)
+classes, err := graphClient.Education().Classes().Post(context.Background(), requestBody, nil)
 
 
 ```

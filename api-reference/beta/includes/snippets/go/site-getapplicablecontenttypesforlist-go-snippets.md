@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Sites().BySiteId("site-id").GetApplicableContentTypesForList(listId='{listId}')().Get(context.Background(), nil)
+listId := "{listId}"
+getApplicableContentTypesForList, err := graphClient.Sites().BySiteId("site-id").GetApplicableContentTypesForListWithListId(&listId).Get(context.Background(), nil)
 
 
 ```

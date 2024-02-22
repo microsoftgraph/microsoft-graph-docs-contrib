@@ -16,13 +16,13 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphsites.SiteItemListItemItemsRequestBuilderGetQueryParameters{
-	Expand: [] string {"fields(select=Name,Color,Quantity)"},
+	Expand: [] string {"fields($select=Name,Color,Quantity)"},
 }
 configuration := &graphsites.SiteItemListItemItemsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().Get(context.Background(), configuration)
+items, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().Get(context.Background(), configuration)
 
 
 ```

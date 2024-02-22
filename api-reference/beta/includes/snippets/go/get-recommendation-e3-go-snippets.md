@@ -26,7 +26,7 @@ configuration := &graphdirectory.DirectoryRecommendationsRequestBuilderGetReques
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().Recommendations().Get(context.Background(), configuration)
+recommendations, err := graphClient.Directory().Recommendations().Get(context.Background(), configuration)
 
 
 ```

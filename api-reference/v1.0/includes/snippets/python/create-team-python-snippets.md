@@ -4,35 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.team import Team
+from msgraph.generated.models.team_member_settings import TeamMemberSettings
+from msgraph.generated.models.team_messaging_settings import TeamMessagingSettings
+from msgraph.generated.models.team_fun_settings import TeamFunSettings
 
-request_body = Team()
-member_settings = TeamMemberSettings()
-member_settings.allow_create_private_channels = True
+graph_client = GraphServiceClient(credentials, scopes)
 
-member_settings.allow_create_update_channels = True
+request_body = Team(
+	member_settings = TeamMemberSettings(
+		allow_create_private_channels = True,
+		allow_create_update_channels = True,
+	),
+	messaging_settings = TeamMessagingSettings(
+		allow_user_edit_messages = True,
+		allow_user_delete_messages = True,
+	),
+	fun_settings = TeamFunSettings(
+		allow_giphy = True,
+		giphy_content_rating = GiphyRatingType.Strict,
+	),
+)
 
-
-request_body.member_settings = member_settings
-messaging_settings = TeamMessagingSettings()
-messaging_settings.allow_user_edit_messages = True
-
-messaging_settings.allow_user_delete_messages = True
-
-
-request_body.messaging_settings = messaging_settings
-fun_settings = TeamFunSettings()
-fun_settings.allow_giphy = True
-
-fun_settings.giphycontentrating(GiphyRatingType.Strict('giphyratingtype.strict'))
-
-
-request_body.fun_settings = fun_settings
-
-
-
-result = await client.groups.by_group_id('group-id').team.put(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').team.put(request_body)
 
 
 ```

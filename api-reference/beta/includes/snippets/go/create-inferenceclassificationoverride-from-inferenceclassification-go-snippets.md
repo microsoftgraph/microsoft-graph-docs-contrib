@@ -21,11 +21,11 @@ requestBody.SetClassifyAs(&classifyAs)
 senderEmailAddress := graphmodels.NewEmailAddress()
 name := "Samantha Booth"
 senderEmailAddress.SetName(&name) 
-address := "samanthab@adatum.onmicrosoft.com"
+address := "samanthab@contoso.com"
 senderEmailAddress.SetAddress(&address) 
 requestBody.SetSenderEmailAddress(senderEmailAddress)
 
-result, err := graphClient.Me().InferenceClassification().Overrides().Post(context.Background(), requestBody, nil)
+overrides, err := graphClient.Me().InferenceClassification().Overrides().Post(context.Background(), requestBody, nil)
 
 
 ```

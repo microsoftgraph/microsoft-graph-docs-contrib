@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc planner tasks details patch --planner-task-id {plannerTask-id} --if-match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=" --body '{\
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc planner tasks details patch --planner-task-id {plannerTask-id} --if-match "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="" --body '{\
   "previewType": "noPreview",\
   "references": {\
     "http%3A//developer%2Emicrosoft%2Ecom":{\

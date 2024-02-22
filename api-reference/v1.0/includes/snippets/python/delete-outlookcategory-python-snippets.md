@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-await client.me.outlook.master_categories.by_master_categorie_id('outlookCategory-id').delete()
+await graph_client.me.outlook.master_categories.by_outlook_category_id('outlookCategory-id').delete()
 
 
 ```

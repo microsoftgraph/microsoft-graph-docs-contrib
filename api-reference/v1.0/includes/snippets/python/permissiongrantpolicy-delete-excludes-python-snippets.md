@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-await client.policies.permission_grant_policies.by_permission_grant_policie_id('permissionGrantPolicy-id').excludes.by_exclude_id('permissionGrantConditionSet-id').delete()
+await graph_client.policies.permission_grant_policies.by_permission_grant_policy_id('permissionGrantPolicy-id').excludes.by_permission_grant_condition_set_id('permissionGrantConditionSet-id').delete()
 
 
 ```

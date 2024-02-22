@@ -23,7 +23,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.NetworkAccess().Settings().ConditionalAccess().Patch(context.Background(), requestBody, nil)
+conditionalAccess, err := graphClient.NetworkAccess().Settings().ConditionalAccess().Patch(context.Background(), requestBody, nil)
 
 
 ```

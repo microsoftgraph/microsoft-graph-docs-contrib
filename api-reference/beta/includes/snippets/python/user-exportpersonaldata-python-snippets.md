@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.export_personal_data_post_request_body import ExportPersonalDataPostRequestBody
 
-request_body = ExportPersonalDataPostRequestBody()
-request_body.storage_location = 'storageLocation-value'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = ExportPersonalDataPostRequestBody(
+	storage_location = "storageLocation-value",
+)
 
-
-
-await client.users.by_user_id('user-id').export_personal_data.post(request_body = request_body)
+await graph_client.users.by_user_id('user-id').export_personal_data.post(request_body)
 
 
 ```

@@ -19,7 +19,7 @@ requestBody := graphusers.NewItemGetMemberGroupsPostRequestBody()
 securityEnabledOnly := true
 requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
 
-result, err := graphClient.Me().GetMemberGroups().Post(context.Background(), requestBody, nil)
+getMemberGroups, err := graphClient.Me().GetMemberGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

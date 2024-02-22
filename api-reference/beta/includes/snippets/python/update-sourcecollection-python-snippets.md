@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.source_collection import SourceCollection
 
-request_body = SourceCollection()
-request_body.display_name = 'Quarterly Financials search'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = SourceCollection(
+	display_name = "Quarterly Financials search",
+)
 
-
-
-result = await client.compliance.ediscovery.cases.by_case_id('case-id').source_collections.by_source_collection_id('sourceCollection-id').patch(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').source_collections.by_source_collection_id('sourceCollection-id').patch(request_body)
 
 
 ```

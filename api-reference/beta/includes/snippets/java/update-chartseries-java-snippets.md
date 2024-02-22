@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkbookChartSeries workbookChartSeries = new WorkbookChartSeries();
-workbookChartSeries.name = "name-value";
+workbookChartSeries.setName("name-value");
+WorkbookChartSeries result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().worksheets().byWorkbookWorksheetId("{workbookWorksheet-id}").charts().byWorkbookChartId("{workbookChart-id}").series().byWorkbookChartSeriesId("{workbookChartSeries-id}").patch(workbookChartSeries);
 
-graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}").series("{undefined}")
-	.buildRequest()
-	.patch(workbookChartSeries);
 
 ```

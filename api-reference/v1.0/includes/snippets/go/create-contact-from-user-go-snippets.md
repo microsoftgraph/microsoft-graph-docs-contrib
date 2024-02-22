@@ -23,7 +23,7 @@ requestBody.SetSurname(&surname)
 
 
 emailAddress := graphmodels.NewEmailAddress()
-address := "pavelb@fabrikam.onmicrosoft.com"
+address := "pavelb@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Pavel Bansky"
 emailAddress.SetName(&name) 
@@ -37,7 +37,7 @@ businessPhones := []string {
 }
 requestBody.SetBusinessPhones(businessPhones)
 
-result, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
+contacts, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
 
 
 ```

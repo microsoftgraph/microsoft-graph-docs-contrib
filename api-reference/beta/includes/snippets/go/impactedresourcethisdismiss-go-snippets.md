@@ -19,7 +19,7 @@ requestBody := graphdirectory.NewDismissPostRequestBody()
 dismissReason := "Application is no longer needed."
 requestBody.SetDismissReason(&dismissReason) 
 
-result, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").ImpactedResources().ByImpactedResourceId("impactedResource-id").Dismiss().Post(context.Background(), requestBody, nil)
+dismiss, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").ImpactedResources().ByImpactedResourceId("impactedResource-id").Dismiss().Post(context.Background(), requestBody, nil)
 
 
 ```

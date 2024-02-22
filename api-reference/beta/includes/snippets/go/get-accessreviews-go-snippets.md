@@ -29,7 +29,7 @@ configuration := &graphaccessreviews.AccessReviewsRequestBuilderGetRequestConfig
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.AccessReviews().Get(context.Background(), configuration)
+accessReviews, err := graphClient.AccessReviews().Get(context.Background(), configuration)
 
 
 ```

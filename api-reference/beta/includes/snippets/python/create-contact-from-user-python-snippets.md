@@ -4,51 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.contact import Contact
+from msgraph.generated.models.typed_email_address import TypedEmailAddress
+from msgraph.generated.models.phone import Phone
 
-request_body = Contact()
-request_body.given_name = 'Pavel'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.surname = 'Bansky'
+request_body = Contact(
+	given_name = "Pavel",
+	surname = "Bansky",
+	email_addresses = [
+		TypedEmailAddress(
+			address = "pavelb@contoso.com",
+			name = "Pavel Bansky",
+			type = EmailType.Personal,
+		),
+		TypedEmailAddress(
+			address = "pavelb@contoso.com",
+			name = "Pavel Bansky",
+			type = EmailType.Other,
+			other_label = "Volunteer work",
+		),
+	],
+	phones = [
+		Phone(
+			number = "+1 732 555 0102",
+			type = PhoneType.Business,
+		),
+	],
+)
 
-email_addresses_typed_email_address1 = TypedEmailAddress()
-email_addresses_typed_email_address1.address = 'pavelb@contoso.onmicrosoft.com'
-
-email_addresses_typed_email_address1.name = 'Pavel Bansky'
-
-email_addresses_typed_email_address1.type(EmailType.Personal('emailtype.personal'))
-
-
-emailAddressesArray []= emailAddressesTypedEmailAddress1;
-email_addresses_typed_email_address2 = TypedEmailAddress()
-email_addresses_typed_email_address2.address = 'pavelb@fabrikam.onmicrosoft.com'
-
-email_addresses_typed_email_address2.name = 'Pavel Bansky'
-
-email_addresses_typed_email_address2.type(EmailType.Other('emailtype.other'))
-
-email_addresses_typed_email_address2.other_label = 'Volunteer work'
-
-
-emailAddressesArray []= emailAddressesTypedEmailAddress2;
-request_body.emailaddresses(emailAddressesArray)
-
-
-phones_phone1 = Phone()
-phones_phone1.number = '+1 732 555 0102'
-
-phones_phone1.type(PhoneType.Business('phonetype.business'))
-
-
-phonesArray []= phonesPhone1;
-request_body.phones(phonesArray)
-
-
-
-
-
-result = await client.me.contacts.post(request_body = request_body)
+result = await graph_client.me.contacts.post(request_body)
 
 
 ```

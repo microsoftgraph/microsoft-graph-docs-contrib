@@ -23,7 +23,7 @@ isAppAndServicesTrialEnabled := false
 settings.SetIsAppAndServicesTrialEnabled(&isAppAndServicesTrialEnabled) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.Admin().AppsAndServices().Patch(context.Background(), requestBody, nil)
+appsAndServices, err := graphClient.Admin().AppsAndServices().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,9 +1,9 @@
 ---
 title: "baseSitePage resource type"
-description: An abstract type that represents a baseSitePage in the site page library.
-author: Sangle7
+description: "An abstract type that represents a baseSitePage in the site page library."
+author: "Sangle7"
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -14,15 +14,16 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An abstract type that represents a page in the site page library.
+
 Inherits from [baseItem](../resources/baseitem.md).
 
 ## Methods
 
 | Method                                               | Return type                                             | Description                                                                                  |
 | :--------------------------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------- |
-| [List baseSitePage](../api/baseSitePage-list.md)     | [baseSitePage](../resources/baseSitePage.md) collection | Get a list of the [baseSitePage](../resources/baseSitePage.md) objects and their properties. |
-| [Get baseSitePage](../api/baseSitePage-get.md)       | [baseSitePage](../resources/sitepage.md)                | Read the properties and relationships of a [sitePage](../resources/sitepage.md) object.      |
-| [Delete baseSitePage](../api/baseSitePage-delete.md) | None                                                    | Delete a [baseSitePage](../resources/baseSitePage.md) object.                               |
+| [List baseSitePage](../api/basesitepage-list.md)     | [baseSitePage](../resources/basesitepage.md) collection | Get the collection of [baseSitePage](../resources/basesitepage.md) objects from the site pages [list](../resources/list.md) in a [site](../resources/site.md). |
+| [Get baseSitePage](../api/baseSitePage-get.md)       | [baseSitePage](../resources/basesitepage.md)                | Get the metadata for a [baseSitePage](../resources/basesitepage.md) in the site pages [list](../resources/list.md) in a [site](../resources/site.md).      |
+| [Delete baseSitePage](../api/baseSitePage-delete.md) | None                                                    | Delete a [baseSitePage](../resources/basesitepage.md) object.                               |
 
 ## Properties
 
@@ -45,12 +46,12 @@ Inherits from [baseItem](../resources/baseitem.md).
 
 ### pageLayoutType values
 
-| Value                | Description                                                     |
-| -------------------- | --------------------------------------------------------------- |
-| `microsoftReserved`  | The page is a special type reserved for Microsoft use only. |
-| `article`            | The page is an article page.                                    |
-| `home`               | The page is a home page.                                        |
-| `unknownFutureValue` | Marker value for future compatibility.                          |
+| Value              | Description                                                     |
+| ------------------ | --------------------------------------------------------------- |
+| microsoftReserved  | The page is a special type reserved for Microsoft use only.     |
+| article            | The page is an article page.                                    |
+| home               | The page is a home page.                                        |
+| unknownFutureValue | Marker value for future compatibility.                          |
 
 ## Relationships
 

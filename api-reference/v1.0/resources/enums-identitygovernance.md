@@ -4,7 +4,7 @@ description: "Microsoft Graph identity governance enumeration values"
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: "governance"
-author: "FaithOmbongi"
+author: "AlexFilipin"
 ---
 
 # Identity governance enum values

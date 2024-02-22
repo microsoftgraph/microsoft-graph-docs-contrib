@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.groups.item.transitiveMembers.graph.user.user_request_builder import UserRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = UserRequestBuilder.UserRequestBuilderGetQueryParameters(
-		count = true,
+		count = True,
 		orderby = ["displayName"],
 		search = "\"displayName:tier\"",
 		select = ["displayName","id"],
@@ -16,14 +18,11 @@ query_params = UserRequestBuilder.UserRequestBuilderGetQueryParameters(
 
 request_configuration = UserRequestBuilder.UserRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
 
 
-result = await client.groups.by_group_id('group-id').transitive_members.graph_user.get(request_configuration = request_configuration)
+result = await graph_client.groups.by_group_id('group-id').transitive_members.graph_user.get(request_configuration = request_configuration)
 
 
 ```

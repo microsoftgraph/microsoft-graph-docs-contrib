@@ -20,15 +20,14 @@ Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][]
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
+<!-- { "blockType": "permissions", "name": "sitepage_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/sitepage-get-permissions.md)]
 
 
 ## HTTP request
@@ -50,13 +49,13 @@ You can use the `$expand=canvasLayout` query string parameter to include the con
 
 | Name       | Description |
 |:---------------|:--------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 | Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. We recommend including this header when the response will be used in another request. |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -78,6 +77,10 @@ GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-page-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -119,7 +122,7 @@ Content-type: application/json
   "description": "Here's the page description",
   "id": "65e59907-59d5-44ff-a038-7c0bf3098c01",
   "name": "Home.aspx",
-  "webUrl": "SitePages/Home.aspx",
+  "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Home.aspx",
   "title": "Organization Home",
   "thumbnailWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/00210d24-bba0-42e6-9a31-1d452a95dd75/thumbnails/large.jpg?file=163352059.jpg",
   "promotionKind": "page",
@@ -165,9 +168,12 @@ With `select` and `expand` statements, you can retrieve sitePage metadata and pa
 GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 ```
 
-
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-sitepage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-sitepage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -198,7 +204,7 @@ GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 
 #### Response
 
-The following is an example of the response
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -213,7 +219,7 @@ Content-type: application/json
     "id": "f45354cb-d634-45df-8b88-2b4e96a1dc45",
     "lastModifiedDateTime": "2023-04-16T10:01:41Z",
     "name": "Electronic Convertible.aspx",
-    "webUrl": "SitePages/Electronic Convertible.aspx",
+    "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Electronic%20Convertible.aspx",
     "title": "Electronic Convertible",
     "pageLayout": "article",
     "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/_layouts/15/images/sitepagethumbnail.png",
@@ -227,13 +233,13 @@ Content-type: application/json
     "createdBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "lastModifiedBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "parentReference": {
@@ -265,7 +271,7 @@ GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage?expand=canvasLayou
   "id": "f45354cb-d634-45df-8b88-2b4e96a1dc45",
   "lastModifiedDateTime": "2023-04-16T10:01:41Z",
   "name": "autotest Electronic Convertible.aspx",
-  "webUrl": "SitePages/autotest Electronic Convertible.aspx",
+  "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/autotest Electronic Convertible.aspx",
   "title": "autotest Electronic Convertible",
   "pageLayout": "article",
   "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/sitepagethumbnail.png",

@@ -14,14 +14,13 @@ Namespace: microsoft.graph.security
 
 Read the properties and relationships of a [caseOperation](../resources/security-caseoperation.md) object.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "security_caseoperation_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-caseoperation-get-permissions.md)]
 
 ## HTTP request
 
@@ -39,10 +38,10 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -98,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-418
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -124,7 +123,7 @@ Content-Type: application/json
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         }
     }
 }
@@ -134,7 +133,7 @@ Content-Type: application/json
 > 1. Provision the Microsoft Purview eDiscovery application by using [Create ServicePrincpal](../api/serviceprincipal-post-serviceprincipals.md) for the application ID b26e684c-5068-4120-a679-64a5d2c909d9.
 > 2. When the application is provisioned, request user-delegated permissions for discovery.Download.Read from the tenant admin. This request should be made from your third-party application interacting with Microsoft Graph.
 > 3. Make sure the tenant admin approves the request.
-> 4. Add the scope for the application to your existing script and make sure the headers include ("X-AllowWithAADToken", "true");. 
+> 4. Add the scope for the application to your existing script and make sure the headers include ("X-AllowWithAADToken", "true");.
 > By following these steps, the user authorization process will be automated, and you won't encounter a manual interactive sign-in page.
 
 

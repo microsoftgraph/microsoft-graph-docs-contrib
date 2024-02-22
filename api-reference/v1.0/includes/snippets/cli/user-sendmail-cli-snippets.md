@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc users send-mail post --user-id {user-id} --body '{\
   "message": {\
     "subject": "Meet for lunch?",\
@@ -14,14 +15,14 @@ mgc users send-mail post --user-id {user-id} --body '{\
     "toRecipients": [\
       {\
         "emailAddress": {\
-          "address": "frannis@contoso.onmicrosoft.com"\
+          "address": "frannis@contoso.com"\
         }\
       }\
     ],\
     "ccRecipients": [\
       {\
         "emailAddress": {\
-          "address": "danas@contoso.onmicrosoft.com"\
+          "address": "danas@contoso.com"\
         }\
       }\
     ]\

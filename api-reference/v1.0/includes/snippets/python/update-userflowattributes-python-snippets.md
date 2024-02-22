@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.identity_user_flow_attribute import IdentityUserFlowAttribute
 
-request_body = IdentityUserFlowAttribute()
-request_body.description = 'Your new hobby'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = IdentityUserFlowAttribute(
+	description = "Your new hobby",
+)
 
-
-
-result = await client.identity.user_flow_attributes.by_user_flow_attribute_id('identityUserFlowAttribute-id').patch(request_body = request_body)
+result = await graph_client.identity.user_flow_attributes.by_identity_user_flow_attribute_id('identityUserFlowAttribute-id').patch(request_body)
 
 
 ```

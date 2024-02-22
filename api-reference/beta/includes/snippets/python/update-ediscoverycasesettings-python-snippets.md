@@ -4,31 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ediscovery_case_settings import EdiscoveryCaseSettings
+from msgraph.generated.models.redundancy_detection_settings import RedundancyDetectionSettings
+from msgraph.generated.models.topic_modeling_settings import TopicModelingSettings
+from msgraph.generated.models.ocr_settings import OcrSettings
 
-request_body = EdiscoveryCaseSettings()
-request_body.@odata_type = '#microsoft.graph.security.ediscoveryCaseSettings'
+graph_client = GraphServiceClient(credentials, scopes)
 
-redundancy_detection = RedundancyDetectionSettings()
-redundancy_detection.@odata_type = 'microsoft.graph.security.redundancyDetectionSettings'
+request_body = EdiscoveryCaseSettings(
+	odata_type = "#microsoft.graph.security.ediscoveryCaseSettings",
+	redundancy_detection = RedundancyDetectionSettings(
+		odata_type = "microsoft.graph.security.redundancyDetectionSettings",
+	),
+	topic_modeling = TopicModelingSettings(
+		odata_type = "microsoft.graph.security.topicModelingSettings",
+	),
+	ocr = OcrSettings(
+		odata_type = "microsoft.graph.security.ocrSettings",
+	),
+)
 
-
-request_body.redundancy_detection = redundancy_detection
-topic_modeling = TopicModelingSettings()
-topic_modeling.@odata_type = 'microsoft.graph.security.topicModelingSettings'
-
-
-request_body.topic_modeling = topic_modeling
-ocr = OcrSettings()
-ocr.@odata_type = 'microsoft.graph.security.ocrSettings'
-
-
-request_body.ocr = ocr
-
-
-
-result = await client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').settings.patch(request_body = request_body)
+result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').settings.patch(request_body)
 
 
 ```

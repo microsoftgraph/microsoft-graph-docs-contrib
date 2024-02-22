@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.NetworkAccess().ForwardingPolicies().ByForwardingPolicieId("forwardingPolicy-id").PolicyRules().ByPolicyRuleId("policyRule-id").Get(context.Background(), nil)
+policyRules, err := graphClient.NetworkAccess().ForwardingPolicies().ByForwardingPolicyId("forwardingPolicy-id").PolicyRules().ByPolicyRuleId("policyRule-id").Get(context.Background(), nil)
 
 
 ```

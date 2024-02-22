@@ -22,7 +22,7 @@ configuration := &graphcompliance.ComplianceEdiscoveryCaseItemSourceCollectionIt
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").SourceCollections().BySourceCollectionId("sourceCollection-id").Get(context.Background(), configuration)
+sourceCollections, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").SourceCollections().BySourceCollectionId("sourceCollection-id").Get(context.Background(), configuration)
 
 
 ```

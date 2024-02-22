@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc groups events create --group-id {group-id} --body '{\
   "subject": "Let's go for lunch",\
   "body": {\
@@ -24,7 +25,7 @@ mgc groups events create --group-id {group-id} --body '{\
   "attendees": [\
     {\
       "emailAddress": {\
-        "address":"adelev@contoso.onmicrosoft.com",\
+        "address":"adelev@contoso.com",\
         "name": "Adele Vance"\
       },\
       "type": "required"\

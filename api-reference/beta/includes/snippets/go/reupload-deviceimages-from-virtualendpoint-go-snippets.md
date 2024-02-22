@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().ByDeviceImageId("cloudPcDeviceImage-id").Reupload().Post(context.Background(), nil)
+graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().ByCloudPcDeviceImageId("cloudPcDeviceImage-id").Reupload().Post(context.Background(), nil)
 
 
 ```

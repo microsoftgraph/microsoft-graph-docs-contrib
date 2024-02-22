@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Remove access from a resource for those denied in an access review of that resource. This is the default option for[accessReviewApplyAction](../resources/accessreviewapplyaction.md) if an option is not passed in.
+Remove access from a resource for those denied in an access review of that resource. This is the default option for[accessReviewApplyAction](../resources/accessreviewapplyaction.md) if an option isn't passed in.
 
 Inherits from [accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 
@@ -26,7 +26,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.removeAccessApplyAction"

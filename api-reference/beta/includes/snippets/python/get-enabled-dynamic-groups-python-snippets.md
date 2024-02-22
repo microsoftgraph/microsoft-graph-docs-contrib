@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.groups.groups_request_builder import GroupsRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = GroupsRequestBuilder.GroupsRequestBuilderGetQueryParameters(
-		filter = "mailEnabled eq false and securityEnabled eq true and NOT) and membershipRuleProcessingState eq 'On'",
-		count = true,
+		filter = "mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'",
+		count = True,
 		select = ["id","membershipRule","membershipRuleProcessingState"],
 )
 
@@ -17,8 +19,7 @@ request_configuration = GroupsRequestBuilder.GroupsRequestBuilderGetRequestConfi
 query_parameters = query_params,
 )
 
-
-result = await client.groups.get(request_configuration = request_configuration)
+result = await graph_client.groups.get(request_configuration = request_configuration)
 
 
 ```

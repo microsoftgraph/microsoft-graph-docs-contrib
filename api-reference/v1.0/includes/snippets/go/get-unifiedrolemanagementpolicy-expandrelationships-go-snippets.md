@@ -22,7 +22,7 @@ configuration := &graphpolicies.PoliciesRoleManagementPolicieItemRequestBuilderG
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().RoleManagementPolicies().ByRoleManagementPolicieId("unifiedRoleManagementPolicy-id").Get(context.Background(), configuration)
+roleManagementPolicies, err := graphClient.Policies().RoleManagementPolicies().ByUnifiedRoleManagementPolicyId("unifiedRoleManagementPolicy-id").Get(context.Background(), configuration)
 
 
 ```

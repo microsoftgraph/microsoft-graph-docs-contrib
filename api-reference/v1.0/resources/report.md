@@ -15,7 +15,7 @@ For details about the settings that govern identification/de-identification of i
 
 ## Authorization
 
-Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Azure Active Directory (Azure AD) portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Reports permissions](/graph/permissions-reference#reports-permissions).
+Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Microsoft Entra admin center. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Reports permissions](/graph/permissions-reference#reports-permissions).
 
 ## Cloud deployments
 
@@ -46,15 +46,9 @@ The following table shows the availability for each API across all cloud deploym
 | [Yammer device usage](/graph/api/resources/yammer-device-usage-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
 | [Yammer groups activity](/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 
 Reports resources and APIs can open up new ways for you to engage with users and manage their experiences with Microsoft Graph. To learn more:
 
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).
-

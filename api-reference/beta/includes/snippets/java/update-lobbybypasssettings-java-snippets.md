@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OnlineMeeting onlineMeeting = new OnlineMeeting();
 LobbyBypassSettings lobbyBypassSettings = new LobbyBypassSettings();
-lobbyBypassSettings.isDialInBypassEnabled = true;
-onlineMeeting.lobbyBypassSettings = lobbyBypassSettings;
+lobbyBypassSettings.setIsDialInBypassEnabled(true);
+onlineMeeting.setLobbyBypassSettings(lobbyBypassSettings);
+OnlineMeeting result = graphClient.me().onlineMeetings().byOnlineMeetingId("{onlineMeeting-id}").patch(onlineMeeting);
 
-graphClient.me().onlineMeetings("MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi")
-	.buildRequest()
-	.patch(onlineMeeting);
 
 ```

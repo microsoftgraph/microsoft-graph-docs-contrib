@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.workbook_chart_axis import WorkbookChartAxis
+from msgraph.generated.models.json import Json
 
-request_body = WorkbookChartAxis()
-major_unit = Json()
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.major_unit = major_unit
-maximum = Json()
+request_body = WorkbookChartAxis(
+	major_unit = Json(
+	),
+	maximum = Json(
+	),
+	minimum = Json(
+	),
+)
 
-request_body.maximum = maximum
-minimum = Json()
-
-request_body.minimum = minimum
-
-
-
-result = await client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.worksheets.by_worksheet_id('workbookWorksheet-id').charts.by_chart_id('workbookChart-id').axes.value_axis.patch(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.worksheets.by_workbook_worksheet_id('workbookWorksheet-id').charts.by_workbook_chart_id('workbookChart-id').axes.value_axis.patch(request_body)
 
 
 ```

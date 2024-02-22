@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Identity().B2xUserFlows().Get(context.Background(), nil)
+b2xUserFlows, err := graphClient.Identity().B2xUserFlows().Get(context.Background(), nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Contacts().ByContactId("orgContact-id").DirectReports().Get(context.Background(), nil)
+directReports, err := graphClient.Contacts().ByOrgContactId("orgContact-id").DirectReports().Get(context.Background(), nil)
 
 
 ```

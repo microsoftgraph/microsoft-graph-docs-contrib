@@ -25,7 +25,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsTa
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().TaskDefinitions().Get(context.Background(), configuration)
+taskDefinitions, err := graphClient.IdentityGovernance().LifecycleWorkflows().TaskDefinitions().Get(context.Background(), configuration)
 
 
 ```

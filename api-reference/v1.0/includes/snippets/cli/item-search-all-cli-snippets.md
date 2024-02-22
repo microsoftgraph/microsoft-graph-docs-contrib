@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc drives search-with-q get --q '{q-id}' --drive-id {drive-id}
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc drives search-with-q get --q {q-id} --drive-id {drive-id}
 
 ```

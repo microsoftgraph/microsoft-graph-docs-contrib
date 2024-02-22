@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicyTenantRestrictions resource type"
-description: "Defines how to configure Azure AD tenant restrictions settings that give you control over the external organizations that your users can access from your network or devices when they use external identities."
+description: "Defines how to configure Microsoft Entra tenant restrictions settings that give you control over the external organizations that your users can access from your network or devices when they use external identities."
 author: "vimrang"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -53,6 +53,6 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Set up tenant restrictions V2 (Preview)](/azure/active-directory/external-identities/tenant-restrictions-v2)

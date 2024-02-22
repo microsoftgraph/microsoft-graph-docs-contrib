@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.instantiate_post_request_body import InstantiatePostRequestBody
 
-request_body = InstantiatePostRequestBody()
-request_body.display_name = 'testProperties'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = InstantiatePostRequestBody(
+	display_name = "testProperties",
+)
 
-
-
-result = await client.application_templates.by_application_template_id('applicationTemplate-id').instantiate.post(request_body = request_body)
+result = await graph_client.application_templates.by_application_template_id('applicationTemplate-id').instantiate.post(request_body)
 
 
 ```

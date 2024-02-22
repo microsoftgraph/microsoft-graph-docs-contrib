@@ -6,16 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new EdiscoveryNoncustodialDataSourceRequestBuilderGetRequestConfiguration();
-$queryParameters = EdiscoveryNoncustodialDataSourceRequestBuilderGetRequestConfiguration::createQueryParameters();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new EdiscoveryNoncustodialDataSourceItemRequestBuilderGetRequestConfiguration();
+$queryParameters = EdiscoveryNoncustodialDataSourceItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["dataSource"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->noncustodialDataSources()->byNoncustodialDataSourceId('ediscoveryNoncustodialDataSource-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->noncustodialDataSources()->byEdiscoveryNoncustodialDataSourceId('ediscoveryNoncustodialDataSource-id')->get($requestConfiguration)->wait();
 
 ```

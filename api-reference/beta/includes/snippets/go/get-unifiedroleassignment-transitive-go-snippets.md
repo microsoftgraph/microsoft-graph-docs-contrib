@@ -32,7 +32,7 @@ configuration := &graphrolemanagement.RoleManagementDirectoryTransitiveRoleAssig
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().Get(context.Background(), configuration)
+transitiveRoleAssignments, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().Get(context.Background(), configuration)
 
 
 ```

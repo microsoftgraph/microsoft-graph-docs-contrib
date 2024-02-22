@@ -1,6 +1,6 @@
 ---
 title: "auditLogRoot resource type"
-description: "Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties."
+description: "Contains different types of audit logs. The auditLogRoot resource returns a singleton auditLog resource. It doesn't contain any usable properties."
 author: "dhanyahk"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties.
+Contains different types of audit logs. The auditLogRoot resource returns a singleton auditLog resource. It doesn't contain any usable properties.
 
 ## Methods
 
@@ -35,7 +35,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Heres a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",

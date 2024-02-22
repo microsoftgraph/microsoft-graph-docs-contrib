@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.branding_delete_request_body import BrandingDeleteRequestBody
 
-request_body = BrandingDeleteRequestBody()
-additional_data = [
-'id' => '0', 
-];
-request_body.additional_data(additional_data)
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = BrandingDeleteRequestBody(
+	additional_data = {
+			"id" : "0",
+	}
+)
 
-
-
-
-await client.organization.by_organization_id('organization-id').branding.delete(request_body = request_body)
+await graph_client.organization.by_organization_id('organization-id').branding.delete(request_body)
 
 
 ```

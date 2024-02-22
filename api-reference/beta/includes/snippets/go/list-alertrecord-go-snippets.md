@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().Monitoring().AlertRecords().Get(context.Background(), nil)
+alertRecords, err := graphClient.DeviceManagement().Monitoring().AlertRecords().Get(context.Background(), nil)
 
 
 ```

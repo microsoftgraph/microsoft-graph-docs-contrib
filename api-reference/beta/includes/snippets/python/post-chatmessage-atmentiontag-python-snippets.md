@@ -4,41 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.chat_message import ChatMessage
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.chat_message_mention import ChatMessageMention
+from msgraph.generated.models.chat_message_mentioned_identity_set import ChatMessageMentionedIdentitySet
+from msgraph.generated.models.teamwork_tag_identity import TeamworkTagIdentity
 
-request_body = ChatMessage()
-body = ItemBody()
-body.contenttype(BodyType.Html('bodytype.html'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-body.content = '<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>'
+request_body = ChatMessage(
+	body = ItemBody(
+		content_type = BodyType.Html,
+		content = "<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>",
+	),
+	mentions = [
+		ChatMessageMention(
+			id = 0,
+			mention_text = "TestTag",
+			mentioned = ChatMessageMentionedIdentitySet(
+				tag = TeamworkTagIdentity(
+					id = "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM2OGEzZTM2NS1mN2Q5LTRhNTYtYjQ5OS0yNDMzMmE5Y2M1NzIjI3RTMERJZ1Z1ZQ==",
+					display_name = "TestTag",
+				),
+			),
+		),
+	],
+)
 
-
-request_body.body = body
-mentions_chat_message_mention1 = ChatMessageMention()
-mentions_chat_message_mention1.Id = 0
-
-mentions_chat_message_mention1.mention_text = 'TestTag'
-
-mentions_chat_message_mention1mentioned = ChatMessageMentionedIdentitySet()
-mentions_chat_message_mention1mentionedtag = TeamworkTagIdentity()
-mentions_chat_message_mention1mentionedtag.id = 'MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM2OGEzZTM2NS1mN2Q5LTRhNTYtYjQ5OS0yNDMzMmE5Y2M1NzIjI3RTMERJZ1Z1ZQ=='
-
-mentions_chat_message_mention1mentionedtag.display_name = 'TestTag'
-
-
-mentions_chat_message_mention1mentioned.tag = mentions_chat_message_mention1mentionedtag
-
-mentions_chat_message_mention1.mentioned = mentions_chat_message_mention1mentioned
-
-mentionsArray []= mentionsChatMessageMention1;
-request_body.mentions(mentionsArray)
-
-
-
-
-
-result = await client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.post(request_body)
 
 
 ```

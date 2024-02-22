@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Resources().ByResourceId("educationAssignmentResource-id").Delete(context.Background(), nil)
+graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Resources().ByEducationAssignmentResourceId("educationAssignmentResource-id").Delete(context.Background(), nil)
 
 
 ```

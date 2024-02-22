@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Solutions().BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Unpublish().Post(context.Background(), nil)
+graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Unpublish().Post(context.Background(), nil)
 
 
 ```

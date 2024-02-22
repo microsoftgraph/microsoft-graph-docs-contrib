@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 uniqueName := "com.contoso.apps.ordertracking"
 requestBody.SetUniqueName(&uniqueName) 
 
-result, err := graphClient.Solutions().BusinessScenarios().Post(context.Background(), requestBody, nil)
+businessScenarios, err := graphClient.Solutions().BusinessScenarios().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -34,7 +34,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 | id                | String         | A system-generated ID for this **hostComponent**. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).                                                                                                                                                   |
 | lastSeenDateTime  | DateTimeOffset | The most recent date and time when Microsoft Defender Threat Intelligence observed this web component. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`. |
 | name              | String         | A name running on the artifact, for example, `Microsoft IIS`.                                                                                                                                                                                                                              |
-| version           | String         | The component version running on the artifact, for example, `v8.5`. This should not be assumed to be strictly numerical.                                                                                                                                                                   |
+| version           | String         | The component version running on the artifact, for example, `v8.5`. This shouldn't be assumed to be strictly numerical.                                                                                                                                                                   |
 
 ## Relationships
 
@@ -44,7 +44,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

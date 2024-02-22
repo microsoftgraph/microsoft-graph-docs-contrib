@@ -30,7 +30,7 @@ appScopeIds := []string {
 }
 requestBody.SetAppScopeIds(appScopeIds)
 
-result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

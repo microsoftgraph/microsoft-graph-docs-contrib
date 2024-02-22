@@ -31,7 +31,7 @@ directoryScopeIds := []string {
 }
 requestBody.SetDirectoryScopeIds(directoryScopeIds)
 
-result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

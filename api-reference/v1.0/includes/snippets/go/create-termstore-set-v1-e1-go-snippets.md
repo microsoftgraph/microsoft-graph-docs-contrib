@@ -33,7 +33,7 @@ localizedNames := []graphmodelstermstore.LocalizedNameable {
 }
 requestBody.SetLocalizedNames(localizedNames)
 
-result, err := graphClient.Sites().BySiteId("site-id").TermStore().Sets().Post(context.Background(), requestBody, nil)
+sets, err := graphClient.Sites().BySiteId("site-id").TermStore().Sets().Post(context.Background(), requestBody, nil)
 
 
 ```

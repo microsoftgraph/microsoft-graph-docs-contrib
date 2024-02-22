@@ -15,7 +15,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Charts().ByChartId("workbookChart-id").Image(width={width},height={height},fittingMode='{fittingMode}')().Get(context.Background(), nil)
+width := int32(1)
+height := int32(1)
+fittingMode := "{fittingMode}"
+image, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").Charts().ByWorkbookChartId("workbookChart-id").ImageWithWidthWithHeightWithFittingMode(&width, &height, &fittingMode).Get(context.Background(), nil)
 
 
 ```

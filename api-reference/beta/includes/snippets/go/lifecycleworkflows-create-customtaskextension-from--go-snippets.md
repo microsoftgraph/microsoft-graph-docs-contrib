@@ -34,19 +34,17 @@ resourceId := "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
 authenticationConfiguration.SetResourceId(&resourceId) 
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 clientConfiguration := graphmodels.NewCustomExtensionClientConfiguration()
+maximumRetries := int32(1)
+clientConfiguration.SetMaximumRetries(&maximumRetries) 
 timeoutInMilliseconds := int32(1000)
 clientConfiguration.SetTimeoutInMilliseconds(&timeoutInMilliseconds) 
-additionalData := map[string]interface{}{
-	"maximumRetries" : int32(1) , 
-}
-clientConfiguration.SetAdditionalData(additionalData)
 requestBody.SetClientConfiguration(clientConfiguration)
 callbackConfiguration := graphmodelsidentitygovernance.NewCustomTaskExtensionCallbackConfiguration()
 timeoutDuration , err := abstractions.ParseISODuration("PT5M")
 callbackConfiguration.SetTimeoutDuration(&timeoutDuration) 
 requestBody.SetCallbackConfiguration(callbackConfiguration)
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensions().Post(context.Background(), requestBody, nil)
+customTaskExtensions, err := graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensions().Post(context.Background(), requestBody, nil)
 
 
 ```

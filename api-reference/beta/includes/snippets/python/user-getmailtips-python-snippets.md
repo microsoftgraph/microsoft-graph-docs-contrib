@@ -4,18 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.get_mail_tips_post_request_body import GetMailTipsPostRequestBody
 
-request_body = GetMailTipsPostRequestBody()
-request_body.EmailAddresses(['danas@contoso.onmicrosoft.com', 'fannyd@contoso.onmicrosoft.com', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.mailtipsoptions(MailTipsType.AutomaticReplies, mailboxFullStatus('mailtipstype.automaticreplies, mailboxfullstatus'))
+request_body = GetMailTipsPostRequestBody(
+	email_addresses = [
+		"danas@contoso.com",
+		"fannyd@contoso.com",
+	],
+	mail_tips_options = MailTipsType.AutomaticReplies | MailTipsType.MailboxFullStatus,
+)
 
-
-
-
-result = await client.me.get_mail_tips.post(request_body = request_body)
+result = await graph_client.me.get_mail_tips.post(request_body)
 
 
 ```

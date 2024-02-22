@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Profile().Anniversaries().ByAnniversarieId("personAnnualEvent-id").Get(context.Background(), nil)
+anniversaries, err := graphClient.Me().Profile().Anniversaries().ByPersonAnnualEventId("personAnnualEvent-id").Get(context.Background(), nil)
 
 
 ```

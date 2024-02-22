@@ -25,7 +25,7 @@ requestBody.SetDirectoryScopeId(&directoryScopeId)
 appScopeId := null
 requestBody.SetAppScopeId(&appScopeId) 
 
-result, err := graphClient.RoleManagement().Exchange().RoleAssignments().Post(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.RoleManagement().Exchange().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

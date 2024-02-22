@@ -22,7 +22,7 @@ configuration := &graphcommunications.CommunicationsCallRecordItemRequestBuilder
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Communications().CallRecords().ByCallRecordId("callRecord-id").Get(context.Background(), configuration)
+callRecords, err := graphClient.Communications().CallRecords().ByCallRecordId("callRecord-id").Get(context.Background(), configuration)
 
 
 ```

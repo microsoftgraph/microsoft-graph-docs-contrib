@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.user import User
 
-request_body = User()
-request_body.BusinessPhones(['+1 425 555 0109', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.office_location = '18/2111'
+request_body = User(
+	business_phones = [
+		"+1 425 555 0109",
+	],
+	office_location = "18/2111",
+)
 
-
-
-
-result = await client.me.patch(request_body = request_body)
+result = await graph_client.me.patch(request_body)
 
 
 ```

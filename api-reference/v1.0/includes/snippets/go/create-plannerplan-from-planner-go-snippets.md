@@ -23,7 +23,7 @@ requestBody.SetContainer(container)
 title := "title-value"
 requestBody.SetTitle(&title) 
 
-result, err := graphClient.Planner().Plans().Post(context.Background(), requestBody, nil)
+plans, err := graphClient.Planner().Plans().Post(context.Background(), requestBody, nil)
 
 
 ```

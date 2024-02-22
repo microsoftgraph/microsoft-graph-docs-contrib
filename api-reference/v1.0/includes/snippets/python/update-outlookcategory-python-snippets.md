@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.outlook_category import OutlookCategory
 
-request_body = OutlookCategory()
-request_body.color(CategoryColor.Preset15('categorycolor.preset15'))
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = OutlookCategory(
+	color = CategoryColor.Preset15,
+)
 
-
-
-result = await client.me.outlook.master_categories.by_master_categorie_id('outlookCategory-id').patch(request_body = request_body)
+result = await graph_client.me.outlook.master_categories.by_outlook_category_id('outlookCategory-id').patch(request_body)
 
 
 ```

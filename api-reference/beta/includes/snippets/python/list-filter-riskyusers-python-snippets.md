@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.identityProtection.riskyUsers.risky_users_request_builder import RiskyUsersRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = RiskyUsersRequestBuilder.RiskyUsersRequestBuilderGetQueryParameters(
 		filter = "riskLevel eq microsoft.graph.riskLevel'medium'",
@@ -15,8 +17,7 @@ request_configuration = RiskyUsersRequestBuilder.RiskyUsersRequestBuilderGetRequ
 query_parameters = query_params,
 )
 
-
-result = await client.identity_protection.risky_users.get(request_configuration = request_configuration)
+result = await graph_client.identity_protection.risky_users.get(request_configuration = request_configuration)
 
 
 ```

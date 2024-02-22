@@ -19,7 +19,7 @@ requestBody := graphmodels.NewDevice()
 accountEnabled := false
 requestBody.SetAccountEnabled(&accountEnabled) 
 
-result, err := graphClient.Devices().ByDeviceId("device-id").Patch(context.Background(), requestBody, nil)
+devices, err := graphClient.Devices().ByDeviceId("device-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

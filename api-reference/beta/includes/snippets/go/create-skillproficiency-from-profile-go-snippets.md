@@ -31,7 +31,7 @@ collaborationTags := []string {
 }
 requestBody.SetCollaborationTags(collaborationTags)
 
-result, err := graphClient.Me().Profile().Skills().Post(context.Background(), requestBody, nil)
+skills, err := graphClient.Me().Profile().Skills().Post(context.Background(), requestBody, nil)
 
 
 ```

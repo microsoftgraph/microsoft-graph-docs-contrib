@@ -26,7 +26,7 @@ configuration := &graphteams.TeamItemInstalledAppsRequestBuilderGetRequestConfig
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teams().ByTeamId("team-id").InstalledApps().Get(context.Background(), configuration)
+installedApps, err := graphClient.Teams().ByTeamId("team-id").InstalledApps().Get(context.Background(), configuration)
 
 
 ```

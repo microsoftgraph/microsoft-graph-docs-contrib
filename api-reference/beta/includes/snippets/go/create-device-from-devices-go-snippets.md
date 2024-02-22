@@ -42,7 +42,7 @@ requestBody.SetDeviceMetadata(&deviceMetadata)
 deviceVersion := int32(99)
 requestBody.SetDeviceVersion(&deviceVersion) 
 
-result, err := graphClient.Devices().Post(context.Background(), requestBody, nil)
+devices, err := graphClient.Devices().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.reply_all_post_request_body import ReplyAllPostRequestBody
 
-request_body = ReplyAllPostRequestBody()
-request_body.comment = 'comment-value'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = ReplyAllPostRequestBody(
+	comment = "comment-value",
+)
 
-
-
-await client.me.messages.by_message_id('message-id').reply_all.post(request_body = request_body)
+await graph_client.me.messages.by_message_id('message-id').reply_all.post(request_body)
 
 
 ```

@@ -27,7 +27,7 @@ configuration := &graphteams.TeamsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teams().Get(context.Background(), configuration)
+teams, err := graphClient.Teams().Get(context.Background(), configuration)
 
 
 ```

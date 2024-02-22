@@ -10,7 +10,7 @@ ms.prod: "sites-and-lists"
 
 Contains metadata about the source of the drive item.
 
-It is available on the source property of [driveItem][item-resource] resources.
+It's available on the source property of [driveItem][item-resource] resources.
 
 ## Properties
 
@@ -50,7 +50,7 @@ It is available on the source property of [driveItem][item-resource] resources.
 }
 ```
 
-## See also
+## Related content
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 

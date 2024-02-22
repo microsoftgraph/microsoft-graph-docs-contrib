@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Authentication().PasswordlessMicrosoftAuthenticatorMethods().Get(context.Background(), nil)
+passwordlessMicrosoftAuthenticatorMethods, err := graphClient.Me().Authentication().PasswordlessMicrosoftAuthenticatorMethods().Get(context.Background(), nil)
 
 
 ```

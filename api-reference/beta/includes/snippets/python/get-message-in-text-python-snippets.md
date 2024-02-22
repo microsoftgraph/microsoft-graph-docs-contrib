@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.messages.item.message_item_request_builder import MessageItemRequestBuilder
 
-query_params = MessageRequestBuilder.MessageRequestBuilderGetQueryParameters(
+graph_client = GraphServiceClient(credentials, scopes)
+
+query_params = MessageItemRequestBuilder.MessageItemRequestBuilderGetQueryParameters(
 		select = ["subject","body","bodyPreview","uniqueBody"],
 )
 
-request_configuration = MessageRequestBuilder.MessageRequestBuilderGetRequestConfiguration(
+request_configuration = MessageItemRequestBuilder.MessageItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'Prefer' : "outlook.body-content-type=\"text\"",
-}
-
 )
+request_configuration.headers.add("Prefer", "outlook.body-content-type=\"text\"")
 
 
-result = await client.me.messages.by_message_id('message-id').get(request_configuration = request_configuration)
+result = await graph_client.me.messages.by_message_id('message-id').get(request_configuration = request_configuration)
 
 
 ```

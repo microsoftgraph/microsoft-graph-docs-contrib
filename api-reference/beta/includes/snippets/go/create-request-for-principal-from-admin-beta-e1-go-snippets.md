@@ -37,7 +37,7 @@ requestBody.SetScheduleInfo(scheduleInfo)
 justification := "Assign eligible request."
 requestBody.SetJustification(&justification) 
 
-result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilityScheduleRequests().Post(context.Background(), requestBody, nil)
+eligibilityScheduleRequests, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilityScheduleRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

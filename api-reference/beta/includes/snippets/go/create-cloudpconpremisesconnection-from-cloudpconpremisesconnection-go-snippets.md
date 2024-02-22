@@ -35,7 +35,7 @@ requestBody.SetVirtualNetworkId(&virtualNetworkId)
 subnetId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet"
 requestBody.SetSubnetId(&subnetId) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().Post(context.Background(), requestBody, nil)
+onPremisesConnections, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().Post(context.Background(), requestBody, nil)
 
 
 ```

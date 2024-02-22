@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.teams_app_settings import TeamsAppSettings
 
-request_body = TeamsAppSettings()
-request_body.@odata_type = '#microsoft.graph.teamsAppSettings'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.is_chat_resource_specific_consent_enabled = True
+request_body = TeamsAppSettings(
+	odata_type = "#microsoft.graph.teamsAppSettings",
+	is_chat_resource_specific_consent_enabled = True,
+)
 
-
-
-
-result = await client.teamwork.team_app_settings.patch(request_body = request_body)
+result = await graph_client.teamwork.teams_app_settings.patch(request_body)
 
 
 ```

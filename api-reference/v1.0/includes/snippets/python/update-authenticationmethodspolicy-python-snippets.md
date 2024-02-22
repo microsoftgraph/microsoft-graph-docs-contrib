@@ -4,38 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.authentication_methods_policy import AuthenticationMethodsPolicy
+from msgraph.generated.models.registration_enforcement import RegistrationEnforcement
+from msgraph.generated.models.authentication_methods_registration_campaign import AuthenticationMethodsRegistrationCampaign
+from msgraph.generated.models.exclude_target import ExcludeTarget
+from msgraph.generated.models.authentication_methods_registration_campaign_include_target import AuthenticationMethodsRegistrationCampaignIncludeTarget
 
-request_body = AuthenticationMethodsPolicy()
-registration_enforcement = RegistrationEnforcement()
-registration_enforcementauthentication_methods_registration_campaign = AuthenticationMethodsRegistrationCampaign()
-registration_enforcementauthentication_methods_registration_campaign.SnoozeDurationInDays = 1
+graph_client = GraphServiceClient(credentials, scopes)
 
-registration_enforcementauthentication_methods_registration_campaign.state(AdvancedConfigState.Enabled('advancedconfigstate.enabled'))
+request_body = AuthenticationMethodsPolicy(
+	registration_enforcement = RegistrationEnforcement(
+		authentication_methods_registration_campaign = AuthenticationMethodsRegistrationCampaign(
+			snooze_duration_in_days = 1,
+			state = AdvancedConfigState.Enabled,
+			exclude_targets = [
+			],
+			include_targets = [
+				AuthenticationMethodsRegistrationCampaignIncludeTarget(
+					id = "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+					target_type = AuthenticationMethodTargetType.Group,
+					targeted_authentication_method = "microsoftAuthenticator",
+				),
+			],
+		),
+	),
+)
 
-registration_enforcementauthentication_methods_registration_campaign.ExcludeTargets([])
-
-include_targets_authentication_methods_registration_campaign_include_target1 = AuthenticationMethodsRegistrationCampaignIncludeTarget()
-include_targets_authentication_methods_registration_campaign_include_target1.id = '3ee3a9de-0a86-4e12-a287-9769accf1ba2'
-
-include_targets_authentication_methods_registration_campaign_include_target1.targettype(AuthenticationMethodTargetType.Group('authenticationmethodtargettype.group'))
-
-include_targets_authentication_methods_registration_campaign_include_target1.targeted_authentication_method = 'microsoftAuthenticator'
-
-
-includeTargetsArray []= includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1;
-registration_enforcementauthentication_methods_registration_campaign.includetargets(includeTargetsArray)
-
-
-
-registration_enforcement.authentication_methods_registration_campaign = registration_enforcementauthentication_methods_registration_campaign
-
-request_body.registration_enforcement = registration_enforcement
-
-
-
-result = await client.policies.authentication_method_policy.patch(request_body = request_body)
+result = await graph_client.policies.authentication_methods_policy.patch(request_body)
 
 
 ```

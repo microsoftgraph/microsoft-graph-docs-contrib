@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.groups.item.transitiveMembers.graph.group.group_request_builder import GroupRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = GroupRequestBuilder.GroupRequestBuilderGetQueryParameters(
-		count = true,
+		count = True,
 )
 
 request_configuration = GroupRequestBuilder.GroupRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
 
 
-result = await client.groups.by_group_id('group-id').transitive_members.graph_group.get(request_configuration = request_configuration)
+result = await graph_client.groups.by_group_id('group-id').transitive_members.graph_group.get(request_configuration = request_configuration)
 
 
 ```

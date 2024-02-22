@@ -25,7 +25,7 @@ configuration := &graphpolicies.PoliciesAuthenticationStrengthPoliciesRequestBui
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().AuthenticationStrengthPolicies().Get(context.Background(), configuration)
+authenticationStrengthPolicies, err := graphClient.Policies().AuthenticationStrengthPolicies().Get(context.Background(), configuration)
 
 
 ```

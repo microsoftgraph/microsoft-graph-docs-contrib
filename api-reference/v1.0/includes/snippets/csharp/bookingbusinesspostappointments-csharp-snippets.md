@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new BookingAppointment
 {
@@ -112,6 +113,10 @@ var requestBody = new BookingAppointment
 	},
 	ServiceName = "Catered bento",
 	ServiceNotes = "Customer requires punctual service.",
+	StaffMemberIds = new List<string>
+	{
+		"8ee1c803-a1fa-406d-8259-7ab53233f148",
+	},
 	StartDateTime = new DateTimeTimeZone
 	{
 		OdataType = "#microsoft.graph.dateTimeTimeZone",
@@ -165,12 +170,12 @@ var requestBody = new BookingAppointment
 					QuestionId = "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
 					Question = "What is your age?",
 					AnswerInputType = AnswerInputType.Text,
-					AnswerOptions = new List<String>
+					AnswerOptions = new List<string>
 					{
 					},
 					IsRequired = true,
 					Answer = "25",
-					SelectedOptions = new List<String>
+					SelectedOptions = new List<string>
 					{
 					},
 				},
@@ -190,6 +195,8 @@ var requestBody = new BookingAppointment
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Appointments.PostAsync(requestBody);
 
 

@@ -37,7 +37,7 @@ postAttributeCollection.SetAdditionalData(additionalData)
 apiConnectorConfiguration.SetPostAttributeCollection(postAttributeCollection)
 requestBody.SetApiConnectorConfiguration(apiConnectorConfiguration)
 
-result, err := graphClient.Identity().B2cUserFlows().Post(context.Background(), requestBody, nil)
+b2cUserFlows, err := graphClient.Identity().B2cUserFlows().Post(context.Background(), requestBody, nil)
 
 
 ```

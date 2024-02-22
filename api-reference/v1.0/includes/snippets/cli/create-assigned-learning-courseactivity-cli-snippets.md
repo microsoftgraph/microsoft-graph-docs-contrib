@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc employee-experience learning-providers learning-course-activities create --learning-provider-id {learningProvider-id} --body '{\
   "@odata.type": "#microsoft.graph.learningAssignment",\
   "assignedDateTime": "2021-05-11T22:57:17+00:00",\

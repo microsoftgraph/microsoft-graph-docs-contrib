@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 priority := int32(200)
 requestBody.SetPriority(&priority) 
 
-result, err := graphClient.Identity().AuthenticationEventsFlows().ByAuthenticationEventsFlowId("authenticationEventsFlow-id").Patch(context.Background(), requestBody, nil)
+authenticationEventsFlows, err := graphClient.Identity().AuthenticationEventsFlows().ByAuthenticationEventsFlowId("authenticationEventsFlow-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

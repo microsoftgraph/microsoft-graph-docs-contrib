@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/11/2017
 title: TextColumn
 ms.localizationpriority: medium

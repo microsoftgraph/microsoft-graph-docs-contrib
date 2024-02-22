@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.forwarding_options import ForwardingOptions
 
-request_body = ForwardingOptions()
-request_body.skipdnslookupstate(Status.Disabled('status.disabled'))
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = ForwardingOptions(
+	skip_dns_lookup_state = Status.Disabled,
+)
 
-
-
-result = await client.network_access.settings.forwarding_options.patch(request_body = request_body)
+result = await graph_client.network_access.settings.forwarding_options.patch(request_body)
 
 
 ```

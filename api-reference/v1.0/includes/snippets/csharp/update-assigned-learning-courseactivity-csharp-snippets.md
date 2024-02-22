@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new LearningAssignment
 {
@@ -22,7 +23,7 @@ var requestBody = new LearningAssignment
 		DateTime = "2022-09-22T16:05:00.0000000",
 		TimeZone = "UTC",
 	},
-	ExternalCourseActivityId = "12a2228a-e020-11ec-9d64-0242ac120002",
+	ExternalcourseActivityId = "12a2228a-e020-11ec-9d64-0242ac120002",
 	LearningContentId = "57baf9dc-e020-11ec-9d64-0242ac120002",
 	LearnerUserId = "7ba2228a-e020-11ec-9d64-0242ac120002",
 	Notes = new ItemBody
@@ -32,6 +33,8 @@ var requestBody = new LearningAssignment
 	},
 	Status = CourseStatus.InProgress,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.EmployeeExperience.LearningProviders["{learningProvider-id}"].LearningCourseActivities["{learningCourseActivity-id}"].PatchAsync(requestBody);
 
 

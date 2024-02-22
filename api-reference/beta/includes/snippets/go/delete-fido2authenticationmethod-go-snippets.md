@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Users().ByUserId("user-id").Authentication().Fido2Methods().ByFido2MethodId("fido2AuthenticationMethod-id").Delete(context.Background(), nil)
+graphClient.Users().ByUserId("user-id").Authentication().Fido2Methods().ByFido2AuthenticationMethodId("fido2AuthenticationMethod-id").Delete(context.Background(), nil)
 
 
 ```

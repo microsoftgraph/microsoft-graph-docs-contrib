@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [aospDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-aospdeviceownerwificonfiguration.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +45,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1548
+Content-Length: 1831
 
 {
   "value": {
@@ -107,7 +109,14 @@ Content-Length: 1548
     "connectWhenNetworkNameIsHidden": true,
     "wiFiSecurityType": "wep",
     "preSharedKey": "Pre Shared Key value",
-    "preSharedKeyIsSet": true
+    "preSharedKeyIsSet": true,
+    "proxySetting": "manual",
+    "proxyManualAddress": "Proxy Manual Address value",
+    "proxyManualPort": 15,
+    "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+    "proxyExclusionList": [
+      "Proxy Exclusion List value"
+    ]
   }
 }
 ```

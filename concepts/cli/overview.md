@@ -9,13 +9,11 @@ author: jasonjoh
 
 The Microsoft Graph PowerShell command-line interface (CLI) acts as an API wrapper for the Microsoft Graph APIs, exposing the entire API set for use from the command line.
 
-[!INCLUDE [cli-preview](../../includes/cli-preview.md)]
-
 ## Microsoft Graph CLI features & benefits
 
 The Microsoft Graph CLI provides the following benefits:
 
-- **Access to all Microsoft Graph APIs**: The Microsoft Graph CLI is based on Microsoft Graph API. In addition to Azure AD, the Microsoft Graph API includes APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
+- **Access to all Microsoft Graph APIs**: The Microsoft Graph CLI is based on Microsoft Graph API. In addition to Microsoft Entra ID, the Microsoft Graph API includes APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
 - **Cross-platform support**: The Microsoft Graph CLI works on all platforms including Windows, macOS, and Linux.
 - **Supports modern authentication**: The Microsoft Graph CLI supports the Microsoft Authentication Library (MSAL) which offers more security.
 - **Uses least privilege**: Microsoft Graph CLI permissions are not pre-authorized and users must perform one-time request for app permissions depending on their needs.
@@ -32,5 +30,5 @@ To perform basic tasks, see [Get started with the Microsoft Graph CLI](get-start
 
 ## Next steps
 
-- If you don't have a Microsoft 365 account, you can [sign up for the Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program) to get a free developer sandbox, including a Microsoft 365 E5 developer subscription.
+- If you don't have a Microsoft 365 tenant, you might qualify for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
 - If you already have access to a Microsoft 365 tenant, [Install the SDK](installation.md).

@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.print.shares.item.jobs.item.documents.item.createuploadsession.CreateUploadSessionPostRequestBody createUploadSessionPostRequestBody = new com.microsoft.graph.beta.print.shares.item.jobs.item.documents.item.createuploadsession.CreateUploadSessionPostRequestBody();
 PrintDocumentUploadProperties properties = new PrintDocumentUploadProperties();
-properties.documentName = "TestFile.pdf";
-properties.contentType = "application/pdf";
-properties.size = 4533322L;
+properties.setDocumentName("TestFile.pdf");
+properties.setContentType("application/pdf");
+properties.setSize(4533322L);
+createUploadSessionPostRequestBody.setProperties(properties);
+var result = graphClient.print().shares().byPrinterShareId("{printerShare-id}").jobs().byPrintJobId("{printJob-id}").documents().byPrintDocumentId("{printDocument-id}").createUploadSession().post(createUploadSessionPostRequestBody);
 
-graphClient.print().shares("1c879027-5120-4aaf-954a-ebfd509a3bcc").jobs("46207").documents("9001bcd9-e36a-4f51-bfc6-140c3ad7f9f7")
-	.createUploadSession(PrintDocumentCreateUploadSessionParameterSet
-		.newBuilder()
-		.withProperties(properties)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

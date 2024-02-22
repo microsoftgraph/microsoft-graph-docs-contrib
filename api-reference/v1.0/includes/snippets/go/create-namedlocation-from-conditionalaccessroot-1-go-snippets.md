@@ -35,7 +35,7 @@ ipRanges := []graphmodels.IpRangeable {
 }
 requestBody.SetIpRanges(ipRanges)
 
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(context.Background(), requestBody, nil)
+namedLocations, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(context.Background(), requestBody, nil)
 
 
 ```

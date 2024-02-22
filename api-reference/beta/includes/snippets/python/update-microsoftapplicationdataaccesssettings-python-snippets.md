@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.microsoft_application_data_access_settings import MicrosoftApplicationDataAccessSettings
 
-request_body = MicrosoftApplicationDataAccessSettings()
-request_body.disabled_for_group = 'edbfe4fb-ec70-4300-928f-dbb2ae86c981'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = MicrosoftApplicationDataAccessSettings(
+	disabled_for_group = "edbfe4fb-ec70-4300-928f-dbb2ae86c981",
+)
 
-
-
-result = await client.organization.by_organization_id('organization-id').settings.microsoft_application_data_access.patch(request_body = request_body)
+result = await graph_client.organization.by_organization_id('organization-id').settings.microsoft_application_data_access.patch(request_body)
 
 
 ```

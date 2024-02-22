@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TenantRelationships().DelegatedAdminCustomers().Get(context.Background(), nil)
+delegatedAdminCustomers, err := graphClient.TenantRelationships().DelegatedAdminCustomers().Get(context.Background(), nil)
 
 
 ```

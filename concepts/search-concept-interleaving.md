@@ -12,7 +12,7 @@ The Microsoft Search **searchRequest** resource supports the passing of multiple
 
 ## Supported entity combinations
 
-The following table shows the relationship between different entity types that can be interleaved. Note that the **qna** entity type is only supported in beta.
+The following table shows the relationship between different entity types that can be interleaved. The **qna** entity type is only supported in beta.
 
 | Entity type  | acronym | bookmark | message | chatMessage | drive | driveItem | event | externalItem | list | listItem | person | qna  | site |
 |--------------|---------|----------|---------|-------------|-------|-----------|-------|--------------|------|----------|--------|------|------|
@@ -34,11 +34,11 @@ The following table shows the relationship between different entity types that c
 
 ### Example 1: Search with SharePoint file types and all connectors combination
 
-The following shows an example of a request that searches with SharePoint file types and all combination of connectors.
+Here's an example of a request that searches with SharePoint file types and all combination of connectors.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
@@ -67,7 +67,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of an interleaving response.
+Here's an example of an interleaving response.
 
 ```http
 HTTP/1.1 200 OK
@@ -108,15 +108,6 @@ Content-type: application/json
               }
             },
             {
-              "hitId": "adce5789-c324-485a-a8bf-66bb809527ff=",
-              "rank": 3,
-              "summary": "Test externalItem",
-              "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
-                "title": "Test externalItem summary"
-              }
-            },
-            {
               "hitId": "ad60906b-1317-495c-b566-7b8ce1be5555",
               "rank": 4,
               "summary": "Test listItem 2",
@@ -137,11 +128,11 @@ Content-type: application/json
 
 ### Example 2: Search with SharePoint file types and specific connector combination
 
-The following shows an example of a request that searches with SharePoint file types and a specific combination of connectors.
+Here's an example of a request that searches with SharePoint file types and a specific combination of connectors.
 
 #### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
@@ -171,7 +162,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of an interleaving response.
+Here's an example of an interleaving response.
 
 ```http
 HTTP/1.1 200 OK
@@ -217,7 +208,7 @@ Content-type: application/json
               "summary": "Test externalItem",
               "contentSource": "MicrosoftPowerBI",
               "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
+                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                 "title": "Test externalItem summary",
               }
             },
@@ -227,7 +218,7 @@ Content-type: application/json
               "summary": "Learning externalItem",
               "contentSource": "Learning",
               "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
+                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                 "title": "Test externalItem summary",
               }
             },
@@ -252,11 +243,11 @@ Content-type: application/json
 
 ### Example 3: Search with bookmark and acronym combination
 
-The following shows an example of a request that searches with bookmark and acronym as entity types.
+Here's an example of a request that searches with bookmark and acronym as entity types.
 
 #### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
@@ -281,7 +272,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of an interleaving response for bookmark and acronym.
+Here's an example of an interleaving response for bookmark and acronym.
 
 ```http
 HTTP/1.1 200 OK
@@ -334,13 +325,13 @@ Content-type: application/json
 
 ## Known limitations
 
-- Customized sort is not supported in interleaving scenario, all of them are ordered by relevance.
-- QueryTemplate is only supported for file items in interleaving query, it cannot filter out any externalItem results in the response.
-  The behavior could be changed in the future and allow queryTemplate filter out the externalItem results, not suggest to use queryTemplate in interleaving request.
-- Collapse is not supported.
-- Speller modification is not supported, speller suggestion can be used as normal.
-- Result template is not supported.
-- Aggregation limitation, if same aggregated field both exist in Sharepoint file types (site, drive, driveItem, list, listItem) and connectors. Aggregation result will show two same aggregation buckets with same name, suggest to rename one of its name to bypass the limitation.
+- Customized sort isn't supported in interleaving scenario, all of them are ordered by relevance.
+- QueryTemplate is only supported for file items in interleaving query, it can't filter out any externalItem results in the response.
+  The behavior could be changed in the future and allow queryTemplate to filter out the externalItem results. We don't suggest using queryTemplate in interleaving requests.
+- Collapse isn't supported.
+- Speller modification isn't supported, speller suggestion can be used as normal.
+- Result template isn't supported.
+- Aggregation limitation, if same aggregated field both exist in Sharepoint file types (site, drive, driveItem, list, listItem) and connectors. Aggregation result shows two same aggregation buckets with same name, suggest to rename one of its name to bypass the limitation.
 
 ## Next steps
 

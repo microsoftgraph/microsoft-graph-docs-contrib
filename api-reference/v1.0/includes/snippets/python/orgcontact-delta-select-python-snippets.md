@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.contacts.delta.delta_request_builder import DeltaRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = DeltaRequestBuilder.DeltaRequestBuilderGetQueryParameters(
 		select = ["displayName","jobTitle","mail"],
@@ -15,8 +17,7 @@ request_configuration = DeltaRequestBuilder.DeltaRequestBuilderGetRequestConfigu
 query_parameters = query_params,
 )
 
-
-result = await client.contacts.delta.get(request_configuration = request_configuration)
+result = await graph_client.contacts.delta.get(request_configuration = request_configuration)
 
 
 ```

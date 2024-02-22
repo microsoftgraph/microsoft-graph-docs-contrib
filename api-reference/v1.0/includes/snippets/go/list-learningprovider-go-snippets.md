@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.EmployeeExperience().LearningProviders().Get(context.Background(), nil)
+learningProviders, err := graphClient.EmployeeExperience().LearningProviders().Get(context.Background(), nil)
 
 
 ```

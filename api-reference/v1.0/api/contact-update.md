@@ -12,9 +12,12 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of a contact object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Contacts.ReadWrite    |
@@ -33,7 +36,7 @@ A [contact](../resources/contact.md) from a user's top level [contactFolder](../
 PATCH /me/contactFolders/{id}/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The 
+A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
 PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
@@ -42,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -149,7 +152,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following example shows the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -185,11 +188,11 @@ Content-type: application/json
   "emailAddresses": [
     {
       "name": "Garth",
-      "address": "garth@a830edad9050849NDA1.onmicrosoft.com"
+      "address": "garth@contoso.com"
     }
   ],
   "imAddresses": [
-    "sip:garthf@a830edad9050849nda1.onmicrosoft.com"
+    "sip:garthf@contoso.com"
   ],
   "jobTitle": "Web Marketing Manager",
   "companyName": "Contoso, Inc.",
@@ -215,7 +218,7 @@ Content-type: application/json
       "city": "Redmond",
       "state": "WA",
       "countryOrRegion": "USA",
-      "postalCode": "98075"  
+      "postalCode": "98075"
   },
   "otherAddress": {},
   "spouseName": null,

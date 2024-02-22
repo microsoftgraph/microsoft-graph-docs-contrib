@@ -27,7 +27,7 @@ password := "MyPassword"
 authenticationConfiguration.SetPassword(&password) 
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 
-result, err := graphClient.Identity().ApiConnectors().Post(context.Background(), requestBody, nil)
+apiConnectors, err := graphClient.Identity().ApiConnectors().Post(context.Background(), requestBody, nil)
 
 
 ```

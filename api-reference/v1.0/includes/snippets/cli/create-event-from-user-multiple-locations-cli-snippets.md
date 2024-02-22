@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc users events create --user-id {user-id} --body '{\
   "subject": "Plan summer company picnic",\
   "body": {\
@@ -21,14 +22,14 @@ mgc users events create --user-id {user-id} --body '{\
   "attendees": [\
     {\
       "emailAddress": {\
-        "address": "DanaS@contoso.onmicrosoft.com",\
+        "address": "DanaS@contoso.com",\
         "name": "Dana Swope"\
       },\
       "type": "Required"\
     },\
     {\
       "emailAddress": {\
-        "address": "AlexW@contoso.onmicrosoft.com",\
+        "address": "AlexW@contoso.com",\
         "name": "Alex Wilber"\
       },\
       "type": "Required"\

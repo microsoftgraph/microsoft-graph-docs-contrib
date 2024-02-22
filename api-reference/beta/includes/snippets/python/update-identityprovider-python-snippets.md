@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.identity_provider import IdentityProvider
 
-request_body = IdentityProvider()
-request_body.client_secret = '1111111111111'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = IdentityProvider(
+	client_secret = "1111111111111",
+)
 
-
-
-result = await client.identity_providers.by_identity_provider_id('identityProvider-id').patch(request_body = request_body)
+result = await graph_client.identity_providers.by_identity_provider_id('identityProvider-id').patch(request_body)
 
 
 ```

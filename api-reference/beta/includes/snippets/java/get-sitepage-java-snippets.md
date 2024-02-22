@@ -4,14 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("select", "id,title"));
-requestOptions.add(new QueryOption("expand", "webparts"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-SitePage sitePage = graphClient.sites("{sitesId}").pages("{sitePageId}")
-	.buildRequest( requestOptions )
-	.get();
+SitePage result = graphClient.sites().bySiteId("{site-id}").pages().byBaseSitePageId("{baseSitePage-id}").graphSitePage().get();
+
 
 ```

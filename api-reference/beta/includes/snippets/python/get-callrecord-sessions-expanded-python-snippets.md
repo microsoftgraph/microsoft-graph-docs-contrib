@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.communications.callRecords.item.sessions.sessions_request_builder import SessionsRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = SessionsRequestBuilder.SessionsRequestBuilderGetQueryParameters(
 		expand = ["segments"],
@@ -15,8 +17,7 @@ request_configuration = SessionsRequestBuilder.SessionsRequestBuilderGetRequestC
 query_parameters = query_params,
 )
 
-
-result = await client.communications.call_records.by_call_record_id('callRecord-id').sessions.get(request_configuration = request_configuration)
+result = await graph_client.communications.call_records.by_call_record_id('callRecord-id').sessions.get(request_configuration = request_configuration)
 
 
 ```

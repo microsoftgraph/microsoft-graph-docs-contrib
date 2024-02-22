@@ -28,7 +28,7 @@ requestBody.SetBody(body)
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
-address := "AlexW@contoso.OnMicrosoft.com"
+address := "AlexW@contoso.com"
 emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
@@ -55,7 +55,7 @@ internetMessageHeaders := []graphmodels.InternetMessageHeaderable {
 }
 requestBody.SetInternetMessageHeaders(internetMessageHeaders)
 
-result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

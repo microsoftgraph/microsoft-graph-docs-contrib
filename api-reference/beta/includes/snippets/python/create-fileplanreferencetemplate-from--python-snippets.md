@@ -4,23 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.file_plan_reference_template import FilePlanReferenceTemplate
+from msgraph.generated.models.identity_set import IdentitySet
 
-request_body = FilePlanReferenceTemplate()
-request_body.@odata_type = '#microsoft.graph.security.filePlanReferenceTemplate'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'String'
+request_body = FilePlanReferenceTemplate(
+	odata_type = "#microsoft.graph.security.filePlanReferenceTemplate",
+	display_name = "String",
+	created_by = IdentitySet(
+		odata_type = "microsoft.graph.identitySet",
+	),
+)
 
-created_by = IdentitySet()
-created_by.@odata_type = 'microsoft.graph.identitySet'
-
-
-request_body.created_by = created_by
-
-
-
-result = await client.security.labels.file_plan_references.post(request_body = request_body)
+result = await graph_client.security.labels.file_plan_references.post(request_body)
 
 
 ```

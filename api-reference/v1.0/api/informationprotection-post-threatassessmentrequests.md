@@ -18,15 +18,14 @@ A threat assessment request can be one of the following types:
 * [File](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatAssessment.ReadWrite.All             |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+<!-- { "blockType": "permissions", "name": "informationprotection_post_threatassessmentrequests" } -->
+[!INCLUDE [permissions-table](../includes/permissions/informationprotection-post-threatassessmentrequests-permissions.md)]
 
 ## HTTP request
 
@@ -40,7 +39,7 @@ POST /informationProtection/threatAssessmentRequests
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -56,7 +55,7 @@ If successful, this method returns a `201 Created` response code and a new [thre
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -71,7 +70,7 @@ Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.mailAssessmentRequest",
-  "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmail": "tifc@contoso.com",
   "expectedAssessment": "block",
   "category": "spam",
   "messageUri": "https://graph.microsoft.com/v1.0/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
@@ -114,7 +113,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -138,7 +137,7 @@ Content-type: application/json
   "category": "spam",
   "status": "pending",
   "requestSource": "administrator",
-  "recipientEmail": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com",
+  "recipientEmail": "tifc@contoso.com",
   "destinationRoutingReason": "notJunk",
   "messageUri": "https://graph.microsoft.com/v1.0/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
   "createdBy": {
@@ -154,7 +153,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -169,7 +168,7 @@ Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.emailFileAssessmentRequest",
-  "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmail": "tifc@contoso.com",
   "expectedAssessment": "block",
   "category": "malware",
   "contentData": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
@@ -212,7 +211,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -236,7 +235,7 @@ Content-type: application/json
   "category": "malware",
   "status": "completed",
   "requestSource": "administrator",
-  "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "recipientEmail": "tifc@contoso.com",
   "destinationRoutingReason": "notJunk",
   "contentData": "",
   "createdBy": {
@@ -252,7 +251,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -310,7 +309,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -349,7 +348,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -406,7 +405,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

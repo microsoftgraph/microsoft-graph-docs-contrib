@@ -4,34 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.query_post_request_body import QueryPostRequestBody
+from msgraph.generated.models.search_request import SearchRequest
+from msgraph.generated.models.entity_type import EntityType
+from msgraph.generated.models.search_query import SearchQuery
 
-request_body = QueryPostRequestBody()
-requests_search_request1 = SearchRequest()
-requests_search_request1.EntityTypes([requests_search_request1.entitytype(EntityType.ListItem('entitytype.listitem'))
-])
+graph_client = GraphServiceClient(credentials, scopes)
 
-requests_search_request1query = SearchQuery()
-requests_search_request1query.query_string = 'contoso'
+request_body = QueryPostRequestBody(
+	requests = [
+		SearchRequest(
+			entity_types = [
+				EntityType.ListItem,
+			],
+			region = "US",
+			query = SearchQuery(
+				query_string = "contoso",
+				query_template = "{searchTerms} CreatedBy:Bob",
+			),
+			from = 0,
+			size = 25,
+		),
+	],
+)
 
-requests_search_request1query.query_template = '{searchTerms} CreatedBy:Bob'
-
-
-requests_search_request1.query = requests_search_request1query
-requests_search_request1.From = 0
-
-requests_search_request1.Size = 25
-
-
-requestsArray []= requestsSearchRequest1;
-request_body.requests(requestsArray)
-
-
-
-
-
-result = await client.search.query.post(request_body = request_body)
+result = await graph_client.search.query.post(request_body)
 
 
 ```

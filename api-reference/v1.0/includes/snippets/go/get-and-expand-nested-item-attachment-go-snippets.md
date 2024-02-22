@@ -22,7 +22,7 @@ configuration := &graphusers.ItemMessageItemAttachmentItemRequestBuilderGetReque
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Messages().ByMessageId("message-id").Attachments().ByAttachmentId("attachment-id").Get(context.Background(), configuration)
+attachments, err := graphClient.Me().Messages().ByMessageId("message-id").Attachments().ByAttachmentId("attachment-id").Get(context.Background(), configuration)
 
 
 ```

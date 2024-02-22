@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc search query post --body '{\
   "requests": [\
     {\
       "entityTypes": [\
         "listItem"\
       ],\
-      "query": {\
+        "region": "US",\
+        "query": {\
         "queryString": "contoso",\
         "queryTemplate":"{searchTerms} CreatedBy:Bob"\
       },\

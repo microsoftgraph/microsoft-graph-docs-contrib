@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ti_indicator import TiIndicator
 
-request_body = TiIndicator()
-request_body.description = 'description-updated'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = TiIndicator(
+	description = "description-updated",
+)
 
-
-
-result = await client.security.ti_indicators.by_ti_indicator_id('tiIndicator-id').patch(request_body = request_body)
+result = await graph_client.security.ti_indicators.by_ti_indicator_id('tiIndicator-id').patch(request_body)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().ByAgreementId("agreement-id").File().Get(context.Background(), nil)
+file, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().ByAgreementId("agreement-id").File().Get(context.Background(), nil)
 
 
 ```

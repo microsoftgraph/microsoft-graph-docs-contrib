@@ -4,26 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.group import Group
 
-request_body = Group()
-request_body.description = 'Self help community for library'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'Library Assist'
+request_body = Group(
+	description = "Self help community for library",
+	display_name = "Library Assist",
+	group_types = [
+		"Unified",
+	],
+	mail_enabled = True,
+	mail_nickname = "library",
+	security_enabled = False,
+)
 
-request_body.GroupTypes(['Unified', ])
-
-request_body.mail_enabled = True
-
-request_body.mail_nickname = 'library'
-
-request_body.security_enabled = False
-
-
-
-
-result = await client.groups.post(request_body = request_body)
+result = await graph_client.groups.post(request_body)
 
 
 ```

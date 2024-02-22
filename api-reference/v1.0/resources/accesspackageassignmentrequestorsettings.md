@@ -15,7 +15,7 @@ Provides additional settings to select who can create a request for an access pa
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowCustomAssignmentSchedule|Boolean|`False` indicates that the requestor is not permitted to include a schedule in their request.|
+|allowCustomAssignmentSchedule|Boolean|`False` indicates that the requestor isn't permitted to include a schedule in their request.|
 |enableOnBehalfRequestorsToAddAccess|Boolean|`True` allows on-behalf-of requestors to create a request to add access for another principal.|
 |enableOnBehalfRequestorsToRemoveAccess|Boolean|`True` allows on-behalf-of requestors to create a request to remove access for another principal.|
 |enableOnBehalfRequestorsToUpdateAccess|Boolean|`True` allows on-behalf-of requestors to create a request to update access for another principal.|
@@ -27,7 +27,7 @@ Provides additional settings to select who can create a request for an access pa
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageAssignmentRequestorSettings"

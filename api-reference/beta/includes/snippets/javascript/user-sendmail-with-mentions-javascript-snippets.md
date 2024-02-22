@@ -11,22 +11,22 @@ const options = {
 const client = Client.init(options);
 
 const sendMail = {
-  Message: {
+  message: {
     subject: 'Project kickoff',
     toRecipients: [
       {
-          emailAddress: {
-              name: 'Samantha Booth',
-              address: 'samanthab@contoso.onmicrosoft.com'
-          }
+        emailAddress: {
+          name: 'Samantha Booth',
+          address: 'samanthab@contoso.com'
+        }
       }
     ],
     mentions: [
       {
         mentioned: {
           name: 'Dana Swope',
-          address: 'danas@contoso.onmicrosoft.com'
-         }
+          address: 'danas@contoso.com'
+        }
       }
     ]
   }

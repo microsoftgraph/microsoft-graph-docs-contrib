@@ -27,7 +27,7 @@ requestBody.SetPermission(&permission)
 isFolder := true
 requestBody.SetIsFolder(&isFolder) 
 
-result, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
+attachments, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

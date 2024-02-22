@@ -42,7 +42,7 @@ requestBody.SetPassword(&password)
 expirationDateTime := "2018-07-15T14:00:00.000Z"
 requestBody.SetExpirationDateTime(&expirationDateTime) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Invite().Post(context.Background(), requestBody, nil)
+invite, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Invite().Post(context.Background(), requestBody, nil)
 
 
 ```

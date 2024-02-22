@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Applications().ByApplicationId("application-id").TokenIssuancePolicies().Get(context.Background(), nil)
+tokenIssuancePolicies, err := graphClient.Applications().ByApplicationId("application-id").TokenIssuancePolicies().Get(context.Background(), nil)
 
 
 ```

@@ -25,7 +25,7 @@ configuration := &graphreports.ReportsAppCredentialSignInActivitiesRequestBuilde
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Reports().AppCredentialSignInActivities().Get(context.Background(), configuration)
+appCredentialSignInActivities, err := graphClient.Reports().AppCredentialSignInActivities().Get(context.Background(), configuration)
 
 
 ```

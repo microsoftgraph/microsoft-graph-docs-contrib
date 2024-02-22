@@ -4,23 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.add_post_request_body import AddPostRequestBody
 
-request_body = AddPostRequestBody()
-index = Index()
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.index = index
-values_json1 = Json()
+request_body = AddPostRequestBody(
+	index = Index(
+	),
+	values = [
+		Json(
+		),
+	],
+)
 
-valuesArray []= valuesJson1;
-request_body.values(valuesArray)
-
-
-
-
-
-result = await client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.tables.by_table_id('workbookTable-id').columns.add.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.tables.by_workbook_table_id('workbookTable-id').columns.add.post(request_body)
 
 
 ```

@@ -36,6 +36,9 @@ const authenticationMethodConfiguration = {
             }
         ]
     },
+    issuerHintsConfiguration: {
+        state: 'disabled'
+    },
     includeTargets: [
         {
             targetType: 'group',

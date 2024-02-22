@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_review_policy import AccessReviewPolicy
 
-request_body = AccessReviewPolicy()
-request_body.is_group_owner_management_enabled = True
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = AccessReviewPolicy(
+	is_group_owner_management_enabled = True,
+)
 
-
-
-result = await client.policies.acces_review_policy.patch(request_body = request_body)
+result = await graph_client.policies.access_review_policy.patch(request_body)
 
 
 ```

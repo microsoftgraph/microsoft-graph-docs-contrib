@@ -4,21 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.print_task import PrintTask
+from msgraph.generated.models.print_task_status import PrintTaskStatus
 
-request_body = PrintTask()
-status = PrintTaskStatus()
-status.state(PrintTaskProcessingState.Completed('printtaskprocessingstate.completed'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-status.description = 'completed'
+request_body = PrintTask(
+	status = PrintTaskStatus(
+		state = PrintTaskProcessingState.Completed,
+		description = "completed",
+	),
+)
 
-
-request_body.status = status
-
-
-
-result = await client.print.task_definitions.by_task_definition_id('printTaskDefinition-id').tasks.by_task_id('printTask-id').patch(request_body = request_body)
+result = await graph_client.print.task_definitions.by_print_task_definition_id('printTaskDefinition-id').tasks.by_print_task_id('printTask-id').patch(request_body)
 
 
 ```

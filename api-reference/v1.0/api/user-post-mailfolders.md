@@ -2,7 +2,7 @@
 title: "Create MailFolder"
 description: "Use this API to create a new mail folder in the root folder of the user's mailbox."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -15,9 +15,11 @@ Use this API to create a new mail folder in the root folder of the user's mailbo
 
 If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Mail.ReadWrite    |
@@ -33,11 +35,11 @@ POST /users/{id | userPrincipalName}/mailFolders
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, provide a JSON object with the following parameters. **displayName** and **isHidden** are the only writable property for a 
+In the request body, provide a JSON object with the following parameters. **displayName** and **isHidden** are the only writable property for a
 [mailFolder](../resources/mailfolder.md) object.
 
 | Parameter	   | Type	|Description|
@@ -103,7 +105,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

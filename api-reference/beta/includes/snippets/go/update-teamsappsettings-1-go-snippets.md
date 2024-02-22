@@ -19,7 +19,7 @@ requestBody := graphmodels.NewTeamsAppSettings()
 isChatResourceSpecificConsentEnabled := true
 requestBody.SetIsChatResourceSpecificConsentEnabled(&isChatResourceSpecificConsentEnabled) 
 
-result, err := graphClient.Teamwork().TeamsAppSettings().Patch(context.Background(), requestBody, nil)
+teamsAppSettings, err := graphClient.Teamwork().TeamsAppSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

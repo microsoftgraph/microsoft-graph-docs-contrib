@@ -1,7 +1,7 @@
 ---
 title: "azureADAuthentication resource type"
-description: "Collects the Azure AD SLA attainment for each month for an Azure AD tenant."
-author: "sarbar"
+description: "Collects the Microsoft Entra SLA attainment for each month for a Microsoft Entra tenant."
+author: "SarahBar"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Collects the Azure AD SLA attainment for each month for an Azure AD tenant.
+Collects the Microsoft Entra SLA attainment for each month for a Microsoft Entra tenant.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -50,4 +50,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

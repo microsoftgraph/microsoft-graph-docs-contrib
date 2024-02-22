@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc users list --filter "endswith(mail,'a@contoso.com')&`$orderby=userPrincipalName&`$count=true" --consistency-level eventual
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc users list --filter "endswith(mail,'a@contoso.com')" --count "true" --orderby "userPrincipalName" --consistency-level "eventual"
 
 ```

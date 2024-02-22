@@ -4,42 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.reply_post_request_body import ReplyPostRequestBody
+from msgraph.generated.models.post import Post
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.attachment import Attachment
+from msgraph.generated.models.reference_attachment import ReferenceAttachment
 
-request_body = ReplyPostRequestBody()
-post = Post()
-postbody = ItemBody()
-postbody.contenttype(BodyType.Text('bodytype.text'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-postbody.content = 'I attached a reference to a file on OneDrive.'
+request_body = ReplyPostRequestBody(
+	post = Post(
+		body = ItemBody(
+			content_type = BodyType.Text,
+			content = "I attached a reference to a file on OneDrive.",
+		),
+		attachments = [
+			ReferenceAttachment(
+				odata_type = "#microsoft.graph.referenceAttachment",
+				name = "Personal pictures",
+				source_url = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
+				provider_type = ReferenceAttachmentProvider.OneDriveConsumer,
+				permission = ReferenceAttachmentPermission.Edit,
+				is_folder = True,
+			),
+		],
+	),
+)
 
-
-post.body = postbody
-attachments_attachment1 = ReferenceAttachment()
-attachments_attachment1.@odata_type = '#microsoft.graph.referenceAttachment'
-
-attachments_attachment1.name = 'Personal pictures'
-
-attachments_attachment1.source_url = 'https://contoso.com/personal/mario_contoso_net/Documents/Pics'
-
-attachments_attachment1.providertype(ReferenceAttachmentProvider.OneDriveConsumer('referenceattachmentprovider.onedriveconsumer'))
-
-attachments_attachment1.permission(ReferenceAttachmentPermission.Edit('referenceattachmentpermission.edit'))
-
-attachments_attachment1.is_folder = True
-
-
-attachmentsArray []= attachmentsAttachment1;
-post.attachments(attachmentsArray)
-
-
-
-request_body.post = post
-
-
-
-await client.groups.by_group_id('group-id').threads.by_thread_id('conversationThread-id').reply.post(request_body = request_body)
+await graph_client.groups.by_group_id('group-id').threads.by_conversation_thread_id('conversationThread-id').reply.post(request_body)
 
 
 ```

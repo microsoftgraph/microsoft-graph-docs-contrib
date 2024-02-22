@@ -1,6 +1,6 @@
 ---
 title: "rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration resource type"
-description: "Represents an alert configuration that is triggered if Azure AD roles have been assigned outside of Privileged Identity Management in the last 30 days."
+description: "Represents an alert configuration that is triggered if Microsoft Entra roles have been assigned outside of Privileged Identity Management in the last 30 days."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that is triggered if Azure AD roles have been assigned outside of Privileged Identity Management in the last 30 days.
+Represents an alert configuration that is triggered if Microsoft Entra roles have been assigned outside of Privileged Identity Management in the last 30 days.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
@@ -24,7 +24,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |id|String|The identifier of the alert configuration. Inherited from [entity](../resources/entity.md).|
 |isEnabled|Boolean|`true` if the alert is enabled. Setting it to `false` disables PIM scanning the tenant to identify instances that trigger this alert. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 |scopeId|String|The identifier of the scope to which the alert is related. Only `/` is supported to represent the tenant scope. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md). Supports `$filter` (`eq`, `ne`).|
-|scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Azure AD roles. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
+|scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Microsoft Entra roles. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -51,4 +51,3 @@ The following is a JSON representation of the resource.
   "isEnabled": "Boolean"
 }
 ```
-

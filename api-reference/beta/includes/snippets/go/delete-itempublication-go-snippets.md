@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Profile().Publications().ByPublicationId("itemPublication-id").Delete(context.Background(), nil)
+graphClient.Me().Profile().Publications().ByItemPublicationId("itemPublication-id").Delete(context.Background(), nil)
 
 
 ```

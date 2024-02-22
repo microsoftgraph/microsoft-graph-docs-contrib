@@ -22,7 +22,7 @@ const learningCourseActivity = {
     dateTime: '2022-09-22T16:05:00.0000000',
     timeZone: 'UTC'
   },
-  externalCourseActivityId: '12a2228a-e020-11ec-9d64-0242ac120002',
+  externalcourseActivityId: '12a2228a-e020-11ec-9d64-0242ac120002',
   learningContentId: '57baf9dc-e020-11ec-9d64-0242ac120002',
   learnerUserId: '7ba2228a-e020-11ec-9d64-0242ac120002',
   notes: {

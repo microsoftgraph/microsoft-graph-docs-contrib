@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.branch_site import BranchSite
 
-request_body = BranchSite()
-request_body.name = 'My updated branch'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = BranchSite(
+	name = "My updated branch",
+)
 
-
-
-result = await client.network_access.connectivity.branches.by_branche_id('branchSite-id').patch(request_body = request_body)
+result = await graph_client.network_access.connectivity.branches.by_branch_site_id('branchSite-id').patch(request_body)
 
 
 ```

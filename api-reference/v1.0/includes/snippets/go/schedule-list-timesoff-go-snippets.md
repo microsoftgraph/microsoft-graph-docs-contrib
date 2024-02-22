@@ -25,7 +25,7 @@ configuration := &graphteams.TeamItemScheduleTimesOffRequestBuilderGetRequestCon
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimesOff().Get(context.Background(), configuration)
+timesOff, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimesOff().Get(context.Background(), configuration)
 
 
 ```

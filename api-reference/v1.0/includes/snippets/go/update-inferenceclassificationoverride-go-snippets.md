@@ -19,7 +19,7 @@ requestBody := graphmodels.NewInferenceClassificationOverride()
 classifyAs := graphmodels.FOCUSED_INFERENCECLASSIFICATIONTYPE 
 requestBody.SetClassifyAs(&classifyAs) 
 
-result, err := graphClient.Me().InferenceClassification().Overrides().ByOverrideId("inferenceClassificationOverride-id").Patch(context.Background(), requestBody, nil)
+overrides, err := graphClient.Me().InferenceClassification().Overrides().ByInferenceClassificationOverrideId("inferenceClassificationOverride-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

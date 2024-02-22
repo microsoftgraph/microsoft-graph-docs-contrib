@@ -4,25 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.printer import Printer
+from msgraph.generated.models.printer_location import PrinterLocation
 
-request_body = Printer()
-request_body.name = 'PrinterName'
+graph_client = GraphServiceClient(credentials, scopes)
 
-location = PrinterLocation()
-location.Latitude = 1.1
+request_body = Printer(
+	name = "PrinterName",
+	location = PrinterLocation(
+		latitude = 1.1,
+		longitude = 2.2,
+		altitude_in_meters = 3,
+	),
+)
 
-location.Longitude = 2.2
-
-location.AltitudeInMeters = 3
-
-
-request_body.location = location
-
-
-
-result = await client.print.printers.by_printer_id('printer-id').patch(request_body = request_body)
+result = await graph_client.print.printers.by_printer_id('printer-id').patch(request_body)
 
 
 ```

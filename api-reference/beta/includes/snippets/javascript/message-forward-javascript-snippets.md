@@ -11,18 +11,18 @@ const options = {
 const client = Client.init(options);
 
 const forward = {
-  message: {  
+  message: {
     isDeliveryReceiptRequested: true,
     toRecipients: [
       {
         emailAddress: {
-          address: 'danas@contoso.onmicrosoft.com',
+          address: 'danas@contoso.com',
           name: 'Dana Swope'
         }
       }
      ]
   },
-  comment: 'Dana, just want to make sure you get this.' 
+  comment: 'Dana, just want to make sure you get this.'
 };
 
 await client.api('/me/messages/AAMkADA1MTAAAH5JaLAAA=/forward')

@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.validate_password_post_request_body import ValidatePasswordPostRequestBody
 
-request_body = ValidatePasswordPostRequestBody()
-request_body.password = '1234567890'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = ValidatePasswordPostRequestBody(
+	password = "1234567890",
+)
 
-
-
-result = await client.users.validate_password.post(request_body = request_body)
+result = await graph_client.users.validate_password.post(request_body)
 
 
 ```

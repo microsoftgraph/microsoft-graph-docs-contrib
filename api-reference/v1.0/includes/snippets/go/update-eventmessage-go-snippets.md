@@ -19,7 +19,7 @@ requestBody := graphmodels.NewMessage()
 isRead := true
 requestBody.SetIsRead(&isRead) 
 
-result, err := graphClient.Me().Messages().ByMessageId("message-id").Patch(context.Background(), requestBody, nil)
+messages, err := graphClient.Me().Messages().ByMessageId("message-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

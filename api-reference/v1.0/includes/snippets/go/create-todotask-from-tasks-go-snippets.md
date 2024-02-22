@@ -37,7 +37,7 @@ linkedResources := []graphmodels.LinkedResourceable {
 }
 requestBody.SetLinkedResources(linkedResources)
 
-result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().Post(context.Background(), requestBody, nil)
+tasks, err := graphClient.Me().Todo().Lists().ByTodoTaskListId("todoTaskList-id").Tasks().Post(context.Background(), requestBody, nil)
 
 
 ```

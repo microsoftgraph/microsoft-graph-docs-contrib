@@ -25,7 +25,7 @@ requestBody.SetRegion(&region)
 bandwidthCapacity := int64(500)
 requestBody.SetBandwidthCapacity(&bandwidthCapacity) 
 
-result, err := graphClient.NetworkAccess().Connectivity().Branches().Post(context.Background(), requestBody, nil)
+branches, err := graphClient.NetworkAccess().Connectivity().Branches().Post(context.Background(), requestBody, nil)
 
 
 ```

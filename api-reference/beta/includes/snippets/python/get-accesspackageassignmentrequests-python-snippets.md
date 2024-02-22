@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.identityGovernance.entitlementManagement.accessPackageAssignmentRequests.access_package_assignment_requests_request_builder import AccessPackageAssignmentRequestsRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = AccessPackageAssignmentRequestsRequestBuilder.AccessPackageAssignmentRequestsRequestBuilderGetQueryParameters(
 		expand = ["requestor($expand=connectedOrganization)"],
@@ -16,8 +18,7 @@ request_configuration = AccessPackageAssignmentRequestsRequestBuilder.AccessPack
 query_parameters = query_params,
 )
 
-
-result = await client.identity_governance.entitlement_management.acces_package_assignment_requests.get(request_configuration = request_configuration)
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_requests.get(request_configuration = request_configuration)
 
 
 ```

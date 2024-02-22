@@ -51,7 +51,7 @@ additionalData := map[string]interface{}{
 assignment.SetAdditionalData(additionalData)
 requestBody.SetAssignment(assignment)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequests().Post(context.Background(), requestBody, nil)
+assignmentRequests, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

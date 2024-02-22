@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc users create --body '{\
   "displayName": "John Smith",\
   "identities": [\
     {\
       "signInType": "userName",\
-      "issuer": "contoso.onmicrosoft.com",\
+      "issuer": "contoso.com",\
       "issuerAssignedId": "johnsmith"\
     },\
     {\
       "signInType": "emailAddress",\
-      "issuer": "contoso.onmicrosoft.com",\
+      "issuer": "contoso.com",\
       "issuerAssignedId": "jsmith@yahoo.com"\
     },\
     {\

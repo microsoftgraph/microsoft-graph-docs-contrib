@@ -4,27 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.contact import Contact
+from msgraph.generated.models.physical_address import PhysicalAddress
 
-request_body = Contact()
-home_address = PhysicalAddress()
-home_address.street = '123 Some street'
+graph_client = GraphServiceClient(credentials, scopes)
 
-home_address.city = 'Seattle'
+request_body = Contact(
+	home_address = PhysicalAddress(
+		street = "123 Some street",
+		city = "Seattle",
+		state = "WA",
+		postal_code = "98121",
+	),
+	birthday = "1974-07-22",
+)
 
-home_address.state = 'WA'
-
-home_address.postal_code = '98121'
-
-
-request_body.home_address = home_address
-request_body.birthday = DateTime('1974-07-22')
-
-
-
-
-result = await client.me.contacts.by_contact_id('contact-id').patch(request_body = request_body)
+result = await graph_client.me.contacts.by_contact_id('contact-id').patch(request_body)
 
 
 ```

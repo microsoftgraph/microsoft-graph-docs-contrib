@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.authentication_flows_policy import AuthenticationFlowsPolicy
+from msgraph.generated.models.self_service_sign_up_authentication_flow_configuration import SelfServiceSignUpAuthenticationFlowConfiguration
 
-request_body = AuthenticationFlowsPolicy()
-self_service_sign_up = SelfServiceSignUpAuthenticationFlowConfiguration()
-self_service_sign_up.is_enabled = True
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = AuthenticationFlowsPolicy(
+	self_service_sign_up = SelfServiceSignUpAuthenticationFlowConfiguration(
+		is_enabled = True,
+	),
+)
 
-request_body.self_service_sign_up = self_service_sign_up
-
-
-
-result = await client.policies.authentication_flow_policy.patch(request_body = request_body)
+result = await graph_client.policies.authentication_flows_policy.patch(request_body)
 
 
 ```

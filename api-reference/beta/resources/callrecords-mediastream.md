@@ -2,7 +2,7 @@
 title: "mediaStream resource type"
 description: "The mediaStream type"
 ms.localizationpriority: medium
-author: "williamlooney"
+author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -32,7 +32,7 @@ Represents information about a media stream between two endpoints in a call.
 |averageVideoFrameLossPercentage|Double|Average percentage of video frames lost as displayed to the user.|
 |averageVideoFrameRate|Double|Average frames per second received for a video stream, computed over the duration of the session.|
 |averageVideoPacketLossRate|Double|Average fraction of packets lost, as specified in [RFC 3550][], computed over the duration of the session.|
-|endDateTime|DateTimeOffset|UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|endDateTime|DateTimeOffset|UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. This field is only available for streams that use the SIP protocol. |
 |isAudioForwardErrorCorrectionUsed|Boolean|Indicates whether the forward error correction (FEC) was used at some point during the session. The default value is null.|
 |lowFrameRateRatio|Double|Fraction of the call where frame rate is less than 7.5 frames per second.|
 |lowVideoProcessingCapabilityRatio|Double|Fraction of the call that the client is running less than 70% expected video processing capability.|
@@ -44,7 +44,7 @@ Represents information about a media stream between two endpoints in a call.
 |packetUtilization|Int64|Packet count for the stream.|
 |postForwardErrorCorrectionPacketLossRate|Double|Packet loss rate after FEC has been applied aggregated across all video streams and codecs.|
 |rmsFreezeDuration|Duration|Root mean square of the received freeze duration related to the video stream.|
-|startDateTime|DateTimeOffset|UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|startDateTime|DateTimeOffset|UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. This field is only available for streams that use the SIP protocol. |
 |streamDirection|microsoft.graph.callRecords.mediaStreamDirection|Indicates the direction of the media stream. Possible values are: `callerToCallee`, `calleeToCaller`.|
 |streamId|String|Unique identifier for the stream.|
 |videoCodec|microsoft.graph.callRecords.videoCodec|Codec name used to encode video for transmission on the network. Possible values are: `unknown`, `invalid`, `av1`, `h263`, `h264`, `h264s`, `h264uc`, `h265`, `rtvc1`, `rtVideo`, `xrtvc1`, `unknownFutureValue`.|

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc teams schedule times-off create --team-id {team-id} --body '{\
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",\
   "sharedTimeOff": {\

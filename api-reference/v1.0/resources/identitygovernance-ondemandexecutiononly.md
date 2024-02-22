@@ -1,7 +1,7 @@
 ---
 title: "onDemandExecutionOnly resource type"
 description: "Represents the setting for a workflow running on-demand only."
-author: "owinfreyATL"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Communications().Presences().ByPresenceId("presence-id").Get(context.Background(), nil)
+presences, err := graphClient.Communications().Presences().ByPresenceId("presence-id").Get(context.Background(), nil)
 
 
 ```

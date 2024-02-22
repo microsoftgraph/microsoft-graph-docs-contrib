@@ -31,7 +31,7 @@ requestBody.SetLoginWebUrl(&loginWebUrl)
 isCourseActivitySyncEnabled := true
 requestBody.SetIsCourseActivitySyncEnabled(&isCourseActivitySyncEnabled) 
 
-result, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").Patch(context.Background(), requestBody, nil)
+learningProviders, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

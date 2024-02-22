@@ -27,7 +27,7 @@ requestBody.SetCapacity(&capacity)
 isWheelChairAccessible := false
 requestBody.SetIsWheelChairAccessible(&isWheelChairAccessible) 
 
-result, err := graphClient.Places().ByPlaceId("place-id").Patch(context.Background(), requestBody, nil)
+places, err := graphClient.Places().ByPlaceId("place-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

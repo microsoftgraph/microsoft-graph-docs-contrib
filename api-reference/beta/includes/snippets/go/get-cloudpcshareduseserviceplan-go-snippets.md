@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().SharedUseServicePlans().BySharedUseServicePlanId("cloudPcSharedUseServicePlan-id").Get(context.Background(), nil)
+sharedUseServicePlans, err := graphClient.DeviceManagement().VirtualEndpoint().SharedUseServicePlans().ByCloudPcSharedUseServicePlanId("cloudPcSharedUseServicePlan-id").Get(context.Background(), nil)
 
 
 ```

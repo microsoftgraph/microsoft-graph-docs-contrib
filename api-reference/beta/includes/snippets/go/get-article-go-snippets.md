@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().ThreatIntelligence().Articles().Get(context.Background(), nil)
+articles, err := graphClient.Security().ThreatIntelligence().Articles().Get(context.Background(), nil)
 
 
 ```

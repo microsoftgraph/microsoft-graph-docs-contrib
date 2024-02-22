@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const attachment = {
-    '@odata.type': '#microsoft.graph.referenceAttachment', 
-    name: 'Personal pictures', 
-    sourceUrl: 'https://contoso.com/personal/mario_contoso_net/Documents/Pics', 
-    providerType: 'oneDriveConsumer', 
-    permission: 'Edit', 
-    isFolder: 'True' 
+    '@odata.type': '#microsoft.graph.referenceAttachment',
+    name: 'Personal pictures',
+    sourceUrl: 'https://contoso.com/personal/mario_contoso_net/Documents/Pics',
+    providerType: 'oneDriveConsumer',
+    permission: 'Edit',
+    isFolder: 'True'
 };
 
 await client.api('/me/messages/AAMkAGE1M88AADUv0uFAAA=/attachments')

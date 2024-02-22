@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().AppRoleAssignments().ByAppRoleAssignmentId("appRoleAssignment-id").Get(context.Background(), nil)
+appRoleAssignments, err := graphClient.Me().AppRoleAssignments().ByAppRoleAssignmentId("appRoleAssignment-id").Get(context.Background(), nil)
 
 
 ```

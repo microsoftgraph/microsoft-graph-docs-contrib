@@ -23,7 +23,7 @@ requestBody.SetUserFlowType(&userFlowType)
 userFlowTypeVersion := float32(1)
 requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion) 
 
-result, err := graphClient.Identity().B2xUserFlows().Post(context.Background(), requestBody, nil)
+b2xUserFlows, err := graphClient.Identity().B2xUserFlows().Post(context.Background(), requestBody, nil)
 
 
 ```

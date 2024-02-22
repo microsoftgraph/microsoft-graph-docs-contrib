@@ -6,16 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new DeviceRequestBuilderGetRequestConfiguration();
-$queryParameters = DeviceRequestBuilderGetRequestConfiguration::createQueryParameters();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestConfiguration = new DeviceItemRequestBuilderGetRequestConfiguration();
+$queryParameters = DeviceItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","extensionAttributes"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->devices()->byDeviceId('device-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->devices()->byDeviceId('device-id')->get($requestConfiguration)->wait();
 
 ```

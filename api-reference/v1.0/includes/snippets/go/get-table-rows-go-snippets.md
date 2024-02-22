@@ -27,7 +27,7 @@ configuration := &graphdrives.DriveItemItemItemWorkbookTableItemRowsRequestBuild
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Rows().Get(context.Background(), configuration)
+rows, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Rows().Get(context.Background(), configuration)
 
 
 ```

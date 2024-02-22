@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-result = await client.directory.deleted_items.by_deleted_item_id('directoryObject-id').get()
+result = await graph_client.directory.deleted_items.by_directory_object_id('directoryObject-id').get()
 
 
 ```

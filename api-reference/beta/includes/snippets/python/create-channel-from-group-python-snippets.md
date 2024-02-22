@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.channel import Channel
 
-request_body = Channel()
-request_body.display_name = 'Architecture Discussion'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'This channel is where we debate all future architecture plans'
+request_body = Channel(
+	display_name = "Architecture Discussion",
+	description = "This channel is where we debate all future architecture plans",
+	membership_type = ChannelMembershipType.Standard,
+)
 
-request_body.membershiptype(ChannelMembershipType.Standard('channelmembershiptype.standard'))
-
-
-
-
-result = await client.teams.by_team_id('team-id').channels.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.post(request_body)
 
 
 ```

@@ -27,12 +27,12 @@ groupId := "64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
 target.SetGroupId(&groupId) 
 cloudPcUserSettingAssignment.SetTarget(target)
 
-assignments := []graphmodels.cloudPcUserSettingAssignmentable {
+assignments := []graphmodels.CloudPcUserSettingAssignmentable {
 	cloudPcUserSettingAssignment,
 }
 requestBody.SetAssignments(assignments)
 
-graphClient.DeviceManagement().VirtualEndpoint().UserSettings().ByUserSettingId("cloudPcUserSetting-id").Assign().Post(context.Background(), requestBody, nil)
+graphClient.DeviceManagement().VirtualEndpoint().UserSettings().ByCloudPcUserSettingId("cloudPcUserSetting-id").Assign().Post(context.Background(), requestBody, nil)
 
 
 ```

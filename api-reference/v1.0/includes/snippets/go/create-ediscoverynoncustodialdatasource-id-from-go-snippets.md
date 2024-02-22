@@ -24,7 +24,7 @@ site.SetWebUrl(&webUrl)
 dataSource.SetSite(site)
 requestBody.SetDataSource(dataSource)
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").NoncustodialDataSources().Post(context.Background(), requestBody, nil)
+noncustodialDataSources, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").NoncustodialDataSources().Post(context.Background(), requestBody, nil)
 
 
 ```

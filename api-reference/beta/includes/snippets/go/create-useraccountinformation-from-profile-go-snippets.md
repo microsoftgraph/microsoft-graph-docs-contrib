@@ -21,7 +21,7 @@ requestBody.SetAllowedAudiences(&allowedAudiences)
 countryCode := "NO"
 requestBody.SetCountryCode(&countryCode) 
 
-result, err := graphClient.Me().Profile().Account().Post(context.Background(), requestBody, nil)
+account, err := graphClient.Me().Profile().Account().Post(context.Background(), requestBody, nil)
 
 
 ```

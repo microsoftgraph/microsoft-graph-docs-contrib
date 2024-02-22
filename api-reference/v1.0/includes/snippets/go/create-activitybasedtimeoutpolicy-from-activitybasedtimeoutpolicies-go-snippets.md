@@ -25,7 +25,7 @@ requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
-result, err := graphClient.Policies().ActivityBasedTimeoutPolicies().Post(context.Background(), requestBody, nil)
+activityBasedTimeoutPolicies, err := graphClient.Policies().ActivityBasedTimeoutPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -25,7 +25,7 @@ configuration := &graphsolutions.SolutionsBusinessScenarioItemPlannerTasksReques
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().Tasks().Get(context.Background(), configuration)
+tasks, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().Tasks().Get(context.Background(), configuration)
 
 
 ```

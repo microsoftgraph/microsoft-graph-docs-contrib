@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc directory attribute-sets list --top 10
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc directory attribute-sets list --top "10"
 
 ```

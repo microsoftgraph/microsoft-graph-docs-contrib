@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.admin.serviceAnnouncement.healthOverviews.item.service_health_item_request_builder import ServiceHealthItemRequestBuilder
 
-query_params = ServiceHealthRequestBuilder.ServiceHealthRequestBuilderGetQueryParameters(
+graph_client = GraphServiceClient(credentials, scopes)
+
+query_params = ServiceHealthItemRequestBuilder.ServiceHealthItemRequestBuilderGetQueryParameters(
 		expand = ["issues"],
 )
 
-request_configuration = ServiceHealthRequestBuilder.ServiceHealthRequestBuilderGetRequestConfiguration(
+request_configuration = ServiceHealthItemRequestBuilder.ServiceHealthItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-
-result = await client.admin.service_announcement.health_overviews.by_health_overview_id('serviceHealth-id').get(request_configuration = request_configuration)
+result = await graph_client.admin.service_announcement.health_overviews.by_service_health_id('serviceHealth-id').get(request_configuration = request_configuration)
 
 
 ```

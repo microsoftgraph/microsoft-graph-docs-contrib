@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Users().ByUserId("user-id").Authentication().MicrosoftAuthenticatorMethods().ByMicrosoftAuthenticatorMethodId("microsoftAuthenticatorAuthenticationMethod-id").Delete(context.Background(), nil)
+graphClient.Users().ByUserId("user-id").Authentication().MicrosoftAuthenticatorMethods().ByMicrosoftAuthenticatorAuthenticationMethodId("microsoftAuthenticatorAuthenticationMethod-id").Delete(context.Background(), nil)
 
 
 ```

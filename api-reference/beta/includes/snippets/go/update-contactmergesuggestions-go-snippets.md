@@ -19,7 +19,7 @@ requestBody := graphmodels.NewContactMergeSuggestions()
 isEnabled := false
 requestBody.SetIsEnabled(&isEnabled) 
 
-result, err := graphClient.Me().Settings().ContactMergeSuggestions().Patch(context.Background(), requestBody, nil)
+contactMergeSuggestions, err := graphClient.Me().Settings().ContactMergeSuggestions().Patch(context.Background(), requestBody, nil)
 
 
 ```

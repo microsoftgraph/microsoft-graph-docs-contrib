@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.communications.onlineMeetings.online_meetings_request_builder import OnlineMeetingsRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = OnlineMeetingsRequestBuilder.OnlineMeetingsRequestBuilderGetQueryParameters(
 		filter = "VideoTeleconferenceId eq '123456789'",
@@ -15,8 +17,7 @@ request_configuration = OnlineMeetingsRequestBuilder.OnlineMeetingsRequestBuilde
 query_parameters = query_params,
 )
 
-
-result = await client.communications.online_meetings.get(request_configuration = request_configuration)
+result = await graph_client.communications.online_meetings.get(request_configuration = request_configuration)
 
 
 ```

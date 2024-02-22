@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().WindowsProtectionStates().ByWindowsProtectionStateId("windowsProtectionState-id").Get(context.Background(), nil)
+windowsProtectionStates, err := graphClient.TenantRelationships().ManagedTenants().WindowsProtectionStates().ByWindowsProtectionStateId("windowsProtectionState-id").Get(context.Background(), nil)
 
 
 ```

@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.get_notebook_from_web_url_post_request_body import GetNotebookFromWebUrlPostRequestBody
 
-request_body = GetNotebookFromWebUrlPostRequestBody()
-request_body.web_url = 'webUrl value'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = GetNotebookFromWebUrlPostRequestBody(
+	web_url = "webUrl value",
+)
 
-
-
-result = await client.me.onenote.notebooks.get_notebook_from_web_url.post(request_body = request_body)
+result = await graph_client.me.onenote.notebooks.get_notebook_from_web_url.post(request_body)
 
 
 ```

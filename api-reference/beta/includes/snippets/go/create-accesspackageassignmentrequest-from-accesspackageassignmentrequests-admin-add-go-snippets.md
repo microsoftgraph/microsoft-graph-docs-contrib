@@ -27,7 +27,7 @@ accessPackageId := "a914b616-e04e-476b-aa37-91038f0b165b"
 accessPackageAssignment.SetAccessPackageId(&accessPackageId) 
 requestBody.SetAccessPackageAssignment(accessPackageAssignment)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(context.Background(), requestBody, nil)
+accessPackageAssignmentRequests, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

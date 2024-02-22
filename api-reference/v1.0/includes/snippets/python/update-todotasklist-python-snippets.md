@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.todo_task_list import TodoTaskList
 
-request_body = TodoTaskList()
-request_body.display_name = 'Vacation Plan'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = TodoTaskList(
+	display_name = "Vacation Plan",
+)
 
-
-
-result = await client.me.todo.lists.by_list_id('todoTaskList-id').patch(request_body = request_body)
+result = await graph_client.me.todo.lists.by_todo_task_list_id('todoTaskList-id').patch(request_body)
 
 
 ```

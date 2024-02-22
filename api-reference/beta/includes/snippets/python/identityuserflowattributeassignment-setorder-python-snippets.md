@@ -4,19 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.set_order_post_request_body import SetOrderPostRequestBody
+from msgraph.generated.models.assignment_order import AssignmentOrder
 
-request_body = SetOrderPostRequestBody()
-new_assignment_order = AssignmentOrder()
-new_assignment_order.Order(['City', 'extension_GUID_ShoeSize', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = SetOrderPostRequestBody(
+	new_assignment_order = AssignmentOrder(
+		order = [
+			"City",
+			"extension_GUID_ShoeSize",
+		],
+	),
+)
 
-request_body.new_assignment_order = new_assignment_order
-
-
-
-await client.identity.b2c_user_flows.by_b2c_user_flow_id('b2cIdentityUserFlow-id').user_attribute_assignments.set_order.post(request_body = request_body)
+await graph_client.identity.b2c_user_flows.by_b2c_identity_user_flow_id('b2cIdentityUserFlow-id').user_attribute_assignments.set_order.post(request_body)
 
 
 ```

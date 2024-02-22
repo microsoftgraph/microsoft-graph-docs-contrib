@@ -4,21 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.scoped_role_membership import ScopedRoleMembership
+from msgraph.generated.models.identity import Identity
 
-request_body = ScopedRoleMembership()
-request_body.role_id = 'roleId-value'
+graph_client = GraphServiceClient(credentials, scopes)
 
-role_member_info = Identity()
-role_member_info.id = 'id-value'
+request_body = ScopedRoleMembership(
+	role_id = "roleId-value",
+	role_member_info = Identity(
+		id = "id-value",
+	),
+)
 
-
-request_body.role_member_info = role_member_info
-
-
-
-result = await client.directory.administrative_units.by_administrative_unit_id('administrativeUnit-id').scoped_role_members.post(request_body = request_body)
+result = await graph_client.directory.administrative_units.by_administrative_unit_id('administrativeUnit-id').scoped_role_members.post(request_body)
 
 
 ```

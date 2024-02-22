@@ -15,12 +15,11 @@ const bulkUpload = {
     Operations: [
     {
         method: 'POST',
-        bulkId: '897401c2-2de4-4b87-a97f-c02de3bcfc61',
+        bulkId: '701984',
         path: '/Users',
         data: {
             schemas: ['urn:ietf:params:scim:schemas:core:2.0:User',
             'urn:ietf:params:scim:schemas:extension:enterprise:2.0:User'],
-            id: '2819c223-7f76-453a-919d-413861904646',
             externalId: '701984',
             userName: 'bjensen@example.com',
             name: {
@@ -72,7 +71,6 @@ const bulkUpload = {
                 department: 'Tour Operations',
                 manager: {
                   value: '89607',
-                  '$ref': '../Users/26118915-6090-4610-87e4-49d8ca9f808d',
                   displayName: 'John Smith'
                  }
             }
@@ -80,12 +78,11 @@ const bulkUpload = {
     },
     {
         method: 'POST',
-        bulkId: '897401c2-2de4-4b87-a97f-c02de3bcfc61',
+        bulkId: '701985',
         path: '/Users',
         data: {
             schemas: ['urn:ietf:params:scim:schemas:core:2.0:User',
             'urn:ietf:params:scim:schemas:extension:enterprise:2.0:User'],
-            id: '2819c223-7f76-453a-919d-413861904646',
             externalId: '701985',
             userName: 'Kjensen@example.com',
             name: {
@@ -130,16 +127,15 @@ const bulkUpload = {
             timezone: 'America/Los_Angeles',
             active: true,
             'urn:ietf:params:scim:schemas:extension:enterprise:2.0:User': {
-            employeeNumber: '701984',
-            costCenter: '4130',
-            organization: 'Universal Studios',
-            division: 'Theme Park',
-            department: 'Tour Operations',
-            manager: {
-              value: '89607',
-              '$ref': '../Users/26118915-6090-4610-87e4-49d8ca9f808d',
-              displayName: 'John Smith'
-             }
+              employeeNumber: '701984',
+              costCenter: '4130',
+              organization: 'Universal Studios',
+              division: 'Theme Park',
+              department: 'Tour Operations',
+              manager: {
+                value: '701984',
+                displayName: 'Barbara Jensen'
+              }
             }
         }
     }

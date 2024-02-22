@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.teamwork.teamTemplates.team_templates_request_builder import TeamTemplatesRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = TeamTemplatesRequestBuilder.TeamTemplatesRequestBuilderGetQueryParameters(
 		expand = ["definitions"],
@@ -16,8 +18,7 @@ request_configuration = TeamTemplatesRequestBuilder.TeamTemplatesRequestBuilderG
 query_parameters = query_params,
 )
 
-
-result = await client.teamwork.team_templates.get(request_configuration = request_configuration)
+result = await graph_client.teamwork.team_templates.get(request_configuration = request_configuration)
 
 
 ```

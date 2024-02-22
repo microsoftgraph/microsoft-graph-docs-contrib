@@ -33,7 +33,7 @@ isInOrgFormsPhishingScanEnabled := false
 settings.SetIsInOrgFormsPhishingScanEnabled(&isInOrgFormsPhishingScanEnabled) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.Admin().Forms().Patch(context.Background(), requestBody, nil)
+forms, err := graphClient.Admin().Forms().Patch(context.Background(), requestBody, nil)
 
 
 ```

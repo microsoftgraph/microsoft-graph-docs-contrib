@@ -19,7 +19,7 @@ requestBody := graphmodelssecurity.NewEdiscoveryCustodian()
 email := "AdeleV@contoso.com"
 requestBody.SetEmail(&email) 
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Custodians().Post(context.Background(), requestBody, nil)
+custodians, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Custodians().Post(context.Background(), requestBody, nil)
 
 
 ```

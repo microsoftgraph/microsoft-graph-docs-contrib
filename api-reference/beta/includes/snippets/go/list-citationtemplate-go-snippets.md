@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().Labels().Citations().Get(context.Background(), nil)
+citations, err := graphClient.Security().Labels().Citations().Get(context.Background(), nil)
 
 
 ```

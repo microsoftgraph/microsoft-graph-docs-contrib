@@ -22,7 +22,7 @@ configuration := &graphprint.PrintPrinterItemJobItemRequestBuilderGetRequestConf
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByJobId("printJob-id").Get(context.Background(), configuration)
+jobs, err := graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByPrintJobId("printJob-id").Get(context.Background(), configuration)
 
 
 ```

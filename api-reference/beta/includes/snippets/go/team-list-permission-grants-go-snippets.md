@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teams().ByTeamId("team-id").PermissionGrants().Get(context.Background(), nil)
+permissionGrants, err := graphClient.Teams().ByTeamId("team-id").PermissionGrants().Get(context.Background(), nil)
 
 
 ```

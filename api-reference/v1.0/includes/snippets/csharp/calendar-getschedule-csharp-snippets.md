@@ -6,14 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Me.Calendar.GetSchedule;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Me.Calendar.GetSchedule.GetSchedulePostRequestBody
+var requestBody = new GetSchedulePostRequestBody
 {
 	Schedules = new List<string>
 	{
-		"adelev@contoso.onmicrosoft.com",
-		"meganb@contoso.onmicrosoft.com",
+		"adelev@contoso.com",
+		"meganb@contoso.com",
 	},
 	StartTime = new DateTimeTimeZone
 	{
@@ -27,6 +29,8 @@ var requestBody = new Microsoft.Graph.Me.Calendar.GetSchedule.GetSchedulePostReq
 	},
 	AvailabilityViewInterval = 60,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.Calendar.GetSchedule.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");

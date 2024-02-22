@@ -19,7 +19,7 @@ requestBody := graphdrives.NewCreateSessionPostRequestBody()
 persistChanges := true
 requestBody.SetPersistChanges(&persistChanges) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().CreateSession().Post(context.Background(), requestBody, nil)
+createSession, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().CreateSession().Post(context.Background(), requestBody, nil)
 
 
 ```

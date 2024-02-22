@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Directory().AttributeSets().ByAttributeSetId("attributeSet-id").Get(context.Background(), nil)
+attributeSets, err := graphClient.Directory().AttributeSets().ByAttributeSetId("attributeSet-id").Get(context.Background(), nil)
 
 
 ```

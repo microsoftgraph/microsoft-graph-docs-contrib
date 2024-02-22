@@ -22,7 +22,7 @@ configuration := &graphdrives.DriveItemItemItemRequestBuilderGetRequestConfigura
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Get(context.Background(), configuration)
+items, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Get(context.Background(), configuration)
 
 
 ```

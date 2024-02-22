@@ -19,7 +19,7 @@ requestBody := graphmodels.NewReferenceCreate()
 odataId := " https://graph.microsoft.com/beta/directoryObjects/2441b489-4f12-4882-b039-8f6006bd66da"
 requestBody.SetOdataId(&odataId) 
 
-graphClient.Policies().FeatureRolloutPolicies().ByFeatureRolloutPolicieId("featureRolloutPolicy-id").AppliesTo().Ref().Post(context.Background(), requestBody, nil)
+graphClient.Policies().FeatureRolloutPolicies().ByFeatureRolloutPolicyId("featureRolloutPolicy-id").AppliesTo().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

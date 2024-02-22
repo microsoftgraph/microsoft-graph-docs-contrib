@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAccessReview()
 displayName := "TestReview new name"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.AccessReviews().ByAccessReviewId("accessReview-id").Patch(context.Background(), requestBody, nil)
+accessReviews, err := graphClient.AccessReviews().ByAccessReviewId("accessReview-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

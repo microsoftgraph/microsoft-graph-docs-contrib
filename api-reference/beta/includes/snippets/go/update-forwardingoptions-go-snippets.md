@@ -19,7 +19,7 @@ requestBody := graphmodelsnetworkaccess.NewForwardingOptions()
 skipDnsLookupState := graphmodels.DISABLED_STATUS 
 requestBody.SetSkipDnsLookupState(&skipDnsLookupState) 
 
-result, err := graphClient.NetworkAccess().Settings().ForwardingOptions().Patch(context.Background(), requestBody, nil)
+forwardingOptions, err := graphClient.NetworkAccess().Settings().ForwardingOptions().Patch(context.Background(), requestBody, nil)
 
 
 ```

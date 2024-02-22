@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.sites.item.lists.item.items.item.versions.item.list_item_version_item_request_builder import ListItemVersionItemRequestBuilder
 
-query_params = ListItemVersionRequestBuilder.ListItemVersionRequestBuilderGetQueryParameters(
+graph_client = GraphServiceClient(credentials, scopes)
+
+query_params = ListItemVersionItemRequestBuilder.ListItemVersionItemRequestBuilderGetQueryParameters(
 		expand = ["fields"],
 )
 
-request_configuration = ListItemVersionRequestBuilder.ListItemVersionRequestBuilderGetRequestConfiguration(
+request_configuration = ListItemVersionItemRequestBuilder.ListItemVersionItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-
-result = await client.sites.by_site_id('site-id').lists.by_list_id('list-id').items.by_item_id('listItem-id').versions.by_version_id('listItemVersion-id').get(request_configuration = request_configuration)
+result = await graph_client.sites.by_site_id('site-id').lists.by_list_id('list-id').items.by_list_item_id('listItem-id').versions.by_list_item_version_id('listItemVersion-id').get(request_configuration = request_configuration)
 
 
 ```

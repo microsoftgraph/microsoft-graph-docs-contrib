@@ -19,7 +19,7 @@ requestBody := graphmodels.NewIdentitySecurityDefaultsEnforcementPolicy()
 isEnabled := false
 requestBody.SetIsEnabled(&isEnabled) 
 
-result, err := graphClient.Policies().IdentitySecurityDefaultsEnforcementPolicy().Patch(context.Background(), requestBody, nil)
+identitySecurityDefaultsEnforcementPolicy, err := graphClient.Policies().IdentitySecurityDefaultsEnforcementPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

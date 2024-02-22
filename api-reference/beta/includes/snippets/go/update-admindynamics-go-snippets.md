@@ -25,7 +25,7 @@ isInOrgFormsPhishingScanEnabled := false
 customerVoice.SetIsInOrgFormsPhishingScanEnabled(&isInOrgFormsPhishingScanEnabled) 
 requestBody.SetCustomerVoice(customerVoice)
 
-result, err := graphClient.Admin().Dynamics().Patch(context.Background(), requestBody, nil)
+dynamics, err := graphClient.Admin().Dynamics().Patch(context.Background(), requestBody, nil)
 
 
 ```

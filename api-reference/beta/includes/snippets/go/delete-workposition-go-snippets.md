@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Profile().Positions().ByPositionId("workPosition-id").Delete(context.Background(), nil)
+graphClient.Me().Profile().Positions().ByWorkPositionId("workPosition-id").Delete(context.Background(), nil)
 
 
 ```

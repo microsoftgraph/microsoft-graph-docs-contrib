@@ -4,24 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.clone_post_request_body import ClonePostRequestBody
 
-request_body = ClonePostRequestBody()
-request_body.display_name = 'Library Assist'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Self help community for library'
+request_body = ClonePostRequestBody(
+	display_name = "Library Assist",
+	description = "Self help community for library",
+	mail_nickname = "libassist",
+	parts_to_clone = ClonableTeamParts.Apps | ClonableTeamParts.Tabs | ClonableTeamParts.Settings | ClonableTeamParts.Channels | ClonableTeamParts.Members,
+	visibility = TeamVisibilityType.Public,
+)
 
-request_body.mail_nickname = 'libassist'
-
-request_body.partstoclone(ClonableTeamParts.Apps,tabs,settings,channels,members('clonableteamparts.apps,tabs,settings,channels,members'))
-
-request_body.visibility(TeamVisibilityType.Public('teamvisibilitytype.public'))
-
-
-
-
-await client.teams.by_team_id('team-id').clone.post(request_body = request_body)
+await graph_client.teams.by_team_id('team-id').clone.post(request_body)
 
 
 ```

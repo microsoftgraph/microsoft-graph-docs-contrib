@@ -4,24 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.contacts.contacts_request_builder import ContactsRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = ContactsRequestBuilder.ContactsRequestBuilderGetQueryParameters(
 		search = "\"displayName:wa\"",
-		count = true,
+		count = True,
 )
 
 request_configuration = ContactsRequestBuilder.ContactsRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
 
 
-result = await client.contacts.get(request_configuration = request_configuration)
+result = await graph_client.contacts.get(request_configuration = request_configuration)
 
 
 ```

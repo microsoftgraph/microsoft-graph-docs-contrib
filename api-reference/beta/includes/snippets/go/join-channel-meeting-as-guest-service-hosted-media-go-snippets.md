@@ -21,7 +21,7 @@ requestBody.SetCallbackUri(&callbackUri)
 source := graphmodels.NewParticipantInfo()
 identity := graphmodels.NewIdentitySet()
 additionalData := map[string]interface{}{
-guest := graphmodels.New()
+guest := graphmodels.NewIdentity()
 displayName := "Guest User"
 guest.SetDisplayName(&displayName) 
 id := "d7a3b999-17ac-4bca-9e77-e6a730d2ec2e"
@@ -79,7 +79,7 @@ allowConversationWithoutHost := true
 meetingInfo.SetAllowConversationWithoutHost(&allowConversationWithoutHost) 
 requestBody.SetMeetingInfo(meetingInfo)
 
-result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
+calls, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

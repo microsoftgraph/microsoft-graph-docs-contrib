@@ -44,7 +44,7 @@ requestBody.SetLocation(location)
 
 attendee := graphmodels.NewAttendee()
 emailAddress := graphmodels.NewEmailAddress()
-address := "adelev@contoso.onmicrosoft.com"
+address := "adelev@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Adele Vance"
 emailAddress.SetName(&name) 
@@ -52,14 +52,14 @@ attendee.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee.SetType(&type) 
 
-attendees := []graphmodels.attendeeable {
+attendees := []graphmodels.Attendeeable {
 	attendee,
 }
 requestBody.SetAttendees(attendees)
 transactionId := "7E163156-7762-4BEB-A1C6-729EA81755A7"
 requestBody.SetTransactionId(&transactionId) 
 
-result, err := graphClient.Me().Calendars().ByCalendarId("calendar-id").Events().Post(context.Background(), requestBody, nil)
+events, err := graphClient.Me().Calendars().ByCalendarId("calendar-id").Events().Post(context.Background(), requestBody, nil)
 
 
 ```

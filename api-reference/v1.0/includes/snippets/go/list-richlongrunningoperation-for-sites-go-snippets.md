@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Sites().BySiteId("site-id").Operations().Get(context.Background(), nil)
+operations, err := graphClient.Sites().BySiteId("site-id").Operations().Get(context.Background(), nil)
 
 
 ```

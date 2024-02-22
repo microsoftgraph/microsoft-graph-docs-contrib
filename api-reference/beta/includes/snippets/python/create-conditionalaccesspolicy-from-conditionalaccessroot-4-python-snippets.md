@@ -4,46 +4,49 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.conditional_access_policy import ConditionalAccessPolicy
+from msgraph.generated.models.conditional_access_condition_set import ConditionalAccessConditionSet
+from msgraph.generated.models.conditional_access_applications import ConditionalAccessApplications
+from msgraph.generated.models.conditional_access_users import ConditionalAccessUsers
+from msgraph.generated.models.conditional_access_devices import ConditionalAccessDevices
+from msgraph.generated.models.conditional_access_grant_controls import ConditionalAccessGrantControls
+from msgraph.generated.models.conditional_access_grant_control import ConditionalAccessGrantControl
 
-request_body = ConditionalAccessPolicy()
-request_body.display_name = 'Require MFA to EXO from non-complaint devices.'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.state(ConditionalAccessPolicyState.Enabled('conditionalaccesspolicystate.enabled'))
+request_body = ConditionalAccessPolicy(
+	display_name = "Require MFA to EXO from non-complaint devices.",
+	state = ConditionalAccessPolicyState.Enabled,
+	conditions = ConditionalAccessConditionSet(
+		applications = ConditionalAccessApplications(
+			include_applications = [
+				"00000002-0000-0ff1-ce00-000000000000",
+			],
+		),
+		users = ConditionalAccessUsers(
+			include_groups = [
+				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba",
+			],
+		),
+		devices = ConditionalAccessDevices(
+			include_devices = [
+				"All",
+			],
+			exclude_devices = [
+				"Compliant",
+			],
+		),
+	),
+	grant_controls = ConditionalAccessGrantControls(
+		operator = "OR",
+		built_in_controls = [
+			ConditionalAccessGrantControl.Mfa,
+		],
+	),
+)
 
-conditions = ConditionalAccessConditionSet()
-conditionsapplications = ConditionalAccessApplications()
-conditionsapplications.IncludeApplications(['00000002-0000-0ff1-ce00-000000000000', ])
-
-
-conditions.applications = conditionsapplications
-conditionsusers = ConditionalAccessUsers()
-conditionsusers.IncludeGroups(['ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba', ])
-
-
-conditions.users = conditionsusers
-conditionsdevices = ConditionalAccessDevices()
-conditionsdevices.IncludeDevices(['All', ])
-
-conditionsdevices.ExcludeDevices(['Compliant', ])
-
-
-conditions.devices = conditionsdevices
-
-request_body.conditions = conditions
-grant_controls = ConditionalAccessGrantControls()
-grant_controls.operator = 'OR'
-
-grant_controls.BuiltInControls([grant_controls.conditionalaccessgrantcontrol(ConditionalAccessGrantControl.Mfa('conditionalaccessgrantcontrol.mfa'))
-])
-
-
-request_body.grant_controls = grant_controls
-
-
-
-result = await client.identity.conditional_access.policies.post(request_body = request_body)
+result = await graph_client.identity.conditional_access.policies.post(request_body)
 
 
 ```

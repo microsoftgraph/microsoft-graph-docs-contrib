@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetOneDriveUsageAccountDetail(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetOneDriveUsageAccountDetailWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

@@ -25,7 +25,7 @@ configuration := &graphidentityprotection.IdentityProtectionRiskyUsersRequestBui
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityProtection().RiskyUsers().Get(context.Background(), configuration)
+riskyUsers, err := graphClient.IdentityProtection().RiskyUsers().Get(context.Background(), configuration)
 
 
 ```

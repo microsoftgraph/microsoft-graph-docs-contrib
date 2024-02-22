@@ -23,7 +23,7 @@ requestBody.SetDefinition(definition)
 displayName := "Test1234"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Policies().ClaimsMappingPolicies().Post(context.Background(), requestBody, nil)
+claimsMappingPolicies, err := graphClient.Policies().ClaimsMappingPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

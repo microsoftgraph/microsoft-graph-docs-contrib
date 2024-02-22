@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.deviceManagement.virtualEndpoint.onPremisesConnections.item.cloud_pc_on_premises_connection_item_request_builder import CloudPcOnPremisesConnectionItemRequestBuilder
 
-query_params = CloudPcOnPremisesConnectionRequestBuilder.CloudPcOnPremisesConnectionRequestBuilderGetQueryParameters(
+graph_client = GraphServiceClient(credentials, scopes)
+
+query_params = CloudPcOnPremisesConnectionItemRequestBuilder.CloudPcOnPremisesConnectionItemRequestBuilderGetQueryParameters(
 		select = ["id","displayName","healthCheckStatus","healthCheckStatusDetails","inUse"],
 )
 
-request_configuration = CloudPcOnPremisesConnectionRequestBuilder.CloudPcOnPremisesConnectionRequestBuilderGetRequestConfiguration(
+request_configuration = CloudPcOnPremisesConnectionItemRequestBuilder.CloudPcOnPremisesConnectionItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-
-result = await client.device_management.virtual_endpoint.on_premise_connections.by_on_premise_connection_id('cloudPcOnPremisesConnection-id').get(request_configuration = request_configuration)
+result = await graph_client.device_management.virtual_endpoint.on_premises_connections.by_cloud_pc_on_premises_connection_id('cloudPcOnPremisesConnection-id').get(request_configuration = request_configuration)
 
 
 ```

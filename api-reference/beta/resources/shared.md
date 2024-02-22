@@ -1,6 +1,6 @@
 ---
 title: Shared
-author: JeremyKelley
+author: spgraph-docs-team
 description: The Shared resource indicates a DriveItem has been shared with others.
 ms.date: 09/10/2017
 ms.localizationpriority: medium

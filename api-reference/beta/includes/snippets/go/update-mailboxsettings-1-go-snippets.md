@@ -37,7 +37,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().MailboxSettings().Patch(context.Background(), requestBody, nil)
+mailboxSettings, err := graphClient.Me().MailboxSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

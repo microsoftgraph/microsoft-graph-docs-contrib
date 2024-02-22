@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc users app-role-assignments list --user-id {user-id}
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc users app-role-assignments list --user-id {user-id} --count "true" --consistency-level "eventual"
 
 ```

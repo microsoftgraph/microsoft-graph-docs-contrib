@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewThreatAssessmentRequest()
-recipientEmail := "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
+recipientEmail := "tifc@contoso.com"
 requestBody.SetRecipientEmail(&recipientEmail) 
 expectedAssessment := graphmodels.BLOCK_THREATEXPECTEDASSESSMENT 
 requestBody.SetExpectedAssessment(&expectedAssessment) 
@@ -25,7 +25,7 @@ requestBody.SetCategory(&category)
 messageUri := "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
 requestBody.SetMessageUri(&messageUri) 
 
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
+threatAssessmentRequests, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

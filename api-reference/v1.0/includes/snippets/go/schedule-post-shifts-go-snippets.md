@@ -83,7 +83,7 @@ activities := []graphmodels.ShiftActivityable {
 draftShift.SetActivities(activities)
 requestBody.SetDraftShift(draftShift)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().Shifts().Post(context.Background(), requestBody, nil)
+shifts, err := graphClient.Teams().ByTeamId("team-id").Schedule().Shifts().Post(context.Background(), requestBody, nil)
 
 
 ```

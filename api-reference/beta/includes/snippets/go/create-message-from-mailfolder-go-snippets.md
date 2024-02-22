@@ -34,7 +34,7 @@ requestBody.SetBody(body)
 bodyPreview := "bodyPreview-value"
 requestBody.SetBodyPreview(&bodyPreview) 
 
-result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.mute_post_request_body import MutePostRequestBody
 
-request_body = MutePostRequestBody()
-request_body.client_context = 'clientContext-value'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = MutePostRequestBody(
+	client_context = "clientContext-value",
+)
 
-
-
-result = await client.communications.calls.by_call_id('call-id').mute.post(request_body = request_body)
+result = await graph_client.communications.calls.by_call_id('call-id').mute.post(request_body)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Groups().ByGroupId("group-id").Endpoints().ByEndpointId("endpoint-id").Get(context.Background(), nil)
+endpoints, err := graphClient.Groups().ByGroupId("group-id").Endpoints().ByEndpointId("endpoint-id").Get(context.Background(), nil)
 
 
 ```

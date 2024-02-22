@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 isHidden := true
 requestBody.SetIsHidden(&isHidden) 
 
-result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
+childFolders, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

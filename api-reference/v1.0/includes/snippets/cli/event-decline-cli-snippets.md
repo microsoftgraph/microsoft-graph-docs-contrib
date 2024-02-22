@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc users events decline post --user-id {user-id} --event-id {event-id} --body '{\
   "comment": "I won't be able to make this week. How about next week?",\
   "sendResponse": true,\

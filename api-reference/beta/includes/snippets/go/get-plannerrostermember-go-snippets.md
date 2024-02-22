@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Planner().Rosters().ByRosterId("plannerRoster-id").Members().ByMemberId("plannerRosterMember-id").Get(context.Background(), nil)
+members, err := graphClient.Planner().Rosters().ByPlannerRosterId("plannerRoster-id").Members().ByPlannerRosterMemberId("plannerRosterMember-id").Get(context.Background(), nil)
 
 
 ```

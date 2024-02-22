@@ -19,7 +19,7 @@ requestBody := graphdevicemanagement.NewUpdateAdDomainPasswordPostRequestBody()
 adDomainPassword := "AdDomainPassword value"
 requestBody.SetAdDomainPassword(&adDomainPassword) 
 
-graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().ByOnPremisesConnectionId("cloudPcOnPremisesConnection-id").UpdateAdDomainPassword().Post(context.Background(), requestBody, nil)
+graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().ByCloudPcOnPremisesConnectionId("cloudPcOnPremisesConnection-id").UpdateAdDomainPassword().Post(context.Background(), requestBody, nil)
 
 
 ```

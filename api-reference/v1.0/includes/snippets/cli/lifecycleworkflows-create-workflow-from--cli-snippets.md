@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc identity-governance lifecycle-workflows workflows create --body '{\
     "category": "joiner",\
     "description": "Configure new hire tasks for onboarding employees on their first day",\

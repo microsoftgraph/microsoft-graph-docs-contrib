@@ -21,7 +21,7 @@ requestBody.SetAddress(&address)
 hasHeaders := true
 requestBody.SetHasHeaders(&hasHeaders) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().Add().Post(context.Background(), requestBody, nil)
+add, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().Add().Post(context.Background(), requestBody, nil)
 
 
 ```

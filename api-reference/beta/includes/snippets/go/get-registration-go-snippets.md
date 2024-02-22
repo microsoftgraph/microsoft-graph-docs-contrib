@@ -22,7 +22,7 @@ configuration := &graphusers.ItemOnlineMeetingItemRegistrationRequestBuilderGetR
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Get(context.Background(), configuration)
+registration, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Get(context.Background(), configuration)
 
 
 ```

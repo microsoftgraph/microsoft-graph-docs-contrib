@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Security().Labels().FilePlanReferences().ByFilePlanReferenceId("filePlanReferenceTemplate-id").Delete(context.Background(), nil)
+graphClient.Security().Labels().FilePlanReferences().ByFilePlanReferenceTemplateId("filePlanReferenceTemplate-id").Delete(context.Background(), nil)
 
 
 ```

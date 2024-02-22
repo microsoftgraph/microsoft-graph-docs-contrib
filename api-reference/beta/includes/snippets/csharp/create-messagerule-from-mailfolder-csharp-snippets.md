@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new MessageRule
 {
@@ -29,13 +30,15 @@ var requestBody = new MessageRule
 				EmailAddress = new EmailAddress
 				{
 					Name = "Alex Wilbur",
-					Address = "AlexW@contoso.onmicrosoft.com",
+					Address = "AlexW@contoso.com",
 				},
 			},
 		},
 		StopProcessingRules = true,
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.MailFolders["{mailFolder-id}"].MessageRules.PostAsync(requestBody);
 
 

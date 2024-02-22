@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Profile().EducationalActivities().ByEducationalActivitieId("educationalActivity-id").Get(context.Background(), nil)
+educationalActivities, err := graphClient.Me().Profile().EducationalActivities().ByEducationalActivityId("educationalActivity-id").Get(context.Background(), nil)
 
 
 ```

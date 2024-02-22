@@ -28,7 +28,7 @@ requestBody.SetEnabled(&enabled)
 lastConnectionDateTime , err := time.Parse(time.RFC3339, "2016-12-31T23:58:36.6670033-08:00")
 requestBody.SetLastConnectionDateTime(&lastConnectionDateTime) 
 
-result, err := graphClient.DeviceManagement().TelecomExpenseManagementPartners().ByTelecomExpenseManagementPartnerId("telecomExpenseManagementPartner-id").Patch(context.Background(), requestBody, nil)
+telecomExpenseManagementPartners, err := graphClient.DeviceManagement().TelecomExpenseManagementPartners().ByTelecomExpenseManagementPartnerId("telecomExpenseManagementPartner-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

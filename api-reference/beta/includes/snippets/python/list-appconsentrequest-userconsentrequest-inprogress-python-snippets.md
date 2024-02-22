@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.identityGovernance.appConsent.appConsentRequests.app_consent_requests_request_builder import AppConsentRequestsRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = AppConsentRequestsRequestBuilder.AppConsentRequestsRequestBuilderGetQueryParameters(
 		filter = "userConsentRequests/any (u:u/status eq 'InProgress')",
@@ -15,8 +17,7 @@ request_configuration = AppConsentRequestsRequestBuilder.AppConsentRequestsReque
 query_parameters = query_params,
 )
 
-
-result = await client.identity_governance.app_consent.app_consent_requests.get(request_configuration = request_configuration)
+result = await graph_client.identity_governance.app_consent.app_consent_requests.get(request_configuration = request_configuration)
 
 
 ```

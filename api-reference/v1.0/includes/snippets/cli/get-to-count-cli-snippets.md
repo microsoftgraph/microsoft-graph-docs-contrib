@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc users list --search "displayName:wa" OR "displayName:ad" --count true --consistency-level eventual
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc users list --search ""displayName:wa" OR "displayName:ad"" --count "true" --consistency-level "eventual"
 
 ```

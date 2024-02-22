@@ -4,29 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.forward_post_request_body import ForwardPostRequestBody
+from msgraph.generated.models.recipient import Recipient
+from msgraph.generated.models.email_address import EmailAddress
 
-request_body = ForwardPostRequestBody()
-to_recipients_recipient1 = Recipient()
-to_recipients_recipient1email_address = EmailAddress()
-to_recipients_recipient1email_address.address = 'danas@contoso.onmicrosoft.com'
+graph_client = GraphServiceClient(credentials, scopes)
 
-to_recipients_recipient1email_address.name = 'Dana Swope'
+request_body = ForwardPostRequestBody(
+	to_recipients = [
+		Recipient(
+			email_address = EmailAddress(
+				address = "danas@contoso.com",
+				name = "Dana Swope",
+			),
+		),
+	],
+	comment = "Dana, hope you can make this meeting.",
+)
 
-
-to_recipients_recipient1.email_address = to_recipients_recipient1email_address
-
-toRecipientsArray []= toRecipientsRecipient1;
-request_body.torecipients(toRecipientsArray)
-
-
-request_body.comment = 'Dana, hope you can make this meeting.'
-
-
-
-
-await client.me.events.by_event_id('event-id').forward.post(request_body = request_body)
+await graph_client.me.events.by_event_id('event-id').forward.post(request_body)
 
 
 ```

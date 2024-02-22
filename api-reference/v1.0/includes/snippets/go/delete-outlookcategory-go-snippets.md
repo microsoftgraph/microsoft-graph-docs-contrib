@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Outlook().MasterCategories().ByMasterCategorieId("outlookCategory-id").Delete(context.Background(), nil)
+graphClient.Me().Outlook().MasterCategories().ByOutlookCategoryId("outlookCategory-id").Delete(context.Background(), nil)
 
 
 ```

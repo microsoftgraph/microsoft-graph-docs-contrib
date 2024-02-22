@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc tenant-relationships delegated-admin-relationships patch --delegated-admin-relationship-id {delegatedAdminRelationship-id} --body '{\
   "displayName": "Updated Contoso admin relationship",\
   "duration": "P31D",\
@@ -25,7 +26,8 @@ mgc tenant-relationships delegated-admin-relationships patch --delegated-admin-r
         "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"\
       }\
     ]\
-  }\
+  },\
+  "autoExtendDuration": "P180D"\
 }\
 '
 

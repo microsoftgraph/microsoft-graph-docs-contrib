@@ -22,7 +22,7 @@ configuration := &graphgroups.GroupItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Groups().ByGroupId("group-id").Get(context.Background(), configuration)
+groups, err := graphClient.Groups().ByGroupId("group-id").Get(context.Background(), configuration)
 
 
 ```

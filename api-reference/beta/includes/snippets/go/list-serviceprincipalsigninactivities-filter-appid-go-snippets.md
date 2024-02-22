@@ -25,7 +25,7 @@ configuration := &graphreports.ReportsServicePrincipalSignInActivitiesRequestBui
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Reports().ServicePrincipalSignInActivities().Get(context.Background(), configuration)
+servicePrincipalSignInActivities, err := graphClient.Reports().ServicePrincipalSignInActivities().Get(context.Background(), configuration)
 
 
 ```

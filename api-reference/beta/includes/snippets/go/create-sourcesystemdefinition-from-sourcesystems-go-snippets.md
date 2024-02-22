@@ -57,7 +57,7 @@ userMatchingSettings := []graphmodelsindustrydata.UserMatchingSettingable {
 }
 requestBody.SetUserMatchingSettings(userMatchingSettings)
 
-result, err := graphClient.External().IndustryData().SourceSystems().Post(context.Background(), requestBody, nil)
+sourceSystems, err := graphClient.External().IndustryData().SourceSystems().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -159,7 +159,7 @@ signInFrequency.SetIsEnabled(&isEnabled)
 sessionControls.SetSignInFrequency(signInFrequency)
 requestBody.SetSessionControls(sessionControls)
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
+policies, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
 
 
 ```

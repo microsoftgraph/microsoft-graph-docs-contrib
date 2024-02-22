@@ -19,7 +19,7 @@ requestBody := graphmodels.NewConversationThread()
 isLocked := true
 requestBody.SetIsLocked(&isLocked) 
 
-result, err := graphClient.Groups().ByGroupId("group-id").Threads().ByThreadId("conversationThread-id").Patch(context.Background(), requestBody, nil)
+threads, err := graphClient.Groups().ByGroupId("group-id").Threads().ByConversationThreadId("conversationThread-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

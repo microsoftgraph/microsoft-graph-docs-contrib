@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.identity.conditionalAccess.templates.templates_request_builder import TemplatesRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = TemplatesRequestBuilder.TemplatesRequestBuilderGetQueryParameters(
 		select = ["name","description","id","scenarios"],
@@ -16,8 +18,7 @@ request_configuration = TemplatesRequestBuilder.TemplatesRequestBuilderGetReques
 query_parameters = query_params,
 )
 
-
-result = await client.identity.conditional_access.templates.get(request_configuration = request_configuration)
+result = await graph_client.identity.conditional_access.templates.get(request_configuration = request_configuration)
 
 
 ```

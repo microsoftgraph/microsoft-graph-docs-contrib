@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 Runs the query specified in the request body. Search results are provided in the response.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All, Acronym.Read.All, Bookmark.Read.All,  ChannelMessage.Read.All, Chat.Read |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Files.Read.All, Sites.Read.All |
+<!-- { "blockType": "permissions", "name": "search_query" } -->
+[!INCLUDE [permissions-table](../includes/permissions/search-query-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +33,7 @@ POST /search/query
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -75,7 +74,8 @@ Content-type: application/json
       "contentSources": [
         "/external/connections/connectionfriendlyname"
       ],
-      "query": {
+       "region": "US",
+       "query": {
         "queryString": "contoso product"
       },
       "from": 0,
@@ -180,7 +180,8 @@ Content-type: application/json
       "entityTypes": [
         "listItem"
       ],
-      "query": {
+        "region": "US",
+        "query": {
         "queryString": "contoso",
         "queryTemplate":"{searchTerms} CreatedBy:Bob"
       },
@@ -274,7 +275,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))

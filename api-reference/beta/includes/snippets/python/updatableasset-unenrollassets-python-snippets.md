@@ -4,26 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unenroll_assets_post_request_body import UnenrollAssetsPostRequestBody
+from msgraph.generated.models.updatable_asset import UpdatableAsset
+from msgraph.generated.models.azure_a_d_device import AzureADDevice
 
-request_body = UnenrollAssetsPostRequestBody()
-request_body.updatecategory(UpdateCategory.String('updatecategory.string'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-assets_updatable_asset1 = AzureADDevice()
-assets_updatable_asset1.@odata_type = '#microsoft.graph.windowsUpdates.azureADDevice'
+request_body = UnenrollAssetsPostRequestBody(
+	update_category = UpdateCategory.Feature,
+	assets = [
+		AzureADDevice(
+			odata_type = "#microsoft.graph.windowsUpdates.azureADDevice",
+			id = "String (identifier)",
+		),
+	],
+)
 
-assets_updatable_asset1.id = 'String (identifier)'
-
-
-assetsArray []= assetsUpdatableAsset1;
-request_body.assets(assetsArray)
-
-
-
-
-
-await client.admin.windows.updates.updatable_assets.microsoft_graph_window_update_unenroll_assets.post(request_body = request_body)
+await graph_client.admin.windows.updates.updatable_assets.microsoft_graph_windows_updates_unenroll_assets.post(request_body)
 
 
 ```

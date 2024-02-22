@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.solutions.businessScenarios.item.planner.planConfiguration.localizations.localizations_request_builder import LocalizationsRequestBuilder
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = LocalizationsRequestBuilder.LocalizationsRequestBuilderGetQueryParameters(
 		filter = "languageTag eq 'en-us'",
@@ -15,8 +17,7 @@ request_configuration = LocalizationsRequestBuilder.LocalizationsRequestBuilderG
 query_parameters = query_params,
 )
 
-
-result = await client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.plan_configuration.localizations.get(request_configuration = request_configuration)
+result = await graph_client.solutions.business_scenarios.by_business_scenario_id('businessScenario-id').planner.plan_configuration.localizations.get(request_configuration = request_configuration)
 
 
 ```

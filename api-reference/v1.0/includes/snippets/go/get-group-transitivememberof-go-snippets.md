@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Groups().ByGroupId("group-id").TransitiveMemberOf().Get(context.Background(), nil)
+transitiveMemberOf, err := graphClient.Groups().ByGroupId("group-id").TransitiveMemberOf().Get(context.Background(), nil)
 
 
 ```

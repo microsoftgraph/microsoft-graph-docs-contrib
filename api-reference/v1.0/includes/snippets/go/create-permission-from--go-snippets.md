@@ -35,7 +35,7 @@ grantedToIdentities := []graphmodels.IdentitySetable {
 }
 requestBody.SetGrantedToIdentities(grantedToIdentities)
 
-result, err := graphClient.Sites().BySiteId("site-id").Permissions().Post(context.Background(), requestBody, nil)
+permissions, err := graphClient.Sites().BySiteId("site-id").Permissions().Post(context.Background(), requestBody, nil)
 
 
 ```

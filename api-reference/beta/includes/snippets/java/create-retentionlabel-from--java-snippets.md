@@ -4,32 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RetentionLabel retentionLabel = new RetentionLabel();
-retentionLabel.displayName = "String";
-retentionLabel.behaviorDuringRetentionPeriod = BehaviorDuringRetentionPeriod.DO_NOT_RETAIN;
-retentionLabel.actionAfterRetentionPeriod = ActionAfterRetentionPeriod.NONE;
-retentionLabel.retentionTrigger = RetentionTrigger.DATE_LABELED;
-RetentionDuration retentionDuration = new RetentionDuration();
-retentionLabel.retentionDuration = retentionDuration;
-retentionLabel.isInUse = false;
-retentionLabel.descriptionForAdmins = "String";
-retentionLabel.descriptionForUsers = "String";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.models.security.RetentionLabel retentionLabel = new com.microsoft.graph.beta.models.security.RetentionLabel();
+retentionLabel.setOdataType("#microsoft.graph.security.retentionLabel");
+retentionLabel.setDisplayName("String");
+retentionLabel.setBehaviorDuringRetentionPeriod(com.microsoft.graph.beta.models.security.BehaviorDuringRetentionPeriod.DoNotRetain);
+retentionLabel.setActionAfterRetentionPeriod(com.microsoft.graph.beta.models.security.ActionAfterRetentionPeriod.None);
+retentionLabel.setRetentionTrigger(com.microsoft.graph.beta.models.security.RetentionTrigger.DateLabeled);
+com.microsoft.graph.beta.models.security.RetentionDuration retentionDuration = new com.microsoft.graph.beta.models.security.RetentionDuration();
+retentionDuration.setOdataType("microsoft.graph.security.retentionDuration");
+retentionLabel.setRetentionDuration(retentionDuration);
+retentionLabel.setIsInUse(boolean);
+retentionLabel.setDescriptionForAdmins("String");
+retentionLabel.setDescriptionForUsers("String");
 IdentitySet createdBy = new IdentitySet();
-retentionLabel.createdBy = createdBy;
-retentionLabel.labelToBeApplied = "String";
-retentionLabel.defaultRecordBehavior = DefaultRecordBehavior.START_LOCKED;
-FilePlanDescriptor descriptors = new FilePlanDescriptor();
-descriptors.additionalDataManager().put("authorityTemplate@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')"));
-descriptors.additionalDataManager().put("categoryTemplate@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')"));
-descriptors.additionalDataManager().put("citationTemplate@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/security/labels/citations('0e23f4fc-b966-4c40-94de-fb8a383658e4')"));
-descriptors.additionalDataManager().put("departmentTemplate@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')"));
-descriptors.additionalDataManager().put("filePlanReferenceTemplate@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')"));
-retentionLabel.descriptors = descriptors;
+createdBy.setOdataType("microsoft.graph.identitySet");
+retentionLabel.setCreatedBy(createdBy);
+retentionLabel.setLabelToBeApplied("String");
+retentionLabel.setDefaultRecordBehavior(com.microsoft.graph.beta.models.security.DefaultRecordBehavior.StartLocked);
+com.microsoft.graph.beta.models.security.FilePlanDescriptor descriptors = new com.microsoft.graph.beta.models.security.FilePlanDescriptor();
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("authorityTemplate@odata.bind", "https://graph.microsoft.com/beta/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')");
+additionalData.put("categoryTemplate@odata.bind", "https://graph.microsoft.com/beta/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')");
+additionalData.put("citationTemplate@odata.bind", "https://graph.microsoft.com/beta/security/labels/citations('0e23f4fc-b966-4c40-94de-fb8a383658e4')");
+additionalData.put("departmentTemplate@odata.bind", "https://graph.microsoft.com/beta/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')");
+additionalData.put("filePlanReferenceTemplate@odata.bind", "https://graph.microsoft.com/beta/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')");
+descriptors.setAdditionalData(additionalData);
+retentionLabel.setDescriptors(descriptors);
+com.microsoft.graph.models.security.RetentionLabel result = graphClient.security().labels().retentionLabels().post(retentionLabel);
 
-graphClient.security().labels().retentionLabels()
-	.buildRequest()
-	.post(retentionLabel);
 
 ```

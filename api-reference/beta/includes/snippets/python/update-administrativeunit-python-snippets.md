@@ -4,24 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.administrative_unit import AdministrativeUnit
 
-request_body = AdministrativeUnit()
-request_body.display_name = 'Executive Division'
+graph_client = GraphServiceClient(credentials, scopes)
 
-additional_data = [
-'membership_type' => 'Dynamic', 
-'membership_rule' => '(user.country -eq \"United States\")', 
-'membership_rule_processing_state' => 'On', 
-];
-request_body.additional_data(additional_data)
+request_body = AdministrativeUnit(
+	display_name = "Executive Division",
+	additional_data = {
+			"membership_type" : "Dynamic",
+			"membership_rule" : "(user.country -eq \"United States\")",
+			"membership_rule_processing_state" : "On",
+	}
+)
 
-
-
-
-
-result = await client.administrative_units.by_administrative_unit_id('administrativeUnit-id').patch(request_body = request_body)
+result = await graph_client.administrative_units.by_administrative_unit_id('administrativeUnit-id').patch(request_body)
 
 
 ```

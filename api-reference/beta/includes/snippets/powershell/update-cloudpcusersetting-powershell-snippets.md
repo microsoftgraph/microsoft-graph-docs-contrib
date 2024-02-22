@@ -12,9 +12,11 @@ $params = @{
 	selfServiceEnabled = $true
 	restorePointSetting = @{
 		frequencyInHours = 16
+		frequencyType = "sixteenHours"
 		userRestoreEnabled = $true
 	}
 	localAdminEnabled = $false
+	resetEnabled = $true
 }
 
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params

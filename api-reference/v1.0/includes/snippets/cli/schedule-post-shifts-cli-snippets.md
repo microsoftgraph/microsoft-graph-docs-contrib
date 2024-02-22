@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc teams schedule shifts create --team-id {team-id} --body '{\
   "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",\
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",\

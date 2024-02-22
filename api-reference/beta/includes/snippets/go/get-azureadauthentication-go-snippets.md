@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Reports().Sla().AzureADAuthentication().Get(context.Background(), nil)
+azureADAuthentication, err := graphClient.Reports().Sla().AzureADAuthentication().Get(context.Background(), nil)
 
 
 ```

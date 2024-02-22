@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc identity-protection risky-users confirm-compromised post --body '{\
   "userIds": [\
     "29f270bb-4d23-4f68-8a57-dc73dc0d4caf",\

@@ -1,7 +1,7 @@
 ---
 title: "message resource type"
 description: "A message in a mailFolder."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: resourcePageType
@@ -178,7 +178,7 @@ Here is a JSON representation of the resource
 
 ```
 
-## See also
+## Related content
 
 - [Get mailbox settings](../api/user-get-mailboxsettings.md)
 - [Update mailbox settings](../api/user-update-mailboxsettings.md)

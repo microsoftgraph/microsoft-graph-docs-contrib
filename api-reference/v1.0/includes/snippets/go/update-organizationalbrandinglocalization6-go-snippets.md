@@ -21,7 +21,7 @@ requestBody.SetBackgroundColor(&backgroundColor)
 signInPageText := "Welcome to Contoso France"
 requestBody.SetSignInPageText(&signInPageText) 
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").Branding().Localizations().ByLocalizationId("organizationalBrandingLocalization-id").Patch(context.Background(), requestBody, nil)
+localizations, err := graphClient.Organization().ByOrganizationId("organization-id").Branding().Localizations().ByOrganizationalBrandingLocalizationId("organizationalBrandingLocalization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Profile().Skills().BySkillId("skillProficiency-id").Delete(context.Background(), nil)
+graphClient.Me().Profile().Skills().BySkillProficiencyId("skillProficiency-id").Delete(context.Background(), nil)
 
 
 ```

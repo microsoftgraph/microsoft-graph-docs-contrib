@@ -10,6 +10,7 @@ $params = @{
 	marketingNotificationEmails = @(
 		"marketing@contoso.com"
 	)
+	onPremisesSyncEnabled = $true
 	privacyProfile = @{
 		contactEmail = "alice@contoso.com"
 		statementUrl = "https://contoso.com/privacyStatement"

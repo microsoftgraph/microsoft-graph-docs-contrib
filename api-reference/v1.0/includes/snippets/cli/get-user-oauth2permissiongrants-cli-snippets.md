@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc users oauth2permission-grants list --user-id {user-id}
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc users oauth2-permission-grants list --user-id {user-id}
 
 ```

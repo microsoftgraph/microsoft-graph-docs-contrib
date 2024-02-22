@@ -20,10 +20,10 @@ Represents common properties for a user account.
 | Property          | Type   | Description                                                            |
 |:------------------|:-------|:-----------------------------------------------------------------------|
 | accountName       | String | The displayed name of the user account.                                |
-| azureAdUserId     | String | The user object identifier in Azure Active Directory (Azure AD).       |
-| displayName       | String | The user display name in Azure AD.                                     |
+| azureAdUserId     | String | The user object identifier in Microsoft Entra ID.       |
+| displayName       | String | The user display name in Microsoft Entra ID.                                     |
 | domainName        | String | The name of the Active Directory domain of which the user is a member. |
-| userPrincipalName | String | The user principal name of the account in Azure AD.                    |
+| userPrincipalName | String | The user principal name of the account in Microsoft Entra ID.                    |
 | userSid           | String | The local security identifier of the user account.                     |
 
 ## Relationships

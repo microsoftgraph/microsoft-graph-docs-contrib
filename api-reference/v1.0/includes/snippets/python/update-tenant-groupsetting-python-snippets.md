@@ -4,24 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.group_setting import GroupSetting
+from msgraph.generated.models.setting_value import SettingValue
 
-request_body = GroupSetting()
-values_setting_value1 = SettingValue()
-values_setting_value1.name = 'AllowToAddGuests'
+graph_client = GraphServiceClient(credentials, scopes)
 
-values_setting_value1.value = 'false'
+request_body = GroupSetting(
+	values = [
+		SettingValue(
+			name = "AllowToAddGuests",
+			value = "false",
+		),
+	],
+)
 
-
-valuesArray []= valuesSettingValue1;
-request_body.values(valuesArray)
-
-
-
-
-
-result = await client.group_settings.by_group_setting_id('groupSetting-id').patch(request_body = request_body)
+result = await graph_client.group_settings.by_group_setting_id('groupSetting-id').patch(request_body)
 
 
 ```

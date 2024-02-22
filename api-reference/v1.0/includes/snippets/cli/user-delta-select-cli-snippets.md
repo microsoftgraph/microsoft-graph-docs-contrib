@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc users delta get --select displayName,jobTitle,mobilePhone
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc users delta get --select "displayName,jobTitle,mobilePhone"
 
 ```

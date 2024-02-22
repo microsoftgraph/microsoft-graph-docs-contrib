@@ -35,7 +35,7 @@ monitoring.SetMonitoringRules(monitoringRules)
 settings.SetMonitoring(monitoring)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.Admin().Windows().Updates().Deployments().ByDeploymentId("deployment-id").Patch(context.Background(), requestBody, nil)
+deployments, err := graphClient.Admin().Windows().Updates().Deployments().ByDeploymentId("deployment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

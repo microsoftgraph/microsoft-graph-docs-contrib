@@ -4,26 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.email_url_threat_submission import EmailUrlThreatSubmission
 
-request_body = EmailThreatSubmission()
-request_body.@odata_type = '#microsoft.graph.emailUrlThreatSubmission'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.category(SubmissionCategory.Spam('submissioncategory.spam'))
+request_body = EmailUrlThreatSubmission(
+	odata_type = "#microsoft.graph.security.emailUrlThreatSubmission",
+	category = SubmissionCategory.Spam,
+	recipient_email_address = "tifc@contoso.com",
+	message_url = "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
+)
 
-request_body.recipient_email_address = 'tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com'
-
-additional_data = [
-'message_url' => 'https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.security.threat_submission.email_threats.post(request_body = request_body)
+result = await graph_client.security.threat_submission.email_threats.post(request_body)
 
 
 ```

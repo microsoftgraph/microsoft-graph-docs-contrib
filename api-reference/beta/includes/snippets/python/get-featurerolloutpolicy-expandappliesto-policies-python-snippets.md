@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.policies.featureRolloutPolicies.item.feature_rollout_policy_item_request_builder import FeatureRolloutPolicyItemRequestBuilder
 
-query_params = FeatureRolloutPolicyRequestBuilder.FeatureRolloutPolicyRequestBuilderGetQueryParameters(
+graph_client = GraphServiceClient(credentials, scopes)
+
+query_params = FeatureRolloutPolicyItemRequestBuilder.FeatureRolloutPolicyItemRequestBuilderGetQueryParameters(
 		expand = ["appliesTo"],
 )
 
-request_configuration = FeatureRolloutPolicyRequestBuilder.FeatureRolloutPolicyRequestBuilderGetRequestConfiguration(
+request_configuration = FeatureRolloutPolicyItemRequestBuilder.FeatureRolloutPolicyItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-
-result = await client.policies.feature_rollout_policies.by_feature_rollout_policie_id('featureRolloutPolicy-id').get(request_configuration = request_configuration)
+result = await graph_client.policies.feature_rollout_policies.by_feature_rollout_policy_id('featureRolloutPolicy-id').get(request_configuration = request_configuration)
 
 
 ```

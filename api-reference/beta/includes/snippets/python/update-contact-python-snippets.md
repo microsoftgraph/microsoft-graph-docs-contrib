@@ -4,37 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.contact import Contact
+from msgraph.generated.models.typed_email_address import TypedEmailAddress
 
-request_body = Contact()
-email_addresses_typed_email_address1 = TypedEmailAddress()
-email_addresses_typed_email_address1.type(EmailType.Personal('emailtype.personal'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-email_addresses_typed_email_address1.name = 'Pavel Bansky'
+request_body = Contact(
+	email_addresses = [
+		TypedEmailAddress(
+			type = EmailType.Personal,
+			name = "Pavel Bansky",
+			address = "pavelb@contoso.com",
+		),
+		TypedEmailAddress(
+			address = "pavelb@contoso.com",
+			name = "Pavel Bansky",
+			type = EmailType.Other,
+			other_label = "Volunteer work",
+		),
+	],
+)
 
-email_addresses_typed_email_address1.address = 'pavelb@adatum.onmicrosoft.com'
-
-
-emailAddressesArray []= emailAddressesTypedEmailAddress1;
-email_addresses_typed_email_address2 = TypedEmailAddress()
-email_addresses_typed_email_address2.address = 'pavelb@fabrikam.onmicrosoft.com'
-
-email_addresses_typed_email_address2.name = 'Pavel Bansky'
-
-email_addresses_typed_email_address2.type(EmailType.Other('emailtype.other'))
-
-email_addresses_typed_email_address2.other_label = 'Volunteer work'
-
-
-emailAddressesArray []= emailAddressesTypedEmailAddress2;
-request_body.emailaddresses(emailAddressesArray)
-
-
-
-
-
-result = await client.me.contacts.by_contact_id('contact-id').patch(request_body = request_body)
+result = await graph_client.me.contacts.by_contact_id('contact-id').patch(request_body)
 
 
 ```

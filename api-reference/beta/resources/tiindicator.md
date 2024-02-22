@@ -13,13 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Threat intelligence (TI) indicators represent data used to identify malicious activities. If your organization works with threat indicators, either by generating your own, obtaining them from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, you might want to use these indicators in various security tools for matching with log data. The Microsoft Graph Security API **tiIndicators** entity allows you to upload your threat indicators to Microsoft security tools for the actions of allow, block, or alert.
+Represents data used to identify malicious activities. 
 
-Threat indicators uploaded via **tiIndicators** will be used in conjunction with Microsoft threat intelligence to provide a customized security solution for your organization. When using the **tiIndicators** entity, you specify the Microsoft security solution you want to utilize the indicators for via the **targetProduct** property and you specify the action (allow, block, or alert) to which the security solution should apply the indicators via the **action** property.
+If your organization works with threat indicators, either by generating your own, obtaining them from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, you might want to use these indicators in various security tools for matching with log data. The **tiIndicators** entity allows you to upload your threat indicators to Microsoft security tools for the actions of allow, block, or alert.
 
-Current **targetProduct** support includes the following:
+Threat indicators uploaded via **tiIndicator** are used with Microsoft threat intelligence to provide a customized security solution for your organization. When using the **tiIndicator** entity, specify the Microsoft security solution you want to utilize the indicators via the **targetProduct** property, and specify the action (allow, block, or alert) to which the security solution should apply the indicators via the **action** property.
 
-- **Azure Sentinel** – Supports all documented **tiIndicators** methods listed in the following section.
+Currently, **targetProduct** supports the following products:
+
 - **Microsoft Defender for Endpoint** – Supports the following **tiIndicators** methods:
      - [Get tiIndicator](../api/tiindicator-get.md)
      - [Create tiIndicator](../api/tiindicators-post.md)
@@ -27,16 +28,16 @@ Current **targetProduct** support includes the following:
      - [Update](../api/tiindicator-update.md)
      - [Delete](../api/tiindicator-delete.md)
 
-     Support for the bulk methods is coming soon.
-
   > [!NOTE]
   >The following indicator types are supported by Microsoft Defender for Endpoint targetProduct:
   > - Files
   > - IP addresses: Microsoft Defender for Endpoint supports destination IPv4/IPv6 only – set property in networkDestinationIPv4 or    networkDestinationIPv6 properties in Microsoft Graph Security API **tiIndicator**.
   > - URLs/domains
 
-   There is a limit of 15000 indicators per tenant for Microsoft Defender for Endpoint.
+   There's a limit of 15,000 indicators per tenant for Microsoft Defender for Endpoint.
 
+- **Microsoft Sentinel** – Only existing customers can use the **tiIndicator** API to send threat intelligence indicators to Microsoft Sentinel. For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel](/azure/sentinel/connect-threat-intelligence-tip).
+  
 For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## Methods
@@ -57,7 +58,7 @@ For details about the types of indicators supported and limits on indicator coun
 
 | Method                                                          | Azure Sentinel                                                                                                                                                                                                                                                                                                                                                                      | Microsoft Defender for Endpoint                                                                                                                                                                                               |
 |:----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Create tiIndicator](../api/tiindicators-post.md)               | Required fields are: `action`, `azureTenantId`, `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`, and at least one email, network, or file observable.                                                                                                                                                                                                | Required fields are: `action`, and one of these following values: `domainName`, `url`, `networkDestinationIPv4`, `networkDestinationIPv6`, `fileHashValue` ( must supply `fileHashType` in case of `fileHashValue`). |
+| [Create tiIndicator](../api/tiindicators-post.md)               | Required fields are: `action`, `azureTenantId`, `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`, and at least one email, network, or file observable.                                                                                                                                                                                                | Required fields are: `action`, and one of these following values: `domainName`, `url`, `networkDestinationIPv4`, `networkDestinationIPv6`, `fileHashValue` (must supply `fileHashType` in case of `fileHashValue`). |
 | [Submit tiIndicators](../api/tiindicator-submittiindicators.md) | Refer to the [Create tiIndicator](../api/tiindicators-post.md) method for required fields for each tiIndicator. There's a limit of 100 tiIndicators per request.                                                                                                                                                                                                                    | Refer to the [Create tiIndicator](../api/tiindicators-post.md) method for required fields for each tiIndicator. There's a limit of 100 tiIndicators per request.                                                     |
 | [Update tiIndicator](../api/tiindicator-update.md)              | Required fields are: `id`, `expirationDateTime`, `targetProduct`. <br> Editable fields are:  `action`, `activityGroupNames`, `additionalInformation`, `confidence`, `description`, `diamondModel`, `expirationDateTime`, `externalId`, `isActive`, `killChain`, `knownFalsePositives`, `lastReportedDateTime`, `malwareFamilyNames`, `passiveOnly`, `severity`, `tags`, `tlpLevel`. | Required fields are: `id`, `expirationDateTime`, `targetProduct`. <br> Editable fields are: `expirationDateTime`, `severity`, `description`.                                                                         |
 | [Update tiIndicators](../api/tiindicator-updatetiindicators.md) | Refer to the [Update tiIndicator](../api/tiindicator-update.md) method for required and editable fields for each tiIndicator.                                                                                                                                                                                                                                                       | <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
@@ -70,22 +71,22 @@ For details about the types of indicators supported and limits on indicator coun
 |:-------------|:------------|:------------|
 |action|string| The action to apply if the indicator is matched from within the targetProduct security tool. Possible values are: `unknown`, `allow`, `block`, `alert`. **Required.**|
 |activityGroupNames|String collection|The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.|
-|additionalInformation|String|A catchall area into which extra data from the indicator not covered by the other tiIndicator properties may be placed. Data placed into additionalInformation will typically not be utilized by the targetProduct security tool.|
-|azureTenantId|String| Stamped by the system when the indicator is ingested. The Azure Active Directory tenant id of submitting client. **Required.**|
+|additionalInformation|String|A catchall area for extra data from the indicator that is not specifically covered by other tiIndicator properties. The security tool specified by targetProduct typically does not utilize this data.|
+|azureTenantId|String| Stamped by the system when the indicator is ingested. The Microsoft Entra tenant id of submitting client. **Required.**|
 |confidence|Int32|An integer representing the confidence the data within the indicator accurately identifies malicious behavior. Acceptable values are 0 – 100 with 100 being the highest.|
 |description|String| Brief description (100 characters or less) of the threat represented by the indicator. **Required.**|
 |diamondModel|[diamondModel](#diamondmodel-values)|The area of the Diamond Model in which this indicator exists. Possible values are: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| DateTime string indicating when the Indicator expires. All indicators must have an expiration date to avoid stale indicators persisting in the system. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. **Required.**|
-|externalId|String| An identification number that ties the indicator back to the indicator provider’s system (e.g. a foreign key). |
+|externalId|String| An identification number that ties the indicator back to the indicator provider’s system (for example, a foreign key). |
 |id|String|Created by the system when the indicator is ingested. Generated GUID/unique identifier. Read-only.|
 |ingestedDateTime|DateTimeOffset| Stamped by the system when the indicator is ingested. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |isActive|Boolean| Used to deactivate indicators within system. By default, any indicator submitted is set as active. However, providers may submit existing indicators with this set to ‘False’ to deactivate indicators in the system.|
 |killChain|[killChain](#killchain-values) collection|A JSON array of strings that describes which point or points on the Kill Chain this indicator targets. See ‘killChain values’ below for exact values. |
 |knownFalsePositives|String|Scenarios in which the indicator may cause false positives. This should be human-readable text.|
 |lastReportedDateTime|DateTimeOffset|The last time the indicator was seen. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|malwareFamilyNames|String collection|The malware family name associated with an indicator if it exists. Microsoft prefers the Microsoft malware family name if at all possible which can be found via the Windows Defender Security Intelligence [threat encyclopedia](https://www.microsoft.com/wdsi/threats).|
-|passiveOnly|Boolean |Determines if the indicator should trigger an event that is visible to an end-user. When set to ‘true,’ security tools will not notify the end user that a ‘hit’ has occurred. This is most often treated as audit or silent mode by security products where they will simply log that a match occurred but will not perform the action. Default value is false. |
-|severity|Int32| An integer representing the severity of the malicious behavior identified by the data within the indicator. Acceptable values are 0 – 5 where 5 is the most severe and zero is not severe at all. Default value is 3. |
+|malwareFamilyNames|String collection|The malware family name associated with an indicator if it exists. Microsoft prefers the Microsoft malware family name if at all possible that can be found via the Windows Defender Security Intelligence [threat encyclopedia](https://www.microsoft.com/wdsi/threats).|
+|passiveOnly|Boolean |Determines if the indicator should trigger an event that is visible to an end-user. When set to ‘true,’ security tools won't notify the end user that a ‘hit’ has occurred. This is most often treated as audit or silent mode by security products where they'll simply log that a match occurred but won't perform the action. Default value is false. |
+|severity|Int32| An integer representing the severity of the malicious behavior identified by the data within the indicator. Acceptable values are 0 – 5 where 5 is the most severe and zero isn't severe at all. Default value is 3. |
 |tags|String collection|A JSON array of strings that stores arbitrary tags/keywords. |
 |targetProduct|String|A string value representing a single security product to which the indicator should be applied. Acceptable values are: `Azure Sentinel`, `Microsoft Defender ATP`. **Required**|
 |threatType|[threatType](#threattype-values)| Each indicator must have a valid Indicator Threat Type. Possible values are: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Required.** |
@@ -110,7 +111,7 @@ For details about the types of indicators supported and limits on indicator coun
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |fileCompileDateTime|DateTimeOffset|DateTime when the file was compiled. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|fileCreatedDateTime|DateTimeOffset| DateTime when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|fileCreatedDateTime|DateTimeOffset| DateTime when the file was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |fileHashType|string| The type of hash stored in fileHashValue. Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`.|
 |fileHashValue|String| The file hash value.|
 |fileMutexName|String| Mutex name used in file-based detections.|
@@ -125,15 +126,15 @@ For details about the types of indicators supported and limits on indicator coun
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |domainName|String|Domain name associated with this indicator. Should be of the format subdomain.domain.topleveldomain (For example, baddomain.domain.net)|
-|networkCidrBlock|String| CIDR Block notation representation of the network referenced in this indicator. Use only if the Source and Destination cannot be identified. |
+|networkCidrBlock|String| CIDR Block notation representation of the network referenced in this indicator. Use only if the Source and Destination can't be identified. |
 |networkDestinationAsn|Int32|The destination autonomous system identifier of the network referenced in the indicator.|
 |networkDestinationCidrBlock|String|CIDR Block notation representation of the destination network in this indicator.|
 |networkDestinationIPv4|String|IPv4 IP address destination.|
 |networkDestinationIPv6|String|IPv6 IP address destination.|
 |networkDestinationPort|Int32|TCP port destination.|
-|networkIPv4|String| IPv4 IP address. Use only if the Source and Destination cannot be identified. |
-|networkIPv6|String| IPv6 IP address. Use only if the Source and Destination cannot be identified. |
-|networkPort|Int32| TCP port. Use only if the Source and Destination cannot be identified. |
+|networkIPv4|String| IPv4 IP address. Use only if the Source and Destination can't be identified. |
+|networkIPv6|String| IPv6 IP address. Use only if the Source and Destination can't be identified. |
+|networkPort|Int32| TCP port. Use only if the Source and Destination can't be identified. |
 |networkProtocol|Int32|Decimal representation of the protocol field in the IPv4 header.|
 |networkSourceAsn|Int32|The source autonomous system identifier of the network referenced in the indicator.|
 |networkSourceCidrBlock|String|CIDR Block notation representation of the source network in this indicator|
@@ -160,7 +161,7 @@ For information about this model, see [The Diamond Model](http://diamondmodel.or
 
 | Member | Description |
 |:-------|:------------|
-|Actions|Indcates that the attacker is leveraging the compromised system to take actions such as a distributed denial of service attack.|
+|Actions|Indicates that the attacker is using the compromised system to take actions such as a distributed denial of service attack.|
 |C2|Represents the control channel by which a compromised system is manipulated.|
 |Delivery|The process of distributing the exploit code to victims (for example USB, email, websites).|
 |Exploitation|The exploit code taking advantage of vulnerabilities (for example, code execution).|
@@ -182,18 +183,18 @@ For information about this model, see [The Diamond Model](http://diamondmodel.or
 |Phishing|Indicators relating to a phishing campaign.|
 |Proxy|Indicator is that of a proxy service.|
 |PUA|Potentially Unwanted Application.|
-|WatchList|This is the generic bucket into which indicators are placed when it cannot be determined exactly what the threat is or will require manual interpretation. This should typically not be used by partners submitting data into the system.|
+|WatchList|This is the generic bucket for indicators for which the threat cannot be determined or which require manual interpretation. Partners submitting data into the system should not use this property.|
 
 ### tlpLevel values
 
-Every indicator must also have a Traffic Light Protocol value when it is submitted. This value represents the sensitivity and sharing scope of a given indicator.
+Every indicator must also have a Traffic Light Protocol value when it's submitted. This value represents the sensitivity and sharing scope of a given indicator.
 
 | Member | Description |
 |:-------|:------------|
 |White| Sharing scope: Unlimited. Indicators can be shared freely, without restriction.|
 |Green| Sharing scope: Community. Indicators may be shared with the security community.|
 |Amber| Sharing scope: Limited. This is the default setting for indicators and restricts sharing to only those with a ‘need-to-know’  being 1) Services and service operators that implement threat intelligence 2) Customers whose system(s) exhibit behavior consistent with the indicator.|
-|Red| Sharing scope: Personal. These indicators are to only be shared directly and, preferably, in person. Typically, TLP Red indicators are not ingested due to their pre-defined restrictions. If TLP Red indicators are submitted, the “PassiveOnly” property should be set to `True` as well. |
+|Red| Sharing scope: Personal. These indicators are to only be shared directly and, preferably, in person. Typically, TLP Red indicators aren't ingested due to their predefined restrictions. If TLP Red indicators are submitted, the “PassiveOnly” property should be set to `True` as well. |
 
 ## Relationships
 
@@ -201,7 +202,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

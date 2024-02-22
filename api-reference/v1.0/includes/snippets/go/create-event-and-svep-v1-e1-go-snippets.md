@@ -48,7 +48,7 @@ attendee.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee.SetType(&type) 
 
-attendees := []graphmodels.attendeeable {
+attendees := []graphmodels.Attendeeable {
 	attendee,
 }
 requestBody.SetAttendees(attendees)
@@ -65,7 +65,7 @@ singleValueExtendedProperties := []graphmodels.SingleValueLegacyExtendedProperty
 }
 requestBody.SetSingleValueExtendedProperties(singleValueExtendedProperties)
 
-result, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
+events, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -21,7 +21,7 @@ requestBody.SetPartnerId(&partnerId)
 enableConnection := true
 requestBody.SetEnableConnection(&enableConnection) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().Post(context.Background(), requestBody, nil)
+externalPartnerSettings, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().Post(context.Background(), requestBody, nil)
 
 
 ```

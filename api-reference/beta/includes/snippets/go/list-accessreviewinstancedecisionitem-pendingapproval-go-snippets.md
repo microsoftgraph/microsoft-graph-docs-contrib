@@ -27,7 +27,7 @@ configuration := &graphusers.ItemPendingAccessReviewInstanceItemDecisionsRequest
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().PendingAccessReviewInstances().ByPendingAccessReviewInstanceId("accessReviewInstance-id").Decisions().Get(context.Background(), configuration)
+decisions, err := graphClient.Me().PendingAccessReviewInstances().ByAccessReviewInstanceId("accessReviewInstance-id").Decisions().Get(context.Background(), configuration)
 
 
 ```

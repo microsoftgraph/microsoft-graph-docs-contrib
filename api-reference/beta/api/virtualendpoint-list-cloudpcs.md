@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 List the [cloudPC](../resources/cloudpc.md) devices in a tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "virtualendpoint_list_cloudpcs" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualendpoint-list-cloudpcs-permissions.md)]
 
 ## HTTP request
 
@@ -44,11 +43,11 @@ This method supports `$select`, `$filter`, `$count`, and `$top` OData query para
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -62,7 +61,7 @@ The following example shows how to get a list of all [cloudPC](../resources/clou
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,6 +76,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcs-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-cloudpcs-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -107,7 +110,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -138,7 +141,7 @@ Content-Type: application/json
       "servicePlanName": "lite",
       "servicePlanType": "enterprise",
       "status": "provisioned",
-      "userPrincipalName": "dujanjic@fabrikam.onmicrosoft.com",
+      "userPrincipalName": "dujanjic@contoso.com",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
       "statusDetails": null,
       "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
@@ -155,7 +158,7 @@ The following example shows how to use the `$top` query parameter to get the top
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -170,6 +173,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs?$
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcs-with-top-query-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-cloudpcs-with-top-query-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -200,7 +207,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs?$
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -229,7 +236,7 @@ Content-Type: application/json
             "servicePlanId": "23a25099-1b2f-4e07-84bd-b81606109438",
             "servicePlanName": "Cloud PC Enterprise 2vCPU/4GB/64GB",
             "status": "failed",
-            "userPrincipalName": "RMS-Resize-user-05@fabrikam.onmicrosoft.com",
+            "userPrincipalName": "RMS-Resize-user-05@contoso.com",
             "lastModifiedDateTime": "2023-04-25T06:24:02Z",
             "managedDeviceId": null,
             "managedDeviceName": null,
@@ -268,7 +275,7 @@ Content-Type: application/json
             "servicePlanId": "0e837228-8250-4047-8a80-d4a34ba11618",
             "servicePlanName": "Cloud PC Enterprise 8vCPU/32GB/512GB",
             "status": "failed",
-            "userPrincipalName": "akhkhare_contoso.com#EXT#@fabrikam.onmicrosoft.com",
+            "userPrincipalName": "akhkhare_contoso.com#EXT#@contoso.com",
             "lastModifiedDateTime": "2023-04-25T06:12:10Z",
             "managedDeviceId": null,
             "managedDeviceName": null,

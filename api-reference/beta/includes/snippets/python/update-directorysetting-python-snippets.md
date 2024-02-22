@@ -4,24 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.directory_setting import DirectorySetting
+from msgraph.generated.models.setting_value import SettingValue
 
-request_body = DirectorySetting()
-values_setting_value1 = SettingValue()
-values_setting_value1.name = 'CustomBlockedWordsList'
+graph_client = GraphServiceClient(credentials, scopes)
 
-values_setting_value1.value = 'Contoso'
+request_body = DirectorySetting(
+	values = [
+		SettingValue(
+			name = "CustomBlockedWordsList",
+			value = "Contoso",
+		),
+	],
+)
 
-
-valuesArray []= valuesSettingValue1;
-request_body.values(valuesArray)
-
-
-
-
-
-result = await client.settings.by_setting_id('directorySetting-id').patch(request_body = request_body)
+result = await graph_client.settings.by_directory_setting_id('directorySetting-id').patch(request_body)
 
 
 ```

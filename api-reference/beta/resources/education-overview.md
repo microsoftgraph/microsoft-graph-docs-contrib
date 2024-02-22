@@ -101,7 +101,7 @@ The following are some common use cases for the assignment-related education API
 
 ## School data sync management
 
-[School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing roster data from student information systems with Azure Active Directory (Azure AD) and Microsoft 365. You can use the school data sync management APIs in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
+[School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing roster data from student information systems with Microsoft Entra ID and Microsoft 365. You can use the school data sync management APIs in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
 
 The school data sync management APIs support the following scenarios:
 
@@ -116,10 +116,6 @@ The school data sync management APIs support the following scenarios:
 - [Get an upload URL](../api/educationsynchronizationprofile-uploadurl.md)
 - [Get status of a sync](../api/educationsynchronizationprofilestatus-get.md)
 - [Get synchronization errors](../api/educationsynchronizationerrors-get.md)
-
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 

@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+from msgraph import GraphServiceClient
+from msgraph.generated.models.admin_report_settings import AdminReportSettings
 
-request_body = AdminReportSettings()
-request_body.display_concealed_names = True
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = AdminReportSettings(
+	display_concealed_names = True,
+)
 
-
-
-result = await client.admin.report_settings.patch(request_body = request_body)
+result = await graph_client.admin.report_settings.patch(request_body)
 
 
 ```

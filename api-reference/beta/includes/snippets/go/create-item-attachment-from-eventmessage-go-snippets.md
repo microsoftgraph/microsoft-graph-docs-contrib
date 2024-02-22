@@ -19,12 +19,12 @@ requestBody := graphmodels.NewAttachment()
 name := "name-value"
 requestBody.SetName(&name) 
 additionalData := map[string]interface{}{
-item := graphmodels.New()
+item := graphmodels.NewMessage()
 	requestBody.SetItem(item)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
+attachments, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-management telecom-expense-management-partners create --body '{\
   "@odata.type": "#microsoft.graph.telecomExpenseManagementPartner",\
   "displayName": "Display Name value",\

@@ -22,7 +22,7 @@ configuration := &graphidentity.IdentityB2xUserFlowsRequestBuilderGetRequestConf
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().B2xUserFlows().Get(context.Background(), configuration)
+b2xUserFlows, err := graphClient.Identity().B2xUserFlows().Get(context.Background(), configuration)
 
 
 ```

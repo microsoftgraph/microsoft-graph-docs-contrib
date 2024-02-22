@@ -21,7 +21,7 @@ requestBody.SetStartCell(&startCell)
 endCell := "endCell-value"
 requestBody.SetEndCell(&endCell) 
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Charts().ByChartId("workbookChart-id").SetPosition().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").Charts().ByWorkbookChartId("workbookChart-id").SetPosition().Post(context.Background(), requestBody, nil)
 
 
 ```

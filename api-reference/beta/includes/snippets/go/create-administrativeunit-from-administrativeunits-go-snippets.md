@@ -27,7 +27,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.AdministrativeUnits().Post(context.Background(), requestBody, nil)
+administrativeUnits, err := graphClient.AdministrativeUnits().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,7 +11,7 @@ ms.prod: "applications"
 
 Namespace: microsoft.graph
 
-Defines how a value should be extracted (or transformed) from the source object. For example, it can be a simple value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes.
+Defines how a value should be extracted (or transformed) from the source object. For example, it can be a value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes.
 
 ## Properties
 
@@ -19,7 +19,7 @@ Defines how a value should be extracted (or transformed) from the source object.
 |:----------------------|:--------------------------|:--------------------------|
 |expression             |String                     |Equivalent expression representation of this **attributeMappingSource** object.|
 |name                   |String                     |Name parameter of the mapping source. Depending on the **type** property value, this can be the name of the function, the name of the source attribute, or a constant value to be used. |
-|parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection | If this object represents a function, lists function parameters. Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions. If **type** is not `Function`, this property will be null/empty array. |
+|parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection | If this object represents a function, lists function parameters. Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions. If **type** isn't `Function`, this property is null/empty array. |
 |type                   | attributeMappingSourceType                    |The type of this attribute mapping source. Possible values are: `Attribute`, `Constant`, `Function`. Default is `Attribute`.|
 
 ### Sample syntaxes
@@ -35,7 +35,7 @@ Simple attribute to attribute mapping.
 }
 ```
 
-Expression extracting first 8 characters from the source attribute.
+Expression extracting first eight characters from the source attribute.
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -76,7 +76,7 @@ Expression extracting first 8 characters from the source attribute.
 ```
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.attributeMappingSource"

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().ThreatIntelligence().Hosts().ByHostId("host-id").Reputation().Get(context.Background(), nil)
+reputation, err := graphClient.Security().ThreatIntelligence().Hosts().ByHostId("host-id").Reputation().Get(context.Background(), nil)
 
 
 ```

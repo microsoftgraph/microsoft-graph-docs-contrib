@@ -21,8 +21,8 @@ completedDateTime := null
 requestBody.SetCompletedDateTime(&completedDateTime) 
 completionPercentage := int32(30)
 requestBody.SetCompletionPercentage(&completionPercentage) 
-externalCourseActivityId := "12a2228a-e020-11ec-9d64-0242ac120002"
-requestBody.SetExternalCourseActivityId(&externalCourseActivityId) 
+externalcourseActivityId := "12a2228a-e020-11ec-9d64-0242ac120002"
+requestBody.SetExternalcourseActivityId(&externalcourseActivityId) 
 learningContentId := "57baf9dc-e020-11ec-9d64-0242ac120002"
 requestBody.SetLearningContentId(&learningContentId) 
 learningProviderId := "01e8f81b-3060-4dec-acf0-0389665a0a38"
@@ -32,7 +32,7 @@ requestBody.SetStartedDateTime(&startedDateTime)
 status := graphmodels.INPROGRESS_COURSESTATUS 
 requestBody.SetStatus(&status) 
 
-result, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningCourseActivities().ByLearningCourseActivitieId("learningCourseActivity-id").Patch(context.Background(), requestBody, nil)
+learningCourseActivities, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningCourseActivities().ByLearningCourseActivityId("learningCourseActivity-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

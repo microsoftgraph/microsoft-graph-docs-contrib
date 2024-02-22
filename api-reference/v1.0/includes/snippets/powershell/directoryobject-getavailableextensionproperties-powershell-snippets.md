@@ -6,6 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DirectoryObjects
 
-Get-MgDirectoryObjectAvailableExtensionProperty
+$params = @{
+}
+
+Get-MgDirectoryObjectAvailableExtensionProperty -BodyParameter $params
 
 ```
