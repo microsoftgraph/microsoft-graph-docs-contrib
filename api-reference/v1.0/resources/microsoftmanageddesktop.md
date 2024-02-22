@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents specific settings for the Microsoft Managed Desktop that enables customers to get a managed device experience for a Cloud PC.
 
 ## Properties
@@ -20,7 +18,6 @@ Represents specific settings for the Microsoft Managed Desktop that enables cust
 |Property|Type|Description|
 |:---|:---|:---|
 |profile|String|The name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.|
-|type|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates whether the provisioning policy enables Microsoft Managed Desktop. It indicates the type of plan under which the device is managed if the provisioning policy is enabled. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`. Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Use managedType instead.|
 |managedType|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates the provisioning policy associated with Microsoft Managed Desktop settings. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`. Default is `notManaged`.|
 
 ### microsoftManagedDesktopType values
@@ -28,9 +25,9 @@ Represents specific settings for the Microsoft Managed Desktop that enables cust
 |Member|Description|
 |:---|:---|
 |notManaged|Microsoft Managed Desktop doesn't manage this device.|
-|premiumManaged| Microsoft Managed Desktop premium plan manages this device.|
-|standardManaged| Microsoft Managed Desktop standard plan manages this device.|
-|starterManaged| Microsoft Managed Desktop starter plan manages this device.|
+|premiumManaged|Microsoft Managed Desktop premium plan manages this device.|
+|standardManaged|Microsoft Managed Desktop standard plan manages this device.|
+|starterManaged|Microsoft Managed Desktop starter plan manages this device.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships

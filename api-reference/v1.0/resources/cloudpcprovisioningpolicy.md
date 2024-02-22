@@ -45,7 +45,7 @@ Represents a Cloud PC provisioning policy.
 |microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftmanageddesktop.md)|The specific settings to **microsoftManagedDesktop** that enables Microsoft Managed Desktop customers to get device managed experience for Cloud PC. To enable **microsoftManagedDesktop** to provide more value, an admin needs to specify certain settings in it. Supports `$filter`, `$select`, and `$orderBy`.|
 |onPremisesConnectionId|String|The ID of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md). To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs using this policy. By default, the license type is `dedicated` if the **provisioningType** isn't specified when you create the **cloudPcProvisioningPolicy**. You can't change this property after the **cloudPcProvisioningPolicy** was created. Possible values are: `dedicated`, `shared`, `unknownFutureValue`.|
-|windowsSetting|[cloudPcWindowsSettings](../resources/cloudpcwindowssetting.md)|Indicates a specific Windows setting to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. |
+|windowsSetting|[cloudPcWindowsSetting](../resources/cloudpcwindowssetting.md)|Indicates a specific Windows setting to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. |
 
 ### cloudPcProvisioningType values
 
