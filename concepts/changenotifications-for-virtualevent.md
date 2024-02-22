@@ -23,13 +23,14 @@ Change notifications in Microsoft Graph support subscriptions to virtual events.
 
 The following table provides a summary of subscribable virtual event types, the resource URLs used in the subscription payload, and the supported change types for notification subscription.
 
-| Virtual event types                                    | Resource URL                                                                              | Supported change types    | Supported permission types |
-|:-------------------------------------------------------|:------------------------------------------------------------------------------------------|:--------------------------|:---------------------------|
-| All events (tenant-level)                              | `solutions/virtualEvents/events`                                                          | created                   | Application                |
+| Virtual event types                                     | Resource URL                                                                              | Supported change types    | Supported permission types |
+|:--------------------------------------------------------|:------------------------------------------------------------------------------------------|:--------------------------|:---------------------------|
+| All events (tenant-level)                               | `solutions/virtualEvents/events`                                                          | created                   | Application                |
 | All events (tenant-level by organizer/co-organizer IDs) | `solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`     | created                   | Application                |
-| The events of a specific webinar                       | `solutions/virtualEvents/webinars/{webinarId}`                                            | updated                   | Application, delegated     |
-| The session events of a webinar                        | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                   | created, updated          | Application, delegated     |
-| The registration events of a webinar                   | `solutions/virtualEvents/webinars/{webinarId}/registrations`                              | created, updated          | Application, delegated     |
+| The events of a specific webinar                        | `solutions/virtualEvents/webinars/{webinarId}`                                            | updated                   | Application, delegated     |
+| Attendance report ready events for a webinar's sessions | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                       | created                   | Application, delegated     | 
+| The session events of a webinar                         | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                   | created, updated          | Application, delegated     |
+| The registration events of a webinar                    | `solutions/virtualEvents/webinars/{webinarId}/registrations`                              | created, updated          | Application, delegated     |
 
 >**Note:** Replace values in with parenthesis with actual values.
 
@@ -91,6 +92,27 @@ Content-Type: application/json
 }
 ```
 
+## Subscribe to attedance report events for all sessions in a webinar
+
+To receive attendance report ready notifications for a particular webinar, you need to create a subscription for that unique webinar by using the following resource:  `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`.
+
+An application can have only one subscription for a webinar's attendance reports inside a tenant.
+A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but the subscription is only available for users who organized or co-organized webinars in the same tenant as the event host.
+
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created",
+  "notificationUrl": "https://webhook.contoso.com/api",
+  "lifecycleNotificationUrl": "https://webhook.contoso.com/api",
+  "resource": "solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports",
+  "expirationDateTime": "2021-02-01T11:00:00.0000000Z",
+  "clientState": "secretClientState"
+}
+```
+
 ## Subscribe to session event notifications for a webinar
 
 To subscribe to notifications for sessions that are created or updated in a webinar, specify the resource as `solutions/virtualEvents/webinars/{webinarId}/sessions`.
@@ -145,11 +167,12 @@ Notifications include the resource URL of the changed resource. You can send a s
 
 The following table indicates the supported notification and change types for the virtual events resource.
 
-| Notification type                                           | Resource ID                                                                                    | Change types      |
-|:------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
-| [Webinar](/graph/api/resources/virtualeventwebinar)         | `solutions/virtualEvents/webinars/{webinarId}`                                                 | created, updated  |
-| [Session](/graph/api/resources/virtualeventsession)         | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
-| [Registration](/graph/api/resources/virtualeventregistrant) | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
+| Notification type                                                        | Resource ID                                                                                    | Change types      |
+|:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
+| [Webinar](/graph/api/resources/virtualeventwebinar)                      | `solutions/virtualEvents/webinars/{webinarId}`                                                 | created, updated  |
+| [Session](/graph/api/resources/virtualeventsession)                      | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
+| [Registration](/graph/api/resources/virtualeventregistrant)              | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
+| [Meeting Attendance Report](graph/api/resources/meetingattendancereport) | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
 
 ## Event notification examples
 
@@ -293,6 +316,31 @@ The following JSON examples show the responses for each supported change type of
         "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}",
         "@odata.type": "#microsoft.graph.virtualEventRegistration",
         "id": "solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}"
+      }
+    }
+  ]
+}
+```
+
+
+### Attendance report created
+
+Attendance report created events will return the api endpoint of the meetingAttendanceReport object that was created. Users can leverage this endpoint in the `resourceData` property o query for the details in `meetingAttendanceReport` object.
+
+```json
+{
+  "value": [
+    {
+      "subscriptionId": "7015b436-a8b8-4260-af80-5af8cba32e62",
+      "clientState": "secret client state",
+      "changeType": "created",
+      "tenantId": "f5b076c8-b508-4ba3-a1a7-19d1c0bcef03",
+      "resource": "solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports",
+      "subscriptionExpirationDateTime": "2023-01-28T00:00:00.0000000Z",
+      "resourceData": {
+        "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}",
+        "@odata.type": "#microsoft.graph.meetingAttendanceReport",
+        "id": "{reportId}"
       }
     }
   ]
