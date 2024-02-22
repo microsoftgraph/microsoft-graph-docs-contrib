@@ -14,23 +14,18 @@ ms.date: 02/22/2024
 
 In this article, you'll learn how to configure Microsoft Entra Private Access using the Microsoft Graph API.
 
-================================from navi
 ZTNA Private Access now supports both TCP and UDP protocols to connect to the backend applications. An application can be configured to support TCP, UDP, or both via either UX or the APIs.  
 
 This document details how to set up Private Access for both your Quick Access and Enterprise apps using APIs (creating an app, adding app segments, configuring protocols, assigning connector to app, adding users/groups, enabling Private DNS and adding DNS suffix).  
-===================
+
 ## Prerequisites
 
-- This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) for Application Proxy so that connectors can communicate with Microsoft Entra services.
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role.
-- Grant yourself the following delegated permission: `Directory.ReadWrite.All`.
-===============
 This tutorial assumes you have already installed a connector and completed the prerequisites for Application Proxy so that connectors can communicate with Microsoft Entra services, and have configured your connector agent.  
 
-Sign in to an API client such as Graph Explorer, Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role. 
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role.
 
-Grant yourself the following delegated permission: Directory.ReadWrite.All. 
-=================
+
+Grant yourself the following delegated permission: `Directory.ReadWrite.All`. 
 
 ## Step 1: Create a custom application
 
@@ -272,5 +267,5 @@ POST https://graph.microsoft-ppe.com/beta/applications/{objectID}/onPremisesPubl
 
 ## Related content
 
-- [What is global secure access?](entra/global-secure-access/overview-what-is-global-secure-access)
+- [What is global secure access?](/entra/global-secure-access/overview-what-is-global-secure-access)
 - [About Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
