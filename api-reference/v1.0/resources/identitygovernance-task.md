@@ -79,7 +79,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Configure task arguments](/graph/identitygovernance-lifecycleworkflows-task-arguments)
 

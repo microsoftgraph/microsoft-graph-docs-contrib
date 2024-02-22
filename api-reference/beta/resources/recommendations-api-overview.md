@@ -67,6 +67,6 @@ The following are some of the most popular requests for working with the Microso
 
 The various recommendations have different license requirements. For more information about licenses for each type of recommendation, see [Microsoft Entra recommendations: Roles and licenses](/azure/active-directory/reports-monitoring/overview-recommendations#roles-and-licenses).
 
-## See also
+## Related content
 
 - [What is Microsoft Entra recommendations (preview)]( /azure/active-directory/reports-monitoring/overview-recommendations)

@@ -445,7 +445,7 @@ how errors are returned.
 [driveItemSource]: ../resources/driveItemSource.md
 [mediaSource]: ../resources/mediaSource.md
 
-## See also
+## Related content
 
 [Large file upload](/graph/sdks/large-file-upload)
 

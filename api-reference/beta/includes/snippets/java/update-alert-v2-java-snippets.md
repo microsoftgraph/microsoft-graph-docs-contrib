@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.models.security.Alert alert = new com.microsoft.graph.beta.models.security.Alert();
-alert.setAssignedTo("secAdmin@contoso.onmicrosoft.com");
+alert.setAssignedTo("secAdmin@contoso.com");
 alert.setClassification(com.microsoft.graph.beta.models.security.AlertClassification.TruePositive);
 alert.setDetermination(com.microsoft.graph.beta.models.security.AlertDetermination.Malware);
 alert.setStatus(com.microsoft.graph.beta.models.security.AlertStatus.InProgress);

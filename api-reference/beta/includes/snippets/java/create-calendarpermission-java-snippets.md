@@ -11,7 +11,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 CalendarPermission calendarPermission = new CalendarPermission();
 EmailAddress emailAddress = new EmailAddress();
 emailAddress.setName("Samantha Booth");
-emailAddress.setAddress("samanthab@adatum.onmicrosoft.com");
+emailAddress.setAddress("samanthab@contoso.com");
 calendarPermission.setEmailAddress(emailAddress);
 calendarPermission.setIsInsideOrganization(true);
 calendarPermission.setIsRemovable(true);

@@ -476,13 +476,13 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Send a message with file attachment in it
+### Example 4: Send a message with a file attachment in it
 
 #### Request
 The following example shows a request.
 
 >**Notes:**
-> - The file must already be in SharePoint. To find the file properties, GET the **driveItem** for the file. For example: `/drives/{id}/items/{id}`. The attachment ID is the GUID in the **eTag** of the **driveItem**. The attachment **contentURL** is the **webUrl** of the **driveItem** folder plus the name of the **driveItem**. The attachment name is the name of the **driveItem**.
+> - The file to attach must already be in SharePoint. To access the file properties, [GET the **driveItem** for the file](/graph/api/driveitem-get). The **eTag** of the **driveItem** has a GUID that is your attachment ID. The **webDavUrl** of the **driveItem** is your attachment **contentURL**. You can use the name of the **driveItem** as your attachment name. You can use /drives/{drive-id}/items/{item-id} to get a drive item resource. To get **webDavUrl**, you have to explicitly select it via $select=webDavUrl or $select=*,webDavUrl.
 > - Microsoft Graph supports the `OpenUrl` card action. Bots are required for other card actions.
 
 # [HTTP](#tab/http)
@@ -1725,7 +1725,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Cards reference](/microsoftteams/platform/concepts/cards/cards-reference)
 

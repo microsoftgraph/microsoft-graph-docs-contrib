@@ -64,7 +64,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 For examples that show how to use **identitySet** resources, see [call](call.md).
 

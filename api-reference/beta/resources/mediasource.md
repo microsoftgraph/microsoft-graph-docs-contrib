@@ -49,7 +49,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 
