@@ -11,11 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.windowsUpdates
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md) ]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This Entity Type represents a known issue related to a Windows product
 
-Examples: To be added 
+A known issue 
 
 ## Properties
         
