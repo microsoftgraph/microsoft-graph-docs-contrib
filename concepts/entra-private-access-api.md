@@ -57,7 +57,7 @@ In the following example, replace the values of these properties:
 ### Sample request
 
 ```
-PATCH https://graph.microsoft.com/beta/applications/{objectID} 
+PATCH https://graph.microsoft.com/beta/applications/{objectID}
 {
    “onPremisesPublishing”:{
    “applicationType”:”nonwebapp”,
