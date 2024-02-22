@@ -22,9 +22,9 @@ requestBody := graphusers.NewItemForwardPostRequestBody()
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 address := "danas@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 name := "Dana Swope"
-emailAddress.SetName(&name)
+emailAddress.SetName(&name) 
 recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
@@ -32,7 +32,7 @@ toRecipients := []graphmodels.Recipientable {
 }
 requestBody.SetToRecipients(toRecipients)
 comment := "Dana, hope you can make this meeting."
-requestBody.SetComment(&comment)
+requestBody.SetComment(&comment) 
 
 graphClient.Me().Events().ByEventId("event-id").Forward().Post(context.Background(), requestBody, nil)
 
