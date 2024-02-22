@@ -3139,6 +3139,48 @@
       "CreatedDateTime": "2023-10-24T19:42:37.8361251Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "21bee90b-122e-46f9-a92a-bba6f7effe79",
+          "ApiChange": "Member",
+          "ChangedApiName": "aadGraphDeprecationApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the `aadGraphDeprecationApplication` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        },
+        {
+          "Id": "21bee90b-122e-46f9-a92a-bba6f7effe79",
+          "ApiChange": "Member",
+          "ChangedApiName": "aadGraphDeprecationServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the `aadGraphDeprecationServicePrincipal` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        },
+        {
+          "Id": "21bee90b-122e-46f9-a92a-bba6f7effe79",
+          "ApiChange": "Member",
+          "ChangedApiName": "mfaServerDeprecation",
+          "ChangeType": "Addition",
+          "Description": "Added the `mfaServerDeprecation` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        },
+        {
+          "Id": "21bee90b-122e-46f9-a92a-bba6f7effe79",
+          "ApiChange": "Member",
+          "ChangedApiName": "insiderRiskPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the `insiderRiskPolicy` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        }
+      ],
+      "Id": "21bee90b-122e-46f9-a92a-bba6f7effe79",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-22T08:14:33.8823795Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
     }
   ]
 }
