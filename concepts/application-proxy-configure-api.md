@@ -546,6 +546,7 @@ Content-type: application/json
   "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",
   "name": "IWA Demo Connector Group",
   "connectorGroupType": "applicationProxy",
+  "region": "eur",
   "isDefault": false
 }
 ```
@@ -745,6 +746,7 @@ Content-type: appplication/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-update-app-headerbased-sso-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ## Step 5: Assign a user to the application
 
