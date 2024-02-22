@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |:---------|:----------------------------------------------------------------------------------------------------------|
 | standard | Default type for a tag. Tags of type standard can be managed in the team by members who have permissions. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                               |
-| scheduled | Shift based tag created and managed from the shifts app.                                                 |
+| scheduled | Shift based tag created and managed from the Shifts app.                                                 |
 
 ## Relationships
 |Relationship|Type|Description|
