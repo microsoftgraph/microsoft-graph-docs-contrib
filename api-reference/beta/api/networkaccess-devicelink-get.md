@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+GET /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/deviceLinks/{deviceLinkId}
 GET /networkAccess
 ```
 
@@ -61,7 +61,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+GET https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/dc6a7efd-6b2b-4c6a-84e7-5dcf97e62e04/deviceLinks/47aab2e9-7f5c-42ba-bbfc-1b049193126a
 ```
 
 # [C#](#tab/csharp)
@@ -108,20 +108,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches('047d69c4-2448-45cc-8c0a-40f3ad93c86c')/deviceLinks/$entity",
-    "id": "1030ca77-40e9-4cd3-bf71-b5d74c2f3cb0",
-    "name": "Backup Link",
-    "ipAddress": "24.123.22.168",
-    "version": "1.0.0",
-    "deviceVendor": "checkPoint",
-    "lastModifiedDateTime": "2023-05-23T09:19:30Z",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/remoteNetworks('dc6a7efd-6b2b-4c6a-84e7-5dcf97e62e04')/deviceLinks/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET networkAccess/connectivity/remoteNetworks('<guid>')/deviceLinks('<guid>')?$select=bandwidthCapacityInMbps,bgpConfiguration",
+    "id": "47aab2e9-7f5c-42ba-bbfc-1b049193126a",
+    "name": "name",
+    "ipAddress": "1.2.3.1",
+    "bandwidthCapacityInMbps": "mbps500",
+    "deviceVendor": "barracudaNetworks",
+    "lastModifiedDateTime": "2024-01-27T07:09:17Z",
     "bgpConfiguration": {
-        "ipAddress": "1.128.24.22",
-        "asn": 4
+        "localIpAddress": "1.2.1.1",
+        "peerIpAddress": "1.2.3.1",
+        "asn": 899
+    },
+    "redundancyConfiguration": {
+        "zoneLocalIpAddress": null,
+        "redundancyTier": "noRedundancy"
     },
     "tunnelConfiguration": {
         "@odata.type": "#microsoft.graph.networkaccess.tunnelConfigurationIKEv2Default",
-        "preSharedKey": "342342342342342342342342"
+        "preSharedKey": "dcf"
     }
 }
 ```
