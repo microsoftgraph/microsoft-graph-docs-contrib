@@ -1245,7 +1245,8 @@ Now that you've completed the configuration steps for the application in Microso
 In this step, remove the resources that you created and no longer need.
 
 ### Delete the application
-The request returns a `204 No Content` response code.
+
+When you delete the application, the service principal in your tenant is also deleted. The request returns a `204 No Content` response code.
 
 # [HTTP](#tab/http)
 <!-- {
