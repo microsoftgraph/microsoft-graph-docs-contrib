@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 Abstract base type that exposes the derived types used to configure the **endpointConfiguration** property of a custom extension. This abstract type is inherited by the following type:
 
 - [logicAppTriggerEndpointConfiguration](logicapptriggerendpointconfiguration.md) - configure this object.
+- [httpRequestEndpoint](../resources/httprequestendpoint.md) - configure this object to [validate a custom authentication extension](../api/customauthenticationextension-validateauthenticationconfiguration.md).
 
 ## Properties
 
