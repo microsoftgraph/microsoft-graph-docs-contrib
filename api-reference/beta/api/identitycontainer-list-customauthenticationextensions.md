@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
+
 # List customAuthenticationExtensions
 Namespace: microsoft.graph
 
@@ -16,12 +17,17 @@ Get a list of the [customAuthenticationExtension](../resources/customauthenticat
 - [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
 <!-- { "blockType": "permissions", "name": "identitycontainer_list_customauthenticationextensions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identitycontainer-list-customauthenticationextensions-permissions.md)]
+
 ## HTTP request
+
 <!-- {
   "blockType": "ignored"
 }
@@ -29,21 +35,27 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /identity/customAuthenticationExtensions
 ```
+
 ## Optional query parameters
 This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
 ## Request body
 Don't supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [customAuthenticationExtension](../resources/customauthenticationextension.md) objects in the response body. An **@odata.type** property is returned for each object to specify the type of customAuthenticationExtension.
+
 ## Examples
 
 ### Request
 The following is an example of a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_customauthenticationextension"
@@ -99,6 +111,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions",
     "value": [
@@ -129,3 +142,4 @@ Content-Type: application/json
     ]
 }
 ```
+
