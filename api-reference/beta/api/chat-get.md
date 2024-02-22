@@ -28,9 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|Application | ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, Chat.Manage.Chat, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note**: The ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -43,7 +43,7 @@ GET /chats/{chat-id}
 
 ## Optional query parameters
 
-This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.
+This operation doesn't currently support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
