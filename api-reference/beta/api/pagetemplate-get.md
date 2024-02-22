@@ -64,9 +64,7 @@ If successful, this method returns a `200` and a [pageTemplate](../resources/pag
 ### Example 1: Get a page template in the templates folder of a site
 #### Request
 
-# [HTTP](#tab/http)
-
-<!-- { "blockType": "request", "name": "get-page-template", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "get-pagetemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 #### Response
 

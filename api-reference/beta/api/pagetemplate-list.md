@@ -57,7 +57,6 @@ If successful, this method returns a `200` and a list of [pageTemplate](../resou
 
 ### Request
 
-# [HTTP](#tab/http)
 <!--{
 	"blockType": "request",
 	"name": "get-pagetemplates",

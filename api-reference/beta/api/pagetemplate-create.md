@@ -57,7 +57,6 @@ The following example shows how to create a new page template.
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-pagetemplate", "scopes": "sites.readwrite.all" } -->
 
 
