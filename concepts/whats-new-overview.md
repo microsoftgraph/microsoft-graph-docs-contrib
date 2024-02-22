@@ -28,13 +28,18 @@ Microsoft Graph Toolkit v4 is now available. For details about changes in the la
 
 Use the **iCalUId** property on [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to get the unique identifier for an event across calendars.
 
+### Education
+
+- Teachers can [activate](/graph/api/educationassignment-activate) an inactive [assignment](/graph/api/resources/educationassignment) to signal that the assignment has further action items for teachers or students.
+- Teachers can [deactivate](/graph/api/educationassignment-deactivate) and mark an assignment as inactive to signal that the assignment has no further action items for teachers and students.
+
 ### Identity and access | Directory management
 
 Updated the descriptions of the **model** and **manufacturer** properties in the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to clarify their read-only status, replacing the outdated descriptions related to Project Rome sign-ins.
 
-### Teamwork and communications | Calls and online meetings
+### Reports | Partner billing reports
 
-Use the **email** property on [communicationsGuestIdentity](/graph/api/resources/communicationsguestidentity?view=graph-rest-beta&preserve-view=true) to get access to the email address of a guest user.
+Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-beta&preserve-view=true) API to access billed invoice reconciliation data.
 
 ### Teamwork and communications | Messaging
 
@@ -70,7 +75,9 @@ The new partner billing API in Microsoft Graph offers Microsoft direct partners 
 
 ### Teamwork and communications | Calls and online meetings
 
-Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant) in a [call](/graph/api/resources/call). For more information, see [JSON payload examples](/graph/api/application-post-calls#notification---roster) of notifications with delta roster disabled or enabled.
+- Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant) in a [call](/graph/api/resources/call). For more information, see [JSON payload examples](/graph/api/application-post-calls#notification---roster) of notifications with delta roster disabled or enabled.
+- Removed the **profilePhoto** property on [virtualEventPresenter](/graph/api/resources/virtualeventpresenter?view=graph-rest-beta&preserve-view=true)  in favor of the **photo** property on [virtualEventPresenterDetails](/graph/api/resources/virtualeventpresenterdetails?view=graph-rest-beta&preserve-view=true).
+- Use the **email** property on [communicationsGuestIdentity](/graph/api/resources/communicationsguestidentity?view=graph-rest-beta&preserve-view=true) to get access to the email address of a guest user.
 
 ## January 2024: New in preview only
 
