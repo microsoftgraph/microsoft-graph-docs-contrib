@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatRestrictions",
           "ChangeType": "Addition",
-          "Description": "Added the [chatRestrictions](https://learn.microsoft.com/en-us/graph/api/resources/chatRestrictions?view=graph-rest-beta) resource type.",
+          "Description": "Added the [chatRestrictions](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting-chatRestrictions?view=graph-rest-beta) resource type.",
           "Target": "chatRestrictions"
         }
       ],
