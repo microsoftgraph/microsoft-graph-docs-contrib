@@ -267,6 +267,22 @@
                     "ChangeType": "Addition",
                     "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/cloudpcusersetting-list?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
                     "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "provisioningPolicies",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **provisioningPolicies** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "userSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **userSettings** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
+                    "Target": "virtualEndpoint"
                 }
             ],
             "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
