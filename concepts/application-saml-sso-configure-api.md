@@ -1242,7 +1242,7 @@ Now that you've completed the configuration steps for the application in Microso
 
 ## Step 10: Clean up resources
 
-In this step, remove the resources that you created that you no longer need.
+In this step, remove the resources that you created and no longer need.
 
 ### Delete the application
 The request returns a `204 No Content` response code.
