@@ -1,16 +1,0 @@
----
-description: "Automatically generated file. DO NOT MODIFY"
----
-
-```bash
-
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc users patch --user-id {user-id} --body '{\
-  "passwordProfile": {\
-    "forceChangePasswordNextSignIn": false,\
-    "password": "xWwvJ]6NMw+bWH-d"\
-  }\
-}\
-'
-
-```
