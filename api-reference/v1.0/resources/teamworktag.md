@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The name of the tag as it appears to the user in Microsoft Teams.|
 |id|String|The unique identifier for the tag. Inherited from [entity](../resources/entity.md).|
 |memberCount|Int32|The number of users assigned to the tag.|
-|tagType|[teamworkTagType](../resources/teamworktag.md#teamworktagtype-values)|The type of the tag. Default is standard. It also includes scheduled tag type for shift based tags.|
+|tagType|[teamworkTagType](../resources/teamworktag.md#teamworktagtype-values)|The type of the tag. Default is standard.|
 |teamId|String|ID of the team in which the tag is defined.|
 
 ### teamworkTagType values
