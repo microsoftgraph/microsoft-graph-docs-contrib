@@ -15,10 +15,7 @@ Get a list of the [authenticationEventListener](../resources/authenticationevent
 - [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)
 - [onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md)
 - [onAuthenticationMethodStartListener](../resources/onauthenticationmethodloadstartlistener.md)
-- [onAttributeCollectionListener](../resources/onattributecollectionlistener.md)
 - [onUserCreateStartListener](../resources/onusercreatestartlistener.md)
-- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
-- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -91,7 +88,6 @@ Content-Type: application/json
             "authenticationEventsFlowId": null,
             "conditions": {
                 "applications": {
-                    "includeAllApplications": false,
                     "includeApplications@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners('990d94e5-cc8f-4c4b-97b4-27e2678aac28')/microsoft.graph.onTokenIssuanceStartListener/conditions/applications/includeApplications",
                     "includeApplications": [
                         {

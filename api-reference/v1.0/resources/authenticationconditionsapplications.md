@@ -16,7 +16,6 @@ The applications on which an authenticationEventListener should trigger.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|includeAllApplications|Boolean|Whether the custom authentication extension should trigger for all applications with appIds specified in the **includeApplications** relationship. This property must be set to `false` for listener of type **onTokenIssuanceStartListener**.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -33,7 +32,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.authenticationConditionsApplications",
-  "includeAllApplications": "Boolean"
 }
 ```
 
