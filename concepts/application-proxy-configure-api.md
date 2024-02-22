@@ -750,7 +750,7 @@ Content-type: appplication/json
 
 ## Step 5: Assign a user to the application
 
-You want to assign a user to the application. From the service principal that you created in Step 1, in the **appRoles** property and record the ID of the default **User** role, ehich is `18d14569-c3bd-439b-9a66-3a2aee01d14f`.
+You want to assign a user to the application. From the service principal that you created in Step 1, in the **appRoles** property and record the ID of the default **User** role, which is `18d14569-c3bd-439b-9a66-3a2aee01d14f`.
 
 ### Step 5.1: Assign a user to the application
 
@@ -986,5 +986,5 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/application
 
 ## Related content
 
-- [Using Microsoft Entra application proxy to publish on-premises apps for remote users](/entra/identity/app-proxy/overview-what-is-app-proxy)
-- [On-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta&preserve-view=true)
+- [Use Microsoft Entra application proxy to publish on-premises apps for remote users](/entra/identity/app-proxy/overview-what-is-app-proxy).
+- [On-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta&preserve-view=true).
