@@ -7,33 +7,34 @@ ms.localizationpriority: high
 ms.topic: tutorial
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.date: 02/21/2024
+ms.date: 02/23/2024
 #customer intent: As a developer, I want to configure SAML-based single sign-on for my application using Microsoft Graph, so that I can improve usability of apps by enabling secure authentication and authorization for users.
 ---
 
 # Configure SAML-based single sign-on for your application using Microsoft Graph
 
-Single sign-on (SSO) is an authentication method that allows users to sign in to one application and then access multiple applications without needing to sign in again. Microsoft Entra supports various SSO methods, including OpenID Connect, OAuth, SAML, password-based, and linked SSO. Using Microsoft Graph, you can automate the configuration of SSO for your application.
+Single sign-on (SSO) is an authentication method that allows users to sign in to one application and then access multiple applications without needing to sign in again. Microsoft Entra supports various SSO methods, including OpenID Connect, OAuth, Security Assertion Markup Language (SAML), password-based, and linked SSO. Using Microsoft Graph, you can automate the configuration of SSO for your application.
 
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Identify SAML-based apps in the Microsoft Entra gallery
-> * Configure SAML-based SSO for a Microsoft Entra application
-> * [Each of these bullet points align with a key H2]
-> * [Use these green checkmarks]
+> * Identify SAML-based apps in the Microsoft Entra gallery and configure SAML-based SSO for an app
+> * Add app roles to an application and grant them to users
+> * Configure claims to emit in the SAML token
+> * Configure a certificate for federated SSO
+> * Retrieve the Microsoft Entra ID SAML metadata for your application that you use to complete the intergation
 
 ## Prerequisites
 
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) as a user with Cloud Application Administrator role in your Microsoft Entra tenant.
 - Grant yourself the following delegated permissions: `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All`.
-- Have a test user that you'll assign to the application.
+- Have a test user to assign to the application.
 
 ## Step 1: Identify the application to configure
 
-Microsoft Entra ID has a gallery that contains thousands of pre-integrated applications that you can use as a template for your application. In Microsoft Graph, this list is available through the **applicationTemplate** entity.
+Microsoft Entra ID has a gallery that contains thousands of preintegrated applications that you can use as a template for your application. In Microsoft Graph, this list is available through the **applicationTemplate** entity.
 
-In this step, you identify the application template for the `AWS IAM Identity Center (successor to AWS Single Sign-On)` application that you want to configure. Record the **id**.
+In this step, you identify the application template for the `AWS IAM Identity Center (successor to AWS Single Sign-On)` application that you want to configure. Record its **id**.
 
 ### Request
 
@@ -80,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq
 
 ---
 
-#### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,9 +120,9 @@ Content-type: application/json
 }
 ```
 
-## Step 2: Create the application
+## Step 2: Instantiate the application
 
-Using the **id** value that you recorded for the application template, create an instance of the application in your tenant. Here, you name the application **AWS Contoso**. The response includes an application and service principal object for **AWS Contoso**, which is an instance of the **AWS IAM Identity Center (successor to AWS Single Sign-On)** app. Record the IDs of the two objects to use later in this tutorial.
+Using the **id** value for the application template, create an instance of the application in your tenant. Here, you name the application **AWS Contoso**. The response includes an application and service principal object for **AWS Contoso**, which is an instance of the **AWS IAM Identity Center (successor to AWS Single Sign-On)** app. Record the IDs of the two objects for use later in this tutorial.
 
 #### Request
 
@@ -359,11 +360,11 @@ Content-type: application/json
 
 ## Step 3: Configure single sign-on
 
-In this step, you configure SSO for both the AWS Contoso application and the service principal. For the application, you configure the SAML URLs while for the service principal, you set the single sign-on mode to `saml`.
+In this step, you configure SSO for both the AWS Contoso application and the service principal. For the application, you configure the SAML URLs while for the service principal, you set the SSO mode to `saml`.
 
 ### Step 3.1: Set single sign-on mode for the service principal
 
-In this step, set `saml` as the single sign-on mode for the service principal that's identified by the ID you recorded earlier. The request returns a `204 No Content` response code.
+Set `saml` as the SSO mode for the service principal you created in Step 2. The request returns a `204 No Content` response code.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -415,7 +416,7 @@ Content-type: application/json
 
 ### Step 3.2: Set basic SAML URLs for the application
 
-In this step, set the **web**/**redirectUris** and **web**/**redirectUris** for the application that's identified by the ID you recorded in Step 2. The request returns a `204 No Content` response code.
+In this step, set the **web**/**redirectUris** and **web**/**redirectUris** for the application you created in Step 2. The request returns a `204 No Content` response code.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -472,9 +473,9 @@ Content-type: application/json
 
 ---
 
-## [Optional] Add app roles
+## Step 4: Add app roles
 
-If the application requires the role information in the token, add the definition of the roles in the application object. By default, the **appRoles** object in the application and service principal in Step 2 included the default `User` and `msiam_access` roles. Do not modify or remove them. To add mode roles, you must include both the existing roles and the new roles in the **appRoles** object in the request, otherwise, the existing roles are replaced.
+If the application requires the role information in the token, add the definition of the roles in the application object. By default, the **appRoles** object in the application and service principal in Step 2 included the default `User` and `msiam_access` roles. Don't modify or remove them. To add mode roles, you must include both the existing roles and the new roles in the **appRoles** object in the request, otherwise, the existing roles are replaced.
 
 In this step, add the `Finance,WAAD` and `Admin,WAAD` roles to the AWS Contoso service principal. The request returns a `204 No Content` response code.
 
@@ -569,29 +570,28 @@ Content-type: application/json
 
 ---
 
-## Step 4: Configure claims mapping
+## Step 5: Configure claims mapping
 
-You want to configure the SAML attributes by mapping the Microsoft Entra ID fields with specific AWS IAM Identity Center application attributes. To do this, you create a claims mapping policy and assign it to the service principal.
+You want to configure the SAML attributes by mapping the Microsoft Entra ID fields with specific AWS IAM Identity Center application attributes. You therefore create a claims mapping policy and assign it to the service principal.
 
-### Step 4.1: Create a claims mapping policy
+### Step 5.1: Create a claims mapping policy
 
 In addition to the basic claims, configure the following claims for Microsoft Entra ID to emit in the SAML token:
 
 | Claim name                                                             | Source            |
 |------------------------------------------------------------------------|-------------------|
-| `https://aws.amazon.com/SAML/Attributes/Role`                          | assignedroles     |
-| `https://aws.amazon.com/SAML/Attributes/RoleSessionName`               | userprincipalname |
-| `https://aws.amazon.com/SAML/Attributes/SessionDuration`               | "900"             |
-| roles                                                                  | assignedroles     |
-| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | userprincipalname |
+| `https://aws.amazon.com/SAML/Attributes/Role`                          | `assignedroles`     |
+| `https://aws.amazon.com/SAML/Attributes/RoleSessionName`               | `userprincipalname` |
+| `https://aws.amazon.com/SAML/Attributes/SessionDuration`               | `"900"`             |
+| `appRoles`                                                             | `assignedroles`     |
+| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | `userprincipalname` |
 
 > [!NOTE]
-> Some keys in the claims mapping policy are case sensitive (for example, "Version"). If you receive an error message such as "Property has an invalid value", it might be a case sensitive issue.
+> Some keys in the claims mapping policy, such as **Version**, are case sensitive. The error message "Property has an invalid value" might be a case sensitivity issue.
 
-Create the claims mapping policy and record its ID to use later in this tutorial.
+Create the claims mapping policy and record its ID for use later in this tutorial.
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -668,7 +668,7 @@ Content-type: application/json
 }
 ```
 
-### Step 4.2: Assign the claims mapping policy to a service principal
+### Step 5.2: Assign the claims mapping policy to the service principal
 
 The request returns a `204 No Content` response code.
 
@@ -720,11 +720,11 @@ Content-type: application/json
 
 ---
 
-## Step 5: Configure a signing certificate
+## Step 6: Configure a signing certificate
 
 You need a certificate that Microsoft Entra ID can use to sign a SAML response. You can use the `/addTokenSigningCertificate` endpoint to [create a token signing certificate for the service principal](#option-1-create-a-token-signing-certificate-for-the-service-principal). Alternatively, you can [create a self-signed certificate and upload it to the service principal](#option-2-create-a-custom-signing-certificate).
 
-After adding the certificate, the service principal contans two objects in the **keyCredentials** collection: one for the private key and one for the public key; and an object in the **passwordCredentials** collection for the certificate password.
+After you add the certificate, the service principal contains two objects in the **keyCredentials** collection: one for the private key and one for the public key; and an object in the **passwordCredentials** collection for the certificate password.
 
 ### Option 1: Create a token signing certificate for the service principal
 
@@ -806,7 +806,7 @@ Content-type: application/json
 
 ### Option 2: Create a custom signing certificate
 
-You can use the following PowerShell and C# scripts to get a self-signed certificate for testing. You will then need to manipulate and pull the values you need manually using other tools. Use the best security practice from your company to create a signing certificate for production.
+You can use the following PowerShell and C# scripts to get a self-signed certificate for testing. Use your company's best security practices to create a signing certificate for production.
 
 # [PowerShell script](#tab/powershell-script)
 The following script creates a self-signed certificate with the name you give in `fqdn` when prompted, for example, `CN=AWSContoso`. It protects the certificate with the password you supply in `pwd` and exports the PFX and CER certificates to the location you specify in `location`.
@@ -837,7 +837,7 @@ Export-Certificate -cert $path -FilePath $cerFile
 ```
 
 # [C# script](#tab/csharp-script)
-The following C# console app can be used as a proof of concept to understand how the required values can be obtained. This code is for learning and reference only and should not be used as-is in production.
+The following C# console app can be used as a proof of concept to understand how the required values can be obtained. This code is for learning and reference only and shouldn't be used as-is in production.
 
 ```csharp
 using System;
@@ -939,7 +939,7 @@ From the previous step, you have the CER and PFX certificates. Extract the value
 
 ###### Request
 
-The following PowerShell script allows you to extract the thumbprint from the CER file. Replace the file path with the location of your certificate
+The following PowerShell script allows you to extract the thumbprint from the CER file. Replace the file path with the location of your certificate.
 
 ```powershell-interactive
 ## Replace the file path with the source of your certificate
@@ -958,7 +958,7 @@ Thumbprint                                Subject              EnhancedKeyUsageL
 ```
 
 ##### Extract the certificate key
-The following PowerShell script allows you to extract the public key from the CER file. Replace the file path with the location of your certificate
+The following PowerShell script allows you to extract the public key from the CER file. Replace the file path with the location of your certificate.
 
 
 ###### Request
@@ -968,23 +968,22 @@ The following PowerShell script allows you to extract the public key from the CE
 
 ###### Response
 
-The CN=AWSContoso.cer.key.txt file has an entry similar to the following output.
+The CN=AWSContoso.cer.key.txt file has an base64 encoded value similar to the following truncated output.
 
->**NOTE:** The key shown here has been shortened for readability.
-```powershell
+```bash
 MIIDHjCCAgagAwIBAgIQYDbahiL7NY...6qCMVJKHAQGzGwg==
 ```
 
 #### Add the custom signing key
 
-Now that you have the required values, you can add the following details to the **keyCredentials** and **passwordCredentials** for the service principal. Where the two objects have the same properties, you must assign the same values for those properties.
+Add the following details to the **keyCredentials** and **passwordCredentials** for the service principal. Where the two objects have the same properties, you must assign the same values for those properties.
 
 - The **customKeyIdentifier** is the certificate thumbprint hash.
 - The **startDateTime** is the date when or after the certificate was created.
-- The **endDateTime** can be a maximum of three years from the **startDateTime**. If unspecified, the system will automatically assign a date one year after the startDateTime.
+- The **endDateTime** can be a maximum of three years from the **startDateTime**. If unspecified, the system automatically assigns a date one year after the startDateTime.
 - The **type** and **usage** must be:
-   - `AsymmetricX509Cert` and `Verify` respectively for the public key certificate.
-   - `X509CertAndPassword` and `Sign` respectively for the private key certificate.
+   - `AsymmetricX509Cert` and `Verify` respectively in the same object.
+   - `X509CertAndPassword` and `Sign` respectively in the same object.
 - Assign the certificate subject name to the **displayName** property.
 - The **key** is the Base64 encoded value that you generated in the previous step.
 - The **keyId** is a GUID that you can define.
@@ -1071,7 +1070,7 @@ Content-type: application/json
 
 ### Activate the custom signing key
 
-You need to set the **preferredTokenSigningKeyThumbprint** property of the service principal to the thumbprint of the certificate that you want Microsoft Entra ID to use to sign the SAML response. Therequest returns a `204 No Content` response code.
+You need to set the **preferredTokenSigningKeyThumbprint** property of the service principal to the thumbprint of the certificate that you want Microsoft Entra ID to use to sign the SAML response. The request returns a `204 No Content` response code.
 
 #### Request
 
@@ -1124,7 +1123,7 @@ Content-type: application/json
 
 ---
 
-## Step 5: Assign users to the application
+## Step 7: Assign users to the application
 
 ### Assign a user to the application
 
@@ -1135,7 +1134,6 @@ Assign the user that you created to the service principal and grant them the `Ad
 - **resourceId** - The ID of the service principal.
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -1213,7 +1211,7 @@ Content-type: application/json
 }
 ```
 
-## Step 6: Get Microsoft Entra ID SAML metadata for AWS Contoso app
+## Step 8: Get Microsoft Entra ID SAML metadata for AWS Contoso app
 
 Use the following URL to get the Microsoft Entra ID SAML metadata for AWS Contoso app. Replace `{tenant-id}` with the tenant ID and `{appId}` with the appId of the AWS Contoso app. The metadata contains information such as the signing certificate, Microsoft Entra entityID, and Microsoft Entra SingleSignOnService, among others.
 
@@ -1235,19 +1233,21 @@ The following shows an example of what you might see for your application. Save 
 ```
 
 
-## Step 7: Complete and test the integration 
+## Step 9: Complete and test the integration 
 
-Now that you've completing the configuration steps for the application in Microsoft Entra ID and have the SAML metadata, sign in to your AWS IAM Identity Center company site as an administrator and:
+Now that you've completed the configuration steps for the application in Microsoft Entra ID and have the SAML metadata, sign in to your AWS IAM Identity Center company site as an administrator and:
 1. Complete the steps to [Configure AWS IAM Identity Center SSO](/entra/identity/saas-apps/aws-single-sign-on-tutorial#configure-aws-iam-identity-center-sso).
-1. Create a test user whose user name and email address matches the user account that you created in Microsoft Entra ID.
+1. Create a test user whose user name and email address match the user account that you created in Microsoft Entra ID.
 1. [Test the SSO integration](/entra/identity/saas-apps/aws-single-sign-on-tutorial#test-sso).
 
-## Step 8: Clean up resources
+## Step 10: Clean up resources
 
-In this step, you remove the resources that you created.
+In this step, remove the resources that you created that you no longer need.
 
 ### Delete the application
 The request returns a `204 No Content` response code.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_saml_sso_delete_application"
