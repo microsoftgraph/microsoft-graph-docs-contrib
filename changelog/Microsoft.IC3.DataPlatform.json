@@ -855,6 +855,22 @@
                 "ChangeType": "Addition",
                 "Description": "Added the **administrativeUnitInfos** property to the [participantBase](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantBase?view=graph-rest-beta) resource.",
                 "Target": "participantBase"
+              },
+                {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Property",
+                "ChangedApiName": "administrativeUnitInfos",
+                "ChangeType": "Addition",
+                "Description": "Added the **administrativeUnitInfos** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participant?view=graph-rest-beta) resource.",
+                "Target": "participant"
+              },
+             {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Property",
+                "ChangedApiName": "administrativeUnitInfos",
+                "ChangeType": "Addition",
+                "Description": "Added the **administrativeUnitInfos** property to the [organizer](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-organizer?view=graph-rest-beta) resource.",
+                "Target": "organizer"
               }
             ],
             "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
