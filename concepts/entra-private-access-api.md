@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: nbeesetti
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.prod: applications
 ms.date: 02/22/2024
 ---
 
@@ -22,89 +22,82 @@ This document details how to set up Private Access for both your Quick Access an
 
 This tutorial assumes you have already installed a connector and completed the prerequisites for Application Proxy so that connectors can communicate with Microsoft Entra services, and have configured your connector agent.  
 
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role.
+Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role.
 
-
-Grant yourself the following delegated permission: `Directory.ReadWrite.All`. 
+Grant yourself the following delegated permission: `Directory.ReadWrite.All`.
 
 ## Step 1: Create a custom application
 
-In this tutorial, you use an application template to create an instance of a custom application and service principal in your tenant for management. The template ID for a custom application is 8adf8e6e-67b2-4cf2-a259-e3dc5476c621. 
+In this tutorial, you use an application template to create an instance of a custom application and service principal in your tenant for management. The template ID for a custom application is 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
 
-Record the objectId and appId of the application to use later in the tutorial.  
+Record the `objectId` and `appId` of the application to use later in the tutorial.  
 
-In the following example, replace the values of these properties: 
+In the following example, replace the values of these properties:
 
-displayName with the name that you would like to choose for your Enterprise/Quick Access application 
+`displayName` with the name that you would like to choose for your Enterprise/Quick Access application.
 
-### Sample request 
+### Sample request
 
 ```
 POST https://graph.microsoft.com/beta/applicationTemplates/{templateID} /instantiate 
 { 
-“displayName”: “newPrivateApp” 
+   “displayName”: “newPrivateApp” 
 } 
 ```
 
 ### Response
 
 
-## Step 2: Specify what type of Private Application you are creating (Quick Access or Enterprise Application) and send the traffic from the application created to the GSA Client.  
+## Step 2: Specify what type of Private Application you are creating (Quick Access or Enterprise Application) and send the traffic from the application created to the GSA Client.
 
-In the following example, replace the values of these properties: 
+In the following example, replace the values of these properties:
 
-applicationType with the value of nonwebapp for Enterprise Applications and quickaccessapp for Quick Access Applications  
+`applicationType` with the value of `nonwebapp` for Enterprise Applications and `quickaccessapp` for Quick Access Applications.
 
-### Sample Request 
+### Sample request
 
 ```
 PATCH https://graph.microsoft.com/beta/applications/{objectID} 
-
-{ 
-
-“onPremisesPublishing”:{ 
-“applicationType”:”nonwebapp”, 
-
-“isAccessibleViaZTNAClient”:”true” 
-
+{
+   “onPremisesPublishing”:{
+   “applicationType”:”nonwebapp”,
+   “isAccessibleViaZTNAClient”:”true”
 }
 ```
- 
 
 ## Step 3: Assign a connector group to your newly created application 
 
-Get connectors 
+Get connectors
 
-List the connectors that are available. Record the id of the connector that you want to assign to a connector group. 
+List the connectors that are available. Record the id of the connector that you want to assign to a connector group.
 
-### Sample Request 
+### Sample request
 
-GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors 
+```
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
+```
 
-### Response 
+### Response
 
-
-## Create a connectorGroup 
+## Create a connectorGroup
 
 In the following example, replace the values of these properties: 
 
-name with the name that you would like to choose for your new Connector Group 
+`name` with the name that you would like to choose for your new Connector Group.
 
-Record the id that is returned to use in the next step. 
+Record the id that is returned to use in the next step.
 
  
-
-### Sample Request 
+### Sample Request
 
 ```
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups 
 { 
-  "name": "Private Access ConnectorGroup" 
+   "name": "Private Access ConnectorGroup" 
 } 
 ```
 
-### Response 
-
+### Response
 
 
 ## Assign a connector to the connectorGroup 
@@ -120,71 +113,53 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPr
 
 ### Response
 
-
 ## Assign the application to the connectorGroup
 
-### Sample Request 
+### Sample request
 
 ```
 PUT https://graph.microsoft.com/beta/applications/{objectId}/connectorGroup/$ref 
 { 
-"@odata.id":"https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationproxy/connectorGroups/daf709c2-6072-414f-b08c-bb2a80c631c" 
+   "@odata.id":"https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationproxy/connectorGroups/daf709c2-6072-414f-b08c-bb2a80c631c" 
 } 
 ```
 
-
-## Step 4: Add application segments to your Enterprise/Quick Access app 
+## Step 4: Add application segments to your Enterprise/Quick Access app
 
 Note: Use the POST command to create a new app segment. Use the PATCH command to update an existing app segment. Use the DELETE command to delete a specific app segment.  
 
-In the following example, we will be creating a new app segment. Replace the values of these properties: 
+In the following example, we will be creating a new app segment. Replace the values of these properties:
 
-destinationHost with the private app destination  
+`destinationHost` with the private app destination  
 
-destinationType with the values of ip, fqdn, _____, depending on what type of app segment you would like to add to your app 
+`destinationType` with the values of ip, fqdn, _____, depending on what type of app segment you would like to add to your app protocol with the values of `tcp`, `udp`, or `tcp,udp`.
 
-protocol with the values of “tcp,” “udp”, or “tcp,udp” 
-
-### Sample Request 
+### Sample Request
 ```
 POST https://graph.microsoft.com/beta/applications/{objectID}/onPremisesPublishing/segmentsConfiguration/Microsoft.graph.IpSegmentConfiguration/ApplicationSegments 
 
-{ 
-
-    "destinationHost": "test2.com", 
-
-    "destinationType": "fqdn", 
-
-    "port": 0, 
-
-    "ports": [ 
-
-        "445-445", 
-
-        "3389-3389" 
-
-    ], 
-
-    "protocol": "tcp" 
-
+{
+   "destinationHost": "test2.com",
+   "destinationType": "fqdn",
+   "port": 0,
+   "ports": [
+      "445-445",
+      "3389-3389"
+   ],
+   "protocol": "tcp"
 } 
 ```
 
-### Response 
-
+### Response
 
 ## To update/delete an existing app segment, use the PATCH/DELETE command using the specified segmentID 
 
 ### Sample Request 
 
 ```
-PATCH 
-
-https://graph.microsoft.com/beta/applications/{objectID}/onPremisesPublishing/segmentsConfiguration/Microsoft.graph.IpSegmentConfiguration/ApplicationSegments/{segmentID} 
-
+PATCH https://graph.microsoft.com/beta/applications/{objectID}/onPremisesPublishing/segmentsConfiguration/Microsoft.graph.IpSegmentConfiguration/ApplicationSegments/{segmentID} 
 { 
-
-“protocol”:”tcp,udp” 
+   “protocol”:”tcp,udp” 
 } 
 ```
 
@@ -192,19 +167,16 @@ https://graph.microsoft.com/beta/applications/{objectID}/onPremisesPublishing/se
 
 Note: The id used in the HTTP request is the object ID of the user that can be found in the Entra Portal (Entra Portal -> Identity -> Users -> Click on user -> Object ID). The principalId used in the body of the request is the same as the id used in the HTTP request. The resourceId is the id of the application, also known as the object ID of the application in the Entra Portal. The appRoleID can be found through Entra Portal -> App Registrations -> Find your specific app and click on it -> App Roles | Preview.  
 
-## Request 
+## Request
 
+```
 POST https://graph.microsoft.com/beta/users/{id}/appRoleAssignments 
-
 { 
-
-  "principalId": "principalId-value", 
-
-  "resourceId": "resourceId-value", 
-
-  "appRoleId": "appRoleId-value" 
-
-} 
+  "principalId": "principalId-value",
+  "resourceId": "resourceId-value",
+  "appRoleId": "appRoleId-value"
+}
+```
 
 ## Response 
 
@@ -214,7 +186,7 @@ GET the Forwarding Profile ID for the Private Access Forwarding Profile
 
 Record the id from the private access traffic profile  
 
-### Request 
+### Request
 
 ```
 GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles
@@ -222,48 +194,43 @@ GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles
 
 ## Change the state of the Private Access Forwarding Profile to Enabled 
 
-### Request 
+### Request
 
+```
 PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{id} 
-
-{ 
-
-“state”: “enabled” 
-} 
+{
+   “state”: “enabled”
+}
+```
 
 ### Response
-
 
 ## Step 7: Enable Private DNS  
 
 Note: This capability is only available for Quick Access applications 
 
-### Request  
+### Request
 
 ```
 PATCH https://graph.microsoft.com/beta/applications/{object id}/onPremisesPublishing 
-
 { 
-  "isDnsResolutionEnabled": “true” 
+   "isDnsResolutionEnabled": “true” 
 } 
 ```
 
 ### Response
 
-## Create a new DNS suffix 
+## Create a new DNS suffix
 
 ### Request 
 
 ```
 POST https://graph.microsoft-ppe.com/beta/applications/{objectID}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments 
 { 
-  "destinationHost": "app1.dns.com", 
-  "destinationType": "dnsSuffix" 
+   "destinationHost": "app1.dns.com", 
+   "destinationType": "dnsSuffix" 
 } 
 ```
-
- 
-
 
 ## Related content
 
