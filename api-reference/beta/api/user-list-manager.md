@@ -3,6 +3,7 @@ title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: apiPageType
 ---

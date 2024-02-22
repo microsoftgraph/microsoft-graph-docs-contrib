@@ -3,6 +3,7 @@ title: "user: changePassword"
 description: "Update your own password."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: apiPageType
 ---
