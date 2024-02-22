@@ -25,7 +25,7 @@ Represents a row of data in the direct routing call log. Each row maps to one ca
 
 |Property|Type|Description|
 |:---|:---|:---|
-|administrativeUnitInfos| [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md)  collection |Collection of administrative units associated to a call.|
+|administrativeUnitInfos|[microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection|Collection of administrative units associated to a call.|
 |calleeNumber|String|Number of the user or bot who received the call ([E.164](https://en.wikipedia.org/wiki/E.164) format, but may include more data).|
 |callEndSubReason|Int32|In addition to the SIP codes, Microsoft has own subcodes that indicate the specific issue.|
 |callerNumber|String|Number of the user or bot who made the call ([E.164](https://en.wikipedia.org/wiki/E.164) format, but may include more data).|
