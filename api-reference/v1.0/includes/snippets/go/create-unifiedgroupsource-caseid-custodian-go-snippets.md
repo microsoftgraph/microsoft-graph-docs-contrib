@@ -19,10 +19,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodelssecurity.NewUnifiedGroupSource()
 group := graphmodels.NewGroup()
 mail := "SOCTeam@contoso.com"
-group.SetMail(&mail)
+group.SetMail(&mail) 
 requestBody.SetGroup(group)
-includedSources := graphmodels.MAILBOX, SITE_SOURCETYPE
-requestBody.SetIncludedSources(&includedSources)
+includedSources := graphmodels.MAILBOX, SITE_SOURCETYPE 
+requestBody.SetIncludedSources(&includedSources) 
 
 unifiedGroupSources, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Custodians().ByEdiscoveryCustodianId("ediscoveryCustodian-id").UnifiedGroupSources().Post(context.Background(), requestBody, nil)
 
