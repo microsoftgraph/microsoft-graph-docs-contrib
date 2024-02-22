@@ -21,7 +21,7 @@ Install and configure the Microsoft Entra Private Access connector. For more inf
 
 An API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph.
 
-An account with the **Application Administrator** role with the delegated permission `Directory.ReadWrite.All`.
+An account with the [Application Administrator](~/identity/role-based-access-control/permissions-reference.md#application-administrator) role with the delegated permission `Directory.ReadWrite.All`.
 
 ## Step 1: Create a custom application
 
