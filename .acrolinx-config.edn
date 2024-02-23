@@ -1,7 +1,7 @@
 {
  ; https://support.acrolinx.com/hc/en-us/articles/10342999034130-Define-What-Acrolinx-for-Git-Hosting-Checks
  :allowed-branchname-matches ["main" "live"]
- :allowed-filename-matches ["concepts/" "includes/" "(?i)(?!(^.*/i|^i)ntune[^/]*$|(^.*/e|^e)nums[^/]*$)^api-reference/.*$"]
+ :allowed-filename-matches ["concepts/" "includes/" "(?i)(?!(^.*/i|^i)ntune[^/]*$|(^.*/e|^e)nums[^/]*$|(^.*/t|^t)oc.yml[^/]*$)^api-reference/.*$"]
 
  :use-gh-statuses true
 
