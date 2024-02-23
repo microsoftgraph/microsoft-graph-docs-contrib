@@ -196,8 +196,7 @@ Content-type: application/json
             ]
         },
         "authenticationFlows": {
-            "deviceCodeFlow",
-            "authenticationTransfer"
+            "deviceCodeFlow,authenticationTransfer"
         }
     },
     "grantControls": {
