@@ -32,9 +32,9 @@ One of the following permissions is required to call this API. To learn more, in
 |---------|-------------|
 |Delegated (work or school account)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChatMember.Read.Chat*, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|Application| ChatMember.Read.Chat, Chat.Manage.Chat, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note**: The ChatMember.Read.Chat and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/members
 
 ## Optional query parameters
 
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This operation doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a list of [conve
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1b
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
