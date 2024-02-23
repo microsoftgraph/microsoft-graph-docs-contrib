@@ -34,6 +34,7 @@ It is available on the media property of the [driveItem](driveitem.md) resources
 | unknownFutureValue  | Marker value for future compatibility.              |
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
