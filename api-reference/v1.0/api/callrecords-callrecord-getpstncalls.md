@@ -153,7 +153,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-## See also
+## Related content
 
 * [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report).
 * [Direct routing report in Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md).

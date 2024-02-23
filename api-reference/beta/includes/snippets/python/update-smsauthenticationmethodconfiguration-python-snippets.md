@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.sms_authentication_method_configuration import SmsAuthenticationMethodConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 

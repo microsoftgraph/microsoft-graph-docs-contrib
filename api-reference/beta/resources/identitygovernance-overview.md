@@ -49,7 +49,7 @@ Access reviews are a form of auditing the effectiveness of the organization's in
 
 ## Manage access to privileged roles
 
-Every organization has employees that require privileged administrative roles to perform their duties. In Microsoft Entra ID, you can grant such privileged assignments through [Microsoft Entra built-in roles](#see-also). Because of the kind of permissions that these roles allow, it's important to mitigate the risks of excessive, unnecessary, or misused privileged roles.
+Every organization has employees that require privileged administrative roles to perform their duties. In Microsoft Entra ID, you can grant such privileged assignments through [Microsoft Entra built-in roles](#related-content). Because of the kind of permissions that these roles allow, it's important to mitigate the risks of excessive, unnecessary, or misused privileged roles.
 
 The [privileged identity management APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) in Microsoft Graph allow you to programmatically manage the lifecycle of privileged Microsoft Entra roles in your tenant.
 
@@ -67,7 +67,7 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
 
 <!-- End of: Link to ZT guidance -->
 
-## See also
+## Related content
 
 + [What is Microsoft Entra ID Governance?](/azure/active-directory/governance/identity-governance-overview)
 + [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json)
@@ -78,9 +78,5 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Error: /resources/identitygovernance-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
+  "suppressions": []
 } -->

@@ -31,7 +31,7 @@ Looking for the API reference for these services?
 - [API for cross-device experiences in Microsoft Graph v1.0](/graph/api/resources/project-rome-overview?view=graph-rest-1.0&preserve-view=true)
 - [API for cross-device experiences in Microsoft Graph beta](/graph/api/resources/project-rome-overview?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Related content
 
 - [Learn more about the activity feed API in Microsoft Graph](activity-feed-concept-overview.md)
 - [Learn more about the device relay API in Microsoft Graph](device-relay-concept-overview.md)

@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.external().industryData().dataConnectors("8c010e87-c28b-4350-bdc1-65ec29258b93")
-	.validate()
-	.buildRequest()
-	.post();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.external().industryData().dataConnectors().byIndustryDataConnectorId("{industryDataConnector-id}").microsoftGraphIndustryDataValidate().post();
+
 
 ```

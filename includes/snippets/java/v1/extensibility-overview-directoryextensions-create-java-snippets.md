@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ExtensionProperty extensionProperty = new ExtensionProperty();
-extensionProperty.name = "jobGroupTracker";
-extensionProperty.dataType = "String";
-LinkedList<String> targetObjectsList = new LinkedList<String>();
-targetObjectsList.add("User");
-extensionProperty.targetObjects = targetObjectsList;
+extensionProperty.setName("jobGroupTracker");
+extensionProperty.setDataType("String");
+LinkedList<String> targetObjects = new LinkedList<String>();
+targetObjects.add("User");
+extensionProperty.setTargetObjects(targetObjects);
+ExtensionProperty result = graphClient.applications().byApplicationId("{application-id}").extensionProperties().post(extensionProperty);
 
-graphClient.applications("30a5435a-1871-485c-8c7b-65f69e287e7b").extensionProperties()
-	.buildRequest()
-	.post(extensionProperty);
 
 ```

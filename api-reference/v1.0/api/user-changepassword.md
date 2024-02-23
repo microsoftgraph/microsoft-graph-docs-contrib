@@ -3,6 +3,7 @@ title: "user: changePassword"
 description: "Update your own password."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -109,7 +110,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 + [Update the passwordProfile of a user to reset their password](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user-to-reset-their-password)
 
 <!-- uuid: a7c9a0de-8324-4f80-8d88-2e6d5838f3be
