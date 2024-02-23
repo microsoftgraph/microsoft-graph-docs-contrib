@@ -82,8 +82,6 @@ The new partner billing API in Microsoft Graph offers Microsoft direct partners 
 
 ### Teamwork and communications | Calls and online meetings
 
-Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant) in a [call](/graph/api/resources/call). For more information, see [JSON payload examples](/graph/api/application-post-calls#notification---roster) of notifications with delta roster disabled or enabled.
-
 - Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant) in a [call](/graph/api/resources/call). For more information, see [JSON payload examples](/graph/api/application-post-calls#notification---roster) of notifications with delta roster disabled or enabled.
 - Removed the **profilePhoto** property on [virtualEventPresenter](/graph/api/resources/virtualeventpresenter?view=graph-rest-beta&preserve-view=true)  in favor of the **photo** property on [virtualEventPresenterDetails](/graph/api/resources/virtualeventpresenterdetails?view=graph-rest-beta&preserve-view=true).
 
