@@ -19,7 +19,7 @@ Retrieving the transcript returns the metadata of the single transcript associat
 >
 > * This is a metered API. For more information, see [payment models for meeting APIs](/graph/teams-licenses#payment-models-for-meeting-apis).
 > * This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
-> * To retrieve meeting transcripts, use the [events API](/graph/api/user-post-events#example-4-create-and-enable-an-event-as-an-online-meeting).
+> * To retrieve meeting transcripts, use the [Create event](../api/user-post-events.md#example-4-create-and-enable-an-event-as-an-online-meeting) API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
