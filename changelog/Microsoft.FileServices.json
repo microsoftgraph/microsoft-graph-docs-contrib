@@ -3820,22 +3820,6 @@
           "ChangeType": "Addition",
           "Description": "Added the `comment` member to the **mediaSourceContentCategory** enumeration.",
           "Target": "mediaSourceContentCategory"
-        },
-        {
-          "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
-          "ApiChange": "Property",
-          "ChangedApiName": "driveItemSource",
-          "ChangeType": "Addition",
-          "Description": "Added the **driveItemSource** property to the [driveItemUploadableProperties](https://learn.microsoft.com/en-us/graph/api/resources/driveItemUploadableProperties?view=graph-rest-beta) resource.",
-          "Target": "driveItemUploadableProperties"
-        },
-        {
-          "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
-          "ApiChange": "Property",
-          "ChangedApiName": "mediaSource",
-          "ChangeType": "Addition",
-          "Description": "Added the **mediaSource** property to the [driveItemUploadableProperties](https://learn.microsoft.com/en-us/graph/api/resources/driveItemUploadableProperties?view=graph-rest-beta) resource.",
-          "Target": "driveItemUploadableProperties"
         }
       ],
       "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
