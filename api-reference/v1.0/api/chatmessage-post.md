@@ -26,11 +26,11 @@ The following tables show the least privileged permission or permissions require
 ### Permissions for channel
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ChannelMessage.Send, Group.ReadWrite.All** |
+| Delegated (work or school account)     | ChannelMessage.Send, Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Teamwork.Migrate.All |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use the alternative permissions listed in the table.
+> **Note**: The Group.ReadWrite.All permissino is supported only for backward compatibility. We recommend that you update your solutions to use the alternative permissions listed in the table.
 
 > **Note**: Application permissions are *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). In the future, Microsoft might require you or your customers to pay additional fees based on the amount of data imported.
 
