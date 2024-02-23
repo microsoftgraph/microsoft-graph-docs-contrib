@@ -3139,6 +3139,40 @@
       "CreatedDateTime": "2023-10-24T19:42:37.8361251Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+          "ApiChange": "Member",
+          "ChangedApiName": "aadGraphDeprecationApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the `aadGraphDeprecationApplication` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        },
+        {
+          "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+          "ApiChange": "Member",
+          "ChangedApiName": "aadGraphDeprecationServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the `aadGraphDeprecationServicePrincipal` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        },
+        {
+          "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+          "ApiChange": "Member",
+          "ChangedApiName": "mfaServerDeprecation",
+          "ChangeType": "Addition",
+          "Description": "Added the `mfaServerDeprecation` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        }
+      ],
+      "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-23T18:25:58.892085Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
     }
   ]
 }
