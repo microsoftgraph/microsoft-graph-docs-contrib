@@ -34,7 +34,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRev
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -176,7 +176,7 @@ Content-Type: application/json
                 "Recipients": null,
                 "Author@odata.type": "#Collection(String)",
                 "Author": [
-                    "meganb@m365x809305.onmicrosoft.com"
+                    "meganb@contoso.com"
                 ],
                 "CreatedTime": "2021-09-14T12:00:53Z",
                 "Received": null,

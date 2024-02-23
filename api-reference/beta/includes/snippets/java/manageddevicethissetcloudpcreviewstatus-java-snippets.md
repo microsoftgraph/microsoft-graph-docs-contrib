@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.devicemanagement.manageddevices.item.setcloudpcreviewstatus.SetCloudPcReviewStatusPostRequestBody setCloudPcReviewStatusPostRequestBody = new com.microsoft.graph.beta.devicemanagement.manageddevices.item.setcloudpcreviewstatus.SetCloudPcReviewStatusPostRequestBody();
 CloudPcReviewStatus reviewStatus = new CloudPcReviewStatus();
-reviewStatus.inReview = true;
-reviewStatus.userAccessLevel = CloudPcUserAccessLevel.RESTRICTED;
-reviewStatus.azureStorageAccountId = "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview";
+reviewStatus.setInReview(true);
+reviewStatus.setUserAccessLevel(CloudPcUserAccessLevel.Restricted);
+reviewStatus.setAzureStorageAccountId("/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview");
+setCloudPcReviewStatusPostRequestBody.setReviewStatus(reviewStatus);
+graphClient.deviceManagement().managedDevices().byManagedDeviceId("{managedDevice-id}").setCloudPcReviewStatus().post(setCloudPcReviewStatusPostRequestBody);
 
-graphClient.deviceManagement().managedDevices("185f01c2de954929afb129392e5d9f47")
-	.setCloudPcReviewStatus(ManagedDeviceSetCloudPcReviewStatusParameterSet
-		.newBuilder()
-		.withReviewStatus(reviewStatus)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryReviewSetQuery ediscoveryReviewSetQuery = new EdiscoveryReviewSetQuery();
-ediscoveryReviewSetQuery.displayName = "My Query 1 (update)";
-ediscoveryReviewSetQuery.contentQuery = "(Author=\"edisons\")";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("58399dff-cebe-478f-b1af-d3227f1fd645").reviewSets("63ef0fd7-0db2-45eb-a9d7-7d75c8239873").queries("5f426fdc-f027-40db-b7cc-453cf06dc996")
-	.buildRequest()
-	.patch(ediscoveryReviewSetQuery);
+com.microsoft.graph.beta.models.security.EdiscoveryReviewSetQuery ediscoveryReviewSetQuery = new com.microsoft.graph.beta.models.security.EdiscoveryReviewSetQuery();
+ediscoveryReviewSetQuery.setDisplayName("My Query 1 (update)");
+ediscoveryReviewSetQuery.setContentQuery("(Author=\"edisons\")");
+com.microsoft.graph.models.security.EdiscoveryReviewSetQuery result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").reviewSets().byEdiscoveryReviewSetId("{ediscoveryReviewSet-id}").queries().byEdiscoveryReviewSetQueryId("{ediscoveryReviewSetQuery-id}").patch(ediscoveryReviewSetQuery);
+
 
 ```

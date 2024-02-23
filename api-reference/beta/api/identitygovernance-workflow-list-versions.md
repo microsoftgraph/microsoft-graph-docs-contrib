@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the [workflowVersion](../resources/identitygovernance-workflowversion.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -44,7 +44,7 @@ This method supports the `$select`, `$count`, `$search`, `$orderby`, `$expand`, 
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

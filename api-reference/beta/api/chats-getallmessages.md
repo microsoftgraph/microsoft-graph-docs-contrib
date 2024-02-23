@@ -17,7 +17,7 @@ Get all messages from all [chats](../resources/chatmessage.md) that a user is a 
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -51,7 +51,7 @@ GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -142,6 +142,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 Get a log of direct routing calls as a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -37,7 +37,7 @@ GET /communications/callRecords/getDirectRoutingCalls(fromDateTime={fromDateTime
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Function parameters
 
@@ -149,7 +149,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-## See also
+## Related content
 
 * [Microsoft Teams direct routing usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center.
 * [Health Dashboard for direct routing](/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center.

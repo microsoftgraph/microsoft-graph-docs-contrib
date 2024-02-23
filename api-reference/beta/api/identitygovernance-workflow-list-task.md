@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Retrieve the details of the built-in tasks in Lifecycle Workflows.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -44,7 +44,7 @@ This method supports the `$search`, `$orderby`, and `$filter` OData query parame
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

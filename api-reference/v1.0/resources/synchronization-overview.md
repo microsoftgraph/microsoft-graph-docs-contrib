@@ -67,7 +67,7 @@ To work with the Microsoft Entra ID synchronization APIs, Microsoft Graph suppor
 - Application.Read.All
 - Application.ReadWrite.All
 
-And the following [Microsoft Entra directory roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+And the following [Microsoft Entra directory roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - Application Administrator
 - Cloud Application Administrator
@@ -211,7 +211,7 @@ HTTP/1.1 200 OK
     "synchronizationRules": []
 }
 ```
-## See also
+## Related content
 
 * [Configure synchronization with directory extension attributes](/graph/synchronization-configure-with-directory-extension-attributes)
 * [Configure synchronization with custom target attributes](/graph/synchronization-configure-with-custom-target-attributes)

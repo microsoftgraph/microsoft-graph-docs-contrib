@@ -16,11 +16,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "graphlearn_courses/courseId eq '123'"
+requestFilter := "bellowscollege_courses/courseId eq '123'"
 
 requestParameters := &graphgroups.GroupsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
-	Select: [] string {"displayName","id","description","graphlearn_courses"},
+	Select: [] string {"displayName","id","description","bellowscollege_courses"},
 }
 configuration := &graphgroups.GroupsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

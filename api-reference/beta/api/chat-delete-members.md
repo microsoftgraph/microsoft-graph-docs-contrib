@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)| ChatMember.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application| Chat.Manage.Chat*, ChatMember.ReadWrite.All |
+|Application| Chat.Manage.Chat, ChatMember.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note**: The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -40,7 +40,7 @@ DELETE /chats/{chat-id}/members/{membership-id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -109,7 +109,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Remove member from channel](channel-delete-members.md)
 - [Remove member from team](team-delete-members.md)

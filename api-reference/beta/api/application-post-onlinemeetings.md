@@ -16,7 +16,8 @@ Namespace: microsoft.graph
 Create an online meeting on behalf of a user.
 
 > [!TIP]
-> This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
+> - This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
+> - This API doesn't create a Teams Live Event.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -27,9 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :---------------------------------------------------- |
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                              |
 | Delegated (personal Microsoft account) | Not supported.                                        |
-| Application                            | OnlineMeetings.ReadWrite.All*                         |
+| Application                            | OnlineMeetings.ReadWrite.All                          |
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create online meetings on behalf of that user (with user ID specified in the request path).
+To use the OnlineMeetings.ReadWrite.All application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create online meetings on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
 
@@ -47,7 +48,7 @@ POST /users/{userId}/onlineMeetings
 
 | Name            | Description                 |
 | :-------------- | :-------------------------- |
-| Authorization   | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type    | application/json. Required. |
 | Accept-Language | Language. Optional.         |
 

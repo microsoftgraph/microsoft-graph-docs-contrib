@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -47,7 +47,7 @@ The use of `$select` to get **keyCredentials** for service principals has a thro
 
 | Name | Description |
 |:---- |:----------- |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body

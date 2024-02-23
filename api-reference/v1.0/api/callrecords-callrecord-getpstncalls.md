@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -50,7 +50,7 @@ The following table shows the parameters that can be used with this function.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -153,7 +153,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-## See also
+## Related content
 
 * [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report).
 * [Direct routing report in Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md).

@@ -205,7 +205,9 @@ The search API has the following limitations:
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
-## See also
+- The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema). Use the tenant-level or default [search schema](/sharepoint/manage-search-schema).
+
+## Related content
 
 - Learn more about a few key use cases:
   - [Search Teams messages](/graph/search-concept-chat-messages)

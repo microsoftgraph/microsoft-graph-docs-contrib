@@ -157,7 +157,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)
 

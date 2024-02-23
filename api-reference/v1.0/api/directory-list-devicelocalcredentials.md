@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get a list of the [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) objects and their properties, excluding the [credentials](../resources/devicelocalcredential.md) property. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -38,7 +40,7 @@ The response might also contain an `odata.nextLink`, which you can use to page t
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |User-Agent|The identifier for the calling application. This value contains information about the operating system and the browser used. Required.|
 |ocp-client-name|The name of the client application performing the API call. This header is used for debugging purposes. Optional.|
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|

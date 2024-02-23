@@ -38,7 +38,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -117,7 +117,7 @@ Content-Type: application/json
             "createdDateTime": "2022-05-23T00:58:19.0702524Z",
             "holdStatus": "applied",
             "id": "43434642-3137-3138-3432-374142313639",
-            "email": "AlexW@M365x809305.OnMicrosoft.com",
+            "email": "AlexW@contoso.com",
             "includedSources": "mailbox,site",
             "siteWebUrl": "https://m365x809305-my.sharepoint.com/personal/alexw_m365x809305_onmicrosoft_com/",
             "createdBy": {

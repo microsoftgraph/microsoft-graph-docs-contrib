@@ -2,6 +2,7 @@
 title: "authorizationSystem resource type"
 description: "Represents a Microsoft Azure subscription, Amazon Web Services (AWS) account, or Google Cloud Platform (GCP) project that you've onboarded onto Microsoft Entra Permissions Management."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

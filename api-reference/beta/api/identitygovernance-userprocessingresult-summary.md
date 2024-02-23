@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Provide a summary of user processing results for a specified time period. Because the amount of user processing results returned by the List API call can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -54,7 +54,7 @@ This method supports the `$count`, `$orderby`, `$expand`, and `$filter` OData qu
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

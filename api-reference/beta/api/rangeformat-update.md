@@ -33,13 +33,13 @@ PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/r
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |columnWidth|double|Gets or sets the width of all columns within the range. If the column widths aren't uniform, null is returned.|
 |horizontalAlignment|string|Represents the horizontal alignment for the specified object. Possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
@@ -64,7 +64,6 @@ The result of this set of requests is a table with three cells formatted like th
 This request updates the vertical alignment, row height, and column height of the first cell. 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat",
@@ -81,16 +80,6 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 Here's an example of the response. Note: The response object shown here might be shortened for readability.
@@ -116,7 +105,6 @@ Content-type: application/json
 This request updates the font style, size, and color of the first cell. 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_font",
@@ -132,16 +120,6 @@ Content-type: application/json
   "size": 26
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 Here's an example of the response. Note: The response object shown here might be shortened for readability.
@@ -168,7 +146,6 @@ Content-type: application/json
 This request updates the background color of the first cell. 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_fill",
@@ -182,16 +159,6 @@ Content-type: application/json
   "color": "#FF0000"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 Here's an example of the response. Note: The response object shown here might be shortened for readability.
@@ -212,7 +179,6 @@ Content-type: application/json
 This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell. 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_two",
@@ -230,16 +196,6 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-two-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-two-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 Here's an example of the response. Note: The response object shown here might be shortened for readability.
@@ -265,7 +221,6 @@ Content-type: application/json
 This request updates the font style and size of the second cell. 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_font_two",
@@ -280,16 +235,6 @@ Content-type: application/json
   "size": 26
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-two-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-two-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 Here's an example of the response. Note: The response object shown here might be shortened for readability.
@@ -316,7 +261,6 @@ Content-type: application/json
 This request updates the background color of the second cell. 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_fill_two",
@@ -330,16 +274,6 @@ Content-type: application/json
   "color": "#00FF00"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-two-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-two-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 Here's an example of the response. Note: The response object shown here might be shortened for readability.
@@ -361,7 +295,6 @@ Content-type: application/json
 This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell. 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_three",
@@ -379,16 +312,6 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-three-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-three-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 Here's an example of the response. Note: The response object shown here might be shortened for readability.
@@ -414,7 +337,6 @@ Content-type: application/json
 This request updates the font style, size, and color of the third cell. The underline property takes **Single** or **Double** as values.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_font_three",
@@ -430,16 +352,6 @@ Content-type: application/json
   "size": 26
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-three-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-three-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 Here's an example of the response. Note: The response object shown here might be shortened for readability.
@@ -466,7 +378,6 @@ Content-type: application/json
 This request updates the background color of the third cell. 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_fill_three",
@@ -480,16 +391,6 @@ Content-type: application/json
   "color": "#0000FF"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-three-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-three-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 Here's an example of the response. Note: The response object shown here might be shortened for readability.
@@ -518,19 +419,20 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: update_rangeformat_font_three/underline:\r\n       Expected type String but actual was Single. Property: underline, actual value: 'Single'",
     "Error: microsoft.graph.microsoft.graph/me:
       /me/drive/items/{var}/workbook/worksheets/{var}/range(address={var})/format/fill
       Uri path requires navigating into unknown object hierarchy: missing property 'range(address={var})' on 'workbookWorksheet'. Possible issues:
-  	 1) Doc bug where 'range(address={var})' isn't defined on the resource.
-  	 2) Doc bug where 'range(address={var})' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
-  	 3) Doc bug where 'workbookWorksheet' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation.",
+       1) Doc bug where 'range(address={var})' isn't defined on the resource.
+       2) Doc bug where 'range(address={var})' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+       3) Doc bug where 'workbookWorksheet' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation.",
     "Error: microsoft.graph.microsoft.graph/me:
       /me/drive/items/{var}/workbook/worksheets/{var}/range(address={var})/format/font
       Uri path requires navigating into unknown object hierarchy: missing property 'range(address={var})' on 'workbookWorksheet'. Possible issues:
-  	 1) Doc bug where 'range(address={var})' isn't defined on the resource.
-  	 2) Doc bug where 'range(address={var})' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
-  	 3) Doc bug where 'workbookWorksheet' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+       1) Doc bug where 'range(address={var})' isn't defined on the resource.
+       2) Doc bug where 'range(address={var})' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+       3) Doc bug where 'workbookWorksheet' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation.",
+    "Error: updaterangeformatfont_three/underline:
+      Expected type String but actual was Single. Property: underline, actual value: 'Single'"
   ]
 }
 -->

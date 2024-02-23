@@ -27,7 +27,6 @@ The work or school account needs to belong to one of the following roles:
 
 * Global Administrator
 * Domain Name Administrator
-* Partner Tier2 Support
 * Global Reader
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -46,7 +45,7 @@ This method supports the `$select` and `$filter` [OData Query Parameters](/graph
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

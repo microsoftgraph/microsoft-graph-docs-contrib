@@ -3,6 +3,32 @@
         {
             "ChangeList": [
                 {
+                    "Id": "e626fecf-cb33-4f9e-b636-52dc538a8f31",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "offerAsOptional",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **offerAsOptional** property to the [userExperienceSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-userexperiencesettings?view=graph-rest-beta) resource.",
+                    "Target": "featureUpdateCatalogEntry"
+                },
+                {
+                    "Id": "e626fecf-cb33-4f9e-b636-52dc538a8f31",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "isReadinessTest",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **isReadinessTest** property to the [expediteSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-expeditesettings?view=graph-rest-beta) resource.",
+                    "Target": "qualityUpdateCatalogEntry"
+                }
+            ],
+            "Id": "e626fecf-cb33-4f9e-b636-52dc538a8f31",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-29T01:25:48.971Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Device updates"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "qualityUpdateCadence",
@@ -177,7 +203,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-11-02T01:25:48.971Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Device updates"
         },
         {
@@ -563,7 +589,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-04-26T04:46:50.585Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Device updates"
         },
         {
@@ -605,7 +631,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-05-16T18:13:52.2492735Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Device updates"
         },
         {
@@ -975,7 +1001,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-02-02T03:35:46.1510967Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Device updates"
         }
     ]

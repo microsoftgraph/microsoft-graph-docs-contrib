@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 User user = new User();
+user.setOdataType("#microsoft.graph.user");
+User result = graphClient.users().byUserId("{user-id}").patch(user);
 
-graphClient.users("{usersId}")
-	.buildRequest()
-	.patch(user);
 
 ```

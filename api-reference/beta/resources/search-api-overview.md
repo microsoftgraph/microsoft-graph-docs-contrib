@@ -221,6 +221,8 @@ The search API has the following limitations:
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
+- The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema). Use the tenant-level or default [search schema](/sharepoint/manage-search-schema).
+
 ## Schema change deprecation warning
 Effective August 31, 2023, the beta version of the [externalItem](./externalconnectors-externalitem.md) resource in the Microsoft Graph namespace will be deprecated. Going forward, use the version of the resource in the **Microsoft.Graph.ExternalConnectors** namespace. Make sure that you update any namespace dependencies before the specified date. Alternatively, consider transitioning to the v1.0 version of the API.
 
@@ -240,7 +242,7 @@ We recommend that you update existing apps to use the current property and type 
 | [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
 | [entityTypes](./enums.md)          | Rename enum value | **unknownfuturevalue**  | **unknownFutureValue**  |
 
-## See also
+## Related content
 
 - Learn more about a few key use cases:
   - [Search Teams messages](/graph/search-concept-chat-messages)
@@ -260,6 +262,3 @@ We recommend that you update existing apps to use the current property and type 
 
 - Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

@@ -8,35 +8,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.ServicePrincipals.Item.Synchronization.Secrets;
+using Microsoft.Graph.Models;
 
-var requestBody = new SynchronizationSecretKeyStringValuePair
+var requestBody = new SecretsPutRequestBody
 {
-	AdditionalData = new Dictionary<string, object>
+	Value = new List<SynchronizationSecretKeyStringValuePair>
 	{
+		new SynchronizationSecretKeyStringValuePair
 		{
-			"value" , new List<object>
-			{
-				new 
-				{
-					Key = "BaseAddress",
-					Value = "user@domain.com",
-				},
-				new 
-				{
-					Key = "SecretToken",
-					Value = "password-value",
-				},
-				new 
-				{
-					Key = "SyncNotificationSettings",
-					Value = "{\"Enabled\":false,\"DeleteThresholdEnabled\":false}",
-				},
-				new 
-				{
-					Key = "SyncAll",
-					Value = "false",
-				},
-			}
+			Key = SynchronizationSecret.BaseAddress,
+			Value = "user@domain.com",
+		},
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.SecretToken,
+			Value = "password-value",
+		},
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.SyncNotificationSettings,
+			Value = "{\"Enabled\":false,\"DeleteThresholdEnabled\":false}",
+		},
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.SyncAll,
+			Value = "false",
 		},
 	},
 };

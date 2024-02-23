@@ -2,6 +2,7 @@
 title: "awsAuthorizationSystemTypeAction resource type"
 description: "Represents an action in an AWS authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -35,7 +36,7 @@ Inherits from [authorizationSystemTypeAction](../resources/authorizationsystemty
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the action in an AWS authorization system. This object auto-expanded.|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the action in an AWS authorization system. This object autoexpanded. Supports `$filter` (`eq`).|
 
 ## JSON representation
 The following JSON representation shows the resource type.

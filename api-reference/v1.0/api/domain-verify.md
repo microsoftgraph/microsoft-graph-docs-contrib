@@ -30,7 +30,6 @@ The work or school account needs to belong to one of the following roles:
 
 * Global Administrator
 * Domain Name Administrator
-* Partner Tier2 Support
 
 ## HTTP request
 
@@ -45,7 +44,7 @@ POST /domains/{id}/verify
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body

@@ -46,7 +46,7 @@ The following table shows the query parameters that can be used with this method
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleSchedules(dire
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/rbacapplication-roleschedules-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/rbacapplication-roleschedules-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

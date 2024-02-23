@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DetectedApp detectedApp = graphClient.deviceManagement().detectedApps("{detectedAppId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+DetectedApp result = graphClient.deviceManagement().detectedApps().byDetectedAppId("{detectedApp-id}").get();
+
 
 ```

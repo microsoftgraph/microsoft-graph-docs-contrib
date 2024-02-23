@@ -18,7 +18,7 @@ Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../reso
 This method supports federation. To list chat messages in application context, the request must be made from the tenant that the channel owner belongs to (represented by the **tenantId** property on the channel).
 
 > **Notes**: 
-> - This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
+> - This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/change-notifications-api-overview.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
 > - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -31,9 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All |
+|Application | ChatMessage.Read.Chat, Chat.Read.All, Chat.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note:** The ChatMessage.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -60,7 +60,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -108,12 +108,12 @@ To manage delegated admin relationships, the calling principal must be in the pa
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
 
-## See also
+## Related content
 
 + [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
 
@@ -123,9 +123,5 @@ To manage delegated admin relationships, the calling principal must be in the pa
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Error: /resources/delegatedadminrelationships-api-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
+  "suppressions": []
 } -->

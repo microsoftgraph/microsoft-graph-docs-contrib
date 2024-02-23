@@ -23,7 +23,7 @@ requestBody.SetSurname(&surname)
 
 
 emailAddress := graphmodels.NewEmailAddress()
-address := "pavelb@fabrikam.onmicrosoft.com"
+address := "pavelb@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Pavel Bansky"
 emailAddress.SetName(&name) 

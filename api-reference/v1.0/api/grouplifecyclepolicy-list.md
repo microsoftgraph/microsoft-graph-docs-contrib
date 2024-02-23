@@ -1,7 +1,8 @@
 ---
 title: "List groupLifecyclePolicies"
 description: "List all the groupLifecyclePolicies."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 List all the [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -38,7 +39,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

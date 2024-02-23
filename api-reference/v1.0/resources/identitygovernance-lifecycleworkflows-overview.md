@@ -121,20 +121,20 @@ Using this feature requires Microsoft Entra ID Governance licenses. To find the 
 
 ## Role and application permission authorization checks
 
-The following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to manage Lifecycle Workflows.
+The following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to manage Lifecycle Workflows.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
 | Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All |Global Reader or Lifecycle Workflows Administrator |
 | Create, Update or Delete | LifecycleWorkflows.ReadWrite.All | Lifecycle Workflows Administrator |
 
-## See also
+## Related content
 
-+ [What are Lifecycle Workflows? (Public Preview)](/azure/active-directory/governance/what-are-lifecycle-workflows)
++ [What are Lifecycle Workflows?](/azure/active-directory/governance/what-are-lifecycle-workflows)
 + [Concepts in Lifecycle Workflows](/azure/active-directory/governance/understanding-lifecycle-workflows)
-+ [Tutorial: Automate employee offboarding tasks after their last day of work with Microsoft Graph (preview)](/azure/active-directory/governance/tutorial-scheduled-leaver-graph)
-+ [Tutorial: Execute employee offboarding tasks in real-time on their last day of work with Microsoft Graph (preview)](/azure/active-directory/governance/tutorial-offboard-custom-workflow-graph)
-+ [Tutorial: Automate employee onboarding tasks before their first day of work with Microsoft Graph (preview)](/azure/active-directory/governance/tutorial-onboard-custom-workflow-graph)
++ [Tutorial: Automate employee offboarding tasks after their last day of work with Microsoft Graph](/azure/active-directory/governance/tutorial-scheduled-leaver-graph)
++ [Tutorial: Execute employee offboarding tasks in real-time on their last day of work with Microsoft Graph](/azure/active-directory/governance/tutorial-offboard-custom-workflow-graph)
++ [Tutorial: Automate employee onboarding tasks before their first day of work with Microsoft Graph](/azure/active-directory/governance/tutorial-onboard-custom-workflow-graph)
 
 <!-- {
   "type": "#page.annotation",

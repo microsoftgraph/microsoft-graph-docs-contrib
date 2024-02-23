@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryReviewSet ediscoveryReviewSet = new EdiscoveryReviewSet();
-ediscoveryReviewSet.displayName = "My review set 2";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("b0073e4e-4184-41c6-9eb7-8c8cc3e2288b").reviewSets()
-	.buildRequest()
-	.post(ediscoveryReviewSet);
+com.microsoft.graph.beta.models.security.EdiscoveryReviewSet ediscoveryReviewSet = new com.microsoft.graph.beta.models.security.EdiscoveryReviewSet();
+ediscoveryReviewSet.setDisplayName("My review set 2");
+com.microsoft.graph.models.security.EdiscoveryReviewSet result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").reviewSets().post(ediscoveryReviewSet);
+
 
 ```

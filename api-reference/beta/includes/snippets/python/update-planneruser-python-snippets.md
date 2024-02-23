@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.planner.planner_request_builder import PlannerRequestBuilder
+from msgraph.generated.models.planner_user import PlannerUser
+from msgraph.generated.models.planner_favorite_plan_reference_collection import PlannerFavoritePlanReferenceCollection
+from msgraph.generated.models.planner_favorite_plan_reference import PlannerFavoritePlanReference
+from msgraph.generated.models.planner_recent_plan_reference_collection import PlannerRecentPlanReferenceCollection
+from msgraph.generated.models.planner_recent_plan_reference import PlannerRecentPlanReference
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -30,13 +36,10 @@ request_body = PlannerUser(
 	),
 )
 
-request_configuration = PlannerRequestBuilder.PlannerRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "return=representation",
-		'If-Match' : "W/\"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=\"",
-}
+request_configuration = PlannerRequestBuilder.PlannerRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
+request_configuration.headers.add("If-Match", "W/\"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=\"")
 
-)
 
 result = await graph_client.me.planner.patch(request_body, request_configuration = request_configuration)
 

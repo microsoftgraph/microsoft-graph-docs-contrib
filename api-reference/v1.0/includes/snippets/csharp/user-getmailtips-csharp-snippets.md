@@ -14,8 +14,8 @@ var requestBody = new GetMailTipsPostRequestBody
 {
 	EmailAddresses = new List<string>
 	{
-		"danas@contoso.onmicrosoft.com",
-		"fannyd@contoso.onmicrosoft.com",
+		"danas@contoso.com",
+		"fannyd@contoso.com",
 	},
 	MailTipsOptions = MailTipsType.AutomaticReplies | MailTipsType.MailboxFullStatus,
 };

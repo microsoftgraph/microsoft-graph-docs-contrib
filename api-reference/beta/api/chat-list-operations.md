@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :--------------------------------------------------- |
 | Delegated (work or school account)     | Chat.ReadBasic, Chat.Read, Chat.ReadWrite|
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+| Application                            | ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, Chat.Manage.Chat, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note:** The ChatSettings.Read.Chat and ChatSettings.ReadWrite.Chat, and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { 
@@ -44,7 +44,7 @@ This method supports the `$filter`, `$select`, `$top`, and `$skip` [OData query 
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.appRoleAssignedResources.app_role_assigned_resources_request_builder import AppRoleAssignedResourcesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,11 +15,9 @@ query_params = AppRoleAssignedResourcesRequestBuilder.AppRoleAssignedResourcesRe
 
 request_configuration = AppRoleAssignedResourcesRequestBuilder.AppRoleAssignedResourcesRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.me.app_role_assigned_resources.get(request_configuration = request_configuration)
 
