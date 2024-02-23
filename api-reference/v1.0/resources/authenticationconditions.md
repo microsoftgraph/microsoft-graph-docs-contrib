@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The conditions on which an authenticationEventListener should trigger, for example, in a [user flow](authenticationeventsflow.md).
+The conditions on which an authenticationEventListener should trigger.
 
 ## Properties
 |Property|Type|Description|
