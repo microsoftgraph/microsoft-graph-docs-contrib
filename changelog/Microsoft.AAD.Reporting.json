@@ -2095,7 +2095,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "relyingPartyDetailedSummary,listing",
           "ChangeType": "Addition",
-          "Description": "Added a new resource type [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta). This resource type supports [listing](https://learn.microsoft.com/en-us/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) the relying parties configured in Active Directory Federation Services.",
+          "Description": "Added a new resource type [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta). This resource type supports [listing](https://learn.microsoft.com/en-us/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-beta) the relying parties configured in Active Directory Federation Services.",
           "Target": "relyingPartyDetailedSummary,listing"
         }
       ],
@@ -3045,6 +3045,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-08-31T19:58:45.348003Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "50d9727a-7a50-4c7f-aa93-6dfd4cafda1b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activeUsersBreakdownMetric",
+          "ChangeType": "Deprecation",
+          "Description": "The [activeUsersBreakdownMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeUsersBreakdownMetric?view=graph-rest-beta) resource and its associated methods is deprecated and will stop returning data on March 9, 2024. Use the existing [activeUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeusersmetric?view=graph-rest-beta) resource type instead.",
+          "Target": "activeUsersBreakdownMetric"
+        }
+      ],
+      "Id": "50d9727a-7a50-4c7f-aa93-6dfd4cafda1b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-21T00:00:00.1569988Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },

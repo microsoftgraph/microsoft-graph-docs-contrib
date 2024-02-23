@@ -10,7 +10,7 @@ from msgraph.generated.sites.item.lists.item.items.items_request_builder import 
 graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = ItemsRequestBuilder.ItemsRequestBuilderGetQueryParameters(
-		expand = ["fields(select=Name,Color,Quantity)"],
+		expand = ["fields($select=Name,Color,Quantity)"],
 )
 
 request_configuration = ItemsRequestBuilder.ItemsRequestBuilderGetRequestConfiguration(

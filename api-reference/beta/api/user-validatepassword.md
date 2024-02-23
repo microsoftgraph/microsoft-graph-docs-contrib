@@ -2,6 +2,7 @@
 title: "user: validatePassword"
 description: "Check a user's password against the organization's password validation policy and report whether the password is valid."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

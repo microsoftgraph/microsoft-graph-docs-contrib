@@ -2,6 +2,7 @@
 title: "Create user"
 description: "Create a new user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
