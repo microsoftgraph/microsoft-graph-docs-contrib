@@ -49,8 +49,8 @@ In the request body, supply a JSON object with the following parameters.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|phonenumbers|String|The list of phone numbers to which to send the notification. Required.|
-|virtualAppointmentSmsType|String|A value that indicates the type of the SMS notification to send. The allowable values are `confirmation`, `reschedule`, and `cancellation`. Required.|
+|attendees|[attendeeNotificationInfo](../resources/attendeenotificationinfo.md) collection|Represents the phone number and time zone of an external attendee. Required.|
+|messageType|[virtualAppointmentMessageType](../resources/virtualappointmentmessagetype.md) collection|Indicates the type of SMS notification to send. The possible values are: `confirmation`, `reschedule`, and `cancellation`. Required.|
 
 ## Response
 
@@ -72,10 +72,19 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentSms
 
-{
-"phoneNumbers": [ "+13129224122", "+1242421412"],
-"virtualAppointmentSmsType": "confirmation"
-}
+{ 
+    "attendees": [ 
+        {
+            "phoneNumber":  "+13129224122",
+            "timeZone": "Pacific Standard Time"
+        },
+        {
+            "phoneNumber":  "+1242421412",
+            "timeZone": "Eastern Standard Time"
+        }
+    ], 
+    "messageType": "confirmation"
+} 
 ```
 
 # [C#](#tab/csharp)
