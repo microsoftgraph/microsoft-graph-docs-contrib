@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Grading Categories
 
-Teachers can use Grading Categories to weight assignments differently in the class average grade. For example, a class could have 60% of its grade come from "Homework" assignments and 40% from "Test" assignments.
+Teachers can use grading categories to weight assignments in the class grade. For example, a class could have 60% of its grade come from "Homework" assignments and 40% from "Test" assignments.
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
