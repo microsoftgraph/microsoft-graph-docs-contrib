@@ -1,6 +1,6 @@
 ---
 title: "Grading Categories"
-description: "Teachers can use Grading Categories to weight assignments differently in the class average grade"
+description: "Teachers can use grading categories to weight assignments in the class grade."
 ms.localizationpriority: medium
 author: "v-rmanda"
 ms.prod: "education"
