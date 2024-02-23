@@ -13,9 +13,6 @@ Namespace: microsoft.graph
 Get a list of the [authenticationEventListener](../resources/authenticationeventlistener.md) objects and their properties. The following derived types are supported:
 
 - [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)
-- [onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md)
-- [onAuthenticationMethodStartListener](../resources/onauthenticationmethodloadstartlistener.md)
-- [onUserCreateStartListener](../resources/onusercreatestartlistener.md)
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
