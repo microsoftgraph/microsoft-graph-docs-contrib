@@ -42,7 +42,7 @@ Represents a row of data in the direct routing call log. Each row maps to one ca
 |mediaPathLocation|String|The data center used for media paths in non-bypass calls.|
 |otherPartyCountryCode|String|Country code of the caller for an incoming call, or callee for an outgoing call. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |signalingLocation|String|The data center used for signaling for both bypass and non-bypass calls.|
-|startDateTime|DateTimeOffset|Call start time.<br/>For failed and unanswered calls, this can be equal to invite or failure time.|
+|startDateTime|DateTimeOffset|Call start time.<br/>For failed and unanswered calls, it can be equal to invite or failure time.|
 |successfulCall|Boolean|Success or attempt.|
 |transferorCorrelationId|String|Correlation ID of the call to the transferor.|
 |trunkFullyQualifiedDomainName|String|Fully qualified domain name of the session border controller.|
