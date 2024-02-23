@@ -59,7 +59,7 @@ In the request body, supply a JSON representation of an [onlineMeeting](../resou
 
 > [!CAUTION]
 >
-> Assigning the `presenter` or `coorganizer` role to users who are not registered in Microsoft Entra ID is not currently supported.
+> Assigning the `presenter` or `coorganizer` role to users who aren't registered in Microsoft Entra ID isn't currently supported.
 
 ## Response
 If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
@@ -195,7 +195,7 @@ The following example shows how to add a passcode to a meeting. The passcode is 
 
 The following example shows a request.
 
->**Note:** The passcode is automatically generated and a custom passcode is not supported.
+>**Note:** The passcode is automatically generated and a custom passcode isn't supported.
 
 
 # [HTTP](#tab/http)
