@@ -23,11 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All** |
+|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All** |
+|Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note**: The Group.Read.All and Group.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ GET /teams/{id}/channels/{id}/filesFolder
 
 ## Optional query parameters
 
-This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 | Header       | Value |

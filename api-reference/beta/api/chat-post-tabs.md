@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Add (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md). 
 The corresponding app must already be [installed in the chat](../api/chat-list-installedapps.md).
 
-> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab will get added to the meeting.
+> **Note:** If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab will get added to the meeting.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -27,9 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWriteSelfForChat, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-| Application                            | TeamsTab.Create.Chat*, TeamsTab.ReadWrite.Chat*, TeamsTab.Create, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
+| Application                            | TeamsTab.Create.Chat, TeamsTab.ReadWrite.Chat, TeamsTab.Create, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note:** The TeamsTab.Create.Chat and TeamsTab.ReadWrite.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

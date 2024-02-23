@@ -26,9 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | TeamsTab.ReadWriteSelfForChat, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsTab.Delete.Chat*, TeamsTab.ReadWrite.Chat*, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Application | TeamsTab.Delete.Chat, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note**: The TeamsTab.Delete.Chat and TeamsTab.ReadWrite.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
