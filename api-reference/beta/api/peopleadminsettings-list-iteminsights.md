@@ -59,13 +59,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_insightssettings"
+  "name": "list_iteminsights"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/admin/people/itemInsights
 ```
-
 
 ### Response
 
@@ -74,9 +73,10 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.insightsSettings)"
-}
--->
+  "@odata.type": "microsoft.graph.insightsSettings",
+  "name": "list_iteminsights"
+}-->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -86,4 +86,3 @@ Content-Type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
-
