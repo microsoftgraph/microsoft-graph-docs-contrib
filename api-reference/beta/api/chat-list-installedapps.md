@@ -29,12 +29,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat,  TeamsAppInstallation.ReadWriteAndConsentSelfForChat<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForChat<sup>1</sup> |
+|Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat,  TeamsAppInstallation.ReadWriteAndConsentSelfForChat, TeamsAppInstallation.ReadWriteAndConsentForChat |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.Read.Chat<sup>1</sup>, Chat.Manage.Chat<sup>1</sup>, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForChat.All<sup>1</sup> |
+|Application | TeamsAppInstallation.Read.Chat, Chat.Manage.Chat, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All |
 
-> **Note**: 
-<br><sup>1</sup> These permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note:**
+The following permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent):
+> - TeamsAppInstallation.ReadWriteAndConsentSelfForChat
+> - TeamsAppInstallation.ReadWriteAndConsentForChat
+> - TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All
+> - TeamsAppInstallation.ReadWriteAndConsentForChat.All
+> - TeamsAppInstallation.Read.Chat
+> - Chat.Manage.Chat
 
 ## HTTP request
 
