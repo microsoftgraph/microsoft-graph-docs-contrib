@@ -2,6 +2,7 @@
 title: "Get settings"
 description: "Read the user and organization settings object."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

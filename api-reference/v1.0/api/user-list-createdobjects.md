@@ -2,6 +2,7 @@
 title: "List createdObjects"
 description: "Get a list of directory objects that were created by the user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

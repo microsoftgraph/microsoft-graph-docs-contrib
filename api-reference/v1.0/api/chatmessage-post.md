@@ -476,7 +476,7 @@ Content-type: application/json
 The following example shows a request.
 
 >**Notes:**
-> - The file must already be in SharePoint. To find the file properties, GET the **driveItem** for the file. For example: `/drives/{id}/items/{id}`. The attachment ID is the GUID in the **eTag** of the **driveItem**. The attachment **contentURL** is the **webUrl** of the **driveItem** folder plus the name of the **driveItem**. The attachment name is the name of the **driveItem**.
+> - The file to attach must already be in SharePoint. To access the file properties, [GET the **driveItem** for the file](/graph/api/driveitem-get). The **eTag** of the **driveItem** has a GUID that is your attachment ID. The **webDavUrl** of the **driveItem** is your attachment **contentURL**. You can use the name of the **driveItem** as your attachment name. You can use /drives/{drive-id}/items/{item-id} to get a drive item resource. To get **webDavUrl**, you have to explicitly select it via $select=webDavUrl or $select=*,webDavUrl.
 > - Microsoft Graph supports the `OpenUrl` card action. Bots are required for other card actions.
 
 
@@ -612,7 +612,7 @@ The following example shows a request.
 
 > **Note:** The **temporaryId** in the **hostedContents** collection is a random ID but must be the same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in the body as `../hostedContents/1/$value`.)
 
-**contentBytes** must be set to binary string Base64-encoded bytes.  You can convert an item to binary Base64-encoded bytes in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`, for example. Microsoft .NET SDK users don't need to convert to Base64 encoded bytes as the SDK handles it for you.
+**contentBytes** must be set to binary string Base64-encoded bytes. You can convert an item to binary Base64-encoded bytes in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`, for example. Microsoft .NET SDK users don't need to convert to Base64 encoded bytes as the SDK handles it for you.
 
 
 # [HTTP](#tab/http)

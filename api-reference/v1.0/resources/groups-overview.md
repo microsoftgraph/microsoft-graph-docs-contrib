@@ -1,7 +1,8 @@
 ---
 title: "Working with groups in Microsoft Graph"
 description: "Use the groups API to create and manage different types of groups such as Microsoft 365 groups, security groups, mail-enabled security groups, and distribution groups."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: conceptualPageType

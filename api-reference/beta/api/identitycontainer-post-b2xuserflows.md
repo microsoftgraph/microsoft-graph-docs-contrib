@@ -325,9 +325,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: create_b2xUserFlow_from_b2xUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: create_b2xUserFlow_from_b2xUserFlows_identityProviders/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: create_b2xUserFlow_from_b2xuserflows_apiconnectors/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
     "Error: createb2xuserflowfromb2xuserflowsapiconnectors/userFlowTypeVersion:
       Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
     "Error: createb2xuserflowfromb2xuserflowsidentityProviders/userFlowTypeVersion:
