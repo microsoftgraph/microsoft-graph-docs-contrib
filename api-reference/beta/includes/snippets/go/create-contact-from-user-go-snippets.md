@@ -23,14 +23,14 @@ requestBody.SetSurname(&surname)
 
 
 typedEmailAddress := graphmodels.NewTypedEmailAddress()
-address := "pavelb@contoso.onmicrosoft.com"
+address := "pavelb@contoso.com"
 typedEmailAddress.SetAddress(&address) 
 name := "Pavel Bansky"
 typedEmailAddress.SetName(&name) 
 type := graphmodels.PERSONAL_EMAILTYPE 
 typedEmailAddress.SetType(&type) 
 typedEmailAddress1 := graphmodels.NewTypedEmailAddress()
-address := "pavelb@fabrikam.onmicrosoft.com"
+address := "pavelb@contoso.com"
 typedEmailAddress1.SetAddress(&address) 
 name := "Pavel Bansky"
 typedEmailAddress1.SetName(&name) 

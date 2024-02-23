@@ -64,7 +64,7 @@ To configure an application access policy and allow applications to access onlin
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "748d2cbb-3b55-40ed-8c34-2eae5932b22a"
    ```
 
-5. (Optional) Grant the policy to the whole tenant. This will apply to users who do not have an application access policy assigned. For details, see the cmdlet links in the [see also](#see-also) section.
+5. (Optional) Grant the policy to the whole tenant. This will apply to users who do not have an application access policy assigned. For details, see the cmdlet links in the [Related content](#related-content) section.
 
    Run the following cmdlet, replacing the **PolicyName** argument.
 
@@ -110,7 +110,7 @@ If you attempt an API call to access an online meeting or virtual event without 
 
 Follow the steps in this article to create and/or grant an application access policy that contains the app ID to the user ID.
 
-## See also
+## Related content
 
 - [Permissions reference](permissions-reference.md)
 - [New-CsApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy)

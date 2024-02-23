@@ -73,7 +73,7 @@ Here's a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - For administrators to create a room list, use the Exchange PowerShell cmdlet [New-DistributionGroup](/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps&preserve-view=true).
 - For administrators to add a room to a room list, use the Exchange Powershell cmdlet [Add-DistributionGroupMember](/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps&preserve-view=true).
 

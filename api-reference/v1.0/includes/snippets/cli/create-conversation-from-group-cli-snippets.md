@@ -19,7 +19,7 @@ mgc groups conversations create --group-id {group-id} --body '{\
                         {\
                             "emailAddress": {\
                                 "name": "Adele Vance",\
-                                "address": "AdeleV@contoso.onmicrosoft.com"\
+                                "address": "AdeleV@contoso.com"\
                             }\
                         }\
                     ]\

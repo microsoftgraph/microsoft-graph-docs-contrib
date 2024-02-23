@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EmailFileAssessmentRequest threatAssessmentRequest = new EmailFileAssessmentRequest();
 threatAssessmentRequest.setOdataType("#microsoft.graph.emailFileAssessmentRequest");
-threatAssessmentRequest.setRecipientEmail("tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com");
+threatAssessmentRequest.setRecipientEmail("tifc@contoso.com");
 threatAssessmentRequest.setExpectedAssessment(ThreatExpectedAssessment.Block);
 threatAssessmentRequest.setCategory(ThreatCategory.Malware);
 threatAssessmentRequest.setContentData("UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC.....");

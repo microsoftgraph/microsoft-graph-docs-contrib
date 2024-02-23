@@ -114,7 +114,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get userTeamwork](userteamwork-get.md)
 - [Get teamwork](teamwork-get.md)

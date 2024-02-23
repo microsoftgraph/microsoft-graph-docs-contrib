@@ -2,7 +2,8 @@
 title: "List groups"
 description: "List all the groups available in an organization, excluding dynamic distribution groups."
 ms.localizationpriority: high
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -170,7 +171,7 @@ Content-type: application/json
       "preferredDataLocation": "CAN",
       "preferredLanguage": null,
       "proxyAddresses": [
-        "smtp:golfassist@contoso.onmicrosoft.com",
+        "smtp:golfassist@contoso.com",
         "SMTP:golfassist@contoso.com"
       ],
       "renewedDateTime": "2018-12-22T02:21:05Z",
@@ -202,7 +203,7 @@ Content-type: application/json
       "preferredDataLocation": "CAN",
       "preferredLanguage": null,
       "proxyAddresses": [
-        "smtp:golftalk@contoso.onmicrosoft.com",
+        "smtp:golftalk@contoso.com",
         "SMTP:golftalk@contoso.com"
       ],
       "renewedDateTime": "2018-11-19T20:29:40Z",
