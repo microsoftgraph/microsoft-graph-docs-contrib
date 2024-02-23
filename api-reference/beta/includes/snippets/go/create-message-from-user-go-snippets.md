@@ -17,21 +17,21 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewMessage()
 subject := "Did you see last night's game?"
-requestBody.SetSubject(&subject)
-importance := graphmodels.LOW_IMPORTANCE
-requestBody.SetImportance(&importance)
+requestBody.SetSubject(&subject) 
+importance := graphmodels.LOW_IMPORTANCE 
+requestBody.SetImportance(&importance) 
 body := graphmodels.NewItemBody()
-contentType := graphmodels.HTML_BODYTYPE
-body.SetContentType(&contentType)
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "They were <b>awesome</b>!"
-body.SetContent(&content)
+body.SetContent(&content) 
 requestBody.SetBody(body)
 
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 address := "AdeleV@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {

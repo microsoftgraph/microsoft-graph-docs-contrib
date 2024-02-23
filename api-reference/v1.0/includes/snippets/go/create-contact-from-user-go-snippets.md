@@ -17,16 +17,16 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewContact()
 givenName := "Pavel"
-requestBody.SetGivenName(&givenName)
+requestBody.SetGivenName(&givenName) 
 surname := "Bansky"
-requestBody.SetSurname(&surname)
+requestBody.SetSurname(&surname) 
 
 
 emailAddress := graphmodels.NewEmailAddress()
 address := "pavelb@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 name := "Pavel Bansky"
-emailAddress.SetName(&name)
+emailAddress.SetName(&name) 
 
 emailAddresses := []graphmodels.EmailAddressable {
 	emailAddress,
