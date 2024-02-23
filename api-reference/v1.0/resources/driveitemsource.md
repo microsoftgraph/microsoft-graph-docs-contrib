@@ -32,7 +32,7 @@ It's available on the source property of [driveItem](driveitem.md) resources.
 | office              | The application is Office.                        |
 | loki                | The application is Loki.                          |
 | loop                | The application is Loop.                          |
-| other               | The application is a 3rd party application.       |
+| other               | The application is a third party application.       |
 | unknownFutureValue  | Marker value for future compatibility.            |
 
 ## JSON representation
