@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |[Create authenticationEventListener](../api/identitycontainer-post-authenticationeventlisteners.md)|[authenticationEventListener](../resources/authenticationeventlistener.md)|Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object.|
 |[Get authenticationEventListener](../api/authenticationeventlistener-get.md)|[authenticationEventListener](../resources/authenticationeventlistener.md)|Read the properties and relationships of an [authenticationEventListener](../resources/authenticationeventlistener.md) object.|
 |[Update authenticationEventListener](../api/authenticationeventlistener-update.md)|[authenticationEventListener](../resources/authenticationeventlistener.md)|Update the properties of an [authenticationEventListener](../resources/authenticationeventlistener.md) object.|
-|[Delete authenticationEventListener](../api/identitycontainer-delete-authenticationeventlisteners.md)|None|Delete an [authenticationEventListener](../resources/authenticationeventlistener.md) object.|
+|[Delete authenticationEventListener](../api/authenticationeventlistener-delete.md)|None|Delete an [authenticationEventListener](../resources/authenticationeventlistener.md) object.|
 
 ## Properties
 |Property|Type|Description|
