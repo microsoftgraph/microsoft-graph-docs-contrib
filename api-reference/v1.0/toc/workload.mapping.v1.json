@@ -51,7 +51,7 @@
         },
         {
           "name": "Synchronization",
-          "overview": "resources/synchronization-overview.md",
+          "overview": "../../resources/synchronization-overview.md",
           "workloads": [
             {
               "id": "Microsoft.IAM",
@@ -85,7 +85,7 @@
       "childNodes": [
         {
           "name": "Extended properties",
-          "overview": "resources/extended-properties-overview.md",
+          "overview": "../../resources/extended-properties-overview.md",
           "workloads": [
             {
               "id": "Microsoft.Exchange",
@@ -113,7 +113,7 @@
     },
     {
       "name": "Change notifications",
-      "overview": "resources/change-notifications-api-overview.md",
+      "overview": "../../resources/change-notifications-api-overview.md",
       "workloads": [
         {
           "id": "Microsoft.SubscriptionServices",
@@ -125,7 +125,7 @@
     },
     {
       "name": "Compliance",
-      "overview": "resources/complianceapioverview.md",
+      "overview": "../../resources/complianceapioverview.md",
       "workloads": [
         {
           "id": "Microsoft.Compliance.DataSubjectRequest",
@@ -137,25 +137,33 @@
     },
     {
       "name": "Cross-device experiences",
-      "overview": "resources/project-rome-overview.md",
-      "workloads": [
+      "overview": "../../resources/project-rome-overview.md",
+      "childNodes": [
         {
-          "id": "Microsoft.ProjectRome.ActivityFeedServiceTimeline",
-          "includedResources": [
-            "activityHistoryItem",
-            "userActivity"
+          "name": "Activity feed",
+          "overview": "../../resources/activity-feed-api-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.ProjectRome.ActivityFeedServiceTimeline",
+              "includedResources": [
+                "userActivity",
+                "activityHistoryItem"
+              ]
+            }
           ]
         }
       ]
     },
     {
       "name": "Customer booking",
-      "overview": "resources/booking-api-overview.md",
+      "overview": "../../resources/booking-api-overview.md",
       "workloads": [
         {
           "id": "Microsoft.Bookings",
           "excludedResources": [
-            "solutionsRoot"
+            "solutionsRoot",
+            "bookingCustomerBase",
+            "bookingStaffMemberBase"
           ]
         }
       ]
@@ -165,10 +173,15 @@
       "childNodes": [
         {
           "name": "Browser management",
-          "overview": "resources/browser-edge-api-overview.md",
+          "overview": "../../resources/browser-edge-api-overview.md",
           "workloads": [
             {
-              "id": "Microsoft.Edge.CloudSiteListManagement"
+              "id": "Microsoft.Edge.CloudSiteListManagement",
+              "excludedResources": [
+                "admin",
+                "edge",
+                "internetExplorerMode"
+              ]
             }
           ]
         },
@@ -178,16 +191,59 @@
             {
               "id": "Microsoft.PrintService",
               "excludedResources": [
-                "printUsage"
+                "printUsage",
+                "entity",
+                "group",
+                "user",
+                "reportRoot",
+                "printTask",
+                "printerBase",
+                "printUsageByPrinter",
+                "printUsageByUser"
+              ]
+            }
+          ],
+          "childNodes": [
+            {
+              "name": "Reports",
+              "workloads": [
+                {
+                  "id": "Microsoft.PrintService",
+                  "includedResources": [
+                    "printUsageByPrinter",
+                    "printUsageByUser"
+                  ]
+                }
+              ],
+              "childNodes": [
+                {
+                  "name": "Archived print jobs",
+                  "additionalLinks": [
+                    {
+                      "name": "List a user's archived print jobs",
+                      "href": "../../api/reports-getuserarchivedprintjobs.md"
+                    },
+                    {
+                      "name": "List a groups's archived print jobs",
+                      "href": "../../api/reports-getgrouparchivedprintjobs.md"
+                    },
+                    {
+                      "name": "List a printer's archived print jobs",
+                      "href": "../../api/reports-getprinterarchivedprintjobs.md"
+                    }
+                  ]
+                }
               ]
             }
           ]
         },
         {
           "name": "Corporate management",
+          "overview": "../../resources/intune-graph-overview.md",
           "childNodes": [
             {
               "name": "App management",
+              "overview": "../../resources/intune-app-conceptual.md",
               "workloads": [
                 {
                   "id": "Microsoft.Intune.Applications"
@@ -255,7 +311,7 @@
         },
         {
           "name": "Service health and communications",
-          "overview": "resources/service-communications-api-overview.md",
+          "overview": "../../resources/service-communications-api-overview.md",
           "workloads": [
             {
               "id": "Microsoft.M365ServiceCommsPlatform",
@@ -269,7 +325,7 @@
     },
     {
       "name": "Education",
-      "overview": "resources/education-overview.md",
+      "overview": "../../resources/education-overview.md",
       "workloads": [
         {
           "id": "Microsoft.EducationRosteringAPIs",
@@ -326,7 +382,7 @@
     },
     {
       "name": "External data connections",
-      "overview": "resources/connectors-api-overview.md",
+      "overview": "../../resources/connectors-api-overview.md",
       "workloads": [
         {
           "id": "Microsoft.SubstrateConnectors",
@@ -338,7 +394,7 @@
     },
     {
       "name": "Files",
-      "overview": "resources/onedrive.md",
+      "overview": "../../resources/onedrive.md",
       "workloads": [
         {
           "id": "Microsoft.FileServices",
@@ -353,7 +409,7 @@
     },
     {
       "name": "Identity and access",
-      "overview": "resources/azure-ad-overview.md",
+      "overview": "../../resources/azure-ad-overview.md",
       "childNodes": [
         {
           "name": "Directory management",
@@ -389,7 +445,7 @@
           "childNodes": [
             {
               "name": "Custom security attributes",
-              "overview": "resources/custom-security-attributes-overview.md",
+              "overview": "../../resources/custom-security-attributes-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.DirectoryServices",
@@ -418,7 +474,7 @@
         },
         {
           "name": "Governance",
-          "overview": "resources/identitygovernance-overview.md",
+          "overview": "../../resources/identitygovernance-overview.md",
           "childNodes": [
             {
               "name": "Privileged identity management",
@@ -476,7 +532,7 @@
             },
             {
               "name": "Lifecycle workflows",
-              "overview": "resources/identitygovernance-lifecycleworkflows-overview.md",
+              "overview": "../../resources/identitygovernance-lifecycleworkflows-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.AAD.LCM",
@@ -528,7 +584,7 @@
           "childNodes": [
             {
               "name": "Authentication methods",
-              "overview": "resources/authenticationmethods-overview.md",
+              "overview": "../../resources/authenticationmethods-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.StrongAuthenticationAPI",
@@ -675,7 +731,7 @@
     },
     {
       "name": "Mail",
-      "overview": "resources/mail-api-overview.md",
+      "overview": "../../resources/mail-api-overview.md",
       "workloads": [
         {
           "id": "Microsoft.Exchange",
@@ -692,7 +748,7 @@
       "childNodes": [
         {
           "name": "Focused Inbox",
-          "overview": "resources/manage-focused-inbox.md",
+          "overview": "../../resources/manage-focused-inbox.md",
           "workloads": [
             {
               "id": "Microsoft.Exchange",
@@ -704,7 +760,7 @@
         },
         {
           "name": "Extended properties",
-          "overview": "resources/extended-properties-overview.md",
+          "overview": "../../resources/extended-properties-overview.md",
           "workloads": [
             {
               "id": "Microsoft.Exchange",
@@ -719,7 +775,7 @@
     },
     {
       "name": "Notes",
-      "overview": "resources/onenote-api-overview.md",
+      "overview": "../../resources/onenote-api-overview.md",
       "workloads": [
         {
           "id": "Microsoft.OneNote"
@@ -728,7 +784,7 @@
     },
     {
       "name": "People and workplace intelligence",
-      "overview": "resources/social-overview.md",
+      "overview": "../../resources/social-overview.md",
       "workloads": [
         {
           "id": "Microsoft.Exchange",
@@ -762,7 +818,7 @@
       "childNodes": [
         {
           "name": "Extended properties",
-          "overview": "resources/extended-properties-overview.md",
+          "overview": "../../resources/extended-properties-overview.md",
           "workloads": [
             {
               "id": "Microsoft.Exchange",
@@ -795,7 +851,7 @@
         },
         {
           "name": "Microsoft 365 usage reports",
-          "overview": "resources/report.md",
+          "overview": "../../resources/report.md",
           "workloads": [
             {
               "id": "Microsoft.O365Reporting"
@@ -809,7 +865,7 @@
       "childNodes": [
         {
           "name": "Query",
-          "overview": "resources/search-api-overview.md",
+          "overview": "../../resources/search-api-overview.md",
           "workloads": [
             {
               "id": "Microsoft.MicrosoftSearch"
@@ -820,7 +876,7 @@
     },
     {
       "name": "Security",
-      "overview": "resources/security-api-overview.md",
+      "overview": "../../resources/security-api-overview.md",
       "workloads": [
         {
           "id": "Microsoft.Security.RecordsManagement",
@@ -875,7 +931,7 @@
         },
         {
           "name": "Information protection",
-          "overview": "resources/threatassessment-api-overview.md",
+          "overview": "../../resources/threatassessment-api-overview.md",
           "workloads": [
             {
               "id": "Microsoft.ThreatAssessment",
@@ -887,7 +943,7 @@
         },
         {
           "name": "Threat intelligence",
-          "overview": "resources/security-threatintelligence-overview.md",
+          "overview": "../../resources/security-threatintelligence-overview.md",
           "workloads": [
             {
               "id": "Microsoft.ThreatIntelligence"
@@ -898,7 +954,7 @@
     },
     {
       "name": "Sites and lists",
-      "overview": "resources/sharepoint.md",
+      "overview": "../../resources/sharepoint.md",
       "workloads": [
         {
           "id": "Microsoft.SharePoint"
@@ -907,7 +963,7 @@
     },
     {
       "name": "Tasks and plans",
-      "overview": "resources/planner-overview.md",
+      "overview": "../../resources/planner-overview.md",
       "workloads": [
         {
           "id": "Microsoft.Office.Tasks"
@@ -916,7 +972,7 @@
     },
     {
       "name": "Teamwork and communications",
-      "overview": "resources/teams-api-overview.md",
+      "overview": "../../resources/teams-api-overview.md",
       "workloads": [
         {
           "id": "Microsoft.Teams.Shifts",
@@ -935,7 +991,7 @@
     },
     {
       "name": "To-do tasks",
-      "overview": "resources/todo-overview.md",
+      "overview": "../../resources/todo-overview.md",
       "workloads": [
         {
           "id": "Microsoft.Todo",
@@ -951,7 +1007,7 @@
     },
     {
       "name": "Workbooks and charts",
-      "overview": "resources/excel.md",
+      "overview": "../../resources/excel.md",
       "workloads": [
         {
           "id": "Microsoft.Excel",
@@ -966,11 +1022,11 @@
   "resourceOverviews": [
     {
       "resource": "federatedIdentityCredential",
-      "overview": "resources/federatedidentitycredentials-overview.md"
+      "overview": "../../resources/federatedidentitycredentials-overview.md"
     },
     {
       "resource": "subjectRightsRequest",
-      "overview": "resources/subjectrightsrequest-subjectrightsrequestapioverview.md"
+      "overview": "../../resources/subjectrightsrequest-subjectrightsrequestapioverview.md"
     }
   ]
 }
