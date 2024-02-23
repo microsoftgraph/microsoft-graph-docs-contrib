@@ -15,9 +15,9 @@ Create an online meeting on behalf of a user.
 
 > [!TIP]
 >
-> * This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
-> * This API doesn't create a Teams Live Event.
-> * To retrieve meeting transcripts, use the [events API](/graph/api/user-post-events#example-4-create-and-enable-an-event-as-an-online-meeting).
+> * This API creates a standalone meeting that isn't associated with any event on the user's calendar; therefore, meetings created via this API aren't shown on the user's calendar.
+> * This API doesn't create a Teams live event.
+> * To retrieve meeting transcripts, use the [Create event](../api/user-post-events.md#example-4-create-and-enable-an-event-as-an-online-meeting) API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -57,7 +57,7 @@ In the request body, supply a JSON representation of an [onlineMeeting](../resou
 
 > [!CAUTION]
 >
-> Assigning the `presenter` or `coorganizer` role to users who are not registered in Microsoft Entra ID is not currently supported.
+> Assigning the `presenter` or `coorganizer` role to users who aren't registered in Microsoft Entra ID isn't currently supported.
 
 ## Response
 If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
@@ -194,7 +194,7 @@ The following example shows how to add a passcode to a meeting. The passcode is 
 
 Here's an example  of a request.
 
->**Note:** The passcode is automatically generated and a custom passcode is not supported.
+>**Note:** The passcode is automatically generated and a custom passcode isn't supported.
 
 
 # [HTTP](#tab/http)
