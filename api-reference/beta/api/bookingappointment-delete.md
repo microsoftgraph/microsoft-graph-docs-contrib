@@ -55,10 +55,10 @@ Here's an example of a request.
 <!-- {
   "blockType": "request",
   "name": "delete_bookingappointment",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "AAMkADKqAAA="]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "AAMkADKqAAA="]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKqAAA=
+DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.com/appointments/AAMkADKqAAA=
 ```
 
 # [C#](#tab/csharp)
@@ -85,10 +85,6 @@ DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunch
 [!INCLUDE [sample-code](../includes/snippets/php/delete-bookingappointment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingappointment-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-bookingappointment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunch
 ---
 
 ### Response
-Here's an example of the response. 
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

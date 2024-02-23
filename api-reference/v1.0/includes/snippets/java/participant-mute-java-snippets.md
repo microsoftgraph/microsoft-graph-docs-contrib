@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.communications().calls("57dab8b1-894c-409a-b240-bd8beae78896").participants("2765eb15-01f8-47c6-b12b-c32111a4a86f")
-	.mute(ParticipantMuteParameterSet
-		.newBuilder()
-		.withClientContext(clientContext)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.communications.calls.item.participants.item.mute.MutePostRequestBody mutePostRequestBody = new com.microsoft.graph.communications.calls.item.participants.item.mute.MutePostRequestBody();
+mutePostRequestBody.setClientContext("d45324c1-fcb5-430a-902c-f20af696537c");
+var result = graphClient.communications().calls().byCallId("{call-id}").participants().byParticipantId("{participant-id}").mute().post(mutePostRequestBody);
+
 
 ```

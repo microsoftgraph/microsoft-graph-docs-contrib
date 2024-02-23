@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.planner.planner_request_builder import PlannerRequestBuilder
+from msgraph.generated.models.planner_user import PlannerUser
+from msgraph.generated.models.planner_favorite_plan_reference_collection import PlannerFavoritePlanReferenceCollection
+from msgraph.generated.models.planner_favorite_plan_reference import PlannerFavoritePlanReference
+from msgraph.generated.models.planner_recent_plan_reference_collection import PlannerRecentPlanReferenceCollection
+from msgraph.generated.models.planner_recent_plan_reference import PlannerRecentPlanReference
 
 graph_client = GraphServiceClient(credentials, scopes)
 

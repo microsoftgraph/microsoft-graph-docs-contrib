@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ediscovery_hold_policy import EdiscoveryHoldPolicy
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -15,7 +16,7 @@ request_body = EdiscoveryHoldPolicy(
 			"user_sources@odata_bind" : [
 				{
 						"@odata_type" : "microsoft.graph.security.userSource",
-						"email" : "SalesTeam@M365x809305.OnMicrosoft.com",
+						"email" : "SalesTeam@contoso.com",
 				},
 			],
 			"site_sources@odata_bind" : [

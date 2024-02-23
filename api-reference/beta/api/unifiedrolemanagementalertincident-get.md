@@ -124,7 +124,7 @@ Content-Type: application/json
     "id": "13d5df6a-3d2e-4dcb-9dab-486df2cf5c8e",
     "assigneeId": "13d5df6a-3d2e-4dcb-9dab-486df2cf5c8e",
     "assigneeDisplayName": "testUser1",
-    "assigneeUserPrincipalName": "testuser1@anujcoffice.onmicrosoft.com"
+    "assigneeUserPrincipalName": "testuser1@contoso.com"
 }
 ```
 

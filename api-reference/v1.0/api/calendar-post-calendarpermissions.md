@@ -27,7 +27,7 @@ Depending on the type of calendar that the event is in and the permission type (
 ## HTTP request
 
 Create the specified permissions of a user's primary calendar:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 
@@ -36,7 +36,7 @@ POST /users/{id}/calendar/calendarPermissions
 ```
 
 Create the specified permissions of a group calendar:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 ```http
@@ -44,7 +44,7 @@ POST /groups/{id}/calendar/calendarPermissions
 ```
 
 Create the specified permissions of the user calendar that contains the identified event:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 ```http
@@ -74,7 +74,7 @@ The following example shows a request.
 
 
 # [HTTP](#tab/http)
-<!-- { 
+<!-- {
   "blockType": "request",
   "name": "create_calendarpermissions"
 }-->
@@ -85,7 +85,7 @@ POST https://graph.microsoft.com/v1.0/me/calendar/calendarPermissions
 {
     "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
     },
     "isInsideOrganization": true,
     "isRemovable": true,
@@ -116,6 +116,10 @@ POST https://graph.microsoft.com/v1.0/me/calendar/calendarPermissions
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-calendarpermissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-calendarpermissions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -153,7 +157,7 @@ Content-type: application/json
     ],
     "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
     }
 }
 ```

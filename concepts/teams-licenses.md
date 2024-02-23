@@ -76,8 +76,7 @@ Many supported licenses offer free trials.
 [Office 365 E5](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5?activetab=pivot%3aoverviewtab) 
 for instance has a **Free trial** link under the **Buy** button.
 
-You can get a free Microsoft 365 E5 developer sandbox subscription with 25 user licenses 
-through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
+You might qualify for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
 
 > [!NOTE]
 > The Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference) must be enabled before it can be licensed. You can manage licenses in the [Microsoft Entra admin center](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) or the [Microsoft 365 admin center](https://admin.microsoft.com). You can also assign licenses to a group account by using [Microsoft Graph Graph REST API and PowerShell SDK](/azure/active-directory/enterprise-users/licensing-ps-examples).

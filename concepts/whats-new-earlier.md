@@ -3630,7 +3630,7 @@ API snippets ([example](/graph/api/user-get?view=graph-rest-1.0&preserve-view=tr
 [1:1 chats](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)
 [Shifts management](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true)
 
-## See also
+## Related content
 - See [what's currently new](whats-new-overview.md) in Microsoft Graph.
 - Check out the [Microsoft Graph developer blog](https://developer.microsoft.com/graph/blogs/) periodically for release announcements and helpful resources.
 - Browse details of Microsoft Graph API additions, and API behavior updates in the [changelog](changelog.md).

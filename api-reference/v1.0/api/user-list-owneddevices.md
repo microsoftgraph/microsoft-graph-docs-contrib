@@ -2,6 +2,7 @@
 title: "List ownedDevices"
 description: "Get the list of devices that are owned by the user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

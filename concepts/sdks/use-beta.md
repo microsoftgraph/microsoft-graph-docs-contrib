@@ -90,6 +90,6 @@ The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgrap
 
 ---
 
-## See also
+## Related content
 
 [SDKs in preview or GA status](sdks-overview.md#sdks-in-preview-or-ga-status).

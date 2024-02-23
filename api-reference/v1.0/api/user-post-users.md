@@ -2,6 +2,7 @@
 title: "Create User"
 description: "Use this API to create a new User."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -46,21 +47,21 @@ POST /users
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
-The following table lists the properties that are required when you create a user. If you're including an **identities** property for the user you're creating, not all the properties listed are required. For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required, and **passwordPolicies** must be set to `DisablePasswordExpiration`. For a social identity, none of the properties are required.
+The following table lists the properties that are required when you create a user. If you're including an **identities** property for the user you're creating, not all the properties listed are required. For a social identity, none of the properties are required.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
-|accountEnabled |boolean |true if the account is enabled; otherwise, false.|
-|displayName |string |The name to display in the address book for the user.|
-|onPremisesImmutableId |string |Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.|
-|mailNickname |string |The mail alias for the user.|
+|accountEnabled |Boolean |true if the account is enabled; otherwise, false.|
+|displayName |String |The name to display in the address book for the user.|
+|onPremisesImmutableId |String |Required only when creating a new user account if you are using a federated domain for the user's **userPrincipalName** (UPN) property.|
+|mailNickname |String |The mail alias for the user.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user. |
-|userPrincipalName |string |The user principal name (someuser@contoso.com). It's an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). <br>NOTE: This property cannot contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
+|userPrincipalName |String |The user principal name (someuser@contoso.com). It's an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). <br>NOTE: This property cannot contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
 
 Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
->[!NOTE]
->Federated users created using this API will be forced to sign-in every 12 hours by default.  For more information on how to change this, see [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+> [!NOTE]
+> Federated users created via this API are forced to sign in every 12 hours by default. For information about how to change this, see [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 ## Response
 
@@ -72,7 +73,7 @@ If successful, this method returns `201 Created` response code and [user](../res
 
 #### Request
 
-Here is an example of the request. 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,7 +89,7 @@ Content-type: application/json
   "accountEnabled": true,
   "displayName": "Adele Vance",
   "mailNickname": "AdeleV",
-  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+  "userPrincipalName": "AdeleV@contoso.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "xWwvJ]6NMw+bWH-d"
@@ -134,7 +135,9 @@ In the request body, supply a JSON representation of [user](../resources/user.md
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -152,29 +155,29 @@ Content-type: application/json
     "displayName": "Adele Vance",
     "givenName": "Adele",
     "jobTitle": "Product Marketing Manager",
-    "mail": "AdeleV@contoso.onmicrosoft.com",
+    "mail": "AdeleV@contoso.com",
     "mobilePhone": "+1 425 555 0109",
     "officeLocation": "18/2111",
     "preferredLanguage": "en-US",
     "surname": "Vance",
-    "userPrincipalName": "AdeleV@contoso.onmicrosoft.com"
+    "userPrincipalName": "AdeleV@contoso.com"
 }
 ```
 
 ### Example 2: Create a user with social and local account identities
 
-Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in B2C tenants.  
+Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in B2C tenants.
 
->[!NOTE] 
+>[!NOTE]
 >For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
 
 #### Request
 
 
 # [HTTP](#tab/http)
-<!-- {	
-  "blockType": "request",	
-  "name": "create_user_from_users_identities"	
+<!-- {
+  "blockType": "request",
+  "name": "create_user_from_users_identities"
 }-->
 
 ```http
@@ -186,12 +189,12 @@ Content-type: application/json
   "identities": [
     {
       "signInType": "userName",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "johnsmith"
     },
     {
       "signInType": "emailAddress",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "jsmith@yahoo.com"
     },
     {
@@ -244,7 +247,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. 
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -264,12 +267,12 @@ Content-type: application/json
   "identities": [
     {
       "signInType": "userName",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "johnsmith"
     },
     {
       "signInType": "emailAddress",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "jsmith@yahoo.com"
     },
     {
@@ -281,7 +284,7 @@ Content-type: application/json
   "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)
