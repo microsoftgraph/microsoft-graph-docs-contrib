@@ -18,7 +18,7 @@ The **plannerApprovalRequirement** resource represents approval completion requi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isApprovalRequired|Boolean|Specifies if approval is required, to complete the [plannerTask](plannertask.md).|
+|isApprovalRequired|Boolean|Specifies if [approval](plannerbaseapprovalattachment.md) is required, to complete the [plannerTask](plannertask.md). When this property is set to true, the task can only be marked as complete, if an approval has been created for the task and that approval has been approved.|
 
 ## Relationships
 None.

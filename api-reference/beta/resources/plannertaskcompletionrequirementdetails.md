@@ -19,7 +19,7 @@ Represents detailed information about [completionRequirements](plannertask.md#pl
 
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalRequirement |[plannerApprovalRequirement](../resources/plannerapprovalrequirement.md)|**TODO: Add Description**|
+|approvalRequirement |[plannerApprovalRequirement](plannerapprovalrequirement.md)  |Information about the requirements of an approval.|
 |checklistRequirement|[plannerChecklistRequirement](plannerchecklistrequirement.md)|Information about the requirements for completing the checklist.|
 
 ## Relationships
