@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessAuthenticationFlows resource type"
-description: "Represents the authentication flows in scope for the policy"
+description: "Represents the authentication flows in scope for the policy."
 author: "nickludwig"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -19,7 +19,7 @@ Represents the authentication flows in scope for the policy.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|transferMethods|conditionalAccessTransferMethods|Represents the transfer methods in scope for the policy.The possible values are: `none`, `deviceCodeFlow`, `authenticationTransfer`, `unknownFutureValue`.|
+|transferMethods|conditionalAccessTransferMethods|Represents the transfer methods in scope for the policy. The possible values are: `none`, `deviceCodeFlow`, `authenticationTransfer`, `unknownFutureValue`.|
 
 ## Relationships
 
