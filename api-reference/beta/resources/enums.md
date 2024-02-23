@@ -1455,6 +1455,7 @@ Namespace: microsoft.graph
 | published          |
 | assigned           |
 | unknownFutureValue |
+| inactive           |
 
 ### educationSubmissionStatus values
 

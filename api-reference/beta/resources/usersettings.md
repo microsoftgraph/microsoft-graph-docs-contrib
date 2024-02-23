@@ -2,6 +2,7 @@
 title: "userSettings resource type"
 description: "The current user settings for content discovery. "
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: resourcePageType
