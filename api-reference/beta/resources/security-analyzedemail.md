@@ -1,9 +1,9 @@
 ---
 title: "analyzedEmail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: Get a list of email meta data
+author: "ajaj-shaikh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,49 +13,49 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Analyzedemails API allows to search over the meta data of emails 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List analyzedEmail objects](../api/security-collaborationroot-list-analyzedemails.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|Get a list of the [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) objects and their properties.|
 |[Get analyzedEmail](../api/security-analyzedemail-get.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Read the properties and relationships of a [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) object.|
-|[remediate](../api/security-analyzedemail-remediate.md)|None|**TODO: Add Description**|
+|[remediate](../api/security-analyzedemail-remediate.md)|None|Remediation action to be performed on a collection of analyzed emails .|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|alertIds|String collection|**TODO: Add Description**|
-|attachments|[microsoft.graph.security.analyzedEmailAttachment](../resources/security-analyzedemailattachment.md) collection|**TODO: Add Description**|
-|attachmentsCount|Int32|**TODO: Add Description**|
-|authenticationDetails|[microsoft.graph.security.analyzedEmailAuthenticationDetail](../resources/security-analyzedemailauthenticationdetail.md)|**TODO: Add Description**|
-|bulkComplaintLevel|String|**TODO: Add Description**|
-|contexts|String collection|**TODO: Add Description**|
-|detectionMethods|String collection|**TODO: Add Description**|
-|directionality|[microsoft.graph.security.antispamDirectionality](#antispamdirectionality-values)|**TODO: Add Description**.The possible values are: `unknown`, `inbound`, `outbound`, `intraOrg`, `unknownFutureValue`.|
-|distributionList|String|**TODO: Add Description**|
-|emailClusterId|String|**TODO: Add Description**|
-|exchangeTransportRules|[microsoft.graph.security.analyzedEmailExchangeTransportRuleInfo](../resources/security-analyzedemailexchangetransportruleinfo.md) collection|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|internetMessageId|String|**TODO: Add Description**|
-|language|String|**TODO: Add Description**|
-|latestDelivery|[microsoft.graph.security.analyzedEmailDeliveryDetail](../resources/security-analyzedemaildeliverydetail.md)|**TODO: Add Description**|
-|loggedDateTime|DateTimeOffset|**TODO: Add Description**|
-|networkMessageId|String|**TODO: Add Description**|
-|originalDelivery|[microsoft.graph.security.analyzedEmailDeliveryDetail](../resources/security-analyzedemaildeliverydetail.md)|**TODO: Add Description**|
-|overrideSources|String collection|**TODO: Add Description**|
-|phishConfidenceLevel|String|**TODO: Add Description**|
-|policy|String|**TODO: Add Description**|
-|policyAction|String|**TODO: Add Description**|
-|recipientEmailAddresses|String collection|**TODO: Add Description**|
-|returnPath|String|**TODO: Add Description**|
-|senderDetail|[microsoft.graph.security.analyzedEmailSenderDetail](../resources/security-analyzedemailsenderdetail.md)|**TODO: Add Description**|
-|sizeInBytes|Int32|**TODO: Add Description**|
-|spamConfidenceLevel|String|**TODO: Add Description**|
-|subject|String|**TODO: Add Description**|
-|threatType|[microsoft.graph.security.threatType](#threattype-values)|**TODO: Add Description**.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
-|urls|[microsoft.graph.security.analyzedEmailUrl](../resources/security-analyzedemailurl.md) collection|**TODO: Add Description**|
-|urlsCount|Int32|**TODO: Add Description**|
+|alertIds|String collection| Collection of values containing id of any alert associated with the email. |
+|attachments|[microsoft.graph.security.analyzedEmailAttachment](../resources/security-analyzedemailattachment.md) collection|Collection of the attachments in the email.|
+|attachmentsCount|Int32|Number of attachments in the email.|
+|authenticationDetails|[microsoft.graph.security.analyzedEmailAuthenticationDetail](../resources/security-analyzedemailauthenticationdetail.md)| Authentication detail of the email.|
+|bulkComplaintLevel|String|Bulk complaint level of the email. A higher BCL is more likely to be spam.|
+|contexts|String collection|Contexts from xmi info of the email.  |
+|detectionMethods|String collection|Detection methods.|
+|directionality|[microsoft.graph.security.antispamDirectionality](#antispamdirectionality-values)|Direction of the email relative to your network.The possible values are: `unknown`, `inbound`, `outbound`, `intraOrg`, `unknownFutureValue`.|
+|distributionList|String|Distribution list details to which the email was sent.|
+|emailClusterId|String|Identifier for the group of similar emails clustered based on heuristic analysis of their content|
+|exchangeTransportRules|[microsoft.graph.security.analyzedEmailExchangeTransportRuleInfo](../resources/security-analyzedemailexchangetransportruleinfo.md) collection|Name of the ETRs associated with the email|
+|id|String|Id of an analyzed email.|
+|internetMessageId|String|Public-facing identifier for the email that is set by the sending email system. The message-id in the format specified by RFC2822|
+|language|String|Detected language of the email content.|
+|latestDelivery|[microsoft.graph.security.analyzedEmailDeliveryDetail](../resources/security-analyzedemaildeliverydetail.md)|Latest delivery details of the email.|
+|loggedDateTime|DateTimeOffset|Date-time when the email record was logged.|
+|networkMessageId|String|Internal identifier id for the email generated by Microsoft 365.|
+|originalDelivery|[microsoft.graph.security.analyzedEmailDeliveryDetail](../resources/security-analyzedemaildeliverydetail.md)|Original delivery details of the email.|
+|overrideSources|String collection|Aggregated list of all overrides with source on email.|
+|phishConfidenceLevel|String|Phish confidence of the email|
+|policy|String|Action policy that took effect.|
+|policyAction|String|Action taken on the email based on the configured policy.|
+|recipientEmailAddresses|String collection|Email addresses of the recipients.|
+|returnPath|String|Return-path is a the field that indicates where and how bounced emails will be processed.|
+|senderDetail|[microsoft.graph.security.analyzedEmailSenderDetail](../resources/security-analyzedemailsenderdetail.md)|Sender details of the email.|
+|sizeInBytes|Int32| Size of the email in bytes.|
+|spamConfidenceLevel|String|Spam confidence of the email.|
+|subject|String|Subject of the email.|
+|threatType|[microsoft.graph.security.threatType](#threattype-values)|Threat types.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
+|urls|[microsoft.graph.security.analyzedEmailUrl](../resources/security-analyzedemailurl.md) collection|Collection of the urls in the email.|
+|urlsCount|Int32|Number of urls in the email.|
 
 ### antispamDirectionality values
 
