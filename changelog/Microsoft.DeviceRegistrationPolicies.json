@@ -107,6 +107,32 @@
         "SubArea": "Identity and sign in"
       },
       {
+      "ChangeList": [
+        {
+          "Id": "d936e0d1-f6ac-413f-813b-71a707eb18b2",
+          "ApiChange": "Property",
+          "ChangedApiName": "localAdmins",
+          "ChangeType": "Addition",
+          "Description": "Added the **localAdmins** property to the [azureADJoinPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADJoinPolicy?view=graph-rest-beta) resource.",
+          "Target": "azureADJoinPolicy"
+        },
+        {
+          "Id": "d936e0d1-f6ac-413f-813b-71a707eb18b2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "localAdminSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [localAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/localAdminSettings?view=graph-rest-beta) resource.",
+          "Target": "localAdminSettings"
+        }
+      ],
+      "Id": "d936e0d1-f6ac-413f-813b-71a707eb18b2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-23T21:26:23.2801098Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+      },
+      {
            "ChangeList": [
              {
                "Id": "c228429d-a285-407d-b2d3-5c24f0565c48",
