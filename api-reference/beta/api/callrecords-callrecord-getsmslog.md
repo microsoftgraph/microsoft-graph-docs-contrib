@@ -68,7 +68,7 @@ The following example shows how to get the log of sent/received SMS that occurre
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
