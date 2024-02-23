@@ -13,15 +13,7 @@ Namespace: microsoft.graph
 
 A listener for when a token is about to be issued to your application.
 
-Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List onTokenIssuanceStartListener objects](../api/ontokenissuancestartlistener-list.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) collection|Get a list of the [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) objects and their properties.|
-|[Get onTokenIssuanceStartListener](../api/ontokenissuancestartlistener-get.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)|Read the properties and relationships of an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object.|
-|[Update onTokenIssuanceStartListener](../api/ontokenissuancestartlistener-update.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)|Update the properties of an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object.|
-|[Delete onTokenIssuanceStartListener](../api/ontokenissuancestartlistener-delete.md)|None|Delete an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object.|        
+Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).  
 
 ## Properties
 |Property|Type|Description|
