@@ -292,7 +292,7 @@ If present, represents details of an event that happened in a [chat](/graph/api/
 
 ### from
 
-Represents the sender of the message. Microsoft Teams supports a large set of senders
+Represents the sender of the message. Microsoft Teams supports a variety of senders
 
 - Azure AD users - Users who have a valid Azure AD user. This includes [Azure AD guests](/azure/active-directory/external-identities/what-is-b2b) and [native federation](/microsoftteams/manage-external-access)
 
