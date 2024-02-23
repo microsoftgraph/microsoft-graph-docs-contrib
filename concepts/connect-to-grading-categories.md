@@ -13,7 +13,7 @@ Teachers can use grading categories to weight assignments in the class grade. Fo
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
-## Get class
+## Get a class
 
 Retrieve a class from the system. A class is a universal group with a special property that indicates to the system that the group is a class. Group members represent the students; group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members by using the following APIs:
 
