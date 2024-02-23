@@ -1,7 +1,7 @@
 {
  ; https://support.acrolinx.com/hc/en-us/articles/10342999034130-Define-What-Acrolinx-for-Git-Hosting-Checks
  :allowed-branchname-matches ["main" "live"]
- :allowed-filename-matches ["^concepts/(?!toc\.yml).*%" "includes/" "(?i)(?!(^.*/i|^i)ntune[^/]*$|(^.*/e|^e)nums[^/]*$|(^.*/t|^t)oc\.yml[^/]*$)^(api-reference)/.*$"] ;; Can be overridden in repo-specific edn file. This is an allow list that identifies which folders contain the files Acrolinx will check. Separate multiple folders as follows ["folder/" "folder2"]
+ :allowed-filename-matches ["^concepts/(?!toc\\.yml).*" "includes/" "(?i)(?!(^.*/i|^i)ntune[^/]*$|(^.*/e|^e)nums[^/]*$|(^.*/t|^t)oc\\.yml[^/]*$)^api-reference/.*$"]
 
  :use-gh-statuses true
 
