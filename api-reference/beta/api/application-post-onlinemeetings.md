@@ -446,7 +446,7 @@ The following example shows how to create a meeting with a Microsoft Teams meeti
 
 > [!CAUTION]
 >
->- The template might lock some meeting options in the Teams UI. This locking is enforced on the server side.
+>- The template might lock some meeting options in the Teams UI. The enforcement of the lock takes place on the server side.
 >- Subsequent updates to the **onlineMeeting** can't overwrite the **meetingTemplateId** or locked meeting options.
 
 #### Request
