@@ -1,5 +1,5 @@
 ---
-author: MarcMroz
+author: ZeljkoTodorovic
 description: "Contains metadata about the source application in which the drive item was created."
 title: driveItemSource resource type
 ms.localizationpriority: medium
@@ -53,7 +53,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## Related content
+## See also
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 
