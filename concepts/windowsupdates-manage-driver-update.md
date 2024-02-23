@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](../api-reference/beta/resources/windowsupdates-deployment.md) of Windows 10 and Windows 11 feature updates, expedited quality updates, and driver updates. This topic focuses on managing the deployments of driver updates. For information about deploying feature updates, see [Deploy a feature update](./windowsupdates-deploy-update.md). For information about deploying expedited quality updates, see [Deploy an expedited quality update](./windowsupdates-deploy-expedited-update.md).
 
-When devices enrolled in the Windows Update for Business deployment service scan Windows Update, the deployment service collects scan results of applicable drivers that are better than what is currently installed on the device.  The service then catalogs them to be browsed, approved, and scheduled for deployment.  Only content that has been approved using the deployment service will be offered to devices as long as it remains enrolled in driver management.
+When devices enrolled in the Windows Update for Business deployment service scan Windows Update, the deployment service collects scan results of applicable drivers that are better than what is currently installed on the device. The service then catalogs them to be browsed, approved, and scheduled for deployment. Only content approved using the deployment service is offered to devices as long as it remains enrolled in driver management.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ HTTP/1.1 202 Accepted
 
 ## Step 2: Create a deployment audience for receiving updates
 
-After devices are enrolled and managed by the deployement service, they can be placed into audiences for a [deployment](../api-reference/beta/resources/windowsupdates-deployment.md).  Deployment audiences specify content to deploy, how and when to deploy the content, and the targeted devices.
+After devices are enrolled and managed by the deployment service, they can be placed into audiences for a [deployment](../api-reference/beta/resources/windowsupdates-deployment.md). Deployment audiences specify content to deploy, how and when to deploy the content, and the targeted devices.
 
 The following example shows how to create a deployment audience. The targeted devices are specified in the next step.
 
@@ -306,7 +306,7 @@ Content-type: application/json
 
 ## During a driver deployment
 
-While a deployment is in progress, you can update its audience members, as well as prevent the content from being offered to devices if they haven't already received it, by setting the **isRevoked** property to `true`.  This is the auditable way to pause a deployment and will automatically populate the **revokedBy** and **revokedDateTime** properties. To resume offering the content, create a new approval.
+While a deployment is in progress, you can update its audience members, as well as prevent the content from being offered to devices if they haven't already received it, by setting the **isRevoked** property to `true`. This is the auditable way to pause a deployment and will automatically populate the **revokedBy** and **revokedDateTime** properties. To resume offering the content, create a new approval.
 
 ### Request
 
