@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of the [cloudClipboardItem](../resources/cloudclipboarditem.md) objects and their properties for a user. The API only allows getting [cloudClipboardItem](../resources/cloudclipboarditem.md) objects for 
 - The signed-in user's own [cloudClipboardItem](../resources/cloudclipboarditem.md) objects.
-- An app on behalf of the user if the user has given delegated access to it.
+- An app on behalf of the user if the user grants delegated access to it.
 
 Getting user2's [cloudClipboardItem](../resources/cloudclipboarditem.md) using user1's credential is **not** allowed.
 
@@ -68,8 +68,8 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 |Status code|Status message|Description|
 |:---|:---|:---|
 |400|Bad request|The request is malformed or incorrect, such as invalid page size or invalid `$skipToken` value.|
-|403|Forbidden|The caller cannot perform the action. This indicates that the user has not consented to share [cloudClipboardItem](../resources/cloudclipboarditem.md).|
-|409|Conflict|The current state conflicts with what the request expects. This usually indicates that the user is not eligible for the cloud clipboard feature because the user doesn't have at least two strongly authenticated devices.|
+|403|Forbidden|The caller can't perform the action. It indicates that the user has not consented to share [cloudClipboardItem](../resources/cloudclipboarditem.md).|
+|409|Conflict|The current state conflicts with what the request expects. It usually indicates that the user isn't eligible for the cloud clipboard feature because the user doesn't have at least two strongly authenticated devices.|
 |429|Too many requests|The request rate limit has been exceeded. Wait for the time specified in the `Retry-After` header and try again.| 
 
 ## Examples
