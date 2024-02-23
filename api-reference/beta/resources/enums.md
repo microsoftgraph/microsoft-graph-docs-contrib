@@ -204,7 +204,6 @@ Namespace: microsoft.graph
 | aadGraphDeprecationApplication      |
 | aadGraphDeprecationServicePrincipal |
 | mfaServerDeprecation                |
-| insiderRiskPolicy                   |
 
 ### layoutTemplateType values
 
