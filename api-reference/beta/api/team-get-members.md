@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |---------|-------------|
 |Delegated (work or school account)| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
+|Application| TeamMember.Read.Group, TeamMember.Read.All, TeamMember.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note:** The TeamMember.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
@@ -37,7 +37,7 @@ GET /teams/{team-id}/members/{membership-id}
 
 ## Optional query parameters
 
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This operation doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

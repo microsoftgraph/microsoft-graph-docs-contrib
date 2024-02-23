@@ -26,13 +26,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat<sup>1</sup>, TeamsAppInstallation.ReadWriteForChat<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentSelfForChat, TeamsAppInstallation.ReadWriteAndConsentForChat |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteAndConsentSelfForChat, TeamsAppInstallation.ReadWriteAndConsentForChat |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Chat.Manage.Chat<sup>2</sup>, TeamsAppInstallation.ReadWriteSelfForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All |
+|Application | Chat.Manage.Chat, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All |
 
 > **Notes:**
-<br><sup>1</sup> These permissions can't be used to install apps that require consent to resource-specific permissions.
-<br><sup>2</sup> These permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> -  The TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteSelfForChat.All, and TeamsAppInstallation.ReadWriteForChat.All permissions can't be used to install apps that require consent to resource-specific permissions.
+> - The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ POST /chats/{chat-id}/installedApps/{app-installation-id}/upgrade
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists additional parameters that can be used with the upgrade action.
+The following table lists more parameters that can be used with the upgrade action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
