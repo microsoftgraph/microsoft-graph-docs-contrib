@@ -1,6 +1,6 @@
 ---
 title: "schedule resource type"
-description: "Represents a collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team."
+description: "Represents a collection of scheduling groups, shifts, times off, and time off reasons for a team."
 author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects within a [team](../resources/team.md).
+Represents a collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects for a [team](../resources/team.md).
 
 ## Methods
 

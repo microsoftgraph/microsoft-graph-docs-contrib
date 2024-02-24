@@ -1,6 +1,6 @@
 ---
 title: "shiftsRoleDefinition resource type"
-description: "A single role's definition in a Shifts schedule."
+description: "A definition for a single role in a schedule in the Shifts app in Teams."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a single role's definition in a Shifts schedule.
+A definition for a single role in a schedule in the Shifts app in Teams.
 
 ## Methods
 |Method|Return type|Description|
