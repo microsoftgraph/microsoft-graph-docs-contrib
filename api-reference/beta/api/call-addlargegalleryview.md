@@ -161,7 +161,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Learn how to identify the large gallery view participant in a call](/graph/cloud-communications-identifylargegalleryview)
 

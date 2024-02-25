@@ -140,7 +140,9 @@ Content-type: application/json
   "offerShiftRequestsEnabled": true,
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Sunday",
-  "activitiesIncludedWhenCopyingShiftsEnabled": true
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true
 }
 ```
 
@@ -150,8 +152,6 @@ Content-type: application/json
 
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team-put-schedule-2"
@@ -160,60 +160,28 @@ The following example shows a request.
 PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
 
 {
-   "enabled":true,
-   "timeZone":"America/Chicago",
-   "provisionStatus":"Completed",
-   "provisionStatusCode":null,
-   "openShiftsEnabled":true,
-   "swapShiftsRequestsEnabled":true,
-   "offerShiftRequestsEnabled":true,
-   "timeOffRequestsEnabled":true,
-   "startDayOfWeek": "Tuesday",
-   "activitiesIncludedWhenCopyingShiftsEnabled": true,
-   "timeClockEnabled":true,
-   "timeClockSettings":{
-      "approvedLocation":{
-         "altitude":1024.13,
-         "latitude":26.13246,
-         "longitude":24.34616
-      }
-   }
-} 
+  "enabled": true,
+  "timeZone": "America/Chicago",
+  "provisionStatus": "Completed",
+  "provisionStatusCode": null,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true,
+  "startDayOfWeek": "Tuesday",
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true,
+  "timeClockEnabled": true,
+  "timeClockSettings": {
+    "approvedLocation": {
+      "altitude": 1024.13,
+      "latitude": 26.13246,
+      "longitude": 24.34616
+    }
+  }
+}
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-put-schedule-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/team-put-schedule-2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-put-schedule-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-put-schedule-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-put-schedule-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-put-schedule-2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-put-schedule-2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -231,24 +199,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "enabled":true,
-   "timeZone":"America/Chicago",
-   "provisionStatus":"Completed",
-   "provisionStatusCode":null,
-   "openShiftsEnabled":true,
-   "swapShiftsRequestsEnabled":true,
-   "offerShiftRequestsEnabled":true,
-   "timeOffRequestsEnabled":true,
-   "startDayOfWeek": "Tuesday",
-   "activitiesIncludedWhenCopyingShiftsEnabled": true,
-   "timeClockEnabled":true,
-   "timeClockSettings":{
-      "approvedLocation":{
-         "altitude":1024.13,
-         "latitude":26.13246,
-         "longitude":24.34616
-      }
-   }
+  "enabled": true,
+  "timeZone": "America/Chicago",
+  "provisionStatus": "Completed",
+  "provisionStatusCode": null,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true,
+  "startDayOfWeek": "Tuesday",
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true,
+  "timeClockEnabled": true,
+  "timeClockSettings": {
+    "approvedLocation": {
+      "altitude": 1024.13,
+      "latitude": 26.13246,
+      "longitude": 24.34616
+    }
+  }
 }
 ```
 
@@ -266,6 +236,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

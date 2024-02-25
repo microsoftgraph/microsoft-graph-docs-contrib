@@ -38,7 +38,7 @@ The program control type objects are automatically generated when the global adm
 None.
 
 
-## See also
+## Related content
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
