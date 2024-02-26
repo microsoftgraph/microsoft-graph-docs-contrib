@@ -1,9 +1,9 @@
 ---
 title: "detonationDetails resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: Detonation of specific entity associated with email like URL or file. 
+author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: security
 doc_type: resourcePageType
 ---
 
@@ -13,16 +13,18 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+These details are specific to email attachments and URLs.It includes the Detonation chain, Detonation summary and observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
+
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|analysisDateTime|DateTimeOffset|**TODO: Add Description**|
-|detonationChain|[microsoft.graph.security.detonationChain](../resources/security-detonationchain.md)|**TODO: Add Description**|
-|detonationObservables|[microsoft.graph.security.detonationObservables](../resources/security-detonationobservables.md)|**TODO: Add Description**|
-|detonationVerdict|String|**TODO: Add Description**|
-|detonationVerdictReason|String|**TODO: Add Description**|
+|analysisDateTime|DateTimeOffset|The time of detonation.|
+|detonationChain|[microsoft.graph.security.detonationChain](../resources/security-detonationchain.md)|The chain of detonation.|
+|detonationObservables|[microsoft.graph.security.detonationObservables](../resources/security-detonationobservables.md)|All observables in the detonation tree.|
+|detonationVerdict|String|The verdict of detonation.|
+|detonationVerdictReason|String|The reason for the verdict of detonation.|
 
 ## Relationships
 None.
