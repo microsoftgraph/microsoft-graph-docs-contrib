@@ -2,6 +2,7 @@
 title: "Update userSettings"
 description: "Update the properties of the settings object. "
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -49,7 +50,7 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body

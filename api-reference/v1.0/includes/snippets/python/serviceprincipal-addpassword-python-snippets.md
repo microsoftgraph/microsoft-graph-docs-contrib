@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.add_password_post_request_body import AddPasswordPostRequestBody
+from msgraph.generated.models.password_credential import PasswordCredential
 
 graph_client = GraphServiceClient(credentials, scopes)
 

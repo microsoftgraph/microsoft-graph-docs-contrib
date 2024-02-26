@@ -4,9 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users.Functions
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 
-# A UPN can also be used as -UserId.
-Get-MgBetaUserCloudPcFrontlineCloudPcAccessState -UserId $userId -CloudPCId $cloudPCId
+Get-MgBetaDeviceManagementVirtualEndpointCloudPcFrontlineCloudPcAccessState -CloudPCId $cloudPCId
 
 ```

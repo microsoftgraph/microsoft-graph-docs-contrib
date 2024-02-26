@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcOrganizationSettings cloudPcOrganizationSettings = new CloudPcOrganizationSettings();
-cloudPcOrganizationSettings.enableMEMAutoEnroll = true;
-cloudPcOrganizationSettings.osVersion = CloudPcOperatingSystem.WINDOWS11;
-cloudPcOrganizationSettings.userAccountType = CloudPcUserAccountType.STANDARD_USER;
+cloudPcOrganizationSettings.setOdataType("#microsoft.graph.cloudPcOrganizationSettings");
+cloudPcOrganizationSettings.setEnableMEMAutoEnroll(true);
+cloudPcOrganizationSettings.setOsVersion(CloudPcOperatingSystem.Windows11);
+cloudPcOrganizationSettings.setUserAccountType(CloudPcUserAccountType.StandardUser);
 CloudPcWindowsSettings windowsSettings = new CloudPcWindowsSettings();
-windowsSettings.language = "en-US";
-cloudPcOrganizationSettings.windowsSettings = windowsSettings;
+windowsSettings.setLanguage("en-US");
+cloudPcOrganizationSettings.setWindowsSettings(windowsSettings);
+CloudPcOrganizationSettings result = graphClient.deviceManagement().virtualEndpoint().organizationSettings().patch(cloudPcOrganizationSettings);
 
-graphClient.deviceManagement().virtualEndpoint().organizationSettings()
-	.buildRequest()
-	.patch(cloudPcOrganizationSettings);
 
 ```

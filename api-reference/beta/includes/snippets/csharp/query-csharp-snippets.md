@@ -24,6 +24,7 @@ var requestBody = new QueryPostRequestBody
 			{
 				"/external/connections/connectionfriendlyname",
 			},
+			Region = "US",
 			Query = new SearchQuery
 			{
 				QueryString = "contoso product",

@@ -1,7 +1,7 @@
 ---
 title: "List conversations"
 description: "Retrieve the list of conversations in this group."
-author: "Jordanndahl"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -40,7 +40,7 @@ This method supports the `$select` and `$filter` [OData query parameters](/graph
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

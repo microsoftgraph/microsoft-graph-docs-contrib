@@ -3,6 +3,7 @@ title: "Working with users in Microsoft Graph"
 description: "Build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files."
 ms.localizationpriority: high
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: conceptualPageType
 ms.date: 11/16/2022
@@ -165,5 +166,3 @@ Properties stored outside the main data store also aren't supported as part of c
 |[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Lists the Microsoft Teams that the user is a member of. |
 |[`/users/{id}/permissionGrants`](../api/user-list-permissiongrants.md)| List all resource-specific permission grants of a user. |
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

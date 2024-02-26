@@ -23,10 +23,10 @@ type := graphmodels.PERSONAL_EMAILTYPE
 typedEmailAddress.SetType(&type) 
 name := "Pavel Bansky"
 typedEmailAddress.SetName(&name) 
-address := "pavelb@adatum.onmicrosoft.com"
+address := "pavelb@contoso.com"
 typedEmailAddress.SetAddress(&address) 
 typedEmailAddress1 := graphmodels.NewTypedEmailAddress()
-address := "pavelb@fabrikam.onmicrosoft.com"
+address := "pavelb@contoso.com"
 typedEmailAddress1.SetAddress(&address) 
 name := "Pavel Bansky"
 typedEmailAddress1.SetName(&name) 
@@ -35,7 +35,7 @@ typedEmailAddress1.SetType(&type)
 otherLabel := "Volunteer work"
 typedEmailAddress1.SetOtherLabel(&otherLabel) 
 
-emailAddresses := []graphmodels.typedEmailAddressable {
+emailAddresses := []graphmodels.TypedEmailAddressable {
 	typedEmailAddress,
 	typedEmailAddress1,
 }

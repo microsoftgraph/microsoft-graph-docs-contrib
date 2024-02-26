@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Chat.ReadWrite|
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | ChatSettings.ReadWrite.Chat*, Chat.ReadWrite.All |
+|Application | ChatSettings.ReadWrite.Chat, Chat.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note:**S The ChatSettings.ReadWrite.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ PATCH /chats/{chat-id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -52,7 +52,7 @@ The following table shows the properties that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|topic|String|The title of the chat. This can only be set for a chat with a **chatType** value of `group`. Maximum length is **250** characters. Use of **':'** is not allowed.|
+|topic|String|The title of the chat. **topic** can only be set for a chat with a **chatType** value of `group`. Maximum length is **250** characters. Use of **':'** isn't allowed.|
 
 
 ## Response

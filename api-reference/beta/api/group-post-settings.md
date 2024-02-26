@@ -1,7 +1,8 @@
 ---
 title: "Create settings"
 description: "Use this API to create a new directory setting for the group."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -48,7 +49,7 @@ POST /groups/{id}/settings
 
 | Name          | Description              |
 | :------------ | :----------------------- |
-| Authorization | Bearer {token}. Required |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Agreement agreement = graphClient.identityGovernance().termsOfUse().agreements("093b947f-8363-4979-a47d-4c52b33ee1be")
-	.buildRequest()
-	.expand("files")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+Agreement result = graphClient.identityGovernance().termsOfUse().agreements().byAgreementId("{agreement-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"files"};
+});
+
 
 ```

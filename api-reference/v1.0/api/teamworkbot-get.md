@@ -37,7 +37,7 @@ This method supports the `$select` [OData query parameters](/graph/query-paramet
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -113,7 +113,7 @@ Content-Type: application/json
   "id": "1f81bb29-bb29-1f81-29bb-811f29bb811f"
 }
 ```
-## See also
+## Related content
 
 - To get bots installed in a team, see example 2 in [List apps in team](team-list-installedapps.md). <!-- - To get bots installed in a chat, see example 2 in [List apps in chat](chat-list-installedapps.md). -->
 - To get bots installed in the personal scope of a user, see example 2 in [List apps installed for user](userteamwork-list-installedapps.md).
