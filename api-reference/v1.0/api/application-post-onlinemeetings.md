@@ -17,7 +17,7 @@ Create an online meeting on behalf of a user.
 >
 > * This API creates a standalone meeting that isn't associated with any event on the user's calendar; therefore, meetings created via this API aren't shown on the user's calendar.
 > * This API doesn't create a Teams live event.
-> * To retrieve meeting transcripts, use the [Create event](../api/user-post-events.md#example-4-create-and-enable-an-event-as-an-online-meeting) API.
+> * To be able to retrieve meeting transcripts at a later stage, use the [Create event](../api/user-post-events.md#example-4-create-and-enable-an-event-as-an-online-meeting) API that is calendar-backed.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
