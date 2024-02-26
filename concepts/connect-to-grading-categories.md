@@ -15,9 +15,9 @@ Teachers can use grading categories to weight assignments in the class grade. Fo
 
 ## Get a class
 
-Retrieve a class from the system. A class is a universal group with a special property that indicates to the system that the group is a class. Group members represent the students; group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members by using the following APIs:
+Retrieve a class from your education tenant. A class is a universal group with a special property that indicates to the system that the group is a class. Group members represent the students; group admins represent the teachers in the class. Get the list of classes from you education tenant and locate the class where you want to set grading categories. If you're using the delegated token, the user will only see classes in which they are members by using the following APIs:
 
-- [Get Class](/graph/api/educationclass-get): Returns a list of all classes from system.
+- [Get Class](/graph/api/educationclass-get): Take the classid from the previous request and use it to get the information for that specific class.
 
 ```http
 GET https://graph.microsoft.com/beta/education/classes/{id}
@@ -27,10 +27,70 @@ GET https://graph.microsoft.com/beta/education/classes/{id}
 
 Assignments contain handouts and tasks that the teacher wants the student to work on. Each student assignment has an associated submission that contains any work their teacher asked to be turned in. Only teachers or team owners can create assignments. A teacher can add scores and feedback to the submission turned in by the student :
 
-- [Get assignment settings](/graph/api/educationassignmentsettings-get): Allows you to list and see all data for assignments in a class.
+- [Get assignment settings](/graph/api/educationassignmentsettings-get): Allows you to see if the assignment settings has any grading categories information already added.
 
 ```http
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
+```
+
+## Create grading categories
+
+**Request**
+
+The following example shows a request. 
+
+```http
+PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
+Content-type: application/json
+
+{
+  "gradingCategories": [
+        {
+            "displayName": "Lab",
+            "percentageWeight": 10
+        },
+        {
+            "displayName": "Homework",
+            "percentageWeight": 80
+        },
+        {
+            "displayName": "Test",
+            "percentageWeight": 10
+        }
+    ]
+}
+```
+
+**Response**
+
+The following example shows the response.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+  "submissionAnimationDisabled": false,
+  "gradingCategories@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+  "gradingCategories": [
+      {
+          "id": "8bfb6d7f-8634-4f3b-9b6a-b6b6ff663f01",
+          "displayName": "Lab",
+          "percentageWeight": 10
+      },
+      {
+          "id": "6fd19981-588f-495c-91a8-712a645c95b7",
+          "displayName": "Homework",
+          "percentageWeight": 80
+      },
+      {
+          "id": "54f637a5-2cef-4e48-a88e-028854ca8089",
+          "displayName": "Test",
+          "percentageWeight": 10
+      }
+  ]
+}
 ```
 
 ## Get grading categories for an assignment
@@ -46,6 +106,8 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 ## Post a grading category
 
 Update an existing grading category
+
+
 
 - [Post a grading category](/graph/api/educationassignment-post-gradingcategory): This is used to update a grading category.
 
