@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API doesn't support getting call transcripts from channel meetings.
 
 > [!NOTE]
-> This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+> * This API does not support meetings created using [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with any event on the user's calendar.
+> * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
