@@ -1,9 +1,9 @@
 ---
 title: "analyzedEmailAttachment resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: Collection of the Attachments in the Email
+author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: security
 doc_type: resourcePageType
 ---
 
@@ -13,17 +13,17 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Collection of the Attachments in the Email.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|detonationDetails|[microsoft.graph.security.detonationDetails](../resources/security-detonationdetails.md)|**TODO: Add Description**|
-|fileName|String|**TODO: Add Description**|
-|fileType|String|**TODO: Add Description**|
-|sha256|String|**TODO: Add Description**|
-|threatName|String|**TODO: Add Description**|
-|threatType|microsoft.graph.security.threatType|**TODO: Add Description**.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
+|detonationDetails|[microsoft.graph.security.detonationDetails](../resources/security-detonationdetails.md)|The detonation details of the attachment.|
+|fileName|String|Name of the attachment in the email.|
+|fileType|String|Type of the attachment in the email.|
+|sha256|String|SHA256 file hash of the attachment.|
+|threatName|String|Threat name associated with the threat type.|
+|threatType|microsoft.graph.security.threatType|Threat type associated with the attachment.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
 
 ## Relationships
 None.
