@@ -108,10 +108,6 @@ Content-type: application/json; charset=utf-8
       "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "ru",
-          "displayName": "центр затрат"
-        },
-        {
           "languageTag": "no",
           "displayName": "Kostnadssenter"
         }
