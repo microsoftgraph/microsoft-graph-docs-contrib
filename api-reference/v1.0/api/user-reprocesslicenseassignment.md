@@ -3,6 +3,7 @@ title: "user: reprocessLicenseAssignment"
 description: "Reprocess all group-based license assignments for the user."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: "apiPageType" 
 ---

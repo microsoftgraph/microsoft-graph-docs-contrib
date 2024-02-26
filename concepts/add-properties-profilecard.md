@@ -1,6 +1,6 @@
 ---
 title: "Add or remove custom attributes on a profile card using the profile card API"
-description: "Learn how to use the profile card API in Microsoft Graph to make additional attributes visible and add or remove custom attributes on a profile card."
+description: "Learn how to use the profile card API in Microsoft Graph to make more attributes visible and add or remove custom attributes on a profile card."
 author: "rwaithera"
 ms.localizationpriority: high
 ms.prod: "people"
@@ -11,12 +11,12 @@ ms.custom: scenarios:getting-started
 
 The [profile card](https://support.microsoft.com/en-au/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Microsoft 365 shows information about a user in an organization. The information shown on the profile card is stored and maintained by the organization, for example, **Job title** or **Office location**.
 
-Organizations can use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) on the profile card for a user in an organization by:
+Organizations can use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show more properties from [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) on the profile card for a user in an organization by:
 
-* Making additional attributes visible
+* Making more attributes visible
 * Adding custom attributes
 
-Additional properties display in the **Contact** section of the profile card in Microsoft 365.
+More properties display in the **Contact** section of the profile card in Microsoft 365.
 
 You can also [remove](/graph/api/profilecardproperty-delete) custom attributes from profile cards of the organization.
 
@@ -25,9 +25,9 @@ You can also [remove](/graph/api/profilecardproperty-delete) custom attributes f
 > [!NOTE]
 > Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a Tenant Administrator or Global Administrator role. 
 
-## Make additional attributes visible on the profile card
+## Make other attributes visible on the profile card
 
-You can make the following attributes from Microsoft Entra ID visible on the users' profile cards. These attributes are *not case-sensitive*:
+You can make the following attributes from Microsoft Entra ID visible on the users' profile cards. These attributes aren't case-sensitive*:
 
 * `UserPrincipalName`
 * `Fax`
@@ -47,7 +47,7 @@ The following table shows how the Microsoft Entra ID attributes correspond with 
 | StateOrProvince | state |
 | Alias | mailNickname |
 
-You can add any of these attributes to the profile card by configuring your [people admin settings](/graph/api/resources/peopleadminsettings) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties are automatically shown in the language settings that the user has specified for Microsoft 365.
+You can add any of these attributes to the profile card by configuring your [people admin settings](/graph/api/resources/peopleadminsettings) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make other attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The other properties are automatically shown in the language settings that the user specifies for Microsoft 365.
 
 > **Note:** User entity property values contain user information stored and managed by the organization.
 
@@ -91,7 +91,7 @@ It takes up to 24 hours for the changes to show on profile cards.
 
 Custom properties aren't searchable and can't be used to search for people across Microsoft apps and services.
 
-The following table shows how the Microsoft Entra ID custom extension attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty](/graph/api/resources/profilecardproperty) resource. These Microsoft Entra ID custom extension attribute names are *not case-sensitive*:
+The following table shows how the Microsoft Entra ID custom extension attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty](/graph/api/resources/profilecardproperty) resource. These Microsoft Entra ID custom extension attribute names aren't case-sensitive:
 
 | Microsoft Entra ID custom extension attribute | Value to specify as directoryPropertyName |
 | ----------------------------------- | ----------------------------------------- |
@@ -116,7 +116,7 @@ The following table shows how the Microsoft Entra ID custom extension attribute 
 
 ### Example
 
-The following example adds the first Microsoft Entra ID custom extension attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German, the display name is **Kostenstelle**.
+The following example adds the first Microsoft Entra ID custom extension attribute to the profile card, using the display name **Cost center**. For users who set their language settings to German, the display name is **Kostenstelle**.
 
 #### Request
 
@@ -144,7 +144,7 @@ Content-Type: application/json
 
 If a language isn't supported, the property name is shown with the default value.
 
-If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. In this example, you can assume that the profile card displays **Kostenstelle** for all users that have set their language settings to German on the profile card. For all other users, **Cost center** is displayed on the profile card.
+If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. In this example, you can assume that the profile card displays **Kostenstelle** for all users who set their language settings to German on the profile card. For all other users, **Cost center** is displayed on the profile card.
 
 #### Response
 
@@ -222,7 +222,7 @@ To get a specific profile card property configuration in an organization, use th
 
 ### Add profile card properties in your organization
 
-You can use the Microsoft Graph PowerShell module to make both additional Microsoft Entra ID profile card properties, and the 15 customizable Microsoft Entra ID profile card properties available in your organization.
+You can use the Microsoft Graph PowerShell module to make both other Microsoft Entra ID profile card properties, and the 15 customizable Microsoft Entra ID profile card properties available in your organization.
 
 > [!NOTE]
 > The new command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
