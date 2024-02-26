@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property. Every team must include at least one **timeOffReason**.
 
-This method does not remove the specified **timeOffReason** instance. [timeOffItem](../resources/timeoffitem.md) instances that have been assigned this reason remain assigned to this reason.
+This method doesn't remove the specified **timeOffReason** instance. [timeOffItem](../resources/timeoffitem.md) instances that were assigned this reason remain assigned to this reason.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -27,9 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All* |
+|Application | Schedule.ReadWrite.All |
 
->\* **Important:** Application permissions are currently in private preview only and are not available for public use.
+> **Important:** The Schedule.ReadWrite.All application permission is currently in private preview only and isn't available for public use.
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
