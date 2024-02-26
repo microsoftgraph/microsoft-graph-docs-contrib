@@ -13,11 +13,11 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**Mail flow rules in Exchange Online
+Mail flow rules in Exchange Online
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Name of the ETRs which are part of the email|
+|name|String|Name of the ETRs that are part of the email|
 |ruleId|String|ETR rule Id|
 
 ## Relationships
