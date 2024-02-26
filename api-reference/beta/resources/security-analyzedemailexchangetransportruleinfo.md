@@ -1,9 +1,9 @@
 ---
 title: "analyzedEmailExchangeTransportRuleInfo resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: Mail flow rules in Exchange Online
+author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: security
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,12 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+**TODO: Add Description**Mail flow rules in Exchange Online
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description**|
-|ruleId|String|**TODO: Add Description**|
+|name|String|Name of the ETRs which are part of the email|
+|ruleId|String|ETR rule Id|
 
 ## Relationships
 None.
