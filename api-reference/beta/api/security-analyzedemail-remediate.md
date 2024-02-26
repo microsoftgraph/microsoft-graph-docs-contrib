@@ -1,6 +1,7 @@
 ---
 title: "Trigger move and delete remediation Action "
 description: " Trigger move and delete action against a threat."
+author: MishraSoumyaMS
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
