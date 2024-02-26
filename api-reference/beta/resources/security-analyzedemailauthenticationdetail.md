@@ -1,6 +1,6 @@
 ---
 title: "analyzedEmailAuthenticationDetail resource type"
-description: List of pass or fail verdicts by email authentication protocols
+description: List of pass or fail verdicts by email authentication protocols.
 author: MishraSoumyaMS
 ms.localizationpriority: medium
 ms.prod: security
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List of pass or fail verdicts by email authentication protocols like DMARC, DKIM, SPF or a combination of multiple authentication types (CompAuth).
+List of pass or fail verdicts by email authentication protocols like DMARC, DKIM, SPF, or a combination of multiple authentication types (CompAuth).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|compositeAuthentication|String|This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic.|
+|compositeAuthentication|String|A value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic.|
 |dkim|String|DomainKeys identified mail (DKIM). Indicates whether it was pass/fail/soft fail etc.|
 |dmarc|String|Domain-based Message Authentication. Indicates whether it was pass/fail/soft fail etc.|
 |senderPolicyFramework|String|Sender Policy Framework (SPF). Indicates whether it was pass/fail/soft fail etc.|
