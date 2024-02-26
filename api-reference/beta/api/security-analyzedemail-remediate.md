@@ -63,7 +63,7 @@ The following table lists the parameters that are required when you call this ac
 
 If successful, this action returns a `204 No Content` response code and the cation status can be tracked through the location header wtth bulkId. 
 
->**Note:** The response of the action can be trcaked in https://security.microsoft.com/action-center/history 
+>**Note:** The response of the action can be tracked in https://security.microsoft.com/action-center/history 
 
 ## Examples
 
@@ -84,9 +84,8 @@ Content-Type: application/json
     "description": "Delete email",
     "severity": "medium",
     "action": "softDelete",
-    "remediateSendersCopy": "true",
-    "approverUpn": "Jejne@conoso.onmicrosoft.com",
-    "analyzedEmails": [
+    "remediateSendersCopy": "false",
+     "analyzedEmails": [
         {
             "id": "73ca4154-58d8-43d0-a890-08dc18c52e6d-1311265001240363512-1"
         },
@@ -101,7 +100,7 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -109,5 +108,8 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
+>**Note:** Track the location header
+Example:
+Get the tracking url at response header - 'Location'
 ```
 
