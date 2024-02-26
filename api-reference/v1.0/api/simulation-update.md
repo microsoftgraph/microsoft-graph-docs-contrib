@@ -35,7 +35,7 @@ PATCH /security/attackSimulation/simulations/{simulationId}
 
 |Header         |Value                    |
 |---------------|-------------------------|
-|Authorization  |Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type   |application/json         |
 
 ## Request body
@@ -73,7 +73,7 @@ The following example shows a request.
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/1.0/security/attackSimulation/simulations/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
+PATCH https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 Content-type: application/json
 
 {

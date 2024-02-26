@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.tenantRelationships.delegatedAdminRelationships.item.accessAssignments.item.delegated_admin_access_assignment_item_request_builder import DelegatedAdminAccessAssignmentItemRequestBuilder
+from msgraph.generated.models.delegated_admin_access_assignment import DelegatedAdminAccessAssignment
+from msgraph.generated.models.delegated_admin_access_details import DelegatedAdminAccessDetails
+from msgraph.generated.models.unified_role import UnifiedRole
 
 graph_client = GraphServiceClient(credentials, scopes)
 

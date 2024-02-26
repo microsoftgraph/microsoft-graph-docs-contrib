@@ -151,7 +151,7 @@ The [Microsoft Graph Python SDK](https://github.com/microsoftgraph/msgraph-sdk-p
 pip install msgraph-sdk
 ```
 
-## See also
+## Related content
 
 - For more information, see the SDK [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
 - For a list of samples for Microsoft Graph, see the [Microsoft Graph resources page](https://developer.microsoft.com/graph/gallery/?filterBy=Samples).

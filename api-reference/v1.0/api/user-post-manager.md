@@ -3,6 +3,7 @@ title: "Assign manager"
 description: "Assign a user's manager."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -31,7 +32,7 @@ PUT /users/{id}/manager/$ref
 ## Request headers
 | Header       | Value |
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type   | application/json. Required.|
 
 ## Request body

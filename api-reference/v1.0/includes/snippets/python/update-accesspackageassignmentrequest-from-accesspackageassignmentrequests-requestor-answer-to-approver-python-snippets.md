@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_assignment_request import AccessPackageAssignmentRequest
+from msgraph.generated.models.access_package_answer import AccessPackageAnswer
+from msgraph.generated.models.access_package_answer_string import AccessPackageAnswerString
+from msgraph.generated.models.access_package_multiple_choice_question import AccessPackageMultipleChoiceQuestion
+from msgraph.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
+from msgraph.generated.models.access_package_assignment import AccessPackageAssignment
 
 graph_client = GraphServiceClient(credentials, scopes)
 

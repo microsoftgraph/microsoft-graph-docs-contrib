@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.microsoft_application_data_access_settings import MicrosoftApplicationDataAccessSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

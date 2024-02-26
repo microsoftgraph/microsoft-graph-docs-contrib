@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
-requestOptions.add(new QueryOption("$search", "\"displayName:wa\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-OrgContactCollectionPage contacts = graphClient.contacts()
-	.buildRequest( requestOptions )
-	.get();
+OrgContactCollectionResponse result = graphClient.contacts().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.search = "\"displayName:wa\"";
+	requestConfiguration.queryParameters.count = true;
+	requestConfiguration.headers.add("ConsistencyLevel", "eventual");
+});
+
 
 ```

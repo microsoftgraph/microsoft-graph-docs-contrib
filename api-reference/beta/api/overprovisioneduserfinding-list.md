@@ -60,7 +60,7 @@ This method supports the `$filter` and `$orderby` OData query parameters to help
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -141,12 +141,12 @@ Content-Type: application/json
       "identity": {
           "@odata.type": "graph.azureUser",
           "id": "dXNlcl9yZWFkZXJfc3Vic2NyaXB0aW9uX293bmVyX3JnQG1jaWVtYzEub25taWNyb3NvZnQuY29t",
-          "externalId": "user_reader_subscription_owner_rg@mciemc1.onmicrosoft.com",
+          "externalId": "user_reader_subscription_owner_rg@contoso.com",
           "displayName": "user_reader_subscription_owner_rg",
           "source": {
             "@odata.type": "graph.aadSource",
             "identityProviderType": "aad",
-            "domain": "mciemc1.onmicrosoft.com"
+            "domain": "contoso.com"
           },
           "authorizationSystem": {
             "@odata.type": "graph.azureAuthorizationSystem",

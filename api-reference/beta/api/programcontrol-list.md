@@ -119,7 +119,7 @@ Content-type: application/json
 
 ```
 
-## See also
+## Related content
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|

@@ -354,7 +354,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Set up change notifications that include resource data](change-notifications-with-resource-data.md)
 - [Outlook mail API overview](outlook-mail-concept-overview.md)

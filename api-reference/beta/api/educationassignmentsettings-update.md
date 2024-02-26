@@ -35,7 +35,7 @@ PATCH /education/classes/{id}/assignmentSettings
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -236,7 +236,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Delta payload to delete, modify and add grading categories.
+### Example 3: Delta payload to delete, modify, and add grading categories
 
 #### Request
 The following example shows a request.
@@ -277,7 +277,6 @@ Content-type: application/json
     ]
 }
 ```
->**Note:** You don't need to include the comments that appear in the request body examples in your requests. They are there to clarify each operation for you.
 
 # [C#](#tab/csharp)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]

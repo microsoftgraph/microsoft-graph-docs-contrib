@@ -4,31 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 SchemaExtension schemaExtension = new SchemaExtension();
-schemaExtension.owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa";
-LinkedList<ExtensionSchemaProperty> propertiesList = new LinkedList<ExtensionSchemaProperty>();
-ExtensionSchemaProperty properties = new ExtensionSchemaProperty();
-properties.name = "courseId";
-properties.type = "Integer";
-propertiesList.add(properties);
-ExtensionSchemaProperty properties1 = new ExtensionSchemaProperty();
-properties1.name = "courseName";
-properties1.type = "String";
-propertiesList.add(properties1);
-ExtensionSchemaProperty properties2 = new ExtensionSchemaProperty();
-properties2.name = "courseType";
-properties2.type = "String";
-propertiesList.add(properties2);
-ExtensionSchemaProperty properties3 = new ExtensionSchemaProperty();
-properties3.name = "courseSupervisors";
-properties3.type = "String";
-propertiesList.add(properties3);
-schemaExtension.properties = propertiesList;
+schemaExtension.setOwner("ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa");
+LinkedList<ExtensionSchemaProperty> properties = new LinkedList<ExtensionSchemaProperty>();
+ExtensionSchemaProperty extensionSchemaProperty = new ExtensionSchemaProperty();
+extensionSchemaProperty.setName("courseId");
+extensionSchemaProperty.setType("Integer");
+properties.add(extensionSchemaProperty);
+ExtensionSchemaProperty extensionSchemaProperty1 = new ExtensionSchemaProperty();
+extensionSchemaProperty1.setName("courseName");
+extensionSchemaProperty1.setType("String");
+properties.add(extensionSchemaProperty1);
+ExtensionSchemaProperty extensionSchemaProperty2 = new ExtensionSchemaProperty();
+extensionSchemaProperty2.setName("courseType");
+extensionSchemaProperty2.setType("String");
+properties.add(extensionSchemaProperty2);
+ExtensionSchemaProperty extensionSchemaProperty3 = new ExtensionSchemaProperty();
+extensionSchemaProperty3.setName("courseSupervisors");
+extensionSchemaProperty3.setType("String");
+properties.add(extensionSchemaProperty3);
+schemaExtension.setProperties(properties);
+SchemaExtension result = graphClient.schemaExtensions().bySchemaExtensionId("{schemaExtension-id}").patch(schemaExtension);
 
-graphClient.schemaExtensions("exto6x7sfft_courses")
-	.buildRequest()
-	.patch(schemaExtension);
 
 ```

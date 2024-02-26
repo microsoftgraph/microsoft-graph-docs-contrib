@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IdentityApiConnector identityApiConnector = new IdentityApiConnector();
-identityApiConnector.displayName = "Test API";
-identityApiConnector.targetUrl = "https://someapi.com/api";
+identityApiConnector.setDisplayName("Test API");
+identityApiConnector.setTargetUrl("https://someapi.com/api");
 BasicAuthentication authenticationConfiguration = new BasicAuthentication();
-authenticationConfiguration.username = "<USERNAME>";
-authenticationConfiguration.password = "<PASSWORD>";
-identityApiConnector.authenticationConfiguration = authenticationConfiguration;
+authenticationConfiguration.setOdataType("#microsoft.graph.basicAuthentication");
+authenticationConfiguration.setUsername("<USERNAME>");
+authenticationConfiguration.setPassword("<PASSWORD>");
+identityApiConnector.setAuthenticationConfiguration(authenticationConfiguration);
+IdentityApiConnector result = graphClient.identity().apiConnectors().post(identityApiConnector);
 
-graphClient.identity().apiConnectors()
-	.buildRequest()
-	.post(identityApiConnector);
 
 ```

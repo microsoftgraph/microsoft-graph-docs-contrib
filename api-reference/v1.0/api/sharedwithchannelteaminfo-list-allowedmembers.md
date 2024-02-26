@@ -48,7 +48,7 @@ This method supports the `$select` and `$count` [OData query parameters](/graph/
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -151,6 +151,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List members of team](team-list-members.md)

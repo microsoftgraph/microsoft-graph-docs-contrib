@@ -38,7 +38,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

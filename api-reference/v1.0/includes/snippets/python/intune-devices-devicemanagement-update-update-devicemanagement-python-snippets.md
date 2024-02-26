@@ -4,7 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_management import DeviceManagement
+from msgraph.generated.models.device_protection_overview import DeviceProtectionOverview
+from msgraph.generated.models.windows_malware_overview import WindowsMalwareOverview
+from msgraph.generated.models.windows_malware_state_count import WindowsMalwareStateCount
+from msgraph.generated.models.windows_malware_severity_count import WindowsMalwareSeverityCount
+from msgraph.generated.models.windows_malware_execution_state_count import WindowsMalwareExecutionStateCount
+from msgraph.generated.models.windows_malware_category_count import WindowsMalwareCategoryCount
+from msgraph.generated.models.windows_malware_name_count import WindowsMalwareNameCount
+from msgraph.generated.models.os_version_count import OsVersionCount
 
 graph_client = GraphServiceClient(credentials, scopes)
 

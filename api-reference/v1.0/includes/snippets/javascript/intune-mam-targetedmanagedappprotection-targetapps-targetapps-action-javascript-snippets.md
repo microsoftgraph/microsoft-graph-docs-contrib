@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const targetApps = Content-type: application/json
-Content-length: 378
-
-{
+const targetApps = {
   apps: [
     {
       '@odata.type': '#microsoft.graph.managedMobileApp',
