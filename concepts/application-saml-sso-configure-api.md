@@ -22,7 +22,7 @@ In this tutorial, you learn how to:
 > * Add app roles to an application and grant them to users
 > * Configure claims to emit in the SAML token
 > * Configure a certificate for federated SSO
-> * Retrieve the Microsoft Entra ID SAML metadata for your application that you use to complete the intergation
+> * Retrieve the Microsoft Entra ID SAML metadata for your application that you use to complete the integration
 
 ## Prerequisites
 
