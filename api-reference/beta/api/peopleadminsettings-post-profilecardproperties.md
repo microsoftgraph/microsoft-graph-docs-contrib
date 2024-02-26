@@ -70,7 +70,6 @@ If successful, this method returns a `201 Created` response code and a new [prof
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_profilecardproperty"
