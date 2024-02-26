@@ -18,7 +18,7 @@ Mail flow rules in Exchange Online
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|Name of the ETRs that are part of the email|
-|ruleId|String|ETR rule Id|
+|ruleId|String|ETR rule ID|
 
 ## Relationships
 None.
