@@ -51,7 +51,7 @@ PATCH /admin/people/profileCardProperties/{id}
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator has chosen to specify.|
+|annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator chose to specify.|
 |directoryPropertyName|String|The name of the directory property that is intended to surface on the profile card. |
 
 ## Response
