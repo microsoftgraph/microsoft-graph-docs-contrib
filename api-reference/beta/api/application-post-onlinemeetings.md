@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :---------------------------------------------------- |
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                              |
 | Delegated (personal Microsoft account) | Not supported.                                        |
-| Application                            | OnlineMeetings.ReadWrite.All*                         |
+| Application                            | OnlineMeetings.ReadWrite.All                          |
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create online meetings on behalf of that user (with user ID specified in the request path).
+To use the OnlineMeetings.ReadWrite.All application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create online meetings on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
 
@@ -72,7 +72,7 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 
 #### Request
 
-Here's an example  of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -126,7 +126,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -189,14 +189,13 @@ Content-Type: application/json
     }
 ```
 
-
 ### Example 2: Create an online meeting that requires a passcode
 
 The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more information, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
 
 #### Request
 
-Here's an example  of a request.
+The following example shows a request.
 
 >**Note:** The passcode is automatically generated and a custom passcode isn't supported.
 
@@ -257,7 +256,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -311,14 +310,13 @@ Content-Type: application/json
 }
 ```
 
-
 ### Example 3: Create an online meeting that doesn't require a passcode
 
 When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** isn't specified in the request, the generated online meeting won't have a passcode.
 
 #### Request
 
-Here's an example  of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -390,7 +388,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -441,6 +439,88 @@ Content-Type: application/json
     "joinMeetingId": "1234567890",
     "passcode": null
   }
+}
+```
+
+### Example 4: Create an online meeting with a meeting template
+
+The following example shows how to create a meeting with a Microsoft Teams meeting template. Microsoft Teams custom meeting templates allow you to specify values for many of the meeting options available to meeting organizers.
+
+> [!CAUTION]
+>
+>- The template might lock some meeting options in the Teams UI. The enforcement of the lock takes place on the server side.
+>- Subsequent updates to the **onlineMeeting** can't overwrite the **meetingTemplateId** or locked meeting options.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create-online-meeting-with-meeting-template"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime": "2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime": "2019-07-12T15:00:34.2464912-07:00",
+  "subject": "User meeting",
+  "meetingTemplateId": "05b9ed5f-2ac3-4470-aae9-f4a0c30b1a4b"
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('xxxxxxxx')/onlineMeetings/$entity",
+  "audioConferencing": {
+    "tollNumber": "+12345678",
+    "tollFreeNumber": "+12345",
+    "ConferenceId": "1234",
+    "dialinUrl": "https://dialin.teams.microsoft.com/xxxxxxx?id=2999"
+  },
+  "chatInfo": {
+    "threadId": "1xxxxxxxxxxxxxx%40thread.skype",
+    "messageId": "15629053",
+    "replyChainMessageId": null
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhFpHRTNaR1F6WGhyZWFkLnYy",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3iMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%22f8bf-86f1-41af-91ab-2011db47%22%2c%22Oid%22%3a%20fae72-d251-43ec-86c-377304f%22%7d",
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "5e72-d251-43ec-868c-3732704f",
+          "tenantId": "72fbf-86f1-41af-91ab-2d71db47",
+          "displayName": "Mario Rogers"
+        }
+      },
+      "role": "presenter",
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User meeting",
+  "meetingTemplateId": "05b9ed5f-2ac3-4470-aae9-f4a0c30b1a4b"
 }
 ```
 
