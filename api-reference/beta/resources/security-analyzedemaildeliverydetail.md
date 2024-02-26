@@ -1,9 +1,9 @@
 ---
 title: "analyzedEmailDeliveryDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: Email delivery action and location of the email.
+author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: security
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Email delivery action and location of the email.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[microsoft.graph.security.deliveryAction](#deliveryaction-values)|**TODO: Add Description**.The possible values are: `unknown`, `deliveredToJunk`, `delivered`, `blocked`, `replaced`, `unknownFutureValue`.|
-|location|[microsoft.graph.security.deliveryLocation](#deliverylocation-values)|**TODO: Add Description**.The possible values are: `unknown`, `inbox_folder`, `junkFolder`, `deletedFolder`, `quarantine`, `onprem_external`, `failed`, `dropped`, `others`, `unknownFutureValue`.|
+|action|[microsoft.graph.security.deliveryAction](#deliveryaction-values)|Delivery action of the email.The possible values are: `unknown`, `deliveredToJunk`, `delivered`, `blocked`, `replaced`, `unknownFutureValue`.|
+|location|[microsoft.graph.security.deliveryLocation](#deliverylocation-values)|Delivery location of the email.The possible values are: `unknown`, `inbox_folder`, `junkFolder`, `deletedFolder`, `quarantine`, `onprem_external`, `failed`, `dropped`, `others`, `unknownFutureValue`.|
 
 ### deliveryAction values
 
