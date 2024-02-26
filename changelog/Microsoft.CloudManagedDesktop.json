@@ -54,86 +54,6 @@
           "ChangeList": [
             {
               "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Complex Type",
-              "ChangedApiName": "cloudPcDomainJoinConfiguration",
-              "ChangeType": "Addition",
-              "Description": "Added the [cloudpcdomainjoinconfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdomainjoinconfiguration?view=graph-rest-beta) resource type under virtualEndpoint.",
-              "Target": "cloudPcDomainJoinConfiguration"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Complex Type",
-              "ChangedApiName": "cloudPcManagementAssignmentTarget",
-              "ChangeType": "Addition",
-              "Description": "Added the [cloudpcmanagementassignmenttarget](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcmanagementassignmenttarget?view=graph-rest-beta) resource type under virtualEndpoint.",
-              "Target": "cloudPcManagementAssignmentTarget"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Complex Type",
-              "ChangedApiName": "cloudpcmanagementgroupassignmenttarget",
-              "ChangeType": "Addition",
-              "Description": "Added the [cloudpcmanagementgroupassignmenttarget](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcmanagementgroupassignmenttarget?view=graph-rest-beta) resource type under virtualEndpoint.",
-              "Target": "cloudPcManagementAssignmentTarget"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Resource",
-              "ChangedApiName": "cloudPcProvisioningPolicy",
-              "ChangeType": "Addition",
-              "Description": "Added the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-1.0) resource type.",
-              "Target": "cloudPcProvisioningPolicy"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Resource",
-              "ChangedApiName": "cloudPcProvisioningPolicyAssignment",
-              "ChangeType": "Addition",
-              "Description": "Added the [cloudPcProvisioningPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicyassignment?view=graph-rest-beta) resource type under virtualEndpoint.",
-              "Target": "cloudPcProvisioningPolicyAssignment"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Complex Type",
-              "ChangedApiName": "cloudPcRestorePointSetting",
-              "ChangeType": "Addition",
-              "Description": "Added the cloudPcRestorePointSetting complex type.",
-              "Target": "cloudPcRestorePointSetting"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Resource",
-              "ChangedApiName": "cloudPcUserSetting",
-              "ChangeType": "Addition",
-              "Description": "Added the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource type under virtualEndpoint.",
-              "Target": "cloudPcUserSetting"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Resource",
-              "ChangedApiName": "cloudPcUserSettingAssignment",
-              "ChangeType": "Addition",
-              "Description": "Added the [cloudPcUserSettingAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingassignment?view=graph-rest-beta) resource type under virtualEndpoint.",
-              "Target": "cloudPcUserSettingAssignment"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Resource",
-              "ChangedApiName": "microsoftManagedDesktop",
-              "ChangeType": "Addition",
-              "Description": "Added the [microsoftManagedDesktop](https://learn.microsoft.com/en-us/graph/api/resources/microsoftmanageddesktop?view=graph-rest-beta) resource type under virtualEndpoint.",
-              "Target": "microsoftManagedDesktop"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Resource",
-              "ChangedApiName": "cloudPcWindowsSetting",
-              "ChangeType": "Addition",
-              "Description": "Added the [cloudPcWindowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcWindowsSetting?view=graph-rest-beta) resource type under virtualEndpoint.",
-              "Target": "cloudPcWindowsSetting"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
               "ApiChange": "Enum type",
               "ChangedApiName": "microsoftManagedDesktopType",
               "ChangeType": "Addition",
@@ -174,99 +94,91 @@
             },
             {
               "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
+              "ApiChange": "Enum type",
+              "ChangedApiName": "cloudPcRestorePointFrequencyType",
+              "ChangeType": "Addition",
+              "Description": "Added the **cloudPcRestorePointFrequencyType** enumeration type.",
+              "Target": "cloudPcRestorePointFrequencyType"
+            },
+            {
+              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcDomainJoinConfiguration",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcDomainJoinConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdomainjoinconfiguration?view=graph-rest-1.0) resource type.",
+              "Target": "cloudPcDomainJoinConfiguration"
+            },
+            {
+              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcManagementAssignmentTarget",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcManagementAssignmentTarget](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcmanagementassignmenttarget?view=graph-rest-1.0) resource type.",
+              "Target": "cloudPcManagementAssignmentTarget"
+            },
+            {
+              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcManagementGroupAssignmentTarget",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcManagementGroupAssignmentTarget](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcManagementGroupAssignmentTarget?view=graph-rest-1.0) resource type.",
+              "Target": "cloudPcManagementGroupAssignmentTarget"
+            },
+            {
+              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
+              "ApiChange": "Resource",
               "ChangedApiName": "cloudPcProvisioningPolicy",
               "ChangeType": "Addition",
-              "Description": "Added the [Assign](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
+              "Description": "Added the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-1.0) resource and supported methods.",
+              "Target": "cloudPcProvisioningPolicy"
             },
             {
               "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
-              "ChangedApiName": "cloudPcProvisioningPolicy",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcProvisioningPolicyAssignment",
               "ChangeType": "Addition",
-              "Description": "Added the [Delete](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-delete?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
+              "Description": "Added the [cloudPcProvisioningPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicyassignment?view=graph-rest-1.0) resource type.",
+              "Target": "cloudPcProvisioningPolicyAssignment"
             },
             {
               "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
-              "ChangedApiName": "cloudPcProvisioningPolicy",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcRestorePointSetting",
               "ChangeType": "Addition",
-              "Description": "Added the [Get](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-get?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
+              "Description": "Added the [cloudPcRestorePointSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcRestorePointSetting?view=graph-rest-1.0) resource type.",
+              "Target": "cloudPcRestorePointSetting"
             },
             {
               "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
-              "ChangedApiName": "cloudPcProvisioningPolicy",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcUserSetting",
               "ChangeType": "Addition",
-              "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-list?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
+              "Description": "Added the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-1.0) resource and supported methods.",
+              "Target": "cloudPcUserSetting"
             },
             {
               "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
-              "ChangedApiName": "cloudPcProvisioningPolicy",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcUserSettingAssignment",
               "ChangeType": "Addition",
-              "Description": "Added the [Post](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-post?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
+              "Description": "Added the [cloudPcUserSettingAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingassignment?view=graph-rest-1.0) resource type.",
+              "Target": "cloudPcUserSettingAssignment"
             },
             {
               "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
-              "ChangedApiName": "cloudPcProvisioningPolicy",
+              "ApiChange": "Resource",
+              "ChangedApiName": "microsoftManagedDesktop",
               "ChangeType": "Addition",
-              "Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-update?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
+              "Description": "Added the [microsoftManagedDesktop](https://learn.microsoft.com/en-us/graph/api/resources/microsoftmanageddesktop?view=graph-rest-1.0) resource type.",
+              "Target": "microsoftManagedDesktop"
             },
             {
               "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
-              "ChangedApiName": "cloudpcusersetting",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcWindowsSetting",
               "ChangeType": "Addition",
-              "Description": "Added the [Assign](https://learn.microsoft.com/en-us/graph/api/cloudpcusersetting-assign?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
-              "ChangedApiName": "cloudpcusersetting",
-              "ChangeType": "Addition",
-              "Description": "Added the [Delete](https://learn.microsoft.com/en-us/graph/api/cloudpcusersetting-delete?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
-              "ChangedApiName": "cloudpcusersetting",
-              "ChangeType": "Addition",
-              "Description": "Added the [Get](https://learn.microsoft.com/en-us/graph/api/cloudpcusersetting-get?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
-              "ChangedApiName": "cloudpcusersetting",
-              "ChangeType": "Addition",
-              "Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/cloudpcusersetting-update?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
-              "ChangedApiName": "cloudpcusersetting",
-              "ChangeType": "Addition",
-              "Description": "Added the [Post](https://learn.microsoft.com/en-us/graph/api/cloudpcusersetting-post?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
-            },
-            {
-              "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
-              "ApiChange": "Method",
-              "ChangedApiName": "cloudpcusersetting",
-              "ChangeType": "Addition",
-              "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/cloudpcusersetting-list?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
-              "Target": "virtualEndpoint"
+              "Description": "Added the [cloudPcWindowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcWindowsSetting?view=graph-rest-1.0) resource type.",
+              "Target": "cloudPcWindowsSetting"
             },
             {
               "Id": "3e4edfe1-27a3-472f-b9ce-3becb8510a38",
