@@ -1,6 +1,6 @@
 ---
 title: "analyzedEmailSenderDetail resource type"
-description: This tells sender of a particular email 
+description: Sender details of an email. 
 author: MishraSoumyaMS
 ms.localizationpriority: medium
 ms.prod: security
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This tells sender of a particular email.  
+Sender details of an email.  
 
 ## Properties
 |Property|Type|Description|
