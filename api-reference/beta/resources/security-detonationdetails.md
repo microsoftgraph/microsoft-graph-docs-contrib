@@ -1,6 +1,6 @@
 ---
 title: "detonationDetails resource type"
-description: Detonation of specific entity associated with email like URL or file. 
+description: Detonation of a specific entity associated with email like URL or file. 
 author: MishraSoumyaMS
 ms.localizationpriority: medium
 ms.prod: security
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-These details are specific to email attachments and URLs.It includes the Detonation chain, Detonation summary and observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
+Detonation details specific to email attachments and URLs. It includes the detonation chain, detonation summary and observed behavior details to help customers understand the reason the attachment or URL is deemed malicious and detonated.
 
 
 
