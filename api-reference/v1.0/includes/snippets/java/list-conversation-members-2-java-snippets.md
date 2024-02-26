@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ConversationMemberCollectionPage members = graphClient.chats("19:9ef2dcdf14ba44cbae25c2f5d53171ba@thread.v2").members()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ConversationMemberCollectionResponse result = graphClient.chats().byChatId("{chat-id}").members().get();
+
 
 ```

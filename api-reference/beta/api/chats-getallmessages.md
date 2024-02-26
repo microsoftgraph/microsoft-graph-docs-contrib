@@ -48,6 +48,17 @@ GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
 ```
 >**Note:** If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
+This method supports different filtering scenarios:
+
+|Scenario                                  | Filter parameter                                                                       |Possible values                                                                                             |
+|:-----------------------------------------|:---------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+|Get messages sent by user identity type   |$filter=from/user/userIdentityType eq '{teamworkUserIdentityType}'                      |aadUser, onPremiseAadUser, anonymousGuest, federatedUser, personalMicrosoftAccountUser, skypeUser, phoneUser|
+|Get messages sent by application type     |$filter=from/application/applicationIdentityType eq '{teamworkApplicationIdentity}'     |aadApplication, bot, tenantBot, office365Connector, outgoingWebhook                                         |
+|Get messages sent by user id              |$filter=from/user/id eq '{oid}'                                                         ||
+|Get control(system event) messages        |$filter=messageType eq 'systemEventMessage'                                             ||
+|Exclude control (system event) messages   |$filter=messageType ne 'systemEventMessage'                                             ||
+>**Note:** These filter clauses can be joined using the `or` operator. A filter clause can appear more than once in a query, and it can filter on a different value each time it appears within the query.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -142,6 +153,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

@@ -10,13 +10,13 @@ doc_type: "resourcePageType"
 
 The **mediaSource** resource contains metadata about the source of media (audio or video) drive item.
 
-It is available on the media property of [driveItem][item-resource] resources.
+It is available on the media property of [driveItem](driveitem.md) resources.
 
 ## Properties
 
 | Property                 | Type                       | Description                                                                                      |
 | :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
-| **contentCategory**      | mediaSourceContentCategory | Enumeration value that indicates the media content category.                                     |
+| contentCategory          | mediaSourceContentCategory | Enumeration value that indicates the media content category.                                     |
 
 ### mediaSourceContentCategory values
 
@@ -26,10 +26,15 @@ It is available on the media property of [driveItem][item-resource] resources.
 | liveStream          | The media is a live stream.                         |
 | presentation        | The media is a presentation.                        |
 | screenRecording     | The media is a screen recording.                    |
+| story               | The media is a story.                               |
+| profile             | The media is a profile.                             |
+| chat                | The media is a chat.                                |
+| note                | The media is a note.                                |
+| comment             | The media is a comment.                             |
 | unknownFutureValue  | Marker value for future compatibility.              |
 
 ## JSON representation
-
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -44,11 +49,9 @@ It is available on the media property of [driveItem][item-resource] resources.
 }
 ```
 
-## See also
+## Related content
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
-
-[item-resource]: ../resources/driveitem.md
 
 <!-- {
   "type": "#page.annotation",

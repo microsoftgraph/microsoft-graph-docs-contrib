@@ -2,7 +2,8 @@
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -135,7 +136,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

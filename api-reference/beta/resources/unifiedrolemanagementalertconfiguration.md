@@ -71,5 +71,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 + [Manage security alerts for Microsoft Entra roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).

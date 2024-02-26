@@ -134,7 +134,9 @@ Content-type: application/json
   "offerShiftRequestsEnabled": true,
   "timeOffRequestsEnabled": true,
   "startDayOfWeek": "Monday",
-  "activitiesIncludedWhenCopyingShiftsEnabled": true
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true
 }
 ```
 
@@ -152,6 +154,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

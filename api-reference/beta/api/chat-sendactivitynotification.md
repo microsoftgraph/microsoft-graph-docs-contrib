@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|TeamsActivity.Send|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|TeamsActivity.Send.Chat*, TeamsActivity.Send|
+|Application|TeamsActivity.Send.Chat, TeamsActivity.Send|
 
->**Note:** Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+>**Note:** The TeamsActivity.Send.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -509,7 +509,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Activity feed notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/csharp)
 - [Activity feed notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/nodejs)
