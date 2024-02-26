@@ -43,7 +43,7 @@ POST https://graph.microsoft.com/beta/applicationTemplates/{templateID} /instant
 ### Response
 
 
-## Step 2: Specify the type of private application (Quick Access or Enterprise Application) and send the traffic from the application created to the Global Secure Access client
+## Step 2: Specify the type of private application (Quick Access or Enterprise Application) you wish to create and send the traffic from the application created to the Global Secure Access client
 
 In the example, replace the value of `applicationType`. Use `nonwebapp` for Enterprise Applications and `quickaccessapp` for Quick Access Applications.
 
