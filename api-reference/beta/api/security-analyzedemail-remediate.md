@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remediation means to take prescribed action against a threat. The analyzedEmails/remediate API is to remove potential threats from end-user's mailboxes by triggering email purge actions like move to junk, move to deleted items, soft delete, hard delete or move to inbox etc. These APIs enable scenarios and use cases such as SOAR integration, playbooks, and automations. For more information read [email remediation, trigger action and track actions](microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365.md). 
+Remediation means to take prescribed action against a threat. The remediate API is to remove potential threats from end-user's mailboxes.  The API can trigger email purge actions like move to junk, move to deleted items, soft delete, hard delete or move to inbox. These APIs enable scenarios and use cases such as SOAR integration, playbooks, and automations. For more information read [email remediation, trigger action and track actions](microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365.md). 
 
 
 ## Permissions
@@ -52,17 +52,17 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|displayName|String| Name of the remediation. This will also be used as reference in the action center |
-|description|String| Description of the Remediation |
-|severity|microsoft.graph.security.remediationSeverity| Severity of the remediation .The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
-|action|microsoft.graph.security.remediationAction|Types of Move and Delete actions supported.The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
-|approverUpn|String| This is to track who has trigged the action |
-|remediateSendersCopy|Boolean|This will ensures purge sender's copy of the email in case of intra org and out bound emails|
-|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|GET unique key to identify single email ; This can be found from the analyzedemails , analyzedemails/Id or runHuntingQuery/reportId
+|displayName|String| Name of the remediation that is used as a reference in the action center. |
+|description|String| Description of the remediation. |
+|severity|microsoft.graph.security.remediationSeverity| Severity of the remediation. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
+|action|microsoft.graph.security.remediationAction|Types of Move and Delete actions supported. The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
+|approverUpn|String| Used to track who approved the action. |
+|remediateSendersCopy|Boolean| For intra org and out bound email, it will trigger an action for sender's copy. |
+|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|GET unique key to identify a single email. The ID can be found from the analyzedemails, analyzedemails/Id or runHuntingQuery/reportId.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code and the cation status can be tracked through the location header wtth bulkId. 
+If successful, this action returns a `204 No Content` response code and the cation status can be tracked through the location header with bulkId. 
 
 >**Note:** The response of the action can be tracked in https://security.microsoft.com/action-center/history 
 
