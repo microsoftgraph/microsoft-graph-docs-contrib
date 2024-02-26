@@ -1,5 +1,5 @@
 ---
-title: "Grading Categories"
+title: "Create and update grading categories"
 description: "Teachers can use grading categories to weight assignments in the class grade."
 ms.localizationpriority: medium
 author: "v-rmanda"
