@@ -2,6 +2,7 @@
 title: "List users"
 description: "Retrieve a list of user objects."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
