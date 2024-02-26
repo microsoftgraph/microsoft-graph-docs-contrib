@@ -1,9 +1,9 @@
 ---
 title: "analyzedEmailAuthenticationDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: List of pass or fail verdicts by email authentication protocols
+author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: security
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+List of pass or fail verdicts by email authentication protocols like DMARC, DKIM, SPF or a combination of multiple authentication types (CompAuth).
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|compositeAuthentication|String|**TODO: Add Description**|
-|dkim|String|**TODO: Add Description**|
-|dmarc|String|**TODO: Add Description**|
-|senderPolicyFramework|String|**TODO: Add Description**|
+|compositeAuthentication|String|This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic.|
+|dkim|String|DomainKeys identified mail (DKIM). Indicates whether it was pass/fail/soft fail etc.|
+|dmarc|String|Domain-based Message Authentication. Indicates whether it was pass/fail/soft fail etc.|
+|senderPolicyFramework|String|Sender Policy Framework (SPF). Indicates whether it was pass/fail/soft fail etc.|
 
 ## Relationships
 None.
