@@ -156,7 +156,7 @@ HTTP/1.1 200 OK
 
 - [Microsoft Teams direct routing usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center.
 - [Health dashboard for direct routing](/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center.
-- [Get log of PSTN calls](callrecords-callrecord-getpstncalls.md)
-- [Get aggregated report of the audio conferencing dial-out](callrecords-callrecord-getpstnonlinemeetingdialoutreport.md)
-- [Get log of users who are blocked from making PSTN calls](callrecords-callrecord-getpstnblockeduserslog.md)
-- [Get log of sent/received SMS](callrecords-callrecord-getsmslog.md)
+- [Get log of PSTN calls](callrecords-callrecord-getpstncalls.md).
+- [Get aggregated report of the audio conferencing dial-out](callrecords-callrecord-getpstnonlinemeetingdialoutreport.md).
+- [Get log of users who are blocked from making PSTN calls](callrecords-callrecord-getpstnblockeduserslog.md).
+- [Get log of sent/received SMS](callrecords-callrecord-getsmslog.md).
