@@ -22,7 +22,7 @@ Contains the specific details of the content found within a [cloudClipboardItem]
 |formatName|String|For a list of possible values see [formatName values](#formatname-values).|
 
 ### formatName values
-|Format name |Description |Corresponding Windows clipboard formats |
+|Name |Description |Windows clipboard format|
 |:---|:---|:---|
 | AnsiTextBase64                      | ANSI text format                      | CF_TEXT                                 |
 | TextBase64                          | Unicode text format                   | CF_UNICODETEXT                          |
