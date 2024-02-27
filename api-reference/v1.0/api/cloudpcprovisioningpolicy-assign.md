@@ -70,10 +70,10 @@ Content-Type: application/json
 {
   "assignments": [
     {
-      "target":{
+      "target": {
         "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-        "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
-        }
+        "groupId": "64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
+      }
     }
   ]
 }
