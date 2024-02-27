@@ -18713,15 +18713,6 @@ items:
                     href: api/teamworktagmember-get.md
                   - name: Delete
                     href: api/teamworktagmember-delete.md
-          - name: Working time
-            href: resources/workingtimeschedule.md
-            items:
-              - name: Get
-                href: api/workingtimeschedule-get.md
-              - name: Start
-                href: api/workingtimeschedule-startworkingtime.md
-              - name: End
-                href: api/workingtimeschedule-endworkingtime.md
           - name: Shift management
             items:
               - name: Day note (preview)
@@ -18918,6 +18909,15 @@ items:
                     href: api/workforceintegration-update.md
                   - name: Delete
                     href: api/workforceintegration-delete.md
+          - name: Working time
+            href: resources/workingtimeschedule.md
+            items:
+              - name: Get
+                href: api/workingtimeschedule-get.md
+              - name: Start
+                href: api/workingtimeschedule-startworkingtime.md
+              - name: End
+                href: api/workingtimeschedule-endworkingtime.md
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
