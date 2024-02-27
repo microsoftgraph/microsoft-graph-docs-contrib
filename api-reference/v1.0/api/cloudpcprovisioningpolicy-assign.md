@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: assign"
-description: "Assign the Cloud PC provisioning policy to your group."
+description: "Assign the Cloud PC provisioning policy to user groups."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
