@@ -1,7 +1,8 @@
 ---
 title: "Create group"
 description: "Create a new Microsoft 365 group or security group."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
