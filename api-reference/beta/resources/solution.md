@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
-# solution resource type
+# Solution resource type
 
 Namespace: microsoft.graph
 
