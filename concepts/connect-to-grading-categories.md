@@ -9,6 +9,7 @@ doc_type: conceptualPageType
 
 # Grading Categories
 
+A grading category is a property on an assignment setting resource, which in turn belongs to a class. The way to access a grading category is through its containing assignment settings object and its class.
 Teachers can use grading categories to weight assignments in the class grade. For example, a class could have 60% of its grade come from "Homework" assignments and 40% from "Test" assignments.
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
