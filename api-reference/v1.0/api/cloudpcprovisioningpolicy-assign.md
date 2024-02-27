@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: assign"
-description: "Assign the Cloud PC provisioning policy to user groups."
+description: "Assign a Cloud PC provisioning policy to user groups."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Assign [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.
+Assign a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.
 
 ## Permissions
 
