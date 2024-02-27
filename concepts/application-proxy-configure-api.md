@@ -1,18 +1,18 @@
 ---
-title: "Configure application proxy using Microsoft Graph"
-description: "Provide remote access and single sign-on to on-premises applications by configuring application proxy using the Microsoft Graph."
+title: "Configure application proxy using Microsoft Graph APIs"
+description: "Provide remote access and single sign-on to on-premises applications by configuring Microsoft Entra application proxy using Microsoft Graph APIs."
 author: FaithOmbongi
 ms.reviewer: dhruvinrshah, arpadg
-ms.topic: "conceptual"
+ms.topic: tutorial
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.prod: applications
 ms.date: 02/28/2024
 #customer intent: As a developer, I want to configure Microsoft Entra application proxy programmatically using Microsoft Graph, so that I can automate the process of providing secure remote access and single sign-on to on-premises web applications for users.
 ---
 
-# Configure application proxy using Microsoft Graph
+# Configure Microsoft Entra application proxy using Microsoft Graph APIs
 
-Application proxy provides secure remote access and single sign-on (SSO) to on-premises web applications. Application proxy allows users to access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
+[Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) provides secure remote access and single sign-on (SSO) to on-premises web applications. It allows users to access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
 
 In this tutorial, you learn how to Configure Microsoft Entra application proxy using Microsoft Graph APis.
 
@@ -28,7 +28,7 @@ In this tutorial, you learn how to Configure Microsoft Entra application proxy u
 
 ## Step 1: Create a custom application
 
-To configure application proxy for an app using the API, you first create a custom application, and then update the application's **onPremisesPublishing** property to configure the app proxy settings. In this tutorial, you use an application template to create an instance of a custom application and service principal in your tenant. The template ID for a custom application is `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`, which you can discover by running the following query: [GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'Custom'](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applicationTemplates%3F%24filter%3DdisplayName%2Beq%2B'Custom'&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com).
+To configure application proxy, you first create a custom application, and then update the app proxy settings in the application's **onPremisesPublishing** property. In this tutorial, you use an application template to create an instance of a custom application and service principal in your tenant. The template ID for a custom application is `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`, which you can discover by running the following query: [GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'Custom'](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applicationTemplates%3F%24filter%3DdisplayName%2Beq%2B'Custom'&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com).
 
 From the response, record the **id** of both the service principal and the application objects, and the value of **appId** for use later in the tutorial.
 
@@ -86,7 +86,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.applicationTemplates"
+  "@odata.type": "microsoft.graph.applicationServicePrincipal"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -267,9 +267,9 @@ Content-type: application/json
 
 ## Step 2: Configure application proxy
 
-For the app that you created in Step 1, you need to configure the URIs for the application. Assume that the app's internal URL is `https://contosoiwaapp.com` and the default domain for the external URL is `https://contosoiwaapp-contoso.msappproxy.net`. Add the external URL value to the **identifierUris**, **web>redirectUris** and **web>homePageUrl** properties. 
+For the app that you created in Step 1, configure the URIs for the application. Assume that the app's internal URL is `https://contosoiwaapp.com` and the default domain for the external URL is `https://contosoiwaapp-contoso.msappproxy.net`. Add the external URL value to the **identifierUris**, **web>redirectUris** and **web>homePageUrl** properties. 
 
-You also need to configure the **onPremisesPublishing** property to set the internal and external URLs, and other properties as needed. This property is only available in `beta` and can't be configured until you configure the URIs.
+Also, configure the **onPremisesPublishing** property to set the internal and external URLs, and other properties as needed. This property is only available in `beta` and can't be configured until you configure the URIs.
 
 ### Step 2.1: Configure the URIs
 
@@ -719,7 +719,7 @@ Content-type: appplication/json
 
 ### Option 2: Configure header-based SSO
 
-The following request shows how to configure header-based SSO for the application. In this mode, the value of singleSignOnMode property can be `aadHeaderBased`, `pingHeaderBased`, or `oAuthToken`. The request returns a `204 No content` response.
+The following request shows how to configure header-based SSO for the application. In this mode, the value of the **singleSignOnMode** property can be `aadHeaderBased`, `pingHeaderBased`, or `oAuthToken`. The request returns a `204 No content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -748,17 +748,15 @@ Content-type: appplication/json
 
 ## Step 5: Assign a user to the application
 
-You want to assign a user to the application. From the service principal that you created in Step 1, in the **appRoles** property and record the ID of the default **User** role, which is `18d14569-c3bd-439b-9a66-3a2aee01d14f`.
+You want to assign a user to the application. From the service principal that you created in Step 1, record the ID of the default **User** role that's defined in the **appRoles** property. This value is `18d14569-c3bd-439b-9a66-3a2aee01d14f`.
 
-### Step 5.1: Assign a user to the application
-
-Assign the user that you created to the service principal and grant them the `User` app role. In the request body, provide the following values:
+In the request body, provide the following values:
 
 - **principalId** - The ID of the user account that you created.
 - **appRoleId** - The ID of the default `User` app role that you retrieved from the service principal.
 - **resourceId** - The ID of the service principal.
 
-#### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -766,11 +764,11 @@ Assign the user that you created to the service principal and grant them the `Us
   "name": "tutorial_configure_appproxy_create_serviceprincipal_approleassignment"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments
+POST https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoleAssignments
 Content-type: application/json
 
 {
-  "principalId": "4628e7df-dff3-407c-a08f-75f08c0806dc",
+  "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
   "principalType": "User",
   "appRoleId":"18d14569-c3bd-439b-9a66-3a2aee01d14f",
   "resourceId":"a8cac399-cde5-4516-a674-819503c61313"
@@ -811,7 +809,7 @@ Content-type: application/json
 
 ---
 
-#### Response
+### Response
 
 <!-- {
   "blockType": "response",
@@ -836,7 +834,7 @@ Content-type: application/json
 ```
 ## Step 6: Test access to the application
 
-Test the application by visiting the **External URL** configured for the app on your browser and then sign in with your test user. You should be able to log into the app and access the application.
+Test the application by visiting the **externalUrl** configured for the app on your browser and then sign in with your test user. You should be able to sign into the app and access the application.
 
 ## Step 7: Clean up resources
 
