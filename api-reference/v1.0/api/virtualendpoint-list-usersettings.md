@@ -33,7 +33,7 @@ GET /deviceManagement/virtualEndpoint/userSettings
 
 ## Optional query parameters
 
-This method the supports `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -72,8 +72,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcUserSetting",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.cloudPcUserSetting)"
 }
 -->
 ``` http
