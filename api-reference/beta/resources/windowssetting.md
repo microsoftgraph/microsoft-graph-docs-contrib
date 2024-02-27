@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents settings from the Windows operating system that are stored in the cloud for a given user.
 
->Warning: The structure of the id of a **windowsSetting** is not guranateed and the caller should not take any dependency on it. The id should be treated as an opaque string.
+>Warning: The structure of the ID of a **windowsSetting** is not guaranteed and the caller should not take any dependency on it. The ID should be treated as an opaque string.
 
 There are two types of **windowsSetting**: `roaming` and `backup`. More information about the types of **windowsSetting** can be found in the [windowsSettingType](enums.md#windowssettingtype-values) enum. A **windowsSetting** of type `backup` may have a *windowsDeviceId* property that links the setting to a specific device.
 
