@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
-
 Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
 
 A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources.

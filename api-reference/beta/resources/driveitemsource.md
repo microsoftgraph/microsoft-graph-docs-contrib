@@ -1,6 +1,6 @@
 ---
 author: MarcMroz
-description: "The driveItemSource contains metadata about the source application that the drive item was created in."
+description: "Contains metadata about the source application in which the drive item was created."
 title: driveItemSource resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -8,16 +8,16 @@ ms.prod: "sites-and-lists"
 ---
 # driveItemSource resource type
 
-Contains metadata about the source of the drive item.
+Contains metadata about the source application in which the drive item was created.
 
-It's available on the source property of [driveItem][item-resource] resources.
+It's available on the source property of [driveItem](driveitem.md) resources.
 
 ## Properties
 
 | Property                 | Type                       | Description                                                                                      |
 | :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
-| **application**          | driveItemSourceApplication | Enumeration value that indicates the source application where the file was created.              |
-| **externalId**           | string                     | The external identifier for the drive item from the source.                                      |
+| application              | driveItemSourceApplication | Enumeration value that indicates the source application where the file was created.              |
+| externalId               | string                     | The external identifier for the drive item from the source.                                      |
 
 ### driveItemSourceApplication values
 
@@ -28,12 +28,15 @@ It's available on the source property of [driveItem][item-resource] resources.
 | sharePoint          | The application is SharePoint.                    |
 | oneDrive            | The application is OneDrive.                      |
 | stream              | The application is Stream.                        |
-| powerPoint          | The application is PowerPoint                     |
-| office              | The application is Office                         |
+| powerPoint          | The application is PowerPoint.                    |
+| office              | The application is Office.                        |
+| loki                | The application is Loki.                          |
+| loop                | The application is Loop.                          |
+| other               | The application is a third party application.       |
 | unknownFutureValue  | Marker value for future compatibility.            |
 
 ## JSON representation
-
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -53,8 +56,6 @@ It's available on the source property of [driveItem][item-resource] resources.
 ## Related content
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
-
-[item-resource]: ../resources/driveitem.md
 
 <!-- {
   "type": "#page.annotation",
