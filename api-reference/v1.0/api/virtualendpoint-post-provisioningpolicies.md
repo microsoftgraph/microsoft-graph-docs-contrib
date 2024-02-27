@@ -1,6 +1,6 @@
 ---
 title: "Create cloudPcProvisioningPolicy"
-description: "Create a new Cloud PC provisioning policy."
+description: "Create a new Cloud PC provisioning policy object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,8 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create a new [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -77,7 +75,7 @@ The following example shows a request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies
+POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/provisioningPolicies
 Content-Type: application/json
 
 {
