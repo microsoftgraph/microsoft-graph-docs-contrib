@@ -1,6 +1,6 @@
 ---
 title: "windowsSetting resource type"
-description: "windowsSetting represents settings from Windows operating system."
+description: "Represents settings from the Windows operating system."
 author: "MS-Arko"
 ms.localizationpriority: medium
 ms.prod: "cross-device-experiences"
@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**windowsSetting** represents settings from Windows operating system that are stored in the cloud for a given user.
+Represents settings from the Windows operating system that are stored in the cloud for a given user.
 
->Warning: The structure of the id of a **windowsSetting** is not guranateed and the caller should not take any dependency on it. The id should be treated as an opaque string.
+>Warning: The structure of the ID of a **windowsSetting** is not guaranteed and the caller should not take any dependency on it. The ID should be treated as an opaque string.
 
-There are two types of **windowsSetting**: `roaming` and `backup`. The settingType property of a **windowsSetting** object indicates the type of the setting.
+There are two types of **windowsSetting**: `roaming` and `backup`. More information, see [windowsSettingType](enums.md#windowssettingtype-values) enum. The settingType property of a **windowsSetting** object indicates the type of the setting.
 
 | settingType        | Description                        |
 | :----------------- | :--------------------------------- |

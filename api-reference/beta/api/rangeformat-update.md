@@ -419,7 +419,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: update_rangeformat_font_three/underline:\r\n       Expected type String but actual was Single. Property: underline, actual value: 'Single'",
     "Error: microsoft.graph.microsoft.graph/me:
       /me/drive/items/{var}/workbook/worksheets/{var}/range(address={var})/format/fill
       Uri path requires navigating into unknown object hierarchy: missing property 'range(address={var})' on 'workbookWorksheet'. Possible issues:

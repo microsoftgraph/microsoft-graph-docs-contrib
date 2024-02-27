@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsSetting",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowsSetting?view=graph-rest-beta) resource.",
+          "Description": "Added the [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowsSetting?view=graph-rest-beta) resource and its methods.",
           "Target": "windowsSetting"
         },
         {

@@ -1,6 +1,6 @@
 ---
 title: "windowsSettingInstance resource type"
-description: "windowsSettingInstance represents a setting instance from Windows operating system."
+description: "Represents a setting instance from the Windows operating system."
 author: "MS-Arko"
 ms.localizationpriority: medium
 ms.prod: "cross-device-experiences"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**windowsSettingInstance** represents setting instances from the Windows operating system that are stored in the cloud for a given user.
+Represents a setting instance from the Windows operating system that is stored in the cloud for a given user.
 
 A **windowsSettingInstance** belongs to a [**windowsSetting**](../resources/windowssetting.md).
 
@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List windowsSettingInstance objects](../api/windowssetting-list-instances.md)|[windowsSettingInstance](../resources/windowssettinginstance.md) collection|Get a list of the [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties.|
+|[List windowsSettingInstance](../api/windowssetting-list-instances.md)|[windowsSettingInstance](../resources/windowssettinginstance.md) collection|Get a list of the [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties.|
 |[Get windowsSettingInstance](../api/windowssettinginstance-get.md)|[windowsSettingInstance](../resources/windowssettinginstance.md)|Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object.|
 
 ## Properties

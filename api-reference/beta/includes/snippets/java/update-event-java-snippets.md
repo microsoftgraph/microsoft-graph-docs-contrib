@@ -17,7 +17,6 @@ OffsetDateTime time = OffsetDateTime.parse("2016-10-19T10:37:00Z");
 responseStatus.setTime(time);
 event.setResponseStatus(responseStatus);
 event.setRecurrence(null);
-event.setUid("iCalUId-value");
 event.setReminderMinutesBeforeStart(99);
 event.setIsOnlineMeeting(true);
 event.setOnlineMeetingProvider(OnlineMeetingProviderType.TeamsForBusiness);
