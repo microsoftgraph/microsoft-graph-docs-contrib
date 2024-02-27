@@ -1608,6 +1608,9 @@ items:
                     href: api/usersettings-list-windows.md
                   - name: Get Windows setting
                     href: api/windowssetting-get.md
+              - name: Windows setting instances                    
+                href: resources/windowssettinginstance.md
+                items:              
                   - name: List Windows setting instances
                     href: api/windowssetting-list-instances.md
                   - name: Get Windows setting instance

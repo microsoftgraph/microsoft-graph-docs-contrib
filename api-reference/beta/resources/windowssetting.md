@@ -17,7 +17,14 @@ Namespace: microsoft.graph
 
 >Warning: The structure of the id of a **windowsSetting** is not guranateed and the caller should not take any dependency on it. The id should be treated as an opaque string.
 
-There are two types of **windowsSetting**: `roaming` and `backup`. More information about the types of **windowsSetting** can be found in the [windowsSettingType](enums.md#windowssettingtype-values) enum. A **windowsSetting** of type `backup` may have a *windowsDeviceId* property that links the setting to a specific device.
+There are two types of **windowsSetting**: `roaming` and `backup`. The settingType property of a **windowsSetting** object indicates the type of the setting.
+
+| settingType        | Description                        |
+| :----------------- | :--------------------------------- |
+| roaming            | Windows setting is associated with a user's account. It is consistent across all devices and any changes to the setting value are synced or applied to all Windows devices that the user owns.|
+| backup             | Windows setting does not roam or sync accross devices. This type of setting is used in device backup and restore scenarios.|
+
+ A **windowsSetting** of type `backup` may have a *windowsDeviceId* property that links the setting to a specific device.
 
 When getting a list of **windowsSetting** objects, the result can be filtered by *windowsDeviceId* and *settingType* properties. For more information, see [List Windows settings stored in cloud](../api/usersettings-list-windows.md).
 
@@ -35,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |id|String|The unique identifier of the object.|
 |payloadType|String|The type of setting payloads contained in the *instances* navigation property.|
-|settingType|windowsSettingType|The type of setting. Possible values are: `roaming`, `backup`, `unknownFutureValue`.<br />Note, *unknownFutureValue* is a future placeholder and not a real settingType.|
+|settingType|[windowsSettingType](enums.md#windowssettingtype-values)|The type of setting. Possible values are: `roaming`, `backup`, `unknownFutureValue`.<br />Note, *unknownFutureValue* is a future placeholder and not a real settingType.|
 |windowsDeviceId|String|A unique identifier for the device the setting may belong to if it is of the settingType `backup`.|
 
 ## About the *payloadType* property
@@ -96,7 +103,7 @@ Rather than being a setting the user has applied, this type records information 
 - *deviceDisplayName* is the name of the computer which can be seen in Windows system settings at "**Start** > **Settings** > **System**".
 - *profileId* is an identifier used to link **WindowsSettings** items to the device that uploaded them. This property corresponds to **windowsSetting.windowsDeviceId** and can be used as a filter to get settings for a specific device from [List Windows settings stored in cloud](../api/usersettings-list-windows.md) API.
 
-Following is an example of this setting.
+The following example shows this resource type.
 
 ```json
 {

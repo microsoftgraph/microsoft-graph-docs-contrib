@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**windowsSettingInstance** represents setting instances from Windows operating system that are stored in the cloud for a given user.
+**windowsSettingInstance** represents setting instances from the Windows operating system that are stored in the cloud for a given user.
 
-A **windowsSettingInstance** belongs to a [**windowsSetting**](../resources/windowssetting.md) and represents a specific setting value for a given user. 
+A **windowsSettingInstance** belongs to a [**windowsSetting**](../resources/windowssetting.md).
 
 The *payload* property of a **windowsSettingInstance** contains the actual setting value. The *payload* is a string in base64 encoded format. The *payloadType* property of the [**windowsSetting**](../resources/windowssetting.md) object indicates the type of the setting value. The *payload* when decoded is a JSON object which differs from setting to setting and is specific to the *payloadType*.
 
