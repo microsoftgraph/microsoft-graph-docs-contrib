@@ -36,11 +36,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 PATCH /team/{teamId}/schedule/shiftsRoleDefinitions/{roleId}
 ```
 
-## Path Parameters
+## Path parameters
 |Parameter|Type|Description|
 |:---|:---|:---|
-|teamId|string|Team Id to set the role definitions.|
-|roleId|string|The affected role. Current supported values are `teamowner` and `scheduleowner`|
+|teamId|string|Team ID to set the role definitions.|
+|roleId|string|The affected role. Current supported values are `teamowner` and `scheduleowner`.|
 
 ### Supported values for roleId
 |Name|Description|
