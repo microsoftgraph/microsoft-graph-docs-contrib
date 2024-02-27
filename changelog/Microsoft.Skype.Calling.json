@@ -5,7 +5,7 @@
         {
           "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
           "ApiChange": "Resource",
-          "ChangedApiName": "chatRestrictions",
+          "ChangedApiName": "chatrestrictions",
           "ChangeType": "Addition",
           "Description": "Added the [chatRestrictions](https://learn.microsoft.com/en-us/graph/api/resources/chatrestrictions?view=graph-rest-beta) resource type.",
           "Target": "chatRestrictions"
