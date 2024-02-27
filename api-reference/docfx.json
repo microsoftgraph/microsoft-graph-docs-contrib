@@ -227,7 +227,8 @@
       "author": "MSGraphDocsVteam",
       "ms.author": "MSGraphDocsVteam",
       "ms.suite": "microsoft-graph",
-      "ms.prod": "non-product-specific",
+      "ms.service": "microsoft-graph",
+      "ms.subservice": "non-product-specific",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "searchScope": ["graph"],
       "toc_preview": true,
@@ -243,12 +244,6 @@
         "beta/**": "graph-rest-beta"
       },
       "feedback_system": {},
-      "ms.technology": {
-        "v1.0/api/*.md": "microsoft-graph",
-        "beta/api/*.md": "microsoft-graph",
-        "v1.0/resources/*.md": "microsoft-graph",
-        "beta/resources/*.md": "microsoft-graph"
-      },
       "ms.topic": {
         "v1.0/api/*.md": "reference",
         "beta/api/*.md": "reference",
