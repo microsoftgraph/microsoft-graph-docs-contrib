@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**windowsSettingInstance** represents setting instances from Windows operating system that are stored in the cloud for a given user.
+*"Represents a setting instance from the Windows operating system that is stored in the cloud for a given user.
 
 A **windowsSettingInstance** belongs to a [**windowsSetting**](../resources/windowssetting.md) and represents a specific setting value for a given user. 
 
