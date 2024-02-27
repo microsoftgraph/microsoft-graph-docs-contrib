@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /policies/federatedTokenValidationPolicy
+PUT /policies/federatedTokenValidationPolicy
 ```
 
 ## Request headers
@@ -63,18 +63,19 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/federatedTokenValidationPolicy
+PUT https://graph.microsoft.com/beta/policies/federatedTokenValidationPolicy
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.federatedTokenValidationPolicy",
   "deletedDateTime": "String (timestamp)",
   "validatingDomains": {
-    "@odata.type": "microsoft.graph.validatingDomains"
+    "@odata.type": "microsoft.graph.validatingDomains",
+    "rootDomains": "enumerated",
+    "domainNames": ["contoso.com","fabrikam.com"]
   }
 }
 ```
-
 
 ### Response
 The following example shows the response
@@ -92,7 +93,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.federatedTokenValidationPolicy",
   "id": "932b8f7f-68c1-6fe5-59ab-56e1ff752f30",
-  "deletedDateTime": "String (timestamp)",
+  "deletedDateTime": "2023-08-25T07:44:46.2616778Z",
   "validatingDomains": {
     "@odata.type": "microsoft.graph.validatingDomains"
   }

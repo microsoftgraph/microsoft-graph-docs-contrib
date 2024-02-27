@@ -9084,14 +9084,28 @@
               "Target": "federatedTokenValidationPolicy"
           },
           {
+            "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
+            "ApiChange": "Resource",
+            "ChangedApiName": "federatedTokenValidationPolicy",
+            "ChangeType": "Addition",
+            "Description": "Added the [alldomains](https://learn.microsoft.com/en-us/graph/api/resources/allDomains?view=graph-rest-beta) resource type and associated properties.",
+            "Target": "federatedTokenValidationPolicy"
+          },
+          {
+            "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
+            "ApiChange": "Resource",
+            "ChangedApiName": "federatedTokenValidationPolicy",
+            "ChangeType": "Addition",
+            "Description": "Added the [enumerateddomains](https://learn.microsoft.com/en-us/graph/api/resources/enumerateddomains?view=graph-rest-beta) resource type and associated properties.",
+            "Target": "federatedTokenValidationPolicy"
+          },
+          {
               "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
               "ApiChange": "Property",
               "ChangedApiName": "validatingDomains",
               "ChangeType": "Addition",
               "Description": "Added the `validatingDomains` property to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta) resource.",
               "Target": "federatedTokenValidationPolicy"
-<<<<<<< HEAD
-=======
           },
           {
               "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
@@ -9132,7 +9146,6 @@
               "ChangeType": "Addition",
               "Description": "Added the [DELETE](https://learn.microsoft.com/en-us/graph/api/policyroot-delete-federatedtokenvalidationpolicy?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
               "Target": "federatedTokenValidationPolicy"
->>>>>>> 61aebbbfe149c2326d4d44b976dac5ee4cacfe5c
           }
       ],
       "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",

@@ -35,7 +35,7 @@ GET /policies/federatedTokenValidationPolicy
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -62,7 +62,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/policies/federatedTokenValidationPolicy
 ```
 
-
 ### Response
 The following example shows the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -80,9 +79,11 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.federatedTokenValidationPolicy",
     "id": "932b8f7f-68c1-6fe5-59ab-56e1ff752f30",
-    "deletedDateTime": "String (timestamp)",
+    "deletedDateTime": "2023-08-25T07:44:46.2616778Z",
     "validatingDomains": {
-      "@odata.type": "microsoft.graph.validatingDomains"
+      "@odata.type": "microsoft.graph.validatingDomains",
+      "rootDomains": "enumerated",
+      "domainNames": ["contoso.com","fabrikam.com"]
     }
   }
 }

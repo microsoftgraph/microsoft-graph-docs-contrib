@@ -4285,15 +4285,15 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### rootDomains values
 
-| Property                         | Value | Description                                                         |
-| :------------------------------- | :---- | ------------------------------------------------------------------- |
-| none                             | 0     | Dont perform validation for any domain.                             |
-| all                              | 1     | Perform validation for all domains                                  |
-| allFederated                     | 2     | Perform validation for all federated domains                        |
-| allManaged                       | 3     | Perform validation for all managed domains                          |
-| enumerated                       | 4     | Perform validation for all enumerated domains                       |
-| allManagedAndEnumeratedFederated | 5     | Perform validation for all managed and enumerated federated domains |
-| unknownFutureValue               | 6     | Unknown future value for evolvable enums.                           |
+| Member|
+|:---|
+|none|
+|all|
+|allFederated|
+|allManaged|
+|enumerated|
+|allManagedAndEnumeratedFederated|
+|unknownFutureValue|
 
 ### allowedRolePrincipalTypes values
 

@@ -1,6 +1,6 @@
 ---
 title: "validatingDomains resource type"
-description: "**TODO: Add Description**"
+description: "Defines the types of domains to which the federated token validation applies."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -19,7 +19,7 @@ This object is an abstract type from which the [allDomains](../resources/alldoma
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|rootDomains|rootDomains|Defines the types of domains to which the validation will apply. The possible values are: `none`, `all`, `allFederated`, `allManaged`, `enumerated`, `allManagedAndEnumeratedFederated`, `unknownFutureValue`.|
+|rootDomains|rootDomains|Defines the types of domains to which the validation applies. The possible values are: `none`, `all`, `allFederated`, `allManaged`, `enumerated`, `allManagedAndEnumeratedFederated`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -37,4 +37,3 @@ The following JSON representation shows the resource type.
   "rootDomains": "String"
 }
 ```
-

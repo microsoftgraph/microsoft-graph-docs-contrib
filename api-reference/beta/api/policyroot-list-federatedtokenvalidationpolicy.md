@@ -31,11 +31,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.federatedTokenValidationPolicy not found
+GET /policies/federatedTokenValidationPolicy
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -59,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.federatedTokenValidationPolicy not found
+GET https://graph.microsoft.com/beta/policies/federatedTokenValidationPolicy
 ```
 
 ### Response
@@ -80,7 +80,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.federatedTokenValidationPolicy",
       "id": "932b8f7f-68c1-6fe5-59ab-56e1ff752f30",
-      "deletedDateTime": "String (timestamp)",
+      "deletedDateTime": "2023-08-25T07:44:46.2616778Z",
       "validatingDomains": {
         "@odata.type": "microsoft.graph.validatingDomains"
       }
