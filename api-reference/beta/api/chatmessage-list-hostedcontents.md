@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message. This API only lists the hosted content objects. To get the content bytes, see [get chatmessage hosted content](chatmessagehostedcontent-get.md)
+Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message. This API only lists the hosted content objects. To get the content bytes, see [get chatmessage hosted content](chatmessagehostedcontent-get.md).s
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -37,7 +37,8 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| ChatMessage.Read.Chat, Chat.Read.All, Chat.ReadWrite.All|
 
-> **Note**: The _ChannelMessage.Read.Group_ and _ChatMessage.Read.Chat_ permissions use [resource-specific consent]( https://aka.ms/teams-rsc).
+> [!NOTE]
+> The ChannelMessage.Read.Group and ChatMessage.Read.Chat permissions use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 ## HTTP request
 

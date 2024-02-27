@@ -37,7 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| Chat.Read.All, Chat.ReadWrite.All|
 
-> **Note:** The _ChannelMessage.Read.Group_ and _ChatMessage.Read.Chat_ permissions use [resource-specific consent]( https://aka.ms/teams-rsc).
+> [!NOTE]
+> The ChannelMessage.Read.Group and ChatMessage.Read.Chat permissions use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 ## HTTP request
 
@@ -57,7 +58,7 @@ GET /me/chats/{chat-id}/messages/{message-id}
 ```
 
 ## Optional query parameters
-This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 | Header       | Value |

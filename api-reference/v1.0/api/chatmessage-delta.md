@@ -37,7 +37,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chatmessage_delta" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chatmessage-delta-permissions.md)]
 
-> **Note**: The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -565,7 +566,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Retrieving additional changes
+### Example 2: Retrieving more changes
 
 Using the `@odata.deltaLink` from the last request in the last round, you can get only those messages that changed (by being added, or updated) in that channel since then. Your request should look like the following, assuming you prefer to keep the same maximum page size in the response:
 
