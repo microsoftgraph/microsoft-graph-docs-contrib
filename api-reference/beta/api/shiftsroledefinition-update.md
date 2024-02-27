@@ -1,6 +1,6 @@
 ---
 title: "Set shiftsRoleDefinition"
-description: "Create or update a new shifts role definition."
+description: "Updates shifts role definition."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create or update a [shiftsRoleDefinition](../resources/shiftsroledefinition.md) object.
+Update a [shiftsRoleDefinition](../resources/shiftsroledefinition.md) object.
 
 ## Permissions
 

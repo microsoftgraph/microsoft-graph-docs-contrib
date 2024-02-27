@@ -18771,10 +18771,10 @@ items:
                     href: api/openshiftchangerequest-approve.md
                   - name: Decline
                     href: api/openshiftchangerequest-decline.md
-              - name: Role definitions and permissions (preview)
+              - name: Role definition (preview)
                 href: resources/shiftsroledefinition.md
                 items:
-                  - name: Create or replace
+                  - name: Update
                     href: api/shiftsroledefinition-update.md
                   - name: Get
                     href: api/shiftsroledefinition-get.md
