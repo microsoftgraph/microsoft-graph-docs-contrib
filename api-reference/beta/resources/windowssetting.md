@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**windowsSetting** represents settings from Windows operating system that are stored in the cloud for a given user.
+Represents settings from the Windows operating system that are stored in the cloud for a given user.
 
 >Warning: The structure of the id of a **windowsSetting** is not guranateed and the caller should not take any dependency on it. The id should be treated as an opaque string.
 
