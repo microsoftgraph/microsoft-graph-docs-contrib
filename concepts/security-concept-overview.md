@@ -33,6 +33,9 @@ The [Microsoft Graph security API](/graph/api/resources/security-api-overview) m
 
 Submit threats across security solutions more easily with a unified security threat submission API. This allows you to not only submit threats but also get threat submission results and trigger downstream alert flows. The new unified security threat submission API supports both application and delegated permissions to help you build new security solutions.
 
+### Investigate email and collaboration related  threats and trigger response action
+Threat investigation and response capabilities provide detailed metadata, and indicators on emails processed by Microsoft Defender for Office 365 and related response actions. These insights can help your organization's security team protect users from email- or file-based attacks.
+
 ### Unify and standardize alert tracking
 
 Connect once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk using Microsoft Graph security API connectors. For more info about solution integrations with the security API entities, see [Security solution integrations using the Microsoft Graph security API](security-integration.md).
