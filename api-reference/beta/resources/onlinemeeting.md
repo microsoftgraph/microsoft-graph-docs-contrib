@@ -57,7 +57,7 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
-| chatRestrictions      | [chatRestrictions](chatRestrictions.md) | The meeting chat restriction configuration.  |
+| chatRestrictions      | [chatRestrictions](chatRestrictions.md) | Specifies the configuration for meeting chat restrictions.  |
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowRecording | Boolean | Indicates whether recording is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
