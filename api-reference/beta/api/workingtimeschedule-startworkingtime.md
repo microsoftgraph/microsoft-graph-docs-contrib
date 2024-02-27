@@ -33,8 +33,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /users/{usersId}/solutions/schedule/startWorkingTime
+POST /users/{userId}/solutions/schedule/startWorkingTime
 ```
+
+## Path parameters
+|Parameter|Type|Description|
+|:---|:---|:---|
+|userId|string|User ID that has started working.|
 
 ## Request headers
 
