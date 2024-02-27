@@ -16,7 +16,7 @@ Read the properties and relationships of a [cloudClipboardItem](../resources/clo
 - The signed-in user's own [cloudClipboardItem](../resources/cloudclipboarditem.md).
 - An app on behalf of the user if the user grants delegated access to it.
 
-Getting user2's [cloudClipboardItem](../resources/cloudclipboarditem.md) using user1's credential is **not** allowed.
+This API doesn't support using another user's credentials to get a [cloudClipboardItem](../resources/cloudclipboarditem.md) for a user.
 
 ## Permissions
 
