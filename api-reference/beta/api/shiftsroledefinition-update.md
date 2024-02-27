@@ -1,5 +1,5 @@
 ---
-title: "Set shiftsRoleDefinition"
+title: "Update shiftsRoleDefinition"
 description: "Updates shifts role definition."
 author: "galalalym"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Set shiftsRoleDefinition
+# Update shiftsRoleDefinition
 
 Namespace: microsoft.graph
 
