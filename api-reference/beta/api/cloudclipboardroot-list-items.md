@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [cloudClipboardItem](../resources/cloudclipboarditem.md) objects and their properties for a user. The API only allows getting [cloudClipboardItem](../resources/cloudclipboarditem.md) objects for 
+Get a list of the [cloudClipboardItem](../resources/cloudclipboarditem.md) objects and their properties for a user. This API only allows you to get [cloudClipboardItem](../resources/cloudclipboarditem.md) objects for:
+
 - The signed-in user's own [cloudClipboardItem](../resources/cloudclipboarditem.md) objects.
 - An app on behalf of the user if the user grants delegated access to it.
 
@@ -44,7 +45,7 @@ GET /user/cloudClipboard/items
 
 This method supports `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response. 
 
-`$skipToken` is a token returned in the `@odata.nextLink` URL in the response of the previous List [cloudClipboardItem](../resources/cloudclipboarditem.md) objects request, indicating there are more [cloudClipboardItem](../resources/cloudclipboarditem.md) objects to fetch for the user. 
+`$skipToken` is a token returned in the `@odata.nextLink` URL in the response of the previous List [cloudClipboardItem](../resources/cloudclipboarditem.md) objects request, which indicates that there are more [cloudClipboardItem](../resources/cloudclipboarditem.md) objects to fetch for the user. 
 
 
 ## Request headers
