@@ -45,7 +45,7 @@ GET /user/cloudClipboard/items
 
 This method supports `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response. 
 
-`$skipToken` is a token returned in the `@odata.nextLink` URL in the response of the previous List [cloudClipboardItem](../resources/cloudclipboarditem.md) objects request, which indicates that there are more [cloudClipboardItem](../resources/cloudclipboarditem.md) objects to fetch for the user. 
+`$skipToken` is a token returned in the `@odata.nextLink` URL in the response of the previous List request, which indicates that there are more [cloudClipboardItem](../resources/cloudclipboarditem.md) objects to fetch for the user. 
 
 
 ## Request headers
