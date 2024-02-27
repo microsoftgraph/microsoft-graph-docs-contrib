@@ -1,6 +1,6 @@
 ---
 title: "List userSettings"
-description: "Retrieve a list of cloudPcUserSetting objects."
+description: "Get a list of cloudPcUserSetting objects and their properties."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of [cloudPcUserSetting](../resources/cloudpcusersetting.md) objects.
+Get a list of [cloudPcUserSetting](../resources/cloudpcusersetting.md) objects and their properties.
 
 ## Permissions
 
