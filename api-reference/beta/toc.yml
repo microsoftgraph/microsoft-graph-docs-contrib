@@ -1604,9 +1604,9 @@ items:
               - name: Cloud clipboard
                 href: resources/cloudclipboarditem.md
                 items:
-                  - name: List cloud clipboards
+                  - name: List
                     href: api/cloudclipboardroot-list-items.md
-                  - name: Get cloud clipboard
+                  - name: Get
                     href: api/cloudclipboarditem-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings

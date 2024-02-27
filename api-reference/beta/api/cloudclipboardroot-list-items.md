@@ -1,13 +1,13 @@
 ---
-title: "List cloudClipboardItem objects"
-description: "Get a list of the cloudClipboardItem objects and their properties."
+title: "List cloudClipboard items"
+description: "Get a list of the cloudClipboard items and their properties."
 author: "yuechen7"
 ms.localizationpriority: medium
 ms.prod: "project-rome"
 doc_type: apiPageType
 ---
 
-# List cloudClipboardItem objects
+# List cloudClipboard items
 
 Namespace: microsoft.graph
 
@@ -18,7 +18,7 @@ Get a list of the [cloudClipboardItem](../resources/cloudclipboarditem.md) objec
 - The signed-in user's own [cloudClipboardItem](../resources/cloudclipboarditem.md) objects.
 - An app on behalf of the user if the user grants delegated access to it.
 
-Getting user2's [cloudClipboardItem](../resources/cloudclipboarditem.md) using user1's credential is **not** allowed.
+Listing user2's [cloudClipboard items](../resources/cloudclipboarditem.md) using user1's credential is **not** allowed.
 
 ## Permissions
 

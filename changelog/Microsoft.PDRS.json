@@ -17,6 +17,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [cloudClipboardItem](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItem?view=graph-rest-beta) resource and its methods.",
           "Target": "cloudClipboardItem"
+        },
+        {
+          "Id": "03aa6149-f3e9-4c20-9212-9731fe17debd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudClipboardRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudClipboardRoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardRoot?view=graph-rest-beta) resource.",
+          "Target": "cloudClipboardRoot"
         }
       ],
       "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
