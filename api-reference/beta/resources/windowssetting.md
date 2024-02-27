@@ -42,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |id|String|The unique identifier of the object.|
 |payloadType|String|The type of setting payloads contained in the *instances* navigation property.|
-|settingType|[windowsSettingType](enums.md#windowssettingtype-values)|The type of setting. Possible values are: `roaming`, `backup`, `unknownFutureValue`.<br />Note, *unknownFutureValue* is a future placeholder and not a real settingType.|
+|settingType|[windowsSettingType](enums.md#windowssettingtype-values)|The type of setting. Possible values are: `roaming`, `backup`, `unknownFutureValue`.|
 |windowsDeviceId|String|A unique identifier for the device the setting may belong to if it is of the settingType `backup`.|
 
 ## About the *payloadType* property
