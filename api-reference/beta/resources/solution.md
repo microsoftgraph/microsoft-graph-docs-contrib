@@ -1,5 +1,5 @@
 ---
-title: "solution resource type"
+title: "Solution resource type"
 description: "Represents a user's custom solution entity."
 author: "galalalym"
 ms.localizationpriority: medium
@@ -23,7 +23,7 @@ Represents a user's custom solution entity.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|A unique programmatic identifier for the entity. Read-only.|
+|ID|String|A unique programmatic identifier for the entity. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
