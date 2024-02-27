@@ -3,7 +3,7 @@ title: "Get sourceSystemDefinition"
 description: "Read the properties and relationships of a sourceSystemDefinition object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

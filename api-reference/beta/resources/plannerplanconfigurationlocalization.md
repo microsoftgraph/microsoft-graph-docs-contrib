@@ -3,7 +3,7 @@ title: "plannerPlanConfigurationLocalization resource type"
 description: "Represents the localized names for a plannerPlanConfiguration for a specific language."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update itemPublication"
 description: "Update the properties of an itemPublication object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: apiPageType
 ---
 

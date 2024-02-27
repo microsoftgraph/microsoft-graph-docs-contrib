@@ -3,7 +3,7 @@ title: "Delete extensionProperty (directory extension)"
 description: "Delete a directory extension definition."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: "non-product-specific-extensions"
 doc_type: "apiPageType"
 ---
 

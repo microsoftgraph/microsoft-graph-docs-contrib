@@ -3,7 +3,7 @@ title: "cloudPcConnectivityEvent resource type"
 description: "Describes a user connection record, including when and how the Cloud PC was connected and whether the connection was successful. "
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "plannerChecklistItems resource type"
 description: "The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It's an Open Type. It's part of the task details object. The value in the property-value pair is the checklistItem object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

@@ -2,7 +2,7 @@
 title: "Create and send a notification"
 description: "Create and send a notification targeting a user through Microsoft Graph."
 ms.localizationpriority: medium
-ms.prod: "notifications"
+ms.subservice: "notifications"
 doc_type: apiPageType
 author: "merzink"
 ---

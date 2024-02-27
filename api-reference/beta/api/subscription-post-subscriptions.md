@@ -4,7 +4,7 @@ description: "Subscribes a listener application to receive change notifications 
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: apiPageType
-ms.prod: "change-notifications"
+ms.subservice: "non-product-specific-change-notifications"
 ---
 
 # Create subscription

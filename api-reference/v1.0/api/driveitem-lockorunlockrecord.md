@@ -3,7 +3,7 @@ title: "driveItem: lockOrUnlockRecord"
 description: "Lock or unlock a retention label on a driveItem that classifies content as records."
 author: "kyracatwork"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 

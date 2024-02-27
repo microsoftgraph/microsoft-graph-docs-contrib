@@ -3,7 +3,7 @@ title: "cloudPcServicePlan resource type"
 description: "Represents a Windows 365 service plan that can be purchased and configured for a Cloud PC."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

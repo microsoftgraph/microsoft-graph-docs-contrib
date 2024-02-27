@@ -3,7 +3,7 @@ title: "plannerPlanDetails resource type"
 description: "Represents the additional information about a plan."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

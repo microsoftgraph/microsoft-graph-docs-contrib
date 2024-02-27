@@ -3,7 +3,7 @@ title: "Update plannerbucket"
 description: "Update the properties of **plannerbucket** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

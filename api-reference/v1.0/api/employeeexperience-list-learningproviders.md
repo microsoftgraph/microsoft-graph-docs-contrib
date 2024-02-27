@@ -3,7 +3,7 @@ title: "List learningProviders"
 description: "Get a list of the learningProvider resources registered in Viva Learning for a tenant."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 

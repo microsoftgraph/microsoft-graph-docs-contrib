@@ -3,7 +3,7 @@ title: "Update bookingCustomQuestion"
 description: "Update the properties of a bookingCustomQuestion object."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

@@ -4,7 +4,7 @@ description: "Remove a member from a group via the members navigation property."
 ms.localizationpriority: high
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

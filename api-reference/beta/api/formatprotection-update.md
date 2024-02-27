@@ -4,7 +4,7 @@ description: "Update the properties of formatprotection object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 ---
 
 # Update formatProtection

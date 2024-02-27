@@ -3,7 +3,7 @@ title: "List staffMembers"
 description: "Get a list of bookingStaffMember objects in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

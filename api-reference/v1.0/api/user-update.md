@@ -4,7 +4,7 @@ description: "Update the properties of a user object."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 doc_type: apiPageType
 ---
 

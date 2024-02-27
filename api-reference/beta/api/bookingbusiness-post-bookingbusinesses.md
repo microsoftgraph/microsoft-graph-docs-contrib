@@ -3,7 +3,7 @@ title: "Create bookingBusiness"
 description: "Create a new Microsoft Bookings business in a tenant."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

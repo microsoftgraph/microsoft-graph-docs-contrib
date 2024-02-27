@@ -3,7 +3,7 @@ title: "Delete learningCourseActivity"
 description: "Delete a learningCourseActivity object by using the course activity ID of either an assignment or a self-initiated activity."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 

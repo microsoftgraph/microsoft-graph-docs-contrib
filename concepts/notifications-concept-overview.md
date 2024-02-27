@@ -2,7 +2,7 @@
 title: "Enabling human-centric notification experiences (deprecated)"
 description: "The Microsoft Graph notifications API stopped returning data in January 2022. For an alternative experience, see the Azure Notification Hubs documentation."
 ms.localizationpriority: high
-ms.prod: "notifications"
+ms.subservice: "notifications"
 ms.custom: scenarios:getting-started
 author: "merzink"
 ---

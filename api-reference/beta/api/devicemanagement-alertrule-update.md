@@ -3,7 +3,7 @@ title: "Update alertRule"
 description: "Update the properties of an alertRule object."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

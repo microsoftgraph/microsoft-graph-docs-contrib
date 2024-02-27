@@ -1,7 +1,7 @@
 ---
 author: "angelgolfer-ms"
 ms.localizationpriority: high
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 ms.topic: include
 ---
 

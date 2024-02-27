@@ -3,7 +3,7 @@ title: "Delete educationalActivity"
 description: "Delete an educationalActivity object from a user profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "apiPageType"
 ---
 

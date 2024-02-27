@@ -3,7 +3,7 @@ title: "Get cloudPcExternalPartnerSetting"
 description: "Read the properties and relationships of a cloudPcExternalPartnerSetting object."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

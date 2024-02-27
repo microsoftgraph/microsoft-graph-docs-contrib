@@ -3,7 +3,7 @@ title: "cloudPC: validateBulkResize"
 description: "Validate that a set of Cloud PC devices meet the requirements to be bulk resized."
 author: "SleepIsImportant"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

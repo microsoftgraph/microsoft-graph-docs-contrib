@@ -4,7 +4,7 @@ description: The MentionAction resource provides information about an activity t
 ms.date: 09/14/2017
 title: MentionAction
 ms.localizationpriority: medium
-ms.prod: insights
+ms.subservice: insights
 doc_type: resourcePageType
 ---
 

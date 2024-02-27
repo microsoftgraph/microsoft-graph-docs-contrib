@@ -3,7 +3,7 @@ title: "Update profileCardProperty"
 description: "Update the properties of a profileCardProperty object, identified by its directoryPropertyName property."
 ms.localizationpriority: medium
 author: "rwaithera"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "apiPageType"
 ---
 

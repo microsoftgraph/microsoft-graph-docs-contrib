@@ -6,7 +6,7 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 ---
 
 # Get agedAccountsReceivable

@@ -3,7 +3,7 @@ title: "List appRoleAssignedResources"
 description: "Get the service principals to which the user has an app role assignment either directly or through group membership."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 doc_type: apiPageType
 ---
 

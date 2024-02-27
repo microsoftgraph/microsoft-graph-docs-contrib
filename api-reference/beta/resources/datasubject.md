@@ -3,7 +3,7 @@ title: "dataSubject resource type"
 description: "Contains information related to the subject of a content search."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "non-product-specific-compliance"
 doc_type: resourcePageType
 ---
 

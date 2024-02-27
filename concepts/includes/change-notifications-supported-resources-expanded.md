@@ -1,7 +1,7 @@
 ---
 author: FaithOmbongi
 ms.reviewer: ric.lewis
-ms.prod: "change-notifications"
+ms.subservice: "non-product-specific-change-notifications"
 ms.topic: include
 ms.localizationpriority: high
 ---

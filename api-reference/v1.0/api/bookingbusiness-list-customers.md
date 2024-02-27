@@ -3,7 +3,7 @@ title: "List customers"
 description: "Get a list of bookingCustomer objects of a business."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

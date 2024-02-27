@@ -3,7 +3,7 @@ title: "Get extensionProperty (directory extension)"
 description: "Read a directory extension definition."
 author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "extensions"
+ms.subservice: "non-product-specific-extensions"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List pronounsSettings"
 description: "Get the properties of the pronounsSettings resource for an organization."
 author: "aymen-ms"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "serviceHealth resource type"
 description: "Represents the health information of a service."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: resourcePageType
 ---
 

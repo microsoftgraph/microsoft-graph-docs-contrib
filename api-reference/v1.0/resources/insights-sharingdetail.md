@@ -3,7 +3,7 @@ title: "sharingDetail resource type"
 description: "Complex type containing properties of Shared items. "
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 

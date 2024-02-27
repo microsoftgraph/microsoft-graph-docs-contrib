@@ -3,7 +3,7 @@ title: "cloudPcResizeValidationResult resource type"
 description: "Represents the validation result of a single resized Cloud PC during the bulk-resize action."
 author: "SleepIsImportant"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

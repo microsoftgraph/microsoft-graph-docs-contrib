@@ -3,7 +3,7 @@ title: "cloudPcCrossCloudGovernmentOrganizationMapping resource type"
 description: "Represents a Cloud PC organization mapping between a public and US government cloud organizations."
 author: "SuyliuMS"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

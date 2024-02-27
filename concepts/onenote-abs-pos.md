@@ -3,7 +3,7 @@ title: "Create absolute positioned elements on OneNote pages using the OneNote A
 description: "Use the data-absolute-enabled and style attributes to create absolute positioned elements on a page, including multiple direct div, img, and object child elements."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 

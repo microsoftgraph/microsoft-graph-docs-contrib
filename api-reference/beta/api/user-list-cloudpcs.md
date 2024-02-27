@@ -3,7 +3,7 @@ title: "List cloudPCs for user"
 description: "List the cloudPC devices that are attributed to the signed-in user."
 author: "andrewku0409"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

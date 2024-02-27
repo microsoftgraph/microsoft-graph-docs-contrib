@@ -3,7 +3,7 @@ title: "plannerBucketTaskBoardTaskFormat resource type"
 description: "Represents the information used to render a task correctly in the buckets view of a task board."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

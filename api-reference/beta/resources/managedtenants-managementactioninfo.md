@@ -3,7 +3,7 @@ title: "managementActionInfo resource type"
 description: "Represents reference information for a management action."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

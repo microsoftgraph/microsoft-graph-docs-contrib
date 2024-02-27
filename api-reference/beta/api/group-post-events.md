@@ -3,7 +3,7 @@ title: "Create event"
 description: "Use this API to create a new event."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

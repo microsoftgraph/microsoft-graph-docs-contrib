@@ -3,7 +3,7 @@ title: "Create businessScenario"
 description: "Create a new businessScenario object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 

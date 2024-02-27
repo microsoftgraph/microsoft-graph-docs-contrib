@@ -3,7 +3,7 @@ title: "bookingStaffMemberBase resource type"
 description: "Abstract base type for Bookings staff members."
 author: "davisjms"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

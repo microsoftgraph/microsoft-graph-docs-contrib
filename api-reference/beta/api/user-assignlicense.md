@@ -3,7 +3,7 @@ title: "user: assignLicense"
 description: "Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings. "
 ms.localizationpriority: medium
 author: "frank-masuelli"
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 doc_type: apiPageType
 ---
 

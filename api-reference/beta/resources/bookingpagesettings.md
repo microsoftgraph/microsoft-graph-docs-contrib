@@ -3,7 +3,7 @@ title: "bookingPageSettings resource type"
 description: "Represents the settings of a published booking page."
 author: "vikailas"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

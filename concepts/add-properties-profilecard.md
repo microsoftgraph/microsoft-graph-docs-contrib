@@ -3,7 +3,7 @@ title: "Add or remove custom attributes on a profile card using the profile card
 description: "Learn how to use the profile card API in Microsoft Graph to make additional attributes visible and add or remove custom attributes on a profile card."
 author: "rwaithera"
 ms.localizationpriority: high
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 ms.custom: scenarios:getting-started
 ---
 

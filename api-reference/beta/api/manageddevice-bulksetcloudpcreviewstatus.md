@@ -3,7 +3,7 @@ title: "managedDevice: bulkSetCloudPcReviewStatus"
 description: "Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices."
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

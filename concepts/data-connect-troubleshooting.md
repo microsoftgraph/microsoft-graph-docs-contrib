@@ -3,7 +3,7 @@ title: "Troubleshoot Microsoft Graph Data Connect"
 description: "Get troubleshooting information related to using Microsoft Graph Data Connect."
 author: "David1997sb"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
 ---
 
 # Troubleshoot Microsoft Graph Data Connect

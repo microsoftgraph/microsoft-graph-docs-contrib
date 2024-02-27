@@ -3,7 +3,7 @@ title: "Working with Microsoft Entra resources in Microsoft Graph"
 description: "With Microsoft Graph, you can access Microsoft Entra resources to enable scenarios like managing administrator (directory) roles, inviting external users to an organization, and, if you are a Cloud Solution Provider (CSP), managing your customer's data. Microsoft Graph also provides methods that apps can use to, for example, discover information about users' transitive group and role memberships. "
 ms.localizationpriority: high
 author: "dkershaw10"
-ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 doc_type: conceptualPageType
 ms.date: 07/07/2022
 ---

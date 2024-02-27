@@ -3,7 +3,7 @@ title: "Delete plannerTask"
 description: "Delete a plannerTask object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

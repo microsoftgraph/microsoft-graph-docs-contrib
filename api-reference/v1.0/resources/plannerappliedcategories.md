@@ -3,7 +3,7 @@ title: "plannerAppliedCategories resource type"
 description: "The **AppliedCategoriesCollection** resource represents the collection of categories (or labels) that have been applied to a task. It's part of the plannerTask object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

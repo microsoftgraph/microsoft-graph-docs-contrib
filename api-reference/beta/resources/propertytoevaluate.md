@@ -4,7 +4,7 @@ description: "Defines the name and the value of the property."
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: "resourcePageType"
 ---
 

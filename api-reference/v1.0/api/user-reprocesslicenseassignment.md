@@ -4,7 +4,7 @@ description: "Reprocess all group-based license assignments for the user."
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 doc_type: "apiPageType" 
 ---
 

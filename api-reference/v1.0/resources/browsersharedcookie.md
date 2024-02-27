@@ -3,7 +3,7 @@ title: "browserSharedCookie resource type"
 description: "Represents a session cookie for Internet Explorer mode that resides on a site list."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: resourcePageType
 ---
 

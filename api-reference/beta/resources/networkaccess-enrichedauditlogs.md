@@ -3,7 +3,7 @@ title: "enrichedAuditLogs resource type"
 description: "An overview of the enriched audit logs workloads within the tenant is provided. It comprises three partners: SharePoint, Teams, and Exchange. Each partner represents a specific workload that generates audit logs."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "managedDeviceCompliance resource type"
 description: "Represents the state of device compliance for each managed device belonging to a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

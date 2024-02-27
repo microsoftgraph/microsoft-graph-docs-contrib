@@ -3,7 +3,7 @@ title: "cloudPcExportJob resource type"
 description: "Represents the export job created for downloading reports."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

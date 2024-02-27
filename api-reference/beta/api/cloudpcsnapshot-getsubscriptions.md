@@ -3,7 +3,7 @@ title: "cloudPCSnapshot: getSubscriptions"
 description: "List all subscriptions that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis."
 author: "xhan2077"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

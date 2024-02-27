@@ -3,7 +3,7 @@ title: "Delete bookingCustomQuestion"
 description: "Delete a bookingCustomQuestion object."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

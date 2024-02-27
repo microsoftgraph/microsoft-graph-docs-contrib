@@ -3,7 +3,7 @@ title: "plannerTaskCompletionRequirementDetails resource type"
 description: "Represents detailed information about completionRequirements for a plannerTask."
 author: "prasad5596"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create cloudPcExternalPartnerSetting"
 description: "Create a new cloudPcExternalPartnerSetting object."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

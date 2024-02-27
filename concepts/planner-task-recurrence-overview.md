@@ -3,7 +3,7 @@ title: "Configuring task recurrence in Planner (preview)"
 description: "Learn how to use recurrence with Planner tasks to automate the creation of repetitive tasks."
 author: "DavidMoksha"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: conceptualPageType
 ---
 

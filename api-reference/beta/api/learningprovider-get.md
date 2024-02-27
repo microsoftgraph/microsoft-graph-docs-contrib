@@ -3,7 +3,7 @@ title: "Get learningProvider"
 description: "Read the properties and relationships of a learningProvider object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 

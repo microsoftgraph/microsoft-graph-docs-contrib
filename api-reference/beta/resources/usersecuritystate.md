@@ -4,7 +4,7 @@ description: "Contains stateful information about the user account."
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 doc_type: resourcePageType
 ---
 

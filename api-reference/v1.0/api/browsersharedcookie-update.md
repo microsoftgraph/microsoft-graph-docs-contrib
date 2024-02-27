@@ -3,7 +3,7 @@ title: "Update browserSharedCookie"
 description: "Update the properties of a browserSharedCookie object."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
 ---
 

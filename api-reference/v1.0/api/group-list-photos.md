@@ -3,7 +3,7 @@ title: "List photos"
 description: "Retrieve a list of profilePhoto objects."
 author: "kristinmcleod"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

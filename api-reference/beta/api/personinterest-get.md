@@ -3,7 +3,7 @@ title: "Get personInterest"
 description: "Retrieve the properties and relationships of a personInterest object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "apiPageType"
 ---
 

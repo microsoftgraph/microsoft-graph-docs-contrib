@@ -3,7 +3,7 @@ title: "cloudPcReports: getRawRemoteConnectionReports "
 description: "Get the raw real-time remote connection report for a Cloud PC without any calculation or aggregation, such as roundTripTime or available bandwidth, which are aggregated hourly from the raw event data."
 author: "Gutentag0004"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

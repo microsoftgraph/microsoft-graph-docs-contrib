@@ -3,7 +3,7 @@ title: "Get serviceAnnouncementAttachment"
 description: "Read the properties and relationships of a serviceAnnouncementAttachment object."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: apiPageType
 ---
 

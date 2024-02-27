@@ -4,7 +4,7 @@ description: "Build compelling app experiences based on users, their relationshi
 ms.localizationpriority: high
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 doc_type: conceptualPageType
 ms.date: 11/16/2022
 ---

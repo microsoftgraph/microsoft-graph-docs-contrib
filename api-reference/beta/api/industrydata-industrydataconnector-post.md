@@ -3,7 +3,7 @@ title: "Create industryDataConnector"
 description: "Create a new industryDataConnector object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

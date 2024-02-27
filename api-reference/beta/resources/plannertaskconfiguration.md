@@ -3,7 +3,7 @@ title: "plannerTaskConfiguration resource type"
 description: "Represents the configuration of plannerTasks created for a businessScenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

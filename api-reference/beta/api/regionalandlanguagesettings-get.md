@@ -3,7 +3,7 @@ title: "Get regionalAndLanguageSettings resource"
 description: "Retrieve the properties of a user's regionalAndLanguageSettings"
 author: "jasonbro"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create sectionGroup"
 description: "Create a new section group in the specified section group."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 

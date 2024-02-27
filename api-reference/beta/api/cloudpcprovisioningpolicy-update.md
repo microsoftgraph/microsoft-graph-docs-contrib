@@ -3,7 +3,7 @@ title: "Update cloudPcProvisioningPolicy"
 description: "Update the properties of a cloudPcProvisioningPolicy object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

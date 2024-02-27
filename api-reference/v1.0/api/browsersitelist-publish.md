@@ -3,7 +3,7 @@ title: "browserSiteList: publish"
 description: "Publish the specified browserSiteList for devices to download."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
 ---
 

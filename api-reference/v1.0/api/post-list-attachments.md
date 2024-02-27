@@ -3,7 +3,7 @@ title: "List attachments"
 description: "Retrieve a list of attachment objects attached to a post."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

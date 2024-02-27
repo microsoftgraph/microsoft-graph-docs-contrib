@@ -3,7 +3,7 @@ title: "List teamTemplates"
 description: "Get a list of the teamTemplate objects and their properties for a tenant."
 author: "Charlieforce"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

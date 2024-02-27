@@ -3,7 +3,7 @@ title: "notebook: getNotebookFromWebUrl"
 description: "Retrieve the properties and relationships of a notebook object using its URL path."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 

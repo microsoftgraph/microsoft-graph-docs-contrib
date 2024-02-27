@@ -4,7 +4,7 @@ description: "Project Rome is a Microsoft initiative to build a platform that en
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ailae"
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 ---
 
 # Use the Microsoft Graph API to work with Project Rome

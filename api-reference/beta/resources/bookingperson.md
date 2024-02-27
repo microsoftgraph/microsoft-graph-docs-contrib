@@ -3,7 +3,7 @@ title: "bookingPerson resource type"
 description: "This is a base type for a person in a Microsoft Bookings business, which can be a bookingCustomer or bookingStaffMember."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

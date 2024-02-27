@@ -3,7 +3,7 @@ title: "Authentication differences between Exchange Web Services (EWS) and Micro
 description: "Describes authentication details to help you to migrate Exchange Web Services (EWS) apps to Microsoft Graph."
 author: "sumithra-maran"
 ms.localizationpriority: medium
-ms.prod: "exchange"
+ms.subservice: "exchange"
 doc_type: conceptualPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Microsoft Graph REST API v1.0 endpoint reference"
 description: "Documentation for the Microsoft Graph REST API v1.0 endpoint, which includes APIs in general availability (GA) status. Features common use cases in v1.0."
 ms.localizationpriority: high
 author: "lauragra"
-ms.prod: "non-product-specific"
+ms.subservice: "non-product-specific"
 doc_type: conceptualPageType
 ms.topic: overview
 ---

@@ -3,7 +3,7 @@ title: "plannerTaskPolicy resource type"
 description: "Represents the policy configuration for tasks created for a businessScenario when they're being changed outside of the scenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

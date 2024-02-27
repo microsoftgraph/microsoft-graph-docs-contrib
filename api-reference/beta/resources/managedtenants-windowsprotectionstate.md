@@ -3,7 +3,7 @@ title: "windowsProtectionState resource type"
 description: "Represent the Windows protection state for managed devices running Windows."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Retrieve a list of user objects."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 doc_type: apiPageType
 ---
 

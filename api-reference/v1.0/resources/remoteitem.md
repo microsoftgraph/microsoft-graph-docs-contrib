@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: remoteItem
 ms.localizationpriority: medium
 description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 

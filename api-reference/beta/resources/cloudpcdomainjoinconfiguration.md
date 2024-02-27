@@ -3,7 +3,7 @@ title: "cloudPcDomainJoinConfiguration resource type"
 description: "Represents a defined configuration of how a provisioned Cloud PC device will be joined to Microsoft Entra ID."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

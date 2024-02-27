@@ -3,7 +3,7 @@ title: "reports: getDestinationSummaries"
 description: "Get counts of the visits to the top destination aggregations."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

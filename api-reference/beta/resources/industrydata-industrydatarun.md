@@ -3,7 +3,7 @@ title: "industryDataRun resource type"
 description: "Represents an ephemeral run that contains data for all subordinate activities performed by the system."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

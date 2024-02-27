@@ -3,7 +3,7 @@ title: "bookingQuestionAssignment resource type"
 description: "Contains the set of custom questions associated with a particular service."
 ms.localizationpriority: medium
 author: "razortbone"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

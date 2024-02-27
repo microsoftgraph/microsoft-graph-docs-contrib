@@ -3,7 +3,7 @@ title: "attendeeBase resource type"
 description: "The type of attendee."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: calendar
+ms.subservice: calendar
 author: "iamgirishck"
 ---
 

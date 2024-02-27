@@ -3,7 +3,7 @@ title: "Delete profilePhoto"
 description: "Delete the photo for the signed-in user or the specified group."
 ms.localizationpriority: medium
 author: "kristinmcleod"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Input and output HTML on OneNote pages in the OneNote API"
 description: "Learn how to use the principal elements and attributes of input and output HTML when you create or update page content or parse returned page content."
 author: "jewan-microsoft"
 ms.localizationpriority: high
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 # Input and output HTML on OneNote pages

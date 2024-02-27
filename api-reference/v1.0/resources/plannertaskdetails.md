@@ -3,7 +3,7 @@ title: "plannerTaskDetails resource type"
 description: "Represents the additional information about a task. Each task object has a details object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

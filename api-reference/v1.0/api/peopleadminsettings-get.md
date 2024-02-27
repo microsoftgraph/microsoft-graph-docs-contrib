@@ -3,7 +3,7 @@ title: "Get peopleAdminSettings"
 description: "Retrieve the properties and relationships of a peopleAdminSettings object."
 author: "rwaithera"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: apiPageType
 ---
 

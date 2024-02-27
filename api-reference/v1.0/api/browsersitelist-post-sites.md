@@ -3,7 +3,7 @@ title: "Create browserSite"
 description: "Create a new browserSite object in a browserSiteList."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
 ---
 

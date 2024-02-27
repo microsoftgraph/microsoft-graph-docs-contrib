@@ -3,7 +3,7 @@ title: "reports: crossTenantAccessReport"
 description: "Get a report that summarizes access from external IDs to the tenant through Microsoft Entra External ID."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

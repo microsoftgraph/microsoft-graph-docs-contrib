@@ -3,7 +3,7 @@ title: "Json resource type"
 description: "Represents data returned in JSON format"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 author: "ruoyingl"
 ---
 

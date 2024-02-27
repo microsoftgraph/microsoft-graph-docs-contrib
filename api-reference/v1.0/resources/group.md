@@ -4,7 +4,7 @@ description: "Represents a Microsoft Entra group, which can be a Microsoft 365 g
 ms.localizationpriority: high
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 

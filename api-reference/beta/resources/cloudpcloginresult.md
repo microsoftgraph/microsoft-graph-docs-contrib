@@ -3,7 +3,7 @@ title: "cloudPcLoginResult resource type"
 description: "Represents the details of the Cloud PC sign in results."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

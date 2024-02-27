@@ -3,7 +3,7 @@ title: "List branches"
 description: "Retrieve a list of branches within a tenant connected to the Global Secure Access services."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

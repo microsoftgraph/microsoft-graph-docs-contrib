@@ -3,7 +3,7 @@ title: "List microsoftApplicationDataAccessSettings"
 description: "Get the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization."
 author: "ttomi"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 

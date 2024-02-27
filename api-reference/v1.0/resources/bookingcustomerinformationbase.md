@@ -3,7 +3,7 @@ title: "bookingCustomerInformationBase resource type"
 description: "Abstract base type for an appointment's customer information."
 author: "davisjms"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

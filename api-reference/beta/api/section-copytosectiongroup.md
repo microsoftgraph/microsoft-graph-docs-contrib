@@ -3,7 +3,7 @@ title: "section: copyToSectionGroup"
 description: "Copies a section to a specific section group."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 

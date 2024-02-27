@@ -4,7 +4,7 @@ description: "Learn about the supported datasets, Microsoft 365 regions, and sin
 author: "michaelvenables"
 ms.author: "rimisra"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
 #Customer intent: As a data analyst, I want to understand the datasets, regions, and storage locations supported by Microsoft Graph Data Connect, so that I can determine if it meets my data analysis needs.
 ---
 

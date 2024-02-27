@@ -3,7 +3,7 @@ title: "fileStorageContainer resource type"
 description: "Represents a location where multiple users or a group of users can store files and access them via an application."
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: resourcePageType
 ---
 

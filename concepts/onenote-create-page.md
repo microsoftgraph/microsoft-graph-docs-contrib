@@ -3,7 +3,7 @@ title: "Create OneNote pages by using the OneNote API"
 description: "Create a OneNote page by sending a POST request to a pages endpoint. Then send the HTML that defines the page in the message body."
 author: "jewan-microsoft"
 ms.localizationpriority: high
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 # Create OneNote pages

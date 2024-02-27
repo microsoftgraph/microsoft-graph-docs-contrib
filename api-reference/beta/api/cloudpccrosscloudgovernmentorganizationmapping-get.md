@@ -3,7 +3,7 @@ title: "Get cloudPcCrossCloudGovernmentOrganizationMapping"
 description: "Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object."
 author: "GuojMS"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

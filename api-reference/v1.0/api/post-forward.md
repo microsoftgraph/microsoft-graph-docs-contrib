@@ -3,7 +3,7 @@ title: "post: forward"
 description: "Forward a post to a recipient. You can specify both the parent conversation and thread in the request, "
 ms.localizationpriority: medium
 author: "mikemcleanlive"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

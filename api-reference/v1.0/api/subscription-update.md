@@ -3,7 +3,7 @@ title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.prod: "change-notifications"
+ms.subservice: "non-product-specific-change-notifications"
 doc_type: apiPageType
 ---
 

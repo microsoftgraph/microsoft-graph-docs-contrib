@@ -3,7 +3,7 @@ title: "Microsoft Graph Data Connect templates"
 description: "Make use of templates that are available to help you build Microsoft Graph Data Connect solutions."
 author: "rimisra2"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
 ---
 
 # Microsoft Graph Data Connect templates

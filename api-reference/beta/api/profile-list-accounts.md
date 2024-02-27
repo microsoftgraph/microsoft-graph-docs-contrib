@@ -3,7 +3,7 @@ title: "List accounts"
 description: "Retrieve a list of userAccountInformation objects."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "apiPageType"
 ---
 

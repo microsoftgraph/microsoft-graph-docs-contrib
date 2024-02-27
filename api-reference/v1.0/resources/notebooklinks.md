@@ -3,7 +3,7 @@ title: "notebookLinks resource type"
 description: "Links for opening a OneNote notebook."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 

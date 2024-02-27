@@ -3,7 +3,7 @@ title: "List emails"
 description: "Retrieve a list of itemEmail objects."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "apiPageType"
 ---
 

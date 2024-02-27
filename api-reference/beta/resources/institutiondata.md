@@ -3,7 +3,7 @@ title: "institutionData resource type"
 description: "institutionData resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "resourcePageType"
 ---
 

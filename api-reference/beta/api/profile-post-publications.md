@@ -3,7 +3,7 @@ title: "Create publications"
 description: "Create a new publications object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people" 
+ms.subservice: "non-product-specific-people" 
 doc_type: apiPageType
 ---
 

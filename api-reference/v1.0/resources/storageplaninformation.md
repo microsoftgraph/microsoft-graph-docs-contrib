@@ -4,7 +4,7 @@ description: "The storagePlanInformation resource provides information about the
 title: StoragePlanInformation
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "files"
+ms.subservice: "onedrive"
 ---
 # storagePlanInformation resource type
 

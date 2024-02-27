@@ -3,7 +3,7 @@ title: "bookingCustomerBase resource type"
 description: Abstract base type for Bookings customers.
 author: "davisjms"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

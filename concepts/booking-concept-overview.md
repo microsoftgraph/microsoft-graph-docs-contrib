@@ -3,7 +3,7 @@ title: "Microsoft Bookings API overview"
 description: "Microsoft Bookings provides online and mobile apps that make appointment scheduling simple and efficient for organizations and their users and customers."
 author: "arvindmicrosoft"
 ms.localizationpriority: high
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 ms.custom: scenarios:getting-started
 ---
 

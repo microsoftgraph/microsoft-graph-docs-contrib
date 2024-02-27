@@ -3,7 +3,7 @@ title: "personWebsite resource type"
 description: "Represents detailed information about websites associated with a user in various services."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "resourcePageType"
 ---
 

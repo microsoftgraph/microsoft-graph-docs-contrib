@@ -3,7 +3,7 @@ title: "Update webAccount"
 description: "Update the properties of a webAccount object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "apiPageType"
 ---
 

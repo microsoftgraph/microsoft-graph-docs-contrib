@@ -3,7 +3,7 @@ title: "Create addresses"
 description: "Create a new addresses object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: apiPageType
 ---
 

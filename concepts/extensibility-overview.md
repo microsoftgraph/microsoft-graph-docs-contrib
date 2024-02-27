@@ -5,7 +5,7 @@ author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: high
-ms.prod: "extensions"
+ms.subservice: "non-product-specific-extensions"
 ms.topic: overview
 ms.custom: graphiamtop20
 ms.date: 11/29/2023

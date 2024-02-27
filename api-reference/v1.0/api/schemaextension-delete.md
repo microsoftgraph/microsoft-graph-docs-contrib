@@ -3,7 +3,7 @@ title: "Delete schemaExtension"
 description: "Delete the definition of a schema extension."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: "non-product-specific-extensions"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: video resource type
 ms.localizationpriority: medium
 description: "The video resource groups video-related data items into a single structure."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 

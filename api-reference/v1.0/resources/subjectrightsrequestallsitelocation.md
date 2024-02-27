@@ -3,7 +3,7 @@ title: "subjectRightsRequestAllSiteLocation resource type"
 description: "Represents the properties for a subject rights request that defines all sites (SharePoint sites, OneDrive for Business sites, and Microsoft Teams channels) as a search location."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "non-product-specific-compliance"
 doc_type: resourcePageType
 ---
 

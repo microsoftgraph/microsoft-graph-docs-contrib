@@ -4,7 +4,7 @@ description: "A subscription allows a client app to receive change notifications
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: resourcePageType
-ms.prod: "change-notifications"
+ms.subservice: "non-product-specific-change-notifications"
 
 ---
 

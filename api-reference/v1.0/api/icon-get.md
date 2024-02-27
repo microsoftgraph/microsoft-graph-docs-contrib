@@ -3,7 +3,7 @@ title: "Get Icon"
 description: "Retrieve the properties and relationships of icon object."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: apiPageType
 ---
 

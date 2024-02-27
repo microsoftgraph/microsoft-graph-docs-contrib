@@ -3,7 +3,7 @@ title: "cloudPcGalleryImage resource type"
 description: "Represents the gallery image resource of the current organization that can be used to provision a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

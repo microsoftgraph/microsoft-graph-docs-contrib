@@ -3,7 +3,7 @@ title: "profilePhoto resource type"
 description: "Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Microsoft Entra ID."
 ms.localizationpriority: medium
 author: "kristinmcleod"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: resourcePageType
 ---
 

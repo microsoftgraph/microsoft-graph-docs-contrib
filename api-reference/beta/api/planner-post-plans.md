@@ -3,7 +3,7 @@ title: "Create plannerPlan"
 description: "Create a new planner plan."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

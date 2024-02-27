@@ -3,7 +3,7 @@ title: "List cloudPcFrontLineServicePlans"
 description: "Get a list of the cloudPcFrontLineServicePlan objects and their properties."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

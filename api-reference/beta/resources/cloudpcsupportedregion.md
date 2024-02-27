@@ -3,7 +3,7 @@ title: "cloudPcSupportedRegion resource type"
 description: "Represents a supported region to establish an Azure network connection for Cloud PCs."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

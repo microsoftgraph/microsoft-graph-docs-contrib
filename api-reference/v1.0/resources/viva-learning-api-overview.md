@@ -3,7 +3,7 @@ title: "Use the employee learning API to integrate with Viva Learning"
 description: "Learn how to register a provider, and integrate your content and learner records from your learning provider to Viva Learning."
 ms.localizationpriority: medium
 author: "malabikaroy"
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: conceptualPageType
 ---
 

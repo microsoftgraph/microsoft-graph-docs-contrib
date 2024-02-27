@@ -3,7 +3,7 @@ title: "Windows 365 Cloud PC on Microsoft Graph"
 description: "Integrate with Windows 365 Cloud PC to create Azure network connections, provision Cloud PCs, manage device images, and create and assign provisioning policies."
 author: "cohanley"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 ---
 
 # Overview for Windows 365 Cloud PC on Microsoft Graph

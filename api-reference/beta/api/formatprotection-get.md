@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of formatprotection obje
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 ---
 
 # Get formatProtection

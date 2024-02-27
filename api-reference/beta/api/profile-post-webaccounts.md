@@ -3,7 +3,7 @@ title: "Create webAccount"
 description: "Create a new webAccount object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "apiPageType"
 ---
 

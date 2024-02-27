@@ -3,7 +3,7 @@ title: "profileCardProperty resource type"
 description: "Represents an attribute of a user on the Microsoft 365 profile card for an organization to surface in a shared, people experience."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "regionalAndLanguageSettings resource type"
 description: "A resource representing a users regional and language preferences"
 ms.localizationpriority: medium
 author: "jasonbro"
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 doc_type: resourcePageType
 ---
 

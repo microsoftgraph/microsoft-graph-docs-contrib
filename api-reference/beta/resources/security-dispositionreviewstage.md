@@ -3,7 +3,7 @@ title: "dispositionReviewStage resource type"
 description: "Represents a multi-level review process where the reviewers indicate at each stage of the disposition whether to delete or further retain the content item."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "non-product-specific-compliance"
 doc_type: resourcePageType
 ---
 

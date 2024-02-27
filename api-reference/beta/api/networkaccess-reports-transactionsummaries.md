@@ -3,7 +3,7 @@ title: "reports: transactionSummaries"
 description: "Get the total number of transactions and the number of blocked transactions, grouped by traffic type."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

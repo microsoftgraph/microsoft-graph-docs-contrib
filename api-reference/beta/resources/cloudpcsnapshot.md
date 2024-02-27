@@ -3,7 +3,7 @@ title: "cloudPcSnapshot resource type"
 description: "Represents a Cloud PC snapshot."
 author: "xintaozMS"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "businessScenarioProperties resource type"
 description: "Represents scenario metadata for a businessScenarioTask object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update fileStoreContainer permission"
 description: "Update fileStorageContainer permission."
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "referenceDefinition resource type"
 description: "Represents an enumerated reference value."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

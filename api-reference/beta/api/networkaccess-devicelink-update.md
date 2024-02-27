@@ -3,7 +3,7 @@ title: "Update deviceLink"
 description: "Update the device link associated with a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

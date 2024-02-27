@@ -4,7 +4,7 @@ description: "Check for membership in a list of groups, administrative units, or
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 doc_type: "apiPageType"
 ---
 

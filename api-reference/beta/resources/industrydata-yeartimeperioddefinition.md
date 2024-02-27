@@ -3,7 +3,7 @@ title: "yearTimePeriodDefinition resource type"
 description: "Represents annual time periods such as academic or fiscal years."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

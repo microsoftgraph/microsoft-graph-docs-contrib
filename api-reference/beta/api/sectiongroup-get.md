@@ -3,7 +3,7 @@ title: "Get sectionGroup"
 description: "Retrieve the properties and relationships of a sectionGroup object."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update sharepointSettings"
 description: "Update one or more tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 

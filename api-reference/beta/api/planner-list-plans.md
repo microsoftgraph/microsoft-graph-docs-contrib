@@ -3,7 +3,7 @@ title: "List plans"
 description: "Get a list of plannerPlan objects."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "oneNoteIdentity resource type"
 description: "**Support coming soon**"
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 

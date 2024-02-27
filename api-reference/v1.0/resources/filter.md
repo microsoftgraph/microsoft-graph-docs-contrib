@@ -3,7 +3,7 @@ title: "Filter resource type"
 description: "Manages the filtering of a table's column."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: resourcePageType
 ---
 

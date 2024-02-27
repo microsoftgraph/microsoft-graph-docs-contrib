@@ -3,7 +3,7 @@ title: "Get itemPublication"
 description: "Read the properties and relationships of an itemPublication object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: apiPageType
 ---
 

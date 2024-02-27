@@ -3,7 +3,7 @@ title: "Get section"
 description: "Retrieve the properties and relationships of a onenoteSection object."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 

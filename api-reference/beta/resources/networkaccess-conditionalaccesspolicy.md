@@ -3,7 +3,7 @@ title: "conditionalAccessPolicy resource type"
 description: "represents the configuration and settings of a conditional access policy within a network infrastructure, which determines the access control rules and conditions for network traffic filtering."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

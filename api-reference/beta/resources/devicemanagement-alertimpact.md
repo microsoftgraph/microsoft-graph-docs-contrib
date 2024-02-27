@@ -3,7 +3,7 @@ title: "alertImpact resource type"
 description: "Represents the impact of an alert event."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

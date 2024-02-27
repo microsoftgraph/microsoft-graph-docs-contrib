@@ -2,7 +2,7 @@
 title: "visualInfo resource type"
 description: "A complex type for representing the **visualElements** property in the activity object."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 author: "ailae"
 doc_type: resourcePageType
 ---

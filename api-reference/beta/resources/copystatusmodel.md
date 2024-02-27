@@ -3,7 +3,7 @@ title: "copyStatusModel resource type"
 description: "Here's a JSON representation of the copyStatusModel resource."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: non-product-specific
+ms.subservice: non-product-specific
 author: "MSGraphDocsVteam"
 ---
 

@@ -3,7 +3,7 @@ title: "organizationSettings resource type"
 description: "Contains settings that are applicable to the organization or the user objects within it."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "resourcePageType"
 ---
 

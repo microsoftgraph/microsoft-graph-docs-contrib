@@ -3,7 +3,7 @@ title: "pronounsSettings resource type"
 description: "Represents the settings that manage the support of pronouns in an organization."
 author: "aymen-ms"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: resourcePageType
 ---
 

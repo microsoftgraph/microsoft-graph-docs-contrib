@@ -3,7 +3,7 @@ title: "cloudPcWindowsSetting resource type"
 description: "Represents a specific Windows setting to configure during the creation of Cloud PCs for a provisioning policy."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

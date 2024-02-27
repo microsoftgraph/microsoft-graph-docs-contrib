@@ -3,7 +3,7 @@ title: "personType resource type"
 description: "Represents the type of person."
 ms.localizationpriority: medium
 author: "simonhult"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 

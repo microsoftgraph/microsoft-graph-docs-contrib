@@ -4,7 +4,7 @@ description: "Get itemActivityStats for the activities that took place under thi
 title: Get item activity stats by interval
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "files"
+ms.subservice: "onedrive"
 ---
 # Get item activity stats by interval
 

@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: VersionAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # VersionAction resource type

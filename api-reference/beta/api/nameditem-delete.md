@@ -3,7 +3,7 @@ title: "Delete namedItem"
 description: Delete a workbookNamedItem object
 author: isvargasmsft
 ms.localizationpriority: medium
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: apiPageType
 ---
 

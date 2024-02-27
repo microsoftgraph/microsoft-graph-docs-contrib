@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph subject rights request API"
 description: "The subject rights request API provides functionality for organizations to automate repetitive tasks and integrate with their existing subject rights request tools to build repeatable workflows that can help meet industry regulations."
 ms.localizationpriority: medium
 author: "skadam-msft"
-ms.prod: "compliance"
+ms.subservice: "non-product-specific-compliance"
 doc_type: conceptualPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update projectParticipation resource type"
 description: "Update the properties of a projectParticipation object in a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "apiPageType"
 ---
 

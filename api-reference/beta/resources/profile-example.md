@@ -3,7 +3,7 @@ title: "Use the Profile API in Microsoft Graph to retrieve information about a g
 description: "Microsoft Graph applications can use the Profile API to retrieve the profile of another user. "
 author: "kevinbellinger"
 ms.localizationpriority: high
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "conceptualPageType"
 ---
 

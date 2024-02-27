@@ -3,7 +3,7 @@ title: "tenantContactInformation resource type"
 description: "Represents a contact at a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

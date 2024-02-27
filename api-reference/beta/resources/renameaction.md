@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: RenameAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # RenameAction resource type

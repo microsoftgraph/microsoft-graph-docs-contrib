@@ -3,7 +3,7 @@ title: "Delete learningProvider"
 description: "Delete a learningProvider resource and remove its registration in Viva Learning for a tenant."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 

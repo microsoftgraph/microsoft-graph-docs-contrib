@@ -3,7 +3,7 @@ title: "Update subjectRightsRequest"
 description: "Update the properties of a subjectRightsRequest object."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "non-product-specific-compliance"
 doc_type: apiPageType
 ---
 

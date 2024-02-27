@@ -3,7 +3,7 @@ title: "alertRule resource type"
 description: "Represents the rules that IT administrators can configure to trigger alerts."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

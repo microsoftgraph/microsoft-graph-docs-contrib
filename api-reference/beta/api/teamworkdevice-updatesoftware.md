@@ -3,7 +3,7 @@ title: "teamworkDevice: updateSoftware"
 description: "Update the software for a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

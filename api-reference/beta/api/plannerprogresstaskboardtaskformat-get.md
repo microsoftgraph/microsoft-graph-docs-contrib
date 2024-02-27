@@ -3,7 +3,7 @@ title: "Get plannerProgressTaskBoardTaskFormat"
 description: "Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

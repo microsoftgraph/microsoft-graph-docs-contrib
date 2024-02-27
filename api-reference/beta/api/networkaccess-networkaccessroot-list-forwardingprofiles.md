@@ -3,7 +3,7 @@ title: "List forwardingProfiles"
 description: "Retrieve a list of forwarding profiles."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

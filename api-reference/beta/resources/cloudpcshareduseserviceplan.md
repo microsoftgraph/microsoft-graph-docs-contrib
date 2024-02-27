@@ -3,7 +3,7 @@ title: "cloudPcSharedUseServicePlan resource type (deprecated)"
 description: "Represents a shared-use service plan available for use by up to three Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

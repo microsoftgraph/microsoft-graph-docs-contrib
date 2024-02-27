@@ -3,7 +3,7 @@ title: "Create browserSiteList"
 description: "Create a new browserSiteList object to support Internet Explorer mode."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
 ---
 

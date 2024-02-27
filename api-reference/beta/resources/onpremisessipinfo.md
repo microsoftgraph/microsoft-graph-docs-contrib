@@ -3,7 +3,7 @@ title: "onPremisesSipInfo resource type"
 description: "onPremisesSipInfo resource type"
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Microsoft Graph Data Connect overview"
 description: "Use Microsoft Graph Data Connect to access Microsoft 365 bulk data at scale, enable granular consent, and provide data security and governance."
 author: "rimisra2"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
 ms.custom: scenarios:getting-started
 ---
 

@@ -3,7 +3,7 @@ title: "List tasks"
 description: "Retrieve a list of plannerTask objects associated to a plannerBucket object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

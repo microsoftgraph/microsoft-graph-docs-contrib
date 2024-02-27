@@ -2,7 +2,7 @@
 title: "Cross-device experiences in Microsoft Graph"
 description: "Use Microsoft Graph to access the activities and devices that belong to your customers and enable rich human-centric experiences that cross devices and platforms."
 ms.localizationpriority: high
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 ms.custom: scenarios:getting-started
 ---
 

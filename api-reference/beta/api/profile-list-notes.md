@@ -3,7 +3,7 @@ title: "List notes"
 description: "Get the personAnnotations from the notes navigation property."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: apiPageType
 ---
 

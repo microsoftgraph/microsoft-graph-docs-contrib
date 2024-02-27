@@ -3,7 +3,7 @@ title: "filteringPolicy resource type"
 description: "Defines the specific traffic that is allowed or blocked through the Global Secure Access services for a filtering profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

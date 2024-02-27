@@ -3,7 +3,7 @@ title: "locationConstraint resource type"
 description: "The conditions stated by a client for the location of a meeting."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: calendar
+ms.subservice: calendar
 doc_type: resourcePageType
 ---
 

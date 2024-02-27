@@ -3,7 +3,7 @@ title: "List tenantUsage"
 description: "Get a list of the tenantUsage objects and their properties."
 author: "kylewirpel"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get cloudPcAuditEvent"
 description: "Read the properties and relationships of a cloudPcAuditEvent object."
 author: "ecmadao"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

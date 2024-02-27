@@ -3,7 +3,7 @@ title: "Get profileCardProperty"
 description: "Retrieve the properties of a profileCardProperty entity."
 ms.localizationpriority: medium
 author: "rwaithera"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "apiPageType"
 ---
 

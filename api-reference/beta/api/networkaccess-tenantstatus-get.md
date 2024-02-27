@@ -3,7 +3,7 @@ title: "Get tenantStatus"
 description: "Retrieve the onboarding status of a specific tenant."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

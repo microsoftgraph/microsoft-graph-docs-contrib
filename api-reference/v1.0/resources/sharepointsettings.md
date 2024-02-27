@@ -3,7 +3,7 @@ title: "sharepointSettings resource type"
 description: "Represents the tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: "resourcePageType"
 ---
 

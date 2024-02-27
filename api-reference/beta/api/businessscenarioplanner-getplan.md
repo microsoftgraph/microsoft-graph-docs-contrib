@@ -3,7 +3,7 @@ title: "businessScenarioPlanner: getPlan"
 description: "Get information about the plannerPlan mapped to a given target."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 

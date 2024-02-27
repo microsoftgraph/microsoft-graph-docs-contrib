@@ -3,7 +3,7 @@ title: "Network Access enum values"
 description: "Microsoft Graph Network Access enumeration values"
 author: "moti-ba"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 doc_type: enumTypes
 ---
 

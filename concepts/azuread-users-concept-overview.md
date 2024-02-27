@@ -5,7 +5,7 @@ author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: yuan.karppanen
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 ms.custom: scenarios:getting-started
 ms.date: 12/28/2023
 #customer intent: As a developer, I want to understand how to build user-centric apps that call Microsoft Graph.

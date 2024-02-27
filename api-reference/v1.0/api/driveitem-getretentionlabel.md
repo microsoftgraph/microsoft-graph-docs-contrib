@@ -3,7 +3,7 @@ title: "driveItem: getRetentionLabel"
 description: "Get metadata information for a retention label applied on a driveItem."
 author: "kyracatwork"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 

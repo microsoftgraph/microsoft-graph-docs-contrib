@@ -3,7 +3,7 @@ title: "eventPropagationResult resource type"
 description: "Represents the success status of a created event and additional information about the scoped locations."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "non-product-specific-compliance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete conversationThread"
 description: "Delete conversationThread."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

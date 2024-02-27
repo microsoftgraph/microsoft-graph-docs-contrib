@@ -3,7 +3,7 @@ title: "Add custom data to groups using schema extensions"
 description: "Learn how to register a schema extension definition, extend a group with the schema extension, and update custom data in the schema extension for the group."
 author: FaithOmbongi
 ms.reviewer: dkershaw
-ms.prod: "extensions"
+ms.subservice: "non-product-specific-extensions"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.topic: tutorial

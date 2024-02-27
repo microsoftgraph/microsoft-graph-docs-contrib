@@ -3,7 +3,7 @@ title: "plannerTask resource type"
 description: "Represents a Planner task in Microsoft 365."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

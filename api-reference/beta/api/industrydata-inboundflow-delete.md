@@ -3,7 +3,7 @@ title: "Delete inboundFlow"
 description: "Delete an inboundFlow object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

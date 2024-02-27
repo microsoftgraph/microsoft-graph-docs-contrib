@@ -3,7 +3,7 @@ title: "plannerTaskConfigurationRoleBase resource type"
 description: "An abstract type that represents a role that a plannerTaskRoleBasedRule can be applied to."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

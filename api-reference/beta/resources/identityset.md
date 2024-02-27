@@ -4,7 +4,7 @@ description: "Represents a keyed collection of identity resources."
 title: "identitySet resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
+ms.subservice: "non-product-specific-users"
 ---
 # identitySet resource type
 

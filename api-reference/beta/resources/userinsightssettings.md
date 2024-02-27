@@ -3,7 +3,7 @@ title: "userInsightsSettings resource type"
 description: "Represents user privacy settings for item insights and meeting hours insights."
 ms.localizationpriority: medium
 author: "simonhult"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 

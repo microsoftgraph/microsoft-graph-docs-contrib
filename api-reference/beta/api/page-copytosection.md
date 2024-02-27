@@ -3,7 +3,7 @@ title: "page: copyToSection"
 description: "Copy a page to a specific section."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 

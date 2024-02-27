@@ -4,7 +4,7 @@ description: "Delete a subscription."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: apiPageType
-ms.prod: "change-notifications"
+ms.subservice: "non-product-specific-change-notifications"
 ---
 
 # Delete subscription

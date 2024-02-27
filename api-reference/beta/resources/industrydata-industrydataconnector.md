@@ -3,7 +3,7 @@ title: "industryDataConnector resource type"
 description: "Represents an abstract type that provides the resources to establish a connection with a data source."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

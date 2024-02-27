@@ -3,7 +3,7 @@ title: "cloudPcOverview resource type"
 description: "Represents an overview of cloud PCs for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

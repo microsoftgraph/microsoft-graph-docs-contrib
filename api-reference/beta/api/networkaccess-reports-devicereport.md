@@ -3,7 +3,7 @@ title: "reports: deviceReport"
 description: "Provide a report of all devices with network traffic that the Global Secure Access services captured."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "website resource type"
 description: "Represents a web site."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
+ms.subservice: mail
 author: "AAmatino"
 ---
 

@@ -3,7 +3,7 @@ title: "alertRecord resource type"
 description: "Represents the record of an alert event triggered by a rule."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

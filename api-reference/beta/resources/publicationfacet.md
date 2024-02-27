@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: PublicationFacet
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 # PublicationFacet resource type
 

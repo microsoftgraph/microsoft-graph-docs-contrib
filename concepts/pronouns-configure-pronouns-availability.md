@@ -3,7 +3,7 @@ title: "Manage pronouns settings for an organization using the Microsoft Graph A
 description: "Learn how to use Microsoft Graph APIs to enable, disable, or get settings that manage pronouns in an organization."
 author: "aymen-ms"
 ms.localizationpriority: high
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 ms.custom: scenarios:getting-started
 ---
 

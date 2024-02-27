@@ -3,7 +3,7 @@ title: "Delete webAccount"
 description: "Delete a webAccount object from a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "non-product-specific-people"
 doc_type: "apiPageType"
 ---
 

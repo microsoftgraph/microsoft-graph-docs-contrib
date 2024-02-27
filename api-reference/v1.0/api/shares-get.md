@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: Access shared items
 ms.localizationpriority: medium
 description: "Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: apiPageType
 ---
 # Accessing shared DriveItems

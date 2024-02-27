@@ -3,7 +3,7 @@ title: "List aggregatedPolicyCompliances"
 description: "Get a list of the aggregatedPolicyCompliance objects and their properties."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 

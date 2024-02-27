@@ -3,7 +3,7 @@ title: "ipSubnet resource type"
 description: "An IP subnet is a portion of an IP network that shares a common network prefix. "
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

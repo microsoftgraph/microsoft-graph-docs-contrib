@@ -3,7 +3,7 @@ title: "Get teamworkDeviceHealth"
 description: "Get the health details of a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

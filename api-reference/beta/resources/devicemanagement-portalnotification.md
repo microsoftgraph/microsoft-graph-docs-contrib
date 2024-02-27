@@ -3,7 +3,7 @@ title: "portalNotification resource type"
 description: "Represents the portal notification associated with the alert record of a user."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

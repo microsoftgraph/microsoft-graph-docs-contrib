@@ -3,7 +3,7 @@ title: "List plannerRosterMembers"
 description: "Get the plannerRosterMember resources from the members navigation property."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

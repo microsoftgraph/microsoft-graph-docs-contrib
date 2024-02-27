@@ -3,7 +3,7 @@ title: "plannerRelationshipBasedUserType resource type"
 description: "Represents a role based on the caller's relationship to the businessScenarioTask that a plannerTaskRoleBasedRule can be applied to."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 
