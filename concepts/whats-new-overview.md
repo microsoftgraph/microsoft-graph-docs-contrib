@@ -11,7 +11,7 @@ Microsoft Graph provides a unified programmability model that you can use to acc
 
 For more detailed API-level updates, see the [Microsoft Graph API changelog](https://developer.microsoft.com/graph/changelog/).
 
-For details about previous updates to Microsoft Graph, see [Microsoft Graph what's new history](whats-new-earlier.md). 
+For details about previous updates to Microsoft Graph, see [Microsoft Graph what's new history](whats-new-earlier.md).
 
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Do not use preview features in production apps.
