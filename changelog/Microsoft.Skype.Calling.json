@@ -25,7 +25,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "chatRestrictions",
           "ChangeType": "Addition",
-          "Description": "Added the `chatRestrictions` property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **chatrestrictions** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         }
       ],
