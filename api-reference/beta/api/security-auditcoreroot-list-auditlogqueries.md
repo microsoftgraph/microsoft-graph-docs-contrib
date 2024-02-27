@@ -38,7 +38,7 @@ Auditing data can be accessed through Microsoft Purview Audit Search API via the
 }
 -->
 ``` http
-GET /security/auditCore/auditLogQueries
+GET /security/auditLog/queries
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/auditCore/auditLogQueries
+GET https://graph.microsoft.com/beta/security/auditLog/queries
 ```
 
 

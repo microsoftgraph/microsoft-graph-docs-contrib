@@ -65,11 +65,8 @@ Content-type: application/json
 
 {
     "definition": [
-    "{\"HomeRealmDiscoveryPolicy\":
-     {\"AccelerateToFederatedDomain\":true,
-      \"PreferredDomain\":\"federated.example.edu\",
-      \"AlternateIdLogin\":{\"Enabled\":true}}}"
-  ],
+      "{\"HomeRealmDiscoveryPolicy\":{\"AccelerateToFederatedDomain\":true,\"PreferredDomain\":\"federated.example.edu\",\"AlternateIdLogin\":{\"Enabled\":true}}}"
+    ],
     "displayName": "displayName-value",
     "isOrganizationDefault": true
 }
