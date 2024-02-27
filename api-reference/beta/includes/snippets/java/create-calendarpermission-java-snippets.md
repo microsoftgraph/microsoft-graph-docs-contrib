@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CalendarPermission calendarPermission = new CalendarPermission();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.name = "Samantha Booth";
-emailAddress.address = "samanthab@adatum.onmicrosoft.com";
-calendarPermission.emailAddress = emailAddress;
-calendarPermission.isInsideOrganization = true;
-calendarPermission.isRemovable = true;
-calendarPermission.role = CalendarRoleType.READ;
+emailAddress.setName("Samantha Booth");
+emailAddress.setAddress("samanthab@contoso.com");
+calendarPermission.setEmailAddress(emailAddress);
+calendarPermission.setIsInsideOrganization(true);
+calendarPermission.setIsRemovable(true);
+calendarPermission.setRole(CalendarRoleType.Read);
+CalendarPermission result = graphClient.users().byUserId("{user-id}").calendar().calendarPermissions().post(calendarPermission);
 
-graphClient.users("458d4c95-124e-49da-ba9d-1dd0387e682e").calendar().calendarPermissions()
-	.buildRequest()
-	.post(calendarPermission);
 
 ```

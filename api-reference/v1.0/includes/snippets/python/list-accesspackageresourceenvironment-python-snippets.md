@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.identityGovernance.entitlementManagement.resourceEnvironments.resource_environments_request_builder import ResourceEnvironmentsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

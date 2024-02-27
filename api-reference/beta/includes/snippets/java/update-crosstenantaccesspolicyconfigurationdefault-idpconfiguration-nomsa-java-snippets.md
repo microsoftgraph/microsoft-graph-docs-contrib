@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CrossTenantAccessPolicyConfigurationDefault crossTenantAccessPolicyConfigurationDefault = new CrossTenantAccessPolicyConfigurationDefault();
 DefaultInvitationRedemptionIdentityProviderConfiguration invitationRedemptionIdentityProviderConfiguration = new DefaultInvitationRedemptionIdentityProviderConfiguration();
-LinkedList<B2bIdentityProvidersType> primaryIdentityProviderPrecedenceOrderList = new LinkedList<B2bIdentityProvidersType>();
-primaryIdentityProviderPrecedenceOrderList.add(B2bIdentityProvidersType.EXTERNAL_FEDERATION);
-primaryIdentityProviderPrecedenceOrderList.add(B2bIdentityProvidersType.AZURE_ACTIVE_DIRECTORY);
-primaryIdentityProviderPrecedenceOrderList.add(B2bIdentityProvidersType.SOCIAL_IDENTITY_PROVIDERS);
-invitationRedemptionIdentityProviderConfiguration.primaryIdentityProviderPrecedenceOrder = primaryIdentityProviderPrecedenceOrderList;
-invitationRedemptionIdentityProviderConfiguration.fallbackIdentityProvider = B2bIdentityProvidersType.EMAIL_ONE_TIME_PASSCODE;
-crossTenantAccessPolicyConfigurationDefault.invitationRedemptionIdentityProviderConfiguration = invitationRedemptionIdentityProviderConfiguration;
+LinkedList<B2bIdentityProvidersType> primaryIdentityProviderPrecedenceOrder = new LinkedList<B2bIdentityProvidersType>();
+primaryIdentityProviderPrecedenceOrder.add(B2bIdentityProvidersType.ExternalFederation);
+primaryIdentityProviderPrecedenceOrder.add(B2bIdentityProvidersType.AzureActiveDirectory);
+primaryIdentityProviderPrecedenceOrder.add(B2bIdentityProvidersType.SocialIdentityProviders);
+invitationRedemptionIdentityProviderConfiguration.setPrimaryIdentityProviderPrecedenceOrder(primaryIdentityProviderPrecedenceOrder);
+invitationRedemptionIdentityProviderConfiguration.setFallbackIdentityProvider(B2bIdentityProvidersType.EmailOneTimePasscode);
+crossTenantAccessPolicyConfigurationDefault.setInvitationRedemptionIdentityProviderConfiguration(invitationRedemptionIdentityProviderConfiguration);
+CrossTenantAccessPolicyConfigurationDefault result = graphClient.policies().crossTenantAccessPolicy().defaultEscaped().patch(crossTenantAccessPolicyConfigurationDefault);
 
-graphClient.policies().crossTenantAccessPolicy().default()
-	.buildRequest()
-	.patch(crossTenantAccessPolicyConfigurationDefault);
 
 ```

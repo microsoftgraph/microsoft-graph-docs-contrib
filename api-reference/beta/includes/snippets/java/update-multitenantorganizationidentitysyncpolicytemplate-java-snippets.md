@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MultiTenantOrganizationIdentitySyncPolicyTemplate multiTenantOrganizationIdentitySyncPolicyTemplate = new MultiTenantOrganizationIdentitySyncPolicyTemplate();
-multiTenantOrganizationIdentitySyncPolicyTemplate.templateApplicationLevel = EnumSet.of(TemplateApplicationLevel.NEW_PARTNERS,TemplateApplicationLevel.EXISTING_PARTNERS);
+multiTenantOrganizationIdentitySyncPolicyTemplate.setTemplateApplicationLevel(EnumSet.of(TemplateApplicationLevel.NewPartners, TemplateApplicationLevel.ExistingPartners));
 CrossTenantUserSyncInbound userSyncInbound = new CrossTenantUserSyncInbound();
-userSyncInbound.isSyncAllowed = true;
-multiTenantOrganizationIdentitySyncPolicyTemplate.userSyncInbound = userSyncInbound;
+userSyncInbound.setIsSyncAllowed(true);
+multiTenantOrganizationIdentitySyncPolicyTemplate.setUserSyncInbound(userSyncInbound);
+MultiTenantOrganizationIdentitySyncPolicyTemplate result = graphClient.policies().crossTenantAccessPolicy().templates().multiTenantOrganizationIdentitySynchronization().patch(multiTenantOrganizationIdentitySyncPolicyTemplate);
 
-graphClient.policies().crossTenantAccessPolicy().templates().multiTenantOrganizationIdentitySynchronization()
-	.buildRequest()
-	.patch(multiTenantOrganizationIdentitySyncPolicyTemplate);
 
 ```

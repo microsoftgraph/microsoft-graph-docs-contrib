@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.roleManagement.directory.roleAssignmentScheduleRequests.role_assignment_schedule_requests_request_builder import RoleAssignmentScheduleRequestsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

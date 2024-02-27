@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PrintTask printTask = new PrintTask();
 PrintTaskStatus status = new PrintTaskStatus();
-status.state = PrintTaskProcessingState.COMPLETED;
-status.description = "completed";
-printTask.status = status;
+status.setState(PrintTaskProcessingState.Completed);
+status.setDescription("completed");
+printTask.setStatus(status);
+PrintTask result = graphClient.print().taskDefinitions().byPrintTaskDefinitionId("{printTaskDefinition-id}").tasks().byPrintTaskId("{printTask-id}").patch(printTask);
 
-graphClient.print().taskDefinitions("{taskDefinitionId}").tasks("{taskId}")
-	.buildRequest()
-	.patch(printTask);
 
 ```

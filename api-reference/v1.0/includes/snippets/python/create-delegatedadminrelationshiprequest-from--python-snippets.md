@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.delegated_admin_relationship_request import DelegatedAdminRelationshipRequest
 
 graph_client = GraphServiceClient(credentials, scopes)
 

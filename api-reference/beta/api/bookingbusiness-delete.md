@@ -49,10 +49,10 @@ Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_bookingbusiness",
-  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
+DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/fabrikam@contoso.com
 ```
 
 # [C#](#tab/csharp)
@@ -77,10 +77,6 @@ DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/fabrikam@con
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-bookingbusiness-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingbusiness-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

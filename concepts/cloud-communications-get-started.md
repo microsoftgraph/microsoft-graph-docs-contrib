@@ -65,6 +65,6 @@ For more examples, see the [Communications samples repository](https://microsoft
 
 In the requests to our APIs, sensitive data shouldn't be sent in client-side generated IDs (such as scenario IDs, request IDs, or other correlation IDs) in headers or the request body. These IDs are logged on the server side for diagnostics.
 
-## See also
+## Related content
 
 - [Teams API overview](teams-concept-overview.md)

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TeamworkTagMember teamworkTagMember = new TeamworkTagMember();
-teamworkTagMember.userId = "97f62344-57dc-409c-88ad-c4af14158ff5";
+teamworkTagMember.setUserId("97f62344-57dc-409c-88ad-c4af14158ff5");
+TeamworkTagMember result = graphClient.teams().byTeamId("{team-id}").tags().byTeamworkTagId("{teamworkTag-id}").members().post(teamworkTagMember);
 
-graphClient.teams("53c53217-fe77-4383-bc5a-ed4937a1aecd").tags("MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==").members()
-	.buildRequest()
-	.post(teamworkTagMember);
 
 ```

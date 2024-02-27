@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const unifiedGroupSource = {
     group: {
-        mail: 'SOCTeam@M365x809305.onmicrosoft.com'
+        mail: 'SOCTeam@contoso.com'
     },
     includedSources: 'mailbox, site'
 };

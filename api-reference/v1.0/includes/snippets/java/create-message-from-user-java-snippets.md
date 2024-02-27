@@ -4,25 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Message message = new Message();
-message.subject = "Did you see last night's game?";
-message.importance = Importance.LOW;
+message.setSubject("Did you see last night's game?");
+message.setImportance(Importance.Low);
 ItemBody body = new ItemBody();
-body.contentType = BodyType.HTML;
-body.content = "They were <b>awesome</b>!";
-message.body = body;
-LinkedList<Recipient> toRecipientsList = new LinkedList<Recipient>();
-Recipient toRecipients = new Recipient();
+body.setContentType(BodyType.Html);
+body.setContent("They were <b>awesome</b>!");
+message.setBody(body);
+LinkedList<Recipient> toRecipients = new LinkedList<Recipient>();
+Recipient recipient = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.address = "AdeleV@contoso.onmicrosoft.com";
-toRecipients.emailAddress = emailAddress;
-toRecipientsList.add(toRecipients);
-message.toRecipients = toRecipientsList;
+emailAddress.setAddress("AdeleV@contoso.com");
+recipient.setEmailAddress(emailAddress);
+toRecipients.add(recipient);
+message.setToRecipients(toRecipients);
+Message result = graphClient.me().messages().post(message);
 
-graphClient.me().messages()
-	.buildRequest()
-	.post(message);
 
 ```

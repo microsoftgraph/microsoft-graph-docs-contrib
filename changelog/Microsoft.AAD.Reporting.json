@@ -2095,7 +2095,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "relyingPartyDetailedSummary,listing",
           "ChangeType": "Addition",
-          "Description": "Added a new resource type [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta). This resource type supports [listing](https://learn.microsoft.com/en-us/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) the relying parties configured in Active Directory Federation Services.",
+          "Description": "Added a new resource type [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta). This resource type supports [listing](https://learn.microsoft.com/en-us/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-beta) the relying parties configured in Active Directory Federation Services.",
           "Target": "relyingPartyDetailedSummary,listing"
         }
       ],
@@ -3051,6 +3051,24 @@
     {
       "ChangeList": [
         {
+          "Id": "50d9727a-7a50-4c7f-aa93-6dfd4cafda1b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activeUsersBreakdownMetric",
+          "ChangeType": "Deprecation",
+          "Description": "The [activeUsersBreakdownMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeUsersBreakdownMetric?view=graph-rest-beta) resource and its associated methods is deprecated and will stop returning data on March 9, 2024. Use the existing [activeUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeusersmetric?view=graph-rest-beta) resource type instead.",
+          "Target": "activeUsersBreakdownMetric"
+        }
+      ],
+      "Id": "50d9727a-7a50-4c7f-aa93-6dfd4cafda1b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-21T00:00:00.1569988Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
           "ApiChange": "Resource",
           "ChangedApiName": "serviceActivityValueMetric",
@@ -3120,6 +3138,40 @@
       "Version": "beta",
       "CreatedDateTime": "2023-10-24T19:42:37.8361251Z",
       "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+          "ApiChange": "Member",
+          "ChangedApiName": "aadGraphDeprecationApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the `aadGraphDeprecationApplication` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        },
+        {
+          "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+          "ApiChange": "Member",
+          "ChangedApiName": "aadGraphDeprecationServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the `aadGraphDeprecationServicePrincipal` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        },
+        {
+          "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+          "ApiChange": "Member",
+          "ChangedApiName": "mfaServerDeprecation",
+          "ChangeType": "Addition",
+          "Description": "Added the `mfaServerDeprecation` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        }
+      ],
+      "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-23T18:25:58.892085Z",
+      "WorkloadArea": "Reports and audit",
       "SubArea": "Identity and access reports"
     }
   ]
