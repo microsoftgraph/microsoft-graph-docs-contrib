@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.compliance.ediscovery.cases.item.sourceCollections.item.source_collection_item_request_builder import SourceCollectionItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = SourceCollectionRequestBuilder.SourceCollectionRequestBuilderGetQueryParameters(
+query_params = SourceCollectionItemRequestBuilder.SourceCollectionItemRequestBuilderGetQueryParameters(
 		expand = ["addToReviewSetOperation","custodianSources","lastEstimateStatisticsOperation"],
 )
 
-request_configuration = SourceCollectionRequestBuilder.SourceCollectionRequestBuilderGetRequestConfiguration(
+request_configuration = SourceCollectionItemRequestBuilder.SourceCollectionItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

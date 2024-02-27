@@ -17,13 +17,10 @@ Add custodian [dataSource](../resources/ediscovery-datasource.md) objects to a s
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "ediscovery_sourcecollection_post_custodiansources" } -->
+[!INCLUDE [permissions-table](../includes/permissions/ediscovery-sourcecollection-post-custodiansources-permissions.md)]
 
 ## HTTP request
 
@@ -40,14 +37,14 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
 
 In the request body, supply a JSON representation of the [dataSource](../resources/ediscovery-datasource.md) object.
 
-The following table shows the properties that are required when you create the [dataSource](../resources/ediscovery-datasource.md).
+The following table lists the properties that are required when you create the [dataSource](../resources/ediscovery-datasource.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -77,10 +74,6 @@ Content-Type: application/json
   "@odata.id":"https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/custodians/ab3a628a383045eba344b3caecba3104/userSources/31423539-3846-4333-4136-353644383531"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-datasource-from--2-javascript-snippets.md)]

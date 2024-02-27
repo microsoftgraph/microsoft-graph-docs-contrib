@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.open_id_connect_identity_provider import OpenIdConnectIdentityProvider
+from msgraph.generated.models.claims_mapping import ClaimsMapping
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = OpenIdConnectIdentityProvider(
 	odata_type = "microsoft.graph.openIdConnectIdentityProvider",
@@ -27,7 +29,7 @@ request_body = OpenIdConnectIdentityProvider(
 	scope = "openid",
 )
 
-result = await graph_client.identity.identity_providers.post(body = request_body)
+result = await graph_client.identity.identity_providers.post(request_body)
 
 
 ```

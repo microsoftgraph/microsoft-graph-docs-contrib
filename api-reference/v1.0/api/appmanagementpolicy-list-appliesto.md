@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 List application and service principal objects that are assigned an [appManagementPolicy](../resources/appManagementPolicy.md) policy object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Application.Read.All and Policy.Read.All, Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported.                                                                                               |
 | Application                            | Application.Read.All and Policy.Read.All, Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
+
+[!INCLUDE [rbac-app-auth-method-policy-api-get](../includes/rbac-for-apis/rbac-app-auth-method-policy-api-get.md)]
 
 ## HTTP request
 
@@ -48,11 +50,11 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -114,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}/applies
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

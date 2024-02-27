@@ -1,6 +1,6 @@
 ---
 title: "Overview of custom security attributes using the Microsoft Graph API"
-description: "Learn how to programmatically define your own custom security attributes and assign them to Azure Active Directory (Azure AD) objects using the Microsoft Graph API."
+description: "Learn how to programmatically define your own custom security attributes and assign them to Microsoft Entra objects using the Microsoft Graph API."
 author: "CecilyK"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,7 +10,7 @@ ms.date: 04/11/2023
 
 # Overview of custom security attributes using the Microsoft Graph API
 
-[Custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects. You can use these attributes to store information, categorize objects, or enforce fine-grained access control over specific Azure resources. Custom security attributes can be used with [Azure attribute-based access control (Azure ABAC)](/azure/role-based-access-control/conditions-overview).
+[Custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) in Microsoft Entra ID are business-specific attributes (key-value pairs) that you can define and assign to Microsoft Entra objects. You can use these attributes to store information, categorize objects, or enforce fine-grained access control over specific Azure resources. Custom security attributes can be used with [Azure attribute-based access control (Azure ABAC)](/azure/role-based-access-control/conditions-overview).
 
 This article provides an overview of how to use the Microsoft Graph API to programmatically define and assign your own custom security attributes.
 
@@ -64,21 +64,17 @@ For a list of the limits and constraints for custom security attributes, see [Li
 
 ## Permissions
 
-To manage custom security attributes, the calling principal must be assigned one of the following Azure AD roles. By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
+To manage custom security attributes, the calling principal must be assigned one of the following Microsoft Entra roles. By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
-+ [Attribute Definition Reader](/azure/active-directory/roles/permissions-reference#attribute-definition-reader)
-+ [Attribute Definition Administrator](/azure/active-directory/roles/permissions-reference#attribute-definition-administrator)
-+ [Attribute Assignment Reader](/azure/active-directory/roles/permissions-reference#attribute-assignment-reader)
-+ [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference#attribute-assignment-administrator)
++ [Attribute Definition Reader](/entra/identity/role-based-access-control/permissions-reference#attribute-definition-reader)
++ [Attribute Definition Administrator](/entra/identity/role-based-access-control/permissions-reference#attribute-definition-administrator)
++ [Attribute Assignment Reader](/entra/identity/role-based-access-control/permissions-reference#attribute-assignment-reader)
++ [Attribute Assignment Administrator](/entra/identity/role-based-access-control/permissions-reference#attribute-assignment-administrator)
 
 Also, the calling principal must be granted the appropriate [custom security attributes permissions](/graph/permissions-reference#custom-security-attributes-permissions).
-
-## License requirements
-
-Using custom security attributes requires an Azure AD Premium P1 or P2 license.
 
 ## Next steps
 
 + [customSecurityAttributeDefinition resource type](/graph/api/resources/customsecurityattributedefinition)
 + [Examples: Assign, update, list, or remove custom security attribute assignments using the Microsoft Graph API](/graph/custom-security-attributes-examples)
-+ [What are custom security attributes in Azure AD?](/azure/active-directory/fundamentals/custom-security-attributes-overview)
++ [What are custom security attributes in Microsoft Entra ID?](/azure/active-directory/fundamentals/custom-security-attributes-overview)

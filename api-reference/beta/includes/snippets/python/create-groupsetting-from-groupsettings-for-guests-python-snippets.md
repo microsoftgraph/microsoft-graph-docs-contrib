@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.directory_setting import DirectorySetting
+from msgraph.generated.models.setting_value import SettingValue
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DirectorySetting(
 	template_id = "08d542b9-071f-4e16-94b0-74abb372e3d9",
@@ -15,10 +17,10 @@ request_body = DirectorySetting(
 			name = "AllowToAddGuests",
 			value = "false",
 		),
-	]
+	],
 )
 
-result = await graph_client.groups.by_group_id('group-id').settings.post(body = request_body)
+result = await graph_client.groups.by_group_id('group-id').settings.post(request_body)
 
 
 ```

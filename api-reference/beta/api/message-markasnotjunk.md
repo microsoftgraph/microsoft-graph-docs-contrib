@@ -19,13 +19,10 @@ Mark a [message](../resources/message.md) as not junk. This API removes the send
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:----------------|:--------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+<!-- { "blockType": "permissions", "name": "message_markasnotjunk" } -->
+[!INCLUDE [permissions-table](../includes/permissions/message-markasnotjunk-permissions.md)]
 
 ## HTTP request
 
@@ -51,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter   | Type |Description|
 |:---------------|:--------|:----------|
-|moveToInbox|Boolean|`True` moves the **message** to the **Inbox** folder.| 
+|moveToInbox|Boolean|`True` moves the **message** to the **Inbox** folder.|
 
 ## Response
 
@@ -115,7 +112,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -142,7 +139,7 @@ Content-type: application/json
   "hasAttachments": false,
   "internetMessageId": "<00535324-5988-4b6a-b9af-d44cf2d0b691@MWHPR2201MB1022.namprd22.prod.outlook.com>",
   "subject": "Undeliverable: Meet for lunch?",
-  "bodyPreview": "Delivery has failed to these recipients or groups:\r\n\r\nfannyd@contoso.onmicrosoft.com (fannyd@contoso.onmicrosoft.com)\r\nYour message couldn't be delivered. Despite repeated attempts to deliver your message, querying the Domain Name System (DNS) for the rec",
+  "bodyPreview": "Delivery has failed to these recipients or groups:\r\n\r\nfannyd@contoso.com (fannyd@contoso.com)\r\nYour message couldn't be delivered. Despite repeated attempts to deliver your message, querying the Domain Name System (DNS) for the rec",
   "importance": "normal",
   "parentFolderId": "AAMkADhAAAAAAEKAAA=",
   "conversationId": "AAQkADhJzfbkARFhe5kKhjihSA=",
@@ -159,26 +156,26 @@ Content-type: application/json
   "sender": {
     "emailAddress": {
       "name": "Microsoft Outlook",
-      "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.onmicrosoft.com"
+      "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.com"
     }
   },
   "from": {
     "emailAddress": {
       "name": "Microsoft Outlook",
-      "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.onmicrosoft.com"
+      "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.com"
     }
   },
   "toRecipients": [
     {
       "emailAddress": {
-        "name": "fannyd@contoso.onmicrosoft.com",
-        "address": "fannyd@contoso.onmicrosoft.com"
+        "name": "fannyd@contoso.com",
+        "address": "fannyd@contoso.com"
       }
     },
     {
       "emailAddress": {
-        "name": "danas@contoso.onmicrosoft.com",
-        "address": "danas@contoso.onmicrosoft.com"
+        "name": "danas@contoso.com",
+        "address": "danas@contoso.com"
       }
     }
   ],

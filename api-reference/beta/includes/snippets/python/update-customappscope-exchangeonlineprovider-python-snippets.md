@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.custom_app_scope import CustomAppScope
+from msgraph.generated.models.custom_app_scope_attributes_dictionary import CustomAppScopeAttributesDictionary
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CustomAppScope(
 	custom_attributes = CustomAppScopeAttributesDictionary(
@@ -16,7 +18,7 @@ request_body = CustomAppScope(
 	),
 )
 
-result = await graph_client.role_management.exchange.custom_app_scopes.by_custom_app_scope_id('customAppScope-id').patch(body = request_body)
+result = await graph_client.role_management.exchange.custom_app_scopes.by_custom_app_scope_id('customAppScope-id').patch(request_body)
 
 
 ```

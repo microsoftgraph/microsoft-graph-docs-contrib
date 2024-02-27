@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.federated_identity_credential import FederatedIdentityCredential
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = FederatedIdentityCredential(
 	name = "testing02",
@@ -14,10 +15,10 @@ request_body = FederatedIdentityCredential(
 	subject = "a7d388c3-5e3f-4959-ac7d-786b3383006a",
 	audiences = [
 		"api://AzureADTokenExchange",
-	]
+	],
 )
 
-result = await graph_client.applications.by_application_id('application-id').federated_identity_credentials.post(body = request_body)
+result = await graph_client.applications.by_application_id('application-id').federated_identity_credentials.post(request_body)
 
 
 ```

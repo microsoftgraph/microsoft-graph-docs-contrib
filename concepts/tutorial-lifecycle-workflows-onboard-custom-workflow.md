@@ -7,6 +7,7 @@ ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 11/01/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want to use Lifecycle Workflows APIs to automate employee onboarding tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
 
 # Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs
@@ -21,8 +22,8 @@ This pre-hire scenario will generate a temporary password for the new employee a
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Micorosft Azure AD](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Azure AD role.
++ Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Microsoft Entra](https://www.microsoft.com/security/business/microsoft-entra-pricing).
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Microsoft Entra role.
 + Grant yourself the following *LifecycleWorkflows.ReadWrite.All* delegated permission.
 + You must have two user accounts to use for this tutorial, one for the new hire and another for their manager.
 
@@ -226,7 +227,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/work
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-joineronboarding-run-workflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -563,8 +564,8 @@ HTTP/1.1 204 No Content
 ```
 
 
-## See also
+## Related content
 
 - [Automate employee onboarding tasks before their first day of work with the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-onboard-custom-workflow-portal)
-- [Overview of Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
-- [Overview of reporting in Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)
+- [Overview of Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
+- [Overview of reporting in Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)

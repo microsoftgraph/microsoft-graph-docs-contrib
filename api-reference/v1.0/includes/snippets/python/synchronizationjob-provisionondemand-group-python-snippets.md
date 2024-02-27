@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.provision_on_demand_post_request_body import ProvisionOnDemandPostRequestBody
+from msgraph.generated.models.synchronization_job_application_parameters import SynchronizationJobApplicationParameters
+from msgraph.generated.models.synchronization_job_subject import SynchronizationJobSubject
+from msgraph.generated.models.synchronization_linked_objects import SynchronizationLinkedObjects
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ProvisionOnDemandPostRequestBody(
 	parameters = [
@@ -26,15 +30,15 @@ request_body = ProvisionOnDemandPostRequestBody(
 								object_id = "2bc86211-6ada-4803-b73f-8039cf56d8a2",
 								object_type_name = "User",
 							),
-						]
+						],
 					),
 				),
-			]
+			],
 		),
-	]
+	],
 )
 
-result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.jobs.by_job_id('synchronizationJob-id').provision_on_demand.post(body = request_body)
+result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.jobs.by_synchronization_job_id('synchronizationJob-id').provision_on_demand.post(request_body)
 
 
 ```

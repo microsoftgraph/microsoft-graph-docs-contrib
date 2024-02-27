@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.education_user import EducationUser
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.identity import Identity
+from msgraph.generated.models.physical_address import PhysicalAddress
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationUser(
 	display_name = "Dion Matheson",
@@ -39,7 +43,7 @@ request_body = EducationUser(
 	),
 )
 
-result = await graph_client.education.users.post(body = request_body)
+result = await graph_client.education.users.post(request_body)
 
 
 ```

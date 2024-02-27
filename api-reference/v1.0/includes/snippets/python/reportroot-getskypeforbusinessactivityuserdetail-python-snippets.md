@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.reports.get_skype_for_busines_activity_user_detail(period='{period}'.get()
+await graph_client.reports.get_skype_for_business_activity_user_detail_with_period("{period}").get()
 
 
 ```

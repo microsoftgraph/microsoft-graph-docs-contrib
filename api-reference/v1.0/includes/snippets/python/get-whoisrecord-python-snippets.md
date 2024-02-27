@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.security.threat_intelligence.whoi_records.by_whoi_record_id('whoisRecord-id').get()
+result = await graph_client.security.threat_intelligence.whois_records.by_whois_record_id('whoisRecord-id').get()
 
 
 ```

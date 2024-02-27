@@ -20,8 +20,8 @@ The `@odata.type` value `#microsoft.graph.groupMembers` indicates that this type
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | The ID of the group in Azure AD. |
-| description |String | The name of the group in Azure AD. Read only. |
+| id |String | The ID of the group in Microsoft Entra ID. |
+| description |String | The name of the group in Microsoft Entra ID. Read only. |
 | isBackup | Boolean | For **groupMembers** in an approval stage, this property indicates that the group members are a backup fallback approver. |
 
 ## JSON representation
@@ -57,5 +57,3 @@ Here's a JSON representation of the type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

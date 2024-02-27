@@ -128,7 +128,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -148,20 +148,23 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "durationInDays": "Int32",
+  "endUserNotificationSetting": {"@odata.type": "microsoft.graph.endUserNotificationSetting"},
   "excludedAccountTarget": {"@odata.type": "microsoft.graph.accountTargetContent"},
   "id": "String (identifier)",
-  "isAutomated": "Boolean",
   "includedAccountTarget": {"@odata.type": "microsoft.graph.accountTargetContent"},
+  "isAutomated": "Boolean",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "lastModifiedDateTime": "String (timestamp)",
   "launchDateTime": "String (timestamp)",
-  "payloadDeliveryPlatform": {"@odata.type": "microsoft.graph.payloadDeliveryPlatform"},
+  "oAuthConsentAppDetail": {"@odata.type": "microsoft.graph.oAuthConsentAppDetail"},
+  "payloadDeliveryPlatform": "String",
   "report": {"@odata.type": "microsoft.graph.simulationReport"},
-  "status": "String"
+  "status": "String",
+  "trainingSetting": {"@odata.type": "microsoft.graph.trainingSetting"}
 }
 ```
 
-## See also
+## Related content
 
 - [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)
 - [Get started using attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).

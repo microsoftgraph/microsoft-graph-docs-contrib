@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_vpp_app import IosVppApp
+from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.vpp_licensing_type import VppLicensingType
+from msgraph.generated.models.ios_device_type import IosDeviceType
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IosVppApp(
 	odata_type = "#microsoft.graph.iosVppApp",
@@ -45,7 +49,7 @@ request_body = IosVppApp(
 	bundle_id = "Bundle Id value",
 )
 
-result = await graph_client.device_app_management.mobile_apps.post(body = request_body)
+result = await graph_client.device_app_management.mobile_apps.post(request_body)
 
 
 ```

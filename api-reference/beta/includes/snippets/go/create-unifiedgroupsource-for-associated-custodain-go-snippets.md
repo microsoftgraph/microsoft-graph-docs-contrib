@@ -18,7 +18,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodelssecurity.NewUnifiedGroupSource()
 group := graphmodels.NewGroup()
-mail := "SOCTeam@M365x809305.onmicrosoft.com"
+mail := "SOCTeam@contoso.com"
 group.SetMail(&mail) 
 requestBody.SetGroup(group)
 includedSources := graphmodels.MAILBOX, SITE_SOURCETYPE 

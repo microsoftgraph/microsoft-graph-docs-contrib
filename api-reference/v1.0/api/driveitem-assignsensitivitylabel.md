@@ -19,16 +19,13 @@ For more information about sensitivity labels from an administrator's perspectiv
 > [!NOTE]
 > This is a metered API and some charges for use may apply. For details, see [Overview of metered Microsoft 365 APIs in Microsoft Graph](/graph/metered-api-overview).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)                                            |
-|:--------------------------------------|:---------------------------------------------------------------------------------------|
-|Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All                                               |
-|Delegated (personal Microsoft account) | Not supported.                                                                         |
-|Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                               |
+<!-- { "blockType": "permissions", "name": "driveitem_assignsensitivitylabel" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-assignsensitivitylabel-permissions.md)]
 
 ## HTTP request
 
@@ -52,7 +49,7 @@ POST /users/{user-id}/drive/root:/{item-path}:/assignSensitivityLabel
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, provide the ID for the sensitivity label that is to be assigned to a given file. The following table lists the required and optional input parameters.

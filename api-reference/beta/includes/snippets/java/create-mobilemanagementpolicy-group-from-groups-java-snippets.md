@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Group group = new Group();
-group.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/odata/groups('1a9db3ab-0acf-4808-99ae-e8ed581cb2e0')"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.policies().mobileAppManagementPolicies("ab90bacf-55a3-4a3e-839a-aa4b74e4f020").includedGroups().references()
-	.buildRequest()
-	.post(group);
+com.microsoft.graph.beta.models.ReferenceCreate referenceCreate = new com.microsoft.graph.beta.models.ReferenceCreate();
+referenceCreate.setOdataId("https://graph.microsoft.com/odata/groups('1a9db3ab-0acf-4808-99ae-e8ed581cb2e0')");
+graphClient.policies().mobileAppManagementPolicies().byMobilityManagementPolicyId("{mobilityManagementPolicy-id}").includedGroups().ref().post(referenceCreate);
+
 
 ```

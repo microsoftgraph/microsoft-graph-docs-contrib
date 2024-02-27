@@ -6,13 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.ExternalConnectors;
 
-var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.Identity
+var requestBody = new Identity
 {
 	Id = "e5477431-1038-484e-bf69-1dfedb97a110",
-	Type = Microsoft.Graph.Beta.Models.ExternalConnectors.IdentityType.ExternalGroup,
+	Type = IdentityType.ExternalGroup,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.External.Connections["{externalConnection-id}"].Groups["{externalGroup-id}"].Members.PostAsync(requestBody);
 
 

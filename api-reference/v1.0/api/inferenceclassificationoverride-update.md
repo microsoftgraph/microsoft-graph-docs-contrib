@@ -23,13 +23,10 @@ the new SMTP address is the only way to "update" the override for this sender.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+<!-- { "blockType": "permissions", "name": "inferenceclassificationoverride_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/inferenceclassificationoverride-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +53,7 @@ In the request body, supply the new value for **classifyAs**. For best performan
 If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.
 ## Example
 ##### Request
-The following example changes the override for the SMTP address randiw@adatum.onmicrosoft.com from `other` to `focused`.
+The following example changes the override for the SMTP address randiw@contoso.com from `other` to `focused`.
 
 
 # [HTTP](#tab/http)
@@ -122,7 +119,7 @@ Content-type: application/json
   "classifyAs": "focused",
   "senderEmailAddress": {
     "name": "Randi Welch",
-    "address": "randiw@adatum.onmicrosoft.com"
+    "address": "randiw@contoso.com"
   },
   "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
 }

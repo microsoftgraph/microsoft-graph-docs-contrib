@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_link import DeviceLink
+from msgraph.generated.models.bgp_configuration import BgpConfiguration
+from msgraph.generated.models.redundancy_configuration import RedundancyConfiguration
+from msgraph.generated.models.tunnel_configuration import TunnelConfiguration
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceLink(
 	name = "device link 1",
@@ -28,7 +32,7 @@ request_body = DeviceLink(
 	),
 )
 
-result = await graph_client.network_access.connectivity.branches.by_branche_id('branchSite-id').device_links.post(body = request_body)
+result = await graph_client.network_access.connectivity.branches.by_branch_site_id('branchSite-id').device_links.post(request_body)
 
 
 ```

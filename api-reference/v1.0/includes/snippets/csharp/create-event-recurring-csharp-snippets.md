@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new Event
 {
@@ -54,7 +55,7 @@ var requestBody = new Event
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "AdeleV@contoso.onmicrosoft.com",
+				Address = "AdeleV@contoso.com",
 				Name = "Adele Vance",
 			},
 			Type = AttendeeType.Required,
@@ -62,6 +63,8 @@ var requestBody = new Event
 	},
 	AllowNewTimeProposals = true,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.Events.PostAsync(requestBody);
 
 

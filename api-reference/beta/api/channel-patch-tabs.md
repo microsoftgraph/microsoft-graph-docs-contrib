@@ -40,7 +40,7 @@ PATCH /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code.
 
 ## Example
 #### Request
-The following is an example of the request.
+The following example shows a request.
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
@@ -81,7 +81,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

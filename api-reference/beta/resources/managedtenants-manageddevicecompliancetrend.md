@@ -32,7 +32,7 @@ Represents a trend of compliant and non-compliant devices for a given managed te
 |inGracePeriodDeviceCount|Int32|The number of devices that are in a grace period status. Required. Read-only.|
 |noncompliantDeviceCount|Int32|The number of devices that are in a non-compliant status. Required. Read-only.|
 |tenantDisplayName|String|The display name for the managed tenant. Optional. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
 |unknownDeviceCount|Int32|The number of devices in an unknown status. Required. Read-only.|
 
 ## Relationships

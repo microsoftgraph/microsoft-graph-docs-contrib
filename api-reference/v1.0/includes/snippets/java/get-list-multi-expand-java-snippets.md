@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("select", "id,name,lastModifiedDateTime"));
-requestOptions.add(new QueryOption("expand", "columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-List list = graphClient.sites("{site-id}").lists("{list-id}")
-	.buildRequest( requestOptions )
-	.get();
+List result = graphClient.sites().bySiteId("{site-id}").lists().byListId("{list-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"id", "name", "lastModifiedDateTime"};
+	requestConfiguration.queryParameters.expand = new String []{"columns(select=name,description)", "items(expand=fields(select=Name,Color,Quantity)", ")"};
+});
+
 
 ```

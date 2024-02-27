@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.agreement_file_localization import AgreementFileLocalization
+from msgraph.generated.models.agreement_file_data import AgreementFileData
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AgreementFileLocalization(
 	file_name = "Contoso ToU for guest users (French)",
@@ -19,7 +21,7 @@ request_body = AgreementFileLocalization(
 	),
 )
 
-result = await graph_client.identity_governance.term_of_use.agreements.by_agreement_id('agreement-id').files.post(body = request_body)
+result = await graph_client.identity_governance.terms_of_use.agreements.by_agreement_id('agreement-id').files.post(request_body)
 
 
 ```

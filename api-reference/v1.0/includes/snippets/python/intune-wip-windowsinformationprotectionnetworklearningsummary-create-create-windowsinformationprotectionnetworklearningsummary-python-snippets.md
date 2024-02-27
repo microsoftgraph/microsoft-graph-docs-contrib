@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows_information_protection_network_learning_summary import WindowsInformationProtectionNetworkLearningSummary
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = WindowsInformationProtectionNetworkLearningSummary(
 	odata_type = "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary",
@@ -14,7 +15,7 @@ request_body = WindowsInformationProtectionNetworkLearningSummary(
 	device_count = 11,
 )
 
-result = await graph_client.device_management.window_information_protection_network_learning_summaries.post(body = request_body)
+result = await graph_client.device_management.windows_information_protection_network_learning_summaries.post(request_body)
 
 
 ```

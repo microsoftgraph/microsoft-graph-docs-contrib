@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Users
 
-Get-MgBetaUser -Property "id,displayName,mail,identities" -Filter "endsWith(userPrincipalName,'" -ConsistencyLevel eventual 
+Get-MgBetaUser -Property "id,displayName,mail,identities" -Filter "endsWith(userPrincipalName,'"  -ConsistencyLevel eventual 
 
 
 ```

@@ -9,10 +9,11 @@ Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	annotations = @(
 		@{
+			displayName = "Cost Center"
 			localizations = @(
 				@{
-					languageTag = "no-NB"
-					displayName = "Kostnads Senter"
+					languageTag = "nb-NO"
+					displayName = "Kostnadssenter"
 				}
 			)
 		}

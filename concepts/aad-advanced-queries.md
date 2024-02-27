@@ -1,6 +1,6 @@
 ---
-title: "Advanced query capabilities on Azure AD objects"
-description: "Azure AD objects support advanced query capabilities to efficiently access data."
+title: "Advanced query capabilities on Microsoft Entra ID objects"
+description: "Microsoft Entra ID objects support advanced query capabilities to efficiently access data."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
@@ -8,13 +8,14 @@ ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 09/28/2023
+#customer intent: As a developer building apps that call Microsoft Entra ID APIs on Microsoft Graph, I want to understand the advanced query capabilities, so that my app can efficiently access and retrieve specific data, and avoid errors.
 ---
 
-# Advanced query capabilities on Azure AD objects
+# Advanced query capabilities on Microsoft Entra ID objects
 
-As Azure Active Directory (Azure AD) continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure Active Directory (Azure AD) objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
+As Microsoft Entra continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Microsoft Entra ID objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
 
-The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities aren't available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, except for `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
+The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Microsoft Entra ID to increase support and improve the performance of the query requests. However, these advanced query capabilities aren't available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, except for `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
 For example, to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
@@ -109,7 +110,7 @@ ConsistencyLevel: eventual
 
 ---
 
-## Microsoft Graph objects that support advanced query capabilities
+## Microsoft Entra ID (directory) objects that support advanced query capabilities
 
 These advanced query capabilities are supported only on directory objects and their relationships, including the following frequently used objects:
 
@@ -141,9 +142,9 @@ The following table lists query scenarios on directory objects that are supporte
 | Use of `$filter` with the `startsWith` operators on specific properties. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true` |
 | Use of `$filter` with `ne` and `not` operators | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true` |
 | Use of `$filter` with `not` and `startsWith` operators | [GET](https://developer.microsoft.com/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=NOT startsWith(displayName, 'Conf')&$count=true` |
-| Use of `$filter` on a collection with `endsWith` operator | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DproxyAddresses%2Fany(p%3AendsWith(p%2C%2B'OnMicrosoft.com'))%26select%3Did%2CdisplayName%2Cproxyaddresses&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$count=true&$filter=proxyAddresses/any (p:endsWith(p, 'OnMicrosoft.com'))&$select=id,displayName,proxyaddresses` |
+| Use of `$filter` on a collection with `endsWith` operator | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DproxyAddresses%2Fany(p%3AendsWith(p%2C%2B'contoso.com'))%26select%3Did%2CdisplayName%2Cproxyaddresses&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$count=true&$filter=proxyAddresses/any (p:endsWith(p, 'contoso.com'))&$select=id,displayName,proxyaddresses` |
 | Use of OData cast with transitive members list | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/me/transitiveMemberOf/microsoft.graph.group?$count=true` |
-    
+
 > [!NOTE]
 >
 > + Using `$filter` and `$orderby` together is supported only with advanced queries.
@@ -151,7 +152,9 @@ The following table lists query scenarios on directory objects that are supporte
 > + The advanced query capabilities are currently not available for Azure AD B2C tenants.
 > + To use advanced query capabilities in [batch requests](json-batching.md), specify the **ConsistencyLevel** header in the JSON body of the `POST` request.
 
-## Support for filter by properties of Azure AD (directory) objects
+<a name='support-for-filter-by-properties-of-azure-ad-directory-objects'></a>
+
+## Support for filter by properties of Microsoft Entra ID (directory) objects
 
 Properties of directory objects behave differently in their support for query parameters. The following are common scenarios for directory objects:
 
@@ -178,7 +181,9 @@ The following tables summarize support for `$filter` operators by properties of 
 
 [!INCLUDE [filter-directory-objects](includes/filter-directory-objects.md)]
 
-## Support for sorting by properties of Azure AD (directory) objects
+<a name='support-for-sorting-by-properties-of-azure-ad-directory-objects'></a>
+
+## Support for sorting by properties of Microsoft Entra ID (directory) objects
 
 The following table summarizes support for `$orderby` by properties of directory objects and indicates where sorting is supported through advanced query capabilities.
 
@@ -366,7 +371,7 @@ GET https://graph.microsoft.com/beta/users?$filter=endsWith(userPrincipalName,'%
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/get-users-missing-advancedqueryparams-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -524,12 +529,12 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 + [Use query parameters to customize responses](/graph/query-parameters)
 + [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635)
 + [Use the $search query parameter to match a search criterion](/graph/search-query-parameter#using-search-on-directory-object-collections)
-+ [Explore advanced query capabilities for Azure AD objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
++ [Explore advanced query capabilities for Microsoft Entra ID objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
 
 [RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
 [AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg

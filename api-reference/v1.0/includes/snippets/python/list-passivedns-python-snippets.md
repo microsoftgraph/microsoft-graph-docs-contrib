@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.security.threat_intelligence.hosts.by_host_id('host-id').passive_dn_reverse.get()
+result = await graph_client.security.threat_intelligence.hosts.by_host_id('host-id').passive_dns_reverse.get()
 
 
 ```

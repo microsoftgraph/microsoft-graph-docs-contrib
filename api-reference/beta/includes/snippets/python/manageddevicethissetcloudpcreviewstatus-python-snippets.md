@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.set_cloud_pc_review_status_post_request_body import SetCloudPcReviewStatusPostRequestBody
+from msgraph.generated.models.cloud_pc_review_status import CloudPcReviewStatus
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SetCloudPcReviewStatusPostRequestBody(
 	review_status = CloudPcReviewStatus(
@@ -16,7 +18,7 @@ request_body = SetCloudPcReviewStatusPostRequestBody(
 	),
 )
 
-await graph_client.device_management.managed_devices.by_managed_device_id('managedDevice-id').set_cloud_pc_review_status.post(body = request_body)
+await graph_client.device_management.managed_devices.by_managed_device_id('managedDevice-id').set_cloud_pc_review_status.post(request_body)
 
 
 ```

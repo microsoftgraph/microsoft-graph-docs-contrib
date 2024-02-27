@@ -1,7 +1,8 @@
 ---
 title: "Delete a group setting"
 description: "Delete a group setting."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -20,7 +21,7 @@ Delete a tenant-level or group-specific [groupSetting](../resources/groupsetting
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### For all settings except the Consent Policy Settings object
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.ReadWrite.All    |
@@ -30,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ### For the Consent Policy Settings object
 
 The following permissions are required to update the "Consent Policy Settings" **directorySetting** object.
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Policy.ReadWrite.Authorization    |
@@ -59,16 +60,16 @@ DELETE /groups/{groupId}/settings/{groupSettingId}
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json          |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 

@@ -18,18 +18,15 @@ Update the properties of a [bookingBusiness](../resources/bookingbusiness.md) ob
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+<!-- { "blockType": "permissions", "name": "bookingbusiness_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingbusiness-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}
+PATCH /solutions/bookingbusinesses/{id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -62,10 +59,10 @@ The following example updates the business email address and scheduling policy, 
 <!-- {
   "blockType": "request",
   "name": "update_bookingbusiness",
-  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
+PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/fabrikam@contoso.com
 Content-type: application/json
 
 {
@@ -102,10 +99,6 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-bookingbusiness-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingbusiness-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

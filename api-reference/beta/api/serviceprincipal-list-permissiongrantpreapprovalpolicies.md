@@ -15,13 +15,10 @@ Namespace: microsoft.graph
 Retrieve the [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object for the [servicePrincipal](../resources/serviceprincipal.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Application.Read.All and Policy.Read.PermissionGrant, Application.Read.All and Policy.ReadWrite.PermissionGrant|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Application.Read.All and Policy.Read.PermissionGrant, Application.Read.All and Policy.ReadWrite.PermissionGrant|
+<!-- { "blockType": "permissions", "name": "serviceprincipal_list_permissiongrantpreapprovalpolicies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-permissiongrantpreapprovalpolicies-permissions.md)]
 
 [!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
 
@@ -38,11 +35,11 @@ GET /servicePrincipals/{id}/permissionGrantPreApprovalPolicies
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 
@@ -63,10 +60,6 @@ If successful, this method returns a `200 OK` response code and a [permissionGra
 ``` http
 GET /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-permissiongrantpreapprovalpolicies-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-get-permissiongrantpreapprovalpolicies-javascript-snippets.md)]

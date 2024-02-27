@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.informationProtection.threatAssessmentRequests.item.threat_assessment_request_item_request_builder import ThreatAssessmentRequestItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = ThreatAssessmentRequestRequestBuilder.ThreatAssessmentRequestRequestBuilderGetQueryParameters(
+query_params = ThreatAssessmentRequestItemRequestBuilder.ThreatAssessmentRequestItemRequestBuilderGetQueryParameters(
 		expand = ["results"],
 )
 
-request_configuration = ThreatAssessmentRequestRequestBuilder.ThreatAssessmentRequestRequestBuilderGetRequestConfiguration(
+request_configuration = ThreatAssessmentRequestItemRequestBuilder.ThreatAssessmentRequestItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

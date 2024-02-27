@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Azure AD, a mobility management policy represents an autoenrollment configuration for a mobility management (MDM or MAM) application. These policies are only applicable to devices based on Windows 10 OS and its derivatives (Surface Hub, HoloLens etc.). [Autoenrollment](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) enables organizations to automatically enroll devices into their chosen mobility management application as part of [Azure AD join](/azure/active-directory/devices/concept-azure-ad-join) or [Azure AD register](/azure/active-directory/devices/concept-azure-ad-register) process on Windows 10 devices.
+In Microsoft Entra ID, a mobility management policy represents an autoenrollment configuration for a mobility management (MDM or MAM) application. These policies are only applicable to devices based on Windows 10 OS and its derivatives (Surface Hub, HoloLens etc.). [Autoenrollment](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) enables organizations to automatically enroll devices into their chosen mobility management application as part of [Microsoft Entra join](/azure/active-directory/devices/concept-azure-ad-join) or [Microsoft Entra register](/azure/active-directory/devices/concept-azure-ad-register) process on Windows 10 devices.
 
 ## Methods
 
@@ -49,7 +49,7 @@ In Azure AD, a mobility management policy represents an autoenrollment configura
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includedGroups|[group](../resources/group.md) collection|Azure AD groups under the scope of the mobility management application if appliesTo is `selected`|
+|includedGroups|[group](../resources/group.md) collection|Microsoft Entra groups under the scope of the mobility management application if appliesTo is `selected`|
 
 ## JSON representation
 

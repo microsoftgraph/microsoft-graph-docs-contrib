@@ -46,7 +46,7 @@ PATCH /schemaExtensions/{id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json |
 
 ## Request body
@@ -68,7 +68,7 @@ If successful, this method returns a `204 No Content` response code. Attempting 
 
 ### Request
 
-The following is an example of the request. You must include the **owner** property if you're running the request from an application which you don't own. In this case, set the **owner** property to the **appId** of an application you own.
+The following example shows a request. You must include the **owner** property if you're running the request from an application which you don't own. In this case, set the **owner** property to the **appId** of an application you own.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -147,7 +147,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)

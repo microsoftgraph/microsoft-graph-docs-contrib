@@ -4,14 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body = ClearUserPreferredPresencePostRequestBody(
-)
 
-await graph_client.users.by_user_id('user-id').presence.clear_user_preferred_presence.post(body = request_body)
+await graph_client.users.by_user_id('user-id').presence.clear_user_preferred_presence.post()
 
 
 ```

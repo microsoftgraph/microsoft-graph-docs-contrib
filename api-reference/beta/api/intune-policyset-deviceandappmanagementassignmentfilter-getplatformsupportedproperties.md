@@ -1,6 +1,6 @@
 ---
 title: "getPlatformSupportedProperties function"
-description: ""
+description: "Intune Policyset Deviceandappmanagementassignmentfilter Getplatformsupportedproperties Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -38,7 +38,7 @@ GET /deviceManagement/assignmentFilters/getPlatformSupportedProperties
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

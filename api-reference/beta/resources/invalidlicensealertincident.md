@@ -1,6 +1,6 @@
 ---
 title: "invalidLicenseAlertIncident resource type"
-description: "Represents the details of an alert incident that is triggered if the current tenant doesn't have a valid Azure AD Premium P2 license."
+description: "Represents the details of an alert incident that is triggered if the current tenant doesn't have a valid Microsoft Entra ID P2 license."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an alert incident that is triggered if the current tenant doesn't have a valid Azure AD Premium P2 license.
+Represents the details of an alert incident that is triggered if the current tenant doesn't have a valid Microsoft Entra ID P2 license.
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
@@ -21,7 +21,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The identifier for the alert incident. For example, it could be a role assignment ID if the incident represents a role assignment. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
-|tenantLicenseStatus|String|Status of the tenant's Azure AD Premium P2 license.|
+|tenantLicenseStatus|String|Status of the tenant's Microsoft Entra ID P2 license.|
 
 ## Relationships
 None.
@@ -43,4 +43,3 @@ Here's a JSON representation of the resource.
   "tenantLicenseStatus": "String"
 }
 ```
-

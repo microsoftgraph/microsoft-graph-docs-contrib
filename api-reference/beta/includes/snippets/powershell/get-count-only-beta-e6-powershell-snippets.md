@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Users
 
-Get-MgBetaUserCount-ConsistencyLevel eventual 
+Get-MgBetaUserCount -ConsistencyLevel eventual 
 
 
 ```

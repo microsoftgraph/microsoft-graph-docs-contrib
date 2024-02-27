@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.person_name import PersonName
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PersonName(
 	display_name = "Innocenty Popov",
@@ -17,7 +18,7 @@ request_body = PersonName(
 	maiden = None,
 )
 
-result = await graph_client.me.profile.names.post(body = request_body)
+result = await graph_client.me.profile.names.post(request_body)
 
 
 ```

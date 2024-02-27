@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.device_management.window_information_protection_network_learning_summaries.by_window_information_protection_network_learning_summarie_id('windowsInformationProtectionNetworkLearningSummary-id').delete()
+await graph_client.device_management.windows_information_protection_network_learning_summaries.by_windows_information_protection_network_learning_summary_id('windowsInformationProtectionNetworkLearningSummary-id').delete()
 
 
 ```

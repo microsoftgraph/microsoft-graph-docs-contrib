@@ -3,7 +3,7 @@ title: "List serviceManagementDetails"
 description: "Get a list of the delegatedAdminServiceManagementDetail objects and their properties."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -15,13 +15,10 @@ Get a list of the [delegatedAdminServiceManagementDetail](../resources/delegated
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+<!-- { "blockType": "permissions", "name": "delegatedadmincustomer_list_servicemanagementdetails" } -->
+[!INCLUDE [permissions-table](../includes/permissions/delegatedadmincustomer-list-servicemanagementdetails-permissions.md)]
 
 ## HTTP request
 
@@ -34,15 +31,15 @@ GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}/serv
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -114,7 +111,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
       "id": "fa5fa04e-13df-4b7c-9e99-92573ba1fa55",
-      "serviceManagementUrl": "https://aad.portal.azure.com/contoso.onmicrosoft.com",
+      "serviceManagementUrl": "https://aad.portal.azure.com/contoso.com",
       "serviceName": "Azure Active Directory"
     },
     {
@@ -132,7 +129,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
       "id": "ce0b42f4-bfde-4abe-a5f7-add83f104b23",
-      "serviceManagementUrl": "https://admin.teams.microsoft.com/?delegatedOrg=contoso.onmicrosoft.com",
+      "serviceManagementUrl": "https://admin.teams.microsoft.com/?delegatedOrg=contoso.com",
       "serviceName": "Teams"
     }
   ]

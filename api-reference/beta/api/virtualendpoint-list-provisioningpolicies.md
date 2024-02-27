@@ -19,13 +19,10 @@ List properties and relationships of the [cloudPcProvisioningPolicy](../resource
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "virtualendpoint_list_provisioningpolicies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualendpoint-list-provisioningpolicies-permissions.md)]
 
 ## HTTP request
 
@@ -46,11 +43,11 @@ This method supports `$select`, `$filter`, and `$expand` OData query parameters 
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,14 +106,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.cloudPcProvisioningPolicy)"
 }
 -->
 
@@ -152,6 +148,9 @@ Content-Type: application/json
       "imageType":"custom",
       "windowsSettings": {
         "language": "en-US"
+      },
+      "windowsSetting": {
+          "locale": "en-US"
       },
       "managedBy": "windows365",
       "provisioningType": "dedicated"

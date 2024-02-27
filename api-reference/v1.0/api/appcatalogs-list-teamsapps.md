@@ -1,6 +1,6 @@
 ---
 title: "List teamsApp"
-description: "List Teams apps published in the tenant app catalog."
+description: "List apps from the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -21,16 +21,13 @@ This includes apps from the Microsoft Teams store, as well as apps from your org
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission Type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All<sup>1</sup>, Directory.ReadWrite.All<sup>1</sup> |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "appcatalogs_list_teamsapps" } -->
+[!INCLUDE [permissions-table](../includes/permissions/appcatalogs-list-teamsapps-permissions.md)]
 
 > **Note**: 
-<br><sup>1</sup> These permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
+The Directory.Read.All and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
 
 ## HTTP request
 
@@ -52,11 +49,11 @@ Using `$expand=AppDefinitions` will return more information about the state of t
 
 | Header        | Value                     |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -70,7 +67,7 @@ The following example lists all applications that are specific to your tenant.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -120,7 +117,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionM
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -151,7 +148,7 @@ The following example lists applications with a given ID.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -199,6 +196,8 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq 'b1c535
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.teamsApp",
@@ -228,7 +227,7 @@ The following example lists applications that match the **id** specified in the 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -276,7 +275,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -308,7 +307,7 @@ The following example lists applications with a given ID, and expands **appDefin
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -356,7 +355,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df2
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -401,7 +400,7 @@ The following example lists only those apps in the catalog that contain a bot.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -449,7 +448,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinition
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -554,7 +553,7 @@ The following example lists the apps with a given ID and returns the resource-sp
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -602,7 +601,7 @@ GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id+eq+'a5228
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -653,7 +652,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List apps installed in a team](team-list-installedapps.md) <!-- - [List apps installed in a chat](chat-list-installedapps.md) -->
 - [List apps installed in the personal scope of a user](userteamwork-list-installedapps.md)

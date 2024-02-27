@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.remove_group_post_request_body import RemoveGroupPostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RemoveGroupPostRequestBody(
 	group_id = "ffffffff-ffff-ffff-ffff-ffffffffffff",
 )
 
-result = await graph_client.group_lifecycle_policies.by_group_lifecycle_policie_id('groupLifecyclePolicy-id').remove_group.post(body = request_body)
+result = await graph_client.group_lifecycle_policies.by_group_lifecycle_policy_id('groupLifecyclePolicy-id').remove_group.post(request_body)
 
 
 ```

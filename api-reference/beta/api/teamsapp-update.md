@@ -51,7 +51,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 | Header        | Value           |
 |:--------------|:--------------  |
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/zip. Required. |
 
 ## Request body
@@ -70,7 +70,7 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +116,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -179,6 +179,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

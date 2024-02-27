@@ -18,7 +18,8 @@ Create a new [channel](../resources/channel.md) in a team, as specified in the r
 You can add a maximum of 200 members when you create a private channel.
 
 > [!NOTE]
-> Some special characters in the channel name will cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](/graph/known-issues#create-channel).
+> - Some special characters in the channel name will cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](/graph/known-issues#create-channel).
+> - When you create a private/shared channel, the SharePoint site might fail to provision. If the site fails to provision after 5 minutes, use the [Get filesFolder](/graph/api/channel-get-filesfolder) API to trigger provisioning.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -49,7 +50,7 @@ POST /teams/{team-id}/channels
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -126,7 +127,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -218,7 +219,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -305,7 +306,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response. The `Content-Location` header in the response specifies the path to the channel that is being provisioned.
+The following example shows the response. The `Content-Location` header in the response specifies the path to the channel that is being provisioned.
 Once provisioned, this channel can be used for [importing messages](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 <!-- {
   "blockType": "response",
@@ -398,7 +399,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -492,7 +493,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -590,7 +591,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->
@@ -602,7 +603,52 @@ Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f
 Content-Length: 0
 ```
 
-## See also
+### Example 7: Create a shared channel shared with host team
+
+#### Request
+
+The following example shows how to create a shared channel shared with host team.
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "displayName": "My First Shared Channel",
+  "description": "This is my first shared channel",
+  "membershipType": "shared",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
+      "roles": [
+        "owner"
+      ]
+    }
+  ],
+  "sharedWithTeams":[
+    {
+      "id": "57fb72d0-d811-46f4-8947-305e6072eaa5"
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
+Content-Length: 0
+```
+
+## Related content
 
 * [Complete migration for a channel](channel-completemigration.md)
 * [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)

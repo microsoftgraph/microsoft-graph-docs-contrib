@@ -17,13 +17,10 @@ Create a new [userSource](../resources/security-usersource.md) object associated
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_ediscoverycustodian_post_usersources" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycustodian-post-usersources-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -70,7 +67,7 @@ The following is an example of a request.
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/userSources
 
 {
-    "email": "admin@M365x809305.onmicrosoft.com",
+    "email": "admin@contoso.com",
     "includedSources": "mailbox, site"
 }
 ```
@@ -99,6 +96,10 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 [!INCLUDE [sample-code](../includes/snippets/php/create-usersource-associated-with-custodians-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-usersource-associated-with-custodians-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-usersource-associated-with-custodians-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -106,7 +107,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -124,14 +125,14 @@ Content-Type: application/json
     "createdDateTime": "0001-01-01T00:00:00Z",
     "holdStatus": "applied",
     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
-    "email": "admin@M365x809305.onmicrosoft.com",
+    "email": "admin@contoso.com",
     "includedSources": "mailbox,site",
     "siteWebUrl": "",
     "createdBy": {
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         },
         "application": {
             "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",

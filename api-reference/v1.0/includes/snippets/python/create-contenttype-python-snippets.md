@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.content_type import ContentType
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ContentType(
 	name = "docSet",
@@ -18,7 +19,7 @@ request_body = ContentType(
 	group = "Document Set Content Types",
 )
 
-result = await graph_client.sites.by_site_id('site-id').content_types.post(body = request_body)
+result = await graph_client.sites.by_site_id('site-id').content_types.post(request_body)
 
 
 ```

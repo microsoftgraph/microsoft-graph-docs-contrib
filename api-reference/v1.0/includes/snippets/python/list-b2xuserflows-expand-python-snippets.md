@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.identity.b2xUserFlows.b2x_user_flows_request_builder import B2xUserFlowsRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = B2xUserFlowsRequestBuilder.B2xUserFlowsRequestBuilderGetQueryParameters(
 		expand = ["identityProviders"],

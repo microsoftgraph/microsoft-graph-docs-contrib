@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 SecurityAction securityAction = new SecurityAction();
-securityAction.name = "BlockIp";
-securityAction.actionReason = "Test";
-LinkedList<KeyValuePair> parametersList = new LinkedList<KeyValuePair>();
-KeyValuePair parameters = new KeyValuePair();
-parameters.name = "IP";
-parameters.value = "1.2.3.4";
-parametersList.add(parameters);
-securityAction.parameters = parametersList;
+securityAction.setName("BlockIp");
+securityAction.setActionReason("Test");
+LinkedList<KeyValuePair> parameters = new LinkedList<KeyValuePair>();
+KeyValuePair keyValuePair = new KeyValuePair();
+keyValuePair.setName("IP");
+keyValuePair.setValue("1.2.3.4");
+parameters.add(keyValuePair);
+securityAction.setParameters(parameters);
 SecurityVendorInformation vendorInformation = new SecurityVendorInformation();
-vendorInformation.provider = "Windows Defender ATP";
-vendorInformation.vendor = "Microsoft";
-securityAction.vendorInformation = vendorInformation;
+vendorInformation.setProvider("Windows Defender ATP");
+vendorInformation.setVendor("Microsoft");
+securityAction.setVendorInformation(vendorInformation);
+SecurityAction result = graphClient.security().securityActions().post(securityAction);
 
-graphClient.security().securityActions()
-	.buildRequest()
-	.post(securityAction);
 
 ```

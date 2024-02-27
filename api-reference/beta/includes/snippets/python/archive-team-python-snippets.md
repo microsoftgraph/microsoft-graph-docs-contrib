@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.archive_post_request_body import ArchivePostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ArchivePostRequestBody(
 )
 
-await graph_client.teams.by_team_id('team-id').archive.post(body = request_body)
+await graph_client.teams.by_team_id('team-id').archive.post(request_body)
 
 
 ```

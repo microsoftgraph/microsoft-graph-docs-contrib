@@ -1,6 +1,6 @@
 ---
 title: "getRoleScopeTagsByResource function"
-description: ""
+description: "Intune Shared Devicemanagement Getrolescopetagsbyresource Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -39,7 +39,7 @@ GET /deviceManagement/getRoleScopeTagsByResource
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

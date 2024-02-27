@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unhide_for_user_post_request_body import UnhideForUserPostRequestBody
+from msgraph.generated.models.teamwork_user_identity import TeamworkUserIdentity
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnhideForUserPostRequestBody(
 	user = TeamworkUserIdentity(
@@ -17,7 +19,7 @@ request_body = UnhideForUserPostRequestBody(
 	),
 )
 
-await graph_client.chats.by_chat_id('chat-id').unhide_for_user.post(body = request_body)
+await graph_client.chats.by_chat_id('chat-id').unhide_for_user.post(request_body)
 
 
 ```

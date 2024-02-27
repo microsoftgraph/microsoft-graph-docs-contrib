@@ -27,7 +27,7 @@ Depending on the type of calendar that the event is in and the permission type (
 ## HTTP request
 
 Create the specified permissions of a user's primary calendar:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 
@@ -36,7 +36,7 @@ POST /users/{id}/calendar/calendarPermissions
 ```
 
 Create the specified permissions of a group calendar:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 ```http
@@ -44,7 +44,7 @@ POST /groups/{id}/calendar/calendarPermissions
 ```
 
 Create the specified permissions of the user calendar that contains the identified event:
-<!-- { 
+<!-- {
   "blockType": "ignored",
 }-->
 ```http
@@ -55,7 +55,7 @@ POST /users/{id}/events/{id}/calendar/calendarPermissions
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -70,11 +70,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
-<!-- { 
+<!-- {
   "blockType": "request",
   "name": "create_calendarpermissions"
 }-->
@@ -85,7 +85,7 @@ POST https://graph.microsoft.com/v1.0/me/calendar/calendarPermissions
 {
     "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
     },
     "isInsideOrganization": true,
     "isRemovable": true,
@@ -118,6 +118,10 @@ POST https://graph.microsoft.com/v1.0/me/calendar/calendarPermissions
 [!INCLUDE [sample-code](../includes/snippets/php/create-calendarpermissions-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-calendarpermissions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-calendarpermissions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -126,7 +130,7 @@ POST https://graph.microsoft.com/v1.0/me/calendar/calendarPermissions
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -153,7 +157,7 @@ Content-type: application/json
     ],
     "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
     }
 }
 ```

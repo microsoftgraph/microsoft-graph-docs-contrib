@@ -24,7 +24,7 @@ Defines the status of a tenant joining a multi-tenant organization. Before a ten
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|addedByTenantId|String|Tenant ID of the Azure Active Directory tenant that added a tenant to the multi-tenant organization. To reset a failed join request, set `addedByTenantId` to `00000000-0000-0000-0000-000000000000`. Required.|
+|addedByTenantId|String|Tenant ID of the Microsoft Entra tenant that added a tenant to the multi-tenant organization. To reset a failed join request, set `addedByTenantId` to `00000000-0000-0000-0000-000000000000`. Required.|
 |memberState|multiTenantOrganizationMemberState|State of the tenant in the multi-tenant organization. The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`. Tenants in the pending state must [join the multi-tenant organization](../api/multitenantorganizationjoinrequestrecord-update.md) to participate in the multi-tenant organization. Tenants in the active state can participate in the multi-tenant organization. Tenants in the removed state are in the process of being removed from the multi-tenant organization. Read-only.|
 |role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member` (default), `unknownFutureValue`. Tenants with the owner role can manage the multi-tenant organization. There can be multiple tenants with the owner role in a multi-tenant organization. Tenants with the member role can participate in a multi-tenant organization.|
 |transitionDetails|[multiTenantOrganizationJoinRequestTransitionDetails](../resources/multitenantorganizationjoinrequesttransitiondetails.md)|Details of the processing status for a tenant joining a multi-tenant organization. Read-only.|
@@ -52,4 +52,3 @@ Here's a JSON representation of the resource.
   }
 }
 ```
-

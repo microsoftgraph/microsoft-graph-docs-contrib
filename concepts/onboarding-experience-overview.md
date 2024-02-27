@@ -16,7 +16,7 @@ The following are the steps to onboard:
 
 1. Your global administrator [enables Microsoft Graph Data Connect](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan) in the Microsoft 365 admin center.
 
-2. Create a new Azure AD app.
+2. Create a new Microsoft Entra app.
 
 3. Register the app with Data Connect in the [Data Connect app registration portal](https://aka.ms/mgdcinazure), and specify the data that is required for the application. For details, see [app registration](./app-registration.md).
 
@@ -30,7 +30,7 @@ The simplified Data Connect onboarding experience includes process efficiencies 
 
 - Authorization is provided before any pipeline runs. If authorization isn't granted, the pipeline fails right away. This eliminates extra runtime, which incurs ADF runtime costs and waiting on manual approval, and minimizes runtime authorization creation failures.
 
-- Service principal owner licenses aren't required. This removes requirements for service principal owners to be Microsoft 365 users with an E5 license, and removes license requirements. Azure AD application ownership is required to update and delete app registrations with Data Connect.
+- Service principal owner licenses aren't required. This removes requirements for service principal owners to be Microsoft 365 users with an E5 license, and removes license requirements. Microsoft Entra application ownership is required to update and delete app registrations with Data Connect.
 
 - Admins don't need an E5 license. A user authorizing an app is required to be a global admin to access the [Data Connect app registration portal](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter), and approve apps for Data Connect.
 

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [userRegistrationDetails](../resources/userregistrationdetails.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -27,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|AuditLog.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AuditLog.Read.All|
+
+[!INCLUDE [rbac-reports-registration-usage-apis](../includes/rbac-for-apis/rbac-reports-registration-usage-apis.md)]
 
 ## HTTP request
 
@@ -46,11 +48,11 @@ This method does not support the OData query parameters to help customize the re
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [userRegistrat
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,7 +110,7 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrat
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

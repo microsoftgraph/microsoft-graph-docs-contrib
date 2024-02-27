@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.admin_forms import AdminForms
+from msgraph.generated.models.forms_settings import FormsSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AdminForms(
 	odata_type = "#microsoft.graph.adminForms",
@@ -22,7 +24,7 @@ request_body = AdminForms(
 	),
 )
 
-result = await graph_client.admin.forms.patch(body = request_body)
+result = await graph_client.admin.forms.patch(request_body)
 
 
 ```

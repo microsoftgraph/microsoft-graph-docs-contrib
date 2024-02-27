@@ -18,13 +18,10 @@ Get an attack simulation campaign for a tenant.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                            |
-|:---------------------------------------|:-----------------------------------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
-| Delegated (personal Microsoft account) | Not supported.                                                         |
-| Application                            | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
+<!-- { "blockType": "permissions", "name": "simulation_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/simulation-get-permissions.md)]
 
 ## HTTP request
 
@@ -43,10 +40,10 @@ This method does not currently support the [OData query parameters](/graph/query
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -104,7 +101,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -175,7 +172,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-simulation-includedaccounttarget-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -194,7 +191,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -247,7 +244,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-simulation-excludedaccounttarget-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -266,7 +263,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -319,7 +316,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-simulation-trainingsetting-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -338,7 +335,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -390,7 +387,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-simulation-endusernotificationsetting-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -409,7 +406,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

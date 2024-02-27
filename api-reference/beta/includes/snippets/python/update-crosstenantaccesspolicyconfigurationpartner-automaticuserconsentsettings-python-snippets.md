@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.cross_tenant_access_policy_configuration_partner import CrossTenantAccessPolicyConfigurationPartner
+from msgraph.generated.models.inbound_outbound_policy_configuration import InboundOutboundPolicyConfiguration
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CrossTenantAccessPolicyConfigurationPartner(
 	automatic_user_consent_settings = InboundOutboundPolicyConfiguration(
@@ -15,7 +17,7 @@ request_body = CrossTenantAccessPolicyConfigurationPartner(
 	),
 )
 
-result = await graph_client.policies.cro_tenant_acce_policy.partners.by_partner_id('crossTenantAccessPolicyConfigurationPartner-tenantId').patch(body = request_body)
+result = await graph_client.policies.cross_tenant_access_policy.partners.by_cross_tenant_access_policy_configuration_partner_tenant_id('crossTenantAccessPolicyConfigurationPartner-tenantId').patch(request_body)
 
 
 ```

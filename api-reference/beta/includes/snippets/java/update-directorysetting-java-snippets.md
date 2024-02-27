@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DirectorySetting directorySetting = new DirectorySetting();
-LinkedList<SettingValue> valuesList = new LinkedList<SettingValue>();
-SettingValue values = new SettingValue();
-values.name = "CustomBlockedWordsList";
-values.value = "Contoso";
-valuesList.add(values);
-directorySetting.values = valuesList;
+LinkedList<SettingValue> values = new LinkedList<SettingValue>();
+SettingValue settingValue = new SettingValue();
+settingValue.setName("CustomBlockedWordsList");
+settingValue.setValue("Contoso");
+values.add(settingValue);
+directorySetting.setValues(values);
+DirectorySetting result = graphClient.settings().byDirectorySettingId("{directorySetting-id}").patch(directorySetting);
 
-graphClient.settings("3c105fc3-2254-4861-9e2d-d59e2126f3ef")
-	.buildRequest()
-	.patch(directorySetting);
 
 ```

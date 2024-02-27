@@ -14,19 +14,19 @@ Namespace: microsoft.graph
 Create an online meeting on behalf of a user.
 
 > [!TIP]
-> This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
+>
+> * This API creates a standalone meeting that isn't associated with any event on the user's calendar; therefore, meetings created via this API aren't shown on the user's calendar.
+> * This API doesn't create a Teams live event.
+> * To be able to retrieve meeting transcripts at a later stage, use the [Create event](../api/user-post-events.md#example-4-create-and-enable-an-event-as-an-online-meeting) API that is calendar-backed.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
-| Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | OnlineMeetings.ReadWrite.All                |
+<!-- { "blockType": "permissions", "name": "application_post_onlinemeetings" } -->
+[!INCLUDE [permissions-table](../includes/permissions/application-post-onlinemeetings-permissions.md)]
 
 To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create online meetings on behalf of that user (with user ID specified in the request path).
 
@@ -40,12 +40,13 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
+>
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required. |
 | Accept-Language  | Language. Optional. |
 
@@ -56,7 +57,7 @@ In the request body, supply a JSON representation of an [onlineMeeting](../resou
 
 > [!CAUTION]
 >
-> Assigning the `presenter` or `coorganizer` role to users who are not registered in Azure Active Directory is not currently supported.
+> Assigning the `presenter` or `coorganizer` role to users who aren't registered in Microsoft Entra ID isn't currently supported.
 
 ## Response
 If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
@@ -193,7 +194,7 @@ The following example shows how to add a passcode to a meeting. The passcode is 
 
 Here's an example  of a request.
 
->**Note:** The passcode is automatically generated and a custom passcode is not supported.
+>**Note:** The passcode is automatically generated and a custom passcode isn't supported.
 
 
 # [HTTP](#tab/http)

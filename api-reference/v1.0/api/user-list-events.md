@@ -11,10 +11,10 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single 
+Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single
 instance meetings and series masters.
 
-To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or 
+To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or
 [get the instances of an event](event-list-instances.md).
 
 Currently, this operation returns event bodies in only HTML format.
@@ -28,23 +28,23 @@ There are two scenarios where an app can get events in another user's calendar:
 
 ### Support various time zones
 
-For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response. 
+For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.
 
 For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.
 ```http
 Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
-If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. 
-See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end 
+If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header.
+See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end
 times are returned in UTC.
 
-You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to 
+You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to
 find out the time zone used when the event was created.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite    |
@@ -76,7 +76,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -85,7 +85,7 @@ If successful, this method returns a `200 OK` response code and collection of [e
 ##### Request
 Here is an example of the request. It specifies the following:
 
-- A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
+- A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
 
 
@@ -188,7 +188,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Samantha Booth",
-                        "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"samanthab@contoso.com"
                     }
                 },
                 {
@@ -199,14 +199,14 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Dana Swope",
-                        "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"danas@contoso.com"
                     }
                 }
             ],
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+                    "address":"samanthab@contoso.com"
                 }
             }
         }

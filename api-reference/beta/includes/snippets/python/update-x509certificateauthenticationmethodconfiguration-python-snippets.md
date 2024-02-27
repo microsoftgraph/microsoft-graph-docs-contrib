@@ -4,9 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.x509_certificate_authentication_method_configuration import X509CertificateAuthenticationMethodConfiguration
+from msgraph.generated.models.x509_certificate_user_binding import X509CertificateUserBinding
+from msgraph.generated.models.x509_certificate_authentication_mode_configuration import X509CertificateAuthenticationModeConfiguration
+from msgraph.generated.models.x509_certificate_rule import X509CertificateRule
+from msgraph.generated.models.x509_certificate_issuer_hints_configuration import X509CertificateIssuerHintsConfiguration
+from msgraph.generated.models.authentication_method_target import AuthenticationMethodTarget
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = X509CertificateAuthenticationMethodConfiguration(
 	odata_type = "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
@@ -18,7 +24,7 @@ request_body = X509CertificateAuthenticationMethodConfiguration(
 			user_property = "onPremisesUserPrincipalName",
 			priority = 1,
 		),
-	]
+	],
 	authentication_mode_configuration = X509CertificateAuthenticationModeConfiguration(
 		x509_certificate_authentication_default_mode = X509CertificateAuthenticationMode.X509CertificateMultiFactor,
 		rules = [
@@ -32,7 +38,10 @@ request_body = X509CertificateAuthenticationMethodConfiguration(
 				identifier = "1.2.3.4",
 				x509_certificate_authentication_mode = X509CertificateAuthenticationMode.X509CertificateMultiFactor,
 			),
-		]
+		],
+	),
+	issuer_hints_configuration = X509CertificateIssuerHintsConfiguration(
+		state = X509CertificateIssuerHintsState.Disabled,
 	),
 	include_targets = [
 		AuthenticationMethodTarget(
@@ -40,10 +49,10 @@ request_body = X509CertificateAuthenticationMethodConfiguration(
 			id = "all_users",
 			is_registration_required = False,
 		),
-	]
+	],
 )
 
-result = await graph_client.policies.authentication_method_policy.authentication_method_configurations.by_authentication_method_configuration_id('authenticationMethodConfiguration-id').patch(body = request_body)
+result = await graph_client.policies.authentication_methods_policy.authentication_method_configurations.by_authentication_method_configuration_id('authenticationMethodConfiguration-id').patch(request_body)
 
 
 ```

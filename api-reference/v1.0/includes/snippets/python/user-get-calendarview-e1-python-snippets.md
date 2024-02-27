@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.calendarView.calendar_view_request_builder import CalendarViewRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = CalendarViewRequestBuilder.CalendarViewRequestBuilderGetQueryParameters(
 		start_date_time = "2020-01-01T19:00:00-08:00",

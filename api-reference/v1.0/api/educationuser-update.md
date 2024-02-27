@@ -16,13 +16,10 @@ Update the properties of an [educationUser](../resources/educationuser.md) objec
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Not supported.  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "educationuser_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationuser-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +30,7 @@ PATCH /education/users/{id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -51,7 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 | externalSource       | educationExternalSource                                            | Where this user was created from. Possible values are: `sis`, `manual`.                                                                                                                                                                                                                                                                                     |
 | externalSourceDetail | String                                                             | The name of the external source from which this resource was generated from.                                                                                                                                                                                                                                                                                          |
 | givenName            | String                                                             | The given name (first name) of the user. Supports $filter.                                                                                                                                                                                                                                                                                                  |
-| mail                 | String                                                             | The SMTP address for the user; for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.                                                                                                                                                                                                                                                    |
+| mail                 | String                                                             | The SMTP address for the user; for example, "jeff@contoso.com". Read-Only. Supports $filter.                                                                                                                                                                                                                                                    |
 | mailingAddress       | [physicalAddress](../resources/physicaladdress.md)                 | Mail address of user.                                                                                                                                                                                                                                                                                                                                       |
 | mailNickname         | String                                                             | The mail alias for the user. This property must be specified when a user is created. Supports $filter.                                                                                                                                                                                                                                                      |
 | middleName           | String                                                             | The middle name of user.                                                                                                                                                                                                                                                                                                                                    |

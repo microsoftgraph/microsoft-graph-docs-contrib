@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.enriched_audit_logs import EnrichedAuditLogs
+from msgraph.generated.models.enriched_audit_logs_settings import EnrichedAuditLogsSettings
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EnrichedAuditLogs(
 	odata_type = "#microsoft.graph.networkaccess.enrichedAuditLogs",
@@ -21,7 +23,7 @@ request_body = EnrichedAuditLogs(
 	),
 )
 
-result = await graph_client.network_access.settings.enriched_audit_logs.patch(body = request_body)
+result = await graph_client.network_access.settings.enriched_audit_logs.patch(request_body)
 
 
 ```

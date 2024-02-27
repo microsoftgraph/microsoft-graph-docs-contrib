@@ -4,9 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph.generated.models.requestor_settings import RequestorSettings
+from msgraph.generated.models.user_set import UserSet
+from msgraph.generated.models.single_user import SingleUser
+from msgraph.generated.models.approval_settings import ApprovalSettings
+from msgraph.generated.models.approval_stage import ApprovalStage
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageAssignmentPolicy(
 	access_package_id = "88203d16-0e31-41d4-87b2-dd402f1435e9",
@@ -24,7 +30,7 @@ request_body = AccessPackageAssignmentPolicy(
 				id = "007d1c7e-7fa8-4e33-b678-5e437acdcddc",
 				description = "Requestor1",
 			),
-		]
+		],
 	),
 	request_approval_settings = ApprovalSettings(
 		is_approval_required = False,
@@ -32,11 +38,11 @@ request_body = AccessPackageAssignmentPolicy(
 		is_requestor_justification_required = False,
 		approval_mode = "NoApproval",
 		approval_stages = [
-		]
+		],
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.acces_package_assignment_policies.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_policies.post(request_body)
 
 
 ```

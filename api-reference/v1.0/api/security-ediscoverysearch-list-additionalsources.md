@@ -17,13 +17,10 @@ Get the list of [additional sources](../resources/security-datasource.md) associ
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_ediscoverysearch_list_additionalsources" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoverysearch-list-additionalsources-permissions.md)]
 
 ## HTTP request
 
@@ -41,10 +38,10 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -100,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-418
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -121,7 +118,7 @@ Content-Type: application/json
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
             "id": "43434642-3137-3138-3432-374142313639",
-            "email": "AlexW@M365x809305.OnMicrosoft.com",
+            "email": "AlexW@contoso.com",
             "includedSources": "mailbox",
             "siteWebUrl": null,
             "createdBy": {
@@ -138,7 +135,7 @@ Content-Type: application/json
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
             "id": "38423145-4639-4244-4437-464630424139",
-            "email": "IrvinS@M365x809305.OnMicrosoft.com",
+            "email": "IrvinS@contoso.com",
             "includedSources": "mailbox",
             "siteWebUrl": null,
             "createdBy": {
@@ -155,7 +152,7 @@ Content-Type: application/json
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
             "id": "36304536-3033-3845-4639-394538443235",
-            "email": "AllanD@M365x809305.OnMicrosoft.com",
+            "email": "AllanD@contoso.com",
             "includedSources": "mailbox",
             "siteWebUrl": null,
             "createdBy": {

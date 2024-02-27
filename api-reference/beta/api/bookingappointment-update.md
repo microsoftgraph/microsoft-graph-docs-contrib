@@ -19,13 +19,10 @@ Update the properties of a [bookingAppointment](../resources/bookingappointment.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
+<!-- { "blockType": "permissions", "name": "bookingappointment_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingappointment-update-permissions.md)]
 
 > [!NOTE]
 > If you create a custom app using application permissions, you must follow the [Business rules validation](/graph/bookingsbusiness-business-rules).
@@ -34,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}/appointments/{id}
+PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 ```
 
 ## Optional request headers
@@ -102,10 +99,10 @@ The following example changes the date of service by a day and updates the invoi
 <!-- {
   "blockType": "request",
   "name": "update_bookingappointment",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "AAMkADKnAAA="]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "AAMkADKnAAA="]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
+PATCH https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.com/appointments/AAMkADKnAAA=
 Content-type: application/json
 
 {
@@ -152,10 +149,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-bookingappointment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingappointment-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-bookingappointment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -163,7 +156,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -4,9 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph.generated.models.requestor_settings import RequestorSettings
+from msgraph.generated.models.user_set import UserSet
+from msgraph.generated.models.access_package_question import AccessPackageQuestion
+from msgraph.generated.models.custom_extension_stage_setting import CustomExtensionStageSetting
+from msgraph.generated.models.custom_callout_extension import CustomCalloutExtension
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageAssignmentPolicy(
 	display_name = "extension-policy",
@@ -18,14 +24,14 @@ request_body = AccessPackageAssignmentPolicy(
 		accept_requests = True,
 		scope_type = "AllExistingDirectorySubjects",
 		allowed_requestors = [
-		]
+		],
 		additional_data = {
 				"is_on_behalf_allowed" : False,
 		}
 	),
 	access_review_settings = None,
 	questions = [
-	]
+	],
 	custom_extension_stage_settings = [
 		CustomExtensionStageSetting(
 			stage = AccessPackageCustomExtensionStage.AssignmentRequestCreated,
@@ -39,16 +45,16 @@ request_body = AccessPackageAssignmentPolicy(
 				id = "219f57b6-7983-45a1-be01-2c228b7a43f8",
 			),
 		),
-	]
+	],
 	additional_data = {
-			"expiration" : (
-				type = "afterDuration",
-				duration = "P365D",
-			),
+			"expiration" : {
+					"type" : "afterDuration",
+					"duration" : "P365D",
+			},
 	}
 )
 
-result = await graph_client.identity_governance.entitlement_management.acces_package_assignment_policies.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_policies.post(request_body)
 
 
 ```

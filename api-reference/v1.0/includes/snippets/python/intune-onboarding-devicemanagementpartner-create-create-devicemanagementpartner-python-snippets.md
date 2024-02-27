@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_management_partner import DeviceManagementPartner
+from msgraph.generated.models.device_management_partner_assignment import DeviceManagementPartnerAssignment
+from msgraph.generated.models.configuration_manager_collection_assignment_target import ConfigurationManagerCollectionAssignmentTarget
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceManagementPartner(
 	odata_type = "#microsoft.graph.deviceManagementPartner",
@@ -26,10 +29,10 @@ request_body = DeviceManagementPartner(
 				collection_id = "Collection Id value",
 			),
 		),
-	]
+	],
 )
 
-result = await graph_client.device_management.device_management_partners.post(body = request_body)
+result = await graph_client.device_management.device_management_partners.post(request_body)
 
 
 ```

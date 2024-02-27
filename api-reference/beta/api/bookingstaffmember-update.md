@@ -18,18 +18,15 @@ Update the properties of a [bookingStaffMember](../resources/bookingstaffmember.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+<!-- { "blockType": "permissions", "name": "bookingstaffmember_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingstaffmember-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}/staffMembers/{id}
+PATCH /solutions/bookingbusinesses/{id}/staffMembers/{id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -52,7 +49,7 @@ In the request body, supply the values for relevant fields that should be update
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|
 
 ## Response
-If successful, this method returns a `204 No content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No content` response code. It doesn't return anything in the response body.
 ## Example
 ### Request
 The following example changes the staff member's schedule to have Mondays off.
@@ -61,10 +58,10 @@ The following example changes the staff member's schedule to have Mondays off.
 <!-- {
   "blockType": "request",
   "name": "update_bookingstaffmember",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "8ee1c803-a1fa-406d-8259-7ab53233f148"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "8ee1c803-a1fa-406d-8259-7ab53233f148"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/8ee1c803-a1fa-406d-8259-7ab53233f148
+PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/staffMembers/8ee1c803-a1fa-406d-8259-7ab53233f148
 Content-type: application/json
 
 {
@@ -158,10 +155,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-bookingstaffmember-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingstaffmember-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-bookingstaffmember-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -169,7 +162,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

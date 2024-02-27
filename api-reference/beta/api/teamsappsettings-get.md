@@ -17,16 +17,10 @@ Read the properties and relationships of a [teamsAppSettings](../resources/teams
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|TeamworkAppSettings.Read.All, TeamworkAppSettings.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
-
-> [!NOTE]
-> TeamworkAppSettings.* permissions might not be visible in the Azure portal. For details and workarounds, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=14974).
+<!-- { "blockType": "permissions", "name": "teamsappsettings_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/teamsappsettings-get-permissions.md)]
 
 ## HTTP request
 
@@ -44,10 +38,10 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,10 +49,9 @@ If successful, this method returns a `200 OK` response code and a [teamsAppSetti
 
 ## Examples
 
-### Example 1: Get the tenant-wide settings for all Teams apps in the tenant.
+### Request
 
-#### Request
-
+The following example shows a request that gets the tenant-wide settings for all Teams apps in the tenant.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +97,9 @@ GET https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 
 ---
 
-#### Response
+### Response
+
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -128,6 +123,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

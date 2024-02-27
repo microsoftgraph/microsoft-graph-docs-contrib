@@ -21,13 +21,10 @@ be returned for more than one recipient at one time. The requested MailTips are 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.Read.Shared    |
-|Delegated (personal Microsoft account) | Mail.Read    |
-|Application | Mail.Read |
+<!-- { "blockType": "permissions", "name": "user_getmailtips" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-getmailtips-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +37,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Header       | Value|
 |:-----------  |:------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -70,8 +67,8 @@ Content-Type: application/json
 
 {
     "EmailAddresses": [
-        "danas@contoso.onmicrosoft.com",
-        "fannyd@contoso.onmicrosoft.com"
+        "danas@contoso.com",
+        "fannyd@contoso.com"
     ],
     "MailTipsOptions": "automaticReplies, mailboxFullStatus"
 }
@@ -129,7 +126,7 @@ Content-type: application/json
         {
             "emailAddress":{
                 "name":"",
-                "address":"danas@contoso.onmicrosoft.com"
+                "address":"danas@contoso.com"
             },
             "automaticReplies":{
                 "message":"<style type=\"text/css\" style=\"\">\r\n<!--\r\np\r\n\t{margin-top:0;\r\n\tmargin-bottom:0}\r\n-->\r\n</style>\r\n<div dir=\"ltr\">\r\n<div id=\"x_divtagdefaultwrapper\" style=\"font-size:12pt; color:#000000; background-color:#FFFFFF; font-family:Calibri,Arial,Helvetica,sans-serif\">\r\n<p>Hi, I am on vacation right now. I'll get back to you after I return.<br>\r\n</p>\r\n</div>\r\n</div>",
@@ -151,7 +148,7 @@ Content-type: application/json
         {
             "emailAddress":{
                 "name":"",
-                "address":"fannyd@contoso.onmicrosoft.com"
+                "address":"fannyd@contoso.com"
             },
             "automaticReplies":{
                 "message":""

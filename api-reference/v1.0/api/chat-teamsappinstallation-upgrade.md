@@ -14,22 +14,18 @@ Namespace: microsoft.graph
 Upgrade an [app installation](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
 
 > **Notes**:
-> - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then effectively, the **teamsApp** installed in the meeting will get upgraded.
+> - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then effectively, the **teamsApp** installed in the meeting gets upgraded.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat<sup>1</sup>, TeamsAppInstallation.ReadWriteForChat<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentSelfForChat, TeamsAppInstallation.ReadWriteAndConsentForChat |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application |  TeamsAppInstallation.ReadWriteSelfForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All |
+<!-- { "blockType": "permissions", "name": "chat_teamsappinstallation_upgrade" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-teamsappinstallation-upgrade-permissions.md)]
 
-> **Notes:**
-<br><sup>1</sup> These permissions cannot be used to install apps that require consent to resource-specific permissions.
+> **Note:** The TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteSelfForChat.All, and TeamsAppInstallation.ReadWriteForChat.All permissions can't be used to install apps that require consent to resource-specific permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,6 +33,13 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /chats/{chat-id}/installedApps/{app-installation-id}/upgrade
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -104,7 +107,7 @@ POST https://graph.microsoft.com/v1.0/chats/19:ea28e88c00e94c7786b065394a61f296@
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/upgrade-installedapps-in-chat-v1-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -114,6 +117,8 @@ POST https://graph.microsoft.com/v1.0/chats/19:ea28e88c00e94c7786b065394a61f296@
 ---
 
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -130,6 +135,8 @@ HTTP/1.1 204 No Content
 To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -193,6 +200,8 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response"
 } -->
@@ -201,7 +210,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

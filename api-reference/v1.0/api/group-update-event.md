@@ -1,7 +1,7 @@
 ---
 title: "Update event"
 description: "Update an event object."
-author: "Jordanndahl"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -18,7 +18,7 @@ Update an [event](../resources/event.md) object.
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Group.ReadWrite.All                         |
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -109,7 +109,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -187,7 +187,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Johanna Lorenz",
-                "address": "JohannaL@contoso.OnMicrosoft.com"
+                "address": "JohannaL@contoso.com"
             }
         },
         {
@@ -198,7 +198,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Retail",
-                "address": "Retail@contoso.onmicrosoft.com"
+                "address": "Retail@contoso.com"
             }
         },
         {
@@ -209,7 +209,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "AlexW@contoso.OnMicrosoft.com"
+                "address": "AlexW@contoso.com"
             }
         },
         {
@@ -220,7 +220,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "MeganB@contoso.OnMicrosoft.com"
+                "address": "MeganB@contoso.com"
             }
         },
         {
@@ -231,14 +231,14 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Nestor Wilke",
-                "address": "NestorW@contoso.OnMicrosoft.com"
+                "address": "NestorW@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Retail",
-            "address": "Retail@contoso.onmicrosoft.com"
+            "address": "Retail@contoso.com"
         }
     }
 }

@@ -150,12 +150,12 @@ To create or update OneNote pages, you need to request appropriate permissions. 
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md#notes-permissions).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).
 
 
 <a name="see-also"></a>
 
-## See also
+## Related content
 
 - [Create OneNote pages](onenote-create-page.md)
 - [Update OneNote page content](onenote-update-page.md)

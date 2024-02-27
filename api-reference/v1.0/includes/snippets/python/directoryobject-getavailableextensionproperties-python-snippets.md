@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.get_available_extension_properties_post_request_body import GetAvailableExtensionPropertiesPostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = GetAvailableExtensionPropertiesPostRequestBody(
 )
 
-result = await graph_client.directory_objects.get_available_extension_properties.post(body = request_body)
+result = await graph_client.directory_objects.get_available_extension_properties.post(request_body)
 
 
 ```

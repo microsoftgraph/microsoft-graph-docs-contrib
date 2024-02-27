@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: activate"
-description: "Activate an inactive assignment to signal that the assignment has action items for teachers and students."
+description: "Activate an inactive assignment to signal that the assignment has further action items for teachers or students."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,19 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers and students. This action can only be performed by a teacher on currently inactive assignments.
+Activate an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers or students. This action can only be performed by a teacher on currently inactive assignments.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                            |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported.                                                                                         |
-| Application                            | Not supported.                                                                                         |
+<!-- { "blockType": "permissions", "name": "educationassignment_activate" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationassignment-activate-permissions.md)]
 
 ## HTTP request
 
@@ -37,11 +34,11 @@ POST /education/classes/{classId}/assignments/{assignmentId}/activate
 ## Request headers
 | Header        | Value                       |
 | :------------ | :------------------------   |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -50,12 +47,12 @@ If successful, this method returns a `200 OK` response code and an [educationAss
 ## Example
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a","2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
+  "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a", "2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
   "name": "post_activateAssignment"
 }-->
 ```http
@@ -97,7 +94,7 @@ POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

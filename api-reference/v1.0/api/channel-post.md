@@ -16,7 +16,8 @@ Create a new [channel](../resources/channel.md) in a team, as specified in the r
 If you're creating a private channel, you can add a maximum of 200 members.
 
 > [!NOTE]
-> Some special characters in the channel name will cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=16692).
+> - Some special characters in the channel name will cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=16692).
+> - When you create a private/shared channel, the SharePoint site might fail to provision. If the site fails to provision after 5 minutes, use the [Get filesFolder](/graph/api/channel-get-filesfolder) API to trigger provisioning.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -26,12 +27,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.Create, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Delegated (work or school account) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Application | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Notes**: 
-> Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward. Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> The Group.ReadWrite.All and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward. Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 >
 > This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 >
@@ -48,7 +49,7 @@ POST /teams/{team-id}/channels
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -120,7 +121,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -212,7 +213,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -396,7 +397,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -493,7 +494,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->
@@ -520,6 +521,52 @@ Content-Length: 0
 }
 -->
 
-## See also
+
+### Example 7: Create a shared channel shared with host team
+
+#### Request
+
+The following example shows how to create a shared channel shared with host team.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "displayName": "My First Shared Channel",
+  "description": "This is my first shared channel",
+  "membershipType": "shared",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')",
+      "roles": [
+        "owner"
+      ]
+    }
+  ],
+  "sharedWithTeams":[
+    {
+      "id": "57fb72d0-d811-46f4-8947-305e6072eaa5"
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
+Content-Length: 0
+```
+
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

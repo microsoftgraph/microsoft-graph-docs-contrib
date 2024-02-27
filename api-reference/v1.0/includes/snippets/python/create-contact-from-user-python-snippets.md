@@ -4,25 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.contact import Contact
+from msgraph.generated.models.email_address import EmailAddress
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Contact(
 	given_name = "Pavel",
 	surname = "Bansky",
 	email_addresses = [
 		EmailAddress(
-			address = "pavelb@fabrikam.onmicrosoft.com",
+			address = "pavelb@contoso.com",
 			name = "Pavel Bansky",
 		),
-	]
+	],
 	business_phones = [
 		"+1 732 555 0102",
-	]
+	],
 )
 
-result = await graph_client.me.contacts.post(body = request_body)
+result = await graph_client.me.contacts.post(request_body)
 
 
 ```

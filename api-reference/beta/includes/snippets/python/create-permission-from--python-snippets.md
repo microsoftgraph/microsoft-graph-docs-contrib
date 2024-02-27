@@ -4,14 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.permission import Permission
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.identity import Identity
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Permission(
 	roles = [
 		"write",
-	]
+	],
 	granted_to_identities = [
 		IdentitySet(
 			application = Identity(
@@ -19,10 +22,10 @@ request_body = Permission(
 				display_name = "Contoso Time Manager App",
 			),
 		),
-	]
+	],
 )
 
-result = await graph_client.sites.by_site_id('site-id').permissions.post(body = request_body)
+result = await graph_client.sites.by_site_id('site-id').permissions.post(request_body)
 
 
 ```

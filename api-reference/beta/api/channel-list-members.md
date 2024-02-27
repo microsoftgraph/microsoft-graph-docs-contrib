@@ -26,13 +26,10 @@ This method supports federation. Only a user who is a member of the shared chann
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)|ChannelMember.Read.All, ChannelMember.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|ChannelMember.Read.All, ChannelMember.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "channel_list_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/channel-list-members-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
@@ -43,17 +40,17 @@ GET /teams/{team-id}/channels/{channel-id}/members
 
 ## Optional query parameters
 
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$filter`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 objects respectively.
 
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -153,7 +150,7 @@ Content-type: application/json
 
 ```
 
-## See also
+## Related content
 
 - [List members of team](team-list-members.md)
 

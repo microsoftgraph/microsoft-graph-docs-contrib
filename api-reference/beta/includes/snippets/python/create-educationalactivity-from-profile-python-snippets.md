@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.educational_activity import EducationalActivity
+from msgraph.generated.models.institution_data import InstitutionData
+from msgraph.generated.models.physical_address import PhysicalAddress
+from msgraph.generated.models.educational_activity_detail import EducationalActivityDetail
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationalActivity(
 	completion_month_year = "Date",
@@ -39,7 +43,7 @@ request_body = EducationalActivity(
 	start_month_year = "Date",
 )
 
-result = await graph_client.me.profile.educational_activities.post(body = request_body)
+result = await graph_client.me.profile.educational_activities.post(request_body)
 
 
 ```

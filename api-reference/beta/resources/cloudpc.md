@@ -21,7 +21,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |:---|:---|:---|
 |[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.|
 |[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.|
-|[Get provisioned cloudPCs](../api/cloudpc-getprovisionedcloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|Get all provisioned Cloud PCs of a specific service plan for users under an Azure Active Directory (AAD) user group.|
+|[Get provisioned cloudPCs](../api/cloudpc-getprovisionedcloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group.|
 |[Change user account type](../api/cloudpc-changeuseraccounttype.md)|None|Change the account type of the user on a specific Cloud PC.|
 |[End grace period](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a [cloudPC](../resources/cloudpc.md) object.|
 |[Get remote action results](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device.|
@@ -43,11 +43,12 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
-|[Get shift work access state](../api/cloudpc-getshiftworkcloudpcaccessstate.md)|[shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values)|Get the access state of the shift work Cloud PC. The possible values are: {unassigned, noLicensesAvailable, activationFailed, active, activating, waitlisted, unknownFutureValue, standbyMode}. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values): {standbyMode}.|
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents that failed to install on the [cloudPC](../resources/cloudpc.md).|
-|[Bulk resize](../api/cloudpc-retrypartneragentinstallation.md)|[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed validation (cloudPC: validateBulkResize). If any devices can't be resized, they'll be labeled as "resize failed," while the remaining devices are `provisioned` for the resize process.|
+|[Bulk resize](../api/cloudpc-retrypartneragentinstallation.md)|[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed validation (cloudPC: validateBulkResize). If any devices can't be resized, they're labeled as "resize failed", while the remaining devices are `provisioned` for the resize process.|
 |[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) collection|Validate that a set of [cloudPC](../resources/cloudpc.md) devices meet the requirements to be bulk resized.|
+|[Get frontline access state](../api/cloudpc-getfrontlinecloudpcaccessstate.md)|[frontlineCloudPcAccessState](#frontlinecloudpcaccessstate-values)|Get the access state of the frontline Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `standbyMode`, `unknownFutureValue`.|
+|[Get shift work access state](../api/cloudpc-getshiftworkcloudpcaccessstate.md) (deprecated)|[shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values-deprecated)|Get the access state of the shift work Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `waitlisted`, `unknownFutureValue`, `standbyMode`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this evolvable enum: `standbyMode`. This API is deprecated and will stop returning data on December 31, 2023. Going forward, use the [getFrontlineCloudPcAccessState](../api/cloudpc-getfrontlinecloudpcaccessstate.md) API.|
 |[Reprovision remote action](../api/manageddevice-reprovisioncloudpc.md) (deprecated)|None|Reprovision a Cloud PC with an Intune  [managed device](../resources/cloudpc.md) ID. This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [reprovision](../api/cloudpc-reprovision.md) API.|
 |[Restore remote action](../api/manageddevice-restorecloudpc.md) (deprecated)|None|Restore a Cloud PC device to a previous state with an Intune [managed device](../resources/cloudpc.md) ID. This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [restore](../api/cloudpc-restore.md) API.|
 
@@ -55,7 +56,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|aadDeviceId|String|The Azure Active Directory (Azure AD) device ID of the Cloud PC.|
+|aadDeviceId|String|The Microsoft Entra device ID of the Cloud PC.|
 |connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC can be connected.|
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
@@ -92,8 +93,16 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |encryptedUsingCustomerManagedKey|The Cloud PC is encrypted using the customer-managed key.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
+### cloudPcPowerState values
+
+|Member|Description|
+|:---|:---|
+|running|The Cloud PC status is running.|
+|poweredOff|The Cloud PC status is power off.|
+|unknown|The Cloud PC status is unknown.|
+
 ### cloudPcStatus values
-The following table lists the members of an `[evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this evolvable enum: `movingRegion`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `movingRegion`, `resizePendingLicense`.
 
 |Member|Description|
 |:---|:---|
@@ -111,20 +120,24 @@ The following table lists the members of an `[evolvable enumeration](/graph/best
 |movingRegion|Indicates that the Cloud PC is being moved from one region to another.|
 |resizePendingLicense|Indicates that the Cloud PC resize process has been initiated but can't be completed because the target license hasn't been identified. It's currently awaiting customer action to resolve the licensing issue.|
 
-### cloudPcPowerState values
+### frontlineCloudPcAccessState values
 
 |Member|Description|
 |:---|:---|
-|running|The Cloud PC status is running.|
-|poweredOff|The Cloud PC status is power off.|
-|unknown|The Cloud PC status is unknown.|
+|unassigned|Set to unassigned if the Cloud PC doesn't consume any shared-use licenses. The default value is `unassigned`.|
+|noLicensesAvailable|Indicates that all shared-use licenses are in use.|
+|activationFailed|Indicates that the frontline Cloud PC activation failed after the user requested a frontline Cloud PC.|
+|active|Indicates that the frontline Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
+|activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
+|standbyMode|Indicates that the frontline Cloud PC is in a standby state before it's shut down and deallocated. A frontline Cloud PC in standby state is still accessible by the user.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
-### shiftWorkCloudPcAccessState values
-The following table lists the members of an [evolvable enumeration](#shiftworkcloudpcaccessstate-values). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `standbyMode`.
+### shiftWorkCloudPcAccessState values (deprecated)
+The following table lists the members of an [evolvable enumeration](#shiftworkcloudpcaccessstate-values-deprecated). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `standbyMode`.
 
 |Member|Description|
 |:---|:---|
-|unassigned|Set to unassigned if the Cloud PC isn't consuming any shared-use licenses. The default value is unassigned.|
+|unassigned|Set to unassigned if the Cloud PC isn't consuming any shared-use licenses. The default value is `unassigned`.|
 |noLicensesAvailable|Indicates that all shared-use licenses are in use.|
 |activationFailed|Indicates that the shift work Cloud PC activation failed after the user requested a shift work Cloud PC.|
 |active|Indicates that the shift work Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
@@ -139,7 +152,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

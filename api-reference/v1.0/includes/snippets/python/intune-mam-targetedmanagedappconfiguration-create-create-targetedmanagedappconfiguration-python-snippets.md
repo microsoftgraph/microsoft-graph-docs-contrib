@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.targeted_managed_app_configuration import TargetedManagedAppConfiguration
+from msgraph.generated.models.key_value_pair import KeyValuePair
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TargetedManagedAppConfiguration(
 	odata_type = "#microsoft.graph.targetedManagedAppConfiguration",
@@ -19,12 +21,12 @@ request_body = TargetedManagedAppConfiguration(
 			name = "Name value",
 			value = "Value value",
 		),
-	]
+	],
 	deployed_app_count = 0,
 	is_assigned = True,
 )
 
-result = await graph_client.device_app_management.targeted_managed_app_configurations.post(body = request_body)
+result = await graph_client.device_app_management.targeted_managed_app_configurations.post(request_body)
 
 
 ```

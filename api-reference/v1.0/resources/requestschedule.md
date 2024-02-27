@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-In PIM when creating or updating a [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) or [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) object, use this resource to define the schedule for when the principal will have an eligible or active role assignment. The settings allowed for this object are dependent on the [settings for the Azure AD role](../api/unifiedrolemanagementpolicy-list-rules.md).
+In [PIM for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) and [PIM for Groups](privilegedidentitymanagement-for-groups-api-overview.md), use this resource to define the schedule for when the principal will have an eligible or active role assignment.
 
 ## Properties
 |Property|Type|Description|
@@ -42,4 +42,3 @@ Here's a JSON representation of the resource.
   }
 }
 ```
-

@@ -33,7 +33,7 @@ Defines a tenant added to a multitenant organization.
 |joinedDateTime|DateTimeOffset|Date and time when the tenant joined the multitenant organization. Read-only.|
 |role|multiTenantOrganizationMemberRole|Role of the tenant in the multitenant organization. The possible values are: `owner`, `member` (default), `unknownFutureValue`. Tenants with the owner role can manage the multitenant organization but tenants with the member role can only participate in a multitenant organization. There can be multiple tenants with the owner role in a multitenant organization. |
 |state|multiTenantOrganizationMemberState|State of the tenant in the multitenant organization. The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`. Tenants in the pending state must [join the multitenant organization](../api/multitenantorganizationjoinrequestrecord-update.md) to participate in the multitenant organization. Tenants in the active state can participate in the multitenant organization. Tenants in the removed state are in the process of being removed from the multitenant organization. Read-only.|
-|tenantId|String|Tenant ID of the Azure Active Directory tenant added to the multitenant organization. Set at the time tenant is added.<br><br>Supports `$filter`. Key.|
+|tenantId|String|Tenant ID of the Microsoft Entra tenant added to the multitenant organization. Set at the time tenant is added.<br><br>Supports `$filter`. Key.|
 |transitionDetails|[multiTenantOrganizationMemberTransitionDetails](../resources/multitenantorganizationmembertransitiondetails.md)|Details of the processing status for a tenant in a multitenant organization. Read-only. Nullable.|
 
 ## Relationships
@@ -63,4 +63,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

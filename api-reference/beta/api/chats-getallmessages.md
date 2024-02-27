@@ -17,17 +17,14 @@ Get all messages from all [chats](../resources/chatmessage.md) that a user is a 
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)| Not supported |
-|Delegated (personal Microsoft account) | Not supported |
-|Application | Chat.Read.All, Chat.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "chats_getallmessages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chats-getallmessages-permissions.md)]
 
 ## HTTP request
 
@@ -51,10 +48,21 @@ GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
 ```
 >**Note:** If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
+This method supports different filtering scenarios:
+
+|Scenario                                  | Filter parameter                                                                       |Possible values                                                                                             |
+|:-----------------------------------------|:---------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+|Get messages sent by user identity type   |$filter=from/user/userIdentityType eq '{teamworkUserIdentityType}'                      |aadUser, onPremiseAadUser, anonymousGuest, federatedUser, personalMicrosoftAccountUser, skypeUser, phoneUser|
+|Get messages sent by application type     |$filter=from/application/applicationIdentityType eq '{teamworkApplicationIdentity}'     |aadApplication, bot, tenantBot, office365Connector, outgoingWebhook                                         |
+|Get messages sent by user id              |$filter=from/user/id eq '{oid}'                                                         ||
+|Get control(system event) messages        |$filter=messageType eq 'systemEventMessage'                                             ||
+|Exclude control (system event) messages   |$filter=messageType ne 'systemEventMessage'                                             ||
+>**Note:** These filter clauses can be joined using the `or` operator. A filter clause can appear more than once in a query, and it can filter on a different value each time it appears within the query.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -145,6 +153,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

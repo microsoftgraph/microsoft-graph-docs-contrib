@@ -4,9 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_assignment_request import AccessPackageAssignmentRequest
+from msgraph.generated.models.access_package_assignment import AccessPackageAssignment
+from msgraph.generated.models.access_package_answer import AccessPackageAnswer
+from msgraph.generated.models.access_package_answer_string import AccessPackageAnswerString
+from msgraph.generated.models.access_package_multiple_choice_question import AccessPackageMultipleChoiceQuestion
+from msgraph.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageAssignmentRequest(
 	request_type = "UserAdd",
@@ -32,10 +38,10 @@ request_body = AccessPackageAssignmentRequest(
 				id = "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
 			),
 		),
-	]
+	],
 )
 
-result = await graph_client.identity_governance.entitlement_management.acces_package_assignment_requests.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_requests.post(request_body)
 
 
 ```

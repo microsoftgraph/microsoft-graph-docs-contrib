@@ -23,13 +23,10 @@ Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
+<!-- { "blockType": "permissions", "name": "chat_get_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-get-members-permissions.md)]
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -48,11 +45,11 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -136,7 +133,7 @@ Content-type: application/json
     "displayName": "Niklas Lang",
     "visibleHistoryStartDateTime": "2022-05-02T12:49:36.881Z",
     "userId": "8c0c0a2a-c679-401e-adc3-a45b548889a6",
-    "email": "Niklas.Lang@BechtleDAI.onmicrosoft.com",
+    "email": "Niklas.Lang@contoso.com",
     "tenantId": "0f81b1ea-b857-4a9c-99eb-e998d52046d5"
 }
 ```

@@ -24,10 +24,10 @@ EWS has all or nothing access model and there is no granular scoping for limitin
 
 For a full list of Exchange-related Microsoft Graph permissions, see:
 
-- [Mail permissions](permissions-reference.md#mail-permissions)
-- [Calendar permissions](permissions-reference.md#calendars-permissions)
-- [Personal contacts permissions](permissions-reference.md#contacts-permissions)
-- [Tasks permissions](permissions-reference.md#tasks-permissions)
+- Mail permissions
+- Calendar permissions
+- Personal contacts permissions
+- Tasks permissions
 
 ## Impersonation
 

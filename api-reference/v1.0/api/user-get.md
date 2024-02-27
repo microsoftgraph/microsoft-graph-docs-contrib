@@ -2,6 +2,7 @@
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -20,13 +21,10 @@ Retrieve the properties and relationships of user object.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | User.Read, User.ReadWrite    |
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "ignored", "name": "user_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-get-permissions.md)]
 
 > [!TIP]
 > 1. Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
@@ -41,7 +39,7 @@ GET /users/{id | userPrincipalName}
 ```
 
 > [!TIP]
-> 
+>
 > + When the **userPrincipalName** begins with a `$` character, the GET request URL syntax `/users/$x@y.com` fails with a `400 Bad Request` error code. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. Remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`. For example, `/users('$AdeleVance@contoso.com')`.
 > + To query a B2B user using the **userPrincipalName**, encode the hash (#) character. That is, replace the `#` symbol with `%23`. For example, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
@@ -54,7 +52,7 @@ GET /me
 ## Optional query parameters
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those that are not returned by default.
 
-By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). 
+By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).
 
 To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`.
 
@@ -70,11 +68,11 @@ Extension properties also support query parameters as follows:
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -88,7 +86,7 @@ This method returns `202 Accepted` when the request has been processed successfu
 
 #### Request
 
-By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). This example illustrates the default request and response. 
+By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). This example illustrates the default request and response.
 
 
 # [HTTP](#tab/http)
@@ -152,12 +150,12 @@ Content-type: application/json
    "displayName": "Adele Vance",
    "givenName": "Adele",
    "jobTitle": "Retail Manager",
-   "mail": "AdeleV@contoso.onmicrosoft.com",
+   "mail": "AdeleV@contoso.com",
    "mobilePhone": "+1 425 555 0109",
    "officeLocation": "18/2111",
    "preferredLanguage": "en-US",
    "surname": "Vance",
-   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+   "userPrincipalName": "AdeleV@contoso.com",
    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```
@@ -231,12 +229,12 @@ Content-type: application/json
    "displayName": "Adele Vance",
    "givenName": "Adele",
    "jobTitle": "Retail Manager",
-   "mail": "AdeleV@contoso.onmicrosoft.com",
+   "mail": "AdeleV@contoso.com",
    "mobilePhone": "+1 425 555 0109",
    "officeLocation": "18/2111",
    "preferredLanguage": "en-US",
    "surname": "Vance",
-   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+   "userPrincipalName": "AdeleV@contoso.com",
    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```

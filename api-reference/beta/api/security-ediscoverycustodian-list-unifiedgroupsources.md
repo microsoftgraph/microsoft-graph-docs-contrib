@@ -17,13 +17,10 @@ Get a list of the [unifiedGroupSource](../resources/security-unifiedgroupsource.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_ediscoverycustodian_list_unifiedgroupsources" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycustodian-list-unifiedgroupsources-permissions.md)]
 
 ## HTTP request
 
@@ -41,10 +38,10 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -100,7 +97,7 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-418
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -130,7 +127,7 @@ Content-Type: application/json
                 }
             },
             "group": {
-                "email": "Design@M365x809305.onmicrosoft.com",
+                "email": "Design@contoso.com",
                 "webUrl": "https://m365x809305.sharepoint.com/sites/Design",
                 "id": "32e14fa4-3106-4bd2-a245-34bf0c718a7e",
                 "displayName": "Design (Mailbox)",
@@ -152,7 +149,7 @@ Content-Type: application/json
                 }
             },
             "group": {
-                "email": "ceoconnection@M365x809305.onmicrosoft.com",
+                "email": "ceoconnection@contoso.com",
                 "webUrl": "https://m365x809305.sharepoint.com/sites/ceoconnection",
                 "id": "21be9868-b58b-4f8b-800c-591e9ad8d4ec",
                 "displayName": "CEO Connection (Mailbox)",

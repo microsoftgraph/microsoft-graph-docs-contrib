@@ -22,12 +22,12 @@ Delegated permissions are needed to access the service communications API on beh
 
 #### Role-based access control for delegation access
 
-Service communications API also apply the role-based access control (RBAC) to identify whether the signed-in user who is on-behalf has required Azure Active Directory (AAD) role. The signed-in user who is on-behalf of must have at least one of the admin roles.
+Service communications API also apply the role-based access control (RBAC) to identify whether the signed-in user who is on-behalf has required Microsoft Entra role. The signed-in user who is on-behalf of must have at least one of the admin roles.
 
-For more information about the AAD administrator roles, see:
+For more information about the Microsoft Entra administrator roles, see:
 * [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles)
-* [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
-* [Roles in Microsoft 365, including Azure AD, service-specific and cross-service roles](/azure/active-directory/roles/concept-understand-roles#how-azure-ad-roles-are-different-from-other-microsoft-365-roles) 
+* [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json)
+* [Roles in Microsoft 365, including Microsoft Entra ID, service-specific and cross-service roles](/azure/active-directory/roles/concept-understand-roles#how-azure-ad-roles-are-different-from-other-microsoft-365-roles) 
 
 
 ### Access service communications API without user
@@ -63,9 +63,6 @@ For details about national cloud availability, see [Microsoft Graph national clo
 ## Service communications limits
 
 To guarantee the service performance, the service communications API has throttling limits for the requests per tenant per application. For details about the limits, see [throttling limits for the service communications service](/graph/throttling#service-communications-service-limits).
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 

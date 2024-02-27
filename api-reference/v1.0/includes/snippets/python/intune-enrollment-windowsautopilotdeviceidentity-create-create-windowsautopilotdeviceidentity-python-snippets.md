@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows_autopilot_device_identity import WindowsAutopilotDeviceIdentity
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = WindowsAutopilotDeviceIdentity(
 	odata_type = "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -28,7 +29,7 @@ request_body = WindowsAutopilotDeviceIdentity(
 	display_name = "Display Name value",
 )
 
-result = await graph_client.device_management.window_autopilot_device_identities.post(body = request_body)
+result = await graph_client.device_management.windows_autopilot_device_identities.post(request_body)
 
 
 ```

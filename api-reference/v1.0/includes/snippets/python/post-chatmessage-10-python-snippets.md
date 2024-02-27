@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.chat_message import ChatMessage
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.chat_message_attachment import ChatMessageAttachment
+from msgraph.generated.models.chat_message_hosted_content import ChatMessageHostedContent
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ChatMessage(
 	subject = "Announcement Subheading",
@@ -23,7 +27,7 @@ request_body = ChatMessage(
 			name = None,
 			thumbnail_url = None,
 		),
-	]
+	],
 	hosted_contents = [
 		ChatMessageHostedContent(
 			content_bytes = base64.urlsafe_b64decode("iVBORw0KGgoAAAANSUhEUgAABWMAAAEMCAYAAAChuaTsAAAAAXNSR0IArs4"),
@@ -39,10 +43,10 @@ request_body = ChatMessage(
 					"@microsoft_graph_temporary_id" : "2",
 			}
 		),
-	]
+	],
 )
 
-result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.post(body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.post(request_body)
 
 
 ```

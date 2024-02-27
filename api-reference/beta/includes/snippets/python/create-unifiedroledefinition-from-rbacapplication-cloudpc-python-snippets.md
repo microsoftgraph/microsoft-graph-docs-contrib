@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unified_role_definition import UnifiedRoleDefinition
+from msgraph.generated.models.unified_role_permission import UnifiedRolePermission
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnifiedRoleDefinition(
 	description = "An example custom role",
@@ -15,15 +17,15 @@ request_body = UnifiedRoleDefinition(
 		UnifiedRolePermission(
 			allowed_resource_actions = [
 				"Microsoft.CloudPC/CloudPCs/Read",
-			]
+			],
 		),
-	]
+	],
 	additional_data = {
 			"condition" : "null",
 	}
 )
 
-result = await graph_client.role_management.cloud_p_c.role_definitions.post(body = request_body)
+result = await graph_client.role_management.cloud_p_c.role_definitions.post(request_body)
 
 
 ```

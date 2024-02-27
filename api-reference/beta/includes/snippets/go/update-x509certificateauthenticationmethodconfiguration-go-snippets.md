@@ -60,6 +60,10 @@ rules := []graphmodels.X509CertificateRuleable {
 }
 authenticationModeConfiguration.SetRules(rules)
 requestBody.SetAuthenticationModeConfiguration(authenticationModeConfiguration)
+issuerHintsConfiguration := graphmodels.NewX509CertificateIssuerHintsConfiguration()
+state := graphmodels.DISABLED_X509CERTIFICATEISSUERHINTSSTATE 
+issuerHintsConfiguration.SetState(&state) 
+requestBody.SetIssuerHintsConfiguration(issuerHintsConfiguration)
 
 
 authenticationMethodTarget := graphmodels.NewAuthenticationMethodTarget()

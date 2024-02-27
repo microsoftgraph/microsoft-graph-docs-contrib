@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|subject|[user](../resources/user.md)|The unique identifier of the Azure AD user targeted for the task execution.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
+|subject|[user](../resources/user.md)|The unique identifier of the Microsoft Entra user targeted for the task execution.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |task|[task](../resources/identitygovernance-task.md)|The related workflow task|
 
 ## JSON representation

@@ -4,9 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.booking_appointment import BookingAppointment
+from msgraph.generated.models.location import Location
+from msgraph.generated.models.physical_address import PhysicalAddress
+from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph.generated.models.booking_reminder import BookingReminder
+from msgraph.generated.models.booking_customer_information_base import BookingCustomerInformationBase
+from msgraph.generated.models.booking_customer_information import BookingCustomerInformation
+from msgraph.generated.models.outlook_geo_coordinates import OutlookGeoCoordinates
+from msgraph.generated.models.booking_question_answer import BookingQuestionAnswer
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BookingAppointment(
 	odata_type = "#microsoft.graph.bookingAppointment",
@@ -92,7 +101,7 @@ request_body = BookingAppointment(
 					"recipients@odata_type" : "#microsoft.graph.bookingReminderRecipients",
 			}
 		),
-	]
+	],
 	service_id = "57da6774-a087-4d69-b0e6-6fb82c339976",
 	service_location = Location(
 		odata_type = "#microsoft.graph.location",
@@ -171,15 +180,15 @@ request_body = BookingAppointment(
 					question = "What is your age",
 					answer_input_type = AnswerInputType.Text,
 					answer_options = [
-					]
+					],
 					is_required = True,
 					answer = "25",
 					selected_options = [
-					]
+					],
 				),
-			]
+			],
 		),
-	]
+	],
 	additional_data = {
 			"invoice_status@odata_type" : "#microsoft.graph.bookingInvoiceStatus",
 			"price_type@odata_type" : "#microsoft.graph.bookingPriceType",
@@ -187,7 +196,7 @@ request_body = BookingAppointment(
 	}
 )
 
-result = await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').appointments.post(body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').appointments.post(request_body)
 
 
 ```

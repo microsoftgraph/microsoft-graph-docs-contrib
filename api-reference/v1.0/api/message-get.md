@@ -27,7 +27,7 @@ Since the **message** resource supports [extensions](/graph/extensibility-overvi
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Mail.ReadBasic, Mail.Read    |
@@ -65,7 +65,7 @@ Use the `$value` parameter to get the MIME content of a message.
 | Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -167,20 +167,20 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Adele Vance",
-            "address":"adelev@contoso.OnMicrosoft.com"
+            "address":"adelev@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Adele Vance",
-            "address":"adelev@contoso.OnMicrosoft.com"
+            "address":"adelev@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.OnMicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -516,7 +516,7 @@ YW5vdGhlciBtYWlsLg0K
 ```
 
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)

@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.instantiate_post_request_body import InstantiatePostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = InstantiatePostRequestBody(
 	display_name = "AWS Contoso",
 )
 
-result = await graph_client.application_templates.by_application_template_id('applicationTemplate-id').instantiate.post(body = request_body)
+result = await graph_client.application_templates.by_application_template_id('applicationTemplate-id').instantiate.post(request_body)
 
 
 ```

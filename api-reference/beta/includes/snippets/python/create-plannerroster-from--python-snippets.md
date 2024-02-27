@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.planner_roster import PlannerRoster
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PlannerRoster(
 	odata_type = "#microsoft.graph.plannerRoster",
 )
 
-result = await graph_client.planner.rosters.post(body = request_body)
+result = await graph_client.planner.rosters.post(request_body)
 
 
 ```

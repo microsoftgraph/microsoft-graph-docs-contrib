@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Me.Events.Item.Forward;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Me.Events.Item.Forward.ForwardPostRequestBody
+var requestBody = new ForwardPostRequestBody
 {
 	ToRecipients = new List<Recipient>
 	{
@@ -16,13 +18,15 @@ var requestBody = new Microsoft.Graph.Me.Events.Item.Forward.ForwardPostRequestB
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "danas@contoso.onmicrosoft.com",
+				Address = "danas@contoso.com",
 				Name = "Dana Swope",
 			},
 		},
 	},
 	Comment = "Dana, hope you can make this meeting.",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Me.Events["{event-id}"].Forward.PostAsync(requestBody);
 
 

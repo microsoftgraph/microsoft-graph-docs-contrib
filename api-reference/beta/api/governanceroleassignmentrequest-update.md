@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # Update governanceRoleAssignmentRequests
@@ -25,7 +26,7 @@ The following table shows the least privileged permission or permissions require
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
-| Azure AD | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | Not supported. |
+| Microsoft Entra ID | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | Not supported. |
 | Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | Not supported. |
 | [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | Not supported. |
 
@@ -45,7 +46,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 ## Request body
 
-|Parameters	     |Type	                 |Required |Description|
+|Parameters         |Type                     |Required |Description|
 |:-------------|:----------------------|:--------|:----------|
 |reason        |String                 |✓        |The reason provided by the administrator for his decision.|
 |decision        |String                 |✓        |The administrator decision of the role assignment request. The value should be updated as `AdminApproved` or `AdminDenied`.|
@@ -54,7 +55,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ### Response
 This method can only be applied to requests that are in status of `PendingAdminDecision`.
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ##### Request
@@ -134,5 +135,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

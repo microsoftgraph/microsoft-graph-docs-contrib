@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.team import Team
+from msgraph.generated.models.channel import Channel
+from msgraph.generated.models.team_member_settings import TeamMemberSettings
+from msgraph.generated.models.teams_app_installation import TeamsAppInstallation
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Team(
 	channels = [
@@ -18,7 +22,7 @@ request_body = Team(
 			display_name = "Homework 🏋️",
 			is_favorite_by_default = True,
 		),
-	]
+	],
 	member_settings = TeamMemberSettings(
 		allow_create_update_channels = False,
 		allow_delete_channels = False,
@@ -37,14 +41,14 @@ request_body = Team(
 					"teams_app@odata_bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')",
 			}
 		),
-	]
+	],
 	additional_data = {
 			"template@odata_bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
 			"group@odata_bind" : "https://graph.microsoft.com/v1.0/groups('dbd8de4f-5d47-48da-87f1-594bed003375')",
 	}
 )
 
-result = await graph_client.teams.post(body = request_body)
+result = await graph_client.teams.post(request_body)
 
 
 ```

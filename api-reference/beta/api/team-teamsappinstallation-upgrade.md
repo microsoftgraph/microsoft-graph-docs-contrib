@@ -41,7 +41,7 @@ POST /teams/{team-id}/installedApps/{app-installation-id}/upgrade
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -58,7 +58,7 @@ The following table shows additional parameters that can be used with the upgrad
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -106,7 +106,7 @@ POST https://graph.microsoft.com/beta/teams/db5e04be-daa2-4a35-beb1-5e73cc381599
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/upgrade-teamsapp-in-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -117,7 +117,7 @@ POST https://graph.microsoft.com/beta/teams/db5e04be-daa2-4a35-beb1-5e73cc381599
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -202,7 +202,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-## See also
+## Related content
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

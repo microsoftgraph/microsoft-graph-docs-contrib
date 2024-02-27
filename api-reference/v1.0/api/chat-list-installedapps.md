@@ -23,16 +23,17 @@ If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md)
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat,  TeamsAppInstallation.ReadWriteAndConsentSelfForChat<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForChat<sup>1</sup> |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForChat.All<sup>1</sup> |
+<!-- { "blockType": "permissions", "name": "chat_list_installedapps" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-list-installedapps-permissions.md)]
 
-> **Note**:
-<br><sup>1</sup> These permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note:**
+The following permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent):
+> - TeamsAppInstallation.ReadWriteAndConsentSelfForChat
+> - TeamsAppInstallation.ReadWriteAndConsentForChat
+> - TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All
+> - TeamsAppInstallation.ReadWriteAndConsentForChat.All
 
 ## HTTP request
 
@@ -50,11 +51,11 @@ This method supports the `$filter`, `$select`, and `$expand` [OData query parame
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -66,6 +67,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,6 +117,8 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -148,7 +152,7 @@ In the following example, if an instance of an installed app has a [bot](../reso
 
 #### Request
 
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -197,6 +201,8 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 ---
 
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -271,7 +277,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
+The following example shows a request. In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
 
 # [HTTP](#tab/http)
@@ -320,7 +326,7 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -371,6 +377,8 @@ The following example gets the list of any [resource-specific permissions that w
 
 #### Request
 
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -419,6 +427,8 @@ GET https://graph.microsoft.com/v1.0/chats/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
 
 #### Response
 
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -464,7 +474,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

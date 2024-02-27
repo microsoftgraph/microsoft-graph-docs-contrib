@@ -2,7 +2,8 @@
 title: "evaluateDynamicMembershipResult resource type"
 description: "Represents the result of membership evaluation."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: "resourcePageType"
 ---
@@ -19,7 +20,7 @@ Represents the result of membership evaluation.
 
 | Property                        | Type                                                          | Description                                                                                                                                                                                                                                                                                                                                   |
 | :------------------------------ | :------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| membershipRule                  | String                                                        | If a group ID is provided, the value is the membership rule for the group. If a group ID isn't provided, the value is the membership rule that was provided as a parameter. For more information, see [Dynamic membership rules for groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
+| membershipRule                  | String                                                        | If a group ID is provided, the value is the membership rule for the group. If a group ID isn't provided, the value is the membership rule that was provided as a parameter. For more information, see [Dynamic membership rules for groups in Microsoft Entra ID](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
 | membershipRuleEvaluationDetails | [expressionEvaluationDetails](expressionevaluationdetails.md) | Provides a detailed analysis of the membership evaluation result.                                                                                                                                                                                                                                                                             |
 | membershipRuleEvaluationResult  | Boolean                                                       | The value is `true` if the user or device is a member of the group. The value can also be `true` if a membership rule was provided and the user or device passes the rule evaluation; otherwise `false`.                                                                                                                                      |
 

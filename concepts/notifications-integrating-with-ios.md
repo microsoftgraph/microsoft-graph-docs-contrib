@@ -145,7 +145,7 @@ Microsoft Graph notifications, like many other resource types inside Microsoft G
 
 If you're using a Microsoft account, you will need to include the following permissions in your sign-in request: `wl.offline_access"`, `ccs.ReadWrite`, `wns.connect`, `asimovrome.telemetry`, and `https://activity.windows.com/UserActivity.ReadWrite.CreatedByApp`. 
 
-If you're using an Azure AD account, you'll need to request the following audience: `https://cdpcs.access.microsoft.com`.
+If you're using a Microsoft Entra account, you'll need to request the following audience: `https://cdpcs.access.microsoft.com`.
 
 ## Adding the user account to the platform 
 
@@ -247,7 +247,7 @@ A notification is removed from the user notification store only if it is expired
 }
 ```
 
-## See also
+## Related content
 
 - [API reference](/windows/project-rome/notifications/api-reference-for-ios/) for the full set of APIs related to notification features in the SDK. 
 - [Client-side sample](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications) for Android apps.

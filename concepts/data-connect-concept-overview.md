@@ -47,7 +47,7 @@ Data Connect benefits many roles in your organization:
 At a high level, to set up Data Connect, you:
 
 1. Set up your **Microsoft 365 tenant and enable Microsoft Graph Data Connect**.
-2. Set up your **Azure Active Directory app registration**.
+2. Set up your **Microsoft Entra app registration**.
 3. Set up your **Azure Storage resource**.
 4. Set up your **Azure resource with Azure Synapse or Azure Data Factory**.
 5. Monitor data consent requests with **Microsoft 365 Admin Center or PowerShell**.
@@ -56,7 +56,7 @@ For more details about how to get started, see [Build your first Microsoft Graph
 
 ## Microsoft 365 data and datasets
 
-Organizations can access various types of Microsoft 365 data via Microsoft Graph Data Connect. Datasets are available from a wide variety of Microsoft 365 sources, including Azure Active Directory, Outlook, Teams, SharePoint, Viva Insights, and Microsoft groups — and the list is growing. 
+Organizations can access various types of Microsoft 365 data via Microsoft Graph Data Connect. Datasets are available from a wide variety of Microsoft 365 sources, including Microsoft Entra ID, Outlook, Teams, SharePoint, Viva Insights, and Microsoft groups — and the list is growing. 
 
 ![An image that shows various types of Microsoft 365 data that organizations get though Microsoft Graph Data Connect.](images/data-connect-continuing-growth.png)
 
@@ -150,7 +150,7 @@ Microsoft Graph Data Connect consumption charges are billed using Azure subscrip
 
 Read more about the recent [Microsoft Graph Data Connect pricing updates](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-data-connect-pricing-updates-2).
 
-## See also
+## Related content
 
 - [Build your first Microsoft Graph Data Connect application (tutorial)](data-connect-quickstart.yml)
 - [Data Connect frequently asked questions](data-connect-faq.md)

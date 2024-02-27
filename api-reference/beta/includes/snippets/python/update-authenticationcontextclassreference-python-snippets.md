@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.authentication_context_class_reference import AuthenticationContextClassReference
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AuthenticationContextClassReference(
 	id = "c1",
@@ -15,7 +16,7 @@ request_body = AuthenticationContextClassReference(
 	is_available = True,
 )
 
-result = await graph_client.identity.conditional_access.authentication_context_cla_references.by_authentication_context_clas_reference_id('authenticationContextClassReference-id').patch(body = request_body)
+result = await graph_client.identity.conditional_access.authentication_context_class_references.by_authentication_context_class_reference_id('authenticationContextClassReference-id').patch(request_body)
 
 
 ```

@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.event import Event
+from msgraph.generated.models.response_status import ResponseStatus
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Event(
 	original_start_time_zone = "originalStartTimeZone-value",
@@ -16,7 +18,6 @@ request_body = Event(
 		time = "2016-10-19T10:37:00Z",
 	),
 	recurrence = None,
-	uid = "iCalUId-value",
 	reminder_minutes_before_start = 99,
 	is_online_meeting = True,
 	online_meeting_provider = OnlineMeetingProviderType.TeamsForBusiness,
@@ -24,10 +25,10 @@ request_body = Event(
 	hide_attendees = False,
 	categories = [
 		"Red category",
-	]
+	],
 )
 
-result = await graph_client.me.events.by_event_id('event-id').patch(body = request_body)
+result = await graph_client.me.events.by_event_id('event-id').patch(request_body)
 
 
 ```

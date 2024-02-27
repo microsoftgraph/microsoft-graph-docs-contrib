@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.language_proficiency import LanguageProficiency
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = LanguageProficiency(
 	display_name = "Norwegian Bokmål",
@@ -16,7 +17,7 @@ request_body = LanguageProficiency(
 	reading = LanguageProficiencyLevel.NativeOrBilingual,
 )
 
-result = await graph_client.me.profile.languages.post(body = request_body)
+result = await graph_client.me.profile.languages.post(request_body)
 
 
 ```

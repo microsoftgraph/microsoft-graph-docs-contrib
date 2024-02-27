@@ -21,7 +21,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The identifier for an alert incident. For example, it could be a role assignment ID if the incident represents a role assignment. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
-|roleDisplayName|String|The name of the Azure AD [directory role](unifiedroledefinition.md).|
+|roleDisplayName|String|The name of the Microsoft Entra ID [directory role](unifiedroledefinition.md).|
 |roleTemplateId|String|The globally unique identifier for a [directory role](unifiedroledefinition.md).|
 
 ## Relationships
@@ -45,4 +45,3 @@ Here's a JSON representation of the resource.
   "roleDisplayName": "String"
 }
 ```
-

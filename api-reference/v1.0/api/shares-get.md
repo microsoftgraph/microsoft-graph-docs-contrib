@@ -1,6 +1,5 @@
 ---
 author: spgraph-docs-team
-ms.date: 09/10/2017
 title: Access shared items
 ms.localizationpriority: medium
 description: "Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL."
@@ -19,13 +18,10 @@ To use a sharing URL with this API, your app needs to [transform the URL into a 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "shares_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/shares-get-permissions.md)]
 
 ## HTTP request
 
@@ -58,11 +54,13 @@ string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.Get
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
 
-## Optional request headers
+## Request headers
 
-| Name       | Type   | Description                                                    |
-|:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | Optional. Set to one of the `prefer` values documented below.  |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+| Prefer | Optional. String. Set to one of the `prefer` values documented below.  |
 
 ### Prefer header values
 

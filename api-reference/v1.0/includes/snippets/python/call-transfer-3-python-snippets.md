@@ -4,18 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.transfer_post_request_body import TransferPostRequestBody
+from msgraph.generated.models.invitation_participant_info import InvitationParticipantInfo
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.identity import Identity
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TransferPostRequestBody(
 	transfer_target = InvitationParticipantInfo(
 		identity = IdentitySet(
 			additional_data = {
-					"phone" : (
-						odata_type = "#microsoft.graph.identity",
-						id = "+12345678901",
-					),
+					"phone" : {
+							"@odata_type" : "#microsoft.graph.identity",
+							"id" : "+12345678901",
+					},
 			}
 		),
 		additional_data = {
@@ -29,7 +33,7 @@ request_body = TransferPostRequestBody(
 	}
 )
 
-await graph_client.communications.calls.by_call_id('call-id').transfer.post(body = request_body)
+await graph_client.communications.calls.by_call_id('call-id').transfer.post(request_body)
 
 
 ```

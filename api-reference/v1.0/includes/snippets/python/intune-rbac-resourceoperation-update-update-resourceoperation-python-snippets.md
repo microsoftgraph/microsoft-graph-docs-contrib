@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.resource_operation import ResourceOperation
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ResourceOperation(
 	odata_type = "#microsoft.graph.resourceOperation",
@@ -15,7 +16,7 @@ request_body = ResourceOperation(
 	description = "Description value",
 )
 
-result = await graph_client.device_management.resource_operations.by_resource_operation_id('resourceOperation-id').patch(body = request_body)
+result = await graph_client.device_management.resource_operations.by_resource_operation_id('resourceOperation-id').patch(request_body)
 
 
 ```

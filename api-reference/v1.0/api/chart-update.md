@@ -16,13 +16,10 @@ Update the properties of chart object.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "chart_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chart-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -30,16 +27,20 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
 PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 ```
-## Optional request headers
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+
+## Request headers
+
+| Name                | Description                                                                    |
+|:--------------------|:-------------------------------------------------------------------------------|
+| Authorization       | Bearer {code}. Required.                                                       |
+|Content-Type|application/json. Required.|
+| Workbook-Session-Id | Workbook session Id that determines if changes are persisted or not. Optional. |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |height|double|Represents the height, in points, of the chart object.|
 |left|double|The distance, in points, from the left side of the chart to the worksheet origin.|
@@ -52,7 +53,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `200 OK` response code and updated [WorkbookChart](../resources/chart.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +101,8 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

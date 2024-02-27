@@ -21,13 +21,10 @@ Create a new [userFlow](../resources/identityuserflow.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | IdentityUserFlow.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | IdentityUserFlow.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "identityuserflow_post_userflows" } -->
+[!INCLUDE [permissions-table](../includes/permissions/identityuserflow-post-userflows-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ POST /identity/userFlows
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-type | application/json. Required. |
 
 ## Request body
@@ -56,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a new [user
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +104,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -137,7 +134,8 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: create_identityuserflow_from_identitycontainer/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+    "Error: createidentityuserflowfrom_identitycontainer/userFlowTypeVersion:
+      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
 

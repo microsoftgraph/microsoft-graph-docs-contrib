@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Specifies the various policies associated with scopes and roles. For policies that apply to Azure RBAC, use the [Azure REST PIM API for role management policies](/rest/api/authorization/role-management-policies).
 
-Currently, all policies and associated rules are read-only.
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
@@ -39,7 +37,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[identity](../resources/identity.md)|The identity who last modified the role setting.|
 |lastModifiedDateTime|DateTimeOffset|The time when the role setting was last modified.|
 |scopeId|String|The identifier of the scope where the policy is created. Can be `/` for the tenant or a group ID. Required.|
-|scopeType|String|The type of the scope where the policy is created. One of `Directory`, `DirectoryRole`. Required.|
+|scopeType|String|The type of the scope where the policy is created. One of `Directory`, `DirectoryRole`, `Group`. Required.|
 
 ## Relationships
 |Relationship|Type|Description|

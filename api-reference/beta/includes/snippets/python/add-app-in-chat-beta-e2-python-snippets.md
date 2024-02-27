@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.teams_app_installation import TeamsAppInstallation
+from msgraph.generated.models.teams_app_permission_set import TeamsAppPermissionSet
+from msgraph.generated.models.teams_app_resource_specific_permission import TeamsAppResourceSpecificPermission
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TeamsAppInstallation(
 	consented_permission_set = TeamsAppPermissionSet(
@@ -27,14 +30,14 @@ request_body = TeamsAppInstallation(
 				permission_value = "ChatMessage.Read.Chat",
 				permission_type = TeamsAppResourceSpecificPermissionType.Application,
 			),
-		]
+		],
 	),
 	additional_data = {
 			"teams_app@odata_bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/2b524e28-95ce-4c9b-9773-4a5bd6ec1770",
 	}
 )
 
-result = await graph_client.chats.by_chat_id('chat-id').installed_apps.post(body = request_body)
+result = await graph_client.chats.by_chat_id('chat-id').installed_apps.post(request_body)
 
 
 ```

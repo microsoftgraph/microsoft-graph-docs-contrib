@@ -1,6 +1,6 @@
 ---
 title: "List teamsApp"
-description: "List apps from the Microsoft Teams app catalog. "
+description: "List apps from the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -23,16 +23,13 @@ This includes apps from the Microsoft Teams store, as well as apps from your org
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission Type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All<sup>1</sup>, Directory.ReadWrite.All<sup>1</sup> |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "appcatalogs_list_teamsapps" } -->
+[!INCLUDE [permissions-table](../includes/permissions/appcatalogs-list-teamsapps-permissions.md)]
 
 > **Note**:
-<br><sup>1</sup> These permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
+The Directory.Read.All and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
 
 ## HTTP request
 
@@ -54,11 +51,11 @@ Using `$expand=AppDefinitions` will return more information about the state of t
 
 | Header        | Value                     |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -72,7 +69,7 @@ The following example lists all applications that are specific to your tenant.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -122,7 +119,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionM
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -153,7 +150,7 @@ The following example lists applications with a given ID.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -201,7 +198,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq 'b1c535
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -233,7 +230,7 @@ The following example lists applications that match the **id** specified in the 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -281,7 +278,7 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=externalId e
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -314,7 +311,7 @@ The following example lists applications with a given ID, and expands **appDefin
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -362,7 +359,7 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -407,7 +404,7 @@ The following example lists only those apps in the catalog that contain a bot.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -455,7 +452,7 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitio
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -546,7 +543,7 @@ The following example lists only those apps that can be installed in the persona
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -594,7 +591,7 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitio
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -634,7 +631,7 @@ The following example lists the apps with a given ID and returns the resource-sp
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -682,7 +679,7 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id+eq+'a5228
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -733,7 +730,177 @@ Content-Type: application/json
 }
 ```
 
-## See also
+### Example 8: List details of apps in the app catalog that contain dashboard cards
+
+The following example lists only apps in the app catalog that contain a dashboard card.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_with_dashboardcards"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($expand=dashboardCards)&$filter=appDefinitions/any(a:a/dashboardCards/$count+ne+0)
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "Collection(microsoft.graph.teamsApp)",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions(dashboardCards()))",
+  "value": [
+    {
+      "id": "ff43cabf-9244-4260-a68e-5403ec648e96",
+      "externalId": "c8d1b752-2762-4e8c-9aba-3537d339e17a",
+      "displayName": "Dashboard Card App",
+      "distributionMethod": "organization",
+      "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('ff43cabf-9244-4260-a68e-5403ec648e96')/appDefinitions(dashboardCards())",
+      "appDefinitions": [
+        {
+          "id": "ZmY0M2NhYmYtOTI0NC00MjYwLWE2OGUtNTQwM2VjNjQ4ZTk2IyMxLjAuMCMjUHVibGlzaGVk",
+          "teamsAppId": "ff43cabf-9244-4260-a68e-5403ec648e96",
+          "azureADAppId": null,
+          "displayName": "Dashboard Card App",
+          "version": "1.0.0",
+          "requiredResourceSpecificApplicationPermissions": [],
+          "publishingState": "published",
+          "shortdescription": "Test app with dashboard cards",
+          "description": "Test app with dashboard cards",
+          "lastModifiedDateTime": null,
+          "allowedInstallationScopes": "team,groupChat,personal",
+          "serializedInternalDefinition": null,
+          "createdBy": null,
+          "authorization": {
+            "requiredPermissionSet": {
+              "resourceSpecificPermissions": []
+            }
+          },
+          "dashboardCards@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('ff43cabf-9244-4260-a68e-5403ec648e96')/appDefinitions('ZmY0M2NhYmYtOTI0NC00MjYwLWE2OGUtNTQwM2VjNjQ4ZTk2IyMxLjAuMCMjUHVibGlzaGVk')/dashboardCards",
+          "dashboardCards": [
+            {
+              "id": "210a65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "displayName": "sample1",
+              "description": "this is the first sample of the card",
+              "pickerGroupId": "110a65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "defaultSize": "large",
+              "icon": {
+                "iconUrl": null,
+                "officeUIFabricIconName": "VivaLogo"
+              },
+              "contentSource": {
+                "sourceType": "bot",
+                "botConfiguration": {
+                  "botId": "19806762-da13-422d-837a-f1061bc1f572"
+                }
+              }
+            },
+            {
+              "id": "210a65de-24ce-445e-9e1e-dd4ef0f0114a",
+              "displayName": "sample2",
+              "description": "Second sample of dashboard card.",
+              "pickerGroupId": "110b65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "defaultSize": "medium",
+              "icon": {
+                "iconUrl": "https://publiccdn.contoso.com/icons/card-icon.svg",
+                "officeUIFabricIconName": null
+              },
+              "contentSource": {
+                "sourceType": "bot",
+                "botConfiguration": {
+                  "botId": "19806762-da13-422d-837a-f1061bc1f672"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4c3aa29d-ea6b-4e68-9ae0-9e6f1251eea0",
+      "externalId": "c85a15d9-b835-49f4-99d6-a5cbe89734d3",
+      "displayName": "Dashboard Card Test",
+      "distributionMethod": "organization",
+      "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('4c3aa29d-ea6b-4e68-9ae0-9e6f1251eea0')/appDefinitions(dashboardCards())",
+      "appDefinitions": [
+        {
+          "id": "NGMzYWEyOWQtZWE2Yi00ZTY4LTlhZTAtOWU2ZjEyNTFlZWEwIyMxLjAuMCMjUHVibGlzaGVk",
+          "teamsAppId": "4c3aa29d-ea6b-4e68-9ae0-9e6f1251eea0",
+          "azureADAppId": null,
+          "displayName": "Dashboard Card Test",
+          "version": "1.0.0",
+          "requiredResourceSpecificApplicationPermissions": [],
+          "publishingState": "published",
+          "shortdescription": "Test app with dashboard cards",
+          "description": "Test app with dashboard cards",
+          "lastModifiedDateTime": null,
+          "allowedInstallationScopes": "team,groupChat,personal",
+          "serializedInternalDefinition": null,
+          "createdBy": null,
+          "authorization": {
+            "requiredPermissionSet": {
+              "resourceSpecificPermissions": []
+            }
+          },
+          "dashboardCards@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('4c3aa29d-ea6b-4e68-9ae0-9e6f1251eea0')/appDefinitions('NGMzYWEyOWQtZWE2Yi00ZTY4LTlhZTAtOWU2ZjEyNTFlZWEwIyMxLjAuMCMjUHVibGlzaGVk')/dashboardCards",
+          "dashboardCards": [
+            {
+              "id": "210a65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "displayName": "sample1",
+              "description": "this is the first sample of the card",
+              "pickerGroupId": "110a65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "defaultSize": "large",
+              "icon": {
+                "iconUrl": null,
+                "officeUIFabricIconName": "VivaLogo"
+              },
+              "contentSource": {
+                "sourceType": "bot",
+                "botConfiguration": {
+                  "botId": "19806762-da13-422d-837a-f1061bc1f572"
+                }
+              }
+            },
+            {
+              "id": "210a65de-24ce-445e-9e1e-dd4ef0f0114a",
+              "displayName": "sample2",
+              "description": "Second sample of dashboard card.",
+              "pickerGroupId": "110b65de-24ce-445e-9e1e-dd4ef0f0114b",
+              "defaultSize": "medium",
+              "icon": {
+                "iconUrl": "https://publiccdn.contoso.com/icons/card-icon.svg",
+                "officeUIFabricIconName": null
+              },
+              "contentSource": {
+                "sourceType": "bot",
+                "botConfiguration": {
+                  "botId": "19806762-da13-422d-837a-f1061bc1f672"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+## Related content
 
 - [List apps installed in a team](team-list-installedapps.md)
 - [List apps installed in a chat](chat-list-installedapps.md)

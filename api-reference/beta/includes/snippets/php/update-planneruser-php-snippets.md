@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerUser();
@@ -25,7 +25,7 @@ $recentPlanReferences = new PlannerRecentPlanReferenceCollection();
 $additionalData = [
 	'jd8S5gOaFk2S8aWCIAJz42QAAxtD' => [
 		'@odata.type' => '#microsoft.graph.plannerRecentPlanReference',
-		'lastAccessedDateTime' => '2018-01-02T22:49:46.155Z',
+		'lastAccessedDateTime' => new \DateTime('2018-01-02T22:49:46.155Z'),
 		'planTitle' => 'Next Release Discussion',
 	],
 ];

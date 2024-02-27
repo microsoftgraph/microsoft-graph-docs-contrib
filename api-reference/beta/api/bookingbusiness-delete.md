@@ -18,18 +18,15 @@ Delete a [bookingBusiness](../resources/bookingbusiness.md) object.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
+<!-- { "blockType": "permissions", "name": "bookingbusiness_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingbusiness-delete-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/{id}
+DELETE /solutions/bookingBusinesses/{id}
 
 ```
 ## Request headers
@@ -52,10 +49,10 @@ Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_bookingbusiness",
-  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
+DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/fabrikam@contoso.com
 ```
 
 # [C#](#tab/csharp)
@@ -80,10 +77,6 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmic
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-bookingbusiness-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingbusiness-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

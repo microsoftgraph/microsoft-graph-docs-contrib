@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.cloud_pc_external_partner_setting import CloudPcExternalPartnerSetting
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CloudPcExternalPartnerSetting(
 	odata_type = "#microsoft.graph.cloudPcExternalPartnerSetting",
@@ -14,7 +15,7 @@ request_body = CloudPcExternalPartnerSetting(
 	enable_connection = True,
 )
 
-result = await graph_client.device_management.virtual_endpoint.external_partner_settings.post(body = request_body)
+result = await graph_client.device_management.virtual_endpoint.external_partner_settings.post(request_body)
 
 
 ```

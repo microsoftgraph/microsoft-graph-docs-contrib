@@ -17,18 +17,15 @@ Create [call](../resources/call.md) enables your bot to create a new outgoing pe
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                             |
-|:---------------------------------------|:----------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Not supported.                                                                          |
-| Delegated (personal Microsoft account) | Not supported.                                                                          |
-| Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
+<!-- { "blockType": "permissions", "name": "application_post_calls" } -->
+[!INCLUDE [permissions-table](../includes/permissions/application-post-calls-permissions.md)]
 
 > **Notes:** 
 > - For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the previous table.
 > - Cloud Video Interop solutions that are [Certified for Microsoft Teams](/MicrosoftTeams/cloud-video-interop) have permission to call this API to join meetings for which they have meeting join links, similar to external users joining through a browser.
-> - Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - The Calls.JoinGroupCalls.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +36,7 @@ POST /communications/calls
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.|
 
 ## Request body
@@ -961,7 +958,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/join-scheduled-meeting-service-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -1164,6 +1161,7 @@ Content-Type: application/json
 POST https://bot.contoso.com/callback
 Content-Type: application/json
 ```
+##### Delta roster disabled (default)
 
 <!-- {
   "blockType": "example",
@@ -1252,6 +1250,106 @@ Content-Type: application/json
   ]
 }
 ```
+##### Delta roster enabled
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications",
+  "truncated": true
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resource": "/app/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceUrl": "/communications/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.deltaParticipants",
+          "participants": [
+            {
+              "@odata.type": "#microsoft.graph.participant",
+              "info": {
+                "@odata.type": "#microsoft.graph.participantInfo",
+                "identity": {
+                  "@odata.type": "#microsoft.graph.identitySet",
+                  "user": {
+                    "@odata.type": "#microsoft.graph.identity",
+                    "displayName": "John",
+                    "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+                  }
+                },
+                "languageId": "en-US"
+              },
+              "mediaStreams": [
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "audio",
+                  "sourceId": "1",
+                  "direction": "sendReceive",
+                  "serverMuted": false
+                },
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "video",
+                  "sourceId": "2",
+                  "direction": "receiveOnly",
+                  "serverMuted": false
+                },
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "videoBasedScreenSharing",
+                  "sourceId": "8",
+                  "direction": "receiveOnly",
+                  "serverMuted": false
+                }
+              ],
+              "isMuted": true,
+              "isInLobby": false,
+              "id": "0d7664b6-6432-43ed-8d27-d9e7adec188c",
+              "rosterSequenceNumber": 1
+            },
+            {
+              "@odata.type": "#microsoft.graph.participant",
+              "info": {
+                "@odata.type": "#microsoft.graph.participantInfo",
+                "identity": {
+                  "@odata.type": "#microsoft.graph.identitySet",
+                  "application": {
+                    "@odata.type": "#microsoft.graph.identity",
+                    "displayName": "Calling Bot",
+                    "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+                  }
+                }
+              },
+              "mediaStreams": [
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "audio",
+                  "sourceId": "10",
+                  "direction": "sendReceive",
+                  "serverMuted": false
+                }
+              ],
+              "isMuted": false,
+              "isInLobby": false,
+              "id": "05491616-385f-44a8-9974-18cc5f9933c1",
+              "rosterSequenceNumber": 1,
+              "removedState": {
+                "reason": "Removed from roster"
+              }
+            }
+          ],
+          "sequenceNumber": 1
+        }
+      ]
+    }
+  ]
+}
+```
 
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
@@ -1315,7 +1413,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/join-scheduled-meeting-app-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -1499,7 +1597,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -1662,7 +1760,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -1815,7 +1913,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -2000,7 +2098,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

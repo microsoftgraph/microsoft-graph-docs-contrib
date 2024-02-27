@@ -27,7 +27,7 @@ When the run starts, it connects to the **sourceSystemDefinition** and **dataCon
 
 Next, the system transforms the data for import in preparation for advanced validation. As part of the data transformation, the data is associated based on the configured **yearTimePeriodDefinition**.
 
-The system stores the latest copy of the Azure Active Directory (Azure AD) of the tenant into the Azure Data Lake. The copy of the Azure AD assists with user matching between the **sourceSystemDefinition** and the Azure AD user object. At this stage, the match link is written only to the Azure Data Lake.
+The system stores the latest copy of the Microsoft Entra ID of the tenant into the Azure Data Lake. The copy of the Microsoft Entra assists with user matching between the **sourceSystemDefinition** and the Microsoft Entra user object. At this stage, the match link is written only to the Azure Data Lake.
 
 Next, the inbound flow performs advanced validation to determine data health. The validation focuses on identifying errors and warnings to ensure that good data comes in and bad data stays out. Errors indicate that a record didn't pass validation and was removed from further processing. Warnings indicate that the value on an optional field of a record didn't pass. The value is removed from the record, but the record is included for further processing.
 
@@ -165,10 +165,6 @@ Uploaded data files must be validated before an inbound flow can process the dat
 
 The **validate** action creates a long-running [fileValidateOperation](industrydata-filevalidateoperation.md). The URI for the **fileValidateOperation** is provided in the `Location` header of the response. You can use this URI to track the status of the long-running operation, and any errors or warnings created during validation.
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 
 Use the Microsoft Graph industry data APIs as an extract, transform, and load (ETL) engine. To learn more:
@@ -176,6 +172,6 @@ Use the Microsoft Graph industry data APIs as an extract, transform, and load (E
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-## See also
+## Related content
 
 [Overview of the industry data API in Microsoft Graph](/graph/industrydata-concept-overview)

@@ -112,7 +112,7 @@ The `root` identifier always references the root site for a given target, as fol
 | operations      | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long running operations for the site.                                                                                    |
 | pages           | [baseSitePage][] collection                                                    | The collection of pages in the baseSitePages list in this site.                                                                                |
 | permissions     | [permission][] collection                                                      | The permissions associated with the site. Nullable.                                                                                        |
-| recycleBin      | [recycleBin][]                                                                 | The collection of [recycleBinItems](../resources/recyclebinitem.md) under this site. |
+| recycleBin      | [recycleBin][]                                                                 | A container for a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in this site. |
 | sites           | [site][] collection                                                            | The collection of the sub-sites under this site.                                                                                           |
 | termStore       | [microsoft.graph.termStore.store]                                               | The termStore under this site.                                                                                                             |
 

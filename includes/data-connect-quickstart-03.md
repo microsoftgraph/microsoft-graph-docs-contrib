@@ -4,16 +4,18 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this exercise, you learn how to create an Azure Active Directory (Azure AD) application. This serves as the security principal to run the data extraction process with Microsoft Graph Data Connect.
+In this exercise, you learn how to create a Microsoft Entra application. This serves as the security principal to run the data extraction process with Microsoft Graph Data Connect.
 
 
-## Create a Microsoft Azure Active Directory application
+<a name='create-a-microsoft-azure-active-directory-application'></a>
+
+## Create a Microsoft Entra application
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with at least the *Application Administrator* or*Application Developer* role.
 
 1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
 
-1. Use the following values to create a new Azure AD application and select **Register**.
+1. Use the following values to create a new Microsoft Entra application and select **Register**.
 
    - **Name**: Microsoft Graph Data Connect Data Transfer (provide the name of your choice).
    - **Supported account types**: Accounts in this organizational directory only.

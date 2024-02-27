@@ -1,7 +1,8 @@
 ---
 title: "group: resetUnseenCount"
 description: "Reset the unseenCount of all the posts that the current user hasn't seen since their last visit. Supported for Microsoft 365 groups only."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -17,13 +18,10 @@ Reset the unseenCount of all the posts that the current user hasn't seen since t
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Group.ReadWrite.All                         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+<!-- { "blockType": "permissions", "name": "group_resetunseencount" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-resetunseencount-permissions.md)]
 
 ## HTTP request
 
@@ -37,7 +35,7 @@ POST /groups/{id}/resetUnseenCount
 
 | Header        | Value                                                                                                                                             |
 | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Authorization | Bearer {token}. Required.                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer        | return=minimal. If minimal response header is included in the request header, then a successful response returns `204 No Content` code. Optional. |
 
 ## Request body

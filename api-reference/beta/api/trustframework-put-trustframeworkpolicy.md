@@ -18,13 +18,10 @@ Update an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Policy.ReadWrite.TrustFramework|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|Policy.ReadWrite.TrustFramework|
+<!-- { "blockType": "permissions", "name": "trustframework_put_trustframeworkpolicy" } -->
+[!INCLUDE [permissions-table](../includes/permissions/trustframework-put-trustframeworkpolicy-permissions.md)]
 
 The work or school account must be a global administrator of the tenant.
 
@@ -40,12 +37,12 @@ PUT /trustFramework/policies/{id}/$value
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/xml. Required.|
 
 ## Request body
 
-In the request body, provide an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object. 
+In the request body, provide an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object.
 
 >**Note:** the content type must be `application/xml`.
 
@@ -71,7 +68,7 @@ The following example updates a **trustFrameworkPolicy**.
 PUT https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/$value
 Content-Type: application/xml
 
-<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base">
+<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="contoso.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base">
     <!---PolicyContent-->
 </TrustFrameworkPolicy>
 ```
@@ -86,7 +83,7 @@ Content-Type: application/xml
 HTTP/1.1 200 OK
 Content-Type: application/xml
 
-<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_Test" PublicPolicyUri="http://tenantName.onmicrosoft.com/B2C_1A_Test">
+<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="contoso.com" PolicyId="B2C_1A_Test" PublicPolicyUri="http://contoso.com/B2C_1A_Test">
 	.....
 	....
 	<!---PolicyContent-->

@@ -17,13 +17,10 @@ Create a new [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_ediscoverycase_post_tags" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-post-tags-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -102,6 +99,10 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 [!INCLUDE [sample-code](../includes/snippets/php/create-ediscoveryreviewtag-selectibility-many-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoveryreviewtag-selectibility-many-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-ediscoveryreviewtag-selectibility-many-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -109,7 +110,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -132,7 +133,7 @@ Content-Type: application/json
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         },
         "application": {
             "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
@@ -187,6 +188,10 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 [!INCLUDE [sample-code](../includes/snippets/php/create-tqag-with-a-parent-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-tqag-with-a-parent-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-tqag-with-a-parent-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -194,7 +199,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -217,7 +222,7 @@ Content-Type: application/json
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         },
         "application": {
             "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",

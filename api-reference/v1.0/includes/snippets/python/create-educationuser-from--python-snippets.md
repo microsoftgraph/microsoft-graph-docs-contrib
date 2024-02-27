@@ -4,9 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.education_user import EducationUser
+from msgraph.generated.models.physical_address import PhysicalAddress
+from msgraph.generated.models.education_student import EducationStudent
+from msgraph.generated.models.education_teacher import EducationTeacher
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.assigned_license import AssignedLicense
+from msgraph.generated.models.assigned_plan import AssignedPlan
+from msgraph.generated.models.password_profile import PasswordProfile
+from msgraph.generated.models.provisioned_plan import ProvisionedPlan
+from msgraph.generated.models.education_on_premises_info import EducationOnPremisesInfo
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationUser(
 	odata_type = "#microsoft.graph.educationUser",
@@ -34,15 +44,15 @@ request_body = EducationUser(
 		AssignedLicense(
 			odata_type = "microsoft.graph.assignedLicense",
 		),
-	]
+	],
 	assigned_plans = [
 		AssignedPlan(
 			odata_type = "microsoft.graph.assignedPlan",
 		),
-	]
+	],
 	business_phones = [
 		"String",
-	]
+	],
 	department = "String",
 	display_name = "String",
 	given_name = "String",
@@ -59,7 +69,7 @@ request_body = EducationUser(
 		ProvisionedPlan(
 			odata_type = "microsoft.graph.provisionedPlan",
 		),
-	]
+	],
 	refresh_tokens_valid_from_date_time = "String (timestamp)",
 	show_in_address_list = Boolean,
 	surname = "String",
@@ -71,7 +81,7 @@ request_body = EducationUser(
 	),
 )
 
-result = await graph_client.education.users.post(body = request_body)
+result = await graph_client.education.users.post(request_body)
 
 
 ```

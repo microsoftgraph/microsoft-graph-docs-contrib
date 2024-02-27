@@ -15,7 +15,7 @@ Even though Outlook _does not save_ messages in MIME format, there are two ways 
 - You can append a `$value` segment to a get-message operation on that message.
 - If the message is attached to an Outlook item or group post, you can append a `$value` segment to a get-attachment operation on that item or group post.
 
-In either case, your app must have the appropriate [permissions to access](permissions-reference.md#mail-permissions) the Outlook item or group post in order to apply the get-message or get-attachment operation.
+In either case, your app must have the appropriate [permissions to access](permissions-reference.md) the Outlook item or group post in order to apply the get-message or get-attachment operation.
 
 You can then save the message body content in a .EML file and attach the file to records in business systems, such as those for CRM, ERP, and bug tracking.
 
@@ -205,8 +205,8 @@ Received: from MWHPR22MB1007.namprd22.prod.outlook.com
  ([fe80::1d05:c2d3:92a:f8dc]) by MWHPR22MB1007.namprd22.prod.outlook.com
  ([fe80::1d05:c2d3:92a:f8dc%9]) with mapi id 15.20.1813.017; Mon, 22 Apr 2019
  19:48:16 +0000
-From: Adele Vance <AdeleV@contoso.OnMicrosoft.com>
-To: Megan Bowen <MeganB@contoso.OnMicrosoft.com>
+From: Adele Vance <AdeleV@contoso.com>
+To: Megan Bowen <MeganB@contoso.com>
 Subject: Press conference
 Thread-Topic: Press conference
 Thread-Index: AQHU+UQNzFWFTilRjECtpiWorLYxqA==
@@ -225,9 +225,9 @@ X-MS-Exchange-Organization-SCL: -1
 X-MS-TNEF-Correlator:
 X-MS-Exchange-Organization-RecordReviewCfmType: 0
 x-ms-publictraffictype: Email
-authentication-results: contoso.OnMicrosoft.com; dkim=none (message not
- signed) header.d=none;contoso.OnMicrosoft.com; dmarc=none action=none
- header.from=contoso.OnMicrosoft.com;
+authentication-results: contoso.com; dkim=none (message not
+ signed) header.d=none;contoso.com; dmarc=none action=none
+ header.from=contoso.com;
 x-originating-ip: [2001:4898:80e8:9:9607:7cf8:4576:961c]
 x-ms-office365-filtering-correlation-id: 88bed46b-a860-40fb-591e-08d6c75b76c1
 x-microsoft-antispam:

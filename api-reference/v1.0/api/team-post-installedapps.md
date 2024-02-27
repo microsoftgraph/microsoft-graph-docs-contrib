@@ -13,9 +13,6 @@ Namespace: microsoft.graph
 
 Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
-> [!NOTE]
-> Installing an app with resource-specific consent (RSC) permissions isn't supported in an application context. If you install an app with RSC permissions, it will return the error `412 - Precondition Failed` with `Failed to execute TeamsGraphService backend request IsUserAuthorizedToGrantGroupResourceSpecificPermissionsRequest.Workload Unknown`.
-
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -43,7 +40,7 @@ POST /teams/{team-id}/installedApps
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -61,13 +58,13 @@ The following table lists additional properties that can be included in the requ
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -121,7 +118,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -208,7 +205,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 ```
 
-## See also
+## Related content
 
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

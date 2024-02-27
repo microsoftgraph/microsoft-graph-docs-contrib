@@ -20,24 +20,24 @@ Retrieve a single [message](../resources/chatmessage.md) or a [message reply](..
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions for channel
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
+|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
+|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note:** The Group.Read.All and Group.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ### Permissions for chat
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| Chat.Read, Chat.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| Chat.Read.All, Chat.ReadWrite.All|
 
-> **Note**: The _ChannelMessage.Read.Group_ and _ChatMessage.Read.Chat_ permissions use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note:** The _ChannelMessage.Read.Group_ and _ChatMessage.Read.Chat_ permissions use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 ## HTTP request
 
@@ -62,10 +62,10 @@ This method does not support the [OData query parameters](/graph/query-parameter
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a [chatmessage](
 
 ### Example 1: Get a message in a chat
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -178,7 +178,7 @@ Content-type: application/json
 
 ### Example 2: Get a message in a channel
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -284,7 +284,7 @@ Content-type: application/json
 
 ### Example 3: Get reply to a message in a channel
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -389,7 +389,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List messages in a channel](channel-list-messages.md)
 - [List messages in a chat](chat-list-messages.md)

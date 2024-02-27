@@ -24,13 +24,10 @@ There are two scenarios where an app can get a contact in another user's contact
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite    |
-|Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite    |
-|Application | Contacts.Read, Contacts.ReadWrite |
+<!-- { "blockType": "permissions", "name": "contact_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/contact-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +41,7 @@ A [contact](../resources/contact.md) from a top level [contactFolder](../resourc
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
+A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
 GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
@@ -59,10 +56,10 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -149,17 +146,17 @@ Content-type: application/json
   "emailAddresses": [
     {
       "name": "Garth",
-      "address": "garth@a830edad9050849NDA1.onmicrosoft.com",
+      "address": "garth@contoso.com",
       "type": "unknown"
     },
     {
       "name": "Garth",
-      "address": "garth@contoso.onmicrosoft.com",
+      "address": "garth@contoso.com",
       "type": "personal"
     }
   ],
   "imAddresses": [
-    "sip:garthf@a830edad9050849nda1.onmicrosoft.com"
+    "sip:garthf@contoso.com"
   ],
   "jobTitle": "Web Marketing Manager",
   "companyName": "Contoso, Inc.",
@@ -183,7 +180,7 @@ Content-type: application/json
   }],
   "spouseName": null,
   "personalNotes": null,
-  "children": [], 
+  "children": [],
   "gender": null,
   "websites": [{
       "type": "work",
@@ -194,7 +191,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.servicePrincipals.item.service_principal_item_request_builder import ServicePrincipalItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = ServicePrincipalRequestBuilder.ServicePrincipalRequestBuilderGetQueryParameters(
+query_params = ServicePrincipalItemRequestBuilder.ServicePrincipalItemRequestBuilderGetQueryParameters(
 		select = ["customSecurityAttributes"],
 )
 
-request_configuration = ServicePrincipalRequestBuilder.ServicePrincipalRequestBuilderGetRequestConfiguration(
+request_configuration = ServicePrincipalItemRequestBuilder.ServicePrincipalItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

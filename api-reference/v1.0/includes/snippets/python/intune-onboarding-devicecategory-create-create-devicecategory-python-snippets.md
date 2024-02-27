@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_category import DeviceCategory
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceCategory(
 	odata_type = "#microsoft.graph.deviceCategory",
@@ -14,7 +15,7 @@ request_body = DeviceCategory(
 	description = "Description value",
 )
 
-result = await graph_client.device_management.device_categories.post(body = request_body)
+result = await graph_client.device_management.device_categories.post(request_body)
 
 
 ```

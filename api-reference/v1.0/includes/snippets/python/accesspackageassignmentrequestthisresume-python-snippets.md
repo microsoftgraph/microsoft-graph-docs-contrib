@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.resume_post_request_body import ResumePostRequestBody
+from msgraph.generated.models.access_package_assignment_request_callback_data import AccessPackageAssignmentRequestCallbackData
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ResumePostRequestBody(
 	source = "Contoso.SodCheckProcess",
@@ -19,7 +21,7 @@ request_body = ResumePostRequestBody(
 	),
 )
 
-await graph_client.identity_governance.entitlement_management.assignment_requests.by_assignment_request_id('accessPackageAssignmentRequest-id').resume.post(body = request_body)
+await graph_client.identity_governance.entitlement_management.assignment_requests.by_access_package_assignment_request_id('accessPackageAssignmentRequest-id').resume.post(request_body)
 
 
 ```

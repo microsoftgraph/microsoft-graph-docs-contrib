@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.print_job import PrintJob
+from msgraph.generated.models.print_job_configuration import PrintJobConfiguration
+from msgraph.generated.models.integer_range import IntegerRange
+from msgraph.generated.models.print_margin import PrintMargin
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PrintJob(
 	display_name = "testjob",
@@ -17,7 +21,7 @@ request_body = PrintJob(
 				start = 1,
 				end = 1,
 			),
-		]
+		],
 		quality = PrintQuality.Medium,
 		dpi = 600,
 		orientation = PrintOrientation.Landscape,
@@ -43,7 +47,7 @@ request_body = PrintJob(
 	),
 )
 
-result = await graph_client.print.shares.by_share_id('printerShare-id').jobs.post(body = request_body)
+result = await graph_client.print.shares.by_printer_share_id('printerShare-id').jobs.post(request_body)
 
 
 ```

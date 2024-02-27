@@ -1,6 +1,6 @@
 ---
 title: "Get unifiedRoleManagementAlert"
-description: "Get a single security alert by its ID from Privileged Identity Management (PIM) for Azure AD roles."
+description: "Get a single security alert by its ID from Privileged Identity Management (PIM) for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,18 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a single security alert by its alert definition ID from Privileged Identity Management (PIM) for Azure AD roles.
+Get a single security alert by its alert definition ID from Privileged Identity Management (PIM) for Microsoft Entra roles.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementalert_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementalert-get-permissions.md)]
 
 [!INCLUDE [rbac-pim-alerts-apis-read](../includes/rbac-for-apis/rbac-pim-alerts-apis-read.md)]
 
@@ -43,10 +40,10 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -101,7 +98,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -153,23 +150,22 @@ Content-Type: application/json
             "id": "f5417b06-cdae-417f-9589-a334104206cf",
             "assigneeId": "f5417b06-cdae-417f-9589-a334104206cf",
             "assigneeDisplayName": "testUser1",
-            "assigneeUserPrincipalName": "testuser1@anujcoffice.onmicrosoft.com"
+            "assigneeUserPrincipalName": "testuser1@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
             "assigneeId": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
             "assigneeDisplayName": "testUser2",
-            "assigneeUserPrincipalName": "testuser2@anujcoffice.onmicrosoft.com"
+            "assigneeUserPrincipalName": "testuser2@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "d15bb922-c926-412e-aae3-30afb1c8a0b6",
             "assigneeId": "d15bb922-c926-412e-aae3-30afb1c8a0b6",
             "assigneeDisplayName": "testUser3",
-            "assigneeUserPrincipalName": "testuser3@anujcoffice.onmicrosoft.com"
+            "assigneeUserPrincipalName": "testuser3@contoso.com"
         }
     ]
 }
 ```
-

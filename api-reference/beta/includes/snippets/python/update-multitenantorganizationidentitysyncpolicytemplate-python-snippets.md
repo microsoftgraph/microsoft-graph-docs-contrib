@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.multi_tenant_organization_identity_sync_policy_template import MultiTenantOrganizationIdentitySyncPolicyTemplate
+from msgraph.generated.models.cross_tenant_user_sync_inbound import CrossTenantUserSyncInbound
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MultiTenantOrganizationIdentitySyncPolicyTemplate(
 	template_application_level = TemplateApplicationLevel.NewPartners | TemplateApplicationLevel.ExistingPartners,
@@ -15,7 +17,7 @@ request_body = MultiTenantOrganizationIdentitySyncPolicyTemplate(
 	),
 )
 
-result = await graph_client.policies.cro_tenant_acce_policy.templates.multi_tenant_organization_identity_synchronization.patch(body = request_body)
+result = await graph_client.policies.cross_tenant_access_policy.templates.multi_tenant_organization_identity_synchronization.patch(request_body)
 
 
 ```

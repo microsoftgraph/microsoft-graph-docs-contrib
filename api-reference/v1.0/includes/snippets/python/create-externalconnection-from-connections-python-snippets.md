@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.external_connection import ExternalConnection
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ExternalConnection(
 	id = "contosohr",
@@ -14,7 +15,7 @@ request_body = ExternalConnection(
 	description = "Connection to index Contoso HR system",
 )
 
-result = await graph_client.external.connections.post(body = request_body)
+result = await graph_client.external.connections.post(request_body)
 
 
 ```

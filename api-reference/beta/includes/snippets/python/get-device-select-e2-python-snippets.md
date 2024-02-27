@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.devices.item.device_item_request_builder import DeviceItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = DeviceRequestBuilder.DeviceRequestBuilderGetQueryParameters(
+query_params = DeviceItemRequestBuilder.DeviceItemRequestBuilderGetQueryParameters(
 		select = ["id","extensionAttributes"],
 )
 
-request_configuration = DeviceRequestBuilder.DeviceRequestBuilderGetRequestConfiguration(
+request_configuration = DeviceItemRequestBuilder.DeviceItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

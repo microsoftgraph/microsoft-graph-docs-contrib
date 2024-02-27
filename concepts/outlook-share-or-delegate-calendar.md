@@ -8,22 +8,22 @@ ms.prod: "outlook"
 
 # Share or delegate a calendar in Outlook
 
-In Outlook, a calendar owner can share the calendar with another user. The owner can specify which information in non-private events is viewable, and can give write access to the calendar to users in the same organization. 
+In Outlook, a calendar owner can share the calendar with another user. The owner can specify which information in non-private events is viewable, and can give write access to the calendar to users in the same organization.
 
-The owner can also delegate another user to manage meetings in the owner's _primary_ calendar. Delegates are share recipients who can view all information in and have write access to non-private events. They also receive meeting requests and responses, and respond to meeting requests on behalf of the owner. Additionally, the owner can give explicit permissions to delegates to view the owner's _private_ events on the calendar. 
+The owner can also delegate another user to manage meetings in the owner's _primary_ calendar. Delegates are share recipients who can view all information in and have write access to non-private events. They also receive meeting requests and responses, and respond to meeting requests on behalf of the owner. Additionally, the owner can give explicit permissions to delegates to view the owner's _private_ events on the calendar.
 
-Before calendar sharing or delegation can take effect, the owner sends a share recipient or delegate an invitation, and the share recipient or delegate accepts the invitation, or, explicitly adds the shared or delegated calendar for access. The invitation and adding a shared or delegated calendar occur in an Outlook client. 
+Before calendar sharing or delegation can take effect, the owner sends a share recipient or delegate an invitation, and the share recipient or delegate accepts the invitation, or, explicitly adds the shared or delegated calendar for access. The invitation and adding a shared or delegated calendar occur in an Outlook client.
 
 After sharing or delegation is set up in Outlook, apps can then use the Microsoft Graph API to manage the sharing and delegation.
 
 The rest of this article is based on the following example scenario:
 
-- Alex Wilber has delegated Megan Bowen to his primary calendar, and also permitted Megan to view private events in that calendar. 
-- Alex shared a "Kids parties" calendar with Adele Vance and Megan Bowen, and gave both Adele and Megan `read` permissions to all the details of non-private events on the "Kids parties" calendar, and free/busy status for private events. 
+- Alex Wilber has delegated Megan Bowen to his primary calendar, and also permitted Megan to view private events in that calendar.
+- Alex shared a "Kids parties" calendar with Adele Vance and Megan Bowen, and gave both Adele and Megan `read` permissions to all the details of non-private events on the "Kids parties" calendar, and free/busy status for private events.
 
 This article describes programmatically carrying out the following tasks with a shared or delegated calendar:
 
-- [Get calendar information about share recipients, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions).
+- [Get calendar information about share recipients, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-share-recipients-and-delegates-and-update-individual-permissions)
 - [Get the properties that describe the sharing or delegation of the calendar](#get-properties-of-a-shared-or-delegated-calendar).
 - [Get or set mailbox setting to receive meeting requests and responses for a delegated calendar](#get-or-set-mailbox-setting-to-receive-meeting-requests-and-responses).
 - [Delete a share recipient or delegate of a calendar](#delete-a-sharee-or-delegate-of-a-calendar).
@@ -41,7 +41,7 @@ Apps can also do the following using API that is generally available:
 In this section:
 
 - [Calendar owner: Get sharing or delegation information and permissions](#calendar-owner-get-sharing-or-delegation-information-and-permissions)
-- [Calendar owner: Update permissions for an existing share recipient or delegate on a calendar](#calendar-owner-update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)
+- [Calendar owner: Update permissions for an existing share recipient or delegate on a calendar](#calendar-owner-update-permissions-for-an-existing-share-recipient-or-delegate-on-a-calendar)
 
 Each calendar is associated with a collection of [calendarPermission](/graph/api/resources/calendarpermission) objects, each of which describes a share recipient or delegate and the associated permission that the calendar owner has set up. The [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values) enumeration defines the range of permissions that Microsoft Graph supports:
 
@@ -84,7 +84,7 @@ This example shows with the consent of Alex or administrator, how to get the **c
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ Use the least privileged delegated or application permission, `Calendars.Read`, 
   "name": "get_calendarperms"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/calendar/calendarPermissions
+GET https://graph.microsoft.com/beta/users/AlexW@contoso.com/calendar/calendarPermissions
 ```
 
 # [C#](#tab/csharp)
@@ -158,7 +158,7 @@ Content-type: application/json
             ],
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "MeganB@contoso.OnMicrosoft.com"
+                "address": "MeganB@contoso.com"
             }
         },
         {
@@ -184,7 +184,7 @@ Content-type: application/json
 
 ### Calendar owner: Update permissions for an existing share recipient or delegate on a calendar
 
-With the consent of Alex or administrator, you can update the permissions assigned to an existing share recipient or delegate (specified by the **role** property), as long as the new permissions are supported by those **allowedRoles** set up initially for the share recipient or delegate for that calendar. 
+With the consent of Alex or administrator, you can update the permissions assigned to an existing share recipient or delegate (specified by the **role** property), as long as the new permissions are supported by those **allowedRoles** set up initially for the share recipient or delegate for that calendar.
 
 Aside from the **role** property, you can't update other properties of an existing share recipient or delegate. Changing the **emailAddress** property value requires deleting the share recipient or delegate and setting up a new instance of **calendarPermission** again.
 
@@ -192,16 +192,16 @@ The example in this section updates the **role** property, changing the permissi
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendarperm",
-  "sampleKeys": ["AlexW@contoso.OnMicrosoft.com", "AAMkADAwAABf02bAAAA=", "L289RXhjaGFuZ2VMYWJQWRlbGVW"]
+  "sampleKeys": ["AlexW@contoso.com", "AAMkADAwAABf02bAAAA=", "L289RXhjaGFuZ2VMYWJQWRlbGVW"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/calendars/AAMkADAwAABf02bAAAA=/calendarPermissions/L289RXhjaGFuZ2VMYWJQWRlbGVW
+PATCH https://graph.microsoft.com/beta/users/AlexW@contoso.com/calendars/AAMkADAwAABf02bAAAA=/calendarPermissions/L289RXhjaGFuZ2VMYWJQWRlbGVW
 Content-type: application/json
 
 {
@@ -268,7 +268,7 @@ Content-type: application/json
     ],
     "emailAddress": {
         "name": "Adele Vance",
-        "address": "AdeleV@contoso.OnMicrosoft.com"
+        "address": "AdeleV@contoso.com"
     }
 }
 ```
@@ -279,14 +279,14 @@ Content-type: application/json
 In this section:
 
 - [Calendar owner: Get properties of a shared or delegated calendar](#calendar-owner-get-properties-of-a-shared-or-delegated-calendar)
-- [share recipient or delegate: Get properties of shared or delegated calendar](#sharee-or-delegate-get-properties-of-shared-or-delegated-calendar)
+- [share recipient or delegate: Get properties of shared or delegated calendar](#share-recipient-or-delegate-get-properties-of-shared-or-delegated-calendar)
 
 Recalling in this example, Alex has delegated his primary calendar and given the delegate, Megan Bowen, the permission to view calendar items that are marked private.
 This section shows the properties of the delegated calendar, first from the perspective of and with the consent of the owner, Alex, and then from the perspective of and with the consent of the delegate, Megan. Consent from the administrator also works for each case.
 
 ### Calendar owner: Get properties of a shared or delegated calendar
 
-The example in this section gets the properties of the primary calendar from the perspective of the owner, Alex. 
+The example in this section gets the properties of the primary calendar from the perspective of the owner, Alex.
 
 Note the following properties on Alex' behalf:
 
@@ -298,16 +298,16 @@ Note the following properties on Alex' behalf:
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendar_props_owner",
-  "sampleKeys": ["AlexW@contoso.OnMicrosoft.com"]
+  "sampleKeys": ["AlexW@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/calendar
+GET https://graph.microsoft.com/beta/users/AlexW@contoso.com/calendar
 ```
 
 # [C#](#tab/csharp)
@@ -374,7 +374,7 @@ Content-type: application/json
     "isRemovable": false,
     "owner": {
         "name": "Alex Wilber",
-        "address": "AlexW@contoso.OnMicrosoft.com"
+        "address": "AlexW@contoso.com"
     }
 }
 ```
@@ -382,11 +382,11 @@ Content-type: application/json
 
 ### Share recipient or delegate: Get properties of shared or delegated calendar
 
-The example in this section gets the properties of the same calendar from the perspective of the delegate, Megan. 
+The example in this section gets the properties of the same calendar from the perspective of the delegate, Megan.
 
 Note the following properties:
 
-- **name** of the calendar is by default the owner's display name. In this case, it's "Alex Wilber", since this is Alex' calendar delegated to Megan. 
+- **name** of the calendar is by default the owner's display name. In this case, it's "Alex Wilber", since this is Alex' calendar delegated to Megan.
 - **canShare** is false, since Megan is not the owner of this calendar.
 - **canViewPrivateItems** is true for the delegate Megan, as set up by Alex. For a sharee that is not a delegate, this property is always false.
 - **isShared** is false. This property indicates only to a calendar _owner_ whether the calendar has been shared or delegated.
@@ -394,21 +394,21 @@ Note the following properties:
 - **canEdit** is true, since delegates, including Megan, have write access.
 - **owner** is set to Alex.
 
-> [!NOTE] 
+> [!NOTE]
 > A sharee or delegate can customize only the **name** property of a shared/delegated calendar. The update is visible only to themselves; the calendar owner does not see such calendar name changes.
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.Read.Shared`, or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated permission, `Calendars.Read.Shared`, or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendar_props_delegate",
-  "sampleKeys": ["meganb@contoso.OnMicrosoft.com", "AAMkADlAABhbftjAAA="]
+  "sampleKeys": ["meganb@contoso.com", "AAMkADlAABhbftjAAA="]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/meganb@contoso.OnMicrosoft.com/calendars/AAMkADlAABhbftjAAA=
+GET https://graph.microsoft.com/beta/users/meganb@contoso.com/calendars/AAMkADlAABhbftjAAA=
 ```
 
 # [C#](#tab/csharp)
@@ -456,7 +456,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('meganb%40contoso.OnMicrosoft.com')/calendars/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('meganb%40contoso.com')/calendars/$entity",
     "id": "AAMkADlAABhbftjAAA=",
     "name": "Alex Wilber",
     "color": "auto",
@@ -475,7 +475,7 @@ Content-type: application/json
     "isRemovable": true,
     "owner": {
         "name": "Alex Wilber",
-        "address": "AlexW@contoso.OnMicrosoft.com"
+        "address": "AlexW@contoso.com"
     }
 }
 ```
@@ -488,7 +488,7 @@ In this section:
 - [Get delegation delivery setting for a user's mailbox](#get-delegation-delivery-setting-for-a-users-mailbox)
 - [Set delegation delivery setting for a user's mailbox](#set-delegation-delivery-setting-for-a-users-mailbox)
 
-Depending on the level of delegation a calendar owner prefers, the owner can specify who should receive meeting requests and responses to manage meetings on the calendar. 
+Depending on the level of delegation a calendar owner prefers, the owner can specify who should receive meeting requests and responses to manage meetings on the calendar.
 
 Programmatically, you can get or set the **delegateMeetingMessageDeliveryOptions** property of the calendar owner's [mailboxSettings](/graph/api/resources/mailboxsettings) to specify to whom Outlook should direct [eventMessageRequest](/graph/api/resources/eventmessagerequest) and [eventMessageResponse](/graph/api/resources/eventmessageresponse) instances:
 
@@ -510,16 +510,16 @@ The example in this section gets the **mailboxSettings** of a calendar owner who
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `MailboxSettings.Read`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
+Use the least privileged delegated or application permission, `MailboxSettings.Read`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_owner",
-  "sampleKeys": ["AlexW@contoso.OnMicrosoft.com"]
+  "sampleKeys": ["AlexW@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/mailboxsettings
+GET https://graph.microsoft.com/beta/users/AlexW@contoso.com/mailboxsettings
 ```
 
 # [C#](#tab/csharp)
@@ -614,16 +614,16 @@ The example in this section updates the **delegateMeetingMessageDeliveryOptions*
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `MailboxSettings.ReadWrite`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
+Use the least privileged delegated or application permission, `MailboxSettings.ReadWrite`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_mailboxsettings_owner",
-  "sampleKeys": ["AlexW@contoso.OnMicrosoft.com"]
+  "sampleKeys": ["AlexW@contoso.com"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/mailboxsettings
+PATCH https://graph.microsoft.com/beta/users/AlexW@contoso.com/mailboxsettings
 Content-type: application/json
 
 {
@@ -688,16 +688,16 @@ In the example below, Alex deletes Megan as a sharee of the "Kids parties" calen
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_sharee",
-  "sampleKeys": ["AlexW@contoso.OnMicrosoft.com", "AAMkADAwAABf02bAAAA=", "L289RXhjaGFuZ2VMYWJTWVnYW5C"]
+  "sampleKeys": ["AlexW@contoso.com", "AAMkADAwAABf02bAAAA=", "L289RXhjaGFuZ2VMYWJTWVnYW5C"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/calendars/AAMkADAwAABf02bAAAA=/calendarPermissions/L289RXhjaGFuZ2VMYWJTWVnYW5C
+DELETE https://graph.microsoft.com/beta/users/AlexW@contoso.com/calendars/AAMkADAwAABf02bAAAA=/calendarPermissions/L289RXhjaGFuZ2VMYWJTWVnYW5C
 ```
 
 # [C#](#tab/csharp)

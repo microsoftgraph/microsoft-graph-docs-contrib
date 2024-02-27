@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.update_recording_status_post_request_body import UpdateRecordingStatusPostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UpdateRecordingStatusPostRequestBody(
 	client_context = "clientContext-value",
 	status = RecordingStatus.NotRecording | RecordingStatus.Recording | RecordingStatus.Failed,
 )
 
-result = await graph_client.communications.calls.by_call_id('call-id').update_recording_status.post(body = request_body)
+result = await graph_client.communications.calls.by_call_id('call-id').update_recording_status.post(request_body)
 
 
 ```

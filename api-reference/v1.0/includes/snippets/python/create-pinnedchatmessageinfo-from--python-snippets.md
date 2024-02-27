@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.pinned_chat_message_info import PinnedChatMessageInfo
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PinnedChatMessageInfo(
 	additional_data = {
@@ -14,7 +15,7 @@ request_body = PinnedChatMessageInfo(
 	}
 )
 
-result = await graph_client.chats.by_chat_id('chat-id').pinned_messages.post(body = request_body)
+result = await graph_client.chats.by_chat_id('chat-id').pinned_messages.post(request_body)
 
 
 ```

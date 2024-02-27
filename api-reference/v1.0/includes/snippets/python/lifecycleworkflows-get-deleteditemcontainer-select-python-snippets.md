@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.identityGovernance.lifecycleWorkflows.deletedItems.workflows.item.workflow_item_request_builder import WorkflowItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = WorkflowRequestBuilder.WorkflowRequestBuilderGetQueryParameters(
+query_params = WorkflowItemRequestBuilder.WorkflowItemRequestBuilderGetQueryParameters(
 		select = ["id","category","displayName","description","version","executionConditions"],
 )
 
-request_configuration = WorkflowRequestBuilder.WorkflowRequestBuilderGetRequestConfiguration(
+request_configuration = WorkflowItemRequestBuilder.WorkflowItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

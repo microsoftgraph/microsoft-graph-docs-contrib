@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Search.Query;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Search.Query.QueryPostRequestBody
+var requestBody = new QueryPostRequestBody
 {
 	Requests = new List<SearchRequest>
 	{
@@ -18,6 +20,7 @@ var requestBody = new Microsoft.Graph.Search.Query.QueryPostRequestBody
 			{
 				EntityType.ListItem,
 			},
+			Region = "US",
 			Query = new SearchQuery
 			{
 				QueryString = "contoso",
@@ -28,6 +31,8 @@ var requestBody = new Microsoft.Graph.Search.Query.QueryPostRequestBody
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Search.Query.PostAsync(requestBody);
 
 

@@ -22,13 +22,10 @@ To update an **accessReviewInstance**, its **status** must be `InProgress`.
 > Updating an **accessReviewInstance** will update only that instance. The parent **accessReviewScheduleDefinition** and any future **accessReviewInstance** objects won't change. To make updates that apply to all future instances, update the parent [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application                            | AccessReview.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "accessreviewinstance_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accessreviewinstance-update-permissions.md)]
 
 [!INCLUDE [rbac-access-reviews-apis-write](../includes/rbac-for-apis/rbac-access-reviews-apis-write.md)]
 
@@ -45,7 +42,7 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -120,10 +117,6 @@ Content-Type: application/json
     ]
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstance-e1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewinstance-e1-javascript-snippets.md)]

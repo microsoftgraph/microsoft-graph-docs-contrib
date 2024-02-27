@@ -17,13 +17,10 @@ List [eDiscovery review tags](../resources/security-ediscoveryreviewtag.md) with
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_ediscoveryreviewtag_ashierarchy" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryreviewtag-ashierarchy-permissions.md)]
 
 ## HTTP request
 
@@ -38,10 +35,10 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/asHierarchy
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -97,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-ceb
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -124,7 +121,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -140,7 +137,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -155,7 +152,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -171,7 +168,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 }
             },
             "childTags": []
@@ -187,7 +184,7 @@ Content-Type: application/json
                 "user": {
                     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                    "userPrincipalName": "admin@contoso.com"
                 },
                 "application": {
                     "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",

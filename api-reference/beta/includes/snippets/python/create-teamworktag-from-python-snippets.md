@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.teamwork_tag import TeamworkTag
+from msgraph.generated.models.teamwork_tag_member import TeamworkTagMember
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TeamworkTag(
 	display_name = "Finance",
@@ -17,10 +19,10 @@ request_body = TeamworkTag(
 		TeamworkTagMember(
 			user_id = "085d800c-b86b-4bfc-a857-9371ad1caf29",
 		),
-	]
+	],
 )
 
-result = await graph_client.teams.by_team_id('team-id').tags.post(body = request_body)
+result = await graph_client.teams.by_team_id('team-id').tags.post(request_body)
 
 
 ```

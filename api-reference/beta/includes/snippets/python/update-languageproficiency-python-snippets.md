@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.language_proficiency import LanguageProficiency
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = LanguageProficiency(
 	allowed_audiences = AllowedAudiences.Organization,
 )
 
-result = await graph_client.me.profile.languages.by_language_id('languageProficiency-id').patch(body = request_body)
+result = await graph_client.me.profile.languages.by_language_proficiency_id('languageProficiency-id').patch(request_body)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "accessReview resource type (deprecated)"
-description: "In the Azure AD access reviews feature, the `accessReview` represents an access review.  "
+description: "In the Microsoft Entra access reviews feature, the `accessReview` represents an access review.  "
 ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Represents an Azure AD [access review](accessreviews-root.md).  
+Represents a Microsoft Entra [access review](accessreviews-root.md).  
 
 ## Methods
 
@@ -110,5 +110,3 @@ Here's a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

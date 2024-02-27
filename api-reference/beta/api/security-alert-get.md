@@ -1,6 +1,6 @@
 ---
 title: "Get alert"
-description: "Retrieve the properties and relationships of an security alert object."
+description: "Retrieve the properties and relationships of a security alert object."
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,19 +13,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of an [alert](../resources/security-alert.md) in an organization based on the specified alert **id** property.
+Get the properties and relationships of an [alert](../resources/security-alert.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|SecurityAlert.Read.All, SecurityAlert.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|SecurityAlert.Read.All, SecurityAlert.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "security_alert_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-alert-get-permissions.md)]
 
 ## HTTP request
 
@@ -41,10 +38,10 @@ GET /security/alerts_v2/{alertId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,6 +50,7 @@ If successful, this method returns a `200 OK` response code and an [alert](../re
 ## Examples
 
 ### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,6 +98,7 @@ GET https://graph.microsoft.com/beta/security/alerts_v2/da637578995287051192_756
 ---
 
 ### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -123,6 +122,7 @@ Content-type: application/json
   "determination": "unknown",
   "serviceSource": "microsoftDefenderForEndpoint",
   "detectionSource": "antivirus",
+  "productName": "Microsoft Defender for Endpoint",
   "detectorId": "e0da400f-affd-43ef-b1d5-afc2eb6f2756",
   "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
   "title": "Suspicious execution of hidden file",
@@ -265,6 +265,13 @@ Content-type: application/json
       "detailedRoles": [],
       "tags": []
     }
-  ]
+    ],
+    "systemTags" : [
+        "Defender Experts"
+  ],
+  "additionalData": {
+    "key1": "value1",
+    "key2": "value2"
+  }
 }
 ```

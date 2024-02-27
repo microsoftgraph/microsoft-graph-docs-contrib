@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.online_meeting import OnlineMeeting
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = OnlineMeeting(
 	start_date_time = "2020-09-09T14:33:30.8546353-07:00",
@@ -14,7 +15,7 @@ request_body = OnlineMeeting(
 	subject = "Patch Meeting Subject",
 )
 
-result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').patch(body = request_body)
+result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').patch(request_body)
 
 
 ```

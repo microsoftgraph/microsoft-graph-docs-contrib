@@ -17,13 +17,10 @@ Create a new userSource object.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_ediscoveryholdpolicy_post_usersources" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryholdpolicy-post-usersources-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHo
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -72,7 +69,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 Content-Type: application/json
 
 {
-    "email": "admin@M365x809305.onmicrosoft.com",
+    "email": "admin@contoso.com",
     "includedSources": "mailbox, site"
 }
 ```
@@ -112,7 +109,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -130,14 +127,14 @@ Content-Type: application/json
     "createdDateTime": "0001-01-01T00:00:00Z",
     "holdStatus": "applied",
     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
-    "email": "admin@M365x809305.onmicrosoft.com",
+    "email": "admin@contoso.com",
     "includedSources": "mailbox,site",
     "siteWebUrl": "",
     "createdBy": {
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         },
         "application": {
             "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",

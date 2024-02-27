@@ -10,7 +10,7 @@ The first tab describes the new consent flow. We recommend that new and current 
 
 For this tutorial, please ensure that you have an account with admin privileges available. You must complete this step to set up your first pipeline. We recommend having at least two users in your Microsoft 365 tenant with the **global administrator** role enabled.
 
-- [Global Administrator built-in role](/azure/active-directory/roles/permissions-reference#global-administrator).
+- [Global Administrator built-in role](/entra/identity/role-based-access-control/permissions-reference#global-administrator).
 - [Elevate access to gain the Global Administrator role](/azure/role-based-access-control/elevate-access-global-admin).
 
 ## [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](#tab/NewConsentFlow)

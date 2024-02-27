@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Me.Messages.Item.Attachments.CreateUploadSession;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Me.Messages.Item.Attachments.CreateUploadSession.CreateUploadSessionPostRequestBody
+var requestBody = new CreateUploadSessionPostRequestBody
 {
 	AttachmentItem = new AttachmentItem
 	{
@@ -17,6 +19,8 @@ var requestBody = new Microsoft.Graph.Me.Messages.Item.Attachments.CreateUploadS
 		Size = 3483322L,
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.Messages["{message-id}"].Attachments.CreateUploadSession.PostAsync(requestBody);
 
 

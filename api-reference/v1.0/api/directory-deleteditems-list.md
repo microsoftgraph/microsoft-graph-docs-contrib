@@ -70,11 +70,11 @@ The `$orderby` OData query parameter is supported on the **deletedDateTime**, **
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt; *Required*|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

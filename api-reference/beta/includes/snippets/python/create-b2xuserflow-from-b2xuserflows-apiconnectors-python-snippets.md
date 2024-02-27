@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.b2x_identity_user_flow import B2xIdentityUserFlow
+from msgraph.generated.models.user_flow_api_connector_configuration import UserFlowApiConnectorConfiguration
+from msgraph.generated.models.identity_api_connector import IdentityApiConnector
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = B2xIdentityUserFlow(
 	id = "UserFlowWithAPIConnector",
@@ -26,7 +29,7 @@ request_body = B2xIdentityUserFlow(
 	),
 )
 
-result = await graph_client.identity.b2x_user_flows.post(body = request_body)
+result = await graph_client.identity.b2x_user_flows.post(request_body)
 
 
 ```

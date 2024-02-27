@@ -4,9 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.send_activity_notification_to_recipients_post_request_body import SendActivityNotificationToRecipientsPostRequestBody
+from msgraph.generated.models.teamwork_activity_topic import TeamworkActivityTopic
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.key_value_pair import KeyValuePair
+from msgraph.generated.models.teamwork_notification_recipient import TeamworkNotificationRecipient
+from msgraph.generated.models.aad_user_notification_recipient import AadUserNotificationRecipient
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SendActivityNotificationToRecipientsPostRequestBody(
 	topic = TeamworkActivityTopic(
@@ -23,7 +29,7 @@ request_body = SendActivityNotificationToRecipientsPostRequestBody(
 			name = "deploymentId",
 			value = "6788662",
 		),
-	]
+	],
 	recipients = [
 		AadUserNotificationRecipient(
 			odata_type = "microsoft.graph.aadUserNotificationRecipient",
@@ -37,10 +43,10 @@ request_body = SendActivityNotificationToRecipientsPostRequestBody(
 			odata_type = "microsoft.graph.aadUserNotificationRecipient",
 			user_id = "01c64f53-69aa-42c7-9b7f-9f75195d6bfc",
 		),
-	]
+	],
 )
 
-await graph_client.teamwork.send_activity_notification_to_recipients.post(body = request_body)
+await graph_client.teamwork.send_activity_notification_to_recipients.post(request_body)
 
 
 ```

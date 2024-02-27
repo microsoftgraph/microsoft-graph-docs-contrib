@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.person_award import PersonAward
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PersonAward(
 	description = "Lifetime Achievement award from the International Association of Branding Managers",
@@ -17,7 +18,7 @@ request_body = PersonAward(
 	web_url = "https://www.iabm.io",
 )
 
-result = await graph_client.me.profile.awards.post(body = request_body)
+result = await graph_client.me.profile.awards.post(request_body)
 
 
 ```

@@ -38,7 +38,7 @@ POST /servicePrincipals(appId='{appId}')/owners/$ref
 ## Request headers
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body
@@ -103,7 +103,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

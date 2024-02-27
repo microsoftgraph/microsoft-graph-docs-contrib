@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.clone_post_request_body import ClonePostRequestBody
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ClonePostRequestBody(
 	display_name = "Library Assist",
@@ -16,7 +17,7 @@ request_body = ClonePostRequestBody(
 	visibility = TeamVisibilityType.Public,
 )
 
-await graph_client.teams.by_team_id('team-id').clone.post(body = request_body)
+await graph_client.teams.by_team_id('team-id').clone.post(request_body)
 
 
 ```

@@ -1,6 +1,5 @@
 ---
 author: spgraph-docs-team
-ms.date: 07/07/2020
 title: Search for files
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -16,13 +15,10 @@ You can search within a folder hierarchy, a whole drive, or files shared with th
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Sites.Read.All, Sites.ReadWrite.All     |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_search" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-search-permissions.md)]
 
 >**Note:** This method does not support the Sites.Selected application permission.
 
@@ -47,6 +43,12 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 | Parameter | Type  | Description                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | q  | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Example
 
@@ -84,6 +86,10 @@ GET /me/drive/root/search(q='Contoso Project')
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/item-search-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/item-search-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -162,6 +168,10 @@ GET /me/drive/search(q='Contoso Project')
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/item-search-all-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/item-search-all-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

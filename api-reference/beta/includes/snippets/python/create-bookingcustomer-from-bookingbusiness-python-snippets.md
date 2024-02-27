@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.booking_customer import BookingCustomer
+from msgraph.generated.models.physical_address import PhysicalAddress
+from msgraph.generated.models.phone import Phone
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BookingCustomer(
 	display_name = "Joni Sherman",
@@ -30,7 +33,7 @@ request_body = BookingCustomer(
 			postal_code = "98054",
 			type = PhysicalAddressType.Business,
 		),
-	]
+	],
 	phones = [
 		Phone(
 			number = "206-555-0100",
@@ -40,10 +43,10 @@ request_body = BookingCustomer(
 			number = "206-555-0200",
 			type = PhoneType.Business,
 		),
-	]
+	],
 )
 
-result = await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').customers.post(body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').customers.post(request_body)
 
 
 ```

@@ -54,11 +54,11 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions
 ```
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -102,8 +102,8 @@ Content-type: application/json
                 "read"
             ],
             "emailAddress": {
-                "name": "admin@M365B877719.onmicrosoft.com",
-                "address": "admin@M365B877719.onmicrosoft.com"
+                "name": "admin@contoso.com",
+                "address": "admin@contoso.com"
             }
         },
         {

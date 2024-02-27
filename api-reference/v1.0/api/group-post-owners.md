@@ -2,7 +2,8 @@
 title: "Add owners"
 description: "Add a user or service principal to a Microsoft 365 or security group's owners. The owners are a set of users or service principals who are allowed to modify the group object."
 ms.localizationpriority: high
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -19,13 +20,26 @@ Add a user or service principal to a Microsoft 365 or security group's owners. T
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)  |
-| :------------------------------------- | :------------------------------------------- |
-| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "group_post_owners" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-post-owners-permissions.md)]
+
+The signed-in user must also be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+
+| Microsoft Entra role             | Limitations                                    |
+|----------------------------------|------------------------------------------------|
+| User Administrator               | Can modify user owners only                    |
+| Directory Writers                | Can modify user owners only                    |
+| Groups Administrator             | Can modify all types of group owners           |
+| Exchange Service Administrator   | Can modify owners of Microsoft 365 groups only |
+| SharePoint Service Administrator | Can modify owners of Microsoft 365 groups only |
+| Teams Administrator              | Can modify owners of Microsoft 365 groups only |
+| Yammer Administrator             | Can modify owners of Microsoft 365 groups only |
+| Intune Administrator             | Can modify owners of security groups only      |
+| Knowledge Administrator          | Can modify owners of security groups only      |
+| Knowledge Manager                | Can modify owners of security groups only      |
+| Windows 365 Administrator        | Can modify owners of security groups only      |
 
 ## HTTP request
 
@@ -39,7 +53,7 @@ POST /groups/{id}/owners/$ref
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -48,7 +62,7 @@ In the request body, supply a JSON representation with the **@odata.id** of a [u
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
 
 ## Example
 
@@ -110,7 +124,7 @@ In the request body, supply a JSON representation with the **@odata.id** of a [u
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -122,7 +136,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Add member to team](team-post-members.md)
 - [Update member's role in team](team-update-members.md)

@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.copy_post_request_body import CopyPostRequestBody
+from msgraph.generated.models.item_reference import ItemReference
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CopyPostRequestBody(
 	parent_reference = ItemReference(
@@ -15,7 +17,7 @@ request_body = CopyPostRequestBody(
 	name = "Copy of LargeFolder1",
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').copy.post(body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').copy.post(request_body)
 
 
 ```

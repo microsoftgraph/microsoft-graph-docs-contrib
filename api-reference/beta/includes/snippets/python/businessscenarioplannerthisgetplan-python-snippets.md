@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.get_plan_post_request_body import GetPlanPostRequestBody
+from msgraph.generated.models.business_scenario_group_target import BusinessScenarioGroupTarget
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = GetPlanPostRequestBody(
 	target = BusinessScenarioGroupTarget(
@@ -16,7 +18,7 @@ request_body = GetPlanPostRequestBody(
 	),
 )
 
-result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.get_plan.post(body = request_body)
+result = await graph_client.solutions.business_scenarios.by_business_scenario_id('businessScenario-id').planner.get_plan.post(request_body)
 
 
 ```

@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.user_item_request_builder import UserItemRequestBuilder
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = UserRequestBuilder.UserRequestBuilderGetQueryParameters(
+query_params = UserItemRequestBuilder.UserItemRequestBuilderGetQueryParameters(
 		select = ["displayName","givenName","postalCode","identities"],
 )
 
-request_configuration = UserRequestBuilder.UserRequestBuilderGetRequestConfiguration(
+request_configuration = UserItemRequestBuilder.UserItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

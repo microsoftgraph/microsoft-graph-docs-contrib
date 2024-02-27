@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AccessPackageAssignmentPolicy accessPackageAssignmentPolicy = graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentPolicies("4540a08f-8ab5-43f6-a923-015275799197")
-	.buildRequest()
-	.expand("customExtensionHandlers($expand=customExtension)")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AccessPackageAssignmentPolicy result = graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentPolicies().byAccessPackageAssignmentPolicyId("{accessPackageAssignmentPolicy-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"customExtensionHandlers($expand=customExtension)"};
+});
+
 
 ```

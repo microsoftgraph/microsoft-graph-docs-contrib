@@ -24,13 +24,10 @@ Create a new [sitePage][] in the site pages [list][] in a [site][].
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.ReadWrite.All                         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.ReadWrite.All                         |
+<!-- { "blockType": "permissions", "name": "sitepage_create" } -->
+[!INCLUDE [permissions-table](../includes/permissions/sitepage-create-permissions.md)]
 
 ## HTTP request
 
@@ -43,7 +40,7 @@ POST /sites/{site-id}/pages
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -171,6 +168,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/cli/create-page-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-page-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -203,7 +204,7 @@ Content-type: application/json
     "@odata.type": "microsoft.graph.sitePage",
     "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
     "name": "test.aspx",
-    "webUrl": "SitePages/test.aspx",
+    "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/test.aspx",
     "title": "test",
     "pageLayout": "article",
     "showComments": true,

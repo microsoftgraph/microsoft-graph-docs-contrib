@@ -17,14 +17,11 @@ Get newly created, updated, or deleted organizational contacts without having to
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.  |
-|Application | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "orgcontact_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/orgcontact-delta-permissions.md)]
 
 ## HTTP request
 
@@ -59,7 +56,7 @@ This method supports optional OData query parameters to help customize the respo
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer | return=minimal <br><br>Specifying this header with a request that uses a `@odata.deltaLink` would return only the object properties that have changed since the last round. Optional. |
 
 ## Request body
@@ -343,7 +340,7 @@ Content-type: application/json
   ]
 }
 ```
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 

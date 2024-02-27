@@ -1,6 +1,6 @@
 ---
 title: "teamsApp resource type"
-description: "An app in the Microsoft Teams app catalog."
+description: "Represents an app in the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -50,6 +50,8 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 ## JSON representation
 
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsApp",
@@ -58,14 +60,14 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 ```json
 {
-  "id": "string",
   "externalId": "string",
   "displayName": "string",
-  "distributionMethod": "string"
+  "distributionMethod": "string",
+  "id": "string"
 }
 ```
 
-## See also
+## Related content
 
 - [teamsAppInstallation](teamsappinstallation.md)
 - [teamsAppDefinition](teamsappdefinition.md)

@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.retention_event_type import RetentionEventType
+from msgraph.generated.models.identity_set import IdentitySet
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RetentionEventType(
 	odata_type = "#microsoft.graph.security.retentionEventType",
@@ -17,7 +19,7 @@ request_body = RetentionEventType(
 	),
 )
 
-result = await graph_client.security.trigger_types.retention_event_types.post(body = request_body)
+result = await graph_client.security.trigger_types.retention_event_types.post(request_body)
 
 
 ```

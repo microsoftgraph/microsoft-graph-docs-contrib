@@ -94,7 +94,7 @@ Mailbox results consist of:
 - People in your manager's org chart
 - Public contacts of the above people
 
-Relevant aspects for the use case when a directory source searches in the global addressing list in Azure Active Directory:
+Relevant aspects for the use case when a directory source searches in the global addressing list in Microsoft Entra ID:
 
 - Not applicable for consumer users
 - People who are not in the caller's global addressing list will not be returned

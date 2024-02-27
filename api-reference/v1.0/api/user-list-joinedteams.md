@@ -44,11 +44,11 @@ This method does not currently support the [OData query parameters](/graph/query
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -129,7 +129,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - [List all teams](/graph/teams-list-all-teams)
 - [Get team](../api/team-get.md)
 - [List associated teams](../api/associatedteaminfo-list.md)

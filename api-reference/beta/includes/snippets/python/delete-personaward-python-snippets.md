@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.users.by_user_id('user-id').profile.awards.by_award_id('personAward-id').delete()
+await graph_client.users.by_user_id('user-id').profile.awards.by_person_award_id('personAward-id').delete()
 
 
 ```

@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.cloud_pc_export_job import CloudPcExportJob
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CloudPcExportJob(
 	report_name = CloudPcReportName.TotalAggregatedRemoteConnectionReports,
@@ -16,10 +17,10 @@ request_body = CloudPcExportJob(
 		"UserPrincipalName",
 		"DaysSinceLastSignIn",
 		"TotalUsageInHour",
-	]
+	],
 )
 
-result = await graph_client.device_management.virtual_endpoint.reports.export_jobs.post(body = request_body)
+result = await graph_client.device_management.virtual_endpoint.reports.export_jobs.post(request_body)
 
 
 ```
