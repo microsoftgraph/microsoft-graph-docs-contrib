@@ -16,8 +16,10 @@ Namespace: microsoft.graph
 Create an online meeting on behalf of a user.
 
 > [!TIP]
-> - This API creates a standalone meeting that isn't associated with any event on the user's calendar; therefore, meetings created via this API aren't shown on the user's calendar.
-> - This API doesn't create a Teams live event.
+>
+> * This API creates a standalone meeting that isn't associated with any event on the user's calendar; therefore, meetings created via this API aren't shown on the user's calendar.
+> * This API doesn't create a Teams live event.
+> * If you want to retrieve meeting transcripts, use the [Create event](../api/user-post-events.md#example-5-create-and-enable-an-event-as-an-online-meeting) API instead.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
