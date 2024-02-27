@@ -30,7 +30,7 @@ To complete the steps in this tutorial:
 
 - Install and configure the Microsoft Entra Private Access connector. For more information, see [Add an on-premises application for remote access through application proxy in Microsoft Entra ID](/entra/identity/app-proxy/application-proxy-add-on-premises-application).
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has at least the *Application Administrator* and *Global Secure Access Administrator* [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
-- Grant consent to the app for the `Directory.ReadWrite.All` delegated permission.
+- Grant consent to the app for the *Directory.ReadWrite.All* and *NetworkAccess.Read.All* delegated permissions.
 - Have a test user to assign to the application.
 
 ## Step 1: Create a custom application
