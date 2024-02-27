@@ -20,22 +20,21 @@ Represents the settings of a point-in-time restore of a Cloud PC.
 |frequencyType|[cloudPcRestorePointFrequencyType](#cloudPcRestorePointFrequencyType-values)|The time interval in hours for auto taking snapshots (restore points) of the Cloud PC, possible values are: `default`, `fourHours`, `sixHours`, `twelveHours`, `sixteenHours`, `twentyFourHours`. The default value: `default` that internally translates to Cloud PC default of `twelveHours`.|
 |userRestoreEnabled|Boolean|If `true`, the user has the ability to use snapshots to restore Cloud PCs. If `false`, non-admin users can't use snapshots to restore the Cloud PC.|
 
-## Relationships
-
-None.
-
 ### cloudPcRestorePointFrequencyType values
 
 |Member|Description|
 |:---|:---|
-|default|Default. Indicates the time interval for automatic capturing of restore point snapshots is set to default value 12 hours.|0|
-|fourHours|Indicates the time interval for automatic capturing of restore point snapshots is set to 4 hours.|1|
-|sixHours|Indicates the time interval for automatic capturing of restore point snapshots is set to 6 hours.|2|
-|twelveHours|Indicates the time interval for automatic capturing of restore point snapshots is set to 12 hours.|3|
-|sixteenHours|Indicates the time interval for automatic capturing of restore point snapshots is set to 16 hours.|4|
-|twentyFourHours|Indicates the time interval for automatic capturing of restore point snapshots is set to 24 hours.|5|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use. |6|
+|default|Default. Indicates the time interval for automatic capturing of restore point snapshots is set to default value 12 hours.|
+|fourHours|Indicates the time interval for automatic capturing of restore point snapshots is set to 4 hours.|
+|sixHours|Indicates the time interval for automatic capturing of restore point snapshots is set to 6 hours.|
+|twelveHours|Indicates the time interval for automatic capturing of restore point snapshots is set to 12 hours.|
+|sixteenHours|Indicates the time interval for automatic capturing of restore point snapshots is set to 16 hours.|
+|twentyFourHours|Indicates the time interval for automatic capturing of restore point snapshots is set to 24 hours.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use. |
 
+## Relationships
+
+None.
 
 ## JSON representation
 
@@ -49,8 +48,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcRestorePointSetting",
-  "frequencyInHours": "Integer",
-  "frequencyType": "#microsoft.graph.cloudPcRestorePointFrequencyType",
+  "frequencyType": "String",
   "userRestoreEnabled": "Boolean"
 }
 ```
