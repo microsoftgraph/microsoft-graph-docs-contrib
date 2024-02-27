@@ -16,6 +16,7 @@ Application proxy provides secure remote access and single sign-on (SSO) to on-p
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+> * Instantiate a custom application
 > * Configure Microsoft Entra application proxy for an application.
 
 > [!IMPORTANT]
@@ -88,7 +89,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.applicationTemplates"
+  "@odata.type": "microsoft.graph.applicationServicePrincipal"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -750,17 +751,15 @@ Content-type: appplication/json
 
 ## Step 5: Assign a user to the application
 
-You want to assign a user to the application. From the service principal that you created in Step 1, in the **appRoles** property and record the ID of the default **User** role, which is `18d14569-c3bd-439b-9a66-3a2aee01d14f`.
+You want to assign a user to the application. From the service principal that you created in Step 1, record the ID of the default **User** role that's defined in the **appRoles** property. This value is `18d14569-c3bd-439b-9a66-3a2aee01d14f`.
 
-### Step 5.1: Assign a user to the application
-
-Assign the user that you created to the service principal and grant them the `User` app role. In the request body, provide the following values:
+Assign the user to the service principal and grant them the `User` app role. In the request body, provide the following values:
 
 - **principalId** - The ID of the user account that you created.
 - **appRoleId** - The ID of the default `User` app role that you retrieved from the service principal.
 - **resourceId** - The ID of the service principal.
 
-#### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -768,11 +767,11 @@ Assign the user that you created to the service principal and grant them the `Us
   "name": "tutorial_configure_appproxy_create_serviceprincipal_approleassignment"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments
+POST https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoleAssignments
 Content-type: application/json
 
 {
-  "principalId": "4628e7df-dff3-407c-a08f-75f08c0806dc",
+  "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
   "principalType": "User",
   "appRoleId":"18d14569-c3bd-439b-9a66-3a2aee01d14f",
   "resourceId":"a8cac399-cde5-4516-a674-819503c61313"
@@ -813,7 +812,7 @@ Content-type: application/json
 
 ---
 
-#### Response
+### Response
 
 <!-- {
   "blockType": "response",
