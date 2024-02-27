@@ -33,7 +33,7 @@ GET /deviceManagement/virtualEndpoint/userSettings/{id}
 
 ## Optional query parameters
 
-This method supports `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -137,28 +137,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.cloudPcUserSetting",
-    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
-    "displayName": "Display Name value",
-    "selfServiceEnabled": true,
-    "localAdminEnabled": false,
-    "resetEnabled": true,
-    "restorePointSetting": {
-      "frequencyType": "sixteenHours",
-      "userRestoreEnabled": true
-    },
-    "lastModifiedDateTime": "2021-02-01T10:29:57Z",
-    "createdDateTime": "2021-02-01T10:29:57Z",
-    "assignments": [
-      {
-        "@odata.type": "microsoft.graph.cloudPcUserSettingAssignment",
-        "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
-        "createdDateTime": "2021-02-01T10:29:57Z",
-        "target": {
-          "@odata.type":"microsoft.graph.cloudPCManagementGroupAssignmentTarget",
-          "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
-          }
+  "@odata.type": "#microsoft.graph.cloudPcUserSetting",
+  "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
+  "displayName": "Display Name value",
+  "selfServiceEnabled": true,
+  "localAdminEnabled": false,
+  "resetEnabled": true,
+  "restorePointSetting": {
+    "frequencyType": "sixteenHours",
+    "userRestoreEnabled": true
+  },
+  "lastModifiedDateTime": "2021-02-01T10:29:57Z",
+  "createdDateTime": "2021-02-01T10:29:57Z",
+  "assignments": [
+    {
+      "@odata.type": "microsoft.graph.cloudPcUserSettingAssignment",
+      "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
+      "createdDateTime": "2021-02-01T10:29:57Z",
+      "target": {
+        "@odata.type": "microsoft.graph.cloudPCManagementGroupAssignmentTarget",
+        "groupId": "64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
       }
-    ]
+    }
+  ]
 }
 ```
