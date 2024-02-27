@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [educationAss
   "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignmentSettings
 ```
 
