@@ -4622,3 +4622,12 @@ Possible values for user account types (group membership), per Windows definitio
 |notBookable|
 |customWeeklyHours|
 |unknownFutureValue|
+
+### conditionalAccessTransferMethods values
+
+|Member|
+|:---|
+|none|
+|deviceCodeFlow|
+|authenticationTransfer|
+|unknownFutureValue|
