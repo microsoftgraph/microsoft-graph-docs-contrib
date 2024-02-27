@@ -1,7 +1,7 @@
 ---
 title: "callRecord: getSmsLog"
 description: "Get the log of a sent/received SMS as a collection of smsLogRow entries."
-author: "radoslag"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
