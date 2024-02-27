@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicyAssignment resource type"
-description: "CloudPC provisioning policy assignments"
+description: "Represents a defined collection of provisioning policy assignments."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -17,7 +17,7 @@ Represents a defined collection of provisioning policy assignments.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the provisioning policy assignment. Read-only. If `target` is a user group, then the ID is shown as {policyId_groupId}.|
+|id|String|Unique Identifier for the provisioning policy assignment. Read-only. If **target** is a user group, then the ID is shown as `{policyId_groupId}`.|
 |target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the provisioning policy. Currently, the only target supported for this policy is a user group. For details, see [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md). |
 
 ## Relationships
