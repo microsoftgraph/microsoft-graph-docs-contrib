@@ -77,7 +77,7 @@ Content-type: application/json
   "supportedServices": [
     "Email",
     "OfficeCommunicationsOnline",
-    "CustomURLDomain"
+    "CustomUrlDomain"
   ]
 }
 ```
