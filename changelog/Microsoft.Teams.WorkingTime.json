@@ -1,0 +1,14 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "f31cf2dc-17ab-400e-bd7d-e6c728d249f1",
+          "ApiChange": "Resources",
+          "ChangedApiName": "workingTimeSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) resource.",
+          "Target": "resourceSpecificPermissionGrant"
+        }
+  ]
+}
