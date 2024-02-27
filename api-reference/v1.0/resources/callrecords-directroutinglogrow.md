@@ -34,7 +34,7 @@ Represents a row of data in the direct routing call log. Each row maps to one ca
 |finalSipCodePhrase|String| Description of the SIP code and Microsoft subcode.|
 |finalSipCode|Int32| The final response code with which the call ended. For more information, see [RFC 3261](https://tools.ietf.org/html/rfc3261).|
 |id|String|Unique call identifier. GUID.|
-|inviteDateTime|DateTimeOffset| Time at which the initial invite was sent.|
+|inviteDateTime|DateTimeOffset| The date and time when the initial invite was sent.|
 |mediaBypassEnabled|Boolean| Indicates whether the trunk was enabled for media bypass.|
 |mediaPathLocation|String| The datacenter used for media path in a nonbypass call.|
 |signalingLocation|String| The datacenter used for signaling for both bypass and nonbypass calls.|
