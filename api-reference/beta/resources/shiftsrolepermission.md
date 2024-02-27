@@ -23,8 +23,9 @@ Represents permissions for a role in a Shifts schedule.
 |:---|:---|:---|
 |allowedResourceActions|String collection|The permissions that are allowed for a role. Permissions that aren't in this collection are disabled.|
 
-### Supported resource actions
-|Resource Action|Description|
+### Supported allowedResourceActions values
+
+|Value|Description|
 |:---|:---|
 |`CanModifyShiftRequestsCapabilities`|Roles with this permission have the capability to modify the settings to enable or disable open shifts, swap shifts, and request and offer shifts for their team.|
 |`CanModifyTimeClockCapabilities`|Roles with this permission enabled have the capability to modify the settings to enable or disable time clock setting for their team.|
