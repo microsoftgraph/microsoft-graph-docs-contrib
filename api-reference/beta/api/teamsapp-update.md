@@ -29,9 +29,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-> **Note:**
-> * Only Global Administrators can call this API.
-> * The Directory.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> [!NOTE]
+> Only Global Administrators can call this API.
+
+> [!NOTE]
+> The Directory.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 
@@ -45,7 +47,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 |Property|Type|Description|
 |----|----|----|
-|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set **requiresReview** to `true`. A user who has admin privileges can opt not to set **requiresReview** or set the value to `false`  and the app will be considered approved and will publish instantly.|
+|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set **requiresReview** to `true`. A user who has admin privileges can opt not to set **requiresReview** or set the value to `false`  and the app is approved and immediately published.|
 
 ## Request headers
 
@@ -112,7 +114,7 @@ If successful, this method returns a `204 No Content` response code.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update a new version of an existing app for admin review prior to publication in the current tenant catalog
+### Example 2: Update a new version of an existing app for admin review before publication in the current tenant catalog
 
 #### Request
 

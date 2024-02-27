@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.   |
 |Application | Chat.Manage.Chat, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All |
 
-> **Notes:**
+> [!NOTE]
 > - The TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteSelfForChat.All, and TeamsAppInstallation.ReadWriteForChat.All permissions can't be used to install apps that require consent to resource-specific permissions.
 
 ## HTTP request

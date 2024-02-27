@@ -24,9 +24,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChannelSettings.Read.Group, ChannelSettings.ReadWrite.Group, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All |
 
-> **Note:** The ChannelSettings.Read.Group and ChannelSettings.ReadWrite.Group permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChannelSettings.Read.Group and ChannelSettings.ReadWrite.Group permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+> [!NOTE]
+> This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

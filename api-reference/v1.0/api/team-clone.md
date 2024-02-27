@@ -20,13 +20,14 @@ You can specify which parts of the team to clone:
 - **settings** – Copies all settings within the team, along with key group settings.
 - **tabs** – Copies the tabs within channels.
 
-> **Note:** This method isn't supported for organization-wide teams.
+> [!NOTE]
+> This method isn't supported for organization-wide teams.
 
 > [!NOTE]
 > A known issue related to owners of cloned teams is associated with this method. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/&search=18955).
 
 When tabs are cloned, they aren't configured. The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen. 
-If the user who opens the tab doesn't have permission to configure apps, they'll see a message that says that the tab isn't configured.
+If the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
 
 Cloning is a long-running operation. After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) returned by the `Location:` header to see if it's `running`, `succeeded`, or `failed`. You should continue to GET until the status isn't `running`. The recommended delay between GETs is 5 seconds.
 
@@ -42,7 +43,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application                            | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-> **Note:** The Group.ReadWrite.All and Directory.ReadWrite.All are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> [!NOTE]
+> The Group.ReadWrite.All and Directory.ReadWrite.All are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

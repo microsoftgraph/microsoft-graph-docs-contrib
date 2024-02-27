@@ -23,7 +23,8 @@ You can also use this API to remove a submitted app from the review process.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
->**Note:** Only global administrators can call this API.
+> [!NOTE]
+> Only global administrators can call this API.
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
@@ -31,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.|
 | Application                            | Not supported. |
 
-> **Notes:**
+> [!NOTE]
 > - The Directory.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 > - You can only use the `AppCatalog.Submit` permission to delete app definitions in review.
 
@@ -44,7 +45,7 @@ To delete an app from the app catalog:
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-To delete an app that has been submitted but hasn't been approved:
+To delete an app that is submitted but isn't yet approved:
 
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
