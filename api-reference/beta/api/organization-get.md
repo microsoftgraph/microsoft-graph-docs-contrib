@@ -2,7 +2,8 @@
 title: "Get organization"
 description: "Retrieve the properties and relationships of currently authenticated organization."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
