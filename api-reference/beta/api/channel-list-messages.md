@@ -77,7 +77,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following example shows the request with $top query option and without the optional prefer header.
+The following example shows a request with `$top` query option and without the optional prefer header.
 
 
 # [HTTP](#tab/http)
@@ -125,7 +125,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 ---
 
 ### Response
-The following example shows the request. `@odata.nextLink` in the response can be used to get the next page of messages.
+The following example shows the response. `@odata.nextLink` in the response can be used to get the next page of messages.
 
 <!-- {
   "blockType": "response",
@@ -348,7 +348,7 @@ Prefer: include-unknown-enum-members
 ---
 
 #### Response
-The following example shows the response  when `Prefer: include-unknown-enum-members` is provided in the request header.
+The following example shows the response when `Prefer: include-unknown-enum-members` is provided in the request header.
 
 <!-- {
   "blockType": "response",
