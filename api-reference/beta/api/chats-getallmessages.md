@@ -40,7 +40,7 @@ This method supports [date range parameters](/graph/query-parameters) to custo
 ```http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
-Use the `model` query parameter to specify the [payment model](/graph/teams-licenses) that applies to your scenario, as shown in the following examples.  
+You can use the `model` query parameter to specify the [payment model](/graph/teams-licenses) that applies to your scenario, as shown in the following examples.  
 
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
@@ -48,16 +48,17 @@ GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
 ```
 >**Note:** If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
-This method supports different filtering scenarios:
+This method supports also supports `$filter`. The following table lists examples.
 
-|Scenario                                  | Filter parameter                                                                       |Possible values                                                                                             |
+|Scenario                                  | `$filter` parameter                                                                       |Possible values                                                                                             |
 |:-----------------------------------------|:---------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 |Get messages sent by user identity type   |$filter=from/user/userIdentityType eq '{teamworkUserIdentityType}'                      |aadUser, onPremiseAadUser, anonymousGuest, federatedUser, personalMicrosoftAccountUser, skypeUser, phoneUser|
 |Get messages sent by application type     |$filter=from/application/applicationIdentityType eq '{teamworkApplicationIdentity}'     |aadApplication, bot, tenantBot, office365Connector, outgoingWebhook                                         |
 |Get messages sent by user id              |$filter=from/user/id eq '{oid}'                                                         ||
 |Get control(system event) messages        |$filter=messageType eq 'systemEventMessage'                                             ||
 |Exclude control (system event) messages   |$filter=messageType ne 'systemEventMessage'                                             ||
->**Note:** These filter clauses can be joined using the `or` operator. A filter clause can appear more than once in a query, and it can filter on a different value each time it appears within the query.
+
+>**Note:** These filter clauses can be joined by using the `or` operator. A filter clause can appear more than once in a query, and it can filter on a different value each time it appears within the query.
 
 ## Request headers
 | Header       | Value |
