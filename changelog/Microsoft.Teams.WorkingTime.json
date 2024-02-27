@@ -10,7 +10,13 @@
           "Description": "Added the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) resource.",
           "Target": "resourceSpecificPermissionGrant"
         }
-      ]
+      ],
+      "Id": "f31cf2dc-17ab-400e-bd7d-e6c728d249f1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-27T13:15:33.264Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Working time"
     }
   ]
 }
