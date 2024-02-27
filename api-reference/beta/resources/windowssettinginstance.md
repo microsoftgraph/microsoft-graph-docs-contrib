@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List windowsSettingInstance objects](../api/windowssetting-list-instances.md)|[windowsSettingInstance](../resources/windowssettinginstance.md) collection|Get a list of the [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties.|
+|[List windowsSettingInstance](../api/windowssetting-list-instances.md)|[windowsSettingInstance](../resources/windowssettinginstance.md) collection|Get a list of the [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties.|
 |[Get windowsSettingInstance](../api/windowssettinginstance-get.md)|[windowsSettingInstance](../resources/windowssettinginstance.md)|Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object.|
 
 ## Properties
