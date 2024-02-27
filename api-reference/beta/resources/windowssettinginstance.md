@@ -1,6 +1,6 @@
 ---
 title: "windowsSettingInstance resource type"
-description: "windowsSettingInstance represents a setting instance from Windows operating system."
+description: "Represents a setting instance from the Windows operating system."
 author: "MS-Arko"
 ms.localizationpriority: medium
 ms.prod: "cross-device-experiences"
