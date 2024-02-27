@@ -1,6 +1,6 @@
 ---
 title: "windowsSetting resource type"
-description: "windowsSetting represents settings from Windows operating system."
+description: "Represents settings from the Windows operating system."
 author: "MS-Arko"
 ms.localizationpriority: medium
 ms.prod: "cross-device-experiences"
