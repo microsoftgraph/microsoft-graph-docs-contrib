@@ -76,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.teams.workingTime.workingTimeSchedule"
+  "@odata.type": "microsoft.graph.workingTimeSchedule"
 }
 -->
 ``` http

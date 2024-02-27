@@ -76,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.teams.workingTime.solution"
+  "@odata.type": "microsoft.graph.solution"
 }
 -->
 ``` http
@@ -85,7 +85,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.teams.workingTime.solution",
+    "@odata.type": "#microsoft.graph.solution",
     "id": "2cd288db-f6f4-b8fb-f5ff-188aa544be3e"
   }
 }
