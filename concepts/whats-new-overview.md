@@ -16,6 +16,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+
+## March 2024: New in preview only
+
+### Security
+
+Added the ability to get email related threats and ability to perform response actions (soft delete, hard delete, move to junk , move to inbox) on those messages. 
+
 ## February 2024: New and generally available
 
 ### Microsoft Graph Toolkit
@@ -23,6 +30,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](/graph/toolkit/upgrade).
 
 ## February 2024: New in preview only
+
 
 ### Calendars
 
