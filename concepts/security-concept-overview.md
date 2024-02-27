@@ -27,7 +27,7 @@ The [Microsoft Graph security API](/graph/api/resources/security-api-overview) m
 - [Connect using scripts](https://aka.ms/graphsecuritypowershellsampleblog) – Find [PowerShell samples](https://aka.ms/graphsecuritypowershellsample).
 - [Drag and drop into workflows and playbooks](https://aka.ms/graphsecurityconnectorsblogpost) – Use [Microsoft Graph security connectors](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) for [Azure Logic Apps](/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/), and [Power Apps](https://powerapps.microsoft.com/).
 - [Get data into reports and dashboards](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – Use the [Microsoft Graph security connector for Power BI](/power-bi/connect-data/desktop-connect-graph-security).
-- [Connect using Jupyter notebooks](https://jupyter.org/) – Find [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks).  
+- [Connect using Jupyter notebooks](https://jupyter.org/) – Find [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks).
 
 ### Submit threats and trigger whole automation flow
 
