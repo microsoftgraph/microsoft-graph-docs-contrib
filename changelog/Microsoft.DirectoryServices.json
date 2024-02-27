@@ -9118,14 +9118,6 @@
           {
               "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
               "ApiChange": "Method",
-              "ChangedApiName": "CREATE",
-              "ChangeType": "Addition",
-              "Description": "Added the [CREATE](https://learn.microsoft.com/en-us/graph/api/policyroot-post-federatedtokenvalidationpolicy?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
-              "Target": "federatedTokenValidationPolicy"
-          },
-          {
-              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
-              "ApiChange": "Method",
               "ChangedApiName": "GET",
               "ChangeType": "Addition",
               "Description": "Added the [GET](https://learn.microsoft.com/en-us/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
@@ -9137,14 +9129,6 @@
               "ChangedApiName": "UPDATE",
               "ChangeType": "Addition",
               "Description": "Added the [UPDATE](https://learn.microsoft.com/en-us/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
-              "Target": "federatedTokenValidationPolicy"
-          },
-          {
-              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
-              "ApiChange": "Method",
-              "ChangedApiName": "DELETE",
-              "ChangeType": "Addition",
-              "Description": "Added the [DELETE](https://learn.microsoft.com/en-us/graph/api/policyroot-delete-federatedtokenvalidationpolicy?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
               "Target": "federatedTokenValidationPolicy"
           }
       ],
