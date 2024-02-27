@@ -162,45 +162,48 @@ Namespace: microsoft.graph
 
 ### recommendationType values
 
-| Member                      |
-| :-------------------------- |
-| adfsAppsMigration           |
-| enableDesktopSSO            |
-| enablePHS                   |
-| enableProvisioning          |
-| switchFromPerUserMFA        |
-| tenantMFA                   |
-| thirdPartyApps              |
-| turnOffPerUserMFA           |
-| useAuthenticatorApp         |
-| useMyApps                   |
-| staleApps                   |
-| staleAppCreds               |
-| applicationCredentialExpiry |
-| servicePrincipalKeyExpiry   |
-| adminMFAV2                  |
-| blockLegacyAuthentication   |
-| integratedApps              |
-| mfaRegistrationV2           |
-| pwagePolicyNew              |
-| passwordHashSync            |
-| oneAdmin                    |
-| roleOverlap                 |
-| selfServicePasswordReset    |
-| signinRiskPolicy            |
-| userRiskPolicy              |
-| verifyAppPublisher          |
-| privateLinkForAAD           |
-| appRoleAssignmentsGroups    |
-| appRoleAssignmentsUsers     |
-| managedIdentity             |
-| overprivilegedApps          |
-| unknownFutureValue          |
-| longLivedCredentials        |
-| aadConnectDeprecated        |
-| adalToMsalMigration         |
-| ownerlessApps               |
-| inactiveGuests              |
+| Member                              |
+| :---------------------------------- |
+| adfsAppsMigration                   |
+| enableDesktopSSO                    |
+| enablePHS                           |
+| enableProvisioning                  |
+| switchFromPerUserMFA                |
+| tenantMFA                           |
+| thirdPartyApps                      |
+| turnOffPerUserMFA                   |
+| useAuthenticatorApp                 |
+| useMyApps                           |
+| staleApps                           |
+| staleAppCreds                       |
+| applicationCredentialExpiry         |
+| servicePrincipalKeyExpiry           |
+| adminMFAV2                          |
+| blockLegacyAuthentication           |
+| integratedApps                      |
+| mfaRegistrationV2                   |
+| pwagePolicyNew                      |
+| passwordHashSync                    |
+| oneAdmin                            |
+| roleOverlap                         |
+| selfServicePasswordReset            |
+| signinRiskPolicy                    |
+| userRiskPolicy                      |
+| verifyAppPublisher                  |
+| privateLinkForAAD                   |
+| appRoleAssignmentsGroups            |
+| appRoleAssignmentsUsers             |
+| managedIdentity                     |
+| overprivilegedApps                  |
+| unknownFutureValue                  |
+| longLivedCredentials                |
+| aadConnectDeprecated                |
+| adalToMsalMigration                 |
+| ownerlessApps                       |
+| inactiveGuests                      |
+| aadGraphDeprecationApplication      |
+| aadGraphDeprecationServicePrincipal |
+| mfaServerDeprecation                |
 
 ### layoutTemplateType values
 
@@ -4623,3 +4626,11 @@ Possible values for user account types (group membership), per Windows definitio
 |restrictedToOrganization|
 |unknownFutureValue|
 
+### conditionalAccessTransferMethods values
+
+|Member|
+|:---|
+|none|
+|deviceCodeFlow|
+|authenticationTransfer|
+|unknownFutureValue|
