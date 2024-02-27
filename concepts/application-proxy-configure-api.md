@@ -6,7 +6,7 @@ ms.reviewer: dhruvinrshah, arpadg
 ms.topic: "conceptual"
 ms.localizationpriority: medium
 ms.prod: "applications"
-ms.date: 02/22/2024
+ms.date: 02/28/2024
 #customer intent: As a developer, I want to configure Microsoft Entra application proxy programmatically using Microsoft Graph, so that I can automate the process of providing secure remote access and single sign-on to on-premises web applications for users.
 ---
 
@@ -14,12 +14,10 @@ ms.date: 02/22/2024
 
 Application proxy provides secure remote access and single sign-on (SSO) to on-premises web applications. Application proxy allows users to access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
 
-In this tutorial, you learn how to:
-> [!div class="checklist"]
-> * Configure Microsoft Entra application proxy for an application.
+In this tutorial, you learn how to Configure Microsoft Entra application proxy using Microsoft Graph APis.
 
 > [!IMPORTANT]
-> The **onPremisesPublishing** property for configuring application proxy is currently in `beta` only. Therefore, some API operations in this tutorial use the `beta` endpoint.
+> The app proxy-specific API operations are currently available only on the `beta` endpoint.
 
 ## Prerequisites
 
