@@ -10742,11 +10742,11 @@ items:
           - name: Grading category
             href: resources/educationgradingcategory.md
             items:
-              - name: Add grading category
+              - name: Add
                 href: api/educationassignment-post-gradingcategory.md
-              - name: Update grading category
+              - name: Update
                 href: api/educationgradingcategory-update.md
-              - name: Delete grading category
+              - name: Delete
                 href: api/educationassignment-delete-gradingcategory.md
           - name: Module
             href: resources/educationmodule.md
