@@ -1,6 +1,6 @@
 ---
 title: "enumeratedDomains resource type"
-description: "A derived complex type which defines that Entra Id will perform validation for specified Entra Id domains"
+description: "A derived complex type, which defines that Microsoft Entra ID performs validation for specified Microsoft Entra ID domains"
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A derived complex type which defines that Entra Id will perform validation (whether federated account's root domain matches with mapped AAD account's root domain) for all specified Entra Id  domains if root domains is 'enumerated' or for all Managed and specified Entra Id domains if root domains is 'allManagedAndEnumeratedFederated'
+A derived complex type, which defines that Microsoft Entra ID performs validation for all specified Microsoft Entra ID  domains if `rootDomains` is 'enumerated' or for all Managed and specified Microsoft Entra ID domains if `rootDomains` is 'allManagedAndEnumeratedFederated'.
 
 Inherits from [validatingDomains](../resources/validatingdomains.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|domainNames|String collection|List of federated and/or managed root domains for which Entra Id will perform the validation.|
-|rootDomains|rootDomains|Defines the types of domains to which the validation applies. Inherited from [validatingDomains](../resources/validatingdomains.md).The possible values are: `none`, `all`, `allFederated`, `allManaged`, `enumerated`, `allManagedAndEnumeratedFederated`, `unknownFutureValue`.|
+|domainNames|String collection|List of federated and/or managed root domains for which Microsoft Entra ID will perform the validation.|
+|rootDomains|rootDomains|Defines the types of domains to which the validation applies. Inherited from [validatingDomains](../resources/validatingdomains.md). The possible values are: `none`, `all`, `allFederated`, `allManaged`, `enumerated`, `allManagedAndEnumeratedFederated`, `unknownFutureValue`.|
 
 ## Relationships
 None.

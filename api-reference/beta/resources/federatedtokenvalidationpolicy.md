@@ -1,6 +1,6 @@
 ---
 title: "federatedTokenValidationPolicy resource type"
-description: "Represents a policy to control enabling or disabling validation of federation authentication tokens, thereby matching an on-premises federated account and a mapped Microsoft Entra ID account's root domain."
+description: "Represents a policy to control enabling or disabling validation of federation authentication tokens. It allows matching an on-premises federated account and a mapped Microsoft Entra ID account's root domain."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -28,8 +28,8 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object was not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
-|id|String|The unique identifier for the object. Key. Not nullable. Read-only. Inherited from [directoryObject](../resources/directoryobject.md).|
+|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object wasn't deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
+|ID|String|The unique identifier for the object. Key. Not nullable. Read-only. Inherited from [directoryObject](../resources/directoryobject.md).|
 |validatingDomains|[validatingDomains](../resources/validatingdomains.md)|Verified Microsoft Entra ID domains for which Microsoft Entra validates that federated account's root domain matches with mapped Microsoft Entra account's root domain.|
 
 ## Relationships
