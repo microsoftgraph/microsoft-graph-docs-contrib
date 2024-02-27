@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the settings of a point-in-time restore of a Cloud PC.
 
 ## Properties
@@ -26,9 +24,7 @@ Represents the settings of a point-in-time restore of a Cloud PC.
 
 None.
 
-
 ### cloudPcRestorePointFrequencyType values
-
 
 |Member|Description|
 |:---|:---|
@@ -43,7 +39,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcRestorePointSetting"
