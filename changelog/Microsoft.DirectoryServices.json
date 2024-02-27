@@ -12156,7 +12156,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "supportedServices",
           "ChangeType": "Change",
-          "Description": "Added `CustomURLDomains` as one of the values for **supportedServices** property of the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource type.",
+          "Description": "Added `CustomUrlDomain` as one of the values for the **supportedServices** property of the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource type.",
           "Target": "domain"
         }
       ],
