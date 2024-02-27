@@ -1,6 +1,6 @@
 ---
 title: "Create cloudPcUserSetting"
-description: "Create a new cloudPcUserSetting ."
+description: "Create a new cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,8 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create a new [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -70,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettings
+POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/userSettings
 Content-Type: application/json
 
 {
@@ -87,7 +85,9 @@ Content-Type: application/json
 ```
 
 ### Response
+
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
