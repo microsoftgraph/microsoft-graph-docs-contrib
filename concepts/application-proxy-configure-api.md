@@ -6,7 +6,7 @@ ms.reviewer: dhruvinrshah, arpadg
 ms.topic: "conceptual"
 ms.localizationpriority: medium
 ms.prod: "applications"
-ms.date: 02/22/2024
+ms.date: 02/27/2024
 #customer intent: As a developer, I want to configure Microsoft Entra application proxy programmatically using Microsoft Graph, so that I can automate the process of providing secure remote access and single sign-on to on-premises web applications for users.
 ---
 
@@ -31,7 +31,7 @@ In this tutorial, you learn how to:
 
 ## Step 1: Create a custom application
 
-To configure application proxy for an app using the API, you first create a custom application, and then update the application's **onPremisesPublishing** property to configure the app proxy settings. In this tutorial, you use an application template to create an instance of a custom application and service principal in your tenant. The template ID for a custom application is `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`, which you can discover by running the following query: [GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'Custom'](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applicationTemplates%3F%24filter%3DdisplayName%2Beq%2B'Custom'&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com).
+To configure application proxy, you first create a custom application, and then update the app proxy settings in the application's **onPremisesPublishing** property. In this tutorial, you use an application template to create an instance of a custom application and service principal in your tenant. The template ID for a custom application is `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`, which you can discover by running the following query: [GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'Custom'](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applicationTemplates%3F%24filter%3DdisplayName%2Beq%2B'Custom'&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com).
 
 From the response, record the **id** of both the service principal and the application objects, and the value of **appId** for use later in the tutorial.
 
@@ -270,9 +270,9 @@ Content-type: application/json
 
 ## Step 2: Configure application proxy
 
-For the app that you created in Step 1, you need to configure the URIs for the application. Assume that the app's internal URL is `https://contosoiwaapp.com` and the default domain for the external URL is `https://contosoiwaapp-contoso.msappproxy.net`. Add the external URL value to the **identifierUris**, **web>redirectUris** and **web>homePageUrl** properties. 
+For the app that you created in Step 1, configure the URIs for the application. Assume that the app's internal URL is `https://contosoiwaapp.com` and the default domain for the external URL is `https://contosoiwaapp-contoso.msappproxy.net`. Add the external URL value to the **identifierUris**, **web>redirectUris** and **web>homePageUrl** properties. 
 
-You also need to configure the **onPremisesPublishing** property to set the internal and external URLs, and other properties as needed. This property is only available in `beta` and can't be configured until you configure the URIs.
+Also, configure the **onPremisesPublishing** property to set the internal and external URLs, and other properties as needed. This property is only available in `beta` and can't be configured until you configure the URIs.
 
 ### Step 2.1: Configure the URIs
 
@@ -722,7 +722,7 @@ Content-type: appplication/json
 
 ### Option 2: Configure header-based SSO
 
-The following request shows how to configure header-based SSO for the application. In this mode, the value of singleSignOnMode property can be `aadHeaderBased`, `pingHeaderBased`, or `oAuthToken`. The request returns a `204 No content` response.
+The following request shows how to configure header-based SSO for the application. In this mode, the value of the **singleSignOnMode** property can be `aadHeaderBased`, `pingHeaderBased`, or `oAuthToken`. The request returns a `204 No content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -753,7 +753,7 @@ Content-type: appplication/json
 
 You want to assign a user to the application. From the service principal that you created in Step 1, record the ID of the default **User** role that's defined in the **appRoles** property. This value is `18d14569-c3bd-439b-9a66-3a2aee01d14f`.
 
-Assign the user to the service principal and grant them the `User` app role. In the request body, provide the following values:
+In the request body, provide the following values:
 
 - **principalId** - The ID of the user account that you created.
 - **appRoleId** - The ID of the default `User` app role that you retrieved from the service principal.
@@ -837,7 +837,7 @@ Content-type: application/json
 ```
 ## Step 6: Test access to the application
 
-Test the application by visiting the **External URL** configured for the app on your browser and then sign in with your test user. You should be able to log into the app and access the application.
+Test the application by visiting the **externalUrl** configured for the app on your browser and then sign in with your test user. You should be able to sign into the app and access the application.
 
 ## Step 7: Clean up resources
 
