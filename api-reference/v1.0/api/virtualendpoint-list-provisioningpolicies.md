@@ -1,6 +1,6 @@
 ---
 title: "List provisioningPolicies"
-description: "List the properties and relationships of all Cloud PC provisioning policies."
+description: "List the properties and relationships of the cloudPcProvisioningPolicy objects."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
