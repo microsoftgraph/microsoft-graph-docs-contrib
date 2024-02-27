@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [cloudClipboardItem](../resources/cloudclipboarditem.md) object. The API only allows getting a [cloudClipboardItem](../resources/cloudclipboarditem.md) object for 
+Read the properties and relationships of a [cloudClipboardItem](../resources/cloudclipboarditem.md) object. This API only allows you to get a [cloudClipboardItem](../resources/cloudclipboarditem.md) object for:
 - The signed-in user's own [cloudClipboardItem](../resources/cloudclipboarditem.md).
 - An app on behalf of the user if the user grants delegated access to it.
 
@@ -60,7 +60,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [cloudClipboardItem](../resources/cloudclipboarditem.md) object in the response body.
 
 ### Errors
-In addition to [general errors](/graph/errors) that apply to Microsoft Graph, some error conditions are specific to the Cloud Clipboard API.
+In addition to [general errors](/graph/errors) that apply to Microsoft Graph, the following error conditions are specific to the Cloud Clipboard API.
 
 |Status code|Status message|Description|
 |:---|:---|:---|
