@@ -206,24 +206,6 @@
         },
         {
           "ChangeList": [
-            {
-              "Id": "f39ad276-68be-45d0-87a2-6a5aaaf1ff9b",
-              "ApiChange": "Resource",
-              "ChangedApiName": "user",
-              "ChangeType": "Addition",
-              "Description": "Added the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
-              "Target": "user"
-            }
-          ],
-          "Id": "f39ad276-68be-45d0-87a2-6a5aaaf1ff9b",
-          "Cloud": "Prod",
-          "Version": "v1.0",
-          "CreatedDateTime": "2024-02-23T08:57:46.6661582Z",
-          "WorkloadArea": "Identity and access",
-          "SubArea": "Directory management"
-        },
-        {
-          "ChangeList": [
               {
                 "Id": "d23da4c0-bd4c-4f0f-9b1e-76ee7be8d487",
                 "ApiChange": "Method",
