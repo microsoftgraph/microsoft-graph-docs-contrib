@@ -20,6 +20,8 @@ $requestBody->setOfferShiftRequestsEnabled(true);
 $requestBody->setTimeOffRequestsEnabled(true);
 $requestBody->setStartDayOfWeek(new DayOfWeek('tuesday'));
 $requestBody->setActivitiesIncludedWhenCopyingShiftsEnabled(true);
+$requestBody->setIsCrossLocationShiftsEnabled(true);
+$requestBody->setIsCrossLocationShiftRequestApprovalRequired(true);
 $requestBody->setTimeClockEnabled(true);
 $timeClockSettings = new TimeClockSettings();
 $timeClockSettingsApprovedLocation = new GeoCoordinates();
