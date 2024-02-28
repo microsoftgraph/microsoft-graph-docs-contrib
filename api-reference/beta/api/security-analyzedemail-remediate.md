@@ -52,17 +52,17 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|displayName|String| Name of the remediation that is used as a reference in the action center. |
-|description|String| Description of the remediation. |
-|severity|microsoft.graph.security.remediationSeverity| Severity of the remediation. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
-|action|microsoft.graph.security.remediationAction|Types of Move and Delete actions supported. The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
-|approverUpn|String| Used to track who approved the action. |
-|remediateSendersCopy|Boolean| For intra org and out bound email, it will trigger an action for sender's copy. |
+|displayName|String| The name of the remediation that is used as a reference in the action center. |
+|description|String| The description of the remediation. |
+|severity|microsoft.graph.security.remediationSeverity| The severity of the remediation. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
+|action|microsoft.graph.security.remediationAction|The types of move and delete actions that are supported. The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
+|approverUpn|String| Tracks who approved the action. |
+|remediateSendersCopy|Boolean| For intra-org and outbound email, triggers an action for the sender's copy. |
 |analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|GET unique key to identify a single email. The ID can be found from the analyzedemails, analyzedemails/Id or runHuntingQuery/reportId.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code and the cation status can be tracked through the location header with bulkId. 
+If successful, this action returns a `204 No Content` response code and the action status can be tracked through the location header with bulkId. 
 
 >**Note:** The response of the action can be tracked in https://security.microsoft.com/action-center/history. Learn more about [Action center](microsoft-365/security/defender/m365d-action-center?view=o365-worldwide)
 
