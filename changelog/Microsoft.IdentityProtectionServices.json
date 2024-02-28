@@ -33,7 +33,8 @@
           "CreatedDateTime": "2024-02-23T22:19:32.3422617Z",
           "WorkloadArea": "Identity and access",
           "SubArea": "Identity and sign-in"
-        },
+    },
+    {
       "ChangeList": [
         {
           "Id": "20b083d5-0c27-41e5-ad6d-d5a148ca584d",
