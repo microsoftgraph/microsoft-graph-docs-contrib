@@ -1,5 +1,5 @@
 ---
-title: "Solution resource type"
+title: "solution resource type"
 description: "Represents a user's custom solution entity."
 author: "galalalym"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
-# Solution resource type
+# solution resource type
 
 Namespace: microsoft.graph
 
@@ -16,21 +16,25 @@ Namespace: microsoft.graph
 Represents a user's custom solution entity.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get solution](../api/solution-get.md)|[solution](../resources/solution.md)|Read the properties and relationships of a [solution](../resources/solution.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|ID|String|A unique programmatic identifier for the entity. Read-only.|
+|id|String|A unique programmatic identifier for the entity. Read-only.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|schedule|[workingTimeSchedule](../resources/workingtimeschedule.md)|Working time schedule entity associated with the solution.|
+|schedule|[workingTimeSchedule](../resources/workingtimeschedule.md)|The working time schedule entity associated with the solution.|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -45,4 +49,3 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)"
 }
 ```
-
