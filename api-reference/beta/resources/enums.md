@@ -4622,3 +4622,22 @@ Possible values for user account types (group membership), per Windows definitio
 |deviceCodeFlow|
 |authenticationTransfer|
 |unknownFutureValue|
+
+### conditionalAccessInsiderRiskLevels values 
+
+|Member|
+|:---|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
+### insiderRiskLevel values 
+
+|Member|
+|:---|
+|none|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
