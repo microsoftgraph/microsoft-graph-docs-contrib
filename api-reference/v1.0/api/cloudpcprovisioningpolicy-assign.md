@@ -64,7 +64,7 @@ The following example shows a request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
+POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/provisioningPolicies/1d164206-bf41-4fd2-8424-a3192d39ffff/assign
 Content-Type: application/json
 
 {
