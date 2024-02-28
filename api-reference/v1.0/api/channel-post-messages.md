@@ -50,7 +50,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages
 
 ## Request body
 
-In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object. Only the body property is mandatory. Its properties are optional.
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object. Only the body property is mandatory. All other properties are optional.
 
 ## Response
 
