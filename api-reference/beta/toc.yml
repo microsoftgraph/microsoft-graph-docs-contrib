@@ -18774,10 +18774,10 @@ items:
               - name: Role definition (preview)
                 href: resources/shiftsroledefinition.md
                 items:
-                  - name: Update
-                    href: api/shiftsroledefinition-update.md
                   - name: Get
                     href: api/shiftsroledefinition-get.md
+                  - name: Update
+                    href: api/shiftsroledefinition-update.md
               - name: Schedule
                 href: resources/schedule.md
                 items:
