@@ -1,6 +1,39 @@
 {
   "changelog": [
-      {    
+      {
+         "ChangeList": [
+            {
+            "Id": "eee21f5a-24a4-45f0-b456-102b11cde153",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "conditionalAccessInsiderRiskLevels",
+            "ChangeType": "Addition",
+            "Description": "Added the **conditionalAccessInsiderRiskLevels** enumeration type.",
+            "Target": "conditionalAccessInsiderRiskLevels"
+            },
+            {
+            "Id": "eee21f5a-24a4-45f0-b456-102b11cde153",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "insiderRiskLevel",
+            "ChangeType": "Addition",
+            "Description": "Added the **insiderRiskLevel** enumeration type.",
+            "Target": "insiderRiskLevel"
+            },
+            {
+            "Id": "eee21f5a-24a4-45f0-b456-102b11cde153",
+            "ApiChange": "Property",
+            "ChangedApiName": "insiderRiskLevels",
+            "ChangeType": "Addition",
+            "Description": "Added the **insiderRiskLevels** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource.",
+            "Target": "conditionalAccessConditionSet"
+            }
+          ],
+          "Id": "eee21f5a-24a4-45f0-b456-102b11cde153",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2024-02-23T22:19:32.3422617Z",
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Identity and sign-in"
+        },
       "ChangeList": [
         {
           "Id": "20b083d5-0c27-41e5-ad6d-d5a148ca584d",
