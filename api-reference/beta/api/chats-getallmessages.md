@@ -37,19 +37,21 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
 as shown in the following examples.
-If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
 ```
 
-This operation also supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
+If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+
+This method also supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
 ``` http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
-This method also supports `$filter`. The following table lists examples.
+
+This method supports also supports `$filter`. The following table lists examples.
 
 |Scenario                                  | `$filter` parameter                                                                       |Possible values                                                                                             |
 |:-----------------------------------------|:---------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
@@ -58,6 +60,7 @@ This method also supports `$filter`. The following table lists examples.
 |Get messages sent by user ID              |$filter=from/user/id eq '{oid}'                                                         ||
 |Get control(system event) messages        |$filter=messageType eq 'systemEventMessage'                                             ||
 |Exclude control (system event) messages   |$filter=messageType ne 'systemEventMessage'                                             ||
+
 >**Note:** These filter clauses can be joined by using the `or` operator. A filter clause can appear more than once in a query, and it can filter on a different value each time it appears within the query.
 
 ## Request headers
