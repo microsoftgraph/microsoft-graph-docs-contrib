@@ -1,6 +1,6 @@
 ---
 title: "workingTimeSchedule: startWorkingTime"
-description: "Triggers the policies associated with the start of working hours."
+description: "Trigger the policies associated with the start of working hours."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Triggers the policies associated with the start of working hours.
+Trigger the policies associated with the start of working hours.
 
 ## Permissions
 
@@ -37,9 +37,10 @@ POST /users/{userId}/solutions/schedule/startWorkingTime
 ```
 
 ## Path parameters
+
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|string|User ID that has started working.|
+|userId|String|User ID that has started working.|
 
 ## Request headers
 
@@ -82,4 +83,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
