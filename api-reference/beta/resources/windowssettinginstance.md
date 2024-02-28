@@ -17,8 +17,6 @@ Represents a setting instance from the Windows operating system that is stored i
 
 A **windowsSettingInstance** belongs to a [**windowsSetting**](../resources/windowssetting.md).
 
-The *payload* property of a **windowsSettingInstance** contains the actual setting value. The *payload* is a string in base64 encoded format. The *payloadType* property of the [**windowsSetting**](../resources/windowssetting.md) object indicates the type of the setting value. The *payload* when decoded is a JSON object which differs from setting to setting and is specific to the *payloadType*.
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
