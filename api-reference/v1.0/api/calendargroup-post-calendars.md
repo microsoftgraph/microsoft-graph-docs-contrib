@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 
 | Header        | Value                       |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -142,7 +142,7 @@ Content-type: application/json
     "canEdit": true,
     "owner": {
         "name": "Adele Vance",
-        "address": "adelev@contoso.OnMicrosoft.com"
+        "address": "adelev@contoso.com"
     }
 }
 ```

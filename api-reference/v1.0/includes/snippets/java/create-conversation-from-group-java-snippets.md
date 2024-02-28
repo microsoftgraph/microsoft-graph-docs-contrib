@@ -4,39 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Conversation conversation = new Conversation();
-conversation.topic = "Take your wellness days and rest";
-LinkedList<ConversationThread> threadsList = new LinkedList<ConversationThread>();
-ConversationThread threads = new ConversationThread();
-LinkedList<Post> postsList = new LinkedList<Post>();
-Post posts = new Post();
+conversation.setTopic("Take your wellness days and rest");
+LinkedList<ConversationThread> threads = new LinkedList<ConversationThread>();
+ConversationThread conversationThread = new ConversationThread();
+LinkedList<Post> posts = new LinkedList<Post>();
+Post post = new Post();
 ItemBody body = new ItemBody();
-body.contentType = BodyType.HTML;
-body.content = "Contoso cares about you: Rest and Recharge";
-posts.body = body;
-LinkedList<Recipient> newParticipantsList = new LinkedList<Recipient>();
-Recipient newParticipants = new Recipient();
+body.setContentType(BodyType.Html);
+body.setContent("Contoso cares about you: Rest and Recharge");
+post.setBody(body);
+LinkedList<Recipient> newParticipants = new LinkedList<Recipient>();
+Recipient recipient = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.name = "Adele Vance";
-emailAddress.address = "AdeleV@contoso.onmicrosoft.com";
-newParticipants.emailAddress = emailAddress;
-newParticipantsList.add(newParticipants);
-posts.newParticipants = newParticipantsList;
-postsList.add(posts);
-PostCollectionResponse postCollectionResponse = new PostCollectionResponse();
-postCollectionResponse.value = postsList;
-PostCollectionPage postCollectionPage = new PostCollectionPage(postCollectionResponse, null);
-threads.posts = postCollectionPage;
-threadsList.add(threads);
-ConversationThreadCollectionResponse conversationThreadCollectionResponse = new ConversationThreadCollectionResponse();
-conversationThreadCollectionResponse.value = threadsList;
-ConversationThreadCollectionPage conversationThreadCollectionPage = new ConversationThreadCollectionPage(conversationThreadCollectionResponse, null);
-conversation.threads = conversationThreadCollectionPage;
+emailAddress.setName("Adele Vance");
+emailAddress.setAddress("AdeleV@contoso.com");
+recipient.setEmailAddress(emailAddress);
+newParticipants.add(recipient);
+post.setNewParticipants(newParticipants);
+posts.add(post);
+conversationThread.setPosts(posts);
+threads.add(conversationThread);
+conversation.setThreads(threads);
+Conversation result = graphClient.groups().byGroupId("{group-id}").conversations().post(conversation);
 
-graphClient.groups("29981b6a-0e57-42dc-94c9-cd24f5306196").conversations()
-	.buildRequest()
-	.post(conversation);
 
 ```

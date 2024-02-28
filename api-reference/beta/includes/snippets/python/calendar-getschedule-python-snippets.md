@@ -4,14 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.calendar.getSchedule.get_schedule_request_builder import GetScheduleRequestBuilder
+from msgraph.generated.models.get_schedule_post_request_body import GetSchedulePostRequestBody
+from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = GetSchedulePostRequestBody(
 	schedules = [
-		"adelev@contoso.onmicrosoft.com",
-		"meganb@contoso.onmicrosoft.com",
+		"adelev@contoso.com",
+		"meganb@contoso.com",
 	],
 	start_time = DateTimeTimeZone(
 		date_time = "2019-03-15T09:00:00",

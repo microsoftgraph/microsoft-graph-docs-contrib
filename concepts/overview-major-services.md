@@ -84,7 +84,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Browser management | Microsoft Edge | Microsoft Edge is one of the applications that administrators manage through the Microsoft 365 admin center. As an alternative to using the Microsoft 365 admin center, apps can use the Microsoft Graph API to manage the same Edge settings configured through the Microsoft 365 admin center. | [Using the Edge API in Microsoft Graph to manage browsers](browser-edge-concept-overview.md) |
 | Cloud printing | Universal Print | Universal Print is a Microsoft 365 cloud-based print infrastructure that enables a simple, rich, and secure print experience for users and reduces administrative and management effort for IT. | [Cloud printing using Universal Print API](universal-print-concept-overview.md) |
 |Corp management of devices and apps | Intune | Enrolls and configures devices and manages mobile applications in your organization. | [Intune devices and apps overview](intune-concept-overview.md) |
-| Cloud PC (preview) | Windows 365  | Windows 365 is a cloud-based service that lets administrators easily set up and manage Windows 365 Cloud PCs for users in their organization. Individual end users can securely stream their rich, personalized Windows experience from the Microsoft cloud to any device, any time, with their Cloud PC. | [Working with Windows 365 Cloud PCs using the Microsoft Graph API](cloudpc-concept-overview.md) |
+| Cloud PC | Windows 365  | Windows 365 is a cloud-based service that lets administrators easily set up and manage Windows 365 Cloud PCs for users in their organization. Individual end users can securely stream their rich, personalized Windows experience from the Microsoft cloud to any device, any time, with their Cloud PC. | [Working with Windows 365 Cloud PCs using the Microsoft Graph API](cloudpc-concept-overview.md) |
 | Device updates (preview) | Windows Update for Business deployment service | Provides control over the approval, scheduling, monitoring, and safeguarding of content delivered from Windows Update. | [Windows updates in Microsoft Graph](windowsupdates-concept-overview.md) |
 | Multi-tenant management (preview) | Microsoft 365 Lighthouse | Lets Managed Service Providers (MSPs) remotely manage multiple customer tenants for compliance and threat detection, and help get tenant devices in a healthy and secure state. | [Multi-tenant management using Microsoft 365 Lighthouse](managedtenants-concept-overview.md) |
 | Service health and communications | Microsoft 365 and Dynamics 365 services | Provides access to the health status and message center posts about Microsoft cloud services. A notable example that uses the service communications API is the Microsoft 365 admin center. | [Accessing service health and communications in Microsoft Graph](service-communications-concept-overview.md) |
@@ -131,11 +131,9 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Customer booking (preview) | Microsoft Bookings | Targets organizations to enable their users and customers to book services directly on the web or Facebook. Lets business providers manage customer preferences, services and pricing, staff lists and schedules, and other common business information. | [Microsoft Bookings API overview](booking-concept-overview.md) |
 | Financials (preview) | Dynamics 365 Business Central | Enables management of financial data, automation and securing of the supply chain, sales management and improved customer service, management of projects, and optimization of operations with the all-in-one business management solution.| [Business Central API overview](dynamics-business-central-concept-overview.md) |
 
-## Next steps
+## Related content
 
-<!-- Need to update the destination page titles and URLs as Matt's v-team finalize on the examples and featured scenarios content 
--->
-
-- Look under **Learn** in the table of contents to read about services and features that _you_ can use in your scenarios.
+- See [what's new](whats-new-overview.md) in Microsoft Graph.
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use this [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
+- Explore the [integration patterns](/graph/integration-patterns-overview) that apply to your scenario.

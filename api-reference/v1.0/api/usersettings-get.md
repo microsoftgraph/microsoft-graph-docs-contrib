@@ -2,6 +2,7 @@
 title: "Get settings"
 description: "Read the user and organization settings object."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -34,6 +35,12 @@ Request with a 'user id' or 'userPrincipalName' is only accessible by the user o
 ```http
 GET /users/{id | userPrincipalName}/settings/
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -39,7 +39,7 @@ POST /identityProtection/riskyServicePrincipals/dismiss
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, specify the collection of ids of the risky service principals in a **servicePrincipalIds** property. 

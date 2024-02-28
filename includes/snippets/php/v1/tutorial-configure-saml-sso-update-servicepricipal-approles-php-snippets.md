@@ -6,27 +6,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ServicePrincipal();
 $appRolesAppRole1 = new AppRole();
 $appRolesAppRole1->setAllowedMemberTypes(['User', 	]);
+$appRolesAppRole1->setDescription('User');
 $appRolesAppRole1->setDisplayName('User');
 $appRolesAppRole1->setId('8774f594-1d59-4279-b9d9-59ef09a23530');
 $appRolesAppRole1->setIsEnabled(true);
-$appRolesAppRole1->setDescription('User');
-$appRolesAppRole1->setValue(null);
 $appRolesAppRole1->setOrigin('Application');
+$appRolesAppRole1->setValue(null);
 $appRolesArray []= $appRolesAppRole1;
 $appRolesAppRole2 = new AppRole();
 $appRolesAppRole2->setAllowedMemberTypes(['User', 	]);
+$appRolesAppRole2->setDescription('msiam_access');
 $appRolesAppRole2->setDisplayName('msiam_access');
 $appRolesAppRole2->setId('e7f1a7f3-9eda-48e0-9963-bd67bf531afd');
 $appRolesAppRole2->setIsEnabled(true);
-$appRolesAppRole2->setDescription('msiam_access');
-$appRolesAppRole2->setValue(null);
 $appRolesAppRole2->setOrigin('Application');
+$appRolesAppRole2->setValue(null);
 $appRolesArray []= $appRolesAppRole2;
 $appRolesAppRole3 = new AppRole();
 $appRolesAppRole3->setAllowedMemberTypes(['User', 	]);

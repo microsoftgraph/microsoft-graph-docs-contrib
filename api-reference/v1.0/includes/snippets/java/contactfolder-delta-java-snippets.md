@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "odata.maxpagesize=2"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-ContactFolderDeltaCollectionPage delta = graphClient.me().contactFolders()
-	.delta()
-	.buildRequest( requestOptions )
-	.get();
+var result = graphClient.me().contactFolders().delta().get(requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "odata.maxpagesize=2");
+});
+
 
 ```

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.identity.b2xUserFlows.item.apiConnectorConfiguration.api_connector_configuration_request_builder import ApiConnectorConfigurationRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

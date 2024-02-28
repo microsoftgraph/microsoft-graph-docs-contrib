@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const alert = {
-    assignedTo: 'secAdmin@contoso.onmicrosoft.com',
+    assignedTo: 'secAdmin@contoso.com',
     classification: 'truePositive',
     determination: 'malware',
     status: 'inProgress'

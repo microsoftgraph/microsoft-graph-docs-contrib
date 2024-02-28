@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.sites.item.lists.item.items.items_request_builder import ItemsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = ItemsRequestBuilder.ItemsRequestBuilderGetQueryParameters(
-		expand = ["fields(select=Name,Color,Quantity)"],
+		expand = ["fields($select=Name,Color,Quantity)"],
 )
 
 request_configuration = ItemsRequestBuilder.ItemsRequestBuilderGetRequestConfiguration(

@@ -22,7 +22,7 @@ Inherits from [participantBase](callrecords-participantbase.md).
 | Property | Type                       | Description                                             |
 |:---------|:------------------------------|:--------------------------------------------------------|
 | id       | String                        | Unique identifier for the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
-| identity | [identitySet](identityset.md) | The identity of the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
+| identity | [communicationsIdentitySet](communicationsidentityset.md) | The identity of the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
 
 ## JSON representation
 
@@ -40,10 +40,10 @@ The following JSON representation shows the resource type.
 ```json
 {
   "id": "String (identity)",
-  "identity": {"@odata.type": "microsoft.graph.identitySet"}
+  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"}
 }
 ```
 
-## See also
+## Related content
 
 For examples that show how to use the **organizer** resource, see [callRecord](callrecords-callrecord.md).

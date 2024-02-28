@@ -17,15 +17,13 @@ Get all retained messages from all [chats](../resources/chatmessage.md) that a u
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "chat-getallretainedmessages-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "chat_getallretainedmessages" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-getallretainedmessages-permissions.md)]
 
 ## HTTP request
@@ -63,7 +61,7 @@ GET /users/{id}/chats/getAllRetainedMessages?$top=50&$filter=lastModifiedDateTim
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -184,6 +182,6 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

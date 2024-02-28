@@ -1,6 +1,6 @@
 ---
 title: "deletedChat: undoDelete"
-description: "Restores a deletedChat."
+description: "Restore a deletedChat to an active chat."
 author: "sthapliyal"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a  [deletedChat](../resources/deletedchat.md) to an active [chat](../resources/chat.md).
+Restore a [deletedChat](../resources/deletedchat.md) to an active [chat](../resources/chat.md).
 
->**Note:** This operation is not supported for non-admin users.
+>**Note:** This operation isn't supported for non-admin users.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -37,7 +37,7 @@ POST /teamwork/deletedChats/{deletedChatId}/undoDelete
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -49,7 +49,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

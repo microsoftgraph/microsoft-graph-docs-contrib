@@ -35,7 +35,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -118,7 +118,7 @@ Content-Type: application/json
             "releasedDateTime": null,
             "id": "0053a61a3b6c42738f7606791716a22a",
             "displayName": "Alex Wilber",
-            "email": "AlexW@M365x809305.OnMicrosoft.com",
+            "email": "AlexW@contoso.com",
             "acknowledgedDateTime": "0001-01-01T00:00:00Z"
         }
     ]
