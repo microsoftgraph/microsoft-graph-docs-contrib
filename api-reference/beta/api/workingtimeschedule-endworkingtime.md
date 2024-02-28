@@ -1,6 +1,6 @@
 ---
 title: "workingTimeSchedule: endWorkingTime"
-description: "Triggers the policies associated with the end of working hours."
+description: "Trigger the policies associated with the end of working hours."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Triggers the policies associated with the end of working hours.
+Trigger the policies associated with the end of working hours.
 
 ## Permissions
 
@@ -37,6 +37,7 @@ POST /users/{userId}/solutions/schedule/endWorkingTime
 ```
 
 ## Path parameters
+
 |Parameter|Type|Description|
 |:---|:---|:---|
 |userId|string|User ID that has started working.|
@@ -69,7 +70,6 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/users/{usersId}/solutions/schedule/endWorkingTime
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -82,4 +82,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
