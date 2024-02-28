@@ -20,7 +20,7 @@ For a recording, this API returns the metadata of the single recording associate
 > [!NOTE]
 >
 > * This is a metered API. For more information, see [payment models for meeting APIs](/graph/teams-licenses#payment-models-for-meeting-apis).
-> * This API doesn't support meetings created using [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with any event on the user's calendar.
+> * This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
 > * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
