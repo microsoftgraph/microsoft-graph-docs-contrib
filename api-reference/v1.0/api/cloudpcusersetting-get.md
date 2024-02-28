@@ -92,7 +92,6 @@ Content-Type: application/json
     "localAdminEnabled": false,
     "resetEnabled": true,
     "restorePointSetting": {
-      "frequencyInHours": 16,
       "frequencyType": "sixteenHours",
       "userRestoreEnabled": true
     },
