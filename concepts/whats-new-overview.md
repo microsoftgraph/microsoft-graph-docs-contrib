@@ -21,7 +21,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Security
 
-Added the ability to get email related threats and ability to perform response actions (soft delete, hard delete, move to junk , move to inbox) on those messages. 
+Added the ability to list emails, get email related metadata, and perform response actions (soft delete, hard delete, move to junk, move to inbox). 
 
 ## February 2024: New and generally available
 
