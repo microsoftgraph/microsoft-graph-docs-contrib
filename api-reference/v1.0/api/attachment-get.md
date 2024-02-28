@@ -338,7 +338,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAM
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-and-expand-item-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -406,20 +406,20 @@ Content-type: application/json
     "sender":{
       "emailAddress":{
         "name":"Adele Vance",
-        "address":"AdeleV@contoso.onmicrosoft.com"
+        "address":"AdeleV@contoso.com"
       }
     },
     "from":{
       "emailAddress":{
         "name":"Adele Vance",
-        "address":"AdeleV@contoso.onmicrosoft.com"
+        "address":"AdeleV@contoso.com"
       }
     },
     "toRecipients":[
       {
         "emailAddress":{
           "name":"Alex Wilbur",
-          "address":"AlexW@contoso.onmicrosoft.com"
+          "address":"AlexW@contoso.com"
         }
       }
     ],
@@ -427,7 +427,7 @@ Content-type: application/json
       {
         "emailAddress":{
           "name":"Adele Vance",
-          "address":"AdeleV@contoso.onmicrosoft.com"
+          "address":"AdeleV@contoso.com"
         }
       }
     ],
@@ -466,7 +466,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAM
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-and-expand-nested-item-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -837,8 +837,8 @@ The response body includes the **eventMessage** attachment in MIME format. The b
 ```http
 HTTP/1.1 200 OK
 
-From: Megan Bowen <MeganB@contoso.OnMicrosoft.com>
-To: Adele Vance <AdeleV@contoso.OnMicrosoft.com>
+From: Megan Bowen <MeganB@contoso.com>
+To: Adele Vance <AdeleV@contoso.com>
 Subject: Let's go for lunch
 Thread-Topic: Let's go for lunch
 Thread-Index: AdTPqxOmg4AXoJV960a1j5NrJCHYjA==

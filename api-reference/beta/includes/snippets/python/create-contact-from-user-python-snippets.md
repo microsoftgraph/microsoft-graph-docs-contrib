@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.contact import Contact
+from msgraph.generated.models.typed_email_address import TypedEmailAddress
+from msgraph.generated.models.phone import Phone
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,12 +16,12 @@ request_body = Contact(
 	surname = "Bansky",
 	email_addresses = [
 		TypedEmailAddress(
-			address = "pavelb@contoso.onmicrosoft.com",
+			address = "pavelb@contoso.com",
 			name = "Pavel Bansky",
 			type = EmailType.Personal,
 		),
 		TypedEmailAddress(
-			address = "pavelb@fabrikam.onmicrosoft.com",
+			address = "pavelb@contoso.com",
 			name = "Pavel Bansky",
 			type = EmailType.Other,
 			other_label = "Volunteer work",

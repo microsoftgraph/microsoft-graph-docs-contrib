@@ -23,14 +23,14 @@ requestBody.SetDisplayName(&displayName)
 objectIdentity := graphmodels.NewObjectIdentity()
 signInType := "userName"
 objectIdentity.SetSignInType(&signInType) 
-issuer := "contoso.onmicrosoft.com"
+issuer := "contoso.com"
 objectIdentity.SetIssuer(&issuer) 
 issuerAssignedId := "johnsmith"
 objectIdentity.SetIssuerAssignedId(&issuerAssignedId) 
 objectIdentity1 := graphmodels.NewObjectIdentity()
 signInType := "emailAddress"
 objectIdentity1.SetSignInType(&signInType) 
-issuer := "contoso.onmicrosoft.com"
+issuer := "contoso.com"
 objectIdentity1.SetIssuer(&issuer) 
 issuerAssignedId := "jsmith@yahoo.com"
 objectIdentity1.SetIssuerAssignedId(&issuerAssignedId) 

@@ -24,7 +24,7 @@ recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 name := "Samantha Booth"
 emailAddress.SetName(&name) 
-address := "samanthab@contoso.onmicrosoft.com"
+address := "samanthab@contoso.com"
 emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
@@ -38,7 +38,7 @@ mention := graphmodels.NewMention()
 mentioned := graphmodels.NewEmailAddress()
 name := "Dana Swope"
 mentioned.SetName(&name) 
-address := "danas@contoso.onmicrosoft.com"
+address := "danas@contoso.com"
 mentioned.SetAddress(&address) 
 mention.SetMentioned(mentioned)
 

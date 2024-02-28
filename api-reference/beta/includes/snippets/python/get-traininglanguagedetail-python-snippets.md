@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.security.attackSimulation.trainings.item.languageDetails.item.training_language_detail_item_request_builder import TrainingLanguageDetailItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

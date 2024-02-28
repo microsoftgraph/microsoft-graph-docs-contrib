@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UnifiedRoleDefinition unifiedRoleDefinition = new UnifiedRoleDefinition();
-unifiedRoleDefinition.description = "Update basic properties and permission of application registrations";
-unifiedRoleDefinition.displayName = "ExampleCustomRole";
-LinkedList<UnifiedRolePermission> rolePermissionsList = new LinkedList<UnifiedRolePermission>();
-UnifiedRolePermission rolePermissions = new UnifiedRolePermission();
-LinkedList<String> allowedResourceActionsList = new LinkedList<String>();
-allowedResourceActionsList.add("Microsoft.CloudPC/CloudPCs/Read");
-allowedResourceActionsList.add("Microsoft.CloudPC/CloudPCs/Reprovision");
-rolePermissions.allowedResourceActions = allowedResourceActionsList;
-rolePermissionsList.add(rolePermissions);
-unifiedRoleDefinition.rolePermissions = rolePermissionsList;
+unifiedRoleDefinition.setDescription("Update basic properties and permission of application registrations");
+unifiedRoleDefinition.setDisplayName("ExampleCustomRole");
+LinkedList<UnifiedRolePermission> rolePermissions = new LinkedList<UnifiedRolePermission>();
+UnifiedRolePermission unifiedRolePermission = new UnifiedRolePermission();
+LinkedList<String> allowedResourceActions = new LinkedList<String>();
+allowedResourceActions.add("Microsoft.CloudPC/CloudPCs/Read");
+allowedResourceActions.add("Microsoft.CloudPC/CloudPCs/Reprovision");
+unifiedRolePermission.setAllowedResourceActions(allowedResourceActions);
+rolePermissions.add(unifiedRolePermission);
+unifiedRoleDefinition.setRolePermissions(rolePermissions);
+UnifiedRoleDefinition result = graphClient.roleManagement().cloudPC().roleDefinitions().byUnifiedRoleDefinitionId("{unifiedRoleDefinition-id}").patch(unifiedRoleDefinition);
 
-graphClient.roleManagement().cloudPC().roleDefinitions("b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff")
-	.buildRequest()
-	.patch(unifiedRoleDefinition);
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc-beta security alerts-v2 patch --alert-id {alert-id} --body '{\
-    "assignedTo": "secAdmin@contoso.onmicrosoft.com",\
+    "assignedTo": "secAdmin@contoso.com",\
     "classification": "truePositive",\
     "determination": "malware",\
     "status": "inProgress"\

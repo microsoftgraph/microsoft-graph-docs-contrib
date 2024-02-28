@@ -4,7 +4,8 @@ description: "A setting represented by a name/value pair."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ---
 
 # settingValue resource type

@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 BrowserSharedCookie browserSharedCookie = new BrowserSharedCookie();
-browserSharedCookie.hostOrDomain = "www.microsoft.com";
-browserSharedCookie.sourceEnvironment = BrowserSharedCookieSourceEnvironment.INTERNET_EXPLORER11;
-browserSharedCookie.displayName = "Microsoft Cookie";
-browserSharedCookie.hostOnly = true;
-browserSharedCookie.comment = "A cookie for microsoft.com";
-browserSharedCookie.path = "/";
+browserSharedCookie.setOdataType("#microsoft.graph.browserSharedCookie");
+browserSharedCookie.setHostOrDomain("www.microsoft.com");
+browserSharedCookie.setSourceEnvironment(BrowserSharedCookieSourceEnvironment.InternetExplorer11);
+browserSharedCookie.setDisplayName("Microsoft Cookie");
+browserSharedCookie.setHostOnly(true);
+browserSharedCookie.setComment("A cookie for microsoft.com");
+browserSharedCookie.setPath("/");
+BrowserSharedCookie result = graphClient.admin().edge().internetExplorerMode().siteLists().byBrowserSiteListId("{browserSiteList-id}").sharedCookies().post(browserSharedCookie);
 
-graphClient.admin().edge().internetExplorerMode().siteLists("e370d818-f650-5ab1-499e-5915e83f4573").sharedCookies()
-	.buildRequest()
-	.post(browserSharedCookie);
 
 ```

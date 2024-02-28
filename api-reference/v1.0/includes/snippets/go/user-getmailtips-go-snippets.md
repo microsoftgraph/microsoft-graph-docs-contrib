@@ -18,8 +18,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphusers.NewItemGetMailTipsPostRequestBody()
 emailAddresses := []string {
-	"danas@contoso.onmicrosoft.com",
-	"fannyd@contoso.onmicrosoft.com",
+	"danas@contoso.com",
+	"fannyd@contoso.com",
 }
 requestBody.SetEmailAddresses(emailAddresses)
 mailTipsOptions := graphmodels.AUTOMATICREPLIES, MAILBOXFULLSTATUS_MAILTIPSTYPE 
