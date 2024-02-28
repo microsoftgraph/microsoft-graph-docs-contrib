@@ -32,8 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 > [!NOTE]
 > The Schedule.ReadWrite.All application permission is currently in private preview only and isn't available for public use.
 
-> [!NOTE]
-> This API supports admin permissions. Global admins can access groups that they are not a member of.
+This API supports admin permissions. Global admins can access groups that they are not a member of.
 
 ## HTTP request
 
