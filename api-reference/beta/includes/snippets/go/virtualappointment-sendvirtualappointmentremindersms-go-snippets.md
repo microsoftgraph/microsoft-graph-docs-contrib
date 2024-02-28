@@ -17,15 +17,26 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphusers.NewItemSendVirtualAppointmentReminderSmsPostRequestBody()
+
+
+attendeeNotificationInfo := graphmodels.NewAttendeeNotificationInfo()
+phoneNumber := "+13129224122"
+attendeeNotificationInfo.SetPhoneNumber(&phoneNumber) 
+timeZone := "Pacific Standard Time"
+attendeeNotificationInfo.SetTimeZone(&timeZone) 
+attendeeNotificationInfo1 := graphmodels.NewAttendeeNotificationInfo()
+phoneNumber := "+1242421412"
+attendeeNotificationInfo1.SetPhoneNumber(&phoneNumber) 
+timeZone := "Eastern Standard Time"
+attendeeNotificationInfo1.SetTimeZone(&timeZone) 
+
+attendees := []graphmodels.AttendeeNotificationInfoable {
+	attendeeNotificationInfo,
+	attendeeNotificationInfo1,
+}
+requestBody.SetAttendees(attendees)
 remindBeforeTimeInMinutesType := graphmodels.MINS15_REMINDBEFORETIMEINMINUTESTYPE 
 requestBody.SetRemindBeforeTimeInMinutesType(&remindBeforeTimeInMinutesType) 
-additionalData := map[string]interface{}{
-	phoneNumbers := []string {
-		"+13129224122",
-		"+1242421412",
-	}
-}
-requestBody.SetAdditionalData(additionalData)
 
 graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").SendVirtualAppointmentReminderSms().Post(context.Background(), requestBody, nil)
 
