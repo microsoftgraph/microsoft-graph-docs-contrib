@@ -31,8 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 > - The ChannelSettings.ReadWrite.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 > - The Group.ReadWrite.All and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
-> [!NOTE]
-> - This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they aren't a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
