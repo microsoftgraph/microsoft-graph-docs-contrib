@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.team import Team
+from msgraph.generated.models.team_member_settings import TeamMemberSettings
+from msgraph.generated.models.team_messaging_settings import TeamMessagingSettings
+from msgraph.generated.models.team_fun_settings import TeamFunSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

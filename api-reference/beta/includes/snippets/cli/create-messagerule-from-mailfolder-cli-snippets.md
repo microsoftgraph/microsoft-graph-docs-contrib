@@ -19,7 +19,7 @@ mgc-beta users mail-folders message-rules create --user-id {user-id} --mail-fold
           {\
              "emailAddress": {\
                 "name": "Alex Wilbur",\
-                "address": "AlexW@contoso.onmicrosoft.com"\
+                "address": "AlexW@contoso.com"\
               }\
            }\
         ],\

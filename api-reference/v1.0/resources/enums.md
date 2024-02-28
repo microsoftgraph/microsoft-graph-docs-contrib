@@ -604,6 +604,13 @@ Namespace: microsoft.graph
 | assignIfOpen       |
 | unknownFutureValue |
 
+### educationModuleStatus values
+
+| Member             |
+| :----------------- |
+| draft              |
+| published          |
+
 ### fido2RestrictionEnforcementType values
 
 | Member |
@@ -1789,7 +1796,7 @@ Possible values for user account types (group membership), per Windows definitio
 | Member  | Value | Description                       |
 | :------ | :---- | :-------------------------------- |
 | block   | 1     | The threat should be blocked.     |
-| unblock | 2     | The threat should not be blocked. |
+| unblock | 2     | The threat shouldn't be blocked. |
 
 ### threatCategory values
 
@@ -1877,7 +1884,7 @@ Possible values for user account types (group membership), per Windows definitio
 | :-------------------------------- | :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | None                              | 0         | User is not allowed to override the message. User is not allowed to report a message as false positive if policyTip is not provided. In all other scenarios, user can report a message as false positive.                                                             |
 | AllowFalsePositiveOverride        | 1         | User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
-| AllowOverrideWithoutJustification | 2         | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`.                                                                                                                        |
+| AllowOverrideWithoutJustification | 2         | User is allowed to override the block and send the message. Justification text isn't required. Exclusive to `AllowOverrideWithJustification`.                                                                                                                        |
 | AllowOverrideWithJustification    | 4         | User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.                                                                                                                         |
 
 ### wellknownListName values
@@ -3177,3 +3184,13 @@ Possible values for user account types (group membership), per Windows definitio
 |direct|
 |qrCode|
 |unknownFutureValue|
+
+### educationAssignmentStatus values
+
+| Member             |
+| :----------------- |
+| draft              |
+| published          |
+| assigned           |
+| unknownFutureValue |
+| inactive           |

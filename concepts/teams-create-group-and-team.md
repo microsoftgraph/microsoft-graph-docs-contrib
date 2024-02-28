@@ -125,6 +125,6 @@ After you create a team, you can use the following checklist to verify that the 
 
 2. Verify that newly added members can see the team after signing into the Teams desktop or web client.
 
-## See also
+## Related content
 
 - [Microsoft Teams API overview](teams-concept-overview.md)

@@ -47,7 +47,7 @@ For more information, see [OData query parameters](/graph/query-parameters).
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -257,7 +257,6 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
     "Error: list_b2xUserFlows/container/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: list_b2xUserFlows_expand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
     "Error: listb2xUserFlowsexpand/container/userFlowTypeVersion:
       Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
     "Error: listb2xUserFlowsexpand/container/userFlowTypeVersion:

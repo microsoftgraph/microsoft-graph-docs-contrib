@@ -4,50 +4,51 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ScheduledPermissionsRequest scheduledPermissionsRequest = new ScheduledPermissionsRequest();
 SingleResourceGcpPermissionsDefinition requestedPermissions = new SingleResourceGcpPermissionsDefinition();
+requestedPermissions.setOdataType("microsoft.graph.singleResourceGcpPermissionsDefinition");
 PermissionsDefinitionAuthorizationSystem authorizationSystemInfo = new PermissionsDefinitionAuthorizationSystem();
-authorizationSystemInfo.authorizationSystemId = "carbide-bonsai-205017";
-authorizationSystemInfo.authorizationSystemType = "GCP";
-requestedPermissions.authorizationSystemInfo = authorizationSystemInfo;
+authorizationSystemInfo.setAuthorizationSystemId("carbide-bonsai-205017");
+authorizationSystemInfo.setAuthorizationSystemType("GCP");
+requestedPermissions.setAuthorizationSystemInfo(authorizationSystemInfo);
 GcpRolePermissionsDefinitionAction actionInfo = new GcpRolePermissionsDefinitionAction();
-LinkedList<PermissionsDefinitionAzureRole> rolesList = new LinkedList<PermissionsDefinitionAzureRole>();
-PermissionsDefinitionAzureRole roles = new PermissionsDefinitionAzureRole();
-roles.id = "roles/dialogflow.aamAdmin";
-rolesList.add(roles);
-PermissionsDefinitionAzureRoleCollectionResponse permissionsDefinitionAzureRoleCollectionResponse = new PermissionsDefinitionAzureRoleCollectionResponse();
-permissionsDefinitionAzureRoleCollectionResponse.value = rolesList;
-PermissionsDefinitionAzureRoleCollectionPage permissionsDefinitionAzureRoleCollectionPage = new PermissionsDefinitionAzureRoleCollectionPage(permissionsDefinitionAzureRoleCollectionResponse, null);
-actionInfo.roles = permissionsDefinitionAzureRoleCollectionPage;
-requestedPermissions.actionInfo = actionInfo;
+actionInfo.setOdataType("microsoft.graph.gcpRolePermissionsDefinitionAction");
+LinkedList<PermissionsDefinitionGcpRole> roles = new LinkedList<PermissionsDefinitionGcpRole>();
+PermissionsDefinitionGcpRole permissionsDefinitionGcpRole = new PermissionsDefinitionGcpRole();
+permissionsDefinitionGcpRole.setId("roles/dialogflow.aamAdmin");
+roles.add(permissionsDefinitionGcpRole);
+actionInfo.setRoles(roles);
+requestedPermissions.setActionInfo(actionInfo);
 PermissionsDefinitionAuthorizationSystemIdentity identityInfo = new PermissionsDefinitionAuthorizationSystemIdentity();
-identityInfo.externalId = "alex@contoso.com";
+identityInfo.setExternalId("alex@contoso.com");
 EdIdentitySource source = new EdIdentitySource();
-identityInfo.source = source;
-identityInfo.identityType = PermissionsDefinitionIdentityType.USER;
-requestedPermissions.identityInfo = identityInfo;
-requestedPermissions.resourceId = "carbide-bonsai-205017";
-scheduledPermissionsRequest.requestedPermissions = requestedPermissions;
-scheduledPermissionsRequest.justification = "I need to do this because I want to be an administrator";
-scheduledPermissionsRequest.notes = "Pretty Pleaseeeee";
+source.setOdataType("microsoft.graph.edIdentitySource");
+identityInfo.setSource(source);
+identityInfo.setIdentityType(PermissionsDefinitionIdentityType.User);
+requestedPermissions.setIdentityInfo(identityInfo);
+requestedPermissions.setResourceId("carbide-bonsai-205017");
+scheduledPermissionsRequest.setRequestedPermissions(requestedPermissions);
+scheduledPermissionsRequest.setJustification("I need to do this because I want to be an administrator");
+scheduledPermissionsRequest.setNotes("Pretty Pleaseeeee");
 RequestSchedule scheduleInfo = new RequestSchedule();
-scheduleInfo.startDateTime = OffsetDateTimeSerializer.deserialize("null");
+scheduleInfo.setStartDateTime(null);
 ExpirationPattern expiration = new ExpirationPattern();
-expiration.duration = DatatypeFactory.newInstance().newDuration("PT1H");
-scheduleInfo.expiration = expiration;
-scheduleInfo.recurrence = null;
-scheduledPermissionsRequest.scheduleInfo = scheduleInfo;
+PeriodAndDuration duration = PeriodAndDuration.ofDuration(Duration.parse("PT1H"));
+expiration.setDuration(duration);
+scheduleInfo.setExpiration(expiration);
+scheduleInfo.setRecurrence(null);
+scheduledPermissionsRequest.setScheduleInfo(scheduleInfo);
 TicketInfo ticketInfo = new TicketInfo();
-ticketInfo.ticketNumber = "123456";
-ticketInfo.ticketSystem = "ServiceNow";
-ticketInfo.ticketSubmitterIdentityId = "alex@contoso.com";
-ticketInfo.ticketApproverIdentityId = "alexmanager@contoso.com";
-scheduledPermissionsRequest.ticketInfo = ticketInfo;
+ticketInfo.setTicketNumber("123456");
+ticketInfo.setTicketSystem("ServiceNow");
+ticketInfo.setTicketSubmitterIdentityId("alex@contoso.com");
+ticketInfo.setTicketApproverIdentityId("alexmanager@contoso.com");
+scheduledPermissionsRequest.setTicketInfo(ticketInfo);
+ScheduledPermissionsRequest result = graphClient.identityGovernance().permissionsManagement().scheduledPermissionsRequests().post(scheduledPermissionsRequest);
 
-graphClient.identityGovernance().permissionsManagement().scheduledPermissionsRequests()
-	.buildRequest()
-	.post(scheduledPermissionsRequest);
 
 ```

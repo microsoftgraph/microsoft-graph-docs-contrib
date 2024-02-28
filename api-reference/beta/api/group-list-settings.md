@@ -1,7 +1,8 @@
 ---
 title: "List settings"
 description: "Retrieve a list of directory setting objects."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -55,7 +56,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

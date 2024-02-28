@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -41,7 +41,7 @@ You can use the [OData query parameters][odata-parameters] to restrict the shape
 ## Request headers
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | if-none-match | eTag. Optional. If this request header is included and the eTag (or cTag) provided matches the current tag on the file, a `304 Not Modified` response is returned.|
 
 ## Request body

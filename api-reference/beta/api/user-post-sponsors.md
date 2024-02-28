@@ -36,7 +36,7 @@ POST /users/{id}/sponsors/$ref
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -70,10 +70,6 @@ Content-Type: application/json
   "@odata.id": "https://graph.microsoft.com/beta/users/{user-id}"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-usersponsors-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-usersponsors-javascript-snippets.md)]
@@ -111,10 +107,6 @@ Content-Type: application/json
   "@odata.id": "https://graph.microsoft.com/beta/groups/{group-id}"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-groupsponsors-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsponsors-javascript-snippets.md)]

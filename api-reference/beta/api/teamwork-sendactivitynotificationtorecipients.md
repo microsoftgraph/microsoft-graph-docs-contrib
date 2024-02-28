@@ -44,7 +44,7 @@ POST /teamwork/sendActivityNotificationToRecipients
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).   |
 | Content-Type  | application/json. Required. |
 
 > **Note**: The token provided must be at least 45 minutes from expiry. The API call will return a `412 Precondition Failed` response if the token expires within 45 minutes.
@@ -57,13 +57,13 @@ The following table shows the parameters that can be used with this action.
 
 | Parameter          | Type                                                         | Description                                                  |
 | :----------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| topic              | [teamworkActivityTopic](../resources/teamworkactivitytopic.md) | Topic of the notification. Specifies the resource being talked about. |
+| topic              | [teamworkActivityTopic](../resources/teamworkactivitytopic.md) | The topic of the notification. Specifies the resource being talked about. |
 | activityType       | String                                                       | The activity type must be declared in the [Teams app manifest](/microsoftteams/platform/overview), except for `systemDefault` [Reserved activity type](/graph/teams-send-activityfeednotifications/#reserved-activity-types), which provides free-form text in the `Actor+Reason` line of the notification. |
-| chainId            | Int64                                                        | Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification. |
-| previewText        | [itemBody](../resources/itembody.md)                         | Preview text for the notification. Microsoft Teams only shows the first 150 characters. |
-| templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection      | Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview). |
-| teamsAppId         | String                                                       | Optional. Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Azure AD app ID are installed for the same recipient user. |
-| recipients         | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) collection | Recipients of the notification. Only recipients of type [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) are supported. There's an upper limit of 100 recipients in a single request. |
+| chainId            | Int64                                                        | Optional. The chain ID of the notification. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification. |
+| previewText        | [itemBody](../resources/itembody.md)                         | The preview text for the notification. Microsoft Teams only shows the first 150 characters. |
+| templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection      | The values for template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview). |
+| teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user. Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
+| recipients         | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) collection | The recipients of the notification. Only recipients of type [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) are supported. There's an upper limit of 100 recipients in a single request. |
 
 The following resource is supported when setting the `source` value of the **topic** property to `entityUrl`:
 
@@ -174,7 +174,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Notify multiple users about an event using a custom topic
 
-If you want to link an aspect that Microsoft Graph does not represent, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
+If you want to link an aspect that Microsoft Graph doesn't represent, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
 
 #### Request
 
