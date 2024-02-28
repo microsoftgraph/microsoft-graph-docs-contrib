@@ -7,11 +7,11 @@ author: sebastienlevert
 
 # Use the Microsoft Graph Toolkit with Electron
 
-This article describes the step-by-step process of using the Microsoft Graph Toolkit to create an Electron app and connect it to Microsoft 365. After completing the steps, you'll have a Electron app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
+This article describes the step-by-step process of using the Microsoft Graph Toolkit to create an Electron app and connect it to Microsoft 365. After completing the steps, you'll have an Electron app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
 
 ## Create an Electron app
 
-Scaffold a new Electron app using [Electron Forge](https://www.electronforge.io/). This will create a new Electron app using TypeScript, which will help you write more robust code and avoid runtime errors.
+Scaffold a new Electron app using [Electron Forge](https://www.electronforge.io/). Doing this creates a new Electron app using TypeScript, which helps you write more robust code and avoid runtime errors.
 
 ```cmd
 npm init electron-app@latest mgt-app -- --template=webpack-typescript
@@ -29,7 +29,7 @@ Confirm that you can run the app.
 npm start
 ```
 
-Open the `package.json` file and ensure that electron dev dependency version is `28.2.4`. This is the current maximum version for the peer dependency required by `@microsoft/mgt-electron-provider`.
+Open the `package.json` file and ensure that electron dev dependency version is `28.2.4`. `28.2.4` is the current maximum version for the peer dependency required by `@microsoft/mgt-electron-provider`.
 
 Install the '@microsoft/mgt-components' package that contains all the Microsoft Graph-connected web components.
 
@@ -37,7 +37,7 @@ Install the '@microsoft/mgt-components' package that contains all the Microsoft 
 npm i @microsoft/mgt-components
 ```
 
-Install the `@microsoft/mgt-electron-provider` and `@microsoft/mgt-element` npm packages as well. These will allow you to provide authentication for your app using MSAL and use the Microsoft Graph Toolkit components.
+Install the `@microsoft/mgt-electron-provider` and `@microsoft/mgt-element` npm packages as well. These allow you to provide authentication for your app using MSAL and use the Microsoft Graph Toolkit components.
 
 ```cmd
 npm i @microsoft/mgt-element @microsoft/mgt-electron-provider
@@ -69,7 +69,7 @@ To create the app in Microsoft Entra ID:
 
 ### Initialize a ContextBridge in your preload script
 
-Since Electron v12 context isolation has been enabled by default and it is a recommended security setting for all applications. With context isolation developer must explicitly expose APIs from their main process for use in the renderer process via a ContextBridge. For more information refer to the Electron docs: [https://www.electronjs.org/docs/latest/tutorial/context-isolation](https://www.electronjs.org/docs/latest/tutorial/context-isolation)
+Since Electron v12 context isolation is enabled by default and it's a recommended security setting for all applications. With context isolation developers must explicitly expose APIs from their main process for use in the renderer process via a ContextBridge. For more information, see the Electron docs: [https://www.electronjs.org/docs/latest/tutorial/context-isolation](https://www.electronjs.org/docs/latest/tutorial/context-isolation)
 
 Open the _src/preload.ts_ file and add the following code:
 
@@ -92,9 +92,9 @@ contextBridge.exposeInMainWorld("main", {
 
 The `ElectronContextBridgeProvider` is responsible for communicating with `ElectronAuthenticator` (in the main process) to request access tokens and receive information regarding signed in state that is required for the mgt components to work.
 
-To use mgt components in your applications they must be registered in the browser window that they will execute. To do this the register functions for each component you wish to use must be imported.
+To use mgt components in your applications, they must be registered in the browser window that they execute. To do this the register functions for each component you wish to use must be imported.
 
-To initialize the `ElectronContextBridgeProvider` and register the MGT components, add the following code to the _src/renderer.ts_ file.
+To initialize the `ElectronContextBridgeProvider` and register the Microsoft Graph Toolkit components, add the following code to the _src/renderer.ts_ file.
 
 ```ts
 import { Providers } from "@microsoft/mgt-element";
@@ -167,9 +167,9 @@ ElectronAuthenticator.initialize(config);
 
 ### Add a development Content Security Policy
 
-The application scaffolded by Electron Forge includes a default Content Security Policy, CSP, which disallows fetching data from a remote server. For development purposed we can add a CSP that is highly permissive. For production apps you will need to craft a robust CSP that enables you application to function while reducing the attack surface for bad actors.
+The application scaffolded by Electron Forge includes a default Content Security Policy, CSP, which disallows fetching data from a remote server. For development purposes we can add a CSP that is highly permissive. For production apps, you need to craft a robust CSP that enables your application to function while reducing the attack surface for bad actors.
 
-Open the _forge.config.ts_ file and add replace the existing config object being passed to the WebpackPlugin constructor with the following config object.
+Open the _forge.config.ts_ file and replace the existing config object being passed to the WebpackPlugin constructor with the following config object.
 
 ```ts
 {
@@ -228,7 +228,7 @@ let config: MsalElectronConfig = {
 };
 ```
 
-For more details about how to implement this, see the [Microsoft Authentication Library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) sample.
+For more information about how to implement this, see the [Microsoft Authentication Library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) sample.
 
 ## Next Steps
 
