@@ -68,7 +68,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/users/{usersId}/solutions
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -90,4 +89,3 @@ Content-Type: application/json
   }
 }
 ```
-
