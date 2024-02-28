@@ -61,7 +61,7 @@ Use the **dashboardCards** navigation property on [teamsAppDefinition](/graph/ap
 
 ### Teamwork and communications | Working time schedule
 
-Added the ability to [start](/graph/api/workingtimeschedule-startworkingtime) and [end](/graph/api/workingtimeschedule-endworkingtime) working time.
+Added the ability to [start](/graph/api/workingtimeschedule-startworkingtime?view=graph-rest-beta&preserve-view=true) and [end](/graph/api/workingtimeschedule-endworkingtime?view=graph-rest-beta&preserve-view=true) working time.
 
 ## January 2024: New and generally available
 
