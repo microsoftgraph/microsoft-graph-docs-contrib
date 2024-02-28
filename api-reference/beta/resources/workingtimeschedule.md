@@ -16,21 +16,25 @@ Namespace: microsoft.graph
 Represents user's working time schedule entity.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get workingTimeSchedule](../api/workingtimeschedule-get.md)|[workingTimeSchedule](../resources/workingtimeschedule.md)|Read the properties and relationships of a [workingTimeSchedule](../resources/workingtimeschedule.md) object.|
-|[startWorkingTime](../api/workingtimeschedule-startworkingtime.md)|None|Triggers the policies associated with the start of working hours.|
-|[endWorkingTime](../api/workingtimeschedule-endworkingtime.md)|None|Triggers the policies associated with the end of working hours.|
+|[startWorkingTime](../api/workingtimeschedule-startworkingtime.md)|None|Trigger the policies associated with the start of working hours.|
+|[endWorkingTime](../api/workingtimeschedule-endworkingtime.md)|None|Trigger the policies associated with the end of working hours.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|A unique programmatic identifier for the entity. Read-only.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -45,4 +49,3 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)"
 }
 ```
-
