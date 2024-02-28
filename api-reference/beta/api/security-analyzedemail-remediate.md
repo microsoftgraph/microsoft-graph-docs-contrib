@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remediation means to take prescribed action against a threat. The remediate API is to remove potential threats from end-user's mailboxes.  The API can trigger email purge actions like move to junk, move to deleted items, soft delete, hard delete or move to inbox. These APIs enable scenarios and use cases such as SOAR integration, playbooks, and automations. For more information read [email remediation, trigger action and track actions](microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365.md). 
+Remediation means to take prescribed action against a threat. The remediate API is to remove potential threats from end-user's mailboxes.  The API can trigger email purge actions like move to junk, move to deleted items, soft delete, hard delete or move to inbox. These APIs enable scenarios and use cases such as SOAR integration, playbooks, and automations. For more information read [email remediation, trigger action and track actions](microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide). 
 
 
 ## Permissions
@@ -64,7 +64,7 @@ The following table lists the parameters that are required when you call this ac
 
 If successful, this action returns a `204 No Content` response code and the cation status can be tracked through the location header with bulkId. 
 
->**Note:** The response of the action can be tracked in https://security.microsoft.com/action-center/history 
+>**Note:** The response of the action can be tracked in https://security.microsoft.com/action-center/history. Learn more about [Action center](microsoft-365/security/defender/m365d-action-center?view=o365-worldwide)
 
 ## Examples
 
@@ -109,8 +109,8 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
+```
 >**Note:** Track the location header
 Example:
 Get the tracking url at response header - 'Location'
-```
 
