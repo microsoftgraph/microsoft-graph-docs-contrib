@@ -33,14 +33,14 @@ Content-type: application/json
   attendees: [
     {
       emailAddress: {
-        address: 'meganb@contoso.onmicrosoft.com',
+        address: 'meganb@contoso.com',
         name: 'Megan Bowen'
       },
       type: 'required'
     },
     {
       emailAddress: {
-        address: 'ChristieC@contoso.onmicrosoft.com',
+        address: 'ChristieC@contoso.com',
         name: 'Christie Cline'
       },
       type: 'required'

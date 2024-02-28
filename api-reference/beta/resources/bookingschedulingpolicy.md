@@ -19,6 +19,7 @@ Represents the set of policies that determine how appointments should be created
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowStaffSelection|Boolean|True if to allow customers to choose a specific person for the booking.|
+|isMeetingInviteToCustomersEnabled|Boolean|Indicates if the meeting invite is sent to the customers. The default value is `false` |
 |maximumAdvance|Duration|Maximum number of days in advance that a booking can be made. It follows the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 |minimumLeadTime|Duration|The minimum amount of time before which bookings and cancellations must be made. It follows the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 |sendConfirmationsToOwner|Boolean| True to notify the business via email when a booking is created or changed. Use the email address specified in the **email** property of the **bookingBusiness** entity for the business. |

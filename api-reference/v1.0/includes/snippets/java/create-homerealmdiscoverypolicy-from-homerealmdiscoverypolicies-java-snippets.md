@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 HomeRealmDiscoveryPolicy homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy();
-LinkedList<String> definitionList = new LinkedList<String>();
-definitionList.add("{"HomeRealmDiscoveryPolicy":
-     {"AccelerateToFederatedDomain":true,
-      "PreferredDomain":"federated.example.edu",
-      "AlternateIdLogin":{"Enabled":true}}}");
-homeRealmDiscoveryPolicy.definition = definitionList;
-homeRealmDiscoveryPolicy.displayName = "displayName-value";
-homeRealmDiscoveryPolicy.isOrganizationDefault = true;
+LinkedList<String> definition = new LinkedList<String>();
+definition.add("{\"HomeRealmDiscoveryPolicy\":{\"AccelerateToFederatedDomain\":true,\"PreferredDomain\":\"federated.example.edu\",\"AlternateIdLogin\":{\"Enabled\":true}}}");
+homeRealmDiscoveryPolicy.setDefinition(definition);
+homeRealmDiscoveryPolicy.setDisplayName("displayName-value");
+homeRealmDiscoveryPolicy.setIsOrganizationDefault(true);
+HomeRealmDiscoveryPolicy result = graphClient.policies().homeRealmDiscoveryPolicies().post(homeRealmDiscoveryPolicy);
 
-graphClient.policies().homeRealmDiscoveryPolicies()
-	.buildRequest()
-	.post(homeRealmDiscoveryPolicy);
 
 ```

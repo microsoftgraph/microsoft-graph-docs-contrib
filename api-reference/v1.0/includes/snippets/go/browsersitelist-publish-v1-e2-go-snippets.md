@@ -28,7 +28,7 @@ browserSite1 := graphmodels.NewBrowserSite()
 id := "2e27cc86-3662-447e-b751-274fb9f869ea"
 browserSite1.SetId(&id) 
 
-sites := []graphmodels.browserSiteable {
+sites := []graphmodels.BrowserSiteable {
 	browserSite,
 	browserSite1,
 }
@@ -39,7 +39,7 @@ browserSharedCookie := graphmodels.NewBrowserSharedCookie()
 id := "7f639835-23ab-4793-b1e6-1a06fad127a2"
 browserSharedCookie.SetId(&id) 
 
-sharedCookies := []graphmodels.browserSharedCookieable {
+sharedCookies := []graphmodels.BrowserSharedCookieable {
 	browserSharedCookie,
 }
 requestBody.SetSharedCookies(sharedCookies)

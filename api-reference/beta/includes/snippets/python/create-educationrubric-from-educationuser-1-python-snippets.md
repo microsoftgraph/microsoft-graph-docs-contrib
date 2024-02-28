@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.education_rubric import EducationRubric
+from msgraph.generated.models.education_item_body import EducationItemBody
+from msgraph.generated.models.rubric_level import RubricLevel
+from msgraph.generated.models.rubric_quality import RubricQuality
+from msgraph.generated.models.rubric_criterion import RubricCriterion
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,21 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("If-Match", "\"string\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
+com.microsoft.graph.beta.planner.plans.item.movetocontainer.MoveToContainerPostRequestBody moveToContainerPostRequestBody = new com.microsoft.graph.beta.planner.plans.item.movetocontainer.MoveToContainerPostRequestBody();
 PlannerPlanContainer container = new PlannerPlanContainer();
-container.containerId = "groupId";
-container.type = PlannerContainerType.GROUP;
+container.setContainerId("groupId");
+container.setType(PlannerContainerType.Group);
+moveToContainerPostRequestBody.setContainer(container);
+var result = graphClient.planner().plans().byPlannerPlanId("{plannerPlan-id}").moveToContainer().post(moveToContainerPostRequestBody, requestConfiguration -> {
+	requestConfiguration.headers.add("If-Match", "\"string\"");
+});
 
-graphClient.planner().plans("planId")
-	.moveToContainer(PlannerPlanMoveToContainerParameterSet
-		.newBuilder()
-		.withContainer(container)
-		.build())
-	.buildRequest( requestOptions )
-	.post();
 
 ```

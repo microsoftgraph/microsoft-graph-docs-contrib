@@ -38,7 +38,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -112,7 +112,7 @@ Content-Type: application/json
       "activityDateTime": "2021-12-21T16:48:23.0330765Z",
       "activityId": "64be6675-3cb8-4b14-95f3-6d5ce9eecd79",
       "initiatedByAppId": "00000003-0000-0000-c000-000000000000",
-      "initiatedByUpn": "meganb@contoso.onmicrosoft.com",
+      "initiatedByUpn": "meganb@contoso.com",
       "category": "Baselines",
       "activity": "/managementActionTenantDeploymentStatuses/microsoft.graph.managedTenants.changeDeploymentStatus",
       "httpVerb": "POST",

@@ -785,6 +785,24 @@
       "CreatedDateTime": "2023-10-10T19:03:32.2883548Z",
       "WorkloadArea": "Search",
       "SubArea": "Index"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f69b59bf-58e7-41f2-a598-d6e050ce75c7",
+          "ApiChange": "Member",
+          "ChangedApiName": "qna",
+          "ChangeType": "Addition",
+          "Description": "Added the **qna** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        }
+      ],
+      "Id": "65c699bb-49cf-4a9d-bee0-7e2950d966a4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-07T04:12:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }

@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_update_configuration import IosUpdateConfiguration
+from msgraph.generated.models.day_of_week import DayOfWeek
 
 graph_client = GraphServiceClient(credentials, scopes)
 

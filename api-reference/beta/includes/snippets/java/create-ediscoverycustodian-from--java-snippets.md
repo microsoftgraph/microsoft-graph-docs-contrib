@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryCustodian ediscoveryCustodian = new EdiscoveryCustodian();
-ediscoveryCustodian.email = "AdeleV@contoso.com";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("{ediscoveryCaseId}").custodians()
-	.buildRequest()
-	.post(ediscoveryCustodian);
+com.microsoft.graph.beta.models.security.EdiscoveryCustodian ediscoveryCustodian = new com.microsoft.graph.beta.models.security.EdiscoveryCustodian();
+ediscoveryCustodian.setEmail("AdeleV@contoso.com");
+com.microsoft.graph.models.security.EdiscoveryCustodian result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").custodians().post(ediscoveryCustodian);
+
 
 ```

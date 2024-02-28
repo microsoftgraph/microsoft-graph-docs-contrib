@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Group group = new Group();
-group.description = "Library Assist";
-group.displayName = "Library Assist";
-LinkedList<String> groupTypesList = new LinkedList<String>();
-groupTypesList.add("Unified");
-group.groupTypes = groupTypesList;
-group.mailEnabled = true;
-group.mailNickname = "library-help";
+group.setDescription("Library Assist");
+group.setDisplayName("Library Assist");
+LinkedList<String> groupTypes = new LinkedList<String>();
+groupTypes.add("Unified");
+group.setGroupTypes(groupTypes);
+group.setMailEnabled(true);
+group.setMailNickname("library-help");
+Group result = graphClient.groups().byGroupId("{group-id}").patch(group);
 
-graphClient.groups("{id}")
-	.buildRequest()
-	.patch(group);
 
 ```

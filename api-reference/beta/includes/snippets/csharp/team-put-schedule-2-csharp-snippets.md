@@ -19,6 +19,10 @@ var requestBody = new Schedule
 	SwapShiftsRequestsEnabled = true,
 	OfferShiftRequestsEnabled = true,
 	TimeOffRequestsEnabled = true,
+	StartDayOfWeek = DayOfWeekObject.Tuesday,
+	ActivitiesIncludedWhenCopyingShiftsEnabled = true,
+	IsCrossLocationShiftsEnabled = true,
+	IsCrossLocationShiftRequestApprovalRequired = true,
 	TimeClockEnabled = true,
 	TimeClockSettings = new TimeClockSettings
 	{
@@ -27,15 +31,6 @@ var requestBody = new Schedule
 			Altitude = 1024.13d,
 			Latitude = 26.13246d,
 			Longitude = 24.34616d,
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"startDayOfWeek" , "Tuesday"
-		},
-		{
-			"activitiesIncludedWhenCopyingShiftsEnabled" , true
 		},
 	},
 };

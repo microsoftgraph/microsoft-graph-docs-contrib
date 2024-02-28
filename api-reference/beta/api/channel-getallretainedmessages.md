@@ -19,15 +19,13 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "channel-getallretainedmessages-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "channel_getallretainedmessages" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-getallretainedmessages-permissions.md)]
 
 ## HTTP request
@@ -60,7 +58,7 @@ This method supports the following OData query parameters to help customize the 
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -224,6 +222,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

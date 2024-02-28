@@ -22,9 +22,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "teamsappsettings_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/teamsappsettings-get-permissions.md)]
 
-> [!NOTE]
-> TeamworkAppSettings.* permissions might not be visible in the Azure portal. For details and workarounds, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=14974).
-
 ## HTTP request
 
 <!-- {
@@ -41,7 +38,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -126,6 +123,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

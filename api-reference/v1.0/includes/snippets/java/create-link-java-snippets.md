@@ -4,27 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String type = "view";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String password = "ThisIsMyPrivatePassword";
+com.microsoft.graph.drives.item.items.item.createlink.CreateLinkPostRequestBody createLinkPostRequestBody = new com.microsoft.graph.drives.item.items.item.createlink.CreateLinkPostRequestBody();
+createLinkPostRequestBody.setType("view");
+createLinkPostRequestBody.setPassword("ThisIsMyPrivatePassword");
+createLinkPostRequestBody.setScope("anonymous");
+createLinkPostRequestBody.setRetainInheritedPermissions(false);
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").createLink().post(createLinkPostRequestBody);
 
-String scope = "anonymous";
-
-Boolean retainInheritedPermissions = false;
-
-graphClient.me().drive().items("{item-id}")
-	.createLink(DriveItemCreateLinkParameterSet
-		.newBuilder()
-		.withType(type)
-		.withScope(scope)
-		.withExpirationDateTime(null)
-		.withPassword(password)
-		.withMessage(null)
-		.withRetainInheritedPermissions(retainInheritedPermissions)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

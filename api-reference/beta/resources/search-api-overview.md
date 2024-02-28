@@ -242,7 +242,7 @@ We recommend that you update existing apps to use the current property and type 
 | [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
 | [entityTypes](./enums.md)          | Rename enum value | **unknownfuturevalue**  | **unknownFutureValue**  |
 
-## See also
+## Related content
 
 - Learn more about a few key use cases:
   - [Search Teams messages](/graph/search-concept-chat-messages)
@@ -262,6 +262,3 @@ We recommend that you update existing apps to use the current property and type 
 
 - Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
