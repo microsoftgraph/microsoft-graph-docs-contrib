@@ -12,11 +12,8 @@ const client = Client.init(options);
 
 const homeRealmDiscoveryPolicy = {
     definition: [
-    '{\"HomeRealmDiscoveryPolicy\':
-     {\'AccelerateToFederatedDomain\':true,
-      \'PreferredDomain\':\"federated.example.edu\",
-      \'AlternateIdLogin\':{\'Enabled\':true}}}"
-  ],
+    '{\"HomeRealmDiscoveryPolicy\':{\'AccelerateToFederatedDomain\':true,\'PreferredDomain\':\'federated.example.edu\",\"AlternateIdLogin\':{\'Enabled\':true}}}"
+    ],
     displayName: 'Contoso default HRD Policy'
 };
 

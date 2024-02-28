@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewServicePrincipal()
-preferredTokenSigningKeyThumbprint := "A7D3C4626B8A84FDA868CCC67D274D402FFD0A10"
+preferredTokenSigningKeyThumbprint := "5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A"
 requestBody.SetPreferredTokenSigningKeyThumbprint(&preferredTokenSigningKeyThumbprint) 
 
 servicePrincipals, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
