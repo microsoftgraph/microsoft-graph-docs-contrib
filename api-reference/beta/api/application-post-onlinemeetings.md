@@ -441,12 +441,13 @@ Content-Type: application/json
 
 ### Example 4: Create an online meeting with a meeting template
 
-The following example shows how to create a meeting with a Microsoft Teams meeting template. Microsoft Teams custom meeting templates allow you to specify values for many of the meeting options available to meeting organizers.
+The following example shows how to create a meeting with a Microsoft Teams [meeting template](/microsoftteams/create-custom-meeting-template). Microsoft Teams custom meeting templates allow you to specify values for many of the meeting options that are available to meeting organizers.
 
 > [!CAUTION]
 >
 >- The template might lock some meeting options in the Teams UI. The enforcement of the lock takes place on the server side.
 >- Subsequent updates to the **onlineMeeting** can't overwrite the **meetingTemplateId** or locked meeting options.
+>- Using a custom meeting template to create a meeting is a Teams Premium feature.
 
 #### Request
 
