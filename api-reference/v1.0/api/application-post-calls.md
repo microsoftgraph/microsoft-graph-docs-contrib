@@ -24,10 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!NOTE]
 > - For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the previous table.
-> - Cloud Video Interop solutions that are [Certified for Microsoft Teams](/MicrosoftTeams/cloud-video-interop) have permission to call this API to join meetings for which they have meeting join links, similar to external users joining through a browser.
+> - The Calls.JoinGroupCalls.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-> [!NOTE]
-> The Calls.JoinGroupCalls.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+Cloud Video Interop solutions that are [Certified for Microsoft Teams](/MicrosoftTeams/cloud-video-interop) have permission to call this API to join meetings for which they have meeting join links, similar to external users joining through a browser.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
