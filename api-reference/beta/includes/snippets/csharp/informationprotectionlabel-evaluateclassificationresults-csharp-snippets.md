@@ -40,7 +40,7 @@ var requestBody = new EvaluateClassificationResultsPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.InformationProtection.Policy.Labels.EvaluateClassificationResults.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.InformationProtection.Policy.Labels.EvaluateClassificationResults.PostAsEvaluateClassificationResultsPostResponseAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("User-Agent", "ContosoLOBApp/1.0");
 });

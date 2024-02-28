@@ -31,7 +31,7 @@ var requestBody = new GetSchedulePostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Me.Calendar.GetSchedule.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Me.Calendar.GetSchedule.PostAsGetSchedulePostResponseAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
 });
