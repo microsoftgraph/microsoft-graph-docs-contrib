@@ -25,9 +25,6 @@ Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.plannerFormsDictionary"
 }-->
 
@@ -38,28 +35,6 @@ Here's a JSON representation of the resource
     "displayName": "String-value",
     "formWebUrl": "String-value",
     "formResponse": "String-value"
-  }
-}
-
-```
-
-// Example
-
-```json
-{
-  "3a73c9dd-fb47-4230-9c0f-b80788fb0f9b": // client-generated GUID
-  {
-    "@odata.type": "microsoft.graph.plannerFormReference", // required in PATCH requests to edit the forms on a task
-      "formWebUrl": "https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRws6FwN-GIdAkfx5ozJnYvlUN0VYSVJHUktPSlc4UUg1VTdGU0cwUUU2RyQlQCN0PWcu",
-      "displayName": "Work Survey",
-      "formResponse": "1"
-  },
-  "5f36f5b2-1ec0-4c48-9c75-ed59429516c5":
-  {
-     "@odata.type": "microsoft.graph.plannerFormReference",
-      "formWebUrl": "https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRws6FwN-GIdAkfx5ozJnYvlUN0VYSVJHUktPSlc4UUg1VTdGU0cwUUU2RyQlQCN0PWcu",
-      "displayName": "Work Survey",
-      "formResponse": "1"
   }
 }
 

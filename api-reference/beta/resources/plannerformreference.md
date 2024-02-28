@@ -19,7 +19,7 @@ The **plannerFormReference** resource represents an item in the forms of a task.
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |displayName|String|Display Name of the form|
-|formWebUrl|String|Reference of the form|
+|formWebUrl|String|URL of the user experience represented by the associated plannerFormReference.|
 |formResponse|String|Identifier of the response|
 
 ## JSON representation
@@ -27,9 +27,6 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.plannerFormReference"
 }-->
 
