@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/solutions/schedule/startWorkingTime
+POST https://graph.microsoft.com/beta/users/ccdf8279-8a3f-4c10-af1a-4a7f46b1489f/solutions/schedule/startWorkingTime
 ```
 
 
