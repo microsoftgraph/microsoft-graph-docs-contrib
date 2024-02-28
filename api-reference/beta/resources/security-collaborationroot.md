@@ -1,6 +1,6 @@
 ---
 title: "collaborationRoot resource type"
-description: "Represents an abstract type that provides the ability to read and perform actions on collaborative entities in microsoft defender."
+description: "Represents an abstract type to read and perform actions on collaborative entities in Microsoft Defender."
 author: "MishraSoumyaMS"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract type that provides the ability to read and perform actions on collaborative entities in microsoft defender.
+Represents an abstract type to read and perform actions on collaborative entities in Microsoft Defender.
 
 ## Methods
 |Method|Return type|Description|
