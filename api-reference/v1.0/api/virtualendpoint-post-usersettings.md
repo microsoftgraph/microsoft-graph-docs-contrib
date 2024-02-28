@@ -50,7 +50,6 @@ The following table lists the properties that are required when you create the [
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `true`.  |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created (that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
-|selfServiceEnabled (deprecated)|Boolean|To turn on the self service option, change this setting to `true`. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
 
 ## Response
 
@@ -74,10 +73,8 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "displayName": "Example",
-  "selfServiceEnabled": false,
   "localAdminEnabled": true,
   "restorePointSetting": {
-    "frequencyInHours": 16,
     "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   }
@@ -103,10 +100,8 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "id": "556092f8-92f8-5560-f892-6055f8926055",
   "displayName": "Example",
-  "selfServiceEnabled": false,
   "localAdminEnabled": true,
   "restorePointSetting": {
-    "frequencyInHours": 16,
     "frequencyType": "sixteenHours",
     "userRestoreEnabled": true
   },

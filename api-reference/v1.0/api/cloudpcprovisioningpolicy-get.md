@@ -92,11 +92,11 @@ Content-Type: application/json
     "domainJoinConfigurations": [
       {
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-        "type": "hybridAzureADJoin"
+        "domainJoinType": "hybridAzureADJoin"
       },
       {
         "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
-        "type": "hybridAzureADJoin"
+        "domainJoinType": "hybridAzureADJoin"
       }
     ],
     "enableSingleSignOn": true,
@@ -107,7 +107,6 @@ Content-Type: application/json
     "windowsSetting": {
         "locale": "en-US"
     },
-    "managedBy": "windows365",
     "provisioningType": "dedicated"
 }
 ```
@@ -153,11 +152,11 @@ Content-Type: application/json
     "domainJoinConfigurations": [
       {
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-        "type": "hybridAzureADJoin"
+        "domainJoinType": "hybridAzureADJoin"
       },
       {
         "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
-        "type": "hybridAzureADJoin"
+        "domainJoinType": "hybridAzureADJoin"
       }
     ],
     "enableSingleSignOn": true,
@@ -178,7 +177,6 @@ Content-Type: application/json
           }
       }
     ],
-    "managedBy": "windows365",
     "provisioningType": "dedicated"
 }
 ```
@@ -198,7 +196,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,domainJoinConfiguration,imageDisplayName,imageId,imageType,onPremisesConnectionId,windowsSetting,managedBy,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
+GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,domainJoinConfigurations,imageDisplayName,imageId,imageType,windowsSetting,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
 ```
 
 #### Response
@@ -223,19 +221,14 @@ Content-Type: application/json
     "cloudPcGroupDisplayName": "MyCloudPcGroup",
     "description": "The ProvisioningPolicy for West US employees.",
     "displayName": "WestUsPolicy",
-    "domainJoinConfiguration": {
-        "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-        "regionName": null,
-        "type": "hybridAzureADJoin"
-    },
     "domainJoinConfigurations": [
       {
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-        "type": "hybridAzureADJoin"
+        "domainJoinType": "hybridAzureADJoin"
       },
       {
         "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
-        "type": "hybridAzureADJoin"
+        "domainJoinType": "hybridAzureADJoin"
       }
     ],
     "enableSingleSignOn": true,
@@ -245,11 +238,6 @@ Content-Type: application/json
     "imageId": "d4e0541a-f7bb-4bdf-ad8f-b92b915a229f",
     "imageType": "custom",
     "localAdminEnabled": true,
-    "managedBy": "windows365",
-    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-    "windowsSettings": {
-      "language": "en-US"
-    },
     "windowsSetting": {
         "locale": "en-US"
     },
