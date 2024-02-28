@@ -27,9 +27,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.Read.All, Schedule.ReadWrite.All |
 
-> **Important:** The Schedule.Read.All and Schedule.ReadWrite.All application permissions are currently in private preview only and aren't available for public use.
+> [!NOTE]
+> The Schedule.Read.All and Schedule.ReadWrite.All application permissions are currently in private preview only and aren't available for public use.
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> [!NOTE]
+> This API supports admin permissions. Global admins can access groups that they are not a member of.
 
 ## HTTP request
 
