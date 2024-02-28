@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const servicePrincipal = {
-  preferredTokenSigningKeyThumbprint: 'A7D3C4626B8A84FDA868CCC67D274D402FFD0A10'
+    preferredTokenSigningKeyThumbprint: '5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A'
 };
 
-await client.api('/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91')
+await client.api('/servicePrincipals/d3616293-fff8-4415-9f01-33b05dad1b46')
 	.update(servicePrincipal);
 
 ```
