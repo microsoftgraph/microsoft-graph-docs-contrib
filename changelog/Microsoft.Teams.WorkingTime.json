@@ -7,8 +7,16 @@
           "ApiChange": "Resources",
           "ChangedApiName": "workingTimeSchedule",
           "ChangeType": "Addition",
-          "Description": "Added the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) resource.",
-          "Target": "resourceSpecificPermissionGrant"
+          "Description": "Added the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/workingtimeschedule?view=graph-rest-beta) resource and supported methods.",
+          "Target": "workingTimeSchedule"
+        },
+        {
+          "Id": "f31cf2dc-17ab-400e-bd7d-e6c728d249f1",
+          "ApiChange": "Resources",
+          "ChangedApiName": "solution",
+          "ChangeType": "Addition",
+          "Description": "Added the [solution](https://learn.microsoft.com/en-us/graph/api/resources/solution?view=graph-rest-beta) resource and a supported method.",
+          "Target": "solution"
         }
       ],
       "Id": "f31cf2dc-17ab-400e-bd7d-e6c728d249f1",
@@ -16,7 +24,7 @@
       "Version": "beta",
       "CreatedDateTime": "2024-02-27T13:15:33.264Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Working time"
+      "SubArea": "Working time schedule"
     }
   ]
 }
