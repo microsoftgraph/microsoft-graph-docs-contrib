@@ -13,7 +13,6 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
 Represents an abstract type that provides the ability to read and perform actions on collaborative entities in microsoft defender.
 
 ## Methods
