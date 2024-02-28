@@ -732,6 +732,32 @@ Namespace: microsoft.graph
 | blockDownloads     |
 | unknownFutureValue |
 
+### cloudPcRegionGroup values
+
+| Member             | Description                                                                        |
+|:-------------------|:-----------------------------------------------------------------------------------|
+| default            | The region belongs to the default region group.                                    |
+| australia          | The region belongs to the region group: Australia.                                 |
+| canada             | The region belongs to the region group: Canada.                                    |
+| usCentral          | The region belongs to the region group: Central US.                                |
+| usEast             | The region belongs to the region group: East US.                                   |
+| usWest             | The region belongs to the region group: West US.                                   |
+| france             | The region belongs to the region group: France.                                    |
+| germany            | The region belongs to the region group: Germany.                                   |
+| europeUnion        | The region belongs to the region group: European Union.                            |
+| unitedKingdom      | The region belongs to the region group: United Kingdom.                            |
+| japan              | The region belongs to the region group: Japan.                                     |
+| asia               | The region belongs to the region group: Asia.                                      |
+| india              | The region belongs to the region group: India.                                     |
+| southAmerica       | The region belongs to the region group: South America.                             |
+| euap               | The region belongs to the region group: Early Update Access Program.               |
+| usGovernment       | The region belongs to the region group: US Government.                             |
+| usGovernmentDOD    | The region belongs to the region group: US Government Department of Defense (DOD). |
+| norway             | The region belongs to the region group: Norway.                                    |
+| switzerland        | The region belongs to the region group: Switzerland.                               |
+| southKorea         | The region belongs to the region group: South Korea.                               |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                   |
+
 ### conditionalAccessGrantControl values
 
 | Member               |
