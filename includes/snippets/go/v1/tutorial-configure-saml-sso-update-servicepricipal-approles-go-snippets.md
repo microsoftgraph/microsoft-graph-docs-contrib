@@ -23,35 +23,35 @@ allowedMemberTypes := []string {
 	"User",
 }
 appRole.SetAllowedMemberTypes(allowedMemberTypes)
+description := "User"
+appRole.SetDescription(&description) 
 displayName := "User"
 appRole.SetDisplayName(&displayName) 
 id := uuid.MustParse("8774f594-1d59-4279-b9d9-59ef09a23530")
 appRole.SetId(&id) 
 isEnabled := true
 appRole.SetIsEnabled(&isEnabled) 
-description := "User"
-appRole.SetDescription(&description) 
-value := null
-appRole.SetValue(&value) 
 origin := "Application"
 appRole.SetOrigin(&origin) 
+value := null
+appRole.SetValue(&value) 
 appRole1 := graphmodels.NewAppRole()
 allowedMemberTypes := []string {
 	"User",
 }
 appRole1.SetAllowedMemberTypes(allowedMemberTypes)
+description := "msiam_access"
+appRole1.SetDescription(&description) 
 displayName := "msiam_access"
 appRole1.SetDisplayName(&displayName) 
 id := uuid.MustParse("e7f1a7f3-9eda-48e0-9963-bd67bf531afd")
 appRole1.SetId(&id) 
 isEnabled := true
 appRole1.SetIsEnabled(&isEnabled) 
-description := "msiam_access"
-appRole1.SetDescription(&description) 
-value := null
-appRole1.SetValue(&value) 
 origin := "Application"
 appRole1.SetOrigin(&origin) 
+value := null
+appRole1.SetValue(&value) 
 appRole2 := graphmodels.NewAppRole()
 allowedMemberTypes := []string {
 	"User",
