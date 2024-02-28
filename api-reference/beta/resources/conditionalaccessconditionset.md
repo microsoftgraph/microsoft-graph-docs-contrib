@@ -1,9 +1,10 @@
 ---
 title: "conditionalAccessConditionSet resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the type of conditions that govern when the policy applies."
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,74 +14,73 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the type of conditions that govern when the policy applies.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|applications|[conditionalAccessApplications](../resources/conditionalaccessapplications.md)|**TODO: Add Description**|
-|authenticationFlows|[conditionalAccessAuthenticationFlows](../resources/conditionalaccessauthenticationflows.md)|**TODO: Add Description**|
-|clientApplications|[conditionalAccessClientApplications](../resources/conditionalaccessclientapplications.md)|**TODO: Add Description**|
-|clientAppTypes|conditionalAccessClientApp collection|**TODO: Add Description**|
-|devices|[conditionalAccessDevices](../resources/conditionalaccessdevices.md)|**TODO: Add Description**|
-|deviceStates|[conditionalAccessDeviceStates](../resources/conditionalaccessdevicestates.md)|**TODO: Add Description**|
-|insiderRiskLevels|conditionalAccessInsiderRiskLevels|**TODO: Add Description**.The possible values are: `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
-|locations|[conditionalAccessLocations](../resources/conditionalaccesslocations.md)|**TODO: Add Description**|
-|platforms|[conditionalAccessPlatforms](../resources/conditionalaccessplatforms.md)|**TODO: Add Description**|
-|servicePrincipalRiskLevels|riskLevel collection|**TODO: Add Description**|
-|signInRiskLevels|riskLevel collection|**TODO: Add Description**|
-|userRiskLevels|riskLevel collection|**TODO: Add Description**|
-|users|[conditionalAccessUsers](../resources/conditionalaccessusers.md)|**TODO: Add Description**|
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Applications and user actions included in and excluded from the policy. Required. |
+|authenticationFlows|[conditionalAccessAuthenticationFlows](conditionalaccessauthenticationflows.md)| Authentication flows included in the policy scope. |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy. Either **users** or **clientApplications** is required. |
+|clientApplications|[conditionalAccessClientApplications](../resources/conditionalaccessclientapplications.md)|Client applications (service principals and workload identities) included in and excluded from the policy. Either **users** or **clientApplications** is required. |
+|clientAppTypes|conditionalAccessClientApp collection| Client application types included in the policy. Possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Required. <br/><br/> The `easUnsupported` enumeration member will be deprecated in favor of `exchangeActiveSync`, which includes EAS supported and unsupported platforms.|
+|deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Device states in the policy. To be deprecated and removed. Use the **devices** property instead. |
+|devices|[conditionalAccessDevices](conditionalaccessdevices.md)| Devices in the policy. |
+|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locations included in and excluded from the policy. |
+|platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy. |
+|servicePrincipalRiskLevels|riskLevel collection| Service principal risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`, `unknownFutureValue`.|
+|signInRiskLevels|riskLevel collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
+|userRiskLevels|riskLevel collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
+|insiderRiskLevels|conditionalAccessInsiderRiskLevels| Insider Risk levels included in the policy.The possible values are: `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.conditionalAccessConditionSet"
-}
--->
-``` json
+  "optionalProperties": [
+    "clientAppTypes",
+    "deviceStates",
+    "devices",
+    "locations",
+    "platforms",
+    "signInRiskLevels",
+    "authenticationFlows"
+  ],
+  "@odata.type": "microsoft.graph.conditionalAccessConditionSet",
+  "baseType": null
+}-->
+
+```json
 {
   "@odata.type": "#microsoft.graph.conditionalAccessConditionSet",
-  "applications": {
-    "@odata.type": "microsoft.graph.conditionalAccessApplications"
-  },
-  "users": {
-    "@odata.type": "microsoft.graph.conditionalAccessUsers"
-  },
-  "clientApplications": {
-    "@odata.type": "microsoft.graph.conditionalAccessClientApplications"
-  },
-  "signInRiskLevels": [
-    "String"
-  ],
-  "userRiskLevels": [
-    "String"
-  ],
-  "servicePrincipalRiskLevels": [
-    "String"
-  ],
-  "platforms": {
-    "@odata.type": "microsoft.graph.conditionalAccessPlatforms"
-  },
-  "locations": {
-    "@odata.type": "microsoft.graph.conditionalAccessLocations"
-  },
-  "clientAppTypes": [
-    "String"
-  ],
-  "deviceStates": {
-    "@odata.type": "microsoft.graph.conditionalAccessDeviceStates"
-  },
-  "devices": {
-    "@odata.type": "microsoft.graph.conditionalAccessDevices"
-  },
-  "authenticationFlows": {
-    "@odata.type": "microsoft.graph.conditionalAccessAuthenticationFlows"
-  },
+  "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
+  "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
+  "clientApplications": {"@odata.type": "microsoft.graph.conditionalAccessClientApplications"},
+  "clientAppTypes": ["String"],
+  "deviceStates": {"@odata.type": "microsoft.graph.conditionalAccessDeviceStates"},
+  "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},
+  "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
+  "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
+  "servicePrincipalRiskLevels": ["String"],
+  "signInRiskLevels": ["String"],
+  "authenticationFlows": {"@odata.type": "microsoft.graph.conditionalAccessAuthenticationFlows"},
   "insiderRiskLevels": "String"
 }
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "conditionalAccessConditionset resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
