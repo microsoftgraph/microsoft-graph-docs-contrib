@@ -24,8 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_get_installedapps" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-get-installedapps-permissions.md)]
 
-> **Note**: 
-The TeamsAppInstallation.Read.Chat and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+>  The TeamsAppInstallation.Read.Chat and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

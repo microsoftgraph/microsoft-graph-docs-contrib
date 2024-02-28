@@ -526,7 +526,7 @@ To create a team from a non-standard base template, you want to change the `temp
 
 To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
-> [!Note]
+> [!NOTE]
 > It can take up to 24 hours for Teams users to see a custom template change in the gallery.
 
 #### Request

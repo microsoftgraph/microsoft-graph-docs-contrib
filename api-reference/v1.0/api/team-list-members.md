@@ -17,7 +17,7 @@ The membership IDs returned by the server must be treated as opaque strings. The
 In the future, membership results can include users from various tenants, as indicated in the response. Clients should avoid assuming that all members exclusively belong to the current tenant.
 
 > [!NOTE]
-> This API results in a 401 error when a newly created tenant calls this method. For more information, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=19164).
+> This API returns a 401 error when a newly created tenant calls this method. For more information, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=19164).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

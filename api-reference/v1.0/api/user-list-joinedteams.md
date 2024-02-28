@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [team](../resources/team.md) objects in the response body.
 
-> [!Note]
+> [!NOTE]
 > This API has a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13633) where it returns only the **id**, **displayName**, and **description** properties of a [team](../resources/team.md).To get all properties, use the [Get team](../api/team-get.md) operation.
 
 ## Example
