@@ -61,7 +61,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 | none                | No requirement.                                                |
 | checklistCompletion | Some or all of the checklist items are required to be checked. |
 | unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.               |
-| approvalCompletion  | Approval is required.               |
+| approvalCompletion  | Approval is required.                                          |
 
 ## Relationships
 
