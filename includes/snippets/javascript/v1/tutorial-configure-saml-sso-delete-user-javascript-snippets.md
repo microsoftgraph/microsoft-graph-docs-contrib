@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/users/040f9599-7c0f-4f94-aa75-8394c4c6ea9b')
+await client.api('/users/59bb3898-0621-4414-ac61-74f9d7201355')
 	.delete();
 
 ```
