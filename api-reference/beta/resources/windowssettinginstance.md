@@ -29,10 +29,10 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Set by the server. DateTime in UTC when the object was created on the server.|
-|expirationDateTime|DateTimeOffset|Set by the server. DateTime in UTC when the object will expire after which it will no longer be available.|
+|expirationDateTime|DateTimeOffset|Set by the server. The object expires at the DateTime in UTC, after which it becomes unavailable.|
 |id|String|The unique identifier of the object. Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Set by the server if not provided in Windows client device's request. DateTime in UTC when the object was modified by the user’s Windows device.|
-|payload|String|Base64 encoded JSON setting value.|
+|lastModifiedDateTime|DateTimeOffset|Set by the server if not provided in Windows client device's request. The user’s Windows device modified the object at the DateTime in UTC.|
+|payload|String|Base 64 encoded JSON setting value.|
 
 ## Relationships
 None.
