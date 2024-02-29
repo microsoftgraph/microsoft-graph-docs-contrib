@@ -112,6 +112,14 @@ Namespace: microsoft.graph
 | others             |
 | unknownFutureValue |
 
+### releaseType values
+
+|Member|
+|:---|
+|preview|
+|generallyAvailable|
+|unknownFutureValue|
+
 ### recommendationCategory values
 
 | Member               |
