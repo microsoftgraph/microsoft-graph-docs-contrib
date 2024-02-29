@@ -19,7 +19,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcSupportedRegions](../api/virtualendpoint-list-supportedregions.md)|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) collection|List the supported regions that are available for creating Cloud PC connections.|
+|[List supportedRegions](../api/virtualendpoint-list-supportedregions.md)|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) collection|List the supported regions that are available for creating Cloud PC connections.|
 
 ## Properties
 
@@ -72,7 +72,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -88,7 +88,7 @@ Here's a JSON representation of the resource.
   "displayName": "String",
   "id": "String (identifier)",
   "regionGroup": "String",
-  "regionStatus": "microsoft.graph.cloudPcSupportedRegionStatus",
+  "regionStatus": "String",
   "supportedSolution": "String"
 }
 ```
