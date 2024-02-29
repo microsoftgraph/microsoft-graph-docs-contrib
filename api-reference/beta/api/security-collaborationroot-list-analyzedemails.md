@@ -7,15 +7,15 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List analyzedEmail objects
-This API allows Security Operations teams to have direct access to hunt (query) for threats, IOCs, attack vectors, and evidences for entire tenant. It is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats. It consists of email metadata, verdict information, related underlying entities (attachments/URL), filters, and more.
-
+# List analyzedEmails
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) objects and their properties.
+
+This API allows Security Operations teams to have direct access to hunt (query) for threats, IOCs, attack vectors, and evidences for entire tenant. It is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats. It consists of email metadata, verdict information, related underlying entities (attachments/URL), filters, and more.
 
 ## Permissions
 
