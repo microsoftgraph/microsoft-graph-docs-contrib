@@ -31,11 +31,11 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 
 ## Provision resources for a group
 
-**resourceProvisioningOptions** is a string collection that specifies group resources to be provisioned as part of the Microsoft 365 group. These resources can be specified during group creation or update.
+**resourceProvisioningOptions** is a string collection that specifies the resources that are associated with the Microsoft 365 group. These resources can be specified during group creation or update.
 
 | Supported values for resourceProvisioningOptions | Description |
 |:-|:-|
-| `Team` | The Microsoft 365 group is or can be associated with a Teams team. This value can also be added on [group update](/graph/api/group-update) through a `PATCH` operation. If not set, the Microsoft 365 group isn't associated with a team. |
+| `Team` | The Microsoft 365 group is or can be associated with a Teams team. If not set, the Microsoft 365 group isn't associated with a team. |
 
 ## Related content
 
