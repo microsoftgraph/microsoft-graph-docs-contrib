@@ -22,7 +22,7 @@ var requestBody = new TranslateExchangeIdsPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Me.TranslateExchangeIds.PostAsync(requestBody);
+var result = await graphClient.Me.TranslateExchangeIds.PostAsTranslateExchangeIdsPostResponseAsync(requestBody);
 
 
 ```

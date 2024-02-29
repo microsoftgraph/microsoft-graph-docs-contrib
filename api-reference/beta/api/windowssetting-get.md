@@ -7,13 +7,13 @@ ms.prod: "cross-device-experiences"
 doc_type: apiPageType
 ---
 
-# Get Windows setting stored in cloud
+# Get Windows setting stored in a cloud
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [windowsSetting](../resources/windowssetting.md) object by passing id of the setting in the URL.
+Read the properties and relationships of a [windowsSetting](../resources/windowssetting.md) object by passing the ID of the setting in the URL.
 
 ## Permissions
 

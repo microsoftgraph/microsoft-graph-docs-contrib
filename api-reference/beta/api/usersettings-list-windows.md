@@ -1,5 +1,5 @@
 ---
-title: "List Windows Settings"
+title: "List Windows settings"
 description: "Get a list of the windowsSetting objects and their properties."
 author: "MS-Arko"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cross-device-experiences"
 doc_type: apiPageType
 ---
 
-# List Windows settings stored in cloud
+# List Windows settings stored in a cloud
 
 Namespace: microsoft.graph
 
@@ -42,11 +42,11 @@ GET /me/settings/windows
 
 ## Optional query parameters
 
-This method supports `$filter` OData query parameter to help customize the response. The result can be filtered by `windowsDeviceId` and `settingType` properties. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to help customize the response. The result can be filtered by `windowsDeviceId` and `settingType` properties. For general information, see [OData query parameters](/graph/query-parameters).
 
-1. **`windowsDeviceId`**: A string value representing the unique identifier of a Windows device. This identifier can be found in the response body. By filtering with `WindowsDeviceId`, a filtered list of settings specific to that device can be retrieved. Only equality (`eq`) comparison is supported for this parameter.
+1. **`windowsDeviceId`**: A string value that represents the unique identifier of a Windows device. This identifier can be found in the response body. By filtering with `windowsDeviceId`, a filtered list of settings specific to that device can be retrieved. Only equality (`eq`) comparison is supported for this parameter.
 
-2. **`settingType`**: An enumeration with valid values: `roaming` and `backup`. The `settingType` parameter allows narrowing down the results to settings related to either roaming or backup. Only equality (`eq`) comparison is supported for this parameter. For more information on settingType, see [windowssettingtype](../resources/enums.md#windowssettingtype-values).
+2. **`settingType`**: An enumeration with valid values: `roaming` and `backup`. The `settingType` parameter allows narrowing down the results to settings related to either roaming or backup. Only equality (`eq`) comparison is supported for this parameter. For more information, see [windowssettingtype](../resources/enums.md#windowssettingtype-values).
 
 Please refer to the [examples](./usersettings-list-windows.md#examples) section below for more information on how to use these query parameters.
 

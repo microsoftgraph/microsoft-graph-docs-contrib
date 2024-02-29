@@ -41,11 +41,11 @@ Configure [contactMergeSuggestions](../resources/contactmergesuggestions.md):
   - Determining whether suggestion to merge duplicate contacts for a user is enabled.
   - Disabling or enabling suggestion to merge duplicate contacts for a user.
 
-Export user's Windows settings and values stored in cloud.
+Export user's Windows settings and values stored in a cloud.
   - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects.
   - Get a filtered list of the user's [windowsSetting](../resources/windowssetting.md) objects by passing,
-    - [windowssettingtype](../resources/enums.md#windowssettingtype-values) in filter query.
-    - [windowsDeviceId](../resources/windowssetting.md#properties) in filter query.
+    - [windowssettingtype](../resources/enums.md#windowssettingtype-values) in the filter query.
+    - [windowsDeviceId](../resources/windowssetting.md#properties) in the filter query.
 
 Inherits from [entity](entity.md). To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
 

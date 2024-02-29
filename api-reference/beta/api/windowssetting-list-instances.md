@@ -1,5 +1,5 @@
 ---
-title: "List Windows Setting Instances"
+title: "List Windows setting instances"
 description: "Get a list of the windowsSettingInstance objects and their properties."
 author: "MS-Arko"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cross-device-experiences"
 doc_type: apiPageType
 ---
 
-# List Windows setting instances stored in cloud
+# List Windows setting instances stored in a cloud
 
 Namespace: microsoft.graph
 

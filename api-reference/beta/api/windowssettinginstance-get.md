@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object by passing windows setting id and windows setting instance id in the URL.
+Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object by passing the Windows setting ID and Windows setting instance ID in the URL.
 
 ## Permissions
 
