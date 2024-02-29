@@ -1,6 +1,6 @@
 ---
 title: "plannerBasicApprovalAttachment resource type"
-description: "The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, which is created by approval service that will be added to a [plannerTask](plannertask.md)."
+description: "The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, which is created by the approval service and is added to a [plannerTask](plannertask.md)."
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, which is created by approval service that will be added to a [plannerTask](plannertask.md).
+The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, which is created by the approval service and is added to a [plannerTask](plannertask.md).
 
 Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md).
 
