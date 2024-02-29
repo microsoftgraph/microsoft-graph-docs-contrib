@@ -76,7 +76,7 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{sitesId}/pagetemplates/{pageTemplateId}/microsoft.graph.pageTemplate
+PATCH /sites/{sitesId}/pagetemplates/{pageTemplateId}
 Content-Type: application/json
 
 {

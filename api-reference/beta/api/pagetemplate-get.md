@@ -67,7 +67,7 @@ If successful, this method returns a `200` and a [pageTemplate](../resources/pag
 <!-- { "blockType": "request", "name": "get-pagetemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pageTemplates/{page-template-id}/microsoft.graph.PageTemplate
+GET /sites/{site-id}/pageTemplates/{page-template-id}
 ```
 
 #### Response
