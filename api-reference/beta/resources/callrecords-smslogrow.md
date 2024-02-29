@@ -1,7 +1,7 @@
 ---
 title: "smsLogRow resource type"
 description: "Represents a row of data in the log of a sent or received SMS."
-author: "radoslag"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
