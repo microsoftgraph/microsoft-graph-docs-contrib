@@ -1,6 +1,6 @@
 ---
 title: "plannerBasicApprovalAttachment resource type"
-description: "The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, which is created by approval service that will be added to a [plannerTask](plannertask.md)".
+description: "The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, which is created by approval service that will be added to a [plannerTask](plannertask.md)."
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.prod: "planner"
