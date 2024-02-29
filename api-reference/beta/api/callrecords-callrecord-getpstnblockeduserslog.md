@@ -1,7 +1,7 @@
 ---
 title: "callRecord: getPstnBlockedUsersLog"
 description: "Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of pstnBlockedUsersLogRow entries."
-author: "radoslag" 
+author: "saurabhjain0804" 
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -60,15 +60,15 @@ Don't supply a request body for this method.
 
 If successful, this function returns a `200 OK` response code and a collection of [microsoft.graph.callRecords.pstnBlockedUsersLogRow](../resources/callrecords-pstnblockeduserslogrow.md) entries in the response body.
   
-If the function returns more than 1000 entries for the specified date range, the body also includes an `@odata.nextLink` with a URL to query the next page of entries. The last page in the date range doesn't have an `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
+If the function returns more than 1,000 entries for the specified date range, the body also includes an `@odata.nextLink` with a URL to query the next page of entries. The last page in the date range doesn't have an `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
 
-The following example shows how to get a collection of records for PSTN blocked users that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in the first response, and an `@odata.nextLink` to get records beyond the first 1000. For readability, the response object contains only a collection of two records.
+The following example shows how to get a collection of records for PSTN blocked users that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in the first response, and an `@odata.nextLink` to get records beyond the first 1,000. For readability, the response object contains only a collection of two records.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
