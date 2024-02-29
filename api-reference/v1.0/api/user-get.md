@@ -50,11 +50,11 @@ GET /me
 ```
 
 ## Optional query parameters
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those that are not returned by default.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those that aren't returned by default.
 
 By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).
 
-To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`.
+To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, add the following expression to your query `$select=displayName,givenName,postalCode`.
 
 Extension properties also support query parameters as follows:
 
@@ -501,7 +501,7 @@ Content-type: application/json
 }
 ```
 
-If there are no custom security attributes assigned to the user or if the calling principal does not have access, the following will be the response:
+If there are no custom security attributes assigned to the user or if the calling principal doesn't have access, the following will be the response:
 
 ```http
 HTTP/1.1 200 OK
