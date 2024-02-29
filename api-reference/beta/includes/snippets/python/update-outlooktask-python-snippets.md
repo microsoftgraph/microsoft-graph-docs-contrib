@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.outlook.tasks.item.outlook_task_item_request_builder import OutlookTaskItemRequestBuilder
+from msgraph.generated.models.outlook_task import OutlookTask
+from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -15,12 +18,9 @@ request_body = OutlookTask(
 	),
 )
 
-request_configuration = OutlookTaskItemRequestBuilder.OutlookTaskItemRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "outlook.timezone=\"Eastern Standard Time\"",
-}
+request_configuration = OutlookTaskItemRequestBuilder.OutlookTaskItemRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "outlook.timezone=\"Eastern Standard Time\"")
 
-)
 
 result = await graph_client.me.outlook.tasks.by_outlook_task_id('outlookTask-id').patch(request_body, request_configuration = request_configuration)
 

@@ -15,7 +15,7 @@ Namespace: microsoft.graph.callRecords
 
 Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of [pstnBlockedUsersLogRow](../resources/callrecords-pstnblockeduserslogrow.md) entries. The log includes information about each blocked user such as their assigned phone number and the reason they were blocked/unblocked from making calls.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -50,7 +50,7 @@ In the request URL, provide the following query parameters with values.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -158,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Get log of PSTN calls in Microsoft Graph](callrecords-callrecord-getpstncalls.md)
 * [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)

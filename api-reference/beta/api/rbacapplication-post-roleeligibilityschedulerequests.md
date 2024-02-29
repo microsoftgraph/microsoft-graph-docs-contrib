@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "rbacapplication_post_roleeligibilityschedulerequests" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplication-post-roleeligibilityschedulerequests-permissions.md)]
 
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -35,7 +37,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

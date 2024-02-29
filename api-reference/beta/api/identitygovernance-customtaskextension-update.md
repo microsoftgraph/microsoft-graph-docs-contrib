@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Update the properties of a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -43,7 +43,7 @@ PATCH /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExt
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

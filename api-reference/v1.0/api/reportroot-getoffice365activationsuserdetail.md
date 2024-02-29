@@ -39,7 +39,7 @@ GET /reports/getOffice365ActivationsUserDetail
 
 | Name          | Description                              |
 | :------------ | :--------------------------------------- |
-| Authorization | Bearer {token}. Required.                |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned. Optional. |
 
 ## Response

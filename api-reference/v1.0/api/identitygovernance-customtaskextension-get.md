@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Read the properties and relationships of a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -42,7 +42,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

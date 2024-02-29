@@ -40,7 +40,7 @@ POST /teams/{team-id}/installedApps
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -205,7 +205,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 ```
 
-## See also
+## Related content
 
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

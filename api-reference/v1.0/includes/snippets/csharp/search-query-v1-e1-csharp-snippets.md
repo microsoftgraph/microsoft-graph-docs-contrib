@@ -24,6 +24,7 @@ var requestBody = new QueryPostRequestBody
 			{
 				"/external/connections/connectionfriendlyname",
 			},
+			Region = "US",
 			Query = new SearchQuery
 			{
 				QueryString = "contoso product",
@@ -40,7 +41,7 @@ var requestBody = new QueryPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Search.Query.PostAsync(requestBody);
+var result = await graphClient.Search.Query.PostAsQueryPostResponseAsync(requestBody);
 
 
 ```

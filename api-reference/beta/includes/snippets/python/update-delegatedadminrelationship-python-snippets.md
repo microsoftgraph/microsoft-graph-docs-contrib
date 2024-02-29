@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.tenantRelationships.delegatedAdminRelationships.item.delegated_admin_relationship_item_request_builder import DelegatedAdminRelationshipItemRequestBuilder
+from msgraph.generated.models.delegated_admin_relationship import DelegatedAdminRelationship
+from msgraph.generated.models.delegated_admin_relationship_customer_participant import DelegatedAdminRelationshipCustomerParticipant
+from msgraph.generated.models.delegated_admin_access_details import DelegatedAdminAccessDetails
+from msgraph.generated.models.unified_role import UnifiedRole
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -33,12 +38,9 @@ request_body = DelegatedAdminRelationship(
 	auto_extend_duration = "P180D",
 )
 
-request_configuration = DelegatedAdminRelationshipItemRequestBuilder.DelegatedAdminRelationshipItemRequestBuilderPatchRequestConfiguration(
-headers = {
-		'If-Match' : "W/\"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==\"",
-}
+request_configuration = DelegatedAdminRelationshipItemRequestBuilder.DelegatedAdminRelationshipItemRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("If-Match", "W/\"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==\"")
 
-)
 
 result = await graph_client.tenant_relationships.delegated_admin_relationships.by_delegated_admin_relationship_id('delegatedAdminRelationship-id').patch(request_body, request_configuration = request_configuration)
 

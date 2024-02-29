@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Update the properties of a custom [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -36,7 +36,7 @@ PATCH /identity/userFlowAttributes/{id}
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

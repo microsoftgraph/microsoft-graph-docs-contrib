@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.planner.plans.item.details.details_request_builder import DetailsRequestBuilder
+from msgraph.generated.models.planner_plan_details import PlannerPlanDetails
+from msgraph.generated.models.planner_user_ids import PlannerUserIds
+from msgraph.generated.models.planner_category_descriptions import PlannerCategoryDescriptions
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -21,13 +25,10 @@ request_body = PlannerPlanDetails(
 	),
 )
 
-request_configuration = DetailsRequestBuilder.DetailsRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "return=representation",
-		'If-Match' : "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
+request_configuration = DetailsRequestBuilder.DetailsRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
+request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-)
 
 result = await graph_client.planner.plans.by_planner_plan_id('plannerPlan-id').details.patch(request_body, request_configuration = request_configuration)
 

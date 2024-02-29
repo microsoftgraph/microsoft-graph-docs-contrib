@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.servicePrincipals.service_principals_request_builder import ServicePrincipalsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -17,11 +18,9 @@ query_params = ServicePrincipalsRequestBuilder.ServicePrincipalsRequestBuilderGe
 
 request_configuration = ServicePrincipalsRequestBuilder.ServicePrincipalsRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.service_principals.get(request_configuration = request_configuration)
 

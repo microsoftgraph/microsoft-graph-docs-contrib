@@ -17,6 +17,9 @@ $params = @{
 	windowsSettings = @{
 		language = "en-US"
 	}
+	windowsSetting = @{
+		locale = "en-US"
+	}
 }
 
 Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -BodyParameter $params

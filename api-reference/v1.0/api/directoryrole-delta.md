@@ -62,7 +62,7 @@ This method supports OData query parameters to help customize the response.
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body
@@ -162,7 +162,7 @@ Content-type: application/json
 }
 ```
 
-### See also
+### Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for more details
 - [Get incremental changes for users](/graph/delta-query-users) for an example requests.

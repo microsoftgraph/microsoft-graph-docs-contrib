@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
 ms.date: 08/14/2023
+#Customer intent: As a developer integrating with Microsoft Graph, I want to learn how to programmatically create and manage applications and service principals in my tenant.
 ---
 
 # Manage a Microsoft Entra application using Microsoft Graph
@@ -18,12 +19,11 @@ Many settings for apps are recorded as objects that can be accessed, updated, or
 
 ## Prerequisites
 
-To complete this tutorial, you need the following resources and privileges:
+To test the API operations, you need the following resources and privileges:
 
 + A working Microsoft Entra tenant.
 + Sign in to [Graph Explorer](https://aka.ms/ge) as a user with privileges allowed to create and manage applications in the tenant.
-
-<a name='register-an-application-with-azure-ad'></a>
++ Grant yourself the least privilege delegated permission indicated for the operation.
 
 ## Register an application with Microsoft Entra ID
 
@@ -271,7 +271,7 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-application-basics-grant-approleassignmentrequired-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -586,7 +586,8 @@ PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46f
 }
 ```
 
-## See also
+## Related content
 
++ [The Microsoft Entra app manifest](/entra/identity-platform/reference-app-manifest)
 + [Properties of an enterprise application (service principal)](/azure/active-directory/manage-apps/application-properties)
 + [Add a certificate to an app using Microsoft Graph](/graph/applications-how-to-add-certificate)

@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "appmanagementpolicy_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/appmanagementpolicy-post-permissions.md)]
 
-[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
+[!INCLUDE [rbac-app-auth-method-custom-policy-api-update](../includes/rbac-for-apis/rbac-app-auth-method-custom-policy-api-update.md)]
 
 ## HTTP request
 
@@ -38,7 +38,7 @@ POST /policies/appManagementPolicies
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 > [!IMPORTANT]
@@ -151,6 +151,10 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-appmanagementpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-appmanagementpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

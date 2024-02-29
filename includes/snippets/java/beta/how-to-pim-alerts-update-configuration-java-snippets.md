@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TooManyGlobalAdminsAssignedToTenantAlertConfiguration unifiedRoleManagementAlertConfiguration = new TooManyGlobalAdminsAssignedToTenantAlertConfiguration();
-unifiedRoleManagementAlertConfiguration.isEnabled = true;
-unifiedRoleManagementAlertConfiguration.globalAdminCountThreshold = 4;
-unifiedRoleManagementAlertConfiguration.percentageOfGlobalAdminsOutOfRolesThreshold = 10;
+unifiedRoleManagementAlertConfiguration.setOdataType("#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertConfiguration");
+unifiedRoleManagementAlertConfiguration.setIsEnabled(true);
+unifiedRoleManagementAlertConfiguration.setGlobalAdminCountThreshold(4);
+unifiedRoleManagementAlertConfiguration.setPercentageOfGlobalAdminsOutOfRolesThreshold(10);
+UnifiedRoleManagementAlertConfiguration result = graphClient.identityGovernance().roleManagementAlerts().alertConfigurations().byUnifiedRoleManagementAlertConfigurationId("{unifiedRoleManagementAlertConfiguration-id}").patch(unifiedRoleManagementAlertConfiguration);
 
-graphClient.identityGovernance().roleManagementAlerts().alertConfigurations("DirectoryRole_3b0e753b-22fa-4c16-9bf2-470b80be80d6_TooManyGlobalAdminsAssignedToTenantAlert")
-	.buildRequest()
-	.patch(unifiedRoleManagementAlertConfiguration);
 
 ```

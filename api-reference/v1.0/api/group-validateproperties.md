@@ -2,7 +2,8 @@
 title: "group: validateProperties"
 description: "Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: "apiPageType"
 ---
@@ -41,7 +42,7 @@ POST /groups/{id}/validateProperties
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json          |
 
 ## Request body

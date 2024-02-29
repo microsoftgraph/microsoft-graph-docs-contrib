@@ -3,6 +3,7 @@ title: "passwordProfile resource type"
 description: "Contains the password profile associated with a user. The **passwordProfile** property of the user entity is a **passwordProfile** object."
 ms.localizationpriority: high
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: resourcePageType
 ---
@@ -52,6 +53,6 @@ Here is a JSON representation of the resource
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 [Update the passwordProfile of a user](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user-to-reset-their-password)

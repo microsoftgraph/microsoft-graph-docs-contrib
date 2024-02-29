@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -36,7 +36,7 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body

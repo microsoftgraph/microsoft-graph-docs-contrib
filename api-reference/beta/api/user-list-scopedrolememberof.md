@@ -2,6 +2,7 @@
 title: "List scopedAdministratorOf"
 description: "Retrieve a list of scopedRoleMembership for the user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -37,7 +38,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the base identity of a participant or organizer in a [callRecord](callrecords-callrecord.md). 
+Represents the base identity of a participant or organizer in a [callRecord](callrecords-callrecord.md).
 
 Base type of [organizer](callrecords-organizer.md) and [participant](callrecords-participant.md).
 
@@ -22,7 +22,7 @@ Base type of [organizer](callrecords-organizer.md) and [participant](callrecords
 | Property    | Type                          | Description                                     |
 |:------------|:------------------------------|:------------------------------------------------|
 | id          | String                        | Unique identifier for the call participant.     |
-| identity    | [identitySet](identityset.md) | The identity of the call participant. |
+| identity    | [communicationsIdentitySet](communicationsidentityset.md) | The identity of the call participant. |
 
 ## JSON representation
 
@@ -40,10 +40,10 @@ The following JSON representation shows the resource type.
 ```json
 {
   "id": "String (identifier)",
-  "identity": {"@odata.type": "microsoft.graph.identitySet"}
+  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"}
 }
 ```
 
-## See also
+## Related content
 
 For examples that show how to use the **participant** and **organizer** resources, see [callRecord](callrecords-callrecord.md).

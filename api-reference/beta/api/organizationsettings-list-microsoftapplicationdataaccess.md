@@ -38,7 +38,7 @@ GET /organization/{organizationId}/settings/microsoftApplicationDataAccess
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -117,6 +117,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) for an organization.

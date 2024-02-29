@@ -1,7 +1,8 @@
 ---
 title: "Create acceptedSender"
 description: "Add a new user or group to the acceptedSender list."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -38,7 +39,7 @@ POST /groups/{id}/acceptedSenders/$ref
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

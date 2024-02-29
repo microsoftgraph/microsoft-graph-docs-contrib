@@ -51,6 +51,6 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - To modify moderation settings of a channel, see example 2 in [Update channel](../api/channel-patch.md).

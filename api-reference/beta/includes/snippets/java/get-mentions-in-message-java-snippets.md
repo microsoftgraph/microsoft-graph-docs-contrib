@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Message message = graphClient.me().messages("AQMkADJmMTUAAAgVZAAAA")
-	.buildRequest()
-	.expand("mentions")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+Message result = graphClient.me().messages().byMessageId("{message-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"mentions"};
+});
+
 
 ```

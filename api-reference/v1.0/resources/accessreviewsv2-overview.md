@@ -60,7 +60,7 @@ The following table lists the methods that you can use to interact with access r
 
 ## Role and application permission authorization checks
 
-The following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to manage access reviews.
+The following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to manage access reviews.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
@@ -69,7 +69,7 @@ The following [Microsoft Entra roles](/azure/active-directory/roles/permissions-
 
 In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
 
-## See also
+## Related content
 
 
 - [Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)

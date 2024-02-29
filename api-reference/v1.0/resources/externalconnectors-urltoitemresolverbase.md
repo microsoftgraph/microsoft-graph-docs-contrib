@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 Types that inherit from the [urlToItemResolverBase](externalconnectors-urlToItemResolverBase.md) abstract base type.
 - [itemIdResolver](externalconnectors-itemidresolver.md)

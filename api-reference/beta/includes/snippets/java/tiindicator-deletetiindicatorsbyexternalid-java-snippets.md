@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> valueList = new LinkedList<String>();
-valueList.add("externalId-value1");
-valueList.add("externalId-value2");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().tiIndicators()
-	.deleteTiIndicatorsByExternalId(TiIndicatorDeleteTiIndicatorsByExternalIdParameterSet
-		.newBuilder()
-		.withValue(valueList)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.security.tiindicators.deletetiindicatorsbyexternalid.DeleteTiIndicatorsByExternalIdPostRequestBody deleteTiIndicatorsByExternalIdPostRequestBody = new com.microsoft.graph.beta.security.tiindicators.deletetiindicatorsbyexternalid.DeleteTiIndicatorsByExternalIdPostRequestBody();
+LinkedList<String> value = new LinkedList<String>();
+value.add("externalId-value1");
+value.add("externalId-value2");
+deleteTiIndicatorsByExternalIdPostRequestBody.setValue(value);
+var result = graphClient.security().tiIndicators().deleteTiIndicatorsByExternalId().post(deleteTiIndicatorsByExternalIdPostRequestBody);
+
 
 ```

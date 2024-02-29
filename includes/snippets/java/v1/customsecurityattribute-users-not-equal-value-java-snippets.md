@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-UserCollectionPage users = graphClient.users()
-	.buildRequest( requestOptions )
-	.filter("customSecurityAttributes/Marketing/AppCountry ne 'Canada'")
-	.select("id,displayName,customSecurityAttributes")
-	.get();
+UserCollectionResponse result = graphClient.users().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.count = true;
+	requestConfiguration.queryParameters.select = new String []{"id", "displayName", "customSecurityAttributes"};
+	requestConfiguration.queryParameters.filter = "customSecurityAttributes/Marketing/AppCountry ne 'Canada'";
+	requestConfiguration.headers.add("ConsistencyLevel", "eventual");
+});
+
 
 ```

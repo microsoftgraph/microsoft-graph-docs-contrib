@@ -26,10 +26,13 @@ Since the **message** resource supports [extensions](/graph/extensibility-overvi
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "message_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/message-get-permissions.md)]
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadBasic, Mail.Read    |
+|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read    |
+|Application | Mail.ReadBasic.All, Mail.Read |
 
 ## HTTP request
 
@@ -164,20 +167,20 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Adele Vance",
-            "address":"adelev@contoso.OnMicrosoft.com"
+            "address":"adelev@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Adele Vance",
-            "address":"adelev@contoso.OnMicrosoft.com"
+            "address":"adelev@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.OnMicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -513,7 +516,7 @@ YW5vdGhlciBtYWlsLg0K
 ```
 
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)
