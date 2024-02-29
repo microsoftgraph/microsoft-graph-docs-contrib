@@ -2,7 +2,8 @@
 title: "group resource type"
 description: "Represents a Microsoft Entra group, which can be a Microsoft 365 group, a team in Microsoft Teams, or a security group."
 ms.localizationpriority: high
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
