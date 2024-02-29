@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This EntityType holds information of a servicing period related to a product edition. Each edition of a particular product may have one or more servicing periods. Knowing the end of service dates is critical information to IT admins.
+This EntityType holds information of a servicing period related to a product edition. Each edition of a particular product may have one or more servicing periods. 
 
 ## Properties
 |Property|Type|Description|
