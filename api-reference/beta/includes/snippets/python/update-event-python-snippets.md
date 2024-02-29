@@ -18,7 +18,6 @@ request_body = Event(
 		time = "2016-10-19T10:37:00Z",
 	),
 	recurrence = None,
-	uid = "iCalUId-value",
 	reminder_minutes_before_start = 99,
 	is_online_meeting = True,
 	online_meeting_provider = OnlineMeetingProviderType.TeamsForBusiness,
