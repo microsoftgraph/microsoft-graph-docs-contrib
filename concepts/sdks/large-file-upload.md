@@ -41,8 +41,7 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 
 ### [Java](#tab/java)
 
-> [!NOTE]
-> The Java SDK does not currently support resuming in-progress downloads.
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="ResumeSnippet":::
 
 ### [PHP](#tab/PHP)
 
