@@ -66,10 +66,51 @@ If successful, this method returns a `200` and a [pageTemplate](../resources/pag
 
 <!-- { "blockType": "request", "name": "get-pagetemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
+```msgraph-interactive
+GET /sites/{site-id}/pageTemplates/{page-template-id}/microsoft.graph.PageTemplate
+```
+
 #### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.pageTemplate", "truncated": true } -->
 
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.pageTemplate",
+  "description": "Here's the page description",
+  "id": "65e59907-59d5-44ff-a038-7c0bf3034567",
+  "name": "Home.aspx",
+  "webUrl": "https://a830edad9050849rahmit.sharepoint.com/SitePages/Templates/Home.aspx",
+  "title": "Organization Home",
+  "thumbnailWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/00210d24-bba0-42e6-9a31-1d452a95dd75/thumbnails/large.jpg?file=163352059.jpg",
+  "promotionKind": "page",
+  "pageLayout": "home",
+  "showComments": true,
+  "showRecommendedPages": false,
+  "createdBy": {
+    "user": {
+        "displayName": "Rahul Mittal",
+        "email": "rahmit@contoso.com"
+    }
+  },
+  "lastModifiedBy": {
+    "user": {
+        "displayName": "Rahul Mittal",
+        "email": "rahmit@contoso.com"
+    }
+  },
+  "publishingState": {
+    "level": "published",
+    "versionId": "1.0"
+  },
+  "reactions": {
+    "commentCount": 1
+  }
+}
+```
 
 <!--
 {

@@ -65,6 +65,10 @@ If successful, this method returns a `200` and a list of [pageTemplate](../resou
 }
 -->
 
+```msgraph-interactive
+GET /sites/{site-id}/pagetemplates/microsoft.graph.pageTemplate
+```
+
 ### Response
 
 <!--
@@ -76,6 +80,109 @@ If successful, this method returns a `200` and a list of [pageTemplate](../resou
 }
 -->
 
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "08f48aa6-02e3-407c-bbcb-ff61cec653fa",
+            "name": "sample.aspx",
+            "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Templates/sample.aspx",
+            "title": "sample",
+            "pageLayout": "article",
+            "showComments": true,
+            "showRecommendedPages": false,
+            "createdBy": {
+                "user": {
+                    "displayName": "Rahul Mittal",
+                    "email": "rahmit@contoso.com"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "displayName": "Rahul Mittal",
+                    "email": "rahmit@contoso.com"
+                }
+            },
+            "publishingState": {
+                "level": "checkout",
+                "versionId": "1.1",
+                "checkedOutBy": {
+                    "user": {
+                        "displayName": "Rahul Mittal",
+                        "email": "rahmit@contoso.com"
+                    }
+                }
+            },
+            "reactions": {
+                "commentCount": 4,
+                "likeCount": 2
+            },
+            "titleArea": {
+                "enableGradientEffect": true,
+                "imageWebUrl": "/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG",
+                "layout": "imageAndTitle",
+                "showAuthor": false,
+                "showPublishedDate": false,
+                "showTextBlockAboveTitle": false,
+                "textAboveTitle": "",
+                "textAlignment": "left",
+                "imageSourceType": 2,
+                "title": "sample"
+            }
+        },
+        {
+            "id": "7d87eee1-7c77-46b5-b2c4-ad6e4e432a8e",
+            "name": "Home.aspx",
+            "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Templates/Home.aspx",
+            "title": "Home",
+            "pageLayout": "home",
+            "showComments": true,
+            "showRecommendedPages": false,
+            "createdBy": {
+                "user": {
+                    "displayName": "Rahul Mittal",
+                    "email": "rahmit@contoso.com"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "displayName": "Rahul Mittal",
+                    "email": "rahmit@contoso.com"
+                }
+            },
+            "publishingState": {
+                "level": "checkout",
+                "versionId": "1.1",
+                "checkedOutBy": {
+                    "user": {
+                        "displayName": "Rahul Mittal",
+                        "email": "rahmit@contoso.com"
+                    }
+                }
+            },
+            "reactions": {
+                "commentCount": 1
+            },
+            "titleArea": {
+                "enableGradientEffect": true,
+                "imageWebUrl": "/siteAssets/titleBackground.jpg",
+                "layout": "imageAndTitle",
+                "showAuthor": true,
+                "showPublishedDate": false,
+                "showTextBlockAboveTitle": false,
+                "textAboveTitle": "Text Above Title",
+                "textAlignment": "left",
+                "imageSourceType": 2,
+                "title": "Home",
+                "hasTitleBeenCommitted": true
+            }
+        }
+    ]
+}
+```
 
 <!--
 {
