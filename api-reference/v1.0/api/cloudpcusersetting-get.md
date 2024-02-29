@@ -88,7 +88,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcUserSetting",
     "id": "556092f8-92f8-5560-f892-6055f8926055",
     "displayName": "String",
-    "selfServiceEnabled": true,
     "localAdminEnabled": false,
     "resetEnabled": true,
     "restorePointSetting": {
@@ -139,7 +138,6 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
   "displayName": "Display Name value",
-  "selfServiceEnabled": true,
   "localAdminEnabled": false,
   "resetEnabled": true,
   "restorePointSetting": {
