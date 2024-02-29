@@ -1,5 +1,5 @@
 ---
-title: Trigger move and delete remediation Action 
+title: "analyzedEmail: remediate "
 description: Trigger move and delete action against a threat.
 author: MishraSoumyaMS
 ms.localizationpriority: medium
@@ -7,14 +7,15 @@ ms.prod: security
 doc_type: apiPageType
 ---
 
-# Trigger move and delete email remediation Action 
+# analyzedEmail: remediate 
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remediation means to take prescribed action against a threat. The remediate API is to remove potential threats from end-user's mailboxes.  The API can trigger email purge actions like move to junk, move to deleted items, soft delete, hard delete or move to inbox. These APIs enable scenarios and use cases such as SOAR integration, playbooks, and automations. For more information read [email remediation, trigger action and track actions](microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide). 
+Remove a potential threat from end users' mailboxes.
 
+Remediation means to take prescribed action against a threat. This API can trigger email purge actions like move to junk, move to deleted items, soft delete, hard delete, or move to Inbox. This API enables scenarios and use cases such as SOAR integration, playbooks, and automations. For more information read [email remediation, trigger action and track actions](microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide). In case of false positives admins can triger move to inbox action. 
 
 ## Permissions
 
@@ -57,12 +58,12 @@ The following table lists the parameters that are required when you call this ac
 |severity|microsoft.graph.security.remediationSeverity| The severity of the remediation. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
 |action|microsoft.graph.security.remediationAction|The types of move and delete actions that are supported. The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
 |approverUpn|String| Tracks who approved the action. |
-|remediateSendersCopy|Boolean| For intra-org and outbound email, triggers an action for the sender's copy. |
-|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|GET unique key to identify a single email. The ID can be found from the analyzedemails, analyzedemails/Id or runHuntingQuery/reportId.
+|remediateSendersCopy|Boolean| For internal or outbound email, indicates whether to remediate the sender's copy of an email. |
+|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|The unique ID of the analyzed email. The ID can be found from the analyzedemails, analyzedemails/Id or runHuntingQuery/reportId.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code and the action status can be tracked through the location header with bulkId. 
+If successful, this action returns a 204 No Content response code and a Location header with a link to the tracking information. 
 
 >**Note:** The response of the action can be tracked in https://security.microsoft.com/action-center/history. Learn more about [Action center](microsoft-365/security/defender/m365d-action-center?view=o365-worldwide)
 
@@ -113,4 +114,7 @@ HTTP/1.1 204 No Content
 >**Note:** Track the location header
 Example:
 Get the tracking url at response header - 'Location'
+https://security.microsoft.com/action-center/history?filters={"bulkId":["{bulkId}"]}&tid={tid}
+
+
 
