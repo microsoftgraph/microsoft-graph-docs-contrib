@@ -7,15 +7,13 @@ ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 
-# product resource type
+# servicingPeriod resource type
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This EntityType holds information of a servicing period related to a product edition
-
-Examples: 
+This EntityType holds information of a servicing period related to a product edition. Each edition of a particular product may have one or more servicing periods. Knowing the end of service dates is critical information to IT admins.
 
 ## Properties
 |Property|Type|Description|
