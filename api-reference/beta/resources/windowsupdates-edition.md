@@ -1,9 +1,9 @@
 ---
 title: "edition resource type"
-description: "This EntityType represents a Windows product."
+description: "This EntityType represents an edition of a particular Windows product."
 author: "skandula"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 
@@ -14,8 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This is an Entity type that represents an edition of a particular Windows product. 
-
-Examples: To be added 
+Examples of product editions: Enterprise, Core, Education, etc. 
 
 ## Properties
 |Property|Type|Description|
