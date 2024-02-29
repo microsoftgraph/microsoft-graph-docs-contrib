@@ -9098,38 +9098,6 @@
             "ChangeType": "Addition",
             "Description": "Added the [enumerateddomains](https://learn.microsoft.com/en-us/graph/api/resources/enumerateddomains?view=graph-rest-beta) resource type.",
             "Target": "federatedTokenValidationPolicy"
-          },
-          {
-              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
-              "ApiChange": "Property",
-              "ChangedApiName": "validatingDomains",
-              "ChangeType": "Addition",
-              "Description": "Added the `validatingDomains` property to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta) resource.",
-              "Target": "federatedTokenValidationPolicy"
-          },
-          {
-              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
-              "ApiChange": "Method",
-              "ChangedApiName": "LIST",
-              "ChangeType": "Addition",
-              "Description": "Added the [LIST](https://learn.microsoft.com/en-us/graph/api/policyroot-list-federatedtokenvalidationpolicy?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
-              "Target": "federatedTokenValidationPolicy"
-          },
-          {
-              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
-              "ApiChange": "Method",
-              "ChangedApiName": "GET",
-              "ChangeType": "Addition",
-              "Description": "Added the [GET](https://learn.microsoft.com/en-us/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
-              "Target": "federatedTokenValidationPolicy"
-          },
-          {
-              "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
-              "ApiChange": "Method",
-              "ChangedApiName": "UPDATE",
-              "ChangeType": "Addition",
-              "Description": "Added the [UPDATE](https://learn.microsoft.com/en-us/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
-              "Target": "federatedTokenValidationPolicy"
           }
       ],
       "Id": "b14bfb9f-1af6-4f90-9a1e-6ec20665c29d",
