@@ -55,4 +55,4 @@ Here is a JSON representation of the resource
 
 ## Related content
 
-[Update the passwordProfile of a user](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user-to-reset-their-password)
+[Update the passwordProfile of a user](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user-and-reset-their-password)
