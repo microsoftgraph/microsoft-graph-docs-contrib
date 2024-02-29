@@ -28,6 +28,14 @@ Microsoft Graph Toolkit v4 is now available. For details about changes in the la
 
 Use the **iCalUId** property on [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to get the unique identifier for an event across calendars.
 
+### Device and app management | Cloud PC
+
+The following properties are deprecated:
+
+- **type** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) in favor of the **connectionType** property.
+- **healthCheckStatusDetails** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) in favor of the **healthCheckStatusDetail** property.
+- **additionalDetails** property on [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true) in favor of the **additionalDetail** property.
+
 ### Education
 
 - Teachers can [activate](/graph/api/educationassignment-activate) an inactive [assignment](/graph/api/resources/educationassignment) to signal that the assignment has further action items for teachers or students.

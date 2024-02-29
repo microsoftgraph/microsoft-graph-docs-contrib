@@ -62,6 +62,7 @@ The following table lists the properties that are required when you create the [
 |resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|The ID of the target virtual network. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|String|The ID of the target subnet. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
+|type (deprecated)|cloudPcOnPremisesConnectionType|Specifies how the provisioned Cloud PC joins to Microsoft Entra ID. The default value is `hybridAzureADJoin`. Possible values are: `hybridAzureADJoin`, `azureADJoin`, `unknownFutureValue`. The **type** property is deprecated and stopped returning data on January 31, 2024. Goind forward, use the **connectionType** property.|
 
 ## Response
 

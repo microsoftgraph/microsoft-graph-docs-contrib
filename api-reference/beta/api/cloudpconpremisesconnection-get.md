@@ -211,7 +211,9 @@ Content-Type: application/json
     "managedBy": "windows365",
     "displayName": "Display Name value",
     "healthCheckStatus": "failed",
-    "healthCheckStatusDetail": {
+    "type": "hybridAzureADJoin",
+    "connectionType": "hybridAzureADJoin",
+    "healthCheckStatusDetails": {
       "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
       "startDateTime": "2020-11-03T12:43:14Z",
       "endDateTime": "2020-11-03T12:43:32Z",
@@ -266,20 +268,7 @@ Content-Type: application/json
         }
       ]
     },
-    "inUse": false
-}
-```
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
-    "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
-    "managedBy": "windows365",
-    "displayName": "Display Name value",
-    "healthCheckStatus": "failed",
-    "healthCheckStatusDetails": {
+    "healthCheckStatusDetail": {
       "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
       "startDateTime": "2020-11-03T12:43:14Z",
       "endDateTime": "2020-11-03T12:43:32Z",
