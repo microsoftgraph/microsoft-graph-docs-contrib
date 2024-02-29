@@ -96,7 +96,6 @@ The following JSON representation shows the resource type.
   "imageType": "String",
   "localAdminEnabled": "Boolean",
   "microsoftManagedDesktop": {"@odata.type": "microsoft.graph.microsoftManagedDesktop"},
-  "onPremisesConnectionId": "String",
   "provisioningType": "String",
   "windowsSetting": {"@odata.type": "microsoft.graph.cloudPcWindowsSetting"}
 }
