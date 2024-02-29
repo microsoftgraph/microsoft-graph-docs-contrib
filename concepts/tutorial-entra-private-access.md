@@ -6,7 +6,7 @@ ms.reviewer: nbeesetti
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.prod: applications
-ms.date: 02/27/2024
+ms.date: 02/29/2024
 #Customer intent: As a customer, I want to learn how to configure Microsoft Entra Private Access using Microsoft Graph APIs sothat I can automate.
 ---
 
@@ -561,4 +561,4 @@ POST https://graph.microsoft-ppe.com/beta/applications/{objectID}/onPremisesPubl
 
 ## Related content
 
--
+- [Microsoft Security Service Edge Solution Deployment Guide for Microsoft Entra Private Access Proof of Concept](/entra/architecture/sse-deployment-guide-private-access)
