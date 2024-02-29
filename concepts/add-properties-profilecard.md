@@ -27,7 +27,7 @@ You can also [remove](/graph/api/profilecardproperty-delete) custom attributes f
 
 ## Make other attributes visible on the profile card
 
-You can make the following attributes from Microsoft Entra ID visible on the users' profile cards. These attributes aren't case-sensitive*:
+You can make the following attributes from Microsoft Entra ID visible on the users' profile cards. These attributes aren't case-sensitive:
 
 * `UserPrincipalName`
 * `Fax`
@@ -47,7 +47,7 @@ The following table shows how the Microsoft Entra ID attributes correspond with 
 | StateOrProvince | state |
 | Alias | mailNickname |
 
-You can add any of these attributes to the profile card by configuring your [people admin settings](/graph/api/resources/peopleadminsettings) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make other attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The other properties are automatically shown in the language settings that the user specifies for Microsoft 365.
+You can add any of these attributes to the profile card by configuring your [people admin settings](/graph/api/resources/peopleadminsettings) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make these attributes visible, you must use the property names for `en-us`. You don't have to add localized values. These properties are automatically shown in the language settings that the user specifies for Microsoft 365.
 
 > **Note:** User entity property values contain user information stored and managed by the organization.
 
