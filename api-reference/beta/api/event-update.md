@@ -101,9 +101,9 @@ If successful, this method returns a `200 OK` response code and updated [event](
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,8 +121,7 @@ Content-type: application/json
     "response": "",
     "time": "2016-10-19T10:37:00Z"
   },
-  "recurrence": null,
-  "uid": "iCalUId-value",
+  "recurrence": null, 
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
@@ -166,9 +165,10 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -187,7 +187,8 @@ Content-type: application/json
     "time": "2016-10-19T10:37:00Z"
   },
   "recurrence": null,
-  "uid": "iCalUId-value",
+  "iCalUId": "040000008200E00074=",
+  "uid": "040000008200E00074=",
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",

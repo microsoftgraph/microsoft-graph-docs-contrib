@@ -45,7 +45,7 @@ GET /teams/{team-id}/members
 ```
 
 ## Optional query parameters
-This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 objects respectively.
 
 ## Request headers
 |Name|Description|

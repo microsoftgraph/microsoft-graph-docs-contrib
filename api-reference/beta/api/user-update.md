@@ -2,6 +2,7 @@
 title: "Update user"
 description: "Update the properties of a user object."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

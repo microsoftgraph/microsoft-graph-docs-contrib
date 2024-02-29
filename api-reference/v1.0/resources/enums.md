@@ -604,6 +604,13 @@ Namespace: microsoft.graph
 | assignIfOpen       |
 | unknownFutureValue |
 
+### educationModuleStatus values
+
+| Member             |
+| :----------------- |
+| draft              |
+| published          |
+
 ### fido2RestrictionEnforcementType values
 
 | Member |
@@ -3177,3 +3184,13 @@ Possible values for user account types (group membership), per Windows definitio
 |direct|
 |qrCode|
 |unknownFutureValue|
+
+### educationAssignmentStatus values
+
+| Member             |
+| :----------------- |
+| draft              |
+| published          |
+| assigned           |
+| unknownFutureValue |
+| inactive           |

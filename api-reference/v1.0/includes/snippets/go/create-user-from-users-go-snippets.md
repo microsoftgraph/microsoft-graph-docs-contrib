@@ -17,18 +17,18 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewUser()
 accountEnabled := true
-requestBody.SetAccountEnabled(&accountEnabled)
+requestBody.SetAccountEnabled(&accountEnabled) 
 displayName := "Adele Vance"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 mailNickname := "AdeleV"
-requestBody.SetMailNickname(&mailNickname)
+requestBody.SetMailNickname(&mailNickname) 
 userPrincipalName := "AdeleV@contoso.com"
-requestBody.SetUserPrincipalName(&userPrincipalName)
+requestBody.SetUserPrincipalName(&userPrincipalName) 
 passwordProfile := graphmodels.NewPasswordProfile()
 forceChangePasswordNextSignIn := true
-passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn)
+passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn) 
 password := "xWwvJ]6NMw+bWH-d"
-passwordProfile.SetPassword(&password)
+passwordProfile.SetPassword(&password) 
 requestBody.SetPasswordProfile(passwordProfile)
 
 users, err := graphClient.Users().Post(context.Background(), requestBody, nil)

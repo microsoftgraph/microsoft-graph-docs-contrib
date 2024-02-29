@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 using Microsoft.Graph.Beta.Models;
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages.FilterByCurrentUserWithOn("allowedRequestor").GetAsync();
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages.FilterByCurrentUserWithOn("allowedRequestor").GetAsFilterByCurrentUserWithOnGetResponseAsync();
 
 
 ```

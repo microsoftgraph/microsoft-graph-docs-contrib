@@ -16,23 +16,23 @@ request_body = ServicePrincipal(
 			allowed_member_types = [
 				"User",
 			],
+			description = "User",
 			display_name = "User",
 			id = UUID("8774f594-1d59-4279-b9d9-59ef09a23530"),
 			is_enabled = True,
-			description = "User",
-			value = None,
 			origin = "Application",
+			value = None,
 		),
 		AppRole(
 			allowed_member_types = [
 				"User",
 			],
+			description = "msiam_access",
 			display_name = "msiam_access",
 			id = UUID("e7f1a7f3-9eda-48e0-9963-bd67bf531afd"),
 			is_enabled = True,
-			description = "msiam_access",
-			value = None,
 			origin = "Application",
+			value = None,
 		),
 		AppRole(
 			allowed_member_types = [
