@@ -1,6 +1,6 @@
 ---
 title: "plannerFormReference resource type"
-description: "The **plannerFormReference** resource represents an item in the forms of a task. The forms on a task is represented by the plannerFormsDictionary object."
+description: "The **plannerFormReference** resource represents an item in the forms of a task. The forms on a task are represented by the plannerFormsDictionary object."
 ms.localizationpriority: medium
 author: "cpanga22"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerFormReference** resource represents an item in the forms of a task. The forms on a task is represented by the [forms object](plannerFormsDictionary.md).
+The **plannerFormReference** resource represents an item in the forms of a task. The forms on a task are represented by the [forms object](plannerFormsDictionary.md).
 
 ## Properties
 | Property       | Type    |Description|
@@ -23,7 +23,7 @@ The **plannerFormReference** resource represents an item in the forms of a task.
 |formResponse|String|Identifier of the response|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
