@@ -74,7 +74,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.cloudPcDomainJoinConfiguration",
   "domainJoinType": "String",
   "onPremisesConnectionId": "String",
-  "regionGroup": {"@odata.type": "#microsoft.graph.cloudPcRegionGroup"},
+  "regionGroup": "String",
   "regionName": "String"
 }
 ```
