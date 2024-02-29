@@ -1,5 +1,5 @@
 ---
-title: "Get analyzedEmail"
+title: "analyzedEmail"
 description: "Read the properties and relationships of a microsoft.graph.security.analyzedEmail object."
 author: "malvika-balaraj"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get analyzedEmail
+# analyzedEmail
 
 Namespace: microsoft.graph.security
 
