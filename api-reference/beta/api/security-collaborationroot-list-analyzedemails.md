@@ -40,11 +40,14 @@ GET /security/collaboration/analyzedEmails
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response: $count, $filter, $skip, $top. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`. For general information, see [OData query parameters](/graph/query-parameters).
 <!-- {
-  "blockType": "request"
+  "blockType": "ignored"
 }
 -->
+
+The following example shows how to use the `$filter` parameter to customize the response.
+
 ``` http
 GET /security/analyzedMessages?startTime=2023-06-27&endTime=2023-06-28&$filter=networkMessageId eq '35a870a1-dd73-4238-6ad3-08db76b14071’
 ```
@@ -58,8 +61,8 @@ GET /security/analyzedMessages?startTime=2023-06-27&endTime=2023-06-28&$filter=n
 ## Parameter /Properties
 |Parameter|Type|Description
 |:---|:---|:---|
-|startTime|DateTime|Start time of the email search |
-|endTime|DateTime|End time of the email search |
+|startTime|DateTime|The start time of the email search. |
+|endTime|DateTime|The end time of the email search. |
 
 
 ## Request body
