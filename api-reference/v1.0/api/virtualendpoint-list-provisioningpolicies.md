@@ -99,7 +99,6 @@ Content-Type: application/json
       ],
       "enableSingleSignOn": true,
       "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
-      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
       "imageDisplayName": "Image Display Name value",
       "imageId": "Image ID value",
       "imageType":"custom",
