@@ -16,16 +16,16 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewApplication()
+identifierUris := []string {
+	"https://signin.aws.amazon.com/saml",
+}
+requestBody.SetIdentifierUris(identifierUris)
 web := graphmodels.NewWebApplication()
 redirectUris := []string {
 	"https://signin.aws.amazon.com/saml",
 }
 web.SetRedirectUris(redirectUris)
 requestBody.SetWeb(web)
-identifierUris := []string {
-	"https://signin.aws.amazon.com/saml",
-}
-requestBody.SetIdentifierUris(identifierUris)
 
 applications, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
