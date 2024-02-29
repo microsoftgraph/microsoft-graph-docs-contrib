@@ -29,7 +29,7 @@ Contains content properties for a specific app version. Each mobileAppContent ca
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The app content version.|
+|id|String|The app content version. This property is read-only.|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [hardwareConfigurationAssignment](../resources/intune-deviceconfig-hardwareconfigurationassignment.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -63,17 +65,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 474
+Content-Length: 489
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.hardwareConfigurationAssignment",
     "id": "2ab8e97c-e97c-2ab8-7ce9-b82a7ce9b82a",
     "target": {
-      "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+      "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
       "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
       "deviceAndAppManagementAssignmentFilterType": "include",
-      "collectionId": "Collection Id value"
+      "targetType": "user",
+      "entraObjectId": "Entra Object Id value"
     }
   }
 }

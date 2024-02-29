@@ -29,7 +29,7 @@ iOS Volume Purchase Program license assignment. This class does not support Crea
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 |userEmailAddress|String|The user email address.|
 |userId|String|The user ID.|
 |userName|String|The user name.|

@@ -30,6 +30,7 @@ Devices that are managed or pre-enrolled through Intune
 |[rotateFileVaultKey action](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|None||
 |[getFileVaultKey function](../api/intune-devices-manageddevice-getfilevaultkey.md)|String||
 |[createDeviceLogCollectionRequest action](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)||
+|[retrieveDeviceLogCollectionRequests function](../api/intune-devices-manageddevice-retrievedevicelogcollectionrequests.md)|[deviceLogCollectionResponseV2](../resources/intune-devices-devicelogcollectionresponsev2.md)||
 |[retire action](../api/intune-devices-manageddevice-retire.md)|None|Retire a device|
 |[wipe action](../api/intune-devices-manageddevice-wipe.md)|None|Wipe a device|
 |[resetPasscode action](../api/intune-devices-manageddevice-resetpasscode.md)|None|Reset passcode|
@@ -63,7 +64,7 @@ Devices that are managed or pre-enrolled through Intune
 |[initiateOnDemandProactiveRemediation action](../api/intune-devices-manageddevice-initiateondemandproactiveremediation.md)|None|Perform On Demand Proactive Remediation|
 |[rotateLocalAdminPassword action](../api/intune-devices-manageddevice-rotatelocaladminpassword.md)|None|Initiates a manual rotation for the local admin password on the device|
 |[pauseConfigurationRefresh action](../api/intune-devices-manageddevice-pauseconfigurationrefresh.md)|None|Initiates a command to pause config refresh for the device.|
-|[syncPayloads action](../api/intune-devices-manageddevice-syncpayloads.md)|None||
+|[changeAssignments action](../api/intune-devices-manageddevice-changeassignments.md)|None||
 |[appDiagnostics function](../api/intune-devices-manageddevice-appdiagnostics.md)|[powerliftIncidentMetadata](../resources/intune-devices-powerliftincidentmetadata.md) collection||
 |[downloadAppDiagnostics action](../api/intune-devices-manageddevice-downloadappdiagnostics.md)|Stream||
 |[createQuery action](../api/intune-devices-manageddevice-createquery.md)|[deviceQueryResult](../resources/intune-devices-devicequeryresult.md)|Allows user to send Intune Pivot device query to a managed device|
@@ -86,7 +87,7 @@ Devices that are managed or pre-enrolled through Intune
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. Examples: Desktop, WindowsRT, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. Examples: Compliant, Conflict, Error, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|Whether the device is jail broken or rooted. Default is an empty string. Supports $filter operator 'eq' and 'or'. This property is read-only.|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Management channel of the device. Examples: Intune, EAS, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`, `google`, `unknownFutureValue`.|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Examples: Intune, EAS, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`, `google`, `unknownFutureValue`.|
 |osVersion|String|Operating system version of the device. This property is read-only.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. This property is read-only.|
 |easDeviceId|String|Exchange ActiveSync Id of the device. This property is read-only.|
@@ -142,7 +143,7 @@ Devices that are managed or pre-enrolled through Intune
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager client information, valid only for devices managed, duel-managed or tri-managed by ConfigMgr Agent|
 |ethernetMacAddress|String|Indicates Ethernet MAC Address of the device. Default, is Null (Non-Default property) for this property when returned as part of managedDevice entity. Individual get call with select query options is needed to retrieve actual values. Example: deviceManagement/managedDevices({managedDeviceId})?$select=ethernetMacAddress Supports: $select. $Search is not supported. Read-only. This property is read-only.|
 |physicalMemoryInBytes|Int64|Total Memory in Bytes. Default is 0. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. Read-only. This property is read-only.|
-|processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Processor architecture. This property is read-only. Possible values are: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
+|processorArchitecture|[managedDeviceArchitecture](../resources/intune-shared-manageddevicearchitecture.md)|Processor architecture. This property is read-only. Possible values are: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
 |specificationVersion|String|Specification version. This property is read-only.|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Device join type. Possible values are: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Device sku family|
@@ -150,6 +151,7 @@ Devices that are managed or pre-enrolled through Intune
 |skuNumber|Int32|Device sku number, see also: https://learn.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features. Possible values are: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) collection|List of properties of the ChromeOS Device. Default is an empty list. To retrieve actual values GET call needs to be made, with device id and included in select parameter.|
+|supplementalDeviceDetails|[supplementalDeviceDetail](../resources/intune-devices-supplementaldevicedetail.md) collection|List of properties provided by the device to describe its own state. Each property includes a title, value, and value type. These properties will be specific to platform and are dynamically populated by the device. Default is an empty list. To retrieve actual values GET call needs to be made, with device id and included as a $SELECT parameter. Read only.|
 |enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.|
 |bootstrapTokenEscrowed|Boolean|Reports if the managed device has an escrowed Bootstrap Token. This is only for macOS devices. To get, include BootstrapTokenEscrowed in the select clause and query with a device id. If FALSE, no bootstrap token is escrowed. If TRUE, the device has escrowed a bootstrap token with Intune. This property is read-only.|
 |deviceFirmwareConfigurationInterfaceManaged|Boolean|Indicates whether the device is DFCI managed. When TRUE the device is DFCI managed. When FALSE, the device is not DFCI managed. The default value is FALSE.|
@@ -390,6 +392,14 @@ Here is a JSON representation of the resource.
       "value": "String",
       "valueType": "String",
       "updatable": true
+    }
+  ],
+  "supplementalDeviceDetails": [
+    {
+      "@odata.type": "microsoft.graph.supplementalDeviceDetail",
+      "propertyName": "String",
+      "propertyValue": "String",
+      "propertyType": "String"
     }
   ],
   "enrollmentProfileName": "String",

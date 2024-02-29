@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -50,7 +52,7 @@ The following table shows the properties that are required when you create the w
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|id|String|Key of the entity. This property is read-only. Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
 |appUserModelId|String|The app user model ID of the contained app of a WindowsUniversalAppX app.|
 
 

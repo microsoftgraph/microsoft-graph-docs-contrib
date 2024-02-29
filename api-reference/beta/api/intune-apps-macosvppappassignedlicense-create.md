@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -48,7 +50,7 @@ The following table shows the properties that are required when you create the m
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 |userEmailAddress|String|The user email address.|
 |userId|String|The user ID.|
 |userName|String|The user name.|

@@ -35,4 +35,5 @@ Describes the TemplateFamily for the Template entity
 |unknownFutureValue|21|Evolvable enumeration sentinel value. Do not use.|
 |deviceConfigurationScripts|22|Template Family for device configuration scripts|
 |deviceConfigurationPolicies|23|Template Family for device configuration policies|
+|windowsOsRecoveryPolicies|24|Template Family for windowsOsRecovery that can be applied during a Windows operating system recovery|
 |companyPortal|25|Template Family for Company Portal settings|

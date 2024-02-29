@@ -33,6 +33,7 @@ Notification messages are messages that are sent to end users who are determined
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
 |displayName|String|Display name for the Notification Message Template.|
+|description|String|Display name for the Notification Message Template.|
 |defaultLocale|String|The default locale to fallback onto when the requested locale is not available.|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`, `includeCompanyPortalLink`, `includeDeviceDetails`, `unknownFutureValue`.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
@@ -56,6 +57,7 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "displayName": "String",
+  "description": "String",
   "defaultLocale": "String",
   "brandingOptions": "String",
   "roleScopeTagIds": [
