@@ -39,11 +39,19 @@ Represents a Cloud PC provisioning policy.
 |id|String|The unique identifier associated with the provisioning policy. This ID is auto populated during the creation of a new provisioning policy. Read-only. Supports `$filter`, `$select`, and `$orderBy`. |
 |imageDisplayName|String|The display name of the operating system image that is used for provisioning. For example, `Windows 11 Preview + Microsoft 365 Apps 23H2 23H2`. Supports `$filter`, `$select`, and `$orderBy`. |
 |imageId|String|The unique identifier that represents an operating system image that is used for provisioning new Cloud PCs. The format for a gallery type image is: {publisherName_offerName_skuName}. Supported values for each of the parameters are:<ul><li>publisher: `Microsoftwindowsdesktop`</li> <li>offer: `windows-ent-cpc`</li> <li>sku: `21h1-ent-cpc-m365`, `21h1-ent-cpc-os`, `20h2-ent-cpc-m365`, `20h2-ent-cpc-os`, `20h1-ent-cpc-m365`, `20h1-ent-cpc-os`, `19h2-ent-cpc-m365`, and `19h2-ent-cpc-os`</li></ul> Supports `$filter`, `$select`, and `$orderBy`.|
-|imageType|[cloudPcProvisioningPolicyImageType](../resources/cloudpcprovisioningpolicy.md#cloudPcProvisioningPolicyImageType-values)|The type of operating system image (custom or gallery) that is used for provisioning on Cloud PCs. Possible values are: `gallery`, `custom`. The default value is `gallery`. Supports $filter, $select, and $orderBy.|
+|imageType|[cloudPcProvisioningPolicyImageType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningpolicyimagetype-values)|The type of operating system image (custom or gallery) that is used for provisioning on Cloud PCs. Possible values are: `gallery`, `custom`. The default value is `gallery`. Supports $filter, $select, and $orderBy.|
 |localAdminEnabled|Boolean|When `true`, the local admin is enabled for Cloud PCs; `false` indicates that the local admin isn't enabled for Cloud PCs. The default value is `false`. Supports `$filter`, `$select`, and `$orderBy`.|
 |microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftmanageddesktop.md)|The specific settings to **microsoftManagedDesktop** that enables Microsoft Managed Desktop customers to get device managed experience for Cloud PC. To enable **microsoftManagedDesktop** to provide more value, an admin needs to specify certain settings in it. Supports `$filter`, `$select`, and `$orderBy`.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs using this policy. By default, the license type is `dedicated` if the **provisioningType** isn't specified when you create the **cloudPcProvisioningPolicy**. You can't change this property after the **cloudPcProvisioningPolicy** was created. Possible values are: `dedicated`, `shared`, `unknownFutureValue`.|
 |windowsSetting|[cloudPcWindowsSetting](../resources/cloudpcwindowssetting.md)|Indicates a specific Windows setting to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. |
+
+### cloudPcProvisioningPolicyImageType values
+
+| Member             | Description                                                                                                                                                                           |
+|:-------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| custom             | Indicates that the provisioning policy for the Cloud PC operating system image is set to _Custom Image_. Custom images need to be created, configured, and uploaded by the IT admins. |
+| gallery            | Indicates that the provisioning policy for the Cloud PC operating system image is set to _Gallery Image_. Gallery images are optimized Windows images provided by Microsoft.          |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                                                                                                      |
 
 ### cloudPcProvisioningType values
 
@@ -52,14 +60,6 @@ Represents a Cloud PC provisioning policy.
 | dedicated           | Indicates that a dedicated license is used for provisioning Cloud PCs. Default value. |
 | shared              | Indicates that a shared license is used for provisioning Cloud PCs.                   |
 | unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.                                      |
-
-### cloudPcProvisioningPolicyImageType values
-
-| Member             | Description                                                                           |                                                                                 | Value |
-|:-------------------|:--------------------------------------------------------------------------------------|
-| custom             | Indicates the provisioning policy for Cloud PC operating system image is set to Custom Image. Custom images needs to be created/configured and uploaded by the IT Admins. | 0     |
-| gallery            | Indicates the provisioning policy for Cloud PC operating system image is set to Gallery Image. Gallery images are optimized Windows images provided by Microsoft.         | 1     |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                                                                                                         | 2     |
 
 ## Relationships
 
