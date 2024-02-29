@@ -43,7 +43,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
   "endDateTime": "String (timestamp)",
-  "healthChecks": "healthChecks": [{ "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck" }],
+  "healthChecks": [{ "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck" }],
   "startDateTime": "String (timestamp)"
 }
 ```
