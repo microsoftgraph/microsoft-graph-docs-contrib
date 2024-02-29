@@ -15,7 +15,6 @@ Namespace: microsoft.graph.windowsUpdates
 
 This Entity Type represents a known issue related to a Windows product
 
-A known issue 
 
 ## Properties
         
@@ -37,10 +36,9 @@ Supported query parameters: filter(eq) status, filter(ge, le) startDateTime, fil
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|originatingKnowledgeBaseArticle | [microsoft.graph.windowsUpdates.knowledgeBaseArticlecollection](../resources/windowsupdates-knowledgeBaseArticlecollection.md) collection |Knowledge base article associated with the release when the known issue was first reported. |
-|resolvingKnowledgeBaseArticle| [microsoft.graph.windowsUpdates.knowledgeBaseArticlecollection](../resources/windowsupdates-knowledgeBaseArticlecollection.md) collection|Knowledge base article associated with the release when the known issue was resolved or mitigated. |
+|originatingKnowledgeBaseArticle | [microsoft.graph.windowsUpdates.knowledgebasearticle](../resources/windowsupdates-knowledgebasearticle.md) collection |Knowledge base article associated with the release when the known issue was first reported. |
+|resolvingKnowledgeBaseArticle| [microsoft.graph.windowsUpdates.knowledgebasearticle](../resources/windowsupdates-knowledgebasearticle.md) collection|Knowledge base article associated with the release when the known issue was resolved or mitigated. |
 |safeguardHoldIds|Edm.Int32 collection|List of safeguard hold idsassociated with the known issue.|
-|knownIssueHistories| [microsoft.graph.windowsUpdates.knownIssueHistories](../resources/windowsupdates-knownIssueHistories.md) collection|The history of the known Issue. |
 
 
 ## JSON representation
