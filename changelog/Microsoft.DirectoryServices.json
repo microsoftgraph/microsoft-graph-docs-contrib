@@ -9088,7 +9088,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "federatedTokenValidationPolicy",
             "ChangeType": "Addition",
-            "Description": "Added the [alldomains](https://learn.microsoft.com/en-us/graph/api/resources/allDomains?view=graph-rest-beta) resource type and associated properties.",
+            "Description": "Added the [alldomains](https://learn.microsoft.com/en-us/graph/api/resources/allDomains?view=graph-rest-beta) resource type.",
             "Target": "federatedTokenValidationPolicy"
           },
           {
@@ -9096,7 +9096,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "federatedTokenValidationPolicy",
             "ChangeType": "Addition",
-            "Description": "Added the [enumerateddomains](https://learn.microsoft.com/en-us/graph/api/resources/enumerateddomains?view=graph-rest-beta) resource type and associated properties.",
+            "Description": "Added the [enumerateddomains](https://learn.microsoft.com/en-us/graph/api/resources/enumerateddomains?view=graph-rest-beta) resource type.",
             "Target": "federatedTokenValidationPolicy"
           },
           {

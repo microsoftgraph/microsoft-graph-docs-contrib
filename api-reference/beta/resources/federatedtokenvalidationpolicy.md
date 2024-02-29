@@ -30,7 +30,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |:---|:---|:---|
 |deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object wasn't deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
 |ID|String|The unique identifier for the object. Key. Not nullable. Read-only. Inherited from [directoryObject](../resources/directoryobject.md).|
-|validatingDomains|[validatingDomains](../resources/validatingdomains.md)|Verified Microsoft Entra ID domains for which Microsoft Entra validates that federated account's root domain matches with mapped Microsoft Entra account's root domain.|
+|validatingDomains|[validatingDomains](../resources/validatingdomains.md)|Verified Microsoft Entra ID domains that Microsoft Entra ID validates that the federated account's root domain matches with the mapped Microsoft Entra account's root domain.|
 
 ## Relationships
 None.

@@ -13429,9 +13429,9 @@ items:
                         href: api/internaldomainfederation-update.md
                       - name: Delete
                         href: api/internaldomainfederation-delete.md
-                  - name: Federated Token Validation (preview)
+                  - name: Federated token validation (preview)
                     items:
-                    - name: Federated Token Validation Policy
+                    - name: Federated token validation policy
                       href: resources/federatedtokenvalidationpolicy.md
                     - name: List
                       href: api/policyroot-list-federatedtokenvalidationpolicy.md

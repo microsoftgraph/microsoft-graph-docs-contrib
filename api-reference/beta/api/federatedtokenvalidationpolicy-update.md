@@ -45,7 +45,7 @@ PUT /policies/federatedTokenValidationPolicy
 
 |Property|Type|Description|
 |:---|:---|:---|
-|validatingDomains|[validatingDomains](../resources/validatingdomains.md)|Verified Microsoft Entra ID domains for which Microsoft Entra validates that federated account's root domain matches with the mapped Microsoft Entra account's root domain. Required.|
+|validatingDomains|[validatingDomains](../resources/validatingdomains.md)|Verified domains that Microsoft Entra validates whether the federated account's root domain matches with the mapped Microsoft Entra account's root domain. Required.|
 
 
 

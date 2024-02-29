@@ -1,5 +1,5 @@
 ---
-title: "List federatedTokenValidationPolicies"
+title: "List federatedTokenValidationPolicy"
 description: "Get a list of the federatedTokenValidationPolicy objects and their properties."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List federatedTokenValidationPolicies
+# List federatedTokenValidationPolicy
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
