@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Graph Windows Setting APIs to retrive Windows OS settings stored in cloud"
+title: "Microsoft Graph Windows Setting APIs to retrieve Windows OS settings stored in cloud"
 description: "The Windows Setting APIs enable users and authorized third parties to access users’ Windows operating system settings data that is stored in Microsoft cloud. The APIs facilitate sharing and exporting of the data in a secure and compliant manner, ensuring that data is only shared with explicit user consent. The APIs demonstrate Microsoft’s dedication to user privacy and adherence to the EU Digital Markets Act, offering a clear and user-focused way of data portability."
 ms.localizationpriority: medium
 doc_type: conceptualPageType
@@ -7,11 +7,11 @@ author: "MS-Arko"
 ms.prod: "cross-device-experiences"
 ---
 
-# Microsoft Graph Windows Setting APIs to retrive Windows OS settings stored in cloud
+# Microsoft Graph Windows Setting APIs to retrieve Windows OS settings stored in cloud
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Windows Setting APIs enable users and authorized third parties to access users’ Windows operating system settings data that is stored in Microsoft cloud. The APIs facilitate sharing and exporting of the data in a secure and compliant manner, ensuring that data is only shared with explicit user consent. The APIs demonstrate Microsoft’s dedication to user privacy and adherence to the EU Digital Markets Act, offering a clear and user-focused way of Windows settings data portability.
+The Windows Setting APIs enable users and authorized third parties to access users’ Windows operating system settings data that is stored in Microsoft cloud. The APIs facilitate sharing and exporting of the data in a secure and compliant manner by ensuring that data is only shared with explicit user consent. The APIs demonstrate Microsoft’s dedication to user privacy and adherence to the EU Digital Markets Act by offering a clear and user-focused way of Windows settings data portability.
 
 ## Windows Settings
 
@@ -21,14 +21,14 @@ There are two types of [windowsSetting](../resources/windowssetting.md): `roamin
 
 | settingType        | Description                        |
 | :----------------- | :--------------------------------- |
-| roaming            | Windows setting is associated with a user's account. It is consistent across all devices and any changes to the setting value are synced or applied to all Windows devices that the user owns.|
-| backup             | Windows setting does not roam or sync accross devices. This type of setting is used in device backup and restore scenarios.|
+| roaming            | Windows setting is associated with a user's account. It's consistent across all devices and any changes to the setting value are synced or applied to all Windows devices that the user owns.|
+| backup             | Windows setting doesn't roam or sync across devices. This type of setting is used in device backup and restore scenarios.|
 
  A [windowsSetting](../resources/windowssetting.md) of type `backup` may have a *windowsDeviceId* property that links the setting to a specific device.
 
- The [List Windows settings stored in cloud](../api/usersettings-list-windows.md) API returns a collection of [windowsSetting](../resources/windowssetting.md) objects and their properties. The result can be filtered by *windowsDeviceId* and *settingType* properties.
+ The [List Windows settings stored in cloud](../api/usersettings-list-windows.md) API returns a collection of [windowsSetting](../resources/windowssetting.md) objects and their properties. You can filter the results by *windowsDeviceId* and *settingType* properties.
 
-The [Get Windows setting stored in cloud](../api/windowssetting-get.md) API allows to pass the ID of a [windowsSetting](../resources/windowssetting.md) in the URL to read a specific Windows setting object.
+The [Get Windows setting stored in cloud](../api/windowssetting-get.md) API allows you to pass the ID of a [windowsSetting](../resources/windowssetting.md) in the URL to read a specific Windows setting object.
 
 The following JSON representation shows an example Windows setting. The instances collection in it represents **Windows setting instances**, elaborated in the next section.
 
@@ -88,13 +88,13 @@ The following JSON representation shows an example windows setting instance.
 
 The [List Windows setting instances stored in cloud](../api/windowssetting-list-instances.md) API returns a collection of [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties. The API requires the ID of a [windowsSetting](../resources/windowssetting.md) in the URL to read the setting instances.
 
-The [Get Windows setting instance stored in cloud](../api/windowssettinginstance-get.md) API allows to pass the ID of a [windowsSetting](../resources/windowssetting.md) and [windowsSettingInstance](../resources/windowssettinginstance.md) in the URL to read a specific windows setting instance object.
+The [Get Windows setting instance stored in cloud](../api/windowssettinginstance-get.md) API allows you to pass the ID of a [windowsSetting](../resources/windowssetting.md) and [windowsSettingInstance](../resources/windowssettinginstance.md) in the URL to read a specific windows setting instance object.
 
-The *payload* property of a [**windowsSettingInstance**](../resources/windowssettinginstance.md) contains the actual setting value. The *payload* is a string in Base64 encoded format. The *payloadType* property of the [**windowsSetting**](../resources/windowssetting.md) object indicates the type of the setting value. The *payload* when decoded is a JSON object which differs from setting to setting and is specific to the *payloadType*.
+The *payload* property of a [**windowsSettingInstance**](../resources/windowssettinginstance.md) contains the actual setting value. The *payload* is a string in Base64 encoded format. The *payloadType* property of the [**windowsSetting**](../resources/windowssetting.md) object indicates the type of the setting value. The *payload* when decoded is a JSON object, which differs from setting to setting and is specific to the *payloadType*.
 
 ## About the *payloadType* property
 ### Introduction
-The *payloadType* defines the structure of a [windowsSettingInstance](./windowssettinginstance.md) payload. There are numerous payloadTypes in Windows which represent distinct setting structures used by different experiences in the operating system. As Windows evolves, more payloadTypes are created and onboarded to the cloud. Querying the API and exploring the settings available is the best way to learn about the various payloadTypes, but users and admins have control over which settings are uploaded to the cloud and most components do not upload default settings that the user has not customized.
+The *payloadType* defines the structure of a [windowsSettingInstance](./windowssettinginstance.md) payload. There are numerous payloadTypes in Windows, which represent distinct setting structures used by different experiences in the operating system. As Windows evolves, more payloadTypes are created and onboarded to the cloud. Querying the API and exploring the settings available is the best way to learn about the various payloadTypes. The users and admins have control over which settings are uploaded to the cloud and most components don't upload default settings that the user hasn't customized.
 
 Following is an example of a settingsInstance from the API.
 
@@ -138,7 +138,7 @@ In this example, the payloadType `windows.data.fileexplorerclassic.advancedsetti
 }
 ```
 
-It is common for the properties in the object to be a subset of those available in the component’s user experience as component owners decide which settings provide the most value when uploaded to the cloud.
+It is common for the properties in the object to be a subset of those that are available in the component’s user experience as component owners decide which settings provide the most value when uploaded to the cloud.
 
 ### PayloadTypes of particular interest
 
@@ -147,7 +147,7 @@ Some payloadTypes have a special role in the Windows settings backup process.
 #### windows.data.platform.backuprestore.deviceprofile 
 Rather than being a setting the user has applied, this type records information about devices that have opted into settings backup features. Two properties in this object are useful for understanding the rest of the settings: *deviceDisplayName* and *profileId*. 
 
-- *deviceDisplayName* is the name of the computer which can be seen in Windows system settings at "**Start** > **Settings** > **System**".
+- *deviceDisplayName* is the name of the computer, which can be seen in Windows system settings at "**Start** > **Settings** > **System**".
 - *profileId* is an identifier used to link [**windowsSetting**](../resources/windowssetting.md) items to the device that uploaded them. This property corresponds to **windowsSetting.windowsDeviceId** and can be used as a filter to get settings for a specific device from [List Windows settings stored in cloud](../api/usersettings-list-windows.md) API.
 
 The following example shows this resource type.
@@ -186,4 +186,4 @@ The following example shows this resource type.
 
 #### windows.data.platform.settingsbackup.backupunitstore
 
-The **backupUnitStore** payloadType settings are unique in that the actual settings value is a **blob** in the data property. This is because **backupUnitStore** settings are collected directly from the Windows registry, on disk files, or other at rest locations throughout Windows. These settings were not designed to be interoperable with experiences besides the components that created them, but they have been included in this API for comprehensive coverage of all Windows settings stored in the cloud.
+The **backupUnitStore** payloadType settings are unique in that the actual settings value is a **blob** in the data property. This is because **backupUnitStore** settings are collected directly from the Windows registry, on disk files, or other at rest locations throughout Windows. These settings weren't designed to be interoperable with experiences besides the components that created them. However, they have been included in this API for comprehensive coverage of all Windows settings that are stored in the cloud.

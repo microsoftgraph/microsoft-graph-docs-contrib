@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |expirationDateTime|DateTimeOffset|Set by the server. The object expires at the DateTime in UTC, after which it becomes unavailable.|
 |id|String|The unique identifier of the object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Set by the server if not provided in Windows client device's request. The user’s Windows device modified the object at the DateTime in UTC.|
-|payload|String|Base 64 encoded JSON setting value.|
+|payload|String|Base64 encoded JSON setting value.|
 
 ## Relationships
 None.
