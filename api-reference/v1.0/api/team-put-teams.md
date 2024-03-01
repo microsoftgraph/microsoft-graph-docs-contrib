@@ -45,7 +45,7 @@ PUT /groups/{id}/team
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -174,7 +174,7 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 - [Creating a group with a team](/graph/teams-create-group-and-team)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

@@ -3,6 +3,7 @@ title: "user: changePassword"
 description: "Update your own password."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -32,13 +33,13 @@ POST /me/changePassword
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.  |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 | currentPassword | String | Your current password.|
 | newPassword | String | Your new password.|
@@ -111,8 +112,8 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## See also
-+ [Update the passwordProfile of a user to reset their password](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user-to-reset-their-password)
+## Related content
++ [Update the passwordProfile of a user to reset their password](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user-and-reset-their-password)
 
 <!-- uuid: a7c9a0de-8324-4f80-8d88-2e6d5838f3be
 2021-06-24 14:57:30 UTC -->

@@ -12,6 +12,7 @@ $params = @{
 			entityTypes = @(
 				"listItem"
 			)
+			region = "US"
 			query = @{
 				queryString = "contoso"
 				queryTemplate = '{searchTerms} CreatedBy:Bob"

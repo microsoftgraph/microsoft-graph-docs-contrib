@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.time_off_reason import TimeOffReason
 
 graph_client = GraphServiceClient(credentials, scopes)
 

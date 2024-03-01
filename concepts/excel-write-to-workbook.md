@@ -34,7 +34,7 @@ The POST body looks like this:
 {
   "index": null,
   "values": [
-    ["alex darrow", "adarrow@tenant.onmicrosoft.com"]
+    ["alex darrow", "adarrow@contoso.com"]
   ]
 }
 ```
@@ -164,7 +164,7 @@ onWriteToExcel() {
 }
 ```
 
-## See also
+## Related content
 
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)

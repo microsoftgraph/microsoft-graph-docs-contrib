@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.security.threatIntelligence.whoisRecords.whois_records_request_builder import WhoisRecordsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

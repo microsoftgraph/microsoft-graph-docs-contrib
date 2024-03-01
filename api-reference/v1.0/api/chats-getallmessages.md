@@ -33,26 +33,37 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## Optional query parameters
 
-You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
+You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
 as shown in the following examples.
-If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
 ```
-If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
-This operation also supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
+If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used.
+
+This method also supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
 ``` http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
 
+This method supports the `$filter` query parameter. The following table lists examples.
+
+|Scenario                                  | `$filter` parameter                                                                       |Possible values                                                                                             |
+|:-----------------------------------------|:---------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+|Get messages sent by user identity type   |$filter=from/user/userIdentityType eq '{teamworkUserIdentityType}'                      |aadUser, onPremiseAadUser, anonymousGuest, federatedUser, personalMicrosoftAccountUser, skypeUser, phoneUser|
+|Get messages sent by application type     |$filter=from/application/applicationIdentityType eq '{teamworkApplicationIdentity}'     |aadApplication, bot, tenantBot, office365Connector, outgoingWebhook                                         |
+|Get messages sent by user ID              |$filter=from/user/id eq '{oid}'                                                         ||
+|Get control(system event) messages        |$filter=messageType eq 'systemEventMessage'                                             ||
+|Exclude control (system event) messages   |$filter=messageType ne 'systemEventMessage'                                             ||
+>**Note:** These filter clauses can be joined by using the `or` operator.  A filter clause can appear more than once in a query, and it can filter on a different value each time it appears within the query..
+
 ## Request headers
 | Header        | Value                     |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -202,6 +213,6 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

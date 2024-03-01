@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("User-Agent", "Dsreg/10.0"));
-requestOptions.add(new HeaderOption("ocp-client-name", "My Friendly Client"));
-requestOptions.add(new HeaderOption("ocp-client-version", "1.2"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-BitlockerRecoveryKey bitlockerRecoveryKey = graphClient.informationProtection().bitlocker().recoveryKeys("b465e4e8-e4e8-b465-e8e4-65b4e8e465b4")
-	.buildRequest( requestOptions )
-	.select("key")
-	.get();
+BitlockerRecoveryKey result = graphClient.informationProtection().bitlocker().recoveryKeys().byBitlockerRecoveryKeyId("{bitlockerRecoveryKey-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"key"};
+	requestConfiguration.headers.add("User-Agent", "Dsreg/10.0");
+	requestConfiguration.headers.add("ocp-client-name", "My Friendly Client");
+	requestConfiguration.headers.add("ocp-client-version", "1.2");
+});
+
 
 ```

@@ -203,7 +203,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/work
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-leaverondemand-run-workflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -507,7 +507,7 @@ Content-Type: application/json
 }
 ```
 
-## Next steps
+## Related content
 
 - [Execute employee offboarding tasks in real-time on their last day of work with the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-offboard-custom-workflow-portal)
 - [Overview of Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)

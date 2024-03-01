@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Application application = new Application();
+LinkedList<String> identifierUris = new LinkedList<String>();
+identifierUris.add("https://signin.aws.amazon.com/saml");
+application.setIdentifierUris(identifierUris);
 WebApplication web = new WebApplication();
-LinkedList<String> redirectUrisList = new LinkedList<String>();
-redirectUrisList.add("https://signin.aws.amazon.com/saml");
-web.redirectUris = redirectUrisList;
-application.web = web;
-LinkedList<String> identifierUrisList = new LinkedList<String>();
-identifierUrisList.add("https://signin.aws.amazon.com/saml");
-application.identifierUris = identifierUrisList;
+LinkedList<String> redirectUris = new LinkedList<String>();
+redirectUris.add("https://signin.aws.amazon.com/saml");
+web.setRedirectUris(redirectUris);
+application.setWeb(web);
+Application result = graphClient.applications().byApplicationId("{application-id}").patch(application);
 
-graphClient.applications("a9be408a-6c31-4141-8cea-52fcd4a61be8")
-	.buildRequest()
-	.patch(application);
 
 ```

@@ -40,7 +40,7 @@ This method uses OData query parameters to construct the response. For general i
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

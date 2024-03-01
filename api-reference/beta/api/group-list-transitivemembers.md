@@ -2,7 +2,8 @@
 title: "List group transitive members"
 description: "Get a list of the group's members."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -50,7 +51,7 @@ Some queries are supported only when you use the **ConsistencyLevel** header set
 
 | Name             | Description                                                                                                                                                                                                       |
 | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization    | Bearer {token}. Required.                                                                                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters. It uses an index that might not be up-to-date with recent changes to the object. |
 
 ## Request body

@@ -38,7 +38,7 @@ POST /deviceManagement/virtualEndpoint/reports/getActionStatusReports
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -208,8 +208,8 @@ Content-Type: application/octet-stream
       "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
       "Resize to 64GB RAM - John",
       "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
-      "john@cpccustomer001.onmicrosoft.com",
-      "connie@cpccustomer001.onmicrosoft.com",
+      "john@contoso.com",
+      "connie@contoso.com",
       "Resize",
       "failed",
       "2020-07-23T10:10:57Z",

@@ -23,7 +23,7 @@ The following RBAC providers are currently supported:
 - entitlement management (Microsoft Entra ID)
 - Exchange Online
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -110,7 +110,7 @@ This method supports the `$filter` query parameter to help customize the respons
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

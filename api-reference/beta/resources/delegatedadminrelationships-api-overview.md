@@ -113,7 +113,7 @@ To manage delegated admin relationships, the calling principal must be in the pa
 
 <!-- End of: Link to ZT guidance -->
 
-## See also
+## Related content
 
 + [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
 
@@ -124,9 +124,5 @@ To manage delegated admin relationships, the calling principal must be in the pa
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Error: /resources/delegatedadminrelationships-api-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
+  "suppressions": []
 } -->

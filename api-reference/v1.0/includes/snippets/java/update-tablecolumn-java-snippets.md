@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkbookTableColumn workbookTableColumn = new WorkbookTableColumn();
-workbookTableColumn.name = "name-value";
-workbookTableColumn.index = 99;
-workbookTableColumn.values = JsonParser.parseString("\"values-value\"");
+workbookTableColumn.setName("name-value");
+workbookTableColumn.setIndex(99);
+workbookTableColumn.setValues("values-value");
+WorkbookTableColumn result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().tables().byWorkbookTableId("{workbookTable-id}").columns().byWorkbookTableColumnId("{workbookTableColumn-id}").patch(workbookTableColumn);
 
-graphClient.me().drive().items("{id}").workbook().tables("{id|name}").columns("{id|name}")
-	.buildRequest()
-	.patch(workbookTableColumn);
 
 ```

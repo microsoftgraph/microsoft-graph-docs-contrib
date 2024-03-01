@@ -1,7 +1,7 @@
 ---
 title: "Create conversation"
 description: "Create a new conversation by including a thread and a post. "
-author: "Jordanndahl"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -38,7 +38,7 @@ POST /groups/{id}/conversations
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json          |
 
 ## Request body
@@ -84,7 +84,7 @@ Content-type: application/json
                         {
                             "emailAddress": {
                                 "name": "Adele Vance",
-                                "address": "AdeleV@contoso.onmicrosoft.com"
+                                "address": "AdeleV@contoso.com"
                             }
                         }
                     ]

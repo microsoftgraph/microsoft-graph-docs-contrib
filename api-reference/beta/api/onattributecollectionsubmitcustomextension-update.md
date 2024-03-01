@@ -40,7 +40,7 @@ PUT /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttrib
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -63,17 +63,13 @@ The following example shows a request.
 }
 -->
 ``` http
-PUT https://microsoft.graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension/$ref
+PUT https://graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension/$ref
 Content-Type: application/json
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/{customExtensionId}"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-onattributecollectionsubmitcustomextension-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-onattributecollectionsubmitcustomextension-javascript-snippets.md)]

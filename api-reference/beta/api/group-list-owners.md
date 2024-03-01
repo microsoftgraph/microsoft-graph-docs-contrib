@@ -2,7 +2,8 @@
 title: "List group owners"
 description: "Retrieve a list of the group's owners."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

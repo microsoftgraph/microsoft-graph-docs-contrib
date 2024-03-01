@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ServicePrincipalCollectionPage servicePrincipals = graphClient.servicePrincipals()
-	.buildRequest()
-	.filter("displayName eq 'Microsoft Graph'")
-	.select("id,displayName,appId,appRoles")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ServicePrincipalCollectionResponse result = graphClient.servicePrincipals().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "displayName eq 'Microsoft Graph'";
+	requestConfiguration.queryParameters.select = new String []{"id", "displayName", "appId", "appRoles"};
+});
+
 
 ```

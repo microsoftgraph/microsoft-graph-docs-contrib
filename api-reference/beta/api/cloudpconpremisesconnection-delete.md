@@ -1,6 +1,6 @@
 ---
 title: "Delete cloudPcOnPremisesConnection"
-description: "Delete a cloudPcOnPremisesConnection object."
+description: "Delete a specific cloudPcOnPremisesConnection object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -19,7 +19,7 @@ Delete a specific [cloudPcOnPremisesConnection](../resources/cloudpconpremisesco
 
 When you delete an Azure network connection, permissions to the service are removed from the specified Azure resources.
 
-You cannot delete an Azure network connection when it's in use, as indicated by the **inUse** property.
+You can't delete an Azure network connection when it's in use, as indicated by the **inUse** property.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
