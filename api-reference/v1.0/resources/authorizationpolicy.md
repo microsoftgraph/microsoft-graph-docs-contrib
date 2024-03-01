@@ -41,7 +41,7 @@ Represents a policy that can control Microsoft Entra authorization settings. It'
 |Member|Description|
 |:---|:---|
 |none|Prevent everyone, including admins, from inviting external users. Default setting for US Government.|
-|adminsAndGuestInviters|Allow members of Global Administrators, User Administrators, and Guest Inviter roles to invite external users.|
+|adminsAndGuestInviters|Allow members of Global Administrator, User Administrator, and Guest Inviter roles to invite external users.|
 |adminsGuestInvitersAndAllMembers|Allow the above admin roles and all other User role members to invite external users.|
 |everyone|Allow everyone in the organization, including guest users, to invite external users. The default setting for all cloud environments except US Government.|
 
@@ -52,7 +52,7 @@ None.
 ## JSON representation
 
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
