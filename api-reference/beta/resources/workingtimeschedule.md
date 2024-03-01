@@ -20,8 +20,8 @@ Represents user's working time schedule entity.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get workingTimeSchedule](../api/workingtimeschedule-get.md)|[workingTimeSchedule](../resources/workingtimeschedule.md)|Read the properties and relationships of a [workingTimeSchedule](../resources/workingtimeschedule.md) object.|
-|[startWorkingTime](../api/workingtimeschedule-startworkingtime.md)|None|Trigger the policies associated with the start of working hours.|
-|[endWorkingTime](../api/workingtimeschedule-endworkingtime.md)|None|Trigger the policies associated with the end of working hours.|
+|[startWorkingTime](../api/workingtimeschedule-startworkingtime.md)|None|Trigger the policies associated with the start of working hours for a specific user.|
+|[endWorkingTime](../api/workingtimeschedule-endworkingtime.md)|None|Trigger the policies associated with the end of working hours for a specific user.|
 
 ## Properties
 
