@@ -17,13 +17,13 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewThreatAssessmentRequest()
 recipientEmail := "tifc@contoso.com"
-requestBody.SetRecipientEmail(&recipientEmail)
-expectedAssessment := graphmodels.BLOCK_THREATEXPECTEDASSESSMENT
-requestBody.SetExpectedAssessment(&expectedAssessment)
-category := graphmodels.SPAM_THREATCATEGORY
-requestBody.SetCategory(&category)
+requestBody.SetRecipientEmail(&recipientEmail) 
+expectedAssessment := graphmodels.BLOCK_THREATEXPECTEDASSESSMENT 
+requestBody.SetExpectedAssessment(&expectedAssessment) 
+category := graphmodels.SPAM_THREATCATEGORY 
+requestBody.SetCategory(&category) 
 messageUri := "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
-requestBody.SetMessageUri(&messageUri)
+requestBody.SetMessageUri(&messageUri) 
 
 threatAssessmentRequests, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
 

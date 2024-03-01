@@ -23,16 +23,16 @@ message := graphmodels.NewMessage()
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 address := "samanthab@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 name := "Samantha Booth"
-emailAddress.SetName(&name)
+emailAddress.SetName(&name) 
 recipient.SetEmailAddress(emailAddress)
 recipient1 := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 address := "randiw@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 name := "Randi Welch"
-emailAddress.SetName(&name)
+emailAddress.SetName(&name) 
 recipient1.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
@@ -42,7 +42,7 @@ toRecipients := []graphmodels.Recipientable {
 message.SetToRecipients(toRecipients)
 requestBody.SetMessage(message)
 comment := "Samantha, Randi, would you name the group if the project is approved, please?"
-requestBody.SetComment(&comment)
+requestBody.SetComment(&comment) 
 
 createReply, err := graphClient.Me().Messages().ByMessageId("message-id").CreateReply().Post(context.Background(), requestBody, nil)
 
