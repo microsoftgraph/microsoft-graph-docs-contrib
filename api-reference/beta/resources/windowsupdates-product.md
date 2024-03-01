@@ -1,5 +1,5 @@
 ---
-title: "product resource type"
+title: "Product resource type"
 description: "This EntityType represents a Windows product."
 author: "skandula"
 ms.localizationpriority: medium
@@ -7,20 +7,28 @@ ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 
-# product resource type
+# Product resource type
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an Entity type that represents a specific Windows product. 
+This Entity type represents a specific Windows product. 
 
-Examples: 
+Example of a Windows Product: 
+
+|Name|Example|
+|:---|:---|
+|Name| Windows 11, version 22H2 |
+|Friendly name| Version 22H2 (OS build 22621)|
+|Group name| Windows 11 |
+         
+                
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the catalog entry. Read-only.|
+|ID|String|The unique identifier for the catalog entry. Read-only.|
 |name|String|The name of the product. Read-only.|
 |groupName|String|The name of the product group. Read-only.|
 |friendlyName|String|The name of the product. Read-only.|
@@ -28,17 +36,17 @@ Examples:
 
 Supported Methods: GET
 
-Supported query parameters: filter(eq) name, expand(editions,knownIssues, revisions)
+Supported query parameters: filter(eq) name, expand(editions, knownIssues, revisions).
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |editions|[microsoft.graph.windowsUpdates.edition](.../resources/windowsupdates-edition.md) collection| Represents an edition of a particular Windows product. |
-|knownIssues|[microsoft.graph.windowsUpdates.knownIssue](.../resources/windowsupdates-knownIssue.md) collection| Represents a knonw issue related to a Windows product. |
+|knownIssues|[microsoft.graph.windowsUpdates.knownIssue](.../resources/windowsupdates-knownIssue.md) collection| Represents a known issue related to a Windows product. |
 |revisions|[microsoft.graph.windowsUpdates.productrevision](.../resources/windowsupdates-productrevision.md)|Represents a product revision.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following code is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
