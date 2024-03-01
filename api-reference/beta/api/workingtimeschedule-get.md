@@ -38,7 +38,7 @@ GET /users/{usersId}/solutions/schedule
 
 ## Optional query parameters
 
-This method doesn't support OData query parameters to customize the response.
+This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
