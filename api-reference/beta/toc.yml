@@ -10189,6 +10189,28 @@ items:
                     href: resources/windowsupdates-driverupdatecatalogentry.md
                   - name: List catalog entries
                     href: api/windowsupdates-catalog-list-entries.md
+                  - name: Feature update catalog entry
+                    href: resources/windowsupdates-featureupdatecatalogentry.md
+                  - name: Quality update catalog entry
+                    href: resources/windowsupdates-qualityupdatecatalogentry.md
+                  - name: Driver update catalog entry
+                    href: resources/windowsupdates-driverupdatecatalogentry.md
+                  - name: List catalog entries
+                    href: api/windowsupdates-catalog-list-entries.md
+              - name: Windows Release Information
+                items:
+                  - name: Product
+                    href: resources/windowsupdates-product.md
+                    items: 
+                      - name: Known Issues
+                        href: resources/windowsupdates-knownIssues.md
+                        items:
+                          - name: Known Issue Histories 
+                            href: resources/windowsupdates-knownIssueHistories.md
+                      - name: Edition
+                        href: resources/windowsupdates-edition.md
+                      - name: Servicing Period
+                        href: resources/windowsupdates-servicingPeriod.md
               - name: Compliance change
                 href: resources/windowsupdates-compliancechange.md
                 items:
