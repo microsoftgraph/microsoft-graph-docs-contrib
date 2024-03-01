@@ -28,7 +28,7 @@ Represents a policy that can control Microsoft Entra authorization settings. It'
 | Property | Type | Description |
 |-|-|-|
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. |
-|allowedToUseSSPR|Boolean| Indicates whether users can use the Self-Service Password Reset feature on the tenant. |
+|allowedToUseSSPR|Boolean| Indicates whether administrators of the tenant can use the Self-Service Password Reset (SSPR). For more information, see [Self-service password reset for administrators](/entra/identity/authentication/concept-sspr-policy#administrator-reset-policy-differences). |
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. |
 |allowInvitesFrom|allowInvitesFrom|Indicates who can invite guests to the organization. Possible values are: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`. `everyone` is the default setting for all cloud environments except US Government. See more in the [table below](#allowinvitesfrom-values).|
 |allowUserConsentForRiskyApps|Boolean| Indicates whether [user consent for risky apps](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent) is allowed. Default value is `false`. We recommend that you keep the value set to `false`. |
