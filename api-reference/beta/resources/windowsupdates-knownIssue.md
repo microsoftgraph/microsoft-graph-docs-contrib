@@ -38,6 +38,7 @@ Supported query parameters: filter(eq) status, filter(ge, le) startDateTime, fil
 |:---|:---|:---|
 |originatingKnowledgeBaseArticle | [microsoft.graph.windowsUpdates.knowledgebasearticle](../resources/windowsupdates-knowledgebasearticle.md) collection |Knowledge base article associated with the release when the known issue was first reported. |
 |resolvingKnowledgeBaseArticle| [microsoft.graph.windowsUpdates.knowledgebasearticle](../resources/windowsupdates-knowledgebasearticle.md) collection|Knowledge base article associated with the release when the known issue was resolved or mitigated. |
+|knownIssueHistories| [microsoft.graph.windowsUpdates.knownIssueHistories](../resources/windowsupdates-knownIssueHistories.md) collection| A list of known Issue Histories.|
 |safeguardHoldIds|Edm.Int32 collection|A list of safeguard hold ids associated with the known issue.|
 
 
