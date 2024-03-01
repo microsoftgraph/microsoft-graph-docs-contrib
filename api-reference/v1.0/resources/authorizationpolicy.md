@@ -25,7 +25,7 @@ Represents a policy that can control Microsoft Entra authorization settings. It'
 | Property | Type | Description | 
 |-|-|-|
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. | 
-|allowInvitesFrom|allowInvitesFrom|Indicates who can invite external users to the organization. Possible values are: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`.  `everyone` is the default setting for all cloud environments except US Government. For more information, see [allowInvitesFrom values](../resources/authorizationpolicy.md#allowinvitesfrom-values). |
+|allowInvitesFrom|allowInvitesFrom|Indicates who can invite guests to the organization. Possible values are: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`.  `everyone` is the default setting for all cloud environments except US Government. For more information, see [allowInvitesFrom values](../resources/authorizationpolicy.md#allowinvitesfrom-values). |
 |allowUserConsentForRiskyApps|Boolean| Indicates whether [user consent for risky apps](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent) is allowed. We recommend keeping allowUserConsentForRiskyApps as `false`. Default value is `false`. |
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. | 
 |allowedToUseSSPR|Boolean|  Indicates whether administrators of the tenant can use the Self-Service Password Reset (SSPR). For more information, see [Self-service password reset for administrators](/entra/identity/authentication/concept-sspr-policy#administrator-reset-policy-differences). | 
@@ -40,10 +40,10 @@ Represents a policy that can control Microsoft Entra authorization settings. It'
 
 |Member|Description|
 |:---|:---|
-|none|Prevent everyone, including admins, from inviting external users. Default setting for US Government.|
-|adminsAndGuestInviters|Allow members of Global Administrator, User Administrator, and Guest Inviter roles to invite external users.|
-|adminsGuestInvitersAndAllMembers|Allow the above admin roles and all other User role members to invite external users.|
-|everyone|Allow everyone in the organization, including guest users, to invite external users. The default setting for all cloud environments except US Government.|
+|none|Prevent everyone, including admins, from inviting guests. Default setting for US Government.|
+|adminsAndGuestInviters|Allow members of Global Administrator, User Administrator, and Guest Inviter roles to invite guests.|
+|adminsGuestInvitersAndAllMembers|Allow the above admin roles and all other User role members to invite guests.|
+|everyone|Allow everyone in the organization, including guest users, to invite guests. The default setting for all cloud environments except US Government.|
 
 ## Relationships
 
