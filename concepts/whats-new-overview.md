@@ -41,6 +41,14 @@ Updated the descriptions of the **model** and **manufacturer** properties in the
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-beta&preserve-view=true) API to access billed invoice reconciliation data.
 
+### Teamwork and communications | Apps
+
+Use the **dashboardCards** navigation property on [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true) to get dashboard cards specified in the manifest of a [teamsApp](/graph/api/resources/teamsapp?view=graph-rest-beta&preserve-view=true).
+
+### Teamwork and communications | Calls and online meetings
+
+Microsoft Teams custom meeting templates allow you to specify values for many of the meeting options available to meeting organizers. Use the **meetingTemplateId** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) to create an online meeting with a meeting template.
+
 ### Teamwork and communications | Messaging
 
 - Enabled the `$filter`, `$select`, and `$top` query parameters for the [List members of channel](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true) method.
@@ -48,7 +56,9 @@ Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconci
 
 ### Teamwork and communications | Shift management
 
-Added the ability to [get shifts](/graph/api/team-getshifts?view=graph-rest-beta&preserve-view=true) and [get time offs](/graph/api/team-gettimesoff?view=graph-rest-beta&preserve-view=true) across all teams that a user is a direct member of.
+- Added the ability to [get shifts](/graph/api/team-getshifts?view=graph-rest-beta&preserve-view=true) and [get time offs](/graph/api/team-gettimesoff?view=graph-rest-beta&preserve-view=true) across all teams that a user is a direct member of.
+- Added the **isCrossLocationShiftRequestApprovalRequired** and **isCrossLocationShiftsEnabled** properties on [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true) to support two cross location scenarios.
+- Added the ability to [get](/graph/api/shiftsroledefinition-get) and [update](/graph/api/shiftsroledefinition-update) front-line managers' capabilities in a Shifts schedule.
 
 ## January 2024: New and generally available
 
@@ -77,6 +87,7 @@ The new partner billing API in Microsoft Graph offers Microsoft direct partners 
 
 - Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant) in a [call](/graph/api/resources/call). For more information, see [JSON payload examples](/graph/api/application-post-calls#notification---roster) of notifications with delta roster disabled or enabled.
 - Removed the **profilePhoto** property on [virtualEventPresenter](/graph/api/resources/virtualeventpresenter?view=graph-rest-beta&preserve-view=true)  in favor of the **photo** property on [virtualEventPresenterDetails](/graph/api/resources/virtualeventpresenterdetails?view=graph-rest-beta&preserve-view=true).
+- Use the **email** property on [communicationsGuestIdentity](/graph/api/resources/communicationsguestidentity?view=graph-rest-beta&preserve-view=true) to get access to the email address of a guest user.
 
 ## January 2024: New in preview only
 
