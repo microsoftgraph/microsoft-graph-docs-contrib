@@ -50,13 +50,12 @@ In the request URL, provide the following required query parameters with values.
 ### OData query parameters
 
 This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`. For general information, see [OData query parameters](/graph/query-parameters).
+
+The following example shows how to use the `$filter` parameter to customize the response.
 <!-- {
   "blockType": "ignored"
 }
 -->
-
-The following example shows how to use the `$filter` parameter to customize the response.
-
 ``` http
 GET /security/analyzedMessages?startTime=2023-06-27&endTime=2023-06-28&$filter=networkMessageId eq '35a870a1-dd73-4238-6ad3-08db76b14071’
 ```
