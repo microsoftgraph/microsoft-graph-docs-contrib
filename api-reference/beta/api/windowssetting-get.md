@@ -7,7 +7,7 @@ ms.prod: "cross-device-experiences"
 doc_type: apiPageType
 ---
 
-# Get Windows setting stored in a cloud
+# Get Windows setting
 
 Namespace: microsoft.graph
 

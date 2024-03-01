@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph Windows Setting APIs to retrieve Windows OS settings stored in cloud"
-description: "The Windows Setting APIs enable users and authorized third parties to access users’ Windows operating system settings data that is stored in Microsoft cloud. The APIs facilitate sharing and exporting of the data in a secure and compliant manner, ensuring that data is only shared with explicit user consent. The APIs demonstrate Microsoft’s dedication to user privacy and adherence to the EU Digital Markets Act, offering a clear and user-focused way of data portability."
+description: "The Windows Setting APIs enable users and authorized third parties, on behalf of the users, to access their Windows operating system settings data stored in Microsoft cloud. Windows settings data is available in Microsoft cloud only when users enable the feature. The data present for each user varies based on what they choose to backup from the settings. Notably, default values for any given setting remain local and are not uploaded to the cloud. The APIs share only those setting data that has been uploaded to the cloud for the user."
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "MS-Arko"
@@ -11,7 +11,7 @@ ms.prod: "cross-device-experiences"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Windows Setting APIs enable users and authorized third parties to access users’ Windows operating system settings data that is stored in Microsoft cloud. The APIs facilitate sharing and exporting of the data in a secure and compliant manner by ensuring that data is only shared with explicit user consent. The APIs demonstrate Microsoft’s dedication to user privacy and adherence to the EU Digital Markets Act by offering a clear and user-focused way of Windows settings data portability.
+The Windows Setting APIs enable users and authorized third parties, on behalf of the users, to access their Windows operating system settings data stored in Microsoft cloud. Windows settings data is available in Microsoft cloud only when users enable the feature. The data present for each user varies based on what they choose to backup from the settings. Notably, default values for any given setting remain local and are not uploaded to the cloud. The APIs share only those setting data that has been uploaded to the cloud for the user.
 
 ## Windows Settings
 
@@ -26,9 +26,9 @@ There are two types of [windowsSetting](../resources/windowssetting.md): `roamin
 
  A [windowsSetting](../resources/windowssetting.md) of type `backup` may have a *windowsDeviceId* property that links the setting to a specific device.
 
- The [List Windows settings stored in cloud](../api/usersettings-list-windows.md) API returns a collection of [windowsSetting](../resources/windowssetting.md) objects and their properties. You can filter the results by *windowsDeviceId* and *settingType* properties.
+ The [List Windows settings](../api/usersettings-list-windows.md) API returns a collection of [windowsSetting](../resources/windowssetting.md) objects and their properties. You can filter the results by *windowsDeviceId* and *settingType* properties.
 
-The [Get Windows setting stored in cloud](../api/windowssetting-get.md) API allows you to pass the ID of a [windowsSetting](../resources/windowssetting.md) in the URL to read a specific Windows setting object.
+The [Get Windows setting](../api/windowssetting-get.md) API allows you to pass the ID of a [windowsSetting](../resources/windowssetting.md) in the URL to read a specific Windows setting object.
 
 The following JSON representation shows an example Windows setting. The instances collection in it represents **Windows setting instances**, elaborated in the next section.
 
@@ -86,9 +86,9 @@ The following JSON representation shows an example windows setting instance.
 }
 ```
 
-The [List Windows setting instances stored in cloud](../api/windowssetting-list-instances.md) API returns a collection of [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties. The API requires the ID of a [windowsSetting](../resources/windowssetting.md) in the URL to read the setting instances.
+The [List Windows setting instances](../api/windowssetting-list-instances.md) API returns a collection of [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties. The API requires the ID of a [windowsSetting](../resources/windowssetting.md) in the URL to read the setting instances.
 
-The [Get Windows setting instance stored in cloud](../api/windowssettinginstance-get.md) API allows you to pass the ID of a [windowsSetting](../resources/windowssetting.md) and [windowsSettingInstance](../resources/windowssettinginstance.md) in the URL to read a specific windows setting instance object.
+The [Get Windows setting instance](../api/windowssettinginstance-get.md) API allows you to pass the ID of a [windowsSetting](../resources/windowssetting.md) and [windowsSettingInstance](../resources/windowssettinginstance.md) in the URL to read a specific windows setting instance object.
 
 The *payload* property of a [**windowsSettingInstance**](../resources/windowssettinginstance.md) contains the actual setting value. The *payload* is a string in Base64 encoded format. The *payloadType* property of the [**windowsSetting**](../resources/windowssetting.md) object indicates the type of the setting value. The *payload* when decoded is a JSON object, which differs from setting to setting and is specific to the *payloadType*.
 
@@ -148,7 +148,7 @@ Some payloadTypes have a special role in the Windows settings backup process.
 Rather than being a setting the user has applied, this type records information about devices that have opted into settings backup features. Two properties in this object are useful for understanding the rest of the settings: *deviceDisplayName* and *profileId*. 
 
 - *deviceDisplayName* is the name of the computer, which can be seen in Windows system settings at "**Start** > **Settings** > **System**".
-- *profileId* is an identifier used to link [**windowsSetting**](../resources/windowssetting.md) items to the device that uploaded them. This property corresponds to **windowsSetting.windowsDeviceId** and can be used as a filter to get settings for a specific device from [List Windows settings stored in cloud](../api/usersettings-list-windows.md) API.
+- *profileId* is an identifier used to link [**windowsSetting**](../resources/windowssetting.md) items to the device that uploaded them. This property corresponds to **windowsSetting.windowsDeviceId** and can be used as a filter to get settings for a specific device from [List Windows settings](../api/usersettings-list-windows.md) API.
 
 The following example shows this resource type.
 

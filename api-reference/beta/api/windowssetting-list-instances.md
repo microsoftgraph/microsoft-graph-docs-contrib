@@ -7,7 +7,7 @@ ms.prod: "cross-device-experiences"
 doc_type: apiPageType
 ---
 
-# List Windows setting instances stored in a cloud
+# List Windows setting instances
 
 Namespace: microsoft.graph
 
