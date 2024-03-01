@@ -62,7 +62,7 @@ Microsoft Teams custom meeting templates allow you to specify values for many of
 
 ### Teamwork and communications | Working time schedule
 
-Added the ability to [start](/graph/api/workingtimeschedule-startworkingtime?view=graph-rest-beta&preserve-view=true) and [end](/graph/api/workingtimeschedule-endworkingtime?view=graph-rest-beta&preserve-view=true) working time.
+Added the ability to [start](/graph/api/workingtimeschedule-startworkingtime?view=graph-rest-beta&preserve-view=true) and [end](/graph/api/workingtimeschedule-endworkingtime?view=graph-rest-beta&preserve-view=true) the working time of a specific user.
 
 ## January 2024: New and generally available
 
