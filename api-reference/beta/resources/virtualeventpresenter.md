@@ -1,6 +1,6 @@
 ---
 title: "virtualEventPresenter resource type"
-description: "Information about a virtual event presenter."
+description: "Represents information about a presenter of a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a presenter of a virtual event.
+Represents information about a presenter of a virtual event.
 
 ## Properties
 
@@ -21,12 +21,12 @@ Represents a presenter of a virtual event.
 |:---|:---|:---|
 |email|String|Email address of the presenter.|
 |id|String|Unique identifier of the presenter. Inherited from [entity](../resources/entity.md).|
-|identity|[communicationsUserIdentity](../resources/communicationsuseridentity.md)|Identity information of the presenter.|
+|identity|[identity](../resources/identity.md)|Identity information of the presenter. The supported identites are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 |presenterDetails|[virtualEventPresenterDetails](../resources/virtualeventpresenterdetails.md)|Other detail information of the presenter.|
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -40,11 +40,7 @@ Here's a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.virtualEventPresenter",
   "email": "String",
   "id": "String (identifier)",
-  "identity": {
-    "@odata.type": "microsoft.graph.communicationsUserIdentity"
-  },
-  "presenterDetails": {
-    "@odata.type": "microsoft.graph.virtualEventPresenterDetails"
-  }
+  "identity": {"@odata.type": "microsoft.graph.identity"},
+  "presenterDetails": {"@odata.type": "microsoft.graph.virtualEventPresenterDetails"}
 }
 ```

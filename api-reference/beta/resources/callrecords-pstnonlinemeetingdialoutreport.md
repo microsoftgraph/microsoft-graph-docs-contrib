@@ -1,7 +1,7 @@
 ---
 title: "pstnOnlineMeetingDialoutReport resource type"
 description: "Represents a report of usage and money spent for the audio conferencing dial-out service over a selected period."
-author: "radoslag"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
