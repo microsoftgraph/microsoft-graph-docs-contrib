@@ -224,7 +224,7 @@ To get a specific profile card property configuration in an organization, use th
 
 ### Add profile card properties in your organization
 
-You can use the Microsoft Graph PowerShell module to make both Microsoft Entra ID attributes, and the 15 customizable Microsoft Entra ID extension attributes available in your organization.
+You can use the Microsoft Graph PowerShell module to make both Microsoft Entra ID attributes, and the 15 customizable Microsoft Entra ID extension attributes, available in your organization.
 
 > [!NOTE]
 > The new command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
