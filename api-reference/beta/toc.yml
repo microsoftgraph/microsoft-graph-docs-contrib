@@ -387,7 +387,7 @@ items:
                 href: api/profile-get.md
               - name: Delete user's profile
                 href: api/profile-delete.md
-          - name: Solutions (preview)
+          - name: Solution (preview)
             items:
               - name: Solution
                 href: resources/solution.md
@@ -18922,7 +18922,7 @@ items:
                     href: api/workforceintegration-update.md
                   - name: Delete
                     href: api/workforceintegration-delete.md
-          - name: Working time schedule
+          - name: Working time schedule (preview)
             href: resources/workingtimeschedule.md
             items:
               - name: Get
