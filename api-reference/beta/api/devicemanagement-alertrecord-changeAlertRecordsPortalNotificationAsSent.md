@@ -1,6 +1,6 @@
 ---
 title: "alertRecord: changeAlertRecordsPortalNotificationAsSent"
-description: "Change the `isPortalNotificationSent` property to true for a list of alert records for the current user."
+description: "Change the isPortalNotificationSent property to true for a list of alert records for the current user."
 author: "abbyzhccc"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the **isPortalNotificationSent** property of all [portal notification](../resources/devicemanagement-portalnotification.md) resources associated with the specified [alertRecord](../resources/devicemanagement-alertrecord.md) to `true`, marking them as sent. A maximum of 100 [alertRecord](../resources/devicemanagement-alertrecord.md) IDs can be received at one time, and a maximum of 100 [portal notification](../resources/devicemanagement-portalnotification.md) can be changed in the **isPortalNotificationSent** property status.
+Set the **isPortalNotificationSent** property of all [portal notification](../resources/devicemanagement-portalnotification.md) resources associated with the specified [alertRecord](../resources/devicemanagement-alertrecord.md) to `true`, marking them as sent. A maximum of 100 [alertRecord](../resources/devicemanagement-alertrecord.md) IDs can be received at one time, and a maximum of 100 **portal notification** resources can be changed in the **isPortalNotificationSent** property status.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
