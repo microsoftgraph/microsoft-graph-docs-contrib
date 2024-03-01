@@ -70,9 +70,9 @@ If the response contains more than one page of data, the response body will cont
 
 ## Examples
 
-### Request
+###  Example 1: Request without any filter 
 
-The following example shows a request.
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -84,9 +84,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/me/settings/windows
 ```
 
-### Response
-
-The following example shows the response.
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -139,9 +137,10 @@ Content-Type: application/json
   "@odata.nextLink": "https://graph.microsoft.com/beta/me/settings/windows?$skiptoken=eyJzZXRhZyI6ImJmY2I2ZjQwLWM5ZGQtMTFlZS05MTE3LTAxMDIwMzA1MDcwZCIsImlldGFnIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIiwiZW5kRVRhZyI6IjEwMDJkOGYwLWM2NTItMTRkYy05MTE3LTAxMDIwMzA1MDcwZCIsImV0YWciOiJjMDMzZjUxMC1jOWRkLTExZWUtOTExNy0wMTAyMDMwNTA3MGQiLCJsdHNsIjoiYzAzM2Y1MTAtYzlkZC0xMWVlLTkxMTctMDEwMjAzMDUwNzBkIiwibmV4dCI6dHJ1ZX0%3d"
 }
 ```
-### Request
 
-The following example shows a filter by `roaming` settingType request.
+### Example 2: Request with filter by `roaming` settingType
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -153,9 +152,7 @@ The following example shows a filter by `roaming` settingType request.
 GET https://graph.microsoft.com/beta/me/settings/windows?$filter=settingType eq 'roaming'
 ```
 
-### Response
-
-The following example shows the response.
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -205,9 +202,10 @@ Content-Type: application/json
   ]
 }
 ```
-### Request
 
-The following example shows a filter by `backup` settingType request.
+### Example 3: Request with filter by `backup` settingType
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -219,9 +217,7 @@ The following example shows a filter by `backup` settingType request.
 GET https://graph.microsoft.com/beta/me/settings/windows?$filter=settingType eq 'backup'
 ```
 
-### Response
-
-The following example shows the response.
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -273,9 +269,10 @@ Content-Type: application/json
   ]
 }
 ```
-### Request
 
-The following example shows a filter by windowsDeviceId request.
+### Example 4: Request with filter by `windowsDeviceId`
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -287,9 +284,7 @@ The following example shows a filter by windowsDeviceId request.
 GET https://graph.microsoft.com/beta/me/settings/windows?$filter=windowsDeviceId eq '67585f9f-ee4b-4dd8-808e-d88375d66ef7'
 ```
 
-### Response
-
-The following example shows the response.
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
