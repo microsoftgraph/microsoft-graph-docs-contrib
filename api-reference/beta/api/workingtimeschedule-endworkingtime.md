@@ -40,7 +40,7 @@ POST /users/{userId}/solutions/schedule/endWorkingTime
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|User ID that has ended working.|
+|userId|String|User ID that ended working.|
 
 ## Request headers
 
