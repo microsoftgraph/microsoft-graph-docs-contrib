@@ -303,14 +303,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **reconciliation** relationship to the [billing](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billing?view=graph-rest-1.0) resource.",
           "Target": "billing"
-        },
-		{
-          "Id": "8b9489ef-dabc-47c9-982d-45afd83b4b1d",
-          "ApiChange": "Method",
-          "ChangedApiName": "export",
-          "ChangeType": "Addition",
-          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-1.0) method to the [billedReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billedreconciliation?view=graph-rest-1.0) resource.",
-          "Target": "billedReconciliation"
         }
       ],
       "Id": "8b9489ef-dabc-47c9-982d-45afd83b4b1d",
