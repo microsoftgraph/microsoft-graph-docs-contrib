@@ -1,5 +1,5 @@
 ---
-title: "Solution resource type"
+title: "solution resource type"
 description: "Represents a user's custom solution entity."
 author: "galalalym"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
-# Solution resource type
+# solution resource type
 
 Namespace: microsoft.graph
 
@@ -25,7 +25,7 @@ Represents a user's custom solution entity.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|ID|String|A unique programmatic identifier for the entity. Read-only.|
+|id|String|A unique programmatic identifier for the entity. Read-only.|
 
 ## Relationships
 
