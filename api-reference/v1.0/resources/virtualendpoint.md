@@ -27,8 +27,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|Cloud PC provisioning policy.|
-|userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) collection|Cloud PC user settings. |
+|provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|A collection of Cloud PC provisioning policies.|
+|userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) collection|A collection of Cloud PC user settings. |
 
 ## JSON representation
 
