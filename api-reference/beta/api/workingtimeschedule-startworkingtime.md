@@ -40,7 +40,7 @@ POST /users/{userId}/solutions/schedule/startWorkingTime
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|User ID that has started working.|
+|userId|String|User ID that started working.|
 
 ## Request headers
 
