@@ -1,6 +1,6 @@
 ---
 title: "workingTimeSchedule: startWorkingTime"
-description: "Trigger the policies associated with the start of working hours."
+description: "Trigger the policies associated with the start of working hours for a specific user."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Trigger the policies associated with the start of working hours.
+Trigger the policies associated with the start of working hours for a specific user.
 
 ## Permissions
 
