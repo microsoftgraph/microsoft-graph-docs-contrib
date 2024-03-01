@@ -1,6 +1,6 @@
 ---
 title: "analyzedEmailAttachment resource type"
-description: Collection of the Attachments in the Email
+description: Represents a collection of the attachments in an analyzed email.
 author: MishraSoumyaMS
 ms.localizationpriority: medium
 ms.prod: security
@@ -13,17 +13,17 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Collection of the Attachments in the Email.
+Represents a collection of the attachments in an analyzed email.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |detonationDetails|[microsoft.graph.security.detonationDetails](../resources/security-detonationdetails.md)|The detonation details of the attachment.|
-|fileName|String|Name of the attachment in the email.|
-|fileType|String|Type of the attachment in the email.|
-|sha256|String|SHA256 file hash of the attachment.|
-|threatName|String|Threat name associated with the threat type.|
-|threatType|microsoft.graph.security.threatType|Threat type associated with the attachment.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
+|fileName|String|The name of the attachment in the email.|
+|fileType|String|The type of the attachment in the email.|
+|sha256|String|The SHA256 file hash of the attachment.|
+|threatName|String|The threat name associated with the threat type.|
+|threatType|microsoft.graph.security.threatType|The threat type associated with the attachment. The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
 
 ## Relationships
 None.
