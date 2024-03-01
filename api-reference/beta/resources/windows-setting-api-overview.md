@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph Windows Setting APIs to retrieve Windows OS settings stored in cloud"
-description: "The Windows Setting APIs enable users and authorized third parties, on behalf of the users, to access their Windows operating system settings data stored in Microsoft cloud. Windows settings data is available in Microsoft cloud only when users enable the feature. The data present for each user varies based on what they choose to backup from the settings. Notably, default values for any given setting remain local and are not uploaded to the cloud. The APIs share only those setting data that has been uploaded to the cloud for the user."
+description: "The Windows Setting APIs enable users and authorized third parties, on behalf of the users, to access their Windows operating system settings data stored in Microsoft cloud. Windows settings data is available in Microsoft cloud only when users enable the feature. The data present for each user varies based on what they choose to backup from the settings. Notably, default values for any given setting remain local and aren't uploaded to the cloud. The APIs share only those setting data that has been uploaded to the cloud for the user."
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "MS-Arko"
@@ -11,7 +11,7 @@ ms.prod: "cross-device-experiences"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Windows Setting APIs enable users and authorized third parties, on behalf of the users, to access their Windows operating system settings data stored in Microsoft cloud. Windows settings data is available in Microsoft cloud only when users enable the feature. The data present for each user varies based on what they choose to backup from the settings. Notably, default values for any given setting remain local and are not uploaded to the cloud. The APIs share only those setting data that has been uploaded to the cloud for the user.
+The Windows Setting APIs enable users and authorized third parties, on behalf of the users, to access their Windows operating system settings data stored in Microsoft cloud. Windows settings data is available in Microsoft cloud only when users enable the feature. The data present for each user varies based on what they choose to backup from the settings. Notably, default values for any given setting remain local and aren't uploaded to the cloud. The APIs share only those setting data that has been uploaded to the cloud for the user.
 
 ## Windows Settings
 
@@ -138,7 +138,7 @@ In this example, the payloadType `windows.data.fileexplorerclassic.advancedsetti
 }
 ```
 
-It is common for the properties in the object to be a subset of those that are available in the component’s user experience as component owners decide which settings provide the most value when uploaded to the cloud.
+It's common for the properties in the object to be a subset of those that are available in the component’s user experience as component owners decide which settings provide the most value when uploaded to the cloud.
 
 ### PayloadTypes of particular interest
 
