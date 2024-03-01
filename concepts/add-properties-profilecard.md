@@ -22,6 +22,8 @@ You can also [remove](/graph/api/profilecardproperty-delete) custom attributes f
 
 [!INCLUDE [profilecardproperty-add-remove-note](../includes/profilecardproperty-add-remove-note.md)]
 
+[!INCLUDE [profilecardproperty-all-clouds-note](../includes/profilecardproperty-all-clouds-note.md)]
+
 > [!NOTE]
 > Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a Tenant Administrator or Global Administrator role. 
 
