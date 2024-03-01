@@ -126,7 +126,9 @@ Content-Type: application/json
       "displayName": "String",
       "filterStartDateTime": "String (timestamp)",
       "filterEndDateTime": "String (timestamp)",
-      "recordTypeFilter": "String",
+      "recordTypeFilters": [
+        "String"
+      ],
       "keywordFilter": "String",
       "serviceFilter": "String",
       "operationFilters": [
