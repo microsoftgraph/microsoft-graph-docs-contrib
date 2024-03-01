@@ -1,6 +1,6 @@
 ---
 title: "educationGradingSchemeGrade resource type"
-description: "An individual grade range that contributes to a grading scheme"
+description: "Represents an individual grade range that contributes to a grading scheme."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The individual grade ranges that make up a grading scheme.
+Represents an individual grade range that contributes to a grading scheme
 
 ## Properties
 |Property|Type|Description|

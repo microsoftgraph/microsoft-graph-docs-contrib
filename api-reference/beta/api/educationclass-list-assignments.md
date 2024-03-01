@@ -1,6 +1,6 @@
 ---
 title: "List class assignments"
-description: "Retrieve a list of assignment objects."
+description: "Retrieve a list of educationAssignment objects."
 author: "mmast-msft"
 ms.localizationpriority: medium
 ms.prod: "education"

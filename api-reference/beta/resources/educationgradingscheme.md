@@ -1,6 +1,6 @@
 ---
 title: "educationGradingScheme resource type"
-description: "Use custom schemes for grading."
+description: "Represents a custom scheme for grading."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use custom schemes for grading.
+Represents a custom scheme for grading.
 
 Inherits from [entity](../resources/entity.md).
 
