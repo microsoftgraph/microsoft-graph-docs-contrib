@@ -3,6 +3,76 @@
     {
       "ChangeList": [
         {
+          "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatrestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatRestrictions](https://learn.microsoft.com/en-us/graph/api/resources/chatrestrictions?view=graph-rest-beta) resource type.",
+          "Target": "chatRestrictions"
+        },
+        {
+          "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatrestrictions** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-29T00:37:15.1713516Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "221bd9bc-1364-483a-a8b4-5dd149dccb0d",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingTemplateId** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "221bd9bc-1364-483a-a8b4-5dd149dccb0d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-13T18:42:26.7272329Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b431f36d-e22d-4af7-b67c-729c779785d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "email",
+          "ChangeType": "Addition",
+          "Description": "Added the **email** property to the [communicationsGuestIdentity](https://learn.microsoft.com/en-us/graph/api/resources/communicationsGuestIdentity?view=graph-rest-beta) resource.",
+          "Target": "communicationsGuestIdentity"
+        },
+        {
+          "Id": "b431f36d-e22d-4af7-b67c-729c779785d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "identity",
+          "ChangeType": "Change",
+          "Description": "Changed the type in the **identity** property of the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventPresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        }
+      ],
+      "Id": "b431f36d-e22d-4af7-b67c-729c779785d5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-14T23:15:19.3741207Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8a7621e5-954c-4edc-a4f0-5b236c6fb333",
           "ApiChange": "Property",
           "ChangedApiName": "photo",
@@ -259,6 +329,7 @@
       "CreatedDateTime": "2023-10-23T00:00:00Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+
     },
     {
       "ChangeList": [
