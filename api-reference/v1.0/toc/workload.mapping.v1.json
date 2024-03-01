@@ -402,7 +402,7 @@
             "drive",
             "driveItem",
             "bundle",
-            "Permission"
+            "permission"
           ]
         }
       ]
@@ -418,12 +418,9 @@
               "id": "Microsoft.DirectoryServices",
               "includedResources": [
                 "administrativeUnit",
-                "bitlockerRecoveryKey",
                 "contract",
-                "authorizationPolicy",
                 "directory",
                 "device",
-                "deviceLocalCredentialInfo",
                 "directoryObject",
                 "directoryRole",
                 "directoryRoleTemplate",
@@ -436,9 +433,15 @@
               ]
             },
             {
-              "id": "Microsoft.HybridAuthentication",
+              "id": "Microsoft.BitLocker",
               "includedResources": [
-                "featureRolloutPolicy"
+                "bitlockerRecoveryKey"
+              ]
+            },
+            {
+              "id": "Microsoft.DeviceLocalCredentials",
+              "includedResources": [
+                "deviceLocalCredentialInfo"
               ]
             }
           ],
@@ -464,8 +467,8 @@
                   "id": "Microsoft.DirectoryServices",
                   "includedResources": [
                     "roleManagement",
-                    "roleDefinition",
-                    "roleAssignment"
+                    "unifiedRoleDefinition",
+                    "unifiedRoleAssignment"
                   ]
                 }
               ]
@@ -639,9 +642,10 @@
               "id": "Microsoft.DirectoryServices",
               "includedResources": [
                 "oAuth2PermissionGrant",
-                "organizationalBrandingProperties",
                 "organizationalBranding",
-                "organizationalBrandingLocalization"
+                "organizationalBrandingProperties",
+                "organizationalBrandingLocalization",
+                "certificateBasedAuthConfiguration"
               ]
             },
             {
@@ -662,32 +666,12 @@
                     "authenticationMethod",
                     "emailAuthenticationMethod",
                     "fido2AuthenticationMethod",
-                    "phoneAuthenticationMethod",
                     "microsoftAuthenticatorAuthenticationMethod",
                     "passwordAuthenticationMethod",
+                    "phoneAuthenticationMethod",
                     "softwareOathAuthenticationMethod",
                     "temporaryAccessPassAuthenticationMethod",
                     "windowsHelloForBusinessAuthenticationMethod"
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Authentication methods policies",
-              "overview": "authenticationmethodspolicies-overview.md",
-              "workloads": [
-                {
-                  "id": "Microsoft.AuthenticationMethodsPolicy",
-                  "includedResources": [
-                    "authenticationMethodsPolicy",
-                    "emailAuthenticationMethodConfiguration",
-                    "fido2AuthenticationMethodConfiguration",
-                    "microsoftAuthenticatorAuthenticationMethodConfiguration",
-                    "smsAuthenticationMethodConfiguration",
-                    "temporaryAccessPassAuthenticationMethodConfiguration",
-                    "softwareOathAuthenticationMethodConfiguration",
-                    "voiceAuthenticationMethodConfiguration",
-                    "x509CertificateAuthenticationMethodConfiguration"
                   ]
                 }
               ]
@@ -699,7 +683,6 @@
                 {
                   "id": "Microsoft.AuthenticationMethodsPolicy",
                   "includedResources": [
-                    "authenticationStrengthPolicy",
                     "authenticationCombinationConfiguration",
                     "fido2CombinationConfiguration",
                     "authenticationMethodModeDetail",
@@ -716,10 +699,22 @@
                   "includedResources": [
                     "conditionalAccessPolicy",
                     "namedLocation",
-                    "countryNamedLocation",
-                    "ipNamedLocation",
                     "authenticationContextClassReference",
                     "conditionalAccessTemplate"
+                  ]
+                }
+              ],
+              "childNodes": [
+                {
+                  "name": "Named location",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.IdentityProtectionServices",
+                      "includedResources": [
+                        "countryNamedLocation",
+                        "ipNamedLocation"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -748,24 +743,105 @@
                     "riskDetection",
                     "riskyUser",
                     "servicePrincipalRiskDetection",
-                    "riskyServicePrincipal",
-                    "identitySecurityDefaultsEnforcementPolicy"
+                    "riskyServicePrincipal"
                   ]
                 }
               ]
             },
             {
-              "name": "Identity providers",
+              "name": "Identity provider",
               "workloads": [
                 {
                   "id": "Microsoft.CPIM",
                   "includedResources": [
-                    "identityProvider",
-                    "builtInIdentityProvider",
-                    "socialIdentityProvider",
-                    "appleManagedIdentityProvider",
-                    "samlOrWsFedExternalDomainFederation",
-                    "internalDomainFederation"
+                    "identityProviderBase"
+                  ]
+                }
+              ],
+              "childNodes": [
+                {
+                  "name": "External identities",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.CPIM",
+                      "includedResources": [
+                        "builtInIdentityProvider",
+                        "socialIdentityProvider",
+                        "appleManagedIdentityProvider",
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Domain-based external identities",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.CPIM",
+                      "includedResources": [
+                        "samlOrWsFedExternalDomainFederation"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Federation with Microsoft Entra ID",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.CPIM",
+                      "includedResources": [
+                        "internalDomainFederation"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Identity provider (deprecated)",
+              "workloads": [
+                {
+                  "id": "Microsoft.CPIM",
+                  "includedResources": [
+                    "identityProvider"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Policies TODO TODO TODO",
+              "workloads": [
+                {
+                  "id": "Microsoft.AuthenticationMethodsPolicy",
+                  "includedResources": [
+                    "authenticationStrengthPolicy"
+                  ]
+                },
+                {
+                  "id": "Microsoft.IdentityProtectionServices",
+                  "includedResources": [
+                    "identitySecurityDefaultsEnforcementPolicy"
+                  ]
+                }
+              ],
+              "childNodes": [
+                {
+                  "name": "Authentication methods policies",
+                  "overview": "authenticationmethodspolicies-overview.md",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.AuthenticationMethodsPolicy",
+                      "includedResources": [
+                        "authenticationMethodsPolicy",
+                        "emailAuthenticationMethodConfiguration",
+                        "fido2AuthenticationMethodConfiguration",
+                        "microsoftAuthenticatorAuthenticationMethodConfiguration",
+                        "smsAuthenticationMethodConfiguration",
+                        "temporaryAccessPassAuthenticationMethodConfiguration",
+                        "softwareOathAuthenticationMethodConfiguration",
+                        "voiceAuthenticationMethodConfiguration",
+                        "x509CertificateAuthenticationMethodConfiguration"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -1179,6 +1255,42 @@
     {
       "term": "os",
       "override": "OS"
+    },
+    {
+      "term": "sku",
+      "override": "SKU"
+    },
+    {
+      "term": "on premises",
+      "override": "On-premises"
+    },
+    {
+      "term": "bitlocker",
+      "override": "BitLocker"
+    },
+    {
+      "term": "fido 2",
+      "override": "FIDO2"
+    },
+    {
+      "term": "microsoft authenticator",
+      "override": "Microsoft Authenticator"
+    },
+    {
+      "term": "software oath",
+      "override": "Software OATH"
+    },
+    {
+      "term": "windows hello for business",
+      "override": "Windows Hello for Business"
+    },
+    {
+      "term": "temporary access pass",
+      "override": "Temporary Access Pass"
+    },
+    {
+      "term": "ip named location",
+      "override": "IP named location"
     }
   ]
 }
