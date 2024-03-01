@@ -354,6 +354,8 @@ Content-Type: application/json
 
 ### Create app roles on an application object
 
+To keep any existing app roles, include them in the request. Otherwise, they are replaced with the new object.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

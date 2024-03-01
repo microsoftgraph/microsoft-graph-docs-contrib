@@ -145,7 +145,16 @@ HTTP/1.1 200 OK
             "trunkFullyQualifiedDomainName": "tll-audiocodes01.adatum.biz",
             "mediaBypassEnabled": false,
             "userCountryCode": "US",
-            "otherPartyCountryCode": "US"
+            "otherPartyCountryCode": "US",
+            "transferorCorrelationId": "02d31a30-0abc-4154-964d-e23366e66feb",
+            "administrativeUnitInfos": [
+               {
+                  "id": "639b616c-f164-4a6f-a933-24936b8eb210"
+               },
+               {
+                  "id": "cc6ea167-4e92-4c2d-9391-85791e978006"
+               }
+            ]
         }
     ]
 }
