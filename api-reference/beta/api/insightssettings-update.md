@@ -78,7 +78,7 @@ PATCH /organization/{organizationId}/settings/peopleInsights
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |disabledForGroup|String| The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
-|isEnabledInOrganization|Boolean| `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `true`. Optional.|
+|isEnabledInOrganization|Boolean| `true` if the specified insight type is enabled for the organization; `false` if the specified insight type is disabled for all users without exceptions. Default is `true`. Optional.|
 
 >**Note:** This operation does not verify the **disabledForGroup** property value if you include it in the request body. If you set the **disabledForGroup** property to a String, this operation does not check the existence of the corresponding Microsoft Entra group. This means, if you set **disabledForGroup** to a Microsoft Entra group that does not exist or is deleted afterwards, this operation will not be able to identify any group membership and disable item or people insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable the specified type of insights for _all_ the users in the organization. 
 
