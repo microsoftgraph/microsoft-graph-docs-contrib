@@ -35,7 +35,7 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -56,6 +56,6 @@ The following is a JSON representation of the resource.
   "learningProviderId": "String",
   "learnerUserId": "String",
   "startedDateTime": "String (timestamp)",
-  "status": {"@odata.type": "microsoft.graph.courseStatus"}
+  "status": "String"
 }
 ```
