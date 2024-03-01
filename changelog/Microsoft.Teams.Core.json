@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "698f4470-213e-4165-9992-7115fc691671",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channel",
+          "ChangeType": "Change",
+          "Description": "Updated the **isFavoriteByDefault** property of the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource to allow owners to mark channels as recommended.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "698f4470-213e-4165-9992-7115fc691671",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-02-29T15:04:59.427Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d65f2ae4-00fe-4bd4-a066-da219847755c",
           "ApiChange": "Resource",
           "ChangedApiName": "channel",
