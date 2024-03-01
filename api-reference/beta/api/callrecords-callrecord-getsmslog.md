@@ -149,7 +149,15 @@ Content-Type: application/json
             "destinationName": "United States",
             "otherPartyCountryCode": "US",
             "licenseCapability": "MCOSMS1",
-            "smsUnits": 1
+            "smsUnits": 1,
+            "administrativeUnitInfos": [
+               {
+                  "id": "639b616c-f164-4a6f-a933-24936b8eb210"
+               },
+               {
+                  "id": "cc6ea167-4e92-4c2d-9391-85791e978006"
+               }
+            ]            
         }
     ]
 }
