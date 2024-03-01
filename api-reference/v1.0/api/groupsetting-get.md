@@ -36,6 +36,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Group.Read.All, Group.ReadWrite.All         |
 
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
