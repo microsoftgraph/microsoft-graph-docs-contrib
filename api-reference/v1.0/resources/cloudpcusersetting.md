@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Represents a Cloud PC user setting.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -30,7 +32,7 @@ Represents a Cloud PC user setting.
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time the setting was created. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 |displayName|String|The setting name displayed in the user interface. |
-|id|String|Unique identifier for the Cloud PC user setting. Read-only.|
+|id|String|Unique identifier for the Cloud PC user setting. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 |localAdminEnabled|Boolean|Indicates whether the local admin option is enabled. Default value is `false`. To enable the local admin option, change the setting to `true`. If the local admin option is enabled, the end user can be an admin of the Cloud PC device. |
 |resetEnabled|Boolean|Indicates whether an end user is allowed to reset their Cloud PC. When `true`, the user is allowed to reset their Cloud PC. When `false`, end-user initiated reset is not allowed. The default value is `false`. |
