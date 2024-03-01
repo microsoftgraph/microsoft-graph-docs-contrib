@@ -1,6 +1,6 @@
 ---
 title: "List analyzedEmails "
-description: "Get a list of the microsoft.graph.security.analyzedEmail objects and their properties."
+description: "Get a list of analyzedEmail objects and their properties."
 author: "ajaj-shaikh"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) objects and their properties.
+Get a list of [analyzedEmail](../resources/security-analyzedemail.md) objects and their properties.
 
-This API allows Security Operations teams to have direct access to hunt (query) for threats, IOCs, attack vectors, and evidences for entire tenant. It is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats. It consists of email metadata, verdict information, related underlying entities (attachments/URL), filters, and more.
+This API allows Security Operations teams to have direct access to hunt (query) for threats, IOCs, attack vectors, and evidences for a tenant. It is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats. It consists of email metadata, verdict information, related underlying entities (attachments/URL), filters, and more.
 
 ## Permissions
 
@@ -38,7 +38,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /security/collaboration/analyzedEmails
 ```
 
-## Optional query parameters
+## Query parameters
+
+In the request URL, provide the following required query parameters with values.
+
+|Parameter|Type|Description
+|:---|:---|:---|
+|startTime|DateTime|The start time of the email search. |
+|endTime|DateTime|The end time of the email search. |
+
+### OData query parameters
 
 This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`. For general information, see [OData query parameters](/graph/query-parameters).
 <!-- {
@@ -57,13 +66,6 @@ GET /security/analyzedMessages?startTime=2023-06-27&endTime=2023-06-28&$filter=n
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-
-## Parameter /Properties
-|Parameter|Type|Description
-|:---|:---|:---|
-|startTime|DateTime|The start time of the email search. |
-|endTime|DateTime|The end time of the email search. |
-
 
 ## Request body
 
