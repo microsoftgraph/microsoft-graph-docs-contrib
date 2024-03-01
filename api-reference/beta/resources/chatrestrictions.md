@@ -19,7 +19,7 @@ Specifies the configuration for meeting chat restrictions.
 
 | Property            | Type      | Description                                   |
 |:--------------------|:----------|:----------------------------------------------|
-| allowTextOnly  | Boolean   | Indicates if only text is allowed in the meeting chat. Optional. |
+| allowTextOnly  | Boolean   | Indicates whether only text is allowed in the meeting chat. Optional. |
 
 ## JSON representation
 
