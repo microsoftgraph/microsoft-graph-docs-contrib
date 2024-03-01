@@ -9,14 +9,14 @@ doc_type: conceptualPageType
 
 # Grading Categories
 
-A grading category is a property on an assignment setting resource, which in turn belongs to a class. The way to access a grading category is through its containing assignment settings object and its class.
+A grading category is a property on an assignment setting resource, which in turn belongs to a class. You can access a grading category through its containing assignment settings object, or through its class.
 Teachers can use grading categories to weight assignments in the class grade. For example, a class could have 60% of its grade come from "Homework" assignments and 40% from "Test" assignments.
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
 ## Get a class
 
-Retrieve a class from your education tenant. A class is a universal group with a special property that indicates to the system that the group is a class. Group members represent the students; group admins represent the teachers in the class. Get the list of classes from you education tenant and locate the class where you want to set grading categories. If you're using the delegated token, the user will only see classes in which they are members by using the following APIs:
+Retrieve a class from your education tenant. A class is a universal group with a special property that indicates to the system that the group is a class. Group members represent the students; group admins represent the teachers in the class. Get the list of classes from your education tenant and locate the class where you want to set grading categories. If you're using the delegated token, the user will only see classes in which they are members by using the following APIs:
 
 - [Get Class](/graph/api/educationclass-get): Take the classid from the previous request and use it to get the information for that specific class.
 
@@ -26,9 +26,9 @@ GET https://graph.microsoft.com/beta/education/classes/{id}
 
 ## Get assignment settings
 
-Assignments contain handouts and tasks that the teacher wants the student to work on. Each student assignment has an associated submission that contains any work their teacher asked to be turned in. Only teachers or team owners can create assignments. A teacher can add scores and feedback to the submission turned in by the student :
+Assignments contain handouts and tasks that the teacher wants the student to work on. Each student assignment has an associated submission that contains any work their teacher asked to be turned in. Only teachers or team owners can create assignments. A teacher can add scores and feedback to the submission turned in by the student:
 
-- [Get assignment settings](/graph/api/educationassignmentsettings-get): Allows you to see if the assignment settings has any grading categories information already added.
+- [Get assignment settings](/graph/api/educationassignmentsettings-get): Allows you to see if the assignment settings have any grading categories information already added.
 
 ```http
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
