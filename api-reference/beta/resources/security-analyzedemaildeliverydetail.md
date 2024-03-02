@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represnts the delivery action and location of an [analzed email](analyzedemail.md).
+Represnts the delivery action and location of an [analzed email](security-analyzedemail.md).
 
 ## Properties
 |Property|Type|Description|
