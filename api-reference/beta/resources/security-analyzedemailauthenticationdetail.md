@@ -20,9 +20,9 @@ Represents a list of pass or fail verdicts by email authentication protocols suc
 |Property|Type|Description|
 |:---|:---|:---|
 |compositeAuthentication|String|A value used by Microsoft 365 to combine email authentication such as SPF, DKIM, and DMARC, to determine whether the message is authentic.|
-|dkim|String|DomainKeys identified mail (DKIM). Indicates whether it was pass/fail/soft fail etc.|
-|dmarc|String|Domain-based Message Authentication. Indicates whether it was pass/fail/soft fail etc.|
-|senderPolicyFramework|String|Sender Policy Framework (SPF). Indicates whether it was pass/fail/soft fail etc.|
+|dkim|String|DomainKeys identified mail (DKIM). Indicates whether it was pass/fail/soft fail.|
+|dmarc|String|Domain-based Message Authentication. Indicates whether it was pass/fail/soft fail.|
+|senderPolicyFramework|String|Sender Policy Framework (SPF). Indicates whether it was pass/fail/soft fail.|
 
 ## Relationships
 None.
