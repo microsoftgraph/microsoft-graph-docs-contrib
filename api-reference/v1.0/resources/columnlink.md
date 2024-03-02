@@ -1,23 +1,31 @@
 ---
-author: daspek
+author: "daspek"
 ms.date: 09/12/2017
-title: ColumnLink
+title: "columnLink"
 ms.localizationpriority: medium
 description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
-ms.prod: sites-and-lists
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
-# ColumnLink resource type
+
+# columnLink resource type
 
 Namespace: microsoft.graph
 
-A **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.
+A  **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.
 
 [contentType]: contenttype.md
 
+## Properties
+
+| Property name | Type   | Description|
+|:--------------|:-------|:----------------------------------------------------|
+| id            | String | The unique identifier for the column.|
+| name          | String | The name of the column  in this content type.|
+
 ## JSON representation
 
-Here is a JSON representation of a **columnLink** resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
@@ -30,12 +38,6 @@ Here is a JSON representation of a **columnLink** resource.
 }
 ```
 
-## Properties
-
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| **id**        | string | The unique identifier for the column.
-| **name**      | string | The name of the column  in this content type.
 
 <!-- {
   "type": "#page.annotation",
