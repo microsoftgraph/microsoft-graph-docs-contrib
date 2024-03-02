@@ -57,7 +57,7 @@ The following example shows how to use the `$filter` parameter to customize the 
 }
 -->
 ``` http
-GET /security/analyzedMessages?startTime=2023-06-27&endTime=2023-06-28&$filter=networkMessageId eq '35a870a1-dd73-4238-6ad3-08db76b14071’
+GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=NetworkMessageId eq  'bde1f764-bbf4-5673-fbba-0asdhsgfhf1'
 ```
 
 ## Request headers
@@ -85,7 +85,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails
+GET https:security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20
 ```
 
 
