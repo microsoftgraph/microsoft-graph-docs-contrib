@@ -1,6 +1,6 @@
 ---
 title: "analyzedEmail resource type"
-description: Get a list of email meta data.
+description: Contains metadata for email messages that are analyzed for security threats.
 author: "ajaj-shaikh"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Analyzedemails API provides the ability to search over the meta data of emails. 
+Contains metadata for email messages that are analyzed for security threats.
 
 ## Methods
 |Method|Return type|Description|
