@@ -1,6 +1,6 @@
 ---
 title: "analyzedEmailAttachment resource type"
-description: Represents a collection of the attachments in an analyzed email.
+description: Represents an attachment to an analyzed email.
 author: MishraSoumyaMS
 ms.localizationpriority: medium
 ms.prod: security
