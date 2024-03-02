@@ -1,6 +1,6 @@
 ---
 title: "analyzedEmailUrl resource type"
-description: "Information about URLs attached to a specific email"
+description: "Represents information about URLs found in an analyzed email."
 author: "MishraSoumyaMS"
 ms.localizationpriority: medium
 ms.prod: security
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Information about URLs attached to a specific email.
+Represents information about URLs found in an [analyzed email](analyzedemail.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|detectionMethod|String|Method used to detect threats in the URL|
-|detonationDetails|[microsoft.graph.security.detonationDetails](../resources/security-detonationdetails.md)|Detonation data associated with the URL|
-|threatType|microsoft.graph.security.threatType|Threat associated with the URL.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
-|url|String|URL presnt in the email.This is full URL string including query parameters|
+|detectionMethod|String|The method used to detect threats in the URL.|
+|detonationDetails|[microsoft.graph.security.detonationDetails](../resources/security-detonationdetails.md)|Detonation data associated with the URL.|
+|threatType|microsoft.graph.security.threatType|The type of threat associated with the URL. The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
+|url|String|The URL that is found in the email. This is full URL string, including query parameters.|
 
 ## Relationships
 None.
