@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about URLs found in an [analyzed email](analyzedemail.md).
+Represents information about URLs found in an [analyzed email](security-analyzedemail.md).
 
 ## Properties
 |Property|Type|Description|
