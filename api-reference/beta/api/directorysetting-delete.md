@@ -33,6 +33,8 @@ The following permissions are required to update the "Consent Policy Settings" *
 <!-- { "blockType": "permissions", "name": "directorysetting_delete_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-delete-2-permissions.md)]
 
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 Delete a tenant-wide setting.
