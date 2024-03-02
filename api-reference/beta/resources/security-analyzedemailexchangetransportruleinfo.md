@@ -1,6 +1,6 @@
 ---
 title: "analyzedEmailExchangeTransportRuleInfo resource type"
-description: Mail flow rules in Exchange Online
+description: Represents mail flow rules in Exchange Online.
 author: MishraSoumyaMS
 ms.localizationpriority: medium
 ms.prod: security
@@ -13,12 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mail flow rules in Exchange Online
+Represents mail flow rules in Exchange Online.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Name of the ETRs that are part of the email|
-|ruleId|String|ETR rule ID|
+|name|String|Name of the Exchange transport rules (ETRs) that are part of the email.|
+|ruleId|String|The ETR rule ID.|
 
 ## Relationships
 None.
