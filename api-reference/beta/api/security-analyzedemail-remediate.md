@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Remove a potential threat from end users' mailboxes.
 
-Remediation means to take prescribed action against a threat. This API can trigger email purge actions like move to junk, move to deleted items, soft delete, hard delete, or move to Inbox. This API enables scenarios and use cases such as SOAR integration, playbooks, and automations. For more information read [email remediation, trigger action and track actions](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide). If there is false positives admins can take move to inbox action.
+Remediation means to take prescribed action against a threat. This API can trigger email purge actions like move to junk, move to deleted items, soft delete, hard delete, or move to Inbox. This API enables scenarios and use cases such as SOAR integration, playbooks, and automations. For more information read [email remediation, trigger action and track actions](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide&preserve-view=true). If there is false positives admins can take move to inbox action.
 
 ## Permissions
 
@@ -65,7 +65,7 @@ The following table lists the parameters that are required when you call this ac
 
 If successful, this action returns a 204 No Content response code and a Location header with a link to the tracking information. 
 
->**Note:** The response of the action can be tracked in https://security.microsoft.com/action-center/history. Learn more about [Action center](/microsoft-365/security/defender/m365d-action-center?view=o365-worldwide)
+>**Note:** The response of the action can be tracked in https://security.microsoft.com/action-center/history. Learn more about [Action center](/microsoft-365/security/defender/m365d-action-center?view=o365-worldwide&preserve-view=true)
 
 ## Examples
 
