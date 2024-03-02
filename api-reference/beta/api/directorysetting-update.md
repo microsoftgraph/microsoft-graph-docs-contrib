@@ -34,6 +34,8 @@ The following permissions are required to update the "Consent Policy Settings" *
 <!-- { "blockType": "permissions", "name": "directorysetting_update_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-update-2-permissions.md)]
 
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
+
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
