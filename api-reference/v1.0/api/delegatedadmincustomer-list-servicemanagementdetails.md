@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List serviceManagementDetails
 Namespace: microsoft.graph
 
-Get a list of the [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) objects and their properties.
+Get a list of the [delegatedAdminServiceManagementDetail](../resources/delegatedadminservicemanagementdetail.md) objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -31,7 +31,7 @@ GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}/serv
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -43,11 +43,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminServiceManagementDetail](../resources/delegatedadminservicemanagementdetail.md) objects in the response body.
 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,6 +96,9 @@ GET https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminCustomers
 ---
 
 ### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
