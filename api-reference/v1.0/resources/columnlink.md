@@ -1,7 +1,7 @@
 ---
 author: "daspek"
 ms.date: 09/12/2017
-title: "columnLink"
+title: "columnLink resource type"
 ms.localizationpriority: medium
 description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A  **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.
+A **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.
 
 [contentType]: contenttype.md
 
@@ -33,8 +33,8 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "string",
-  "name": "string"
+  "id": "String (identifier)",
+  "name": "String"
 }
 ```
 
