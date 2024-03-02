@@ -1,6 +1,6 @@
 ---
 title: "collaborationRoot resource type"
-description: "Represents an abstract type to read and perform actions on collaborative entities in Microsoft Defender."
+description: "An abstract type that enables read and other actions on collaborative entities in Microsoft Defender."
 author: "MishraSoumyaMS"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,24 +13,22 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract type to read and perform actions on collaborative entities in Microsoft Defender.
+An abstract type that enables read and other actions on collaborative entities in Microsoft Defender.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 | **Analyzed email** |
-|[List analyzedEmails](../api/security-collaborationroot-list-analyzedemails.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|Get the analyzedEmail resources from the analyzedEmails navigation property.|
-|[Get analyzedEmail](../api/security-analyzedemail-get.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Get an analyzedEmail object.|
-|[Remediate analyzedEmail](../api/security-analyzedemail-remediate.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Remediate analyzedEmail objects.|
+|[List analyzedEmails](../api/security-collaborationroot-list-analyzedemails.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|Get a list of [analyzedEmail](../resources/security-analyzedemail.md) objects and their properties.|
+|[Get analyzedEmail](../api/security-analyzedemail-get.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Read the properties and relationships of an [analyzedEmail](../resources/security-analyzedemail.md) object.|
+|[Remediate analyzedEmail](../api/security-analyzedemail-remediate.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Remove a potential threat from end users' mailboxes.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-
+None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|Email metadata.|
+|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|Contains metadata for analyzed emails.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
