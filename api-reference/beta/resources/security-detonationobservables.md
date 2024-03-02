@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents detonation details such exact events that took place and URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). 
+Represents the resources that are included in a detonation, such as URLs, IPs, domains, and files that were found (and can either be problematic or benign). 
 
 ## Properties
 |Property|Type|Description|
