@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of the attachments in an analyzed email.
+Represents an attachment to an analyzed email.
 
 ## Properties
 |Property|Type|Description|
