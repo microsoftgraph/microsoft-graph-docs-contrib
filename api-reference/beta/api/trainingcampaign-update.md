@@ -70,7 +70,6 @@ The following example shows how to update the status of the training campaign. I
 
 ### Request
 
-This is example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_trainingcampaign"
