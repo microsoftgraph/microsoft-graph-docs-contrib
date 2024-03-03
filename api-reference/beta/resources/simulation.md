@@ -69,8 +69,8 @@ Inherits from [entity](../resources/entity.md).
 |draft| The simulation is in draft mode. |
 |running| The simulation is running. |
 |scheduled| The simulation is scheduled. |
-|succeeded| The simulation has succeeded. |
-|failed| The simulation has failed. |
+|succeeded| The simulation is complete with success status. |
+|failed| The simulation is complete with fail status. |
 |cancelled| The simulation is cancelled. |
 |excluded| The simulation is excluded. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
