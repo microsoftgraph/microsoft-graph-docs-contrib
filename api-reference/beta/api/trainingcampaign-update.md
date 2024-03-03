@@ -66,11 +66,11 @@ If successful, this method returns a `202 Accepted` response code and a tracking
 
 ## Example
 
-The following example shows how to update the status of the training campaign. In this case a scheduled training campaign is cancelled
+The following example shows how to update the status of the training campaign. In this case, a scheduled training campaign is canceled.
 
 ### Request
 
-The following example shows a request.
+This is example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_trainingcampaign"

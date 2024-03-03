@@ -46,7 +46,7 @@ If successful, this method returns a `200 OK` response code and a [trainingCampa
 
 ### Request
 
-The following is an example of a request.
+This is an example of a request.
 <!-- {
   "blockType": "request"
 }
