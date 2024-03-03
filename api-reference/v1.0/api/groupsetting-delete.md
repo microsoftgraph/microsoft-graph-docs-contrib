@@ -38,6 +38,8 @@ The following permissions are required to update the "Consent Policy Settings" *
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Policy.ReadWrite.Authorization |
 
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
