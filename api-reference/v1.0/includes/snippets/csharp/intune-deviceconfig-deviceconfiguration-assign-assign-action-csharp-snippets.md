@@ -28,7 +28,7 @@ var requestBody = new AssignPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.DeviceManagement.DeviceConfigurations["{deviceConfiguration-id}"].Assign.PostAsync(requestBody);
+var result = await graphClient.DeviceManagement.DeviceConfigurations["{deviceConfiguration-id}"].Assign.PostAsAssignPostResponseAsync(requestBody);
 
 
 ```
