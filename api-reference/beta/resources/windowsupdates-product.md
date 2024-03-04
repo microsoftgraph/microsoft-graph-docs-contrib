@@ -1,5 +1,5 @@
 ---
-title: "Product resource type"
+title: "product resource type"
 description: "Represents a Windows product."
 author: "skandula"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 
-# Product resource type
+# product resource type
 
 Namespace: microsoft.graph.windowsUpdates
 
