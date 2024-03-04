@@ -7,11 +7,11 @@ ms.prod: "insights"
 doc_type: resourcePageType
 ---
 
-# insightIdentity
+# insightIdentity complex type
 
 Namespace: microsoft.graph
 
-Complex type containing properties of [sharedInsight](insights-shared.md) items. 
+Complex type containing properties of [sharedInsight](insights-shared.md) items.
 
 ## JSON representation
 Here's a JSON representation of the resource

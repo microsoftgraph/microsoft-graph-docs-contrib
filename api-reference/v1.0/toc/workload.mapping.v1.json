@@ -692,8 +692,7 @@
                   "includedResources": [
                     "authenticationCombinationConfiguration",
                     "fido2CombinationConfiguration",
-                    "authenticationMethodModeDetail",
-                    "certificateBasedAuthConfiguration"
+                    "authenticationMethodModeDetail"
                   ]
                 }
               ]
@@ -783,7 +782,7 @@
                   "name": "Domain-based external identities",
                   "workloads": [
                     {
-                      "id": "Microsoft.CPIM",
+                      "id": "Microsoft.DirectoryServices",
                       "includedResources": [
                         "samlOrWsFedExternalDomainFederation"
                       ]
@@ -794,7 +793,7 @@
                   "name": "Federation with Microsoft Entra ID",
                   "workloads": [
                     {
-                      "id": "Microsoft.CPIM",
+                      "id": "Microsoft.DirectoryServices",
                       "includedResources": [
                         "internalDomainFederation"
                       ]
@@ -1429,8 +1428,6 @@
                   "includedResources": [
                     "meetingAttendanceReport",
                     "attendanceRecord",
-                    "callRecording",
-                    "callTranscript",
                     "onlineMeeting"
                   ]
                 },
@@ -1735,6 +1732,10 @@
     {
       "term": "pstn",
       "override": "PSTN"
+    },
+    {
+      "term": "saml or ws fed",
+      "override": "SAML/WS-Fed"
     }
   ]
 }

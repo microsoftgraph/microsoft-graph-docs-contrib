@@ -4,7 +4,7 @@ description: "Granular delegated admin privileges (GDAP) allow Microsoft partner
 author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: partner-customer-administration
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ms.custom: zt-include
 ---
 
@@ -40,7 +40,7 @@ The following diagram shows the status of the Delegated Admin relationship trans
 
 Send the invitation link to the customer for them to approve the GDAP request. For example, `https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is an invitation link, where `5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is the admin relationship request ID. After the customer approves the GDAP request, the GDAP relationship will transition to an active state.
 
-To finalize the workflow for enabling admin on behalf of (AOBO) management of the customer's tenant, proceed by creating a new access assignment for the delegated admin relationship by using the [Create accessAssignments](../api/delegatedadminrelationship-post-accessassignments.md) API. 
+To finalize the workflow for enabling admin on behalf of (AOBO) management of the customer's tenant, proceed by creating a new access assignment for the delegated admin relationship by using the [Create accessAssignments](../api/delegatedadminrelationship-post-accessassignments.md) API.
 
 
 ### Lifecycle of a GDAP relationship access assignment
