@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Set default educationGradingScheme
+# Create educationGradingScheme
 
 Namespace: microsoft.graph
 
