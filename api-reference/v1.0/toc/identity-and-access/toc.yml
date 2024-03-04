@@ -757,12 +757,16 @@ items:
         href: ../../resources/accesspackageanswerstring.md
       - name: Access package approval stage
         href: ../../resources/accesspackageapprovalstage.md
+      - name: Access package assignment approval settings
+        href: ../../resources/accesspackageassignmentapprovalsettings.md
       - name: Access package assignment request callback data
         href: ../../resources/accesspackageassignmentrequestcallbackdata.md
       - name: Access package assignment request requirements
         href: ../../resources/accesspackageassignmentrequestrequirements.md
       - name: Access package assignment requestor settings
         href: ../../resources/accesspackageassignmentrequestorsettings.md
+      - name: Access package assignment review settings
+        href: ../../resources/accesspackageassignmentreviewsettings.md
       - name: Access package automatic request settings
         href: ../../resources/accesspackageautomaticrequestsettings.md
       - name: Access package localized text
@@ -793,6 +797,8 @@ items:
         href: ../../resources/azureactivedirectorytenant.md
       - name: Azure ad pop token authentication
         href: ../../resources/azureadpoptokenauthentication.md
+      - name: Connected organization members
+        href: ../../resources/connectedorganizationmembers.md
       - name: Connection info
         href: ../../resources/connectioninfo.md
       - name: Cross cloud azure active directory tenant
@@ -823,8 +829,14 @@ items:
         href: ../../resources/expirationpattern.md
       - name: External domain federation
         href: ../../resources/externaldomainfederation.md
+      - name: External sponsors
+        href: ../../resources/externalsponsors.md
+      - name: Group members
+        href: ../../resources/groupmembers.md
       - name: Identity source
         href: ../../resources/identitysource.md
+      - name: Internal sponsors
+        href: ../../resources/internalsponsors.md
       - name: Logic app trigger endpoint configuration
         href: ../../resources/logicapptriggerendpointconfiguration.md
       - name: Patterned recurrence
@@ -833,8 +845,16 @@ items:
         href: ../../resources/recurrencepattern.md
       - name: Recurrence range
         href: ../../resources/recurrencerange.md
+      - name: Requestor manager
+        href: ../../resources/requestormanager.md
+      - name: Single service principal
+        href: ../../resources/singleserviceprincipal.md
+      - name: Single user
+        href: ../../resources/singleuser.md
       - name: Social identity source
         href: ../../resources/socialidentitysource.md
+      - name: Subject set
+        href: ../../resources/subjectset.md
       - name: Target application owners
         href: ../../resources/targetapplicationowners.md
       - name: Target manager
@@ -1041,6 +1061,8 @@ items:
         href: ../../resources/identitygovernance-rulebasedsubjectset.md
       - name: Run summary
         href: ../../resources/identitygovernance-runsummary.md
+      - name: Subject set
+        href: ../../resources/subjectset.md
       - name: Task report summary
         href: ../../resources/identitygovernance-taskreportsummary.md
       - name: Time based attribute trigger

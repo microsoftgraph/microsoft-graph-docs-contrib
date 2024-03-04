@@ -179,6 +179,14 @@ items:
     href: ../../api/formatprotection-get.md
   - name: Update
     href: ../../api/formatprotection-update.md
+- name: Workbook icon
+  items:
+  - name: Workbook icon
+    href: ../../resources/icon.md
+  - name: Get Icon
+    href: ../../api/icon-get.md
+  - name: Update
+    href: ../../api/icon-update.md
 - name: Workbook named item
   items:
   - name: Workbook named item
@@ -493,5 +501,7 @@ items:
     href: ../../resources/workbookoperationerror.md
   - name: Workbook session info
     href: ../../resources/workbooksessioninfo.md
+  - name: Workbook sort field
+    href: ../../resources/sortfield.md
   - name: Workbook worksheet protection options
     href: ../../resources/worksheetprotectionoptions.md

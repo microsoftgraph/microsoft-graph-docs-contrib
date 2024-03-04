@@ -41,6 +41,8 @@ items:
       href: ../../api/insights-list-used.md
   - name: Complex types
     items:
+    - name: Insight identity
+      href: ../../resources/insights-insightidentity.md
     - name: Office graph insights
       href: ../../resources/officegraphinsights.md
     - name: Resource reference

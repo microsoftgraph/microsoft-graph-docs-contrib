@@ -1,5 +1,5 @@
 ---
-title: "SortField resource type"
+title: workbookSortField resource type
 description: "Represents a condition in a sorting operation."
 ms.localizationpriority: medium
 author: "ruoyingl"
