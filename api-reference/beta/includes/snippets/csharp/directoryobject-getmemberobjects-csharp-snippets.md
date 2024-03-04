@@ -15,7 +15,7 @@ var requestBody = new GetMemberObjectsPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Me.GetMemberObjects.PostAsync(requestBody);
+var result = await graphClient.Me.GetMemberObjects.PostAsGetMemberObjectsPostResponseAsync(requestBody);
 
 
 ```

@@ -192,12 +192,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: list_authenticationlistener_invokeuserflowlistener/container/userFlow/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: list_authenticationlistener_invokeuserflowlistener/container/userFlow/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: listauthenticationlistenerinvokeuserflowlistener/container/userFlow:
-      Schema validation failed on property 'userFlow' ['microsoft.graph.b2xIdentityUserFlow']",
-    "Error: listauthenticationlistenerinvokeuserflowlistener/container/userFlow:
-      Schema validation failed on property 'userFlow' ['microsoft.graph.b2xIdentityUserFlow']",
     "Error: listauthenticationlistenerinvokeuserflowlistener/container/userFlow/userFlowTypeVersion:
       Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
     "Error: listauthenticationlistenerinvokeuserflowlistener/container/userFlow/userFlowTypeVersion:

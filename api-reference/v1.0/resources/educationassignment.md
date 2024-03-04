@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Represents a task or unit of work assigned to a student or team member in a class as part of their study. 
 
-Only teachers or team owners can create **assignments**. **Assignments** contain handouts and tasks that the teacher wants the student to work on. Each student **assignment** has an associated [submission](educationsubmissionresource.md) that contains any work their teacher asked to be turned in. A teacher can add scores and feedback to the **submission** turned in by the student.
+**Assignments** contain handouts and tasks that the teacher wants the student to work on. Each student **assignment** has an associated [submission](educationsubmissionresource.md) that contains any work their teacher asked to be turned in. Only teachers or team owners can create **assignments**. A teacher can add scores and feedback to the **submission** turned in by the student.
 
-When an **assignment** is created, it is in a Draft state. Students can't see the **assignment** and **submissions**. You can change the status of an **assignment** by using the [publish](../api/educationassignment-publish.md) action. You can't use a PATCH request to change the **assignment** status.
+When an **assignment** is created, it is in a draft state. Students can't see the **assignment**, and **submissions** aren't created. You can change the status of an **assignment** by using the [publish](../api/educationassignment-publish.md) action. You can't use a PATCH request to change the **assignment** status.
 
 The assignment APIs are exposed in the class namespace.
 
@@ -42,6 +42,9 @@ Inherits from [entity](../resources/entity.md).
 |[Get delta](../api/educationassignment-delta.md)|[educationAssignment](../resources/educationassignment.md) collection|Get a list of newly created or updated **educationAssignment** objects without having to perform a full read of the collection.|
 |[Add educationGradingCategory](../api/educationassignment-post-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Add an [educationGradingCategory](../resources/educationgradingcategory.md) to the **educationGradingCategory** collection.|
 |[Remove educationGradingCategory](../api/educationassignment-delete-gradingcategory.md)|None|Remove an [educationGradingCategory](../resources/educationgradingcategory.md) object from the **educationGradingCategory** collection.|
+|[Activate assignment](../api/educationassignment-activate.md) |[educationAssignment](educationassignment.md) | Activate an `inactive` **educationAssignment** to signal that the assignment has further action items for teachers or students.|
+|[Deactivate assignment](../api/educationassignment-deactivate.md) |[educationAssignment](educationassignment.md) | Mark an `assigned` **educationAssignment** as `inactive` to signal that the assignment has no further action items for teachers and students.|
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -67,7 +70,7 @@ Inherits from [entity](../resources/entity.md).
 |moduleUrl|string| The URL of the module from which to access the **assignment**.|
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the **assignment** publish notification. If not specified or null, defaults to the `General` channel. This field only applies to **assignments** where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** isn't allowed after the assignment is published.|
 |resourcesFolderUrl|string| Folder URL where all the file resources for this **assignment** are stored.|
-|status|string| Status of the **Assignment**. You can't PATCH this value. Possible values are: `draft`, `scheduled`, `published`, `assigned`.|
+|status|educationAssignmentStatus| Status of the **assignment**.  You can't PATCH this value. Possible values are: `draft`, `scheduled`, `published`, `assigned`, `unknownFutureValue`, `inactive`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `inactive`.|
 |webUrl|string| The deep link URL for the given **assignment**.|
 
 ## Relationships

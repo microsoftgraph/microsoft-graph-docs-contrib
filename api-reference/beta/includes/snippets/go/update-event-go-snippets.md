@@ -28,8 +28,6 @@ responseStatus.SetTime(&time)
 requestBody.SetResponseStatus(responseStatus)
 recurrence := null
 requestBody.SetRecurrence(&recurrence) 
-uid := "iCalUId-value"
-requestBody.SetUid(&uid) 
 reminderMinutesBeforeStart := int32(99)
 requestBody.SetReminderMinutesBeforeStart(&reminderMinutesBeforeStart) 
 isOnlineMeeting := true

@@ -19,21 +19,21 @@ requestBody := graphmodels.NewContact()
 
 
 typedEmailAddress := graphmodels.NewTypedEmailAddress()
-type := graphmodels.PERSONAL_EMAILTYPE
-typedEmailAddress.SetType(&type)
+type := graphmodels.PERSONAL_EMAILTYPE 
+typedEmailAddress.SetType(&type) 
 name := "Pavel Bansky"
-typedEmailAddress.SetName(&name)
+typedEmailAddress.SetName(&name) 
 address := "pavelb@contoso.com"
-typedEmailAddress.SetAddress(&address)
+typedEmailAddress.SetAddress(&address) 
 typedEmailAddress1 := graphmodels.NewTypedEmailAddress()
 address := "pavelb@contoso.com"
-typedEmailAddress1.SetAddress(&address)
+typedEmailAddress1.SetAddress(&address) 
 name := "Pavel Bansky"
-typedEmailAddress1.SetName(&name)
-type := graphmodels.OTHER_EMAILTYPE
-typedEmailAddress1.SetType(&type)
+typedEmailAddress1.SetName(&name) 
+type := graphmodels.OTHER_EMAILTYPE 
+typedEmailAddress1.SetType(&type) 
 otherLabel := "Volunteer work"
-typedEmailAddress1.SetOtherLabel(&otherLabel)
+typedEmailAddress1.SetOtherLabel(&otherLabel) 
 
 emailAddresses := []graphmodels.TypedEmailAddressable {
 	typedEmailAddress,

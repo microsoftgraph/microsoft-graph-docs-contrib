@@ -10,8 +10,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
-
 Download the contents of the primary stream (file) of a [driveItem](../resources/driveitem.md). Only **driveItems** with the **file** property can be downloaded.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]

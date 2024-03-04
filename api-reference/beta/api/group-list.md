@@ -2,7 +2,8 @@
 title: "List groups"
 description: "List all the groups available in an organization, excluding dynamic distribution groups."
 ms.localizationpriority: high
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

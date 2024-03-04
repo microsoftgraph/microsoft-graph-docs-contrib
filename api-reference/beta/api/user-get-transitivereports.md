@@ -2,6 +2,7 @@
 title: "Get transitiveReports for a user"
 description: "Get the count of transitive reports for a user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

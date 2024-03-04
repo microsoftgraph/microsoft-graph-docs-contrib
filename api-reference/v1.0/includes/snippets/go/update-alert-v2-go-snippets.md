@@ -17,13 +17,13 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodelssecurity.NewAlert()
 assignedTo := "secAdmin@contoso.com"
-requestBody.SetAssignedTo(&assignedTo)
-classification := graphmodels.TRUEPOSITIVE_ALERTCLASSIFICATION
-requestBody.SetClassification(&classification)
-determination := graphmodels.MALWARE_ALERTDETERMINATION
-requestBody.SetDetermination(&determination)
-status := graphmodels.INPROGRESS_ALERTSTATUS
-requestBody.SetStatus(&status)
+requestBody.SetAssignedTo(&assignedTo) 
+classification := graphmodels.TRUEPOSITIVE_ALERTCLASSIFICATION 
+requestBody.SetClassification(&classification) 
+determination := graphmodels.MALWARE_ALERTDETERMINATION 
+requestBody.SetDetermination(&determination) 
+status := graphmodels.INPROGRESS_ALERTSTATUS 
+requestBody.SetStatus(&status) 
 
 alerts_v2, err := graphClient.Security().Alerts_v2().ByAlertId("alert-id").Patch(context.Background(), requestBody, nil)
 

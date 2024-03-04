@@ -2,7 +2,8 @@
 title: "List organizations"
 description: "Retrieve a list of organization objects."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

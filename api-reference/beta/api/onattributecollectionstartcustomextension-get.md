@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://microsoft.graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionStartListener/handler/microsoft.graph.onAttributeCollectionStartCustomExtensionHandler/customExtension
+GET https://graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionStartListener/handler/microsoft.graph.onAttributeCollectionStartCustomExtensionHandler/customExtension
 ```
 
 # [JavaScript](#tab/javascript)
