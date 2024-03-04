@@ -10751,11 +10751,11 @@ items:
           - name: Grading category
             href: resources/educationgradingcategory.md
             items:
-              - name: Add grading category
+              - name: Add
                 href: api/educationassignment-post-gradingcategory.md
-              - name: Update grading category
+              - name: Update
                 href: api/educationgradingcategory-update.md
-              - name: Delete grading category
+              - name: Delete
                 href: api/educationassignment-delete-gradingcategory.md
           - name: Module
             href: resources/educationmodule.md
@@ -18780,6 +18780,13 @@ items:
                     href: api/openshiftchangerequest-approve.md
                   - name: Decline
                     href: api/openshiftchangerequest-decline.md
+              - name: Role definition (preview)
+                href: resources/shiftsroledefinition.md
+                items:
+                  - name: Get
+                    href: api/shiftsroledefinition-get.md
+                  - name: Update
+                    href: api/shiftsroledefinition-update.md
               - name: Schedule
                 href: resources/schedule.md
                 items:
