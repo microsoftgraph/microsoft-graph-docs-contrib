@@ -5,7 +5,6 @@ author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
 doc_type: resourcePageType
-ms.custom: zt-include
 ---
 
 # Secure access to cloud, public, and private apps using Microsoft Graph network access APIs (preview)
