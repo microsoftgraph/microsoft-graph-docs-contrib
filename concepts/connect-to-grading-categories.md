@@ -16,7 +16,7 @@ Teachers can use grading categories to weight assignments in the class grade. Fo
 
 ## Get a class
 
-Retrieve a class from your education tenant. A class is a universal group with a special property that indicates to the system that the group is a class. Group members represent the students; group admins represent the teachers in the class. Get the list of classes from your education tenant and locate the class where you want to set grading categories. If you're using the delegated token, the user will only see classes in which they are members by using the following APIs:
+Get the list of classes from your education tenant and locate the class where you want to set grading categories.
 
 - [Get Class](/graph/api/educationclass-get): Take the classid from the previous request and use it to get the information for that specific class.
 
