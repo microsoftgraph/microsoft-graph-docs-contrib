@@ -1,0 +1,67 @@
+---
+title: "knownIssue resource type"
+description: "Represents a known issue related to a Windows product."
+author: "skandula"
+ms.localizationpriority: medium
+ms.service: "windows-10"
+doc_type: resourcePageType
+---
+
+# knownIssue resource type
+
+Namespace: microsoft.graph.windowsUpdates
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents a known issue related to a Windows product. 
+
+Supported Methods: GET
+
+Supported query parameters: filter(eq) status, filter(ge, le) startDateTime, filter(ge, le) lastUpdatedDateTime, filter(ge, le) resolvedDateTime
+
+## Properties
+        
+|Property|Type|Description|
+|:---|:---|:---|
+|description|String|The description of the particular known issue.|
+|id|String|The unique identifier for the entry. Read-only.|
+|lastUpdatedDateTime|DateTimeOffset|The date and time when the known issue was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|resolvedDateTime|DateTimeOffset| The date and time when the known issue was resolved or mitigated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|startDateTime|DateTimeOffset|The date and time when the known issue was first reported. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+|status|String|The status of the known issue.|
+|title|String|The title of the known issue.|
+|webViewUrl|String|The URL to the known issue in the Windows Release Health dashboard on Microsoft 365 admin center.|
+
+## Relationships
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+|knownIssueHistories| [microsoft.graph.windowsUpdates.knownIssueHistories](../resources/windowsupdates-knownissuehistories.md) collection| A list of known issue histories.|
+|originatingKnowledgeBaseArticle | [microsoft.graph.windowsUpdates.knowledgebasearticle](../resources/windowsupdates-knowledgebasearticle.md) collection |Knowledge base article associated with the release when the known issue was first reported. |
+|resolvingKnowledgeBaseArticle| [microsoft.graph.windowsUpdates.knowledgebasearticle](../resources/windowsupdates-knowledgebasearticle.md) collection|Knowledge base article associated with the release when the known issue was resolved or mitigated. |
+|safeguardHoldIds|Int32 collection|A list of safeguard hold IDs associated with the known issue.|
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windowsUpdates.knownIssue",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.windowsUpdates.knowsIssue",
+  "description": "String",
+  "id": "String (identifier)",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "resolvedDateTime": "String (timestamp)",
+  "startDateTime": "String (timestamp)",
+  "status": "String",
+  "title": "String",
+  "webViewUrl": "String"
+}
+```
