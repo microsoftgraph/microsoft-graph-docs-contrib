@@ -51,14 +51,14 @@ You can specify the following properties when creating a **trainingCampaign**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the training campaign. Optional.|
-|createdDateTime|DateTimeOffset|Date and time of creation of the training campaign. Optional.|
-|description|String|Description of the training campaign. Optional.|
-|displayName|String|Display name of the training campaign. Required.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|The identity of the user who created the training campaign. Optional.|
+|createdDateTime|DateTimeOffset|the date and time when the training campaign was created. Optional.|
+|description|String|The description of the training campaign. Optional.|
+|displayName|String|The display name of the training campaign. Required.|
 |endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|Details about the end user notification setting. Required.|
-|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users excluded from the training campaign. Optional.|
-|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the training campaign. Required.|
-|lastModifiedDateTime|DateTimeOffset|Identity of the user who most recently modified the training campaign. Optional.|
+|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|The users who areexcluded from the training campaign. Optional.|
+|includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|The users who are targeted in the training campaign. Required.|
+|lastModifiedDateTime|DateTimeOffset|The identity of the user who most recently modified the training campaign. Optional.|
 |trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Details about the training settings for a training campaign. Required.|
 |campaignSchedule|[campaignSchedule](../resources/campaignschedule.md)|Details about the schedule and current status for a training campaign. Required.|
 

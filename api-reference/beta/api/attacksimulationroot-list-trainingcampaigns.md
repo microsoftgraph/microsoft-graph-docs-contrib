@@ -1,6 +1,6 @@
 ---
 title: "List trainingCampaign objects"
-description: "Get a list of the trainingCampaign objects and their properties."
+description: "Get a list of trainingCampaign objects and their properties."
 author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [trainingCampaign](../resources/trainingcampaign.md) objects and their properties.
+Get a list of [trainingCampaign](../resources/trainingcampaign.md) objects and their properties.
 
 ## Permissions
 
@@ -42,7 +42,7 @@ This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, 
 
 If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
-The following are examples of their use:
+The following list shows some examples of requests that use the supported OData query parameters:
 
 <!-- {
   "blockType": "ignored"
