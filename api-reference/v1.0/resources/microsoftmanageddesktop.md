@@ -17,8 +17,8 @@ Represents specific settings for the Microsoft Managed Desktop that enables cust
 
 |Property|Type|Description|
 |:---|:---|:---|
-|profile|String|The name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.|
 |managedType|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates the provisioning policy associated with Microsoft Managed Desktop settings. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`. Default is `notManaged`.|
+|profile|String|The name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.|
 
 ### microsoftManagedDesktopType values
 
