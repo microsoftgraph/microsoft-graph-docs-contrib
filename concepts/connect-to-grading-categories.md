@@ -26,7 +26,6 @@ GET https://graph.microsoft.com/beta/education/classes
 
 ## Get assignment settings
 
-Assignments contain handouts and tasks that the teacher wants the student to work on. Each student assignment has an associated submission that contains any work their teacher asked to be turned in. Only teachers or team owners can create assignments. A teacher can add scores and feedback to the submission turned in by the student:
 
 - [Get assignment settings](/graph/api/educationassignmentsettings-get): Allows you to see if the assignment settings have any grading categories information already added.
 
