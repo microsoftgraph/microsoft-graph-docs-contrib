@@ -1,5 +1,5 @@
 ---
-title: "List daily activeUsersBreakdown"
+title: "List daily activeUsersBreakdown (deprecated)"
 description: "Get a list of daily activeUsersBreakdown objects on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
@@ -7,10 +7,13 @@ ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List daily activeUsersBreakdown
+# List daily activeUsersBreakdown (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on March 9, 2024. Use the [List monthly activeUsers](../api/monthlyuserinsightmetricsroot-list-activeusers.md) API instead.
 
 Get a list of daily [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.
 
@@ -25,7 +28,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-ciam-user-insights-apis](../includes/rbac-for-apis/rbac-ciam-user-insights-apis.md)]
 
 ## HTTP request
-
 <!-- {
   "blockType": "ignored"
 }

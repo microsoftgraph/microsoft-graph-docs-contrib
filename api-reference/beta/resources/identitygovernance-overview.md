@@ -78,9 +78,5 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Error: /resources/identitygovernance-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
+  "suppressions": []
 } -->

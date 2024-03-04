@@ -9,11 +9,11 @@ doc_type: conceptualPageType
 
 # Deploy an expedited quality update using the Windows Update for Business deployment service
 
-With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited quality updates, and driver updates. This topic focuses on deployments of expedited quality updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).  For information about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
+With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited quality updates, and driver updates. This topic focuses on deployments of expedited quality updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).  For information about deploying driver updates, see [Manage driver update](./windowsupdates-manage-driver-update.md).
 
-Expediting a quality update overrides Windows Update for Business deferral policies so that the update is installed as quickly as possible. It can be useful when critical quality events arise and you need to deploy the latest updates more rapidly than normal. However, while it can help to achieve compliance targets against a specific quality update, it is not designed to be used every month. Instead, consider using [compliance deadlines for updates](/windows/deployment/update/wufb-compliancedeadlines).
+Expediting a quality update overrides Windows Update for Business deferral policies so that the update is installed as quickly as possible. It can be useful when critical quality events arise and you need to deploy the latest updates more rapidly than normal. However, while it can help to achieve compliance targets against a specific quality update, it's not designed to be used every month. Instead, consider using [compliance deadlines for updates](/windows/deployment/update/wufb-compliancedeadlines).
 
-When you deploy an expedited quality update to a device, Windows Update offers the latest applicable update to the device if it has not yet received the update with the specified release date. For example, if you deploy the Windows 10 security update released on April 13, 2021 to a device that does not currently have the update, the device receives an expedited update. If the device already has the specified update or newer, it does not receive an expedited update.
+When you deploy an expedited quality update to a device, Windows Update offers the latest applicable update to the device if it has not yet received the update with the specified release date. For example, if you deploy the Windows 10 security update released on April 13, 2021, to a device that doesn't currently have the update, the device receives an expedited update. If the device already has the specified update or newer, it doesn't receive an expedited update.
 
 Expedited quality updates also have the following characteristics:
 
@@ -437,9 +437,9 @@ Content-Type: application/json
 
 ## Step 3: Assign devices to the deployment audience
 
-After a deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). When the deployment audience is successfully updated, Windows Update starts offering the update to the relevant devices according to the deployment settings.
+After deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). When the deployment audience is successfully updated, Windows Update offers the update to the relevant devices according to the deployment settings.
 
-Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).
+Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it doesn't already exist).
 
 The following example shows how to add Microsoft Entra devices as members of the deployment audience.
 
@@ -475,8 +475,8 @@ HTTP/1.1 202 Accepted
 
 ## During a deployment
 
-While a deployment is in progress, you can pause the deployment by updating its **state**, as well as update its audience members and exclusions.
+While deployment is in progress, you can pause the deployment by updating its **state** and update its audience members and exclusions.
 
 ## After a deployment
 
-After all devices assigned to a deployment audience have been initially offered the update, it is possible that not all devices have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, it continues to make sure that Windows Update is offering the update to the assigned devices whenever they reconnect.
+After all devices assigned to a deployment audience have been initially offered the update, not all devices may have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, it ensures that Windows Update is offering the update to the assigned devices whenever they reconnect.

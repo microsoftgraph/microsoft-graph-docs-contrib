@@ -23,15 +23,12 @@ This method supports federation. To list channel messages in application context
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)| ChannelMessage.Read.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
+<!-- { "blockType": "permissions", "name": "channel_list_messages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/channel-list-messages-permissions.md)]
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note**: The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -73,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request with $top query option and without optional prefer header.
+The following example shows a request with the $top query option and without the optional prefer header.
 
 
 # [HTTP](#tab/http)
@@ -334,7 +331,7 @@ Prefer: include-unknown-enum-members
 ---
 
 #### Response
-The following is an example of the response  when `Prefer: include-unknown-enum-members` is provided in the request header.
+The following example shows the response when `Prefer: include-unknown-enum-members` is provided in the request header.
 
 <!-- {
   "blockType": "response",

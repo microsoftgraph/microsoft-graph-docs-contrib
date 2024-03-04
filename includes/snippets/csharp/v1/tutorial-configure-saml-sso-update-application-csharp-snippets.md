@@ -11,16 +11,16 @@ using Microsoft.Graph.Models;
 
 var requestBody = new Application
 {
+	IdentifierUris = new List<string>
+	{
+		"https://signin.aws.amazon.com/saml",
+	},
 	Web = new WebApplication
 	{
 		RedirectUris = new List<string>
 		{
 			"https://signin.aws.amazon.com/saml",
 		},
-	},
-	IdentifierUris = new List<string>
-	{
-		"https://signin.aws.amazon.com/saml",
 	},
 };
 
