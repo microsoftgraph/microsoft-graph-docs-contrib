@@ -19,7 +19,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the provisioning policy assignment. If **target** is a user group, then the ID is shown as `{policyId_groupId}`. Read-only. Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the provisioning policy assignment. If **target** is a user group, then the ID is shown as `{policyId_groupId}`. Read-only. Inherited from [entity](../resources/entity.md).|
 |target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the provisioning policy. Currently, the only target supported for this policy is a user group. For details, see [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md). |
 
 ## Relationships
