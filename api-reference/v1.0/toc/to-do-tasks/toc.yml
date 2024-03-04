@@ -1,4 +1,6 @@
 items:
+- name: Overview
+  href: ../../resources/todo-overview.md
 - name: Todo task list
   items:
   - name: Todo task list
@@ -39,34 +41,6 @@ items:
     href: ../../api/todotask-list-linkedresources.md
   - name: Create linkedResources
     href: ../../api/todotask-post-linkedresources.md
-- name: Linked resource
-  items:
-  - name: Linked resource
-    href: ../../resources/linkedresource.md
-  - name: List linkedResources
-    href: ../../api/todotask-list-linkedresources.md
-  - name: Create linkedResource
-    href: ../../api/todotask-post-linkedresources.md
-  - name: Get linkedResource
-    href: ../../api/linkedresource-get.md
-  - name: Update linkedResource
-    href: ../../api/linkedresource-update.md
-  - name: Delete linkedResource
-    href: ../../api/linkedresource-delete.md
-- name: Checklist item
-  items:
-  - name: Checklist item
-    href: ../../resources/checklistitem.md
-  - name: List checklistItems
-    href: ../../api/todotask-list-checklistitems.md
-  - name: Create checklistItem
-    href: ../../api/todotask-post-checklistitems.md
-  - name: Get checklistItem
-    href: ../../api/checklistitem-get.md
-  - name: Update checklistItem
-    href: ../../api/checklistitem-update.md
-  - name: Delete checklistItem
-    href: ../../api/checklistitem-delete.md
 - name: Task file attachment
   items:
   - name: Task file attachment
@@ -81,3 +55,31 @@ items:
     href: ../../api/taskfileattachment-get.md
   - name: Delete attachment
     href: ../../api/taskfileattachment-delete.md
+- name: Checklist item
+  items:
+  - name: Checklist item
+    href: ../../resources/checklistitem.md
+  - name: List checklistItems
+    href: ../../api/todotask-list-checklistitems.md
+  - name: Create checklistItem
+    href: ../../api/todotask-post-checklistitems.md
+  - name: Get checklistItem
+    href: ../../api/checklistitem-get.md
+  - name: Update checklistItem
+    href: ../../api/checklistitem-update.md
+  - name: Delete checklistItem
+    href: ../../api/checklistitem-delete.md
+- name: Linked resource
+  items:
+  - name: Linked resource
+    href: ../../resources/linkedresource.md
+  - name: List linkedResources
+    href: ../../api/todotask-list-linkedresources.md
+  - name: Create linkedResource
+    href: ../../api/todotask-post-linkedresources.md
+  - name: Get linkedResource
+    href: ../../api/linkedresource-get.md
+  - name: Update linkedResource
+    href: ../../api/linkedresource-update.md
+  - name: Delete linkedResource
+    href: ../../api/linkedresource-delete.md

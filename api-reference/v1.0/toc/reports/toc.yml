@@ -1,74 +1,62 @@
 items:
 - name: Identity and access reports
   items:
-  - name: Directory audit
+  - name: Microsoft Entra activity reports
     items:
+    - name: Registration and usage
+      items:
+      - name: Overview
+        href: ../../resources/authenticationmethods-usage-insights-overview.md
+      - name: User registration details
+        items:
+        - name: User registration details
+          href: ../../resources/userregistrationdetails.md
+        - name: List userRegistrationDetails
+          href: ../../api/authenticationmethodsroot-list-userregistrationdetails.md
+        - name: Get userRegistrationDetails
+          href: ../../api/userregistrationdetails-get.md
+      - name: User registration feature summary
+        items:
+        - name: User registration feature summary
+          href: ../../resources/userregistrationfeaturesummary.md
+        - name: usersRegisteredByFeature
+          href: ../../api/authenticationmethodsroot-usersregisteredbyfeature.md
+      - name: User registration method summary
+        items:
+        - name: User registration method summary
+          href: ../../resources/userregistrationmethodsummary.md
+        - name: usersRegisteredByMethod
+          href: ../../api/authenticationmethodsroot-usersregisteredbymethod.md
+  - name: Microsoft Entra audit logs
+    items:
+    - name: Overview
+      href: ../../resources/azure-ad-auditlog-overview.md
     - name: Directory audit
-      href: ../../resources/directoryaudit.md
-    - name: List directoryAudits
-      href: ../../api/directoryaudit-list.md
-    - name: Get directoryAudit
-      href: ../../api/directoryaudit-get.md
-  - name: Sign in
-    items:
+      items:
+      - name: Directory audit
+        href: ../../resources/directoryaudit.md
+      - name: List directoryAudits
+        href: ../../api/directoryaudit-list.md
+      - name: Get directoryAudit
+        href: ../../api/directoryaudit-get.md
     - name: Sign in
-      href: ../../resources/signin.md
-    - name: List signIn
-      href: ../../api/signin-list.md
-    - name: Get signIn
-      href: ../../api/signin-get.md
-  - name: Provisioning object summary
-    items:
+      items:
+      - name: Sign in
+        href: ../../resources/signin.md
+      - name: List signIn
+        href: ../../api/signin-list.md
+      - name: Get signIn
+        href: ../../api/signin-get.md
     - name: Provisioning object summary
-      href: ../../resources/provisioningobjectsummary.md
-    - name: List provisioningObjectSummary
-      href: ../../api/provisioningobjectsummary-list.md
-  - name: Directory object
-    items:
-    - name: Directory object
-      href: ../../resources/directoryobject.md
-    - name: Get directoryObject
-      href: ../../api/directoryobject-get.md
-    - name: Get delta
-      href: ../../api/directoryobject-delta.md
-    - name: Delete directoryObject
-      href: ../../api/directoryobject-delete.md
-    - name: Get available extension properties
-      href: ../../api/directoryobject-getavailableextensionproperties.md
-    - name: checkMemberGroups
-      href: ../../api/directoryobject-checkmembergroups.md
-    - name: getMemberGroups
-      href: ../../api/directoryobject-getmembergroups.md
-    - name: checkMemberObjects
-      href: ../../api/directoryobject-checkmemberobjects.md
-    - name: getMemberObjects
-      href: ../../api/directoryobject-getmemberobjects.md
-    - name: getByIds
-      href: ../../api/directoryobject-getbyids.md
-    - name: validateProperties
-      href: ../../api/directoryobject-validateproperties.md
-  - name: User registration details
-    items:
-    - name: User registration details
-      href: ../../resources/userregistrationdetails.md
-    - name: List userRegistrationDetails
-      href: ../../api/authenticationmethodsroot-list-userregistrationdetails.md
-    - name: Get userRegistrationDetails
-      href: ../../api/userregistrationdetails-get.md
-  - name: Audit log root
-    items:
-    - name: Audit log root
-      href: ../../resources/auditlogroot.md
-    - name: List directoryAudits
-      href: ../../api/directoryaudit-list.md
-    - name: Get directoryAudit
-      href: ../../api/directoryaudit-get.md
-    - name: List signIn
-      href: ../../api/signin-list.md
-    - name: Get signIn
-      href: ../../api/signin-get.md
+      items:
+      - name: Provisioning object summary
+        href: ../../resources/provisioningobjectsummary.md
+      - name: List provisioningObjectSummary
+        href: ../../api/provisioningobjectsummary-list.md
 - name: Microsoft 365 usage reports
   items:
+  - name: Overview
+    href: ../../resources/report.md
   - name: Report root
     items:
     - name: Report root
@@ -267,3 +255,53 @@ items:
         href: ../../api/reportroot-getyammergroupsactivitygroupcounts.md
       - name: Get activity counts
         href: ../../api/reportroot-getyammergroupsactivitycounts.md
+- name: Microsoft Defender for Office 365 security reports
+  items:
+  - name: Overview
+    href: ../../resources/report-m365defender-reports-overview.md
+  - name: Attack simulation repeat offender
+    items:
+    - name: Attack simulation repeat offender
+      href: ../../resources/attacksimulationrepeatoffender.md
+    - name: Get repeat offenders
+      href: ../../api/securityreportsroot-getattacksimulationrepeatoffenders.md
+  - name: Attack simulation simulation user coverage
+    items:
+    - name: Attack simulation simulation user coverage
+      href: ../../resources/attacksimulationsimulationusercoverage.md
+    - name: Get simulation coverage for users
+      href: ../../api/securityreportsroot-getattacksimulationsimulationusercoverage.md
+  - name: Attack simulation training user coverage
+    items:
+    - name: Attack simulation training user coverage
+      href: ../../resources/attacksimulationtrainingusercoverage.md
+    - name: Get training coverage for users
+      href: ../../api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+- name: Partner billing reports
+  items:
+  - name: Overview
+    href: ../../resources/partners-billing-api-overview.md
+  - name: Billed usage
+    items:
+    - name: Billed usage
+      href: ../../resources/partners-billing-billedusage.md
+    - name: export
+      href: ../../api/partners-billing-billedusage-export.md
+  - name: Manifest
+    items:
+    - name: Manifest
+      href: ../../resources/partners-billing-manifest.md
+    - name: Get manifest
+      href: ../../api/partners-billing-manifest-get.md
+  - name: Operation
+    items:
+    - name: Operation
+      href: ../../resources/partners-billing-operation.md
+    - name: Get operation
+      href: ../../api/partners-billing-operation-get.md
+  - name: Unbilled usage
+    items:
+    - name: Unbilled usage
+      href: ../../resources/partners-billing-unbilledusage.md
+    - name: export
+      href: ../../api/partners-billing-unbilledusage-export.md

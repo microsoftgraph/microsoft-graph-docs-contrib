@@ -25,56 +25,68 @@ items:
     href: ../../api/directory-deleteditems-delete.md
   - name: Restore deleted application
     href: ../../api/directory-deleteditems-restore.md
-  - name: Add password
-    href: ../../api/application-addpassword.md
-  - name: Remove password
-    href: ../../api/application-removepassword.md
-  - name: Add key
-    href: ../../api/application-addkey.md
-  - name: Remove key
-    href: ../../api/application-removekey.md
-  - name: List extensionProperties
-    href: ../../api/application-list-extensionproperty.md
-  - name: Create extensionProperties
-    href: ../../api/application-post-extensionproperty.md
-  - name: Get extensionProperty
-    href: ../../api/extensionproperty-delete.md
-  - name: Delete extensionProperty
-    href: ../../api/extensionproperty-delete.md
-  - name: Get available extension properties
-    href: ../../api/directoryobject-getavailableextensionproperties.md
-  - name: List federatedIdentityCredential
-    href: ../../api/application-list-federatedidentitycredentials.md
-  - name: Create federatedIdentityCredential
-    href: ../../api/application-post-federatedidentitycredentials.md
-  - name: Get federatedIdentityCredential
-    href: ../../api/federatedidentitycredential-get.md
-  - name: Update federatedIdentityCredential
-    href: ../../api/federatedidentitycredential-update.md
-  - name: Delete federatedIdentityCredential
-    href: ../../api/federatedidentitycredential-delete.md
-  - name: List owners
-    href: ../../api/application-list-owners.md
-  - name: Add owner
-    href: ../../api/application-post-owners.md
-  - name: Remove owner
-    href: ../../api/application-delete-owners.md
-  - name: Assign tokenIssuancePolicy
-    href: ../../api/application-post-tokenissuancepolicies.md
-  - name: List tokenIssuancePolicies
-    href: ../../api/application-list-tokenissuancepolicies.md
-  - name: Remove tokenIssuancePolicy
-    href: ../../api/application-delete-tokenissuancepolicies.md
-  - name: Assign tokenLifetimePolicy
-    href: ../../api/application-post-tokenlifetimepolicies.md
-  - name: List tokenLifetimePolicies
-    href: ../../api/application-list-tokenlifetimepolicies.md
-  - name: Remove tokenLifetimePolicy
-    href: ../../api/application-delete-tokenlifetimepolicies.md
-  - name: Set verified publisher
-    href: ../../api/application-setverifiedpublisher.md
-  - name: Unset verified publisher
-    href: ../../api/application-unsetverifiedpublisher.md
+  - name: Certificates and secrets
+    items:
+    - name: Add password
+      href: ../../api/application-addpassword.md
+    - name: Remove password
+      href: ../../api/application-removepassword.md
+    - name: Add key
+      href: ../../api/application-addkey.md
+    - name: Remove key
+      href: ../../api/application-removekey.md
+  - name: Extensions
+    items:
+    - name: List extensionProperties
+      href: ../../api/application-list-extensionproperty.md
+    - name: Create extensionProperties
+      href: ../../api/application-post-extensionproperty.md
+    - name: Get extensionProperty
+      href: ../../api/extensionproperty-delete.md
+    - name: Delete extensionProperty
+      href: ../../api/extensionproperty-delete.md
+    - name: Get available extension properties
+      href: ../../api/directoryobject-getavailableextensionproperties.md
+  - name: Federated identity credentials
+    items:
+    - name: List federatedIdentityCredential
+      href: ../../api/application-list-federatedidentitycredentials.md
+    - name: Create federatedIdentityCredential
+      href: ../../api/application-post-federatedidentitycredentials.md
+    - name: Get federatedIdentityCredential
+      href: ../../api/federatedidentitycredential-get.md
+    - name: Update federatedIdentityCredential
+      href: ../../api/federatedidentitycredential-update.md
+    - name: Delete federatedIdentityCredential
+      href: ../../api/federatedidentitycredential-delete.md
+  - name: Owners
+    items:
+    - name: List owners
+      href: ../../api/application-list-owners.md
+    - name: Add owner
+      href: ../../api/application-post-owners.md
+    - name: Remove owner
+      href: ../../api/application-delete-owners.md
+  - name: Policies
+    items:
+    - name: Assign tokenIssuancePolicy
+      href: ../../api/application-post-tokenissuancepolicies.md
+    - name: List tokenIssuancePolicies
+      href: ../../api/application-list-tokenissuancepolicies.md
+    - name: Remove tokenIssuancePolicy
+      href: ../../api/application-delete-tokenissuancepolicies.md
+    - name: Assign tokenLifetimePolicy
+      href: ../../api/application-post-tokenlifetimepolicies.md
+    - name: List tokenLifetimePolicies
+      href: ../../api/application-list-tokenlifetimepolicies.md
+    - name: Remove tokenLifetimePolicy
+      href: ../../api/application-delete-tokenlifetimepolicies.md
+  - name: Verified publisher
+    items:
+    - name: Set verified publisher
+      href: ../../api/application-setverifiedpublisher.md
+    - name: Unset verified publisher
+      href: ../../api/application-unsetverifiedpublisher.md
 - name: Application template
   items:
   - name: Application template
@@ -87,6 +99,8 @@ items:
     href: ../../api/applicationtemplate-instantiate.md
 - name: Federated identity credential
   items:
+  - name: Overview
+    href: ../../resources/federatedidentitycredentials-overview.md
   - name: Federated identity credential
     href: ../../resources/federatedidentitycredential.md
   - name: List federatedIdentityCredentials
@@ -133,132 +147,106 @@ items:
     href: ../../api/remotedesktopsecurityconfiguration-get.md
   - name: Delete remoteDesktopSecurityConfiguration
     href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-  - name: List appRoleAssignments
-    href: ../../api/serviceprincipal-list-approleassignments.md
-  - name: Add appRoleAssignment
-    href: ../../api/serviceprincipal-post-approleassignments.md
-  - name: Remove appRoleAssignment
-    href: ../../api/serviceprincipal-delete-approleassignments.md
-  - name: List appRoleAssignedTo
-    href: ../../api/serviceprincipal-list-approleassignedto.md
-  - name: Add appRoleAssignedTo
-    href: ../../api/serviceprincipal-post-approleassignedto.md
-  - name: Remove appRoleAssignedTo
-    href: ../../api/serviceprincipal-delete-approleassignedto.md
-  - name: Add password
-    href: ../../api/serviceprincipal-addpassword.md
-  - name: Add tokenSigningCertificate
-    href: ../../api/serviceprincipal-addtokensigningcertificate.md
-  - name: Remove password
-    href: ../../api/serviceprincipal-removepassword.md
-  - name: Add key
-    href: ../../api/serviceprincipal-addkey.md
-  - name: Remove key
-    href: ../../api/serviceprincipal-removekey.md
-  - name: List delegated permission classifications
-    href: ../../api/serviceprincipal-list-delegatedpermissionclassifications.md
-  - name: Add delegated permission classification
-    href: ../../api/serviceprincipal-post-delegatedpermissionclassifications.md
-  - name: Remove delegated permission classification
-    href: ../../api/serviceprincipal-delete-delegatedpermissionclassifications.md
-  - name: List oauth2PermissionGrants
-    href: ../../api/serviceprincipal-list-oauth2permissiongrants.md
-  - name: List memberOf
-    href: ../../api/serviceprincipal-list-memberof.md
-  - name: List transitive memberOf
-    href: ../../api/serviceprincipal-list-transitivememberof.md
-  - name: checkMemberGroups
-    href: ../../api/directoryobject-checkmembergroups.md
-  - name: checkMemberObjects
-    href: ../../api/directoryobject-checkmemberobjects.md
-  - name: getMemberGroups
-    href: ../../api/directoryobject-getmembergroups.md
-  - name: getMemberObjects
-    href: ../../api/directoryobject-getmemberobjects.md
-  - name: List owners
-    href: ../../api/serviceprincipal-list-owners.md
-  - name: Add owner
-    href: ../../api/serviceprincipal-post-owners.md
-  - name: Remove owner
-    href: ../../api/serviceprincipal-delete-owners.md
-  - name: Assign claimsMappingPolicy
-    href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
-  - name: List claimsMappingPolicies
-    href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
-  - name: Remove claimsMappingPolicy
-    href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
-  - name: Assign homeRealmDiscoveryPolicy
-    href: ../../api/serviceprincipal-post-homerealmdiscoverypolicies.md
-  - name: List homeRealmDiscoveryPolicies
-    href: ../../api/serviceprincipal-list-homerealmdiscoverypolicies.md
-  - name: Remove homeRealmDiscoveryPolicy
-    href: ../../api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-  - name: Assign tokenIssuancePolicy
-    href: ../../api/application-post-tokenissuancepolicies.md
-  - name: List tokenIssuancePolicies
-    href: ../../api/application-list-tokenissuancepolicies.md
-  - name: Remove tokenIssuancePolicy
-    href: ../../api/application-delete-tokenissuancepolicies.md
-  - name: Assign tokenLifetimePolicy
-    href: ../../api/serviceprincipal-post-tokenlifetimepolicies.md
-  - name: List tokenLifetimePolicies
-    href: ../../api/serviceprincipal-list-tokenlifetimepolicies.md
-  - name: Remove tokenLifetimePolicy
-    href: ../../api/serviceprincipal-delete-tokenlifetimepolicies.md
-- name: Policies
-  items:
-  - name: Activity based timeout policy
+  - name: App role assignments
     items:
-    - name: Activity based timeout policy
-      href: ../../resources/activitybasedtimeoutpolicy.md
-    - name: List activityBasedTimeoutPolicies
-      href: ../../api/activitybasedtimeoutpolicy-list.md
-    - name: Create activityBasedTimeoutPolicy
-      href: ../../api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
-    - name: Get activityBasedTimeoutPolicy
-      href: ../../api/activitybasedtimeoutpolicy-get.md
-    - name: Update activityBasedTimeoutPolicy
-      href: ../../api/activitybasedtimeoutpolicy-update.md
-    - name: Delete activityBasedTimeoutPolicy
-      href: ../../api/activitybasedtimeoutpolicy-delete.md
-  - name: Claims mapping policy
+    - name: List appRoleAssignments
+      href: ../../api/serviceprincipal-list-approleassignments.md
+    - name: Add appRoleAssignment
+      href: ../../api/serviceprincipal-post-approleassignments.md
+    - name: Remove appRoleAssignment
+      href: ../../api/serviceprincipal-delete-approleassignments.md
+    - name: List appRoleAssignedTo
+      href: ../../api/serviceprincipal-list-approleassignedto.md
+    - name: Add appRoleAssignedTo
+      href: ../../api/serviceprincipal-post-approleassignedto.md
+    - name: Remove appRoleAssignedTo
+      href: ../../api/serviceprincipal-delete-approleassignedto.md
+  - name: Certificates and secrets
     items:
-    - name: Claims mapping policy
-      href: ../../resources/claimsmappingpolicy.md
-    - name: Create claimsMappingPolicy
-      href: ../../api/claimsmappingpolicy-post-claimsmappingpolicies.md
-    - name: Get claimsMappingPolicy
-      href: ../../api/claimsmappingpolicy-get.md
-    - name: List claimsMappingPolicies
-      href: ../../api/claimsmappingpolicy-list.md
-    - name: Update claimsMappingPolicy
-      href: ../../api/claimsmappingpolicy-update.md
-    - name: Delete claimsMappingPolicy
-      href: ../../api/claimsmappingpolicy-delete.md
-    - name: List appliesTo
-      href: ../../api/claimsmappingpolicy-list-appliesto.md
+    - name: Add password
+      href: ../../api/serviceprincipal-addpassword.md
+    - name: Add tokenSigningCertificate
+      href: ../../api/serviceprincipal-addtokensigningcertificate.md
+    - name: Remove password
+      href: ../../api/serviceprincipal-removepassword.md
+    - name: Add key
+      href: ../../api/serviceprincipal-addkey.md
+    - name: Remove key
+      href: ../../api/serviceprincipal-removekey.md
+  - name: Delegated permission classifications
+    items:
+    - name: List delegated permission classifications
+      href: ../../api/serviceprincipal-list-delegatedpermissionclassifications.md
+    - name: Add delegated permission classification
+      href: ../../api/serviceprincipal-post-delegatedpermissionclassifications.md
+    - name: Remove delegated permission classification
+      href: ../../api/serviceprincipal-delete-delegatedpermissionclassifications.md
+  - name: Delegated permission grants
+    items:
+    - name: List oauth2PermissionGrants
+      href: ../../api/serviceprincipal-list-oauth2permissiongrants.md
+  - name: Membership
+    items:
+    - name: List memberOf
+      href: ../../api/serviceprincipal-list-memberof.md
+    - name: List transitive memberOf
+      href: ../../api/serviceprincipal-list-transitivememberof.md
+    - name: checkMemberGroups
+      href: ../../api/directoryobject-checkmembergroups.md
+    - name: checkMemberObjects
+      href: ../../api/directoryobject-checkmemberobjects.md
+    - name: getMemberGroups
+      href: ../../api/directoryobject-getmembergroups.md
+    - name: getMemberObjects
+      href: ../../api/directoryobject-getmemberobjects.md
+  - name: Owners
+    items:
+    - name: List owners
+      href: ../../api/serviceprincipal-list-owners.md
+    - name: Add owner
+      href: ../../api/serviceprincipal-post-owners.md
+    - name: Remove owner
+      href: ../../api/serviceprincipal-delete-owners.md
+  - name: Policies
+    items:
     - name: Assign claimsMappingPolicy
       href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
-    - name: List assigned claimsMappingPolicy
+    - name: List claimsMappingPolicies
       href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
     - name: Remove claimsMappingPolicy
       href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
-  - name: Home realm discovery policy
-    items:
-    - name: Home realm discovery policy
-      href: ../../resources/homerealmdiscoverypolicy.md
+    - name: Assign homeRealmDiscoveryPolicy
+      href: ../../api/serviceprincipal-post-homerealmdiscoverypolicies.md
     - name: List homeRealmDiscoveryPolicies
-      href: ../../api/homerealmdiscoverypolicy-list.md
-    - name: Create homeRealmDiscoveryPolicy
-      href: ../../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-    - name: Get homeRealmDiscoveryPolicy
-      href: ../../api/homerealmdiscoverypolicy-get.md
-    - name: Update homeRealmDiscoveryPolicy
-      href: ../../api/homerealmdiscoverypolicy-update.md
-    - name: Delete homeRealmDiscoveryPolicy
-      href: ../../api/homerealmdiscoverypolicy-delete.md
-    - name: List appliesTo
-      href: ../../api/homerealmdiscoverypolicy-list-appliesto.md
+      href: ../../api/serviceprincipal-list-homerealmdiscoverypolicies.md
+    - name: Remove homeRealmDiscoveryPolicy
+      href: ../../api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+    - name: Assign tokenIssuancePolicy
+      href: ../../api/application-post-tokenissuancepolicies.md
+    - name: List tokenIssuancePolicies
+      href: ../../api/application-list-tokenissuancepolicies.md
+    - name: Remove tokenIssuancePolicy
+      href: ../../api/application-delete-tokenissuancepolicies.md
+    - name: Assign tokenLifetimePolicy
+      href: ../../api/serviceprincipal-post-tokenlifetimepolicies.md
+    - name: List tokenLifetimePolicies
+      href: ../../api/serviceprincipal-list-tokenlifetimepolicies.md
+    - name: Remove tokenLifetimePolicy
+      href: ../../api/serviceprincipal-delete-tokenlifetimepolicies.md
+- name: Policies
+  items:
+  - name: Remote desktop security configuration
+    items:
+    - name: Remote desktop security configuration
+      href: ../../resources/remotedesktopsecurityconfiguration.md
+    - name: Create remoteDesktopSecurityConfiguration
+      href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
+    - name: Get remoteDesktopSecurityConfiguration
+      href: ../../api/remotedesktopsecurityconfiguration-get.md
+    - name: Update remoteDesktopSecurityConfiguration
+      href: ../../api/remotedesktopsecurityconfiguration-update.md
+    - name: Delete remoteDesktopSecurityConfiguration
+      href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
   - name: Token issuance policy
     items:
     - name: Token issuance policy
@@ -291,18 +279,6 @@ items:
       href: ../../api/tokenlifetimepolicy-delete.md
     - name: List appliesTo
       href: ../../api/tokenlifetimepolicy-list-appliesto.md
-  - name: Remote desktop security configuration
-    items:
-    - name: Remote desktop security configuration
-      href: ../../resources/remotedesktopsecurityconfiguration.md
-    - name: Create remoteDesktopSecurityConfiguration
-      href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-    - name: Get remoteDesktopSecurityConfiguration
-      href: ../../api/remotedesktopsecurityconfiguration-get.md
-    - name: Update remoteDesktopSecurityConfiguration
-      href: ../../api/remotedesktopsecurityconfiguration-update.md
-    - name: Delete remoteDesktopSecurityConfiguration
-      href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
   - name: Application authentication method policy
     items:
     - name: Tenant app management policy
@@ -332,8 +308,9 @@ items:
       - name: Assign appliesTo
         href: ../../api/appmanagementpolicy-post-appliesto.md
 - name: Synchronization
-  href: resources/synchronization-overview.md
   items:
+  - name: Overview
+    href: ../../resources/synchronization-overview.md
   - name: Synchronization
     items:
     - name: Synchronization

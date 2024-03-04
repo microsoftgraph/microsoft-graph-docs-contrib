@@ -1,14 +1,51 @@
 items:
 - name: Query
-  href: resources/search-api-overview.md
   items:
-  - name: Entity
-    items:
-    - name: Entity
-      href: ../../resources/entity.md
+  - name: Overview
+    href: ../../resources/search-api-overview.md
   - name: Search entity
     items:
     - name: Search entity
       href: ../../resources/searchentity.md
     - name: query
       href: ../../api/search-query.md
+  - name: Complex types
+    items:
+    - name: Json
+      href: ../../resources/json.md
+    - name: Aggregation option
+      href: ../../resources/aggregationoption.md
+    - name: Alteration response
+      href: ../../resources/alterationresponse.md
+    - name: Altered query token
+      href: ../../resources/alteredquerytoken.md
+    - name: Bucket aggregation definition
+      href: ../../resources/bucketaggregationdefinition.md
+    - name: Bucket aggregation range
+      href: ../../resources/bucketaggregationrange.md
+    - name: Collapse property
+      href: ../../resources/collapseproperty.md
+    - name: Result template
+      href: ../../resources/resulttemplate.md
+    - name: Result template option
+      href: ../../resources/resulttemplateoption.md
+    - name: Search alteration
+      href: ../../resources/searchalteration.md
+    - name: Search alteration options
+      href: ../../resources/searchalterationoptions.md
+    - name: Search bucket
+      href: ../../resources/searchbucket.md
+    - name: Search hit
+      href: ../../resources/searchhit.md
+    - name: Search hits container
+      href: ../../resources/searchhitscontainer.md
+    - name: Search query
+      href: ../../resources/searchquery.md
+    - name: Search request
+      href: ../../resources/searchrequest.md
+    - name: Search response
+      href: ../../resources/searchresponse.md
+    - name: Share point one drive options
+      href: ../../resources/sharepointonedriveoptions.md
+    - name: Sort property
+      href: ../../resources/sortproperty.md

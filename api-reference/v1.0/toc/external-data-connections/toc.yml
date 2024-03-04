@@ -1,18 +1,12 @@
 items:
+- name: Overview
+  href: ../../resources/connectors-api-overview.md
 - name: Connection operation
   items:
   - name: Connection operation
     href: ../../resources/externalconnectors-connectionoperation.md
   - name: Get connectionOperation
     href: ../../api/externalconnectors-connectionoperation-get.md
-- name: External activity
-  items:
-  - name: External activity
-    href: ../../resources/externalconnectors-externalactivity.md
-- name: External activity result
-  items:
-  - name: External activity result
-    href: ../../resources/externalconnectors-externalactivityresult.md
 - name: External connection
   items:
   - name: External connection
@@ -73,3 +67,41 @@ items:
     href: ../../api/externalconnectors-externalconnection-patch-schema.md
   - name: Get schema
     href: ../../api/externalconnectors-schema-get.md
+- name: Complex types
+  items:
+  - name: Json
+    href: ../../resources/json.md
+  - name: Acl
+    href: ../../resources/externalconnectors-acl.md
+  - name: Activity settings
+    href: ../../resources/externalconnectors-activitysettings.md
+  - name: Configuration
+    href: ../../resources/externalconnectors-configuration.md
+  - name: Display template
+    href: ../../resources/externalconnectors-displaytemplate.md
+  - name: External activity
+    href: ../../resources/externalconnectors-externalactivity.md
+  - name: External activity result
+    href: ../../resources/externalconnectors-externalactivityresult.md
+  - name: External item content
+    href: ../../resources/externalconnectors-externalitemcontent.md
+  - name: Item id resolver
+    href: ../../resources/externalconnectors-itemidresolver.md
+  - name: Properties
+    href: ../../resources/externalconnectors-properties.md
+  - name: Property
+    href: ../../resources/externalconnectors-property.md
+  - name: Property rule
+    href: ../../resources/externalconnectors-propertyrule.md
+  - name: Public error
+    href: ../../resources/publicerror.md
+  - name: Public error detail
+    href: ../../resources/publicerrordetail.md
+  - name: Public inner error
+    href: ../../resources/publicinnererror.md
+  - name: Search settings
+    href: ../../resources/externalconnectors-searchsettings.md
+  - name: URL match info
+    href: ../../resources/externalconnectors-urlmatchinfo.md
+  - name: URL to item resolver base
+    href: ../../resources/externalconnectors-urltoitemresolverbase.md

@@ -1,4 +1,6 @@
 items:
+- name: Overview
+  href: ../../resources/onedrive.md
 - name: Drive
   items:
   - name: Drive
@@ -87,6 +89,24 @@ items:
     href: ../../api/driveitem-removeretentionlabel.md
   - name: Lock or unlock record
     href: ../../api/driveitem-lockorunlockrecord.md
+- name: Bundle
+  items:
+  - name: Bundle
+    href: ../../resources/bundle.md
+  - name: List bundles
+    href: ../../api/bundle-list.md
+  - name: Get bundle
+    href: ../../api/bundle-get.md
+  - name: Create bundle
+    href: ../../api/drive-post-bundles.md
+  - name: Add item
+    href: ../../api/bundle-addItem.md
+  - name: Remove item
+    href: ../../api/bundle-removeItem.md
+  - name: Update bundle
+    href: ../../api/bundle-update.md
+  - name: Delete bundle
+    href: ../../api/bundle-delete.md
 - name: Permission
   items:
   - name: Permission

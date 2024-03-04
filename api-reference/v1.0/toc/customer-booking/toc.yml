@@ -1,4 +1,6 @@
 items:
+- name: Overview
+  href: ../../resources/booking-api-overview.md
 - name: Booking appointment
   items:
   - name: Booking appointment
@@ -63,24 +65,6 @@ items:
     href: ../../api/bookingcurrency-list.md
   - name: Get bookingCurrency
     href: ../../api/bookingcurrency-get.md
-- name: Booking customer base
-  items:
-  - name: Booking customer base
-    href: ../../resources/bookingcustomerbase.md
-- name: Booking customer
-  items:
-  - name: Booking customer
-    href: ../../resources/bookingcustomer.md
-  - name: List customers
-    href: ../../api/bookingbusiness-list-customers.md
-  - name: Create bookingCustomer
-    href: ../../api/bookingbusiness-post-customers.md
-  - name: Get bookingCustomer
-    href: ../../api/bookingcustomer-get.md
-  - name: Update
-    href: ../../api/bookingcustomer-update.md
-  - name: Delete
-    href: ../../api/bookingcustomer-delete.md
 - name: Booking custom question
   items:
   - name: Booking custom question
@@ -95,6 +79,20 @@ items:
     href: ../../api/bookingcustomquestion-update.md
   - name: Delete bookingCustomQuestion
     href: ../../api/bookingcustomquestion-delete.md
+- name: Booking customer
+  items:
+  - name: Booking customer
+    href: ../../resources/bookingcustomer.md
+  - name: List customers
+    href: ../../api/bookingbusiness-list-customers.md
+  - name: Create bookingCustomer
+    href: ../../api/bookingbusiness-post-customers.md
+  - name: Get bookingCustomer
+    href: ../../api/bookingcustomer-get.md
+  - name: Update
+    href: ../../api/bookingcustomer-update.md
+  - name: Delete
+    href: ../../api/bookingcustomer-delete.md
 - name: Booking service
   items:
   - name: Booking service
@@ -109,10 +107,6 @@ items:
     href: ../../api/bookingservice-update.md
   - name: Delete
     href: ../../api/bookingservice-delete.md
-- name: Booking staff member base
-  items:
-  - name: Booking staff member base
-    href: ../../resources/bookingstaffmemberbase.md
 - name: Booking staff member
   items:
   - name: Booking staff member
@@ -127,3 +121,37 @@ items:
     href: ../../api/bookingstaffmember-update.md
   - name: Delete
     href: ../../api/bookingstaffmember-delete.md
+- name: Complex types
+  items:
+  - name: Availability item
+    href: ../../resources/availabilityitem.md
+  - name: Booking customer information
+    href: ../../resources/bookingcustomerinformation.md
+  - name: Booking customer information base
+    href: ../../resources/bookingcustomerinformationbase.md
+  - name: Booking question answer
+    href: ../../resources/bookingquestionanswer.md
+  - name: Booking question assignment
+    href: ../../resources/bookingquestionassignment.md
+  - name: Booking reminder
+    href: ../../resources/bookingreminder.md
+  - name: Booking scheduling policy
+    href: ../../resources/bookingschedulingpolicy.md
+  - name: Booking work hours
+    href: ../../resources/bookingworkhours.md
+  - name: Booking work time slot
+    href: ../../resources/bookingworktimeslot.md
+  - name: Date time time zone
+    href: ../../resources/datetimetimezone.md
+  - name: Location
+    href: ../../resources/location.md
+  - name: Outlook geo coordinates
+    href: ../../resources/outlookgeocoordinates.md
+  - name: Phone
+    href: ../../resources/phone.md
+  - name: Physical address
+    href: ../../resources/physicaladdress.md
+  - name: Staff availability item
+    href: ../../resources/staffavailabilityitem.md
+  - name: Time slot
+    href: ../../resources/timeslot.md

@@ -1,6 +1,10 @@
 items:
+- name: Overview
+  href: ../../resources/complianceapioverview.md
 - name: Subject rights request
   items:
+  - name: Overview
+    href: ../../resources/subjectrightsrequest-subjectrightsrequestapioverview.md
   - name: Subject rights request
     href: ../../resources/subjectrightsrequest.md
   - name: List subjectRightsRequests

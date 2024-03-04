@@ -1,4 +1,6 @@
 items:
+- name: Overview
+  href: ../../resources/social-overview.md
 - name: Person
   items:
   - name: Person
@@ -17,219 +19,35 @@ items:
     href: ../../api/peopleadminsettings-list-profilecardproperties.md
   - name: Create profileCardProperty
     href: ../../api/peopleadminsettings-post-profilecardproperties.md
-- name: User
-  items:
-  - name: User
-    href: ../../resources/user.md
-  - name: List users
-    href: ../../api/user-list.md
-  - name: Create user
-    href: ../../api/user-post-users.md
-  - name: Get user
-    href: ../../api/user-get.md
-  - name: Update user
-    href: ../../api/user-update.md
-  - name: Delete user
-    href: ../../api/user-delete.md
-  - name: Get delta
-    href: ../../api/user-delta.md
-  - name: changePassword
-    href: ../../api/user-changepassword.md
-  - name: List appRoleAssignments
-    href: ../../api/user-list-approleassignments.md
-  - name: Add appRoleAssignment
-    href: ../../api/user-post-approleassignments.md
-  - name: Remove appRoleAssignment
-    href: ../../api/user-delete-approleassignments.md
-  - name: Create calendar
-    href: ../../api/user-post-calendars.md
-  - name: Create calendarGroup
-    href: ../../api/user-post-calendargroups.md
-  - name: Create event
-    href: ../../api/user-post-events.md
-  - name: findMeetingTimes
-    href: ../../api/user-findmeetingtimes.md
-  - name: getSchedule
-    href: ../../api/calendar-getschedule.md
-  - name: List calendars
-    href: ../../api/user-list-calendars.md
-  - name: List calendarGroups
-    href: ../../api/user-list-calendargroups.md
-  - name: List calendarView
-    href: ../../api/user-list-calendarview.md
-  - name: List events
-    href: ../../api/user-list-events.md
-  - name: reminderView
-    href: ../../api/user-reminderview.md
-  - name: Create contact
-    href: ../../api/user-post-contacts.md
-  - name: Create contactFolder
-    href: ../../api/user-post-contactfolders.md
-  - name: List contacts
-    href: ../../api/user-list-contacts.md
-  - name: List contactFolders
-    href: ../../api/user-list-contactfolders.md
-  - name: assignLicense
-    href: ../../api/user-assignlicense.md
-  - name: checkMemberGroups
-    href: ../../api/directoryobject-checkmembergroups.md
-  - name: checkMemberObjects
-    href: ../../api/directoryobject-checkmemberobjects.md
-  - name: exportPersonalData
-    href: ../../api/user-exportpersonaldata.md
-  - name: getByIds
-    href: ../../api/directoryobject-getbyids.md
-  - name: getMemberGroups
-    href: ../../api/directoryobject-getmembergroups.md
-  - name: getMemberObjects
-    href: ../../api/directoryobject-getmemberobjects.md
-  - name: List createdObjects
-    href: ../../api/user-list-createdobjects.md
-  - name: List licenseDetails
-    href: ../../api/user-list-licensedetails.md
-  - name: List ownedDevices
-    href: ../../api/user-list-owneddevices.md
-  - name: List ownedObjects
-    href: ../../api/user-list-ownedobjects.md
-  - name: List registeredDevices
-    href: ../../api/user-list-registereddevices.md
-  - name: reprocessLicense
-    href: ../../api/user-reprocesslicenseassignment.md
-  - name: revokeSignInSessions
-    href: ../../api/user-revokesigninsessions.md
-  - name: List deleted groups
-    href: ../../api/directory-deleteditems-list.md
-  - name: List deleted groups owned by user
-    href: ../../api/directory-deleteditems-getuserownedobjects.md
-  - name: Get deleted group
-    href: ../../api/directory-deleteditems-get.md
-  - name: Restore deleted group
-    href: ../../api/directory-deleteditems-delete.md
-  - name: Permanently delete group
-    href: ../../api/directory-deleteditems-restore.md
-  - name: Get drive
-    href: ../../api/drive-get.md
-  - name: List children
-    href: ../../api/driveitem-list-children.md
-  - name: List joinedTeams
-    href: ../../api/user-list-joinedteams.md
-  - name: List memberOf
-    href: ../../api/user-list-memberof.md
-  - name: List transitiveMemberOf
-    href: ../../api/user-list-transitivememberof.md
-  - name: Create inferenceClassificationOverride
-    href: ../../api/inferenceclassification-post-overrides.md
-  - name: Create mailFolder
-    href: ../../api/user-post-mailfolders.md
-  - name: Create message
-    href: ../../api/user-post-messages.md
-  - name: Create messageRule
-    href: ../../api/mailfolder-post-messagerules.md
-  - name: getMailTips
-    href: ../../api/user-getmailtips.md
-  - name: List mailFolders
-    href: ../../api/user-list-mailfolders.md
-  - name: List messages
-    href: ../../api/user-list-messages.md
-  - name: List overrides
-    href: ../../api/inferenceclassification-list-overrides.md
-  - name: List rules
-    href: ../../api/mailfolder-list-messagerules.md
-  - name: Send mail
-    href: ../../api/user-sendmail.md
-  - name: Create notebook
-    href: ../../api/onenote-post-notebooks.md
-  - name: List notebooks
-    href: ../../api/onenote-list-notebooks.md
-  - name: Create open extension
-    href: ../../api/opentypeextension-post-opentypeextension.md
-  - name: Get open extension
-    href: ../../api/opentypeextension-get.md
-  - name: Assign manager
-    href: ../../api/user-post-manager.md
-  - name: Get manager
-    href: ../../api/user-list-manager.md
-  - name: Remove manager
-    href: ../../api/user-delete-manager.md
-  - name: List directReports
-    href: ../../api/user-list-directreports.md
-  - name: Create Outlook category
-    href: ../../api/outlookuser-post-mastercategories.md
-  - name: Get supportedLanguages
-    href: ../../api/outlookuser-supportedlanguages.md
-  - name: Get supportedTimeZones
-    href: ../../api/outlookuser-supportedtimezones.md
-  - name: Get user mailbox settings
-    href: ../../api/user-get-mailboxsettings.md
-  - name: List Outlook categories
-    href: ../../api/outlookuser-list-mastercategories.md
-  - name: Translate Exchange Ids
-    href: ../../api/user-translateexchangeids.md
-  - name: Update user mailbox settings
-    href: ../../api/user-update-mailboxsettings.md
-  - name: Get photo
-    href: ../../api/profilephoto-get.md
-  - name: Update profilephoto
-    href: ../../api/profilephoto-update.md
-  - name: Delete profilephoto
-    href: ../../api/profilephoto-delete.md
-  - name: List tasks
-    href: ../../api/planneruser-list-tasks.md
-  - name: Add schema extension values
-    href: ../../graph/extensibility-schema-groups
-  - name: List apps installed for user
-    href: ../../api/userteamwork-list-installedapps.md
-  - name: Gets the installed app for user
-    href: ../../api/userteamwork-get-installedapps.md
-  - name: Add app for user
-    href: ../../api/userteamwork-post-installedapps.md
-  - name: Remove app for user
-    href: ../../api/userteamwork-delete-installedapps.md
-  - name: Upgrade app installed for user
-    href: ../../api/userteamwork-teamsappinstallation-upgrade.md
-  - name: Get chat between user and app
-    href: ../../api/userscopeteamsappinstallation-get-chat.md
-  - name: List permission grants
-    href: ../../api/user-list-permissiongrants.md
-  - name: Create task
-    href: ../../api/todotasklist-post-tasks.md
-  - name: Create task list
-    href: ../../api/todo-post-lists.md
-  - name: List tasks
-    href: ../../api/todotasklist-list-tasks.md
-  - name: List task lists
-    href: ../../api/todo-list-lists.md
-  - name: Get settings
-    href: ../../api/usersettings-get.md
-  - name: Update settings
-    href: ../../api/usersettings-update.md
-- name: User settings
-  items:
-  - name: User settings
-    href: ../../resources/usersettings.md
-  - name: Get user settings
-    href: ../../api/usersettings-get.md
-  - name: Update user settings
-    href: ../../api/usersettings-update.md
-- name: Office graph insights
-  items:
-  - name: Office graph insights
-    href: ../../resources/officegraphinsights.md
-- name: Trending
-  items:
-  - name: Trending
-    href: ../../resources/insights-trending.md
-  - name: List trending
-    href: ../../api/insights-list-trending.md
-- name: Shared insight
+- name: Insights
   items:
   - name: Shared insight
-    href: ../../resources/insights-shared.md
-  - name: List shared
-    href: ../../api/insights-list-shared.md
-- name: Used insight
-  items:
+    items:
+    - name: Shared insight
+      href: ../../resources/insights-shared.md
+    - name: List shared
+      href: ../../api/insights-list-shared.md
+  - name: Trending
+    items:
+    - name: Trending
+      href: ../../resources/insights-trending.md
+    - name: List trending
+      href: ../../api/insights-list-trending.md
   - name: Used insight
-    href: ../../resources/insights-used.md
-  - name: List used
-    href: ../../api/insights-list-used.md
+    items:
+    - name: Used insight
+      href: ../../resources/insights-used.md
+    - name: List used
+      href: ../../api/insights-list-used.md
+  - name: Complex types
+    items:
+    - name: Office graph insights
+      href: ../../resources/officegraphinsights.md
+    - name: Resource reference
+      href: ../../resources/insights-resourcereference.md
+    - name: Resource visualization
+      href: ../../resources/insights-resourcevisualization.md
+    - name: Sharing detail
+      href: ../../resources/insights-sharingdetail.md
+    - name: Usage details
+      href: ../../resources/insights-usagedetails.md

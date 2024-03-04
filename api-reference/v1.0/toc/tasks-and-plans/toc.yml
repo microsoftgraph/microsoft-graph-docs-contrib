@@ -1,386 +1,14 @@
 items:
-- name: User
+- name: Overview
+  href: ../../resources/planner-overview.md
+- name: Planner assigned to task board task format
   items:
-  - name: User
-    href: ../../resources/user.md
-  - name: List users
-    href: ../../api/user-list.md
-  - name: Create user
-    href: ../../api/user-post-users.md
-  - name: Get user
-    href: ../../api/user-get.md
-  - name: Update user
-    href: ../../api/user-update.md
-  - name: Delete user
-    href: ../../api/user-delete.md
-  - name: Get delta
-    href: ../../api/user-delta.md
-  - name: changePassword
-    href: ../../api/user-changepassword.md
-  - name: List appRoleAssignments
-    href: ../../api/user-list-approleassignments.md
-  - name: Add appRoleAssignment
-    href: ../../api/user-post-approleassignments.md
-  - name: Remove appRoleAssignment
-    href: ../../api/user-delete-approleassignments.md
-  - name: Create calendar
-    href: ../../api/user-post-calendars.md
-  - name: Create calendarGroup
-    href: ../../api/user-post-calendargroups.md
-  - name: Create event
-    href: ../../api/user-post-events.md
-  - name: findMeetingTimes
-    href: ../../api/user-findmeetingtimes.md
-  - name: getSchedule
-    href: ../../api/calendar-getschedule.md
-  - name: List calendars
-    href: ../../api/user-list-calendars.md
-  - name: List calendarGroups
-    href: ../../api/user-list-calendargroups.md
-  - name: List calendarView
-    href: ../../api/user-list-calendarview.md
-  - name: List events
-    href: ../../api/user-list-events.md
-  - name: reminderView
-    href: ../../api/user-reminderview.md
-  - name: Create contact
-    href: ../../api/user-post-contacts.md
-  - name: Create contactFolder
-    href: ../../api/user-post-contactfolders.md
-  - name: List contacts
-    href: ../../api/user-list-contacts.md
-  - name: List contactFolders
-    href: ../../api/user-list-contactfolders.md
-  - name: assignLicense
-    href: ../../api/user-assignlicense.md
-  - name: checkMemberGroups
-    href: ../../api/directoryobject-checkmembergroups.md
-  - name: checkMemberObjects
-    href: ../../api/directoryobject-checkmemberobjects.md
-  - name: exportPersonalData
-    href: ../../api/user-exportpersonaldata.md
-  - name: getByIds
-    href: ../../api/directoryobject-getbyids.md
-  - name: getMemberGroups
-    href: ../../api/directoryobject-getmembergroups.md
-  - name: getMemberObjects
-    href: ../../api/directoryobject-getmemberobjects.md
-  - name: List createdObjects
-    href: ../../api/user-list-createdobjects.md
-  - name: List licenseDetails
-    href: ../../api/user-list-licensedetails.md
-  - name: List ownedDevices
-    href: ../../api/user-list-owneddevices.md
-  - name: List ownedObjects
-    href: ../../api/user-list-ownedobjects.md
-  - name: List registeredDevices
-    href: ../../api/user-list-registereddevices.md
-  - name: reprocessLicense
-    href: ../../api/user-reprocesslicenseassignment.md
-  - name: revokeSignInSessions
-    href: ../../api/user-revokesigninsessions.md
-  - name: List deleted groups
-    href: ../../api/directory-deleteditems-list.md
-  - name: List deleted groups owned by user
-    href: ../../api/directory-deleteditems-getuserownedobjects.md
-  - name: Get deleted group
-    href: ../../api/directory-deleteditems-get.md
-  - name: Restore deleted group
-    href: ../../api/directory-deleteditems-delete.md
-  - name: Permanently delete group
-    href: ../../api/directory-deleteditems-restore.md
-  - name: Get drive
-    href: ../../api/drive-get.md
-  - name: List children
-    href: ../../api/driveitem-list-children.md
-  - name: List joinedTeams
-    href: ../../api/user-list-joinedteams.md
-  - name: List memberOf
-    href: ../../api/user-list-memberof.md
-  - name: List transitiveMemberOf
-    href: ../../api/user-list-transitivememberof.md
-  - name: Create inferenceClassificationOverride
-    href: ../../api/inferenceclassification-post-overrides.md
-  - name: Create mailFolder
-    href: ../../api/user-post-mailfolders.md
-  - name: Create message
-    href: ../../api/user-post-messages.md
-  - name: Create messageRule
-    href: ../../api/mailfolder-post-messagerules.md
-  - name: getMailTips
-    href: ../../api/user-getmailtips.md
-  - name: List mailFolders
-    href: ../../api/user-list-mailfolders.md
-  - name: List messages
-    href: ../../api/user-list-messages.md
-  - name: List overrides
-    href: ../../api/inferenceclassification-list-overrides.md
-  - name: List rules
-    href: ../../api/mailfolder-list-messagerules.md
-  - name: Send mail
-    href: ../../api/user-sendmail.md
-  - name: Create notebook
-    href: ../../api/onenote-post-notebooks.md
-  - name: List notebooks
-    href: ../../api/onenote-list-notebooks.md
-  - name: Create open extension
-    href: ../../api/opentypeextension-post-opentypeextension.md
-  - name: Get open extension
-    href: ../../api/opentypeextension-get.md
-  - name: Assign manager
-    href: ../../api/user-post-manager.md
-  - name: Get manager
-    href: ../../api/user-list-manager.md
-  - name: Remove manager
-    href: ../../api/user-delete-manager.md
-  - name: List directReports
-    href: ../../api/user-list-directreports.md
-  - name: Create Outlook category
-    href: ../../api/outlookuser-post-mastercategories.md
-  - name: Get supportedLanguages
-    href: ../../api/outlookuser-supportedlanguages.md
-  - name: Get supportedTimeZones
-    href: ../../api/outlookuser-supportedtimezones.md
-  - name: Get user mailbox settings
-    href: ../../api/user-get-mailboxsettings.md
-  - name: List Outlook categories
-    href: ../../api/outlookuser-list-mastercategories.md
-  - name: Translate Exchange Ids
-    href: ../../api/user-translateexchangeids.md
-  - name: Update user mailbox settings
-    href: ../../api/user-update-mailboxsettings.md
-  - name: Get photo
-    href: ../../api/profilephoto-get.md
-  - name: Update profilephoto
-    href: ../../api/profilephoto-update.md
-  - name: Delete profilephoto
-    href: ../../api/profilephoto-delete.md
-  - name: List tasks
-    href: ../../api/planneruser-list-tasks.md
-  - name: Add schema extension values
-    href: ../../graph/extensibility-schema-groups
-  - name: List apps installed for user
-    href: ../../api/userteamwork-list-installedapps.md
-  - name: Gets the installed app for user
-    href: ../../api/userteamwork-get-installedapps.md
-  - name: Add app for user
-    href: ../../api/userteamwork-post-installedapps.md
-  - name: Remove app for user
-    href: ../../api/userteamwork-delete-installedapps.md
-  - name: Upgrade app installed for user
-    href: ../../api/userteamwork-teamsappinstallation-upgrade.md
-  - name: Get chat between user and app
-    href: ../../api/userscopeteamsappinstallation-get-chat.md
-  - name: List permission grants
-    href: ../../api/user-list-permissiongrants.md
-  - name: Create task
-    href: ../../api/todotasklist-post-tasks.md
-  - name: Create task list
-    href: ../../api/todo-post-lists.md
-  - name: List tasks
-    href: ../../api/todotasklist-list-tasks.md
-  - name: List task lists
-    href: ../../api/todo-list-lists.md
-  - name: Get settings
-    href: ../../api/usersettings-get.md
-  - name: Update settings
-    href: ../../api/usersettings-update.md
-- name: Group
-  items:
-  - name: Group
-    href: ../../resources/group.md
-  - name: Create group
-    href: ../../api/group-post-groups.md
-  - name: Get group
-    href: ../../api/group-get.md
-  - name: List groups
-    href: ../../api/group-list.md
-  - name: Update group
-    href: ../../api/group-update.md
-  - name: Delete group
-    href: ../../api/group-delete.md
-  - name: delta
-    href: ../../api/group-delta.md
-  - name: Add members
-    href: ../../api/group-post-members.md
-  - name: Add owners
-    href: ../../api/group-post-owners.md
-  - name: List groupLifecyclePolicies
-    href: ../../api/group-list-grouplifecyclepolicies.md
-  - name: List members
-    href: ../../api/group-list-members.md
-  - name: List owners
-    href: ../../api/group-list-owners.md
-  - name: List transitive members
-    href: ../../api/group-list-transitivemembers.md
-  - name: List transitive memberOf
-    href: ../../api/group-list-transitivememberof.md
-  - name: Remove member
-    href: ../../api/group-delete-members.md
-  - name: Remove owner
-    href: ../../api/group-delete-owners.md
-  - name: assignLicense
-    href: ../../api/group-assignlicense.md
-  - name: renew
-    href: ../../api/group-renew.md
-  - name: validateProperties
-    href: ../../api/group-validateproperties.md
-  - name: List appRoleAssignments
-    href: ../../api/group-list-approleassignments.md
-  - name: Add appRoleAssignment
-    href: ../../api/group-post-approleassignments.md
-  - name: Remove appRoleAssignment
-    href: ../../api/group-delete-approleassignments.md
-  - name: Create event
-    href: ../../api/group-post-events.md
-  - name: Get event
-    href: ../../api/group-get-event.md
-  - name: List events
-    href: ../../api/group-list-events.md
-  - name: Update event
-    href: ../../api/group-update-event.md
-  - name: Delete event
-    href: ../../api/group-delete-event.md
-  - name: List calendarView
-    href: ../../api/group-list-calendarview.md
-  - name: Create conversation
-    href: ../../api/group-post-conversations.md
-  - name: Get conversation
-    href: ../../api/group-get-conversation.md
-  - name: List conversations
-    href: ../../api/group-list-conversations.md
-  - name: Delete conversation
-    href: ../../api/group-delete-conversation.md
-  - name: Create thread
-    href: ../../api/group-post-threads.md
-  - name: Get thread
-    href: ../../api/group-get-thread.md
-  - name: List threads
-    href: ../../api/group-list-threads.md
-  - name: Update thread
-    href: ../../api/group-update-thread.md
-  - name: Delete thread
-    href: ../../api/group-delete-thread.md
-  - name: List acceptedSenders
-    href: ../../api/group-list-acceptedsenders.md
-  - name: Add acceptedSender
-    href: ../../api/group-post-acceptedsenders.md
-  - name: Remove acceptedSender
-    href: ../../api/group-delete-acceptedsenders.md
-  - name: List rejectedSenders
-    href: ../../api/group-list-rejectedsenders.md
-  - name: Add rejectedSender
-    href: ../../api/group-post-rejectedsenders.md
-  - name: Remove rejectedSender
-    href: ../../api/group-delete-rejectedsenders.md
-  - name: Create setting
-    href: ../../api/group-post-settings.md
-  - name: List deleted groups
-    href: ../../api/directory-deleteditems-list.md
-  - name: List deleted groups owned by user
-    href: ../../api/directory-deleteditems-getuserownedobjects.md
-  - name: Get deleted group
-    href: ../../api/directory-deleteditems-get.md
-  - name: Restore deleted group
-    href: ../../api/directory-deleteditems-restore.md
-  - name: Permanently delete group
-    href: ../../api/directory-deleteditems-delete.md
-  - name: checkMemberGroups
-    href: ../../api/directoryobject-checkmembergroups.md
-  - name: getMemberGroups
-    href: ../../api/directoryobject-getmembergroups.md
-  - name: checkMemberObjects
-    href: ../../api/directoryobject-checkmemberobjects.md
-  - name: getMemberObjects
-    href: ../../api/directoryobject-getmemberobjects.md
-  - name: Get setting
-    href: ../../api/groupsetting-get.md
-  - name: List settings
-    href: ../../api/group-list-settings.md
-  - name: Update setting
-    href: ../../api/groupsetting-update.md
-  - name: Delete setting
-    href: ../../api/groupsetting-delete.md
-  - name: Get setting template
-    href: ../../api/groupsettingtemplate-get.md
-  - name: List setting template
-    href: ../../api/groupsettingtemplate-list.md
-  - name: Create open extension
-    href: ../../api/opentypeextension-post-opentypeextension.md
-  - name: Get open extension
-    href: ../../api/opentypeextension-get.md
-  - name: Add schema extension values
-    href: ../../graph/extensibility-schema-groups
-  - name: List photos
-    href: ../../api/group-list-photos.md
-  - name: List plannerPlans
-    href: ../../api/plannergroup-list-plans.md
-  - name: List permissionGrants
-    href: ../../api/group-list-permissiongrants.md
-  - name: addFavorite
-    href: ../../api/group-addfavorite.md
-  - name: removeFavorite
-    href: ../../api/group-removefavorite.md
-  - name: List memberOf
-    href: ../../api/group-list-memberof.md
-  - name: List joinedTeams
-    href: ../../api/user-list-joinedteams.md
-  - name: List associated teams
-    href: ../../api/associatedteaminfo-list.md
-  - name: subscribeByMail
-    href: ../../api/group-subscribebymail.md
-  - name: unsubscribeByMail
-    href: ../../api/group-unsubscribebymail.md
-  - name: resetUnseenCount
-    href: ../../api/group-resetunseencount.md
-- name: Planner user
-  items:
-  - name: Planner user
-    href: ../../resources/planneruser.md
-  - name: List plans
-    href: ../../api/planneruser-list-plans.md
-  - name: List tasks
-    href: ../../api/planneruser-list-tasks.md
-- name: Planner group
-  items:
-  - name: Planner group
-    href: ../../resources/plannergroup.md
-  - name: List plans
-    href: ../../api/plannergroup-list-plans.md
-- name: Planner
-  items:
-  - name: Planner
-    href: ../../resources/planner.md
-  - name: Create plannerBucket
-    href: ../../api/planner-post-buckets.md
-  - name: Create plannerPlan
-    href: ../../api/planner-post-plans.md
-  - name: Create plannerTask
-    href: ../../api/planner-post-tasks.md
-- name: Planner task
-  items:
-  - name: Planner task
-    href: ../../resources/plannertask.md
-  - name: Get plannerTask
-    href: ../../api/plannertask-get.md
+  - name: Planner assigned to task board task format
+    href: ../../resources/plannerassignedtotaskboardtaskformat.md
+  - name: Get plannerAssignedToTaskBoardTaskFormat
+    href: ../../api/plannerassignedtotaskboardtaskformat-get.md
   - name: Update
-    href: ../../api/plannertask-update.md
-  - name: Delete
-    href: ../../api/plannertask-delete.md
-- name: Planner plan
-  items:
-  - name: Planner plan
-    href: ../../resources/plannerplan.md
-  - name: Get plannerPlan
-    href: ../../api/plannerplan-get.md
-  - name: List buckets
-    href: ../../api/plannerplan-list-buckets.md
-  - name: List tasks
-    href: ../../api/plannerplan-list-tasks.md
-  - name: Update
-    href: ../../api/plannerplan-update.md
-  - name: Delete
-    href: ../../api/plannerplan-delete.md
+    href: ../../api/plannerassignedtotaskboardtaskformat-update.md
 - name: Planner bucket
   items:
   - name: Planner bucket
@@ -395,30 +23,6 @@ items:
     href: ../../api/plannerbucket-update.md
   - name: Delete
     href: ../../api/plannerbucket-delete.md
-- name: Planner task details
-  items:
-  - name: Planner task details
-    href: ../../resources/plannertaskdetails.md
-  - name: Get plannerTaskDetails
-    href: ../../api/plannertaskdetails-get.md
-  - name: Update
-    href: ../../api/plannertaskdetails-update.md
-- name: Planner assigned to task board task format
-  items:
-  - name: Planner assigned to task board task format
-    href: ../../resources/plannerassignedtotaskboardtaskformat.md
-  - name: Get plannerAssignedToTaskBoardTaskFormat
-    href: ../../api/plannerassignedtotaskboardtaskformat-get.md
-  - name: Update
-    href: ../../api/plannerassignedtotaskboardtaskformat-update.md
-- name: Planner progress task board task format
-  items:
-  - name: Planner progress task board task format
-    href: ../../resources/plannerprogresstaskboardtaskformat.md
-  - name: Get plannerProgressTaskBoardTaskFormat
-    href: ../../api/plannerprogresstaskboardtaskformat-get.md
-  - name: Update
-    href: ../../api/plannerprogresstaskboardtaskformat-update.md
 - name: Planner bucket task board task format
   items:
   - name: Planner bucket task board task format
@@ -427,6 +31,20 @@ items:
     href: ../../api/plannerbuckettaskboardtaskformat-get.md
   - name: Update
     href: ../../api/plannerbuckettaskboardtaskformat-update.md
+- name: Planner plan
+  items:
+  - name: Planner plan
+    href: ../../resources/plannerplan.md
+  - name: Get plannerPlan
+    href: ../../api/plannerplan-get.md
+  - name: List buckets
+    href: ../../api/plannerplan-list-buckets.md
+  - name: List tasks
+    href: ../../api/plannerplan-list-tasks.md
+  - name: Update
+    href: ../../api/plannerplan-update.md
+  - name: Delete
+    href: ../../api/plannerplan-delete.md
 - name: Planner plan details
   items:
   - name: Planner plan details
@@ -435,3 +53,57 @@ items:
     href: ../../api/plannerplandetails-get.md
   - name: Update
     href: ../../api/plannerplandetails-update.md
+- name: Planner progress task board task format
+  items:
+  - name: Planner progress task board task format
+    href: ../../resources/plannerprogresstaskboardtaskformat.md
+  - name: Get plannerProgressTaskBoardTaskFormat
+    href: ../../api/plannerprogresstaskboardtaskformat-get.md
+  - name: Update
+    href: ../../api/plannerprogresstaskboardtaskformat-update.md
+- name: Planner task
+  items:
+  - name: Planner task
+    href: ../../resources/plannertask.md
+  - name: Get plannerTask
+    href: ../../api/plannertask-get.md
+  - name: Update
+    href: ../../api/plannertask-update.md
+  - name: Delete
+    href: ../../api/plannertask-delete.md
+- name: Planner task details
+  items:
+  - name: Planner task details
+    href: ../../resources/plannertaskdetails.md
+  - name: Get plannerTaskDetails
+    href: ../../api/plannertaskdetails-get.md
+  - name: Update
+    href: ../../api/plannertaskdetails-update.md
+- name: Complex types
+  items:
+  - name: Identity
+    href: ../../resources/identity.md
+  - name: Identity set
+    href: ../../resources/identityset.md
+  - name: Planner applied categories
+    href: ../../resources/plannerappliedcategories.md
+  - name: Planner assignment
+    href: ../../resources/plannerassignment.md
+  - name: Planner assignments
+    href: ../../resources/plannerassignments.md
+  - name: Planner category descriptions
+    href: ../../resources/plannercategorydescriptions.md
+  - name: Planner checklist item
+    href: ../../resources/plannerchecklistitem.md
+  - name: Planner checklist items
+    href: ../../resources/plannerchecklistitems.md
+  - name: Planner external reference
+    href: ../../resources/plannerexternalreference.md
+  - name: Planner external references
+    href: ../../resources/plannerexternalreferences.md
+  - name: Planner order hints by assignee
+    href: ../../resources/plannerorderhintsbyassignee.md
+  - name: Planner plan container
+    href: ../../resources/plannerplancontainer.md
+  - name: Planner user ids
+    href: ../../resources/planneruserids.md

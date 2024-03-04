@@ -13,20 +13,26 @@ items:
     href: ../../api/contact-delete.md
   - name: delta
     href: ../../api/contact-delta.md
-  - name: Create open extension
-    href: ../../api/opentypeextension-post-opentypeextension.md
-  - name: Get open extension
-    href: ../../api/opentypeextension-get.md
-  - name: Add schema extension values
-    href: ../../graph/extensibility-schema-groups
-  - name: Create single-value extended property
-    href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-  - name: Get contact with single-value extended property
-    href: ../../api/singlevaluelegacyextendedproperty-get.md
-  - name: Create multi-value extended property
-    href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-  - name: Get contact with multi-value extended property
-    href: ../../api/multivaluelegacyextendedproperty-get.md
+  - name: Open extensions
+    items:
+    - name: Create open extension
+      href: ../../api/opentypeextension-post-opentypeextension.md
+    - name: Get open extension
+      href: ../../api/opentypeextension-get.md
+  - name: Schema extensions
+    items:
+    - name: Add schema extension values
+      href: ../../graph/extensibility-schema-groups
+  - name: Extended properties
+    items:
+    - name: Create single-value extended property
+      href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+    - name: Get contact with single-value extended property
+      href: ../../api/singlevaluelegacyextendedproperty-get.md
+    - name: Create multi-value extended property
+      href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+    - name: Get contact with multi-value extended property
+      href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Contact folder
   items:
   - name: Contact folder
@@ -70,8 +76,9 @@ items:
   - name: Delete
     href: ../../api/outlookcategory-delete.md
 - name: Extended properties
-  href: resources/extended-properties-overview.md
   items:
+  - name: Overview
+    href: ../../resources/extended-properties-overview.md
   - name: Single value legacy extended property
     items:
     - name: Single value legacy extended property

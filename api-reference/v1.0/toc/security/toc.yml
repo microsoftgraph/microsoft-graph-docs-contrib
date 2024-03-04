@@ -1,86 +1,24 @@
 items:
-- name: Entity
-  items:
-  - name: Entity
-    href: ../../resources/entity.md
-- name: Security
+- name: Overview
+  href: ../../resources/security-api-overview.md
+- name: Errors
+  href: ../../resources/security-error-codes.md
+- name: Advanced hunting
   items:
   - name: Security
-    href: ../../resources/security.md
-  - name: runHuntingQuery
-    href: ../../api/security-security-runhuntingquery.md
-- name: Retention event type
-  items:
-  - name: Retention event type
-    href: ../../resources/security-retentioneventtype.md
-  - name: List retentionEventTypes
-    href: ../../api/security-retentioneventtype-list.md
-  - name: Create retentionEventType
-    href: ../../api/security-retentioneventtype-post.md
-  - name: Get retentionEventType
-    href: ../../api/security-retentioneventtype-get.md
-  - name: Update retentionEventType
-    href: ../../api/security-retentioneventtype-update.md
-  - name: Delete retentionEventType
-    href: ../../api/security-retentioneventtype-delete.md
-- name: Retention event
-  items:
-  - name: Retention event
-    href: ../../resources/security-retentionevent.md
-  - name: List retentionEvents
-    href: ../../api/security-retentionevent-list.md
-  - name: Create retentionEvent
-    href: ../../api/security-retentionevent-post.md
-  - name: Get retentionEvent
-    href: ../../api/security-retentionevent-get.md
-  - name: Delete retentionEvent
-    href: ../../api/security-retentionevent-delete.md
-  - name: List retentionEventType
-    href: ../../api/security-retentioneventtype-list.md
-  - name: Create retentionEventType
-    href: ../../api/security-retentioneventtype-post.md
-- name: Alert
-  items:
-  - name: Alert
-    href: ../../resources/alert.md
-  - name: Get alert
-    href: ../../api/alert-get.md
-  - name: Update alert
-    href: ../../api/alert-update.md
-  - name: List alerts
-    href: ../../api/alert-list.md
-- name: Secure score
-  items:
-  - name: Secure score
-    href: ../../resources/securescore.md
-  - name: List secureScores
-    href: ../../api/security-list-securescores.md
-  - name: Get secureScore
-    href: ../../api/securescore-get.md
-- name: Secure score control profile
-  items:
-  - name: Secure score control profile
-    href: ../../resources/securescorecontrolprofile.md
-  - name: List secureScoreControlProfiles
-    href: ../../api/security-list-securescorecontrolprofiles.md
-  - name: Get secureScoreControlProfile
-    href: ../../api/securescorecontrolprofile-get.md
-  - name: Update securescorecontrolprofile
-    href: ../../api/securescorecontrolprofile-update.md
+    items:
+    - name: Security
+      href: ../../resources/security.md
+    - name: runHuntingQuery
+      href: ../../api/security-security-runhuntingquery.md
+  - name: Hunting query results
+    href: ../../resources/security-huntingqueryresults.md
+  - name: Hunting row result
+    href: ../../resources/security-huntingrowresult.md
+  - name: Single property schema
+    href: ../../resources/security-singlepropertyschema.md
 - name: Alerts and incidents
   items:
-  - name: Incident
-    items:
-    - name: Incident
-      href: ../../resources/security-incident.md
-    - name: List incidents
-      href: ../../api/security-list-incidents.md
-    - name: Get incident
-      href: ../../api/security-incident-get.md
-    - name: Update incident
-      href: ../../api/security-incident-update.md
-    - name: Create comment for incident
-      href: ../../api/security-incident-post-comments.md
   - name: Alert
     items:
     - name: Alert
@@ -93,60 +31,22 @@ items:
       href: ../../api/security-alert-update.md
     - name: Create comment for alert
       href: ../../api/security-alert-post-comments.md
-  - name: Security
+  - name: Alert evidence
+    href: ../../resources/security-alertevidence.md
+  - name: Incident
     items:
-    - name: Security
-      href: ../../resources/security.md
-    - name: runHuntingQuery
-      href: ../../api/security-security-runhuntingquery.md
+    - name: Incident
+      href: ../../resources/security-incident.md
+    - name: List incidents
+      href: ../../api/security-list-incidents.md
+    - name: Get incident
+      href: ../../api/security-incident-get.md
+    - name: Update incident
+      href: ../../api/security-incident-update.md
+    - name: Create comment for incident
+      href: ../../api/security-incident-post-comments.md
 - name: Attack simulation and training
   items:
-  - name: Security
-    items:
-    - name: Security
-      href: ../../resources/security.md
-    - name: runHuntingQuery
-      href: ../../api/security-security-runhuntingquery.md
-  - name: Attack simulation root
-    items:
-    - name: Attack simulation root
-      href: ../../resources/attacksimulationroot.md
-    - name: Get attackSimulationOperation
-      href: ../../api/attacksimulationoperation-get.md
-    - name: List endUserNotification
-      href: ../../api/attacksimulationroot-list-endusernotifications.md
-    - name: Get endUserNotification
-      href: ../../api/endusernotification-get.md
-    - name: List landingPages
-      href: ../../api/attacksimulationroot-list-landingpage.md
-    - name: Get landingPage
-      href: ../../api/landingpage-get.md
-    - name: List loginPages
-      href: ../../api/attacksimulationroot-list-loginpage.md
-    - name: Get loginPage
-      href: ../../api/loginpage-get.md
-    - name: List payloads
-      href: ../../api/attacksimulationroot-list-payloads.md
-    - name: Get payload
-      href: ../../api/payload-get.md
-    - name: List simulations
-      href: ../../api/attacksimulationroot-list-simulations.md
-    - name: Get simulations
-      href: ../../api/simulation-get.md
-    - name: Create simulations
-      href: ../../api/attacksimulationroot-post-simulation.md
-    - name: Update simulations
-      href: ../../api/simulation-update.md
-    - name: Delete simulations
-      href: ../../api/simulation-delete.md
-    - name: List simulationAutomations
-      href: ../../api/attacksimulationroot-list-simulationautomations.md
-    - name: Get simulationAutomations
-      href: ../../api/simulationautomation-get.md
-    - name: List trainings
-      href: ../../api/attacksimulationroot-list-trainings.md
-    - name: Get training
-      href: ../../api/training-get.md
   - name: Simulation
     items:
     - name: Simulation
@@ -167,6 +67,36 @@ items:
       href: ../../api/loginpage-get.md
     - name: Get landingPage
       href: ../../api/landingpage-get.md
+  - name: Attack simulation operation
+    items:
+    - name: Attack simulation operation
+      href: ../../resources/attacksimulationoperation.md
+    - name: Get attackSimulationOperation
+      href: ../../api/attacksimulationoperation-get.md
+  - name: End user notification
+    items:
+    - name: End user notification
+      href: ../../resources/endusernotification.md
+    - name: List endUserNotifications
+      href: ../../api/attacksimulationroot-list-endusernotifications.md
+    - name: Get endUserNotification
+      href: ../../api/endusernotification-get.md
+  - name: Landing page
+    items:
+    - name: Landing page
+      href: ../../resources/landingpage.md
+    - name: List landingPages
+      href: ../../api/attacksimulationroot-list-landingpage.md
+    - name: Get landingPage
+      href: ../../api/landingpage-get.md
+  - name: Login page
+    items:
+    - name: Login page
+      href: ../../resources/loginpage.md
+    - name: List loginPages
+      href: ../../api/attacksimulationroot-list-loginpage.md
+    - name: Get loginPage
+      href: ../../api/loginpage-get.md
   - name: Payload
     items:
     - name: Payload
@@ -177,64 +107,6 @@ items:
       href: ../../api/payload-get.md
     - name: Get payloadDetail
       href: ../../api/payloaddetail-get.md
-  - name: Long running operation
-    items:
-    - name: Long running operation
-      href: ../../resources/longrunningoperation.md
-  - name: Attack simulation operation
-    items:
-    - name: Attack simulation operation
-      href: ../../resources/attacksimulationoperation.md
-    - name: Get attackSimulationOperation
-      href: ../../api/attacksimulationoperation-get.md
-  - name: Login page
-    items:
-    - name: Login page
-      href: ../../resources/loginpage.md
-    - name: List loginPages
-      href: ../../api/attacksimulationroot-list-loginpage.md
-    - name: Get loginPage
-      href: ../../api/loginpage-get.md
-  - name: Landing page
-    items:
-    - name: Landing page
-      href: ../../resources/landingpage.md
-    - name: List landingPages
-      href: ../../api/attacksimulationroot-list-landingpage.md
-    - name: Get landingPage
-      href: ../../api/landingpage-get.md
-  - name: Landing page detail
-    items:
-    - name: Landing page detail
-      href: ../../resources/landingpagedetail.md
-  - name: Training
-    items:
-    - name: Training
-      href: ../../resources/training.md
-    - name: List trainings
-      href: ../../api/attacksimulationroot-list-trainings.md
-    - name: Get training
-      href: ../../api/training-get.md
-    - name: Get trainingLanguageDetail
-      href: ../../api/traininglanguagedetail-get.md
-  - name: Training language detail
-    items:
-    - name: Training language detail
-      href: ../../resources/traininglanguagedetail.md
-    - name: Get trainingLanguageDetail
-      href: ../../api/traininglanguagedetail-get.md
-  - name: End user notification
-    items:
-    - name: End user notification
-      href: ../../resources/endusernotification.md
-    - name: List endUserNotifications
-      href: ../../api/attacksimulationroot-list-endusernotifications.md
-    - name: Get endUserNotification
-      href: ../../api/endusernotification-get.md
-  - name: End user notification detail
-    items:
-    - name: End user notification detail
-      href: ../../resources/endusernotificationdetail.md
   - name: Simulation automation
     items:
     - name: Simulation automation
@@ -251,227 +123,49 @@ items:
       href: ../../resources/simulationautomationrun.md
     - name: List runs
       href: ../../api/simulationautomation-list-runs.md
-  - name: Report root
+  - name: Training
     items:
-    - name: Report root
-      href: ../../resources/reportroot.md
-    - name: Microsoft Teams device usage
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getteamsdeviceusageuserdetail.md
-      - name: Get user counts
-        href: ../../api/reportroot-getteamsdeviceusageusercounts.md
-      - name: Get distribution user counts
-        href: ../../api/reportroot-getteamsdeviceusagedistributionusercounts.md
-    - name: Microsoft Teams user activity
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getteamsuseractivityuserdetail.md
-      - name: Get activity counts
-        href: ../../api/reportroot-getteamsuseractivitycounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getteamsuseractivityusercounts.md
-    - name: Microsoft Teams team activity
-      items:
-      - name: Get team detail
-        href: ../../api/reportroot-getteamsteamactivitydetail.md
-      - name: Get team counts
-        href: ../../api/reportroot-getteamsteamactivitycounts.md
-      - name: Get team counts
-        href: ../../api/reportroot-getteamsteamcounts.md
-      - name: Get distribution team counts
-        href: ../../api/reportroot-getteamsteamactivitydistributioncounts.md
-    - name: Outlook activity
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getemailactivityuserdetail.md
-      - name: Get activity counts
-        href: ../../api/reportroot-getemailactivitycounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getemailactivityusercounts.md
-    - name: Outlook app usage
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getemailappusageuserdetail.md
-      - name: Get apps user counts
-        href: ../../api/reportroot-getemailappusageappsusercounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getemailappusageusercounts.md
-      - name: Get versions user counts
-        href: ../../api/reportroot-getemailappusageversionsusercounts.md
-    - name: Outlook mailbox usage
-      items:
-      - name: Get mailbox detail
-        href: ../../api/reportroot-getmailboxusagedetail.md
-      - name: Get mailbox counts
-        href: ../../api/reportroot-getmailboxusagemailboxcounts.md
-      - name: Get quota status mailbox counts
-        href: ../../api/reportroot-getmailboxusagequotastatusmailboxcounts.md
-      - name: Get storage
-        href: ../../api/reportroot-getmailboxusagestorage.md
-    - name: Microsoft 365 activations
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getoffice365activationsuserdetail.md
-      - name: Get activation counts
-        href: ../../api/reportroot-getoffice365activationcounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getoffice365activationsusercounts.md
-    - name: Microsoft 365 active users
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getoffice365activeuserdetail.md
-      - name: Get user counts
-        href: ../../api/reportroot-getoffice365activeusercounts.md
-      - name: Get services user counts
-        href: ../../api/reportroot-getoffice365servicesusercounts.md
-    - name: Microsoft 365 apps usage
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getm365appuserdetail.md
-      - name: Get user counts
-        href: ../../api/reportroot-getm365appusercounts.md
-      - name: Get platform user counts
-        href: ../../api/reportroot-getm365appplatformusercounts.md
-    - name: Microsoft 365 groups activity
-      items:
-      - name: Get group detail
-        href: ../../api/reportroot-getoffice365groupsactivitydetail.md
-      - name: Get activity counts
-        href: ../../api/reportroot-getoffice365groupsactivitycounts.md
-      - name: Get group counts
-        href: ../../api/reportroot-getoffice365groupsactivitygroupcounts.md
-      - name: Get storage
-        href: ../../api/reportroot-getoffice365groupsactivitystorage.md
-      - name: Get file counts
-        href: ../../api/reportroot-getoffice365groupsactivityfilecounts.md
-    - name: OneDrive activity
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getonedriveactivityuserdetail.md
-      - name: Get user counts
-        href: ../../api/reportroot-getonedriveactivityusercounts.md
-      - name: Get file counts
-        href: ../../api/reportroot-getonedriveactivityfilecounts.md
-    - name: OneDrive usage
-      items:
-      - name: Get account detail
-        href: ../../api/reportroot-getonedriveusageaccountdetail.md
-      - name: Get account counts
-        href: ../../api/reportroot-getonedriveusageaccountcounts.md
-      - name: Get file counts
-        href: ../../api/reportroot-getonedriveusagefilecounts.md
-      - name: Get storage
-        href: ../../api/reportroot-getonedriveusagestorage.md
-    - name: SharePoint activity
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getsharepointactivityuserdetail.md
-      - name: Get file counts
-        href: ../../api/reportroot-getsharepointactivityfilecounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getsharepointactivityusercounts.md
-      - name: Get pages
-        href: ../../api/reportroot-getsharepointactivitypages.md
-    - name: SharePoint site usage'
-      items:
-      - name: Get site detail
-        href: ../../api/reportroot-getsharepointsiteusagedetail.md
-      - name: Get file counts
-        href: ../../api/reportroot-getsharepointsiteusagefilecounts.md
-      - name: Get site counts
-        href: ../../api/reportroot-getsharepointsiteusagesitecounts.md
-      - name: Get storage
-        href: ../../api/reportroot-getsharepointsiteusagestorage.md
-      - name: Get pages
-        href: ../../api/reportroot-getsharepointsiteusagepages.md
-    - name: Skype for Business activity
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getskypeforbusinessactivityuserdetail.md
-      - name: Get activity counts
-        href: ../../api/reportroot-getskypeforbusinessactivitycounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getskypeforbusinessactivityusercounts.md
-    - name: Skype for Business device usage
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getskypeforbusinessdeviceusageuserdetail.md
-      - name: Get distribution user counts
-        href: ../../api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getskypeforbusinessdeviceusageusercounts.md
-    - name: Skype for Business organizer activity
-      items:
-      - name: Get activity counts
-        href: ../../api/reportroot-getskypeforbusinessorganizeractivitycounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
-      - name: Get minute counts
-        href: ../../api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
-    - name: Skype for Business participant activity
-      items:
-      - name: Get activity counts
-        href: ../../api/reportroot-getskypeforbusinessparticipantactivitycounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
-      - name: Get minute counts
-        href: ../../api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
-    - name: Skype for Business peer-to-peer activity
-      items:
-      - name: Get activity counts
-        href: ../../api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
-      - name: Get minute counts
-        href: ../../api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
-    - name: Viva Engage activity
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getyammeractivityuserdetail.md
-      - name: Get activity counts
-        href: ../../api/reportroot-getyammeractivitycounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getyammeractivityusercounts.md
-    - name: Viva Engage device usage
-      items:
-      - name: Get user detail
-        href: ../../api/reportroot-getyammerdeviceusageuserdetail.md
-      - name: Get distribution user counts
-        href: ../../api/reportroot-getyammerdeviceusagedistributionusercounts.md
-      - name: Get user counts
-        href: ../../api/reportroot-getyammerdeviceusageusercounts.md
-    - name: Viva Engage groups activity
-      items:
-      - name: Get group detail
-        href: ../../api/reportroot-getyammergroupsactivitydetail.md
-      - name: Get group counts
-        href: ../../api/reportroot-getyammergroupsactivitygroupcounts.md
-      - name: Get activity counts
-        href: ../../api/reportroot-getyammergroupsactivitycounts.md
-  - name: Security reports root
+    - name: Training
+      href: ../../resources/training.md
+    - name: List trainings
+      href: ../../api/attacksimulationroot-list-trainings.md
+    - name: Get training
+      href: ../../api/training-get.md
+    - name: Get trainingLanguageDetail
+      href: ../../api/traininglanguagedetail-get.md
+  - name: Training language detail
     items:
-    - name: Security reports root
-      href: ../../resources/securityreportsroot.md
-    - name: Get simulation coverage for users
-      href: ../../api/securityreportsroot-getattacksimulationsimulationusercoverage.md
-    - name: Get training coverage for users
-      href: ../../api/securityreportsroot-getattacksimulationtrainingusercoverage.md
-    - name: Get repeat offenders
-      href: ../../api/securityreportsroot-getattacksimulationrepeatoffenders.md
-- name: 'eDiscovery '
+    - name: Training language detail
+      href: ../../resources/traininglanguagedetail.md
+    - name: Get trainingLanguageDetail
+      href: ../../api/traininglanguagedetail-get.md
+  - name: Reports
+    items:
+    - name: Overview
+      href: ../../resources/report-m365defender-reports-overview.md
+    - name: Attack simulation repeat offender
+      items:
+      - name: Attack simulation repeat offender
+        href: ../../resources/attacksimulationrepeatoffender.md
+      - name: Get repeat offenders
+        href: ../../api/securityreportsroot-getattacksimulationrepeatoffenders.md
+    - name: Attack simulation simulation user coverage
+      items:
+      - name: Attack simulation simulation user coverage
+        href: ../../resources/attacksimulationsimulationusercoverage.md
+      - name: Get simulation coverage for users
+        href: ../../api/securityreportsroot-getattacksimulationsimulationusercoverage.md
+    - name: Attack simulation training user coverage
+      items:
+      - name: Attack simulation training user coverage
+        href: ../../resources/attacksimulationtrainingusercoverage.md
+      - name: Get training coverage for users
+        href: ../../api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+- name: eDiscovery
   items:
-  - name: Case operation
+  - name: eDiscovery case
     items:
-    - name: Case operation
-      href: ../../resources/security-caseoperation.md
-    - name: List caseOperations
-      href: ../../api/security-ediscoverycase-list-operations.md
-    - name: Get caseOperation
-      href: ../../api/security-caseoperation-get.md
-  - name: Ediscovery case
-    items:
-    - name: Ediscovery case
+    - name: eDiscovery case
       href: ../../resources/security-ediscoverycase.md
     - name: List ediscoveryCases
       href: ../../api/security-casesroot-list-ediscoverycases.md
@@ -505,9 +199,9 @@ items:
       href: ../../api/security-ediscoverycase-list-tags.md
     - name: Create ediscoveryReviewTag
       href: ../../api/security-ediscoverycase-post-tags.md
-  - name: Ediscovery case settings
+  - name: eDiscovery case settings
     items:
-    - name: Ediscovery case settings
+    - name: eDiscovery case settings
       href: ../../resources/security-ediscoverycasesettings.md
     - name: Get ediscoveryCaseSettings
       href: ../../api/security-ediscoverycasesettings-get.md
@@ -515,77 +209,17 @@ items:
       href: ../../api/security-ediscoverycasesettings-update.md
     - name: resetToDefault
       href: ../../api/security-ediscoverycasesettings-resettodefault.md
-  - name: Ediscovery review set
+  - name: Case operation
     items:
-    - name: Ediscovery review set
-      href: ../../resources/security-ediscoveryreviewset.md
-    - name: List ediscoveryReviewSets
-      href: ../../api/security-ediscoverycase-list-reviewsets.md
-    - name: Create ediscoveryReviewSet
-      href: ../../api/security-ediscoverycase-post-reviewsets.md
-    - name: Get ediscoveryReviewSet
-      href: ../../api/security-ediscoveryreviewset-get.md
-    - name: addToReviewSet
-      href: ../../api/security-ediscoveryreviewset-addtoreviewset.md
-    - name: List queries
-      href: ../../api/security-ediscoveryreviewset-list-queries.md
-    - name: Create ediscoveryReviewSetQuery
-      href: ../../api/security-ediscoveryreviewset-post-queries.md
-    - name: export
-      href: ../../api/security-ediscoveryreviewset-export.md
-  - name: Ediscovery search
+    - name: Case operation
+      href: ../../resources/security-caseoperation.md
+    - name: List caseOperations
+      href: ../../api/security-ediscoverycase-list-operations.md
+    - name: Get caseOperation
+      href: ../../api/security-caseoperation-get.md
+  - name: eDiscovery custodian
     items:
-    - name: Ediscovery search
-      href: ../../resources/security-ediscoverysearch.md
-    - name: List ediscoverySearches
-      href: ../../api/security-ediscoverycase-list-searches.md
-    - name: Create ediscoverySearch
-      href: ../../api/security-ediscoverycase-post-searches.md
-    - name: Get ediscoverySearch
-      href: ../../api/security-ediscoverysearch-get.md
-    - name: Update ediscoverySearch
-      href: ../../api/security-ediscoverysearch-update.md
-    - name: Delete ediscoverySearch
-      href: ../../api/security-ediscoverycase-delete-searches.md
-    - name: estimateStatistics
-      href: ../../api/security-ediscoverysearch-estimatestatistics.md
-    - name: List additionalSources
-      href: ../../api/security-ediscoverysearch-list-additionalsources.md
-    - name: Add additionalSources
-      href: ../../api/security-ediscoverysearch-post-additionalsources.md
-    - name: List ediscoveryEstimateOperation
-      href: ../../api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md
-    - name: List custodianSources
-      href: ../../api/security-ediscoverysearch-list-custodiansources.md
-    - name: Add custodianSources
-      href: ../../api/security-ediscoverysearch-post-custodiansources.md
-    - name: Remove custodianSources
-      href: ../../api/security-ediscoverysearch-delete-custodiansources.md
-    - name: List noncustodialSources
-      href: ../../api/security-ediscoverysearch-list-noncustodialsources.md
-    - name: Add noncustodialSources
-      href: ../../api/security-ediscoverysearch-post-noncustodialsources.md
-    - name: Remove noncustodialSources
-      href: ../../api/security-ediscoverysearch-delete-noncustodialsources.md
-  - name: Ediscovery review tag
-    items:
-    - name: Ediscovery review tag
-      href: ../../resources/security-ediscoveryreviewtag.md
-    - name: List ediscoveryReviewTags
-      href: ../../api/security-ediscoverycase-list-tags.md
-    - name: Create ediscoveryReviewTag
-      href: ../../api/security-ediscoverycase-post-tags.md
-    - name: Get ediscoveryReviewTag
-      href: ../../api/security-ediscoveryreviewtag-get.md
-    - name: Update ediscoveryReviewTag
-      href: ../../api/security-ediscoveryreviewtag-update.md
-    - name: Delete ediscoveryReviewTag
-      href: ../../api/security-ediscoverycase-delete-tags.md
-    - name: asHierarchy
-      href: ../../api/security-ediscoveryreviewtag-ashierarchy.md
-  - name: Ediscovery custodian
-    items:
-    - name: Ediscovery custodian
+    - name: eDiscovery custodian
       href: ../../resources/security-ediscoverycustodian.md
     - name: List ediscoveryCustodians
       href: ../../api/security-ediscoverycase-list-custodians.md
@@ -617,9 +251,9 @@ items:
       href: ../../api/security-ediscoverycustodian-list-usersources.md
     - name: Create userSource
       href: ../../api/security-ediscoverycustodian-post-usersources.md
-  - name: Ediscovery noncustodial data source
+  - name: eDiscovery noncustodial data source
     items:
-    - name: Ediscovery noncustodial data source
+    - name: eDiscovery noncustodial data source
       href: ../../resources/security-ediscoverynoncustodialdatasource.md
     - name: List ediscoveryNoncustodialDataSources
       href: ../../api/security-ediscoverysearch-list-noncustodialsources.md
@@ -637,82 +271,218 @@ items:
       href: ../../api/security-ediscoverynoncustodialdatasource-removehold.md
     - name: List ediscoveryIndexOperation
       href: ../../api/security-ediscoverycustodian-list-lastindexoperation.md
+  - name: eDiscovery search
+    items:
+    - name: eDiscovery search
+      href: ../../resources/security-ediscoverysearch.md
+    - name: List ediscoverySearches
+      href: ../../api/security-ediscoverycase-list-searches.md
+    - name: Create ediscoverySearch
+      href: ../../api/security-ediscoverycase-post-searches.md
+    - name: Get ediscoverySearch
+      href: ../../api/security-ediscoverysearch-get.md
+    - name: Update ediscoverySearch
+      href: ../../api/security-ediscoverysearch-update.md
+    - name: Delete ediscoverySearch
+      href: ../../api/security-ediscoverycase-delete-searches.md
+    - name: estimateStatistics
+      href: ../../api/security-ediscoverysearch-estimatestatistics.md
+    - name: List additionalSources
+      href: ../../api/security-ediscoverysearch-list-additionalsources.md
+    - name: Add additionalSources
+      href: ../../api/security-ediscoverysearch-post-additionalsources.md
+    - name: List ediscoveryEstimateOperation
+      href: ../../api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md
+    - name: List custodianSources
+      href: ../../api/security-ediscoverysearch-list-custodiansources.md
+    - name: Add custodianSources
+      href: ../../api/security-ediscoverysearch-post-custodiansources.md
+    - name: Remove custodianSources
+      href: ../../api/security-ediscoverysearch-delete-custodiansources.md
+    - name: List noncustodialSources
+      href: ../../api/security-ediscoverysearch-list-noncustodialsources.md
+    - name: Add noncustodialSources
+      href: ../../api/security-ediscoverysearch-post-noncustodialsources.md
+    - name: Remove noncustodialSources
+      href: ../../api/security-ediscoverysearch-delete-noncustodialsources.md
+  - name: eDiscovery review set
+    items:
+    - name: eDiscovery review set
+      href: ../../resources/security-ediscoveryreviewset.md
+    - name: List ediscoveryReviewSets
+      href: ../../api/security-ediscoverycase-list-reviewsets.md
+    - name: Create ediscoveryReviewSet
+      href: ../../api/security-ediscoverycase-post-reviewsets.md
+    - name: Get ediscoveryReviewSet
+      href: ../../api/security-ediscoveryreviewset-get.md
+    - name: addToReviewSet
+      href: ../../api/security-ediscoveryreviewset-addtoreviewset.md
+    - name: List queries
+      href: ../../api/security-ediscoveryreviewset-list-queries.md
+    - name: Create ediscoveryReviewSetQuery
+      href: ../../api/security-ediscoveryreviewset-post-queries.md
+    - name: export
+      href: ../../api/security-ediscoveryreviewset-export.md
+  - name: eDiscovery review tag
+    items:
+    - name: eDiscovery review tag
+      href: ../../resources/security-ediscoveryreviewtag.md
+    - name: List ediscoveryReviewTags
+      href: ../../api/security-ediscoverycase-list-tags.md
+    - name: Create ediscoveryReviewTag
+      href: ../../api/security-ediscoverycase-post-tags.md
+    - name: Get ediscoveryReviewTag
+      href: ../../api/security-ediscoveryreviewtag-get.md
+    - name: Update ediscoveryReviewTag
+      href: ../../api/security-ediscoveryreviewtag-update.md
+    - name: Delete ediscoveryReviewTag
+      href: ../../api/security-ediscoverycase-delete-tags.md
+    - name: asHierarchy
+      href: ../../api/security-ediscoveryreviewtag-ashierarchy.md
 - name: Information protection
-  href: resources/threatassessment-api-overview.md
   items:
-  - name: Threat assessment request
+  - name: Threat assessment
     items:
-    - name: Threat assessment request
-      href: ../../resources/threatassessmentrequest.md
-    - name: List threatAssessmentRequest
-      href: ../../api/informationprotection-list-threatassessmentrequests.md
-    - name: Create threatAssessmentRequest
-      href: ../../api/informationprotection-post-threatassessmentrequests.md
-    - name: Get threatAssessmentRequest
-      href: ../../api/threatassessmentrequest-get.md
-  - name: Threat assessment result
-    items:
-    - name: Threat assessment result
-      href: ../../resources/threatassessmentresult.md
-  - name: Url assessment request
-    items:
-    - name: Url assessment request
-      href: ../../resources/urlassessmentrequest.md
-    - name: Create threatAssessmentRequest
-      href: ../../api/informationprotection-post-threatassessmentrequests.md
-    - name: Get threatAssessmentRequest
-      href: ../../api/threatassessmentrequest-get.md
-  - name: File assessment request
-    items:
-    - name: File assessment request
-      href: ../../resources/fileassessmentrequest.md
-    - name: Create threatAssessmentRequest
-      href: ../../api/informationprotection-post-threatassessmentrequests.md
-    - name: Get threatAssessmentRequest
-      href: ../../api/threatassessmentrequest-get.md
-  - name: Email file assessment request
-    items:
+    - name: Overview
+      href: ../../resources/threatassessment-api-overview.md
     - name: Email file assessment request
-      href: ../../resources/emailfileassessmentrequest.md
-    - name: Create threatAssessmentRequest
-      href: ../../api/informationprotection-post-threatassessmentrequests.md
-    - name: Get threatAssessmentRequest
-      href: ../../api/threatassessmentrequest-get.md
-  - name: Mail assessment request
-    items:
+      items:
+      - name: Email file assessment request
+        href: ../../resources/emailfileassessmentrequest.md
+      - name: Create threatAssessmentRequest
+        href: ../../api/informationprotection-post-threatassessmentrequests.md
+      - name: Get threatAssessmentRequest
+        href: ../../api/threatassessmentrequest-get.md
+    - name: File assessment request
+      items:
+      - name: File assessment request
+        href: ../../resources/fileassessmentrequest.md
+      - name: Create threatAssessmentRequest
+        href: ../../api/informationprotection-post-threatassessmentrequests.md
+      - name: Get threatAssessmentRequest
+        href: ../../api/threatassessmentrequest-get.md
     - name: Mail assessment request
-      href: ../../resources/mailassessmentrequest.md
-    - name: Create threatAssessmentRequest
-      href: ../../api/informationprotection-post-threatassessmentrequests.md
-    - name: Get threatAssessmentRequest
-      href: ../../api/threatassessmentrequest-get.md
-- name: Threat intelligence
-  href: resources/security-threatintelligence-overview.md
+      items:
+      - name: Mail assessment request
+        href: ../../resources/mailassessmentrequest.md
+      - name: Create threatAssessmentRequest
+        href: ../../api/informationprotection-post-threatassessmentrequests.md
+      - name: Get threatAssessmentRequest
+        href: ../../api/threatassessmentrequest-get.md
+    - name: Threat assessment request
+      items:
+      - name: Threat assessment request
+        href: ../../resources/threatassessmentrequest.md
+      - name: List threatAssessmentRequest
+        href: ../../api/informationprotection-list-threatassessmentrequests.md
+      - name: Create threatAssessmentRequest
+        href: ../../api/informationprotection-post-threatassessmentrequests.md
+      - name: Get threatAssessmentRequest
+        href: ../../api/threatassessmentrequest-get.md
+    - name: URL assessment request
+      items:
+      - name: URL assessment request
+        href: ../../resources/urlassessmentrequest.md
+      - name: Create threatAssessmentRequest
+        href: ../../api/informationprotection-post-threatassessmentrequests.md
+      - name: Get threatAssessmentRequest
+        href: ../../api/threatassessmentrequest-get.md
+    - name: Complex types
+      items:
+      - name: Identity
+        href: ../../resources/identity.md
+      - name: Identity set
+        href: ../../resources/identityset.md
+      - name: Threat assessment result
+        href: ../../resources/threatassessmentresult.md
+- name: Legacy alert
   items:
-  - name: Entity
+  - name: Alert
     items:
-    - name: Entity
-      href: ../../resources/entity.md
-  - name: Security
+    - name: Alert
+      href: ../../resources/alert.md
+    - name: Get alert
+      href: ../../api/alert-get.md
+    - name: Update alert
+      href: ../../api/alert-update.md
+    - name: List alerts
+      href: ../../api/alert-list.md
+- name: Records management
+  items:
+  - name: Overview
+    href: ../../resources/security-recordsmanagement-overview.md
+  - name: Retention event
     items:
-    - name: Security
-      href: ../../resources/security.md
-    - name: runHuntingQuery
-      href: ../../api/security-security-runhuntingquery.md
-  - name: Threat intelligence
+    - name: Retention event
+      href: ../../resources/security-retentionevent.md
+    - name: List retentionEvents
+      href: ../../api/security-retentionevent-list.md
+    - name: Create retentionEvent
+      href: ../../api/security-retentionevent-post.md
+    - name: Get retentionEvent
+      href: ../../api/security-retentionevent-get.md
+    - name: Delete retentionEvent
+      href: ../../api/security-retentionevent-delete.md
+    - name: List retentionEventType
+      href: ../../api/security-retentioneventtype-list.md
+    - name: Create retentionEventType
+      href: ../../api/security-retentioneventtype-post.md
+  - name: Retention event type
     items:
-    - name: Threat intelligence
-      href: ../../resources/security-threatintelligence.md
-    - name: List articles
-      href: ../../api/security-threatintelligence-list-articles.md
-    - name: List intelProfiles
-      href: ../../api/security-threatintelligence-list-intelprofiles.md
-    - name: Get hostPort
-      href: ../../api/security-hostport-get.md
-    - name: List sslCertificates
-      href: ../../api/security-threatintelligence-list-sslcertificates.md
-    - name: List whoisRecords
-      href: ../../api/security-threatintelligence-list-whoisrecords.md
+    - name: Retention event type
+      href: ../../resources/security-retentioneventtype.md
+    - name: List retentionEventTypes
+      href: ../../api/security-retentioneventtype-list.md
+    - name: Create retentionEventType
+      href: ../../api/security-retentioneventtype-post.md
+    - name: Get retentionEventType
+      href: ../../api/security-retentioneventtype-get.md
+    - name: Update retentionEventType
+      href: ../../api/security-retentioneventtype-update.md
+    - name: Delete retentionEventType
+      href: ../../api/security-retentioneventtype-delete.md
+  - name: Complex types
+    items:
+    - name: Event propagation result
+      href: ../../resources/security-eventpropagationresult.md
+    - name: Event query
+      href: ../../resources/security-eventquery.md
+    - name: Identity
+      href: ../../resources/identity.md
+    - name: Identity set
+      href: ../../resources/identityset.md
+    - name: Public error
+      href: ../../resources/publicerror.md
+    - name: Public error detail
+      href: ../../resources/publicerrordetail.md
+    - name: Public inner error
+      href: ../../resources/publicinnererror.md
+    - name: Retention event status
+      href: ../../resources/security-retentioneventstatus.md
+- name: Secure score
+  items:
+  - name: Secure score
+    items:
+    - name: Secure score
+      href: ../../resources/securescore.md
+    - name: List secureScores
+      href: ../../api/security-list-securescores.md
+    - name: Get secureScore
+      href: ../../api/securescore-get.md
+  - name: Secure score control profile
+    items:
+    - name: Secure score control profile
+      href: ../../resources/securescorecontrolprofile.md
+    - name: List secureScoreControlProfiles
+      href: ../../api/security-list-securescorecontrolprofiles.md
+    - name: Get secureScoreControlProfile
+      href: ../../api/securescorecontrolprofile-get.md
+    - name: Update securescorecontrolprofile
+      href: ../../api/securescorecontrolprofile-update.md
+- name: Threat intelligence
+  items:
+  - name: Overview
+    href: ../../resources/security-threatintelligence-overview.md
   - name: Article
     items:
     - name: Article
@@ -761,86 +531,52 @@ items:
       href: ../../api/security-host-list-trackers.md
     - name: List hostSslCertificates
       href: ../../api/security-host-list-sslcertificates.md
-  - name: Passive dns record
-    items:
-    - name: Passive dns record
-      href: ../../resources/security-passivednsrecord.md
-    - name: Get passiveDns
-      href: ../../api/security-passivednsrecord-get.md
-  - name: Vulnerability
-    items:
-    - name: Vulnerability
-      href: ../../resources/security-vulnerability.md
-    - name: Get vulnerability
-      href: ../../api/security-vulnerability-get.md
-    - name: List components
-      href: ../../api/security-vulnerability-list-components.md
-  - name: Vulnerability component
-    items:
-    - name: Vulnerability component
-      href: ../../resources/security-vulnerabilitycomponent.md
-    - name: List components
-      href: ../../api/security-vulnerability-list-components.md
-    - name: Get vulnerabilityComponent
-      href: ../../api/security-vulnerabilitycomponent-get.md
-  - name: Hostname
-    items:
-    - name: Hostname
-      href: ../../resources/security-hostname.md
-    - name: List components
-      href: ../../api/security-host-list-components.md
-    - name: List cookies
-      href: ../../api/security-host-list-cookies.md
-    - name: List passiveDns
-      href: ../../api/security-host-list-passivedns.md
-    - name: List passiveDnsReverse
-      href: ../../api/security-host-list-passivednsreverse.md
-    - name: Get reputation
-      href: ../../api/security-host-get-reputation.md
-    - name: List trackers
-      href: ../../api/security-host-list-trackers.md
-    - name: Get whoisRecord
-      href: ../../api/security-whoisrecord-get.md
-  - name: Ip address
-    items:
-    - name: Ip address
-      href: ../../resources/security-ipaddress.md
-    - name: List components
-      href: ../../api/security-host-list-components.md
-    - name: List cookies
-      href: ../../api/security-host-list-cookies.md
-    - name: List passiveDns
-      href: ../../api/security-host-list-passivedns.md
-    - name: List passiveDnsReverse
-      href: ../../api/security-host-list-passivednsreverse.md
-    - name: Get reputation
-      href: ../../api/security-host-get-reputation.md
-    - name: List trackers
-      href: ../../api/security-host-list-trackers.md
-    - name: Get whoisRecord
-      href: ../../api/security-whoisrecord-get.md
   - name: Host component
     items:
     - name: Host component
       href: ../../resources/security-hostcomponent.md
     - name: Get hostComponent
       href: ../../api/security-hostcomponent-get.md
-  - name: Host tracker
-    items:
-    - name: Host tracker
-      href: ../../resources/security-hosttracker.md
-    - name: Get hostTracker
-      href: ../../api/security-hosttracker-get.md
   - name: Host cookie
     items:
     - name: Host cookie
       href: ../../resources/security-hostcookie.md
     - name: Get hostCookie
       href: ../../api/security-hostcookie-get.md
-  - name: Indicator
+  - name: Host pair
     items:
-    - name: Indicator
-      href: ../../resources/security-indicator.md
+    - name: Host pair
+      href: ../../resources/security-hostpair.md
+    - name: Get hostPair
+      href: ../../api/security-hostpair-get.md
+    - name: List hostPairs for a host
+      href: ../../api/security-host-list-hostpairs.md
+    - name: List parentHostPairs for a host as child
+      href: ../../api/security-host-list-parenthostpairs.md
+    - name: List childHostPairs for a host as parent
+      href: ../../api/security-host-list-childhostpairs.md
+  - name: Host port
+    items:
+    - name: Host port
+      href: ../../resources/security-hostport.md
+    - name: List hostPorts
+      href: ../../api/security-host-list-ports.md
+    - name: Get hostPort
+      href: ../../api/security-hostport-get.md
+  - name: Host SSL certificate
+    items:
+    - name: Host SSL certificate
+      href: ../../resources/security-hostsslcertificate.md
+    - name: List hostSslCertificates
+      href: ../../api/security-host-list-sslcertificates.md
+    - name: Get hostSslCertificate
+      href: ../../api/security-hostsslcertificate-get.md
+  - name: Host tracker
+    items:
+    - name: Host tracker
+      href: ../../resources/security-hosttracker.md
+    - name: Get hostTracker
+      href: ../../api/security-hosttracker-get.md
   - name: Intelligence profile
     items:
     - name: Intelligence profile
@@ -857,20 +593,20 @@ items:
       href: ../../resources/security-intelligenceprofileindicator.md
     - name: Get intelligenceProfileIndicator
       href: ../../api/security-intelligenceprofileindicator-get.md
-  - name: Unclassified artifact
+  - name: Passive DNS record
     items:
-    - name: Unclassified artifact
-      href: ../../resources/security-unclassifiedartifact.md
-  - name: Artifact
+    - name: Passive DNS record
+      href: ../../resources/security-passivednsrecord.md
+    - name: Get passiveDns
+      href: ../../api/security-passivednsrecord-get.md
+  - name: SSL certificate
     items:
-    - name: Artifact
-      href: ../../resources/security-artifact.md
-  - name: Host reputation
-    items:
-    - name: Host reputation
-      href: ../../resources/security-hostreputation.md
-    - name: Get hostReputation
-      href: ../../api/security-host-get-reputation.md
+    - name: SSL certificate
+      href: ../../resources/security-sslcertificate.md
+    - name: List sslCertificates
+      href: ../../api/security-threatintelligence-list-sslcertificates.md
+    - name: Get sslCertificate
+      href: ../../api/security-sslcertificate-get.md
   - name: Subdomain
     items:
     - name: Subdomain
@@ -879,59 +615,71 @@ items:
       href: ../../api/security-subdomain-get.md
     - name: List subdomains for a host
       href: ../../api/security-host-list-subdomains.md
-  - name: Host pair
+  - name: Vulnerability
     items:
-    - name: Host pair
-      href: ../../resources/security-hostpair.md
-    - name: Get hostPair
-      href: ../../api/security-hostpair-get.md
-    - name: List hostPairs for a host
-      href: ../../api/security-host-list-hostpairs.md
-    - name: List parentHostPairs for a host as child
-      href: ../../api/security-host-list-parenthostpairs.md
-    - name: List childHostPairs for a host as parent
-      href: ../../api/security-host-list-childhostpairs.md
-  - name: Ssl certificate
+    - name: Vulnerability
+      href: ../../resources/security-vulnerability.md
+    - name: Get vulnerability
+      href: ../../api/security-vulnerability-get.md
+    - name: List components
+      href: ../../api/security-vulnerability-list-components.md
+  - name: Vulnerability component
     items:
-    - name: Ssl certificate
-      href: ../../resources/security-sslcertificate.md
-    - name: List sslCertificates
-      href: ../../api/security-threatintelligence-list-sslcertificates.md
-    - name: Get sslCertificate
-      href: ../../api/security-sslcertificate-get.md
-  - name: Host ssl certificate
+    - name: Vulnerability component
+      href: ../../resources/security-vulnerabilitycomponent.md
+    - name: List components
+      href: ../../api/security-vulnerability-list-components.md
+    - name: Get vulnerabilityComponent
+      href: ../../api/security-vulnerabilitycomponent-get.md
+  - name: WHOIS history record
     items:
-    - name: Host ssl certificate
-      href: ../../resources/security-hostsslcertificate.md
-    - name: List hostSslCertificates
-      href: ../../api/security-host-list-sslcertificates.md
-    - name: Get hostSslCertificate
-      href: ../../api/security-hostsslcertificate-get.md
-  - name: Whois base record
-    items:
-    - name: Whois base record
-      href: ../../resources/security-whoisbaserecord.md
-  - name: Whois record
-    items:
-    - name: Whois record
-      href: ../../resources/security-whoisrecord.md
-    - name: List whoisRecords
-      href: ../../api/security-threatintelligence-list-whoisrecords.md
-    - name: Get whoisRecord
-      href: ../../api/security-whoisrecord-get.md
-  - name: Whois history record
-    items:
-    - name: Whois history record
+    - name: WHOIS history record
       href: ../../resources/security-whoishistoryrecord.md
     - name: List whoisHistoryRecords
       href: ../../api/security-whoisrecord-list-history.md
     - name: Get whoisHistoryRecord
       href: ../../api/security-whoishistoryrecord-get.md
-  - name: Host port
+  - name: WHOIS record
     items:
-    - name: Host port
-      href: ../../resources/security-hostport.md
-    - name: List hostPorts
-      href: ../../api/security-host-list-ports.md
-    - name: Get hostPort
-      href: ../../api/security-hostport-get.md
+    - name: WHOIS record
+      href: ../../resources/security-whoisrecord.md
+    - name: List whoisRecords
+      href: ../../api/security-threatintelligence-list-whoisrecords.md
+    - name: Get whoisRecord
+      href: ../../api/security-whoisrecord-get.md
+  - name: Complex types
+    items:
+    - name: Artifact
+      href: ../../resources/security-artifact.md
+    - name: Autonomous system
+      href: ../../resources/security-autonomoussystem.md
+    - name: CVSS summary
+      href: ../../resources/security-cvsssummary.md
+    - name: Formatted content
+      href: ../../resources/security-formattedcontent.md
+    - name: Host port banner
+      href: ../../resources/security-hostportbanner.md
+    - name: Host port component
+      href: ../../resources/security-hostportcomponent.md
+    - name: Host reputation rule
+      href: ../../resources/security-hostreputationrule.md
+    - name: Host SSL certificate port
+      href: ../../resources/security-hostsslcertificateport.md
+    - name: Hyperlink
+      href: ../../resources/security-hyperlink.md
+    - name: Indicator
+      href: ../../resources/security-indicator.md
+    - name: Intelligence profile country or region of origin
+      href: ../../resources/security-intelligenceprofilecountryorregionoforigin.md
+    - name: Physical address
+      href: ../../resources/physicaladdress.md
+    - name: SSL certificate entity
+      href: ../../resources/security-sslcertificateentity.md
+    - name: Unclassified artifact
+      href: ../../resources/security-unclassifiedartifact.md
+    - name: WHOIS base record
+      href: ../../resources/security-whoisbaserecord.md
+    - name: WHOIS contact
+      href: ../../resources/security-whoiscontact.md
+    - name: WHOIS nameserver
+      href: ../../resources/security-whoisnameserver.md
