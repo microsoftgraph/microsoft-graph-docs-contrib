@@ -7,7 +7,7 @@ ms.prod: excel
 doc_type: resourcePageType
 ---
 
-# Icon resource type
+# workbookIcon resource type
 
 Namespace: microsoft.graph
 

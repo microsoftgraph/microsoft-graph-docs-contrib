@@ -7,7 +7,7 @@ ms.prod: excel
 doc_type: resourcePageType
 ---
 
-# SortField resource type
+# workbookSortField resource type
 
 Namespace: microsoft.graph
 
