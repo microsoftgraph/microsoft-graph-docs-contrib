@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new educationGradingScheme object.
+Create a new [educationGradingScheme](../resources/educationgradingscheme.md) object. 
 
 ## Permissions
 
