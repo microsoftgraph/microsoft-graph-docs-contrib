@@ -16,6 +16,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## March 2024: New and generally available
+
+### Device and app management | Cloud PC
+
+- Get, set, delete, and assign operations available on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy).
+- Get, set, delete, and assign operations available on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting).
+
 ## February 2024: New and generally available
 
 ### Microsoft Graph Toolkit
