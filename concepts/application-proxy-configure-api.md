@@ -14,7 +14,7 @@ ms.date: 02/28/2024
 
 [Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) provides secure remote access and single sign-on (SSO) to on-premises web applications. It allows users to access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
 
-In this tutorial, you learn how to Configure Microsoft Entra application proxy using Microsoft Graph APis.
+In this tutorial, you learn how to Configure Microsoft Entra application proxy using Microsoft Graph APIs.
 
 > [!IMPORTANT]
 > The app proxy-specific API operations are currently available only on the `beta` endpoint.
