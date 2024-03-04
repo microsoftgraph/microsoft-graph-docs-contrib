@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "7c00bcac-d519-4e40-89d3-1f61d7e78f7d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windows10EnrollmentCompletionPageConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [windows10EnrollmentCompletionPageConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/intune-windows10EnrollmentCompletionPageConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windows10EnrollmentCompletionPageConfiguration"
+        },
+        {
+          "Id": "d1970bc7-7bd0-4511-bca9-f4bd7e181075",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementCachedReportConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementCachedReportConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/deviceManagementCachedReportConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementCachedReportConfiguration"
+        }
+      ],
+      "Id": "d1970bc7-7bd0-4511-bca9-f4bd7e181075",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-02T03:57:29.3762774Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0315dbb2-1936-4d1e-abea-5871fb5e00ad",
           "ApiChange": "Resource",
           "ChangedApiName": "mobileAppCatalogPackage",
