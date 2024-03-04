@@ -1,0 +1,288 @@
+items:
+  - name: Overview
+    href: resources/groups-overview.md
+  - name: Group
+    href: resources/group.md
+    items:
+      - name: List groups
+        href: api/group-list.md
+      - name: Create group
+        href: api/group-post-groups.md
+      - name: Get group
+        href: api/group-get.md
+      - name: Update group
+        href: api/group-update.md
+      - name: Delete group
+        href: api/group-delete.md
+      - name: Renew group
+        href: api/group-renew.md
+      - name: Add favorite
+        href: api/group-addfavorite.md
+      - name: Remove favorite
+        href: api/group-removefavorite.md
+      - name: List members
+        href: api/group-list-members.md
+      - name: Add member
+        href: api/group-post-members.md
+      - name: Remove member
+        href: api/group-delete-members.md
+      - name: List member of
+        href: api/group-list-memberof.md
+      - name: List transitive member of
+        href: api/group-list-transitivememberof.md
+      - name: List transitive members
+        href: api/group-list-transitivemembers.md
+      - name: List owners
+        href: api/group-list-owners.md
+      - name: Add owner
+        href: api/group-post-owners.md
+      - name: Remove owner
+        href: api/group-delete-owners.md
+      - name: Get delta
+        href: api/group-delta.md
+      - name: Get delta for directory object
+        href: api/directoryobject-delta.md
+      - name: Assign license
+        href: api/group-assignlicense.md
+      - name: List joined teams
+        href: api/user-list-joinedteams.md
+      - name: List associated teams
+        href: api/associatedteaminfo-list.md
+      - name: Group setting
+        href: resources/groupsetting.md
+        items:
+          - name: Create
+            href: api/group-post-settings.md
+          - name: Get
+            href: api/groupsetting-get.md
+          - name: List
+            href: api/group-list-settings.md
+          - name: Update
+            href: api/groupsetting-update.md
+          - name: Delete
+            href: api/groupsetting-delete.md
+      - name: Group setting template
+        href: resources/groupsettingtemplate.md
+        items:
+          - name: List group setting templates
+            href: api/groupsettingtemplate-list.md
+          - name: Get group setting template
+            href: api/groupsettingtemplate-get.md
+      - name: List lifecycle policies
+        href: api/group-list-grouplifecyclepolicies.md
+      - name: List photos
+        href: api/group-list-photos.md
+      - name: List permission grants
+        href: api/group-list-permissiongrants.md
+      - name: Reset unseen count
+        href: api/group-resetunseencount.md
+      - name: Subscribe by mail
+        href: api/group-subscribebymail.md
+      - name: Unsubscribe by mail
+        href: api/group-unsubscribebymail.md
+      - name: Lifecycle policy
+        href: resources/grouplifecyclepolicy.md
+        items:
+          - name: List policies
+            href: api/grouplifecyclepolicy-list.md
+          - name: Create policy
+            href: api/grouplifecyclepolicy-post-grouplifecyclepolicies.md
+          - name: Get policy
+            href: api/grouplifecyclepolicy-get.md
+          - name: Update policy
+            href: api/grouplifecyclepolicy-update.md
+          - name: Delete policy
+            href: api/grouplifecyclepolicy-delete.md
+          - name: Add group
+            href: api/grouplifecyclepolicy-addgroup.md
+          - name: Remove group
+            href: api/grouplifecyclepolicy-removegroup.md
+      - name: Validate properties
+        href: api/group-validateproperties.md
+  - name: App role assignment
+    href: resources/approleassignment.md
+    items:
+      - name: List
+        href: api/group-list-approleassignments.md
+      - name: Add
+        href: api/group-post-approleassignments.md
+      - name: Get
+        href: api/approleassignment-get.md
+      - name: Remove
+        href: api/group-delete-approleassignments.md
+      - name: Get delta for directory object
+        href: api/directoryobject-delta.md
+  - name: Attachment
+    items:
+      - name: Attachment
+        href: resources/attachment.md
+      - name: File attachment type
+        href: resources/fileattachment.md
+      - name: Item attachment type
+        href: resources/itemattachment.md
+      - name: Reference attachment type
+        href: resources/referenceattachment.md
+      - name: Get attachment
+        href: api/attachment-get.md
+      - name: Delete attachment
+        href: api/attachment-delete.md
+  - name: Calendar
+    href: resources/calendar.md
+    items:
+      - name: Get calendar
+        href: api/calendar-get.md
+      - name: Update calendar
+        href: api/calendar-update.md
+      - name: List events
+        href: api/group-list-events.md
+      - name: Create event
+        href: api/group-post-events.md
+      - name: Get event
+        href: api/group-get-event.md
+      - name: Update event
+        href: api/group-update-event.md
+      - name: Delete event
+        href: api/group-delete-event.md
+      - name: List calendar view
+        href: api/group-list-calendarview.md
+      - name: Get delta
+        href: api/event-delta.md
+      - name: Create open extension
+        href: api/opentypeextension-post-opentypeextension.md
+      - name: Get open extension
+        href: api/opentypeextension-get.md
+  - name: Conversation
+    href: resources/conversation.md
+    items:
+      - name: List conversations
+        href: api/group-list-conversations.md
+      - name: Create conversation
+        href: api/group-post-conversations.md
+      - name: Get group conversation
+        href: api/group-get-conversation.md
+      - name: Delete group conversation
+        href: api/group-delete-conversation.md
+      - name: List conversation threads
+        href: api/conversation-list-threads.md
+      - name: Create conversation thread
+        href: api/conversation-post-threads.md
+      - name: List accepted senders
+        href: api/group-list-acceptedsenders.md
+      - name: Create accepted sender
+        href: api/group-post-acceptedsenders.md
+      - name: Remove accepted sender
+        href: api/group-delete-acceptedsenders.md
+      - name: List rejected senders
+        href: api/group-list-rejectedsenders.md
+      - name: Create rejected sender
+        href: api/group-post-rejectedsenders.md
+      - name: Remove rejected senders
+        href: api/group-delete-rejectedsenders.md
+  - name: Conversation thread
+    href: resources/conversationthread.md
+    items:
+      - name: List threads
+        href: api/group-list-threads.md
+      - name: Create thread
+        href: api/group-post-threads.md
+      - name: Get conversation thread
+        href: api/group-get-thread.md
+      - name: Update conversation thread
+        href: api/group-update-thread.md
+      - name: Delete conversation thread
+        href: api/group-delete-thread.md
+      - name: Reply to conversation thread
+        href: api/conversationthread-reply.md
+  - name: Directory object
+    href: resources/directoryobject.md
+    items:
+      - name: Get delta
+        href: api/directoryobject-delta.md
+      - name: Check member groups
+        href: api/directoryobject-checkmembergroups.md
+      - name: Get member groups
+        href: api/directoryobject-getmembergroups.md
+      - name: Check member objects
+        href: api/directoryobject-checkmemberobjects.md
+      - name: Get member objects
+        href: api/directoryobject-getmemberobjects.md
+      - name: List deleted groups
+        href: api/directory-deleteditems-list.md
+      - name: List deleted groups owned by user
+        href: api/directory-deleteditems-getuserownedobjects.md
+      - name: Get deleted group
+        href: api/directory-deleteditems-get.md
+      - name: Permanently delete group
+        href: api/directory-deleteditems-delete.md
+      - name: Restore deleted group
+        href: api/directory-deleteditems-restore.md
+  - name: Drive
+    href: resources/drive.md
+    items:
+      - name: Get drive
+        href: api/drive-get.md
+      - name: List children
+        href: api/driveitem-list-children.md
+  - name: Extended properties
+    items:
+      - name: Overview
+        href: resources/extended-properties-overview.md
+      - name: Single-value extended property
+        items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
+          - name: Create single-value property
+            href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+          - name: Get single-value property
+            href: api/singlevaluelegacyextendedproperty-get.md
+      - name: Multi-value extended property
+        items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
+          - name: Create multi-value property
+            href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+          - name: Get multi-value property
+            href: api/multivaluelegacyextendedproperty-get.md
+  - name: Notes
+    items:
+      - name: OneNote root
+        href: resources/onenote.md
+      - name: List notebooks
+        href: api/onenote-list-notebooks.md
+      - name: Create notebook
+        href: api/onenote-post-notebooks.md
+  - name: Photo
+    items:
+      - name: Profile photo
+        href: resources/profilephoto.md
+      - name: Get photo
+        href: api/profilephoto-get.md
+      - name: Update photo
+        href: api/profilephoto-update.md
+      - name: Delete photo
+        href: api/profilephoto-delete.md
+  - name: Planner
+    items:
+      - name: Planner plan
+        href: resources/plannerplan.md
+      - name: List plans
+        href: api/plannergroup-list-plans.md
+  - name: Post
+    href: resources/post.md
+    items:
+      - name: List posts
+        href: api/conversationthread-list-posts.md
+      - name: Get post
+        href: api/post-get.md
+      - name: Reply post
+        href: api/post-reply.md
+      - name: Forward post
+        href: api/post-forward.md
+      - name: List attachments
+        href: api/post-list-attachments.md
+      - name: Add attachment
+        href: api/post-post-attachments.md
+      - name: Create open extension
+        href: api/opentypeextension-post-opentypeextension.md
+      - name: Get open extension
+        href: api/opentypeextension-get.md

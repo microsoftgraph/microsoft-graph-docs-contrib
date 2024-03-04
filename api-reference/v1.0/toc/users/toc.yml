@@ -1,0 +1,292 @@
+items:
+  - name: Overview
+    href: resources/users.md
+  - name: User
+    href: resources/user.md
+    items:
+      - name: List
+        href: api/user-list.md
+      - name: Create
+        href: api/user-post-users.md
+      - name: Get
+        href: api/user-get.md
+      - name: Update
+        href: api/user-update.md
+      - name: Delete
+        href: api/user-delete.md
+      - name: Change password
+        href: api/user-changepassword.md
+      - name: Get delta
+        href: api/user-delta.md
+      - name: Get delta for directory object
+        href: api/directoryobject-delta.md
+      - name: Retry service provisioning
+        href: api/user-retryserviceprovisioning.md
+  - name: App role assignment
+    href: resources/approleassignment.md
+    items:
+      - name: List
+        href: api/user-list-approleassignments.md
+      - name: Add
+        href: api/user-post-approleassignments.md
+      - name: Get
+        href: api/approleassignment-get.md
+      - name: Remove
+        href: api/user-delete-approleassignments.md
+      - name: Get delta for directory object
+        href: api/directoryobject-delta.md
+  - name: Calendar
+    href: resources/calendar.md
+    displayName: Outlook, Outlook calendar
+    items:
+      - name: Create
+        href: api/user-post-calendars.md
+      - name: Create calendar group
+        href: api/user-post-calendargroups.md
+      - name: Create event
+        href: api/user-post-events.md
+      - name: Find meeting times
+        href: api/user-findmeetingtimes.md
+      - name: Get free/busy schedule
+        href: api/calendar-getschedule.md
+      - name: List calendars
+        href: api/user-list-calendars.md
+      - name: List calendar groups
+        href: api/user-list-calendargroups.md
+      - name: List calendar view
+        href: api/user-list-calendarview.md
+      - name: List events
+        href: api/user-list-events.md
+      - name: Reminder view
+        href: api/user-reminderview.md
+  - name: Delegated permission grant
+    items:
+      - name: OAuth 2.0 permission grant
+        href: resources/oauth2permissiongrant.md
+      - name: List
+        href: api/user-list-oauth2permissiongrants.md
+  - name: Directory object
+    href: resources/directoryobject.md
+    items:
+      - name: Get delta
+        href: api/directoryobject-delta.md
+      - name: Assign license
+        href: api/user-assignlicense.md
+      - name: Export personal data
+        href: api/user-exportpersonaldata.md
+      - name: Check member groups
+        href: api/directoryobject-checkmembergroups.md
+      - name: Get member groups
+        href: api/directoryobject-getmembergroups.md
+      - name: Check member objects
+        href: api/directoryobject-checkmemberobjects.md
+      - name: Get member objects
+        href: api/directoryobject-getmemberobjects.md
+      - name: Get objects by IDs
+        href: api/directoryobject-getbyids.md
+      - name: List created objects
+        href: api/user-list-createdobjects.md
+      - name: List license details
+        href: api/user-list-licensedetails.md
+      - name: List owned devices
+        href: api/user-list-owneddevices.md
+      - name: List owned objects
+        href: api/user-list-ownedobjects.md
+      - name: List registered devices
+        href: api/user-list-registereddevices.md
+      - name: Reprocess license assignment
+        href: api/user-reprocesslicenseassignment.md
+      - name: Revoke sign-in session
+        href: api/user-revokesigninsessions.md
+      - name: List deleted items
+        href: api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: api/directory-deleteditems-get.md
+      - name: Permanently delete item
+        href: api/directory-deleteditems-delete.md
+      - name: Restore deleted item
+        href: api/directory-deleteditems-restore.md
+  - name: Drive
+    href: resources/drive.md
+    items:
+      - name: Get drive
+        href: api/drive-get.md
+      - name: List children
+        href: api/driveitem-list-children.md
+  - name: Group
+    href: resources/group.md
+    items:
+      - name: List joined teams
+        href: api/user-list-joinedteams.md
+      - name: List associated teams
+        href: api/associatedteaminfo-list.md
+      - name: List member of
+        href: api/user-list-memberof.md
+      - name: List transitive member of
+        href: api/user-list-transitivememberof.md
+      - name: Retry service provisioning
+        href: api/group-retryserviceprovisioning.md
+  - name: Insights
+    items:
+      - name: Office Graph insights
+        items:
+          - name: Office Graph insights
+            href: resources/officegraphinsights.md
+          - name: List shared
+            href: api/insights-list-shared.md
+          - name: List trending
+            href: api/insights-list-trending.md
+          - name: List used
+            href: api/insights-list-used.md
+      - name: Content discovery settings
+        items:
+          - name: User settings
+            href: resources/usersettings.md
+          - name: Get settings
+            href: api/usersettings-get.md
+          - name: Update settings
+            href: api/usersettings-update.md
+  - name: Mail
+    items:
+      - name: Message
+        href: resources/message.md
+      - name: Create mail folder
+        href: api/user-post-mailfolders.md
+      - name: Create draft message
+        href: api/user-post-messages.md
+      - name: Create message rule
+        href: api/mailfolder-post-messagerules.md
+      - name: Create override
+        href: api/inferenceclassification-post-overrides.md
+      - name: Get mail tips
+        href: api/user-getmailtips.md
+      - name: List mail folders
+        href: api/user-list-mailfolders.md
+      - name: List messages
+        href: api/user-list-messages.md
+      - name: List overrides
+        href: api/inferenceclassification-list-overrides.md
+      - name: List rules
+        href: api/mailfolder-list-messagerules.md
+      - name: Send mail
+        href: api/user-sendmail.md
+  - name: Notes
+    items:
+      - name: OneNote root
+        href: resources/onenote.md
+      - name: List notebooks
+        href: api/onenote-list-notebooks.md
+      - name: Create notebook
+        href: api/onenote-post-notebooks.md
+  - name: Org hierarchy
+    items:
+      - name: List direct reports
+        href: api/user-list-directreports.md
+      - name: Get manager
+        href: api/user-list-manager.md
+      - name: Assign manager
+        href: api/user-post-manager.md
+      - name: Remove manager
+        href: api/user-delete-manager.md
+  - name: Outlook settings
+    items:
+      - name: Mailbox settings
+        expanded: true
+        items:
+          - name: Mailbox settings
+            href: resources/mailboxsettings.md
+          - name: Get mailbox settings
+            href: api/user-get-mailboxsettings.md
+          - name: Update mailbox settings
+            href: api/user-update-mailboxsettings.md
+      - name: Outlook user services
+        expanded: true
+        items:
+          - name: Outlook user
+            href: resources/outlookuser.md
+          - name: Create category
+            href: api/outlookuser-post-mastercategories.md
+          - name: Get language choices
+            href: api/outlookuser-supportedlanguages.md
+          - name: Get time zone choices
+            href: api/outlookuser-supportedtimezones.md
+          - name: List categories
+            href: api/outlookuser-list-mastercategories.md
+      - name: Translate IDs
+        href: api/user-translateexchangeids.md
+  - name: People
+    items:
+      - name: Person
+        href: resources/person.md
+      - name: List people
+        href: api/user-list-people.md
+  - name: Personal contact
+    items:
+      - name: Contact
+        href: resources/contact.md
+      - name: Create
+        href: api/user-post-contacts.md
+      - name: Create contact folder
+        href: api/user-post-contactfolders.md
+      - name: List
+        href: api/user-list-contacts.md
+      - name: List contact folders
+        href: api/user-list-contactfolders.md
+  - name: Photo
+    items:
+      - name: Profile photo
+        href: resources/profilephoto.md
+      - name: Get photo
+        href: api/profilephoto-get.md
+      - name: Update photo
+        href: api/profilephoto-update.md
+      - name: Delete photo
+        href: api/profilephoto-delete.md
+  - name: Planner
+    items:
+      - name: Planner task
+        href: resources/plannertask.md
+      - name: List tasks
+        href: api/planneruser-list-tasks.md
+  - name: Teamwork and communications
+    items:
+      - name: Installed app
+        href: resources/teamsappinstallation.md
+      - name: List apps for user
+        href: api/userteamwork-list-installedapps.md
+      - name: List permission grants for user
+        href: api/user-list-permissiongrants.md
+      - name: Add app for user
+        href: api/userteamwork-post-installedapps.md
+      - name: Gets installed app for user
+        href: api/userteamwork-get-installedapps.md
+      - name: Upgrade installed app for user
+        href: api/userteamwork-teamsappinstallation-upgrade.md
+      - name: Remove app for user
+        href: api/userteamwork-delete-installedapps.md
+      - name: Get chat between user and app
+        href: api/userscopeteamsappinstallation-get-chat.md
+      - name: Get chat for user
+        href: api/chat-get.md
+      - name: List chats for user
+        href: api/chat-list.md
+  - name: To-do task
+    items:
+      - name: To-do task
+        href: resources/todotask.md
+      - name: Create task
+        href: api/todotasklist-post-tasks.md
+      - name: Create task list
+        href: api/todo-post-lists.md
+      - name: List tasks
+        href: api/todotasklist-list-tasks.md
+      - name: List task lists
+        href: api/todo-list-lists.md
+  - name: User settings
+    items:
+      - name: User settings
+        href: resources/usersettings.md
+      - name: Get settings
+        href: api/usersettings-get.md
+      - name: Update settings
+        href: api/usersettings-update.md
