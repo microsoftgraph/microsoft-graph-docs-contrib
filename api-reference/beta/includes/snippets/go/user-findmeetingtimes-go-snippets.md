@@ -32,7 +32,7 @@ attendeeBase.SetType(&type)
 emailAddress := graphmodels.NewEmailAddress()
 name := "Alex Wilbur"
 emailAddress.SetName(&name) 
-address := "alexw@contoso.onmicrosoft.com"
+address := "alexw@contoso.com"
 emailAddress.SetAddress(&address) 
 attendeeBase.SetEmailAddress(emailAddress)
 

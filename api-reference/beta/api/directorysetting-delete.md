@@ -1,7 +1,8 @@
 ---
 title: "Delete directorySetting"
 description: "Delete a directory setting."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -31,6 +32,8 @@ The following permissions are required to update the "Consent Policy Settings" *
 
 <!-- { "blockType": "permissions", "name": "directorysetting_delete_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-delete-2-permissions.md)]
+
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

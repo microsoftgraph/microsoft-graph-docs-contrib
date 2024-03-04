@@ -4,22 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Group group = new Group();
-group.description = "Feelgood Marketing Campaign with external partners and vendors.";
-group.displayName = "Feelgood Marketing Campaign";
-LinkedList<String> groupTypesList = new LinkedList<String>();
-groupTypesList.add("Unified");
-group.groupTypes = groupTypesList;
-group.mailEnabled = true;
-group.mailNickname = "FeelGoodCampaign";
-group.securityEnabled = true;
-group.additionalDataManager().put("owners@odata.bind", new JsonPrimitive("[  \"https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7\"]"));
-group.additionalDataManager().put("members@odata.bind", new JsonPrimitive("[  \"https://graph.microsoft.com/v1.0/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20\"]"));
+group.setDescription("Feelgood Marketing Campaign with external partners and vendors.");
+group.setDisplayName("Feelgood Marketing Campaign");
+LinkedList<String> groupTypes = new LinkedList<String>();
+groupTypes.add("Unified");
+group.setGroupTypes(groupTypes);
+group.setMailEnabled(true);
+group.setMailNickname("FeelGoodCampaign");
+group.setSecurityEnabled(true);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+LinkedList<String> ownersOdataBind = new LinkedList<String>();
+ownersOdataBind.add("https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7");
+additionalData.put("owners@odata.bind", ownersOdataBind);
+LinkedList<String> membersOdataBind = new LinkedList<String>();
+membersOdataBind.add("https://graph.microsoft.com/v1.0/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20");
+additionalData.put("members@odata.bind", membersOdataBind);
+group.setAdditionalData(additionalData);
+Group result = graphClient.groups().post(group);
 
-graphClient.groups()
-	.buildRequest()
-	.post(group);
 
 ```

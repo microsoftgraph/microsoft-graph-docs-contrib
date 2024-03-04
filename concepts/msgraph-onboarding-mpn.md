@@ -40,7 +40,7 @@ Set up your development environment. You can create two types of EDU tenants:
 - [Demo EDU dev tenant](/graph/msgraph-onboarding-devtenant)
 - [Demo EDU tenant](/graph/msgraph-onboarding-edutenant)
 
-## See also
+## Related content
 
 - [Partner with Microsoft](/partner-center/mpn-overview)
 - [What is the Microsoft Partner Network?](/partner-center/mpn-create-a-partner-center-account)

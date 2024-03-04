@@ -4,25 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationClass educationClass = new EducationClass();
-educationClass.displayName = "String";
-educationClass.mailNickname = "String";
-educationClass.description = "String";
+educationClass.setOdataType("#microsoft.graph.educationClass");
+educationClass.setDisplayName("String");
+educationClass.setMailNickname("String");
+educationClass.setDescription("String");
 IdentitySet createdBy = new IdentitySet();
-educationClass.createdBy = createdBy;
-educationClass.classCode = "String";
-educationClass.externalName = "String";
-educationClass.externalId = "String";
-educationClass.externalSource = EducationExternalSource.SIS;
-educationClass.externalSourceDetail = "String";
-educationClass.grade = "String";
+createdBy.setOdataType("microsoft.graph.identitySet");
+educationClass.setCreatedBy(createdBy);
+educationClass.setClassCode("String");
+educationClass.setExternalName("String");
+educationClass.setExternalId("String");
+educationClass.setExternalSource(EducationExternalSource.Sis);
+educationClass.setExternalSourceDetail("String");
+educationClass.setGrade("String");
 EducationTerm term = new EducationTerm();
-educationClass.term = term;
+term.setOdataType("microsoft.graph.educationTerm");
+educationClass.setTerm(term);
+EducationClass result = graphClient.education().classes().post(educationClass);
 
-graphClient.education().classes()
-	.buildRequest()
-	.post(educationClass);
 
 ```

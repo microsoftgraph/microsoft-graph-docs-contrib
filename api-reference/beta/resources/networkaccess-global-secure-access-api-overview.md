@@ -107,6 +107,6 @@ The Global Secure Access services enable you to enrich the [Microsoft 365 audit 
 
 <!-- End of: Link to ZT guidance -->
 
-## See also
+## Related content
 
 - [What is Global Secure Access?](/azure/global-secure-access/overview-what-is-global-secure-access)

@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ProfileCardProperty profileCardProperty = new ProfileCardProperty();
-profileCardProperty.directoryPropertyName = "CustomAttribute1";
-LinkedList<ProfileCardAnnotation> annotationsList = new LinkedList<ProfileCardAnnotation>();
-ProfileCardAnnotation annotations = new ProfileCardAnnotation();
-annotations.displayName = "Cost Center";
-LinkedList<DisplayNameLocalization> localizationsList = new LinkedList<DisplayNameLocalization>();
-DisplayNameLocalization localizations = new DisplayNameLocalization();
-localizations.languageTag = "ru-RU";
-localizations.displayName = "центр затрат";
-localizationsList.add(localizations);
-annotations.localizations = localizationsList;
-annotationsList.add(annotations);
-profileCardProperty.annotations = annotationsList;
+profileCardProperty.setDirectoryPropertyName("CustomAttribute1");
+LinkedList<ProfileCardAnnotation> annotations = new LinkedList<ProfileCardAnnotation>();
+ProfileCardAnnotation profileCardAnnotation = new ProfileCardAnnotation();
+profileCardAnnotation.setDisplayName("Cost Center");
+LinkedList<DisplayNameLocalization> localizations = new LinkedList<DisplayNameLocalization>();
+DisplayNameLocalization displayNameLocalization = new DisplayNameLocalization();
+displayNameLocalization.setLanguageTag("ru-RU");
+displayNameLocalization.setDisplayName("центр затрат");
+localizations.add(displayNameLocalization);
+profileCardAnnotation.setLocalizations(localizations);
+annotations.add(profileCardAnnotation);
+profileCardProperty.setAnnotations(annotations);
+ProfileCardProperty result = graphClient.admin().people().profileCardProperties().post(profileCardProperty);
 
-graphClient.admin().people().profileCardProperties()
-	.buildRequest()
-	.post(profileCardProperty);
 
 ```

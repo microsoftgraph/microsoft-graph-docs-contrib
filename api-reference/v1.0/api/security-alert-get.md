@@ -1,6 +1,6 @@
 ---
 title: "Get alert"
-description: "Retrieve the properties and relationships of an security alert object."
+description: "Retrieve the properties and relationships of a security alert object."
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get alert
 Namespace: microsoft.graph.security
 
-Get the properties and relationships of an [alert](../resources/security-alert.md) in an organization based on the specified alert **id** property.
+Get the properties and relationships of an [alert](../resources/security-alert.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -46,6 +46,7 @@ If successful, this method returns a `200 OK` response code and an [alert](../re
 ## Examples
 
 ### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,6 +94,9 @@ GET https://graph.microsoft.com/v1.0/security/alerts_v2/da637578995287051192_756
 ---
 
 ### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -116,6 +120,7 @@ Content-type: application/json
   "determination": "unknown",
   "serviceSource": "microsoftDefenderForEndpoint",
   "detectionSource": "antivirus",
+  "productName": "Microsoft Defender for Endpoint",
   "detectorId": "e0da400f-affd-43ef-b1d5-afc2eb6f2756",
   "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
   "title": "Suspicious execution of hidden file",
@@ -258,6 +263,13 @@ Content-type: application/json
       "detailedRoles": [],
       "tags": []
     }
-  ]
+    ],
+	"systemTags" : [
+        "Defender Experts"
+  ],
+  "additionalData": {
+    "key1": "value1",
+    "key2": "value2"
+  }
 }
 ```

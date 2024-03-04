@@ -63,7 +63,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 - [Custom authentication extensions for attribute collection start and submit events](/entra/identity-platform/custom-extension-attribute-collection)
 - [OnAttributeCollectionStart event reference](/entra/identity-platform/custom-extension-onattributecollectionstart-reference)

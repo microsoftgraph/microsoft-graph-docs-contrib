@@ -4,19 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String invoiceId = "G016907411";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-AttributeSet attributeSet = AttributeSet.FULL;
+com.microsoft.graph.reports.partners.billing.usage.billed.microsoftgraphpartnersbillingexport.ExportPostRequestBody exportPostRequestBody = new com.microsoft.graph.reports.partners.billing.usage.billed.microsoftgraphpartnersbillingexport.ExportPostRequestBody();
+exportPostRequestBody.setInvoiceId("G016907411");
+exportPostRequestBody.setAttributeSet(com.microsoft.graph.models.partners.billing.AttributeSet.Full);
+var result = graphClient.reports().partners().billing().usage().billed().microsoftGraphPartnersBillingExport().post(exportPostRequestBody);
 
-graphClient.reports().partners().billing().usage().billed()
-	.export(BilledUsageExportParameterSet
-		.newBuilder()
-		.withInvoiceId(invoiceId)
-		.withAttributeSet(attributeSet)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -77,7 +77,7 @@ After unassigning the number, you can assign a different number to the bot by us
 
    `PS C:\> Set-CsPhoneNumberAssignment -Identity <user@contoso.com> -PhoneNumber <phone_number> -PhoneNumberType <type>`
 
-## See also
+## Related content
 
 - [Teams API overview](teams-concept-overview.md)
 - [Incident bot sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples/IncidentBot)

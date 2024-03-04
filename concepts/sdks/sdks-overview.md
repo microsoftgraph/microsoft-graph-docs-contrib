@@ -35,11 +35,7 @@ In addition, don't use a preview release of an SDK in production apps, regardles
 
 A release of an SDK in *GA* status can use the Microsoft Graph API v1.0 endpoint or beta endpoint as specified. Because Microsoft Graph APIs in the beta endpoint are subject to breaking changes, don't use the production apps a GA release of an SDK that accesses the Microsoft Graph API beta endpoint.
 
-## Microsoft 365 developer subscription
-
-When you use Microsoft Graph to build applications, we recommend that you join the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program) to get a free Microsoft 365 developer subscription.
-
-## See also
+## Related content
 
 - For more information about the features and capabilities of the SDK, see [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
 - Request or vote on new features at the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).

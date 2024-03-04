@@ -4,7 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.planner.tasks.item.planner_task_item_request_builder import PlannerTaskItemRequestBuilder
+from msgraph.generated.models.planner_task import PlannerTask
+from msgraph.generated.models.planner_assignments import PlannerAssignments
+from msgraph.generated.models.planner_assignment import PlannerAssignment
+from msgraph.generated.models.planner_applied_categories import PlannerAppliedCategories
+from msgraph.generated.models.planner_task_recurrence import PlannerTaskRecurrence
+from msgraph.generated.models.planner_recurrence_schedule import PlannerRecurrenceSchedule
+from msgraph.generated.models.recurrence_pattern import RecurrencePattern
 
 graph_client = GraphServiceClient(credentials, scopes)
 

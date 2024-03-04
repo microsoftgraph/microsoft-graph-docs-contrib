@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/fin
 [!INCLUDE [sample-code](../includes/snippets/go/authenticationstrengthpolicythisfindbymethodmode-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/authenticationstrengthpolicythisfindbymethodmode-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/authenticationstrengthpolicythisfindbymethodmode-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

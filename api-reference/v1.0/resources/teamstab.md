@@ -71,7 +71,7 @@ Here's a JSON representation of the resource.
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 

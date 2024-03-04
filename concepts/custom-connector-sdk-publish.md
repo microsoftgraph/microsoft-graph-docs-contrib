@@ -59,7 +59,7 @@ Use the following steps to publish a connection for your custom connector:
 
 13. Review the published connection under the **Data sources** tab to confirm that the connection setup worked. For details, see [Step 11: Confirm that the connection setup worked](/microsoftsearch/configure-connector#step-11-confirm-if-the-connection-setup-worked).
 
-## See also
+## Related content
 
 - [Best practices](/graph/custom-connector-sdk-best-practices)
 - [Troubleshooting](/graph/custom-connector-sdk-troubleshooting)

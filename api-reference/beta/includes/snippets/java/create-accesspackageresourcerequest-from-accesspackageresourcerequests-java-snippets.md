@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessPackageResourceRequest accessPackageResourceRequest = new AccessPackageResourceRequest();
-accessPackageResourceRequest.catalogId = "26ac0c0a-08bc-4a7b-a313-839f58044ba5";
-accessPackageResourceRequest.requestType = "AdminAdd";
-accessPackageResourceRequest.justification = "";
+accessPackageResourceRequest.setCatalogId("26ac0c0a-08bc-4a7b-a313-839f58044ba5");
+accessPackageResourceRequest.setRequestType("AdminAdd");
+accessPackageResourceRequest.setJustification("");
 AccessPackageResource accessPackageResource = new AccessPackageResource();
-accessPackageResource.displayName = "Sales";
-accessPackageResource.description = "https://contoso.sharepoint.com/sites/Sales";
-accessPackageResource.url = "https://contoso.sharepoint.com/sites/Sales";
-accessPackageResource.resourceType = "SharePoint Online Site";
-accessPackageResource.originId = "https://contoso.sharepoint.com/sites/Sales";
-accessPackageResource.originSystem = "SharePointOnline";
-accessPackageResourceRequest.accessPackageResource = accessPackageResource;
+accessPackageResource.setDisplayName("Sales");
+accessPackageResource.setDescription("https://contoso.sharepoint.com/sites/Sales");
+accessPackageResource.setUrl("https://contoso.sharepoint.com/sites/Sales");
+accessPackageResource.setResourceType("SharePoint Online Site");
+accessPackageResource.setOriginId("https://contoso.sharepoint.com/sites/Sales");
+accessPackageResource.setOriginSystem("SharePointOnline");
+accessPackageResourceRequest.setAccessPackageResource(accessPackageResource);
+AccessPackageResourceRequest result = graphClient.identityGovernance().entitlementManagement().accessPackageResourceRequests().post(accessPackageResourceRequest);
 
-graphClient.identityGovernance().entitlementManagement().accessPackageResourceRequests()
-	.buildRequest()
-	.post(accessPackageResourceRequest);
 
 ```

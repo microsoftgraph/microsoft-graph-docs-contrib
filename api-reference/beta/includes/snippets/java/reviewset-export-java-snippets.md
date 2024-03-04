@@ -4,27 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String outputName = "2020-12-06 Contoso investigation export";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String description = "Export for the Contoso investigation";
+com.microsoft.graph.beta.compliance.ediscovery.cases.item.reviewsets.item.microsoftgraphediscoveryexport.ExportPostRequestBody exportPostRequestBody = new com.microsoft.graph.beta.compliance.ediscovery.cases.item.reviewsets.item.microsoftgraphediscoveryexport.ExportPostRequestBody();
+exportPostRequestBody.setOutputName("2020-12-06 Contoso investigation export");
+exportPostRequestBody.setDescription("Export for the Contoso investigation");
+exportPostRequestBody.setExportOptions(EnumSet.of(com.microsoft.graph.beta.models.ediscovery.ExportOptions.OriginalFiles, com.microsoft.graph.beta.models.ediscovery.ExportOptions.FileInfo, com.microsoft.graph.beta.models.ediscovery.ExportOptions.Tags));
+exportPostRequestBody.setExportStructure(com.microsoft.graph.beta.models.ediscovery.ExportFileStructure.Directory);
+graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").reviewSets().byReviewSetId("{reviewSet-id}").microsoftGraphEdiscoveryExport().post(exportPostRequestBody);
 
-EnumSet<ExportOptions> exportOptions = EnumSet.of(ExportOptions.ORIGINAL_FILES,ExportOptions.FILE_INFO,ExportOptions.TAGS);
-
-ExportFileStructure exportStructure = ExportFileStructure.DIRECTORY;
-
-graphClient.compliance().ediscovery().cases("99e865fc-e29f-479a-ba83-9e58eb017103").reviewSets("e44ac2cb-f8b4-4fd8-aa1c-1391b46ba9cc")
-	.export(ReviewSetExportParameterSet
-		.newBuilder()
-		.withOutputName(outputName)
-		.withDescription(description)
-		.withAzureBlobContainer(null)
-		.withAzureBlobToken(null)
-		.withExportOptions(exportOptions)
-		.withExportStructure(exportStructure)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

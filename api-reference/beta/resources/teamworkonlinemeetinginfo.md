@@ -40,5 +40,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [Chat](chat.md)

@@ -194,7 +194,7 @@ Content-Type: application/octet-stream
     [
       "4db3619f-be92-42a7-8c74-43fab185da6f",
       "1MoveHost",
-      "connie_1@cpccontoso.onmicrosoft.com",
+      "connie_1@contoso.com",
       "Rightsized",
       {
         "NumvCPUs": 2,
@@ -211,7 +211,7 @@ Content-Type: application/octet-stream
     [
       "f2ee066c-f63e-4acd-a41e-e348db71cb4d",
       "AXFBF",
-      "connie_2@cpccontoso.onmicrosoft.com",
+      "connie_2@contoso.com",
       "Rightsized",
       {
         "NumvCPUs": 2,

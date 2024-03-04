@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PersonInterest personInterest = new PersonInterest();
-LinkedList<String> categoriesList = new LinkedList<String>();
-categoriesList.add("Sports");
-personInterest.categories = categoriesList;
-personInterest.description = "World's greatest football club";
-personInterest.displayName = "Chelsea FC";
-personInterest.webUrl = "https://www.chelseafc.com";
+LinkedList<String> categories = new LinkedList<String>();
+categories.add("Sports");
+personInterest.setCategories(categories);
+personInterest.setDescription("World's greatest football club");
+personInterest.setDisplayName("Chelsea FC");
+personInterest.setWebUrl("https://www.chelseafc.com");
+PersonInterest result = graphClient.me().profile().interests().post(personInterest);
 
-graphClient.me().profile().interests()
-	.buildRequest()
-	.post(personInterest);
 
 ```

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.deviceManagement.virtualEndpoint.onPremisesConnections.item.cloud_pc_on_premises_connection_item_request_builder import CloudPcOnPremisesConnectionItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

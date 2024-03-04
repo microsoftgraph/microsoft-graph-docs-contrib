@@ -295,5 +295,5 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related content
 - [Get team](../api/team-get.md)

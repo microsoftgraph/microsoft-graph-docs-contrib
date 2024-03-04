@@ -4,24 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<DeviceComplianceScheduledActionForRule> deviceComplianceScheduledActionForRulesList = new LinkedList<DeviceComplianceScheduledActionForRule>();
-DeviceComplianceScheduledActionForRule deviceComplianceScheduledActionForRules = new DeviceComplianceScheduledActionForRule();
-deviceComplianceScheduledActionForRules.id = "f0075d5e-5d5e-f007-5e5d-07f05e5d07f0";
-deviceComplianceScheduledActionForRules.ruleName = "Rule Name value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-deviceComplianceScheduledActionForRulesList.add(deviceComplianceScheduledActionForRules);
-DeviceComplianceScheduledActionForRuleCollectionResponse deviceComplianceScheduledActionForRuleCollectionResponse = new DeviceComplianceScheduledActionForRuleCollectionResponse();
-deviceComplianceScheduledActionForRuleCollectionResponse.value = deviceComplianceScheduledActionForRulesList;
-DeviceComplianceScheduledActionForRuleCollectionPage deviceComplianceScheduledActionForRuleCollectionPage = new DeviceComplianceScheduledActionForRuleCollectionPage(deviceComplianceScheduledActionForRuleCollectionResponse, null);
+com.microsoft.graph.beta.devicemanagement.devicecompliancepolicies.item.scheduleactionsforrules.ScheduleActionsForRulesPostRequestBody scheduleActionsForRulesPostRequestBody = new com.microsoft.graph.beta.devicemanagement.devicecompliancepolicies.item.scheduleactionsforrules.ScheduleActionsForRulesPostRequestBody();
+LinkedList<DeviceComplianceScheduledActionForRule> deviceComplianceScheduledActionForRules = new LinkedList<DeviceComplianceScheduledActionForRule>();
+DeviceComplianceScheduledActionForRule deviceComplianceScheduledActionForRule = new DeviceComplianceScheduledActionForRule();
+deviceComplianceScheduledActionForRule.setOdataType("#microsoft.graph.deviceComplianceScheduledActionForRule");
+deviceComplianceScheduledActionForRule.setId("f0075d5e-5d5e-f007-5e5d-07f05e5d07f0");
+deviceComplianceScheduledActionForRule.setRuleName("Rule Name value");
+deviceComplianceScheduledActionForRules.add(deviceComplianceScheduledActionForRule);
+scheduleActionsForRulesPostRequestBody.setDeviceComplianceScheduledActionForRules(deviceComplianceScheduledActionForRules);
+graphClient.deviceManagement().deviceCompliancePolicies().byDeviceCompliancePolicyId("{deviceCompliancePolicy-id}").scheduleActionsForRules().post(scheduleActionsForRulesPostRequestBody);
 
-graphClient.deviceManagement().deviceCompliancePolicies("{deviceCompliancePolicyId}")
-	.scheduleActionsForRules(DeviceCompliancePolicyScheduleActionsForRulesParameterSet
-		.newBuilder()
-		.withDeviceComplianceScheduledActionForRules(deviceComplianceScheduledActionForRulesList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

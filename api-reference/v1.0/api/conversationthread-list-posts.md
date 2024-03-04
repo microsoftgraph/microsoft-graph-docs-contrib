@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, 
+Get the posts of the specified thread. You can specify both the parent conversation and the thread, or,
 you can specify the thread without referencing the parent conversation.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -121,13 +121,13 @@ Content-type: application/json
             "from": {
                 "emailAddress": {
                     "name": "HR Taskforce",
-                    "address": "HRTaskforce@M365x214355.onmicrosoft.com"
+                    "address": "HRTaskforce@contoso.com"
                 }
             },
             "sender": {
                 "emailAddress": {
                     "name": "Joni Sherman",
-                    "address": "JoniS@M365x214355.onmicrosoft.com"
+                    "address": "JoniS@contoso.com"
                 }
             }
         }

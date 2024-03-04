@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SimulationAutomation simulationAutomation = graphClient.security().attackSimulation().simulationAutomations("fbad62b0-b32d-b6ac-9f48-d84bbea08f96")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+SimulationAutomation result = graphClient.security().attackSimulation().simulationAutomations().bySimulationAutomationId("{simulationAutomation-id}").get();
+
 
 ```

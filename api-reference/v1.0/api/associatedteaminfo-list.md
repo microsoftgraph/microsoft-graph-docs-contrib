@@ -139,7 +139,7 @@ Content-Type: application/json
 ```
 
 
-## See also
+## Related content
 
 - [List joinedTeams](../api/user-list-joinedteams.md)
 - [Get team](../api/team-get.md)

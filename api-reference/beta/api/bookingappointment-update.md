@@ -99,10 +99,10 @@ The following example changes the date of service by a day and updates the invoi
 <!-- {
   "blockType": "request",
   "name": "update_bookingappointment",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "AAMkADKnAAA="]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "AAMkADKnAAA="]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
+PATCH https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.com/appointments/AAMkADKnAAA=
 Content-type: application/json
 
 {
@@ -147,10 +147,6 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-bookingappointment-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingappointment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

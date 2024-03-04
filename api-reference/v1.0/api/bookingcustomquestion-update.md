@@ -62,10 +62,10 @@ If successful, this method returns a `200 OK` response code and an updated [book
 <!-- {
   "blockType": "request",
   "name" : "bookingcustomquestionupdate",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "91f1ef26-ca00-451c-1c64-8f3560c80d3d"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com", "91f1ef26-ca00-451c-1c64-8f3560c80d3d"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/91f1ef26-ca00-451c-1c64-8f3560c80d3d
+PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/customQuestions/91f1ef26-ca00-451c-1c64-8f3560c80d3d
 Content-Type: application/json
 
 {

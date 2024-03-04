@@ -30,7 +30,7 @@ requestBody.SetBody(body)
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
-address := "AdeleV@contoso.onmicrosoft.com"
+address := "AdeleV@contoso.com"
 emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 

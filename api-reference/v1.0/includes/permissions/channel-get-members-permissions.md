@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|ChannelMember.Read.All|ChannelMember.ReadWrite.All, ChannelMember.ReadWrite, Chat.Read, Chat.ReadBasic, Chat.ReadWrite|
+|Delegated (work or school account)|ChannelMember.Read.All|ChannelMember.ReadWrite.All, ChannelMember.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|ChannelMember.Read.All|ChannelMember.ReadWrite.All, TeamMember.Read.Group|
 

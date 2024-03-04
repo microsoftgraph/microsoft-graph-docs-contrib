@@ -79,10 +79,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/c3VwZXJTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW4z/microsoft.graph.superServerlessFunctionFinding
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-superserverlessfunctionfinding-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-superserverlessfunctionfinding-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -116,7 +112,7 @@ Content-type: application/json
           "source": {
             "@odata.type": "graph.aadSource",
             "identityProviderType": "aad",
-            "domain": "mciemc1.onmicrosoft.com"
+            "domain": "contoso.com"
           },
           "authorizationSystem": {
             "@odata.type": "graph.azureAuthorizationSystem",

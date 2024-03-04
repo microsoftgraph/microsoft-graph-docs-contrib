@@ -46,6 +46,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about teamsApp upgraded](/graph/system-messages/#teams-app-upgraded)
 - For more information about other types of events, see [System messages](/graph/system-messages).

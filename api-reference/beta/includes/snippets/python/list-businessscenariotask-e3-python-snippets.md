@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.solutions.businessScenarios.item.planner.tasks.tasks_request_builder import TasksRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

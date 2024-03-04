@@ -4,35 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<SearchRequest> requestsList = new LinkedList<SearchRequest>();
-SearchRequest requests = new SearchRequest();
-LinkedList<EntityType> entityTypesList = new LinkedList<EntityType>();
-entityTypesList.add(EntityType.EXTERNAL_ITEM);
-requests.entityTypes = entityTypesList;
-LinkedList<String> contentSourcesList = new LinkedList<String>();
-contentSourcesList.add("/external/connections/connectionfriendlyname");
-requests.contentSources = contentSourcesList;
-requests.region = "US";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.search.query.QueryPostRequestBody queryPostRequestBody = new com.microsoft.graph.beta.search.query.QueryPostRequestBody();
+LinkedList<SearchRequest> requests = new LinkedList<SearchRequest>();
+SearchRequest searchRequest = new SearchRequest();
+LinkedList<EntityType> entityTypes = new LinkedList<EntityType>();
+entityTypes.add(EntityType.ExternalItem);
+searchRequest.setEntityTypes(entityTypes);
+LinkedList<String> contentSources = new LinkedList<String>();
+contentSources.add("/external/connections/connectionfriendlyname");
+searchRequest.setContentSources(contentSources);
+searchRequest.setRegion("US");
 SearchQuery query = new SearchQuery();
-query.queryString = "contoso product";
-requests.query = query;
-requests.from = 0;
-requests.size = 25;
-LinkedList<String> fieldsList = new LinkedList<String>();
-fieldsList.add("title");
-fieldsList.add("description");
-requests.fields = fieldsList;
+query.setQueryString("contoso product");
+searchRequest.setQuery(query);
+searchRequest.setFrom(0);
+searchRequest.setSize(25);
+LinkedList<String> fields = new LinkedList<String>();
+fields.add("title");
+fields.add("description");
+searchRequest.setFields(fields);
+requests.add(searchRequest);
+queryPostRequestBody.setRequests(requests);
+var result = graphClient.search().query().post(queryPostRequestBody);
 
-requestsList.add(requests);
-
-graphClient.search()
-	.query(SearchEntityQueryParameterSet
-		.newBuilder()
-		.withRequests(requestsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

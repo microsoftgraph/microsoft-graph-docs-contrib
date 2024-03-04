@@ -4,26 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DriveItem driveItem = new DriveItem();
-driveItem.name = "My Day at the Beach";
-driveItem.additionalDataManager().put("@microsoft.graph.conflictBehavior", new JsonPrimitive("rename"));
+driveItem.setName("My Day at the Beach");
 Bundle bundle = new Bundle();
 Album album = new Album();
-bundle.album = album;
-driveItem.bundle = bundle;
-LinkedList<DriveItem> childrenList = new LinkedList<DriveItem>();
-DriveItem children = new DriveItem();
-children.id = "1234asdf";
-childrenList.add(children);
-DriveItemCollectionResponse driveItemCollectionResponse = new DriveItemCollectionResponse();
-driveItemCollectionResponse.value = childrenList;
-DriveItemCollectionPage driveItemCollectionPage = new DriveItemCollectionPage(driveItemCollectionResponse, null);
-driveItem.children = driveItemCollectionPage;
+bundle.setAlbum(album);
+driveItem.setBundle(bundle);
+LinkedList<DriveItem> children = new LinkedList<DriveItem>();
+DriveItem driveItem1 = new DriveItem();
+driveItem1.setId("1234asdf");
+children.add(driveItem1);
+driveItem.setChildren(children);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("@microsoft.graph.conflictBehavior", "rename");
+driveItem.setAdditionalData(additionalData);
+DriveItem result = graphClient.drives().byDriveId("{drive-id}").bundles().post(driveItem);
 
-graphClient.drive().bundles()
-	.buildRequest()
-	.post(driveItem);
 
 ```

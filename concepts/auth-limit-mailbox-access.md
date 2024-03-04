@@ -95,7 +95,7 @@ If the Microsoft Graph API calls from your app return this error, work with the 
 
 
 
-## See also
+## Related content
 
 - [Permissions reference](permissions-reference.md)
 - [New-ApplicationAccessPolicy](/powershell/module/exchange/organization/new-applicationaccesspolicy)

@@ -20,7 +20,7 @@ An assignment represents a task or unit of work assigned to a student or team me
 | Draft | Initial status when a new assignment is created or copied from an existing assignment. | `POST /education/classes/{id}/assignments` | Resources, categories, rubrics |
 | Published | A background processing state  when the assignment is distributed to each student assigned. | `POST /education/classes/{id}/assignments/{id}/publish` | |
 | Scheduled | Status when the teacher scheduled the assignment to publish at a future time. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` | Resources, categories, rubrics |
-| Assigned | "After the publishing process is complete, the assignment is moved to an assigned state, becoming available for the students, or it stays in an active state. | `POST /education/classes/{id}/assignments/{id}/publish`<br/>`POST /education/classes/{id}/assignments/{id}/activate` | Submissions |
+| Assigned | After the publishing process is complete, the assignment is moved to an assigned state, becoming available for the students, or it stays in an active state. | `POST /education/classes/{id}/assignments/{id}/publish`<br/>`POST /education/classes/{id}/assignments/{id}/activate` | Submissions |
 | Pending | Background processing status when a new assignment is being copied from an existing one. | `PATCH /education/classes/{id}/assignments/{id}` | |
 | Inactive | The assignment has no additional action items for teachers and students. | `POST /education/classes/{id}/assignments/{id}/deactivate` | |
 
@@ -79,6 +79,6 @@ The following limits apply to all API calls:
 * The maximum size allowed for resources is 500 MB.
 * Throttling limits apply; for details, see [Microsoft Graph throttling guidance](/graph/throttling).
 
-## See also
+## Related content
 
 - [States, transitions, and limitations for submissions](./submissions-states-transition.md)

@@ -4,44 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CloudPcReportName reportName = CloudPcReportName.CLOUD_PC_USAGE_CATEGORY_REPORTS;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-int top = 50;
+com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getcloudpcrecommendationreports.GetCloudPcRecommendationReportsPostRequestBody getCloudPcRecommendationReportsPostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getcloudpcrecommendationreports.GetCloudPcRecommendationReportsPostRequestBody();
+getCloudPcRecommendationReportsPostRequestBody.setReportName(CloudPcReportName.CloudPcUsageCategoryReports);
+getCloudPcRecommendationReportsPostRequestBody.setTop(50);
+getCloudPcRecommendationReportsPostRequestBody.setSkip(0);
+getCloudPcRecommendationReportsPostRequestBody.setSearch("");
+getCloudPcRecommendationReportsPostRequestBody.setFilter("");
+LinkedList<String> select = new LinkedList<String>();
+select.add("CloudPcId");
+select.add("ManagedDeviceName");
+select.add("UserPrincipalName");
+select.add("UsageInsight");
+select.add("CurrentSize");
+select.add("RecommendedSize");
+select.add("UsageInHour");
+select.add("DevicePerfSummary");
+getCloudPcRecommendationReportsPostRequestBody.setSelect(select);
+LinkedList<String> orderBy = new LinkedList<String>();
+orderBy.add("ManagedDeviceName");
+getCloudPcRecommendationReportsPostRequestBody.setOrderBy(orderBy);
+graphClient.deviceManagement().virtualEndpoint().reports().getCloudPcRecommendationReports().post(getCloudPcRecommendationReportsPostRequestBody);
 
-int skip = 0;
-
-String search = "";
-
-String filter = "";
-
-LinkedList<String> selectList = new LinkedList<String>();
-selectList.add("CloudPcId");
-selectList.add("ManagedDeviceName");
-selectList.add("UserPrincipalName");
-selectList.add("UsageInsight");
-selectList.add("CurrentSize");
-selectList.add("RecommendedSize");
-selectList.add("UsageInHour");
-selectList.add("DevicePerfSummary");
-
-LinkedList<String> orderByList = new LinkedList<String>();
-orderByList.add("ManagedDeviceName");
-
-graphClient.deviceManagement().virtualEndpoint().reports()
-	.getCloudPcRecommendationReports(CloudPcReportsGetCloudPcRecommendationReportsParameterSet
-		.newBuilder()
-		.withReportName(reportName)
-		.withFilter(filter)
-		.withSelect(selectList)
-		.withSearch(search)
-		.withGroupBy(null)
-		.withOrderBy(orderByList)
-		.withSkip(skip)
-		.withTop(top)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

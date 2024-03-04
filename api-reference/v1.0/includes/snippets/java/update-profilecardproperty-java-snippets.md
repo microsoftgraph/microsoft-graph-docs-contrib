@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ProfileCardProperty profileCardProperty = new ProfileCardProperty();
-LinkedList<ProfileCardAnnotation> annotationsList = new LinkedList<ProfileCardAnnotation>();
-ProfileCardAnnotation annotations = new ProfileCardAnnotation();
-annotations.displayName = "Cost Center";
-LinkedList<DisplayNameLocalization> localizationsList = new LinkedList<DisplayNameLocalization>();
-DisplayNameLocalization localizations = new DisplayNameLocalization();
-localizations.languageTag = "nb-NO";
-localizations.displayName = "Kostnadssenter";
-localizationsList.add(localizations);
-annotations.localizations = localizationsList;
-annotationsList.add(annotations);
-profileCardProperty.annotations = annotationsList;
+LinkedList<ProfileCardAnnotation> annotations = new LinkedList<ProfileCardAnnotation>();
+ProfileCardAnnotation profileCardAnnotation = new ProfileCardAnnotation();
+profileCardAnnotation.setDisplayName("Cost Center");
+LinkedList<DisplayNameLocalization> localizations = new LinkedList<DisplayNameLocalization>();
+DisplayNameLocalization displayNameLocalization = new DisplayNameLocalization();
+displayNameLocalization.setLanguageTag("nb-NO");
+displayNameLocalization.setDisplayName("Kostnadssenter");
+localizations.add(displayNameLocalization);
+profileCardAnnotation.setLocalizations(localizations);
+annotations.add(profileCardAnnotation);
+profileCardProperty.setAnnotations(annotations);
+ProfileCardProperty result = graphClient.admin().people().profileCardProperties().byProfileCardPropertyId("{profileCardProperty-id}").patch(profileCardProperty);
 
-graphClient.admin().people().profileCardProperties("CustomAttribute1")
-	.buildRequest()
-	.patch(profileCardProperty);
 
 ```
