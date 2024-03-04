@@ -21,7 +21,7 @@ Get the list of classes from your education tenant and locate the class where yo
 - [Get Class](/graph/api/educationclass-get): Take the classid from the previous request and use it to get the information for that specific class.
 
 ```http
-GET https://graph.microsoft.com/beta/education/classes/{id}
+GET https://graph.microsoft.com/beta/education/classes
 ```
 
 ## Get assignment settings
