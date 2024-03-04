@@ -310,8 +310,8 @@ For example, Cameron is an administrator of a directory for an elementary school
 |:---------------|:--------|
 |null|Default value, no **ageGroup** has been set for the user.|
 |Minor|The user is considered a minor.|
-|NotAdult|The user is from a country that has statutory regulations  United States, United Kingdom, European Union or South Korea) and user's age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|
-|Adult|The user should be a treated as an adult.|
+|NotAdult|The user is from a country that has statutory regulations (such as the United States, United Kingdom, European Union, or South Korea) and user's age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|
+|Adult|The user should be treated as an adult.|
 
 #### consentProvidedForMinor values
 
@@ -433,7 +433,7 @@ The following is a JSON representation of the resource.
   "companyName": "String",
   "consentProvidedForMinor": "String",
   "country": "String",
-  "createdDateTime": "2019-02-07T21:53:13.067Z",
+  "createdDateTime": "String (timestamp)",
   "creationType": "String",
   "customSecurityAttributes": {
     "@odata.type": "microsoft.graph.customSecurityAttributeValue"
@@ -441,13 +441,13 @@ The following is a JSON representation of the resource.
   "deletedDateTime": "String (timestamp)",
   "department": "String",
   "displayName": "String",
-  "employeeHireDate": "2020-01-01T00:00:00Z",
+  "employeeHireDate": "String (timestamp)",
   "employeeId": "String",
   "employeeLeaveDateTime": "String (timestamp)",
   "employeeOrgData": {"@odata.type": "microsoft.graph.employeeOrgData"},
   "employeeType": "String",
   "externalUserState": "PendingAcceptance",
-  "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
+  "externalUserStateChangeDateTime": "String (timestamp)",
   "faxNumber": "String",
   "givenName": "String",
   "hireDate": "String (timestamp)",
@@ -488,13 +488,13 @@ The following is a JSON representation of the resource.
   "preferredName": "String",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "proxyAddresses": ["String"],
-  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
+  "refreshTokensValidFromDateTime": "String (timestamp)",
   "responsibilities": ["String"],
   "schools": ["String"],
   "securityIdentifier": "String",
   "serviceProvisioningErrors": [{"@odata.type": "microsoft.graph.serviceProvisioningXmlError"}],
   "showInAddressList": true,
-  "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
+  "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["String"],
   "state": "String",
   "streetAddress": "String",
