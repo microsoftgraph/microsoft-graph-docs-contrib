@@ -8,9 +8,11 @@ doc_type: conceptualPageType
 ---
 
 # Grading Categories
+This page provides guidance on setting up and using the grading categories for a class.
 
-A grading category is a property on an assignment setting resource, which in turn belongs to a class. You can access a grading category through its containing assignment settings object, or through its class.
 Teachers can use grading categories to weight assignments in the class grade. For example, a class could have 60% of its grade come from "Homework" assignments and 40% from "Test" assignments.
+
+Grading categories are defined on the class's settings. Each assignment that should be included in the final average grade needs to have a grading category added to it.
 
 > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
@@ -93,23 +95,11 @@ Content-type: application/json
 }
 ```
 
-## Get grading categories for an assignment
+## Add a grading category to an assignment
 
-Get a list of the education Grading Category objects and their properties.:
+Give an assignment a grading category. This will cause the assignment to contribute to the class average grade as part of that grading category.
 
-- [Get grading categories for an assignment](/graph/api/educationassignment-list-gradingcategory): Lists grading categories for an assignment.
-
-```http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
-```
-
-## Post a grading category
-
-Update an existing grading category
-
-
-
-- [Post a grading category](/graph/api/educationassignment-post-gradingcategory): This is used to update a grading category.
+- [Add gradingCategory](/graph/api/educationassignment-post-gradingcategory): This is used to add the grading category to an assignment.
 
 ```http
 PUT /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
