@@ -65,7 +65,7 @@ The following JSON representation shows an example of a Windows setting. The ins
 
 A [**windowsSettingInstance**](../resources/windowssettinginstance.md) represents a setting instance from the Windows operating system that is stored in the cloud for a given user. A [windowsSettingInstance](../resources/windowssettinginstance.md) belongs to a [windowsSetting](../resources/windowssetting.md).
 
-The following JSON representation shows an example windows setting instance.
+The following JSON representation shows an example of a Windows setting instance.
 
 <!-- {
   "blockType": "resource",
