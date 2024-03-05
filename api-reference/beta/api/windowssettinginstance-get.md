@@ -3,7 +3,7 @@ title: "Get windowsSettingInstance"
 description: "Read the properties and relationships of a windowsSettingInstance object."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "cross-device-experiences"
+ms.prod: "project-rome"
 doc_type: apiPageType
 ---
 
