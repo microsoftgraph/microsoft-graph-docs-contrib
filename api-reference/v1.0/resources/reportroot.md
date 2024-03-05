@@ -38,12 +38,12 @@ For details about report views and names, see [Microsoft 365 reports - Microsoft
 
 For details about report views and names, see [Microsoft 365 reports - Microsoft Teams usage activity](/microsoft-365/admin/activity-reports/microsoft-teams-usage-activity).
 
-| Method                                                                                      | Return Type | Description                              |
-|:--------------------------------------------------------------------------------------------|:------------|:-----------------------------------------|
-| [Get team detail](../api/reportroot-getteamsteamactivitydetail.md)                          | Stream      | Get details about Teams activity by team. The numbers include activities for both licensed and non-licensed users. |
-| [Get team counts](../api/reportroot-getteamsteamactivitycounts.md)                          | Stream      | Get the number of team activities across Microsoft Teams. The activity types are related to meetings and messages. |
-| [Get team counts](../api/reportroot-getteamsteamcounts.md)                                  | Stream      | Get the number of teams by type across Microsoft Teams. |
-| [Get distribution team counts](../api/reportroot-getteamsteamactivitydistributioncounts.md) | Stream      | Get the number of team activities across Microsoft Teams over a selected period. |
+| Method                                                                                               | Return Type | Description                              |
+|:-----------------------------------------------------------------------------------------------------|:------------|:-----------------------------------------|
+| [Get team detail](../api/reportroot-getteamsteamactivitydetail.md)                                   | Stream      | Get details about Teams activity by team. The numbers include activities for both licensed and non-licensed users. |
+| [Get team activity counts](../api/reportroot-getteamsteamactivitycounts.md)                          | Stream      | Get the number of team activities across Microsoft Teams. The activity types are related to meetings and messages. |
+| [Get team activity distribution counts](../api/reportroot-getteamsteamactivitydistributioncounts.md) | Stream      | Get the number of team activities across Microsoft Teams over a selected period. |
+| [Get team counts](../api/reportroot-getteamsteamcounts.md)                                           | Stream      | Get the number of teams by type across Microsoft Teams. |
 
 ### Outlook activity
 
@@ -151,7 +151,7 @@ For details about report views and names, see [Microsoft 365 reports - SharePoin
 | [Get user counts](../api/reportroot-getsharepointactivityusercounts.md) | Stream      | Get the trend in the number of active users. A user is considered active if he or she has executed a file activity (save, sync, modify, or share) or visited a page within the specified time period. |
 | [Get pages](../api/reportroot-getsharepointactivitypages.md)            | Stream      | Get the number of unique pages visited by users. |
 
-### SharePoint site usage'
+### SharePoint site usage
 
 For details about report views and names, see [Microsoft 365 reports - SharePoint site usage](/microsoft-365/admin/activity-reports/sharepoint-site-usage-ww).
 
@@ -177,8 +177,8 @@ For details about report views and names, see [Skype for Business activity](/sky
 
 For details about report views and names, see [Skype for Business clients used](/skypeforbusiness/skype-for-business-online-reporting/device-usage-report).
 
-| Method                                                                                                    | Return Type | Description                              |
-|:----------------------------------------------------------------------------------------------------------|:------------|:-----------------------------------------|
+| Method                                                                                                    | Return Type | Description |
+|:----------------------------------------------------------------------------------------------------------|:------------|:------------|
 | [Get user detail](../api/reportroot-getskypeforbusinessdeviceusageuserdetail.md)                          | Stream      | Get details about Skype for Business device usage by user. |
 | [Get distribution user counts](../api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md) | Stream      | Get the number of users using unique devices in your organization. The report shows you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad. |
 | [Get user counts](../api/reportroot-getskypeforbusinessdeviceusageusercounts.md)                          | Stream      | Get the usage trends on how many users in your organization have connected using the Skype for Business app. You also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization. |
