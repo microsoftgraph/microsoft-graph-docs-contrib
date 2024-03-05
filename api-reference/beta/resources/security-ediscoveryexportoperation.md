@@ -30,7 +30,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |createdBy|[identitySet](../resources/identityset.md)| The user who initiated the export operation.|
 |createdDateTime|DateTimeOffset| The date and time the export was created.|
 |description|String| The description provided for the export.|
-|exportFileMetaData | [microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md)| Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**. If you export to an Azure storage location, this property returns empty. |
+|exportFileMetadata | [microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md)| Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**. If you export to an Azure storage location, this property returns empty. |
 |exportOptions|microsoft.graph.security.exportOptions| The options provided for the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`. The `fileInfo` member is deprecated and will stop returning data on April 30, 2023. Going forward, the summary and load file are always included. |
 |exportStructure|microsoft.graph.security.exportFileStructure|The options provided that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
 |id|String| The ID for the operation. Read-only. |

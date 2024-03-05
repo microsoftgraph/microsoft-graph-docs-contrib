@@ -53,7 +53,6 @@ The following is a JSON representation of the resource.
   "resourceType": "String",
   "roles": ["String"],
   "tags": ["String"],
-  "type": "String",
   "verdict": "String"
 }
 ```

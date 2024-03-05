@@ -32,6 +32,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 |actorDisplayName|String| The adversary or activity group that is associated with this alert.|
 |additionalData|microsoft.graph.security.dictionary| A collection of other alert properties, including user-defined properties. Any custom details defined in the alert, and any dynamic content in the alert details, are stored here.|                                                           |alertWebUrl|String| URL for the Microsoft 365 Defender portal alert page.|
 |alertPolicyId|String| The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.|
+|alertWebUrl|String|URL for the Microsoft 365 Defender portal alert page.|
 |assignedTo|String| Owner of the **alert**, or null if no owner is assigned.|
 |category|String| The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
 |classification|[microsoft.graph.security.alertClassification](#alertclassification-values)| Specifies whether the alert represents a true threat. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
@@ -49,6 +50,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 |lastActivityDateTime|DateTimeOffset| The oldest activity associated with the alert.|
 |lastUpdateDateTime|DateTimeOffset| Time when the alert was last updated at Microsoft 365 Defender.|
 |mitreTechniques|Collection(Edm.String)| The attack techniques, as aligned with the MITRE ATT&CK framework.|
+|productName|String| *TODO*|
 |providerAlertId|String| The ID of the alert as it appears in the security provider product that generated the alert.|
 |recommendedActions|String| Recommended response and remediation actions to take in the event this alert was generated.|
 |resolvedDateTime|DateTimeOffset| Time when the alert was resolved.|
