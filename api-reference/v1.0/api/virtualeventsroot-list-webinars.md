@@ -45,7 +45,7 @@ This method supports the `$count` [OData query parameter](/graph/query-parameter
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

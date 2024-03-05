@@ -79,10 +79,10 @@ If your app is already storing state data, consider using the "sync from now" sh
 
 Azure AD Graph used a system called multi-part MIME messages to manage batching.  Microsoft Graph uses [JSON batching](json-batching.md) to permit up to 20 requests in a single batch operation. The JSON batching mechanism is simpler to use, especially together with JSON parsing libraries.  It also allows for sequencing batch operations.  However, it isn't backwards compatible with the Azure AD Graph batching approach.
 
-## Next Steps
+## Next step
 
-- Learn about [resource differences](migrate-azure-ad-graph-resource-differences.md) between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [!div class="nextstepaction"]
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)
 
 <!-- {
   "type": "#page.annotation",

@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "unifiedroleeligibilityscheduleinstance_filterbycurrentuser" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-permissions.md)]
 
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -46,7 +48,7 @@ This method supports the `$select` OData query parameter to help customize the r
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

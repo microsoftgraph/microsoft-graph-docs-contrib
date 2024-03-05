@@ -25,7 +25,7 @@ Intune will provide customer the ability to run their Shell scripts on the enrol
 |[Create deviceShellScript](../api/intune-devices-deviceshellscript-create.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Create a new [deviceShellScript](../resources/intune-devices-deviceshellscript.md) object.|
 |[Delete deviceShellScript](../api/intune-devices-deviceshellscript-delete.md)|None|Deletes a [deviceShellScript](../resources/intune-devices-deviceshellscript.md).|
 |[Update deviceShellScript](../api/intune-devices-deviceshellscript-update.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Update the properties of a [deviceShellScript](../resources/intune-devices-deviceshellscript.md) object.|
-|[assign action](../api/intune-devices-deviceshellscript-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-devices-deviceshellscript-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|

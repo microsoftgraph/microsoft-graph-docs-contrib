@@ -32,7 +32,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 | Name          | Description               |
 | ------------- | ------------------------- |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

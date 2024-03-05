@@ -44,7 +44,8 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
 | phone                  | String                                            | The phone number of the room. |
-| tags                   | String collection                                 | Specifies additional features of the room, for example, details like the type of view or furniture type. |
+| placeId                | String                                            | An alternate immutable unique identifier of the place. |
+| tags                   | String collection                                 | Specifies other features of the room; for example, the type of view or furniture type. |
 | videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
 
 ### bookingType values
@@ -52,7 +53,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
 | standard | The room can be reserved based on the other settings in this cmdlet. This is the default value. |
-| reserved | The room is available only on a first come, first served basis. It cannot be reserved.|
+| reserved | The room is available only on a first come, first served basis. It can't be reserved.|
 
 ## Relationships
 
@@ -60,7 +61,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -89,7 +90,8 @@ The following is a JSON representation of the resource.
   "nickname": "String",
   "phone": "String",
   "tags": ["String"],
-  "videoDeviceName": "String"
+  "videoDeviceName": "String",
+  "placeId": "String (alternate identifier)"
 }
 ```
 

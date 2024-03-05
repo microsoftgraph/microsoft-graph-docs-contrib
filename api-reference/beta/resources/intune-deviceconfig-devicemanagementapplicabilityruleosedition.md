@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementApplicabilityRuleOsEdition resource type"
-description: ""
+description: "Intune Deviceconfig Devicemanagementapplicabilityruleosedition Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

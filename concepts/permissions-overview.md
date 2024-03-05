@@ -66,7 +66,7 @@ Apart from being assigned Microsoft Graph application permissions, an app may al
 
 ### Comparison of delegated and application permissions
 
-| <!-- No header--> | Delegated permissions | Application permissions |
+| Category | Delegated permissions | Application permissions |
 |--|--|--|
 | Types of apps | Web app / Mobile / Single-page app (SPA) | Web / Daemon |
 | Access context | [Get access on behalf of a user](auth-v2-user.md) | [Get access without a user](auth-v2-service.md) |
@@ -226,7 +226,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 The **appRoles**, **oauth2PermissionScopes**, and **resourceSpecificApplicationPermissions** objects store the application, delegated, and resource-specific consent permissions respectively.
 
-## See also
+## Related content
 
 - [Microsoft Graph permissions reference](permissions-reference.md).
 - [Overview of role-based access control in Microsoft Entra ID](/azure/active-directory/roles/custom-overview).

@@ -8,18 +8,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphbookingbusinesses "github.com/microsoftgraph/msgraph-beta-sdk-go/bookingbusinesses"
+	  graphsolutions "github.com/microsoftgraph/msgraph-beta-sdk-go/solutions"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphbookingbusinesses.NewCancelPostRequestBody()
+requestBody := graphsolutions.NewCancelPostRequestBody()
 cancellationMessage := "Your appointment has been successfully cancelled. Please call us again."
 requestBody.SetCancellationMessage(&cancellationMessage) 
 
-graphClient.BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Appointments().ByBookingAppointmentId("bookingAppointment-id").Cancel().Post(context.Background(), requestBody, nil)
+graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Appointments().ByBookingAppointmentId("bookingAppointment-id").Cancel().Post(context.Background(), requestBody, nil)
 
 
 ```

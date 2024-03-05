@@ -29,7 +29,7 @@ DELETE /planner/plans/{id}
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | If-Match  | Last known ETag value for the **plannerPlan** to be deleted. Required.|
 
 ## Request body

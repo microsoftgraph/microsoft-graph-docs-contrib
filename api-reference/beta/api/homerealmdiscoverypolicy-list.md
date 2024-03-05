@@ -40,7 +40,7 @@ This method supports the `$expand`, `$filter`, `$select` and `$top` OData query 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

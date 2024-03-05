@@ -32,7 +32,7 @@ GET /reports/getUserArchivedPrintJobs(userId='{userId}',startDateTime='{startDat
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Function Parameters
 In the request URL, provide the following function parameters with values:

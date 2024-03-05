@@ -24,11 +24,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "identitygovernance_taskprocessingresult_resume" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identitygovernance-taskprocessingresult-resume-permissions.md)]
 
-[!INCLUDE [rbac-lifecycle-workflows-apis-write](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-write.md)].
+[!INCLUDE [rbac-lifecycle-workflows-apis-write](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-write.md)]
 
 > [!IMPORTANT]
-> Apps specified in `authorizedApps` within the [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md) of the [custom task extension](../resources/identitygovernance-customtaskextension.md) are allowed to resume the task processing result without application permissions or role assignments.
-> The app specified in `resourceId` within the [azureAdTokenAuthentication](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md) of the [custom task extension](../resources/identitygovernance-customtaskextension.md) is allowed to resume the task processing result without an application permission or role assignment.
+> The following applies to app-only access to better follow the principle of least privilege:
+> - Apps specified in `authorizedApps` within the [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md) of the [custom task extension](../resources/identitygovernance-customtaskextension.md) are allowed to resume the task processing result without application permissions or role assignments.
+> - The app specified in `resourceId` within the [azureAdTokenAuthentication](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md) of the [custom task extension](../resources/identitygovernance-customtaskextension.md) is allowed to resume the task processing result without an application permission or role assignment.
 
 ## HTTP request
 
@@ -44,7 +45,7 @@ POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks/{taskId
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

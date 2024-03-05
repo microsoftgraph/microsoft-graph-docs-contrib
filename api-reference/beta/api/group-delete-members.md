@@ -2,7 +2,8 @@
 title: "Remove member"
 description: "Remove a member from a Microsoft 365 group or a security group through the members navigation property."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -41,7 +42,7 @@ DELETE /groups/{id}/members/{id}/$ref
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -118,7 +119,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Add member to team](team-post-members.md)
 - [Update member's role in team](team-update-members.md)

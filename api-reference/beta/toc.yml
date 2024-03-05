@@ -1,324 +1,28 @@
 items:
   - name: Overview of Microsoft Graph
-    href: /graph/overview
+    href: /graph/overview?context=graph/api/beta
+  - name: What's new
+    href: /graph/whats-new-overview?context=graph/api/beta
   - name: API changelog
     href: https://developer.microsoft.com/en-us/graph/changelog
     displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
+  - name: Quick start
+    href: https://developer.microsoft.com/en-us/graph/quick-start
   - name: Authentication and authorization
-    items:
-      - name: Overview
-        href: /graph/auth/index?context=graph/api/beta
-        displayName: authentication, authorization, authenticate, authorize
-      - name: Basics
-        href: /graph/auth/auth-concepts?context=graph/api/beta
-      - name: Register your app
-        href: /graph/auth-register-app-v2?context=graph/api/beta
-      - name: Get access on behalf of a user
-        href: /graph/auth-v2-user?context=graph/api/beta
-      - name: Get access without a user
-        href: /graph/auth-v2-service?context=graph/api/beta
-      - name: Permissions
-        items:
-          - name: Overview
-            displayName: Microsoft Graph permissions
-            href: /graph/permissions-overview?context=graph/api/beta
-          - name: Permissions reference
-            displayName: Microsoft Graph permissions list
-            href: /graph/permissions-reference?context=graph/api/beta
-          - name: Microsoft Entra built-in roles
-            displayName: Microsoft Graph permissions
-            href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
-      - name: Manage app access (CSPs)
-        href: /graph/auth-cloudsolutionprovider?context=graph/api/beta
-      - name: Limit mailbox access
-        href: /graph/auth-limit-mailbox-access?context=graph/api/beta
-      - name: Resolve authorization errors
-        href: /graph/resolve-auth-errors?context=graph/api/beta
+    href: /graph/auth/index?context=graph/api/beta
+  - name: Permissions reference
+    href: /graph/permissions-reference
   - name: Use the API
-    items:
-      - name: Overview
-        href: /graph/use-the-api?context=graph/api/beta
-        displayName: Microsoft Graph API, API, Microsoft Graph REST API, REST API
-      - name: Access data and methods
-        href: /graph/traverse-the-graph?context=graph/api/beta
-      - name: Paging
-        href: /graph/paging?context=graph/api/beta
-      - name: Query parameters
-        displayName: OData version 4.01, OData query parameters
-        items:
-          - name: Use query parameters
-            displayName: OData query parameters, OData
-            href: /graph/query-parameters?context=graph/api/beta
-          - name: Use filter
-            displayName: OData query parameters, OData
-            href: /graph/filter-query-parameter?context=graph/api/beta
-          - name: Use search
-            displayName: OData query parameters, OData
-            href: /graph/search-query-parameter?context=graph/api/beta
-          - name: Advanced query capabilities
-            displayName: OData query parameters, OData
-            href: /graph/aad-advanced-queries?context=graph/api/beta
-      - name: Batching
-        href: /graph/json-batching?context=graph/api/beta
-        displayName: Batch request
-      - name: Throttling
-        items:
-          - name: Overview
-            href: /graph/throttling?context=graph/api/beta
-            displayName: throttling
-          - name: Service-specific limits
-            href: /graph/throttling-limits?context=graph/api/beta
-            displayName: throttling
-      - name: Change notifications
-        displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
-        href: /graph/change-notifications-overview?context=graph/api/beta
-      - name: Change tracking
-        displayName: delta query
-        href: /graph/delta-query-overview?context=graph/api/beta
-      - name: Add custom data
-        displayName: directory extensions, schema extensions, open extensions, extension attributes
-        href: /graph/extensibility-overview?context=graph/api/beta
-      - name: Enable metered APIs
-        href: /graph/metered-api-setup?context=graph/api/beta
-        displayName: monetize, charge, cost, pricing
-      - name: Use Graph Explorer
-        items:
-          - name: Get started
-            href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/beta
-            displayName: Graph Explorer, try the API, try API
-          - name: Work with Graph Explorer
-            href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
-      - name: Use Postman
-        href: /graph/use-postman?context=graph/api/beta
-      - name: System messages
-        href: /graph/system-messages?context=graph/api/beta
-  - name: Migrate
-    items:
-      - name: Azure AD Graph
-        items:
-          - name: Migrate Azure AD Graph apps
-            href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
-            displayName: Migration, Azure AD Graph, migrate
-          - name: Checklist to migrate apps
-            href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
-          - name: "1: Review differences"
-            expanded: true
-            items:
-              - name: Requests
-                href: /graph/migrate-azure-ad-graph-request-differences?context=graph/api/beta
-              - name: Service features
-                href: /graph/migrate-azure-ad-graph-feature-differences?context=graph/api/beta
-              - name: Resource types
-                href: /graph/migrate-azure-ad-graph-resource-differences?context=graph/api/beta
-              - name: Entity properties
-                href: /graph/migrate-azure-ad-graph-property-differences?context=graph/api/beta
-              - name: Methods
-                href: /graph/migrate-azure-ad-graph-method-differences?context=graph/api/beta
-          - name: "2: Examine API use"
-            href: /graph/migrate-azure-ad-graph-audit-api-use?context=graph/api/beta
-          - name: "3: Review app details"
-            expanded: true
-            items:
-              - name: App registration
-                href: /graph/migrate-azure-ad-graph-app-registration?context=graph/api/beta
-              - name: Auth libraries
-                href: /graph/migrate-azure-ad-graph-authentication-library?context=graph/api/beta
-              - name: .NET client libraries
-                href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/beta
-          - name: "4: Deploy, test, and extend"
-            href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/beta
-          - name: Azure AD Graph migration FAQ
-            href: /graph/migrate-azure-ad-graph-faq?context=graph/api/beta
-            displayName: migrate, frequently asked questions
-          - name: Configure Azure AD Graph permissions
-            href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/beta
-      - name: Exchange Web Services
-        items:
-          - name: Migrate EWS apps
-            href: /graph/migrate-exchange-web-services-overview?context=graph/api/beta
-            displayName: Migration, Exchange Web Services, EWS, migrate
-          - name: Authentication
-            href: /graph/migrate-exchange-web-services-authentication?context=graph/api/beta
-          - name: API mapping
-            href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/beta
-      - name: Outlook REST APIs
-        href: /outlook/rest/compare-graph?context=graph/context
+    href: /graph/use-the-api?context=graph/api/beta
   - name: Use SDKs
-    items:
-      - name: Overview
-        href: /graph/sdks/sdks-overview?context=graph/api/beta
-        displayName: SDK, SDKs, Microsoft Graph SDK
-      - name: Install an SDK
-        href: /graph/sdks/sdk-installation?context=graph/api/beta
-        displayName: install SDK, install SDKs, installation
-      - name: Create a client
-        href: /graph/sdks/create-client?context=graph/api/beta
-      - name: Customize a client
-        href: /graph/sdks/customize-client?context=graph/api/beta
-      - name: Choose an authentication provider
-        href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
-      - name: Connect to national clouds
-        href: /graph/sdks/national-clouds?context=graph/api/beta
-      - name: Create requests
-        href: /graph/sdks/create-requests?context=graph/api/beta
-      - name: Page through a collection
-        href: /graph/sdks/paging?context=graph/api/beta
-      - name: Create a batch request
-        href: /graph/sdks/batch-requests?context=graph/api/beta
-      - name: Upload large files
-        href: /graph/sdks/large-file-upload?context=graph/api/beta
-      - name: Use beta API
-        href: /graph/sdks/use-beta?context=graph/api/beta
-      - name: Use PowerShell
-        items:
-          - name: PowerShell overview
-            href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
-          - name: Install PowerShell SDK
-            href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
-          - name: Get started
-            href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
-          - name: Navigate the PowerShell SDK
-            href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
-          - name: App-only authentication
-            href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-      - name: Use the CLI
-        items:
-          - name: CLI overview
-            href: /graph/cli/overview?context=graph/api/beta
-          - name: Install the CLI
-            href: /graph/cli/installation?context=graph/api/beta
-          - name: Get started
-            href: /graph/cli/get-started?context=graph/api/beta
-          - name: Navigate the CLI
-            href: /graph/cli/navigating?context=graph/api/beta
-          - name: App-only authentication
-            href: /graph/cli/app-only?context=graph/api/beta
+    href: /graph/sdks/sdks-overview?context=graph/api/beta
   - name: Use the toolkit
-    items:
-      - name: Overview
-        href: /graph/toolkit/overview?context=graph/api/beta
-        displayName: Microsoft Graph Toolkit, toolkit
-      - name: Get started
-        items:
-          - name: Get started
-            href: /graph/toolkit/get-started/overview?context=graph/api/beta
-            displayName: Microsoft Graph Toolkit, toolkit
-          - name: Toolkit for React
-            href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
-          - name: Toolkit for SPFx
-            href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/beta
-      - name: Build your first app
-        items:
-          - name: Register a Microsoft Entra app
-            href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/beta
-          - name: Build a web app (JavaScript)
-            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
-          - name: Build a web app (React)
-            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
-          - name: Build a web app (Angular)
-            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
-          - name: Build a SharePoint web part
-            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
-          - name: Build a Teams tab
-            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
-          - name: Build an Electron app
-            href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/beta
-          - name: Build a productivity hub app
-            href: /graph/toolkit/get-started/building-one-productivity-hub?context=graph/api/beta
-      - name: Providers
-        items:
-          - name: Using the providers
-            href: /graph/toolkit/providers/providers?context=graph/api/beta
-            displayName: Microsoft Graph Toolkit providers, toolkit provider
-          - name: Custom provider
-            href: /graph/toolkit/providers/custom?context=graph/api/beta
-          - name: Electron provider
-            href: /graph/toolkit/providers/electron?context=graph/api/beta
-          - name: MSAL2 provider
-            href: /graph/toolkit/providers/msal2?context=graph/api/beta
-          - name: Proxy provider
-            href: /graph/toolkit/providers/proxy?context=graph/api/beta
-          - name: SharePoint provider
-            href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
-          - name: TeamsFx provider
-            href: /graph/toolkit/providers/teamsfx?context=graph/api/beta
-      - name: Components
-        items:
-          - name: Agenda
-            href: /graph/toolkit/components/agenda?context=graph/api/beta
-          - name: Chat (preview)
-            href: /graph/toolkit/components/chat?context=graph/api/beta
-          - name: File
-            href: /graph/toolkit/components/file?context=graph/api/beta
-          - name: File list
-            href: /graph/toolkit/components/file-list?context=graph/api/beta
-          - name: Get
-            href: /graph/toolkit/components/get?context=graph/api/beta
-          - name: Login
-            href: /graph/toolkit/components/login?context=graph/api/beta
-            displayName: Microsoft Graph toolkit components, toolkit component
-          - name: New chat (preview)
-            href: /graph/toolkit/components/new-chat?context=graph/api/beta
-          - name: People
-            href: /graph/toolkit/components/people?context=graph/api/beta
-          - name: People picker
-            href: /graph/toolkit/components/people-picker?context=graph/api/beta
-          - name: Person
-            href: /graph/toolkit/components/person?context=graph/api/beta
-          - name: Person card
-            href: /graph/toolkit/components/person-card?context=graph/api/beta
-          - name: Picker
-            href: /graph/toolkit/components/picker?context=graph/api/beta
-          - name: Planner tasks
-            href: /graph/toolkit/components/tasks?context=graph/api/beta
-          - name: Search box (preview)
-            href: /graph/toolkit/components/search-box?context=graph/api/beta
-          - name: Search results (preview)
-            href: /graph/toolkit/components/search-results?context=graph/api/beta
-          - name: Taxonomy picker
-            href: /graph/toolkit/components/taxonomy-picker?context=graph/api/beta
-          - name: Teams channel picker
-            href: /graph/toolkit/components/teams-channel-picker?context=graph/api/beta
-          - name: Theme toggle
-            href: /graph/toolkit/components/theme-toggle?context=graph/api/beta
-          - name: To-do tasks
-            href: /graph/toolkit/components/todo?context=graph/api/beta
-      - name: Customize components
-        items:
-          - name: Caching Microsoft Graph calls in components
-            href: /graph/toolkit/customize-components/cache?context=graph/api/beta
-          - name: Handling events
-            href: /graph/toolkit/customize-components/events?context=graph/api/beta
-          - name: Localizing components
-            href: /graph/toolkit/customize-components/localization?context=graph/api/beta
-          - name: Right-to-left support
-            href: /graph/toolkit/customize-components/right-to-left?context=graph/api/beta
-          - name: Styling components
-            href: /graph/toolkit/customize-components/style?context=graph/api/beta
-          - name: Templating components
-            href: /graph/toolkit/customize-components/templates?context=graph/api/beta
-          - name: Disambiguation of components
-            href: /graph/toolkit/customize-components/disambiguation?context=graph/api/beta
-      - name: Upgrading to v3
-        href: /graph/toolkit/upgrade?context=graph/api/beta
-  - name: Microsoft Graph activity logs (preview)
-    href: /graph/microsoft-graph-activity-logs-overview?context=graph/api/beta
-  - name: Configure Connected Services
-    displayName: Configure Connected Services in Visual Studio
-    href: /graph/office-365-connected-services?context=graph/api/beta
-  - name: Resources
-    items:
-      - name: Best practices
-        href: /graph/best-practices-concept?context=graph/api/beta
-        displayName: Microsoft Graph, Best practices for working with Microsoft Graph
-      - name: Known issues
-        href: https://developer.microsoft.com/graph/known-issues
-        displayName: Microsoft Graph, Known issues with Microsoft Graph
-      - name: API changelog
-        href: https://developer.microsoft.com/graph/changelog
-      - name: Errors
-        href: /graph/errors?context=graph/api/beta
-        displayName: Microsoft Graph error responses and error resource types
+    href: /graph/toolkit/overview?context=graph/api/beta
+  - name: Known issues
+    href: https://developer.microsoft.com/graph/known-issues
+  - name: Errors
+    href: /graph/errors?context=graph/api/beta
+    displayName: Microsoft Graph error responses and error resource types
   - name: API beta reference
     expanded: true
     items:
@@ -354,6 +58,10 @@ items:
                 href: api/user-invalidateallrefreshtokens.md
               - name: Retry service provisioning
                 href: api/user-retryserviceprovisioning.md
+              - name: Delete password-based SSO credential
+                href: api/user-deletepasswordsinglesignoncredentials.md
+              - name: Get password-based SSO credentials
+                href: api/user-getpasswordsinglesignoncredentials.md
           - name: App role assignment
             href: resources/approleassignment.md
             items:
@@ -1354,11 +1062,11 @@ items:
                     href: resources/tokenlifetimepolicy.md
                     items:
                       - name: Assign
-                        href: api/application-post-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-post-tokenlifetimepolicies.md
                       - name: List
-                        href: api/application-list-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-list-tokenlifetimepolicies.md
                       - name: Remove
-                        href: api/application-delete-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-delete-tokenlifetimepolicies.md
               - name: Single sign on
                 items:
                   - name: Create password single sign on credentials
@@ -2217,10 +1925,8 @@ items:
                 items:
                   - name: Cloud PC reports
                     href: resources/cloudpcreports.md
-                  - name: Get remote action status reports
-                    href: api/cloudpcreports-getactionstatusreports.md
-                  - name: Get raw remote connection reports
-                    href: api/cloudpcreports-getrawremoteconnectionreports.md
+                  - name: Get Cloud PC recommendation reports
+                    href: api/cloudpcreports-getcloudpcrecommendationreports.md
                   - name: Get connection quality reports
                     href: api/cloudpcreports-getconnectionqualityreports.md
                   - name: Get daily aggregated remote connection reports
@@ -2229,16 +1935,20 @@ items:
                     href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
                   - name: Get inaccessible Cloud PC reports
                     href: api/cloudpcreports-getinaccessiblecloudpcreports.md
-                  - name: Get real time remote connection latency
+                  - name: Get raw remote connection reports
+                    href: api/cloudpcreports-getrawremoteconnectionreports.md
+                  - name: Get real-time remote connection latency
                     href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
-                  - name: Get real time remote connection status
-                    href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+                  - name: Get real-time remote connection status
+                    href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md                    
+                  - name: Get remote action status reports
+                    href: api/cloudpcreports-getactionstatusreports.md
                   - name: Get shared-use license usage reports (deprecated)
                     href: api/cloudpcreports-getshareduselicenseusagereport.md
-                  - name: Get Windows 365 Frontline reports
-                    href: api/cloudpcreports-getfrontlinereport.md
                   - name: Get total aggregated remote connection reports
                     href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+                  - name: Get Windows 365 Frontline reports
+                    href: api/cloudpcreports-getfrontlinereport.md
                   - name: Export to download report
                     items:
                       - name: Cloud PC export job
@@ -11032,11 +10742,11 @@ items:
           - name: Grading category
             href: resources/educationgradingcategory.md
             items:
-              - name: Add grading category
+              - name: Add
                 href: api/educationassignment-post-gradingcategory.md
-              - name: Update grading category
+              - name: Update
                 href: api/educationgradingcategory-update.md
-              - name: Delete grading category
+              - name: Delete
                 href: api/educationassignment-delete-gradingcategory.md
           - name: Module
             href: resources/educationmodule.md
@@ -11948,6 +11658,32 @@ items:
                     href: api/domain-verify.md
                   - name: Promote domain
                     href: api/domain-promote.md
+              - name: External user profiles
+                items:
+                - name: External user profile
+                  href: resources/externaluserprofile.md
+                  items:
+                  - name: List
+                    href: api/directory-list-externaluserprofiles.md
+                  - name: Get
+                    href: api/externaluserprofile-get.md
+                  - name: Update
+                    href: api/externaluserprofile-update.md
+                  - name: Delete
+                    href: api/directory-delete-externaluserprofiles.md
+                - name: Pending external user profile
+                  href: resources/pendingexternaluserprofile.md
+                  items:
+                  - name: List
+                    href: api/directory-list-pendingexternaluserprofile.md
+                  - name: Get
+                    href: api/pendingexternaluserprofile-get.md
+                  - name: Create
+                    href: api/directory-post-pendingexternaluserprofile.md
+                  - name: Update
+                    href: api/pendingexternaluserprofile-update.md
+                  - name: Delete
+                    href: api/directory-delete-pendingexternaluserprofiles.md
               - name: Feature rollout policy
                 href: resources/featurerolloutpolicy.md
                 items:
@@ -12509,8 +12245,12 @@ items:
                     href: resources/accesspackageassignmentrequest.md
                     items:
                       - name: List
-                        href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
+                        href: api/entitlementmanagement-list-assignmentrequests.md
                       - name: Create
+                        href: api/entitlementmanagement-post-assignmentrequests.md
+                      - name: List (deprecated)
+                        href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
+                      - name: Create (deprecated)
                         href: api/entitlementmanagement-post-accesspackageassignmentrequests.md
                       - name: Get
                         href: api/accesspackageassignmentrequest-get.md
@@ -12595,6 +12335,8 @@ items:
                     items:
                       - name: List
                         href: api/accesspackagecatalog-list-accesspackageresources.md
+                      - name: Refresh
+                        href: api/accesspackageresource-refresh.md
                   - name: Access package resource role
                     href: resources/accesspackageresourcerole.md
                     items:
@@ -13340,6 +13082,8 @@ items:
                         href: resources/authenticationcombinationconfiguration.md
                       - name: FIDO2 combination configuration
                         href: resources/fido2combinationconfiguration.md
+                      - name: x509 certificate combination configuration
+                        href: resources/x509certificatecombinationconfiguration.md
                       - name: Create
                         href: api/authenticationstrengthpolicy-post-combinationconfigurations.md
                       - name: List
@@ -13685,6 +13429,16 @@ items:
                         href: api/internaldomainfederation-update.md
                       - name: Delete
                         href: api/internaldomainfederation-delete.md
+                  - name: Federated token validation (preview)
+                    items:
+                    - name: Federated token validation policy
+                      href: resources/federatedtokenvalidationpolicy.md
+                    - name: List
+                      href: api/policyroot-list-federatedtokenvalidationpolicy.md
+                    - name: Get
+                      href: api/federatedtokenvalidationpolicy-get.md
+                    - name: Update
+                      href: api/federatedtokenvalidationpolicy-update.md
               - name: Identity provider (deprecated)
                 items:
                   - name: Identity provider type
@@ -16174,8 +15928,8 @@ items:
                     - name: Relying party detailed summary
                       href: resources/relyingpartydetailedsummary.md
                       items:
-                        - name: List
-                          href: api/relyingpartydetailedsummary-list.md
+                        - name: Get relying party detailed dummary
+                          href: api/reportroot-getrelyingpartydetailedsummary.md
                 - name: Application credential activity
                   href: resources/appcredentialsigninactivity.md
                   items:
@@ -16203,7 +15957,7 @@ items:
                     href: resources/dailyuserinsightmetricsroot.md
                   - name: Monthly user insight
                     href: resources/monthlyuserinsightmetricsroot.md
-                  - name: Active users breakdown
+                  - name: Active users breakdown (deprecated)
                     href: resources/activeusersbreakdownmetric.md
                     items:
                     - name: List daily
@@ -16643,6 +16397,40 @@ items:
                     href: resources/attacksimulationtrainingusercoverage.md
                   - name: Get training coverage for users
                     href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+          - name: Partner billing reports
+            items:
+              - name: Overview
+                href: resources/partners-billing-api-overview.md
+              - name: Billed reconciliation
+                items:
+                  - name: Billed reconciliation
+                    href: resources/partners-billing-billedreconciliation.md
+                  - name: Export
+                    href: api/partners-billing-billedreconciliation-export.md
+              - name: Billed usage
+                items:
+                  - name: Billed usage
+                    href: resources/partners-billing-billedusage.md
+                  - name: Export
+                    href: api/partners-billing-billedusage-export.md
+              - name: Manifest
+                items:
+                  - name: Manifest
+                    href: resources/partners-billing-manifest.md
+                  - name: Get
+                    href: api/partners-billing-manifest-get.md
+              - name: Operation
+                items:
+                  - name: Operation
+                    href: resources/partners-billing-operation.md
+                  - name: Get
+                    href: api/partners-billing-operation-get.md
+              - name: Unbilled usage
+                items:
+                  - name: Unbilled usage
+                    href: resources/partners-billing-unbilledusage.md
+                  - name: Export
+                    href: api/partners-billing-unbilledusage-export.md
       - name: Search
         items:
           - name: Query
@@ -16724,6 +16512,18 @@ items:
                 href: resources/security-huntingrowresult.md
               - name: Single property schema
                 href: resources/security-singlepropertyschema.md
+          - name: Custom detection rules
+            items:
+              - name: List custom detection rules
+                href: api/security-detectionrule-list.md
+              - name: Get custom detection rule
+                href: api/security-detectionrule-get.md
+              - name: Create custom detection rule
+                href: api/security-detectionrule-post-detectionRules.md
+              - name: Update custom detection rule
+                href: api/security-detectionrule-update.md
+              - name: Delete custom detection rule
+                href: api/security-detectionrule-delete.md
           - name: Alerts and incidents
             items:
               - name: Alert
@@ -16864,6 +16664,24 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: List
                     href: api/simulationautomation-list-runs.md
+          - name: Audit log query (preview)
+            items:
+              - name: Audit log query
+                href: resources/security-auditlogquery.md
+                items: 
+                  - name: List
+                    href: api/security-auditcoreroot-list-auditlogqueries.md
+                  - name: Create
+                    href: api/security-auditcoreroot-post-auditlogqueries.md
+                  - name: Get
+                    href: api/security-auditlogquery-get.md
+                  - name: List audit log records
+                    href: api/security-auditlogquery-list-records.md
+              - name: Audit log record
+                href: resources/security-auditlogrecord.md
+                items:
+                  - name: List
+                    href: api/security-auditlogquery-list-records.md
           - name: eDiscovery (preview)
             items:
               - name: Case
@@ -18298,7 +18116,7 @@ items:
                       - name: Call record
                         href: resources/callrecords-callrecord.md
                       - name: List
-                        href: api/callrecords-callrecord-list.md
+                        href: api/callrecords-cloudcommunications-list-callrecords.md
                       - name: Get
                         href: api/callrecords-callrecord-get.md
                   - name: Direct routing calls
@@ -18312,7 +18130,7 @@ items:
                       - name: Participant
                         href: resources/callrecords-participant.md
                       - name: List
-                        href: api/callrecords-callrecord-list-participants.md
+                        href: api/callrecords-callrecord-list-participants_v2.md
                   - name: PSTN blocked users log row
                     items:
                       - name: PSTN blocked users log row
@@ -18491,7 +18309,7 @@ items:
                     href: resources/virtualeventsession.md
                     items:
                       - name: List
-                        href: api/virtualeventsession-list.md
+                        href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
           - name: Devices (preview)
@@ -18852,6 +18670,10 @@ items:
                     href: api/team-list-permissiongrants.md
                   - name: Get open shifts across all joined teams
                     href: api/team-getopenshifts.md
+                  - name: Get shifts across all joined teams
+                    href: api/team-getshifts.md
+                  - name: Get time offs across all joined teams
+                    href: api/team-gettimesoff.md
                   - name: Team template
                     items:
                       - name: Team template
@@ -18959,6 +18781,13 @@ items:
                     href: api/openshiftchangerequest-approve.md
                   - name: Decline
                     href: api/openshiftchangerequest-decline.md
+              - name: Role definition (preview)
+                href: resources/shiftsroledefinition.md
+                items:
+                  - name: Get
+                    href: api/shiftsroledefinition-get.md
+                  - name: Update
+                    href: api/shiftsroledefinition-update.md
               - name: Schedule
                 href: resources/schedule.md
                 items:
@@ -18996,6 +18825,8 @@ items:
                     href: api/shift-delete.md
                   - name: Stage for deletion
                     href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get shifts across all joined teams
+                    href: api/team-getshifts.md
               - name: Shift preferences
                 href: resources/shiftpreferences.md
                 items:
@@ -19054,6 +18885,8 @@ items:
                     href: api/timeoff-delete.md
                   - name: Stage for deletion
                     href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get times off across all joined teams
+                    href: api/team-gettimesoff.md
               - name: Time off reason
                 href: resources/timeoffreason.md
                 items:

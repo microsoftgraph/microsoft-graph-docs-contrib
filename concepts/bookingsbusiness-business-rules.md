@@ -62,7 +62,7 @@ This is the extra time needed for an appointment before a following appointment.
 
 This is the extra time needed for an appointment after a previous appointment. In the staff member calendar, the appointment is of duration "appointment slot time" + "post buffer time".
 
-## See also
+## Related content
 
 - [Microsoft Bookings API overview](booking-concept-overview.md)
 - [Microsoft Bookings API in Microsoft Graph](/graph/api/resources/booking-api-overview)

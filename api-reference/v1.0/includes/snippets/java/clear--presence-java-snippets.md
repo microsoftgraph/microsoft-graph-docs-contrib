@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String sessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.users("fa8bf3dc-eca7-46b7-bad1-db199b62afc3").presence()
-	.clearPresence(PresenceClearPresenceParameterSet
-		.newBuilder()
-		.withSessionId(sessionId)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.users.item.presence.clearpresence.ClearPresencePostRequestBody clearPresencePostRequestBody = new com.microsoft.graph.users.item.presence.clearpresence.ClearPresencePostRequestBody();
+clearPresencePostRequestBody.setSessionId("22553876-f5ab-4529-bffb-cfe50aa89f87");
+graphClient.users().byUserId("{user-id}").presence().clearPresence().post(clearPresencePostRequestBody);
+
 
 ```

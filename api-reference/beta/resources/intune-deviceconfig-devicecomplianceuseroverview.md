@@ -1,6 +1,6 @@
 ---
 title: "deviceComplianceUserOverview resource type"
-description: ""
+description: "Intune Deviceconfig Devicecomplianceuseroverview Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

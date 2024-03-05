@@ -34,6 +34,13 @@ POST /sites/{siteId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
 POST /users/{userId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
 ### Request body
 
 No request body is required.

@@ -79,7 +79,7 @@ This method also supports the `$count`, `$select`, `$orderBy`, `$top`, and `$ski
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -45,7 +45,7 @@ This method supports the `$count`, `$select`, `$search`, `$top`, `$skip`, and `$
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

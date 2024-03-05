@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AuthorizationPolicy authorizationPolicy = new AuthorizationPolicy();
 DefaultUserRolePermissions defaultUserRolePermissions = new DefaultUserRolePermissions();
-LinkedList<String> permissionGrantPoliciesAssignedList = new LinkedList<String>();
-defaultUserRolePermissions.permissionGrantPoliciesAssigned = permissionGrantPoliciesAssignedList;
-authorizationPolicy.defaultUserRolePermissions = defaultUserRolePermissions;
+LinkedList<String> permissionGrantPoliciesAssigned = new LinkedList<String>();
+defaultUserRolePermissions.setPermissionGrantPoliciesAssigned(permissionGrantPoliciesAssigned);
+authorizationPolicy.setDefaultUserRolePermissions(defaultUserRolePermissions);
+AuthorizationPolicy result = graphClient.policies().authorizationPolicy().patch(authorizationPolicy);
 
-graphClient.policies().authorizationPolicy()
-	.buildRequest()
-	.patch(authorizationPolicy);
 
 ```

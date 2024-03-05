@@ -40,7 +40,7 @@ POST /deviceAppManagement/mobileApps
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -76,11 +76,9 @@ The following table shows the properties that are required when you create the m
 |fileName|String|The name of the main Lob application file. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |packageId|String|The package identifier.|
-|identityName|String|The Identity Name. This property is being deprecated in 2302(February 2023).|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |versionName|String|The version name of managed Android Line of Business (LoB) app.|
 |versionCode|String|The version code of managed Android Line of Business (LoB) app.|
-|identityVersion|String|The identity version. This property is being deprecated in 2302(February 2023).|
 |targetedPlatforms|[androidTargetedPlatforms](../resources/intune-apps-androidtargetedplatforms.md)|The platforms to which the application can be targeted. If not specified, will defauilt to Android Device Administrator. Possible values are: `androidDeviceAdministrator`, `androidOpenSourceProject`, `unknownFutureValue`.|
 
 
@@ -95,7 +93,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1640
+Content-length: 1550
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -128,7 +126,6 @@ Content-length: 1640
   "fileName": "File Name value",
   "size": 4,
   "packageId": "Package Id value",
-  "identityName": "Identity Name value",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
     "v4_0": true,
@@ -150,7 +147,6 @@ Content-length: 1640
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",
-  "identityVersion": "Identity Version value",
   "targetedPlatforms": "androidOpenSourceProject"
 }
 ```
@@ -160,7 +156,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1812
+Content-Length: 1722
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -196,7 +192,6 @@ Content-Length: 1812
   "fileName": "File Name value",
   "size": 4,
   "packageId": "Package Id value",
-  "identityName": "Identity Name value",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
     "v4_0": true,
@@ -218,7 +213,6 @@ Content-Length: 1812
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",
-  "identityVersion": "Identity Version value",
   "targetedPlatforms": "androidOpenSourceProject"
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: Update printer
-description: Update the properties of a printer object.
+description: "Update the properties of a printer object."
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
@@ -35,14 +35,14 @@ PATCH /print/printers/{printerId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-type|`application/json` when using delegated permissions, `application/ipp` or `application/json` when using application permissions. Required.|
 
 ## Request body
 
 ### Delegated permissions and JSON payload
 
-If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
+If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
 
 The following properties can be updated using delegated permissions.
 
@@ -53,7 +53,7 @@ The following properties can be updated using delegated permissions.
 |displayName|String|The name of the printer.|
 
 ### Application permissions and JSON payload
-In the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
+In the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
 
 The following properties can be updated using application permissions.
 
@@ -66,12 +66,13 @@ The following properties can be updated using application permissions.
 |model|String|The model name of the printer.|
 |status|[printerStatus](../resources/printerstatus.md)|The processing status of the printer, including any errors.|
 |isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
+|releaseMechanisms|[printReleaseMechanism](../resources/printreleasemechanism.md) collection|The release mechanisms supported by the printer. Optional.|
 
 ### Application permissions and IPP payload
 
 With application permissions, a printer can also be updated using an Internet Printing Protocol (IPP) payload. In this case, the request body contains a binary stream that represents the Printer Attributes group in [IPP encoding](https://tools.ietf.org/html/rfc8010).
 
-The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) Printer Description Attributes, and any attribute extensions supported by the Printer. The value(s) of each Printer attribute
+The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) Printer Description Attributes. The client must also supply any attribute extensions supported by the Printer. The value(s) of each Printer attribute
 supplied replaces the value(s) of the corresponding Printer attribute on the target Printer object. For attributes that can have multiple values (1setOf), all values supplied by the client replace all values of the corresponding Printer object attribute.
 
 > **Note:** Do not pass operation attributes in the request body. The request body should only contain printer attributes.
@@ -129,6 +130,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-printer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-printer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-printer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -164,6 +169,11 @@ Content-Type: application/json
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
   "isAcceptingJobs": true,
+   "releaseMechanisms": [
+    {
+      "releaseType": "direct"
+    }
+  ],
   "status": {
     "state": "idle",
     "details": [],

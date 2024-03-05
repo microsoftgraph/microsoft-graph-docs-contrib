@@ -1,7 +1,8 @@
 ---
 title: "writebackConfiguration resource type"
 description: "Represents a writeback state on Microsoft Entra cloud groups (Microsoft 365 and security groups)."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: resourcePageType

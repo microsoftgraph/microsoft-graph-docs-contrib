@@ -34,7 +34,7 @@ POST /security/incidents/{incidentId}/comments
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -97,12 +97,12 @@ Content-type: application/json
     "value": [
         {
             "comment": "test",
-            "createdByDisplayName": "secAdmin@contoso.onmicrosoft.com",
+            "createdByDisplayName": "secAdmin@contoso.com",
             "createdDateTime": "2022-10-13T07:08:45.4626766Z"
         },
         {
             "comment": "Demo for docs",
-            "createdByDisplayName": "secAdmin@contoso.onmicrosoft.com",
+            "createdByDisplayName": "secAdmin@contoso.com",
             "createdDateTime": "2022-10-13T07:08:50.5821324Z"
         }
     ]

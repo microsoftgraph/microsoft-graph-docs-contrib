@@ -25,16 +25,19 @@ If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md)
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat,  TeamsAppInstallation.ReadWriteAndConsentSelfForChat<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForChat<sup>1</sup> |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.Read.Chat<sup>1</sup>, Chat.Manage.Chat<sup>1</sup>, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForChat.All<sup>1</sup> |
+<!-- { "blockType": "permissions", "name": "chat_list_installedapps" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-list-installedapps-permissions.md)]
 
-> **Note**: 
-<br><sup>1</sup> These permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note:**
+The following permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent):
+> - TeamsAppInstallation.ReadWriteAndConsentSelfForChat
+> - TeamsAppInstallation.ReadWriteAndConsentForChat
+> - TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All
+> - TeamsAppInstallation.ReadWriteAndConsentForChat.All
+> - TeamsAppInstallation.Read.Chat
+> - Chat.Manage.Chat
 
 ## HTTP request
 
@@ -52,7 +55,7 @@ This method supports the `$filter`, `$select`, and `$expand` [OData query parame
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -474,7 +477,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

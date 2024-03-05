@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /solutions/bookingBusinesses/{id}/getStaffAvailability
 ```
 
-## Request header
+## Request headers
 
 |Name |Description |
 |:--------------|:------------|
@@ -55,11 +55,11 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_getstaffavailability",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/getStaffAvailability
 Content-Type: application/json
 
 {
@@ -125,77 +125,77 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-{ 
-    "staffAvailabilityItem": [ 
-        { 
-            "staffId": "311a5454-08b2-4560-ba1c-f715e938cb79", 
-            "availabilityItems": [ 
-                { 
-                    "status": "Available", 
-                    "startDateTime": { 
-                        "dateTime": "2022-01-24T08:00:00", 
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
-                    }, 
-                    "endDateTime": { 
-                        "dateTime": "2022-01-24T15:00:00", 
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
-                    }, 
-                    "serviceId": "" 
-                }, 
-                { 
-                    "status": "Busy", 
-                    "startDateTime": { 
-                        "dateTime": "2022-01-24T15:00:00", 
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
-                    }, 
-                    "endDateTime": { 
-                        "dateTime": "2022-01-24T16:00:00", 
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
-                    }, 
-                    "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976" 
-                }, 
-                { 
-                    "status": "Available", 
-                    "startDateTime": { 
-                        "dateTime": "2022-01-24T16:00:00", 
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
-                    }, 
-                    "endDateTime": { 
-                        "dateTime": "2022-01-24T17:00:00", 
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
-                    }, 
-                    "serviceId": "" 
-                }, 
-                { 
-                    "status": "Available", 
-                    "startDateTime": { 
-                        "dateTime": "2022-01-25T08:00:00", 
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
-                    }, 
-                    "endDateTime": { 
-                        "dateTime": "2022-01-25T17:00:00", 
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
-                    }, 
-                    "serviceId": "" 
-                }, 
-                { 
-                    "status": "Available", 
-                    "startDateTime": { 
-                        "dateTime": "2022-01-26T08:00:00", 
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
-                    }, 
-                    "endDateTime": { 
-                        "dateTime": "2022-01-26T17:00:00", 
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
-                    }, 
-                    "serviceId": "" 
-                } 
-            ] 
-        } 
-    ] 
+{
+    "staffAvailabilityItem": [
+        {
+            "staffId": "311a5454-08b2-4560-ba1c-f715e938cb79",
+            "availabilityItems": [
+                {
+                    "status": "Available",
+                    "startDateTime": {
+                        "dateTime": "2022-01-24T08:00:00",
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
+                    },
+                    "endDateTime": {
+                        "dateTime": "2022-01-24T15:00:00",
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
+                    },
+                    "serviceId": ""
+                },
+                {
+                    "status": "Busy",
+                    "startDateTime": {
+                        "dateTime": "2022-01-24T15:00:00",
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
+                    },
+                    "endDateTime": {
+                        "dateTime": "2022-01-24T16:00:00",
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
+                    },
+                    "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976"
+                },
+                {
+                    "status": "Available",
+                    "startDateTime": {
+                        "dateTime": "2022-01-24T16:00:00",
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
+                    },
+                    "endDateTime": {
+                        "dateTime": "2022-01-24T17:00:00",
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
+                    },
+                    "serviceId": ""
+                },
+                {
+                    "status": "Available",
+                    "startDateTime": {
+                        "dateTime": "2022-01-25T08:00:00",
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
+                    },
+                    "endDateTime": {
+                        "dateTime": "2022-01-25T17:00:00",
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
+                    },
+                    "serviceId": ""
+                },
+                {
+                    "status": "Available",
+                    "startDateTime": {
+                        "dateTime": "2022-01-26T08:00:00",
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
+                    },
+                    "endDateTime": {
+                        "dateTime": "2022-01-26T17:00:00",
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
+                    },
+                    "serviceId": ""
+                }
+            ]
+        }
+    ]
 }
 ```
-<!-- 
+<!--
 In the response body, for each staff member, their available windows are returned. The types of status of the windows are explained below.
 |Type      | Explanation              |
 |:--------------------|:---------------------------------------------------------|

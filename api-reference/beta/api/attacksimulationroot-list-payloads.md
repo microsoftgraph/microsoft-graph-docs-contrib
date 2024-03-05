@@ -60,7 +60,7 @@ GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $select={
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/payloads?$filter=
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-payloads-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-payloads-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

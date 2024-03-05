@@ -470,7 +470,7 @@ Content-Type: application/json
 
 ---
 
-## See also
+## Related content
 
 + [Overview of role management through the privileged identity management (PIM) API](/graph/api/resources/privilegedidentitymanagementv3-overview)
 + [Overview of rules for Microsoft Entra roles in privileged identity management (PIM) APIs in Microsoft Graph](identity-governance-pim-rules-overview.md)

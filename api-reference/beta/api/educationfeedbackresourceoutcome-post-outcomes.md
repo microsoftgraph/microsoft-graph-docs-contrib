@@ -37,7 +37,7 @@ POST /education/classes/{classId}/assignments/{assignmentId}/submissions/{submis
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json           |
 
 ## Request body
@@ -159,7 +159,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 To upload an existing file, see [Upload feedback files for education submissions](/graph/education-upload-feedback-resource-overview).
 

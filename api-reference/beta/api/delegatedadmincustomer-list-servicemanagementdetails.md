@@ -33,12 +33,12 @@ GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}/serv
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -113,7 +113,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
       "id": "fa5fa04e-13df-4b7c-9e99-92573ba1fa55",
-      "serviceManagementUrl": "https://aad.portal.azure.com/contoso.onmicrosoft.com",
+      "serviceManagementUrl": "https://aad.portal.azure.com/contoso.com",
       "serviceName": "Azure Active Directory"
     },
     {
@@ -131,7 +131,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
       "id": "ce0b42f4-bfde-4abe-a5f7-add83f104b23",
-      "serviceManagementUrl": "https://admin.teams.microsoft.com/?delegatedOrg=contoso.onmicrosoft.com",
+      "serviceManagementUrl": "https://admin.teams.microsoft.com/?delegatedOrg=contoso.com",
       "serviceName": "Teams"
     }
   ]

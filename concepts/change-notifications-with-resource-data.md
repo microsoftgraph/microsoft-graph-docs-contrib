@@ -129,7 +129,7 @@ In the following example, the change notification contains two items for the sam
 
 ### How to validate
 
-If you're new to token validation, see [Principles of Token Validation](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) for an overview. Use an SDK, such as the [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) library for .NET, or a third-party library for a different platform.
+Use [MSAL](/entra/msal/overview) to help you handle token validation, or a third-party library for a different platform.
 
 Be mindful of the following:
 
@@ -588,7 +588,7 @@ decryptedPayload += decipher.final('utf8');
 
 ---
 
-## See also
+## Related content
 
 - [Set up notifications for changes in user data](change-notifications-overview.md)
 - [Subscription resource type](/graph/api/resources/subscription)

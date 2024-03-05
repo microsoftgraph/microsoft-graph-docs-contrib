@@ -2,7 +2,8 @@
 title: "expressionEvaluationDetails resource type"
 description: "Represents the expression details, result, and property details."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: "resourcePageType"
 ---

@@ -57,10 +57,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "bookingappointment_get",
-  "sampleKeys": ["AAMkADKnAAA=", "Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["AAMkADKnAAA=", "Contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/appointments/AAMkADKnAAA=
 ```
 
 # [C#](#tab/csharp)
@@ -113,7 +113,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/appointments/$entity",
     "id": "AAMkADKnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
     "isLocationOnline": true,
@@ -188,7 +188,7 @@ Content-type: application/json
             "emailAddress": "jordanm@contoso.com",
             "phone": "213-555-0199",
             "notes": null,
-            "location": 
+            "location":
             {
                 "displayName": "Customer",
                 "locationEmailAddress": null,
@@ -196,7 +196,7 @@ Content-type: application/json
                 "locationType": null,
                 "uniqueId": null,
                 "uniqueIdType": null,
-                "address": 
+                "address":
                 {
                     "street": "",
                     "city": "",

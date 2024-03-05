@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta booking-businesses create --body '{\
+mgc-beta solutions booking-businesses create --body '{\
     "displayName":"Fourth Coffee",\
     "address":{\
         "postOfficeBox":"P.O. Box 123",\

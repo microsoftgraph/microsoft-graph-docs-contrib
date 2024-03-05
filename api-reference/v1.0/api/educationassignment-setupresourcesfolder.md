@@ -31,7 +31,7 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply an empty JSON object `{}` for this method.

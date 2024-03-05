@@ -17,6 +17,7 @@ const cloudPcUserSetting = {
   localAdminEnabled: true,
   restorePointSetting: {
     frequencyInHours: 16,
+    frequencyType: 'sixteenHours',
     userRestoreEnabled: true
   }
 };

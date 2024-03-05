@@ -40,7 +40,7 @@ PATCH /admin/people/profileCardProperties/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 > **Note:** To avoid encoding issues that malform the payload, use `Content-Type: application/json; charset=utf-8`.

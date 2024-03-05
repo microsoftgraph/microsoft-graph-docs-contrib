@@ -1,7 +1,8 @@
 ---
 title: "group: resetUnseenCount"
 description: "Reset the unseenCount of all the posts that the current user hasn't seen since their last visit. Supported for Microsoft 365 groups only."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -34,7 +35,7 @@ POST /groups/{id}/resetUnseenCount
 
 | Header        | Value                                                                                                                                             |
 | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Authorization | Bearer {token}. Required.                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer        | return=minimal. If minimal response header is included in the request header, then a successful response returns `204 No Content` code. Optional. |
 
 ## Request body

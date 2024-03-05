@@ -32,7 +32,7 @@ Currently, bots are able to:
 - Invite other participants into an existing group call
 - Be invited into existing group calls
 
-## See also
+## Related content
 
 - [Teams API overview](teams-concept-overview.md)
 - [Permissions for calls](./permissions-reference.md)

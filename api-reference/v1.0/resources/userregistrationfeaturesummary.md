@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the summary of users capable of multi-factor authentication, self-service password reset, and passwordless authentication in an organization.
+Represents the summary of users capable of multi-factor authentication, self-service password reset, and passwordless authentication in an organization. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
 ## Methods
 

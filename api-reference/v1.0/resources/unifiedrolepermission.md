@@ -88,7 +88,7 @@ The following is a JSON representation of the resource.
   "condition": "String"
 }
 ```
-## See also
+## Related content
 
 - [Administrator role permissions in Microsoft Entra](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) - For information about permissions for built-in directory roles.
 - [Application registration subtypes and permissions in Microsoft Entra ID](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) -  For information about permissions that are available for custom directory roles. 

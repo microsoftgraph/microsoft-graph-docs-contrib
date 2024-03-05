@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Get a usage report on shared-use licenses, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
 
 >[!CAUTION] 
->This API is deprecated. Going forward, use the [getFrontlineReport](cloudpcreports-getfrontlinereport.md) API.
+> This API is deprecated and will stop returning data on April 24, 2024. Going forward, use the [getFrontlineReport](cloudpcreports-getfrontlinereport.md) API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -41,7 +41,7 @@ POST /deviceManagement/virtualEndpoint/reports/getSharedUseLicenseUsageReport
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

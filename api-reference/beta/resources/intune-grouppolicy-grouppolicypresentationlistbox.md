@@ -36,7 +36,7 @@ Inherits from [groupPolicyUploadedPresentation](../resources/intune-grouppolicy-
 |id|String|Key of the entity. Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified. Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |explicitValue|Boolean|If this option is specified true the user must specify the registry subkey value and the registry subkey name. The list box shows two columns, one for the name and one for the data. The default value is false.|
-|valuePrefix|String|Not yet documented|
+|valuePrefix|String||
 
 ## Relationships
 |Relationship|Type|Description|

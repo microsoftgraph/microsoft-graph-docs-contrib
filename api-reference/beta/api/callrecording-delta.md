@@ -54,7 +54,7 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 ## Request headers
 | Header        | Value                     |
 |---------------|---------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

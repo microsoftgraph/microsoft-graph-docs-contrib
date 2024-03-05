@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 
-If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property. 
+If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property.
 Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.
 
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time. In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
@@ -36,11 +36,11 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ## Request headers
 | Name       | Value|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone | A string representing a specific time zone for the response, for example, "Pacific Standard Time". Optional. UTC is used if this header is not specified.|
 
 ## Request body
-All the supported parameters are listed below. Depending on your scenario, specify a JSON object for each of the necessary parameters in the request body. 
+All the supported parameters are listed below. Depending on your scenario, specify a JSON object for each of the necessary parameters in the request body.
 
 
 | Parameter	   | Type	|Description|
@@ -64,34 +64,34 @@ The following table describes the **activityDomain** restrictions you can furthe
 |unknown | Do not use this value as it will be deprecated in the future. Currently behaves the same as `work`. Change any existing code to use `work`, `personal` or `unrestricted` as appropriate.
 
 
-Based on the specified parameters,**findMeetingTimes** checks the free/busy status in the primary calendars of the organizer and attendees. The action 
+Based on the specified parameters,**findMeetingTimes** checks the free/busy status in the primary calendars of the organizer and attendees. The action
 calculates the best possible meeting times, and returns any meeting suggestions.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a [meetingTimeSuggestionsResult](../resources/meetingtimesuggestionsresult.md) in the response body. 
+If successful, this method returns `200 OK` response code and a [meetingTimeSuggestionsResult](../resources/meetingtimesuggestionsresult.md) in the response body.
 
-A **meetingTimeSuggestionsResult** includes a collection of meeting suggestions and an **emptySuggestionsReason** property. Each suggestion is defined 
-as a [meetingTimeSuggestion](../resources/meetingtimesuggestion.md), with attendees having on the average a confidence level of 50% to attend, 
-or a specific % that you have specified in the **minimumAttendeePercentage** parameter. 
+A **meetingTimeSuggestionsResult** includes a collection of meeting suggestions and an **emptySuggestionsReason** property. Each suggestion is defined
+as a [meetingTimeSuggestion](../resources/meetingtimesuggestion.md), with attendees having on the average a confidence level of 50% to attend,
+or a specific % that you have specified in the **minimumAttendeePercentage** parameter.
 
-By default, each meeting time suggestion is returned in UTC. 
+By default, each meeting time suggestion is returned in UTC.
 
-If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property. 
+If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property.
 Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.
 
 ### The confidence of a meeting suggestion
 
-The **confidence** property of a **meetingTimeSuggestion** ranges from 0% to 100%, and represents the chance that all the attendees attend the meeting, 
+The **confidence** property of a **meetingTimeSuggestion** ranges from 0% to 100%, and represents the chance that all the attendees attend the meeting,
 based on each of their individual free/busy status:
 
 - For each attendee, a free status for a specified meeting time period corresponds to 100% chance of attendance, unknown status 49%, and busy status 0%.
 - The confidence of a meeting time suggestion is computed by averaging the chance of attendance over all the attendees specified for that meeting.
-- You can use the **minimumAttendeePercentage** optional parameter for **findMeetingTimes** to specify only meeting time suggestions of at least 
-certain confidence level should be returned. For example, you can specify a **minimumAttendeePercentage** of 80% if you want only 
-suggestions that have an 80% chance or more that all the attendees are attending. If you do not specify **minimumAttendeePercentage**, 
+- You can use the **minimumAttendeePercentage** optional parameter for **findMeetingTimes** to specify only meeting time suggestions of at least
+certain confidence level should be returned. For example, you can specify a **minimumAttendeePercentage** of 80% if you want only
+suggestions that have an 80% chance or more that all the attendees are attending. If you do not specify **minimumAttendeePercentage**,
 **findMeetingTimes** assumes a value of 50%.
-- If there are multiple meeting time suggestions, the **findMeetingTimes** action first orders the suggestions by their computed confidence value from 
+- If there are multiple meeting time suggestions, the **findMeetingTimes** action first orders the suggestions by their computed confidence value from
 high to low. If there are suggestions with the same confidence, the action then orders these suggestions chronologically.
 
 As an example, if a meeting time suggestion involves 3 attendees with the following free/busy status:
@@ -135,41 +135,41 @@ POST https://graph.microsoft.com/v1.0/me/findMeetingTimes
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
-{ 
-  "attendees": [ 
-    { 
-      "type": "required",  
-      "emailAddress": { 
+{
+  "attendees": [
+    {
+      "type": "required",
+      "emailAddress": {
         "name": "Alex Wilbur",
-        "address": "alexw@contoso.onmicrosoft.com" 
-      } 
+        "address": "alexw@contoso.com"
+      }
     }
-  ],  
-  "locationConstraint": { 
-    "isRequired": false,  
-    "suggestLocation": false,  
-    "locations": [ 
-      { 
+  ],
+  "locationConstraint": {
+    "isRequired": false,
+    "suggestLocation": false,
+    "locations": [
+      {
         "resolveAvailability": false,
-        "displayName": "Conf room Hood" 
-      } 
-    ] 
-  },  
+        "displayName": "Conf room Hood"
+      }
+    ]
+  },
   "timeConstraint": {
-    "activityDomain":"work", 
-    "timeSlots": [ 
-      { 
-        "start": { 
-          "dateTime": "2019-04-16T09:00:00",  
-          "timeZone": "Pacific Standard Time" 
-        },  
-        "end": { 
-          "dateTime": "2019-04-18T17:00:00",  
-          "timeZone": "Pacific Standard Time" 
-        } 
-      } 
-    ] 
-  },  
+    "activityDomain":"work",
+    "timeSlots": [
+      {
+        "start": {
+          "dateTime": "2019-04-16T09:00:00",
+          "timeZone": "Pacific Standard Time"
+        },
+        "end": {
+          "dateTime": "2019-04-18T17:00:00",
+          "timeZone": "Pacific Standard Time"
+        }
+      }
+    ]
+  },
   "isOrganizerOptional": "false",
   "meetingDuration": "PT1H",
   "returnSuggestionReasons": "true",
@@ -234,7 +234,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "availability": "free",
                     "attendee": {
                         "emailAddress": {
-                            "address": "alexw@contoso.onmicrosoft.com"
+                            "address": "alexw@contoso.com"
                         }
                     }
                 }
@@ -265,7 +265,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "availability": "free",
                     "attendee": {
                         "emailAddress": {
-                            "address": "alexw@contoso.onmicrosoft.com"
+                            "address": "alexw@contoso.com"
                         }
                     }
                 }
@@ -296,7 +296,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "availability": "free",
                     "attendee": {
                         "emailAddress": {
-                            "address": "alexw@contoso.onmicrosoft.com"
+                            "address": "alexw@contoso.com"
                         }
                     }
                 }
@@ -327,7 +327,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "availability": "free",
                     "attendee": {
                         "emailAddress": {
-                            "address": "alexw@contoso.onmicrosoft.com"
+                            "address": "alexw@contoso.com"
                         }
                     }
                 }
@@ -358,7 +358,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "availability": "free",
                     "attendee": {
                         "emailAddress": {
-                            "address": "alexw@contoso.onmicrosoft.com"
+                            "address": "alexw@contoso.com"
                         }
                     }
                 }

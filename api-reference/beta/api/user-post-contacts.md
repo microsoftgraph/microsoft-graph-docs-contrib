@@ -37,7 +37,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -65,12 +65,12 @@ Content-type: application/json
   "surname": "Bansky",
   "emailAddresses": [
     {
-      "address": "pavelb@contoso.onmicrosoft.com",
+      "address": "pavelb@contoso.com",
       "name": "Pavel Bansky",
       "type": "personal"
     },
     {
-      "address": "pavelb@fabrikam.onmicrosoft.com",
+      "address": "pavelb@contoso.com",
       "name": "Pavel Bansky",
       "type": "other",
       "otherLabel": "Volunteer work"
@@ -175,13 +175,13 @@ Content-type: application/json
         {
             "type":"personal",
             "name":"Pavel Bansky",
-            "address":"pavelb@contoso.onmicrosoft.com"
+            "address":"pavelb@contoso.com"
         },
         {
             "otherLabel": "Volunteer work",
             "type":"other",
             "name":"Pavel Bansky",
-            "address":"pavelb@fabrikam.onmicrosoft.com"
+            "address":"pavelb@contoso.com"
         }
     ],
     "websites":[
@@ -202,7 +202,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

@@ -25,7 +25,7 @@ Windows Quality Update Profile
 |[Create windowsQualityUpdateProfile](../api/intune-softwareupdate-windowsqualityupdateprofile-create.md)|[windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md)|Create a new [windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md) object.|
 |[Delete windowsQualityUpdateProfile](../api/intune-softwareupdate-windowsqualityupdateprofile-delete.md)|None|Deletes a [windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md).|
 |[Update windowsQualityUpdateProfile](../api/intune-softwareupdate-windowsqualityupdateprofile-update.md)|[windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md)|Update the properties of a [windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md) object.|
-|[assign action](../api/intune-softwareupdate-windowsqualityupdateprofile-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-softwareupdate-windowsqualityupdateprofile-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|

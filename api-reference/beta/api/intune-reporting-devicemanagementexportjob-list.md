@@ -40,7 +40,7 @@ GET /deviceManagement/reports/exportJobs
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 593
+Content-Length: 626
 
 {
   "value": [
@@ -77,6 +77,7 @@ Content-Length: 593
       "format": "pdf",
       "snapshotId": "Snapshot Id value",
       "localizationType": "replaceLocalizableValues",
+      "search": "Search value",
       "status": "notStarted",
       "url": "Url value",
       "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",

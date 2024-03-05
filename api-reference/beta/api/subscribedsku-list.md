@@ -43,7 +43,7 @@ This method supports only the `$select` [OData query parameter](/graph//query-pa
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -152,7 +152,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 

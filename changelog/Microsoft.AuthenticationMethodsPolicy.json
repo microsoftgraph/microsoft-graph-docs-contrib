@@ -725,6 +725,24 @@
       "CreatedDateTime": "2023-10-11T21:39:03.3557592Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8197a2e8-16b5-4e9a-874b-9789e92f6542",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateCombinationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateCombinationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateCombinationConfiguration?view=graph-rest-beta) resource. Use this resource type to restrict an authentication strength policy to specific certificate properties.",
+          "Target": "x509CertificateCombinationConfiguration"
+        }
+      ],
+      "Id": "8197a2e8-16b5-4e9a-874b-9789e92f6542",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-17T19:06:35.4148289Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }

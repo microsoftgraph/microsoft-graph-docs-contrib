@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-OrgContactCollectionPage contacts = graphClient.contacts()
-	.buildRequest( requestOptions )
-	.filter("startswith(displayName,'A')")
-	.orderBy("displayName")
-	.top(1)
-	.get();
+OrgContactCollectionResponse result = graphClient.contacts().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "startswith(displayName,'A')";
+	requestConfiguration.queryParameters.count = true;
+	requestConfiguration.queryParameters.top = 1;
+	requestConfiguration.queryParameters.orderby = new String []{"displayName"};
+	requestConfiguration.headers.add("ConsistencyLevel", "eventual");
+});
+
 
 ```

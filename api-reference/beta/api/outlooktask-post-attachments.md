@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | A string that represents the type of data in the body of an entity. Required. |
 
 ## Request body

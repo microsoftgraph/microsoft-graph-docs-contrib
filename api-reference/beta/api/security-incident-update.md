@@ -37,7 +37,7 @@ PATCH /security/incidents/{incidentId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an updated [inci
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -138,7 +138,7 @@ Content-Type: application/json
     "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
     "createdDateTime": "2021-08-13T08:43:35.5533333Z",
     "lastUpdateDateTime": "2021-09-30T09:35:45.1133333Z",
-    "assignedTo": "KaiC@contoso.onmicrosoft.com",
+    "assignedTo": "KaiC@contoso.com",
     "classification": "TruePositive",
     "determination": "MultiStagedAttack",
     "status": "Active",
@@ -149,9 +149,19 @@ Content-Type: application/json
     "comments": [
       {
 		"comment": "Demo incident",
-		"createdBy": "DavidS@contoso.onmicrosoft.com",
+		"createdBy": "DavidS@contoso.com",
 		"createdTime": "2021-09-30T12:07:37.2756993Z"
       }
+    ],
+    "systemTags" : [
+        "Defender Experts"
+    ],
+    "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
+    "recommendedActions" : "Immediate Recommendations:  1.    Block untrusted and unsigned processes that run from USB (ASR Rule) 2.    Verify if the ASR rule is turned on for the devices and evaluate whether the ASR . ...",
+    "recommendedHuntingQueries" : [
+        {
+             "kqlText" : "//Run this query to identify the devices having Raspberry Robin worm alerts  AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == 'Potential Raspberry Robin worm command'   | join AlertEvidence on AlertId   | distinct DeviceId"
+        }
     ]
 }
 ```

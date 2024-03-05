@@ -627,7 +627,7 @@ This is the output HTML that Microsoft Graph returns when you [get page content]
 </html>
 ``` 
 
-## See also
+## Related content
 
 - [Get OneNote content and structure](onenote-get-content.md)
 - [Create OneNote pages](onenote-create-page.md)

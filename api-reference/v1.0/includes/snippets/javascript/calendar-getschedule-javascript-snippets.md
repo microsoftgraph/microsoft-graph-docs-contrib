@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const scheduleInformation = {
-    schedules: ['adelev@contoso.onmicrosoft.com', 'meganb@contoso.onmicrosoft.com'],
+    schedules: ['adelev@contoso.com', 'meganb@contoso.com'],
     startTime: {
         dateTime: '2019-03-15T09:00:00',
         timeZone: 'Pacific Standard Time'

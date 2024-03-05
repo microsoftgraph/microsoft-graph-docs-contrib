@@ -36,7 +36,7 @@ POST /print/printers/{printerId}/jobs/{printJobId}/abort
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, you can optionally provide the reason why the job is being aborted.

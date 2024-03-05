@@ -69,7 +69,7 @@ The following [Microsoft Entra roles](/entra/identity/role-based-access-control/
 
 In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
 
-## See also
+## Related content
 
 
 - [Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)

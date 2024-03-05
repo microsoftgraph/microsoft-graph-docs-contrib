@@ -2,7 +2,8 @@
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -36,7 +37,7 @@ PATCH /organization/{id}
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json |
 
 ## Request body

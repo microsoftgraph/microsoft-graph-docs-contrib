@@ -32,7 +32,7 @@ After an online meeting is created, users can join in two ways:
 
 2. Through the [create call API](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media), which requires that you provide the [meeting coordinates](/graph/api/resources/onlinemeeting), ([organizermeetinginfo](/graph/api/resources/organizermeetinginfo), and [chatInfo](/graph/api/resources/chatinfo)).
 
-## See also
+## Related content
 
 - [Online meeting permissions](./permissions-reference.md)
 - [Choose an API in Microsoft Graph to create and join online meetings](choose-online-meeting-api.md)

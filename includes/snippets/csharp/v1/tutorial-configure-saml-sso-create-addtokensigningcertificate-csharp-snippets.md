@@ -12,7 +12,7 @@ using Microsoft.Graph.ServicePrincipals.Item.AddTokenSigningCertificate;
 var requestBody = new AddTokenSigningCertificatePostRequestBody
 {
 	DisplayName = "CN=AWSContoso",
-	EndDateTime = DateTimeOffset.Parse("2024-01-25T00:00:00Z"),
+	EndDateTime = DateTimeOffset.Parse("2027-01-22T00:00:00Z"),
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

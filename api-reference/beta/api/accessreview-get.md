@@ -136,7 +136,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Create accessReview](accessreview-create.md)
 - [List accessReviews](accessreview-list.md)

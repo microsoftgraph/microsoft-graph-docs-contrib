@@ -49,7 +49,7 @@ For assignments, [delta queries](/graph/api/educationassignment-delta) are suppo
 
 Assignment API endpoints return a large amount of data. You can use the [filter](/graph/query-parameters#filter-parameter) [OData query parameter](/graph/query-parameters) to handle the data as needed. 
 
-## See also
+## Related content
 
 * [Permissions overview](/graph/permissions-overview?tabs=http) 
 * [Authentication and authorization basics](/graph/auth/auth-concepts#register-your-app-with-the-microsoft-identity-platform) 

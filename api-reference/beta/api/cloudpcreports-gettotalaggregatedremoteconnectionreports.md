@@ -35,7 +35,7 @@ POST /deviceManagement/virtualEndpoint/reports/getTotalAggregatedRemoteConnectio
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -164,7 +164,7 @@ Content-Type: application/octet-stream
         [
             "40f9315c-5b63-4126-9f89-b7dcb145ffff",
             "CPC-DisplayName",
-            "connie@cpccontoso.onmicrosoft.com",
+            "connie@contoso.com",
             66.36944444444444,
             0
         ]

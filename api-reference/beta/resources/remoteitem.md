@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 The **remoteItem** resource indicates that a [**driveItem**](driveitem.md) references an item that exists in another drive.
 This resource provides the unique IDs of the source drive and target item.
 
-[**DriveItems**](driveitem.md) with a non-null **remoteItem** facet are resources that are shared, added to the user's OneDrive, or on items returned from hetrogenous collections of items (like search results).
+[**DriveItems**](driveitem.md) with a non-null **remoteItem** facet are resources that are shared, added to the user's OneDrive, or on items returned from heterogenous collections of items (like search results).
 
 **Note:** Unlike with folders in the same drive, a **driveItem** moved into a remote item may have its `id` value changed.
 

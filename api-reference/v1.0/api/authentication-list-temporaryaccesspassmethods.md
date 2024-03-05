@@ -57,7 +57,7 @@ This method does not support optional query parameters to customize the response
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request 
 Don't supply a request body for this method.

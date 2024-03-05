@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.query_post_request_body import QueryPostRequestBody
+from msgraph.generated.models.search_request import SearchRequest
+from msgraph.generated.models.entity_type import EntityType
+from msgraph.generated.models.search_query import SearchQuery
 
 graph_client = GraphServiceClient(credentials, scopes)
 

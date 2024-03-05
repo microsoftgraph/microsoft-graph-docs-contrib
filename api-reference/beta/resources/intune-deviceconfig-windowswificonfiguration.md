@@ -51,7 +51,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |connectAutomatically|Boolean|Specify whether the wifi connection should connect automatically when in range.|
 |connectToPreferredNetwork|Boolean|Specify whether the wifi connection should connect to more preferred networks when already connected to this one.  Requires ConnectAutomatically to be true.|
 |connectWhenNetworkNameIsHidden|Boolean|Specify whether the wifi connection should connect automatically even when the SSID is not broadcasting.|
-|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Specify the proxy setting for Wi-Fi configuration. Possible values are: `none`, `manual`, `automatic`.|
+|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Specify the proxy setting for Wi-Fi configuration. Possible values are: `none`, `manual`, `automatic`, `unknownFutureValue`.|
 |proxyManualAddress|String|Specify the IP address for the proxy server.|
 |proxyManualPort|Int32|Specify the port for the proxy server.|
 |proxyAutomaticConfigurationUrl|String|Specify the URL for the proxy server configuration script.|

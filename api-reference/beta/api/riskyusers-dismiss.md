@@ -37,7 +37,7 @@ POST /riskyUsers/dismiss
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Specify the userIds to dismiss in the request body.

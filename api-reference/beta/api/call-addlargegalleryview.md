@@ -37,7 +37,7 @@ POST /communications/calls/{id}/addLargeGalleryView
 ## Request headers
 | Name          | Description                |
 |:--------------|:---------------------------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.|
 
 ## Request body
@@ -161,7 +161,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Learn how to identify the large gallery view participant in a call](/graph/cloud-communications-identifylargegalleryview)
 

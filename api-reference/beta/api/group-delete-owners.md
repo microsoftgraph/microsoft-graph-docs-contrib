@@ -2,7 +2,8 @@
 title: "Remove group owner"
 description: "Use this API to remove an owner from a Microsoft 365 group or a security group through the owners navigation property."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -24,6 +25,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_delete_owners" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-delete-owners-permissions.md)]
 
+The signed-in user must also be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+
+| Microsoft Entra role             | Limitations                                    |
+|----------------------------------|------------------------------------------------|
+| User Administrator               | Can modify user owners only                    |
+| Directory Writers                | Can modify user owners only                    |
+| Groups Administrator             | Can modify all types of group owners           |
+| Exchange Service Administrator   | Can modify owners of Microsoft 365 groups only |
+| SharePoint Service Administrator | Can modify owners of Microsoft 365 groups only |
+| Teams Administrator              | Can modify owners of Microsoft 365 groups only |
+| Yammer Administrator             | Can modify owners of Microsoft 365 groups only |
+| Intune Administrator             | Can modify owners of security groups only      |
+| Knowledge Administrator          | Can modify owners of security groups only      |
+| Knowledge Manager                | Can modify owners of security groups only      |
+| Windows 365 Administrator        | Can modify owners of security groups only      |
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +53,7 @@ DELETE /groups/{id}/owners/{id}/$ref
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -111,7 +128,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Add member to team](team-post-members.md)
 - [Update member's role in team](team-update-members.md)

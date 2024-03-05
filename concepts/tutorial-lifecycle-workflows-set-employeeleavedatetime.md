@@ -49,15 +49,15 @@ PATCH https://graph.microsoft.com/v1.0/users/df744d9e-2148-4922-88a8-633896c1e92
     $UserId = "528492ea-779a-4b59-b9a3-b3773ef6da6d"
     $employeeLeaveDateTime = "2022-09-30T23:59:59Z"
     
-    Update-MgUser -UserId $UserId -EmployeeLeaveDateTime $employeeLeaveDateTime
+    Update-MgUser -UserId $UserId -EmployeeLeaveDateTime $employeeLeaveDateTime 
 
-    $User = Get-MgUser -UserId $UserId
+    $User = Get-MgUser -UserId $UserId -Property EmployeeLeaveDateTime
     $User.EmployeeLeaveDateTime
 ```
 
 ---
 
-## Next steps
+## Related content
 
 - [Lifecycle Workflows API overview](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
 - [How to synchronize attributes for Lifecycle workflows](/azure/active-directory/governance/how-to-lifecycle-workflow-sync-attributes)

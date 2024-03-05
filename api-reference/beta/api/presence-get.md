@@ -34,7 +34,7 @@ GET /communications/presences
 ## Request Headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Request body
@@ -284,5 +284,5 @@ HTTP/1.1 200 OK
 }
 -->
 
-## See also
+## Related content
 - [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)

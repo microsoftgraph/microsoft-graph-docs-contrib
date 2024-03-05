@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object. In use, only [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) may be updated as they're the only type of [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) that may be created.
+Update the properties of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object. 
+The properties can be for one of the following derived types:
+* [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md)
+* [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -38,7 +41,7 @@ PATCH /identity/conditionalAccess/authenticationStrength/policies/{authenticatio
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -47,9 +50,7 @@ PATCH /identity/conditionalAccess/authenticationStrength/policies/{authenticatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|Specifies the combinations to which this configuration applies. The only possible value for fido2combinationConfigurations is `fido2`. Required.|
-
-
+|appliesToCombinations|authenticationMethodModes collection|The combinations where this configuration applies. For **fido2combinationConfigurations** use `"fido2"`, for **x509certificatecombinationconfiguration** use `"x509CertificateSingleFactor"` or `"x509CertificateMultiFactor"`. Required.|
 
 ## Response
 

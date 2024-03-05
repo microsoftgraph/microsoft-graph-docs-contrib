@@ -25,7 +25,7 @@ This entity contains data which is used in customizing the tenant level appearan
 |[Create intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Create a new [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.|
 |[Delete intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|None|Deletes a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
 |[Update intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Update the properties of a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.|
-|[assign action](../api/intune-wip-intunebrandingprofile-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-wip-intunebrandingprofile-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|

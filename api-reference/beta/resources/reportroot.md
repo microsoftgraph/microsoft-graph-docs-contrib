@@ -33,6 +33,7 @@ None.
 | dailyPrintUsageByUser | [printUsageByUser](../resources/printusagebyuser.md) collection | Retrieve a list of daily print usage summaries, grouped by user. |
 | monthlyPrintUsageByPrinter | [printUsageByPrinter](../resources/printusagebyprinter.md) collection | Retrieve a list of monthly print usage summaries, grouped by printer. |
 | monthlyPrintUsageByUser | [printUsageByUser](../resources/printusagebyuser.md) collection | Retrieve a list of monthly print usage summaries, grouped by user. |
+| partners | [partners](../resources/partners.md) | Represents billing details for a Microsoft direct partner. |
 | security                          | [securityReportsRoot](../resources/securityreportsroot.md)                                        | Provides the ability to launch a simulated phishing attack that organizations can learn from.             |
 | servicePrincipalSignInActivities  | [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) collection       | Represents a collection of sign-in activities of service principals.                                                   |
 | serviceActivity                               | [serviceActivity](../resources/serviceactivity.md)                            | Reports that relate to tenant-level authentication activities in Microsoft Entra.                                                            |

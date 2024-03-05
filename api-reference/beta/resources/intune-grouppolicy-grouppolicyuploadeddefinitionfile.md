@@ -28,11 +28,11 @@ Inherits from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-groupp
 |[Create groupPolicyUploadedDefinitionFile](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-create.md)|[groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md)|Create a new [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) object.|
 |[Delete groupPolicyUploadedDefinitionFile](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-delete.md)|None|Deletes a [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md).|
 |[Update groupPolicyUploadedDefinitionFile](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-update.md)|[groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md)|Update the properties of a [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) object.|
-|[addLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-addlanguagefiles.md)|None|Not yet documented|
-|[removeLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-removelanguagefiles.md)|None|Not yet documented|
-|[updateLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-updatelanguagefiles.md)|None|Not yet documented|
-|[uploadNewVersion action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-uploadnewversion.md)|None|Not yet documented|
-|[remove action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-remove.md)|None|Not yet documented|
+|[addLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-addlanguagefiles.md)|None||
+|[removeLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-removelanguagefiles.md)|None||
+|[updateLanguageFiles action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-updatelanguagefiles.md)|None||
+|[uploadNewVersion action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-uploadnewversion.md)|None||
+|[remove action](../api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-remove.md)|None||
 
 ## Properties
 |Property|Type|Description|

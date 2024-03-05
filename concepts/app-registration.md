@@ -49,7 +49,7 @@ The Registration Info page outlines standard requirements for app registrations.
 - **Compute Type** (required): Select the Azure product offering for this application.
 - **Activity Type** (required): Select the Data Factory/Synapse/Fabric activity that is used to copy over the data.
 
-Then specify the project details—a process that's similar to creating a resource in Azure. The following are the project detail fields: 
+Then specify the project details—a process that's similar to creating a resource in Azure. The following are the project detail fields:
 
 - **Subscription** (required): Select a subscription in the tenant that is used exclusively to filter the next four sections that relate to data destination configuration.
 - **Resource Group** (required): Select the group location for the data storage.
@@ -75,6 +75,9 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 
 ![Screenshot of the registration page for adding applications on Data Connect, including fields related to Lakehouse and its workspace.](images/app-registration-create-registration-info-including-lakehouse-workspace.png)
 
+> [!NOTE]
+> If you select Microsoft Fabric as the compute type, you need to register a **Microsoft.GraphServices** resource provider for the selected Azure subscription. The selected subscription and resource group are used for billing. For more information, see [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types).
+
 #### Datasets
 
 After you complete the **Registration Info** page, specify the datasets that the app registration needs to query. This step is crucial for authorization. Only the datasets that you select are transferred for administrator authorization. For more information about datasets, see [Datasets, regions, and sinks](./data-connect-datasets.md).
@@ -95,7 +98,7 @@ For more information about scopes, see [User selection and filtering capabilitie
 
 When you're finished, choose **Next : Review + create**.
 
-> [!IMPORTANT]
+> [!NOTE]
 > If information is missing from the required fields in the previous tabs, the **Next : Review + create** button is disabled.
 
 #### Review + create
@@ -103,6 +106,9 @@ When you're finished, choose **Next : Review + create**.
 The last step in the wizard shows a summary page for you to review the specified details and confirm the creation of the app registration entry.
 
 ![Graphic showing datasets selection for app registration while running the Data Connect app registration wizard.](images/app-registration-create-review.png)
+
+> [!NOTE]
+> If you previously selected Microsoft Fabric as the compute type, a resource with the type **Microsoft.GraphServices** and the name *mgdc-<your_app_id>* is registered under the selected subscription and resource group. This resource is used for billing. For more information about how to enable the **Microsoft.GraphServices** resource provider, see [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types).
 
 ### View app registration details
 
@@ -117,6 +123,9 @@ Access update functionality from the individual app overview page. Either the ap
 ![Screenshot of the app registration Update Properties page.](images/app-registration-details-properties-update.png)
 
 ![Screenshot of the app registration Update Datasets page.](images/app-registration-details-datasets-update.png)
+
+> [!NOTE]
+> If not already created, a resource named *mgdc-<your_app_id>* of type **Microsoft.GraphServices** is registered under the selected subscription and resource group for the Microsoft Fabric compute type.
 
 #### Delete an app registration entry
 

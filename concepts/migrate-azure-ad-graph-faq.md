@@ -139,7 +139,6 @@ For examples using the listed workarounds, see [Use Microsoft Graph to configure
 >**Note:** Adding Azure AD Graph permissions using these workarounds won't be supported after retirement of the Azure AD Graph. Any app using Azure AD Graph will stop functioning after the retirement.
 
 
-
-## See also
+## Related content
 
 + [Checklist to migrate apps](migrate-azure-ad-graph-request-differences.md)

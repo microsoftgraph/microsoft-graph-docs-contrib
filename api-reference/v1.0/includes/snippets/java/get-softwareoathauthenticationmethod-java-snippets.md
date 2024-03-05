@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SoftwareOathAuthenticationMethod softwareOathAuthenticationMethod = graphClient.me().authentication().softwareOathMethods("b172893e-893e-b172-3e89-72b13e8972b1")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+SoftwareOathAuthenticationMethod result = graphClient.me().authentication().softwareOathMethods().bySoftwareOathAuthenticationMethodId("{softwareOathAuthenticationMethod-id}").get();
+
 
 ```

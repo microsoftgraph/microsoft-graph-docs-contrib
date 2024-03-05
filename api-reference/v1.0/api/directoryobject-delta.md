@@ -67,7 +67,7 @@ This method supports optional OData query parameters to help customize the respo
 
 | Name | Description |
 |:--|:--|
-| Authorization | Bearer &lt;token&gt; |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 | Prefer | return=minimal <br><br>Specifying this header with a request that uses a `@odata.deltaLink` returns only the object's properties that have changed since the last round. Optional. |
 
@@ -185,7 +185,7 @@ Content-type: application/json
       "givenName": "Adele",
       "jobTitle": "Retail Manager",
       "surname": "Vance",
-      "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+      "userPrincipalName": "AdeleV@contoso.com",
       "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     },
     {
@@ -470,7 +470,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 - [Get incremental changes for groups](/graph/delta-query-groups).

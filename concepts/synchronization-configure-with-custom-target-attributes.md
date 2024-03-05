@@ -410,7 +410,7 @@ Authorization: Bearer {Token}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-synchronization-update-synchronizationschema-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -432,6 +432,10 @@ Authorization: Bearer {Token}
 ---
 
 If the schema was saved successfully, the request returns a `204 No Content` response code. On the next iteration of the synchronization job, it will start re-processing all the accounts in your Microsoft Entra ID, and the new mappings will be applied to all provisioned accounts.
+
+## Related content
+
+- [Microsoft Entra ID synchronization API overview](/graph/api/resources/synchronization-overview)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

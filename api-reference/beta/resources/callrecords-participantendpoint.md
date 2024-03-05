@@ -21,7 +21,7 @@ Inherits from [endpoint](callrecords-endpoint.md).
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|associatedIdentity|[userIdentity](useridentity.md)|Identity associated with the endpoint.|
+|associatedIdentity|[identity](identity.md)|Identity associated with the endpoint.|
 |cpuCoresCount|Int32|CPU number of cores used by the media endpoint.|
 |cpuName|String|CPU name used by the media endpoint.|
 |cpuProcessorSpeedInMhz|Int32|CPU processor speed used by the media endpoint.|
@@ -45,7 +45,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "associatedIdentity": {"@odata.type": "microsoft.graph.userIdentity"},
+  "associatedIdentity": {"@odata.type": "microsoft.graph.identity"},
   "cpuCoresCount": "Int32",
   "cpuName": "String",
   "cpuProcessorSpeedInMhz": "Int32",

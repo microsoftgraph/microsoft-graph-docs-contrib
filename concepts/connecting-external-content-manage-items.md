@@ -151,6 +151,6 @@ Ultimately, the choice of data refresh strategy depends on your data type and co
 
 - [Use external groups to manage permissions](connecting-external-content-external-groups.md)
 - [Query using the Microsoft Search API](search-concept-overview.md#why-use-the-microsoft-search-api)
-- [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview)
+- [Review the Microsoft Graph connectors API reference](/graph/api/resources/connectors-api-overview)
 - [Search custom types (externalItem)](search-concept-custom-types.md)
 - [Download the sample search connector from GitHub](https://github.com/microsoftgraph/msgraph-search-connector-sample)

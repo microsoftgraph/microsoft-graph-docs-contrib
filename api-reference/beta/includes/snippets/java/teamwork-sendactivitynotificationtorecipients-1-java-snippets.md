@@ -4,50 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.teamwork.sendactivitynotificationtorecipients.SendActivityNotificationToRecipientsPostRequestBody sendActivityNotificationToRecipientsPostRequestBody = new com.microsoft.graph.beta.teamwork.sendactivitynotificationtorecipients.SendActivityNotificationToRecipientsPostRequestBody();
 TeamworkActivityTopic topic = new TeamworkActivityTopic();
-topic.source = TeamworkActivityTopicSource.ENTITY_URL;
-topic.value = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}";
-
-String activityType = "pendingFinanceApprovalRequests";
-
+topic.setSource(TeamworkActivityTopicSource.EntityUrl);
+topic.setValue("https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}");
+sendActivityNotificationToRecipientsPostRequestBody.setTopic(topic);
+sendActivityNotificationToRecipientsPostRequestBody.setActivityType("pendingFinanceApprovalRequests");
 ItemBody previewText = new ItemBody();
-previewText.content = "Internal spending team has a pending finance approval requests";
+previewText.setContent("Internal spending team has a pending finance approval requests");
+sendActivityNotificationToRecipientsPostRequestBody.setPreviewText(previewText);
+LinkedList<TeamworkNotificationRecipient> recipients = new LinkedList<TeamworkNotificationRecipient>();
+AadUserNotificationRecipient teamworkNotificationRecipient = new AadUserNotificationRecipient();
+teamworkNotificationRecipient.setOdataType("microsoft.graph.aadUserNotificationRecipient");
+teamworkNotificationRecipient.setUserId("569363e2-4e49-4661-87f2-16f245c5d66a");
+recipients.add(teamworkNotificationRecipient);
+AadUserNotificationRecipient teamworkNotificationRecipient1 = new AadUserNotificationRecipient();
+teamworkNotificationRecipient1.setOdataType("microsoft.graph.aadUserNotificationRecipient");
+teamworkNotificationRecipient1.setUserId("ab88234e-0874-477c-9638-d144296ed04f");
+recipients.add(teamworkNotificationRecipient1);
+AadUserNotificationRecipient teamworkNotificationRecipient2 = new AadUserNotificationRecipient();
+teamworkNotificationRecipient2.setOdataType("microsoft.graph.aadUserNotificationRecipient");
+teamworkNotificationRecipient2.setUserId("01c64f53-69aa-42c7-9b7f-9f75195d6bfc");
+recipients.add(teamworkNotificationRecipient2);
+sendActivityNotificationToRecipientsPostRequestBody.setRecipients(recipients);
+LinkedList<KeyValuePair> templateParameters = new LinkedList<KeyValuePair>();
+KeyValuePair keyValuePair = new KeyValuePair();
+keyValuePair.setName("pendingRequestCount");
+keyValuePair.setValue("5");
+templateParameters.add(keyValuePair);
+sendActivityNotificationToRecipientsPostRequestBody.setTemplateParameters(templateParameters);
+graphClient.teamwork().sendActivityNotificationToRecipients().post(sendActivityNotificationToRecipientsPostRequestBody);
 
-LinkedList<TeamworkNotificationRecipient> recipientsList = new LinkedList<TeamworkNotificationRecipient>();
-AadUserNotificationRecipient recipients = new AadUserNotificationRecipient();
-recipients.userId = "569363e2-4e49-4661-87f2-16f245c5d66a";
-
-recipientsList.add(recipients);
-AadUserNotificationRecipient recipients1 = new AadUserNotificationRecipient();
-recipients1.userId = "ab88234e-0874-477c-9638-d144296ed04f";
-
-recipientsList.add(recipients1);
-AadUserNotificationRecipient recipients2 = new AadUserNotificationRecipient();
-recipients2.userId = "01c64f53-69aa-42c7-9b7f-9f75195d6bfc";
-
-recipientsList.add(recipients2);
-
-LinkedList<KeyValuePair> templateParametersList = new LinkedList<KeyValuePair>();
-KeyValuePair templateParameters = new KeyValuePair();
-templateParameters.name = "pendingRequestCount";
-templateParameters.value = "5";
-
-templateParametersList.add(templateParameters);
-
-graphClient.teamwork()
-	.sendActivityNotificationToRecipients(TeamworkSendActivityNotificationToRecipientsParameterSet
-		.newBuilder()
-		.withTopic(topic)
-		.withActivityType(activityType)
-		.withChainId(null)
-		.withPreviewText(previewText)
-		.withTeamsAppId(null)
-		.withTemplateParameters(templateParametersList)
-		.withRecipients(recipientsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

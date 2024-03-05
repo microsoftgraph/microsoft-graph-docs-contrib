@@ -1,7 +1,7 @@
 ---
 title: "Create event"
 description: "Use this API to create a new event."
-author: "Jordanndahl"
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
@@ -38,7 +38,7 @@ POST /groups/{id}/calendar/events
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -86,7 +86,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"adelev@contoso.onmicrosoft.com",
+        "address":"adelev@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -213,14 +213,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "adelev@contoso.onmicrosoft.com"
+                "address": "adelev@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Retail",
-            "address": "Retail@contoso.onmicrosoft.com"
+            "address": "Retail@contoso.com"
         }
     }
 }

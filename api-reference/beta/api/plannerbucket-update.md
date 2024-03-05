@@ -31,7 +31,7 @@ PATCH /planner/buckets/{id}
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | If-Match  | Last known ETag value for the **plannerBucket** to be updated. Required.|
 
 ## Request body

@@ -41,7 +41,7 @@ This method supports the `$filter` (`eq`) [OData query parameter](/graph/query-p
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

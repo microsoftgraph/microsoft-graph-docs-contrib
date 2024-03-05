@@ -46,7 +46,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "attendees": [
         {
           "emailAddress": {
-          "address":"AdeleV@contoso.OnMicrosoft.com",
+          "address":"AdeleV@contoso.com",
           "name": "Adele Vance"
           },
           "type": "required"
@@ -55,7 +55,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     }
     ```
 
-    Alex gets the following response: 
+    Alex gets the following response:
     <!-- {
       "blockType": "response",
       "name": "create_event",
@@ -133,14 +133,14 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "AdeleV@contoso.OnMicrosoft.com"
+                "address": "AdeleV@contoso.com"
             }
         }
       ],
       "organizer": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "AlexW@contoso.OnMicrosoft.com"
+            "address": "AlexW@contoso.com"
         }
       }
     }
@@ -156,20 +156,20 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     POST https://graph.microsoft.com/v1.0/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
     Content-type: application/json
 
-    { 
-      "comment": "Can you make the next day instead?", 
-      "sendResponse": "true", 
+    {
+      "comment": "Can you make the next day instead?",
+      "sendResponse": "true",
       "proposedNewTime": {
-         "Start": { 
-              "DateTime": "2019-08-16T12:00:00", 
-              "TimeZone": "Pacific Standard Time" 
-         }, 
-         "End": { 
-              "DateTime": "2019-08-16T14:00:00", 
-              "TimeZone": "Pacific Standard Time" 
+         "Start": {
+              "DateTime": "2019-08-16T12:00:00",
+              "TimeZone": "Pacific Standard Time"
+         },
+         "End": {
+              "DateTime": "2019-08-16T14:00:00",
+              "TimeZone": "Pacific Standard Time"
          }
       }
-    } 
+    }
     ```
 
     Adele's reply succeeds and she gets the following response:
@@ -257,20 +257,20 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
             "sender": {
                 "emailAddress": {
                     "name": "Adele Vance",
-                    "address": "AdeleV@contoso.OnMicrosoft.com"
+                    "address": "AdeleV@contoso.com"
                 }
             },
             "from": {
                 "emailAddress": {
                     "name": "Adele Vance",
-                    "address": "AdeleV@contoso.OnMicrosoft.com"
+                    "address": "AdeleV@contoso.com"
                 }
             },
             "toRecipients": [
                 {
                     "emailAddress": {
                         "name": "Alex Wilber",
-                        "address": "AlexW@contoso.OnMicrosoft.com"
+                        "address": "AlexW@contoso.com"
                     }
                 }
             ],
@@ -295,11 +295,11 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
             },
             "proposedNewTime": {
                 "start": {
-                    "dateTime": "2019-08-16T12:00:00", 
+                    "dateTime": "2019-08-16T12:00:00",
                     "timeZone": "Pacific Standard Time"
                 },
                 "end": {
-                    "dateTime": "2019-08-16T14:00:00", 
+                    "dateTime": "2019-08-16T14:00:00",
                     "timeZone": "Pacific Standard Time"
                 }
             }
@@ -308,7 +308,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     }
     ```
 
-4. Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal. This property is only present as part of an [attendee](/graph/api/resources/attendee) instance if the corresponding attendee has suggested an alternative meeting time. 
+4. Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal. This property is only present as part of an [attendee](/graph/api/resources/attendee) instance if the corresponding attendee has suggested an alternative meeting time.
 
     <!-- {
       "blockType": "request",
@@ -361,14 +361,14 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
                 },
                 "emailAddress": {
                     "name": "Adele Vance",
-                    "address": "AdeleV@contoso.OnMicrosoft.com"
+                    "address": "AdeleV@contoso.com"
                 }
             }
         ],
         "organizer": {
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "AlexW@contoso.OnMicrosoft.com"
+                "address": "AlexW@contoso.com"
             }
         }
     }
@@ -476,14 +476,14 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "AdeleV@contoso.OnMicrosoft.com"
+                "address": "AdeleV@contoso.com"
             }
         }
       ],
       "organizer": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "AlexW@contoso.OnMicrosoft.com"
+            "address": "AlexW@contoso.com"
         }
       }
     }
@@ -497,7 +497,7 @@ In step 2, if Adele replied tentative or declined, and did not propose a differe
 - In step 3, Alex would receive an **eventMessageResponse** with the **responseType** property set to `tentativelyAccepted` (or `decline` if Adele declined). Alex would not find a **proposedNewTime** property in this instance of **eventMessageResponse**.
 - In step 4, Alex would not find a **proposedNewTime** property in the associated **event** either.
 
-## See also
+## Related content
 - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
 - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
 - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)

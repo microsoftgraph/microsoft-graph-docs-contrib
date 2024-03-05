@@ -62,6 +62,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **displayName**          | string                              | The full title for the site. Read-only.                                                        |
 | **eTag**                 | string                              | ETag for the item. Read-only.                                                                  |
 | **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
+| **isPersonalSite**       | bool                                | Identifies whether the site is personal or not. Read-only.                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | The date and time the item was last modified. Read-only.                                       |
 | **name**                 | string                              | The name / title of the item.                                                                  |
 | **root**                 | [root](root.md)                     | If present, indicates that this is the root site in the site collection. Read-only.            |
@@ -135,6 +136,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 ```json
 {
   "id": "string",
+  "isPersonalSite": "bool",
   "root": { "@odata.type": "microsoft.graph.root" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},

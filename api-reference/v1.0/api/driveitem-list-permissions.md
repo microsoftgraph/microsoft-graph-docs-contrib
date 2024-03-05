@@ -47,11 +47,13 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 This method supports the `$select` [OData Query Parameters](/graph/query-parameters) to customize the response.
 
-## Optional request headers
+## Request headers
 
-| Name          | Type   | Description                                                                                                                                     |
-|:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | string | If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+| if-none-match | String. If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned. |
 
 ## Response
 

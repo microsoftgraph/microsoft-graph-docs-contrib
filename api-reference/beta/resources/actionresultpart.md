@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-## See also
+## Related content
 
 - [aadUserConversationMemberResult](aadUserConversationMemberResult.md)
 - [Add members in bulk to a team](../api/conversationmembers-add.md)

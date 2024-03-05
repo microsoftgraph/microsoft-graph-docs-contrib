@@ -25,7 +25,7 @@ Entity that represents a Microsoft Tunnel site
 |[Create microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-create.md)|[microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md)|Create a new [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) object.|
 |[Delete microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-delete.md)|None|Deletes a [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md).|
 |[Update microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-update.md)|[microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md)|Update the properties of a [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) object.|
-|[requestUpgrade action](../api/intune-mstunnel-microsofttunnelsite-requestupgrade.md)|None|Not yet documented|
+|[requestUpgrade action](../api/intune-mstunnel-microsofttunnelsite-requestupgrade.md)|None||
 
 ## Properties
 |Property|Type|Description|

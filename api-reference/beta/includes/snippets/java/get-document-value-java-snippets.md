@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-InputStream stream = graphClient.print().printers("fcb0bc53-a446-41d0-bfc3-5c56cdbb0f2a").jobs("46140").documents("bd260b1a-044e-4ca6-afa9-17d9a587d254").content()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.print().printers().byPrinterId("{printer-id}").jobs().byPrintJobId("{printJob-id}").documents().byPrintDocumentId("{printDocument-id}").content().get();
+
 
 ```

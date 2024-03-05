@@ -38,9 +38,9 @@ The combination of **issuer** and **subject** must be unique on the app.
 
 ## Design considerations
 
-Federated identity credentials are supported on applications only. A maximum of 20 federated identity credentials can be added per application object.
+A maximum of 20 federated identity credentials can be added per application object or user-assigned managed identity.
 
-## See also
+## Related content
 
 + [federatedIdentityCredential resource type](federatedidentitycredential.md)
 + [Workload identity federation](/azure/active-directory/develop/workload-identity-federation)

@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -111,7 +111,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": 
+  "value":
   {
     "@odata.type": "#microsoft.graph.riskyUserHistoryItem",
     "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
@@ -123,7 +123,7 @@ Content-Type: application/json
     "riskDetail": "userPerformedSecuredPasswordReset",
     "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
     "userDisplayName": "Allan Deyoung",
-    "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+    "userPrincipalName": "AllanD@contoso.com",
     "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
     "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
     "activity": {

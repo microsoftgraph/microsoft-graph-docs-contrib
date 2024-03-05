@@ -38,7 +38,7 @@ This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData quer
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.get_raw_remote_connection_reports_post_request_body import GetRawRemoteConnectionReportsPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

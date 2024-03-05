@@ -37,13 +37,13 @@ GET /deviceManagement/virtualEndpoint/galleryImages/{id}
 
 ## Optional query parameters
 
-This method supports `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -57,6 +57,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcGaller
 
 ### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,6 +105,9 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryIma
 ---
 
 ### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -117,19 +121,21 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcGalleryImage",
-  "id":"MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os",
-  "displayName":"Windows 10 Enterprise + OS Optimizations 1909",
-  "offerDisplayName":"Windows 10 Enterprise + OS Optimizations",
-  "skuDisplayName":"1909",
-  "publisher":"MicrosoftWindowsDesktop",
-  "offer":"windows-ent-cpc",
-  "sku":"19h2-ent-cpc-os",
-  "recommendedSku":"light",
-  "status":"supported",
-  "sizeInGB":64,
-  "startDate":"2019-11-12",
-  "endDate":"2022-05-10",
-  "expiredDate":"2022-11-10"
+  "id": "MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os",
+  "displayName": "Windows 10 Enterprise + OS Optimizations 1909",
+  "offerDisplayName": "Windows 10 Enterprise + OS Optimizations",
+  "skuDisplayName": "1909",
+  "publisher": "MicrosoftWindowsDesktop",
+  "publisherName": "MicrosoftWindowsDesktop",
+  "offer": "windows-ent-cpc",
+  "offerName": "windows-ent-cpc",
+  "sku": "19h2-ent-cpc-os",
+  "skuName": "19h2-ent-cpc-os",
+  "recommendedSku": "light",
+  "status": "supported",
+  "sizeInGB": 64,
+  "startDate": "2019-11-12",
+  "endDate": "2022-05-10",
+  "expiredDate": "2022-11-10"
 }
-
 ```

@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "tenantappmanagementpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/tenantappmanagementpolicy-update-permissions.md)]
 
-[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
+[!INCLUDE [rbac-app-auth-method-default-policy-api-update](../includes/rbac-for-apis/rbac-app-auth-method-default-policy-api-update.md)]
 
 ## HTTP request
 
@@ -38,7 +38,7 @@ PATCH /policies/defaultAppManagementPolicy
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 > [!IMPORTANT]

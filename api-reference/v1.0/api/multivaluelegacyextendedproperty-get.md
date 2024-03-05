@@ -119,7 +119,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -281,7 +281,7 @@ Content-type: application/json
     "organizer": {
         "emailAddress": {
             "name": "MOD Administrator",
-            "address": "admin@M365x39866865.OnMicrosoft.com"
+            "address": "admin@contoso.com"
         }
     },
     "onlineMeeting": null,

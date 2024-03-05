@@ -36,7 +36,7 @@ POST /riskyUsers/confirmCompromised
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Specify the risky user IDs to dismiss in the request body.

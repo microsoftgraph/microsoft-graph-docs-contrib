@@ -15,7 +15,7 @@ Change notifications in Microsoft Graph support subscriptions to virtual events.
 
 | Permission type                       | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------------------------|:---------------------------------------------------------|:-------------------|
-| Delegated (work or school account)    | VirtualEvent.Read                                        | v1.0, Beta         |
+| Delegated (work or school account)    | VirtualEvent.Read, VirtualEvent.ReadWrite                | v1.0, Beta         |
 | Delegated (personal Microsoft account)| Not supported.                                           | Not supported.     |
 | Application                           | VirtualEvent.Read.All                                    | v1.0, Beta         |
 

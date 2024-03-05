@@ -39,7 +39,7 @@ GET /reports/getAttackSimulationTrainingUserCoverage
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -139,5 +139,5 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 [reportRoot: getAttackSimulationTrainingUserCoverage](reportroot-getattacksimulationtrainingusercoverage.md) (deprecated)
