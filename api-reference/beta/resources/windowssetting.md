@@ -15,26 +15,27 @@ Namespace: microsoft.graph
 
 Represents settings from the Windows operating system that are stored in the cloud for a given user.
 
-> Warning:<br />The structure of the ID of a [**windowsSetting**](../resources/windowssetting.md) is not guaranteed and the caller should not take any dependency on it. The ID should be treated as an opaque string.
+> [!WARNING]
+> The structure of the ID of a **windowsSetting** is not guaranteed and the caller should not take any dependency on it. The ID should be treated as an opaque string.
 
-There are two types of **windowsSetting**: `roaming` and `backup`. For more information, see [windowsSettingType](enums.md#windowssettingtype-values) enum.
+Windows settings can be of the following two types: `roaming` and `backup`.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List windowsSetting objects](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get a list of the [windowsSetting](../resources/windowssetting.md) objects and their properties.|
+|[List Windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get a list of the [windowsSetting](../resources/windowssetting.md) objects and their properties.|
 |[Get windowsSetting](../api/windowssetting-get.md)|[windowsSetting](../resources/windowssetting.md)|Read the properties and relationships of a [windowsSetting](../resources/windowssetting.md) object.|
-|[List instances](../api/windowssetting-list-instances.md)|[windowsSettingInstance](../resources/windowssettinginstance.md) collection|Get the windowsSettingInstance resources from the instances navigation property.|
+|[List instances](../api/windowssetting-list-instances.md)|[windowsSettingInstance](../resources/windowssettinginstance.md) collection|Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object by passing the Windows setting ID and Windows setting instance ID in the URL.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the object.|
 |payloadType|String|The type of setting payloads contained in the *instances* navigation property.|
-|settingType|[windowsSettingType](enums.md#windowssettingtype-values)|The type of setting. Possible values are: `roaming`, `backup`, `unknownFutureValue`.|
-|windowsDeviceId|String|A unique identifier for the device the setting may belong to if it is of the settingType `backup`.|
+|settingType|**windowsSettingType**|The type of setting. Possible values are: `roaming`, `backup`, `unknownFutureValue`.|
+|windowsDeviceId|String|A unique identifier for the device the setting might belong to if it is of the **settingType** `backup`.|
 
 ## Relationships
 |Relationship|Type|Description|
