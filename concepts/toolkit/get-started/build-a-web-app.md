@@ -138,6 +138,8 @@ The following example shows a fully working usage that is loading Microsoft Grap
 <mgt-login></mgt-login>
 ```
 
+---
+
 The following example uses the ES6 modules, the MSAL2 Provider initialized in HTML, and the Login component:
 
 ```html
@@ -227,6 +229,8 @@ If you're using the toolkit from a CDN, you need to access JavaScript functions 
   </body>
 </html>
 ```
+
+---
 
 ## Next Steps
 
