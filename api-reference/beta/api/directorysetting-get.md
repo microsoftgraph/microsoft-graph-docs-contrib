@@ -32,6 +32,8 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "directorysetting_get_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-get-2-permissions.md)]
 
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
+
 
 ## HTTP request
 
