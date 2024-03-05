@@ -1,19 +1,19 @@
 ---
-title: "Get Windows setting"
+title: "Get windowsSetting"
 description: "Read the properties and relationships of a windowsSetting object."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "cross-device-experiences"
+ms.prod: "project-rome"
 doc_type: apiPageType
 ---
 
-# Get Windows setting
+# Get windowsSetting
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [windowsSetting](../resources/windowssetting.md) object by passing the ID of the setting in the URL.
+Read the properties and relationships of a [windowsSetting](../resources/windowssetting.md) object by passing the ID of the setting in the URL. This method gets the setting for the signed-in user.
 
 ## Permissions
 
@@ -32,14 +32,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-Get a particular Windows setting for the signed-in user.
 ``` http
 GET /me/settings/windows/{windowsSettingId}
 ```
 
 ## Optional query parameters
 
-N/A
+This method doesn't support OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
