@@ -94,7 +94,7 @@ Content-Type: application/json
 
 ## Subscribe to attedance report events for all sessions in a webinar
 
-To receive attendance report ready notifications for a particular webinar, you need to create a subscription for that unique webinar by using the following resource:  `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`.
+To receive notifications when an attendance report becomes available for the sessions in a virtual event webinar, a subscription must be created with the following resource:  `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`.
 
 An application can have only one subscription for a webinar's attendance reports inside a tenant.
 A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but the subscription is only available for users who organized or co-organized webinars in the same tenant as the event host.
