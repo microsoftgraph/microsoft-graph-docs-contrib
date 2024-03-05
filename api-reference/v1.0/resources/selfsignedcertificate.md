@@ -16,7 +16,7 @@ Contains the public part of a signing certificate.
 This resource type is the return type of the [addSelfSignedSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md) action. Service providers use the public part of the signing certificate to validate the issuer of the token.
 
 ## Properties
-Property|Type|Description
+|Property|Type|Description
 |:---|:---|:---|
 |customKeyIdentifier|Binary| Custom key identifier. |
 |displayName | String | The friendly name for the key. |
