@@ -229,17 +229,17 @@ Content-type: application/json
         },
         {
             "id": "fb859cd3-943b-4cd6-9bbe-fe1c39eace0e",
-            "displayName": "Lab Test",
+            "displayName": "Changing this grading category's name",
             "percentageWeight": 30
         },
         {
             "id": "d47d7a3f-44a1-47e1-8aec-68b028f64b2e",
-            "displayName": "Lab Practice",
+            "displayName": "Adding a new grading category 01",
             "percentageWeight": 30
         },
         {
             "id": "021db844-0f03-4483-929d-1c1dbfd4fcb4",
-            "displayName": "Lab Theory",
+            "displayName": "Adding a new grading category 02",
             "percentageWeight": 10
         }
     ]
