@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerTaskCompletionRequirementDetails",
-  "checklistRequirement": {"@odata.type": "microsoft.graph.plannerChecklistRequirement"}
+  "checklistRequirement": {"@odata.type": "microsoft.graph.plannerChecklistRequirement"},
   "approvalRequirement":  {"@odata.type": "microsoft.graph.plannerApprovalRequirement" }
 }
 ```
