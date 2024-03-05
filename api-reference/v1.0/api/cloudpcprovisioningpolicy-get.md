@@ -87,8 +87,8 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "description": "Description value",
-    "displayName": "Display Name value",
+    "displayName": "HR provisioning policy",
+    "description": "Provisioning policy for India HR employees"
     "domainJoinConfigurations": [
       {
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
@@ -101,8 +101,8 @@ Content-Type: application/json
     ],
     "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
-    "imageDisplayName": "Image Display Name value",
-    "imageId": "Image ID value",
+    "imageDisplayName": "Image for India HR employees",
+    "imageId": "6d1e37b1-dc44-42fb-9fa3-3f524832d987",
     "imageType": "custom",
     "windowsSetting": {
         "locale": "en-US"
@@ -147,8 +147,8 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "description": "Description value",
-    "displayName": "Display Name value",
+    "displayName": "HR provisioning policy",
+    "description": "Provisioning policy for India HR employees"
     "domainJoinConfigurations": [
       {
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
@@ -161,8 +161,8 @@ Content-Type: application/json
     ],
     "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
-    "imageDisplayName": "Image Display Name value",
-    "imageId": "Image ID value",
+    "imageDisplayName": "IndiaHRImage",
+    "imageId": "6d1e37b1-dc44-42fb-9fa3-3f524832d987",
     "imageType": "custom",
     "windowsSetting": {
         "locale": "en-US"
@@ -218,7 +218,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
     "alternateResourceUrl": "https://ms.portal.azure.com/#contoso.com/resource/subscriptions/827f2432-9c7b-4637-b694-570b3c2f969c/resourceGroups/myResourceGroupName/providers/Microsoft.Fidalgo/projects/myProjectName/pools/myPoolName",
-    "cloudPcGroupDisplayName": "MyCloudPcGroup",
+    "cloudPcGroupDisplayName": "WestUSEmployeesCloudPcGroup",
     "description": "The ProvisioningPolicy for West US employees.",
     "displayName": "WestUsPolicy",
     "domainJoinConfigurations": [
@@ -234,7 +234,7 @@ Content-Type: application/json
     "enableSingleSignOn": true,
     "gracePeriodInHours": 2,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
-    "imageDisplayName": "myCustomImage",
+    "imageDisplayName": "WestUSEmployeesCustomImage",
     "imageId": "d4e0541a-f7bb-4bdf-ad8f-b92b915a229f",
     "imageType": "custom",
     "localAdminEnabled": true,
