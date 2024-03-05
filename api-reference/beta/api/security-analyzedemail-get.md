@@ -1,19 +1,19 @@
 ---
-title: "analyzedEmail"
-description: "Read the properties and relationships of a microsoft.graph.security.analyzedEmail object."
+title: "Get analyzedEmail"
+description: "Read the properties and relationships of an analyzedEmail object."
 author: "malvika-balaraj"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# analyzedEmail
+# Get analyzedEmail
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) object.
+Read the properties and relationships of an [analyzedEmail](../resources/security-analyzedemail.md) object.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /security/collaboration/analyzedEmails/{analyzedEmailId}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
