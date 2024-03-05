@@ -7,7 +7,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "changeAlertRecordsPortalNotificationAsSent",
                 "ChangeType": "Addition",
-                "Description": "Added a new api: [changeAlertRecordsPortalNotificationAsSent](https://learn.microsoft.com/en-us/graph/api/resources/devicemanagement-alertrecord-changeAlertRecordsPortalNotificationAsSent?view=graph-rest-beta)",
+                "Description": "Added a new api: changeAlertRecordsPortalNotificationAsSent of [alertRecord](https://learn.microsoft.com/en-us/graph/api/resources/devicemanagement-alertrecord?view=graph-rest-beta)",
                 "Target": "changeAlertRecordsPortalNotificationAsSent"
               }
             ],
