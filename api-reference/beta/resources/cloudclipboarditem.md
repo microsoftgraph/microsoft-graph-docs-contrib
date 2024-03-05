@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents the information and properties of a [cloudClipboardItem](../resources/cloudclipboarditem.md) object. Cloud clipboard is a feature that allows a user to copy and paste content across devices and platforms. It also provides users with a history of the items they recently copied across all their apps and devices. 
 
-Currently, the feature is supported between Windows devices and [SwiftKey app](https://support.microsoft.com/topic/how-to-use-microsoft-swiftkey-keyboard-to-copy-and-paste-text-between-swiftkey-and-windows-85c8ca64-7091-477f-91d1-99c3b1f75138) on Android devices.
+Currently, the feature is supported between Windows devices and [swiftKey app](https://support.microsoft.com/topic/how-to-use-microsoft-swiftkey-keyboard-to-copy-and-paste-text-between-swiftkey-and-windows-85c8ca64-7091-477f-91d1-99c3b1f75138) on Android devices.
 
 ## Methods
 |Method|Return type|Description|
