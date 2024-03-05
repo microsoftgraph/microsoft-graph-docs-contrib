@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Read the properties and relationships of an [auditLogQuery](../resources/security-auditlogquery.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -126,7 +128,9 @@ Content-Type: application/json
     "displayName": "String",
     "filterStartDateTime": "String (timestamp)",
     "filterEndDateTime": "String (timestamp)",
-    "recordTypeFilter": "String",
+    "recordTypeFilters": [
+      "String"
+    ],
     "keywordFilter": "String",
     "serviceFilter": "String",
     "operationFilters": [
