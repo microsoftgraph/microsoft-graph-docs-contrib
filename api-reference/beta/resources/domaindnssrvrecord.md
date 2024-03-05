@@ -51,7 +51,6 @@ Here's a JSON representation of the resource.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

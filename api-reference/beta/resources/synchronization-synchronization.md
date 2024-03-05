@@ -43,7 +43,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.synchronization",
-  "version": "String",
   "secrets": [
     {
       "@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair"

@@ -111,7 +111,7 @@ Here's a JSON representation of the resource.
     "mailboxLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
     },
-    "pauseAfterDownload": "Boolean",
+    "pauseAfterEstimate": "Boolean",
     "regulations": [
         "String"
     ],

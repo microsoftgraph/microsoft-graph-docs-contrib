@@ -34,7 +34,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.secureSignInSessionControl",
-  "isEnabled": "Boolean",
-  "secureAppSessionMode": "String"
+  "isEnabled": "Boolean"
 }
 ```

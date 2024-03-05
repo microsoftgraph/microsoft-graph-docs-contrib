@@ -221,7 +221,6 @@ The following JSON representation shows the resource type.
   "signInAudience": "String",
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
-  "useCustomTokenSigningKey": false,
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}
 }
 ```

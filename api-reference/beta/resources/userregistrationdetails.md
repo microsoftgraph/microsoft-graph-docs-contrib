@@ -64,7 +64,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.userRegistrationDetails",
-  "defaultMethod": "String",
+  "defaultMfaMethod": "String",
   "id": "String (identifier)",
   "isAdmin": "Boolean",
   "isMfaCapable": "Boolean",

@@ -35,7 +35,10 @@
       "ms.prod",
       "doc_type",
       "ms.localizationpriority"
-    ]
+    ],
+    "textToRemoveFromPropertyNames": [
+      "(deprecated)"
+    ]  
   },
   "schemaDiffConfig": {
     "dropElementsContaining": [

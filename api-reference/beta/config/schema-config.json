@@ -35,7 +35,10 @@
       "readme.md",
       "license.md",
       "index.md"
-    ]
+    ],
+    "textToRemoveFromPropertyNames": [
+      "(deprecated)"
+    ] 
   },
   "schemaDiffConfig": {
     "dropElementsContaining": [

@@ -34,6 +34,7 @@ The availability of sign-in logs is governed by the [Microsoft Entra data retent
 |appId|String|The application identifier in Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that are triggered by the corresponding sign-in activity. Apps need additional Conditional Access-related privileges to read the details of this property. For more information, see [Viewing applied conditional access (CA) policies in sign-ins](../api/signin-list.md#viewing-applied-conditional-access-ca-policies-in-sign-ins).|
 |appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, which were triggered by the corresponding events in the sign-in event.|
+|appTokenProtectionStatus|tokenProtectionStatus|*TODO*|
 |authenticationAppDeviceDetails|[authenticationAppDeviceDetails](../resources/authenticationappdevicedetails.md)|Provides details about the app and device used during a Microsoft Entra authentication step.|
 |authenticationAppPolicyEvaluationDetails|[authenticationAppPolicyDetails](../resources/authenticationapppolicydetails.md) collection|Provides details of the Microsoft Entra policies applied to a user and client authentication app during an authentication step.|
 |authenticationContextClassReferences|[authenticationContext](authenticationcontext.md) collection|Contains a collection of values that represent the conditional access authentication contexts applied to the sign-in.|
@@ -96,7 +97,7 @@ The availability of sign-in logs is governed by the [Microsoft Entra data retent
 |userId|String|The identifier of the user. <br/><br/> Supports `$filter` (`eq`).|
 |userPrincipalName|String|The UPN of the user. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userType|signInUserType|Identifies whether the user is a member or guest in the tenant. Possible values are: `member`, `guest`, `unknownFutureValue`.|
-|mfaDetail (deprecated)|String|This property is deprecated.|
+|mfaDetail (deprecated)|[mfaDetail](../resources/mfadetail.md)|This property is deprecated.|
 
 
 ## Relationships
@@ -129,7 +130,9 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.appliedAuthenticationEventListener"
     }
   ],
-  "appTokenProtectionStatus": "String",
+  "appTokenProtectionStatus": {
+      "@odata.type": "microsoft.graph.tokenProtectionStatus"
+  },
   "authenticationAppDeviceDetails": {
       "@odata.type": "microsoft.graph.authenticationAppDeviceDetails"
   },
@@ -194,9 +197,6 @@ The following JSON representation shows the resource type.
   },
   "processingTimeInMilliseconds": "Integer",
   "riskDetail": "String",
-  "riskEventTypes": [
-    "String"
-  ],
   "riskEventTypes_v2": [
     "String"
   ],

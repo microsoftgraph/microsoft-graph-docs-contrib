@@ -105,7 +105,6 @@ The following JSON representation shows the resource type.
   "allowParticipantsToChangeName": "Boolean",
   "allowTeamworkReactions": "Boolean",
   "allowedPresenters": "String",
-  "alternativeRecording": "Stream",
   "anonymizeIdentityForRoles": ["String"],
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},

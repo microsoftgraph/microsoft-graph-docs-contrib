@@ -66,7 +66,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "filterStartDateTime": "String (timestamp)",
   "filterEndDateTime": "String (timestamp)",
-  "recordTypeFilter": "String",
+  "recordTypeFilters": "String",
   "keywordFilter": "String",
   "serviceFilter": "String",
   "operationFilters": [

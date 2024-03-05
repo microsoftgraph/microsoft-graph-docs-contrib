@@ -24,6 +24,7 @@ Represents the filtering criteria applied to a column.
 | dynamicCriteria | String                   | *TODO*    |
 | filterOn        | String                   | *TODO*    |
 | icon            | [workbookIcon](workbookicon.md)  | *TODO*    |
+| operator        | String                   | *TODO*    |
 | values          | [Json](json.md)          | *TODO*    |
 
 ## JSON representation

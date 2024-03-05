@@ -34,12 +34,12 @@ Here's a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.domainDnsUnavailableRecord"
+  "@odata.type": "microsoft.graph.domainDnsUnavailableRecord",
+  "baseType": "microsoft.graph.domainDnsRecord"
 }-->
 
 ```json
 {
-  "canonicalName": "String",
   "description": "String",
   "id": "String (identifier)",
   "isOptional": true,

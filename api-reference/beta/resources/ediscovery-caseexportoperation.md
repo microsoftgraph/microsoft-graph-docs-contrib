@@ -37,6 +37,7 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 |exportOptions|microsoft.graph.ediscovery.exportOptions| The options provided for the export. For more information, see [reviewSet: export](../api/ediscovery-reviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
 |exportStructure|microsoft.graph.ediscovery.exportFileStructure|The options provided specify the structure of the export. For more information, see [reviewSet: export](../api/ediscovery-reviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
+|outputFolderId|String|*TODO*|
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
