@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List windowsSettingInstance](../api/windowssetting-list-instances.md)|[windowsSettingInstance](../resources/windowssettinginstance.md) collection|Get a list of the [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties.|
+|[List instances](../api/windowssetting-list-instances.md)|[windowsSettingInstance](../resources/windowssettinginstance.md) collection|Get a list of [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties.|
 |[Get windowsSettingInstance](../api/windowssettinginstance-get.md)|[windowsSettingInstance](../resources/windowssettinginstance.md)|Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object.|
 
 ## Properties
@@ -31,8 +31,8 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|Set by the server. Represents the dateTime in UTC when the object was created on the server.|
 |expirationDateTime|DateTimeOffset|Set by the server. The object expires at the specified dateTime in UTC, making it unavailable after that time.|
 |id|String|The unique identifier of the object. Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Set by the server if not provided in the request from the Windows client device.Refers to the user's Windows device that modified the object at the specified dateTime in UTC.|
-|payload|String|Base64 encoded JSON setting value.|
+|lastModifiedDateTime|DateTimeOffset|Set by the server if not provided in the request from the Windows client device. Refers to the user's Windows device that modified the object at the specified dateTime in UTC.|
+|payload|String|Base64-encoded JSON setting value.|
 
 ## Relationships
 None.
