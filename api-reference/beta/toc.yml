@@ -793,30 +793,6 @@ items:
                     href: api/application-delete-owners.md
               - name: Policies
                 items:
-                  - name: Remote desktop security configuration policy
-                    href: resources/remotedesktopsecurityconfiguration.md
-                    items:
-                      - name: Create
-                        href: api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-                      - name: Get
-                        href: api/remotedesktopsecurityconfiguration-get.md
-                      - name: Update
-                        href: api/remotedesktopsecurityconfiguration-update.md
-                      - name: Delete
-                        href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-                      - name: Target device groups
-                        href: resources/targetdevicegroup.md
-                        items:
-                          - name: List
-                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
-                          - name: Create
-                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
-                          - name: Get
-                            href: api/targetdevicegroup-get.md
-                          - name: Update
-                            href: api/targetdevicegroup-update.md
-                          - name: Delete
-                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -1049,6 +1025,40 @@ items:
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remove
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: Password-based SSO credentials
+                    items:
+                      - name: Create
+                        href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
+                      - name: Get
+                        href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
+                      - name: Update
+                        href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
+                      - name: Delete
+                        href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
+                  - name: Remote desktop security configuration policy
+                    href: resources/remotedesktopsecurityconfiguration.md
+                    items:
+                      - name: Create
+                        href: api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
+                      - name: Get
+                        href: api/remotedesktopsecurityconfiguration-get.md
+                      - name: Update
+                        href: api/remotedesktopsecurityconfiguration-update.md
+                      - name: Delete
+                        href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
+                      - name: Target device groups
+                        href: resources/targetdevicegroup.md
+                        items:
+                          - name: List
+                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
+                          - name: Create
+                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
+                          - name: Get
+                            href: api/targetdevicegroup-get.md
+                          - name: Update
+                            href: api/targetdevicegroup-update.md
+                          - name: Delete
+                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -1067,16 +1077,6 @@ items:
                         href: api/serviceprincipal-list-tokenlifetimepolicies.md
                       - name: Remove
                         href: api/serviceprincipal-delete-tokenlifetimepolicies.md
-              - name: Single sign on
-                items:
-                  - name: Create password single sign on credentials
-                    href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
-                  - name: Get password single sign on credentials
-                    href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
-                  - name: Update password single sign on credentials
-                    href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
-                  - name: Delete password single sign on credentials
-                    href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Synchronization
             items:
               - name: Overview
@@ -13834,30 +13834,6 @@ items:
                       href: api/permissiongrantpreapprovalpolicy-update.md
                     - name: Delete
                       href: api/permissiongrantpreapprovalpolicy-delete.md
-                  - name: Remote desktop security configuration policy
-                    href: resources/remotedesktopsecurityconfiguration.md
-                    items:
-                      - name: Create
-                        href: api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-                      - name: Get
-                        href: api/remotedesktopsecurityconfiguration-get.md
-                      - name: Update
-                        href: api/remotedesktopsecurityconfiguration-update.md
-                      - name: Delete
-                        href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-                      - name: Target device groups
-                        href: resources/targetdevicegroup.md
-                        items:
-                          - name: List
-                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
-                          - name: Create
-                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
-                          - name: Get
-                            href: api/targetdevicegroup-get.md
-                          - name: Update
-                            href: api/targetdevicegroup-update.md
-                          - name: Delete
-                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
