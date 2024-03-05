@@ -217,45 +217,21 @@ Next, extend the application to show data from the user's calendar. You can acce
 
 #### Track user's sign in state
 
-You need to track the user's sign in state and use the React `useState` and `useEffect` hooks in combination with provider event handlers.
+You need to track the user's signed in state so you use the `useIsSignedIn` hook provided by `mgt-react`.
 
-1. In the code editor, open the **src/App.tsx** file and extend the existing React `import` statement.
-
-    ```TypeScript
-    import React, { useState, useEffect } from 'react';
-    ```
-
-1. Import the `Provider` and `ProviderState` types from `mgt-element`, by adding to imports.
+1. Import the `useIsSignedIn` hook from `mgt-react`, by adding it to the `mgt-react` imports.
 
     ```TypeScript
-    import { Providers, ProviderState } from '@microsoft/mgt-element';
+    import { Login, useIsSignedIn } from '@microsoft/mgt-react';
     ```
 
-1. Add a custom function named `useIsSignedIn` that enables tracking the user's sign in state in your application.
+1. Use the hook `useIsSignedIn` to enable tracking the user's sign in state in your application by adding it in the **App** function:
 
     ```TypeScript
-    function useIsSignedIn(): [boolean] {
-      const [isSignedIn, setIsSignedIn] = useState(false);
-    
-      useEffect(() => {
-        const updateState = () => {
-          const provider = Providers.globalProvider;
-          setIsSignedIn(provider && provider.state === ProviderState.SignedIn);
-        };
-    
-        Providers.onProviderUpdated(updateState);
-        updateState();
-    
-        return () => {
-          Providers.removeProviderUpdatedListener(updateState);
-        }
-      }, []);
-    
-      return [isSignedIn];
-    }
+      const [ isSignedIn ] = useIsSignedIn();
     ```
 
-This function does two things. First, using the React `useState` hook, it enables tracking state inside your component. Whenever the state changes, React re-renders your component. Second, using the React `useEffect` hook, it extends the component's lifecycle by tracking changes in the Microsoft Graph Toolkit provider and updating the component if necessary.
+This code defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.
 
 #### Load user's calendar if user is signed in
 
@@ -264,18 +240,10 @@ Now that you track the user's sign in state in your application, you can show th
 1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the `<Agenda />` component.
 
     ```TypeScript
-    import { Agenda, Login } from '@microsoft/mgt-react';
+    import { useIsSignedIn, Agenda, Login } from '@microsoft/mgt-react';
     ```
 
-1. Next, inside the **App** function, add:
-
-    ```TypeScript
-    const [isSignedIn] = useIsSignedIn();
-    ```
-
-This code defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.
-
-1. Extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit `<Agenda />` component.
+1. Extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit `<Agenda />` component that will only render is the user is signed in.
 
     ```TypeScript
     <div className="row">
@@ -302,30 +270,9 @@ This code defines a Boolean `isSignedIn` constant, which you can use to determin
 With these changes, the **src/App.tsx** file should look like the following.
 
 ```TypeScript
-import { Providers, ProviderState } from '@microsoft/mgt-element';
-import { Agenda, Login } from '@microsoft/mgt-react';
+import { useIsSignedIn, Agenda, Login } from '@microsoft/mgt-react';
 import React, { useState, useEffect } from 'react';
 import './App.css';
-
-function useIsSignedIn(): [boolean] {
-  const [isSignedIn, setIsSignedIn] = useState(false);
-
-  useEffect(() => {
-    const updateState = () => {
-      const provider = Providers.globalProvider;
-      setIsSignedIn(provider && provider.state === ProviderState.SignedIn);
-    };
-
-    Providers.onProviderUpdated(updateState);
-    updateState();
-
-    return () => {
-      Providers.removeProviderUpdatedListener(updateState);
-    }
-  }, []);
-
-  return [isSignedIn];
-}
 
 function App() {
   const [isSignedIn] = useIsSignedIn();
@@ -415,32 +362,11 @@ By adding the chat components to your application, you need to update the list o
 With these changes, the **src/App.tsx** file should look like the following.
 
 ```TypeScript
-import { Providers, ProviderState } from '@microsoft/mgt-element';
-import { Agenda, Login } from '@microsoft/mgt-react';
+import { useIsSignedIn, Agenda, Login } from '@microsoft/mgt-react';
 import { Chat, NewChat } from '@microsoft/mgt-chat';
 import { Chat as GraphChat } from '@microsoft/microsoft-graph-types';
 import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
-
-function useIsSignedIn(): [boolean] {
-  const [isSignedIn, setIsSignedIn] = useState(false);
-
-  useEffect(() => {
-    const updateState = () => {
-      const provider = Providers.globalProvider;
-      setIsSignedIn(provider && provider.state === ProviderState.SignedIn);
-    };
-
-    Providers.onProviderUpdated(updateState);
-    updateState();
-
-    return () => {
-      Providers.removeProviderUpdatedListener(updateState);
-    }
-  }, []);
-
-  return [isSignedIn];
-}
 
 function App() {
   const [isSignedIn] = useIsSignedIn();

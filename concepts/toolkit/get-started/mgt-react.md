@@ -123,6 +123,25 @@ const App = (props) => {
 
 The `template` prop allows you to specify which template to overwrite. In this case, the `MyEvent` component is repeated for every event, and the `event` object is passed as part of the `dataContext` properties.
 
+### Custom React Hooks
+
+`mgt-react` provides custom react hooks that you can use in your application to track the state of your application.
+
+#### useIsSignedIn
+
+This hook does two things. First, using the React `useState` hook, it enables tracking the signed in state inside your component. Whenever the signed in state changes, React re-renders your component. Second, using the React `useEffect` hook, it extends the component's lifecycle by tracking changes in the Microsoft Graph Toolkit provider and updating the component if necessary.
+
+
+```tsx
+import { useIsSignedIn, Agenda } from '@microsoft/mgt-react';
+
+const [isSignedIn] = useIsSignedIn();
+
+const App = (props) => {
+  return { isSignedIn && <Agenda></Agenda> }
+}
+```
+
 ## Related content
 
 * [Get started with the Microsoft Graph Toolkit in React](./use-toolkit-with-react.md)
