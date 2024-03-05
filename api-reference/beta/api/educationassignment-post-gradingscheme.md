@@ -45,7 +45,7 @@ PUT /education/classes/{educationClassId}/assignments/{assignmentid}/gradingSche
 
 ## Request body
 
-In the request body, supply the odata.id of the existing gradingScheme object to add to this assignment.
+In the request body, supply the odata.id of the existing **gradingScheme** object to add to this assignment.
 
 ## Response
 

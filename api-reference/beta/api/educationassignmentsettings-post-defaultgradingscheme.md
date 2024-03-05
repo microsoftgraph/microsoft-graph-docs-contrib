@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the defaultGradingScheme on the assignmentSettings.
+Set the **defaultGradingScheme** on the assignmentSettings.
 
 ## Permissions
 

@@ -48,7 +48,6 @@ The following table shows the properties that are required when you update the [
 |submissionAnimationDisabled|Boolean|Indicates whether to show the turn-in celebration animation. A value of `true` indicates to skip the animation. Default value is `false`.|
 
 
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [educationAssignmentSettings](../resources/educationassignmentsettings.md) object in the response body.
