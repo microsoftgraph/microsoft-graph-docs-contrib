@@ -56,7 +56,7 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 
 You can choose to initialize the provider in either your JavaScript code or HTML.
 
-# [JavaScript](#tab/JavaScript)
+# [JavaScript](#tab/javascript)
 
 To initialize the MSAL provider in your JavaScript, add the following code to your application:
 
@@ -69,7 +69,7 @@ Providers.globalProvider = new Msal2Provider({
 });
 ```
 
-# [HTML](#tab/HTML)
+# [HTML](#tab/html)
 
 If you prefer to use a declarative approach, you can alter the initialization script and add the `mgt-msal2-provider` component to your HTML page, and set the `client-id` to your application client-id.
 
@@ -85,6 +85,8 @@ If you prefer to use a declarative approach, you can alter the initialization sc
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 ```
 
+---
+
 The client ID is the only property required to initialize the provider, but you can set additional options. For the full list, see [MSAL2 Provider](../providers/msal2.md).
 
 ### Creating an app/client ID
@@ -95,7 +97,7 @@ In order to get a client ID, you need to [register your application](./add-aad-a
 
 After you initialize the MSAL2 provider, you can start using any of the Toolkit components.
 
-# [JavaScript](#tab/JavaScript)
+# [JavaScript](#tab/javascript)
 
 This is an example using the ES6 modules, the MSAL2 Provider initialized in JavaScript, and the Login component:
 
@@ -119,7 +121,7 @@ function component() {
 document.body.appendChild(component());
 ```
 
-# [HTML](#tab/HTML)
+# [HTML](#tab/html)
 
 The following is a full working example that shows loading Microsoft Graph Toolkit from a CDN, the MSAL2 Provider initialized in JavaScript, and the Login component:
 
@@ -135,6 +137,8 @@ The following is a full working example that shows loading Microsoft Graph Toolk
 </script>
 <mgt-login></mgt-login>
 ```
+
+---
 
 The following example uses the ES6 modules, the MSAL2 Provider initialized in HTML, and the Login component:
 
@@ -164,7 +168,7 @@ You can detect when a user has successfully signed in and display specific compo
 
 The package `mgt-element` provides the `isSignedIn` utility function that you can call to ascertain if a user is signed in.
 
-# [JavaScript](#tab/JavaScript)
+# [JavaScript](#tab/javascript)
 
 If you're using the toolkit via the npm packages, you can import the `Provider` and `ProviderState` from `@microsoft/mgt-element`.
 
@@ -193,7 +197,7 @@ const loadAgenda = () => {
 Providers.onProviderUpdated(loadAgenda);
 ```
 
-# [HTML](#tab/HTML)
+# [HTML](#tab/html)
 
 If you're using the toolkit from a CDN, you need to access JavaScript functions and objects by using a module script in the same way that you would when using the toolkit via npm packages.
 
@@ -228,6 +232,7 @@ If you're using the toolkit from a CDN, you need to access JavaScript functions 
 </html>
 ```
 
+---
 
 ## Next Steps
 
