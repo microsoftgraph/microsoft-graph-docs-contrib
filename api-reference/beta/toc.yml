@@ -1599,7 +1599,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Delete a history item
                     href: api/projectrome-delete-historyitem.md
-          - name: Roaming data
+          - name: Roaming data (preview)
             items:
               - name: Windows settings
                 href: resources/windowssetting.md
