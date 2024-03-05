@@ -20,7 +20,7 @@ Getting started with the Toolkit involves the following steps:
 
 You can use Microsoft Graph Toolkit in your application by installing the npm packages or loading it from a Content Delivery Network(CDN).
 
-# [CDN](#tab/html)
+# [CDN](#tab/cdn)
 
 To use the toolkit via a CDN, add the following script and markup to your HTML page:
 
@@ -123,7 +123,7 @@ document.body.appendChild(component());
 
 # [HTML](#tab/html)
 
-The following example shows a fully working usage that is loading Microsoft Graph Toolkit from a CDN, the MSAL2 Provider initialized in JavaScript, and the Login component:
+The following example shows a fully working usage that is loading Microsoft Graph Toolkit from a CDN, the MSAL2 Provider initialized in JavaScript, and the `Login` component:
 
 ```html
 <script type="module">
@@ -138,9 +138,7 @@ The following example shows a fully working usage that is loading Microsoft Grap
 <mgt-login></mgt-login>
 ```
 
----
-
-The following example uses the ES6 modules, the MSAL2 Provider initialized in HTML, and the Login component:
+The following example uses the ES6 modules, the MSAL2 Provider initialized in HTML, and the sign-in component:
 
 ```html
 <script type="module">
@@ -229,8 +227,6 @@ If you're using the toolkit from a CDN, you need to access JavaScript functions 
   </body>
 </html>
 ```
-
----
 
 ## Next Steps
 
