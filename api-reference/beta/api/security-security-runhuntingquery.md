@@ -124,7 +124,8 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.security.huntingQueryResults"
+  "@odata.type": "microsoft.graph.security.huntingQueryResults",
+  "truncated": true
 }
 -->
 

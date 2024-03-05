@@ -23,7 +23,7 @@ Represents the filtering criteria applied to a column.
 | criterion2      | String                   | *TODO*    |
 | dynamicCriteria | String                   | *TODO*    |
 | filterOn        | String                   | *TODO*    |
-| icon            | [workbookIcon](icon.md)  | *TODO*    |
+| icon            | [workbookIcon](workbookicon.md)  | *TODO*    |
 | values          | [Json](json.md)          | *TODO*    |
 
 ## JSON representation

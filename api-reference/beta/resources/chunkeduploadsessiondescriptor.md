@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|name|String||
+|name|String|*TODO*|
 
 ## JSON representation
 

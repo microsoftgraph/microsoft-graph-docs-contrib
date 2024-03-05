@@ -48,11 +48,12 @@ Here's a JSON representation of a **baseItem** resource.
 
 | Property             | Type              | Description                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
+| description          | string            | *TODO*                                                                                 |
 | id                   | string            | The unique identifier of the drive. Read-only.                                         |
-| createdBy            | [identitySet][]   | Identity of the user, device, or application that created the item. Read-only.        |
+| createdBy            | [identitySet][]   | Identity of the user, device, or application that created the item. Read-only.         |
 | createdDateTime      | dateTimeOffset    | Date and time of item creation. Read-only.                                             |
 | eTag                 | string            | ETag for the item. Read-only.                                                          |
-| lastModifiedBy       | [identitySet][]   | Identity of the user, device, and application that last modified the item. Read-only. |
+| lastModifiedBy       | [identitySet][]   | Identity of the user, device, and application that last modified the item. Read-only.  |
 | lastModifiedDateTime | dateTimeOffset    | Date and time the item was last modified. Read-only.                                   |
 | name                 | string            | The name of the item. Read-write.                                                      |
 | parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-write.                              |

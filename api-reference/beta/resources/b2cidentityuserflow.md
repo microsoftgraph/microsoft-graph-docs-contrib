@@ -83,7 +83,7 @@ The following is a JSON representation of the resource.
     "userFlowTypeVersion": "Single",
     "isLanguageCustomizationEnabled": "Boolean",
     "defaultLanguageTag": "String",
-    "userflowidentityProviders": [{"@odata.type": "microsoft.graph.identityProviderBase"}],
+    "userFlowIdentityProviders": [{"@odata.type": "microsoft.graph.identityProviderBase"}],
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
     "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],

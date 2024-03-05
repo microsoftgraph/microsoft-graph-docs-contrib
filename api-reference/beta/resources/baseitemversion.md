@@ -32,7 +32,6 @@ Here's a JSON representation of the resource.
 
 ```json
 {
-  "content": { "@odata.type": "Edm.Stream" },
   "id": "String (identifier)",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "String (timestamp)",

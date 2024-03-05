@@ -18,9 +18,9 @@ Defines custom behavior that a consuming service can use to call an app in speci
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ID|guid||
-|properties|[keyValue](keyvalue.md) collection||
-|type|string||
+|Id|guid|*TODO*|
+|properties|[keyValue](keyvalue.md) collection|*TODO*|
+|type|string|*TODO*|
 
 ## JSON representation
 
