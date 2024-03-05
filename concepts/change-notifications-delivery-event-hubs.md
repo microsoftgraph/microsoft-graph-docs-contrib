@@ -149,7 +149,7 @@ The main difference during subscription creation is the **notificationUrl**. You
 
 Events are now delivered to your application by Event Hubs. For details, see [receiving events](/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) in the Event Hubs documentation.
 
-Before you can receive the notifications in your application, you need to create another shared access policy with a "Listen" permission and obtain the connection string, similar to the steps listed in [Configuring the Azure Event Hubs](#configuring-the-azure-event-hub).
+Before you can receive the notifications in your application, you need to create another shared access policy with a "Listen" permission and obtain the connection string, similar to the steps listed in [Configuring the Azure Event Hubs](#configuring-the-event-hub).
 
 > **Note:** Create a separate policy for the application that listens to Event Hubs messages instead of reusing the same connection string you set in Azure KeyVault. This ensures that each component of the solution has only the permissions it needs and follows the least permissions security principle.
 
