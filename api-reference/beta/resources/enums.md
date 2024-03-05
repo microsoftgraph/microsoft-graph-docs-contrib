@@ -1817,6 +1817,14 @@ Namespace: microsoft.graph
 |system
 |unknownFutureValue
 
+### windowsSettingType values 
+
+| Member             |
+| :----------------- |
+| roaming            |
+| backup             |
+| unknownFutureValue |
+
 ### workforceIntegrationEncryptionProtocol values
 
 | Member
