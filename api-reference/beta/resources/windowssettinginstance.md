@@ -3,7 +3,7 @@ title: "windowsSettingInstance resource type"
 description: "Represents a setting instance from the Windows operating system."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "cross-device-experiences"
+ms.prod: "project-rome"
 doc_type: resourcePageType
 ---
 
