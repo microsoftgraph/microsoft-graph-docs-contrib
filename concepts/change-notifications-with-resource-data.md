@@ -4,6 +4,7 @@ description: "Microsoft Graph uses a webhook mechanism to deliver change notific
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
+ms.topic: conceptual
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.date: 06/23/2023
@@ -14,7 +15,7 @@ ms.date: 06/23/2023
 
 Microsoft Graph allows apps to subscribe to and receive change notifications for resources through [different delivery channels](./change-notifications-overview.md#receiving-change-notifications). You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Change notifications that include the resource change data are called rich notifications. Your app can use rich notifications to run your business logic without having to make a separate API call to fetch the changed resource.
 
-This article will guide you through the process for setting up rich notifications in your application.
+This article guides you through the process for setting up rich notifications in your application.
 
 ## Supported resources
 
@@ -22,7 +23,7 @@ This article will guide you through the process for setting up rich notification
 
 ## Resource data in notification payload
 
-In general, this type of change notifications include the following resource data in the payload:
+In general, this type of change notifications includes the following resource data in the payload:
 
 - ID and type of the changed resource instance, returned in the **resourceData** property.
 - All the property values of that resource instance, encrypted as specified in the subscription, returned in the **encryptedContent** property.
@@ -30,9 +31,9 @@ In general, this type of change notifications include the following resource dat
 
 ## Creating a subscription
 
-Rich notifications are setup in the same way as [basic change notifications](/graph/api/subscription-post-subscriptions).
+Rich notifications are set up in the same way as [basic change notifications](/graph/api/subscription-post-subscriptions).
 
-For security, Microsoft Graph will encrypt the resource data returned in a rich notification.  You must provide a public encryption key as part of creating the subscription. Details for creating and managing encryption keys are [here](#decrypting-resource-data-from-change-notifications)
+For security, Microsoft Graph encrypts the resource data returned in a rich notification. You must provide a public encryption key as part of creating the subscription. For more information on creating and managing encryption keys, see [Decrypting resource data from change notifications](#decrypting-resource-data-from-change-notifications).
 
 To create a subscription that includes rich notifications, you **must** specify the following properties: 
 
@@ -42,7 +43,7 @@ To create a subscription that includes rich notifications, you **must** specify 
 
 Keep the following in mind:
 
-- Validate both endpoints as described in [Notification endpoint validation](change-notifications-delivery-webhooks.md#notificationurl-validation). If you choose to use the same URL for both endpoints, you will receive and respond to two validation requests.
+- Validate both endpoints as described in [Notification endpoint validation](change-notifications-delivery-webhooks.md#notificationurl-validation). If you choose to use the same URL for both endpoints, you receive and should respond to two validation requests.
 
 ### Subscription request example
 
@@ -82,15 +83,15 @@ Content-Type: application/json
 
 ## Subscription lifecycle notifications
 
-Certain events can interfere with change notification flow in an existing subscription. Subscription lifecycle notifications inform you actions to take in order to maintain an uninterrupted flow. Unlike a resource change notification which informs a change to a resource instance, a lifecycle notification is about the subscription itself, and its current state in the lifecycle.
+Certain events can interfere with change notification flow in an existing subscription. Subscription lifecycle notifications inform you actions to take in order to maintain an uninterrupted flow. Unlike a resource change notification that informs a change to a resource instance, a lifecycle notification is about the subscription itself, and its current state in the lifecycle.
 
-For more information about how to receive and respond to lifecycle notifications, see [Reduce missing subscriptions and change notifications)](change-notifications-lifecycle-events.md)
+For more information about how to receive and respond to lifecycle notifications, see [Reduce missing subscriptions and change notifications](change-notifications-lifecycle-events.md).
 
 ## Validating the authenticity of notifications
 
 Apps often run business logic based on resource data included in change notifications. Verifying the authenticity of each change notification first is important. Otherwise, a third party can spoof your app with false change notifications and make it run its business logic incorrectly, and this can lead to a security incident.
 
-For basic change notifications that do not contain resource data, simply validate them based on the **clientState** value as described in [Processing the change notification](change-notifications-delivery-webhooks.md#processing-the-change-notification). This is acceptable, as you can make subsequent trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. 
+For basic change notifications that don't contain resource data, simply validate them based on the **clientState** value as described in [Processing the change notification](change-notifications-delivery-webhooks.md#processing-the-change-notification). This is acceptable, as you can make subsequent trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. 
 
 For change notifications that deliver resource data, perform a more thorough validation before processing the data.
 
@@ -102,7 +103,7 @@ In this section:
 
 ### Validation tokens in the change notification
 
-A change notification with resource data contains an additional property, **validationTokens**, which contains an array of [JSON Web Tokens](https://datatracker.ietf.org/doc/html/rfc7519) (JWT) generated by Microsoft Graph. Microsoft Graph generates a single token for each distinct app and tenant pair for whom there is an item in the **value** array. Keep in mind that change notifications may contain a mix of items for various apps and tenants that subscribed using the same **notificationUrl**.
+A change notification with resource data contains an additional property, **validationTokens**, which contains an array of [JSON Web Tokens](https://datatracker.ietf.org/doc/html/rfc7519) (JWT) generated by Microsoft Graph. Microsoft Graph generates a single token for each distinct app and tenant pair for whom there's an item in the **value** array. Keep in mind that change notifications might contain a mix of items for various apps and tenants that subscribed using the same **notificationUrl**.
 
 > **Note:** If you're setting up [change notifications delivered through Azure Event Hubs](change-notifications-delivery.md), Microsoft Graph will not send the validation tokens. Microsoft Graph does not need to validate the **notificationUrl**.
 
@@ -141,14 +142,14 @@ In particular, perform validation on every JWT token in the **validationTokens**
 
 Use the following steps to validate tokens and apps that generate tokens:
 
-1. Validate that the token has not expired.
+1. Validate that the token hasn't expired.
 
-2. Validate the token has not been tampered with and was issued by the expected authority, Microsoft identity platform:
+2. Validate the token hasn't been tampered with and was issued by the expected authority, Microsoft identity platform:
 
-    - Obtain the signing keys from the common configuration endpoint: `https://login.microsoftonline.com/common/.well-known/openid-configuration`. This configuration is cached by your app for a period of time. Be aware that the configuration is updated frequently as signing keys are rotated daily.
+    - Obtain the signing keys from the common configuration endpoint: `https://login.microsoftonline.com/common/.well-known/openid-configuration`. This configuration is cached by your app for some time. Be aware that the configuration is updated frequently as signing keys are rotated daily.
     - Verify the signature of the JWT token using those keys.
 
-    Do not accept tokens issued by any other authority.
+    Don't accept tokens issued by any other authority.
 
 3. Validate that the token was issued for your app that is subscribing to change notifications.
 
@@ -159,7 +160,7 @@ Use the following steps to validate tokens and apps that generate tokens:
 4. **Critical**: Validate that the app that generated the token represents the Microsoft Graph change notification publisher. 
 
     - Check that the **appid** property in the token matches the expected value of `0bf30f3b-4a52-48df-9a82-234910c4a086`.
-    - This ensures that change notifications are not sent by a different app that is not Microsoft Graph.
+    - This ensures that change notifications aren't sent by a different app that isn't Microsoft Graph.
 
 ### Example JWT token
 
@@ -242,7 +243,7 @@ private boolean IsValidationTokenValid(String[] appIds, String tenantId, String 
 }
 ```
 
-For the Java sample to work, you will also need to implement the `JwkKeyResolver`.  
+For the Java sample to work, you'll also need to implement the `JwkKeyResolver`.  
 ```java
 package com.example.restservice;
 
@@ -316,7 +317,7 @@ export function isTokenValid(token, appId, tenantId) {
 
 ## Decrypting resource data from change notifications
 
-The **resourceData** property of a change notification includes only the basic ID and type information of a resource instance. The **encryptedData** property contains the full resource data, encrypted by Microsoft Graph using the public key provided in the subscription. The property also contains values required for verification and decryption. This is done to increase the security of customer data accessed via change notifications. It is your responsibility to secure the private key to ensure that customer data cannot be decrypted by a third party, even if they manage to intercept the original change notifications.
+The **resourceData** property of a change notification includes only the basic ID and type information of a resource instance. The **encryptedData** property contains the full resource data, encrypted by Microsoft Graph using the public key provided in the subscription. The property also contains values required for verification and decryption. This is done to increase the security of customer data accessed via change notifications. It is your responsibility to secure the private key to ensure that customer data can't be decrypted by a third party, even if they manage to intercept the original change notifications.
 
 In this section:
 
@@ -328,11 +329,11 @@ In this section:
 
 1. Obtain a certificate with a pair of asymmetric keys.
 
-    - You can self-sign the certificate, since Microsoft Graph does not verify the certificate issuer, and uses the public key for only encryption.
+    - You can self-sign the certificate, since Microsoft Graph doesn't verify the certificate issuer, and uses the public key for only encryption.
     - Use [Azure Key Vault](/azure/key-vault/key-vault-whatis) as the solution to create, rotate, and securely manage certificates. Make sure the keys satisfy the following criteria:
 
         - The key must be of type `RSA`
-        - The key size must be between 2048 and 4096 bits
+        - The key size must be between 2,048 bits and 4,096 bits
 
 2. Export the certificate in base64-encoded X.509 format, and **include only the public key**.
 
@@ -357,7 +358,7 @@ To minimize the risk of a private key becoming compromised, periodically change 
     - Or, enumerate all subscriptions and provide the key. Use the [PATCH operation on the subscription](/graph/api/subscription-update) and update the **encryptionCertificate** and **encryptionCertificateId** properties.
 
 3. Keep in mind the following:
-    - For a period of time, the old certificate may still be used for encryption. Your app must have access to both old and new certificates to be able to decrypt content.
+    - For some time, the old certificate may still be used for encryption. Your app must have access to both old and new certificates to be able to decrypt content.
     - Use the **encryptionCertificateId** property in each change notification to identify the correct key to use.
     - Discard of the old certificate only when you have seen no recent change notifications referencing it.
 
@@ -381,7 +382,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 
 4. Use the symmetric key to calculate the HMAC-SHA256 signature of the value in **data**.
   
-    Compare it to the value in **dataSignature**. If they do not match, assume the payload has been tampered with and do not decrypt it.
+    Compare it to the value in **dataSignature**. If they don't match, assume the payload has been tampered with and don't decrypt it.
 
 5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8&preserve-view=true)) to decrypt the content in **data**.
 
