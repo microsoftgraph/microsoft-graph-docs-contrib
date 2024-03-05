@@ -154,8 +154,6 @@ The following example uses the ES6 modules, the MSAL2 Provider initialized in HT
 <mgt-login></mgt-login>
 ```
 
----
-
 ## Test your app
 
 To test your app, MSAL requires the page to be hosted in a web server for the authentication redirects.
@@ -231,8 +229,6 @@ If you're using the toolkit from a CDN, you need to access JavaScript functions 
   </body>
 </html>
 ```
-
----
 
 ## Next Steps
 
