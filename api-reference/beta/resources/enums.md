@@ -4293,6 +4293,18 @@ Possible values for user account types (group membership), per Windows definitio
 |tenant|
 |unknownFutureValue|
 
+### rootDomains values
+
+| Member|
+|:---|
+|none|
+|all|
+|allFederated|
+|allManaged|
+|enumerated|
+|allManagedAndEnumeratedFederated|
+|unknownFutureValue|
+
 ### allowedRolePrincipalTypes values
 
 |Member|
