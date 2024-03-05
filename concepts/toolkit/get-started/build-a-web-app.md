@@ -162,19 +162,20 @@ If you're just getting started and want to play around, you can use [Live Server
 
 You can detect when a user has successfully signed in and display specific components accordingly. For example, display the agenda component if the user has signed in. Otherwise, display the sign in interface.
 
-To properly inspect the user's sign in state, add an event handler to the `providerUpdated` event using the `Providers.onProviderUpdated` function. In the handler, check the provider state stored on the `Providers.globalProvider.state` property.
+The package `mgt-element` provides the `isSignedIn` utility function that you can call to ascertain if a user is signed in.
 
 # [JavaScript](#tab/JavaScript)
 
 If you're using the toolkit via the npm packages, you can import the `Provider` and `ProviderState` from `@microsoft/mgt-element`.
 
 ```javascript
-import { Providers, ProviderState } from "@microsoft/mgt-element";
+import { Providers } from "@microsoft/mgt-element";
 import {
   registerMgtLoginComponent,
   registerMgtAgendaComponent,
 } from "@microsoft/mgt-components";
 import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
+import { isSignedIn } from "@microsoft/mgt-element";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",
@@ -184,7 +185,7 @@ registerMgtLoginComponent();
 registerMgtAgendaComponent();
 
 const loadAgenda = () => {
-  if (Providers.globalProvider.state === ProviderState.SignedIn) {
+  if (isSignedIn()) {
     document.getElementById("main").innerHTML = "<mgt-agenda></mgt-agenda>";
   }
 };
