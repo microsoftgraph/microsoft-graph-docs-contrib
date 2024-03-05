@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, Training campaigns are a faster, more direct way to provide security training to users. Instead of creating and launching simulated phishing attacks that eventually lead to training, you can create and assign Training campaigns directly to users.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, training campaigns are a fast, direct way to provide security training to users. Instead of creating and launching simulated phishing attacks that eventually lead to training, you can create and assign training campaigns directly to users.
 
-A Training campaign contains one or more built-in Training modules that you select. Currently, there are over 70 Training modules to select from. For more information about Training modules, see Training modules for Training campaigns in Attack simulation training.
+A training campaign contains one or more built-in training modules that you select. Currently, there are over 70 training modules to select from. For more information about training modules, see rtaining modules for Training campaigns in Attack simulation training.
 
 
 Inherits from [entity](../resources/entity.md).

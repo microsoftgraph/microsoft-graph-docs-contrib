@@ -1,6 +1,6 @@
 ---
 title: "trainingCampaignReport resource type"
-description: "Represents a report of a training campaign, including an overview and users who participated in the campaign."
+description: "Represents a report of a training campaign, including an overview and a list of the users who participated in the campaign."
 author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a report of a training campaign, including an overview and users who participated in the campaign.
+Represents a report of a training campaign, including an overview and a list of the users who participated in the campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|campaignUsers|[userSimulationDetails](../resources/usersimulationdetails.md) collection|Overview of an attack simulation and training campaign.|
+|campaignUsers|[userSimulationDetails](../resources/usersimulationdetails.md) collection|The overview of the attack simulation and training campaign.|
 |overview|[trainingCampaignReportOverview](../resources/trainingcampaignreportoverview.md)|The tenant users and their online actions in a training campaign.|
 
 ## Relationships

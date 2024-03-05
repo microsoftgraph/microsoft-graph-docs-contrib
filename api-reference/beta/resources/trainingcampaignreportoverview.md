@@ -18,9 +18,9 @@ Represents an overview report of a training campaign.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|trainingModuleCompletion|[trainingEventsContent](../resources/trainingeventscontent.md)| Aggregate data of training completion|
-|trainingNotificationDeliveryStatus|[trainingNotificationDelivery](../resources/trainingnotificationdelivery.md)|Aggregate data of training mail delivery over the course of the training campaign|
-|userCompletionStatus|[userTrainingCompletionSummary](../resources/usertrainingcompletionsummary.md)|Aggregate data of users training progress|
+|trainingModuleCompletion|[trainingEventsContent](../resources/trainingeventscontent.md)|Aggregate data of training completion.|
+|trainingNotificationDeliveryStatus|[trainingNotificationDelivery](../resources/trainingnotificationdelivery.md)|Aggregate data of training mail delivery over the course of the training campaign.|
+|userCompletionStatus|[userTrainingCompletionSummary](../resources/usertrainingcompletionsummary.md)|Aggregate data of users training progress.|
 
 ## Relationships
 None.

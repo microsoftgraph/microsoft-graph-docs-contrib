@@ -65,7 +65,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description |
 |:---|:---|
-|unknown| The simulation status is not defined. |
+|unknown| The simulation status isn't defined. |
 |draft| The simulation is in draft mode. |
 |running| The simulation is running. |
 |scheduled| The simulation is scheduled. |
@@ -103,7 +103,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description |
 |:---|:---|
-|unknown| The simulation content status is not defined. |
+|unknown| The simulation content status isn't defined. |
 |draft| The simulation content status is in draft state. |
 |ready| The simulation content status is in ready state. |
 |archive| The simulation content status is archive state. |
@@ -114,7 +114,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description |
 |:---|:---|
-|unknown| The simulation content source is not defined. |
+|unknown| The simulation content source isn't defined. |
 |global| The simulation content source is global. |
 |tenant| The simulation content source is tenant. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
@@ -168,4 +168,4 @@ The following JSON representation shows the resource type.
 ## Related content
 
 - [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)
-- [Get started using attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).
+- [Get started using attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations)
