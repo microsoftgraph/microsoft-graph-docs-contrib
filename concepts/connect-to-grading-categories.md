@@ -20,7 +20,7 @@ Grading categories are defined on the class's settings. Each assignment that sho
 
 Get the list of classes from your education tenant and locate the class where you want to set grading categories.
 
-- [Get Class](/graph/api/educationclass-get): Take the classid from the previous request and use it to get the information for that specific class.
+- [List Classes](/graph/api/educationclass-list): List the classes, find the one you want, and copy the class's Id to use below.
 
 ```http
 GET https://graph.microsoft.com/beta/education/classes
