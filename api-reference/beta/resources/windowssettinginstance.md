@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Set by the server. DateTime in UTC when the object was created on the server.|
+|createdDateTime|DateTimeOffset|Set by the server. Represents the dateTime in UTC when the object was created on the server.|
 |expirationDateTime|DateTimeOffset|Set by the server. The object expires at the specified dateTime in UTC, making it unavailable after that time.|
 |id|String|The unique identifier of the object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Set by the server if not provided in the request from the Windows client device.Refers to the user's Windows device that modified the object at the specified dateTime in UTC.|
