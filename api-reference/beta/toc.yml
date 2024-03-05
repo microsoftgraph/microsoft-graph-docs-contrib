@@ -1387,7 +1387,7 @@ items:
           - name: eDiscovery (preview)
             items:
               - name: Overview
-                href: resources/ediscovery-eDiscoveryapioverview.md
+                href: resources/ediscovery-ediscoveryapioverview.md
               - name: eDiscovery case
                 href: resources/ediscovery-case.md
                 items:
