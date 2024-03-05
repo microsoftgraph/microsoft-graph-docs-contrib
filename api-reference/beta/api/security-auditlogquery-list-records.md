@@ -15,6 +15,8 @@ Namespace: microsoft.graph.security
 
 Get a list of the [auditLogRecord](../resources/security-auditlogrecord.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
