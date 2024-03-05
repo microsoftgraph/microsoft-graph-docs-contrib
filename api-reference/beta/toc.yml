@@ -1601,8 +1601,13 @@ items:
                     href: api/projectrome-delete-historyitem.md
           - name: Roaming data
             items:
-              - name: Cloud clipboard
+              - name: Cloud clipboard root
                 href: resources/cloudclipboardroot.md
+                items:
+                  - name: List
+                    href: api/cloudclipboardroot-list-items.md
+              - name: Cloud clipboard item
+                href: resources/cloudclipboarditem.md
                 items:
                   - name: List
                     href: api/cloudclipboardroot-list-items.md
