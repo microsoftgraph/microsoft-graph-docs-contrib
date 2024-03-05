@@ -13,7 +13,7 @@ $requestBody = new InferenceClassificationOverride();
 $requestBody->setClassifyAs(new InferenceClassificationType('focused'));
 $senderEmailAddress = new EmailAddress();
 $senderEmailAddress->setName('Samantha Booth');
-$senderEmailAddress->setAddress('samanthab@adatum.onmicrosoft.com');
+$senderEmailAddress->setAddress('samanthab@contoso.com');
 $requestBody->setSenderEmailAddress($senderEmailAddress);
 
 $result = $graphServiceClient->me()->inferenceClassification()->overrides()->post($requestBody)->wait();

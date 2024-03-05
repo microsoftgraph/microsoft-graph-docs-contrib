@@ -17,7 +17,6 @@ $responseStatus->setResponse(new ResponseType('none'));
 $responseStatus->setTime(new \DateTime('2016-10-19T10:37:00Z'));
 $requestBody->setResponseStatus($responseStatus);
 $requestBody->setRecurrence(null);
-$requestBody->setUid('iCalUId-value');
 $requestBody->setReminderMinutesBeforeStart(99);
 $requestBody->setIsOnlineMeeting(true);
 $requestBody->setOnlineMeetingProvider(new OnlineMeetingProviderType('teamsForBusiness'));

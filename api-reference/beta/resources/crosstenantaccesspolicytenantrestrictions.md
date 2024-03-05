@@ -53,6 +53,6 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Set up tenant restrictions V2 (Preview)](/azure/active-directory/external-identities/tenant-restrictions-v2)

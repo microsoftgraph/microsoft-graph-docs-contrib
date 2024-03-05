@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the device recommendation reports for Cloud PCs, such as the usage category report. The usage category report categorizes a Cloud PC as `Undersized`, `Oversized`, `Rightsized`, or `Underutilized`, and also provides the recommended SKU when the Cloud PC isn't `Rightsized`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -192,7 +194,7 @@ Content-Type: application/octet-stream
     [
       "4db3619f-be92-42a7-8c74-43fab185da6f",
       "1MoveHost",
-      "connie_1@cpccontoso.onmicrosoft.com",
+      "connie_1@contoso.com",
       "Rightsized",
       {
         "NumvCPUs": 2,
@@ -209,7 +211,7 @@ Content-Type: application/octet-stream
     [
       "f2ee066c-f63e-4acd-a41e-e348db71cb4d",
       "AXFBF",
-      "connie_2@cpccontoso.onmicrosoft.com",
+      "connie_2@contoso.com",
       "Rightsized",
       {
         "NumvCPUs": 2,

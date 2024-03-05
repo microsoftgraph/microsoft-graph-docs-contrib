@@ -115,7 +115,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - To get bots installed in a team, see example 2 in [List apps in team](team-list-installedapps.md).
 - To get bots installed in a chat, see example 2 in [List apps in chat](chat-list-installedapps.md).

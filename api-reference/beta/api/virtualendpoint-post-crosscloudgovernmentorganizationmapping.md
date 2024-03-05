@@ -62,10 +62,6 @@ X-MS-CloudPC-USGovCloudTenantAADToken: {token}
 {}
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-cloudpccrosscloudgovernmentorganizationmapping-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-cloudpccrosscloudgovernmentorganizationmapping-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

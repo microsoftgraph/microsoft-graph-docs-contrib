@@ -247,7 +247,7 @@ A notification is removed from the user notification store only if it is expired
 }
 ```
 
-## See also
+## Related content
 
 - [API reference](/windows/project-rome/notifications/api-reference-for-ios/) for the full set of APIs related to notification features in the SDK. 
 - [Client-side sample](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications) for Android apps.

@@ -28,7 +28,7 @@ In general, subscription operations require read permission to the resource. For
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [list][], [message][], [todoTask][]                                        |
 | Application                            | [alert][], [callRecord][], [callRecording][], [callTranscript][], [channel][], [chatMessage][], [contact][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [printer][], [printTaskDefinition][], [team][], [user][]|
 
-## See also
+## Related content
 
 - [subscription resource type](./subscription.md)
 - [Lifecycle notifications](/graph/change-notifications-lifecycle-events)

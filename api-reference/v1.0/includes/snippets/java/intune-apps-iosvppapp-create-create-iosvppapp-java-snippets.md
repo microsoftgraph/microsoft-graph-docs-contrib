@@ -4,42 +4,48 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IosVppApp mobileApp = new IosVppApp();
-mobileApp.displayName = "Display Name value";
-mobileApp.description = "Description value";
-mobileApp.publisher = "Publisher value";
+mobileApp.setOdataType("#microsoft.graph.iosVppApp");
+mobileApp.setDisplayName("Display Name value");
+mobileApp.setDescription("Description value");
+mobileApp.setPublisher("Publisher value");
 MimeContent largeIcon = new MimeContent();
-largeIcon.type = "Type value";
-largeIcon.value = Base64.getDecoder().decode("dmFsdWU=");
-mobileApp.largeIcon = largeIcon;
-mobileApp.isFeatured = true;
-mobileApp.privacyInformationUrl = "https://example.com/privacyInformationUrl/";
-mobileApp.informationUrl = "https://example.com/informationUrl/";
-mobileApp.owner = "Owner value";
-mobileApp.developer = "Developer value";
-mobileApp.notes = "Notes value";
-mobileApp.publishingState = MobileAppPublishingState.PROCESSING;
-mobileApp.usedLicenseCount = 0;
-mobileApp.totalLicenseCount = 1;
-mobileApp.releaseDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T08:01:34.7470482+00:00");
-mobileApp.appStoreUrl = "https://example.com/appStoreUrl/";
+largeIcon.setOdataType("microsoft.graph.mimeContent");
+largeIcon.setType("Type value");
+byte[] value = Base64.getDecoder().decode("dmFsdWU=");
+largeIcon.setValue(value);
+mobileApp.setLargeIcon(largeIcon);
+mobileApp.setIsFeatured(true);
+mobileApp.setPrivacyInformationUrl("https://example.com/privacyInformationUrl/");
+mobileApp.setInformationUrl("https://example.com/informationUrl/");
+mobileApp.setOwner("Owner value");
+mobileApp.setDeveloper("Developer value");
+mobileApp.setNotes("Notes value");
+mobileApp.setPublishingState(MobileAppPublishingState.Processing);
+mobileApp.setUsedLicenseCount(0);
+mobileApp.setTotalLicenseCount(1);
+OffsetDateTime releaseDateTime = OffsetDateTime.parse("2017-01-01T00:01:34.7470482-08:00");
+mobileApp.setReleaseDateTime(releaseDateTime);
+mobileApp.setAppStoreUrl("https://example.com/appStoreUrl/");
 VppLicensingType licensingType = new VppLicensingType();
-licensingType.supportsUserLicensing = true;
-licensingType.supportsDeviceLicensing = true;
-mobileApp.licensingType = licensingType;
+licensingType.setOdataType("microsoft.graph.vppLicensingType");
+licensingType.setSupportsUserLicensing(true);
+licensingType.setSupportsDeviceLicensing(true);
+mobileApp.setLicensingType(licensingType);
 IosDeviceType applicableDeviceType = new IosDeviceType();
-applicableDeviceType.iPad = true;
-applicableDeviceType.iPhoneAndIPod = true;
-mobileApp.applicableDeviceType = applicableDeviceType;
-mobileApp.vppTokenOrganizationName = "Vpp Token Organization Name value";
-mobileApp.vppTokenAccountType = VppTokenAccountType.EDUCATION;
-mobileApp.vppTokenAppleId = "Vpp Token Apple Id value";
-mobileApp.bundleId = "Bundle Id value";
+applicableDeviceType.setOdataType("microsoft.graph.iosDeviceType");
+applicableDeviceType.setIPad(true);
+applicableDeviceType.setIPhoneAndIPod(true);
+mobileApp.setApplicableDeviceType(applicableDeviceType);
+mobileApp.setVppTokenOrganizationName("Vpp Token Organization Name value");
+mobileApp.setVppTokenAccountType(VppTokenAccountType.Education);
+mobileApp.setVppTokenAppleId("Vpp Token Apple Id value");
+mobileApp.setBundleId("Bundle Id value");
+MobileApp result = graphClient.deviceAppManagement().mobileApps().post(mobileApp);
 
-graphClient.deviceAppManagement().mobileApps()
-	.buildRequest()
-	.post(mobileApp);
 
 ```

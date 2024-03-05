@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Manifest manifest = graphClient.reports().partners().billing().manifests("6fe687d7-1e0f-4bd6-9091-4672691f64bc")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.partners.billing.Manifest result = graphClient.reports().partners().billing().manifests().byManifestId("{manifest-id}").get();
+
 
 ```

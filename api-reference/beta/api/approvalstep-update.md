@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Apply approve or deny decision on an [approvalStep](../resources/approvalStep.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -107,6 +107,10 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/patch-approvalstep-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/patch-approvalstep-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

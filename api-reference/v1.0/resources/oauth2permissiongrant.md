@@ -68,7 +68,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Grant or revoke delegated permissions using Microsoft Graph](/graph/permissions-grant-via-msgraph?pivots=grant-delegated-permissions)
 

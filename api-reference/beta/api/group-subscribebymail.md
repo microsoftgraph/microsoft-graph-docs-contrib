@@ -2,7 +2,8 @@
 title: "group: subscribeByMail"
 description: "Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

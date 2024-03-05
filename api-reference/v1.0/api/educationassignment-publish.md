@@ -158,7 +158,7 @@ HTTP/1.1 200 Ok
 }
 ```
 
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 

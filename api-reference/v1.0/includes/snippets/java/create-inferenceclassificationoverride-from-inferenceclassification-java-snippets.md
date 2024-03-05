@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 InferenceClassificationOverride inferenceClassificationOverride = new InferenceClassificationOverride();
-inferenceClassificationOverride.classifyAs = InferenceClassificationType.FOCUSED;
+inferenceClassificationOverride.setClassifyAs(InferenceClassificationType.Focused);
 EmailAddress senderEmailAddress = new EmailAddress();
-senderEmailAddress.name = "Samantha Booth";
-senderEmailAddress.address = "samanthab@adatum.onmicrosoft.com";
-inferenceClassificationOverride.senderEmailAddress = senderEmailAddress;
+senderEmailAddress.setName("Samantha Booth");
+senderEmailAddress.setAddress("samanthab@contoso.com");
+inferenceClassificationOverride.setSenderEmailAddress(senderEmailAddress);
+InferenceClassificationOverride result = graphClient.me().inferenceClassification().overrides().post(inferenceClassificationOverride);
 
-graphClient.me().inferenceClassification().overrides()
-	.buildRequest()
-	.post(inferenceClassificationOverride);
 
 ```

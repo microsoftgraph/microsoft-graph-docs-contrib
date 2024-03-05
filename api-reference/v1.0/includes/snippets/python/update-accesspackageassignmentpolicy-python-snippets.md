@@ -4,7 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph.generated.models.subject_set import SubjectSet
+from msgraph.generated.models.expiration_pattern import ExpirationPattern
+from msgraph.generated.models.access_package_assignment_requestor_settings import AccessPackageAssignmentRequestorSettings
+from msgraph.generated.models.access_package_assignment_approval_settings import AccessPackageAssignmentApprovalSettings
+from msgraph.generated.models.access_package_approval_stage import AccessPackageApprovalStage
+from msgraph.generated.models.requestor_manager import RequestorManager
+from msgraph.generated.models.single_user import SingleUser
+from msgraph.generated.models.access_package import AccessPackage
 
 graph_client = GraphServiceClient(credentials, scopes)
 

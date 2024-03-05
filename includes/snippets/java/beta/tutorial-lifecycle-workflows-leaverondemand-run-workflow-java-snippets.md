@@ -4,23 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<User> subjectsList = new LinkedList<User>();
-User subjects = new User();
-subjects.id = "8930f0c7-cdd7-4885-9260-3b4a8111de5c";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-subjectsList.add(subjects);
-UserCollectionResponse userCollectionResponse = new UserCollectionResponse();
-userCollectionResponse.value = subjectsList;
-UserCollectionPage userCollectionPage = new UserCollectionPage(userCollectionResponse, null);
+com.microsoft.graph.beta.identitygovernance.lifecycleworkflows.workflows.item.microsoftgraphidentitygovernanceactivate.ActivatePostRequestBody activatePostRequestBody = new com.microsoft.graph.beta.identitygovernance.lifecycleworkflows.workflows.item.microsoftgraphidentitygovernanceactivate.ActivatePostRequestBody();
+LinkedList<User> subjects = new LinkedList<User>();
+User user = new User();
+user.setId("8930f0c7-cdd7-4885-9260-3b4a8111de5c");
+subjects.add(user);
+activatePostRequestBody.setSubjects(subjects);
+graphClient.identityGovernance().lifecycleWorkflows().workflows().byWorkflowId("{workflow-id}").microsoftGraphIdentityGovernanceActivate().post(activatePostRequestBody);
 
-graphClient.identityGovernance().lifecycleWorkflows().workflows("368dfba3-2303-4e02-b258-87d742187e1b")
-	.activate(WorkflowActivateParameterSet
-		.newBuilder()
-		.withSubjects(subjectsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -2,6 +2,7 @@
 title: "List ownedObjects"
 description: "Get the list of directory objects that are owned by the user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

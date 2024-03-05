@@ -1,7 +1,8 @@
 ---
 title: "Create groupLifecyclePolicy"
 description: "Creates a new groupLifecyclePolicy."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

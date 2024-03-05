@@ -43,6 +43,6 @@ $phonesArray []= $phonesPhone2;
 $requestBody->setPhones($phonesArray);
 
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->customers()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->customers()->post($requestBody)->wait();
 
 ```

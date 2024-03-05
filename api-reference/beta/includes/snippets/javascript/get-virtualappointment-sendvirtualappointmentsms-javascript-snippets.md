@@ -11,8 +11,17 @@ const options = {
 const client = Client.init(options);
 
 const sendVirtualAppointmentSms = {
-phoneNumbers: [ '+13129224122', '+1242421412'],
-virtualAppointmentSmsType: 'confirmation'
+    attendees: [ 
+        {
+            phoneNumber: '+13129224122',
+            timeZone: 'Pacific Standard Time'
+        },
+        {
+            phoneNumber: '+1242421412',
+            timeZone: 'Eastern Standard Time'
+        }
+    ], 
+    messageType: 'confirmation'
 };
 
 await client.api('/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentSms')

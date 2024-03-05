@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows_phone81_general_configuration import WindowsPhone81GeneralConfiguration
+from msgraph.generated.models.app_list_item import AppListItem
 
 graph_client = GraphServiceClient(credentials, scopes)
 

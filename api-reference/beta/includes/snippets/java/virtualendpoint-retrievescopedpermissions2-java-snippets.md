@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-VirtualEndpointRetrieveScopedPermissionsCollectionPage retrieveScopedPermissions = graphClient.deviceManagement().virtualEndpoint()
-	.retrieveScopedPermissions()
-	.buildRequest()
-	.filter("permission in ('Microsoft.CloudPC/ProvisioningPolicies/Update','Microsoft.CloudPC/ProvisioningPolicies/Create')")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.deviceManagement().virtualEndpoint().retrieveScopedPermissions().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "permission in ('Microsoft.CloudPC/ProvisioningPolicies/Update','Microsoft.CloudPC/ProvisioningPolicies/Create')";
+});
+
 
 ```

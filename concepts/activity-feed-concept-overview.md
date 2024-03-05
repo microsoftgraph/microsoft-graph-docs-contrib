@@ -25,7 +25,7 @@ When activities are rendered in Microsoft experiences such as Windows Timeline, 
 
 Integrating with user activities not only enables users to resume activities in your app seamlessly, it means tapping into a growing set of Microsoft experiences for Windows, iOS, and Android&mdash;experiences designed to drive user productivity and help users engage with your app on all devices. Using Microsoft Graph, you can integrate with user activities just once and reach hundreds of millions of consumers, and tens of millions of customers in organizations who use Windows as well as Microsoft products for iOS and Android devices.
 
-## See also
+## Related content
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
 - [Use the activity feed API to resume a user's activity across devices](/graph/api/resources/activity-feed-api-overview)

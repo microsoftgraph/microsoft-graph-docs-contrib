@@ -145,7 +145,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 For details about how errors are returned, see [Error responses][error-response].
 

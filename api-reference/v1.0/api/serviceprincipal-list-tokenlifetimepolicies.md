@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 List the [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) objects that are assigned to a [servicePrincipal](../resources/serviceprincipal.md). Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to a service principal.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -101,7 +103,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/2a8f9e7a-af01-413a-9592-c
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

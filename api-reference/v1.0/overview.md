@@ -2,7 +2,7 @@
 title: "Microsoft Graph REST API v1.0 endpoint reference"
 description: "Documentation for the Microsoft Graph REST API v1.0 endpoint, which includes APIs in general availability (GA) status. Features common use cases in v1.0."
 ms.localizationpriority: high
-author: "angelgolfer-ms"
+author: "lauragra"
 ms.prod: "non-product-specific"
 doc_type: conceptualPageType
 ms.topic: overview
@@ -60,12 +60,13 @@ https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 For details, see [Use the Microsoft Graph API](/graph/use-the-api).
 
 ## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) in the v1.0 endpoint.
+Find out [what's new](/graph/whats-new-overview) in the v1.0 endpoint.
 
-Explore the [changelog](https://developer.microsoft.com/en-us/graph/changelog) for more details about changes to Microsoft Graph APIs.
+Explore the [API changelog](https://developer.microsoft.com/en-us/graph/changelog) for more details about changes to Microsoft Graph APIs.
 
-## Connect with us
+## Related content
 
-Are there APIs or features that you'd like to see in Microsoft Graph? Post new feature requests on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
-
-Have feedback for existing Microsoft Graph APIs? Connect with us on [GitHub](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/issues).
+- [Overview of Microsoft Graph](/graph/overview)
+- [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
+- [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start)
+- [Use Microsoft Graph SDKs](/graph/sdks/sdks-overview)

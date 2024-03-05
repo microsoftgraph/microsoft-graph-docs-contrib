@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta booking-businesses customers create --booking-business-id {bookingBusiness-id} --body '{\
+mgc-beta solutions booking-businesses customers create --booking-business-id {bookingBusiness-id} --body '{\
     "displayName": "Joni Sherman",\
     "emailAddress": "jonis@relecloud.com",\
     "addresses": [\

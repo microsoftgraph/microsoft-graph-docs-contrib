@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unenroll_assets_post_request_body import UnenrollAssetsPostRequestBody
+from msgraph.generated.models.updatable_asset import UpdatableAsset
+from msgraph.generated.models.azure_a_d_device import AzureADDevice
 
 graph_client = GraphServiceClient(credentials, scopes)
 

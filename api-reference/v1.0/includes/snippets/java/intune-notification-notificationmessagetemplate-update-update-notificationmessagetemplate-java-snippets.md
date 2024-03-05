@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 NotificationMessageTemplate notificationMessageTemplate = new NotificationMessageTemplate();
-notificationMessageTemplate.displayName = "Display Name value";
-notificationMessageTemplate.defaultLocale = "Default Locale value";
-notificationMessageTemplate.brandingOptions = EnumSet.of(NotificationTemplateBrandingOptions.INCLUDE_COMPANY_LOGO);
-LinkedList<String> roleScopeTagIdsList = new LinkedList<String>();
-roleScopeTagIdsList.add("Role Scope Tag Ids value");
-notificationMessageTemplate.roleScopeTagIds = roleScopeTagIdsList;
+notificationMessageTemplate.setOdataType("#microsoft.graph.notificationMessageTemplate");
+notificationMessageTemplate.setDisplayName("Display Name value");
+notificationMessageTemplate.setDefaultLocale("Default Locale value");
+notificationMessageTemplate.setBrandingOptions(EnumSet.of(NotificationTemplateBrandingOptions.IncludeCompanyLogo));
+LinkedList<String> roleScopeTagIds = new LinkedList<String>();
+roleScopeTagIds.add("Role Scope Tag Ids value");
+notificationMessageTemplate.setRoleScopeTagIds(roleScopeTagIds);
+NotificationMessageTemplate result = graphClient.deviceManagement().notificationMessageTemplates().byNotificationMessageTemplateId("{notificationMessageTemplate-id}").patch(notificationMessageTemplate);
 
-graphClient.deviceManagement().notificationMessageTemplates("{notificationMessageTemplateId}")
-	.buildRequest()
-	.patch(notificationMessageTemplate);
 
 ```

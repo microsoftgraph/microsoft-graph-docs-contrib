@@ -133,7 +133,7 @@ Content-type: application/json
     "displayName": "Niklas Lang",
     "visibleHistoryStartDateTime": "2022-05-02T12:49:36.881Z",
     "userId": "8c0c0a2a-c679-401e-adc3-a45b548889a6",
-    "email": "Niklas.Lang@BechtleDAI.onmicrosoft.com",
+    "email": "Niklas.Lang@contoso.com",
     "tenantId": "0f81b1ea-b857-4a9c-99eb-e998d52046d5"
 }
 ```

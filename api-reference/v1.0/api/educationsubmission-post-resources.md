@@ -665,7 +665,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 * [Upload files for education assignments and submissions](/graph/education-upload-resource-overview)

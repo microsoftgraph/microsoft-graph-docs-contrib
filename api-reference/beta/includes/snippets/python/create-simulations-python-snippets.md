@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.simulation import Simulation
+from msgraph.generated.models.email_identity import EmailIdentity
+from msgraph.generated.models.address_book_account_target_content import AddressBookAccountTargetContent
+from msgraph.generated.models.training_setting import TrainingSetting
+from msgraph.generated.models.end_user_notification_setting import EndUserNotificationSetting
+from msgraph.generated.models.positive_reinforcement_notification import PositiveReinforcementNotification
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Blocks the managed app user from app check-in.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 To call this API, you must have the Intune Role Permission "Application -> Wipe" and one of the listed permissions for Delegated permission type.  The Intune Role Permission only supports delegated authentication.  Although the API supports Application only permission type, the API call cannot be completed without the Intune Role delegated permission.
 

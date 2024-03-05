@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphbookingbusinesses "github.com/microsoftgraph/msgraph-beta-sdk-go/bookingbusinesses"
+	  graphsolutions "github.com/microsoftgraph/msgraph-beta-sdk-go/solutions"
 	  //other-imports
 )
 
@@ -18,14 +18,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestQuery := "Adventure"
 
-requestParameters := &graphbookingbusinesses.BookingBusinessesRequestBuilderGetQueryParameters{
+requestParameters := &graphsolutions.SolutionsBookingBusinessesRequestBuilderGetQueryParameters{
 	Query: &requestQuery,
 }
-configuration := &graphbookingbusinesses.BookingBusinessesRequestBuilderGetRequestConfiguration{
+configuration := &graphsolutions.SolutionsBookingBusinessesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-bookingBusinesses, err := graphClient.BookingBusinesses().Get(context.Background(), configuration)
+bookingBusinesses, err := graphClient.Solutions().BookingBusinesses().Get(context.Background(), configuration)
 
 
 ```

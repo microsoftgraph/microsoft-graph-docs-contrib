@@ -5,7 +5,6 @@ author: "sourishdeb"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: conceptualPageType
-ms.custom: zt-include
 ---
 
 # Use the Microsoft Graph API to export partner billing data
@@ -27,7 +26,7 @@ To export reconciliation data, the calling principal must be in the partner tena
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -69,9 +68,5 @@ Until you receive the success status, keep polling the [Get operation](../api/pa
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /resources/partners-billing-usageexport-api-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
+  "suppressions": []
 }-->
