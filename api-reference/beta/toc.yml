@@ -1387,7 +1387,7 @@ items:
           - name: eDiscovery (preview)
             items:
               - name: Overview
-                href: resources/ediscovery-eDiscoveryapioverview.md
+                href: resources/ediscovery-ediscoveryapioverview.md
               - name: eDiscovery case
                 href: resources/ediscovery-case.md
                 items:
@@ -1599,6 +1599,22 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Delete a history item
                     href: api/projectrome-delete-historyitem.md
+          - name: Roaming data (preview)
+            items:
+              - name: Windows settings
+                href: resources/windowssetting.md
+                items:
+                  - name: List
+                    href: api/usersettings-list-windows.md
+                  - name: Get
+                    href: api/windowssetting-get.md
+              - name: Windows setting instance                    
+                href: resources/windowssettinginstance.md
+                items:              
+                  - name: List
+                    href: api/windowssetting-list-instances.md
+                  - name: Get
+                    href: api/windowssettinginstance-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:
@@ -13429,6 +13445,16 @@ items:
                         href: api/internaldomainfederation-update.md
                       - name: Delete
                         href: api/internaldomainfederation-delete.md
+                  - name: Federated token validation (preview)
+                    items:
+                    - name: Federated token validation policy
+                      href: resources/federatedtokenvalidationpolicy.md
+                    - name: List
+                      href: api/policyroot-list-federatedtokenvalidationpolicy.md
+                    - name: Get
+                      href: api/federatedtokenvalidationpolicy-get.md
+                    - name: Update
+                      href: api/federatedtokenvalidationpolicy-update.md
               - name: Identity provider (deprecated)
                 items:
                   - name: Identity provider type

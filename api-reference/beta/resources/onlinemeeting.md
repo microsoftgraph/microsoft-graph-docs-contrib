@@ -47,6 +47,7 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 | allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. |
+| chatRestrictions      | [chatrestrictions](../resources/chatrestrictions.md) | Specifies the configuration for meeting chat restrictions.  |
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | allowRecording | Boolean | Indicates whether recording is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
