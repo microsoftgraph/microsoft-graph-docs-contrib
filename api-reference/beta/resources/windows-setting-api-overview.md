@@ -59,7 +59,7 @@ The following JSON representation shows an example of a Windows setting. The ins
 }
 ```
 
-> Warning: 
+> Warning:<br />The structure of the ID of a [**windowsSetting**](../resources/windowssetting.md) is not guaranteed and the caller should not take any dependency on it. The ID should be treated as an opaque string.
 
 ## Windows setting instances
 
