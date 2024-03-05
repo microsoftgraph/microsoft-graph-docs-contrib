@@ -1,6 +1,6 @@
 ---
 title: "analyzedEmail: remediate "
-description: Take move and delete action against a threat.
+description: "Remove a potential threat from end users' mailboxes."
 author: MishraSoumyaMS
 ms.localizationpriority: medium
 ms.prod: security
@@ -42,7 +42,7 @@ POST /security/collaboration/analyzedEmails/remediate
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -63,9 +63,9 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this action returns a 204 No Content response code and a Location header with a link to the tracking information. 
+If successful, this action returns a `204 No Content` response code and a `Location` header with a link to the tracking information. 
 
->**Note:** The response of the action can be tracked in https://security.microsoft.com/action-center/history. Learn more about [Action center](/microsoft-365/security/defender/m365d-action-center?view=o365-worldwide&preserve-view=true)
+>**Note:** The response to the action can be tracked in https://security.microsoft.com/action-center/history. To learn more, see [Use the Action center](/microsoft-365/security/defender/m365d-action-center?view=o365-worldwide&preserve-view=true).
 
 ## Examples
 
