@@ -1,9 +1,10 @@
 ---
 title: Download a file
+author: manikantsinghms
 ms.author: maniksingh
 description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
 ms.localizationpriority: medium
-ms.date: 5/3/2023
+ms.date: 06/03/2024
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -22,7 +23,7 @@ Download the contents of the primary stream (file) of a [driveItem](../resources
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "driveitem_get_content" } -->
-[!INCLUDE [permissions-table](../includes/permissions/driveitem-get-content-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-get-contentstream-permissions.md)]
 
 ## HTTP request
 
@@ -37,6 +38,12 @@ GET /shares/{shareIdOrEncodedSharingUrl}/driveItem/contentStream
 GET /sites/{siteId}/drive/items/{item-id}/contentStream
 GET /users/{userId}/drive/items/{item-id}/contentStream
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Example
 
@@ -87,7 +94,7 @@ GET /me/drive/items/{item-id}/contentStream
 
 ### Response
 
-If request is successful, response will have the file content.
+If request is successful, response will have the file content and http status 200 OK.
 
 <!-- { "blockType": "response" } -->
 
@@ -128,3 +135,15 @@ how errors are returned.
 
 
 [error-response]: /graph/errors
+
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Download the contents of a DriveItem.",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "Items/Download",
+  "suppressions": [
+  ]
+} -->
+
