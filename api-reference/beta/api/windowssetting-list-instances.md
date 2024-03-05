@@ -3,7 +3,7 @@ title: "List Windows setting instances"
 description: "Get a list of windowsSettingInstance objects and their properties."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "cross-device-experiences"
+ms.prod: "project-rome"
 doc_type: apiPageType
 ---
 
