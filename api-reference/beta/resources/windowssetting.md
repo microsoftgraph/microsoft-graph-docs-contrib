@@ -17,7 +17,7 @@ Represents settings from the Windows operating system that are stored in the clo
 
 >Warning: The structure of the ID of a **windowsSetting** is not guaranteed and the caller should not take any dependency on it. The ID should be treated as an opaque string.
 
-There are two types of **windowsSetting**: `roaming` and `backup`. More information, see [windowsSettingType](enums.md#windowssettingtype-values) enum.
+There are two types of **windowsSetting**: `roaming` and `backup`. For more information, see [windowsSettingType](enums.md#windowssettingtype-values) enum.
 
 Inherits from [entity](../resources/entity.md).
 

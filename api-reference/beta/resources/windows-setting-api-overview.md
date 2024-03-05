@@ -93,10 +93,9 @@ The [Get Windows setting instance](../api/windowssettinginstance-get.md) API all
 The *payload* property of a [**windowsSettingInstance**](../resources/windowssettinginstance.md) contains the actual setting value. The *payload* is a string in Base64 encoded format. The *payloadType* property of the [**windowsSetting**](../resources/windowssetting.md) object indicates the type of the setting value. The *payload* when decoded is a JSON object, which differs from setting to setting and is specific to the *payloadType*.
 
 ## About the *payloadType* property
-### Introduction
 The *payloadType* defines the structure of a [windowsSettingInstance](./windowssettinginstance.md) payload. There are numerous payloadTypes in Windows, which represent distinct setting structures used by different experiences in the operating system. As Windows evolves, more payloadTypes are created and onboarded to the cloud. Querying the API and exploring the settings available is the best way to learn about the various payloadTypes. The users and admins have control over which settings are uploaded to the cloud and most components don't upload default settings that the user hasn't customized.
 
-Following is an example of a settingsInstance from the API.
+the following example shows a settingsInstance from the API.
 
 ```json
 {
