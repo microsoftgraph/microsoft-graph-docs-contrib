@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Graph Windows Setting APIs to retrieve Windows OS settings stored in cloud"
-description: "The Windows Setting APIs enable users and authorized third parties, on behalf of the users, to access their Windows operating system settings data stored in Microsoft cloud. Windows settings data is available in Microsoft cloud only when users enable the feature. The data present for each user varies based on what they choose to back up from the settings. Notably, default values for any given setting remain local and aren't uploaded to the cloud. The APIs share only those setting data that has been uploaded to the cloud for the user."
+title: "Microsoft Graph's Windows Setting APIs stored in the cloud"
+description: "The Windows setting APIs enable users and authorized third parties, acting on behalf of the users, to retrieve their Windows operating system settings data stored in the Microsoft cloud. The Windows settings data is available in the Microsoft cloud only when users activate the feature. The scope of data available for each user depends on their selections for backup within the settings. The default values for any setting remain local and aren't transferred to the cloud. These APIs only share setting data that has been uploaded to the cloud by the user."
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "MS-Arko"
@@ -11,9 +11,9 @@ ms.prod: "cross-device-experiences"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Windows Setting APIs enable users and authorized third parties, on behalf of the users, to access their Windows operating system settings data stored in Microsoft cloud. Windows settings data is available in Microsoft cloud only when users enable the feature. The data present for each user varies based on what they choose to back up from the settings. Notably, default values for any given setting remain local and aren't uploaded to the cloud. The APIs share only those setting data that has been uploaded to the cloud for the user.
+The Windows setting APIs enable users and authorized third parties, acting on behalf of the users, to retrieve their Windows operating system settings data stored in the Microsoft cloud. The Windows settings data is available in the Microsoft cloud only when users activate the feature. The scope of data available for each user depends on their selections for backup within the settings. The default values for any setting remain local and aren't transferred to the cloud. These APIs only share setting data that has been uploaded to the cloud by the user."
 
-## Windows Settings
+## Windows settings
 
 A [**windowsSetting**](../resources/windowssetting.md) represents various settings from the Windows operating system that are stored in the cloud for a given user.
 
@@ -21,8 +21,8 @@ There are two types of [windowsSetting](../resources/windowssetting.md): `roamin
 
 | settingType        | Description                        |
 | :----------------- | :--------------------------------- |
-| roaming            | Windows setting is associated with a user's account. It's consistent across all devices and any changes to the setting value are synced or applied to all Windows devices that the user owns.|
-| backup             | Windows setting doesn't roam or sync across devices. This type of setting is used in device backup and restore scenarios.|
+| roaming            | The Windows setting is associated with a user's account. It's consistent across all devices and any changes to the setting value are synced or applied to all Windows devices that the user owns.|
+| backup             | The Windows setting doesn't roam or sync across devices. This type of setting is used in device backup and restore scenarios.|
 
  A [windowsSetting](../resources/windowssetting.md) of type `backup` may have a *windowsDeviceId* property that links the setting to a specific device.
 
@@ -30,7 +30,7 @@ There are two types of [windowsSetting](../resources/windowssetting.md): `roamin
 
 The [Get Windows setting](../api/windowssetting-get.md) API allows you to pass the ID of a [windowsSetting](../resources/windowssetting.md) in the URL to read a specific Windows setting object.
 
-The following JSON representation shows an example Windows setting. The instances collection in it represents **Windows setting instances**, elaborated in the next section.
+The following JSON representation shows an example of a Windows setting. The instances collection in it represents **Windows setting instances**, elaborated in the next section.
 
 <!-- {
   "blockType": "resource",
@@ -59,9 +59,9 @@ The following JSON representation shows an example Windows setting. The instance
 }
 ```
 
->Warning: The structure of the **ID** of a [**windowsSetting**](../resources/windowssetting.md) is not guaranteed and the caller should not take any dependency on it. The ID should be treated as an opaque string.
+> Warning: 
 
-## Windows Setting Instances
+## Windows setting instances
 
 A [**windowsSettingInstance**](../resources/windowssettinginstance.md) represents a setting instance from the Windows operating system that is stored in the cloud for a given user. A [windowsSettingInstance](../resources/windowssettinginstance.md) belongs to a [windowsSetting](../resources/windowssetting.md).
 
