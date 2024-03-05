@@ -607,8 +607,104 @@ Content-type: application/json
     "messageHistory": []
 }
 ```
+### Example 5: Send a message with a file attachment in it using file share link
 
-### Example 5: Send inline images along with the message
+#### Request
+The following example shows a request
+
+>**Notes:**
+> - The file to attach must already be in SharePoint. To access the file properties, [GET the **driveItem** for the file](/graph/api/driveitem-get). The **eTag** of the **driveItem** has a GUID that is your attachment ID. Use the file share link as **contentURL**. User must have permissions to drive item using the file [share link](https://learn.microsoft.com/en-us/graph/api/shares-get?view=graph-rest-1.0&tabs=http). 
+> - Using file share link for sending messages is not supported in [migration](https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) scenario. 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_5",
+  "sampleKeys": ["1e769eab-06a8-4b2e-ac42-1f040a4e52a1", "19:e28d1f9b354f4de88d2e9e4d8b983763@thread.tacv2"]
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/channels/19:e28d1f9b354f4de88d2e9e4d8b983763@thread.tacv2/messages
+Content-type: application/json
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "668f7fa8-8129-4de7-b32b-fe1b442e6ef1",
+            "contentType": "reference",
+            "contentUrl": "https://teamsgraph-my.sharepoint.com/:w:/g/personal/test_teamsgraph_onmicrosoft_com/Eah_j2YpgedNsyv-G0QubvEBma6Sd_76UtYkXwoJ-nYVEg?e=0H2Ibm"
+        }
+    ]
+}
+```
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('1e769eab-06a8-4b2e-ac42-1f040a4e52a1')/channels('19%3Ae28d1f9b354f4de88d2e9e4d8b983763%40thread.tacv2')/messages/$entity",
+    "id": "1709663385319",
+    "replyToId": null,
+    "etag": "1709663385319",
+    "messageType": "message",
+    "createdDateTime": "2024-03-05T18:29:45.319Z",
+    "lastModifiedDateTime": "2024-03-05T18:29:45.319Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3Ae28d1f9b354f4de88d2e9e4d8b983763%40thread.tacv2/1709663385319?groupId=1e769eab-06a8-4b2e-ac42-1f040a4e52a1&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1709663385319&parentMessageId=1709663385319",
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": "Test User",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>"
+    },
+    "channelIdentity": {
+        "teamId": "1e769eab-06a8-4b2e-ac42-1f040a4e52a1",
+        "channelId": "19:e28d1f9b354f4de88d2e9e4d8b983763@thread.tacv2"
+    },
+    "attachments": [
+        {
+            "id": "668f7fa8-8129-4de7-b32b-fe1b442e6ef1",
+            "contentType": "reference",
+            "contentUrl": "https://teamsgraph-my.sharepoint.com/personal/test_teamsgraph_onmicrosoft_com/Documents/Personal%20Drive%20file%201.docx",
+            "content": null,
+            "name": "Personal Drive file 1.docx",
+            "thumbnailUrl": null,
+            "teamsAppId": null
+        }
+    ],
+    "mentions": [],
+    "reactions": []
+}
+```
+
+### Example 6: Send inline images along with the message
 
 #### Request
 The following example shows a request.
@@ -621,7 +717,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_5",
+  "name": "post_chatmessage_6",
   "sampleKeys": ["19:2da4c29f6d7041eca70b638b43d45437@thread.v2"]
 }-->
 ```http
@@ -731,7 +827,7 @@ Content-type: application/json
 }
 ```
 
-### Example 6: Send a card with inline images
+### Example 7: Send a card with inline images
 
 #### Request
 The following example shows a request.
@@ -746,7 +842,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_6",
+  "name": "post_chatmessage_7",
   "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```http
@@ -880,7 +976,7 @@ Content-type: application/json
 }
 ```
 
-### Example 7: @mention a channel in a channel message
+### Example 8: @mention a channel in a channel message
 
 #### Request
 The following example shows a request. For information about how to get a list of channels in a team, see [List channels](../api/channel-list.md).
@@ -1026,7 +1122,7 @@ Content-type: application/json
 }
 ```
 
-### Example 8: @mention a team in a channel message
+### Example 9: @mention a team in a channel message
 
 #### Request
 The following example shows a request.
@@ -1174,7 +1270,7 @@ Content-type: application/json
 }
 ```
 
-### Example 9: @mention a tag in a channel message
+### Example 10: @mention a tag in a channel message
 
 #### Request
 The following example shows a request. For information about how to get a list of tags in a team, see [List teamworkTags](../api/teamworktag-list.md).
@@ -1316,7 +1412,7 @@ Content-type: application/json
 }
 ```
 
-### Example 10: Send message that contains cards that are attributed to a Teams app
+### Example 11: Send message that contains cards that are attributed to a Teams app
 
 #### Request
 
@@ -1330,7 +1426,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_e10",
+  "name": "post_chatmessage_11",
   "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 
@@ -1460,7 +1556,7 @@ Content-type: application/json
 }
 ```
 
-### Example 11: Send a message that contains an announcement
+### Example 12: Send a message that contains an announcement
 
 #### Request
 
@@ -1471,7 +1567,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_11",
+  "name": "post_chatmessage_12",
   "sampleKeys": ["5c884e2f-83f8-4cff-af8e-0177f260b9f8", "19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2"]
 }-->
 
@@ -1610,7 +1706,7 @@ Content-type: application/json
 
 ```
 
-### Example 12: Send a message with an emoji
+### Example 13: Send a message with an emoji
 
 #### Request
 
@@ -1619,7 +1715,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_12",
+  "name": "post_chatmessage_13",
   "sampleKeys": ["19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2"]
 }-->
 
