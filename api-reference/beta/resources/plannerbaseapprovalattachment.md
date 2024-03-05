@@ -1,7 +1,6 @@
 ---
 title: "plannerBaseApprovalAttachment resource type"
-description: "The **plannerBaseApprovalAttachment** resource represents the base approval attachment that is added to a [plannerTask](plannertask.md), which contains the common properties that are required for an approval. 
-While the derived types, such as [plannerBasicApprovalAttachment](plannerbasicapprovalattachment.md), have details corresponding to the type of approval."
+description: "Represents the base approval attachment that is added to a plannerTask, which contains the common properties that are required for an approval.
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.prod: "planner"
