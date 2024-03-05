@@ -20,6 +20,14 @@
         },
         {
           "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudClipboardRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudClipboardRoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardRoot?view=graph-rest-1.0) resource and its methods.",
+          "Target": "cloudClipboardRoot"
+        },
+        {
+          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "windowsSettingType",
           "ChangeType": "Addition",

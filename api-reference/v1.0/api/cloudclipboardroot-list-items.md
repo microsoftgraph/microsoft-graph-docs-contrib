@@ -1,22 +1,24 @@
 ---
-title: "List cloudClipboardItem objects"
-description: "Get a list of the cloudClipboardItem objects and their properties."
+title: "List cloudClipboard items"
+description: "Get a list of the cloudClipboard items and their properties."
 author: "yuechen7"
 ms.localizationpriority: medium
 ms.prod: "project-rome"
 doc_type: apiPageType
 ---
 
-# List cloudClipboardItem objects
+# List cloudClipboard items
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [cloudClipboardItem](../resources/cloudclipboarditem.md) objects and their properties for a user. The API only allows getting [cloudClipboardItem](../resources/cloudclipboarditem.md) objects for 
+Get a list of the [cloudClipboardItem](../resources/cloudclipboarditem.md) objects and their properties for a user. This API only allows you to get [cloudClipboardItem](../resources/cloudclipboarditem.md) objects for:
+
 - The signed-in user's own [cloudClipboardItem](../resources/cloudclipboarditem.md) objects.
-- An app on behalf of the user if the user has given delegated access to it.
+- An app on behalf of the user if the user grants delegated access to it.
 
-Getting user2's [cloudClipboardItem](../resources/cloudclipboarditem.md) using user1's credential is **not** allowed.
+This API doesn't support using another user's credentials to get a [cloudClipboardItem (../resources/cloudclipboarditem.md) for a user. 
 
 ## Permissions
 
@@ -43,7 +45,7 @@ GET /user/cloudClipboard/items
 
 This method supports `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response. 
 
-`$skipToken` is a token returned in the `@odata.nextLink` URL in the response of the previous List [cloudClipboardItem](../resources/cloudclipboarditem.md) objects request, indicating there are more [cloudClipboardItem](../resources/cloudclipboarditem.md) objects to fetch for the user. 
+`$skipToken` is a token returned in the `@odata.nextLink` URL in the response of the previous List request, which indicates that there are more [cloudClipboardItem](../resources/cloudclipboarditem.md) objects to fetch for the user. 
 
 
 ## Request headers
@@ -61,6 +63,16 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [cloudClipboardItem](../resources/cloudclipboarditem.md) objects in the response body.
 
+### Errors
+In addition to [general errors](/graph/errors) that apply to Microsoft Graph, some error conditions are specific to the Cloud Clipboard API.
+
+|Status code|Status message|Description|
+|:---|:---|:---|
+|400|Bad request|The request is malformed or incorrect, such as invalid page size or invalid `$skipToken` value.|
+|403|Forbidden|The caller can't perform the action. It indicates that the user has not consented to share [cloudClipboardItem](../resources/cloudclipboarditem.md).|
+|409|Conflict|The current state conflicts with what the request expects. It usually indicates that the user isn't eligible for the cloud clipboard feature because the user doesn't have at least two strongly authenticated devices.|
+|429|Too many requests|The request rate limit has been exceeded. Wait for the time specified in the `Retry-After` header and try again.| 
+
 ## Examples
 
 ### Request
@@ -72,7 +84,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/user/cloudClipboard/items
+GET https://graph.microsoft.com/beta/user/cloudClipboard/items
 ```
 
 
@@ -107,7 +119,7 @@ Content-Type: application/json
       "expirationDateTime": "2023-08-11T04:56:25.387Z"
     }
   ],
-  "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/cloudClipboard/items?$skiptoken=lastModifiedDateTime%20le%202024-01-31T01:14:29.675Z"
+  "@odata.nextLink": "https://graph.microsoft.com/beta/me/cloudClipboard/items?$skiptoken=lastModifiedDateTime%20le%202024-01-31T01:14:29.675Z"
 }
 ```
 
