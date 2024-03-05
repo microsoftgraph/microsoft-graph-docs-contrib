@@ -1,8 +1,9 @@
 ---
-author: spgraph-docs-team
-description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
 title: Download a file
+ms.author: maniksingh
+description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
 ms.localizationpriority: medium
+ms.date: 5/3/2023
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -126,17 +127,3 @@ See [Error Responses][error-response] for more info about
 how errors are returned.
 
 [error-response]: /graph/errors
-
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Download the contents of a DriveItem.",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "Items/Download",
-  "suppressions": [
-  ]
-}
--->
-
-
