@@ -2,112 +2,112 @@
     "redirections": [
         {
             "source_path_from_root": "/api-reference/v1.0/resources/email-activity-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#outlook-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#outlook-activity",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/email-app-usage-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#outlook-app-usage?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#outlook-app-usage",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/mailbox-usage-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#outlook-mailbox-usage?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#outlook-mailbox-usage",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/microsoft-365-apps-usage-report.md",
-            "redirect_url": "/graph/api/resources/reportroot#microsoft-365-apps-usage?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#microsoft-365-apps-usage",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/microsoft-teams-device-usage-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#microsoft-teams-device-usage?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#microsoft-teams-device-usage",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/microsoft-teams-team-usage-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#microsoft-teams-team-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#microsoft-teams-team-activity",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/microsoft-teams-user-activity-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#microsoft-teams-user-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#microsoft-teams-user-activity",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/office-365-activations-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#microsoft-365-activations?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#microsoft-365-activations",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/office-365-active-users-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#microsoft-365-active-users?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#microsoft-365-active-users",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/office-365-groups-activity-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#microsoft-365-groups-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#microsoft-365-groups-activity",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/onedrive-activity-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#onedrive-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#onedrive-activity",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/onedrive-usage-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#onedrive-usage?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#onedrive-usage",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/sharepoint-activity-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#sharepoint-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#sharepoint-activity",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/sharepoint-site-usage-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#sharepoint-site-usage?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#sharepoint-site-usage",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/skype-for-business-activity-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#skype-for-business-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#skype-for-business-activity",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/skype-for-business-device-usage-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#skype-for-business-device-usage?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#skype-for-business-device-usage",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/skype-for-business-organizer-activity-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#skype-for-business-organizer-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#skype-for-business-organizer-activity",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/skype-for-business-participant-activity-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#skype-for-business-participant-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#skype-for-business-participant-activity",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/skype-for-business-peer-to-peer-activity.md",
-            "redirect_url": "/graph/api/resources/reportroot#skype-for-business-peer-to-peer-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#skype-for-business-peer-to-peer-activity",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/yammer-activity-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#viva-engage-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#viva-engage-activity",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/yammer-device-usage-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#viva-engage-device-usage?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#viva-engage-device-usage",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/api-reference/v1.0/resources/yammer-groups-activity-reports.md",
-            "redirect_url": "/graph/api/resources/reportroot#viva-engage-groups-activity?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/reportroot?view=graph-rest-1.0#viva-engage-groups-activity",
             "redirect_document_id": false
         }
     ]
