@@ -13,9 +13,6 @@ Namespace: microsoft.graph
 
 Perform a new bulk upload using the synchronization job. Use this API endpoint to ingest data into the Microsoft Entra synchronization service. The synchronization service applies the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
 
-> [!NOTE]
-> This API is in public preview and available for use only with [API-driven inbound provisioning apps](/azure/active-directory/app-provisioning/inbound-provisioning-api-configure-app).
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
