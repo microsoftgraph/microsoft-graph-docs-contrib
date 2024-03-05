@@ -187,32 +187,6 @@ items:
       href: ../../api/organization-get.md
     - name: Update
       href: ../../api/organization-update.md
-    - name: Open extensions
-      items:
-      - name: Create open extension
-        href: ../../api/opentypeextension-post-opentypeextension.md
-      - name: Get open extension
-        href: ../../api/opentypeextension-get.md
-    - name: Schema extensions
-      items:
-      - name: Add schema extension values
-        href: ../../graph/extensibility-schema-groups
-    - name: Organizational branding
-      items:
-      - name: Get organizationalBranding
-        href: ../../api/organizationalbranding-get.md
-      - name: Update organizationalBranding
-        href: ../../api/organizationalbranding-update.md
-      - name: Create organizationalBrandingLocalization
-        href: ../../api/organizationalbranding-post-localizations.md
-      - name: List organizationalBrandingLocalization
-        href: ../../api/organizationalbranding-list-localizations.md
-      - name: Get organizationalBrandingLocalization
-        href: ../../api/organizationalbrandinglocalization-get.md
-      - name: Update organizationalBrandingLocalization
-        href: ../../api/organizationalbrandinglocalization-update.md
-      - name: Delete organizationalBrandingLocalization
-        href: ../../api/organizationalbrandinglocalization-delete.md
   - name: Org contact
     items:
     - name: Org contact

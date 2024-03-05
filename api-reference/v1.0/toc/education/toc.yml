@@ -23,6 +23,8 @@ items:
     href: ../../resources/educationclass.md
   - name: List educationClasses
     href: ../../api/educationclass-list.md
+  - name: List modules
+    href: ../../api/educationclass-list-modules.md
   - name: Create educationClass
     href: ../../api/educationclass-post.md
   - name: Get educationClass
@@ -89,6 +91,10 @@ items:
     href: ../../api/educationassignment-post-gradingcategory.md
   - name: Remove educationGradingCategory
     href: ../../api/educationassignment-delete-gradingcategory.md
+  - name: Activate assignment
+    href: ../../api/educationassignment-activate.md
+  - name: Deactivate assignment
+    href: ../../api/educationassignment-deactivate.md
 - name: Education assignment defaults
   items:
   - name: Education assignment defaults
@@ -151,6 +157,42 @@ items:
     href: ../../api/educationassignment-delete-gradingcategory.md
   - name: Update gradingCategory
     href: ../../api/educationgradingcategory-update.md
+- name: Education module
+  items:
+  - name: Education module
+    href: ../../resources/educationmodule.md
+  - name: List modules
+    href: ../../api/educationclass-list-modules.md
+  - name: Create
+    href: ../../api/educationclass-post-module.md
+  - name: Get module
+    href: ../../api/educationmodule-get.md
+  - name: Update
+    href: ../../api/educationmodule-update.md
+  - name: Delete
+    href: ../../api/educationmodule-delete.md
+  - name: Pin
+    href: ../../api/educationmodule-pin.md
+  - name: Unpin
+    href: ../../api/educationmodule-unpin.md
+  - name: Publish
+    href: ../../api/educationmodule-publish.md
+  - name: Set up module resources folder
+    href: ../../api/educationmodule-setupresourcesfolder.md
+- name: Education module resource
+  items:
+  - name: Education module resource
+    href: ../../resources/educationmoduleresource.md
+  - name: List resources
+    href: ../../api/educationmodule-list-resources.md
+  - name: Create educationModuleResource
+    href: ../../api/educationmodule-post-resources.md
+  - name: Get educationModuleResource
+    href: ../../api/educationmoduleresource-get.md
+  - name: Update educationModuleResource
+    href: ../../api/educationmoduleresource-update.md
+  - name: Delete educationModuleResource
+    href: ../../api/educationmoduleresource-delete.md
 - name: Education outcome
   items:
   - name: Education outcome
@@ -229,6 +271,8 @@ items:
     href: ../../resources/educationassignmentpointsgradetype.md
   - name: Education assignment recipient
     href: ../../resources/educationassignmentrecipient.md
+  - name: Education channel resource
+    href: ../../resources/educationchannelresource.md
   - name: Education excel resource
     href: ../../resources/educationexcelresource.md
   - name: Education external resource
@@ -239,6 +283,8 @@ items:
     href: ../../resources/educationfileresource.md
   - name: Education link resource
     href: ../../resources/educationlinkresource.md
+  - name: Education linked assignment resource
+    href: ../../resources/educationlinkedassignmentresource.md
   - name: Education media resource
     href: ../../resources/educationmediaresource.md
   - name: Education power point resource
