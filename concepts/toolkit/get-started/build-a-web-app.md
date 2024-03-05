@@ -138,7 +138,7 @@ The following example shows a fully working usage that is loading Microsoft Grap
 <mgt-login></mgt-login>
 ```
 
----
+# [HTML](#tab/html)
 
 The following example uses the ES6 modules, the MSAL2 Provider initialized in HTML, and the sign-in component:
 
@@ -153,6 +153,8 @@ The following example uses the ES6 modules, the MSAL2 Provider initialized in HT
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```
+
+---
 
 ## Test your app
 
