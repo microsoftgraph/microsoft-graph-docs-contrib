@@ -4,7 +4,7 @@ author: manikantsinghms
 ms.author: maniksingh
 description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
 ms.localizationpriority: medium
-ms.date: 06/03/2024
+ms.date: 03/06/2024
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
