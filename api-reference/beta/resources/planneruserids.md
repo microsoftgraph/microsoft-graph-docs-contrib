@@ -29,7 +29,8 @@ Here's a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerUserIds"
+  "@odata.type": "microsoft.graph.plannerUserIds",
+  "openType": true
 }-->
 
 ```json

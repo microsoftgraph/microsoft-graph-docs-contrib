@@ -28,7 +28,8 @@ Here's a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerChecklistItems"
+  "@odata.type": "microsoft.graph.plannerChecklistItems",
+  "openType": true
 }-->
 
 ```json

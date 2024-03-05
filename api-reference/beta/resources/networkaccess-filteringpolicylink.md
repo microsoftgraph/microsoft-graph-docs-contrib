@@ -33,8 +33,8 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |createdDateTime|DateTimeOffset|The date and time when the filtering Policy link was created.|
 |id|String|Unique identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the policy was most recently modified.|
-|state|microsoft.graph.networkaccess.status|A value that tells whether the link is enabled or disabled. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The allowed values are `enabled` and `disabled`.|
-
+|loggingState|microsoft.graph.networkaccess.status|A value that tells whether the link is enabled or disabled. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The allowed values are `enabled` and `disabled`.|
+|priority|Int|*TODO*|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -55,7 +55,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.networkaccess.filteringPolicyLink",
   "id": "String (identifier)",
-  "state": "String",
   "version": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "createdDateTime": "String (timestamp)",

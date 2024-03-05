@@ -37,10 +37,10 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|alias|String||
-|email|String||
-|objectId|String||
-|permissionIdentityType|String||
+|alias|String|*TODO*|
+|email|String|*TODO*|
+|objectId|String|*TODO*|
+|permissionIdentityType|String|*TODO*|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

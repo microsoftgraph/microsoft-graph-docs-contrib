@@ -11,6 +11,8 @@ author: "preetikr"
  
 Contains the history of the control states updated by the user (control states include Default, Ignored, ThirdParty, Reviewed).
 
+## Properties
+
 |Property |Type |Description |
 |:--|:--|:--|
 |assignedTo | string | Assign the control to the user who will take the action |

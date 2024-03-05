@@ -55,7 +55,7 @@ Here is an example of the request.
   "sampleKeys": ["AAMkADIyAAAhrbe-AAA="]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=
+DELETE https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=
 ```
 
 # [C#](#tab/csharp)

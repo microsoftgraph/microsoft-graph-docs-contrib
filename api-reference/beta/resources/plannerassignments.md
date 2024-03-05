@@ -28,7 +28,8 @@ Example:
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerAssignments"
+  "@odata.type": "microsoft.graph.plannerAssignments",
+  "openType": true
 }-->
 
 ```json

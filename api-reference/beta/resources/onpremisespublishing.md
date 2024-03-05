@@ -66,7 +66,7 @@ Here's a JSON representation of the resource.
   "externalAuthenticationType": "String",
   "externalUrl": "String",
   "internalUrl": "String",
-  "isBackendCertificationValidationEnabled": true,
+  "isBackendCertificateValidationEnabled": true,
   "isHttpOnlyCookieEnabled": true,
   "isOnPremPublishingEnabled": true,
   "isPersistentCookieEnabled": true,
