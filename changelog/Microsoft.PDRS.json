@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudClipboardRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudClipboardRoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudClipboardRoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardRoot?view=graph-rest-beta) resource and its method.",
           "Target": "cloudClipboardRoot"
         }
       ],
