@@ -18,9 +18,9 @@ Represents a schedule for launching a campaign
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completionDateTime|DateTimeOffset|Campaign end time|
-|launchDateTime|DateTimeOffset|Campaign start datetime|
-|status|campaignStatus|Status shows the current state of the campaign.The possible values are: `unknown`, `draft`, `inProgress`, `scheduled`, `completed`, `failed`, `cancelled`, `excluded`, `deleted`, `unknownFutureValue`.|
+|completionDateTime|DateTimeOffset|The date and time at which the campaign completed.|
+|launchDateTime|DateTimeOffset|The date and time at which the campaign was launched.|
+|status|campaignStatus|The current state of the campaign. The possible values are: `unknown`, `draft`, `inProgress`, `scheduled`, `completed`, `failed`, `cancelled`, `excluded`, `deleted`, `unknownFutureValue`.|
 
 ## Relationships
 None.

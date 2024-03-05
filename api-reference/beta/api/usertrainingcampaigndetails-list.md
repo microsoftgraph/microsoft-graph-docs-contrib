@@ -36,7 +36,7 @@ This method supports the `$count`, `$skipToken`, and `$top` [OData query paramet
 
 If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
-The following are examples of their use:
+The following list shows some examples of requests that use the supported OData query parameters:
 
 <!-- {
   "blockType": "ignored"
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_campaignusersdetails"

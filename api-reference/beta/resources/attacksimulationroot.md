@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationRoot resource type"
-description: "Represents an abstract type that provides the ability to launch a realistic phishing attack that organizations can learn from."
+description: "Represents an abstract type for launching realistic phishing attacks that organizations can learn from."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract type that provides the ability to launch a realistic phishing attack that organizations can learn from.
+Represents an abstract type for launching realistic phishing attacks that organizations can learn from.
 
 ## Methods
 
@@ -35,13 +35,13 @@ Represents an abstract type that provides the ability to launch a realistic phis
 |[Get payload](../api/payload-get.md)|[payload](../resources/payload.md)|Get the payload resource from the payloads navigation property.|
 | **Simulation** |  |  |
 |[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
-|[Get simulations](../api/simulation-get.md)|[simulation](../resources/simulation.md) |Get an attack simulation campaigns for a tenant.|
-|[Create simulations](../api/attacksimulationroot-post-simulation.md)|[simulation](../resources/simulation.md)|Create a new attack simulation campaigns for a tenant.|
-|[Update simulations](../api/simulation-update.md)|[simulation](../resources/simulation.md)|Update a attack simulation campaigns for a tenant.|
-|[Delete simulations](../api/simulation-delete.md)|[simulation](../resources/simulation.md)|Delete a attack simulation campaigns for a tenant.|
+|[Get simulations](../api/simulation-get.md)|[simulation](../resources/simulation.md) |Get an attack simulation campaign for a tenant.|
+|[Create simulations](../api/attacksimulationroot-post-simulation.md)|[simulation](../resources/simulation.md)|Create a new attack simulation campaign for a tenant.|
+|[Update simulations](../api/simulation-update.md)|[simulation](../resources/simulation.md)|Update an attack simulation campaign for a tenant.|
+|[Delete simulations](../api/simulation-delete.md)|[simulation](../resources/simulation.md)|Delete an attack simulation campaign for a tenant.|
 | **Simulation automation** |  |  |
 |[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
-|[Get simulationAutomations](../api/simulationautomation-get.md)|[simulationAutomation](../resources/simulationautomation.md) |Get an attack simulation automations for a tenant.|
+|[Get simulationAutomations](../api/simulationautomation-get.md)|[simulationAutomation](../resources/simulationautomation.md) |Get an attack simulation automation for a tenant.|
 | **Training** |  |  |
 |[List trainings](../api/attacksimulationroot-list-trainings.md)|[training](../resources/training.md) collection|Get a list of the [training](../resources/training.md) objects and their properties.|
 |[Get training](../api/training-get.md)|[training](../resources/training.md)|Get an attack simulation [training](../resources/training.md) for a tenant. |
@@ -66,7 +66,7 @@ None.
 |trainingCampaigns|[trainingCampaign](../resources/trainingcampaign.md) collection|Represents a training campaign in a tenant.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

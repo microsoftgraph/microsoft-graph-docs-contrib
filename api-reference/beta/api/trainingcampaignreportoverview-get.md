@@ -46,7 +46,7 @@ If successful, this method returns a `200 OK` response code and a [trainingCampa
 
 ### Request
 
-This is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request"
 }
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns
 
 ### Response
 
-The following example shows a request.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
