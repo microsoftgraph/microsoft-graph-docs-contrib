@@ -20,7 +20,7 @@ var requestBody = new BulkResizePostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs.BulkResize.PostAsync(requestBody);
+var result = await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs.BulkResize.PostAsBulkResizePostResponseAsync(requestBody);
 
 
 ```
