@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-PasswordlessMicrosoftAuthenticatorAuthenticationMethod passwordlessMicrosoftAuthenticatorAuthenticationMethod = graphClient.me().authentication().passwordlessMicrosoftAuthenticatorMethods("R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+PasswordlessMicrosoftAuthenticatorAuthenticationMethod result = graphClient.me().authentication().passwordlessMicrosoftAuthenticatorMethods().byPasswordlessMicrosoftAuthenticatorAuthenticationMethodId("{passwordlessMicrosoftAuthenticatorAuthenticationMethod-id}").get();
+
 
 ```

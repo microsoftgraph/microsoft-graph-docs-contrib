@@ -21,6 +21,7 @@ Represents a Microsoft Entra object. The **directoryObject** type is the base ty
 + [directoryObject](directoryobject.md)
 + [directoryRole](directoryrole.md)
 + [device](device.md)
++ [externalProfile](externalprofile.md)
 + [group](group.md)
 + [orgContact](orgcontact.md)
 + [servicePrincipal](serviceprincipal.md)
@@ -57,7 +58,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

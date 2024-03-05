@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Workflow workflow = new Workflow();
-workflow.isEnabled = true;
-workflow.isSchedulingEnabled = true;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.identityGovernance().lifecycleWorkflows().workflows("15239232-66ed-445b-8292-2f5bbb2eb833")
-	.buildRequest()
-	.patch(workflow);
+com.microsoft.graph.beta.models.identitygovernance.Workflow workflow = new com.microsoft.graph.beta.models.identitygovernance.Workflow();
+workflow.setIsEnabled(true);
+workflow.setIsSchedulingEnabled(true);
+com.microsoft.graph.models.identitygovernance.Workflow result = graphClient.identityGovernance().lifecycleWorkflows().workflows().byWorkflowId("{workflow-id}").patch(workflow);
+
 
 ```

@@ -56,7 +56,7 @@ The `$top` OData query parameter has a limit of 1000 alerts. We recommend that y
 
 A workaround for this limit is to use the `$filter` OData query parameter with the `eventDateTime` of the alert entity from the Microsoft Graph Security API, using `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` and replacing the dateTime value with the last (1500th) alert. You can also set a range for the `eventDateTime`; for example, *alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z*
 
-## See also
+## Related content
 
 If you’re having trouble with authorization, see [Authorization and the Microsoft Graph Security API](/graph/security-authorization).
 

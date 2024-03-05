@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PersonAward personAward = new PersonAward();
-personAward.description = "Lifetime Achievement award from the International Association of Branding Managers";
-personAward.displayName = "Lifetime Achievement Award For Excellence in Branding";
-personAward.issuedDate = new DateOnly(1900,1,1);
-personAward.issuingAuthority = "International Association of Branding Management";
-personAward.thumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg";
-personAward.webUrl = "https://www.iabm.io";
+personAward.setDescription("Lifetime Achievement award from the International Association of Branding Managers");
+personAward.setDisplayName("Lifetime Achievement Award For Excellence in Branding");
+LocalDate issuedDate = LocalDate.parse("Date");
+personAward.setIssuedDate(issuedDate);
+personAward.setIssuingAuthority("International Association of Branding Management");
+personAward.setThumbnailUrl("https://iabm.io/sdhdfhsdhshsd.jpg");
+personAward.setWebUrl("https://www.iabm.io");
+PersonAward result = graphClient.me().profile().awards().post(personAward);
 
-graphClient.me().profile().awards()
-	.buildRequest()
-	.post(personAward);
 
 ```

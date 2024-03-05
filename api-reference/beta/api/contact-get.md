@@ -41,7 +41,7 @@ A [contact](../resources/contact.md) from a top level [contactFolder](../resourc
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
+A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
 GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
@@ -146,17 +146,17 @@ Content-type: application/json
   "emailAddresses": [
     {
       "name": "Garth",
-      "address": "garth@a830edad9050849NDA1.onmicrosoft.com",
+      "address": "garth@contoso.com",
       "type": "unknown"
     },
     {
       "name": "Garth",
-      "address": "garth@contoso.onmicrosoft.com",
+      "address": "garth@contoso.com",
       "type": "personal"
     }
   ],
   "imAddresses": [
-    "sip:garthf@a830edad9050849nda1.onmicrosoft.com"
+    "sip:garthf@contoso.com"
   ],
   "jobTitle": "Web Marketing Manager",
   "companyName": "Contoso, Inc.",
@@ -180,7 +180,7 @@ Content-type: application/json
   }],
   "spouseName": null,
   "personalNotes": null,
-  "children": [], 
+  "children": [],
   "gender": null,
   "websites": [{
       "type": "work",
@@ -191,7 +191,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

@@ -1,13 +1,13 @@
 ---
-title: "Migrate Azure Active Directory (Azure AD) Graph .NET apps to Microsoft Graph"
-description: "Describes how to migrate Azure Active Directory (Azure AD) Graph API apps to Microsoft Graph API."
-author: "FaithOmbongi"
-ms.author: ombongifaith
+title: "Migrate Azure AD Graph .NET apps to Microsoft Graph"
+description: "Describes how to migrate apps from Azure Active Directory (Azure AD) Graph APIs to Microsoft Graph APIs."
+author: FaithOmbongi
 ms.reviewer: dkershaw
+ms.topic: how-to
 ms.localizationpriority: medium
-ms.prod: "applications"
-ms.date: 11/11/2022
-#Customer intent: As a developer of an app currently using the Azure AD Graph .NET client library, I want to migrate my app to use the Microsoft Graph .NET client library, as I migrate my app from Azure AD Graph to Microsoft Graph.
+ms.prod: applications
+ms.date: 02/14/2024
+#Customer intent: As a developer of an app currently using the Azure AD Graph .NET client library, I want to migrate my app to use the Microsoft Graph .NET client library, as I migrate from Azure AD Graph to Microsoft Graph.
 ---
 
 # Migrate .NET client library use to Microsoft Graph
@@ -16,10 +16,7 @@ This article is part of *step 3: review app details* of the [process to migrate 
 
 If your app currently uses the Azure Active Directory (Azure AD) Graph client library, switch to the [Microsoft Graph .NET client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet).
 
->NOTE: The Microsoft Graph .NET client library is only supported for .NET Framework 4.5 and .NET Standard 1.1.  However please consult Microsoft Graph .NET client library for the latest support information.
-
-Here, we'll look at some general steps to migrate over to the Microsoft Graph .NET client library:
-
+In this article, you learn the following general steps to migrate over to the Microsoft Graph .NET client library:
 - How to create a Microsoft Graph client, given an access token (that you can acquire using either Azure Active Directory Authentication Library (ADAL) or Microsoft Authentication Library (MSAL))
 - How to formulate requests
 - How to use query builders
@@ -27,7 +24,7 @@ Here, we'll look at some general steps to migrate over to the Microsoft Graph .N
 
 ## Overview of the migration steps
 
-The following steps assume your app is already using ADAL to acquire access tokens to call Azure AD Graph, and that for now you will continue to use ADAL. Switching to MSAL can be done as a separate step described in [migrating to MSAL](./migrate-azure-ad-graph-authentication-library.md#migrating-to-msal).
+The following steps assume your app uses ADAL to acquire access tokens to call Azure AD Graph. Switching to MSAL can be done as a separate step described in [migrating to MSAL](./migrate-azure-ad-graph-authentication-library.md#migrating-to-msal).
 
 1. To acquire an access token to Microsoft Graph, update **resourceUrl** from `https://graph.windows.net` to `https://graph.microsoft.com`.
 
@@ -81,7 +78,7 @@ The following steps assume your app is already using ADAL to acquire access toke
 
     >[!NOTE]
     >The Azure AD Graph client library supported LINQ-based query
-    syntax. However, the Microsoft Graph client library does not.  Consequently, you'll need to convert the relevant queries to a more RESTful expression.  
+    syntax. However, the Microsoft Graph client library does not.  Consequently, you need to convert the relevant queries to a more RESTful expression.  
 
     To do so, change:
 
@@ -97,7 +94,7 @@ The following steps assume your app is already using ADAL to acquire access toke
     client.Groups.Request().Filter("startswith(displayName,'a')").GetAsync();
     ```
 
-6. If your code pages through collections, make the following minor adjustments. The following example compares and contrasts fetching a group and paging through its members, 5 at a time. While the code for Azure AD Graph requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement. Other than that, the code is relatively similar.  To be concise, only user members are displayed, try/catch and error conditions are not shown, and the code snippets are for a single-threaded console app.
+6. If your code pages through collections, make the following minor adjustments. The following example compares and contrasts fetching a group and paging through its members, 5 at a time. While the code for Azure AD Graph requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement. To be concise, only user members are displayed, try/catch and error conditions aren't shown, and the code snippets are for a single-threaded console app.
 
     As an example, change the following code using the Azure AD Graph .NET client library:
 
@@ -147,13 +144,11 @@ The following steps assume your app is already using ADAL to acquire access toke
 
     ```
 
-7. Build and fix any resource, property, navigation, and service action errors, generally related to name changes.
-
-## See also
+7. Build and fix any resource, property, navigation, and service action errors that are related to name changes.
 
 The [C# console snippets app](https://github.com/microsoftgraph/console-csharp-snippets-sample) highlights more of the differences between Microsoft Graph client library and Azure AD Graph client library.
 
-The Azure AD Graph client library supports only the .NET platform.  However, Microsoft Graph client library supports additional [platforms and languages](/graph) that you may find more useful for your solutions.
+The Azure AD Graph client library supports only the .NET platform. However, Microsoft Graph client library supports additional [platforms and languages](/graph/sdks/sdks-overview).
 
 ## Next step
 

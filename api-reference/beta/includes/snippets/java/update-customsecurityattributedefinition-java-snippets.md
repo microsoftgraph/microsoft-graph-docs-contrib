@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CustomSecurityAttributeDefinition customSecurityAttributeDefinition = new CustomSecurityAttributeDefinition();
-customSecurityAttributeDefinition.description = "Target completion date (YYYY/MM/DD)";
+customSecurityAttributeDefinition.setDescription("Target completion date (YYYY/MM/DD)");
+CustomSecurityAttributeDefinition result = graphClient.directory().customSecurityAttributeDefinitions().byCustomSecurityAttributeDefinitionId("{customSecurityAttributeDefinition-id}").patch(customSecurityAttributeDefinition);
 
-graphClient.directory().customSecurityAttributeDefinitions("Engineering_ProjectDate")
-	.buildRequest()
-	.patch(customSecurityAttributeDefinition);
 
 ```

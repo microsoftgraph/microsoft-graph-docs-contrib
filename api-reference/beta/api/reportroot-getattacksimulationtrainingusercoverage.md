@@ -128,5 +128,5 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 [securityReportsRoot: getAttackSimulationTrainingUserCoverage](securityreportsroot-getattacksimulationtrainingusercoverage.md)

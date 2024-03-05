@@ -78,7 +78,7 @@ Here is a JSON representation of the resource
 }
 ```
 
-## See also
+## Related content
 
 + [Grant or revoke app roles using Microsoft Graph](/graph/permissions-grant-via-msgraph?pivots=grant-application-permissions)
 

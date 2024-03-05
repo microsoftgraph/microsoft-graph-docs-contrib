@@ -4,21 +4,29 @@ ms.date: 09/10/2017
 title: SiteCollection
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
-description: "The siteCollection resource provides more information about a site collection."
+description: "Provides more information about a site collection."
 doc_type: resourcePageType
 ---
 
-# SiteCollection resource
+# siteCollection resource
 
 Namespace: microsoft.graph
 
-The **siteCollection** resource provides more information about a site collection.
+Provides more information about a site collection.
 
 If a [**site**](site.md) resource has a non-null **siteCollection** property, then the site is a root site for a site collection.
 
+## Properties
+
+| Property name        | Type     | Description
+|:---------------------|:---------|:---------------------------------------------------
+| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Only present for multi-geo tenants. Read-only.
+| **hostname**         | string   | The hostname for the site collection. Read-only.
+| **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -34,14 +42,6 @@ Here is a JSON representation of the resource.
   "root": { "@odata.type": "microsoft.graph.root" }
 }
 ```
-
-## Properties
-
-| Property name        | Type     | Description
-|:---------------------|:---------|:---------------------------------------------------
-| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Read-only.
-| **hostname**         | string   | The hostname for the site collection. Read-only.
-| **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only.
 
 [root]: root.md
 

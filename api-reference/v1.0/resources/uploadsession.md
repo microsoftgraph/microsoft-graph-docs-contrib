@@ -41,7 +41,7 @@ Here's a JSON representation of the resource
 | nextExpectedRanges | String collection | A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format "start-end" (for example "0-26" to indicate the first 27 bytes of the file). When uploading files as Outlook attachments, instead of a collection of ranges, this property always indicates a single value "{start}", the location in the file where the next upload should begin.
 | uploadUrl          | String            | The URL endpoint that accepts PUT requests for byte ranges of the file.
 
-## See also
+## Related content
 
 - [Attach large files to Outlook messages and events as attachments ](/graph/outlook-large-attachments)
 - [Upload large files with an upload session](../api/driveitem-createuploadsession.md)

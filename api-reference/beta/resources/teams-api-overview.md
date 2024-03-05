@@ -86,7 +86,7 @@ Apps that don't follow these polling requirements will be considered in violatio
 [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling)
 or the suspension or termination of your use of the Microsoft APIs.
 
-## See also
+## Related content
 
 - [Overview for using Microsoft Teams, Shifts, and Viva Learning to foster teamwork](/graph/teams-concept-overview)
 - Sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)

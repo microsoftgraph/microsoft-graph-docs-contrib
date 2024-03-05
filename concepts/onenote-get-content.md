@@ -659,7 +659,7 @@ For more information about permission scopes and how they work, see [Microsoft G
 
 <a name="see-also"></a>
 
-## See also
+## Related content
 
 - [Input and output HTML for OneNote pages](onenote-input-output-html.md)
 - [Integrate with OneNote](integrate-with-onenote.md)

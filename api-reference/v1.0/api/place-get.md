@@ -75,10 +75,6 @@ The following example specifies the **id** of a **room** to get its properties.
 GET https://graph.microsoft.com/v1.0/places/979e9793-3e91-40eb-b18c-0ea937893956
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-room-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-room-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,7 +106,7 @@ Content-type: application/json
     "address": null,
     "geoCoordinates": null,
     "phone": "",
-    "emailAddress": "Building2Rooms@M365x214355.onmicrosoft.com"
+    "emailAddress": "Building2Rooms@contoso.com"
 }
 ```
 
@@ -124,16 +120,12 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 <!-- {
   "blockType": "request",
   "name": "get_roomlist",
-  "sampleKeys": ["Building2Rooms@M365x214355.onmicrosoft.com"]
+  "sampleKeys": ["Building2Rooms@contoso.com"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicrosoft.com
+GET https://graph.microsoft.com/v1.0/places/Building2Rooms@contoso.com
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-roomlist-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-roomlist-javascript-snippets.md)]
@@ -166,7 +158,7 @@ Content-type: application/json
     "address": null,
     "geoCoordinates": null,
     "phone": "",
-    "emailAddress": "Building2Rooms@M365x214355.onmicrosoft.com"
+    "emailAddress": "Building2Rooms@contoso.com"
 }
 ```
 

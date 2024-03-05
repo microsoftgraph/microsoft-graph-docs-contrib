@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<SynchronizationSecretKeyStringValuePair> credentialsList = new LinkedList<SynchronizationSecretKeyStringValuePair>();
-SynchronizationSecretKeyStringValuePair credentials = new SynchronizationSecretKeyStringValuePair();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-credentialsList.add(credentials);
+com.microsoft.graph.applications.item.synchronization.acquireaccesstoken.AcquireAccessTokenPostRequestBody acquireAccessTokenPostRequestBody = new com.microsoft.graph.applications.item.synchronization.acquireaccesstoken.AcquireAccessTokenPostRequestBody();
+LinkedList<SynchronizationSecretKeyStringValuePair> credentials = new LinkedList<SynchronizationSecretKeyStringValuePair>();
+SynchronizationSecretKeyStringValuePair synchronizationSecretKeyStringValuePair = new SynchronizationSecretKeyStringValuePair();
+synchronizationSecretKeyStringValuePair.setOdataType("microsoft.graph.synchronizationSecretKeyStringValuePair");
+credentials.add(synchronizationSecretKeyStringValuePair);
+acquireAccessTokenPostRequestBody.setCredentials(credentials);
+graphClient.applications().byApplicationId("{application-id}").synchronization().acquireAccessToken().post(acquireAccessTokenPostRequestBody);
 
-graphClient.applications("{applicationsId}").synchronization()
-	.acquireAccessToken(SynchronizationAcquireAccessTokenParameterSet
-		.newBuilder()
-		.withCredentials(credentialsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

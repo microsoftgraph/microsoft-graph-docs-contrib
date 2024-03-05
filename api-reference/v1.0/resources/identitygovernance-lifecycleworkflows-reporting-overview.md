@@ -44,7 +44,7 @@ The following [Microsoft Entra roles](/entra/identity/role-based-access-control/
 | Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All |Global Reader or Lifecycle Workflows Administrator |
 | Create, Update or Delete | LifecycleWorkflows.ReadWrite.All | Lifecycle Workflows Administrator |
 
-## See also
+## Related content
 
 + [What are Lifecycle Workflows?](/azure/active-directory/governance/what-are-lifecycle-workflows)
 + [Overview of Lifecycle Workflows](identitygovernance-lifecycleworkflows-overview.md)

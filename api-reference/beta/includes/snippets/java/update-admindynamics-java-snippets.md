@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AdminDynamics adminDynamics = new AdminDynamics();
+adminDynamics.setOdataType("#microsoft.graph.adminDynamics");
 CustomerVoiceSettings customerVoice = new CustomerVoiceSettings();
-customerVoice.isRestrictedSurveyAccessEnabled = false;
-customerVoice.isRecordIdentityByDefaultEnabled = false;
-customerVoice.isInOrgFormsPhishingScanEnabled = false;
-adminDynamics.customerVoice = customerVoice;
+customerVoice.setOdataType("microsoft.graph.customerVoiceSettings");
+customerVoice.setIsRestrictedSurveyAccessEnabled(false);
+customerVoice.setIsRecordIdentityByDefaultEnabled(false);
+customerVoice.setIsInOrgFormsPhishingScanEnabled(false);
+adminDynamics.setCustomerVoice(customerVoice);
+AdminDynamics result = graphClient.admin().dynamics().patch(adminDynamics);
 
-graphClient.admin().dynamics()
-	.buildRequest()
-	.patch(adminDynamics);
 
 ```

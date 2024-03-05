@@ -159,6 +159,6 @@ For [sessionful requests](excel-manage-sessions.md#request-types), if you encoun
   "tocPath": ""
 } -->
 
-## See also
+## Related content
 
 - [Use the Excel REST API](/graph/api/resources/excel)

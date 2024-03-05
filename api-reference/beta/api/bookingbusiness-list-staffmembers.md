@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/staffMembers
+GET /solutions/bookingbusinesses/{id}/staffMembers
 ```
 
 ## Optional query parameters
@@ -57,10 +57,10 @@ Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_staffmembers",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffMembers
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/staffMembers
 ```
 
 # [C#](#tab/csharp)
@@ -87,10 +87,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/php/get-staffmembers-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-staffmembers-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-staffmembers-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -98,7 +94,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 ---
 
 ### Response
-Here's an example of the response. 
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -112,7 +108,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/staffMembers",
     "value":[
         {
             "id":"8ee1c803-a1fa-406d-8259-7ab53233f148",
@@ -175,7 +171,7 @@ Content-type: application/json
         {
             "id":"71d64d0e-7225-49b6-b0b1-070d476cda51",
             "displayName":"Samantha Booth",
-            "emailAddress":"samanthab@contoso.onmicrosoft.com",
+            "emailAddress":"samanthab@contoso.com",
             "availabilityIsAffectedByPersonalCalendar":true,
             "colorIndex":0,
             "role":"administrator",

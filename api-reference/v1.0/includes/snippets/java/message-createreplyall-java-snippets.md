@@ -4,15 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.me().messages("{id}")
-	.createReplyAll(MessageCreateReplyAllParameterSet
-		.newBuilder()
-		.withMessage(null)
-		.withComment(null)
-		.build())
-	.buildRequest()
-	.post();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.me().messages().byMessageId("{message-id}").createReplyAll().post(null);
+
 
 ```

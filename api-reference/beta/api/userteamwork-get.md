@@ -118,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [licenseDetails: getTeamsLicensingDetails](licenseDetails-getteamslicensingdetails.md)
 - [Get teamwork](teamwork-get.md)

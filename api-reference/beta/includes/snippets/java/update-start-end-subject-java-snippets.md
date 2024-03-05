@@ -4,15 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OnlineMeeting onlineMeeting = new OnlineMeeting();
-onlineMeeting.startDateTime = OffsetDateTimeSerializer.deserialize("2020-09-09T21:33:30.8546353+00:00");
-onlineMeeting.endDateTime = OffsetDateTimeSerializer.deserialize("2020-09-09T22:03:30.8566356+00:00");
-onlineMeeting.subject = "Patch Meeting Subject";
+OffsetDateTime startDateTime = OffsetDateTime.parse("2020-09-09T14:33:30.8546353-07:00");
+onlineMeeting.setStartDateTime(startDateTime);
+OffsetDateTime endDateTime = OffsetDateTime.parse("2020-09-09T15:03:30.8566356-07:00");
+onlineMeeting.setEndDateTime(endDateTime);
+onlineMeeting.setSubject("Patch Meeting Subject");
+OnlineMeeting result = graphClient.me().onlineMeetings().byOnlineMeetingId("{onlineMeeting-id}").patch(onlineMeeting);
 
-graphClient.me().onlineMeetings("MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi")
-	.buildRequest()
-	.patch(onlineMeeting);
 
 ```

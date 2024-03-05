@@ -57,7 +57,7 @@ This type inherits from [teamsAppInstallation](teamsappinstallation.md).
 }
 ```
 
-## See also
+## Related content
 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)

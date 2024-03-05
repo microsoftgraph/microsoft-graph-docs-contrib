@@ -20,6 +20,9 @@ $requestBody->setImageType(new CloudPcProvisioningPolicyImageType('custom'));
 $windowsSettings = new CloudPcWindowsSettings();
 $windowsSettings->setLanguage('en-US');
 $requestBody->setWindowsSettings($windowsSettings);
+$windowsSetting = new CloudPcWindowsSetting();
+$windowsSetting->setLocale('en-US');
+$requestBody->setWindowsSetting($windowsSetting);
 
 $result = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->byCloudPcProvisioningPolicyId('cloudPcProvisioningPolicy-id')->patch($requestBody)->wait();
 

@@ -174,7 +174,7 @@ The following is a JSON representation of the resource
 }
 ```
 
-## See also
+## Related content
 
 - [Get mailbox settings](../api/user-get-mailboxsettings.md)
 - [Update mailbox settings](../api/user-update-mailboxsettings.md)

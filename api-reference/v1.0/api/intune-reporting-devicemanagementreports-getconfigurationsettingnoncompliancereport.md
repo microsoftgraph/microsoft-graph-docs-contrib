@@ -72,7 +72,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_reporting_devicemanagementreports_getconfigurationsettingnoncompliancereport_getconfigurationsettingnoncompliancereport_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getConfigurationSettingNonComplianceReport
-
 Content-type: application/json
 Content-length: 278
 
@@ -95,12 +94,36 @@ Content-length: 278
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport-getconfigurationsettingnoncompliancereport-action-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport-getconfigurationsettingnoncompliancereport-action-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport-getconfigurationsettingnoncompliancereport-action-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport-getconfigurationsettingnoncompliancereport-action-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport-getconfigurationsettingnoncompliancereport-action-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport-getconfigurationsettingnoncompliancereport-action-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport-getconfigurationsettingnoncompliancereport-action-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport-getconfigurationsettingnoncompliancereport-action-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

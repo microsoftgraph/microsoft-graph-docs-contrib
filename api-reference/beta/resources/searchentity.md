@@ -55,7 +55,7 @@ The following JSON representation shows the resource type.
 ```
 
 
-## See also
+## Related content
 
 [query](../api/search-query.md)
 

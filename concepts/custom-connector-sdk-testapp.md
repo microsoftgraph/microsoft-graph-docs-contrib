@@ -78,7 +78,7 @@ When you open the GraphConnectorAgentTest executable file, it reads the Connecti
 
 When you test the connection creation flow or the data source crawl, specify the credentials to access the data source in the ConnectionInfo.json configuration file. The platform reads the credentials and passes them to the connector to access the data source. As long as no one else has access to the ConnectionInfo.json configuration file, the credentials are secure.
 
-## See also
+## Related content
 
 * [Best practices](/graph/custom-connector-sdk-best-practices)
 * [Troubleshooting](/graph/custom-connector-sdk-troubleshooting)

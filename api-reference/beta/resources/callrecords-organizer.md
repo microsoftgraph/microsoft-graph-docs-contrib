@@ -13,16 +13,17 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of a call or meeting organizer in a [callRecord](callrecords-callrecord.md). 
+Represents the identity of a call or meeting organizer in a [callRecord](callrecords-callrecord.md).
 
 Inherits from [participantBase](callrecords-participantbase.md).
 
 ## Properties
 
-| Property | Type                       | Description                                             |
-|:---------|:------------------------------|:--------------------------------------------------------|
-| id       | String                        | Unique identifier for the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
-| identity | [communicationsIdentitySet](communicationsidentityset.md) | The identity of the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
+| Property                | Type                                                                                                   | Description                                                                                                                                                      |
+|:------------------------|:-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id                      | String                                                                                                 | Unique identifier for the call organizer. Inherited from [participantBase](callrecords-participantbase.md).                                                      |
+| identity                | [communicationsIdentitySet](communicationsidentityset.md)                                              | The identity of the call organizer. Inherited from [participantBase](callrecords-participantbase.md).                                                            |
+| administrativeUnitInfos | [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection | List of [administrativeUnitInfo](callrecords-administrativeunitinfo.md) of the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
 
 ## JSON representation
 
@@ -33,17 +34,19 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.callRecords.organizer",
   "optionalProperties": [
     "id",
-    "identity"
+    "identity",
+    "administrativeUnitInfos"
   ],
   "openType": true
 } -->
 ```json
 {
   "id": "String (identity)",
-  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"}
+  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
+  "administrativeUnitInfos": [{"@odata.type": "microsoft.graph.callRecords.administrativeUnitInfo"}]
 }
 ```
 
-## See also
+## Related content
 
 For examples that show how to use the **organizer** resource, see [callRecord](callrecords-callrecord.md).

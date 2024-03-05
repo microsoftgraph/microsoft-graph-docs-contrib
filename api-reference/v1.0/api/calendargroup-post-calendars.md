@@ -142,7 +142,7 @@ Content-type: application/json
     "canEdit": true,
     "owner": {
         "name": "Adele Vance",
-        "address": "adelev@contoso.OnMicrosoft.com"
+        "address": "adelev@contoso.com"
     }
 }
 ```

@@ -33,13 +33,13 @@ If you want your bot to access a live stream of your customers' audio and video 
 
 **If you'd like more control over your media, choose this option**. You'll have direct access to media streams and will be able to make use of video-based screen sharing. You'll be able to build more sophisticated IVR scenarios that are speech enabled. This is a heavier weight solution that gives you the most flexibility in how you want to program your media.
 
-See also the [requirements and considerations](/microsoftteams/platform/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots) for application-hosted media bots.
+Related content the [requirements and considerations](/microsoftteams/platform/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots) for application-hosted media bots.
 
 For an example that shows you how to create a bot that uses application-hosted media, see the [local media samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples).
 
 ![Local hosting diagram](images/communications-local-media.PNG)
 
-## See also
+## Related content
 
 - [Calls permissions](./permissions-reference.md)
 - [Teams API overview](teams-concept-overview.md)

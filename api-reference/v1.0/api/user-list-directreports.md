@@ -3,6 +3,7 @@ title: "List directReports"
 description: "Get a user's direct reports."
 ms.localizationpriority: high
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -37,6 +38,8 @@ GET /users/{id | userPrincipalName}/directReports
 ```
 
 To retrieve the user and their direct reports, use the `$expand` query parameter:
+
+>**Note**: `$expand` returns a maximum of 20 objects. For details, see [query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -109,7 +112,7 @@ GET https://graph.microsoft.com/v1.0/me/directReports
 ---
 
 ### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -132,12 +135,12 @@ Content-type: application/json
             "displayName": "Conf Room Adams",
             "givenName": null,
             "jobTitle": null,
-            "mail": "Adams@Contoso.OnMicrosoft.com",
+            "mail": "Adams@contoso.com",
             "mobilePhone": null,
             "officeLocation": null,
             "preferredLanguage": null,
             "surname": null,
-            "userPrincipalName": "Adams@Contoso.OnMicrosoft.com"
+            "userPrincipalName": "Adams@contoso.com"
         }
     ]
 }

@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ContentApproval complianceChange = new ContentApproval();
-complianceChange.isRevoked = true;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.admin().windows().updates().updatePolicies("983f03cd-03cd-983f-cd03-3f98cd033f98").complianceChanges("bba2a340-1e32-b5ed-186e-678e16033319")
-	.buildRequest()
-	.patch(complianceChange);
+com.microsoft.graph.beta.models.windowsupdates.ContentApproval complianceChange = new com.microsoft.graph.beta.models.windowsupdates.ContentApproval();
+complianceChange.setOdataType("#microsoft.graph.windowsUpdates.contentApproval");
+complianceChange.setIsRevoked(true);
+com.microsoft.graph.models.windowsupdates.ComplianceChange result = graphClient.admin().windows().updates().updatePolicies().byUpdatePolicyId("{updatePolicy-id}").complianceChanges().byComplianceChangeId("{complianceChange-id}").patch(complianceChange);
+
 
 ```

@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryCase ediscoveryCase = new EdiscoveryCase();
-ediscoveryCase.displayName = "My Case 1 - Renamed";
-ediscoveryCase.description = "Updated description";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("22aa2acd-7554-4330-9ba9-ce20014aaae4")
-	.buildRequest()
-	.patch(ediscoveryCase);
+com.microsoft.graph.models.security.EdiscoveryCase ediscoveryCase = new com.microsoft.graph.models.security.EdiscoveryCase();
+ediscoveryCase.setDisplayName("My Case 1 - Renamed");
+ediscoveryCase.setDescription("Updated description");
+com.microsoft.graph.models.security.EdiscoveryCase result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").patch(ediscoveryCase);
+
 
 ```

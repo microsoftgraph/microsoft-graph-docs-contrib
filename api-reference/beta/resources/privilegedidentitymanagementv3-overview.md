@@ -125,7 +125,7 @@ All activities made through PIM for Microsoft Entra roles are logged in Microsof
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -146,7 +146,7 @@ For delegated scenarios, the signed-in user must be assigned the *Privileged Rol
 
 The tenant where Privileged Identity Management is being used must have enough purchased or trial licenses. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
 
-## See also
+## Related content
 
 - See the following articles to learn more about working with PIM APIs:
   - [Working with rules for Microsoft Entra roles in PIM APIs](/graph/identity-governance-pim-rules-overview).
@@ -161,9 +161,5 @@ The tenant where Privileged Identity Management is being used must have enough p
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Error: /resources/privilegedidentitymanagementv3-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
+  "suppressions": []
 } -->

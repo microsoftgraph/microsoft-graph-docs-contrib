@@ -214,7 +214,7 @@ The search API has the following limitations:
 
 - The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema). Use the tenant-level or default [search schema](/sharepoint/manage-search-schema).
 
-## See also
+## Related content
 
 - Learn more about a few key use cases:
   - [Search Teams messages](/graph/search-concept-chat-messages)

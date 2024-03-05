@@ -55,5 +55,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [Get team](../api/team-get.md)

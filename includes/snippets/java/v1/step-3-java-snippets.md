@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
 ItemBody body = new ItemBody();
-body.content = "Hello World";
-chatMessage.body = body;
+body.setContent("Hello World");
+chatMessage.setBody(body);
+ChatMessage result = graphClient.chats().byChatId("{chat-id}").messages().post(chatMessage);
 
-graphClient.chats("19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2").messages()
-	.buildRequest()
-	.post(chatMessage);
 
 ```

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.onPremisesPublishingProfiles.item.agents.item.on_premises_agent_item_request_builder import OnPremisesAgentItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
