@@ -5,7 +5,6 @@ author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: partner-customer-administration
 doc_type: resourcePageType
-ms.custom: zt-include
 ---
 
 # Granular delegated admin privileges (GDAP) API overview
@@ -109,7 +108,7 @@ To manage delegated admin relationships, the calling principal must be in the pa
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -124,9 +123,5 @@ To manage delegated admin relationships, the calling principal must be in the pa
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Error: /resources/delegatedadminrelationships-api-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
+  "suppressions": []
 } -->

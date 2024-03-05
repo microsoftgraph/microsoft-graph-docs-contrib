@@ -4,7 +4,8 @@ description: "Represents an individual template setting definition, including th
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ---
 
 # settingTemplateValue resource type

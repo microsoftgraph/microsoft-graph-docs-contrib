@@ -1142,6 +1142,8 @@ items:
                 href: api/outlookuser-list-mastercategories.md
               - name: Create category
                 href: api/outlookuser-post-mastercategories.md
+              - name: List modules
+                href: api/educationclass-list-modules.md                
               - name: Get category
                 href: api/outlookcategory-get.md
               - name: Update category
@@ -4690,13 +4692,17 @@ items:
               - name: Remove rubric from assignment
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
-                href: api/educationassignment-delta.md              
+                href: api/educationassignment-delta.md  
               - name: Add grading category
                 href: api/educationassignment-post-gradingcategory.md
               - name: Update grading category
                 href: api/educationgradingcategory-update.md
               - name: Remove grading category
                 href: api/educationassignment-delete-gradingcategory.md
+              - name: Activate assignment
+                href: api/educationassignment-activate.md
+              - name: Deactivate assignment
+                href: api/educationassignment-deactivate.md
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -4731,6 +4737,35 @@ items:
                     href: api/educationgradingcategory-update.md
                   - name: Delete
                     href: api/educationassignment-delete-gradingcategory.md
+          - name: Module
+            href: resources/educationmodule.md
+            items:
+            - name: Create module
+              href: api/educationclass-post-module.md
+            - name: Get module
+              href: api/educationmodule-get.md
+            - name: Update module
+              href: api/educationmodule-update.md
+            - name: Delete module
+              href: api/educationmodule-delete.md
+            - name: List module resources
+              href: api/educationmodule-list-resources.md
+            - name: Create module resource
+              href: api/educationmodule-post-resources.md
+            - name: Get module resource
+              href: api/educationmoduleresource-get.md
+            - name: Update module resource
+              href: api/educationmoduleresource-update.md
+            - name: Delete resource from module
+              href: api/educationmoduleresource-delete.md
+            - name: Publish module
+              href: api/educationmodule-publish.md
+            - name: Set up module resources folder
+              href: api/educationmodule-setupresourcesfolder.md
+            - name: Pin module
+              href: api/educationmodule-pin.md
+            - name: Unpin module
+              href: api/educationmodule-unpin.md                  
           - name: Rubric
             href: resources/educationrubric.md
             items:
@@ -8784,6 +8819,10 @@ items:
                     items:
                       - name: Get virtual appointment join link
                         href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+                      - name: Send virtual appointment reminder sms
+                        href: api/virtualappointment-sendvirtualappointmentremindersms.md
+                      - name: Send virtual appointment sms
+                        href: api/virtualappointment-sendvirtualappointmentsms.md
               - name: Presence
                 href: resources/presence.md
                 items:

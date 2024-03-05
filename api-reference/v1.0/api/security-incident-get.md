@@ -50,6 +50,8 @@ If successful, this method returns a `200 OK` response code and an [incident](..
 
 ### Request
 
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -96,6 +98,9 @@ GET https://graph.microsoft.com/v1.0/security/incidents/2972395
 ---
 
 ### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -131,6 +136,11 @@ Content-type: application/json
 		"createdBy": "DavidS@contoso.com",
 		"createdTime": "2021-09-30T12:07:37.2756993Z"
       }
-    ]
+    ],
+    "systemTags" : [
+        "Defender Experts"
+    ],
+    "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
+    "lastModifiedBy": "DavidS@contoso.onmicrosoft.com"
 }
 ```

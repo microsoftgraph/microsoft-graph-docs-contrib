@@ -90,7 +90,7 @@ Other findings include:
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -118,9 +118,6 @@ For more information, see [Permissions Management roles and permissions levels](
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /resources/permissions-management-api-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')",
     "Error: /resources/permissions-management-api-overview.md:
       Exception processing links.
       Value cannot be null. (Parameter 'linkUrl')"

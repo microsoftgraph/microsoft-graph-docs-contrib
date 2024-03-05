@@ -1387,7 +1387,7 @@ items:
           - name: eDiscovery (preview)
             items:
               - name: Overview
-                href: resources/ediscovery-eDiscoveryapioverview.md
+                href: resources/ediscovery-ediscoveryapioverview.md
               - name: eDiscovery case
                 href: resources/ediscovery-case.md
                 items:
@@ -10742,11 +10742,11 @@ items:
           - name: Grading category
             href: resources/educationgradingcategory.md
             items:
-              - name: Add grading category
+              - name: Add
                 href: api/educationassignment-post-gradingcategory.md
-              - name: Update grading category
+              - name: Update
                 href: api/educationgradingcategory-update.md
-              - name: Delete grading category
+              - name: Delete
                 href: api/educationassignment-delete-gradingcategory.md
           - name: Module
             href: resources/educationmodule.md
@@ -13429,6 +13429,16 @@ items:
                         href: api/internaldomainfederation-update.md
                       - name: Delete
                         href: api/internaldomainfederation-delete.md
+                  - name: Federated token validation (preview)
+                    items:
+                    - name: Federated token validation policy
+                      href: resources/federatedtokenvalidationpolicy.md
+                    - name: List
+                      href: api/policyroot-list-federatedtokenvalidationpolicy.md
+                    - name: Get
+                      href: api/federatedtokenvalidationpolicy-get.md
+                    - name: Update
+                      href: api/federatedtokenvalidationpolicy-update.md
               - name: Identity provider (deprecated)
                 items:
                   - name: Identity provider type
@@ -15947,7 +15957,7 @@ items:
                     href: resources/dailyuserinsightmetricsroot.md
                   - name: Monthly user insight
                     href: resources/monthlyuserinsightmetricsroot.md
-                  - name: Active users breakdown
+                  - name: Active users breakdown (deprecated)
                     href: resources/activeusersbreakdownmetric.md
                     items:
                     - name: List daily
@@ -16391,6 +16401,12 @@ items:
             items:
               - name: Overview
                 href: resources/partners-billing-api-overview.md
+              - name: Billed reconciliation
+                items:
+                  - name: Billed reconciliation
+                    href: resources/partners-billing-billedreconciliation.md
+                  - name: Export
+                    href: api/partners-billing-billedreconciliation-export.md
               - name: Billed usage
                 items:
                   - name: Billed usage
@@ -18765,6 +18781,13 @@ items:
                     href: api/openshiftchangerequest-approve.md
                   - name: Decline
                     href: api/openshiftchangerequest-decline.md
+              - name: Role definition (preview)
+                href: resources/shiftsroledefinition.md
+                items:
+                  - name: Get
+                    href: api/shiftsroledefinition-get.md
+                  - name: Update
+                    href: api/shiftsroledefinition-update.md
               - name: Schedule
                 href: resources/schedule.md
                 items:

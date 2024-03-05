@@ -2,7 +2,8 @@
 title: "membershipRuleProcessingStatus resource type"
 description: "Represents the current status of dynamic group processing."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "groups"
 doc_type: "resourcePageType"
 ---

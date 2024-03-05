@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [inci
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -150,7 +150,11 @@ Content-Type: application/json
 		"createdBy": "DavidS@contoso.com",
 		"createdTime": "2021-09-30T12:07:37.2756993Z"
       }
-    ]
+    ],
+    "systemTags" : [
+        "Defender Experts"
+    ],
+    "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ..."
 }
 ```
 
