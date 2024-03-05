@@ -1602,7 +1602,7 @@ items:
           - name: Roaming data
             items:
               - name: Cloud clipboard
-                href: resources/cloudclipboarditem.md
+                href: resources/cloudclipboardroot.md
                 items:
                   - name: List
                     href: api/cloudclipboardroot-list-items.md
