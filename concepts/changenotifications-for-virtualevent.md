@@ -325,7 +325,7 @@ The following JSON examples show the responses for each supported change type of
 
 ### Attendance report created
 
-Attendance report created events return the API endpoint of the meetingAttendanceReport object that was created. Users can use this endpoint in the `resourceData` property o query for the details in `meetingAttendanceReport` object.
+Events that are created by an attendance report return the endpoint of the **meetingAttendanceReport** object that was created. Users can use this endpoint in the **resourceData** property to query for the details in **meetingAttendanceReport** object.
 
 ```json
 {
