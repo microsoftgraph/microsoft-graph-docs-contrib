@@ -1,7 +1,7 @@
 ---
 title: "Advanced query capabilities on Microsoft Entra ID objects"
 description: "Microsoft Entra ID objects support advanced query capabilities to efficiently access data."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high

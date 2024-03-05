@@ -2,8 +2,9 @@
 title: "Quickstart: Register an app in the Microsoft identity platform"
 description: In this quickstart, you learn how to register an application with the Microsoft identity platform.
 services: active-directory
-author: faithombongi
-ms.reviewer: ombongifaith, jackson.woods
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: jackson.woods
 ms.date: 01/22/2024
 ms.topic: include
 ms.prod: applications
