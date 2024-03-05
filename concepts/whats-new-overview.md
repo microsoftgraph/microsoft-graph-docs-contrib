@@ -20,7 +20,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Identity and access | Identity and sign-in
 
-Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/federatedtokenvalidationpolicy?view=graph-rest-beta&preserve-view=true) and its associated methods to control enabling or disabling validation of federation authentication tokens. When enabled, Microsoft Entra ID rejects an authentication request if the on-premises federated account and the mapped Microsoft Entra ID account's root domain don't match.
+Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/federatedtokenvalidationpolicy?view=graph-rest-beta&preserve-view=true) and its associated methods to manage whether Microsoft Entra ID validates federation authentication tokens.
 
 ## February 2024: New and generally available
 
