@@ -6823,6 +6823,32 @@
       "CreatedDateTime": "2024-01-29T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "32b8432a-834b-4ee0-8aeb-7775dd55a496",
+          "ApiChange": "Method",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [File share example](https://learn.microsoft.com/en-us/graph/api/chatmessage-post?view=graph-rest-beta&tabs=http#example-5-send-a-message-with-a-file-attachment-in-it-using-file-share-link) operation to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "32b8432a-834b-4ee0-8aeb-7775dd55a496",
+          "ApiChange": "Method",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [File share example](https://learn.microsoft.com/en-us/graph/api/chatmessage-post?view=graph-rest-beta&tabs=http#example-5-send-a-message-with-a-file-attachment-in-it-using-file-share-link) operation to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "32b8432a-834b-4ee0-8aeb-7775dd55a496",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-05T10:52:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }
