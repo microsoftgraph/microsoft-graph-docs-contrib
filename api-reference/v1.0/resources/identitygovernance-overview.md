@@ -6,7 +6,6 @@ author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: conceptualPageType
 ms.date: 11/15/2023
-ms.custom: zt-include
 ---
 
 # Overview of Microsoft Entra ID Governance using Microsoft Graph
@@ -61,7 +60,7 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 

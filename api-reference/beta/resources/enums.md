@@ -112,7 +112,7 @@ Namespace: microsoft.graph
 | others             |
 | unknownFutureValue |
 
-### releaseType values 
+### releaseType values
 
 |Member|
 |:---|
@@ -3081,6 +3081,8 @@ Possible values for user account types (group membership), per Windows definitio
 | Member
 |:-------
 | low
+| medium
+| high
 
 ### permissionType values
 
@@ -4281,6 +4283,18 @@ Possible values for user account types (group membership), per Windows definitio
 |group|
 |chat|
 |tenant|
+|unknownFutureValue|
+
+### rootDomains values
+
+| Member|
+|:---|
+|none|
+|all|
+|allFederated|
+|allManaged|
+|enumerated|
+|allManagedAndEnumeratedFederated|
 |unknownFutureValue|
 
 ### allowedRolePrincipalTypes values

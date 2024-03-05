@@ -7,11 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
-	phoneNumbers = @(
-		"+13129224122"
-		"+1242421412"
+	attendees = @(
+		@{
+			phoneNumber = "+13129224122"
+			timeZone = "Pacific Standard Time"
+		}
+		@{
+			phoneNumber = "+1242421412"
+			timeZone = "Eastern Standard Time"
+		}
 	)
-	virtualAppointmentSmsType = "confirmation"
+	messageType = "confirmation"
 }
 
 # A UPN can also be used as -UserId.

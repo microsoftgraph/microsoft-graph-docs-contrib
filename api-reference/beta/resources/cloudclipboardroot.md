@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [cloudClipboardRoot](../resources/cloudclipboardroot.md) resource is an entry point for users' [cloudClipboardItem](../resources/cloudclipboarditem.md) objects.
+Represents the information and properties of a cloudClipboardRoot and it's an entry point for [cloudClipboardItem](../resources/cloudclipboarditem.md) objects.
 
 ## Methods
 |Method|Return type|Description|
