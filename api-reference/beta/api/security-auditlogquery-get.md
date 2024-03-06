@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/beta/security/auditLog/queries/{auditLogQueryId}
 
 ---
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -128,7 +127,9 @@ Content-Type: application/json
     "displayName": "String",
     "filterStartDateTime": "String (timestamp)",
     "filterEndDateTime": "String (timestamp)",
-    "recordTypeFilter": "String",
+    "recordTypeFilters": [
+      "String"
+    ],
     "keywordFilter": "String",
     "serviceFilter": "String",
     "operationFilters": [
