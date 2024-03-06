@@ -69,6 +69,7 @@ The following example shows a request. This example doesn't return the **credent
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->
@@ -112,6 +113,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get_credentials",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->

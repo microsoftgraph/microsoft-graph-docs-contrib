@@ -61,6 +61,7 @@ The following is an example of the request. This example doesn't return the **cr
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->
@@ -104,6 +105,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get_credentials",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->
