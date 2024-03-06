@@ -22,7 +22,7 @@ In Microsoft Entra, an application is defined by an **application** object and a
 
 The application object resides in the home tenant where the app was registered. A service principal is created in every tenant where the app is installed and used, including the home tenant. For more information, see [Application and service principal objects in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals).
 
-In Microsoft Graph, an application is represented by the [application resource type](application.md) and a service principal is represented by the [servicePrincipal resource type](serviceprincipal.md). The details of the two object can be accessed on the Microsoft Entra admin center through the **Identity**>**App registrations** and **Identity**>**Enterprise applications** menus respectively.
+In Microsoft Graph, an application is represented by the [application resource type](application.md) and a service principal is represented by the [servicePrincipal resource type](serviceprincipal.md). The details of the two objects can be accessed on the Microsoft Entra admin center through the **Identity** > **Applications** > **App registrations** and **Identity** > **Applications** > **Enterprise applications** menus respectively.
 
 ## API use cases for managing applications
 
