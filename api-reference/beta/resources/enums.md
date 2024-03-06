@@ -112,7 +112,7 @@ Namespace: microsoft.graph
 | others             |
 | unknownFutureValue |
 
-### releaseType values 
+### releaseType values
 
 |Member|
 |:---|
@@ -162,45 +162,48 @@ Namespace: microsoft.graph
 
 ### recommendationType values
 
-| Member                      |
-| :-------------------------- |
-| adfsAppsMigration           |
-| enableDesktopSSO            |
-| enablePHS                   |
-| enableProvisioning          |
-| switchFromPerUserMFA        |
-| tenantMFA                   |
-| thirdPartyApps              |
-| turnOffPerUserMFA           |
-| useAuthenticatorApp         |
-| useMyApps                   |
-| staleApps                   |
-| staleAppCreds               |
-| applicationCredentialExpiry |
-| servicePrincipalKeyExpiry   |
-| adminMFAV2                  |
-| blockLegacyAuthentication   |
-| integratedApps              |
-| mfaRegistrationV2           |
-| pwagePolicyNew              |
-| passwordHashSync            |
-| oneAdmin                    |
-| roleOverlap                 |
-| selfServicePasswordReset    |
-| signinRiskPolicy            |
-| userRiskPolicy              |
-| verifyAppPublisher          |
-| privateLinkForAAD           |
-| appRoleAssignmentsGroups    |
-| appRoleAssignmentsUsers     |
-| managedIdentity             |
-| overprivilegedApps          |
-| unknownFutureValue          |
-| longLivedCredentials        |
-| aadConnectDeprecated        |
-| adalToMsalMigration         |
-| ownerlessApps               |
-| inactiveGuests              |
+| Member                              |
+| :---------------------------------- |
+| adfsAppsMigration                   |
+| enableDesktopSSO                    |
+| enablePHS                           |
+| enableProvisioning                  |
+| switchFromPerUserMFA                |
+| tenantMFA                           |
+| thirdPartyApps                      |
+| turnOffPerUserMFA                   |
+| useAuthenticatorApp                 |
+| useMyApps                           |
+| staleApps                           |
+| staleAppCreds                       |
+| applicationCredentialExpiry         |
+| servicePrincipalKeyExpiry           |
+| adminMFAV2                          |
+| blockLegacyAuthentication           |
+| integratedApps                      |
+| mfaRegistrationV2                   |
+| pwagePolicyNew                      |
+| passwordHashSync                    |
+| oneAdmin                            |
+| roleOverlap                         |
+| selfServicePasswordReset            |
+| signinRiskPolicy                    |
+| userRiskPolicy                      |
+| verifyAppPublisher                  |
+| privateLinkForAAD                   |
+| appRoleAssignmentsGroups            |
+| appRoleAssignmentsUsers             |
+| managedIdentity                     |
+| overprivilegedApps                  |
+| unknownFutureValue                  |
+| longLivedCredentials                |
+| aadConnectDeprecated                |
+| adalToMsalMigration                 |
+| ownerlessApps                       |
+| inactiveGuests                      |
+| aadGraphDeprecationApplication      |
+| aadGraphDeprecationServicePrincipal |
+| mfaServerDeprecation                |
 
 ### layoutTemplateType values
 
@@ -1814,6 +1817,14 @@ Namespace: microsoft.graph
 |system
 |unknownFutureValue
 
+### windowsSettingType values 
+
+| Member             |
+| :----------------- |
+| roaming            |
+| backup             |
+| unknownFutureValue |
+
 ### workforceIntegrationEncryptionProtocol values
 
 | Member
@@ -3078,6 +3089,8 @@ Possible values for user account types (group membership), per Windows definitio
 | Member
 |:-------
 | low
+| medium
+| high
 
 ### permissionType values
 
@@ -4280,6 +4293,18 @@ Possible values for user account types (group membership), per Windows definitio
 |tenant|
 |unknownFutureValue|
 
+### rootDomains values
+
+| Member|
+|:---|
+|none|
+|all|
+|allFederated|
+|allManaged|
+|enumerated|
+|allManagedAndEnumeratedFederated|
+|unknownFutureValue|
+
 ### allowedRolePrincipalTypes values
 
 |Member|
@@ -4595,6 +4620,24 @@ Possible values for user account types (group membership), per Windows definitio
 |noRecentDataCollected|
 |unknownFutureValue|
 
+### devicePlatformType values
+
+| Member             |
+|:-------------------|
+| android            |
+| androidForWork     |
+| iOS                |
+| macOS              |
+| windowsPhone81     |
+| windows81AndLater  |
+| windows10AndLater  |
+| androidWorkProfile |
+| unknown            |
+| androidAOSP        |
+| androidMobileApplicationManagement|
+| iOSMobileApplicationManagement|
+| unknownFutureValue|
+
 ### printReleaseType values 
 
 |Member|
@@ -4611,3 +4654,11 @@ Possible values for user account types (group membership), per Windows definitio
 |restrictedToOrganization|
 |unknownFutureValue|
 
+### conditionalAccessTransferMethods values
+
+|Member|
+|:---|
+|none|
+|deviceCodeFlow|
+|authenticationTransfer|
+|unknownFutureValue|

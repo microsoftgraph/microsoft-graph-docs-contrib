@@ -123,7 +123,7 @@ Content-type: application/json
           "displayName": "Cost Center",
           "localizations": [
             {
-              "languageTag": "ru-RU",
+              "languageTag": "ru",
               "displayName": "центр затрат"
             }
           ]

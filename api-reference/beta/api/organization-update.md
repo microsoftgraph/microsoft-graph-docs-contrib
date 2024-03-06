@@ -49,11 +49,17 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property  | Type |Description|
 |:---------------|:--------|:----------|
+|businessPhones|String collection| Telephone number for the organization. Although this is a string collection, only one number can be set for this property. |
+|city|String| City name of the address for the organization. |
 |marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
 |onPremisesSyncEnabled|Boolean|`true` to enable this object to be synced from an on-premises directory; `false` to disable syncing from an on-premises directory; Nullable. `null` if this object has never been synced from an on-premises directory (default).            |
+|postalCode|String| Postal code of the address for the organization. |
+|preferredLanguage|String| The preferred language for the organization. Should follow ISO 639-1 Code; for example, en. |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
+|state|String| State name of the address for the organization. |
+|street|String| Street name of the address for organization. |
 |technicalNotificationMails|String collection|                                        **Notes**: not nullable.            |
 
 Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 

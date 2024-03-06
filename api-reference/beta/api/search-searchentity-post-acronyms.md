@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Create acronym
+
 Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -17,6 +18,7 @@ Create a new [acronym](../resources/search-acronym.md) object.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "search_searchentity_post_acronyms" } -->
@@ -33,33 +35,35 @@ POST /search/acronyms
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [acronym](../resources/search-acronym.md) object.
 
 The following table shows the properties that are available when you create an [acronym](../resources/search-acronym.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|A brief description of the acronym that gives users more info about the acronym and what it stands for. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|standsFor|String collection|What the acronym stands for.|
-|state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, `excluded`, or `unknownFutureValue`.|
-|webUrl|String|The URL of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-
-
+|description|String|A brief description of the acronym that gives users more information about the acronym and what it stands for. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|standsFor|String|What the acronym stands for.|
+|state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
+|webUrl|String|The URL of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 
 ## Response
 
-If successful, this method returns a `200 Ok` response code.
+If successful, this method returns a `201 Created` response code with the ID of the acronym created.
 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -114,18 +118,19 @@ Content-Type: application/json
 ---
 
 ### Response
-Here is an example of the response.
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.search.acronym"
 }-->
 ```http
-HTTP/1.1 200 Ok
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
   "id": "733b26d5-af76-4eea-ac69-1a0ce8716897"
 }
 ```
-

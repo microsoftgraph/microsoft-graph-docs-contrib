@@ -2,10 +2,11 @@
 title: "Microsoft 365 group behaviors and provisioning options"
 description: "Configure behaviors and resources to provision when creating a Microsoft 365 group using the Microsoft Graph groups API."
 author: FaithOmbongi
-ms.reviewer: jodah
+ms.author: ombongifaith
+ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.topic: conceptual
 ms.localizationpriority: high
-ms.date: 02/14/2024
+ms.date: 02/29/2024
 #Customer intent: As a developer, I want to learn how to use Microsoft Graph to set specific group behaviors and provision specific resources, so that I can tailor the group's functionality and capabilities to meet the needs of my organization.
 ---
 
@@ -31,11 +32,11 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 
 ## Provision resources for a group
 
-**resourceProvisioningOptions** is a string collection that specifies group resources to be provisioned as part of the Microsoft 365 group. These resources can be specified during group creation or update.
+**resourceProvisioningOptions** is a string collection that specifies the resources that are associated with the Microsoft 365 group. These resources can be specified during group creation or update.
 
 | Supported values for resourceProvisioningOptions | Description |
 |:-|:-|
-| `Team` | Provision a team for this group in Microsoft Teams. Additionally, this value can also be added on [group update](/graph/api/group-update) through a `PATCH` operation, in order to provision a team from an existing Microsoft 365 group. If not set, the Microsoft 365 group isn't associated with a team. |
+| `Team` | The Microsoft 365 group is or can be associated with a Teams team. If not set, the Microsoft 365 group isn't associated with a team. |
 
 ## Related content
 
