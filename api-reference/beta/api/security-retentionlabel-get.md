@@ -3,7 +3,7 @@ title: "Get retentionLabel"
 description: "Read the properties and relationships of a retentionLabel object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
