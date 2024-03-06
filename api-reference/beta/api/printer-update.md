@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "printer_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/printer-update-permissions.md)]
 
->**Note:** Right now, only printers that don't have physical device can be updated using application permissions.
+>**Note:** Right now, only printers that don't have physical devices can be updated using application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ PATCH /print/printers/{id}
 
 ### Delegated permissions and JSON payload
 
-If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
+If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
 
 The following properties can be updated using delegated permissions.
 
@@ -75,7 +75,7 @@ supplied replaces the value(s) of the corresponding Printer attribute on the tar
 > **Note:** Do not pass operation attributes in the request body. The request body should only contain printer attributes.
 
 
-> **Note:** For printers to work with a particular platform, it should meet the requirements of that platform. For example, on windows client, it is expected that printer specifies all attributes that are considered mandatory as per [MOPRIA](https://mopria.org) specs. Please note MOPRIA specs are available to only the paid members of MOPRIA.
+> **Note:** For printers to work with a particular platform, it should meet the requirements of that platform. For example, on the Windows client, it is expected that the printer specifies all attributes that are considered mandatory as per [MOPRIA](https://mopria.org) specs. Please note MOPRIA specs are available to only the paid members of MOPRIA.
 
 ## Response
 
