@@ -11,18 +11,17 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.search
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of a [bookmark](../resources/search-bookmark.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "search_bookmark_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/search-bookmark-get-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
 
 ## HTTP request
 
@@ -42,7 +41,7 @@ This method supports the `select`, `expand`, `filter`, `orderBy`, `maxTop`, and 
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 
@@ -64,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/search/bookmarks/733b26d5-af76-4eea-ac69-1a0ce8716897
+GET https://graph.microsoft.com/v1.0/search/bookmarks/733b26d5-af76-4eea-ac69-1a0ce8716897
 ```
 
 ### Response

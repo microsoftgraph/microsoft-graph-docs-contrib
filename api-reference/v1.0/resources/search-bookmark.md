@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.search
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a bookmark that is an administrative answer in Microsoft Search results for common search queries in an organization. A bookmark has many properties that allow administrators to make common resources more accessible in their organization.
 
 Inherits from [searchAnswer](../resources/search-searchanswer.md).

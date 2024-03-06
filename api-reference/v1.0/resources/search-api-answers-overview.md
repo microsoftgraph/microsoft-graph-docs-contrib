@@ -9,8 +9,6 @@ doc_type: conceptualPageType
 
 # Use the Microsoft Search API to manage administrative answers
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 You can use Microsoft Graph to [manage administrative search answer results](/graph/search-concept-answers) in the [Microsoft Search](/microsoftsearch/overview-microsoft-search) experience.
 
 Requests to manage administrative search answers are performed by global administrators, search administrators, search editors, or are performed on behalf of an application without the presence of a signed-in user, identified using an [access token with application permission](/graph/auth-v2-service).

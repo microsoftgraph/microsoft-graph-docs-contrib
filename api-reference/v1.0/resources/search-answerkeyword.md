@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.search
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents answer keywords that allow users to define words and phrases that trigger an administrative search answer to appear in search results.
 
 ## Properties

@@ -1,28 +1,27 @@
 ---
-title: "Update qna"
-description: "Update the properties of a qna object."
+title: "Create qna"
+description: "Create a new qna object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# Update qna
+# Create qna
 
 Namespace: microsoft.graph.search
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Update the properties of a [qna](../resources/search-qna.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Create a new [qna](../resources/search-qna.md) object.
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "search_qna_update" } -->
-[!INCLUDE [permissions-table](../includes/permissions/search-qna-update-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
 
 ## HTTP request
 
@@ -31,21 +30,21 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /search/qnas/{qnaId}
+POST /search/qnas
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [qna](../resources/search-qna.md) object.
 
->**Note:** Any updates to the properties of a collection, such as keywords, replace the entire collection.
+The following table shows the properties that are available when you create a [qna](../resources/search-qna.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -63,7 +62,7 @@ PATCH /search/qnas/{qnaId}
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `201 Created` response code with the ID of the question and answer created.
 
 ## Examples
 
@@ -73,14 +72,26 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_qna"
+  "name": "create_qna_from_qnas"
 }-->
-``` http
-PATCH https://graph.microsoft.com/beta/search/qnas/733b26d5-af76-4eea-ac69-1a0ce8716897
+```http
+POST https://graph.microsoft.com/v1.0/search/qnas
 Content-Type: application/json
 
 {
-  "description": "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a weekend."
+  "displayName": "Global Country Holidays",
+  "webUrl": "http://www.contoso.com/",
+  "description": "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a weekend.    <table>    <thead>    <tr>    <td><strong>2021 Dates</strong></td>    <td><strong>Holiday</strong></td>    </tr>    </thead>    <tbody>    <tr>        <td>January 1, 2021</td>        <td>New Year's Day</td>    </tr>        <tr>        <td>January 18, 2021</td>        <td>Martin Luther King Day</td>    </tr>        <tr>        <td>February 15, 2021</td>        <td>Presidents Day</td>    </tr>        <tr>        <td>May 31, 2021</td>        <td>Memorial Day</td>    </tr>        <tr>        <td>July 5, 2021</td>        <td>Independence Day</td>    </tr>        <tr>        <td>September 6, 2021</td>        <td>Labor Day</td>    </tr>        <tr>        <td>November 25, 2021 - November 26, 2021</td>        <td>Thanksgiving Day and Day after Thanksgiving</td>    </tr>    <tr>        <td>December 23, 2021 - December 24, 2021</td>        <td>Christmas Eve and Christmas Day</td>    </tr>    </tbody>    </table>",
+  "keywords":  {
+    "keywords": ["new years day", "martin luther king day", "presidents day", "memorial day", "independence day", "labor day", "thanksgiving", "christmas"],
+    "reservedKeywords": ["holidays", "paid days off"],
+    "matchSimilarKeywords": true
+  },
+  "availabilityStartDateTime": "2020-09-21T20:01:37Z",
+  "availabilityEndDateTime": "2021-12-31T20:01:37Z",
+  "languageTags": ["en-us"],
+  "platforms": ["ios"],
+  "state": "published"
 }
 ```
 
@@ -88,10 +99,17 @@ Content-Type: application/json
 
 The following example shows the response.
 
-<!-- {
+<!--{
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.search.qna"
 }-->
-``` http
-HTTP/1.1 204 No Content
+```http
+HTTP/1.1 201 Created
+Location: /733b26d5-af76-4eea-ac69-1a0ce8716897
+Content-Type: application/json
+
+{
+  "id": "733b26d5-af76-4eea-ac69-1a0ce8716897"
+}
 ```

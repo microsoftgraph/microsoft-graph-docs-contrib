@@ -11,18 +11,17 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.search
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of a [bookmark](../resources/search-bookmark.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "search_bookmark_update" } -->
-[!INCLUDE [permissions-table](../includes/permissions/search-bookmark-update-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
 
 ## HTTP request
 
@@ -38,7 +37,7 @@ PATCH /search/bookmarks/{bookmarksId}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -79,13 +78,14 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/search/bookmarks/733b26d5-af76-4eea-ac69-1a0ce8716897
+PATCH https://graph.microsoft.com/v1.0/search/bookmarks/733b26d5-af76-4eea-ac69-1a0ce8716897
 Content-Type: application/json
 
 {
   "description": "Book a fancy vacation in Tuscany or browse museums in Florence."
 }
 ```
+
 
 ### Response
 

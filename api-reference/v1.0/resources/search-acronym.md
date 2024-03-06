@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.search
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an acronym that is an administrative answer in Microsoft Search results to define common acronyms in an organization.
 
 Inherits from [searchAnswer](../resources/search-searchanswer.md).
@@ -69,3 +67,4 @@ The following JSON representation shows the resource type.
   "webUrl": "String"
 }
 ```
+

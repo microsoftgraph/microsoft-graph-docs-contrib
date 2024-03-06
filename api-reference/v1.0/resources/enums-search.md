@@ -11,8 +11,6 @@ author: "jakeost-msft"
 
 Namespace: microsoft.graph.search
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 ### answerState values
 
 |Member|
