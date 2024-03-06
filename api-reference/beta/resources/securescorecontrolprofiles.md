@@ -27,14 +27,14 @@ Represents a tenant's secure score per control data. By default, it returns all 
 ## Properties
 
 |Property|Type|Description|
-|:-------|:---|:----------|
+|:--|:--|:--|
 |actionType|String|Control action type (Config, Review, Behavior).|
 |actionUrl|String|URL to where the control can be actioned.|
 |azureTenantId|String|GUID string for tenant ID.|
 |complianceInformation|[complianceInformation](complianceinformation.md) collection|The collection of compliance information associated with secure score control|
 |controlCategory|String|Control action category (Account, Data, Device, Apps, Infrastructure).|
 |controlName|String|Name of the control.|
-|controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection|Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)).|
+|controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection|Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofile-update.md)).|
 |deprecated|Boolean|Flag to indicate if a control is depreciated.|
 |implementationCost|String|Resource cost of implemmentating control (low, moderate, high).|
 |maxScore|String|Current obtained max score on specified date.|
@@ -42,11 +42,11 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |remediation|String|Description of what the control will help remediate.|
 |remediationImpact|String|Description of the impact on users of the remediation.|
 |service|String|Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).|
-|threats|String Collection|List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).|
+|threats|String collection|List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).|
 |tier|String|Control tier (Core, Defense in Depth, Advanced.)|
 |title|String|Title of the control.|
 |userImpact|String|User impact of implementing control (low, moderate, high).|
-|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|*TODO*|
+|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore). Required.|
 
 ## Relationships
 
@@ -66,28 +66,27 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "title": "String",
-  "azureTenantId": "String (identifier)",
-  "maxScore": 1024.13,
   "actionType": "String",
-  "service": "String",
-  "tier": "String",
-  "userImpact": "string",
-  "implementationCost ": "String",
-  "rank ": 100,
-  "threats": ["string"],
-  "deprecated ": false,
-  "remediation": "String",
-  "remediationImpact ": "String",
   "actionUrl": "String",
-  "controlStateUpdates": [{"@odata.type": "microsoft.graph.secureScoreControlStateUpdate"}],
-  "vendorInformation": {"@odata.type": "microsoft.graph.securityVendorInformation"},
+  "azureTenantId": "String",
   "complianceInformation": [{"@odata.type": "microsoft.graph.complianceInformation"}],
-  "controlCategory": "string",
-  "lastModifiedDateTime": "String (timestamp)"
+  "controlCategory": "String",
+  "controlStateUpdates": [{"@odata.type": "microsoft.graph.secureScoreControlStateUpdate"}],
+  "deprecated": false,
+  "id": "String (identifier)",
+  "implementationCost": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "maxScore": 1024.13,
+  "rank": 100,
+  "remediation": "String",
+  "remediationImpact": "String",
+  "service": "String",
+  "threats": ["String"],
+  "tier": "String",
+  "title": "String",
+  "userImpact": "String",
+  "vendorInformation": {"@odata.type": "microsoft.graph.securityVendorInformation"}
 }
-
-
 ```
 
 
