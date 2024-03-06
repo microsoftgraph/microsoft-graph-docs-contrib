@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 The current user settings for content discovery.
 
 Export users' Windows settings and values stored in a cloud.
-  - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects.
+  - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects
   - Get a filtered list of the user's [windowsSetting](../resources/windowssetting.md) objects by passing one of the following in the filter query:
     - [windowssettingtype](../resources/enums.md#windowssettingtype-values)
     - [windowsDeviceId](../resources/windowssetting.md#properties)
