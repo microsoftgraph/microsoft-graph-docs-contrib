@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "a85a7df6-b6d8-4650-b81b-669832d63091",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the **sponsors** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "a85a7df6-b6d8-4650-b81b-669832d63091",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the [sponsors](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
+          "Target": "users"
+        },
+        {
+          "Id": "a85a7df6-b6d8-4650-b81b-669832d63091",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the [sponsors](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
+          "Target": "me"
+        }
+      ],
+      "Id": "a85a7df6-b6d8-4650-b81b-669832d63091",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-05T19:29:53.191307Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8dfb2775-1be6-4363-b14a-8bc6464b1f64",
           "ApiChange": "Property",
           "ChangedApiName": "manufacturer",
