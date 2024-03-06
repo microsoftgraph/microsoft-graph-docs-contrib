@@ -1817,6 +1817,14 @@ Namespace: microsoft.graph
 |system
 |unknownFutureValue
 
+### windowsSettingType values 
+
+| Member             |
+| :----------------- |
+| roaming            |
+| backup             |
+| unknownFutureValue |
+
 ### workforceIntegrationEncryptionProtocol values
 
 | Member
@@ -4283,6 +4291,18 @@ Possible values for user account types (group membership), per Windows definitio
 |group|
 |chat|
 |tenant|
+|unknownFutureValue|
+
+### rootDomains values
+
+| Member|
+|:---|
+|none|
+|all|
+|allFederated|
+|allManaged|
+|enumerated|
+|allManagedAndEnumeratedFederated|
 |unknownFutureValue|
 
 ### allowedRolePrincipalTypes values
