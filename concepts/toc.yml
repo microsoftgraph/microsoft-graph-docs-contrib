@@ -445,7 +445,6 @@ items:
             href: bookingsbusiness-business-rules.md
             displayName: Bookings, Microsoft Bookings, booking
       - name: Device and app management
-        expanded: true
         items:
           - name: Browser management
             href: browser-edge-concept-overview.md
