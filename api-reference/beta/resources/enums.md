@@ -4638,14 +4638,6 @@ Possible values for user account types (group membership), per Windows definitio
 | iOSMobileApplicationManagement|
 | unknownFutureValue|
 
-### printReleaseType values 
-
-|Member|
-|:---|
-|direct|
-|qrCode|
-|unknownFutureValue|
-
 ### bookingPageAccessControl values 
 
 |Member|

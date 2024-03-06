@@ -121,11 +121,6 @@ Content-type: application/json
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
   "isAcceptingJobs": true,
-  "releaseMechanisms": [
-    {
-      "releaseType": "direct"
-    }
-  ],
   "status": {
      "state": "stopped",
     "details": [
