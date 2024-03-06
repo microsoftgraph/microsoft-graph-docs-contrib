@@ -28,6 +28,10 @@ Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconci
 
 Added the ability to list and get [Windows settings](/graph/api/resources/windowssetting) and [Windows settings instances](/graph/api/resources/windowssettinginstance).
 
+### Identity and access | Identity and sign-in
+
+Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/federatedtokenvalidationpolicy?view=graph-rest-beta&preserve-view=true) and its associated methods to manage whether Microsoft Entra ID validates federation authentication tokens.
+
 ## February 2024: New and generally available
 
 ### Microsoft Graph Toolkit
@@ -87,7 +91,6 @@ Microsoft Teams custom meeting templates allow you to specify values for many of
 - Added the **isCrossLocationShiftRequestApprovalRequired** and **isCrossLocationShiftsEnabled** properties on [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true) to support two cross location scenarios.
 - Added the ability to [get](/graph/api/shiftsroledefinition-get) and [update](/graph/api/shiftsroledefinition-update) front-line managers' capabilities in a Shifts schedule.
 - Added the ability to [get](/graph/api/shiftsroledefinition-get) and [update](/graph/api/shiftsroledefinition-update) frontline managers' capabilities in a Shifts schedule.
-
 
 ## Contribute to Microsoft Graph
 
