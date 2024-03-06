@@ -3,7 +3,7 @@ title: "bulkUpload resource type"
 description: "Represents capability of the synchronization service to process bulk uploads."
 author: "cmmdesai"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: entra-applications
 doc_type: resourcePageType 
 ---
 
