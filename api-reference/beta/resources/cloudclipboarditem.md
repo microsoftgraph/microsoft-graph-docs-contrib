@@ -20,8 +20,8 @@ Currently, the feature is supported between Windows devices and [swiftKey app](h
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get cloudClipboardItem](../api/cloudclipboarditem-get.md)|[cloudClipboardItem](../resources/cloudclipboarditem.md)|Read the properties and relationships of a [cloudClipboardItem](../resources/cloudclipboarditem.md) object.|
 |[List cloudClipboardItems](../api/cloudclipboardroot-list-items.md)|Collection of [cloudClipboardItem](../resources/cloudclipboarditem.md)|Retrieve a list of [cloudClipboardItem](../resources/cloudclipboarditem.md) objects of a given user.|
+|[Get cloudClipboardItem](../api/cloudclipboarditem-get.md)|[cloudClipboardItem](../resources/cloudclipboarditem.md)|Read the properties and relationships of a [cloudClipboardItem](../resources/cloudclipboarditem.md) object.|
 
 ## Properties
 |Property|Type|Description|
