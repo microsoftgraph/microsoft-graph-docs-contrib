@@ -89,7 +89,7 @@ The following JSON representation shows the resource type.
   "cloudPcNamingTemplate": "String",
   "description": "String",
   "displayName": "String",
-  "domainJoinConfigurations": "Collection(microsoft.graph.cloudPcDomainJoinConfiguration)",
+  "domainJoinConfigurations": [{"@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"}],
   "enableSingleSignOn": "Boolean",
   "gracePeriodInHours": "Int32",
   "id": "String (identifier)",
