@@ -3,7 +3,7 @@ title: "Create bookingAppointment"
 description: "Create a new bookingAppointment for the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

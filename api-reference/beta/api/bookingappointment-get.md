@@ -3,7 +3,7 @@ title: "Get bookingAppointment"
 description: "Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
