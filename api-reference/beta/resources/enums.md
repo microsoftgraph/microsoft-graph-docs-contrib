@@ -4620,6 +4620,24 @@ Possible values for user account types (group membership), per Windows definitio
 |noRecentDataCollected|
 |unknownFutureValue|
 
+### devicePlatformType values
+
+| Member             |
+|:-------------------|
+| android            |
+| androidForWork     |
+| iOS                |
+| macOS              |
+| windowsPhone81     |
+| windows81AndLater  |
+| windows10AndLater  |
+| androidWorkProfile |
+| unknown            |
+| androidAOSP        |
+| androidMobileApplicationManagement|
+| iOSMobileApplicationManagement|
+| unknownFutureValue|
+
 ### printReleaseType values 
 
 |Member|
