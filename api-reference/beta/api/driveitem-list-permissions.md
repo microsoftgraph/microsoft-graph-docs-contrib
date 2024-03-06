@@ -4,7 +4,7 @@ description: "List the effective sharing permissions of on a driveItem."
 ms.date: 09/10/2017
 title: List who has access to a file
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List sharing permissions on a driveItem

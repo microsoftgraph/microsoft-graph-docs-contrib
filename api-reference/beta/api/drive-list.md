@@ -4,7 +4,7 @@ description: "Retrieve the list of Drive resources available for a target User, 
 ms.date: 09/10/2017
 title: List Drives
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List available drives

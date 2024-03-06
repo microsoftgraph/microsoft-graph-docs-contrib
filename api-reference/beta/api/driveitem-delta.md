@@ -4,7 +4,7 @@ description: "Track changes in a drive item and its children over time."
 ms.date: 09/10/2017
 title: "driveItem: delta"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # driveItem: delta

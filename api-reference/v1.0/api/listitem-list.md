@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Retrieve items from a SharePoint list
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Get the collection of items in a list."
 doc_type: apiPageType
 ---

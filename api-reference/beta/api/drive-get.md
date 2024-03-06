@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a Drive resource."
 ms.date: 09/10/2017
 title: Get Drive
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Get Drive

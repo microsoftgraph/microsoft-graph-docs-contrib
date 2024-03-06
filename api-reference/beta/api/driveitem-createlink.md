@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: "You can use createLink action to share a DriveItem via a sharing link."
 title: "driveItem: createLink"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # driveItem: createLink

@@ -4,7 +4,7 @@ description: "Retrieve a collection of ThumbnailSet resources for a DriveItem re
 ms.date: 09/10/2017
 title: Retrieve thumbnails for a file or folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List thumbnails for a DriveItem

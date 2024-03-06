@@ -4,7 +4,7 @@ description: "Use this API to retrieve the contents of an item in a specific for
 ms.date: 09/10/2017
 title: Convert to other formats
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Download a file in another format

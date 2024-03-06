@@ -4,7 +4,7 @@ description: "List a set of items that have been recently used by the signed in 
 ms.date: 09/10/2017
 title: List Recent Files
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List recent files

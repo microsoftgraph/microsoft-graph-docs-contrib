@@ -4,7 +4,7 @@ description: "Sends a sharing invitation for a DriveItem."
 ms.date: 09/10/2017
 title: Send an invite to access an item
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Send a sharing invitation

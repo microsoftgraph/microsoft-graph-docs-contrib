@@ -4,7 +4,7 @@ description: "Return a collection of DriveItems in the children relationship of 
 ms.date: 09/10/2017
 title: List the contents of a folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List children of a driveItem

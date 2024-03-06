@@ -2,7 +2,7 @@
 author: "spgraph-docs-team"
 title: "List resource"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Represents a list in a site."
 doc_type: resourcePageType
 ---

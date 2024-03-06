@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Upload small files
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Provide the contents of a new file or update the contents of an existing file in a single API call. "
 doc_type: apiPageType
 ---

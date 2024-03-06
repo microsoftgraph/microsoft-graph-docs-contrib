@@ -4,7 +4,7 @@ description: "Asynchronously creates a copy of an [driveItem][item-resource] (in
 ms.date: 09/10/2017
 title: "driveItem: copy"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # driveItem: copy
