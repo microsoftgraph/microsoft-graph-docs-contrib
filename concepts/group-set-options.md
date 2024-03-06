@@ -4,7 +4,8 @@ description: "Configure behaviors and resources to provision when creating a Mic
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: yuhko, khotzteam, aadgroupssg
-ms.topic: concept-article
+ms.topic: conceptual
+ms.subservice: entra-groups
 ms.localizationpriority: high
 ms.date: 03/07/2024
 #Customer intent: As a developer, I want to learn what group behaviors and resources can be provisioned or configured for Microsoft 365 groups.
