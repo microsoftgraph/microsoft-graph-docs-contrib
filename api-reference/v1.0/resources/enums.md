@@ -1062,11 +1062,11 @@ Namespace: microsoft.graph
 
 Possible types of Windows settings.
 
-| Member             | Value | Description                                                                                                                                                                                           |
-| :----------------- | :---- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| roaming            | 0     | Windows setting is associated with a user's account. It is consistent across all devices and any changes to the setting value are synced or applied to all Windows devices that the user owns.          |
-| backup             | 1     | Windows setting does not roam or sync accross devices. This type of setting is used in device backup and restore scenarios.|
-| unknownFutureValue | 2     | This is not a valid setting type. It is only a placeholder for any possible setting type that may be added in the future.  
+| Member             |
+| :----------------- |
+| roaming            |
+| backup             |
+| unknownFutureValue |
 
 ### workforceIntegrationEncryptionProtocol values
 

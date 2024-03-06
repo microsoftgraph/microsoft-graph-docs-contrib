@@ -1,17 +1,17 @@
 ---
-title: "List Windows Settings"
-description: "Get a list of the windowsSetting objects and their properties."
+title: "List Windows settings"
+description: "Get a list of windowsSetting objects and their properties."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "cross-device-experiences"
+ms.prod: "project-rome"
 doc_type: apiPageType
 ---
 
-# List Windows settings stored in cloud
+# List Windows settings
 
 Namespace: microsoft.graph
 
-Get a list of the [windowsSetting](../resources/windowssetting.md) objects and their properties.
+Get a list of [windowsSetting](../resources/windowssetting.md) objects and their properties for the signed in user.
 
 ## Permissions
 
@@ -31,29 +31,27 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-
-Get a list of Windows settings for the signed-in user.
-
 ``` http
 GET /me/settings/windows
 ````
 
 ## Optional query parameters
 
-This method supports `$filter` OData query parameter to help customize the response. The result can be filtered by `windowsDeviceId` and `settingType` properties. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-1. **`windowsDeviceId`**: A string value representing the unique identifier of a Windows device. This identifier can be found in the response body. By filtering with `WindowsDeviceId`, a filtered list of settings specific to that device can be retrieved. Only equality (`eq`) comparison is supported for this parameter.
+You can filter the results by the following properties:
 
-2. **`settingType`**: An enumeration with valid values: `roaming` and `backup`. The `settingType` parameter allows narrowing down the results to settings related to either roaming or backup. Only equality (`eq`) comparison is supported for this parameter. For more information on settingType, see [windowssettingtype](../resources/enums.md#windowssettingtype-values).
+- **windowsDeviceId**: A string value that represents the unique identifier of a Windows device. This identifier can be found in the response body. When you filter on **windowsDeviceId**, you can get a list of settings specific to that device. Only the equality (`eq`) comparison is supported for this parameter.
+- **settingType**: An enumeration with the following valid values: `roaming` and `backup`. The **settingType** property allows you to narrow down the results to settings related to either roaming or backup. Only the equality (`eq`) comparison is supported for this parameter. For more information, see [windowsSettingType](../resources/enums.md#windowssettingtype-values).
 
-Please refer to the [examples](./usersettings-list-windows.md#examples) section below for more information on how to use these query parameters.
+For more details about how to use this query parameter, see the [Examples](./usersettings-list-windows.md#examples) section.
 
 ## Request headers
 
 | Name          | Description                                                                                               |
 | :------------ | :-------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
-| Prefer        |Optional. The API supports the *odata.maxpagesize* parameter through this header for pagination purposes. The minimum and maximum valid values for *odata.maxpagesize* are **1** and **200** respectively. If no value is passed, the default value is **110**.|
+| Prefer        |Optional. This API supports the *odata.maxpagesize* parameter through this header for pagination purposes. The minimum and maximum valid values for *odata.maxpagesize* are **1** and **200** respectively. If no value is passed, the default value is **110**.|
 
 ## Request body
 
@@ -63,15 +61,15 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [windowsSetting](../resources/windowssetting.md) objects in the response body.
 
-If the response contains more than one page of data, the response body will contain a `@odata.nextLink` property. This property will contain a URL that can be used to request the next page of data.  The URL should be used without any modification.
+If the response contains more than one page of data, the response body will contain an `@odata.nextLink` property. This property will contain a URL that can be used to request the next page of data. The URL should be used without any modification.
 
 
 ## Examples
 
-### Request
+###  Example 1: Request without any filter 
 
+#### Request
 The following example shows a request.
-
 <!-- {
   "blockType": "request",
   "name": "list_windowssetting1"
@@ -82,10 +80,8 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/me/settings/windows
 ```
 
-### Response
-
+#### Response
 The following example shows the response.
-
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -137,10 +133,11 @@ Content-Type: application/json
   "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/settings/windows?$skiptoken=eyJzZXRhZyI6ImJmY2I2ZjQwLWM5ZGQtMTFlZS05MTE3LTAxMDIwMzA1MDcwZCIsImlldGFnIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIiwiZW5kRVRhZyI6IjEwMDJkOGYwLWM2NTItMTRkYy05MTE3LTAxMDIwMzA1MDcwZCIsImV0YWciOiJjMDMzZjUxMC1jOWRkLTExZWUtOTExNy0wMTAyMDMwNTA3MGQiLCJsdHNsIjoiYzAzM2Y1MTAtYzlkZC0xMWVlLTkxMTctMDEwMjAzMDUwNzBkIiwibmV4dCI6dHJ1ZX0%3d"
 }
 ```
-### Request
 
-The following example shows a filter by `roaming` settingType request.
+### Example 2: Request with filter by `roaming` settingType
 
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_windowssetting2"
@@ -151,10 +148,8 @@ The following example shows a filter by `roaming` settingType request.
 GET https://graph.microsoft.com/v1.0/me/settings/windows?$filter=settingType eq 'roaming'
 ```
 
-### Response
-
+#### Response
 The following example shows the response.
-
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -203,10 +198,11 @@ Content-Type: application/json
   ]
 }
 ```
-### Request
 
-The following example shows a filter by `backup` settingType request.
+### Example 3: Request with filter by `backup` settingType
 
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_windowssetting3"
@@ -217,10 +213,8 @@ The following example shows a filter by `backup` settingType request.
 GET https://graph.microsoft.com/v1.0/me/settings/windows?$filter=settingType eq 'backup'
 ```
 
-### Response
-
+#### Response
 The following example shows the response.
-
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -271,10 +265,11 @@ Content-Type: application/json
   ]
 }
 ```
-### Request
 
-The following example shows a filter by windowsDeviceId request.
+### Example 4: Request with filter by `windowsDeviceId`
 
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_windowssetting4"
@@ -285,10 +280,8 @@ The following example shows a filter by windowsDeviceId request.
 GET https://graph.microsoft.com/v1.0/me/settings/windows?$filter=windowsDeviceId eq '67585f9f-ee4b-4dd8-808e-d88375d66ef7'
 ```
 
-### Response
-
+#### Response
 The following example shows the response.
-
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {

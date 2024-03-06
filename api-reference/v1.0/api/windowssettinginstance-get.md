@@ -1,18 +1,17 @@
 ---
-title: "Get Windows setting instance"
+title: "Get windowsSettingInstance"
 description: "Read the properties and relationships of a windowsSettingInstance object."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "cross-device-experiences"
+ms.prod: "project-rome"
 doc_type: apiPageType
 ---
 
-# Get Windows setting instance stored in cloud
+# Get windowsSettingInstance
 
 Namespace: microsoft.graph
 
-
-Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object by passing windows setting id and windows setting instance id in the URL.
+Read the properties and relationships of a [windowsSettingInstance](../resources/windowssettinginstance.md) object by passing the Windows setting ID and Windows setting instance ID in the URL. This method gets a **windowsSettingInstance** for the signed-in user.
 
 ## Permissions
 
@@ -32,9 +31,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-
-Get a particular Windows setting instance for the signed-in user.
-
 ```http
 GET /me/settings/windows/{windowsSettingId}/instances/{windowsSettingInstanceId}
 ```

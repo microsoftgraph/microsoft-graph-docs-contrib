@@ -1,18 +1,17 @@
 ---
-title: "List Windows Setting Instances"
-description: "Get a list of the windowsSettingInstance objects and their properties."
+title: "List Windows setting instances"
+description: "Get a list of windowsSettingInstance objects and their properties."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "cross-device-experiences"
+ms.prod: "project-rome"
 doc_type: apiPageType
 ---
 
-# List Windows setting instances stored in cloud
+# List Windows setting instances
 
 Namespace: microsoft.graph
 
-
-Get a list of the [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties.
+Get a list of [windowsSettingInstance](../resources/windowssettinginstance.md) objects and their properties for the signed-in user.
 
 ## Permissions
 
@@ -31,14 +30,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-Get a particular Windows setting's instances for the signed-in user.
 ``` http
 GET /me/settings/windows/{windowsSettingId}/instances
 ```
 
 ## Optional query parameters
 
-N/A
+This method doesn't support OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

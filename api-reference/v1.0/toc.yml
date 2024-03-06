@@ -1278,13 +1278,16 @@ items:
               - name: Windows settings
                 href: resources/windowssetting.md
                 items:
-                  - name: List Windows settings
+                  - name: List
                     href: api/usersettings-list-windows.md
-                  - name: Get Windows setting
+                  - name: Get
                     href: api/windowssetting-get.md
-                  - name: List Windows setting instances
+              - name: Windows setting instance                    
+                href: resources/windowssettinginstance.md
+                items:              
+                  - name: List
                     href: api/windowssetting-list-instances.md
-                  - name: Get Windows setting instance
+                  - name: Get
                     href: api/windowssettinginstance-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
