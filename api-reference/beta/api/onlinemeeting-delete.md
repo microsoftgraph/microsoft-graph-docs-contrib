@@ -23,9 +23,10 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | OnlineMeetings.ReadWrite.All*               |
+| Application                            | OnlineMeetings.ReadWrite.All                |
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to delete online meetings on behalf of that user (with user ID specified in the request path).
+> [!IMPORTANT]
+> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to delete online meetings on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
 
