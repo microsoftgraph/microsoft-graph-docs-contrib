@@ -833,7 +833,17 @@
             "ChangeType": "Addition",
             "Description": "Added the [solutions](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
             "Target": "bookingsContainer"
-          },
+          }
+        ],
+        "Id": "2fbcc87b-5dd1-41d0-882d-19a8f3651724",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-12-08T09:51:22.5930524Z",
+        "WorkloadArea": "Customer booking",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
           {
             "Id": "1689c389-9b91-4c6a-9e1c-f055d74a9f57",
             "ApiChange": "Enumeration",
@@ -891,10 +901,10 @@
             "Target": "bookingService"
           }
         ],
-        "Id": "2fbcc87b-5dd1-41d0-882d-19a8f3651724",
+        "Id": "1689c389-9b91-4c6a-9e1c-f055d74a9f57",
         "Cloud": "Prod",
         "Version": "beta",
-        "CreatedDateTime": "2023-12-08T09:51:22.5930524Z",
+        "CreatedDateTime": "2023-03-05T09:00:00.000000Z",
         "WorkloadArea": "Customer booking",
         "SubArea": ""
       }
