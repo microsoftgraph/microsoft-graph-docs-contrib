@@ -1,7 +1,8 @@
 ---
 title: "Access Microsoft Graph activity logs (preview)"
 description: "Microsoft Graph activity logs are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant."
-author: "FaithOmbongi"
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: yiheguo
 ms.localizationpriority: high
 ms.prod: "applications"

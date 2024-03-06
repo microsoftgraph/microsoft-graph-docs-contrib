@@ -11,7 +11,9 @@ $params = @{
 	displayName = "String"
 	filterStartDateTime = [System.DateTime]::Parse("String (timestamp)")
 	filterEndDateTime = [System.DateTime]::Parse("String (timestamp)")
-	recordTypeFilter = "String"
+	recordTypeFilters = @(
+		"String"
+	)
 	keywordFilter = "String"
 	serviceFilter = "String"
 	operationFilters = @(
