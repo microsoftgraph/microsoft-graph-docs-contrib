@@ -11,7 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [cloudClipboardItem](../resources/cloudclipboarditem.md) objects and their properties for a user. This API only allows you to get [cloudClipboardItem](../resources/cloudclipboarditem.md) objects for:
 
@@ -84,7 +83,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/cloudClipboard/items
+GET https://graph.microsoft.com/v1.0/user/cloudClipboard/items
 ```
 
 
@@ -119,7 +118,7 @@ Content-Type: application/json
       "expirationDateTime": "2023-08-11T04:56:25.387Z"
     }
   ],
-  "@odata.nextLink": "https://graph.microsoft.com/beta/me/cloudClipboard/items?$skiptoken=lastModifiedDateTime%20le%202024-01-31T01:14:29.675Z"
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/cloudClipboard/items?$skiptoken=lastModifiedDateTime%20le%202024-01-31T01:14:29.675Z"
 }
 ```
 

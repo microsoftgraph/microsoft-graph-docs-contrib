@@ -11,7 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains the specific details of the content found within a [cloudClipboardItem](../resources/cloudclipboarditem.md).
 

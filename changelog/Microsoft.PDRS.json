@@ -33,6 +33,72 @@
       "CreatedDateTime": "2024-03-05T21:05:42.4895813Z",
       "WorkloadArea": "Cross-device experiences",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "windowsSettingType",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsSettingType** enumeration type.",
+          "Target": "windowsSettingType"
+        },
+        {
+          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudClipboardItemPayload",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudClipboardItemPayload](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItemPayload?view=graph-rest-1.0) resource.",
+          "Target": "cloudClipboardItemPayload"
+        },
+        {
+          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudClipboardItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudClipboardItem](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItem?view=graph-rest-1.0) resource.",
+          "Target": "cloudClipboardItem"
+        },
+        {
+          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudClipboardRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudClipboardRoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardRoot?view=graph-rest-1.0) resource and its method.",
+          "Target": "cloudClipboardRoot"
+        },
+        {
+          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-1.0) resource.",
+          "Target": "userSettings"
+        },
+        {
+          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowsSetting?view=graph-rest-1.0) resource.",
+          "Target": "windowsSetting"
+        },
+        {
+          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsSettingInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsSettingInstance](https://learn.microsoft.com/en-us/graph/api/resources/windowsSettingInstance?view=graph-rest-1.0) resource.",
+          "Target": "windowsSettingInstance"
+        }
+      ],
+      "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-02-15T07:50:07.082547Z",
+      "WorkloadArea": "Cross-device experiences",
+      "SubArea": ""
     }
   ]
 }

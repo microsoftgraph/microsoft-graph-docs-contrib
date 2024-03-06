@@ -10,7 +10,6 @@ doc_type: apiPageType
 # Get cloudClipboardItem
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [cloudClipboardItem](../resources/cloudclipboarditem.md) object. This API only allows you to get a [cloudClipboardItem](../resources/cloudclipboarditem.md) object for:
 - The signed-in user's own [cloudClipboardItem](../resources/cloudclipboarditem.md).
@@ -35,15 +34,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-
-Get a single cloud clipboard item by passing an item ID.
 ``` http
 GET /me/cloudClipboard/items/{cloudClipboardItemId}
 ```
 
 ## Optional query parameters
 
-N/A.
+This method doesn't support the OData query parameters to customize the respone. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -81,7 +78,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/cloudClipboard/items/{cloudClipboardItemId}
+GET https://graph.microsoft.com/v1.0/user/cloudClipboard/items/{cloudClipboardItemId}
 ```
 
 ### Response

@@ -11,7 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the information and properties of a [cloudClipboardItem](../resources/cloudclipboarditem.md) object. Cloud clipboard is a feature that allows a user to copy and paste content across devices and platforms. It also provides users with a history of the items they recently copied across all their apps and devices. 
 
@@ -20,8 +19,8 @@ Currently, the feature is supported between Windows devices and [swiftKey app](h
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get cloudClipboardItem](../api/cloudclipboarditem-get.md)|[cloudClipboardItem](../resources/cloudclipboarditem.md)|Read the properties and relationships of a [cloudClipboardItem](../resources/cloudclipboarditem.md) object.|
 |[List cloudClipboardItems](../api/cloudclipboardroot-list-items.md)|Collection of [cloudClipboardItem](../resources/cloudclipboarditem.md)|Retrieve a list of [cloudClipboardItem](../resources/cloudclipboarditem.md) objects of a given user.|
+|[Get cloudClipboardItem](../api/cloudclipboarditem-get.md)|[cloudClipboardItem](../resources/cloudclipboarditem.md)|Read the properties and relationships of a [cloudClipboardItem](../resources/cloudclipboarditem.md) object.|
 
 ## Properties
 |Property|Type|Description|
