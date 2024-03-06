@@ -55,7 +55,6 @@ The following API use cases are supported for managing applications through the 
 | Add a SAML token signing certificate | <li> [servicePrincipal: addTokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md) |
 | Track changes to a service principal | <li> [servicePrincipal: delta](../api/serviceprincipal-delta.md)<li> [directoryObject: delta](../api/directoryobject-delta.md) with the following filter `..?$filter=isof('microsoft.graph.servicePrincipal')` |
 | Manage owners | <li> [List owners](../api/serviceprincipal-list-owners.md)<li> [Add owner](../api/serviceprincipal-post-owners.md)<li> [Remove owner](../api/serviceprincipal-delete-owners.md) |
-| Manage password-based SSO credentials (Preview) | <li> [Create](../api/serviceprincipal-createpasswordsinglesignoncredentials.md), [Get](../api/serviceprincipal-getpasswordsinglesignoncredentials.md), [Update](../api/serviceprincipal-updatepasswordsinglesignoncredentials.md), [Delete](../api/serviceprincipal-deletepasswordsinglesignoncredentials.md) |
 
 ## Application templates
 
@@ -87,13 +86,8 @@ Provisioning APIs allow you to automate and manage the provisioning and deprovis
 
 For more information, see [Microsoft Entra synchronization API overview](../resources/synchronization-overview.md).
 
-## On-premises publishing and app proxy
-
-On-premises publishing and application proxy allows you to access on-premises resources securely from the internet, and also use Microsoft Entra-supported capabilities like single sign-on (SSO), multifactor authentication, Conditional Access, and two-step verification.
-
 ## Related content
 
 - [Application management in Microsoft Entra ID](/entra/identity/enterprise-apps/what-is-application-management)
 - [Tutorials for integrating applications with Microsoft Entra ID](/entra/identity/saas-apps/tutorial-list)
 - [What is the Microsoft identity platform](/entra/identity-platform/v2-overview)
-
