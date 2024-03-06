@@ -26,27 +26,27 @@ Represents a tenant's secure score per control data. By default, it returns all 
 
 ## Properties
 
-|Property |Type |Description |
-|:------------------------|:-------------------------------------------------------------|:-----------------------------|
-|	azureTenantId	      |	String													     |	GUID string for tenant ID.	|
-|	controlName	          |	String	                                                     |	Name of the control.        |
-|	title	              |	String	                                                     |	Title of the control.	    |
-|   complianceInformation | [complianceInformation](complianceinformation.md) collection |  The collection of compliance information associated with secure score control |
-|	controlCategory	      |	String	                                                     |	Control action category (Account, Data, Device, Apps, Infrastructure).	      |
-|	actionType	          |	String	                                                     |	Control action type (Config, Review, Behavior).	                              |
-|	service	              |	String	                                                     |	Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).	  |
-|	maxScore              |	String	                                                     |	Current obtained max score on specified date.	                              |
-|	tier                  |	String	                                                     |	Control tier (Core, Defense in Depth, Advanced.)	                          |
-|	userImpact            |	String	                                                     |  User impact of implementing control (low, moderate, high).	                  |
-|	implementationCost    |	String	                                                     |	Resource cost of implemmentating control (low, moderate, high).	              |
-|	rank                  |	Int32	                                                     |	Microsoft's stack ranking of control.	                                      |
-|	threats               |	String Collection	                                         |	List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).	|
-|	deprecated            |	Boolean	                                                     |	Flag to indicate if a control is depreciated.	                              |
-|	remediation           |	String	                                                     |	Description of what the control will help remediate.                          |
-|	remediationImpact     |	String	                                                     |	Description of the impact on users of the remediation.                        |
-|	actionUrl             |	String	                                                     |	URL to where the control can be actioned.                                     |
-|	controlStateUpdates   | [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
-|	vendorInformation     | [securityVendorInformation](securityvendorinformation.md)    | *TODO* |
+|Property|Type|Description|
+|:-------|:---|:----------|
+|actionType|String|Control action type (Config, Review, Behavior).|
+|actionUrl|String|URL to where the control can be actioned.|
+|azureTenantId|String|GUID string for tenant ID.|
+|complianceInformation|[complianceInformation](complianceinformation.md) collection|The collection of compliance information associated with secure score control|
+|controlCategory|String|Control action category (Account, Data, Device, Apps, Infrastructure).|
+|controlName|String|Name of the control.|
+|controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection|Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)).|
+|deprecated|Boolean|Flag to indicate if a control is depreciated.|
+|implementationCost|String|Resource cost of implemmentating control (low, moderate, high).|
+|maxScore|String|Current obtained max score on specified date.|
+|rank|Int32|Microsoft's stack ranking of control.|
+|remediation|String|Description of what the control will help remediate.|
+|remediationImpact|String|Description of the impact on users of the remediation.|
+|service|String|Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).|
+|threats|String Collection|List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).|
+|tier|String|Control tier (Core, Defense in Depth, Advanced.)|
+|title|String|Title of the control.|
+|userImpact|String|User impact of implementing control (low, moderate, high).|
+|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|*TODO*|
 
 ## Relationships
 
