@@ -44,6 +44,8 @@ The following API use cases are supported for managing applications through the 
 
 ## API use cases for managing service principals
 
+The following API use cases are supported for managing service principals through the [servicePrincipal resource type](../resources/serviceprincipal.md) in Microsoft Graph:
+
 | Use cases | API operations |
 |--|--|
 | Register service principal | [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) |
