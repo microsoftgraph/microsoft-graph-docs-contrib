@@ -38,7 +38,7 @@ A [contact](../resources/contact.md) from a user's top level [contactFolder](../
 PATCH /me/contactFolders/{id}/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
+A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
 PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
@@ -88,7 +88,7 @@ In the request body, supply the values for relevant fields that should be update
 |yomiGivenName|String|The phonetic Japanese given name (first name) of the contact. This property is optional.|
 |yomiSurname|String|The phonetic Japanese surname (last name)  of the contact. This property is optional.|
 
-Since the **contact** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
+Since the **contact** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **contact** instance.
 
 ## Response
@@ -113,10 +113,10 @@ Content-type: application/json
         {
             "type":"personal",
             "name":"Pavel Bansky",
-            "address":"pavelb@adatum.onmicrosoft.com"
+            "address":"pavelb@contoso.com"
         },
         {
-          "address": "pavelb@fabrikam.onmicrosoft.com",
+          "address": "pavelb@contoso.com",
           "name": "Pavel Bansky",
           "type": "other",
           "otherLabel": "Volunteer work"
@@ -215,13 +215,13 @@ Content-type: application/json
         {
             "type":"personal",
             "name":"Pavel Bansky",
-            "address":"pavelb@adatum.onmicrosoft.com"
+            "address":"pavelb@contoso.com"
         },
         {
             "type":"other",
             "otherLabel":"Volunteer work",
             "name":"Pavel Bansky",
-            "address":"pavelb@fabrikam.onmicrosoft.com"
+            "address":"pavelb@contoso.com"
         }
     ],
     "websites":[
@@ -242,7 +242,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

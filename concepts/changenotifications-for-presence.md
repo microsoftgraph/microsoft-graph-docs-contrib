@@ -144,7 +144,7 @@ For more information about possible combinations of availability and activity, s
 }
 ```
 
-## See also
+## Related content
 - [Presence](/graph/api/resources/presence)
 - [Change notifications through webhooks](change-notifications-delivery-webhooks.md)
 - [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview)

@@ -12,7 +12,7 @@ User user = new User();
 user.setAccountEnabled(true);
 user.setDisplayName("Adele Vance");
 user.setMailNickname("AdeleV");
-user.setUserPrincipalName("AdeleV@contoso.onmicrosoft.com");
+user.setUserPrincipalName("AdeleV@contoso.com");
 PasswordProfile passwordProfile = new PasswordProfile();
 passwordProfile.setForceChangePasswordNextSignIn(true);
 passwordProfile.setPassword("xWwvJ]6NMw+bWH-d");

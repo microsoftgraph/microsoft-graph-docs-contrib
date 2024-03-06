@@ -12,7 +12,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 request_body = EmailUrlThreatSubmission(
 	odata_type = "#microsoft.graph.security.emailUrlThreatSubmission",
 	category = SubmissionCategory.Spam,
-	recipient_email_address = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+	recipient_email_address = "tifc@contoso.com",
 	message_url = "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
 )
 

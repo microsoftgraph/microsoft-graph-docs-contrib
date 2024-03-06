@@ -112,7 +112,7 @@ Namespace: microsoft.graph
 | others             |
 | unknownFutureValue |
 
-### releaseType values 
+### releaseType values
 
 |Member|
 |:---|
@@ -162,45 +162,48 @@ Namespace: microsoft.graph
 
 ### recommendationType values
 
-| Member                      |
-| :-------------------------- |
-| adfsAppsMigration           |
-| enableDesktopSSO            |
-| enablePHS                   |
-| enableProvisioning          |
-| switchFromPerUserMFA        |
-| tenantMFA                   |
-| thirdPartyApps              |
-| turnOffPerUserMFA           |
-| useAuthenticatorApp         |
-| useMyApps                   |
-| staleApps                   |
-| staleAppCreds               |
-| applicationCredentialExpiry |
-| servicePrincipalKeyExpiry   |
-| adminMFAV2                  |
-| blockLegacyAuthentication   |
-| integratedApps              |
-| mfaRegistrationV2           |
-| pwagePolicyNew              |
-| passwordHashSync            |
-| oneAdmin                    |
-| roleOverlap                 |
-| selfServicePasswordReset    |
-| signinRiskPolicy            |
-| userRiskPolicy              |
-| verifyAppPublisher          |
-| privateLinkForAAD           |
-| appRoleAssignmentsGroups    |
-| appRoleAssignmentsUsers     |
-| managedIdentity             |
-| overprivilegedApps          |
-| unknownFutureValue          |
-| longLivedCredentials        |
-| aadConnectDeprecated        |
-| adalToMsalMigration         |
-| ownerlessApps               |
-| inactiveGuests              |
+| Member                              |
+| :---------------------------------- |
+| adfsAppsMigration                   |
+| enableDesktopSSO                    |
+| enablePHS                           |
+| enableProvisioning                  |
+| switchFromPerUserMFA                |
+| tenantMFA                           |
+| thirdPartyApps                      |
+| turnOffPerUserMFA                   |
+| useAuthenticatorApp                 |
+| useMyApps                           |
+| staleApps                           |
+| staleAppCreds                       |
+| applicationCredentialExpiry         |
+| servicePrincipalKeyExpiry           |
+| adminMFAV2                          |
+| blockLegacyAuthentication           |
+| integratedApps                      |
+| mfaRegistrationV2                   |
+| pwagePolicyNew                      |
+| passwordHashSync                    |
+| oneAdmin                            |
+| roleOverlap                         |
+| selfServicePasswordReset            |
+| signinRiskPolicy                    |
+| userRiskPolicy                      |
+| verifyAppPublisher                  |
+| privateLinkForAAD                   |
+| appRoleAssignmentsGroups            |
+| appRoleAssignmentsUsers             |
+| managedIdentity                     |
+| overprivilegedApps                  |
+| unknownFutureValue                  |
+| longLivedCredentials                |
+| aadConnectDeprecated                |
+| adalToMsalMigration                 |
+| ownerlessApps                       |
+| inactiveGuests                      |
+| aadGraphDeprecationApplication      |
+| aadGraphDeprecationServicePrincipal |
+| mfaServerDeprecation                |
 
 ### layoutTemplateType values
 
@@ -1435,6 +1438,7 @@ Namespace: microsoft.graph
 | published          |
 | assigned           |
 | unknownFutureValue |
+| inactive           |
 
 ### educationSubmissionStatus values
 
@@ -3077,6 +3081,8 @@ Possible values for user account types (group membership), per Windows definitio
 | Member
 |:-------
 | low
+| medium
+| high
 
 ### permissionType values
 
@@ -4279,6 +4285,18 @@ Possible values for user account types (group membership), per Windows definitio
 |tenant|
 |unknownFutureValue|
 
+### rootDomains values
+
+| Member|
+|:---|
+|none|
+|all|
+|allFederated|
+|allManaged|
+|enumerated|
+|allManagedAndEnumeratedFederated|
+|unknownFutureValue|
+
 ### allowedRolePrincipalTypes values
 
 |Member|
@@ -4617,4 +4635,13 @@ Possible values for user account types (group membership), per Windows definitio
 |bookWhenStaffAreFree|
 |notBookable|
 |customWeeklyHours|
+|unknownFutureValue|
+
+### conditionalAccessTransferMethods values
+
+|Member|
+|:---|
+|none|
+|deviceCodeFlow|
+|authenticationTransfer|
 |unknownFutureValue|

@@ -410,7 +410,7 @@ Access is Forbidden for this resource.
 ### 40009
 The container is already in use by another resource.
 
-## See also
+## Related content
 
 - [Microsoft Graph error responses and resource types](errors.md)
 - [OneNote API reference](/graph/api/resources/onenote)

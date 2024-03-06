@@ -28,7 +28,7 @@ request_body = Conversation(
 						Recipient(
 							email_address = EmailAddress(
 								name = "Adele Vance",
-								address = "AdeleV@contoso.onmicrosoft.com",
+								address = "AdeleV@contoso.com",
 							),
 						),
 					],

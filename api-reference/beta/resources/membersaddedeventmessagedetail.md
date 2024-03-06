@@ -54,6 +54,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about members added](/graph/system-messages/#members-added)
 - For more information about other types of events, see [System messages](/graph/system-messages).

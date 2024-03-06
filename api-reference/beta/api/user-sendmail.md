@@ -103,14 +103,14 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "samanthab@contoso.onmicrosoft.com"
+          "address": "samanthab@contoso.com"
         }
       }
     ],
     "ccRecipients": [
       {
         "emailAddress": {
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       }
     ]
@@ -185,7 +185,7 @@ Content-type: application/json
       {
         "emailAddress": {
           "name": "Samantha Booth",
-          "address": "samanthab@contoso.onmicrosoft.com"
+          "address": "samanthab@contoso.com"
         }
       }
     ],
@@ -193,7 +193,7 @@ Content-type: application/json
       {
         "mentioned": {
           "name": "Dana Swope",
-          "address": "danas@contoso.onmicrosoft.com"
+          "address": "danas@contoso.com"
         }
       }
     ]
@@ -270,7 +270,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "AlexW@contoso.OnMicrosoft.com"
+          "address": "AlexW@contoso.com"
         }
       }
     ],
@@ -356,7 +356,7 @@ Content-type: application/json
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "meganb@contoso.onmicrosoft.com"
+          "address": "meganb@contoso.com"
         }
       }
     ],
@@ -498,7 +498,7 @@ Content-type: application/json
   "toRecipients": [
     {
       "emailAddress": {
-        "address": "meganb@contoso.onmicrosoft.com"
+        "address": "meganb@contoso.com"
       }
     }
   ],

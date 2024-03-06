@@ -12,7 +12,7 @@ InferenceClassificationOverride inferenceClassificationOverride = new InferenceC
 inferenceClassificationOverride.setClassifyAs(InferenceClassificationType.Focused);
 EmailAddress senderEmailAddress = new EmailAddress();
 senderEmailAddress.setName("Samantha Booth");
-senderEmailAddress.setAddress("samanthab@adatum.onmicrosoft.com");
+senderEmailAddress.setAddress("samanthab@contoso.com");
 inferenceClassificationOverride.setSenderEmailAddress(senderEmailAddress);
 InferenceClassificationOverride result = graphClient.me().inferenceClassification().overrides().post(inferenceClassificationOverride);
 

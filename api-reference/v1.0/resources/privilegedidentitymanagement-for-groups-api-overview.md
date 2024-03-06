@@ -114,7 +114,7 @@ When a principal's *temporary active* membership or ownership of a group expires
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -148,7 +148,7 @@ In addition, for delegated scenarios, the calling principal needs one of the fol
 Only the approver of the request can call the `/approval` and `/approvalStep` endpoints. They don't have to be assigned any Microsoft Entra roles.
 
 
-## See also
+## Related content
 
 - [What is Microsoft Entra ID Governance?](/azure/active-directory/governance/identity-governance-overview)
 - [What is Microsoft Entra Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)

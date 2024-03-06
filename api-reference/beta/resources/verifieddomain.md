@@ -17,17 +17,18 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 
 
 ## Properties
+
 | Property     | Type    | Description                                                                          |
 |:-------------|:--------|:-------------------------------------------------------------------------------------|
 | capabilities | String  | For example, `Email`, `OfficeCommunicationsOnline`.                                  |
 | isDefault    | Boolean | `true` if this is the default domain associated with the tenant; otherwise, `false`. |
 | isInitial    | Boolean | `true` if this is the initial domain associated with the tenant; otherwise, `false`. |
-| name         | String  | The domain name; for example, `contoso.onmicrosoft.com`.                             |
+| name         | String  | The domain name; for example, contoso.com`.                             |
 | type         | String  | For example, `Managed`.                                                              |
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

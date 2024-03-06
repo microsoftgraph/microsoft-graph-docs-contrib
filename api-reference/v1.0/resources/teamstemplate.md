@@ -33,7 +33,7 @@ A team template is a blueprint for creating a [team](../resources/team.md) in Mi
 }
 ```
 
-## See also
+## Related content
 
 - [team](team.md)
 

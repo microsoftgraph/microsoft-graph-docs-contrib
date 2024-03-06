@@ -78,7 +78,7 @@ Looking for the API reference for this service?
 - [OneNote API in Microsoft Graph v1.0](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0&preserve-view=true)
 - [OneNote API in Microsoft Graph beta](/graph/api/resources/onenote-api-overview?view=graph-rest-beta&preserve-view=true)
 
-## See also
+## Related content
 
 Find out about a few other OneNote features that are exposed only on the OneNote service-specific REST endpoint.
 

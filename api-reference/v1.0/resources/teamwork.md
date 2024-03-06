@@ -62,6 +62,6 @@ The following is a JSON representation of the resource.
 }
 -->
 
-## See Also
+## Related content
 
 - [userTeamwork resource](userteamwork.md)

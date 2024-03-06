@@ -50,7 +50,7 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
 }
 ```
 
-## See also
+## Related content
 
 - [teamsApp](teamsapp.md)
 - [teamsAppInstallation](teamsappinstallation.md)

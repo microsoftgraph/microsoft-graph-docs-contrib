@@ -120,7 +120,7 @@ Content-type: application/json
       "displayName": "Adele Vance",
       "givenName": "Adele",
       "surname": "Vance",
-      "userPrincipalName": "AdeleV@M365x214355.onmicrosoft.com",
+      "userPrincipalName": "AdeleV@contoso.com",
       "userType": "Member",
       "primaryRole": "teacher",
       "onPremisesInfo": {
@@ -134,7 +134,7 @@ Content-type: application/json
       "displayName": "Christie Cline",
       "givenName": "Christie",
       "surname": "Cline",
-      "userPrincipalName": "ChristieC@M365x214355.onmicrosoft.com",
+      "userPrincipalName": "ChristieC@contoso.com",
       "userType": "Member",
       "primaryRole": "student",
       "onPremisesInfo": {
@@ -148,7 +148,7 @@ Content-type: application/json
       "displayName": "Ben Walters",
       "givenName": "Ben",
       "surname": "Walters",
-      "userPrincipalName": "BenW@M365x214355.onmicrosoft.com",
+      "userPrincipalName": "BenW@contoso.com",
       "userType": "Member",
       "primaryRole": "student",
       "onPremisesInfo": {
@@ -162,7 +162,7 @@ Content-type: application/json
       "displayName": "Megan Bowen",
       "givenName": "Megan",
       "surname": "Bowen",
-      "userPrincipalName": "MeganB@M365x214355.onmicrosoft.com",
+      "userPrincipalName": "MeganB@contoso.com",
       "userType": "Member",
       "primaryRole": "teacher",
       "onPremisesInfo": {
@@ -176,7 +176,7 @@ Content-type: application/json
       "displayName": "Allan Deyoung",
       "givenName": "Allan",
       "surname": "Deyoung",
-      "userPrincipalName": "AllanD@M365x214355.onmicrosoft.com",
+      "userPrincipalName": "AllanD@contoso.com",
       "userType": "Member",
       "primaryRole": "student",
       "onPremisesInfo": {

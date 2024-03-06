@@ -182,7 +182,7 @@ The following payload describes the information sent in the request for notifica
 
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the chat member details. GET calls always return the current state of the chat member details. If the chat member details changes between when the notification is sent and when the chat member details are retrieved, the operation returns the updated chat member details.
 
-## See also
+## Related content
 - [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 - [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)

@@ -54,10 +54,10 @@ Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_appointments",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/appointments
 ```
 
 # [C#](#tab/csharp)
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdel
 ---
 
 ### Response
-Here's an example of the response. 
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -105,7 +105,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/appointments",
     "value": [
         {
             "id": "AAMkADKoAAA=",
@@ -148,7 +148,7 @@ Content-type: application/json
                             "altitudeAccuracy": null
                         }
                     },
-                    "timeZone": "America/Chicago"                
+                    "timeZone": "America/Chicago"
                 }
             ],
             "customerTimeZone": "America/Chicago",

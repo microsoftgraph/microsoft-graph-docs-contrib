@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/calendar/getSchedule 
+POST /me/calendar/getSchedule
 POST /users/{id|userPrincipalName}/calendar/getSchedule
 ```
 
@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.
 
 > **Note**: When the user's calendar has a time slot that contains more than 1000 entries, a `5006` response code with the message "The result set contains too many calendar entries. The allowed size is 1000; the actual size is ..." will be returned. For details, see [KB 2962513](/exchange/troubleshoot/calendars/cannot-view-another-user-calendar-free-busy-information).
- 
+
 ## Examples
 ### Request
 The following example gets the availability information for two users for the specified date, time, and time zone.
@@ -61,12 +61,12 @@ The following example gets the availability information for two users for the sp
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendar/getSchedule 
+POST https://graph.microsoft.com/v1.0/me/calendar/getSchedule
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
-{        
-    "schedules": ["adelev@contoso.onmicrosoft.com", "meganb@contoso.onmicrosoft.com"],
+{
+    "schedules": ["adelev@contoso.com", "meganb@contoso.com"],
     "startTime": {
         "dateTime": "2019-03-15T09:00:00",
         "timeZone": "Pacific Standard Time"
@@ -129,7 +129,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value": [
         {
-            "scheduleId": "adelev@contoso.onmicrosoft.com",
+            "scheduleId": "adelev@contoso.com",
             "availabilityView": "000220000",
             "scheduleItems": [
                 {
@@ -163,7 +163,7 @@ Content-type: application/json
             }
         },
         {
-            "scheduleId": "meganb@contoso.onmicrosoft.com",
+            "scheduleId": "meganb@contoso.com",
             "availabilityView": "200220010",
             "scheduleItems": [
                 {

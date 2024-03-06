@@ -199,7 +199,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - For details about the People API and more examples, see [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

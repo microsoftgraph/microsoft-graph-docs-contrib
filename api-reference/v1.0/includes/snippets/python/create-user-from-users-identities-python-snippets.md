@@ -16,12 +16,12 @@ request_body = User(
 	identities = [
 		ObjectIdentity(
 			sign_in_type = "userName",
-			issuer = "contoso.onmicrosoft.com",
+			issuer = "contoso.com",
 			issuer_assigned_id = "johnsmith",
 		),
 		ObjectIdentity(
 			sign_in_type = "emailAddress",
-			issuer = "contoso.onmicrosoft.com",
+			issuer = "contoso.com",
 			issuer_assigned_id = "jsmith@yahoo.com",
 		),
 		ObjectIdentity(

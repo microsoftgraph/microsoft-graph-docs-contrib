@@ -127,12 +127,12 @@ Content-type: application/json
     "value": [
         {
             "comment": "test",
-            "createdByDisplayName": "secAdmin@contoso.onmicrosoft.com",
+            "createdByDisplayName": "secAdmin@contoso.com",
             "createdDateTime": "2022-10-13T07:08:30.1606766Z"
         },
         {
             "comment": "Demo for docs",
-            "createdByDisplayName": "secAdmin@contoso.onmicrosoft.com",
+            "createdByDisplayName": "secAdmin@contoso.com",
             "createdDateTime": "2022-10-13T07:08:40.3825324Z"
         }
     ]

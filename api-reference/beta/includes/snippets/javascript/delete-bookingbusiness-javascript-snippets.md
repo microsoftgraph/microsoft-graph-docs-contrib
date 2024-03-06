@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com')
+await client.api('/solutions/bookingBusinesses/fabrikam@contoso.com')
 	.version('beta')
 	.delete();
 

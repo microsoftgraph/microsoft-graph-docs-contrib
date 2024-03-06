@@ -15,7 +15,7 @@ mgc-beta users messages create --user-id {user-id} --body '{\
     "toRecipients":[\
         {\
             "emailAddress":{\
-                "address":"AdeleV@contoso.onmicrosoft.com"\
+                "address":"AdeleV@contoso.com"\
             }\
         }\
     ]\

@@ -58,7 +58,7 @@ Microsoft Entra ID Protection for both users and service principals is a premium
 The availability of risk data is governed by the [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 
-## See also
+## Related content
 
 * [About Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 * [Get started with Microsoft Entra ID Protection and Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

@@ -183,7 +183,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/staffMembers/$entity",
     "id":"8ee1c803-a1fa-406d-8259-7ab53233f148",
     "displayName":"Dana Swope",
     "emailAddress":"danas@contoso.com",

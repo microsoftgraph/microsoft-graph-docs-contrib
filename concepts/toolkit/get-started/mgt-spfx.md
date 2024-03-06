@@ -141,7 +141,12 @@ npm i --save-dev babel-loader@8.3.0 @babel/plugin-transform-optional-chaining @b
 SharePoint Framework provides an extensibility model to [modify the webpack configuration](/sharepoint/dev/spfx/toolchain/extending-webpack-in-build-pipeline) used to bundle the web parts. Locate and open `gulpfile.js`. Add the following code above the line that contains `build.initialize(require('gulp'));`:
 
 ```JavaScript
-const litFolders = ['node_modules/lit/', 'node_modules/@lit/', 'node_modules/lit-html/'];
+const path = require("path");
+const litFolders = [
+  `node_modules${path.sep}lit${path.sep}`,
+  `node_modules${path.sep}@lit${path.sep}`,
+  `node_modules${path.sep}lit-html${path.sep}`
+];
 build.configureWebpack.mergeConfig({
   additionalConfiguration: generatedConfiguration => {
     generatedConfiguration.module.rules.push({
@@ -166,7 +171,7 @@ build.configureWebpack.mergeConfig({
 ```
 
 
-## See also
+## Related content
 
 * [Build a SharePoint web part with the Microsoft Graph Toolkit](./build-a-sharepoint-web-part.md)
 * [Learn about authentication providers](../providers/providers.md)

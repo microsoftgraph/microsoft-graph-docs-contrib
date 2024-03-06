@@ -138,27 +138,27 @@ Content-type: application/json
     "value": [
         {
             "name": "Conf Room Adams",
-            "address": "Adams@contoso.onmicrosoft.com"
+            "address": "Adams@contoso.com"
         },
         {
             "name": "Conf Room Baker",
-            "address": "Baker@contoso.onmicrosoft.com"
+            "address": "Baker@contoso.com"
         },
         {
             "name": "Conf Room Crystal",
-            "address": "Crystal@contoso.onmicrosoft.com"
+            "address": "Crystal@contoso.com"
         },
         {
             "name": "Conf Room Hood",
-            "address": "Hood@contoso.onmicrosoft.com"
+            "address": "Hood@contoso.com"
         },
         {
             "name": "Conf Room Rainier",
-            "address": "Rainier@contoso.onmicrosoft.com"
+            "address": "Rainier@contoso.com"
         },
         {
             "name": "Conf Room Stevens",
-            "address": "Stevens@contoso.onmicrosoft.com"
+            "address": "Stevens@contoso.com"
         }
     ]
 }
@@ -168,7 +168,7 @@ Content-type: application/json
 
 #### Request
 
-The second example gets the [emailAddress](../resources/emailaddress.md) objects that represent the rooms in the specified room list identified by the email address `Building2Rooms@contoso.onmicrosoft.com`.
+The second example gets the [emailAddress](../resources/emailaddress.md) objects that represent the rooms in the specified room list identified by the email address `Building2Rooms@contoso.com`.
 
 
 # [HTTP](#tab/http)
@@ -177,7 +177,7 @@ The second example gets the [emailAddress](../resources/emailaddress.md) objects
   "name": "user_get_rooms_from_specific_list"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com')
+GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.com')
 ```
 
 # [C#](#tab/csharp)
@@ -234,15 +234,15 @@ Content-type: application/json
     "value": [
         {
             "name": "Conf Room Baker",
-            "address": "Baker@contoso.onmicrosoft.com"
+            "address": "Baker@contoso.com"
         },
         {
             "name": "Conf Room Hood",
-            "address": "Hood@contoso.onmicrosoft.com"
+            "address": "Hood@contoso.com"
         },
         {
             "name": "Conf Room Rainier",
-            "address": "Rainier@contoso.onmicrosoft.com"
+            "address": "Rainier@contoso.com"
         }
     ]
 }
