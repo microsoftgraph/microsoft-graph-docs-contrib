@@ -57,7 +57,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [cloudClipboardItem](../resources/cloudclipboarditem.md) object in the response body.
 
 ### Errors
-In addition to [general errors](/graph/errors) that apply to Microsoft Graph, the following error conditions are specific to the Cloud Clipboard API.
+In addition to [general errors](/graph/errors) that apply to Microsoft Graph, the following error conditions are specific to the Cloud Clipboard API.  
 
 |Status code|Status message|Description|
 |:---|:---|:---|
