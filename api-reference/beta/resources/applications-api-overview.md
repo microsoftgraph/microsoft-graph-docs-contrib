@@ -97,6 +97,7 @@ For more information, see [On-premises publishing profiles](/graph/api/resources
 
 ## Related content
 
+- [Quick reference guide: API operations for managing applications](/graph/tutorial-applications-basics)
 - [Application management in Microsoft Entra ID](/entra/identity/enterprise-apps/what-is-application-management)
 - [Tutorials for integrating applications with Microsoft Entra ID](/entra/identity/saas-apps/tutorial-list)
 - [What is the Microsoft identity platform](/entra/identity-platform/v2-overview)
