@@ -3,7 +3,7 @@ title: "Get deletedChat"
 description: "Read the properties and relationships of a deletedChat object."
 author: "sthapliyal"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

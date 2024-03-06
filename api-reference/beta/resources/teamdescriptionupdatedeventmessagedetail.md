@@ -3,7 +3,7 @@ title: "teamDescriptionUpdatedEventMessageDetail resource type"
 description: "Represents the details of an event message about an updated team description."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

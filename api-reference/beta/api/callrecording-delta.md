@@ -4,7 +4,7 @@ description: "Get a set of callRecording resources that have been added for onli
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "JacobSatora"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # callRecording: delta
