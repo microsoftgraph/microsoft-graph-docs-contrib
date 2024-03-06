@@ -35,15 +35,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-
-Get a single cloud clipboard item by passing an item ID.
 ``` http
 GET /me/cloudClipboard/items/{cloudClipboardItemId}
 ```
 
 ## Optional query parameters
 
-N/A.
+This method doesn't support the OData query parameters to customize the respone. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
