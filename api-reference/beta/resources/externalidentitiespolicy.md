@@ -47,7 +47,6 @@ Here's a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.externalIdentitiesPolicy",
   "id": "String (identifier)",
-  "deletedDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
   "allowExternalIdentitiesToLeave": "Boolean",

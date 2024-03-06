@@ -36,7 +36,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleDefinitions` entity set
 | resourceId  | String | Required. The id of the resource associated with the role definition. |
 | externalId  | String | The external id of the role definition.                               |
 | displayName | String | The display name of the role definition.                              |
-| templateId  | String |                                                                       |
+| templateId  | String | *TODO*                                                                   |
 
 ## Relationships
 | Relationship | Type    |Description|

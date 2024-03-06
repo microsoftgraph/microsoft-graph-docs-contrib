@@ -46,7 +46,6 @@ Here's a JSON representation of the resource.
   "label": "String",
   "recordType": "String",
   "supportedService": "String",
-  "text": "String",
   "ttl": 1024
 }
 

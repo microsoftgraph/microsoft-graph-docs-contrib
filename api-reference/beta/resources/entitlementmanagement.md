@@ -51,7 +51,8 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.entitlementManagement",
-  "openType": false
+  "openType": false,
+  "baseType": "microsoft.graph.entity"
 }
 -->
 ``` json

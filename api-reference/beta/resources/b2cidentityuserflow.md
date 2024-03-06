@@ -60,7 +60,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
-|userflowIdentityProviders|[identityProviderBase](../resources/identityproviderbase.md) collection|The identity providers included in the user flow.|
+|userFlowIdentityProviders|[identityProviderBase](../resources/identityproviderbase.md) collection|The identity providers included in the user flow.|
 |identityProviders (deprecated)|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 |languages|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|The languages supported for customization within the user flow. Language customization is not enabled by default in B2C user flows.|

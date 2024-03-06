@@ -63,20 +63,16 @@ Here's a JSON representation of the resource.
 
 ``` json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians('2192ca408ea2410eba3bec8ae873be6b')/unifiedGroupSources",
-    "value": [
-        {
-            "displayName": "Developers group",
-            "createdDateTime": "2020-10-27T15:14:11.0048392Z",
-            "id": "33434233-3030-3739-3043-393039324633",
-            "includedSources": "mailbox,site",
-            "createdBy": {
-                "user": {
-                    "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
-                    "displayName": null
-                }
-            }
+    "@odata.type": "#microsoft.graph.ediscovery.unifiedGroupSource",
+    "displayName": "Developers group",
+    "createdDateTime": "2020-10-27T15:14:11.0048392Z",
+    "id": "33434233-3030-3739-3043-393039324633",
+    "includedSources": "mailbox,site",
+    "createdBy": {
+        "user": {
+            "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
+            "displayName": null
         }
-    ]
+    }
 }
 ```
