@@ -3,7 +3,7 @@ title: "Create educationModule"
 description: "Create a draft classwork module."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update an educationSynchronizationProfile"
 description: "Update properties for an existing school data synchronization profile in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
