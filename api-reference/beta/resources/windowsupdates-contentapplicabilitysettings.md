@@ -3,7 +3,7 @@ title: "contentApplicabilitySettings resource type"
 description: "Represents settings for governing whether content is applicable to a device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 

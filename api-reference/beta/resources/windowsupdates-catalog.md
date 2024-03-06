@@ -3,7 +3,7 @@ title: "catalog resource type"
 description: "Entity representing the catalog of content that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 

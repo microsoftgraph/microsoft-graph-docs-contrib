@@ -3,7 +3,7 @@ title: "Manage safeguards using the Windows Update for Business deployment servi
 description: "When you deploy updates with the Windows Update for Business deployment service, it automatically prevents devices with issues from being offered the update."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: conceptualPageType
 ---
 

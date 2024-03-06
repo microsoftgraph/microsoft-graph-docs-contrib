@@ -3,7 +3,7 @@ title: "Get updatableAssetGroup"
 description: "Read the properties and relationships of an updatableAssetGroup object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 

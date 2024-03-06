@@ -3,7 +3,7 @@ title: "Deploy a driver update using the Windows Update for Business deployment 
 description: "Follow these steps to manage driver approvals for devices in a Microsoft Entra tenant by using the Windows Update for Business deployment service."
 author: "Ryan-K-Williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: conceptualPageType
 ---
 

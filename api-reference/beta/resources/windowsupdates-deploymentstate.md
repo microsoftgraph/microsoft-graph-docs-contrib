@@ -3,7 +3,7 @@ title: "deploymentState resource type"
 description: "Describes and controls the current state of a deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 

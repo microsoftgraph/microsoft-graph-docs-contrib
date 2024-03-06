@@ -3,7 +3,7 @@ title: "safeguardProfile resource type"
 description: "Describes the issue(s) against which the service safeguards devices."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 

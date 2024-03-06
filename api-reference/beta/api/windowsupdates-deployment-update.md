@@ -3,7 +3,7 @@ title: "Update deployment"
 description: "Update the properties of a deployment object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 

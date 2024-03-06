@@ -3,7 +3,7 @@ title: "resourceConnection resource type"
 description: "Represents connections to external resources from which more specialized connections are derived."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Read the properties of an azureADDevice object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List resourceConnections"
 description: "Get a list of the resourceConnection objects and their properties."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 

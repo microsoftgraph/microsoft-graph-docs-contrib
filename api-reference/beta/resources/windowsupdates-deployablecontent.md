@@ -3,7 +3,7 @@ title: "deployableContent resource type"
 description: "Represents content that is deployable by the service."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "operationalInsightsConnection resource type"
 description: "Represents a specialized resourceConnection that links a Log Analytics workspace to the Windows Update for Business deployment service."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 

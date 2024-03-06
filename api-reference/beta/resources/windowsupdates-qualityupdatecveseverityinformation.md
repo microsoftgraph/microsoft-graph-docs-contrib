@@ -3,7 +3,7 @@ title: "qualityUpdateCveSeverityInformation resource type"
 description: "Represents the summary of severity information regarding the Common Vulnerabilities and Exposures (CVEs) addressed by a quality update."
 author: "angiechen22"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "deploymentSettings resource type"
 description: "Represents settings that determine when and how the service deploys an update."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 

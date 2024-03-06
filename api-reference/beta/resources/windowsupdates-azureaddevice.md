@@ -3,7 +3,7 @@ title: "azureADDevice resource type"
 description: "Represents a device in Microsoft Entra ID that is registered with the deployment service."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 

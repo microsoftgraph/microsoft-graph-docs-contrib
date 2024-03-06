@@ -3,7 +3,7 @@ title: "updateManagementEnrollment resource type"
 description: "Represents enrollment into management by the service of a certain update category."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
