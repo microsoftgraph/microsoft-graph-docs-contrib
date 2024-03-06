@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/beta/security/rules/detectionRules/302
 
 ---
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

@@ -3,102 +3,36 @@
     {
       "ChangeList": [
         {
-          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudClipboardItemPayload",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudClipboardItemPayload](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItemPayload?view=graph-rest-1.0) resource.",
+          "Description": "Added the [cloudClipboardItemPayload](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItemPayload?view=graph-rest-beta) resource.",
           "Target": "cloudClipboardItemPayload"
         },
         {
-          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudClipboardItem",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudClipboardItem](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItem?view=graph-rest-1.0) resource.",
+          "Description": "Added the [cloudClipboardItem](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItem?view=graph-rest-beta) resource and its methods.",
           "Target": "cloudClipboardItem"
         },
         {
-          "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+          "Id": "03aa6149-f3e9-4c20-9212-9731fe17debd",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudClipboardRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudClipboardRoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardRoot?view=graph-rest-1.0) resource and its methods.",
+          "Description": "Added the [cloudClipboardRoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardRoot?view=graph-rest-beta) resource and its method.",
           "Target": "cloudClipboardRoot"
-        },
-        {
-          "Id": "af6ceee7-aa8a-4965-80fa-8fa9fd460ad2",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "windowsSettingType",
-          "ChangeType": "Addition",
-          "Description": "Added the **windowsSettingType** enumeration type.",
-          "Target": "windowsSettingType"
-        },
-        {
-          "Id": "af6ceee7-aa8a-4965-80fa-8fa9fd460ad2",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "userSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the **windows** navigation property to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource.",
-          "Target": "userSettings"
-        },
-        {
-          "Id": "af6ceee7-aa8a-4965-80fa-8fa9fd460ad2",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/usersettings-list-windows?view=graph-rest-beta) operation to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource.",
-          "Target": "userSettings"
-        },
-        {
-          "Id": "af6ceee7-aa8a-4965-80fa-8fa9fd460ad2",
-          "ApiChange": "Resource",
-          "ChangedApiName": "windowsSetting",
-          "ChangeType": "Addition",
-          "Description": "Added the [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowsSetting?view=graph-rest-beta) resource and its methods.",
-          "Target": "windowsSetting"
-        },
-        {
-          "Id": "af6ceee7-aa8a-4965-80fa-8fa9fd460ad2",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/windowssetting-list-instances?view=graph-rest-beta) operation to the [windowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowsSetting?view=graph-rest-beta) resource.",
-          "Target": "windowsSetting"
-        },
-        {
-          "Id": "af6ceee7-aa8a-4965-80fa-8fa9fd460ad2",
-          "ApiChange": "Resource",
-          "ChangedApiName": "windowsSettingInstance",
-          "ChangeType": "Addition",
-          "Description": "Added the [windowsSettingInstance](https://learn.microsoft.com/en-us/graph/api/resources/windowsSettingInstance?view=graph-rest-beta) resource.",
-          "Target": "windowsSettingInstance"
         }
       ],
-      "Id": "d4a29e1e-3acc-4174-b905-e730814cb31b",
+      "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
       "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2024-02-15T07:50:07.082547Z",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-05T21:05:42.4895813Z",
       "WorkloadArea": "Cross-device experiences",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "b43e8afa-5f09-45a1-ac73-6df6403e6a20",
-          "ApiChange": "Resource",
-          "ChangedApiName": "user",
-          "ChangeType": "Addition",
-          "Description": "Added the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
-          "Target": "user"
-        }
-      ],
-      "Id": "b43e8afa-5f09-45a1-ac73-6df6403e6a20",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2024-02-15T07:50:07.0828002Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
     }
   ]
 }

@@ -2,6 +2,7 @@
 title: Manage users' authentication methods using Microsoft Graph"
 description: "Learn how to manage your users' authentication methods and get users registered to do multifactor authentication (MFA) and self-service password reset (SSPR)."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: jpeterre
 ms.localizationpriority: high
 ms.prod: "identity-and-sign-in"
