@@ -3,7 +3,7 @@ title: "Get workbookChartAxis"
 description: "Retrieve the properties and relationships of workbookChartAxis object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

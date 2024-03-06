@@ -3,7 +3,7 @@ title: "List pivotTables"
 description: "Retrieve a list of workbookpivottable objects."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

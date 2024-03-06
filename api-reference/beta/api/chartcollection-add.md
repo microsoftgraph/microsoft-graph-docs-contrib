@@ -3,7 +3,7 @@ title: "workbookChartCollection: add"
 description: "Creates a new workbookChart."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update workbookChartAxis"
 description: "Update the properties of workbookchartaxis object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

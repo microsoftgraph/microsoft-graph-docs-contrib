@@ -3,7 +3,7 @@ title: "Get workbookChartLineFormat"
 description: "Retrieve the properties and relationships of workbookchartlineformat object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

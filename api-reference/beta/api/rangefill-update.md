@@ -3,7 +3,7 @@ title: "Update rangefill"
 description: "Update the properties of rangefill object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

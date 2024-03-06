@@ -3,7 +3,7 @@ title: "TableColumn: Range"
 description: "Gets the range object associated with the entire column."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get workbookChartDataLabels"
 description: "Retrieve the properties and relationships of workbookchartdatalabels object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

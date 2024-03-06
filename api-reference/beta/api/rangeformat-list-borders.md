@@ -3,7 +3,7 @@ title: "List borders"
 description: "Retrieve a list of rangeborder objects."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

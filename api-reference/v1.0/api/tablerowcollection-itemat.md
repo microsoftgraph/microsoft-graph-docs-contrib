@@ -3,7 +3,7 @@ title: "TableRowCollection: ItemAt"
 description: "Gets a row based on its position in the collection."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

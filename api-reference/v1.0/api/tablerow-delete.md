@@ -3,7 +3,7 @@ title: "TableRow: delete"
 description: "Deletes the row from the table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
