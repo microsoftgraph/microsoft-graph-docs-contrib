@@ -51,10 +51,10 @@ In the request body, supply a [bulkUpload](../resources/synchronization-bulkuplo
 
 | HTTP Status Code | Explanation |
 |:---|:---|
-| 202 (Accepted) | The bulk request is staged for execution and will be processed by the associated provisioning job. The `Location` key in the response header points to the [provisioning logs endpoint](provisioningobjectsummary-list.md) that can be used to check the status of the bulk request provisioning. |
-| 400 (Bad Request) | Request is unparsable, syntactically incorrect or violates the schema. The most common cause of this error is the absence of the request header `Content-Type`. Make sure it's present and set to `application/scim+json`.|
+| 202 (Accepted) | The bulk request is staged for execution and will be processed by the associated provisioning job. The `Location` key in the response header points to the [provisioning logs endpoint](../api/provisioningobjectsummary-list.md) that can be used to check the status of the bulk request provisioning. |
+| 400 (Bad Request) | Request is unparseable, syntactically incorrect, or violates the schema. The most common cause of this error is the absence of the `Content-Type` request header. Make sure it's present and set to `application/scim+json`.|
 | 401 (Unauthorized) | The authorization header is invalid or missing. Ensure that the authorization header has a valid access token. |
-| 403 (Forbidden) |  Operation isn't permitted based on the supplied authorization. Make sure that the API client has the Graph API permission `SynchronizationData-User.Upload`.|
+| 403 (Forbidden) |  The operation isn't permitted based on the supplied authorization header. Make sure that the API client has the `SynchronizationData-User.Upload` permission and for delegated scenarios, the caller must be a global administrator.|
 
 ## Examples
 
