@@ -4,7 +4,7 @@ title: "Update columnDefinition"
 description: "Update a site, list or content type column"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Update columnDefinition

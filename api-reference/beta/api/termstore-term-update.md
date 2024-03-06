@@ -3,7 +3,7 @@ title: "Update term"
 description: "Update the properties of a term object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

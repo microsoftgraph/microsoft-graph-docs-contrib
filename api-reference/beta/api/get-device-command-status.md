@@ -4,7 +4,7 @@ description: "Get the status of a command on a device. For the  full list of sta
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ailae"
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # Get device command status (deprecated)
