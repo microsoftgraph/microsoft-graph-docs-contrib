@@ -36,7 +36,7 @@ The Microsoft Search API supports searching the following content in the Microso
 - SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem) resources), [list](/graph/api/resources/list), [listItem](/graph/api/resources/listitem), [site](/graph/api/resources/site), and [drive](/graph/api/resources/drive) resources.
 - [Person](/graph/api/resources/person) resources in an organization who are most relevant to a user.
 - Content ingested through the Microsoft Graph connectors platform: [externalItem](/graph/api/resources/externalitem) resources.
-- Administrative search answer resources: [acronyms](/graph/api/resources/search-acronym), [bookmarks](/graph/api/resources/search-bookmark), and [QnA](/graph/api/resources/search-qna) resources.
+- Administrative search answer resources: [acronym](/graph/api/resources/search-acronym), [bookmark](/graph/api/resources/search-bookmark), and [qna](/graph/api/resources/search-qna) resources.
 
 ## API reference
 
@@ -45,7 +45,8 @@ Looking for the API reference for this service?
 - [Use the Microsoft Search API to query data v1.0](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)
 - [Use the Microsoft Search API to query data beta](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Use the Microsoft Search API to index data](/graph/api/resources/connectors-api-overview)
-- [Use the Microsoft Search API to manage administrative search answers beta](/graph/api/resources/search-api-answers-overview?view=graph-rest-beta&preserve-view=true) (preview)
+- [Use the Microsoft Search API to manage administrative search answers v1.0](/graph/api/resources/search-api-answers-overview?view=graph-rest-1.0&preserve-view=true)
+- [Use the Microsoft Search API to manage administrative search answers beta](/graph/api/resources/search-api-answers-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 

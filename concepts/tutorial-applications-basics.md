@@ -1,7 +1,7 @@
 ---
 title: "Manage a Microsoft Entra application using Microsoft Graph"
 description: "Learn how to use the applications and service principals APIs in Microsoft Graph to manage your applications."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: sureshja
 ms.localizationpriority: medium

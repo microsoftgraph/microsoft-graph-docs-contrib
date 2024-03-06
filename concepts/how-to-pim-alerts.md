@@ -2,6 +2,7 @@
 title: "Manage security alerts for Microsoft Entra roles using PIM APIs"
 description: "Learn how to manage security alerts for Microsoft Entra roles using PIM APIs."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
