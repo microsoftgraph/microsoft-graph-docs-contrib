@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents _settings_ to calculate and manage the display or programmatic return of a specific type of insights in an organization. The insights can be contact insights, item insights, meeting hours insights, or people insights. 
+Represents settings to calculate and manage the display or programmatic return of a specific type of insights in an organization. The insights can be contact insights, item insights, meeting hours insights, or people insights.
 
 Contact insights represent intelligent suggestions to organize user contacts in Microsoft 365. Programmatically, user contacts are represented by the [contact](contact.md) resource. An example of a contact insight is merge suggestions for duplicate contacts, available for end users in Outlook.
 
@@ -25,9 +25,9 @@ In contrast, for item insights and [meeting hours insights](https://support.micr
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List contactInsights](../api/organizationsettings-list-contactinsights.md) | [insightsSettings](insightssettings.md) | Get the _settings_ in an [insightsSettings](insightssettings.md) object for displaying contact insights in an organization. |
-| [List itemInsights](../api/peopleadminsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) | Get the _settings_ in an [insightsSettings](insightssettings.md) object for displaying item insights in an organization. |
-| [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) | [insightsSettings](insightssettings.md) | Get the _settings_ in an [insightsSettings](insightssettings.md) object for displaying people insights in an organization. |
+| [List contactInsights](../api/organizationsettings-list-contactinsights.md) | [insightsSettings](insightssettings.md) | Get the properties of [insightsSettings](insightssettings.md) resource for displaying contact insights in an organization. |
+| [List itemInsights](../api/peopleadminsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) | Get the properties of [insightsSettings](insightssettings.md) resource for displaying item insights in an organization. |
+| [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) | [insightsSettings](insightssettings.md) | Get the properties of [insightsSettings](insightssettings.md) resource for displaying people insights in an organization. |
 | [Update insightsSettings](../api/insightssettings-update.md) | [insightsSettings](insightssettings.md) | Update the properties of an **insightsSettings** resource to manage the display or return of the specified type of insights, which can be contact insights, item insights, or people insights. |
 
 
