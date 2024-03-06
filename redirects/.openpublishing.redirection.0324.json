@@ -109,6 +109,127 @@
             "source_path_from_root": "/api-reference/v1.0/resources/yammer-groups-activity-reports.md",
             "redirect_url": "/graph/api/resources/reportroot#viva-engage-groups-activity",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/email-activity-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#outlook-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/email-app-usage-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#outlook-app-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/mailbox-usage-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#outlook-mailbox-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/microsoft-365-apps-usage-report.md",
+            "redirect_url": "/graph/api/resources/reportroot#microsoft-365-apps-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/microsoft-teams-device-usage-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#microsoft-teams-device-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/microsoft-teams-team-usage-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#microsoft-teams-team-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/microsoft-teams-user-activity-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#microsoft-teams-user-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/office-365-activations-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#microsoft-365-activations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/office-365-active-users-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#microsoft-365-active-users",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/office-365-groups-activity-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#microsoft-365-groups-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/onedrive-activity-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#onedrive-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/onedrive-usage-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#onedrive-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/sharepoint-activity-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#sharepoint-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/sharepoint-site-usage-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#sharepoint-site-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/skype-for-business-activity-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#skype-for-business-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/skype-for-business-device-usage-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#skype-for-business-device-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/skype-for-business-organizer-activity-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#skype-for-business-organizer-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/skype-for-business-participant-activity-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#skype-for-business-participant-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/skype-for-business-peer-to-peer-activity.md",
+            "redirect_url": "/graph/api/resources/reportroot#skype-for-business-peer-to-peer-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/yammer-activity-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#viva-engage-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/yammer-device-usage-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#viva-engage-device-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/yammer-groups-activity-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#viva-engage-groups-activity",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path_from_root": "/api-reference/beta/resources/microsoft-forms-usage-reports.md",
+            "redirect_url": "/graph/api/resources/reportroot#forms-activity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/microsoft-365-browser-usage-report.md",
+            "redirect_url": "/graph/api/resources/reportroot#microsoft-365-browser-usage",
+            "redirect_document_id": false
         }
     ]
 }
