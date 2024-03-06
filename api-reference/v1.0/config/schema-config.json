@@ -32,7 +32,7 @@
       "author",
       "title",
       "description",
-      "ms.prod",
+      "ms.subservice",
       "doc_type",
       "ms.localizationpriority"
     ]
