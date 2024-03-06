@@ -87,7 +87,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcUserSetting",
     "id": "556092f8-92f8-5560-f892-6055f8926055",
-    "displayName": "String",
+    "displayName": "Display Name value",
     "localAdminEnabled": false,
     "resetEnabled": true,
     "restorePointSetting": {
