@@ -157,7 +157,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bulkUpload",
           "ChangeType": "Addition",
-          "Description": "Added the [bulkUpload](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-bulkUpload?view=graph-rest-1.0) resource.",
+          "Description": "Added the [bulkUpload](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-bulkUpload?view=graph-rest-1.0) resource and its associated method.",
           "Target": "bulkUpload"
         },
         {
