@@ -15,9 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents a known issue related to a Windows product. 
 
-Supported Methods: GET
-
-Supported query parameters: filter(eq) status, filter(ge, le) startDateTime, filter(ge, le) lastUpdatedDateTime, filter(ge, le) resolvedDateTime
+Example of known Issues: [Windows 11, version 22H2 known Issues and notifications](https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-22h2) 
 
 ## Properties
         
