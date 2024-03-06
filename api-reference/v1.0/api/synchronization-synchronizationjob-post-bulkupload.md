@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
 ```
 
-In the API endpoint, `{servicePrincipalId}` refers to the service principal object id and `{jobId}` refers to the provisioning job id.
+In the API endpoint, `{servicePrincipalId}` refers to the service principal object ID and `{jobId}` refers to the provisioning job ID.
 
 ## Request headers
 
