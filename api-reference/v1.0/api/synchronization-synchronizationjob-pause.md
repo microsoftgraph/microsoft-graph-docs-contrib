@@ -4,7 +4,7 @@ description: "Temporarily stop synchronization. All the progress, including job 
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationJob: pause

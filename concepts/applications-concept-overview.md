@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: sureshja
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.custom: scenarios:getting-started
 ms.date: 01/23/2024
 #customer intent: As a developer, I want to understand the capabilities available to manage a Microsoft Entra application programmatically using Microsoft Graph.

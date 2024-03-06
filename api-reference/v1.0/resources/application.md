@@ -3,7 +3,7 @@ title: "application resource type"
 description: "Represents an application."
 ms.localizationpriority: high
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
