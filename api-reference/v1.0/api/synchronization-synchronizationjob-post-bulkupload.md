@@ -241,7 +241,7 @@ Content-Type: application/json
 #### Request
 The following bulk request uses the SCIM standard Core User and Enterprise User schema. It has another custom schema namespace called `urn:contoso:employee` with two attributes `HireDate` and `JobCode`. The `schemas` array in the data object is updated to include the custom schema namespace.
 
-**Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. If you include the two custom attributes `urn:contoso:employee:HireDate` and `urn:contoso:employee:JobCode` in your provisioning job attribute mapping, it is processed, and the corresponding target attributes are set.
+**Processing details:** The provisioning service reads the two user records. It uses the matching attribute for `userName` and `externalId` that's configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. If you include the two custom attributes `urn:contoso:employee:HireDate` and `urn:contoso:employee:JobCode` in your provisioning job attribute mapping, it's processed, and the corresponding target attributes are set.
 
 
 <!-- {
