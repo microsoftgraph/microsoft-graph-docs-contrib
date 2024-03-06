@@ -2482,7 +2482,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 98830695-27a2-44f7-8c18-0c3ebc9698f6 | bc024368-1153-4739-b217-4326f2e966d0 
 | DisplayText | Read all group memberships | Read group memberships 
-| Description | Allows the app to read memberships and basic group properties for all groups without a signed-in user. | Allows the app to list groups, read basic group properties and read membership of all groups the signed-in user has access to. 
+| Description | Allows the app to list groups, read basic group properties and read membership of all groups without a signed-in user. | Allows the app to list groups, read basic group properties and read membership of all groups the signed-in user has access to. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
