@@ -1837,6 +1837,14 @@ Namespace: microsoft.graph
 |system
 |unknownFutureValue
 
+### windowsSettingType values 
+
+| Member             |
+| :----------------- |
+| roaming            |
+| backup             |
+| unknownFutureValue |
+
 ### workforceIntegrationEncryptionProtocol values
 
 | Member
@@ -4631,6 +4639,24 @@ Possible values for user account types (group membership), per Windows definitio
 |notConfigured|
 |noRecentDataCollected|
 |unknownFutureValue|
+
+### devicePlatformType values
+
+| Member             |
+|:-------------------|
+| android            |
+| androidForWork     |
+| iOS                |
+| macOS              |
+| windowsPhone81     |
+| windows81AndLater  |
+| windows10AndLater  |
+| androidWorkProfile |
+| unknown            |
+| androidAOSP        |
+| androidMobileApplicationManagement|
+| iOSMobileApplicationManagement|
+| unknownFutureValue|
 
 ### printReleaseType values 
 

@@ -23,6 +23,11 @@ filterStartDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetFilterStartDateTime(&filterStartDateTime) 
 filterEndDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetFilterEndDateTime(&filterEndDateTime) 
+recordTypeFilters := []graphmodelssecurity.AuditLogRecordTypeable {
+	auditLogRecordType := graphmodels.STRING_AUDITLOGRECORDTYPE 
+	requestBody.SetAuditLogRecordType(&auditLogRecordType)
+}
+requestBody.SetRecordTypeFilters(recordTypeFilters)
 keywordFilter := "String"
 requestBody.SetKeywordFilter(&keywordFilter) 
 operationFilters := []string {
@@ -48,7 +53,6 @@ requestBody.SetAdministrativeUnitIdFilters(administrativeUnitIdFilters)
 status := graphmodels.STRING_AUDITLOGQUERYSTATUS 
 requestBody.SetStatus(&status) 
 additionalData := map[string]interface{}{
-	"recordTypeFilter" : "String", 
 	"serviceFilter" : "String", 
 }
 requestBody.SetAdditionalData(additionalData)

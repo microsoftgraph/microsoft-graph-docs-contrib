@@ -2,7 +2,8 @@
 title: "Microsoft 365 group behaviors and provisioning options"
 description: "Configure behaviors and resources to provision when creating a Microsoft 365 group using the Microsoft Graph groups API."
 author: FaithOmbongi
-ms.reviewer: jodah
+ms.author: ombongifaith
+ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.date: 02/29/2024
