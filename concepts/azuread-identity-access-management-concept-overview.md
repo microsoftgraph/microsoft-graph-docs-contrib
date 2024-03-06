@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Entra identity and access API overview"
 description: "Use the Microsoft Entra APIs in Microsoft Graph to manage and protect any identity and secure access to any resource on-premises, in hybrid environments, and cloud environments."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: high

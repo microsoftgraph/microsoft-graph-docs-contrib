@@ -59,13 +59,13 @@
       "ms.author": "MSGraphDocsVteam",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "ms.suite": "microsoft-graph",
-      "ms.prod": "non-product-specific",
+      "ms.subservice": "non-product-specific",
       "searchScope": ["graph"],
       "toc_preview": true,
       "recommendations": false
     },
     "fileMetadata": {
-      "ms.technology": {
+      "ms.service": {
         "**/*.md": "microsoft-graph"
       },
       "ms.topic": {

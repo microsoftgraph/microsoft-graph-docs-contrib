@@ -1,7 +1,7 @@
 ---
 title: "Permissions Management API operations quick reference for GCP authorization systems"
 description: "API operations quick reference guide for GCP authorization systems."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium

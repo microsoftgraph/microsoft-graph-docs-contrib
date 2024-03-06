@@ -13,7 +13,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
-As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in the Cloud Solution Provider programs can request to export their billed and unbilled data to Azure Blob Storage asynchronously. this removes the need to maintain an open connection for hours and loop through millions of transactions iteratively. The asynchronous API provides a way to quickly access billing and reconciliation data in manageable chunks.
+As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in the Cloud Solution Provider programs can request to export their billed and unbilled data to Azure Blob Storage asynchronously. This removes the need to maintain an open connection for hours and loop through millions of transactions iteratively. The asynchronous API provides a way to quickly access billing and reconciliation data in manageable chunks.
 
 The partner billing API is defined in the OData subnamespace `microsoft.graph.partners.billing`.
 
@@ -61,7 +61,7 @@ The partner billing API provides methods and actions that allow Microsoft direct
 
 ## Asynchronous data retrieval
 
-The download of reconciliation data is a long-running operation that consists of the following operations.
+The download of usage or reconciliation data is a long-running operation that consists of the following operations.
 
 ### Usage line-item endpoint
 

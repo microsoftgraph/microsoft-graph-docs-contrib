@@ -1362,7 +1362,6 @@ items:
               - name: Delete
                 href: api/bookingstaffmember-delete.md
       - name: Device and app management
-        expanded: true
         items:
           - name: Browser management
             displayName: Edge, Internet Explorer, IE mode, site list
@@ -7586,6 +7585,12 @@ items:
             items:
               - name: Overview
                 href: resources/partners-billing-api-overview.md
+              - name: Billed reconciliation
+                items:
+                  - name: Billed reconciliation
+                    href: resources/partners-billing-billedreconciliation.md
+                  - name: Export
+                    href: api/partners-billing-billedreconciliation-export.md
               - name: Billed usage
                 items:
                   - name: Billed usage
@@ -7612,6 +7617,49 @@ items:
                     href: api/partners-billing-unbilledusage-export.md
       - name: Search
         items:
+          - name: Answer
+            items:
+              - name: Overview
+                href: resources/search-api-answers-overview.md
+              - name: Acronym
+                href: resources/search-acronym.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-acronyms.md
+                  - name: Create
+                    href: api/search-searchentity-post-acronyms.md
+                  - name: Get
+                    href: api/search-acronym-get.md
+                  - name: Update
+                    href: api/search-acronym-update.md
+                  - name: Delete
+                    href: api/search-acronym-delete.md
+              - name: Bookmark
+                href: resources/search-bookmark.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-bookmarks.md
+                  - name: Create
+                    href: api/search-searchentity-post-bookmarks.md
+                  - name: Get
+                    href: api/search-bookmark-get.md
+                  - name: Update
+                    href: api/search-bookmark-update.md
+                  - name: Delete
+                    href: api/search-bookmark-delete.md
+              - name: QnA
+                href: resources/search-qna.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-qnas.md
+                  - name: Create
+                    href: api/search-searchentity-post-qnas.md
+                  - name: Get
+                    href: api/search-qna-get.md
+                  - name: Update
+                    href: api/search-qna-update.md
+                  - name: Delete
+                    href: api/search-qna-delete.md
           - name: Query
             items:
               - name: Overview

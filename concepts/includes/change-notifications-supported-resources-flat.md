@@ -1,5 +1,6 @@
 ---
-author: "FaithOmbongi"
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: ric.lewis
 ms.prod: "change-notifications"
 ms.topic: include
