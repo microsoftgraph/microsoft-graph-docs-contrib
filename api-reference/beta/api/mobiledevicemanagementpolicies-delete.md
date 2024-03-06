@@ -3,7 +3,7 @@ title: "Delete mobileDeviceManagementPolicy"
 description: "Delete a mobile device management policy."
 author: "michaelrm97"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
