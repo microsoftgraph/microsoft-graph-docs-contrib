@@ -62,6 +62,8 @@ You can use Microsoft Graph APIs for application management to perform the follo
 - Connect **on-premises applications** to Microsoft Entra ID, secure remote access to on-premises applications, and publish on-premises applications to remote users.
 - **Provision and synchronize** identities from an on-premises directory, or a SaaS application to Microsoft Entra ID.
 
+To discover all the API operations for managing applications and service principals, see [Manage Microsoft Entra applications and service principals using Microsoft Graph](/graph/api/resources/applications-api-overview).
+
 ## Other resources
 
 - Learn more about [the relationship between applications and service principals in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals#relationship-between-application-objects-and-service-principals).
