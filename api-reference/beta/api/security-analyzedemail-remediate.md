@@ -7,7 +7,7 @@ ms.prod: security
 doc_type: apiPageType
 ---
 
-# analyzedEmail: remediate 
+# analyzedEmail: remediate
 
 Namespace: microsoft.graph.security
 
@@ -63,7 +63,7 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code and a `Location` header with a link to the tracking information. 
+If successful, this action returns a `202 Accepted` response code and a `Location` header with a link to the tracking information.
 
 >**Note:** The response to the action can be tracked in https://security.microsoft.com/action-center/history. To learn more, see [Use the Action center](/microsoft-365/security/defender/m365d-action-center?view=o365-worldwide&preserve-view=true).
 
@@ -102,16 +102,16 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
->**Note:** Track the location header
+>**Note:** Track the 'location' key in http response header
 Example:
 Get the tracking url at response header - 'Location'
 https://security.microsoft.com/action-center/history?filters={"bulkId":["{bulkId}"]}&tid={tid}
