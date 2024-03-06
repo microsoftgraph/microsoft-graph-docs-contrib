@@ -41,6 +41,7 @@ Performs synchronization by periodically running in the background, polling for 
 ## Relationships
 | Relationship | Type    |Description|
 |:---------------|:--------|:----------|
+|bulkUpload|[bulkUpload](synchronization-bulkupload.md) | The bulk upload operation for the job.|
 |schema|[synchronizationSchema](synchronization-synchronizationschema.md)| The synchronization schema configured for the job.|
 
 ## JSON representation
