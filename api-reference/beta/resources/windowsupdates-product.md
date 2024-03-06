@@ -15,9 +15,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents a Windows product.
 
-Supported Methods: GET
+Example of a Windows Product:
 
-Supported query parameters: filter(eq) name, expand(editions, knownIssues, revisions).
+|Name|Example|
+|:---|:---|
+|Name| Windows 11, version 22H2 |
+|Friendly Name| Version 22H2 (OS build 22621) |
+|Group Name| Windows 11|
          
 ## Properties
 
@@ -25,7 +29,7 @@ Supported query parameters: filter(eq) name, expand(editions, knownIssues, revis
 |:---|:---|:---|
 |friendlyName|String|The name of the product. For example, `Version 22H2 (OS build 22621)`. Read-only.|
 |groupName|String|The name of the product group. For example, `Windows 11`. Read-only.|
-|id|String|The unique identifier for the catalog entry. Read-only.|
+|id|String|The unique identifier for the product. Read-only.|
 |name|String|The name of the product. For example, `Windows 11, version 22H2`. Read-only.|
 |releaseDateTime|DateTimeOffset|The release date for the content. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 
