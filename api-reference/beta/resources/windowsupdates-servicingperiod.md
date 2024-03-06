@@ -15,16 +15,12 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents information about a servicing period related to a product edition. Each edition of a particular product has one or more servicing periods.
 
-Supported Methods: GET
-
-Supported query parameters: filter(eq) name, expand(editions, knownIssues, revisions).
-
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |endDateTime|DateTimeOffset|The date and time when the servicing period ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|id|String|The unique identifier for the catalog entry. Read-only.|
+|id|String|The unique identifier for the servicing period. Read-only.|
 |name|String|The name of the servicing period. For example, `Modern Lifecycle`.|
 |startDateTime|DateTimeOffset|The start date and time of the servicing period. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 
