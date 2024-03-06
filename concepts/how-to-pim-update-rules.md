@@ -1,7 +1,7 @@
 ---
 title: "Update rules in privileged identity management (PIM)"
 description: "Learn how to update rules in PIM using Microsoft Graph."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium

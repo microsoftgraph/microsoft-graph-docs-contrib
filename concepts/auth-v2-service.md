@@ -1,7 +1,7 @@
 ---
 title: "Get access without a user"
 description: "Learn how an app obtains an access token from the Microsoft identity platform and calls Microsoft Graph with its own identity."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
 ms.localizationpriority: high

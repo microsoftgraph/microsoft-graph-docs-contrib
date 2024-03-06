@@ -1,7 +1,7 @@
 ---
 title: "Manage application authenticationBehaviors"
 description: "Manage the application authenticationBehaviors to adopt new breaking changes."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: medbhargava
 ms.localizationpriority: high

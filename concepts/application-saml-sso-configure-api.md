@@ -1,7 +1,8 @@
 ---
 title: "Configure SAML-based single sign-on using Microsoft Graph"
 description: "Learn how to automate configuration of SAML-based single sign-on (SSO) for your Microsoft Entra application using Microsoft Graph APIs."
-author: "FaithOmbongi"
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: alamaral
 ms.localizationpriority: high
 ms.topic: tutorial

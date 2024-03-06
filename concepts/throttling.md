@@ -3,6 +3,7 @@ title: "Microsoft Graph throttling guidance"
 description: "Find best practices for maintaining optimal performance of the Microsoft Graph service if an overwhelming number of requests occurs."
 ms.localizationpriority: high
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
 ms.date: 01/22/2024
 ms.custom: graphiamtop20
