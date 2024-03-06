@@ -1,6 +1,6 @@
 ---
 title: printer resource type
-description: "Represents a physical printer device that is registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status."
+description: "Represents a physical printer device that is registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata, and registration status."
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a printer device that is registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
+Represents a printer device that is registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata, and registration status.
 
 This resource supports:
 * [Subscribing to change notifications](/graph/universal-print-webhook-notifications).
@@ -26,7 +26,7 @@ Inherits from [printerBase](../resources/printerbase.md).
 | [Update](../api/printer-update.md) | [printer](printer.md) | Update the printer object. |
 | [Delete](../api/printer-delete.md) | None | Unregister the physical printer from the Universal Print service. |
 | [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | None | Restore a printer's default settings to the values specified by the manufacturer. |
-| [List jobs](../api/printer-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that are queued for processing by the printer. |
+| [List jobs](../api/printer-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that the printer queues for processing. |
 | [Create job](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printer. To start printing the job, use [start](../api/printjob-start.md). |
 | [List connectors](../api/printer-list-connectors.md) | [printConnector](printconnector.md) collection | Get a list of connectors that this printer is associated with. |
 | [List shares](../api/printer-list-shares.md) | [printerShare](printerShare.md) collection | Get a list of printerShares that this printer is associated with. Currently, only one printerShare can be associated with a printer. |
@@ -42,7 +42,7 @@ Inherits from [printerBase](../resources/printerbase.md).
 |displayName|String|The name of the printer. Inherited from [printerBase](../resources/printerbase.md).|
 |hasPhysicalDevice|Boolean|True if the printer has a physical device for printing. Read-only.|
 |id|String|The document's identifier. Inherited from [printerBase](../resources/printerbase.md). Read-only.|
-|isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs. Inherited from [printerBase](../resources/printerbase.md).|
+|isAcceptingJobs|Boolean|True if the printer is currently accepting new print jobs. Inherited from [printerBase](../resources/printerbase.md).|
 |isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
 |lastSeenDateTime|DateTimeOffset|The most recent dateTimeOffset when a printer interacted with Universal Print. Read-only.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer. Inherited from [printerBase](../resources/printerbase.md).|
@@ -55,7 +55,7 @@ Inherits from [printerBase](../resources/printerbase.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |connectors|[printConnector](printconnector.md)|The connectors that are associated with the printer.|
-|jobs|[printJob](printjob.md) collection| The list of jobs that are queued for printing by the printer.  Inherited from [printerBase](../resources/printerbase.md).|
+|jobs|[printJob](printjob.md) collection| The list of jobs that the printer queues for printing. Inherited from [printerBase](../resources/printerbase.md).|
 |shares|[printerShare](printershare.md) collection| The list of printerShares that are associated with the printer. Currently, only one printerShare can be associated with the printer. Read-only. Nullable.|
 |taskTriggers|[printTaskTrigger](printtasktrigger.md) collection|A list of task triggers that are associated with the printer.|
 
