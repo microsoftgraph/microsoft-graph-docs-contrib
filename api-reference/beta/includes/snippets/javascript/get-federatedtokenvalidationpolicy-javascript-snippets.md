@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let appRoles = await client.api('/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoles')
+let federatedTokenValidationPolicy = await client.api('/policies/federatedTokenValidationPolicy')
 	.version('beta')
 	.get();
 

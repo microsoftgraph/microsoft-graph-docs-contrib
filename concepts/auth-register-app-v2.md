@@ -2,6 +2,7 @@
 title: "Register an application with the Microsoft identity platform"
 description: "Your app must be registered with Microsoft Entra ID. Registering your app establishes a trust relationship and allows the app to access protected resources in the Microsoft cloud."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: applications
