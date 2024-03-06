@@ -1,7 +1,7 @@
 ---
 title: "Applications API overview"
 description: "Microsoft Graph APIs enable you to register apps, manage app properties and configurations, secure access to on-premises apps, and synchronize identities from on-premises and SaaS apps to Microsoft Entra ID."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: sureshja
 ms.localizationpriority: high

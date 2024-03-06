@@ -19,29 +19,37 @@ Settings that represent a user’s preferences for the following:
 - [Item insights](../resources/officegraphinsights.md)
 - [Regional locale and languages](../resources/regionalandlanguagesettings.md)
 - [Shift scheduling](../resources/shiftpreferences.md)
-- [Suggestions to merge duplicate contacts](../resources/contactmergesuggestions.md).
+- [Suggestions to merge duplicate contacts](../resources/contactmergesuggestions.md)
+
+This resource type provides access to the following operations.
 
 Manage Delve accessibility:
-  - Checking whether a user and the user's organization have access to Office Delve.
-  - Disabling or enabling documents in Office Delve for specific users. 
+  - Determine whether a user and the user's organization have access to Office Delve.
+  - Disable or enable documents in Office Delve for specific users. 
 
-Configure the visibility of [itemInsights](../resources/iteminsights.md) and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). ItemInsights are derived between users and other items (such as documents or sites) in Microsoft 365:
-  - Checking whether a user's item and meeting hours insights are enabled.
-  - Disabling or enabling item and meeting hours insights for specific user.
+Configure the visibility of [itemInsights](../resources/iteminsights.md) and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). Item insights are derived between users and other items (such as documents or sites) in Microsoft 365:
+  - Determine whether a user's item and meeting hours insights are enabled.
+  - Disable or enable item and meeting hours insights for specific user.
 
 Manage user's locale-based preferences: 
-  - Determining what language and regional formatting a user prefers to view applications with.
-  - Updating a user's language and regional formatting preferences.
+  - Determine what language and regional formatting a user prefers to view applications with.
+  - Update a user's language and regional formatting preferences.
 
-Manage user's work shift preferences: 
-  - Checking whether a user can be assigned to shifts in a schedule.
-  - Updating a user's shift preferences.
+Manage users' work shift preferences: 
+  - Determine whether a user can be assigned to shifts in a schedule.
+  - Update a user's shift preferences.
   
 Configure [contactMergeSuggestions](../resources/contactmergesuggestions.md):
-  - Determining whether suggestion to merge duplicate contacts for a user is enabled.
-  - Disabling or enabling suggestion to merge duplicate contacts for a user.
+  - Determine whether suggestions to merge duplicate contacts for a user is enabled.
+  - Disable or enable suggestions to merge duplicate contacts for a user.
 
-Inherits from [entity](entity.md). To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
+Export users' Windows settings and values stored in a cloud:
+  - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects.
+  - Get a filtered list of the user's [windowsSetting](../resources/windowssetting.md) objects by passing one of the following in the filter query:
+    - [windowssettingtype](../resources/enums.md#windowssettingtype-values)
+    - [windowsDeviceId](../resources/windowssetting.md#properties)
+
+Inherits from [entity](entity.md).
 
 > [!NOTE]
 > This endpoint works only with the [user](user.md) resource. 
@@ -51,6 +59,7 @@ Inherits from [entity](entity.md). To learn how to get or update user settings, 
 |:---------------|:--------|:----------|
 |[Get user settings](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
 |[Update user settings](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
+|[List Windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
 
 ## Properties
 
@@ -68,12 +77,12 @@ Inherits from [entity](entity.md). To learn how to get or update user settings, 
 |itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
 |regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The user's preferences for languages, regional locale and date/time formatting. |
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
-
+|windows|[windowsSetting](../resources/windowssetting.md) collection|The Windows settings of the user stored in the cloud.|
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

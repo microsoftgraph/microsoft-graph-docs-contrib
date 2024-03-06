@@ -2,6 +2,7 @@
 title: "Differences in actions between Azure AD Graph and Microsoft Graph"
 description: "Describes differences in actions between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API (REST)."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.topic: conceptual
 ms.localizationpriority: medium

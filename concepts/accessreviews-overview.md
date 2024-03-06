@@ -1,7 +1,7 @@
 --- 
 title: "Overview of the access reviews API" 
-description: "Use the access reviews API to programmatically review access to your Microsoft Entra resources to ensure that the right identities have the right access to the right resources." 
-author: "FaithOmbongi" 
+description: "Use the access reviews API to programmatically review access to your Microsoft Entra resources to ensure that the right identities have the right access to the right resources."
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.localizationpriority: medium 

@@ -1,7 +1,7 @@
 ---
 title: "Combine multiple HTTP requests using JSON batching"
 description: "Use JSON batching to optimize your application by combining multiple requests into a single JSON object, saving the application significant network latency."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: high

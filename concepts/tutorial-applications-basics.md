@@ -1,7 +1,7 @@
 ---
 title: "Manage a Microsoft Entra application using Microsoft Graph"
 description: "Learn how to use the applications and service principals APIs in Microsoft Graph to manage your applications."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: sureshja
 ms.localizationpriority: medium
@@ -353,6 +353,8 @@ Content-Type: application/json
 ## Create app roles
 
 ### Create app roles on an application object
+
+To keep any existing app roles, include them in the request. Otherwise, they are replaced with the new object.
 
 # [HTTP](#tab/http)
 <!-- {
