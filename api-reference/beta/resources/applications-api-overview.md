@@ -72,8 +72,8 @@ Application templates are apps that are available in the [Microsoft Entra app ga
 | Policy description | API operations | Applies to |
 |--|--|--|
 | Manage Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol | [remoteDesktopSecurityConfiguration resource type and its associated methods](../resources/remotedesktopsecurityconfiguration.md) | Service principals |
-| Configure SAML tokens policy | [tokenIssuancePolicy resource type](../resources/tokenissuancepolicy.md) | Applications<br>Service principals  |
-| Configure policies for access, SAML, and ID tokens | Token lifetime policy - [tokenLifetimePolicy resource type](../resources/tokenlifetimepolicy.md) and its associated methods<br><br>Token issuance policy - [tokenIssuancePolicy resource type](../resources/tokenissuancepolicy.md) | Applications<br>Service principals |
+| Configure SAML tokens policy | [tokenIssuancePolicy resource type and its associated methods](../resources/tokenissuancepolicy.md) | Applications<br>Service principals  |
+| Configure policies for access, SAML, and ID tokens | Token lifetime policy - [tokenLifetimePolicy resource type and its associated methods](../resources/tokenlifetimepolicy.md)<br><br>Token issuance policy - [tokenIssuancePolicy resource type and its associated methods](../resources/tokenissuancepolicy.md) | Applications<br>Service principals |
 | Manage idle session timeout for Microsoft 365 web apps, for all device types<br><br>**Note:** To trigger the policy only for unmanaged devices, you also need to add a Conditional Access policy. | [activityBasedTimeoutPolicy resource type and its associated methods](../resources/activitybasedtimeoutpolicy.md)| Microsoft 365 web apps |
 | Manage policies for how certificates and password secrets can be used in your organization. Create tenant-wide policies or app-specific policies such as blocking the use of or restricting the lifetime of password secrets or symmetric keys and enforcing trusted certificate authorities | [Application authentication methods policies](../resources/applicationauthenticationmethodpolicy.md) | Applications |
 | Manage claims mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, and the applications the policies apply to | [claimsMappingPolicy resource type and its associated methods](../resources/claimsmappingpolicy.md) | Service principals |
@@ -81,7 +81,7 @@ Application templates are apps that are available in the [Microsoft Entra app ga
 
 ## Identity synchronization (provisioning)
 
-Provisioning APIs allow you to automate and manage the provisioning and deprovisioning of identities in the following scenarios:
+Provisioning APIs in Microsoft Graph allow you to automate and manage the provisioning and deprovisioning of identities in the following scenarios:
 
 - From your on-premises Active Directory to Microsoft Entra ID
 - From other cloud directories to Microsoft Entra ID
@@ -92,6 +92,8 @@ For more information, see [Microsoft Entra synchronization API overview](../reso
 ## On-premises publishing and app proxy
 
 On-premises publishing and application proxy allows you to access on-premises resources securely from the internet, and also use Microsoft Entra-supported capabilities like single sign-on (SSO), multifactor authentication, Conditional Access, and two-step verification.
+
+For more information, see [On-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root).
 
 ## Related content
 
