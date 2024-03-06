@@ -4620,7 +4620,6 @@ Possible values for user account types (group membership), per Windows definitio
 |noRecentDataCollected|
 |unknownFutureValue|
 
-<<<<<<< HEAD
 ### devicePlatformType values
 
 | Member             |
@@ -4639,8 +4638,6 @@ Possible values for user account types (group membership), per Windows definitio
 | iOSMobileApplicationManagement|
 | unknownFutureValue|
 
-=======
->>>>>>> af00997324b07a58692e565e053a8836522e07f5
 ### bookingPageAccessControl values 
 
 |Member|
