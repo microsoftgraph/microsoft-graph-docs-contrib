@@ -110,11 +110,11 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
+Location: https://security.microsoft.com/action-center/history?filters={"bulkId":["{bulkId}"]}&tid={tid}
+Content-Type: application/json;text/plain
+Content-Length: 0
 ```
->**Note:** Track the 'location' key in http response header
-Example:
-Get the tracking url at response header - 'Location'
-https://security.microsoft.com/action-center/history?filters={"bulkId":["{bulkId}"]}&tid={tid}
+
 
 
 
