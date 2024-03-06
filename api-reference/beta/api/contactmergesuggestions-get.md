@@ -3,7 +3,7 @@ title: "Get contactMergeSuggestions"
 description: "Read the properties and relationships of a contactMergeSuggestions object."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

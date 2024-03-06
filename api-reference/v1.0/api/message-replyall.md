@@ -3,7 +3,7 @@ title: "message: replyAll"
 description: "Reply to all recipients of a message using either JSON or MIME format."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

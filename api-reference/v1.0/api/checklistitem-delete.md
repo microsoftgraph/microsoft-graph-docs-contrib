@@ -3,7 +3,7 @@ title: "Delete checklistItem"
 description: "Delete a checklistItem object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
