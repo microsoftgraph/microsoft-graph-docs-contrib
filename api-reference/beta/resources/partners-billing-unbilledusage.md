@@ -29,11 +29,11 @@ None.
 
 ### billingPeriod values
 
-| Member             | Description                                      |
-|:-------------------|:-------------------------------------------------|
-| current            | The current month or billing period that is in progress.                      |
-| last               | The last month or billing period.           |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+| Member             | Description                                              |
+|:-------------------|:---------------------------------------------------------|
+| current            | The current month or billing period that is in progress. |
+| last               | The last month or billing period.                        |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.         |
 
 ## Relationships
 
