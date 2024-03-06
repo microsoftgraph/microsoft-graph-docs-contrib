@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /organization/{organizationId}/settings/itemInsights
 ```
 
-> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Use the `/admin/people` path, instead.
 
 ## Request headers
 
@@ -65,7 +65,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/itemInsights
 ```
 
-> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Use the `/admin/people` path, instead.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-insightssettingsrequest-csharp-snippets.md)]
