@@ -424,7 +424,7 @@ Content-Type: application/json
 
 #### Request
 
-The following bulk request illustrates how to update attributes of an existing Microsoft Entra user, to change the user's department and set that the user can't sign in.  This example assumes you have configured a mapping for the **externalId**, **department** and **active** fields, and you have an existing Microsoft Entra user that has attribute matching the **externalId**.  
+The following bulk request illustrates how to update attributes of an existing Microsoft Entra user, change the user's department, and disable sign-in for the user.  This example assumes you have configured a mapping for the **externalId**, **department**, and **active** fields, and you have an existing Microsoft Entra user that has an attribute matching the **externalId**.  
 
 <!-- {
   "blockType": "request",
