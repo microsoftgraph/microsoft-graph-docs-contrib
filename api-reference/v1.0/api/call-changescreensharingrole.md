@@ -3,7 +3,7 @@ title: "call: changeScreenSharingRole"
 description: "Allow applications to share screen content with the participants of a group call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

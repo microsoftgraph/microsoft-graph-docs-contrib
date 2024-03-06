@@ -3,7 +3,7 @@ title: "meetingCapability resource type"
 description: "Contains the capabilities of a meeting"
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
