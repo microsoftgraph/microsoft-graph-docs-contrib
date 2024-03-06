@@ -13,7 +13,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an edition of a particular Windows product. For example, Enterprise, Core, or Education. 
+Represents an edition of a particular Windows product. 
+
+|Examples|
+|:---|
+|Enterprise|
+|Core|
+|Education| 
 
 ## Properties
 
@@ -22,8 +28,8 @@ Represents an edition of a particular Windows product. For example, Enterprise, 
 |deviceFamily|String|The device family targeted by the edition|
 |endofServiceDateTime|DateTimeOffset|The date and time when the edition reaches or reached end of service. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 |generalAvailabilityDateTime|DateTimeOffset|The date and time when the edition became available to the general customers for the first time. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|id|String|The unique identifier for the entry. Read-only.|
-|isInService|Boolean| Represents an edition of a particular Windows product. [Add link] |
+|id|String|The unique identifier for the edition entry. Read-only.|
+|isInService|Boolean| Represents an edition of a particular Windows product.|
 |name|String|The name of the edition. Read-only.|
 |releasedName|String|The public name of the edition. Read-only.|
 
@@ -31,7 +37,7 @@ Represents an edition of a particular Windows product. For example, Enterprise, 
 
 |Relationships|Type|Description|
 |:---|:---|:---|
-|servicingPeriods| [microsoft.graph.windowsUpdates.servicingPeriod](.../resources/windowsupdates.servicingperiod.md)| Each object holds information of a servicing period related to the product edition.|
+|servicingPeriods| [microsoft.graph.windowsUpdates.servicingPeriod](.../resources/windowsupdates.servicingperiod.md) collection| Each object holds information of a servicing period related to the product edition.|
 
 ## JSON representation
 
