@@ -3,7 +3,7 @@ title: "Get qna"
 description: "Read the properties and relationships of a qna object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 

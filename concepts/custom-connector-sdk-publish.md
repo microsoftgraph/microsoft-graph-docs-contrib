@@ -4,7 +4,7 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Learn how to publish the connectors you build using the Microsoft Graph connectors SDK to the Microsoft 365 admin center."
 ---
 

@@ -3,7 +3,7 @@ title: "Delete acronym"
 description: "Delete an acronym object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
