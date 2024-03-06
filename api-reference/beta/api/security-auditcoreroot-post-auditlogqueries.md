@@ -96,7 +96,9 @@ Content-Type: application/json
   "displayName": "String",
   "filterStartDateTime": "String (timestamp)",
   "filterEndDateTime": "String (timestamp)",
-  "recordTypeFilter": "String",
+  "recordTypeFilters": [
+    "String"
+  ],
   "keywordFilter": "String",
   "serviceFilter": "String",
   "operationFilters": [
@@ -151,7 +153,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.
