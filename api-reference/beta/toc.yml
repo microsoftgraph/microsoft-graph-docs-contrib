@@ -16929,8 +16929,8 @@ items:
                     href: api/security-ediscoveryreviewtag-ashierarchy.md
           - name: Email and collaboration protection
             items:
-            - name: Analyzed email
-              href: resources/analyzedemail.md
+            - name: Analyzed email (preview)
+              href: resources/security-analyzedemail.md
               items:
                 - name: List
                   href: api/security-collaborationroot-list-analyzedemails.md
