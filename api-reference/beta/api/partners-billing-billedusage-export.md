@@ -3,7 +3,7 @@ title: "billedUsage: export"
 description: "Export the billed Azure usage data."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
