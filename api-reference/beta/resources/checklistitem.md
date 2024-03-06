@@ -33,9 +33,9 @@ Represents a subtask in a bigger [todoTask](./todotask.md). **ChecklistItem** al
 |:---|:---|:---|
 |checkedDateTime|DateTimeOffset|The date and time when the **checklistItem** was finished.|
 |createdDateTime|DateTimeOffset|The date and time when the **checklistItem** was created.|
-|displayName|String|Indicates the title of **checklistItem**.|
+|displayName|String|Indicates the title of the **checklistItem**.|
 |id|String|Server generated ID for the **checkListItem**|
-|isChecked|Boolean|State tha indicates whether the item is checked off or not.|
+|isChecked|Boolean|State that indicates whether the item is checked off or not.|
 
 ## Relationships
 None.
