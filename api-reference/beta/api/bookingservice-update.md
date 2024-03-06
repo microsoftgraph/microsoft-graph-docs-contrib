@@ -62,7 +62,7 @@ In the request body, supply the values for relevant fields that should be update
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
-|smsNotificationsEnabled|Boolean|True indicates SMS notifications can be sent to the customers for the appointment of the service.The default value is `false`.|
+|smsNotificationsEnabled|Boolean|True indicates SMS notifications can be sent to the customers for the appointment of the service. The default value is `false`.|
 |staffMemberIds|String collection|Represents those [staff members](../resources/bookingstaffmember.md) who provide this service. |
 |customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection|This contains the set of custom questions associated with a particular service. Optional.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
