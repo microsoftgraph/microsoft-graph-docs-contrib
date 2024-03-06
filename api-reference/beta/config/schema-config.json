@@ -15,7 +15,6 @@
       "description",
       "author",
       "doc_type",
-      "ms.subservice",
       "ms.localizationpriority"
     ],
     "treatErrorsAsWarningsWorkloads": [
