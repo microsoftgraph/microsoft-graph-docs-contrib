@@ -86,28 +86,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "displayName": "HR provisioning policy",
-    "description": "Provisioning policy for India HR employees"
-    "domainJoinConfigurations": [
-      {
-        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-        "domainJoinType": "hybridAzureADJoin"
-      },
-      {
-        "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
-        "domainJoinType": "hybridAzureADJoin"
-      }
-    ],
-    "enableSingleSignOn": true,
-    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
-    "imageDisplayName": "Image for India HR employees",
-    "imageId": "6d1e37b1-dc44-42fb-9fa3-3f524832d987",
-    "imageType": "custom",
-    "windowsSetting": {
-        "locale": "en-US"
+  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
+  "displayName": "HR provisioning policy",
+  "description": "Provisioning policy for India HR employees",
+  "domainJoinConfigurations": [
+    {
+      "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+      "domainJoinType": "hybridAzureADJoin"
     },
-    "provisioningType": "dedicated"
+    {
+      "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
+      "domainJoinType": "hybridAzureADJoin"
+    }
+  ],
+  "enableSingleSignOn": true,
+  "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+  "imageDisplayName": "Image for India HR employees",
+  "imageId": "6d1e37b1-dc44-42fb-9fa3-3f524832d987",
+  "imageType": "custom",
+  "windowsSetting": {
+    "locale": "en-US"
+  },
+  "provisioningType": "dedicated"
 }
 ```
 
@@ -146,38 +146,38 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "displayName": "HR provisioning policy",
-    "description": "Provisioning policy for India HR employees"
-    "domainJoinConfigurations": [
-      {
-        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-        "domainJoinType": "hybridAzureADJoin"
-      },
-      {
-        "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
-        "domainJoinType": "hybridAzureADJoin"
-      }
-    ],
-    "enableSingleSignOn": true,
-    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
-    "imageDisplayName": "IndiaHRImage",
-    "imageId": "6d1e37b1-dc44-42fb-9fa3-3f524832d987",
-    "imageType": "custom",
-    "windowsSetting": {
-        "locale": "en-US"
+  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
+  "displayName": "HR provisioning policy",
+  "description": "Provisioning policy for India HR employees",
+  "domainJoinConfigurations": [
+    {
+      "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+      "domainJoinType": "hybridAzureADJoin"
     },
-    "assignments": [
-      {
-        "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",
-        "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
-        "target": {
-          "@odata.type":"microsoft.graph.cloudPCManagementGroupAssignmentTarget",
-          "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
-          }
+    {
+      "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
+      "domainJoinType": "hybridAzureADJoin"
+    }
+  ],
+  "enableSingleSignOn": true,
+  "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+  "imageDisplayName": "IndiaHRImage",
+  "imageId": "6d1e37b1-dc44-42fb-9fa3-3f524832d987",
+  "imageType": "custom",
+  "windowsSetting": {
+    "locale": "en-US"
+  },
+  "assignments": [
+    {
+      "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",
+      "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
+      "target": {
+        "@odata.type": "microsoft.graph.cloudPCManagementGroupAssignmentTarget",
+        "groupId": "64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
       }
-    ],
-    "provisioningType": "dedicated"
+    }
+  ],
+  "provisioningType": "dedicated"
 }
 ```
 
@@ -216,31 +216,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "alternateResourceUrl": "https://ms.portal.azure.com/#contoso.com/resource/subscriptions/827f2432-9c7b-4637-b694-570b3c2f969c/resourceGroups/myResourceGroupName/providers/Microsoft.Fidalgo/projects/myProjectName/pools/myPoolName",
-    "cloudPcGroupDisplayName": "WestUSEmployeesCloudPcGroup",
-    "description": "The ProvisioningPolicy for West US employees.",
-    "displayName": "WestUsPolicy",
-    "domainJoinConfigurations": [
-      {
-        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-        "domainJoinType": "hybridAzureADJoin"
-      },
-      {
-        "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
-        "domainJoinType": "hybridAzureADJoin"
-      }
-    ],
-    "enableSingleSignOn": true,
-    "gracePeriodInHours": 2,
-    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
-    "imageDisplayName": "WestUSEmployeesCustomImage",
-    "imageId": "d4e0541a-f7bb-4bdf-ad8f-b92b915a229f",
-    "imageType": "custom",
-    "localAdminEnabled": true,
-    "windowsSetting": {
-        "locale": "en-US"
+  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
+  "alternateResourceUrl": "https://ms.portal.azure.com/#contoso.com/resource/subscriptions/827f2432-9c7b-4637-b694-570b3c2f969c/resourceGroups/myResourceGroupName/providers/Microsoft.Fidalgo/projects/myProjectName/pools/myPoolName",
+  "cloudPcGroupDisplayName": "WestUSEmployeesCloudPcGroup",
+  "description": "The ProvisioningPolicy for West US employees.",
+  "displayName": "WestUsPolicy",
+  "domainJoinConfigurations": [
+    {
+      "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+      "domainJoinType": "hybridAzureADJoin"
     },
-    "provisioningType": "dedicated"
+    {
+      "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
+      "domainJoinType": "hybridAzureADJoin"
+    }
+  ],
+  "enableSingleSignOn": true,
+  "gracePeriodInHours": 2,
+  "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+  "imageDisplayName": "WestUSEmployeesCustomImage",
+  "imageId": "d4e0541a-f7bb-4bdf-ad8f-b92b915a229f",
+  "imageType": "custom",
+  "localAdminEnabled": true,
+  "windowsSetting": {
+    "locale": "en-US"
+  },
+  "provisioningType": "dedicated"
 }
 ```
