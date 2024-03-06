@@ -13,21 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information and properties of a cloudClipboardRoot and it's an entry point for [cloudClipboardItem](../resources/cloudclipboarditem.md) objects.
+Represents the information and properties of a cloudClipboardRoot and serves as an entry point for [cloudClipboardItem](../resources/cloudclipboarditem.md) objects.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List items](../api/cloudclipboardroot-list-items.md)|[cloudClipboardItem](../resources/cloudclipboarditem.md) collection|Get the cloudClipboardItem resources from the items navigation property.|
+|[List items](../api/cloudclipboardroot-list-items.md)|[cloudClipboardItem](../resources/cloudclipboarditem.md) collection|"Get a list of the **cloudClipboard** items and their properties.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+None.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|items|[cloudClipboardItem](../resources/cloudclipboarditem.md) collection|Get a list of the cloudClipboard items and their properties.|
+|items|[cloudClipboardItem](../resources/cloudclipboarditem.md) collection|Represents a collection of Cloud Clipboard items.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
