@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.organization.item.branding.branding_request_builder import BrandingRequestBuilder
+from msgraph.generated.models.organizational_branding import OrganizationalBranding
 
 graph_client = GraphServiceClient(credentials, scopes)
 

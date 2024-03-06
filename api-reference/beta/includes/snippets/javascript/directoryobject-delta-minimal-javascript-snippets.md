@@ -14,7 +14,7 @@ let delta = await client.api('/directoryObjects/delta')
 	.version('beta')
 	.header('Prefer','return=minimal')
 	.filter('isof(\'microsoft.graph.user\') or isof(\'microsoft.graph.group\')')
-	.select(',')
+	.select('microsoft.graph.user,microsoft.graph.group')
 	.get();
 
 ```

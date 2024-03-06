@@ -32,6 +32,3 @@ Looking for the API reference for this service?
 
 - [Use the Edge API in Microsoft Graph](/graph/api/resources/browser-edge-api-overview)
 
-## Next steps
-
-Find out more about the [use cases](/graph/api/resources/browser-edge-api-overview#common-use-cases) of the Edge API in Microsoft Graph.

@@ -121,11 +121,11 @@ Content-type: application/json
     "value": [
         {
             "name": "Building 1 Rooms",
-            "address": "Building1Rooms@contoso.onmicrosoft.com"
+            "address": "Building1Rooms@contoso.com"
         },
         {
             "name": "Building 2 Rooms",
-            "address": "Building2Rooms@contoso.onmicrosoft.com"
+            "address": "Building2Rooms@contoso.com"
         }
     ]
 }

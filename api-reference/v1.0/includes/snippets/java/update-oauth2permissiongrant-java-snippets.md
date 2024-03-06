@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OAuth2PermissionGrant oAuth2PermissionGrant = new OAuth2PermissionGrant();
-oAuth2PermissionGrant.scope = "User.ReadBasic.All Group.ReadWrite.All";
+oAuth2PermissionGrant.setScope("User.ReadBasic.All Group.ReadWrite.All");
+OAuth2PermissionGrant result = graphClient.oauth2PermissionGrants().byOAuth2PermissionGrantId("{oAuth2PermissionGrant-id}").patch(oAuth2PermissionGrant);
 
-graphClient.oauth2PermissionGrants("l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk")
-	.buildRequest()
-	.patch(oAuth2PermissionGrant);
 
 ```

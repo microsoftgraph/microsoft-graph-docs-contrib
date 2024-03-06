@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ```http
-POST /bookingBusinesses/{bookingBusinessesId}/customQuestions
+POST /solutions/bookingbusinesses/{bookingBusinessesId}/customQuestions
 ```
 
 ## Request headers
@@ -67,12 +67,12 @@ If successful, this method returns a `201 Created` response code and a [bookingC
 <!-- {
   "blockType": "request",
   "name": "create_bookingcustomquestion_from_",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
 }
 -->
 
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
 Content-Type: application/json
 Content-length: 165
 

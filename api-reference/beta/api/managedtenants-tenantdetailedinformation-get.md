@@ -112,7 +112,7 @@ Content-Type: application/json
   "id": "34298981-4fc8-4974-9486-c8909ed1521b",
   "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
   "companyName": "Fourth Coffee",
-  "defaultDomainName": "fourthcoffee001.onmicrosoft.com",
+  "defaultDomainName": "contoso.com",
   "countryName": "United States",
   "countryCode": "US",
   "city": "Redmond",

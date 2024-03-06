@@ -141,7 +141,7 @@ Content-type: application/json
           {
             "emailAddress":{
               "name":"Alex Wilbur",
-              "address":"AlexW@contoso.onmicrosoft.com"
+              "address":"AlexW@contoso.com"
             }
           }
         ]

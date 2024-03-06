@@ -1,7 +1,7 @@
 ---
 title: "callRecord: getDirectRoutingCalls"
 description: "Get a log of direct routing calls."
-author: "williamlooney"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
@@ -53,15 +53,14 @@ The following table shows the parameters that can be used with this function.
 
 If successful, this function returns a `200 OK` response code and a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries in the response body.
 
-If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries. The last page in the date range doesn't have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
+If there are more than 1,000 entries in the date range, the body also includes an `@odata.nextLink` with a URL to query the next page of call entries. The last page in the date range doesn't have `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
 
-The following example shows getting a collection of records for direct routing calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.NextLink` to get records beyond the first 1000. For readability, the response shows only a collection of one record. Assume there are more than 1000 calls in that date range.
+The following example shows getting a collection of records for direct routing calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.nextLink` to get records beyond the first 1,000. For readability, the response shows only a collection of one record. Assume there are more than 1,000 calls in that date range.
 
 ### Request
-
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -104,13 +103,12 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/getDirectRouting
 ---
 
 ### Response
-
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callRecords.directRoutingLogRow)"
 }
 -->
 
@@ -149,7 +147,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-## See also
+## Related content
 
 * [Microsoft Teams direct routing usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center.
 * [Health Dashboard for direct routing](/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center.

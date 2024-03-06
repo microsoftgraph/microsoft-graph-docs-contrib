@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.identityGovernance.lifecycleWorkflows.deletedItems.workflows.item.workflow_item_request_builder import WorkflowItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

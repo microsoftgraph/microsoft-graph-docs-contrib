@@ -4,26 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.chats.item.installedapps.item.upgrade.UpgradePostRequestBody upgradePostRequestBody = new com.microsoft.graph.chats.item.installedapps.item.upgrade.UpgradePostRequestBody();
 TeamsAppPermissionSet consentedPermissionSet = new TeamsAppPermissionSet();
-LinkedList<TeamsAppResourceSpecificPermission> resourceSpecificPermissionsList = new LinkedList<TeamsAppResourceSpecificPermission>();
-TeamsAppResourceSpecificPermission resourceSpecificPermissions = new TeamsAppResourceSpecificPermission();
-resourceSpecificPermissions.permissionValue = "OnlineMeeting.ReadBasic.Chat";
-resourceSpecificPermissions.permissionType = TeamsAppResourceSpecificPermissionType.DELEGATED;
-resourceSpecificPermissionsList.add(resourceSpecificPermissions);
-TeamsAppResourceSpecificPermission resourceSpecificPermissions1 = new TeamsAppResourceSpecificPermission();
-resourceSpecificPermissions1.permissionValue = "ChatMember.Read.Chat";
-resourceSpecificPermissions1.permissionType = TeamsAppResourceSpecificPermissionType.APPLICATION;
-resourceSpecificPermissionsList.add(resourceSpecificPermissions1);
-consentedPermissionSet.resourceSpecificPermissions = resourceSpecificPermissionsList;
+LinkedList<TeamsAppResourceSpecificPermission> resourceSpecificPermissions = new LinkedList<TeamsAppResourceSpecificPermission>();
+TeamsAppResourceSpecificPermission teamsAppResourceSpecificPermission = new TeamsAppResourceSpecificPermission();
+teamsAppResourceSpecificPermission.setPermissionValue("OnlineMeeting.ReadBasic.Chat");
+teamsAppResourceSpecificPermission.setPermissionType(TeamsAppResourceSpecificPermissionType.Delegated);
+resourceSpecificPermissions.add(teamsAppResourceSpecificPermission);
+TeamsAppResourceSpecificPermission teamsAppResourceSpecificPermission1 = new TeamsAppResourceSpecificPermission();
+teamsAppResourceSpecificPermission1.setPermissionValue("ChatMember.Read.Chat");
+teamsAppResourceSpecificPermission1.setPermissionType(TeamsAppResourceSpecificPermissionType.Application);
+resourceSpecificPermissions.add(teamsAppResourceSpecificPermission1);
+consentedPermissionSet.setResourceSpecificPermissions(resourceSpecificPermissions);
+upgradePostRequestBody.setConsentedPermissionSet(consentedPermissionSet);
+graphClient.chats().byChatId("{chat-id}").installedApps().byTeamsAppInstallationId("{teamsAppInstallation-id}").upgrade().post(upgradePostRequestBody);
 
-graphClient.chats("19:ea28e88c00e94c7786b065394a61f296@thread.v2").installedApps("NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=")
-	.upgrade(TeamsAppInstallationUpgradeParameterSet
-		.newBuilder()
-		.withConsentedPermissionSet(consentedPermissionSet)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

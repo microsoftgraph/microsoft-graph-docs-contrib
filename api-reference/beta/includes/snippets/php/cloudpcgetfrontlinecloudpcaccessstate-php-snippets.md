@@ -10,6 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->me()->cloudPCs()->byCloudPCId('cloudPC-id')->getFrontlineCloudPcAccessState()->get()->wait();
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCs()->byCloudPCId('cloudPC-id')->getFrontlineCloudPcAccessState()->get()->wait();
 
 ```

@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PersonName personName = new PersonName();
-personName.displayName = "Innocenty Popov";
-personName.first = "Innocenty";
-personName.initials = "IP";
-personName.last = "Popov";
-personName.languageTag = "en-US";
-personName.maiden = null;
+personName.setDisplayName("Innocenty Popov");
+personName.setFirst("Innocenty");
+personName.setInitials("IP");
+personName.setLast("Popov");
+personName.setLanguageTag("en-US");
+personName.setMaiden(null);
+PersonName result = graphClient.me().profile().names().post(personName);
 
-graphClient.me().profile().names()
-	.buildRequest()
-	.post(personName);
 
 ```

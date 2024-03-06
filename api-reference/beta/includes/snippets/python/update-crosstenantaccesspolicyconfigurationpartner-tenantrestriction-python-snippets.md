@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.cross_tenant_access_policy_configuration_partner import CrossTenantAccessPolicyConfigurationPartner
+from msgraph.generated.models.cross_tenant_access_policy_tenant_restrictions import CrossTenantAccessPolicyTenantRestrictions
+from msgraph.generated.models.cross_tenant_access_policy_target_configuration import CrossTenantAccessPolicyTargetConfiguration
+from msgraph.generated.models.cross_tenant_access_policy_target import CrossTenantAccessPolicyTarget
 
 graph_client = GraphServiceClient(credentials, scopes)
 

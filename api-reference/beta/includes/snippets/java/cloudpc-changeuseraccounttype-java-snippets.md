@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CloudPcUserAccountType userAccountType = CloudPcUserAccountType.ADMINISTRATOR;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.deviceManagement().virtualEndpoint().cloudPCs("4b5ad5e0-6a0b-4ffc-818d-36bb23cf4dbd")
-	.changeUserAccountType(CloudPCChangeUserAccountTypeParameterSet
-		.newBuilder()
-		.withUserAccountType(userAccountType)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.devicemanagement.virtualendpoint.cloudpcs.item.changeuseraccounttype.ChangeUserAccountTypePostRequestBody changeUserAccountTypePostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.cloudpcs.item.changeuseraccounttype.ChangeUserAccountTypePostRequestBody();
+changeUserAccountTypePostRequestBody.setUserAccountType(CloudPcUserAccountType.Administrator);
+graphClient.deviceManagement().virtualEndpoint().cloudPCs().byCloudPCId("{cloudPC-id}").changeUserAccountType().post(changeUserAccountTypePostRequestBody);
+
 
 ```

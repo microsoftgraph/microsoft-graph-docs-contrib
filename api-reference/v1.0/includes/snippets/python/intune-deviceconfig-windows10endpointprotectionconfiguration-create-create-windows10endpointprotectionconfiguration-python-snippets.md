@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows10_endpoint_protection_configuration import Windows10EndpointProtectionConfiguration
+from msgraph.generated.models.windows_firewall_network_profile import WindowsFirewallNetworkProfile
+from msgraph.generated.models.bit_locker_removable_drive_policy import BitLockerRemovableDrivePolicy
 
 graph_client = GraphServiceClient(credentials, scopes)
 

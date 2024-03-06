@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CrossTenantAccessSettings crossTenantAccessSettings = graphClient.networkAccess().settings().crossTenantAccess()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.networkaccess.CrossTenantAccessSettings result = graphClient.networkAccess().settings().crossTenantAccess().get();
+
 
 ```

@@ -4,7 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.scheduled_permissions_request import ScheduledPermissionsRequest
+from msgraph.generated.models.single_resource_azure_permissions_definition import SingleResourceAzurePermissionsDefinition
+from msgraph.generated.models.permissions_definition_authorization_system import PermissionsDefinitionAuthorizationSystem
+from msgraph.generated.models.azure_role_permissions_definition_action import AzureRolePermissionsDefinitionAction
+from msgraph.generated.models.permissions_definition_azure_role import PermissionsDefinitionAzureRole
+from msgraph.generated.models.permissions_definition_authorization_system_identity import PermissionsDefinitionAuthorizationSystemIdentity
+from msgraph.generated.models.ed_identity_source import EdIdentitySource
+from msgraph.generated.models.request_schedule import RequestSchedule
+from msgraph.generated.models.expiration_pattern import ExpirationPattern
+from msgraph.generated.models.ticket_info import TicketInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

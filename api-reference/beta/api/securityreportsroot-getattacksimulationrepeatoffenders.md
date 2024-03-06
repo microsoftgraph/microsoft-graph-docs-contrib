@@ -135,5 +135,5 @@ Content-Type: application/json
 
 ```
 
-## See also
+## Related content
 [reportRoot: getAttackSimulationRepeatOffenders](reportroot-getattacksimulationrepeatoffenders.md) (deprecated)

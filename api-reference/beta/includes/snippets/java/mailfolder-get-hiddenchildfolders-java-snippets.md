@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("includeHiddenFolders", "true"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-MailFolderCollectionPage childFolders = graphClient.me().mailFolders("AAMkAGVmMDEzM").childFolders()
-	.buildRequest( requestOptions )
-	.get();
+MailFolderCollectionResponse result = graphClient.me().mailFolders().byMailFolderId("{mailFolder-id}").childFolders().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.includeHiddenFolders = "true";
+});
+
 
 ```

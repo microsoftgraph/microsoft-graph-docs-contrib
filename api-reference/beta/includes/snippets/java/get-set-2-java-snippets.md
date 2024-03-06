@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Set set = graphClient.termStore().sets("8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.termstore.Set result = graphClient.termStore().sets().bySetId("{set-id}").get();
+
 
 ```

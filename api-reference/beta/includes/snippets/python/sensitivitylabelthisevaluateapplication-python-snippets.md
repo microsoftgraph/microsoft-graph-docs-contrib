@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.security.informationProtection.sensitivityLabels.microsoft.graph.security.evaluateApplication.evaluate_application_request_builder import EvaluateApplicationRequestBuilder
+from msgraph.generated.models.evaluate_application_post_request_body import EvaluateApplicationPostRequestBody
+from msgraph.generated.models.content_info import ContentInfo
+from msgraph.generated.models.key_value_pair import KeyValuePair
+from msgraph.generated.models.labeling_options import LabelingOptions
+from msgraph.generated.models.downgrade_justification import DowngradeJustification
 
 graph_client = GraphServiceClient(credentials, scopes)
 

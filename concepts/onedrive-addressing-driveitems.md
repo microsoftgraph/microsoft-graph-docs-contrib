@@ -192,6 +192,6 @@ To address each of Adele's files, you use percent encoding, as follows:
 | `\Break#Out`             | `/root:/Break%23Out`                      |
 | `\...\saved_game[1].bin` | `/root:/Break%23Out/saved_game[1].bin`    |
 
-## See also
+## Related content
 
 - [OneDrive file storage API overview](onedrive-concept-overview.md)

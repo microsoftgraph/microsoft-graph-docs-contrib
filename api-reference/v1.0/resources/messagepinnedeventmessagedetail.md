@@ -39,6 +39,6 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [Example response for an event message about a pinned chat message](/graph/system-messages/#message-pinned)
 - [System messages](/graph/system-messages)

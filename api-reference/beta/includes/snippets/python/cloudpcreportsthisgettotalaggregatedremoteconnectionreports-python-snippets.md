@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.get_total_aggregated_remote_connection_reports_post_request_body import GetTotalAggregatedRemoteConnectionReportsPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

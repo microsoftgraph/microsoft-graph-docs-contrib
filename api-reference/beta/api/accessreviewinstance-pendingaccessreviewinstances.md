@@ -175,7 +175,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get accessReviewInstance](accessreviewinstance-get.md)
 - [Get accessReviewInstanceDecisionItems pending approval](accessreviewinstancedecisionitem-listpendingapproval.md)

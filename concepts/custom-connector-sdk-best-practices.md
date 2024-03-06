@@ -233,6 +233,6 @@ The following errors move the connection to failed state:
 
 The other operation codes will be treated as transient failures and will be retried in subsequent crawls.
 
-## See also
+## Related content
 
 * [Troubleshooting issues with your connector](/graph/custom-connector-sdk-troubleshooting)

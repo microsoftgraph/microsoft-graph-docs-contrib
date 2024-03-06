@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows10_general_configuration import Windows10GeneralConfiguration
+from msgraph.generated.models.defender_detected_malware_actions import DefenderDetectedMalwareActions
+from msgraph.generated.models.windows10_network_proxy_server import Windows10NetworkProxyServer
+from msgraph.generated.models.edge_search_engine_base import EdgeSearchEngineBase
 
 graph_client = GraphServiceClient(credentials, scopes)
 

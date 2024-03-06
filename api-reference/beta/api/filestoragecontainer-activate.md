@@ -9,7 +9,6 @@ doc_type: apiPageType
 
 # fileStorageContainer: activate
 
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

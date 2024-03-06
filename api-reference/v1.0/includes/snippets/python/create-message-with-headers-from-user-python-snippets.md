@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.message import Message
+from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.recipient import Recipient
+from msgraph.generated.models.email_address import EmailAddress
+from msgraph.generated.models.internet_message_header import InternetMessageHeader
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -17,7 +22,7 @@ request_body = Message(
 	to_recipients = [
 		Recipient(
 			email_address = EmailAddress(
-				address = "AlexW@contoso.OnMicrosoft.com",
+				address = "AlexW@contoso.com",
 			),
 		),
 	],

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.b2x_identity_user_flow import B2xIdentityUserFlow
 
 graph_client = GraphServiceClient(credentials, scopes)
 
