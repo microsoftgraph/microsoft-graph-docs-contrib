@@ -3,7 +3,7 @@ title: "Delete educationSubmissionResource"
 description: "Deletes a resource from the submission. This can only be done by the student. If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted."
 author: "sharad-sharma-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

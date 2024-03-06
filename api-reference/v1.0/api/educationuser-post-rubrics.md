@@ -3,7 +3,7 @@ title: "Create educationRubric"
 description: "Create a new educationRubric object."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
