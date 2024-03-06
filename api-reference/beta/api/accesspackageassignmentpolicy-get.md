@@ -3,7 +3,7 @@ title: "Get accessPackageAssignmentPolicy"
 description: "Retrieve the properties and relationships of an accessPackageAassignmentPolicy object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

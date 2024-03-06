@@ -3,7 +3,7 @@ title: "accessPackage: moveToCatalog"
 description: "Allows callers to move an access package from one catalog to the another."
 author: "fsheik"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

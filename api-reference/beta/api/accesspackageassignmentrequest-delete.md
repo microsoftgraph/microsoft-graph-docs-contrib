@@ -3,7 +3,7 @@ title: "Delete accessPackageAssignmentRequest"
 description: "Delete accessPackageAssignmentRequest."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

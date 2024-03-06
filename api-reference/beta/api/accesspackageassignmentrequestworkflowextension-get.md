@@ -3,7 +3,7 @@ title: "Get accessPackageAssignmentRequestWorkflowExtension"
 description: "Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

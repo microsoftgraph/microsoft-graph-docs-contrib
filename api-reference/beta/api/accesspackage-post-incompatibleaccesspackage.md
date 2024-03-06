@@ -3,7 +3,7 @@ title: "Add accessPackage to incompatibleAccessPackages"
 description: "Add a link to indicate an access package is incompatible with a specified access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

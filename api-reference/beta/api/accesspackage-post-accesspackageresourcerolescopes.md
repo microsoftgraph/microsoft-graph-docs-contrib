@@ -3,7 +3,7 @@ title: "Create accessPackageResourceRoleScope"
 description: "Create a new accessPackageResourceRoleScope for adding a resource role to an access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

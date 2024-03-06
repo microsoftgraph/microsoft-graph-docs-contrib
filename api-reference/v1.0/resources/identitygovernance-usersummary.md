@@ -3,7 +3,7 @@ title: "userSummary resource type"
 description: "A summary of user processing results for a specified time period. This summary allows the administrator to get a quick overview based on counts."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

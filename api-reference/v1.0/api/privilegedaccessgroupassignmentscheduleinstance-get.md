@@ -3,7 +3,7 @@ title: "Get privilegedAccessGroupAssignmentScheduleInstance"
 description: "Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleInstance object."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

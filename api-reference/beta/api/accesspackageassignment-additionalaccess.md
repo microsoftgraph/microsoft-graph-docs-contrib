@@ -3,7 +3,7 @@ title: "accessPackageAssignment: additionalAccess"
 description: "Retrieve a list of accessPackageAssignment objects indicating potential separation of duties conflicts or access to incompatible access packages."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

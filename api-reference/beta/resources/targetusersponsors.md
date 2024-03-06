@@ -3,7 +3,7 @@ title: "targetUserSponsors complex type"
 description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
 author: "sadia353"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
