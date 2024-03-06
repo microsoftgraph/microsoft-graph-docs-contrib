@@ -3,7 +3,7 @@ title: "List deploymentAudiences"
 description: "Get a list of deploymentAudience objects and their properties."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: apiPageType
 ---
 

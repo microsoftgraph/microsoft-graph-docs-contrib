@@ -3,7 +3,7 @@ title: "deployment resource type"
 description: "Represents the deployment of content to a set of devices."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 

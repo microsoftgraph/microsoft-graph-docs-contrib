@@ -3,7 +3,7 @@ title: "Deploy an expedited quality update using the Windows Update for Business
 description: "Follow these steps to deploy expedited Windows quality updates to devices in a Microsoft Entra tenant in case of an emergency by using the Windows Update for Business deployment service."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: conceptualPageType
 ---
 

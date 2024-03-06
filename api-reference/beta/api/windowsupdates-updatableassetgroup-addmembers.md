@@ -3,7 +3,7 @@ title: "updatableAssetGroup: addMembers"
 description: "Add members to an updatableAssetGroup."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: apiPageType
 ---
 

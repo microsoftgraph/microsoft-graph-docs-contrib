@@ -3,7 +3,7 @@ title: "Deploy a feature update using the Windows Update for Business deployment
 description: "Follow these steps to deploy Windows feature updates to devices in a Microsoft Entra tenant by using the Windows Update for Business deployment service."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: conceptualPageType
 ---
 

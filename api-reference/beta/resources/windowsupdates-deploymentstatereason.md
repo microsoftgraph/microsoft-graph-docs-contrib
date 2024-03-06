@@ -3,7 +3,7 @@ title: "deploymentStateReason resource type"
 description: "A reason for a particular deployment state."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 

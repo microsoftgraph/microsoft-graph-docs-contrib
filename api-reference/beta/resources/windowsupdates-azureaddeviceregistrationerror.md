@@ -3,7 +3,7 @@ title: "azureADDeviceRegistrationError resource type"
 description: "An error in the registration process of a Microsoft Entra device that prevents the service from enrolling the device in update management or deploying content to the device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 

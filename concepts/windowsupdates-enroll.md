@@ -3,7 +3,7 @@ title: "Enroll in update management by the Windows Update for Business deploymen
 description: "Enroll a device in update management so that you can use the Windows Update for Business deployment service to manage content delivered from Windows Update to that device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: conceptualPageType
 ---
 

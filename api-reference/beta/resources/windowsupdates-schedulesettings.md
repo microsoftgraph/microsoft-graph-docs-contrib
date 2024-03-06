@@ -3,7 +3,7 @@ title: "scheduleSettings resource type"
 description: "Represents settings for controlling how and when the service deploys an update over time."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 

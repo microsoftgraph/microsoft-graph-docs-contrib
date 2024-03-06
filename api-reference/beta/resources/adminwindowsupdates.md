@@ -3,7 +3,7 @@ title: "adminWindowsUpdates resource type"
 description: "Represents an entity that acts as a container for all Windows Update for Business deployment service functionalities."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 

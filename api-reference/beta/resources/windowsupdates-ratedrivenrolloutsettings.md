@@ -3,7 +3,7 @@ title: "rateDrivenRolloutSettings resource type"
 description: "Represents settings for governing rate driven rollouts."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 

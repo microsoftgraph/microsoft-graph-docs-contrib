@@ -3,7 +3,7 @@ title: "gradualRolloutSettings resource type"
 description: "Represents settings for governing how to rollout content to devices."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 

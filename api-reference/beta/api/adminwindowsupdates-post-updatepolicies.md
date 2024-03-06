@@ -3,7 +3,7 @@ title: "Create updatePolicy"
 description: "Create a new updatePolicy object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: apiPageType
 ---
 

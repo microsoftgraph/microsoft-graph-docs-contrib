@@ -3,7 +3,7 @@ title: "applicableContent resource type"
 description: "Represents content applicable for offering to the related collection of devices."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.service: "windows-10"
 doc_type: resourcePageType
 ---
 
