@@ -3,7 +3,7 @@ title: "billedUsage: export"
 description: "Export the billed Azure usage data."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -126,6 +126,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 202 OK
+HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/v1.0/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
 ```

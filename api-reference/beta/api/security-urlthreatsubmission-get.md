@@ -3,7 +3,7 @@ title: "Get urlThreatSubmission"
 description: "Read the properties and relationships of an urlThreatSubmission object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

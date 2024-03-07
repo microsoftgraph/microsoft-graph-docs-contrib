@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a collection of **ris
 ms.localizationpriority: medium
 author: "tracyshi"
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 # List riskyUsers
 

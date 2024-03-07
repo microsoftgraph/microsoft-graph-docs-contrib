@@ -3,7 +3,7 @@ title: "Get securityAction"
 description: "Retrieve the properties and relationships of securityAction object."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

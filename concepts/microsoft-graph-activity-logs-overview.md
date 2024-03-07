@@ -1,10 +1,11 @@
 ---
 title: "Access Microsoft Graph activity logs (preview)"
 description: "Microsoft Graph activity logs are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant."
-author: "FaithOmbongi"
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: yiheguo
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: conceptualPageType
 ms.date: 10/24/2023
 ---
@@ -36,12 +37,9 @@ To access the Microsoft Graph activity logs, you need the following privileges.
 
 ## What data is available in the Microsoft Graph activity logs?
 
-> [!WARNING]
-> The current field name `IpAddress` will change to `IPAddress` in the beta schema. When this change is released, you will need to update any queries that reference this field. The change has already rolled out to some regions.
-
 The following data relating to API requests is available for Microsoft Graph activity logs on the Logs Analytics interface.
 
-[!INCLUDE [microsoftgraphactivitylogs-include](~/../azure-reference-other/azure-monitor-ref/includes/microsoftgraphactivitylogs-include.md)]
+[!INCLUDE [microsoftgraphactivitylogs-include](~/../azure-reference-other/azure-monitor-ref/tables/includes/microsoftgraphactivitylogs-include.md)]
 
 ## Common use cases for Microsoft Graph activity logs
 

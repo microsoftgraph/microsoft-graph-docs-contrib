@@ -3,7 +3,7 @@ title: "runningOperation resource type"
 description: "Represents an export operation that is still running, which indicates that the files aren't ready yet."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

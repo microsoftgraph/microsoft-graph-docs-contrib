@@ -3,7 +3,7 @@ title: "secureSignInSessionControl resource type"
 description: "Session control to require sign in sessions to be bound to a device."
 ms.localizationpriority: medium
 author: "paulgarn"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

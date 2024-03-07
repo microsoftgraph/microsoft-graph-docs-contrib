@@ -3,7 +3,7 @@ title: "Get educationAssignmentDefaults"
 description: "Read the properties and relationships of an educationAssignmentDefaults object."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ The following is an example of a request.
   "name": "get_educationassignmentdefaults"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentDefaults
 ```
 

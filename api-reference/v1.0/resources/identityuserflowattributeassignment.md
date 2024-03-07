@@ -3,7 +3,7 @@ title: "identityUserFlowAttributeAssignment resource type"
 description: "Represents how attributes are collected in an identity user flow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

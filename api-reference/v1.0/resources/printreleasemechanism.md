@@ -3,7 +3,7 @@ title: "printReleaseMechanism resource type"
 description: "Represents the print job release mechanism."
 author: jasli-985
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Use Graph Explorer to work with the education API in Microsoft Graph"
 description: "This article describes how to use Microsoft Graph Explorer to use edudtion APIs in Microsoft Graph."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

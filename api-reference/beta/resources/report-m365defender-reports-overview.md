@@ -3,7 +3,7 @@ title: "Reports API overview for attack simulation training as part of Microsoft
 description: "This section describes reporting capabilities of Microsoft Defender for Office 365, specifically APIs that access reports on a tenant's participation in attack simulation training."
 ms.localizationpriority: high
 author: "stuartcl"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

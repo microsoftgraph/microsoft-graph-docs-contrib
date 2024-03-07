@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsDeviceUsageUserDetail"
 description: "Get details about Microsoft Teams device usage by user."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---

@@ -3,7 +3,7 @@ title: "Delete todoTaskList"
 description: "Deletes a todoTaskList object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

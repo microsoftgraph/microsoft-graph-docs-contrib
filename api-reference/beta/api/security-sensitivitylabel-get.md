@@ -3,7 +3,7 @@ title: "Get sensitivityLabel"
 description: "Read the properties and relationships of a sensitivityLabel object."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
