@@ -3758,6 +3758,48 @@
     {
       "ChangeList": [
         {
+          "Id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pageTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [pageTemplate](https://review.learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
+          "Target": "pageTemplate"
+        },
+        {
+          "Id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+          "ApiChange": "Method",
+          "ChangedApiName": "create",
+          "ChangeType": "Addition",
+          "Description": "Added the [create](https://review.learn.microsoft.com/en-us/graph/api/pagetemplate-create?view=graph-rest-beta) method to the [pageTemplate](https://review.learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
+          "Target": "pageTemplate"
+        },
+        {
+          "Id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [update](https://review.learn.microsoft.com/en-us/graph/api/pagetemplate-update?view=graph-rest-beta) method to the [pageTemplate](https://review.learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
+          "Target": "pageTemplate"
+        },
+        {
+          "Id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete](https://review.learn.microsoft.com/en-us/graph/api/pagetemplate-delete?view=graph-rest-beta) method to the [pageTemplate](https://review.learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
+          "Target": "pageTemplate"
+        }
+      ],
+      "Id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-05T15:28:51.737705Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
           "ApiChange": "Member",
           "ChangedApiName": "loki",
