@@ -4,7 +4,7 @@ description: "Use Microsoft Graph connectors to bring content from external serv
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Microsoft Graph connectors overview

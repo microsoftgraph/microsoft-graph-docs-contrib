@@ -3,7 +3,7 @@ title: "externalActivityResult resource type"
 description: "Represents the result of processing an externalActivity."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

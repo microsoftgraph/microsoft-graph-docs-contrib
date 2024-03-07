@@ -3,7 +3,7 @@ title: "Update bookmark"
 description: "Update the properties of a bookmark object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 

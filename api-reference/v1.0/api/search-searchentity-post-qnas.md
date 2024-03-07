@@ -3,7 +3,7 @@ title: "Create qna"
 description: "Create a new qna object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 

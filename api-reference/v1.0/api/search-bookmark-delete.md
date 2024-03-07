@@ -3,7 +3,7 @@ title: "Delete bookmark"
 description: "Delete a bookmark object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 

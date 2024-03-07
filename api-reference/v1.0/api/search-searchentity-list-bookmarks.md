@@ -3,7 +3,7 @@ title: "List bookmarks"
 description: "Get a list of bookmark objects and their properties."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 

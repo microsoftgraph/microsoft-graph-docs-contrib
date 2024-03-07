@@ -2,7 +2,7 @@
 title: "Microsoft Search API in Microsoft Graph overview"
 description: "Use the Microsoft Search API in Microsoft Graph to extend Microsoft Search to your apps. Query data that Microsoft Search indexes and include custom external data."
 ms.localizationpriority: high
-ms.prod: "search"
+ms.subservice: "search"
 author: "snlraju-msft"
 scenarios: "getting-started"
 ---
