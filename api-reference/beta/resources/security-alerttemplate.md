@@ -3,7 +3,7 @@ title: "alertTemplate resource type"
 description: "Describes the alert that is generated in response to a detection by a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
