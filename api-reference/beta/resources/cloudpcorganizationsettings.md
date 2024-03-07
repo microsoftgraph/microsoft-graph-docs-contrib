@@ -3,7 +3,7 @@ title: "cloudPcOrganizationSettings resource type"
 description: "Represents the Cloud PC organization settings for a tenant."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
