@@ -3,7 +3,7 @@ title: "customAuthenticationExtension resource type"
 description: "Custom authentication extensions let you interact with external systems during a user authentication session."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

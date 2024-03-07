@@ -3,7 +3,7 @@ title: "List identityProviders"
 description: "Retrieve all identityProviders"
 ms.localizationpriority: high
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

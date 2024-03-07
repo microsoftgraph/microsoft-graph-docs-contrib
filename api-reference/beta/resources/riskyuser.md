@@ -4,7 +4,7 @@ description: "Represents Microsoft Entra users who are at risk. Microsoft Entra 
 author: "tracyshi"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # riskyUser resource type
