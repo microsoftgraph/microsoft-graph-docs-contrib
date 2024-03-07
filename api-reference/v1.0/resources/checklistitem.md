@@ -1,6 +1,6 @@
 ---
 title: "checklistItem resource type"
-description: "Represents a collection of checklist items on a task"
+description: "Represents a collection of checklist items on a task."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -20,22 +20,22 @@ Represents a subtask in a bigger [todoTask](./todotask.md). **ChecklistItem** al
 |[Create checklistItem](../api/todotask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new [checklistItem](../resources/checklistitem.md) object.|
 |[Get checklistItem](../api/checklistitem-get.md)|[checklistItem](../resources/checklistitem.md)|Read the properties and relationships of a [checklistItem](../resources/checklistitem.md) object.|
 |[Update checklistItem](../api/checklistitem-update.md)|[checklistItem](../resources/checklistitem.md)|Update the properties of a [checklistItem](../resources/checklistitem.md) object.|
-|[Delete checklistItem](../api/checklistitem-delete.md)|None|Deletes a [checklistItem](../resources/checklistitem.md) object.|
+|[Delete checklistItem](../api/checklistitem-delete.md)|None|Delete a [checklistItem](../resources/checklistitem.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |checkedDateTime|DateTimeOffset|The date and time when the **checklistItem** was finished.|
 |createdDateTime|DateTimeOffset|The date and time when the **checklistItem** was created.|
-|displayName|String|Field indicating the title of **checklistItem**.|
-|id|String|Server generated ID for the **checkListItem**|
-|isChecked|Boolean|State indicating whether the item is checked off or not.|
+|displayName|String|Indicates the title of the **checklistItem**.|
+|id|String|Server generated ID for the the **checkListItem**|
+|isChecked|Boolean|State that indicates whether the item is checked off or not.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
