@@ -35,9 +35,9 @@ GET /education/classes/{id}/assignments
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$expand` [OData query parameter](/graph/query-parameters) to help customize the response.
 
-The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions`, and `*`, which includes all the previous options.
+The folloing `$expand` options are available for this method: `categories`, `resources`, `rubric`, `submissions`, and `*`, which includes all the previous options.
 
 All [properties](/graph/api/resources/educationassignment#properties) are supported for the query parameters `$filter` and `$orderby`.
 
@@ -533,7 +533,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: $expand to get an assignment's gradingScheme
+### Example 5: Use `$expand` to get the gradingScheme for an assignment
 
 #### Request
 
