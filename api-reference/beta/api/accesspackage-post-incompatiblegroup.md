@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a [group](../resources/group.md) to the list of groups that have been marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
+Add a [group](../resources/group.md) to the list of groups marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -41,7 +41,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleG
 
 ## Request body
 
-In the request body, supply a JSON representation of a structure with the OData id of the URI of a [group](../resources/group.md) object.
+In the request body, supply a JSON representation of a structure with the OData ID of the URI of a [group](../resources/group.md) object.
 
 ## Response
 
@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -104,8 +104,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example of the response.
-
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
