@@ -1760,17 +1760,17 @@
       "ChangeList": [
         {
           "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
-          "ApiChange": "Resource",
+          "ApiChange": "Enumeration",
           "ChangedApiName": "teamworkTagType",
           "ChangeType": "Addition",
-          "Description": "Introduced the **scheduled** teamworkTagType value.",
+          "Description": "Added the `scheduled` value to the **teamworkTagType** enumeration.",
           "Target": "teamworkTagType"
         }
       ],
       "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2024-03-05T16:40:15.0058997Z",
+      "CreatedDateTime": "2024-03-07T16:40:15.0058997Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
