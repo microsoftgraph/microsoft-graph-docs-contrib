@@ -1085,7 +1085,10 @@
           "overview": "../../resources/report.md",
           "workloads": [
             {
-              "id": "Microsoft.O365Reporting"
+              "id": "Microsoft.O365Reporting",
+              "excludedResources": [
+                "report"
+              ]
             }
           ]
         },
@@ -1220,7 +1223,7 @@
               "includedResources": [
                 "ediscoveryCase",
                 "ediscoveryCaseSettings",
-                "caseOperation",
+                "microsoft.graph.security.caseOperation",
                 "ediscoveryCustodian",
                 "ediscoveryNoncustodialDataSource",
                 "ediscoverySearch",
