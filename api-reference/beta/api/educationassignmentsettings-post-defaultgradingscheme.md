@@ -1,6 +1,6 @@
 ---
 title: "Set default educationGradingScheme"
-description: "Set the defaultGradingScheme on the assignmentSettings."
+description: "Set the defaultGradingScheme on an assignmentSettings object."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the default [educationGradingScheme](../resources/educationgradingscheme.md) on the assignmentSettings.
+Set the default [educationGradingScheme](../resources/educationgradingscheme.md) on an **assignmentSettings** object.
 
 ## Permissions
 
