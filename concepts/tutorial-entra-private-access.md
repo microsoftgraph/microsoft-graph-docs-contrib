@@ -6,7 +6,7 @@ ms.reviewer: nbeesetti
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.prod: applications
-ms.date: 02/29/2024
+ms.date: 03/07/2024
 #Customer intent: As a customer, I want to learn how to configure Microsoft Entra Private Access using Microsoft Graph APIs sothat I can automate.
 ---
 
@@ -18,19 +18,18 @@ In this tutorial, you learn how to configure Microsoft Entra Private Access prog
 
 > [!div class="checklist"]
 > * Instantiate a custom application that you use to configure application settings for your backend application.
-> * Configure Microsoft Entra application proxy for an application.
-> * *placeholder*
+> * Configure Microsoft Entra application proxy for a private access application.
 
 > [!IMPORTANT]
-> The API operations in this tutorial use the `beta` endpoint.
+> Some API operations in this tutorial use the `beta` endpoint.
 
 ## Prerequisites
 
 To complete the steps in this tutorial:
 
-- Install and configure the Microsoft Entra Private Access connector. For more information, see [Add an on-premises application for remote access through application proxy in Microsoft Entra ID](/entra/identity/app-proxy/application-proxy-add-on-premises-application).
+- Install and configure the Private Network Access connector. For more information, see [Add an on-premises application for remote access through application proxy in Microsoft Entra ID](/entra/identity/app-proxy/application-proxy-add-on-premises-application).
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has at least the *Application Administrator* and *Global Secure Access Administrator* [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
-- Grant consent to the app for the *Directory.ReadWrite.All* and *NetworkAccess.Read.All* delegated permissions.
+- Grant consent to the app for the *Directory.ReadWrite.All* and *NetworkAccess.ReadWrite.All* delegated permissions.
 - Have a test user to assign to the application.
 
 ## Step 1: Create a custom application
@@ -239,9 +238,11 @@ Content-type: application/json
 }
 ```
 
-## Step 2: Specify the type of private application (Quick Access or Enterprise Application) you wish to create and send the traffic from the application created to the Global Secure Access client
+## Step 2: Specify the type of Global Secure Access private application
 
-For the application object you created in Step 1, replace the value of **applicationType**. Use `nonwebapp` for Enterprise Applications and `quickaccessapp` for Quick Access Applications.
+You can create a Global Secure Access private application of type Quick Access or enterprise application. The values in the **application** > **onPremisesPublishing** > **applicationType** property would be `quickaccessapp` for Quick Access Applications and `nonwebapp` for enterprise applications.
+
+In this step, you configure a Global Secure Access private app of type enterprise application.
 
 The request returns a `204 No Content` response.
 <!-- {
@@ -362,7 +363,7 @@ Content-type: application/json
 }
 ```
 
-### Step 3.4: Assign the application to the connectorGroup
+### Step 3.4: Assign the Global Secure Access private application to the connectorGroup
 
 The request returns a `204 No content` response.
 
@@ -379,7 +380,7 @@ Content-type: application/json
 }
 ```
 
-## Step 4: Add application segments to your Enterprise/Quick Access application
+## Step 4: Add application segments to your Global Secure Access private application
 
 In the example, create a new app segment with the following settings:
 - Replace the value of **destinationHost** with the private app destination. 
@@ -432,7 +433,7 @@ PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd
 #### Response
 
 
-## Step 5: Assign a user to the Enterprise or Quick Access application  
+## Step 5: Assign a user to the Global Secure Access private application 
 
 Assign the user to the service principal and grant them the `User` app role. In the request body, provide the following values:
 
@@ -502,7 +503,7 @@ GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles
 
 ### Step 6.2: Enable the state of the Private Access forwarding profile
 
-#### Request
+The request returns a `204 No content` response.
 <!-- {
   "blockType": "ignore",
   "name": "tutorial_configure_entraprivateaccess_enable_forwardingprofile"
@@ -515,13 +516,9 @@ PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{id}
 }
 ```
 
-### Response
-
-
 ## Step 7: Enable private Domain Name System (DNS) resolution
 
-> [!NOTE] 
-> The capability is only available for Quick Access applications.
+This capability is only available for Global Secure Access private applications of type Quick Access.
 
 ### Request
 
@@ -530,7 +527,7 @@ PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{id}
   "name": "tutorial_configure_entraprivateaccess_enable_dnsresolution"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/applications/{object id}/onPremisesPublishing
+PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing
 
 { 
    "isDnsResolutionEnabled": "true" 
@@ -547,7 +544,7 @@ PATCH https://graph.microsoft.com/beta/applications/{object id}/onPremisesPublis
   "name": "tutorial_configure_entraprivateaccess_create_dnsSuffix"
 }-->
 ```http
-POST https://graph.microsoft-ppe.com/beta/applications/{objectID}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/applicationSegments
+POST https://graph.microsoft-ppe.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/applicationSegments
 
 { 
    "destinationHost": "app1.dns.com", 
@@ -557,6 +554,11 @@ POST https://graph.microsoft-ppe.com/beta/applications/{objectID}/onPremisesPubl
 
 ### Response
 
+
+## Step 9: Test your access to the Global Secure Access private application
+
+
+<!-- Navi to provide a write up for what's next. -->
 
 
 ## Related content
