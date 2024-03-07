@@ -3,7 +3,7 @@ title: "servicePrincipal resource type"
 description: "Represents an instance of an application in a directory. Inherits from directoryObject."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 

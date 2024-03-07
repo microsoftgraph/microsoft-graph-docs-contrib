@@ -3,7 +3,7 @@ title: "List indicators"
 description: "Get the intelligenceProfileIndicator resources from the indicators navigation property."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

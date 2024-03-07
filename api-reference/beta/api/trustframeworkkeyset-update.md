@@ -3,7 +3,7 @@ title: "Update trustFrameworkKeySet"
 description: "Update the properties of a **trustFrameworkKeySet** object."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

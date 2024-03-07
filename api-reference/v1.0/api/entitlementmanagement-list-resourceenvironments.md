@@ -115,7 +115,10 @@ Content-Type: application/json
       "description": "https://contoso.sharepoint.com/",
       "originSystem": "SharePointOnline",
       "originId": "https://contoso-admin.sharepoint.com/",
-      "isDefaultEnvironment": false
+      "isDefaultEnvironment": false,
+      "connectionInfo": {
+        "url": "https://contoso-admin.sharepoint.com/"
+    }
     }
   ]
 }

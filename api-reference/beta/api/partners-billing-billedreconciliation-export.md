@@ -3,7 +3,7 @@ title: "billedReconciliation: export"
 description: "Export the billed invoice reconciliation data."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 

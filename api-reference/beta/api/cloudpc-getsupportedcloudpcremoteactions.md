@@ -3,7 +3,7 @@ title: "cloudPC: getSupportedCloudPcRemoteActions"
 description: "Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities."
 author: "hanky0301"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

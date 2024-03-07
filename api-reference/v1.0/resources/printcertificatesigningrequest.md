@@ -3,7 +3,7 @@ title: printCertificateSigningRequest resource type
 description: The certificate signing request (CSR) to be used during registration of a printer with the Universal Print service.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 # printCertificateSigningRequest resource type

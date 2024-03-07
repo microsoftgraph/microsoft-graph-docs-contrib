@@ -3,7 +3,7 @@ title: "attributeSet resource type"
 description: "Represents a group of related custom security attribute definitions."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

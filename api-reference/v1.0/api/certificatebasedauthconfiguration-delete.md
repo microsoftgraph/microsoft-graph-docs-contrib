@@ -3,7 +3,7 @@ title: "Delete certificateBasedAuthConfiguration"
 description: "Delete certificateBasedAuthConfiguration."
 ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

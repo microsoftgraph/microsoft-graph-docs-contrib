@@ -3,7 +3,7 @@ title: "Delete delegatedPermissionClassification"
 description: "Delete a delegated permission classification from an API's service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 

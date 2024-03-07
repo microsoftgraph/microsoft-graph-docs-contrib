@@ -3,7 +3,7 @@ title: "enumeratedDomains resource type"
 description: "A derived complex type that defines the specified domains that Microsoft Entra ID validates."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

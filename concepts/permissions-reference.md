@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.localizationpriority: high
 ms.topic: reference
-ms.prod: applications
+ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 03/01/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
