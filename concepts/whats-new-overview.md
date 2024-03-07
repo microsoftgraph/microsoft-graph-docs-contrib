@@ -20,8 +20,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Device and app management | Cloud PC
 
-- Get, set, delete, and assign operations available on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy).
-- Get, set, delete, and assign operations available on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting).
+- List, get, create, update, delete, and assign provisioning policies operations available on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy).
+- List, get, create, update, delete, and assign user settings operations available on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting).
 
 ### Reports | Partner billing reports
 
