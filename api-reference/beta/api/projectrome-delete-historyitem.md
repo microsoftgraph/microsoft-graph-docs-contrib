@@ -1,5 +1,5 @@
 ---
-title: "Delete a historyItem"
+title: "Delete an activityHistoryItem"
 description: "Delete an existing history item for an existing user activity."
 ms.localizationpriority: medium
 ms.prod: "project-rome"
@@ -7,7 +7,7 @@ doc_type: apiPageType
 author: "ailae"
 ---
 
-# Delete a historyItem
+# Delete an activityHistoryItem
 
 Namespace: microsoft.graph
 
@@ -87,7 +87,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-	
+
   ]
 }
 -->

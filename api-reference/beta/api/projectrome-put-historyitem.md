@@ -1,5 +1,5 @@
 ---
-title: "Create or replace a historyItem"
+title: "Create or replace an activityHistoryItem"
 description: "Create a new or replace an existing history item for an existing user activity."
 ms.localizationpriority: medium
 ms.prod: "project-rome"
@@ -7,7 +7,7 @@ doc_type: apiPageType
 author: "ailae"
 ---
 
-# Create or replace a historyItem
+# Create or replace an activityHistoryItem
 
 Namespace: microsoft.graph
 
@@ -41,11 +41,11 @@ PUT /me/activities/{id}/historyItems/{id}
 
 ## Request body
 
-In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.
+In the request body, supply a JSON representation of a [activityHistoryItem](../resources/projectrome-historyitem.md) object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code if the **historyItem** was created or `200 OK` if the **historyItem** was replaced.
+If successful, this method returns a `201 Created` response code if the **activityHistoryItem** was created or `200 OK` if the **activityHistoryItem** was replaced.
 
 ## Example
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.historyItem"
+    "@odata.type": "microsoft.graph.activityHistoryItem"
 } -->
 
 ```http

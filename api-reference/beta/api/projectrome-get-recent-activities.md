@@ -1,6 +1,6 @@
 ---
 title: "Get recent user activities"
-description: " API. The service queries for the most recent historyItems, and then pull those related activities. Activities are sorted according to the most recent **lastModified** on the **historyItem**. This means that activities without **historyItems** won't be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate."
+description: Get recent activities for a given user.
 ms.localizationpriority: medium
 ms.prod: "project-rome"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get recent activities for a given user. This OData function has some default behaviors included to make it operate like a "most recently used" API. The service queries for the most recent [historyItems](../resources/projectrome-historyitem.md), and then pull those related activities. Activities are sorted according to the most recent **lastModified** on the **historyItem**. This means that activities without **historyItems** won't be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate.
+Get recent activities for a given user. This OData function has some default behaviors included to make it operate like a "most recently used" API. The service queries for the most recent [activityHistoryItems](../resources/projectrome-historyitem.md), and then pull those related activities. Activities are sorted according to the most recent **lastModified** on the **activityHistoryItem**. This means that activities without **activityHistoryItems** won't be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
