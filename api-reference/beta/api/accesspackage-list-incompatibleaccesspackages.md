@@ -1,6 +1,6 @@
 ---
 title: "List incompatibleAccessPackages"
-description: "Retrieve a list of accesspackages whose access rights are incompatible with a specific access package."
+description: "Retrieve a list of access packages whose access rights are incompatible with a specific access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of the [accessPackage](../resources/accesspackage.md) objects that have been marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
+Retrieve a list of the [accessPackage](../resources/accesspackage.md) objects marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
