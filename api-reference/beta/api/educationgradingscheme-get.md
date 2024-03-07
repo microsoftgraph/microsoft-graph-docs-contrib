@@ -1,5 +1,5 @@
 ---
-title: "Get and education grading scheme"
+title: "Get educationGradingScheme"
 description: "Read the properties and relationships of an educationGradingScheme object."
 author: "v-rmanda"
 ms.localizationpriority: medium
