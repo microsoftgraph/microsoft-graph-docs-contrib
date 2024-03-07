@@ -1,0 +1,37 @@
+---
+title: "customClaimAttributeBase resource type"
+description: "Custom claim attribute base"
+author: "rahul-nagraj"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
+doc_type: resourcePageType
+---
+
+# customClaimAttributeBase resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Custom claim attribute base.
+This is an abstract type.
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.customClaimAttributeBase"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.customClaimAttributeBase"
+}
+```

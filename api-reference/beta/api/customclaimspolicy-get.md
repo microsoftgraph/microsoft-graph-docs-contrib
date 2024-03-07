@@ -68,7 +68,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/policies/claimsPolicy
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -101,4 +100,3 @@ Content-Type: application/json
   }
 }
 ```
-

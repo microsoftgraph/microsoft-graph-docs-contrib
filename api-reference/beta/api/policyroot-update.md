@@ -1,19 +1,19 @@
 ---
-title: "Delete customClaimsPolicy"
-description: "Delete a customClaimsPolicy object."
+title: "Update policyRoot"
+description: "Update the properties of a policyRoot object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Delete customClaimsPolicy
+# Update policyRoot
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [customClaimsPolicy](../resources/customclaimspolicy.md) object.
+Update the properties of a [policyRoot](../resources/policyroot.md) object.
 
 ## Permissions
 
@@ -21,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "policyroot-delete-claimspolicy-permissions"
+  "name": "policyroot-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/policyroot-delete-claimspolicy-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/policyroot-update-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /policies/claimsPolicy/$ref
+PATCH /policies
 ```
 
 ## Request headers
@@ -41,14 +41,18 @@ DELETE /policies/claimsPolicy/$ref
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-Don't supply a request body for this method.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+|Property|Type|Description|
+|:---|:---|:---|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and an updated [policyRoot](../resources/policyroot.md) object in the response body.
 
 ## Examples
 
@@ -57,11 +61,16 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_customclaimspolicy"
+  "name": "update_policyroot"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/policies/claimsPolicy
+PATCH https://graph.microsoft.com/beta/policies
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.policyRoot"
+}
 ```
 
 ### Response
@@ -74,5 +83,11 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.policyRoot",
+  "id": "3dfaad93-e456-c6cf-6109-3c8861cc5132"
+}
 ```

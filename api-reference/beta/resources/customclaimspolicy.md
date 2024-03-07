@@ -1,6 +1,6 @@
 ---
 title: "customClaimsPolicy resource type"
-description: "A claims policy allows application admins the ability to customize the claims that is emitted in tokens affected by this policy"
+description: "A claims policy allows application admins the ability to customize the claims that is emitted in tokens affected by this policy."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A claims policy allows application admins the ability to customize the claims that is emitted in tokens affected by this policy.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -65,4 +64,3 @@ The following JSON representation shows the resource type.
   ]
 }
 ```
-

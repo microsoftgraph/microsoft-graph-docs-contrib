@@ -1,19 +1,19 @@
 ---
-title: "List customClaimsPolicy objects"
-description: "Get a list of the customClaimsPolicy objects and their properties."
+title: "Get policyRoot"
+description: "Read the properties and relationships of a policyRoot object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List customClaimsPolicy objects
+# Get policyRoot
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [customClaimsPolicy](../resources/customclaimspolicy.md) objects and their properties.
+Read the properties and relationships of a [policyRoot](../resources/policyroot.md) object.
 
 ## Permissions
 
@@ -21,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "policyroot-list-claimspolicy-permissions"
+  "name": "policyroot-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/policyroot-list-claimspolicy-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/policyroot-get-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.customClaimsPolicy not found
+GET /policies
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [customClaimsPolicy](../resources/customclaimspolicy.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [policyRoot](../resources/policyroot.md) object in the response body.
 
 ## Examples
 
@@ -61,13 +61,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_customclaimspolicy"
+  "name": "get_policyroot"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.customClaimsPolicy not found
+GET https://graph.microsoft.com/beta/policies
 ```
-
 
 ### Response
 
@@ -76,7 +75,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.customClaimsPolicy)"
+  "@odata.type": "microsoft.graph.policyRoot"
 }
 -->
 ``` http
@@ -84,23 +83,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.customClaimsPolicy",
-      "id": "f914f36d-167e-3fa7-cfa2-355cc5a36689",
-      "includeBasicClaimSet": "Boolean",
-      "includeApplicationIdInIssuer": "Boolean",
-      "audienceOverride": "String",
-      "groupFilter": {
-        "@odata.type": "microsoft.graph.groupClaimFilterBase"
-      },
-      "claims": [
-        {
-          "@odata.type": "microsoft.graph.customClaim"
-        }
-      ]
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.policyRoot",
+    "id": "3dfaad93-e456-c6cf-6109-3c8861cc5132"
+  }
 }
 ```
-

@@ -15117,11 +15117,315 @@
       "ChangeList": [
         {
           "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "claimConditionUserType",
+          "ChangeType": "Addition",
+          "Description": "Added the **claimConditionUserType** enumeration type.",
+          "Target": "claimConditionUserType"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "filterType",
+          "ChangeType": "Addition",
+          "Description": "Added the **filterType** enumeration type.",
+          "Target": "filterType"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "matchOn",
+          "ChangeType": "Addition",
+          "Description": "Added the **matchOn** enumeration type.",
+          "Target": "matchOn"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "samlAttributeNameFormat",
+          "ChangeType": "Addition",
+          "Description": "Added the **samlAttributeNameFormat** enumeration type.",
+          "Target": "samlAttributeNameFormat"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "samlNameIDFormat",
+          "ChangeType": "Addition",
+          "Description": "Added the **samlNameIDFormat** enumeration type.",
+          "Target": "samlNameIDFormat"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "samlSLOBindingType",
+          "ChangeType": "Addition",
+          "Description": "Added the **samlSLOBindingType** enumeration type.",
+          "Target": "samlSLOBindingType"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "tokenFormat",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenFormat** enumeration type.",
+          "Target": "tokenFormat"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "transformationExtractType",
+          "ChangeType": "Addition",
+          "Description": "Added the **transformationExtractType** enumeration type.",
+          "Target": "transformationExtractType"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "transformationTrimType",
+          "ChangeType": "Addition",
+          "Description": "Added the **transformationTrimType** enumeration type.",
+          "Target": "transformationTrimType"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "containsTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [containsTransformation](https://learn.microsoft.com/en-us/graph/api/resources/containsTransformation?view=graph-rest-beta) resource.",
+          "Target": "containsTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customClaim",
+          "ChangeType": "Addition",
+          "Description": "Added the [customClaim](https://learn.microsoft.com/en-us/graph/api/resources/customClaim?view=graph-rest-beta) resource.",
+          "Target": "customClaim"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customClaimAttributeBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [customClaimAttributeBase](https://learn.microsoft.com/en-us/graph/api/resources/customClaimAttributeBase?view=graph-rest-beta) resource.",
+          "Target": "customClaimAttributeBase"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customClaimBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [customClaimBase](https://learn.microsoft.com/en-us/graph/api/resources/customClaimBase?view=graph-rest-beta) resource.",
+          "Target": "customClaimBase"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customClaimCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the [customClaimCondition](https://learn.microsoft.com/en-us/graph/api/resources/customClaimCondition?view=graph-rest-beta) resource.",
+          "Target": "customClaimCondition"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customClaimConditionBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [customClaimConditionBase](https://learn.microsoft.com/en-us/graph/api/resources/customClaimConditionBase?view=graph-rest-beta) resource.",
+          "Target": "customClaimConditionBase"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customClaimConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customClaimConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customClaimConfiguration?view=graph-rest-beta) resource.",
+          "Target": "customClaimConfiguration"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customClaimTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [customClaimTransformation](https://learn.microsoft.com/en-us/graph/api/resources/customClaimTransformation?view=graph-rest-beta) resource.",
+          "Target": "customClaimTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "endsWithTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [endsWithTransformation](https://learn.microsoft.com/en-us/graph/api/resources/endsWithTransformation?view=graph-rest-beta) resource.",
+          "Target": "endsWithTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extractAlphaTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [extractAlphaTransformation](https://learn.microsoft.com/en-us/graph/api/resources/extractAlphaTransformation?view=graph-rest-beta) resource.",
+          "Target": "extractAlphaTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extractMailPrefixTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [extractMailPrefixTransformation](https://learn.microsoft.com/en-us/graph/api/resources/extractMailPrefixTransformation?view=graph-rest-beta) resource.",
+          "Target": "extractMailPrefixTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extractNumberTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [extractNumberTransformation](https://learn.microsoft.com/en-us/graph/api/resources/extractNumberTransformation?view=graph-rest-beta) resource.",
+          "Target": "extractNumberTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extractTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [extractTransformation](https://learn.microsoft.com/en-us/graph/api/resources/extractTransformation?view=graph-rest-beta) resource.",
+          "Target": "extractTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupClaimFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupClaimFilter](https://learn.microsoft.com/en-us/graph/api/resources/groupClaimFilter?view=graph-rest-beta) resource.",
+          "Target": "groupClaimFilter"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupClaimFilterBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupClaimFilterBase](https://learn.microsoft.com/en-us/graph/api/resources/groupClaimFilterBase?view=graph-rest-beta) resource.",
+          "Target": "groupClaimFilterBase"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ifEmptyTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [ifEmptyTransformation](https://learn.microsoft.com/en-us/graph/api/resources/ifEmptyTransformation?view=graph-rest-beta) resource.",
+          "Target": "ifEmptyTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ifNotEmptyTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [ifNotEmptyTransformation](https://learn.microsoft.com/en-us/graph/api/resources/ifNotEmptyTransformation?view=graph-rest-beta) resource.",
+          "Target": "ifNotEmptyTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "joinTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [joinTransformation](https://learn.microsoft.com/en-us/graph/api/resources/joinTransformation?view=graph-rest-beta) resource.",
+          "Target": "joinTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "regexReplaceTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [regexReplaceTransformation](https://learn.microsoft.com/en-us/graph/api/resources/regexReplaceTransformation?view=graph-rest-beta) resource.",
+          "Target": "regexReplaceTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "samlNameIdClaim",
+          "ChangeType": "Addition",
+          "Description": "Added the [samlNameIdClaim](https://learn.microsoft.com/en-us/graph/api/resources/samlNameIdClaim?view=graph-rest-beta) resource.",
+          "Target": "samlNameIdClaim"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sourcedAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [sourcedAttribute](https://learn.microsoft.com/en-us/graph/api/resources/sourcedAttribute?view=graph-rest-beta) resource.",
+          "Target": "sourcedAttribute"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "startsWithTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [startsWithTransformation](https://learn.microsoft.com/en-us/graph/api/resources/startsWithTransformation?view=graph-rest-beta) resource.",
+          "Target": "startsWithTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "substringTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [substringTransformation](https://learn.microsoft.com/en-us/graph/api/resources/substringTransformation?view=graph-rest-beta) resource.",
+          "Target": "substringTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "toLowercaseTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [toLowercaseTransformation](https://learn.microsoft.com/en-us/graph/api/resources/toLowercaseTransformation?view=graph-rest-beta) resource.",
+          "Target": "toLowercaseTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "toUppercaseTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [toUppercaseTransformation](https://learn.microsoft.com/en-us/graph/api/resources/toUppercaseTransformation?view=graph-rest-beta) resource.",
+          "Target": "toUppercaseTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "transformationAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [transformationAttribute](https://learn.microsoft.com/en-us/graph/api/resources/transformationAttribute?view=graph-rest-beta) resource.",
+          "Target": "transformationAttribute"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "trimTransformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [trimTransformation](https://learn.microsoft.com/en-us/graph/api/resources/trimTransformation?view=graph-rest-beta) resource.",
+          "Target": "trimTransformation"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "valueBasedAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [valueBasedAttribute](https://learn.microsoft.com/en-us/graph/api/resources/valueBasedAttribute?view=graph-rest-beta) resource.",
+          "Target": "valueBasedAttribute"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
           "ApiChange": "Resource",
           "ChangedApiName": "customClaimsPolicy",
           "ChangeType": "Addition",
           "Description": "Added the [customClaimsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/customClaimsPolicy?view=graph-rest-beta) resource.",
           "Target": "customClaimsPolicy"
+        },
+        {
+          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "claimsPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **claimsPolicy** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Target": "policyRoot"
         }
       ],
       "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",

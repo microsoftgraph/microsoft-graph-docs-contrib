@@ -4622,3 +4622,84 @@ Possible values for user account types (group membership), per Windows definitio
 |deviceCodeFlow|
 |authenticationTransfer|
 |unknownFutureValue|
+
+### claimConditionUserType values
+
+|Member|
+|:---|
+|any|
+|members|
+|allGuests|
+|aadGuests|
+|externalGuests|
+|unknownFutureValue|
+
+### filterType values
+
+|Member|
+|:---|
+|prefix|
+|suffix|
+|contains|
+|unknownFutureValue|
+
+### matchOn values
+
+|Member|
+|:---|
+|displayName|
+|samAccountName|
+|unknownFutureValue|
+
+### samlAttributeNameFormat values
+
+|Member|
+|:---|
+|unspecified|
+|uri|
+|basic|
+|unknownFutureValue|
+
+### samlNameIDFormat values
+
+|Member|
+|:---|
+|default|
+|unspecified|
+|emailAddress|
+|windowsDomainQualifiedName|
+|persistent|
+|unknownFutureValue|
+
+### samlSLOBindingType values
+
+|Member|
+|:---|
+|httpRedirect|
+|httpPost|
+|unknownFutureValue|
+
+### tokenFormat values
+
+|Member|
+|:---|
+|saml|
+|jwt|
+|unknownFutureValue|
+
+### transformationExtractType values
+
+|Member|
+|:---|
+|prefix|
+|suffix|
+|unknownFutureValue|
+
+### transformationTrimType values
+
+|Member|
+|:---|
+|leading|
+|trailing|
+|leadingAndTrailing|
+|unknownFutureValue|
