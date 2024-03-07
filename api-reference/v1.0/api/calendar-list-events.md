@@ -3,7 +3,7 @@ title: "List events"
 description: "Retrieve a list of events in a calendar. The list contains single instance meetings and series masters."
 author: "iamgirishck"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "plannerExternalPlanSource resource type"
 description: "Contains information about the relationship of a plannerPlan to a user experience outside of Planner."
 author: "DanluCui"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

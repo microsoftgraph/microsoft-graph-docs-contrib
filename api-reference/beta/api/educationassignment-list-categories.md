@@ -3,7 +3,7 @@ title: "List categories"
 description: "List all categories for an assignment."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

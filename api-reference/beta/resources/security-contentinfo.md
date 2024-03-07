@@ -3,7 +3,7 @@ title: "contentInfo resource type"
 description: "Represents the current state of information that is to be labeled."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

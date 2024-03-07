@@ -3,7 +3,7 @@ title: "List subCategories"
 description: "Get the subCategoryTemplate resources from the subCategories navigation property."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

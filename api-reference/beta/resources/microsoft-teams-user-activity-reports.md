@@ -2,7 +2,7 @@
 title: "Microsoft Teams user activity reports"
 description: "Use the Microsoft Teams user activity reports to get insights into the Microsoft Teams user activity in your organization."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
 ---

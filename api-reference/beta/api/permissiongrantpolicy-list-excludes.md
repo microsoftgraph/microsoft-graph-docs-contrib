@@ -3,7 +3,7 @@ title: "List excludes collection of permissionGrantPolicy"
 description: "Retrieve a list of the condition sets that describe conditions under which a permission grant event is excluded in a permission grant policy."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 

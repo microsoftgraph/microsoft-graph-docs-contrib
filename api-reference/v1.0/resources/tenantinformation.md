@@ -3,7 +3,7 @@ title: "tenantInformation resource type"
 description: "Information about your Microsoft Entra tenant that is publicly displayed to users in other Microsoft Entra tenants."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

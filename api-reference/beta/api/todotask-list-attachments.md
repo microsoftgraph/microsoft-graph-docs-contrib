@@ -3,7 +3,7 @@ title: "List taskFileAttachments"
 description: "Get a list of the taskFileAttachment objects and their properties."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

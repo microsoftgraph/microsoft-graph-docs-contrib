@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsTeamActivityCounts"
 description: "Get the number of team activities across Microsoft Teams. The activity types are related to meetings and messages."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "haoyli"
 doc_type: apiPageType
 ---

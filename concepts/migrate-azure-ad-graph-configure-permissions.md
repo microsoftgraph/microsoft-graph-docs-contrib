@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.topic: how-to
 zone_pivot_groups: configure-azure-ad-graph-permissions
 ms.date: 12/19/2023

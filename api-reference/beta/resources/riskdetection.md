@@ -3,7 +3,7 @@ title: "riskDetection resource type"
 description: "Represents all risk detections in AzureAD tenants."
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 # riskDetection resource type

@@ -3,7 +3,7 @@ title: "List attachments"
 description: "Retrieve a list of attachment objects attached to a message."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
