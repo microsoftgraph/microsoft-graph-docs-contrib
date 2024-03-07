@@ -3940,6 +3940,30 @@
           "ChangeType": "Addition",
           "Description": "Added the [webPart](https://learn.microsoft.com/en-us/graph/api/resources/webPart?view=graph-rest-1.0) resource.",
           "Target": "webPart"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Method",
+          "ChangedApiName": "publish",
+          "ChangeType": "Addition",
+          "Description": "Added the publish method to the sitePage resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPositionOfWebPart",
+          "ChangeType": "Addition",
+          "Description": "Added the getPositionOfWebPart method to the webPart resource.",
+          "Target": "webPart"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Method",
+          "ChangedApiName": "getWebPartsByPosition",
+          "ChangeType": "Addition",
+          "Description": "Added the getWebPartsByPosition method to the sitePage resource.",
+          "Target": "sitePage"
         }
       ],
       "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
