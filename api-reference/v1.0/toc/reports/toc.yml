@@ -81,12 +81,12 @@ items:
       items:
       - name: Get team detail
         href: ../../api/reportroot-getteamsteamactivitydetail.md
-      - name: Get team counts
+      - name: Get team activity counts
         href: ../../api/reportroot-getteamsteamactivitycounts.md
+      - name: Get team activity distribution counts
+        href: ../../api/reportroot-getteamsteamactivitydistributioncounts.md
       - name: Get team counts
         href: ../../api/reportroot-getteamsteamcounts.md
-      - name: Get distribution team counts
-        href: ../../api/reportroot-getteamsteamactivitydistributioncounts.md
     - name: Outlook activity
       items:
       - name: Get user detail
@@ -179,7 +179,7 @@ items:
         href: ../../api/reportroot-getsharepointactivityusercounts.md
       - name: Get pages
         href: ../../api/reportroot-getsharepointactivitypages.md
-    - name: SharePoint site usage'
+    - name: SharePoint site usage
       items:
       - name: Get site detail
         href: ../../api/reportroot-getsharepointsiteusagedetail.md
