@@ -51,7 +51,6 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
 | id       | String                        | The unique identifier for the share being accessed.              |
 | name     | String                        | The display name of the shared item.                             |
 | owner    | [IdentitySet](identityset.md) | Information about the owner of the shared item being referenced. |
-| root    | [driveItem](driveitem.md) | *TODO* |
 
 ## Relationships
 

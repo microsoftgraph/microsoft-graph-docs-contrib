@@ -23,7 +23,7 @@ A group of settings that a printer should use to print a job.
 |duplexMode|[printDuplexMode](enums.md#printduplexmode-values)|The duplex mode the printer should use when printing the job. Valid values are described in the table below. Read-only.|
 |feedOrientation|printerFeedOrientation|The orientation to use when feeding media into the printer. Valid values are described in the following table. Read-only.|
 |finishings|[printFinishing](enums.md#printfinishing-values) collection|Finishing processes to use when printing.|
-|fitPdfToPage|Boolean|*TODO*|
+|fitPdfToPage|Boolean|True to fit each page of a PDF document to a physical sheet of media; false to let the printer decide how to lay out impressions.|
 |inputBin|String|The input bin (tray) to use when printing. See the printer's [capabilities](printercapabilities.md) for a list of supported input bins.|
 |margin|[printMargin](printmargin.md)|The margin settings to use when printing.|
 |mediaSize|String|The media size to use when printing. Supports standard size names for ISO and ANSI media sizes. Valid values listed in the [printerCapabilities](printercapabilities.md#mediasizes-values) topic.|
