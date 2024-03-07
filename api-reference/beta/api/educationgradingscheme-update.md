@@ -1,5 +1,5 @@
 ---
-title: "Update an education grading scheme"
+title: "Update educationGradingScheme"
 description: "Update the properties of an educationGradingScheme object."
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -52,7 +52,7 @@ PATCH /education/classes/{educationClassId}/assignmentSettings/gradingSchemes/{e
 |:---|:---|:---|
 |displayName|String|The name of the grading scheme.|
 |grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The name of the grading scheme.|
-|hidePointsDuringGrading|Boolean|Display setting for our UI. Whether teachers can grade with points in addition to letter grades.|
+|hidePointsDuringGrading|Boolean|The display setting for the UI. Indicates whether teachers can grade with points in addition to letter grades.|
 
 
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ## Examples
 
-## Example 1: Update GradingScheme
+## Example 1: Update educationGradingScheme
 ### Request
 
 The following example shows a request.
@@ -118,7 +118,7 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: Update GradingScheme using Delta Payload
+## Example 2: Update educationGradingScheme by using delta payload
 ### Request
 
 The following example shows a request.
