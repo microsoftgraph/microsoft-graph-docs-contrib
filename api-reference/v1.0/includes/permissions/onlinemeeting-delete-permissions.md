@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|OrgSettings-Microsoft365Install.Read.All|OrgSettings-Microsoft365Install.ReadWrite.All|
+|Delegated (work or school account)|OnlineMeetings.ReadWrite|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|OrgSettings-Microsoft365Install.Read.All|OrgSettings-Microsoft365Install.ReadWrite.All|
+|Application|Not supported.|Not supported.|
 
