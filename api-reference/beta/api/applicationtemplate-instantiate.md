@@ -3,7 +3,7 @@ title: "applicationTemplate: instantiate"
 description: "Use this API to create a new applicationTemplate"
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

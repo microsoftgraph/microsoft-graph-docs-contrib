@@ -3,7 +3,7 @@ title: "indicator resource type"
 description: "An abstract type that represents an indicator of compromise or increased risk."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

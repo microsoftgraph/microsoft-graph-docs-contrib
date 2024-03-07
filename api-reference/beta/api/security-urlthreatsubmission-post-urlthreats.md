@@ -3,7 +3,7 @@ title: "Create urlThreatSubmission"
 description: "Create a new urlThreatSubmission object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

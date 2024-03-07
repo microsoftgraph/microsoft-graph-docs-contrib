@@ -3,7 +3,7 @@ title: "Get sslCertificate"
 description: "Get the properties and relationships of an sslCertificate object."
 author: "nblankenau"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

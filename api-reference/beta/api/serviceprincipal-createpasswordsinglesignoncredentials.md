@@ -3,7 +3,7 @@ title: "servicePrincipal: createPasswordSingleSignOnCredentials"
 description: "Create single sign-on credentials using a password for a user or group."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

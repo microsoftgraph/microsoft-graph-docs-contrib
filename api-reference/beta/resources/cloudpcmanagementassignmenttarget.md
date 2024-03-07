@@ -3,7 +3,7 @@ title: "cloudPcManagementAssignmentTarget resource type"
 description: "Represents an abstract base type for assignment targets."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

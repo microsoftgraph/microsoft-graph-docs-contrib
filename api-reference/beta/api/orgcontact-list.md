@@ -3,7 +3,7 @@ title: "List orgContacts"
 description: "Retrieve the list of organizational contacts for this organization."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

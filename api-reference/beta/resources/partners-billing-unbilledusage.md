@@ -3,7 +3,7 @@ title: "unbilledUsage resource type"
 description: "Represents details for unbilled Azure usage data."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

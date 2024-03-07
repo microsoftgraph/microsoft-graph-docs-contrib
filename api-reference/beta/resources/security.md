@@ -3,7 +3,7 @@ title: "security resource type"
 description: "Connects Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities."
 author: "angelgolfer-ms"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

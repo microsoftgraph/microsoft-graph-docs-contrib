@@ -3,7 +3,7 @@ title: "directoryDefinition: discover"
 description: "Discover the latest schema definition for provisioning to an application. "
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
