@@ -1,5 +1,5 @@
 ---
-title: "Delete education grading scheme"
+title: "Delete educationGradingScheme"
 description: "Delete an educationGradingScheme object."
 author: "v-rmanda"
 ms.localizationpriority: medium
