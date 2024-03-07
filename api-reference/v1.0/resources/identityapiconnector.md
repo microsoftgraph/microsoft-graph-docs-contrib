@@ -3,7 +3,7 @@ title: "identityApiConnector resource type"
 description: "Represents API connectors in a Microsoft Entra tenant."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

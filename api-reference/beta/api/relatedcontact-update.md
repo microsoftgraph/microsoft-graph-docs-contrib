@@ -3,7 +3,7 @@ title: "Update relatedContacts"
 description: "Update the relatedContact collection of an educationUser object."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

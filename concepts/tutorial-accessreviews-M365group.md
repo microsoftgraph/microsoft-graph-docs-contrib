@@ -1,7 +1,7 @@
 ---
 title: "Review guest access to your Microsoft 365 groups using access reviews APIs"
 description: "Learn how to use the access reviews API to review external/guest user access to your organization's resources through Microsoft 365 groups in your Microsoft Entra tenant."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.localizationpriority: medium

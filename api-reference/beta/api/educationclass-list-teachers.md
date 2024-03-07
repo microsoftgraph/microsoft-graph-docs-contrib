@@ -3,7 +3,7 @@ title: "List teachers"
 description: "Retrieve a list of teachers for a class. Delegated tokens must be members of the class to get the teacher list."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

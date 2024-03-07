@@ -114,7 +114,7 @@ When a principal's *temporary active* membership or ownership of a group expires
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -158,9 +158,6 @@ Only the approver of the request can call the `/approval` and `/approvalStep` en
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /resources/privilegedidentitymanagement-for-groups-api-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')",
     "Error: /resources/privilegedidentitymanagement-for-groups-api-overview.md:
       Failed to parse enumeration values for type microsoft.graph.and. Table requires a column header named one of the following: Member, Name, Value"
   ]

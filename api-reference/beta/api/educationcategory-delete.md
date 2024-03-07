@@ -3,7 +3,7 @@ title: "Delete educationCategory"
 description: "Delete an existing category."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

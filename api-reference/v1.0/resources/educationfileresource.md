@@ -3,7 +3,7 @@ title: "educationFileResource resource type"
 description: "A subclass of educationResource that represents a file object that is associated with the assignment or submission."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

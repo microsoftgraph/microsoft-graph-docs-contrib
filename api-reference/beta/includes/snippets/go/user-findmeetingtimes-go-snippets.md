@@ -27,13 +27,13 @@ requestBody := graphusers.NewItemFindMeetingTimesPostRequestBody()
 
 
 attendeeBase := graphmodels.NewAttendeeBase()
-type := graphmodels.REQUIRED_ATTENDEETYPE
-attendeeBase.SetType(&type)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendeeBase.SetType(&type) 
 emailAddress := graphmodels.NewEmailAddress()
 name := "Alex Wilbur"
-emailAddress.SetName(&name)
+emailAddress.SetName(&name) 
 address := "alexw@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 attendeeBase.SetEmailAddress(emailAddress)
 
 attendees := []graphmodels.AttendeeBaseable {
@@ -42,16 +42,16 @@ attendees := []graphmodels.AttendeeBaseable {
 requestBody.SetAttendees(attendees)
 locationConstraint := graphmodels.NewLocationConstraint()
 isRequired := false
-locationConstraint.SetIsRequired(&isRequired)
+locationConstraint.SetIsRequired(&isRequired) 
 suggestLocation := false
-locationConstraint.SetSuggestLocation(&suggestLocation)
+locationConstraint.SetSuggestLocation(&suggestLocation) 
 
 
 locationConstraintItem := graphmodels.NewLocationConstraintItem()
 resolveAvailability := false
-locationConstraintItem.SetResolveAvailability(&resolveAvailability)
+locationConstraintItem.SetResolveAvailability(&resolveAvailability) 
 displayName := "Conf room Hood"
-locationConstraintItem.SetDisplayName(&displayName)
+locationConstraintItem.SetDisplayName(&displayName) 
 
 locations := []graphmodels.LocationConstraintItemable {
 	locationConstraintItem,
@@ -59,22 +59,22 @@ locations := []graphmodels.LocationConstraintItemable {
 locationConstraint.SetLocations(locations)
 requestBody.SetLocationConstraint(locationConstraint)
 timeConstraint := graphmodels.NewTimeConstraint()
-activityDomain := graphmodels.WORK_ACTIVITYDOMAIN
-timeConstraint.SetActivityDomain(&activityDomain)
+activityDomain := graphmodels.WORK_ACTIVITYDOMAIN 
+timeConstraint.SetActivityDomain(&activityDomain) 
 
 
 timeSlot := graphmodels.NewTimeSlot()
 start := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-04-16T09:00:00"
-start.SetDateTime(&dateTime)
+start.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-start.SetTimeZone(&timeZone)
+start.SetTimeZone(&timeZone) 
 timeSlot.SetStart(start)
 end := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-04-18T17:00:00"
-end.SetDateTime(&dateTime)
+end.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-end.SetTimeZone(&timeZone)
+end.SetTimeZone(&timeZone) 
 timeSlot.SetEnd(end)
 
 timeSlots := []graphmodels.TimeSlotable {
@@ -83,13 +83,13 @@ timeSlots := []graphmodels.TimeSlotable {
 timeConstraint.SetTimeSlots(timeSlots)
 requestBody.SetTimeConstraint(timeConstraint)
 isOrganizerOptional := false
-requestBody.SetIsOrganizerOptional(&isOrganizerOptional)
+requestBody.SetIsOrganizerOptional(&isOrganizerOptional) 
 meetingDuration , err := abstractions.ParseISODuration("PT1H")
-requestBody.SetMeetingDuration(&meetingDuration)
+requestBody.SetMeetingDuration(&meetingDuration) 
 returnSuggestionReasons := true
-requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons)
+requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons) 
 minimumAttendeePercentage := float64(100)
-requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage)
+requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage) 
 
 findMeetingTimes, err := graphClient.Me().FindMeetingTimes().Post(context.Background(), requestBody, configuration)
 

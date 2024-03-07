@@ -3,7 +3,7 @@ title: "submissionResult resource type"
 description: "Represents the result of a review after the threat submission is processed by Microsoft."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

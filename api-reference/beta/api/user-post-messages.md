@@ -3,7 +3,7 @@ title: "Create Message"
 description: "Create a draft of a new message in either JSON or MIME format."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

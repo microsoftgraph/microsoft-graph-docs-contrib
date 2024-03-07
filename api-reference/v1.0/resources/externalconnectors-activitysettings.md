@@ -3,7 +3,7 @@ title: "activitySettings resource type"
 description: "Collects configurable settings related to activities involving connector content."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
