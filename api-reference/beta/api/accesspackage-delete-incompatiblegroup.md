@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [group](../resources/group.md) from the list of groups that have been marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
+Remove a [group](../resources/group.md) from the list of groups marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
