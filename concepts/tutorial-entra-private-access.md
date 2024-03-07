@@ -2,12 +2,13 @@
 title: Configure Microsoft Entra Private Access using Microsoft Graph APIs
 description: Configure Microsoft Entra Private Access using Microsoft Graph APIs.
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: nbeesetti
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.prod: applications
 ms.date: 03/07/2024
-#Customer intent: As a customer, I want to learn how to configure Microsoft Entra Private Access using Microsoft Graph APIs sothat I can automate.
+#Customer intent: As a customer, I want to learn how to configure Microsoft Entra Private Access using Microsoft Graph APIs.
 ---
 
 # Configure Microsoft Entra Private Access using Microsoft Graph APIs
