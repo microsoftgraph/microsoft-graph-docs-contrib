@@ -2,8 +2,9 @@
 title: "Get a directory setting template"
 description: "Allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "directory-management"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

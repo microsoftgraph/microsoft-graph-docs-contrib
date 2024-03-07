@@ -76,8 +76,10 @@ For example, the **item** property allows setting the following parameters:
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
+  "driveItemSource": { "@odata.type": "microsoft.graph.driveItemSource" },
   "fileSize": 1234,
-  "name": "filename.txt"
+  "name": "filename.txt",
+  "mediaSource": { "@odata.type": "microsoft.graph.mediaSource" }
 }
 ```
 
@@ -440,6 +442,8 @@ how errors are returned.
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
+[driveItemSource]: ../resources/driveItemSource.md
+[mediaSource]: ../resources/mediaSource.md
 
 ## Related content
 

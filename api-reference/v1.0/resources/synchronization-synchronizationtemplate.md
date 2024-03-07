@@ -4,7 +4,7 @@ description: "Provides preconfigured synchronization settings for a particular a
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationTemplate resource type

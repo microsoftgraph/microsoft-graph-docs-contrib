@@ -3,7 +3,7 @@ title: "List calendars"
 description: "Retrieve a list of calendars belonging to a calendar group."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

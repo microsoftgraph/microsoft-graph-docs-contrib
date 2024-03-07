@@ -17,40 +17,40 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewEvent()
 subject := "Let's go for lunch"
-requestBody.SetSubject(&subject)
+requestBody.SetSubject(&subject) 
 body := graphmodels.NewItemBody()
-contentType := graphmodels.HTML_BODYTYPE
-body.SetContentType(&contentType)
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "Does late morning work for you?"
-body.SetContent(&content)
+body.SetContent(&content) 
 requestBody.SetBody(body)
 start := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-06-16T12:00:00"
-start.SetDateTime(&dateTime)
+start.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-start.SetTimeZone(&timeZone)
+start.SetTimeZone(&timeZone) 
 requestBody.SetStart(start)
 end := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-06-16T14:00:00"
-end.SetDateTime(&dateTime)
+end.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-end.SetTimeZone(&timeZone)
+end.SetTimeZone(&timeZone) 
 requestBody.SetEnd(end)
 location := graphmodels.NewLocation()
 displayName := "Harry's Bar"
-location.SetDisplayName(&displayName)
+location.SetDisplayName(&displayName) 
 requestBody.SetLocation(location)
 
 
 attendee := graphmodels.NewAttendee()
 emailAddress := graphmodels.NewEmailAddress()
 address := "adelev@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 name := "Adele Vance"
-emailAddress.SetName(&name)
+emailAddress.SetName(&name) 
 attendee.SetEmailAddress(emailAddress)
-type := graphmodels.REQUIRED_ATTENDEETYPE
-attendee.SetType(&type)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee.SetType(&type) 
 
 attendees := []graphmodels.Attendeeable {
 	attendee,

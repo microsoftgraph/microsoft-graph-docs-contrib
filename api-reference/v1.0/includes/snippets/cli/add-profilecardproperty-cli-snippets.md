@@ -12,7 +12,7 @@ mgc admin people profile-card-properties create --body '{\
       "displayName": "Cost Center",\
       "localizations": [\
         {\
-          "languageTag": "ru-RU",\
+          "languageTag": "ru",\
           "displayName": "центр затрат"\
         }\
       ]\

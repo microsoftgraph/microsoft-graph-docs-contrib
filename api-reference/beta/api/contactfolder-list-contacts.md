@@ -3,7 +3,7 @@ title: "List contacts"
 description: "Get all the contacts in the signed-in user's mailbox (.../me/contacts), or from the specified contact folder."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

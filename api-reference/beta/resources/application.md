@@ -3,7 +3,7 @@ title: "application resource type"
 description: "Represents an application."
 ms.localizationpriority: high
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an application. Any application that outsources authentication to Microsoft Entra ID must be registered in a directory. Application registration involves telling Microsoft Entra ID about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more. For more information, see [Basics of Registering an Application in Microsoft Entra ID](/azure/active-directory/develop/authentication-vs-authorization#basics-of-registering-an-application-in-azure-ad). Inherits from [directoryObject](directoryobject.md).
+Represents an application. Any application that outsources authentication to Microsoft Entra ID must be registered in the Microsoft identity platform. Application registration involves telling Microsoft Entra ID about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more. 
+
+Inherits from [directoryObject](directoryobject.md).
 
 This resource is an open type that allows other properties to be passed in.
 
@@ -208,6 +210,10 @@ The following is a JSON representation of the resource.
   "windows": {"@odata.type": "microsoft.graph.windowsApplication"}
 }
 ```
+
+## Related content
+
+- [The Microsoft Entra app manifest](/entra/identity-platform/reference-app-manifest)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -3,7 +3,7 @@ title: Confirm riskyUser compromised
 description: Confirm a riskyUser object as compromised.
 author: tracyshi
 ms.localizationpriority: medium
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 doc_type: apiPageType
 ---
 # riskyUser: confirmCompromised

@@ -110,7 +110,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.teamsLicensingDetails",
-    "hasTeamsLicense": true,
+    "hasTeamsLicense": true
 }
 ```
 

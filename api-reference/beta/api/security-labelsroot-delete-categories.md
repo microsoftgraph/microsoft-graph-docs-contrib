@@ -3,7 +3,7 @@ title: "Delete categoryTemplate"
 description: "Delete a categoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

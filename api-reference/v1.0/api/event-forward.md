@@ -3,7 +3,7 @@ title: "event: forward"
 description: "This action allows the organizer or attendee of a meeting event to forward the "
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

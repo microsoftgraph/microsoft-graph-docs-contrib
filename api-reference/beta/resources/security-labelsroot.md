@@ -3,7 +3,7 @@ title: "labelsRoot resource type"
 description: "Represents the entry point for the retentionLabels resource type."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

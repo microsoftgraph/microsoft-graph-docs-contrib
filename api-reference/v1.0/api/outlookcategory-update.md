@@ -3,7 +3,7 @@ title: "Update Outlook category"
 description: "Update the writable property, **color**, of the specified outlookCategory object. You can't modify the **displayName** property "
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

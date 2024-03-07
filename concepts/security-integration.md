@@ -3,7 +3,7 @@ title: "Security solution integrations using the Microsoft Graph Security API"
 description: "Use these options to connect with the Microsoft Graph Security API and work with data in a unified format across supported Microsoft and partner security providers."
 author: "preetikr"
 ms.localizationpriority: high
-ms.prod: "security"
+ms.subservice: "security"
 ---
 
 # Security solution integrations using the Microsoft Graph Security API
