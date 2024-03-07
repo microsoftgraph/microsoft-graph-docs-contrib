@@ -31,8 +31,8 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |displayName|String|The name of the grading scheme. |
 |grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The grades that make up the scheme.|
-|hidePointsDuringGrading|Boolean|Display setting for our UI. Whether teachers can grade with points in addition to letter grades.|
-|id|String|The grading scheme's ID. Inherited from [entity](../resources/entity.md).|
+|hidePointsDuringGrading|Boolean|The display setting for the UI. Indicates whether teachers can grade with points in addition to letter grades.|
+|id|String|The ID of the grading scheme. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
