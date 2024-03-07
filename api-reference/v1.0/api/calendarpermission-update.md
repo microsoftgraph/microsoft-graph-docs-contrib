@@ -3,7 +3,7 @@ title: "Update calendarpermission"
 description: "Update the properties of calendarpermission object."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 

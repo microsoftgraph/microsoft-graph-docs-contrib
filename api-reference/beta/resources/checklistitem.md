@@ -3,7 +3,7 @@ title: "checklistItem resource type"
 description: "Represents a collection of checklist items on a task"
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
