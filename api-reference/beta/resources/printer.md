@@ -45,7 +45,7 @@ This resource supports:
 |status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors.|
 |isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
 |hasPhysicalDevice|Boolean|True if the printer has a physical device for printing. Read-only.|
-|isAcceptingJobs|Boolean|True if the printer is currently accepting new print jobs.|
+|isAcceptingJobs|Boolean| If `true`, the printer is currently accepting new print jobs.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer.|
 |defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings.|
 |capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer.|
