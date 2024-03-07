@@ -53,7 +53,7 @@ If successful, this method returns a 200-series response code and a new [accessP
 
 #### Request
 
-The following example shows a request.  Previous to this request, the access package resource `1d08498d-72a1-403f-8511-6b1f875746a0` for the group `b31fe1f1-3651-488f-bd9a-1711887fd4ca` must already have been added to the access package catalog containing this access package.  The resource could have been added to the catalog by [creating an access package resource request](entitlementmanagement-post-accesspackageresourcerequests.md).
+The following example shows a request. Previous to this request, the access package resource `1d08498d-72a1-403f-8511-6b1f875746a0` for the group `b31fe1f1-3651-488f-bd9a-1711887fd4ca` must already have been added to the access package catalog containing this access package.  The resource could have been added to the catalog by [creating an access package resource request](entitlementmanagement-post-accesspackageresourcerequests.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -142,7 +142,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request for a non-root scope resource.  The access package resource for the site must already have been added to the access package catalog containing this access package.
+The following example shows a request for a non-root scope resource. The access package resource for the site must already have been added to the access package catalog containing this access package.
 
 The request contains an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object, which can be obtained from an earlier request to [list access package resource roles of a resource in a catalog](accesspackagecatalog-list-accesspackageresourceroles.md). Each type of resource defines the format of the originId field in a resource role. For a SharePoint Online site, the originId is the sequence number of the role in the site.
 
