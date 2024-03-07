@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: nbeesetti
 ms.topic: tutorial
 ms.localizationpriority: medium
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 03/07/2024
 #Customer intent: As a customer, I want to learn how to configure Microsoft Entra Private Access using Microsoft Graph APIs.
 ---
