@@ -1,5 +1,5 @@
 ---
-title: "Create an education grading scheme"
+title: "Create educationGradingScheme"
 description: "Create a new educationGradingScheme object."
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Add educationGradingScheme
+# Create educationGradingScheme
 
 Namespace: microsoft.graph
 
@@ -47,13 +47,13 @@ POST /education/classes/{educationClassId}/assignmentSettings/gradingSchemes
 
 In the request body, supply a JSON representation of the [educationGradingScheme](../resources/educationgradingscheme.md) object.
 
-You can specify the following properties when creating an **educationGradingScheme**.
+You can specify the following properties when you create an **educationGradingScheme**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the grading scheme.|
 |grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The name of the grading scheme.|
-|hidePointsDuringGrading|Boolean|Display setting for our UI. Whether teachers can grade with points in addition to letter grades.|
+|hidePointsDuringGrading|Boolean|The display setting for the UI. Indicates whether teachers can grade with points in addition to letter grades.|
 
 ## Response
 
