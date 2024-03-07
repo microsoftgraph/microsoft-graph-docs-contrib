@@ -3762,7 +3762,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pageTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [pageTemplate](https://review.learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
+          "Description": "Added the [pageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
           "Target": "pageTemplate"
         },
         {
@@ -3770,7 +3770,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "create",
           "ChangeType": "Addition",
-          "Description": "Added the [create](https://review.learn.microsoft.com/en-us/graph/api/pagetemplate-create?view=graph-rest-beta) method to the [pageTemplate](https://review.learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
+          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/pagetemplate-create?view=graph-rest-beta) method to the [pageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
           "Target": "pageTemplate"
         },
         {
@@ -3778,7 +3778,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
           "ChangeType": "Addition",
-          "Description": "Added the [update](https://review.learn.microsoft.com/en-us/graph/api/pagetemplate-update?view=graph-rest-beta) method to the [pageTemplate](https://review.learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
+          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/pagetemplate-update?view=graph-rest-beta) method to the [pageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
           "Target": "pageTemplate"
         },
         {
@@ -3786,7 +3786,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delete",
           "ChangeType": "Addition",
-          "Description": "Added the [delete](https://review.learn.microsoft.com/en-us/graph/api/pagetemplate-delete?view=graph-rest-beta) method to the [pageTemplate](https://review.learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/pagetemplate-delete?view=graph-rest-beta) method to the [pageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
           "Target": "pageTemplate"
         }
       ],
