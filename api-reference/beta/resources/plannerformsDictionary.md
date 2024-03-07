@@ -1,6 +1,6 @@
 ---
 title: "plannerFormsDictionary resource type"
-description: "The **plannerFormsDictionary** resource represents the collection of forms on a task. It's an Open Type. It's part of the task details object. The value in the property-value pair is the plannerFormReference object."
+description: "Represents a dictionary of planner form reference objects for a task."
 ms.localizationpriority: medium
 author: "cpanga22"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerFormsDictionary** resource represents the collection of forms on a task. It's an Open Type. It's part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [plannerFormReference](plannerformreference.md) object.
+The **plannerFormsDictionary** resource is an open type that represents a dictionary of data about the forms associated with a task. This resource is a part of the [task details](plannertaskdetails.md) object. Each entry in the dictionary is a property-value pair, where the value is a [plannerFormReference](plannerformreference.md) object.
 
 
 ## Properties
@@ -21,7 +21,7 @@ Properties of an Open Type can be defined by the client. In this case, the clien
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

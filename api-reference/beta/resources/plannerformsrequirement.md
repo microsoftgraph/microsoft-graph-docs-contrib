@@ -1,6 +1,6 @@
 ---
 title: "plannerFormsRequirement resource type"
-description: "Represents a form completion requirement on a plannerTask."
+description: "Represents the criteria of form requirements that must be met to complete a Planner task."
 author: "cpanga22"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -19,7 +19,7 @@ Represents a form completion requirement on a [plannerTask](plannertask.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|requiredForms|String collection|A collection of required [plannerFormsDictionary](plannerformsdictionary.md) identifiers to complete the [plannerTask](plannertask.md).|
+|requiredForms|String collection|Read-only. A collection of required [plannerFormsDictionary](plannerformsdictionary.md) identifiers to complete the [plannerTask](plannertask.md).|
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 ---
 title: "plannerFormReference resource type"
-description: "The **plannerFormReference** resource represents an item in the forms of a task. The forms on a task are represented by the plannerFormsDictionary object."
+description: "The **plannerFormReference** resource represents complete information about a form, including the form's display name, URL, and the response data."
 ms.localizationpriority: medium
 author: "cpanga22"
 ms.prod: "planner"
@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerFormReference** resource represents an item in the forms of a task. The forms on a task are represented by the [forms object](plannerFormsDictionary.md).
+The **plannerFormReference** resource provides comprehensive details about a form, including the form's display name, URL, and the response data. It is typically used within a `plannerFormsDictionary`(plannerFormsDictionary.md) object in the API.
 
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|displayName|String|Display Name of the form|
-|formWebUrl|String|URL of the user experience represented by the associated plannerFormReference.|
-|formResponse|String|Identifier of the response|
+|displayName|String|the display name of the form.|
+|formWebUrl|String|The URL of the form associated with the **plannerFormReference** object.|
+|formResponse|String|The unique identifier of the response.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
