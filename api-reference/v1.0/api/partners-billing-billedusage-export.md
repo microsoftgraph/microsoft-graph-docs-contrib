@@ -21,12 +21,8 @@ Export the billed Azure usage data.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "partners-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/partners-permissions.md)]
+<!-- { "blockType": "permissions", "name": "partners_billing_billedusage_export" } -->
+[!INCLUDE [permissions-table](../includes/permissions/partners-billing-billedusage-export-permissions.md)]
 
 ## HTTP request
 
