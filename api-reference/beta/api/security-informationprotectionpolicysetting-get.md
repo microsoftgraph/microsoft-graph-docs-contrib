@@ -3,7 +3,7 @@ title: "Get informationProtectionPolicySetting"
 description: "Fetch users-specific Microsoft Purview Information Protection policy settings for a user."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

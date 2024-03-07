@@ -3,7 +3,7 @@ title: "Delete externalConnection"
 description: "Delete an externalConnection."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 

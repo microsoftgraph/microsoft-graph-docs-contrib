@@ -3,7 +3,7 @@ title: "property resource type"
 description: "A schema property definition for a Microsoft Search connection."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

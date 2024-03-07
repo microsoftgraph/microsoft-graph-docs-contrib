@@ -4,7 +4,7 @@ description: "Update the synchronization schema for a given job or template. Thi
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Update synchronizationSchema

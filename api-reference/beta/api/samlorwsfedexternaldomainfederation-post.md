@@ -3,7 +3,7 @@ title: "Create samlOrWsFedExternalDomainFederation"
 description: "Create a new samlOrWsFedExternalDomainFederation object."
 author: "namkedia"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

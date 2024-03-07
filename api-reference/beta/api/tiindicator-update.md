@@ -3,7 +3,7 @@ title: "Update tiIndicator"
 description: "Update the properties of a tiIndicator object."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

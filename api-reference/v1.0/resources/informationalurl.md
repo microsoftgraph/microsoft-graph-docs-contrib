@@ -3,7 +3,7 @@ title: "informationalUrl resource type"
 description: "Basic profile information of the application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 

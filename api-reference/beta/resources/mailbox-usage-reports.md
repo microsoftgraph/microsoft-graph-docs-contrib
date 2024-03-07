@@ -3,7 +3,7 @@ title: "Mailbox usage reports"
 description: "You can get information about users with a mailbox and their level of activity which is primarily based on emails sent and received. You can also see how much storage each mailbox consumes and how many mailboxes are approaching storage quotas."
 ms.localizationpriority: medium
 author: "sarahwxy"
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: conceptualPageType
 ---
 

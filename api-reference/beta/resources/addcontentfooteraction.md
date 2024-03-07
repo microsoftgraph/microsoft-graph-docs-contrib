@@ -3,7 +3,7 @@ title: "addContentFooterAction resource type (deprecated)"
 description: "Represents an action that specifies the details on the content footer to be added to the information, if applicable. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 

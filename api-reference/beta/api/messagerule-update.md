@@ -3,7 +3,7 @@ title: "Update rule"
 description: "Change writable properties on a messageRule object and save the changes."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
