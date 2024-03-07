@@ -29,7 +29,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |activeChecklistItemCount|Int32|Number of checklist items with value set to `false`, representing incomplete items.|
-|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|The categories to which the task has been applied. See [applied Categories](plannerappliedcategories.md) for possible values.|
+|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|The categories to which the task is being applied. See [applied Categories](plannerappliedcategories.md) for possible values.|
 |assigneePriority|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
 |assignments|[plannerAssignments](plannerassignments.md)|The set of assignees the task is assigned to.|
 |bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service. |
@@ -70,7 +70,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.|
 |bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket.|
-|details|[plannerTaskDetails](plannertaskdetails.md)| Read-only. Nullable. Additional details about the task.|
+|details|[plannerTaskDetails](plannertaskdetails.md)| Read-only. Nullable. More details about the task.|
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
 
 ## JSON representation
