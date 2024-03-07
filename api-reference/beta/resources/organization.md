@@ -4,7 +4,7 @@ description: "Represents a Microsoft Entra tenant. "
 ms.localizationpriority: medium
 author: "suawat"
 ms.reviewer: "alvarorahul, iamut"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

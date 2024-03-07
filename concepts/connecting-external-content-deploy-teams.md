@@ -4,7 +4,7 @@ description: "Deploy your custom Graph connector in your Teams App with simplifi
 author: monaray
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Enable the simplified admin experience for your Microsoft Graph connector in the Teams admin center

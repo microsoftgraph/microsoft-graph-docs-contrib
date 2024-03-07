@@ -3,7 +3,7 @@ title: "Update educationAssignmentSettings"
 description: "Update the properties of an educationAssignmentSettings object."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

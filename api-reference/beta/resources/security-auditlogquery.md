@@ -3,7 +3,7 @@ title: "auditLogQuery resource type"
 description: "Represents an audit log query that is used to query and retrieve relevant audit log records."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

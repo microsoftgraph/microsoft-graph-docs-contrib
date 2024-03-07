@@ -3,7 +3,7 @@ title: "group: retryServiceProvisioning"
 description: "Retry the group service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: "apiPageType"
 ---
 

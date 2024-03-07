@@ -3,7 +3,7 @@ title: "educationSynchronizationProfile resource type"
 description: "Represents a set of configurations used to synchronize education entities and roster information from a source directory to Microsoft Entra ID. This resource provides a programmatic representation used in School Data Sync."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

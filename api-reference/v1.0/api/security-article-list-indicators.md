@@ -3,7 +3,7 @@ title: "List indicators"
 description: "Get a list of articleIndicator objects that represent indicators of threat or compromise related to the contents of an article."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

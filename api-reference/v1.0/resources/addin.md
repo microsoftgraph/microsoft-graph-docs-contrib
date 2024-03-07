@@ -3,7 +3,7 @@ title: "addIn resource type"
 description: "Here's a JSON representation of the resource."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 

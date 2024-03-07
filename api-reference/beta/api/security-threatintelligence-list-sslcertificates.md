@@ -3,7 +3,7 @@ title: "List sslCertificates"
 description: "Get a list of sslCertificate objects and their properties."
 author: "nblankenau"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

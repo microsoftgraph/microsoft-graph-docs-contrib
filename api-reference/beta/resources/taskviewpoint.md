@@ -3,7 +3,7 @@ title: "taskViewpoint resource type"
 description: Contains personal properties of a task"
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

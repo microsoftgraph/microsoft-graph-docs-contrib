@@ -3,7 +3,7 @@ title: "authenticationRequirementPolicy resource type"
 description: "Microsoft Entra ID can require users to pass an MFA check before accessing resources. If an MFA check is required, this resource identifies the policy that requires MFA."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

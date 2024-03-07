@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsUserActivityTotalCounts"
 description: "Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed or nonlicensed users."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
 ---

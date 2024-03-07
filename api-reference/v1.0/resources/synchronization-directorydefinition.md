@@ -4,7 +4,7 @@ description: "Provides the synchronization engine information about a directory 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # directoryDefinition resource type

@@ -3,7 +3,7 @@ title: "passwordSingleSignOnSettings resource type"
 description: "Settings related to Password-based single sign-on"
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

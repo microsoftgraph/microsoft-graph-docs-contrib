@@ -3,7 +3,7 @@ title: "plannerFavoritePlanReferenceCollection resource type"
 description: " the value is the plannerFavoritePlanReference object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

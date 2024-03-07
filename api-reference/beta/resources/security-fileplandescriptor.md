@@ -3,7 +3,7 @@ title: "filePlanDescriptor resource type"
 description: "Represents a group of columns associated with a particular retention label, to improve the manageability and organization of the content you need to label."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

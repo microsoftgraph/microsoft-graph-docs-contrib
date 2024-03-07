@@ -3,7 +3,7 @@ title: "educationUser resource type"
 description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph returns from the non-education-specific `/users` endpoint."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get application"
 description: "Get the properties and relationships of an application object."
 author: "sureshja"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

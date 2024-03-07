@@ -3,7 +3,7 @@ title: "processEvidence resource type"
 description: "Represents a process that is reported in the alert as evidence."
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

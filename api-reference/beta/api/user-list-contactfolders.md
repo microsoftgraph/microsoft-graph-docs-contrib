@@ -3,7 +3,7 @@ title: "List contactFolders"
 description: "Get all the contact folders in the signed-in user's mailbox."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

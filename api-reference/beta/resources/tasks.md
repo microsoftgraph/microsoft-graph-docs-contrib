@@ -3,7 +3,7 @@ title: "tasks resource type"
 description: "Represents the To Do tasks service available to a user"
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

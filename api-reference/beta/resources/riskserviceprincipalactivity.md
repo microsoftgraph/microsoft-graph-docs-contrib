@@ -3,7 +3,7 @@ title: "riskServicePrincipalActivity resource type"
 description: "Represents the risk activity of a Microsoft Entra service principal as determined by Microsoft Entra ID Protection."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

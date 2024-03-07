@@ -3,7 +3,7 @@ title: "selfSignedCertificate resource type"
 description: "Contains information about the public part of a signing certificate."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "luleonpla"
 ---
 

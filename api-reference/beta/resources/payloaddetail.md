@@ -3,7 +3,7 @@ title: "payloadDetail resource type"
 description: "Represents details about a payload."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
