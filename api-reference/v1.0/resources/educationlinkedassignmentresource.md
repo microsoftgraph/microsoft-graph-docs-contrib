@@ -3,7 +3,7 @@ title: "educationLinkedAssignmentResource resource type"
 description: "A subclass of educationResource that represents a link to an educationAssignment."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
