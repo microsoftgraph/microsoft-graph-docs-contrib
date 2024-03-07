@@ -3,7 +3,7 @@ title: printerDiscoverySettings resource type
 description: Represents tenant-wide printer discovery settings for the Universal Print service.
 author: JuliusShanMS
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
