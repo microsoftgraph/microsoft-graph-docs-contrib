@@ -91,6 +91,11 @@ For details about the types of indicators supported and limits on indicator coun
 |targetProduct|String|A string value representing a single security product to which the indicator should be applied. Acceptable values are: `Azure Sentinel`, `Microsoft Defender ATP`. **Required**|
 |threatType|[threatType](#threattype-values)| Each indicator must have a valid Indicator Threat Type. Possible values are: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Required.** |
 |tlpLevel|[tlpLevel](#tlplevel-values)| Traffic Light Protocol value for the indicator. Possible values are: `unknown`, `white`, `green`, `amber`, `red`. **Required.**|
+
+### Indicator observables - email
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
 |emailEncoding|String|The type of text encoding used in the email.|
 |emailLanguage|String|The language of the email.|
 |emailRecipient|String|Recipient email address.|
@@ -100,6 +105,11 @@ For details about the types of indicators supported and limits on indicator coun
 |emailSourceIpAddress|String|Source IP address of email.|
 |emailSubject|String|Subject line of email.|
 |emailXMailer|String|X-Mailer value used in the email.|
+
+### Indicator observables - file
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
 |fileCompileDateTime|DateTimeOffset|DateTime when the file was compiled. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |fileCreatedDateTime|DateTimeOffset| DateTime when the file was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |fileHashType|string| The type of hash stored in fileHashValue. Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`.|
@@ -110,6 +120,11 @@ For details about the types of indicators supported and limits on indicator coun
 |filePath|String|Path of file indicating compromise. May be a Windows or *nix style path.|
 |fileSize|Int64|Size of the file in bytes.|
 |fileType|String| Text description of the type of file. For example, “Word Document” or “Binary”.|
+
+### Indicator observables - network
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
 |domainName|String|Domain name associated with this indicator. Should be of the format subdomain.domain.topleveldomain (For example, baddomain.domain.net)|
 |networkCidrBlock|String| CIDR Block notation representation of the network referenced in this indicator. Use only if the Source and Destination can't be identified. |
 |networkDestinationAsn|Int32|The destination autonomous system identifier of the network referenced in the indicator.|
