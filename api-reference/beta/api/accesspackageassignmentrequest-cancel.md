@@ -54,6 +54,8 @@ If successful, this method returns a `200 OK` response code.  It doesn't return 
 
 ### Request
 
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -104,7 +106,8 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 ---
 
 ### Response
-Here's an example of the response.
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

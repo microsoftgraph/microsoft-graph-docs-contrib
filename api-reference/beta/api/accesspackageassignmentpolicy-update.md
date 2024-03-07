@@ -48,11 +48,11 @@ The following table shows the properties that are required when you update an [a
 |displayName|String|The display name of the policy. Required.|
 |description|String|The description of the policy. Required.|
 |canExtend|Boolean|Indicates whether a user can extend the access package assignment duration after approval. Required.|
-|durationInDays|Int32|The number of days in which assignments from this policy last until they are expired. Required.|
+|durationInDays|Int32|The number of days in which assignments from this policy last until they're expired. Required.|
 |expirationDateTime|DateTimeOffset|The expiration date for assignments created in this policy. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required.|
-|requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Who can request this access package from this policy. Required.|
+|requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Users eligible to request this access package from this policy. Required.|
 |requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Who must approve requests for access package in this policy. Required.|
-|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews are not required. Required.|
+|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews aren't required. Required.|
 
 
 ## Response
@@ -64,7 +64,9 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 ### Example 1: Update the details of a policy
 
 #### Request
-In this policy update, one of the options for the multiple choice question was removed. Future requestors will no longer have the removed option available to them.
+
+The following example shows the request.
+In this policy update, one of the options for the multiple choice question was removed. Future requestors no longer have the removed option available to them.
 
 
 # [HTTP](#tab/http)
@@ -192,6 +194,8 @@ Content-Type: application/json
 ---
 
 #### Response
+
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -272,6 +276,7 @@ To remove the verifiable credentials requirement from a policy, assign an empty 
 
 #### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -339,6 +344,8 @@ Content-Type: application/json
 ---
 
 #### Response
+
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -376,7 +383,7 @@ To remove the collection of **customExtensionStageSettings** and their associate
 
 #### Request
 
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -443,6 +450,8 @@ Content-Type: application/json
 ---
 
 #### Response
+
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
