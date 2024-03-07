@@ -42,6 +42,6 @@ Here's a JSON representation of the resource
 | sharingSubject      	| String	      | The subject with which the document was shared. |
 | sharingType     		  | String        | Determines the way the document was shared, can be by a "Link", "Attachment", "Group", "Site".     |
 | sharedBy      	      | [insightIdentity](insights-insightidentity.md)	    | The user who shared the document.  |
-| sharingReference		  | [resourceReference](insights-resourcereference.md)	    | *TODO* |
+| sharingReference		  | [resourceReference](insights-resourcereference.md)	    | Reference properties of the document, such as the url and type of the document. Read-only |
 
 

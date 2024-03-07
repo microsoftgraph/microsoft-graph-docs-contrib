@@ -34,9 +34,11 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |complianceInformation|[complianceInformation](complianceinformation.md) collection|The collection of compliance information associated with secure score control|
 |controlCategory|String|Control action category (Account, Data, Device, Apps, Infrastructure).|
 |controlName|String|Name of the control.|
-|controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection|Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofile-update.md)).|
+|controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection|Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)).|
 |deprecated|Boolean|Flag to indicate if a control is depreciated.|
+|id|String|Provider-generated GUID/unique identifier. Read-only. Required.|
 |implementationCost|String|Resource cost of implemmentating control (low, moderate, high).|
+|lastModifiedDateTime|DateTimeOffset|Time at which the control profile entity was last modified. The Timestamp type represents date and time| 
 |maxScore|String|Current obtained max score on specified date.|
 |rank|Int32|Microsoft's stack ranking of control.|
 |remediation|String|Description of what the control will help remediate.|

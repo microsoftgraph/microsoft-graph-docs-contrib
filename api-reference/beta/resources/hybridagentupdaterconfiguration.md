@@ -36,7 +36,7 @@ The update of the agent follows the below priority list
 |:-------------|:------------|:------------|
 |allowUpdateConfigurationOverride|Boolean|Indicates if updater configuration will be skipped and the agent will receive an update when the next version of the agent is available.|
 |deferUpdateDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|updateWindow|[updateWindow](updatewindow.md)|*TODO*|
+|updateWindow|[updateWindow](updatewindow.md)|The time window during which the agent can receive updates.|
 
 ## JSON representation
 

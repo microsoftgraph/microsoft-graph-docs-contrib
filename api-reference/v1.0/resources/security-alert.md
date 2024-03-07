@@ -50,7 +50,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 |lastActivityDateTime|DateTimeOffset| The oldest activity associated with the alert.|
 |lastUpdateDateTime|DateTimeOffset| Time when the alert was last updated at Microsoft 365 Defender.|
 |mitreTechniques|Collection(Edm.String)| The attack techniques, as aligned with the MITRE ATT&CK framework.|
-|productName|String| *TODO*|
+|productName|String|The name of the product which published this alert.|
 |providerAlertId|String| The ID of the alert as it appears in the security provider product that generated the alert.|
 |recommendedActions|String| Recommended response and remediation actions to take in the event this alert was generated.|
 |resolvedDateTime|DateTimeOffset| Time when the alert was resolved.|

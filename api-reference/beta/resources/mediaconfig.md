@@ -19,7 +19,7 @@ An abstract base class that contains the media configuration used to connect to 
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |*TODO*|
+| removeFromDefaultAudioGroup | Boolean |Remove media from the default audio group.|
 
 ## JSON representation
 

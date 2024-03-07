@@ -68,11 +68,6 @@ Here's a JSON representation of the resource.
     "createdDateTime": "2020-10-27T15:14:11.0048392Z",
     "id": "33434233-3030-3739-3043-393039324633",
     "includedSources": "mailbox,site",
-    "createdBy": {
-        "user": {
-            "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
-            "displayName": null
-        }
-    }
+    "createdBy": { "@odata.type": "microsoft.graph.identitySet" }
 }
 ```

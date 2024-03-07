@@ -33,7 +33,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |email|String|The email address of the subject.|
 |id|String| Read-only. Key.|
 |objectId|String|The object identifier of the subject. `null` if the subject isn't yet a user in the tenant. Alternate key.|
-|onPremisesSecurityIdentifier|String|*TODO*|
+|onPremisesSecurityIdentifier|String|A string representation of the principal's security identifier, if known, or `null` if the subject doesn't have a security identifier.|
 |principalName|String|The principal name, if known, of the subject.|
 |subjectLifecycle|accessPackageSubjectLifecycle|The lifecycle of the subject user, if a guest. The possible values are: `notDefined`, `notGoverned`, `governed`, `unknownFutureValue`.|
 |type|String|The resource type of the subject.|

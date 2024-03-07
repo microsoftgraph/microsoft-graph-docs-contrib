@@ -19,7 +19,6 @@ Represents the current state of some information that is to be labeled. **conten
 | Property      | Type                                                                                      | Description                                                                                                                     |
 | :------------ | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
 | contentFormat | String                                                                                    | The format of the content to be labeled. Possible values are: `file`, `email`.                                                                     |
-| format | String                                                                                           | *TODO*        |
 | identifier    | String                                                                                    | Identifier used for Azure Information Protection Analytics.                                                                     |
 | metadata      | [keyValuePair](../resources/security-keyvaluepair.md) collection | Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the `MSIP_Label_GUID_PropName`. |
 | state         | contentState                                                                              | The usage state of the content. The possible values are: `rest`, `motion`, or `use`.                                                                                |
@@ -38,7 +37,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.security.contentInfo",
   "contentFormat": "String",
-  "format": "String",
   "identifier": "String",
   "metadata": [
     {

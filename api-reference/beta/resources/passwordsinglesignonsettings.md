@@ -17,7 +17,7 @@ Contains the collection of Password-based single sign-on settings.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|fields|[passwordSingleSignOnField](passwordsinglesignonfield.md) collection|*TODO*|
+|fields|[passwordSingleSignOnField](passwordsinglesignonfield.md) collection|The fields to capture to fill the use credentials for Password-based single sign-on.|
 
 ## JSON representation
 
