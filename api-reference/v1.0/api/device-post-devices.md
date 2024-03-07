@@ -3,7 +3,7 @@ title: "Create device"
 description: "Create and register a new device in the organization."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

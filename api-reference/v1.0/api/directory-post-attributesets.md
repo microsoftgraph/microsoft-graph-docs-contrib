@@ -3,7 +3,7 @@ title: "Create attributeSet"
 description: "Create a new attributeSet object."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

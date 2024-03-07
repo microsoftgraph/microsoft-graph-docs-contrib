@@ -3,7 +3,7 @@ title: "Get deviceLocalCredentialInfo"
 description: "Retrieve the properties of a deviceLocalCredential for a specified device object."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List deviceLocalCredentialInfo"
 description: "Get a list of deviceLocalCredentialInfo and their properties, excluding the credentials property."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
