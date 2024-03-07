@@ -4,7 +4,7 @@ description: "Represents the current status of the synchronizationJob."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationStatus resource type

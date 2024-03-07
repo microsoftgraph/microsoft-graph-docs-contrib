@@ -3,7 +3,7 @@ title: "Remove teacher from educationClass "
 description: "Remove a teacher from a class."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "serviceProvisioningXmlError resource type"
 description: "Represents information published by a federated service describing a nontransient, service-specific error regarding the properties or link from an object that is represented as an xml string"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "PaulEkirapa"
 ---
 

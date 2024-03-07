@@ -4,7 +4,7 @@ description: "List all the groups available in an organization, excluding dynami
 ms.localizationpriority: high
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

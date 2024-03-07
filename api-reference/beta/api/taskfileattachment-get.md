@@ -3,7 +3,7 @@ title: "Get taskFileAttachment"
 description: "Read the properties and relationships of a taskFileAttachment object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

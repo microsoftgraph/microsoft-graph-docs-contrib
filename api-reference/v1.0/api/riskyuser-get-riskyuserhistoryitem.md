@@ -3,7 +3,7 @@ title: "Get history"
 description: "Read the properties and relationships of a riskyUserHistoryItem object."
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

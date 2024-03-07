@@ -3,7 +3,7 @@ title: "filePlanReference resource type"
 description: "Represents the file plan descriptor of type filePlanReference applied to a particular retention label."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

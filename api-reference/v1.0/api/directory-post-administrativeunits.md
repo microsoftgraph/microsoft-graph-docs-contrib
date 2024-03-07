@@ -3,7 +3,7 @@ title: "Create administrativeUnit"
 description: "Use this API to create a new administrativeUnit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

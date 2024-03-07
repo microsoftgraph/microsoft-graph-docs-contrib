@@ -3,7 +3,7 @@ title: "educationAssignment: setUpFeedbackResourcesFolder"
 description: "Create a SharePoint folder to upload feedback files for a given educationSubmission."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update adminForms"
 description: "Update the properties of a Microsoft Graph adminForms object."
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

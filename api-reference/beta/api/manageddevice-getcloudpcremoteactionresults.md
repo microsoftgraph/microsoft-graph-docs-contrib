@@ -3,7 +3,7 @@ title: "managedDevice: getCloudPcRemoteActionResults"
 description: "Check the Cloud PC-specified remote action status for a Cloud PC device."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
