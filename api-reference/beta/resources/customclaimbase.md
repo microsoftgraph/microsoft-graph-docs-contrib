@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type for a claim, contains a collection of configurations for a claim.
-This is an abstract type.
+This ia an abstract type for a custom claim. It contains a collection of configurations for a claim.
 
 ## Properties
 |Property|Type|Description|

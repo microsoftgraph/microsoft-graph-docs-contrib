@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Base group filter.
-This is an abstract type.
+This is an abstract type for base group filter.
 
 ## Properties
 |Property|Type|Description|

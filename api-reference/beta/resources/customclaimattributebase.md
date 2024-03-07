@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom claim attribute base.
-This is an abstract type.
+This is an abstract type for custom claim attribute base.
 
 ## Properties
 |Property|Type|Description|

@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom claim condition base.
-This is an abstract type.
+This is an abstract type for custom claim condition base.
 
 ## Properties
 |Property|Type|Description|

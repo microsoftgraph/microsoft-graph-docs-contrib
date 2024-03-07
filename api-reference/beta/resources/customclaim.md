@@ -1,6 +1,6 @@
 ---
 title: "customClaim resource type"
-description: "An individual claim to be included in the tokens affected by this policy, with configurable name, namespace, token format and claim name format(which is applicable only for saml tokens)."
+description: "An individual claim which is included in the tokens affected by this policy."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An individual claim to be included in the tokens affected by this policy, with configurable name, namespace, token format and claim name format(which is applicable only for saml tokens).
+An individual claim which is included in the tokens affected by this policy. It consists of configurable name, namespace, token format and claim name format. Claim name format is applicable only for saml tokens.
 
 Inherits from [customClaimBase](../resources/customclaimbase.md).
 

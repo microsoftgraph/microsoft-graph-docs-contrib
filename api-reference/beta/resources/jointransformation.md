@@ -20,7 +20,7 @@ Inherits from [customClaimTransformation](../resources/customclaimtransformation
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|input|[transformationAttribute](../resources/transformationattribute.md)|The input attribute that will provide the source for the transformation. This parameter is required if it is the first or only transformation in the list of transformations to be applied. Subsequent transformations will use the output of the prior transformation as input. Inherited from [customClaimTransformation](../resources/customclaimtransformation.md).|
+|input|[transformationAttribute](../resources/transformationattribute.md)|The input attribute that provides the source for the transformation. This parameter is required if it's the first or only transformation in the list of transformations to be applied. Subsequent transformations use the output of the prior transformation as input. Inherited from [customClaimTransformation](../resources/customclaimtransformation.md).|
 |input2|[transformationAttribute](../resources/transformationattribute.md)|The second input to be used in the join operation.|
 |separator|String|The seperator value to be used.|
 

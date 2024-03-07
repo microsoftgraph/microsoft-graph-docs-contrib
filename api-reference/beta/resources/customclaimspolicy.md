@@ -20,8 +20,6 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List customClaimsPolicy objects](../api/policyroot-list-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md) collection|Get a list of the [customClaimsPolicy](../resources/customclaimspolicy.md) objects and their properties.|
-|[Create customClaimsPolicy](../api/policyroot-post-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Create a new [customClaimsPolicy](../resources/customclaimspolicy.md) object.|
 |[Get customClaimsPolicy](../api/customclaimspolicy-get.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Read the properties and relationships of a [customClaimsPolicy](../resources/customclaimspolicy.md) object.|
 |[Update customClaimsPolicy](../api/customclaimspolicy-update.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Update the properties of a [customClaimsPolicy](../resources/customclaimspolicy.md) object.|
 |[Delete customClaimsPolicy](../api/policyroot-delete-claimspolicy.md)|None|Delete a [customClaimsPolicy](../resources/customclaimspolicy.md) object.|
