@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [educationGradingScheme](../resources/educationgradingscheme.md) object. 
+Add an existing [educationGradingScheme](../resources/educationgradingscheme.md) for an existing assignment.
 
 ## Permissions
 
@@ -69,7 +69,6 @@ Content-Type: application/json
     "@odata.id": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingSchemes/69911dea-bc5c-406a-8743-81d06225a3a1"
 }
 ```
-
 
 ### Response
 The following example shows the response.
