@@ -1,5 +1,5 @@
 ---
-title: "Manage Microsoft Entra applications using Microsoft Graph"
+title: "Manage Microsoft Entra applications by using Microsoft Graph"
 description: "Learn how to manage the lifecycle and settings for Microsoft Entra applications and service principals programmatically using Microsoft Graph APIs."
 author: FaithOmbongi
 ms.author: ombongifaith
@@ -12,7 +12,7 @@ doc_type: conceptualPageType
 #customer intent: As a developer, I want to learn how to manage the lifecycle and settings for Microsoft Entra applications and service principals programmatically using Microsoft Graph APIs.
 ---
 
-# Manage Microsoft Entra applications and service principals using Microsoft Graph
+# Manage Microsoft Entra applications and service principals by using Microsoft Graph
 
 Microsoft Entra ID is an Identity and Access Management (IAM) system. A core part of its functionality is the [Microsoft identity platform](/entra/identity-platform/v2-overview), which provides authentication and authorization services for *registered applications*. Microsoft Graph APIs allow you to register and manage your applications programmatically, enabling you to use Microsoft's IAM capabilities.
 
@@ -20,13 +20,13 @@ Microsoft Entra ID is an Identity and Access Management (IAM) system. A core par
 
 In Microsoft Entra, an application is defined by an **application** object and a **service principal** object. There's only one application object for your application across Microsoft Entra, but there can be multiple service principal objects for your application. 
 
-The application object resides in the home tenant where the app was registered. A service principal is created in every tenant where the app is installed and used, including the home tenant. For more information, see [Application and service principal objects in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals).
+The application object is located in the tenant where the app was registered. A service principal is created in every tenant where the app is installed and used, including the tenant where the app is registered. For more information, see [Application and service principal objects in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals).
 
 In Microsoft Graph, an application is represented by the [application resource type](application.md) and a service principal is represented by the [servicePrincipal resource type](serviceprincipal.md). The details of the two objects can be accessed on the Microsoft Entra admin center through the **Identity** > **Applications** > **App registrations** and **Identity** > **Applications** > **Enterprise applications** menus respectively.
 
 ## API use cases for managing applications
 
-The following API use cases are supported for managing applications through the [application resource type](../resources/application.md) in Microsoft Graph:
+The following API use cases are supported for managing applications through the [application resource type](../resources/application.md) in Microsoft Graph.
 
 | Use cases | API operations |
 |--|--|
@@ -44,7 +44,7 @@ The following API use cases are supported for managing applications through the 
 
 ## API use cases for managing service principals
 
-The following API use cases are supported for managing service principals through the [servicePrincipal resource type](../resources/serviceprincipal.md) in Microsoft Graph:
+The following API use cases are supported for managing service principals through the [servicePrincipal resource type](../resources/serviceprincipal.md) in Microsoft Graph.
 
 | Use cases | API operations |
 |--|--|
