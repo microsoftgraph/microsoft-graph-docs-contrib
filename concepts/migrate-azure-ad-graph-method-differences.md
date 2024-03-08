@@ -15,7 +15,7 @@ ms.date: 02/14/2024
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-A handful of Azure Active Directory (Azure AD) Graph  actions have changed.  If an action is **not** shown in this list, it's already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
+Some Azure Active Directory (Azure AD) Graph  actions have changed.  If an action is **not** shown in this list, it's already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
 
 |Azure AD Graph <br>(v1.6) function or action |Microsoft Graph<br>(resource/method)|Comments|
 |---|---|---|
