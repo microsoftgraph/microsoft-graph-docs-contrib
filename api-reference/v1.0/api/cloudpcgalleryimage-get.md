@@ -1,6 +1,6 @@
 ---
 title: "Get cloudPcGalleryImage"
-description: "Read the properties and relationships of a cloudPcGalleryImage object."
+description: "Read the properties and relationships of a specific cloudPcGalleryImage object."
 author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,8 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Read the properties and relationships of a specific [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## HTTP request
 
@@ -50,7 +48,6 @@ If successful, this method returns a `200 OK` response code and a [cloudPcGaller
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpcgalleryimage"
@@ -60,7 +57,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/galleryImages/{id}
 ```
----
 
 ### Response
 
