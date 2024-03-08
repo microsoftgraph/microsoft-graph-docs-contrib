@@ -49,7 +49,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printReleaseMechanism",
           "ChangeType": "Deletion",
-          "Description": "Removed the [printReleaseMechanism](https://learn.microsoft.com/en-us/graph/api/resources/printReleaseMechanism?view=graph-rest-beta) resource type.",
+          "Description": "Removed the [printReleaseMechanism](https://learn.microsoft.com/en-us/graph/api/resources/printReleaseMechanism?view=graph-rest-1.0) resource type.",
           "Target": "printReleaseMechanism"
         },
         {
@@ -57,7 +57,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "releaseMechanisms",
           "ChangeType": "Deletion",
-          "Description": "Removed the **releaseMechanism** property from the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Removed the **releaseMechanism** property from the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
           "Target": "printer"
         }
       ],
