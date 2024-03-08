@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "releaseMechanisms",
           "ChangeType": "Deletion",
-          "Description": "Removed the **releaseMechanism** property from the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource",
+          "Description": "Removed the **releaseMechanism** property from the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         }
       ],
@@ -41,7 +41,7 @@
           "ApiChange": "Enumeration",
           "ChangedApiName": "printReleaseType",
           "ChangeType": "Deletion",
-          "Description": "Remove the **printReleaseType** enumeration type, since it is not supported.",
+          "Description": "Removed the **printReleaseType** enumeration type.",
           "Target": "printReleaseType"
         },
         {
@@ -49,7 +49,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printReleaseMechanism",
           "ChangeType": "Deletion",
-          "Description": "Remove the printReleaseMechanism resource type, since it is not supported.",
+          "Description": "Removed the [printReleaseMechanism](https://learn.microsoft.com/en-us/graph/api/resources/printReleaseMechanism?view=graph-rest-beta) resource type.",
           "Target": "printReleaseMechanism"
         },
         {
@@ -57,7 +57,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "releaseMechanisms",
           "ChangeType": "Deletion",
-          "Description": "Remove the `releaseMechanisms` property from the printer resource, since it is not supported.",
+          "Description": "Removed the **releaseMechanism** property from the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         }
       ],
