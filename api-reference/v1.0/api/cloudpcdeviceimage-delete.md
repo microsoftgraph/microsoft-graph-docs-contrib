@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Delete a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 ## HTTP request
 
 <!-- {
@@ -44,8 +42,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_deviceimages_from_virtualendpoint"
@@ -55,11 +53,11 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/deviceImages/{id}
 ```
----
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
