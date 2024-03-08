@@ -1069,6 +1069,56 @@
             "CreatedDateTime": "2023-02-02T03:35:46.1510967Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Device updates"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": " ",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "product",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [product](https://learn.microsoft.com/en-us/graph/api/resources/product?view=graph-rest-beta) resource type."",
+                    "Target": "product"
+                },
+                {
+                    "Id": "",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "edition",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [edition](https://learn.microsoft.com/en-us/graph/api/resources/edition?view=graph-rest-beta) resource type."",
+                    "Target": "edition"
+                },
+                {
+                    "Id": " ",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "knownissue",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [knownissue](https://learn.microsoft.com/en-us/graph/api/resources/knownissue?view=graph-rest-beta) resource type.",
+                    "Target": "knownissue"
+                },
+                {
+                    "Id": " ",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "servicingPeriod",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [servicingPeriod](https://learn.microsoft.com/en-us/graph/api/resources/servicingPeriod?view=graph-rest-beta) resource type.",
+                    "Target": "servicingPeriod"
+                },
+                {
+                    "Id": " ",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "knownIssueHistoryItem",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [knownIssueHistoryItem](https://learn.microsoft.com/en-us/graph/api/resources/knownIssueHistoryItemt?view=graph-rest-beta) resource type.",
+                    "Target": "knownIssueHistoryItem"
+                }
+            ],
+            "Id": " ",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": " ",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Device updates"
         }
     ]
 }
