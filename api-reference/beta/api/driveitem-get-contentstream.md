@@ -63,7 +63,7 @@ If successful, this method returns a 200 OK HTTP response code.
 
 ## Example
 
-Here's an example to download a complete file.
+The following example shows how to download a file.
 
 ### Download file contents
 
