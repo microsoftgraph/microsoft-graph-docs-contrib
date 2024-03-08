@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "e7467d63-0d13-4628-839d-3e13a8d9bdbf",
+          "ApiChange": "Method",
+          "ChangedApiName": "convertExternalToInternalMemberUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [convertExternalToInternalMemberUser](https://learn.microsoft.com/en-us/graph/api/user-convertExternalToInternalMemberUser?view=graph-rest-beta) action to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. Use this action to convert a user account from an external user to an internal user.",
+          "Target": "user"
+        }
+      ],
+      "Id": "e7467d63-0d13-4628-839d-3e13a8d9bdbf",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-12T00:00:00",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c086e0ba-a8a1-4570-a8ec-f88e113d0043",
           "ApiChange": "Property",
           "ChangedApiName": "resourceProvisioningOptions",
