@@ -3,19 +3,51 @@
         {
             "ChangeList": [
                 {
+                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                  "ApiChange": "Enum type",
+                  "ChangedApiName": "cloudPcDeviceImageErrorCode",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **cloudPcDeviceImageErrorCode** enumeration type.",
+                  "Target": "cloudPcDeviceImageErrorCode"
+                },
+                {
+                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                  "ApiChange": "Enum type",
+                  "ChangedApiName": "cloudPcDeviceImageOsStatus",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **cloudPcDeviceImageOsStatus** enumeration type.",
+                  "Target": "cloudPcDeviceImageOsStatus"
+                },
+                {
+                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                  "ApiChange": "Enum type",
+                  "ChangedApiName": "cloudPcDeviceImageStatus",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **cloudPcDeviceImageStatus** enumeration type.",
+                  "Target": "cloudPcDeviceImageStatus"
+                },                
+                {
+                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                  "ApiChange": "Enum type",
+                  "ChangedApiName": "cloudPcGalleryImageStatus",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **cloudPcGalleryImageStatus** enumeration type.",
+                  "Target": "cloudPcGalleryImageStatus"
+                },
+                {
                     "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
                     "ApiChange": "Relationship",
-                    "ChangedApiName": "cloudPcDeviceImage",
+                    "ChangedApiName": "deviceImages",
                     "ChangeType": "Addition",
-                    "Description": "Added the **cloudPcDeviceImage** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **deviceImages** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
                     "Target": "virtualEndpoint"
                 },
                 {
                     "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
                     "ApiChange": "Relationship",
-                    "ChangedApiName": "cloudPcGalleryImage",
+                    "ChangedApiName": "galleryImages",
                     "ChangeType": "Addition",
-                    "Description": "Added the **cloudPcGalleryImage** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **galleryImages** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
                     "Target": "virtualEndpoint"
                 },
                 {
@@ -23,63 +55,23 @@
                   "ApiChange": "Resource",
                   "ChangedApiName": "cloudPcDeviceImage",
                   "ChangeType": "Addition",
-                  "Description": "Added the cloudPcDeviceImage resource type under virtualEndpoint.",
-                  "Target": "virtualEndpoint"
+                  "Description": "Added the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDeviceImage?view=graph-rest-1.0) resource and supported methods.",
+                  "Target": "cloudPcDeviceImage"
                 },
                 {
                   "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
-                  "ApiChange": "ComplexType",
+                  "ApiChange": "Resource",
                   "ChangedApiName": "cloudPcSourceDeviceImage ",
                   "ChangeType": "Addition",
-                  "Description": "Added the cloudPcSourceDeviceImage resource type under cloudPcDeviceImage.",
-                  "Target": "cloudPcDeviceImage"
-                },
-                {
-                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
-                  "ApiChange": "Enum type",
-                  "ChangedApiName": "cloudPcDeviceImageErrorCode",
-                  "ChangeType": "Addition",
-                  "Description": "Added the cloudPcDeviceImageErrorCode enumeration.",
-                  "Target": "cloudPcDeviceImage"
-                },
-                {
-                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
-                  "ApiChange": "Enum type",
-                  "ChangedApiName": "cloudPcDeviceImageOsStatus",
-                  "ChangeType": "Addition",
-                  "Description": "Added the cloudPcDeviceImageOsStatus enumeration.",
-                  "Target": "cloudPcDeviceImage"
-                },
-                {
-                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
-                  "ApiChange": "Enum type",
-                  "ChangedApiName": "cloudPcDeviceImageStatus",
-                  "ChangeType": "Addition",
-                  "Description": "Added the cloudPcDeviceImageStatus enumeration.",
-                  "Target": "cloudPcDeviceImage"
-                },
-                {
-                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
-                  "ApiChange": "Method",
-                  "ChangedApiName": "getSourceImages",
-                  "ChangeType": "Addition",
-                  "Description": "Added the getSourceImages method to the cloudPcDeviceImage resource.",
-                  "Target": "cloudPcDeviceImage"
+                  "Description": "Added the [cloudPcSourceDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-1.0) resource type.",
+                  "Target": "cloudPcSourceDeviceImage"
                 },
                 {
                   "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
                   "ApiChange": "Resource",
                   "ChangedApiName": "cloudPcGalleryImage",
                   "ChangeType": "Addition",
-                  "Description": "Added the cloudPcGalleryImage resource type under virtualEndpoint.",
-                  "Target": "virtualEndpoint"
-                },
-                {
-                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
-                  "ApiChange": "Enum type",
-                  "ChangedApiName": "cloudPcGalleryImageStatus",
-                  "ChangeType": "Addition",
-                  "Description": "Added the cloudPcGalleryImageStatus enumeration.",
+                  "Description": "Added the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-1.0) resource and supported methods.",
                   "Target": "cloudPcGalleryImage"
                 }
               ],
