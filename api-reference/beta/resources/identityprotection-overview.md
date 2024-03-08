@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph identity protection APIs"
 description: "Use Microsoft Graph to query and receive information about risks detected by Microsoft Entra ID Protection."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: conceptualPageType
 ms.date: 12/06/2022
 ---

@@ -3,7 +3,7 @@ title: "outlookUser: supportedTimeZones"
 description: "Get the list of time zones that are supported for the user, as configured on the user's mailbox server."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

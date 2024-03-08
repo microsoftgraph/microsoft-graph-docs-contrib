@@ -3,7 +3,7 @@ title: "managedDevice: getCloudPcReviewStatus"
 description: "Get the review status of a specific Cloud PC device."
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

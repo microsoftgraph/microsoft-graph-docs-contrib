@@ -4,7 +4,7 @@ description: "Represents the expression details, result, and property details."
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: "resourcePageType"
 ---
 

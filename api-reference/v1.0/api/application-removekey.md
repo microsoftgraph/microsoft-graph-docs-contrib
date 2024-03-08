@@ -3,7 +3,7 @@ title: "application: removeKey"
 description: "Remove a key credential from an application"
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

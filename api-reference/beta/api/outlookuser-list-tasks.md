@@ -3,7 +3,7 @@ title: "List tasks"
 description: "Get all the Outlook tasks in the user's mailbox."
 ms.localizationpriority: medium
 author: "mashriv"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

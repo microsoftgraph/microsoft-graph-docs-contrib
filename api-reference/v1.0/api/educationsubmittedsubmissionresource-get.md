@@ -3,7 +3,7 @@ title: "Get educationSubmittedSubmissionResource"
 description: "Retrieve a submitted resource."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

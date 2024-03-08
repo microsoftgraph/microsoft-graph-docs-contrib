@@ -3,7 +3,7 @@ title: "Force domain deletion"
 description: "Deletes a domain using an asynchronous long-running operation."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
