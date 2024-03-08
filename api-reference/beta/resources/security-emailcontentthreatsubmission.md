@@ -3,7 +3,7 @@ title: "emailContentThreatSubmission resource type"
 description: "Represents a threat submission related to the content of an email."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

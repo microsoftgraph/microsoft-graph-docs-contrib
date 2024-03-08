@@ -3,7 +3,7 @@ title: Create taskTrigger
 description: Create a new task trigger on the specified printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

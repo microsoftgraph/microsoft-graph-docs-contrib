@@ -4,7 +4,7 @@ description: "Create a new serviceprincipal object."
 author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Create servicePrincipal

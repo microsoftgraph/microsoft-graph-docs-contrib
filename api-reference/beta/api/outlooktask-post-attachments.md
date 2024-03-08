@@ -3,7 +3,7 @@ title: "Create attachment"
 description: "Use this API to add an attachment to an outlookTask."
 author: "svpsiva"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

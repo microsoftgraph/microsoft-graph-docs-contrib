@@ -3,7 +3,7 @@ title: "Delete servicePrincipal"
 description: "Delete servicePrincipal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 

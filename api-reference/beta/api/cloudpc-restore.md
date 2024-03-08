@@ -3,7 +3,7 @@ title: "cloudPC: restore"
 description: "Restore a specific Cloud PC."
 author: "xumzheng"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

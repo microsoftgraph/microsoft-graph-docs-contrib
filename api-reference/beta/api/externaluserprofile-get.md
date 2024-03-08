@@ -4,7 +4,7 @@ description: "Get an externalUserProfile object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 ---
 
 # Get externalUserProfile
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a specific [externalUserProfile](../resources/externaluserprofile.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

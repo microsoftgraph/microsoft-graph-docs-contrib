@@ -3,7 +3,7 @@ title: "List simulationUsers"
 description: "List users of a tenant and their online actions in an attack simulation campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

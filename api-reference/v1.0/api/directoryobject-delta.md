@@ -3,7 +3,7 @@ title: "directoryObject: delta"
 description: "Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection."
 ms.localizationpriority: medium
 author: "jzhu2017"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

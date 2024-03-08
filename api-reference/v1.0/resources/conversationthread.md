@@ -3,7 +3,7 @@ title: "conversationThread resource type"
 description: "A conversationThread is a collection of posts."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 

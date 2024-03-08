@@ -19,12 +19,13 @@ Represents a row of data in the public switched telephone network (PSTN) call lo
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow collection](callrecords-pstncalllogrow.md) | List **pstnCallLogRow** objects in a call record. |
+| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md) collection | List **pstnCallLogRow** objects in a call record. |
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
+|administrativeUnitInfos| [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection|Collection of administrative units associated to a call.|
 |callDurationSource|microsoft.graph.callRecords.pstnCallDurationSource|The source of the call duration data. If the call uses a third-party telecommunications operator via the Operator Connect Program, the operator may provide their own call duration data. In this case, the property value is `operator`. Otherwise, the value is `microsoft`.|
 |calleeNumber|String|Number of the user or bot who received the call ([E.164](https://en.wikipedia.org/wiki/E.164)).|
 |callerNumber|String|Number of the user or bot who made the call ([E.164](https://en.wikipedia.org/wiki/E.164)).|
@@ -45,14 +46,14 @@ Represents a row of data in the public switched telephone network (PSTN) call lo
 |id|String|Unique call identifier (GUID).|
 |inventoryType|String|User's phone number type, such as a service of toll-free number.|
 |licenseCapability|String|The license used for the call.|
-|operator|String|The telecommunications operator that provided PSTN services for this call. This may be Microsoft, or it may be a third-party operator via the [Operator Connect Program](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398).|
+|operator|String|The telecommunications operator that provided PSTN services for this call. It may be Microsoft, or it may be a third-party operator via the [Operator Connect Program](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398).|
 |otherPartyCountryCode|String|Country code of the caller for an incoming call, or callee for an outgoing call. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |startDateTime|DateTimeOffset|Call start time.|
 |tenantCountryCode|String|Country code of the tenant. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |usageCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
-|userId|String|The unique identifier (GUID) of the user in Microsoft Entra ID. This and other user info will be null/empty for bot call types (`ucap_in`, `ucap_out`).|
-|userPrincipalName|String|The user principal name (sign-in name) in Microsoft Entra ID. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
+|userId|String|The unique identifier (GUID) of the user in Microsoft Entra ID. This and other user info is null/empty for bot call types (`ucap_in`, `ucap_out`).|
+|userPrincipalName|String|The user principal name (sign-in name) in Microsoft Entra ID. It is usually the same as the user's SIP address and can be the same as the user's e-mail address.|
 
 ## Relationships
 
@@ -60,7 +61,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource.
 
 <!-- {
   "blockType": "resource",
@@ -72,6 +73,7 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.callRecords.pstnCallLogRow",
+  "administrativeUnitInfos": [{"@odata.type": "microsoft.graph.callRecords.administrativeUnitInfo"}],
   "callDurationSource": "String",
   "calleeNumber": "String",
   "callerNumber": "String",

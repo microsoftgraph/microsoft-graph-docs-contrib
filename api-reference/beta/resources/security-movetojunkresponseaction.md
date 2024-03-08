@@ -3,7 +3,7 @@ title: "moveToJunkResponseAction resource type"
 description: "Describes an email response action that moves the email message to the user's Junk folder."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

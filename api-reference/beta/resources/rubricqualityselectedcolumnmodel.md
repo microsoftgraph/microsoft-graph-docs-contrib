@@ -3,7 +3,7 @@ title: "rubricQualitySelectedColumnModel resource type"
 description: "Indicates the rubricLevel selected by the teacher when grading an educationRubric"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 
