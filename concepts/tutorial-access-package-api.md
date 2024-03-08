@@ -25,7 +25,7 @@ To successfully complete this tutorial, make sure that you have the required pre
 - Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/entra/id-governance/entitlement-management-overview#license-requirements). For this tutorial, one of the following licenses is required in your tenant:
     - Microsoft Entra ID P2
     - Microsoft Entra ID Governance
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 - Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All`.
 
 ## Step 1: Create a user account and a group

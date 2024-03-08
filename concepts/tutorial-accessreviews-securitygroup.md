@@ -16,14 +16,14 @@ The access reviews API in Microsoft Graph enables organizations to audit and att
 
 Suppose you use Microsoft Entra security groups to assign identities (also called *principals*) access to resources in your organization. Periodically, you need to attest that all members of the security group need their membership and by extension, their access to the resources assigned to the security group.
 
-This tutorial guides you to use the access reviews API to review access to a security group in your Microsoft Entra tenant. You can use Graph Explorer or Postman to try out and test your access reviews API calls before you automate them into a script or an app. This test environment saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
+This tutorial guides you to use the access reviews API to review access to a security group in your Microsoft Entra tenant. You can use an API client to try out and test your access reviews API calls before you automate them into a script or an app. This test environment saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
 
 ## Prerequisites
 
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled.
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator or Identity Governance Administrator role.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator or Identity Governance Administrator role.
   + [Optional] Open a new **incognito**, **anonymous**, or **InPrivate browser** window. You'll sign in later in this tutorial.
 + Grant yourself the following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
    
