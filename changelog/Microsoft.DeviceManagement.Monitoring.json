@@ -7,14 +7,14 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "changeAlertRecordsPortalNotificationAsSent",
                 "ChangeType": "Addition",
-                "Description": "Added a new api: changeAlertRecordsPortalNotificationAsSent of [alertRecord](https://learn.microsoft.com/en-us/graph/api/resources/devicemanagement-alertrecord?view=graph-rest-beta)",
+                "Description": "Added the [changeAlertRecordsPortalNotificationAsSent]((https://learn.microsoft.com/en-us/graph/api/devicemanagement-alertrecord-changealertrecordsportalnotificationassent) method to the [alertRecord](https://learn.microsoft.com/en-us/graph/api/resources/devicemanagement-alertrecord?view=graph-rest-beta) resource.",
                 "Target": "changeAlertRecordsPortalNotificationAsSent"
               }
             ],
             "Id": "e71cd5c7-4f63-a7b7-d230-7a27783fe81a",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "2023-12-22T10:40:03.4590295Z",
+            "CreatedDateTime": "2024-03-07T10:40:03.4590295Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
           },
