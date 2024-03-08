@@ -3,7 +3,7 @@ title: "Get onAttributeCollectionSubmitCustomExtension"
 description: "Read the properties and relationships of an onAttributeCollectionSubmitCustomExtension object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://microsoft.graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension
+GET https://graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension
 ```
 
 # [JavaScript](#tab/javascript)

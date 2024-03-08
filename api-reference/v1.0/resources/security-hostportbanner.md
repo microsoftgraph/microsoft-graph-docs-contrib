@@ -3,7 +3,7 @@ title: "hostPortBanner resource type"
 description: "Represents a banner retrieved from scanning a port on a host."
 author: "angelo-moulic"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

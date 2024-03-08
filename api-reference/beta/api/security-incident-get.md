@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an incident."
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -148,6 +148,7 @@ Content-type: application/json
         {
              "kqlText" : "AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == 'Potential Raspberry Robin worm command'  | join AlertEvidence on AlertId   | distinct DeviceId"
         }
-    ]
+    ],
+    "lastModifiedBy": "DavidS@contoso.onmicrosoft.com"
 }
 ```

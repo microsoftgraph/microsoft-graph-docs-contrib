@@ -22,7 +22,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |activeUsers|[activeUsersMetric](../resources/activeusersmetric.md) collection|Insights for active users on apps registered in the tenant for a specified period.|
-|activeUsersBreakdown|[activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) collection| Insights for the breakdown of users who were active on apps registered in the tenant for a specified period.|
+|activeUsersBreakdown (deprecated)|[activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) collection| Insights for the breakdown of users who were active on apps registered in the tenant for a specified period.|
 |authentications|[authenticationsMetric](../resources/authenticationsmetric.md) collection|Insights for authentications on apps registered in the tenant for a specified period.|
 |mfaCompletions|[mfaCompletionMetric](../resources/mfacompletionmetric.md) collection|Insights for MFA usage on apps registered in the tenant for a specified period.|
 |signUps|[userSignUpMetric](../resources/usersignupmetric.md) collection| Total sign-ups on apps registered in the tenant for a specified period.|

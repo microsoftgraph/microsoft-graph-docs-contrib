@@ -3,7 +3,7 @@ title: "alertRecord: getPortalNotifications"
 description: "Get a list of all portal notifications that one or more users can access."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

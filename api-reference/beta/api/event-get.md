@@ -3,7 +3,7 @@ title: "Get event"
 description: "Get the properties and relationships of the specified event object."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -71,7 +71,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
-| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header isn't specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
 Don't supply a request body for this method.
@@ -153,6 +153,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees)/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
     "id":"AAMkAGIAAAoZDOFAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "subject":"Orientation ",
     "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
     "body":{
@@ -293,6 +295,8 @@ Preference-Applied: outlook.body-content-type="text"
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview)/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
     "id":"AAMkAGI1AAAoZDOFAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "subject":"Orientation ",
     "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
     "body":{
@@ -354,6 +358,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=?$select=subj
 ---
 
 #### Response
+
 Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for.
 
 Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header,
@@ -373,6 +378,8 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
+  "iCalUId": "040000008200E00074=",
+  "uid": "040000008200E00074C=",
   "subject":"Plan summer company picnic",
   "bodyPreview":"Let's kick-start this event planning!",
   "body":{
@@ -460,7 +467,6 @@ Content-type: application/json
 
 The following example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -522,6 +528,8 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
+  "iCalUId": "040000008200E00074=",
+  "uid": "040000008200E00074C=",
   "subject": "Daily stand-up",
   "cancelledOccurrences": [
      "OID.AAMkADAGAADDdm4NAAA=.2020-04-30",

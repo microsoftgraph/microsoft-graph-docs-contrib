@@ -2,8 +2,8 @@
 title: "List group calendarView"
 description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,"
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "iamgirishck"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
