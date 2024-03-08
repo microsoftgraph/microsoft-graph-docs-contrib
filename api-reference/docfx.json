@@ -221,9 +221,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "microsoftgraph/microsoft-graph-docs-contrib",
+      "feedback_system": "Standard",
       "feedback_product_url": "https://developer.microsoft.com/graph/support",
+      "feedback_help_link_url": "https://learn.microsoft.com/en-us/answers/tags/161/ms-graph",
+      "feedback_help_link_type": "get-help-at-qna",
+      "feedback_github_repo": "microsoftgraph/microsoft-graph-docs-contrib",
       "author": "MSGraphDocsVteam",
       "ms.author": "MSGraphDocsVteam",
       "ms.suite": "microsoft-graph",
