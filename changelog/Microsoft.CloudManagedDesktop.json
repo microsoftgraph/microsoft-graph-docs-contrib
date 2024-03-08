@@ -4271,6 +4271,32 @@
       {
         "ChangeList": [
             {
+            "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
+            "ApiChange": "Permission",
+            "ChangedApiName": "CloudPC.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the CloudPC.Read.All application permissions to the getFrontlineCloudPcAccessState method.",
+            "Target": "getFrontlineCloudPcAccessState"
+            },
+            {
+            "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
+            "ApiChange": "Permission",
+            "ChangedApiName": "CloudPC.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the CloudPC.ReadWrite.All application permissions to the getFrontlineCloudPcAccessState method.",
+            "Target": "getFrontlineCloudPcAccessState"
+            }
+        ],
+        "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-02-06T10:52:16.0013428Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+            {
                 "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
                 "ApiChange": "Relationship",
                 "ChangedApiName": "onPremisesConnections",
@@ -4357,32 +4383,6 @@
             "CreatedDateTime": "2024-01-09T09:24:41.3424906Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
-        },
-        {
-          "ChangeList": [
-          {
-            "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
-            "ApiChange": "Permission",
-            "ChangedApiName": "CloudPC.Read.All",
-            "ChangeType": "Addition",
-            "Description": "Added support for the CloudPC.Read.All application permissions to the getFrontlineCloudPcAccessState method.",
-            "Target": "getFrontlineCloudPcAccessState"
-          },
-          {
-            "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
-            "ApiChange": "Permission",
-            "ChangedApiName": "CloudPC.ReadWrite.All",
-            "ChangeType": "Addition",
-            "Description": "Added support for the CloudPC.ReadWrite.All application permissions to the getFrontlineCloudPcAccessState method.",
-            "Target": "getFrontlineCloudPcAccessState"
-          }
-        ],
-        "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2024-02-06T10:52:16.0013428Z",
-        "WorkloadArea": "Device and app management",
-        "SubArea": "Cloud PC"
-      }
+        }
     ]
 }
