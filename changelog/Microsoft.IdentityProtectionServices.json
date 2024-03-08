@@ -3,32 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "7dfca7d2-d598-4bcc-bb1e-d6f16e51440d",
-          "ApiChange": "Property",
-          "ChangedApiName": "permissionGrantPolicyIdsAssignedToDefaultUserRole",
-          "ChangeType": "Addition",
-          "Description": "Added more description information about prefixes needed to use this policy with resource-specific consent",
-          "Target": "authorizationPolicy"
-        },
-        {
-          "Id": "7dfca7d2-d598-4bcc-bb1e-d6f16e51440d",
-          "ApiChange": "Property",
-          "ChangedApiName": "resourceScopeType",
-          "ChangeType": "Addition",
-          "Description": "Fixed the list of possible values to resourceScopeType.",
-          "Target": "permissionGrantPolicy"
-        }
-      ],
-      "Id": "7dfca7d2-d598-4bcc-bb1e-d6f16e51440d",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-03-01T23:44:53Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
-    },  
-    {    
-      "ChangeList": [
-        {
           "Id": "20b083d5-0c27-41e5-ad6d-d5a148ca584d",
           "ApiChange": "Enumeration",
           "ChangedApiName": "conditionalAccessTransferMethods",
