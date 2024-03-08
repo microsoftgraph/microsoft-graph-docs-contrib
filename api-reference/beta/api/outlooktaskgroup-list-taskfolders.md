@@ -3,7 +3,7 @@ title: "List taskFolders"
 description: "Get Outlook task folders in a specific outlookTaskGroup."
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

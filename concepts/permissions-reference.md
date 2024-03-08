@@ -2,10 +2,10 @@
 title: "Microsoft Graph permissions reference "
 description: "Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests."
 author: FaithOmbongi
-ms.reviewer: jackson.woods
+ms.author: ombongifaith
 ms.localizationpriority: high
 ms.topic: reference
-ms.prod: applications
+ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 03/01/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.

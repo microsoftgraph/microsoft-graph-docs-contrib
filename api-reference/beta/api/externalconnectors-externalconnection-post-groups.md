@@ -3,7 +3,7 @@ title: "Create externalGroup"
 description: "Create a new externalGroup object."
 author: "snlraju-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
@@ -46,13 +46,13 @@ POST /external/connections/{connectionId}/groups
 
 In the request body, supply a JSON representation of the **externalGroup** object.
 
-You can specify the following properties when creating an **externalGroup**.
+You can specify the following properties when you create an **externalGroup**.
 
-| Property    | Type   | Description                                                                                                              |
-|:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
+| Property    | Type   | Description                                                                                                            |
+|:------------|:-------|:-----------------------------------------------------------------------------------------------------------------------|
+| description | String | The description of the external group. Optional.                                                                       |
+| displayName | String | The friendly name of the external group. Optional.                                                                     |
 | id          | String | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
-| displayName | String | The friendly name of the external group. Optional.                                                                      |
-| description | String | The description of the external group. Optional.                                                                         |
 
 ## Response
 
@@ -62,7 +62,7 @@ If successful, this method returns a `201 Created` response code and an **extern
 
 ### Request
 
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -118,8 +118,8 @@ Content-Type: application/json
 
 <!-- markdownlint-disable MD024 -->
 ### Response
-
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,7 +3,7 @@ title: "Create detectionRule"
 description: "Create a new custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

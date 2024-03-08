@@ -4,7 +4,7 @@ description: "Delete the customized schema and resets the schema to the default 
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Delete synchronizationSchema

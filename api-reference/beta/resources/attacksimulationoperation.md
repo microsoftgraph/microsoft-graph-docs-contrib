@@ -3,7 +3,7 @@ title: "attackSimulationOperation resource type"
 description: "Represents the status of a long-running attack simulation training operation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

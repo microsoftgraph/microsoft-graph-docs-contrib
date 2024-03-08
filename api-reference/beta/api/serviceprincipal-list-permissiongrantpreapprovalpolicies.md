@@ -3,7 +3,7 @@ title: "List permissionGrantPreApprovalPolicies for a servicePrincipal"
 description: "Retrieve the permissionGrantPreApprovalPolicy object from a servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

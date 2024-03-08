@@ -3,7 +3,7 @@ title: "baseTaskList: delta"
 description: "Get a set of baseTaskList resources that have been added, deleted, or removed in Microsoft To Do."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

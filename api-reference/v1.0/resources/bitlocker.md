@@ -3,7 +3,7 @@ title: "bitLocker resource"
 description: "The parent resource for a stored BitLocker key with the navigation property bitlockerRecoveryKey that contains the actual recovery key."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

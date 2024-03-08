@@ -3,7 +3,7 @@ title: "positiveReinforcementNotification resource type"
 description: "Represents positive reinforcement settings for an end user notification during simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create trustedCertificateAuthority"
 description: "Create a new trusted certificate authority in a certificateBasedApplicationConfiguration object."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
