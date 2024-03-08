@@ -24,7 +24,7 @@ Represents a network access traffic log entry. It contains comprehensive informa
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.networkaccess.filteringPolicyAction|The actions for filtering policies, offering "block" and "allow" options to specify whether to block or allow access based on the policy. The possible values are: `block`, `allow`.|
+|action|microsoft.graph.networkaccess.filteringPolicyAction|Indicates what action to take based on filtering policies. The possible values are: `block`, `allow`.|
 |agentVersion|String|Represents the version of the Global Secure Access client agent software. Supports $filter (`eq`) and `$orderby`.|
 |connectionId|String|Represents a unique identifier assigned to a connection. Supports $filter (`eq`) and `$orderby`.|
 |createdDateTime|DateTimeOffset|Represents the date and time when a network access traffic log entry was created. Supports $filter (`eq`) and `$orderby`.|
@@ -55,7 +55,7 @@ Represents a network access traffic log entry. It contains comprehensive informa
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "transactionId",
