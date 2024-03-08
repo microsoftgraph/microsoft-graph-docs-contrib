@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "releaseMechanisms",
           "ChangeType": "Deletion",
-          "Description": "Remove the `releaseMechanisms` property from the printer resource, since it is not supported.",
+          "Description": "Removed the **releaseMechanism** property from the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource",
           "Target": "printer"
         }
       ],
