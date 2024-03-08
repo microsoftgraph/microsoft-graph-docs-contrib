@@ -34,7 +34,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -42,16 +42,19 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |sourceData|string|The Range object corresponding to the source data.|
-|seriesBy|string|Optional. Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, Columns.  Possible values are: `Auto`, `Columns`, `Rows`.|
+|seriesBy|string|Optional. Specifies the way columns or rows are used as data series on the chart, which be one of the following values: `Auto`, `Columns`, `Rows`.|
 
 ## Response
 
 If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
 
 ## Example
-Here's an example of how to call this API.
-##### Request
-Here's an example of the request.
+
+The following example shows how to call this API.
+
+### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,8 +101,9 @@ Content-type: application/json
 
 ---
 
-##### Response
-Here's an example of the response. 
+### Response
+
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

@@ -34,7 +34,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/Ima
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -50,16 +50,19 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code and base-64 image string in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+The following example shows how to call this API.
+### Request
+
+The following example shows a request.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/Image(width=0,height=0,fittingMode='fit')
 ```
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
