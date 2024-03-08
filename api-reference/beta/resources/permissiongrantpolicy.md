@@ -17,6 +17,8 @@ A permission grant policy is used to specify the conditions under which consent 
 
 A permission grant policy consists of a list of **includes** condition sets, and a list of **excludes** condition sets. For an event to match a permission grant policy, it must match *at least one* of the **includes** conditions sets, and *none* of the **excludes** condition sets.
 
+For more information, see [Manage app consent policies](/entra/identity/enterprise-apps/manage-app-consent-policies).
+
 ## Methods
 
 | Method | Return Type | Description |
