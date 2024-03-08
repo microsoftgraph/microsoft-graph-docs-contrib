@@ -18,6 +18,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## March 2024: New and generally available
 
+### Device and app management | Cloud PC
+
+- List, get, create, delete, and get source images operations available on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage).
+- List and get operations available on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage).
+
 ### Reports | Partner billing reports
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.
