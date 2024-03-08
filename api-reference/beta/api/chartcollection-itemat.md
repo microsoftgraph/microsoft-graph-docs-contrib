@@ -42,7 +42,7 @@ The following table shows the parameters that can be used with this function.
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 
@@ -53,9 +53,9 @@ Don't supply a request body for this method.
 If successful, this method returns `200 OK` response code and [workbookChart](../resources/workbookchart.md) object in the response body.
 
 ## Example
-Here's an example of how to call this API.
-##### Request
-Here's an example of the request.
+The following example shows how to call this API.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,8 +96,9 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 
 ---
 
-##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
