@@ -3,7 +3,7 @@ title: "List customSecurityAttributeDefinitions"
 description: "Get a list of the customSecurityAttributeDefinition objects and their properties."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "appManagementConfiguration resource type"
 description: "App management configuration object that contains properties which can be configured to enable various restrictions for applications and service principals."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

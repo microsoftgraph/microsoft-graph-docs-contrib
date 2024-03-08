@@ -3,7 +3,7 @@ title: "Delete trustFrameworkPolicy"
 description: "This operation deletes an existing trustFrameworkPolicy object from an Azure AD B2C tenant."  
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # Delete trustFrameworkPolicy

@@ -2,10 +2,11 @@
 title: "Differences in actions between Azure AD Graph and Microsoft Graph"
 description: "Describes differences in actions between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API (REST)."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 02/14/2024
 #Customer intent: As a developer, I want to to understand how actions differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---

@@ -4,7 +4,7 @@ description: "Defines authentication methods and the users that are allowed to u
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

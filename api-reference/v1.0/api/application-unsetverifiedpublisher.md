@@ -3,7 +3,7 @@ title: "application: unsetVerifiedPublisher"
 description: "Unset the verified publisher of an application."
 ms.localizationpriority: medium
 author: "xurobertMSFT"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

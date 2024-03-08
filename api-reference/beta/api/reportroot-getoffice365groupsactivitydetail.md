@@ -2,7 +2,7 @@
 title: "reportRoot: getOffice365GroupsActivityDetail"
 description: "Get details about Microsoft 365 groups activity by group."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---

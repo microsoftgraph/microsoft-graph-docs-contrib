@@ -3,7 +3,7 @@ title: "Get endUserNotification"
 description: "Read the properties and relationships of an endUserNotification object."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

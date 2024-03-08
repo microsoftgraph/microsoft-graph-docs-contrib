@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a namedlocation objec
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update mobileAppManagementPolicy"
 description: "Update the properties of a mobile app management policy object."
 author: "ravennMSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

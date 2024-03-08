@@ -3,7 +3,7 @@ title: "Get educationAssignmentDefaults"
 description: "Read the properties and relationships of an educationAssignmentDefaults object."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

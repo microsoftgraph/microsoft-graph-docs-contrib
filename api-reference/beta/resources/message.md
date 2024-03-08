@@ -3,7 +3,7 @@ title: "message resource type"
 description: "A message in a mailbox folder."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

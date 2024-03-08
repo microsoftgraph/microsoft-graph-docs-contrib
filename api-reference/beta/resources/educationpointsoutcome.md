@@ -3,7 +3,7 @@ title: "educationPointsOutcome resource type"
 description: "An educationOutcome that gives a numerical grade"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 

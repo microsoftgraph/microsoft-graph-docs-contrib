@@ -4,7 +4,7 @@ description: "Describes the date, time, and time zone of a point in time."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # dateTimeTimeZone resource type

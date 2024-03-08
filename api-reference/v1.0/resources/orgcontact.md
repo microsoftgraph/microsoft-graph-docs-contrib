@@ -3,7 +3,7 @@ title: "orgContact resource type"
 description: "Represents an organizational contact"
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Assign homeRealmDiscoveryPolicy"
 description: "Assign a homeRealmDiscoveryPolicy to a servicePrincipal."
 ms.localizationpriority: medium
 author: "nickludwig"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
