@@ -2016,7 +2016,7 @@ items:
                         href: api/devicemanagement-alertrecord-getportalnotifications.md
                       - name: Set portal notification as sent
                         href: api/devicemanagement-alertrecord-setportalnotificationassent.md
-                      - name: Set a list of portal notification as sent
+                      - name: Set list of portal notifications as sent
                         href: api/devicemanagement-alertrecord-changealertrecordsportalnotificationassent.md
                   - name: Alert rule
                     href: resources/devicemanagement-alertrule.md
