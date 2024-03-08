@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 09/28/2023
 #customer intent: As a developer building apps that call Microsoft Entra ID APIs on Microsoft Graph, I want to understand the advanced query capabilities, so that my app can efficiently access and retrieve specific data, and avoid errors.

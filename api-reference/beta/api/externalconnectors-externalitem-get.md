@@ -3,7 +3,7 @@ title: "Get externalItem"
 description: "Get an externalItem."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 

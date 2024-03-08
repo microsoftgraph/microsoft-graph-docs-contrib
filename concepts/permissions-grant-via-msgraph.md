@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: psignoret, jackson.woods
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 zone_pivot_groups: grant-api-permissions
 ms.custom: template-how-to
 ms.date: 07/25/2023

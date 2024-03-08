@@ -3,7 +3,7 @@ title: "servicePrincipalLockConfiguration resource type"
 description: "Specifies the sensitive properties of the app that are locked for editing on the service principal. You can disable this configuration to allow the properties to be updated."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "madansr7"
 ---
 

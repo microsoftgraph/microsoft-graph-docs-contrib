@@ -4,7 +4,7 @@ description: "Defines the schedule used to run a synchronizationJob."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationSchedule resource type

@@ -3,7 +3,7 @@ title: "Add a scopedRoleMember"
 description: "Assign a Microsoft Entra role with administrative unit scope."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "preAuthorizedApplication resource type"
 description: "Lists the preauthorized client applications"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 

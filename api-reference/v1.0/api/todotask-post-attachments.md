@@ -3,7 +3,7 @@ title: "Create taskFileAttachment"
 description: "Add a new taskFileAttachment object to a todoTask."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

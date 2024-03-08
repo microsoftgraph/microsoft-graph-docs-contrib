@@ -3,7 +3,7 @@ title: "Get adminDynamics"
 description: "Read the properties and relationships of a Microsoft Graph adminDynamics object."
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
