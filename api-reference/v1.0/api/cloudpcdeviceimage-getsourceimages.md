@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects that can be uploaded and used on Cloud PCs. View a list of all the managed image resources from your Microsoft Entra subscriptions.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 ## HTTP request
 
 <!-- {
@@ -38,7 +36,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects in the response body.
 
 ## Examples
 
@@ -46,7 +44,6 @@ If successful, this function returns a `200 OK` response code and a [cloudPcSour
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcdeviceimage_getsourceimages"
@@ -56,7 +53,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/deviceImages/getSourceImages
 ```
----
 
 ### Response
 
