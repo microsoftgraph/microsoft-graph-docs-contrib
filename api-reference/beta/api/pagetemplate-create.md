@@ -213,7 +213,7 @@ Content-type: application/json
 }
 ```
 
-**Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
+**Note:** The response object is truncated for clarity. Default properties are returned from the actual call.
 
 [list]: ../resources/list.md
 [listitem]: ../resources/listitem.md

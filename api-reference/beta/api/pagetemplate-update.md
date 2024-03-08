@@ -57,7 +57,7 @@ These fields and be used in update requests.
 | thumbnailWebUrl                | String                                       | Url of the page template's thumbnail image. Optional.                                                                                                                                                                                  |
 | title                | String                                       | Title of the page template. Optional.                                                                                                                                                                                  |
 | titleArea            | [titleArea](../resources/titlearea.md)       | Title area on the page template. Optional.                                                                                                                                                                       |
-| canvasLayout         | [canvasLayout](../resources/canvaslayout.md) | The layout of the content in a page template, including horizontal sections and vertical section. A content of the entire page layout needs to be provided, the update function does not support partial updates. Optional. |
+| canvasLayout         | [canvasLayout](../resources/canvaslayout.md) | The layout of the content in a page template, including horizontal sections and vertical section. The content of the entire page layout must be provided, because the update function doesn't support partial updates. Optional. |
 
 ## Response
 
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [page
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -88,7 +88,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

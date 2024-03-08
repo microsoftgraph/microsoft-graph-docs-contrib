@@ -48,11 +48,11 @@ You can use the `$expand=canvasLayout` query string parameter to include the con
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required.|
 | Content-Type  | application/json. Required. |
-| Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. We recommend including this header when the response will be used in another request. |
+| Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. We recommend including this header when the response is used in another request. |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
