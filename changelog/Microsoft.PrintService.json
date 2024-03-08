@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printReleaseMechanism",
           "ChangeType": "Deletion",
-          "Description": "Remove the printReleaseMechanism resource type, since it is not supported.",
+          "Description": "Removed the [printReleaseMechanism](https://learn.microsoft.com/en-us/graph/api/resources/printReleaseMechanism?view=graph-rest-beta) resource type.",
           "Target": "printReleaseMechanism"
         },
         {
