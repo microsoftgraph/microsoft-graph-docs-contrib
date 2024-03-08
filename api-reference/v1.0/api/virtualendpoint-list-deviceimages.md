@@ -1,6 +1,6 @@
 ---
 title: "List deviceImages"
-description: "List the properties and relationships of the cloudPcDeviceImage objects (operating system images) uploaded to Cloud PC."
+description: "List the properties and relationships of cloudPcDeviceImage objects (operating system images) uploaded to Cloud PC."
 author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List the properties and relationships of the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (operating system images) uploaded to Cloud PC.
+List the properties and relationships of [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (operating system images) uploaded to Cloud PC.
 
 ## HTTP request
 
