@@ -10197,12 +10197,19 @@ items:
                       - name: Known issue
                         href: resources/windowsupdates-knownissue.md
                         items:
-                          - name: Known issue history item 
+                          - name: Known Issue history item 
                             href: resources/windowsupdates-knownissuehistoryitem.md
+                          - name: Get known Issues by time range
+                            href: resources/windowsupdates-getKnownIssuesByTimeRange.md  
                       - name: Edition
                         href: resources/windowsupdates-edition.md
                       - name: Servicing period
                         href: resources/windowsupdates-servicingperiod.md
+                      - name: Find Product revisions by Catalog ID
+                        href: resources/windowsupdates-findByCatalogId.md
+                      - name: Find Product revisions by KB number
+                        href: resources/windowsupdates-findByCatalogId.md
+                        
               - name: Compliance change
                 href: resources/windowsupdates-compliancechange.md
                 items:
