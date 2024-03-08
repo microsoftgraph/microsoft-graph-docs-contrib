@@ -11,9 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List the properties and relationships of the [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+List the properties and relationships of [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.
 
 ## HTTP request
 
@@ -50,7 +48,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_cloudpcgalleryimage"
@@ -59,7 +56,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/galleryImages
 ```
----
 
 ### Response
 
