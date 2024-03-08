@@ -192,7 +192,6 @@ This resource supports:
 | cloudRealtimeCommunicationInfo | [cloudRealtimeCommunicationInfo](cloudrealtimecommunicationinfo.md) | Microsoft realtime communication information related to the user. <br> Supports `$filter` (`eq`, `ne`,`not`).|
 | companyName | String | The name of the company the user is associated with. This property can be useful for describing the company that an external user comes from. The maximum length is 64 characters.<br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Sets whether consent has been obtained for minors. Allowed values: `null`, `Granted`, `Denied` and `NotRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Supports `$filter` (`eq`, `ne`, `not`, and `in`).|
-| convertedToInternalUserDateTime | DateTime | Indicates when a user was converted from an external user to an internal <!--(member) --> user. Read-only. |
 | country | String | The country or region where the user is located; for example, `US` or `UK`. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
 | createdDateTime | DateTimeOffset | The date and time the user was created in ISO 8601 format and UTC. The value cannot be modified and is automatically populated when the entity is created. Nullable. For on-premises users, the value represents when they were first created in Microsoft Entra ID. Property is `null` for some users created before June 2018 and on-premises users synced to Microsoft Entra ID before June 2018. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`). |
 | creationType | String | Indicates whether the user account was created through one of the following methods: <br/> <ul><li>As a regular school or work account (`null`). <li>As an external account (`Invitation`). <li>As a local account for an Azure Active Directory B2C tenant (`LocalAccount`). <li>Through self-service sign-up by an internal user using email verification (`EmailVerified`). <li>Through self-service sign-up by an external user signing up through a link that is part of a user flow (`SelfServiceSignUp`). </ul> <br>Read-only.<br>Supports `$filter` (`eq`, `ne`, `not`, and `in`). |
@@ -436,7 +435,6 @@ The following is a JSON representation of the resource.
   },
   "companyName": "String",
   "consentProvidedForMinor": "String",
-  "convertedToInternalUserDateTime": "String (timestamp)",
   "country": "String",
   "createdDateTime": "2019-02-07T21:53:13.067Z",
   "creationType": "String",
