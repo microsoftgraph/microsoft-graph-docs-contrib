@@ -3,7 +3,7 @@ title: "Create CalendarGroup"
 description: "Use this API to create a new CalendarGroup."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

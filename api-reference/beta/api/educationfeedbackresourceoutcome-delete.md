@@ -3,7 +3,7 @@ title: "Delete educationFeedbackResourceOutcome"
 description: "Delete a feedback resource from a submission."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

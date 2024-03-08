@@ -4,7 +4,7 @@ description: "List all externalUserProfile objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 ---
 
 # List externalUserProfiles
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of all [externalUserProfiles](../resources/externaluserprofile.md)
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

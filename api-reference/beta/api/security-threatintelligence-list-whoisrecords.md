@@ -3,7 +3,7 @@ title: "List whoisRecords"
 description: "Get a list of whoisRecord objects."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

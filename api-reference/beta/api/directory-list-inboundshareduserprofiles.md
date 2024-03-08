@@ -3,7 +3,7 @@ title: "List inboundSharedUserProfiles"
 description: "Retrieve the properties of an inboundSharedUserProfiles."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

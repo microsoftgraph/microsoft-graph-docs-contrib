@@ -153,6 +153,32 @@
     {
       "ChangeList": [
         {
+          "Id": "162a31c1-d0f9-4eef-a6a0-932212a49b03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bulkUpload",
+          "ChangeType": "Addition",
+          "Description": "Added the [bulkUpload](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-bulkUpload?view=graph-rest-1.0) resource and its associated method.",
+          "Target": "bulkUpload"
+        },
+        {
+          "Id": "162a31c1-d0f9-4eef-a6a0-932212a49b03",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "bulkUpload",
+          "ChangeType": "Addition",
+          "Description": "Added the **bulkUpload** relationship to the [synchronizationJob](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationJob?view=graph-rest-1.0) resource.",
+          "Target": "synchronizationJob"
+        }
+      ],
+      "Id": "162a31c1-d0f9-4eef-a6a0-932212a49b03",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-06T16:55:54.1915168Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
           "ApiChange": "Enumeration",
           "ChangedApiName": "attributeDefinitionMetadata",

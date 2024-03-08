@@ -3,7 +3,7 @@ title: "Update baseTask"
 description: "Update the properties of a baseTask object."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

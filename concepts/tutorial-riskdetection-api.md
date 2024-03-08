@@ -1,11 +1,11 @@
 ---
 title: "Identify and remediate risk using Microsoft Graph"
 description: "Learn how to generate a risky sign-in and remediate the risk status of the user with a conditional access policy that requires multi-factor authentication (MFA)."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Etan.Basseri
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ms.date: 11/01/2022
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use Microsoft Entra ID Protection to identify and remediate identity-based risks, so that I can ensure the security of user accounts and protect against unauthorized access.
 ---

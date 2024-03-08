@@ -2,20 +2,20 @@
 title: "Microsoft 365 group behaviors and provisioning options"
 description: "Configure behaviors and resources to provision when creating a Microsoft 365 group using the Microsoft Graph groups API."
 author: FaithOmbongi
-ms.reviewer: jodah
+ms.author: ombongifaith
+ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.topic: conceptual
+ms.subservice: entra-groups
 ms.localizationpriority: high
-ms.date: 02/14/2024
-#Customer intent: As a developer, I want to learn how to use Microsoft Graph to set specific group behaviors and provision specific resources, so that I can tailor the group's functionality and capabilities to meet the needs of my organization.
+ms.date: 03/07/2024
+#Customer intent: As a developer, I want to learn what group behaviors and resources can be provisioned or configured for Microsoft 365 groups.
 ---
 
 # Microsoft 365 group behaviors and provisioning options
 
-On the [group](/graph/api/resources/group) resource in Microsoft Graph, you can set specific group behaviors and resources to provision when creating a Microsoft 365 group. Depending on the resource, some can also be provisioned when updating a group.
+On the [group](/graph/api/resources/group) resource in Microsoft Graph, you can use the **resourceBehaviorOptions** property to set specific group behaviors when creating a Microsoft 365 group. The **resourceProvisioningOptions** property on the other hand indicates the specific resources provisioned for the group.
 
-The **group** resource exposes two properties, **resourceBehaviorOptions** and **resourceProvisioningOptions**, to customize the behaviors and resources to be provisioned upon group creation.
-
-## Configure group behavior options
+## Resource behavior options
 
 **resourceBehaviorOptions** is a string collection that specifies group behaviors for a Microsoft 365 group. These behaviors can be set only on [group creation](/graph/api/group-post-groups).
 
@@ -29,13 +29,16 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 | `SubscribeNewGroupMembers`                   | Group members are subscribed to receive group conversations.                                                                                    |
 | `WelcomeEmailDisabled`                       | Welcome emails aren't sent to new members.                                                                                                      |
 
-## Provision resources for a group
+## Resource provisioning options
 
-**resourceProvisioningOptions** is a string collection that specifies group resources to be provisioned as part of the Microsoft 365 group. These resources can be specified during group creation or update.
+**resourceProvisioningOptions** is a string collection that specifies the resources that are associated with the Microsoft 365 group. 
+
+> [!CAUTION]
+> We recommend that you avoid configuring the **resourceProvisioningOptions** property during group creation or update and instead, let the system manage the property.
 
 | Supported values for resourceProvisioningOptions | Description |
 |:-|:-|
-| `Team` | Provision a team for this group in Microsoft Teams. Additionally, this value can also be added on [group update](/graph/api/group-update) through a `PATCH` operation, in order to provision a team from an existing Microsoft 365 group. If not set, the Microsoft 365 group isn't associated with a team. |
+| `Team` | If set, the Microsoft 365 group is associated with a Teams team. |
 
 ## Related content
 

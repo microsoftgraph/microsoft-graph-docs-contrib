@@ -3,7 +3,7 @@ title: "trustFrameworkKeySet: uploadPkcs12"
 description: "Upload a PKCS 12 format key (PFX) to a keyset."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "List permissionGrantPreApprovalPolicies"
 description: "Get the permissionGrantPreApprovalPolicy objects in the tenant."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

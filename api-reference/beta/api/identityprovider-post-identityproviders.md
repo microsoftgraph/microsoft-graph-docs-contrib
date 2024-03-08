@@ -4,7 +4,7 @@ description: "Create a new identityProvider object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Create identityProvider (deprecated)

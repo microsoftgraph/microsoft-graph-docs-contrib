@@ -3,7 +3,7 @@ title: "List contacts"
 description: "Get a contact collection from the default contacts folder of the signed-in user."
 author: "kevinbellinger"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
