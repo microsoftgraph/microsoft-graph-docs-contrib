@@ -31,7 +31,7 @@ GET /teams/{team-id}/tags/{teamworkTag-id}/members
 ```
 
 ## Optional query parameters
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
+This method supports the `$filter` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
