@@ -4,7 +4,7 @@ description: "Learn how to manage the lifecycle and settings for Microsoft Entra
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: sureshja
-ms.topic: conceptual
+ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: entra-applications
 doc_type: conceptualPageType

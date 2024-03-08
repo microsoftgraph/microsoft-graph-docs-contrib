@@ -4,7 +4,7 @@ description: "Describes differences in actions between Azure Active Directory (A
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
-ms.topic: conceptual
+ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: entra-applications
 ms.date: 02/14/2024
