@@ -1,5 +1,5 @@
 ---
-title: "alertRecord: changealertrecordsportalnotificationassent"
+title: "alertRecord: changeAlertRecordsPortalNotificationAsSent"
 description: "Change the isPortalNotificationSent property to true for a list of alert records for the current user."
 author: "abbyzhccc"
 ms.localizationpriority: medium
