@@ -3,7 +3,7 @@ title: "filePlanReferenceTemplate resource type"
 description: "Specifies a unique alpha-numeric identifier for an organization’s retention schedule."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

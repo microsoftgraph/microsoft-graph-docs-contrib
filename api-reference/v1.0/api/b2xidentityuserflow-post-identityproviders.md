@@ -4,7 +4,7 @@ description: "Add an identity provider to a B2X user flow."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Add identityProvider

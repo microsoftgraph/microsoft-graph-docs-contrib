@@ -3,7 +3,7 @@ title: "Planner: delta"
 description: "Retrieves changes to objects that the user is subscribed to."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

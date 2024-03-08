@@ -3,7 +3,7 @@ title: "attachmentBase resource type"
 description: "Represents an abstract base type for an attachment."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

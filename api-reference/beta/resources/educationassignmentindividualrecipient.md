@@ -3,7 +3,7 @@ title: "educationAssignmentIndividualRecipient resource type"
 description: "Used inside the assignment.assignTo property. When set to individual recipient list, selected students in the class will "
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get customSecurityAttributeDefinition"
 description: "Read the properties and relationships of a customSecurityAttributeDefinition object."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

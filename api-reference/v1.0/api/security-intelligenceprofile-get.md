@@ -3,7 +3,7 @@ title: "Get intelligenceProfile"
 description: "Read the properties and relationships of an intelligenceProfile object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

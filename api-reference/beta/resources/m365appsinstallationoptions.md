@@ -3,7 +3,7 @@ title: "m365AppsInstallationOptions resource type"
 description: "Represents the tenant-level installation options for Microsoft 365 apps."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "yan-git"
 ---
 

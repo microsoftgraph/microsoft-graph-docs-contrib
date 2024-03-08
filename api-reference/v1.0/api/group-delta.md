@@ -4,7 +4,7 @@ description: "Get newly created, updated, or deleted groups, including group mem
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "x509CertificateIssuerHintsConfiguration resource type"
 description: "Determines the subject names of all the trust certificate authorities in the trust store to be sent back as hints to the client side to filter the certificates shown in certificate picker."
 author: "vimrang"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

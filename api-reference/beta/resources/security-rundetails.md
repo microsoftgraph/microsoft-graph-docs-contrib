@@ -3,7 +3,7 @@ title: "runDetails resource type"
 description: "Represents an instance of a custom detection rule run."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

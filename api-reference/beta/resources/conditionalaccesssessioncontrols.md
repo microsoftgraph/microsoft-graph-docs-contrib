@@ -4,7 +4,7 @@ description: "Represents a complex type of session controls that is enforced aft
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
