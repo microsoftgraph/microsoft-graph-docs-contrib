@@ -33,7 +33,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 | Name       | Description|
 |:-----------|:-----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that didn't change.
@@ -48,8 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, th
-is method returns a `200 OK` response code and updated [workbookChart](../resources/workbookchart.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookChart](../resources/workbookchart.md) object in the response body.
 
 ## Example
 
