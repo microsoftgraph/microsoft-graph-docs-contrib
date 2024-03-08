@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Stage the deletion of an [openShift](../resources/openshift.md), [shift](../resources/shift.md), or [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.
 
-Draft changes are only visible to managers. Team members are not sent notification for draft changes. The deletion is finalized when the schedule is [shared](../api/schedule-share.md).
+Draft changes are only visible to managers. Team members aren't sent notification for draft changes. The deletion is finalized when the schedule is [shared](../api/schedule-share.md).
 
 ## Permissions
 
