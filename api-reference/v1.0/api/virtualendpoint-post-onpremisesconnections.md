@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Create cloudPcOnPremisesConnection
+## Create cloudPcOnPremisesConnection
 
 Namespace: microsoft.graph
 
