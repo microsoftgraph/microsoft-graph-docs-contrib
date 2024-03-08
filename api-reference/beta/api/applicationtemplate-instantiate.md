@@ -1,6 +1,6 @@
 ---
 title: "applicationTemplate: instantiate"
-description: "Use this API to create a new applicationTemplate"
+description: "Add an instance of an application from the Microsoft Entra application gallery into your directory."
 ms.localizationpriority: medium
 author: "luleonpla"
 ms.subservice: "entra-applications"
