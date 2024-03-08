@@ -1,6 +1,6 @@
 ---
 title: "List deviceImages"
-description: "List the properties and relationships of OS images uploaded to Cloud PC."
+description: "List the properties and relationships of the cloudPcDeviceImage objects (operating system images) uploaded to Cloud PC."
 author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -11,9 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List the properties and relationships of the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (OS images) uploaded to Cloud PC.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+List the properties and relationships of the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (operating system images) uploaded to Cloud PC.
 
 ## HTTP request
 
@@ -50,7 +48,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_cloudpcdeviceimages"
@@ -60,7 +57,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/deviceImages
 ```
----
 
 ### Response
 
