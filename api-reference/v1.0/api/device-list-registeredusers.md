@@ -3,7 +3,7 @@ title: "List registeredUsers"
 description: "Retrieve a list of users that are registered users of the device."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

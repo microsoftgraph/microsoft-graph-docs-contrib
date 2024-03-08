@@ -3,7 +3,7 @@ title: "outlookUser: supportedLanguages"
 description: "Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

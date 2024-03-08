@@ -3,7 +3,7 @@ title: "riskyServicePrincipal: dismiss"
 description: "Dismiss the risk of one or more riskyServicePrincipal objects."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

@@ -4,7 +4,7 @@ description: "Read the properties and relationships of an attachment, attached t
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Get attachment

@@ -3,7 +3,7 @@ title: "Update plannerProgressTaskBoardTaskFormat"
 description: "Update the properties of **plannerProgressTaskBoardTaskFormat** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

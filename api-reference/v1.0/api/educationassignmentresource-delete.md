@@ -3,7 +3,7 @@ title: "Delete educationAssignmentResource"
 description: "Delete a specific resource attached to an assignment."
 author: "sharad-sharma-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

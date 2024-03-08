@@ -3,7 +3,7 @@ title: "pkcs12Certificate resource type"
 description: "Represents configuration for uploading a pkcs12Certificate in an API call."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

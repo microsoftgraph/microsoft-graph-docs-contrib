@@ -11,7 +11,7 @@ Microsoft Graph provides a unified programmability model that you can use to acc
 
 For more detailed API-level updates, see the [Microsoft Graph API changelog](https://developer.microsoft.com/graph/changelog/).
 
-For details about previous updates to Microsoft Graph, see [Microsoft Graph what's new history](whats-new-earlier.md). 
+For details about previous updates to Microsoft Graph, see [Microsoft Graph what's new history](whats-new-earlier.md).
 
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Do not use preview features in production apps.
@@ -32,6 +32,10 @@ Added the ability to list and get [Windows settings](/graph/api/resources/window
 
 Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/federatedtokenvalidationpolicy?view=graph-rest-beta&preserve-view=true) and its associated methods to manage whether Microsoft Entra ID validates federation authentication tokens.
 
+### Security | Email and collaboration protection
+
+Added the ability to list emails analyzed by Microsoft Defender for Office 365, get email related metadata, and perform response actions (soft delete, hard delete, move to junk, move to Inbox). 
+
 ## February 2024: New and generally available
 
 ### Microsoft Graph Toolkit
@@ -45,6 +49,7 @@ Microsoft Graph Toolkit v4 is now available. For details about changes in the la
   - Use *OrganizationalBranding.ReadWrite.All* permission for read and write operations instead of the *Organization.ReadWrite.All* permission.
 
 ## February 2024: New in preview only
+
 
 ### Calendars
 

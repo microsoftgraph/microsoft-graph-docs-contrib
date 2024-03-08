@@ -3,7 +3,7 @@ title: "directoryObject: getMemberGroups"
 description: "Return all the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of. This function is transitive."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

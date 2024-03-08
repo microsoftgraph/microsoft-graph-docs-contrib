@@ -3,7 +3,7 @@ title: "Create securityAction"
 description: "Create a new securityAction object."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

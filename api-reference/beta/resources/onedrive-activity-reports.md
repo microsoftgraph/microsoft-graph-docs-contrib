@@ -2,7 +2,7 @@
 title: "OneDrive activity reports"
 description: "You can get the activity of every user licensed to use OneDrive by looking at their interaction with files on OneDrive. It also helps you to understand the level of collaboration going on by showing the number of files shared."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
 ---

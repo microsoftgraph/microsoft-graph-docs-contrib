@@ -3,7 +3,7 @@ title: "Create registeredOwner"
 description: "Add a user as a registered owner of the device."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
