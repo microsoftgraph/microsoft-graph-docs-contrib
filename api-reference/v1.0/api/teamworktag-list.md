@@ -3,7 +3,7 @@ title: "List teamworkTags"
 description: "Get a list of the teamworkTag objects and their properties."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
