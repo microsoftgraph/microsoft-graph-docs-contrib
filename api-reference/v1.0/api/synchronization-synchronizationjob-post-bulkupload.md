@@ -49,6 +49,8 @@ In the request body, supply a [bulkUpload](../resources/synchronization-bulkuplo
 
 ## Response
 
+If successful, returns a `202 Accepted` response and nothing in the response body. It also returns a **Location** header for checking the status of the bulk request provisioning.
+
 | HTTP Status Code | Explanation |
 |:---|:---|
 | 202 (Accepted) | The bulk request is staged for execution and will be processed by the associated provisioning job. The `Location` key in the response header points to the [provisioning logs endpoint](../api/provisioningobjectsummary-list.md) that can be used to check the status of the bulk request provisioning. |
@@ -220,20 +222,18 @@ Content-Type: application/scim+json
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bulkUpload"
+  "truncated": true
 }
 -->
 ```http
 HTTP/1.1 202 Accepted
-Content-Type: application/json
+Content-Type: application/scim+json
+client-request-id: 92cd10f6-fcc3-5d61-098e-a6dd35e460ef
+content-length: "0"
+location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
-{
-    "client-request-id": "92cd10f6-fcc3-5d61-098e-a6dd35e460ef",
-    "content-length": "0",
-    "location": "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'",
-    "request-id": "beeb9ea0-f7e4-4fe7-8507-cd834c88f18b"
-}
+{}
 ```
 
 ### Example 2: Bulk upload using SCIM custom schema namespace
@@ -404,20 +404,18 @@ Content-Type: application/scim+json
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bulkUpload"
+  "truncated": true
 }
 -->
 ```http
 HTTP/1.1 202 Accepted
-Content-Type: application/json
+Content-Type: application/scim+json
+client-request-id: 92cd10f6-fcc3-5d61-098e-a6dd35e460ef
+content-length: "0"
+location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
-{
-    "client-request-id": "92cd10f6-fcc3-5d61-098e-a6dd35e460ef",
-    "content-length": "0",
-    "location": "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'",
-    "request-id": "beeb9ea0-f7e4-4fe7-8507-cd834c88f18b"
-}
+{}
 ```
 
 ### Example 3: Bulk upload for updating an existing user
@@ -464,20 +462,18 @@ Content-Type: application/scim+json
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bulkUpload"
+  "truncated": true
 }
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Content-Type: application/json
+Content-Type: application/scim+json
+client-request-id: 92cd20f6-fcc3-5d61-098e-a6dd35e460ef
+content-length: "0"
+location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+request-id: beec9ea0-f7e4-4fe7-8507-cd834c88f18b
 
-{
-    "client-request-id": "92cd20f6-fcc3-5d61-098e-a6dd35e460ef",
-    "content-length": "0",
-    "location": "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'",
-    "request-id": "beec9ea0-f7e4-4fe7-8507-cd834c88f18b"
-}
+{}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
