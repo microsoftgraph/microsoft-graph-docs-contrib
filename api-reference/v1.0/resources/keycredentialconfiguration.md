@@ -3,7 +3,7 @@ title: "keyCredentialConfiguration resource type"
 description: "Key credential configuration complex type to configure key credential restriction, maxLifetime, and enforcement date"
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

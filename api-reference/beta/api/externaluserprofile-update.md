@@ -3,7 +3,7 @@ title: "Update externalUserProfile"
 description: "Update the properties of a externalUserProfile object."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of a [externalUserProfile](../resources/externaluserprofile.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

@@ -3,7 +3,7 @@ title: "List applications"
 description: "Get the list of applications in this organization."
 author: "sureshja"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

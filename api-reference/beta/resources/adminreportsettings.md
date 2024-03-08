@@ -3,7 +3,7 @@ title: "adminReportSettings resource type"
 description: "Represents the tenant-level settings for Microsoft 365 reports."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "qiwhuang"
 ---
 

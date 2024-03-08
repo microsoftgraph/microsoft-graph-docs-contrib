@@ -4,7 +4,7 @@ description: "List all identity providers in a b2cIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List a userflowidentityproviders

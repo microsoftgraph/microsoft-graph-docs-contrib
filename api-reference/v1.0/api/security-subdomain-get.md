@@ -3,7 +3,7 @@ title: "Get subdomain"
 description: "Read the properties and relationships of a Microsoft Graph security subdomain object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

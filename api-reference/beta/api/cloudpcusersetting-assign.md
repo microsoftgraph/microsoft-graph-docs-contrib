@@ -3,7 +3,7 @@ title: "cloudPcUserSetting: assign"
 description: "Assign a Cloud PC user setting to user groups."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

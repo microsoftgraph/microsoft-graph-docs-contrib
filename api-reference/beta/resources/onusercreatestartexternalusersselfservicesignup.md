@@ -3,7 +3,7 @@ title: "onUserCreateStartExternalUsersSelfServiceSignUp resource type"
 description: "Managed handler for user creation step in an external identities self-service sign-up user flow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "On-premises publishing profiles"
 description: "Various Azure services (for example, Microsoft Entra Connect Passthrough Authentication, Workday to Microsoft Entra users provisioning) allow a conditional access to various on-premises resources from outside the corporate network."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ms.date: 01/20/2022
 ---

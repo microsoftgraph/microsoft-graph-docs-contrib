@@ -3,7 +3,7 @@ title: "Get simulationReportOverview"
 description: "Get an overview of an attack simulation and training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

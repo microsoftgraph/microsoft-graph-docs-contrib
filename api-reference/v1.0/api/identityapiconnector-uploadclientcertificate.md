@@ -3,7 +3,7 @@ title: "identityApiConnector: uploadClientCertificate"
 description: "Upload a PKCS 12 format key (PFX) to an API connectors authentication configuration."
 ms.localizationpriority: medium
 author: "nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

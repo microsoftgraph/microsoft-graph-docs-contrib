@@ -3,7 +3,7 @@ title: "sensitivityLabel: evaluateRemoval"
 description: "Evaluate which label to remove and how to remove it based on an existing content information."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

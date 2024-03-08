@@ -153,7 +153,15 @@ HTTP/1.1 200 OK
             "clientPublicIpV4Address": "99.76.33.16",
             "clientPublicIpV6Address": "1234:fd2:5621:1:89::4500",
             "clientLocalIpV4Address": "192.168.1.165",
-            "clientLocalIpV6Address": "2600:1700:1dca:8110::40"
+            "clientLocalIpV6Address": "2600:1700:1dca:8110::40",
+            "administrativeUnitInfos": [
+               {
+                  "id": "639b616c-f164-4a6f-a933-24936b8eb210"
+               },
+               {
+                  "id": "cc6ea167-4e92-4c2d-9391-85791e978006"
+               }
+            ]
         }
     ]
 }
