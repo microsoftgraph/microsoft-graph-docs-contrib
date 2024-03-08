@@ -1,6 +1,6 @@
 ---
 title: "call: recordResponse"
-description: "Record a short audio response from the caller. This is useful if the bot wants to capture a voice response from the caller following a prompt."
+description: "Record a short audio response from the caller. It is useful if the bot wants to capture a voice response from the caller following a prompt."
 author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 Record a short audio response from the caller.
 
-A bot can use this to capture a voice response from a caller after they are prompted for a response.
+A bot can use it to capture a voice response from a caller after they're prompted for a response.
 
-For more information about how to handle operations, see [commsOperation](../resources/commsOperation.md)
+For more information about how to handle operations, see [commsOperation](../resources/commsOperation.md).
 
 >**Note:** This API is only supported for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
-This action isn't intended to record the entire call. The maximum length of recording is 2 minutes. The recording isn't saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
+This action isn't intended to record the entire call. The maximum length of recording is 2 minutes.The Cloud Communications Platform doesn't save the recording permanently and discards it shortly after the call ends. The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 
->**Note:** You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
+>**Note:** You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. For more information, see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -54,14 +54,14 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |prompts|[MediaPrompt](../resources/mediaprompt.md) collection | The prompts to be played. The maximum supported mediaPrompt collection size is 1.|
 |bargeInAllowed|Boolean| If true, the recordResponse request will barge into other existing queued-up/currently-processing record/playprompt requests. Default = false. |
-|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence (user silence) allowed from the time we start the record response operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. Default = 5 seconds, Min = 1 second, Max = 120 seconds |
-|maxSilenceTimeoutInSeconds|Int32| Maximum silence (pause) time allowed after a user has started speaking. Default = 5 seconds, Min = 1 second, Max = 120 seconds.|
+|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence (user silence) allowed from the time we start the record response operation before we timeout and fail the operation. If you're playing a prompt, then this timer starts after prompt finishes. Default = 5 seconds, Min = 1 second, Max = 120 seconds |
+|maxSilenceTimeoutInSeconds|Int32| Maximum silence (pause) time allowed after a user started speaking. Default = 5 seconds, Min = 1 second, Max = 120 seconds.|
 |maxRecordDurationInSeconds|Int32| Max duration for the recordResponse operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 120 seconds.|
 |playBeep|Boolean| If true, plays a beep to indicate to the user that they can start recording their message. Default = true.|
 |stopTones|String collection|Stop tones specified to end recording.|
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
-> **Note:** The maximum recording time has been reduced from 5 minutes to 2 minutes.
+> **Note:** The maximum recording time reduced from 5 minutes to 2 minutes.
 
 ## Response
 This method returns a `200 OK` HTTP response code and a Location header with a URI to the [recordOperation](../resources/recordoperation.md) created for this request.

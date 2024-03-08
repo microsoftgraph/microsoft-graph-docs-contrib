@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Allows the application to mute itself.
 
-This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+It is a server mute, meaning that the server drops all audio packets for this participant, even if the participant continues to stream audio.
 
-For more details about how to handle mute operations, see [muteParticipantOperation](../resources/muteparticipantoperation.md)
+For more information, see [muteParticipantOperation](../resources/muteparticipantoperation.md)
 
 > **Note:** This method is only supported for group calls.
 
@@ -58,10 +58,12 @@ If successful, this method returns a `200 OK` response code and a [muteParticipa
 > **Note:** After this operation returns a successful response, all participants will receive a roster update
 
 ## Example
+
 The following example shows how to call this API.
 
-##### Request
-The following example shows the request.
+### Request
+
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -112,8 +114,9 @@ Content-Type: application/json
 
 ---
 
-##### Response
+### Response
 
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability. 
  
 <!-- { 

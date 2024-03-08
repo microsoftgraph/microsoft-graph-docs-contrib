@@ -47,12 +47,13 @@ In the request body, provide a JSON object with the following parameters.
 |role|String|Possible values are: 'viewer', 'sharer'|
 
 ## Response
-If successful, this method returns a `202 Accepted` response code, and all participants will receive a roster update.
+If successful, this method returns a `202 Accepted` response code, and all participants receive a roster update.
 
 ## Example
 
-##### Request
-The following example shows the request.
+### Request
+
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -104,8 +105,9 @@ Content-Length: 24
 
 ---
 
-##### Response
-Here is an example of the response. 
+### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet. The terms "redirecting" and "forwarding" a call are used interchangeably.
+Redirect an incoming call that wasn't [answered](./call-answer.md) or [rejected](./call-reject.md) yet. The terms "redirecting" and "forwarding" a call are used interchangeably.
 
 The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.
 
@@ -48,20 +48,20 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If more than one target is specified, it's a simulring call. This means that all of the targets are called at the same time and only the first target that picks up will be connected. We support up to 25 targets for simulring.
-|targetDisposition|String|(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`. This parameter is deprecated, we'll automatically identify whether it's a forward call or simulring call from the number of targets provided.|
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If more than 1 target is specified, it's a simulring call. It means that all of the targets are called at the same time and only the first target that picks up is connected. We support up to 25 targets for simulring.
+|targetDisposition|String|(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`. This parameter is deprecated, we automatically identify whether it's a forward call or simulring call from the number of targets provided.|
 |timeout|Int32|The timeout (in seconds) for the redirect operation. The range of the timeout value is between 15 and 90 seconds inclusive. The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change). |
 |maskCallee|Boolean|Indicates whether the callee is to be hidden from the caller. If true, then the callee identity is the bot identity. Default: false.|
 |maskCaller|Boolean|Indicates whether the caller is to be hidden from the callee. If true, then the caller identity is the bot identity. Default: false.|
-|callbackUri|String|This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property hasn't been set, the bot's global callback URI is used instead. This must be `https`.|
+|callbackUri|String|It allows bots to provide a specific callback URI for the current call to receive later notifications. If this property isn't set, the bot's global callback URI is used instead. It must be `https`.|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
-These examples cover a workflow of an incoming call notification and how that call will be redirected.
+These examples cover a workflow of an incoming call notification and how that call are redirected.
 
-> **Note:** The response objects shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response objects shown here might be shortened for readability. All the properties are returned from an actual call.
 
 ### Example 1: Forward a call to a target
 

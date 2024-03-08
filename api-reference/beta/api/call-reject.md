@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable a bot to reject an incoming call. The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification will contain the **chatInfo** and **meetingInfo** parameters.
+Enable a bot to reject an incoming call. The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification contains the **chatInfo** and **meetingInfo** parameters.
 
 The bot is expected to answer or reject the call before the call times out. The current timeout value is 15 seconds.
 
-This API does not end existing calls that have already been answered. Use [delete call](../api/call-delete.md) to end a call.
+This API doesn't end existing calls that already answered. Use [delete call](../api/call-delete.md) to end a call.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -46,8 +46,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|reason|String|The rejection reason. Possible values are `None`, `Busy` and `Forbidden` |
-|callbackUri|String|This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.|
+|reason|String|The rejection reason. The possible values are `None`, `Busy`, and `Forbidden`.|
+|callbackUri|String|It allows bots to provide a specific callback URI for the current call to receive later notifications. If this property isn't set, the bot's global callback URI is used instead. It must be `https`.|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
@@ -58,6 +58,7 @@ The following examples show how to call this API.
 ### Example 1: Reject an incoming call with 'Busy' reason
 #### Request
 
+The following examples shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -108,6 +109,7 @@ Content-Length: 24
 ---
 
 ##### Response
+The following examples shows the response.
 
 <!-- {
   "blockType": "response"
@@ -173,7 +175,7 @@ Content-Type: application/json
 
 ##### Request
 
-
+The following examples shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -224,6 +226,8 @@ Content-Length: 24
 ---
 
 ##### Response
+
+The following examples shows the response.
 <!-- {
   "blockType": "response"
 } -->

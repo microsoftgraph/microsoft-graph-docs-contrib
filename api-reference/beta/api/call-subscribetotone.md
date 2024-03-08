@@ -1,6 +1,6 @@
 ---
 title: "call: subscribeToTone"
-description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a 'Dialpad'."
+description: "Subscribe to DTMF (dual-tone multi-frequency signaling). It allows you to be notified when the user presses keys on a 'Dialpad'."
 author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "call_subscribetotone" } -->
 [!INCLUDE [permissions-table](../includes/permissions/call-subscribetotone-permissions.md)]
 
->**Note:** Any tone data provided may not be persisted. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
+>**Note:** Any tone data provided may not be persisted. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. For more information, see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
