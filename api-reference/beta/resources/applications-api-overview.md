@@ -1,5 +1,5 @@
 ---
-title: "Manage Microsoft Entra applications using Microsoft Graph"
+title: "Manage Microsoft Entra applications by using Microsoft Graph"
 description: "Learn how to manage the lifecycle and settings for Microsoft Entra applications and service principals programmatically using Microsoft Graph APIs."
 author: FaithOmbongi
 ms.author: ombongifaith
@@ -12,7 +12,7 @@ doc_type: conceptualPageType
 #customer intent: As a developer, I want to learn how to manage the lifecycle and settings for Microsoft Entra applications and service principals programmatically using Microsoft Graph APIs.
 ---
 
-# Manage Microsoft Entra applications and service principals using Microsoft Graph
+# Manage Microsoft Entra applications and service principals by using Microsoft Graph
 
 Microsoft Entra ID is an Identity and Access Management (IAM) system. A core part of its functionality is the [Microsoft identity platform](/entra/identity-platform/v2-overview), which provides authentication and authorization services for *registered applications*. Microsoft Graph APIs allow you to register and manage your applications programmatically, enabling you to use Microsoft's IAM capabilities.
 
