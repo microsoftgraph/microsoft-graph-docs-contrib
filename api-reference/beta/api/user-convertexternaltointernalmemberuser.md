@@ -60,7 +60,7 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [user](../resources/user.md) object with the default properties, including the **convertedToInternalUserDateTime** property in the response. 
+If successful, this method returns a `200 OK` response code and [conversionUserDetails](../resources/conversionUserDetails.md) user conversion details.
 
 ## Examples
 
@@ -102,37 +102,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
-    "id": "0b8cc234-ef87-4015-9785-cbb42000d41c",
-    "accountEnabled": true,
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.conversionUserDetails",
     "displayName": "Adele Vance",
-    "mail": "AdeleV@woodgrove.com",
-    "mailNickname": "AdeleV_woodgrove.com#EXT#",
-    "otherMails": [
-        "AdeleV@woodgrove.com"
-    ],
-    "proxyAddresses": [
-        "SMTP:AdeleV@woodgrove.com",
-        "smtp:AdeleVance@contoso.com",
-        "smtp:AdeleV_woodgrove.com#EXT#@contoso.com"
-    ],
     "userPrincipalName": "AdeleVance@contoso.com",
     "convertedToInternalUserDateTime": "2024-02-05T20:16:37.5012924Z",
-    "externalUserState": null,
-    "externalUserStateChangeDateTime": "2019-10-31T18:10:01Z",
-    "userType": "Member",
-    "identities": [
-        {
-            "signInType": "userPrincipalName",
-            "issuer": "contoso.com",
-            "issuerAssignedId": "AdeleVance@contoso.com"
-        }
-    ],
-    "passwordProfile": {
-        "password": null,
-        "forceChangePasswordNextSignIn": true,
-        "forceChangePasswordNextSignInWithMfa": false
-    }
+    "mail": "AdeleV@woodgrove.com"
 }
 ```
 
@@ -175,11 +149,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
-    "id": "0b8cc234-ef87-4015-9785-cbb42000d41c",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.conversionUserDetails",
     "displayName": "Adele Vance",
-    "mail": "AdeleV@contoso.com",
-    "userPrincipalName": "AdeleVance@contoso.com"
+    "userPrincipalName": "AdeleVance@contoso.com",
+    "convertedToInternalUserDateTime": "2024-02-05T20:16:37.5012924Z",
+    "mail": "AdeleV@woodgrove.com"
 }
 ```
 
@@ -212,10 +186,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "0b8cc234-ef87-4015-9785-cbb42000d41c",
-    "displayName" : "user1Name",
-    "userPrincipalName" : "newUpn@contoso.com",
-    "convertedToInternalUserDateTime" : "2024-12-31T23:59:59.9999999"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.conversionUserDetails",
+    "displayName": "Adele Vance",
+    "userPrincipalName": "AdeleVance@contoso.com",
+    "convertedToInternalUserDateTime": "2024-02-05T20:16:37.5012924Z",
+    "mail": "AdeleV@woodgrove.com"
 }
 ```
 
