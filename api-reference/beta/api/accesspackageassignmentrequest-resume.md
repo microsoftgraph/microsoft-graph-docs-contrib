@@ -64,7 +64,8 @@ If successful, this action returns a `204 No Content` response code.
 ### Example 1: Resume an access package assignment request
 
 #### Request
-The following is an example of a call to resume an access package assignment request that's waiting for a callback.
+
+The following example shows a request of a call to resume an access package assignment request that's waiting for a callback.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -122,6 +123,7 @@ Content-Type: application/json
 ---
 
 #### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -135,7 +137,8 @@ HTTP/1.1 204 No Content
 ### Example 2: Resume and deny an access package assignment request
 
 #### Request
-The following is an example to resume the processing of an access package assignment request by denying the request that's waiting for a callback. A request cannot be denied at the `assignmentRequestCreated` stage of the callout.
+
+The following example shows a request to resume the processing of an access package assignment request by denying the request that's waiting for a callback. A request cannot be denied at the `assignmentRequestCreated` stage of the callout.
 <!-- {
   "blockType": "request"
 }
@@ -159,6 +162,7 @@ Content-Type: application/json
 
 
 ### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",
