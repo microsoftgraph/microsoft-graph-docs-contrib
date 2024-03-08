@@ -50,7 +50,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Create item](../api/driveitem-post-children.md)                             | `POST /drive/items/{item-id}/children`                                 |
 | [Update item](../api/driveitem-update.md)                                    | `PATCH /drive/items/{item-id}`                                         |
 | [Upload content](../api/driveitem-put-content.md)                            | `PUT /drive/items/{item-id}/content`                                   |
-| [Download content](../api/driveitem-get-content.md)(Deprecated)              | `GET /drive/items/{item-id}/content`                                   |
+| [Download content](../api/driveitem-get-content.md)(deprecated)              | `GET /drive/items/{item-id}/content`                                   |
 | [Download content](../api/driveitem-get-contentstream.md)                    | `GET /drive/items/{item-id}/contentStream`                             |
 | [Download specific file format][download-format]                             | `GET /drive/items/{item-id}/content?format={format}`                   |
 | [Delete item](../api/driveitem-delete.md)                                    | `DELETE /drive/items/{item-id}`                                        |

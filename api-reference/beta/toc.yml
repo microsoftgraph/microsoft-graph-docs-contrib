@@ -11091,7 +11091,7 @@ items:
                 href: api/driveitem-copy.md
               - name: Create folder
                 href: api/driveitem-post-children.md
-              - name: Download file (Deprecated)
+              - name: Download file (deprecated)
                 href: api/driveitem-get-content.md
               - name: Download file
                 href: api/driveitem-get-contentstream.md
