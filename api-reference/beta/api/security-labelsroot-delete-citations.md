@@ -3,7 +3,7 @@ title: "Delete citationTemplate"
 description: "Delete a citationTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

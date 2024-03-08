@@ -3,7 +3,7 @@ title: "List history of riskyUser"
 description: "Retrieve the risk history"
 ms.localizationpriority: medium
 author: "tracyshi"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # List history of riskyUser

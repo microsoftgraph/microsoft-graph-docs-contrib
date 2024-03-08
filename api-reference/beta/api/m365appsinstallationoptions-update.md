@@ -3,7 +3,7 @@ title: "Update m365AppsInstallationOptions"
 description: "Update the properties of an m365AppsInstallationOptions object."
 author: "yan-git"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

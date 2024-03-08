@@ -3,7 +3,7 @@ title: "adminTodo resource type"
 description: "Company-wide configuration for Microsoft Todo"
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

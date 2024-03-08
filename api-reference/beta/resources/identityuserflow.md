@@ -3,7 +3,7 @@ title: "identityUserFlow resource type (deprecated)"
 description: "Identity user flows are built-in authentication journeys"
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "Get allowedValue"
 description: "Read the properties and relationships of an allowedValue object."
 author: "Cecily"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "educationTerm resource type"
 description: "A term. This represents a designated portion of the academic year. It's used within educationClass."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

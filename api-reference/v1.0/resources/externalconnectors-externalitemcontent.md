@@ -3,7 +3,7 @@ title: "externalItemContent resource type"
 description: "The content of an item indexed via a Microsoft Search connection."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

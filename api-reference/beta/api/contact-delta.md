@@ -3,7 +3,7 @@ title: "contact: delta"
 description: "Get a set of contacts that have been added, deleted, or updated in a specified folder."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

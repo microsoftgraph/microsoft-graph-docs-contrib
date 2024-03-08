@@ -3,7 +3,7 @@ title: "attackSimulationRoot resource type"
 description: "Represents an abstract type that provides the ability to launch a realistic phishing attack that organizations can learn from."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

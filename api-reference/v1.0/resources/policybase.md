@@ -3,7 +3,7 @@ title: "policyBase resource type"
 description: "Represents an abstract base type for policy types to inherit from."
 ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

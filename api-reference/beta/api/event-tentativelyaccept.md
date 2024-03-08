@@ -3,7 +3,7 @@ title: "event: tentativelyAccept"
 description: "Tentatively accept the specified event in a user calendar."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
