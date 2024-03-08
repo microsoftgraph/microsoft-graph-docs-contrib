@@ -1,6 +1,6 @@
 ---
 title: "Create cloudPcDeviceImage"
-description: "Upload a custom OS image that you can later provision on Cloud PCs."
+description: "Create a new cloudPcDeviceImage object."
 author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,8 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object. Upload a custom OS image that you can later provision on Cloud PCs.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## HTTP request
 
@@ -37,7 +35,7 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 In the request body, supply a JSON representation of the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
 
-The following table lists the properties that are required when you create the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md).
+The following table lists the properties that are required when you create a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,7 +53,6 @@ If successful, this method returns a `201 Created` response code and a [cloudPcD
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_cloudpcdeviceimage_from_cloudpcdeviceimage"
@@ -72,7 +69,6 @@ Content-Type: application/json
   "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage"
 }
 ```
----
 
 ### Response
 
