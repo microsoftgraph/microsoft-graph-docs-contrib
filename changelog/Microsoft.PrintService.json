@@ -3,6 +3,74 @@
     {
       "ChangeList": [
         {
+          "Id": "705b8b81-ead0-4177-aee5-cd16262109c2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "printReleaseType",
+          "ChangeType": "Deletion",
+          "Description": "Remove the **printReleaseType** enumeration type, since it is not supported.",
+          "Target": "printReleaseType"
+        },
+        {
+          "Id": "705b8b81-ead0-4177-aee5-cd16262109c2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printReleaseMechanism",
+          "ChangeType": "Deletion",
+          "Description": "Remove the printReleaseMechanism resource type, since it is not supported.",
+          "Target": "printReleaseMechanism"
+        },
+        {
+          "Id": "705b8b81-ead0-4177-aee5-cd16262109c2",
+          "ApiChange": "Property",
+          "ChangedApiName": "releaseMechanisms",
+          "ChangeType": "Deletion",
+          "Description": "Remove the `releaseMechanisms` property from the printer resource, since it is not supported.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "705b8b81-ead0-4177-aee5-cd16262109c2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-08T19:24:58Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3583a6f2-02e0-40f9-b3db-65b12fcc16cd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "printReleaseType",
+          "ChangeType": "Deletion",
+          "Description": "Remove the **printReleaseType** enumeration type, since it is not supported.",
+          "Target": "printReleaseType"
+        },
+        {
+          "Id": "3583a6f2-02e0-40f9-b3db-65b12fcc16cd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printReleaseMechanism",
+          "ChangeType": "Deletion",
+          "Description": "Remove the printReleaseMechanism resource type, since it is not supported.",
+          "Target": "printReleaseMechanism"
+        },
+        {
+          "Id": "3583a6f2-02e0-40f9-b3db-65b12fcc16cd",
+          "ApiChange": "Property",
+          "ChangedApiName": "releaseMechanisms",
+          "ChangeType": "Deletion",
+          "Description": "Remove the `releaseMechanisms` property from the printer resource, since it is not supported.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "3583a6f2-02e0-40f9-b3db-65b12fcc16cd",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-08T19:24:58Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "30fad8c5-8dfe-462e-908f-3b1dd226db11",
           "ApiChange": "Enumeration",
           "ChangedApiName": "incompatiblePrinterSettings",
@@ -39,6 +107,74 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-02-07T01:02:44.3382557Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7b2dbcc5-7e7e-435f-92ea-5e3d2dbecd5b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "printReleaseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **printReleaseType** enumeration type.",
+          "Target": "printReleaseType"
+        },
+        {
+          "Id": "7b2dbcc5-7e7e-435f-92ea-5e3d2dbecd5b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printReleaseMechanism",
+          "ChangeType": "Addition",
+          "Description": "Added the [printReleaseMechanism](https://learn.microsoft.com/en-us/graph/api/resources/printReleaseMechanism?view=graph-rest-beta) resource type.",
+          "Target": "printReleaseMechanism"
+        },
+        {
+          "Id": "7b2dbcc5-7e7e-435f-92ea-5e3d2dbecd5b",
+          "ApiChange": "Property",
+          "ChangedApiName": "releaseMechanisms",
+          "ChangeType": "Addition",
+          "Description": "Added the `releaseMechanisms` property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "7b2dbcc5-7e7e-435f-92ea-5e3d2dbecd5b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-23T00:08:27.550282Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5c9888c1-4a6d-49ec-bf6a-cb23a6e8cdfc",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "printReleaseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **printReleaseType** enumeration type.",
+          "Target": "printReleaseType"
+        },
+        {
+          "Id": "5c9888c1-4a6d-49ec-bf6a-cb23a6e8cdfc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printReleaseMechanism",
+          "ChangeType": "Addition",
+          "Description": "Added the [printReleaseMechanism](https://learn.microsoft.com/en-us/graph/api/resources/printReleaseMechanism?view=graph-rest-1.0) resource type.",
+          "Target": "printReleaseMechanism"
+        },
+        {
+          "Id": "5c9888c1-4a6d-49ec-bf6a-cb23a6e8cdfc",
+          "ApiChange": "Property",
+          "ChangedApiName": "releaseMechanisms",
+          "ChangeType": "Addition",
+          "Description": "Added the `releaseMechanisms` property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "5c9888c1-4a6d-49ec-bf6a-cb23a6e8cdfc",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-23T00:08:27.5505473Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
