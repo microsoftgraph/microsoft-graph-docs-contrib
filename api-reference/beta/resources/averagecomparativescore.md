@@ -1,6 +1,6 @@
 ---
 title: " averageComparativeScore resource type"
-description: "This resource contains various different scores based by different scopes (for example, average by industry vertical, average by company seat size, and so on) and control category (Identity, Data, Device, Apps, Infrastructure)."
+description: "Contains various different scores based by different scopes (for example, average by industry vertical, average by company seat size, and so on) and control category (Identity, Data, Device, Apps, Infrastructure)."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: security
@@ -11,20 +11,20 @@ author: "preetikr"
 
 Namespace: microsoft.graph
 
-This resource contains various different scores based by different scopes (for example, average by industry vertical, average by company seat size, and so on) and control category (Identity, Data, Device, Apps, Infrastructure).
+Contains various scores based on different scopes - such as average by industry vertical or company seat size - and control category (Identity, Data, Device, Apps, Infrastructure).
 
 ## Properties
 | Property      | Type      | Description |
 |:--------------|:----------|:------------|
-| basis	        | String	| Scope type (By AllTenants, TotalSeats, IndustryTypes). |
-| averageScore	| Double	| Average score within specified basis. |
-| deviceScore	| Double	| Average score within specified basis. |
-| dataScore		| Double	| Average score within specified basis. |
-| identityScore	| Double	| Average score within specified basis. |
+| basis	        | String	| Scope type (by AllTenants, TotalSeats, IndustryTypes). |
+| averageScore	| Double	| Average score within a specified basis. |
+| deviceScore	| Double	| Average score within a specified basis. |
+| dataScore		| Double	| Average score within a specified basis. |
+| identityScore	| Double	| Average score within a specified basis. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
