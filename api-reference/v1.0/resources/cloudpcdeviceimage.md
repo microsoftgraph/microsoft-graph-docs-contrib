@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Represents the image resource on a Cloud PC.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -30,7 +32,7 @@ Represents the image resource on a Cloud PC.
 |displayName|String|The display name of the associated device image. The device image display name and the version are used to uniquely identify the Cloud PC device image. Read-only.|
 |errorCode|[cloudPcDeviceImageErrorCode](#cloudpcdeviceimageerrorcode-values)|The error code of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `unknownFutureValue`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`. Read-only.|
 |expirationDate|Date|The date when the image became unavailable. Read-only.|
-|id|String|The unique identifier (ID) of the image resource on the Cloud PC. Read-only.|
+|id|String|The unique identifier (ID) of the image resource on the Cloud PC. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The data and time when the image was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |operatingSystem|String|The operating system of the image. For example, `Windows 10 Enterprise`. Read-only.|
 |osBuildNumber|String|The OS build version of the image. For example, `1909`. Read-only.|
@@ -45,7 +47,7 @@ Represents the image resource on a Cloud PC.
 |:---|:---|
 |internalServerError|Indicates that an internal server error occurred during the processing of the image.|
 |sourceImageNotFound|Indicates that the source image is inaccessible or not found.|
-|osVersionNotSupported|Indicates that the OS version isn't supported.|
+|osVersionNotSupported|Indicates that the operating system version isn't supported.|
 |sourceImageInvalid|Indicates that the source image is invalid for provisioning a Windows virtual machine (VM).|
 |sourceImageNotGeneralized|Indicates that the uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by deprovisioning or generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
