@@ -1,6 +1,6 @@
 ---
 title: "sharingDetail resource type"
-description: "Complex type containing properties of Shared items. "
+description: "Contains properties of shared items. "
 author: "simonhult"
 ms.localizationpriority: medium
 ms.prod: "insights"
@@ -11,10 +11,21 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Complex type containing properties of [sharedInsight](insights-shared.md) items. 
+Contains properties of [sharedInsight](insights-shared.md) items. 
+
+## Properties
+
+| Property              | Type          | Description  |
+| -------------         |-----------    | -------------|
+| sharedBy      	      | [insightIdentity](insights-insightidentity.md)	    | The user who shared the document.  |
+| sharedDateTime      	| DateTimeOffset| The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.  |
+| sharingSubject      	| String	      | The subject with which the document was shared. |
+| sharingType     		  | String        | Determines the way the document was shared. Can be by a 1Link1, 1Attachment1, 1Group1, 1Site1.     |
+| sharingReference		  | [resourceReference](insights-resourcereference.md)	    | Reference properties of the document, such as the URL and type of the document. Read-only  |
+
 
 ## JSON representation
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -31,14 +42,4 @@ Here's a JSON representation of the resource
   "sharingReference": "resourceReference"
 }
 ```
-
-## Properties
-
-| Property              | Type          | Description  |
-| -------------         |-----------    | -------------|
-| sharedBy      	      | [insightIdentity](insights-insightidentity.md)	    | The user who shared the document.  |
-| sharedDateTime      	| DateTimeOffset| The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.  |
-| sharingSubject      	| String	      | The subject with which the document was shared. |
-| sharingType     		  | String        | Determines the way the document was shared, can be by a "Link", "Attachment", "Group", "Site".     |
-| sharingReference		  | [resourceReference](insights-resourcereference.md)	    | Reference properties of the document, such as the url and type of the document. Read-only  |
 
