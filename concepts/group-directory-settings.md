@@ -2,7 +2,8 @@
 title: "Overview of group settings"
 description: "Use group settings to configure tenant-wide or object-specific settings in your tenant through Microsoft Graph APIs."
 author: FaithOmbongi
-ms.reviewer: jodah
+ms.author: ombongifaith
+ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.date: 02/14/2024

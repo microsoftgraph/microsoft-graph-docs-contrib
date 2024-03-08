@@ -2,7 +2,7 @@
 title: "connectorGroup resource type"
 description: "Represents an Application Proxy connectorGroup."
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "dhruvinrshah"
 doc_type: resourcePageType
 ---

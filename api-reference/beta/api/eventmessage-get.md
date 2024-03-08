@@ -3,7 +3,7 @@ title: "Get eventMessage"
 description: "expand` parameter on the **event**"
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

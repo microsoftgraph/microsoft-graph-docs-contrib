@@ -3,7 +3,7 @@ title: "List submittedResources"
 description: "List the resources that were officially submitted for grading."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

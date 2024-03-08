@@ -3,7 +3,7 @@ title: "educationModule: publish"
 description: "Change the state of an educationModule from its original draft status to the published status."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get cloudPcSnapshot"
 description: "Read the properties and relationships of a cloudPcSnapshot object."
 author: "xintaozMS"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

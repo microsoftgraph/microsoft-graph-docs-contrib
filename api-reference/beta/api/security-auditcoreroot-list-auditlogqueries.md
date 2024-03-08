@@ -3,7 +3,7 @@ title: "List auditLogQueries"
 description: "Get a list of the auditLogQuery objects and their properties."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/beta/security/auditLog/queries
 
 ---
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -128,7 +127,9 @@ Content-Type: application/json
       "displayName": "String",
       "filterStartDateTime": "String (timestamp)",
       "filterEndDateTime": "String (timestamp)",
-      "recordTypeFilter": "String",
+      "recordTypeFilters": [
+        "String"
+      ],
       "keywordFilter": "String",
       "serviceFilter": "String",
       "operationFilters": [

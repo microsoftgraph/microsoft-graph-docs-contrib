@@ -3,7 +3,7 @@ title: "List conversations"
 description: "Retrieve the list of conversations in this group."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

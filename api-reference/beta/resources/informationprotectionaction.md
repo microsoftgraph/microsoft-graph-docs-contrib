@@ -3,7 +3,7 @@ title: "informationProtectionAction resource type (deprecated)"
 description: "Describes the abstract informationProtectionAction entity. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 

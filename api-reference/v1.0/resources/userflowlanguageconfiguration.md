@@ -3,7 +3,7 @@ title: "userFlowLanguageConfiguration resource type"
 description: "Allows a user flow to support multiple languages."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: Update printJob
 description: Update the configuration of a print job.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

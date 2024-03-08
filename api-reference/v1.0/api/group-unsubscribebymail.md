@@ -4,7 +4,7 @@ description: "Calling this method prevents the current user from receiving email
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

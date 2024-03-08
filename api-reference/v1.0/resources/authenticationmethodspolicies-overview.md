@@ -4,7 +4,7 @@ description: "Authentication methods policies define which authentication method
 ms.localizationpriority: medium
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 05/22/2023
 ---

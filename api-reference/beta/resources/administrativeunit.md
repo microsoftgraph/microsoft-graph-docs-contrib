@@ -3,7 +3,7 @@ title: "administrativeUnit resource type"
 description: "An administrative unit provides a conceptual container for User and Group directory objects."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

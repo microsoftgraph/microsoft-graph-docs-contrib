@@ -3,7 +3,7 @@ title: "Create retentionLabel"
 description: "Create a new retentionLabel object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
