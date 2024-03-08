@@ -401,3 +401,90 @@ Content-type: application/json
   "state": "delivered"
 }
 ```
+
+### Example 5: Create an accessPackageResourceRequest for adding an application as a resource with attributes
+
+#### Request
+
+The following example shows a request to add an application as a resource to a catalog, with two attributes.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_appwithattr"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/resourceRequests
+Content-type: application/json
+
+{
+  "requestType": "adminAdd",
+  "resource": {
+    "originId": "97733cf7-ae02-42e8-9aa3-479a433abcc0",
+    "originSystem": "AadApplication",
+    "attributes": [
+      {
+        "destination": {
+          "@odata.type": "microsoft.graph.accessPackageUserDirectoryAttributeStore"
+        },
+        "name": "officeLocation",
+        "source": {
+          "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
+          "question": {
+            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+            "sequence": "1",
+            "isRequired": "true",
+            "isAnswerEditable": "true",
+            "text": "Where do you work?",
+            "isSingleLineQuestion": true,
+            "regexPattern": "[a-zA-Z]+[a-zA-Z\\s]*"
+          }
+        }
+      },
+      {
+        "destination": {
+          "@odata.type": "microsoft.graph.accessPackageUserDirectoryAttributeStore"
+        },
+        "name": "extension_e409fedc08ab4807a9eb53ebc0d6cc9f_Expense_CostCenter",
+        "source": {
+          "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
+          "question": {
+            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+            "isRequired": false,
+            "text": "What is your cost center?",
+            "sequence": 0,
+            "isSingleLineQuestion": true
+          }
+        }
+      }
+    ]
+  },
+  "catalog": {
+    "id": "fa3d4d6b-25b8-48ea-af60-35e13d84d2bf"
+  }
+}
+
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "acc2294e-f37f-42d3-981d-4e83847ed0ce",
+  "requestType": "adminAdd",
+  "state": "delivered"
+}
+```

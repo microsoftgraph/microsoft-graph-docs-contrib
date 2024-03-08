@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-An access package resource attribute is the definition of a property that a user is required to have to be able to access an application. This structure is included in an [accessPackageResource](../resources/accesspackageresource.md) of a catalog, for an application whose roles are included in an access package in that catalog. When a user requests the access package, they must supply the value of the attribute, which, if the request is approved, is then written on the user's directory object. The application can then subsequently [read the attribute of the user](../api/user-get.md).
+An access package resource attribute is the definition of a property that a user is required to have to be able to access an application. This structure is included in the **attributes** of an [accessPackageResource](../resources/accesspackageresource.md) of a catalog, for an application whose roles are included in an access package in that catalog. When [creating a resourceRequest](../api/entitlementmanagement-post-resourcerequests.md) for the application, you can include attributes. Subsequently, when a user requests the access package with the application role, they must supply the value of each attribute, which, if the request is approved, is then written on the user's directory object. The application can then subsequently [read the attribute of the user](../api/user-get.md).
 
-For assignments to a user where the **destination** is an [accessPackageUserDirectoryAttributeStore](accesspackageuserdirectoryattributestore.md) object type, then the attribute indicated by **name** must be a writable property of the [user](user.md) object. These writable properties are String types registered as [extension properties](extensionproperty.md) on the target **User** object.
+For assignments to a user where the **destination** is an [accessPackageUserDirectoryAttributeStore](accesspackageuserdirectoryattributestore.md) object type, then the attribute indicated by **name** must be a writable property of the [user](user.md) object. These writable properties are String types that are either built-in properties of the user or registered as [extension properties](extensionproperty.md) on the target **User** object.
 
 ## Properties
 |Property|Type|Description|
