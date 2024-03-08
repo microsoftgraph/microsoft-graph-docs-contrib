@@ -3,7 +3,7 @@ title: "Add attribute (to user flow)"
 description: "Add attribute to an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -91,6 +91,10 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc3
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/onattributecollectionexternalusersselfservicesignup-post-attributes-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/onattributecollectionexternalusersselfservicesignup-post-attributes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

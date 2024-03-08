@@ -34,7 +34,7 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 If successful, this method returns a `200 OK` response code and a Boolean value that specifies the publishing status of the content type.

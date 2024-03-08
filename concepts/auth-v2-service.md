@@ -1,11 +1,11 @@
 ---
 title: "Get access without a user"
 description: "Learn how an app obtains an access token from the Microsoft identity platform and calls Microsoft Graph with its own identity."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.custom: graphiamtop20
 ms.date: 09/08/2023
 #customer intent: As a developer, I want to understand how my app can call Microsoft Graph on behalf of a signed-in user to access resources in a tenant.
@@ -127,11 +127,6 @@ https://localhost/myapp/permissions?admin_consent=True&tenant=38d49456-54d4-455d
 | tenant        | The directory tenant that granted your application the permissions that it requested, in GUID format.
 | state         | A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.
 | admin_consent | Set to **True**.
-
-
-> **Try**: You can try this for yourself by pasting the following request in a browser. If you sign in as a global administrator for a Microsoft Entra tenant, you will be presented with the administrator consent dialog box for the app.
-> 
-> https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=https://localhost/myapp/permissions 
 
 ## 4. Request an access token
 
@@ -280,23 +275,8 @@ In this article, you walked through the low-level protocol details usually requi
 
 MSAL and other supported authentication libraries simplify the process for you by handling details such as validation, cookie handling, token caching, and secure connections, allowing you to focus on the functionality of your application.
 
-Microsoft has built and maintains a wide selection of code samples that demonstrate usage of supported authentication libraries with the Microsoft identity platform. To access these code samples, see the [Next steps](#next-steps).
+Microsoft has built and maintains a wide selection of code samples that demonstrate usage of supported authentication libraries with the Microsoft identity platform. To access these code samples, see the [Microsoft identity platform code samples](/entra/identity-platform/sample-v2-code?tabs=apptype#service--daemon).
 
-## Next steps
+## Related content
 
-This article is part of the following series of articles on authentication and authorization for Microsoft Graph through the Microsoft identity platform.
-
-1. Article 1: [Authentication and authorization basics](./auth/auth-concepts.md)
-1. Article 2: [Register an application with the Microsoft identity platform](./auth-register-app-v2.md)
-1. Article 3: [Get access on behalf of a user](./auth-v2-user.md)
-1. Article 4: [Get access without a user](./auth-v2-service.md)
-
-Next, choose from code samples that are built and maintained by Microsoft to run custom apps that use supported authentication libraries and call Microsoft Graph with their own identities.
-
-> [!div class="nextstepaction"]
-> [Microsoft Graph tutorials >](/graph/tutorials)
-
-<!--
-> [!div class="nextstepaction"]
-> [Microsoft identity platform code samples >](/azure/active-directory/develop/sample-v2-code#service--daemon)
--->
+- Choose from code samples that are built and maintained by Microsoft to run custom apps that use supported authentication libraries, sign-in users, and call Microsoft Graph. See [Microsoft Graph tutorials](/graph/tutorials).

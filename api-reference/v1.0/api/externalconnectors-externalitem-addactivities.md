@@ -3,7 +3,7 @@ title: "externalItem: addActivities"
 description: "Append additional instances of externalActivity on an externalitem."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -39,7 +39,7 @@ POST external/connections/{connectionsId}/items/{externalItemId}/addActivities
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

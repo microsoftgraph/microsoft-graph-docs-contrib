@@ -3,7 +3,7 @@ title: "Update conversationthread"
 description: "Lock or unlock a thread, to allow or avoid further posting to the thread."
 ms.localizationpriority: medium
 author: "mikemcleanlive"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ PATCH /groups/{group id}/conversations/{conversation id}/threads/{thread id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body

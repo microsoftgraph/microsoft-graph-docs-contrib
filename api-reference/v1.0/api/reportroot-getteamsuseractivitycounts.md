@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsUserActivityCounts"
 description: "Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed users."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -44,7 +44,7 @@ In the request URL, provide the following parameter with a valid value.
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

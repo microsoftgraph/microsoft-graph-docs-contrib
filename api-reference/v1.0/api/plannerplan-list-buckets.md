@@ -3,7 +3,7 @@ title: "List buckets"
 description: "Retrieve a list of **plannerbucket** objects contained by a plannerPlan object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ GET /planner/plans/{plan-id}/buckets
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

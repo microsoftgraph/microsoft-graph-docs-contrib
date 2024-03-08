@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-GroupCollectionPage groups = graphClient.groups()
-	.buildRequest()
-	.filter("assignedLicenses/any()")
-	.expand("members($select=id,displayName)")
-	.select("id,assignedLicenses")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+GroupCollectionResponse result = graphClient.groups().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"id", "assignedLicenses"};
+	requestConfiguration.queryParameters.filter = "assignedLicenses/any()";
+	requestConfiguration.queryParameters.expand = new String []{"members($select=id,displayName)"};
+});
+
 
 ```

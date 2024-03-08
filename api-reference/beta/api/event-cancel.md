@@ -3,7 +3,7 @@ title: "event: cancel"
 description: "This action allows the organizer of a meeting to send a cancellation message and cancel the event. "
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

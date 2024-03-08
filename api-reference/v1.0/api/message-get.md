@@ -3,7 +3,7 @@ title: "Get message"
 description: "Retrieve the properties and relationships of a message object."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -167,20 +167,20 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Adele Vance",
-            "address":"adelev@contoso.OnMicrosoft.com"
+            "address":"adelev@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Adele Vance",
-            "address":"adelev@contoso.OnMicrosoft.com"
+            "address":"adelev@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.OnMicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -516,7 +516,7 @@ YW5vdGhlciBtYWlsLg0K
 ```
 
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)

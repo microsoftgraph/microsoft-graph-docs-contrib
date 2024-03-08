@@ -3,7 +3,7 @@ title: "List articles"
 description: "Get a list of article objects, including their properties and relationships."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ This method supports the `$count`, `$select`, `$search`, `$top`, `$skip`, and `$
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

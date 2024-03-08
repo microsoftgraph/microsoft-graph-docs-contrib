@@ -29,6 +29,7 @@ Contains properties of the minimum operating system required for an iOS mobile a
 |v14_0|Boolean|When TRUE, only Version 14.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
 |v15_0|Boolean|When TRUE, only Version 15.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
 |v16_0|Boolean|When TRUE, only Version 16.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
+|v17_0|Boolean|When TRUE, only Version 17.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
 
 ## Relationships
 None
@@ -51,6 +52,7 @@ Here is a JSON representation of the resource.
   "v13_0": true,
   "v14_0": true,
   "v15_0": true,
-  "v16_0": true
+  "v16_0": true,
+  "v17_0": true
 }
 ```

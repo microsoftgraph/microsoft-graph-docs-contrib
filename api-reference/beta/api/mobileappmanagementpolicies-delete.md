@@ -3,7 +3,7 @@ title: "Delete mobileAppManagementPolicy"
 description: "Delete a mobile app management policy."
 author: "michaelrm97"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ DELETE /policies/mobileAppManagementPolicies/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

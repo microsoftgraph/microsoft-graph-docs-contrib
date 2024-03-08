@@ -17,7 +17,7 @@ var requestBody = new Contact
 	{
 		new EmailAddress
 		{
-			Address = "pavelb@fabrikam.onmicrosoft.com",
+			Address = "pavelb@contoso.com",
 			Name = "Pavel Bansky",
 		},
 	},

@@ -4,12 +4,12 @@ description: "Use Microsoft Graph connectors to bring content from external serv
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Microsoft Graph connectors overview
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365) is a complete, intelligent solution that empowers users and organizations with innovative productivity experiences and rich insights to increase efficiency and drive business growth. Microsoft Graph is the data fabric that powers these intelligent experiences, and the [Microsoft Search API](/graph/api/resources/indexing-api-overview) provides access to this data and intelligence.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) is a complete, intelligent solution that empowers users and organizations with innovative productivity experiences and rich insights to increase efficiency and drive business growth. Microsoft Graph is the data fabric that powers these intelligent experiences, and the [Microsoft Search API](/graph/api/resources/connectors-api-overview) provides access to this data and intelligence.
 
 Although most information workers spend much of their work time within productivity applications such as Microsoft 365, they also need a way to integrate that environment with the enterprise applications and other on-premises and SaaS cloud software and services that they use. Examples include enterprise resource planning (ERP) applications, customer resource management (CRM) applications, intranet applications, wikis, blogs, and social networking sites.
 
@@ -40,7 +40,7 @@ To get started, see the following:
 - [Build your first custom Microsoft Graph connector using APIs](/graph/connecting-external-content-build-quickstart)
 - [Build your first custom Microsoft Graph connector using the SDK](/graph/custom-connector-sdk-sample-overview)
 
-## Next steps
+## Related content
 
 * [Work with the Microsoft Graph connectors API](/graph/connecting-external-content-connectors-api-overview)
 * [Use Postman with the Microsoft Graph connectors API](/graph/connecting-external-content-connectors-api-postman)

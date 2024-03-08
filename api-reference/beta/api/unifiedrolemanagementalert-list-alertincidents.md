@@ -49,7 +49,7 @@ This method supports the `$select`, `$filter`, `$top`, and `$expand` OData query
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -127,35 +127,35 @@ Content-Type: application/json
             "id": "13d5df6a-3d2e-4dcb-9dab-486df2cf5c8e",
             "assigneeId": "13d5df6a-3d2e-4dcb-9dab-486df2cf5c8e",
             "assigneeDisplayName": "testUser1",
-            "assigneeUserPrincipalName": "testuser1@contoso.onmicrosoft.com"
+            "assigneeUserPrincipalName": "testuser1@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "1d14292b-8a56-41cb-ac9c-e1e3a69e0e71",
             "assigneeId": "1d14292b-8a56-41cb-ac9c-e1e3a69e0e71",
             "assigneeDisplayName": "testUser2",
-            "assigneeUserPrincipalName": "testuser2@contoso.onmicrosoft.com"
+            "assigneeUserPrincipalName": "testuser2@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "36158c4b-adc5-445c-8130-862cba705dad",
             "assigneeId": "36158c4b-adc5-445c-8130-862cba705dad",
             "assigneeDisplayName": "testUser3",
-            "assigneeUserPrincipalName": "testuser3@contoso.onmicrosoft.com"
+            "assigneeUserPrincipalName": "testuser3@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "38f6f1bd-2a6e-4d47-b738-0bb189c9c389",
             "assigneeId": "38f6f1bd-2a6e-4d47-b738-0bb189c9c389",
             "assigneeDisplayName": "testUser4",
-            "assigneeUserPrincipalName": "testuser4@contoso.onmicrosoft.com"
+            "assigneeUserPrincipalName": "testuser4@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "42793c70-b1e4-49bb-82c0-9fed214f05ab",
             "assigneeId": "42793c70-b1e4-49bb-82c0-9fed214f05ab",
             "assigneeDisplayName": "testUser5",
-            "assigneeUserPrincipalName": "testuser5@contoso.onmicrosoft.com"
+            "assigneeUserPrincipalName": "testuser5@contoso.com"
         }
     ],
     "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert/alertIncidents?$top=5&$skip=5"

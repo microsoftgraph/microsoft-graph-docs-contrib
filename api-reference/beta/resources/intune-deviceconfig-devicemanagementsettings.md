@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementSettings resource type"
-description: ""
+description: "Intune Deviceconfig Devicemanagementsettings Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -33,6 +33,7 @@ Namespace: microsoft.graph
 |enableAutopilotDiagnostics|Boolean|Determines whether the autopilot diagnostic feature is enabled or not.|
 |enableEnhancedTroubleshootingExperience|Boolean|Determines whether the enhanced troubleshooting UX is enabled or not.|
 |enableDeviceGroupMembershipReport|Boolean|Determines whether the device group membership report feature is enabled or not.|
+|enableM365AppDiagnostics|Boolean|Determines whether the M365 app diagnostic feature is enabled or not for a particular tenant.|
 
 ## Relationships
 None
@@ -59,6 +60,7 @@ Here is a JSON representation of the resource.
   "enableLogCollection": true,
   "enableAutopilotDiagnostics": true,
   "enableEnhancedTroubleshootingExperience": true,
-  "enableDeviceGroupMembershipReport": true
+  "enableDeviceGroupMembershipReport": true,
+  "enableM365AppDiagnostics": true
 }
 ```

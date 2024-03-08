@@ -1,6 +1,6 @@
 ---
 title: "enterpriseCodeSigningCertificate resource type"
-description: ""
+description: "Intune Apps Enterprisecodesigningcertificate Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

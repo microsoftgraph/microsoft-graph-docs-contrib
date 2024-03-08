@@ -3,7 +3,7 @@ title: "Delete appRoleAssignedTo"
 description: "Delete an appRoleAssignment granted for a service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -42,7 +42,7 @@ DELETE /servicePrincipals(appId='{appId}')/appRoleAssignedTo/{appRoleAssignment-
 
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

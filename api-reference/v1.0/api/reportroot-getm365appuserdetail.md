@@ -2,7 +2,7 @@
 title: "reportRoot: getM365AppUserDetail"
 description: "Get a report that provides the details about which apps and platforms users have used."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -54,7 +54,7 @@ This method supports the `$format`, `$top`, and `$skipToken` [OData query parame
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

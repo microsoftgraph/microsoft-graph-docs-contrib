@@ -4,7 +4,7 @@ description: "Delete an identityProvider from a b2xIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Delete a userFlowIdentityProvider
@@ -41,7 +41,7 @@ DELETE /identity/b2xUserFlows/{userflow-id}/userflowIdentityProviders/{id}/$ref
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

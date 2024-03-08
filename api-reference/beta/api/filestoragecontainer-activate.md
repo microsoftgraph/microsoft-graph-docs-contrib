@@ -9,7 +9,6 @@ doc_type: apiPageType
 
 # fileStorageContainer: activate
 
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -43,7 +42,7 @@ POST /storage/fileStorage/containers/{containerId}/activate
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -1,5 +1,97 @@
 {
     "changelog": [
+        { 
+            "ChangeList": [
+                {
+                "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                "ApiChange": "Property",
+                "ChangedApiName": "applicableContent",
+                "ChangeType": "Deletion",
+                "Description": "Removed the **applicableContent** property from the [windowsupdates-deploymentAudience](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-deploymentAudience?view=graph-rest-beta) resource.",
+                "Target": "deploymentAudience"
+                },
+                {
+                "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                "ApiChange": "Relationship",
+                "ChangedApiName": "applicableContent",
+                "ChangeType": "Addition",
+                "Description": "Added the **applicableContent** relationship to the [windowsupdates-deploymentAudience](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-deploymentAudience?view=graph-rest-beta) resource.",
+                "Target": "deploymentAudience"
+                }, 
+                {
+                    "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "matchedDevices",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the **matchedDevices** property from the [windowsupdates-applicableContent](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicableContent?view=graph-rest-beta) resource.",
+                    "Target": "applicableContent"
+                },
+                {
+                    "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "matchedDevices",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **matchedDevices** relationship to the [windowsupdates-applicableContent](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicableContent?view=graph-rest-beta) resource.",
+                    "Target": "applicableContent"
+                },
+                {
+                    "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "catalogEntryId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **catalogEntryId** property to the [windowsupdates-applicableContent](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicableContent?view=graph-rest-beta) resource.",
+                    "Target": "applicableContent"
+                },
+                 {
+                    "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                    "ApiChange": "Property",
+                    "ChangedApiName": " deviceId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **deviceId** navigation property from the [windowsupdates-applicablecontentdevicematch](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicablecontentdevicematch?view=graph-rest-beta) resource.",
+                    "Target": "applicablecontentdevicematch"
+                },
+                  {
+                    "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": " device",
+                    "ChangeType": "Deletion",
+                    "Description": "Deleted the **device** property to the [windowsupdates-applicablecontentdevicematch](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-applicablecontentdevicematch?view=graph-rest-beta) resource.",
+                    "Target": "applicablecontentdevicematch"
+                }
+            ],
+            "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
+            "Cloud": "Review",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-31T23:34:50.3183446Z",
+            "WorkloadArea": "Microsoft.WindowsUpdates",
+            "SubArea": ""
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "e626fecf-cb33-4f9e-b636-52dc538a8f31",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "offerAsOptional",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **offerAsOptional** property to the [userExperienceSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-userexperiencesettings?view=graph-rest-beta) resource.",
+                    "Target": "featureUpdateCatalogEntry"
+                },
+                {
+                    "Id": "e626fecf-cb33-4f9e-b636-52dc538a8f31",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "isReadinessTest",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **isReadinessTest** property to the [expediteSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-expeditesettings?view=graph-rest-beta) resource.",
+                    "Target": "qualityUpdateCatalogEntry"
+                }
+            ],
+            "Id": "e626fecf-cb33-4f9e-b636-52dc538a8f31",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-29T01:25:48.971Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Device updates"
+        },
         {
             "ChangeList": [
                 {

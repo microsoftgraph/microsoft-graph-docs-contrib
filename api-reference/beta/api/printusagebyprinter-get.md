@@ -3,7 +3,7 @@ title: Get printUsageByPrinter
 description: Retrieve a printer's usage summary for a particular time period.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 ms.date: 2/4/2020
 doc_type: apiPageType
 ---
@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

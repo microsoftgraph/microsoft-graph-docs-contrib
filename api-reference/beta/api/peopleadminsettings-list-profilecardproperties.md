@@ -44,7 +44,7 @@ This method supports the `$select`, `$filter`, and `$orderby` OData query parame
 
 | Name          |Description                  |
 |:--------------|:----------------------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -127,7 +127,7 @@ Content-type: application/json
           "displayName": "Cost Center",
           "localizations": [
             {
-              "languageTag": "ru-RU",
+              "languageTag": "ru",
               "displayName": "центр затрат"
             }
           ]

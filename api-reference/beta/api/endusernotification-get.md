@@ -3,7 +3,7 @@ title: "Get endUserNotification"
 description: "Read the properties and relationships of an endUserNotification object."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -45,7 +45,7 @@ This method does not currently support the [OData query parameters](/graph/query
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -33,7 +33,7 @@ DELETE /chats/{chat-id}/tabs/{tab-id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -102,7 +102,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-## See also
+## Related content
 
 - [Delete tab from channel](channel-delete-tabs.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

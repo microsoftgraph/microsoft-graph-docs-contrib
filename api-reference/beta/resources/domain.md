@@ -3,7 +3,7 @@ title: "domain resource type"
 description: "Represents a domain associated with the tenant."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -54,7 +54,7 @@ To associate a domain with a tenant:
 |id|String| The fully qualified name of the domain. Key, immutable, not nullable, unique. |
 |isAdminManaged|Boolean| The value of the property is `false` if the DNS record management of the domain has been delegated to Microsoft 365. Otherwise, the value is `true`. Not nullable |
 |isDefault|Boolean| `true` if this is the default domain that is used for user creation. There is only one default domain per company. Not nullable |
-|isInitial|Boolean| `true` if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com). There is only one initial domain per company. Not nullable |
+|isInitial|Boolean| `true` if this is the initial domain created by Microsoft Online Services (contoso.com). There is only one initial domain per company. Not nullable |
 |isRoot|Boolean| `true` if the domain is a verified root domain. Otherwise, `false` if the domain is a subdomain or unverified. Not nullable |
 |isVerified|Boolean| `true` if the domain has completed domain ownership verification. Not nullable |
 |passwordNotificationWindowInDays|Int32|Specifies the number of days before a user receives notification that their password will expire. If the property is not set, a default value of 14 days will be used.|

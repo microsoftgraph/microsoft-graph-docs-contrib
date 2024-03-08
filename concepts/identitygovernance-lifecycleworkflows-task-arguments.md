@@ -1,7 +1,7 @@
 ---
 title: "Configure the arguments for built-in Lifecycle Workflow tasks"
 description: "Configure the arguments for built-in Lifecycle Workflow tasks. Learn the allowed configurations for the arguments property of various built-in tasks in Lifecycle Workflows."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: alexander.filipin
 ms.localizationpriority: medium
@@ -88,6 +88,6 @@ The following example shows a task configuration to add a user to a Teams team. 
 }
 ```
 
-## Next steps
+## Related content
 
 + [Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)

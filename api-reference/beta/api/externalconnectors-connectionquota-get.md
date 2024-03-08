@@ -3,7 +3,7 @@ title: "Get connectionQuota"
 description: "Retrieve the properties and relationships of a connectionQuota."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 
@@ -40,7 +40,7 @@ This method supports all [OData query parameters](/graph/query-parameters) to he
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

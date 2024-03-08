@@ -3,7 +3,7 @@ title: "Delete contactFolder"
 description: "Delete contactFolder other than the default contactFolder."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

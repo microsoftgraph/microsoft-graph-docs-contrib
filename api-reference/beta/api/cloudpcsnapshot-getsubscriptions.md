@@ -3,7 +3,7 @@ title: "cloudPCSnapshot: getSubscriptions"
 description: "List all subscriptions that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis."
 author: "xhan2077"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ GET /deviceManagement/virtualEndpoint/snapshots/getSubscriptions
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

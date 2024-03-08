@@ -40,7 +40,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -154,14 +154,14 @@ Content-Type: application/json
                     "id": "f5417b06-cdae-417f-9589-a334104206cf",
                     "assigneeId": "f5417b06-cdae-417f-9589-a334104206cf",
                     "assigneeDisplayName": "testUser1",
-                    "assigneeUserPrincipalName": "testuser1@anujcoffice.onmicrosoft.com"
+                    "assigneeUserPrincipalName": "testuser1@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
                     "id": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
                     "assigneeId": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
                     "assigneeDisplayName": "testUser2",
-                    "assigneeUserPrincipalName": "testuser2@anujcoffice.onmicrosoft.com"
+                    "assigneeUserPrincipalName": "testuser2@contoso.com"
                 }
             ]
         }

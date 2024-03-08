@@ -1,9 +1,9 @@
 ---
 title: printer resource type
-description: Represents a physical printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
+description: "Represents a physical printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status."
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -50,6 +50,7 @@ This resource supports:
 |defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings.|
 |capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer.|
 |lastSeenDateTime|DateTimeOffset|The most recent dateTimeOffset when a printer interacted with Universal Print. Read-only.|
+|releaseMechanisms|[printReleaseMechanism](printreleasemechanism.md) collection|The release mechanisms supported by the printer.|
 
 ## Relationships
 | Relationship | Type        | Description |
@@ -61,7 +62,7 @@ This resource supports:
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -87,7 +88,12 @@ The following is a JSON representation of the resource.
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
   "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"},
-  "lastSeenDateTime": "String (timestamp)"
+  "lastSeenDateTime": "String (timestamp)",
+  "releaseMechanisms": [
+    {
+      "@odata.type": "microsoft.graph.printReleaseMechanism"
+    }
+  ]
 }
 ```
 

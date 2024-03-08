@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 M365AppsInstallationOptions m365AppsInstallationOptions = new M365AppsInstallationOptions();
-m365AppsInstallationOptions.updateChannel = AppsUpdateChannelType.CURRENT;
+m365AppsInstallationOptions.setUpdateChannel(AppsUpdateChannelType.Current);
+M365AppsInstallationOptions result = graphClient.admin().microsoft365Apps().installationOptions().patch(m365AppsInstallationOptions);
 
-graphClient.admin().microsoft365Apps().installationOptions()
-	.buildRequest()
-	.patch(m365AppsInstallationOptions);
 
 ```

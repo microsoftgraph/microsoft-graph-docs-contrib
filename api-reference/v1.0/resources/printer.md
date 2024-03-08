@@ -1,9 +1,9 @@
 ---
 title: printer resource type
-description: Represents a physical printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
+description: "Represents a physical printer device that is registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status."
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
+Represents a printer device that is registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
 
 This resource supports:
 * [Subscribing to change notifications](/graph/universal-print-webhook-notifications).
@@ -49,8 +49,8 @@ Inherits from [printerBase](../resources/printerbase.md).
 |manufacturer|String|The manufacturer reported by the printer. Inherited from [printerBase](../resources/printerbase.md).|
 |model|String|The model name reported by the printer. Inherited from [printerBase](../resources/printerbase.md).|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the printer was registered. Read-only.|
+|releaseMechanisms|[printReleaseMechanism](printreleasemechanism.md) collection|The release mechanisms supported by the printer.|
 |status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors. Inherited from [printerBase](../resources/printerbase.md).|
-
 
 ## Relationships
 |Relationship|Type|Description|
@@ -93,7 +93,12 @@ The following is a JSON representation of the resource.
   "registeredDateTime": "String (timestamp)",
   "isShared": "Boolean",
   "hasPhysicalDevice": "Boolean",
-  "lastSeenDateTime": "String (timestamp)"
+  "lastSeenDateTime": "String (timestamp)",
+  "releaseMechanisms": [
+    {
+      "@odata.type": "microsoft.graph.printReleaseMechanism"
+    }
+  ]
 }
 ```
 

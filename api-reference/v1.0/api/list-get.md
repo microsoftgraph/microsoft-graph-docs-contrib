@@ -31,6 +31,12 @@ GET /sites/{site-id}/lists/{list-title}
 GET /sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
 ## Request body
 
 Do not supply a request body with this method.

@@ -1,9 +1,9 @@
 ---
 title: Get printer
-description: Retrieve the properties and relationships of a printer object.
+description: "Retrieve the properties and relationships of a printer object."
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -45,13 +45,13 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [printer](../resources/printer.md) object in the response body.
-By default, the response won't contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 
+By default, the response doesn't contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 
 
 ## Example
 ### Request
@@ -121,6 +121,11 @@ Content-type: application/json
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
   "isAcceptingJobs": true,
+  "releaseMechanisms": [
+    {
+      "releaseType": "direct"
+    }
+  ],
   "status": {
      "state": "stopped",
     "details": [

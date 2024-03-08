@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-WhoisRecord whoisRecord = graphClient.security().threatIntelligence().whoisRecords("Y29udG9zby5jb20kJDY5NjQ3ODEyMDc3NDY1NzI0MzM=")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.security.WhoisRecord result = graphClient.security().threatIntelligence().whoisRecords().byWhoisRecordId("{whoisRecord-id}").get();
+
 
 ```

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # governanceRoleAssignment resource type
@@ -23,7 +24,7 @@ Privileged Identity Management (PIM) supports two types of assignments:
 
 ## Methods
 
-| Method		  | Return Type	|Description|
+| Method          | Return Type    |Description|
 |:------------|:--------|:--------|
 |[Get](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Read properties and relationships of a role assignment entity.|
 |[List](../api/governanceroleassignment-list.md) | [governanceRoleAssignment](../resources/governanceroleassignment.md) collection|List a collection of role assignments on a resource. |
@@ -32,7 +33,7 @@ Privileged Identity Management (PIM) supports two types of assignments:
 No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssignments` entity set. Any create, update, and delete operations on `governanceRoleAssignment` are done by `governanceRoleAssignmentRequest`.
 
 ## Properties
-| Property	| Type	    |Description|
+| Property    | Type        |Description|
 |:----------|:----------|:----------|
 |id         |String     |The ID of the role assignment. It is in GUID format.|
 |resourceId |String     |Required. The ID of the resource that the role assignment is associated with. |
@@ -47,7 +48,7 @@ No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssi
 
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Read-only. The resource associated with the role assignment. |
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Read-only. The role definition associated with the role assignment. |

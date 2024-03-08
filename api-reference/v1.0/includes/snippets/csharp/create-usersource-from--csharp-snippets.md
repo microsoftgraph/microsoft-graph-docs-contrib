@@ -11,7 +11,7 @@ using Microsoft.Graph.Models.Security;
 
 var requestBody = new UserSource
 {
-	Email = "admin@M365x809305.onmicrosoft.com",
+	Email = "admin@contoso.com",
 	IncludedSources = SourceType.Mailbox | SourceType.Site,
 };
 

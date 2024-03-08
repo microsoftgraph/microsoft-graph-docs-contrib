@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "rkarim-ms"
 ms.prod: "governance"
 doc_type: conceptualPageType
+ROBOTS: NOINDEX
 ---
 
 # Privileged Identity Management - Azure resources

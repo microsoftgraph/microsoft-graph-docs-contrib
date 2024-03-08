@@ -32,6 +32,11 @@ GET /sites/{site-id}/items/{item-id}/versions/{version-id}
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MailSearchFolder mailFolder = new MailSearchFolder();
-mailFolder.displayName = "Weekly digests";
-mailFolder.includeNestedFolders = true;
-LinkedList<String> sourceFolderIdsList = new LinkedList<String>();
-sourceFolderIdsList.add("AQMkADYAAAIBDAAAAA==");
-mailFolder.sourceFolderIds = sourceFolderIdsList;
-mailFolder.filterQuery = "contains(subject, 'weekly digest')";
+mailFolder.setOdataType("microsoft.graph.mailSearchFolder");
+mailFolder.setDisplayName("Weekly digests");
+mailFolder.setIncludeNestedFolders(true);
+LinkedList<String> sourceFolderIds = new LinkedList<String>();
+sourceFolderIds.add("AQMkADYAAAIBDAAAAA==");
+mailFolder.setSourceFolderIds(sourceFolderIds);
+mailFolder.setFilterQuery("contains(subject, 'weekly digest')");
+MailFolder result = graphClient.me().mailFolders().byMailFolderId("{mailFolder-id}").childFolders().post(mailFolder);
 
-graphClient.me().mailFolders("AQMkADYAAAIBDAAAAA==").childFolders()
-	.buildRequest()
-	.post(mailFolder);
 
 ```

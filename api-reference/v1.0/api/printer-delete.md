@@ -3,7 +3,7 @@ title: "Delete printer"
 description: "Delete (unregister) a printer."
 author: "nilakhan"
 ms.localizationpriority: medium
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ DELETE /print/printers/{printerId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

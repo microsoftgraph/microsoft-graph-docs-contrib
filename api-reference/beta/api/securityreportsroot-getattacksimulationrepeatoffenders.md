@@ -3,7 +3,7 @@ title: "securityReportsRoot: getAttackSimulationRepeatOffenders"
 description: "List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ GET /reports/getAttackSimulationRepeatOffenders
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -135,5 +135,5 @@ Content-Type: application/json
 
 ```
 
-## See also
+## Related content
 [reportRoot: getAttackSimulationRepeatOffenders](reportroot-getattacksimulationrepeatoffenders.md) (deprecated)

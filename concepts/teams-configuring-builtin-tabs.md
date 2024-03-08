@@ -139,6 +139,6 @@ Configuration is not supported.
 
 Custom tabs built using SharePoint Framework can be created using Microsoft Graph, but configuration is not supported.
 
-## See also
+## Related content
 
 - [Microsoft Teams API overview](teams-concept-overview.md)

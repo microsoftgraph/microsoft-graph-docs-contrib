@@ -26,7 +26,7 @@ Singleton entity which represents the Exchange OnPremises Conditional Access Set
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |enabled|Boolean|Indicates if on premises conditional access is enabled for this organization|
 |includedGroups|Guid collection|User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.|
 |excludedGroups|Guid collection|User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy.|

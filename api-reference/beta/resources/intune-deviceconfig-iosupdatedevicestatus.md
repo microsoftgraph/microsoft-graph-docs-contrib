@@ -1,6 +1,6 @@
 ---
 title: "iosUpdateDeviceStatus resource type"
-description: ""
+description: "Intune Deviceconfig Iosupdatedevicestatus Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

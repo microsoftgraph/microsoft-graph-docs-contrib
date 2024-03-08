@@ -29,10 +29,10 @@ Inherits from [managedAppConfiguration](../resources/intune-mam-managedappconfig
 |[Delete targetedManagedAppConfiguration](../api/intune-shared-targetedmanagedappconfiguration-delete.md)|None|Deletes a [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md).|
 |[Update targetedManagedAppConfiguration](../api/intune-shared-targetedmanagedappconfiguration-update.md)|[targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md)|Update the properties of a [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md) object.|
 |**Mobile app management (MAM)**|
-|[assign action](../api/intune-shared-targetedmanagedappconfiguration-assign.md)|None|Not yet documented|
-|[targetApps action](../api/intune-shared-targetedmanagedappconfiguration-targetapps.md)|None|Not yet documented|
+|[assign action](../api/intune-shared-targetedmanagedappconfiguration-assign.md)|None||
+|[targetApps action](../api/intune-shared-targetedmanagedappconfiguration-targetapps.md)|None||
 |**Policy Set**|
-|[hasPayloadLinks action](../api/intune-shared-targetedmanagedappconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
+|[hasPayloadLinks action](../api/intune-shared-targetedmanagedappconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
 
 ## Properties
 |Property|Type|Description|

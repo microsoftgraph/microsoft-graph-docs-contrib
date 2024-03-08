@@ -3,7 +3,7 @@ title: "Delete educationAssignmentResource"
 description: "Delete a specific resource attached to an assignment."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ DELETE /education/classes/{class-id}/assignments/{assignment-id}/resources/{reso
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

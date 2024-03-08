@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: "governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # Privileged Identity Management iteration 2 APIs

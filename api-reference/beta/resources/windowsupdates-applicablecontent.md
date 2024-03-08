@@ -18,27 +18,26 @@ Represents content applicable for offering to the related collection of devices.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|matchedDevices|[microsoft.graph.windowsUpdates.applicableContentDeviceMatch](../resources/windowsupdates-applicablecontentdevicematch.md) collection|Collection of devices and recommendations for applicable catalog content.|
+|catalogEntryId|String|ID of the catalog entry for the applicable content.|
 
 ## Relationships
 | Relationship | Type                                                                                       | Description                              |
 |:-------------|:-------------------------------------------------------------------------------------------|:-----------------------------------------|
 | catalogEntry | [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) | Catalog entry for the update or content. |
+|matchedDevices|[microsoft.graph.windowsUpdates.applicableContentDeviceMatch](../resources/windowsupdates-applicablecontentdevicematch.md) collection|Collection of devices and recommendations for applicable catalog content.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.windowsUpdates.applicableContent"
+  "@odata.type": "microsoft.graph.windowsUpdates.applicableContent",
+  "keyProperty": "catalogEntryId"
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.applicableContent",
-  "matchedDevices": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.applicableContentDeviceMatch"
-    }
-  ]
+  "catalogEntryId": "String (identifier)"
 }
 ```

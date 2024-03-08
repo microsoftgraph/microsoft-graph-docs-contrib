@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementConfigurationWindowsSkus enum type"
-description: "Not yet documented"
+description: "Intune Deviceconfigv2 Devicemanagementconfigurationwindowsskus Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,23 +15,23 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Not yet documented|
-|windowsHome|1|Not yet documented|
-|windowsProfessional|2|Not yet documented|
-|windowsEnterprise|3|Not yet documented|
-|windowsEducation|4|Not yet documented|
-|windowsMobile|5|Not yet documented|
-|windowsMobileEnterprise|6|Not yet documented|
-|windowsTeamSurface|7|Not yet documented|
-|iot|8|Not yet documented|
-|iotEnterprise|9|Not yet documented|
-|holoLens|10|Not yet documented|
-|holoLensEnterprise|11|Not yet documented|
-|holographicForBusiness|12|Not yet documented|
-|windowsMultiSession|13|Not yet documented|
-|surfaceHub|14|Not yet documented|
+|unknown|0||
+|windowsHome|1||
+|windowsProfessional|2||
+|windowsEnterprise|3||
+|windowsEducation|4||
+|windowsMobile|5||
+|windowsMobileEnterprise|6||
+|windowsTeamSurface|7||
+|iot|8||
+|iotEnterprise|9||
+|holoLens|10||
+|holoLensEnterprise|11||
+|holographicForBusiness|12||
+|windowsMultiSession|13||
+|surfaceHub|14||

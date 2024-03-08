@@ -4,67 +4,53 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standard Time\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<AttendeeBase> attendeesList = new LinkedList<AttendeeBase>();
-AttendeeBase attendees = new AttendeeBase();
-attendees.type = AttendeeType.REQUIRED;
+com.microsoft.graph.beta.users.item.findmeetingtimes.FindMeetingTimesPostRequestBody findMeetingTimesPostRequestBody = new com.microsoft.graph.beta.users.item.findmeetingtimes.FindMeetingTimesPostRequestBody();
+LinkedList<AttendeeBase> attendees = new LinkedList<AttendeeBase>();
+AttendeeBase attendeeBase = new AttendeeBase();
+attendeeBase.setType(AttendeeType.Required);
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.name = "Alex Wilbur";
-emailAddress.address = "alexw@contoso.onmicrosoft.com";
-attendees.emailAddress = emailAddress;
-
-attendeesList.add(attendees);
-
+emailAddress.setName("Alex Wilbur");
+emailAddress.setAddress("alexw@contoso.com");
+attendeeBase.setEmailAddress(emailAddress);
+attendees.add(attendeeBase);
+findMeetingTimesPostRequestBody.setAttendees(attendees);
 LocationConstraint locationConstraint = new LocationConstraint();
-locationConstraint.isRequired = false;
-locationConstraint.suggestLocation = false;
-LinkedList<LocationConstraintItem> locationsList = new LinkedList<LocationConstraintItem>();
-LocationConstraintItem locations = new LocationConstraintItem();
-locations.resolveAvailability = false;
-locations.displayName = "Conf room Hood";
-locationsList.add(locations);
-locationConstraint.locations = locationsList;
-
+locationConstraint.setIsRequired(false);
+locationConstraint.setSuggestLocation(false);
+LinkedList<LocationConstraintItem> locations = new LinkedList<LocationConstraintItem>();
+LocationConstraintItem locationConstraintItem = new LocationConstraintItem();
+locationConstraintItem.setResolveAvailability(false);
+locationConstraintItem.setDisplayName("Conf room Hood");
+locations.add(locationConstraintItem);
+locationConstraint.setLocations(locations);
+findMeetingTimesPostRequestBody.setLocationConstraint(locationConstraint);
 TimeConstraint timeConstraint = new TimeConstraint();
-timeConstraint.activityDomain = ActivityDomain.WORK;
-LinkedList<TimeSlot> timeSlotsList = new LinkedList<TimeSlot>();
-TimeSlot timeSlots = new TimeSlot();
+timeConstraint.setActivityDomain(ActivityDomain.Work);
+LinkedList<TimeSlot> timeSlots = new LinkedList<TimeSlot>();
+TimeSlot timeSlot = new TimeSlot();
 DateTimeTimeZone start = new DateTimeTimeZone();
-start.dateTime = "2019-04-16T09:00:00";
-start.timeZone = "Pacific Standard Time";
-timeSlots.start = start;
+start.setDateTime("2019-04-16T09:00:00");
+start.setTimeZone("Pacific Standard Time");
+timeSlot.setStart(start);
 DateTimeTimeZone end = new DateTimeTimeZone();
-end.dateTime = "2019-04-18T17:00:00";
-end.timeZone = "Pacific Standard Time";
-timeSlots.end = end;
-timeSlotsList.add(timeSlots);
-timeConstraint.timeSlots = timeSlotsList;
+end.setDateTime("2019-04-18T17:00:00");
+end.setTimeZone("Pacific Standard Time");
+timeSlot.setEnd(end);
+timeSlots.add(timeSlot);
+timeConstraint.setTimeSlots(timeSlots);
+findMeetingTimesPostRequestBody.setTimeConstraint(timeConstraint);
+findMeetingTimesPostRequestBody.setIsOrganizerOptional(false);
+PeriodAndDuration meetingDuration = PeriodAndDuration.ofDuration(Duration.parse("PT1H"));
+findMeetingTimesPostRequestBody.setMeetingDuration(meetingDuration);
+findMeetingTimesPostRequestBody.setReturnSuggestionReasons(true);
+findMeetingTimesPostRequestBody.setMinimumAttendeePercentage(100d);
+var result = graphClient.me().findMeetingTimes().post(findMeetingTimesPostRequestBody, requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
 
-boolean isOrganizerOptional = false;
-
-Duration meetingDuration = DatatypeFactory.newInstance().newDuration("PT1H");
-
-boolean returnSuggestionReasons = true;
-
-Double minimumAttendeePercentage = 100d;
-
-graphClient.me()
-	.findMeetingTimes(UserFindMeetingTimesParameterSet
-		.newBuilder()
-		.withAttendees(attendeesList)
-		.withLocationConstraint(locationConstraint)
-		.withTimeConstraint(timeConstraint)
-		.withMeetingDuration(meetingDuration)
-		.withMaxCandidates(null)
-		.withIsOrganizerOptional(isOrganizerOptional)
-		.withReturnSuggestionReasons(returnSuggestionReasons)
-		.withMinimumAttendeePercentage(minimumAttendeePercentage)
-		.build())
-	.buildRequest( requestOptions )
-	.post();
 
 ```

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.solutions.bookingBusinesses.item.calendarView.calendar_view_request_builder import CalendarViewRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

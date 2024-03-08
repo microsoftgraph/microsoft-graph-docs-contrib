@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/appointments
+POST /solutions/bookingbusinesses/{id}/appointments
 
 ```
 
@@ -48,7 +48,7 @@ In the request body, supply a JSON representation of [bookingAppointment](../res
 If the maximum number of customers (**maximumAttedeesCount**) allowed in the [service](../resources/bookingservice.md) is greater than 1:
 
 - Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md) operation.
-- Pass valid customer IDs when you create or update the appointment. If the customer ID is not valid, that customer won't be included in the appointment object.
+- Pass valid customer IDs when you create or update the appointment. If the customer ID is invalid, that customer isn't included in the appointment object.
 
 ## Response
 
@@ -58,19 +58,19 @@ If successful, this method returns a `201 Created` response code and a [bookingA
 
 ### Request
 
-The following example shows a request. This appointment does not involve booking specific staff members.
+The following example shows a request. This appointment doesn't involve booking specific staff members.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_bookingappointment_from_bookingbusiness",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/appointments
 Content-type: application/json
 
-{   
+{
     "@odata.type":"#microsoft.graph.bookingAppointment",
     "customerEmailAddress":"jordanm@contoso.com",
     "customerLocation":{
@@ -115,6 +115,7 @@ Content-type: application/json
     "invoiceId":"1001",
     "invoiceStatus@odata.type":"#microsoft.graph.bookingInvoiceStatus",
     "invoiceStatus":"open",
+    "isCustomerAllowedToManageBooking": true,
     "invoiceUrl":"theInvoiceUrl",
     "isLocationOnline": true,
     "optOutOfCustomerEmail": false,
@@ -277,7 +278,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/appointments/$entity",
     "id": "AAMkADc7zF4J0AAA8v_KnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
     "isLocationOnline": true,
@@ -304,6 +305,7 @@ Content-type: application/json
     "invoiceId": "1001",
     "invoiceStatus": "open",
     "invoiceUrl": "theInvoiceUrl",
+    "isCustomerAllowedToManageBooking": true,
     "customerLocation": {
         "displayName": "Customer",
         "locationEmailAddress": null,

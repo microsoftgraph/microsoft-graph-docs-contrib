@@ -3,7 +3,7 @@ title: "samlSingleSignOnSettings resource type"
 description: "Represents the SAML single sign-on settings."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 

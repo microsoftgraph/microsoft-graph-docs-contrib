@@ -40,7 +40,7 @@ POST /deviceManagement/reports/exportJobs
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -50,17 +50,18 @@ The following table shows the properties that are required when you create the d
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for this entity|
-|reportName|String|Name of the report|
-|filter|String|Filters applied on the report|
-|select|String collection|Columns selected from the report|
-|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the exported report. Possible values are: `csv`, `pdf`, `json`, `unknownFutureValue`.|
-|snapshotId|String|A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.|
-|localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Configures how the requested export job is localized. Possible values are: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the export job. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
-|url|String|Temporary location of the exported report|
-|requestDateTime|DateTimeOffset|Time that the exported report was requested|
-|expirationDateTime|DateTimeOffset|Time that the exported report expires|
+|id|String|Unique identifier for this entity.|
+|reportName|String|Name of the report. The maximum length allowed for this property is 2000 characters.|
+|filter|String|Filters applied on the report. The maximum length allowed for this property is 2000 characters.|
+|select|String collection|Columns selected from the report. The maximum number of allowed columns names is 256. The maximum length allowed for each column name in this property is 1000 characters.|
+|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the exported report. Possible values are `csv` and `json`. Possible values are: `csv`, `pdf`, `json`, `unknownFutureValue`.|
+|snapshotId|String|A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id. The maximum length allowed for this property is 128 characters.|
+|localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Configures how the requested export job is localized. Possible values are `replaceLocalizableValues` and `localizedValuesAsAdditionalColumn`. Possible values are: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
+|search|String|Configures a search term to filter the data. The maximum length allowed for this property is 100 characters.|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the export job. Possible values are `unknown`, `notStarted`, `inProgress`, `completed` and `failed`. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|url|String|Temporary location of the exported report.|
+|requestDateTime|DateTimeOffset|Time that the exported report was requested.|
+|expirationDateTime|DateTimeOffset|Time that the exported report expires.|
 
 
 
@@ -74,7 +75,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/reports/exportJobs
 Content-type: application/json
-Content-length: 455
+Content-length: 484
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -86,6 +87,7 @@ Content-length: 455
   "format": "pdf",
   "snapshotId": "Snapshot Id value",
   "localizationType": "replaceLocalizableValues",
+  "search": "Search value",
   "status": "notStarted",
   "url": "Url value",
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
@@ -98,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 504
+Content-Length: 533
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -111,6 +113,7 @@ Content-Length: 504
   "format": "pdf",
   "snapshotId": "Snapshot Id value",
   "localizationType": "replaceLocalizableValues",
+  "search": "Search value",
   "status": "notStarted",
   "url": "Url value",
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",

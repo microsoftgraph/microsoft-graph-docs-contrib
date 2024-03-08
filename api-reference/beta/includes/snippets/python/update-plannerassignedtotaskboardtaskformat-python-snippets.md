@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.planner.tasks.item.assignedToTaskBoardFormat.assigned_to_task_board_format_request_builder import AssignedToTaskBoardFormatRequestBuilder
+from msgraph.generated.models.planner_assigned_to_task_board_task_format import PlannerAssignedToTaskBoardTaskFormat
+from msgraph.generated.models.planner_order_hints_by_assignee import PlannerOrderHintsByAssignee
 
 graph_client = GraphServiceClient(credentials, scopes)
 

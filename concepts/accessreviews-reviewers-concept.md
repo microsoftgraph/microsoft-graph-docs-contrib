@@ -1,7 +1,7 @@
 ---
 title: "Assign reviewers to your access review using the Microsoft Graph API"
 description: "Use the access reviews API in Microsoft Graph to assign access reviewers such as specific users, members or owners of a group, people managers, or app owners."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.localizationpriority: medium
@@ -117,7 +117,7 @@ If the corresponding access review **scope** targets B2B direct connect users an
 ]
 ```
 
-## Next steps
+## Related content
 
 + [Configure the scope of your access review definition](/graph/accessreviews-scope-concept)
 + [Try out tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Microsoft Entra resources

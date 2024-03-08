@@ -23,7 +23,7 @@ The following table lists the metered APIs and services.
 | Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update) | [Teams API payment models and licensing requirements](teams-licenses.md) |
 | SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) | $0.00185 (USD) per API call<br/>[Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup) |
 
-## See also
+## Related content
 
 - [Overview of metered APIs and services in Microsoft Graph](/graph/metered-api-overview)
 - [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup)

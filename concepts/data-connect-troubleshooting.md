@@ -22,8 +22,8 @@ If you're having issues running your pipelines for the first time, verify that y
 
     - A valid mailbox, either via an Exchange Online license or an Exchange Online plan within an Office 365 or Microsoft 365 license.
 
-    - An Office 365 or Microsoft 365 E5 subscription assigned. No specific services within the license need to be enabled unless the user does not have a separate Exchange Online license, in which case the Exchange Online plan must be enabled.  
-        **Note:** This account does not need the Global Admin role enabled. This is only required for Approver accounts that approve requests through the admin center.
+    - An Office 365 or Microsoft 365 E5 subscription assigned. No specific services within the license need to be enabled unless the user doesn't have a separate Exchange Online license, in which case the Exchange Online plan must be enabled.  
+        **Note:** This account doesn't need the Global Admin role enabled. This is only required for Approver accounts that approve requests through the admin center.
 
     - Because Data Connect uses the Privilege Access Management system to generate consent requests, E5 licenses are required. For details, see [Integrate with PAM](/graph/data-connect-pam) and [Get started with privileged access management](/microsoft-365/compliance/privileged-access-management-configuration).
 
@@ -37,20 +37,20 @@ If you're having issues approving jobs within your tenant for your specified pip
 
 - The user account must have an Office 365 or Microsoft 365 E5 license with Exchange Online capabilities and a mailbox.
 
-- If approvers want to approve jobs through the Microsoft 365 admin center, they need global admin privileges. Global admin privileges are not needed when approving jobs via [PowerShell script](/graph/data-connect-pam#approve-deny-and-revoke-requests-by-using-powershell) .
+- If approvers want to approve jobs through the Microsoft 365 admin center, they need global admin privileges. Global admin privileges aren't needed when approving jobs via [PowerShell script](/graph/data-connect-pam#approve-deny-and-revoke-requests-by-using-powershell) .
 
 
 ## Multi-geo tenant extraction issues
 
-Sometimes, customers might want to add other regions to their pipelines, especially larger customers with multi-geo tenants. While multi-geo tenants can still use Microsoft Graph Data Connect, be aware that when customers request data, they can only extract data for one region. Customers cannot use one pipeline to extract data from multiple regions. Data Connect enforces this rule for the privacy and security of a customer's tenant users. 
+Sometimes, customers might want to add other regions to their pipelines, especially larger customers with multi-geo tenants. While multi-geo tenants can still use Microsoft Graph Data Connect, be aware that when customers request data, they can only extract data for one region. Customers can't use one pipeline to extract data from multiple regions. Data Connect enforces this rule for the privacy and security of a customer's tenant users. 
 
 Keep the following in mind when customers with multi-geo tenants extract data:
 
-- Data Connect only allows datasets to be extracted from the same region as the tenant. For example, if you have a tenant in Europe (EUR) but want to run your pipeline for your users in North America (NAM), you will only get data for users in NAM, because you specified a pipeline for NAM.
+- Data Connect only allows datasets to be extracted from the same region as the tenant. For example, if you have a tenant in Europe (EUR) but want to run your pipeline for your users in North America (NAM), you only get data for users in NAM, because you specified a pipeline for NAM.
 
 - Multi-geo tenants can extract data for their tenants by setting up region-specific pipelines. For example, one region maps to one or a set of pipelines for that region. 
 
-## Aggregating mutliple JSON file outputs
+## Aggregating multiple JSON file outputs
 
 To combine files:
 
@@ -70,12 +70,12 @@ You can resolve this issue with an SSP request: `INTERNT PROXY (SWG) - EXCEPTION
 
 ## Issues adding network IP address to allow list with Azure integration runtime
 
-If the destination storage account needs to be closed for public access, you need to allow access for a particular set of Azure service IP addresses. Customers will need to allow list IPs based on the targeted Office region. To do this:
+If the destination storage account needs to be closed for public access, you need to allow access for a particular set of Azure service IP addresses. Customers need to allow list IPs based on the targeted Office region. To do this:
 
 1. Find an Office-to-Azure region mapping. To look up which Office region you will be extracting user data from, see the following table.
 
 > [!NOTE]
-> The Azure region you're running a pipeline in must map to an Office region to extract the users for the tenant. Microsoft Graph Data Connect does not extract data across regions. For example, if you're running a pipeline in the West Europe Azure region, it will only extract the users for the Europe (EUR) Office region because the West Europe Azure region maps to the Europe Office region.
+> The Azure region you're running a pipeline in must map to an Office region to extract the users for the tenant. Microsoft Graph Data Connect doesn't extract data across regions. For example, if you're running a pipeline in the West Europe Azure region, it only extracts the users for the Europe (EUR) Office region because the West Europe Azure region maps to the Europe Office region.
 
 2. After you find the Office to Azure mapping, you need to determine the compatible location of your destination storage account (see the following table). You can look up how to configure your Azure storage account and [grant access from an internet IP range](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range). 
 
@@ -127,9 +127,9 @@ The following example describes how to troubleshoot network access issue:
 
 4.	The user needs to identify where their compatible destination storage account can be based on the Office region I want to extract (EUR).
 
-5.	Because they cannot add allow list services in the same region as the storage account, the destination storage account cannot be on the West Europe Azure region. They can create a new storage account in North Europe.
+5.	Because they can't add allow list services in the same region as the storage account, the destination storage account can't be on the West Europe Azure region. They can create a new storage account in North Europe.
 
-6.	For Data Connect internal services to copy the data into the destination storage account, they need to add IP addresses to the allow list from compatible regions based on their Office region (EUR). They will need to add ADF public IPs to the allow list in the West Europe Azure region. 
+6.	For Data Connect internal services to copy the data into the destination storage account, they need to add IP addresses to the allow list from compatible regions based on their Office region (EUR). They need to add ADF public IPs to the allow list in the West Europe Azure region. 
 
 7.	For the ADF destination linked service to also access the destination storage account, they need to create and use an Integration Runtime on the West Europe region, or use auto resolve IR instead.
 
@@ -141,7 +141,7 @@ First time runs of Microsoft Graph Data Connect and the mapping data flow activi
 
 1. The consent request is only valid for 24 hours. Contact your tenant admin to approve within this timeframe.  
 
-    a. If not approved in that timeframe, subsequent runs will fail with the same error and regenerate a consent request.
+    a. If not approved in that timeframe, subsequent runs fail with the same error and regenerate a consent request.
 
     b. When approved, the pipeline can be rerun at any time to retrieve data.
 
@@ -149,7 +149,39 @@ First time runs of Microsoft Graph Data Connect and the mapping data flow activi
 
 2. Verify that the destination storage is set up correctly to allow the app to write data into it.
 
-## See also
+## Issues with app registration
+
+The following scenarios provide troubleshooting information for registering a Microsoft Entra app with Microsoft Graph Data Connect.
+
+### No authorization
+
+In the [Microsoft Graph Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure), when you create or update a Microsoft Fabric app registration, the system tries to create a resource of type **Microsoft.GraphServices** for billing purposes.
+
+![Screenshot that shows an error encountered during the creation of a billing resource.](images/app-registration-unable-create-resource.png)
+
+The previous image indicates that you don't have the **Microsoft.GraphServices** resource provider registered nor permission to register it in the selected subscription. You need to request a subscription administrator to register this resource provider. For more information, see [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types) and [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup?tabs=azurecloudshell#enable-an-application). The following image shows a registered **Microsoft.GraphServices** resource provider.
+
+![Screenshot that shows the Microsoft.GraphServices resource provider that should be registered.](images/app-registration-graph-provider.png)
+
+Your subscription administrator can also use the following Azure CLI commands to create the required provider and resource.
+
+Register the resource provider:
+``` PowerShell
+az provider register --namespace 'Microsoft.GraphServices'
+```
+
+Create a billing resource for the app:
+``` PowerShell
+az resource create --resource-group <resource_group_name> --name mgdc-<app_id> --resource-type Microsoft.GraphServices/accounts --properties  "{`"appId`": `"<app_id>`"}" --location Global --subscription <subscription_id>
+```
+
+### Already premium usage
+
+The following error message indicates that a **Microsoft.GraphServices** type resource was already manually created for the app with a different name. This resource is used for billing purposes, and no further action is required.
+
+![Screenshot that shows an error for the already existent billing resource.](images/app-registration-already-premium-usage.png)
+
+## Related content
 
 - [Data Connect overview](data-connect-concept-overview.md)
 - [Data Connect FAQ](data-connect-faq.md)

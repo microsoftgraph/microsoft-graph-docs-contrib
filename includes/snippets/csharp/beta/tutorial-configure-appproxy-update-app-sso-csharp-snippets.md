@@ -31,7 +31,7 @@ var requestBody = new Application
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
+await graphClient.Applications["{application-id}"].PatchAs{application-id}PatchResponseAsync(requestBody);
 
 
 ```

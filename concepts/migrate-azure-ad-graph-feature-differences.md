@@ -1,11 +1,11 @@
 ---
 title: "Feature differences between Azure AD Graph and Microsoft Graph"
 description: "Describes feature differences between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API, in order to help you migrate apps quickly and easily."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.date: 11/11/2022
 #Customer intent: As a developer, I want to to understand how features differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
@@ -79,10 +79,10 @@ If your app is already storing state data, consider using the "sync from now" sh
 
 Azure AD Graph used a system called multi-part MIME messages to manage batching.  Microsoft Graph uses [JSON batching](json-batching.md) to permit up to 20 requests in a single batch operation. The JSON batching mechanism is simpler to use, especially together with JSON parsing libraries.  It also allows for sequencing batch operations.  However, it isn't backwards compatible with the Azure AD Graph batching approach.
 
-## Next Steps
+## Next step
 
-- Learn about [resource differences](migrate-azure-ad-graph-resource-differences.md) between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [!div class="nextstepaction"]
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)
 
 <!-- {
   "type": "#page.annotation",

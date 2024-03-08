@@ -25,8 +25,8 @@ Entity that stores the server log collection status.
 |[Create microsoftTunnelServerLogCollectionResponse](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-create.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Create a new [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) object.|
 |[Delete microsoftTunnelServerLogCollectionResponse](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-delete.md)|None|Deletes a [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md).|
 |[Update microsoftTunnelServerLogCollectionResponse](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-update.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Update the properties of a [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) object.|
-|[createDownloadUrl action](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-createdownloadurl.md)|String|Not yet documented|
-|[generateDownloadUrl action](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-generatedownloadurl.md)|String|Not yet documented|
+|[createDownloadUrl action](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-createdownloadurl.md)|String||
+|[generateDownloadUrl action](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-generatedownloadurl.md)|String||
 
 ## Properties
 |Property|Type|Description|

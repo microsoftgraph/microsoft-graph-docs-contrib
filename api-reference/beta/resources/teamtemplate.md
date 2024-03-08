@@ -48,7 +48,7 @@ Represents a logical container for all the definitions and versions of the same 
 }
 ```
 
-## See also
+## Related content
 
 - [team](team.md)
 - [teamTemplateDefinition](teamtemplatedefinition.md)

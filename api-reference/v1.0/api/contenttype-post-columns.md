@@ -35,6 +35,13 @@ POST /sites/{site-id}/contentTypes/{contentType-id}/columns
 POST /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
 ## Request body
 
 In the request body, supply a JSON representation of the [columnDefinition][] resource to add.  
@@ -58,7 +65,7 @@ POST https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-
 Content-Type: application/json
 
 {
-	"sourceColumn@odata.bind": "https://graph.microsoft.com/v1.0/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103"
+    "sourceColumn@odata.bind": "https://graph.microsoft.com/v1.0/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103"
 }
 ```
 

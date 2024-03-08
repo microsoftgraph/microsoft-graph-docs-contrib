@@ -3,7 +3,7 @@ title: "Create cloudPcExternalPartnerSetting"
 description: "Create a new cloudPcExternalPartnerSetting object."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /deviceManagement/virtualEndpoint/externalPartnerSettings
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -1,7 +1,7 @@
 ---
-title: "Review access to your security groups using the access reviews API in Microsoft Graph"
+title: "Review access to your security groups using access reviews APIs"
 description: "Learn how to use the access reviews API to review access to a security group in your Microsoft Entra tenant and test API calls before you automate them into scripts or apps."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ ms.date: 11/01/2022
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use the access reviews APIs to review and attest to the access that principals have to resources in my organization, so that I can ensure proper security and compliance in my organization.
 ---
 
-# Review access to your security groups using the access reviews API in Microsoft Graph
+# Review access to your security groups using access reviews APIs
 
 The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. One of the most efficient and effective methods to manage access privileges for principals to other resources is through Microsoft Entra security groups. For example, hundreds of users can be assigned to a security group and the security group assigned access to a folder. Using the access reviews API, organizations can periodically attest to principals that have access to such groups and by extension, other resources in the organization.
 
@@ -217,7 +217,7 @@ From the response, record the ID of the new group to use it later in this tutori
 ### Request
 
 In this call, replace the following values:
-+ `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` with the ID of the **Building security** group. The scope specifies that the review is applied to all members of the **Building security** group. For more options for configuring the scope, see the [See also](#see-also) section.
++ `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` with the ID of the **Building security** group. The scope specifies that the review is applied to all members of the **Building security** group. For more options for configuring the scope, see the [Related content](#related-content) section.
 + Value of **startDate** with today's date and value of **endDate** with a date five days from the start date.
 
 The access review has the following settings:
@@ -1004,7 +1004,8 @@ You've created an access review in which the principals have self-attested to th
 
 This tutorial has demonstrated one of the scenarios by the Microsoft Entra access reviews API. The access reviews API supports different scenarios through a combination of resources, principals, and reviewers to suit your access attestation needs. For more information, see the [access reviews API](/graph/api/resources/accessreviewsv2-overview).
 
-## See also
+## Related content
 
 + [What are Microsoft Entra access reviews?](/azure/active-directory/governance/access-reviews-overview)
 + [Review access for yourself to groups or applications in Microsoft Entra access reviews](/azure/active-directory/governance/review-your-access)
++ [Configure the scope of your access review using access reviews APIs](/graph/accessreviews-scope-concept)

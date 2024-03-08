@@ -1,7 +1,7 @@
 ---
-title: "Configure the scope of your access review using the Microsoft Graph API"
+title: "Configure the scope of your access review using access reviews APIs"
 description: "Learn how to programmatically review the access that users, service principals, or groups have to your Microsoft Entra resources by using the Microsoft Graph API."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.localizationpriority: medium
@@ -11,7 +11,7 @@ ms.date: 06/30/2022
 #customer intent: As a developer, I want to understand how to configure the scope of Microsoft Entra access reviews through Microsoft Graph, so that I can automate the process of reviewing and managing access to Microsoft Entra resources.
 ---
 
-# Configure the scope of your access review using the Microsoft Graph API
+# Configure the scope of your access review using access reviews APIs
 
 The Microsoft Entra [access reviews API](/graph/api/resources/accessreviewsv2-overview) allows you to programmatically review the access that users, service principals, or groups have to your Microsoft Entra resources. The API can help you to automate proactive review and keep control over access to resources in your organization.  
 
@@ -361,7 +361,7 @@ In this example, the access review scope is all users who are assigned to any of
 }
 ```
 
-## Next steps
+## Related content
 
 + [Assign reviewers to your access review definition](/graph/accessreviews-reviewers-concept)
 + [Try out tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Microsoft Entra resources

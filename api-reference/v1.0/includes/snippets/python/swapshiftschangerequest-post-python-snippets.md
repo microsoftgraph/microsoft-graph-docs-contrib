@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.teams.item.schedule.swapShiftsChangeRequests.swap_shifts_change_requests_request_builder import SwapShiftsChangeRequestsRequestBuilder
+from msgraph.generated.models.swap_shifts_change_request import SwapShiftsChangeRequest
 
 graph_client = GraphServiceClient(credentials, scopes)
 

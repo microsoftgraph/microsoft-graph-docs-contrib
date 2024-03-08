@@ -3,7 +3,7 @@ title: "Delete plannerRosterMember"
 description: "Delete a plannerRosterMember object."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ DELETE /planner/rosters/{plannerRosterId}/members/{plannerRosterMemberId}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "List authenticationEventsFlows"
 description: "Get a list of the authenticationEventsFlow objects and their properties."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports the `$filter`, `$expand`,  `$orderby`, and  `$top` OData qu
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -23,3 +23,4 @@ Defines how app messaging redirection is protected by an App Protection Policy. 
 |anyApp|0|App protection policy will allow messaging redirection to any app.|
 |anyManagedApp|1|App protection policy will allow messaging redirection to any managed application.|
 |specificApps|2|App protection policy will allow messaging redirection only to specified applications in related App protection policy settings. See related settings `messagingRedirectAppDisplayName`, `messagingRedirectAppPackageId` and `messagingRedirectAppUrlScheme`.|
+|blocked|3|App protection policy will block messaging redirection to any app.|

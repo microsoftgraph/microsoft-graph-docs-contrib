@@ -36,7 +36,7 @@ This method does not support any OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept-Language|A valid ISO 639-1 locale. Optional.|
 
 ## Request body

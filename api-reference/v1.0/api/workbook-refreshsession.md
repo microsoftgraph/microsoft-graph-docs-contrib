@@ -32,7 +32,7 @@ POST /me/drive/root:/{item-path}:/workbook/refreshSession
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | workbook-session-id | Workbook session ID to be refreshed. Required. |
 
 ## Request body

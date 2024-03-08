@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PersonAnnualEvent personAnnualEvent = new PersonAnnualEvent();
-personAnnualEvent.allowedAudiences = EnumSet.of(AllowedAudiences.CONTACTS);
+personAnnualEvent.setAllowedAudiences(EnumSet.of(AllowedAudiences.Contacts));
+PersonAnnualEvent result = graphClient.me().profile().anniversaries().byPersonAnnualEventId("{personAnnualEvent-id}").patch(personAnnualEvent);
 
-graphClient.me().profile().anniversaries("{id}")
-	.buildRequest()
-	.patch(personAnnualEvent);
 
 ```

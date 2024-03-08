@@ -116,7 +116,7 @@ The following table lists the methods that you can use to interact with entitlem
 - [accessPackageSubject](accesspackagesubject.md) - Used in the [accessPackageAssignment](accesspackageassignment.md) as a subject user who has an access package assignment.
 - [identitySource](identitysource.md) - used in the [connectedOrganization](connectedorganization.md), one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [crossCloudAzureActiveDirectoryTenant](crosscloudazureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md).
 
-## See also
+## Related content
 
  - [What is Microsoft Entra entitlement management?](/azure/active-directory/governance/entitlement-management-overview)
 

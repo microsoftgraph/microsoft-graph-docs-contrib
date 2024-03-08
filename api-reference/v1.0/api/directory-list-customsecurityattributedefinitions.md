@@ -3,7 +3,7 @@ title: "List customSecurityAttributeDefinitions"
 description: "Get a list of the customSecurityAttributeDefinition objects and their properties."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -50,7 +50,7 @@ The **allowedValues** navigation property is not returned or expanded by default
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

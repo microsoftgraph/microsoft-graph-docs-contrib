@@ -4,18 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EnrichedAuditLogs enrichedAuditLogs = new EnrichedAuditLogs();
-EnrichedAuditLogsSettings sharepoint = new EnrichedAuditLogsSettings();
-enrichedAuditLogs.sharepoint = sharepoint;
-EnrichedAuditLogsSettings teams = new EnrichedAuditLogsSettings();
-enrichedAuditLogs.teams = teams;
-EnrichedAuditLogsSettings exchange = new EnrichedAuditLogsSettings();
-enrichedAuditLogs.exchange = exchange;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.networkAccess().settings().enrichedAuditLogs()
-	.buildRequest()
-	.patch(enrichedAuditLogs);
+com.microsoft.graph.beta.models.networkaccess.EnrichedAuditLogs enrichedAuditLogs = new com.microsoft.graph.beta.models.networkaccess.EnrichedAuditLogs();
+enrichedAuditLogs.setOdataType("#microsoft.graph.networkaccess.enrichedAuditLogs");
+com.microsoft.graph.beta.models.networkaccess.EnrichedAuditLogsSettings sharepoint = new com.microsoft.graph.beta.models.networkaccess.EnrichedAuditLogsSettings();
+sharepoint.setOdataType("microsoft.graph.networkaccess.enrichedAuditLogsSettings");
+enrichedAuditLogs.setSharepoint(sharepoint);
+com.microsoft.graph.beta.models.networkaccess.EnrichedAuditLogsSettings teams = new com.microsoft.graph.beta.models.networkaccess.EnrichedAuditLogsSettings();
+teams.setOdataType("microsoft.graph.networkaccess.enrichedAuditLogsSettings");
+enrichedAuditLogs.setTeams(teams);
+com.microsoft.graph.beta.models.networkaccess.EnrichedAuditLogsSettings exchange = new com.microsoft.graph.beta.models.networkaccess.EnrichedAuditLogsSettings();
+exchange.setOdataType("microsoft.graph.networkaccess.enrichedAuditLogsSettings");
+enrichedAuditLogs.setExchange(exchange);
+com.microsoft.graph.models.networkaccess.EnrichedAuditLogs result = graphClient.networkAccess().settings().enrichedAuditLogs().patch(enrichedAuditLogs);
+
 
 ```

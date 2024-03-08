@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.applications.item.addpassword.AddPasswordPostRequestBody addPasswordPostRequestBody = new com.microsoft.graph.beta.applications.item.addpassword.AddPasswordPostRequestBody();
 PasswordCredential passwordCredential = new PasswordCredential();
-passwordCredential.displayName = "Password friendly name";
+passwordCredential.setDisplayName("Password friendly name");
+addPasswordPostRequestBody.setPasswordCredential(passwordCredential);
+PasswordCredential result = graphClient.applications().byApplicationId("{application-id}").addPassword().post(addPasswordPostRequestBody);
 
-graphClient.applications("{id}")
-	.addPassword(ApplicationAddPasswordParameterSet
-		.newBuilder()
-		.withPasswordCredential(passwordCredential)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

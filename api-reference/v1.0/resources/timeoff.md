@@ -27,16 +27,16 @@ Represents a unit of non-work in a [schedule](../resources/schedule.md).
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | createdDateTime		| DateTimeOffset        |The time stamp at which this **timeOff** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| draftTimeOff		| [timeOffItem](timeoffitem.md)        |The draft version of this **timeOff** that is viewable by managers. Required.|
+| draftTimeOff		| [timeOffItem](timeoffitem.md)        |The draft version of this **timeOff** item that is viewable by managers. It must be shared before it is visible to team members. Required.|
 | id			| String      |ID of the **timeOff**.|
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **timeOff**. |
 | lastModifiedDateTime		| DateTimeOffset        |The time stamp at which this **timeOff** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| sharedTimeOff 	| [timeOffItem](timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Required.|
+| sharedTimeOff 	| [timeOffItem](timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Updates to the **sharedTimeOff** property send notifications to users in the Teams client. Required.|
 | userId 			| String      |ID of the user assigned to the **timeOff**. Required.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

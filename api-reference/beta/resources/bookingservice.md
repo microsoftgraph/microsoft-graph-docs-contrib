@@ -1,6 +1,6 @@
 ---
 title: "bookingService resource type"
-description: "Represents information about a particular service provided by a bookingBusiness, such as the service name, price, and the staff that usually provides such service."
+description: "Represents information about a particular service provided by a booking business, such as the service name, price, and the staff that usually provides such service."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Represents information about a particular service provided by a [bookingBusiness](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service.
+Represents information about a particular service provided by a [booking business](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service.
 
 Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 
@@ -21,16 +21,17 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List services](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [bookingbusiness](../resources/bookingbusiness.md).|
-|[Create bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Get bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md).|
-|[Update](../api/bookingservice-update.md) | None	|Update a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Delete](../api/bookingservice-delete.md) | None |Delete a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[List services](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [booking business](../resources/bookingbusiness.md).|
+|[Create bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [booking business](../resources/bookingbusiness.md). |
+|[Get bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md).|
+|[Update](../api/bookingservice-update.md) | None	|Update a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md). |
+|[Delete](../api/bookingservice-delete.md) | None |Delete a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md). |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
+|createdDateTime|DateTimeOffset|The date, time and timezone when the Service was created.|
 |customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection| Contains the set of custom questions associated with a particular service. |
 |defaultDuration|Duration|The default length of the service, represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|The default physical location for the service.|
@@ -40,10 +41,12 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
 |id|String|The ID of that service, in a GUID format. Read-only.|
-|isAnonymousJoinEnabled|Boolean|`True` if an anonymousJoinWebUrl(webrtcUrl) will be generated for the appointment booked for this service.
+|isAnonymousJoinEnabled|Boolean|Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service. The default value is `false`. |
+|isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
 |isHiddenFromCustomers|Boolean|True means this service isn't available to customers for booking.|
-|isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
+|isLocationOnline|Boolean|Indicates that the appointments for the service are held online. The default value is `false`.|
 |languageTag|String|The language of the self service booking page.
+|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the Service  was last updated.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.  To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation.  |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
@@ -71,32 +74,46 @@ Here's a JSON representation of the resource.
 
 ```json
 {
-  "additionalInformation": "String",
+  "@odata.type": "#microsoft.graph.bookingService",
+  "id": "String (identifier)",
+  "displayName": "String",
   "customQuestions": [
     {
       "@odata.type": "microsoft.graph.bookingQuestionAssignment"
     }
   ],
-  "defaultDuration": "String (timestamp)",
-  "defaultLocation": {"@odata.type": "microsoft.graph.location"},
+  "defaultDuration": "String (duration)",
+  "defaultLocation": {
+    "@odata.type": "microsoft.graph.location"
+  },
   "defaultPrice": "Double",
-  "defaultPriceType": {"@odata.type": "microsoft.graph.bookingPriceType"},
-  "defaultReminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
+  "defaultPriceType": "String",
+  "defaultReminders": [
+    {
+      "@odata.type": "microsoft.graph.bookingReminder"
+    }
+  ],
   "description": "String",
-  "displayName": "String",
-  "id": "String (identifier)",
-  "isAnonymousJoinEnabled": "Boolean",
-  "isHiddenFromCustomers": "Boolean",
-  "isLocationOnline": "Boolean",
   "languageTag": "String",
-  "maximumAttendeesCount": "Int32",
+  "isHiddenFromCustomers": "Boolean",
   "notes": "String",
-  "postBuffer": "String (timestamp)",
-  "preBuffer": "String (timestamp)",
-  "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
+  "additionalInformation": "String",
+  "maximumAttendeesCount": "Integer",
+  "preBuffer": "String (duration)",
+  "postBuffer": "String (duration)",
+  "schedulingPolicy": {
+    "@odata.type": "microsoft.graph.bookingSchedulingPolicy"
+  },
+  "staffMemberIds": [
+    "String"
+  ],
+  "isLocationOnline": "Boolean",
   "smsNotificationsEnabled": "Boolean",
-  "staffMemberIds": ["String"],
-  "webUrl": "String"
+  "isAnonymousJoinEnabled": "Boolean",
+  "isCustomerAllowedToManageBooking": "Boolean",
+  "webUrl": "String",
+  "createdDateTime": "String (timestamp)",
+  "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
 

@@ -3,7 +3,7 @@ title: "notificationReceiver resource type"
 description: "Represents the locale and contact information provided by a user in a notification channel."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

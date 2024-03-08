@@ -3,7 +3,7 @@ title: "List registeredUsers"
 description: "Retrieve a list of users that are registered users of the device."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -75,7 +75,7 @@ Some queries are supported only when you use the **ConsistencyLevel** header set
 ## Request headers
 | Name       | Description|
 |:-----------|:------|
-| Authorization  |Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

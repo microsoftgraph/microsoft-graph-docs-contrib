@@ -3,7 +3,7 @@ title: "Delete calendarPermission"
 description: "Delete calendarPermission."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 
@@ -48,7 +48,7 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

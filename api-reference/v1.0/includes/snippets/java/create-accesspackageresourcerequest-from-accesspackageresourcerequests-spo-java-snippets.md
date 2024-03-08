@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessPackageResourceRequest accessPackageResourceRequest = new AccessPackageResourceRequest();
-accessPackageResourceRequest.requestType = AccessPackageRequestType.ADMIN_ADD;
+accessPackageResourceRequest.setRequestType(AccessPackageRequestType.AdminAdd);
 AccessPackageResource resource = new AccessPackageResource();
-resource.originId = "https://microsoft.sharepoint.com/sites/Example";
-resource.originSystem = "SharePointOnline";
-accessPackageResourceRequest.resource = resource;
+resource.setOriginId("https://microsoft.sharepoint.com/sites/Example");
+resource.setOriginSystem("SharePointOnline");
+accessPackageResourceRequest.setResource(resource);
 AccessPackageCatalog catalog = new AccessPackageCatalog();
-catalog.id = "beedadfe-01d5-4025-910b-84abb9369997";
-accessPackageResourceRequest.catalog = catalog;
+catalog.setId("beedadfe-01d5-4025-910b-84abb9369997");
+accessPackageResourceRequest.setCatalog(catalog);
+AccessPackageResourceRequest result = graphClient.identityGovernance().entitlementManagement().resourceRequests().post(accessPackageResourceRequest);
 
-graphClient.identityGovernance().entitlementManagement().resourceRequests()
-	.buildRequest()
-	.post(accessPackageResourceRequest);
 
 ```

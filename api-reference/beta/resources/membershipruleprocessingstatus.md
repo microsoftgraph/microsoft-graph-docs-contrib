@@ -2,8 +2,9 @@
 title: "membershipRuleProcessingStatus resource type"
 description: "Represents the current status of dynamic group processing."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: "resourcePageType"
 ---
 

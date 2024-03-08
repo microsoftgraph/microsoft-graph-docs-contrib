@@ -3,7 +3,7 @@ title: "List plannerRosterMembers"
 description: "Get the plannerRosterMember resources from the members navigation property."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ This method only supports the `$select` [OData query parameter](/graph/query-par
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

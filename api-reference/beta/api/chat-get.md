@@ -21,16 +21,13 @@ This method supports federation. To access a chat, at least one chat member must
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "chat_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-get-permissions.md)]
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note**: The ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -43,13 +40,13 @@ GET /chats/{chat-id}
 
 ## Optional query parameters
 
-This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.
+This operation doesn't currently support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -302,7 +299,7 @@ Content-type: application/json
             "displayName": "John Doe",
             "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
             "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-            "email": "john@contoso.onmicrosoft.com",
+            "email": "john@contoso.com",
             "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         },
         {
@@ -314,7 +311,7 @@ Content-type: application/json
             "displayName": "Test User 1",
             "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
             "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
-            "email": "testuser1@contoso.onmicrosoft.com",
+            "email": "testuser1@contoso.com",
             "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         },
         {
@@ -326,7 +323,7 @@ Content-type: application/json
             "displayName": "Test User 2",
             "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
             "userId": "82fe7758-5bb3-4f0d-a43f-e555fd399c6f",
-            "email": "testuser2@contoso.onmicrosoft.com",
+            "email": "testuser2@contoso.com",
             "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         },
         {
@@ -338,7 +335,7 @@ Content-type: application/json
             "displayName": "Test User 3",
             "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
             "userId": "2c8d2b5c-1849-4066-b57d-e7a0e9e44ec8",
-            "email": "testuser3@contoso.onmicrosoft.com",
+            "email": "testuser3@contoso.com",
             "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         },
         {
@@ -350,7 +347,7 @@ Content-type: application/json
             "displayName": "Test User 4",
             "visibleHistoryStartDateTime": "2021-04-20T17:13:43.715Z",
             "userId": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "email": "testuser4@contoso.onmicrosoft.com",
+            "email": "testuser4@contoso.com",
             "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         }
     ]
@@ -566,6 +563,6 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

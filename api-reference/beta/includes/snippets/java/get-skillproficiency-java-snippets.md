@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SkillProficiency skillProficiency = graphClient.me().profile().skills("{id}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+SkillProficiency result = graphClient.me().profile().skills().bySkillProficiencyId("{skillProficiency-id}").get();
+
 
 ```

@@ -3,7 +3,7 @@ title: "Get eventMessage"
 description: "expand` parameter on the **event**"
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -169,20 +169,20 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.onmicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -248,11 +248,11 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=mi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-based-on-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -326,20 +326,20 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.onmicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -441,7 +441,7 @@ Content-type: application/json
                 },
                 "emailAddress":{
                     "name":"Administrator",
-                    "address":"admin@contoso.onmicrosoft.com"
+                    "address":"admin@contoso.com"
                 }
             },
             {
@@ -452,14 +452,14 @@ Content-type: application/json
                 },
                 "emailAddress":{
                     "name":"Alex Wilber",
-                    "address":"AlexW@contoso.onmicrosoft.com"
+                    "address":"AlexW@contoso.com"
                 }
             }
         ],
         "organizer":{
             "emailAddress":{
                 "name":"Administrator",
-                "address":"admin@contoso.onmicrosoft.com"
+                "address":"admin@contoso.com"
             }
         },
         "OnlineMeeting":null

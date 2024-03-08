@@ -3,7 +3,7 @@ title: "orgContact: List memberOf"
 description: "Retrieve the list of groups and adminstrative units the contact is a member of."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

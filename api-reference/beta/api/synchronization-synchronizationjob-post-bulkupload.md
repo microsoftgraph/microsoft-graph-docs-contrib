@@ -3,7 +3,7 @@ title: "Perform bulkUpload"
 description: "Perform a new bulkUpload."
 author: "cmmdesai"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType 
 ---
 
@@ -45,7 +45,7 @@ In the API endpoint, `{servicePrincipalId}` refers to the service principal obje
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/scim+json. Required.|
 
 ## Request body
