@@ -3,7 +3,7 @@ title: "Delete authenticationConditionApplication (from a user flow)"
 description: "Remove an application from an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

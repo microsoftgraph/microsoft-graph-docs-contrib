@@ -3,7 +3,7 @@ title: "List permissionGrants of a user"
 description: "List all resource-specific permission grants of a user."
 author: "edle"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

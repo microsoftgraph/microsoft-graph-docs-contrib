@@ -3,7 +3,7 @@ title: "educationAssignment: delta"
 description: "Get a list of newly-created or updated assignments without reading the whole collection."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

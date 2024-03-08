@@ -4,7 +4,7 @@ doc_type: apiPageType
 description: "Get an appCredentialSignInActivity object that contains recent activity of an application credential."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Get appCredentialSignInActivity

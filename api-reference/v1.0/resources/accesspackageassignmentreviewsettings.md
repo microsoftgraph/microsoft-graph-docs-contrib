@@ -3,7 +3,7 @@ title: "accessPackageAssignmentReviewSettings complex type"
 description: "Used for the access reviews of an access package's assignments."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageAssignmentReviewSettings complex type

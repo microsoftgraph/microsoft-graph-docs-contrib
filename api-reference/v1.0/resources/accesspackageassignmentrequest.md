@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequest resource type"
 description: "An access package assignment request is created by a user who wants to obtain an access package assignment."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageAssignmentRequest resource type

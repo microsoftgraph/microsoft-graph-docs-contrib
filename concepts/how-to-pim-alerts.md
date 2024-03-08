@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 ms.date: 09/27/2023
 ---
 

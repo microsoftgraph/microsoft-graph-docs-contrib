@@ -3,7 +3,7 @@ title: "Add app to team"
 description: "Installs an app to the specified team."
 author: "akjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

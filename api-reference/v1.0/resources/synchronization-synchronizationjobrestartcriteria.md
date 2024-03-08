@@ -4,7 +4,7 @@ description: "Defines the scope of the synchronizationJob: restart action."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationJobRestartCriteria resource type

@@ -3,7 +3,7 @@ title: "List deviceLocalCredentialInfo"
 description: "Get a list of deviceLocalCredentialInfo and their properties, excluding the credentials property."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "devicelocalcredentialinfo_list"
 }
 -->
 ``` http

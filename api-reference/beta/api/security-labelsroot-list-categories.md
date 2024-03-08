@@ -3,7 +3,7 @@ title: "List categoryTemplates"
 description: "Get a list of the categoryTemplate objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

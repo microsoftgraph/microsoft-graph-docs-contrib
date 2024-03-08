@@ -3,7 +3,7 @@ title: "cloudPC: getCloudPcConnectivityHistory"
 description: "Get the connectivity history of a specific Cloud PC."
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

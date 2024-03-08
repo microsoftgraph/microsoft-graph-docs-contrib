@@ -3,7 +3,7 @@ title: "submissionDetectedFile resource type"
 description: "Represents the information of a detected file in a threat submission"
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

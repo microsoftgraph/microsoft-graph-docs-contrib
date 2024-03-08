@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.date: 01/12/2024
 #Customer intent: As a developer, I want to understand how REST API endpoints differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
