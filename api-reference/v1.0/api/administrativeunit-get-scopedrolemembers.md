@@ -3,7 +3,7 @@ title: "Get a scopedRoleMember"
 description: "Get a Microsoft Entra role assignment with administrative unit scope."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

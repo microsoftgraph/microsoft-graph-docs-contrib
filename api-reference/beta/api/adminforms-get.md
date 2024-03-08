@@ -3,7 +3,7 @@ title: "Get adminForms"
 description: "Read the properties and relationships of a Microsoft Graph adminForms object."
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

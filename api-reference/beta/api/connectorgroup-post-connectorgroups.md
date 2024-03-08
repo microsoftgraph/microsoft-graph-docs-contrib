@@ -3,7 +3,7 @@ title: "Create connectorGroup"
 description: "Use this API to create a new connectorGroup."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "List securityActions"
 description: "Retrieve a list of securityAction objects."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

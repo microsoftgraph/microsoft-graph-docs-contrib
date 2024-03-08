@@ -3,7 +3,7 @@ title: "unifiedRolePermission resource type"
 description: "A directory role permission is a collection of allowed resource actions and conditions."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 

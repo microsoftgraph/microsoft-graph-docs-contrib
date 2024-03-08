@@ -3,7 +3,7 @@ title: "educationModule: pin"
 description: "Pin an educationModule in the class work list."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
