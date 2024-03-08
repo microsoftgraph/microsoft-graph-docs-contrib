@@ -486,6 +486,12 @@ request-id: beec9ea0-f7e4-4fe7-8507-cd834c88f18b
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: bulkuploadfor_update:
+      Resource type was null or missing in response metadata, so we assume there is no response to validate.",
+    "Error: bulkuploadfromSCIMcustom_schema:
+      Resource type was null or missing in response metadata, so we assume there is no response to validate.",
+    "Error: bulkuploadfromSCIMstandard_schema:
+      Resource type was null or missing in response metadata, so we assume there is no response to validate.",
     "Error: microsoft.graph.microsoft.graph/servicePrincipals:
       /servicePrincipals/{var}/synchronization/jobs/{var}/bulkUpload
       Uri path requires navigating into unknown object hierarchy: missing property 'jobs' on 'synchronization'. Possible issues:
