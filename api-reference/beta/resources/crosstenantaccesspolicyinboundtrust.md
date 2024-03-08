@@ -3,7 +3,7 @@ title: "crossTenantAccessPolicyInboundTrust resource type"
 description: "Defines the Conditional Access claims you want to accept from other organizations via your cross-tenant access policy configuration."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

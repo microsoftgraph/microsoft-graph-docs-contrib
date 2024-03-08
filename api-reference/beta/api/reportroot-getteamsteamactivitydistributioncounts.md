@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsTeamActivityDistributionCounts"
 description: "Get the number of team activities across Microsoft Teams over a selected period."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
 ---

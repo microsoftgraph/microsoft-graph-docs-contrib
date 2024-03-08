@@ -3,7 +3,7 @@ title: "exportSuccessOperation resource type"
 description: "Represents an export operation that is completed successfully."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

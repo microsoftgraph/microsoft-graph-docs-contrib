@@ -3,7 +3,7 @@ title: "application: addPassword"
 description: "Add a strong password to an application."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "emailThreatSubmission: review"
 description: "Review a threat submission."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

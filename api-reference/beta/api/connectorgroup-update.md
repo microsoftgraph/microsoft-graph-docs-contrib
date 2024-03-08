@@ -3,7 +3,7 @@ title: "Update connectorGroups"
 description: "Update the properties of connectorgroup object."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

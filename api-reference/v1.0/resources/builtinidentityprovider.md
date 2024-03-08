@@ -3,7 +3,7 @@ title: "builtInIdentityProvider resource type"
 description: "Represents built-in identity providers in a Microsoft Entra tenant."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "namkedia"
 ---
 

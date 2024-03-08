@@ -4,7 +4,7 @@ description: "Update the properties of a microsoftAuthenticatorAuthenticationMet
 author: "mjsantani"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

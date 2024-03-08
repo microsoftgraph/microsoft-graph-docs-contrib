@@ -3,7 +3,7 @@ title: "cloudPC: endGracePeriod"
 description: "End the grace period for a specific Cloud PC."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

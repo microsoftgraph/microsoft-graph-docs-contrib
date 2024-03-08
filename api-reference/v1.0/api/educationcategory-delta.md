@@ -3,7 +3,7 @@ title: "educationCategory: delta"
 description: "Get a list of newly created or updated educationCategory objects without performing a full read of the collection."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

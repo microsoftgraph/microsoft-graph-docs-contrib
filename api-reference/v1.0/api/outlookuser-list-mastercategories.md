@@ -3,7 +3,7 @@ title: "List Outlook categories"
 description: "Get all the categories that have been defined for the user."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

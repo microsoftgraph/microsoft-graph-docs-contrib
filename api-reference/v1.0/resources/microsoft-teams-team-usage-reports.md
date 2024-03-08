@@ -2,7 +2,7 @@
 title: "Microsoft Teams team usage reports"
 description: "Use the Microsoft Teams team usage reports to get insights into the usage of teams in your organization."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "zhiliqiao"
 doc_type: conceptualPageType
 ---

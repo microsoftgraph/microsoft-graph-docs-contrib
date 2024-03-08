@@ -3,7 +3,7 @@ title: "Get adminReportSettings"
 description: "Get the tenant-level settings for Microsoft 365 reports."
 ms.localizationpriority: medium
 author: "qiwhuang"
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 

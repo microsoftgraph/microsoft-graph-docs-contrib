@@ -3,7 +3,7 @@ title: "Get onAttributeCollectionSubmitCustomExtension"
 description: "Read the properties and relationships of an onAttributeCollectionSubmitCustomExtension object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

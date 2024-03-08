@@ -1,7 +1,7 @@
 ---
 title: "Review access to your security groups using access reviews APIs"
 description: "Learn how to use the access reviews API to review access to a security group in your Microsoft Entra tenant and test API calls before you automate them into scripts or apps."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.localizationpriority: medium

@@ -3,7 +3,7 @@ title: "Get connectionQuota"
 description: "Retrieve the properties and relationships of a connectionQuota."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 

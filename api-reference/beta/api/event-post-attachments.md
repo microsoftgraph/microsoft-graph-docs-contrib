@@ -3,7 +3,7 @@ title: "Add attachment"
 description: "Use this API to add an attachment to an event. Since there"
 author: "svpsiva"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
