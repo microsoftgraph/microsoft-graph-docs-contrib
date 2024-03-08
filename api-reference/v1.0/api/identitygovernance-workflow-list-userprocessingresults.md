@@ -3,7 +3,7 @@ title: "List userProcessingResults"
 description: "Get a list of the userProcessingResult objects and their properties for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

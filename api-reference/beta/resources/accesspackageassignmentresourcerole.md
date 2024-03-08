@@ -3,7 +3,7 @@ title: "accessPackageAssignmentResourceRole resource type"
 description: "An access package assignment resource role indicates the resource-specific role that a subject has been assigned through an access package assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
