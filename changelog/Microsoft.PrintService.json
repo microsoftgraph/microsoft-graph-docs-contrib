@@ -7,7 +7,7 @@
           "ApiChange": "Enumeration",
           "ChangedApiName": "printReleaseType",
           "ChangeType": "Deletion",
-          "Description": "Remove the **printReleaseType** enumeration type, since it is not supported.",
+          "Description": "Removed the **printReleaseType** enumeration type.",
           "Target": "printReleaseType"
         },
         {
