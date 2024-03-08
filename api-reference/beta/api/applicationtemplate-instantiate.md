@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an instance of an application from the Microsoft Entra application gallery into your directory. You can also use this API to instantiate [non-gallery apps](/azure/active-directory/manage-apps/add-non-gallery-app). Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+Add an instance of an application from the Microsoft Entra application gallery into your directory.
+
+The application template with ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` can be used to add a [non-gallery app](/azure/active-directory/manage-apps/add-non-gallery-app) that you can configure different single-sign on (SSO) modes like SAML SSO and password-based SSO.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
