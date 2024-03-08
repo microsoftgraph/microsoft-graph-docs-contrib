@@ -18,15 +18,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## March 2024: New and generally available
 
+### Cross-device experiences
+
+Added the ability to list and get [Windows settings](/graph/api/resources/windowssetting) and [Windows settings instances](/graph/api/resources/windowssettinginstance).
+
 ### Reports | Partner billing reports
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.
 
 ## March 2024: New in preview only
-
-### Cross-device experiences
-
-Added the ability to list and get [Windows settings](/graph/api/resources/windowssetting) and [Windows settings instances](/graph/api/resources/windowssettinginstance).
 
 ### Identity and access | Identity and sign-in
 
