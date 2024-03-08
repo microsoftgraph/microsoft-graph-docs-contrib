@@ -34,8 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /admin/windows/updates/products({id})/GetKnownIssuesByTimeRange(daysInPast={daysInPast},includeAllActive={includeAllActive})
+```
 
-``` 
 ## Query Parameters
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that must be used with this function.
@@ -71,42 +71,10 @@ The following is an example of a request.
 ``` http
 GET /admin/windows/updates/products('1')/GetKnownIssuesByTimeRange(daysInPast=70,includeAllActive=false)
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-knownissues-timerange-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-knownissues-timerange-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-knownissues-timerange-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-knownissues-timerange-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-knownissues-timerange-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-knownissues-timerange-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-knownissues-timerange-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-knownissues-timerange-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 >
 <!-- {
@@ -147,3 +115,4 @@ The following example shows the response.
         }
     ]
 }
+```
