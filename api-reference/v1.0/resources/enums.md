@@ -1684,6 +1684,9 @@ Possible values for user account types (group membership), per Windows definitio
 | adminConfirmedServicePrincipalCompromised |
 | adminDismissedAllRiskForServicePrincipal  |
 | m365DAdminDismissedDetection              |
+| userChangedPasswordOnPremises             |
+| adminDismissedRiskForSignIn               |
+| adminConfirmedAccountSafe                 |
 
 ### riskEventTypes values
 
@@ -3178,6 +3181,24 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |facebook|
 |unknownFutureValue|
+
+### devicePlatformType values
+
+| Member             |
+|:-------------------|
+| android            |
+| androidForWork     |
+| iOS                |
+| macOS              |
+| windowsPhone81     |
+| windows81AndLater  |
+| windows10AndLater  |
+| androidWorkProfile |
+| unknown            |
+| androidAOSP        |
+| androidMobileApplicationManagement|
+| iOSMobileApplicationManagement|
+| unknownFutureValue|
 
 ### printReleaseType values 
 

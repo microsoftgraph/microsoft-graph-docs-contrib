@@ -3,7 +3,7 @@ title: "Update device"
 description: "Update the properties of a device."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

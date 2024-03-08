@@ -2,7 +2,7 @@
 title: "reportRoot: getBrowserUserDetail"
 description: "Get a report that provides the browser (Microsoft Edge) used by users when they access the Microsoft 365 services over a selected period."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---

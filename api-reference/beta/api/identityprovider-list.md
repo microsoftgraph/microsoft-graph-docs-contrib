@@ -4,7 +4,7 @@ description: "Retrieve a list of identityProvider objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List identityProviders (deprecated)

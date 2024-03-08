@@ -3,7 +3,7 @@ title: "Get riskDetection"
 description: "Retrieve the properties of a **riskdetection** object."
 ms.localizationpriority: medium
 author: "tracyshi"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # Get riskDetection

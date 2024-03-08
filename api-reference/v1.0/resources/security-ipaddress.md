@@ -3,7 +3,7 @@ title: "ipAddress resource type"
 description: "Represents an IP address, which is (or has been) addressable over the internet."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

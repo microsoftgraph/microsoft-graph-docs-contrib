@@ -3,7 +3,7 @@ title: "connector resource type"
 description: "Represents an Application Proxy connector."
 author: "dhruvinrshah"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

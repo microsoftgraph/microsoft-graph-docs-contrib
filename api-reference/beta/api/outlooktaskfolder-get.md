@@ -3,7 +3,7 @@ title: "Get outlookTaskFolder"
 description: "Get the properties and relationships of the specified Outlook task folder."
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete educationClass"
 description: "Delete a class. Because a class is also a universal group, deleting a class deletes the group."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get hostPort"
 description: "Read the properties and relationships of a hostPort object."
 author: "angelo-moulic"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

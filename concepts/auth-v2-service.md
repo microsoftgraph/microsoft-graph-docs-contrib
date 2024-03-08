@@ -1,11 +1,11 @@
 ---
 title: "Get access without a user"
 description: "Learn how an app obtains an access token from the Microsoft identity platform and calls Microsoft Graph with its own identity."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.custom: graphiamtop20
 ms.date: 09/08/2023
 #customer intent: As a developer, I want to understand how my app can call Microsoft Graph on behalf of a signed-in user to access resources in a tenant.

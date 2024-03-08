@@ -3,7 +3,7 @@ title: "Get remoteDesktopSecurityConfiguration"
 description: "Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

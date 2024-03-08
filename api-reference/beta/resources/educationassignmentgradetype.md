@@ -3,7 +3,7 @@ title: "educationAssignmentGradeType resource type"
 description: "Represents how an assignment is graded. This is used within the **assignments.grading** property."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

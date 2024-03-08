@@ -1,7 +1,7 @@
 ---
 title: "Rules in PIM - mapping guide"
 description: "Learn how rules in PIM are structured in Microsoft Graph and how they map with the descriptions on the Microsoft Entra admin center."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium

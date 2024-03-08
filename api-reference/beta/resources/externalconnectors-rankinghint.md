@@ -3,7 +3,7 @@ title: "rankingHint resource type"
 description: "The ranking hint for the property."
 author: "emzho"
 ms.localizationpriority: normal
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

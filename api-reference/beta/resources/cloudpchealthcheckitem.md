@@ -3,7 +3,7 @@ title: "cloudPcHealthCheckItem resource type"
 description: "Represents the details of the Cloud PC connectivity health check item."
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
