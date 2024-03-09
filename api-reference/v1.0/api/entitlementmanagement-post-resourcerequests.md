@@ -402,11 +402,11 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Create an accessPackageResourceRequest for adding an application as a resource with attributes
+### Example 5: Create an accessPackageResourceRequest for updating an application as a resource with attributes
 
 #### Request
 
-The following example shows a request to add an application as a resource to a catalog, with two attributes.
+The following example shows a request to update a resource in a catalog, for an application that was already added as a resource, with two attributes.
 
 <!-- {
   "blockType": "request",
@@ -418,9 +418,9 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/r
 Content-type: application/json
 
 {
-  "requestType": "adminAdd",
+  "requestType": "adminUpdate",
   "resource": {
-    "originId": "97733cf7-ae02-42e8-9aa3-479a433abcc0",
+    "originId": "e81d7f57-0840-45e1-894b-f505c1bdcc1f",
     "originSystem": "AadApplication",
     "attributes": [
       {
@@ -432,10 +432,10 @@ Content-type: application/json
           "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
           "question": {
             "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-            "sequence": "1",
-            "isRequired": "true",
-            "isAnswerEditable": "true",
-            "text": "Where do you work?",
+            "sequence": 1,
+            "isRequired": true,
+            "isAnswerEditable": true,
+            "text": "What office do you work at?",
             "isSingleLineQuestion": true,
             "regexPattern": "[a-zA-Z]+[a-zA-Z\\s]*"
           }
@@ -451,16 +451,17 @@ Content-type: application/json
           "question": {
             "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
             "isRequired": false,
-            "text": "What is your cost center?",
+            "text": "What is your cost center number?",
             "sequence": 0,
-            "isSingleLineQuestion": true
+            "isSingleLineQuestion": true,
+            "regexPattern": "[0-9]*"
           }
         }
       }
     ]
   },
   "catalog": {
-    "id": "fa3d4d6b-25b8-48ea-af60-35e13d84d2bf"
+    "id": "beedadfe-01d5-4025-910b-84abb9369997"
   }
 }
 
