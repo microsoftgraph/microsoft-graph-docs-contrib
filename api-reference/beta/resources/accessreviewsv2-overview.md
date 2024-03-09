@@ -3,7 +3,7 @@ title: "Microsoft Entra access reviews"
 description: "You can use Microsoft Entra access reviews to configure one-time or recurring access reviews for attestation of a principal's access rights. This documentation serves the 2nd version of the APIs."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ---
 

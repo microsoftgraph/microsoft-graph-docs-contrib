@@ -3,7 +3,7 @@ title: "Get deletedItemContainer (a deleted lifecycle workflow)"
 description: "Read the properties and relationships of a deleted lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

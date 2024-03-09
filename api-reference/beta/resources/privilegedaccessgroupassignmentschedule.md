@@ -3,7 +3,7 @@ title: "privilegedAccessGroupAssignmentSchedule resource type"
 description: "Represents the schedule of membership or ownership assignments to groups that are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

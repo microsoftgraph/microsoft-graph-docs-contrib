@@ -3,7 +3,7 @@ title: "unifiedRoleManagementPolicy resource type"
 description: "Specifies the various policies associated with scopes and roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
