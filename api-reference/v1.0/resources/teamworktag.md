@@ -44,6 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |:---------|:----------------------------------------------------------------------------------------------------------|
 | standard | Default type for a tag. Tags of type standard can be managed in the team by members who have permissions. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                               |
+| scheduled | Shift-based tag created and managed from the Shifts app.                                                 |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -51,7 +52,7 @@ Inherits from [entity](../resources/entity.md).
 |members|[teamworkTagMember](../resources/teamworktagmember.md) collection|Users assigned to the tag.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
