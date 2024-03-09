@@ -19,7 +19,7 @@ At least one successful request must be made within 45 minutes of the previous r
 
 We recommend that you send a request in shorter time intervals (every 15 minutes). Make sure that these requests are successful to prevent the call from timing out and ending.
 
-Attempting to send a request to a call that has already ended results in a `404 Not-Found` error. The resources related to the call should be cleaned up on the application side.
+Attempting to send a request to a call that already ended results in a `404 Not-Found` error. The resources related to the call should be cleaned up on the application side.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -52,7 +52,7 @@ This method returns a `200 OK` HTTP response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

@@ -182,6 +182,8 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response"
 } -->
@@ -316,6 +318,8 @@ Content-Type: application/json
 
 #### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "ignored", 
   "name": "call-redirect-simuring"
@@ -359,6 +363,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->
@@ -488,6 +493,7 @@ This call requires an application instance with a PSTN number assigned. For deta
 
 #### Request
 
+The following example shows a request.
 <!-- {
   "blockType": "request", 
   "name": "call-redirect"
@@ -514,6 +520,7 @@ Content-Type: application/json
 ```
 #### Response
 
+The following example shows the response. 
 <!-- {
   "blockType": "response"
 } -->
