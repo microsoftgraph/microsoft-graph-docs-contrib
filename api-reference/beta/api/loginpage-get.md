@@ -3,7 +3,7 @@ title: "Get loginPage"
 description: "Get a loginPage associated with an attack simulation campaign for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

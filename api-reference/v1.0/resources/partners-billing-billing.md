@@ -1,9 +1,9 @@
 ---
 title: "billing resource type"
 description: "Represents billing details for billed and unbilled data."
-author: "sourishdeb"
+author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 
@@ -29,6 +29,7 @@ None.
 |:---|:---|:---|
 |manifests|[microsoft.graph.partners.billing.manifest](partners-billing-manifest.md) collection|Represents metadata for the exported data.|
 |operations|[microsoft.graph.partners.billing.operation](partners-billing-operation.md) collection|Represents an operation to export the billing data of a partner.|
+|reconciliation|[microsoft.graph.partners.billing.billedReconciliation](partners-billing-billingreconciliation.md)|Represents details for billed invoice reconciliation data.|
 |usage|[microsoft.graph.partners.billing.azureUsage](partners-billing-azureusage.md)|Represents details for billed and unbilled Azure usage data.|
 
 ## JSON representation

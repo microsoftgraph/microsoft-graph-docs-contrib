@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to search with interleaved results"
 description: "Learn how to use the Microsoft Search API in Microsoft Graph to search multiple entities in one request and get interleaved results."
 author: "yiwenwang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to search with interleaved results

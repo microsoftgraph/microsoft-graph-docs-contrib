@@ -3,7 +3,7 @@ title: "threatIntelligence resource type"
 description: "Provides APIs to retrieve threat intelligence information, such as about a host or an article on a threat."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

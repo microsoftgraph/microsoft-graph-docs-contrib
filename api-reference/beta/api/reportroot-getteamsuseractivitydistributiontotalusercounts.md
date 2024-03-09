@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsUserActivityDistributionTotalUserCounts"
 description: "Get the number of Microsoft Teams licensed or non-licensed users by activity type over the selected period. The activity types are number of teams chat messages, private chat messages, calls, and meetings."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
 ---

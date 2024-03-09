@@ -4,7 +4,7 @@ description: "Get the occurrences, exceptions, and single instances of events in
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # List calendarView

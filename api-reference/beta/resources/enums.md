@@ -1298,6 +1298,9 @@ Namespace: microsoft.graph
 | adminConfirmedServicePrincipalCompromised |
 | adminDismissedAllRiskForServicePrincipal  |
 | m365DAdminDismissedDetection              |
+| userChangedPasswordOnPremises             |
+| adminDismissedRiskForSignIn               |
+| adminConfirmedAccountSafe                 |
 
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
@@ -4620,6 +4623,24 @@ Possible values for user account types (group membership), per Windows definitio
 |noRecentDataCollected|
 |unknownFutureValue|
 
+### devicePlatformType values
+
+| Member             |
+|:-------------------|
+| android            |
+| androidForWork     |
+| iOS                |
+| macOS              |
+| windowsPhone81     |
+| windows81AndLater  |
+| windows10AndLater  |
+| androidWorkProfile |
+| unknown            |
+| androidAOSP        |
+| androidMobileApplicationManagement|
+| iOSMobileApplicationManagement|
+| unknownFutureValue|
+
 ### printReleaseType values 
 
 |Member|
@@ -4634,6 +4655,15 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |unrestricted|
 |restrictedToOrganization|
+|unknownFutureValue|
+
+### bookingsServiceAvailabilityType values 
+
+|Member|
+|:---|
+|bookWhenStaffAreFree|
+|notBookable|
+|customWeeklyHours|
 |unknownFutureValue|
 
 ### conditionalAccessTransferMethods values

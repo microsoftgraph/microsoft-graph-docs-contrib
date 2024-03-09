@@ -3,7 +3,7 @@ title: "simulation resource type"
 description: "Represents an attack simulation training campaign in a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
