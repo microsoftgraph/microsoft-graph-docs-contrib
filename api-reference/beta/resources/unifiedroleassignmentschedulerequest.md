@@ -3,7 +3,7 @@ title: "unifiedRoleAssignmentScheduleRequest resource type"
 description: "In PIM, represents a request for an active role assignment to a principal. The role assignment can be permanently active with or without an expiry date, or temporarily active after activation of an eligible assignment."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

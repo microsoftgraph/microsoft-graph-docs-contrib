@@ -3,7 +3,7 @@ title: "List teamworkTagMembers"
 description: "Get a list of the members of a standard tag in a team and their properties."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List executionScope"
 description: "Get a list of the user objects in scope of execution for a workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

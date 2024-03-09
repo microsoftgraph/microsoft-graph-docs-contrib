@@ -3,7 +3,7 @@ title: "accessReviewStage resource type"
 description: "Represents a stage of an accessReviewInstance."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

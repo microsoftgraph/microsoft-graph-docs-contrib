@@ -3,7 +3,7 @@ title: "Get schedule"
 description: "Retrieve the properties and relationships of a **schedule** object."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
