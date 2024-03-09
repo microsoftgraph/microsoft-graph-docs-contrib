@@ -10189,7 +10189,7 @@ items:
                     href: resources/windowsupdates-driverupdatecatalogentry.md
                   - name: List catalog entries
                     href: api/windowsupdates-catalog-list-entries.md
-              - name: Windows release information
+              - name: Windows Release Information
                 items:
                   - name: Product
                     href: resources/windowsupdates-product.md
@@ -10200,16 +10200,17 @@ items:
                           - name: Known Issue history item 
                             href: resources/windowsupdates-knownissuehistoryitem.md
                           - name: Get known Issues by time range
-                            href: resources/windowsupdates-getKnownIssuesByTimeRange.md  
+                            href: api/windowsupdates-get-knownIssues-time-range.md  
                       - name: Edition
                         href: resources/windowsupdates-edition.md
                       - name: Servicing period
                         href: resources/windowsupdates-servicingperiod.md
+                      - name: Item Body 
+                        href: resources/windowsupdates-itembody.md
                       - name: Find Product revisions by Catalog ID
-                        href: resources/windowsupdates-findByCatalogId.md
+                        href: resources/windowsupdates-find-by-CatalogId.md
                       - name: Find Product revisions by KB number
-                        href: resources/windowsupdates-findByCatalogId.md
-                        
+                        href: resources/windowsupdates-find-by-KbNumber.md
               - name: Compliance change
                 href: resources/windowsupdates-compliancechange.md
                 items:
