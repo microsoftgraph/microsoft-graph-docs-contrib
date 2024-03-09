@@ -53,9 +53,11 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
+
 The following examples show how to call this API.
 
 ### Example 1: Reject an incoming call with 'Busy' reason
+
 #### Request
 
 # [HTTP](#tab/http)
