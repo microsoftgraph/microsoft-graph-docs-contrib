@@ -21,6 +21,10 @@ Represents a container for holding content and its type.
 |content|String|The content of the item.|
 |contentType|bodyType|The type of the contentindicated by enum value of bodyType|
 
+## Relationships
+
+None. 
+
 ## JSON representation
 
 Here is a JSON representation of the resource
