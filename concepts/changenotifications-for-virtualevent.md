@@ -94,7 +94,7 @@ Content-Type: application/json
 
 ## Subscribe to attendance report events for all sessions in a webinar
 
-To receive notifications when an attendance report becomes available for sessions in a virtual event webinar, a subscription must be created with the following resource:  `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`.
+To receive notifications when attendance reports become available for sessions in a virtual event webinar, a subscription must be created with the following resource:  `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`.
 
 An application can have only one subscription for a webinar's attendance reports inside a tenant.
 A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant. However, the subscription is only available for users who organized or co-organized webinars in the same tenant as the event host.
@@ -118,7 +118,7 @@ Content-Type: application/json
 To subscribe to notifications for sessions that are created or updated in a webinar, specify the resource as `solutions/virtualEvents/webinars/{webinarId}/sessions`.
 
 An application can only have a single session level subscription per webinar in a tenant.
-A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but the subscription is only available for users who organized or co-organized webinars in the same tenant as the event host.
+A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant. This subscription is only available for users who organized or co-organized webinars in the same tenant as the event host.
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
