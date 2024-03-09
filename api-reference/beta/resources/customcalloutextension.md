@@ -3,7 +3,7 @@ title: "customCalloutExtension resource type"
 description: "An abstract type that defines the configuration for apps that can be integrated with the customer's identity flows."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

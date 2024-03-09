@@ -3,7 +3,7 @@ title: "accessPackageAutomaticRequestSettings resource type"
 description: "Specifies information about an automatic access package assignment."
 author: "fsheik"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

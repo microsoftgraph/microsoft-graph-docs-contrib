@@ -3,7 +3,7 @@ title: "accessPackageResource: refresh"
 description: "Refresh an accessPackageResource object from an origin system."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
