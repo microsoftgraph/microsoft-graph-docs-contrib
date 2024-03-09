@@ -4,7 +4,7 @@ description: "Configure behaviors and resources to provision when creating a Mic
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: yuhko, khotzteam, aadgroupssg
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: entra-groups
 ms.localizationpriority: high
 ms.date: 03/07/2024
