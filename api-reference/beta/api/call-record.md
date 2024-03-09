@@ -67,11 +67,13 @@ In the request body, provide a JSON object with the following parameters.
 This method returns a `200 OK` HTTP response code and a Location header with a URI to the [recordOperation](../resources/recordoperation.md) created for this request.
 
 ## Example
+
 The following example shows how to call this API.
 
 ### Example 1: Records a short audio response from the caller
 
 ##### Request
+
 The following example shows the request.
 
 
