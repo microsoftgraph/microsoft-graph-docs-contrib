@@ -1,6 +1,6 @@
 ---
 title: "itemBody resource type"
-description: "Represents properties of the body of an item, such as a message, event, or group post."
+description: "Represents a container for holding content and its type."
 ms.localizationpriority: medium
 author: "skandula"
 ms.service: "windows-10"
@@ -16,10 +16,11 @@ Namespace: microsoft.graph.windowsUpdates
 Represents a container for holding content and its type.
 
 ## Properties
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |content|String|The content of the item.|
-|contentType|bodyType|The type of the content indicated by enum value of bodyType.|
+|contentType|bodyType|The type of the content indicated by the enum value of **bodyType**. Possible values are: `text` and `html`.|
 
 ## Relationships
 
@@ -27,19 +28,19 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.windowsUpdates.itembody",
+  "@odata.type": "microsoft.graph.windowsUpdates.itemBody",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.itembody",
-   "content": "string",
-    "contentType": "string"
+  "@odata.type": "#microsoft.graph.windowsUpdates.itemBody",
+  "content": "String",
+  "contentType": "String"
 }
 ```
