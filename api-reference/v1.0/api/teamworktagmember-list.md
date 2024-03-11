@@ -31,14 +31,17 @@ GET /teams/{team-id}/tags/{teamworkTag-id}/members
 ```
 
 ## Optional query parameters
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
+
+This method supports the `$filter` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -50,7 +53,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of a request.
-
 
 # [HTTP](#tab/http)
 <!-- {
