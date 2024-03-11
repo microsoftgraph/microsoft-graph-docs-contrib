@@ -1,6 +1,6 @@
 ---
 title: "organization resource type"
-description: "Represents the Microsoft Entra tenant that the user or application is signed in to. Inherits from directoryObject."
+description: "Represents the Microsoft Entra tenant that the user or application is authenticated to."
 ms.localizationpriority: high
 author: "suawat"
 ms.reviewer: "alvarorahul, iamut"
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the Microsoft Entra tenant that the user or application is signed in to. Only the read and update operations are supported on this resource. Inherits from [directoryObject](directoryobject.md).
+Represents the Microsoft Entra tenant that the user or application is authenticated to. Only the read and update operations are supported on this resource. Inherits from [directoryObject](directoryobject.md).
 
 This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview).
 
