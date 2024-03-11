@@ -10674,6 +10674,8 @@ items:
                 href: api/educationclass-post-category.md
               - name: Get delta
                 href: api/educationclass-delta.md
+              - name: Set default defaultgradingscheme
+                href: api/educationassignmentsettings-post-defaultgradingscheme.md
           - name: Users
             href: resources/educationuser.md
             items:
@@ -10744,6 +10746,8 @@ items:
                 href: api/educationassignment-activate.md
               - name: Deactivate assignment
                 href: api/educationassignment-deactivate.md
+              - name: Create grading scheme
+                href: api/educationassignment-post-gradingscheme.md
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -10778,6 +10782,15 @@ items:
                 href: api/educationgradingcategory-update.md
               - name: Delete
                 href: api/educationassignment-delete-gradingcategory.md
+          - name: Grading Schemes
+            href: resources/educationgradingscheme.md
+            items:
+              - name: Add grading scheme
+                href: api/educationgradingscheme-post.md
+              - name: Update grading scheme
+                href: api/educationassignmentsettings-update.md
+              - name: Delete grading scheme
+                href: api/educationgradingscheme-delete.md
           - name: Module
             href: resources/educationmodule.md
             items:
