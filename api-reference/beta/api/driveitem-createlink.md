@@ -1,6 +1,6 @@
 ---
 author: spgraph-docs-team
-description: "You can use createLink action to share a DriveItem via a sharing link."
+description: "Create a link to share a driveItem."
 title: "driveItem: createLink"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -12,8 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use **createLink** action to share a [driveItem](../resources/driveitem.md) via a sharing link.
-
+Create a link to share a driveItem [driveItem](../resources/driveitem.md).
 The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link is returned.
 
@@ -55,7 +54,7 @@ The request should be a JSON object with the following properties.
 |type|String|Optional. The type of sharing link to create.   |
 |scope|String|Optional. The scope of link to create. Either `anonymous`, `organization`, or `users`|
 |expirationDateTime|DateTimeOffset|Optional. A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.|
-|password|String|Optional. The password of the sharing link that is set by the creator.|
+|password|String|Optional. The creator sets the password for the sharing link.|
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who receive access to the sharing link.|
 | retainInheritedPermissions |  Boolean          | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.  |
 |sendNotification|Boolean|If `true`, this method sends a [sharing link](../resources/permission.md#sharing-links) in an email to users specified in `recipients`. Applicable to OneDrive for Business or SharePoint. The default value is `false`. Optional.|
@@ -73,15 +72,15 @@ The following values are allowed for the **type** parameter.
 | blocksDownload | Creates a read-only link that blocks download to the **driveItem**. This option is only available for files in OneDrive for Business and SharePoint.  |
 | createOnly     | Creates an upload-only link to the **driveItem**. This option is only available for folders in OneDrive for Business and SharePoint.             |
 | addressBar     | Creates the default link that is shown in the browser address bars for newly created files. Only available in OneDrive for Business and SharePoint. The organization admin configures whether this link type supports and specifies what features it supports. |
-| adminDefault   | Creates the default link to the **driveItem** as determined by the administrator of the organization. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
+| adminDefault   | Creates the default link to the **driveItem** as determined by the administrator of the organization. Only available in OneDrive for Business and SharePoint. The admin enforces the policy for the organization. |
 
 ### Scope types
 
 The following values are allowed for the **scope** parameter.
 
-| Value          | Description
+| Value          | Description                                                |
 |:---------------|:------------------------------------------------------------
-| anonymous    | Anyone with the link has access, without needing to sign in. It may include people outside of your organization. Anonymous link support may be disabled by an administrator.
+| anonymous    | Anyone with the link has access, without needing to sign in. It may include people outside of your organization. An administrator may disable support for anonymous links.
 | organization | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
 | users        | Specific people in the recipient's collection can use the link to get access. Only available in OneDrive for Business and SharePoint.
 

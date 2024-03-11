@@ -41,12 +41,15 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted. |
+| if-match      | String | If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted. |
 
 ## Example
 
-Here's an example of how to call this API.
+The following example shows how to call this API.
 
+### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-drive-item", "scopes": "files.readwrite" } -->
@@ -91,6 +94,7 @@ DELETE /me/drive/items/{item-id}
 
 ## Response
 
+The following example shows the response. 
 If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
 
 <!-- { "blockType": "response" } -->
@@ -101,8 +105,7 @@ HTTP/1.1 204 No Content
 
 ### Error responses
 
-See [Error Responses][error-response] for more info about
-how errors are returned.
+See [Error responses][error-response] for more info about how errors are returned.
 
 [error-response]: /graph/errors
 

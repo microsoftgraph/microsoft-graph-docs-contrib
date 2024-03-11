@@ -16,10 +16,10 @@ Namespace: microsoft.graph
 Track changes in a [driveItem](../resources/driveitem.md) and its children over time.
 
 Your app begins by calling `delta` without any parameters.
-The service starts enumerating the drive's hierarchy, returning pages of items and either an `@odata.nextLink` or an `@odata.deltaLink`, as described below.
+The service starts enumerating the drive's hierarchy, returning pages of items and either an `@odata.nextLink` or an `@odata.deltaLink`.
 Your app should continue calling with the `@odata.nextLink` until you no longer see an `@odata.nextLink` returned, or you see a response with an empty set of changes.
 
-After you have finished receiving all the changes, you may apply them to your local state.
+After you finish receiving all the changes, you may apply them to your local state.
 To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.
 
 Deleted items are returned with the [`deleted` facet](../resources/deleted.md).
@@ -50,7 +50,7 @@ GET /users/{userId}/drive/root/delta
 
 | Parameter   | Type  | Description                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | Optional. If unspecified, enumerates the hierarchy's current state. If `latest`, returns empty response with latest delta token. If a previous delta token, returns new state since that token.
+| token  | string | Optional. If unspecified, enumerates the hierarchy's current state. If `latest`, returns empty response with latest delta token. If a previous delta token returns new state since that token.
 
 ## Optional query parameters
 
@@ -70,12 +70,12 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [DriveItem](../resources/driveitem.md) resources in the response body.
 
-In addition to the collection of DriveItems, the response will also include one of the following properties:
+In addition to the collection of DriveItems, the response also includes one of the following properties:
 
 | Name                 | Value  | Description                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are more changes in the current set.                                        |
-| **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
+| **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes are returned. Used to read the next set of changes in the future.  |
 
 ## Examples
 
@@ -162,15 +162,15 @@ Content-type: application/json
 ```
 
 This response includes the first page of changes, and the **@odata.nextLink** property indicates that there are more items available in the current set of items.
-Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.
+Your app should continue to request the URL value of **@odata.nextLink** until all pages of items are retrieved.
 
 ### Example 2: Last page in a set
 
-Here's an example of how to call this API to update your local state.
+The following example shows how to call this API to update your local state.
 
 #### Request
 
-Here's an example request after the initial request.
+The following example shows a request after the initial request.
 
 
 # [HTTP](#tab/http)
@@ -216,7 +216,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)", "scope": "file.read" } -->
 
@@ -268,6 +268,8 @@ Using `delta` is the only way to guarantee that you've read all of the data you 
 
 #### Request
 
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-with_latest_token", "scope": "files.read", "target": "action" } -->
 
@@ -311,6 +313,7 @@ GET /me/drive/root/delta?token=latest
 
 #### Response
 
+The following example shows the response.
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
@@ -334,7 +337,7 @@ Using a timestamp in place of a token is only supported on OneDrive for Business
 
 #### Request
 
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-timestamp", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
@@ -377,6 +380,7 @@ GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
 ---
 
 #### Response
+The following example shows the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)", "scope": "file.read" } -->
 
@@ -444,8 +448,8 @@ For more information about scanning scenarios, see [Best practices for discoveri
 In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
 
 ## Related content
-[Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
-[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance)
+[Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
+[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance).
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

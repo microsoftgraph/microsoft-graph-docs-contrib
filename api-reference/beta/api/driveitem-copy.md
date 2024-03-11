@@ -45,17 +45,16 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 | replace         | Overwrite existing item at the target site.    |
 | rename          | Rename the item.                               |
 
-**Note:** The _conflictBehavior_ is not supported for OneDrive Consumer.
+**Note:** The _conflictBehavior_ isn't supported for OneDrive Consumer.
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-
 | Name            | Value                                          | Description                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy is created in.                                         |
-| name            | string                                         | Optional. The new name for the copy. If this infromation isn't provided, the same name is used as the original.    |
+| name            | string                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
 
 **Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.
 
@@ -132,11 +131,11 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 The value of the `Location` header provides a URL for a service that returns the current state of the copy operation.
-You can use this information to [determine when the copy has finished](/graph/long-running-actions-overview).
+You can use this information to [determine when the copy finished](/graph/long-running-actions-overview).
 
 ### Remarks
 
-In many cases the copy action is performed asynchronously.
+In many cases, the copy action is performed asynchronously.
 The response from the API indicates that the copy operation was accepted or rejected; for example, due to the destination filename already being in use.
 
 [item-resource]: ../resources/driveitem.md

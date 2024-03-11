@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of [driveItem](../resources/driveitem.md) objects shared with the owner of a [drive](../resources/drive.md).
 
-The **driveItems** returned from the **sharedWithMe** method always include the [**remoteItem**](../resources/remoteitem.md) facet that indicates they are items from a different drive.
+The **driveItems** returned from the **sharedWithMe** method always include the [**remoteItem**](../resources/remoteitem.md) facet that indicates they're items from a different drive.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
