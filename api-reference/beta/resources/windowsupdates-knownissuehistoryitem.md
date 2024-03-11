@@ -41,7 +41,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.knownIssueHistoryItem",
-  "createdDateTime": "String (timestamp)",
-  "endOfServiceDateTime": "String (timestamp)"
+  "createdDateTime": "String (timestamp)"
 }
 ```
