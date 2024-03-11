@@ -1,6 +1,6 @@
 ---
 title: "itemBody resource type"
-description: "Represents properties of the body of an item, such as a message, event or group post."
+description: "Represents properties of the body of an item, such as a message, event, or group post."
 ms.localizationpriority: medium
 author: "skandula"
 ms.service: "windows-10"
@@ -19,7 +19,7 @@ Represents a container for holding content and its type.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |content|String|The content of the item.|
-|contentType|bodyType|The type of the contentindicated by enum value of bodyType|
+|contentType|bodyType|The type of the content indicated by enum value of bodyType.|
 
 ## Relationships
 
@@ -27,7 +27,8 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
