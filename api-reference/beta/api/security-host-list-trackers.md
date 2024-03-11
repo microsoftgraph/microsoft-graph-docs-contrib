@@ -3,7 +3,7 @@ title: "List trackers"
 description: "Get a list of hostTracker resources."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

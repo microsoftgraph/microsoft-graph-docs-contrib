@@ -3,7 +3,7 @@ title: "cloudPcReports: getRealTimeRemoteConnectionStatus"
 description: "Get the real-time connection status information for a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

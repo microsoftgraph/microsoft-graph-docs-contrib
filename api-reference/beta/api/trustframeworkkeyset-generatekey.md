@@ -3,7 +3,7 @@ title: "trustFrameworkKeySet: generateKey"
 description: "Generate a key and a secret automatically in the keyset."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

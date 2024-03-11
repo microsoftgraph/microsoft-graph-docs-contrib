@@ -3,7 +3,7 @@ title: "Update contact"
 description: "Update the properties of contact object."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

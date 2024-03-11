@@ -3,7 +3,7 @@ title: "List sensitivityLabels"
 description: "Get the sensitivityLabel resources from the sensitivityLabels navigation property."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

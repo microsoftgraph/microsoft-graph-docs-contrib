@@ -3,7 +3,7 @@ title: "Microsoft Entra application authentication methods API overview"
 description: "Application authentication methods allow apps to acquire tokens to access data in Azure AD."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ---
 

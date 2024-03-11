@@ -3,7 +3,7 @@ title: "Set up an EDU development environment"
 description: "Learn about the options for setting up a development environment to use to build solutions using the education API in Microsoft Graph."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

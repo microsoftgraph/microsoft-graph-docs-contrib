@@ -3,7 +3,7 @@ title: "emailAddress resource type"
 description: "Represents the name and SMTP address of an entity instance, for example, a message recipient or calendar owner."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

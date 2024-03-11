@@ -3,7 +3,7 @@ title: "Set up administrative search answers for users in an organization"
 description: "Microsoft Search lets administrators associate search terms with meanings or web pages specific to their organizations and include these as search answers."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: conceptualPageType
 ---
 

@@ -3,7 +3,7 @@ title: "virtualEndpoint resource type"
 description: "Represents a container for Cloud PC management functionality."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

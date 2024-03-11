@@ -3,7 +3,7 @@ title: "List keySets"
 description: "Retrieve a list of trustframeworkkeyset objects."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

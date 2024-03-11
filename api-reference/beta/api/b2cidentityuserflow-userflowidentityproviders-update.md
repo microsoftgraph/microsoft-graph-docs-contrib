@@ -4,7 +4,7 @@ description: "Add an identityProvider to a b2cIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Add a userFlowIdentityProvider

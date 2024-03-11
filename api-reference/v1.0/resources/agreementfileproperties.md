@@ -3,7 +3,7 @@ title: "agreementFileProperties resource type"
 description: "Represents the properties of a terms-of-use agreement file; including the localized language and the display name."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

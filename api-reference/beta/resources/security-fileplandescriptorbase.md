@@ -3,7 +3,7 @@ title: "filePlanDescriptorBase resource type"
 description: "Represents the name for each file plan descriptor column associated with a particular label."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

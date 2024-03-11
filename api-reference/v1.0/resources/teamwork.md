@@ -4,7 +4,7 @@ description: "A container for Microsoft Teams features available for organizatio
 author: "akumar39"
 doc_type: resourcePageType
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # teamwork resource type
