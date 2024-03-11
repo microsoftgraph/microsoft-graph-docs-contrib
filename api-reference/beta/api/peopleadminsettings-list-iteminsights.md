@@ -1,6 +1,6 @@
 ---
 title: "List insightsSettings"
-description: "Get the insightsSettings resources from the itemInsights navigation property."
+description: "Get the **insightsSettings** resources from the **itemInsights** navigation property."
 author: "jolintve"
 ms.localizationpriority: medium
 ms.prod: "insights"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [insightsSettings](../resources/insightssettings.md) resources from the itemInsights navigation property.
+Get the [insightsSettings](../resources/insightssettings.md) resources from the **itemInsights** navigation property.
 
 To learn how to customize the privacy of item insights in an organization, see [Customize item insights privacy](/graph/insights-customize-item-insights-privacy).
 
@@ -69,6 +69,7 @@ GET https://graph.microsoft.com/beta/admin/people/itemInsights
 ### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
