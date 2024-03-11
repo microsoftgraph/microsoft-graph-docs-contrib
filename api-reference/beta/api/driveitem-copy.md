@@ -54,8 +54,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Name            | Value                                          | Description                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-| parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy will be created in.                                         |
-| name            | string                                         | Optional. The new name for the copy. If this isn't provided, the same name will be used as the original.    |
+| parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy is created in.                                         |
+| name            | string                                         | Optional. The new name for the copy. If this infromation isn't provided, the same name is used as the original.    |
 
 **Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.
 
@@ -66,9 +66,11 @@ Returns details about how to [monitor the progress](/graph/long-running-actions-
 ## Example
 
 This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
-The new copy of the file will be named `contoso plan (copy).txt`.
+The new copy of the file is named `contoso plan (copy).txt`.
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
@@ -121,18 +123,21 @@ Content-Type: application/json
 ---
 
 ### Response
+
+The following example shows the response.
+
 <!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
-The value of the `Location` header provides a URL for a service that will return the current state of the copy operation.
+The value of the `Location` header provides a URL for a service that returns the current state of the copy operation.
 You can use this information to [determine when the copy has finished](/graph/long-running-actions-overview).
 
 ### Remarks
 
 In many cases the copy action is performed asynchronously.
-The response from the API will only indicate that the copy operation was accepted or rejected; for example, due to the destination filename already being in use.
+The response from the API indicates that the copy operation was accepted or rejected; for example, due to the destination filename already being in use.
 
 [item-resource]: ../resources/driveitem.md
 
