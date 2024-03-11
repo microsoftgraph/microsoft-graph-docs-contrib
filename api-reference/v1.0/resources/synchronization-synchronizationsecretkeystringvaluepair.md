@@ -4,7 +4,7 @@ description: "Represents a single secret value."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationSecretKeyStringValuePair resource type

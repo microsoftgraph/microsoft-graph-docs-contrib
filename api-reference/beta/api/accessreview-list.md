@@ -127,7 +127,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get accessReview](accessreview-get.md)
 

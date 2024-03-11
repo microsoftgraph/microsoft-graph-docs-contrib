@@ -16,12 +16,12 @@ request_body = Contact(
 	surname = "Bansky",
 	email_addresses = [
 		TypedEmailAddress(
-			address = "pavelb@contoso.onmicrosoft.com",
+			address = "pavelb@contoso.com",
 			name = "Pavel Bansky",
 			type = EmailType.Personal,
 		),
 		TypedEmailAddress(
-			address = "pavelb@fabrikam.onmicrosoft.com",
+			address = "pavelb@contoso.com",
 			name = "Pavel Bansky",
 			type = EmailType.Other,
 			other_label = "Volunteer work",

@@ -257,7 +257,7 @@ For more information about permission scopes and how they work, see [Microsoft G
 
 <a name="see-also"></a>
 
-## See also
+## Related content
 
 - [Add images and files](onenote-images-files.md)
 - [Create absolute positioned elements](onenote-abs-pos.md)  

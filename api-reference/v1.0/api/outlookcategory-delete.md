@@ -3,7 +3,7 @@ title: "Delete outlookCategory"
 description: "Delete the specified outlookCategory object."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

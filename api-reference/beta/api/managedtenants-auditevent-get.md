@@ -112,7 +112,7 @@ Content-Type: application/json
       "activityDateTime": "2021-12-21T16:48:23.0330765Z",
       "activityId": "64be6675-3cb8-4b14-95f3-6d5ce9eecd79",
       "initiatedByAppId": "00000003-0000-0000-c000-000000000000",
-      "initiatedByUpn": "meganb@contoso.onmicrosoft.com",
+      "initiatedByUpn": "meganb@contoso.com",
       "category": "Baselines",
       "activity": "/managementActionTenantDeploymentStatuses/microsoft.graph.managedTenants.changeDeploymentStatus",
       "httpVerb": "POST",

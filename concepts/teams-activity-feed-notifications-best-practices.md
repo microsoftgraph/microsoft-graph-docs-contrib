@@ -66,7 +66,7 @@ Bot messages are delivered as chat or channel messages. If the user turns on cha
 
 It is useful for the alert to be consumed as a chat or channel message; for example, a message that is consumed by all channel members.
 
-## See also
+## Related content
 
 - [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)
 - [Microsoft Teams API overview](teams-concept-overview.md)

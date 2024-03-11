@@ -43,6 +43,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about team joining disabled](/graph/system-messages/#team-joining-disabled)
 - For more information about other types of events, see [System messages](/graph/system-messages).

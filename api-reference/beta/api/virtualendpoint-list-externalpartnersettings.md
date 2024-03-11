@@ -3,7 +3,7 @@ title: "List cloudPcExternalPartnerSettings"
 description: "Get a list of the cloudPcExternalPartnerSetting objects and their properties."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

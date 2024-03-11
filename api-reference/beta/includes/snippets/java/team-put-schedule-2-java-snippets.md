@@ -19,6 +19,8 @@ schedule.setOfferShiftRequestsEnabled(true);
 schedule.setTimeOffRequestsEnabled(true);
 schedule.setStartDayOfWeek(DayOfWeek.Tuesday);
 schedule.setActivitiesIncludedWhenCopyingShiftsEnabled(true);
+schedule.setIsCrossLocationShiftsEnabled(true);
+schedule.setIsCrossLocationShiftRequestApprovalRequired(true);
 schedule.setTimeClockEnabled(true);
 TimeClockSettings timeClockSettings = new TimeClockSettings();
 GeoCoordinates approvedLocation = new GeoCoordinates();

@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph identity protection APIs"
 description: "Use Microsoft Graph to query and receive information about risks detected by Microsoft Entra ID Protection."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: conceptualPageType
 ms.date: 12/06/2022
 ---
@@ -58,7 +58,7 @@ Microsoft Entra ID Protection for both users and service principals is a premium
 The availability of risk data is governed by the [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 
-## See also
+## Related content
 
 * [About Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 * [Get started with Microsoft Entra ID Protection and Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

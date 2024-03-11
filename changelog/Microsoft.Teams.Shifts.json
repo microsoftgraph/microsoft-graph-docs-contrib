@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "5e605695-52a5-406e-8832-2e59b74f8c75",
+          "ApiChange": "Resource",
+          "ChangedApiName": "shiftsRolePermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [shiftsRolePermission](https://learn.microsoft.com/en-us/graph/api/resources/shiftsRolePermission?view=graph-rest-beta) resource type.",
+          "Target": "shiftsRolePermission"
+        },
+        {
+          "Id": "5e605695-52a5-406e-8832-2e59b74f8c75",
+          "ApiChange": "Resource",
+          "ChangedApiName": "shiftsRoleDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the **shiftsRoleDefinitions** relationship to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "5e605695-52a5-406e-8832-2e59b74f8c75",
+          "ApiChange": "Resource",
+          "ChangedApiName": "shiftsRoleDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [shiftsRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/shiftsRoleDefinition?view=graph-rest-beta) resource and associated methods.",
+          "Target": "shiftsRoleDefinition"
+        }
+      ],
+      "Id": "5e605695-52a5-406e-8832-2e59b74f8c75",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-26T17:08:29.4849464Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
           "ApiChange": "Resources",
           "ChangedApiName": "resourceSpecificPermissionGrant",
@@ -589,6 +623,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-02-08T10:30:51.4178542Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1b890fd8-a5a6-4691-8286-21f9ed1bf21d",
+          "ApiChange": "Property",
+          "ChangedApiName": "isCrossLocationShiftRequestApprovalRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isCrossLocationShiftRequestApprovalRequired** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "1b890fd8-a5a6-4691-8286-21f9ed1bf21d",
+          "ApiChange": "Property",
+          "ChangedApiName": "isCrossLocationShiftsEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isCrossLocationShiftsEnabled** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        }
+      ],
+      "Id": "1b890fd8-a5a6-4691-8286-21f9ed1bf21d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-16T11:22:07.883123Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Shift management"
     }

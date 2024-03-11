@@ -4,7 +4,7 @@ description: "Update the Temporary Access Pass policy for the Microsoft Entra te
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

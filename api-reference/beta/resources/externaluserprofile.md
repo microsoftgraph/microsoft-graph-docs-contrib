@@ -3,7 +3,7 @@ title: "externalUserProfile resource type"
 description: "Represents the profile of an external user in a Microsoft Entra tenant."
 ms.localizationpriority: high
 author: "jkdouglas"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Inherits from [externalProfile](externalprofile.md).
 | Method         | Return Type | Description |
 |:---------------|:------------|:------------|
 |[Get externalUserProfile](../api/externaluserprofile-get.md) | [externalUserProfile](externaluserprofile.md) | Gets the properties of an external user profile. |
-|[List externalUserProfiles](../api/directory-list-externaluserprofile.md) |[externalUserProfile](externaluserprofile.md) collection| Gets a list of all external user profiles. |
+|[List externalUserProfiles](../api/directory-list-externaluserprofiles.md) |[externalUserProfile](externaluserprofile.md) collection| Gets a list of all external user profiles. |
 |[Update externalUserProfile](../api/externaluserprofile-update.md) | None | Update an external user profile. |
 |[Delete externalUserProfile](../api/directory-delete-externaluserprofiles.md) | None | Delete an external user profile. |
 

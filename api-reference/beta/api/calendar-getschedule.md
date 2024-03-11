@@ -3,7 +3,7 @@ title: "calendar: getSchedule"
 description: "Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period."
 ms.localizationpriority: high
 author: "tariq-sharif"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -66,7 +66,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
 {
-    "schedules": ["adelev@contoso.onmicrosoft.com", "meganb@contoso.onmicrosoft.com"],
+    "schedules": ["adelev@contoso.com", "meganb@contoso.com"],
     "startTime": {
         "dateTime": "2019-03-15T09:00:00",
         "timeZone": "Pacific Standard Time"
@@ -129,7 +129,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value": [
         {
-            "scheduleId": "adelev@contoso.onmicrosoft.com",
+            "scheduleId": "adelev@contoso.com",
             "availabilityView": "000220000",
             "scheduleItems": [
                 {
@@ -163,7 +163,7 @@ Content-type: application/json
             }
         },
         {
-            "scheduleId": "meganb@contoso.onmicrosoft.com",
+            "scheduleId": "meganb@contoso.com",
             "availabilityView": "200220010",
             "scheduleItems": [
                 {

@@ -3,7 +3,7 @@ title: "microsoftManagedDesktop resource type"
 description: "Represents specific settings for the Microsoft Managed Desktop that enables customers to get a managed device experience for a Cloud PC."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

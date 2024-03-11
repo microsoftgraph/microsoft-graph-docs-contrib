@@ -3,7 +3,7 @@ title: "Update domain"
 description: "Update the properties of domain object."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

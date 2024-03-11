@@ -355,7 +355,7 @@ Content-type: application/json
   "organizer": {
       "emailAddress": {
           "name": "MOD Administrator",
-          "address": "admin@M365x39866865.OnMicrosoft.com"
+          "address": "admin@contoso.com"
       }
   },
   "onlineMeeting": null

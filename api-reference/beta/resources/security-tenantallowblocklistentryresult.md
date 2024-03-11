@@ -3,7 +3,7 @@ title: "tenantAllowBlockListEntryResult resource type"
 description: "Represents a tenant allow block list entry result."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

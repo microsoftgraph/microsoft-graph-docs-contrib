@@ -140,7 +140,7 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 - [Get member of channel](channel-get-members.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

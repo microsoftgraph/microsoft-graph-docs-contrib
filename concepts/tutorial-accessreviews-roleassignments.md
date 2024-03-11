@@ -1,9 +1,9 @@
 ---
 title: "Review access to privileged roles using access reviews APIs"
 description: "Learn how to use the access reviews API to periodically review users and groups with access to privileged roles, including both active and eligible roles."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: jgangadhar
+ms.reviewer: jgangadhar, rianakarim
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 11/01/2022
@@ -783,7 +783,7 @@ Content-type: application/json
         "id": "10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6",
         "displayName": "MOD Administrator",
         "type": null,
-        "userPrincipalName": "admin@M365x43961174.onmicrosoft.com"
+        "userPrincipalName": "admin@contoso.com"
     },
     "scopes": [
         {

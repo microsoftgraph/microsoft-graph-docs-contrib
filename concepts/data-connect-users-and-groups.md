@@ -1,6 +1,6 @@
 ---
 title: "Use Microsoft Graph Data Connect to define the scope of a dataset"
-description: "Learn how to use Microsoft Graph Data Connect to select users that you want to extract data for and include filters to limit the data returned."
+description: "Learn how to use Microsoft Graph Data Connect to extract objects."
 author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
@@ -25,10 +25,9 @@ User-scoped datasets can be messages, events, users, and so on. These datasets f
 
 The following are the options for user-scoped datasets:
 
-    * **All users in the tenant**: Returns data for all the users in the tenant. Data is extracted for individual users in the selected group. For details, see [User selection and filtering capabilities](/graph/data-connect-filtering).
-    * **All users in the tenant with a scope filter**: Returns data for all the users in the tenant that are part of the scope filter applied. Data is extracted for individual users from the selected filter (group).
-        * A scope Filter can help filter the users. If it's left empty, all data for all users is returned. 
-    *    **Select groups from the Microsoft 365 tenant**: Data is extracted for individual users in the group.
+* **All users in the tenant**: Returns data for all the users in the tenant. Data is extracted for individual users in the selected group. For details, see [User selection and filtering capabilities](/graph/data-connect-filtering).
+* **All users in the tenant with a scope filter**: Returns data for all the users in the tenant that are part of the scope filter applied. Data is extracted for individual users from the selected filter (group).A scope Filter can help filter the users. If it's left empty, all data for all users is returned. 
+* **Select groups from the Microsoft 365 tenant**: Data is extracted for individual users in the group.
 
 #### Example
 
@@ -40,9 +39,9 @@ Group-scoped datasets can be Outlook group conversations, Teams channel messages
 
 The following are the options for group-scoped datasets:
 
-    * **All groups in the tenant**: Returns data for all the groups in the tenant.
-    * **All groups in the tenant with a scope filter**: Returns data for all the groups in the tenant with the scope filter applied. The scope Filter can help narrow down the list of groups. 
-    *   **Select groups from the Microsoft 365 tenant**: Returns collective data for the selected groups. Microsoft Graph Data Connect looks for data associated with those specific groups rather than the individuals of the group. 
+* **All groups in the tenant**: Returns data for all the groups in the tenant.
+* **All groups in the tenant with a scope filter**: Returns data for all the groups in the tenant with the scope filter applied. The scope Filter can help narrow down the list of groups. 
+* **Select groups from the Microsoft 365 tenant**: Returns collective data for the selected groups. Microsoft Graph Data Connect looks for data associated with those specific groups rather than the individuals of the group. 
 
 > **Note:**  When the customer specifies a group or groups to be the scope, Microsoft Graph Data Connect looks for data associated with those specific groups rather than the individuals of the group. 
  

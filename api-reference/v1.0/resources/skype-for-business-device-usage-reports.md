@@ -2,7 +2,7 @@
 title: "Skype for Business device usage reports"
 description: "You can use the Skype for Business device usage reports to get details on the types of clients and devices that are used across your organization. These details are helpful when you are investigating, planning, and making other business decisions for your organization."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
 ---

@@ -11,7 +11,7 @@ mgc-beta identity-governance entitlement-management access-packages access-packa
     "displayName":"Member",\
     "originSystem":"AadGroup",\
     "accessPackageResource": {\
-      "id":"4a1e21c5-8a76-4578-acb1-641160e076e8","resourceType":"Security Group",  \
+      "id":"4a1e21c5-8a76-4578-acb1-641160e076e8","resourceType":"Security Group",\
       "originId":"e93e24d1-2b65-4a6c-a1dd-654a12225487","originSystem":"AadGroup"\
     }\
   },\

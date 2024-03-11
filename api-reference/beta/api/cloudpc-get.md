@@ -3,7 +3,7 @@ title: "Get cloudPC"
 description: "Read the properties and relationships of a specific cloudPC object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -159,7 +159,7 @@ Content-Type: application/json
         }
       ]
     },
-    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "userPrincipalName": "pmitchell@contoso.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
     "provisioningType": "shared",
@@ -363,7 +363,7 @@ Content-Type: application/json
         }
       ]
     },
-    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "userPrincipalName": "pmitchell@contoso.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
     "provisioningType": "shared",

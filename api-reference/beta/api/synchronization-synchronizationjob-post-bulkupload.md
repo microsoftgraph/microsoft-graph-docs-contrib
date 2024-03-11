@@ -3,7 +3,7 @@ title: "Perform bulkUpload"
 description: "Perform a new bulkUpload."
 author: "cmmdesai"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType 
 ---
 

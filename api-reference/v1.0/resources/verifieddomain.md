@@ -3,7 +3,7 @@ title: "verifiedDomain resource type"
 description: "Specifies a domain for a tenant. The verifiedDomains property of the organization entity is a collection of verifiedDomain objects."
 ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 | capabilities | String  | For example, `Email`, `OfficeCommunicationsOnline`.                                  |
 | isDefault    | Boolean | `true` if this is the default domain associated with the tenant; otherwise, `false`. |
 | isInitial    | Boolean | `true` if this is the initial domain associated with the tenant; otherwise, `false`. |
-| name         | String  | The domain name; for example, `contoso.onmicrosoft.com`.                             |
+| name         | String  | The domain name; for example, contoso.com`.                             |
 | type         | String  | For example, `Managed`.                                                              |
 
 ## JSON representation

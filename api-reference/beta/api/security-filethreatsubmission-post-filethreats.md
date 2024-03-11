@@ -3,7 +3,7 @@ title: "Create fileThreatSubmission"
 description: "Create a new fileThreatSubmission object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -96,7 +96,7 @@ Content-type: application/json
     "user": {
       "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
       "displayName": "Ronald Admin",
-      "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+      "email": "tifc@contoso.com"
     }
   },
   "result": {

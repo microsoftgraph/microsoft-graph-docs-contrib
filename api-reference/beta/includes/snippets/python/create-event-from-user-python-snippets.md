@@ -35,7 +35,7 @@ request_body = Event(
 	attendees = [
 		Attendee(
 			email_address = EmailAddress(
-				address = "samanthab@contoso.onmicrosoft.com",
+				address = "samanthab@contoso.com",
 				name = "Samantha Booth",
 			),
 			type = AttendeeType.Required,

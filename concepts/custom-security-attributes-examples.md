@@ -6,7 +6,7 @@ ms.author: rolyon
 ms.reviewer: rolyon
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 ms.date: 02/14/2023
 #Customer intent: As a Microsoft Entra ID administrator, I want to assign, update, list, or remove custom security attribute assignments for users and service principals, so that I can store information, categorize objects, and enforce fine-grained access control over specific Azure resources using Azure attribute-based access control (Azure ABAC).
 ---

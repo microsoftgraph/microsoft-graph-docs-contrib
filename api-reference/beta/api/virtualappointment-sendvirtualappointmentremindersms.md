@@ -48,8 +48,8 @@ In the request body, supply a JSON object with the following parameters:
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|phonenumbers|String|The list of phone numbers to which to send the notification. Required.|
-|remindBeforeTimeInMinutes|String|The string `mins15`, which indicates that a reminder will be sent 15 minutes before the meeting start time. Required.|
+|attendees|[attendeeNotificationInfo](../resources/attendeenotificationinfo.md) collection|Represents the phone number and time zone of an external attendee. Required.|
+|remindBeforeTimeInMinutesType|[remindBeforeTimeInMinutesType](../resources/remindbeforetimeinminutestype.md) collection|Represents the reminder time interval. Required.|
 
 ## Response
 
@@ -71,10 +71,19 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentReminderSms
 
-{
-"phoneNumbers": [ "+13129224122", "+1242421412"],
-"remindBeforeTimeInMinutesType": "mins15"
-}
+{ 
+    "attendees": [ 
+        {
+            "phoneNumber":  "+13129224122",
+            "timeZone": "Pacific Standard Time"
+        },
+        {
+            "phoneNumber":  "+1242421412",
+            "timeZone": "Eastern Standard Time"
+        }
+    ], 
+    "remindBeforeTimeInMinutesType": "mins15"
+} 
 ```
 
 # [C#](#tab/csharp)

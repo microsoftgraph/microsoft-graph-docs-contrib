@@ -3,7 +3,7 @@ title: "securityReportsRoot: getAttackSimulationRepeatOffenders"
 description: "List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -135,5 +135,5 @@ Content-Type: application/json
 
 ```
 
-## See also
+## Related content
 [reportRoot: getAttackSimulationRepeatOffenders](reportroot-getattacksimulationrepeatoffenders.md) (deprecated)

@@ -4,7 +4,7 @@ description: "Use Microsoft Graph connectors to bring content from external serv
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Microsoft Graph connectors overview
@@ -40,7 +40,7 @@ To get started, see the following:
 - [Build your first custom Microsoft Graph connector using APIs](/graph/connecting-external-content-build-quickstart)
 - [Build your first custom Microsoft Graph connector using the SDK](/graph/custom-connector-sdk-sample-overview)
 
-## Next steps
+## Related content
 
 * [Work with the Microsoft Graph connectors API](/graph/connecting-external-content-connectors-api-overview)
 * [Use Postman with the Microsoft Graph connectors API](/graph/connecting-external-content-connectors-api-postman)

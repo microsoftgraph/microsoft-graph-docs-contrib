@@ -3,7 +3,7 @@ title: "Change notifications for Outlook resources in Microsoft Graph"
 description: "Subscribe to changes to Outlook resources (create, update, and delete) and changed resource data in Microsoft Graph APIs and receive notifications via webhooks."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 ---
 
@@ -354,7 +354,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Set up change notifications that include resource data](change-notifications-with-resource-data.md)
 - [Outlook mail API overview](outlook-mail-concept-overview.md)

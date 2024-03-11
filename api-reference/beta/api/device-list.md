@@ -3,7 +3,7 @@ title: "List devices"
 description: "Retrieve a list of devices registered in the directory. "
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of devices registered in the directory. 
+Retrieve a list of devices registered in the directory.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -296,7 +296,7 @@ The following example shows a request. This request requires the **ConsistencyLe
   "name": "list_devices_startswith_e4"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName 
+GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
 ConsistencyLevel: eventual
 ```
 
@@ -371,7 +371,7 @@ Content-type: application/json
       "Manufacturer":"Microsoft",
       "Model":"Surface",
       "operatingSystemVersion":"windows10EnterpriseN",
-      "hostNames":["device_1.contoso.onmicrosoft.com", "device_1"]
+      "hostNames":["contoso.com", "device_1"]
     }
   ]
 }

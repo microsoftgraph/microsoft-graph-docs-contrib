@@ -23,7 +23,7 @@ request_body = FindMeetingTimesPostRequestBody(
 			type = AttendeeType.Required,
 			email_address = EmailAddress(
 				name = "Alex Wilbur",
-				address = "alexw@contoso.onmicrosoft.com",
+				address = "alexw@contoso.com",
 			),
 		),
 	],

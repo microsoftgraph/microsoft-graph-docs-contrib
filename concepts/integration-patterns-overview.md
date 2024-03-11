@@ -24,7 +24,7 @@ The wide range of integration options can make it difficult to choose the best o
 
 ![Diagram of the analysis flow which starts with a business scenario, then the definition of architecture requirements, and then the selection of an integration option](./images/scenariorequirementssolution.png)
 
-Based on many known scenarios in the Microsoft Graph ecosystem, we identified four architecture requirements that have a profound impact on the selection of integration options. These architectural significant requirements are:
+Based on many known scenarios in the Microsoft Graph ecosystem, the following architecture requirements impact the selection of integration options:
 
 - Integration type - Application integrations involve client applications that depend on both the data and functionality of the Microsoft 365 services; for example, the **sendMail** API accesses user data and also send an email. Data integrations involve applications that produce or consume Microsoft Graph data but don't rely in Microsoft 365 services. All Microsoft Graph integration options support data integration scenarios.
 - Direction of data flow - Outbound flow is when customer data leaves the Microsoft Graph compliance boundaries and inbound flow is when customer data enters Microsoft Graph.
@@ -33,7 +33,7 @@ Based on many known scenarios in the Microsoft Graph ecosystem, we identified fo
 
 Use the following decision tree to choose an integration option based on your architecture requirements.
 
-![decisionTree](./images/decisiontree.png)
+![A diagram that lists business scenarios and the associated integration pattern options](./images/decisiontree.png)
 
 - Application integration requirements - Use Microsoft Graph APIs.
 - Data integration scenarios:
@@ -55,8 +55,8 @@ To explore each of the integration options in more detail, see the following top
 - [Retrieve events at your speed by using Microsoft Graph](./patterns/notifications-in-pull-mode.md)
 - [Use Microsoft Graph to augment Microsoft Search with custom data](./patterns/augment-search-experience-with-custom-data.md)
 
-## See also
+## Related content
 
-- [Azure and Microsoft 365 scenarios](./azure/architecture/solutions/microsoft-365-scenarios)
-- [Cloud design patterns](./azure/architecture/patterns/)
+- [Azure and Microsoft 365 scenarios](/azure/architecture/solutions/microsoft-365-scenarios)
+- [Cloud design patterns](/azure/architecture/patterns/)
   

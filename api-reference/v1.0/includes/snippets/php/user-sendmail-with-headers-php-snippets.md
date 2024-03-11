@@ -18,7 +18,7 @@ $messageBody->setContent('The group represents Nevada.');
 $message->setBody($messageBody);
 $toRecipientsRecipient1 = new Recipient();
 $toRecipientsRecipient1EmailAddress = new EmailAddress();
-$toRecipientsRecipient1EmailAddress->setAddress('AlexW@contoso.OnMicrosoft.com');
+$toRecipientsRecipient1EmailAddress->setAddress('AlexW@contoso.com');
 $toRecipientsRecipient1->setEmailAddress($toRecipientsRecipient1EmailAddress);
 $toRecipientsArray []= $toRecipientsRecipient1;
 $message->setToRecipients($toRecipientsArray);
