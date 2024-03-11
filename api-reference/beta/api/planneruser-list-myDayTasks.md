@@ -20,8 +20,8 @@ Retrieve a list of **plannertask** objects to be shown in MyDay view of the user
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "planneruser_list_myDayTasks" } -->
-[!INCLUDE [permissions-table](../includes/permissions/planneruser-list-myDayTasks-permissions.md)]
+<!-- { "blockType": "permissions", "name": "planneruser_list_mydaytasks" } -->
+[!INCLUDE [permissions-table](../includes/permissions/planneruser-list-mydaytasks-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ Here's an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "planneruser_get_myDayTasks"
+  "name": "planneruser_get_mydaytasks"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner/myDayTasks

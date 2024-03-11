@@ -17852,7 +17852,7 @@ items:
               - name: List user's assigned tasks
                 href: api/planneruser-list-tasks.md
               - name: List user's myDay tasks
-                href: api/planneruser-list-myDayTasks.md
+                href: api/planneruser-list-mydaytasks.md
           - name: Task details
             href: resources/plannertaskdetails.md
             items:
