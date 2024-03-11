@@ -3,7 +3,7 @@ title: "team: clone"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

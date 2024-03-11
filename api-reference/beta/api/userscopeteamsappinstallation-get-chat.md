@@ -4,7 +4,7 @@ description: "Retrieve one-on-one chat between the specified user and the Teams 
 author: "AkJo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Get chat between user and teamsApp

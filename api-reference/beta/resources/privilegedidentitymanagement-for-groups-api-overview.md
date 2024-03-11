@@ -3,7 +3,7 @@ title: "Govern membership and ownership of groups using privileged identity mana
 description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources, such as groups, in your organization."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ms.date: 10/12/2023
 ---
