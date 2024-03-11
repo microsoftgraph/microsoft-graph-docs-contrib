@@ -1,6 +1,6 @@
 ---
 title: "Get Known Issues by Time Range"
-description: "This function gets the known issues related to a particular product based on timeframe in the past."
+description: "This function gets the known Issues related to a particular product based on timeframe in the past."
 author: "skandula"
 ms.localizationpriority: medium
 ms.service: "windows-10"
@@ -42,8 +42,8 @@ The following table shows the parameters that must be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|daysInPast|Int32|This is the number of days to lookup in the past. This filter is applied on all known issues which are in final status and have a resolved date time.|
-|includeAllActive|Boolean|The response will include all Active known issues if this is set to true or null. If this is set to false, the response will not have any Active known issues.|
+|daysInPast|Int32|This parameter represents the number of days to lookup in the past. This filter is applied on all known issues that are in final status and have a resolved date time.|
+|includeAllActive|Boolean|If this parameter is set to true or noull, the response will include all Active known Issues. If the parameter is set to false, the response will not have any Active known Issues.|
 
 ## Request headers
 |Name|Description|
