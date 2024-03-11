@@ -18,6 +18,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## March 2024: New and generally available
 
+### Sharepoint File Download
+
+Use the [contentStream][/graph/api/driveitem-get-contentstream?view=graph-rest-beta] method to download file content directly instead of getting a 302 redirect url.
+
 ### Reports | Partner billing reports
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.

@@ -1,5 +1,5 @@
 ---
-title: Get driveItem by contentStream
+title: Get file by contentStream
 author: manikantsinghms
 ms.author: maniksingh
 description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
@@ -8,7 +8,7 @@ ms.date: 3/6/2024
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Get driveItem by contentStream
+# Get file by contentStream
 
 Namespace: microsoft.graph
 
