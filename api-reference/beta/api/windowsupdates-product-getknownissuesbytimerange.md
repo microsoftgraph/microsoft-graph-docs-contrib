@@ -56,7 +56,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.windowsUpdates.knownIssue](../resources/windowsupdates-knownissues.md) objects for the given time range in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.windowsUpdates.knownIssue](../resources/windowsupdates-knownissue.md) objects for the given time range in the response body.
 
 ## Examples
 
