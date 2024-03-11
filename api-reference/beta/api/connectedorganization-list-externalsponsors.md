@@ -3,7 +3,7 @@ title: "List externalSponsors"
 description: "Retrieve a list of connectedOrganization's externalSponsors."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}/extern
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

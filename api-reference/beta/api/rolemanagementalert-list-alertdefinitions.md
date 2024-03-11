@@ -3,7 +3,7 @@ title: "List alertDefinitions"
 description: "Get a list of the unifiedRoleManagementAlertDefinition objects and their properties."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

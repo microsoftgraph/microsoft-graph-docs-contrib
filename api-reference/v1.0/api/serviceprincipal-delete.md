@@ -3,7 +3,7 @@ title: "Delete servicePrincipal"
 description: "Delete servicePrincipal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -33,7 +33,7 @@ DELETE /servicePrincipals(appId='{appId}')
 ## Request headers
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body

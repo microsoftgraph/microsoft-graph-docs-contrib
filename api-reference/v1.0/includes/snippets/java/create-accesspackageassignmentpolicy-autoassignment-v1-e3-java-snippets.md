@@ -4,29 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessPackageAssignmentPolicy accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy();
-accessPackageAssignmentPolicy.displayName = "Sales department users";
-accessPackageAssignmentPolicy.description = "All users from sales department";
-accessPackageAssignmentPolicy.allowedTargetScope = AllowedTargetScope.SPECIFIC_DIRECTORY_USERS;
-LinkedList<SubjectSet> specificAllowedTargetsList = new LinkedList<SubjectSet>();
-AttributeRuleMembers specificAllowedTargets = new AttributeRuleMembers();
-specificAllowedTargets.description = "Membership rule for all users from sales department";
-specificAllowedTargets.membershipRule = "(user.department -eq \"Sales\")";
-specificAllowedTargetsList.add(specificAllowedTargets);
-accessPackageAssignmentPolicy.specificAllowedTargets = specificAllowedTargetsList;
+accessPackageAssignmentPolicy.setDisplayName("Sales department users");
+accessPackageAssignmentPolicy.setDescription("All users from sales department");
+accessPackageAssignmentPolicy.setAllowedTargetScope(AllowedTargetScope.SpecificDirectoryUsers);
+LinkedList<SubjectSet> specificAllowedTargets = new LinkedList<SubjectSet>();
+AttributeRuleMembers subjectSet = new AttributeRuleMembers();
+subjectSet.setOdataType("#microsoft.graph.attributeRuleMembers");
+subjectSet.setDescription("Membership rule for all users from sales department");
+subjectSet.setMembershipRule("(user.department -eq \"Sales\")");
+specificAllowedTargets.add(subjectSet);
+accessPackageAssignmentPolicy.setSpecificAllowedTargets(specificAllowedTargets);
 AccessPackageAutomaticRequestSettings automaticRequestSettings = new AccessPackageAutomaticRequestSettings();
-automaticRequestSettings.requestAccessForAllowedTargets = true;
-automaticRequestSettings.removeAccessWhenTargetLeavesAllowedTargets = true;
-automaticRequestSettings.gracePeriodBeforeAccessRemoval = DatatypeFactory.newInstance().newDuration("P7D");
-accessPackageAssignmentPolicy.automaticRequestSettings = automaticRequestSettings;
+automaticRequestSettings.setRequestAccessForAllowedTargets(true);
+automaticRequestSettings.setRemoveAccessWhenTargetLeavesAllowedTargets(true);
+PeriodAndDuration gracePeriodBeforeAccessRemoval = PeriodAndDuration.ofDuration(Duration.parse("P7D"));
+automaticRequestSettings.setGracePeriodBeforeAccessRemoval(gracePeriodBeforeAccessRemoval);
+accessPackageAssignmentPolicy.setAutomaticRequestSettings(automaticRequestSettings);
 AccessPackage accessPackage = new AccessPackage();
-accessPackage.id = "8a36831e-1527-4b2b-aff2-81259a8d8e76";
-accessPackageAssignmentPolicy.accessPackage = accessPackage;
+accessPackage.setId("8a36831e-1527-4b2b-aff2-81259a8d8e76");
+accessPackageAssignmentPolicy.setAccessPackage(accessPackage);
+AccessPackageAssignmentPolicy result = graphClient.identityGovernance().entitlementManagement().assignmentPolicies().post(accessPackageAssignmentPolicy);
 
-graphClient.identityGovernance().entitlementManagement().assignmentPolicies()
-	.buildRequest()
-	.post(accessPackageAssignmentPolicy);
 
 ```

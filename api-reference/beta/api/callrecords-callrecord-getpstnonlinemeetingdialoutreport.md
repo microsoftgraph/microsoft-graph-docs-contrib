@@ -1,7 +1,7 @@
 ---
 title: "callRecord: getPstnOnlineMeetingDialoutReport"
 description: "Get aggregated report of the usage and money spent for the audio conferencing dial-out service as a collection of pstnOnlineMeetingDialoutReport entries."
-author: "radoslag"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -57,7 +57,7 @@ In the request URL, provide the following query parameters with values.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -67,15 +67,15 @@ Don't supply a request body for this method.
 
 If successful, this function returns a `200 OK` response code and a collection of [microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport](../resources/callrecords-pstnonlinemeetingdialoutreport.md) entries in the response body.
   
-If the function returns more than 1000 entries for the specified date range, the body also includes an `@odata.nextLink` with a URL to query the next page of entries. The last page in the date range doesn't have an `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
+If the function returns more than 1,000 entries for the specified date range, the body also includes an `@odata.nextLink` with a URL to query the next page of entries. The last page in the date range doesn't have an `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
 
-The following example shows how to get the aggregated report for the audio conferencing dial-out service over a specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and an `@odata.nextLink` to get records beyond the first 1000. For readability, the response object contains only a collection of one record.
+The following example shows how to get the aggregated report for the audio conferencing dial-out service over a specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and an `@odata.nextLink` to get records beyond the first 1,000. For readability, the response object contains only a collection of one record.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -154,7 +154,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get log of PSTN calls](callrecords-callrecord-getpstncalls.md)
 - [Get log of sent/received SMS](callrecords-callrecord-getsmslog.md)

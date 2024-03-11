@@ -3,7 +3,7 @@ title: "privilegedAccessGroupEligibilitySchedule: filterByCurrentUser"
 description: "Retrieve schedules of membership and ownership eligibility requests for the calling principal."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ The following table shows the parameters that must be used with this function.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

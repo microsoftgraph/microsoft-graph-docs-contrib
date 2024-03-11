@@ -4,7 +4,7 @@ description: "Update the role of a conversationMember in a team or channel."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Update conversationMember
@@ -40,7 +40,7 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

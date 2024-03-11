@@ -35,7 +35,7 @@ PATCH /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCooki
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

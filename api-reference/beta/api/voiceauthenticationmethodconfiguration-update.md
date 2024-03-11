@@ -4,7 +4,7 @@ description: "Update the properties of a voiceAuthenticationMethodConfiguration 
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/v
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

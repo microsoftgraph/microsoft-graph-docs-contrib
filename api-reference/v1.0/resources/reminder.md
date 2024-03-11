@@ -3,7 +3,7 @@ title: "reminder resource type"
 description: "A reminder for an event in a user calendar."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

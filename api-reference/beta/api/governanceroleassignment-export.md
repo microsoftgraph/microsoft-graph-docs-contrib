@@ -3,8 +3,9 @@ title: "Export governanceRoleAssignmentRequests"
 description: "Retrieve a collection of governanceRoleAssignmentRequests in the format `application/octet-stream`, which can be parsed as a .csv file in the browser."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # Export governanceRoleAssignmentRequests

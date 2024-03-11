@@ -17,14 +17,19 @@ Namespace: microsoft.graph
 
 Blocks the managed app user from app check-in.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+To call this API, you must have the Intune Role Permission "Application -> Wipe" and one of the listed permissions for Delegated permission type.  The Intune Role Permission only supports delegated authentication.  Although the API supports Application only permission type, the API call cannot be completed without the Intune Role delegated permission.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Intune Role (RBAC)|Application -> Wipe|
+
+> **Note:** The Intune role permission is required for both delegated and app-only authentication scenarios.
 
 ## HTTP Request
 <!-- {
@@ -38,7 +43,7 @@ POST /users/{usersId}/wipeAndBlockManagedApps
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

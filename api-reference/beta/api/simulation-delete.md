@@ -3,7 +3,7 @@ title: "Delete simulation"
 description: "Delete an attack simulation campaign for a tenant."
 author: stuartcl
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ DELETE /security/attackSimulation/simulations/{simulationId}
 
 |Header         |Value                    |
 |---------------|-------------------------|
-|Authorization  |Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

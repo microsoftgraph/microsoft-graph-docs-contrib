@@ -38,7 +38,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -114,7 +114,7 @@ Content-Type: application/json
     "displayName": "device01",
     "managedDeviceId": "",
     "managedDeviceName": "",
-    "userPrincipalName": "sally@lucernepublishing001.onmicrosoft.com",
+    "userPrincipalName": "sally@contoso.com",
     "servicePlanName": "CloudPC_Standard",
     "status": "NotProvisioned",
     "tenantId": "aa060093-1e81-45b4-bebc-652713194ef7",

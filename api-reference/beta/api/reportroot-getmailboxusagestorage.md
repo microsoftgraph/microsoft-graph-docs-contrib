@@ -2,7 +2,7 @@
 title: "reportRoot: getMailboxUsageStorage"
 description: "Get the amount of storage used in your organization."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -50,7 +50,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

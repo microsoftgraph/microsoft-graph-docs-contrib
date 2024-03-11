@@ -39,7 +39,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 
 | Name | Description |
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required.|
 | Prefer  | respond-async. Indicates that the request is an async request. Optional.  |
 | Workbook-Session-Id  | {Workbook-Session-Id}. Created from the **createSession** request. Optional.|
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tablerowcollection-add-table-row-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -175,6 +179,10 @@ Workbook-Session-Id: {Workbook-Session-Id}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tablerowcollection-add-table-row-async-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-async-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

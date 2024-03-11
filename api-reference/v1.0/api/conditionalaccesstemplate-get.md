@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a conditionalAccessTe
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ This method supports the `$select` OData query parameter to help customize the r
 ## Request headers
 | Name            |Description|
 |:----------------|:----------|
-| Authorization   | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional. |
 
 ## Request body

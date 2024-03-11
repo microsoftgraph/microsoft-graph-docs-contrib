@@ -3,7 +3,7 @@ title: "unifiedRoleManagementAlertIncident: remediate"
 description: "Remediate or mitigate an incident of an alert."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ POST /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlert
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

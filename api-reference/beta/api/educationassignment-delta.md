@@ -3,7 +3,7 @@ title: "educationAssignment: delta"
 description: "Get a list of newly-created or updated assignments without reading the entire collection."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -49,7 +49,7 @@ GET /education/classes/{educationClassId}/members/{educationUserId}/assignments/
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

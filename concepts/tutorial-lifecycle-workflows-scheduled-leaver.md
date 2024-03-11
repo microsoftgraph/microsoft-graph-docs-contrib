@@ -1,11 +1,11 @@
 ---
 title: Automate employee offboarding tasks after their last day of work using Lifecycle Workflows APIs
 description: Learn how to automate employee offboarding tasks after their last day of work using Lifecycle Workflows APIs in Microsoft Graph. 
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 11/01/2022
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use Lifecycle Workflows APIs to automate employee offboarding tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
@@ -26,7 +26,7 @@ This post off-boarding scenario will run a scheduled workflow and accomplish the
 To complete this tutorial, you need the following resources and privileges:
 
 + Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Microsoft Entra](https://www.microsoft.com/security/business/microsoft-entra-pricing).
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Microsoft Entra role.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Microsoft Entra role.
 + Grant yourself the following *LifecycleWorkflows.ReadWrite.All* delegated permission.
 + Create a test user account that you'll use to represent an employee leaving your organization. This test user account will be deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
 
@@ -227,7 +227,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/work
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -597,7 +597,7 @@ When a workflow is scheduled, Lifecycle Workflows will check every three hours f
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Automate employee offboarding tasks after their last day of work with the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-scheduled-leaver-portal)
 - [Overview of Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)

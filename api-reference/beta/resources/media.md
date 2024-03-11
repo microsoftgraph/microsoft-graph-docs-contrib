@@ -35,7 +35,7 @@ It is available on the media property of [driveItem][item-resource] resources.
 }
 ```
 
-## See also 
+## Related content 
 
 For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 

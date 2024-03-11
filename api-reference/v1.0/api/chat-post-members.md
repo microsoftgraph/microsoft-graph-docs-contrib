@@ -4,7 +4,7 @@ description: "Add a conversationMember to a chat."
 author: "anandjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Add member to a chat
@@ -32,7 +32,7 @@ POST /chats/{chat-id}/members
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required. |
 
 ## Request body

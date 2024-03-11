@@ -3,7 +3,7 @@ title: "Remove publishedResource from an onPremisesAgentGroup"
 description: "Remove a [publishedResource](../resources/publishedresource.md) object from an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ DELETE /onPremisesPublishingProfiles/{profile-id}/publishedResources/{resource-i
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

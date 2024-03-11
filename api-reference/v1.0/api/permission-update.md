@@ -40,7 +40,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 | if-match      | String. If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 

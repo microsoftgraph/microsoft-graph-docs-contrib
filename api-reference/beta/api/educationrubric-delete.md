@@ -3,7 +3,7 @@ title: "Delete educationRubric"
 description: "Delete an educationRubric object."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ DELETE /education/me/rubrics/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

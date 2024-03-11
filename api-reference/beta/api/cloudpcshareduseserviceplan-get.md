@@ -3,7 +3,7 @@ title: "Get cloudPcSharedUseServicePlan (deprecated)"
 description: "Read the properties and relationships of a cloudPcSharedUseServicePlan object."
 author: "GuoanTang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The **cloudPcSharedUseServicePlan** resource is deprecated and stopped returning data on October 8, 2023. Going forward, use the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md).
+> The **cloudPcSharedUseServicePlan** resource is deprecated and stopped returning data on April 24, 2024. Going forward, use the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md).
 
 Read the properties and relationships of a [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) object.
 
@@ -45,7 +45,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

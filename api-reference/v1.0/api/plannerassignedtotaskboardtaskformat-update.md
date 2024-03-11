@@ -3,7 +3,7 @@ title: "Update plannerAssignedToTaskBoardTaskFormat"
 description: "Update the properties of **plannerAssignedToTaskBoardTaskFormat** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 | If-Match  | Last known ETag value for **plannerAssignedToTaskBoardTaskFormat** to be updated. Required.|
 
@@ -81,6 +81,10 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-plannerassignedtotaskboardtaskformat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-plannerassignedtotaskboardtaskformat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

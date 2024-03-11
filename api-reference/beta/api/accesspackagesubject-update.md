@@ -3,7 +3,7 @@ title: "Update accessPackageSubject"
 description: "Update the properties of an accessPackageSubject object."
 author: "aakanshanagwani"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ PATCH /identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUs
 
 Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -82,8 +82,16 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-accesspackagesubject-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackagesubject-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-accesspackagesubject-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-accesspackagesubject-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

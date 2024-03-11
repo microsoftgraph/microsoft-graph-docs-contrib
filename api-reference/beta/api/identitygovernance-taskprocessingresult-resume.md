@@ -3,7 +3,7 @@ title: "taskProcessingResult: resume"
 description: "In the default case an Azure Logic Apps system-assigned managed identity calls this API to resume the task processing result that's in progress."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks/{taskId
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

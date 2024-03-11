@@ -3,7 +3,7 @@ title: "Delete oAuth2PermissionGrant (a delegated permission grant)"
 description: "Delete an oAuth2PermissionGrant, representing a delegated permission grant."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 
@@ -39,7 +39,7 @@ DELETE /oAuth2PermissionGrants/{id}
 
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

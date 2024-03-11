@@ -3,7 +3,7 @@ title: "cloudPC: endGracePeriod"
 description: "End the grace period for a specific Cloud PC."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/endGracePeriod
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

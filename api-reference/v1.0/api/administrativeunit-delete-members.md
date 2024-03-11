@@ -3,7 +3,7 @@ title: "Remove a member"
 description: "Use this API to remove a member (user, group, or device) from an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ DELETE /directory/administrativeUnits/{id}/members/{id}/$ref
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

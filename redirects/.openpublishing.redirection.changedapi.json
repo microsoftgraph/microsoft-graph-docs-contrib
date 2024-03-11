@@ -1,26 +1,6 @@
 {
     "redirections": [
         {
-            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageassignmentrequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-post-assignmentrequests?view=graph-rest-1.0",
-            "redirect_document_id": false
-        },
-        {
-            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-post-assignmentrequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageassignmentrequests?view=graph-rest-beta",
-            "redirect_document_id": false
-        },
-        {
-            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackageassignmentrequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-list-assignmentrequests?view=graph-rest-1.0",
-            "redirect_document_id": false
-        },
-        {
-            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-assignmentrequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignmentrequests?view=graph-rest-beta",
-            "redirect_document_id": false
-        },
-        {
             "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageassignmentpolicies.md",
             "redirect_url": "/graph/api/entitlementmanagement-post-assignmentpolicies?view=graph-rest-1.0",
             "redirect_document_id": false

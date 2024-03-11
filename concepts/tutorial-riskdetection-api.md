@@ -1,11 +1,11 @@
 ---
 title: "Identify and remediate risk using Microsoft Graph"
 description: "Learn how to generate a risky sign-in and remediate the risk status of the user with a conditional access policy that requires multi-factor authentication (MFA)."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Etan.Basseri
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ms.date: 11/01/2022
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use Microsoft Entra ID Protection to identify and remediate identity-based risks, so that I can ensure the security of user accounts and protect against unauthorized access.
 ---
@@ -25,7 +25,7 @@ To successfully complete this tutorial, make sure that you have the required pre
 
 - You must have a Microsoft Entra ID P1 or P2 license to use the risk detection API.
 - This tutorial uses the Tor browser to sign in to the Microsoft Entra admin center anonymously. You can use any anonymous browser to accomplish the task. To download the Tor browser, see [Download Tor Browser](https://www.torproject.org/download/).
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 - Grant yourself the following delegated permissions: `IdentityRiskEvent.Read.All`, `IdentityRiskyUser.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ConditionalAccess`, and `User.ReadWrite.All`.
 
 ## Step 1: Create a user account
@@ -847,15 +847,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/9ad78153-b1f8-4714-adc1-144572767
 No Content - 204
 ```
 
-## See also
+## Related content
 
 In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do.
 
 - [What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
-- [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
-- [How it works: Azure Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
 - [Simulating risk detections in Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-simulate-risk)
-- [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy)
-- [riskDetection](/graph/api/resources/riskdetection)
-- [riskyUser](/graph/api/resources/riskyuser)
-- [user](/graph/api/resources/user)
+- [Use the Microsoft Graph identity protection APIs](/graph/api/resources/identityprotection-overview)

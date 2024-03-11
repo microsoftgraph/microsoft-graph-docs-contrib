@@ -3,7 +3,7 @@ title: "List joinedTeams"
 description: "Get the teams in Microsoft Teams that the user is a direct member of."
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method does not currently support the [OData query parameters](/graph/query
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json|
 
 ## Request body
@@ -128,7 +128,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - [List all teams](/graph/teams-list-all-teams)
 - [List associated teams](../api/associatedteaminfo-list.md)
 - [List all teams in an organization](../api/teams-list.md)

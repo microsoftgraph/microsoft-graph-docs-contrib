@@ -3,7 +3,7 @@ title: "Create Outlook category"
 description: "Create an outlookCategory object in the user's master list of categories."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ POST /users/{id|userPrincipalName}/outlook/masterCategories
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

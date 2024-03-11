@@ -3,7 +3,7 @@ title: "Get adminAppsAndServices"
 description: "Read the properties and relationships of a Microsoft Graph adminAppsAndServices object."
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

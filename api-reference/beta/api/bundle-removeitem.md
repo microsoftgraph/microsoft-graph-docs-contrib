@@ -34,7 +34,7 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -58,10 +58,6 @@ The following is an example of a request.
 ```http
 DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item-id}
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/remove-from-bundle-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/remove-from-bundle-javascript-snippets.md)]

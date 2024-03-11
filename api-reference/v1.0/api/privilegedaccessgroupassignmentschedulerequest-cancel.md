@@ -3,7 +3,7 @@ title: "privilegedAccessGroupAssignmentScheduleRequest: cancel"
 description: "Cancel an access assignment request to a group whose membership and ownership are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /identityGovernance/privilegedAccess/group/assignmentScheduleRequests/{priv
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

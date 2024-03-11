@@ -3,7 +3,7 @@ title: "List categories"
 description: "List all categories for an assignment."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ All [properties](/graph/api/resources/educationcategory#properties) are supporte
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

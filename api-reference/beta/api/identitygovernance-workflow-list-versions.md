@@ -3,7 +3,7 @@ title: "List workflowVersions"
 description: "Get a list of the workflowVersion objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ This method supports the `$select`, `$count`, `$search`, `$orderby`, `$expand`, 
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

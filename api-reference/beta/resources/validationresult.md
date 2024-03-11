@@ -2,6 +2,7 @@
 title: "validationResult resource type"
 description: "Exposes the properties that specify the rules against which a user's password was validated, and the validation results."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: resourcePageType

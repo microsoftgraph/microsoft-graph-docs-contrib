@@ -3,7 +3,7 @@ title: "Update plannerplandetails"
 description: "Update the properties of **plannerplandetails** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ PATCH /planner/plans/{id}/details
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | If-Match  | Last known ETag value for the plannerPlanDetails to be updated. Required.|
 
 ## Request body

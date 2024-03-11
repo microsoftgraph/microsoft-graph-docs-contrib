@@ -3,7 +3,7 @@ title: "alertRecord: setPortalNotificationAsSent"
 description: "Set a single portal notification status to published."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ POST /deviceManagement/monitoring/alertRecords/{alertRecordId}/setPortalNotifica
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

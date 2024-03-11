@@ -3,7 +3,7 @@ title: "offerShiftRequest: decline"
 description: "Decline an offer shift request."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -34,7 +34,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
@@ -70,10 +70,6 @@ Content-type: application/json
   "message": "Sorry, you can't offer this shift."
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/offershiftrequest-decline-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequest-decline-javascript-snippets.md)]

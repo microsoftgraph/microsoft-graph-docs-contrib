@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 LanguageProficiency languageProficiency = new LanguageProficiency();
-languageProficiency.allowedAudiences = EnumSet.of(AllowedAudiences.ORGANIZATION);
+languageProficiency.setAllowedAudiences(EnumSet.of(AllowedAudiences.Organization));
+LanguageProficiency result = graphClient.me().profile().languages().byLanguageProficiencyId("{languageProficiency-id}").patch(languageProficiency);
 
-graphClient.me().profile().languages("{id}")
-	.buildRequest()
-	.patch(languageProficiency);
 
 ```

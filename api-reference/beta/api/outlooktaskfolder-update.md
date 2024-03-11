@@ -3,7 +3,7 @@ title: "Update outlooktaskfolder"
 description: "Update the writable properties of an Outlook task folder."
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.

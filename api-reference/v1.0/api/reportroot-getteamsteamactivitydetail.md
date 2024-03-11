@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsTeamActivityDetail"
 description: "Get details about Microsoft Teams activity by team. The numbers include activities for both licensed and nonlicensed users."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "haoyli"
 doc_type: apiPageType
 ---
@@ -47,7 +47,7 @@ In the request URL, provide the following parameters with a valid value.
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

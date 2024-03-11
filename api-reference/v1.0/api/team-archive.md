@@ -3,7 +3,7 @@ title: "Archive team"
 description: "Archive the specified team. "
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ POST /teams/{id}/archive
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request, you may _optionally_ include the `shouldSetSpoSiteReadOnlyForMembers` parameter in a JSON body, as follows.
@@ -101,6 +101,10 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/archive-team-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/archive-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

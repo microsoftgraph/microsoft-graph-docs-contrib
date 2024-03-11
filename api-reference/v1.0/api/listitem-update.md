@@ -39,7 +39,7 @@ PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 | _if-match_ | `etag`. If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.
 
@@ -80,6 +80,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-listitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

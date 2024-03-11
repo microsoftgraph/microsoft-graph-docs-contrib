@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Team team = new Team();
-team.additionalDataManager().put("@microsoft.graph.teamCreationMode", new JsonPrimitive("migration"));
-team.additionalDataManager().put("template@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/teamsTemplates('standard')"));
-team.displayName = "My Sample Team";
-team.description = "My Sample Team’s Description";
-team.createdDateTime = OffsetDateTimeSerializer.deserialize("2020-03-14T11:22:17.067Z");
+team.setDisplayName("My Sample Team");
+team.setDescription("My Sample Team’s Description");
+OffsetDateTime createdDateTime = OffsetDateTime.parse("2020-03-14T11:22:17.067Z");
+team.setCreatedDateTime(createdDateTime);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("@microsoft.graph.teamCreationMode", "migration");
+additionalData.put("template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('standard')");
+team.setAdditionalData(additionalData);
+Team result = graphClient.teams().post(team);
 
-graphClient.teams()
-	.buildRequest()
-	.post(team);
 
 ```

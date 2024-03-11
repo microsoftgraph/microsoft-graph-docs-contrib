@@ -3,7 +3,7 @@ title: "List simulationAutomations"
 description: "Get a list of attack simulation automations for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,7 @@ GET /security/attackSimulation/simulationAutomations?$select={property}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

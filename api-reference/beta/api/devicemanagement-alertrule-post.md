@@ -3,7 +3,7 @@ title: "Create alertRule"
 description: "Create an alertRule object."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ POST /deviceManagement/monitoring/alertRules
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

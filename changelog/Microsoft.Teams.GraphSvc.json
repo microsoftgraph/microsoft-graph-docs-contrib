@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "c691ef0b-866c-4b62-8a12-65dc2109a655",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Change",
+          "Description": "Added description of the supported filtering scenarios for getAllMessages api.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "c691ef0b-866c-4b62-8a12-65dc2109a655",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-08T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "797420ec-837e-4dfa-ad2d-084a4b194a04",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Change",
+          "Description": "Added description of the supported filtering scenarios for getAllMessages api.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "797420ec-837e-4dfa-ad2d-084a4b194a04",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-08T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "97796aeb-ce8a-4650-ad43-6872cee08c4d",
           "ApiChange": "Method",
           "ChangedApiName": "removeAllAccessForUser",
@@ -1653,6 +1689,90 @@
       "CreatedDateTime": "2023-12-15T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Settings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamsAppDashboardCardSize",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppDashboardCardSize** enumeration type.",
+          "Target": "teamsAppDashboardCardSize"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamsAppDashboardCardSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppDashboardCardSourceType** enumeration type.",
+          "Target": "teamsAppDashboardCardSourceType"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardBotConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardBotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardBotConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardBotConfiguration"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardContentSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardContentSource](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardContentSource?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardContentSource"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardIcon",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardIcon](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardIcon?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardIcon"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashBoardCardDefinition?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardDefinition"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dashboardCards",
+          "ChangeType": "Addition",
+          "Description": "Added the **dashboardCards** relationship to the [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamsAppDefinition"
+        }
+      ],
+      "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-10T04:07:57.4956807Z",
+      "WorkloadArea": "Teamwork and Communications",
+      "SubArea": "Apps"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "teamworkTagType",
+          "ChangeType": "Addition",
+          "Description": "Added the `scheduled` value to the **teamworkTagType** enumeration.",
+          "Target": "teamworkTagType"
+        }
+      ],
+      "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-07T16:40:15.0058997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

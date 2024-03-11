@@ -3,7 +3,7 @@ title: "List attachments"
 description: "Get a list of attachment objects attached to an Outlook task."
 author: "svpsiva"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

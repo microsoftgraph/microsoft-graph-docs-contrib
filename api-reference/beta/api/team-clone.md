@@ -3,7 +3,7 @@ title: "team: clone"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -55,7 +55,7 @@ POST /teams/{id}/clone
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -159,6 +159,6 @@ Content-Length: 0
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

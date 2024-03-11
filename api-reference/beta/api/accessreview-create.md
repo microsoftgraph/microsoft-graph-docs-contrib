@@ -3,7 +3,7 @@ title: "Create accessReview (deprecated)"
 description: "In the Microsoft Entra access reviews feature, create a new accessReview object."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ POST /accessReviews
 ## Request headers
 | Name         | Description |
 |:-------------|:------------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body

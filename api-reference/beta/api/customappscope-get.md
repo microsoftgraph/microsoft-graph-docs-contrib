@@ -3,7 +3,7 @@ title: "Get customAppScope"
 description: "Get the properties of a customAppScope object for an RBAC provider."
 ms.localizationpriority: medium
 author: "cubika"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -44,7 +44,7 @@ This method does not support [OData query parameters](/graph/query-parameters) t
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

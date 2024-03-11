@@ -3,7 +3,7 @@ title: "Create connectorGroup"
 description: "Use this API to create a new connectorGroup."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -30,7 +30,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. Requried|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.

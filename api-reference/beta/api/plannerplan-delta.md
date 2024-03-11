@@ -3,7 +3,7 @@ title: "plannerPlan: delta"
 description: "Get newly created, updated, or deleted Planner plans in either a group or a Planner roster without having to perform a full read of the entire resource collection."
 author: "AnubhavKumarSingh"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ GET /groups/{group-id}/planner/plans/delta
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json          |
 
 ## Request body

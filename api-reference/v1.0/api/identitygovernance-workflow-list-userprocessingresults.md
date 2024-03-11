@@ -3,7 +3,7 @@ title: "List userProcessingResults"
 description: "Get a list of the userProcessingResult objects and their properties for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method supports the `$select`, `$orderby`, `$expand`, and `$filter` OData q
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

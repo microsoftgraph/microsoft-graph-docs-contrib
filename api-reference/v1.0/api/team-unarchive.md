@@ -3,7 +3,7 @@ title: "Unarchive team"
 description: "Restore an archived team. This restores users' ability to send messages and edit the team, abiding by tenant and team settings. A Teams is archived using the archive API."
 ms.localizationpriority: medium
 author: "nkramer"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ POST /teams/{id}/unarchive
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

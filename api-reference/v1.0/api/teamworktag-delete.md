@@ -3,7 +3,7 @@ title: "Delete teamworkTag"
 description: "Delete a teamworkTag object permanently."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ DELETE /teams/{team-id}/tags/{teamworkTag-id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

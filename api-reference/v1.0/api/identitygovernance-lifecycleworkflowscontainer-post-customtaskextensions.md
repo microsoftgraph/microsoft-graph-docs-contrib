@@ -3,7 +3,7 @@ title: "Create Custom Task Extension"
 description: "Create a new customTaskExtension object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ POST /identityGovernance/lifecycleWorkflows/customTaskExtensions
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -115,6 +115,10 @@ Content-length: 588
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-create-customtaskextension-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-create-customtaskextension-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

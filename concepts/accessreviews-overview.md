@@ -1,11 +1,11 @@
 --- 
 title: "Overview of the access reviews API" 
-description: "Use the access reviews API to programmatically review access to your Microsoft Entra resources to ensure that the right identities have the right access to the right resources." 
-author: "FaithOmbongi" 
+description: "Use the access reviews API to programmatically review access to your Microsoft Entra resources to ensure that the right identities have the right access to the right resources."
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.localizationpriority: medium 
-ms.prod: "governance" 
+ms.subservice: "entra-id-governance" 
 doc_type: conceptualPageType 
 ms.date: 08/24/2022
 #customer intent: As a developer, I want to build apps that use Microsoft Entra access reviews to programmatically review access to Microsoft Entra resources to ensure that the right identities have the right access to the right resources.
@@ -70,7 +70,7 @@ In a delegated (user) context, an application calls the access reviews API on be
 
 In an application context, an application calls the access reviews API without a signed-in user present. A typical scenario is a scheduled background script regularly collecting decisions for all access reviews.
 
-## Next steps 
+## Related content
 
 + [Use the access reviews API](/graph/api/resources/accessreviewsv2-overview)
 + [Read more about Microsoft Entra access reviews](/azure/active-directory/governance/access-reviews-overview)

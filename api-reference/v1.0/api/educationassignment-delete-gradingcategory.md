@@ -3,7 +3,7 @@ title: "Remove gradingCategory"
 description: "Remove gradingCategory from the assignment."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -28,7 +28,7 @@ DELETE /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -52,10 +52,6 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/c2eeaaf2-766c-4b90-9a17-61625bc5a47d/gradingCategory/$ref
 
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-gradingcategories-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-gradingcategories-javascript-snippets.md)]

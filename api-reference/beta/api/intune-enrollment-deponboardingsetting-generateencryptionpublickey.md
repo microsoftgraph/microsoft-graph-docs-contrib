@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Generate a public key to use to encrypt the Apple device enrollment program token
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,7 +40,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/generateEn
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

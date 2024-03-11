@@ -4,7 +4,7 @@ description: "Delete a unifiedRoleAssignmentMultiple object."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -20,7 +20,7 @@ This is applicable for a RBAC application that supports multiple principals and 
 - Cloud PC 
 - device management (Intune)
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -58,7 +58,7 @@ DELETE /roleManagement/deviceManagement/roleAssignments/{id}
 
 | Name | Description |
 |:---- |:----------- |
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

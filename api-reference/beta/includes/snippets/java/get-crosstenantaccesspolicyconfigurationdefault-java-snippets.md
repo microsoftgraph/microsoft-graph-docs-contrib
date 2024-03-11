@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CrossTenantAccessPolicyConfigurationDefault crossTenantAccessPolicyConfigurationDefault = graphClient.policies().crossTenantAccessPolicy().default()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+CrossTenantAccessPolicyConfigurationDefault result = graphClient.policies().crossTenantAccessPolicy().defaultEscaped().get();
+
 
 ```

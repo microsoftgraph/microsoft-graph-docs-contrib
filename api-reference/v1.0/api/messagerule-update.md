@@ -3,7 +3,7 @@ title: "Update rule"
 description: "Change writable properties on a messageRule object and save the changes."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 

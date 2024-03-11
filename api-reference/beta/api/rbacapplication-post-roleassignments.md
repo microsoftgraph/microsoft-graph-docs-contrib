@@ -4,7 +4,7 @@ description: "Create a new unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -75,7 +75,7 @@ POST /roleManagement/exchange/roleAssignments
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

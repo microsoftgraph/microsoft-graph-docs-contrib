@@ -3,7 +3,7 @@ title: "Add connector to connectorGroup"
 description: "Use this API to add a connector to a connectorGroup."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -30,7 +30,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body

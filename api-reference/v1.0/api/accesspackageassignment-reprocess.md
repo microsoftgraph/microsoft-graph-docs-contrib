@@ -3,7 +3,7 @@ title: "accessPackageAssignment: reprocess"
 description: "Reprocess accesspackageassignment objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ POST /identityGovernance/entitlementManagement/assignments/{id}/reprocess
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

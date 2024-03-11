@@ -3,7 +3,7 @@ title: "cloudPC: retryPartnerAgentInstallation"
 description: "Attempts to re-install party partner agents in a Cloud PC failed to install."
 author: "JannyMa"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/retryPartnerAgentInstallati
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "message: forward"
 description: "Forward a message using either JSON or MIME format"
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -88,7 +88,7 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"danas@contoso.onmicrosoft.com",
+          "address":"danas@contoso.com",
           "name":"Dana Swope"
         }
       }

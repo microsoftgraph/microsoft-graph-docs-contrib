@@ -3,7 +3,7 @@ title: "Download printDocument binary file"
 description: Download the binary file associated with the document.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,7 @@ GET /print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/$v
 ## Request headers
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

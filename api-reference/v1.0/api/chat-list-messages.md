@@ -3,7 +3,7 @@ title: "List messages in a chat"
 description: "Retrieve the list of messages in a chat."
 ms.localizationpriority: high
 author: RamjotSingh
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -53,7 +53,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

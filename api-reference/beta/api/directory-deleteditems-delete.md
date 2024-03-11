@@ -3,7 +3,7 @@ title: "Permanently delete item (directory object)"
 description: "Permanently delete a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). After an item is permanently deleted, it **cannot** be restored.
+Permanently delete a recently deleted [application](../resources/application.md), [externalUserProfile](../resources/externaluserprofile.md), [group](../resources/group.md), [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). After an item is permanently deleted, it **cannot** be restored.
 
 Administrative units **cannot** be permanently deleted by using the **deletedItems** API. Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
@@ -26,7 +26,9 @@ The following table shows the least privileged permission or permissions require
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
 | [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
+| [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.ReadWrite.All | Not supported | ExternalUserProfile.ReadWrite.All |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Not supported. |
+| [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.ReadWrite.All | Not supported | PendingExternalUserProfile.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
 | [user](../resources/user.md) | User.ReadWrite.All | Not supported. | Not supported. |
 
@@ -41,7 +43,7 @@ DELETE /directory/deleteditems/{id}
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;code&gt; *Required*|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json |
 
 ## Request body
@@ -64,12 +66,36 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-directory-deleteditem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-directory-deleteditem-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-directory-deleteditem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directory-deleteditem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-directory-deleteditem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-directory-deleteditem-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-directory-deleteditem-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-directory-deleteditem-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

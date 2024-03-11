@@ -3,7 +3,7 @@ title: "phone resource type"
 description: "Represents a phone number."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "dkershaw10"
 ---
 

@@ -2,7 +2,7 @@
 title: "chatMessage: undoSoftDelete"
 description: "Undelete a single message or a message reply in a channel or a chat."
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---
@@ -60,7 +60,7 @@ POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/undoSoftDelete
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

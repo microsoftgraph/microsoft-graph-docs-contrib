@@ -4,27 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Agreement agreement = new Agreement();
-agreement.displayName = "Contoso ToU for guest users";
-agreement.isViewingBeforeAcceptanceRequired = true;
-LinkedList<AgreementFileLocalization> filesList = new LinkedList<AgreementFileLocalization>();
-AgreementFileLocalization files = new AgreementFileLocalization();
-files.fileName = "TOU.pdf";
-files.language = "en";
-files.isDefault = true;
+agreement.setDisplayName("Contoso ToU for guest users");
+agreement.setIsViewingBeforeAcceptanceRequired(true);
+LinkedList<AgreementFileLocalization> files = new LinkedList<AgreementFileLocalization>();
+AgreementFileLocalization agreementFileLocalization = new AgreementFileLocalization();
+agreementFileLocalization.setFileName("TOU.pdf");
+agreementFileLocalization.setLanguage("en");
+agreementFileLocalization.setIsDefault(true);
 AgreementFileData fileData = new AgreementFileData();
-fileData.data = Base64.getDecoder().decode("SGVsbG8gd29ybGQ=//truncated-binary");
-files.fileData = fileData;
-filesList.add(files);
-AgreementFileLocalizationCollectionResponse agreementFileLocalizationCollectionResponse = new AgreementFileLocalizationCollectionResponse();
-agreementFileLocalizationCollectionResponse.value = filesList;
-AgreementFileLocalizationCollectionPage agreementFileLocalizationCollectionPage = new AgreementFileLocalizationCollectionPage(agreementFileLocalizationCollectionResponse, null);
-agreement.files = agreementFileLocalizationCollectionPage;
+byte[] data = Base64.getDecoder().decode("SGVsbG8gd29ybGQ=//truncated-binary");
+fileData.setData(data);
+agreementFileLocalization.setFileData(fileData);
+files.add(agreementFileLocalization);
+agreement.setFiles(files);
+Agreement result = graphClient.identityGovernance().termsOfUse().agreements().post(agreement);
 
-graphClient.identityGovernance().termsOfUse().agreements()
-	.buildRequest()
-	.post(agreement);
 
 ```

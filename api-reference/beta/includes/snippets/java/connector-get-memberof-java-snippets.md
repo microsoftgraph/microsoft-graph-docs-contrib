@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ConnectorGroupCollectionWithReferencesPage memberOf = graphClient.onPremisesPublishingProfiles("applicationProxy").connectors("{id}").memberOf()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ConnectorGroupCollectionResponse result = graphClient.onPremisesPublishingProfiles().byOnPremisesPublishingProfileId("{onPremisesPublishingProfile-id}").connectors().byConnectorId("{connector-id}").memberOf().get();
+
 
 ```

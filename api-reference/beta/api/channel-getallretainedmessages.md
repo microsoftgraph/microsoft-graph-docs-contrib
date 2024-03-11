@@ -3,7 +3,7 @@ title: "channel: getAllRetainedMessages"
 description: "Get retained messages across all channels in a team."
 author: "AgnesLiu"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ This method supports the following OData query parameters to help customize the 
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -222,6 +222,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

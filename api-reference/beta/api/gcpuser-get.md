@@ -42,7 +42,7 @@ This method supports the `$select` OData query parameter to help customize the r
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -64,10 +64,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/associatedIdentities/users/dXNlcjFAZ3N1aXRlMS5jb20
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-gcpuser-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-gcpuser-javascript-snippets.md)]

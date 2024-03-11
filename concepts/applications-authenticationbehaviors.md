@@ -1,12 +1,12 @@
 ---
 title: "Manage application authenticationBehaviors"
 description: "Manage the application authenticationBehaviors to adopt new breaking changes."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: medbhargava
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 06/26/2023
 #customer intent: As a developer, I want to use Microsoft Graph to configure my app's behavior to adopt new breaking changes.
 ---
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e919
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/get-application-authenticationbehaviors-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -167,7 +167,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/update-authenticationbehaviors-removeunverifiedemailclaim-true-option1-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -273,7 +273,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/update-authenticationbehaviors-removeunverifiedemailclaim-false-option1-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -379,7 +379,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/update-authenticationbehaviors-removeunverifiedemailclaim-null-false-option1-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -453,7 +453,7 @@ Content-Type: application/json
 
 ---
 
-## See also
+## Related content
 
 - [authenticationBehaviors resource type](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true)
 - [Migrate away from using email claims for user identification or authorization](/azure/active-directory/develop/migrate-off-email-claim-authorization)

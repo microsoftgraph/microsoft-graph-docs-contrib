@@ -3,7 +3,7 @@ title: "Delete accessPackageCatalog"
 description: "Delete accessPackageCatalog."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Delete accessPackageCatalog
@@ -36,7 +36,7 @@ DELETE /identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogI
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

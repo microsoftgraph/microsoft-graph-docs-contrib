@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.mac_o_s_custom_configuration import MacOSCustomConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 

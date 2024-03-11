@@ -4,7 +4,7 @@ description: "Learn how to use Microsoft Graph to create and manage connections.
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -134,5 +134,5 @@ To remove all items that were indexed via a connection, you can [delete a connec
 ## Next steps
 
 - [Register the connection schema](connecting-external-content-manage-schema.md)
-- [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview)
+- [Review the Microsoft Graph connectors API reference](/graph/api/resources/connectors-api-overview)
 - [Download the sample search connector from GitHub](https://github.com/microsoftgraph/msgraph-search-connector-sample)

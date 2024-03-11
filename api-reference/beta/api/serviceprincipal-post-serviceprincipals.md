@@ -4,7 +4,7 @@ description: "Create a new serviceprincipal object."
 author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Create servicePrincipal
@@ -44,7 +44,7 @@ POST /servicePrincipals
 ## Request headers
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body

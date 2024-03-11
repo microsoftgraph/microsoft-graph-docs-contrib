@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the summary of users capable of multifactor authentication, self-service password reset, and passwordless authentication in an organization.
+Represents the summary of users capable of multifactor authentication, self-service password reset, and passwordless authentication in an organization. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
 ## Methods
 

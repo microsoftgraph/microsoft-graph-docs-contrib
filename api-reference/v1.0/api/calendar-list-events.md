@@ -3,7 +3,7 @@ title: "List events"
 description: "Retrieve a list of events in a calendar. The list contains single instance meetings and series masters."
 author: "iamgirishck"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 Retrieve a list of events in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md). The list of events contains single instance meetings and series masters.
 
-To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or 
+To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or
 [get the instances of an event](event-list-instances.md).
 
 > [!NOTE]
-> If your target mailbox calendar contains any private items, the caller must either:  
->  * Be granted `FullAccess` mailbox permissions over the target mailbox (via the [Add-MailboxPermission](/powershell/module/exchange/add-mailboxpermission) cmdlet).  
->  * Be granted the `Delegate` + `CanViewPrivateItems` flags (similar to the previous option, but through the [Add-MailboxFolderPermission](/powershell/module/exchange/add-mailboxfolderpermission) cmdlet). This option routes all meeting requests to the delegate mailbox. For a workaround, see [SharingPermissionFlags](/powershell/module/exchange/add-mailboxfolderpermission?view=exchange-ps#-sharingpermissionflags). 
+> If your target mailbox calendar contains any private items, the caller must either:
+>  * Be granted `FullAccess` mailbox permissions over the target mailbox (via the [Add-MailboxPermission](/powershell/module/exchange/add-mailboxpermission) cmdlet).
+>  * Be granted the `Delegate` + `CanViewPrivateItems` flags (similar to the previous option, but through the [Add-MailboxFolderPermission](/powershell/module/exchange/add-mailboxfolderpermission) cmdlet). This option routes all meeting requests to the delegate mailbox. For a workaround, see [SharingPermissionFlags](/powershell/module/exchange/add-mailboxfolderpermission?view=exchange-ps#-sharingpermissionflags).
 >
 > Failure to meet these conditions will result in a `The specified object was not found in the store` response.
 
@@ -290,15 +290,15 @@ Content-type: application/json
                         "time": "0001-01-01T00:00:00Z"
                     },
                     "emailAddress": {
-                        "name": "admin@M365B877719.onmicrosoft.com",
-                        "address": "admin@M365B877719.onmicrosoft.com"
+                        "name": "admin@contoso.com",
+                        "address": "admin@contoso.com"
                     }
                 }
             ],
             "organizer": {
                 "emailAddress": {
                     "name": "Samantha Booth",
-                    "address": "samanthab@adatum.onmicrosoft.com"
+                    "address": "samanthab@contoso.com"
                 }
             },
             "onlineMeeting": {

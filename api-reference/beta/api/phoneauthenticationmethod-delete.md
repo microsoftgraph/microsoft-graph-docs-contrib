@@ -4,7 +4,7 @@ description: "Delete a user's phone authentication method."
 ms.localizationpriority: medium
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -69,7 +69,7 @@ The value of `phoneMethodId` corresponding to the phoneType to delete is one of 
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "Get outlookTask"
 description: "Get the properties and relationships of an Outlook task in the user's mailbox."
 ms.localizationpriority: medium
 author: "mashriv"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name                     | Description                                       |
 |:-------------------------|:--------------------------------------------------|
-| Authorization            | Bearer {token}. Required.                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional. |
 
 ## Request body

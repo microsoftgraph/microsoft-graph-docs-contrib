@@ -3,7 +3,7 @@ title: "Delete attachment"
 description: "Delete an attachment from a calendar event, message, Outlook task, or post."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "SuryaLashmiS"
 ---
 
@@ -116,7 +116,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

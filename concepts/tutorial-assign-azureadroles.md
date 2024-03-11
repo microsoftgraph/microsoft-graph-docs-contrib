@@ -1,11 +1,11 @@
 ---
 title: "Assign Microsoft Entra roles through Privileged Identity Management (PIM) APIs in Microsoft Graph"
 description: "Learn how to create a role-assignable security group for IT Helpdesk and use the PIM API to assign the security group eligibility to the User Administrator role."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 ms.date: 12/20/2022
 #Customer intent: As a developer integrating with Microsoft Graph, I want to learn how to integrate Privileged Identity Management (PIM) APIs for just in time access to Microsoft Entra roles, so that I can strengthen my organization's Zero Trust posture by enforcing the principle of least privilege.
 ---
@@ -32,14 +32,14 @@ Assigning eligibility instead of a persistently active User Administrator privil
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled.
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
   + [Optional] Start a new session in another browser. You'll sign in later in this tutorial.
 + Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, and `RoleManagement.ReadWrite.Directory`.
 + Authenticator app installed on your phone to register a user for multifactor authentication (MFA).
 
 ## Step 1: Create a test user
 
-Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step. After creating the user, visit the Microsoft Entra admin center and enable multifactor authentication (MFA) for the user. For more information about enabling MFA, see the [See also](#see-also) section.
+Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step. After creating the user, visit the Microsoft Entra admin center and enable multifactor authentication (MFA) for the user. For more information about enabling MFA, see the [Related content](#related-content) section.
 
 
 ### Request
@@ -740,7 +740,7 @@ DELETE https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 + [Tutorial: Assign Microsoft Entra roles in Privileged Identity Management using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-pim)
 + [Overview of role management through PIM](/graph/api/resources/privilegedidentitymanagementv3-overview)

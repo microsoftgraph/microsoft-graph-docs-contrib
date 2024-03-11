@@ -3,7 +3,7 @@ title: "Get onPremisesDirectorySynchronization"
 description: "Read the properties and relationships of an onPremisesDirectorySynchronization object."
 author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -138,7 +138,7 @@ Content-Type: application/json
       "successfulLinksProvisioningCount": 0,
       "successfulObjectsProvisioningCount": 0,
       "clientMachineName": "ABCD-SYNC-01",
-      "serviceAccount": "Synchronization-01@Contoso.onmicrosoft.com",
+      "serviceAccount": "Synchronization-01@contoso.com",
       "totalConnectorSpaceObjects": 123456789
     },
     "writebackConfiguration": {

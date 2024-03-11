@@ -4,7 +4,7 @@ description: "Read the details of the Temporary Access Pass policy for the Micro
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/tem
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

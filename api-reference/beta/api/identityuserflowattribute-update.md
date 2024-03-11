@@ -4,7 +4,7 @@ description: "Update properties of a custom identityUserFlowAttribute."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Update identityUserFlowAttribute
@@ -38,7 +38,7 @@ PATCH /identity/userFlowAttributes/{id}
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

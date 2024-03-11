@@ -3,7 +3,7 @@ title: "directoryDefinition: discover"
 description: "Discover the latest schema definition for provisioning to an application. "
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{di
 
 | Header        | Value                      |
 |:--------------|:---------------------------|
-| Authorization | Bearer {token} (required)  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

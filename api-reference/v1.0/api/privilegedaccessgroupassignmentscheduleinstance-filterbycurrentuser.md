@@ -3,7 +3,7 @@ title: "privilegedAccessGroupAssignmentScheduleInstance: filterByCurrentUser"
 description: "In PIM for groups, retrieve the schedule instances for membership or ownership assignments for the calling principal to groups that are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ The following table lists the parameters that are required when you call this fu
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

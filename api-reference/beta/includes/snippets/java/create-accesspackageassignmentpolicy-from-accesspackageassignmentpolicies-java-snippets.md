@@ -4,30 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessPackageAssignmentPolicy accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy();
-accessPackageAssignmentPolicy.accessPackageId = "56ff43fd-6b05-48df-9634-956a777fce6d";
-accessPackageAssignmentPolicy.displayName = "direct";
-accessPackageAssignmentPolicy.description = "direct assignments by administrator";
-accessPackageAssignmentPolicy.accessReviewSettings = null;
+accessPackageAssignmentPolicy.setAccessPackageId("56ff43fd-6b05-48df-9634-956a777fce6d");
+accessPackageAssignmentPolicy.setDisplayName("direct");
+accessPackageAssignmentPolicy.setDescription("direct assignments by administrator");
+accessPackageAssignmentPolicy.setAccessReviewSettings(null);
 RequestorSettings requestorSettings = new RequestorSettings();
-requestorSettings.scopeType = "NoSubjects";
-requestorSettings.acceptRequests = true;
-LinkedList<UserSet> allowedRequestorsList = new LinkedList<UserSet>();
-requestorSettings.allowedRequestors = allowedRequestorsList;
-accessPackageAssignmentPolicy.requestorSettings = requestorSettings;
+requestorSettings.setScopeType("NoSubjects");
+requestorSettings.setAcceptRequests(true);
+LinkedList<UserSet> allowedRequestors = new LinkedList<UserSet>();
+requestorSettings.setAllowedRequestors(allowedRequestors);
+accessPackageAssignmentPolicy.setRequestorSettings(requestorSettings);
 ApprovalSettings requestApprovalSettings = new ApprovalSettings();
-requestApprovalSettings.isApprovalRequired = false;
-requestApprovalSettings.isApprovalRequiredForExtension = false;
-requestApprovalSettings.isRequestorJustificationRequired = false;
-requestApprovalSettings.approvalMode = "NoApproval";
-LinkedList<ApprovalStage> approvalStagesList = new LinkedList<ApprovalStage>();
-requestApprovalSettings.approvalStages = approvalStagesList;
-accessPackageAssignmentPolicy.requestApprovalSettings = requestApprovalSettings;
+requestApprovalSettings.setIsApprovalRequired(false);
+requestApprovalSettings.setIsApprovalRequiredForExtension(false);
+requestApprovalSettings.setIsRequestorJustificationRequired(false);
+requestApprovalSettings.setApprovalMode("NoApproval");
+LinkedList<ApprovalStage> approvalStages = new LinkedList<ApprovalStage>();
+requestApprovalSettings.setApprovalStages(approvalStages);
+accessPackageAssignmentPolicy.setRequestApprovalSettings(requestApprovalSettings);
+AccessPackageAssignmentPolicy result = graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentPolicies().post(accessPackageAssignmentPolicy);
 
-graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentPolicies()
-	.buildRequest()
-	.post(accessPackageAssignmentPolicy);
 
 ```

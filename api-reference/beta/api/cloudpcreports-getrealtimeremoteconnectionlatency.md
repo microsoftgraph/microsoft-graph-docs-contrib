@@ -3,7 +3,7 @@ title: "cloudPcReports: getRealTimeRemoteConnectionLatency"
 description: "Get the real-time connection latency information for a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ In the request URL, provide the following query parameters with values.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

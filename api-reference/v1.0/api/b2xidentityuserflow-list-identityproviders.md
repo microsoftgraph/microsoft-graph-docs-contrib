@@ -4,7 +4,7 @@ description: "List all identityProviders in a b2xIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List identityProviders
@@ -39,7 +39,7 @@ GET /identity/b2xUserFlows/{id}/identityProviders
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

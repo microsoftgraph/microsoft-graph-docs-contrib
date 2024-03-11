@@ -4,27 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessPackageResourceRoleScope accessPackageResourceRoleScope = new AccessPackageResourceRoleScope();
 AccessPackageResourceRole accessPackageResourceRole = new AccessPackageResourceRole();
-accessPackageResourceRole.originId = "Member_b31fe1f1-3651-488f-bd9a-1711887fd4ca";
-accessPackageResourceRole.displayName = "Member";
-accessPackageResourceRole.originSystem = "AadGroup";
+accessPackageResourceRole.setOriginId("Member_b31fe1f1-3651-488f-bd9a-1711887fd4ca");
+accessPackageResourceRole.setDisplayName("Member");
+accessPackageResourceRole.setOriginSystem("AadGroup");
 AccessPackageResource accessPackageResource = new AccessPackageResource();
-accessPackageResource.id = "1d08498d-72a1-403f-8511-6b1f875746a0";
-accessPackageResource.resourceType = "O365 Group";
-accessPackageResource.originId = "b31fe1f1-3651-488f-bd9a-1711887fd4ca";
-accessPackageResource.originSystem = "AadGroup";
-accessPackageResourceRole.accessPackageResource = accessPackageResource;
-accessPackageResourceRoleScope.accessPackageResourceRole = accessPackageResourceRole;
+accessPackageResource.setId("1d08498d-72a1-403f-8511-6b1f875746a0");
+accessPackageResource.setResourceType("O365 Group");
+accessPackageResource.setOriginId("b31fe1f1-3651-488f-bd9a-1711887fd4ca");
+accessPackageResource.setOriginSystem("AadGroup");
+accessPackageResourceRole.setAccessPackageResource(accessPackageResource);
+accessPackageResourceRoleScope.setAccessPackageResourceRole(accessPackageResourceRole);
 AccessPackageResourceScope accessPackageResourceScope = new AccessPackageResourceScope();
-accessPackageResourceScope.originId = "b31fe1f1-3651-488f-bd9a-1711887fd4ca";
-accessPackageResourceScope.originSystem = "AadGroup";
-accessPackageResourceRoleScope.accessPackageResourceScope = accessPackageResourceScope;
+accessPackageResourceScope.setOriginId("b31fe1f1-3651-488f-bd9a-1711887fd4ca");
+accessPackageResourceScope.setOriginSystem("AadGroup");
+accessPackageResourceRoleScope.setAccessPackageResourceScope(accessPackageResourceScope);
+AccessPackageResourceRoleScope result = graphClient.identityGovernance().entitlementManagement().accessPackages().byAccessPackageId("{accessPackage-id}").accessPackageResourceRoleScopes().post(accessPackageResourceRoleScope);
 
-graphClient.identityGovernance().entitlementManagement().accessPackages("{id}").accessPackageResourceRoleScopes()
-	.buildRequest()
-	.post(accessPackageResourceRoleScope);
 
 ```

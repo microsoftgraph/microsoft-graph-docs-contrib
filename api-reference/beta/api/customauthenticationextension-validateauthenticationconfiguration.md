@@ -3,7 +3,7 @@ title: "customAuthenticationExtension: validateAuthenticationConfiguration"
 description: "An API to check validity of the endpoint and authentication configuration for a customAuthenticationExtension."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ POST /identity/customAuthenticationExtensions/validateAuthenticationConfiguratio
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

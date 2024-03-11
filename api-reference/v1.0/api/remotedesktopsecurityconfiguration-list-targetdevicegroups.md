@@ -3,7 +3,7 @@ title: "List targetDeviceGroups"
 description: "Get a list of the targetDeviceGroup objects and their properties on the remoteDesktopSecurityConfiguration resource on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method doesn't support OData query parameters to help customize the respons
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

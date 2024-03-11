@@ -3,7 +3,7 @@ title: "Get payload"
 description: "Get an attack simulation campaign payload for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method does not currently support the [OData query parameters](/graph/query
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

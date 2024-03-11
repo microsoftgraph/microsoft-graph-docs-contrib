@@ -3,7 +3,7 @@ title: "Get sslCertificate"
 description: "Get the properties and relationships of an sslCertificate object."
 author: "nblankenau"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method supports the `$count`, `$select`, `$search`, `$orderBy`, `$skip`, an
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

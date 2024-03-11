@@ -2,8 +2,9 @@
 title: "group: unsubscribeByMail"
 description: "Calling this method prevents the current user from receiving email notifications for this group about new posts, events, and files in that group. Supported for Microsoft 365 groups only. "
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -34,7 +35,7 @@ POST /groups/{id}/unsubscribeByMail
 
 | Header        | Value                                                                                                                                             |
 | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Authorization | Bearer {token}. Required.                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer        | return=minimal. If minimal response header is included in the request header, then a successful response returns `204 No Content` code. Optional. |
 
 ## Request body

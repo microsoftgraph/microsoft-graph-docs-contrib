@@ -3,7 +3,7 @@ title: "Get m365AppsInstallationOptions"
 description: "Read the properties of an m365AppsInstallationOptions object."
 author: "yan-git"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

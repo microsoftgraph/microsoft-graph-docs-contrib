@@ -3,7 +3,7 @@ title: "Create emailThreatSubmissionPolicy"
 description: "Create a new emailThreatSubmissionPolicy object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ POST /security/threatSubmission/emailThreatSubmissionPolicies
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

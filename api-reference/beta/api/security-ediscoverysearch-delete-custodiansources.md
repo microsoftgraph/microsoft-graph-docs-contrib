@@ -33,7 +33,7 @@ DELETE /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySe
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -56,10 +56,6 @@ The following is an example of a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/custodianSources/{id}/$ref
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-custodiansources-from-ediscoverysearch-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-custodiansources-from-ediscoverysearch-javascript-snippets.md)]

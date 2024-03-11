@@ -45,7 +45,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
 | Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
 

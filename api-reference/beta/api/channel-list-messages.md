@@ -3,7 +3,7 @@ title: "List channel messages"
 description: "Retrieve the list of messages (without the replies) in a channel of a team. To get the replies for a message, call the list message replies or the get message reply API. "
 ms.localizationpriority: high
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request with $top query option and without optional prefer header.
+The following example shows a request with $top query option and without optional prefer header.
 
 
 # [HTTP](#tab/http)
@@ -123,7 +123,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 ---
 
 ### Response
-The following is an example of the request. `@odata.nextLink` in the response can be used to get the next page of messages.
+The following is an example of the `@odata.nextLink` in the response can be used to get the next page of messages.
 
 <!-- {
   "blockType": "response",
@@ -324,7 +324,7 @@ Prefer: include-unknown-enum-members
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-listchannelmessages-2-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -346,7 +346,7 @@ Prefer: include-unknown-enum-members
 ---
 
 #### Response
-The following is an example of the response  when `Prefer: include-unknown-enum-members` is provided in the request header.
+The following example shows the response when `Prefer: include-unknown-enum-members` is provided in the request header.
 
 <!-- {
   "blockType": "response",

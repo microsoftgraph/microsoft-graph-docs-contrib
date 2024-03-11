@@ -1,9 +1,9 @@
 ---
 title: "Create cloudPcOnPremisesConnection"
-description: "Create an Azure network connection  for provisioning Cloud PCs."
+description: "Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs."
 author: "Emma0727"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 | Name          | Description                |
 | :------------ | :------------------------  |
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.|
 
 ## Request body
@@ -52,15 +52,15 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name for the Azure network connection.|
-|type|cloudPcOnPremisesConnectionType|Specifies how the provisioned Cloud PC will be joined to Microsoft Entra ID. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
-|subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
+|adDomainPassword|String|The password associated with **adDomainUsername**.|
 |adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: admin@contoso.com.|
-|adDomainPassword|String|The password associated with adDomainUsername.|
+|displayName|String|The display name for the Azure network connection.|
 |resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|virtualNetworkId|String|The ID of the target virtual network. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|String|The ID of the target subnet. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
+|subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
+|virtualNetworkId|String|The ID of the target virtual network. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|type|cloudPcOnPremisesConnectionType|Specifies how the provisioned Cloud PC joins to Microsoft Entra ID. The default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 
 ## Response
 
@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcO
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

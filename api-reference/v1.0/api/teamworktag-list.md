@@ -3,7 +3,7 @@ title: "List teamworkTags"
 description: "Get a list of the teamworkTag objects and their properties."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -31,12 +31,14 @@ GET /teams/{team-id}/tags
 ```
 
 ## Optional query parameters
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
+
+This method supports the `$filter` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -50,7 +52,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of a request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -132,8 +133,16 @@ Content-Type: application/json
       "description": "Legal experts, ask us your legal questions",
       "memberCount": 4,
       "tagType": "standard"
+    },
+    {
+      "@odata.type": "#microsoft.graph.teamworkTag",
+      "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyNlYjY1M2Y5Mi04MzczLTRkZTYtYmZlYy01YjRkMjE2YjZhZGUjIzk3ZjYyMzQ0LTU3ZGMtNDA5Yy04OGFkLWM0YWYxNDE1OGZmNQ==",
+      "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
+      "displayName": "EveningShift",
+      "description": null,
+      "memberCount": 5,
+      "tagType": "scheduled"
     }
   ]
 }
 ```
-

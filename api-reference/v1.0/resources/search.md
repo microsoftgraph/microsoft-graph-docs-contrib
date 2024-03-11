@@ -3,7 +3,7 @@ title: "Search"
 description: "Retrieve the search resource used to execute queries"
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "subjectSet complex type"
 description: "The abstract base type for types used in the request, approval, and assignment review settings of an access package assignment policy."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # subjectSet complex type

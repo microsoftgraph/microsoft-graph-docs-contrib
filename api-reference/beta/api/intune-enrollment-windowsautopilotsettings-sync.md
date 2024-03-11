@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Initiates a sync of all AutoPilot registered devices from Store for Business and other portals. If the sync successful, this action returns a 204 No Content response code. If a sync is already in progress, the action returns a 409 Conflict response code.  If this sync action is called within 10 minutes of the previous sync, the action returns a 429 Too Many Requests response code.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,7 +40,7 @@ POST /deviceManagement/windowsAutopilotSettings/sync
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

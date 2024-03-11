@@ -4,7 +4,7 @@ description: "Create a new authenticationContextClassReference."
 ms.localizationpriority: medium
 author: "swetha-rai"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /identity/conditionalAccess/authenticationContextClassReferences
 
 | Name          | Description      |
 |:--------------|:-----------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

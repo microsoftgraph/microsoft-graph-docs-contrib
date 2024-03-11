@@ -3,7 +3,7 @@ title: Get printOperation
 description: Retrieve a printOperation.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ GET /print/operations/{printOperationId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

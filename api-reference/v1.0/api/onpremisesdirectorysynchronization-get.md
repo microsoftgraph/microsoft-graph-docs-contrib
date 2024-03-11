@@ -3,7 +3,7 @@ title: "Get onPremisesDirectorySynchronization"
 description: "Read the properties and relationships of an onPremisesDirectorySynchronization object."
 author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

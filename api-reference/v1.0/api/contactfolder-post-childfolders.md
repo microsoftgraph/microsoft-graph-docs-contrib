@@ -3,7 +3,7 @@ title: "Create ContactFolder"
 description: "Create a new contactFolder as a child of a specified folder. "
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body

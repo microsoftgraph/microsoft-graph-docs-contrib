@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.booking_service import BookingService
+from msgraph.generated.models.location import Location
+from msgraph.generated.models.physical_address import PhysicalAddress
+from msgraph.generated.models.booking_reminder import BookingReminder
+from msgraph.generated.models.booking_scheduling_policy import BookingSchedulingPolicy
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -80,7 +85,7 @@ request_body = BookingService(
 	}
 )
 
-result = await graph_client.booking_businesses.by_booking_business_id('bookingBusiness-id').services.post(request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').services.post(request_body)
 
 
 ```

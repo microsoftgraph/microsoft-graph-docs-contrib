@@ -3,7 +3,7 @@ title: "Get filesFolder"
 description: "Retrieve the filesFolder navigation path of a channel."
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ This method doesn't support the [OData query parameters](/graph/query-parameters
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

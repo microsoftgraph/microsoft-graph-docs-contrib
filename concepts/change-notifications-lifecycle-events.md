@@ -1,7 +1,7 @@
 ---
 title: "Reduce missing change notifications and removed subscriptions"
 description: "Subscribe to Microsoft Graph lifecycle notifications to help you minimize the risk of missed change notifications or removed subscriptions."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
 ms.localizationpriority: high
@@ -242,7 +242,7 @@ The following flow shows the flow of a **subscriptionRemoved** event:
 2. Validate the authenticity of the lifecycle notification.
 3. Perform a full data resync of the resource to identify the changes that weren't delivered as notifications; for example, using the [delta query](/graph/delta-query-overview).
 
-## See also
+## Related content
 
 - [Subscription resource type](/graph/api/resources/subscription)
 

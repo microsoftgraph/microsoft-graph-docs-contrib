@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItem: filterByCurrentUser"
 description: "Retrieve all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -61,7 +61,7 @@ The default page size for this API is 100 **accessReviewInstanceDecisionItem** o
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -3,7 +3,7 @@ title: "Get educationAssignmentDefaults"
 description: "Read the properties and relationships of an educationAssignmentDefaults object."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -62,7 +62,7 @@ The following is an example of a request.
   "name": "get_educationassignmentdefaults"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentDefaults
 ```
 

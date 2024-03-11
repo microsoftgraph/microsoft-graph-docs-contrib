@@ -3,7 +3,7 @@ title: "Create MailFolder"
 description: "Use this API to create a new mail folder in the root folder of the user's mailbox."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /users/{id | userPrincipalName}/mailFolders
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body

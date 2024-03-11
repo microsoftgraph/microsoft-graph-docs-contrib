@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsDeviceUsageTotalUserCounts"
 description: "Get the number of daily unique Microsoft Teams licensed or nonlicensed users by device type."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
 ---
@@ -50,7 +50,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

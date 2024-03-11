@@ -3,7 +3,7 @@ title: "List device transitive memberships"
 description: "Get groups and administrative units that the device is a member of."
 ms.localizationpriority: medium
 author: "myra-ramdenbourg"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ Some queries are supported only when you use the **ConsistencyLevel** header set
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters. It uses an index that might not be up-to-date with recent changes to the object. |
 
 ## Request body

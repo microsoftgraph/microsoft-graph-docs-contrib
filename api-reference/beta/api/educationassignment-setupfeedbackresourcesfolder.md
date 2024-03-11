@@ -3,7 +3,7 @@ title: "educationAssignment: setUpFeedbackResourcesFolder"
 description: "Create a SharePoint folder to upload feedback files for a given educationSubmission."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ POST /education/classes/{classId}/assignments/{assignmentId}/setUpFeedbackResour
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json           |
 
 ## Request body

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ScopedRoleMembershipCollectionPage scopedMembers = graphClient.directoryRoles("41d12a2f-caa8-4e3e-ba14-05e5102ce085").scopedMembers()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ScopedRoleMembershipCollectionResponse result = graphClient.directoryRoles().byDirectoryRoleId("{directoryRole-id}").scopedMembers().get();
+
 
 ```

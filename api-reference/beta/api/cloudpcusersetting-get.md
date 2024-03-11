@@ -3,7 +3,7 @@ title: "Get cloudPcUserSetting"
 description: "Read the properties and relationships of a cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports `$select` and `$expand` OData query parameters to help cust
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -125,6 +125,7 @@ Content-Type: application/json
     "resetEnabled": true,
     "restorePointSetting": {
       "frequencyInHours": 16,
+      "frequencyType": "sixteenHours",
       "userRestoreEnabled": true
     },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
@@ -205,6 +206,7 @@ Content-Type: application/json
     "resetEnabled": true,
     "restorePointSetting": {
       "frequencyInHours": 16,
+      "frequencyType": "sixteenHours",
       "userRestoreEnabled": true
     },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",

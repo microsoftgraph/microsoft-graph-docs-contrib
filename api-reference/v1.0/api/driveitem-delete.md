@@ -39,7 +39,7 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | if-match      | String. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted. |
 
 ## Example

@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Group group = new Group();
-group.description = "Marketing group";
-group.displayName = "Marketing resources";
-group.mailEnabled = false;
-group.mailNickname = "markres";
-group.securityEnabled = true;
+group.setDescription("Marketing group");
+group.setDisplayName("Marketing resources");
+group.setMailEnabled(false);
+group.setMailNickname("markres");
+group.setSecurityEnabled(true);
+Group result = graphClient.groups().post(group);
 
-graphClient.groups()
-	.buildRequest()
-	.post(group);
 
 ```

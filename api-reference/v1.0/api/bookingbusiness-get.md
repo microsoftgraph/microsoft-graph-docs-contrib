@@ -53,10 +53,10 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.com
 ```
 
 ### Response
@@ -75,7 +75,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses/$entity",
-    "id":"Fabrikam@contoso.onmicrosoft.com",
+    "id":"Fabrikam@contoso.com",
     "displayName":"Fabrikam",
     "businessType":"",
     "phone":"206-555-0100",

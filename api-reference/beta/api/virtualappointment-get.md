@@ -46,7 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional.       |
 
 ## Request body
@@ -71,10 +71,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-virtualappointment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-virtualappointment-javascript-snippets.md)]

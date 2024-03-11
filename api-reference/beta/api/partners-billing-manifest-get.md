@@ -3,7 +3,7 @@ title: "Get manifest"
 description: "Read the properties and relationships of a manifest object."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph.partners.billing
 [!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
 Read the properties and relationships of a [manifest](../resources/partners-billing-manifest.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -42,7 +44,7 @@ This method doesn't support any OData query parameters to help customize the res
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -89,6 +91,10 @@ GET https://graph.microsoft.com/beta/reports/partners/billing/manifests/6fe687d7
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-manifest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-manifest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

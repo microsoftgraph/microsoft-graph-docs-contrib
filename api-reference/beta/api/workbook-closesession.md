@@ -30,7 +30,7 @@ POST /me/drive/root:/{item-path}:/workbook/closeSession
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | workbook-session-id | Workbook session ID to be closed. Required. |
 
 ## Request body

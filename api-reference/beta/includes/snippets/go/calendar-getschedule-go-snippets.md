@@ -25,8 +25,8 @@ configuration := &graphusers.ItemCalendarGetScheduleRequestBuilderPostRequestCon
 }
 requestBody := graphusers.NewItemGetSchedulePostRequestBody()
 schedules := []string {
-	"adelev@contoso.onmicrosoft.com",
-	"meganb@contoso.onmicrosoft.com",
+	"adelev@contoso.com",
+	"meganb@contoso.com",
 }
 requestBody.SetSchedules(schedules)
 startTime := graphmodels.NewDateTimeTimeZone()

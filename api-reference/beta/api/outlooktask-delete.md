@@ -3,7 +3,7 @@ title: "Delete outlookTask"
 description: "Delete the specified Outlook task in the user's mailbox."
 ms.localizationpriority: medium
 author: "mashriv"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ DELETE /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

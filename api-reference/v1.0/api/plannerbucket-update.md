@@ -3,7 +3,7 @@ title: "Update plannerbucket"
 description: "Update the properties of **plannerbucket** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ PATCH /planner/buckets/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 | If-Match  | Last known ETag value for the **plannerBucket** to be updated. Required.|
 

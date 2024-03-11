@@ -3,7 +3,7 @@ title: "Get history item of riskyUser"
 description: "Get a history item of a riskyUser object."
 ms.localizationpriority: medium
 author: "tracyshi"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ GET /identityProtection/riskyUsers/{userid}/history/{id}
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -117,7 +117,7 @@ Content-type: application/json
     "riskDetail": "userPerformedSecuredPasswordReset",
     "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
     "userDisplayName": "Allan Deyoung",
-    "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+    "userPrincipalName": "AllanD@contoso.com",
     "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
     "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
     "activity": {
@@ -196,7 +196,7 @@ Content-type: application/json
     "riskDetail": "userPerformedSecuredPasswordReset",
     "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
     "userDisplayName": "Allan Deyoung",
-    "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+    "userPrincipalName": "AllanD@contoso.com",
     "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
     "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
     "activity": {

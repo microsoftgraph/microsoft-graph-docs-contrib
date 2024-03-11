@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a unifiedRoleAssignme
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -22,7 +22,7 @@ The following RBAC providers are currently supported:
 
 For other Microsoft 365 applications (like Microsoft Entra ID), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -62,7 +62,7 @@ This method supports OData query parameters to help customize the response. For 
 
 | Name  | Description |
 |:----- |:----------- |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

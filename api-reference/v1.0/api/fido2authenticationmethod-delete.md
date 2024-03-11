@@ -4,7 +4,7 @@ description: "Deletes a fido2AuthenticationMethod object."
 author: "calvinlui"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -48,7 +48,7 @@ DELETE /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -2,7 +2,7 @@
 title: "Delete chat"
 description: "Delete a chat object."
 author: "sthapliyal"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---
@@ -37,7 +37,7 @@ DELETE /chats/{chat-id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

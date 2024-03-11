@@ -3,7 +3,7 @@ title: "List contacts"
 description: "Get a contact collection from the default contacts folder of the signed-in user."
 author: "kevinbellinger"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,7 @@ For general information on the `$filter` query parameter, see [OData query param
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

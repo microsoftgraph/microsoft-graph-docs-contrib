@@ -1,11 +1,11 @@
 ---
 title: "Configure Azure AD Graph permissions for an app registration"
 description: "Before Azure AD Graph is retired, you can use these options to configure Azure AD Graph permissions for an app registration."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.topic: how-to
 zone_pivot_groups: configure-azure-ad-graph-permissions
 ms.date: 12/19/2023
@@ -40,7 +40,7 @@ A user with the *Global Administrator* role can do both, while a user with the *
 
 In addition, you need the following resources and privileges:
 
-- Run the HTTP requests in a tool of your choice, for example through a custom app, through [Graph Explorer](https://aka.ms/ge), or Postman.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to run the HTTP requests.
 - The app used to make these changes must be granted the `Application.ReadWrite.All` permission.
 
 ## Use the Microsoft Graph applications API
@@ -422,7 +422,7 @@ Though you added Azure AD Graph permissions, you haven't granted these permissio
 When using Microsoft Graph and any related SDKs, you can grant permissions to an app registration without the need to use the Microsoft Entra admin center and selecting the *Grant admin consent for [Company]* button on the API permissions page. For more information, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
 -->
 
-## See also
+## Related content
 
 - [application object](/graph/api/resources/application)
 - [Grant permissions programmatically without interactive consent](/graph/permissions-grant-via-msgraph)

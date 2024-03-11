@@ -3,8 +3,9 @@ title: "Get endpoint"
 description: "Retrieve the properties and relationships of a specific endpoint object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "groups"
-author: "Jordanndahl"
+ms.subservice: "entra-groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ---
 
 # Get endpoint
@@ -40,7 +41,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "Get teamsAppSettings"
 description: "Read the properties and relationships of a teamsAppSettings object."
 author: "subray2014"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -123,6 +123,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

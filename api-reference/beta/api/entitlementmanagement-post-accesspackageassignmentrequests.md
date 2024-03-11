@@ -3,7 +3,7 @@ title: "Create accessPackageAssignmentRequest"
 description: "Create a new accessPackageAssignmentRequest."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -26,6 +26,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+> [!NOTE]
+> This API will be retired soon. Use the [Post assignmentRequests](../api/entitlementmanagement-post-assignmentrequests.md) API instead.
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -36,7 +39,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

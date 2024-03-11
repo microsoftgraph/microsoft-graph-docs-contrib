@@ -172,6 +172,6 @@ Use the Microsoft Graph industry data APIs as an extract, transform, and load (E
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-## See also
+## Related content
 
 [Overview of the industry data API in Microsoft Graph](/graph/industrydata-concept-overview)

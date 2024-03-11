@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.remove_members_by_id_post_request_body import RemoveMembersByIdPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

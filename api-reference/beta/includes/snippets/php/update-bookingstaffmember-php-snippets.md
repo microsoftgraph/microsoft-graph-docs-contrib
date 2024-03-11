@@ -87,6 +87,6 @@ $workingHoursArray []= $workingHoursBookingWorkHours5;
 $requestBody->setWorkingHours($workingHoursArray);
 
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->staffMembers()->byBookingStaffMemberId('bookingStaffMember-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->staffMembers()->byBookingStaffMemberId('bookingStaffMember-id')->patch($requestBody)->wait();
 
 ```

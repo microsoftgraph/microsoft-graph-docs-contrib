@@ -4,7 +4,7 @@ description: "Delete an identityProvider from a b2xIdentityUserFlow. (deprecated
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Delete identityProvider from b2xIdentityUserFlow (deprecated)
@@ -40,7 +40,7 @@ DELETE /identity/b2xUserFlows/{id}/identityProviders/{id}/$ref
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -68,10 +68,6 @@ Here's an example of the request.
 ``` http
 DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignUp/identityProviders/Facebook-OAUTH/$ref
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-b2xuserflows-identityproviders-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2xuserflows-identityproviders-2-javascript-snippets.md)]

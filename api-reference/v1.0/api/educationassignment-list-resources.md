@@ -3,7 +3,7 @@ title: "List assignment resources"
 description: "Get all the resources associated with an assignment."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ All [properties](/graph/api/resources/educationassignmentresource#properties) ar
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

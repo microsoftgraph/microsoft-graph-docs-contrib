@@ -3,7 +3,7 @@ title: "Create customSecurityAttributeDefinition"
 description: "Create a new customSecurityAttributeDefinition object."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ POST /directory/customSecurityAttributeDefinitions
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

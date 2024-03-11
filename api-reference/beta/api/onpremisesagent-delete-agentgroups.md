@@ -3,7 +3,7 @@ title: "Remove onpremisesAgent from an onPremisesAgentGroup"
 description: "Remove an onpremisesAgent from an onPremisesAgentGroup."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ DELETE /onPremisesPublishingProfiles/{profile-id}/agents/{agent-id}/agentGroups/
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

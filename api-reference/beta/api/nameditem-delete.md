@@ -37,7 +37,7 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/{name}
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-ID  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body

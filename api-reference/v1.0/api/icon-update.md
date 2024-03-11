@@ -31,7 +31,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 

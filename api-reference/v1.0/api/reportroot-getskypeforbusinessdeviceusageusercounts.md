@@ -2,7 +2,7 @@
 title: "reportRoot: getSkypeForBusinessDeviceUsageUserCounts"
 description: "Get the usage trends on how many users in your organization have connected using the Skype for Business app. You'll also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -47,7 +47,7 @@ In the request URL, provide the following parameter with a valid value.
 
 | Name          | Description                              |
 | :------------ | :--------------------------------------- |
-| Authorization | Bearer {token}. Required.                |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned. Optional. |
 
 ## Response

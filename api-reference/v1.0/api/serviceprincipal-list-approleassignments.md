@@ -3,7 +3,7 @@ title: "List appRoleAssignments granted to a service principal"
 description: "Retrieve the list of app role assignments granted to a service principal."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -47,7 +47,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

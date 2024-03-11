@@ -68,7 +68,7 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
@@ -146,14 +146,14 @@ Content-Type: application/json
             },
             "lastModifiedBy": {
                 "user": {
-                    "email": "MeganB@M365x214355.onmicrosoft.com",
+                    "email": "MeganB@contoso.com",
                     "id": "48d31887-5fad-4d73-a9f5-3c356e68a038",
                     "displayName": "Megan Bowen"
                 }
             },
             "owner": {
                 "user": {
-                    "email": "MeganB@M365x214355.onmicrosoft.com",
+                    "email": "MeganB@contoso.com",
                     "id": "48d31887-5fad-4d73-a9f5-3c356e68a038",
                     "displayName": "Megan Bowen"
                 }
