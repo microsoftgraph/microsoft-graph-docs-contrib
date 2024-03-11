@@ -10219,28 +10219,6 @@ items:
                     href: resources/windowsupdates-driverupdatecatalogentry.md
                   - name: List catalog entries
                     href: api/windowsupdates-catalog-list-entries.md
-              - name: Windows Release Information
-                items:
-                  - name: Product
-                    href: resources/windowsupdates-product.md
-                    items: 
-                      - name: Known issue
-                        href: resources/windowsupdates-knownissue.md
-                        items:
-                          - name: Known Issue history item 
-                            href: resources/windowsupdates-knownissuehistoryitem.md
-                          - name: Get known Issues by time range
-                            href: api/windowsupdates-product-getknownissuesbytimerange.md 
-                      - name: Edition
-                        href: resources/windowsupdates-edition.md
-                      - name: Servicing period
-                        href: resources/windowsupdates-servicingperiod.md
-                      - name: Item Body 
-                        href: resources/windowsupdates-itembody.md
-                      - name: Find Product revisions by Catalog ID
-                        href: resources/windowsupdates-product-findbycatalogid.md
-                      - name: Find Product revisions by KB number
-                        href: resources/windowsupdates-product-findbykbnumber.md
               - name: Compliance change
                 href: resources/windowsupdates-compliancechange.md
                 items:
@@ -10301,6 +10279,18 @@ items:
                     href: api/windowsupdates-deploymentaudience-updateaudience.md
                   - name: Update by ID
                     href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+              - name: Product
+                href: resources/windowsupdates-product.md
+                items:
+                  - name: Find by catalog ID
+                    href: resources/windowsupdates-product-findbycatalogid.md
+                  - name: Find by knowledge base number
+                    href: resources/windowsupdates-product-findbykbnumber.md
+                  - name: Known issue
+                    href: resources/windowsupdates-knownissue.md
+                    items:
+                      - name: Get known issues by time range
+                        href: api/windowsupdates-product-getknownissuesbytimerange.md 
               - name: Resource connection
                 href: resources/windowsupdates-resourceconnection.md
                 items:
