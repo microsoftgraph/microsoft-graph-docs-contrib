@@ -10200,7 +10200,7 @@ items:
                           - name: Known Issue history item 
                             href: resources/windowsupdates-knownissuehistoryitem.md
                           - name: Get known Issues by time range
-                            href: api/windowsupdates-get-knownIssues-time-range.md  
+                            href: api/windowsupdates-product-getknownissuesbytimerange.md 
                       - name: Edition
                         href: resources/windowsupdates-edition.md
                       - name: Servicing period
@@ -10208,9 +10208,9 @@ items:
                       - name: Item Body 
                         href: resources/windowsupdates-itembody.md
                       - name: Find Product revisions by Catalog ID
-                        href: resources/windowsupdates-find-by-CatalogId.md
+                        href: resources/windowsupdates-product-findbycatalogid.md
                       - name: Find Product revisions by KB number
-                        href: resources/windowsupdates-find-by-KbNumber.md
+                        href: resources/windowsupdates-product-findbykbnumber.md
               - name: Compliance change
                 href: resources/windowsupdates-compliancechange.md
                 items:
