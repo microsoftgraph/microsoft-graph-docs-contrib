@@ -3,7 +3,7 @@ title: shiftsUserInfo resource type
 description: Represents the details of a user in a schedule.
 author: shanemalone
 ms.localizationpriority: high
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: resourcePageType
 ---
 

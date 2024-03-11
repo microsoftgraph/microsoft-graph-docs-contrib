@@ -3,7 +3,7 @@ title: "List simulationAutomations"
 description: "Get a list of attack simulation automations for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

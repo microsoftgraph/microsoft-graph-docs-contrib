@@ -4,7 +4,7 @@ description: "List existing jobs for a given application instance (service princ
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # List synchronization jobs

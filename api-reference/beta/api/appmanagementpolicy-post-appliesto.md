@@ -3,7 +3,7 @@ title: "Assign appliesTo"
 description: "Assign a policy to application or service principal object."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Entra identity and access API overview"
 description: "Use the Microsoft Entra APIs in Microsoft Graph to manage and protect any identity and secure access to any resource on-premises, in hybrid environments, and cloud environments."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: high
@@ -85,7 +85,7 @@ Use the **Global Secure Access APIs** for identity-centric configurations to sec
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [identity-zero-trust](../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 

@@ -3,7 +3,7 @@ title: "List accessPackageCatalogs"
 description: "Retrieve a list of accessPackageCatalog objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

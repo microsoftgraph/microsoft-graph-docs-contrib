@@ -3,7 +3,7 @@ title: "standardTimeZoneOffset resource type"
 description: "Specifies when a time zone switches from daylight saving time to standard time."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: outlook
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 

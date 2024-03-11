@@ -3,7 +3,7 @@ title: "List members of a channel"
 description: "List members of a channel."
 author: "akjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

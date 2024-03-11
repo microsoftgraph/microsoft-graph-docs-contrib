@@ -3,7 +3,7 @@ title: "cloudPcExternalPartnerSetting resource type"
 description: "Represents an external partner setting on Cloud PC."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

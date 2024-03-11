@@ -3,7 +3,7 @@ title: "orgContact: List directReports"
 description: "Get the contact's direct reports."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

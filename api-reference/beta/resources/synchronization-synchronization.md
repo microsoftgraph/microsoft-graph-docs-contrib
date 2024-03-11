@@ -3,7 +3,7 @@ title: "synchronization resource type"
 description: "Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API."
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

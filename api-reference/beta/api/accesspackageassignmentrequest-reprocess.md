@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequest: reprocess"
 description: "Reprocess accessPackageAssignmentRequest objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -56,7 +56,7 @@ If successful, this method returns a  `202 Accepted` response code and retries t
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -68,7 +68,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 
 <!-- {

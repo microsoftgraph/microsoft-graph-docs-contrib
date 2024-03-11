@@ -14,6 +14,7 @@ $requestBody->setOdataType('#microsoft.graph.security.auditLogQuery');
 $requestBody->setDisplayName('String');
 $requestBody->setFilterStartDateTime(new \DateTime('String (timestamp)'));
 $requestBody->setFilterEndDateTime(new \DateTime('String (timestamp)'));
+$requestBody->setRecordTypeFilters([new AuditLogRecordType('string'),	]);
 $requestBody->setKeywordFilter('String');
 $requestBody->setOperationFilters(['String', 	]);
 $requestBody->setUserPrincipalNameFilters(['String', 	]);
@@ -22,7 +23,6 @@ $requestBody->setObjectIdFilters(['String', 	]);
 $requestBody->setAdministrativeUnitIdFilters(['String', 	]);
 $requestBody->setStatus(new AuditLogQueryStatus('string'));
 $additionalData = [
-	'recordTypeFilter' => 'String',
 	'serviceFilter' => 'String',
 ];
 $requestBody->setAdditionalData($additionalData);

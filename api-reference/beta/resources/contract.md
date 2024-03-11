@@ -3,7 +3,7 @@ title: "Contract resource type"
 description: "Represents an existing partnership that the partner tenant has with a customer tenant."
 ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

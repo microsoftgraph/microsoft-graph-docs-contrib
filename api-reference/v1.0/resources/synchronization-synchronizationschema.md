@@ -4,7 +4,7 @@ description: "Defines what objects will be synchronized and how they are synchro
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationSchema resource type

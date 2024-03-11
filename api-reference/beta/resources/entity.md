@@ -3,7 +3,7 @@ title: "entity resource type"
 description: "Represents an entity."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "dkershaw10"
 ---
 
