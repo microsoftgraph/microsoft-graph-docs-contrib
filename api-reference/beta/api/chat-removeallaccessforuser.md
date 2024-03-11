@@ -3,7 +3,7 @@ title: "chat: removeAllAccessForUser"
 description: "Remove access to a chat for a user."
 author: "DiegoCont"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

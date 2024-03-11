@@ -3,7 +3,7 @@ title: "accessReviewReviewerScope resource type"
 description: "Represents reviewers of an access review or user consent requests."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

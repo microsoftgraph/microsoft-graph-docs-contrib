@@ -3,7 +3,7 @@ title: "Get connection"
 description: "Retrieve the properties and relationships of an externalConnection."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 

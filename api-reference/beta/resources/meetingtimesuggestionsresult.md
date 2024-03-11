@@ -3,7 +3,7 @@ title: "meetingTimeSuggestionsResult resource type"
 description: "A collection of meeting suggestions if there is any, and the reason if there isn't."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get threat intelligence indicator"
 description: "Retrieve the properties and relationships of a tiindicator object."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

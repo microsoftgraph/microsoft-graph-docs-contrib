@@ -3,7 +3,7 @@ title: "Update detectionRule"
 description: "Update the properties of a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

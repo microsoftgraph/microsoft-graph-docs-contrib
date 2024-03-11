@@ -3,7 +3,7 @@ title: "governanceInsight resource type"
 description: "Represents insights presented to the reviewer for an accessReviewInstanceDecisionItem."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequestorSettings resource type"
 description: "Provides additional settings to select who can create a request for an access package on that policy, and what they can include in their request."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageAssignmentRequestorSettings resource type

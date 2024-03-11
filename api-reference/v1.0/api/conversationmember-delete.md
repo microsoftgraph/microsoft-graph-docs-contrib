@@ -4,7 +4,7 @@ description: "Delete conversationMember from a channel."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Delete conversationMember

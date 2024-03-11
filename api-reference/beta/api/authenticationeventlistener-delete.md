@@ -3,7 +3,7 @@ title: "Delete authenticationEventListener"
 description: "Deletes an authenticationEventListener object."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

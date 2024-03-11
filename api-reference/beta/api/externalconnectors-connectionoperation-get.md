@@ -3,7 +3,7 @@ title: "Get connectionOperation"
 description: "Retrieve the properties of a connectionOperation."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 

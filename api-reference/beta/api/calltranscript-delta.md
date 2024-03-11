@@ -4,7 +4,7 @@ description: "Get a set of callTranscript resources that have been added for onl
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "JacobSatora"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # callTranscript: delta

@@ -3,7 +3,7 @@ title: "workflow: createNewVersion"
 description: "Create a new version of a lifecycle workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

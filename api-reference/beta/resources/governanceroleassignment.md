@@ -3,7 +3,7 @@ title: "governanceRoleAssignment resource type"
 description: "Represents the assignment of a user or group to a role."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
 ---

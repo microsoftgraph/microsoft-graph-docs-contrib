@@ -3,7 +3,7 @@ title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of servicePrincipal object."
 author: "sureshja"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

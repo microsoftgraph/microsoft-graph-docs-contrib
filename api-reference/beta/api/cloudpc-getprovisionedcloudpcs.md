@@ -3,7 +3,7 @@ title: "cloudPC: getProvisionedCloudPCs"
 description: "Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group."
 author: "SleepIsImportant"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

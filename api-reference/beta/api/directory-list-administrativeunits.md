@@ -3,7 +3,7 @@ title: "List administrativeUnits"
 description: "Retrieve a list of administrativeUnit objects."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

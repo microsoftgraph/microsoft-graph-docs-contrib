@@ -3,7 +3,7 @@ title: "user: findRoomLists"
 description: "Get the room lists defined in a tenant."
 author: "vrod9429"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
