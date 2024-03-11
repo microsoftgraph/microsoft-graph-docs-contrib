@@ -40,7 +40,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).| Required|
-| _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted.
+| _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted.
 
 ## Request body
 
@@ -56,14 +56,15 @@ If successful, this method returns a `204 No Content`. It doesn't return anythin
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 ```http
 DELETE /sites/{site-id}/pages/{page-id}
 ```
+
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 
