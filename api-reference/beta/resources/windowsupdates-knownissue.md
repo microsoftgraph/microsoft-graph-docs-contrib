@@ -13,9 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a known issue related to a Windows product. 
-
-Example of known Issues: [Windows 11, version 22H2 known Issues and notifications](https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-22h2) 
+Represents a known issue related to a Windows product. For example of known issues, see [Windows 11, version 22H2 known issues and notifications](/windows/release-health/status-windows-11-22h2).
 
 ## Properties
         
@@ -34,9 +32,9 @@ Example of known Issues: [Windows 11, version 22H2 known Issues and notification
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|knownIssueHistories| [microsoft.graph.windowsUpdates.knownIssueHistories](../resources/windowsupdates-knownissuehistories.md) collection| A list of known issue histories.|
-|originatingKnowledgeBaseArticle | [microsoft.graph.windowsUpdates.knowledgebasearticle](../resources/windowsupdates-knowledgebasearticle.md) collection |Knowledge base article associated with the release when the known issue was first reported. |
-|resolvingKnowledgeBaseArticle| [microsoft.graph.windowsUpdates.knowledgebasearticle](../resources/windowsupdates-knowledgebasearticle.md) collection|Knowledge base article associated with the release when the known issue was resolved or mitigated. |
+|knownIssueHistories| [microsoft.graph.windowsUpdates.knownIssueHistoryItem](../resources/windowsupdates-knownissuehistoryitem.md) collection| A list of known issue histories.|
+|originatingKnowledgeBaseArticle | [microsoft.graph.windowsUpdates.knowledgeBaseArticle](../resources/windowsupdates-knowledgebasearticle.md) collection |Knowledge base article associated with the release when the known issue was first reported. |
+|resolvingKnowledgeBaseArticle| [microsoft.graph.windowsUpdates.knowledgeBaseArticle](../resources/windowsupdates-knowledgebasearticle.md) collection|Knowledge base article associated with the release when the known issue was resolved or mitigated. |
 |safeguardHoldIds|Int32 collection|A list of safeguard hold IDs associated with the known issue.|
 
 ## JSON representation
