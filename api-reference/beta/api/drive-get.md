@@ -2,20 +2,20 @@
 author: spgraph-docs-team
 description: "Retrieve the properties and relationships of a Drive resource."
 ms.date: 09/10/2017
-title: Get Drive
+title: Get drive
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
-# Get Drive
+# Get drive
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.
+Retrieve the properties and relationships of a [drive](../resources/drive.md) resource.
 
-A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
+A drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.
 
-If a user's OneDrive isn't provisioned but the user has a license to use OneDrive, this request automatically provisions the user's drive, when using delegated authentication.
+If a user has a license for OneDrive but their OneDrive isn't set up yet, this request automatically provisions the user's drive, when using delegated authentication.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -121,7 +121,7 @@ If the drive doesn't exist and can't be provisioned automatically, (when using d
 
 ### Request
 
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-default" } -->
 
@@ -164,6 +164,8 @@ GET /me/drive
 ---
 
 ### Response
+
+The following example shows the response.
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default" , "get-drive-by-site-id",] } -->
 
 ```http
@@ -187,7 +189,6 @@ Content-type: application/json
     }
 }
 ```
-
 
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters
