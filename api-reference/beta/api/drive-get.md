@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.
 
-If a user's OneDrive isn't provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
+If a user's OneDrive isn't provisioned but the user has a license to use OneDrive, this request automatically provisions the user's drive, when using delegated authentication.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -115,7 +115,7 @@ Each of these methods returns a [Drive resource][drive-resource] for the matchin
 
 ### Error response codes
 
-If the drive doesn't exist and can't be provisioned automatically (when using delegated authentication) an `HTTP 404` response is returned.
+If the drive doesn't exist and can't be provisioned automatically, (when using delegated authentication) an `HTTP 404` response is returned.
 
 ## Examples
 

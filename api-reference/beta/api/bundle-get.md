@@ -184,7 +184,7 @@ GET https://graph.microsoft.com/v1.0/drive/items/{bundle-id}?expand=children
 
 #### Response
 
-The following example shows the response. This call returnw the bundle metadata and a list of children of the bundle.
+The following example shows the response. This call returns the bundle metadata and a list of children of the bundle.
 If the bundle has no children, it returns an empty collection.
 
 If the number of children in the bundle is greater than the default page size, the **children@odata.nextLink** property is returned with a URL that can be
