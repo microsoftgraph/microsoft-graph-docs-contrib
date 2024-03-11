@@ -3,7 +3,7 @@ title: "Delete domain"
 description: "Deletes a domain from a tenant."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get outlookTaskGroup"
 description: "Get the properties and relationships of the specified Outlook task group."
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

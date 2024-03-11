@@ -3,7 +3,7 @@ title: "webApplication resource type"
 description: "Specifies settings for a web application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 

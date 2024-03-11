@@ -3,7 +3,7 @@ title: "internalSponsors complex type"
 description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

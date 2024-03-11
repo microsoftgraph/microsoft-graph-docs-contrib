@@ -3,7 +3,7 @@ title: "List subdomains"
 description: "Get the subdomain resources from the subdomains navigation property."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

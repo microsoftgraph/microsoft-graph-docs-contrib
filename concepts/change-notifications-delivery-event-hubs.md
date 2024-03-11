@@ -1,8 +1,10 @@
 ---
 title: "Receive change notifications through Azure Event Hubs"
-description: "Change notifications can be delivered via different channels, including webhooks and Azure Event Hubs. This article walks you through how to get change notifications through Azure Event Hubs."
+description: "Change notifications can be delivered via different channels, including webhooks and Azure Event Hubs."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.prod: change-notifications
+ms.topic: concept-article
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
 ms.date: 03/23/2023
@@ -11,7 +13,7 @@ ms.date: 03/23/2023
 
 # Receive change notifications through Azure Event Hubs
 
-Webhooks may not be suitable for receiving change notifications in high throughput scenarios or when the receiver can't expose a publicly available notification URL. As an alternative, you can use Azure Event Hubs.
+Webhooks aren't suited for receiving change notifications in high throughput scenarios or when the receiver can't expose a publicly available notification URL. As an alternative, you can use Azure Event Hubs.
 
 Good examples of high throughput scenarios include applications subscribing to a large set of resources, applications subscribing to resources that change with a high frequency, and multitenant applications that subscribe to resources across a large set of organizations.
 
@@ -24,7 +26,7 @@ Using Azure Event Hubs to receive change notifications differs from webhooks in 
 
 - You don't rely on publicly exposed notification URLs. The Event Hubs SDK relays the notifications to your application.
 - You don't need to reply to the [notification URL validation](change-notifications-delivery-webhooks.md#notificationurl-validation). You can ignore the validation message that you receive.
-- You need to provision an Azure Event Hub.
+- You need to provision an event hub.
 - You need to provision an Azure Key Vault.
 
 ## Set up the Azure KeyVault and Azure Event Hubs
@@ -76,50 +78,50 @@ echo "Notification Url:\n${notificationUrl}"
 <!-- Start of "Use the Azure portal" tab-->
 # [Use the Azure portal](#tab/change-notifications-eventhubs-azure-portal)
 
-##### Configuring the Azure Event Hub
+##### Configuring the event hub
 
 In this section, you will:
 
-- Create an Azure Event Hub namespace.
-- Add a hub to that namespace that will relay and deliver notifications.
+- Create an Azure Event Hubs namespace.
+- Add a hub to that namespace to relay and deliver notifications.
 - Add a shared access policy that allows you to get a connection string to the newly created hub.
 
 Steps:
 
-1. Open a browser to the [Azure Portal](https://portal.azure.com).
+1. Open a browser to the [Azure portal](https://portal.azure.com).
 1. Select **Create a resource**.
 1. Type **Event Hubs** in the search bar.
 1. Select the **Event Hubs** suggestion. The Event Hubs creation page loads.
 1. On the Event Hubs creation page, select **Create**.
 1. Fill in the Event Hubs namespace creation details, and then select **Create**.
-1. When the Event Hub namespace is provisioned, go to the page for the namespace.
+1. When the event hub namespace is provisioned, go to the page for the namespace.
 1. Select **Event Hubs** and **+ Event Hub**.
-1. Give a name to the new Event Hub, and select **Create**.
-1. After the Event Hub has been created, select the name of the Event Hub, and then select **Shared access policies** and **+ Add** to add a new policy.
+1. Give a name to the new event hub, and select **Create**.
+1. After the event hub has been created, select the name of the event hub, and then select **Shared access policies** and **+ Add** to add a new policy.
 1. Give a name to the policy, check **Send**, and select **Create**.
 1. After the policy has been created, select the name of the policy to open the details panel, and then copy the **Connection string-primary key** value. Write it down; you'll need it for the next step.
 
 ##### Configuring the Azure Key Vault
 
-In order to access the Event Hub securely and to allow for key rotations, Microsoft Graph gets the connection string to the Event Hub through Azure Key Vault.
+In order to access the event hub securely and to allow for key rotations, Microsoft Graph gets the connection string to the event hub through Azure Key Vault.
 In this section, you will:
 
 - Create an Azure Key Vault to store the secret.
-- Add the connection string to the Event Hub as a secret.
+- Add the connection string to the event hub as a secret.
 - Add an access policy for Microsoft Graph to access the secret.
 
 Steps:
 
-1. Open a browser to the [Azure Portal](https://portal.azure.com).
+1. Open a browser to the [Azure portal](https://portal.azure.com).
 1. Select **Create a resource**.
 1. Type **Key Vault** in the search bar.
 1. Select the **Key Vault** suggestion. The Key Vault creation page loads.
 1. On the Key Vault creation page, select **Create**.
 1. Fill in the Key Vault creation details, and then select **Review + Create** and **Create**.
 1. Go to the newly created key vault using the **Go to resource** from the notification.
-1. Copy the **DNS name**; you will need it for the next step.
+1. Copy the **DNS name**; you'll need it for the next step.
 1. Go to **Secrets** and select **+ Generate/Import**.
-1. Give a name to the secret, and keep the name for later; you will need it for the next step. For the value, paste in the connection string you generated at the Event Hubs step. Select **Create**.
+1. Give a name to the secret, and keep the name for later; you'll need it for the next step. For the value, paste in the connection string you generated at the Event Hubs step. Select **Create**.
 1. Select **Access Policies** and **+ Add Access Policy**.
 1. For **Secret permissions**, select **Get**, and for **Select Principal**, select **Microsoft Graph Change Tracking**. Select **Add**.
 
@@ -128,17 +130,17 @@ Steps:
 
 ## Creating the subscription and receiving notifications
 
-After you create the required Azure KeyVault and Azure Event Hub services, you will be able to create your subscription and start receiving change notifications via Azure Event Hubs.
+After you create the required Azure KeyVault and Azure Event Hubs services, you'll be able to create your subscription and start receiving change notifications via Azure Event Hubs.
 
 #### Creating the subscription
 
 Subscriptions to change notifications with Event Hubs are almost identical to change notifications with webhooks. The key difference is that they rely on Event Hubs to deliver notifications. All other operations are similar, including [subscription creation](/graph/api/subscription-post-subscriptions).
 
-The main difference during subscription creation will be the **notificationUrl**. You must set it to `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
+The main difference during subscription creation is the **notificationUrl**. You must set it to `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
 
 - `azurekeyvaultname` - The name you gave to the key vault when you created it. Can be found in the DNS name.
 - `secretname` - The name you gave to the secret when you created it. Can be found on the Azure Key Vault **Secrets** page.
-- `domainname` - The name of your tenant; for example, contoso.com or contoso.com. Because this domain will be used to access the Azure Key Vault, it is important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and select the subscription. The domain name is displayed under the **Directory** field.
+- `domainname` - The name of your tenant; for example, contoso.com or contoso.com. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and select the subscription. The domain name is displayed under the **Directory** field.
 
 > [!NOTE]
 > Duplicate subscriptions are not allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request fails with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
@@ -147,7 +149,7 @@ The main difference during subscription creation will be the **notificationUrl**
 
 Events are now delivered to your application by Event Hubs. For details, see [receiving events](/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) in the Event Hubs documentation.
 
-Before you can receive the notifications in your application, you need to create another shared access policy with a "Listen" permission and obtain the connection string, similar to the steps listed in [Configuring the Azure Event Hub](#configuring-the-azure-event-hub).
+Before you can receive the notifications in your application, you need to create another shared access policy with a "Listen" permission and obtain the connection string, similar to the steps listed in [Configuring the Azure Event Hubs](#configuring-the-event-hub).
 
 > **Note:** Create a separate policy for the application that listens to Event Hubs messages instead of reusing the same connection string you set in Azure KeyVault. This ensures that each component of the solution has only the permissions it needs and follows the least permissions security principle.
 
@@ -183,7 +185,7 @@ The maximum message size for Event Hubs is 1 MB.  When you use [rich notificatio
 5.  Create or recreate your subscription, now including the **blobStoreUrl** property in the following syntax: `blobStoreUrl: "https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>"`
 
 ### Receiving notifications
-When Event Hubs receives a notification payload that is larger than 1 MB, the Event Hubs notification won't contain the **resource**, **resourceData**, and **encryptedContent** properties that are included in rich notifications. The Event Hubs notification will instead contain an **additionalPayloadStorageId** property with an ID that points to the blob in your storage account where these properties have been stored.
+When Event Hubs receives a notification payload that is larger than 1 MB, the Event Hubs notification doesn't contain the **resource**, **resourceData**, and **encryptedContent** properties that are included in rich notifications. The Event Hubs notification instead contains an **additionalPayloadStorageId** property with an ID that points to the blob in your storage account where these properties are stored.
 
 
 ## What if the Microsoft Graph Change Tracking application is missing?

@@ -3,7 +3,7 @@ title: "Create plannerPlan"
 description: "Use this API to create a new **plannerPlan**."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

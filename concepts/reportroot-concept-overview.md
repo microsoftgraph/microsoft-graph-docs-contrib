@@ -2,7 +2,7 @@
 title: "Microsoft Graph reports API overview"
 description: "Use the reports API to incorporate Microsoft 365 usage data into your organization's reporting solution so that all IT service reports are in a unified location."
 ms.localizationpriority: high
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 ms.custom: scenarios:getting-started
 ---

@@ -3,7 +3,7 @@ title: "landingPage resource type"
 description: "Represents an attack simulation landing page."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

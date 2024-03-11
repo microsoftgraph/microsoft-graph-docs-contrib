@@ -3,7 +3,7 @@ title: "singleServicePrincipal complex type"
 description: "Identifies a service principal in the tenant who will be allowed as requestor, approver, or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # singleServicePrincipal complex type

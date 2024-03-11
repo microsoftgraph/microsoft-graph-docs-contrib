@@ -2,11 +2,12 @@
 title: Manage users' authentication methods using Microsoft Graph"
 description: "Learn how to manage your users' authentication methods and get users registered to do multifactor authentication (MFA) and self-service password reset (SSPR)."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: jpeterre
 ms.localizationpriority: high
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ms.date: 01/18/2024
-ms.topic: conceptual
+ms.topic: concept-article
 #customer intent: As a developer, I want to understand what user authentication options are available for Microsoft Entra ID through Microsoft Graph, and how I can integrate them into my applications.
 ---
 

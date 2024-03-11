@@ -3,7 +3,7 @@ title: "List auditLogQueries"
 description: "Get a list of the auditLogQuery objects and their properties."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [auditLogQuery](../resources/security-auditlogquery.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 Auditing data can be accessed through Microsoft Purview Audit Search API via the following permissions, which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -104,7 +106,6 @@ GET https://graph.microsoft.com/beta/security/auditLog/queries
 
 ---
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -126,7 +127,9 @@ Content-Type: application/json
       "displayName": "String",
       "filterStartDateTime": "String (timestamp)",
       "filterEndDateTime": "String (timestamp)",
-      "recordTypeFilter": "String",
+      "recordTypeFilters": [
+        "String"
+      ],
       "keywordFilter": "String",
       "serviceFilter": "String",
       "operationFilters": [
