@@ -3,7 +3,7 @@ title: "Unarchive team"
 description: "Restore an archived team and restores users' ability to send messages and edit the team, abiding by tenant and team settings. Teams are archived using the archive API."
 ms.localizationpriority: medium
 author: "nkramer"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

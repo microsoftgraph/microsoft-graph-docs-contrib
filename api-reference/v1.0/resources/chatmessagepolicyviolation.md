@@ -4,7 +4,7 @@ description: "Represents policy violation on a chat message. Policy violations a
 author: "RamjotSingh"
 doc_type: resourcePageType
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 # chatMessagePolicyViolation resource type
 

@@ -3,7 +3,7 @@ title: "Add connected organization external sponsor"
 description: "Add a user or group to the connected organization's external sponsors."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
