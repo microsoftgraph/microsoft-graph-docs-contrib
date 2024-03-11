@@ -4,7 +4,7 @@ description: "Customize your synchronization schema to include custom attributes
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.date: 06/27/2023
 ---
 # Configure synchronization with custom target attributes

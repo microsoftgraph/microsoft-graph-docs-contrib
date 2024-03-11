@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to manage administrative answers"
 description: "Use Microsoft Graph to manage administrative search answers in the Microsoft Search experience."
 ms.localizationpriority: high
 author: "jakeost-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: conceptualPageType
 ---
 

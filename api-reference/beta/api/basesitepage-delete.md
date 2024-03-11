@@ -48,7 +48,7 @@ Don't supply a request body with this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content`. It doesn't return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
@@ -56,14 +56,14 @@ If successful, this method returns a `204 No Content`. It doesn't return anythin
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 ```http
 DELETE /sites/{site-id}/pages/{page-id}
 ```
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 

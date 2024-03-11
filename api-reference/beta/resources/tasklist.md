@@ -3,7 +3,7 @@ title: "taskList resource type"
 description: "Represents a list created by a user in Microsoft To Do that contains one or more Task resources."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

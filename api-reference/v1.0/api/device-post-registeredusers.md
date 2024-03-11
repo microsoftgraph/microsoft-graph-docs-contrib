@@ -3,7 +3,7 @@ title: "Create registeredUser"
 description: "Add a registered user for the device."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

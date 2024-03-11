@@ -3,7 +3,7 @@ title: "Delete accessPackageAssignmentRequestWorkflowExtension"
 description: "Delete an accessPackageAssignmentRequestWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -50,7 +50,8 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -96,6 +97,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-
 ---
 
 ### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",

@@ -3,7 +3,7 @@ title: "submissionUserIdentity resource type"
 description: "Represents the identity of the user who sends the threat submission."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

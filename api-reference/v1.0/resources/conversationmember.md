@@ -3,7 +3,7 @@ title: "conversationMember resource type"
 description: "Represents user in a conversation."
 ms.localizationpriority: medium
 author: "akjo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

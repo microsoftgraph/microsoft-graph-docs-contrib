@@ -3,7 +3,7 @@ title: Use external groups to manage permissions to Microsoft Graph connectors d
 description: Learn how to use external groups to manage permissions to view external items in a Microsoft Graph connection and connect to data sources outside Microsoft Entra groups.
 author: mecampos
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ms.localizationpriority: medium
 ---
 

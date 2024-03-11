@@ -3,7 +3,7 @@ title: "Assign appliesTo"
 description: "Assign a directoryObject to feature rollout."
 ms.localizationpriority: medium
 author: "madhavpatel6"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

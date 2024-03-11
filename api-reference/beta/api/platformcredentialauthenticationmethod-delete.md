@@ -3,7 +3,7 @@ title: "Delete platformCredentialAuthenticationMethod"
 description: "Delete a platformCredentialAuthenticationMethod object."
 author: "Veena11"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

@@ -4,7 +4,7 @@ description: "Delete a b2cIdentityUserFlow object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Delete b2cIdentityUserFlow

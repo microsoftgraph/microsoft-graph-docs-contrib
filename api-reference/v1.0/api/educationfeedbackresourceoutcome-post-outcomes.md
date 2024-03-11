@@ -3,7 +3,7 @@ title: "Create educationFeedbackResourceOutcome"
 description: "Create a new feedback resource for a submission."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

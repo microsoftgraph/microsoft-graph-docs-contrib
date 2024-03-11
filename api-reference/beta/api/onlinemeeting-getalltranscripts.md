@@ -3,7 +3,7 @@ title: "onlineMeeting: getAllTranscripts"
 description: "Get transcripts from all online meetings that a user is an organizer of."
 author: "jacobsatora"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

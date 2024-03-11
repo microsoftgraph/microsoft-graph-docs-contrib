@@ -3,7 +3,7 @@ title: "teamSummary resource type"
 description: "Contains information about a team in Microsoft Teams, including numbers of owners, members, and guests."
 ms.localizationpriority: medium
 author: "akhilkohlimicrosoft"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

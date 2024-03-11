@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsTeamActivityDetail"
 description: "Get details about Microsoft Teams activity by team. The numbers include activities for both licensed and nonlicensed users."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "haoyli"
 doc_type: apiPageType
 ---

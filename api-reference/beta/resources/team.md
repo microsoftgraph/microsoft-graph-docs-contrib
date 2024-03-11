@@ -3,7 +3,7 @@ title: "team resource type"
 description: "A team in Microsoft Teams is a collection of channels."
 author: "AkJo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

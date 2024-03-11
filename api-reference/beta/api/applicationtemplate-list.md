@@ -3,7 +3,7 @@ title: "List applicationTemplates"
 description: "Retrieve a list of applicationtemplate objects."
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

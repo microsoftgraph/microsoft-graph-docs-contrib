@@ -3,7 +3,7 @@ title: "List checklistItems"
 description: "Get the checklistItem resources associated to a todoTask from the checklistItems navigation property."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
