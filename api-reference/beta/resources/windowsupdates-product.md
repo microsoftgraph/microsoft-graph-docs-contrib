@@ -37,9 +37,9 @@ Example of a Windows Product:
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|editions|[microsoft.graph.windowsUpdates.edition](.../resources/windowsupdates-edition.md) collection| Represents an edition of a particular Windows product. |
-|knownIssues|[microsoft.graph.windowsUpdates.knownIssue](.../resources/windowsupdates-knownissue.md) collection| Represents a known issue related to a Windows product. |
-|revisions|[microsoft.graph.windowsUpdates.productRevision](.../resources/windowsupdates-productrevision.md) collection|Represents a product revision.|
+|editions|[microsoft.graph.windowsUpdates.edition](../resources/windowsupdates-edition.md) collection| Represents an edition of a particular Windows product. |
+|knownIssues|[microsoft.graph.windowsUpdates.knownIssue](../resources/windowsupdates-knownissue.md) collection| Represents a known issue related to a Windows product. |
+|revisions|[microsoft.graph.windowsUpdates.productRevision](../resources/windowsupdates-productrevision.md) collection|Represents a product revision.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
