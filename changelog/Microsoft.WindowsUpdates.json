@@ -1075,34 +1075,26 @@
                 {
                     "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "product",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [product](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-product?view=graph-rest-beta) resource type."",
-                    "Target": "product"
-                },
-                {
-                    "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
-                    "ApiChange": "Resource",
                     "ChangedApiName": "edition",
                     "ChangeType": "Addition",
-                    "Description": "Added the [edition](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-edition?view=graph-rest-beta) resource type."",
+                    "Description": "Added the [edition](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-edition?view=graph-rest-beta) resource type.",
                     "Target": "edition"
                 },
                 {
                     "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "knownissue",
+                    "ChangedApiName": "itemBody",
                     "ChangeType": "Addition",
-                    "Description": "Added the [knownissue](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-knownissue?view=graph-rest-beta) resource type.",
-                    "Target": "knownissue"
+                    "Description": "Added the [itemBody](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-itembody?view=graph-rest-beta) resource type.",
+                    "Target": "itemBody"
                 },
                 {
                     "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "servicingPeriod",
+                    "ChangedApiName": "knownIssue",
                     "ChangeType": "Addition",
-                    "Description": "Added the [servicingPeriod](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-servicingPeriod?view=graph-rest-beta) resource type.",
-                    "Target": "servicingPeriod"
+                    "Description": "Added the [knownIssue](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-knownissue?view=graph-rest-beta) resource type.",
+                    "Target": "knownIssue"
                 },
                 {
                     "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
@@ -1115,10 +1107,18 @@
                 {
                     "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "itemBody",
+                    "ChangedApiName": "product",
                     "ChangeType": "Addition",
-                    "Description": "Added the [itemBody](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-itembody?view=graph-rest-beta) resource type.",
-                    "Target": "itemBody"
+                    "Description": "Added the [product](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-product?view=graph-rest-beta) resource and supported methods.",
+                    "Target": "product"
+                },
+                {
+                    "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "servicingPeriod",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [servicingPeriod](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-servicingPeriod?view=graph-rest-beta) resource type.",
+                    "Target": "servicingPeriod"
                 }
             ],
             "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
