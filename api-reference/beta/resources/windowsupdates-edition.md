@@ -20,7 +20,7 @@ Represents a specific edition of a Windows product, such as Enterprise, Core, or
 |Property|Type|Description|
 |:---|:---|:---|
 |deviceFamily|String|The device family targeted by the edition.|
-|endofServiceDateTime|DateTimeOffset|The date and time when the edition reaches or reached end of service. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
+|endOfServiceDateTime|DateTimeOffset|The date and time when the edition reaches or reached end of service. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 |generalAvailabilityDateTime|DateTimeOffset|The date and time when the edition became available to the general customers for the first time. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |id|String|The unique identifier for the edition entry. Read-only.|
 |isInService|Boolean| Represents an edition of a particular Windows product.|
