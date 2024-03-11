@@ -2,6 +2,7 @@
 title: "user: convertExternalToInternalMemberUser"
 description: "Convert an external user to an internal member."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -60,7 +61,7 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [conversionUserDetails](../resources/conversionUserDetails.md) user conversion details.
+If successful, this method returns a `200 OK` response code and [conversionUserDetails](../resources/conversionUserDetails.md) response object.
 
 ## Examples
 
@@ -94,7 +95,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.conversionUserDetails"
 }
 -->
 ```http
@@ -141,7 +142,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.conversionUserDetails"
 }
 -->
 ``` http
@@ -178,7 +179,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.conversionUserDetails"
 }
 -->
 ``` http
