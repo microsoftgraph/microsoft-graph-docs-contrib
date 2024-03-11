@@ -14,7 +14,15 @@ Namespace: microsoft.graph.windowsUpdates
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a Windows product.
-         
+
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get known issues by time range](../api/windowsupdates-product-getknownissuesbytimerange.md)|[microsoft.graph.windowsUpdates.knownIssue](../resources/windowsupdates-knownissue.md) collection|Get known issues related to a particular product based on a specified timeframe in the past.|
+|[Find by catalog ID](../api/windowsupdates-product-findbycatalogid.md)|[microsoft.graph.windowsUpdates.product](../resources/windowsupdates-product.md) collection|Find the product revisions associated with a catalog ID and the known issues directly or indirectly related to the catalog ID.|
+|[Find by knowledge base number](../api/windowsupdates-product-findbykbnumber.md)|[microsoft.graph.windowsUpdates.product](../resources/windowsupdates-product.md) collection|Find the product revisions associated with a knowledge base number and the known issues directly or indirectly related to the knowledge base number.|
+
 ## Properties
 
 |Property|Type|Description|
