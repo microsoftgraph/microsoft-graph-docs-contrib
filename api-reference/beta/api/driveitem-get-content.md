@@ -93,7 +93,7 @@ GET /me/drive/items/{item-id}/content
 ### Response
 
 Returns a `302 Found` response redirecting to a preauthenticated download URL for the file.
-This is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.
+It is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.
 
 To download the contents of the file your application needs to follow the `Location` header in the response.
 Many HTTP client libraries follow the 302 redirection and start downloading the file immediately.
@@ -108,7 +108,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
 ## Downloading files in JavaScript apps
-To download files in a JavaScript app, you can't use the `/content` API, because this responds with a `302` redirect.
+To download files in a JavaScript app, you can't use the `/content` API, because it responds with a `302` redirect.
 A `302` redirect is explicitly prohibited when a [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) _preflight_ is required, such as when providing the **Authorization** header.
 
 Instead, your app needs to select the `@microsoft.graph.downloadUrl` property, which returns the same URL that `/content` directs to.

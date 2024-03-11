@@ -246,8 +246,8 @@ This response indicates that the item named `folder2` was deleted and the item `
 
 The final page of items includes the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
 
-There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
-In these cases the service returns an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
+There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state changed and a new token is required).
+In these cases, the service returns an `HTTP 410 Gone` error with an error response containing an error codes, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
 After finishing the full enumeration, compare the returned items with your local state and follow these instructions.
 
 | Error Type                       | Instructions                                                                                                                                                                                                                    |
@@ -259,7 +259,7 @@ After finishing the full enumeration, compare the returned items with your local
 
 In some scenarios, it may be useful to request the current deltaLink value without first enumerating all of the items in the drive already.
 
-This can be useful if your app only wants to know about changes, and doesn't need to know about existing items.
+It can be useful if your app only wants to know about changes, and doesn't need to know about existing items.
 To retrieve the latest deltaLink, call `delta` with a query string parameter `?token=latest`.
 
 > **Note:** If you are trying to maintain a full local representation of the items in a folder or a drive, you must use `delta` for the initial enumeration.
@@ -410,8 +410,8 @@ Content-type: application/json
 
 * The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.
 * The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
-* The `parentReference` property on items won't include a value for **path**. This occurs because renaming a folder doesn't result in any descendants of the folder being returned from **delta**. **When using delta you should always track items by id**.
-* Delta query won't return some DriveItem properties, depending on the operation and service type, as shown in the following tables.
+* The `parentReference` property on items don't include a value for **path**. It occurs because renaming a folder doesn't result in any descendants of the folder being returned from **delta**. **When using delta you should always track items by ID**.
+* Delta query don't return some DriveItem properties, depending on the operation and service type, as shown in the following tables.
 
     **OneDrive for Business**
 
@@ -419,7 +419,6 @@ Content-type: application/json
     |---------|----------|
     | Create/Modify | `ctag` |
     | Delete | `ctag`, `name` |
-
 
     **OneDrive (consumer)**
 
@@ -430,9 +429,9 @@ Content-type: application/json
 
 ## Scanning permissions hierarchies
 
-By default, the delta query response includes sharing information for all items in the query that changed even if they inherit their permissions from their parent and didn't have direct sharing changes themselves. This typically then results in a follow-up call to get the permission details for every item rather than just the ones whose sharing information changed. You can optimize your understanding of how permission changes happen by adding the `Prefer: hierarchicalsharing` header to your delta query request.
+By default, the delta query response includes sharing information for all items in the query that changed even if they inherit their permissions from their parent and didn't have direct sharing changes themselves. It typically then results in a follow-up call to get the permission details for every item rather than just the ones whose sharing information changed. You can optimize your understanding of how permission changes happen by adding the `Prefer: hierarchicalsharing` header to your delta query request.
 
-When the `Prefer: hierarchicalsharing` header is provided, sharing information is returned for the root of the permissions hierarchy, and items that explicitly have sharing changes. In cases where the sharing change is to remove sharing from an item, you find an empty sharing facet to differentiate between items that inherit from their parent and those that are unique but have no sharing links. You'll also see this empty sharing facet on the root of a permission hierarchy that isn't shared to establish the initial scope.
+When the `Prefer: hierarchicalsharing` header is provided, sharing information is returned for the root of the permissions hierarchy, and items that explicitly have sharing changes. In cases where the sharing change is to remove sharing from an item, you find an empty sharing facet to differentiate between items that inherit from their parent and the ones that are unique but have no sharing links. You can also see this empty sharing facet on the root of a permission hierarchy that isn't shared to establish the initial scope.
 
 In many scanning scenarios, you might be interested specifically in changes to permissions. To make it clear in the delta query response which changes are the result of permissions being changed, you can provide the `Prefer: deltashowsharingchanges` header. When this header is provided, all items that appear in the delta query response due to permission changes have the `@microsoft.graph.sharedChanged":"True"` OData annotation. This feature is applicable to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
 
@@ -445,7 +444,7 @@ For more information about scanning scenarios, see [Best practices for discoveri
 
 ## Error responses
 
-In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
+In addition to the resync errors detailed, see [Error responses][error-response] for details about how errors are returned.
 
 ## Related content
 [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).

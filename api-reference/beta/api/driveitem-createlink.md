@@ -190,7 +190,7 @@ Content-Type: application/json
 ### Example 2: Creating company sharable links
 
 OneDrive for Business and SharePoint support company sharable links.
-They're are similar to anonymous links, except they only work for members of the owning organization.
+They're similar to anonymous links, except they only work for members of the owning organization.
 To create a company sharable link, use the **scope** parameter with a value of `organization`.
 
 #### Request
@@ -278,6 +278,8 @@ When an embed link is created, the `webHtml` property contains the HTML code for
 
 #### Request
 
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -329,6 +331,8 @@ Content-Type: application/json
 ---
 
 #### Response
+
+The following example shows the request.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
