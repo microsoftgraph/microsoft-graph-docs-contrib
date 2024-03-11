@@ -4,7 +4,7 @@ description: "Describes a single parameter used in an attributeMappingFunctionSc
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # attributeMappingParameterSchema resource type

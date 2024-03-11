@@ -3,7 +3,7 @@ title: "accessReviewApplyAction resource type"
 description: "Represents the action to take on reviewed users after an access review instance is completed."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

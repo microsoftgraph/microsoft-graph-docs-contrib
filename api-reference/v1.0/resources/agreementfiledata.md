@@ -3,7 +3,7 @@ title: "agreementFileData resource type"
 description: "Represents a Microsoft Entra terms of use agreement file."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
 ---
 

@@ -3,7 +3,7 @@ title: "event: snoozeReminder"
 description: "Postpone a reminder for an event in a user calendar until a new time."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

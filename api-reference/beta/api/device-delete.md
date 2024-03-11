@@ -3,7 +3,7 @@ title: "Delete device"
 description: "Delete a registered device."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

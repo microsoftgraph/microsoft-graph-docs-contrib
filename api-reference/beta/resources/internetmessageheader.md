@@ -4,7 +4,7 @@ description: "A key-value pair that represents an Internet message header, as de
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # internetMessageHeader resource type

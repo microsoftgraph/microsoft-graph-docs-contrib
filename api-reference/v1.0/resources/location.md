@@ -3,7 +3,7 @@ title: "Location resource type"
 description: "Represents location information of an event."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "accessPackageLocalizedText resource type"
 description: "Represents a question in a specific language."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

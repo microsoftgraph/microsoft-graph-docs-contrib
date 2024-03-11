@@ -3,7 +3,7 @@ title: "customExtensionHandler resource type (deprecated)"
 description: "Defines when to execute a custom access package workflow extension."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

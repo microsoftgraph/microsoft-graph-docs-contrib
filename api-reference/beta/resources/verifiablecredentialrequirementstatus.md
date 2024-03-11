@@ -3,7 +3,7 @@ title: "verifiableCredentialRequirementStatus resource type"
 description: "Represents the status of processing the verifiable credential requirement for an access package request."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

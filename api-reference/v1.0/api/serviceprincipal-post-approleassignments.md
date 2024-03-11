@@ -3,7 +3,7 @@ title: "Grant an appRoleAssignment to a service principal"
 description: "Grant an app role assignment to a service principal."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 

@@ -4,7 +4,7 @@ description: "(../resources/synchronization_attributemappingsource.md) object. "
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationSchema: parseExpression

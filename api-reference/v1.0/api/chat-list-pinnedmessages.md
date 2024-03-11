@@ -3,7 +3,7 @@ title: "List pinnedChatMessages in a chat"
 description: "Get a list of pinned messages in a chat."
 author: "sumanac"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

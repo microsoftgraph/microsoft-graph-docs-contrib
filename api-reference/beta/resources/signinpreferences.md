@@ -3,7 +3,7 @@ title: "signInPreferences resource type"
 description: "Represents settings and preferences for the sign-in experience of a user."
 author: "msft-poulomi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
