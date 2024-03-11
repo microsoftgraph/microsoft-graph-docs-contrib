@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection collection of [windows.graph.windowsUpdates.product](../includes/permissions/windowsupdates-product.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection collection of [microsoft.graph.windowsUpdates.product](../resources/windowsupdates-product.md) objects in the response body.
 
 ## Examples
 
