@@ -1,6 +1,6 @@
 ---
 title: "organization resource type"
-description: "Represents the Microsoft Entra tenant from which authenticated requests are made."
+description: "Represents the Microsoft Entra tenant that the user or application is authenticated to."
 ms.localizationpriority: medium
 author: "suawat"
 ms.reviewer: "alvarorahul, iamut"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Microsoft Entra tenant that the user or application is signed in to. Only the read and update operations are supported on this resource. Inherits from [directoryObject](directoryobject.md).
+Represents the Microsoft Entra tenant that the user or application is authenticated to. Only the read and update operations are supported on this resource. Inherits from [directoryObject](directoryobject.md).
 
 ## Methods
 
