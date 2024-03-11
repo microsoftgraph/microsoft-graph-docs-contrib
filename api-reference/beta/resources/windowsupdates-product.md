@@ -14,20 +14,12 @@ Namespace: microsoft.graph.windowsUpdates
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a Windows product.
-
-Example of a Windows Product:
-
-|Name|Example|
-|:---|:---|
-|Name| Windows 11, version 22H2 |
-|Friendly Name| Version 22H2 (OS build 22621) |
-|Group Name| Windows 11|
          
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|friendlyName|String|The name of the product. For example, `Version 22H2 (OS build 22621)`. Read-only.|
+|friendlyNames|String collection|The friendly names of the product. For example, `Version 22H2 (OS build 22621)`. Read-only.|
 |groupName|String|The name of the product group. For example, `Windows 11`. Read-only.|
 |id|String|The unique identifier for the product. Read-only.|
 |name|String|The name of the product. For example, `Windows 11, version 22H2`. Read-only.|
@@ -53,10 +45,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.product",
-  "groupName": "String",
   "friendlyNames": ["String"],
+  "groupName": "String",
   "id": "String (identifier)",
-  "name": "String"
+  "name": "String",
   "releaseDateTime": "String (timestamp)"
 }
 ```
