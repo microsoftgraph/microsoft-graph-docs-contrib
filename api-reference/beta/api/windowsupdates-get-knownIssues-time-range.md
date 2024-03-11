@@ -42,8 +42,8 @@ The following table shows the parameters that must be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|daysInPast|Int32|This parameter represents the number of days to lookup in the past. This filter is applied on all known issues that are in final status and have a resolved date time.|
-|includeAllActive|Boolean|If this parameter is set to true or noull, the response will include all Active known Issues. If the parameter is set to false, the response will not have any Active known Issues.|
+|daysInPast|Int32|This parameter represents the number of days to look up in the past. This filter is applied on all known issues that are in final status and have a resolved date time.|
+|includeAllActive|Boolean|If this parameter is set to true or null, the response includes all active known Issues. If the parameter is set to false, the response does not include have any active known Issues.|
 
 ## Request headers
 |Name|Description|
