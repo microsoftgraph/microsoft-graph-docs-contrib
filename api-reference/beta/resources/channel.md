@@ -3,7 +3,7 @@ title: "channel resource type"
 description: "A channel is a collection of chatMessages within a team. "
 author: "akjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update taskList"
 description: "Update the properties of a taskList object."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

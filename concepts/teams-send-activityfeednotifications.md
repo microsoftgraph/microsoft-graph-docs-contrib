@@ -3,7 +3,7 @@ title: "Send activity feed notifications to users in Microsoft Teams"
 description: "Use the Microsoft Teams activity feed notification APIs in Microsoft Graph to help keep users up to date with changes in the tools and workflows they use."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Send activity feed notifications to users in Microsoft Teams

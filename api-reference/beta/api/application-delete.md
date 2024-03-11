@@ -3,7 +3,7 @@ title: "Delete application"
 description: "Deletes an application."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

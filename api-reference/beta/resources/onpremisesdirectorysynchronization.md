@@ -3,7 +3,7 @@ title: "onPremisesDirectorySynchronization resource type"
 description: "A container for on-premises directory synchronization functionalities that are available for the organization."
 author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

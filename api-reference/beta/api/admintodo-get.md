@@ -3,7 +3,7 @@ title: "Get adminTodo"
 description: "Read the properties and relationships of a Microsoft Graph adminTodo object."
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

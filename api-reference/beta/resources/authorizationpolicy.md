@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

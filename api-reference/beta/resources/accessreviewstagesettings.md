@@ -3,7 +3,7 @@ title: "accessReviewStageSettings resource type"
 description: "In Microsoft Entra access reviews, the accessReviewStageSettings represent the settings of the stages associated with a multi-stage access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

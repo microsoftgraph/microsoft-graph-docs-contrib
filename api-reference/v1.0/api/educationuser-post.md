@@ -3,7 +3,7 @@ title: "Create educationUser"
 description: "Create a new educationUser object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

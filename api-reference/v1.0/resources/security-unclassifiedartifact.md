@@ -3,7 +3,7 @@ title: "unclassifiedArtifact resource type"
 description: "Represents artifacts observed by Microsoft Security services that don't have a supporting API."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

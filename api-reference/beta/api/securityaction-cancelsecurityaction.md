@@ -3,7 +3,7 @@ title: "securityAction: cancelSecurityAction"
 description: "Cancel a security operation."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List federatedTokenValidationPolicy"
 description: "Get a list of the federatedTokenValidationPolicy objects and their properties."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

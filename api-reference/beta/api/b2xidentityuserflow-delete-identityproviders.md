@@ -4,7 +4,7 @@ description: "Delete an identityProvider from a b2xIdentityUserFlow. (deprecated
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Delete identityProvider from b2xIdentityUserFlow (deprecated)

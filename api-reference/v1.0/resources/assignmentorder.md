@@ -3,7 +3,7 @@ title: "assignmentOrder resource type"
 description: "Defines the order of the attributes being collected within a user flow."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

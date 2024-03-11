@@ -3,7 +3,7 @@ title: "Get alertRecord"
 description: "Read the properties and relationships of an alertRecord object."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
