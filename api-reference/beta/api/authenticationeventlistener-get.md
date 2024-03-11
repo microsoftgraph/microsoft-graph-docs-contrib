@@ -3,7 +3,7 @@ title: "Get authenticationEventListener"
 description: "Read the properties and relationships of an authenticationEventListener object."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

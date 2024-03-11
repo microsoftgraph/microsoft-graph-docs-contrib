@@ -3,7 +3,7 @@ title: "Get team"
 description: "Retrieve the properties and relationships of the specified team."
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

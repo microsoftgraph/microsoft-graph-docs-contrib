@@ -3,7 +3,7 @@ title: "privilegedAccessRoot resource type"
 description: "Represents the entry point for resources related to Privileged Identity Management (PIM)."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

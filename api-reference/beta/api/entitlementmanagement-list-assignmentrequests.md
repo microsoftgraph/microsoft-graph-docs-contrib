@@ -3,7 +3,7 @@ title: "List assignmentRequests"
 description: "Retrieve a list of accessPackageAssignmentRequest objects."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

@@ -717,6 +717,8 @@ items:
                 href: api/opentypeextension-get.md
       - name: Applications
         items:
+          - name: Overview
+            href: resources/applications-api-overview.md
           - name: Application
             href: resources/application.md
             items:
@@ -10672,6 +10674,8 @@ items:
                 href: api/educationclass-post-category.md
               - name: Get delta
                 href: api/educationclass-delta.md
+              - name: Set default defaultgradingscheme
+                href: api/educationassignmentsettings-post-defaultgradingscheme.md
           - name: Users
             href: resources/educationuser.md
             items:
@@ -10742,6 +10746,8 @@ items:
                 href: api/educationassignment-activate.md
               - name: Deactivate assignment
                 href: api/educationassignment-deactivate.md
+              - name: Create grading scheme
+                href: api/educationassignment-post-gradingscheme.md
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -10776,6 +10782,15 @@ items:
                 href: api/educationgradingcategory-update.md
               - name: Delete
                 href: api/educationassignment-delete-gradingcategory.md
+          - name: Grading Schemes
+            href: resources/educationgradingscheme.md
+            items:
+              - name: Add grading scheme
+                href: api/educationgradingscheme-post.md
+              - name: Update grading scheme
+                href: api/educationassignmentsettings-update.md
+              - name: Delete grading scheme
+                href: api/educationgradingscheme-delete.md
           - name: Module
             href: resources/educationmodule.md
             items:
@@ -16915,6 +16930,17 @@ items:
                     href: api/security-ediscoverycase-delete-tags.md
                   - name: List tags as hierarchy
                     href: api/security-ediscoveryreviewtag-ashierarchy.md
+          - name: Email and collaboration protection
+            items:
+            - name: Analyzed email (preview)
+              href: resources/security-analyzedemail.md
+              items:
+                - name: List
+                  href: api/security-collaborationroot-list-analyzedemails.md
+                - name: Get
+                  href: api/security-analyzedemail-get.md
+                - name: Remediate
+                  href: api/security-analyzedemail-remediate.md
           - name: Information protection
             items:
               - name: Labels (deprecated)

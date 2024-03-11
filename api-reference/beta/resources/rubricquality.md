@@ -3,7 +3,7 @@ title: "rubricQuality resource type"
 description: "A quality of a rubric"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 

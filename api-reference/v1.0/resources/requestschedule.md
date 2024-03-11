@@ -3,7 +3,7 @@ title: "requestSchedule resource type"
 description: "In PIM, use this resource to define the schedule for when the principal has an eligible or active role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

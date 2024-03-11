@@ -3,7 +3,7 @@ title: "Assign tokenIssuancePolicy"
 description: "Assign a tokenIssuancePolicy to an application."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

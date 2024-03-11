@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph security API"
 description: "The Microsoft Graph security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners."
 ms.localizationpriority: high
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: conceptualPageType
 ---
 

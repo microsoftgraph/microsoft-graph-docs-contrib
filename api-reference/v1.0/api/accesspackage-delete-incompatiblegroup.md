@@ -3,7 +3,7 @@ title: "Remove group from incompatibleGroups"
 description: "Remove a link that indicates a group is incompatible with a specified access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

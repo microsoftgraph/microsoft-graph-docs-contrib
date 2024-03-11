@@ -3,7 +3,7 @@ title: "accessPackageResourceRole resource type"
 description: "A reference to a role defined in a resource."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

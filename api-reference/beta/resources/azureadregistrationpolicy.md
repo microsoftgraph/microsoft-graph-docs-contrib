@@ -3,7 +3,7 @@ title: "azureADRegistrationPolicy resource type"
 description: "Represents the policy scope of a Microsoft Entra tenant that controls device registration using Microsoft Entra registered."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 # azureADRegistrationPolicy resource type

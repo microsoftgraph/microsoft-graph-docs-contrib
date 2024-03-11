@@ -7,7 +7,7 @@ ms.reviewer: alamaral
 ms.localizationpriority: high
 ms.topic: tutorial
 ms.custom: scenarios:getting-started
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 02/23/2024
 #customer intent: As a developer, I want to configure SAML-based single sign-on for my application using Microsoft Graph, so that I can improve usability of apps by enabling secure authentication and authorization for users.
 ---

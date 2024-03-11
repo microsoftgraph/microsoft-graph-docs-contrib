@@ -3,7 +3,7 @@ title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get mobileDeviceManagementPolicy"
 description: "Read the properties and relationships of a mobile device management policy object."
 author: "ravennMSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

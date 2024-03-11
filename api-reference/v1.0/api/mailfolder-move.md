@@ -3,7 +3,7 @@ title: "mailFolder: move"
 description: "Move a mailfolder and its contents to another mailfolder."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

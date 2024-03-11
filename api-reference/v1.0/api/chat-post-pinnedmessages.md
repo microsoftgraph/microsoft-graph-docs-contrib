@@ -3,7 +3,7 @@ title: "Pin a message in a chat"
 description: "Pin a chat message in the specified chat."
 author: "sumanac"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
