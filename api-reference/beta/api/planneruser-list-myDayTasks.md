@@ -48,11 +48,6 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 ##### Request
 Here's an example of the request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "planneruser_get_mydaytasks"
-}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner/myDayTasks
 ```
