@@ -20,7 +20,7 @@ Represents a container for holding content and its type.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |content|String|The content of the item.|
-|contentType|bodyType|The type of the content indicated by the enum value of **bodyType**. Possible values are: `text` and `html`.|
+|contentType|microsoft.graph.bodyType|The type of the content indicated by the enum value of **bodyType**. Possible values are: `text` and `html`.|
 
 ## Relationships
 
