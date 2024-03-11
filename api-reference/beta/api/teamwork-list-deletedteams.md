@@ -3,7 +3,7 @@ title: "List deletedTeams"
 description: "Get a list of the deletedTeam objects and their properties."
 author: "agnesliu"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

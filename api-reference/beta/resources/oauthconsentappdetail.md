@@ -3,7 +3,7 @@ title: "oAuthConsentAppDetail resource type"
 description: "Represents details required for the oAuth technique."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

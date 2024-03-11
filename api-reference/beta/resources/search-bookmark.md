@@ -3,7 +3,7 @@ title: "bookmark resource type"
 description: "Represents a bookmark that is an administrative answer in Microsoft Search results for common search queries in an organization."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get hostSslCertificate"
 description: "Get the properties and relationships of a hostSslCertificate object."
 author: "nblankenau"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

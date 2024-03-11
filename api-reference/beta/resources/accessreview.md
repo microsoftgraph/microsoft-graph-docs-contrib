@@ -3,7 +3,7 @@ title: "accessReview resource type (deprecated)"
 description: "In the Microsoft Entra access reviews feature, the `accessReview` represents an access review.  "
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "onPremisesProvisioningError resource type"
 description: "Represents directory synchronization errors for the user, group, or organizational contact entities when synchronizing on-premises directories to Microsoft Entra ID."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "dhruvinrshah"
 ---
 

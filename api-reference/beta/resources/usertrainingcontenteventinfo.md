@@ -3,7 +3,7 @@ title: "userTrainingContentEventInfo resource type"
 description: "Represents training event details of assigned trainings to users in an attack simulation and training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

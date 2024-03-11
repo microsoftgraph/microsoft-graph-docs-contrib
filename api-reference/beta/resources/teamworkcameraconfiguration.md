@@ -3,7 +3,7 @@ title: "teamworkCameraConfiguration resource type"
 description: "Represents the details about the camera configuration for a Microsoft Teams Rooms device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

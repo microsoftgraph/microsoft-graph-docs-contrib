@@ -3,7 +3,7 @@ title: "claimsMappingPolicy resource type"
 description: "Represents the claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application."
 ms.localizationpriority: medium
 author: "paulgarn"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

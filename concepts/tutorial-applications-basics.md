@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: sureshja
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.date: 08/14/2023
 #Customer intent: As a developer integrating with Microsoft Graph, I want to learn how to programmatically create and manage applications and service principals in my tenant.
 ---

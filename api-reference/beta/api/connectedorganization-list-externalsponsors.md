@@ -3,7 +3,7 @@ title: "List externalSponsors"
 description: "Retrieve a list of connectedOrganization's externalSponsors."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

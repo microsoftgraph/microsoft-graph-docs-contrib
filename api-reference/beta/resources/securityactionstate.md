@@ -3,7 +3,7 @@ title: "securityActionState resource type"
 description: "Represents the history of securityAction state changes."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update administrativeunit"
 description: "Update the properties of an administrativeUnit object."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

@@ -48,7 +48,7 @@ Don't supply a request body with this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content`. It doesn't return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 

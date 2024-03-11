@@ -4,7 +4,7 @@ description: "Update the properties of a chatMessage object."
 author: "RamjotSingh"
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Update chatMessage

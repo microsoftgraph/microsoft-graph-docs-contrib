@@ -2,7 +2,7 @@
 title: "Skype for Business activity reports"
 description: "You can get details on activity across your organization. These details can help you investigate, plan, and make other business decisions for your organization."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
 ---

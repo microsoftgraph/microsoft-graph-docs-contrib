@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequest: reprocess"
 description: "Reprocess accessPackageAssignmentRequest objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Etan.Basseri
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ms.date: 11/01/2022
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use Microsoft Entra ID Protection to identify and remediate identity-based risks, so that I can ensure the security of user accounts and protect against unauthorized access.
 ---
@@ -25,7 +25,7 @@ To successfully complete this tutorial, make sure that you have the required pre
 
 - You must have a Microsoft Entra ID P1 or P2 license to use the risk detection API.
 - This tutorial uses the Tor browser to sign in to the Microsoft Entra admin center anonymously. You can use any anonymous browser to accomplish the task. To download the Tor browser, see [Download Tor Browser](https://www.torproject.org/download/).
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 - Grant yourself the following delegated permissions: `IdentityRiskEvent.Read.All`, `IdentityRiskyUser.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ConditionalAccess`, and `User.ReadWrite.All`.
 
 ## Step 1: Create a user account
