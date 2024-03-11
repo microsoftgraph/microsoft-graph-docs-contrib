@@ -3,7 +3,7 @@ title: "List group calendarView"
 description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the default calendar of a group."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

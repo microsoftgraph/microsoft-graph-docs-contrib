@@ -3,7 +3,7 @@ title: "Delete event"
 description: "Delete event."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

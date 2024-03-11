@@ -3,7 +3,7 @@ title: "List authenticationEventListeners"
 description: "Get a list of the authenticationEventListener objects and their properties."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

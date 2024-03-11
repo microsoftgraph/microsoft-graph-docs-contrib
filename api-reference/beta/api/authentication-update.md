@@ -4,7 +4,7 @@ description: "Update the properties of a user's authentication sign in preferenc
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

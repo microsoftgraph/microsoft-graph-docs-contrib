@@ -3,7 +3,7 @@ title: "List hostSslCertificates"
 description: "Get a list of hostSslCertificate objects from the host navigation property."
 author: "nblankenau"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

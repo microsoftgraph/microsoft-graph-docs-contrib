@@ -3,7 +3,7 @@ title: "educationExternalResource resource type"
 description: "A subclass of educationResource. This is the default Resource type assignments service use to map all those resources we don't expose to graph. This allows all SDK callers to work seamlessly."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

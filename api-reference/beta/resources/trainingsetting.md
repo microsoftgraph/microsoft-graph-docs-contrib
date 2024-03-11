@@ -3,7 +3,7 @@ title: "trainingSetting resource type"
 description: "An abstract type that represents a training setting for simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

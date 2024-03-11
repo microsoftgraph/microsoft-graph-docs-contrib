@@ -3,7 +3,7 @@ title: "accessPackageQuestion resource type"
 description: "The complex type for questions configured on an access package assignment policy."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

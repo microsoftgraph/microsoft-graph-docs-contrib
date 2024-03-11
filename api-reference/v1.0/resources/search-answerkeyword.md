@@ -3,7 +3,7 @@ title: "answerKeyword resource type"
 description: "Represents answer keywords that allow users to define words and phrases that trigger an administrative search answer to appear in search results."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

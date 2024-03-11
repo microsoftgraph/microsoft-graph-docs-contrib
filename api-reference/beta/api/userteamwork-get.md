@@ -3,7 +3,7 @@ title: "Get userTeamwork"
 description: "Get user teamwork settings for a user such as user locale and user region."
 author: "mea"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

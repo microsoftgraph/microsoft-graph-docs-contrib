@@ -3,7 +3,7 @@ title: "addContentHeaderAction resource type"
 description: "Represents an action that specifies the details on the content header to be added to the information, if applicable."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

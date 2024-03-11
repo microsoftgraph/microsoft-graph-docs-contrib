@@ -3,7 +3,7 @@ title: "Delete printer"
 description: "Delete (unregister) a printer."
 author: "nilakhan"
 ms.localizationpriority: medium
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "protectByTemplateAction resource type"
 description: "Informs the application that a protection template in Microsoft Purview Information Protection should be applied."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

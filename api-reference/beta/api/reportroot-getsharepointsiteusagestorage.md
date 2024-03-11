@@ -2,7 +2,7 @@
 title: "reportRoot: getSharePointSiteUsageStorage"
 description: "Get the trend of storage allocated and consumed during the reporting period."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---

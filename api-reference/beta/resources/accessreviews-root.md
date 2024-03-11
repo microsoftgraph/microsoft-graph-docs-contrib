@@ -3,7 +3,7 @@ title: "Microsoft Entra access reviews (deprecated)"
 description: "You can use Microsoft Entra access reviews to configure one-time or recurring access reviews for attestation of user's access rights. This documentation serves the legacy APIs."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List taskFolders"
 description: "Get all the Outlook task folders in the user's mailbox."
 ms.localizationpriority: medium
 author: "mashriv"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

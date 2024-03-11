@@ -3,7 +3,7 @@ title: "Update outlooktaskgroup"
 description: "Update the writable properties of an Outlook task group."
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
