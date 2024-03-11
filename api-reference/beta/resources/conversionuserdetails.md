@@ -33,6 +33,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.conversionUserDetails"
 }
 -->
+```json
 {
     "@odata.type": "#microsoft.graph.conversionUserDetails",
     "displayName": "String",
@@ -40,3 +41,4 @@ The following JSON representation shows the resource type.
     "convertedToInternalUserDateTime": "String (timestamp)",
     "mail": "String"
 }
+```
