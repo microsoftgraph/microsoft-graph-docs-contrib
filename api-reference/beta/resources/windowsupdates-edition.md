@@ -37,7 +37,7 @@ Represents an edition of a particular Windows product.
 
 |Relationships|Type|Description|
 |:---|:---|:---|
-|servicingPeriods| [microsoft.graph.windowsUpdates.servicingPeriod](../resources/windowsupdates.servicingperiod.md) collection| Each object holds information of a servicing period related to the product edition.|
+|servicingPeriods| [microsoft.graph.windowsUpdates.servicingPeriod](../resources/windowsupdates-servicingperiod.md) collection| Each object holds information of a servicing period related to the product edition.|
 
 ## JSON representation
 
