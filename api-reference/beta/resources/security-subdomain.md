@@ -3,7 +3,7 @@ title: "subdomain resource type"
 description: "Represents an internet domain that is part of a primary domain"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

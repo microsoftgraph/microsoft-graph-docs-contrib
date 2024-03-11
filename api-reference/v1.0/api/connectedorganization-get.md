@@ -3,7 +3,7 @@ title: "Get connectedOrganization"
 description: "Retrieve the properties and relationships of a connectedorganization object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Get connectedOrganization

@@ -4,7 +4,7 @@ description: "Represents the current status of dynamic group processing."
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "team: getShifts"
 description: "Get all shift objects across all teams to which a user is a direct member."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

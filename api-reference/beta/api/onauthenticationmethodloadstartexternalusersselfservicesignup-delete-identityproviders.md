@@ -3,7 +3,7 @@ title: "Remove identityProvider (from a user flow)"
 description: "Remove an identity provider from an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

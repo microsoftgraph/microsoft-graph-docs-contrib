@@ -3,7 +3,7 @@ title: "Get event"
 description: "Get an event object."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

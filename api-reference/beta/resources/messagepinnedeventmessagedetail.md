@@ -3,7 +3,7 @@ title: "messagePinnedEventMessageDetail resource type"
 description: "Represents the details of an event message about a pinned chat message."
 author: "sumanac"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

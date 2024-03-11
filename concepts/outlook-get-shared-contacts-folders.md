@@ -3,7 +3,7 @@ title: "Get Outlook contacts in a shared folder"
 description: "In Outlook, customers can share contact folders and provide access to folders. Outlook also lets a customer delegate another user to act on the customer's behalf."
 author: "angelgolfer-ms"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Get Outlook contacts in a shared folder

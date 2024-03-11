@@ -3,7 +3,7 @@ title: "searchQuery resource type"
 description: "searchQuery"
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 

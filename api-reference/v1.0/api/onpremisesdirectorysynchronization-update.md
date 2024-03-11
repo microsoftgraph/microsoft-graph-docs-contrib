@@ -3,7 +3,7 @@ title: "Update onPremisesDirectorySynchronization"
 description: "Update the properties of an onPremisesDirectorySynchronization object."
 author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get hostComponent"
 description: "Read the properties and relationships of a hostComponent object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get hostReputation"
 description: "Get the properties and relationships of a hostReputation."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

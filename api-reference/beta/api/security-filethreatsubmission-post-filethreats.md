@@ -3,7 +3,7 @@ title: "Create fileThreatSubmission"
 description: "Create a new fileThreatSubmission object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

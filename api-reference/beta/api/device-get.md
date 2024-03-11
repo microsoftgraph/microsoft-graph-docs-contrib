@@ -3,7 +3,7 @@ title: "Get device"
 description: "Get the properties and relationships of a device object."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

@@ -2,7 +2,7 @@
 title: "Skype for Business activity reports"
 description: "You can use the Skype for Business activity reports to get details on activity across your organization. These details can help you investigate, plan, and make other business decisions for your organization."
 ms.localizationpriority: high
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
 ---

@@ -3,7 +3,7 @@ title: "Update accessPackageAssignmentWorkflowExtension"
 description: "Update the properties of an accessPackageAssignmentWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

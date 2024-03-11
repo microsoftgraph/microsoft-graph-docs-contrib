@@ -3,7 +3,7 @@ title: "List alertRules"
 description: "Get a list of the alertRule objects and their properties."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

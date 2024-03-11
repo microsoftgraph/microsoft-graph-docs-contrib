@@ -3,7 +3,7 @@ title: "educationSubmission: setUpResourcesFolder"
 description: "Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission."
 ms.localizationpriority: medium
 author: "sharmas"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
