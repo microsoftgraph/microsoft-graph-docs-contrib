@@ -4,7 +4,7 @@ description: "Get the list of channels either in this team or shared with this t
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # List allChannels

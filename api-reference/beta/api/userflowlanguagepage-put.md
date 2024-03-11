@@ -3,7 +3,7 @@ title: "Update userFlowLanguagePage"
 description: "Update the values in an userFlowLanguagePage object."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

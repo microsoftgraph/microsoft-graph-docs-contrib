@@ -2,7 +2,7 @@
 title: "office365ActiveUserDetail resource type"
 description: "Here's a JSON representation of the resource."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
 ---

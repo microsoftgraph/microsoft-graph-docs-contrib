@@ -3,7 +3,7 @@ title: "Permanently delete item (directory object)"
 description: "Permanently delete a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-directory-deleteditem-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-directory-deleteditem-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

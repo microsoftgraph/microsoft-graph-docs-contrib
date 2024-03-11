@@ -4,7 +4,7 @@ description: "Retrieve the properties of a specific directory setting object."
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -31,6 +31,8 @@ The following tables show the least privileged permission or permissions require
 
 <!-- { "blockType": "permissions", "name": "directorysetting_get_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-get-2-permissions.md)]
+
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
 
 
 ## HTTP request

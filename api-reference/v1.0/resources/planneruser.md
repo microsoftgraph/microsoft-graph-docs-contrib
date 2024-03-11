@@ -3,7 +3,7 @@ title: "plannerUser resource type"
 description: "Provides access to Planner resources for a user."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

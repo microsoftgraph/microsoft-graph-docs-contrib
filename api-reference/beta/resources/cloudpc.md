@@ -3,7 +3,7 @@ title: "cloudPC resource type"
 description: "Cloud managed virtual desktops."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "List approvalSteps"
 description: "List approval steps associated with an approval object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

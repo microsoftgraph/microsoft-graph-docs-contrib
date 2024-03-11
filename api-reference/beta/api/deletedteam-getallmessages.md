@@ -3,7 +3,7 @@ title: "deletedTeam: getAllMessages"
 description: "Retrieve all messages across all channels in a deleted team."
 author: agnesliu
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

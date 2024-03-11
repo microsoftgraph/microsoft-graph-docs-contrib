@@ -3,7 +3,7 @@ title: "cloudPC: start"
 description: "Start a specific Cloud PC for a user."
 author: "rbayetov"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

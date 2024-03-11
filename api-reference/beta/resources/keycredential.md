@@ -3,7 +3,7 @@ title: "keyCredential resource type"
 description: "Contains a key credential associated with an application or a service principal. The keyCredentials property of the application and servicePrincipal entities is a collection of keyCredential."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "madansr7"
 ---
 

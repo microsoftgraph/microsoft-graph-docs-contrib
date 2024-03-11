@@ -3,7 +3,7 @@ title: "federatedIdentityCredential resource type"
 description: "References an application's federated identity credentials. These federated identity credentials are used in workload identity federation when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD."
 author: "nickludwig"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

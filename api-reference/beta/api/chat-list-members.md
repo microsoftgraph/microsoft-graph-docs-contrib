@@ -3,7 +3,7 @@ title: "List members of a chat"
 description: "Retrieve members of a chat."
 author: "anandjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -26,13 +26,10 @@ This method supports federation. For one-on-one chats, at least one chat member 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| ChatMember.Read.Chat, Chat.Manage.Chat, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "chat_list_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-list-members-permissions.md)]
 
 > **Note**: The ChatMember.Read.Chat and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 

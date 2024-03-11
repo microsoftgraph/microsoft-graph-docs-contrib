@@ -3,7 +3,7 @@ title: "Get lifecycleManagementSettings"
 description: "Read the properties and relationships of a lifecycleManagementSettings object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

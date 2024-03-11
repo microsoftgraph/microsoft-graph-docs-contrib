@@ -3,7 +3,7 @@ title: Dismiss riskyUser
 description: Dismiss the risk of a riskyUser object.
 author: tracyshi
 ms.localizationpriority: medium
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 doc_type: apiPageType
 ---
 

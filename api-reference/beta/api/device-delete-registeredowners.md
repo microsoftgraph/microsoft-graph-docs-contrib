@@ -3,7 +3,7 @@ title: "Delete registeredowners"
 description: "Remove a user as a registered owner of the device."
 ms.localizationpriority: medium
 author: "michaelrm97"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

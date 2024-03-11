@@ -3,7 +3,7 @@ title: "Add tab to chat"
 description: "Adds (pins) a tab to the specified chat. "
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -21,13 +21,10 @@ The corresponding app must already be [installed in the chat](../api/chat-list-i
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWriteSelfForChat, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-| Application                            | TeamsTab.Create.Chat, TeamsTab.ReadWrite.Chat, TeamsTab.Create, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "chat_post_tabs" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-post-tabs-permissions.md)]
 
 > **Note:** The TeamsTab.Create.Chat and TeamsTab.ReadWrite.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 

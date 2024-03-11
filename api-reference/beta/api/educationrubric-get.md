@@ -3,7 +3,7 @@ title: "Get educationRubric"
 description: "Retrieve the properties and relationships of an educationrubric object."
 ms.localizationpriority: medium
 author: "Sureshpadimi88"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 

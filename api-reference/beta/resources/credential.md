@@ -3,7 +3,7 @@ title: "credential resource type"
 description: "Indicates a single credential used for sign-in to an application."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

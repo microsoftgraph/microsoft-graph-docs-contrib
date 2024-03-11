@@ -3,7 +3,7 @@ title: "protectByEncryptOnlyAction resource type"
 description: "Informs the application that an Azure Information Protection encrypt-only protection should be applied."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
