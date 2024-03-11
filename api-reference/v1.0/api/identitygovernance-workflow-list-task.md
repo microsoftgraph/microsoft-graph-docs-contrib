@@ -3,7 +3,7 @@ title: "List tasks"
 description: "Retrieve the details of the built-in tasks in Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

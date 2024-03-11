@@ -3,7 +3,7 @@ title: "Update application"
 description: "Update the properties of an application object."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

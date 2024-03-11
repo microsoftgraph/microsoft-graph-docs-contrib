@@ -4,7 +4,7 @@ description: "List all externalUserProfile objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 ---
 
 # List externalUserProfiles

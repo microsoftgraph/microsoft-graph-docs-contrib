@@ -4,7 +4,7 @@ description: "Before adding items into a connection, you must register the schem
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 <!---<author of this doc: rsamai>--->
 

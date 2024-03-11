@@ -3,7 +3,7 @@ title: "Update educationUser"
 description: "Update the properties of an educationUser object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

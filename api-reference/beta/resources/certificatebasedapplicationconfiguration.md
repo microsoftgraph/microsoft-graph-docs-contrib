@@ -3,7 +3,7 @@ title: "certificateBasedApplicationConfiguration resource type"
 description: "Represents a configuration of trusted certificate authorities for certificates that can be assigned to apps and service principals in the tenant."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

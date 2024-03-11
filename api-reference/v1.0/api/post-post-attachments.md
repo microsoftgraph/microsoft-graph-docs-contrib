@@ -3,7 +3,7 @@ title: "Add attachment"
 description: "Add an attachment when creating a group post."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create ContactFolder"
 description: "Create a new contactFolder as a child of a specified folder. "
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

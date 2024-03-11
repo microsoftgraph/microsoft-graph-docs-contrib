@@ -3,7 +3,7 @@ title: "Multitenant organization API overview"
 description: "Multitenant organizations allow you to define an organization with more than one instance of Microsoft Entra ID."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: conceptualPageType
 ms.date: 07/30/2023
 ---

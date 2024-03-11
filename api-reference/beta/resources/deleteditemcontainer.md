@@ -3,7 +3,7 @@ title: "deletedItemContainer resource type"
 description: "A container for deleted lifecycle workflow objects during the period before they're permanently deleted."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

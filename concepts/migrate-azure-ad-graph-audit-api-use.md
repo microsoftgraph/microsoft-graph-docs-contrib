@@ -4,9 +4,9 @@ description: "Describes how to audit Azure Active Directory (Azure AD) Graph API
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
-ms.topic: conceptual
+ms.topic: concept-article
 ms.localizationpriority: medium
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 02/14/2024
 #Customer intent: As a developer, I want to learn what to investigate in my app code and logic, so that I can migrate my app from Azure AD Graph to Microsoft Graph.
 ---

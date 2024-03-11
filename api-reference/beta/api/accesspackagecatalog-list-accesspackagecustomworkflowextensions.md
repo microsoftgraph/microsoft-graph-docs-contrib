@@ -3,7 +3,7 @@ title: "List accessPackagecustomWorkflowExtensions"
 description: "Get a list of the accessPackageCustomWorkflowExtension objects and their properties."
 author: "vikama-Microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

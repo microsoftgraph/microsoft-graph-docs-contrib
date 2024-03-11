@@ -3,7 +3,7 @@ title: "Get history item of riskyUser"
 description: "Get a history item of a riskyUser object."
 ms.localizationpriority: medium
 author: "tracyshi"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

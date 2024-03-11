@@ -3,7 +3,7 @@ title: "Get subCategoryTemplate"
 description: "Read the properties and relationships of a subCategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

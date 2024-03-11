@@ -3,7 +3,7 @@ title: "List history"
 description: "Get the riskyUserHistoryItems from the history navigation property."
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

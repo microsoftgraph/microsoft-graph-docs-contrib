@@ -3,7 +3,7 @@ title: "List connections"
 description: "Retrieve a list of externalConnections."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "List deviceLocalCredentialInfo"
 description: "Get a list of deviceLocalCredentialInfo and their properties excluding the credentials."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -61,13 +61,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve a list of device local credentials in the tenant
-
-#### Request
+### Request
 The following example shows a request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "devicelocalcredentialinfo_list"
 }
 -->
 ``` http
@@ -77,7 +76,7 @@ ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
 
-#### Response
+### Response
 The following example shows the response.
 
 <!-- {

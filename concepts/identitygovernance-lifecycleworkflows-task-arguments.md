@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: alexander.filipin
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 11/23/2022
 #Customer intent: As a developer automating user lifecycle processes, I want to learn how to use Microsoft Graph to configure the arguments property of built-in tasks in Lifecycle Workflows, so that I can automate basic lifecycle processes for my users.
