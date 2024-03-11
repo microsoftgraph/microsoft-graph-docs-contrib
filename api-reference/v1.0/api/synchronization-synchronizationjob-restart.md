@@ -4,7 +4,7 @@ description: "Restart the synchronization job, forcing it to reprocess all the o
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Restart synchronizationJob

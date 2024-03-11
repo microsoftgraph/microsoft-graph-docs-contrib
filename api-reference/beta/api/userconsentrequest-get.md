@@ -3,7 +3,7 @@ title: "Get userConsentRequest"
 description: "Read the properties and relationships of a userConsentRequest object."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

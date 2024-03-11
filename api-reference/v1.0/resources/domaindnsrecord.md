@@ -3,7 +3,7 @@ title: "domainDnsRecord resource type"
 description: "The domainDnsRecord entity is used to present DNS records."
 ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

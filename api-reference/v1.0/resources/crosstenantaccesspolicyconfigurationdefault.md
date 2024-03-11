@@ -3,7 +3,7 @@ title: "crossTenantAccessPolicyConfigurationDefault resource type"
 description: "The default configuration defined for inbound and outbound settings of Microsoft Entra B2B collaboration and B2B direct connect."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

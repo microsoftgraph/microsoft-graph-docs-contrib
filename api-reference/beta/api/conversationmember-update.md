@@ -4,7 +4,7 @@ description: "Update the role of a conversationMember in a team or channel."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Update conversationMember

@@ -2,7 +2,7 @@
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event, message, or post.  "
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "SuryaLashmiS"
 doc_type: resourcePageType
 ---

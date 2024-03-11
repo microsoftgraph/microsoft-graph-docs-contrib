@@ -3,7 +3,7 @@ title: "aadUserConversationMember resource type"
 description: "Represents Microsoft Entra user in a chat or channel."
 ms.localizationpriority: high
 author: "akjo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

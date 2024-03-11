@@ -3,7 +3,7 @@ title: "policy API overview"
 description: "Microsoft Entra ID uses policies to control Microsoft Entra feature behaviors in your organization."
 ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 09/02/2022
 ---

@@ -3,7 +3,7 @@ title: "List auditLogQueries"
 description: "Get a list of the auditLogQuery objects and their properties."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/beta/security/auditLog/queries
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.

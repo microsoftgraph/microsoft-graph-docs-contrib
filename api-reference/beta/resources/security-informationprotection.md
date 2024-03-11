@@ -3,7 +3,7 @@ title: "informationProtection resource type"
 description: "Exposes methods that you can use to get Microsoft Purview Information Protection labels and label policies."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

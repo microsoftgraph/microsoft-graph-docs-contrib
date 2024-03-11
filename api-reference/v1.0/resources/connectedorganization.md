@@ -3,7 +3,7 @@ title: "connectedOrganization resource type"
 description: "In Microsoft Entra entitlement management, a connected organization is a reference to a directory or domain of another organization whose users can request access."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # connectedOrganization resource type

@@ -1,0 +1,38 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudClipboardItemPayload",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudClipboardItemPayload](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItemPayload?view=graph-rest-beta) resource.",
+          "Target": "cloudClipboardItemPayload"
+        },
+        {
+          "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudClipboardItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudClipboardItem](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardItem?view=graph-rest-beta) resource and its methods.",
+          "Target": "cloudClipboardItem"
+        },
+        {
+          "Id": "03aa6149-f3e9-4c20-9212-9731fe17debd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudClipboardRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudClipboardRoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudClipboardRoot?view=graph-rest-beta) resource and its method.",
+          "Target": "cloudClipboardRoot"
+        }
+      ],
+      "Id": "1b951a1b-f559-4987-a9e7-3c7b7fb91a0c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-05T21:05:42.4895813Z",
+      "WorkloadArea": "Cross-device experiences",
+      "SubArea": ""
+    }
+  ]
+}

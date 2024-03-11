@@ -3,7 +3,7 @@ title: "Get organizationalBranding"
 description: "Read the properties and relationships of an organizationalBranding object."
 author: "quievey"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "message: copy"
 description: "Copy a message to a folder."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

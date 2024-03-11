@@ -3,7 +3,7 @@ title: "Create organizationalBrandingLocalization"
 description: "Create a new organizationalBrandingLocalization object."
 author: "quievey"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
