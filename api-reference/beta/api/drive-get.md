@@ -28,9 +28,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-### Get current user's OneDrive
+### Get the current OneDrive of a user
 
-The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.
+The signed-in user's drive (when using delegated authentication) can be accessed from the `me` singleton.
 
 If a user has a license for OneDrive but their OneDrive isn't set up yet, this request automatically provisions the user's drive, when using delegated authentication.
 
@@ -40,12 +40,11 @@ If a user has a license for OneDrive but their OneDrive isn't set up yet, this r
 GET /me/drive
 ```
 
-
-### Get a user's OneDrive
+### Get the OneDrive of a user
 
 To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.
 
-If a user's OneDrive isn't provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
+If a user has a license for OneDrive but their OneDrive isn't set up yet, this request automatically provisions the user's drive, when using delegated authentication.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -115,7 +114,7 @@ Each of these methods returns a [Drive resource][drive-resource] for the matchin
 
 ### Error response codes
 
-If the drive doesn't exist and can't be provisioned automatically, (when using delegated authentication) an `HTTP 404` response is returned.
+If the drive doesn't exist and can't be provisioned automatically (when using delegated authentication) an `HTTP 404` response is returned.
 
 ## Examples
 

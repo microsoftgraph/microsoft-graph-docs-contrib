@@ -1,6 +1,6 @@
 ---
 author: chackman
-description: "List the items that the signed-in user has followed."
+description: "List the items that the signed-in user followed."
 title: List followed items
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the [items](../resources/driveitem.md) that the signed-in user has followed.
+List the [items](../resources/driveitem.md) that the signed-in user followed.
 This collection includes items that are in the user's drive and items they have access to from other drives.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]

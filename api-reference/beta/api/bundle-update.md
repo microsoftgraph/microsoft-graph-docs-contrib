@@ -1,7 +1,7 @@
 ---
 author: spgraph-docs-team
-title: Update a bundle
-description: Update a bundle of driveItems
+title: Update bundle
+description: Update a bundle of driveItems.
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType

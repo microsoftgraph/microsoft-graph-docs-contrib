@@ -34,7 +34,7 @@ GET /me/drive/recent
 
 ## Response
 
-This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive has recently accessed.
+This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive recently accessed.
 
 ## Examples
 
@@ -135,8 +135,8 @@ Content-Type: application/json
 
 ## Remarks
 
-Some driveItems returned from the **recent** action include the **remoteItem** facet that indicates the items are from another drive. 
-To access the original driveItem object, you need to make a request using the information provided in **remoteItem** in the following format:
+Some driveItems returned from the **recent** action includes the **remoteItem** facet that indicates the items are from another drive.
+To access the original driveItem object, you need to make a request, using the information provided in **remoteItem** in the following format:
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
