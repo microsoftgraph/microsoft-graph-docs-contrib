@@ -1,6 +1,6 @@
 ---
 title: "organization resource type"
-description: "Represents a Microsoft Entra tenant. "
+description: "Represents the Microsoft Entra tenant from which authenticated requests are made."
 ms.localizationpriority: medium
 author: "suawat"
 ms.reviewer: "alvarorahul, iamut"
