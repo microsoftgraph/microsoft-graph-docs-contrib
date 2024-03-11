@@ -3,7 +3,7 @@ title: "accessReviewInstance resource type"
 description: "Represents a recurrence of an `accessReviewScheduleDefinition`."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

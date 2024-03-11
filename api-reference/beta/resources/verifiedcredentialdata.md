@@ -3,7 +3,7 @@ title: "verifiedCredentialData resource type"
 description: "Represents the metadata of the verifiable credential including the issuing authority, presented credentials, and the verified claims."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

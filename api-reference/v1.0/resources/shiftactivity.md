@@ -3,7 +3,7 @@ title: "shiftActivity resource type"
 description: "Represents an activity in a shift."
 author: "aaku"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType_
 ---
 

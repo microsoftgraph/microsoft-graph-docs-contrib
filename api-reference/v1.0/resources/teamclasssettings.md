@@ -3,7 +3,7 @@ title: "teamClassSettings resource type"
 description: "Represents settings specific to teams of type Class."
 ms.localizationpriority: medium
 author: "akjo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

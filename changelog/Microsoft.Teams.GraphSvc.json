@@ -1755,6 +1755,24 @@
       "CreatedDateTime": "2024-01-10T04:07:57.4956807Z",
       "WorkloadArea": "Teamwork and Communications",
       "SubArea": "Apps"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "teamworkTagType",
+          "ChangeType": "Addition",
+          "Description": "Added the `scheduled` value to the **teamworkTagType** enumeration.",
+          "Target": "teamworkTagType"
+        }
+      ],
+      "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-07T16:40:15.0058997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

@@ -4,7 +4,7 @@ description: "Represents a policy violation on a chat message. Data loss prevent
 author: "RamjotSingh"
 doc_type: resourcePageType
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 # chatMessagePolicyViolation resource type
 
