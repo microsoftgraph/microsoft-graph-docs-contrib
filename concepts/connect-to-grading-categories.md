@@ -20,7 +20,7 @@ Grading categories are defined on the class's settings. Each assignment that sho
 
 Get the list of classes from your education tenant and locate the class where you want to set grading categories.
 
-- [List Classes](/graph/api/educationclass-list): List the classes, find the one you want, and copy the class's Id to use below.
+- [List Classes](/graph/api/educationclass-list): List the classes, find the one you want, and copy the class's ID to use below.
 
 ```http
 GET https://graph.microsoft.com/beta/education/classes
@@ -97,9 +97,7 @@ Content-type: application/json
 
 ## Add a grading category to an assignment
 
-Give an assignment a grading category. This will cause the assignment to contribute to the class average grade as part of that grading category.
-
-- [Add gradingCategory](/graph/api/educationassignment-post-gradingcategory): This is used to add the grading category to an assignment.
+The [Add gradingCategory](/graph/api/educationassignment-post-gradingcategory) API gives an assignment a grading category, causing it to contribute to the class average grade as part of that grading category.
 
 ```http
 PUT /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
