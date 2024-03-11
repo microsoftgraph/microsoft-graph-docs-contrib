@@ -25,7 +25,7 @@ Represents the description text for the known issue, used to maintain historical
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|body| [microsoft.graph.windowsUpdates.itemBody](../resources/windowsupdates.itembody.md)| Container for holding content and type. |
+|body| [microsoft.graph.windowsUpdates.itemBody](../resources/windowsupdates-itembody.md)| Container for holding content and type. |
 
 ## JSON representation
 
