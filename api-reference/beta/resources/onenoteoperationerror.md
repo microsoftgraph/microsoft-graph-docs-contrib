@@ -3,7 +3,7 @@ title: "onenoteOperationError resource type"
 description: "An error from a failed OneNote operation."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 
