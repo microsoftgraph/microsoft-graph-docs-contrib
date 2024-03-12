@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Allows the application to mute itself.
 
-This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+This is a server mute, meaning that the server drops all audio packets for this participant, even if the participant continues to stream audio.
 
-For more details about how to handle mute operations, see [muteParticipantOperation](../resources/muteparticipantoperation.md)
+For more information about how to handle mute operations, see [muteParticipantOperation](../resources/muteparticipantoperation.md).
 
 > **Note:** This method is only supported for group calls.
 
