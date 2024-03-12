@@ -28,6 +28,10 @@ Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconci
 
 ## March 2024: New in preview only
 
+### Device and app management | Device updates
+
+Added methods to the Windows Updates API for Windows products, including [retrieval of known issues by time range](/graph/api/resources/windowsupdates-product-getknownissuesbytimerange?view=graph-rest-beta&preserve-view=true), [finding product revisions by catalog ID](/graph/api/resources/windowsupdates-product-findbycatalogid?view=graph-rest-beta&preserve-view=true), and [by knowledge base number](/graph/api/resources/windowsupdates-product-findbykbnumber?view=graph-rest-beta&preserve-view=true).
+
 ### Identity and access | Identity and sign-in
 
 Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/federatedtokenvalidationpolicy?view=graph-rest-beta&preserve-view=true) and its associated methods to manage whether Microsoft Entra ID validates federation authentication tokens.
