@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/windows/updates/products({id})/GetKnownIssuesByTimeRange(daysInPast={daysInPast},includeAllActive={includeAllActive})
+GET /admin/windows/updates/products/{id}/GetKnownIssuesByTimeRange(daysInPast={daysInPast},includeAllActive={includeAllActive})
 ```
 
 ## Query parameters
@@ -66,11 +66,12 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "windowsupdates.GetKnownIssuesByTimeRange"
+  "name": "windowsupdates.GetKnownIssuesByTimeRange",
+  "sampleKeys": ["1"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/products('1')/GetKnownIssuesByTimeRange(daysInPast=70,includeAllActive=false)
+GET https://graph.microsoft.com/beta/admin/windows/updates/products/1/GetKnownIssuesByTimeRange(daysInPast=70,includeAllActive=false)
 ```
 
 ### Response
