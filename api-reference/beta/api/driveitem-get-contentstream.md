@@ -69,15 +69,16 @@ The following example shows how to download a file.
 
 #### Request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "request", "name": "download-item-content-stream", "scopes": "files.read" } -->
 
 ```http
-HTTP/1.1 302 Found
-Content-Type: text/plain
-Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+GET https://graph.microsoft.com/beta/me/drive/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
 ```
 
-Follow the 302 redirection and the CSV file that downloads have the following schema.
+#### Response
+<!-- { "blockType": "ignored" } --> 
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -87,8 +88,8 @@ Follow the 302 redirection and the CSV file that downloads have the following sc
 
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/octet-stream
-Report Refresh Date,Report Date,Public Teams,Active Public Teams,Private Teams,Active Private Teams,
+Content-Type: text/plain
+The file content is streamed directly to client.
 ```
 
 <!-- {
