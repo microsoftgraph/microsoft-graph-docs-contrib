@@ -454,6 +454,8 @@ items:
                 href: api/group-get.md
               - name: Update group
                 href: api/group-update.md
+              - name: Upsert group
+                href: api/group-upsert.md
               - name: Delete group
                 href: api/group-delete.md
               - name: Renew group
@@ -732,6 +734,8 @@ items:
                 href: api/application-get.md
               - name: Update application
                 href: api/application-update.md
+              - name: Upsert application
+                href: api/application-upsert.md
               - name: Delete application
                 href: api/application-delete.md
               - name: Get delta
@@ -785,6 +789,8 @@ items:
                         href: api/federatedidentitycredential-get.md
                       - name: Update
                         href: api/federatedidentitycredential-update.md
+                      - name: Upsert
+                        href: api/federatedidentitycredential-upsert.md                        
                       - name: Delete
                         href: api/federatedidentitycredential-delete.md
               - name: Owners
@@ -915,6 +921,8 @@ items:
                 href: api/serviceprincipal-get.md
               - name: Update service principal
                 href: api/serviceprincipal-update.md
+              - name: Upsert service principal
+                href: api/serviceprincipal-upsert.md
               - name: Delete service principal
                 href: api/serviceprincipal-delete.md
               - name: List deleted service principals
