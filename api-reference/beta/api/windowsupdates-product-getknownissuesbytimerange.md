@@ -86,7 +86,6 @@ The following example shows the response.
 }
 -->
 ``` http
-
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.windowsUpdates.knownIssue)",
   "value": [
