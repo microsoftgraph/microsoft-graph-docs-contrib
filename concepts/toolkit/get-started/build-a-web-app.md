@@ -99,7 +99,7 @@ After you initialize the MSAL2 provider, you can start using any of the Toolkit 
 
 # [JavaScript](#tab/javascript)
 
-This example is using the ES6 modules, the MSAL2 Provider initialized in JavaScript, and the Login component:
+This example is using the ES6 modules, the MSAL2 Provider initialized in JavaScript, and the `Login` component:
 
 ```javascript
 import { Providers } from "@microsoft/mgt-element";

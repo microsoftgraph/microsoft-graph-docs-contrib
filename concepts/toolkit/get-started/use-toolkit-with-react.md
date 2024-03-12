@@ -81,7 +81,7 @@ You should be able to open your app in the browser via `http://localhost:3000`.
 
 ## Connect React app to Microsoft 365
 
-Now that your application is registered with Microsoft Entra ID, you can connect the React app to Microsoft 365. First, allow users to sign in to the app using their Microsoft account.
+Now that your application is registered with Microsoft Entra ID, you can connect the React app to Microsoft 365. First, allow users to sign-in to the app using their Microsoft account.
 
 <a name='copy-the-azure-ad-application-registration-id'></a>
 
@@ -143,9 +143,9 @@ root.render(
 reportWebVitals();
 ```
 
-### Add the Sign in button
+### Add the sign-in button
 
-Add the **Login** Microsoft Graph Toolkit React component to allow users to sign in with their Microsoft account to your app.
+Add the **Login** Microsoft Graph Toolkit React component to allow users to sign-in with their Microsoft account to your app.
 
 1. In the code editor, open the **src/App.tsx** file, and to the list of imports add:
 
@@ -186,12 +186,12 @@ export default App;
 
 ### Test signing in to your application
 
-You should now be able to sign in to your application with your Microsoft account.
+You should now be able to sign-in to your application with your Microsoft account.
 
-1. Go back to the browser where your React app is running. You should now see a **Sign in** button.
-1. When you select the **Sign in** button, you're prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure portal with).
+1. Go back to the browser where your React app is running. You should now see a **Sign In** button.
+1. When you select the **Sign In** button, you're prompted to sign-in with your Microsoft account (you can use the same account as the one you accessed the Azure portal with).
 1. The first time you're using this Microsoft Entra application, you need to consent its use in your organization.
-1. After signing in, you'll be redirected to your React app. Notice that the **Sign in** button changed to show your user's name
+1. After signing in, you'll be redirected to your React app. Notice that the **Sign In** button changed to show your user's name
    ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png)
 
 ## Load data from Microsoft 365
@@ -213,11 +213,11 @@ Before you can load data from Microsoft 365, you need to specify the list of per
 
 ### Show user's calendar data after signing in
 
-Next, extend the application to show data from the user's calendar. You can access this information only after the user is signed in. You need to track the user's sign in state and show the calendar data after the user is logged in with their Microsoft account.
+Next, extend the application to show data from the user's calendar. You can access this information only after the user is signed in. You need to track the user's sign-in state and show the calendar data after the user is logged in with their Microsoft account.
 
-#### Track user's sign in state
+#### Track user's sign-in state
 
-You need to track the user's signed in state so you use the `useIsSignedIn` hook provided by `mgt-react`.
+You need to track the user's signed in state in order to use the `useIsSignedIn` hook provided by `mgt-react`.
 
 1. Import the `useIsSignedIn` hook from `mgt-react`, by adding it to the `mgt-react` imports.
 
@@ -225,7 +225,7 @@ You need to track the user's signed in state so you use the `useIsSignedIn` hook
     import { Login, useIsSignedIn } from '@microsoft/mgt-react';
     ```
 
-1. Use the hook `useIsSignedIn` to enable tracking the user's sign in state in your application by adding it in the **App** function:
+1. Use the hook `useIsSignedIn` to enable tracking the user's sign-in state in your application by adding it in the **App** function:
 
     ```TypeScript
       const [ isSignedIn ] = useIsSignedIn();
@@ -235,7 +235,7 @@ This code defines a Boolean `isSignedIn` constant, which you can use to determin
 
 #### Load user's calendar if user is signed in
 
-Now that you track the user's sign in state in your application, you can show their calendar after they signed in.
+Now that you track the user's sign-in state in your application, you can show their calendar after they signed in.
 
 1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the `<Agenda />` component.
 
@@ -243,7 +243,7 @@ Now that you track the user's sign in state in your application, you can show th
     import { useIsSignedIn, Agenda, Login } from '@microsoft/mgt-react';
     ```
 
-1. Extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit `<Agenda />` component that will only render is the user is signed in.
+1. Extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit `<Agenda />` component that only renders if the user is signed in.
 
     ```TypeScript
     <div className="row">
@@ -421,14 +421,14 @@ With these changes, after signing in to your application with your Microsoft acc
 ::: zone pivot="mgt-react"
 
 1. To see the changes, refresh your browser at `http://localhost:3000`.
-1. Choose the **Sign In** button and sign in using your Microsoft account.
+1. Choose the **Sign In** button and sign-in using your Microsoft account.
 1. After consenting to the use of the application, you should see information about the current user and their calendar.
 ![Finished app](../images/mgt-finished-app.png)
 ::: zone-end
 ::: zone pivot="mgt-react-chat"
 
 1. To see the changes, refresh your browser at `http://localhost:3000`.
-1. Choose the **Sign In** button and sign in using your Microsoft account.
+1. Choose the **Sign In** button and sign-in using your Microsoft account.
 1. After consenting to the use of the application, you should see information about the current user. You also see their calendar and the ability to create a new chat and start interacting with this user.
 ![Finished app](../images/mgt-finished-app-v4.png)
 ::: zone-end
