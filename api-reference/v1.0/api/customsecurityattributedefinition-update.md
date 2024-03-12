@@ -3,7 +3,7 @@ title: "Update customSecurityAttributeDefinition"
 description: "Update the properties of a customSecurityAttributeDefinition object."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

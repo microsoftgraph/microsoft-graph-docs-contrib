@@ -236,7 +236,7 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 | assignedPlans/any(a:a/capabilityStatus)                             | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
 | assignedPlans/any(a:a/service)                                      | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![NotSupported][NS] |
 | assignedPlans/any(a:a/servicePlanId)                                | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
-| authorizationInfo/certificateUserIds/any(p:p)                       | ![Advanced][AQP]    |                     |                  |                     |
+| certificateUserIds/any(p:p)                                         | ![Advanced][AQP]    |                     |                  |                     |
 | businessPhones/any(p:p)                                             | ![Advanced][AQP]    | ![Advanced][AQP]    |                  |                     |
 | city                                                                | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
 | cloudRealtimeCommunicationInfo/isSipEnabled                         | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |

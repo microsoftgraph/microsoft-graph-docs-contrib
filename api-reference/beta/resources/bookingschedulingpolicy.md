@@ -19,6 +19,8 @@ Represents the set of policies that determine how appointments should be created
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowStaffSelection|Boolean|True if to allow customers to choose a specific person for the booking.|
+|customAvailabilities|[bookingsAvailabilityWindow](../resources/bookingsavailabilitywindow.md) collection|Custom availability of the service in a given time frame of the service.|
+|generalAvailability|[bookingsAvailability](../resources/bookingsavailability.md)|General availability of the service defined by the scheduling policy.|
 |isMeetingInviteToCustomersEnabled|Boolean|Indicates if the meeting invite is sent to the customers. The default value is `false` |
 |maximumAdvance|Duration|Maximum number of days in advance that a booking can be made. It follows the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 |minimumLeadTime|Duration|The minimum amount of time before which bookings and cancellations must be made. It follows the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
@@ -43,7 +45,16 @@ The following is a JSON representation of the resource.
   "maximumAdvance": "String (timestamp)",
   "minimumLeadTime": "String (timestamp)",
   "sendConfirmationsToOwner": true,
-  "timeSlotInterval": "String (timestamp)"
+  "timeSlotInterval": "String (timestamp)",
+  "isMeetingInviteToCustomersEnabled": "Boolean",
+  "generalAvailability": {
+    "@odata.type": "microsoft.graph.bookingsAvailability"
+  },
+  "customAvailabilities": [
+    {
+      "@odata.type": "microsoft.graph.bookingsAvailabilityWindow"
+    }
+  ]
 }
 
 ```

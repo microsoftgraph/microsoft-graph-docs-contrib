@@ -3,7 +3,7 @@ title: "principalResourceMembershipsScope resource type"
 description: "Allows for the selection of access review scope to review access of the selected principals to the selected resources."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

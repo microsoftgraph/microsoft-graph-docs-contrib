@@ -3,7 +3,7 @@ title: "message: createReplyAll"
 description: "Create a draft to reply to the sender and all the recipients of the specified message, in either JSON or MIME format."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

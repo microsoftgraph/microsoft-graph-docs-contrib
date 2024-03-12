@@ -3,7 +3,7 @@ title: "List owners"
 description: "Retrieve a list of owners (directoryObject objects) for an application."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "cloudPcReports: getCloudPcRecommendationReports"
 description: "Get the device recommendation reports for Cloud PCs, such as the usage category report."
 author: "XiaolouT"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

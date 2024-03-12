@@ -3,7 +3,7 @@ title: "claimsMappingPolicy resource type"
 description: "Represents a policy that can control the lifetime of an access token issued by Microsoft Entra ID."
 ms.localizationpriority: medium
 author: "paulgarn"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

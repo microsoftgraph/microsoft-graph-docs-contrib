@@ -3,7 +3,7 @@ title: "accessReviewError resource type"
 description: "Represents an error that occurred within an access review instance lifecycle."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

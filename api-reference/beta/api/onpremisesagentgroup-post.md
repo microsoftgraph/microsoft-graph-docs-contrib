@@ -3,7 +3,7 @@ title: "Create onPremisesAgentGroup"
 description: "Create a new **onPremisesAgentGroup** object."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

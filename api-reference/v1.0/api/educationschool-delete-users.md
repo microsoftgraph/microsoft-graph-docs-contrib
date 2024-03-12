@@ -3,7 +3,7 @@ title: "Remove educationUser from an educationSchool"
 description: "Delete a user from a school."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

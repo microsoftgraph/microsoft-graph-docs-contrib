@@ -3,7 +3,7 @@ title: "Create acronym"
 description: "Create a new acronym object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 

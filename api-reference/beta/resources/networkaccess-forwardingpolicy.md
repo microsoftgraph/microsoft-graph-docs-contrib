@@ -3,7 +3,7 @@ title: "forwardingPolicy resource type"
 description: "A forwarding policy defines the specific traffic that is routed through the Global Secure Access services. It's then added to a forwarding profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

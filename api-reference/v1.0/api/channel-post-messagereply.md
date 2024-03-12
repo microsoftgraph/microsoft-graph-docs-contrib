@@ -3,7 +3,7 @@ title: "Reply to a message in a channel"
 description: "Reply to an existing message in a channel."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

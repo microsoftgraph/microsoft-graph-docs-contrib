@@ -3,7 +3,7 @@ title: "credentialUserRegistrationsSummary resource type"
 description: "Represents a summary of Microsoft Entra credential user registrations for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

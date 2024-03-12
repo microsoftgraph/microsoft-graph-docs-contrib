@@ -3,7 +3,7 @@ title: "educationExcelResource resource type"
 description: "A subclass of educationResource. This resource type represents an Excel document.  "
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

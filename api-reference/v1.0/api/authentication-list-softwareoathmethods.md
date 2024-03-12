@@ -4,7 +4,7 @@ description: "Retrieve a list of a user's softwareOathAuthenticationMethods obje
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

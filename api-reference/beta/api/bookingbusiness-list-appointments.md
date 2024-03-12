@@ -293,6 +293,7 @@ Content-type: application/json
             "invoiceAmount": 10.0,
             "invoiceId": "1001",
             "invoiceStatus": "open",
+            "isCustomerAllowedToManageBooking": true,
             "invoiceUrl": "theInvoiceUrl",
             "customerLocation": {
                 "displayName": "Customer",
