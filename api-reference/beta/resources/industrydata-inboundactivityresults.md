@@ -3,7 +3,7 @@ title: "inboundActivityResults resource type"
 description: "Represents results of a single run of an inbound flow."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
