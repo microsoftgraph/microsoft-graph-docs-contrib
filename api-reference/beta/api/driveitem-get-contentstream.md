@@ -72,7 +72,7 @@ The following example shows how to download a file.
 <!-- { "blockType": "request", "name": "download-item-content-stream", "scopes": "files.read" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
+GET https://graph.microsoft.com/beta/drives/b!fMInbiL5dkK51VbATG0ddrCg6AJpEj9Lm4uGj5HgEi4guyuYp4W5SbH4dPfXTbCF/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
 ```
 
 #### Response
