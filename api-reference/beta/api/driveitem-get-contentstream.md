@@ -76,10 +76,14 @@ GET https://graph.microsoft.com/beta/me/drive/items/014Y52UITTNSVUQI43PZBJMKLAY6
 ```
 
 #### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+} -->
 
 The following example shows the response.
 
-<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 200 OK

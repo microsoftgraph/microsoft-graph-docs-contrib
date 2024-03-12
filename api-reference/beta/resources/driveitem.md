@@ -85,7 +85,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only. Only on OneDrive Personal.
 | bundle               | [bundle][]         | Bundle metadata, if the item is a bundle. Read-only.
-| content (deprecated) | Stream             | The content stream, if the item represents a file. The **content** property is being deprecated. Use the **contentStream** property instead. 
+| content (deprecated) | Stream             | The content stream, if the item represents a file. The **content** property will have a potentially breaking change in behavior in the future. It will stream content directly instead of redirecting. To proactively opt in to the new behavior ahead of time, use the **contentStream** property instead.
 | contentStream        | Stream             | The content stream, if the item represents a file.
 | createdBy            | [identitySet][]    | Identity of the user, device, and application, which created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
