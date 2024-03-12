@@ -9,6 +9,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [convertExternalToInternalMemberUser](https://learn.microsoft.com/en-us/graph/api/user-convertExternalToInternalMemberUser?view=graph-rest-beta) action to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. Use this action to convert a user account from an external user to an internal user.",
           "Target": "user"
+        },
+        {
+          "Id": "e7467d63-0d13-4628-839d-3e13a8d9bdbf",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalUserConvertedOn",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalUserConvertedOn** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "e7467d63-0d13-4628-839d-3e13a8d9bdbf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conversionUserDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [conversionUserDetails](https://learn.microsoft.com/en-us/graph/api/resources/conversionuserdetails?view=graph-rest-beta) resource.",
+          "Target": "user"
         }
       ],
       "Id": "e7467d63-0d13-4628-839d-3e13a8d9bdbf",
