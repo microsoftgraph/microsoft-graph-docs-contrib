@@ -1058,6 +1058,16 @@ Namespace: microsoft.graph
 | sunny              |
 | unknownFutureValue |
 
+### windowsSettingType values 
+
+Possible types of Windows settings.
+
+| Member             |
+| :----------------- |
+| roaming            |
+| backup             |
+| unknownFutureValue |
+
 ### workforceIntegrationEncryptionProtocol values
 
 | Member

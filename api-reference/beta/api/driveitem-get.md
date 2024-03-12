@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
 title: Get driveItem
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 # Get driveItem
