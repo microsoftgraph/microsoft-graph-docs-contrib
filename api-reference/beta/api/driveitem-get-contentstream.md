@@ -74,7 +74,7 @@ The following example shows a request.
 <!-- { "blockType": "request", "name": "download-item-content-stream", "scopes": "files.read" } -->
 
 ```http
-GET /me/drive/items/{item-id}/contentStream
+GET /me/drive/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
 ```
 
 #### Response
@@ -86,7 +86,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 
-File content stream directly to client
+"File content streamed directly to client"
 ```
 
 ### Example 2: Download a partial range of bytes
@@ -99,8 +99,8 @@ The following example shows a request.
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial-stream", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{drive-id}/items/{item-id}/contentStream
-Range: bytes=0-1023
+GET /drives/b!fMInbiL5dkK51VbATG0ddrCg6AJpEj9Lm4uGj5HgEi4guyuYp4W5SbH4dPfXTbCF/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
+Range:bytes=0-1023
 ```
 
 #### Response
@@ -112,7 +112,7 @@ The call returns a `206 Partial Content` HTTP response with the requested range 
 HTTP/1.1 206 Partial Content
 Content-Type: text/plain
 
-First 1024 bytes of file, file content stream directly to client
+"First 1024 bytes of file, file content stream directly to client"
 ```
 
 <!-- {
