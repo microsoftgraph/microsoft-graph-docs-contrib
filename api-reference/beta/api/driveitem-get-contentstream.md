@@ -87,8 +87,9 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/octet-stream
-Report Refresh Date,Report Date,Public Teams,Active Public Teams,Private Teams,Active Private Teams,
+Content-Type: text/plain
+
+<File Content>
 ```
 
 <!-- {
