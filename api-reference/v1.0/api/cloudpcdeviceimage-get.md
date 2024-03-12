@@ -55,7 +55,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/deviceImages/{id}
+GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/deviceImages/eda7ed64-7705-4079-9d08-c2bd883f4fff
 ```
 
 ### Response

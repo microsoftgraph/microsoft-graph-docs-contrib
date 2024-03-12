@@ -27,7 +27,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Added the ability to list and get [Windows settings](/graph/api/resources/windowssetting) and [Windows settings instances](/graph/api/resources/windowssettinginstance).
 
-
 ### Reports | Partner billing reports
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.

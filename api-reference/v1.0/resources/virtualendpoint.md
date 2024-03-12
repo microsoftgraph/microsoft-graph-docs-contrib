@@ -35,8 +35,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on Cloud PC.|
-|galleryImages|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|The gallery image resource on Cloud PC.|
+|deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|A collection of device image resources on Cloud PC.|
+|galleryImages|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|A collection of gallery image resources on Cloud PC.|
 
 ## JSON representation
 

@@ -51,7 +51,7 @@ The following example shows a request.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/deviceImages/{id}
+DELETE https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/deviceImages/435849e6-0263-4621-9f93-8657667af3bb
 ```
 
 ### Response
