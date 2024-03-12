@@ -92,6 +92,33 @@ Content-Type: text/plain
 <File Content>
 ```
 
+### Example 2: Download a partial range of bytes
+
+To download a partial range of bytes from the file, your app can use the `Range` header, as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).
+
+#### Request
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial-stream", "scopes": "files.read" } -->
+```http
+GET https://graph.microsoft.com/beta/drives/b!fMInbiL5dkK51VbATG0ddrCg6AJpEj9Lm4uGj5HgEi4guyuYp4W5SbH4dPfXTbCF/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
+Range: bytes=0-1023
+```
+#### Response
+
+The call returns a `206 Partial Content` HTTP response with the requested range of bytes from the file. If the range can't be generated, the `Range` header is ignored and a `200 OK` HTTP response is returned with the full contents of the file.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+} -->
+
+```http
+HTTP/1.1 206 Partial Content
+Content-Type: text/plain
+
+<First 1024 bytes of the file>
+```
+
 <!-- {
   "type": "#page.annotation",
   "description": "Download the contents of a driveItem.",
