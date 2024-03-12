@@ -69,8 +69,6 @@ The following example shows how to download a file.
 
 #### Request
 
-The following example shows a request.
-
 <!-- { "blockType": "request", "name": "download-item-content-stream", "scopes": "files.read" } -->
 
 ```http
@@ -86,7 +84,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 
-"File content streamed directly to client"
+File content streamed directly to client
 ```
 
 ### Example 2: Download a partial range of bytes
@@ -95,7 +93,6 @@ To download a partial range of bytes from the file, your app can use the `Range`
 
 
 #### Request
-The following example shows a request.
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial-stream", "scopes": "files.read" } -->
 
 ```http
@@ -112,7 +109,7 @@ The call returns a `206 Partial Content` HTTP response with the requested range 
 HTTP/1.1 206 Partial Content
 Content-Type: text/plain
 
-"First 1024 bytes of file, file content stream directly to client"
+First 1024 bytes of file, file content streamed directly to client
 ```
 
 <!-- {
