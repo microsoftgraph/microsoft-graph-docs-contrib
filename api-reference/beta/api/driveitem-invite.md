@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 description: "Sends a sharing invitation for a DriveItem."
 ms.date: 09/10/2017
-title: Send an invite to access an item
+title: Send a sharing invitation
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Sends a sharing invitation for a **DriveItem**.
+Sends a sharing invitation for a **driveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]

@@ -1,8 +1,8 @@
 ---
 author: spgraph-docs-team
-description: "Return a collection of DriveItems in the children relationship of a DriveItem."
+description: "Return a collection of driveItems in the children relationship of a driveItem."
 ms.date: 09/10/2017
-title: List the contents of a folder
+title: List children of a driveItem
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
@@ -13,10 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.
+Return a collection of [driveItems](../resources/driveitem.md) in the **children** relationship of a driveItem.
 
-DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.
-
+DriveItems with a non-null **folder** or **package** facet can have one or more child driveItems.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -41,7 +40,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## Optional query parameters
 
-This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ### Optional request headers
 
@@ -143,7 +142,7 @@ GET /drives/{drive-id}/items/root/children
 
 ---
 
-### List children of a DriveItem with a known path
+### List children of a driveItem with a known path
 
 <!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->
 
@@ -154,7 +153,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ## Response
 
 If successful, this method returns the list of items in the children collection of the target item.
-The children collection will be composed of [driveItem][item-resource] resources.
+The children collection is composed of [driveItem][item-resource] resources.
 
 <!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.driveItem)",
@@ -178,11 +177,11 @@ Content-type: application/json
 
 **Note:** If a collection exceeds the default page size (200 items), the **\@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
 
-You can control the page size through [optional query string parameters](/graph/query-parameters)
+You can control the page size through [optional query string parameters](/graph/query-parameters).
 
 ### Error responses
 
-See [Error Responses][error-response] for more info about
+See [Error responses][error-response] for more info about
 how errors are returned.
 
 [error-response]: /graph/errors
