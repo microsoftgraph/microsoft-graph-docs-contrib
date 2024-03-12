@@ -3,7 +3,7 @@ title: "List managementActionTenantDeploymentStatus"
 description: "Get a list of the managementActionTenantDeploymentStatus objects and their properties."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 

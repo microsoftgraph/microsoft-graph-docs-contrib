@@ -3,7 +3,7 @@ title: "Update adminConsentRequestPolicy"
 description: "Update the properties of an adminConsentRequestPolicy object."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

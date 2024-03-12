@@ -3,7 +3,7 @@ title: "userConsentRequest resource type"
 description: "Represents the details of the request that a user creates when they request the tenant admin for consent to access an app or to grant permissions to an app. The details include justification for requesting access, the status of the request, and the approval details."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

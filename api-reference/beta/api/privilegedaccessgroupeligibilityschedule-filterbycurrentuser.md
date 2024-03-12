@@ -3,7 +3,7 @@ title: "privilegedAccessGroupEligibilitySchedule: filterByCurrentUser"
 description: "Retrieve schedules of membership and ownership eligibility requests for the calling principal."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
