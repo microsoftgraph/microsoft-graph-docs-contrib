@@ -10292,15 +10292,12 @@ items:
               - name: Product
                 href: resources/windowsupdates-product.md
                 items:
+                  - name: Get known issues by time range
+                    href: api/windowsupdates-product-getknownissuesbytimerange.md 
                   - name: Find by catalog ID
                     href: resources/windowsupdates-product-findbycatalogid.md
                   - name: Find by knowledge base number
                     href: resources/windowsupdates-product-findbykbnumber.md
-                  - name: Known issue
-                    href: resources/windowsupdates-knownissue.md
-                    items:
-                      - name: Get known issues by time range
-                        href: api/windowsupdates-product-getknownissuesbytimerange.md 
               - name: Resource connection
                 href: resources/windowsupdates-resourceconnection.md
                 items:
