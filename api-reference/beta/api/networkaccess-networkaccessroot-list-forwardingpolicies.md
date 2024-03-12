@@ -3,7 +3,7 @@ title: "List forwardingPolicies"
 description: "Retrieve a list of forwarding policies associated with a specific traffic forwarding profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
