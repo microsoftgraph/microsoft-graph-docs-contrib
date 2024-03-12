@@ -185,7 +185,7 @@ Because the workflow isn't scheduled to run, it must be run manually. In the fol
   "name": "tutorial_lifecycle_workflows_joineronboarding_run_workflow"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/activate
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/activate
 
 {
     "subjects": [
@@ -250,7 +250,7 @@ The following request retrieves the summary of tasks run at the user level.
   "name": "tutorial_lifecycle_workflows_joineronboarding_list_userProcessingResults"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/userProcessingResults
+GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/userProcessingResults
 ```
 
 # [C#](#tab/csharp)
@@ -299,7 +299,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('ea71190c-075a-4ae7-9bca-34abf3b7b056')/userProcessingResults",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('ea71190c-075a-4ae7-9bca-34abf3b7b056')/userProcessingResults",
     "value": [
         {
             "id": "5772d894-3bcf-4d1c-9cfc-8c182331215b",
@@ -330,7 +330,7 @@ Content-Type: application/json
   "name": "tutorial_lifecycle_workflows_joineronboarding_list_userProcessingResults.summary"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/userProcessingResults/summary(startDateTime=2022-10-01T00:00:00Z,endDateTime=2022-10-30T00:00:00Z)
+GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/userProcessingResults/summary(startDateTime=2022-10-01T00:00:00Z,endDateTime=2022-10-30T00:00:00Z)
 ```
 
 # [C#](#tab/csharp)
@@ -379,7 +379,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.userSummary",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.identityGovernance.userSummary",
     "failedTasks": 0,
     "failedUsers": 0,
     "successfulUsers": 1,
@@ -388,7 +388,7 @@ Content-Type: application/json
 }
 ```
 
-#### Option 3: Retrieve the detailed log of all tasks that were executed for a specific user in the workflow
+### Option 3: Retrieve the detailed log of all tasks that were executed for a specific user in the workflow
 
 #### Request
 
@@ -401,7 +401,7 @@ You can also retrieve the detailed log of all tasks that were executed for a spe
   "name": "tutorial_lifecycle_workflows_joineronboarding_list_taskProcessingResults"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/userProcessingResults/5772d894-3bcf-4d1c-9cfc-8c182331215b/taskProcessingResults
+GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/userProcessingResults/5772d894-3bcf-4d1c-9cfc-8c182331215b/taskProcessingResults
 ```
 
 # [C#](#tab/csharp)
@@ -450,7 +450,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('ea71190c-075a-4ae7-9bca-34abf3b7b056')/userProcessingResults('5772d894-3bcf-4d1c-9cfc-8c182331215b')/taskProcessingResults",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('ea71190c-075a-4ae7-9bca-34abf3b7b056')/userProcessingResults('5772d894-3bcf-4d1c-9cfc-8c182331215b')/taskProcessingResults",
     "value": [
         {
             "completedDateTime": "2022-10-04T08:07:15.9906441Z",
@@ -500,7 +500,7 @@ The request returns a `204 No Content` response. When a workflow is scheduled, t
   "name": "tutorial_lifecycle_workflows_joineronboarding_update_workflow"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056
 Content-type: application/json
 
 {
