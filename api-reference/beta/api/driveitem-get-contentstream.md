@@ -96,7 +96,7 @@ To download a partial range of bytes from the file, your app can use the `Range`
 
 #### Request
 The following example shows a request.
-<!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial-stream", "scopes": "files.read" } -->
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/contentStream
@@ -106,7 +106,7 @@ Range: bytes=0-1023
 #### Response
 
 The call returns a `206 Partial Content` HTTP response with the requested range of bytes from the file. If the range can't be generated, the `Range` header is ignored and a `200 OK` HTTP response is returned with the full contents of the file.
-<!-- { "blockType": "response", "name": "download-item-partial", "@odata.type": "stream" } -->
+<!-- { "blockType": "response", "name": "download-item-partial-stream", "@odata.type": "stream" } -->
 
 ```http
 HTTP/1.1 206 Partial Content
@@ -117,7 +117,7 @@ Content-Type: text/plain
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Download the contents of a DriveItem.",
+  "description": "Download the contents of a driveItem.",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Items/Download",
