@@ -1268,6 +1268,34 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Delete a history item
                     href: api/projectrome-delete-historyitem.md
+          - name: Roaming data
+            items:
+              - name: Cloud clipboard
+                href: resources/cloudclipboardroot.md
+                items:
+                  - name: List
+                    href: api/cloudclipboardroot-list-items.md
+              - name: Cloud clipboard item
+                href: resources/cloudclipboarditem.md
+                items:
+                  - name: List
+                    href: api/cloudclipboardroot-list-items.md
+                  - name: Get
+                    href: api/cloudclipboarditem-get.md
+              - name: Windows settings
+                href: resources/windowssetting.md
+                items:
+                  - name: List
+                    href: api/usersettings-list-windows.md
+                  - name: Get
+                    href: api/windowssetting-get.md
+              - name: Windows setting instance                    
+                href: resources/windowssettinginstance.md
+                items:              
+                  - name: List
+                    href: api/windowssetting-list-instances.md
+                  - name: Get
+                    href: api/windowssettinginstance-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:
