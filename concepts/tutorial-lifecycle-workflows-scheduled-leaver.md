@@ -4,7 +4,7 @@ description: Learn how to automate employee offboarding tasks after their last d
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Alexander.Filipin
-doc_type: tutorial
+ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 ms.date: 03/12/2024
