@@ -3,7 +3,7 @@ title: "timeBasedAttributeTrigger resource type"
 description: "Trigger based on a time-based attribute for initiating the execution of a lifecycle workflow. The combination of scope and trigger conditions determine when a workflow is executed and on which identities."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

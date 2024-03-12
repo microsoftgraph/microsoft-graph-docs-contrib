@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a voiceAuthenticationMeth
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

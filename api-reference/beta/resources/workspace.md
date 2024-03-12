@@ -3,7 +3,7 @@ title: "workspace resource type"
 description: "Specifies the properties of a workspace in a tenant."
 ms.localizationpriority: medium
 author: "slister1001"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "resourcePageType"
 ---
 

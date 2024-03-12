@@ -3,7 +3,7 @@ title: "Get simulationAutomation"
 description: "Get an attack simulation automation for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

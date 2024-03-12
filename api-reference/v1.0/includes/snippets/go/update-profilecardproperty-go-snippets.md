@@ -24,7 +24,7 @@ profileCardAnnotation.SetDisplayName(&displayName)
 
 
 displayNameLocalization := graphmodels.NewDisplayNameLocalization()
-languageTag := "nb-NO"
+languageTag := "no"
 displayNameLocalization.SetLanguageTag(&languageTag) 
 displayName := "Kostnadssenter"
 displayNameLocalization.SetDisplayName(&displayName) 

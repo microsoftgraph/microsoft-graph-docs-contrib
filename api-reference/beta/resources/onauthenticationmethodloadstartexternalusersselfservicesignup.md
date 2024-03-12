@@ -3,7 +3,7 @@ title: "onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp resource t
 description: "Managed handler for loading the authentication methods during the authentication step in an external identities user flow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

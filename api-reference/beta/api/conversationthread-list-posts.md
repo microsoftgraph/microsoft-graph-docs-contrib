@@ -3,7 +3,7 @@ title: "List posts"
 description: "Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, "
 ms.localizationpriority: medium
 author: "mikemcleanlive"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

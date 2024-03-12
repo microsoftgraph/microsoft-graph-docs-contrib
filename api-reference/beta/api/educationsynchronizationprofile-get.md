@@ -3,7 +3,7 @@ title: "Get an educationSynchronizationProfile"
 description: "Retrieve a school data synchronization profile in the tenant based on the identifier."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

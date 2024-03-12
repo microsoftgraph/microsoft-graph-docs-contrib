@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an identityProvider o
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Get identityProvider (deprecated)

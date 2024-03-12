@@ -3,7 +3,7 @@ title: "List timesOff"
 description: "Get the list of timesOff in this schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

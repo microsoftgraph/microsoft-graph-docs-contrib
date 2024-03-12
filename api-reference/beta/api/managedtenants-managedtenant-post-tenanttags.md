@@ -3,7 +3,7 @@ title: "Create tenantTag"
 description: "Create a new tenantTag object."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 

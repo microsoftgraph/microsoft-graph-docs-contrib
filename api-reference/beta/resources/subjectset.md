@@ -3,7 +3,7 @@ title: "subjectSet resource type"
 description: "An abstract type that defines the subjects that are the scope of a lifecycle triggerAndScopeBasedConditions configuration."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

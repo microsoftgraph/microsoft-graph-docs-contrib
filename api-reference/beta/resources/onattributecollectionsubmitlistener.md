@@ -3,7 +3,7 @@ title: "onAttributeCollectionSubmitListener resource type"
 description: "A listener for the end of the user attribution collection stage of a sign up flow. This event is triggered when the user submits the attribute collection form."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update customAppScope"
 description: "Update an existing customAppScope object of an RBAC provider."
 ms.localizationpriority: medium
 author: "cubika"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
