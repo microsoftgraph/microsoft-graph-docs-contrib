@@ -4,7 +4,7 @@ description: "Represents a container for the range of Microsoft Teams functional
 author: "akjo"
 doc_type: resourcePageType
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # userTeamwork resource type

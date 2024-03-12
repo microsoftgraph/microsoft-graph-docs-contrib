@@ -2,7 +2,7 @@
 title: "reportRoot: getFormsUserActivityCounts"
 description: "Get a report that provides the trend of activity count by activity type, over a selected period."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "haoyli"
 doc_type: apiPageType
 ---

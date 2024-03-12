@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsTeamCounts"
 description: "Get the number of teams of a particular type in an instance of Microsoft Teams."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
 ---

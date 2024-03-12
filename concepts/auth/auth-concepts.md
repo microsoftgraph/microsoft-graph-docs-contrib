@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.custom: graphiamtop20
 ms.date: 12/21/2023
 #Customer intent: As a developer, I want to understand how to authenticate and authorize my app to call Microsoft Graph.

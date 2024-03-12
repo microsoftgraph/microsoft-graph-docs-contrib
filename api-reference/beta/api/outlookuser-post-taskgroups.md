@@ -3,7 +3,7 @@ title: "Create outlookTaskGroup"
 description: "Create an Outlook task group in the user's mailbox."
 ms.localizationpriority: medium
 author: "mashriv"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get appRoleAssignment"
 description: "Read the properties and relationships of an appRoleAssignment object."
 author: "psignoret"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

@@ -4,7 +4,7 @@ description: "Represents a key-value pair where the key is a string and the valu
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # stringKeyLongValuePair resource type

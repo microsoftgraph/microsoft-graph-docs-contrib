@@ -3,7 +3,7 @@ title: "List educationSchools"
 description: "Get a list of the educationSchool objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

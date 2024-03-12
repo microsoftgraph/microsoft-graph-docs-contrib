@@ -3,7 +3,7 @@ title: "Overview for using Microsoft Teams, Shifts, and Viva Learning to foster 
 description: "Microsoft Teams is the ultimate hub for team collaboration and intelligent communications, fostering a culture where employees can thrive. "
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 

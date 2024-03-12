@@ -69,7 +69,6 @@ Extension properties also support query parameters as follows:
 | Header       | Value|
 |:-----------|:------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type   | application/json |
 
 ## Request body
 Don't supply a request body for this method.

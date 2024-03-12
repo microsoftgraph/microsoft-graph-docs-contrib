@@ -3,7 +3,7 @@ title: "Delete baseTask"
 description: "Delete a baseTask object."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

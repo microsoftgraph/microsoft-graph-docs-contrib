@@ -3,7 +3,7 @@ title: "List history (risk history of riskyServicePrincipal)"
 description: "Get the risk history of a riskyServicePrincipal object."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

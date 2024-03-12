@@ -3,7 +3,7 @@ title: "workflow: activate"
 description: "Run a workflow object on demand."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

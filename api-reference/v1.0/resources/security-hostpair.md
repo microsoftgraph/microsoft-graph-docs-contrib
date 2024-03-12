@@ -3,7 +3,7 @@ title: "hostPair resource type"
 description: "Represents a pair of parent-child hosts in which the child host able to be reached via the parent host."
 author: "jakedavies-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

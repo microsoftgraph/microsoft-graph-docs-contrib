@@ -3,7 +3,7 @@ title: "fileValidateOperation resource type"
 description: "Represents the asynchronous operation that results from any operation that validates file data."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

@@ -2,7 +2,7 @@
 title: "office365GroupsActivityCounts resource type"
 description: "The following is a JSON representation of the resource."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
 ---

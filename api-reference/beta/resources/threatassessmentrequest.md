@@ -3,7 +3,7 @@ title: "threatAssessmentRequest resource type"
 description: "An abstract resource type used to represent a threat assessment request item."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
