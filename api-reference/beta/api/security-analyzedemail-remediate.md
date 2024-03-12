@@ -3,7 +3,7 @@ title: "analyzedEmail: remediate "
 description: "Remove a potential threat from end users' mailboxes."
 author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: security
+ms.subservice: security
 doc_type: apiPageType
 ---
 

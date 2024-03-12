@@ -3,7 +3,7 @@ title: "Delete educationGradingScheme"
 description: "Delete an educationGradingScheme object."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

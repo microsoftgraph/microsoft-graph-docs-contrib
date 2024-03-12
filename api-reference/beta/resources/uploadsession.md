@@ -4,7 +4,7 @@ description: "Represents information for an iterative process to upload large fi
 title: "uploadSession resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
-ms.prod: "non-product-specific"
+ms.subservice: "non-product-specific"
 ---
 # uploadSession resource type
 
