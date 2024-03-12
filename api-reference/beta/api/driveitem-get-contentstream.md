@@ -76,7 +76,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/014Y52UITTNSVUQI43PZBJMKLAY6
 ```
 
 #### Response
-<!-- { "blockType": "ignored" } --> 
 
 The following example shows the response.
 
@@ -89,7 +88,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
-The file content is streamed directly to client.
+Report Refresh Date,Report Date,Public Teams,Active Public Teams,Private Teams,Active Private Teams,
 ```
 
 <!-- {
