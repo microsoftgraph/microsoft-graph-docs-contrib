@@ -4,7 +4,7 @@ description: "Learn how to manage the lifecycle and settings for Microsoft Entra
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: sureshja
-ms.topic: conceptual
+ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: entra-applications
 doc_type: conceptualPageType
@@ -90,6 +90,8 @@ For more information, see [Microsoft Entra synchronization API overview](../reso
 
 ## Related content
 
+- [Quick reference guide: API operations for managing applications](/graph/tutorial-applications-basics)
 - [Application management in Microsoft Entra ID](/entra/identity/enterprise-apps/what-is-application-management)
 - [Tutorials for integrating applications with Microsoft Entra ID](/entra/identity/saas-apps/tutorial-list)
 - [What is the Microsoft identity platform](/entra/identity-platform/v2-overview)
+

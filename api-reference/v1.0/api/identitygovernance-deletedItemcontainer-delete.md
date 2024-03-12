@@ -3,7 +3,7 @@ title: "Delete deletedItemContainer (permanently delete a deleted lifecycle work
 description: "Permanently delete a deleted lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

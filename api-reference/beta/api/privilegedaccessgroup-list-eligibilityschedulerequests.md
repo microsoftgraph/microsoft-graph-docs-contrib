@@ -3,7 +3,7 @@ title: "List eligibilityScheduleRequests"
 description: "Get a list of the privilegedAccessGroupEligibilityScheduleRequest objects and their properties."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

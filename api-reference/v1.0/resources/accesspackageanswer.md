@@ -3,7 +3,7 @@ title: "accessPackageAnswer resource type"
 description:  "Represents answers to an accessPackageQuestion that are stored on an accessPackageAssignmentRequest."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

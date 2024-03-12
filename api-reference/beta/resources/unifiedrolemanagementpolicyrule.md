@@ -3,7 +3,7 @@ title: "unifiedRoleManagementPolicyRule resource type"
 description: "An abstract type that defines the rules associated with role management policies."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
