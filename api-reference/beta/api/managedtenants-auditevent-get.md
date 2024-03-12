@@ -3,7 +3,7 @@ title: "Get auditEvent"
 description: "Read the properties and relationships of an auditEvent object."
 author: "vkumar2015"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 
