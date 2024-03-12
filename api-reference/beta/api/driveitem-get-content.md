@@ -45,7 +45,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 ## Example
 
-Here's an example to download a complete file.
+The following example shows a request on how to download a complete file.
 
 ### Request
 
@@ -92,8 +92,10 @@ GET /me/drive/items/{item-id}/content
 
 ### Response
 
+The following example shows the response.
+
 Returns a `302 Found` response redirecting to a preauthenticated download URL for the file.
-It is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.
+It's the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.
 
 To download the contents of the file your application needs to follow the `Location` header in the response.
 Many HTTP client libraries follow the 302 redirection and start downloading the file immediately.
@@ -163,8 +165,7 @@ Content-Range: bytes 0-1023/2048
 
 ### Error responses
 
-See [Error Responses][error-response] for more info about
-how errors are returned.
+See [Error responses][error-response] for more info about how errors are returned.
 
 [error-response]: /graph/errors
 
@@ -179,5 +180,3 @@ how errors are returned.
   ]
 }
 -->
-
-

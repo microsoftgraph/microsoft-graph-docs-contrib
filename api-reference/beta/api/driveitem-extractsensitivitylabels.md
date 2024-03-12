@@ -63,7 +63,7 @@ The following are the possible values for the error types.
 | Value                       | Description                                                                                                         |
 |:----------------------------|:--------------------------------------------------------------------------------------------------------------------|
 | fileDoubleKeyEncrypted      |Indicates that the file is protected via double key encryption; hence it can't be opened for the extraction of the sensitivity labels.             |
-| fileDecryptionNotSupported  |This indicates that SharePoint cannot open the encrypted file to extract sensitivity labels due to specific properties of the file.    |
+| fileDecryptionNotSupported  |Indicates that SharePoint can't open the encrypted file to extract sensitivity labels due to specific properties of the file.    |
 | fileDecryptionDeferred      |Indicates that the file is being processed for decryption; hence it can't be opened for the extraction of the sensitivity labels.      |
 | unknownFutureValue          |Evolvable enumeration sentinel value. Don't use.                                                                   |
 
