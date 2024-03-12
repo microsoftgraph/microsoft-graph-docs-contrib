@@ -96,7 +96,7 @@ To download a partial range of bytes from the file, your app can use the `Range`
 
 ```http
 GET https://graph.microsoft.com/beta/drives/b!fMInbiL5dkK51VbATG0ddrCg6AJpEj9Lm4uGj5HgEi4guyuYp4W5SbH4dPfXTbCF/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
-Range:bytes=0-1023
+Range: bytes=0-1023
 ```
 
 #### Response
