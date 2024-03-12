@@ -26,6 +26,7 @@ Represents an entity that acts as a container for all Windows Update for Busines
 |catalog|[microsoft.graph.windowsUpdates.catalog](../resources/windowsupdates-catalog.md)|Catalog of content that can be approved for deployment by the deployment service. Read-only.|
 |deploymentAudiences|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md) collection|The set of [updatableAsset](../resources/windowsupdates-updatableasset.md) resources to which a [deployment](../resources/windowsupdates-deployment.md) can apply.|
 |deployments|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md) collection|Deployments created using the deployment service.|
+|products|[microsoft.graph.windowsUpdates.product](../resources/windowsupdates-product.md) collection|**TODO**|
 |resourceConnections|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md) collection|Service connections to external resources such as analytics workspaces.|
 |updatableAssets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Assets registered with the deployment service that can receive updates.|
 |updatePolicies|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) collection|A collection of policies for approving the deployment of different content to an audience over time.|
