@@ -32,11 +32,11 @@ Represents a known issue related to a Windows product. For example of known issu
 
 | Member             | Description                                              |
 |:-------------------|:---------------------------------------------------------|
-| resolved           | The known issues was resolved by Microsoft.              |
-| mitigatedExternal  | The known issue was mitigated by an external entity.     |
-| mitigated          | The known issues was mitigated by Microsoft.             |
-| resolvedExternal   | The known issue was resolved by an external entity.      |
-| confirmed          | The known issue was confirmed by Microsoft.              |
+| resolved           | Microsoft resolved the known issue.              |
+| mitigatedExternal  | An external entity mitigated the known issue.     |
+| mitigated          | Microsoft mitigated the known issue.             |
+| resolvedExternal   | An external entity resolved the known issue.      |
+| confirmed          | Microsoft confirmed the known issue.              |
 | reported           | Microsoft acknowledges that the known issue is reported. |
 | investigating      | Microsoft is investigating the known issue.              |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.         |
