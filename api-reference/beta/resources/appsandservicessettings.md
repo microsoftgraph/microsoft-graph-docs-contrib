@@ -3,7 +3,7 @@ title: "appsAndServicesSettings resource type"
 description: "Company-wide settings for apps and services"
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

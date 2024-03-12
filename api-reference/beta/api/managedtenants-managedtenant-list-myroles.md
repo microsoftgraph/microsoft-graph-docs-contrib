@@ -3,7 +3,7 @@ title: "List myRoles"
 description: "Get the roles that a signed-in user has through a delegated relationship across managed tenants." 
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 

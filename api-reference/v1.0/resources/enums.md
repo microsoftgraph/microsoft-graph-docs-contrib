@@ -1058,6 +1058,16 @@ Namespace: microsoft.graph
 | sunny              |
 | unknownFutureValue |
 
+### windowsSettingType values 
+
+Possible types of Windows settings.
+
+| Member             |
+| :----------------- |
+| roaming            |
+| backup             |
+| unknownFutureValue |
+
 ### workforceIntegrationEncryptionProtocol values
 
 | Member
@@ -1684,6 +1694,9 @@ Possible values for user account types (group membership), per Windows definitio
 | adminConfirmedServicePrincipalCompromised |
 | adminDismissedAllRiskForServicePrincipal  |
 | m365DAdminDismissedDetection              |
+| userChangedPasswordOnPremises             |
+| adminDismissedRiskForSignIn               |
+| adminConfirmedAccountSafe                 |
 
 ### riskEventTypes values
 
@@ -3196,14 +3209,6 @@ Possible values for user account types (group membership), per Windows definitio
 | androidMobileApplicationManagement|
 | iOSMobileApplicationManagement|
 | unknownFutureValue|
-
-### printReleaseType values 
-
-|Member|
-|:---|
-|direct|
-|qrCode|
-|unknownFutureValue|
 
 ### educationAssignmentStatus values
 

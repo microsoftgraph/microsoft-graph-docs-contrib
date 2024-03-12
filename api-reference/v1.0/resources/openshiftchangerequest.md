@@ -3,7 +3,7 @@ title: "openShiftChangeRequest resource type"
 description: "Represents a request to claim an open shift in a schedule."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 

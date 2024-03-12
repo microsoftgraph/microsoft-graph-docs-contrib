@@ -3,7 +3,7 @@ title: "List stages (of an access review)"
 description: "Retrieve the stages in a multi-stage access review instance."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

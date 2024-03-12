@@ -3,7 +3,7 @@ title: "List memberOf"
 description: "List the groups that this organizational contact is a member of."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

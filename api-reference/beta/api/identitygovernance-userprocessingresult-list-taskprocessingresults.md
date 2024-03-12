@@ -3,7 +3,7 @@ title: "List taskProcessingResults"
 description: "Get the taskProcessingResult resources from the taskProcessingResults object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

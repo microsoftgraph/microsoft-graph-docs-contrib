@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to search bookmarks"
 description: "Find out how to use the Microsoft Search API in Microsoft Graph to search bookmarks."
 author: "njerigrevious"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to search bookmarks

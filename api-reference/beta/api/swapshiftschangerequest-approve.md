@@ -3,7 +3,7 @@ title: "swapShiftsChangeRequest: approve"
 description: "Approve a swap shift request."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 

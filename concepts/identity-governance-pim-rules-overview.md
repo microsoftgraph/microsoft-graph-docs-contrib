@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: concept-article
 ms.prod: "governance"
 ms.date: 06/08/2023
 #Customer intent: As a developer, I want to understand how to map PIM settings in the Microsoft Entra admin center to the corresponding rules in Microsoft Graph, so that I can configure and update the rules effectively.

@@ -3,7 +3,7 @@ title: "driveItem: assignSensitivityLabel"
 description: "Asynchronously assign a sensitivity label to a driveItem."
 author: "jaLuthra"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 

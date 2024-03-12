@@ -3,7 +3,7 @@ title: "Get task"
 description: "Read the properties of a task object in a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

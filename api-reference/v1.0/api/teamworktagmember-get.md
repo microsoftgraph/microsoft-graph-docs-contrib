@@ -3,7 +3,7 @@ title: "Get teamworkTagMember"
 description: "Get the properties and relationships of a member of a standard tag in a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

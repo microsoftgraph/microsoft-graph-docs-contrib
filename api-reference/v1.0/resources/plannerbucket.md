@@ -3,7 +3,7 @@ title: "plannerBucket resource type"
 description: "Represents a bucket for tasks in a plan in Microsoft 365."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

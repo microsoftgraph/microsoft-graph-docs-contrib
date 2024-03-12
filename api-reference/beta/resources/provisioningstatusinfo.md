@@ -3,7 +3,7 @@ title: "provisioningStatusInfo resource type"
 description: "Describes the status of the provisioning summary event."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

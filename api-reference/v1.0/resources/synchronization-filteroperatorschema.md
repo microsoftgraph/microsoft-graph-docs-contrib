@@ -4,7 +4,7 @@ description: "Describes an operator that can be used in a filter."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # filterOperatorSchema resource type

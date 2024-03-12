@@ -3,7 +3,7 @@ title: "accessReviewDecision resource type (deprecated)"
 description: "The accessReviewDecision represents a Microsoft Entra access review decision of a particular entity's access."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

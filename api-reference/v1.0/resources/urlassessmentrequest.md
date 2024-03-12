@@ -3,7 +3,7 @@ title: "urlAssessmentRequest resource type"
 description: "Used to create and retrieve a URL threat assessment."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 

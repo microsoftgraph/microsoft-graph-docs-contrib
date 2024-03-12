@@ -3,7 +3,7 @@ title: "List instances"
 description: "Get a list of the accessReviewInstance objects and their properties."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

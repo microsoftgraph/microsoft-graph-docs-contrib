@@ -3,7 +3,7 @@ title: "cloudPcReports: getTotalAggregatedRemoteConnectionReports"
 description: "Get the total aggregated remote connection usage of a Cloud PC during a given time span."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

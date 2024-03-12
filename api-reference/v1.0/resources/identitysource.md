@@ -3,7 +3,7 @@ title: "identitySource resource type"
 description: "The identitySource type is the abstract base type for an identity source for a connected organization."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # identitySource resource type
