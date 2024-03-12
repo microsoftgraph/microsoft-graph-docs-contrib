@@ -86,7 +86,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 
-<File Content>
+File content stream directly to client
 ```
 
 ### Example 2: Download a partial range of bytes
@@ -112,7 +112,7 @@ The call returns a `206 Partial Content` HTTP response with the requested range 
 HTTP/1.1 206 Partial Content
 Content-Type: text/plain
 
-<first 1024 bytes of file>
+First 1024 bytes of file, file content stream directly to client
 ```
 
 <!-- {
