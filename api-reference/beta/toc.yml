@@ -62,6 +62,8 @@ items:
                 href: api/user-deletepasswordsinglesignoncredentials.md
               - name: Get password-based SSO credentials
                 href: api/user-getpasswordsinglesignoncredentials.md
+              - name: Convert external to member user
+                href: api/user-convertexternaltointernalmemberuser.md
           - name: App role assignment
             href: resources/approleassignment.md
             items:
