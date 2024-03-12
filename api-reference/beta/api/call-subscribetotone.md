@@ -1,6 +1,6 @@
 ---
 title: "call: subscribeToTone"
-description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a 'Dialpad'."
+description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a dialpad."
 author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -13,10 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Subscribe to DTMF (dual-tone multi-frequency signaling) to allow you to be notified when the user presses keys on a "Dialpad".
+Subscribe to DTMF (dual-tone multi-frequency signaling) to allow you to be notified when the user presses keys on a dialpad.
 
-> [!Note]
-> The **subscribeToTone** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
+This action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -26,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "call_subscribetotone" } -->
 [!INCLUDE [permissions-table](../includes/permissions/call-subscribetotone-permissions.md)]
 
->**Note:** Any tone data provided may not be persisted. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
+>**Note:** Any tone data provided may not be persisted. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. For more information, see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -134,7 +133,7 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 
 ##### Notification - tone notification
 
-The notification contains information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.
+The notification contains information of the tone pressed in the [toneInfo](../resources/toneinfo.md) resource.
 
 ```http
 POST https://bot.contoso.com/api/calls
