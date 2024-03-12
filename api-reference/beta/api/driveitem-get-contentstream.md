@@ -50,7 +50,7 @@ This method does not support query methods.
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Range|bytes={range-start}-{range-end}/{size}. Optional. To download a partial range of bytes from the file, your app can use the `Range` header as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).|
+|Range|bytes={range-start}-{range-end}/{size}. Optional. Use to download a partial range of bytes from the file. Specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).|
 
 ## Request body
 
@@ -61,13 +61,15 @@ Don't supply a request body for this method.
 If successful, this method returns a 200 OK HTTP response code.
 
 
-## Example
+## Examples
+
+### Example 1: Download file contents
 
 The following example shows how to download a file.
 
-### Download file contents
-
 #### Request
+
+The following example shows a request.
 
 <!-- { "blockType": "request", "name": "download-item-content-stream", "scopes": "files.read" } -->
 
@@ -77,7 +79,7 @@ GET /me/drive/items/{item-id}/contentStream
 
 #### Response
 
-If request is successful, response will have the file content and http status 200 OK.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 
@@ -87,13 +89,13 @@ HTTP/1.1 200 OK
 <File Content>
 ```
 
-### Download a partial range of bytes
+### Example 2: Download a partial range of bytes
 
 To download a partial range of bytes from the file, your app can use the `Range` header, as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).
 
 
 #### Request
-
+The following example shows a request.
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial", "scopes": "files.read" } -->
 
 ```http
@@ -101,11 +103,9 @@ GET /drives/{drive-id}/items/{item-id}/contentStream
 Range: bytes=0-1023
 ```
 
-The call returns a `206 Partial Content` HTTP response with the requested range of bytes from the file.
-If the range can't be generated, the `Range` header is ignored and a `200 OK` HTTP response is returned with the full contents of the file
-
 #### Response
 
+The call returns a `206 Partial Content` HTTP response with the requested range of bytes from the file. If the range can't be generated, the `Range` header is ignored and a `200 OK` HTTP response is returned with the full contents of the file.
 <!-- { "blockType": "response", "name": "download-item-partial", "@odata.type": "stream" } -->
 
 ```http
