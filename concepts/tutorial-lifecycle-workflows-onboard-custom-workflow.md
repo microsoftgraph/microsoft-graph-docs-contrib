@@ -151,8 +151,8 @@ Content-Type: application/json
     "category": "joiner",
     "description": "Configure pre-hire tasks for onboarding employees before their first day",
     "displayName": "Onboard pre-hire employee",
-    "lastModifiedDateTime": "2022-10-04T07:45:14.3410141Z",
-    "createdDateTime": "2022-10-04T07:45:14.3410017Z",
+    "lastModifiedDateTime": "2024-03-04T07:45:14.3410141Z",
+    "createdDateTime": "2024-03-04T07:45:14.3410017Z",
     "deletedDateTime": null,
     "id": "ea71190c-075a-4ae7-9bca-34abf3b7b056",
     "isEnabled": true,
@@ -303,11 +303,11 @@ Content-Type: application/json
     "value": [
         {
             "id": "5772d894-3bcf-4d1c-9cfc-8c182331215b",
-            "completedDateTime": "2022-10-04T08:07:23.2591226Z",
+            "completedDateTime": "2024-03-04T08:07:23.2591226Z",
             "failedTasksCount": 0,
             "processingStatus": "completed",
-            "scheduledDateTime": "2022-10-04T08:07:03.8706523Z",
-            "startedDateTime": "2022-10-04T08:07:09.4670969Z",
+            "scheduledDateTime": "2024-03-04T08:07:03.8706523Z",
+            "startedDateTime": "2024-03-04T08:07:09.4670969Z",
             "totalTasksCount": 1,
             "totalUnprocessedTasksCount": 0,
             "workflowExecutionType": "onDemand",
@@ -330,7 +330,7 @@ Content-Type: application/json
   "name": "tutorial_lifecycle_workflows_joineronboarding_list_userProcessingResults.summary"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/userProcessingResults/summary(startDateTime=2022-10-01T00:00:00Z,endDateTime=2022-10-30T00:00:00Z)
+GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/userProcessingResults/summary(startDateTime=2024-03-01T00:00:00Z,endDateTime=2024-03-30T00:00:00Z)
 ```
 
 # [C#](#tab/csharp)
@@ -453,11 +453,11 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('ea71190c-075a-4ae7-9bca-34abf3b7b056')/userProcessingResults('5772d894-3bcf-4d1c-9cfc-8c182331215b')/taskProcessingResults",
     "value": [
         {
-            "completedDateTime": "2022-10-04T08:07:15.9906441Z",
-            "createdDateTime": "2022-10-04T08:07:09.8072395Z",
+            "completedDateTime": "2024-03-04T08:07:15.9906441Z",
+            "createdDateTime": "2024-03-04T08:07:09.8072395Z",
             "id": "227c85e4-7b84-461f-8df5-c347c2435eb2",
             "processingStatus": "completed",
-            "startedDateTime": "2022-10-04T08:07:11.1595421Z",
+            "startedDateTime": "2024-03-04T08:07:11.1595421Z",
             "failureReason": null,
             "subject": {
                 "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
