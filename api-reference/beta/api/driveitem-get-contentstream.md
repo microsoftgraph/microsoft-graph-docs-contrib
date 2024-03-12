@@ -88,7 +88,7 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-Type: text/plain
+Content-Type: application/octet-stream
 The file content is streamed directly to client.
 ```
 
