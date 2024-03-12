@@ -17,10 +17,10 @@ Represents a container for holding content and its type.
 
 ## Properties
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|content|String|The content of the item.|
-|contentType|microsoft.graph.bodyType|The type of the content indicated by the enum value of **bodyType**. Possible values are: `text`, `html`.|
+| Property    | Type                                    | Description                                                                                                                     |
+|:------------|:----------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------|
+| content     | String                                  | The content of the item.                                                                                                        |
+| contentType | microsoft.graph.windowsUpdates.bodyType | The type of the content indicated by the enum value of **bodyType**. Possible values are: `text`, `html`, `unknownFutureValue`. |
 
 ## Relationships
 
