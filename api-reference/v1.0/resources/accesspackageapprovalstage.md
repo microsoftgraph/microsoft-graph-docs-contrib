@@ -3,7 +3,7 @@ title: "accessPackageApprovalStage resource type"
 description: "Used for the stages property of approval settings. Specifies the primary, fallback, and escalation approvers of each stage."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageApprovalStage complex type

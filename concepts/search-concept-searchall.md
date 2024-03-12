@@ -3,7 +3,7 @@ title: "Search content with application permissions"
 description: "Learn how to use the Microsoft Search API in Microsoft Graph to search SharePoint content using application permissions."
 author: "yiwenwang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Search SharePoint content with application permissions

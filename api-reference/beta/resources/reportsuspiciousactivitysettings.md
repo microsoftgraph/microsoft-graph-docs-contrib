@@ -4,7 +4,7 @@ description: "Report suspicious activity enables users in the tenant to report m
 author: "gregkmsft"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

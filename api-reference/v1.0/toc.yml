@@ -612,6 +612,8 @@ items:
                 href: api/opentypeextension-get.md
       - name: Applications
         items:
+          - name: Overview
+            href: resources/applications-api-overview.md
           - name: Application
             href: resources/application.md
             items:
@@ -946,6 +948,11 @@ items:
                     href: api/synchronization-synchronizationjob-provisionondemand.md
                   - name: Validate credentials
                     href: api/synchronization-synchronizationjob-validatecredentials.md
+                  - name: Bulk upload
+                    href: resources/synchronization-bulkupload.md
+                    items:
+                      - name: Perform bulk upload
+                        href: api/synchronization-synchronizationjob-post-bulkupload.md
               - name: Schema
                 href: resources/synchronization-synchronizationschema.md
                 items:
@@ -4488,6 +4495,18 @@ items:
                         href: api/intune-tem-devicemanagement-get.md
                       - name: Update
                         href: api/intune-tem-devicemanagement-update.md
+          - name: Microsoft 365 apps
+            displayName: Microsoft 365 applications
+            items:
+              - name: Admin Microsoft 365 apps
+                href: resources/adminmicrosoft365apps.md
+              - name: Installation options
+                href: resources/m365appsinstallationoptions.md
+                items:
+                  - name: Get
+                    href: api/m365appsinstallationoptions-get.md
+                  - name: Update
+                    href: api/m365appsinstallationoptions-update.md
           - name: Service health and communications
             items:
               - name: Overview

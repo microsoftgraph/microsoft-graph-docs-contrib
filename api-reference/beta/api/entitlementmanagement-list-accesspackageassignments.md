@@ -3,7 +3,7 @@ title: "List accessPackageAssignments"
 description: "Retrieve a list of accesspackageassignment objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

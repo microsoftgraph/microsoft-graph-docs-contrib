@@ -3,7 +3,7 @@ title: "unbilledUsage: export"
 description: "Export the unbilled Azure usage data for a specific billing period and a given currency."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 

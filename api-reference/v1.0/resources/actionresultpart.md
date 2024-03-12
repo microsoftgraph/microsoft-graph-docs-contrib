@@ -3,7 +3,7 @@ title: "actionResultPart resource type"
 description: "Abstract type to model responses of bulk operations."
 author: "abshar-teams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

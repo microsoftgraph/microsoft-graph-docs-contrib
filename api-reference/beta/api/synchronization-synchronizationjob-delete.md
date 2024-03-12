@@ -4,7 +4,7 @@ description: "Stop the synchronization job, and permanently delete all the state
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Delete synchronizationJob

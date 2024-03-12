@@ -3,7 +3,7 @@ title: "List servicePrincipal transitive memberOf"
 description: "Get the groups and directory roles that this service principal is a member of."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 

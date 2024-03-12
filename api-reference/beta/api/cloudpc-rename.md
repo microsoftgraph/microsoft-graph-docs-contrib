@@ -3,7 +3,7 @@ title: "cloudPC: rename"
 description: "Rename a specific Cloud PC. Use this API to update the displayName for the Cloud PC entity."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

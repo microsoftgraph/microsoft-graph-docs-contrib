@@ -3,7 +3,7 @@ title: "Remove appliesTo on a featureRolloutPolicy"
 description: "Remove a directoryObject from feature rollout."
 ms.localizationpriority: medium
 author: "madhavpatel6"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

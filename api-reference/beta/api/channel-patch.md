@@ -3,7 +3,7 @@ title: "Update channel"
 description: "Update the properties of the specified channel."
 author: "akjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -86,8 +86,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following example shows a request to update the [moderation settings](../resources/channelmoderationsettings.md) of a channel. This operation can only be performed by a team owner.
-
+The following example shows a request to update the [moderation settings](../resources/channelmoderationsettings.md) of a channel. Only a team owner can perform this operation.
 
 
 # [HTTP](#tab/http)

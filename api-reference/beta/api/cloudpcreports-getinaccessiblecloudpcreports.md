@@ -3,7 +3,7 @@ title: "cloudPcReports: getInaccessibleCloudPcReports"
 description: "Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status."
 author: "guanchenga"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

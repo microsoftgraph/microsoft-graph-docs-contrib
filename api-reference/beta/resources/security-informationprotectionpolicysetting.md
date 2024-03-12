@@ -3,7 +3,7 @@ title: "informationProtectionPolicySetting resource type"
 description: "Represents the settings for a Microsoft Purview Information Protection label policy."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

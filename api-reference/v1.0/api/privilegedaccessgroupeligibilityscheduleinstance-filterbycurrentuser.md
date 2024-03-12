@@ -3,7 +3,7 @@ title: "privilegedAccessGroupEligibilityScheduleInstance: filterByCurrentUser"
 description: "Return instances of membership and ownership eligibility schedules for the calling principal."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

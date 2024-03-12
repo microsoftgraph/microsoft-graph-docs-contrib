@@ -23,7 +23,7 @@ The following example shows a request that searches for files hosted in SharePoi
 ### Request without XRANK
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -82,7 +82,7 @@ Content-type: application/json
 ### Request with XRANK
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {

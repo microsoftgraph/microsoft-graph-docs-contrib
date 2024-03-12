@@ -3,7 +3,7 @@ title: "parentalControlSettings resource type"
 description: "Specifies parental control settings for an application. These settings control the consent experience."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 

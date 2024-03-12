@@ -3,7 +3,7 @@ title: "Get accessPackageSubject"
 description: "Gets the properties of an accessPackageSubject object."
 author: "aakanshanagwani"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "conditionalAccessAllExternalTenants resource type"
 description: "Represents all external tenants in a policy scope."
 ms.localizationpriority: medium
 author: "SanDeo-MSFT"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Learn how to use Microsoft Graph to manage external items added by
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 <!---<author of this doc: rsamai>--->
 

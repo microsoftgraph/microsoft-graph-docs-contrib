@@ -3,7 +3,7 @@ title: "hostname resource type"
 description: "Represents a named host that is (or has been) addressable over the internet"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

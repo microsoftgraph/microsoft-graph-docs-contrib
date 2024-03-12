@@ -3,7 +3,7 @@ title: "sharePointOneDriveOptions resource type"
 description: "Provides the search content options when a search is performed using application permissions."
 ms.localizationpriority: medium
 author: "yiwenwang"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
