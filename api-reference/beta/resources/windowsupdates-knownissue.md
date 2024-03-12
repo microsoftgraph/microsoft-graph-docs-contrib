@@ -24,7 +24,7 @@ Represents a known issue related to a Windows product. For example of known issu
 |lastUpdatedDateTime|DateTimeOffset|The date and time when the known issue was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |resolvedDateTime|DateTimeOffset| The date and time when the known issue was resolved or mitigated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |startDateTime|DateTimeOffset|The date and time when the known issue was first reported. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-|status|[windowsReleaseHealthStatus](../resources/knownissue.md#windowsreleasehealthstatus-values)|The status of the known issue.|
+|status|[microsoft.graph.windowsUpdates.windowsReleaseHealthStatus](../resources/knownissue.md#windowsreleasehealthstatus-values)|The status of the known issue.|
 |title|String|The title of the known issue.|
 |webViewUrl|String|The URL to the known issue in the Windows Release Health dashboard on Microsoft 365 admin center.|
 
