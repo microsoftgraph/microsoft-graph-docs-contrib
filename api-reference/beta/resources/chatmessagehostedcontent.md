@@ -3,7 +3,7 @@ title: "chatMessageHostedContent resource type"
 description: "A content hosted in a chat message"
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 

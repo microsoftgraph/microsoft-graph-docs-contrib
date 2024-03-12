@@ -3,7 +3,7 @@ title: "Get referenceDefinition"
 description: "Read the properties and relationships of a referenceDefinition object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

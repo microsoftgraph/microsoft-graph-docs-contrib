@@ -18,9 +18,9 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## March 2024: New and generally available
 
-### Sharepoint File Download
+### Cross-device experiences
 
-Use the [contentStream][/graph/api/driveitem-get-contentstream?view=graph-rest-beta] method to download file content directly instead of getting a 302 redirect url.
+Added the ability to list and get [Windows settings](/graph/api/resources/windowssetting) and [Windows settings instances](/graph/api/resources/windowssettinginstance).
 
 ### Reports | Partner billing reports
 
@@ -28,9 +28,9 @@ Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconci
 
 ## March 2024: New in preview only
 
-### Cross-device experiences
+### Files
 
-Added the ability to list and get [Windows settings](/graph/api/resources/windowssetting) and [Windows settings instances](/graph/api/resources/windowssettinginstance).
+Use the [Get file by contentStream][/graph/api/driveitem-get-contentstream?view=graph-rest-beta] method to download file content directly instead of getting a `302` redirect URL.
 
 ### Identity and access | Identity and sign-in
 

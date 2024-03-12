@@ -3,7 +3,7 @@ title: "Update lifecycleManagementSettings"
 description: "Update the properties of a lifecycleManagementSettings object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

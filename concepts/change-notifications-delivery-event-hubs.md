@@ -4,7 +4,7 @@ description: "Change notifications can be delivered via different channels, incl
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.prod: change-notifications
-ms.topic: conceptual
+ms.topic: concept-article
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
 ms.date: 03/23/2023
