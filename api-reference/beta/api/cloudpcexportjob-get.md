@@ -21,10 +21,19 @@ Use this GET operation to verify the **exportJobStatus** property of the **cloud
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). Make sure you have read access to relevant report you need to export. To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "cloudpcexportjob_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudpcexportjob-get-permissions.md)]
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Application|Microsoft.CloudPC/ActionStatus/Read|Not available.|
+|Application|Microsoft.CloudPC/DeviceRecommendation/Read|Not available.|
+|Application|Microsoft.CloudPC/CrossRegionDisasterRecovery/Read|Not available.|
+|Application|Microsoft.CloudPC/FrontlineReports/Read|Not available.|
+|Application|Microsoft.CloudPC/InaccessibleReports/Read|Not available.|
+|Application|Microsoft.CloudPC/PerformanceReports/Read|Not available.|
 
 ## HTTP request
 
