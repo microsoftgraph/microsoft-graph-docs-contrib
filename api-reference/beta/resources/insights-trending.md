@@ -39,7 +39,7 @@ Rich relationship connecting a user to documents that are trending around the us
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
