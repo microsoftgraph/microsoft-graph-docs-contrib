@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a collection of [thumbnailSet](../resources/thumbnailset.md) resources for a [driveItem](../resources/driveitem.md) resource.
 
-A driveItem can be represented by zero or more [thumbnailSet](../resources/thumbnailset.md) resources.
+Zero or more [thumbnailSet](../resources/thumbnailset.md) resources can represent a driveItem.
 Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item.
 For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.
 
@@ -57,7 +57,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
 
 Additionally, this method supports retrieving the thumbnail with the original orientation EXIF value and without the applied rotation by appending the `originalOrientation=true` query parameter.
-This is currently only supported on OneDrive Personal.
+It is currently only supported on OneDrive Personal.
 
 ## Response
 
@@ -109,7 +109,7 @@ GET /me/drive/items/{item-id}/thumbnails
 
 ---
 
-This returns an array of available **thumbnailSets** for the item.
+It returns an array of available **thumbnailSets** for the item.
 Any item in a drive can have zero or more thumbnails.
 
 **Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**.
