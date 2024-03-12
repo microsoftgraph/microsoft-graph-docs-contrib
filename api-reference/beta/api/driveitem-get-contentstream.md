@@ -69,50 +69,27 @@ The following example shows how to download a file.
 
 #### Request
 
-<!-- { "blockType": "request", "name": "download-item-content-stream", "scopes": "files.read" } -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
+HTTP/1.1 302 Found
+Content-Type: text/plain
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-#### Response
+Follow the 302 redirection and the CSV file that downloads have the following schema.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "stream"
 } -->
 
-The following example shows the response.
-
-
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Report Refresh Date,Report Date,Public Teams,Active Public Teams,Private Teams,Active Private Teams,
 ```
-The file content is streamed directly to client.
-
-### Example 2: Download a partial range of bytes
-
-To download a partial range of bytes from the file, your app can use the `Range` header, as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).
-
-
-#### Request
-<!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial-stream", "scopes": "files.read" } -->
-
-```http
-GET https://graph.microsoft.com/beta/drives/b!fMInbiL5dkK51VbATG0ddrCg6AJpEj9Lm4uGj5HgEi4guyuYp4W5SbH4dPfXTbCF/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
-Range: bytes=0-1023
-```
-
-#### Response
-
-The call returns a `206 Partial Content` HTTP response with the requested range of bytes from the file. If the range can't be generated, the `Range` header is ignored and a `200 OK` HTTP response is returned with the full contents of the file.
-<!-- { "blockType": "response", "name": "download-item-partial-stream", "@odata.type": "stream" } -->
-
-```http
-HTTP/1.1 206 Partial Content
-Content-Type: text/plain
-```
-The first 1024 bytes of the file content is streamed directly to client.
 
 <!-- {
   "type": "#page.annotation",
