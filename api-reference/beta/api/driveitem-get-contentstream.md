@@ -74,7 +74,7 @@ The following example shows a request.
 <!-- { "blockType": "request", "name": "download-item-content-stream", "scopes": "files.read" } -->
 
 ```msgraph-interactive
-GET /me/drive/items/{item-id}/contentStream
+GET https://contoso.sharepoint.com/beta/me/drive/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
 ```
 
 #### Response
@@ -99,7 +99,7 @@ The following example shows a request.
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial-stream", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{drive-id}/items/{item-id}/contentStream
+GET https://contoso.sharepoint.com/beta/me/drive/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
 Range: bytes=0-1023
 ```
 
