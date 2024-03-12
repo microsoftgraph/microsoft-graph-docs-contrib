@@ -18,8 +18,8 @@ Find the product revisions associated with a knowledge base number and the known
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "windowsupdates_catalog_list_entries" } -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-catalog-list-entries-permissions.md)]
+<!-- { "blockType": "permissions", "name": "windowsupdates_product-findbykbnumber" } -->
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-product-findbykbnumber-permissions.md)]
 
 [!INCLUDE [rbac-windows-updates-apis](../includes/rbac-for-apis/rbac-windows-updates-apis.md)]
 
