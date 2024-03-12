@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Update columnDefinition"
-description: "Update a site, list or content type column"
+description: "Update a site, list, or content type column."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
@@ -11,7 +11,7 @@ ms.subservice: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Update a [site][], [list][] or [content type][contentType] [column][columnDefinition].
+Update a [site][], [list][], or [content type][contentType] [column][columnDefinition].
   
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -51,9 +51,9 @@ PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{co
 
 ## Request body
 
-In the request body, supply a JSON representation of those properties of a [columnDefinition][] resource to update. For best performance, don't include existing values that haven't changed.
+In the request body, supply a JSON representation of those properties of a [columnDefinition][] resource to update. For best performance, don't include existing values that didn't change.
 
-For columns in **site** or **list**, you can update any property of **columnDefinition** other than the **id** property.
+For columns in **site** or **list**, you can update any property of **columnDefinition** other than the **ID** property.
 
 For columns in **contentType**, you can update only the **required** or **hidden** property.
 
@@ -64,6 +64,8 @@ If successful, this method returns a `200 OK` response code and an updated [colu
 ## Example
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,6 +119,8 @@ Content-Type: application/json
 ---
 
 ### Response
+
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

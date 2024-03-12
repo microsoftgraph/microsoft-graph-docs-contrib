@@ -50,7 +50,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |-|-|-|
-|contentType| string | Canonical URL to the site content type that will be copied to the list. Required.|
+|contentType| string | Canonical URL to the site content type that is copied to the list. Required.|
 
 ## Response
 
@@ -59,6 +59,8 @@ If successful, this call returns a `201 Created` response code and a [contentTyp
 ## Example
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -111,6 +113,7 @@ Content-Type: application/json
 
 ### Response
 
+The following example shows the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "truncated": true} -->
 
