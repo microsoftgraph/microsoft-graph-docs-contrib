@@ -90,6 +90,7 @@ After identifying the tasks and execution conditions that you want to define for
 You can schedule a workflow to run based on the [tenant-wide schedule](#settings) or run it on-demand. The tenant schedule can take care of regular new hires and terminations, while you can run a workflow on-demand to immediately terminate an employee's access in case of a sensitive event.
 
 The following JSON object shows an example workflow with the following settings:
+
 + The workflow is enabled and scheduled to run.
 + It is a "leaver" workflow that specifies the following tasks and execution conditions:
     + Execution conditions: Run the workflow for users in the R&D department, seven days before their employeeLeaveDateTime.
