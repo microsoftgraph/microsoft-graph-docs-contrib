@@ -3,7 +3,7 @@ title: "Update chat"
 description: "Update the properties of a chat object."
 author: "anandjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

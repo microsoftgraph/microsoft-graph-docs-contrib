@@ -3,7 +3,7 @@ title: "Get linkedResource"
 description: "Read the properties and relationships of a linkedResource object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ If successful, this method returns a `200 OK` response code and a [linkedResourc
 ## Examples
 
 ### Request
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +94,8 @@ GET https://graph.microsoft.com/v1.0/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,12 +108,12 @@ Content-Type: application/json
 
 {
   "value": {
-     "@odata.type": "#microsoft.graph.linkedResource",
-      "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
-      "webUrl": "http://microsoft.com",
-      "applicationName": "Microsoft",
-      "displayName": "Microsoft",
-      "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
+    "@odata.type": "#microsoft.graph.linkedResource",
+    "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
+    "webUrl": "http://microsoft.com",
+    "applicationName": "Microsoft",
+    "displayName": "Microsoft",
+    "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
   }
 }
 ```

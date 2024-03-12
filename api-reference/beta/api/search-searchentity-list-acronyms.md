@@ -3,7 +3,7 @@ title: "List acronyms"
 description: "Get a list of the acronym objects and their properties."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 

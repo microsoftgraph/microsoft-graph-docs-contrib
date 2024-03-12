@@ -3,7 +3,7 @@ title: "educationAssignmentPointsGrade resource type"
 description: "When an assignment is set to a points grade type, each submission has this object associated with the **submission.grade** property. This creates a subclass from educationAssignmentGrade,"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

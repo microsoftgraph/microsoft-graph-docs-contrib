@@ -4,7 +4,7 @@ description: "Add a conversationMember to a channel."
 author: "akjo" 
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Add conversationMember

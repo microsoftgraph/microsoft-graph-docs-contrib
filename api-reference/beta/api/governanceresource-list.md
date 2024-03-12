@@ -3,7 +3,7 @@ title: "List governanceResources"
 description: "Retrieve a collection of governanceResource that the requestor has access to."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
 ---

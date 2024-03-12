@@ -3,7 +3,7 @@ title: "Remove onpremisesAgent from an onPremisesAgentGroup"
 description: "Remove an onpremisesAgent from an onPremisesAgentGroup."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

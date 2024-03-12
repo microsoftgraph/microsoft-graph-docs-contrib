@@ -3,7 +3,7 @@ title: "agreementFileVersion resource type"
 description: "Represents a customized version of the localized policy files of terms of use agreement in Microsoft Entra ID. It contains metadata about the agreement file (for example, the name, the language, and whether it's the default file)."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
 ---
 

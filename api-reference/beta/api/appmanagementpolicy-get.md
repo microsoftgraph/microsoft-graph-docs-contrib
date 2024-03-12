@@ -3,7 +3,7 @@ title: "Get appManagementPolicy"
 description: "Get an application management policy."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

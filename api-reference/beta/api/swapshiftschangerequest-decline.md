@@ -3,7 +3,7 @@ title: "swapShiftsChangeRequest: decline"
 description: "Decline a swap shift request."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 

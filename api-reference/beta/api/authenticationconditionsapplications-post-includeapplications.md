@@ -3,7 +3,7 @@ title: "Add includeApplication (to a user flow)"
 description: "Add application to an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

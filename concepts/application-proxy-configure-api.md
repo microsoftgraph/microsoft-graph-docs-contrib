@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.reviewer: dhruvinrshah, arpadg
 ms.topic: tutorial
 ms.localizationpriority: medium
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 02/28/2024
 #customer intent: As a developer, I want to configure Microsoft Entra application proxy programmatically using Microsoft Graph, so that I can automate the process of providing secure remote access and single sign-on to on-premises web applications for users.
 ---

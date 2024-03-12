@@ -3,7 +3,7 @@ title: "Create userAttributeAssignments"
 description: "Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

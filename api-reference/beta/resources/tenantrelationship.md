@@ -3,7 +3,7 @@ title: "tenantRelationship resource type"
 description: "Represent the various type of tenant relationships."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

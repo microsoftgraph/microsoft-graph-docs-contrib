@@ -3,7 +3,7 @@ title: "cloudPcReports: getDailyAggregatedRemoteConnectionReports"
 description: "Get the daily aggregated remote connection reports , such as round trip time, available bandwidth, and so on, in a given period."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

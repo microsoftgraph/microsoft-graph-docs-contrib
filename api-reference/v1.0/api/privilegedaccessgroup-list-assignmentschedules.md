@@ -3,7 +3,7 @@ title: "List assignmentSchedules"
 description: "Get a list of the privilegedAccessGroupAssignmentSchedule objects and their properties."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

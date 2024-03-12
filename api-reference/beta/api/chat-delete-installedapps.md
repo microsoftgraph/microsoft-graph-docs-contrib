@@ -3,7 +3,7 @@ title: "Uninstall app in a chat"
 description: "Uninstall (remove) an app installed in a chat."
 author: "subray"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

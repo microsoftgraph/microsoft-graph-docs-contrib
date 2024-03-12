@@ -3,7 +3,7 @@ title: "List includeApplications (for a user flow)"
 description: "List applications for an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

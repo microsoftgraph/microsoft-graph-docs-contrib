@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
 ms.localizationpriority: high
-ms.prod: applications
+ms.subservice: entra-applications
 ms.custom: graphiamtop20
 ms.date: 01/11/2024
 #customer intent: As a developer, I want to register an application with the Microsoft identity platform, so that I can use it to access data in the Microsoft cloud.
