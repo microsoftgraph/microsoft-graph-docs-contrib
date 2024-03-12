@@ -120,6 +120,14 @@ Namespace: microsoft.graph.windowsUpdates
 |important|
 |unknownFutureValue|
 
+### bodyType values
+
+| Member |
+|:-------|
+| text   |
+| html   |
+| unknownFutureValue |
+
 <!--
 {
   "type": "#page.annotation",
