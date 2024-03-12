@@ -1082,6 +1082,14 @@
                 },
                 {
                     "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "products",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **products** relationship to the [adminWindowsUpdates](https://learn.microsoft.com/en-us/graph/api/resources/adminWindowsUpdates?view=graph-rest-beta) resource.",
+                    "Target": "adminWindowsUpdates"
+                },
+                {
+                    "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
                     "ApiChange": "Resource",
                     "ChangedApiName": "edition",
                     "ChangeType": "Addition",
