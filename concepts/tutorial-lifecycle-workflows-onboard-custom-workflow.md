@@ -241,9 +241,6 @@ At any time, you can monitor the status of the workflows and their associated ta
 
 #### Request
 
-The following request retrieves the summary of tasks run at the user level.
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -391,9 +388,6 @@ Content-Type: application/json
 ### Option 3: Retrieve the detailed log of all tasks that were executed for a specific user in the workflow
 
 #### Request
-
-You can also retrieve the detailed log of all tasks that were executed for a specific user in the workflow.
-
 
 # [HTTP](#tab/http)
 <!-- {
