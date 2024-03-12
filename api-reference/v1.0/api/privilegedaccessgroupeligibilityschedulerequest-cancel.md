@@ -3,7 +3,7 @@ title: "privilegedAccessGroupEligibilityScheduleRequest: cancel"
 description: "Cancel an eligibility assignment request to a group whose membership and ownership are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

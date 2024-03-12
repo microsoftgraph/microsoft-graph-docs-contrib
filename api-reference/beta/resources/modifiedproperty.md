@@ -3,7 +3,7 @@ title: "modifiedProperty resource type"
 description: "Describes the changes performed in the target system."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

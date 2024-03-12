@@ -3,7 +3,7 @@ title: "chat: getAllRetainedMessages"
 description: "Get retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats."
 author: "AgnesLiu"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

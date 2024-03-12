@@ -3,7 +3,7 @@ title: "States, transitions, and limitations for assignments"
 description: "Learn about the changes in the assignment states during the process flow and which education APIs in Microsoft Graph are involved."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

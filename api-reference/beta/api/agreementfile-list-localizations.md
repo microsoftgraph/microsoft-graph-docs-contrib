@@ -3,7 +3,7 @@ title: "List agreementFileLocalizations"
 description: "Get a list of the default and localized agreement files."
 author: AlexFilipin
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

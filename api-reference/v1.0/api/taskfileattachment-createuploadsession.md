@@ -3,7 +3,7 @@ title: "taskFileAttachment: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of a file as an attachment to a Microsoft To Do task."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

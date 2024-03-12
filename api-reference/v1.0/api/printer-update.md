@@ -3,7 +3,7 @@ title: Update printer
 description: "Update the properties of a printer object."
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "printer_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/printer-update-permissions.md)]
 
->**Note:** Right now, only printers that don't have physical device can be updated using application permissions.
+>**Note:** Right now, only printers that don't have physical devices can be updated using application permissions.
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ PATCH /print/printers/{printerId}
 
 ### Delegated permissions and JSON payload
 
-If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
+If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
 
 The following properties can be updated using delegated permissions.
 
@@ -66,7 +66,6 @@ The following properties can be updated using application permissions.
 |model|String|The model name of the printer.|
 |status|[printerStatus](../resources/printerstatus.md)|The processing status of the printer, including any errors.|
 |isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
-|releaseMechanisms|[printReleaseMechanism](../resources/printreleasemechanism.md) collection|The release mechanisms supported by the printer. Optional.|
 
 ### Application permissions and IPP payload
 
@@ -78,7 +77,7 @@ supplied replaces the value(s) of the corresponding Printer attribute on the tar
 > **Note:** Do not pass operation attributes in the request body. The request body should only contain printer attributes.
 
 
-> **Note:** For printers to work with a particular platform, it should meet the requirements of that platform. For example, on windows client, it is expected that printer specifies all attributes that are considered mandatory as per [MOPRIA](https://mopria.org) specs. Please note MOPRIA specs are available to only the paid members of MOPRIA.
+> **Note:** For printers to work with a particular platform, it should meet the requirements of that platform. For example, on the Windows client, it is expected that the printer specifies all attributes that are considered mandatory as per [MOPRIA](https://mopria.org) specs. Please note MOPRIA specs are available to only the paid members of MOPRIA.
 
 ## Response
 
@@ -92,11 +91,12 @@ If using delegated permissions, if successful, this method returns a `200 OK` re
 
 ### Application permissions and IPP payload
 
-If using application permissions, if successful, this method returns `204 No content` response code. It doesn't return anything in the response body.
+If using application permissions, if successful, this method returns a `204 No content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -149,6 +149,7 @@ Content-Type: application/json
 ---
 
 ### Response
+The following example shows the response.
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -169,11 +170,6 @@ Content-Type: application/json
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
   "isAcceptingJobs": true,
-   "releaseMechanisms": [
-    {
-      "releaseType": "direct"
-    }
-  ],
   "status": {
     "state": "idle",
     "details": [],

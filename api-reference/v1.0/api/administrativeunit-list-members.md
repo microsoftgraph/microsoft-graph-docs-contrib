@@ -3,7 +3,7 @@ title: "List members"
 description: "Use this API to get the members list (users, groups, or devices) in an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

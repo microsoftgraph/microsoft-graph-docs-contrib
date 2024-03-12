@@ -3,7 +3,7 @@ title: "Create outlookTaskFolder"
 description: "Create an Outlook task folder under a specified outlookTaskGroup."
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

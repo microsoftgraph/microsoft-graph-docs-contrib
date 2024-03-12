@@ -3,7 +3,7 @@ title: "unifiedRoleManagementAlertIncident resource type"
 description: "An abstract type that represents the details of a security alert incident in your tenant in Privileged Identity Management (PIM) for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

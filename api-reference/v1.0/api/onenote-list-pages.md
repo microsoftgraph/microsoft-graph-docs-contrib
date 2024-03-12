@@ -3,7 +3,7 @@ title: "List onenotePages"
 description: "Retrieve a list of page objects."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "educationAssignment resource type"
 description: "Represents a task or unit of work assigned to a student or team member in a class as part of their study."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

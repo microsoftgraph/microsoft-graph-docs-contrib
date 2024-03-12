@@ -3,7 +3,7 @@ title: "List intelProfiles"
 description: "Get a list of the intelligenceProfile objects and their properties."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

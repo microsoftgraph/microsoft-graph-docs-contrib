@@ -3,7 +3,7 @@ title: "Share or delegate a calendar in Outlook"
 description: "Use the Outlook calendar API to enable a calendar owner to share the calendar with another user or delegate another user to manage meetings in that calendar."
 author: "juforan"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Share or delegate a calendar in Outlook

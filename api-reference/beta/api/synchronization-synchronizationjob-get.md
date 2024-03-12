@@ -4,7 +4,7 @@ description: "Retrieve the existing synchronization job and its properties."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Get synchronizationJob

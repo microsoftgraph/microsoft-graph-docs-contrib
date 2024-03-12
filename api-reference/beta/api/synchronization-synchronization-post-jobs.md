@@ -4,7 +4,7 @@ description: "Create new synchronization job with a default synchronization sche
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Create synchronizationJob

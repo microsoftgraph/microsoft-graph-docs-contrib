@@ -3,7 +3,7 @@ title: "Get linkedResource_v2"
 description: "Read the properties and relationships of a linkedResource_v2 object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

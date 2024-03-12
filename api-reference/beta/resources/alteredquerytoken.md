@@ -3,7 +3,7 @@ title: "alteredQueryToken resource type"
 description: "Represents changed segments with respect to original user query."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 

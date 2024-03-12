@@ -3,7 +3,7 @@ title: "List components"
 description: "Get a list of hostComponent resources."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update educationAssignmentSettings"
 description: "Update the properties of an educationAssignmentSettings object."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,6 @@ The following table shows the properties that are required when you update the [
 |Property|Type|Description|
 |:---|:---|:---|
 |submissionAnimationDisabled|Boolean|Indicates whether to show the turn-in celebration animation. A value of `true` indicates to skip the animation. Default value is `false`.|
-
 
 
 ## Response
@@ -279,7 +278,7 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-gradingcategories-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
@@ -291,7 +290,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-gradingcategories-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -299,15 +298,15 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-gradingcategories-delta-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-gradingcategories-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/update-gradingcategories-delta-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -355,6 +354,165 @@ Content-type: application/json
     ]
 }
 ```
+
+### Example 4: Create grading schemas
+
+#### Request
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
+  "name": "creating_some_new_gradingSchemes"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
+Content-type: application/json
+
+{
+    "gradingSchemes": [
+        {
+            "displayName": "Pass/fail",
+            "grades": [
+                {
+                    "displayName": "Pass",
+                    "minPercentage": 60,
+                    "defaultPercentage": 100
+                },
+                {
+                    "displayName": "Fail",
+                    "minPercentage": 0,
+                    "defaultPercentage": 0
+                }
+            ]
+        },
+        {
+            "displayName": "Letters",
+            "grades": [
+                {
+                    "displayName": "A",
+                    "minPercentage": 90
+                },
+                {
+                    "displayName": "B",
+                    "minPercentage": 80
+                },
+                {
+                    "displayName": "C",
+                    "minPercentage": 70
+                },
+                {
+                    "displayName": "D",
+                    "minPercentage": 60
+                },
+                {
+                    "displayName": "F",
+                    "minPercentage": 0
+                }
+            ]
+        }
+    ]
+}
+```
+
+#### Response
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationGradingScheme"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignmentSettings?$select=submissionAnimationDisabled",
+    "submissionAnimationDisabled": true,
+    "gradingCategories@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories": [
+        {
+            "id": "21ca44c0-c44b-4fda-8f6a-dd56e86650e9",
+            "displayName": "Lab",
+            "percentageWeight": 10
+        },
+        {
+            "id": "f216fee5-870b-42de-b847-c38e810dffb7",
+            "displayName": "Homework",
+            "percentageWeight": 80
+        },
+        {
+            "id": "db8f13e7-b71a-4c91-9934-b915f4ac49b7",
+            "displayName": "Test",
+            "percentageWeight": 10
+        }
+    ],
+    "gradingSchemes@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes",
+    "gradingSchemes": [
+        {
+            "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
+            "displayName": "Points",
+            "hidePointsDuringGrading": false,
+            "grades": []
+        },
+        {
+            "id": "696290ba-1925-490e-a5d2-026bad0dbdc1",
+            "displayName": "New name for Pass/Fail Scheme",
+            "hidePointsDuringGrading": false,
+            "grades": [
+                {
+                    "displayName": "Pass",
+                    "minPercentage": 60,
+                    "defaultPercentage": 100
+                },
+                {
+                    "displayName": "Fail",
+                    "minPercentage": 0,
+                    "defaultPercentage": 0
+                }
+            ]
+        },
+        {
+            "id": "291f9918-b52c-4cf0-b94f-55982a82995f",
+            "displayName": "Letters",
+            "hidePointsDuringGrading": false,
+            "grades": [
+                {
+                    "displayName": "A",
+                    "minPercentage": 90,
+                    "defaultPercentage": null
+                },
+                {
+                    "displayName": "B",
+                    "minPercentage": 80,
+                    "defaultPercentage": null
+                },
+                {
+                    "displayName": "C",
+                    "minPercentage": 70,
+                    "defaultPercentage": null
+                },
+                {
+                    "displayName": "D",
+                    "minPercentage": 60,
+                    "defaultPercentage": null
+                },
+                {
+                    "displayName": "F",
+                    "minPercentage": 0,
+                    "defaultPercentage": null
+                }
+            ]
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 37d99af7-cfc5-4e3b-8566-f7d40e4a2070
 2023-04-18 14:57:30 UTC -->

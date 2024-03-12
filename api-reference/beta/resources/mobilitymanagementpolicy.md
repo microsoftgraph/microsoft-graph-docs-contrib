@@ -3,7 +3,7 @@ title: "mobilityManagementPolicy resource type"
 description: "A mobility management policy represents an autoenrollment policy for a mobility management application configured in Azure AD."
 author: "ravennMSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

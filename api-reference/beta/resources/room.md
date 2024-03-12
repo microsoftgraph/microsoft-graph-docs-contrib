@@ -3,7 +3,7 @@ title: "room resource type"
 description: "Specifies the properties of a room in a tenant."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "resourcePageType"
 ---
 
