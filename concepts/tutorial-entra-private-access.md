@@ -415,9 +415,7 @@ POST https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd8
 
 ### [Optional] Update or delete an existing app segment
 
-The following request updates an existing segment by changing the protocol to both `tcp` and `udp`.
-
-#### Request
+The following request updates an existing segment by changing the protocol to both `tcp` and `udp`. The request returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
@@ -430,9 +428,6 @@ PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd
    "protocol":"tcp,udp" 
 } 
 ```
-
-#### Response
-
 
 ## Step 5: Assign a user to the Global Secure Access private application 
 
@@ -519,9 +514,7 @@ PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{id}
 
 ## Step 7: Enable private Domain Name System (DNS) resolution
 
-This capability is only available for Global Secure Access private applications of type Quick Access.
-
-### Request
+This capability is only available for Global Secure Access private applications of type Quick Access. The request returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "ignore",
@@ -534,8 +527,6 @@ PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd
    "isDnsResolutionEnabled": "true" 
 } 
 ```
-
-### Response
 
 ## Step 8: Create a new DNS suffix
 
