@@ -2,7 +2,7 @@
 title: Get file by contentStream
 author: manikantsinghms
 ms.author: maniksingh
-description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
+description: "Download the contents of the primary stream (file) of a driveItem. Only driveItem objects with the file property can be downloaded."
 ms.localizationpriority: medium
 ms.date: 3/6/2024
 ms.prod: "sharepoint"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Download the contents of the primary stream (file) of a [driveItem](../resources/driveitem.md). Only **driveItem** with the **file** property can be downloaded.
+Download the contents of the primary stream (file) of a [driveItem](../resources/driveitem.md). Only **driveItem** objects with the **file** property can be downloaded.
 
 ## Permissions
 
