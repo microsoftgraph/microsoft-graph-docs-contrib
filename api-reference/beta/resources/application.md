@@ -33,6 +33,7 @@ This resource supports:
 |[Create application](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
 |[Get application](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
 |[Update application](../api/application-update.md) | None |Update application object. |
+|[Upsert application](../api/application-upsert.md) | [application](application.md) | Create a new application if it doesn't exist, or update the properties of an existing application.|
 |[Delete application](../api/application-delete.md) | None |Delete application object. |
 |[List deleted applications](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
 | [List deleted applications owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the applications deleted in the tenant in the last 30 days and that are owned by a user. |
@@ -119,7 +120,7 @@ This resource supports:
 | tags |String collection| Custom strings that can be used to categorize and identify the application. Not nullable. Strings added here also appear in the **tags** property of any associated [service principals](serviceprincipal.md).<br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`) and `$search`.|
 | tokenEncryptionKeyId |Guid|Specifies the keyId of a public key from the keyCredentials collection. When configured, Microsoft Entra ID encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Specifies the verified publisher of the application. For more information about how publisher verification helps support application security, trustworthiness, and compliance, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview).|
-| uniqueName | String | The unique identifier that can be assigned to an application as an alternative identifier. Immutable. Read-only. |
+| uniqueName | String | The unique identifier that can be assigned to an application and used as an alternate key. Immutable. Read-only. |
 | web |[webApplication](webapplication.md)| Specifies settings for a web application. |
 | windows |[windowsApplication](windowsapplication.md)| Specifies settings for apps running Microsoft Windows and published in the Microsoft Store or Xbox games store.|
 
