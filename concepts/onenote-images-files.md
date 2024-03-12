@@ -3,7 +3,7 @@ title: "Add images, videos, and files to OneNote pages by using the OneNote API"
 description: "Use img, object, and iframe elements to add images, videos, and files to a OneNote page when you're creating or updating the page."
 author: "jewan-microsoft"
 ms.localizationpriority: high
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 
