@@ -1074,6 +1074,14 @@
             "ChangeList": [
                 {
                     "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "windowsReleaseHealthStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **windowsReleaseHealthStatus** enumeration type.",
+                    "Target": "windowsReleaseHealthStatus"
+                },
+                {
+                    "Id": "a6639056-8a1d-4d07-8dc0-75fefd3a6006",
                     "ApiChange": "Resource",
                     "ChangedApiName": "edition",
                     "ChangeType": "Addition",
