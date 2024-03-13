@@ -3,7 +3,7 @@ title: "authenticationAppPolicyDetails resource type"
 description: "Provides details of the Microsoft Entra policies applied to a user and client authentication app during the authentication step."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

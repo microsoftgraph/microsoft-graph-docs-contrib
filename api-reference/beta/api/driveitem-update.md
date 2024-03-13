@@ -4,7 +4,7 @@ description: "Update the metadata for a DriveItem by ID or path."
 ms.date: 09/10/2017
 title: Update a file or folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Update DriveItem properties

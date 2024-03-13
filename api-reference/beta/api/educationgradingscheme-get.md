@@ -3,7 +3,7 @@ title: "Get educationGradingScheme"
 description: "Read the properties and relationships of an educationGradingScheme object."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

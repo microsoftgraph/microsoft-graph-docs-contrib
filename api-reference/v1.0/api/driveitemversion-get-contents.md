@@ -2,7 +2,7 @@
 title: "Download contents of a driveItemVersion resource"
 description: "Retrieve the contents of a specific version of a driveItem."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: apiPageType
 ---
