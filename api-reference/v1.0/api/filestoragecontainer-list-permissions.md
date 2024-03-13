@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of the [permission](../resources/permission.md) objects associated with a [fileStorageContainer](../resources/filestoragecontainer.md).
 
 ## Permissions
