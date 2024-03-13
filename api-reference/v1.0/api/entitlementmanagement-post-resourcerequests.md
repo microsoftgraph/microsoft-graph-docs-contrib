@@ -404,9 +404,11 @@ Content-type: application/json
 
 ### Example 5: Create an accessPackageResourceRequest for updating an application as a resource with attributes
 
+The following example shows a request to update a resource in a catalog, for an application that was already added as a resource, with two attributes.
+
 #### Request
 
-The following example shows a request to update a resource in a catalog, for an application that was already added as a resource, with two attributes.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -464,7 +466,6 @@ Content-type: application/json
     "id": "beedadfe-01d5-4025-910b-84abb9369997"
   }
 }
-
 ```
 
 #### Response
