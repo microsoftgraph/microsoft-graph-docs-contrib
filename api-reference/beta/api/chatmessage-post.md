@@ -610,11 +610,11 @@ Content-type: application/json
 ### Example 5: Send a message with a file attachment in it using file share link
 
 #### Request
-The following example shows a request
+The following example shows a request.
 
 >**Notes:**
-> - The file to attach must already be in SharePoint. To access the file properties, [GET the **driveItem** for the file](/graph/api/driveitem-get). The **eTag** of the **driveItem** has a GUID that is your attachment ID. Use the file share link as **contentURL**. Users must have permission to drive items using the file [share link](https://learn.microsoft.com/en-us/graph/api/shares-get?view=graph-rest-1.0&tabs=http). 
-> - Using file share link for sending messages is not supported in [migration](https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) scenario. 
+> - The file to attach must already be in SharePoint. To access the file properties, use the [driveitem-get](/graph/api/driveitem-get) endpoint for the file. The **eTag** of the **driveItem** has a GUID that is your attachment ID. Use the file share link as **contentURL**. Users must have permission to drive items using the file [share link](https://learn.microsoft.com/en-us/graph/api/shares-get?view=graph-rest-1.0&tabs=http). 
+> - Using the file share link endpoint for sending messages is not supported in [migration](https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) scenarios. 
 
 # [HTTP](#tab/http)
 <!-- {
