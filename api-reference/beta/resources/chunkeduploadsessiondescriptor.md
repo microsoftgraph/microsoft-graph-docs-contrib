@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|name|String|*TODO*|
+|name|String|The name of the **chunkedUploadSessionDescriptor** object.|
 
 ## JSON representation
 
