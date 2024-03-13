@@ -3,7 +3,7 @@ title: "contentType: getCompatibleHubContentTypes"
 description: "Get a list of compatible content types from the content type hub that can be added to a target site or a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get plannerTaskConfiguration"
 description: "Read the properties and relationships of a plannerTaskConfiguration object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 

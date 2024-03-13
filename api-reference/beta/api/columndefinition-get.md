@@ -1,10 +1,10 @@
 ---
 author: swapnil1993
 title: "Get columnDefinition"
-description: " Get a site, list or content type column."
+description: " Get a site, list, or content type column."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Get columnDefinition
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].
+Retrieve the metadata for a [site][], [list][], or [contentType][] [column][columnDefinition].
 
   
 

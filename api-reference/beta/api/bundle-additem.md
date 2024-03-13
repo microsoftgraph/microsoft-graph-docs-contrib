@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "Add item to a bundle"
 description: "Add item to a bundle of driveItems."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an additional [driveItem][] from a drive to a [bundle][].
+Add an extra [driveItem][] from a drive to a [bundle][].
 
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md

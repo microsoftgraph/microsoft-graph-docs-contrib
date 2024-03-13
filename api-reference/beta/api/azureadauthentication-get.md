@@ -3,7 +3,7 @@ title: "Get azureADAuthentication"
 description: "Read the properties and relationships of an azureADAuthentication object to find Microsoft Entra SLA attainment for your tenant."
 author: "SarahBar"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 

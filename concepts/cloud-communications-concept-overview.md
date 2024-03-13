@@ -3,7 +3,7 @@ title: "Cloud communications API overview"
 description: "Use the cloud communications API in Microsoft Graph to build bots that handle incoming calls, collaborate via group calls, send reminders, and set up meetings."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Cloud communications API overview

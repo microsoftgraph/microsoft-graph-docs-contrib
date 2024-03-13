@@ -3,7 +3,7 @@ title: "Delete businessScenario"
 description: "Delete a businessScenario object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 

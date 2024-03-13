@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: "Get a collection of subsites defined for a SharePoint site."
 title: List subsites for a site
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List subsites for a site

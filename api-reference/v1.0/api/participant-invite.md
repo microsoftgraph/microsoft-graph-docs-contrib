@@ -3,7 +3,7 @@ title: "participant: invite"
 description: "Invite participants to the active call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 author: "spgraph-docs-team"
-description: "Get a list of driveItem objects that have been shared with the owner of a drive."
+description: "Get a list of driveItem objects shared with the owner of a drive."
 title: "drive: sharedWithMe"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [driveItem](../resources/driveitem.md) objects that have been shared with the owner of a [drive](../resources/drive.md).
+Get a list of [driveItem](../resources/driveitem.md) objects shared with the owner of a [drive](../resources/drive.md).
 
-The **driveItems** returned from the **sharedWithMe** method always include the [**remoteItem**](../resources/remoteitem.md) facet that indicates they are items from a different drive.
+The **driveItems** returned from the **sharedWithMe** method always include the [**remoteItem**](../resources/remoteitem.md) facet that indicates they're items from a different drive.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/me/drive/sharedWithMe
 
 #### Response
 
-The following is an example of the response that returns items shared with the signed-in user, because the drive is the user's default drive.
+The following example shows the response that returns items shared with the signed-in user, because the drive is the user's default drive.
 
 <!-- {
   "blockType": "response",

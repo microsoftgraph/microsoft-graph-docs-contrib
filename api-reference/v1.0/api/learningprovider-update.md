@@ -3,7 +3,7 @@ title: "Update learningProvider"
 description: "Update the properties of a learningProvider object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 

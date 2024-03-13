@@ -3,7 +3,7 @@ title: "List trending"
 description: "Calculated insight that returns the list of items trending around the user."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 

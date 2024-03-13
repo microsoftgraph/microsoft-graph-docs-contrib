@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 description: "Get a list of driveItem objects shared with the owner of a drive."
 title: "drive: sharedWithMe"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

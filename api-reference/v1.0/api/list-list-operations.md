@@ -3,7 +3,7 @@ title: "List operations on a list"
 description: "Get a list of richLongRunningOperations associated with a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

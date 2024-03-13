@@ -1,6 +1,6 @@
 ---
 author: spgraph-docs-team
-description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
+description: "Retrieve the metadata for a driveItem in a drive by file system path or ID."
 title: Get driveItem
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -51,8 +51,8 @@ This method supports the `$expand` and `$select` [OData query parameters](/graph
 You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.
 
 You can also use the `includeDeletedItems=true` query parameter to return deleted items.
-This query parameter is only valid when targeting a [driveItem](../resources/driveitem.md) by ID, and otherwise will be ignored.
-This is currently only supported on OneDrive Personal.
+This query parameter is only valid when targeting a [driveItem](../resources/driveitem.md) by ID, and otherwise ignored.
+It's currently only supported on OneDrive Personal.
 
 ## Optional request headers
 
@@ -62,7 +62,7 @@ This is currently only supported on OneDrive Personal.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.
+If successful, this method returns a `200 OK` response code and the [driveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
 
@@ -167,5 +167,3 @@ For details about how errors are returned, see [Error responses][error-response]
   ]
 }
 -->
-
-

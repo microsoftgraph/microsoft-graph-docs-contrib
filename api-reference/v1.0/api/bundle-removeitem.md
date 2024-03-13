@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "Remove item from bundle"
 description: "Remove item from a bundle of driveItems."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

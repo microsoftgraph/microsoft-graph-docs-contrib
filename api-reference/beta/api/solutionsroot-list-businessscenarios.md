@@ -3,7 +3,7 @@ title: "List businessScenarios"
 description: "Get a list of all businessScenario objects in an organization."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: "Update bookingcustomer"
+title: "Update bookingCustomer"
 description: "Update the properties of a bookingCustomer object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
-# Update bookingcustomer
+# Update bookingCustomer
 
 Namespace: microsoft.graph
 
@@ -38,14 +38,14 @@ PATCH /solutions/bookingbusinesses/{id}/customers/{id}
 | Authorization  | Bearer {code}|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
-|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business and other addresses.|
-|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business, and other addresses.|
+|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business, and mobile numbers.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and updated [bookingCustomer](../resources/bookingcustomer.md) object in the response body.

@@ -3,7 +3,7 @@ title: "analyzedEmailUrl resource type"
 description: "Represents information about URLs found in an analyzed email."
 author: "MishraSoumyaMS"
 ms.localizationpriority: medium
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ author: "simonhult"
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 description: "The personOrGroupColumn on a columnDefinition resource indicates that the column's values represent a person or group chosen from the directory."
 doc_type: resourcePageType
 ---

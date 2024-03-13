@@ -3,7 +3,7 @@ title: "Update browserSiteList"
 description: "Update the properties of a browserSiteList object."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
 ---
 

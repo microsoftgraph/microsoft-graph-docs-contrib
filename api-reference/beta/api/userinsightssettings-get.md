@@ -3,7 +3,7 @@ title: "Get userInsightsSettings"
 description: "Retrieve the properties of a userInsightsSettings object."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 

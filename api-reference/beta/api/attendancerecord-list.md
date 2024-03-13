@@ -3,7 +3,7 @@ title: "List attendanceRecords"
 description: "Get a list of attendanceRecord objects and their properties."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

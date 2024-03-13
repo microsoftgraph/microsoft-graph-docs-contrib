@@ -3,7 +3,7 @@ title: "List definitions"
 description: "List the teamTemplateDefinition objects associated with a teamTemplate."
 author: "rahuldey700"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

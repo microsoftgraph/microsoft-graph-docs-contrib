@@ -3,7 +3,7 @@ title: "Get virtualEventSession"
 description: "Read the properties and relationships of a virtualEventSession object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

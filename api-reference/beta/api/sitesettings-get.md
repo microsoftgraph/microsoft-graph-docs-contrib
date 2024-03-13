@@ -3,7 +3,7 @@ title: "Get siteSettings"
 description: "Get the settings of a site."
 author: "k-tsoi"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Convert to other formats
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Use this API to retrieve the contents of an item in a specific format."
 doc_type: apiPageType
 ---

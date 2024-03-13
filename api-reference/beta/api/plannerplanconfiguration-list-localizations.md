@@ -3,7 +3,7 @@ title: "List plannerPlanConfigurationLocalizations"
 description: "Get a list of the plannerPlanConfigurationLocalization objects and their properties."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 

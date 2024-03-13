@@ -3,7 +3,7 @@ title: "bookingsBusiness: getStaffAvailability"
 description: "Get the availability information of staff members of a Microsoft Bookings calendar."
 ms.localizationpriority: medium
 author: kwekua
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

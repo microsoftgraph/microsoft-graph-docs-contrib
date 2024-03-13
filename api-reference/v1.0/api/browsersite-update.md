@@ -3,7 +3,7 @@ title: "Update browserSite"
 description: "Update the properties of a browserSite object."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
 ---
 

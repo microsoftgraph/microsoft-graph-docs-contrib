@@ -3,7 +3,7 @@ title: "Delete bookingStaffMember"
 description: "Delete a staff member in the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

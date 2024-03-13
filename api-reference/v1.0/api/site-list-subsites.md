@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: List subsites for a site
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Get a collection of subsites defined for a SharePoint site."
 doc_type: apiPageType
 ---

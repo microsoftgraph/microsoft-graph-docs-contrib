@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Get lists in a site
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Get the collection of lists for a site."
 doc_type: apiPageType
 ---

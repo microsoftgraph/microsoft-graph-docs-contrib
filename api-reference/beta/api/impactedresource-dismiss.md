@@ -3,7 +3,7 @@ title: "impactedResource: dismiss"
 description: "Dismiss a recommendationResource object and update its status to dismissed."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 

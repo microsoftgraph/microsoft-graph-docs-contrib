@@ -3,7 +3,7 @@ title: "Update virtualAppointment"
 description: "Update the properties of a virtualAppointment object."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

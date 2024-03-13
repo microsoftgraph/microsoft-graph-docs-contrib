@@ -3,7 +3,7 @@ title: "List sessions"
 description: "Retrieve the list of session objects for a callRecord."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
 ---
 

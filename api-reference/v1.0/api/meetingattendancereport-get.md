@@ -3,7 +3,7 @@ title: "Get meetingAttendanceReport"
 description: "Get the attendance report for an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
