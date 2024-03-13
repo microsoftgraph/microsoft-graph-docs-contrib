@@ -21,10 +21,7 @@ Use this GET operation to verify the **exportJobStatus** property of the **cloud
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). Make sure you have read access to relevant report you need to export. To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "cloudpcexportjob_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpcexportjob-get-permissions.md)]
+Make sure you have read access to relevant report you need to export. Choose the Permission or permissions relevant with what kind of report you want to download as least privileged for this API. App-only token with CloudPC.ReadWrite.All have higher previleged permission or permissions. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
