@@ -617,3 +617,4 @@ Content-type: application/json
 ## Related content
 
 - [Microsoft Security Service Edge Solution Deployment Guide for Microsoft Entra Private Access Proof of Concept](/entra/architecture/sse-deployment-guide-private-access)
+- [Tutorial: Configure Microsoft Entra Private Access using Microsoft Graph APIs](/graph/tutorial-entra-private-access)
