@@ -63,7 +63,7 @@ The following example enumerates all containers of a given container type.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 ```
 
 ### Response
@@ -80,7 +80,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/storage/fileStorage/containers",
+  "@odata.context": "https://graph.microsoft.com/v1.0/storage/fileStorage/containers",
   "@odata.count": 1,
   "value": [
     {
