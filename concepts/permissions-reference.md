@@ -3025,7 +3025,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | b11fa0e7-fdb7-4dc9-b1f1-59facd463480 
 | DisplayText | - | Read user and shared basic mail 
-| Description | - | Allows the app to read mail the signed-in user can access, including their own and shared mail, except for body, bodyPreview, uniqueBody, attachments, extensions, and any extended properties. 
+| Description | - | Allows the app to read emails the signed-in user can access, including their own and shared mail, except for body, bodyPreview, uniqueBody, attachments, extensions, and any extended properties. 
 | AdminConsentRequired | - | No 
 
 ---
@@ -3036,7 +3036,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | e2a3a72e-5f79-4c64-b1b1-878b674786c9 | 024d486e-b451-40bb-833d-3e66d98c5c73 
 | DisplayText | Read and write mail in all mailboxes | Read and write access to user mail  
-| Description | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail. | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.  
+| Description | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail. | Allows the app to create, read, update, and delete email in the signed-in users mailboxe. Does not include permission to send mail.  
 | AdminConsentRequired | Yes | No 
 
 [!INCLUDE [Mail.ReadWrite](../includes/permissions-notes/mail.readwrite.md)]
