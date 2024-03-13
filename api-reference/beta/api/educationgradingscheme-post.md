@@ -3,7 +3,7 @@ title: "Create educationGradingScheme"
 description: "Create a new educationGradingScheme object."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

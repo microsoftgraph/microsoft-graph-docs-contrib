@@ -3,7 +3,7 @@ title: "Get change notifications for Microsoft Teams call records"
 description: "Use change notifications in Microsoft Graph to receive notifications for created and updated call records."
 author: "mcm223"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ms.custom: scenarios:getting-started
 ---
 

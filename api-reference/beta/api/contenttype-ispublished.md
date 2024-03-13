@@ -4,7 +4,7 @@ title: "contentType: isPublished"
 description: "Check the publishing status of a content type in a content type hub site."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentType: isPublished

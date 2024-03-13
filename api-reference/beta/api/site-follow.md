@@ -3,7 +3,7 @@ author: learafa
 title: Follow site
 description: Follow a user's site/sites.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Follow site 

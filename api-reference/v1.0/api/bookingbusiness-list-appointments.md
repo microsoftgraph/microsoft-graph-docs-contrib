@@ -3,7 +3,7 @@ title: "List appointments"
 description: "Get a list of bookingAppointment objects for the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

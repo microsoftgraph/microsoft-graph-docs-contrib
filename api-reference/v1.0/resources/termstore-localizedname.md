@@ -3,7 +3,7 @@ title: "localizedName resource type"
 description: "Represents the localized name used in the term store, which identifies the name in the localized language."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

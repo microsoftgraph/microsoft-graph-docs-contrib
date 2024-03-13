@@ -4,7 +4,7 @@ ms.date: 09/12/2017
 title: "columnLink resource type"
 ms.localizationpriority: medium
 description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
