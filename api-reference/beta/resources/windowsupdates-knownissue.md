@@ -3,7 +3,7 @@ title: "knownIssue resource type"
 description: "Represents a known issue related to a Windows product."
 author: "skandula"
 ms.localizationpriority: medium
-ms.service: ""windows-update-business"
+ms.service: "windows-update-business"
 doc_type: resourcePageType
 ---
 
