@@ -65,7 +65,7 @@ The following example shows how to create a **fileStorageContainer**.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers
+POST https://graph.microsoft.com/v1.0/storage/fileStorage/containers
 Content-Type: application/json
 
 {
