@@ -3,7 +3,7 @@ title: "Get manifest"
 description: "Read the properties and relationships of a manifest object."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 

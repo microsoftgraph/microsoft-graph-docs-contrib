@@ -3,7 +3,7 @@ title: "trustFrameworkKeySet resource type"
 description: "Represents a trust framework keyset/policy key."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

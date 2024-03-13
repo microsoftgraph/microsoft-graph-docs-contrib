@@ -3,7 +3,7 @@ title: "List Windows setting instances"
 description: "Get a list of windowsSettingInstance objects and their properties."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 ---
 
@@ -19,11 +19,7 @@ Get a list of [windowsSettingInstance](../resources/windowssettinginstance.md) o
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "windowssetting-list-instances-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "windowssetting_list_instances" } -->
 [!INCLUDE [permissions-table](../includes/permissions/windowssetting-list-instances-permissions.md)]
 
 ## HTTP request

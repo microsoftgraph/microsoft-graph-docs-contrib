@@ -3,7 +3,7 @@ title: "List fileValidateOperations"
 description: "Get a list of long-running file validation operations and their statuses."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

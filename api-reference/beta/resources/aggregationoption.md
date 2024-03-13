@@ -3,7 +3,7 @@ title: "aggregationOption resource type"
 description: "Specifies which aggregations should be returned alongside the search results"
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 

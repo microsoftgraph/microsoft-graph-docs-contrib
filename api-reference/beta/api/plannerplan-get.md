@@ -3,7 +3,7 @@ title: "Get plannerPlan"
 description: "Retrieve the properties and relationships of **plannerplan** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 

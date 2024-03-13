@@ -3,7 +3,7 @@ title: "Get whoisRecord"
 description: "Get the specified whoisRecord resource."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

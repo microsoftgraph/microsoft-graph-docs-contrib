@@ -3,7 +3,7 @@ title: "Working with Microsoft Entra resources in Microsoft Graph"
 description: "Microsoft Graph for Microsoft Entra provides REST APIs to help manage your organization, resources, and assets."
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 author: "dkershaw10"
 ms.date: 11/29/2022
 ---

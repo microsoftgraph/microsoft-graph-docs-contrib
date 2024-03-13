@@ -4,7 +4,7 @@ description: "Start an existing synchronization job. If the job is in a paused s
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Start synchronizationJob

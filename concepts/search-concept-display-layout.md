@@ -4,7 +4,7 @@ description: "Use the Microsoft Search API in Microsoft Graph to display search 
 author: "yiwenwang"
 ms.author: "yiwenwang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 #Customer intent: As a developer, I want to use the Microsoft Search API to manage layout templates for search results, so that I can customize the display and behavior of different types of search results on search result pages.
 ---
 

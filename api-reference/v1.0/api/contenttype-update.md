@@ -4,7 +4,7 @@ title: "Update contentType"
 description: "Update a content type."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Update contentType

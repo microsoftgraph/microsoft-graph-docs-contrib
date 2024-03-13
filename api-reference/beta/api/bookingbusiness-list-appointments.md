@@ -3,7 +3,7 @@ title: "List appointments"
 description: "Get a list of bookingAppointment objects for the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -293,6 +293,7 @@ Content-type: application/json
             "invoiceAmount": 10.0,
             "invoiceId": "1001",
             "invoiceStatus": "open",
+            "isCustomerAllowedToManageBooking": true,
             "invoiceUrl": "theInvoiceUrl",
             "customerLocation": {
                 "displayName": "Customer",

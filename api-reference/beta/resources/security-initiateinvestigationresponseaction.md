@@ -3,7 +3,7 @@ title: "initiateInvestigationResponseAction resource type"
 description: "Describes a response action that starts an automated investigation of a device."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

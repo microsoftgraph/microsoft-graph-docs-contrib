@@ -3,7 +3,7 @@ title: "cloudPcDeviceImage resource type"
 description: "Represents the image resource on Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

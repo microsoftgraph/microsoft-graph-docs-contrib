@@ -3,7 +3,7 @@ title: "authenticationEventsFlow resource type"
 description: "An abstract entity that represents a multi-event policy used to orchestrate an authentication flow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

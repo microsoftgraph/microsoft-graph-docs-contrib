@@ -3,7 +3,7 @@ title: "List associatedTeamInfo"
 description: "Get the list of teams in Microsoft Teams that a user is associated with."
 author: "devjha-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "mediaInfo resource type"
 description: "The media information used in actions for prompts."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

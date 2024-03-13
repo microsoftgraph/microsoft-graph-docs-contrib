@@ -3,7 +3,7 @@ title: "Get NamedItem"
 description: "Retrieve the properties and relationships of nameditem object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 author: "ruoyingl"
 ---
 

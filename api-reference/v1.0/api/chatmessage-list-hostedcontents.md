@@ -3,7 +3,7 @@ title: "List hostedContents"
 description: "Retrieve the list of chatMessageHostedContent objects from a message."
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: "apiPageType"
 ---
 

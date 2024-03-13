@@ -4,7 +4,7 @@ description: Creates a customer payment object in Dynamics 365 Business Central.
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: apiPageType
 ---
 

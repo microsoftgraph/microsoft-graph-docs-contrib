@@ -4,7 +4,7 @@ description: "A container for Microsoft Teams features available for organizatio
 author: "akumar39"
 doc_type: resourcePageType
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # teamwork resource type
@@ -30,11 +30,12 @@ A container for the range of Microsoft Teams functionalities that are available 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |deletedTeams|[deletedTeam](../resources/deletedteam.md) collection| The deleted team.|
+|deletedChats|[deletedChat](../resources/deletedchat.md) collection| A collection of deleted chats.|
 |teamsAppSettings|[teamsAppSettings](../resources/teamsappsettings.md)|Represents tenant-wide settings for all [Teams apps](teamsapp.md) in the tenant.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

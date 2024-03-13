@@ -3,7 +3,7 @@ title: "removeAccessApplyAction resource type"
 description: "Removes access to a resource for those denied in an access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph connectors API"
 description: "Use the Microsoft Graph connectors API to index external data that powers intelligent experiences in Microsoft 365."
 ms.localizationpriority: high
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: conceptualPageType
 ---
 

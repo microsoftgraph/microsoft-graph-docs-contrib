@@ -3,7 +3,7 @@ title: "Update emailThreatSubmissionPolicy"
 description: "Update the properties of an emailThreatSubmissionPolicy object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

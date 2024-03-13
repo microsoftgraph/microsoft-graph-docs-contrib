@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1648
+Content-Length: 1723
 
 {
   "value": [
@@ -99,7 +99,8 @@ Content-Length: 1648
       "passwordPreviousPasswordCountToBlock": 4,
       "storageRequireEncryption": true,
       "securityRequireIntuneAppIntegrity": true,
-      "requireNoPendingSystemUpdates": true
+      "requireNoPendingSystemUpdates": true,
+      "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
     }
   ]
 }

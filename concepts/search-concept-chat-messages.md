@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to search Teams messages"
 description: "You can use the Microsoft Search API in Microsoft Graph to search for information in Teams messages and return messages ranked by relevance."
 author: "yiwenwang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to search Teams messages

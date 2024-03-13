@@ -3,7 +3,7 @@ title: "customExtensionClientConfiguration resource type"
 description: "Connection settings that define how long Microsoft Entra ID can wait for a response from an external app before it shuts down the connection"
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

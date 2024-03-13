@@ -3,7 +3,7 @@ title: "siteSettings resource type"
 description: "Represents the settings of a site."
 author: "k-tsoi"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

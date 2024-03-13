@@ -3,7 +3,7 @@ title: "Get callRecording"
 description: "Get a callRecording object associated with a scheduled onlineMeeting."
 author: "v-sdhakshina"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
