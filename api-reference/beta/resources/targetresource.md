@@ -4,7 +4,7 @@ description: "Defines the targetResource entity resource complex type of the Mic
 author: "egreenberg14"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 ---
 
 # targetResource resource type

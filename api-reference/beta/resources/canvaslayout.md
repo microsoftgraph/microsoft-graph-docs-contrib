@@ -3,7 +3,7 @@ title: 'canvasLayout resource type'
 description: Represents the layout of the content in a given SharePoint page.
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

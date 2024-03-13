@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Create a SharePoint List
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Create a new list in a site."
 doc_type: apiPageType
 ---

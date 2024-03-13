@@ -3,7 +3,7 @@ title: "auditUserIdentity resource type"
 description: "An open type that represents details of the identity of a user along with information about their home tenant."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

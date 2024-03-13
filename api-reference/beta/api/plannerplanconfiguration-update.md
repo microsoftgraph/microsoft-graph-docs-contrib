@@ -3,7 +3,7 @@ title: "Update plannerPlanConfiguration"
 description: "Update the properties of a plannerPlanConfiguration object for a businessScenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 

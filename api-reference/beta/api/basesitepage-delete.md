@@ -3,7 +3,7 @@ author: "sangle7"
 description: "Delete a sitePage from the site pages list in a site."
 title: "Delete baseSitePage"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Delete baseSitePage
@@ -40,7 +40,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).| Required|
-| _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted.
+| _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted.
 
 ## Request body
 
@@ -61,6 +61,7 @@ The following example shows a request.
 ```http
 DELETE /sites/{site-id}/pages/{page-id}
 ```
+
 ### Response
 
 The following example shows the response.

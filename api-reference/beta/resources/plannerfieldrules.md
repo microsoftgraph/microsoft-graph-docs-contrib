@@ -3,7 +3,7 @@ title: "plannerFieldRules resource type"
 description: "Represents the rules and permissions that apply to a property as part of a plannerTaskPropertyRule."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

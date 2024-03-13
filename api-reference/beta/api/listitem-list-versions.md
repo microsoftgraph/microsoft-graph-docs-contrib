@@ -4,7 +4,7 @@ description: "SharePoint can be configured to retain the history for list items.
 ms.date: 09/10/2017
 title: Get a previous version of a SharePoint list record
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List versions of a listItem

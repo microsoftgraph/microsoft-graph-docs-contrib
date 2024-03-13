@@ -3,7 +3,7 @@ title: "Create or join online meetings using the cloud communications API"
 description: "Use the cloud communications API in Microsoft Graph to create or join online meetings. Create a meeting that takes place in the future or instantaneously."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Create or join online meetings

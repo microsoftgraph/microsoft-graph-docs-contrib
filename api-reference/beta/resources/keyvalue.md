@@ -3,7 +3,7 @@ title: "keyValue resource type"
 description: "Provides more relevant information about the sign-in request"
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 

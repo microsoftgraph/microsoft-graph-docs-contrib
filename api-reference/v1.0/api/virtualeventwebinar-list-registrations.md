@@ -3,7 +3,7 @@ title: "List virtualEventRegistrations"
 description: "Get a list of all registration records of a webinar."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "analyzedEmailDeliveryDetail resource type"
 description: Represnts the delivery action and location of an analyzed email.
 author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 
