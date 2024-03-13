@@ -6831,7 +6831,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [File share example](https://learn.microsoft.com/en-us/graph/api/chatmessage-post?view=graph-rest-beta&tabs=http#example-5-send-a-message-with-a-file-attachment-in-it-using-file-share-link) operation to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Description": "Added the file share example to the [chatmessage-post](https://learn.microsoft.com/en-us/graph/api/chatmessage-post?view=graph-rest-beta) operation. 
           "Target": "chat"
         },
         {
