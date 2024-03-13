@@ -3,7 +3,7 @@ author: daspek
 title: shareAction resource type
 description: The shareAction object provides information about who an item was shared to in a share action.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # shareAction resource type

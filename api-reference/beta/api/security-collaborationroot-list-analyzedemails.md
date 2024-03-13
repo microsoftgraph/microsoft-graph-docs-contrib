@@ -3,7 +3,7 @@ title: "List analyzedEmails "
 description: "Get a list of analyzedEmail objects and their properties."
 author: "ajaj-shaikh"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

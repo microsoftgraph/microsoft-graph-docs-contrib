@@ -3,11 +3,45 @@
     {
       "ChangeList": [
         {
+          "Id": "b1aeb18c-7b04-4232-98a2-8b1cb3afb6d9",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantType",
+          "ChangeType": "Change",
+          "Description": "Added `CIAM` as a possible value for the **tenantType** property of the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource. A customer identity & access management (CIAM) tenant provides an integrated platform to serve consumers, partners, and citizen scenarios.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "b1aeb18c-7b04-4232-98a2-8b1cb3afb6d9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-12T00:00:00.3091941Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e7467d63-0d13-4628-839d-3e13a8d9bdbf",
           "ApiChange": "Method",
           "ChangedApiName": "convertExternalToInternalMemberUser",
           "ChangeType": "Addition",
           "Description": "Added the [convertExternalToInternalMemberUser](https://learn.microsoft.com/en-us/graph/api/user-convertExternalToInternalMemberUser?view=graph-rest-beta) action to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. Use this action to convert a user account from an external user to an internal user.",
+          "Target": "user"
+        },
+        {
+          "Id": "e7467d63-0d13-4628-839d-3e13a8d9bdbf",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalUserConvertedOn",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalUserConvertedOn** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "e7467d63-0d13-4628-839d-3e13a8d9bdbf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conversionUserDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [conversionUserDetails](https://learn.microsoft.com/en-us/graph/api/resources/conversionuserdetails?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],

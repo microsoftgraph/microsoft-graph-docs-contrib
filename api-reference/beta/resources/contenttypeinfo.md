@@ -4,7 +4,7 @@ description: "Represents the SharePoint content type of an item."
 title: "contentTypeInfo resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentTypeInfo resource type
