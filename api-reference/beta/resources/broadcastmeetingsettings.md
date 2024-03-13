@@ -3,7 +3,7 @@ title: "broadcastMeetingSettings resource type"
 description: "Represents settings related to a live event in Microsoft Teams."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

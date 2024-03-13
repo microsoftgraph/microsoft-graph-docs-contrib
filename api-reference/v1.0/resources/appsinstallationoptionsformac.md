@@ -3,7 +3,7 @@ title: "appsInstallationOptionsForMac resource type"
 description: "Represents the tenant-level Microsoft 365 applications installation options for a MAC platform."
 author: "yan-git"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

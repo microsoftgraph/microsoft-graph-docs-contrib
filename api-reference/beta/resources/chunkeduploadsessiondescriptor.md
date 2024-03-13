@@ -3,7 +3,7 @@ title: "chunkedUploadSessionDescriptor resource type"
 description: "chunkedUploadSessionDescriptor resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: non-product-specific
+ms.subservice: non-product-specific
 author: "MSGraphDocsVteam"
 ---
 

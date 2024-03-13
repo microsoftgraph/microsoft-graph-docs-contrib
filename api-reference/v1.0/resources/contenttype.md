@@ -4,7 +4,7 @@ description: "Represents a content type in SharePoint."
 title: "contentType resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 # contentType resource type
 

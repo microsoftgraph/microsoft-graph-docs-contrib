@@ -3,7 +3,7 @@ title: "educationGradingScheme resource type"
 description: "Represents a custom scheme for grading."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "educationGradingSchemeGrade resource type"
 description: "Represents an individual grade range that contributes to a grading scheme."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
