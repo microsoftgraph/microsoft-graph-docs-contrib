@@ -3,7 +3,7 @@ title: "Update audioRoutingGroup"
 description: "Modify sources and receivers of an audioRoutingGroup."
 author: "hanknguyen"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

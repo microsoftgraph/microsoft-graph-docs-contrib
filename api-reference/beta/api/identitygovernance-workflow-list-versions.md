@@ -3,7 +3,7 @@ title: "List workflowVersions"
 description: "Get a list of the workflowVersion objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

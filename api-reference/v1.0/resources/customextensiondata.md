@@ -3,7 +3,7 @@ title: "customExtensionData resource type"
 description: "An abstract type noting the data being sent and received as part of extensibility scenarios based on custom callout extensions"
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

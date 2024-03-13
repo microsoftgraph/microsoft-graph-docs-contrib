@@ -3,7 +3,7 @@ title: "Get change notifications for messages in Teams channels and chats using 
 description: "Change notifications enable you to listen to changes to messages in channel or chat"
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 

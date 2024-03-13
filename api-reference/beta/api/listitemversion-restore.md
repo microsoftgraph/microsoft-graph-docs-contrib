@@ -4,7 +4,7 @@ description: "Restore a previous version of a ListItem to be the current version
 ms.date: 09/10/2017
 title: Restore a previous version of a SharePoint list item
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Restore a previous version of a ListItem

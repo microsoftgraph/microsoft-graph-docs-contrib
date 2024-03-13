@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "non-product-specific"
+ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
 
@@ -4640,14 +4640,6 @@ Possible values for user account types (group membership), per Windows definitio
 | androidMobileApplicationManagement|
 | iOSMobileApplicationManagement|
 | unknownFutureValue|
-
-### printReleaseType values 
-
-|Member|
-|:---|
-|direct|
-|qrCode|
-|unknownFutureValue|
 
 ### bookingPageAccessControl values 
 

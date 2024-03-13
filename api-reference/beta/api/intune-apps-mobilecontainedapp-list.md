@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

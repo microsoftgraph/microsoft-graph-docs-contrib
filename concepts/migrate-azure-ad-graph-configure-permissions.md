@@ -40,7 +40,7 @@ A user with the *Global Administrator* role can do both, while a user with the *
 
 In addition, you need the following resources and privileges:
 
-- Run the HTTP requests in a tool of your choice, for example through a custom app, through [Graph Explorer](https://aka.ms/ge), or Postman.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to run the HTTP requests.
 - The app used to make these changes must be granted the `Application.ReadWrite.All` permission.
 
 ## Use the Microsoft Graph applications API

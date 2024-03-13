@@ -3,7 +3,7 @@ title: "workflow resource type"
 description: "Represents workflows created using Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

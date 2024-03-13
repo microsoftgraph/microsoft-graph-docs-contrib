@@ -3,7 +3,7 @@ title: "expirationPattern resource type"
 description: "The expiration pattern defines when a request or assignment expires."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # expirationPattern resource type

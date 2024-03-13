@@ -4,7 +4,7 @@ description: "Provide the contents of a new file or update the contents of an ex
 ms.date: 09/10/2017
 title: Upload small files
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Upload or replace the contents of a driveItem

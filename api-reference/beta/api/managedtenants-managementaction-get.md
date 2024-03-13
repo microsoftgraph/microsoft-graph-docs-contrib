@@ -3,7 +3,7 @@ title: "Get managementAction"
 description: "Read the properties and relationships of a managementAction object."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 

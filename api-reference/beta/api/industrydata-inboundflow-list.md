@@ -3,7 +3,7 @@ title: "List inboundFlows"
 description: "Get a list of the inboundFlow objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

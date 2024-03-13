@@ -3,7 +3,7 @@ title: "accessReviewHistoryScheduleSettings resource type"
 description: "In Microsoft Entra access reviews, the accessReviewHistoryScheduleSettings represents the settings associated with an access review history definition series."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
