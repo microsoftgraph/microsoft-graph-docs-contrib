@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List the custom properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object. The caller can retrieve all custom properties or get a specific property by name.
 
 ## Permissions
