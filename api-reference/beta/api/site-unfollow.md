@@ -3,7 +3,7 @@ author: learafa
 title: Unfollow site
 description: Unfollow a user's site
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Unfollow site 

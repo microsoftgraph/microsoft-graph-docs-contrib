@@ -3,7 +3,7 @@ title: 'Get horizontalSectionColumn'
 description: 'Read the properties and relationships of a horizontalSectionColumn object.'
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: driveItem resource type
 description: Item is the main data model in the OneDrive API. Everything is an item.
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # driveItem resource type

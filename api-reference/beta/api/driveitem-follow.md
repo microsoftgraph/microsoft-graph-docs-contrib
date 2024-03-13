@@ -3,7 +3,7 @@ author: chackman
 description: "Follow a driveItem."
 title: Follow drive item
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Follow drive item
