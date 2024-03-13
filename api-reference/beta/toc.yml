@@ -10371,7 +10371,7 @@ items:
                     href: api/windowsupdates-updatepolicy-update.md
                   - name: Delete
                     href: api/windowsupdates-updatepolicy-delete.md
-          - name: Microsoft 365 apps (preview)
+          - name: Microsoft 365 apps
             displayName: Microsoft 365 applications
             items:
               - name: Admin Microsoft 365 apps
