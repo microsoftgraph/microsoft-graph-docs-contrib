@@ -3,7 +3,7 @@ title: "servicingPeriod resource type"
 description: "Represents information about a servicing period related to a product edition."
 author: "skandula"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.service: "windows-update-business"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,6 @@ Represents information about a servicing period related to a product edition. Ea
 |Property|Type|Description|
 |:---|:---|:---|
 |endDateTime|DateTimeOffset|The date and time when the servicing period ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|id|String|The unique identifier for the servicing period. Read-only.|
 |name|String|The name of the servicing period. For example, `Modern Lifecycle`.|
 |startDateTime|DateTimeOffset|The start date and time of the servicing period. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 
