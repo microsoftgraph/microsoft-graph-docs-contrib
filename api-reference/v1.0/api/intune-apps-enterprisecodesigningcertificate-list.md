@@ -48,12 +48,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_list_list_enterprisecodesigningcertificates" }-->
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/enterpriseCodeSigningCertificates
 ```
 
 # [C#](#tab/csharp)
@@ -91,7 +91,8 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCe
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response.
+>**Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.enterpriseCodeSigningCertificate" }-->
 ``` http
