@@ -61,7 +61,7 @@ The following example shows how to add a new user as a reader to a container.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/permissions
+POST https://graph.microsoft.com/v1.0/storage/fileStorage/containers/{containerId}/permissions
 Content-type: application/json
 
 {
