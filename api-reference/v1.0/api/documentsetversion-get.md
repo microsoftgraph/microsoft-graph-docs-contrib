@@ -3,7 +3,7 @@ title: "Get documentSetVersion"
 description: "Read the properties and relationships of a documentSetVersion object."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: "Represents a file, folder, or other item stored in a drive."
 title: driveItem
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
