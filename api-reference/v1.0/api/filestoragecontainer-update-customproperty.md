@@ -63,7 +63,7 @@ The following example updates the `value` property of the custom properties `cli
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/customProperties
+PATCH https://graph.microsoft.com/v1.0/storage/fileStorage/containers/{containerId}/customProperties
 Content-type: application/json
 
 {
