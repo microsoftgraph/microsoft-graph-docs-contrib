@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete permissions from a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
 
