@@ -3,7 +3,7 @@ title: "usedInsight resource type"
 description: "An insight representing documents used by a specific user. The insights return the most relevant documents that a user viewed or modified."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 

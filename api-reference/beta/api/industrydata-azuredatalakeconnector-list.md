@@ -3,7 +3,7 @@ title: "List azureDataLakeConnectors"
 description: "Get a list of the azureDataLakeConnector objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "connectivity resource type"
 description: "Represents all the connectivity components in the Global Secure Access services."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

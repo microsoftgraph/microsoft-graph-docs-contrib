@@ -3,7 +3,7 @@ title: "Update conversationthread"
 description: "Lock or unlock a thread, to allow or avoid further posting to the thread."
 ms.localizationpriority: medium
 author: "mikemcleanlive"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

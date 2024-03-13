@@ -4,7 +4,7 @@ description: "Unshare a channel with a team by deleting the corresponding shared
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Delete sharedWithChannelTeamInfo

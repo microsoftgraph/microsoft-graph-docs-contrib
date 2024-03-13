@@ -4,7 +4,7 @@ description: "Add identityProvider in a b2xIdentityUserFlow (deprecated)."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Add identityProvider to a b2xIdentityUserFlow (deprecated)

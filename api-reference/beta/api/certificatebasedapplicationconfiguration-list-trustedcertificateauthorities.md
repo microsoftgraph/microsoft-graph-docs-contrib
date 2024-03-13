@@ -3,7 +3,7 @@ title: "List trustedCertificateAuthorities"
 description: "List the trusted certificate authorities in a certificateBasedApplicationConfiguration object."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

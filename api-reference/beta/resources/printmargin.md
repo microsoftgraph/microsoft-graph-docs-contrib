@@ -3,7 +3,7 @@ title: printMargin resource type
 description: Specifies the margin widths to use when printing.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "adminConsentRequestPolicy resource type"
 description: "Represents the policy for enabling or disabling the Microsoft Entra admin consent workflow."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

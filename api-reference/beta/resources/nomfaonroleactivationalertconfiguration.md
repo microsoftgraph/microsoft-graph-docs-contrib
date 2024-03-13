@@ -3,7 +3,7 @@ title: "noMfaOnRoleActivationAlertConfiguration resource type"
 description: "Represents an alert configuration that is triggered if roles don't require multi-factor authentication for activation."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

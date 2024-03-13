@@ -3,7 +3,7 @@ title: "educationAssignmentDefaults resource type"
 description: "Specifies class-level defaults respected by new assignments created in a class."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

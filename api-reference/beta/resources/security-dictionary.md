@@ -3,7 +3,7 @@ title: "dictionary resource type"
 description: "Represents a dictionary type."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

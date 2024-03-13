@@ -3,7 +3,7 @@ title: "Delete calendarGroup"
 description: "Delete a calendar group other than the default calendar group."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

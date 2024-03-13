@@ -3,7 +3,7 @@ title: "kubernetesServiceEvidence resource type"
 description: "Represents a Kubernetes service entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

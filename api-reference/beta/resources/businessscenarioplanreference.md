@@ -3,7 +3,7 @@ title: "businessScenarioPlanReference resource type"
 description: "Represents a reference to a plannerPlan object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

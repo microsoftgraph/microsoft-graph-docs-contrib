@@ -4,7 +4,7 @@ description: "Learn how Microsoft Graph supports server-side and client-side pag
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/14/2024
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started

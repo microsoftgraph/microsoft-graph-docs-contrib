@@ -3,7 +3,7 @@ title: "eventMessageDetail resource type"
 description: "Represents details of a system event message."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

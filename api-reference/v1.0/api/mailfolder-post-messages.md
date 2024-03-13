@@ -3,7 +3,7 @@ title: "Create message in a mailfolder"
 description: "Use this API to create a new Message in a mailfolder."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
