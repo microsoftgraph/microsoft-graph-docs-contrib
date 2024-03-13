@@ -48,7 +48,7 @@ Here's a JSON representation of a **baseItem** resource.
 
 | Property             | Type              | Description                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| description          | string            | *TODO*                                                                                 |
+| description          | string            | The description of the item.                                                           |
 | id                   | string            | The unique identifier of the drive. Read-only.                                         |
 | createdBy            | [identitySet][]   | Identity of the user, device, or application that created the item. Read-only.         |
 | createdDateTime      | dateTimeOffset    | Date and time of item creation. Read-only.                                             |
