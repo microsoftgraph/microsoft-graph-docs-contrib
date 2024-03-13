@@ -2,8 +2,9 @@
 title: "List directorySettingTemplates"
 description: "This operation retrieves the list of available directorySettingTemplates objects."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "directory-management"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

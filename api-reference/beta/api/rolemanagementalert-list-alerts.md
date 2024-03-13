@@ -3,7 +3,7 @@ title: "List alerts"
 description: "Get a list of the unifiedRoleManagementAlert objects and their properties."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -154,14 +154,14 @@ Content-Type: application/json
                     "id": "f5417b06-cdae-417f-9589-a334104206cf",
                     "assigneeId": "f5417b06-cdae-417f-9589-a334104206cf",
                     "assigneeDisplayName": "testUser1",
-                    "assigneeUserPrincipalName": "testuser1@anujcoffice.onmicrosoft.com"
+                    "assigneeUserPrincipalName": "testuser1@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
                     "id": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
                     "assigneeId": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
                     "assigneeDisplayName": "testUser2",
-                    "assigneeUserPrincipalName": "testuser2@anujcoffice.onmicrosoft.com"
+                    "assigneeUserPrincipalName": "testuser2@contoso.com"
                 }
             ]
         }

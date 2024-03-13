@@ -4,7 +4,7 @@ description: "Retrieve the list of channels in this team."
 author: "nkramer"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # List channels
@@ -324,6 +324,6 @@ Content-length: 262
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

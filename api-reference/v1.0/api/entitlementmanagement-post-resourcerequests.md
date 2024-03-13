@@ -3,7 +3,7 @@ title: "Create accessPackageResourceRequest"
 description: "Create a new accessPackageResourceRequest."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -18,7 +18,7 @@ Create a new [accessPackageResourceRequest](../resources/accesspackageresourcere
 - To add a SharePoint Online site as a resource to a catalog, set the **requestType** to be `adminAdd`, and a `resource` representing the resource. The value of the **originSystem** property within the `resource` should be `SharePointOnline` and the value of the **originId** is the URI of the site.
 - To remove a resource from a catalog, set the **requestType** to be `adminRemove`, and the `resource` to contain the `id` of the [resource](../resources/accesspackageresource.md) object to be removed.  The resource object can be retrieved using [list resources](accesspackagecatalog-list-resources.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

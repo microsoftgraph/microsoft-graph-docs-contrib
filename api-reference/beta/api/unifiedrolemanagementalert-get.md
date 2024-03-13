@@ -3,7 +3,7 @@ title: "Get unifiedRoleManagementAlert"
 description: "Get a single security alert by its ID from Privileged Identity Management (PIM) for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -150,21 +150,21 @@ Content-Type: application/json
             "id": "f5417b06-cdae-417f-9589-a334104206cf",
             "assigneeId": "f5417b06-cdae-417f-9589-a334104206cf",
             "assigneeDisplayName": "testUser1",
-            "assigneeUserPrincipalName": "testuser1@anujcoffice.onmicrosoft.com"
+            "assigneeUserPrincipalName": "testuser1@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
             "assigneeId": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
             "assigneeDisplayName": "testUser2",
-            "assigneeUserPrincipalName": "testuser2@anujcoffice.onmicrosoft.com"
+            "assigneeUserPrincipalName": "testuser2@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
             "id": "d15bb922-c926-412e-aae3-30afb1c8a0b6",
             "assigneeId": "d15bb922-c926-412e-aae3-30afb1c8a0b6",
             "assigneeDisplayName": "testUser3",
-            "assigneeUserPrincipalName": "testuser3@anujcoffice.onmicrosoft.com"
+            "assigneeUserPrincipalName": "testuser3@contoso.com"
         }
     ]
 }

@@ -3,7 +3,7 @@ title: "Delete tab from channel"
 description: "Removes (unpins) a tab from the specified channel within a team. "
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -78,6 +78,6 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

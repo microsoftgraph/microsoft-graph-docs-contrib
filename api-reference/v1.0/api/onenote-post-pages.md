@@ -3,7 +3,7 @@ title: "Create onenotePage"
 description: "Create a new OneNote page in the default section of the default notebook."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 

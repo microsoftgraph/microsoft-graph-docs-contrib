@@ -3,7 +3,7 @@ title: "alertTrigger resource type"
 description: "Contains information about the properties that triggered a detection (properties exist in the alert entity)."
 author: "preetikr"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

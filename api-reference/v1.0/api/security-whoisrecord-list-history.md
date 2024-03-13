@@ -3,7 +3,7 @@ title: "List history"
 description: "Get a list of whoisHistoryRecord objects for a whoisRecord, including the properties and relationships of each whoisHistoryRecord object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -78,10 +78,6 @@ The following is an example of a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.com/whois/history
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-whoishistoryrecord-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-whoishistoryrecord-javascript-snippets.md)]

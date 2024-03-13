@@ -3,7 +3,7 @@ title: "team: clone"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -159,6 +159,6 @@ Content-Length: 0
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

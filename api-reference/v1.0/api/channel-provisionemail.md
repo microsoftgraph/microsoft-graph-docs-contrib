@@ -3,7 +3,7 @@ title: "channel: provisionEmail"
 description: "Provision an email address for a channel."
 author: "anandab-msft"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Microsoft Teams doesn't automatically provision an email address for a **channel
 
 To remove the email address of a **channel**, use the [removeEmail](channel-removeemail.md) method.
 
-> **Notes**: 
+> **Notes**:
 > This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
@@ -112,7 +112,7 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.provisionChannelEmailResult",
-    "email": "1df8f174.teamsgraph.onmicrosoft.com@amer.teams.ms"
+    "email": "contoso.com@amer.teams.ms"
 }
 ```
 <!-- uuid: e848414b-4669-4484-ac36-1504c58a3fb8

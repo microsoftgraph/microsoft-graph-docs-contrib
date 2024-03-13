@@ -32,6 +32,10 @@ windowsSettings := graphmodels.NewCloudPcWindowsSettings()
 language := "en-US"
 windowsSettings.SetLanguage(&language) 
 requestBody.SetWindowsSettings(windowsSettings)
+windowsSetting := graphmodels.NewCloudPcWindowsSetting()
+locale := "en-US"
+windowsSetting.SetLocale(&locale) 
+requestBody.SetWindowsSetting(windowsSetting)
 
 provisioningPolicies, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().ByCloudPcProvisioningPolicyId("cloudPcProvisioningPolicy-id").Patch(context.Background(), requestBody, nil)
 

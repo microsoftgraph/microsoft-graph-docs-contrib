@@ -3,7 +3,7 @@ title: "orgContact: delta"
 description: "Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection." 
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -342,7 +342,7 @@ Content-type: application/json
   ]
 }
 ```
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 

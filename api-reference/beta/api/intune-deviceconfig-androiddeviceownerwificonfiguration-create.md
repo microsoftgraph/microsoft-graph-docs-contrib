@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -72,6 +74,7 @@ The following table shows the properties that are required when you create the a
 |proxyManualPort|Int32|Specify the proxy server port.|
 |proxyAutomaticConfigurationUrl|String|Specify the proxy server configuration script URL.|
 |proxyExclusionList|String|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com.|
+|macAddressRandomizationMode|[macAddressRandomizationMode](../resources/intune-deviceconfig-macaddressrandomizationmode.md)|The MAC address randomization mode for Android device Wi-Fi configuration. Possible values include automatic and hardware. Default value is automatic. Possible values are: `automatic`, `hardware`, `unknownFutureValue`.|
 
 
 
@@ -85,7 +88,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1540
+Content-length: 1586
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerWiFiConfiguration",
@@ -128,7 +131,8 @@ Content-length: 1540
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
-  "proxyExclusionList": "Proxy Exclusion List value"
+  "proxyExclusionList": "Proxy Exclusion List value",
+  "macAddressRandomizationMode": "hardware"
 }
 ```
 
@@ -137,7 +141,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1712
+Content-Length: 1758
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerWiFiConfiguration",
@@ -183,6 +187,7 @@ Content-Length: 1712
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
-  "proxyExclusionList": "Proxy Exclusion List value"
+  "proxyExclusionList": "Proxy Exclusion List value",
+  "macAddressRandomizationMode": "hardware"
 }
 ```

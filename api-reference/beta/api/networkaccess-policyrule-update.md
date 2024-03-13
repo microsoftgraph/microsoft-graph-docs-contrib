@@ -3,7 +3,7 @@ title: "Update policyRule"
 description: "Update an existing forwarding rule within a forwarding policy."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
@@ -77,6 +77,10 @@ PATCH https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{forward
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-policyrule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-policyrule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

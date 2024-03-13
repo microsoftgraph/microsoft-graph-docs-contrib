@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: "driveItem: delta"
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Track changes in a drive item and its children over time."
 doc_type: apiPageType
 ---
@@ -437,7 +437,7 @@ For more information about scanning scenarios, see [Best practices for discoveri
 
 In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
 
-## See also
+## Related content
 [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance)
 

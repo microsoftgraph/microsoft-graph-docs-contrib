@@ -3,7 +3,7 @@ title: "Create educationSubmissionResource"
 description: "Add a resource to the submission resource list."
 author: "sharad-sharma-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -665,7 +665,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 * [Upload files for education assignments and submissions](/graph/education-upload-resource-overview)

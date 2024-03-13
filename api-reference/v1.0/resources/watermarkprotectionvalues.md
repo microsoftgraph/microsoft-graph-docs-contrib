@@ -3,7 +3,7 @@ title: "watermarkProtectionValues resource type"
 description: "Indicates whether a watermark is enabled for different content types in a meeting."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "onlineMeeting: getAllTranscripts"
 description: "Get transcripts from all online meetings that a user is an organizer of."
 author: "jacobsatora"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -133,7 +133,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 - [Delta query overview](/graph/delta-query-overview) 

@@ -3,7 +3,7 @@ title: "sitepage: getWebPartsByPosition"
 description: "Get a collection of webParts by position information"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -80,10 +80,6 @@ The following is an example of a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{siteId}/pages/{sitePageId}/microsoft.graph.sitePage/getWebPartsByPosition?isInVerticalSection=true
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-webparts-by-position-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-webparts-by-position-javascript-snippets.md)]

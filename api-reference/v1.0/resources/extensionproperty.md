@@ -90,7 +90,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Add custom properties to resources using extensions](/graph/extensibility-overview)
 

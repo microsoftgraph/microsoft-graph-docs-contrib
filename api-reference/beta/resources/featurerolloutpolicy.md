@@ -3,7 +3,7 @@ title: "featureRolloutPolicy resource type"
 description: "Represents a feature rollout policy associated with a directory object."
 ms.localizationpriority: medium
 author: "madhavpatel6"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 

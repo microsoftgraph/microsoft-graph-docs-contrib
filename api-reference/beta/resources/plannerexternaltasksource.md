@@ -3,7 +3,7 @@ title: "plannerExternalTaskSource resource type"
 description: "Contains information about the relationship of a plannerTask to a user experience outside of Planner."
 author: "DanluCui"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

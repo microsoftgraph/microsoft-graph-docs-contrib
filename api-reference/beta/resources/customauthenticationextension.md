@@ -3,7 +3,7 @@ title: "customAuthenticationExtension resource type"
 description: "Custom authentication extensions let you interact with external systems during a user authentication session."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -74,7 +74,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 - [Configure a custom claim provider token issuance event (preview)](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context)
 

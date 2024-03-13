@@ -3,7 +3,7 @@ title: "Create resourceRoleScope"
 description: "Create a new accessPackageResourceRoleScope for adding a resource role to an access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Create a new [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) for adding a resource role to an access package. The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the **originId** for the resource role retrieved from the [list of the resource roles](accesspackagecatalog-list-resourceroles.md). Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

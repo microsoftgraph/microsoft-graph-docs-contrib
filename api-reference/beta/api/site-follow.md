@@ -3,7 +3,7 @@ author: learafa
 title: Follow site
 description: Follow a user's site/sites.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Follow site 
@@ -68,10 +68,6 @@ Content-Type: application/json
     ] 
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/follow-site-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]

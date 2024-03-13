@@ -3,7 +3,7 @@ title: "Get excludedAccountTarget"
 description: "Get excluded account targets (users) for an attack simulation campaign for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -63,10 +63,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/excludedAccountTarget
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-excludedaccounttarget-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-excludedaccounttarget-javascript-snippets.md)]

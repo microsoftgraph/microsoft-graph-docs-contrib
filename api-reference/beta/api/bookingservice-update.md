@@ -3,7 +3,7 @@ title: "Update bookingservice"
 description: "Update the properties of a bookingService object in the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}/services/{id}
+PATCH /solutions/bookingbusinesses/{id}/services/{id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -41,7 +41,7 @@ PATCH /bookingBusinesses/{id}/services/{id}
 | Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -53,15 +53,16 @@ In the request body, supply the values for relevant fields that should be update
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
 |id|String| Read-only.|
-|isAnonymousJoinEnabled|Boolean|`True` if the URL to join the appointment anonymously (**anonymousJoinWebUrl**) will be generated for the appointment booked for this service.|
+|isAnonymousJoinEnabled|Boolean|`True` if the URL to join the appointment anonymously (**anonymousJoinWebUrl**) is generated for the appointment booked for this service.|
+|isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
 |isHiddenFromCustomers|Boolean|True means this service isn't available to customers for booking.|
-|isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
+|isLocationOnline|Boolean|True indicates that the appointments for the service are held online. The default value is `false`.|
 |languageTag|String|The language of the self-service booking page.|
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
-|smsNotificationsEnabled|Boolean|True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.|
+|smsNotificationsEnabled|Boolean|True indicates SMS notifications can be sent to the customers for the appointment of the service. The default value is `false`.|
 |staffMemberIds|String collection|Represents those [staff members](../resources/bookingstaffmember.md) who provide this service. |
 |customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection|This contains the set of custom questions associated with a particular service. Optional.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
@@ -76,10 +77,10 @@ The following example updates the duration of the specified service.
 <!-- {
   "blockType": "request",
   "name": "update_bookingservice",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "57da6774-a087-4d69-b0e6-6fb82c339976"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "57da6774-a087-4d69-b0e6-6fb82c339976"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 Content-type: application/json
 
 {
@@ -110,10 +111,6 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-bookingservice-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingservice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

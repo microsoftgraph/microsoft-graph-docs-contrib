@@ -3,7 +3,7 @@ title: "List tabs in channel"
 description: "Retrieve the list of tabs in the specified channel within a team. "
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -257,6 +257,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

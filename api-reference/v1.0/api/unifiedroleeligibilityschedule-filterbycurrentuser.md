@@ -3,7 +3,7 @@ title: "unifiedRoleEligibilitySchedule: filterByCurrentUser"
 description: "Retrieve the schedules for role eligibilities for which the signed-in user is the principal."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -19,6 +19,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "unifiedroleeligibilityschedule_filterbycurrentuser" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleeligibilityschedule-filterbycurrentuser-permissions.md)]
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ## HTTP request
 

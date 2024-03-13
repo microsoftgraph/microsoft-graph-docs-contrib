@@ -3,7 +3,7 @@ title: "List provisioningPolicies"
 description: "List the properties and relationships of all Cloud PC provisioning policies."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -112,8 +112,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.cloudPcProvisioningPolicy)"
 }
 -->
 
@@ -149,6 +148,9 @@ Content-Type: application/json
       "imageType":"custom",
       "windowsSettings": {
         "language": "en-US"
+      },
+      "windowsSetting": {
+          "locale": "en-US"
       },
       "managedBy": "windows365",
       "provisioningType": "dedicated"

@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -65,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1819
+Content-Length: 1867
 
 {
   "value": {
@@ -112,7 +114,8 @@ Content-Length: 1819
     "proxyManualAddress": "Proxy Manual Address value",
     "proxyManualPort": 15,
     "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
-    "proxyExclusionList": "Proxy Exclusion List value"
+    "proxyExclusionList": "Proxy Exclusion List value",
+    "macAddressRandomizationMode": "hardware"
   }
 }
 ```

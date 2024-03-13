@@ -3,7 +3,7 @@ title: "Update educationassignment"
 description: "Update an educationAssigment object."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -179,7 +179,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 * [Specify the default channel for education assignment notifications](/graph/education-build-notificationchannelurl)

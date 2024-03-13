@@ -12,8 +12,8 @@ const client = Client.init(options);
 
 const mailTips = {
     EmailAddresses: [
-        'danas@contoso.onmicrosoft.com',
-        'fannyd@contoso.onmicrosoft.com'
+        'danas@contoso.com',
+        'fannyd@contoso.com'
     ],
     MailTipsOptions: 'automaticReplies, mailboxFullStatus'
 };

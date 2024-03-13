@@ -3,7 +3,7 @@ title: "Update accessPackageAssignmentRequestWorkflowExtension"
 description: "Update the properties of an accessPackageAssignmentRequestWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -75,10 +75,6 @@ Content-Type: application/json
   "description": "this is for graph testing only"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentrequestworkflowextension-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentrequestworkflowextension-javascript-snippets.md)]

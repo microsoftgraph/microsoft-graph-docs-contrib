@@ -3,7 +3,7 @@ title: "Update unifiedRoleManagementPolicyRule"
 description: "Update a rule defined for a role management policy."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -37,6 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ### For PIM for groups
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
@@ -190,7 +192,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 + [Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
 + [Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules)

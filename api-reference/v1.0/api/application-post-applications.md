@@ -4,7 +4,7 @@ description: "Create a new application."
 author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Create application
@@ -126,7 +126,7 @@ Content-type: application/json
     "groupMembershipClaims": null,
     "optionalClaims": null,
     "addIns": [],
-    "publisherDomain": "contoso.onmicrosoft.com",
+    "publisherDomain": "contoso.com",
     "samlMetadataUrl": "https://graph.microsoft.com/2h5hjaj542de/app",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "tags": [],

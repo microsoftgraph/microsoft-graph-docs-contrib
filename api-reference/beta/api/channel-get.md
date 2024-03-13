@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a channel."
 author: "nkramer"
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Get channel
@@ -309,6 +309,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

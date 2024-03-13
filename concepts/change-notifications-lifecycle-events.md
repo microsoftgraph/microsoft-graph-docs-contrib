@@ -1,7 +1,7 @@
 ---
 title: "Reduce missing change notifications and removed subscriptions"
 description: "Subscribe to Microsoft Graph lifecycle notifications to help you minimize the risk of missed change notifications or removed subscriptions."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
 ms.localizationpriority: high

@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "5e605695-52a5-406e-8832-2e59b74f8c75",
+          "ApiChange": "Resource",
+          "ChangedApiName": "shiftsRolePermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [shiftsRolePermission](https://learn.microsoft.com/en-us/graph/api/resources/shiftsRolePermission?view=graph-rest-beta) resource type.",
+          "Target": "shiftsRolePermission"
+        },
+        {
+          "Id": "5e605695-52a5-406e-8832-2e59b74f8c75",
+          "ApiChange": "Resource",
+          "ChangedApiName": "shiftsRoleDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the **shiftsRoleDefinitions** relationship to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "5e605695-52a5-406e-8832-2e59b74f8c75",
+          "ApiChange": "Resource",
+          "ChangedApiName": "shiftsRoleDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [shiftsRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/shiftsRoleDefinition?view=graph-rest-beta) resource and associated methods.",
+          "Target": "shiftsRoleDefinition"
+        }
+      ],
+      "Id": "5e605695-52a5-406e-8832-2e59b74f8c75",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-26T17:08:29.4849464Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
           "ApiChange": "Resources",
           "ChangedApiName": "resourceSpecificPermissionGrant",
@@ -461,6 +495,162 @@
       "CreatedDateTime": "2023-12-04T15:45:17.4079567Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Resource",
+          "ChangedApiName": "schedulingGroupInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [schedulingGroupInfo](https://learn.microsoft.com/en-us/graph/api/resources/schedulingGroupInfo?view=graph-rest-beta) resource.",
+          "Target": "schedulingGroupInfo"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Resource",
+          "ChangedApiName": "shiftsTeamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [shiftsTeamInfo](https://learn.microsoft.com/en-us/graph/api/resources/shiftsTeamInfo?view=graph-rest-beta) resource.",
+          "Target": "shiftsTeamInfo"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Resource",
+          "ChangedApiName": "shiftsUserInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [shiftsUserInfo](https://learn.microsoft.com/en-us/graph/api/resources/shiftsUserInfo?view=graph-rest-beta) resource.",
+          "Target": "shiftsUserInfo"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Property",
+          "ChangedApiName": "schedulingGroupInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **schedulingGroupInfo** property to the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openShift?view=graph-rest-beta) resource.",
+          "Target": "openShift"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Property",
+          "ChangedApiName": "schedulingGroupName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **schedulingGroupName** property from the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openShift?view=graph-rest-beta) resource.",
+          "Target": "openShift"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamId** property from the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openShift?view=graph-rest-beta) resource.",
+          "Target": "openShift"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamInfo** property to the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openShift?view=graph-rest-beta) resource.",
+          "Target": "openShift"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamName** property from the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openShift?view=graph-rest-beta) resource.",
+          "Target": "openShift"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Property",
+          "ChangedApiName": "schedulingGroupInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **schedulingGroupInfo** property to the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta) resource.",
+          "Target": "shift"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamInfo** property to the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta) resource.",
+          "Target": "shift"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Property",
+          "ChangedApiName": "userInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **userInfo** property to the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta) resource.",
+          "Target": "shift"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamInfo** property to the [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeOff?view=graph-rest-beta) resource.",
+          "Target": "timeOff"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Property",
+          "ChangedApiName": "userInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **userInfo** property to the [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeOff?view=graph-rest-beta) resource.",
+          "Target": "timeOff"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Method",
+          "ChangedApiName": "getShifts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getShifts](https://learn.microsoft.com/en-us/graph/api/team-getShifts?view=graph-rest-beta) method to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+          "ApiChange": "Method",
+          "ChangedApiName": "getTimesOff",
+          "ChangeType": "Addition",
+          "Description": "Added the [getTimesOff](https://learn.microsoft.com/en-us/graph/api/team-getTimesOff?view=graph-rest-beta) method to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "9c2ea612-a2ad-4dcb-9818-35f2be538c50",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-08T10:30:51.4178542Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1b890fd8-a5a6-4691-8286-21f9ed1bf21d",
+          "ApiChange": "Property",
+          "ChangedApiName": "isCrossLocationShiftRequestApprovalRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isCrossLocationShiftRequestApprovalRequired** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "1b890fd8-a5a6-4691-8286-21f9ed1bf21d",
+          "ApiChange": "Property",
+          "ChangedApiName": "isCrossLocationShiftsEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isCrossLocationShiftsEnabled** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        }
+      ],
+      "Id": "1b890fd8-a5a6-4691-8286-21f9ed1bf21d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-16T11:22:07.883123Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
     }
   ]
 }

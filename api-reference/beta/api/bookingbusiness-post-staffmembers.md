@@ -3,7 +3,7 @@ title: "Create bookingStaffMember"
 description: "Create a new staff member in the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/staffMembers
+POST /solutions/bookingbusinesses/{id}/staffMembers
 
 ```
 ## Request headers
@@ -55,7 +55,7 @@ The following example shows a request.
   "name": "create_bookingstaffmember_from_bookingbusiness"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/{id}/staffMembers
 Content-type: application/json
 
 {
@@ -163,10 +163,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-bookingstaffmember-from-bookingbusiness-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-bookingstaffmember-from-bookingbusiness-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-bookingstaffmember-from-bookingbusiness-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -187,7 +183,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/staffMembers/$entity",
     "id":"8ee1c803-a1fa-406d-8259-7ab53233f148",
     "displayName":"Dana Swope",
     "emailAddress":"danas@contoso.com",

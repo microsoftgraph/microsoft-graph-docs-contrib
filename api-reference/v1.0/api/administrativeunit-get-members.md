@@ -3,7 +3,7 @@ title: "Get a member"
 description: "Use this API to get a specific member (user, group, or device) in an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -54,10 +54,6 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9-4847-bbf2-dde106594bf4/members/5bde3e51-d13b-4db1-9948-fe4b109d11a7
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-administrativeunit-members-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-administrativeunit-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,11 +83,11 @@ Content-type: application/json
     "displayName": "MOD Administrator",
     "givenName": "MOD",
     "jobTitle": null,
-    "mail": "admin@M365x214355.onmicrosoft.com",
+    "mail": "admin@contoso.com",
     "mobilePhone": "5555555555",
     "officeLocation": null,
     "preferredLanguage": "en-US",
     "surname": "Administrator",
-    "userPrincipalName": "admin@M365x214355.onmicrosoft.com"
+    "userPrincipalName": "admin@contoso.com"
 }
 ```

@@ -4,7 +4,7 @@ description: "A collection of groups enabled to use Text Message authentication 
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

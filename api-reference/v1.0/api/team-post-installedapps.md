@@ -3,7 +3,7 @@ title: "Add app to team"
 description: "Installs an app to the specified team."
 author: "akjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -205,7 +205,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 ```
 
-## See also
+## Related content
 
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

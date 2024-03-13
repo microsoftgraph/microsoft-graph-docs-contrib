@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a baseSitePage object."
 ms.date: 03/15/2018
 title: Get baseSitePage
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. 
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -147,13 +147,13 @@ Content-type: application/json
     "createdBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "lastModifiedBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "parentReference": {

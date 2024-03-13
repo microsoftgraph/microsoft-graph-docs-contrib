@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_management_partner import DeviceManagementPartner
+from msgraph.generated.models.device_management_partner_assignment import DeviceManagementPartnerAssignment
+from msgraph.generated.models.configuration_manager_collection_assignment_target import ConfigurationManagerCollectionAssignmentTarget
 
 graph_client = GraphServiceClient(credentials, scopes)
 

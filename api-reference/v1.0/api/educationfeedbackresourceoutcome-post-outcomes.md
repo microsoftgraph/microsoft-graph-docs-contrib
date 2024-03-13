@@ -3,7 +3,7 @@ title: "Create educationFeedbackResourceOutcome"
 description: "Create a new feedback resource for a submission."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -157,7 +157,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 To upload an existing file, see [Upload feedback files for education submissions](/graph/education-upload-feedback-resource-overview).
 

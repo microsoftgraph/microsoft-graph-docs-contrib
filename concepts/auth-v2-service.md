@@ -1,11 +1,11 @@
 ---
 title: "Get access without a user"
 description: "Learn how an app obtains an access token from the Microsoft identity platform and calls Microsoft Graph with its own identity."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.custom: graphiamtop20
 ms.date: 09/08/2023
 #customer intent: As a developer, I want to understand how my app can call Microsoft Graph on behalf of a signed-in user to access resources in a tenant.
@@ -34,9 +34,11 @@ For an app to get authorization and access to Microsoft Graph using the client c
 4. Request an access token.
 5. Call Microsoft Graph using the access token.
 
+<!--
 > [!TIP]
 > [![Try steps 2-5 in Postman](./images/auth-v2/runinpostman.png)](https://app.getpostman.com/run-collection/f77994d794bab767596d)<br/>
 > Try steps 2-5 in Postman. Don't forget to replace tokens and IDs!
+-->
 
 ## 1. Register the app
 
@@ -127,11 +129,6 @@ https://localhost/myapp/permissions?admin_consent=True&tenant=38d49456-54d4-455d
 | tenant        | The directory tenant that granted your application the permissions that it requested, in GUID format.
 | state         | A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.
 | admin_consent | Set to **True**.
-
-
-> **Try**: You can try this for yourself by pasting the following request in a browser. If you sign in as a global administrator for a Microsoft Entra tenant, you will be presented with the administrator consent dialog box for the app.
-> 
-> https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=https://localhost/myapp/permissions 
 
 ## 4. Request an access token
 

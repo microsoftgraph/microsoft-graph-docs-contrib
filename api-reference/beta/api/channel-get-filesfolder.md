@@ -3,7 +3,7 @@ title: "Get filesFolder"
 description: "Retrieve the filesFolder navigation path of a channel."
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

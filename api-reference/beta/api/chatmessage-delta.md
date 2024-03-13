@@ -4,7 +4,7 @@ description: "Retrieve the list of messages (without the replies) in a channel o
 ms.localizationpriority: high
 doc_type: apiPageType
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # chatMessage: delta

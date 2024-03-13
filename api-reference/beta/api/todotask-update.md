@@ -3,7 +3,7 @@ title: "Update todoTask"
 description: "Update the properties of a todoTask object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

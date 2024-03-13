@@ -2,8 +2,9 @@
 title: "List groups"
 description: "List all the groups available in an organization, excluding dynamic distribution groups."
 ms.localizationpriority: high
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -169,7 +170,7 @@ Content-type: application/json
          "preferredDataLocation":"CAN",
          "preferredLanguage":null,
          "proxyAddresses":[
-            "smtp:golfassist@contoso.onmicrosoft.com",
+            "smtp:golfassist@contoso.com",
             "SMTP:golfassist@contoso.com"
          ],
          "renewedDateTime":"2018-12-22T02:21:05Z",
@@ -207,7 +208,7 @@ Content-type: application/json
          "preferredDataLocation":"CAN",
          "preferredLanguage":null,
          "proxyAddresses":[
-            "smtp:golftalk@contoso.onmicrosoft.com",
+            "smtp:golftalk@contoso.com",
             "SMTP:golftalk@contoso.com"
          ],
          "renewedDateTime":"2018-11-19T20:29:40Z",
@@ -464,7 +465,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-video-count-or-description-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

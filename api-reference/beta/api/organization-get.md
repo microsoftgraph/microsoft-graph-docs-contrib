@@ -2,8 +2,9 @@
 title: "Get organization"
 description: "Retrieve the properties and relationships of currently authenticated organization."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "directory-management"
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -208,7 +209,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

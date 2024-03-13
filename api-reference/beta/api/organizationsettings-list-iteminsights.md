@@ -3,7 +3,7 @@ title: "List itemInsights"
 description: "Retrieve properties of insightsSettings object for displaying or returning item insights in an organization."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 
@@ -118,5 +118,5 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 [Customize people insights privacy](/graph/insights-customize-people-insights-privacy) for an organization.

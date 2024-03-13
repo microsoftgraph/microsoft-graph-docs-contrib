@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.transfer_post_request_body import TransferPostRequestBody
+from msgraph.generated.models.invitation_participant_info import InvitationParticipantInfo
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.identity import Identity
+from msgraph.generated.models.participant_info import ParticipantInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

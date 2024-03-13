@@ -4,7 +4,7 @@ description: "Represents a phone number and type that's registered to a user."
 ms.localizationpriority: medium
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

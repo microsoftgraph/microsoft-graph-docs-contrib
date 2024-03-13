@@ -3,7 +3,7 @@ author: learafa
 description: "Check out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is checked-in."
 title: "driveItem: checkout"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # driveItem: checkout

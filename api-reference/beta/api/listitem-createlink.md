@@ -3,7 +3,7 @@ title: "listItem: createLink"
 description: "Create a link to share a listItem"
 author: "learafa"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

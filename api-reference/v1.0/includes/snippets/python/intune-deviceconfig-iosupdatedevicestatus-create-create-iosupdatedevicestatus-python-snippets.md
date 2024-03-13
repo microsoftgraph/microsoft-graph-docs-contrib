@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_update_device_status import IosUpdateDeviceStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -3,7 +3,7 @@ title: "Get trustFrameworkKeySet"
 description: "Retrieve the properties and relationships of trustframeworkkeyset object."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "List simulationUsers"
 description: "List users of a tenant and their online actions in an attack simulation campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -74,10 +74,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/report/simulationUsers
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-usersimulationdetails-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-usersimulationdetails-javascript-snippets.md)]

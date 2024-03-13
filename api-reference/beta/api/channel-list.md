@@ -4,7 +4,7 @@ description: "Retrieve the list of channels in this team."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # List channels
@@ -117,7 +117,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 #### Response
 
-The following is the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -327,6 +327,6 @@ Content-length: 262
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

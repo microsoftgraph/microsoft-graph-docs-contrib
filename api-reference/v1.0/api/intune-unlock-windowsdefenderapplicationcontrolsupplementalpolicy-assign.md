@@ -59,7 +59,6 @@ If successful, this action returns a `204 No Content` response code.
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationControlSupplementalPolicyId}/assign
-
 Content-type: application/json
 Content-length: 319
 

@@ -242,7 +242,7 @@ var requestBody = new BookingAppointment
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].Appointments.PostAsync(requestBody);
+var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Appointments.PostAsync(requestBody);
 
 
 ```

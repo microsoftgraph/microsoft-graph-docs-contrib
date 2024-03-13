@@ -3,7 +3,7 @@ title: "Get member of team"
 description: "Get member of team."
 author: "akjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -143,7 +143,7 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 - [Get member of channel](channel-get-members.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

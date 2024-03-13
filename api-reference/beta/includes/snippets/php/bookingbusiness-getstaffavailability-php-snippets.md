@@ -20,6 +20,6 @@ $endDateTime->setDateTime('2022-01-26T17:00:00');
 $endDateTime->setTimeZone('Pacific Standard Time');
 $requestBody->setEndDateTime($endDateTime);
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->getStaffAvailability()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->getStaffAvailability()->post($requestBody)->wait();
 
 ```

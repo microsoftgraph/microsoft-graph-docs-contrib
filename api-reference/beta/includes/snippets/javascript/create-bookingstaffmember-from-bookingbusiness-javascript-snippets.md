@@ -90,7 +90,7 @@ const bookingStaffMember = {
     isEmailNotificationEnabled: false
 };
 
-await client.api('/bookingBusinesses/{id}/staffMembers')
+await client.api('/solutions/bookingbusinesses/{id}/staffMembers')
 	.version('beta')
 	.post(bookingStaffMember);
 

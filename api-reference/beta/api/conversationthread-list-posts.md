@@ -3,7 +3,7 @@ title: "List posts"
 description: "Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, "
 ms.localizationpriority: medium
 author: "mikemcleanlive"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, 
+Get the posts of the specified thread. You can specify both the parent conversation and the thread, or,
 you can specify the thread without referencing the parent conversation.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -127,13 +127,13 @@ Content-type: application/json
             "from":{
                 "emailAddress":{
                     "name":"Marketing",
-                    "address":"Marketing@M365B489948.onmicrosoft.com"
+                    "address":"Marketing@contoso.com"
                 }
             },
             "sender":{
                 "emailAddress":{
                     "name":"Marketing",
-                    "address":"Marketing@M365B489948.onmicrosoft.com"
+                    "address":"Marketing@contoso.com"
                 }
             }
         }

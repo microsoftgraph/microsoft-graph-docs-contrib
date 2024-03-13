@@ -3,7 +3,7 @@ title: "Get deleted item (directory object)"
 description: "Retrieve the properties of a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md).
+Retrieve the properties of a recently deleted [administrative unit](../resources/administrativeunit.md), [application](../resources/application.md), [externalUserProfile](../resources/externaluserprofile.md), [group](../resources/group.md), [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) objects from [deleted items](../resources/directory.md).
 
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 
@@ -27,7 +27,9 @@ The following table shows the least privileged permission or permissions require
 |:-|:-|:-|:-|
 | [administrativeUnit](../resources/administrativeunit.md) | AdministrativeUnit.Read.All | Not supported. | AdministrativeUnit.Read.All |
 | [application](../resources/application.md) | Application.Read.All | Not supported. | Application.Read.All |
+| [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.Read.All | Not supported | ExternalUserProfile.Read.All |
 | [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
+| [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.Read.All | Not supported | PendingExternalUserProfile.Read.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.Read.All | Not supported. | Application.Read.All |
 | [user](../resources/user.md) | User.Read.All | Not supported. | User.Read.All |
 

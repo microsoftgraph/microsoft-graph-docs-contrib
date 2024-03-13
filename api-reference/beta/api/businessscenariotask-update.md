@@ -3,7 +3,7 @@ title: "Update businessScenarioTask"
 description: "Update the properties of a businessScenarioTask object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 
@@ -163,6 +163,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Update the task details associated with a scenario task](plannertaskdetails-update.md).

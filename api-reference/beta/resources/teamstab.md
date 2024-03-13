@@ -3,7 +3,7 @@ title: "teamsTab resource type"
 description: "A teamsTab is a tab that's pinned (attached) to a channel within a team. "
 ms.localizationpriority: medium
 author: "AkJo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -86,7 +86,7 @@ The following is a JSON representation of the resource.
 }
 -->
 
-## See also
+## Related content
 
 [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 

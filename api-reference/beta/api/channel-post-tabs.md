@@ -3,7 +3,7 @@ title: "Add tab to channel"
 description: "Add (pin) a tab to the specified channel within a team. "
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -103,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 - [Add app to team](team-post-installedapps.md)

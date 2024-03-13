@@ -3,7 +3,7 @@ title: "List teachers"
 description: "Retrieve a list of teachers for a class. Delegated tokens must be members of the class to get the teacher list."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/7e4ec76c-8276-43ef-ba10-9
 ---
 
 ##### Response
-Here's an example of the response. 
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -109,7 +109,7 @@ Content-type: application/json
             "displayName": "Adele Vance",
             "givenName": "Adele",
             "surname": "Vance",
-            "userPrincipalName": "AdeleV@M365x214355.onmicrosoft.com",
+            "userPrincipalName": "AdeleV@contoso.com",
             "userType": "Member",
             "primaryRole": "teacher",
             "onPremisesInfo": {

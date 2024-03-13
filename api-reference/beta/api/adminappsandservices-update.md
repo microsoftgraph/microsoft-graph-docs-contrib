@@ -3,7 +3,7 @@ title: "Update adminAppsAndServices"
 description: "Update the properties of a Microsoft Graph adminAppsAndServices object."
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

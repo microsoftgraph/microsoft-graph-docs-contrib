@@ -3,7 +3,7 @@ title: "Create Calendar"
 description: "Use this API to create a new calendar in a calendar group for a user."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -142,7 +142,7 @@ Content-type: application/json
     "canEdit": true,
     "owner": {
         "name": "Adele Vance",
-        "address": "adelev@contoso.OnMicrosoft.com"
+        "address": "adelev@contoso.com"
     }
 }
 ```

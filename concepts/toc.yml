@@ -22,18 +22,25 @@ items:
         items:
           - name: Overview
             href: integration-patterns-overview.md
+            displayName: architecture, scenarios
           - name: Analyze Microsoft Graph data
             href: patterns/analyze-storage-data.md
+            displayName: Microsoft Graph Data Connect, scenario
           - name: Build interactive apps
             href: patterns/interactive-applications.md
+            displayName: Microsoft 365 services, REST API, scenario
           - name: Build interactive apps with real-time feed
             href: patterns/interactive-app-with-change-notifications-via-webhooks.md
+            displayName: change notifications, Microsoft 365 services, scenario
           - name: Get real-time data updates
             href: patterns/notifications-in-push-mode.md
+            displayName: change notifications, scenario
           - name: Retrieve events at your speed
             href: patterns/notifications-in-pull-mode.md
+            displayName: change notifications, data loss prevention, DLP, scenario
           - name: Augment Microsoft search
             href: patterns/augment-search-experience-with-custom-data.md
+            displayName: Microsoft Graph connectiors, Copilot for Microsoft 365, scenario
       - name: Metered APIs
         items:
           - name: Overview
@@ -253,10 +260,10 @@ items:
             - name: Picker
               href: toolkit/components/picker.md
             - name: Planner tasks
-              href: toolkit/components/tasks.md
-            - name: Search box (preview)
+              href: toolkit/components/planner.md
+            - name: Search box
               href: toolkit/components/search-box.md
-            - name: Search results (preview)
+            - name: Search results
               href: toolkit/components/search-results.md
             - name: Taxonomy picker
               href: toolkit/components/taxonomy-picker.md
@@ -264,7 +271,7 @@ items:
               href: toolkit/components/teams-channel-picker.md
             - name: Theme toggle
               href: toolkit/components/theme-toggle.md
-            - name: To-do tasks
+            - name: To Do tasks
               href: toolkit/components/todo.md
         - name: Customize components
           items:
@@ -282,7 +289,9 @@ items:
               href: toolkit/customize-components/templates.md
             - name: Disambiguation of components
               href: toolkit/customize-components/disambiguation.md
-        - name: Upgrading to v3
+        - name: Permissions
+          href: toolkit/permissions.md
+        - name: Upgrade to the latest version
           href: toolkit/upgrade.md
   - name: Services and features
     expanded: true
@@ -301,7 +310,7 @@ items:
             displayName: groups
           - name: Microsoft 365 groups
             href: microsoft365-groups-concept-overview.md
-          - name: Configure group options
+          - name: Microsoft 365 group behaviors and provisioning options
             href: group-set-options.md
           - name: Microsoft 365 group settings
             href: group-directory-settings.md
@@ -427,7 +436,7 @@ items:
           - name: Build cross-device apps
             href: cross-device-app-configuration.md
             displayName: cross device, Project Rome
-      - name: Customer booking (preview)
+      - name: Customer booking
         items:
           - name: Overview
             href: booking-concept-overview.md
@@ -436,7 +445,6 @@ items:
             href: bookingsbusiness-business-rules.md
             displayName: Bookings, Microsoft Bookings, booking
       - name: Device and app management
-        expanded: true
         items:
           - name: Browser management
             href: browser-edge-concept-overview.md
@@ -788,7 +796,7 @@ items:
             displayName: report, reports
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
-          - name: Partner billing (preview)
+          - name: Partner billing
             href: partners-billing-concept-overview.md
       - name: Search
         items:
@@ -815,11 +823,11 @@ items:
             href: search-concept-messages.md
           - name: Search people
             href: search-concept-person.md
-          - name: Search qnas
+          - name: Search Q&As
             href: search-concept-qna.md
           - name: Search Teams messages
             href: search-concept-chat-messages.md
-          - name: Manage admin search answers (preview)
+          - name: Manage admin search answers
             href: search-concept-answers.md
           - name: Manage search results layout
             href: search-concept-display-layout.md
@@ -1106,81 +1114,76 @@ items:
             href: extensibility-open-users.md
           - name: Use schema extensions
             href: extensibility-schema-groups.md
-      - name: Migrate
-        items:
-          - name: Azure AD Graph
-            items:
-              - name: Migrate Azure AD Graph apps
-                href: migrate-azure-ad-graph-overview.md
-                displayName: Migration, Azure AD Graph, migrate
-              - name: Checklist to migrate apps
-                href: migrate-azure-ad-graph-planning-checklist.md
-              - name: "1: Review differences"
-                expanded: true
-                items:
-                  - name: Requests
-                    href: migrate-azure-ad-graph-request-differences.md
-                  - name: Service features
-                    href: migrate-azure-ad-graph-feature-differences.md
-                  - name: Resource types
-                    href: migrate-azure-ad-graph-resource-differences.md
-                  - name: Entity properties
-                    href: migrate-azure-ad-graph-property-differences.md
-                  - name: Methods
-                    href: migrate-azure-ad-graph-method-differences.md
-                  - name: Permissions
-                    href: migrate-azure-ad-graph-permissions-differences.md
-              - name: "2: Examine API use"
-                href: migrate-azure-ad-graph-audit-api-use.md
-              - name: "3: Review app details"
-                expanded: true
-                items:
-                  - name: App registration
-                    href: migrate-azure-ad-graph-app-registration.md
-                  - name: Auth libraries
-                    href: migrate-azure-ad-graph-authentication-library.md
-                  - name: .NET client libraries
-                    href: migrate-azure-ad-graph-client-libraries.md
-              - name: "4: Deploy, test, and extend"
-                href: migrate-azure-ad-graph-deploy-test-extend.md
-              - name: Azure AD Graph migration FAQ
-                href: migrate-azure-ad-graph-faq.md
-                displayName: migrate, frequently asked questions
-              - name: Configure Azure AD Graph permissions
-                href: migrate-azure-ad-graph-configure-permissions.md
-          - name: Exchange Web Services
-            items:
-              - name: Migrate EWS apps
-                href: migrate-exchange-web-services-overview.md
-                displayName: Migration, Exchange Web Services, EWS, migrate
-              - name: Authentication
-                href: migrate-exchange-web-services-authentication.md
-              - name: API mapping
-                href: migrate-exchange-web-services-api-mapping.md
-          - name: Outlook REST APIs
-            href: /outlook/rest/compare-graph?context=graph/context
       - name: Microsoft Graph activity logs (preview)
         href: microsoft-graph-activity-logs-overview.md
       - name: Configure Connected Services
         displayName: Configure Connected Services in Visual Studio
         href: office-365-connected-services.md
-      - name: Resources
+      - name: Best practices
+        href: best-practices-concept.md
+        displayName: Microsoft Graph, Best practices for working with Microsoft Graph
+      - name: Known issues
+        href: https://developer.microsoft.com/graph/known-issues
+        displayName: Microsoft Graph, Known issues with Microsoft Graph
+      - name: Errors
+        href: errors.md
+        displayName: Microsoft Graph error responses and error resource types
+      - name: Microsoft Entra service limits
+        displayName: Azure AD service limits and restrictions
+        href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
+  - name: Migrate
+    items:
+    - name: Azure AD Graph
+      items:
+      - name: Migrate Azure AD Graph apps
+        href: migrate-azure-ad-graph-overview.md
+        displayName: Migration, Azure AD Graph, migrate
+      - name: Checklist to migrate apps
+        href: migrate-azure-ad-graph-planning-checklist.md
+      - name: "1: Review differences"
         expanded: true
         items:
-          - name: Best practices
-            href: best-practices-concept.md
-            displayName: Microsoft Graph, Best practices for working with Microsoft Graph
-          - name: Known issues
-            href: https://developer.microsoft.com/graph/known-issues
-            displayName: Microsoft Graph, Known issues with Microsoft Graph
-          - name: API changelog
-            href: changelog.md
-          - name: Errors
-            href: errors.md
-            displayName: Microsoft Graph error responses and error resource types
-          - name: Microsoft Entra service limits
-            displayName: Azure AD service limits and restrictions
-            href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
+        - name: Requests
+          href: migrate-azure-ad-graph-request-differences.md
+        - name: Service features
+          href: migrate-azure-ad-graph-feature-differences.md
+        - name: Resource types
+          href: migrate-azure-ad-graph-resource-differences.md
+        - name: Entity properties
+          href: migrate-azure-ad-graph-property-differences.md
+        - name: Methods
+          href: migrate-azure-ad-graph-method-differences.md
+        - name: Permissions
+          href: migrate-azure-ad-graph-permissions-differences.md
+      - name: "2: Examine API use"
+        href: migrate-azure-ad-graph-audit-api-use.md
+      - name: "3: Review app details"
+        expanded: true
+        items:
+        - name: App registration
+          href: migrate-azure-ad-graph-app-registration.md
+        - name: Auth libraries
+          href: migrate-azure-ad-graph-authentication-library.md
+        - name: .NET client libraries
+          href: migrate-azure-ad-graph-client-libraries.md
+      - name: "4: Deploy, test, and extend"
+        href: migrate-azure-ad-graph-deploy-test-extend.md
+      - name: Azure AD Graph migration FAQ
+        href: migrate-azure-ad-graph-faq.md
+        displayName: migrate, frequently asked questions
+      - name: Configure Azure AD Graph permissions
+        href: migrate-azure-ad-graph-configure-permissions.md
+    - name: Exchange Web Services
+      items:
+      - name: Migrate EWS apps
+        href: migrate-exchange-web-services-overview.md
+        displayName: Migration, Exchange Web Services, EWS, migrate
+      - name: Authentication
+        href: migrate-exchange-web-services-authentication.md
+      - name: API mapping
+        href: migrate-exchange-web-services-api-mapping.md
+    - name: Outlook REST APIs
+      href: /outlook/rest/compare-graph?context=graph/context
   - name: API v1.0 reference
     href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
     displayName: Microsoft Graph REST API v1.0 reference

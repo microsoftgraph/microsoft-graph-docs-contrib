@@ -3,7 +3,7 @@ title: "provisionedPlan resource type"
 description: "The **provisionedPlans** property of the user entity and the organization entity is a collection of **provisionedPlan**."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "adimitui"
 ---
 

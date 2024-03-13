@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 409
+Content-Length: 450
 
 {
   "value": {
@@ -71,6 +73,7 @@ Content-Length: 409
     "id": "e1db399b-399b-e1db-9b39-dbe19b39dbe1",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "displayName": "Display Name value",
+    "description": "Description value",
     "defaultLocale": "Default Locale value",
     "brandingOptions": "includeCompanyLogo",
     "roleScopeTagIds": [

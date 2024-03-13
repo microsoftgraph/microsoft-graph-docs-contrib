@@ -3,7 +3,7 @@ title: "Update approvalStage"
 description: "Apply approve or deny decision on an approvalStage object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -111,6 +111,10 @@ PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/patch-approvalstage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-approvalstage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

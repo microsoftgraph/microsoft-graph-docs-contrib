@@ -4,7 +4,7 @@ description: "Update an identityProvider in a b2xIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Update a userFlowIdentityProvider
@@ -74,10 +74,6 @@ Content-type: application/json
   "@odata.type": "#microsoft.graph.identityProvider"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-b2xuserflows-userflowidentityprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-b2xuserflows-userflowidentityprovider-javascript-snippets.md)]

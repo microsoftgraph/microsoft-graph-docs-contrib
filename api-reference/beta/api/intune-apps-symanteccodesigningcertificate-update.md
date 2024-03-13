@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -48,7 +50,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The key of the entity.|
+|id|String|The key of the entity. This property is read-only.|
 |content|Binary|The Windows Symantec Code-Signing Certificate in the raw data format.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|The Cert Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
 |password|String|The Password required for .pfx file.|

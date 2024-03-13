@@ -3,7 +3,7 @@ title: "Get unifiedRoleEligibilityScheduleInstance"
 description: "Get the instance of a role eligibility."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -19,6 +19,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "unifiedroleeligibilityscheduleinstance_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleeligibilityscheduleinstance-get-permissions.md)]
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ## HTTP request
 

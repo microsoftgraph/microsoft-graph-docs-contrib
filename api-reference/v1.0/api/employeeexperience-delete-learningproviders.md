@@ -3,7 +3,7 @@ title: "Delete learningProvider"
 description: "Delete a learningProvider resource and remove its registration in Viva Learning for a tenant."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 
@@ -58,10 +58,6 @@ The following is an example of a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/$ref
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-learningprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-learningprovider-javascript-snippets.md)]

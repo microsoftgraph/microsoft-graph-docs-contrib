@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.workflow import Workflow
+from msgraph.generated.models.on_demand_execution_only import OnDemandExecutionOnly
+from msgraph.generated.models.task import Task
+from msgraph.generated.models.key_value_pair import KeyValuePair
 
 graph_client = GraphServiceClient(credentials, scopes)
 

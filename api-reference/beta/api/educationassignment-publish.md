@@ -3,7 +3,7 @@ title: "educationAssignment: publish"
 description: "Change the state of an educationAssignment from its original draft status to the published status."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -160,7 +160,7 @@ HTTP/1.1 200 Ok
 }
 ```
 
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 

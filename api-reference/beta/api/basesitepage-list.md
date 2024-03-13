@@ -3,7 +3,7 @@ author: "rahmit"
 description: "Get the collection of baseSitePage objects from the site pages list in a site."
 title: "List baseSitePages"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -159,13 +159,13 @@ Content-type: application/json
       "createdBy": {
         "user": {
           "displayName": "admin_contoso",
-          "email": "admin@contoso.onmicrosoft.com"
+          "email": "admin@contoso.com"
         }
       },
       "lastModifiedBy": {
         "user": {
           "displayName": "admin_contoso",
-          "email": "admin@contoso.onmicrosoft.com"
+          "email": "admin@contoso.com"
         }
       },
       "parentReference": {
@@ -198,13 +198,13 @@ Content-type: application/json
       "createdBy": {
         "user": {
           "displayName": "admin_contoso",
-          "email": "admin@contoso.onmicrosoft.com"
+          "email": "admin@contoso.com"
         }
       },
       "lastModifiedBy": {
         "user": {
           "displayName": "admin_contoso",
-          "email": "admin@contoso.onmicrosoft.com"
+          "email": "admin@contoso.com"
         }
       },
       "parentReference": {

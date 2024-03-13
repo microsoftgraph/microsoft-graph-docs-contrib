@@ -1,9 +1,10 @@
 ---
 title: "Delete groupLifecyclePolicy"
 description: "Deletes a groupLifecyclePolicy."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Delete a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

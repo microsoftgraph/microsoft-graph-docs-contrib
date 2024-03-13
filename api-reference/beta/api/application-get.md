@@ -3,7 +3,7 @@ title: "Get application"
 description: "Get the properties and relationships of an application object."
 author: "sureshja"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -219,7 +219,7 @@ GET https://graph.microsoft.com/beta/applications(appId='46e6adf4-a9cf-4b60-9390
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-application-by-appid-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

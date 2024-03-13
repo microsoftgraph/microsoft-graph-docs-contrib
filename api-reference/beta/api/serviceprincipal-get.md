@@ -3,7 +3,7 @@ title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of serviceprincipal object."
 author: "sureshja"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -208,7 +208,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals(appId='00000003-0000-0000
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipal-by-appid-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

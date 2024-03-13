@@ -3,7 +3,7 @@ title: "Update samlOrWsFedExternalDomainFederation"
 description: "Update the properties of a samlOrWsFedExternalDomainFederation object."
 author: "namkedia"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -90,10 +90,6 @@ Content-Type: application/json
 
 
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-samlorwsfedexternaldomainfederation-e1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-samlorwsfedexternaldomainfederation-e1-javascript-snippets.md)]

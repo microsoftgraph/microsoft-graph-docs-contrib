@@ -11,7 +11,7 @@ using Microsoft.Graph.Models.Security;
 
 var requestBody = new Alert
 {
-	AssignedTo = "secAdmin@contoso.onmicrosoft.com",
+	AssignedTo = "secAdmin@contoso.com",
 	Classification = AlertClassification.TruePositive,
 	Determination = AlertDetermination.Malware,
 	Status = AlertStatus.InProgress,

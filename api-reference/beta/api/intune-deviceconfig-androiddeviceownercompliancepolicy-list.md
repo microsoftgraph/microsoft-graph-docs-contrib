@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [androidDeviceOwnerCompliancePolicy](../resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -60,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1648
+Content-Length: 1723
 
 {
   "value": [
@@ -97,7 +99,8 @@ Content-Length: 1648
       "passwordPreviousPasswordCountToBlock": 4,
       "storageRequireEncryption": true,
       "securityRequireIntuneAppIntegrity": true,
-      "requireNoPendingSystemUpdates": true
+      "requireNoPendingSystemUpdates": true,
+      "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
     }
   ]
 }

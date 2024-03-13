@@ -3,7 +3,7 @@ title: "List history of riskyUser"
 description: "Retrieve the risk history"
 ms.localizationpriority: medium
 author: "tracyshi"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # List history of riskyUser
@@ -120,7 +120,7 @@ Content-type: application/json
             "riskDetail": "userPerformedSecuredPasswordReset",
             "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
             "activity": {
@@ -138,7 +138,7 @@ Content-type: application/json
             "riskDetail": "none",
             "riskLastUpdatedDateTime": "2019-04-05T22:31:27Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": null,
             "activity": {
@@ -158,7 +158,7 @@ Content-type: application/json
             "riskDetail": "userPerformedSecuredPasswordReset",
             "riskLastUpdatedDateTime": "2019-04-05T23:00:14.0973557Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
             "activity": {
@@ -242,7 +242,7 @@ Content-type: application/json
             "riskDetail": "userPerformedSecuredPasswordReset",
             "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
             "activity": {
@@ -259,7 +259,7 @@ Content-type: application/json
             "riskDetail": "none",
             "riskLastUpdatedDateTime": "2019-04-05T22:31:27Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": null,
             "activity": {
@@ -278,7 +278,7 @@ Content-type: application/json
             "riskDetail": "userPerformedSecuredPasswordReset",
             "riskLastUpdatedDateTime": "2019-04-05T23:00:14.0973557Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
             "activity": {

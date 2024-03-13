@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.me().drive().root().workbook().worksheets("{id|name}").pivotTables()
-	.refreshAll()
-	.buildRequest()
-	.post();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().worksheets().byWorkbookWorksheetId("{workbookWorksheet-id}").pivotTables().refreshAll().post();
+
 
 ```

@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -65,15 +67,16 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
 Content-type: application/json
-Content-length: 452
+Content-length: 465
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
-    "collectionId": "Collection Id value"
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -85,16 +88,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 501
+Content-Length: 514
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
   "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
   "target": {
-    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
-    "collectionId": "Collection Id value"
+    "targetType": "user",
+    "entraObjectId": "Entra Object Id value"
   },
   "source": "policySets",
   "sourceId": "Source Id value"

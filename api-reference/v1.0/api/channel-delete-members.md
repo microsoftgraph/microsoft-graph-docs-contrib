@@ -4,7 +4,7 @@ description: "Remove a member from a channel."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Remove member from channel
@@ -106,7 +106,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Remove member from team](team-delete-members.md)
 

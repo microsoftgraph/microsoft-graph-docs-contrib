@@ -3,7 +3,7 @@ title: Update printershare
 description: Update the properties of printer share. This method can be used to "swap" printers.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

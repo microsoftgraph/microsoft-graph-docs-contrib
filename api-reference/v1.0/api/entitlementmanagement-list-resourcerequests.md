@@ -3,7 +3,7 @@ title: "List accessPackageResourceRequests"
 description: "Retrieve a list of accessPackageResourceRequest objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

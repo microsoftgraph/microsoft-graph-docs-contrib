@@ -3,7 +3,7 @@ title: "Create subCategoryTemplate"
 description: "Create a new subCategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -74,10 +74,6 @@ Content-Type: application/json
   }
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-subcategorytemplate-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-subcategorytemplate-from--javascript-snippets.md)]

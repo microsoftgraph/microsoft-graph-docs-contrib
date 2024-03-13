@@ -3,7 +3,7 @@ title: "List deleted items (directory objects) owned by a user"
 description: "Retrieves a list of recently deleted application or group objects that are owned by the specified user."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -70,10 +70,6 @@ Content-type: application/json
   "type":"Group"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-directory-deleteditem-getuserownedobjects-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directory-deleteditem-getuserownedobjects-javascript-snippets.md)]

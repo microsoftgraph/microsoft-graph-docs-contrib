@@ -4,7 +4,7 @@ description: "Retrieve a list of authentication methods registered to a user."
 ms.localizationpriority: medium
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

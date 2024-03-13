@@ -3,7 +3,7 @@ title: "Get unifiedRoleEligibilityScheduleRequest"
 description: "In PIM, read the details of a request for a role eligibility request made through the unifiedRoleEligibilityScheduleRequest object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -19,6 +19,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "unifiedroleeligibilityschedulerequest_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleeligibilityschedulerequest-get-permissions.md)]
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ## HTTP request
 

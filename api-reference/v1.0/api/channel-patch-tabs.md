@@ -3,7 +3,7 @@ title: "Update tab"
 description: "Update the properties of the specified tab."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -129,7 +129,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

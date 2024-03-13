@@ -3,7 +3,7 @@ title: "channel resource type"
 description: "A channel is a collection of chatMessages within a team. "
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -140,7 +140,7 @@ The following is a JSON representation of the resource.
 }
 -->
 
-## See also
+## Related content
 
 - [Channel lifecycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/csharp)
 - [Channel lifecycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/nodejs)

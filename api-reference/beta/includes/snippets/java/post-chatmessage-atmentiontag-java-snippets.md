@@ -4,28 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
 ItemBody body = new ItemBody();
-body.contentType = BodyType.HTML;
-body.content = "<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>";
-chatMessage.body = body;
-LinkedList<ChatMessageMention> mentionsList = new LinkedList<ChatMessageMention>();
-ChatMessageMention mentions = new ChatMessageMention();
-mentions.id = 0;
-mentions.mentionText = "TestTag";
+body.setContentType(BodyType.Html);
+body.setContent("<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>");
+chatMessage.setBody(body);
+LinkedList<ChatMessageMention> mentions = new LinkedList<ChatMessageMention>();
+ChatMessageMention chatMessageMention = new ChatMessageMention();
+chatMessageMention.setId(0);
+chatMessageMention.setMentionText("TestTag");
 ChatMessageMentionedIdentitySet mentioned = new ChatMessageMentionedIdentitySet();
 TeamworkTagIdentity tag = new TeamworkTagIdentity();
-tag.id = "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM2OGEzZTM2NS1mN2Q5LTRhNTYtYjQ5OS0yNDMzMmE5Y2M1NzIjI3RTMERJZ1Z1ZQ==";
-tag.displayName = "TestTag";
-mentioned.tag = tag;
-mentions.mentioned = mentioned;
-mentionsList.add(mentions);
-chatMessage.mentions = mentionsList;
+tag.setId("MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM2OGEzZTM2NS1mN2Q5LTRhNTYtYjQ5OS0yNDMzMmE5Y2M1NzIjI3RTMERJZ1Z1ZQ==");
+tag.setDisplayName("TestTag");
+mentioned.setTag(tag);
+chatMessageMention.setMentioned(mentioned);
+mentions.add(chatMessageMention);
+chatMessage.setMentions(mentions);
+ChatMessage result = graphClient.teams().byTeamId("{team-id}").channels().byChannelId("{channel-id}").messages().post(chatMessage);
 
-graphClient.teams("fbe2bf47-16c8-47cf-b4a5-4b9b187c508b").channels("19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2").messages()
-	.buildRequest()
-	.post(chatMessage);
 
 ```

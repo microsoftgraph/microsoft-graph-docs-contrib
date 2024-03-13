@@ -3,7 +3,7 @@ title: "event: dismissReminder"
 description: "Dismiss a reminder that has been triggered for an event in a user calendar."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

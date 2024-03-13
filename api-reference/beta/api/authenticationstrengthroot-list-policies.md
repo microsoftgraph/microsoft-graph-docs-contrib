@@ -4,7 +4,7 @@ description: "Get a list of the authenticationStrengthPolicy objects and their p
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -237,7 +237,7 @@ GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies?$fi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-authenticationstrengthpolicy-filter-allowedcombinations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

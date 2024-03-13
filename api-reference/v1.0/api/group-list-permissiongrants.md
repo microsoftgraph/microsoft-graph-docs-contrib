@@ -3,7 +3,7 @@ title: "List permissionGrants of a group"
 description: "Retrieve permissionGrants of a group."
 author: "akjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -144,7 +144,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [List permission grants of a chat](chat-list-permissiongrants.md)
 - [List permission grants of a team](team-list-permissiongrants.md)

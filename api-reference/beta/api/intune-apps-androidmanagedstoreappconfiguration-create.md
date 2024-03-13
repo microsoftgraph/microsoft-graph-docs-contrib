@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -59,7 +61,7 @@ The following table shows the properties that are required when you create the a
 |packageId|String|Android Enterprise app configuration package id.|
 |payloadJson|String|Android Enterprise app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
-|appSupportsOemConfig|Boolean|Whether or not this AppConfig is an OEMConfig policy.|
+|appSupportsOemConfig|Boolean|Whether or not this AppConfig is an OEMConfig policy. This property is read-only.|
 |profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise profile applicability (AndroidWorkProfile, DeviceOwner, or default (applies to both)). Possible values are: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 |connectedAppsEnabled|Boolean|Setting to specify whether to allow ConnectedApps experience for this app.|
 

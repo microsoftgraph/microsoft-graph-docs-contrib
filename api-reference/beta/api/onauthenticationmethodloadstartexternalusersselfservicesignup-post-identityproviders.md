@@ -3,7 +3,7 @@ title: "Add identityProvider (to a user flow)"
 description: "Add an identity provider to an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -86,6 +86,10 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc3
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-authenticationeventsflow-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-authenticationeventsflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

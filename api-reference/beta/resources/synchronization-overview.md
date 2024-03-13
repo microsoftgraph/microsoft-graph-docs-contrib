@@ -4,7 +4,7 @@ description: "Automate the provisioning of identities from HR systems, Active Di
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Microsoft Entra synchronization API overview
@@ -216,7 +216,7 @@ HTTP/1.1 200 OK
     "synchronizationRules": []
 }
 ```
-## See also
+## Related content
 
 * [Configure synchronization with directory extension attributes](/graph/synchronization-configure-with-directory-extension-attributes)
 * [Configure synchronization with custom target attributes](/graph/synchronization-configure-with-custom-target-attributes)
