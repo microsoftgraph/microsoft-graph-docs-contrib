@@ -471,7 +471,7 @@ Example of a message with importance set to high
 
 ### lastEditedDateTime
 
-Represents the timestamp when the message was edited by the user. This is represented in Microsoft Teams UI with `Edited` flag.
+Represents the timestamp when the message was edited by the user. This is represented in Microsoft Teams UI with `Edited` flag, `null` if the message has never neen edited.
 
 ### lastModifiedDateTime
 
