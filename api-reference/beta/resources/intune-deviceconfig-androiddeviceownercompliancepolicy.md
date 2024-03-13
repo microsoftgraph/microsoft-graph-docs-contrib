@@ -62,6 +62,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune-shared-devicecomplian
 |storageRequireEncryption|Boolean|Require encryption on Android devices.|
 |securityRequireIntuneAppIntegrity|Boolean|If setting is set to true, checks that the Intune app installed on fully managed, dedicated, or corporate-owned work profile Android Enterprise enrolled devices, is the one provided by Microsoft from the Managed Google Playstore. If the check fails, the device will be reported as non-compliant.|
 |requireNoPendingSystemUpdates|Boolean|Require device to have no pending Android system updates.|
+|securityRequiredAndroidSafetyNetEvaluationType|[androidSafetyNetEvaluationType](../resources/intune-deviceconfig-androidsafetynetevaluationtype.md)|Require a specific Play Integrity evaluation type for compliance. Possible values are: `basic`, `hardwareBacked`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -116,6 +117,7 @@ Here is a JSON representation of the resource.
   "passwordPreviousPasswordCountToBlock": 1024,
   "storageRequireEncryption": true,
   "securityRequireIntuneAppIntegrity": true,
-  "requireNoPendingSystemUpdates": true
+  "requireNoPendingSystemUpdates": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "String"
 }
 ```

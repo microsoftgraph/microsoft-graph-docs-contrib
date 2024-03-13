@@ -23,9 +23,10 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|vpnConfigurationId|String|The VPN Configuration Id to apply for this app.|
-|**Apps**|
-|uninstallOnDeviceRemoval|Boolean|Whether or not to uninstall the app when device is removed from Intune.|
+|vpnConfigurationId|String|This is the unique identifier (Id) of the VPN Configuration to apply to the app.|
+|uninstallOnDeviceRemoval|Boolean|When TRUE, indicates that the app should be uninstalled when the device is removed from Intune. When FALSE, indicates that the app will not be uninstalled when the device is removed from Intune. By default, property is set to null which internally is treated as TRUE.|
+|isRemovable|Boolean|When TRUE, indicates that the app can be uninstalled by the user. When FALSE, indicates that the app cannot be uninstalled by the user. By default, this property is set to null which internally is treated as TRUE.|
+|preventManagedAppBackup|Boolean|When TRUE, indicates that the app should not be backed up to iCloud. When FALSE, indicates that the app may be backed up to iCloud. By default, this property is set to null which internally is treated as FALSE.|
 
 ## Relationships
 None
@@ -41,6 +42,8 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
   "vpnConfigurationId": "String",
-  "uninstallOnDeviceRemoval": true
+  "uninstallOnDeviceRemoval": true,
+  "isRemovable": true,
+  "preventManagedAppBackup": true
 }
 ```

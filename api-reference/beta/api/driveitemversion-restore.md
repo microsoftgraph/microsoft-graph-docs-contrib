@@ -4,7 +4,7 @@ description: "Restore a previous version of a DriveItem to be the current versio
 ms.date: 09/10/2017
 title: Restore a previous version
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Restore a previous version of a DriveItem

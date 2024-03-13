@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "List bundles"
 description: "List the bundles in a user's drive."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

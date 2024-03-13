@@ -3,7 +3,7 @@ title: "corsConfiguration resource type (deprecated)"
 description: "Represents the CORS settings for an on-premises application segment published via Application Proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 

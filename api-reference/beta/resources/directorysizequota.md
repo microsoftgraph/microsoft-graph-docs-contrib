@@ -3,7 +3,7 @@ title: "directorySizeQuota resource type"
 description: "Represents a company's used and total directory quota."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "adimitui"
 ---
 

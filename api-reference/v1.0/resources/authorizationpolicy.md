@@ -4,7 +4,7 @@ description: "Represents a policy that can control authorization settings of Mic
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

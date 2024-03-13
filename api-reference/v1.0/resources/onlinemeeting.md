@@ -4,7 +4,7 @@ description: "Contains information about a meeting."
 author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # onlineMeeting resource type

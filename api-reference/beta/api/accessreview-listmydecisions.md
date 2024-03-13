@@ -3,7 +3,7 @@ title: "List my accessReview decisions (deprecated)"
 description: "In the Microsoft Entra access reviews feature, retrieve the decisions of an accessReview object for the calling user as reviewer."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

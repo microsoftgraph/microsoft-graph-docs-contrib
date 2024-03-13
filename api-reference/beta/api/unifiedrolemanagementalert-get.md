@@ -3,7 +3,7 @@ title: "Get unifiedRoleManagementAlert"
 description: "Get a single security alert by its ID from Privileged Identity Management (PIM) for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

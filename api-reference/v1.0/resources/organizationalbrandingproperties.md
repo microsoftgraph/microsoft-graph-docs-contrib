@@ -3,7 +3,7 @@ title: "organizationalBrandingProperties resource type"
 description: "Contains details of the organization's branding."
 author: "quievey"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

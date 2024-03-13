@@ -3,7 +3,7 @@ title: "List tasks"
 description: "Get all the Outlook tasks in the specified folder."
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

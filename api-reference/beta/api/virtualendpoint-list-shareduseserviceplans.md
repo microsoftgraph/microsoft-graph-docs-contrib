@@ -3,7 +3,7 @@ title: "List cloudPcSharedUseServicePlans (deprecated)"
 description: "Get a list of the cloudPcSharedUseServicePlan objects and their properties."
 author: "GuoanTang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

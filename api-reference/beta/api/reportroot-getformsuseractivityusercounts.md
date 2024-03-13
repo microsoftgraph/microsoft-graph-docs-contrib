@@ -2,7 +2,7 @@
 title: "reportRoot: getFormsUserActivityUserCounts"
 description: "Get a report that provides the total number of designers or responders who perform Microsoft Forms activities over a selected period."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "haoyli"
 doc_type: apiPageType
 ---

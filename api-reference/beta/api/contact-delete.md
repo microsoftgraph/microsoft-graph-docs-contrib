@@ -3,7 +3,7 @@ title: "Delete contact"
 description: "Delete contact."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

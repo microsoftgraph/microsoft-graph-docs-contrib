@@ -3,7 +3,7 @@ title: "teamworkPeripheralsHealth resource type"
 description: "Represents health details for all peripheral devices attached to a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

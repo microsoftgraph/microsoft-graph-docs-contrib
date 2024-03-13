@@ -3,7 +3,7 @@ title: "onPremisesAgentGroup resource type"
 description: "onPremisesAgentGroup resource type."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 

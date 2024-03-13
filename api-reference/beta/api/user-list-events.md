@@ -3,7 +3,7 @@ title: "List events"
 description: "Get a list of event objects from the user's default calendar or "
 ms.localizationpriority: high
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

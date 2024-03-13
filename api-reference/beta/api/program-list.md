@@ -3,7 +3,7 @@ title: "List programs (deprecated)"
 description: "In the Microsoft Entra access reviews feature, list all the program objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
 ---
 

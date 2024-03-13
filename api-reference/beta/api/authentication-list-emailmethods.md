@@ -4,7 +4,7 @@ description: "Get a list of the emailAuthenticationMethod objects and their prop
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "List sections"
 description: "Retrieve a list of section objects."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 

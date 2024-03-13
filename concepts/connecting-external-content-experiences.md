@@ -4,7 +4,7 @@ description: "Discover the experiences that you can enable with Microsoft Graph 
 author: monaray
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Microsoft Graph connector experiences

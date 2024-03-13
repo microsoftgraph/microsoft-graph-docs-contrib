@@ -3,7 +3,7 @@ title: "passwordSingleSignOnField resource type"
 description: "Fields to capture the credentials for password SSO"
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

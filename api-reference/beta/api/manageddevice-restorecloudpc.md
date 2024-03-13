@@ -3,7 +3,7 @@ title: "managedDevice: restoreCloudPc (deprecated)"
 description: "Restore a Cloud PC device to a previous state with an Intune managed device ID."
 author: "rongting"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

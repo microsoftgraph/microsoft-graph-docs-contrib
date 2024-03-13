@@ -3,7 +3,7 @@ title: "administrativeUnitInfo resource type"
 description: "Represents an object that exposes information about the administrative units associated with a call participant."
 author: "Datar89"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

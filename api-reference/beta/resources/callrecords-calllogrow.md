@@ -3,7 +3,7 @@ title: "callLogRow resource type"
 description: "Represents the basic properties of the PSTN call log, direct routing call log, and SMS log."
 author: "rihob"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

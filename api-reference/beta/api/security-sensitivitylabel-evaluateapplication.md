@@ -3,7 +3,7 @@ title: "sensitivityLabel: evaluateApplication"
 description: "Evaluate which label to apply based on an existing content information and a desired content state."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

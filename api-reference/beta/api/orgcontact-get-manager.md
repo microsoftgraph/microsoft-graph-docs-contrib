@@ -3,7 +3,7 @@ title: "orgContact: Get manager"
 description: "Get the contact's manager"
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

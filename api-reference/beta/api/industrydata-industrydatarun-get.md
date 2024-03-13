@@ -3,7 +3,7 @@ title: "Get industryDataRun"
 description: "Read the properties and relationships of an industryDataRun object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 
