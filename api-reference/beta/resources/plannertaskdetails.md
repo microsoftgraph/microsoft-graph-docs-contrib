@@ -26,7 +26,7 @@ Represents the additional information about a task. Each [task](plannertask.md) 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|approvalAttachment|[plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md)|Contains detailed information about the approval that is attached on the task.|
+|approvalAttachment|[plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md)|Contains detailed information about the approval that is attached to the task.|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|The collection of checklist items on the task.|
 |completionRequirements|[plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md)|Contains detailed information about requirements on the task.|
 |description|String|Description of the task.|

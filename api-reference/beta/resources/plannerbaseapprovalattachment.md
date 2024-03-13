@@ -15,12 +15,12 @@ Namespace: microsoft.graph
 
 The **plannerBaseApprovalAttachment** resource represents the base approval attachment that is added to a [plannerTask](plannertask.md), which contains the common properties that are required for an approval. 
 While the derived types, such as [plannerBasicApprovalAttachment](plannerbasicapprovalattachment.md), have details corresponding to the type of approval.
-This is an abstract type.
+This type is abstract.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|status|[plannerApprovalStatus](../resources/plannerbaseapprovalattachment.md#plannerapprovalstatus-values)|Status of the approval.The possible values is: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`. Read-only. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
+|status|[plannerApprovalStatus](../resources/plannerbaseapprovalattachment.md#plannerapprovalstatus-values)|Status of the approval. The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`. Read-only. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
 
 ### plannerApprovalStatus values 
 

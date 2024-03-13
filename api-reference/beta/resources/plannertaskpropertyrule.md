@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents specific restrictions that apply to editing a [plannerTask](../resources/plannertask.md). For more details, see [Configuring task rules in Planner](/graph/planner-task-rules-overview).
+Represents specific restrictions that apply to editing a [plannerTask](../resources/plannertask.md). For more information, see [Configuring task rules in Planner](/graph/planner-task-rules-overview).
 
 Inherits from [plannerPropertyRule](../resources/plannerpropertyrule.md).
 
@@ -21,7 +21,7 @@ Inherits from [plannerPropertyRule](../resources/plannerpropertyrule.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliedCategories|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for applied categories. This value does not currently support overrides. Accepted values for the default rule and individual overrides are `allow`, `block`.|
+|appliedCategories|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for applied categories. This value doesn't currently support overrides. Accepted values for the default rule and individual overrides are `allow`, `block`.|
 |approvalAttachment|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for approval. Allowed overrides are `userCreated` and `applicationCreated`. Accepted values for the default rule and individual overrides are `allow`, `add`, `remove`, `block`.|
 |assignments|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for assignments. Allowed overrides are `userCreated` and `applicationCreated`. Accepted values for the default rule and individual overrides are `allow`, `add`, `addSelf`, `addOther`, `remove`, `removeSelf`, `removeOther`, `block`.|
 |checkLists|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for checklist. Allowed overrides are `userCreated` and `applicationCreated`. Accepted values for the default rule and individual overrides are `allow`, `add`, `remove`, `update`, `check`, `reorder`, `block`.|
@@ -35,7 +35,7 @@ Inherits from [plannerPropertyRule](../resources/plannerpropertyrule.md).
 |previewType|String collection|Rules and restrictions for changing the preview type of the task. Accepted values are `allow` and `block`.|
 |priority|String collection|Rules and restrictions for changing the priority of the task. Accepted values are `allow` and `block`.|
 |references|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for references. Allowed overrides are `userCreated` and `applicationCreated`. Accepted values for the default rule and individual overrides are `allow`, `add`, `remove`, `block`.|
-|ruleKind|plannerRuleKind|Identifies which type of property rules is represented by this instance. Must be set to `taskRule`. The possible values are: `taskRule`, `bucketRule`, `planRule`, `unknownFutureValue`. Inherited from [plannerPropertyRule](../resources/plannerpropertyrule.md).|
+|ruleKind|plannerRuleKind|Identifies which type of property rules this instance represents. Must be set to `taskRule`. The possible values are: `taskRule`, `bucketRule`, `planRule`, `unknownFutureValue`. Inherited from [plannerPropertyRule](../resources/plannerpropertyrule.md).|
 |startDate|String collection|Rules and restrictions for changing the start date of the task. Accepted values are `allow` and `block`.|
 |title|String collection|Rules and restrictions for changing the title of the task. Accepted values are `allow` and `block`.|
 
@@ -45,7 +45,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerTaskPropertyRule"
