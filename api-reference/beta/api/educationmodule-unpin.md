@@ -3,7 +3,7 @@ title: "educationModule: unpin"
 description: "Unpin an educationModule in the classwork list."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

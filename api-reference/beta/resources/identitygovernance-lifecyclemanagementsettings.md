@@ -3,7 +3,7 @@ title: "lifecycleManagementSettings resource type"
 description: "The settings of Microsoft Entra Lifecycle Workflows in the tenant."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

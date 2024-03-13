@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: "driveItem: copy"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name."
 doc_type: apiPageType
 ---

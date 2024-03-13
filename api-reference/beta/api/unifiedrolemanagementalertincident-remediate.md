@@ -3,7 +3,7 @@ title: "unifiedRoleManagementAlertIncident: remediate"
 description: "Remediate or mitigate an incident of an alert."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

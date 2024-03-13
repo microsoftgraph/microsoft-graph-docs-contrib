@@ -4,7 +4,7 @@ description: "Delete a directory setting."
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

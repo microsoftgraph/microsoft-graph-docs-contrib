@@ -3,7 +3,7 @@ title: "attachmentInfo resource type"
 description: "Represents the attributes of an attachment."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

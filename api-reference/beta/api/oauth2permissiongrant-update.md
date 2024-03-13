@@ -3,7 +3,7 @@ title: "Update oAuth2PermissionGrant (a delegated permission grant)"
 description: "Update the properties of an oAuth2PermissionGrant, representing a delegated permission grant."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 

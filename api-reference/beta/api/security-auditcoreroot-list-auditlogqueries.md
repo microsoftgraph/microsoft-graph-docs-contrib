@@ -3,7 +3,7 @@ title: "List auditLogQueries"
 description: "Get a list of the auditLogQuery objects and their properties."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

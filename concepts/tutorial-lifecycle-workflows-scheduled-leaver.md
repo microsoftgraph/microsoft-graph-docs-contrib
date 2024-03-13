@@ -4,31 +4,34 @@ description: Learn how to automate employee offboarding tasks after their last d
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Alexander.Filipin
+ms.topic: tutorial
 ms.localizationpriority: medium
-ms.prod: "governance"
-doc_type: conceptualPageType
-ms.date: 11/01/2022
+ms.subservice: "entra-id-governance"
+ms.date: 03/12/2024
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use Lifecycle Workflows APIs to automate employee offboarding tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
 
 # Automate employee offboarding tasks after their last day of work using Lifecycle Workflows APIs
 
-This tutorial provides step-by-step guidance for configuring offboarding tasks for employees after their last day of work using Lifecycle workflows APIs in Microsoft Graph. In this scenario, the employee termination is scheduled, possibly including a notice period. See [Complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs](/graph/tutorial-lifecycle-workflows-offboard-custom-workflow) for an unscheduled, real-time termination scenario.
+This tutorial provides step-by-step guidance for configuring offboarding tasks for employees after their last day of work using Lifecycle Workflows APIs. In this scenario, the employee termination is scheduled, possibly including a notice period. See [Complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs](/graph/tutorial-lifecycle-workflows-offboard-custom-workflow) for an unscheduled, real-time termination scenario.
 
-This post off-boarding scenario will run a scheduled workflow and accomplish the following tasks:
-
-1. Remove all licenses for user
-2. Remove user from all Teams
-3. Delete user account
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+> * Configure a lifecycle workflow to check for employees in a specific department, days after their last day of work.
+> * Configure a task to run the following tasks in sequence:
+>   * Remove all licenses for user
+>   * Remove user from all Teams
+>   * Delete user account
+> * Monitor the status of the workflow and its associated tasks.
 
 ## Prerequisites
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Microsoft Entra](https://www.microsoft.com/security/business/microsoft-entra-pricing).
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Microsoft Entra role.
-+ Grant yourself the following *LifecycleWorkflows.ReadWrite.All* delegated permission.
-+ Create a test user account that you'll use to represent an employee leaving your organization. This test user account will be deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
++ This feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with account that has at least the *Lifecycle Administrator* Microsoft Entra role.
++ Grant yourself the *LifecycleWorkflows.ReadWrite.All* Microsoft Graph delegated permission.
++ Create a test user account that you use to represent an employee leaving your organization. This test user account is deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
 
 ## Create a "leaver" workflow
 
@@ -36,7 +39,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 The following request creates an offboarding workflow with the following settings:
 
-+ It can currently be run on-demand but not on schedule. This step will allow us to validate the workflow using the test user's account. The workflow will be updated to run on schedule later in this tutorial.
++ It can be run on-demand but not on schedule. This step allows us to validate the workflow using the test user's account. The workflow is updated to run on schedule later in this tutorial.
 + The workflow runs seven days after the employee's [employeeLeaveDateTime](/graph/tutorial-lifecycle-workflows-set-employeeleavedatetime?tabs=http), and if they are in the "Marketing" department.
 + Three workflow tasks are enabled to run in sequence: the user is unassigned all licenses, then removed from all teams, then their user account is deleted.
 
@@ -47,7 +50,7 @@ The following request creates an offboarding workflow with the following setting
   "name": "tutorial_lifecycle_workflows_scheduledleaver_create_workflow"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows
+POST https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workflows
 Content-type: application/json
 
 {
@@ -149,12 +152,12 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
     "category": "leaver",
     "description": "Configure offboarding tasks for employees after their last day of work",
     "displayName": "Post-Offboarding of an employee",
-    "lastModifiedDateTime": "2022-10-03T18:29:10.8412536Z",
-    "createdDateTime": "2022-10-03T18:29:10.8412352Z",
+    "lastModifiedDateTime": "2024-03-03T18:29:10.8412536Z",
+    "createdDateTime": "2024-03-03T18:29:10.8412352Z",
     "deletedDateTime": null,
     "id": "15239232-66ed-445b-8292-2f5bbb2eb833",
     "isEnabled": true,
@@ -178,11 +181,11 @@ Content-Type: application/json
 
 ## Run the workflow
 
-### Request
+Because the workflow isn't scheduled to run, it must be run manually, on-demand. In the following request, the user that's the target of the workflow is identified by ID `df744d9e-2148-4922-88a8-633896c1e929`.
 
-Because the workflow hasn't been scheduled to run, it must be run manually, on-demand. In the following request, the user for whom the workflow will run is identified by ID `df744d9e-2148-4922-88a8-633896c1e929`.
+When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions. Therefore, even if the user isn't in the "Marketing" department or their employeeLeaveDateTime is set to `null`, this command still runs the tasks that are defined in the workflow, for the user.
 
-While you configured execution conditions for the workflow, this request to run the workflow on demand ignores the execution conditions. For example, if the user identified by ID `df744d9e-2148-4922-88a8-633896c1e929` isn't in the "Marketing" department or their employeeLeaveDateTime is set to `null`, this command will still run the tasks that were defined in the workflow, for the user.
+The request returns a `204 No Content` response code.
 
 
 # [HTTP](#tab/http)
@@ -191,7 +194,7 @@ While you configured execution conditions for the workflow, this request to run 
   "name": "tutorial_lifecycle_workflows_scheduledleaver_run_workflow"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/activate
+POST https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/activate
 
 {
     "subjects": [
@@ -236,23 +239,17 @@ POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/work
 
 ---
 
-### Response
-
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-
 ## Check tasks and workflow status
 
 At any time, you can monitor the status of the workflows and the tasks at three levels.
 
-### Request
+- Monitor tasks at the user level.
+- Monitor the aggregate high-level summary of the user-level results for a workflow, within a specified period.
+- Retrieve the detailed log of all tasks that were executed for a specific user in the workflow.
 
-The following request retrieves the summary of tasks run at the user level.
+### Option 1: Monitor tasks for a workflow at the user level
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -260,7 +257,7 @@ The following request retrieves the summary of tasks run at the user level.
   "name": "tutorial_lifecycle_workflows_scheduledleaver_list_userProcessingResults"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/userProcessingResults
+GET https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/userProcessingResults
 ```
 
 # [C#](#tab/csharp)
@@ -297,7 +294,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 
 ---
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -309,15 +306,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/userProcessingResults",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/userProcessingResults",
     "value": [
         {
             "id": "40efc576-840f-47d0-ab95-5abca800f8a2",
-            "completedDateTime": "2022-10-03T18:31:00.3581066Z",
+            "completedDateTime": "2024-03-03T18:31:00.3581066Z",
             "failedTasksCount": 0,
             "processingStatus": "completed",
-            "scheduledDateTime": "2022-10-03T18:30:43.154495Z",
-            "startedDateTime": "2022-10-03T18:30:46.9357178Z",
+            "scheduledDateTime": "2024-03-03T18:30:43.154495Z",
+            "startedDateTime": "2024-03-03T18:30:46.9357178Z",
             "totalTasksCount": 3,
             "totalUnprocessedTasksCount": 0,
             "workflowExecutionType": "onDemand",
@@ -330,10 +327,9 @@ Content-Type: application/json
 }
 ```
 
-### Request
+### Option 2: Get the aggregate high-level summary of the user-level results for a workflow, within a specified period
 
-You can request the aggregate high-level summary of the user-level results for a workflow, within a specified period.
-
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -341,7 +337,7 @@ You can request the aggregate high-level summary of the user-level results for a
   "name": "tutorial_lifecycle_workflows_scheduledleaver_list_userProcessingResults.summary"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/userProcessingResults/summary(startDateTime=2022-10-01T00:00:00Z,endDateTime=2022-10-30T00:00:00Z)
+GET https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/userProcessingResults/summary(startDateTime=2024-03-01T00:00:00Z,endDateTime=2024-03-30T00:00:00Z)
 ```
 
 # [C#](#tab/csharp)
@@ -378,7 +374,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 
 ---
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -390,7 +386,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.userSummary",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.identityGovernance.userSummary",
     "failedTasks": 0,
     "failedUsers": 0,
     "successfulUsers": 1,
@@ -399,11 +395,9 @@ Content-Type: application/json
 }
 ```
 
+### Option 3: Retrieve the detailed log of all tasks that were executed for a specific user in the workflow
 
-### Request
-
-You can also retrieve the detailed log of all tasks that were executed for a specific user in the workflow.
-
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -411,7 +405,7 @@ You can also retrieve the detailed log of all tasks that were executed for a spe
   "name": "tutorial_lifecycle_workflows_scheduledleaver_list_taskProcessingResults"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/userProcessingResults/40efc576-840f-47d0-ab95-5abca800f8a2/taskProcessingResults
+GET https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/userProcessingResults/40efc576-840f-47d0-ab95-5abca800f8a2/taskProcessingResults
 ```
 
 # [C#](#tab/csharp)
@@ -448,7 +442,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 
 ---
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -460,14 +454,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/userProcessingResults('40efc576-840f-47d0-ab95-5abca800f8a2')/taskProcessingResults",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/userProcessingResults('40efc576-840f-47d0-ab95-5abca800f8a2')/taskProcessingResults",
     "value": [
         {
-            "completedDateTime": "2022-10-03T18:30:50.483365Z",
-            "createdDateTime": "2022-10-03T18:30:47.6125438Z",
+            "completedDateTime": "2024-03-03T18:30:50.483365Z",
+            "createdDateTime": "2024-03-03T18:30:47.6125438Z",
             "id": "78650318-7238-4e7e-852f-2c36cbeff340",
             "processingStatus": "completed",
-            "startedDateTime": "2022-10-03T18:30:50.0549446Z",
+            "startedDateTime": "2024-03-03T18:30:50.0549446Z",
             "failureReason": null,
             "subject": {
                 "id": "df744d9e-2148-4922-88a8-633896c1e929"
@@ -485,11 +479,11 @@ Content-Type: application/json
             }
         },
         {
-            "completedDateTime": "2022-10-03T18:30:57.6034021Z",
-            "createdDateTime": "2022-10-03T18:30:47.8824313Z",
+            "completedDateTime": "2024-03-03T18:30:57.6034021Z",
+            "createdDateTime": "2024-03-03T18:30:47.8824313Z",
             "id": "3d2e459d-5614-42e4-952b-0e917b5f6646",
             "processingStatus": "completed",
-            "startedDateTime": "2022-10-03T18:30:53.6770279Z",
+            "startedDateTime": "2024-03-03T18:30:53.6770279Z",
             "failureReason": null,
             "subject": {
                 "id": "df744d9e-2148-4922-88a8-633896c1e929"
@@ -507,11 +501,11 @@ Content-Type: application/json
             }
         },
         {
-            "completedDateTime": "2022-10-03T18:31:00.0894515Z",
-            "createdDateTime": "2022-10-03T18:30:48.0004721Z",
+            "completedDateTime": "2024-03-03T18:31:00.0894515Z",
+            "createdDateTime": "2024-03-03T18:30:48.0004721Z",
             "id": "03359fa6-c63c-4573-92c2-4c9518ca98aa",
             "processingStatus": "completed",
-            "startedDateTime": "2022-10-03T18:30:59.6195169Z",
+            "startedDateTime": "2024-03-03T18:30:59.6195169Z",
             "failureReason": null,
             "subject": {
                 "id": "df744d9e-2148-4922-88a8-633896c1e929"
@@ -534,8 +528,9 @@ Content-Type: application/json
 
 ## [Optional] Schedule the workflow to run automatically
 
-After running your workflow on-demand and checking that everything is working fine, you may want to enable the workflow so that it can run automatically on a tenant-defined schedule. To enable the workflow schedule, you may run the following request.
+After running your workflow on-demand and checking that everything is working fine, you might want to enable the workflow so that it can run automatically on a tenant-defined schedule. Run the following request.
 
+The request returns a `204 No Content` response code. When a workflow is scheduled, the Lifecycle Workflows engine checks every three hours for users in the associated execution condition and execute the configured tasks for those users. You can customize this recurrence from between one hour to 24 hours.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -543,7 +538,7 @@ After running your workflow on-demand and checking that everything is working fi
   "name": "tutorial_lifecycle_workflows_scheduledleaver_update_workflow"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833
 Content-type: application/json
 
 {
@@ -585,17 +580,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-When a workflow is scheduled, Lifecycle Workflows will check every three hours for users in the associated execution condition and execute the configured tasks for those users. You can customize this recurrence from between one hour to 24 hours.
-
-### Response
-
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 204 No Content
-```
 
 ## Related content
 

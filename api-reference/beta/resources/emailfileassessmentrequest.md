@@ -3,7 +3,7 @@ title: "emailFileAssessmentRequest resource type"
 description: "Represents a resource that creates and retrieves an email file threat assessment."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 

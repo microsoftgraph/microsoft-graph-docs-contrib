@@ -3,7 +3,7 @@ title: "horizontalSection resource type"
 description: Represents a horizontal section in a given SharePoint page
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

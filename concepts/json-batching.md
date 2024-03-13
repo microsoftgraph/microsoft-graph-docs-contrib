@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: high
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: graphiamtop20
 ms.date: 02/14/2024
 #Customer intent: As a developer, I want to learn how to use Microsoft Graph to combine multiple requests into a single JSON batch request, so that I can optimize my application.

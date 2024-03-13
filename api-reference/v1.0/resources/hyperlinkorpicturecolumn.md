@@ -4,7 +4,7 @@ title: "hyperlinkOrPictureColumn resource type"
 description: "The hyperlinkOrPictureColumn resource indicates that the column contains URL data that can be an achortag or an image that serves as a hyperlink."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 # hyperlinkOrPictureColumn resource type
 

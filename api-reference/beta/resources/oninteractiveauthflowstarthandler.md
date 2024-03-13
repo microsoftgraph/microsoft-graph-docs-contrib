@@ -3,7 +3,7 @@ title: "onInteractiveAuthFlowStartHandler resource type"
 description: "Represents a step in a multi-event user flow policy defining what happens when an authentication flow is ready to be initiated by the user."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

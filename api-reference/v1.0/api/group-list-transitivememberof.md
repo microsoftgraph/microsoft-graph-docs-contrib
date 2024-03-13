@@ -4,7 +4,7 @@ description: "Get groups that the group is a member of.  This operation is trans
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

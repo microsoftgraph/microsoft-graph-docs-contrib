@@ -3,7 +3,7 @@ title: "Get taskDefinition"
 description: "Read the details of a built-in workflow task."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: printIdentity resource type
 description: Represents an identity within the Universal Print service. Maps to a Microsoft Entra group.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 

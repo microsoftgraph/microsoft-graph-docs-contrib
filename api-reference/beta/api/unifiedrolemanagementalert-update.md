@@ -3,7 +3,7 @@ title: "Update unifiedRoleManagementAlert"
 description: "Dismiss a unifiedRoleManagementAlert object by setting the isActive property to false."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

@@ -4,7 +4,7 @@ description: "Metadata of the Virtual Machine (VM) Microsoft Defender for Endpoi
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

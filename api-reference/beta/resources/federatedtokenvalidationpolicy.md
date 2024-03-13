@@ -3,7 +3,7 @@ title: "federatedTokenValidationPolicy resource type"
 description: "Represents a policy to control enabling or disabling validation of federation authentication tokens. It allows matching an on-premises federated account and a mapped Microsoft Entra ID account's root domain."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

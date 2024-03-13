@@ -5,9 +5,9 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.localizationpriority: high
 ms.topic: reference
-ms.prod: applications
+ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 03/01/2024
+ms.date: 03/08/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -4728,6 +4728,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### SchedulePermissions.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 7239b71d-b402-4150-b13d-78ecfe8df441 | 07919803-6073-4cd8-bc55-28077db0ee10 
+| DisplayText | Read/Write schedule permissions for a role | Read/Write schedule permissions for a role. 
+| Description | Allows the app to read/write schedule permissions for a specific role in Shifts application without a signed-in user. | Allows the app to read/write schedule permissions for a specific role in Shifts application on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### SearchConfiguration.Read.All
 
 | Category | Application | Delegated |
@@ -4834,6 +4845,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | d903a879-88e0-4c09-b0c9-82f6a1333f84 | 6aedf524-7e1c-45a7-bd76-ded8cab8d0fc 
 | DisplayText | Read and update your organization's security events | Read and update your organization's security events 
 | Description | Allows the app to read your organization's security events without a signed-in user. Also allows the app to update editable properties in security events. | Allows the app to read your organization's security events on behalf of the signed-in user. Also allows the app to update editable properties in security events on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### SecurityIdentitiesHealth.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f8dcd971-5d83-4e1e-aa95-ef44611ad351 | a0d0da43-a6df-4416-b63d-99c79991aae8 
+| DisplayText | Read all identity security health issues | Read identity security health issues 
+| Description | Allows the app to read all the identity security health issues without a signed-in user. | Allows the app to read all the identity security health issues of signed user 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### SecurityIdentitiesHealth.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | ab03ddd5-7ae4-4f2e-8af8-86654f7e0a27 | 53e51eec-2d9b-4990-97f3-c9aa5d5652c3 
+| DisplayText | Read and write all identity security health issues | Read and write identity security health issues 
+| Description | Allows the app to read and write identity security health issues without a signed-in user. | Allows the app to read and write identity security health issues on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -5960,6 +5993,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### TeamworkUserInteraction.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | b4d26916-07e0-4daf-9096-9f6d9174aa96 
+| DisplayText | - | Read all of the possible Teams interactions between the user and other users 
+| Description | - | Allows the app to read all of the possible Teams interactions between the signed-in user and other users 
+| AdminConsentRequired | - | Yes 
+
+---
+
 ### TermStore.Read.All
 
 | Category | Application | Delegated |
@@ -6297,6 +6341,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 50483e42-d915-4231-9639-7fdb7fd190e5 | b7887744-6746-4312-813d-72daeaee7e2d 
 | DisplayText | Read and write all users' authentication methods  | Read and write all users' authentication methods. 
 | Description | Allows the application to read and write authentication methods of all users in your organization, without a signed-in user.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods |  Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### User-ConvertToInternal.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9d952b72-f741-4b40-9185-8c53076c2339 | 550e695c-7511-40f4-ac79-e8fb9c82552d 
+| DisplayText | Convert an external user to internal member user | Convert an external user to internal memeber user 
+| Description | Allow the app to convert an external user to an internal member user, without a signed-in user. | Allow the app to convert an external user to an internal member user, on behalf of signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---

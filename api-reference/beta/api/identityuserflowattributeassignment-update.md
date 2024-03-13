@@ -3,7 +3,7 @@ title: "Update identityUserFlowAttributeAssignment"
 description: "Update the properties of a userAttributeAssignments object."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

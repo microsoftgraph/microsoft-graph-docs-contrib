@@ -3,7 +3,7 @@ title: "customTaskExtensionCallbackConfiguration resource type"
 description: "Defines if and in which time span a callback is expected from the Azure Logic App."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -58,10 +58,8 @@ items:
                 href: api/user-invalidateallrefreshtokens.md
               - name: Retry service provisioning
                 href: api/user-retryserviceprovisioning.md
-              - name: Delete password-based SSO credential
-                href: api/user-deletepasswordsinglesignoncredentials.md
-              - name: Get password-based SSO credentials
-                href: api/user-getpasswordsinglesignoncredentials.md
+              - name: Convert external to member user
+                href: api/user-convertexternaltointernalmemberuser.md
           - name: App role assignment
             href: resources/approleassignment.md
             items:
@@ -304,6 +302,12 @@ items:
                 href: api/outlookuser-post-tasks.md
               - name: List tasks
                 href: api/outlookuser-list-tasks.md
+          - name: Password-based SSO credentials
+            items:
+            - name: Get
+              href: api/user-getpasswordsinglesignoncredentials.md
+            - name: Delete
+              href: api/user-deletepasswordsinglesignoncredentials.md
           - name: People
             items:
               - name: Person
@@ -452,6 +456,8 @@ items:
                 href: api/group-get.md
               - name: Update group
                 href: api/group-update.md
+              - name: Upsert group
+                href: api/group-upsert.md
               - name: Delete group
                 href: api/group-delete.md
               - name: Renew group
@@ -717,6 +723,8 @@ items:
                 href: api/opentypeextension-get.md
       - name: Applications
         items:
+          - name: Overview
+            href: resources/applications-api-overview.md
           - name: Application
             href: resources/application.md
             items:
@@ -728,6 +736,8 @@ items:
                 href: api/application-get.md
               - name: Update application
                 href: api/application-update.md
+              - name: Upsert application
+                href: api/application-upsert.md
               - name: Delete application
                 href: api/application-delete.md
               - name: Get delta
@@ -781,6 +791,8 @@ items:
                         href: api/federatedidentitycredential-get.md
                       - name: Update
                         href: api/federatedidentitycredential-update.md
+                      - name: Upsert
+                        href: api/federatedidentitycredential-upsert.md                        
                       - name: Delete
                         href: api/federatedidentitycredential-delete.md
               - name: Owners
@@ -911,6 +923,8 @@ items:
                 href: api/serviceprincipal-get.md
               - name: Update service principal
                 href: api/serviceprincipal-update.md
+              - name: Upsert service principal
+                href: api/serviceprincipal-upsert.md
               - name: Delete service principal
                 href: api/serviceprincipal-delete.md
               - name: List deleted service principals
@@ -1599,8 +1613,20 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Delete a history item
                     href: api/projectrome-delete-historyitem.md
-          - name: Roaming data (preview)
+          - name: Roaming data
             items:
+              - name: Cloud clipboard
+                href: resources/cloudclipboardroot.md
+                items:
+                  - name: List
+                    href: api/cloudclipboardroot-list-items.md
+              - name: Cloud clipboard item
+                href: resources/cloudclipboarditem.md
+                items:
+                  - name: List
+                    href: api/cloudclipboardroot-list-items.md
+                  - name: Get
+                    href: api/cloudclipboarditem-get.md
               - name: Windows settings
                 href: resources/windowssetting.md
                 items:
@@ -1615,18 +1641,6 @@ items:
                     href: api/windowssetting-list-instances.md
                   - name: Get
                     href: api/windowssettinginstance-get.md
-              - name: Cloud clipboard
-                href: resources/cloudclipboardroot.md
-                items:
-                  - name: List
-                    href: api/cloudclipboardroot-list-items.md
-              - name: Cloud clipboard item
-                href: resources/cloudclipboarditem.md
-                items:
-                  - name: List
-                    href: api/cloudclipboardroot-list-items.md
-                  - name: Get
-                    href: api/cloudclipboarditem-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:
@@ -10672,6 +10686,8 @@ items:
                 href: api/educationclass-post-category.md
               - name: Get delta
                 href: api/educationclass-delta.md
+              - name: Set default defaultgradingscheme
+                href: api/educationassignmentsettings-post-defaultgradingscheme.md
           - name: Users
             href: resources/educationuser.md
             items:
@@ -10742,6 +10758,8 @@ items:
                 href: api/educationassignment-activate.md
               - name: Deactivate assignment
                 href: api/educationassignment-deactivate.md
+              - name: Create grading scheme
+                href: api/educationassignment-post-gradingscheme.md
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -10776,6 +10794,15 @@ items:
                 href: api/educationgradingcategory-update.md
               - name: Delete
                 href: api/educationassignment-delete-gradingcategory.md
+          - name: Grading Schemes
+            href: resources/educationgradingscheme.md
+            items:
+              - name: Add grading scheme
+                href: api/educationgradingscheme-post.md
+              - name: Update grading scheme
+                href: api/educationassignmentsettings-update.md
+              - name: Delete grading scheme
+                href: api/educationgradingscheme-delete.md
           - name: Module
             href: resources/educationmodule.md
             items:
@@ -11089,8 +11116,10 @@ items:
                 href: api/driveitem-copy.md
               - name: Create folder
                 href: api/driveitem-post-children.md
-              - name: Download file
+              - name: Download file (deprecated)
                 href: api/driveitem-get-content.md
+              - name: Download file
+                href: api/driveitem-get-contentstream.md
               - name: Extract sensitivity labels
                 href: api/driveitem-extractsensitivitylabels.md
               - name: Follow item
@@ -16933,6 +16962,17 @@ items:
                     href: api/security-ediscoverycase-delete-tags.md
                   - name: List tags as hierarchy
                     href: api/security-ediscoveryreviewtag-ashierarchy.md
+          - name: Email and collaboration protection
+            items:
+            - name: Analyzed email (preview)
+              href: resources/security-analyzedemail.md
+              items:
+                - name: List
+                  href: api/security-collaborationroot-list-analyzedemails.md
+                - name: Get
+                  href: api/security-analyzedemail-get.md
+                - name: Remediate
+                  href: api/security-analyzedemail-remediate.md
           - name: Information protection
             items:
               - name: Labels (deprecated)

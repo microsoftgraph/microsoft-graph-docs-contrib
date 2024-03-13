@@ -3,7 +3,7 @@ title: "Get resource"
 description: "Retrieve the binary data of a file or image resource object."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update approvalStep"
 description: "Apply approve or deny decision on an approvalStep object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

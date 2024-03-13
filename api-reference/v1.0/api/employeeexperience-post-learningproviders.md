@@ -3,7 +3,7 @@ title: "Create learningProvider"
 description: "Create a new learningProvider object and register it with Viva Learning using the specified display name and logos for different themes."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 

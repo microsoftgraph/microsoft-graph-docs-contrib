@@ -4,7 +4,7 @@ description: "Update a new unifiedRoleAssignmentMultiple object."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 

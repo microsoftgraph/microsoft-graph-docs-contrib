@@ -3,7 +3,7 @@ title: "userCountMetric resource type"
 description: "Represents daily insights on the total number of users for apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

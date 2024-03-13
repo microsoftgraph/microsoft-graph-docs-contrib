@@ -3,7 +3,7 @@ title: "Get serviceStorageQuotaBreakdown"
 description: "Read the properties and relationships of a serviceStorageQuotaBreakdown object."
 author: "BarryShehadeh"
 ms.localizationpriority: medium
-ms.prod: files
+ms.subservice: onedrive
 doc_type: apiPageType
 ---
 
