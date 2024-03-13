@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunch
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

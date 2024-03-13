@@ -41,7 +41,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -52,7 +52,7 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@con
 ```
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -58,7 +58,7 @@ For information about error responses, see [Microsoft Graph error responses and 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-metadata_e1" } -->
@@ -137,7 +137,7 @@ Use the `expand` [query string parameter](/graph/query-parameters) to include th
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-and-children_e2" } -->

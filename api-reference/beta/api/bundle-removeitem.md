@@ -50,7 +50,7 @@ For information about error responses, see [Microsoft Graph error responses and 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->

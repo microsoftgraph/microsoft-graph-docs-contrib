@@ -78,7 +78,7 @@ In this example, the response object shows the user signed in using MFA that was
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

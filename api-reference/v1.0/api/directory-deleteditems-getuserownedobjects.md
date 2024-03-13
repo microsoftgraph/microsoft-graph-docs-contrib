@@ -51,7 +51,7 @@ Successful requests return `200 OK` response codes; the response object includes
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -76,7 +76,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response. Note: This response object may be truncated for brevity. All supported properties are returned
+The following example shows the response. Note: This response object may be truncated for brevity. All supported properties are returned
 from actual calls.
 
 <!-- {

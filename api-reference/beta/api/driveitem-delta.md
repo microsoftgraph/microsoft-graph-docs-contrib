@@ -131,7 +131,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true, "scope": "file.read" } -->
 
@@ -216,7 +216,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)", "scope": "file.read" } -->
 

@@ -49,7 +49,7 @@ This method returns a `403 Forbidden` error code when deleting a published authe
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -99,7 +99,7 @@ DELETE /identity/conditionalAccess/authenticationContextClassReferences/c1
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

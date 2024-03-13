@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and the [DriveItem](
 
 ### Request
 
-Here is an example of the request to the root folder of the user's OneDrive.
+The following example shows a request to the root folder of the user's OneDrive.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-metadata" }-->
@@ -113,7 +113,7 @@ GET /me/drive/root
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 

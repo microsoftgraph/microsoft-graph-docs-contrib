@@ -48,7 +48,7 @@ If successful, this method returns `201 Created` response code and an [applicati
 
 ## Examples
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

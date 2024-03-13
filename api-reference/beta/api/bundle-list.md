@@ -62,7 +62,7 @@ To request an enumeration of all bundles defined in the drive, you can make a re
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-all-bundles_e1", "tags": "service.onedrive" } -->
@@ -146,7 +146,7 @@ To filter the list of bundles returned from a request to the bundles collection,
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "list-album-bundles-e2", "tags": "service.onedrive" } -->

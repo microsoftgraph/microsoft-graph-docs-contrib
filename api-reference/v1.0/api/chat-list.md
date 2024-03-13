@@ -86,7 +86,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -194,7 +194,7 @@ Content-type: application/json
 ### Example 2: List all chats along with the members of each chat
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -242,7 +242,7 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. The client shouldn't try to parse or make any assumptions about these resource IDs.
@@ -407,7 +407,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request. **lastMessagePreview/createdDateTime** is passed to sort chats by the most to least recent chat messages.
+The following example shows a request. **lastMessagePreview/createdDateTime** is passed to sort chats by the most to least recent chat messages.
 
 
 

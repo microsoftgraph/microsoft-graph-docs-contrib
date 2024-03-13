@@ -135,7 +135,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 

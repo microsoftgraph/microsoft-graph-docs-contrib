@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and collection of [T
 
 ## Example
 
-Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.
+The following example shows a request which retrieves available thumbnails for an item in the current user's OneDrive.
 
 
 # [HTTP](#tab/http)

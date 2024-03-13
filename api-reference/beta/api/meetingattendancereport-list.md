@@ -164,7 +164,7 @@ Content-Type: application/json
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -211,7 +211,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 
 #### Response
 
-Here's an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -120,7 +120,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
