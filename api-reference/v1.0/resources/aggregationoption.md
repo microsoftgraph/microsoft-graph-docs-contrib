@@ -23,7 +23,7 @@ Specifies which aggregations should be returned alongside the search results. Th
 
 ## JSON representation
 
-The following example shows the resource type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
