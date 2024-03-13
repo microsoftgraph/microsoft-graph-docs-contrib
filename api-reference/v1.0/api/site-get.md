@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Get a SharePoint Site
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Retrieve properties and relationships for a site resource."
 doc_type: apiPageType
 ---

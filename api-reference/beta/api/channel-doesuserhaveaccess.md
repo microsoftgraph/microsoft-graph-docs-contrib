@@ -3,7 +3,7 @@ title: "channel: doesUserHaveAccess"
 description: "Determine whether a user has access to a shared channel."
 author: "devjha-ms"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

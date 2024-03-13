@@ -3,7 +3,7 @@ author: "daspek"
 title: "defaultColumnValue resource type"
 ms.localizationpriority: medium
 description: "Represents the default value for a columnDefinition."
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

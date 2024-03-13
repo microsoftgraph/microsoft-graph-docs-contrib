@@ -3,7 +3,7 @@ title: "automaticRepliesSetting resource type"
 description: "Configuration settings to automatically notify the sender of an incoming email with a message from the "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
+ms.subservice: mail
 author: "SuryaLashmiS"
 ---
 

@@ -3,7 +3,7 @@ title: "Create fileStorageContainer"
 description: "Create a new fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 

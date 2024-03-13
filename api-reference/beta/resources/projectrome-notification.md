@@ -2,7 +2,7 @@
 title: notification resource type (deprecated)
 description: 'Represents a notification that is published by an app server that targets a specified user. The notification is stored in Microsoft Graph and is distributed to different device endpoints owned by the user. '
 ms.localizationpriority: medium
-ms.prod: notifications
+ms.subservice: notifications
 doc_type: resourcePageType
 author: merzink
 ---

@@ -3,7 +3,7 @@ title: "teamsAppDashBoardCardDefinition resource type"
 description: "Represents the dashboard cards details of a teamsApp."
 author: "ashish-goel"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

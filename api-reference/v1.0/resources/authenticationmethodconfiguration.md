@@ -20,7 +20,7 @@ The following authentication methods are derived from the **authenticationMethod
 + [voiceAuthenticationMethodConfiguration](voiceauthenticationmethodconfiguration.md)
 + [smsAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
 + [softwareOathAuthenticationMethodConfiguration](softwareoathauthenticationmethodconfiguration.md)
-+ [temporaryAccessPassAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [temporaryAccessPassAuthenticationMethodConfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)
 + [x509CertificateAuthenticationMethodConfiguration](x509certificateauthenticationmethodconfiguration.md)
 
 ## Properties

@@ -3,7 +3,7 @@ title: "userRegistrationFeatureCount resource type"
 description: "Represents the number of users registered or capable for multifactor authentication, self-service password reset, and passwordless authentication."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

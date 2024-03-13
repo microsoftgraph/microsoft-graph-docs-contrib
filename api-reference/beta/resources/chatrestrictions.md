@@ -3,7 +3,7 @@ title: "chatRestrictions resource type"
 description: "Specifies the configuration for meeting chat restrictions."
 author: "yuyaolian-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
