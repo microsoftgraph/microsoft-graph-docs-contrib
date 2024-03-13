@@ -1743,7 +1743,7 @@ items:
                 href: api/bookingstaffmember-delete.md
       - name: Device and app management
         items:
-          - name: Browser management (preview)
+          - name: Browser management
             displayName: Edge, Internet Explorer, IE mode, site list
             items:
               - name: Overview
