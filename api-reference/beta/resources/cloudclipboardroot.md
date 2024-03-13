@@ -18,7 +18,7 @@ Represents the information and properties of a cloudClipboardRoot and serves as 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List items](../api/cloudclipboardroot-list-items.md)|[cloudClipboardItem](../resources/cloudclipboarditem.md) collection|"Get a list of the **cloudClipboard** items and their properties.|
+|[List items](../api/cloudclipboardroot-list-items.md)|[cloudClipboardItem](../resources/cloudclipboarditem.md) collection|Get a list of the **cloudClipboard** items and their properties.|
 
 ## Properties
 
