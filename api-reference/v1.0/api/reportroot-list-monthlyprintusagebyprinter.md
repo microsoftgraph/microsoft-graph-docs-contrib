@@ -3,7 +3,7 @@ title: List monthlyPrintUsageByPrinter
 description: Retrieve a list of monthly print usage summaries, grouped by printer.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

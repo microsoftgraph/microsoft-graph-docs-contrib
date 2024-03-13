@@ -3,7 +3,7 @@ title: "Get outlookTask"
 description: "Get the properties and relationships of an Outlook task in the user's mailbox."
 ms.localizationpriority: medium
 author: "mashriv"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

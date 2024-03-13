@@ -4,7 +4,7 @@ description: "A collection of groups that are enabled to use an authentication m
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

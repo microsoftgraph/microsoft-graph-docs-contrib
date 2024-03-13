@@ -3,7 +3,7 @@ title: "List passiveDns"
 description: "Get a list of passiveDnsRecord resources associated to a host."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

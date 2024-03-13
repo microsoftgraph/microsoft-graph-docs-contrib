@@ -3,7 +3,7 @@ title: "allDeviceRegistrationMembership resource type"
 description: "Indicates that this device registration policy applies to all users and groups."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

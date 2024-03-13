@@ -4,7 +4,7 @@ description: "Represents a previous version of an item or entity."
 title: "baseItemVersion resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # baseItemVersion resource type

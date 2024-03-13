@@ -3,7 +3,7 @@ title: "printer: getCapabilities"
 description: Get a list of capabilities for the printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

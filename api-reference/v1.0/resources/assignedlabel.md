@@ -2,8 +2,9 @@
 title: "assignedLabel resource type"
 description: "Represents a sensitivity label assigned to a Microsoft 365 group."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get impactedResource"
 description: "Read the properties and relationships of an impactedResource object."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 

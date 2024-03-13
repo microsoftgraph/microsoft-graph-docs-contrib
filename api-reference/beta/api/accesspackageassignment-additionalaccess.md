@@ -3,7 +3,7 @@ title: "accessPackageAssignment: additionalAccess"
 description: "Retrieve a list of accessPackageAssignment objects indicating potential separation of duties conflicts or access to incompatible access packages."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a collection of [accessPackageAssignment](../resources/accesspackageassignment.md) objects that indicate a target user has an assignment to a specified access package and also an assignment to another, potentially incompatible, access package.  This can be used to prepare to configure the incompatible access packages for a specific access package.
+In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a collection of [accessPackageAssignment](../resources/accesspackageassignment.md) objects that indicate a target user has an assignment to a specified access package and also an assignment to another, potentially incompatible, access package.  It can be used to prepare to configure the incompatible access packages for a specific access package.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -33,7 +33,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/additiona
 ```
 
 ## Function parameters
-The following table shows the parameters that must be supplied with this function.  The two access package IDs must be distinct.
+The following table shows the parameters that must be supplied with this function. The two access package IDs must be distinct.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [accessPackageAssignment](../resources/accesspackageassignment.md) objects in the response body.
 
-When a result set spans multiple pages, Microsoft Graph returns that page with an `@odata.nextLink` property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the `@odata.nextLink` URL in each response, until all the results are returned. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
+When a result set spans multiple pages, Microsoft Graph returns that page with an `@odata.nextLink` property in the response that contains a URL to the next page of results. If that property is present, continue making more requests with the `@odata.nextLink` URL in each response, until all the results are returned. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Examples
 
@@ -64,6 +64,7 @@ The following example gets the access package assignments for users who have ass
 
 ### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,6 +107,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ---
 
 ### Response
+
+The following  example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

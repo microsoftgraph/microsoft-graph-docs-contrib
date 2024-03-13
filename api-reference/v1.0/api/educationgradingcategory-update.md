@@ -3,7 +3,7 @@ title: "Update gradingCategory"
 description: "Update a single gradingCategory."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -55,7 +55,7 @@ The following example shows a request.
   "name": "update_gradingCategoties"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070//assignmentSettings/gradingCategories/a5ca6dda-f220-43ca-81e4-02396b99f398
+PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingCategories/a5ca6dda-f220-43ca-81e4-02396b99f398
 Content-type: application/json
 
 {

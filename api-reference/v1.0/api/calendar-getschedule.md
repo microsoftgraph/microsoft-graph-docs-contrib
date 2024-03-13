@@ -3,7 +3,7 @@ title: "calendar: getSchedule"
 description: "Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period."
 ms.localizationpriority: high
 author: "tariq-sharif"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

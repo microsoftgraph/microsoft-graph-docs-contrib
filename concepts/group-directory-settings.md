@@ -2,8 +2,9 @@
 title: "Overview of group settings"
 description: "Use group settings to configure tenant-wide or object-specific settings in your tenant through Microsoft Graph APIs."
 author: FaithOmbongi
-ms.reviewer: jodah
-ms.topic: conceptual
+ms.author: ombongifaith
+ms.reviewer: yuhko, khotzteam, aadgroupssg
+ms.topic: concept-article
 ms.localizationpriority: high
 ms.date: 02/14/2024
 #Customer intent: As a developer, I want to learn how to use Microsoft Graph to configure tenant-wide and object-specific settings for Microsoft 365 groups, security groups, consent policies, password rules, and prohibited sames.

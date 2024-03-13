@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Send an invite to access an item
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Sends a sharing invitation for a driveItem."
 doc_type: apiPageType
 ---

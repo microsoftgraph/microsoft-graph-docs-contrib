@@ -3,7 +3,7 @@ title: "whoisContact resource type"
 description: "Represents details about a specific contact entry within a whoisRecord."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

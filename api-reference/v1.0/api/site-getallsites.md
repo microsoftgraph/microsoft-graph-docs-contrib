@@ -4,7 +4,7 @@ description: "List all sites across geographies in an organization - OneDrive AP
 author: tushar20
 ms.author: tkanaujia
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

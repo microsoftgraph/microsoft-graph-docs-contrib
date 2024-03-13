@@ -3,7 +3,7 @@ title: "List hostedContents"
 description: "Retrieve the list of chatMessageHostedContent objects from a message."
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -23,11 +23,11 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
+|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
+|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note**: The Group.Read.All and Group.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ### Permissions for chat
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->

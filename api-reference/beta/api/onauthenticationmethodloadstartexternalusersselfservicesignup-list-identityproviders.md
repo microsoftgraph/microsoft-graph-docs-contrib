@@ -3,7 +3,7 @@ title: "List identityProviders (in a user flow)"
 description: "List identity provider for an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

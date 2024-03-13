@@ -4,7 +4,7 @@ description: "Add member to channel."
 author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Add member to channel

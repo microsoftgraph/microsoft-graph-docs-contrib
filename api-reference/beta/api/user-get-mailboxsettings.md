@@ -3,7 +3,7 @@ title: "Get user mailbox settings"
 description: "Get the user's mailboxSettings. This includes settings for automatic replies (notify people automatically upon "
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -433,8 +433,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: get_mailboxsettings_4:
-      Unable to locate a definition for resource type: microsoft.graph.userPurpose",
     "Error: getmailboxsettings4:
       Unable to locate a definition for resource type: microsoft.graph.userPurpose"
   ]

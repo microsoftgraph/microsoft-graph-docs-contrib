@@ -4,7 +4,7 @@ description: "Create an event in the user's default calendar or specified calend
 ms.localizationpriority: high
 doc_type: apiPageType
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Create event

@@ -2,8 +2,9 @@
 title: "group: assignLicense"
 description: "Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: "apiPageType"
 ---
 

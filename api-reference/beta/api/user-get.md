@@ -2,6 +2,7 @@
 title: "Get user"
 description: "Retrieve the properties and relationships of user object."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -16,6 +17,8 @@ Namespace: microsoft.graph
 Retrieve the properties and relationships of user object.
 
 This operation returns by default only a subset of the more commonly used properties for each user. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) for the user and specify the properties in a `$select` OData query option. Because the **user** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
+
+Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -65,7 +68,6 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 | Header       | Value|
 |:-----------|:------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type   | application/json |
 
 ## Request body
 

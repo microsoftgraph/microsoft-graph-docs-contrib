@@ -3,7 +3,7 @@ title: "List childHostPairs"
 description: "Get the list of hostPair resources associated with a host, where that host is the parent and has an outgoing pairing to a child."
 author: "jakedavies-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

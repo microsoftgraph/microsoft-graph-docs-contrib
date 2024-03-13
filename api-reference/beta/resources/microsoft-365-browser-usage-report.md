@@ -2,7 +2,7 @@
 title: "Microsoft 365 browser usage reports"
 description: "Use the Microsoft 365 browser usage reports to get insights into the usage of browser (Microsoft Edge) in your organization."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
 ---

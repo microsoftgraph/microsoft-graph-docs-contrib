@@ -3,7 +3,7 @@ title: "Update teamsAppSettings"
 description: "Update the tenant-wide teamsAppSettings for all Teams apps in the tenant."
 author: "subray2014"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

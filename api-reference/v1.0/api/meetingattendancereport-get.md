@@ -3,7 +3,7 @@ title: "Get meetingAttendanceReport"
 description: "Get the attendance report for an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the [meetingAttendanceReport](../resources/meetingattendancereport.md) for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting ends, an attendance report is generated for that session.
+Get the [meetingAttendanceReport](../resources/meetingattendancereport.md) for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). Each time an online meeting ends, an attendance report is generated for that session.
 
 > [!WARNING]
 > This method doesn't support channel meetings.

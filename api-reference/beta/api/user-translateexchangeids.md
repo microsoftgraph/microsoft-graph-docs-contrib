@@ -3,7 +3,7 @@ title: "user: translateExchangeIds"
 description: "Translate identifiers of Outlook-related resources between formats."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

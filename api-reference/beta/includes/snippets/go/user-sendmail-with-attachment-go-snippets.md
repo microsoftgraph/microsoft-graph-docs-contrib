@@ -19,19 +19,19 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphusers.NewItemSendMailPostRequestBody()
 message := graphmodels.NewMessage()
 subject := "Meet for lunch?"
-message.SetSubject(&subject)
+message.SetSubject(&subject) 
 body := graphmodels.NewItemBody()
-contentType := graphmodels.TEXT_BODYTYPE
-body.SetContentType(&contentType)
+contentType := graphmodels.TEXT_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "The new cafeteria is open."
-body.SetContent(&content)
+body.SetContent(&content) 
 message.SetBody(body)
 
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 address := "meganb@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
@@ -42,11 +42,11 @@ message.SetToRecipients(toRecipients)
 
 attachment := graphmodels.NewFileAttachment()
 name := "attachment.txt"
-attachment.SetName(&name)
+attachment.SetName(&name) 
 contentType := "text/plain"
-attachment.SetContentType(&contentType)
+attachment.SetContentType(&contentType) 
 contentBytes := []byte("sGVsbG8gV29ybGQh")
-attachment.SetContentBytes(&contentBytes)
+attachment.SetContentBytes(&contentBytes) 
 
 attachments := []graphmodels.Attachmentable {
 	attachment,

@@ -3,7 +3,7 @@ title: "Manage Microsoft Entra role assignments using the privileged identity ma
 description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ms.date: 10/12/2023
 ---
@@ -125,7 +125,7 @@ All activities made through PIM for Microsoft Entra roles are logged in Microsof
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -161,9 +161,5 @@ The tenant where Privileged Identity Management is being used must have enough p
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Error: /resources/privilegedidentitymanagementv3-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
+  "suppressions": []
 } -->

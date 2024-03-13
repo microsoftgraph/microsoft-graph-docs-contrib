@@ -4,7 +4,7 @@ description: "Upgrade an app installation in the personal scope of the specified
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # teamsAppInstallation: upgrade

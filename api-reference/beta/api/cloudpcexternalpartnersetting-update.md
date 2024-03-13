@@ -3,7 +3,7 @@ title: "Update cloudPcExternalPartnerSetting"
 description: "Update the properties of a cloudPcExternalPartnerSetting object."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

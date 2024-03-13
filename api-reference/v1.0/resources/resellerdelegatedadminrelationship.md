@@ -3,7 +3,7 @@ title: "resellerDelegatedAdminRelationship resource type"
 description: "Represents the details of the delegated administrative privileges that a Microsoft indirect reseller partner has in a customer tenant that is created by a Microsoft indirect provider partner."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
 ---
 

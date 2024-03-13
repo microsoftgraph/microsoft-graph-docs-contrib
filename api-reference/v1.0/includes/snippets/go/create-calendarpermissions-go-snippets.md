@@ -18,16 +18,16 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewCalendarPermission()
 emailAddress := graphmodels.NewEmailAddress()
 name := "Samantha Booth"
-emailAddress.SetName(&name)
+emailAddress.SetName(&name) 
 address := "samanthab@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 requestBody.SetEmailAddress(emailAddress)
 isInsideOrganization := true
-requestBody.SetIsInsideOrganization(&isInsideOrganization)
+requestBody.SetIsInsideOrganization(&isInsideOrganization) 
 isRemovable := true
-requestBody.SetIsRemovable(&isRemovable)
-role := graphmodels.READ_CALENDARROLETYPE
-requestBody.SetRole(&role)
+requestBody.SetIsRemovable(&isRemovable) 
+role := graphmodels.READ_CALENDARROLETYPE 
+requestBody.SetRole(&role) 
 
 calendarPermissions, err := graphClient.Me().Calendar().CalendarPermissions().Post(context.Background(), requestBody, nil)
 

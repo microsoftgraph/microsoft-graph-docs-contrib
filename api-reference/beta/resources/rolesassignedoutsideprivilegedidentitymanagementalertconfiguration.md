@@ -3,7 +3,7 @@ title: "rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration resou
 description: "Represents an alert configuration that is triggered if Microsoft Entra roles have been assigned outside of Privileged Identity Management in the last 30 days."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

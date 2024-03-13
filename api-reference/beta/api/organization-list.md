@@ -2,8 +2,9 @@
 title: "List organizations"
 description: "Retrieve a list of organization objects."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "directory-management"
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
