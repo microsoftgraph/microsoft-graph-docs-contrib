@@ -50,7 +50,8 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Create item](../api/driveitem-post-children.md)                             | `POST /drive/items/{item-id}/children`                                 |
 | [Update item](../api/driveitem-update.md)                                    | `PATCH /drive/items/{item-id}`                                         |
 | [Upload content](../api/driveitem-put-content.md)                            | `PUT /drive/items/{item-id}/content`                                   |
-| [Download content](../api/driveitem-get-content.md)                          | `GET /drive/items/{item-id}/content`                                   |
+| [Download content](../api/driveitem-get-content.md) (deprecated)             | `GET /drive/items/{item-id}/content`                                   |
+| [Download content](../api/driveitem-get-contentstream.md)                    | `GET /drive/items/{item-id}/contentStream`                             |
 | [Download specific file format][download-format]                             | `GET /drive/items/{item-id}/content?format={format}`                   |
 | [Delete item](../api/driveitem-delete.md)                                    | `DELETE /drive/items/{item-id}`                                        |
 | [PermanentDelete item](../api/driveitem-permanentDelete.md)                  | `POST /drives/{driveId}/items/{itemId}/permanentDelete`                |
@@ -84,7 +85,8 @@ Items with the **folder** facet act as containers of items and therefore have a 
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only. Only on OneDrive Personal.
 | bundle               | [bundle][]         | Bundle metadata, if the item is a bundle. Read-only.
-| content              | Stream             | The content stream, if the item represents a file.
+| content (deprecated) | Stream             | The content stream, if the item represents a file. The **content** property will have a potentially breaking change in behavior in the future. It will stream content directly instead of redirecting. To proactively opt in to the new behavior ahead of time, use the **contentStream** property instead.
+| contentStream        | Stream             | The content stream, if the item represents a file.
 | createdBy            | [identitySet][]    | Identity of the user, device, and application, which created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
 | cTag                 | String             | An eTag for the content of the item. This eTag isn't changed if only the metadata is changed. **Note** This property isn't returned if the item is a folder. Read-only.
@@ -169,7 +171,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
-       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
+       "shared", "content","contentStream", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds", "source", "media"],
        "keyProperty": "id", "openType": true } -->
 
@@ -178,6 +180,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "bundle": { "@odata.type": "microsoft.graph.bundle" },
   "content": { "@odata.type": "Edm.Stream" },
+  "contentStream": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "description": "string",
