@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and an [appCredentia
 
 ### Request
 
-The following example shows a request that shows how to get an **appCredentialSignInActivity** object based on its ID.
+The following example shows a request that gets an **appCredentialSignInActivity** object based on its ID.
 
 # [HTTP](#tab/http)
 <!-- {

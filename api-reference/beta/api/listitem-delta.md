@@ -222,7 +222,7 @@ Content-type: application/json
 
 ### Example 2: Last page request
 
-The following example shows a request that shows the last page in a set and how to call this API to update your local state.
+The following example shows a request that gets the last page in a set and how to call this API to update your local state.
 
 #### Request
 
