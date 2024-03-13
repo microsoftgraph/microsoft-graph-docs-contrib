@@ -3,7 +3,7 @@ title: "product: findByCatalogId"
 description: "Find the product revisions associated with a catalog ID and the known issues directly or indirectly related to the catalog ID."
 author: "skandula"
 ms.localizationpriority: medium
-ms.service: "windows-10"
+ms.service: "windows-update-business"
 doc_type: apiPageType
 ---
 
