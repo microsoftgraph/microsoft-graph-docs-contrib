@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |customUrl|String|The training URL|
 |description|String|The description for the training.|
 |displayName|String|The display name for the training.|
-|durationInMinutes|Int32|The duratin of the training in minutes.|
+|durationInMinutes|Int32|The duration of the training in minutes.|
 |hasEvaluation|Boolean|Whether the training has any evaluation.|
 |id|String|The unique identifier for the **training** object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|The identity of the user who last modified the training.|

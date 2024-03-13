@@ -1,6 +1,6 @@
 ---
 title: "trainingCampaign resource type"
-description: "Represents an training campaign in a tenant."
+description: "Represents a training campaign."
 author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
