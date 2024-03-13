@@ -7,7 +7,7 @@ ms.reviewer: nbeesetti
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-applications
-ms.date: 03/07/2024
+ms.date: 03/13/2024
 #Customer intent: As a customer, I want to learn how to configure Microsoft Entra Private Access using Microsoft Graph APIs.
 ---
 
@@ -411,7 +411,28 @@ POST https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd8
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.ipApplicationSegment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('8706aca4-94e9-4783-a23d-7dae1599a6e0')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/$entity",
+    "destinationHost": "test2.com",
+    "destinationType": "fqdn",
+    "port": 0,
+    "ports": [
+        "445-445",
+        "3389-3389"
+    ],
+    "protocol": "tcp",
+    "id": "2b52958c-9d0c-449d-a985-c29d488a6335"
+}
+```
 
 ### [Optional] Update or delete an existing app segment
 
@@ -491,11 +512,38 @@ Record the **id** of the profile to use.
   "name": "tutorial_configure_entraprivateaccess_list_forwardingprofiles"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles
+GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles?$filter=trafficForwardingType eq 'private'
 ```
 
 #### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.networkaccess.forwardingProfile"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/forwardingProfiles",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET networkAccess/forwardingProfiles?$select=associations,priority",
+    "value": [
+        {
+            "trafficForwardingType": "private",
+            "priority": 1,
+            "id": "983891f5-e561-40ca-a4d1-cf4540d9a000",
+            "name": "Private access traffic forwarding profile",
+            "description": "Default traffic forwarding profile for Private access traffic acquisition. Assign the profile to client or branch offices to acquire Private access traffic for Zero Trust Network Access.",
+            "state": "enabled",
+            "version": "1.0.0",
+            "lastModifiedDateTime": "2024-03-12T17:35:36Z",
+            "associations": [],
+            "servicePrincipal": null
+        }
+    ]
+}
+```
 
 ### Step 6.2: Enable the state of the Private Access forwarding profile
 
@@ -505,7 +553,7 @@ The request returns a `204 No content` response.
   "name": "tutorial_configure_entraprivateaccess_enable_forwardingprofile"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{id}
+PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/983891f5-e561-40ca-a4d1-cf4540d9a000
 
 {
    "state": "enabled"
@@ -546,12 +594,25 @@ POST https://graph.microsoft-ppe.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.ipApplicationSegment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 
-## Step 9: Test your access to the Global Secure Access private application
-
-
-<!-- Navi to provide a write up for what's next. -->
-
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('71fe4b11-db80-4525-b7e9-f503fb748180')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/$entity",
+    "destinationHost": "app3.dns.com",
+    "destinationType": "dnsSuffix",
+    "port": 0,
+    "ports": [],
+    "protocol": "0",
+    "id": "6ce9df44-734d-4240-aa3b-789ecaf7b7ce"
+}
+```
 
 ## Related content
 
