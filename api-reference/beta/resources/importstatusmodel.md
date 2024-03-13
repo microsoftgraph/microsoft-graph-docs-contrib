@@ -37,7 +37,7 @@ Here's a JSON representation of the resource.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |*TODO*|
-|id|string|*TODO*|
+|id|string|The unique identifier for the **importStatusModel** object.|
 |status|string|*TODO*|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
