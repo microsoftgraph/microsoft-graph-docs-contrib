@@ -18,7 +18,7 @@ Defines custom behavior that a consuming service can use to call an app in speci
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|guid|*TODO*|
+|id|guid|The unique identifier for the **addIn** object.|
 |properties|[keyValue](keyvalue.md) collection|*TODO*|
 |type|string|*TODO*|
 
