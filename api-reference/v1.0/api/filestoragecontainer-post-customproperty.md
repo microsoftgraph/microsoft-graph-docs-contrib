@@ -11,9 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-
 Add custom properties to a [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
 ## Permissions
