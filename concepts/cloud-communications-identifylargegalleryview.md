@@ -3,7 +3,7 @@ title: "Identify large gallery view participants by using the cloud communicatio
 description: "Identify a large gallery view participant in a roster so that you can subscribe to their video feed by using the cloud communications API in Microsoft Graph."
 author: "navali-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: conceptualPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List contentSharingSessions"
 description: "Retrieve a list of contentSharingSession objects in a call."
 author: "satyakonmsft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Get a driveItem resource
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Retrieve the metadata for a driveItem in a drive by file system path or ID."
 doc_type: apiPageType
 ---

@@ -3,7 +3,7 @@ title: "collaborationRoot resource type"
 description: "An abstract type that enables read and other actions on collaborative entities in Microsoft Defender."
 author: "MishraSoumyaMS"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

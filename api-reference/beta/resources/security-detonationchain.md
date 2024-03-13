@@ -3,7 +3,7 @@ title: "detonationChain resource type"
 description: Represents a detonation chain in Microsoft Defender for Office 365. 
 author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 

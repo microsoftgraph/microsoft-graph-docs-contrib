@@ -3,7 +3,7 @@ title: "analyzedEmailAuthenticationDetail resource type"
 description: Represents a list of pass or fail verdicts by email authentication protocols.
 author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 

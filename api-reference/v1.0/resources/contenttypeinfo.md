@@ -3,7 +3,7 @@ author: "daspek"
 title: "contentTypeInfo resource type"
 ms.localizationpriority: medium
 description: "Represents the SharePoint content type of an item."
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

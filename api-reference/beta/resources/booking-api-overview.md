@@ -3,7 +3,7 @@ title: "Use the Microsoft Bookings API in Microsoft Graph"
 description: "Microsoft Bookings lets enterprise organization and small business owners manage customer bookings and information with minimal setup."
 ms.localizationpriority: high
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: conceptualPageType
 ---
 
