@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. This method moves the **fileStorageContainer**  to the recycle bin; it doesn't permanently delete it.
 
 ## Permissions
