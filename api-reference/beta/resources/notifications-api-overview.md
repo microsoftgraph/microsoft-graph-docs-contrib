@@ -2,7 +2,7 @@
 title: "Use the notifications REST API in Microsoft Graph (deprecated)"
 description: "You can use the notifications API in Microsoft Graph to send push notifications to a user."
 ms.localizationpriority: high
-ms.prod: "notifications"
+ms.subservice: "notifications"
 doc_type: conceptualPageType
 author: "merzink"
 ---

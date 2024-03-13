@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: "driveItem: createUploadSession"
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
 doc_type: apiPageType
 ---

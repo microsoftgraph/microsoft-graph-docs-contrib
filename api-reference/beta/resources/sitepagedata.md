@@ -4,7 +4,7 @@ description: "The sitePageData resource represents the properties of a webPart. 
 ms.date: 09/01/2018
 title: SitePageData
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # sitePageData resource

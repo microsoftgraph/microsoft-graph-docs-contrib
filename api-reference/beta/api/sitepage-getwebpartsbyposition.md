@@ -3,7 +3,7 @@ title: "sitepage: getWebPartsByPosition"
 description: "Get a collection of webParts by position information"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

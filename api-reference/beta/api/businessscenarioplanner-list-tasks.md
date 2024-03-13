@@ -3,7 +3,7 @@ title: "List businessScenarioTasks"
 description: "Get a list of the businessScenarioTask objects and their properties."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 

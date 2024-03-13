@@ -1,12 +1,13 @@
 ---
 title: "Feature differences between Azure AD Graph and Microsoft Graph"
-description: "Describes feature differences between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API, in order to help you migrate apps quickly and easily."
+description: "Describes feature differences between Azure AD Graph and Microsoft Graph, in order to help you migrate apps quickly and easily."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
+ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
-ms.date: 11/11/2022
+ms.date: 03/12/2024
 #Customer intent: As a developer, I want to to understand how features differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
@@ -14,7 +15,7 @@ ms.date: 11/11/2022
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-Many features in Microsoft Graph work similarly to their Azure Active Directory (Azure AD) Graph counterparts. However, a few have changed or improved. Here, you learn how to adapt your apps to take advantage of these differences.  Frequently, the changes are minor, but well worth the effort.
+Many features in Microsoft Graph work similarly to their Azure Active Directory (Azure AD) Graph counterparts. However, a few have changed or improved. In this article, you learn how to adapt your apps to take advantage of these differences.
 
 This article explores how Microsoft Graph handles:
 
@@ -53,11 +54,11 @@ To switch to the newer Microsoft Graph schema extension model, you need to:
 
 - Define new schema extension definitions using Microsoft Graph.
 - Update the app to support the new schema extension definitions.
-- Migrate the data from the Microsoft Entra ID schema extension properties to the new Microsoft Graph schema extension properties.  Automatic migration of data isn't supported.
+- Migrate the data from the Azure AD Graph directory extension properties to the Microsoft Graph schema extension properties. Automatic migration of data isn't supported.
 
 ## Differential queries
 
-Azure AD Graph and Microsoft Graph let you track changes using queries.  The high-level approach is similar between the two APIs, but the syntax is different.
+Azure AD Graph and Microsoft Graph let you track changes using queries. The high-level approach is similar between the two APIs, but the syntax is different.
 
 Azure AD Graph calls these differential queries while Microsoft Graph calls them [delta queries](./delta-query-overview.md).
 
@@ -65,19 +66,19 @@ The following table highlights key similarities and differences:
 
 |Delta request |Azure AD Graph | Microsoft Graph |
 |----|----|----|
-| _Initial data request_ | Uses a query parameter:<br>`GET /groups?deltaLink=` | Uses a function: <br> `GET /groups/delta` |
-| _Get new changes_ | `GET /groups?deltaLink={deltaToken}` | `GET /groups/delta?$deltaToken={deltaToken}` |
-| _Sync from now_ |Uses a custom HTTP header:<br> `ocp-aad-dq-include-only-delta-token: true` | Uses a query parameter: <br> `GET /groups/delta?$deltaToken=latest` |
-| _Track changes for directoryObjects_ | Gets changes for multiple resource (user and group) in the same operation:&nbsp;&nbsp;<br> `GET /directoryObject?$filter=isof('User') or isof('Group')&deltaLink=` | Uses separate queries with Microsoft Graph, one for each resource. |
-| _Get resource and relationship changes_ | All requests return resource and relationship changes, if the resource has relationships. | `GET /groups/delta?$expand=members` |
-| _Response indicating new and changed items_ | <ul><li><p>Represents newly created instances using their standard representation.</p></li><li><p>Updated instances are represented by their id with *at least* the properties that have been updated. Other properties may be included.</p></li><li><p>Relationships are represented as the `directoryLinkChange` type.</p></li></ul>|<ul><li><p>Represents newly created instances using their standard representation.</p></li><li><p>Updated instances are represented by their id with *at least* the properties that have been updated. Other properties may be included.</p></li><li><p>Relationships are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`, for example `members@delta` for a group's membership changes.</p></li></ul> |
-| _Response indicating  deleted items_| Indicates a deleted item with an additional property of *aad.isDeleted* set to true. | Indicates a deleted item with the \@removed annotation. It might also contain a reason code, which indicates if the item is deleted, but can be restored, or is permanently deleted. |
+| Initial data request | Uses a query parameter:<br>`GET /groups?deltaLink=` | Uses a function: <br> `GET /groups/delta` |
+| Get new changes | `GET /groups?deltaLink={deltaToken}` | `GET /groups/delta?$deltaToken={deltaToken}` |
+| Sync from now |Uses a custom HTTP header:<br> `ocp-aad-dq-include-only-delta-token: true` | Uses a query parameter: <br> `GET /groups/delta?$deltaToken=latest` |
+| Track changes for directory objects| Gets changes for multiple resource (user and group) in the same operation:&nbsp;&nbsp;<br> `GET /directoryObject?$filter=isof('User') or isof('Group')&deltaLink=` | Uses separate queries with Microsoft Graph, one for each resource. |
+| Get resource and relationship changes | All requests return resource and relationship changes, if the resource has relationships. | `GET /groups/delta?$expand=members` |
+| Response indicating new and changed items | <ul><li><p>Represents newly created instances using their standard representation.</p></li><li><p>Updated instances are represented by their **id** with *at least* the properties that have been updated. Other properties can be included.</p></li><li><p>Relationships are represented as the `directoryLinkChange` type.</p></li></ul>|<ul><li><p>Represents newly created instances using their standard representation.</p></li><li><p>Updated instances are represented by their **id** with *at least* the properties that have been updated. Other properties can be included.</p></li><li><p>Relationships are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`, for example `members@delta` for a group's membership changes.</p></li></ul> |
+| Response indicating  deleted items| Indicates a deleted item with an additional property of *aad.isDeleted* set to true. | Indicates a deleted item with the `@removed` annotation. It might also contain a reason code, which indicates if the item is deleted, but can be restored, or is permanently deleted. |
 
-If your app is already storing state data, consider using the "sync from now" shown earlier to help manage the transition to delta queries.
+If your app is already storing state data, consider using the "sync from now" functionality to help manage the transition to delta queries.
 
 ## Batching
 
-Azure AD Graph used a system called multi-part MIME messages to manage batching.  Microsoft Graph uses [JSON batching](json-batching.md) to permit up to 20 requests in a single batch operation. The JSON batching mechanism is simpler to use, especially together with JSON parsing libraries.  It also allows for sequencing batch operations.  However, it isn't backwards compatible with the Azure AD Graph batching approach.
+Azure AD Graph used a system called multi-part MIME messages to manage batching. Microsoft Graph uses [JSON batching](json-batching.md) to permit up to 20 requests in a single batch operation. The JSON batching mechanism is simpler to use, especially together with JSON parsing libraries. It also allows for sequencing batch operations. However, it isn't backwards compatible with the Azure AD Graph batching approach.
 
 ## Next step
 
