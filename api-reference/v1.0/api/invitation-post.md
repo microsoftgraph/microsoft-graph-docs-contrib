@@ -30,6 +30,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > [!IMPORTANT]
 > Application permissions (app-only) do not work if B2B invitations are disabled on the tenant or if B2B invitations are restricted to administrators.
 
+> [!NOTE]
+> When using this API to reset the redemption status for a guest user, 'User.ReadWrite.All' permissions are required. See [Reset redemption status for guest user](/entra/external-id/reset-redemption-status#use-microsoft-graph-api-to-reset-redemption-status) for further details on the API request.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
