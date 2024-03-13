@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
 The respective container type identified by **containerTypeId** must be enabled in the tenant. 
