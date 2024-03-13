@@ -60,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/permissions/{permissionId}
+PATCH https://graph.microsoft.com/v1.0/storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 Content-Type: application/json
 
 {
