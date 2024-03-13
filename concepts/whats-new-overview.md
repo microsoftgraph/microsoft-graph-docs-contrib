@@ -28,6 +28,10 @@ Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconci
 
 ## March 2024: New in preview only
 
+### Security | Attack simulation and training
+
+Use [Training only campaigns](/graph/api/resources/trainingcampaign?view=graph-rest-beta&preserve-view=true) API to directly assign users security trainings
+
 ### Files
 
 Use the [Get file by contentStream][/graph/api/driveitem-get-contentstream?view=graph-rest-beta] method to download file content directly instead of getting a `302` redirect URL.
