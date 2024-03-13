@@ -1,7 +1,7 @@
 ---
 title: "Configure the scope of your access review using access reviews APIs"
 description: "Learn how to programmatically review the access that users, service principals, or groups have to your Microsoft Entra resources by using the Microsoft Graph API."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.localizationpriority: medium

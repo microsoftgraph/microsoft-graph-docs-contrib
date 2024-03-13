@@ -17,11 +17,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewMessageRule()
 displayName := "From partner"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 sequence := int32(2)
-requestBody.SetSequence(&sequence)
+requestBody.SetSequence(&sequence) 
 isEnabled := true
-requestBody.SetIsEnabled(&isEnabled)
+requestBody.SetIsEnabled(&isEnabled) 
 conditions := graphmodels.NewMessageRulePredicates()
 senderContains := []string {
 	"adele",
@@ -34,9 +34,9 @@ actions := graphmodels.NewMessageRuleActions()
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 name := "Alex Wilbur"
-emailAddress.SetName(&name)
+emailAddress.SetName(&name) 
 address := "AlexW@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
 forwardTo := []graphmodels.Recipientable {
@@ -44,7 +44,7 @@ forwardTo := []graphmodels.Recipientable {
 }
 actions.SetForwardTo(forwardTo)
 stopProcessingRules := true
-actions.SetStopProcessingRules(&stopProcessingRules)
+actions.SetStopProcessingRules(&stopProcessingRules) 
 requestBody.SetActions(actions)
 
 messageRules, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").MessageRules().Post(context.Background(), requestBody, nil)

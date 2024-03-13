@@ -3,7 +3,7 @@ title: "forceUserPasswordResetResponseAction resource type"
 description: "Describes a response action that prompts the user to change their password the next time they sign in."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

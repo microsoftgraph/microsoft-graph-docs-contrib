@@ -2,10 +2,11 @@
 title: "Differences between resources in Azure AD Graph and Microsoft Graph"
 description: "Describes differences between resources in Azure Active Directory (Azure AD) Graph and resources in Microsoft Graph in order to help migrate apps."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 02/14/2024
 #Customer intent: As a developer, I want to understand how resources differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---

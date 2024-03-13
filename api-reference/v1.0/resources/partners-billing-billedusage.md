@@ -3,7 +3,7 @@ title: "billedUsage resource type"
 description: "Represents details for billed Azure usage data."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

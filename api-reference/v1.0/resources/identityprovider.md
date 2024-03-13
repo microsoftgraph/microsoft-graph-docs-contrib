@@ -3,7 +3,7 @@ title: "identityProvider resource type"
 description: "Represents a Microsoft Entra identity provider."
 ms.localizationpriority: high
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

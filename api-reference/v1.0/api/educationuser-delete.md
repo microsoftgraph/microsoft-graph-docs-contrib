@@ -3,7 +3,7 @@ title: "Delete educationUser"
 description: "Delete a user."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

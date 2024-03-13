@@ -3,7 +3,7 @@ title: Update task
 description: Update a print task.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

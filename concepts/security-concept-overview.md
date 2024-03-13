@@ -3,7 +3,7 @@ title: "Microsoft Graph security API overview"
 description: "Use the Microsoft Graph security API to connect Microsoft security products, services, and partners to streamline security operations and improve response capabilities."
 author: "preetikr"
 ms.localizationpriority: high
-ms.prod: "security"
+ms.subservice: "security"
 ms.custom: scenarios:getting-started
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "Review access to privileged roles using access reviews APIs"
 description: "Learn how to use the access reviews API to periodically review users and groups with access to privileged roles, including both active and eligible roles."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: jgangadhar
+ms.reviewer: jgangadhar, rianakarim
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 11/01/2022

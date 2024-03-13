@@ -3,7 +3,7 @@ title: "cloudPcReports: getRemoteConnectionHistoricalReports"
 description: "Get the remote connection history records of a Cloud PC during a given period."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

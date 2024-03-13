@@ -3,8 +3,9 @@ title: "Get endpoint"
 description: "Retrieve the properties and relationships of a specific endpoint object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "groups"
-author: "Jordanndahl"
+ms.subservice: "entra-groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ---
 
 # Get endpoint
