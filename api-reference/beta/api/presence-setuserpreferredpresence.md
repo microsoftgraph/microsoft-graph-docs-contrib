@@ -4,7 +4,7 @@ description: "Set the user preferred presence for a user"
 author: "awang119"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # presence: setUserPreferredPresence
