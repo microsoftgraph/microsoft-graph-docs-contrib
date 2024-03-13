@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete one or multiple custom properties from a [fileStorageContainer](../resources/filestoragecontainer.md) by assigning a **null** value to the properties.
 
 ## Permissions
