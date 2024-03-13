@@ -52,7 +52,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/permissions
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/{containerId}/permissions
 ```
 
 ### Response
@@ -69,7 +69,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.permission)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.permission)",
   "value": [
     {
         "@odata.type": "#microsoft.graph.permission",
