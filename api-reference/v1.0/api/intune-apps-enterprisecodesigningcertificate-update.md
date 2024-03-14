@@ -69,7 +69,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_update_update_enterprisecodesigningcertificate" }-->
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSigningCertificateId}
+PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSigningCertificateId}
 Content-type: application/json
 Content-length: 390
 

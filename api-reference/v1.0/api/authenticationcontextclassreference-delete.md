@@ -60,7 +60,7 @@ Here's an example of the request.
 }-->
 
 ```http
-DELETE /identity/conditionalAccess/authenticationContextClassReferences/c1
+DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationContextClassReferences/c1
 ```
 
 # [C#](#tab/csharp)

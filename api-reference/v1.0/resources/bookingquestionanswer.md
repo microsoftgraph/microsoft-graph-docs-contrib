@@ -3,7 +3,7 @@ title: "bookingQuestionAnswer resource type"
 description: "Contains a custom question, the answer given by the customer for the custom question, and the properties of the custom question at the time of creation of the appointment."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

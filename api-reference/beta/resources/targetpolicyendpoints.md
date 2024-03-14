@@ -2,7 +2,7 @@
 title: "targetPolicyEndpoints resource type"
 description: "Represents the platforms being targeted for user notifications."
 ms.localizationpriority: medium
-ms.prod: "notifications"
+ms.subservice: "notifications"
 doc_type: "resourcePageType"
 author: "merzink"
 ---

@@ -3,7 +3,7 @@ title: "Onboard tenant"
 description: "Initiate the process to onboard the tenant to the Global Secure Access services."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

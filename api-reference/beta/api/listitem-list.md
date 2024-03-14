@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: "Get the collection of items in a list."
 title: Retrieve items from a SharePoint list
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Enumerate items in a list

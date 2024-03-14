@@ -3,7 +3,7 @@ title: "bookingBusiness: unpublish"
 description: "Make the scheduling page of this business not available to external customers."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

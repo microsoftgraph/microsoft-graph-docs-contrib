@@ -3,7 +3,7 @@ title: "Get teamTemplateDefinition"
 description: "Read the properties and relationships of a teamTemplateDefinition object."
 author: "Charlieforce"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
