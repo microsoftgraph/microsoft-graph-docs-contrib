@@ -107,7 +107,7 @@ All existing permissions are removed when sharing for the first time i
 }-->
 
 ```http
-POST /me/drive/items/{itemId}/createLink
+POST https://graph.microsoft.com/beta/me/drive/items/{itemId}/createLink
 Content-Type: application/json
 
 {
@@ -203,7 +203,7 @@ To create a company sharable link, use the **scope** parameter with a value of `
  } -->
 
 ```http
-POST /me/drive/items/{item-id}/createLink
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/createLink
 Content-Type: application/json
 
 {
@@ -288,7 +288,7 @@ The following example shows a request.
 } -->
 
 ```http
-POST /me/drive/items/{item-id}/createLink
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/createLink
 Content-Type: application/json
 
 {
