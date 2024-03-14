@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerFormReference** resource provides comprehensive details about a form, including the form's display name, URL, and the response data. It is typically used within a `plannerFormsDictionary`(plannerFormsDictionary.md) object in the API.
+The **plannerFormReference** resource provides comprehensive details about a form, including the form's display name, URL, and the response data. It's typically used within a [plannerFormsDictionary](plannerFormsDictionary.md) object in the API.
 
 ## Properties
 | Property       | Type    |Description|

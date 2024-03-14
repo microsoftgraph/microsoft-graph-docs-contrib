@@ -17,7 +17,7 @@ The **plannerFormsDictionary** resource is an open type that represents a dictio
 
 
 ## Properties
-Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [form](plannerformreference.md) objects. Example is shown below. To remove an item in the forms, set the value of the property to `null`.
+You can add and remove values from open type properties. Provide GUID values as keys, and [plannerFormReference](plannerformreference.md) objects as values. Example is shown below. To remove an item in the forms, set the value of the property to `null`.
 
 ## JSON representation
 
