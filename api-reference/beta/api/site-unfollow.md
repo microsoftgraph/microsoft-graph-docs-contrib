@@ -1,7 +1,7 @@
 ---
 author: learafa
 title: Unfollow site
-description: Unfollow a user's site
+description: Unfollow a user's site.
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
@@ -31,7 +31,7 @@ POST /users/{user-id}/followedSites/remove
 
 ## Request body
 
-In the request body, supply an array of JSON objects with the id parameter mentioned in the table below. 
+In the request body, supply an array of JSON objects with the `id` parameter. 
 
 
 | Name                 | Value  | Description                                                            |
@@ -41,7 +41,7 @@ In the request body, supply an array of JSON objects with the id parameter menti
 ## Response
 
 * If the request is successful, this method returns a `204` status code with no content.  
-* If an error occurred while unfollowing any of the specified sites, this method returns a `207` status code and the response body contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.
+* If an error occurred while unfollowing any of the specified sites, this method returns a `207` status code and the response body contains an array of entries that contain [error](/graph/errors) objects and site IDs that indicate which sites were not unfollowed.
 
 ## Example
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 ### Response
 
-If successful, it returns the following JSON response. 
+If successful, the request returns the following response. 
 
 <!-- { "blockType": "response" } -->
 
@@ -110,7 +110,7 @@ If successful, it returns the following JSON response.
 HTTP/1.1 204 No Content
 ```
 
-If an error occurred, it returns the following JSON response 
+If an error occurred, the request returns the following JSON response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
