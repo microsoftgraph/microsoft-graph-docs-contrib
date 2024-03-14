@@ -110,8 +110,8 @@ Provider scenarios are widely varied. A curated onboarding process begins with i
 
 ### Sample code
 
-- [Microsoft Graph Security samples](https://aka.ms/graphsecurityapicode)
-- [Contribute to Microsoft Graph Security samples](https://aka.ms/graphsecurityapicodecontribute)
+- [Microsoft Graph Security samples](/graph/security-concept-overview)
+- [Contribute to Microsoft Graph Security samples](https://github.com/microsoftgraph/microsoft-graph-docs-contrib)
 
 ### Help and support
 

@@ -182,13 +182,12 @@ The Microsoft Graph security API can open up new ways for you to engage with dif
 - [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
 - [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
 - [Node.js (JavaScript) sample](https://github.com/microsoftgraph/nodejs-security-sample)
-- [PowerShell sample](https://aka.ms/graphsecuritypowershellsample)
-- [Other samples or contribute a new sample](https://aka.ms/graphsecurityapicode)
+- [PowerShell sample](/powershell/scripting/developer/prog-guide/windows-powershell-sample-code)
 
 Explore other options to connect with the Microsoft Graph security API:
 
 - [Microsoft Graph security connectors for Logic Apps, Flow and Power Apps](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)
-- [Jupyter Notebook samples](https://aka.ms/graphsecurityjupyternotebooks)
+- [Jupyter Notebook samples](/azure/machine-learning/samples-notebooks)
 
 Engage with the community:
 
