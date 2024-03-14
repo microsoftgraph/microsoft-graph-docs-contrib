@@ -57,7 +57,8 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpcgalleryimage"
+  "name": "get_cloudpcgalleryimage",
+  "sampleKeys": ["MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os"]
 }
 -->
 
