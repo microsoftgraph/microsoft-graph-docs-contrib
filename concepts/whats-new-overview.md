@@ -30,7 +30,7 @@ Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconci
 
 ### Security | Attack simulation and training
 
-Use [Training only campaigns](/graph/api/resources/trainingcampaign?view=graph-rest-beta&preserve-view=true) API to directly assign users security trainings
+Use the [Training only campaigns](/graph/api/resources/trainingcampaign?view=graph-rest-beta&preserve-view=true) API to directly assign users security trainings
 
 ### Files
 
