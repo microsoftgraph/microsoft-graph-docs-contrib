@@ -204,7 +204,7 @@ To create a company sharable link, use the **scope** parameter with a value of `
 }-->
 
 ```http
-POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
+POST https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 Content-Type: application/json
 
 {
@@ -287,7 +287,7 @@ When an embed link is created, the `webHtml` property contains the HTML code for
 }-->
 
 ```http
-POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
+POST https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 Content-Type: application/json
 
 {

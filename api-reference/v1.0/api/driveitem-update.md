@@ -64,7 +64,7 @@ This example renames the DriveItem resource to "new-file-name.docx".
 <!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
-PATCH /me/drive/items/{item-id}
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{item-id}
 Content-type: application/json
 
 {
