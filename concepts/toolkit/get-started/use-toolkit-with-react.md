@@ -428,7 +428,7 @@ With these changes, after signing in to your application with your Microsoft acc
 ::: zone pivot="mgt-react-chat"
 
 1. To see the changes, refresh your browser at `http://localhost:3000`.
-1. Choose the **Sign In** button and sign-in using your Microsoft account.
+1. Choose the **Sign In** button and sign in using your Microsoft account.
 1. After consenting to the use of the application, you should see information about the current user. You also see their calendar and the ability to create a new chat and start interacting with this user.
 ![Finished app](../images/mgt-finished-app-v4.png)
 ::: zone-end
