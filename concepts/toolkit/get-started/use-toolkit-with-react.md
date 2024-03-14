@@ -421,7 +421,7 @@ With these changes, after signing in to your application with your Microsoft acc
 ::: zone pivot="mgt-react"
 
 1. To see the changes, refresh your browser at `http://localhost:3000`.
-1. Choose the **Sign In** button and sign-in using your Microsoft account.
+1. Choose the **Sign In** button and sign in using your Microsoft account.
 1. After consenting to the use of the application, you should see information about the current user and their calendar.
 ![Finished app](../images/mgt-finished-app.png)
 ::: zone-end
