@@ -54,7 +54,7 @@ This example unfollows an item identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
-POST /me/drive/items/{item-id}/unfollow
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/unfollow
 ```
 
 # [C#](#tab/csharp)

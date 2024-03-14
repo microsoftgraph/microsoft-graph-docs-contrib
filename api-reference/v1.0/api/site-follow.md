@@ -60,7 +60,7 @@ The following example shows how to follow multiple sites.
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /users/{user-id}/followedSites/add
+POST https://graph.microsoft.com/v1.0/users/{user-id}/followedSites/add
 Content-Type: application/json
 
 {

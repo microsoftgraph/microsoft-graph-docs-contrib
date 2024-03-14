@@ -10,7 +10,7 @@ ms.subservice: "security"
 
 You can connect with the Microsoft Graph Security API using any of the following options. These options enable you to work with data in a unified format across [supported Microsoft and partner security providers](/graph/api/resources/security-api-overview#alerts) through a single integration:
 
-- **Use the supported integration options:** Refer to the [list of supported integration options](./security-concept-overview.md#why-use-the-microsoft-graph-security-api) such as writing code to directly connect your application to derive rich insights. Leverage [samples](https://aka.ms/graphsecurityapicode) to get started.
+- **Use the supported integration options:** Refer to the [list of supported integration options](./security-concept-overview.md#why-use-the-microsoft-graph-security-api) such as writing code to directly connect your application to derive rich insights. 
 - **Use native integrations and connectors built by Microsoft partners:** Refer to the [Microsoft Graph Security API partner solutions](https://aka.ms/graphsecuritypartnerships) to use these integrations.  
 - **Use connectors built by Microsoft:** Refer to the [list of connectors](#list-of-connectors-from-microsoft) that you can use to connect with the API through a variety of solutions for Security Incident and Management (SIEM), Security Response and Orchestration (SOAR), Incident Tracking and Service Management (ITSM), reporting, and so on.  
 

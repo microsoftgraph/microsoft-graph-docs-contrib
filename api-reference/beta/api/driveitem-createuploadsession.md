@@ -377,7 +377,7 @@ To indicate that your app is committing an existing upload session, the PUT requ
 <!-- { "blockType": "request", "name": "explicit-upload-commit" } -->
 
 ```http
-PUT /me/drive/root:/{path_to_file}
+PUT https://graph.microsoft.com/beta/me/drive/root:/{path_to_file}
 Content-Type: application/json
 If-Match: {etag or ctag}
 
