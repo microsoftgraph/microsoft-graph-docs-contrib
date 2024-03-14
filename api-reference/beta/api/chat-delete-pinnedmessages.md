@@ -3,7 +3,7 @@ title: "Unpin a message from a chat"
 description: "Unpin a message from a chat."
 author: "sumanac"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

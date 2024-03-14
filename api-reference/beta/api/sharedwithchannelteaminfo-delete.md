@@ -4,7 +4,7 @@ description: "Delete a team from a shared channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Delete sharedWithChannelTeamInfo

@@ -3,7 +3,7 @@ title: "call: changeScreenSharingRole"
 description: "Allow applications to share screen content with the participants of a group call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -47,12 +47,12 @@ In the request body, provide a JSON object with the following parameters.
 |role|String|Possible values are: 'viewer', 'sharer'|
 
 ## Response
-If successful, this method returns a `202 Accepted` response code, and all participants will receive a roster update.
+If successful, this method returns a `202 Accepted` response code, and all participants receive a roster update.
 
 ## Example
 
 ##### Request
-The following example shows the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -105,7 +105,7 @@ Content-Length: 24
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -162,7 +162,7 @@ Content-Type: application/json
     }
   ]
 }
-```
+``` 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,7 +4,7 @@ description: "Create a new folder or DriveItem in a Drive with a specified paren
 ms.date: 09/10/2017
 title: Create a new folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Create a new folder in a drive
@@ -56,7 +56,7 @@ The `@microsoft.graph.conflictBehavior` property used indicates that if an item 
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
 ```http
-POST /me/drive/root/children
+POST https://graph.microsoft.com/beta/me/drive/root/children
 Content-Type: application/json
 
 {

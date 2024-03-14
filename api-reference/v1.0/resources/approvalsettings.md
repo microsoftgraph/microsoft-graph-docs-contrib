@@ -3,7 +3,7 @@ title: "approvalSettings resource type"
 description: "The settings for approval as defined in a role management policy rule."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

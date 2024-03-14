@@ -3,7 +3,7 @@ title: "Update industryDataConnector"
 description: "Update the properties of an industryDataConnector object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -70,7 +70,7 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH /external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
+PATCH https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
 Content-type: application/json
 
 {

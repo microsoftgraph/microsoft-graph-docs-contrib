@@ -4,7 +4,7 @@ description: "Get the Focused Inbox overrides that a user has set up to always c
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
-ms.prod: mail
+ms.subservice: mail
 ---
 
 # List overrides

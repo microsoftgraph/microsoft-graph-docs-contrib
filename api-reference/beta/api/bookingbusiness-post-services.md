@@ -3,7 +3,7 @@ title: "Create bookingService"
 description: "Create a new bookingService for the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

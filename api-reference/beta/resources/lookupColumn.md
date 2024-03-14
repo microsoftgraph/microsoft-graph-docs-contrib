@@ -5,7 +5,7 @@ ms.date: 09/11/2017
 title: LookupColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # LookupColumn resource type

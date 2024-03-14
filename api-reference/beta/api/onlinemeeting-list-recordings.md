@@ -3,7 +3,7 @@ title: "List recordings"
 description: "Get the list of callRecording objects associated with a scheduled onlineMeeting."
 author: "v-sdhakshina"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

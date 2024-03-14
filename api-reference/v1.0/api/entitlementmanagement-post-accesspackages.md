@@ -3,7 +3,7 @@ title: "Create accessPackage"
 description: "Create a new accessPackage."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Create accessPackage

@@ -4,7 +4,7 @@ description: "Add a conversationMember to a chat."
 author: "anandjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Add member to a chat
