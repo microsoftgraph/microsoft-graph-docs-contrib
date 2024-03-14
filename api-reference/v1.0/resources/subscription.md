@@ -19,12 +19,12 @@ For more information about subscriptions and change notifications, including res
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
-| [Create subscription](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive change notifications when Microsoft Graph data changes. |
-| [Update subscription](../api/subscription-update.md) | [subscription](subscription.md) | Renews a subscription by updating its expiration time. |
 | [List subscriptions](../api/subscription-list.md) | [subscription](subscription.md) | Lists active subscriptions. |
+| [Create subscription](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive change notifications when Microsoft Graph data changes. |
 | [Get subscription](../api/subscription-get.md) | [subscription](subscription.md) | Reads properties and relationships of subscription object. |
+| [Update subscription](../api/subscription-update.md) | [subscription](subscription.md) | Renews a subscription by updating its expiration time. |
 | [Delete subscription](../api/subscription-delete.md) | None | Deletes a subscription object. |
-|[reauthorize](../api/subscription-reauthorize.md)|None|Reauthorize a subscription when you receive a **reauthorizationRequired** challenge. |
+|[Reauthorize](../api/subscription-reauthorize.md)|None|Reauthorize a subscription when you receive a **reauthorizationRequired** challenge. |
 
 ## Properties
 
