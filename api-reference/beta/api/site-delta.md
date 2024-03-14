@@ -162,15 +162,11 @@ Content-type: application/json
         {
             "createdDateTime": "2024-03-11T02:36:04Z",
             "name": "All Company",
-            "webUrl": "https://a830edad905084959efe3nrouio.sharepoint.com/sites/allcompany",
             "displayName": "All Company",
             "isPersonalSite": false,
             "id": "bd565af7-7963-4658-9a77-26e11ac73186",
             "@removed": {
                 "reason": "deleted"
-            },
-            "siteCollection": {
-                "hostname": "a830edad905084959efe3nrouio.sharepoint.com"
             },
             "root": {}
         }
