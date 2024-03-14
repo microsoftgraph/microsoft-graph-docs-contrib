@@ -18,7 +18,7 @@
     {
       "source_path_from_root": "/concepts/accessreviews-overview.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/accessreviewsv2-overview?view=graph-rest-1.0",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
