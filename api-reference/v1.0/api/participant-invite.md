@@ -274,7 +274,7 @@ Content-Type: application/json
 }-->
 
 ```http
-POST /communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/invite
+POST https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/invite
 Content-Type: application/json
 
 {
@@ -551,7 +551,7 @@ will be read and the rest of the participants will be ignored.
 }-->
 
 ```http
-POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
+POST https://graph.microsoft.com/v1.0/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
 Content-Type: application/json
 
 {
@@ -760,7 +760,7 @@ This call requires an application instance with a PSTN number assigned. For deta
   "name": "participant-invite-2"
 }-->
 ```http
-POST /communications/calls/{id}/participants/invite
+POST https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/invite
 Content-Type: application/json
 Content-Length: 464
 
@@ -975,7 +975,7 @@ The following example shows a request.
 }-->
 
 ```http
-POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
+POST https://graph.microsoft.com/v1.0/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
 Content-Type: application/json
 
 {

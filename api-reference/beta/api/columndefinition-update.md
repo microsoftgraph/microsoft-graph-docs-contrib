@@ -74,7 +74,7 @@ The following example shows a request.
 }
 -->
 ```http
-PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 Content-Type: application/json
 
 {
