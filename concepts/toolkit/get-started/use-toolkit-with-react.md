@@ -81,7 +81,7 @@ You should be able to open your app in the browser via `http://localhost:3000`.
 
 ## Connect React app to Microsoft 365
 
-Now that your application is registered with Microsoft Entra ID, you can connect the React app to Microsoft 365. First, allow users to sign-in to the app using their Microsoft account.
+Now that your application is registered with Microsoft Entra ID, you can connect the React app to Microsoft 365. First, allow users to sign in to the app using their Microsoft account.
 
 <a name='copy-the-azure-ad-application-registration-id'></a>
 
