@@ -72,7 +72,7 @@ This example uploads the string "The contents of the file goes here." to a file 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
 ```http
-PUT /me/drive/root:/FolderA/FileB.txt:/content
+PUT https://graph.microsoft.com/v1.0/me/drive/root:/FolderA/FileB.txt:/content
 Content-Type: text/plain
 
 The contents of the file goes here.
@@ -105,7 +105,7 @@ This example replaces the contents of a file with a known ID.
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
 ```http
-PUT /me/drive/items/{item-id}/content
+PUT https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/content
 Content-Type: text/plain
 
 The contents of the file goes here.
