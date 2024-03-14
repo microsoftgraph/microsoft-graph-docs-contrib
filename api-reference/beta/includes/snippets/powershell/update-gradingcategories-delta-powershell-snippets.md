@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Education
+Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
 	"gradingCategories@delta" = @(
 	)
 }
 
-Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
+Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
 ```

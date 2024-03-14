@@ -4,7 +4,7 @@ description: "Provides information necessary to address a driveItem or listItem 
 title: itemReference
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 ---
 # itemReference resource type
 

@@ -33,6 +33,10 @@ Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconci
 
 ## March 2024: New in preview only
 
+### Files
+
+Use the [Get file by contentStream](/graph/api/driveitem-get-contentstream?view=graph-rest-beta&preserve-view=true) method to download file content directly instead of getting a `302` redirect URL.
+
 ### Identity and access | Identity and sign-in
 
 Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/federatedtokenvalidationpolicy?view=graph-rest-beta&preserve-view=true) and its associated methods to manage whether Microsoft Entra ID validates federation authentication tokens.

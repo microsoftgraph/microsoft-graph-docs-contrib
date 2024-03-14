@@ -3,7 +3,7 @@ title: 'webPart resource type'
 description: Represents a specific web part instance on a SharePoint page.
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

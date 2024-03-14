@@ -4,7 +4,7 @@ description: "Get a user's presence information."
 author: "ananmishr"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Get presence

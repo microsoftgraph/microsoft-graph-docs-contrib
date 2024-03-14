@@ -72,8 +72,6 @@ This resource supports:
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups the user is a member of. The check is transitive. |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | Return all the groups, directory roles, and administrative units the user is a member of. The check is transitive. |
 | [Get transitiveReports](../api/user-get-transitivereports.md) | Integer | Get the count of transitive reports for a user from the transitiveReports navigation property. |
-| [getPasswordSingleSignOnCredentials](../api/user-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md) collection|Get the list of password-based single sign-on credentials for given user. Passwords are never returned, and instead are always returned as null or empty strings.|
-| [deletePasswordSingleSignOnCredentials](../api/user-deletepasswordsinglesignoncredentials.md)|None|Delete password-based single sign-on credential for a given service principal that is associated to a given user.|
 | [List createdObjects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects created by the user from the createdObjects navigation property. |
 | [List licenseDetails](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) collection | Get a licenseDetails object collection. |
 | [List ownedDevices](../api/user-list-owneddevices.md) | [directoryObject](directoryobject.md) collection | Get the devices that the user owns from the ownedDevices navigation property. |
@@ -128,6 +126,9 @@ This resource supports:
 | [List Outlook categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) collection                                 | Get all the categories defined for the user. |
 | [Translate Exchange Ids](../api/user-translateexchangeids.md) | [convertIdResult](convertidresult.md) collection | Translate identifiers of Outlook-related resources between formats. |
 | [Update user mailbox settings](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Enable, configure, or disable one or more mailboxSettings for a user. |
+| **Password-based single sign-on credentials** |||
+| [getPasswordSingleSignOnCredentials](../api/user-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md) collection|Get the list of password-based single sign-on credentials for given user. Passwords are never returned, and instead are always returned as null or empty strings.|
+| [deletePasswordSingleSignOnCredentials](../api/user-deletepasswordsinglesignoncredentials.md)|None|Delete password-based single sign-on credential for a given service principal that is associated to a given user.|
 | **People** |||
 | [List people](../api/user-list-people.md) | [person](person.md) | Retrieve a list of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships. |
 | **Photo** |||

@@ -3,7 +3,7 @@ title: "Update bookingService"
 description: "Update the properties of a bookingService object in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "detonationDetails resource type"
 description: Represents detonation details specific to email attachments and URLs.
 author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 

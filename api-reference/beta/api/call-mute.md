@@ -3,7 +3,7 @@ title: "call: mute"
 description: "Allows the application to mute itself."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Allows the application to mute itself.
 
-This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+This is a server mute, meaning that the server drops all audio packets for this participant, even if the participant continues to stream audio.
 
-For more details about how to handle mute operations, see [muteParticipantOperation](../resources/muteparticipantoperation.md)
+For more information about how to handle mute operations, see [muteParticipantOperation](../resources/muteparticipantoperation.md).
 
 > **Note:** This method is only supported for group calls.
 
@@ -58,9 +58,11 @@ If successful, this method returns a `200 OK` response code and a [muteParticipa
 > **Note:** After this operation returns a successful response, all participants will receive a roster update
 
 ## Example
+
 The following example shows how to call this API.
 
 ##### Request
+
 The following example shows the request.
 
 

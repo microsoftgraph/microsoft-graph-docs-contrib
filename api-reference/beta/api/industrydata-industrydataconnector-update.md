@@ -70,7 +70,7 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH /external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
+PATCH https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
 Content-type: application/json
 
 {

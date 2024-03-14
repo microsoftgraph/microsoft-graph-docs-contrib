@@ -67,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1819
+Content-Length: 1867
 
 {
   "value": {
@@ -114,7 +114,8 @@ Content-Length: 1819
     "proxyManualAddress": "Proxy Manual Address value",
     "proxyManualPort": 15,
     "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
-    "proxyExclusionList": "Proxy Exclusion List value"
+    "proxyExclusionList": "Proxy Exclusion List value",
+    "macAddressRandomizationMode": "hardware"
   }
 }
 ```
