@@ -17,9 +17,8 @@ Represents location information of an [event](event.md).
 
 There are multiple ways to create events in a calendar, for example, through an app using the 
 [create event](../api/user-post-events.md) REST API, or manually using the Outlook user interface. When you create an event using the user interface, 
-you can specify the location as plain text (for example, "Harry's Bar"), or from the rooms list provided by Outlook, 
-[Bing Autosuggest](/bing/apis/bing-autosuggest-api), or 
-[Bing local search](/bingmaps/rest-services/locations/local-search). 
+you can specify the location as plain text (for example, "Harry's Bar"), or from the rooms list provided by Outlook, Bing Autosuggest, or 
+Bing local search. 
 
 Depending on how an event is created, expect Outlook to set the read-only **locationType** property differently. 
 
