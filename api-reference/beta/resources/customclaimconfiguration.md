@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Claim configuration that details the conditions and sources of any custom claim. Typically, either an attribute or a set of transforms should be provided to source the claim value. In the case where both are provided then the output of the transforms will take priority, only if the transforms result in no output will the attribute value be used.
+Claim configuration that details the conditions and sources of any custom claim. Typically, either an attribute or a set of transforms should be provided to source the claim value. In the case where both are provided then the output of the transforms take priority. If the transforms result in no output then the attribute value is used.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |attribute|[customClaimAttributeBase](../resources/customclaimattributebase.md)|The attribute on which we source this property.|
 |condition|[customClaimConditionBase](../resources/customclaimconditionbase.md)|The condition, if any, associated with this configuration.|
-|transformations|[customClaimTransformation](../resources/customclaimtransformation.md) collection|An ordered list of transformations that will be applied in sequence.|
+|transformations|[customClaimTransformation](../resources/customclaimtransformation.md) collection|An ordered list of transformations that are applied in sequence.|
 
 ## Relationships
 None.

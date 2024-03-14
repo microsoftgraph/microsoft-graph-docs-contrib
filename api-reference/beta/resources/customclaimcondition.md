@@ -1,6 +1,6 @@
 ---
 title: "customClaimCondition resource type"
-description: "A claim condition that is associated with a particular claim configuration. The claim configuration will only be applied if the condition is met."
+description: "A claim condition that is associated with a particular claim configuration. The claim configuration is only be applied if the condition is met."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A claim condition that is associated with a particular claim configuration. The claim configuration will only be applied if the condition is met.
+A claim condition that is associated with a particular claim configuration. The claim configuration is only be applied if the condition is met.
 
 Inherits from [customClaimConditionBase](../resources/customclaimconditionbase.md).
 
