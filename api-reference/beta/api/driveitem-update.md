@@ -42,14 +42,14 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 | Name          | Type   | Description                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
+| if-match      | String | If this request header is included and the eTag (or cTag) provided doesn't match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
 ## Request body
 
 In the request body, supply the values for properties that should be updated.
 
-Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
-For best performance your app should not include properties that haven't changed.
+Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values.
+For best performance, your app shouldn't include properties that haven't changed.
 
 ## Response
 
