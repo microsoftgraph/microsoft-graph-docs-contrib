@@ -62,7 +62,6 @@ The following example shows how to get an attack simulation campaign for a tenan
 
 #### Request
 
-
 <!-- {
   "blockType": "request",
   "name" : "get_trainingcampaign"
@@ -125,7 +124,6 @@ The following example shows how to get included account targets (users) for a Tr
 
 #### Request
 
-
 <!-- {
   "blockType": "request",
   "name" : "get_trainingcampaign_includedtargets"
@@ -167,7 +165,6 @@ Content-Type: application/json
 The following example shows how to get excluded account targets (users) for a Training campaign for a tenant.
 
 #### Request
-
 
 <!-- {
   "blockType": "request",
@@ -211,7 +208,6 @@ The following example shows how to get training setting details for a training c
 
 #### Request
 
-
 <!-- {
   "blockType": "request",
   "name" : "get_trainingcampaign_training"
@@ -223,7 +219,6 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns
 ```
 
 ---
-
 
 #### Response
 
@@ -253,7 +248,6 @@ Content-Type: application/json
 The following example shows how to get end user notification setting details for a training campaign.
 
 #### Request
-
 
 <!-- {
   "blockType": "request",

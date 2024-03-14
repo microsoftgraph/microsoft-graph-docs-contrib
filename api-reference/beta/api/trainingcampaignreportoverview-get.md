@@ -1,5 +1,5 @@
 ---
-title: "Get Training campaign report overview"
+title: "Get trainingCampaignReportOverview"
 description: "Get an overview of a training campaign."
 author: "akgraph"
 ms.localizationpriority: medium

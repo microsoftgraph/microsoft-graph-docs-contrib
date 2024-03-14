@@ -52,7 +52,7 @@ You can specify the following properties when creating a **trainingCampaign**.
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|The identity of the user who created the training campaign. Optional.|
-|createdDateTime|DateTimeOffset|the date and time when the training campaign was created. Optional.|
+|createdDateTime|DateTimeOffset|The date and time when the training campaign was created. Optional.|
 |description|String|The description of the training campaign. Optional.|
 |displayName|String|The display name of the training campaign. Required.|
 |endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|Details about the end user notification setting. Required.|

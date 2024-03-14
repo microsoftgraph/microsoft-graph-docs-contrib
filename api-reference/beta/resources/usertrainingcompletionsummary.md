@@ -18,11 +18,11 @@ Aggregate data of users training progress
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completedUsersCount|Int32|Count of users who complete all the trainings before due date.|
-|inProgressUsersCount|Int32|Count of users who start atleast one training.|
-|notCompletedUsersCount|Int32|Count of users who didn't complete all the trainings prior to the due date.|
-|notStartedUsersCount|Int32|Count of users who didn't start any training.|
-|previouslyAssignedUsersCount|Int32|Count of users who are already assigned the same training.|
+|completedUsersCount|Int32|The number of users who completed all the trainings before due date.|
+|inProgressUsersCount|Int32|The number of users who started at least one training.|
+|notCompletedUsersCount|Int32|The number of users who didn't complete all the trainings prior to the due date.|
+|notStartedUsersCount|Int32|The number of users who didn't start any training.|
+|previouslyAssignedUsersCount|Int32|The number of users who are already assigned the same training.|
 
 ## Relationships
 None.

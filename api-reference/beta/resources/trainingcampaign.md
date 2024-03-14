@@ -55,7 +55,7 @@ Inherits from [entity](../resources/entity.md).
 |inProgress| The campaign is in progress. |
 |scheduled| The campaign is scheduled. |
 |completed| The campaign is complete. |
-|failed| The campaign is failed. |
+|failed| The campaign failed. |
 |cancelled| The campaign is cancelled. |
 |excluded| The campaign is excluded. |
 |deleted| The campaign is in draft mode. |

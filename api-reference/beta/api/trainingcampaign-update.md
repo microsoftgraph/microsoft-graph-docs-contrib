@@ -49,7 +49,7 @@ PATCH /security/attackSimulation/trainingCampaigns/{trainingCampaignId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the training campaign. Optional.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|The identity of the user who created the training campaign. Optional.|
 |createdDateTime|DateTimeOffset|The date and time of creation of the training campaign. Optional.|
 |description|String|The description of the training campaign. Optional.|
 |displayName|String|The display name of the training campaign. Required.|

@@ -18,9 +18,9 @@ Aggregate data of training mail delivery over the course of the training campaig
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|failedMessageDeliveryCount|Int32|Count of users for which mails couldn't be delivered.|
-|resolvedTargetsCount|Int32|Count of users whose email address is successfully resolved from target users.|
-|successfulMessageDeliveryCount|Int32|count of users who received a mail while the training campaign is "in progress" state.|
+|failedMessageDeliveryCount|Int32|The number of users to whom mails couldn't be delivered.|
+|resolvedTargetsCount|Int32|The number of users whose email address is successfully resolved from target users.|
+|successfulMessageDeliveryCount|Int32|The number of users who received a mail while the training campaign was in the "in progress" state.|
 
 ## Relationships
 None.

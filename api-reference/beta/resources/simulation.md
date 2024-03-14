@@ -87,7 +87,7 @@ Inherits from [entity](../resources/entity.md).
 |linkToMalwareFile| Attack technique that involves an end user clicking a URL link to a malware file. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 |oAuthConsentGrant|  Attack technique that involves an end user who gives access consent to an app.|
-|phishTraining|  Attack technique that involves training end user on actions to be performed on a phish mail.|
+|phishTraining|  Attack technique that involves training end users on actions to be performed on a phish mail.|
 
 ### simulationAttackType values
 
