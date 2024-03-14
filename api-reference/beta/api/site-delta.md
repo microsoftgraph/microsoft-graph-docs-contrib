@@ -22,7 +22,7 @@ Your application should continue making calls using the **@odata.nextLink** unti
 Once you have received all the changes, you can apply them to your local state.
 To monitor future changes, call the `delta` API using the **@odata.deltaLink** in the previous response.
 
-Deleted sites are included in the response with the [deleted](../resources/deleted.md) facet. Any resources marked as deleted should be removed from your local state.
+Deleted sites are returned with the @removed annotation with the reason of removal. Any resources marked as deleted should be removed from your local state.
 
 ## Permissions
 
@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/beta/sites/delta?token=1230919asd190410jlka
 
 #### Response
 
-The following example shows the response that indicates that the site named `teamSiteA` was deleted and the site `teamSiteB` was either added or modified between the initial request and this request to update the local state.
+The following example shows the response that indicates that the site named `AllCompany` was deleted between the initial request and this request to update the local state.
 
 The final page of sites includes the **@odata.deltaLink** property that provides the URL that can be used later to retrieve changes since the current set of sites.
 
@@ -156,24 +156,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
-      "name": "teamSiteA",
-      "deleted": {
-        "state": "deleted"
-      },
-      "@removed": {
-        "reason": "deleted"
-      }
-    },
-    {
-      "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
-      "name": "teamSiteB"
-    }
-  ],
-  "@odata.deltaLink": "https://graph.microsoft.com/beta/sites/delta?token=1230919asd190410jlka"
-}
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#sites",
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/sites/delta?$deltatoken=b2vm2fSuZ-V_1Gdq4ublGPD4lReifRNHYMGxkFf0yz2fTqr9U6jMyWv8hihThODJCO_5I7JbpAFLQAIOUzYXhCPl0jlQdjTC1o24iBe81xQyAWJOiP3q1xyMKjlfZUawWok3Njc_LIrrSgrdSydhsVCL6XYpRkYGJ9JDYxFMiJw2vUs1QC_S0cW6hqYQnOimeA918dQZwD8pJI9oUJryV2Ow-7Dj9p18p1I6pFg044k.xipVdgMKlOFIlXzPipsKzlFJbYUTD1sGiFiPe7uZA7Q",
+    "value": [
+        {
+            "createdDateTime": "2024-03-11T02:36:04Z",
+            "name": "All Company",
+            "webUrl": "https://a830edad905084959efe3nrouio.sharepoint.com/sites/allcompany",
+            "displayName": "All Company",
+            "isPersonalSite": false,
+            "id": "bd565af7-7963-4658-9a77-26e11ac73186",
+            "@removed": {
+                "reason": "deleted"
+            },
+            "siteCollection": {
+                "hostname": "a830edad905084959efe3nrouio.sharepoint.com"
+            },
+            "root": {}
+        }
+    ]
 ```
 
 ### Example 3: Delta link request
