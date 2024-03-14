@@ -47,7 +47,7 @@ items:
             href: metered-api-overview.md
             displayName: monetize, charge, cost, pricing
           - name: List of metered APIs
-            href: metered-api-list.md   
+            href: metered-api-list.md
       - name: What's new
         href: whats-new-overview.md
         displayName: what's new, updates
@@ -113,6 +113,8 @@ items:
         - name: Install an SDK
           href: sdks/sdk-installation.md
           displayName: install SDK, install SDKs, installation
+        - name: Generate clients with Kiota
+          href: sdks/generate-with-kiota.md
         - name: Create a client
           href: sdks/create-client.md
         - name: Customize a client
@@ -548,7 +550,7 @@ items:
               - name: Share assignments with an embedded Teams application
                 href: embed-teams-app-in-assignment.md
       - name: External data connections
-        items: 
+        items:
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
             displayName: Microsoft Graph connectors, connect external content
