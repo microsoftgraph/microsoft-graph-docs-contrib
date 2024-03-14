@@ -1,5 +1,5 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
+description: "Automatically generated file. DO NOT MODIFY"
 ms.topic: include
 ms.localizationpriority: medium
 ---
@@ -9,5 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|UserCloudClipboard.Read|Not available.|
 |Delegated (personal Microsoft account)|UserCloudClipboard.Read|Not available.|
 |Application|Not supported.|Not supported.|
-
 

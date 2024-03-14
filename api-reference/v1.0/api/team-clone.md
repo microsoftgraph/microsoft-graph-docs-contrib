@@ -23,7 +23,7 @@ You can specify which parts of the team to clone:
 > **Note:** This method isn't supported for organization-wide teams.
 
 > [!NOTE]
-> A known issue related to owners of cloned teams is associated with this method. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/&search=18955).
+> A known issue related to owners of cloned teams is associated with this method. For details, see [Known issues](https://developer.microsoft.com/graph/known-issues).
 
 When tabs are cloned, they aren't configured. The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen. 
 If the user who opens the tab doesn't have permission to configure apps, they'll see a message that says that the tab isn't configured.
@@ -85,7 +85,7 @@ Here's an example of the request.
   "name": "clone_team"
 }-->
 ```http
-POST /teams/{id}/clone
+POST https://graph.microsoft.com/v1.0/teams/{id}/clone
 Content-Type: application/json
 
 {  
