@@ -645,8 +645,6 @@ items:
                 displayName: governance, identity
               - name: Review access to your resources
                 items:
-                  - name: Overview
-                    href: accessreviews-overview.md
                     displayName: identity, access reviews API, review access
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
