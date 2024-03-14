@@ -186,7 +186,7 @@ export default App;
 
 ### Test signing in to your application
 
-You should now be able to sign-in to your application with your Microsoft account.
+You should now be able to sign in to your application with your Microsoft account.
 
 1. Go back to the browser where your React app is running. You should now see a **Sign In** button.
 1. When you select the **Sign In** button, you're prompted to sign-in with your Microsoft account (you can use the same account as the one you accessed the Azure portal with).
