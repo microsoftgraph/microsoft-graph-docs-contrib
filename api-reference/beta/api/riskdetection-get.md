@@ -3,7 +3,7 @@ title: "Get riskDetection"
 description: "Retrieve the properties of a **riskdetection** object."
 ms.localizationpriority: medium
 author: "tracyshi"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # Get riskDetection
@@ -40,7 +40,7 @@ This method does not support any [OData query parameters](/graph/query-parameter
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body

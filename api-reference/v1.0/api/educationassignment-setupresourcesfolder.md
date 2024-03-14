@@ -3,7 +3,7 @@ title: "educationAssignment: setUpResourcesFolder"
 description: "Create a SharePoint folder to upload files for a given educationAssignment."
 ms.localizationpriority: medium
 author: "sharmas"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply an empty JSON object `{}` for this method.

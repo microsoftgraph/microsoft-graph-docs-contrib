@@ -4,29 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String displayName = "Library Assist";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String description = "Self help community for library";
+com.microsoft.graph.beta.teams.item.clone.ClonePostRequestBody clonePostRequestBody = new com.microsoft.graph.beta.teams.item.clone.ClonePostRequestBody();
+clonePostRequestBody.setDisplayName("Library Assist");
+clonePostRequestBody.setDescription("Self help community for library");
+clonePostRequestBody.setMailNickname("libassist");
+clonePostRequestBody.setPartsToClone(EnumSet.of(ClonableTeamParts.Apps, ClonableTeamParts.Tabs, ClonableTeamParts.Settings, ClonableTeamParts.Channels, ClonableTeamParts.Members));
+clonePostRequestBody.setVisibility(TeamVisibilityType.Public);
+graphClient.teams().byTeamId("{team-id}").clone().post(clonePostRequestBody);
 
-String mailNickname = "libassist";
-
-EnumSet<ClonableTeamParts> partsToClone = EnumSet.of(ClonableTeamParts.APPS,ClonableTeamParts.TABS,ClonableTeamParts.SETTINGS,ClonableTeamParts.CHANNELS,ClonableTeamParts.MEMBERS);
-
-TeamVisibilityType visibility = TeamVisibilityType.PUBLIC;
-
-graphClient.teams("{id}")
-	.clone(TeamCloneParameterSet
-		.newBuilder()
-		.withDisplayName(displayName)
-		.withDescription(description)
-		.withMailNickname(mailNickname)
-		.withClassification(null)
-		.withVisibility(visibility)
-		.withPartsToClone(partsToClone)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

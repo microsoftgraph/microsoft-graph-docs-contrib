@@ -3,7 +3,7 @@ title: "List deletedItems (directory objects)"
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of recently deleted directory objects. Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md), [administrative unit](../resources/administrativeunit.md), and [user](../resources/user.md) resources.
+Retrieve a list of recently deleted directory objects. Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [externalUserProfile](../resources/externaluserprofile.md), [group](../resources/group.md), [administrative unit](../resources/administrativeunit.md), [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md), and [user](../resources/user.md) resources.
 
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 
@@ -27,7 +27,9 @@ The following table shows the least privileged permission or permissions require
 |:-|:-|:-|:-|
 | [administrativeUnit](../resources/administrativeunit.md) | AdministrativeUnit.Read.All | Not supported. | AdministrativeUnit.Read.All |
 | [application](../resources/application.md) | Application.Read.All | Not supported. | Application.Read.All |
+| [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.Read.All | Not supported | ExternalUserProfile.Read.All |
 | [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
+| [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.Read.All | Not supported | PendingExternalUserProfile.Read.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.Read.All | Not supported. | Application.Read.All |
 | [user](../resources/user.md) | User.Read.All | Not supported. | User.Read.All |
 
@@ -41,6 +43,8 @@ GET /directory/deleteditems/microsoft.graph.servicePrincipal
 GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.administrativeUnit
+GET /directory/deletedItems/microsoft.graph.externalUserProfile
+GET /directory/deletedItems/microsoft.graph.pendingExternalUserProfile
 ```
 
 The OData cast type is a required part of the URI and calling `GET /directory/deleteditems` without a type is **not** supported.
@@ -72,7 +76,7 @@ The `$orderby` OData query parameter is supported on the **deletedDateTime**, **
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt; *Required*|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json |
 
 ## Request body

@@ -3,7 +3,7 @@ title: "List userProcessingResults"
 description: "List user processing results of a workflow run."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method supports the `$select`, `$orderby`, `$expand`, and `$filter` OData q
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

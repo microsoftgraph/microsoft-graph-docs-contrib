@@ -3,7 +3,7 @@ title: "userProcessingResult: summary"
 description: "The summary of userProcessingResult for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ This method supports the `$count`, `$orderby`, `$expand`, and `$filter` OData qu
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

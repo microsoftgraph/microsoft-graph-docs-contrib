@@ -3,7 +3,7 @@ title: "Delete sourceSystemDefinition"
 description: "Delete a sourceSystemDefinition object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ DELETE /external/industryData/sourceSystems/{sourceSystemDefinitionId}
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

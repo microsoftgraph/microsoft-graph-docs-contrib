@@ -3,7 +3,7 @@ title: "Create browserSiteList"
 description: "Create a new browserSiteList object to support Internet Explorer mode."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ POST /admin/edge/internetExplorerMode/siteLists
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

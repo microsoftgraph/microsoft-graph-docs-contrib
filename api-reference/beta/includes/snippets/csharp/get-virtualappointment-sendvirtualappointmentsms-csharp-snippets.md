@@ -8,20 +8,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Me.OnlineMeetings.Item.SendVirtualAppointmentSms;
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new SendVirtualAppointmentSmsPostRequestBody
 {
-	PhoneNumbers = new List<string>
+	Attendees = new List<AttendeeNotificationInfo>
 	{
-		"+13129224122",
-		"+1242421412",
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
+		new AttendeeNotificationInfo
 		{
-			"virtualAppointmentSmsType" , "confirmation"
+			PhoneNumber = "+13129224122",
+			TimeZone = "Pacific Standard Time",
+		},
+		new AttendeeNotificationInfo
+		{
+			PhoneNumber = "+1242421412",
+			TimeZone = "Eastern Standard Time",
 		},
 	},
+	MessageType = VirtualAppointmentMessageType.Confirmation,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

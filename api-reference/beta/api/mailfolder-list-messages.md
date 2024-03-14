@@ -3,7 +3,7 @@ title: "List messages"
 description: "List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

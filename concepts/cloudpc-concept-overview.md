@@ -1,14 +1,17 @@
 ---
-title: "Windows 365 Cloud PC on Microsoft Graph (preview)"
+title: "Windows 365 Cloud PC on Microsoft Graph"
 description: "Integrate with Windows 365 Cloud PC to create Azure network connections, provision Cloud PCs, manage device images, and create and assign provisioning policies."
 author: "cohanley"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 ---
 
-# Overview for Windows 365 Cloud PC on Microsoft Graph (preview)
+# Overview for Windows 365 Cloud PC on Microsoft Graph
 
 Windows 365 is a cloud-based service that provisions and hosts Cloud PCs as virtual machines for end users. Administrators can easily set up, manage, and scale Windows 365 Cloud PCs to fit the organization's needs. Individual end users can securely stream their rich, personalized Windows experience&mdash;including their apps, data, content, and settings&mdash;from the Microsoft cloud to any device, any time, with their Windows 365 Cloud PC.
+
+> [!IMPORTANT]
+> Currently, only the [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generally available. All other Cloud PC endpoints are in beta only.
 
 ## Why integrate with Windows 365 Cloud PCs? 
 
@@ -34,7 +37,8 @@ Once provisioned, list and view end users’ [Cloud PCs](/graph/api/resources/cl
 
 Looking for the API reference for the service?
 
-- [Working with Windows 365 Cloud PCs using the Microsoft Graph API](/graph/api/resources/cloudpc-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Working with Windows 365 Cloud PCs using the Microsoft Graph API (v1.0)](/graph/api/resources/cloudpc-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Working with Windows 365 Cloud PCs using the Microsoft Graph API (beta)](/graph/api/resources/cloudpc-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next step
 

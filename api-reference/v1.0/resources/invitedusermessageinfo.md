@@ -3,7 +3,7 @@ title: "invitedUserMessageInfo resource type"
 description: "The invitedUserMessageInfo object allows you to configure the invitation message."
 ms.localizationpriority: medium
 author: "ppolkadots"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

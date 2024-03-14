@@ -3,7 +3,7 @@ title: "List activityStatistics"
 description: "Get a collection of activityStatistics objects."
 ms.localizationpriority: medium
 author: "madehmer"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 
@@ -41,7 +41,7 @@ This method does not support optional query parameters to customize the response
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -25,7 +25,7 @@ Represents device registration records for Bring-Your-Own-Device(BYOD) Windows d
 |[Create windowsInformationProtectionDeviceRegistration](../api/intune-mam-windowsinformationprotectiondeviceregistration-create.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|Create a new [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object.|
 |[Delete windowsInformationProtectionDeviceRegistration](../api/intune-mam-windowsinformationprotectiondeviceregistration-delete.md)|None|Deletes a [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md).|
 |[Update windowsInformationProtectionDeviceRegistration](../api/intune-mam-windowsinformationprotectiondeviceregistration-update.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|Update the properties of a [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object.|
-|[wipe action](../api/intune-mam-windowsinformationprotectiondeviceregistration-wipe.md)|None|Not yet documented|
+|[wipe action](../api/intune-mam-windowsinformationprotectiondeviceregistration-wipe.md)|None||
 
 ## Properties
 |Property|Type|Description|

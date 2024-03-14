@@ -3,7 +3,7 @@ title: "Delete documentSetVersion"
 description: "Delete a documentSetVersion object."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ DELETE /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions/{docume
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

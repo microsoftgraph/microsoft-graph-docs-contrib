@@ -3,7 +3,7 @@ title: "List riskDetection"
 description: "Retrieve the properties of a collection of **riskDetection** object."
 ms.localizationpriority: medium
 author: "tracyshi"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # List riskDetection
@@ -43,7 +43,7 @@ This method supports the `$filter` and `$select` [OData query parameters](/graph
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body

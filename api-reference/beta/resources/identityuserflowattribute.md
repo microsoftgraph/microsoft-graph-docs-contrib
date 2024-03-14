@@ -3,7 +3,7 @@ title: "identityUserFlowAttribute resource type"
 description: "Represents attributes that can be added to a user flow in a Microsoft Entra workforce tenant, a Microsoft Entra ID for customers tenant, and an Azure AD B2C tenant."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "nanguil"
 ---
 

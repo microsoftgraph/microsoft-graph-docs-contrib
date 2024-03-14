@@ -3,7 +3,7 @@ title: "Update nameditem"
 description: "Update the properties of nameditem object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 author: "ruoyingl"
 ---
 
@@ -32,7 +32,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/names/{name}
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body

@@ -3,7 +3,7 @@ title: "Delete todoTaskList"
 description: "Deletes a todoTaskList object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ DELETE /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

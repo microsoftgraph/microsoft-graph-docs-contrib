@@ -3,13 +3,13 @@ title: "Change notifications for Outlook resources in Microsoft Graph"
 description: "Subscribe to changes to Outlook resources (create, update, and delete) and changed resource data in Microsoft Graph APIs and receive notifications via webhooks."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 ---
 
 # Change notifications for Outlook resources in Microsoft Graph
 
-The Microsoft Graph API lets you subscribe to changes to a resource&mdash;including creation, update, or deletion of the resource&mdash;and receive notifications via webhooks. A [subscription](/graph/api/resources/webhooks) specifies the desired types of changes to monitor for a specific resource, and includes a URL for an endpoint to receive notifications of those changes.
+The Microsoft Graph API lets you subscribe to changes to a resource&mdash;including creation, update, or deletion of the resource&mdash;and receive notifications via webhooks. A [subscription](/graph/api/resources/change-notifications-api-overview) specifies the desired types of changes to monitor for a specific resource, and includes a URL for an endpoint to receive notifications of those changes.
 
 Setting up a subscription reduces the overhead of otherwise having to query and compare resources to deduce any changes. You can optionally specify in the subscription request to encrypt and include as part of a notification the resource data that has changed, saving a separate subsequent API call to get the resource payload.
 
@@ -51,7 +51,7 @@ To have resource data included in a change notification, you **must** specify th
   > [!NOTE]
   > Do not include in the URL `$top`, `$skip`, `$orderby`, `$select=Body,UniqueBody`, and `$expand` other than **singleValueExtendedProperties** or **multiValueExtendedProperties**.
 
-- **encryptionCertificate**: This property contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](webhooks-with-resource-data.md#decrypting-resource-data-from-change-notifications).
+- **encryptionCertificate**: This property contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](change-notifications-with-resource-data.md#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId**: This property is your own identifier for the certificate. Use this ID to match in each change notification which certificate to use for decryption.
 
 See an [example](#example-2-create-a-subscription-to-get-change-notifications-with-resource-data-when-the-user-receives-a-new-message) for subscribing to change notifications with resource data for the **message** resource.
@@ -65,13 +65,13 @@ One common application of `$filter` is to get notified upon a change in a specif
 - Reading a message or marking it as read in the folder would trigger a `Deleted` notification.
 - A change to any property, other than **isRead**, of a **message** resource in the folder would trigger an `Updated` notification.
 
-If you don’t use a `$filter` when creating the subscription:
+If you don't use a `$filter` when creating the subscription:
 - Adding a message to the folder would result in a `Created` notification.
 - Reading a message in the folder, marking the message as read, or changing any other property of a message in that folder would result in an `Updated` notification.
 - Deleting the message would result in a `Delete` notification.
 
 ### Subscribe to lifecycle notifications
-The Outlook **contact**, **event**, and **message** resources also support subscribing to lifecycle notifications. Lifecycle notifications are needed in case your app gets their subscriptions removed or misses some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow. To learn more, see [subscribing to lifecycle notifications](webhooks-lifecycle.md).
+The Outlook **contact**, **event**, and **message** resources also support subscribing to lifecycle notifications. Lifecycle notifications are needed in case your app gets their subscriptions removed or misses some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow. To learn more, see [subscribing to lifecycle notifications](change-notifications-lifecycle-events.md).
 
 ### Keep track of subscription lifetime
 Make sure to [extend](/graph/api/subscription-update) a subscription before it expires. The maximum lifetime for a subscription without Outlook resource data is 4230 minutes (under 3 days), and 1 day with resource data.
@@ -116,7 +116,7 @@ The following is an example of the payload of a notification with resource data 
 }
 ```
 
-For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
 The following is an example of a decrypted notification payload. The decrypted payload conforms to the Outlook [message](/graph/api/resources/message) schema. The payload is similar to that returned by a [GET message](/graph/api/message-get) operation. However, the notification payload contains only those properties specified with a `$select` parameter in the **resource** property of the subscription. Notification payloads for other Outlook resources like [contact](/graph/api/resources/contact) and [event](/graph/api/resources/event) follow their respective schemas.
 
@@ -354,9 +354,9 @@ Content-type: application/json
 }
 ```
 
-## See also
-- [Microsoft Graph change notifications](webhooks.md)
-- [Set up change notifications that include resource data](webhooks-with-resource-data.md)
+## Related content
+- [Microsoft Graph change notifications](change-notifications-overview.md)
+- [Set up change notifications that include resource data](change-notifications-with-resource-data.md)
 - [Outlook mail API overview](outlook-mail-concept-overview.md)
 - [Outlook contacts API overview](outlook-contacts-concept-overview.md)
 - [Outlook calendar API overview](outlook-calendar-concept-overview.md)

@@ -4,7 +4,7 @@ description: "A collection of groups enabled to use Microsoft Authenticator auth
 author: "mjsantani"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -22,14 +22,12 @@ A collection of groups enabled to use [Microsoft Authenticator authentication me
 |id|String|Object identifier of a Microsoft Entra user or group. Inherited from [authenticationMethodTarget](authenticationmethodtarget.md).|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. Inherited from [authenticationMethodTarget](authenticationmethodtarget.md). **Not supported**. |
 |targetType|authenticationMethodTargetType| Possible values are: `group`, and `unknownFutureValue`. From December 2022, targeting individual users using `user` is no longer recommended. Existing targets remain but we recommend moving the individual users to a targeted group. Inherited from [authenticationMethodTarget](authenticationMethodTarget.md).|
-|numberMatchingRequiredState (deprecated)|advancedConfigState|Requires number matching for MFA notifications. Value is ignored for phone sign-in notifications. Possible values are: `enabled`, `disabled`, `default`.|
-|displayAppInformationRequiredState (deprecated)|advancedConfigState|Determines whether the user is shown more context in their Authenticator app notification. In the body of the Authenticator notification, the user is shown the app they're signing into along with the location that the authentication request originated from. Possible values are: `enabled`, `disabled`, `default`.|
 
 ## Relationships
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -44,9 +42,7 @@ Here's a JSON representation of the resource.
   "targetType": "String",
   "id": "String (identifier)",
   "isRegistrationRequired": "Boolean",
-  "authenticationMode": "String",
-  "numberMatchingRequiredState": "String",
-  "displayAppInformationRequiredState": "String"
+  "authenticationMode": "String"
 }
 
 ```

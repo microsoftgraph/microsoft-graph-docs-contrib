@@ -60,6 +60,7 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |configurationWebUrl|Boolean|URL for setup assistant login Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |enabledSkipKeys|String collection|enabledSkipKeys contains all the enabled skip keys as strings Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |enrollmentTimeAzureAdGroupIds|Guid collection|EnrollmentTimeAzureAdGroupIds contains list of enrollment time Azure Group Ids to be associated with profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|waitForDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indicates the iTunes pairing mode. Possible values are: `disallow`, `allow`, `requiresCertificate`.|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
 |restoreFromAndroidDisabled|Boolean|Indicates if Restore from Android is disabled|
@@ -136,6 +137,7 @@ Here is a JSON representation of the resource.
   "enrollmentTimeAzureAdGroupIds": [
     "Guid"
   ],
+  "waitForDeviceConfiguredConfirmation": true,
   "iTunesPairingMode": "String",
   "managementCertificates": [
     {

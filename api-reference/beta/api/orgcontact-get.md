@@ -3,7 +3,7 @@ title: "Get orgContact"
 description: "Retrieve the properties and relationships of orgcontact object."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

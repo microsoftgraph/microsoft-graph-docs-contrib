@@ -3,7 +3,7 @@ title: "Update inferenceclassificationoverride"
 description: "Change the **classifyAs** field of an override as specified. "
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: mail
+ms.subservice: mail
 doc_type: apiPageType
 ---
 
@@ -53,7 +53,7 @@ In the request body, supply the new value for **classifyAs**. For best performan
 If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.
 ## Example
 ##### Request
-The following example changes the override for the SMTP address randiw@adatum.onmicrosoft.com from `other` to `focused`.
+The following example changes the override for the SMTP address randiw@contoso.com from `other` to `focused`.
 
 
 # [HTTP](#tab/http)
@@ -119,7 +119,7 @@ Content-type: application/json
   "classifyAs": "focused",
   "senderEmailAddress": {
     "name": "Randi Welch",
-    "address": "randiw@adatum.onmicrosoft.com"
+    "address": "randiw@contoso.com"
   },
   "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
 }

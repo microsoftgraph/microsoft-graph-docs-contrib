@@ -3,7 +3,7 @@ title: "Create browserSharedCookie"
 description: "Create a new browserSharedCookie object in a browserSiteList."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookie
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

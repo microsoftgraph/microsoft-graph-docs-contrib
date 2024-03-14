@@ -4,7 +4,7 @@ description: "Use this API to retrieve the contents of an item in a specific for
 ms.date: 09/10/2017
 title: Convert to other formats
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Download a file in another format
@@ -12,7 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 Use this API to retrieve the contents of an item in a specific format.
 Not all files can be converted into all formats.
@@ -107,7 +106,7 @@ Returns a `302 Found` response redirecting to a pre-authenticated download URL f
 
 To download the converted file, your app must follow the `Location` header in the response.
 
-Pre-authenticated URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to access.
+Pre-authenticated URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header to access.
 
 <!-- { "blockType": "response" } -->
 
@@ -118,7 +117,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ### Error responses
 
-See [Error Responses][error-response] for more information about how errors are returned.
+See [Error responses][error-response] for more information about how errors are returned.
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md

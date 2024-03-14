@@ -3,7 +3,7 @@ title: "Delete permissions"
 description: "Delete permissions from a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
@@ -19,15 +19,11 @@ Delete permissions from a [fileStorageContainer](../resources/filestoragecontain
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
-The application that calls this API must have permissions to delete permissions from a fileStorageContainer for the respective container type.
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|FileStorageContainer.Selected|
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_delete_permissions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-permissions-permissions.md)]
 
 ## HTTP request
 
@@ -42,7 +38,7 @@ DELETE /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Response

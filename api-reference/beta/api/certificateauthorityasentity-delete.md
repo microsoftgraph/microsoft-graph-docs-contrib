@@ -3,7 +3,7 @@ title: "Delete certificateAuthorityAsEntity"
 description: "Delete a certificateAuthorityAsEntity object."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ DELETE /directory/certificateAuthorities/certificateBasedApplicationConfiguratio
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

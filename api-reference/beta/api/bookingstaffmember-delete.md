@@ -3,7 +3,7 @@ title: "Delete bookingStaffMember"
 description: "Delete a staff member in the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/{id}/staffMembers/{id}
+DELETE /solutions/bookingbusinesses/{id}/staffMembers/{id}
 
 ```
 ## Request headers
@@ -49,10 +49,10 @@ Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_bookingstaffmember",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "5fae928f-6d2d-417a-ad96-4b0caeb362d6"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "5fae928f-6d2d-417a-ad96-4b0caeb362d6"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/5fae928f-6d2d-417a-ad96-4b0caeb362d6
+DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/staffMembers/5fae928f-6d2d-417a-ad96-4b0caeb362d6
 ```
 
 # [C#](#tab/csharp)
@@ -77,10 +77,6 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-bookingstaffmember-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingstaffmember-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "Delete bundle"
 description: "Delete a bundle of driveItems."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ DELETE /drive/items/{bundle-id}
 
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | if-match      | eTag. Optional. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the bundle, a `412 Precondition Failed` response is returned and the bundle won't be deleted.|
 
 ## Request body

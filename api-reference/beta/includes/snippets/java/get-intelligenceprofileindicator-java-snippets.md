@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-IntelligenceProfileIndicator intelligenceProfileIndicator = graphClient.security().threatIntelligence().intelligenceProfileIndicators("ff3eecd2-a2be-27c2-8dc0-40d1c0eada55")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.security.IntelligenceProfileIndicator result = graphClient.security().threatIntelligence().intelligenceProfileIndicators().byIntelligenceProfileIndicatorId("{intelligenceProfileIndicator-id}").get();
+
 
 ```

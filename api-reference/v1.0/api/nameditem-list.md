@@ -3,7 +3,7 @@ title: "List NamedItemCollection"
 description: Learn how to retrieve a list of nameditem objects.
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body

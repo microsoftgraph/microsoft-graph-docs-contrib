@@ -3,7 +3,7 @@ title: "publicErrorDetail resource type"
 description: "Represents the details of an error."
 author: "AkJo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

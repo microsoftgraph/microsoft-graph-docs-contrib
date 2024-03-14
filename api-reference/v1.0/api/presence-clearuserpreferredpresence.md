@@ -4,7 +4,7 @@ description: "Clear the preferred availability and activity status for a user."
 author: "benjaminlee"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # presence: clearUserPreferredPresence
@@ -30,7 +30,7 @@ POST /users/{userId}/presence/clearUserPreferredPresence
 ## Request headers
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

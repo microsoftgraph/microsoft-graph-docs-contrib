@@ -3,7 +3,7 @@ title: "cloudPC: getProvisionedCloudPCs"
 description: "Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group."
 author: "SleepIsImportant"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='{
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request parameter
 
@@ -138,7 +138,7 @@ Content-Type: application/json
             "servicePlanType": "enterprise",
             "status": "provisioned",
             "powerState": "running",
-            "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+            "userPrincipalName": "pmitchell@contoso.com",
             "lastModifiedDateTime": "2020-07-23T10:29:57Z",
             "statusDetails": null,
             "provisioningType": "dedicated",
@@ -167,7 +167,7 @@ Content-Type: application/json
             "servicePlanType": "enterprise",
             "status": "provisioned",
             "powerState": "running",
-            "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+            "userPrincipalName": "pmitchell@contoso.com",
             "lastModifiedDateTime": "2020-07-28T18:14:34Z",
             "statusDetails": null,
             "provisioningType": "dedicated",

@@ -3,7 +3,7 @@ title: "Get virtualEventRegistration"
 description: "Get the properties and relationships of a virtualEventRegistration object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ This method does not support OData query parameters to help customize the respon
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

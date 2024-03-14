@@ -3,7 +3,7 @@ title: "Delete browserSiteList"
 description: "Delete a browserSiteList object."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ DELETE /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

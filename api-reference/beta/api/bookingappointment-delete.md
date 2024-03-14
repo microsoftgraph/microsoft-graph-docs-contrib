@@ -3,7 +3,7 @@ title: "Delete bookingAppointment"
 description: "Delete a bookingAppointment in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/{id}/appointments/{id}
+DELETE /solutions/bookingBusinesses/{id}/appointments/{id}
 ```
 
 ## Request headers
@@ -55,10 +55,10 @@ Here's an example of a request.
 <!-- {
   "blockType": "request",
   "name": "delete_bookingappointment",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "AAMkADKqAAA="]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "AAMkADKqAAA="]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKqAAA=
+DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.com/appointments/AAMkADKqAAA=
 ```
 
 # [C#](#tab/csharp)
@@ -85,10 +85,6 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@c
 [!INCLUDE [sample-code](../includes/snippets/php/delete-bookingappointment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingappointment-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-bookingappointment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@c
 ---
 
 ### Response
-Here's an example of the response. 
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

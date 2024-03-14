@@ -3,7 +3,7 @@ title: "Get shared or delegated Outlook calendar and its events"
 description: "Read events in a shared or delegated calendar. You can get a shared calendar or events directly from a calendar owner's mailbox or from a share recipient's mailbox."
 author: "juforan"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Get shared or delegated Outlook calendar and its events
@@ -16,10 +16,10 @@ Programmatically, Microsoft Graph supports reading and writing events in calenda
 
 The three examples below use this scenario: in Outlook, Alex has shared his primary calendar with Megan and given Megan read permissions. If Megan signs into your app and provides _delegated permissions_ (Calendars.Read.Shared or Calendars.ReadWrite.Shared), on behalf of Megan, your app can access Alex' primary calendar and its events directly from Alex' mailbox.
 
-The three examples specify the owner's identity (Alex' user ID or user principal name) and the `calendar` shortcut. They access calendar and event IDs that correspond to only the owner's mailbox. Specifying these calendar and event IDs in the share recipient's mailbox (Megan's user ID or user principal name) would return an error. To use calendar and event IDs that correspond to the share recipient's mailbox, see [Share recipient: Get shared, custom calendar or its events from share recipient's mailbox](#sharee-get-shared-custom-calendar-or-its-events-from-sharees-mailbox). 
+The three examples specify the owner's identity (Alex' user ID or user principal name) and the `calendar` shortcut. They access calendar and event IDs that correspond to only the owner's mailbox. Specifying these calendar and event IDs in the share recipient's mailbox (Megan's user ID or user principal name) would return an error. To use calendar and event IDs that correspond to the share recipient's mailbox, see [Share recipient: Get shared, custom calendar or its events from share recipient's mailbox](#share-recipient-get-shared-custom-calendar-or-its-events-from-share-recipients-mailbox).
 
 > [!NOTE]
-> The sharing permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared) allow you to read or write events in a shared or delegated calendar. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on events in a shared, delegated, or any other user or resource calendar in the tenant, use the application permission, Calendars.Read.
+> The sharing permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared) allow you to read or write events in a shared or delegated calendar. They do not support [subscribing to change notifications](change-notifications-overview.md) on items in such folders. To set up change notification subscriptions on events in a shared, delegated, or any other user or resource calendar in the tenant, use the application permission, Calendars.Read.
 
 ### Megan: Get the shared, primary calendar directly from Alex' mailbox
 
@@ -56,7 +56,7 @@ On successful completion, you'll get HTTP 200 OK and a collection of [event](/gr
 
 The same GET capabilities apply if Alex has delegated Megan access to Alex' primary calendar, or if Alex has delegated Megan his entire mailbox.
 
-If Alex hasn't shared nor delegated his primary calendar with Megan, specifying Alex’s user ID or user principal name in the preceding GET operations return an error. 
+If Alex hasn't shared nor delegated his primary calendar with Megan, specifying Alex's user ID or user principal name in the preceding GET operations return an error.
 
 
 ## Share recipient: Get shared, custom calendar or its events from share recipient's mailbox
@@ -100,7 +100,7 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
                 "canEdit": true,
                 "owner": {
                     "name": "Adele Vance",
-                    "address": "AdeleV@contoso.OnMicrosoft.com"
+                    "address": "AdeleV@contoso.com"
                 }
             },
             {
@@ -113,7 +113,7 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
                 "canEdit": false,
                 "owner": {
                     "name": "Alex Wilber",
-                    "address": "AlexW@contoso.OnMicrosoft.com"
+                    "address": "AlexW@contoso.com"
                 }
             }
         ]

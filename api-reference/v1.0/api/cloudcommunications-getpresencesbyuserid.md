@@ -4,7 +4,7 @@ description: "Get the presence information for multiple users."
 author: "awang119"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # cloudCommunications: getPresencesByUserId
@@ -38,7 +38,7 @@ POST /communications/getPresencesByUserId
 ## Request Headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-type | application/json. Required. |
 
 
@@ -156,5 +156,5 @@ Content-Length: 1574
 }
 -->
 
-## See also
+## Related content
 - [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)

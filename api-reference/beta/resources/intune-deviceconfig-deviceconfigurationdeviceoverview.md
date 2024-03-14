@@ -1,6 +1,6 @@
 ---
 title: "deviceConfigurationDeviceOverview resource type"
-description: ""
+description: "Intune Deviceconfig Deviceconfigurationdeviceoverview Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

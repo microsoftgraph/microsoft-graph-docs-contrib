@@ -3,7 +3,7 @@ title: "List appliesTo"
 description: "List resources assigned to an application management policy."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                                                               |
 | Application                            | Application.Read.All and Policy.Read.All, Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 
+[!INCLUDE [rbac-app-auth-method-policy-api-get](../includes/rbac-for-apis/rbac-app-auth-method-policy-api-get.md)]
 
 ## HTTP request
 
@@ -52,7 +53,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

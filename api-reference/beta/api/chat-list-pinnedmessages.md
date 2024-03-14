@@ -3,7 +3,7 @@ title: "List pinnedChatMessages in a chat"
 description: "Get a list of pinned messages in a chat."
 author: "sumanac"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports the `$expand` [OData query parameter](/graph/query-paramete
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

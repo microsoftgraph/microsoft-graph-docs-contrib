@@ -12,23 +12,23 @@ $params = @{
 			allowedMemberTypes = @(
 				"User"
 			)
+			description = "User"
 			displayName = "User"
 			id = "8774f594-1d59-4279-b9d9-59ef09a23530"
 			isEnabled = $true
-			description = "User"
-			value = $null
 			origin = "Application"
+			value = $null
 		}
 		@{
 			allowedMemberTypes = @(
 				"User"
 			)
+			description = "msiam_access"
 			displayName = "msiam_access"
 			id = "e7f1a7f3-9eda-48e0-9963-bd67bf531afd"
 			isEnabled = $true
-			description = "msiam_access"
-			value = $null
 			origin = "Application"
+			value = $null
 		}
 		@{
 			allowedMemberTypes = @(

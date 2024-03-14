@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.user_source import UserSource
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UserSource(
-	email = "admin@M365x809305.onmicrosoft.com",
+	email = "admin@contoso.com",
 	included_sources = SourceType.Mailbox | SourceType.Site,
 )
 

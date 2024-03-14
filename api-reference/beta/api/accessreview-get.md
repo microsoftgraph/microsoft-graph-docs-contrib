@@ -3,7 +3,7 @@ title: "Get accessReview (deprecated)"
 description: "In the Microsoft Entra access reviews feature, retrieve an accessReview object."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -136,7 +136,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Create accessReview](accessreview-create.md)
 - [List accessReviews](accessreview-list.md)

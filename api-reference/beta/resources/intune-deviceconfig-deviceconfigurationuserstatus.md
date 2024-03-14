@@ -1,6 +1,6 @@
 ---
 title: "deviceConfigurationUserStatus resource type"
-description: ""
+description: "Intune Deviceconfig Deviceconfigurationuserstatus Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

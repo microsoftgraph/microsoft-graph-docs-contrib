@@ -3,7 +3,7 @@ title: "Get teamworkTagMember"
 description: "Get the properties and relationships of a member of a standard tag in a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ GET /teams/{team-id}/tags/{teamworkTag-id}/members/{teamworkTagMember-id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

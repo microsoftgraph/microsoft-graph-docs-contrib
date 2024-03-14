@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,7 +40,7 @@ GET /deviceManagement/operationApprovalPolicies/getApprovableOperations
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,13 +62,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 194
+Content-Length: 196
 
 {
   "value": [
     {
       "@odata.type": "microsoft.graph.operationApprovalPolicySet",
-      "policyType": "deviceWipe",
+      "policyType": "deviceAction",
       "policyPlatform": "androidDeviceAdministrator"
     }
   ]

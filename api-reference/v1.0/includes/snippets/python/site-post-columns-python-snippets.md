@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.column_definition import ColumnDefinition
+from msgraph.generated.models.text_column import TextColumn
 
 graph_client = GraphServiceClient(credentials, scopes)
 

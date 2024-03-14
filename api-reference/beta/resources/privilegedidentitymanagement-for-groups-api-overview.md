@@ -3,7 +3,7 @@ title: "Govern membership and ownership of groups using privileged identity mana
 description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources, such as groups, in your organization."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ms.date: 10/12/2023
 ---
@@ -114,7 +114,7 @@ When a principal's *temporary active* membership or ownership of a group expires
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -148,7 +148,7 @@ In addition, for delegated scenarios, the calling principal needs one of the fol
 Only the approver of the request can call the `/approval` and `/approvalStep` endpoints. They don't have to be assigned any Microsoft Entra roles.
 
 
-## See also
+## Related content
 
 - [Microsoft Entra security operations for Privileged Identity Management](/azure/active-directory/architecture/security-operations-privileged-identity-management?source=docs#privileged-identity-management-alerts) in the Microsoft Entra architecture center
 
@@ -158,9 +158,6 @@ Only the approver of the request can call the `/approval` and `/approvalStep` en
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /resources/privilegedidentitymanagement-for-groups-api-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')",
     "Error: /resources/privilegedidentitymanagement-for-groups-api-overview.md:
       Failed to parse enumeration values for type microsoft.graph.and. Table requires a column header named one of the following: Member, Name, Value"
   ]

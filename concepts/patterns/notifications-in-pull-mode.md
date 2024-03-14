@@ -9,7 +9,7 @@ ms.localizationpriority: low
 
 This article describes a common Microsoft Graph integration pattern for a business scenario that requires a security analysis of collaboration content to prevent unsafe or inappropriate sharing, transfer, or use of sensitive data, such as in Data Loss Prevention (DLP) scenarios.
 
-This business scenario is a non-interactive use case that requires a data feed of changes triggered by users interacting with various messaging systems. It doesn’t rely on Microsoft 365 functional behavior, and has the following architecture requirements:
+This business scenario is a non-interactive use case that requires a data feed of changes triggered by users interacting with various messaging systems. It doesn't rely on Microsoft 365 functional behavior, and has the following architecture requirements:
 
 - A data integration type.
 - An outbound data flow from Microsoft 365 boundaries to the app.
@@ -42,11 +42,10 @@ The following considerations support the use of this integration pattern:
 
 - **Scalability**: Azure Event Hubs provide event storage and retention for up to 90 days depending on the service tier, thus allowing the custom app to consume and process events at its own pace.
 
-- **Solution complexity**: This solution requires custom code to maintain subscriptions, and encryption keys to process the data. Because this solution doesn’t require elasticity and the ability to react to an unexpected volume of events, it's less complex than integration with webhooks in puh mode. This solution has medium complexity.
+- **Solution complexity**: This solution requires custom code to maintain subscriptions, and encryption keys to process the data. Because this solution doesn't require elasticity and the ability to react to an unexpected volume of events, it's less complex than integration with webhooks in push mode. This solution has medium complexity.
 
-## See also
+## Related content
 
-- [Change notifications](./../webhooks.md)
-- [Training: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
+- [Change notifications](./../change-notifications-overview.md)
 - [Real-time presence with Microsoft 365](/azure/architecture/solution-ideas/articles/presence-microsoft-365-power-platform)
   

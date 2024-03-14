@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Hashes
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 # hashes resource type
 
@@ -48,7 +48,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 - To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](/onedrive/developer/code-snippets/quickxorhash).

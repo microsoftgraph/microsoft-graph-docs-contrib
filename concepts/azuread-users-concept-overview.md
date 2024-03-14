@@ -1,35 +1,37 @@
 ---
 title: "Users in Microsoft Graph"
-description: "Use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to the signed-in user in your organization."
-author: "FaithOmbongi"
+description: "Use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to users in your organization."
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: yuan.karppanen
 ms.localizationpriority: high
 ms.prod: "users"
 ms.custom: scenarios:getting-started
-ms.date: 11/11/2022
+ms.date: 12/28/2023
+#customer intent: As a developer, I want to understand how to build user-centric apps that call Microsoft Graph.
 ---
 
 # Overview of users in Microsoft Graph
 
-Users are the representation of a Microsoft Entra work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users.
+Users are the representation of a Microsoft Entra work or school user account or a personal Microsoft account in Microsoft Graph. The [user](/graph/api/resources/user) resource in Microsoft Graph is the representation of a user, and includes relationships and resources that are relevant to the user.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/TUMPipN3UFI]
 
 ## Develop user-centric applications
 
-You can use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to the signed-in user. The **user** resource provides straightforward way for you to access and manipulate user resources without having to perform additional calls, look up specific authentication information, and directly issue queries against other Microsoft Graph resources.
+You can use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to a user. The **user** resource provides straightforward way for you to access and manipulate user resources without having to perform extra calls, look up specific authentication information, and directly issue queries against other Microsoft Graph resources.
 
-To access a user's information and data, you'll need to [get access on their behalf](auth-v2-user.md). Authenticating your application with [admin consent](permissions-reference.md) enables you to work with and update a wider range of entities associated with a user.
+You can access a user's information and manage their data [on their behalf](auth-v2-user.md) or as [an app with its own identity](auth-v2-service.md).
 
-### Manage your organization
+### Manage users in your organization
 
-Create new users in your organization or update the resources and relationships for existing users. You can use Microsoft Graph to perform the following user management tasks: 
+Perform user management tasks including:
 
 - Create or delete users in your Microsoft Entra organization.
 - List a user's group memberships and determine whether a user is a member of a group.
 - List the users who report to a user and assign managers to a user.
 - Upload or retrieve a photo for the user.
+- Grant users administrative roles in your organization.
 
 ### Work with calendars and tasks
 
@@ -63,7 +65,3 @@ Looking for the API reference for this service?
 - [Users API in Microsoft Graph v1.0](/graph/api/resources/users?view=graph-rest-1.0&preserve-view=true)
 - [Users API in Microsoft Graph beta](/graph/api/resources/users?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
-
-- The [user resource type](/graph/api/resources/users).
-- Training module: Build your skills and [learn how to work with users through Microsoft Graph](/training/modules/msgraph-access-user-data).

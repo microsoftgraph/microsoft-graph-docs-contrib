@@ -3,7 +3,7 @@ title: "List plannerPlanConfigurationLocalizations"
 description: "Get a list of the plannerPlanConfigurationLocalization objects and their properties."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ This method supports some of the OData query parameters to help customize the re
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

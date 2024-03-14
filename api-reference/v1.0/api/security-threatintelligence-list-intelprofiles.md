@@ -3,7 +3,7 @@ title: "List intelProfiles"
 description: "Get a list of the intelligenceProfile objects and their properties."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports the `$count`, `$select`, `$search`, `$top`, `$skip`, `$orde
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

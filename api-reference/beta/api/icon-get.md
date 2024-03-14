@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of icon object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 ---
 
 # Get icon
@@ -34,7 +34,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

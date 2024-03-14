@@ -3,7 +3,7 @@ title: "List domains"
 description: "Retrieve a list of domain objects."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ The work or school account needs to belong to one of the following roles:
 * Global Reader
 * Volume Licensing Business Center User
 * Volume Licensing Service Center User
-* Modern Commerce User
+* Modern Commerce Administrator
 * Microsoft Store for Business User
 * Directory Reviewer
 * Domain Name Administrator
@@ -82,7 +82,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept        | application/json;         |
 
 ## Request body

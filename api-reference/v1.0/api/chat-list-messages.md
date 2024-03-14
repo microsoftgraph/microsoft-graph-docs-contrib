@@ -3,7 +3,7 @@ title: "List messages in a chat"
 description: "Retrieve the list of messages in a chat."
 ms.localizationpriority: high
 author: RamjotSingh
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -16,7 +16,7 @@ Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../reso
 This method supports federation. To list chat messages in application context, the request must be made from the tenant that the channel owner belongs to (represented by the **tenantId** property on the channel).
 
 > **Notes**: 
-> - This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
+> - This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/change-notifications-api-overview.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
 > - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -53,7 +53,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

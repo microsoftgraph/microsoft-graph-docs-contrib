@@ -4,7 +4,7 @@ description: "Get the Focused Inbox overrides that a user has set up to always c
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
-ms.prod: mail
+ms.subservice: mail
 ---
 
 # List overrides
@@ -108,7 +108,7 @@ Content-type: application/json
       "classifyAs": "focused",
       "senderEmailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
       },
       "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
     },
@@ -116,7 +116,7 @@ Content-type: application/json
       "classifyAs": "other",
       "senderEmailAddress": {
         "name": "Randi Welch",
-        "address": "randiw@adatum.onmicrosoft.com"
+        "address": "randiw@contoso.com"
       },
       "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
     }

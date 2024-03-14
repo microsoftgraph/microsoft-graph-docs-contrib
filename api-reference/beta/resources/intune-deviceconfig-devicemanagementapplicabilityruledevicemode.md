@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementApplicabilityRuleDeviceMode resource type"
-description: ""
+description: "Intune Deviceconfig Devicemanagementapplicabilityruledevicemode Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

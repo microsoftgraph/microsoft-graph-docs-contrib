@@ -3772,6 +3772,138 @@
       "CreatedDateTime": "2023-07-13T10:21:51.737705Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
+          "ApiChange": "Member",
+          "ChangedApiName": "loki",
+          "ChangeType": "Addition",
+          "Description": "Added the `loki` member to the **driveItemSourceApplication** enumeration.",
+          "Target": "driveItemSourceApplication"
+        },
+        {
+          "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
+          "ApiChange": "Member",
+          "ChangedApiName": "loop",
+          "ChangeType": "Addition",
+          "Description": "Added the `loop` member to the **driveItemSourceApplication** enumeration.",
+          "Target": "driveItemSourceApplication"
+        },
+        {
+          "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
+          "ApiChange": "Member",
+          "ChangedApiName": "other",
+          "ChangeType": "Addition",
+          "Description": "Added the `other` member to the **driveItemSourceApplication** enumeration.",
+          "Target": "driveItemSourceApplication"
+        },
+        {
+          "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
+          "ApiChange": "Member",
+          "ChangedApiName": "story",
+          "ChangeType": "Addition",
+          "Description": "Added the `story` member to the **mediaSourceContentCategory** enumeration.",
+          "Target": "mediaSourceContentCategory"
+        },
+        {
+          "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
+          "ApiChange": "Member",
+          "ChangedApiName": "profile",
+          "ChangeType": "Addition",
+          "Description": "Added the `profile` member to the **mediaSourceContentCategory** enumeration.",
+          "Target": "mediaSourceContentCategory"
+        },
+        {
+          "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
+          "ApiChange": "Member",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added the `chat` member to the **mediaSourceContentCategory** enumeration.",
+          "Target": "mediaSourceContentCategory"
+        },
+        {
+          "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
+          "ApiChange": "Member",
+          "ChangedApiName": "note",
+          "ChangeType": "Addition",
+          "Description": "Added the `note` member to the **mediaSourceContentCategory** enumeration.",
+          "Target": "mediaSourceContentCategory"
+        },
+        {
+          "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
+          "ApiChange": "Member",
+          "ChangedApiName": "comment",
+          "ChangeType": "Addition",
+          "Description": "Added the `comment` member to the **mediaSourceContentCategory** enumeration.",
+          "Target": "mediaSourceContentCategory"
+        }
+      ],
+      "Id": "e1ad1be8-b44a-4390-994e-14f33f153448",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-08T11:42:39.4965313Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "93315b42-882f-4215-b210-dea3a56fc469",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "driveItemSourceApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the **driveItemSourceApplication** enumeration type.",
+          "Target": "driveItemSourceApplication"
+        },
+        {
+          "Id": "93315b42-882f-4215-b210-dea3a56fc469",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "mediaSourceContentCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **mediaSourceContentCategory** enumeration type.",
+          "Target": "mediaSourceContentCategory"
+        },
+        {
+          "Id": "93315b42-882f-4215-b210-dea3a56fc469",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driveItemSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [driveItemSource](https://learn.microsoft.com/en-us/graph/api/resources/driveItemSource?view=graph-rest-1.0) resource.",
+          "Target": "driveItemSource"
+        },
+        {
+          "Id": "93315b42-882f-4215-b210-dea3a56fc469",
+          "ApiChange": "Property",
+          "ChangedApiName": "driveItemSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **driveItemSource** property to the [driveItemUploadableProperties](https://learn.microsoft.com/en-us/graph/api/resources/driveItemUploadableProperties?view=graph-rest-1.0) resource.",
+          "Target": "driveItemUploadableProperties"
+        },
+        {
+          "Id": "93315b42-882f-4215-b210-dea3a56fc469",
+          "ApiChange": "Property",
+          "ChangedApiName": "mediaSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **mediaSource** property to the [driveItemUploadableProperties](https://learn.microsoft.com/en-us/graph/api/resources/driveItemUploadableProperties?view=graph-rest-1.0) resource.",
+          "Target": "driveItemUploadableProperties"
+        },
+        {
+          "Id": "93315b42-882f-4215-b210-dea3a56fc469",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mediaSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [mediaSource](https://learn.microsoft.com/en-us/graph/api/resources/mediaSource?view=graph-rest-1.0) resource.",
+          "Target": "mediaSource"
+        }
+      ],
+      "Id": "93315b42-882f-4215-b210-dea3a56fc469",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-02-08T11:42:39.4965347Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     }
   ]
 }

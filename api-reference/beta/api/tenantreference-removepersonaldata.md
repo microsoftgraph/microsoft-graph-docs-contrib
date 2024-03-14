@@ -3,7 +3,7 @@ title: "tenantReference: removePersonalData"
 description: "Create a request to remove the personal data for an outboundSharedUserProfile."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ POST /directory/outboundSharedUserProfiles/{userId}/tenants/{tenantId}/removePer
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

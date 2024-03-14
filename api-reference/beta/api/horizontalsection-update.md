@@ -3,7 +3,7 @@ title: 'Update horizontalSection'
 description: "Update the properties of a horizontalSection object."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 # Update horizontalSection
@@ -36,7 +36,7 @@ PATCH /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/hor
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

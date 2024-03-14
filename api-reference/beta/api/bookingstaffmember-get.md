@@ -3,7 +3,7 @@ title: "Get bookingStaffMember"
 description: "Get the properties and relationships of a bookingStaffMember in the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/staffMembers/{id}
+GET /solutions/bookingbusinesses/{id}/staffMembers/{id}
 ```
 
 ## Optional query parameters
@@ -55,10 +55,10 @@ Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_bookingstaffmember",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "71d64d0e-7225-49b6-b0b1-070d476cda51"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "71d64d0e-7225-49b6-b0b1-070d476cda51"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/71d64d0e-7225-49b6-b0b1-070d476cda51
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/staffMembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
 
 # [C#](#tab/csharp)
@@ -85,10 +85,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/php/get-bookingstaffmember-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingstaffmember-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-bookingstaffmember-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,7 +92,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 ---
 
 ### Response
-Here's an example of the response. 
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -109,10 +105,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/staffMembers/$entity",
     "id": "71d64d0e-7225-49b6-b0b1-070d476cda51",
     "displayName": "Samantha Booth",
-    "emailAddress": "samanthab@contoso.onmicrosoft.com",
+    "emailAddress": "samanthab@contoso.com",
     "availabilityIsAffectedByPersonalCalendar": true,
     "colorIndex": 0,
     "role": "administrator",

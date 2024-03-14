@@ -3,7 +3,7 @@ title: "Update adminReportSettings"
 description: "Update tenant-level settings for Microsoft 365 reports."
 ms.localizationpriority: medium
 author: "qiwhuang"
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ PATCH /admin/reportSettings
 
 | Name          | Description                |
 | :------------ | :--------------------------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.|
 
 ## Request body

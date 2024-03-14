@@ -3,7 +3,7 @@ title: "accessPackageResource resource type"
 description: "An access package resource is a reference to a resource associated with a catalog the roles for which can be used in one or more access packages."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -24,6 +24,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|attributes|[accessPackageResourceAttribute](accesspackageresourceattribute.md) collection|Contains information about the attributes to be collected from the requestor and sent to the resource application.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |description|String|A description for the resource.|
 |displayName|String|The display name of the resource, such as the application name, group name or site name.|
@@ -55,6 +56,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+   "attributes": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageResourceAttribute"
+    }
+   ],
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",

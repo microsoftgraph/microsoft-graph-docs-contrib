@@ -3,7 +3,7 @@ title: "Get event"
 description: "Get the properties and relationships of the specified event object."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -27,28 +27,25 @@ Because the **event** resource supports [extensions](/graph/extensibility-overvi
 
 ### Support various time zones
 
-For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response. 
+For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.
 
 For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.
 ```http
 Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
-If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. 
-See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end 
+If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header.
+See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end
 times are returned in UTC.
 
-You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to 
+You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to
 find out the time zone used when the event was created.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read    |
-|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read    |
-|Application | Calendars.ReadBasic, Calendars.Read |
+<!-- { "blockType": "permissions", "name": "event_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/event-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -74,7 +71,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
-| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header isn't specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
 Don't supply a request body for this method.
@@ -88,10 +85,10 @@ If successful, this method returns a `200 OK` response code and an [event](../re
 #### Request
 The following example gets the specified event. It specifies the following:
 
-- A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
+- A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
 
-The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body. 
+The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.
 
 
 # [HTTP](#tab/http)
@@ -101,7 +98,7 @@ The request does not specify any `Prefer: outlook.body-content-type` header to i
   "sampleKeys": ["AAMkAGIAAAoZDOFAAA="]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees 
+GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
@@ -140,7 +137,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ---
 
 #### Response
-Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format. 
+Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
 
 <!-- {
   "blockType": "response",
@@ -156,6 +153,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees)/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
     "id":"AAMkAGIAAAoZDOFAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "subject":"Orientation ",
     "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
     "body":{
@@ -192,7 +191,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+                "address":"samanthab@contoso.com"
             }
         },
         {
@@ -213,7 +212,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
             },
             "emailAddress":{
                 "name":"Dana Swope",
-                "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+                "address":"danas@contoso.com"
             }
         }
     ],
@@ -221,7 +220,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
     "organizer":{
         "emailAddress":{
             "name":"Samantha Booth",
-            "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+            "address":"samanthab@contoso.com"
         }
     }
 }
@@ -279,7 +278,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 #### Response
-Here is an example of the response. The **body** property is returned in text format. 
+Here is an example of the response. The **body** property is returned in text format.
 
 <!-- {
   "blockType": "response",
@@ -296,6 +295,8 @@ Preference-Applied: outlook.body-content-type="text"
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview)/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
     "id":"AAMkAGI1AAAoZDOFAAA=",
+    "iCalUId": "040000008200E00074=",
+    "uid": "040000008200E00074C=",
     "subject":"Orientation ",
     "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
     "body":{
@@ -308,8 +309,8 @@ Preference-Applied: outlook.body-content-type="text"
 ### Example 3: Get an event that specifies more than one location
 #### Request
 
-The following example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
-to return specific properties. 
+The following example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter
+to return specific properties.
 
 
 # [HTTP](#tab/http)
@@ -357,10 +358,11 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=?$select=subj
 ---
 
 #### Response
-Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
 
-Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, 
-the **start** and **end** properties are displayed in the default UTC time zone, and the body is in the default HTML format.  
+Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for.
+
+Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header,
+the **start** and **end** properties are displayed in the default UTC time zone, and the body is in the default HTML format.
 
 <!-- {
   "blockType": "response",
@@ -376,6 +378,8 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
+  "iCalUId": "040000008200E00074=",
+  "uid": "040000008200E00074C=",
   "subject":"Plan summer company picnic",
   "bodyPreview":"Let's kick-start this event planning!",
   "body":{
@@ -435,7 +439,7 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Dana Swope",
-        "address":"DanaS@contoso.onmicrosoft.com"
+        "address":"DanaS@contoso.com"
       }
     },
     {
@@ -446,14 +450,14 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Alex Wilber",
-        "address":"AlexW@contoso.onmicrosoft.com"
+        "address":"AlexW@contoso.com"
       }
     }
   ],
   "organizer":{
     "emailAddress":{
       "name":"Adele Vance",
-      "address":"AdeleV@contoso.onmicrosoft.com"
+      "address":"AdeleV@contoso.com"
     }
   }
 }
@@ -461,8 +465,7 @@ Content-type: application/json
 ### Example 4: Expand a series master event
 #### Request
 
-The following example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties. 
-
+The following example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -525,6 +528,8 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
+  "iCalUId": "040000008200E00074=",
+  "uid": "040000008200E00074C=",
   "subject": "Daily stand-up",
   "cancelledOccurrences": [
      "OID.AAMkADAGAADDdm4NAAA=.2020-04-30",
@@ -558,7 +563,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)

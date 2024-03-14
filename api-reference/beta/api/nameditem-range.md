@@ -3,7 +3,7 @@ title: "namedItem: range"
 description: "Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 author: "ruoyingl"
 ---
 
@@ -33,7 +33,7 @@ GET /me/drive/root:/{item-path}:/workbook/names/{name}/range
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body

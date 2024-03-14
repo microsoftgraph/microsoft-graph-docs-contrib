@@ -3,7 +3,7 @@ title: "credentialUserRegistrationCount resource type"
 description: "Represents the current state of how many users in your organization are registered for self-service password reset and multifactor authentication capabilities."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the current state of how many users in your organization are registered for self-service password reset and multifactor authentication capabilities.
+Represents the current state of how many users in your organization are registered for self-service password reset and multifactor authentication capabilities. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
 ## Methods
 

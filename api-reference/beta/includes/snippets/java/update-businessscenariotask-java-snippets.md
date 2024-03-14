@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 BusinessScenarioTask businessScenarioTask = new BusinessScenarioTask();
-businessScenarioTask.title = "Customer order #12010";
-businessScenarioTask.percentComplete = 20;
-businessScenarioTask.priority = 1;
+businessScenarioTask.setOdataType("#microsoft.graph.businessScenarioTask");
+businessScenarioTask.setTitle("Customer order #12010");
+businessScenarioTask.setPercentComplete(20);
+businessScenarioTask.setPriority(1);
 BusinessScenarioProperties businessScenarioProperties = new BusinessScenarioProperties();
-businessScenarioProperties.externalObjectVersion = "000003";
-businessScenarioTask.businessScenarioProperties = businessScenarioProperties;
+businessScenarioProperties.setExternalObjectVersion("000003");
+businessScenarioTask.setBusinessScenarioProperties(businessScenarioProperties);
+BusinessScenarioTask result = graphClient.solutions().businessScenarios().byBusinessScenarioId("{businessScenario-id}").planner().tasks().byBusinessScenarioTaskId("{businessScenarioTask-id}").patch(businessScenarioTask);
 
-graphClient.solutions().businessScenarios("c5d514e6c6864911ac46c720affb6e4d").planner().tasks("pmc1rS1Io0C3rXQhyXIsNmUAOeIi")
-	.buildRequest()
-	.patch(businessScenarioTask);
 
 ```

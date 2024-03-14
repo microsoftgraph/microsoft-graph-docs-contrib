@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an incident object."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 Retrieve the properties and relationships of an [incident](../resources/security-incident.md) object.
 
-Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple [alert](../resources/security-alert.md) objects. Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an **incident**. 
+Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple [alert](../resources/security-alert.md) objects. Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an **incident**.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -37,7 +37,7 @@ GET /security/incidents/{incidentId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -49,6 +49,8 @@ If successful, this method returns a `200 OK` response code and an [incident](..
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,6 +98,9 @@ GET https://graph.microsoft.com/v1.0/security/incidents/2972395
 ---
 
 ### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -117,7 +122,7 @@ Content-type: application/json
     "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
     "createdDateTime": "2021-08-13T08:43:35.5533333Z",
     "lastUpdateDateTime": "2021-09-30T09:35:45.1133333Z",
-    "assignedTo": "KaiC@contoso.onmicrosoft.com",
+    "assignedTo": "KaiC@contoso.com",
     "classification": "TruePositive",
     "determination": "MultiStagedAttack",
     "status": "Active",
@@ -128,9 +133,14 @@ Content-type: application/json
     "comments": [
       {
 		"comment": "Demo incident",
-		"createdBy": "DavidS@contoso.onmicrosoft.com",
+		"createdBy": "DavidS@contoso.com",
 		"createdTime": "2021-09-30T12:07:37.2756993Z"
       }
-    ]
+    ],
+    "systemTags" : [
+        "Defender Experts"
+    ],
+    "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
+    "lastModifiedBy": "DavidS@contoso.onmicrosoft.com"
 }
 ```

@@ -36,7 +36,7 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -99,10 +99,6 @@ Content-length: 518
   "notApplicableUserCount": 6
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-softwareupdatestatussummary-update-update-softwareupdatestatussummary-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-softwareupdatestatussummary-update-update-softwareupdatestatussummary-javascript-snippets.md)]

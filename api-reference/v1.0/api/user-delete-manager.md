@@ -3,6 +3,7 @@ title: "Remove manager"
 description: "Remove a user's manager."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -33,7 +34,7 @@ DELETE /users/{id}/manager/$ref
 
 | Header       | Value |
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

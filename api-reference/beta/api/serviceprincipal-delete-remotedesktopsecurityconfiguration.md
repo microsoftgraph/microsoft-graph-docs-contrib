@@ -3,7 +3,7 @@ title: "Delete remoteDesktopSecurityConfiguration"
 description: "Delete a remoteDesktopSecurityConfiguration object on a servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ DELETE /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfigurati
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

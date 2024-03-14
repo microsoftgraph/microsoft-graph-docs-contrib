@@ -4,7 +4,7 @@ description: "Add a conversationMember to a channel."
 author: "akjo" 
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Add conversationMember
@@ -32,7 +32,7 @@ POST /teams/{id}/channels/{id}/members
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

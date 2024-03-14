@@ -3,7 +3,7 @@ title: "driveItem: extractSensitivityLabels"
 description: "Extract one or more sensitivity labels assigned to a drive item."
 author: "jaLuthra"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Extract one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label. If there is failure to extract the sensitivity labels of a file, an extraction error is thrown with the applicable error code and message.
+Extract one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label. If there's failure to extract the sensitivity labels of a file, an extraction error is thrown with the applicable error code and message.
 
 For more information about sensitivity labels from an administrator's perspective, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-worldwide&preserve-view=true).
 
@@ -48,7 +48,7 @@ POST /users/{user-id}/drive/root:/{item-path}:/extractSensitivityLabels
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -62,16 +62,16 @@ The following are the possible values for the error types.
 
 | Value                       | Description                                                                                                         |
 |:----------------------------|:--------------------------------------------------------------------------------------------------------------------|
-| fileDoubleKeyEncrypted      | Indicates that the file is protected via double key encryption; hence it can't be opened for the extraction of the sensitivity labels.             |
-| fileDecryptionNotSupported  | Indicates that the encrypted file has specific properties that don't allow these files to be opened by SharePoint to extract sensitivity labels.    |
-| fileDecryptionDeferred      | Indicates that the file is being processed for decryption; hence it can't be opened for the extraction of the sensitivity labels.      |
-| unknownFutureValue          | Evolvable enumeration sentinel value. Don't use.                                                                   |
+| fileDoubleKeyEncrypted      |Indicates that the file is protected via double key encryption; hence it can't be opened for the extraction of the sensitivity labels.             |
+| fileDecryptionNotSupported  |Indicates that SharePoint can't open the encrypted file to extract sensitivity labels due to specific properties of the file.    |
+| fileDecryptionDeferred      |Indicates that the file is being processed for decryption; hence it can't be opened for the extraction of the sensitivity labels.      |
+| unknownFutureValue          |Evolvable enumeration sentinel value. Don't use.                                                                   |
 
 ## Examples
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -88,8 +88,7 @@ POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2
 
 ### Response
 
-Here's an example of the response.
-
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

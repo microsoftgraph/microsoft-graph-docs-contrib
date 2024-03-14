@@ -3,7 +3,7 @@ title: "List attendanceRecords"
 description: "Get a list of attendanceRecord objects and their properties."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

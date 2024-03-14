@@ -3,7 +3,7 @@ title: "Create inferenceClassificationOverride"
 description: "Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified "
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: mail
+ms.subservice: mail
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,7 @@ Content-type: application/json
   "classifyAs": "focused",
   "senderEmailAddress": {
     "name": "Samantha Booth",
-    "address": "samanthab@adatum.onmicrosoft.com"
+    "address": "samanthab@contoso.com"
   }
 }
 ```
@@ -118,7 +118,7 @@ Content-type: application/json
   "classifyAs": "focused",
   "senderEmailAddress": {
     "name": "Samantha Booth",
-    "address": "samanthab@adatum.onmicrosoft.com"
+    "address": "samanthab@contoso.com"
   },
   "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
 }

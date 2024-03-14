@@ -3,7 +3,7 @@ title: "industryDataActivityStatistics resource type"
 description: "Represents an abstract base type for statistics for a single activity within a run."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

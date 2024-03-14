@@ -3,7 +3,7 @@ title: "workflow: activate"
 description: "Run a workflow object on demand."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/activate
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

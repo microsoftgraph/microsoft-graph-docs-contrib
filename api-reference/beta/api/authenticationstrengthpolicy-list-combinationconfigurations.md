@@ -4,7 +4,7 @@ description: "Get the authenticationCombinationConfiguration objects for an auth
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) objects for an [authentication strength policy](../resources/authenticationstrengthpolicy.md). authenticationCombinationConfiguration represents requirements placed on specific authentication method combinations that require specified variants of those authentication methods to be used when authenticating. Currently, only [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) objects are supported.
+Get the [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) objects for an [authentication strength policy](../resources/authenticationstrengthpolicy.md). The objects can be of one or more of the following derived types:
+* [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md)
+* [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md)
 
-authenticationCombinationConfiguration objects are supported only for custom authentication strengths.
+**authenticationCombinationConfiguration** objects are supported only for custom authentication strengths.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -43,7 +45,7 @@ This method does not support OData query parameters.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

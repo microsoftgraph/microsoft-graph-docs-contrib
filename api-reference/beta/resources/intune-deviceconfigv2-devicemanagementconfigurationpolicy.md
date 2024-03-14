@@ -25,9 +25,12 @@ Device Management Configuration Policy
 |[Create deviceManagementConfigurationPolicy](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-create.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|Create a new [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) object.|
 |[Delete deviceManagementConfigurationPolicy](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-delete.md)|None|Deletes a [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md).|
 |[Update deviceManagementConfigurationPolicy](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-update.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|Update the properties of a [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) object.|
-|[assign action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-assign.md)|[deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) collection|Not yet documented|
-|[createCopy action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-createcopy.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|Not yet documented|
-|[reorder action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-reorder.md)|None|Not yet documented|
+|[assign action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-assign.md)|[deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) collection||
+|[createCopy action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-createcopy.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)||
+|[reorder action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-reorder.md)|None||
+|[retrieveLatestUpgradeDefaultBaselinePolicy function](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-retrievelatestupgradedefaultbaselinepolicy.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)||
+|[retrieveJustInTimeConfiguration action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-retrievejustintimeconfiguration.md)|[deviceManagementConfigurationJustInTimeAssignmentPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationjustintimeassignmentpolicy.md)||
+|[assignJustInTimeConfiguration action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-assignjustintimeconfiguration.md)|Boolean||
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +39,7 @@ Device Management Configuration Policy
 |name|String|Policy name|
 |description|String|Policy description|
 |platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this policy. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `mobileApplicationManagement`, `linuxMdm`, `enrollment`, `endpointPrivilegeManagement`, `unknownFutureValue`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `mobileApplicationManagement`, `linuxMdm`, `enrollment`, `endpointPrivilegeManagement`, `unknownFutureValue`, `windowsOsRecovery`.|
 |createdDateTime|DateTimeOffset|Policy creation date and time|
 |lastModifiedDateTime|DateTimeOffset|Policy last modification date and time|
 |settingCount|Int32|Number of settings|

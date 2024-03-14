@@ -3,7 +3,7 @@ title: "List authenticationEventListeners"
 description: "Get a list of the authenticationEventListener objects and their properties."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -19,6 +19,9 @@ Get a list of the [authenticationEventListener](../resources/authenticationevent
 - [onAuthenticationMethodStartListener](../resources/onauthenticationmethodloadstartlistener.md)
 - [onAttributeCollectionListener](../resources/onattributecollectionlistener.md)
 - [onUserCreateStartListener](../resources/onusercreatestartlistener.md)
+- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
+- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -44,7 +47,7 @@ This method supports the `$select` and `$filter` OData query parameters to help 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -3,7 +3,7 @@ title: "List whoisRecords"
 description: "Get a list of whoisRecord objects."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,7 @@ The following properties can be used for `$search` calls.
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -117,6 +117,10 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/whoisRecords?$s
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-whoisrecord-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-whoisrecord-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

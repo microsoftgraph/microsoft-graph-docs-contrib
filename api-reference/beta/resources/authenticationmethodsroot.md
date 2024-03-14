@@ -3,7 +3,7 @@ title: "authenticationMethodsRoot resource type"
 description: "Container for navigation properties of resources for Microsoft Entra authentication methods."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "recommendation: dismiss"
 description: "Dismiss a recommendation object and updates its status to dismissed."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /directory/recommendations/{recommendationId}/dismiss
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

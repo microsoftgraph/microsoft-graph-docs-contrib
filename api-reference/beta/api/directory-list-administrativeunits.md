@@ -3,7 +3,7 @@ title: "List administrativeUnits"
 description: "Retrieve a list of administrativeUnit objects."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ This method supports the `$count`, `$select`, `$search`, `$filter`, and `$expand
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

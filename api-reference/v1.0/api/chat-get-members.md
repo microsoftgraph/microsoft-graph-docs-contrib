@@ -3,7 +3,7 @@ title: "Get conversationMember in a chat"
 description: "Retrieve a member of a chat."
 author: "anandjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -133,7 +133,7 @@ Content-type: application/json
     "displayName": "Niklas Lang",
     "visibleHistoryStartDateTime": "2022-05-02T12:49:36.881Z",
     "userId": "8c0c0a2a-c679-401e-adc3-a45b548889a6",
-    "email": "Niklas.Lang@BechtleDAI.onmicrosoft.com",
+    "email": "Niklas.Lang@contoso.com",
     "tenantId": "0f81b1ea-b857-4a9c-99eb-e998d52046d5"
 }
 ```

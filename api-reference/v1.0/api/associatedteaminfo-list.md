@@ -3,7 +3,7 @@ title: "List associatedTeamInfo"
 description: "Get the list of teams in Microsoft Teams that a user is associated with."
 author: "devjha-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method does not currently support the [OData query parameters](/graph/query
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -139,7 +139,7 @@ Content-Type: application/json
 ```
 
 
-## See also
+## Related content
 
 - [List joinedTeams](../api/user-list-joinedteams.md)
 - [Get team](../api/team-get.md)

@@ -3,7 +3,7 @@ title: "Delete customTaskExtension"
 description: "Delete a customTaskExtension object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ DELETE /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskEx
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

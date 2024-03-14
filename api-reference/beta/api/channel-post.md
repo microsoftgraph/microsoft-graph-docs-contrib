@@ -3,7 +3,7 @@ title: "Create channel"
 description: "Create new channel in a team, as specified in the request body."
 ms.localizationpriority: medium
 author: "akjo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [channel](../resources/channel.md) in a team, as specified in the request body. When you create a channel, the maximum length of the channel's `displayName` is 50 characters. This is the name that appears to the user in Microsoft Teams.
+Create a new [channel](../resources/channel.md) in a team, as specified in the request body. When you create a channel, the maximum length of the channel's `displayName` is 50 characters. This name appears to the user in Microsoft Teams.
 
 You can add a maximum of 200 members when you create a private channel.
 
 > [!NOTE]
-> - Some special characters in the channel name will cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](/graph/known-issues#create-channel).
+> - Some special characters in the channel name cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](/graph/known-issues#create-channel).
 > - When you create a private/shared channel, the SharePoint site might fail to provision. If the site fails to provision after 5 minutes, use the [Get filesFolder](/graph/api/channel-get-filesfolder) API to trigger provisioning.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -50,7 +50,7 @@ POST /teams/{team-id}/channels
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -248,7 +248,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows how to create a channel that will be used for importing messages.
+The following example shows how to create a channel that is used for importing messages.
 
 
 
@@ -426,7 +426,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request to create a private channel and add a user as an team owner.
+The following example shows a request to create a private channel and add a user as a team owner.
 
 
 # [HTTP](#tab/http)
@@ -603,7 +603,52 @@ Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f
 Content-Length: 0
 ```
 
-## See also
+### Example 7: Create a shared channel shared with host team
+
+#### Request
+
+The following example shows how to create a shared channel shared with host team.
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "displayName": "My First Shared Channel",
+  "description": "This is my first shared channel",
+  "membershipType": "shared",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
+      "roles": [
+        "owner"
+      ]
+    }
+  ],
+  "sharedWithTeams":[
+    {
+      "id": "57fb72d0-d811-46f4-8947-305e6072eaa5"
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
+Content-Length: 0
+```
+
+## Related content
 
 * [Complete migration for a channel](channel-completemigration.md)
 * [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)

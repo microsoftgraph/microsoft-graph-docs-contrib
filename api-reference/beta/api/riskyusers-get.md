@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a **riskyUser** objec
 ms.localizationpriority: medium
 author: "tracyshi"
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 # Get riskyUser
 
@@ -38,7 +38,7 @@ This method does not support any [OData query parameters](/graph/query-parameter
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body

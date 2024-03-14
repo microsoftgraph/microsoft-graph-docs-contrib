@@ -94,7 +94,7 @@ tiIndicator1.SetThreatType(&threatType)
 tlpLevel := graphmodels.GREEN_TLPLEVEL 
 tiIndicator1.SetTlpLevel(&tlpLevel) 
 
-value := []graphmodels.tiIndicatorable {
+value := []graphmodels.TiIndicatorable {
 	tiIndicator,
 	tiIndicator1,
 }

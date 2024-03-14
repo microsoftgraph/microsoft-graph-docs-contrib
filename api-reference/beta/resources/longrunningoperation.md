@@ -3,7 +3,7 @@ title: "longRunningOperation resource type"
 description: "Represents the status of a long-running operation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Base type of [attackSimulationOperation](../resources/attacksimulationoperation.
 |id|String|The unique identifier for the operation. |
 |lastActionDateTime|DateTimeOffset|The time of the last action in the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |resourceLocation|String| URI of the resource that the operation is performed on. |
-|status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
 |statusDetail|String|Details about the status of the operation.|
 
 ## JSON representation

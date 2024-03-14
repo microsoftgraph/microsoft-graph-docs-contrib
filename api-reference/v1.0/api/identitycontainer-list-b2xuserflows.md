@@ -4,7 +4,7 @@ description: "Retrieve a list of b2xIdentityUserFlow objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List b2xIdentityUserFlows
@@ -43,7 +43,7 @@ You can use `$expand` to expand specific user flow properties that aren't expand
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -224,7 +224,7 @@ Content-type: application/json
                 "name": "Facebook",
                 "clientId": "clientIdFromFacebook",
                 "clientSecret": "*******"
-              }  
+              }
           ]
       },
       {
@@ -238,7 +238,7 @@ Content-type: application/json
                 "name": "Facebook",
                 "clientId": "clientIdFromFacebook",
                 "clientSecret": "*******"
-              }  
+              }
           ]
       }
    ]
@@ -253,6 +253,6 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
     "Error: list_b2xUserFlows/container/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: list_b2xUserFlows_expand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+    "Error: listb2xUserFlowsexpand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->

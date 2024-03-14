@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsTeamActivityDistributionCounts"
 description: "Get the number of team activities across Microsoft Teams over a selected period."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "haoyli"
 doc_type: apiPageType
 ---
@@ -44,7 +44,7 @@ In the request URL, provide the following parameter with a valid value.
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

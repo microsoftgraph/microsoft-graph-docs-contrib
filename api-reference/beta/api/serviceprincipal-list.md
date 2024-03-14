@@ -3,7 +3,7 @@ title: "List servicePrincipals"
 description: "Retrieve a list of servicePrincipal objects."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -47,7 +47,7 @@ The use of `$select` to get **keyCredentials** for service principals has a thro
 
 | Name | Description |
 |:---- |:----------- |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body

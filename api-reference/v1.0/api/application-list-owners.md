@@ -3,7 +3,7 @@ title: "List owners"
 description: "Retrieve a list of owners (directoryObject objects) for an application."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

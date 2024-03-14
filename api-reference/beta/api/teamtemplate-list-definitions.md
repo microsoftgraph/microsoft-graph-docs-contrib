@@ -3,7 +3,7 @@ title: "List definitions"
 description: "List the teamTemplateDefinition objects associated with a teamTemplate."
 author: "rahuldey700"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports the `$expand`, `$filter`, and `$skipToken` [OData query par
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

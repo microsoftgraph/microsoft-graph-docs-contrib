@@ -37,3 +37,8 @@ Possible ways of adding a mobile device to management.
 |androidEnterpriseDedicatedDevice|15|Android Enterprise Dedicated Device|
 |androidEnterpriseFullyManaged|16|Android Enterprise Fully Managed|
 |androidEnterpriseCorporateWorkProfile|17|Android Enterprise Corporate Work Profile|
+|appleACMEBasicBYOD|20|Apple ACME BYOD enrollment|
+|appleACMEDEPUserless|21|Apple ACME DEP Userless enrollment|
+|appleACMEDEPUDACompanyPortal|22|Apple ACME DEP UDA enrollment at CP|
+|appleACMEDEPUDASetupAsstLegacy|23|Apple ACME DEP UDA enrollment at Setup Asst (legacy)|
+|appleACMEDEPUDAModernAuth|24|Apple ACME DEP UDA enrollment at Setup Asst (Modern Auth)|

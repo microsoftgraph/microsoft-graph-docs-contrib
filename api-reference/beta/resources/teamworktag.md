@@ -3,7 +3,7 @@ title: "teamworkTag resource type"
 description: "Represents a tag associated with a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -72,5 +72,5 @@ Here's a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [teamworkTagMember](../resources/teamworktagmember.md)

@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Get Drive
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Retrieve the properties and relationships of a Drive resource."
 doc_type: apiPageType
 ---
@@ -106,6 +106,12 @@ GET /drives/{driveId}
 ## Optional query parameters
 
 These methods support the [$select query parameter][odata-query-parameters] to shape the response.
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

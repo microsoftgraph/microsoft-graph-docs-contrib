@@ -4,7 +4,7 @@ doc_type: apiPageType
 description: "Get a signIn object that contains all sign-ins for a Microsoft Entra tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 ---
 
 # Get signIn
@@ -57,7 +57,7 @@ This method supports OData query parameters to help customize the response. For 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

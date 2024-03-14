@@ -3,7 +3,7 @@ title: "List deleted items (directory objects) owned by a user"
 description: "Retrieves a list of recently deleted application or group objects that are owned by the specified user."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 | Name          | Description               |
 | ------------- | ------------------------- |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

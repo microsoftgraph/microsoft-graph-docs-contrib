@@ -3,7 +3,7 @@ title: "Get subscribedSku"
 description: "Retrieve a specific commercial subscription that an organization has acquired."
 ms.localizationpriority: medium
 author: "frank-masuelli"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ This method does **not** support the [OData Query Parameters](/graph/query-param
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -2,8 +2,9 @@
 title: "List organizations"
 description: "Retrieve a list of organization objects."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "directory-management"
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -19,12 +20,12 @@ Retrieve a list of organization objects. There's only one organization object in
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
+|Delegated (work or school account) | User.Read, Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
 [!INCLUDE [rbac-organization-apis-read](../includes/rbac-for-apis/rbac-organization-apis-read.md)]
 

@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UrlThreatSubmission urlThreatSubmission = new UrlThreatSubmission();
-urlThreatSubmission.category = SubmissionCategory.PHISHING;
-urlThreatSubmission.webUrl = "http://phishing.contoso.com";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().threatSubmission().urlThreats()
-	.buildRequest()
-	.post(urlThreatSubmission);
+com.microsoft.graph.beta.models.security.UrlThreatSubmission urlThreatSubmission = new com.microsoft.graph.beta.models.security.UrlThreatSubmission();
+urlThreatSubmission.setOdataType("#microsoft.graph.urlThreatSubmission");
+urlThreatSubmission.setCategory(com.microsoft.graph.beta.models.security.SubmissionCategory.Phishing);
+urlThreatSubmission.setWebUrl("http://phishing.contoso.com");
+com.microsoft.graph.models.security.UrlThreatSubmission result = graphClient.security().threatSubmission().urlThreats().post(urlThreatSubmission);
+
 
 ```

@@ -12,10 +12,18 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new SendVirtualAppointmentReminderSmsPostRequestBody
 {
-	PhoneNumbers = new List<string>
+	Attendees = new List<AttendeeNotificationInfo>
 	{
-		"+13129224122",
-		"+1242421412",
+		new AttendeeNotificationInfo
+		{
+			PhoneNumber = "+13129224122",
+			TimeZone = "Pacific Standard Time",
+		},
+		new AttendeeNotificationInfo
+		{
+			PhoneNumber = "+1242421412",
+			TimeZone = "Eastern Standard Time",
+		},
 	},
 	RemindBeforeTimeInMinutesType = RemindBeforeTimeInMinutesType.Mins15,
 };

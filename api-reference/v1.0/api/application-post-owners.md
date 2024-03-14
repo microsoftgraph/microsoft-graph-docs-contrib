@@ -3,7 +3,7 @@ title: "Add owner"
 description: "Add an owner to an application."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /applications(appId='{appId}')/owners/$ref
 ## Request headers
 | Name | Description|
 |:---- |:---------- |
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the identifier of the directory object to be assigned as owner.

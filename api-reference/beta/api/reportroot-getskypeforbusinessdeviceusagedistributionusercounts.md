@@ -2,7 +2,7 @@
 title: "reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts"
 description: "Get the number of users using unique devices in your organization. The report shows you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -50,7 +50,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

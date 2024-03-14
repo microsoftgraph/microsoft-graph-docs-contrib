@@ -3,7 +3,7 @@ title: "Add Named Item FormulaLocal"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 author: "ruoyingl"
 ---
 
@@ -33,7 +33,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body

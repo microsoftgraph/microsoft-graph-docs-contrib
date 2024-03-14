@@ -3,7 +3,7 @@ title: "Delete registeredUsers"
 description: "Remove a user as a registered user of the device."
 ms.localizationpriority: medium
 author: "michaelrm97"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ DELETE /devices/{id}/registeredUsers/{id}/$ref
 ## Request headers
 | Name       | Description|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

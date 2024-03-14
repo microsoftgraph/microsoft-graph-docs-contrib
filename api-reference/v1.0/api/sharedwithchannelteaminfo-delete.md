@@ -4,7 +4,7 @@ description: "Unshare a channel with a team by deleting the corresponding shared
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Delete sharedWithChannelTeamInfo
@@ -36,7 +36,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/sharedWithTeams/{shared-with-chann
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -110,7 +110,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Remove member from channel](channel-delete-members.md)
 - [Remove member from team](team-delete-members.md)

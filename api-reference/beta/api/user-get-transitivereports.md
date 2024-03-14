@@ -2,6 +2,7 @@
 title: "Get transitiveReports for a user"
 description: "Get the count of transitive reports for a user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a count of transitive reports for a user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -38,7 +39,7 @@ This method supports the `$filter` query parameter for only the **accountEnabled
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. Required. |
 
 ## Request body

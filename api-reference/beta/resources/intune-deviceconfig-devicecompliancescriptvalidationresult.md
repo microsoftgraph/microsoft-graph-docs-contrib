@@ -1,6 +1,6 @@
 ---
 title: "deviceComplianceScriptValidationResult resource type"
-description: ""
+description: "Intune Deviceconfig Devicecompliancescriptvalidationresult Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

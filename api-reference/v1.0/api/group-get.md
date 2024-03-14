@@ -1,13 +1,14 @@
 ---
 title: "Get group"
 description: "Get the properties and relationships of a group object."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
-# Get group 
+# Get group
 
 Namespace: microsoft.graph
 
@@ -146,7 +147,7 @@ Content-type: application/json
         "Unified"
     ],
     "isAssignableToRole": null,
-    "mail": "HRTaskforce@M365x214355.onmicrosoft.com",
+    "mail": "HRTaskforce@contoso.com",
     "mailEnabled": true,
     "mailNickname": "HRTaskforce",
     "membershipRule": null,
@@ -160,7 +161,7 @@ Content-type: application/json
     "preferredDataLocation": null,
     "preferredLanguage": null,
     "proxyAddresses": [
-        "SMTP:HRTaskforce@M365x214355.onmicrosoft.com",
+        "SMTP:HRTaskforce@contoso.com",
         "SPO:SPO_896cf652-b200-4b74-8111-c013f64406cf@SPO_dcd219dd-bc68-4b9b-bf0b-4a33a796be35"
     ],
     "renewedDateTime": "2020-01-24T19:01:14Z",
@@ -170,6 +171,7 @@ Content-type: application/json
     ],
     "securityEnabled": false,
     "securityIdentifier": "S-1-12-1-45981654-1196986259-3072312199-363020343",
+    "serviceProvisioningErrors": [],
     "theme": null,
     "visibility": "Private",
     "onPremisesProvisioningErrors": []

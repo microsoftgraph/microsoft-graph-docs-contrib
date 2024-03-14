@@ -3,7 +3,7 @@ title: "recommendation: reactivate"
 description: "Reactivate a completed, dismissed, or postponed recommendation object."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /directory/recommendations/{recommendationId}/reactivate
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

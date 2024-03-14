@@ -3,7 +3,7 @@ title: "message: move"
 description: "Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -141,7 +141,7 @@ Content-type: application/json
     "hasAttachments":false,
     "internetMessageId":"<00535324-5988-4b6a-b9af-d44cf2d0b691@MWHPR2201MB1022.namprd22.prod.outlook.com>",
     "subject":"Undeliverable: Meet for lunch?",
-    "bodyPreview":"Delivery has failed to these recipients or groups:\r\n\r\nfannyd@contoso.onmicrosoft.com (fannyd@contoso.onmicrosoft.com)\r\nYour message couldn't be delivered. Despite repeated attempts to deliver your message, querying the Domain Name System (DNS) for the rec",
+    "bodyPreview":"Delivery has failed to these recipients or groups:\r\n\r\nfannyd@contoso.com (fannyd@contoso.com)\r\nYour message couldn't be delivered. Despite repeated attempts to deliver your message, querying the Domain Name System (DNS) for the rec",
     "importance":"normal",
     "parentFolderId":"AAMkADhAAAAAAEKAAA=",
     "conversationId":"AAQkADhJzfbkARFhe5kKhjihSA=",
@@ -158,26 +158,26 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Microsoft Outlook",
-            "address":"MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.onmicrosoft.com"
+            "address":"MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Microsoft Outlook",
-            "address":"MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.onmicrosoft.com"
+            "address":"MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
-                "name":"fannyd@contoso.onmicrosoft.com",
-                "address":"fannyd@contoso.onmicrosoft.com"
+                "name":"fannyd@contoso.com",
+                "address":"fannyd@contoso.com"
             }
         },
         {
             "emailAddress":{
-                "name":"danas@contoso.onmicrosoft.com",
-                "address":"danas@contoso.onmicrosoft.com"
+                "name":"danas@contoso.com",
+                "address":"danas@contoso.com"
             }
         }
     ],

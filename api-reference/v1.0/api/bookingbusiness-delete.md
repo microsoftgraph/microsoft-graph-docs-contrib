@@ -3,7 +3,7 @@ title: "Delete bookingBusiness"
 description: "Delete a bookingBusiness object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -45,10 +45,10 @@ Here's an example of the request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
+DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.com
 ```
 
 ### Response

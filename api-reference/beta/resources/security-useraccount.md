@@ -3,7 +3,7 @@ title: "userAccount resource type"
 description: "Represents common properties for a user account."
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

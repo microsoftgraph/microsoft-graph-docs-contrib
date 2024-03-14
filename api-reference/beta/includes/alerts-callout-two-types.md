@@ -1,7 +1,7 @@
 ---
 author: "angelgolfer-ms"
 ms.localizationpriority: high
-ms.prod: "security"
+ms.subservice: "security"
 ms.topic: include
 ---
 

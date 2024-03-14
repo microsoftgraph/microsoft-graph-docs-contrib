@@ -3,7 +3,7 @@ title: "List memberOf"
 description: "List the groups that this organizational contact is a member of."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Header       | Value |
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

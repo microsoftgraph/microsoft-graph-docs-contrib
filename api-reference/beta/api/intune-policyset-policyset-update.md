@@ -40,7 +40,7 @@ POST /deviceAppManagement/policySets/{policySetId}/update
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -68,7 +68,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/update
 
 Content-type: application/json
-Content-length: 1760
+Content-length: 1777
 
 {
   "addedPolicySetItems": [
@@ -112,10 +112,11 @@ Content-length: 1760
       "id": "0a8e7d40-7d40-0a8e-407d-8e0a407d8e0a",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]

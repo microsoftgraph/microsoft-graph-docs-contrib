@@ -3,7 +3,7 @@ title: "List deletedItems (deleted lifecycle workflows)"
 description: "Get a list of the deleted workflows objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method supports the `$select`, `$search`, `$orderby`, and `$filter` OData q
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

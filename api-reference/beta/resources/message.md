@@ -3,7 +3,7 @@ title: "message resource type"
 description: "A message in a mailbox folder."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -174,7 +174,7 @@ The following is a JSON representation of the resource
 }
 ```
 
-## See also
+## Related content
 
 - [Get mailbox settings](../api/user-get-mailboxsettings.md)
 - [Update mailbox settings](../api/user-update-mailboxsettings.md)

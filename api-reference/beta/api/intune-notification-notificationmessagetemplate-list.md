@@ -40,7 +40,7 @@ GET /deviceManagement/notificationMessageTemplates
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 441
+Content-Length: 484
 
 {
   "value": [
@@ -71,6 +71,7 @@ Content-Length: 441
       "id": "e1db399b-399b-e1db-9b39-dbe19b39dbe1",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "displayName": "Display Name value",
+      "description": "Description value",
       "defaultLocale": "Default Locale value",
       "brandingOptions": "includeCompanyLogo",
       "roleScopeTagIds": [

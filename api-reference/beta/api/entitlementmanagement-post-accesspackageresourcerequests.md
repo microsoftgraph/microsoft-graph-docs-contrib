@@ -3,7 +3,7 @@ title: "Create accessPackageResourceRequest"
 description: "Create a new accessPackageResourceRequest."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body

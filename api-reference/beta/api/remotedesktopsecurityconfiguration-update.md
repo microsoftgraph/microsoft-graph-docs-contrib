@@ -3,7 +3,7 @@ title: "Update remoteDesktopSecurityConfiguration"
 description: "Update the properties of a remoteDesktopSecurityConfiguration object on the servicePincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ PATCH /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguratio
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
