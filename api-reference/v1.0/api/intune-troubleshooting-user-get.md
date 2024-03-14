@@ -3,7 +3,7 @@ title: "Get user"
 description: "Read properties and relationships of the user object."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

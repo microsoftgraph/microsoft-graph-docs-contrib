@@ -3,7 +3,7 @@ title: "Create mobileAppInstallStatus"
 description: "Create a new mobileAppInstallStatus object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

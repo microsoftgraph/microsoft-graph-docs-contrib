@@ -3,7 +3,7 @@ title: "Delete groupPolicyMigrationReport"
 description: "Deletes a groupPolicyMigrationReport."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

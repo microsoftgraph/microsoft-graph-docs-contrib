@@ -3,7 +3,7 @@ title: "Create windows10EnrollmentCompletionPageConfiguration"
 description: "Create a new windows10EnrollmentCompletionPageConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

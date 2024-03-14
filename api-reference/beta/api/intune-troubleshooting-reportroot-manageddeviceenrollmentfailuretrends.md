@@ -3,7 +3,7 @@ title: "managedDeviceEnrollmentFailureTrends function"
 description: "Metadata for the enrollment failure trends report"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
