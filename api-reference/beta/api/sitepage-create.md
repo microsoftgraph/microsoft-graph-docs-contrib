@@ -64,7 +64,7 @@ The following example shows how to create a new page.
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /sites/{site-id}/pages
+POST https://graph.microsoft.com/beta/sites/{site-id}/pages
 Content-Type: application/json
 
 {
