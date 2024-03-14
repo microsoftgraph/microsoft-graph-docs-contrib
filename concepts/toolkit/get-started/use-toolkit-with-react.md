@@ -145,7 +145,7 @@ reportWebVitals();
 
 ### Add the sign-in button
 
-Add the **Login** Microsoft Graph Toolkit React component to allow users to sign-in with their Microsoft account to your app.
+Add the **Login** Microsoft Graph Toolkit React component to allow users to sign in with their Microsoft account to your app.
 
 1. In the code editor, open the **src/App.tsx** file, and to the list of imports add:
 
