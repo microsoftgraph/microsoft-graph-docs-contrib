@@ -140,7 +140,7 @@ GET https://graph.microsoft.com/v1.0/sites/delta?token=1230919asd190410jlka
 
 #### Response
 
-The following example shows the response that indicates that the site named `All Company` was deleted and the site `teamSiteB` was either added or modified between the initial request and this request to update the local state.
+The following example shows the response that indicates that the site named `All Company` was deleted between the initial request and this request to update the local state.
 
 The final page of sites includes the **@odata.deltaLink** property that provides the URL that can be used later to retrieve changes since the current set of sites.
 
