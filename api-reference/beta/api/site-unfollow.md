@@ -54,7 +54,7 @@ The following example shows how to unfollow multiple sites.
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /users/{user-id}/followedSites/remove
+POST https://graph.microsoft.com/beta/users/{user-id}/followedSites/remove
 Content-Type: application/json
 
 {

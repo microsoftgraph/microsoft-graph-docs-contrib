@@ -85,7 +85,7 @@ Here's an example of the request.
   "name": "clone_team"
 }-->
 ```http
-POST /teams/{id}/clone
+POST https://graph.microsoft.com/v1.0/teams/{id}/clone
 Content-Type: application/json
 
 {  
