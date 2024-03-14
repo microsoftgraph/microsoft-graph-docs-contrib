@@ -66,6 +66,7 @@ If successful, this method returns a `200 OK` response code and [conversionUserD
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userthis.convertexternaltointernalmemberuser-cloudonly"
@@ -83,6 +84,12 @@ Content-type: application/json
     }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/userthisconvertexternaltointernalmemberuser-cloudonly-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -112,6 +119,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userthis.convertexternaltointernalmemberuser-cloudonly-with-mail"
@@ -130,6 +138,12 @@ Content-type: application/json
     "mail": "AdeleV@contoso.com"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/userthisconvertexternaltointernalmemberuser-cloudonly-with-mail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -159,6 +173,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userthis.convertexternaltointernalmemberuser-synceduser"
@@ -167,6 +182,12 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/users/0b8cc234-ef87-4015-9785-cbb42000d41c/convertExternalToInternalMemberUser
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/userthisconvertexternaltointernalmemberuser-synceduser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
