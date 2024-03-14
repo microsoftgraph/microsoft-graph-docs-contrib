@@ -217,7 +217,7 @@ Next, extend the application to show data from the user's calendar. You can acce
 
 #### Track user's sign-in state
 
-You need to track the user's signed in state in order to use the `useIsSignedIn` hook provided by `mgt-react`.
+You need to track the user's signed-in state in order to use the `useIsSignedIn` hook provided by `mgt-react`.
 
 1. Import the `useIsSignedIn` hook from `mgt-react`, by adding it to the `mgt-react` imports.
 
