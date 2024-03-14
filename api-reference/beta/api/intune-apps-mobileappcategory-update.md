@@ -51,9 +51,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The key of the entity.|
+|id|String|The key of the entity. This property is read-only.|
 |displayName|String|The name of the app category.|
-|lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified.|
+|lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified. This property is read-only.|
 
 
 

@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Create a new folder
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Create a new folder or DriveItem in a Drive with a specified parent item or path."
 doc_type: apiPageType
 ---
@@ -61,7 +61,7 @@ The `@microsoft.graph.conflictBehavior` property used indicates that if an item 
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
 ```http
-POST /me/drive/root/children
+POST https://graph.microsoft.com/v1.0/me/drive/root/children
 Content-Type: application/json
 
 {

@@ -3,7 +3,7 @@ author: "rahmit"
 description: "Get the collection of baseSitePage objects from the site pages list in a site."
 title: "List baseSitePages"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "bookingStaffMember resource type"
 description: "Represents a staff member who provides services in a bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

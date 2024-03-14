@@ -3,7 +3,7 @@ title: "Create bookingCustomQuestion"
 description: "Create a new bookingCustomQuestion object."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
