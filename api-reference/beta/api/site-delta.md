@@ -175,6 +175,7 @@ Content-type: application/json
             "root": {}
         }
     ]
+}
 ```
 
 ### Example 3: Delta link request
