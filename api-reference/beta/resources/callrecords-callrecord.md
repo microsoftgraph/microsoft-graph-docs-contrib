@@ -3,7 +3,7 @@ title: "callRecord resource type"
 description: "Represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -19,7 +19,7 @@ Represents a single peer-to-peer call or a group call between multiple participa
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List callRecords](../api/callrecords-callrecord-list.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) collection | Get the list of [callRecord](../resources/callrecords-callrecord.md) objects and their properties. |
+| [List callRecords](../api/callrecords-cloudcommunications-list-callrecords.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) collection | Get the list of [callRecord](../resources/callrecords-callrecord.md) objects and their properties. |
 | [Get callRecord](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read the properties and relationships of a **callRecord** object. |
 | [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md) collection | List **pstnCallLogRow** objects in a call record. |
 | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md) collection| List **directRoutingLogRow** objects for a call record. |

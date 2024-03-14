@@ -3,7 +3,7 @@ title: "scheduleInformation resource type"
 description: "Represents the availability of a user, distribution list, or resource for a specified time period."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: ""
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Represents the availability of a user, distribution list, or resource (room or equipment) for a specified time period.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |availabilityView |String |Represents a merged view of availability of all the items in `scheduleItems`. The view consists of time slots. Availability during each time slot is indicated with: `0`= free, `1`= tentative, `2`= busy, `3`= out of office, `4`= working elsewhere.|
 |error |[freeBusyError](freebusyerror.md) |Error information from attempting to get the availability of the user, distribution list, or resource. |

@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementConfigurationStringFormat enum type"
-description: "Not yet documented"
+description: "Intune Deviceconfigv2 Devicemanagementconfigurationstringformat Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Members
 |Member|Value|Description|
@@ -30,7 +30,7 @@ Not yet documented
 |xml|7|Indicates a string that is expected to be a valid XML.|
 |date|8|Indicates a string that is expected to be a valid date.|
 |time|9|Indicates a string that is expected to be a valid time.|
-|binary|10|Not yet documented|
+|binary|10||
 |regEx|11|Indicates a string that is expected to be a valid Regex string.|
 |json|12|Indicates a string that is expected to be a valid JSON string.|
 |dateTime|13|Indicates a string that is expected to be a valid Datetime.|

@@ -3,7 +3,7 @@ title: "post: forward"
 description: "Forward a post to a recipient. You can specify both the parent conversation and thread in the request, "
 ms.localizationpriority: medium
 author: "mikemcleanlive"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

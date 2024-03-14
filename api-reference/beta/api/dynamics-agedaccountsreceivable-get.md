@@ -6,7 +6,7 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 ---
 
 # Get agedAccountsReceivable
@@ -35,7 +35,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |------|-----|
-|Authorization  |Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

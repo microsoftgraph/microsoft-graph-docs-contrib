@@ -4,7 +4,7 @@ description: "Get itemActivityStats for the activities that took place under thi
 title: Get item activity stats by interval
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "files"
+ms.subservice: "onedrive"
 ---
 # Get item activity stats by interval
 
@@ -49,7 +49,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

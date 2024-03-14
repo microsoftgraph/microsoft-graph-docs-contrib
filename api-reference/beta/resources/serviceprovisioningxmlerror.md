@@ -3,7 +3,7 @@ title: "serviceProvisioningXmlError resource type"
 description: "Represents information published by a federated service describing a non-transient, service-specific error regarding the properties or link from an object that is represented as an xml string"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "PaulEkirapa"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information published by a federated service describing a non-transient, service-specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) entities regarding the properties or link from an object. These errors are represented as an xml string.
+Represents information published by a federated service that describes a nontransient, service specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) entities regarding the properties or links of objects(for example user memberships). These errors are represented as an xml string.
 
 Inherits from [serviceProvisioningError](../resources/serviceprovisioningerror.md).
 

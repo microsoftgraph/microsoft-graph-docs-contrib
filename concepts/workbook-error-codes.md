@@ -70,6 +70,6 @@ For examples of optional error codes within the first-level of nested **innerErr
   "tocPath": ""
 } -->
 
-## See also
+## Related content
 
 - [Use the Excel REST API](/graph/api/resources/excel)

@@ -4,7 +4,7 @@ description: "Create a new sitePage in the site pages list in a site."
 ms.date: 05/07/2018
 title: Create a new page in a SharePoint site
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /sites/{site-id}/pages
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -64,7 +64,7 @@ The following example shows how to create a new page.
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /sites/{site-id}/pages
+POST https://graph.microsoft.com/beta/sites/{site-id}/pages
 Content-Type: application/json
 
 {
@@ -168,6 +168,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/cli/create-page-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-page-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -200,7 +204,7 @@ Content-type: application/json
     "@odata.type": "microsoft.graph.sitePage",
     "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
     "name": "test.aspx",
-    "webUrl": "SitePages/test.aspx",
+    "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/test.aspx",
     "title": "test",
     "pageLayout": "article",
     "showComments": true,

@@ -3,7 +3,7 @@ title: "Unpin a message from a chat"
 description: "Unpin a message from a chat."
 author: "sumanac"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ DELETE /chats/{chat-id}/pinnedMessages/{pinnedChatMessageId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

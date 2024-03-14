@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Get permission
 ms.localizationpriority: medium
 description: "Return the effective sharing permission for a particular permission resource."
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Get sharing permission for a file or folder
@@ -38,6 +38,12 @@ GET /me/drive/items/{item-id}/permissions/{perm-id}
 GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Optional query parameters
 

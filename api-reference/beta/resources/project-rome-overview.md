@@ -4,7 +4,7 @@ description: "Project Rome is a Microsoft initiative to build a platform that en
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ailae"
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 ---
 
 # Use the Microsoft Graph API to work with Project Rome
@@ -51,7 +51,4 @@ You can use the following Microsoft Graph APIs to communicate with other Windows
 - [List the user's devices](../api/user-list-devices.md)
 - [Send a command to a device](../api/send-device-command.md)
 - [Get command status](../api/get-device-command-status.md)
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 

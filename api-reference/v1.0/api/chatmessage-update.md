@@ -4,22 +4,22 @@ description: "Update the properties of a chatMessage object."
 author: "RamjotSingh"
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Update chatMessage
 
 Update a [chatMessage](../resources/chatMessage.md) object. 
-With the exception of the **policyViolation** property, all properties of a **chatMessage** can be updated in delegated permissions scenarios.
+Except for the **policyViolation** property, all properties of a **chatMessage** can be updated in delegated permissions scenarios.
 Only the **policyViolation** property of a **chatMessage** can be updated in application permissions scenarios.
 
-The update only works for chats where members are Microsoft Teams users. If one of the participants is using Skype, the operation will fail.
+The update only works for chats where members are Microsoft Teams users. If one of the participants is using Skype, the operation fails.
 
-This method does not support federation. Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
+This method doesn't support federation. Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 [!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -29,11 +29,11 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ChannelMessage.ReadWrite, Group.ReadWrite.All** |
+| Delegated (work or school account)     | ChannelMessage.ReadWrite, Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | ChannelMessage.UpdatePolicyViolation.All, Group.ReadWrite.All** |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note:** The Group.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ### Permissions for chat
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
@@ -70,13 +70,13 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
 PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
 ```
-If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used.
 
 ## Request headers
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body
@@ -101,7 +101,7 @@ If successful, this method returns a `200 OK` response.
 
 #### Request
 
-The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message by using application permissions.
+The following example shows a request to update the **policyViolation** property on a Microsoft Teams channel message by using application permissions.
 
 
 # [HTTP](#tab/http)
@@ -190,7 +190,7 @@ HTTP/1.1 200 OK
 
 #### Request
 
-The following is an example of the request to update the properties on a Microsoft Teams channel message by using delegated permissions.
+The following example shows a request to update the properties on a Microsoft Teams channel message by using delegated permissions.
 
 
 # [HTTP](#tab/http)
@@ -281,7 +281,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request to update the mentions on a Microsoft Teams channel message by using delegated permissions.
+The following example shows a request to update the mentions on a Microsoft Teams channel message by using delegated permissions.
 
 
 # [HTTP](#tab/http)
@@ -401,7 +401,7 @@ HTTP/1.1 204 No Content
 ### Example 4: Update the content with attachments of a message using delegated permissions
 #### Request
 
-The following is an example of the request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
+The following example shows a request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
 
 
 # [HTTP](#tab/http)
@@ -509,7 +509,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request to update the reactions property on a Microsoft Teams channel message by using delegated permissions.
+The following example shows a request to update the reactions property on a Microsoft Teams channel message by using delegated permissions.
 
 
 

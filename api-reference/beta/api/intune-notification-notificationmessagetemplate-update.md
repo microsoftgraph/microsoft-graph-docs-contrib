@@ -40,7 +40,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
 |displayName|String|Display name for the Notification Message Template.|
+|description|String|Display name for the Notification Message Template.|
 |defaultLocale|String|The default locale to fallback onto when the requested locale is not available.|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`, `includeCompanyPortalLink`, `includeDeviceDetails`, `unknownFutureValue`.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
@@ -69,11 +70,12 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 Content-type: application/json
-Content-length: 259
+Content-length: 298
 
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
   "displayName": "Display Name value",
+  "description": "Description value",
   "defaultLocale": "Default Locale value",
   "brandingOptions": "includeCompanyLogo",
   "roleScopeTagIds": [
@@ -87,13 +89,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 372
+Content-Length: 411
 
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
   "id": "e1db399b-399b-e1db-9b39-dbe19b39dbe1",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
+  "description": "Description value",
   "defaultLocale": "Default Locale value",
   "brandingOptions": "includeCompanyLogo",
   "roleScopeTagIds": [

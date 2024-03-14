@@ -22,14 +22,14 @@ Devices that are managed or pre-enrolled through Intune
 |:---|:---|:---|
 |[Get managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Read properties and relationships of the [managedDevice](../resources/intune-devices-manageddevice.md) object.|
 |[Update managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Update the properties of a [managedDevice](../resources/intune-devices-manageddevice.md) object.|
-|[executeAction action](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md)|Not yet documented|
+|[executeAction action](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md)||
 |[enableLostMode action](../api/intune-devices-manageddevice-enablelostmode.md)|None|Enable lost mode|
 |[playLostModeSound action](../api/intune-devices-manageddevice-playlostmodesound.md)|None|Play lost mode sound|
 |[setDeviceName action](../api/intune-devices-manageddevice-setdevicename.md)|None|Set device name of the device.|
 |[activateDeviceEsim action](../api/intune-devices-manageddevice-activatedeviceesim.md)|None|Activate eSIM on the device.|
-|[rotateFileVaultKey action](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|None|Not yet documented|
-|[getFileVaultKey function](../api/intune-devices-manageddevice-getfilevaultkey.md)|String|Not yet documented|
-|[createDeviceLogCollectionRequest action](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Not yet documented|
+|[rotateFileVaultKey action](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|None||
+|[getFileVaultKey function](../api/intune-devices-manageddevice-getfilevaultkey.md)|String||
+|[createDeviceLogCollectionRequest action](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)||
 |[retire action](../api/intune-devices-manageddevice-retire.md)|None|Retire a device|
 |[wipe action](../api/intune-devices-manageddevice-wipe.md)|None|Wipe a device|
 |[resetPasscode action](../api/intune-devices-manageddevice-resetpasscode.md)|None|Reset passcode|
@@ -44,25 +44,29 @@ Devices that are managed or pre-enrolled through Intune
 |[cleanWindowsDevice action](../api/intune-devices-manageddevice-cleanwindowsdevice.md)|None|Clean Windows device|
 |[logoutSharedAppleDeviceActiveUser action](../api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md)|None|Logout shared Apple device active user|
 |[deleteUserFromSharedAppleDevice action](../api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md)|None|Delete user from shared Apple device|
-|[syncDevice action](../api/intune-devices-manageddevice-syncdevice.md)|None|Not yet documented|
-|[windowsDefenderScan action](../api/intune-devices-manageddevice-windowsdefenderscan.md)|None|Not yet documented|
-|[windowsDefenderUpdateSignatures action](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|None|Not yet documented|
-|[updateWindowsDeviceAccount action](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|None|Not yet documented|
+|[syncDevice action](../api/intune-devices-manageddevice-syncdevice.md)|None||
+|[windowsDefenderScan action](../api/intune-devices-manageddevice-windowsdefenderscan.md)|None||
+|[windowsDefenderUpdateSignatures action](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|None||
+|[updateWindowsDeviceAccount action](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|None||
 |[revokeAppleVppLicenses action](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|None|Revoke all Apple Vpp licenses for a device|
 |[rotateBitLockerKeys action](../api/intune-devices-manageddevice-rotatebitlockerkeys.md)|None|Rotate BitLockerKeys|
-|[sendCustomNotificationToCompanyPortal action](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|None|Not yet documented|
+|[sendCustomNotificationToCompanyPortal action](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|None||
 |[triggerConfigurationManagerAction action](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|None|Trigger action on ConfigurationManager client|
 |[enrollNowAction action](../api/intune-devices-manageddevice-enrollnowaction.md)|None|Trigger comanagement enrollment action on ConfigurationManager client|
-|[deprovision action](../api/intune-devices-manageddevice-deprovision.md)|None|Not yet documented|
-|[disable action](../api/intune-devices-manageddevice-disable.md)|None|Not yet documented|
-|[reenable action](../api/intune-devices-manageddevice-reenable.md)|None|Not yet documented|
-|[moveDevicesToOU action](../api/intune-devices-manageddevice-movedevicestoou.md)|None|Not yet documented|
+|[deprovision action](../api/intune-devices-manageddevice-deprovision.md)|None||
+|[disable action](../api/intune-devices-manageddevice-disable.md)|None||
+|[reenable action](../api/intune-devices-manageddevice-reenable.md)|None||
+|[moveDevicesToOU action](../api/intune-devices-manageddevice-movedevicestoou.md)|None||
 |[removeDeviceFirmwareConfigurationInterfaceManagement action](../api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md)|None|Remove device from Device Firmware Configuration Interface management|
 |[initiateMobileDeviceManagementKeyRecovery action](../api/intune-devices-manageddevice-initiatemobiledevicemanagementkeyrecovery.md)|None|Perform MDM key recovery and TPM attestation|
+|[initiateDeviceAttestation action](../api/intune-devices-manageddevice-initiatedeviceattestation.md)|None|Perform Device Attestation|
 |[initiateOnDemandProactiveRemediation action](../api/intune-devices-manageddevice-initiateondemandproactiveremediation.md)|None|Perform On Demand Proactive Remediation|
 |[rotateLocalAdminPassword action](../api/intune-devices-manageddevice-rotatelocaladminpassword.md)|None|Initiates a manual rotation for the local admin password on the device|
-|[appDiagnostics function](../api/intune-devices-manageddevice-appdiagnostics.md)|[powerliftIncidentMetadata](../resources/intune-devices-powerliftincidentmetadata.md) collection|Not yet documented|
-|[downloadAppDiagnostics action](../api/intune-devices-manageddevice-downloadappdiagnostics.md)|Stream|Not yet documented|
+|[pauseConfigurationRefresh action](../api/intune-devices-manageddevice-pauseconfigurationrefresh.md)|None|Initiates a command to pause config refresh for the device.|
+|[syncPayloads action](../api/intune-devices-manageddevice-syncpayloads.md)|None||
+|[appDiagnostics function](../api/intune-devices-manageddevice-appdiagnostics.md)|[powerliftIncidentMetadata](../resources/intune-devices-powerliftincidentmetadata.md) collection||
+|[downloadAppDiagnostics action](../api/intune-devices-manageddevice-downloadappdiagnostics.md)|Stream||
+|[createQuery action](../api/intune-devices-manageddevice-createquery.md)|[deviceQueryResult](../resources/intune-devices-devicequeryresult.md)|Allows user to send Intune Pivot device query to a managed device|
 
 ## Properties
 |Property|Type|Description|
@@ -79,17 +83,17 @@ Devices that are managed or pre-enrolled through Intune
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. Supports $filter operator 'lt' and 'gt'. This property is read-only.|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassis type of the device. This property is read-only. Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. This property is read-only.|
-|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|Platform of the device. Examples: Desktop, WindowsRT, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. Examples: Desktop, WindowsRT, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. Examples: Compliant, Conflict, Error, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|Whether the device is jail broken or rooted. Default is an empty string. Supports $filter operator 'eq' and 'or'. This property is read-only.|
-|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Examples: Intune, EAS, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`.|
+|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Management channel of the device. Examples: Intune, EAS, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`, `google`, `unknownFutureValue`.|
 |osVersion|String|Operating system version of the device. This property is read-only.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. This property is read-only.|
 |easDeviceId|String|Exchange ActiveSync Id of the device. This property is read-only.|
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. This property is read-only.|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
 |azureADRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`, `azureAdJoinUsingAzureVmExtension`, `androidEnterpriseDedicatedDevice`, `androidEnterpriseFullyManaged`, `androidEnterpriseCorporateWorkProfile`.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`, `azureAdJoinUsingAzureVmExtension`, `androidEnterpriseDedicatedDevice`, `androidEnterpriseFullyManaged`, `androidEnterpriseCorporateWorkProfile`, `appleACMEBasicBYOD`, `appleACMEDEPUserless`, `appleACMEDEPUDACompanyPortal`, `appleACMEDEPUDASetupAsstLegacy`, `appleACMEDEPUDAModernAuth`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indicates if Lost mode is enabled or disabled. This property is read-only. Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|The code that allows the Activation Lock on managed device to be bypassed. Default, is Null (Non-Default property) for this property when returned as part of managedDevice entity in LIST call. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. $Search is not supported. Read-only. This property is read-only.|
 |emailAddress|String|Email(s) for the user associated with the device. This property is read-only.|
@@ -149,6 +153,7 @@ Devices that are managed or pre-enrolled through Intune
 |enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.|
 |bootstrapTokenEscrowed|Boolean|Reports if the managed device has an escrowed Bootstrap Token. This is only for macOS devices. To get, include BootstrapTokenEscrowed in the select clause and query with a device id. If FALSE, no bootstrap token is escrowed. If TRUE, the device has escrowed a bootstrap token with Intune. This property is read-only.|
 |deviceFirmwareConfigurationInterfaceManaged|Boolean|Indicates whether the device is DFCI managed. When TRUE the device is DFCI managed. When FALSE, the device is not DFCI managed. The default value is FALSE.|
+|deviceIdentityAttestationDetail|[deviceIdentityAttestationDetail](../resources/intune-devices-deviceidentityattestationdetail.md)|Indicates the attestation status of the managed device. And in which way. Default: Unknown.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -159,6 +164,7 @@ Devices that are managed or pre-enrolled through Intune
 |users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device.|
 |logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List of log collection requests|
 |deviceHealthScriptStates|[deviceHealthScriptPolicyState](../resources/intune-devices-devicehealthscriptpolicystate.md) collection|Results of device health scripts that ran for this device. Default is empty list. This property is read-only.|
+|queryResults|[deviceQueryResult](../resources/intune-devices-devicequeryresult.md) collection|Results of device query that ran for this device. Default is empty list. This property is read-only.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -322,7 +328,13 @@ Here is a JSON representation of the resource.
     "bootRevisionListInfo": "String",
     "operatingSystemRevListInfo": "String",
     "healthStatusMismatchInfo": "String",
-    "healthAttestationSupportedStatus": "String"
+    "healthAttestationSupportedStatus": "String",
+    "memoryIntegrityProtection": "String",
+    "memoryAccessProtection": "String",
+    "virtualizationBasedSecurity": "String",
+    "firmwareProtection": "String",
+    "systemManagementMode": "String",
+    "securedCorePC": "String"
   },
   "subscriberCarrier": "String",
   "meid": "String",
@@ -382,6 +394,10 @@ Here is a JSON representation of the resource.
   ],
   "enrollmentProfileName": "String",
   "bootstrapTokenEscrowed": true,
-  "deviceFirmwareConfigurationInterfaceManaged": true
+  "deviceFirmwareConfigurationInterfaceManaged": true,
+  "deviceIdentityAttestationDetail": {
+    "@odata.type": "microsoft.graph.deviceIdentityAttestationDetail",
+    "deviceIdentityAttestationStatus": "String"
+  }
 }
 ```

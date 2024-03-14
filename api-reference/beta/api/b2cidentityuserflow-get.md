@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships a b2cIdentityUserFlow ob
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Get b2cIdentityUserFlow
@@ -47,7 +47,7 @@ For more information, see [OData query parameters](/graph/query-parameters).
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

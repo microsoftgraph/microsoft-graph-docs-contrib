@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a unifiedRoleAssignment o
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -43,7 +43,6 @@ One of the following permissions is required to call this API. To learn more, in
 Get a role assignment for the directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /roleManagement/directory/roleAssignments/{id}
 ```
@@ -51,20 +50,19 @@ GET /roleManagement/directory/roleAssignments/{id}
 Get a role assignment for the entitlement management provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports th `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

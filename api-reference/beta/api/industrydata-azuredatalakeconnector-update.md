@@ -3,7 +3,7 @@ title: "Update azureDataLakeConnector"
 description: "Update the properties of an azureDataLakeConnector object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ PATCH /external/industryData/dataConnectors/{industryDataConnectorId}
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

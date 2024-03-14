@@ -23,39 +23,11 @@ A number of entities in Microsoft Graph support [resumable file uploads](/graph/
 
 ## [PHP](#tab/PHP)
 
-```php
-<?php
-
-// create a file stream
-$file = Utils::streamFor(fopen('fileName', 'r'));
-
-// create an upload session
-$attachmentItem = new AttachmentItem();
-$attachmentItem->setAttachmentType(new AttachmentType('file'));
-$attachmentItem->setName('fileName');
-$attachmentItem->setSize($file->getSize());
-
-$uploadSessionRequestBody = new CreateUploadSessionPostRequestBody();
-$uploadSessionRequestBody->setAttachmentItem($attachmentItem);
-
-/** @var UploadSession $uploadSession */
-$uploadSession = $graphServiceClient->users()->byUserId(USER_ID)->messages()->byMessageId('[id]')->attachments()->createUploadSession()->post($uploadSessionRequestBody)->wait();
-
-// upload
-$largeFileUpload = new LargeFileUploadTask($uploadSession, $graphServiceClient->getRequestAdapter(), $file);
-try{
-    $uploadSession = $largeFileUpload->upload()->wait();
-} catch (\Psr\Http\Client\NetworkExceptionInterface $ex) {
-    // resume upload in case of network errors
-    $uploadSession = $largeFileUpload->resume()->wait();
-}
-
-```
+:::code language="php" source="./snippets/php/snippets/LargeFileUpload.php" id="LargeFileUploadSnippet":::
 
 ## [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/largeFileUpload.ts" id="LargeFileUploadSnippet":::
-
 
 ---
 
@@ -69,8 +41,11 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 
 ### [Java](#tab/java)
 
-> [!NOTE]
-> The Java SDK does not currently support resuming in-progress downloads.
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="ResumeSnippet":::
+
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/LargeFileUpload.php" id="ResumeSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
@@ -90,37 +65,7 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 
 ### [PHP](#tab/PHP)
 
-```php
-<?php
-
-// create a file stream
-$file = Utils::streamFor(fopen('fileName', 'r'));
-
-// create an upload session
-$attachmentItem = new AttachmentItem();
-$attachmentItem->setAttachmentType(new AttachmentType('file'));
-$attachmentItem->setName('fileName');
-$attachmentItem->setSize($file->getSize());
-
-$uploadSessionRequestBody = new CreateUploadSessionPostRequestBody();
-$uploadSessionRequestBody->setAttachmentItem($attachmentItem);
-
-/** @var UploadSession $uploadSession */
-$uploadSession = $graphServiceClient->users()->byUserId(USER_ID)->messages()->byMessageId('[id]')->attachments()->createUploadSession()->post($uploadSessionRequestBody)->wait();
-
-// upload
-$largeFileUpload = new LargeFileUploadTask($uploadSession, $graphServiceClient->getRequestAdapter(), $file);
-try{
-    $uploadSession = $largeFileUpload->upload()->wait();
-} catch (\Psr\Http\Client\NetworkExceptionInterface $ex) {
-    // resume upload in case of network errors
-    $uploadSession = $largeFileUpload->resume()->wait();
-}
-
-// You can also cancel the session
-//$largeFileUpload->cancel()->wait();
-
-```
+:::code language="php" source="./snippets/php/snippets/LargeFileUpload.php" id="UploadAttachmentSnippet":::
 
 ### [TypeScript](#tab/typescript)
 

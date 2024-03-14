@@ -3,7 +3,7 @@ title: "List attributeSets"
 description: "Get a list of the attributeSet objects and their properties."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ This method supports the `$select`, `$top`, and `$orderby` OData query parameter
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

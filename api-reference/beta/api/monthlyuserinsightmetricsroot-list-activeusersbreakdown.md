@@ -1,34 +1,33 @@
 ---
-title: "List monthly activeUsersBreakdown"
+title: "List monthly activeUsersBreakdown (deprecated)"
 description: "Get a list of monthly activeUsersBreakdown objects on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
-# List monthly activeUsersBreakdown
+# List monthly activeUsersBreakdown (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on March 9, 2024. Use the [List monthly activeUsers](../api/monthlyuserinsightmetricsroot-list-activeusers.md) API instead.
 
 Get a list of monthly [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Insights-UserMetric.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Insights-UserMetric.Read.All|
+<!-- { "blockType": "permissions", "name": "monthlyuserinsightmetricsroot_list_activeusersbreakdown" } -->
+[!INCLUDE [permissions-table](../includes/permissions/monthlyuserinsightmetricsroot-list-activeusersbreakdown-permissions.md)]
 
 [!INCLUDE [rbac-ciam-user-insights-apis](../includes/rbac-for-apis/rbac-ciam-user-insights-apis.md)]
 
 ## HTTP request
-
 <!-- {
   "blockType": "ignored"
 }
@@ -43,7 +42,7 @@ This method supports the `$filter` OData query parameter to help customize the r
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

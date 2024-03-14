@@ -15,14 +15,14 @@ mgc users send-mail post --user-id {user-id} --body '{\
     "toRecipients": [\
       {\
         "emailAddress": {\
-          "address": "frannis@contoso.onmicrosoft.com"\
+          "address": "frannis@contoso.com"\
         }\
       }\
     ],\
     "ccRecipients": [\
       {\
         "emailAddress": {\
-          "address": "danas@contoso.onmicrosoft.com"\
+          "address": "danas@contoso.com"\
         }\
       }\
     ]\

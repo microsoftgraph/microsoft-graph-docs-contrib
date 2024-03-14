@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CallRecord callRecord = graphClient.communications().callRecords("e523d2ed-2966-4b6b-925b-754a88034cc5")
-	.buildRequest()
-	.expand("sessions($expand=segments)")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.callrecords.CallRecord result = graphClient.communications().callRecords().byCallRecordId("{callRecord-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"sessions($expand=segments)"};
+});
+
 
 ```

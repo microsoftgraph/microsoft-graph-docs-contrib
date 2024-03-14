@@ -4,31 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String callbackUri = "callbackUri-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
+com.microsoft.graph.communications.calls.item.answer.AnswerPostRequestBody answerPostRequestBody = new com.microsoft.graph.communications.calls.item.answer.AnswerPostRequestBody();
+answerPostRequestBody.setCallbackUri("callbackUri-value");
 AppHostedMediaConfig mediaConfig = new AppHostedMediaConfig();
-mediaConfig.blob = "<Media Session Configuration Blob>";
-
-LinkedList<Modality> acceptedModalitiesList = new LinkedList<Modality>();
-acceptedModalitiesList.add(Modality.AUDIO);
-
+mediaConfig.setOdataType("#microsoft.graph.appHostedMediaConfig");
+mediaConfig.setBlob("<Media Session Configuration Blob>");
+answerPostRequestBody.setMediaConfig(mediaConfig);
+LinkedList<Modality> acceptedModalities = new LinkedList<Modality>();
+acceptedModalities.add(Modality.Audio);
+answerPostRequestBody.setAcceptedModalities(acceptedModalities);
 IncomingCallOptions callOptions = new IncomingCallOptions();
-callOptions.isContentSharingNotificationEnabled = true;
+callOptions.setOdataType("#microsoft.graph.incomingCallOptions");
+callOptions.setIsContentSharingNotificationEnabled(true);
+answerPostRequestBody.setCallOptions(callOptions);
+answerPostRequestBody.setParticipantCapacity(200);
+graphClient.communications().calls().byCallId("{call-id}").answer().post(answerPostRequestBody);
 
-int participantCapacity = 200;
-
-graphClient.communications().calls("{id}")
-	.answer(CallAnswerParameterSet
-		.newBuilder()
-		.withCallbackUri(callbackUri)
-		.withMediaConfig(mediaConfig)
-		.withAcceptedModalities(acceptedModalitiesList)
-		.withParticipantCapacity(participantCapacity)
-		.withCallOptions(callOptions)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -3,7 +3,7 @@ title: "provisioningStep resource type"
 description: "Describes the steps taken to perform an action. "
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 

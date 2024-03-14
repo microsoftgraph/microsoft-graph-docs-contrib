@@ -4,18 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RetentionLabel retentionLabel = new RetentionLabel();
-RetentionDuration retentionDuration = new RetentionDuration();
-retentionLabel.retentionDuration = retentionDuration;
-retentionLabel.descriptionForAdmins = "String";
-retentionLabel.descriptionForUsers = "String";
-retentionLabel.labelToBeApplied = "String";
-retentionLabel.defaultRecordBehavior = DefaultRecordBehavior.START_LOCKED;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().labels().retentionLabels("{retentionLabelId}")
-	.buildRequest()
-	.patch(retentionLabel);
+com.microsoft.graph.beta.models.security.RetentionLabel retentionLabel = new com.microsoft.graph.beta.models.security.RetentionLabel();
+retentionLabel.setOdataType("#microsoft.graph.security.retentionLabel");
+com.microsoft.graph.beta.models.security.RetentionDuration retentionDuration = new com.microsoft.graph.beta.models.security.RetentionDuration();
+retentionDuration.setOdataType("microsoft.graph.security.retentionDuration");
+retentionLabel.setRetentionDuration(retentionDuration);
+retentionLabel.setDescriptionForAdmins("String");
+retentionLabel.setDescriptionForUsers("String");
+retentionLabel.setLabelToBeApplied("String");
+retentionLabel.setDefaultRecordBehavior(com.microsoft.graph.beta.models.security.DefaultRecordBehavior.StartLocked);
+com.microsoft.graph.models.security.RetentionLabel result = graphClient.security().labels().retentionLabels().byRetentionLabelId("{retentionLabel-id}").patch(retentionLabel);
+
 
 ```

@@ -3,7 +3,7 @@ title: "team: clone"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -25,7 +25,7 @@ You can specify which parts of the team to clone:
 > **Note:** This method isn't supported for organization-wide teams.
 
 > [!NOTE]
-> A known issue related to owners of cloned teams is associated with this method. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/&search=18955).
+> A known issue related to owners of cloned teams is associated with this method. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues).
 
 When tabs are cloned, they aren't configured. The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen. 
 If the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
@@ -55,7 +55,7 @@ POST /teams/{id}/clone
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -87,7 +87,7 @@ Here's an example of the request.
   "name": "clone_team"
 }-->
 ```http
-POST /teams/{id}/clone
+POST https://graph.microsoft.com/beta/teams/{id}/clone
 Content-Type: application/json
 
 {  
@@ -159,6 +159,6 @@ Content-Length: 0
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

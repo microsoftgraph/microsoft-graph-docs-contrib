@@ -3,7 +3,7 @@ title: "Get deviceRegistrationPolicy"
 description: "Read the properties and relationships of a deviceRegistrationPolicy object."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 # Get deviceRegistrationPolicy
@@ -43,7 +43,7 @@ GET /policies/deviceRegistrationPolicy
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 
 ### Response
 
-The following is an example of a response that shows the default settings for the device registration policy.
+The following example shows the response with default settings for the device registration policy.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -124,16 +124,18 @@ Content-Type: application/json
     "userDeviceQuota": 50,
     "multiFactorAuthConfiguration": "0",
     "azureADRegistration": {
-        "appliesTo": "1",
-        "isAdminConfigurable": false,
-        "allowedUsers": [],
-        "allowedGroups": []
+        "isAdminConfigurable": true,
+        "allowedToRegister": {
+            "@odata.type": "#microsoft.graph.enumeratedDeviceRegistrationMembership",
+            "users": [],
+            "groups": ["3c8ef067-8b96-44de-b2ae-557dfa0f97a0"]
+      }
     },
     "azureADJoin": {
-        "appliesTo": "1",
         "isAdminConfigurable": true,
-        "allowedUsers": [],
-        "allowedGroups": []
+        "allowedToJoin": {
+            "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
+      }
     },
     "localAdminPassword": {
       "isEnabled": false

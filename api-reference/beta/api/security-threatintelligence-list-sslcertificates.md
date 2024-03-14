@@ -3,7 +3,7 @@ title: "List sslCertificates"
 description: "Get a list of sslCertificate objects and their properties."
 author: "nblankenau"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -79,7 +79,7 @@ This method also supports the `$count`, `$select`, `$orderBy`, `$top`, and `$ski
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

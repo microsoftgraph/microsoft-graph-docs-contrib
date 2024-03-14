@@ -3,7 +3,7 @@ title: "List trending"
 description: "Calculated insight that returns the list of items trending around the user."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ See the available container types and types you can filter by in [resourceVisual
 ## Request headers
 | Header       |  Value|
 |:-------------|:------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json|
 
 ## Request body

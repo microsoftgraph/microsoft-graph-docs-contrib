@@ -3,7 +3,7 @@ title: "List virtualEventRegistrations"
 description: "Get a list of all registration records of a webinar."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ This method does not support OData query parameters to help customize the respon
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -137,7 +137,7 @@ Content-Type: application/json
       "registrationQuestionAnswers": [
         {
           "questionId": "95320781-96b3-4b8f-8cf8-e6561d23447a",
-          "displayName": null,
+          "displayName": "Which city do you currently work in?",
           "value": null,
           "booleanValue": null,
           "multiChoiceValues": [
@@ -146,14 +146,14 @@ Content-Type: application/json
         },
         {
           "questionId": "4577afdb-8bee-4219-b482-04b52c6b855c",
-          "displayName": null,
+          "displayName": "Do you in the same city where you work?",
           "value": null,
           "booleanValue": true,
           "multiChoiceValues": []
         },
         {
           "questionId": "80fefcf1-caf7-4cd3-b8d7-159e17c47f20",
-          "displayName": null,
+          "displayName": "Which cities have you worked in?",
           "value": null,
           "booleanValue": null,
           "multiChoiceValues": [

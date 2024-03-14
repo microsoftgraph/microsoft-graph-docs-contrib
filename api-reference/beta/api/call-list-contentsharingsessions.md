@@ -3,7 +3,7 @@ title: "List contentSharingSessions"
 description: "Retrieve a list of contentSharingSession objects in a call."
 author: "satyakonmsft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ GET /communications/calls/{id}/contentSharingSessions
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

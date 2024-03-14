@@ -3,7 +3,7 @@ title: "timeConstraint resource type"
 description: "Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: ""
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -33,7 +33,7 @@ Here is a JSON representation of the resource
 
 ```
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |activityDomain|activityDomain|The nature of the activity, optional. The possible values are: `work`, `personal`, `unrestricted`, or `unknown`.|
 |timeslots|[timeSlot](timeslot.md) collection|An array of time periods.|

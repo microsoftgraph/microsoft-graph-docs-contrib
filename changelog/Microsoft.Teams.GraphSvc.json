@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "c691ef0b-866c-4b62-8a12-65dc2109a655",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Change",
+          "Description": "Added description of the supported filtering scenarios for getAllMessages api.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "c691ef0b-866c-4b62-8a12-65dc2109a655",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-08T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "797420ec-837e-4dfa-ad2d-084a4b194a04",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Change",
+          "Description": "Added description of the supported filtering scenarios for getAllMessages api.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "797420ec-837e-4dfa-ad2d-084a4b194a04",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-08T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "97796aeb-ce8a-4650-ad43-6872cee08c4d",
           "ApiChange": "Method",
           "ChangedApiName": "removeAllAccessForUser",
@@ -15,6 +51,56 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-08T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "08431a23-87e6-4517-90d8-10f9767f42f5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deletedChat",
+          "ChangeType": "Addition",
+          "Description": "Added the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-v1.0) resource and its methods",
+          "Target": "deletedChat"
+        },
+        {
+          "Id": "08431a23-87e6-4517-90d8-10f9767f42f5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "deletedChats",
+          "ChangeType": "Addition",
+          "Description": "Added the **deletedChats** navigation property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Target": "teamwork"
+        },
+        {
+          "Id": "08431a23-87e6-4517-90d8-10f9767f42f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "undoDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [undoDelete](https://learn.microsoft.com/en-us/graph/api/deletedchat-undodelete?view=graph-rest-v1.0) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-v1.0) resource.",
+          "Target": "deletedChat"
+        },
+        {
+          "Id": "08431a23-87e6-4517-90d8-10f9767f42f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/chat-delete?view=graph-rest-v1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-v1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "08431a23-87e6-4517-90d8-10f9767f42f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "get",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/deletedchat-get?view=graph-rest-v1.0) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-v1.0) resource.",
+          "Target": "deletedChat"
+        }
+      ],
+      "Id": "08431a23-87e6-4517-90d8-10f9767f42f5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-11T17:27:47.8785154Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
     },
@@ -65,7 +151,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-09-01T03:35:47.8785154Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -133,7 +219,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-08-23T01:54:55.1386602Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": "Apps"
     },
     {
@@ -1071,7 +1157,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-10-11T09:44:21.690374Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1105,7 +1191,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-11-30T22:13:37.3506829Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1123,7 +1209,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-02-06T21:39:35.4042034Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1579,6 +1665,164 @@
       "CreatedDateTime": "2023-11-28T18:06:20.975484Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b07",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",          
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/userteamwork-get?view=graph-rest-beta) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b03",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/teamwork-get?view=graph-rest-beta) operation to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Target": "teamwork"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b78",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [getTeamsLicensingDetails](https://learn.microsoft.com/en-us/graph/api/licenseDetails-getteamslicensingdetails?view=graph-rest-beta) operation to the [licensedetails](https://learn.microsoft.com/en-us/graph/api/resources/licensedetails?view=graph-rest-beta) resource.",
+          "Target": "licensedetails"
+        },
+        {
+          "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamslicensingdetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamslicensingdetails](https://learn.microsoft.com/en-us/graph/api/resources/teamslicensingdetails?view=graph-rest-beta) resource.",
+          "Target": "teamslicensingdetails"
+        },
+           {
+        "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
+        "ApiChange": "Property",
+        "ChangedApiName": "isTeamsEnabled",
+        "ChangeType": "Addition",
+        "Description": "Added the **isTeamsEnabled** property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+        "Target": "teamwork"
+      },
+        {
+        "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
+        "ApiChange": "Property",
+        "ChangedApiName": "region",
+        "ChangeType": "Addition",
+            "Description": "Added the **region** property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+    "Target": "teamwork"
+      },  
+        {
+        "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
+        "ApiChange": "Property",
+        "ChangedApiName": "locale",
+        "ChangeType": "Addition",
+            "Description": "Added the **locale** property to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+    "Target": "userTeamwork"
+           }, 
+            {
+        "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
+        "ApiChange": "Property",
+        "ChangedApiName": "locale",
+        "ChangeType": "Addition",
+            "Description": "Added the **region** property to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+    "Target": "userTeamwork"
+      }
+      ],
+      "Id": "9f5e8734-31a1-4609-8c8c-590fe58e2852",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-15T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Settings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamsAppDashboardCardSize",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppDashboardCardSize** enumeration type.",
+          "Target": "teamsAppDashboardCardSize"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamsAppDashboardCardSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppDashboardCardSourceType** enumeration type.",
+          "Target": "teamsAppDashboardCardSourceType"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardBotConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardBotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardBotConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardBotConfiguration"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardContentSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardContentSource](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardContentSource?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardContentSource"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardIcon",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardIcon](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardIcon?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardIcon"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashBoardCardDefinition?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardDefinition"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dashboardCards",
+          "ChangeType": "Addition",
+          "Description": "Added the **dashboardCards** relationship to the [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamsAppDefinition"
+        }
+      ],
+      "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-10T04:07:57.4956807Z",
+      "WorkloadArea": "Teamwork and Communications",
+      "SubArea": "Apps"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "teamworkTagType",
+          "ChangeType": "Addition",
+          "Description": "Added the `scheduled` value to the **teamworkTagType** enumeration.",
+          "Target": "teamworkTagType"
+        }
+      ],
+      "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-07T16:40:15.0058997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

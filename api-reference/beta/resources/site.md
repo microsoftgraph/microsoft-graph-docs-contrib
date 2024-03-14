@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: The site resource provides metadata and relationships for a SharePoint site.
 title: site resource type
 ms.localizationpriority: high
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

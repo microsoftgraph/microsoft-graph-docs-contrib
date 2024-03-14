@@ -3,7 +3,7 @@ title: "accessReviewStage: filterByCurrentUser"
 description: "Return all accessReviewStage objects for a given reviewer."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ This function also supports the `$select`, `$filter`, `$orderby`, `$skip` and `$
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

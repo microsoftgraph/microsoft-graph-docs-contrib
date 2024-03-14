@@ -3,7 +3,7 @@ title: "List riskDetection"
 description: "Retrieve the properties of a collection of **riskDetection** object."
 ms.localizationpriority: medium
 author: "tracyshi"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # List riskDetection
@@ -37,13 +37,13 @@ GET /identityProtection/riskDetections
 
 ## Optional query parameters
 
-This method supports `$filter` and `$select` to customize the query response. See the example later in this topic. 
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to customize the query response. The default page size is 20 objects while the maximum with `$top` is 500.
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body

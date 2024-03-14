@@ -3,7 +3,7 @@ title: "group: retryServiceProvisioning"
 description: "Retry the group service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: "apiPageType"
 ---
 
@@ -34,12 +34,12 @@ POST /groups/{id}/retryServiceProvisioning
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
-This operation has no request content.
+Do not supply a request body for this method.
 
 ## Response
 

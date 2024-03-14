@@ -3,7 +3,7 @@ title: "List domains"
 description: "Retrieve a list of domain objects."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,7 @@ Retrieve a list of domain objects.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "domain_list" } -->
@@ -57,7 +58,7 @@ The work or school account needs to belong to one of the following roles:
 * Global Reader
 * Volume Licensing Business Center User
 * Volume Licensing Service Center User
-* Modern Commerce User
+* Modern Commerce Administrator
 * Microsoft Store for Business User
 * Directory Reviewer
 * Domain Name Administrator
@@ -70,24 +71,31 @@ The work or school account needs to belong to one of the following roles:
 ```http
 GET /domains
 ```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+> [!NOTE]
+> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search` parameter.
 
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Accept         | application/json; |
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Accept        | application/json;         |
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [domain](../resources/domain.md) objects in the response body.
-## Example
-##### Request
 
+## Examples
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -132,8 +140,9 @@ GET https://graph.microsoft.com/v1.0/domains
 
 ---
 
-##### Response
-Note: The response object shown here might be shortened for readability.
+### Response
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

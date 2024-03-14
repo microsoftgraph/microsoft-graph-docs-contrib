@@ -3,7 +3,7 @@ title: "Create remoteDesktopSecurityConfiguration"
 description: "Create a new remoteDesktopSecurityConfiguration object on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -72,10 +72,6 @@ Content-Type: application/json
   "isRemoteDesktopProtocolEnabled": true
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-remotedesktopsecurityconfiguration-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-remotedesktopsecurityconfiguration-from--javascript-snippets.md)]

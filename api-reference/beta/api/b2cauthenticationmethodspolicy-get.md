@@ -3,7 +3,7 @@ title: "Get b2cAuthenticationMethodsPolicy"
 description: "Read the properties of a b2cAuthenticationMethodsPolicy object."
 ms.localizationpriority: high
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ GET /policies/b2cAuthenticationMethodsPolicy
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

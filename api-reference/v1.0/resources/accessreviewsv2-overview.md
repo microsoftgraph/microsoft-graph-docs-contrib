@@ -3,7 +3,7 @@ title: "Microsoft Entra access reviews"
 description: "Use Microsoft Entra access reviews to configure one-time or recurring access reviews for attestation of a principal's access rights to Microsoft Entra resources."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ---
 
@@ -69,7 +69,7 @@ The following [Microsoft Entra roles](/entra/identity/role-based-access-control/
 
 In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
 
-## See also
+## Related content
 
 
 - [Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)

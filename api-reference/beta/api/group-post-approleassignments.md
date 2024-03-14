@@ -3,7 +3,7 @@ title: "Grant an appRoleAssignment to a group"
 description: "Grant an app role assignment to a group."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 author: "psignoret"
 ---
 
@@ -44,7 +44,7 @@ POST /groups/{groupId}/appRoleAssignments
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body

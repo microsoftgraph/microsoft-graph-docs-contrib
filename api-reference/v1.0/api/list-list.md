@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Get lists in a site
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Get the collection of lists for a site."
 doc_type: apiPageType
 ---
@@ -34,7 +34,7 @@ GET /sites/{site-id}/lists
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

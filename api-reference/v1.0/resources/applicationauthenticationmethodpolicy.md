@@ -3,7 +3,7 @@ title: "Microsoft Entra application authentication methods API overview"
 description: "Application authentication methods allow apps to acquire tokens to access data in Azure AD."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ---
 
@@ -48,7 +48,7 @@ The application authentication methods policy API offers the following restricti
 | customPasswordAddition | Restrict a custom password secret on application or service principal. | Restrict all new custom password secrets on applications created after 01/01/2015.                         |
 | symmetricKeyAddition   | Restrict symmetric keys on applications.                               | Block new symmetric keys on applications created on or after 01/01/2019.                                   |
 | symmetricKeyLifetime   | Enforce a max lifetime range for a symmetric key.                      | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.         |
-| asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key secrets to a maximum of 30 days for applications created after 01/01/2019. |
+| asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key credentials to a maximum of 30 days for applications created after 01/01/2019. |
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).

@@ -4,51 +4,53 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Event event = new Event();
-event.subject = "Let's go for lunch";
+event.setSubject("Let's go for lunch");
 ItemBody body = new ItemBody();
-body.contentType = BodyType.HTML;
-body.content = "Does noon time work for you?";
-event.body = body;
+body.setContentType(BodyType.Html);
+body.setContent("Does noon time work for you?");
+event.setBody(body);
 DateTimeTimeZone start = new DateTimeTimeZone();
-start.dateTime = "2017-09-04T12:00:00";
-start.timeZone = "Pacific Standard Time";
-event.start = start;
+start.setDateTime("2017-09-04T12:00:00");
+start.setTimeZone("Pacific Standard Time");
+event.setStart(start);
 DateTimeTimeZone end = new DateTimeTimeZone();
-end.dateTime = "2017-09-04T14:00:00";
-end.timeZone = "Pacific Standard Time";
-event.end = end;
+end.setDateTime("2017-09-04T14:00:00");
+end.setTimeZone("Pacific Standard Time");
+event.setEnd(end);
 PatternedRecurrence recurrence = new PatternedRecurrence();
 RecurrencePattern pattern = new RecurrencePattern();
-pattern.type = RecurrencePatternType.WEEKLY;
-pattern.interval = 1;
-LinkedList<DayOfWeek> daysOfWeekList = new LinkedList<DayOfWeek>();
-daysOfWeekList.add(DayOfWeek.MONDAY);
-pattern.daysOfWeek = daysOfWeekList;
-recurrence.pattern = pattern;
+pattern.setType(RecurrencePatternType.Weekly);
+pattern.setInterval(1);
+LinkedList<DayOfWeek> daysOfWeek = new LinkedList<DayOfWeek>();
+daysOfWeek.add(DayOfWeek.Monday);
+pattern.setDaysOfWeek(daysOfWeek);
+recurrence.setPattern(pattern);
 RecurrenceRange range = new RecurrenceRange();
-range.type = RecurrenceRangeType.END_DATE;
-range.startDate = new DateOnly(1900,1,1);
-range.endDate = new DateOnly(1900,1,1);
-recurrence.range = range;
-event.recurrence = recurrence;
+range.setType(RecurrenceRangeType.EndDate);
+LocalDate startDate = LocalDate.parse("2017-09-04");
+range.setStartDate(startDate);
+LocalDate endDate = LocalDate.parse("2017-12-31");
+range.setEndDate(endDate);
+recurrence.setRange(range);
+event.setRecurrence(recurrence);
 Location location = new Location();
-location.displayName = "Harry's Bar";
-event.location = location;
-LinkedList<Attendee> attendeesList = new LinkedList<Attendee>();
-Attendee attendees = new Attendee();
+location.setDisplayName("Harry's Bar");
+event.setLocation(location);
+LinkedList<Attendee> attendees = new LinkedList<Attendee>();
+Attendee attendee = new Attendee();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.address = "AdeleV@contoso.onmicrosoft.com";
-emailAddress.name = "Adele Vance";
-attendees.emailAddress = emailAddress;
-attendees.type = AttendeeType.REQUIRED;
-attendeesList.add(attendees);
-event.attendees = attendeesList;
+emailAddress.setAddress("AdeleV@contoso.com");
+emailAddress.setName("Adele Vance");
+attendee.setEmailAddress(emailAddress);
+attendee.setType(AttendeeType.Required);
+attendees.add(attendee);
+event.setAttendees(attendees);
+Event result = graphClient.me().events().post(event);
 
-graphClient.me().events()
-	.buildRequest()
-	.post(event);
 
 ```

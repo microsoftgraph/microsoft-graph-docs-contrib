@@ -4,7 +4,7 @@ description: "Get itemAnalytics about the views that took place under this resou
 title: Get analytics
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 ---
 # Get analytics
 
@@ -47,7 +47,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

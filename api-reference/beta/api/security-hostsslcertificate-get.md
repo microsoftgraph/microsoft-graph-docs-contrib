@@ -3,7 +3,7 @@ title: "Get hostSslCertificate"
 description: "Get the properties and relationships of a hostSslCertificate object."
 author: "nblankenau"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ This method supports the `$count`, `$select`, `$orderBy`, `$skip`, and `$top` OD
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

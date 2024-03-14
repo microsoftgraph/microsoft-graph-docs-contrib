@@ -4,7 +4,7 @@ description: "Retrieve a list of directoryroletemplate objects."
 author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ This method does **not** support the [OData Query Parameters](/graph/query-param
 ## Request headers
 | Name       | Description|
 |:-----------|:------|
-| Authorization  |Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

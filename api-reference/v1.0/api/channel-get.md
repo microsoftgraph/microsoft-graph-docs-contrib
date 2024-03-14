@@ -3,7 +3,7 @@ title: "Get channel"
 description: "Retrieve the properties and relationships of a channel."
 author: "nkramer"
 doc_type: apiPageType
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +51,7 @@ Populating the **email** and **summary** property for a channel is an expensive 
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -229,6 +229,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

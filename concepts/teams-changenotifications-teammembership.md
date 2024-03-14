@@ -3,7 +3,7 @@ title: "Get change notifications for membership changes in teams and channels us
 description: "Learn how to get change notifications for any changes (create, update, and delete) in teams and channels membership using Microsoft Graph."
 author: "anandab"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
@@ -18,7 +18,7 @@ Continue with this article about scenarios for the [conversationMember](/graph/a
 
 ## Subscribe to changes in membership of a particular team
 
-To get change notifications for membership changes in a particular team, subscribe to `/teams/{team-id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in a particular team, subscribe to `/teams/{team-id}/members`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 ### Permissions
 
@@ -50,7 +50,7 @@ Content-Type: application/json
 
 ## Subscribe to membership changes in all teams across the tenant
 
-To get change notifications for membership changes in all teams across the tenant, subscribe to `/teams/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in all teams across the tenant, subscribe to `/teams/getAllMembers`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 ### Permissions
 
@@ -80,7 +80,7 @@ Content-Type: application/json
 
 ## Subscribe to membership changes in all channels across the tenant (preview)
 
-To get change notifications for membership changes in all channels across the tenant, subscribe to `/teams/getAllChannels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. Currently, only private channels are supported. This subscription is only available in the beta endpoint.
+To get change notifications for membership changes in all channels across the tenant, subscribe to `/teams/getAllChannels/getAllMembers`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. Currently, only private channels are supported. This subscription is only available in the beta endpoint.
 
 ### Permissions
 
@@ -110,7 +110,7 @@ Content-Type: application/json
 
 ## Subscribe to membership changes in all private and shared channels of a particular team
 
-To get change notifications for membership changes in all the private and shared channels in a particular team, subscribe to `/teams/{team-id}/channels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in all the private and shared channels in a particular team, subscribe to `/teams/{team-id}/channels/getAllMembers`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 [!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
@@ -175,7 +175,7 @@ For notifications with resource data, the payload looks like the following. This
 
 The payload for the channel membership events is similar to the previous payload except that the **resource** property points to a channel member instead of a team member.
 
-For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
 The decrypted notification payload looks like the following. The payload conforms to the [aaduserconversationmember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
@@ -217,8 +217,8 @@ The payload for the channel membership events is similar to the previous payload
 
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message. GET calls always return the current state of the message. If the message is changed between when the notification is sent and when the message is retrieved, the operation returns the updated message.
 
-## See also
-- [Microsoft Graph change notifications](webhooks.md)
+## Related content
+- [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 - [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)

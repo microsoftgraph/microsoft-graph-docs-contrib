@@ -2,8 +2,8 @@
 title: "List group calendarView"
 description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,"
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "iamgirishck"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -191,7 +191,7 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"HR Taskforce",
-                        "address":"HRTaskforce@contoso.onmicrosoft.com"
+                        "address":"HRTaskforce@contoso.com"
                     }
                 },
                 {
@@ -202,14 +202,14 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"Megan Bowen",
-                        "address":"MeganB@contoso.onmicrosoft.com"
+                        "address":"MeganB@contoso.com"
                     }
                 }
              ],
             "organizer":{
                 "emailAddress":{
                     "name":"HR Taskforce",
-                    "address":"HRTaskforce@contoso.onmicrosoft.com"
+                    "address":"HRTaskforce@contoso.com"
                 }
             }
         },
@@ -270,7 +270,7 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"HR Taskforce",
-                        "address":"HRTaskforce@contoso.onmicrosoft.com"
+                        "address":"HRTaskforce@contoso.com"
                     }
                 },
                 {
@@ -281,14 +281,14 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"Megan Bowen",
-                        "address":"MeganB@contoso.onmicrosoft.com"
+                        "address":"MeganB@contoso.com"
                     }
                 }
             ],
             "organizer":{
                 "emailAddress":{
                     "name":"HR Taskforce",
-                    "address":"HRTaskforce@contoso.onmicrosoft.com"
+                    "address":"HRTaskforce@contoso.com"
                 }
             }
         }

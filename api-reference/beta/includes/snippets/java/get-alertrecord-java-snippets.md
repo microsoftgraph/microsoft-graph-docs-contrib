@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AlertRecord alertRecord = graphClient.deviceManagement().monitoring().alertRecords("6c46a7ba-e78a-45e5-a81c-179ab8fd3e8e")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.devicemanagement.AlertRecord result = graphClient.deviceManagement().monitoring().alertRecords().byAlertRecordId("{alertRecord-id}").get();
+
 
 ```

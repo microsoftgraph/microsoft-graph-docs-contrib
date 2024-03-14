@@ -3,7 +3,7 @@ title: "message: createForward"
 description: "Create a draft to forward an existing message, in either JSON or MIME format."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -90,7 +90,7 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"danas@contoso.onmicrosoft.com",
+          "address":"danas@contoso.com",
           "name":"Dana Swope"
         }
       }
@@ -158,7 +158,7 @@ Content-type: application/json
   "sender": {
     "emailAddress": {
       "name": "Admin",
-      "address": "admin@contoso.onmicrosoft.com"
+      "address": "admin@contoso.com"
     }
   },
   "from": null,
@@ -166,7 +166,7 @@ Content-type: application/json
     {
       "emailAddress": {
         "name": "Dana Swope",
-        "address": "danas@contoso.onmicrosoft.com"
+        "address": "danas@contoso.com"
       }
     }
   ]

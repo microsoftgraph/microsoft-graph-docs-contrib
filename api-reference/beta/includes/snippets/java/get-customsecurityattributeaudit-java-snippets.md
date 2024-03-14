@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CustomSecurityAttributeAudit customSecurityAttributeAudit = graphClient.auditLogs().customSecurityAttributeAudits("Directory_46ef8262-896f-4a39-9666-db82e22e778b_GXP3K_386490241")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+CustomSecurityAttributeAudit result = graphClient.auditLogs().customSecurityAttributeAudits().byCustomSecurityAttributeAuditId("{customSecurityAttributeAudit-id}").get();
+
 
 ```

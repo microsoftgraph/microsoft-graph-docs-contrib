@@ -29,7 +29,7 @@ The Group Policy setting to MDM/Intune mapping.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |parentId|String|Parent Id of the group policy setting.|
 |childIdList|String collection|List of Child Ids of the group policy setting.|
 |settingName|String|The name of this group policy setting.|

@@ -38,7 +38,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -63,7 +63,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules_scheduleactionsforrules_action" }-->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules
+POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules
 Content-type: application/json
 Content-length: 242
 

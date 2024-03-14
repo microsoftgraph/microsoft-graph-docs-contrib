@@ -3,7 +3,7 @@ title: "emailThreatSubmission resource type"
 description: "Reports suspected spam, malware or phishing emails to Microsoft Defender for Office 365."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

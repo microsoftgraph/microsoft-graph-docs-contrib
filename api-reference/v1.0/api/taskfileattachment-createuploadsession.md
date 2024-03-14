@@ -3,14 +3,12 @@ title: "taskFileAttachment: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of a file as an attachment to a Microsoft To Do task."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
 # taskFileAttachment: createUploadSession
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an upload session to iteratively upload ranges of a file as an attachment to a [todoTask](../resources/todotask.md).
 
@@ -49,7 +47,7 @@ POST /users/{id}/todo/lists/{id}/tasks/{id}/attachments/createUploadSession
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

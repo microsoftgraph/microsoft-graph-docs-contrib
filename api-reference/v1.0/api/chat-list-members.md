@@ -3,7 +3,7 @@ title: "List members of a chat"
 description: "Retrieve members of a chat."
 author: "anandjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -132,7 +132,7 @@ Content-type: application/json
             "displayName": "Megan Bowen",
             "visibleHistoryStartDateTime": "2021-11-25T01:56:31.313Z",
             "userId": "48d31887-5fad-4d73-a9f5-3c356e68a038",
-            "email": "MeganB@M365x214355.onmicrosoft.com",
+            "email": "MeganB@contoso.com",
             "tenantId": "dcd219dd-bc68-4b9b-bf0b-4a33a796be35"
         }
     ]

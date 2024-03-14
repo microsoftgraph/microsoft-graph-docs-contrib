@@ -2,7 +2,7 @@
 title: "Working with SharePoint sites in Microsoft Graph"
 description: "The SharePoint API in Microsoft Graph supports the following core scenarios:"
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: conceptualPageType
 ---
@@ -165,10 +165,6 @@ The following example returns information about the `SPListItem` with integer ID
 ```http
 GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/teams/hr/benefits:/lists/5771e865-4e91-48b8-a0de-35a25d4e52fe/items/42
 ```
-
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 [site]: site.md
 [list]: list.md

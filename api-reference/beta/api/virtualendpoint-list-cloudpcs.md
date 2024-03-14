@@ -3,7 +3,7 @@ title: "List cloudPCs"
 description: "List properties and relationships of the cloudPC objects."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports `$select`, `$filter`, `$count`, and `$top` OData query para
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -141,7 +141,7 @@ Content-Type: application/json
       "servicePlanName": "lite",
       "servicePlanType": "enterprise",
       "status": "provisioned",
-      "userPrincipalName": "dujanjic@fabrikam.onmicrosoft.com",
+      "userPrincipalName": "dujanjic@contoso.com",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
       "statusDetails": null,
       "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
@@ -236,7 +236,7 @@ Content-Type: application/json
             "servicePlanId": "23a25099-1b2f-4e07-84bd-b81606109438",
             "servicePlanName": "Cloud PC Enterprise 2vCPU/4GB/64GB",
             "status": "failed",
-            "userPrincipalName": "RMS-Resize-user-05@fabrikam.onmicrosoft.com",
+            "userPrincipalName": "RMS-Resize-user-05@contoso.com",
             "lastModifiedDateTime": "2023-04-25T06:24:02Z",
             "managedDeviceId": null,
             "managedDeviceName": null,
@@ -275,7 +275,7 @@ Content-Type: application/json
             "servicePlanId": "0e837228-8250-4047-8a80-d4a34ba11618",
             "servicePlanName": "Cloud PC Enterprise 8vCPU/32GB/512GB",
             "status": "failed",
-            "userPrincipalName": "akhkhare_contoso.com#EXT#@fabrikam.onmicrosoft.com",
+            "userPrincipalName": "akhkhare_contoso.com#EXT#@contoso.com",
             "lastModifiedDateTime": "2023-04-25T06:12:10Z",
             "managedDeviceId": null,
             "managedDeviceName": null,

@@ -1,20 +1,21 @@
 ---
 title: "Authentication and authorization basics"
 description: "To call Microsoft Graph, you must register your app with the Microsoft identity platform, request permissions, and acquire an access token."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.custom: graphiamtop20
-ms.date: 05/25/2023
+ms.date: 12/21/2023
+#Customer intent: As a developer, I want to understand how to authenticate and authorize my app to call Microsoft Graph.
 ---
 
 # Authentication and authorization basics
 
 Microsoft Graph is a protected web API for accessing data in Microsoft cloud services like Microsoft Entra ID and Microsoft 365. It's protected by the Microsoft identity platform, which uses [OAuth access tokens](/azure/active-directory/develop/active-directory-v2-protocols) to verify that an app is authorized to call Microsoft Graph.
 
-This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens. For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [next steps](#see-also) section.
+This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens. For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see the [Microsoft identity platform code samples](/entra/identity-platform/sample-v2-code?tabs=apptype#service--daemon) for information and samples specific to Microsoft Graph.
 
 ## Register the application
 
@@ -42,6 +43,9 @@ In this access scenario, a user has signed into a client application and the cli
 Delegated access requires *delegated permissions*, also referred to as *scopes*. Scopes are permissions that are exposed by a given resource and they represent the operations that an app can perform on behalf of a user.
 
 Because both the app and the user must be authorized to make the request, the resource grants the client app the delegated permissions, for the client app to access data on behalf of the specified user. For the user, the actions that they can perform on the resource rely on the permissions that they have to access the resource. For example, the user might be the owner of the resource, or they might be assigned a particular role through a role-based access control system (RBAC) such as [Microsoft Entra RBAC](/azure/active-directory/roles/custom-overview).
+
+> [!NOTE]
+> Endpoints and APIs with the `/me` alias operate on the signed-in user only and are therefore called in delegated access scenarios.
 
 ### App-only access (access without a user)
 
@@ -113,10 +117,8 @@ You don't need to use an authentication library to get an access token. To learn
 - [Get access on behalf of a user](../auth-v2-user.md)
 - [Get access without a user](../auth-v2-service.md)
 
-## See also
+## Related content
 
 - [Microsoft identity platform documentation](/azure/active-directory/develop/).
 - [Choose a Microsoft Graph authentication provider based on scenario](../sdks/choose-authentication-providers.md).
 - [Overview of Microsoft Graph permissions](/graph/permissions-overview).
-- Use the [Get started](https://developer.microsoft.com/graph/get-started) page to find the libraries, samples, training content, and other resources for your favorite platform.
-- See our [Microsoft Graph samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=) on GitHub.

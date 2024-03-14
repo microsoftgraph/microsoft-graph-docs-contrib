@@ -4,7 +4,7 @@ description: "List all identityProviders in a b2xIdentityUserFlow (deprecated)."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List all identityProviders in a b2xIdentityUserFlow (deprecated)
@@ -42,7 +42,7 @@ GET /identity/b2xUserFlows/{id}/identityProviders
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "securityReportsRoot: getAttackSimulationSimulationUserCoverage"
 description: "List training coverage for each tenant user in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ GET /reports/getAttackSimulationSimulationUserCoverage
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -140,5 +140,5 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 [reportRoot: getAttackSimulationSimulationUserCoverage](reportroot-getattacksimulationsimulationusercoverage.md) (deprecated)

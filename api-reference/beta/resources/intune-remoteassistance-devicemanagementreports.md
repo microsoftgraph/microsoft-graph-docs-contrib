@@ -22,10 +22,10 @@ DeviceManagementReports class for Reporting V2
 |:---|:---|:---|
 |[Get deviceManagementReports](../api/intune-remoteassistance-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-remoteassistance-devicemanagementreports.md)|Read properties and relationships of the [deviceManagementReports](../resources/intune-remoteassistance-devicemanagementreports.md) object.|
 |[Update deviceManagementReports](../api/intune-remoteassistance-devicemanagementreports-update.md)|[deviceManagementReports](../resources/intune-remoteassistance-devicemanagementreports.md)|Update the properties of a [deviceManagementReports](../resources/intune-remoteassistance-devicemanagementreports.md) object.|
-|[getRemoteAssistanceSessionsReport action](../api/intune-remoteassistance-devicemanagementreports-getremoteassistancesessionsreport.md)|Stream|Not yet documented|
-|[getRemoteAssistanceMonitorActiveSessionsReport action](../api/intune-remoteassistance-devicemanagementreports-getremoteassistancemonitoractivesessionsreport.md)|Stream|Not yet documented|
-|[getRemoteAssistanceMonitorTotalSessionsReport action](../api/intune-remoteassistance-devicemanagementreports-getremoteassistancemonitortotalsessionsreport.md)|Stream|Not yet documented|
-|[getRemoteAssistanceMonitorAvgSessionTimeReport action](../api/intune-remoteassistance-devicemanagementreports-getremoteassistancemonitoravgsessiontimereport.md)|Stream|Not yet documented|
+|[getRemoteAssistanceSessionsReport action](../api/intune-remoteassistance-devicemanagementreports-getremoteassistancesessionsreport.md)|Stream||
+|[getRemoteAssistanceMonitorActiveSessionsReport action](../api/intune-remoteassistance-devicemanagementreports-getremoteassistancemonitoractivesessionsreport.md)|Stream||
+|[getRemoteAssistanceMonitorTotalSessionsReport action](../api/intune-remoteassistance-devicemanagementreports-getremoteassistancemonitortotalsessionsreport.md)|Stream||
+|[getRemoteAssistanceMonitorAvgSessionTimeReport action](../api/intune-remoteassistance-devicemanagementreports-getremoteassistancemonitoravgsessiontimereport.md)|Stream||
 
 ## Properties
 |Property|Type|Description|

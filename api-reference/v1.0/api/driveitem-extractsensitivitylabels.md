@@ -3,7 +3,7 @@ title: "driveItem: extractSensitivityLabels"
 description: "Extract one or more sensitivity labels assigned to a drive item."
 author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ POST /users/{user-id}/drive/root:/{item-path}:/extractSensitivityLabels
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

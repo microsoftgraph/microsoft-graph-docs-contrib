@@ -3,7 +3,7 @@ title: "List teams"
 description: "List all teams in an organization."
 author: "pruthvi0105"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ This method supports the `$filter`, `$select`, `$top`, `$skiptoken`, and `$count
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json|
 
 ## Request body
@@ -295,5 +295,5 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related content
 - [Get team](../api/team-get.md)

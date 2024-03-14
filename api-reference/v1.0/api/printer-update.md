@@ -1,9 +1,9 @@
 ---
 title: Update printer
-description: Update the properties of a printer object.
+description: "Update the properties of a printer object."
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "printer_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/printer-update-permissions.md)]
 
->**Note:** Right now, only printers that don't have physical device can be updated using application permissions.
+>**Note:** Right now, only printers that don't have physical devices can be updated using application permissions.
 
 ## HTTP request
 
@@ -35,14 +35,14 @@ PATCH /print/printers/{printerId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-type|`application/json` when using delegated permissions, `application/ipp` or `application/json` when using application permissions. Required.|
 
 ## Request body
 
 ### Delegated permissions and JSON payload
 
-If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
+If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
 
 The following properties can be updated using delegated permissions.
 
@@ -53,7 +53,7 @@ The following properties can be updated using delegated permissions.
 |displayName|String|The name of the printer.|
 
 ### Application permissions and JSON payload
-In the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
+In the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
 
 The following properties can be updated using application permissions.
 
@@ -71,13 +71,13 @@ The following properties can be updated using application permissions.
 
 With application permissions, a printer can also be updated using an Internet Printing Protocol (IPP) payload. In this case, the request body contains a binary stream that represents the Printer Attributes group in [IPP encoding](https://tools.ietf.org/html/rfc8010).
 
-The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) Printer Description Attributes, and any attribute extensions supported by the Printer. The value(s) of each Printer attribute
+The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) Printer Description Attributes. The client must also supply any attribute extensions supported by the Printer. The value(s) of each Printer attribute
 supplied replaces the value(s) of the corresponding Printer attribute on the target Printer object. For attributes that can have multiple values (1setOf), all values supplied by the client replace all values of the corresponding Printer object attribute.
 
 > **Note:** Do not pass operation attributes in the request body. The request body should only contain printer attributes.
 
 
-> **Note:** For printers to work with a particular platform, it should meet the requirements of that platform. For example, on windows client, it is expected that printer specifies all attributes that are considered mandatory as per [MOPRIA](https://mopria.org) specs. Please note MOPRIA specs are available to only the paid members of MOPRIA.
+> **Note:** For printers to work with a particular platform, it should meet the requirements of that platform. For example, on the Windows client, it is expected that the printer specifies all attributes that are considered mandatory as per [MOPRIA](https://mopria.org) specs. Please note MOPRIA specs are available to only the paid members of MOPRIA.
 
 ## Response
 
@@ -91,11 +91,12 @@ If using delegated permissions, if successful, this method returns a `200 OK` re
 
 ### Application permissions and IPP payload
 
-If using application permissions, if successful, this method returns `204 No content` response code. It doesn't return anything in the response body.
+If using application permissions, if successful, this method returns a `204 No content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -129,6 +130,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-printer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-printer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-printer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -144,6 +149,7 @@ Content-Type: application/json
 ---
 
 ### Response
+The following example shows the response.
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

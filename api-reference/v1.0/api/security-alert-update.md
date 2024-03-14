@@ -4,7 +4,7 @@ description: "Update the properties of an alert object."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ PATCH /security/alerts_v2/{alertId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -46,7 +46,7 @@ PATCH /security/alerts_v2/{alertId}
 |status|microsoft.graph.security.alertStatus|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
 |classification|microsoft.graph.security.alertClassification|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |determination|microsoft.graph.security.alertDetermination|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
-|assignedTo|String|Owner of the incident, or null if no owner is assigned.|
+|assignedTo|String|Owner of the incident, or `null` if no owner is assigned.|
 
 
 ## Response
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an updated [aler
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,7 +71,7 @@ Content-Type: application/json
 Content-length: 2450
 
 {
-    "assignedTo": "secAdmin@contoso.onmicrosoft.com",
+    "assignedTo": "secAdmin@contoso.com",
     "classification": "truePositive",
     "determination": "malware",
     "status": "inProgress"
@@ -143,7 +143,7 @@ Content-type: application/json
     "description": "A hidden file has been launched. This activity could indicate a compromised host. Attackers often hide files associated with malicious tools to evade file system inspection and defenses.",
     "recommendedActions": "Collect artifacts and determine scope\n�\tReview the machine timeline for suspicious activities that may have occurred before and after the time of the alert, and record additional related artifacts (files, IPs/URLs) \n�\tLook for the presence of relevant artifacts on other systems. Identify commonalities and differences between potentially compromised systems.\n�\tSubmit relevant files for deep analysis and review resulting detailed behavioral information.\n�\tSubmit undetected files to the MMPC malware portal\n\nInitiate containment & mitigation \n�\tContact the user to verify intent and initiate local remediation actions as needed.\n�\tUpdate AV signatures and run a full scan. The scan might reveal and remove previously-undetected malware components.\n�\tEnsure that the machine has the latest security updates. In particular, ensure that you have installed the latest software, web browser, and Operating System versions.\n�\tIf credential theft is suspected, reset all relevant users passwords.\n�\tBlock communication with relevant URLs or IPs at the organization�s perimeter.",
     "category": "DefenseEvasion",
-    "assignedTo": "secAdmin@contoso.onmicrosoft.com",
+    "assignedTo": "secAdmin@contoso.com",
     "alertWebUrl": "https://security.microsoft.com/alerts/da637551227677560813_-961444813?tid=b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
     "incidentWebUrl": "https://security.microsoft.com/incidents/28282?tid=b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
     "actorDisplayName": null,
@@ -158,6 +158,7 @@ Content-type: application/json
     "firstActivityDateTime": "2021-04-26T07:45:50.116Z",
     "lastActivityDateTime": "2021-05-02T07:56:58.222Z",
     "comments": [],
-    "evidence": []
+    "evidence": [],
+    "systemTags" : []
 }
 ```

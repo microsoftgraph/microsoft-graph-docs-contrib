@@ -3,7 +3,7 @@ title: "Update businessScenarioTask"
 description: "Update the properties of a businessScenarioTask object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ PATCH /solutions/businessScenarios/{businessScenarioId}/planner/tasks/{businessS
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -163,6 +163,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Update the task details associated with a scenario task](plannertaskdetails-update.md).

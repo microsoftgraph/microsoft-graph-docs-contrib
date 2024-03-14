@@ -3,7 +3,7 @@ title: "Delete taskFileAttachment"
 description: "Delete a taskFileAttachment object from a todoTask resource."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ DELETE /users/{id}/todo/lists/{id}/tasks/{id}/attachments/{id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -3,7 +3,7 @@ title: "List shared"
 description: "Calculated insight that returns the list of files shared with a user."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ See the [sharingDetail](../resources/insights-sharingdetail.md) complex type.
 ## Request headers
 | Header       |  Value|
 |:-------------|:------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json|
 
 ## Request body

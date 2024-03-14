@@ -1322,5 +1322,3 @@ Content-Type: application/json
 }
 ```
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

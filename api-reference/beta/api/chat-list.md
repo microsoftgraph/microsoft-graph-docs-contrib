@@ -3,7 +3,7 @@ title: "List chats"
 description: "Retrieve the list of chats for a user."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
 This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.
 
->**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
+>**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -74,7 +74,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -283,7 +283,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Tony Stark",
                     "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
-                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                    "email": "starkt@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -291,7 +291,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                    "email": "parkerp@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -299,7 +299,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                    "email": "furyn@contoso.com"
                 }
             ]
         },
@@ -321,7 +321,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Tony Stark",
                     "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
-                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                    "email": "starkt@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -329,7 +329,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Bruce Banner",
                     "userId": "48bf9d52-dca7-4a5f-8398-37b95cc7bd83",
-                    "email": "bannerb@teamsgraph.onmicrosoft.com"
+                    "email": "bannerb@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -337,7 +337,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "TChalla",
                     "userId": "9efb1aea-4f83-4673-bdcd-d3f3c7be28c2",
-                    "email": "tchalla@teamsgraph.onmicrosoft.com"
+                    "email": "tchalla@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -345,7 +345,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Thor Odinson",
                     "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
-                    "email": "odinsont@teamsgraph.onmicrosoft.com"
+                    "email": "odinsont@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -353,7 +353,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Steve Rogers",
                     "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
-                    "email": "rogerss@teamsgraph.onmicrosoft.com"
+                    "email": "rogerss@contoso.com"
                 }
             ]
         },
@@ -375,7 +375,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                    "email": "furyn@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -383,7 +383,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                    "email": "parkerp@contoso.com"
                 }
             ]
         }
@@ -691,7 +691,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Tony Stark",
                     "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
-                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                    "email": "starkt@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -699,7 +699,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                    "email": "parkerp@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -707,7 +707,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                    "email": "furyn@contoso.com"
                 }
             ]
         },
@@ -729,7 +729,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                    "email": "furyn@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -737,7 +737,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                    "email": "parkerp@contoso.com"
                 }
             ]
         }

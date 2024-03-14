@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MultiTenantOrganizationPartnerConfigurationTemplate multiTenantOrganizationPartnerConfigurationTemplate = new MultiTenantOrganizationPartnerConfigurationTemplate();
 CrossTenantAccessPolicyInboundTrust inboundTrust = new CrossTenantAccessPolicyInboundTrust();
-inboundTrust.isMfaAccepted = true;
-inboundTrust.isCompliantDeviceAccepted = true;
-inboundTrust.isHybridAzureADJoinedDeviceAccepted = true;
-multiTenantOrganizationPartnerConfigurationTemplate.inboundTrust = inboundTrust;
+inboundTrust.setIsMfaAccepted(true);
+inboundTrust.setIsCompliantDeviceAccepted(true);
+inboundTrust.setIsHybridAzureADJoinedDeviceAccepted(true);
+multiTenantOrganizationPartnerConfigurationTemplate.setInboundTrust(inboundTrust);
 InboundOutboundPolicyConfiguration automaticUserConsentSettings = new InboundOutboundPolicyConfiguration();
-automaticUserConsentSettings.inboundAllowed = true;
-automaticUserConsentSettings.outboundAllowed = true;
-multiTenantOrganizationPartnerConfigurationTemplate.automaticUserConsentSettings = automaticUserConsentSettings;
-multiTenantOrganizationPartnerConfigurationTemplate.templateApplicationLevel = EnumSet.of(TemplateApplicationLevel.NEW_PARTNERS,TemplateApplicationLevel.EXISTING_PARTNERS);
+automaticUserConsentSettings.setInboundAllowed(true);
+automaticUserConsentSettings.setOutboundAllowed(true);
+multiTenantOrganizationPartnerConfigurationTemplate.setAutomaticUserConsentSettings(automaticUserConsentSettings);
+multiTenantOrganizationPartnerConfigurationTemplate.setTemplateApplicationLevel(EnumSet.of(TemplateApplicationLevel.NewPartners, TemplateApplicationLevel.ExistingPartners));
+MultiTenantOrganizationPartnerConfigurationTemplate result = graphClient.policies().crossTenantAccessPolicy().templates().multiTenantOrganizationPartnerConfiguration().patch(multiTenantOrganizationPartnerConfigurationTemplate);
 
-graphClient.policies().crossTenantAccessPolicy().templates().multiTenantOrganizationPartnerConfiguration()
-	.buildRequest()
-	.patch(multiTenantOrganizationPartnerConfigurationTemplate);
 
 ```

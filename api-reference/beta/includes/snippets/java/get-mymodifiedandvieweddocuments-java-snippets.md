@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UsedInsightCollectionPage used = graphClient.me().insights().used()
-	.buildRequest()
-	.orderBy("LastUsed/LastAccessedDateTime desc")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UsedInsightCollectionResponse result = graphClient.me().insights().used().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.orderby = new String []{"LastUsed/LastAccessedDateTime desc"};
+});
+
 
 ```

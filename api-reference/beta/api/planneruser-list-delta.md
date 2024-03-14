@@ -3,7 +3,7 @@ title: "Planner: delta"
 description: "Retrieves changes to objects that the user is subscribed to."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ No additional query parameters (such as `$select`, `$expand`, or `$filter`) are 
 
 | Name           |Description                |
 |:---------------|:--------------------------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

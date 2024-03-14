@@ -3,7 +3,7 @@ title: "List meetingAttendanceReports"
 description: "Get a list of attendance reports for an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting ends, an attendance report is generated for that session.
+Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). Each time an online meeting ends, an attendance report is generated for that session.
 
 > [!WARNING]
 >
@@ -39,7 +39,7 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 ```
 
-To get all attendance reports for a virtual event session:
+To get all attendance reports for a webinar session:
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
@@ -60,7 +60,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -77,7 +77,7 @@ If successful, this method returns a `200 OK` response code and a list of [meeti
 
 ### Example 1: List attendance reports for an online meeting
 
-### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -125,7 +125,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 ---
 
-### Response
+#### Response
 
 > **Note**: The response object shown here might be shortened for readability.
 
@@ -160,7 +160,7 @@ Content-Type: application/json
   ]
 }
 ```
-### Example 2: List attendance reports for a virtual event session
+### Example 2: List attendance reports for a webinar session
 
 #### Request
 

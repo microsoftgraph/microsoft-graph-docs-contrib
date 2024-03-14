@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CloudPcUserSetting();
@@ -16,6 +16,7 @@ $requestBody->setSelfServiceEnabled(false);
 $requestBody->setLocalAdminEnabled(true);
 $restorePointSetting = new CloudPcRestorePointSetting();
 $restorePointSetting->setFrequencyInHours(16);
+$restorePointSetting->setFrequencyType(new CloudPcRestorePointFrequencyType('sixteenHours'));
 $restorePointSetting->setUserRestoreEnabled(true);
 $requestBody->setRestorePointSetting($restorePointSetting);
 

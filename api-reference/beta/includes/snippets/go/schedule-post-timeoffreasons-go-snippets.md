@@ -18,6 +18,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewTimeOffReason()
 displayName := "Vacation"
 requestBody.SetDisplayName(&displayName) 
+code := "VacationCode"
+requestBody.SetCode(&code) 
 iconType := graphmodels.PLANE_TIMEOFFREASONICONTYPE 
 requestBody.SetIconType(&iconType) 
 isActive := true

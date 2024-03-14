@@ -3,7 +3,7 @@ title: "businessScenarioPlanner: getPlan"
 description: "Get information about the plannerPlan mapped to a given target."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /solutions/businessScenarios/{businessScenarioId}/planner/getPlan
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -3,7 +3,7 @@ title: "call resource type"
 description: "The **call** resource is created when there's an incoming call for the application or the application creates a new outgoing call via a `POST` on `communications/calls`."
 author: "ananmishr"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 The **call** resource is created when there's an incoming call for the application or the application creates a new outgoing call via a `POST` on `communications/calls`.
 
-Calls can be set up as a peer-to-peer or as a group call. For creating or joining a group call, supply the `chatInfo` and `meetingInfo`. If these aren't supplied, a new group call is created automatically. For an incoming call, record these values in a highly available store so that your application can rejoin the call if your application crashes.
+Calls can be set up as a peer-to-peer or as a group call. To create or join a group call, supply the `chatInfo` and `meetingInfo`. If these values aren't supplied, a new group call is created automatically. For an incoming call, record these values in a highly available store so that your application can rejoin the call if your application crashes.
 
 Although the same identity can't be invited multiple times, it's possible for an application to join the same meeting multiple times. Each time the application wants to join a call, a separate identity must be provided in order for the clients to display them as different participants.
 
@@ -50,6 +50,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [RecordResponse](../api/call-record.md)                                  | [recordOperation](recordoperation.md)                               | Records a short audio response from the caller.                                 |
 | [CancelMediaProcessing](../api/call-cancelMediaProcessing.md)            | [commsOperation](commsoperation.md)                                 | Cancel media processing.                                                        |
 | [SubscribeToTone](../api/call-subscribetotone.md)                        | [commsOperation](commsoperation.md)                                 | Subscribe to DTMF tones.                                                        |
+| [SendDtmfTones](../api/call-senddtmftones.md)                      | [commsOperation](commsoperation.md)                         | Send DTMF tones in a call.                                                      |
 | **Self participant operations**                                          |                                                                     |                                                                                 |
 | [Mute](../api/call-mute.md)                                              | [muteParticipantOperation](muteparticipantoperation.md)             | Mute self in the call.                                                          |
 | [Unmute](../api/call-unmute.md)                                          | [unmuteParticipantOperation](unmuteparticipantoperation.md)         | Unmute self in the call.                                                        |
@@ -63,8 +64,8 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 
 | Property            | Type                                                                                                   | Description                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| callbackUri         | String                                                                                                 | The callback URL on which callbacks will be delivered. Must be `https`.                                                                                                                             |
-| callChainId         | String                                                                                                 | A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.  This needs to be copied over from `Microsoft.Graph.Call.CallChainId`. |
+| callbackUri         | String                                                                                                 | The callback URL on which callbacks are delivered. Must be an HTTPS URL.                                                                                                                             |
+| callChainId         | String                                                                                                 | A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.  This identifier must be copied over from `Microsoft.Graph.Call.CallChainId`. |
 | callOptions         | [outgoingCallOptions](outgoingcalloptions.md)                                                          | Contains the optional features for the call.                                                                                                                                                        |
 | callRoutes          | [callRoute](callRoute.md) collection                                                                   | The routing information on how the call was retargeted. Read-only.                                                                                                                                  |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | The chat information. Required information for joining a meeting.                                                                                                                                   |

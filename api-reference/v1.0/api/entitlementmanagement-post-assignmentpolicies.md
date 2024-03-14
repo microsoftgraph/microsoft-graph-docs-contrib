@@ -3,7 +3,7 @@ title: "Create assignmentPolicies"
 description: "Create a new accessPackageAssignmentPolicy object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Create assignmentPolicies
@@ -34,7 +34,7 @@ POST /identityGovernance/entitlementManagement/assignmentPolicies
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

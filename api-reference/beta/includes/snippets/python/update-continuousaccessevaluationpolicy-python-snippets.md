@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.continuous_access_evaluation_policy import ContinuousAccessEvaluationPolicy
 
 graph_client = GraphServiceClient(credentials, scopes)
 

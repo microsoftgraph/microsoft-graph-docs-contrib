@@ -11,12 +11,13 @@ using Microsoft.Graph.Models;
 
 var requestBody = new SchemaExtension
 {
-	Id = "graphlearn_courses",
-	Description = "Graph Learn training courses extensions",
+	Id = "bellowscollege_courses",
+	Description = "Bellows College training courses extensions",
 	TargetTypes = new List<string>
 	{
 		"Group",
 	},
+	Owner = "d1e6f196-fca3-48ad-8cd3-1a98e3bd46d2",
 	Properties = new List<ExtensionSchemaProperty>
 	{
 		new ExtensionSchemaProperty

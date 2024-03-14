@@ -3,7 +3,7 @@ title: Dismiss riskyUser
 description: Dismiss the risk of a riskyUser object.
 author: tracyshi
 ms.localizationpriority: medium
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /riskyUsers/dismiss
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Specify the userIds to dismiss in the request body.

@@ -4,7 +4,7 @@ description: "Update the phone number associated with a phoneAuthenticationMetho
 ms.localizationpriority: medium
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -20,7 +20,7 @@ You can't change a phone's type. To change a phone's type, add a new number of t
 
 If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system attempts to register the number for use in that system.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -50,7 +50,7 @@ The value of `phoneMethodId` corresponding to the phoneType to update is one of 
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required. |
 
 ## Request body

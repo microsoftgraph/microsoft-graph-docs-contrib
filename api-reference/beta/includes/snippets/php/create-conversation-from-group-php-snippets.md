@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Conversation();
@@ -20,7 +20,7 @@ $postsPost1->setBody($postsPost1Body);
 $newParticipantsRecipient1 = new Recipient();
 $newParticipantsRecipient1EmailAddress = new EmailAddress();
 $newParticipantsRecipient1EmailAddress->setName('Adele Vance');
-$newParticipantsRecipient1EmailAddress->setAddress('AdeleV@contoso.onmicrosoft.com');
+$newParticipantsRecipient1EmailAddress->setAddress('AdeleV@contoso.com');
 $newParticipantsRecipient1->setEmailAddress($newParticipantsRecipient1EmailAddress);
 $newParticipantsArray []= $newParticipantsRecipient1;
 $postsPost1->setNewParticipants($newParticipantsArray);

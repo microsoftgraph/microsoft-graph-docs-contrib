@@ -4,7 +4,7 @@ description: "Create an event in the user's default calendar or specified calend
 ms.localizationpriority: high
 doc_type: apiPageType
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Create event
@@ -15,17 +15,17 @@ Create an [event](../resources/event.md) in the user's default calendar or speci
 
 By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event. See [Propose new meeting times](/graph/outlook-calendar-meeting-proposals) for more information on how to propose a time, and how to receive and accept a new time proposal.
 
-You can specify the time zone for each of the start and end times of the event as part of their values, because the 
-**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. First [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
+You can specify the time zone for each of the start and end times of the event as part of their values, because the
+**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. First [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server.
 
 When an event is sent, the server sends invitations to all the attendees.
 
 **Setting the location in an event**
 
-An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment 
-like a projector. Users can then invite the resource as an attendee to a meeting. On behalf of the resource, the server accepts or rejects 
-the meeting request based on the free/busy schedule of the resource. 
-If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar. If the meeting is rescheduled, 
+An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment
+like a projector. Users can then invite the resource as an attendee to a meeting. On behalf of the resource, the server accepts or rejects
+the meeting request based on the free/busy schedule of the resource.
+If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar. If the meeting is rescheduled,
 the server automatically updates the event in the resource's calendar.
 
 Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives
@@ -33,7 +33,7 @@ or their delegates can book a private meeting room.
 
 If you're organizing an event that involves a meeting location:
 
-1. Set the **location** property of the **event** accordingly. 
+1. Set the **location** property of the **event** accordingly.
 2. Set the optional **locationEmailAddress** property if the meeting location has an email address.
 
 Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
@@ -70,7 +70,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## Request headers
 | Header       | Value |
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -119,7 +119,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"samanthab@contoso.onmicrosoft.com",
+        "address":"samanthab@contoso.com",
         "name": "Samantha Booth"
       },
       "type": "required"
@@ -166,7 +166,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
-Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header. 
+Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -253,14 +253,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"samanthab@contoso.onmicrosoft.com"
+                "address":"samanthab@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Dana Swope",
-            "address":"danas@contoso.onmicrosoft.com"
+            "address":"danas@contoso.com"
         }
     }
 }
@@ -301,14 +301,14 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address": "DanaS@contoso.onmicrosoft.com",
+        "address": "DanaS@contoso.com",
         "name": "Dana Swope"
       },
       "type": "Required"
     },
     {
       "emailAddress": {
-        "address": "AlexW@contoso.onmicrosoft.com",
+        "address": "AlexW@contoso.com",
         "name": "Alex Wilber"
       },
       "type": "Required"
@@ -379,7 +379,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the 
+The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the
 `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.
 Note: The response object shown here might be shortened for readability.
 <!-- {
@@ -488,7 +488,7 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Dana Swope",
-        "address":"DanaS@contoso.onmicrosoft.com"
+        "address":"DanaS@contoso.com"
       }
     },
     {
@@ -499,14 +499,14 @@ Content-type: application/json
       },
       "emailAddress":{
         "name":"Alex Wilber",
-        "address":"AlexW@contoso.onmicrosoft.com"
+        "address":"AlexW@contoso.com"
       }
     }
   ],
   "organizer":{
     "emailAddress":{
       "name":"Adele Vance",
-      "address":"AdeleV@contoso.onmicrosoft.com"
+      "address":"AdeleV@contoso.com"
     }
   }
 }
@@ -559,7 +559,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"AdeleV@contoso.onmicrosoft.com",
+        "address":"AdeleV@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -605,7 +605,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
-Here is an example of the response. 
+Here is an example of the response.
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -710,14 +710,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Adele Vance",
-                "address":"AdeleV@contoso.onmicrosoft.com"
+                "address":"AdeleV@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Alex Wilber",
-            "address":"AlexW@contoso.onmicrosoft.com"
+            "address":"AlexW@contoso.com"
         }
     },
 }
@@ -759,7 +759,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"samanthab@contoso.onmicrosoft.com",
+        "address":"samanthab@contoso.com",
         "name": "Samantha Booth"
       },
       "type": "required"
@@ -891,14 +891,14 @@ Content-type: application/json
             },
             "emailAddress":{
                 "name":"Samantha Booth",
-                "address":"samanthab@contoso.onmicrosoft.com"
+                "address":"samanthab@contoso.com"
             }
         }
     ],
     "organizer":{
         "emailAddress":{
             "name":"Dana Swope",
-            "address":"danas@contoso.onmicrosoft.com"
+            "address":"danas@contoso.com"
         }
     },
     "onlineMeeting": {
@@ -909,7 +909,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Schedule repeating appointments as recurring events in Outlook](/graph/outlook-schedule-recurring-events)
 - [Add custom data to resources using extensions](/graph/extensibility-overview)

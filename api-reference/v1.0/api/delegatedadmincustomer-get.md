@@ -3,7 +3,7 @@ title: "Get delegatedAdminCustomer"
 description: "Read the properties of a delegatedAdminCustomer object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ This method supports the `$select` OData query parameter to retrieve specific us
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

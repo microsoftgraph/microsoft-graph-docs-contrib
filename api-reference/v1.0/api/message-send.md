@@ -3,7 +3,7 @@ title: "message: send"
 description: "Send an existing draft message."
 ms.localizationpriority: high
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
