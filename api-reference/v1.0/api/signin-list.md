@@ -68,12 +68,13 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 ## Examples
 
-### Example 1: List all sign-ins
+### Example 1: List all sign-ins during a specific time frame
 
 #### Request
 
 The following example shows a request.
 
+The time range filter is recommended for getting a list of all sign-ins to avoid the request timing out.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,7 +82,7 @@ The following example shows a request.
   "name": "list_signins"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/auditLogs/signIns
+GET https://graph.microsoft.com/v1.0/auditLogs/signIns?$filter=createdDateTime ge 2024-07-01T00:00:00Z and createdDateTime le 2024-07-14T23:59:59Z
 ```
 
 # [C#](#tab/csharp)
