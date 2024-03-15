@@ -3,7 +3,7 @@ title: "Update windows81SCEPCertificateProfile"
 description: "Update the properties of a windows81SCEPCertificateProfile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

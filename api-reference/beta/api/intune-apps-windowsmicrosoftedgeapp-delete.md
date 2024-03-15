@@ -3,7 +3,7 @@ title: "Delete windowsMicrosoftEdgeApp"
 description: "Deletes a windowsMicrosoftEdgeApp."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -644,10 +644,8 @@ items:
                 href: tutorial-access-package-api.md
                 displayName: governance, identity
               - name: Review access to your resources
+                displayName: access reviews
                 items:
-                  - name: Overview
-                    href: accessreviews-overview.md
-                    displayName: identity, access reviews API, review access
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access for guest users

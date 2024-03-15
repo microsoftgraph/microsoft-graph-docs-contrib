@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List calendar events
 
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -120,7 +120,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -203,7 +203,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events?$filter=startsWith(subje
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

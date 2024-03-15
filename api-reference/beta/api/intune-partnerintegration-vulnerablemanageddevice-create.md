@@ -3,7 +3,7 @@ title: "Create vulnerableManagedDevice"
 description: "Create a new vulnerableManagedDevice object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

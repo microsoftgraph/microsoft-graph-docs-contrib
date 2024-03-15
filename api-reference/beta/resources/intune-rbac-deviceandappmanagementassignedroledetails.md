@@ -3,7 +3,7 @@ title: "deviceAndAppManagementAssignedRoleDetails resource type"
 description: "The set of Role Definitions and Role Assignments assigned to a user."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

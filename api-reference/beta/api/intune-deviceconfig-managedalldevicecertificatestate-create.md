@@ -3,7 +3,7 @@ title: "Create managedAllDeviceCertificateState"
 description: "Create a new managedAllDeviceCertificateState object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "cancelApproval action"
 description: "Cancels an already approved instance of an operationApprovalRequest."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

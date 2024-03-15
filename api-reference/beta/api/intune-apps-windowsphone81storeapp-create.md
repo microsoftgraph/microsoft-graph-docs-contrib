@@ -3,7 +3,7 @@ title: "Create windowsPhone81StoreApp"
 description: "Create a new windowsPhone81StoreApp object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

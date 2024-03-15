@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request of all related activity statistics for the signed-in user.
+The following example shows a request of all related activity statistics for the signed-in user.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,7 +3,7 @@ title: "windowsDefenderAdvancedThreatProtectionConfiguration resource type"
 description: "Windows Defender AdvancedThreatProtection Configuration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

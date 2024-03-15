@@ -3,7 +3,7 @@ title: "Update androidForWorkWiFiConfiguration"
 description: "Update the properties of a androidForWorkWiFiConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

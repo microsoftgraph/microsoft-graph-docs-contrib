@@ -97,7 +97,7 @@ DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id1}/memb
 ---
 
 ### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -59,7 +59,7 @@ If successful, this action returns a `200 OK` response code. Calling this API fo
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "unifiedrolemanagementalertincidentthis.remediate"

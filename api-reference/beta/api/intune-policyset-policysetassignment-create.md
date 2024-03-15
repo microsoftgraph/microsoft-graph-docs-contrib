@@ -3,7 +3,7 @@ title: "Create policySetAssignment"
 description: "Create a new policySetAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

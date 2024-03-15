@@ -3,7 +3,7 @@ title: "Delete windows10CompliancePolicy"
 description: "Deletes a windows10CompliancePolicy."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and [directoryAudit]
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 
 ### Response
 
-Here's an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response",

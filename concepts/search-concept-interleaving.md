@@ -34,11 +34,11 @@ The following table shows the relationship between different entity types that c
 
 ### Example 1: Search with SharePoint file types and all connectors combination
 
-Here's an example of a request that searches with SharePoint file types and all combination of connectors.
+The following example shows a request that searches with SharePoint file types and all combination of connectors.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
@@ -128,11 +128,11 @@ Content-type: application/json
 
 ### Example 2: Search with SharePoint file types and specific connector combination
 
-Here's an example of a request that searches with SharePoint file types and a specific combination of connectors.
+The following example shows a request that searches with SharePoint file types and a specific combination of connectors.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
@@ -243,11 +243,11 @@ Content-type: application/json
 
 ### Example 3: Search with bookmark and acronym combination
 
-Here's an example of a request that searches with bookmark and acronym as entity types.
+The following example shows a request that searches with bookmark and acronym as entity types.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
