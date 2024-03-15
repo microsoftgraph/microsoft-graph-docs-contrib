@@ -1,6 +1,6 @@
 ---
 title: "subscription resource type"
-description: "A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
+description: "Represents a subscription that allows a client app to receive change notifications about changes to data in Microsoft Graph."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: resourcePageType
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph.
+Represents a subscription that allows a client app to receive change notifications about changes to data in Microsoft Graph.
 
 For more information about subscriptions and change notifications, including resources that support change notifications, see [Set up notifications for changes in resource data](change-notifications-api-overview.md).
 
@@ -96,21 +96,21 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.subscription",
-  "id": "String (identifier)",
-  "resource": "String",
+  "applicationId": "String",
   "changeType": "String",
   "clientState": "String",
-  "notificationUrl": "String",
-  "expirationDateTime": "String (timestamp)",
-  "applicationId": "String",
   "creatorId": "String",
-  "includeResourceData": "Boolean",
-  "lifecycleNotificationUrl": "String",
   "encryptionCertificate": "String",
   "encryptionCertificateId": "String",
+  "expirationDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "includeResourceData": "Boolean",
   "latestSupportedTlsVersion": "String",
-  "notificationQueryOptions": "String",
+  "lifecycleNotificationUrl": "String",
   "notificationContentType": "String",
-  "notificationUrlAppId": "String"
+  "notificationQueryOptions": "String",
+  "notificationUrl": "String",
+  "notificationUrlAppId": "String",
+  "resource": "String"
 }
 ```
