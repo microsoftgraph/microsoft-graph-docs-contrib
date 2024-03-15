@@ -92,7 +92,7 @@ The following example shows the initial request and how to call this API to esta
 
 #### Request
 
-The following example shows the initial request.
+The following example shows a request.
 
 <!-- { "blockType": "request", "name": "get_sites_delta_first", "tags": "service.graph" } -->
 
