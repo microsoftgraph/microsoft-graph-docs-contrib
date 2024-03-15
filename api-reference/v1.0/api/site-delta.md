@@ -10,14 +10,16 @@ doc_type: apiPageType
 
 Get newly created, updated, or deleted [sites](../resources/site.md) without having to perform a full read of the entire sites collection.
 
-Your app begins by calling `delta` without any parameters.
-The service starts enumerating sites, returning pages of changes to sites and either an **@odata.nextLink** or an **@odata.deltaLink**.
-Your app should continue calling with the **@odata.nextLink** until you see an **@odata.deltaLink** returned.
+A **delta** function call for **sites** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls,
+you can query for incremental changes in the **sites**. This allows you to maintain and synchronize a local store of a user's **sites** without having to fetch all the **sites** from the server every time.
+The application calls the API without specifying any parameters.
+The service begins enumerating sites and returns pages of changes to these sites, accompanied by either an **@odata.nextLink** or an **@odata.deltaLink**.
+Your application should continue making calls using the **@odata.nextLink** until there is an **@odata.deltaLink**  in the response.
 
-After you have received all the changes, you can apply them to your local state.
-To check for changes in the future, call `delta` again with the **@odata.deltaLink** from the previous response.
+Once you have received all the changes, you can apply them to your local state.
+To monitor future changes, call the `delta` API using the **@odata.deltaLink** in the previous response.
 
-Deleted sites are returned with the @removed annotation with the reason of removal. Resources with this property set should be removed from your local state.
+Deleted sites are returned with the @removed annotation with the reason of removal. Any resources marked as deleted should be removed from your local state.
 
 ## Permissions
 
