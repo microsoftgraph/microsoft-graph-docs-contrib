@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE /identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions/E3D4CE35-B16A-4E19-ADF2-616B64D336DC
+DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions/E3D4CE35-B16A-4E19-ADF2-616B64D336DC
 ```
 
 # [C#](#tab/csharp)

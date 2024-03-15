@@ -50,7 +50,7 @@ GET /sites/getAllSites
 }
 -->
 ``` http
-GET /sites/getAllSites
+GET https://graph.microsoft.com/v1.0/sites/getAllSites
 ```
 
 # [C#](#tab/csharp)
