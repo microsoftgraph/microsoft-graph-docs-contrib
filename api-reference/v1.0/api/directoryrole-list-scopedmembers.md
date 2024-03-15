@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Get the members of a directory role using role id
 
 #### Request
-The following is an example of a request for a directory role **id** `43a63cc2-582b-4d81-a79d-1591f91d5558`.
+The following example shows a request for a directory role **id** `43a63cc2-582b-4d81-a79d-1591f91d5558`.
 
 
 # [HTTP](#tab/http)
@@ -131,7 +131,7 @@ Content-type: application/json
 ### Example 2:  Get the scoped members of a directory role using roleTemplateId
 
 #### Request
-The following is an example of a request for a directory role with **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
+The following example shows a request for a directory role with **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

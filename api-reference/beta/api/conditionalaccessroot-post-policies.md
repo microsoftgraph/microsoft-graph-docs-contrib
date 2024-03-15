@@ -360,7 +360,7 @@ Content-type: application/json
 ### Example 3: Use all conditions/controls
 
 #### Request
-The following is an example of the request to use all the conditions/controls.
+The following example shows a request to use all the conditions/controls.
 
 # [HTTP](#tab/http)
 <!-- {
