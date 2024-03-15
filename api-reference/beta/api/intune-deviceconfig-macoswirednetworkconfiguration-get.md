@@ -3,7 +3,7 @@ title: "Get macOSWiredNetworkConfiguration"
 description: "Read properties and relationships of the macOSWiredNetworkConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

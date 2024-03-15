@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 ## Examples
 
 ### Request
-The following is an example of a request to retrieve a specific External Identities user flow.
+The following example shows a request to retrieve a specific External Identities user flow.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

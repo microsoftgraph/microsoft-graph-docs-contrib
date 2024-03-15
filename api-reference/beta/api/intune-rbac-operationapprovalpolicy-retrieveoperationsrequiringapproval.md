@@ -3,7 +3,7 @@ title: "retrieveOperationsRequiringApproval function"
 description: "Intune Rbac Operationapprovalpolicy Retrieveoperationsrequiringapproval Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

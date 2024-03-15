@@ -3,7 +3,7 @@ title: "Update windowsDefenderApplicationControlSupplementalPolicyAssignment"
 description: "Update the properties of a windowsDefenderApplicationControlSupplementalPolicyAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create deviceManagementConfigurationPolicyAssignment"
 description: "Create a new deviceManagementConfigurationPolicyAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

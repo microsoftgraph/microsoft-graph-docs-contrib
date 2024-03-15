@@ -30,7 +30,7 @@ Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconci
 
 ### Files
 
-Use the [Get file by contentStream][/graph/api/driveitem-get-contentstream?view=graph-rest-beta] method to download file content directly instead of getting a `302` redirect URL.
+Use the [Get file by contentStream](/graph/api/driveitem-get-contentstream?view=graph-rest-beta&preserve-view=true) method to download file content directly instead of getting a `302` redirect URL.
 
 ### Identity and access | Identity and sign-in
 

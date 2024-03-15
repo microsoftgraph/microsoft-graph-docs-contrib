@@ -3,7 +3,7 @@ title: "Delete deviceManagementResourceAccessProfileAssignment"
 description: "Deletes a deviceManagementResourceAccessProfileAssignment."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
