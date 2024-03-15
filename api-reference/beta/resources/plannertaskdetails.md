@@ -27,7 +27,7 @@ Represents the additional information about a task. Each [task](plannertask.md) 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|The collection of checklist items on the task.|
-|forms|[plannerFormsDictionary](plannerformsdictionary.md)| Read-only. Represents dictionary of data about the forms associated with a task. Each entry in the dictionary is a property-value pair, where the value is a [plannerFormReference](plannerformreference.md) object.|
+|forms|[plannerFormsDictionary](plannerformsdictionary.md)| Read-only. Represents dictionary of data about the forms associated with a task. Each entry in the dictionary is a key-value pair, where the value is a [plannerFormReference](plannerformreference.md) object.|
 |completionRequirements|[plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md)|Contains detailed information about requirements on the task.|
 |description|String|Description of the task.|
 |id|String| Read-only. ID of the task details. It's 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|

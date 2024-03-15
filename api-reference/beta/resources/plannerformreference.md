@@ -1,6 +1,6 @@
 ---
 title: "plannerFormReference resource type"
-description: "The **plannerFormReference** resource represents complete information about a form, including the form's display name, URL, and the response data."
+description: "Represents complete information about a form, including the form's display name, URL, and the response data."
 ms.localizationpriority: medium
 author: "cpanga22"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerFormReference** resource provides comprehensive details about a form, including the form's display name, URL, and the response data. It's typically used within a [plannerFormsDictionary](plannerFormsDictionary.md) object in the API.
+Represents complete details about a form, including the form's display name, URL, and the response data. This object is typically used as a value in the [plannerFormsDictionary] object, where each value must be a (plannerFormsDictionary.md) object.
 
 ## Properties
 | Property       | Type    |Description|

@@ -196,7 +196,7 @@ The collection must contain only one of these values.
 
 ### forms
 
-The **forms** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules), providing default values and overrides for specific conditions. Accepted values are:
+The **forms** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules), providing default values and overrides for specific conditions. Possible values are:
 
 * `block`: Forms can't be changed.
 * `addResponse`: Responses can be added to the form.
