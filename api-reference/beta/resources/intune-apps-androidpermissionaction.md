@@ -3,7 +3,7 @@ title: "androidPermissionAction resource type"
 description: "Mapping between an Android app permission and the action Android should take when that permission is requested."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete windowsWifiConfiguration"
 description: "Deletes a windowsWifiConfiguration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

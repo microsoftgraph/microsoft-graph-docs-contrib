@@ -51,7 +51,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here is an example of the request to delete an app role assignment.
+The following example shows a request to delete an app role assignment.
 
 
 # [HTTP](#tab/http)

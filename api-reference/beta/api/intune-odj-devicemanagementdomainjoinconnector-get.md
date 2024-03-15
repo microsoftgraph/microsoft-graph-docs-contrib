@@ -3,7 +3,7 @@ title: "Get deviceManagementDomainJoinConnector"
 description: "Read properties and relationships of the deviceManagementDomainJoinConnector object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

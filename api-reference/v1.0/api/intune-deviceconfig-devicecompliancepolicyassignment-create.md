@@ -3,7 +3,7 @@ title: "Create deviceCompliancePolicyAssignment"
 description: "Create a new deviceCompliancePolicyAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

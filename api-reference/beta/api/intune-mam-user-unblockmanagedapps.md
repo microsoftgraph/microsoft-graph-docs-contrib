@@ -3,7 +3,7 @@ title: "unblockManagedApps action"
 description: "Unblocks the managed app user from app check-in."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

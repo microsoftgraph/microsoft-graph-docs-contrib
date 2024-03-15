@@ -46,7 +46,7 @@ Here is a JSON representation of the resource.
 ```
 
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 <!--{
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 ```
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,

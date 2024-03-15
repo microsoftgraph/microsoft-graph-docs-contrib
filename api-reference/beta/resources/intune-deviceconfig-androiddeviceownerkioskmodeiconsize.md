@@ -3,7 +3,7 @@ title: "androidDeviceOwnerKioskModeIconSize enum type"
 description: "Android Device Owner Kiosk Mode managed home screen icon size."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
