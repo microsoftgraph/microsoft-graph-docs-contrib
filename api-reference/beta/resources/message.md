@@ -19,7 +19,7 @@ The maximum total number of recipients included in the **toRecipients**, **ccRec
 
 This resource supports:
 
-- Adding your own data as custom Internet message headers. Add custom headers only when creating a message, and name them starting with "x-". Once the message has been sent, you cannot modify the headers. To get the headers of a message, apply the `$select` query parameter in a [get message](../api/message-get.md) operation.
+- Adding your own data as custom Internet message headers. Add custom headers only when creating a message, and name them starting with "x-". After the message is sent, you cannot modify the headers. To get the headers of a message, apply the `$select` query parameter in a [get message](../api/message-get.md) operation.
 - Adding your own data as custom properties as [extensions](/graph/extensibility-overview).
 - Subscribing to [change notifications](/graph/webhooks).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
@@ -27,7 +27,7 @@ by providing a [delta](../api/message-delta.md) function.
 
 ## Methods
 
-| Method | Return Type |Description|
+| Method | Return type |Description|
 |:-------|:------------|:----------|
 |[List messages](../api/user-list-messages.md) |[message](message.md) collection | Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). |
 |[Create message](../api/user-post-messages.md) | [message](message.md) | Create a draft of a new message. |
@@ -38,7 +38,7 @@ by providing a [delta](../api/message-delta.md) function.
 |[createForward](../api/message-createforward.md)|[Message](message.md)|Create a draft forward message to include a comment or update any message properties all in one **createForward** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
 |[createReply](../api/message-createreply.md)|[Message](message.md)|Create a draft of a reply message to include a comment or update any message properties all in one **createReply** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
 |[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)|Create a draft of a reply-all message to include a comment or update any message properties, all in one **createReplyAll** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
-|[delta](../api/message-delta.md)|[message](message.md) collection| Get a set of messages that have been added, deleted, or updated in a specified folder.|
+|[delta](../api/message-delta.md)|[message](message.md) collection| Get a set of messages that were added, deleted, or updated in a specified folder.|
 |[forward](../api/message-forward.md)|None|Forward a message, add a comment or modify any updateable properties all in one **forward** call. The message is then saved in the Sent Items folder.|
 |[markAsJunk](../api/message-markasjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as junk. This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.|
 |[markAsNotJunk](../api/message-markasnotjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as not junk. This API removes the sender from the list of blocked senders and moves the message to the **Inbox** folder, when **moveToInbox** is `true`.|
@@ -97,7 +97,7 @@ by providing a [delta](../api/message-delta.md) function.
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message. **uniqueBody** is not returned by default but can be retrieved for a given message by use of the `?$select=uniqueBody` query. It can be in HTML or text format.|
 |unsubscribeData|String|The valid entries parsed from the List-Unsubscribe header.  This is the data for the mail command in the List-Unsubscribe header if UnsubscribeEnabled property is true.|
 |unsubscribeEnabled|Boolean|Indicates whether the message is enabled for unsubscribe.  Its valueTrue if the list-Unsubscribe header conforms to rfc-2369.|
-|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL cannot be accessed from within an iFrame.|
+|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.<br><br>The message opens in the browser if you are signed in to your mailbox via Outlook on the web. You are prompted to sign in if you are not already signed in with the browser.<br><br>This URL cannot be accessed from within an iFrame.|
 
 ## Relationships
 
