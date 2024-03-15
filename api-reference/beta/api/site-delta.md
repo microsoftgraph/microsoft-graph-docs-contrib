@@ -135,7 +135,7 @@ The following example shows a request that accesses the last page in a set and h
 
 #### Request
 
-The following example shows a request after the initial request.
+The following example shows a request.
 
 <!-- { "blockType": "request", "name": "get-sites-delta-last", "tags": "service.graph" }-->
 
