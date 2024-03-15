@@ -47,7 +47,11 @@ kiota generate --openapi https://aka.ms/graph/v1.0/openapi.yaml --include-path /
 Let's explore an example of generating a client for C# to call the To Do APIs. Using the [Microsoft Graph .NET client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet), the app could get the signed-in user's task lists with the following code.
 
 ```csharp
-var graphClient = new Microsoft.Graph.GraphServiceClient(...);
+using Azure.Identity;
+using Microsoft.Graph;
+
+var credential = new DeviceCodeCredential();
+var graphClient = new GraphServiceClient(credential);
 
 var taskLists = await graphClient.Me.Todo.Lists.GetAsync();
 ```
@@ -61,9 +65,47 @@ kiota generate --openapi https://aka.ms/graph/v1.0/openapi.yaml --include-path /
 The equivalent code looks like:
 
 ```csharp
-var tasksClient = new MyTaskApp.Client.TaskClient(...);
+using Azure.Identity;
+using Microsoft.Kiota.Authentication.Azure;
+using Microsoft.Kiota.Http.HttpClientLibrary;
+using MyTaskApp.Client;
+
+// The auth provider will only authorize requests to
+// the allowed hosts, in this case Microsoft Graph
+var allowedHosts = new [] { "graph.microsoft.com" };
+var graphScopes = new [] { "User.Read" };
+
+var credential = new DeviceCodeCredential();
+var authProvider = new AzureIdentityAuthenticationProvider(credential, allowedHosts, scopes: graphScopes);
+var adapter = new HttpClientRequestAdapter(authProvider);
+var taskClient = new TaskClient(adapter);
 
 var taskLists = await tasksClient.Me.Todo.Lists.GetAsync();
+```
+
+### Using features from core library
+
+Getting the user's task lists could return a [paged response](../paging.md). The Microsoft Graph core libraries provide a [page iterator](paging.md) class developers can use to page through the collection of task lists.
+
+For example, in C#, add a dependency to [Microsoft.Graph.Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet-core) (`dotnet add package Microsoft.Graph.Core`), then use the `PageIterator` class to page through the collection.
+
+```csharp
+using MyTaskApp.Client;
+using MyTaskApp.Client.Models;
+using Microsoft.Graph;
+
+// Using adapter and taskLists from previous example
+var pageIterator = PageIterator<TodoTaskList, TodoTaskListCollectionResponse>
+    .CreatePageIterator(
+        adapter,
+        taskLists,
+        (taskList) =>
+        {
+            Console.WriteLine(taskList.DisplayName);
+            return true;
+        });
+
+await pageIterator.IterateAsync();
 ```
 
 ## Related content
