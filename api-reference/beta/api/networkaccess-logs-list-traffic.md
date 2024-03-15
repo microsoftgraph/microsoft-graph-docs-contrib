@@ -3,7 +3,7 @@ title: "List networkAccessTraffic"
 description: "Get a list of log events for traffic routed through the Global Secure Access services."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

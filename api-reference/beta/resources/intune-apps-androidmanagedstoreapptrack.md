@@ -20,8 +20,8 @@ Contains track information for Android Managed Store apps.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|trackId|String|Unique track identifier.|
-|trackAlias|String|Friendly name for track.|
+|trackId|String|Unique track identifier. This property is read-only.|
+|trackAlias|String|Friendly name for track. This property is read-only.|
 
 ## Relationships
 None

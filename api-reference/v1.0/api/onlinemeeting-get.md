@@ -3,7 +3,7 @@ title: "Get onlineMeeting"
 description: "Retrieve the properties and relationships of an online meeting object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

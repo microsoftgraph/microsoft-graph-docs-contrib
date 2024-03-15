@@ -3,7 +3,7 @@ title: "List teamworkDevices"
 description: "Get a list of all Microsoft Teams-enabled devices provisioned for a tenant."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

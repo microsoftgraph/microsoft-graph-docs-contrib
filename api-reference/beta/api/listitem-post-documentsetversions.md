@@ -3,7 +3,7 @@ title: "Create documentSetVersion"
 description: "Create a new version of a document set item in a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
