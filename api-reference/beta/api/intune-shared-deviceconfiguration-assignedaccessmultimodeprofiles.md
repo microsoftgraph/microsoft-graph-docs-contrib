@@ -3,7 +3,7 @@ title: "assignedAccessMultiModeProfiles action"
 description: "Intune Shared Deviceconfiguration Assignedaccessmultimodeprofiles Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

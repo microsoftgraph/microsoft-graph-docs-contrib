@@ -9,16 +9,16 @@ ms.custom: scenarios:getting-started
 
 # Overview of Microsoft Graph Data Connect
 
-In a hybrid workplace, organizations must develop a data-driven culture in order to dynamically evolve. Today's organizations have an incredible amount of business data across applications and services in Microsoft 365.
+In a hybrid workplace, organizations must develop a data-driven culture to evolve dynamically. Today's organizations have an incredible amount of business data across applications and services in Microsoft 365.
  
 The potential this data holds is powerful; however, to remain competitive, organizations must unlock access to their Microsoft 365 data and streamline their manual analytical processes. Data is an organization's competitive advantage. 
 
 You can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph) to access your Microsoft 365 data for enterprise analytics. Data Connect provides secure, scalable access to relevant Microsoft 365 datasets in Microsoft Fabric, Azure Synapse, and Azure Data Factory. 
 
-Data Connect unlocks a number of enterprise analytics scenarios, including: 
+Data Connect unlocks several enterprise analytics scenarios, including: 
 
 - **Customer relationship analytics** - For commercial business leaders, go beyond traditional customer relationship management (CRM) insights and understand customer interactions and relationships based on communication and collaboration patterns. Customer relationship scenarios include customer relationship mesh, customer 360, customer complaint management, and conversation lineage. 
-- **Business process analytics** - For better operations, see how work really flows through the organization on a day-to-day basis. Pinpoint manual processes and workflow bottlenecks that can be automated or optimized. Business process scenarios include process discovery and automation, skills finder and talent alignment, and supply chain automation. 
+- **Business process analytics** - For better operations, see how work flows through the organization on a day-to-day basis. Pinpoint manual processes and workflow bottlenecks that can be automated or optimized. Business process scenarios include process discovery and automation, skills finder and talent alignment, and supply chain automation. 
 - **Security and compliance analytics** - To secure sensitive data, learn how employees use and share sensitive information. Implement anomaly detection, threat intelligence, audit log analysis, risk management, and legal forensics. Security and compliance scenarios include information sharing, fraud detection, and international threat detection. 
 - **People productivity analytics** - To drive transformation, export your [Microsoft Viva](/viva/microsoft-viva-overview) productivity metrics, so you can convert insights into solutions with digital adoption, smart meetings and content, hybrid workplaces, and cultural change. People productivity scenarios include culture-driven digital transformation, employee engagement and activity, hybrid work effectiveness, and organizational network analysis. 
 
@@ -29,7 +29,7 @@ Data Connect unlocks a number of enterprise analytics scenarios, including:
 With Data Connect, organizations can:
 
 - **Scale access to Microsoft 365 data:** Gain deep insights into the patterns of organizational collaboration.
-- **Accelerate time to insights:** Reduce the time to value and get updated reports out faster, and perform interactive analysis without the need for data migration.
+- **Accelerate time to insights:** Reduce the time to value and get updated reports out faster, and perform interactive analysis without data migration.
 - **Help to ensure security and governance:** Minimize compliance management overhead and provide access to secure data, empowering data and business users to make more informed and accurate data-driven decisions.
 
 To learn more about Data Connect features, see [Scale access to Microsoft 365 data with Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/scale-access-to-microsoft-365-data-with-microsoft-graph-data-connect/).
@@ -56,7 +56,7 @@ For more details about how to get started, see [Build your first Microsoft Graph
 
 ## Microsoft 365 data and datasets
 
-Organizations can access various types of Microsoft 365 data via Microsoft Graph Data Connect. Datasets are available from a wide variety of Microsoft 365 sources, including Microsoft Entra ID, Outlook, Teams, SharePoint, Viva Insights, and Microsoft groups — and the list is growing. 
+Organizations can access various types of Microsoft 365 data via Microsoft Graph Data Connect. Datasets are available from various Microsoft 365 sources, including Microsoft Entra ID, Outlook, Teams, SharePoint, Viva Insights, and Microsoft groups — and the list is growing. 
 
 ![An image that shows various types of Microsoft 365 data that organizations get though Microsoft Graph Data Connect.](images/data-connect-continuing-growth.png)
 
@@ -82,7 +82,7 @@ Templates help take use cases from hypothesis to implementation by:
 
 Data Connect helps secure Microsoft 365 data by minimizing compliance management overhead for Microsoft 365 administrators. 
 
-Choose from these compliance options for you applications that use Microsoft 365 data:
+Choose from these compliance options for your applications that use Microsoft 365 data:
 
 - See persistent data governance in a single view with [Microsoft Purview](/purview/purview). 
 - Minimize compliance management overhead by using specified detailed compliance policies for applications and users.
@@ -133,16 +133,16 @@ Microsoft Graph Data Connect has a rich network of enterprise technology partner
 
 | Partner        | Description |
 | ----------- | ----------- |
-| ![GainX logo.](images/data_connect_logo_gainx.png)   | **GainX** builds a comprehensive map of information flow and provide a data-driven, systemic view of how an organization is actually functioning. To learn more, see [Maximizing organizational performance with GainX Artificial Intelligence and Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/maximizing-organizational-performance-with-gainx-artificial-intelligence-and-microsoft-graph-data-connect). |
+| ![GainX logo.](images/data_connect_logo_gainx.png)   | **GainX** builds a comprehensive map of information flow and provides a data-driven, systemic view of how an organization is functioning. To learn more, see [Maximizing organizational performance with GainX Artificial Intelligence and Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/maximizing-organizational-performance-with-gainx-artificial-intelligence-and-microsoft-graph-data-connect). |
 | ![HCL logo.](images/data_connect_logo_hclsoftware.png)   | **HCL** conducts better workforce management, performance analysis, and improvement measures to understand employee productivity. |
-| ![Infosys logo.](images/data_connect_logo_infosys.png)   | **Infosys** gathers feedback, identify areas for improvement, and take action to improve employee engagement, productivity, and retention. |
+| ![Infosys logo.](images/data_connect_logo_infosys.png)   | **Infosys** gathers feedback, identifies areas for improvement, and takes action to improve employee engagement, productivity, and retention. |
 | ![Lotis Blue logo.](images/data_connect_logo_lotis_blue.png)   | **Lotis Blue** utilizes organizational network analysis (ONA) to enhance diversity, equity, and inclusion outcomes. Also applying ONA principles to improve customer relationships and revenue velocity. |
 | ![Neo4j logo.](images/data_connect_logo_neo4j.png)   | **Neo4j** constructs security and compliance analytics to uncover the hidden patterns of communication in your organization. To learn more, see [Using Microsoft Graph to understand enterprise communication](https://www.youtube.com/watch?v=no6iWuswR0c&list=PLWZJrkeLOrbaSmfaIM6ogv-LQUP0tleTw).  |
-| ![Neudesic logo.](images/data_connect_logo_neudesic.png)   | **Neudesic** extends their Microsoft 365 data and Viva Insights collaboration metrics into customer’s Azure environment to further display relevant metrics for employees within other systems and portals. |
-| ![Parabole logo.](images/data_connect_logo_parabole.png)   | **Parabole** illustrates true cost to maintain the channel, time spent with partners by product, and mismatches between partner investment & partner value. |
-| ![TCS logo.](images/data_connect_logo_tata_cs.png)   | **TLC** identifies patterns and trends in employee behavior during weekends. Gain insights into how weekend working affects overall employee happiness scores. |
+| ![Neudesic logo.](images/data_connect_logo_neudesic.png)   | **Neudesic** extends their Microsoft 365 data and Viva Insights collaboration metrics into the customer’s Azure environment to further display relevant metrics for employees within other systems and portals. |
+| ![Parabole logo.](images/data_connect_logo_parabole.png)   | **Parabole** illustrates the true cost to maintain the channel, time spent with partners by product, and mismatches between partner investment & partner value. |
+| ![TCS logo.](images/data_connect_logo_tata_cs.png)   | **TCS** identifies patterns and trends in employee behavior during weekends. Gain insights into how weekend working affects overall employee happiness scores. |
 | ![Veldhoen logo.](images/data_connect_logo_veldhoen.png)   | **Veldhoen** facilitates collaboration and connections between various business units within the company as a way to drive innovation. |
-| ![Wipro logo.](images/data_connect_logo_wipro.png)   | **Wipro** enables their organization to effectively manage and classify data classification during mergers, acquisitions, and divesture scenarios. |
+| ![Wipro logo.](images/data_connect_logo_wipro.png)   | **Wipro** enables their organization to effectively manage and classify data classification during mergers, acquisitions, and divestiture scenarios. |
 
 ## Pricing 
 

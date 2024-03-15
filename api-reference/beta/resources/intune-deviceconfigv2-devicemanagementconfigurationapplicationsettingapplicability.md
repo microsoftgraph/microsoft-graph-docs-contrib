@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationApplicationSettingApplicability resource ty
 description: "Applicability for a setting that can be targeted on managed Applications by Intune"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

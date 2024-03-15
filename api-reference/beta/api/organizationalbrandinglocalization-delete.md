@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request to delete the `fr-FR` localization object.
+The following example shows a request to delete the `fr-FR` localization object.
 
 
 # [HTTP](#tab/http)

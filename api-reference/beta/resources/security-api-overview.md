@@ -166,7 +166,7 @@ The [tiIndicator](tiindicator.md) entity allows customers to feed threat indicat
 You can integrate the [tiIndicator](tiindicator.md) entity into your application or use one of the following integrated threat intelligence platforms (TIP):
 
 - [Palo Alto Networks MineMeld Threat Intelligence Sharing](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld)
-- [MISP Open Source Threat Intelligence Platform](http://www.misp-project.org/) available through the [TI sample](https://aka.ms/tipmispsample)
+- [MISP Open Source Threat Intelligence Platform](http://www.misp-project.org/) available through the TI sample
 
 Threat indicators sent via the Microsoft Graph security API are available today in the following products:
 
@@ -262,13 +262,12 @@ The Microsoft Graph security API can open up new ways for you to engage with dif
 - [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
 - [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
 - [Node.js (JavaScript) sample](https://github.com/microsoftgraph/nodejs-security-sample)
-- [PowerShell sample](https://aka.ms/graphsecuritypowershellsample)
-- [Other samples or contribute a new sample](https://aka.ms/graphsecurityapicode)
+- [PowerShell sample](/powershell/scripting/developer/prog-guide/windows-powershell-sample-code)
 
 Explore other options to connect with the Microsoft Graph security API:
 
 - [Microsoft Graph security connectors for Logic Apps, Flow and Power Apps](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)
-- [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks)
+- [Jupyter notebook samples](/azure/machine-learning/samples-notebooks)
 
 Engage with the community:
 

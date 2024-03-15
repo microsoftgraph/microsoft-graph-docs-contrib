@@ -3,7 +3,7 @@ title: "Create windowsQualityUpdateCatalogItem"
 description: "Create a new windowsQualityUpdateCatalogItem object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

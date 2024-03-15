@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGUzYRgWAAA=/instances?startD
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "name": "get_instances",

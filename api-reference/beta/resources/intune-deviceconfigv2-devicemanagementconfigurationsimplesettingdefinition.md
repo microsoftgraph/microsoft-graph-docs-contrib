@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationSimpleSettingDefinition resource type"
 description: "Intune Deviceconfigv2 Devicemanagementconfigurationsimplesettingdefinition Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
