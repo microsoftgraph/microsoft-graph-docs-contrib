@@ -1,6 +1,6 @@
 ---
 title: "subscription resource type"
-description: "A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
+description: "Represents a subscription that allows a client app to receive change notifications about changes to data in Microsoft Graph."
 ms.localizationpriority: high
 author: "keylimesoda"
 ms.prod: "change-notifications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph.
+Represents a subscription that allows a client app to receive change notifications about changes to data in Microsoft Graph.
 
 For more information about subscriptions and change notifications, including resources that support change notifications, see [Set up notifications for changes in resource data](change-notifications-api-overview.md).
 
@@ -60,11 +60,11 @@ The following table shows the maximum expiration times for subscriptions per res
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -90,20 +90,20 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.subscription",
-  "id": "String (identifier)",
-  "resource": "String",
+  "applicationId": "String",
   "changeType": "String",
   "clientState": "String",
-  "notificationUrl": "String",
-  "expirationDateTime": "String (timestamp)",
-  "applicationId": "String",
   "creatorId": "String",
-  "includeResourceData": "Boolean",
-  "lifecycleNotificationUrl": "String",
   "encryptionCertificate": "String",
   "encryptionCertificateId": "String",
+  "expirationDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "includeResourceData": "Boolean",
   "latestSupportedTlsVersion": "String",
+  "lifecycleNotificationUrl": "String",
   "notificationQueryOptions": "String",
-  "notificationUrlAppId": "String"
+  "notificationUrl": "String",
+  "notificationUrlAppId": "String",
+  "resource": "String"
 }
 ```
