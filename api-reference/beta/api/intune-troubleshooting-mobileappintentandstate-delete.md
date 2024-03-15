@@ -3,7 +3,7 @@ title: "Delete mobileAppIntentAndState"
 description: "Deletes a mobileAppIntentAndState."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

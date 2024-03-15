@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Get the list of recommendations
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -170,7 +170,7 @@ Content-Type: application/json
 ### Example 2: Get a recommendation object without its associated resources by the recommendationType
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -283,7 +283,7 @@ Content-Type: application/json
 ### Example 3: Get a recommendation object with its associated impacted resources
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

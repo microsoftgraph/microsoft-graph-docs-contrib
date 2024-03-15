@@ -3,7 +3,7 @@ title: "Delete windowsAutopilotDeploymentProfilePolicySetItem"
 description: "Deletes a windowsAutopilotDeploymentProfilePolicySetItem."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

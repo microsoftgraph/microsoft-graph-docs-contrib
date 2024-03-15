@@ -123,7 +123,7 @@ Content-Length: 211
 ---
 
 #### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response"

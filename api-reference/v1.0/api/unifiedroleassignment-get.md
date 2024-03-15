@@ -156,7 +156,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request with the `$expand` query parameter.
+The following example shows a request with the `$expand` query parameter.
 
 
 

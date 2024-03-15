@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationGroupSettingInstance resource type"
 description: "Instance of a GroupSetting"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

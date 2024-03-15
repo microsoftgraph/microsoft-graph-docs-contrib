@@ -3,7 +3,7 @@ title: "chromeOSOnboardingSettings resource type"
 description: "Entity that represents a Chromebook tenant settings"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

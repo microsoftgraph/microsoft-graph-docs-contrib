@@ -3,7 +3,7 @@ title: "hardwareConfigurationFormat enum type"
 description: "Indicates the supported oems of hardware configuration"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

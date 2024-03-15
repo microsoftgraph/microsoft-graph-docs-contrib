@@ -70,7 +70,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Create a draft in JSON format to reply to an existing message
 The following example creates a reply draft, adds a comment and a recipient in the request body.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -138,7 +138,7 @@ Content-Type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -202,7 +202,7 @@ ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCA
 ```
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

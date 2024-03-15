@@ -3,7 +3,7 @@ title: "List deviceCompliancePolicySettingStateSummaries"
 description: "List properties and relationships of the deviceCompliancePolicySettingStateSummary objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -92,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{itemID}/workbook/names/{
 ---
 
 ### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "isEmpty": true

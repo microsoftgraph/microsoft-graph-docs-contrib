@@ -3,7 +3,7 @@ title: "Create windowsAppX"
 description: "Create a new windowsAppX object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

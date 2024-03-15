@@ -3,7 +3,7 @@ title: "enrollmentNotificationTemplateType enum type"
 description: "This enum indicates the Template type for which the enrollment notification applies."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
