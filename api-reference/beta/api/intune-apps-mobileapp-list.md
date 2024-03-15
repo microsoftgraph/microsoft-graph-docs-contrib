@@ -3,7 +3,7 @@ title: "List mobileApps"
 description: "List properties and relationships of the mobileApp objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

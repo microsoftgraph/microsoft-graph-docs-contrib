@@ -47,7 +47,6 @@ If successful, this method returns a `200 OK` response code and the image or fil
 >**Note:** Images don't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.
 
 ## Example
-
 ### Request
 
 The following example shows a request.
@@ -96,6 +95,7 @@ GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
 ---
 
 ### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",

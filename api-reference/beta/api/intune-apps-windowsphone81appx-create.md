@@ -3,7 +3,7 @@ title: "Create windowsPhone81AppX"
 description: "Create a new windowsPhone81AppX object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

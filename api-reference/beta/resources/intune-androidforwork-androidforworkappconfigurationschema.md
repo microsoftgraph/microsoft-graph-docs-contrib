@@ -3,7 +3,7 @@ title: "androidForWorkAppConfigurationSchema resource type"
 description: "Schema describing an Android for Work application's custom configurations."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "managedDeviceModelsAndManufacturers resource type"
 description: "Models and Manufactures meatadata for managed devices in the account"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

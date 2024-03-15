@@ -3,7 +3,7 @@ title: "Create deviceEnrollmentNotificationConfiguration"
 description: "Create a new deviceEnrollmentNotificationConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
