@@ -3,7 +3,7 @@ title: "customSubjectAlternativeName resource type"
 description: "Custom Subject Alternative Name definition"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

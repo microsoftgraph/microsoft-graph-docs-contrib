@@ -3,7 +3,7 @@ title: "Create mobileAppContentFile"
 description: "Create a new mobileAppContentFile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

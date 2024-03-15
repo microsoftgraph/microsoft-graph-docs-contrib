@@ -3,7 +3,7 @@ title: "Create microsoftTunnelHealthThreshold"
 description: "Create a new microsoftTunnelHealthThreshold object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

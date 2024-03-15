@@ -3,7 +3,7 @@ title: "Get termsAndConditionsGroupAssignment"
 description: "Read properties and relationships of the termsAndConditionsGroupAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

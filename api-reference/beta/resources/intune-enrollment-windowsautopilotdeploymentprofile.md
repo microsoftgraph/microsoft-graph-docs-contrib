@@ -3,7 +3,7 @@ title: "windowsAutopilotDeploymentProfile resource type"
 description: "Windows Autopilot Deployment Profile"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

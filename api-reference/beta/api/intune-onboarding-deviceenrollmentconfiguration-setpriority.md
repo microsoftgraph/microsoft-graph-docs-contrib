@@ -3,7 +3,7 @@ title: "setPriority action"
 description: "Intune Onboarding Deviceenrollmentconfiguration Setpriority Source_Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

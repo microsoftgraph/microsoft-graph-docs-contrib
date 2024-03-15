@@ -3,7 +3,7 @@ title: "Get intuneBrandingProfileAssignment"
 description: "Read properties and relationships of the intuneBrandingProfileAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
