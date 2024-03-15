@@ -1,6 +1,6 @@
 ---
 title: "List myDayTasks"
-description: "Retrieve a list of **plannertask** objects to be shown in MyDay view of the user."
+description: "Retrieve a list of **plannerTask** objects to be shown in the MyDay view of the user."
 ms.localizationpriority: medium
 author: "NupurGarg"
 ms.prod: "planner"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of **plannertask** objects to be shown in MyDay view of the user.
+Retrieve a list of **plannerTask** objects to be shown in the MyDay view of the user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

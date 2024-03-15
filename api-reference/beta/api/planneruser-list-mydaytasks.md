@@ -1,6 +1,6 @@
 ---
 title: "List myDayTasks"
-description: "Retrieve a list of **plannertask** objects to be shown in MyDay view of the user."
+description: "Retrieve a list of **plannerTask** objects to be shown in the MyDay view of the user."
 ms.localizationpriority: medium
 author: "NupurGarg"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of **plannertask** objects to be shown in MyDay view of the user.
+Retrieve a list of **plannerTask** objects to be shown in the MyDay view of the user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -46,7 +46,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -58,7 +58,9 @@ GET https://graph.microsoft.com/beta/me/planner/myDayTasks
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
