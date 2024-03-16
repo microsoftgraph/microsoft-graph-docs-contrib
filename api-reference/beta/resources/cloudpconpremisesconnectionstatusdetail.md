@@ -1,22 +1,19 @@
 ---
-title: "cloudPcOnPremisesConnectionStatusDetails resource type (deprecated)"
-description: "The status details of a Cloud PC Azure network connection."
+title: "cloudPcOnPremisesConnectionStatusDetail resource type"
+description: "Represents the status details of a Cloud PC Azure network connection."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.subservice: "cloud-pc"
+ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcOnPremisesConnectionStatusDetails resource type (deprecated)
+# cloudPcOnPremisesConnectionStatusDetail resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!CAUTION]
-> The **cloudPcOnPremisesConnectionStatusDetails** resource is deprecated and stopped returning data on January 31, 2024. Going forward, use the [cloudPcOnPremisesConnectionStatusDetail](../resources/cloudpconpremisesconnectionstatusdetail.md) resource.
-
-The status details of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
+Represents the status details of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
@@ -35,15 +32,16 @@ None.
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails"
+  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail"
 }
 -->
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
+  "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
   "endDateTime": "String (timestamp)",
   "healthChecks": [{ "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck" }],
   "startDateTime": "String (timestamp)"

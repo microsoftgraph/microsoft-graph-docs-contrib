@@ -172,7 +172,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
 ```
 
 # [C#](#tab/csharp)
