@@ -56,6 +56,8 @@ GET /auditLogs/signIns
 
 This method supports the `$top`, `$skiptoken`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+To avoid having the request time out, apply the `$filter` parameter with a time range for which to get all sign-ins, as shown in [Example 1](signin-list.md#example-1-list-all-sign-ins-during-a-specific-time-period).
+
 ## Request headers
 
 |Name|Description|
@@ -68,13 +70,11 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 ## Examples
 
-### Example 1: List all sign-ins during a specific time frame
+### Example 1: List all sign-ins during a specific time period
 
 #### Request
 
-The following example shows a request.
-
-The time range filter is recommended for getting a list of all sign-ins to avoid the request timing out.
+The following example shows a request to list all sign-ins during a specific time period.
 
 # [HTTP](#tab/http)
 <!-- {
