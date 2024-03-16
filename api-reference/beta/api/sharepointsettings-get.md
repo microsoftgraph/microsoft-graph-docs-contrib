@@ -3,7 +3,7 @@ title: "Get sharepointSettings"
 description: "Get the tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [settings](../
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

@@ -3,7 +3,7 @@ title: "Update channel"
 description: "Update the properties of the specified channel."
 author: "akjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -76,7 +76,7 @@ PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e2026
 
 #### Response
 
-Here's an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response"
 } -->
@@ -89,7 +89,6 @@ HTTP/1.1 204 No Content
 #### Request
 
 The following example shows a request to update the [moderation settings](../resources/channelmoderationsettings.md) of a channel. Only team owners can perform this operation.
-
 
 
 # [HTTP](#tab/http)
@@ -151,7 +150,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response"

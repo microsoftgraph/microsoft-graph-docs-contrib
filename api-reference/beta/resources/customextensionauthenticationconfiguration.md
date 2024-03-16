@@ -3,7 +3,7 @@ title: "customExtensionAuthenticationConfiguration resource type"
 description: "Abstract base type that exposes the configuration for the **authenticationConfiguration** property of the derived types that inherit from the customCalloutExtension abstract type"
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

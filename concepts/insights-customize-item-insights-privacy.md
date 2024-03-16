@@ -3,7 +3,7 @@ title: "Customize item insights privacy in Microsoft Graph"
 description: "Configure the visibility of insights derived from Microsoft Graph by using the Microsoft admin center, PowerShell, or the REST API userInsightsSettings resource."
 author: "simonhult"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 ms.custom: scenarios:getting-started
 ---
 

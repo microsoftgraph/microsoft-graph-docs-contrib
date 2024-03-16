@@ -4,7 +4,7 @@ description: "Groups are collections of principals with shared access to resourc
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: conceptualPageType
 ms.date: 09/12/2023
 ---

@@ -2,7 +2,7 @@
 title: "reportRoot: getYammerDeviceUsageUserDetail function"
 description: "Get details about Yammer device usage by user."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---

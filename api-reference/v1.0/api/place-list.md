@@ -3,7 +3,7 @@ title: "List places"
 description: "Retrieve a list of place objects."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 

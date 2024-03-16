@@ -3,7 +3,7 @@ title: "accessPackageAssignmentApprovalSettings complex type"
 description: "Specifies the settings for approval of a request for an access package assignment in an access package assignment policy."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageAssignmentApprovalSettings complex type

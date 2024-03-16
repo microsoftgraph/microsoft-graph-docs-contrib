@@ -4,7 +4,7 @@ description: "Deletes a fido2AuthenticationMethod object."
 author: "calvinlui"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

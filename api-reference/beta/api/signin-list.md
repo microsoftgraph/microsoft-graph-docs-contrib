@@ -4,7 +4,7 @@ doc_type: apiPageType
 description: "Get a list of the user sign-ins in a Microsoft Entra tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 ---
 
 # List signIns
@@ -78,7 +78,7 @@ In this example, the response object shows the user signed in using MFA that was
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

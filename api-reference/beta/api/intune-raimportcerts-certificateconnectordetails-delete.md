@@ -3,7 +3,7 @@ title: "Delete certificateConnectorDetails"
 description: "Deletes a certificateConnectorDetails."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create customAppScope"
 description: "Create a new customAppScope object for an RBAC provider."
 ms.localizationpriority: medium
 author: "cubika"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 

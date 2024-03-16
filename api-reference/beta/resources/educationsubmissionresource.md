@@ -3,7 +3,7 @@ title: "educationSubmissionResource resource type"
 description: "A wrapper around a resource for use on a submission."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

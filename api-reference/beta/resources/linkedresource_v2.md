@@ -3,7 +3,7 @@ title: "linkedResource_v2 resource type"
 description: "Represents an item in a partner application related to a baseTask"
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

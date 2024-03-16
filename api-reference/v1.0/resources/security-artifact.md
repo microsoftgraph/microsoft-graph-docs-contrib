@@ -3,7 +3,7 @@ title: "artifact resource type"
 description: "Represents an abstract entity found online by Microsoft security services."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "microsoftApplicationDataAccessSettings resource type"
 description: "Represents settings to determine access from Microsoft apps to Microsoft 365 data belonging to users in an organization. For example, given the proper authorization, whether only Microsoft 365 apps (such as Word and Excel) can access users' Microsoft 365 data, or whether other Microsoft apps (such as Windows), can access the data as well."
 author: "ttomi"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 

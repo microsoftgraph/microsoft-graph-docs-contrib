@@ -3,7 +3,7 @@ title: "Replace schedulingGroup"
 description: "Replace an existing schedulingGroup."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

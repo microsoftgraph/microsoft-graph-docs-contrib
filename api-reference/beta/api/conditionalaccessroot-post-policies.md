@@ -4,7 +4,7 @@ description: "Create a new conditionalAccessPolicy."
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -360,7 +360,7 @@ Content-type: application/json
 ### Example 3: Use all conditions/controls
 
 #### Request
-The following is an example of the request to use all the conditions/controls.
+The following example shows a request to use all the conditions/controls.
 
 # [HTTP](#tab/http)
 <!-- {

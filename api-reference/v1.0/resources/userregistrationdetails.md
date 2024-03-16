@@ -3,7 +3,7 @@ title: "userRegistrationDetails resource type"
 description: "Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of, such as multifactor authentication, self-service password reset, and passwordless authentication."
 author: "kvenkit"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

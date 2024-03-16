@@ -58,10 +58,8 @@ items:
                 href: api/user-invalidateallrefreshtokens.md
               - name: Retry service provisioning
                 href: api/user-retryserviceprovisioning.md
-              - name: Delete password-based SSO credential
-                href: api/user-deletepasswordsinglesignoncredentials.md
-              - name: Get password-based SSO credentials
-                href: api/user-getpasswordsinglesignoncredentials.md
+              - name: Convert external to member user
+                href: api/user-convertexternaltointernalmemberuser.md
           - name: App role assignment
             href: resources/approleassignment.md
             items:
@@ -304,6 +302,12 @@ items:
                 href: api/outlookuser-post-tasks.md
               - name: List tasks
                 href: api/outlookuser-list-tasks.md
+          - name: Password-based SSO credentials
+            items:
+            - name: Get
+              href: api/user-getpasswordsinglesignoncredentials.md
+            - name: Delete
+              href: api/user-deletepasswordsinglesignoncredentials.md
           - name: People
             items:
               - name: Person
@@ -452,6 +456,8 @@ items:
                 href: api/group-get.md
               - name: Update group
                 href: api/group-update.md
+              - name: Upsert group
+                href: api/group-upsert.md
               - name: Delete group
                 href: api/group-delete.md
               - name: Renew group
@@ -717,6 +723,8 @@ items:
                 href: api/opentypeextension-get.md
       - name: Applications
         items:
+          - name: Overview
+            href: resources/applications-api-overview.md
           - name: Application
             href: resources/application.md
             items:
@@ -728,6 +736,8 @@ items:
                 href: api/application-get.md
               - name: Update application
                 href: api/application-update.md
+              - name: Upsert application
+                href: api/application-upsert.md
               - name: Delete application
                 href: api/application-delete.md
               - name: Get delta
@@ -781,6 +791,8 @@ items:
                         href: api/federatedidentitycredential-get.md
                       - name: Update
                         href: api/federatedidentitycredential-update.md
+                      - name: Upsert
+                        href: api/federatedidentitycredential-upsert.md                        
                       - name: Delete
                         href: api/federatedidentitycredential-delete.md
               - name: Owners
@@ -793,30 +805,6 @@ items:
                     href: api/application-delete-owners.md
               - name: Policies
                 items:
-                  - name: Remote desktop security configuration policy
-                    href: resources/remotedesktopsecurityconfiguration.md
-                    items:
-                      - name: Create
-                        href: api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-                      - name: Get
-                        href: api/remotedesktopsecurityconfiguration-get.md
-                      - name: Update
-                        href: api/remotedesktopsecurityconfiguration-update.md
-                      - name: Delete
-                        href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-                      - name: Target device groups
-                        href: resources/targetdevicegroup.md
-                        items:
-                          - name: List
-                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
-                          - name: Create
-                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
-                          - name: Get
-                            href: api/targetdevicegroup-get.md
-                          - name: Update
-                            href: api/targetdevicegroup-update.md
-                          - name: Delete
-                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -935,6 +923,8 @@ items:
                 href: api/serviceprincipal-get.md
               - name: Update service principal
                 href: api/serviceprincipal-update.md
+              - name: Upsert service principal
+                href: api/serviceprincipal-upsert.md
               - name: Delete service principal
                 href: api/serviceprincipal-delete.md
               - name: List deleted service principals
@@ -1049,6 +1039,40 @@ items:
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remove
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: Password-based SSO credentials
+                    items:
+                      - name: Create
+                        href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
+                      - name: Get
+                        href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
+                      - name: Update
+                        href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
+                      - name: Delete
+                        href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
+                  - name: Remote desktop security configuration policy
+                    href: resources/remotedesktopsecurityconfiguration.md
+                    items:
+                      - name: Create
+                        href: api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
+                      - name: Get
+                        href: api/remotedesktopsecurityconfiguration-get.md
+                      - name: Update
+                        href: api/remotedesktopsecurityconfiguration-update.md
+                      - name: Delete
+                        href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
+                      - name: Target device groups
+                        href: resources/targetdevicegroup.md
+                        items:
+                          - name: List
+                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
+                          - name: Create
+                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
+                          - name: Get
+                            href: api/targetdevicegroup-get.md
+                          - name: Update
+                            href: api/targetdevicegroup-update.md
+                          - name: Delete
+                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -1067,16 +1091,6 @@ items:
                         href: api/serviceprincipal-list-tokenlifetimepolicies.md
                       - name: Remove
                         href: api/serviceprincipal-delete-tokenlifetimepolicies.md
-              - name: Single sign on
-                items:
-                  - name: Create password single sign on credentials
-                    href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
-                  - name: Get password single sign on credentials
-                    href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
-                  - name: Update password single sign on credentials
-                    href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
-                  - name: Delete password single sign on credentials
-                    href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Synchronization
             items:
               - name: Overview
@@ -1387,7 +1401,7 @@ items:
           - name: eDiscovery (preview)
             items:
               - name: Overview
-                href: resources/ediscovery-eDiscoveryapioverview.md
+                href: resources/ediscovery-ediscoveryapioverview.md
               - name: eDiscovery case
                 href: resources/ediscovery-case.md
                 items:
@@ -1599,6 +1613,34 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Delete a history item
                     href: api/projectrome-delete-historyitem.md
+          - name: Roaming data
+            items:
+              - name: Cloud clipboard
+                href: resources/cloudclipboardroot.md
+                items:
+                  - name: List
+                    href: api/cloudclipboardroot-list-items.md
+              - name: Cloud clipboard item
+                href: resources/cloudclipboarditem.md
+                items:
+                  - name: List
+                    href: api/cloudclipboardroot-list-items.md
+                  - name: Get
+                    href: api/cloudclipboarditem-get.md
+              - name: Windows settings
+                href: resources/windowssetting.md
+                items:
+                  - name: List
+                    href: api/usersettings-list-windows.md
+                  - name: Get
+                    href: api/windowssetting-get.md
+              - name: Windows setting instance                    
+                href: resources/windowssettinginstance.md
+                items:              
+                  - name: List
+                    href: api/windowssetting-list-instances.md
+                  - name: Get
+                    href: api/windowssettinginstance-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:
@@ -1701,7 +1743,7 @@ items:
                 href: api/bookingstaffmember-delete.md
       - name: Device and app management
         items:
-          - name: Browser management (preview)
+          - name: Browser management
             displayName: Edge, Internet Explorer, IE mode, site list
             items:
               - name: Overview
@@ -10329,7 +10371,7 @@ items:
                     href: api/windowsupdates-updatepolicy-update.md
                   - name: Delete
                     href: api/windowsupdates-updatepolicy-delete.md
-          - name: Microsoft 365 apps (preview)
+          - name: Microsoft 365 apps
             displayName: Microsoft 365 applications
             items:
               - name: Admin Microsoft 365 apps
@@ -10644,6 +10686,8 @@ items:
                 href: api/educationclass-post-category.md
               - name: Get delta
                 href: api/educationclass-delta.md
+              - name: Set default defaultgradingscheme
+                href: api/educationassignmentsettings-post-defaultgradingscheme.md
           - name: Users
             href: resources/educationuser.md
             items:
@@ -10714,6 +10758,8 @@ items:
                 href: api/educationassignment-activate.md
               - name: Deactivate assignment
                 href: api/educationassignment-deactivate.md
+              - name: Create grading scheme
+                href: api/educationassignment-post-gradingscheme.md
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -10748,6 +10794,15 @@ items:
                 href: api/educationgradingcategory-update.md
               - name: Delete
                 href: api/educationassignment-delete-gradingcategory.md
+          - name: Grading Schemes
+            href: resources/educationgradingscheme.md
+            items:
+              - name: Add grading scheme
+                href: api/educationgradingscheme-post.md
+              - name: Update grading scheme
+                href: api/educationassignmentsettings-update.md
+              - name: Delete grading scheme
+                href: api/educationgradingscheme-delete.md
           - name: Module
             href: resources/educationmodule.md
             items:
@@ -11061,8 +11116,10 @@ items:
                 href: api/driveitem-copy.md
               - name: Create folder
                 href: api/driveitem-post-children.md
-              - name: Download file
+              - name: Download file (deprecated)
                 href: api/driveitem-get-content.md
+              - name: Download file
+                href: api/driveitem-get-contentstream.md
               - name: Extract sensitivity labels
                 href: api/driveitem-extractsensitivitylabels.md
               - name: Follow item
@@ -13429,6 +13486,16 @@ items:
                         href: api/internaldomainfederation-update.md
                       - name: Delete
                         href: api/internaldomainfederation-delete.md
+                  - name: Federated token validation (preview)
+                    items:
+                    - name: Federated token validation policy
+                      href: resources/federatedtokenvalidationpolicy.md
+                    - name: List
+                      href: api/policyroot-list-federatedtokenvalidationpolicy.md
+                    - name: Get
+                      href: api/federatedtokenvalidationpolicy-get.md
+                    - name: Update
+                      href: api/federatedtokenvalidationpolicy-update.md
               - name: Identity provider (deprecated)
                 items:
                   - name: Identity provider type
@@ -13824,30 +13891,6 @@ items:
                       href: api/permissiongrantpreapprovalpolicy-update.md
                     - name: Delete
                       href: api/permissiongrantpreapprovalpolicy-delete.md
-                  - name: Remote desktop security configuration policy
-                    href: resources/remotedesktopsecurityconfiguration.md
-                    items:
-                      - name: Create
-                        href: api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-                      - name: Get
-                        href: api/remotedesktopsecurityconfiguration-get.md
-                      - name: Update
-                        href: api/remotedesktopsecurityconfiguration-update.md
-                      - name: Delete
-                        href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-                      - name: Target device groups
-                        href: resources/targetdevicegroup.md
-                        items:
-                          - name: List
-                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
-                          - name: Create
-                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
-                          - name: Get
-                            href: api/targetdevicegroup-get.md
-                          - name: Update
-                            href: api/targetdevicegroup-update.md
-                          - name: Delete
-                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -16423,6 +16466,49 @@ items:
                     href: api/partners-billing-unbilledusage-export.md
       - name: Search
         items:
+          - name: Answer
+            items:
+              - name: Overview
+                href: resources/search-api-answers-overview.md
+              - name: Acronym
+                href: resources/search-acronym.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-acronyms.md
+                  - name: Create
+                    href: api/search-searchentity-post-acronyms.md
+                  - name: Get
+                    href: api/search-acronym-get.md
+                  - name: Update
+                    href: api/search-acronym-update.md
+                  - name: Delete
+                    href: api/search-acronym-delete.md
+              - name: Bookmark
+                href: resources/search-bookmark.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-bookmarks.md
+                  - name: Create
+                    href: api/search-searchentity-post-bookmarks.md
+                  - name: Get
+                    href: api/search-bookmark-get.md
+                  - name: Update
+                    href: api/search-bookmark-update.md
+                  - name: Delete
+                    href: api/search-bookmark-delete.md
+              - name: QnA
+                href: resources/search-qna.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-qnas.md
+                  - name: Create
+                    href: api/search-searchentity-post-qnas.md
+                  - name: Get
+                    href: api/search-qna-get.md
+                  - name: Update
+                    href: api/search-qna-update.md
+                  - name: Delete
+                    href: api/search-qna-delete.md
           - name: Query
             items:
               - name: Overview
@@ -16433,49 +16519,6 @@ items:
                 href: resources/searchresponse.md
               - name: Query data
                 href: api/search-query.md
-          - name: Answer
-            items:
-              - name: Overview
-                href: resources/search-api-answers-overview.md
-              - name: Acronym
-                href: resources/search-acronym.md
-                items:
-                  - name: List acronyms
-                    href: api/search-searchentity-list-acronyms.md
-                  - name: Create acronym
-                    href: api/search-searchentity-post-acronyms.md
-                  - name: Get acronym
-                    href: api/search-acronym-get.md
-                  - name: Update acronym
-                    href: api/search-acronym-update.md
-                  - name: Delete acronym
-                    href: api/search-acronym-delete.md
-              - name: Bookmark
-                href: resources/search-bookmark.md
-                items:
-                  - name: List bookmarks
-                    href: api/search-searchentity-list-bookmarks.md
-                  - name: Create bookmark
-                    href: api/search-searchentity-post-bookmarks.md
-                  - name: Get bookmark
-                    href: api/search-bookmark-get.md
-                  - name: Update bookmark
-                    href: api/search-bookmark-update.md
-                  - name: Delete bookmark
-                    href: api/search-bookmark-delete.md
-              - name: QnA
-                href: resources/search-qna.md
-                items:
-                  - name: List qnas
-                    href: api/search-searchentity-list-qnas.md
-                  - name: Create qna
-                    href: api/search-searchentity-post-qnas.md
-                  - name: Get qna
-                    href: api/search-qna-get.md
-                  - name: Update qna
-                    href: api/search-qna-update.md
-                  - name: Delete qna
-                    href: api/search-qna-delete.md
       - name: Security
         items:
           - name: Overview
@@ -16901,6 +16944,17 @@ items:
                     href: api/security-ediscoverycase-delete-tags.md
                   - name: List tags as hierarchy
                     href: api/security-ediscoveryreviewtag-ashierarchy.md
+          - name: Email and collaboration protection
+            items:
+            - name: Analyzed email (preview)
+              href: resources/security-analyzedemail.md
+              items:
+                - name: List
+                  href: api/security-collaborationroot-list-analyzedemails.md
+                - name: Get
+                  href: api/security-analyzedemail-get.md
+                - name: Remediate
+                  href: api/security-analyzedemail-remediate.md
           - name: Information protection
             items:
               - name: Labels (deprecated)

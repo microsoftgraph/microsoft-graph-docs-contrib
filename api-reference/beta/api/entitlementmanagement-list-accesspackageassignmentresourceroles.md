@@ -3,7 +3,7 @@ title: "List accessPackageAssignmentResourceRoles"
 description: "Retrieve a list of accessPackageAssignmentResourceRole objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

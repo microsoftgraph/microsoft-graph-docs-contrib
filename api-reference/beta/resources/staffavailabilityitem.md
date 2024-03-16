@@ -3,7 +3,7 @@ title: "staffAvailabilityItem resource type"
 description: "Represents the available and busy time slots of a Microsoft Bookings staff member."
 author: "kwekua"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

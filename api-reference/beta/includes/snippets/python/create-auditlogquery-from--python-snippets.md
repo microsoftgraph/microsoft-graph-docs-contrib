@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.audit_log_query import AuditLogQuery
+from msgraph.generated.models.audit_log_record_type import AuditLogRecordType
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,6 +15,9 @@ request_body = AuditLogQuery(
 	display_name = "String",
 	filter_start_date_time = "String (timestamp)",
 	filter_end_date_time = "String (timestamp)",
+	record_type_filters = [
+		AuditLogRecordType.ExchangeAdmin,
+	],
 	keyword_filter = "String",
 	operation_filters = [
 		"String",
@@ -32,7 +36,6 @@ request_body = AuditLogQuery(
 	],
 	status = AuditLogQueryStatus.NotStarted,
 	additional_data = {
-			"record_type_filter" : "String",
 			"service_filter" : "String",
 	}
 )

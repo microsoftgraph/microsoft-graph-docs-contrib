@@ -3,7 +3,7 @@ title: "Delete timeCard"
 description: "Delete a timeCard instance in the schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

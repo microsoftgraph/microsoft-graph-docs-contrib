@@ -3,7 +3,7 @@ title: "groupPolicyDefinitionClassType enum type"
 description: "Group Policy Definition Class Type."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

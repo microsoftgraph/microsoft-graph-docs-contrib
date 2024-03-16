@@ -3,7 +3,7 @@ title: "bookingsBusiness: getStaffAvailability"
 description: "Get the availability information of staff members of a Microsoft Bookings calendar."
 ms.localizationpriority: medium
 author: kwekua
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a [staffAvailabi
 ## Example
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

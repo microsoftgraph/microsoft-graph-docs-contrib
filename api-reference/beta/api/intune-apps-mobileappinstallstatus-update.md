@@ -3,7 +3,7 @@ title: "Update mobileAppInstallStatus"
 description: "Update the properties of a mobileAppInstallStatus object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph API to integrate people and workplace intelligen
 description: "Microsoft Graph enables access to useful data about people, their profile, documents they interact with, and work patterns, and supports gestures in a user's social context."
 ms.localizationpriority: high
 author: "simonhult"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: conceptualPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List serviceStorageQuotaBreakdown"
 description: "Get a list of serviceStorageQuotaBreakdown objects and their properties."
 author: "BarryShehadeh"
 ms.localizationpriority: medium
-ms.prod: files
+ms.subservice: onedrive
 doc_type: apiPageType
 ---
 

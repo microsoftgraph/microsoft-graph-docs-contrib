@@ -3,7 +3,7 @@ title: "Create accessPackageAssignmentRequest"
 description: "Create a new accessPackageAssignmentRequest."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -64,7 +64,7 @@ If this is an `AdminAdd` request, then subsequently an [accessPackageAssignment]
 ### Example 1: Admin requests a direct assignment for a user already in the directory
 #### Request
 
-The following is an example of the request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user. Because the [accessPackageSubject](../resources/accesspackagesubject.md) might not yet exist, the value of the **targetID** is the object ID of the user being assigned, the value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
+The following example shows a request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user. Because the [accessPackageSubject](../resources/accesspackagesubject.md) might not yet exist, the value of the **targetID** is the object ID of the user being assigned, the value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
  
 
 # [HTTP](#tab/http)
@@ -150,7 +150,7 @@ Content-type: application/json
 ### Example 2: User requests a package and answers questions for approval
 #### Request
 
-The following is an example of a request where the requestor provided answers to the approver to help them make their decision.
+The following example shows a request where the requestor provided answers to the approver to help them make their decision.
  
 
 
@@ -518,7 +518,7 @@ Content-type: application/json
 ### Example 5: Admin requests a direct assignment for a user not yet in the directory
 #### Request
 
-The following is an example of the request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user, for a user who does not exist in the directory. The value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
+The following example shows a request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user, for a user who does not exist in the directory. The value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
 
 
 # [HTTP](#tab/http)

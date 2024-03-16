@@ -4,7 +4,7 @@ description: "Create a new authenticationCombinationConfiguration object. In use
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ If successful, this method returns a `201 Created` response code and a [fido2Com
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +116,7 @@ Content-length: 130
 ---
 
 ### Response
-Here's an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
