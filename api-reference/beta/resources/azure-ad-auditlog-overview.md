@@ -3,7 +3,7 @@ title: "Activity reports API overview"
 description: "Use the activity reports API in Microsoft Graph to access the reports that Microsoft Entra creates to help you track user activity in a tenant."
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 author: "egreenberg14"
 ms.date: 09/16/2022
 ---

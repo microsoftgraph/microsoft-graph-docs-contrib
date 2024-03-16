@@ -3,7 +3,7 @@ title: "Create iosExpeditedCheckinConfiguration"
 description: "Create a new iosExpeditedCheckinConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

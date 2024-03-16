@@ -4,7 +4,7 @@ description: Get the mail folder collection under the root folder of the signed-
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 <!-- markdownlint-disable MD001 MD022 MD024 MD025 MD051-->

@@ -34,7 +34,7 @@ GET /admin/people/profileCardProperties/{id}
 
 ## Optional query parameters
 
-This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -124,7 +124,7 @@ Content-type: application/json
       "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "ru-RU",
+          "languageTag": "ru",
           "displayName": "центр затрат"
         }
       ]

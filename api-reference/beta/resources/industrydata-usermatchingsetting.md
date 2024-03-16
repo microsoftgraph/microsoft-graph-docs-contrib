@@ -3,7 +3,7 @@ title: "userMatchingSetting resource type"
 description: "Represents the rules for matching a user in a roleGroup with a user object from Microsoft Entra ID."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

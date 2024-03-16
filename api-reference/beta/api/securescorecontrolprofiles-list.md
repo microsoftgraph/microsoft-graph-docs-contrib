@@ -3,7 +3,7 @@ title: "List secureScoreControlProfiles"
 description: "Retrieve the properties and relationships of a secureScoreControlProfiles object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: security
+ms.subservice: security
 author: "preetikr"
 ---
 

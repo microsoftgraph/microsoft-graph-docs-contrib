@@ -4,7 +4,7 @@ description: "Retrieve a list of the passwordlessMicrosoftAuthenticatorAuthentic
 author: "mjsantani"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

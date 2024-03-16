@@ -3,7 +3,7 @@ title: "horizontalSectionColumn resource type"
 description: Represents a vertical column in a given horizontal section
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

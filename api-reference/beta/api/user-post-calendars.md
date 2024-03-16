@@ -3,7 +3,7 @@ title: "Create calendar"
 description: "Create a new calendar for a user."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ If successful, this method returns `201 Created` response code and a [calendar](
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

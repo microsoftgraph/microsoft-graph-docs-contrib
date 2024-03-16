@@ -3,7 +3,7 @@ title: "Create customSecurityAttributeDefinition"
 description: "Create a new customSecurityAttributeDefinition object."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -75,7 +75,7 @@ The following example adds a new custom security attribute definition that is a 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -171,7 +171,7 @@ The following example adds a new custom security attribute definition that suppo
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -270,7 +270,7 @@ The following example adds a new custom security attribute definition with a lis
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

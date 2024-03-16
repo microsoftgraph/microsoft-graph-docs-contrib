@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "Delete bundle"
 description: "Delete a bundle of driveItems."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 Delete a [bundle][] of driveItems by using its **id**.
 Deleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.
-It doesn't, however, remove the items that were referenced by the bundle.
-They'll remain in their parent folders.
+It doesn't, however, remove the items referenced by the bundle.
+They remain in their parent folders.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -40,7 +40,7 @@ DELETE /drive/items/{bundle-id}
 | Name          | Description  |
 |:------------- |:------------ |
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| if-match      | eTag. Optional. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the bundle, a `412 Precondition Failed` response is returned and the bundle won't be deleted.|
+| if-match      | eTag. Optional. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the bundle, a `412 Precondition Failed` response is returned and the bundle isn't deleted.|
 
 ## Request body
 
@@ -56,7 +56,7 @@ For information about error responses, see [Microsoft Graph error responses and 
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-bundle" } -->
@@ -101,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 

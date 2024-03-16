@@ -3,7 +3,7 @@ title: "Get mobileAppInstallStatus"
 description: "Read properties and relationships of the mobileAppInstallStatus object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

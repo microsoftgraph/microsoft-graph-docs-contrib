@@ -1,9 +1,9 @@
 ---
 author: spgraph-docs-team
 title: Create bundle
-description: Create a bundle of driveItems
+description: Create a bundle of driveItems.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ In the request body, supply a JSON representation of the bundle to be created.
 
 ## Response
 
-If the request is successful, the [driveItem](../resources/driveitem.md) representing the newly created bundle will be returned.
+If the request is successful, the [driveItem](../resources/driveitem.md) representing the newly created bundle is returned.
 
 Read the [Error Responses][error-response] topic for more info about how errors are returned.
 
@@ -55,11 +55,12 @@ Read the [Error Responses][error-response] topic for more info about how errors 
 ### Example 1: Create a bundle
 
 The following example shows how to create a basic new bundle.
-This request will create a new bundle named `Just some files` and add two existing items to the bundle.
+This request creates a new bundle named `Just some files` and adds two existing items to the bundle.
 This bundle can be used to share a collection of files with other users without sharing the folder those items are stored in.
 
 #### Request
 
+The following example shows a request. 
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-bundle" } -->
@@ -115,6 +116,8 @@ Content-Type: application/json
 
 #### Response
 
+
+The following example shows the response.
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
@@ -138,6 +141,7 @@ The request to create a new photo album is similar, although inside the bundle f
 
 #### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-album" } -->
@@ -192,6 +196,9 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
@@ -208,14 +215,11 @@ Content-Type: application/json
 }
 ```
 
-The response object shown here might be shortened for readability.
-
-If _@microsoft.graph.conflictBehavior_ is set to **rename** and a bundle with the same name already exists, the new bundle name will be updated to be unique.
-OneDrive will append a number to the end of the bundle name.
+If _@microsoft.graph.conflictBehavior_ is set to **rename** and a bundle with the same name already exists, the new bundle name is updated to be unique.
+OneDrive appends a number to the end of the bundle name.
 
 For example, `My Day at the Beach` would be renamed `My Day at the Beach 1`.
 If `My Day at the Beach 1` is taken, then the number would be incremented again until a unique bundle name is discovered.
-
 
 [error-response]: /graph/errors
 
@@ -226,5 +230,3 @@ If `My Day at the Beach 1` is taken, then the number would be incremented again 
   "section": "documentation",
   "tocPath": "Bundles/Create"
 } -->
-
-

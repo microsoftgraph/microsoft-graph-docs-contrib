@@ -52,7 +52,7 @@ GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.superU
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that are required with this function.
+The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

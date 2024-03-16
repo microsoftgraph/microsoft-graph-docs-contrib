@@ -3,7 +3,7 @@ title: "educationResource resource type"
 description: "An abstract type that represents the base class for all education-related resource objects in a system."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

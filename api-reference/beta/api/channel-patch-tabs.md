@@ -3,7 +3,7 @@ title: "Update tab"
 description: "Update the properties of the specified tab."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the specified [tab](../resources/teamstab.md).
+
 This API can be used to configure the content of the tab.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -21,6 +22,7 @@ This API can be used to configure the content of the tab.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they aren't a member of.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -31,8 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 > [!NOTE]
 > - The TeamsTab.ReadWrite.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 > - The Group.ReadWrite.All and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
-
-This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they aren't a member of.
 
 ## HTTP request
 ```http
@@ -52,8 +52,9 @@ In the request body, supply a JSON representation of [tab](../resources/teamstab
 
 If successful, this method returns a `200 OK` response code.
 
-## Example
-#### Request
+## Examples
+
+### Request
 The following example shows a request.
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
@@ -63,7 +64,8 @@ Content-type: application/json
   "displayName": "My Contoso Tab - updated"
 }
 ```
-#### Response
+### Response
+The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -83,7 +85,7 @@ Content-type: application/json
 }
 ```
 
-## Related content
+## See also
 
 [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

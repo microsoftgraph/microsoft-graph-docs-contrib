@@ -3,7 +3,7 @@ title: "targetResource resource type"
 description: "Represents target resource types associated with audit activity."
 ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

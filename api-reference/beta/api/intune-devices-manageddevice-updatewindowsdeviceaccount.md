@@ -3,7 +3,7 @@ title: "updateWindowsDeviceAccount action"
 description: "Intune Devices Manageddevice Updatewindowsdeviceaccount Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

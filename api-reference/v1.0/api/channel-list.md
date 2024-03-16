@@ -4,7 +4,7 @@ description: "Retrieve the list of channels in this team."
 author: "nkramer"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # List channels

@@ -3,7 +3,7 @@ title: "zebraFotaDeploymentState enum type"
 description: "Represents the state of Zebra FOTA deployment."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

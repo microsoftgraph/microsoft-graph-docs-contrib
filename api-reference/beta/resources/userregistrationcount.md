@@ -3,7 +3,7 @@ title: "userRegistrationCount resource type"
 description: "Represents the registration count and status for users in your tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 

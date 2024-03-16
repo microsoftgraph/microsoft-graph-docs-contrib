@@ -3,7 +3,7 @@ title: "Create swapshiftRequest"
 description: "Create an instance of a swapShiftsChangeRequest."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 

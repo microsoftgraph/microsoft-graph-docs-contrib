@@ -3,7 +3,7 @@ title: "message: markAsNotJunk"
 description: "Mark a message as not junk."
 author: "kagunase"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
