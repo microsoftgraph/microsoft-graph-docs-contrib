@@ -51,11 +51,18 @@ POST /security/runHuntingQuery
 
 In the request body, provide a JSON object for the parameter, `Query`, and include an optional `Timespan` parameter.
 
-| Parameter    | Type    | Description                                                                                                                      | Example                                                            |
-|:-------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|
-| Query        | String  | The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
-| Timespan     | String (optional) | The time span for the query in Kusto Query Language (KQL). If provided, the query will be executed within this time span. If not provided, the default time span of 30 days will be used, specified in ISO 8601 format. | `"2024-02-01T08:00:00Z/2024-02-15T08:00:00Z"`<br>`"P30D/2024-02-15T08:00:00Z"`<br>`"2024-02-01T08:00:00Z/P30D"`<br>`"P30D"`<br>`"2024-02-01T08:00:00Z"` |
+| Parameter    | Type    | Description                                                                                                                      |
+|:-------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------|
+| Query        | String  | The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |
+| Timespan     | String (optional) | The time span for the query in Kusto Query Language (KQL). If provided, the query will be executed within this time span. If not provided, the default time span of 30 days will be used, specified in ISO 8601 format. |
 
+### Examples for Timespan
+
+- **Date/Date**: `"2024-02-01T08:00:00Z/2024-02-15T08:00:00Z"` - Start and end dates.
+- **Duration/EndDate**: `"P30D/2024-02-15T08:00:00Z"` - A period before the end date.
+- **Start/Duration**: `"2024-02-01T08:00:00Z/P30D"` - Start date and duration.
+- **ISO8601 Duration**: `"P30D"` - Duration from now backwards.
+- **Single Date/Time**: `"2024-02-01T08:00:00Z"` - Start time with end time defaulted to current time.
 
 ## Response
 
