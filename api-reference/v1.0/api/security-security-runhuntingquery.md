@@ -49,11 +49,13 @@ POST /security/runHuntingQuery
 
 ## Request body
 
-In the request body, provide a JSON object for the parameter, `Query`. 
+In the request body, provide a JSON object for the parameter, `Query`, and include an optional `Timespan` parameter.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|Query|String|The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference).|
+| Parameter    | Type    | Description                                                                                                                      | Example                                                            |
+|:-------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|
+| Query        | String  | The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
+| Timespan     | String (optional) | The time span for the query in Kusto Query Language (KQL). If provided, the query will be executed within this time span. If not provided, the default time span of 30 days will be used, specified in ISO 8601 format. | **Date/Date**: `"2024-02-01T08:00:00Z/2024-02-15T08:00:00Z"` - Start and end dates. **Duration/EndDate**: `"P30D/2024-02-15T08:00:00Z"` - A period before the end date. **Start/Duration**: `"2024-02-01T08:00:00Z/P30D"` - Start date and duration. **ISO8601 Duration**: `"P30D"` - Duration from now backwards. **Single Date/Time**: `"2024-02-01T08:00:00Z"` - Start time with end time defaulted to current time. |
+
 
 ## Response
 
@@ -82,6 +84,47 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 {
     "Query": "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
+}
+```
+
+Example with 'timespan'
+
+``` http
+POST https://graph.microsoft.com/beta/security/runHuntingQuery
+{
+    "query":"DeviceProcessEvents | where InitiatingProcessFileName =~ 'powershell.exe' | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc",
+    "timespan": "P28D"
+}
+```
+
+```json
+{
+  "schema": [
+    {
+      "name": "Timestamp",
+      "type": "DateTime"
+    },
+    {
+      "name": "FileName",
+      "type": "String"
+    },
+    {
+      "name": "InitiatingProcessFileName",
+      "type": "String"
+    }
+  ],
+  "results": [
+    {
+      "Timestamp": "2024-03-01T06:38:35.7664356Z",
+      "FileName": "conhost.exe",
+      "InitiatingProcessFileName": "powershell.exe"
+    },
+    {
+      "Timestamp": "2024-03-28T06:38:30.5163363Z",
+      "FileName": "conhost.exe",
+      "InitiatingProcessFileName": "powershell.exe"
+    }
+  ]
 }
 ```
 
