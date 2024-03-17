@@ -3,7 +3,7 @@ title: "virtualAppointmentSettings resource type"
 description: "Represents settings that define the experience of a client user during a virtual appointment."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

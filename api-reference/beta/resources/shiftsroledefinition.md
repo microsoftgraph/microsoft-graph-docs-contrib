@@ -3,7 +3,7 @@ title: "shiftsRoleDefinition resource type"
 description: "A definition for a single role in a schedule in the Shifts app in Teams."
 author: "galalalym"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

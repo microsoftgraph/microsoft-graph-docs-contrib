@@ -3,7 +3,7 @@ title: "macOSLaunchItem resource type"
 description: "Represents an app in the list of macOS launch items"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

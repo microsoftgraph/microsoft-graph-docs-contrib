@@ -3,7 +3,7 @@ title: "List messages in a chat"
 description: "Retrieve the list of messages in a chat."
 ms.localizationpriority: high
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: List chat messages sorted by creation date
 
-The following is an example of a request that lists the top two messages (`$top=2`) and sorts them by the **createdDateTime** property (`$orderby=createdDateTime`).
+The following example shows a request that lists the top two messages (`$top=2`) and sorts them by the **createdDateTime** property (`$orderby=createdDateTime`).
 
 #### Request
 
@@ -220,7 +220,7 @@ Content-type: application/json
 
 ### Example 2: List chat messages filtered by last modified date range
 
-The following is an example of a request that lists the top two messages (`$top=2`), sorts them in descending order by the **lastModifiedDateTime** property (`$orderby=lastModifiedDateTime desc`), and filters the results for a specific date range (`$filter=lastModifiedDateTime gt 2022-09-22T00:00:00.000Z and lastModifiedDateTime lt 2022-09-24T00:00:00.000Z`).
+The following example shows a request that lists the top two messages (`$top=2`), sorts them in descending order by the **lastModifiedDateTime** property (`$orderby=lastModifiedDateTime desc`), and filters the results for a specific date range (`$filter=lastModifiedDateTime gt 2022-09-22T00:00:00.000Z and lastModifiedDateTime lt 2022-09-24T00:00:00.000Z`).
 
 #### Request
 

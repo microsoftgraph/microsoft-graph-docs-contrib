@@ -4,7 +4,7 @@ description: "Get an externalUserProfile object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 ---
 
 # Get externalUserProfile
@@ -46,7 +46,7 @@ GET /directory/externalUserProfiles/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -3,7 +3,7 @@ title: "List messages"
 description: "Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox."
 ms.localizationpriority: high
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdk
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

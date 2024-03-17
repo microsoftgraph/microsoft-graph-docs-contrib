@@ -3,7 +3,7 @@ title: "Change notifications for Microsoft Teams resources"
 description: "Subscribe to resource and resource data changes in Microsoft Teams using the Microsoft Graph API. Learn about change notification types and payloads."
 author: "anandab-msft"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 

@@ -3,7 +3,7 @@ title: "Get chatMessage in a channel or chat"
 description: "Retrieve a single message (without its replies) in a channel or a chat."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

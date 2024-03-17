@@ -3,7 +3,7 @@ title: "Get teamworkTagMember"
 description: "Get the properties and relationships of a member of a standard tag in a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkTagMe
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

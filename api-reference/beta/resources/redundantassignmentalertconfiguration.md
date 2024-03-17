@@ -3,7 +3,7 @@ title: "redundantAssignmentAlertConfiguration resource type"
 description: "Represents an alert configuration that is triggered if a user goes over a specified number of days without activating a role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

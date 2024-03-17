@@ -3,7 +3,7 @@ title: "accessPackageAnswerString resource type"
 description: "A string answer to an accessPackageTextInputQuestion"
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

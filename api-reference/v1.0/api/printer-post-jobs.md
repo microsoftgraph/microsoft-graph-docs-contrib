@@ -3,7 +3,7 @@ title: Create printJob
 description: Create a new printJob for a printer. 
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

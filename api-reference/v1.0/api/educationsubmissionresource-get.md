@@ -3,7 +3,7 @@ title: "Get educationSubmissionResource"
 description: "Retrieve the properties of a specific resource associated with the submission."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create emailThreatSubmission"
 description: "Create a new emailThreatSubmission object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

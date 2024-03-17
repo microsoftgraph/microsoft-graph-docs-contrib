@@ -3,7 +3,7 @@ title: "operation resource type"
 description: "Represents an operation to export the billing data of a partner."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

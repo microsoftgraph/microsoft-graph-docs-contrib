@@ -3,7 +3,7 @@ title: "Create identityProvider"
 description: "Create a new identityProvider"
 ms.localizationpriority: high
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

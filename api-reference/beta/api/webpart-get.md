@@ -3,7 +3,7 @@ title: "Get webPart"
 description: "Read the properties and relationships of a webPart object."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [standardWebPa
 ### Example 1: Get a webPart object
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsof
 
 #### Response
 
-Here's an example of the response
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsof
 
 #### Response
 
-Here's an example of the response
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

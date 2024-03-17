@@ -3,7 +3,7 @@ title: "Add app to chat"
 description: "Install an app to chat."
 author: "subray"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

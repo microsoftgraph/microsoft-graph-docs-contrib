@@ -3,7 +3,7 @@ title: "List hostedContents"
 description: "Retrieve the list of chatMessageHostedContent objects from a message."
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -81,7 +81,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -130,7 +130,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** `contentBytes` and `contentType` are always set to null.
 
@@ -166,7 +166,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -215,7 +215,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** `contentBytes` and `contentType` are always set to null.
 
@@ -251,7 +251,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -300,7 +300,7 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** `contentBytes` and `contentType` are always set to null.
 

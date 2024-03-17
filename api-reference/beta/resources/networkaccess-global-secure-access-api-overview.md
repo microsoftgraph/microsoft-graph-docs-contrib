@@ -3,7 +3,7 @@ title: "Secure access to cloud, public, and private apps using Microsoft Graph n
 description: "Learn how to use Microsoft Graph network access APIs to secure access to cloud, public, and private apps using Microsoft Entra Internet Access and Microsoft Entra Private Access."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "List channel message replies"
 description: "List all the replies of a message in a channel of a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
