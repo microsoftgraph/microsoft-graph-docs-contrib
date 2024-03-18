@@ -3,7 +3,7 @@ title: "Create hardwareConfigurationUserState"
 description: "Create a new hardwareConfigurationUserState object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

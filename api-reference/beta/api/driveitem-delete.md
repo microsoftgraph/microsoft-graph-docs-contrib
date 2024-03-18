@@ -55,7 +55,7 @@ The following example shows a request.
 <!-- { "blockType": "request", "name": "delete-drive-item", "scopes": "files.readwrite" } -->
 
 ```http
-DELETE /me/drive/items/{item-id}
+DELETE https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 
 # [C#](#tab/csharp)

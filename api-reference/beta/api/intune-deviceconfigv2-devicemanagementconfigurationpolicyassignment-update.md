@@ -3,7 +3,7 @@ title: "Update deviceManagementConfigurationPolicyAssignment"
 description: "Update the properties of a deviceManagementConfigurationPolicyAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

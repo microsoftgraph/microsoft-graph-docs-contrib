@@ -3,7 +3,7 @@ title: "getAssignmentFiltersStatusDetails action"
 description: "Intune Policyset Devicemanagement Getassignmentfiltersstatusdetails Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

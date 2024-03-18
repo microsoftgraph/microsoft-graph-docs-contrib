@@ -3,7 +3,7 @@ title: "Delete hardwareConfigurationAssignment"
 description: "Deletes a hardwareConfigurationAssignment."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

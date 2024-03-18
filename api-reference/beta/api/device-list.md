@@ -86,7 +86,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

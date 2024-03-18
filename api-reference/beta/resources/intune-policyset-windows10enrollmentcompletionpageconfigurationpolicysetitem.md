@@ -3,7 +3,7 @@ title: "windows10EnrollmentCompletionPageConfigurationPolicySetItem resource typ
 description: "A class containing the properties used for Windows10EnrollmentCompletionPageConfiguration PolicySetItem."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

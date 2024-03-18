@@ -105,7 +105,7 @@ Content-Length: 24
 ---
 
 ##### Response
-The following example shows the response.
+The following example shows the response. 
 
 <!-- {
   "blockType": "response"

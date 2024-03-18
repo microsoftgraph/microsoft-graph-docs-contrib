@@ -64,7 +64,7 @@ If archiving is started successfully, this method returns a `202 Accepted` respo
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -114,7 +114,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 ---
 
 ### Response
-The following is an example of a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

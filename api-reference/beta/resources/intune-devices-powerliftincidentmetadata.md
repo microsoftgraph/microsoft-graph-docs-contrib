@@ -3,7 +3,7 @@ title: "powerliftIncidentMetadata resource type"
 description: "Collection of app diagnostics associated with a user."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

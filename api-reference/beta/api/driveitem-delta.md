@@ -131,7 +131,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true, "scope": "file.read" } -->
 
