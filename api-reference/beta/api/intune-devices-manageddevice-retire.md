@@ -3,7 +3,7 @@ title: "retire action"
 description: "Retire a device"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

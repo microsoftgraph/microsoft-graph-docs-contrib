@@ -3,7 +3,7 @@ title: "List macOSSoftwareUpdateConfigurations"
 description: "List properties and relationships of the macOSSoftwareUpdateConfiguration objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

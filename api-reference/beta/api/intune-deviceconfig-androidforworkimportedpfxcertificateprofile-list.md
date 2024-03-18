@@ -3,7 +3,7 @@ title: "List androidForWorkImportedPFXCertificateProfiles"
 description: "List properties and relationships of the androidForWorkImportedPFXCertificateProfile objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

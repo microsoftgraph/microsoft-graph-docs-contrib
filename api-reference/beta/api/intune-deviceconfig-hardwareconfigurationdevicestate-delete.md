@@ -3,7 +3,7 @@ title: "Delete hardwareConfigurationDeviceState"
 description: "Deletes a hardwareConfigurationDeviceState."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
