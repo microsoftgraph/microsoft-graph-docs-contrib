@@ -3,7 +3,7 @@ title: "delegatedAdminRelationship resource type"
 description: "Represents the details of the delegated administrative privileges that a Microsoft partner has in a customer tenant."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
 ---
 

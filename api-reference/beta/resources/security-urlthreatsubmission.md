@@ -3,7 +3,7 @@ title: "urlThreatSubmission resource type"
 description: "Represent a threat submission related to a URL"
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

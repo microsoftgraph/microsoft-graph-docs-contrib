@@ -3,7 +3,7 @@ title: "educationModule: publish"
 description: "Change the state of an educationModule from its original draft status to the published status."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ The following example shows how to call this API.
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +103,7 @@ POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-
 
 ### Response
 
-Here's an example of a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

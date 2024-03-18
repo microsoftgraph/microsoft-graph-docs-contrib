@@ -2,7 +2,7 @@
 title: "Skype for Business organizer activity reports"
 description: "You can get details on organized conferences activity across your organization. These details are helpful when you're investigating, planning, and making other business decisions for your organization."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
 ---

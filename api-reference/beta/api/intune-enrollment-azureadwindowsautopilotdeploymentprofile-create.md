@@ -3,7 +3,7 @@ title: "Create azureADWindowsAutopilotDeploymentProfile"
 description: "Create a new azureADWindowsAutopilotDeploymentProfile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

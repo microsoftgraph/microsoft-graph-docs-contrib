@@ -3,7 +3,7 @@ title: "unifiedRoleAssignmentScheduleInstance resource type"
 description: "Represents the instance for an active role assignment in your tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

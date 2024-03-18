@@ -3,7 +3,7 @@ title: "fileThreatSubmission resource type"
 description: "Represents a threat submission related to a file."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

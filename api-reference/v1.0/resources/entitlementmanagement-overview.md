@@ -3,7 +3,7 @@ title: "Working with the Microsoft Entra entitlement management API"
 description: "Govern access to resources including groups, apps and sites through Microsoft Entra entitlement management"
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "conceptualPageType"
 ms.date: 11/01/2022
 ---

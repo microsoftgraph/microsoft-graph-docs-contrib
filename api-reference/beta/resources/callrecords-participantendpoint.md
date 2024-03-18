@@ -3,7 +3,7 @@ title: "participantEndpoint resource type"
 description: "Represents a participant endpoint (a user or user-like entity) in a call."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

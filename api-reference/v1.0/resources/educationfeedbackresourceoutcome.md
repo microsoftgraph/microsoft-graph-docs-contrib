@@ -3,7 +3,7 @@ title: "educationFeedbackResourceOutcome resource type"
 description: "Represents feedback on an educationOutcome object in the form of a document."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 

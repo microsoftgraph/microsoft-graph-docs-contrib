@@ -3,7 +3,7 @@ title: integerRange resource type
 description: Represents an inclusive range of integers described by two Int64 boundaries.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 

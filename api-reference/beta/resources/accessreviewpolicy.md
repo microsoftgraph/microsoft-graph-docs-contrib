@@ -3,7 +3,7 @@ title: "accessReviewPolicy resource type"
 description: "Access reviews policy is a singleton that enables organizations to manage directory-level access review policy."
 author: "kafen"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

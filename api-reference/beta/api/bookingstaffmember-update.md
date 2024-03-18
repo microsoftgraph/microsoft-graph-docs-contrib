@@ -3,7 +3,7 @@ title: "Update bookingstaffmember"
 description: "Update the properties of a bookingStaffMember in the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get windows81CompliancePolicy"
 description: "Read properties and relationships of the windows81CompliancePolicy object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

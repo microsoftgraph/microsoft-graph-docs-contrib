@@ -33,11 +33,11 @@ Additionally, devices managed by the deployment service must:
 * Have installed Windows 10 version 1709 or later
 * Be Microsoft Entra joined or Hybrid AD joined
 * Have one of the following Windows 10 or Windows 11 editions installed:
-    Pro
-    Enterprise
-    Education
-    Pro Education
-    Pro for Workstations
+    * Pro
+    * Enterprise
+    * Education
+    * Pro Education
+    * Pro for Workstations
 
 ## Feature updates
 

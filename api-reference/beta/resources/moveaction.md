@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: MoveAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # MoveAction resource type

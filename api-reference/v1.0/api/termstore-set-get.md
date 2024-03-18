@@ -3,7 +3,7 @@ title: "Get set"
 description: "Read the properties and relationships of a set object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

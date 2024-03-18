@@ -4,7 +4,7 @@ description: "Add a conversationMember to a channel."
 author: "akjo" 
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Add conversationMember
@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a [conversa
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

@@ -3,7 +3,7 @@ title: "Create externalDomainName"
 description: "Create a new externalDomainName object."
 author: "namkedia"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

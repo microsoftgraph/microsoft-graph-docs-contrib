@@ -3,7 +3,7 @@ title: "Create teams and manage members using the Microsoft Teams API"
 description: "Use the Microsoft Teams API in Microsoft Graph to create teams in multiple ways, add and manage members, and validate your results."
 author: "hachandr"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Create teams and manage members using the Microsoft Teams API

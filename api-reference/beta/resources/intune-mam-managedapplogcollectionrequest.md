@@ -3,7 +3,7 @@ title: "managedAppLogCollectionRequest resource type"
 description: "The Managed App log collection response"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

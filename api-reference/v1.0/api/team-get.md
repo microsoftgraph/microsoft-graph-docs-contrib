@@ -3,7 +3,7 @@ title: "Get team"
 description: "Retrieve the properties and relationships of the specified team."
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [team](../resources/team.md) object in the response body.
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

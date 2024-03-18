@@ -3,7 +3,7 @@ title: "post resource type"
 description: "Represents an individual Post item within a conversationThread entity."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
