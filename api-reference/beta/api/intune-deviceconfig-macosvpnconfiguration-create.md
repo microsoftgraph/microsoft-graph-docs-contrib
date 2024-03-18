@@ -3,7 +3,7 @@ title: "Create macOSVpnConfiguration"
 description: "Create a new macOSVpnConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

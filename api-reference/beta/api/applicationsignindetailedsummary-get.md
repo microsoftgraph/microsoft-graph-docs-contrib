@@ -3,7 +3,7 @@ title: "Get applicationSignInDetailedSummary"
 description: "Retrieve the properties and relationships of an applicationSignInDetailedSummary object."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 

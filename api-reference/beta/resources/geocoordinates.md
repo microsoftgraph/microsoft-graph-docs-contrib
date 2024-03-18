@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: GeoCoordinates
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 ---
 # geoCoordinates resource type
 

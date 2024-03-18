@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code and a [direc
 
 ## Examples
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

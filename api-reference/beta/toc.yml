@@ -58,10 +58,6 @@ items:
                 href: api/user-invalidateallrefreshtokens.md
               - name: Retry service provisioning
                 href: api/user-retryserviceprovisioning.md
-              - name: Delete password-based SSO credential
-                href: api/user-deletepasswordsinglesignoncredentials.md
-              - name: Get password-based SSO credentials
-                href: api/user-getpasswordsinglesignoncredentials.md
               - name: Convert external to member user
                 href: api/user-convertexternaltointernalmemberuser.md
           - name: App role assignment
@@ -306,6 +302,12 @@ items:
                 href: api/outlookuser-post-tasks.md
               - name: List tasks
                 href: api/outlookuser-list-tasks.md
+          - name: Password-based SSO credentials
+            items:
+            - name: Get
+              href: api/user-getpasswordsinglesignoncredentials.md
+            - name: Delete
+              href: api/user-deletepasswordsinglesignoncredentials.md
           - name: People
             items:
               - name: Person
@@ -1741,7 +1743,7 @@ items:
                 href: api/bookingstaffmember-delete.md
       - name: Device and app management
         items:
-          - name: Browser management (preview)
+          - name: Browser management
             displayName: Edge, Internet Explorer, IE mode, site list
             items:
               - name: Overview
@@ -10369,7 +10371,7 @@ items:
                     href: api/windowsupdates-updatepolicy-update.md
                   - name: Delete
                     href: api/windowsupdates-updatepolicy-delete.md
-          - name: Microsoft 365 apps (preview)
+          - name: Microsoft 365 apps
             displayName: Microsoft 365 applications
             items:
               - name: Admin Microsoft 365 apps
@@ -11114,8 +11116,10 @@ items:
                 href: api/driveitem-copy.md
               - name: Create folder
                 href: api/driveitem-post-children.md
-              - name: Download file
+              - name: Download file (deprecated)
                 href: api/driveitem-get-content.md
+              - name: Download file
+                href: api/driveitem-get-contentstream.md
               - name: Extract sensitivity labels
                 href: api/driveitem-extractsensitivitylabels.md
               - name: Follow item

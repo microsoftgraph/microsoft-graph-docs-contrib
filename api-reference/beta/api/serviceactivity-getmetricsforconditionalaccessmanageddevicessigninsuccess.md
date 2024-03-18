@@ -3,7 +3,7 @@ title: "serviceActivity: getMetricsForConditionalAccessManagedDevicesSignInSucce
 description: "Get the number of user authentication requests, during a specific time period, that satisfy a Conditional Access policy requiring devices to be managed. Managed devices are computers joined to and managed by your on-premises directory and hybrid devices joined to Microsoft Entra."
 author: "Zacharypeng"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 

@@ -107,7 +107,7 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}
 ---
 
 ##### Response 1
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -163,7 +163,7 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 ---
 
 ##### Response 2
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -3,7 +3,7 @@ title: "Delete androidDeviceOwnerEnrollmentProfile"
 description: "Deletes a androidDeviceOwnerEnrollmentProfile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

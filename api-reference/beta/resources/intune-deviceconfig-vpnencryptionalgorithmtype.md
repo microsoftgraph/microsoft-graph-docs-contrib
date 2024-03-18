@@ -3,7 +3,7 @@ title: "vpnEncryptionAlgorithmType enum type"
 description: "The type of VPN security association encryption algorithm"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

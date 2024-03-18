@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationSimpleSettingCollectionInstance resource ty
 description: "Simple setting collection instance"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

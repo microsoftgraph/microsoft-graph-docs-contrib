@@ -3,7 +3,7 @@ title: "uploadDepToken action"
 description: "Uploads a new Device Enrollment Program token"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create webPart"
 description: "Create a new webPart at a specified position in the sitePage"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

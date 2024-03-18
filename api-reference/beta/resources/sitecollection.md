@@ -4,7 +4,7 @@ description: Provides more information about a site collection.
 ms.date: 09/10/2017
 title: SiteCollection
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
