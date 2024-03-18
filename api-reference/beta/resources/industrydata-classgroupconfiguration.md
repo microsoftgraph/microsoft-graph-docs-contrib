@@ -1,9 +1,9 @@
 ---
 title: "classGroupConfiguration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "The different configurations choices for the class groups to be provisioned with."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
@@ -13,31 +13,34 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The different configurations choices for the class groups to be provisioned with.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|additionalAttributes|microsoft.graph.industryData.additionalClassGroupAttributes collection|**TODO: Add Description**|
-|additionalOptions|[microsoft.graph.industryData.additionalClassGroupOptions](../resources/industrydata-additionalclassgroupoptions.md)|**TODO: Add Description**|
-|enrollmentMappings|[microsoft.graph.industryData.enrollmentMappings](../resources/industrydata-enrollmentmappings.md)|**TODO: Add Description**|
+
+| Property             | Type                                                                                                                 | Description                                                                  |
+| :------------------- | :------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
+| additionalAttributes | microsoft.graph.industryData.additionalClassGroupAttributes collection                                               | The different attributes to sync for the class groups                        |
+| additionalOptions    | [microsoft.graph.industryData.additionalClassGroupOptions](../resources/industrydata-additionalclassgroupoptions.md) | The different options for the class groups to be provisioned with            |
+| enrollmentMappings   | [microsoft.graph.industryData.enrollmentMappings](../resources/industrydata-enrollmentmappings.md)                   | The different enrollmentMappings for the class groups to be provisioned with |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.industryData.classGroupConfiguration"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.industryData.classGroupConfiguration",
-  "additionalAttributes": [
-    "String"
-  ],
+  "additionalAttributes": ["String"],
   "additionalOptions": {
     "@odata.type": "microsoft.graph.industryData.additionalClassGroupOptions"
   },
@@ -46,4 +49,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-
