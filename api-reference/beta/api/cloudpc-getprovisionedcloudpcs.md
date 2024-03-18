@@ -3,7 +3,7 @@ title: "cloudPC: getProvisionedCloudPCs"
 description: "Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group."
 author: "SleepIsImportant"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

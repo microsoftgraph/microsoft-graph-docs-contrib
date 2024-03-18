@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph Search API to pass multiple search requests"
 description: "You can use the Microsoft Search API in Microsoft Graph to search results by passing multiple search requests in the request body."
 author: "ZChristine"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Graph Search API to pass multiple search requests

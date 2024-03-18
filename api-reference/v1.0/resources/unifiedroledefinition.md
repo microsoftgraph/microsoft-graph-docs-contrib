@@ -4,7 +4,7 @@ description: "A role definition is a collection of permissions in Microsoft Entr
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 

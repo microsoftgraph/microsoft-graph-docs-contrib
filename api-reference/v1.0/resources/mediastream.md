@@ -3,7 +3,7 @@ title: "mediaStream resource type"
 description: "The mediaStream type."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

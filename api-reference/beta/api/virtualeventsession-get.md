@@ -3,7 +3,7 @@ title: "Get virtualEventSession"
 description: "Read the properties and relationships of a virtualEventSession object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a [virtualEventS
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

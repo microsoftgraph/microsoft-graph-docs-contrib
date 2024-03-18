@@ -3,7 +3,7 @@ title: "customAppScope resource type"
 description: "Represents a customized RBAC scope object from each provider."
 ms.localizationpriority: medium
 author: "cubika"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 

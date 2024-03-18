@@ -3,7 +3,7 @@ title: "signIn: confirmSafe"
 description: "Allow admins to mark Microsoft Entra sign-in events as safe for Microsoft Entra ID Protection."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 

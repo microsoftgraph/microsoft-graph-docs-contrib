@@ -3,7 +3,7 @@ title: "virtualEventWebinar: getByUserIdAndRole"
 description: "Get a list of virtualEventWebinar objects where the specified user is either the organizer or a coorganizer."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

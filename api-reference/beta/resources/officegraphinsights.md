@@ -3,7 +3,7 @@ title: "officeGraphInsights resource type"
 description: "Represents the base type for itemInsights. officeGraphInsights is for backward compatibility from earlier versions of the insights API. Use only itemInsights when accessing the insights API."
 author: "simonhult"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 

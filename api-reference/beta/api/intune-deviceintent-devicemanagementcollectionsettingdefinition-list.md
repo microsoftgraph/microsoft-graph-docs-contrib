@@ -3,7 +3,7 @@ title: "List deviceManagementCollectionSettingDefinitions"
 description: "List properties and relationships of the deviceManagementCollectionSettingDefinition objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

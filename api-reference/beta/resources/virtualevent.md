@@ -3,7 +3,7 @@ title: "virtualEvent resource type"
 description: "Represents an abstract base type for a virtual event. "
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

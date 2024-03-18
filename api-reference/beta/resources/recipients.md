@@ -3,7 +3,7 @@ title: "recipients resource type"
 description: Describes a JSON representation of the resource"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
+ms.subservice: mail
 author: "MSGraphDocsVteam"
 ---
 

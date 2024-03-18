@@ -3,7 +3,7 @@ title: "Update an educationSynchronizationProfile"
 description: "Update properties for an existing school data synchronization profile in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ If successful, this method returns a `202, Accepted` response code and a [synchr
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored",
   "name": "update_synchronizationProfile"
@@ -94,7 +94,7 @@ Content-type: application/json
 ```
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 

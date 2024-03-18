@@ -21,14 +21,11 @@ Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel]
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request the least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions for channel
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ChannelMessage.Send, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Teamwork.Migrate.All |
+<!-- { "blockType": "permissions", "name": "chatmessage_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage-post-permissions.md)]
 
 > **Note**: The Group.ReadWrite.All permissino is supported only for backward compatibility. We recommend that you update your solutions to use the alternative permissions listed in the table.
 

@@ -3,7 +3,7 @@ title: "Assign a permissionGrantPreApprovalPolicy to a servicePrincipal"
 description: "Assign a permissionGrantPreApprovalPolicy to a servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

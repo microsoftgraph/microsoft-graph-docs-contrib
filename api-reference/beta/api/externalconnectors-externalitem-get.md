@@ -3,7 +3,7 @@ title: "Get externalItem"
 description: "Get an externalItem."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an [externalItem
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228
 ### Response
 <!-- markdownlint-enable MD024 -->
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

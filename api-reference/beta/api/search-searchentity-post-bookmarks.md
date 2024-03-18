@@ -3,11 +3,12 @@ title: "Create bookmark"
 description: "Create a new bookmark object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
 # Create bookmark
+
 Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -17,6 +18,7 @@ Create a new [bookmark](../resources/search-bookmark.md) object.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "search_searchentity_post_bookmarks" } -->
@@ -32,33 +34,33 @@ POST /search/bookmarks
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [bookmark](../resources/search-bookmark.md) object.
 
 The following table shows the properties that are available when you create a [bookmark](../resources/search-bookmark.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Bookmark name displayed in search results. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|description|String|Bookmark description shown on search results page. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|webUrl|String|Bookmark URL link. When users click this bookmark in search results, they will go to this URL. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|categories|String collection|Categories commonly used to describe this bookmark. For example, IT and HR.|
-|availabilityStartDateTime|DateTimeOffset|Timestamp of when the bookmark will start to appear as a search result. Set as `null` for always available.|
-|availabilityEndDateTime|DateTimeOffset|Timestamp of when the bookmark will stop to appear as a search result. Set as `null` for always available.|
-|languageTags|String collection|List of countries or regions able to view this bookmark.|
-|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems able to view this bookmark. Possible values are: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
-|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) collection|Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
-|powerAppIds|String collection|List of Power Apps associated with this bookmark. If users add existing Power Apps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.|
+|availabilityEndDateTime|DateTimeOffset|Date and time when the bookmark stops appearing as a search result. Set as `null` for always available. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|availabilityStartDateTime|DateTimeOffset|Date and time when the bookmark starts to appear as a search result. Set as `null` for always available. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|categories|String collection|Categories commonly used to describe this bookmark. For example, `IT` and `HR`.|
+|description|String|The bookmark description that is shown on the search results page. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|displayName|String|The bookmark name that is displayed in search results. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|groupIds|String collection|The list of security groups that are able to view this bookmark.|
 |keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Keywords that trigger this bookmark to appear in search results.|
-|state|microsoft.graph.search.answerState|State of the bookmark. Possible values are: `published`, `draft`, `excluded`, or `unknownFutureValue`.|
-|groupIds|String collection|List of security groups able to view this bookmark.|
-
-
+|languageTags|String collection|A list of geographically specific language names in which this bookmark can be viewed. Each language tag value follows the pattern {language}-{region}. For example, `en-us` is English as used in the United States. For the list of possible values, see [Supported language tags](../resources/search-api-answers-overview.md#supported-language-tags).|
+|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems that are able to view this bookmark. Possible values are: `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidASOP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`.|
+|powerAppIds|String collection|List of Power Apps associated with this bookmark. If users add existing Power Apps to a bookmark, they can complete tasks directly on the search results page, such as entering vacation time or reporting expenses.|
+|state|microsoft.graph.search.answerState|State of the bookmark. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
+|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answervariant.md) collection|Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings apply to all variations.|
+|webUrl|String|The URL link for the bookmark. When users select this bookmark from the search results, they're directed to the specified URL. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 
 ## Response
 
@@ -67,6 +69,8 @@ If successful, this method returns a `201 Created` response code with the ID of 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -135,14 +139,16 @@ Content-Type: application/json
 ---
 
 ### Response
-Here is an example of the response.
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.search.bookmark"
 }-->
 ```http
-HTTP/1.1 201 CREATED
+HTTP/1.1 201 Created
 Location: /733b26d5-af76-4eea-ac69-1a0ce8716897
 Content-Type: application/json
 
@@ -150,4 +156,3 @@ Content-Type: application/json
   "id": "733b26d5-af76-4eea-ac69-1a0ce8716897"
 }
 ```
-

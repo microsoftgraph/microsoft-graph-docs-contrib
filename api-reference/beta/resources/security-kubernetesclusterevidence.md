@@ -3,7 +3,7 @@ title: "kubernetesClusterEvidence resource type"
 description: "Represents a Kubernetes cluster."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

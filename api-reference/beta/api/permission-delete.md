@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Remove access to an item
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 # Delete a sharing permission from a file or folder
 

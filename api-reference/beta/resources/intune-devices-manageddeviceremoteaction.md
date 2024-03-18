@@ -3,7 +3,7 @@ title: "managedDeviceRemoteAction enum type"
 description: "Intune Devices Manageddeviceremoteaction Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

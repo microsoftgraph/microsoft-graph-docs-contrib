@@ -3,7 +3,7 @@ title: "deviceManagementAutopilotPolicyStatusDetail resource type"
 description: "Policy status detail item contained by an autopilot event."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
