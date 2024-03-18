@@ -3,7 +3,7 @@ title: "deviceHealthAttestationState resource type"
 description: "Intune Devices Devicehealthattestationstate Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "rbacApplicationMultiple resource type"
 description: "Intune Rbac Rbacapplicationmultiple Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

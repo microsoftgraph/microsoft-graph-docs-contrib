@@ -3,7 +3,7 @@ title: "onDemandExecutionOnly resource type"
 description: "Represents the setting for a workflow running on-demand only."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

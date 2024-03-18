@@ -3,7 +3,7 @@ title: "Create threatAssessmentRequest"
 description: "Create a new threat assessment request."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "apiPageType"
 ---
 

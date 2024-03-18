@@ -3,7 +3,7 @@ title: "accessPackageLocalizedText resource type"
 description: "A complex type used to represent a string in a specific language."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get azureADAuthentication"
 description: "Read the properties and relationships of an azureADAuthentication object to find Microsoft Entra SLA attainment for your tenant."
 author: "SarahBar"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [azureADAuthe
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

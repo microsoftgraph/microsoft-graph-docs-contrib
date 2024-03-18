@@ -3,7 +3,7 @@ title: "List permissionGrantPreApprovalPolicies for a servicePrincipal"
 description: "Retrieve the permissionGrantPreApprovalPolicy object from a servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [permissionGra
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}
 ```
 
 # [JavaScript](#tab/javascript)

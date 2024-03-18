@@ -3,7 +3,7 @@ title: "richLongRunningOperation resource type"
 description: "Represents the status of a long-running operation on a site or a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

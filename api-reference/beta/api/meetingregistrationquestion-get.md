@@ -3,7 +3,7 @@ title: "Get customRegistrationQuestion"
 description: "Get a custom meeting registration question associated with a meetingRegistration object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

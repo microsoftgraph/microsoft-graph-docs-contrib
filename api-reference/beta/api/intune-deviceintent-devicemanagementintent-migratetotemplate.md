@@ -3,7 +3,7 @@ title: "migrateToTemplate action"
 description: "Intune Deviceintent Devicemanagementintent Migratetotemplate Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

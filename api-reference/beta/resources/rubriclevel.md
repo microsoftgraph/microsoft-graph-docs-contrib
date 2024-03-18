@@ -3,7 +3,7 @@ title: "rubricLevel resource type"
 description: "A level of a rubric"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 

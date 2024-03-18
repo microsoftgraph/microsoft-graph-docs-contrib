@@ -3,7 +3,7 @@ title: "List deviceAppManagementTasks"
 description: "List properties and relationships of the deviceAppManagementTask objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

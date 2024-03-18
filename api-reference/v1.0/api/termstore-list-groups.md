@@ -3,7 +3,7 @@ title: "List termStore groups"
 description: "Get a list of group objects in a term store."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

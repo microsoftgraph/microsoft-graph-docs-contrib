@@ -4,7 +4,7 @@ description: "Retrieve the list of apps installed in the personal scope of the s
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # List apps installed for user

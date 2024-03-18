@@ -3,7 +3,7 @@ title: "plannerPlanContainer resource type"
 description: "Represents a container for a planner plan. The container is a resource that specifies authorization rules and the lifetime of the plan."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
