@@ -70,7 +70,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Forward a message using JSON format
 The following example sets the **isDeliveryReceiptRequested** property to true, adds a comment and forwards the message.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -133,7 +133,7 @@ Content-Type: application/json
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -161,7 +161,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

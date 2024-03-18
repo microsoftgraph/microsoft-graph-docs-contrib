@@ -3,7 +3,7 @@ title: "requestUpgrade action"
 description: "Intune Mstunnel Microsofttunnelsite Requestupgrade Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

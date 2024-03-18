@@ -3,7 +3,7 @@ title: "omaSettingFloatingPoint resource type"
 description: "OMA Settings Floating Point definition."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

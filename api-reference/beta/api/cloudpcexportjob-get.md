@@ -16,12 +16,12 @@ Read the properties and relationships of a [cloudPcExportJob](../resources/cloud
 
 You can download a report by first [creating a new cloudPcExportJob resource](cloudpcreports-post-exportjobs.md) to initiate downloading.
 
-Use this GET operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource. When the property becomes `completed`, the report has finished downloading in the location specified by the **exportUrl** property.
+Use this GET operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource. The property becomes `completed` when the report finishes downloading in the location specified by the **exportUrl** property.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Make sure you have read access to relevant report you need to export. Choose the Permission or permissions relevant with what kind of report you want to download as least privileged for this API. App-only token with CloudPC.ReadWrite.All have higher previleged permission or permissions. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+Make sure you have read access to the report that you need to export. Choose the least privileged permission or permissions to download reports with this API. App-only tokens with CloudPC.ReadWrite.All have higher previleged permission or permissions. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 |Permission type|Least privileged permissions|
 |:---|:---|
@@ -61,11 +61,11 @@ If successful, this method returns a `200 OK` response code and a [cloudPcExport
 
 ### Example 1: Get an export job for the TotalAggregatedRemoteConnectionReports report
 
-The following example shows how to get an export job that was created by the POST request for the `TotalAggregatedRemoteConnectionReports` report.
+The following example shows how to get an export job that a POST request for the `TotalAggregatedRemoteConnectionReports` report created.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -144,11 +144,11 @@ Content-Type: application/json
 
 ### Example 2: Get an export job for the RemoteConnectionQualityReports report
 
-The following example shows how to get an export job that was created by the POST request for the `RemoteConnectionQualityReports` report.
+The following example shows how to get an export job that a POST request for the `RemoteConnectionQualityReports` report created.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

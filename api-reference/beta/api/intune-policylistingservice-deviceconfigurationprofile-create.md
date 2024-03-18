@@ -3,7 +3,7 @@ title: "Create deviceConfigurationProfile"
 description: "Create a new deviceConfigurationProfile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

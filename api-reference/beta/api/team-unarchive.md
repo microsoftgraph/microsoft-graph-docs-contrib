@@ -52,7 +52,7 @@ If unarchiving is started successfully, this method returns a `202 Accepted` res
 
 ## Example
 #### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,7 +98,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 ---
 
 #### Response
-Here's an example of a response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "unarchive_team"

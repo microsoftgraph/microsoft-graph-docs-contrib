@@ -3,7 +3,7 @@ title: "Get operationApprovalPolicy"
 description: "Read properties and relationships of the operationApprovalPolicy object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

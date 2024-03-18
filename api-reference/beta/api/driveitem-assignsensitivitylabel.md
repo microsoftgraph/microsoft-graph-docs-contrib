@@ -83,7 +83,7 @@ The following table lists the possible values for the error types.
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -107,7 +107,7 @@ Content-Type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 ```http

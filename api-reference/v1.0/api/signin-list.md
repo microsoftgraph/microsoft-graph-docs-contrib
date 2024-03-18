@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -120,7 +120,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -206,7 +206,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -254,7 +254,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 
 #### Response
 
-Here's an example of the response. The response includes a `@odata.nextLink` property that contains a URL that can be used to retrieve the next 10 results.
+The following example shows the response. The response includes a `@odata.nextLink` property that contains a URL that can be used to retrieve the next 10 results.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

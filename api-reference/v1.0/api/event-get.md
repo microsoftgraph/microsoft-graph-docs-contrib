@@ -139,7 +139,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ##### Response 1
 
-Here is an example of the response. The **body** property is returned in the default format of HTML.
+The following example shows the response. The **body** property is returned in the default format of HTML.
 
 <!-- {
   "blockType": "response",
@@ -264,7 +264,7 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hM
 ---
 
 ##### Response 2
-Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for.
+The following example shows the response. The **locations** property includes details for the 3 locations that the event is organized for.
 
 Because the request does not specify any `Prefer: outlook.timezone` header,
 the **start** and **end** properties are displayed in the default UTC time zone.
