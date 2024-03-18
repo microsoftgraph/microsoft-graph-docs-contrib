@@ -3,7 +3,7 @@ title: "team: getOpenShifts"
 description: "Get all openShift objects across all teams a user is a direct member of."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

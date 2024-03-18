@@ -3,8 +3,8 @@ author: "vanshisingh"
 title: "recycleBinItem resource type"
 description: "Represents information about a deleted item in a recycleBin of a SharePoint site."
 ms.localizationpriority: "medium"
-ms.prod: "sharepoint"
 doc_type: resourcePageType
+ms.subservice: "sharepoint"
 ---
 
 # recycleBinItem resource type

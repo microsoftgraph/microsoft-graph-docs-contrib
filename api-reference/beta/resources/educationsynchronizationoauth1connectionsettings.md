@@ -3,7 +3,7 @@ title: educationSynchronizationOAuth1ConnectionSettings resource type
 description: "When OAuth1 is to be used to connect to the data provider, this connection settings type should be used to set up the profile."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

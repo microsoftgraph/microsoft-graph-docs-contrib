@@ -3,7 +3,7 @@ title: userIdentity resource type
 description: "Represents a Microsoft Entra user identity for a reviewer of an access review."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

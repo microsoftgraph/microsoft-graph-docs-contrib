@@ -3,8 +3,8 @@ title: "Working with Windows 365 Cloud PCs using the Microsoft Graph API"
 description: "The Microsoft Graph API enables programmatic access to Cloud PC information and management actions on your organization."
 author: "cohanley"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
 doc_type: conceptualPageType
+ms.subservice: "cloud-pc"
 ---
 
 # Working with Windows 365 Cloud PCs using the Microsoft Graph API

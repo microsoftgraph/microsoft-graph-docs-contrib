@@ -3,7 +3,7 @@ title: "deviceActionPayload resource type"
 description: "Represents the policy or app included in the SyncPayloads action execution or result. For action execution, it represents the policy or app intended to be removed or uninstalled on the managed device. For action result, it represents the live reporting data for this policy or app regarding its removal or restoration process"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

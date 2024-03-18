@@ -3,7 +3,7 @@ title: "Get place"
 description: "Retrieve the properties and relationships of a place object."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 

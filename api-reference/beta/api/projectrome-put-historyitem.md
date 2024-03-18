@@ -2,7 +2,7 @@
 title: "Create or replace an activityHistoryItem"
 description: "Create a new or replace an existing history item for an existing user activity."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 author: "ailae"
 ---

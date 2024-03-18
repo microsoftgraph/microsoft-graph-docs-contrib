@@ -3,7 +3,7 @@ title: "List historyDefinitions"
 description: "Get a list of the accessReviewHistoryDefinition objects."
 author: isabelleatmsft
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create accessPackageResourceRequest"
 description: "Create a new accessPackageResourceRequest."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   - If using application permissions, the application requesting to add the group should also be assigned the `Group.ReadWrite.All` permission.
 - To add a Microsoft Entra application as a resource to a catalog:
   - If using delegated permissions, the user requesting to add an application should be an owner of the application or in a directory role that allows them to modify application role assignments.
-  - If using application permissions, the application requesting to add the [servicePrincipal](../resources/serviceprincipal.md) should also be assigned the *Application.ReadWrite.All* permission
+  - If using application permissions, the application requesting to add the [servicePrincipal](../resources/serviceprincipal.md) should also be assigned the *Application.ReadWrite.All* permission.
 - To add a SharePoint Online site as a resource to a catalog:
   - If using delegated permissions, the user who wants to add the site should be in a role that allows them to modify the SharePoint site roles, such as the *SharePoint Administrator* role.
   - If using application permissions, the application should also be assigned the `Sites.FullControl.All` permission.
@@ -398,6 +398,95 @@ Content-type: application/json
 {
   "id": "acc2294e-f37f-42d3-981d-4e83847ed0ce",
   "requestType": "adminRemove",
+  "state": "delivered"
+}
+```
+
+### Example 5: Create an accessPackageResourceRequest for updating an application as a resource with attributes
+
+The following example shows a request to update a resource in a catalog, for an application that was already added as a resource, with two attributes.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_appwithattr"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/resourceRequests
+Content-type: application/json
+
+{
+  "requestType": "adminUpdate",
+  "resource": {
+    "originId": "e81d7f57-0840-45e1-894b-f505c1bdcc1f",
+    "originSystem": "AadApplication",
+    "attributes": [
+      {
+        "destination": {
+          "@odata.type": "microsoft.graph.accessPackageUserDirectoryAttributeStore"
+        },
+        "name": "officeLocation",
+        "source": {
+          "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
+          "question": {
+            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+            "sequence": 1,
+            "isRequired": true,
+            "isAnswerEditable": true,
+            "text": "What office do you work at?",
+            "isSingleLineQuestion": true,
+            "regexPattern": "[a-zA-Z]+[a-zA-Z\\s]*"
+          }
+        }
+      },
+      {
+        "destination": {
+          "@odata.type": "microsoft.graph.accessPackageUserDirectoryAttributeStore"
+        },
+        "name": "extension_e409fedc08ab4807a9eb53ebc0d6cc9f_Expense_CostCenter",
+        "source": {
+          "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
+          "question": {
+            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+            "isRequired": false,
+            "text": "What is your cost center number?",
+            "sequence": 0,
+            "isSingleLineQuestion": true,
+            "regexPattern": "[0-9]*"
+          }
+        }
+      }
+    ]
+  },
+  "catalog": {
+    "id": "beedadfe-01d5-4025-910b-84abb9369997"
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "acc2294e-f37f-42d3-981d-4e83847ed0ce",
+  "requestType": "adminAdd",
   "state": "delivered"
 }
 ```

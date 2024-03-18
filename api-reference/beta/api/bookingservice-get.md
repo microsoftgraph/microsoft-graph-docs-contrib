@@ -3,7 +3,7 @@ title: "Get bookingService"
 description: "Get the properties and relationships of a bookingService object in the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a [bookingServic
 ## Example
 
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdel
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -121,7 +121,8 @@ Content-type: application/json
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
     "isAnonymousJoinEnabled": false,
-    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
+    "isCustomerAllowedToManageBooking": true,
+    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "defaultLocation": {
         "displayName": "Contoso Lunch Delivery",
         "locationEmailAddress": null,

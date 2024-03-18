@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: siteCollection resource type
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Provides more information about a site collection."
 doc_type: resourcePageType
 ---

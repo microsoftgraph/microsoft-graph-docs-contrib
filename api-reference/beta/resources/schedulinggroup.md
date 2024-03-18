@@ -3,7 +3,7 @@ title: schedulingGroup resource type
 description: A logical grouping of members in the schedule (usually by role).
 author: shanemalone
 ms.localizationpriority: high
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get identitySecurityDefaultsEnforcementPolicy"
 description: "Retrieve the properties and relationships of identitysecuritydefaultsenforcementpolicy object."
 ms.localizationpriority: medium
 author: "Sammak"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

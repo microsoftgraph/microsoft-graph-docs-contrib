@@ -3,7 +3,7 @@ title: "disable action"
 description: "Intune Devices Manageddevice Disable Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

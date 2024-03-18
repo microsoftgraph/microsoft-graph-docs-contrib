@@ -3,7 +3,7 @@ title: "Delete detectionRule"
 description: "Delete a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -87,7 +87,6 @@ DELETE https://graph.microsoft.com/beta/security/rules/detectionRules/302
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.

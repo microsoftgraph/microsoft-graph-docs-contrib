@@ -2,7 +2,7 @@
 title: "activityHistoryItem resource type"
 description: "Represents a history item for an activity in an app."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: resourcePageType
 author: "ailae"
 ---

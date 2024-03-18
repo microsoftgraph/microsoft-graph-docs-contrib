@@ -3,7 +3,7 @@ title: "workbookFormatProtection resource type"
 description: "Represents the format protection of a range object."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 author: "ruoyingl"
 ---
 

@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: asyncJobStatus resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # asyncJobStatus resource type

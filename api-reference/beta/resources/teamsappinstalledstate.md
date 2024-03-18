@@ -3,8 +3,8 @@ title: "Members"
 description: "Describes the current installation status of a teamsApp."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
 doc_type: enumPageType
+ms.subservice: "teams"
 ---
 
 # teamsAppInstalledState enum type

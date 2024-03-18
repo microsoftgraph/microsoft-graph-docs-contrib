@@ -2,7 +2,7 @@
 title: "userActivity resource type"
 description: Represents a single activity within an app - for example, a TV show, a document, or a current campaign in a video game"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: resourcePageType
 author: "ailae"
 ---

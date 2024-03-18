@@ -4,7 +4,7 @@ title: "contentType: associateWithHubSites"
 description: "Associate a content type with a list of hub sites."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentType: associateWithHubSites

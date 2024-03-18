@@ -4,7 +4,7 @@ doc_type: apiPageType
 description: "Get a signIn object that contains all sign-ins for a Microsoft Entra tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 ---
 
 # Get signIn
@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a [signIn](../re
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/66ea54eb-blah-4ee5-be62-f
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

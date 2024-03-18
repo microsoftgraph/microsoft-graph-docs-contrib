@@ -4,7 +4,7 @@ description: "Update the properties of a chatMessage object."
 author: "RamjotSingh"
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Update chatMessage
@@ -114,7 +114,7 @@ If successful, this method returns a `200 OK` response.
 
 #### Request
 
-The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message by using application permissions.
+The following example shows a request to update the **policyViolation** property on a Microsoft Teams channel message by using application permissions.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -175,7 +175,7 @@ Content-Type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -199,7 +199,7 @@ HTTP/1.1 200 OK
 
 #### Request
 
-The following is an example of the request to update the properties on a Microsoft Teams channel message by using delegated permissions.
+The following example shows a request to update the properties on a Microsoft Teams channel message by using delegated permissions.
 
 
 # [HTTP](#tab/http)
@@ -276,7 +276,7 @@ Content-Type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -289,7 +289,7 @@ HTTP/1.1 204 NoContent
 ### Example 3: Update the mentions of a message using delegated permissions
 #### Request
 
-The following is an example of the request to update the mentions on a Microsoft Teams channel message by using delegated permissions.
+The following example shows a request to update the mentions on a Microsoft Teams channel message by using delegated permissions.
 
 
 # [HTTP](#tab/http)
@@ -396,7 +396,7 @@ Content-Type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -409,7 +409,7 @@ HTTP/1.1 204 NoContent
 ### Example 4: Update the content with attachments of a message using delegated permissions
 #### Request
 
-The following is an example of the request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
+The following example shows a request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
 
 
 # [HTTP](#tab/http)
@@ -503,7 +503,7 @@ Content-Type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -516,7 +516,7 @@ HTTP/1.1 204 NoContent
 ### Example 5: Update the reactions in a message using delegated permissions
 #### Request
 
-The following is an example of the request to update the reactions property on a Microsoft Teams channel message by using delegated permissions.
+The following example shows a request to update the reactions property on a Microsoft Teams channel message by using delegated permissions.
 
 
 
@@ -845,7 +845,7 @@ Content-Type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

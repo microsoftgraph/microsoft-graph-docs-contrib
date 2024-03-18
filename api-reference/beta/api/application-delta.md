@@ -3,7 +3,7 @@ title: "application: delta"
 description: "Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection. See Using Delta Query for details."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

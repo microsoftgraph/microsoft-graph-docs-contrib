@@ -3,7 +3,7 @@ title: "List callRecords"
 description: "Get a list of callRecord objects and their properties."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
 ---
 

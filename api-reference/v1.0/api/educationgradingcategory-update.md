@@ -3,7 +3,7 @@ title: "Update gradingCategory"
 description: "Update a single gradingCategory."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

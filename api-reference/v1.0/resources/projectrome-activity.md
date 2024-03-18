@@ -2,7 +2,7 @@
 title: "userActivity resource type"
 description: "Represents a single activity within an app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a history item that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 author: "ailae"
 doc_type: resourcePageType
 ---

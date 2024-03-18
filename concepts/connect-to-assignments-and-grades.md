@@ -3,7 +3,7 @@ title: "Get assignmment and grade information for education solutions"
 description: "Use Microsoft Graph to get data from assignments and grades for education solution reporting, communication, and automation tools."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

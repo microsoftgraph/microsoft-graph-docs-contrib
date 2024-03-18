@@ -2,7 +2,7 @@
 title: "Get recent user activities"
 description: Get recent activities for a given user.
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 author: "ailae"
 ---

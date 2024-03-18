@@ -3,8 +3,8 @@ title: "Use the Microsoft Entra recommendations API to implement Microsoft Entra
 description: "Microsoft Entra recommendations are personalized and actionable insights for you to implement Microsoft Entra ID best practices in your tenant."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
 doc_type: conceptualPageType
+ms.subservice: "entra-monitoring-health"
 ms.date: 02/10/2023
 ---
 

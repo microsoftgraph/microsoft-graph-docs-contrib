@@ -3,7 +3,7 @@ title: "workbookFilterCriteria resource type"
 description: "Represents the filtering criteria applied to a column."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "accessReviewRecurrenceSettings resource type (deprecated)"
 description: "Specifies that the access review recurs at regular intervals."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

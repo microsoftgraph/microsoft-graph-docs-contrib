@@ -3,7 +3,7 @@ title: "timeOffReason resource type"
 description: "Represents a valid reason to take time off in a schedule."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

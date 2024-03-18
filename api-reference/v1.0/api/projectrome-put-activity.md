@@ -2,7 +2,7 @@
 title: "Create or replace an activity"
 description: "Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **activityHistoryItems** in one request, you can use deep insert."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 author: "ailae"
 doc_type: apiPageType
 ---

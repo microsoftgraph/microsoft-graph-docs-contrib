@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: driveRecipient resource type
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "The driveRecipient resource represents a person, group, or other recipient to share with using the invite action."
 doc_type: resourcePageType
 ---

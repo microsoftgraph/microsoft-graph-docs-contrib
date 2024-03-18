@@ -4,7 +4,7 @@ description: The listInfo complex type provides additional information about a l
 ms.date: 09/11/2017
 title: listInfo resource type
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

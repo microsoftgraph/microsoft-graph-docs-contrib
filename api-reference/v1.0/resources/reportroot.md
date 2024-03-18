@@ -2,7 +2,7 @@
 title: reportRoot resource type
 description: Represents a container for Microsoft Entra and Microsoft 365 reporting resources.
 author: sarahwxy
-ms.service: microsoft-graph
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

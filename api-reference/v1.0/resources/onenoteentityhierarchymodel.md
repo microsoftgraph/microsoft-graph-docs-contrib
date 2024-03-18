@@ -3,7 +3,7 @@ title: "onenoteEntityHierarchyModel resource type"
 description: "A base type for OneNote entities."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: notes
+ms.subservice: onenote
 doc_type: resourcePageType
 ---
 

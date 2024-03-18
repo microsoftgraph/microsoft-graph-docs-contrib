@@ -3,8 +3,8 @@ title: "Granular delegated admin privileges (GDAP) API overview"
 description: "Granular delegated admin privileges (GDAP) allow Microsoft partners to configure and request granular and time-bound access to their customers' environments, allowing customers to enforce a least-privileged access for Microsoft partners."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
 doc_type: conceptualPageType
+ms.subservice: partner-customer-administration
 ---
 
 # Granular delegated admin privileges (GDAP) API overview

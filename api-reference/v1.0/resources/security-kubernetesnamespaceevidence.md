@@ -3,7 +3,7 @@ title: "kubernetesNamespaceEvidence resource type"
 description: "Represents a Kubernetes namespace entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

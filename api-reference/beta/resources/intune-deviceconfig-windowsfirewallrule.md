@@ -3,7 +3,7 @@ title: "windowsFirewallRule resource type"
 description: "A rule controlling traffic through the Windows Firewall."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,8 +3,8 @@ title: "Use the Microsoft Graph threat assessment API"
 description: "Microsoft Graph lets your app get authorized access to organization's threat assessment data."
 ms.localizationpriority: high
 author: "preetikr"
-ms.prod: "security"
 doc_type: conceptualPageType
+ms.subservice: "security"
 ---
 
 # Use the Microsoft Graph threat assessment API
