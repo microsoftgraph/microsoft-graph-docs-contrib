@@ -52,13 +52,13 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [onenotePage](../resources/onenotepage.md) objects in the response body.
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/onenote/pages
 ```
 ##### Response
-Here's an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

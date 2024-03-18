@@ -3,7 +3,7 @@ title: "Delete androidManagedStoreApp"
 description: "Deletes a androidManagedStoreApp."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

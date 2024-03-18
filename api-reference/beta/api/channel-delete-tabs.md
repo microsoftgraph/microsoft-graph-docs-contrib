@@ -50,7 +50,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ### Request
-Here's an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -60,7 +60,7 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```

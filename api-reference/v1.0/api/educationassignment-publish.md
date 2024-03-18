@@ -52,7 +52,7 @@ If successful, this method returns a `200 Ok` response code and an [educationAss
 The following example shows how to call this API.
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -101,7 +101,7 @@ POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-
 ---
 
 ### Response
-The following is an example of a response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response",

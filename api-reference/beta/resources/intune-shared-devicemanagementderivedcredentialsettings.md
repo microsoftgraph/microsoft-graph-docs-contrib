@@ -3,7 +3,7 @@ title: "deviceManagementDerivedCredentialSettings resource type"
 description: "Intune Shared Devicemanagementderivedcredentialsettings Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

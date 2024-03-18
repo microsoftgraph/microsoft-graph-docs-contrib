@@ -3,7 +3,7 @@ title: "Update windows10VpnConfiguration"
 description: "Update the properties of a windows10VpnConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

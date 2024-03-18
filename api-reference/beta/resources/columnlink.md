@@ -5,7 +5,7 @@ ms.date: 09/12/2017
 title: "columnLink resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # columnLink resource type

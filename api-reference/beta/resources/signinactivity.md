@@ -3,7 +3,7 @@ title: "signInActivity resource type"
 description: "Provides the last interactive or non-interactive sign-in time for a specific user."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
