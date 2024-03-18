@@ -361,8 +361,6 @@ Content-type: application/json
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 - [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance)
 
-[error-response]: /graph/errors
-
 <!-- {
   "type": "#page.annotation",
   "description": "Sync changes from the service to your client state.",
