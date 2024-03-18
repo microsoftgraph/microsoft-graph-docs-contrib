@@ -26,6 +26,10 @@ Added the ability to list and get [Windows settings](/graph/api/resources/window
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.
 
+### Sites and lists
+
+[Track changes for SharePoint list item](/graph/api/listitem-delta) resources.
+
 ## March 2024: New in preview only
 
 ### Files
