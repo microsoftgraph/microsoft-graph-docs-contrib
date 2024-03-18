@@ -4,7 +4,7 @@ description: "Automate the provisioning of identities from HR systems, Active Di
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Microsoft Entra ID synchronization API overview

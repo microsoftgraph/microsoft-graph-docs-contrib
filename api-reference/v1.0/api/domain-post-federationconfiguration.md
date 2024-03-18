@@ -4,7 +4,7 @@ description: "Create a new internalDomainFederation object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "teamsAppInstallation: upgrade"
 description: "Upgrade an app installation in a team."
 author: "akjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

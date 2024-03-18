@@ -3,7 +3,7 @@ title: "team: clone"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -25,7 +25,7 @@ You can specify which parts of the team to clone:
 > **Note:** This method isn't supported for organization-wide teams.
 
 > [!NOTE]
-> A known issue related to owners of cloned teams is associated with this method. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/&search=18955).
+> A known issue related to owners of cloned teams is associated with this method. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues).
 
 When tabs are cloned, they aren't configured. The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen. 
 If the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
@@ -80,7 +80,7 @@ When the operation is complete, the operation resource tells you the id of the c
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,7 +88,7 @@ Here's an example of the request.
   "name": "clone_team"
 }-->
 ```http
-POST /teams/{id}/clone
+POST https://graph.microsoft.com/beta/teams/{id}/clone
 Content-Type: application/json
 
 {  
@@ -136,7 +136,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

@@ -4,7 +4,7 @@ description: The Audio resource groups audio-related properties on an item into 
 ms.date: 09/10/2017
 title: Audio
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: resourcePageType
 ---
 

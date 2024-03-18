@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: quota
 ms.localizationpriority: medium
 description: "The quota resource provides details about space constraints on a drive resource."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 

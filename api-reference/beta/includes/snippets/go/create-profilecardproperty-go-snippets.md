@@ -26,7 +26,7 @@ profileCardAnnotation.SetDisplayName(&displayName)
 
 
 displayNameLocalization := graphmodels.NewDisplayNameLocalization()
-languageTag := "ru-RU"
+languageTag := "ru"
 displayNameLocalization.SetLanguageTag(&languageTag) 
 displayName := "центр затрат"
 displayNameLocalization.SetDisplayName(&displayName) 

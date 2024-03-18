@@ -3,7 +3,7 @@ title: "Delete teamsApp"
 description: "Delete an app from an organization's app catalog (the tenant app catalog)."
 ms.localizationpriority: medium
 author: "nkramer"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

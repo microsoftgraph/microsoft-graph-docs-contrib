@@ -3,7 +3,7 @@ title: "Get installed app in chat"
 description: "Get installed app in a chat."
 author: "subray"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

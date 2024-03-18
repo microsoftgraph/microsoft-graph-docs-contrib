@@ -2,7 +2,7 @@
 title: "chatMessage: undoSoftDelete"
 description: "Undelete a single message or a message reply in a channel or a chat."
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---

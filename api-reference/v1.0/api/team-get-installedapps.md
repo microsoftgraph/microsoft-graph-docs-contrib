@@ -3,7 +3,7 @@ title: "Get installed app in team"
 description: "Get an app installed in team."
 author: "AkJo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

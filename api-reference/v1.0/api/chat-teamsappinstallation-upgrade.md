@@ -3,7 +3,7 @@ title: "teamsAppInstallation in chat: upgrade"
 description: "Update an app installed in a chat and bring it in sync with the current version available in the tenant app catalog."
 author: "subray"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

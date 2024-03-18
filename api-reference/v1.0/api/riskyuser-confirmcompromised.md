@@ -3,7 +3,7 @@ title: "riskyUser: confirmCompromised"
 description: "Confirm a user as compromised"
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "optionalClaims type"
 description: "Declares the optional claims requested by an application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 

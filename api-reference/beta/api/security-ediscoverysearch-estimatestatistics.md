@@ -49,7 +49,7 @@ The response will also contain a `Location` header, which contains the location 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,7 +3,7 @@ title: "List onPremisesConnections"
 description: "Get a list of the cloudPcOnPremisesConnection objects and their properties."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -128,6 +128,7 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
       "id": "07f12770-a225-4957-9127-0d247cf4ffff",
       "managedBy": "windows365",
+      "connectionType": "hybridAzureADJoin",
       "type": "hybridAzureADJoin",
       "displayName": "Display Name value",
       "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",

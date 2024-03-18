@@ -3,7 +3,7 @@ title: "Get member of team"
 description: "Get member of team."
 author: "akjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ### Request
 
-The following examples show a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/
 
 ### Response
 
-The following examples show the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {

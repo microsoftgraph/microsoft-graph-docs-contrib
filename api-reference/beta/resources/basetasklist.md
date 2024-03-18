@@ -3,7 +3,7 @@ title: "baseTaskList resource type"
 description: "Contains one or more task resources."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

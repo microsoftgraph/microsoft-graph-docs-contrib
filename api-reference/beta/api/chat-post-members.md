@@ -4,7 +4,7 @@ description: "Add a conversationMember to a chat."
 author: "anandjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Add member to a chat
@@ -55,7 +55,7 @@ If successful, this method returns a `201 Created` response code and a Location 
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -112,7 +112,7 @@ content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {
@@ -130,7 +130,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -186,7 +186,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {
@@ -204,7 +204,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -261,7 +261,7 @@ content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {
@@ -279,7 +279,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -336,7 +336,7 @@ content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {
@@ -354,7 +354,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -412,7 +412,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {
@@ -430,7 +430,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 
@@ -490,7 +490,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {

@@ -3,7 +3,7 @@ title: "List detectionRules"
 description: "Get a list of the custom detection rules and their properties."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/security/rules/detectionRules?$top=3
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.

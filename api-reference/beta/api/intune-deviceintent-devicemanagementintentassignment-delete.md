@@ -3,7 +3,7 @@ title: "Delete deviceManagementIntentAssignment"
 description: "Deletes a deviceManagementIntentAssignment."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "sharedWithChannelTeamInfo resource type"
 description: "Represents information for a team with which a channel is shared."
 author: "devjha-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

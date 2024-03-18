@@ -3,7 +3,7 @@ title: "threatSubmission resource type"
 description: "Represents a threat submission, which is used to submit suspected email, UTL, or file threats to Microsoft Defender."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
