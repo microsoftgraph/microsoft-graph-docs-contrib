@@ -44,7 +44,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
