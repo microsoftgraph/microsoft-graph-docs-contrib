@@ -20,7 +20,7 @@ Provides access to Planner resources for a [user](user.md). It doesn't contain a
 |:---------------|:--------|:----------|
 |[List plans](../api/planneruser-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
 |[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
-|[List myDayTasks](../api/planneruser-list-mydaytasks.md) |[plannerTask](plannertask.md) collection| Get the [plannerTasks](plannertask.md) to be shown in MyDay view of the user.|
+|[List myDayTasks](../api/planneruser-list-mydaytasks.md) |[plannerTask](plannertask.md) collection| Get the [plannerTasks](plannertask.md) to be shown in the MyDay view of the user.|
 
 ## Properties
 | Property	   | Type	|Description|
