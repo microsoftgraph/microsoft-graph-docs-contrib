@@ -2,12 +2,12 @@
 author: spgraph-docs-team
 description: "Represents the column values in a listItem resource."
 ms.date: 09/11/2017
-title: FieldValueSet
+title: fieldValueSet resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
 ---
-# FieldValueSet resource
+# fieldValueSet resource type
 
 Namespace: microsoft.graph
 

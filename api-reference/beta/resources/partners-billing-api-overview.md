@@ -4,7 +4,7 @@ description: "The partner billing API in Microsoft Graph offers Microsoft direct
 author: "sourishdeb"
 ms.localizationpriority: medium
 ms.prod: "reports"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph API to export partner billing data

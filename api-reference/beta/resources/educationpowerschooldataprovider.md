@@ -1,5 +1,5 @@
 ---
-title: "educationPowerSchoolDataProvider resource"
+title: educationPowerSchoolDataProvider resource type
 description: "Used to set up the school data synchronization profile when PowerSchool is used as the input source."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# educationPowerSchoolDataProvider resource
+# educationPowerSchoolDataProvider resource type
 
 Namespace: microsoft.graph
 

@@ -2,13 +2,13 @@
 author: spgraph-docs-team
 description: "This resource provides information on the status of a asynchronous job progress."
 ms.date: 09/10/2017
-title: AsyncJobStatus
+title: asyncJobStatus resource type
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: files
 ---
 
-# AsyncJobStatus resource
+# asyncJobStatus resource type
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 This resource provides information on the status of a asynchronous job progress.
 
-The following API calls return **AsyncJobStatus** resources:
+The following API calls return **asyncJobStatus** resources:
 
 * [Copy Item](../api/driveitem-copy.md)
 

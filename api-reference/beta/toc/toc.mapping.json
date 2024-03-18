@@ -612,7 +612,7 @@
                       "id": "Microsoft.IdentityGovernance.AccessReviews",
                       "includedResources": [
                         "approval",
-                        "approvalStage"
+                        "approvalStep"
                       ]
                     }
                   ]
@@ -1739,6 +1739,14 @@
     {
       "term": "saml or ws fed",
       "override": "SAML/WS-Fed"
+    },
+    {
+      "term": "cors",
+      "override": "CORS"
+    },
+    {
+      "term": "v 2",
+      "override": "v2"
     }
   ]
 }

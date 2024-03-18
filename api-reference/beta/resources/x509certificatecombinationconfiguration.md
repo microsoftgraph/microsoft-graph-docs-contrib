@@ -5,7 +5,7 @@ author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 

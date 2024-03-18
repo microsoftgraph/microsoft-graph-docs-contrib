@@ -4,7 +4,7 @@ description: "Using the search API, apps can search Microsoft 365 data in the co
 ms.localizationpriority: high
 author: "njerigrevious"
 ms.prod: "search"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Search API to query data
@@ -177,7 +177,7 @@ See [Use search display layout](/graph/search-concept-display-layout) for exampl
 
 ## Guest search
 
-The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, and in the left navigation, choose **Users**, and select **Guest users**. 
+The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, and in the left navigation, choose **Users**, and select **Guest users**.
 
 ## Error handling
 

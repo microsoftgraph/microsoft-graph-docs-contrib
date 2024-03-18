@@ -1,5 +1,5 @@
 ---
-title: "userIdentity type"
+title: userIdentity resource type
 description: "Represents a Microsoft Entra user identity for a reviewer of an access review."
 ms.localizationpriority: medium
 author: "jyothig123"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# userIdentity type
+# userIdentity resource type
 
 Namespace: microsoft.graph
 

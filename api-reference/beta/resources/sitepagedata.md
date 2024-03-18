@@ -2,12 +2,12 @@
 author: rahmit
 description: "The sitePageData resource represents the properties of a webPart. As these properties vary by web part, this is an OpenType with no fixed properties."
 ms.date: 09/01/2018
-title: SitePageData
+title: sitePageData resource type
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
-# sitePageData resource
+# sitePageData resource type
 
 Namespace: microsoft.graph
 

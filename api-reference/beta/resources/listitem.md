@@ -1,13 +1,13 @@
 ---
 author: "spgraph-docs-team"
 description: "Represents an item in a SharePoint list."
-title: "listItem resource"
+title: listItem resource type
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
-# listItem resource
+# listItem resource type
 
 Namespace: microsoft.graph
 

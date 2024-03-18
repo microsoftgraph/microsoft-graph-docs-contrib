@@ -1,5 +1,5 @@
 ---
-title: "network access profile resource type"
+title: profile resource type
 description: "A profile serves as a container for forwarding policies."
 author: "Moti-ba"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
-# network access profile resource type
+# profile resource type
 
 Namespace: microsoft.graph.networkaccess
 
@@ -44,7 +44,7 @@ Here's a JSON representation of the resource.
   "@odata.type": "microsoft.graph.networkaccess.profile",
   "baseType": "microsoft.graph.entity",
   "abstract": true,
-  "openType": false  
+  "openType": false
 }
 -->
 ``` json

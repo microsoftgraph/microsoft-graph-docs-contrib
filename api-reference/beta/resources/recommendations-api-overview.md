@@ -4,7 +4,7 @@ description: "Microsoft Entra recommendations are personalized and actionable in
 author: "ddeeps2610"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ms.date: 02/10/2023
 ---
 

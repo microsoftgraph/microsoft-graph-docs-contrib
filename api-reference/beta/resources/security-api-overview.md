@@ -4,7 +4,7 @@ description: "The Microsoft Graph security API provides a unified interface and 
 ms.localizationpriority: high
 author: "preetikr"
 ms.prod: "security"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph security API
@@ -32,7 +32,7 @@ Take immediate action to defend against threats using the [securityAction](secur
 ## Advanced hunting
 Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
 
-Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kusto Query Language](/azure/data-explorer/kusto/query/) (KQL) query on data stored in Microsoft 365 Defender. Leverage the returned result set to enrich an existing investigation or uncover undetected threats in your network. 
+Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kusto Query Language](/azure/data-explorer/kusto/query/) (KQL) query on data stored in Microsoft 365 Defender. Leverage the returned result set to enrich an existing investigation or uncover undetected threats in your network.
 
 ### Quotas and resource allocation
 
@@ -64,7 +64,7 @@ You can create advanced hunting [Custom detection rules](/microsoft-365/security
 ## Alerts
 Alerts are detailed warnings about suspicious activities in a customer's tenant that Microsoft or partner security providers have identified and flagged for action. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is alerts from multiple security providers for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
 
-The beta version of the security API offers two types of alerts that aggregate other alerts from security providers and make analyzing attacks and determining responses easier: 
+The beta version of the security API offers two types of alerts that aggregate other alerts from security providers and make analyzing attacks and determining responses easier:
 - [Alerts and incidents](#alerts-and-incidents) - the latest generation of alerts in the Microsoft Graph security API. They are represented by the [alert](security-alert.md) resource and its collection, [incident](security-incident.md) resource, defined in the `microsoft.graph.security` namespace.
 - [Legacy alerts](#legacy-alerts) - the first generation of alerts in the Microsoft Graph security API. They are represented by the [alert](alert.md) resource defined in the `microsoft.graph` namespace.
 
@@ -75,16 +75,16 @@ These [alert](security-alert.md) resources first pull alert data from security p
 Alerts from the following security providers are available via these rich alerts and incidents:
 - [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 - [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true)
-- [Microsoft Defender for Cloud Apps](/cloud-app-security/monitor-alerts) 
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/monitor-alerts)
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)
-- [Microsoft Defender for Identity](/defender-for-identity/alerts-overview) 
+- [Microsoft Defender for Identity](/defender-for-identity/alerts-overview)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/overview?view=o365-worldwide&preserve-view=true)
 - [Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide&preserve-view=true)
 
 
 ### Legacy alerts
 
-These [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline the management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response. 
+These [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline the management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response.
 
 With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph security API by updating your **alert** entity.
 
@@ -123,21 +123,21 @@ Alerts from the following security providers are available via this legacy **ale
 
 ## Incidents
 
-An [incident](security-incident.md) is a collection of correlated  [alerts](security-alert.md) and associated data that make up the story of an attack. Incident management is part of Microsoft 365 Defender and is available in the Microsoft 365 Defender portal (https://security.microsoft.com/). 
+An [incident](security-incident.md) is a collection of correlated  [alerts](security-alert.md) and associated data that make up the story of an attack. Incident management is part of Microsoft 365 Defender and is available in the Microsoft 365 Defender portal (https://security.microsoft.com/).
 
-Microsoft 365 services and apps create  alerts  when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple  alerts for multiple entities in your tenant. 
+Microsoft 365 services and apps create  alerts  when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple  alerts for multiple entities in your tenant.
 
-Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an [incident](security-incident.md). 
+Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an [incident](security-incident.md).
 
-Grouping related alerts into an incident gives you a comprehensive view of an attack. For example, you can see: 
+Grouping related alerts into an incident gives you a comprehensive view of an attack. For example, you can see:
 
-- Where the attack started. 
-- What tactics were used. 
-- How far the attack has gone into your tenant. 
-- The scope of the attack, such as how many devices, users, and mailboxes were impacted. 
-- All of the data associated with the attack. 
+- Where the attack started.
+- What tactics were used.
+- How far the attack has gone into your tenant.
+- The scope of the attack, such as how many devices, users, and mailboxes were impacted.
+- All of the data associated with the attack.
 
-The  [incident](security-incident.md) resource and its APIs allow you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents, with their related  [alerts](security-alert.md), that were flagged in your network, within the time range you specified in your environment retention policy. 
+The  [incident](security-incident.md) resource and its APIs allow you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents, with their related  [alerts](security-alert.md), that were flagged in your network, within the time range you specified in your environment retention policy.
 
 ## Information protection
 

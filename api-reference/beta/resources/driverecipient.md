@@ -2,13 +2,13 @@
 author: spgraph-docs-team
 description: The driveRecipient resource represents a person, group, or other recipient to share with using the invite action.
 ms.date: 09/10/2017
-title: DriveRecipient
+title: driveRecipient resource type
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 ---
 
-# driveRecipient resource
+# driveRecipient resource type
 
 Namespace: microsoft.graph
 

@@ -1,13 +1,13 @@
 ---
 author: "spgraph-docs-team"
 description: "Represents a list in a site."
-title: "List resource"
+title: list resource type
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
-# List resource
+# list resource type
 
 Namespace: microsoft.graph
 

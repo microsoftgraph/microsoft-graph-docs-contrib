@@ -4,7 +4,7 @@ description: "Learn how to use Microsoft Graph network access APIs to secure acc
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
-doc_type: resourcePageType
+doc_type: complexPageType
 ---
 
 # Secure access to cloud, public, and private apps using Microsoft Graph network access APIs (preview)

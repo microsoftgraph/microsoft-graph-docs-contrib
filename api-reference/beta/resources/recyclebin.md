@@ -4,7 +4,7 @@ title: "recycleBin resource type"
 description: "Provides a list of recycleBinItems."
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 # recycleBin resource type

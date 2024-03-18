@@ -4,7 +4,7 @@ description: "This section describes reporting capabilities of Microsoft Defende
 ms.localizationpriority: high
 author: "stuartcl"
 ms.prod: "security"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Reports API overview for attack simulation training as part of Microsoft Defender for Office 365

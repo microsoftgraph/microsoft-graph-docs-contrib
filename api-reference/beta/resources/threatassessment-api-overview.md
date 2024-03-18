@@ -4,7 +4,7 @@ description: "Microsoft Graph lets your app get authorized access to organizatio
 ms.localizationpriority: high
 author: "preetikr"
 ms.prod: "security"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph threat assessment API

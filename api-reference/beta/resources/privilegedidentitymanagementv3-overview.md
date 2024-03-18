@@ -4,7 +4,7 @@ description: "Privileged Identity Management (PIM) is a feature of Microsoft Ent
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ms.date: 10/12/2023
 ---
 
@@ -140,7 +140,7 @@ The following permissions are supported for PIM for Microsoft Entra roles API op
 | RoleEligibilitySchedule.Read.Directory <br/> RoleEligibilitySchedule.ReadWrite.Directory <br/> RoleManagement.Read.Directory <br/> RoleManagement.ReadWrite.Directory    | To manage role eligibility operations.         |
 | RoleManagementAlert.Read.Directory <br/> RoleManagementAlert.ReadWrite.Directory <br/> RoleManagement.Read.Directory <br/> RoleManagement.ReadWrite.Directory    | To manage security alerts for Microsoft Entra roles.         |
 
-For delegated scenarios, the signed-in user must be assigned the *Privileged Role Administrator* or *Global Administrator* role in Microsoft Entra ID. 
+For delegated scenarios, the signed-in user must be assigned the *Privileged Role Administrator* or *Global Administrator* role in Microsoft Entra ID.
 -->
 ## Licensing
 

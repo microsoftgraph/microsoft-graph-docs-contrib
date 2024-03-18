@@ -1,5 +1,5 @@
 ---
-title: "Global Secure Access settings resource type"
+title: settings resource type
 description: "The tenant configuration settings that are associated with Microsoft Entra Internet Access and Microsoft Entra Private Access capabilities under the umbrella of Global Secure Access."
 author: "Moti-ba"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
-# Global Secure Access settings resource type
+# settings resource type
 
 Namespace: microsoft.graph.networkaccess
 
