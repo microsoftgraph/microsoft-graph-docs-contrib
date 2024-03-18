@@ -6,6 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
+ms.topic: tutorial
 ms.date: 03/19/2024
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use Lifecycle Workflows APIs to automate employee offboarding tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
