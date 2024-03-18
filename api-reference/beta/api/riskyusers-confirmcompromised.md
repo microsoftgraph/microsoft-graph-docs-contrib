@@ -109,7 +109,7 @@ HTTP/1.1 204 No Content
 <!--
 ### Example 2: Confirm a user as compromised
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -127,7 +127,7 @@ Content-type: application/json
 ```
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

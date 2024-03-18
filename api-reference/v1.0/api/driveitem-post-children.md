@@ -53,7 +53,7 @@ If successful, this method returns `201 Created` response code and a [Driveitem]
 
 ### Request
 
-Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.
+The following example shows a request to create a new folder in the signed-in user's OneDrive root folder.
 The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.
 
 

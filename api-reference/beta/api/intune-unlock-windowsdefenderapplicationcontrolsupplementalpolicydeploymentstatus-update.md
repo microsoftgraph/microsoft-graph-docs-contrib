@@ -3,7 +3,7 @@ title: "Update windowsDefenderApplicationControlSupplementalPolicyDeploymentStat
 description: "Update the properties of a windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

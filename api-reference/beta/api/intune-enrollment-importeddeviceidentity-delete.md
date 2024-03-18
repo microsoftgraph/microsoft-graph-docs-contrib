@@ -3,7 +3,7 @@ title: "Delete importedDeviceIdentity"
 description: "Deletes a importedDeviceIdentity."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
