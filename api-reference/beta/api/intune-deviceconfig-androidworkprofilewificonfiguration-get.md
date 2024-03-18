@@ -3,7 +3,7 @@ title: "Get androidWorkProfileWiFiConfiguration"
 description: "Read properties and relationships of the androidWorkProfileWiFiConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -57,7 +57,7 @@ The following example shows how to get an attack simulation campaign for a tenan
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -147,7 +147,7 @@ The following example shows how to get included account targets (users) for an a
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -219,7 +219,7 @@ The following example shows how to get excluded account targets (users) for an a
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -291,7 +291,7 @@ The following example shows how to get training setting details for a simulation
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -362,7 +362,7 @@ The following example shows how to get end user notification setting details for
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

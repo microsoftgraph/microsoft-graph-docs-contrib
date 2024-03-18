@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/pages
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

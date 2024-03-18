@@ -44,7 +44,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

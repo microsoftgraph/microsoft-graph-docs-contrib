@@ -3,7 +3,7 @@ title: "generateServerLogCollectionRequest action"
 description: "Intune Mstunnel Microsofttunnelserver Generateserverlogcollectionrequest Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

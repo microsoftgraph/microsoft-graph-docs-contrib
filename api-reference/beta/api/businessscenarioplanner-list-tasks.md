@@ -58,7 +58,7 @@ The following example shows a request that gets all tasks related to a scenario.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -150,7 +150,7 @@ The following example shows a request that gets all tasks associated with a spec
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -242,7 +242,7 @@ The following example shows a request that gets all tasks created in a specific 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

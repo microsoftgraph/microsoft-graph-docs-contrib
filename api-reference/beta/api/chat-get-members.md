@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!--
 {

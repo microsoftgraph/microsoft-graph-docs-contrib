@@ -3,7 +3,7 @@ title: "reportRoot resource type"
 description: "The resource that represents an instance of History Reports."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

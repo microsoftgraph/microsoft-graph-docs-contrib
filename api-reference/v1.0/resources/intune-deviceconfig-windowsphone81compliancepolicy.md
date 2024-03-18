@@ -3,7 +3,7 @@ title: "windowsPhone81CompliancePolicy resource type"
 description: "This class contains compliance settings for Windows 8.1 Mobile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

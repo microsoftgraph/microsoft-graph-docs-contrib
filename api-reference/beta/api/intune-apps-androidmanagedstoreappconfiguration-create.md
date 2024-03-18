@@ -3,7 +3,7 @@ title: "Create androidManagedStoreAppConfiguration"
 description: "Create a new androidManagedStoreAppConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

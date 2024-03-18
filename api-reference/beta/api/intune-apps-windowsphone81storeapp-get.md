@@ -3,7 +3,7 @@ title: "Get windowsPhone81StoreApp"
 description: "Read properties and relationships of the windowsPhone81StoreApp object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
