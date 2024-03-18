@@ -3,7 +3,7 @@ title: "insightValueInt resource type"
 description: "The value in an user experience analytics insight."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

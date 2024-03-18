@@ -3,7 +3,7 @@ title: "List importedDeviceIdentities"
 description: "List properties and relationships of the importedDeviceIdentity objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

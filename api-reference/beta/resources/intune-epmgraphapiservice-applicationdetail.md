@@ -3,7 +3,7 @@ title: "applicationDetail resource type"
 description: "The details of the application which the user has requested to elevate"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

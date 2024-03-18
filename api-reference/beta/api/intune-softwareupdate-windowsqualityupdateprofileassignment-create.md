@@ -3,7 +3,7 @@ title: "Create windowsQualityUpdateProfileAssignment"
 description: "Create a new windowsQualityUpdateProfileAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

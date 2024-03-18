@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsAppHealthApplicationPerformance resource type"
 description: "The user experience analytics application performance entity contains application performance details."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

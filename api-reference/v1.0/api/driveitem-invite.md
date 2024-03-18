@@ -86,7 +86,7 @@ If successful, this method returns `200 OK` response code and [permission](../re
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /me/drive/items/{item-id}/invite
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/invite
 Content-type: application/json
 
 {
@@ -140,7 +140,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 

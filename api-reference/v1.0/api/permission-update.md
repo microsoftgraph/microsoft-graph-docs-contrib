@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and updated [permiss
 
 ## Example
 
-Here is an example of the request that changes the role on the sharing permission to read-only.
+The following example shows a request that changes the role on the sharing permission to read-only.
 
 
 # [HTTP](#tab/http)

@@ -3,7 +3,7 @@ title: "Create targetedManagedAppConfigurationPolicySetItem"
 description: "Create a new targetedManagedAppConfigurationPolicySetItem object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
