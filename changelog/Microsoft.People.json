@@ -558,11 +558,19 @@
       "ChangeList": [
         {
           "Id": "eb70d296-5b0b-4646-a93a-3ac8e6ea16d8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "peopleAdminSettings",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "iteminsights",
           "ChangeType": "Addition",
-          "Description": "Added the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-beta) resource",
+          "Description": "Added the **iteminsights** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-beta) resource.",
           "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "eb70d296-5b0b-4646-a93a-3ac8e6ea16d8",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta) method to the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-beta) resource.",
+          "Target": "insightsSettings"
         }
       ],
       "Id": "eb70d296-5b0b-4646-a93a-3ac8e6ea16d8",
