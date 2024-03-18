@@ -3,7 +3,7 @@ title: "Update microsoftTunnelServer"
 description: "Update the properties of a microsoftTunnelServer object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

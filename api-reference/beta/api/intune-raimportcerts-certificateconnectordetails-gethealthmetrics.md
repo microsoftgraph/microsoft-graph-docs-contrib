@@ -3,7 +3,7 @@ title: "getHealthMetrics action"
 description: "Intune Raimportcerts Certificateconnectordetails Gethealthmetrics Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

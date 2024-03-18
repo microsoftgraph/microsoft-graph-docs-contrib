@@ -3,7 +3,7 @@ title: "Update hardwarePasswordInfo"
 description: "Update the properties of a hardwarePasswordInfo object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

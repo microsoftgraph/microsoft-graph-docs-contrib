@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an [apiConnector
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/ap
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

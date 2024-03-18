@@ -3,7 +3,7 @@ title: "Delete windowsQualityUpdateProfile"
 description: "Deletes a windowsQualityUpdateProfile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

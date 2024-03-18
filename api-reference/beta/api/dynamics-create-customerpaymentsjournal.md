@@ -50,7 +50,7 @@ If successful, this method returns ```201 Created``` response code and a **custo
 
 **Request**
 
-Here is an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals
