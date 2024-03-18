@@ -1,0 +1,1744 @@
+{
+  "tocNodes": [
+    {
+      "name": "Applications",
+      "workloads": [
+        {
+          "id": "Microsoft.DirectoryServices",
+          "includedResources": [
+            "application"
+          ]
+        },
+        {
+          "id": "Microsoft.AppManagement",
+          "includedResources": [
+            "applicationTemplate"
+          ]
+        },
+        {
+          "id": "Microsoft.DirectoryServices",
+          "includedResources": [
+            "federatedIdentityCredential",
+            "servicePrincipal"
+          ]
+        }
+      ],
+      "childNodes": [
+        {
+          "name": "Policies",
+          "workloads": [
+            {
+              "id": "Microsoft.DirectoryServices",
+              "includedResources": [
+                "remoteDesktopSecurityConfiguration",
+                "tokenIssuancePolicy",
+                "tokenLifetimePolicy"
+              ]
+            }
+          ],
+          "childNodes": [
+            {
+              "name": "Application authentication method policy",
+              "workloads": [
+                {
+                  "id": "Microsoft.DirectoryServices",
+                  "includedResources": [
+                    "tenantAppManagementPolicy",
+                    "appManagementPolicy"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Synchronization",
+          "overview": "../../resources/synchronization-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.IAM",
+              "includedResources": [
+                "synchronization",
+                "synchronizationTemplate",
+                "synchronizationJob",
+                "synchronizationSchema"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Calendars",
+      "workloads": [
+        {
+          "id": "Microsoft.Exchange",
+          "includedResources": [
+            "calendar",
+            "event",
+            "eventMessage",
+            "attachment",
+            "calendarGroup",
+            "calendarPermission",
+            "outlookCategory"
+          ]
+        }
+      ],
+      "childNodes": [
+        {
+          "name": "Extended properties",
+          "overview": "../../resources/extended-properties-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.Exchange",
+              "includedResources": [
+                "singleValueLegacyExtendedProperty",
+                "multiValueLegacyExtendedProperty"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Places",
+          "workloads": [
+            {
+              "id": "Microsoft.Exchange.Places",
+              "includedResources": [
+                "place",
+                "room",
+                "roomList"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Change notifications",
+      "overview": "../../resources/change-notifications-api-overview.md",
+      "workloads": [
+        {
+          "id": "Microsoft.SubscriptionServices",
+          "includedResources": [
+            "subscription"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Compliance",
+      "overview": "../../resources/complianceapioverview.md",
+      "workloads": [
+        {
+          "id": "Microsoft.Compliance.DataSubjectRequest",
+          "includedResources": [
+            "subjectRightsRequest"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cross-device experiences",
+      "overview": "../../resources/project-rome-overview.md",
+      "childNodes": [
+        {
+          "name": "Activity feed",
+          "overview": "../../resources/activity-feed-api-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.ProjectRome.ActivityFeedServiceTimeline",
+              "includedResources": [
+                "userActivity",
+                "activityHistoryItem"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Customer booking",
+      "overview": "../../resources/booking-api-overview.md",
+      "workloads": [
+        {
+          "id": "Microsoft.Bookings",
+          "excludedResources": [
+            "solutionsRoot",
+            "bookingCustomerBase",
+            "bookingStaffMemberBase"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Device and app management",
+      "childNodes": [
+        {
+          "name": "Browser management",
+          "overview": "../../resources/browser-edge-api-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.Edge.CloudSiteListManagement",
+              "excludedResources": [
+                "admin",
+                "edge",
+                "internetExplorerMode"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cloud printing",
+          "workloads": [
+            {
+              "id": "Microsoft.PrintService",
+              "excludedResources": [
+                "printUsage",
+                "entity",
+                "group",
+                "user",
+                "reportRoot",
+                "printTask",
+                "printerBase",
+                "printUsageByPrinter",
+                "printUsageByUser"
+              ]
+            }
+          ],
+          "childNodes": [
+            {
+              "name": "Reports",
+              "workloads": [
+                {
+                  "id": "Microsoft.PrintService",
+                  "includedResources": [
+                    "printUsageByPrinter",
+                    "printUsageByUser"
+                  ]
+                }
+              ],
+              "childNodes": [
+                {
+                  "name": "Archived print jobs",
+                  "additionalLinks": [
+                    {
+                      "name": "List a user's archived print jobs",
+                      "href": "../../api/reports-getuserarchivedprintjobs.md"
+                    },
+                    {
+                      "name": "List a groups's archived print jobs",
+                      "href": "../../api/reports-getgrouparchivedprintjobs.md"
+                    },
+                    {
+                      "name": "List a printer's archived print jobs",
+                      "href": "../../api/reports-getprinterarchivedprintjobs.md"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Corporate management",
+          "overview": "../../resources/intune-graph-overview.md",
+          "childNodes": [
+            {
+              "name": "App management",
+              "overview": "../../resources/intune-app-conceptual.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.Intune.Applications"
+                },
+                {
+                  "id": "Microsoft.Intune.Books"
+                }
+              ]
+            },
+            {
+              "name": "Company terms",
+              "workloads": [
+                {
+                  "id": "Microsoft.Intune.CompanyTerms"
+                }
+              ]
+            },
+            {
+              "name": "Corporate enrollment",
+              "workloads": [
+                {
+                  "id": "Microsoft.Intune.Enrollment"
+                }
+              ]
+            },
+            {
+              "name": "Device configuration",
+              "workloads": [
+                {
+                  "id": "Microsoft.Intune.DeviceConfiguration",
+                  "excludedResources": [
+                    "reportRoot"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Device management",
+              "workloads": [
+                {
+                  "id": "Microsoft.Intune.Devices"
+                }
+              ]
+            },
+            {
+              "name": "Mobile app management (MAM)",
+              "workloads": [
+                {
+                  "id": "Microsoft.Intune.ManagedApplications"
+                },
+                {
+                  "id": "Microsoft.CloudManagedDesktop"
+                },
+                {
+                  "id": "Microsoft.Intune.Wip"
+                }
+              ]
+            },
+            {
+              "name": "Role-based access control (RBAC)",
+              "workloads": [
+                {
+                  "id": "Microsoft.Intune.Rbac"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Service health and communications",
+          "overview": "../../resources/service-communications-api-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.M365ServiceCommsPlatform",
+              "excludedResources": [
+                "serviceAnnouncementBase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Education",
+      "overview": "../../resources/education-overview.md",
+      "workloads": [
+        {
+          "id": "Microsoft.EducationRosteringAPIs",
+          "includedResources": [
+            "educationSchool",
+            "educationClass",
+            "educationUser"
+          ]
+        },
+        {
+          "id": "Microsoft.EducationAssignment",
+          "excludedResources": [
+            "educationRoot"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Extensions",
+      "overview": "/graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true&tabs=http",
+      "childNodes": [
+        {
+          "name": "Directory extensions",
+          "workloads": [
+            {
+              "id": "Microsoft.DirectoryServices",
+              "includedResources": [
+                "extensionProperty"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Open extensions",
+          "workloads": [
+            {
+              "id": "Microsoft.Exchange",
+              "includedResources": [
+                "openTypeExtension"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schema extensions",
+          "workloads": [
+            {
+              "id": "Microsoft.Graph.Extensibility",
+              "includedResources": [
+                "schemaExtension"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "External data connections",
+      "overview": "../../resources/connectors-api-overview.md",
+      "workloads": [
+        {
+          "id": "Microsoft.SubstrateConnectors",
+          "excludedResources": [
+            "external"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Files",
+      "overview": "../../resources/onedrive.md",
+      "workloads": [
+        {
+          "id": "Microsoft.FileServices",
+          "includedResources": [
+            "drive",
+            "driveItem",
+            "bundle",
+            "permission"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Identity and access",
+      "overview": "../../resources/azure-ad-overview.md",
+      "childNodes": [
+        {
+          "name": "Directory management",
+          "workloads": [
+            {
+              "id": "Microsoft.DirectoryServices",
+              "includedResources": [
+                "administrativeUnit",
+                "contract",
+                "directory",
+                "device",
+                "directoryObject",
+                "directoryRole",
+                "directoryRoleTemplate",
+                "domain",
+                "onPremisesDirectorySynchronization",
+                "organization",
+                "orgContact",
+                "subscribedSku",
+                "tenantInformation"
+              ]
+            },
+            {
+              "id": "Microsoft.BitLocker",
+              "includedResources": [
+                "bitlockerRecoveryKey"
+              ]
+            },
+            {
+              "id": "Microsoft.DeviceLocalCredentials",
+              "includedResources": [
+                "deviceLocalCredentialInfo"
+              ]
+            }
+          ],
+          "childNodes": [
+            {
+              "name": "Custom security attributes",
+              "overview": "../../resources/custom-security-attributes-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.DirectoryServices",
+                  "includedResources": [
+                    "allowedValue",
+                    "attributeSet",
+                    "customSecurityAttributeDefinition"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Role management",
+              "workloads": [
+                {
+                  "id": "Microsoft.EnterpriseRbac",
+                  "includedResources": [
+                    "roleManagement",
+                    "unifiedRoleDefinition",
+                    "unifiedRoleAssignment"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Governance",
+          "overview": "../../resources/identitygovernance-overview.md",
+          "childNodes": [
+            {
+              "name": "Access reviews",
+              "overview": "../../resources/accessreviewsv2-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.IdentityGovernance.AccessReviews",
+                  "excludedResources": [
+                    "adminConsentRequestPolicy",
+                    "appConsentRequest",
+                    "userConsentRequest",
+                    "entitlementManagement",
+                    "approval",
+                    "approvalStep"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Consent requests",
+              "overview": "../../resources/consentrequests-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.IdentityGovernance.AccessReviews",
+                  "includedResources": [
+                    "adminConsentRequestPolicy",
+                    "appConsentRequest",
+                    "userConsentRequest"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Entitlement management",
+              "overview": "../../resources/entitlementmanagement-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.IGAELM",
+                  "excludedResources": [
+                    "group",
+                    "rbacApplication",
+                    "roleManagement",
+                    "group",
+                    "user",
+                    "identityGovernance",
+                    "directoryObject"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Lifecycle workflows",
+              "overview": "../../resources/identitygovernance-lifecycleworkflows-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.AAD.LCM",
+                  "excludedResources": [
+                    "application",
+                    "user",
+                    "userProcessingResult",
+                    "taskReport",
+                    "run",
+                    "taskProcessingResult"
+                  ]
+                }
+              ],
+              "childNodes": [
+                {
+                  "name": "Reports",
+                  "overview": "../../resources/identitygovernance-lifecycleworkflows-reporting-overview.md",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.AAD.LCM",
+                      "includedResources": [
+                        "userProcessingResult",
+                        "taskReport",
+                        "run",
+                        "taskProcessingResult"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Privileged identity management",
+              "childNodes": [
+                {
+                  "name": "PIM for Microsoft Entra roles",
+                  "overview": "../../resources/privilegedidentitymanagementv3-overview.md",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.PIM.AzureRBAC",
+                      "includedResources": [
+                        "unifiedRoleAssignmentScheduleRequest",
+                        "unifiedRoleAssignmentSchedule",
+                        "unifiedRoleAssignmentScheduleInstance",
+                        "unifiedRoleEligibilityScheduleRequest",
+                        "unifiedRoleEligibilitySchedule",
+                        "unifiedRoleEligibilityScheduleInstance",
+                        "unifiedRoleManagementPolicy",
+                        "unifiedRoleManagementPolicyAssignment"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "PIM for Groups",
+                  "overview": "../../resources/privilegedidentitymanagement-for-groups-api-overview.md",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.PIM.AzureRBAC",
+                      "includedResources": [
+                        "privilegedAccessGroupAssignmentScheduleRequest",
+                        "privilegedAccessGroupAssignmentSchedule",
+                        "privilegedAccessGroupAssignmentScheduleInstance",
+                        "privilegedAccessGroupEligibilityScheduleRequest",
+                        "privilegedAccessGroupEligibilitySchedule",
+                        "privilegedAccessGroupEligibilityScheduleInstance",
+                        "unifiedRoleManagementPolicy",
+                        "unifiedRoleManagementPolicyAssignment"
+                      ]
+                    },
+                    {
+                      "id": "Microsoft.IdentityGovernance.AccessReviews",
+                      "includedResources": [
+                        "approval",
+                        "approvalStage"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Terms of use",
+              "workloads": [
+                {
+                  "id": "Microsoft.identityGovernance.TermsOfUse",
+                  "excludedResources": [
+                    "identityGovernance",
+                    "user",
+                    "agreementFileProperties",
+                    "agreementFileVersion",
+                    "termsOfUseContainer"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Identity and sign-in",
+          "workloads": [
+            {
+              "id": "Microsoft.PXS",
+              "includedResources": [
+                "dataPolicyOperation"
+              ]
+            },
+            {
+              "id": "Microsoft.DirectoryServices",
+              "includedResources": [
+                "oAuth2PermissionGrant",
+                "organizationalBranding",
+                "organizationalBrandingProperties",
+                "organizationalBrandingLocalization",
+                "certificateBasedAuthConfiguration"
+              ]
+            },
+            {
+              "id": "Microsoft.AADInviteMgr",
+              "includedResources": [
+                "invitation"
+              ]
+            }
+          ],
+          "childNodes": [
+            {
+              "name": "Authentication methods",
+              "overview": "../../resources/authenticationmethods-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.StrongAuthenticationAPI",
+                  "includedResources": [
+                    "authenticationMethod",
+                    "emailAuthenticationMethod",
+                    "fido2AuthenticationMethod",
+                    "microsoftAuthenticatorAuthenticationMethod",
+                    "passwordAuthenticationMethod",
+                    "phoneAuthenticationMethod",
+                    "softwareOathAuthenticationMethod",
+                    "temporaryAccessPassAuthenticationMethod",
+                    "windowsHelloForBusinessAuthenticationMethod"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Authentication strengths",
+              "overview": "authenticationstrengths-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.AuthenticationMethodsPolicy",
+                  "includedResources": [
+                    "authenticationCombinationConfiguration",
+                    "fido2CombinationConfiguration",
+                    "authenticationMethodModeDetail"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Conditional access",
+              "workloads": [
+                {
+                  "id": "Microsoft.IdentityProtectionServices",
+                  "includedResources": [
+                    "conditionalAccessPolicy",
+                    "namedLocation",
+                    "authenticationContextClassReference",
+                    "conditionalAccessTemplate"
+                  ]
+                }
+              ],
+              "childNodes": [
+                {
+                  "name": "Named location",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.IdentityProtectionServices",
+                      "includedResources": [
+                        "countryNamedLocation",
+                        "ipNamedLocation"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Cross-tenant access",
+              "overview": "crosstenantaccesspolicy-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.DirectoryServices",
+                  "includedResources": [
+                    "crossTenantAccessPolicy",
+                    "crossTenantAccessPolicyConfigurationDefault",
+                    "crossTenantAccessPolicyConfigurationPartner",
+                    "crossTenantIdentitySyncPolicyPartner"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Identity protection",
+              "workloads": [
+                {
+                  "id": "Microsoft.IdentityProtectionServices",
+                  "includedResources": [
+                    "riskDetection",
+                    "riskyUser",
+                    "servicePrincipalRiskDetection",
+                    "riskyServicePrincipal"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Identity provider",
+              "workloads": [
+                {
+                  "id": "Microsoft.CPIM",
+                  "includedResources": [
+                    "identityProviderBase"
+                  ]
+                }
+              ],
+              "childNodes": [
+                {
+                  "name": "External identities",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.CPIM",
+                      "includedResources": [
+                        "builtInIdentityProvider",
+                        "socialIdentityProvider",
+                        "appleManagedIdentityProvider"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Domain-based external identities",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.DirectoryServices",
+                      "includedResources": [
+                        "samlOrWsFedExternalDomainFederation"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Federation with Microsoft Entra ID",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.DirectoryServices",
+                      "includedResources": [
+                        "internalDomainFederation"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Identity provider (deprecated)",
+              "workloads": [
+                {
+                  "id": "Microsoft.CPIM",
+                  "includedResources": [
+                    "identityProvider"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Policies",
+              "overview": "../../resources/policy-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.DirectoryServices",
+                  "includedResources": [
+                    "activityBasedTimeoutPolicy",
+                    "authorizationPolicy",
+                    "claimsMappingPolicy",
+                    "homeRealmDiscoveryPolicy",
+                    "tokenIssuancePolicy",
+                    "tokenLifetimePolicy"
+                  ]
+                },
+                {
+                  "id": "Microsoft.CPIM",
+                  "includedResources": [
+                    "authenticationFlowsPolicy"
+                  ]
+                },
+                {
+                  "id": "Microsoft.AuthenticationMethodsPolicy",
+                  "includedResources": [
+                    "authenticationStrengthPolicy"
+                  ]
+                },
+                {
+                  "id": "Microsoft.HybridAuthentication",
+                  "includedResources": [
+                    "featureRolloutPolicy"
+                  ]
+                },
+                {
+                  "id": "Microsoft.IdentityProtectionServices",
+                  "includedResources": [
+                    "identitySecurityDefaultsEnforcementPolicy"
+                  ]
+                }
+              ],
+              "childNodes": [
+                {
+                  "name": "Application authentication method policy",
+                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.DirectoryServices",
+                      "includedResources": [
+                        "tenantAppManagementPolicy",
+                        "appManagementPolicy"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Authentication methods policy",
+                  "overview": "../../resources/authenticationmethodspolicies-overview.md",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.AuthenticationMethodsPolicy",
+                      "includedResources": [
+                        "authenticationMethodsPolicy",
+                        "emailAuthenticationMethodConfiguration",
+                        "fido2AuthenticationMethodConfiguration",
+                        "microsoftAuthenticatorAuthenticationMethodConfiguration",
+                        "smsAuthenticationMethodConfiguration",
+                        "temporaryAccessPassAuthenticationMethodConfiguration",
+                        "softwareOathAuthenticationMethodConfiguration",
+                        "voiceAuthenticationMethodConfiguration",
+                        "x509CertificateAuthenticationMethodConfiguration"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "User flows",
+              "workloads": [
+                {
+                  "id": "Microsoft.CPIM",
+                  "includedResources": [
+                    "b2xIdentityUserFlow",
+                    "identityUserFlowAttribute",
+                    "identityUserFlowAttributeAssignment",
+                    "userFlowLanguageConfiguration",
+                    "identityApiConnector"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Granular delegated admin privileges",
+          "overview": "delegatedadminrelationships-api-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.Partner.CustomerSvcAdmin",
+              "excludedResources": [
+                "resellerDelegatedAdminRelationship",
+                "tenantRelationship"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mail",
+      "overview": "../../resources/mail-api-overview.md",
+      "workloads": [
+        {
+          "id": "Microsoft.Exchange",
+          "includedResources": [
+            "message",
+            "attachment",
+            "outlookCategory",
+            "mailFolder",
+            "mailSearchFolder",
+            "messageRule"
+          ]
+        }
+      ],
+      "childNodes": [
+        {
+          "name": "Focused Inbox",
+          "overview": "../../resources/manage-focused-inbox.md",
+          "workloads": [
+            {
+              "id": "Microsoft.Exchange",
+              "includedResources": [
+                "inferenceClassificationOverride"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Extended properties",
+          "overview": "../../resources/extended-properties-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.Exchange",
+              "includedResources": [
+                "singleValueLegacyExtendedProperty",
+                "multiValueLegacyExtendedProperty"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Notes",
+      "overview": "../../resources/onenote-api-overview.md",
+      "workloads": [
+        {
+          "id": "Microsoft.OneNote",
+          "excludedResources": [
+            "entity",
+            "user",
+            "group"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "People and workplace intelligence",
+      "overview": "../../resources/social-overview.md",
+      "workloads": [
+        {
+          "id": "Microsoft.Exchange",
+          "includedResources": [
+            "person"
+          ]
+        },
+        {
+          "id": "Microsoft.PeopleAdmin",
+          "includedResources": [
+            "peopleAdminSettings"
+          ]
+        }
+      ],
+      "childNodes": [
+        {
+          "name": "Insights",
+          "workloads": [
+            {
+              "id": "Microsoft.OfficeGraph",
+              "excludedResources": [
+                "user",
+                "userSettings"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Personal contacts",
+      "workloads": [
+        {
+          "id": "Microsoft.Exchange",
+          "includedResources": [
+            "contact",
+            "contactFolder",
+            "outlookCategory"
+          ]
+        }
+      ],
+      "childNodes": [
+        {
+          "name": "Extended properties",
+          "overview": "../../resources/extended-properties-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.Exchange",
+              "includedResources": [
+                "singleValueLegacyExtendedProperty",
+                "multiValueLegacyExtendedProperty"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reports",
+      "childNodes": [
+        {
+          "name": "Identity and access reports",
+          "childNodes": [
+            {
+              "name": "Microsoft Entra activity reports",
+              "childNodes": [
+                {
+                  "name": "Registration and usage",
+                  "overview": "../../resources/authenticationmethods-usage-insights-overview.md",
+                  "workloads": [
+                    {
+                      "id": "Microsoft.AAD.Reporting",
+                      "includedResources": [
+                        "userRegistrationDetails",
+                        "userRegistrationFeatureSummary",
+                        "userRegistrationMethodSummary"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Entra audit logs",
+              "overview": "../../resources/azure-ad-auditlog-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.AAD.Reporting",
+                  "includedResources": [
+                    "directoryAudit",
+                    "signIn",
+                    "provisioningObjectSummary"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Microsoft 365 usage reports",
+          "overview": "../../resources/report.md",
+          "workloads": [
+            {
+              "id": "Microsoft.O365Reporting",
+              "excludedResources": [
+                "report"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Microsoft Defender for Office 365 security reports",
+          "overview": "../../resources/report-m365defender-reports-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.Security.AttackSimulation",
+              "includedResources": [
+                "attackSimulationRepeatOffender",
+                "attackSimulationSimulationUserCoverage",
+                "attackSimulationTrainingUserCoverage"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Partner billing reports",
+          "overview": "../../resources/partners-billing-api-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.Partner.Billing",
+              "includedResources": [
+                "billedUsage",
+                "manifest",
+                "operation",
+                "unbilledUsage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "childNodes": [
+        {
+          "name": "Query",
+          "overview": "../../resources/search-api-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.MicrosoftSearch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Security",
+      "overview": "../../resources/security-api-overview.md",
+      "additionalLinks": [
+        {
+          "name": "Errors",
+          "href": "../../resources/security-error-codes.md"
+        }
+      ],
+      "childNodes": [
+        {
+          "name": "Advanced hunting",
+          "workloads": [
+            {
+              "id": "Microsoft.SecurityDetectionsAndIncidents",
+              "includedResources": [
+                "security"
+              ]
+            },
+            {
+              "id": "Microsoft.M365.Defender",
+              "includedResources": [
+                "huntingQueryResults",
+                "huntingRowResult",
+                "singlePropertySchema"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Alerts and incidents",
+          "workloads": [
+            {
+              "id": "Microsoft.M365.Defender",
+              "includedResources": [
+                "alert",
+                "alertEvidence",
+                "incident"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Attack simulation and training",
+          "workloads": [
+            {
+              "id": "Microsoft.Security.AttackSimulation",
+              "includedResources": [
+                "simulation",
+                "attackSimulationOperation",
+                "endUserNotification",
+                "landingPage",
+                "loginPage",
+                "payload",
+                "simulationAutomation",
+                "simulationAutomationRun",
+                "training",
+                "trainingLanguageDetail"
+              ]
+            }
+          ],
+          "childNodes": [
+            {
+              "name": "Reports",
+              "overview": "../../resources/report-m365defender-reports-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.Security.AttackSimulation",
+                  "includedResources": [
+                    "attackSimulationRepeatOffender",
+                    "attackSimulationSimulationUserCoverage",
+                    "attackSimulationTrainingUserCoverage"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eDiscovery",
+          "workloads": [
+            {
+              "id": "Microsoft.Compliance.Ediscovery",
+              "includedResources": [
+                "ediscoveryCase",
+                "ediscoveryCaseSettings",
+                "microsoft.graph.security.caseOperation",
+                "ediscoveryCustodian",
+                "ediscoveryNoncustodialDataSource",
+                "ediscoverySearch",
+                "ediscoveryReviewSet",
+                "ediscoveryReviewTag"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Information protection",
+          "childNodes": [
+            {
+              "name": "Threat assessment",
+              "overview": "../../resources/threatassessment-api-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.ThreatAssessment",
+                  "excludedResources": [
+                    "informationProtection"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Legacy alert",
+          "workloads": [
+            {
+              "id": "Microsoft.SecurityDetectionsAndIncidents",
+              "includedResources": [
+                "alert"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Records management",
+          "overview": "../../resources/security-recordsmanagement-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.Security.RecordsManagement",
+              "excludedResources": [
+                "entity",
+                "security",
+                "triggersRoot",
+                "triggerTypesRoot"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Secure score",
+          "workloads": [
+            {
+              "id": "Microsoft.SecurityDetectionsAndIncidents",
+              "includedResources": [
+                "secureScore",
+                "secureScoreControlProfile"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Threat intelligence",
+          "overview": "../../resources/security-threatintelligence-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.ThreatIntelligence",
+              "excludedResources": [
+                "hostname",
+                "hostReputation",
+                "ipAddress",
+                "security",
+                "threatIntelligence",
+                "entity"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sites and lists",
+      "overview": "../../resources/sharepoint.md",
+      "workloads": [
+        {
+          "id": "Microsoft.FileServices",
+          "includedResources": [
+            "site",
+            "list",
+            "columnDefinition",
+            "contentType",
+            "listItem",
+            "documentSetVersion",
+            "richLongRunningOperation",
+            "sharepointSettings"
+          ]
+        }
+      ],
+      "childNodes": [
+        {
+          "name": "Taxonomy",
+          "workloads": [
+            {
+              "id": "Microsoft.FileServices",
+              "includedResources": [
+                "store",
+                "group",
+                "set",
+                "term",
+                "relation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tasks and plans",
+      "overview": "../../resources/planner-overview.md",
+      "workloads": [
+        {
+          "id": "Microsoft.Office.Tasks",
+          "excludedResources": [
+            "planner",
+            "plannerGroup",
+            "plannerUser"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Teamwork and communications",
+      "overview": "../../resources/teams-api-overview.md",
+      "childNodes": [
+        {
+          "name": "Apps",
+          "workloads": [
+            {
+              "id": "Microsoft.Teams.GraphSvc",
+              "includedResources": [
+                "teamsApp",
+                "teamsAppInstallation",
+                "teamsAppSettings",
+                "teamsTab"
+              ]
+            },
+            {
+              "id": "Microsoft.DirectoryServices",
+              "includedResources": [
+                "resourceSpecificPermissionGrant"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Calls and online meetings",
+          "overview": "../../resources/communications-api-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.Skype.Calling",
+              "includedResources": [
+                "presence"
+              ]
+            }
+          ],
+          "childNodes": [
+            {
+              "name": "Calls",
+              "workloads": [
+                {
+                  "id": "Microsoft.Skype.Calling",
+                  "includedResources": [
+                    "call",
+                    "audioRoutingGroup",
+                    "contentSharingSession",
+                    "participant",
+                    "addLargeGalleryViewOperation"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Call records",
+              "overview": "../../resources/callrecords-api-overview.md",
+              "workloads": [
+                {
+                  "id": "Microsoft.IC3.DataPlatform",
+                  "includedResources": [
+                    "callRecord",
+                    "directRoutingLogRow",
+                    "pstnCallLogRow",
+                    "session"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Online meetings",
+              "workloads": [
+                {
+                  "id": "Microsoft.Skype.Calling",
+                  "includedResources": [
+                    "meetingAttendanceReport",
+                    "attendanceRecord",
+                    "onlineMeeting"
+                  ]
+                },
+                {
+                  "id": "Microsoft.Teams.GraphSvc",
+                  "includedResources": [
+                    "callRecording",
+                    "callTranscript"
+                  ]
+                }
+              ],
+              "childNodes": [
+                {
+                  "name": "Virtual appointment",
+                  "additionalLinks": [
+                    {
+                      "name": "Get virtual appointment join link",
+                      "href": "../../api/virtualappointment-getvirtualappointmentjoinweburl.md"
+                    },
+                    {
+                      "name": "Send virtual appointment reminder SMS",
+                      "href": "../../api/virtualappointment-sendvirtualappointmentremindersms.md"
+                    },
+                    {
+                      "name": "Send virtual appointment SMS",
+                      "href": "../../api/virtualappointment-sendvirtualappointmentsms.md"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Virtual events",
+              "workloads": [
+                {
+                  "id": "Microsoft.Skype.Calling",
+                  "includedResources": [
+                    "virtualEventWebinar",
+                    "virtualEventRegistration",
+                    "virtualEventSession"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Employee learning",
+          "overview": "../../resources/viva-learning-api-overview.md",
+          "workloads": [
+            {
+              "id": "Microsoft.Viva.Learning",
+              "excludedResources": [
+                "employeeExperience",
+                "employeeExperienceUser",
+                "dateTimeTimeZone",
+                "itemBody"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Messaging",
+          "workloads": [
+            {
+              "id": "Microsoft.Teams.GraphSvc",
+              "includedResources": [
+                "channel",
+                "chat",
+                "chatMessage",
+                "pinnedChatMessageInfo",
+                "team",
+                "deletedTeam",
+                "teamworkTag",
+                "teamworkTagMember"
+              ]
+            }
+          ],
+          "childNodes": [
+            {
+              "name": "Activity feed",
+              "additionalLinks": [
+                {
+                  "name": "Send notification to user in chat",
+                  "href": "../../api/chat-sendactivitynotification.md"
+                },
+                {
+                  "name": "Send notification to user in team",
+                  "href": "../../api/team-sendactivitynotification.md"
+                },
+                {
+                  "name": "Send notification to user",
+                  "href": "../../api/userteamwork-sendactivitynotification.md"
+                },
+                {
+                  "name": "Send notification to multiple users in bulk",
+                  "href": "../../api/teamwork-sendactivitynotificationtorecipients.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shift management",
+          "workloads": [
+            {
+              "id": "Microsoft.Teams.Shifts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "To-do tasks",
+      "overview": "../../resources/todo-overview.md",
+      "workloads": [
+        {
+          "id": "Microsoft.Todo",
+          "includedResources": [
+            "todoTaskList",
+            "todoTask",
+            "taskFileAttachment",
+            "checklistItem",
+            "linkedResource"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Workbooks and charts",
+      "overview": "../../resources/excel.md",
+      "workloads": [
+        {
+          "id": "Microsoft.Excel",
+          "excludedResources": [
+            "workbookFunctions",
+            "workbookFunctionResult"
+          ]
+        }
+      ]
+    }
+  ],
+  "resourceOverviews": [
+    {
+      "resource": "federatedIdentityCredential",
+      "overview": "../../resources/federatedidentitycredentials-overview.md"
+    },
+    {
+      "resource": "subjectRightsRequest",
+      "overview": "../../resources/subjectrightsrequest-subjectrightsrequestapioverview.md"
+    }
+  ],
+  "termOverrides": [
+    {
+      "term": "ios",
+      "override": "iOS"
+    },
+    {
+      "term": "ipad",
+      "override": "iPad"
+    },
+    {
+      "term": "macos",
+      "override": "macOS"
+    },
+    {
+      "term": "mac os",
+      "override": "macOS"
+    },
+    {
+      "term": "macos office suite",
+      "override": "macOS Office Suite"
+    },
+    {
+      "term": "mac os office suite",
+      "override": "macOS Office Suite"
+    },
+    {
+      "term": "lob",
+      "override": "LOB"
+    },
+    {
+      "term": "vpp",
+      "override": "VPP"
+    },
+    {
+      "term": "e book",
+      "override": "eBook"
+    },
+    {
+      "term": "android",
+      "override": "Android"
+    },
+    {
+      "term": "microsoft",
+      "override": "Microsoft"
+    },
+    {
+      "term": "microsoft defender",
+      "override": "Microsoft Defender"
+    },
+    {
+      "term": "microsoft edge",
+      "override": "Microsoft Edge"
+    },
+    {
+      "term": "microsoft store",
+      "override": "Microsoft Store"
+    },
+    {
+      "term": "windows app x",
+      "override": "Windows AppX"
+    },
+    {
+      "term": "windows mobile",
+      "override": "Windows Mobile"
+    },
+    {
+      "term": "msi",
+      "override": "MSI"
+    },
+    {
+      "term": "o auth",
+      "override": "OAuth"
+    },
+    {
+      "term": "iosi pad",
+      "override": "iOS iPad"
+    },
+    {
+      "term": "os",
+      "override": "OS"
+    },
+    {
+      "term": "sku",
+      "override": "SKU"
+    },
+    {
+      "term": "on premises",
+      "override": "On-premises"
+    },
+    {
+      "term": "bitlocker",
+      "override": "BitLocker"
+    },
+    {
+      "term": "fido 2",
+      "override": "FIDO2"
+    },
+    {
+      "term": "microsoft authenticator",
+      "override": "Microsoft Authenticator"
+    },
+    {
+      "term": "software oath",
+      "override": "Software OATH"
+    },
+    {
+      "term": "windows hello for business",
+      "override": "Windows Hello for Business"
+    },
+    {
+      "term": "temporary access pass",
+      "override": "Temporary Access Pass"
+    },
+    {
+      "term": "ip",
+      "override": "IP"
+    },
+    {
+      "term": "sms",
+      "override": "SMS"
+    },
+    {
+      "term": "x 509",
+      "override": "X509"
+    },
+    {
+      "term": "ediscovery",
+      "override": "eDiscovery"
+    },
+    {
+      "term": "url",
+      "override": "URL"
+    },
+    {
+      "term": "ssl",
+      "override": "SSL"
+    },
+    {
+      "term": "whois",
+      "override": "WHOIS"
+    },
+    {
+      "term": "dns",
+      "override": "DNS"
+    },
+    {
+      "term": "cvss",
+      "override": "CVSS"
+    },
+    {
+      "term": "pstn",
+      "override": "PSTN"
+    },
+    {
+      "term": "saml or ws fed",
+      "override": "SAML/WS-Fed"
+    }
+  ]
+}
