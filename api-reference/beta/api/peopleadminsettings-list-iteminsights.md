@@ -1,6 +1,6 @@
 ---
 title: "List insightsSettings"
-description: "Get the **insightsSettings** resources from the **itemInsights** navigation property."
+description: "Retrieve properties of insightsSettings object for displaying or returning item insights in an organization."
 author: "jolintve"
 ms.localizationpriority: medium
 ms.prod: "insights"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [insightsSettings](../resources/insightssettings.md) resources from the **itemInsights** navigation property.
+Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning item insights in an organization.
 
 To learn how to customize the privacy of item insights in an organization, see [Customize item insights privacy](/graph/insights-customize-item-insights-privacy).
 
