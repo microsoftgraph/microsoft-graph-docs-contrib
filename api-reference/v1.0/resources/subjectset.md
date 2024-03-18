@@ -26,6 +26,7 @@ This is an abstract base type that's inherited by the following derived types:
 + [externalSponsors](externalsponsors.md)
 + [targetManager](targetmanager.md)
 + [targetApplicationOwners](targetapplicationowners.md)
++ [targetUserSponsors](targetusersponsors.md)
 
 
 ## Properties
