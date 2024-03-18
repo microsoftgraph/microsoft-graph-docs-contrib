@@ -3,7 +3,7 @@ title: "List customQuestions"
 description: "Get the bookingCustomQuestion resources associated with a bookingBusiness."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -62,12 +62,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 <!-- {
   "blockType": "request",
   "name": "list_bookingcustomquestion",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customQuestions
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customQuestions
 ```
 
 # [C#](#tab/csharp)
@@ -92,10 +92,6 @@ GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdel
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-bookingcustomquestion-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-bookingcustomquestion-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

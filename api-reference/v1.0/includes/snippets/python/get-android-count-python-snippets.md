@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.devices.devices_request_builder import DevicesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

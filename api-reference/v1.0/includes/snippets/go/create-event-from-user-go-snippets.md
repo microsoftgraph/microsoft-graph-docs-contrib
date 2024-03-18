@@ -52,7 +52,7 @@ requestBody.SetLocation(location)
 
 attendee := graphmodels.NewAttendee()
 emailAddress := graphmodels.NewEmailAddress()
-address := "samanthab@contoso.onmicrosoft.com"
+address := "samanthab@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Samantha Booth"
 emailAddress.SetName(&name) 

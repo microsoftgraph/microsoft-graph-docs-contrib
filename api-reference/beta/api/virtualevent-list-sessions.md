@@ -3,7 +3,7 @@ title: "List sessions"
 description: "Get a list of all virtualEventSession objects under a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -58,11 +58,21 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [virtualEventSession](../resources/virtualeventsession.md) objects in the response body.
 
+Currently, only the following properties of a **virtualEventSession** object contain data when the object is returned by this method. All other properties are null. To get all the properties of a **virtualEventSession**, use the [Get virtualEventSession](../api/virtualeventsession-get.md) method.
+
+| Property              | Type                                          | Description    |
+| :-------------------- | :-------------------------------------------- | :------------------------------------ |
+| endDateTime           | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session end time.   |
+| id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).    |
+| joinWebUrl | String | The join URL of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| startDateTime | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session start time. |
+| subject | String | The subject of the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+
 ## Examples
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -131,18 +141,11 @@ Content-Type: application/json
       "endDateTime": "2023-08-09T22:00:00Z",
       "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
       "subject": "Session one",
-      "participants": {
-        "@odata.type": "microsoft.graph.meetingParticipants"
-      },
       "isBroadcast": null,
       "broadcastSettings": null,
       "capabilities": [],
       "audioConferencing": null,
-      "chatInfo": {
-        "threadId": "19:meeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5@thread.v2",
-        "messageId": "0",
-        "replyChainMessageId": null
-      },
+      "chatInfo": null,
       "videoTeleconferenceId": null,
       "externalId": null,
       "joinMeetingIdSettings": null,

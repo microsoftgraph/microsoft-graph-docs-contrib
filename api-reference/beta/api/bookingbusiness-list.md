@@ -3,7 +3,7 @@ title: "List bookingBusinesses"
 description: "Get a collection of bookingBusiness objects that has been created for the tenant."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ GET /solutions/bookingbusinesses
 ## Optional query parameters
 This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response.
 
-This method also supports the `query` parameter which accepts a string value. This parameter limits the GET results to businesses that match the specified string. 
+This method also supports the `query` parameter which accepts a string value. This parameter limits the GET results to businesses that match the specified string.
 
 ## Request headers
 | Name      |Description|
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and collection of [b
 
 ### Example 1: Get the Bookings buinsesses in a tenant
 
-#### Request 
+#### Request
 The following example gets the Bookings businesses in a tenant.
 
 # [HTTP](#tab/http)
@@ -91,17 +91,13 @@ GET https://graph.microsoft.com/beta/solutions/bookingbusinesses
 [!INCLUDE [sample-code](../includes/snippets/php/get-bookingbusinesses-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingbusinesses-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-bookingbusinesses-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### Response 
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -117,11 +113,11 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses",
     "value":[
         {
-            "id":"Contosolunchdelivery@contoso.onmicrosoft.com",
+            "id":"Contosolunchdelivery@contoso.com",
             "displayName":"Contoso lunch delivery",
         },
         {
-            "id":"Fabrikam@contoso.onmicrosoft.com",
+            "id":"Fabrikam@contoso.com",
             "displayName":"Fabrikam",
         }
     ]
@@ -132,7 +128,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows how to use the `query` parameter to get one or more matching 
+The following example shows how to use the `query` parameter to get one or more matching
 Bookings businesses in the tenant.
 
 # [HTTP](#tab/http)
@@ -168,10 +164,6 @@ GET https://graph.microsoft.com/beta/solutions/bookingbusinesses?query=Adventure
 [!INCLUDE [sample-code](../includes/snippets/php/query-bookingbusinesses-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/query-bookingbusinesses-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/query-bookingbusinesses-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -194,7 +186,7 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses",
     "value":[
         {
-            "id":"AdventureWorksCycles@M365B960066.onmicrosoft.com",
+            "id":"AdventureWorksCycles@contoso.com",
             "displayName":"Adventure Works Cycles",
         }
     ]

@@ -3,7 +3,7 @@ author: mahgoyal
 ms.date: 06/28/2023
 title: Permanently delete a file or folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Permanently delete a driveItem by using its ID."
 doc_type: apiPageType
 ---
@@ -53,7 +53,7 @@ The following example shows how to call this API.
 ### Request
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/permanentDelete
+POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}/permanentDelete
 ```
 
 ### Response

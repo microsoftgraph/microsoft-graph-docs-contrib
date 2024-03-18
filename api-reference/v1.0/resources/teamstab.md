@@ -3,7 +3,7 @@ title: "teamsTab resource type"
 description: "Represents a tab pinned (attached) to a channel or a chat."
 ms.localizationpriority: medium
 author: "AkJo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -71,7 +71,7 @@ The following JSON representation shows the resource type.
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 

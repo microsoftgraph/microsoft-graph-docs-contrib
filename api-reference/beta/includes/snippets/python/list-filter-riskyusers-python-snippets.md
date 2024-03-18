@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.identityProtection.riskyUsers.risky_users_request_builder import RiskyUsersRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

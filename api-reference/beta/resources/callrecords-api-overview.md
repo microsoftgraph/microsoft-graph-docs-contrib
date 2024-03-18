@@ -3,7 +3,7 @@ title: "Working with the call records API in Microsoft Graph"
 description: "The Microsoft Graph call records API allows you to retrieve usage and diagnostics data for calls and online meetings within your organization."
 author: "mcm223"
 doc_type: conceptualPageType
-ms.prod: cloud-communications
+ms.subservice: cloud-communications
 ms.localizationpriority: high
 ---
 
@@ -41,7 +41,7 @@ Each **session** contains one or more [segment](callrecords-segment.md) entities
 
 In the diagram above, the numbers denote how many children of each type can be present. For example, a 1..N relationship between a **callRecord** and a **session** means one **callRecord** instance can contain one or more **session** instances. Similarly, a 1..N relationship between a **segment** and a **media** means one **segment** instance can contain one or more [media](callrecords-media.md) streams.
 
-## See also
+## Related content
 
 - [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true)
 

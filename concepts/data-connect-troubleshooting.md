@@ -3,7 +3,7 @@ title: "Troubleshoot Microsoft Graph Data Connect"
 description: "Get troubleshooting information related to using Microsoft Graph Data Connect."
 author: "David1997sb"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
 ---
 
 # Troubleshoot Microsoft Graph Data Connect
@@ -181,7 +181,7 @@ The following error message indicates that a **Microsoft.GraphServices** type re
 
 ![Screenshot that shows an error for the already existent billing resource.](images/app-registration-already-premium-usage.png)
 
-## See also
+## Related content
 
 - [Data Connect overview](data-connect-concept-overview.md)
 - [Data Connect FAQ](data-connect-faq.md)

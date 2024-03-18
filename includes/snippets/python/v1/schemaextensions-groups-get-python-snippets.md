@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.schemaExtensions.schema_extensions_request_builder import SchemaExtensionsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

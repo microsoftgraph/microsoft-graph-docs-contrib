@@ -3,7 +3,7 @@ title: "Update team"
 description: "Update the properties of the specified team."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -132,6 +132,6 @@ HTTP/1.1 204 No Content
   ]
 }-->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

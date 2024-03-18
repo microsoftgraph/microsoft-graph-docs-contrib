@@ -3,7 +3,7 @@ title: "Update tab in chat"
 description: "Update the properties of the specified tab in a chat."
 author: "subray"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -136,7 +136,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 - [Update tab in channel](channel-patch-tabs.md)

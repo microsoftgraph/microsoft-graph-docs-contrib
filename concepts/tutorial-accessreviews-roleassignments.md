@@ -1,11 +1,11 @@
 ---
 title: "Review access to privileged roles using access reviews APIs"
 description: "Learn how to use the access reviews API to periodically review users and groups with access to privileged roles, including both active and eligible roles."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: jgangadhar
+ms.reviewer: jgangadhar, rianakarim
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 ms.date: 11/01/2022
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use the access reviews APIs to review and attest to the privileged admin roles that principals in my organization, so that I can ensure proper security and compliance in my organization.
 ---
@@ -23,7 +23,7 @@ In this tutorial, you'll use the access reviews API to periodically review users
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled.
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Privileged Role Administrator role.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Privileged Role Administrator role.
 + Principals with active or eligible assignments to a privileged role. These assignments will be the scope of your access review. To assign privileged roles, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Microsoft Entra roles](/graph/tutorial-assign-azureadroles).
     + In this tutorial, the User Administrator role is the resource in review. A security group and an individual user have been assigned the role.
 + Grant yourself the following delegated permission: `AccessReview.ReadWrite.All`.
@@ -783,7 +783,7 @@ Content-type: application/json
         "id": "10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6",
         "displayName": "MOD Administrator",
         "type": null,
-        "userPrincipalName": "admin@M365x43961174.onmicrosoft.com"
+        "userPrincipalName": "admin@contoso.com"
     },
     "scopes": [
         {

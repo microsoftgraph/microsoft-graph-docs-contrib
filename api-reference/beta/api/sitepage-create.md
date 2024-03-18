@@ -4,7 +4,7 @@ description: "Create a new sitePage in the site pages list in a site."
 ms.date: 05/07/2018
 title: Create a new page in a SharePoint site
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,7 @@ The following example shows how to create a new page.
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /sites/{site-id}/pages
+POST https://graph.microsoft.com/beta/sites/{site-id}/pages
 Content-Type: application/json
 
 {
@@ -166,6 +166,10 @@ Content-Type: application/json
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/create-page-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-page-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

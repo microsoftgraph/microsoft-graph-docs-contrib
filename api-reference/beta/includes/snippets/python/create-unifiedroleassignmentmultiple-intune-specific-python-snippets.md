@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unified_role_assignment_multiple import UnifiedRoleAssignmentMultiple
 
 graph_client = GraphServiceClient(credentials, scopes)
 

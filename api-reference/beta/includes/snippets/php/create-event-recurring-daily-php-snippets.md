@@ -28,7 +28,7 @@ $location->setDisplayName('Harry\'s Bar');
 $requestBody->setLocation($location);
 $attendeesAttendee1 = new Attendee();
 $attendeesAttendee1EmailAddress = new EmailAddress();
-$attendeesAttendee1EmailAddress->setAddress('AlexW@contoso.OnMicrosoft.com');
+$attendeesAttendee1EmailAddress->setAddress('AlexW@contoso.com');
 $attendeesAttendee1EmailAddress->setName('Alex Wilbur');
 $attendeesAttendee1->setEmailAddress($attendeesAttendee1EmailAddress);
 $attendeesAttendee1->setType(new AttendeeType('required'));

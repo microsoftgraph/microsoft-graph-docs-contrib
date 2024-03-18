@@ -3,7 +3,7 @@ title: "Create roleAssignmentScheduleRequests"
 description: "In PIM, request for an active and persistent role assignment through the unifiedRoleAssignmentScheduleRequest object. Use this API to activate eligible roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -57,9 +57,9 @@ You can specify the following properties when creating an **unifiedRoleAssignmen
 |roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object that is being assigned. Required.|
 |directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only. Either **directoryScopeId** or **appScopeId** is required.|
 |appScopeId|String|Identifier of the app-specific scope when the assignment is scoped to an app. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units. Either **directoryScopeId** or **appScopeId** is required.|
-|justification|String|A message provided by users and administrators when create they create the **unifiedRoleAssignmentScheduleRequest** object. Optional.|
+|justification|String|A message provided by users and administrators when create they create the **unifiedRoleAssignmentScheduleRequest** object.  <br/><br/>Optional for `selfDeactivate` and `adminRemove` actions; might be optional or required for other action types depending on the rules in the policy that's linked to the Microsoft Entra role. For more information, see [Rules in PIM](/graph/identity-governance-pim-rules-overview).|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role assignment request. Recurring schedules are currently unsupported. Required.|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role assignment request including details of the ticket number and ticket system. Optional.|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role assignment request including details of the ticket number and ticket system. <br/><br/>Optional for `selfDeactivate` and `adminRemove` actions; might be optional or required for other action types depending on the rules in the policy that's linked to the Microsoft Entra role. For more information, see [Rules in PIM](/graph/identity-governance-pim-rules-overview).|
 
 
 ## Response

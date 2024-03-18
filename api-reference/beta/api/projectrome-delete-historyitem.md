@@ -2,7 +2,7 @@
 title: "Delete a historyItem"
 description: "Delete an existing history item for an existing user activity."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 author: "ailae"
 ---
@@ -51,7 +51,7 @@ If successful, this method returns the `204 No Content` response code if the his
 
 ##### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -66,7 +66,7 @@ PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyI
 
 ##### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

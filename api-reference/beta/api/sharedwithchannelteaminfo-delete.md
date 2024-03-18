@@ -4,7 +4,7 @@ description: "Delete a team from a shared channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Delete sharedWithChannelTeamInfo
@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -112,7 +112,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Remove member from channel](channel-delete-members.md)
 - [Remove member from team](team-delete-members.md)

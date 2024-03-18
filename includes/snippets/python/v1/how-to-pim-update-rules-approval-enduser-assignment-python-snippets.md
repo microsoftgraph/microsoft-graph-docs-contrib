@@ -4,7 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unified_role_management_policy_approval_rule import UnifiedRoleManagementPolicyApprovalRule
+from msgraph.generated.models.unified_role_management_policy_rule_target import UnifiedRoleManagementPolicyRuleTarget
+from msgraph.generated.models.unified_role_management_policy_rule_target_operations import UnifiedRoleManagementPolicyRuleTargetOperations
+from msgraph.generated.models.approval_settings import ApprovalSettings
+from msgraph.generated.models.unified_approval_stage import UnifiedApprovalStage
+from msgraph.generated.models.subject_set import SubjectSet
+from msgraph.generated.models.single_user import SingleUser
+from msgraph.generated.models.group_members import GroupMembers
 
 graph_client = GraphServiceClient(credentials, scopes)
 

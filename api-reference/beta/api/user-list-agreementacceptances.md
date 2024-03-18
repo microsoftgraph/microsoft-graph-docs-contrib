@@ -117,7 +117,7 @@ Content-type: application/json
             "agreementFileId": "08033369-8972-42a3-8533-90bbd2757a01",
             "userDisplayName": "Megan Bowen",
             "userPrincipalName": "MeganB@Contoso.com",
-            "userEmail": "MeganB@M365x43961174.OnMicrosoft.com",
+            "userEmail": "MeganB@contoso.com",
             "recordedDateTime": "2022-03-04T14:11:22.6658376Z",
             "expirationDateTime": null,
             "state": "accepted"

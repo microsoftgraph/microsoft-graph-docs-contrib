@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.mailFolders.item.childFolders.child_folders_request_builder import ChildFoldersRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

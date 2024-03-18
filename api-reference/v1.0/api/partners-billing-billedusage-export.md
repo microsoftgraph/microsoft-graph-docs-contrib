@@ -3,7 +3,7 @@ title: "billedUsage: export"
 description: "Export the billed Azure usage data."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -15,16 +15,14 @@ Namespace: microsoft.graph.partners.billing
 
 Export the billed Azure usage data.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "partners-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/partners-permissions.md)]
+<!-- { "blockType": "permissions", "name": "partners_billing_billedusage_export" } -->
+[!INCLUDE [permissions-table](../includes/permissions/partners-billing-billedusage-export-permissions.md)]
 
 ## HTTP request
 
@@ -104,6 +102,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/billedusagethisexport-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/billedusagethisexport-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/billedusagethisexport-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,6 +122,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 202 OK
+HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/v1.0/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
 ```

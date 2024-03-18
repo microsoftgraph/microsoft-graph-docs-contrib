@@ -3,7 +3,7 @@ title: "mobileAppInstallStatus resource type"
 description: "Contains properties for the installation state of a mobile app for a device. This will be deprecated in May, 2023"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

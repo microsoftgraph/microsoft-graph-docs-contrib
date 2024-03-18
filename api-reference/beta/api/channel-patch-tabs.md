@@ -3,7 +3,7 @@ title: "Update tab"
 description: "Update the properties of the specified tab."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the specified [tab](../resources/teamstab.md).
-This can be used to configure the content of the tab.
+It can be used to configure the content of the tab.
 
 > [!NOTE] 
 > You aren't allowed to update a static tab. This API returns a `400 Bad Request` response code if used to update a static tab.
@@ -53,8 +53,9 @@ In the request body, supply a JSON representation of [tab](../resources/teamstab
 
 If successful, this method returns a `200 OK` response code.
 
-## Example
-#### Request
+## Examples
+
+### Request
 The following example shows a request.
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
@@ -64,7 +65,8 @@ Content-type: application/json
   "displayName": "My Contoso Tab - updated"
 }
 ```
-#### Response
+### Response
+The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

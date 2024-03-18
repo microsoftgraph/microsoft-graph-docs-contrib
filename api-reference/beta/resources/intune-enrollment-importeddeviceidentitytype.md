@@ -3,7 +3,7 @@ title: "importedDeviceIdentityType enum type"
 description: "Intune Enrollment Importeddeviceidentitytype Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,4 @@ Namespace: microsoft.graph
 |unknown|0|Unknown value of importedDeviceIdentityType.|
 |imei|1|Device Identity is of type imei.|
 |serialNumber|2|Device Identity is of type serial number.|
+|manufacturerModelSerial|3|Device Identity is of type manufacturer + model + serial number semi-colon delimited tuple with enforced order.|

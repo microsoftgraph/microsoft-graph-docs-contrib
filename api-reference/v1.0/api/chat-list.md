@@ -3,7 +3,7 @@ title: "List chats"
 description: "Retrieve the list of chats for a user."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
 This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.
 
->**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
+>**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -86,7 +86,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -194,7 +194,7 @@ Content-type: application/json
 ### Example 2: List all chats along with the members of each chat
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -242,7 +242,7 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
-Here is an example of the response. 
+The following example shows the response.
 
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. The client shouldn't try to parse or make any assumptions about these resource IDs.
@@ -281,7 +281,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Tony Stark",
                     "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
-                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                    "email": "starkt@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -289,7 +289,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                    "email": "parkerp@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -297,7 +297,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                    "email": "furyn@contoso.com"
                 }
             ]
         },
@@ -319,7 +319,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Tony Stark",
                     "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
-                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                    "email": "starkt@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -327,7 +327,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Bruce Banner",
                     "userId": "48bf9d52-dca7-4a5f-8398-37b95cc7bd83",
-                    "email": "bannerb@teamsgraph.onmicrosoft.com"
+                    "email": "bannerb@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -335,7 +335,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "TChalla",
                     "userId": "9efb1aea-4f83-4673-bdcd-d3f3c7be28c2",
-                    "email": "tchalla@teamsgraph.onmicrosoft.com"
+                    "email": "tchalla@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -343,7 +343,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Thor Odinson",
                     "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
-                    "email": "odinsont@teamsgraph.onmicrosoft.com"
+                    "email": "odinsont@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -351,7 +351,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Steve Rogers",
                     "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
-                    "email": "rogerss@teamsgraph.onmicrosoft.com"
+                    "email": "rogerss@contoso.com"
                 }
             ]
         },
@@ -373,7 +373,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                    "email": "furyn@contoso.com"
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -381,7 +381,7 @@ Content-type: application/json
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
-                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                    "email": "parkerp@contoso.com"
                 }
             ]
         }
@@ -407,7 +407,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request. **lastMessagePreview/createdDateTime** is passed to sort chats by the most to least recent chat messages.
+The following example shows a request. **lastMessagePreview/createdDateTime** is passed to sort chats by the most to least recent chat messages.
 
 
 

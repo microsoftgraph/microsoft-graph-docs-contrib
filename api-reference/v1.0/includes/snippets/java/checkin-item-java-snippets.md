@@ -4,17 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String comment = "Updating the latest guidelines";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.drives("{drive-id}").items("{item-id}")
-	.checkin(DriveItemCheckinParameterSet
-		.newBuilder()
-		.withCheckInAs(null)
-		.withComment(comment)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.drives.item.items.item.checkin.CheckinPostRequestBody checkinPostRequestBody = new com.microsoft.graph.drives.item.items.item.checkin.CheckinPostRequestBody();
+checkinPostRequestBody.setComment("Updating the latest guidelines");
+graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").checkin().post(checkinPostRequestBody);
+
 
 ```

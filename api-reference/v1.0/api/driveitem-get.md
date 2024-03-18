@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Get a driveItem resource
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Retrieve the metadata for a driveItem in a drive by file system path or ID."
 doc_type: apiPageType
 ---
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and the [driveItem](
 
 ### Request
 
-Here is an example of the request to the root folder of the user's OneDrive.
+The following example shows a request to the root folder of the user's OneDrive.
 
 
 # [HTTP](#tab/http)
@@ -111,7 +111,7 @@ GET /me/drive/root
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -145,7 +145,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 For details about how errors are returned, see [Error responses][error-response].
 

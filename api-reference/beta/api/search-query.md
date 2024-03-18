@@ -3,7 +3,7 @@ title: "searchEntity: query"
 description: "Run a specified search query. Search results are provided in the response."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 
@@ -243,7 +243,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)

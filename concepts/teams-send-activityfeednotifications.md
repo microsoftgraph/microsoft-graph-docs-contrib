@@ -3,7 +3,7 @@ title: "Send activity feed notifications to users in Microsoft Teams"
 description: "Use the Microsoft Teams activity feed notification APIs in Microsoft Graph to help keep users up to date with changes in the tools and workflows they use."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Send activity feed notifications to users in Microsoft Teams
@@ -873,7 +873,7 @@ The settings appear after the Teams app sends the first notification. This reduc
 
 `Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Microsoft Entra appId in the `webApplicationInfo` section of the manifest. When this happens, you get an error like `Found multiple applications with the same Microsoft Entra App ID 'Your Microsoft Entra AppId'.`. Make sure that you use unique Microsoft Entra apps for unique Teams apps.  You can install the same Teams app in multiple scopes (team + user, for example).
 
-## See also
+## Related content
 
 - [Best practices for using Microsoft Teams activity feed notifications](teams-activity-feed-notifications-best-practices.md)
 - [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)

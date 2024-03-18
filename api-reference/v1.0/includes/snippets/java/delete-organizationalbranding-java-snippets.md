@@ -4,10 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.organization("84841066-274d-4ec0-a5c1-276be684bdd3").branding()
-	.buildRequest()
-	.delete();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.organization.item.branding.BrandingDeleteRequestBody brandingDeleteRequestBody = new com.microsoft.graph.organization.item.branding.BrandingDeleteRequestBody();
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("id", "0");
+brandingDeleteRequestBody.setAdditionalData(additionalData);
+graphClient.organization().byOrganizationId("{organization-id}").branding().delete(brandingDeleteRequestBody);
+
 
 ```

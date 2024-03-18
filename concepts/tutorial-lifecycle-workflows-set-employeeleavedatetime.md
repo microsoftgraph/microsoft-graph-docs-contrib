@@ -1,10 +1,11 @@
 ---
 title: Set employeeLeaveDateTime
 description: Configure the employeeLeaveDateTime property for a user using Microsoft Graph. 
-author: "FaithOmbongi"
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 ms.topic: how-to
 ms.date: 01/03/2024
 #Customer intent: As a developer integrating with Microsoft Graph, I want programmatically configure the employeeLeaveDateTime property for a user, so that I can trigger scheduled "leaver" workflows using Lifecycle Workflows.
@@ -49,9 +50,9 @@ PATCH https://graph.microsoft.com/v1.0/users/df744d9e-2148-4922-88a8-633896c1e92
     $UserId = "528492ea-779a-4b59-b9a3-b3773ef6da6d"
     $employeeLeaveDateTime = "2022-09-30T23:59:59Z"
     
-    Update-MgUser -UserId $UserId -EmployeeLeaveDateTime $employeeLeaveDateTime
+    Update-MgUser -UserId $UserId -EmployeeLeaveDateTime $employeeLeaveDateTime 
 
-    $User = Get-MgUser -UserId $UserId
+    $User = Get-MgUser -UserId $UserId -Property EmployeeLeaveDateTime
     $User.EmployeeLeaveDateTime
 ```
 

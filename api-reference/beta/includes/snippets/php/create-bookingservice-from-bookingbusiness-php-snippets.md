@@ -59,6 +59,7 @@ $requestBody->setDescription('Individual bento box lunch delivery');
 $requestBody->setDisplayName('Bento');
 $requestBody->setIsLocationOnline(true);
 $requestBody->setSmsNotificationsEnabled(true);
+$requestBody->setIsCustomerAllowedToManageBooking(true);
 $requestBody->setLanguageTag('en-US');
 $requestBody->setIsHiddenFromCustomers(false);
 $requestBody->setNotes('Home-cooked special');
@@ -81,6 +82,6 @@ $additionalData = [
 ];
 $requestBody->setAdditionalData($additionalData);
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->services()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->services()->post($requestBody)->wait();
 
 ```

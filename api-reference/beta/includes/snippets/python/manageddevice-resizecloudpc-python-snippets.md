@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.resize_cloud_pc_post_request_body import ResizeCloudPcPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

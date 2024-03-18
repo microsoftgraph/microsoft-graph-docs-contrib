@@ -3,7 +3,7 @@ title: "authenticationMethodsRoot: usersRegisteredByFeature"
 description: "Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication."
 author: "kvenkit"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -89,10 +89,6 @@ GET https://graph.microsoft.com/v1.0/reports/authenticationMethods/usersRegister
 
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/authenticationmethodsroot-usersregisteredbyfeature-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/authenticationmethodsroot-usersregisteredbyfeature-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

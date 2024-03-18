@@ -3,7 +3,7 @@ title: "Microsoft Entra consent requests"
 description: "Use the consent request APIs to configure the consent request workflow and to manage consent requests for users attempting to access apps that require admin consent."
 ms.localizationpriority: medium
 author: "eringreenlee"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 09/28/2022
 ---
@@ -57,7 +57,7 @@ The following directory roles are required for a calling application.
 |:------------------|:------------|:--------------------------------------------|
 | Read | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Global Reader, Cloud App Administrator, Application Administrator, or Global Administrator   |
 
-## See also
+## Related content
 
 - Learn more about how to [configure the admin consent workflow (preview)](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
 - Understand the user and admin consent flows in the [Microsoft Entra application consent experiences](/azure/active-directory/develop/application-consent-experience).

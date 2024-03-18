@@ -3,7 +3,7 @@ title: "cloudPcReports: getCloudPcRecommendationReports"
 description: "Get the device recommendation reports for Cloud PCs, such as the usage category report."
 author: "XiaolouT"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the device recommendation reports for Cloud PCs, such as the usage category report. The usage category report categorizes a Cloud PC as `Undersized`, `Oversized`, `Rightsized`, or `Underutilized`, and also provides the recommended SKU when the Cloud PC isn't `Rightsized`.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -192,7 +194,7 @@ Content-Type: application/octet-stream
     [
       "4db3619f-be92-42a7-8c74-43fab185da6f",
       "1MoveHost",
-      "connie_1@cpccontoso.onmicrosoft.com",
+      "connie_1@contoso.com",
       "Rightsized",
       {
         "NumvCPUs": 2,
@@ -209,7 +211,7 @@ Content-Type: application/octet-stream
     [
       "f2ee066c-f63e-4acd-a41e-e348db71cb4d",
       "AXFBF",
-      "connie_2@cpccontoso.onmicrosoft.com",
+      "connie_2@contoso.com",
       "Rightsized",
       {
         "NumvCPUs": 2,

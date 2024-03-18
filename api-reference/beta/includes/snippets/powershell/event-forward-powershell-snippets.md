@@ -10,7 +10,7 @@ $params = @{
 	ToRecipients = @(
 		@{
 			EmailAddress = @{
-				Address = "danas@contoso.onmicrosoft.com"
+				Address = "danas@contoso.com"
 				Name = "Dana Swope"
 			}
 		}

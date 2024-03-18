@@ -3,7 +3,7 @@ title: "Update user"
 description: "Update the properties of a user object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -69,10 +69,6 @@ Content-length: 46
   "@odata.type": "#microsoft.graph.user"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-devices-user-update-update-user-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-devices-user-update-update-user-javascript-snippets.md)]

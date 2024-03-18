@@ -3,7 +3,7 @@ title: "List callRecords"
 description: "Get a list of callRecord objects and their properties."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
@@ -396,9 +396,9 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
-For more information on using call records, see [callRecord](../resources/callrecords-callrecord.md).
+- [callRecord](../resources/callrecords-callrecord.md)
 
 <!-- {
   "type": "#page.annotation",

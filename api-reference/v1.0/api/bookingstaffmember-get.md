@@ -3,7 +3,7 @@ title: "Get bookingStaffMember"
 description: "Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -54,10 +54,10 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "71d64d0e-7225-49b6-b0b1-070d476cda51"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com", "71d64d0e-7225-49b6-b0b1-070d476cda51"]
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/71d64d0e-7225-49b6-b0b1-070d476cda51
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/staffMembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
 
 ### Response
@@ -76,10 +76,10 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.bookingStaffMember",
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/staffMembers/$entity",
     "id": "71d64d0e-7225-49b6-b0b1-070d476cda51",
     "displayName": "Samantha Booth",
-    "emailAddress": "samanthab@contoso.onmicrosoft.com",
+    "emailAddress": "samanthab@contoso.com",
     "availabilityIsAffectedByPersonalCalendar": true,
     "role": "administrator",
     "timeZone": "America/Chicago",

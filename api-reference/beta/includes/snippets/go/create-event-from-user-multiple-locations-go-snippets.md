@@ -48,7 +48,7 @@ requestBody.SetEnd(end)
 
 attendee := graphmodels.NewAttendee()
 emailAddress := graphmodels.NewEmailAddress()
-address := "DanaS@contoso.onmicrosoft.com"
+address := "DanaS@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Dana Swope"
 emailAddress.SetName(&name) 
@@ -57,7 +57,7 @@ type := graphmodels.REQUIRED_ATTENDEETYPE
 attendee.SetType(&type) 
 attendee1 := graphmodels.NewAttendee()
 emailAddress := graphmodels.NewEmailAddress()
-address := "AlexW@contoso.onmicrosoft.com"
+address := "AlexW@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Alex Wilber"
 emailAddress.SetName(&name) 

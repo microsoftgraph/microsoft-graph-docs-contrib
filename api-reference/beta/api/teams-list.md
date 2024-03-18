@@ -3,7 +3,7 @@ title: "List teams"
 description: "List all teams in an organization."
 author: "akhilkohlimicrosoft"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -292,7 +292,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get team](../api/team-get.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

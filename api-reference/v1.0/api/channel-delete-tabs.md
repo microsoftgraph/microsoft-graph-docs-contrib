@@ -3,7 +3,7 @@ title: "Delete tab from channel"
 description: "Removes (unpins) a tab from the specified channel within a team. "
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -50,7 +50,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,7 +97,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -119,6 +119,6 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

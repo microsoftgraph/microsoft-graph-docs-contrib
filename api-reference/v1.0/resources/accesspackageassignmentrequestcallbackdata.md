@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequestCallbackData resource type"
 description: "Access package assignment request workflow calllback back that custom extension endpoint callback."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Get the list of channels either in this team or shared with this t
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # List allChannels
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List all channels
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -147,7 +147,7 @@ Content-Type: application/json
 ### Example 2: List all shared channels
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

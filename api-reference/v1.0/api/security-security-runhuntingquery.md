@@ -4,7 +4,7 @@ description: "Run Hunting query API"
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -107,6 +107,10 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/security-runhuntingquery-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-runhuntingquery-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

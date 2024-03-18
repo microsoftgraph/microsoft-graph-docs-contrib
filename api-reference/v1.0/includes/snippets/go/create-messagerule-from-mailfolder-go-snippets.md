@@ -35,7 +35,7 @@ recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 name := "Alex Wilbur"
 emailAddress.SetName(&name) 
-address := "AlexW@contoso.onmicrosoft.com"
+address := "AlexW@contoso.com"
 emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 

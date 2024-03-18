@@ -3,7 +3,7 @@ title: "Archive team"
 description: "Archive the specified team. "
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,7 @@ If archiving is started successfully, this method returns a `202 Accepted` respo
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,6 +103,10 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 [!INCLUDE [sample-code](../includes/snippets/php/archive-team-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/archive-team-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/archive-team-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,7 +114,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 ---
 
 ### Response
-The following is an example of a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

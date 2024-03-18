@@ -3,7 +3,7 @@ title: "cloudPC: retryPartnerAgentInstallation"
 description: "Attempts to re-install party partner agents in a Cloud PC failed to install."
 author: "JannyMa"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,7 +3,7 @@ title: "Delete channel"
 description: "Delete the channel."
 author: "nkramer" 
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 <!-- markdownlint-disable MD025 -->
 
 # [HTTP](#tab/http)
@@ -107,7 +107,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -131,6 +131,6 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

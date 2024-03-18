@@ -3,7 +3,7 @@ title: "Delete bookingBusiness"
 description: "Delete a bookingBusiness object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -43,16 +43,16 @@ If successful, this method returns `204, No Content` response code. It doesn't r
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_bookingbusiness",
-  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
+DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/fabrikam@contoso.com
 ```
 
 # [C#](#tab/csharp)
@@ -79,10 +79,6 @@ DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/fabrikam@con
 [!INCLUDE [sample-code](../includes/snippets/php/delete-bookingbusiness-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingbusiness-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-bookingbusiness-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,7 +86,7 @@ DELETE https://graph.microsoft.com/beta/solutions/bookingBusinesses/fabrikam@con
 ---
 
 ##### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

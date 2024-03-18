@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.default_managed_app_protection import DefaultManagedAppProtection
+from msgraph.generated.models.managed_app_data_storage_location import ManagedAppDataStorageLocation
+from msgraph.generated.models.key_value_pair import KeyValuePair
 
 graph_client = GraphServiceClient(credentials, scopes)
 

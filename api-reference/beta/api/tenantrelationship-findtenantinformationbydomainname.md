@@ -3,7 +3,7 @@ title: "tenantRelationship: findTenantInformationByDomainName"
 description: "Given a domain name, search for a tenant and read its tenantInformation."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -73,10 +73,6 @@ If successful, this method returns a `200 OK` response code and a [tenantInforma
 GET https://graph.microsoft.com/beta/tenantRelationships/findTenantInformationByDomainName(domainName='contoso.com')
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tenantrelationshiprootthisfindtenantinformationbydomainname-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tenantrelationshiprootthisfindtenantinformationbydomainname-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -102,6 +98,6 @@ Content-Type: application/json
     "tenantId": "6babcaad-604b-40ac-a9d7-9fd97c0b779f",
     "federationBrandName": null,
     "displayName": "Contoso, Ltd",
-    "defaultDomainName": "CONTOSO18839.onmicrosoft.com"
+    "defaultDomainName": "contoso.com"
 }
 ```

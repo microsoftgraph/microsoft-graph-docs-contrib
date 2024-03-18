@@ -1,9 +1,9 @@
 ---
 title: "Delete conversation"
-description: "Delete a conversation object."
-author: "Jordanndahl"
+description: "Delete a group's conversation."
+author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [conversation](../resources/conversation.md) object.
+Delete a group's [conversation](../resources/conversation.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

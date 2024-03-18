@@ -3,7 +3,7 @@ title: "tooManyGlobalAdminsAssignedToTenantAlertIncident resource type"
 description: "Represents the details of an alert incident that is triggered if there are too many accounts assigned the Global Administrator role in the tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EducationAssignmentDefaults educationAssignmentDefaults = graphClient.education().classes("72a7baec-c3e9-4213-a850-f62de0adad5f").assignmentDefaults()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+EducationAssignmentDefaults result = graphClient.education().classes().byEducationClassId("{educationClass-id}").assignmentDefaults().get();
+
 
 ```

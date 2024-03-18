@@ -3,7 +3,7 @@ title: "Remove tokenLifetimePolicies"
 description: "Remove a tokenLifetimePolicy from a service principal."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -62,10 +62,6 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/2a8f9e7a-af01-413a-9592-c32ec0e5c1a7/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4/$ref
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-tokenlifetimepolicies-from-serviceprincipal-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-tokenlifetimepolicies-from-serviceprincipal-javascript-snippets.md)]

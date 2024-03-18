@@ -4,7 +4,7 @@ description: "User that was loggen on the machine during the time of the alert."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

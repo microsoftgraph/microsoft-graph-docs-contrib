@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.apply_post_request_body import ApplyPostRequestBody
+from msgraph.generated.models.workbook_sort_field import WorkbookSortField
+from msgraph.generated.models.workbook_icon import WorkbookIcon
 
 graph_client = GraphServiceClient(credentials, scopes)
 
