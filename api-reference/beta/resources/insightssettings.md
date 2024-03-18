@@ -25,9 +25,9 @@ In contrast, for item insights and [meeting hours insights](https://support.micr
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List contactInsights](../api/organizationsettings-list-contactinsights.md) | [insightsSettings](insightssettings.md) | Get the properties of [insightsSettings](insightssettings.md) resource for displaying contact insights in an organization. |
-| [List itemInsights](../api/peopleadminsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) | Get the properties of [insightsSettings](insightssettings.md) resource for displaying item insights in an organization. |
-| [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) | [insightsSettings](insightssettings.md) | Get the properties of [insightsSettings](insightssettings.md) resource for displaying people insights in an organization. |
+| [List contactInsights](../api/organizationsettings-list-contactinsights.md) | [insightsSettings](insightssettings.md) | Get the properties of the [insightsSettings](insightssettings.md) resource for displaying contact insights in an organization. |
+| [List itemInsights](../api/peopleadminsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) | Get the properties of the [insightsSettings](insightssettings.md) resource for displaying item insights in an organization. |
+| [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) | [insightsSettings](insightssettings.md) | Get the properties of the [insightsSettings](insightssettings.md) resource for displaying people insights in an organization. |
 | [Update insightsSettings](../api/insightssettings-update.md) | [insightsSettings](insightssettings.md) | Update the properties of an **insightsSettings** resource to manage the display or return of the specified type of insights, which can be contact insights, item insights, or people insights. |
 
 
