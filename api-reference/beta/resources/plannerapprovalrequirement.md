@@ -1,6 +1,6 @@
 ---
 title: "plannerApprovalRequirement resource type"
-description: "The **plannerApprovalRequirement** resource represents approval completion requirement on a [plannerTask](plannertask.md)."
+description: "The **plannerApprovalRequirement** resource represents approval completion requirement on a plannerTask."
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -18,7 +18,7 @@ The **plannerApprovalRequirement** resource represents approval completion requi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isApprovalRequired|Boolean|Specifies if [approval](plannerbaseapprovalattachment.md) is required, to complete the [plannerTask](plannertask.md). When this property is set to true, the task can only be marked complete if an approval is  created for the task and approved.|
+|isApprovalRequired|Boolean|Specifies if [approval](plannerbaseapprovalattachment.md) is required, to complete the [plannerTask](plannertask.md). When this property is set to true, the task can only be marked complete if an approval is created for the task and approved.|
 
 ## Relationships
 None.

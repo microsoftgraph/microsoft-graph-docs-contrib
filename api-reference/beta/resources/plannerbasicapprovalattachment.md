@@ -1,6 +1,6 @@
 ---
 title: "plannerBasicApprovalAttachment resource type"
-description: "The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, which is created by the approval service and is added to a [plannerTask](plannertask.md)."
+description: "The **plannerBasicApprovalAttachment** resource represents the approval attachment, which is added to a plannerTask."
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, which is created by the approval service and is added to a [plannerTask](plannertask.md).
+The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, which is created by the approval extensibility service and is added to a [plannerTask](plannertask.md).
 
 Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md).
 
@@ -21,7 +21,7 @@ Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalat
 |Property|Type|Description|
 |:---|:---|:---|
 |approvalId|String|Read-only. Identifier of the approval, in approval service|
-|status|[plannerApprovalStatus](../resources/plannerbaseapprovalattachment.md#plannerapprovalstatus-values)|Status of the approval. Inherited from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md). The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`. Read-only. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
+|status|[plannerApprovalStatus](../resources/plannerbaseapprovalattachment.md#plannerapprovalstatus-values)|Status of the approval. Inherited from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md). The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`. Read-only. You must use the `Prefer: include-unknown-enum-members` request header to get the value following `unknownFutureValue`, in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
 
 ### plannerApprovalStatus values 
 
