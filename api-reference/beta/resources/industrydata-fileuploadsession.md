@@ -3,7 +3,7 @@ title: "fileUploadSession resource type"
 description: "Represents the file upload session that contains details about the session and container."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

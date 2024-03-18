@@ -3,7 +3,7 @@ title: "workflowExecutionTrigger resource type"
 description: "An abstract type that represents the workflow execution trigger when the workflow runs on schedule."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "teamsAppPermissionSet resource type"
 description: "Set of Resource specific permissions."
 author: "sweta-thapliyal"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

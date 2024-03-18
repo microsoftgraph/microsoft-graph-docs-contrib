@@ -3,7 +3,7 @@ title: "Create eligibilityScheduleRequest"
 description: "Create a new privilegedAccessGroupEligibilityScheduleRequest object."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

@@ -68,7 +68,6 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 | Header       | Value|
 |:-----------|:------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type   | application/json |
 
 ## Request body
 
@@ -131,7 +130,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

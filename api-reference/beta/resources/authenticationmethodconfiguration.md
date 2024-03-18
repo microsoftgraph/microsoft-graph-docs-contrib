@@ -22,7 +22,7 @@ The following authentication methods are derived from the **authenticationMethod
 + [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
 + [smsAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
 + [softwareOathAuthenticationMethodConfiguration](softwareoathauthenticationmethodconfiguration.md)
-+ [temporaryAccessPassAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [temporaryAccessPassAuthenticationMethodConfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)
 + [voiceAuthenticationMethodConfiguration](voiceauthenticationmethodconfiguration.md)
 + [x509CertificateAuthenticationMethodConfiguration](x509certificateauthenticationmethodconfiguration.md)
 

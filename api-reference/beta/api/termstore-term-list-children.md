@@ -2,7 +2,7 @@
 title: "List children"
 description: "Get the terms from the children navigation property."
 author: mohitpcad
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---

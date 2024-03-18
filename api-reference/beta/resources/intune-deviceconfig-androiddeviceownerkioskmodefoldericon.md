@@ -3,7 +3,7 @@ title: "androidDeviceOwnerKioskModeFolderIcon enum type"
 description: "Android Device Owner Kiosk Mode folder icon type."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

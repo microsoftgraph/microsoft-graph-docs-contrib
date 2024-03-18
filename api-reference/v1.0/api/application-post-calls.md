@@ -3,7 +3,7 @@ title: "Create call"
 description: "Create a new call."
 author: rahulva-msft
 ms.localizationpriority: medium
-ms.prod: cloud-communications
+ms.subservice: cloud-communications
 doc_type: apiPageType
 ---
 
@@ -1519,7 +1519,7 @@ The following shows an example that requires a **joinMeetingId** and a **passcod
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -1682,7 +1682,7 @@ The following shows an example that requires a **joinMeetingId** but doesn't req
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

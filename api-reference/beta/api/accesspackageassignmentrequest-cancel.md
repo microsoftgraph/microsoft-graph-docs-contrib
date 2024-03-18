@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequest: cancel"
 description: "Cancel accessPackageAssignmentRequest objects that are in a cancelable state."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -53,6 +53,8 @@ If successful, this method returns a `200 OK` response code.  It doesn't return 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +106,8 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 ---
 
 ### Response
-Here's an example of the response.
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
