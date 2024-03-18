@@ -6831,7 +6831,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
-          "Description": "Added an example to the (https://learn.microsoft.com/en-us/graph/api/chatmessage-post?view=graph-rest-beta) operation  of the [chatmessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
+          "Description": "Added an example to the (https://learn.microsoft.com/en-us/graph/api/chatmessage-post?view=graph-rest-beta) operation of the [chatmessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
           "Target": "chatmessage"
         }
       ],
