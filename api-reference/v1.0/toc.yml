@@ -8442,11 +8442,11 @@ items:
             items:
               - name: Create item
                 href: api/listitem-create.md
-              - name: Get item
+              - name: Get
                 href: api/listitem-get.md
-              - name: Update item
+              - name: Update
                 href: api/listitem-update.md
-              - name: Delete item
+              - name: Delete
                 href: api/listitem-delete.md
               - name: Get delta
                 href: api/listitem-delta.md
