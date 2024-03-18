@@ -3,7 +3,7 @@ title: "Identity governance enum values"
 description: "Microsoft Graph identity governance enumeration values"
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
 ---
 

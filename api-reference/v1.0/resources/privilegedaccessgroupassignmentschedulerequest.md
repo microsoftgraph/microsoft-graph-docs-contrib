@@ -3,7 +3,7 @@ title: "privilegedAccessGroupAssignmentScheduleRequest resource type"
 description: "Represents requests for operations to create, update, delete, extend, and renew a membership or ownership assignment in PIM for groups."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -48,8 +48,8 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 |Relationship|Type|Description|
 |:---|:---|:---|
 |activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|When the request activates a membership or ownership assignment in PIM for groups, this object represents the eligibility policy for the group. Otherwise, it is `null`. Supports `$expand`.|
-|group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment request through PIM for groups. Supports `$expand`.|
-|principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM. Supports `$expand`.|
+|group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment request through PIM for groups. Supports `$expand` and `$select` nested in `$expand` for select properties like **id**, **displayName**, and **mail**.|
+|principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM. Supports `$expand` and `$select` nested in `$expand` for **id** only.|
 |targetSchedule|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Schedule created by this request. Supports `$expand`.|
 
 ## JSON representation

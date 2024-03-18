@@ -3,7 +3,7 @@ title: "customAccessPackageWorkflowExtension resource type (deprecated)"
 description: "Defines the attributes of a logic app, which can be called at various stages of an access package request and assignment cycle."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

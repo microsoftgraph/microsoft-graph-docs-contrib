@@ -3,7 +3,7 @@ title: "Create windows81VpnConfiguration"
 description: "Create a new windows81VpnConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

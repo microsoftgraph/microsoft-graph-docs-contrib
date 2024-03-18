@@ -3,7 +3,7 @@ title: "List provisioningObjectSummary"
 description: "Get all provisioning events that occurred in your tenant."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "apiPageType"
 ---
 

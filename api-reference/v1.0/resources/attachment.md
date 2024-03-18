@@ -3,7 +3,7 @@ title: "attachment resource type"
 description: "You can add related content to an event,"
 ms.localizationpriority: high
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

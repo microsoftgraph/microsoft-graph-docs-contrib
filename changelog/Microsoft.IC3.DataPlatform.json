@@ -887,6 +887,88 @@
           "CreatedDateTime": "2024-02-01T19:36:11.1205184Z",
           "WorkloadArea": "Teamwork and communications",
           "SubArea": "Calls and online meetings"
-        }
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Resource",
+                "ChangedApiName": "administrativeUnitInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [administrativeUnitInfo](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-administrativeUnitInfo?view=graph-rest-beta) resource.",
+                "Target": "administrativeUnitInfo"
+              },
+              {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Resource",
+                "ChangedApiName": "callLogRow",
+                "ChangeType": "Addition",
+                "Description": "Added the [callLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callLogRow?view=graph-rest-beta) resource.",
+                "Target": "callLogRow"
+              },
+              {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Property",
+                "ChangedApiName": "administrativeUnitInfos",
+                "ChangeType": "Addition",
+                "Description": "Added the **administrativeUnitInfos** property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
+                "Target": "pstnCallLogRow"
+              },
+              {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Property",
+                "ChangedApiName": "administrativeUnitInfos",
+                "ChangeType": "Addition",
+                "Description": "Added the **administrativeUnitInfos** property to the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-directRoutingLogRow?view=graph-rest-beta) resource.",
+                "Target": "directRoutingLogRow"
+              },
+              {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Property",
+                "ChangedApiName": "administrativeUnitInfos",
+                "ChangeType": "Addition",
+                "Description": "Added the **administrativeUnitInfos** property to the [smsLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-smsLogRow?view=graph-rest-beta) resource.",
+                "Target": "smsLogRow"
+              },
+              {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Property",
+                "ChangedApiName": "transferorCorrelationId",
+                "ChangeType": "Addition",
+                "Description": "Added the **transferorCorrelationId** property to the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-directRoutingLogRow?view=graph-rest-beta) resource.",
+                "Target": "directRoutingLogRow"
+              },
+              {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Property",
+                "ChangedApiName": "administrativeUnitInfos",
+                "ChangeType": "Addition",
+                "Description": "Added the **administrativeUnitInfos** property to the [participantBase](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantBase?view=graph-rest-beta) resource.",
+                "Target": "participantBase"
+              },
+                {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Property",
+                "ChangedApiName": "administrativeUnitInfos",
+                "ChangeType": "Addition",
+                "Description": "Added the **administrativeUnitInfos** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participant?view=graph-rest-beta) resource.",
+                "Target": "participant"
+              },
+             {
+                "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+                "ApiChange": "Property",
+                "ChangedApiName": "administrativeUnitInfos",
+                "ChangeType": "Addition",
+                "Description": "Added the **administrativeUnitInfos** property to the [organizer](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-organizer?view=graph-rest-beta) resource.",
+                "Target": "organizer"
+              }
+            ],
+            "Id": "8c59f123-d0f7-4dbd-957c-82f338790837",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-02-29T13:49:01.0804836Z",
+            "WorkloadArea": "Teamwork and communications",
+            "SubArea": "Calls and online meetings"
+          }
     ]
 }

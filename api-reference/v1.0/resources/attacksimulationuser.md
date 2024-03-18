@@ -3,7 +3,7 @@ title: "attackSimulationUser resource type"
 description: "Represents a user in an attack simulation and training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

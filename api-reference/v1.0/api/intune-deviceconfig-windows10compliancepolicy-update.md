@@ -3,7 +3,7 @@ title: "Update windows10CompliancePolicy"
 description: "Update the properties of a windows10CompliancePolicy object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

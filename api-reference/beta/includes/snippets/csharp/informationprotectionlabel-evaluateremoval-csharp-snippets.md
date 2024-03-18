@@ -84,7 +84,7 @@ var requestBody = new EvaluateRemovalPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.InformationProtection.Policy.Labels.EvaluateRemoval.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.InformationProtection.Policy.Labels.EvaluateRemoval.PostAsEvaluateRemovalPostResponseAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("User-Agent", "ContosoLOBApp/1.0");
 });

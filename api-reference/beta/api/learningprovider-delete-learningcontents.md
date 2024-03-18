@@ -3,7 +3,7 @@ title: "Delete learningContent"
 description: "Delete a learningContent object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Remove a permissionGrantPreApprovalPolicy from a servicePrincipal"
 description: "Remove a permissionGrantPreApprovalPolicy from servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

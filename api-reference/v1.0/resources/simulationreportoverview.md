@@ -3,7 +3,7 @@ title: "simulationReportOverview resource type"
 description: "Represents an overview report of an attack simulation and training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

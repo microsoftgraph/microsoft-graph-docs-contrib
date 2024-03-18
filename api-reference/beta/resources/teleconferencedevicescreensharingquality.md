@@ -3,7 +3,7 @@ title: "teleconferenceDeviceScreenSharingQuality resource type"
 description: "Represents video teleconferencing device screen-sharing quality data."
 ms.localizationpriority: medium
 author: "dongkyun"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "getNoncompliantDevicesToRetire action"
 description: "Intune Deviceconfig Devicecompliancepolicy Getnoncompliantdevicestoretire Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

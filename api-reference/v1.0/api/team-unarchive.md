@@ -3,7 +3,7 @@ title: "Unarchive team"
 description: "Restore an archived team. This restores users' ability to send messages and edit the team, abiding by tenant and team settings. A Teams is archived using the archive API."
 ms.localizationpriority: medium
 author: "nkramer"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -52,7 +52,7 @@ If unarchiving is started successfully, this method returns a `202 Accepted` res
 
 ## Example
 #### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,7 +98,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 ---
 
 #### Response
-Here's an example of a response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "unarchive_team"
