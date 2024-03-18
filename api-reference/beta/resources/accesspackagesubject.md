@@ -3,7 +3,7 @@ title: "accessPackageSubject resource type"
 description: "In Microsoft Entra entitlement management, a subject of an access package assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

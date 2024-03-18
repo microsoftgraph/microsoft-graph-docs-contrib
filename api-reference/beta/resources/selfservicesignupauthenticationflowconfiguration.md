@@ -3,7 +3,7 @@ title: "selfServiceSignUpAuthenticationFlowConfiguration resource type"
 description: "Represents the configurations related to self-service sign-up."
 author: "linkhp"
 ms.localizationpriority: high
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

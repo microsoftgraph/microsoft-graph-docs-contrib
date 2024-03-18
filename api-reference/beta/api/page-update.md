@@ -3,7 +3,7 @@ title: "Update page"
 description: "Update the content of a OneNote page."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ In the request body, supply an array of [patchContentCommand](../resources/patch
 If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,7 +75,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response"
 } -->

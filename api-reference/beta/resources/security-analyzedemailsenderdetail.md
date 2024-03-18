@@ -3,7 +3,7 @@ title: "analyzedEmailSenderDetail resource type"
 description: Represents the sender details of an email. 
 author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 

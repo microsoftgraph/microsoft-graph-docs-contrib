@@ -3,7 +3,7 @@ title: "governanceRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Privileged Identity Management."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
 ---

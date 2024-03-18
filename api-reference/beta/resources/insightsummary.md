@@ -3,7 +3,7 @@ title: "insightSummary resource type"
 description: "Represents a daily or monthly summary of all usage insights on apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

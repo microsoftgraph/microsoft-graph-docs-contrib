@@ -3,7 +3,7 @@ title: "taskDefinition resource type"
 description: "Represents the built-in tasks that you can use to construct tasks for lifecycle workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

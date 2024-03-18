@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 ms.date: 09/27/2023
 ---
 
@@ -22,7 +22,7 @@ For more information about API resources for managing PIM security alerts, see [
 
 + Have an understanding of [PIM for Microsoft Entra roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).
 + In this article, you call the APIs in a [delegated scenario](/graph/auth-v2-user).
-  + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. Use an account with at least the *Privileged Role Administrator* role.
+  + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. Use an account with at least the *Privileged Role Administrator* role.
   + Grant yourself the *RoleManagementAlert.ReadWrite.Directory* delegated permission.
 
 <!--
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -226,7 +226,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -305,7 +305,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -455,7 +455,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -3,7 +3,7 @@ title: "Create deviceConfigurationDeviceStatus"
 description: "Create a new deviceConfigurationDeviceStatus object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

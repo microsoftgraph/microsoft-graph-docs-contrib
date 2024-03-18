@@ -3,7 +3,7 @@ title: "accessReviewSettings resource type (deprecated)"
 description: "Provides more settings when creating an access review."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

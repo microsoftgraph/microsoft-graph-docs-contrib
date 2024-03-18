@@ -3,7 +3,7 @@ title: "openShiftItem resource type"
 description: "Represents the details of an open shift."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 

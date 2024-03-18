@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a new [auth
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -104,7 +104,7 @@ Content-Type: application/json
 ---
 
 ### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.authenticationConditionApplication",

@@ -3,7 +3,7 @@ title: "timeCard: confirm"
 description: "Confirm a specific timeCard."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

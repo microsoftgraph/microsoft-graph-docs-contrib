@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: permission resource type
 description: permission resource representing a sharing permission granted for a driveItem
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # permission resource type
