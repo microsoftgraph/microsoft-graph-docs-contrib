@@ -3,7 +3,7 @@ title: "administrativeUnit: delta"
 description: "Get newly created, updated, or deleted administrative units without having to perform a full read of the entire resource collection."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

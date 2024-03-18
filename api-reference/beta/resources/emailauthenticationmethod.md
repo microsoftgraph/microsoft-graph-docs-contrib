@@ -4,7 +4,7 @@ description: "A representation of an email address registered to a user. Email i
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

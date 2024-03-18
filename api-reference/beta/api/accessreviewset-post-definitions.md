@@ -3,7 +3,7 @@ title: "Create definitions"
 description: "Create a new accessReviewScheduleDefinition object."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

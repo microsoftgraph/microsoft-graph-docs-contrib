@@ -3,7 +3,7 @@ title: "Get onlineMeeting"
 description: "Retrieve the properties and relationships of an online meeting object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -118,7 +118,7 @@ If successful, this method returns a `200 OK` response code. The response also i
 ### Example 1: Retrieve an online meeting by videoTeleconferenceId
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -255,7 +255,7 @@ You can retrieve meeting information via meeting ID with either a user or applic
 
 #### Request
 
-The following is an example of a request that uses a user (delegated) token.
+The following example shows a request that uses a user (delegated) token.
 
 > **Note:** The meeting ID has been truncated for readability.
 
@@ -363,7 +363,7 @@ You can retrieve meeting information via JoinWebUrl by using either a user or ap
 
 #### Request
 
-The following is an example of a request that uses a user (delegated) token.
+The following example shows a request that uses a user (delegated) token.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "get-onlinemeeting-joinurl-user-token", "sampleKeys": ["https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d"]} -->
@@ -473,7 +473,7 @@ You can retrieve meeting information via the **joinMeetingId** by using either a
 
 #### Request
 
-The following is an example of a request that uses a user (delegated) token.
+The following example shows a request that uses a user (delegated) token.
 
 # [HTTP](#tab/http)
 <!-- {

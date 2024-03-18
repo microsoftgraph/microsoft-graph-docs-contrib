@@ -1,10 +1,10 @@
 ---
 title: "callRecording: delta"
-description: "Get a set of callRecording resources that have been added for onlineMeeting instances organized by the specified user."
+description: "Get a set of callRecording resources added for onlineMeeting instances organized by the specified user."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "JacobSatora"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # callRecording: delta
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of [callRecording](../resources/callrecording.md) resources that have been added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.
+Get a set of [callRecording](../resources/callrecording.md) resources added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.
 
-Delta query supports both full synchronization that gets all the recordings for online meetings organized by the user, and incremental synchronization that gets recordings that have been added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Delta query supports both full synchronization that gets all the recordings for online meetings organized by the user, and incremental synchronization that gets recordings added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
 A GET request with the delta function returns either:
 
 - A `@odata.nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or
 - A `@odata.deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).
 
-State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL returned from the last GET request to the next **delta** function call for that same recording view. A `@odata.deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL when you start the next round of synchronization to get the new recordings that have been added after acquiring `@odata.deltaLink`.
+State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL returned from the last GET request to the next **delta** function call for that same recording view. A `@odata.deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL when you start the next round of synchronization to get the new recordings added after acquiring `@odata.deltaLink`.
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
@@ -74,7 +74,7 @@ See also what you'll do in the [next round to get additional recordings](#exampl
 
 #### Initial request
 
-In this example, the call recordings are being synchronized for the first time, so the initial sync request does not include any state token. This round will return all recordings available at the time.
+In this example, the call recordings are being synchronized for the first time, so the initial sync request doesn't include any state token. This round returns all recordings available at the time.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -132,7 +132,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Second response
 
-The second response returns the next 2 call recordings and a `@odata.nextLink` property with a `skipToken` which indicates there are more recordings.
+The second response returns the next two call recordings and a `@odata.nextLink` property with a `skipToken`, which indicates there are more recordings.
 
 <!-- {
   "blockType": "response",
@@ -178,7 +178,6 @@ The third request continues to use the latest `@odata.nextLink` returned from th
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeeting/getAllRecordings?$skiptoken=GGXve9Uidm2D70kS7mbjFAe58K-BOnPlb3dJ1AVz3xCYmoLprr5eSP1hQKxov6hSEJhsasyg
 ```
 
-
 #### Third and final response for the round
 
 The third response returns the only remaining recordings and a `@odata.deltaLink` property with a `deltaToken` which indicates that all recordings have been returned. Save and use the `@odata.deltaLink` URL to query for any new recording that is added from this point onwards.
@@ -212,9 +211,10 @@ Content-type: application/json
 
 ### Example 2: Next round to get additional recordings
 
-Using the `@odata.deltaLink` from the last request in the last round, you can get only those recordings that have been added since the `@odata.deltaLink` was acquired.
+Using the `@odata.deltaLink` from the last request in the last round, you can get only those recordings added since the `@odata.deltaLink` was acquired.
 
 #### Request
+The following example shows a request.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -224,6 +224,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

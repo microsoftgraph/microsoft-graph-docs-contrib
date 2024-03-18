@@ -3,7 +3,7 @@ title: "call: redirect"
 description: "Redirect an incoming call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -48,18 +48,18 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If more than one target is specified, it's a simulring call. This means that all of the targets are called at the same time and only the first target that picks up will be connected. We support up to 25 targets for simulring.
-|targetDisposition|String|(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`. This parameter is deprecated, we'll automatically identify whether it's a forward call or simulring call from the number of targets provided.|
-|timeout|Int32|The timeout (in seconds) for the redirect operation. The range of the timeout value is between 15 and 90 seconds inclusive. The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change). |
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If more than one target is specified, it's a simultaneous ring call. This means that all of the targets are called at the same time and only the first target that picks up is connected. We support up to 25 targets for simultaneous ring.
+|targetDisposition|String|(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`. This parameter is deprecated. The system automatically identifies whether it's a forward call or simultaneous ring call from the number of targets provided.|
+|timeout|Int32|The timeout (in seconds) for the redirect operation. The range of the timeout value is between 15 and 90 seconds inclusive. The default timeout value is 55 seconds for 1 target and 60 seconds for multiple targets (subject to change). |
 |maskCallee|Boolean|Indicates whether the callee is to be hidden from the caller. If true, then the callee identity is the bot identity. Default: false.|
 |maskCaller|Boolean|Indicates whether the caller is to be hidden from the callee. If true, then the caller identity is the bot identity. Default: false.|
-|callbackUri|String|This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property hasn't been set, the bot's global callback URI is used instead. This must be `https`.|
+|callbackUri|String|Allows bots to provide a specific callback URI for the current call to receive later notifications. If this property isn't set, the bot's global callback URI is used instead. The URI must be `https`.|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
-These examples cover a workflow of an incoming call notification and how that call will be redirected.
+These examples cover a workflow of an incoming call notification and how that call is redirected.
 
 > **Note:** The response objects shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -182,6 +182,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

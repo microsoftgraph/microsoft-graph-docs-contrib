@@ -1,9 +1,9 @@
 ---
 author: chackman
-description: "List the items that have been followed by the signed in user."
+description: "List the items that the signed-in user followed."
 title: List followed items
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List followed items
@@ -12,8 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the [items](../resources/driveitem.md) that have been followed by the signed in user.
-This collection includes items that are in the user's drive as well as items they have access to from other drives.
+List the [items](../resources/driveitem.md) that the signed-in user followed.
+This collection includes items that are in the user's drive and items they have access to from other drives.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -32,15 +32,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/drive/following
 ```
 
-
 ## Response
 
-This method returns a collection of [driveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.
+This method returns a collection of [driveItem](../resources/driveitem.md) resources for items, which the owner of the drive is following.
 If no items were found, an empty collection is returned.
 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-followed-items" } -->
@@ -85,6 +86,7 @@ GET /me/drive/following
 
 ### Response
 
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 

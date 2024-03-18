@@ -3,7 +3,7 @@ title: "bookingAppointment resource type"
 description: "Represents a customer appointment for a bookingService, performed by a set of staff members, provided by a Microsoft Bookings business."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

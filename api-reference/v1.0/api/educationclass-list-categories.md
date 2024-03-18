@@ -3,7 +3,7 @@ title: "List assignmentCategories"
 description: "Retrieve a list of category objects."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

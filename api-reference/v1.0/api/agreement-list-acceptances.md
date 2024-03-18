@@ -3,7 +3,7 @@ title: "List acceptances"
 description: "Get the details about the acceptance records for a specific agreement."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

@@ -4,7 +4,7 @@ description: "Retrieve a list of b2cIdentityUserFlow objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List b2cIdentityUserFlows

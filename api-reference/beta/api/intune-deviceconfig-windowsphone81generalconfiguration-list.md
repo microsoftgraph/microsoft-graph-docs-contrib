@@ -3,7 +3,7 @@ title: "List windowsPhone81GeneralConfigurations"
 description: "List properties and relationships of the windowsPhone81GeneralConfiguration objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

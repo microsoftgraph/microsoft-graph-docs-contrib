@@ -3,7 +3,7 @@ title: "certificateBasedAuthConfiguration resource type"
 description: "Represents a collection of certificate authorities."
 ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

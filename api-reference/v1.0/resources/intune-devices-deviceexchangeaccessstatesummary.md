@@ -3,7 +3,7 @@ title: "deviceExchangeAccessStateSummary resource type"
 description: "Device Exchange Access State summary"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

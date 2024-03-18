@@ -445,7 +445,6 @@ items:
             href: bookingsbusiness-business-rules.md
             displayName: Bookings, Microsoft Bookings, booking
       - name: Device and app management
-        expanded: true
         items:
           - name: Browser management
             href: browser-edge-concept-overview.md
@@ -645,10 +644,8 @@ items:
                 href: tutorial-access-package-api.md
                 displayName: governance, identity
               - name: Review access to your resources
+                displayName: access reviews
                 items:
-                  - name: Overview
-                    href: accessreviews-overview.md
-                    displayName: identity, access reviews API, review access
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access for guest users
@@ -824,11 +821,11 @@ items:
             href: search-concept-messages.md
           - name: Search people
             href: search-concept-person.md
-          - name: Search qnas
+          - name: Search Q&As
             href: search-concept-qna.md
           - name: Search Teams messages
             href: search-concept-chat-messages.md
-          - name: Manage admin search answers (preview)
+          - name: Manage admin search answers
             href: search-concept-answers.md
           - name: Manage search results layout
             href: search-concept-display-layout.md

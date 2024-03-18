@@ -3,7 +3,7 @@ title: "Grant an appRoleAssignment for a service principal"
 description: "Grant an app role assignment for a service principal."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and an [appRole
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -123,7 +123,7 @@ In this example, `{id}` and `{resourceId-value}` would both be the `id` of the r
 
 ### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 

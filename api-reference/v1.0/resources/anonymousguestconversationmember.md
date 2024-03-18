@@ -3,7 +3,7 @@ title: "anonymousGuestConversationMember resource type"
 description: "Represents an anonymous guest in a chat."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

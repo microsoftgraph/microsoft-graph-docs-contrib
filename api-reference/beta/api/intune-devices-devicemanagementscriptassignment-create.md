@@ -3,7 +3,7 @@ title: "Create deviceManagementScriptAssignment"
 description: "Create a new deviceManagementScriptAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

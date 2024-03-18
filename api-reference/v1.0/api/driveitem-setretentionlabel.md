@@ -3,7 +3,7 @@ title: "driveItem: setRetentionLabel"
 description: "Apply a retention label on a driveItem asynchronously."
 author: "kyracatwork"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 

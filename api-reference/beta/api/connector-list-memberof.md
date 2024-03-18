@@ -3,7 +3,7 @@ title: "List memberOf"
 description: "Retrieve the connector group the connector is a member of."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

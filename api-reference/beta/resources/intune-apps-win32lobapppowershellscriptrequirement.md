@@ -3,7 +3,7 @@ title: "win32LobAppPowerShellScriptRequirement resource type"
 description: "Contains PowerShell script properties to detect a Win32 App"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "directoryAudit resource type"
 description: "Represents the directory audit items and its collection."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

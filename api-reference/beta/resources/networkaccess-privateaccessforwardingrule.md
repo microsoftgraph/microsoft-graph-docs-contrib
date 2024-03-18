@@ -3,7 +3,7 @@ title: "privateAccessForwardingRule resource type"
 description: "A private access forwarding rule is a rule within a network configuration that enables the forwarding or routing of network traffic for private access."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

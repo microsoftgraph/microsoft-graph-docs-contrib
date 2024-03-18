@@ -1,9 +1,9 @@
 ---
 title: "schedule resource type"
-description: "Represents a collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team."
+description: "Represents a collection of scheduling groups, shifts, times off, and time off reasons for a team."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects within a [team](../resources/team.md).
+Represents a collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects for a [team](../resources/team.md).
 
 ## Methods
 
@@ -54,6 +54,7 @@ Represents a collection of [schedulingGroup](schedulinggroup.md) objects, [shift
 | openShifts   |[openShift](openshift.md) collection | The set of open shifts in a scheduling group in the schedule. |
 | schedulingGroups   |[schedulingGroup](schedulinggroup.md) collection  | The logical grouping of users in the schedule (usually by role). |
 | shifts   | [shift](shift.md) collection  | The shifts in the schedule. |
+| shiftsRoleDefinitions|[shiftsRoleDefinition](shiftsroledefinition.md) collection|The definitions of the roles in the schedule. |
 | swapShiftsChangeRequests   |[swapShiftsChangeRequest](swapshiftschangerequest.md) collection  | The swap requests for shifts in the schedule. |
 | timeCards   |[timeCard](timecard.md) collection  | The time cards in the schedule.       |
 | timesOff   |[timeOff](timeoff.md) collection  | The instances of times off in the schedule. |

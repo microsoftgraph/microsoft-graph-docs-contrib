@@ -3,7 +3,7 @@ title: "authenticationMethodsRoot: usersRegisteredByMethod"
 description: "Get the number of users registered for each authentication method."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
