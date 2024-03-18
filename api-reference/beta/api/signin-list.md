@@ -57,6 +57,8 @@ GET /auditLogs/signIns
 
 This method supports the `$top`, `$skiptoken`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+To avoid having the request time out, apply the `$filter` parameter with a time range for which to get all sign-ins, as shown in [Example 1](signin-list.md#example-1-list-all-sign-ins-during-a-specific-time-period).
+
 ## Request headers
 
 | Name      |Description|
@@ -73,7 +75,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 ## Examples
 
-### Example 1: List all sign-ins
+### Example 1: List all sign-ins during a specific time period
 In this example, the response object shows the user signed in using MFA that was triggered by a conditional access policy, and the primary authentication method is through FIDO.
 
 #### Request
@@ -86,7 +88,7 @@ The following example shows a request.
   "name": "get_signins_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/signIns
+GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=createdDateTime ge 2024-07-01T00:00:00Z and createdDateTime le 2024-07-14T23:59:59Z
 ```
 
 # [C#](#tab/csharp)
