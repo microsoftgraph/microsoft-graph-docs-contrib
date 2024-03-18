@@ -19,9 +19,6 @@ Microsoft Graph supports [22 built-in tasks](/graph/api/resources/identitygovern
 
 This article provides guidance on the allowed configuration for the **arguments** property of [tasks](/graph/api/resources/identitygovernance-task) in Lifecycle Workflows.
 
-> [!NOTE]
-> For a full list lifecycle workflow task examples, see [Lifecycle Workflow built-in tasks](/azure/active-directory/governance/lifecycle-workflow-tasks).
-
 ## Configure arguments for tasks
 
 | Task description | taskDefinitionId | arguments |
@@ -478,6 +475,38 @@ This article provides guidance on the allowed configuration for the **arguments*
 }
 ```
 
+### Example 22: Send onboarding reminder email
+
+```json
+{
+    "category": "joiner",
+    "continueOnError": false,
+    "description": "Send onboarding reminder email to user\u2019s manager",
+    "displayName": "Send onboarding reminder email",
+    "isEnabled": true,
+    "taskDefinitionId": "3C860712-2D37-42A4-928F-5C93935D26A1",
+    "arguments": [
+        {
+            "name": "cc",
+            "value": "e94ad2cd-d590-4b39-8e46-bb4f8e293f85,068fa0c1-fa00-4f4f-8411-e968d921c3e7"
+        },
+        {
+            "name": "customSubject",
+            "value": "Reminder: {{userDisplayName}} is starting soon"
+        },
+        {
+            "name": "customBody",
+            "value": "Hello {{managerDisplayName}}\n\nthis is a reminder that {{userDisplayName}} is starting soon.\n\nRegards\nYour IT department"
+        },
+        {
+            "name": "locale",
+            "value": "en-us"
+        }
+    ]
+}
+```
+
+
 ## Related content
 
-+ [Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
++ [Microsoft Entra ID Governance: Lifecycle Workflow built-in tasks](/entra/id-governance/lifecycle-workflow-tasks).
