@@ -978,7 +978,6 @@ items:
             href: workbook-error-handling.md
   - name: Develop
     expanded: true
-
     - name: Overview
       href: azuread-users-concept-overview.md
       displayName: users
