@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "a85a7df6-b6d8-4650-b81b-669832d63091",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the **sponsors** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "a85a7df6-b6d8-4650-b81b-669832d63091",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-05T19:29:53.191307Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b1aeb18c-7b04-4232-98a2-8b1cb3afb6d9",
           "ApiChange": "Property",
           "ChangedApiName": "tenantType",

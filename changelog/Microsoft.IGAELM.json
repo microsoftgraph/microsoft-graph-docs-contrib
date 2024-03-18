@@ -1,5 +1,23 @@
 {
   "changelog": [
+     {
+       "ChangeList": [
+         {
+           "Id": "2e9689f1-ac83-4805-bd3e-6916503a87d1",
+           "ApiChange": "Resource",
+           "ChangedApiName": "targetUserSponsors",
+           "ChangeType": "Addition",
+           "Description": "Added the [targetUserSponsors](https://learn.microsoft.com/en-us/graph/api/resources/targetUserSponsors?view=graph-rest-1.0) resource.",
+           "Target": "targetUserSponsors"
+         }
+        ],
+        "Id": "2e9689f1-ac83-4805-bd3e-6916503a87d1",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2024-03-18T23:23:06.9229074Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Identity governance"
+      },
       {
         "ChangeList": [
           {
