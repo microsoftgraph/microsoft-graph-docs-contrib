@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 
-Represents the role definitions. For Azure resources, it can represent Azure RBAC roles, such as Owner, Reader, Contributor, etc.
+Represents the role definitions. For Azure resources, it can represent Azure RBAC roles, such as Owner, Reader, or Contributor.
 
 
 ## Methods
@@ -25,18 +25,18 @@ Represents the role definitions. For Azure resources, it can represent Azure RBA
 | Method          | Return Type    |Description|
 |:---------------|:--------|:--------|
 |[List](../api/governanceroledefinition-list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) collection |List a collection of role definitions on a resource.|
-|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Read properties and relationships of a role definition entity specified by id.|
+|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Read properties and relationships of a role definition entity specified by ID.|
 
 No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleDefinitions` entity set for now.
 
 ## Properties
 | Property    | Type   | Description                                                           |
 |:------------|:-------|:----------------------------------------------------------------------|
-| id          | String | The id of the role definition.                                        |
-| resourceId  | String | Required. The id of the resource associated with the role definition. |
-| externalId  | String | The external id of the role definition.                               |
+| id          | String | The ID of the role definition.                                        |
+| resourceId  | String | Required. The ID of the resource associated with the role definition. |
+| externalId  | String | The external ID of the role definition.                               |
 | displayName | String | The display name of the role definition.                              |
-| templateId  | String | *TODO*                                                                   |
+| templateId  | String | The unique identifier for the template.                               |
 
 ## Relationships
 | Relationship | Type    |Description|
@@ -46,7 +46,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleDefinitions` entity set
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

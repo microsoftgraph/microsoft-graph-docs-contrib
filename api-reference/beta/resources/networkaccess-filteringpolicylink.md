@@ -34,7 +34,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |id|String|Unique identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the policy was most recently modified.|
 |loggingState|microsoft.graph.networkaccess.status|A value that tells whether the link is enabled or disabled. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The allowed values are `enabled` and `disabled`.|
-|priority|Int64|*TODO*|
+|priority|Int64|Provides an integer priority level for each instance of a URL filtering policy linked to a profile. Required.|
 
 ## Relationships
 |Relationship|Type|Description|

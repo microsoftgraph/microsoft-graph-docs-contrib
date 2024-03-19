@@ -71,8 +71,8 @@ An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| content | Edm.Stream|*TODO*|
-| contentUrl | String |*TODO*|
+| content | Edm.Stream|The content of the resource.|
+| contentUrl | String |The URL for the content stream.|
 
 ## Relationships
 None.
