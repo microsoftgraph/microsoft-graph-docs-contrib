@@ -24,19 +24,19 @@ Represents a defined collection of Azure resource information that can be used t
 |[Create cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Create a new [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
 |[Update cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-update.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
 |[Delete cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-delete.md)|None|Delete a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object. You can’t delete a connection that’s in use.|
-|[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
+|[RunHealthChecks of a cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
 
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join. Maximum length no more than 255. Optional.|
-|adDomainPassword|String|  The password associated with the username of an Active Directory account (**adDomainUsername**).|
+|adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join. Maximum length is 255. Optional.|
+|adDomainPassword|String| The password associated with the username of an Active Directory account (**adDomainUsername**).|
 |adDomainUsername|String|The username of an Active Directory account (user or service account) that has permission to create computer objects in Active Directory. Required format: `admin@contoso.com`. Optional.|
 |alternateResourceUrl|String|The interface URL of the partner service's resource that links to this Azure network connection. Returned only on `$select`.|
 |displayName|String|The display name for the Azure network connection.|
-|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|  The status of the most recent health check done on the on-premises connection. For example, if the status is `passed`, the on-premises connection passed all checks run by the service. Possible values: pending, running, passed, failed, warning, informational. Default is "pending". Read-only. |
+|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|  The status of the most recent health check done on the on-premises connection. For example, if the status is `passed`, the on-premises connection passed all checks run by the service. Possible values: `pending`, `running`, `passed`, `failed`, `warning`, `informational`. Default is `pending`. Read-only. |
 |healthCheckStatusDetail|[cloudPcOnPremisesConnectionStatusDetail](../resources/cloudpconpremisesconnectionstatusdetail.md)| Indicates the results of health checks performed on the on-premises connection. Read-only. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetail](../api/cloudpconpremisesconnection-get.md). Read-only.|
 |id|String|Unique identifier for the Azure network connection. Read-only.|
 |inUse|Boolean|When `true`, the Azure network connection is in use. When `false`, the connection isn't in use. You can't delete a connection that’s in use. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetail](../api/cloudpconpremisesconnection-get.md). Read-only.|
