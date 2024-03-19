@@ -53,7 +53,6 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 Here's an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
