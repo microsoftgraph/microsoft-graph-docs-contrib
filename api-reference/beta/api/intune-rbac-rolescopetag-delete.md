@@ -3,7 +3,7 @@ title: "Delete roleScopeTag"
 description: "Deletes a roleScopeTag."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

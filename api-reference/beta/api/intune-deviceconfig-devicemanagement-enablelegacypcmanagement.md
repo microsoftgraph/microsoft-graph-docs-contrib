@@ -3,7 +3,7 @@ title: "enableLegacyPcManagement action"
 description: "Intune Deviceconfig Devicemanagement Enablelegacypcmanagement Source_Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

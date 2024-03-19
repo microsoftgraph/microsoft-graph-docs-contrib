@@ -50,7 +50,7 @@ If successful, the API call returns a `204 No Content`. It doesn't return anythi
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 This example unfollows an item identified by `{item-id}`.
 
 

@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [certific
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_certificateauthorityasentity_from_"

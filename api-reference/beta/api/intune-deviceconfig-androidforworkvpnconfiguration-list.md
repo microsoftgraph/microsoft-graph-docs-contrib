@@ -3,7 +3,7 @@ title: "List androidForWorkVpnConfigurations"
 description: "List properties and relationships of the androidForWorkVpnConfiguration objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

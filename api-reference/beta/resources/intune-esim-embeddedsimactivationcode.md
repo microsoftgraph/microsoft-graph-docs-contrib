@@ -3,7 +3,7 @@ title: "embeddedSIMActivationCode resource type"
 description: "The embedded SIM activation code as provided by the mobile operator."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
