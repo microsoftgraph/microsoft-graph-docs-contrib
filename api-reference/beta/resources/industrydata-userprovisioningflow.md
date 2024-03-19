@@ -1,9 +1,9 @@
 ---
 title: "userProvisioningFlow resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the configuration parameters that allow you to automate creation and matching to Microsoft 365 users from your inbound data."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
@@ -13,36 +13,44 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the configuration parameters that allow you to automate creation and matching to Microsoft 365 users from your inbound data.
 
+userProvisioningFlow is defined within an [OutboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) that may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data.
+
+There may be multiple userProvisioningFlows, defined within separate OutboundProvsioningFlowSets allowing different configurations for different organizations.
 
 Inherits from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List userProvisioningFlow objects](../api/industrydata-userprovisioningflow-list.md)|[microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) collection|Get a list of the [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) objects and their properties.|
-|[Get userProvisioningFlow](../api/industrydata-userprovisioningflow-get.md)|[microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md)|Read the properties and relationships of a [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object.|
-|[Update userProvisioningFlow](../api/industrydata-userprovisioningflow-update.md)|[microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md)|Update the properties of a [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object.|
-|[Delete userProvisioningFlow](../api/industrydata-userprovisioningflow-delete.md)|None|Delete a [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object.|
-|[reset](../api/industrydata-userprovisioningflow-reset.md)|None|**TODO: Add Description**|
+
+| Method                                                                                | Return type                                                                                                       | Description                                                                                                                                               |
+| :------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [List userProvisioningFlow objects](../api/industrydata-userprovisioningflow-list.md) | [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) collection | Get a list of the [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) objects and their properties.    |
+| [Get userProvisioningFlow](../api/industrydata-userprovisioningflow-get.md)           | [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md)            | Read the properties and relationships of a [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object. |
+| [Update userProvisioningFlow](../api/industrydata-userprovisioningflow-update.md)     | [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md)            | Update the properties of a [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object.                 |
+| [Delete userProvisioningFlow](../api/industrydata-userprovisioningflow-delete.md)     | None                                                                                                              | Delete a [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object.                                   |
+| [reset](../api/industrydata-userprovisioningflow-reset.md)                            | None                                                                                                              | Force to reprocess all provisioning data                                                                                                                  |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md).|
-|createUnmatchedUsers|Boolean|**TODO: Add Description**|
-|creationOptions|[microsoft.graph.industryData.userCreationOptions](../resources/industrydata-usercreationoptions.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md).|
-|managementOptions|[microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md)|**TODO: Add Description**|
-|readinessStatus|microsoft.graph.industryData.readinessStatus|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md).The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`.|
+
+| Property             | Type                                                                                                     | Description                                                                                                                                                                                                         |
+| :------------------- | :------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| createdDateTime      | DateTimeOffset                                                                                           | Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md).                                                                                                      |
+| createUnmatchedUsers | Boolean                                                                                                  | A boolean choice indicating whether unmatched users should be created or ignored                                                                                                                                    |
+| creationOptions      | [microsoft.graph.industryData.userCreationOptions](../resources/industrydata-usercreationoptions.md)     | The different management choices for the new users to be provisioned                                                                                                                                                |
+| id                   | String                                                                                                   | Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md).                                                                                                      |
+| lastModifiedDateTime | DateTimeOffset                                                                                           | Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md).                                                                                                      |
+| managementOptions    | [microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered                                                                                                                                                  |
+| readinessStatus      | microsoft.graph.industryData.readinessStatus                                                             | Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -51,7 +59,8 @@ The following JSON representation shows the resource type.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.industryData.userProvisioningFlow",
   "createdDateTime": "String (timestamp)",
@@ -67,4 +76,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-
