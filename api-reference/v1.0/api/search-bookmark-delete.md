@@ -90,7 +90,6 @@ DELETE https://graph.microsoft.com/v1.0/search/bookmarks/733b26d5-af76-4eea-ac69
 
 ---
 
-
 ### Response
 
 The following example shows the response.
