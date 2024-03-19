@@ -190,7 +190,7 @@ if (response.getResponseCode() == 201) {
 }
 ```
 
-## See also
+## Related content
 
 - [Get OneNote content and structure](onenote-get-content.md)
 - [Create OneNote pages](onenote-create-page.md)

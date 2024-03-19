@@ -3,7 +3,7 @@ title: "serviceActivity: getMetricsForSamlSignInSuccess"
 description: "Get the number of SAML 2.0 authentications successfully processed by the Microsoft Entra cloud service for the tenant during a specified time period. This health signal currently doesn't include WS-FED/SAML 1.1 apps that are integrated with Microsoft Entra."
 author: "Zacharypeng"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,7 @@ In addition to the delegated permissions, the signed-in user who is accessing th
 + Security Operator
 + Security Reader
 
-To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -54,7 +54,7 @@ In the request URL, provide the following query parameters with values.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForSamlSi
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/serviceactivitythisgetmetricsforsamlsigninsuccess-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceactivitythisgetmetricsforsamlsigninsuccess-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

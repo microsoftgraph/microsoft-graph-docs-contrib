@@ -3,7 +3,7 @@ title: "appRoleAssignment resource type"
 description: "Used to record when a user, group, or service principal is assigned to an app role on an application's service principal. You can create, read and delete app role assignments."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
@@ -78,7 +78,7 @@ Here is a JSON representation of the resource
 }
 ```
 
-## See also
+## Related content
 
 + [Grant or revoke app roles using Microsoft Graph](/graph/permissions-grant-via-msgraph?pivots=grant-application-permissions)
 

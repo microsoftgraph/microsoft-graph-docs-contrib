@@ -3,7 +3,7 @@ title: "List permissionGrantPreApprovalPolicies"
 description: "Get the permissionGrantPreApprovalPolicy objects in the tenant."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method does not support the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

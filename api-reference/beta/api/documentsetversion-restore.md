@@ -3,7 +3,7 @@ title: "documentSetVersion: restore"
 description: "Restore a documentSetVersion."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions/{document
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -48,7 +48,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

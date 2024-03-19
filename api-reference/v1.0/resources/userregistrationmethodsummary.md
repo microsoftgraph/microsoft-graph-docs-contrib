@@ -3,7 +3,7 @@ title: "userRegistrationMethodSummary resource type"
 description: "Represents the summary of the number of users registered for each authentication method."
 author: "kvenkit"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the summary of number of users registered for each authentication method.
+Represents the summary of number of users registered for each authentication method. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
 ## Methods
 

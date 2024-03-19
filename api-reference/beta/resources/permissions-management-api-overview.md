@@ -32,8 +32,10 @@ The following key API scenarios allow you to retrieve details for authorization 
 |--|--|
 | Retrieve authorization systems | [List authorizationSystems](../api/externalconnectors-external-list-authorizationsystems.md) |
 | Get details for an AWS authorization system | [List awsAuthorizationSystems](../api/awsauthorizationsystem-list.md) |
-| Get details for an Azure authorization system | [List awsAuthorizationSystems](../api/azureauthorizationsystem-list.md) |
-| Get details for a GCP authorization system | [List awsAuthorizationSystems](../api/gcpauthorizationsystem-list.md) |
+| Get details for an Azure authorization system | [List azureAuthorizationSystems](../api/azureauthorizationsystem-list.md) |
+| Get details for a GCP authorization system | [List gcpAuthorizationSystems](../api/gcpauthorizationsystem-list.md) |
+
+Discover the API operations quick reference for [AWS authorization systems](/graph/permissions-management-how-to-authorization-system-aws), [Azure authorization systems](/graph/permissions-management-how-to-authorization-system-azure), and [GCP authorization systems](/graph/permissions-management-how-to-authorization-system-gcp).
 
 ## Authorization system inventory
 
@@ -47,9 +49,9 @@ The following key API scenarios allow you to retrieve the inventory for authoriz
 |List identity types in specific authorization systems|<li>List [roles](../api/awsassociatedidentities-list-roles.md) and [users](../api/awsassociatedidentities-list-users.md) in AWS <li> List [managed identities](../api/azureassociatedidentities-list-managedidentities.md), [users](../api/azureassociatedidentities-list-users.md), and [service principals](../api/azureassociatedidentities-list-serviceprincipals.md) in Azure <li> List [users](../api/gcpassociatedidentities-list-users.md), and [service accounts](../api/gcpassociatedidentities-list-serviceaccounts.md) in GCP |
 |Other inventory| <li> List [actions](../api/awsauthorizationsystem-list-actions.md), [policies](../api/awsauthorizationsystem-list-policies.md), [resources](../api/awsauthorizationsystem-list-resources.md), and [services](../api/awsauthorizationsystem-list-services.md) in AWS <li> List [actions](../api/azureauthorizationsystem-list-actions.md), [resources](../api/azureauthorizationsystem-list-resources.md), [role definitions](../api/azureauthorizationsystem-list-roledefinitions.md), and [services](../api/azureauthorizationsystem-list-services.md) in Azure <li> List [actions](../api/gcpauthorizationsystem-list-actions.md), [resources](../api/gcpauthorizationsystem-list-resources.md), [roles](../api/gcpauthorizationsystem-list-roles.md), and [services](../api/gcpauthorizationsystem-list-services.md) in GCP|
 
-## Permissions on demand
+## Permissions requests
 
-Identities can request for permissions against actions and resources in an authorization system. The permissions on demand capabilities allow callers to request permissions for themselves or on behalf of another identity, and other identities to approve, reject, or cancel the requests.
+Identities can request for permissions against actions and resources in an authorization system. The permissions requests capabilities allow callers to request permissions for themselves or on behalf of another identity, and other identities to approve, reject, or cancel the requests.
 
 The following key API scenarios allow you to implement permissions on demand capabilities.
 
@@ -57,7 +59,7 @@ The following key API scenarios allow you to implement permissions on demand cap
 |--|--|
 |Request permissions; grant or reject a request |[Create scheduledPermissionsRequest](../api/permissionsmanagement-post-scheduledpermissionsrequests.md)|
 |Cancel a permissions request|[scheduledPermissionsRequest: cancelAll](../api/scheduledpermissionsrequest-cancelall.md)|
-|Discover permissions requests|[List permissionsRequestChanges](../api/permissionsmanagement-list-permissionsrequestchanges.md)|
+|Track permissions requests and their status|[List permissionsRequestChanges](../api/permissionsmanagement-list-permissionsrequestchanges.md)|
 
 ## Permissions analytics
 
@@ -68,13 +70,13 @@ Through the permissions analytics APIs, Permissions Management helps you discove
 - Prioritize remediation
 - Generate tickets
 
-The following sample findings are available:
+The following sample findings are available through the APIs:
 
 | Finding | Sample scenarios API |
 |--|--|
-|Inactive identities: Identities that haven't used any of their granted permissions in the last 90 days.| <li> [Inactive users](../api/inactiveuserfinding-list.md) <li> [Inactive serverless functions](../api/inactiveserverlessfunctionfinding-list.md) <li> [Inactive Azure service principals](../api/inactiveazureserviceprincipalfinding-list.md) <li> [Inactive GCP service accounts]() <li> [Inactive AWS roles](../api/inactiveawsrolefinding-list.md) <li> [Inactive AWS resources, such as ec2](../api/inactiveawsresourcefinding-list.md)|
-|Inactive groups: No identity has utilized the permissions assigned via the group over the last 90 days.   |<li>[Inactive groups](../api/inactivegroupfinding-list.md)  |
-|Super identities: Administrator-level permissions across the authorization system. These identities can manage all the resources under the authorization system. |<li>[Super users](../api/superuserfinding-list.md) <li> [Super serverless functions](../api/superserverlessfunctionfinding-list.md) <li> [Super Azure service principals](../api/superazureserviceprincipalfinding-list.md) <li> [Super GCP service accounts](../api/supergcpserviceaccountfinding-list.md) <li> [Super AWS roles]() <li> [Super AWS resources, such as ec2](../api/superawsresourcefinding-list.md)|
+|Inactive identities: Identities that haven't used any of their granted permissions in the last 90 days.| <li> [Inactive users across multiple authorization systems](../api/inactiveuserfinding-list.md) <li> [Inactive serverless functions across multiple authorization systems](../api/inactiveserverlessfunctionfinding-list.md) <li> [Inactive Azure service principals](../api/inactiveazureserviceprincipalfinding-list.md) <li> [Inactive GCP service accounts]() <li> [Inactive AWS roles](../api/inactiveawsrolefinding-list.md) <li> [Inactive AWS resources, such as ec2](../api/inactiveawsresourcefinding-list.md)|
+|Inactive groups: No identity has utilized the permissions assigned via the group over the last 90 days.   |<li>[Inactive groups across multiple authorization systems](../api/inactivegroupfinding-list.md)  |
+|Super identities: Administrator-level permissions across the authorization system. These identities can manage all the resources under the authorization system. |<li>[Super users across multiple authorization systems](../api/superuserfinding-list.md) <li> [Super serverless functions across multiple authorization systems](../api/superserverlessfunctionfinding-list.md) <li> [Super Azure service principals](../api/superazureserviceprincipalfinding-list.md) <li> [Super GCP service accounts](../api/supergcpserviceaccountfinding-list.md) <li> [Super AWS roles]() <li> [Super AWS resources, such as ec2](../api/superawsresourcefinding-list.md)|
 
 Other findings include:
 
@@ -88,7 +90,7 @@ Other findings include:
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -96,15 +98,19 @@ Other findings include:
 
 ## Permissions and privileges
 
-To call the permissions management APIs, the caller doesn't need any Microsoft Graph permissions. However, they must have appropriate privileges in the Microsoft Entra tenant and also in the external system.
+To call the permissions management APIs, the caller doesn't need any Microsoft Graph permissions. However, they must have appropriate privileges in the Microsoft Entra tenant and in the external system.
 
-For more information, see [Quickstart guide to Microsoft Entra Permissions Management](/entra/permissions-management/permissions-management-quickstart-guide)
+For more information, see [Permissions Management roles and permissions levels](/entra/permissions-management/product-roles-permissions)
 
-## See also
+## Related content
 
 - [What's Microsoft Entra Permissions Management](/entra/permissions-management/overview)
+- [Quickstart guide to Microsoft Entra Permissions Management](/entra/permissions-management/permissions-management-quickstart-guide)
 - [Microsoft Entra Permissions Management operations reference](/entra/architecture/permissions-manage-ops-guide-intro)
-
+- Microsoft Entra permissions management API operations quick references:
+  - [For AWS authorization systems](/graph/permissions-management-how-to-authorization-system-aws)
+  - [For Azure authorization systems](/graph/permissions-management-how-to-authorization-system-azure)
+  - [For GCP authorization systems](/graph/permissions-management-how-to-authorization-system-gcp)
 
 <!-- {
   "type": "#page.annotation",
@@ -114,6 +120,6 @@ For more information, see [Quickstart guide to Microsoft Entra Permissions Manag
   "suppressions": [
     "Error: /resources/permissions-management-api-overview.md:
       Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
+      Value cannot be null. (Parameter 'linkUrl')"
   ]
 } -->

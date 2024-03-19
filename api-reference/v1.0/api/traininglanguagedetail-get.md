@@ -3,7 +3,7 @@ title: "Get trainingLanguageDetail"
 description: "Get the language details about an attack simulation training for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -12,6 +12,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Get the [language details](../resources/traininglanguagedetail.md) about an attack simulation training for a tenant.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -41,7 +43,7 @@ This method doesn't currently support the [OData query parameters](/graph/query-
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

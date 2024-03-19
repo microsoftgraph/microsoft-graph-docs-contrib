@@ -3,7 +3,7 @@ title: "Get signIn"
 description: "Describes the get method of the signIn resource (entity) from the Microsoft Graph API."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Microsoft Entra ID.
 
-In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference):
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference):
 + Global Administrator
 + Global Reader
 + Reports Reader
@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and [signIn](../reso
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns/66ea54eb-6301-4ee5-be62-f
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -137,7 +137,7 @@ Content-type: application/json
     "value": [
         {
             "id": "66ea54eb-6301-4ee5-be62-ff5a759b0100",
-            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+            "createdDateTime": "2023-12-01T16:03:24Z",
             "userDisplayName": "Test Contoso",
             "userPrincipalName": "testaccount1@contoso.com",
             "userId": "26be570a-ae82-4189-b4e2-a37c6808512d",

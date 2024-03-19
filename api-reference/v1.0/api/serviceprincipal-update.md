@@ -39,7 +39,7 @@ PATCH /servicePrincipals(appId='{appId}')
 ## Request headers
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body
@@ -73,7 +73,7 @@ If successful, this method returns a `204 No Content` response code and updated 
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -126,7 +126,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->
@@ -149,7 +149,7 @@ For other similar examples for users, see [Examples: Assign, update, list, or re
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -185,7 +185,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/assign-serviceprincipal-customsecurityattribute-string-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -208,7 +208,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

@@ -3,7 +3,7 @@ title: "deletedTeam resource type"
 description: "A deleted team in Microsoft Teams is a collection of channels."
 author: agnesliu
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -1746,7 +1746,7 @@
           "ApiChange": "Function",
           "ChangedApiName": "getAttackSimulationRepeatOffenders",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationRepeatOffenders](https://learn.microsoft.com/en-us/graph/api/getAttackSimulationRepeatOffenders?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationRepeatOffenders](https://learn.microsoft.com/en-us/graph/api/reportroot-getAttackSimulationRepeatOffenders?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
           "Target": "getAttackSimulationRepeatOffenders"
         },
         {
@@ -1754,7 +1754,7 @@
           "ApiChange": "Function",
           "ChangedApiName": "getAttackSimulationSimulationUserCoverage",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationSimulationUserCoverage](https://learn.microsoft.com/en-us/graph/api/getAttackSimulationSimulationUserCoverage?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationSimulationUserCoverage](https://learn.microsoft.com/en-us/graph/api/reportroot-getAttackSimulationSimulationUserCoverage?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
           "Target": "getAttackSimulationSimulationUserCoverage"
         },
         {
@@ -1762,7 +1762,7 @@
           "ApiChange": "Function",
           "ChangedApiName": "getAttackSimulationTrainingUserCoverage",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationTrainingUserCoverage](https://learn.microsoft.com/en-us/graph/api/getAttackSimulationTrainingUserCoverage?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationTrainingUserCoverage](https://learn.microsoft.com/en-us/graph/api/reportroot-getAttackSimulationTrainingUserCoverage?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
           "Target": "getAttackSimulationTrainingUserCoverage"
         }
       ],

@@ -3,7 +3,7 @@ title: "Get plannerAssignedToTaskBoardTaskFormat"
 description: "Retrieve the properties and relationships of a **plannerAssignedToTaskBoardTaskFormat** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ GET /planner/tasks/{id}/assignedToTaskBoardFormat
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

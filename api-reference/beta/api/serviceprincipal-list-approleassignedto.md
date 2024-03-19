@@ -3,7 +3,7 @@ title: "List appRoleAssignments granted for a service principal"
 description: "Retrieve a list of app role assignments granted for a service principal."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -21,7 +21,7 @@ If the resource service principal is an application that has app roles granted t
 
 >**Note** This request might have replication delays for app role assignments that were recently granted or removed.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -30,7 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_list_approleassignedto" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-approleassignedto-permissions.md)]
 
-[!INCLUDE [permissions-applicationreadwriteownedby-disclaimer](../../includes/permissions-applicationreadwriteownedby-disclaimer.md)]
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
+
 
 ## HTTP request
 
@@ -47,7 +48,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -61,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request to retrieve the app roles assignments that have been granted for a given resource service principal.
+The following example shows a request to retrieve the app roles assignments that have been granted for a given resource service principal.
 
 
 # [HTTP](#tab/http)
@@ -110,7 +111,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-e
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -3,7 +3,7 @@ title: "Subscribe to change notifications from cloud printing APIs"
 description: "Learn how to subscribe to change notifications for various print job events by using the Microsoft Graph API."
 author: "jahsu"
 ms.localizationpriority: high
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 ms.custom: scenarios:getting-started
 ---
 
@@ -37,18 +37,18 @@ For details about how to trigger a task, see [Enable pull printing](./universal-
 
 ### Create an application to listen to notifications
 
-For information about how to listen for Microsoft Graph notifications, see [Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](./webhooks.md#code-samples).
+For information about how to listen for Microsoft Graph notifications, see [Set up notifications for changes in user data – Code Samples](./change-notifications-overview.md#code-samples).
 
 
 ### Permission scopes
 
-To subscribe to notifications for print jobs, applications must have the following permission scopes approved in the customer’s Microsoft Entra tenant: 
+To subscribe to notifications for print jobs, applications must have the following permission scopes approved in the customer's Microsoft Entra tenant: 
 
 * For printTask triggered (JobStarted) event, the permissions listed in [Get taskDefinition](/graph/api/printtaskdefinition-get). 
 
 * For JobFetchable event, the permissions listed in [Create subscription](/graph/api/subscription-post-subscriptions).
 
-Applications must [generate and use the Microsoft Entra security token](/graph/auth-v2-service?context=graph/api/1.0) in the Microsoft Graph API request header. The security token contains the claims as per the scopes approved for the customer’s Microsoft Entra tenant by its administrator.  
+Applications must [generate and use the Microsoft Entra security token](/graph/auth-v2-service?context=graph/api/1.0) in the Microsoft Graph API request header. The security token contains the claims as per the scopes approved for the customer's Microsoft Entra tenant by its administrator.  
 
 
 ## Create subscription: printTask triggered (JobStarted) event 
@@ -57,14 +57,14 @@ Some applications monitor print queues for incoming jobs and want to be notified
 
 Before creating a notification for a **printTask**-triggered event, ensure that application has created the following:
 
-- A [printTaskDefinition](/graph/api/print-post-taskdefinitions) for the customer’s Microsoft Entra tenant. A single task definition can be associated with one or more printers within the same Microsoft Entra tenant. 
+- A [printTaskDefinition](/graph/api/print-post-taskdefinitions) for the customer's Microsoft Entra tenant. A single task definition can be associated with one or more printers within the same Microsoft Entra tenant. 
 
 - A [printTaskTrigger](/graph/api/printer-post-tasktriggers) for each of the printer queues for which the partner wants to receive a notification when a new print job starts. The **printTaskTrigger** needs to be bound to the **printTaskDefinition**. 
 
 >[!NOTE]
 >One printer can be associated with only one **printTaskTrigger** and one **printTaskTrigger** can be associated with only one **printTaskDefinition**. However, one **printTaskDefinition** can have one or more **printTaskTriggers** associated with it. 
 
-With the **printTaskDefinition** that exists for customer’s Microsoft Entra tenant, the application can [create a subscription for a printTask triggered (JobStarted) event using the printTaskDefinition](/graph/api/subscription-post-subscriptions). While creating the subscription:  
+With the **printTaskDefinition** that exists for customer's Microsoft Entra tenant, the application can [create a subscription for a printTask triggered (JobStarted) event using the printTaskDefinition](/graph/api/subscription-post-subscriptions). While creating the subscription:  
 
 * The `resource` field needs to be set as `print/taskDefinitions/{printTaskDefinition ID}/tasks`. 
 * The `changeType` field needs to be set as `created`. 
@@ -202,12 +202,12 @@ For details, see [Notification endpoint validation](./change-notifications-deliv
 Applications should process and acknowledge every change notification they receive. For details, see [Processing the change notification](./change-notifications-delivery-webhooks.md#processing-the-change-notification).
 
 ### How can I validate the authenticity of notifications?
-The authenticity of notifications can either be validated using **clientState** value as described in [Processing the change notification](./change-notifications-delivery-webhooks.md#processing-the-change-notification) or [validating tokens in the change notification](./webhooks-with-resource-data.md#validation-tokens-in-the-change-notification).
+The authenticity of notifications can either be validated using **clientState** value as described in [Processing the change notification](./change-notifications-delivery-webhooks.md#processing-the-change-notification) or [validating tokens in the change notification](./change-notifications-with-resource-data.md#validation-tokens-in-the-change-notification).
 
 ### How can I get a list of active subscriptions?
 For details about how to retrieve a list of webhook subscriptions, see [List subscriptions](/graph/api/subscription-list).
 
-## See also
+## Related content
 
 - To learn more about the cloud printing API in Microsoft Graph, see [Universal Print cloud printing API overview](/graph/universal-print-concept-overview).
 - For suggestions or feedback about the cloud printing API in Microsoft Graph, visit the [Universal Print tech community](https://aka.ms/community/UniversalPrint).

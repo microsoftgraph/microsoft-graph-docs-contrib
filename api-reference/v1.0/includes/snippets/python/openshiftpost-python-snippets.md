@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.teams.item.schedule.openShifts.open_shifts_request_builder import OpenShiftsRequestBuilder
+from msgraph.generated.models.open_shift import OpenShift
+from msgraph.generated.models.open_shift_item import OpenShiftItem
+from msgraph.generated.models.shift_activity import ShiftActivity
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.identity import Identity
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -44,12 +50,9 @@ request_body = OpenShift(
 	),
 )
 
-request_configuration = OpenShiftsRequestBuilder.OpenShiftsRequestBuilderPostRequestConfiguration(
-headers = {
-		'Authorization' : "Bearer {token}",
-}
+request_configuration = OpenShiftsRequestBuilder.OpenShiftsRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Authorization", "Bearer {token}")
 
-)
 
 result = await graph_client.teams.by_team_id('team-id').schedule.open_shifts.post(request_body, request_configuration = request_configuration)
 

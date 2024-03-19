@@ -3,7 +3,7 @@ title: "Delete educationClass"
 description: "Delete a class. Because a class is also a universal group, deleting a class deletes the group."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ DELETE /education/classes/{id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

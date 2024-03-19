@@ -3,7 +3,7 @@ title: "Get loginPage"
 description: "Get a loginPage associated with an attack simulation campaign for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -12,6 +12,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Get a [loginPage](../resources/loginpage.md) associated with an attack simulation campaign for a tenant. Login pages are shown to users in attack simulations that use _credential harvest_ and _link in attachment_ social engineering techniques.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -42,7 +44,7 @@ This method doesn't currently support the [OData query parameters](/graph/query-
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

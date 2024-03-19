@@ -3,7 +3,7 @@ title: "accessPackage: filterByCurrentUser"
 description: "Retrieve a list of accesspackage objects filtered on the signed-in user."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a list of [accessPackage](../resources/accesspackage.md) objects filtered on the signed-in user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -39,12 +39,12 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |on|accessPackageFilterByCurrentUserOptions|The list of current user options that can be used to filter on the access packages list. The allowed value is `allowedRequestor`.|
 
-- `allowedRequestor` is used to get the `accessPackage` objects for which the signed-in user is allowed to submit access requests. The resulting list includes all access packages that can be requested by the caller across all catalogs.
+- `allowedRequestor` is used to get the `accessPackage` objects for which the signed-in user is allowed to submit access requests. The resulting list includes all access packages that the caller can request across all catalogs.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -57,6 +57,8 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
 The following example gets the access packages that can be requested by the signed-in user.
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,6 +105,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ---
 
 ### Response
+
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

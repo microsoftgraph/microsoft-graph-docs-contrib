@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: "driveItem: delta"
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Track changes in a drive item and its children over time."
 doc_type: apiPageType
 ---
@@ -58,7 +58,7 @@ This method supports the `$select`, `$expand`, and `$top` [OData query parameter
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -129,7 +129,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root/delta
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true, "scope": "file.read" } -->
 
@@ -214,7 +214,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='MzslMjM0OyUyMzE7
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)", "scope": "file.read" } -->
 
@@ -437,7 +437,7 @@ For more information about scanning scenarios, see [Best practices for discoveri
 
 In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
 
-## See also
+## Related content
 [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance)
 

@@ -35,7 +35,7 @@ Suggested [error handling](workbook-error-handling.md) for Excel APIs is based o
 
 To learn how to create and use sessions, see the [Create session reference topic](/graph/api/workbook-createsession).
 
-## See also
+## Related content
 
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)

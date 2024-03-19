@@ -3,7 +3,7 @@ title: "Delete tab from channel"
 description: "Removes (unpins) a tab from the specified channel within a team. "
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -20,15 +20,17 @@ Removes (unpins) a tab from the specified [channel](../resources/channel.md) wit
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they aren't a member of.
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  TeamsTab.ReadWriteSelfForTeam ,TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Delegated (work or school account) |  TeamsTab.ReadWriteSelfForTeam, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsTab.Delete.Group*, TeamsTab.ReadWrite.Group*, TeamsTab.ReadWriteSelfForTeam.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Application | TeamsTab.Delete.Group, TeamsTab.ReadWrite.Group, TeamsTab.ReadWriteSelfForTeam.All,  TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
-
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+> [!NOTE]
+> - The TeamsTab.Delete.Group and TeamsTab.ReadWrite.Group permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - The Group.ReadWrite.All and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +41,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -50,7 +52,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,7 +99,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -119,6 +121,6 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

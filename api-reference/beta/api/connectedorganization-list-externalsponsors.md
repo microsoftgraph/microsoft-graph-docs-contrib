@@ -3,7 +3,7 @@ title: "List externalSponsors"
 description: "Retrieve a list of connectedOrganization's externalSponsors."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of a [connectedOrganization](../resources/connectedorganization.md)'s external sponsors.  The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -37,7 +37,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}/extern
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

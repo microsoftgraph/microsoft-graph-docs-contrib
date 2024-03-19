@@ -3,7 +3,7 @@ title: "Get adminConsentRequestPolicy"
 description: "Read the properties and relationships of an adminConsentRequestPolicy object."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "adminconsentrequestpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/adminconsentrequestpolicy-get-permissions.md)]
 
-When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 + Global Administrator
 + Global Reader
 + Cloud Application Administrator
@@ -44,7 +44,7 @@ This method supports the `$select` OData query parameter to help customize t
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

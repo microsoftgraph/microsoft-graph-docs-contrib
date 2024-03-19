@@ -3,7 +3,7 @@ title: "channel resource type"
 description: "A channel is a collection of chatMessages within a team. "
 author: "akjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -31,6 +31,7 @@ where files are shared, and where tabs are added.
 |[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
 |[Get all channel messages](../api/channel-getallmessages.md)|[channel](channel.md) collection | Get all messages from all channels that a user is a participant in. |
+|[Get all retained channel messages](../api/channel-getallretainedmessages.md)|[chatMessage](../resources/chatmessage.md) collection|Get retained [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md). |
 |[Create channel message post](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Send a message to a channel. |
 |[Create reply to channel message post](../api/chatmessage-post-replies.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel.|
 |[Get files folder](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | Retrieves the details of the SharePoint folder where the files for the channel are stored. |
@@ -143,7 +144,7 @@ The following is a JSON representation of the resource.
 }
 -->
 
-## See also
+## Related content
 
 - [Channel lifecycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/csharp)
 - [Channel lifecycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/nodejs)

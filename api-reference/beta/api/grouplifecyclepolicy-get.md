@@ -1,9 +1,10 @@
 ---
 title: "Get groupLifecyclePolicy"
 description: "Retrieve the properties and relationships of a groupLifecyclePolicies object."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -40,7 +41,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

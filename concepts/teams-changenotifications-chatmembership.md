@@ -3,7 +3,7 @@ title: "Get change notifications for chat membership using Microsoft Graph"
 description: "Learn how to get notifications for changes for chat membership using Microsoft Graph APIs."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
@@ -18,7 +18,7 @@ Continue with this article about scenarios for the **conversationMember** resour
 
 ## Subscribe to changes in membership of any chat at tenant level
 
-To get change notifications for membership changes in any chat across the tenant, subscribe to `/chats/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in any chat across the tenant, subscribe to `/chats/getAllMembers`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 [!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
@@ -50,7 +50,7 @@ Content-Type: application/json
 
 ## Subscribe to changes in membership of a particular chat
 
-To get change notifications for membership changes in a particular chat, subscribe to `/chats/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in a particular chat, subscribe to `/chats/{id}/members`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 ### Permissions
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 
 ## Subscribe to changes in membership of any chat in a tenant where a Teams app is installed
 
-To get change notifications for membership changes in any chat across the tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in any chat across the tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllMembers`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 [!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
@@ -141,7 +141,7 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
 The decrypted notification payload looks like the following. The payload conforms to the [aaduserconversationmember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
@@ -182,8 +182,8 @@ The following payload describes the information sent in the request for notifica
 
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the chat member details. GET calls always return the current state of the chat member details. If the chat member details changes between when the notification is sent and when the chat member details are retrieved, the operation returns the updated chat member details.
 
-## See also
-- [Microsoft Graph change notifications](webhooks.md)
+## Related content
+- [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 - [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
 - [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)

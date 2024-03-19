@@ -3,7 +3,7 @@ title: "Assign homeRealmDiscoveryPolicy"
 description: "Assign a homeRealmDiscoveryPolicy to a service principal."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Assign a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) to a [servicePrincipal](../resources/servicePrincipal.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -42,7 +42,7 @@ POST /servicePrincipals(appId='{appId}')/homeRealmDiscoveryPolicies/$ref
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body

@@ -3,7 +3,7 @@ title: "bookingBusiness: unpublish"
 description: "Make the scheduling page of a business unavailable to external customers."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -48,10 +48,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name" : "bookingnusinessunpublish",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/unpublish
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/unpublish
 ```
 
 # [C#](#tab/csharp)

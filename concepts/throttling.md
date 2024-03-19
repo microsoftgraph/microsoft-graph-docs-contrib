@@ -1,12 +1,13 @@
 ---
 title: "Microsoft Graph throttling guidance"
 description: "Find best practices for maintaining optimal performance of the Microsoft Graph service if an overwhelming number of requests occurs."
-author: "FaithOmbongi"
-ms.author: ombongifaith
-ms.reviewer: jameskitindi
 ms.localizationpriority: high
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: Luca.Spolidoro
+ms.date: 01/22/2024
 ms.custom: graphiamtop20
-ms.date: 11/11/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want to understand how to avoid throttling and how to handle throttling when it occurs.
 ---
 
 # Microsoft Graph throttling guidance
@@ -88,18 +89,18 @@ For a broader discussion of throttling in the Microsoft Cloud, see [Throttling p
 
 ## Best practices to avoid throttling
 
-Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](webhooks.md) when available.
+Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](change-notifications-overview.md) when available.
 
 >[!NOTE]
 >[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance) describes best practices in details.
 
 ## Throttling and batching
 
-[JSON batching](./json-batching.md) allows you to optimize your application by combining multiple requests into a single JSON object. Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a `status` of `429` and an error similar to the [preceding sample response](#sample-response). The batch itself fails with a status code of `424` (Failed Dependency). It is possible for multiple requests to be throttled in a single batch. You should retry each failed request from the batch using the value provided in the `retry-after` response header from the JSON content. You may retry all the failed requests in a new batch after the longest `retry-after` value.
+[JSON batching](./json-batching.md) allows you to optimize your application by combining multiple requests into a single JSON object. Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status code of `429` and an error similar to the [preceding sample response](#sample-response). The batch itself succeeds with a status code of `200` (OK). Multiple requests can be throttled in a single batch. You should retry each failed request from the batch using the value provided in the `retry-after` response header from the JSON content. You may retry all the failed requests in a new batch after the longest `retry-after` value.
 
 If SDKs retry throttled requests automatically when they are not batched, throttled requests that were part of a batch are not retried automatically.
 
-## Next steps
+## Next step
 
-- Identify the [throttling limits](throttling-limits.md) that apply for each Microsoft Graph resource.
-- [Training module: Optimize network traffic with Microsoft Graph](/training/modules/optimize-network-traffic)
+> [!div class="nextstepaction"]
+> [Identify the throttling limits for different Microsoft Graph resources](throttling-limits.md)

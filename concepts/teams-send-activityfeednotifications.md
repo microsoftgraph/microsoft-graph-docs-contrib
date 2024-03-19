@@ -3,7 +3,7 @@ title: "Send activity feed notifications to users in Microsoft Teams"
 description: "Use the Microsoft Teams activity feed notification APIs in Microsoft Graph to help keep users up to date with changes in the tools and workflows they use."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Send activity feed notifications to users in Microsoft Teams
@@ -35,6 +35,8 @@ Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). T
 - The Teams app manifest must have the Microsoft Entra app ID added to the `webApplicationInfo` section. For more information, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - Activity notifications can be sent with or without activity types declared in the app manifest.
   - By default, you can use the activity notification APIs without declaring the `activities` section in the manifest. The `systemDefault` activity type is reserved, allowing you to provide free-form text in the `Actor+Reason` line of the activity feed notification.  For more information, see [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
+    > [!NOTE]
+    > The `systemDefault` activity type is available only in public preview.
   - If you want to send a templated notification in the traditional mode, activity types must be declared in the [Activities](#activities-section-changes) section. For more information, see [Manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - The Teams app must be installed for the recipient, either personally or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they're part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
 
@@ -740,6 +742,9 @@ HTTP/1.1 202 Accepted
 ### Example 8: Send a notification to a user using the systemDefault activity type
 This example shows how you can send an activity notification for a team without activity types defined in the manifest. You have the flexibility to provide free-form text here. For more information, see [Reserved activity types](#reserved-activity-types).
 
+> [!NOTE]
+> The `systemDefault` activity type is available only in public preview.
+
 This example notifies the team owner to take a short break. Modify the `value` in `templateParameters` to customize the notification for various scenarios.
 
 #### Request
@@ -868,7 +873,7 @@ The settings appear after the Teams app sends the first notification. This reduc
 
 `Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Microsoft Entra appId in the `webApplicationInfo` section of the manifest. When this happens, you get an error like `Found multiple applications with the same Microsoft Entra App ID 'Your Microsoft Entra AppId'.`. Make sure that you use unique Microsoft Entra apps for unique Teams apps.  You can install the same Teams app in multiple scopes (team + user, for example).
 
-## See also
+## Related content
 
 - [Best practices for using Microsoft Teams activity feed notifications](teams-activity-feed-notifications-best-practices.md)
 - [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)

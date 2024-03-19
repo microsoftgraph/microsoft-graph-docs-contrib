@@ -16,13 +16,10 @@ Namespace: microsoft.graph
 List all [awsPolicy](../resources/awspolicy.md) objects and their properties for a specific AWS authorization system. An AWS policy is an object in AWS that defines the permissions of the associated entity or resource. When a principal, such as a user, makes a request, the policies and their associated permissions determine whether the request is allowed or denied.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported.|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "awsauthorizationsystem_list_policies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/awsauthorizationsystem-list-policies-permissions.md)]
 
 <!--
 [!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
@@ -44,7 +41,7 @@ This method supports the `$select`, `$filter`, `$count`, `$top`, and `$skipToken
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -61,6 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following request lists all the policies for an AWS authorization system.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_awspolicy"
@@ -70,6 +68,11 @@ The following request lists all the policies for an AWS authorization system.
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-awspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -109,6 +112,7 @@ Content-Type: application/json
 
 The following request lists all policies named `AdministratorAccess` in an AWS authorization system.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_awspolicy2"
@@ -118,6 +122,11 @@ The following request lists all policies named `AdministratorAccess` in an AWS a
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies?$filter=displayName eq 'AdministratorAccess'
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-awspolicy2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -151,6 +160,7 @@ Content-Type: application/json
 
 The following request lists all policies in an AWS authorization system where the policy name contains the word `Buckets`.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_awspolicy3"
@@ -160,6 +170,11 @@ The following request lists all policies in an AWS authorization system where th
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies?$filter=contains(displayName, 'Buckets')
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-awspolicy3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.

@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssecurity.NewUserSource()
-email := "admin@M365x809305.onmicrosoft.com"
+email := "admin@contoso.com"
 requestBody.SetEmail(&email) 
 includedSources := graphmodels.MAILBOX, SITE_SOURCETYPE 
 requestBody.SetIncludedSources(&includedSources) 

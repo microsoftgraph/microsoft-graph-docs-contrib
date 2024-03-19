@@ -3,7 +3,7 @@ title: "bookingReminder resource type"
 description: "Represents when and whom to send an email reminder."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

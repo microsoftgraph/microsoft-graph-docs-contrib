@@ -3,7 +3,7 @@ title: "bookingBusiness: publish"
 description: "Make the scheduling page of this business available to external customers."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/publish
+POST /solutions/bookingbusinesses/{id}/publish
 ```
 ## Request headers
 | Name       | Description|
@@ -49,10 +49,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_publish",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/publish
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/publish
 ```
 
 # [C#](#tab/csharp)
@@ -77,10 +77,6 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@con
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/bookingbusiness-publish-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusiness-publish-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

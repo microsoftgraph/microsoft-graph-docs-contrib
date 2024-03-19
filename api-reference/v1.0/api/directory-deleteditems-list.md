@@ -3,7 +3,7 @@ title: "List deletedItems (directory objects)"
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -70,7 +70,7 @@ The `$orderby` OData query parameter is supported on the **deletedDateTime**, **
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt; *Required*|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json |
 
 ## Request body

@@ -3,7 +3,7 @@ title: "subscribedSku resource type"
 description: "Contains information about a service SKU that a company is subscribed to."
 ms.localizationpriority: medium
 author: "frank-masuelli"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -83,7 +83,7 @@ Here's a JSON representation of the resource
 }
 ```
 
-## See also
+## Related content
 
 - [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 

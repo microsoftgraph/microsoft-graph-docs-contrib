@@ -3,7 +3,7 @@ title: "tenantAppManagementPolicy resource type"
 description: "Tenant-wide application authentication method policy to enforce app management restrictions for all applications and service principals."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

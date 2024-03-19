@@ -4,7 +4,7 @@ description: "Get a list of unifiedRoleAssignment objects."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -18,19 +18,18 @@ Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) obj
 
 The following RBAC providers are currently supported:
 - directory (Microsoft Entra ID)
-- entitlement management (Microsoft Entra ID)
+- entitlement management (Microsoft Entra entitlement management)
 - Exchange Online
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <a name='for-directory-azure-ad-provider'></a>
 
-### For Directory (Microsoft Entra ID) provider
+### For directory (Microsoft Entra ID) provider
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,7 +37,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
-### For Entitlement management provider
+### For entitlement management provider
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,52 +51,41 @@ Depending on the RBAC provider and the permission type (delegated or application
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  RoleManagement.Read.Exchange, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | RoleManagement.Read.Exchange, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange |
 
 
 ## HTTP request
 
-To list role assignments for a directory provider:
+To list role assignments for the directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
-
-GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+GET /roleManagement/directory/roleAssignments
 ```
 
 To list role assignments for the entitlement management provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
-
-GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
-
-GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'
+GET /roleManagement/entitlementManagement/roleAssignments?
 ```
 
 To list role assignments for the Exchange Online provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /roleManagement/exchange/roleAssignments?$filter=principalId eq '{principal id}'
-
-GET /roleManagement/exchange/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+GET /roleManagement/exchange/roleAssignments
 ```
 
-## Query parameters
+## Optional query parameters
 
-This operation requires the `$filter` query parameter. You can filter on the `roleDefinitionId`, `principalId` or `appScopeId` properties. The `roleDefinitionId` property can be either a role object ID or a role template object ID. The `$expand` query parameter is also supported on **principal**. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$expand`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -109,7 +97,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Request using $filter on role definition ID and expand principal
+### Example 1: Request using a filter on roleDefinitionId and expand the principal object
 
 #### Request
 
@@ -244,7 +232,7 @@ Content-type: application/json
                 "givenName": null,
                 "imAddresses": [],
                 "userType": "Guest",
-	
+    
             }
         },
         {
@@ -273,10 +261,10 @@ Content-type: application/json
                 "givenName": null,
                 "imAddresses": [],
                 "userType": "Guest",
-		
+        
             }
         }
-	]
+    ]
 }
 ```
 
@@ -491,7 +479,7 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments?$fi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

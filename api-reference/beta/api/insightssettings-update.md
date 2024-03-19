@@ -3,7 +3,7 @@ title: "Update insights"
 description: "Update privacy settings to display or return the specified type of insights in an organization."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 
@@ -19,7 +19,7 @@ To learn more about customizing insights privacy for your organization, see:
 -  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) 
 -  [Customize people insights privacy](/graph/insights-customize-people-insights-privacy)
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -64,7 +64,7 @@ PATCH /organization/{organizationId}/settings/peopleInsights
 
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body

@@ -4,22 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String name = "test5";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-JsonElement reference = JsonParser.parseString("=Sheet1!$F$15:$N$27");
+com.microsoft.graph.beta.drives.item.items.item.workbook.names.add.AddPostRequestBody addPostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.workbook.names.add.AddPostRequestBody();
+addPostRequestBody.setName("test5");
+addPostRequestBody.setReference("=Sheet1!$F$15:$N$27");
+addPostRequestBody.setComment("Comment for the named item");
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().names().add().post(addPostRequestBody);
 
-String comment = "Comment for the named item";
-
-graphClient.me().drive().items("{id}").workbook().names()
-	.add(WorkbookNamedItemAddParameterSet
-		.newBuilder()
-		.withName(name)
-		.withReference(reference)
-		.withComment(comment)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

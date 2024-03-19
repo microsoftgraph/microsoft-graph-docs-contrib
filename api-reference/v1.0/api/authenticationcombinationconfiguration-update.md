@@ -4,7 +4,7 @@ description: "Update the properties of an authenticationCombinationConfiguration
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ PATCH /identity/conditionalAccess/authenticationStrength/policies/{authenticatio
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +104,7 @@ Content-length: 130
 ---
 
 ### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

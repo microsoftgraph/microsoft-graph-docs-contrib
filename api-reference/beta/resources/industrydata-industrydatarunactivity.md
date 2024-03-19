@@ -3,7 +3,7 @@ title: "industryDataRunActivity resource type"
 description: "An abstract base type for all activity types."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

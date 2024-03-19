@@ -3,7 +3,7 @@ title: "Create invitation"
 description: "Create a new invitation. The invitation adds an external user to the organization."
 ms.localizationpriority: high
 author: "ppolkadots"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /invitations
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -127,28 +127,31 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#invitations/$entity",
-  "id": "7b92124c-9fa9-406f-8b8e-225df8376ba9",
-  "inviteRedeemUrl": "https://invitations.microsoft.com/redeem/?tenant=04dcc6ab-388a-4559-b527-fbec656300ea&user=7b92124c-9fa9-406f-8b8e-225df8376ba9&ticket=VV9dmiExBsfRIVNFjb9ITj9VXAd07Ypv4gTg%2f8PiuJs%3d&lc=1033&ver=2.0",
-  "invitedUserDisplayName": "Fabrikam Admin",
-  "invitedUserEmailAddress": "admin@fabrikam.com",
-  "resetRedemption": false,
-  "sendInvitationMessage": false,
-  "invitedUserMessageInfo": {
-     "messageLanguage": null,
-     "ccRecipients": [
-          {
-             "emailAddress": {
-                 "name": null,
-                 "address": null
-              }
-          }
-     ],
-     "customizedMessageBody": null
-  },
-  "inviteRedirectUrl": "https://myapp.contoso.com",
-  "status": "Completed",
-  "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#invitations/$entity",
+    "id": "9071bfde-35e0-47d2-a582-d244ab1b4af6",
+    "inviteRedeemUrl": "https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d69997834-fa40-45da-xxxx-382c3bdc66c3%26user%3d9071bfde-35e0-47d2-a582-d244ab1b4af6%26ticket%3dwCFIFW%25252frzl2A%25252fpZFZk5fCLJprpDxtcjR8s%25252fo1QZA0yQ%25253d%26ver%3d2.0",
+    "invitedUserDisplayName": null,
+    "invitedUserType": "Guest",
+    "invitedUserEmailAddress": "admin@fabrikam.com",
+    "sendInvitationMessage": false,
+    "resetRedemption": false,
+    "inviteRedirectUrl": "https://myapp.contoso.com",
+    "status": "PendingAcceptance",
+    "invitedUserMessageInfo": {
+        "messageLanguage": null,
+        "customizedMessageBody": null,
+        "ccRecipients": [
+            {
+                "emailAddress": {
+                    "name": null,
+                    "address": null
+                }
+            }
+        ]
+    },
+    "invitedUser": {
+        "id": "cbb896f9-8306-49d0-b56b-b8e39cd28825"
+    }
 }
 ```
 

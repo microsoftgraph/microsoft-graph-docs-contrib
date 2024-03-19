@@ -27,16 +27,16 @@ Inherits from [authorizationSystemTypeAction](../resources/authorizationsystemty
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionType|authorizationSystemActionType|The type of action. Supports `$filter` and (`eq`).  Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md).The possible values are: `delete`, `read`, `unknownFutureValue`.|
+|actionType|authorizationSystemActionType|The type of action. Supports `$filter` and (`eq`).  Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md). The possible values are: `delete`, `read`, `unknownFutureValue`.|
 |externalId|String|The ID of the action as defined by GCP. Read-only. Supports `$filter` and `eq`. Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md).|
 |id|String|The ID for the action as defined by Permissions Management. Read-only. Inherited from [entity](../resources/entity.md).|
 |resourceTypes|String collection|The resource types the action can be performed on. Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md).|
-|severity|authorizationSystemActionSeverity|The severity of the action. Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md).The possible values are: `normal`, `high`, `unknownFutureValue`. Supports `$filter` (`eq`).|
+|severity|authorizationSystemActionSeverity|The severity of the action. Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md). The possible values are: `normal`, `high`, `unknownFutureValue`. Supports `$filter` (`eq`).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the action in an GCP authorization system. Ths is auto-expanded.|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the action in a GCP authorization system. This object is autoexpanded. Supports `$filter` (`eq`).|
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -3,7 +3,7 @@ title: "targetManager resource type"
 description: "Complex type for entitlement management to indicate the manager, including indirect managers of a user may request on behalf of that user."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # targetManager complex type

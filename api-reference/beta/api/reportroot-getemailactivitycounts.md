@@ -2,7 +2,7 @@
 title: "reportRoot: getEmailActivityCounts"
 description: "Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -50,7 +50,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

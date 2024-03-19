@@ -4,7 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_general_device_configuration import IosGeneralDeviceConfiguration
+from msgraph.generated.models.app_list_item import AppListItem
+from msgraph.generated.models.media_content_rating_australia import MediaContentRatingAustralia
+from msgraph.generated.models.media_content_rating_canada import MediaContentRatingCanada
+from msgraph.generated.models.media_content_rating_france import MediaContentRatingFrance
+from msgraph.generated.models.media_content_rating_germany import MediaContentRatingGermany
+from msgraph.generated.models.media_content_rating_ireland import MediaContentRatingIreland
+from msgraph.generated.models.media_content_rating_japan import MediaContentRatingJapan
+from msgraph.generated.models.media_content_rating_new_zealand import MediaContentRatingNewZealand
+from msgraph.generated.models.media_content_rating_united_kingdom import MediaContentRatingUnitedKingdom
+from msgraph.generated.models.media_content_rating_united_states import MediaContentRatingUnitedStates
+from msgraph.generated.models.ios_network_usage_rule import IosNetworkUsageRule
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -3,7 +3,7 @@ title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of serviceprincipal object."
 author: "sureshja"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [servicePrincipal](../resources/serviceprincipal.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -51,7 +51,7 @@ The use of `$select` to get **keyCredentials** for service principals has a thro
 ## Request headers
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language| Language code. Optional.   |
 
 Providing the **Accept-Language** header with a supported language code, such as `es-ES` or `de-DE`, will return localized values where available. Note that the header is not supported for [list operations](serviceprincipal-list.md).
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a [servicePrinci
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -184,7 +184,7 @@ Content-type: application/json
 ### Example 2: Retrieve a service principal by its appId and only specific properties
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -208,7 +208,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals(appId='00000003-0000-0000
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipal-by-appid-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -230,7 +230,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals(appId='00000003-0000-0000
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

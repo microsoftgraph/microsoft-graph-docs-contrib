@@ -38,7 +38,7 @@ additionalData := map[string]interface{}{
 }
 conversationMember1.SetAdditionalData(additionalData)
 
-values := []graphmodels.conversationMemberable {
+values := []graphmodels.ConversationMemberable {
 	conversationMember,
 	conversationMember1,
 }

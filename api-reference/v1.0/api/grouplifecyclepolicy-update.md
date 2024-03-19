@@ -1,9 +1,10 @@
 ---
 title: "Update groupLifecyclePolicy"
 description: "Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the properties of a groupLifecyclePolicy[groupLifecyclePolicy resource type](../resources/grouplifecyclepolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -30,12 +31,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 PATCH /groupLifecyclePolicies/{id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json          |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 

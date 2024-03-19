@@ -17,13 +17,10 @@ Get a list of the [overprovisionedUserFinding](../resources/overprovisioneduserf
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported.|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "overprovisioneduserfinding_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/overprovisioneduserfinding-list-permissions.md)]
 
 
 ## HTTP request
@@ -63,7 +60,7 @@ This method supports the `$filter` and `$orderby` OData query parameters to help
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -77,6 +74,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_overprovisioneduserfinding"
@@ -85,6 +83,40 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.overprovisionedUserFinding
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-overprovisioneduserfinding-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-overprovisioneduserfinding-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-overprovisioneduserfinding-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-overprovisioneduserfinding-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-overprovisioneduserfinding-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-overprovisioneduserfinding-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-overprovisioneduserfinding-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-overprovisioneduserfinding-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -109,12 +141,12 @@ Content-Type: application/json
       "identity": {
           "@odata.type": "graph.azureUser",
           "id": "dXNlcl9yZWFkZXJfc3Vic2NyaXB0aW9uX293bmVyX3JnQG1jaWVtYzEub25taWNyb3NvZnQuY29t",
-          "externalId": "user_reader_subscription_owner_rg@mciemc1.onmicrosoft.com",
+          "externalId": "user_reader_subscription_owner_rg@contoso.com",
           "displayName": "user_reader_subscription_owner_rg",
           "source": {
             "@odata.type": "graph.aadSource",
             "identityProviderType": "aad",
-            "domain": "mciemc1.onmicrosoft.com"
+            "domain": "contoso.com"
           },
           "authorizationSystem": {
             "@odata.type": "graph.azureAuthorizationSystem",

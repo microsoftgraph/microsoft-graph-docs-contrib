@@ -1,12 +1,282 @@
 ---
-title: "Highlights of earlier releases in Microsoft Graph"
-description: "What was new earlier in Microsoft Graph"
-author: "angelgolfer-ms"
-ms.localizationpriority: high
+title: "Microsoft Graph what's new history"
+description: "Find information about previous additions and updates to Microsoft Graph APIs, documentation, SDKs, and other resources."
+author: "lauragra"
+ms.localizationpriority: medium
 ---
 
-# Highlights of earlier releases
+# Microsoft Graph what's new history
 
+Find information about previous additions and updates to Microsoft Graph APIs, documentation, SDKs, and other resources.
+
+## January 2024: New and generally available
+
+### Device and app management | Cloud PC
+
+The [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generally available, laying the foundation for future Cloud PC updates to the `v1.0` path.
+
+### Education
+
+Use the **webURL** property to get the deep link URL of an [educationSubmission](/graph/api/resources/educationsubmission).
+
+### Identity and access | Governance
+
+Through the **attributes** property of the [accessPackageResource resource type](/graph/api/resources/accesspackageresource), you can now view details of the attributes that are collected from the requestor and sent to the resource application.
+
+### Reports | Partner billing reports
+
+The new partner billing API in Microsoft Graph offers Microsoft direct partners a faster, more efficient way to export their high-volume billed and unbilled Azure usage data. Partners can quickly create export operations, monitor their status, and retrieve manifests using the following APIs:
+
+- [billedUsage: export](/graph/api/partners-billing-billedusage-export)
+- [unbilledUsage: export](/graph/api/partners-billing-unbilledusage-export)
+- [Get operation](/graph/api/partners-billing-operation-get)
+- [Get manifest](/graph/api/partners-billing-manifest-get)
+
+### Teamwork and communications | Calls and online meetings
+
+- Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant) in a [call](/graph/api/resources/call). For more information, see [JSON payload examples](/graph/api/application-post-calls#notification---roster) of notifications with delta roster disabled or enabled.
+- Removed the **profilePhoto** property on [virtualEventPresenter](/graph/api/resources/virtualeventpresenter?view=graph-rest-beta&preserve-view=true)  in favor of the **photo** property on [virtualEventPresenterDetails](/graph/api/resources/virtualeventpresenterdetails?view=graph-rest-beta&preserve-view=true).
+- Use the **email** property on [communicationsGuestIdentity](/graph/api/resources/communicationsguestidentity?view=graph-rest-beta&preserve-view=true) to get access to the email address of a guest user.
+
+## January 2024: New in preview only
+
+### Applications
+
+For Azure AD Connect cloud sync scenarios, you can now specify organizational units and groups that are in scope of a [synchronizationRule](/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta&preserve-view=true). For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=d9c34227-2a99-49e5-ac9c-e8444f685ce5).
+
+### Device and app management | Cloud PC
+
+- Use the **errorMessage** property in the [cloudPcPartnerAgentInstallResult](/graph/api/resources/cloudpcpartneragentinstallresult) to access a detailed error message for instances where the installation of a partner agent on a Cloud PC fails.
+- [Get the device recommendation reports for Cloud PCs](/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true), such as the usage category report.
+- [Get the remote action status reports](/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta&preserve-view=true), including data such as the Cloud PC ID, Cloud PC device display name, action taken, and action state.
+
+The following properties are deprecated:
+
+- **recommendedSku** property on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true).
+- **offer** and **offerDisplayName** properties on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) in favor of the **offerName** property.
+- **publisher** property on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) in favor of the **publisherName** property.
+- **sku** and **skuDisplayName** properties on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) in favor of the **skuName** property.
+- **statusDetails** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) in favor of the  **errorCode** property, to identify why an upload failed. The **errorCode** property is of type [cloudPcDeviceImageErrorCode](/graph/api/resources/cloudpcdeviceimage#cloudpcdeviceimageerrorcode-values?view=graph-rest-beta&preserve-view=true).
+- **id** property on [cloudPcSourceDeviceImage](/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta&preserve-view=true) in favor of the **resourceId** property, to get the fully qualified unique identifier of the source image resource in Azure.
+- **windowsSettings** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) in favor of the **windowsSetting** property.
+- **type** property on [cloudPcDomainJoinConfiguration](/graph/api/resources/cloudpcdomainjoinconfiguration?view=graph-rest-beta&preserve-view=true) in favor of the **domainJoinType** property.
+- **type** property on [microsoftManagedDesktop](/graph/api/resources/microsoftmanageddesktop?view=graph-rest-beta&preserve-view=true) in favor of the **managedType** property.
+- **frequencyInHours** property on [cloudPcRestorePointSetting](/graph/api/resources/cloudpcrestorepointsetting?view=graph-rest-beta&preserve-view=true) in favor of the **frequencyType** property.
+
+### Identity and access | Governance
+
+- You can [refresh an access package resource request](/graph/api/accesspackageresource-refresh?view=graph-rest-beta&preserve-view=true) to fetch the latest information for an access package resource from the origin system.
+- Added the **assignmentRequests** relationship to the **entitlementManagement** resource type and updated the API endpoints for the managing [access package assignment requests](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) from `/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/` which will be retired soon to `/identityGovernance/entitlementManagement/assignmentRequests/`. Inspect the API paths in your code and update to the new request paths for the Create, Delete, Get, and List operations.
+
+### Identity and access | Identity and sign-in
+
+Added the [x509CertificateCombinationConfiguration resource type](/graph/api/resources/x509certificatecombinationconfiguration) as a new derived type for [authenticationCombinationConfiguration resource type](/graph/api/resources/authenticationcombinationconfiguration) which helps you set restrictions on specific types, modes, or versions of an authentication method used in an [authentication strength](/graph/api/resources/authenticationstrengths-overview). Previously, you could only restrict the allowed FIDO2 key types. The **x509CertificateCombinationConfiguration** type allows you to configure the list of allowed values for specific certificate properties.
+
+### Reports | Partner billing reports
+
+The new partner billing API in Microsoft Graph offers Microsoft direct partners a faster, more efficient way to export their high-volume billed and unbilled Azure usage data. Partners can quickly create export operations, monitor their status, and retrieve manifests using the following APIs:
+
+- [billedUsage: export](/graph/api/partners-billing-billedusage-export?view=graph-rest-beta&preserve-view=true)
+- [unbilledUsage: export](/graph/api/partners-billing-unbilledusage-export?view=graph-rest-beta&preserve-view=true)
+- [Get operation](/graph/api/partners-billing-operation-get?view=graph-rest-beta&preserve-view=true)
+- [Get manifest](/graph/api/partners-billing-manifest-get?view=graph-rest-beta&preserve-view=true)
+
+### Users
+
+Added the [deletePasswordSingleSignOnCredentials](/graph/api/user-deletepasswordsinglesignoncredentials?view=graph-rest-beta&preserve-view=true) and [getPasswordSingleSignOnCredentials](/graph/api/user-getpasswordsinglesignoncredentials?view=graph-rest-beta&preserve-view=true) methods to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource for deleting and retrieving the password-based single sign-on credentials for a user to a given service principal.
+
+## December 2023: New and generally available
+
+### Identity and access | Directory management
+
+When a Microsoft service fails to provision a user, group, or organizational contact, and returns an error, you can now manually retry provisioning using the following APIs:
+
+- [Retry provisioning a user](/graph/api/user-retryserviceprovisioning)
+- [Retry provisioning a group](/graph/api/group-retryserviceprovisioning)
+- [Retry provisioning an organizational contact](/graph/api/orgcontact-retryserviceprovisioning)
+
+For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=9bb64b16-cc35-474d-8036-e8d5d1534fa1).
+
+### Teams meeting APIs
+
+Pricing updates for the Teams meeting APIs apply starting January 1, 2024. For more information, see [Payment models and licensing requirements for Microsoft Teams APIs](/graph/teams-licenses#payment-requirements-for-meeting-apis).
+
+### Teamwork and communications | Calls and online meetings
+Manage change notifications for virtual events using the [Create](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true), [Get](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true), [Update](/graph/api/subscription-update?view=graph-rest-1.0&preserve-view=true), and [Delete](/graph/api/subscription-delete?view=graph-rest-1.0&preserve-view=true) operations of the [subscription](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true) resource.
+
+## December 2023: New in preview only
+
+### Employee experience | Employee engagement
+
+Create and get a Viva Engage community that is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
+
+- [Create a community](/graph/api/employeeexperience-post-communities?view=graph-rest-beta&preserve-view=true)
+- [Poll for community creation status](/graph/api/engagementasyncoperation-get?view=graph-rest-beta&preserve-view=true)
+- [Get a community](/graph/api/community-get?view=graph-rest-beta&preserve-view=true)
+
+For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=6ef521a9-141c-48fe-a109-1082be3fb5b3).
+
+### Identity and access | Identity and sign-in
+
+- Customize user authentication experiences in Microsoft Entra External ID for customers by configuring actions to run before or after you collect attributes from a user. You can configure the following Microsoft Graph entities:
+  - [onAttributeCollectionStartCustomExtension](/graph/api/resources/onattributecollectionstartcustomextension?view=graph-rest-beta&preserve-view=true) and [onAttributeCollectionSubmitCustomExtension](/graph/api/resources/onattributecollectionstartcustomextension?view=graph-rest-beta&preserve-view=true) objects to run custom code before or after you collect attributes from a user, respectively.
+  - [onAttributeCollectionStartListener](/graph/api/resources/onattributecollectionstartlistener?view=graph-rest-beta&preserve-view=true) and [onAttributeCollectionSubmitListener](/graph/api/resources/onattributecollectionsubmitlistener?view=graph-rest-beta&preserve-view=true) objects to specify the event to invoke before or after you collect attributes from a user, respectively.
+
+For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=4badb014-c277-4c08-b593-8ed808b11baa).
+
+- We have refined how you can programmatically define the [tenant-wide policy for registering new devices](/graph/api/resources/deviceregistrationpolicy?view=graph-rest-beta&preserve-view=true) using Microsoft Entra join and Microsoft Entra register within your organization. This update introduces breaking changes that require you to update your app logic to ensure continued functionality. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=6bd09a97-53a9-401e-b0c5-266b9db06a1b)_.
+
+### Teamwork and communications | Calls and online meetings
+Manage change notifications for virtual events using the [Create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [Get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [Update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [Delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) operations of the [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) resource.
+
+### Teamwork and communications | Shift management
+
+- Get all [openShift](/graph/api/resources/openshift) objects across all teams a user is a direct member of, removing the need to specify a team ID in the request. For more information, see [team: getOpenShifts](/graph/api/team-getopenshifts?view=graph-rest-beta&preserve-view=true).
+- [Stage the deletion](/graph/api/changetrackedentity-stagefordeletion?view=graph-rest-beta&preserve-view=true) of an [openShift](/graph/api/resources/openshift), [shift](/graph/api/resources/shift), or [timeOff](/graph/api/resources/timeoff) instance in a [schedule](/graph/api/resources/schedule) in draft mode.
+
+For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=958cb6cc-4eb0-4dec-a19d-7fe3da86b3ec)_.
+
+
+## November 2023: New and generally available
+
+### Files
+[Manage the lifecycle](/purview/auto-apply-retention-labels-scenario) of a [drive item](/graph/api/resources/driveitem) (file or folder) by using retention labels:
+- [Get](/graph/api/driveitem-getretentionlabel) or [set](/graph/api/driveitem-setretentionlabel) a [retention label](/graph/api/resources/itemretentionlabel).
+- [Lock or unlock](/graph/api/driveitem-lockorunlockrecord) a file for [record versioning](/purview/record-versioning).
+- [Remove](/graph/api/driveitem-removeretentionlabel) a retention label.
+
+_See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=7a1f574d-c348-4ce9-890b-d55b58b2d3c2)_.
+
+### Groups
+Delete a group's [profile photo](/graph/api/resources/profilephoto). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=14a780c1-d222-4476-acc0-3c5b6425f040)_.
+
+### Identity and access | Directory management
+Optionally define a [directory extension](/graph/api/resources/extensionproperty) as a multi-valued custom property that contains a collection of objects, instead of a single-valued property. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=3c89fe6e-3b38-4168-952d-d4291e651e5a)_.
+
+### Security | Alerts and incidents
+Get an [alert](/graph/api/resources/security-alert) that can indicate a more specific workload protection plan of Microsoft Defender for Cloud as the source that detected notable component or activity. Examples of more specific workload protection plans include Microsoft Defender for IoT, Microsoft Defender for Servers, Microsoft Defender for Storage. _For a list of the additional possible sources, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2)_.
+
+### Use SDKs
+- The [Microsoft Graph Python SDK](https://github.com/microsoftgraph/msgraph-sdk-python) is now generally available. You can now access the beta and v1.0 endpoints of Microsoft Graph, with a fluent experience, designed to facilitate discoverability with the best features of the Python language. With simplified initialization and authentication, you can start making requests to Microsoft Graph with just 5 lines of code. The SDK also offers a built-in Retry-Handler that understands `429`, `503`, and `504` status codes. To learn more about the new Python SDK, see [Introducing the Microsoft Graph Python SDK](https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-graph-python-sdk/).
+- The [Microsoft Graph PHP SDK v2.0](https://github.com/microsoftgraph/msgraph-sdk-php) is now generally available. The Microsoft Graph PHP SDK 2.0.0 offers best-in-class features to improve developer efficiency and code quality. By solving cross-cutting concerns like authentication, retry, and batching, the SDK gives you time back to focus on the design and value of your application. To learn more about the new PHP SDK, see [Write high quality code with the new Microsoft Graph PHP SDK v2](https://devblogs.microsoft.com/microsoft365dev/write-high-quality-code-with-the-microsoft-graph-php-sdk-v2/).
+
+### Users
+Delete the [profile photo](/graph/api/resources/profilephoto) of a signed-in user. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=14a780c1-d222-4476-acc0-3c5b6425f040)_.
+
+## November 2023: New in preview only
+
+### Device and app management | Cloud PC
+[Get the access state of a Frontline Cloud PC](/graph/api/cloudPC-getfrontlinecloudpcaccessstate?view=graph-rest-beta&preserve-view=true) to determine whether the Frontline Cloud PC is accessible to a user. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=cc0c0a79-a691-485d-b47c-8b0ee543ae6c)_.
+
+### Reports | Identity and access reports
+As a [best practice recommended for a Microsoft Entra tenant](/graph/api/resources/recommendation?view=graph-rest-beta&preserve-view=true), [get](/graph/api/recommendation-tenantsecurescores?view=graph-rest-beta&preserve-view=true) historical [Secure Score data for the tenant](/graph/api/resources/tenantsecurescore?view=graph-rest-beta&preserve-view=true). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=514fea21-1d51-46d0-847e-9c2cce1d6c58)_.
+
+### Identity and access | Identity and sign-in
+- When configuring [strong authentication for an X.509 certificate](/graph/api/resources/x509CertificateAuthenticationModeConfiguration?view=graph-rest-beta&preserve-view=true), set up an [X509 certificate rule](/graph/api/resources/x509CertificateRule?view=graph-rest-beta&preserve-view=true) that binds a specific issuer subject, policy OID, or both to an authentication mode and affinity level. For example, bind the policy OID "1.32.132.343" to multifactor authentication mode and high affinity level. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=a12d7c65-273a-4409-8c5a-a8be6bcfd005)_.
+- Support the [Platform Credential authentication method](/graph/api/resources/platformCredentialAuthenticationMethod?view=graph-rest-beta&preserve-view=true) for users on Mac OS devices to authenticate in Microsoft Entra ID. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=bbb70cce-5252-40be-a7ca-7c29f99cb089)_.
+- Get or update [default identity provider configuration for invitation redemption](/graph/api/resources/defaultInvitationRedemptionIdentityProviderConfiguration?view=graph-rest-beta&preserve-view=true) to set redemption flow settings for Microsoft Entra ID B2B collaboration. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=8b9db607-81fd-4013-af2e-d6cb709aa313)_.
+
+### Identity and access | Network access
+Get [connectivity configuration details](/graph/api/resources/networkaccess-branchConnectivityConfiguration?view=graph-rest-beta&preserve-view=true) for customers' [device link](/graph/api/resources/networkaccess-devicelink?view=graph-rest-beta&preserve-view=true) equipment at a [branch site](/graph/api/resources/networkaccess-branchSite?view=graph-rest-beta&preserve-view=true) connected to Global Secure Access services. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=2204d5d0-d3cf-4850-88b7-d430ab574476)_.
+
+### Identity and access | Multicloud permissions management
+Use the [permissions management APIs](/graph/api/resources/permissions-management-api-overview?view=graph-rest-beta&preserve-view=true) to programmatically discover, remediate, and monitor permissions in your multicloud infrastructure. For each supported cloud infrastructure, you can:
+
+- Discover identities, resources, and permissions that identities have to resources, and what actions the identities can perform.
+- Request permissions for identities to resources; Grant or reject permissions requests.
+- Generate reports relating to permissions and resources.
+
+Permissions Management currently supports only Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) cloud infrastructures. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=&filterBy=Multicloud%20permissions%20management&from=2023-10-31&to=2023-11-29)_.
+
+### Reports  | Identity and access reports
+
+- Trace the [history of activities related to managing custom security attributes](/graph/api/resources/customsecurityattributeaudit?view=graph-rest-beta&preserve-view=tru), such as attribute definitions and assigning attribute values to principals. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=12c7039e-92e7-44a4-87ad-63e1fc8c76a2)_.
+- When using Microsoft Entra ID for customers, you can now get [daily](/graph/api/resources/dailyuserinsightmetricsroot) and [monthly](/graph/api/resources/monthlyuserinsightmetricsroot) insights into user activities on apps registered in your tenant. The reports include data about sign ups, active users, and multifactor authentication completions. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=921c584a-25cb-4561-936f-966ba933cccd)_.
+
+### Tasks and plans
+Create a [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) in a user [container](/graph/api/resources/plannerplancontainer?view=graph-rest-beta&preserve-view=true) to let individual users track their own tasks. This provides the flexibility for users to share or collaborate on their personal plans, or subsequently upgrade their personal plans into group-based plans by [moving](/graph/api/plannerplan-movetocontainer?view=graph-rest-beta&preserve-view=true) the plan from the user container to a group container. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=6adca1d6-2cd3-4b37-8ffa-7985afbbbade)_.
+
+### Teamwork and communications | Messaging
+[Remove](/graph/api/chat-removeallaccessforuser?view=graph-rest-beta&preserve-view=true) a user's access to a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=97796aeb-ce8a-4650-ad43-6872cee08c4d)_.
+
+## October 2023: New and generally available
+
+### Applications
+Get or set a [remote desktop security configuration](/graph/api/resources/remoteDesktopSecurityConfiguration) to enable the Microsoft Entra ID [Remote Desktop Services (RDS) authentication protocol](/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136), for Microsoft Entra ID to authenticate users to joined or hybrid joined devices. The configuration also enables single sign-on (SSO) when RDP clients connect to a Microsoft Entra joined or Microsoft Entra hybrid joined device. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=672c60ca-5ad4-4a2a-a158-37a999e02d27)_.
+
+### Compliance | Subjects rights request
+Specify or get the search locations for a KQL-based content query in a [subject rights request](/graph/api/resources/subjectRightsRequest), such as [mailboxes](/graph/api/resources/subjectRightsRequestAllMailboxLocation), [SharePoint, OneDrive, or Teams channels](/graph/api/resources/subjectRightsRequestAllSiteLocation). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=b0fdba93-efca-407d-b7fc-12e792ece3f6)_.
+
+### Device and app management | Cloud printing
+Include additional usage data in reports for [user-based print activity](/graph/api/resources/printUsageByUser) and for [printer-based print activity](/graph/api/resources/printusagebyprinter). Examples of usage data include the number of completed black-and-white print jobs and estimated number of single-sided media sheets. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=a7fdcd96-5c33-4208-9031-f8e62c27c1bf)_.
+
+### External data connections
+Optionally, specify the ID of a Teams app in an [external connection](/graph/api/resources/externalconnectors-externalconnection) in the **connectorId** property. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=c2ff9eba-b803-4557-94dd-282769f9016e)_.
+
+### Identity and access | Directory management
+List the [credentials of local administrator accounts of devices](/graph/api/resources/devicelocalcredentialinfo) that are associated with a [deleted item](/graph/api/resources/directory), such as being a member of a deleted [group](/graph/api/resources/group) or owned ore registered by a deleted [user](/graph/api/resources/user).  _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=260527bf-7d67-490c-a732-521065078560)_.
+
+### Identity and access | Governance
+Use [Privileged Identity Management (PIM) for groups](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview) to govern how principals are assigned membership or ownership of security and Microsoft 365 groups, such as the following capabilities:
+  - Providing principals just-in-time membership or ownership of groups.
+  - Assigning principals temporary membership or ownership of groups.
+
+_See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=8c297080-41ec-436e-9907-f0f8a3ee036d)_.
+
+### Identity and access | Partner customer administration
+Specify automatic extension of a [delegated admin relationship between a partner and customer](/graph/api/resources/delegatedAdminRelationship) or [between a Microsoft indirect reseller partner and a customer](/graph/api/resources/resellerDelegatedAdminRelationship) when the relationship expires. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=80aec7bf-811c-46b9-bb97-9db36b618153)_.
+
+### People and workplace intelligence | People admin settings
+Administrators can customize the profile card for users in an organization by using the [profile card property](/graph/api/resources/profilecardproperty) API on built-in or custom attributes stored in Microsoft Entra ID. _For more information, see [Add or remove custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard), and the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=9b4cd317-0b73-42e2-991a-9654e292f8a0)_.
+
+### Security | Attack simulation and training
+- [Create](/graph/api/attacksimulationroot-post-simulation), [update](/graph/api/simulation-update), or [delete](/graph/api/simulation-delete) an [attack similation training campagin](/graph/api/resources/simulation) for a tenant.
+- Get [end user notifications](/graph/api/resources/endusernotification), [landing page](/graph/api/resources/landingpage), [login page](/graph/api/resources/loginpage), [payload detail](/graph/api/resources/payload) (such as message content, links, or attachment in a phishing email), [training](/graph/api/resources/training), and [training language detail](/graph/api/resources/traininglanguagedetail) for the attack simulation.
+- _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=f790cf16-283a-4044-bd17-a6a7c72bdf38) for the preceding updates for attack simulation and training_.
+
+### Security | Threat intelligence
+Discover information about each [host port](/graph/api/resources/security-hostPort) that Microsoft Defender Threat Intelligence has observed on a [host](/graph/api/resources/security-host), including each [host port component](/graph/api/resources/security-hostportcomponent) that has been seen on a port, the number of times that a port has been observed in all the scans, and what each [host port banner](/graph/api/resources/security-hostportbanner) response contains. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=6f211280-ef11-487b-b98a-fe6eec64ea7b)_.
+
+### Teamwork and communications | Calls and online meetings
+- [Get](/graph/api/calltranscript-get) a specific [transcript](/graph/api/resources/calltranscript) or all the transcripts of an [online meeting](/graph/api/resources/onlinemeeting). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=09e85d0c-2551-40e7-a037-1f36fade0b0b)_.
+- When [getting](/graph/api/channel-get) information about a [channel](/graph/api/resources/channel), [optionally include](/graph/api/channel-get#use-select-for-better-performance) [summary](/graph/api/resources/channelSummary) information about the channel. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=be053170-38ef-40c5-a2bd-4e1e2db5a1e7)_.
+
+## October 2023: New in preview only
+
+### Device and app management | Cloud PC
+- [Running health checks for on premises network connection](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) can now identify the active domain join check failed because the server is not operational. This could be due to network connectivity issues, DNS resolution issues, or problems with the domain controller itself. Make sure that the domain controller is running, and that ports that are required to be open between the client computer and the domain controller are enabled and not blocked. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=80297d8c-5457-4fa1-be2b-769490b818bb)_.
+- Support app scenarios to [create](/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta&preserve-view=true), [update](/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta&preserve-view=true), [delete](/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-beta&preserve-view=true), or [run health checks](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) on a [Cloud PC on-premises connection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) without a signed-in user. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=cd506d8f-eddb-4d12-859d-a7894452989e)_.
+- Get a [raw real-time remote connection report](/graph/api/cloudpcreports-getrawremoteconnectionreports?view=graph-rest-beta&preserve-view=true) for a Cloud PC without any calculation or aggregation. As an alternative, you can download the report by an [export job](/graph/api/resources/cloudpcexportjob?view=graph-rest-beta&preserve-view=true).  _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=12f93700-b666-4c5c-b569-7db20691c5b3)_.
+- Get a specified [Cloud PC FrontLine service plan](/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta&preserve-view=true), or all such service plans that a customer has purchased. This type of Windows 365 Frontline-branded service plan provides an allotment of three Cloud PCs for an administrator to provision, for three active users at a time without assigning a Cloud PC to only one specific user. The service plan allows provisioned users to time-share, and let customers deploy a larger number of users. Customers using the pre-existing [Cloud PC shared-use service plan](/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta&preserve-view=true) should have switched to the Cloud PC Frontline service plan by October 8, 2023, as that plan has been deprecated and has stopped returning data since October 8, 2023.  _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=79a3808d-826e-431f-9288-58144fe2776a)_.
+
+### Device and app management | Corporate management
+Intune [October updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2023-10-01&to=2023-10-31) for the beta version. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=79a3808d-826e-431f-9288-58144fe2776a)_.
+
+### Identity and access | Directory management
+Create and manage a [certificate-based application configuration](/graph/api/resources/certificateBasedApplicationConfiguration?view=graph-rest-beta&preserve-view=true) which represents a chain of trust that specifies allowed root and intermediate certificate authorities. This configuration is part of an [app management policy](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true) used for [application authentication](/graph/api/resources/applicationauthenticationmethodpolicy?view=graph-rest-beta&preserve-view=true) and can restrict app developers to use only those certificates issued by authorities defined in the configuration. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=c022f245-26dd-4fd7-81f2-4297d5a37c6d)_.
+
+### Identity and access | Identity and sign-in
+- Get or specify in a Microsoft Entra native [X-509 certificate-based authentication configuration](/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true), whether Certificate Authority issuer hints are sent back to the client side to filter the certificates shown in certificate picker. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=26b75f44-c3c8-4300-a98b-2ee6c75e6146)_.
+- Get or update a setting that requires a user to perform registration after snoozing 3 times, as part of an [authentication methods registration campaign](/graph/api/resources/authenticationMethodsRegistrationCampaign?view=graph-rest-beta&preserve-view=true) to [enforce registration at sign-in time](/graph/api/resources/registrationenforcement?view=graph-rest-beta&preserve-view=true) in an [authentication policy](/graph/api/resources/authenticationmethodspolicy?view=graph-rest-beta&preserve-view=true). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=bfd0c33a-af94-4b3a-867d-a904d3986b0f)_.
+
+### Reports and audit | Identity and access reports
+Get Microsoft Entra [service activity](/graph/api/resources/serviceActivity?view=graph-rest-beta&preserve-view=true) reports for sign-in [metrics](/graph/api/resources/serviceActivityValueMetric?view=graph-rest-beta&preserve-view=true) at minute-level granularity on four scenarios: 
+- [Get metrics for MFA sign-in success](/graph/api/serviceactivity-getmetricsformfasigninsuccess?view=graph-rest-beta&preserve-view=true) and [get metrics for MFA sign-in failure](/graph/api/serviceactivity-getmetricsformfasigninfailure?view=graph-rest-beta&preserve-view=true)
+- [Get metrics for conditional access managed devices sign-in success](/graph/api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess?view=graph-rest-beta&preserve-view=true)
+- [Get metrics for conditional access compliant devices sign-in success](/graph/api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess?view=graph-rest-beta&preserve-view=true)
+- [Get metrics for SAML sign-in success](/graph/api/serviceactivity-getmetricsforsamlsigninsuccess?view=graph-rest-beta&preserve-view=true)
+
+Tenant administrators can monitor the sign-in activities within their tenant across those four sign-in scenarios, and feed these metrics to their own monitoring or alerting system as appropriate. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=dbe9e6bd-57ef-430e-b9a6-3669472052da)_.
+
+
+### Sites and lists
+[List items](/graph/api/recyclebin-list-items?view=graph-rest-beta&preserve-view=true) in the [recycle bin](/graph/api/resources/recycleBin?view=graph-rest-beta&preserve-view=true) of a SharePoint [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=3fdf4a8e-0ba7-405a-91d1-f7b4b6ac6983)_.
+
+### Teamwork and communications | Calls and online meetings
+Use the following new functions for virtual events that are of the [webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) type:
+ - [Get](/graph/api/virtualeventwebinar-getbyuseridandrole?view=graph-rest-beta&preserve-view=true) the virtual event webinars where a specified user is an organizer or coorganizer.
+ - [Get](/graph/api/virtualeventwebinar-getbyuserrole?view=graph-rest-beta&preserve-view=true) the virtual event webinars where the signed-in user is an organizer or coorganizer.
+ - _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=2b4cd7a5-2095-4ca3-80b0-da96df6c7e90)_.
 
 ## September 2023: New and generally available
 
@@ -632,7 +902,7 @@ Use the Windows Update for Business deployment service to manage Windows 11 feat
 ### Identity and access | Directory management
 Debut of pronouns support for organizations - use [pronouns settings](/graph/api/resources/pronounsSettings?view=graph-rest-beta&preserve-view=true) to _programmatically_ [manage the support of pronouns in an organization](pronouns-configure-pronouns-availability.md). Find out about how _administrators_ can [enable or disable pronouns in the Microsoft 365 admin center](/microsoft-365/admin/add-users/turn-pronouns-on-or-off?view=o365-worldwide&preserve-view=true), and the availability timeline for pronouns on profile cards on the [Microsoft 365 roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=pronouns).  
 
-### Identity and access | Directory management
+### Reports | Identity and access reports
 Use the [recommendation](/graph/api/resources/recommendation?view=graph-rest-beta&preserve-view=true) resource as personalized and actionable insights to implement Azure Active Directory best practices. Recommendations help to ensure your tenant is in a secure and healthy state and maximize the value of the features available in Azure AD. For more information about how recommendations work in Azure AD for administrators, see [What are Azure Active Directory recommendations](/azure/active-directory/reports-monitoring/overview-recommendations).
 
 ### Identity and access | Governance
@@ -1494,7 +1764,7 @@ Get usage reports for Outlook, OneDrive, and SharePoint for Microsoft Cloud for 
 ## December 2021: New and generally available
 
 ### Cloud communications | Presence
-[Subscribe to notifications of changes](/graph/api/subscription-post-subscriptions) in a specified user's [presence](/graph/api/resources/presence) status. Always specify an encryption certificate in the subscription request as these are [rich notifications that include encrypted resource data](webhooks-with-resource-data.md).
+[Subscribe to notifications of changes](/graph/api/subscription-post-subscriptions) in a specified user's [presence](/graph/api/resources/presence) status. Always specify an encryption certificate in the subscription request as these are [rich notifications that include encrypted resource data](change-notifications-with-resource-data.md).
 
 
 ### Compliance | Subject rights requests
@@ -2224,7 +2494,7 @@ Get the [usage right](/graph/api/resources/UsageRight?view=graph-rest-beta&prese
 ### Identity and access | Identity and sign-in
 - Apps can use application permissions to let administrators manage [authentication methods](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true) for users.
 - Support [Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta&preserve-view=true) as an authentication method of a user to sign in or perform multi-factor authentication to Azure AD.
-- Use [Microsoft Authenticator policy](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) to define configuration settings and users or groups that are enabled to use Microsoft Authenticator as an authentication method. Use Microsoft Authenticator policy in place of [Microsoft Authenticator passwordless phone sign-in policy](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true) which is deprecated. 
+- Use [Microsoft Authenticator policy](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) to define configuration settings and users or groups that are enabled to use Microsoft Authenticator as an authentication method. Use Microsoft Authenticator policy in place of **Microsoft Authenticator passwordless phone sign-in policy** which is deprecated. 
 - Support [Windows Hello for Business](/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta&preserve-view=true) as an authentication method of a user to sign in on Windows devices without using a password.
 
 ### Reports | Identity and access reports
@@ -2249,7 +2519,7 @@ Try a new [tutorial](tutorial-riskdetection-api.md) to learn how to use the [ide
 - [Get a chat between a user and a Teams app](/graph/api/userscopeteamsappinstallation-get-chat).
 
 ### Use the Toolkit
-GA of Microsoft Graph Toolkit 2.0 - this release includes a new [component for Microsoft Graph To-Do tasks](./toolkit/components/todo.md), distinct from the[Planner tasks component](./toolkit/components/tasks.md), and an enhanced [person card component](./toolkit/components/person-card.md). See the [related blog post](https://developer.microsoft.com/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/) for more information.
+GA of Microsoft Graph Toolkit 2.0 - this release includes a new [component for Microsoft Graph To-Do tasks](./toolkit/components/todo.md), distinct from the[Planner tasks component](./toolkit/components/planner.md), and an enhanced [person card component](./toolkit/components/person-card.md). See the [related blog post](https://developer.microsoft.com/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/) for more information.
 
 
 ## December 2020: New in preview only
@@ -2297,7 +2567,7 @@ As part of Azure Active Directory [entitlement management](/graph/api/resources/
 - As part of a [Teams app definition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true), use the **bot** relationship to connect to a [teamwork bot](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true).
 
 ### To-do tasks
-Subscribe to [change notifications](webhooks.md) of a [To Do task](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true).
+Subscribe to [change notifications](change-notifications-overview.md) of a [To Do task](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true).
 
 
 ## November 2020: New and generally available
@@ -2331,7 +2601,7 @@ Subscribe to [change notifications](webhooks.md) of a [To Do task](/graph/api/re
 Debut of the [cloud PC API](/graph/api/resources/virtualendpoint?view=graph-rest-beta&preserve-view=true) that lets organizations provision and manage virtual desktops for employees. Use it in conjunction with the Intune API to manage physical and virtual endpoints.
 
 ### Devices and apps | Cloud printing
-[Subscribe to change notifications](webhooks.md) on a [print task definition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true).
+[Subscribe to change notifications](change-notifications-overview.md) on a [print task definition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true).
 
 ### Devices and apps | Corporate management
 Intune [November](changelog.md#november-2020) updates for the beta version.
@@ -2353,7 +2623,7 @@ You can aggregate numeric or string type search results that are imported by [Mi
 - Get the verified publisher information for an [application](/graph/api/resources/application) or [servicePrincipal](/graph/api/resources/serviceprincipal), and [set](/graph/api/application-setverifiedpublisher) or [remove](/graph/api/application-unsetverifiedpublisher) verified publisher information for an **application**.
 
 ### Change notifications
-Production apps can now subscribe to lifecycle notifications of Outlook [message](/graph/api/resources/message), [event](/graph/api/resources/event), and [contact](/graph/api/resources/contact), and Teams [chatMessage](/graph/api/resources/chatmessage), in order to [reduce missing subscriptions and change notifications](webhooks-lifecycle.md).
+Production apps can now subscribe to lifecycle notifications of Outlook [message](/graph/api/resources/message), [event](/graph/api/resources/event), and [contact](/graph/api/resources/contact), and Teams [chatMessage](/graph/api/resources/chatmessage), in order to [reduce missing subscriptions and change notifications](change-notifications-lifecycle-events.md).
 
 ### Identity and access
 - GA of advanced OData system query options (`$count`, `$search`, and `$filter`) on directory objects.
@@ -2362,7 +2632,7 @@ Production apps can now subscribe to lifecycle notifications of Outlook [message
 
 ### Teamwork
 - GA of the full set of CRUD operations for [conversationMember](/graph/api/resources/conversationmember) and [aadUserConversationMember](/graph/api/resources/aaduserconversationmember). These resources represent a member in a chat or channel conversation, who may or may not be a user in Azure AD.
-- GA of lifecycle notifications for Teams [chatMessage](/graph/api/resources/chatmessage) resources, to [reduce missing subscriptions and change notifications](webhooks-lifecycle.md).
+- GA of lifecycle notifications for Teams [chatMessage](/graph/api/resources/chatmessage) resources, to [reduce missing subscriptions and change notifications](change-notifications-lifecycle-events.md).
 
 ### To-do tasks
 GA of the [Microsoft To Do API](/graph/api/resources/todo-overview?view=graph-rest-1.0&preserve-view=true) - use the to-do API in a production app to create and manage tasks that are part of a user's workflow, such as creating a task off an email.  
@@ -2429,7 +2699,7 @@ GA of the [administrative units API](/graph/api/resources/administrativeunit) th
 ### Teamwork
 - Get the **lastEditedDateTime** property to find out when a sender last edits a [chat message](/graph/api/resources/chatmessage).
 - Get the **lastModifiedDateTime** property to find out when a sender creates a chat message or when anyone modifies it in other ways, including adding or removing a reaction. 
-- [Get notifications on changes](webhooks.md) in [chat messages](/graph/api/resources/chatmessage).
+- [Get notifications on changes](change-notifications-overview.md) in [chat messages](/graph/api/resources/chatmessage).
 - [Update](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) the **policyViolation** property of a [chatMessage](/graph/api/resources/chatmessage) within a [channel](/graph/api/resources/channel) or [chat](/graph/api/resources/chat), enabling data loss prevention (DLP) apps to monitor [chat message policy violation](/graph/api/resources/chatmessagepolicyviolation) to prevent messages from containing data that users are not supposed to send.
 
 ### Use the SDKs
@@ -2521,7 +2791,7 @@ Enhance programmatic support for scenarios involving a recurring [event](/graph/
 - Get any cancellations in a series using the **cancelledOccurrences** property.
 
 ### Change notifications
-- Use the **includeResourceData** property of a [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true), to [set up change notifications that include resource data](webhooks-with-resource-data.md). Do not use the **includeProperties** property.
+- Use the **includeResourceData** property of a [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true), to [set up change notifications that include resource data](change-notifications-with-resource-data.md). Do not use the **includeProperties** property.
 - Get [change notifications delivered via Event Hub](change-notifications-delivery.md).
 
 ### Devices and apps | Cloud printing
@@ -2744,7 +3014,7 @@ GA of the [places API](/graph/api/resources/place) in v1.0 - use this API in pro
 
 ### Cloud communications | Call records
 - GA of the [call records API](/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0&preserve-view=true) - use the [callRecord](/graph/api/resources/callrecords-callrecord) resource to get the metadata of calls and online meetings on Microsoft Teams and Skype.
-- Subscribe to [change notifications](./webhooks.md) for changes to all **callRecord** resources in an organization.
+- Subscribe to [change notifications](./change-notifications-overview.md) for changes to all **callRecord** resources in an organization.
 - [List sessions](/graph/api/callrecords-session-list?view=graph-rest-1.0&preserve-view=true) in a **callRecord**, and optionally [expand each session to list segments](/graph/api/callrecords-session-list?view=graph-rest-1.0&preserve-view=true#example-2-get-session-list-with-segments) in the call record.
 - Support for 60-GHz (`frequency60GHz`) and `unknownFutureValue` WiFi band values of a media endpoint in a segment.
 - Support for voice mail as a possible type of service-side end point in a communication [segment](/graph/api/resources/callrecords-segment).
@@ -2874,7 +3144,7 @@ Identify the app that created a [group](/graph/api/resources/group?view=graph-re
 - [Manage](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true) a user's [authentication methods](/graph/api/resources/authenticationmethod?view=graph-rest-beta&preserve-view=true) which include [password](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta&preserve-view=true) or [phone](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta&preserve-view=true). For example, [reset a user password](/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-beta&preserve-view=true) and [get the reset status](/graph/api/authenticationoperation-get?view=graph-rest-beta&preserve-view=true), or [add a phone number](/graph/api/authentication-post-phonemethods?view=graph-rest-beta&preserve-view=true) for a user for SMS or voice call authentication, if the policy is enabled for the user.
 
 ### Reports | Identity and access reports
-[List](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta&preserve-view=true) [relying parties](/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) configured in Active Directory Federation Services.
+List **relying parties** configured in Active Directory Federation Services.
 
 ### Reports | Microsoft 365 usage reports
 View **Meeting Created** and **Meeting Interacted** data in CSV reports for [email activity counts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta&preserve-view=true), [email activity user counts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta&preserve-view=true), and [email activity user detail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta&preserve-view=true).
@@ -2949,7 +3219,7 @@ Note that as of March 2020, the Universal Print _service_ is in private preview.
 Walk through an example of [creating an event in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md), and the actions and properties available to the delegate, invitees, and calendar owner during this process.
 
 ### Identity and access
-- To improve security when subscribing to [change notifications of user data](webhooks.md), [enforce Transport Layer Security (TLS) 1.2](/configmgr/core/plan-design/security/enable-tls-1-2) or higher on clients and site servers used in the notification process. The new requirement is rolled out in stages starting February 15 2020. By May 15, 2020, all notification endpoints must meet the new TLS requirement. [Find out the stages of the rollout](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) and if necessary, use the new **latestSupportedTlsVersion** property as a temporary workaround to avoid subscription failures, before completing the TLS upgrade.
+- To improve security when subscribing to [change notifications of user data](change-notifications-overview.md), [enforce Transport Layer Security (TLS) 1.2](/configmgr/core/plan-design/security/enable-tls-1-2) or higher on clients and site servers used in the notification process. The new requirement is rolled out in stages starting February 15 2020. By May 15, 2020, all notification endpoints must meet the new TLS requirement. [Find out the stages of the rollout](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) and if necessary, use the new **latestSupportedTlsVersion** property as a temporary workaround to avoid subscription failures, before completing the TLS upgrade.
 - Use respective types of [threat assessment request](/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0&preserve-view=true) to track threats from [mail](/graph/api/resources/mailassessmentrequest?view=graph-rest-1.0&preserve-view=true), an [email message file](/graph/api/resources/emailfileassessmentrequest?view=graph-rest-1.0&preserve-view=true) (.EML file), [email attachment file](/graph/api/resources/fileassessmentrequest?view=graph-rest-1.0&preserve-view=true) (text, Word, or binary file), or [URL](/graph/api/resources/urlassessmentrequest?view=graph-rest-1.0&preserve-view=true).
 
 ### Users
@@ -3038,7 +3308,7 @@ Intune [December](changelog.md#december-2019) updates
 - Use the [threat assessment API](/graph/api/resources/threatassessment-api-overview?view=graph-rest-beta&preserve-view=true) to empower administrators to report suspicious emails, phishing URLs, email attachments, or other files. The thread scanning verdict can then inform them to adjust organizational policy appropriately.
 
 ### Teamwork
-- [Set up change notifications that include resource data](webhooks-with-resource-data.md) for [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resources in Microsoft Teams channels and chats.
+- [Set up change notifications that include resource data](change-notifications-with-resource-data.md) for [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resources in Microsoft Teams channels and chats.
 - [Subscribe to notifications](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) for new or modified [channel messages or chat messages](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
 - Use the [shiftPreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta&preserve-view=true) resource to enable specifying a user's availability to be assigned shifts in a [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true). Get or set this as part of the user's [settings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true).
 
@@ -3402,7 +3672,7 @@ API snippets ([example](/graph/api/user-get?view=graph-rest-1.0&preserve-view=tr
 [Get raw/MIME content of file or item attachments](/graph/api/attachment-get?view=graph-rest-beta&preserve-view=true#get-the-raw-contents-of-a-file-or-item-attachment) in an event, message, Outlook task, or group post
 
 ### Change notifications
-[Reduce missing change notifications](webhooks-lifecycle.md)
+[Reduce missing change notifications](change-notifications-lifecycle-events.md)
 
 ### Devices and apps
 - Intune [January](changelog.md#january-2019) updates 
@@ -3436,7 +3706,7 @@ API snippets ([example](/graph/api/user-get?view=graph-rest-1.0&preserve-view=tr
 [1:1 chats](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)
 [Shifts management](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true)
 
-## See also
+## Related content
 - See [what's currently new](whats-new-overview.md) in Microsoft Graph.
 - Check out the [Microsoft Graph developer blog](https://developer.microsoft.com/graph/blogs/) periodically for release announcements and helpful resources.
 - Browse details of Microsoft Graph API additions, and API behavior updates in the [changelog](changelog.md).

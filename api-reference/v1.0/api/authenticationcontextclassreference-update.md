@@ -4,7 +4,7 @@ description: "Create a new or update the properties of an authenticationContextC
 ms.localizationpriority: medium
 author: "swetha-rai"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ PATCH /identity/conditionalAccess/authenticationContextClassReferences/{id}
 
 | Name          | Description      |
 |:--------------|:-----------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

@@ -3,7 +3,7 @@ title: "bookingCustomQuestion resource type"
 description: "Represents a custom question for a bookingBusiness."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 
@@ -33,8 +33,10 @@ Inherits from [bookingNamedEntity](../resources/bookingnamedentity.md).
 | :-------------- | :---------------- | :-------------------------------------------------------------------------------------------------------- |
 | answerInputType | answerInputType   | The expected answer type. The possible values are: `text`, `radioButton`, `unknownFutureValue`.     |
 | answerOptions   | String collection | List of possible answer values.                                                                    |
+| createdDateTime|DateTimeOffset|The date, time and timezone when the custom question was created.|
 | displayName     | String            | The question. Inherited from [bookingNamedEntity](../resources/bookingnamedentity.md). |
 | id              | String            | The ID of the custom question. Inherited from [entity](../resources/entity.md).                           |
+| lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the custom question was last updated.|
 
 ## Relationships
 
@@ -57,8 +59,12 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.bookingCustomQuestion",
   "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "lastUpdatedDateTime": "String (timestamp)",
   "displayName": "String",
-  "answerInputType": {"@odata.type": "microsoft.graph.answerInputType"},
-  "answerOptions": ["String"]
+  "answerInputType": "String",
+  "answerOptions": [
+    "String"
+  ]
 }
 ```

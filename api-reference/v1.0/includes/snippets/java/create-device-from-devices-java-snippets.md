@@ -4,23 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Device device = new Device();
-device.accountEnabled = false;
-LinkedList<AlternativeSecurityId> alternativeSecurityIdsList = new LinkedList<AlternativeSecurityId>();
-AlternativeSecurityId alternativeSecurityIds = new AlternativeSecurityId();
-alternativeSecurityIds.type = 2;
-alternativeSecurityIds.key = Base64.getDecoder().decode("base64Y3YxN2E1MWFlYw==");
-alternativeSecurityIdsList.add(alternativeSecurityIds);
-device.alternativeSecurityIds = alternativeSecurityIdsList;
-device.deviceId = "4c299165-6e8f-4b45-a5ba-c5d250a707ff";
-device.displayName = "Test device";
-device.operatingSystem = "linux";
-device.operatingSystemVersion = "1";
+device.setAccountEnabled(false);
+LinkedList<AlternativeSecurityId> alternativeSecurityIds = new LinkedList<AlternativeSecurityId>();
+AlternativeSecurityId alternativeSecurityId = new AlternativeSecurityId();
+alternativeSecurityId.setType(2);
+byte[] key = Base64.getDecoder().decode("base64Y3YxN2E1MWFlYw==");
+alternativeSecurityId.setKey(key);
+alternativeSecurityIds.add(alternativeSecurityId);
+device.setAlternativeSecurityIds(alternativeSecurityIds);
+device.setDeviceId("4c299165-6e8f-4b45-a5ba-c5d250a707ff");
+device.setDisplayName("Test device");
+device.setOperatingSystem("linux");
+device.setOperatingSystemVersion("1");
+Device result = graphClient.devices().post(device);
 
-graphClient.devices()
-	.buildRequest()
-	.post(device);
 
 ```

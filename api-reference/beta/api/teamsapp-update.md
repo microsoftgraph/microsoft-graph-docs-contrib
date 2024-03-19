@@ -3,7 +3,7 @@ title: "Update teamsApp"
 description: "Update an app previously published to the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 | Header        | Value           |
 |:--------------|:--------------  |
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/zip. Required. |
 
 ## Request body
@@ -179,6 +179,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

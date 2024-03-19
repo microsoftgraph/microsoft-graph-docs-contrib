@@ -36,7 +36,7 @@ POST /applications(appId='{appId}')/extensionProperties
 ## Request headers
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body
@@ -46,9 +46,9 @@ In the request body, provide an [extensionProperty](../resources/extensionproper
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>|
+|dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>Not nullable. For multivalued directory extensions, these limits apply per value in the collection. |
 |name|String| Name of the extension property. Not nullable. |
-|isMultiValued|Boolean| Defines the directory extension as a multi-valued property. When `true`, the directory extension property can store a collection of objects of the **dataType**; for example, a collection of integers. The default value is `false`.|
+|isMultiValued|Boolean| Defines the directory extension as a multi-valued property. When `true`, the directory extension property can store a collection of objects of the **dataType**; for example, a collection of string types such as `"extension_b7b1c57b532f40b8b5ed4b7a7ba67401_jobGroupTracker": ["String 1", "String 2"]`. The default value is `false`.|
 |targetObjects|String collection| The Microsoft Graph resources that can use the extension property. All values must be in PascalCase. The following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`AdministrativeUnit`</li><li>`Application`</li><li>`Device`</li><li>`Organization`</li></ul>|
 
 

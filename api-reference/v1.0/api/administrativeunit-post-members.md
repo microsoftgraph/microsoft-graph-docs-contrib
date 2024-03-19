@@ -3,7 +3,7 @@ title: "Add a member"
 description: "Use this API to add a member (user, group, or device) to an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
-To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Privileged Role Administrator
 * Global Administrator
@@ -39,7 +39,7 @@ To add a user, group, or device to an administrative unit, the calling principal
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-To create a new group in an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+To create a new group in an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Privileged Role Administrator
 * Global Administrator
@@ -62,7 +62,7 @@ POST /directory/administrativeUnits/{id}/members
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -71,7 +71,7 @@ POST /directory/administrativeUnits/{id}/members
 In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added.
 
 ### Creating a new group
-The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit. 
+The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit.
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
@@ -151,7 +151,7 @@ In the request body, provide the `id` of the [user](../resources/user.md) or [gr
 
 #### Response
 The following example shows the response.
- 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -266,7 +266,7 @@ Content-type: application/json
 	 "preferredDataLocation": "CAN",
 	 "preferredLanguage": null,
 	 "proxyAddresses": [
-	     "SMTP:golfassist@contoso.onmicrosoft.com"
+	     "SMTP:golfassist@contoso.com"
 	 ],
 	 "renewedDateTime": "2018-12-22T02:21:05Z",
 	 "resourceBehaviorOptions": [],

@@ -3,7 +3,7 @@ title: "Remove educationUser from an educationSchool"
 description: "Delete a user from a school."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,7 @@ DELETE /education/schools/{id}/users/{userId}/$ref
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -40,7 +40,7 @@ If successful, this method returns a `204 No Content` response code and an empty
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,7 +3,7 @@ title: "List includedGroups"
 description: "Get the list of groups that are included in a mobile device management policy."
 author: "ravennMSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ GET /policies/mobileDeviceManagementPolicies/{id}/includedGroups
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

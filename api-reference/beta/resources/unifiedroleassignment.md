@@ -4,7 +4,7 @@ description: "A role assignment is the link between a role definition and a prin
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A unifiedRoleAssignment is used to grant access to resources. It represents a role definition assigned to a principal (typically a user) at a particular scope.
-
-Providing either a directoryScopeId or an appScopeId is required.
+Represents a role definition assigned to a principal at a particular scope. Supported principals are users, role-assignable groups, and service principals.
 
 ## Methods
 
@@ -32,16 +30,17 @@ Providing either a directoryScopeId or an appScopeId is required.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|appScopeId|String|Identifier of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by a resource application only. For the entitlement management provider, use this property to specify a catalog, for example `/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997`. Supports `$filter` (`eq`, `in`). For example `/roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'`.|
+|directoryScopeId|String|Identifier of the [directory object](directoryobject.md) representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications, unlike app scopes that are defined and understood by a resource application only. Supports `$filter` (`eq`, `in`).|
 |id|String| The unique identifier for the unifiedRoleAssignment. Key, not nullable, Read-only. |
-|roleDefinitionId|String| Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports `$filter` (`eq` operator only). |
-|principalId|String| Identifier of the principal to which the assignment is granted. Supports `$filter` (`eq` operator only). |
-|directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.|
-|appScopeId|String|Identifier of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.  For the entitlement management provider, use app scopes to specify a catalog, for example `/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997`.|
+|principalId|String| Identifier of the principal to which the assignment is granted. Supported principals are users, role-assignable groups, and service principals. Supports `$filter` (`eq`, `in`). |
+|principalOrganizationId|String| Identifier of the home tenant for the principal to which the assignment is granted. |
+|roleDefinitionId|String| Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports `$filter` (`eq`, `in`). |
 |resourceScope|String| The scope at which the unifiedRoleAssignment applies. This is `/` for service-wide. **DO NOT USE. This property will be deprecated soon.**|
 
 ## Relationships
 
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |appScope|[appScope](appscope.md)|Details of the app specific scope when the assignment scope is app specific. Containment entity. |
 |directoryScope|[directoryObject](directoryobject.md)|The directory object that is the scope of the assignment. Provided so that callers can get the directory object using `$expand` at the same time as getting the role assignment. Read-only. Supports `$expand`. |
@@ -67,13 +66,9 @@ The following is a JSON representation of the resource.
 {
   "id": "String (identifier)",
   "roleDefinitionId": "String",
-  "roleDefinition": {"@odata.type": "microsoft.graph.unifiedRoleDefinition"},
   "principalId": "String",
-  "principal": {"@odata.type": "microsoft.graph.directoryObject"},
   "directoryScopeId": "String",
-  "directoryScope": {"@odata.type": "microsoft.graph.directoryObject"},
   "appScopeId": "String",
-  "appScope": {"@odata.type": "microsoft.graph.appScope"},
   "resourceScope": "String"
 }
 ```

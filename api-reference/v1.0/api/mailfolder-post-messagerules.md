@@ -3,7 +3,7 @@ title: "Create rule"
 description: "Create a messageRule object by specifying a set of conditions and actions. "
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Request body
@@ -55,7 +55,7 @@ If successful, this method returns `201 Created` response code and a **messageRu
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,7 +81,7 @@ Content-type: application/json
           {
              "emailAddress": {
                 "name": "Alex Wilbur",
-                "address": "AlexW@contoso.onmicrosoft.com"
+                "address": "AlexW@contoso.com"
               }
            }
         ],
@@ -126,7 +126,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -154,7 +154,7 @@ Content-type: application/json
         {
           "emailAddress":{
             "name":"Alex Wilbur",
-            "address":"AlexW@contoso.onmicrosoft.com"
+            "address":"AlexW@contoso.com"
           }
         }
       ]

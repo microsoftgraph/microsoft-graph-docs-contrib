@@ -3,7 +3,7 @@ title: "multiTenantOrganizationPartnerConfigurationTemplate: resetToDefaultSetti
 description: "Reset the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization to the default values."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerC
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -4,7 +4,7 @@ description: "Get a team that has been shared with a specified channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Get sharedWithChannelTeamInfo
@@ -38,7 +38,7 @@ This method does not support the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [sharedWithCha
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

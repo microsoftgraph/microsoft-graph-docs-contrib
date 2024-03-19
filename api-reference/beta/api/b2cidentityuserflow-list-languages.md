@@ -3,7 +3,7 @@ title: "List languages"
 description: "Retrieve a list of languages supported for customization within a B2C user flow."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ This method supports the `$filter` query parameter to show only the enabled lang
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

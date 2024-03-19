@@ -3,7 +3,7 @@ title: "Create calendar"
 description: "Create a new calendar for a user."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /users/{id | userPrincipalName}/calendars
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -47,7 +47,7 @@ If successful, this method returns `201 Created` response code and a [calendar](
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -133,7 +133,7 @@ Content-type: application/json
     "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
-        "address":"samanthab@adatum.onmicrosoft.com"
+        "address":"samanthab@contoso.com"
     }
 }
 ```

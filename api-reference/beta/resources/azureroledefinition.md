@@ -27,10 +27,10 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignableScopes|String collection|Scopes at which the Azure role can be assigned. Supports `$filter` and (`eq`).|
-|azureRoleDefinitionType|azureRoleDefinitionType|Type of Azure role. The possible values are: `system`, `custom`, `unknownFutureValue`. Supports `$filter` and (`eq`).|
-|displayName|String|Name of the Azure role. Supports `$filter` and (`eq`,`contains`).|
-|externalId|String|Identifier of an Azure role defined by Microsoft Azure. Alternate key. Supports `$filter` and `eq`.|
+|assignableScopes|String collection|Scopes at which the Azure role can be assigned. For more information about common patterns, see [Understand Azure role definitions: AssignableScopes](/azure/role-based-access-control/role-definitions#assignablescopes). Supports `$filter` (`eq`).|
+|azureRoleDefinitionType|azureRoleDefinitionType|Type of Azure role. The possible values are: `system`, `custom`, `unknownFutureValue`. Supports `$filter` (`eq`).|
+|displayName|String|Name of the Azure role. Supports `$filter` (`eq`, `contains`).|
+|externalId|String|Identifier of an Azure role defined by Microsoft Azure. Alternate key. Supports `$filter` (`eq`).|
 |id|String|The identifier of the Azure role in Permissions Management. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
