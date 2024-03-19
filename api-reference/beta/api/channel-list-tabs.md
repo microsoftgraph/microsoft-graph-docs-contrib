@@ -22,6 +22,8 @@ Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel]
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they aren't a member of.
+
 <!-- { "blockType": "permissions", "name": "channel_list_tabs" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-tabs-permissions.md)]
 
