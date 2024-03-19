@@ -54,7 +54,7 @@ In the request body, provide a JSON object for the `Query` parameter, and option
 | Parameter    | Type    | Description                                                                                                                      |
 |:-------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------|
 | Query        | String  | Required. The hunting query in Kusto Query Language (KQL). For more information about KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |
-| Timespan     | String  | Optional. The time span for the query in Kusto Query Language (KQL). If provided, the query runs within this timespan. If not provided, the default time span of 30 days is used, as specified in ISO 8601 format. |
+| Timespan     | String  | Optional. The time span for the query in Kusto Query Language (KQL). If provided, the query runs within this timespan. If not provided, the default timespan of 30 days is used, as specified in ISO 8601 format. |
 
 ### Timespan format examples
 
@@ -62,7 +62,7 @@ In the request body, provide a JSON object for the `Query` parameter, and option
 - **Duration/EndDate**: `"P30D/2024-02-15T08:00:00Z"` - A period before the end date.
 - **Start/Duration**: `"2024-02-01T08:00:00Z/P30D"` - Start date and duration.
 - **ISO8601 Duration**: `"P30D"` - Duration from now backwards.
-- **Single Date/Time**: `"2024-02-01T08:00:00Z"` - Start time with end time defaulted to current time.
+- **Single Date/Time**: `"2024-02-01T08:00:00Z"` - Start time with end time as the current time by default.
 
 ## Response
 
