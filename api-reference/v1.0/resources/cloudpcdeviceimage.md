@@ -19,11 +19,11 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deviceImages](../api/virtualendpoint-list-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|List the properties and relationships of [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects.|
-|[Get cloudPcDeviceImage](../api/cloudpcdeviceimage-get.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Read the properties and relationships of a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
+|[List deviceImages](../api/virtualendpoint-list-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|List the properties and relationships of [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (operating system images) uploaded to Cloud PC.|
+|[Get cloudPcDeviceImage](../api/cloudpcdeviceimage-get.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Read the properties and relationships of a specific [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[Create cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[Delete cloudPcDeviceImage](../api/cloudpcdeviceimage-delete.md)|None|Delete a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
-|[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects.|
+|[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects that can be uploaded and used on Cloud PCs.|
 
 ## Properties
 
@@ -45,7 +45,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description|
 |:---|:---|
-|internalServerError|Indicates that an internal server error occurred during the processing of the image.|
+|internalServerError|Indicates that an internal server error occurred when processing the image.|
 |sourceImageNotFound|Indicates that the source image is inaccessible or not found.|
 |osVersionNotSupported|Indicates that the operating system version isn't supported.|
 |sourceImageInvalid|Indicates that the source image is invalid for provisioning a Windows virtual machine (VM).|
@@ -71,7 +71,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|
 |pending|Indicates that the image upload is in progress.|
 |ready|Indicates that the image is ready for use on Cloud PCs.|
-|failed|Indicates that the image couldn’t be uploaded. |
+|failed|Indicates that the image failed to upload. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
