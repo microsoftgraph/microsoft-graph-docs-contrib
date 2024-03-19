@@ -16,8 +16,8 @@ The application calls the API without specifying any parameters.
 The service begins enumerating sites and returns pages of changes to these sites, accompanied by either an **@odata.nextLink** or an **@odata.deltaLink**.
 Your application should continue making calls using the **@odata.nextLink** until there's an **@odata.deltaLink**  in the response.
 
-Once you receive all the changes, you can apply them to your local state.
-To monitor future changes, call the `delta` API using the **@odata.deltaLink** in the previous response.
+After you receive all the changes, you can apply them to your local state.
+To monitor future changes, call the **delta** API by using the **@odata.deltaLink** in the previous response.
 
 Deleted sites are returned with the @removed annotation with the reason for removal. Any resources marked as deleted should be removed from your local state.
 
