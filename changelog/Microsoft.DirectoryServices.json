@@ -184,7 +184,7 @@
   {
     "ChangeList": [
       {
-        "Id": "92b81fc6-e655-4cba-abc4-24def81fa8d0",
+        "Id": "600172aa-3469-46ad-ac4a-5f6fb9237036",
         "ApiChange": "Method",
         "ChangedApiName": "PATCH",
         "ChangeType": "Addition",
@@ -192,7 +192,7 @@
         "Target": "group"
       },
       {
-        "Id": "c0d56d21-5f89-4543-a8b9-6b9ae2a3000e",
+        "Id": "600172aa-3469-46ad-ac4a-5f6fb9237036",
         "ApiChange": "Property",
         "ChangedApiName": "uniqueName",
         "ChangeType": "Addition",
@@ -210,7 +210,7 @@
   {
     "ChangeList": [
       {
-        "Id": "fe521c87-3059-48df-8f92-b56575f04c5f",
+        "Id": "150111d9-e06e-492c-89b9-befbff1b5032",
         "ApiChange": "Method",
         "ChangedApiName": "PATCH",
         "ChangeType": "Addition",
@@ -218,15 +218,15 @@
         "Target": "application"
       },
       {
-        "Id": "925edcec-b6df-4f78-a952-27bab1c4b630",
+        "Id": "150111d9-e06e-492c-89b9-befbff1b5032",
         "ApiChange": "Method",
         "ChangedApiName": "PATCH",
         "ChangeType": "Addition",
-        "Description": "Added the [upsert](https://learn.microsoft.com/en-us/graph/api/federatedIdentityCredential-upsert?view=graph-rest-beta) capability to the [application](https://learn.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-beta) entity.",
+        "Description": "Added the [upsert](https://learn.microsoft.com/en-us/graph/api/federatedIdentityCredential-upsert?view=graph-rest-beta) capability to the [federatedIdentityCredential](https://learn.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-beta) entity.",
         "Target": "application"
       },
       {
-        "Id": "a266dbe5-685d-451c-90ae-edabbc66c967",
+        "Id": "150111d9-e06e-492c-89b9-befbff1b5032",
         "ApiChange": "Method",
         "ChangedApiName": "PATCH",
         "ChangeType": "Addition",
@@ -234,7 +234,7 @@
         "Target": "servicePrincipal"
       },
       {
-        "Id": "372bc515-5a4e-4be3-a3eb-5b2ba6dc96eb",
+        "Id": "150111d9-e06e-492c-89b9-befbff1b5032",
         "ApiChange": "Property",
         "ChangedApiName": "uniqueName",
         "ChangeType": "Addition",
