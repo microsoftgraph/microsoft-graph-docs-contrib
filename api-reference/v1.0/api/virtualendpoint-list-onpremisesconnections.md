@@ -67,8 +67,9 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/onPremises
 ---
 
 ### Response
+If successful, this method returns a `200 OK` response code and a collection of [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) objects in the response body.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
