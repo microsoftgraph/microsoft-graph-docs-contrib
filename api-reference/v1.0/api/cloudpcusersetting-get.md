@@ -3,7 +3,7 @@ title: "Get cloudPcUserSetting"
 description: "Read the properties and relationships of a cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
