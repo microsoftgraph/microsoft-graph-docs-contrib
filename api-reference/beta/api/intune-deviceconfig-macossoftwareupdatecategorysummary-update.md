@@ -3,7 +3,7 @@ title: "Update macOSSoftwareUpdateCategorySummary"
 description: "Update the properties of a macOSSoftwareUpdateCategorySummary object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -123,7 +123,7 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ### Request
 
-Here is an example of the request to send a change notification when the user receives a new mail.
+The following example shows a request to send a change notification when the user receives a new mail.
 
 # [HTTP](#tab/http)
 <!-- {

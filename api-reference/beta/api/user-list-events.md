@@ -137,7 +137,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ---
 
 ##### Response 1
-Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
+The following example shows the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
   "name": "get_events",
@@ -268,7 +268,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 ##### Response 2
-Here is an example of the response. The **body** property is returned in text format.
+The following example shows the response. The **body** property is returned in text format.
 
 <!-- {
   "blockType": "response",

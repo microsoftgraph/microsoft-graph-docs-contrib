@@ -47,7 +47,7 @@ If successful, this action returns a `202 Accepted` response code.
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +94,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
