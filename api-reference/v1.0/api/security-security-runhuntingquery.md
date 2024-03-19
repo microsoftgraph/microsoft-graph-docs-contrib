@@ -49,14 +49,14 @@ POST /security/runHuntingQuery
 
 ## Request body
 
-In the request body, provide a JSON object for the parameter, `Query`, and include an optional `Timespan` parameter.
+In the request body, provide a JSON object for the `Query` parameter, and optionally include a `Timespan` parameter.
 
 | Parameter    | Type    | Description                                                                                                                      |
 |:-------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------|
-| Query        | String  | The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |
-| Timespan     | String (optional) | The time span for the query in Kusto Query Language (KQL). If provided, the query will be executed within this time span. If not provided, the default time span of 30 days will be used, specified in ISO 8601 format. |
+| Query        | String  | Required. The hunting query in Kusto Query Language (KQL). For more information about KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |
+| Timespan     | String  | Optional. The time span for the query in Kusto Query Language (KQL). If provided, the query runs within this timespan. If not provided, the default time span of 30 days is used, as specified in ISO 8601 format. |
 
-### Examples for Timespan
+### Timespan format examples
 
 - **Date/Date**: `"2024-02-01T08:00:00Z/2024-02-15T08:00:00Z"` - Start and end dates.
 - **Duration/EndDate**: `"P30D/2024-02-15T08:00:00Z"` - A period before the end date.
@@ -72,7 +72,7 @@ If successful, this action returns a `200 OK` response code and a [huntingQueryR
 
 ### Request
 
-This example specifies a KQL query which does the following:
+The following example specifies a KQL query that does the following:
 - Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema.
 - Filters on the condition that the event is initiated by the powershell.exe process.
 - Specifies the output of 3 columns from the same table for each row: `Timestamp`, `FileName`, `InitiatingProcessFileName`.
