@@ -58,7 +58,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/endGracePeriod
+POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs/4b18de4b-ab05-4059-8c61-0323a7df4ced/endGracePeriod
 ```
 
 ---
