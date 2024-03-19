@@ -269,8 +269,11 @@ Namespace: microsoft.graph.networkaccess
 |brazilSouth|
 |japanEast|
 |japanWest|
-|unknownFutureValue|
 |koreaSouth|
+|italyNorth|
+|franceSouth|
+|israelCentral|
+|unknownFutureValue|
 
 
 ### status values 
