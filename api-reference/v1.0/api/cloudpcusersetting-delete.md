@@ -3,7 +3,7 @@ title: "Delete cloudPcUserSetting"
 description: "Delete a cloudPcUserSetting object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
