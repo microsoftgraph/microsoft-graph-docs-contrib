@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |expirationDate|Date|The date when the image became unavailable. Read-only.|
 |id|String|The unique identifier (ID) of the image resource on the Cloud PC. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The data and time when the image was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|operatingSystem|String|The operating system of the image. For example, `Windows 10 Enterprise`. Read-only.|
+|operatingSystem|String|The operating system (OS) of the image. For example, `Windows 10 Enterprise`. Read-only.|
 |osBuildNumber|String|The OS build version of the image. For example, `1909`. Read-only.|
 |osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`. The default value is `unknown`. Read-only.|
 |sourceImageResourceId|String|The unique identifier (ID) of the source image resource on Azure. The required ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-only.|
