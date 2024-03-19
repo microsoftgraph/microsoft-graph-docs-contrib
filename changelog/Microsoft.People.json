@@ -569,7 +569,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "PeopleSettings.Read.All",
           "ChangeType": "Added",
-          "Description": "Added the `PeopleSettings.Read.All` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-iteminsights.md?view=graph-rest-beta) operation of the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-beta) resource.",
+          "Description": "Added the `PeopleSettings.Read.All` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta) operation of the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-beta) resource.",
           "Target": "insightsSettings"
         },
         {
