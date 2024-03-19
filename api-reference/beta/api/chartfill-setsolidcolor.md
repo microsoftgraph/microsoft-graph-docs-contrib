@@ -52,12 +52,9 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
 
 ## Example
-
-The following example shows how to call this API.
-
-### Request
-
-The following example shows the request.
+Here's an example of how to call this API.
+##### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,9 +100,8 @@ Content-type: application/json
 
 ---
 
-### Response
-
-The following example shows the response.
+##### Response
+The following example shows the response. 
 <!-- {
   "blockType": "response"
 } -->

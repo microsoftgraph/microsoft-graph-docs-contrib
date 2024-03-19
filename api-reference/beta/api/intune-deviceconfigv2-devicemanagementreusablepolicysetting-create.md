@@ -3,7 +3,7 @@ title: "Create deviceManagementReusablePolicySetting"
 description: "Create a new deviceManagementReusablePolicySetting object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

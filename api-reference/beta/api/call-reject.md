@@ -3,7 +3,7 @@ title: "call: reject"
 description: "Enable a bot to reject an incoming call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Enable a bot to reject an incoming call. The incoming call request can be an inv
 
 The bot is expected to answer or reject the call before the call times out. The current timeout value is 15 seconds.
 
-This API doesn't end existing calls that already answered. Use [delete call](../api/call-delete.md) to end a call.
+This API doesn't end existing calls that have already been answered. Use [delete call](../api/call-delete.md) to end a call.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -46,16 +46,18 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|reason|String|The rejection reason. The possible values are `None`, `Busy`, and `Forbidden`.|
-|callbackUri|String|It allows bots to provide a specific callback URI for the current call to receive later notifications. If this property isn't set, the bot's global callback URI is used instead. It must be `https`.|
+|reason|String|The rejection reason. Possible values are `None`, `Busy`, and `Forbidden`. |
+|callbackUri|String|Allows bots to provide a specific callback URI for the current call to receive later notifications. If this property isn't set, the bot's global callback URI is used instead. The URI must be `https`.|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
+
 The following examples show how to call this API.
 
 ### Example 1: Reject an incoming call with 'Busy' reason
+
 #### Request
 
 The following examples shows a request.

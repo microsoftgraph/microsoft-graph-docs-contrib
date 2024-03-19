@@ -3,7 +3,7 @@ title: "windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary res
 description: "Contains properties for the deployment summary of a WindowsDefenderApplicationControl supplemental policy."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

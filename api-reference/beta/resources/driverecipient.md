@@ -4,7 +4,7 @@ description: The driveRecipient resource represents a person, group, or other re
 ms.date: 09/10/2017
 title: DriveRecipient
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

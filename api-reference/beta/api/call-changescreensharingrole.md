@@ -3,7 +3,7 @@ title: "call: changeScreenSharingRole"
 description: "Allow applications to share screen content with the participants of a group call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -51,8 +51,7 @@ If successful, this method returns a `202 Accepted` response code, and all parti
 
 ## Example
 
-### Request
-
+##### Request
 The following example shows a request.
 
 
@@ -105,9 +104,8 @@ Content-Length: 24
 
 ---
 
-### Response
-
-The following example shows the response.
+##### Response
+The following example shows the response. 
 
 <!-- {
   "blockType": "response"
@@ -164,7 +162,7 @@ Content-Type: application/json
     }
   ]
 }
-```
+``` 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -23,11 +23,7 @@ This API doesn't support using another user's credentials to get a [cloudClipboa
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "cloudclipboardroot-list-items-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "cloudclipboardroot_list_items" } -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudclipboardroot-list-items-permissions.md)]
 
 ## HTTP request
@@ -69,7 +65,7 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 |:---|:---|:---|
 |400|Bad request|The request is malformed or incorrect, such as invalid page size or invalid `$skipToken` value.|
 |403|Forbidden|The caller can't perform the action. It indicates that the user has not consented to share [cloudClipboardItem](../resources/cloudclipboarditem.md).|
-|409|Conflict|The current state conflicts with what the request expects. It usually indicates that the user isn't eligible for the cloud clipboard feature because the user doesn't have at least two strongly authenticated devices.|
+|409|Conflict|The current state conflicts with what the request expects. It usually indicates that the user isn't eligible for the cloud clipboard feature because they don't have at least two devices authenticated through multi-factor authentication during the sign-in process.|
 |429|Too many requests|The request rate limit has been exceeded. Wait for the time specified in the `Retry-After` header and try again.| 
 
 ## Examples

@@ -50,21 +50,16 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code and base-64 image string in the response body.
 
 ## Example
-
-The following example shows how to call this API.
-
-### Request
-
+Here is an example of how to call this API.
+##### Request
 The following example shows a request.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/Image(width=0,height=0,fittingMode='fit')
 ```
 
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability. 
+##### Response
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

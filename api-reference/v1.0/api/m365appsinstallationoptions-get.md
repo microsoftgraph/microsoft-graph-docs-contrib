@@ -3,7 +3,7 @@ title: "Get m365AppsInstallationOptions"
 description: "Read the properties of an m365AppsInstallationOptions object."
 author: "yan-git"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -13,13 +13,10 @@ Namespace: microsoft.graph
 Read the properties and relationships of an [m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|OrgSettings-Microsoft365Install.Read.All, OrgSettings-Microsoft365Install.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|OrgSettings-Microsoft365Install.Read.All, OrgSettings-Microsoft365Install.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "m365appsinstallationoptions_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/m365appsinstallationoptions-get-permissions.md)]
 
 When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 + Global administrator

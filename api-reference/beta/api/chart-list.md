@@ -44,9 +44,8 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [workbookChart](../resources/workbookchart.md) objects in the response body.
-## Examples
-
-### Request
+## Example
+##### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -88,10 +87,8 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 
 ---
 
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability. 
+##### Response
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

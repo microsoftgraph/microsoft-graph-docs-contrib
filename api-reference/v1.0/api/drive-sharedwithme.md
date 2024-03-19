@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 description: "Get a list of driveItem objects shared with the owner of a drive."
 title: "drive: sharedWithMe"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ The following example gets a collection of [driveItem](../resources/driveitem.md
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -174,7 +174,7 @@ The following example shows how to access metadata about the shared **driveItem*
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -72,7 +72,7 @@ If successful, this action returns a `202 Accepted` response code with a **Locat
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -140,7 +140,7 @@ Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAler
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

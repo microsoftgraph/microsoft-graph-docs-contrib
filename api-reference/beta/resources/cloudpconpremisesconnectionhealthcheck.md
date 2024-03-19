@@ -1,6 +1,6 @@
 ---
 title: "cloudPcOnPremisesConnectionHealthCheck resource type"
-description: "The result of a Cloud PC Azure network connection health check."
+description: "Represents the result of a Cloud PC Azure network connection health check."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The result of a Cloud PC Azure network connection health check.
+Represents the result of a Cloud PC Azure network connection health check.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
@@ -27,7 +27,7 @@ The result of a Cloud PC Azure network connection health check.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|additionalDetails|String|More details about the health check or the recommended action.|
+|additionalDetail|String|More details about the health check or the recommended action. Read-only.|
 |correlationId|String|The unique identifier of the health check item-related activities. This identifier can be useful in troubleshooting.|
 |displayName|String|The display name for this health check item.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `warning`, `informational`, `unknownFutureValue`. Read-only.|
@@ -37,6 +37,7 @@ The result of a Cloud PC Azure network connection health check.
 |recommendedAction|String|The recommended action to fix the corresponding error.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Read-only.|
+|additionalDetails (deprecated)|String|More details about the health check or the recommended action. Read-only. The **additionalDetails** property is deprecated and stopped returning data on January 31, 2024. Goind forward, use the **additionalDetail** property. |
 
 ### cloudPcOnPremisesConnectionHealthCheckErrorType values
 
@@ -117,7 +118,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck"
@@ -127,13 +128,14 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+  "additionalDetail": "String",
+  "additionalDetails": "String",
+  "correlationId": "String",
   "displayName": "String",
-  "status": "String",
-  "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "errorType": "String",
   "recommendedAction": "String",
-  "additionalDetails": "String",
-  "correlationId": "String"
+  "startDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```

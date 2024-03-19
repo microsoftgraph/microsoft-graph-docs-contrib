@@ -53,9 +53,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `200 OK` response code and updated [workbookChartAxis](../resources/workbookchartaxis.md) object in the response body.
 
 ## Example
-
-### Request
-
+##### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -107,10 +105,8 @@ Content-type: application/json
 
 ---
 
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+##### Response
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

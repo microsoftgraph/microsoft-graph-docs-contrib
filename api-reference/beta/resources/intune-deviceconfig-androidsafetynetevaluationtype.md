@@ -3,7 +3,7 @@ title: "androidSafetyNetEvaluationType enum type"
 description: "An enum representing the Android Play Integrity API evaluation types."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create aospDeviceOwnerTrustedRootCertificate"
 description: "Create a new aospDeviceOwnerTrustedRootCertificate object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

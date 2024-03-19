@@ -3,7 +3,7 @@ title: "Delete windowsQualityUpdateCatalogItem"
 description: "Deletes a windowsQualityUpdateCatalogItem."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
