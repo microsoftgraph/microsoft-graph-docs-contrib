@@ -3,7 +3,7 @@ title: "List provisioningPolicies"
 description: "List the properties and relationships of the cloudPcProvisioningPolicy objects."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
