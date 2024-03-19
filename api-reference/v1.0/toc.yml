@@ -1456,12 +1456,12 @@ items:
               - name: Cloud PC device image
                 href: resources/cloudpcdeviceimage.md
                 items:
-                  - name: Get
-                    href: api/cloudpcdeviceimage-get.md
                   - name: List
                     href: api/virtualendpoint-list-deviceimages.md
                   - name: Create
                     href: api/virtualendpoint-post-deviceimages.md
+                  - name: Get
+                    href: api/cloudpcdeviceimage-get.md
                   - name: Delete
                     href: api/cloudpcdeviceimage-delete.md
                   - name: Get source images
@@ -1469,10 +1469,10 @@ items:
               - name: Cloud PC gallery image
                 href: resources/cloudpcgalleryimage.md
                 items:
-                  - name: Get
-                    href: api/cloudpcgalleryimage-get.md
                   - name: List
                     href: api/virtualendpoint-list-galleryimages.md
+                  - name: Get
+                    href: api/cloudpcgalleryimage-get.md
           - name: Cloud printing
             items:
               - name: Print
