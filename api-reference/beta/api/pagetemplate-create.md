@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /sites/{site-id}/pagetemplates
+POST /sites/{site-id}/pageTemplates
 ```
 ## Request headers
 
@@ -57,11 +57,11 @@ The following example shows how to create a new page template.
 
 ### Request
 
-<!-- { "blockType": "request", "name": "create-pagetemplate", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "create-pageTemplate", "scopes": "sites.readwrite.all" } -->
 
 
 ```http
-POST /sites/{site-id}/pagetemplates
+POST /sites/{site-id}/pageTemplates
 Content-Type: application/json
 
 {
@@ -222,7 +222,7 @@ Content-type: application/json
 
 <!--
 {
-  "type": "#pagetemplate.annotation",
+  "type": "#pageTemplate.annotation",
   "description": "Create a page template in the templates folder in a site.",
   "keywords": "",
   "section": "documentation",

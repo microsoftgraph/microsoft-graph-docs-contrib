@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /sites/{site-id}/pagetemplates/{page-template-id}
+DELETE /sites/{site-id}/pageTemplates/{page-template-id}
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ If successful, this method returns a `204 No Content`. It doesn't return anythin
 The following example shows a request.
 
 ```http
-DELETE /sites/{site-id}/pagetemplates/{page-template-id}
+DELETE /sites/{site-id}/pageTemplates/{page-template-id}
 ```
 ### Response
 
@@ -72,7 +72,7 @@ HTTP/1.1 204 No Content
 
 <!--
 {
-  "type": "#pagetemplate.annotation",
+  "type": "#pageTemplate.annotation",
   "description": "Delete a page template in the templates folder in a site.",
   "keywords": "",
   "section": "documentation",

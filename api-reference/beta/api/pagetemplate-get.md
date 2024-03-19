@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites/{site-id}/pagetemplates/{page-template-id}
+GET /sites/{site-id}/pageTemplates/{page-template-id}
 ```
 
 ## Optional query parameters
@@ -64,7 +64,7 @@ If successful, this method returns a `200` and a [pageTemplate](../resources/pag
 ### Example 1: Get a page template in the templates folder of a site
 #### Request
 
-<!-- { "blockType": "request", "name": "get-pagetemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "get-pageTemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/pageTemplates/{page-template-id}
@@ -114,7 +114,7 @@ Content-type: application/json
 
 <!--
 {
-  "type": "#pagetemplate.annotation",
+  "type": "#pageTemplate.annotation",
   "description": "Get a page template in a site",
   "keywords": "",
   "section": "documentation",

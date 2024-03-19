@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites/{site-id}/pagetemplates
+GET /sites/{site-id}/pageTemplates
 ```
 
 ## Optional query parameters
@@ -59,14 +59,14 @@ If successful, this method returns a `200` and a list of [pageTemplate](../resou
 
 <!--{
 	"blockType": "request",
-	"name": "get-pagetemplates",
+	"name": "get-pageTemplates",
 	"scopes": "sites.read.all",
 	"tags": "service.sharepoint"
 }
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pagetemplates
+GET /sites/{site-id}/pageTemplates
 ```
 
 ### Response
@@ -186,7 +186,7 @@ Content-type: application/json
 
 <!--
 {
-  "type": "#pagetemplate.annotation",
+  "type": "#pageTemplate.annotation",
   "description": "Enumerate the list of page templates in a site",
   "keywords": "",
   "section": "documentation",
