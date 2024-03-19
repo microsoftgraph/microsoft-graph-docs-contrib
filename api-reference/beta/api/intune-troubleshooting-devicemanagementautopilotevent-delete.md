@@ -3,7 +3,7 @@ title: "Delete deviceManagementAutopilotEvent"
 description: "Deletes a deviceManagementAutopilotEvent."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 ### Example 1: Get the members of a directory role using role id
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,7 +3,7 @@ title: "revokeAllLicenses action"
 description: "Revoke all assigned iOS VPP licenses for given app."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

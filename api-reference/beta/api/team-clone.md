@@ -79,7 +79,7 @@ When the operation is complete, the operation resource tells you the id of the c
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -135,7 +135,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

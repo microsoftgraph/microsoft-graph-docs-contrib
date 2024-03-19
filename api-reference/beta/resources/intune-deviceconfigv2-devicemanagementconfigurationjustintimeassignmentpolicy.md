@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationJustInTimeAssignmentPolicy resource type"
 description: "The DeviceManagementConfigurationJustInTimeAssignmentPolicy entity is used to create a just-in-time assignment of specific DeviceManagementConfigurationPolicy to an AAD group."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 ---
 
 #### Response
-The following is an example of the request. `@odata.nextLink` in the response can be used to get the next page of messages.
+The following example shows a request. `@odata.nextLink` in the response can be used to get the next page of messages.
 
 <!-- {
   "blockType": "response",

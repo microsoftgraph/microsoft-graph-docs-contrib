@@ -3,7 +3,7 @@ title: "vppLicensingType resource type"
 description: "Contains properties for iOS Volume-Purchased Program (Vpp) Licensing Type."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

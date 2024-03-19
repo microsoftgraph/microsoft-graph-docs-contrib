@@ -3,7 +3,7 @@ title: "Delete deviceManagementTemplateInsightsDefinition"
 description: "Deletes a deviceManagementTemplateInsightsDefinition."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

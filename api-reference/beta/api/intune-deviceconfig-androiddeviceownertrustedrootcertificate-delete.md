@@ -3,7 +3,7 @@ title: "Delete androidDeviceOwnerTrustedRootCertificate"
 description: "Deletes a androidDeviceOwnerTrustedRootCertificate."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

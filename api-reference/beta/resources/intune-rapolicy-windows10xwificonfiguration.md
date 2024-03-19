@@ -3,7 +3,7 @@ title: "windows10XWifiConfiguration resource type"
 description: "Windows X WifiXml configuration profile"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

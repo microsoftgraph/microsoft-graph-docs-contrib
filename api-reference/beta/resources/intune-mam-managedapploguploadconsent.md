@@ -3,7 +3,7 @@ title: "managedAppLogUploadConsent enum type"
 description: "Represents the current consent status of the associated `managedAppLogCollectionRequest`."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete groupPolicyPresentationLongDecimalTextBox"
 description: "Deletes a groupPolicyPresentationLongDecimalTextBox."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

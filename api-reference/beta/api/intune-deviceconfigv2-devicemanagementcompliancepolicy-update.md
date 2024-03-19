@@ -3,7 +3,7 @@ title: "Update deviceManagementCompliancePolicy"
 description: "Update the properties of a deviceManagementCompliancePolicy object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

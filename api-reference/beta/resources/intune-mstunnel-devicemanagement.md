@@ -3,7 +3,7 @@ title: "deviceManagement resource type"
 description: "Singleton that acts as container for a collection of Resource Access entities."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
