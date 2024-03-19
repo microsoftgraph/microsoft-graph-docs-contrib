@@ -3,7 +3,7 @@ title: "cloudPcManagementGroupAssignmentTarget resource type"
 description: "Represents an assignment target group."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
