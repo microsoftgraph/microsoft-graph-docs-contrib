@@ -3,7 +3,7 @@ title: "List androidWorkProfileGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidWorkProfileGeneralDeviceConfiguration objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

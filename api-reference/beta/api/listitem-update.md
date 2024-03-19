@@ -4,7 +4,7 @@ description: "Update the properties on a listItem."
 ms.date: 09/11/2017
 title: Update a record in a SharePoint list
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Update an item in a list

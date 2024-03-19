@@ -37,20 +37,23 @@ Represents a defined collection of Azure resource information that can be used t
 |adDomainPassword|String|The password associated with **adDomainUsername**.|
 |adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: `admin@contoso.com`. Optional.|
 |alternateResourceUrl|String|The interface URL of the partner service's resource that links to this Azure network connection. Returned only on `$select`.|
+|connectionType|[cloudPcOnPremisesConnectionType](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectiontype-values)|Specifies the method by which a provisioned Cloud PC is joined to Microsoft Entra. The `azureADJoin` option indicates the absence of an on-premises Active Directory (AD) in the current tenant that results in the Cloud PC device only joining to Microsoft Entra. The `hybridAzureADJoin` option indicates the presence of an on-premises AD in the current tenant and that the Cloud PC joins both the on-premises AD and Microsoft Entra. The selected option also determines the types of users who can be assigned and can sign into a Cloud PC. The `azureADJoin` option allows both cloud-only and hybrid users to be assigned and sign in, whereas `hybridAzureADJoin` is restricted to hybrid users only. The default value is `hybridAzureADJoin`. The possible values are: `hybridAzureADJoin`, `azureADJoin`, `unknownFutureValue`.|
 |displayName|String|The display name for the Azure network connection.|
 |healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|The status of the most recent health check done on the Azure network connection. For example, if the status is `passed`, the Azure network connection passed all checks run by the service. Possible values are: `pending`, `running`, `passed`, `failed`,  `warning`, `informational`, `unknownFutureValue`. Read-only.|
 |healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|The details of the connection's health checks and the corresponding results. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
+|healthCheckStatusDetail|[cloudPcOnPremisesConnectionStatusDetail](../resources/cloudpconpremisesconnectionstatusdetail.md)|Indicates the results of health checks performed on the on-premises connection. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
 |id|String|Unique identifier for the Azure network connection. Read-only.|
 |inUse|Boolean|When `true`, the Azure network connection is in use. When `false`, the connection isn't in use. You can't delete a connection that’s in use. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
 |managedBy|[cloudPcManagementService](#cloudpcmanagementservice-values)|Specifies which services manage the Azure network connection. Possible values are: `windows365`, `devBox`, `unknownFutureValue`, `rpaBox`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rpaBox`. Read-only.|
 |organizationalUnit|String|The organizational unit (OU) in which the computer account is created. If left null, the OU that’s configured as the default (a well-known computer object container) in your Active Directory domain (OU) is used. Optional.|
-|virtualNetworkLocation|String|Indicates resource location of the virtual target network. Read-only, computed value.|
 |resourceGroupId|String|The ID of the target resource group. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}`.|
 |subnetId|String|The ID of the target subnet. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}`.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |subscriptionName|String|The name of the target Azure subscription. Read-only.|
-|type|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|Specifies how the provisioned Cloud PC is joined to Microsoft Entra ID. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |virtualNetworkId|String|The ID of the target virtual network. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}`.|
+|virtualNetworkLocation|String|Indicates resource location of the virtual target network. Read-only, computed value.|
+|healthCheckStatusDetails (deprecated)|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|Indicates the health checks for the connection and their respective results. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only. The **healthCheckStatusDetails** property is deprecated and stopped returning data on January 31, 2024. Goind forward, use the **healthCheckStatusDetail** property.|
+|type (deprecated)|[cloudPcOnPremisesConnectionType](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectiontype-values)|Specifies the method by which a provisioned Cloud PC is joined to Microsoft Entra. The `azureADJoin` option indicates the absence of an on-premises Active Directory (AD) in the current tenant that results in the Cloud PC device only joining to Microsoft Entra. The `hybridAzureADJoin` option indicates the presence of an on-premises AD in the current tenant and that the Cloud PC joins both the on-premises AD and Microsoft Entra. The selected option also determines the types of users who can be assigned and can sign into a Cloud PC. The `azureADJoin` option allows both cloud-only and hybrid users to be assigned and sign in, whereas `hybridAzureADJoin` is restricted to hybrid users only. The default value is `hybridAzureADJoin`. The possible values are: `hybridAzureADJoin`, `azureADJoin`, `unknownFutureValue`. The **type** property is deprecated and stopped returning data on January 31, 2024. Goind forward, use the **connectionType** property.|
 
 ### cloudPcManagementService values
 
@@ -87,14 +90,14 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection",
   "baseType": "microsoft.graph.entity",
   "openType": false,
-  "optionalProperties": ["healthCheckStatusDetails"]
+  "optionalProperties": ["healthCheckStatusDetail"]
 }
 -->
 
@@ -105,26 +108,11 @@ Here's a JSON representation of the resource.
   "adDomainPassword": "String",
   "adDomainUsername": "String",
   "alternateResourceUrl": "String",
+  "connectionType": "String",
   "displayName": "String",
   "healthCheckStatus": "String",
-  "healthCheckStatusDetails": {
-    "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
-    "endDateTime": "String (timestamp)",
-    "healthChecks": [
-      { 
-        "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
-        "additionalDetails": "String",
-        "displayName": "String",
-        "endDateTime": "String (timestamp)",
-        "errorType": "String",
-        "recommendedAction": "String",
-        "correlationId": "String",
-        "startDateTime": "String (timestamp)",
-        "status": "String"
-      }
-    ],
-    "startDateTime": "String (timestamp)"
-  },
+  "healthCheckStatusDetail": { "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail" },
+  "healthCheckStatusDetails": { "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails" },
   "id": "String (identifier)",
   "inUse": "Boolean",
   "managedBy": "String",
@@ -134,6 +122,7 @@ Here's a JSON representation of the resource.
   "subscriptionId": "String",
   "subscriptionName": "String",
   "type": "String",
-  "virtualNetworkId": "String"
+  "virtualNetworkId": "String",
+  "virtualNetworkLocation": "String"
 }
 ```

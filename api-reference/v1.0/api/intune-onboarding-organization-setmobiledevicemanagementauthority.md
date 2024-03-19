@@ -3,7 +3,7 @@ title: "setMobileDeviceManagementAuthority action"
 description: "Set mobile device management authority"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

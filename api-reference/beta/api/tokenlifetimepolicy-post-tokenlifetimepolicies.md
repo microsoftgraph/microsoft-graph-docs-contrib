@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a new [toke
 
 ### Request
 
-The following is an example of a request that creates a token lifetime policy that sets the access and ID token lifetime to eight hours.
+The following example shows a request that creates a token lifetime policy that sets the access and ID token lifetime to eight hours.
 
 # [HTTP](#tab/http)
 <!-- {

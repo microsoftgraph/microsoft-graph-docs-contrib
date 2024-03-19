@@ -3,7 +3,7 @@ title: "remindBeforeTimeInMinutesType enum type"
 description: "Represents information about the type of SMS reminder."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: enumPageType
 ---
 

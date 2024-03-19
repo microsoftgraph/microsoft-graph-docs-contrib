@@ -4296,6 +4296,81 @@
       },
       {
         "ChangeList": [
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "type",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the **type** property of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource. The **type** property stopped returning data on January 31, 2024. Going forward, use the **connectionType** property.",
+            "Target": "cloudPcOnPremisesConnection"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "connectionType",
+            "ChangeType": "Addition",
+            "Description": "Added the **connectionType** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+            "Target": "cloudPcOnPremisesConnection"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "healthCheckStatusDetails",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the **healthCheckStatusDetails** property of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource. The **healthCheckStatusDetails** property stopped returning data on January 31, 2024. Going forward, use the **healthCheckStatusDetail** property.",
+            "Target": "cloudPcOnPremisesConnection"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "healthCheckStatusDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the **healthCheckStatusDetail** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+            "Target": "cloudPcOnPremisesConnection"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "additionalDetails",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the **additionalDetails** property of the [cloudPcOnPremisesConnectionHealthCheck](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta) resource. The **additionalDetails** property stopped returning data on January 31, 2024. Going forward, use the **additionalDetail** property.",
+            "Target": "cloudPcOnPremisesConnectionHealthCheck"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "additionalDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the **additionalDetail** property to the [cloudPcOnPremisesConnectionHealthCheck](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta) resource.",
+            "Target": "cloudPcOnPremisesConnectionHealthCheck"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcOnPremisesConnectionStatusDetails",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the [cloudPcOnPremisesConnectionStatusDetails](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetails?view=graph-rest-beta) resource. The **cloudPcOnPremisesConnectionStatusDetails** resource stopped returning data on January 31, 2024. Going forward, use the [cloudPcOnPremisesConnectionStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetail?view=graph-rest-beta) resource.",
+            "Target": "cloudPcOnPremisesConnectionStatusDetails"
+          },            
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcOnPremisesConnectionStatusDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcOnPremisesConnectionStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetail?view=graph-rest-beta) resource type.",
+            "Target": "cloudPcOnPremisesConnectionStatusDetail"
+          }
+        ],
+        "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-03-15T07:34:41.3424906Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      }
+      },
+      {
+        "ChangeList": [
             {
                 "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
                 "ApiChange": "Relationship",

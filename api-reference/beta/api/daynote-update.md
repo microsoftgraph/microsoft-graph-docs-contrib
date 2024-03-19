@@ -3,7 +3,7 @@ title: "Update dayNote"
 description: "Update the properties of a day note."
 author: fmcgurrenw
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
 ---
 

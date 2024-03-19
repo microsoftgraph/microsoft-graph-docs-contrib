@@ -50,7 +50,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md) object in the response body.
 
 ## Examples
 

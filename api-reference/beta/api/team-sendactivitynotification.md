@@ -3,7 +3,7 @@ title: "team: sendActivityNotification"
 description:  Send an activity feed notification in the scope of a team.
 author: RamjotSingh
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
 ---
 

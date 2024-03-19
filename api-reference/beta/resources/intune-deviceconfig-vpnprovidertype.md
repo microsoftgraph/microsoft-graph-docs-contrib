@@ -3,7 +3,7 @@ title: "vpnProviderType enum type"
 description: "Provider type for per-app VPN."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

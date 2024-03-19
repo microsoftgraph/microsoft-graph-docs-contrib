@@ -3,7 +3,7 @@ title: "androidForWorkTrustedRootCertificate resource type"
 description: "Android For Work Trusted Root Certificate configuration profile"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

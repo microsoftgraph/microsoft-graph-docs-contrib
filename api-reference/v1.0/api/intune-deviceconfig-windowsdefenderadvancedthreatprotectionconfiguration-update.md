@@ -3,7 +3,7 @@ title: "Update windowsDefenderAdvancedThreatProtectionConfiguration"
 description: "Update the properties of a windowsDefenderAdvancedThreatProtectionConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

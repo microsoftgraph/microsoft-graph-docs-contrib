@@ -53,10 +53,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following is an example of a request that updates a tenant-level setting for Microsoft 365 reports.
+The following example shows a request that updates a tenant-level setting for Microsoft 365 reports.
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
