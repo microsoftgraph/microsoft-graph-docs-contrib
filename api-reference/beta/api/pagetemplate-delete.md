@@ -3,7 +3,6 @@ author: "Yadong1106"
 description: "Delete a page template from the templates folder in a site."
 title: "Delete pageTemplate"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # Delete page template
@@ -31,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /sites/{site-id}/pageTemplates/{page-template-id}
+DELETE /sites/{site-id}/pageTemplates/{pageTemplateId}
 ```
 
 ## Request headers
@@ -58,7 +57,7 @@ If successful, this method returns a `204 No Content`. It doesn't return anythin
 The following example shows a request.
 
 ```http
-DELETE /sites/{site-id}/pageTemplates/{page-template-id}
+DELETE /sites/{site-id}/pageTemplates/{pageTemplateId}
 ```
 ### Response
 

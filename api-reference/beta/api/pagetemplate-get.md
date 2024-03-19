@@ -4,7 +4,6 @@ description: "Returns the metadata for a page template in the templates folder i
 ms.date: 03/15/2018
 title: Get page template
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -32,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites/{site-id}/pageTemplates/{page-template-id}
+GET /sites/{site-id}/pageTemplates/{pageTemplateId}
 ```
 
 ## Optional query parameters
@@ -67,7 +66,7 @@ If successful, this method returns a `200` and a [pageTemplate](../resources/pag
 <!-- { "blockType": "request", "name": "get-pageTemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pageTemplates/{page-template-id}
+GET /sites/{site-id}/pageTemplates/{pageTemplateId}
 ```
 
 #### Response

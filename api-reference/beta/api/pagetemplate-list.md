@@ -4,7 +4,6 @@ description: "Get the collection of pageTemplate objects from the page templates
 ms.date: 03/15/2018
 title: List PageTemplate
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
