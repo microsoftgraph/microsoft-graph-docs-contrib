@@ -17,19 +17,19 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewMessage()
 subject := "9/8/2018: concert"
-requestBody.SetSubject(&subject)
+requestBody.SetSubject(&subject) 
 body := graphmodels.NewItemBody()
-contentType := graphmodels.HTML_BODYTYPE
-body.SetContentType(&contentType)
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "The group represents Washington."
-body.SetContent(&content)
+body.SetContent(&content) 
 requestBody.SetBody(body)
 
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 address := "AlexW@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
@@ -40,14 +40,14 @@ requestBody.SetToRecipients(toRecipients)
 
 internetMessageHeader := graphmodels.NewInternetMessageHeader()
 name := "x-custom-header-group-name"
-internetMessageHeader.SetName(&name)
+internetMessageHeader.SetName(&name) 
 value := "Washington"
-internetMessageHeader.SetValue(&value)
+internetMessageHeader.SetValue(&value) 
 internetMessageHeader1 := graphmodels.NewInternetMessageHeader()
 name := "x-custom-header-group-id"
-internetMessageHeader1.SetName(&name)
+internetMessageHeader1.SetName(&name) 
 value := "WA001"
-internetMessageHeader1.SetValue(&value)
+internetMessageHeader1.SetValue(&value) 
 
 internetMessageHeaders := []graphmodels.InternetMessageHeaderable {
 	internetMessageHeader,

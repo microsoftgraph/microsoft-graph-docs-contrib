@@ -3,7 +3,7 @@ title: "approvalSettings complex type"
 description: "The settings for approval as defined in a role management policy rule."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

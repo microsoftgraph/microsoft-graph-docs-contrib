@@ -3,7 +3,7 @@ title: "conditionalAccessPolicyCoverage resource type"
 description: "Represents information about any Microsoft Entra policy that defines access rules of a resource for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

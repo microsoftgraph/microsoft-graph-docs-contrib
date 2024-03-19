@@ -3,7 +3,7 @@ title: "emailThreatSubmissionPolicy resource type"
 description: "Represents the guidelines of an organization to report potential threats and spam."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

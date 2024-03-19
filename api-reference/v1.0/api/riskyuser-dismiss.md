@@ -3,7 +3,7 @@ title: "riskyUser: dismiss"
 description: "Dismiss a risky user"
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

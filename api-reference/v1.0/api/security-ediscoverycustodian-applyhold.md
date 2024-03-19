@@ -55,7 +55,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ### Example 1: Apply hold to multiple custodians
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +121,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Apply hold to a single custodian
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

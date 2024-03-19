@@ -3,7 +3,7 @@ title: "List timeOffRequest"
 description: "Retrieve a list of timeOffRequest objects in the team."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 

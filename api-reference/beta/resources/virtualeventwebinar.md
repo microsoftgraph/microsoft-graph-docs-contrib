@@ -3,7 +3,7 @@ title: "virtualEventWebinar resource type"
 description: "Contains information about a virtual event webinar."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

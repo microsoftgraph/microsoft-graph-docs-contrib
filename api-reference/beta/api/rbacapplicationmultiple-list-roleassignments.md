@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of unifiedRoleAssignment
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 

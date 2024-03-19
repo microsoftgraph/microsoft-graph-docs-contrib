@@ -3,7 +3,7 @@ title: "Update accessPackageAssignmentPolicy"
 description: "Update the properties of an accessPackageAssignmentPolicy object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Update accessPackageAssignmentPolicy

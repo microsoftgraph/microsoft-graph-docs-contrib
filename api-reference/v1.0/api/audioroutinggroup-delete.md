@@ -3,7 +3,7 @@ title: "Delete audioRoutingGroup"
 description: "Delete the specified audio routing group."
 author: "hanknguyen"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

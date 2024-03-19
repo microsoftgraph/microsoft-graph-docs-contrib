@@ -3,7 +3,7 @@ title: "chat: markChatUnreadForUser"
 description: "Mark a chat as unread for a user."
 author: "sweta-thapliyal"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "preApprovedPermissions resource type"
 description: "Describes the set of permissions that are pre-approved for a resource."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

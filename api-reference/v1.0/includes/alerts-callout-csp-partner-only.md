@@ -1,7 +1,7 @@
 ---
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 ms.topic: include
 ---
 

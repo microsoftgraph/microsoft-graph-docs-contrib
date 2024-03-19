@@ -2,7 +2,7 @@
 title: "reportRoot: getSkypeForBusinessParticipantActivityCounts"
 description: "Get usage trends on the number and type of conference sessions that users from your organization participated in. Types of conference sessions include IM, audio/video, application sharing, web, and dial-in/out - third party."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -83,7 +83,7 @@ Here's an example that outputs CSV.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessParticipantActiv
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -129,7 +129,7 @@ Here's an example that returns JSON.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -144,7 +144,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessParticipantActiv
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

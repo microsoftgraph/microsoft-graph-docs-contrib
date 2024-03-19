@@ -3,7 +3,7 @@ title: "windows10XSCEPCertificateProfile resource type"
 description: "Windows X SCEP Certificate configuration profile"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

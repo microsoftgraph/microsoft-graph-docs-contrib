@@ -3,7 +3,7 @@ title: "Update onAttributeCollectionStartCustomExtension"
 description: "Associate a custom extension with an onAttributeCollectionStartCustomExtension object that's linked to an onAttributeCollectionStartListener object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PUT https://microsoft.graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionStartListener/handler/microsoft.graph.onAttributeCollectionStartCustomExtensionHandler/customExtension/$ref
+PUT https://graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionStartListener/handler/microsoft.graph.onAttributeCollectionStartCustomExtensionHandler/customExtension/$ref
 Content-Type: application/json
 
 {

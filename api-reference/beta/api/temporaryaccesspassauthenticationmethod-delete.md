@@ -3,7 +3,7 @@ title: "Delete temporaryAccessPassAuthenticationMethod"
 description: "Delete a user's temporaryAccessPassAuthenticationMethod object."
 author: "tilarso"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

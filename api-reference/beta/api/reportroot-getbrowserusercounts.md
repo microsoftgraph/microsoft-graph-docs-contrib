@@ -2,7 +2,7 @@
 title: "reportRoot: getBrowserUserCounts"
 description: "Get a report that provides the trend in usage for the number of active users using Microsoft Edge when used to access the Microsoft 365 services over a selected period."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
