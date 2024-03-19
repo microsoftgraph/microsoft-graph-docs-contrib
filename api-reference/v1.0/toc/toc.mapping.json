@@ -2,6 +2,7 @@
   "tocNodes": [
     {
       "name": "Applications",
+      "overview": "../../resources/applications-api-overview.md",
       "workloads": [
         {
           "id": "Microsoft.DirectoryServices",
@@ -1670,7 +1671,13 @@
     },
     {
       "term": "on premises",
-      "override": "On-premises"
+      "override": "on-premises",
+      "caseSensitive": true
+    },
+    {
+      "term": "On premises",
+      "override": "On-premises",
+      "caseSensitive": true
     },
     {
       "term": "bitlocker",

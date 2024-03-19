@@ -459,6 +459,8 @@ items:
         href: ../../api/chat-get.md
       - name: Update chat
         href: ../../api/chat-patch.md
+      - name: Delete chat
+        href: ../../api/chat-delete.md
       - name: List chat members
         href: ../../api/chat-list-members.md
       - name: Add chat member

@@ -5,15 +5,15 @@ items:
   items:
   - name: Subscription
     href: ../../resources/subscription.md
-  - name: Create subscription
-    href: ../../api/subscription-post-subscriptions.md
-  - name: Update subscription
-    href: ../../api/subscription-update.md
   - name: List subscriptions
     href: ../../api/subscription-list.md
+  - name: Create subscription
+    href: ../../api/subscription-post-subscriptions.md
   - name: Get subscription
     href: ../../api/subscription-get.md
+  - name: Update subscription
+    href: ../../api/subscription-update.md
   - name: Delete subscription
     href: ../../api/subscription-delete.md
-  - name: reauthorize
+  - name: Reauthorize
     href: ../../api/subscription-reauthorize.md
