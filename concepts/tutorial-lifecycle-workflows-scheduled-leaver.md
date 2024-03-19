@@ -183,7 +183,7 @@ Content-Type: application/json
 
 Because the workflow isn't scheduled to run, it must be run manually, on-demand. In the following request, the user that's the target of the workflow is identified by ID `df744d9e-2148-4922-88a8-633896c1e929`.
 
-When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions. Therefore, even if the user isn't in the "Marketing" department or their employeeLeaveDateTime is set to `null`, this command still runs the tasks that are defined in the workflow, for the user.
+When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions. Therefore, even if the user isn't in the "Marketing" department or their **employeeLeaveDateTime** is set to `null`, this command still runs the tasks that are defined in the workflow, for the user.
 
 The request returns a `204 No Content` response code.
 
@@ -583,6 +583,6 @@ Content-type: application/json
 
 ## Related content
 
-- [Automate employee offboarding tasks after their last day of work with the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-scheduled-leaver-portal)
+- [Automate employee offboarding tasks after their last day of work with the Microsoft Entra admin center](/entra/id-governance/tutorial-scheduled-leaver-portal)
 - [Overview of Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
 - [Overview of reporting in Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)
