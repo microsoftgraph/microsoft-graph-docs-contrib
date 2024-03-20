@@ -70,7 +70,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
+  "@odata.type": "#microsoft.graph.cloudPcGalleryImage",
   "displayName": "String",
   "endDate": "String (Date)",
   "expiredDate": "String (Date)",
