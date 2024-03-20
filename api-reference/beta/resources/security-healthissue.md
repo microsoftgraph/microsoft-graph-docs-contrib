@@ -1,6 +1,6 @@
 ---
 title: "healthIssue resource type"
-description: "Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity has identified."
+description: "Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified."
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource corresponds to the latest generation of health issues in the Microsoft Graph security API, Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity has identified.
+This resource corresponds to the latest generation of health issues in the Microsoft Graph security API, Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -56,7 +56,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
 | open | The issue is opened and should be addressed. |
 | closed | The issue was addressed, either by someone manually closing the issue, by taking an action on the impacted item or automatically by the system. |
-| suppressed | The operator has supressed the issue manually. |
+| suppressed | The operator suppressed the issue manually. |
 
 #### HealthIssueType values
 
