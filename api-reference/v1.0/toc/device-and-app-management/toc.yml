@@ -337,6 +337,28 @@ items:
         href: ../../api/intune-apps-androidstoreapp-delete.md
       - name: Update androidStoreApp
         href: ../../api/intune-apps-androidstoreapp-update.md
+    - name: Device install state
+      items:
+      - name: Device install state
+        href: ../../resources/intune-books-deviceinstallstate.md
+      - name: List deviceInstallStates
+        href: ../../api/intune-books-deviceinstallstate-list.md
+      - name: Get deviceInstallState
+        href: ../../api/intune-books-deviceinstallstate-get.md
+      - name: Create deviceInstallState
+        href: ../../api/intune-books-deviceinstallstate-create.md
+      - name: Delete deviceInstallState
+        href: ../../api/intune-books-deviceinstallstate-delete.md
+      - name: Update deviceInstallState
+        href: ../../api/intune-books-deviceinstallstate-update.md
+    - name: eBook install summary
+      items:
+      - name: eBook install summary
+        href: ../../resources/intune-books-ebookinstallsummary.md
+      - name: Get eBookInstallSummary
+        href: ../../api/intune-books-ebookinstallsummary-get.md
+      - name: Update eBookInstallSummary
+        href: ../../api/intune-books-ebookinstallsummary-update.md
     - name: Enterprise code signing certificate
       items:
       - name: Enterprise code signing certificate
@@ -351,6 +373,20 @@ items:
         href: ../../api/intune-apps-enterprisecodesigningcertificate-delete.md
       - name: Update enterpriseCodeSigningCertificate
         href: ../../api/intune-apps-enterprisecodesigningcertificate-update.md
+    - name: iOS iPadOS web clip
+      items:
+      - name: iOS iPadOS web clip
+        href: ../../resources/intune-apps-iosipadoswebclip.md
+      - name: List iosiPadOSWebClips
+        href: ../../api/intune-apps-iosipadoswebclip-list.md
+      - name: Get iosiPadOSWebClip
+        href: ../../api/intune-apps-iosipadoswebclip-get.md
+      - name: Create iosiPadOSWebClip
+        href: ../../api/intune-apps-iosipadoswebclip-create.md
+      - name: Delete iosiPadOSWebClip
+        href: ../../api/intune-apps-iosipadoswebclip-delete.md
+      - name: Update iosiPadOSWebClip
+        href: ../../api/intune-apps-iosipadoswebclip-update.md
     - name: iOS LOB app
       items:
       - name: iOS LOB app
@@ -421,20 +457,34 @@ items:
         href: ../../api/intune-apps-iosvppapp-delete.md
       - name: Update iosVppApp
         href: ../../api/intune-apps-iosvppapp-update.md
-    - name: iOS iPad OS web clip
+    - name: iOS VPP eBook
       items:
-      - name: iOS iPad OS web clip
-        href: ../../resources/intune-apps-iosipadoswebclip.md
-      - name: List iosiPadOSWebClips
-        href: ../../api/intune-apps-iosipadoswebclip-list.md
-      - name: Get iosiPadOSWebClip
-        href: ../../api/intune-apps-iosipadoswebclip-get.md
-      - name: Create iosiPadOSWebClip
-        href: ../../api/intune-apps-iosipadoswebclip-create.md
-      - name: Delete iosiPadOSWebClip
-        href: ../../api/intune-apps-iosipadoswebclip-delete.md
-      - name: Update iosiPadOSWebClip
-        href: ../../api/intune-apps-iosipadoswebclip-update.md
+      - name: iOS VPP eBook
+        href: ../../resources/intune-books-iosvppebook.md
+      - name: List iosVppEBooks
+        href: ../../api/intune-books-iosvppebook-list.md
+      - name: Get iosVppEBook
+        href: ../../api/intune-books-iosvppebook-get.md
+      - name: Create iosVppEBook
+        href: ../../api/intune-books-iosvppebook-create.md
+      - name: Delete iosVppEBook
+        href: ../../api/intune-books-iosvppebook-delete.md
+      - name: Update iosVppEBook
+        href: ../../api/intune-books-iosvppebook-update.md
+    - name: iOS VPP eBook assignment
+      items:
+      - name: iOS VPP eBook assignment
+        href: ../../resources/intune-books-iosvppebookassignment.md
+      - name: List iosVppEBookAssignments
+        href: ../../api/intune-books-iosvppebookassignment-list.md
+      - name: Get iosVppEBookAssignment
+        href: ../../api/intune-books-iosvppebookassignment-get.md
+      - name: Create iosVppEBookAssignment
+        href: ../../api/intune-books-iosvppebookassignment-create.md
+      - name: Delete iosVppEBookAssignment
+        href: ../../api/intune-books-iosvppebookassignment-delete.md
+      - name: Update iosVppEBookAssignment
+        href: ../../api/intune-books-iosvppebookassignment-update.md
     - name: macOS LOB app
       items:
       - name: macOS LOB app
@@ -595,6 +645,30 @@ items:
         href: ../../api/intune-apps-manageddevicemobileappconfigurationusersummary-get.md
       - name: Update managedDeviceMobileAppConfigurationUserSummary
         href: ../../api/intune-apps-manageddevicemobileappconfigurationusersummary-update.md
+    - name: Managed eBook
+      items:
+      - name: Managed eBook
+        href: ../../resources/intune-books-managedebook.md
+      - name: List managedEBooks
+        href: ../../api/intune-books-managedebook-list.md
+      - name: Get managedEBook
+        href: ../../api/intune-books-managedebook-get.md
+      - name: assign action
+        href: ../../api/intune-books-managedebook-assign.md
+    - name: Managed eBook assignment
+      items:
+      - name: Managed eBook assignment
+        href: ../../resources/intune-books-managedebookassignment.md
+      - name: List managedEBookAssignments
+        href: ../../api/intune-books-managedebookassignment-list.md
+      - name: Get managedEBookAssignment
+        href: ../../api/intune-books-managedebookassignment-get.md
+      - name: Create managedEBookAssignment
+        href: ../../api/intune-books-managedebookassignment-create.md
+      - name: Delete managedEBookAssignment
+        href: ../../api/intune-books-managedebookassignment-delete.md
+      - name: Update managedEBookAssignment
+        href: ../../api/intune-books-managedebookassignment-update.md
     - name: Managed iOS LOB app
       items:
       - name: Managed iOS LOB app
@@ -731,6 +805,20 @@ items:
         href: ../../api/intune-apps-mobilelobapp-list.md
       - name: Get mobileLobApp
         href: ../../api/intune-apps-mobilelobapp-get.md
+    - name: User install state summary
+      items:
+      - name: User install state summary
+        href: ../../resources/intune-books-userinstallstatesummary.md
+      - name: List userInstallStateSummaries
+        href: ../../api/intune-books-userinstallstatesummary-list.md
+      - name: Get userInstallStateSummary
+        href: ../../api/intune-books-userinstallstatesummary-get.md
+      - name: Create userInstallStateSummary
+        href: ../../api/intune-books-userinstallstatesummary-create.md
+      - name: Delete userInstallStateSummary
+        href: ../../api/intune-books-userinstallstatesummary-delete.md
+      - name: Update userInstallStateSummary
+        href: ../../api/intune-books-userinstallstatesummary-update.md
     - name: Web app
       items:
       - name: Web app
@@ -843,94 +931,6 @@ items:
         href: ../../api/intune-apps-windowswebapp-delete.md
       - name: Update windowsWebApp
         href: ../../api/intune-apps-windowswebapp-update.md
-    - name: Device install state
-      items:
-      - name: Device install state
-        href: ../../resources/intune-books-deviceinstallstate.md
-      - name: List deviceInstallStates
-        href: ../../api/intune-books-deviceinstallstate-list.md
-      - name: Get deviceInstallState
-        href: ../../api/intune-books-deviceinstallstate-get.md
-      - name: Create deviceInstallState
-        href: ../../api/intune-books-deviceinstallstate-create.md
-      - name: Delete deviceInstallState
-        href: ../../api/intune-books-deviceinstallstate-delete.md
-      - name: Update deviceInstallState
-        href: ../../api/intune-books-deviceinstallstate-update.md
-    - name: eBook install summary
-      items:
-      - name: eBook install summary
-        href: ../../resources/intune-books-ebookinstallsummary.md
-      - name: Get eBookInstallSummary
-        href: ../../api/intune-books-ebookinstallsummary-get.md
-      - name: Update eBookInstallSummary
-        href: ../../api/intune-books-ebookinstallsummary-update.md
-    - name: iOS VPP eBook
-      items:
-      - name: iOS VPP eBook
-        href: ../../resources/intune-books-iosvppebook.md
-      - name: List iosVppEBooks
-        href: ../../api/intune-books-iosvppebook-list.md
-      - name: Get iosVppEBook
-        href: ../../api/intune-books-iosvppebook-get.md
-      - name: Create iosVppEBook
-        href: ../../api/intune-books-iosvppebook-create.md
-      - name: Delete iosVppEBook
-        href: ../../api/intune-books-iosvppebook-delete.md
-      - name: Update iosVppEBook
-        href: ../../api/intune-books-iosvppebook-update.md
-    - name: iOS VPP eBook assignment
-      items:
-      - name: iOS VPP eBook assignment
-        href: ../../resources/intune-books-iosvppebookassignment.md
-      - name: List iosVppEBookAssignments
-        href: ../../api/intune-books-iosvppebookassignment-list.md
-      - name: Get iosVppEBookAssignment
-        href: ../../api/intune-books-iosvppebookassignment-get.md
-      - name: Create iosVppEBookAssignment
-        href: ../../api/intune-books-iosvppebookassignment-create.md
-      - name: Delete iosVppEBookAssignment
-        href: ../../api/intune-books-iosvppebookassignment-delete.md
-      - name: Update iosVppEBookAssignment
-        href: ../../api/intune-books-iosvppebookassignment-update.md
-    - name: Managed eBook
-      items:
-      - name: Managed eBook
-        href: ../../resources/intune-books-managedebook.md
-      - name: List managedEBooks
-        href: ../../api/intune-books-managedebook-list.md
-      - name: Get managedEBook
-        href: ../../api/intune-books-managedebook-get.md
-      - name: assign action
-        href: ../../api/intune-books-managedebook-assign.md
-    - name: Managed eBook assignment
-      items:
-      - name: Managed eBook assignment
-        href: ../../resources/intune-books-managedebookassignment.md
-      - name: List managedEBookAssignments
-        href: ../../api/intune-books-managedebookassignment-list.md
-      - name: Get managedEBookAssignment
-        href: ../../api/intune-books-managedebookassignment-get.md
-      - name: Create managedEBookAssignment
-        href: ../../api/intune-books-managedebookassignment-create.md
-      - name: Delete managedEBookAssignment
-        href: ../../api/intune-books-managedebookassignment-delete.md
-      - name: Update managedEBookAssignment
-        href: ../../api/intune-books-managedebookassignment-update.md
-    - name: User install state summary
-      items:
-      - name: User install state summary
-        href: ../../resources/intune-books-userinstallstatesummary.md
-      - name: List userInstallStateSummaries
-        href: ../../api/intune-books-userinstallstatesummary-list.md
-      - name: Get userInstallStateSummary
-        href: ../../api/intune-books-userinstallstatesummary-get.md
-      - name: Create userInstallStateSummary
-        href: ../../api/intune-books-userinstallstatesummary-create.md
-      - name: Delete userInstallStateSummary
-        href: ../../api/intune-books-userinstallstatesummary-delete.md
-      - name: Update userInstallStateSummary
-        href: ../../api/intune-books-userinstallstatesummary-update.md
     - name: Complex types
       items:
       - name: All devices assignment target
@@ -1889,21 +1889,21 @@ items:
         href: ../../resources/intune-deviceconfig-mediacontentratingunitedkingdom.md
       - name: Media content rating united states
         href: ../../resources/intune-deviceconfig-mediacontentratingunitedstates.md
-      - name: Oma setting
+      - name: OMA setting
         href: ../../resources/intune-deviceconfig-omasetting.md
-      - name: Oma setting base 64
+      - name: OMA setting base 64
         href: ../../resources/intune-deviceconfig-omasettingbase64.md
-      - name: Oma setting boolean
+      - name: OMA setting boolean
         href: ../../resources/intune-deviceconfig-omasettingboolean.md
-      - name: Oma setting date time
+      - name: OMA setting date time
         href: ../../resources/intune-deviceconfig-omasettingdatetime.md
-      - name: Oma setting floating point
+      - name: OMA setting floating point
         href: ../../resources/intune-deviceconfig-omasettingfloatingpoint.md
-      - name: Oma setting integer
+      - name: OMA setting integer
         href: ../../resources/intune-deviceconfig-omasettinginteger.md
-      - name: Oma setting string
+      - name: OMA setting string
         href: ../../resources/intune-deviceconfig-omasettingstring.md
-      - name: Oma setting string xml
+      - name: OMA setting string xml
         href: ../../resources/intune-deviceconfig-omasettingstringxml.md
       - name: Setting source
         href: ../../resources/intune-deviceconfig-settingsource.md

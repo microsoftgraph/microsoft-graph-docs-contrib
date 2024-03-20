@@ -260,6 +260,7 @@
             {
               "name": "App management",
               "overview": "../../resources/intune-app-conceptual.md",
+              "shouldSort": true,
               "workloads": [
                 {
                   "id": "Microsoft.Intune.Applications"
@@ -1744,6 +1745,14 @@
     {
       "term": "saml or ws fed",
       "override": "SAML/WS-Fed"
+    },
+    {
+      "term": "oma",
+      "override": "OMA"
+    },
+    {
+      "term": "ipad os",
+      "override": "iPadOS"
     }
   ]
 }
