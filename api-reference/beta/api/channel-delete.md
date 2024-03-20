@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Delete the [channel](../resources/channel.md).
 
-> **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](/graph/known-issues#application-permissions).
-
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
