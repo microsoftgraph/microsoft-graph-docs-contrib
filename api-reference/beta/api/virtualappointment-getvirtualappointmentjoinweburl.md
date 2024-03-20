@@ -3,7 +3,7 @@ title: "virtualAppointment: getVirtualAppointmentJoinWebUrl"
 description: "Get a join web URL for a Teams Virtual Appointment."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

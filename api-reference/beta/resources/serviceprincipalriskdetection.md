@@ -3,7 +3,7 @@ title: "servicePrincipalRiskDetection resource type"
 description: "Represents information about a detected at-risk service principal in a Microsoft Entra tenant."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

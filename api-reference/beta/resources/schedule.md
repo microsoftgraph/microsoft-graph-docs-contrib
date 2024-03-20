@@ -3,7 +3,7 @@ title: "schedule resource type"
 description: "Represents a collection of scheduling groups, shifts, times off, and time off reasons for a team."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

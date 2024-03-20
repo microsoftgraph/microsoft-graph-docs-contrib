@@ -3,7 +3,7 @@ title: "Business rules to follow when creating or updating Bookings appointments
 description: "Follow these business rules for business-level settings and service-level settings when using the create or update Bookings appointments APIs in Microsoft Graph."
 ms.localizationpriority: medium
 author: kwekua
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: conceptualPageType
 ---
 

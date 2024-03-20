@@ -3,7 +3,7 @@ title: "printerShareViewpoint resource type"
 description: "Represents additional data for a printer share as viewed by the signed-in user."
 author: "venkatnagula"
 ms.localizationpriority: medium
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 doc_type: resourcePageType
 ---
 

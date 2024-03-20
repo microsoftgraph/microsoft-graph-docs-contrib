@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: shared resource type
 ms.localizationpriority: medium
 description: "The shared resource indicates a driveItem has been shared with others."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 

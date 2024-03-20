@@ -3,7 +3,7 @@ title: "educationFileResource resource type"
 description: "A subclass of educationResource that represents a file object that is associated with the assignment or submission.  In this case, the file isn't one of the special files (Word, Excel, and so on) but is a file that doesn't have special handling within the system. The file resource must be stored in the **resourceFolder** that is associated with the assignment or submission this resource is attached to."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

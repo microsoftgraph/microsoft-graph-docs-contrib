@@ -3,7 +3,7 @@ title: "List contracts"
 description: "Retrieve a list of contract objects associated to a partner tenant."
 ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

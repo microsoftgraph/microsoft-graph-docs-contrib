@@ -3,7 +3,7 @@ title: "Get auditLogQuery"
 description: "Read the properties and relationships of an auditLogQuery object."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/beta/security/auditLog/queries/{auditLogQueryId}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.

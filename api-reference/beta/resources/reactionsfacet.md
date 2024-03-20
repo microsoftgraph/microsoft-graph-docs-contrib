@@ -3,7 +3,7 @@ title: 'reactionsFacet resource type'
 description: Provides counts of user reactions (likes, comments, and shares).
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

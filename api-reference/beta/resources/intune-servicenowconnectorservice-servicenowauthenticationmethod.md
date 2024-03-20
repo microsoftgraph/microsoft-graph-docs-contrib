@@ -3,7 +3,7 @@ title: "serviceNowAuthenticationMethod resource type"
 description: "An abstract base class for all serviceNow authentication methods."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

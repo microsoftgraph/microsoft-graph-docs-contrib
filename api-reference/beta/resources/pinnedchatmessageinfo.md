@@ -3,7 +3,7 @@ title: "pinnedChatMessageInfo resource type"
 description: "Represents an individual pinned message in a chat entity."
 author: "sumanac"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

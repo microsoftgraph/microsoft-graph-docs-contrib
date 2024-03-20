@@ -3,7 +3,7 @@ title: "Delete tab from chat"
 description: "Remove (unpin) a tab from the specified chat. "
 author: "subray"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

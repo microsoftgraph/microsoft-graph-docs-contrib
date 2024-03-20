@@ -3,7 +3,7 @@ title: "servicePrincipal: Add owner"
 description: "Add an owner for the service principal."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code and a [direc
 
 ## Examples
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

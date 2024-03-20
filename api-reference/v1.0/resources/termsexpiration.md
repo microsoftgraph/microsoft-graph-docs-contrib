@@ -2,7 +2,7 @@
 title: "termsExpiration resource type"
 description: "Provides additional settings for the scheduled expiration of the agreement."
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
 doc_type: "resourcePageType"
 ---

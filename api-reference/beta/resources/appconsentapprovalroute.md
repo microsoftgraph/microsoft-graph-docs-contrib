@@ -3,7 +3,7 @@ title: "appConsentApprovalRoute resource type"
 description: "Container for base resources that expose the app consent request API and features. Currently exposes only the appConsentRequests relationship."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
