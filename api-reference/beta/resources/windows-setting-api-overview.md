@@ -1,17 +1,17 @@
 ---
-title: "Microsoft Graph's Windows Setting APIs stored in the cloud"
-description: "The Windows setting APIs enable users and authorized third parties, acting on behalf of the users, to retrieve their Windows operating system settings data stored in the Microsoft cloud. The Windows settings data is available in the Microsoft cloud only when users activate the feature. The scope of data available for each user depends on their selections for backup within the settings. The default values for any setting remain local and aren't transferred to the cloud. These APIs only share setting data that has been uploaded to the cloud by the user."
+title: "Use the Windows settings API in Microsoft Graph"
+description: "The Windows setting API enables users and authorized third parties acting on behalf of users to retrieve their Windows operating system settings data stored in the Microsoft cloud."
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "MS-Arko"
 ms.prod: "cross-device-experiences"
 ---
 
-# Microsoft Graph Windows Setting APIs to retrieve Windows OS settings stored in cloud
+# Use the Windows settings API in Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Windows setting APIs enable users and authorized third parties, acting on behalf of the users, to retrieve their Windows operating system settings data stored in the Microsoft cloud. The Windows settings data is available in the Microsoft cloud only when users activate the feature. The scope of data available for each user depends on their selections for backup within the settings. The default values for any setting remain local and aren't transferred to the cloud. These APIs only share setting data that has been uploaded to the cloud by the user."
+The Windows setting API enables users and authorized third parties acting on behalf of users to retrieve their Windows operating system settings data stored in the Microsoft cloud. The Windows settings data is available in the Microsoft cloud only when users activate the feature. The scope of data available for each user depends on their backup settings selections. The default values for any settings remain local and aren't transferred to the cloud. The Windows settings API only shares settings data that the user uploads to the cloud.
 
 ## Windows settings
 
