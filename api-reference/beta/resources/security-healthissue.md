@@ -28,7 +28,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier to represent the health issue|
+|ID|String|Unique identifier to represent the health issue|
 |displayName|String|The display name of the health issue|
 |issueTypeId|String|The type identifier of the health issue. You can find a comprehensive list of all health issues and their identifiers at the following link: https://go.microsoft.com/fwlink/?linkid=2245397|
 |healthIssueType|[microsoft.graph.security.healthIssueType](#HealthIssueType-values)|The type of the health issue. The possible values are: `sensor`, `global`, `unknownFutureValue`. You can find a comprehensive list of all health issues at the following link: https://go.microsoft.com/fwlink/?linkid=2245397|
@@ -36,11 +36,11 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |status|[microsoft.graph.security.healthIssueStatus](#HealthIssueStatus-values)|The status of the health issue. The possible values are: `open`, `closed`, `suppressed`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|The date and time of when the health issue was generated|
 |lastModifiedDateTime|DateTimeOffset|The date and time of when the health issue was last updated|
-|domainNames|String collection|List of the fully qualified domain name of the domains or the sensors the health issue is realated to|
-|sensorDNSNames|String collection|List of the dns names of the sensors the health issue is realated to|
+|domainNames|String collection|List of the fully qualified domain name of the domains or the sensors the health issue is relatedto|
+|sensorDNSNames|String collection|List of the dns names of the sensors the health issue is relatedto|
 |description|String|More detailed information on the health issue|
-|recommendations|String collection|This field contains a list of recommended actions that can be taken to resolve the issue. These actions may include instructions on how to investigate the issue further, and they are not limited to pre-written responses. The recommended actions are intended to provide guidance on how to address the issue effectively and efficiently.|
-|recommendedActionCommands|String collection|This field may contain a list of commands from the product's PowerShell Module that can be used to resolve the issue, if available. If there are no commands that can be used to solve the issue, the field will be left empty. The commands, if present, are intended to provide a quick and efficient way to address the issue. These commands will be executed in order for the single recommended fix|
+|recommendations|String collection|This field contains a list of recommended actions that can be taken to resolve the issue. These actions may include instructions on how to investigate the issue further, and they aren't limited to prewritten responses. The recommended actions are intended to provide guidance on how to address the issue effectively and efficiently.|
+|recommendedActionCommands|String collection|This field may contain a list of commands from the product's PowerShell Module that can be used to resolve the issue, if available. If there are no commands that can be used to solve the issue, the field is left empty. The commands, if present, are intended to provide a quick and efficient way to address the issue. These commands are executed in order for the single recommended fix|
 |additionalInformation|String collection|Additional information on the issue, such as a list of items to fix|
 
 #### HealthIssueSeverity values
@@ -57,14 +57,14 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
 | open | The issue is opened and should be addressed. |
 | closed | The issue was addressed, either by someone manually closing the issue, by taking an action on the impacted item or automatically by the system. |
-| suppressed | The issue was suppressed maually by an operator to be ignored for a period of time, depending on the type of the health issue. |
+| suppressed | The issue was suppressed manually by an operator to be ignored for time, depending on the type of the health issue. |
 
 #### HealthIssueType values
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
 | Sensor | The issue is on specific sensor. |
-| Global | The issue is in the defender for identity system configuration. |
+| Global | The issue is in the Defender for identity system configuration. |
 
 ## Relationships
 None.
