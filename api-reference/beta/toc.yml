@@ -16603,7 +16603,7 @@ items:
                   - name: Health Issue
                     href: resources/security-healthissue.md
                   - name: List Health Issue
-                    href: api/security-list-healthissue.md
+                    href: api/security-list-healthissues.md
                   - name: Get Health Issue
                     href: api/security-healthissue-get.md
                   - name: Update Health Issue
