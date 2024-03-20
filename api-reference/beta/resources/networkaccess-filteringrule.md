@@ -3,7 +3,7 @@ title: "filteringRule resource type"
 description: "A rule that is used to filter traffic in Global Secure Access."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

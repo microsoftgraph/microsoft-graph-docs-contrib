@@ -3,7 +3,7 @@ title: "List services"
 description: "Get a list of bookingService objects in the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [bookingService](../resources/bookingservice.md) objects in the response body.
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdel
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -3,7 +3,7 @@ title: "Create policySet"
 description: "Create a new policySet object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
