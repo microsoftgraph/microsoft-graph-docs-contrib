@@ -70,28 +70,7 @@ PATCH https://graph.microsoft.com/beta/security/identities/healthIssues/{healthI
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.healthIssue",
-  "displayName": "String",
-  "healthIssueType": "String",
-  "issueTypeId": "String",
-  "severity": "String",
-  "status": "String",
-  "domainNames": [
-    "String"
-  ],
-  "sensorDNSNames": [
-    "String"
-  ],
-  "description": "String",
-  "recommendations": [
-    "String"
-  ],
-  "recommendedActionCommands": [
-    "String"
-  ],
-  "additionalInformation": [
-    "String"
-  ]
+  "status": "closed"
 }
 ```
 
@@ -111,29 +90,36 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.healthIssue",
-  "id": "bf600aba-e975-0274-d332-c0f79dc75740",
-  "displayName": "String",
-  "healthIssueType": "String",
-  "issueTypeId": "String",
-  "severity": "String",
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
+  "id": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+  "displayName": "Directory Services Object Auditing is not configured as required",
+  "healthIssueType": "Global",
+  "issueTypeId": "1031",
+  "severity": "medium",
+  "status": "closed",
+  "createdDateTime": "2022-07-15T12:19:27.7211305Z",
+  "lastModifiedDateTime": "2022-07-15T12:19:27.7211305Z",
   "domainNames": [
-    "String"
+    "domain1.contoso.com",
+    "domain2.contoso.com"
   ],
   "sensorDNSNames": [
-    "String"
+    "DC1.domain1.contoso.com",
+    "DC2.domain2.contoso.com"
   ],
-  "description": "String",
+  "description": "Directory Services Object Auditing is not configured as required on domain1.contoso.com",
   "recommendations": [
-    "String"
+    "Please configure the Directory Services Object Auditing events according to the guidance as described in https://aka.ms/mdi/objectauditing"
   ],
   "recommendedActionCommands": [
-    "String"
+    "Import-Module DefenderForIdentity",
+    "Set-MDIConfiguration -Configuration DomainObjectAuditing -Mode Domain -Force"
   ],
   "additionalInformation": [
-    "String"
+    "Descendant User Objects (Schema-Id-Guid: bf967aba-0de6-11d0-a285-00aa003049e2)",
+    "Descendant Group Objects (Schema-Id-Guid: bf967a9c-0de6-11d0-a285-00aa003049e2)",
+    "Descendant Computer Objects (Schema-Id-Guid: bf967a86-0de6-11d0-a285-00aa003049e2)",
+    "Descendant msDS-GroupManagedServiceAccount Objects (Schema-Id-Guid: 7b8b558a-93a5-4af7-adca-c017e67f1057)",
+    "Descendant msDS-ManagedServiceAccount Objects (Schema-Id-Guid: ce206244-5827-4a86-ba1c-1c0c386c1b64)"
   ]
 }
 ```
