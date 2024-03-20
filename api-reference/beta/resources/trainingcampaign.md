@@ -50,7 +50,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description |
 |:---|:---|
-|unknown| The campaign status is not defined. |
+|unknown| The campaign status isn't defined. |
 |draft| The campaign is in draft mode. |
 |inProgress| The campaign is in progress. |
 |scheduled| The campaign is scheduled. |
@@ -59,7 +59,7 @@ Inherits from [entity](../resources/entity.md).
 |cancelled| The campaign is cancelled. |
 |excluded| The campaign is excluded. |
 |deleted| The campaign is in draft mode. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 None.

@@ -56,7 +56,7 @@ You can specify the following properties when creating a **trainingCampaign**.
 |description|String|The description of the training campaign. Optional.|
 |displayName|String|The display name of the training campaign. Required.|
 |endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|Details about the end user notification setting. Required.|
-|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|The users who areexcluded from the training campaign. Optional.|
+|excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|The users who are excluded from the training campaign. Optional.|
 |includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|The users who are targeted in the training campaign. Required.|
 |lastModifiedDateTime|DateTimeOffset|The identity of the user who most recently modified the training campaign. Optional.|
 |trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Details about the training settings for a training campaign. Required.|

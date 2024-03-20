@@ -162,7 +162,7 @@ Content-Type: application/json
 
 ### Example 3: Get excluded account targets
 
-The following example shows how to get excluded account targets (users) for a Training campaign for a tenant.
+The following example shows how to get the excluded account targets (users) for a Training campaign for a tenant.
 
 #### Request
 

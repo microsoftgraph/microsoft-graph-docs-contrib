@@ -20,7 +20,7 @@ Aggregate data of users training progress
 |:---|:---|:---|
 |completedUsersCount|Int32|The number of users who completed all the trainings before the due date.|
 |inProgressUsersCount|Int32|The number of users who started at least one training.|
-|notCompletedUsersCount|Int32|The number of users who didn't complete all the trainings prior to the due date.|
+|notCompletedUsersCount|Int32|The number of users who didn't complete all the trainings before the due date.|
 |notStartedUsersCount|Int32|The number of users who didn't start any training.|
 |previouslyAssignedUsersCount|Int32|The number of users who are already assigned the same training.|
 
