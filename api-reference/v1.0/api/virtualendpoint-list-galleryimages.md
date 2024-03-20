@@ -1,6 +1,6 @@
 ---
 title: "List galleryImages"
-description: "List the properties and relationships of gallery images of the organization."
+description: "List the properties and relationships of cloudPcGalleryImage objects."
 author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -39,7 +39,7 @@ This method supports the `$select` and `$filter` OData query parameters to help 
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 
 ## Request body
 
@@ -93,7 +93,7 @@ Content-Type: application/json
       "sizeInGB": 64,
       "startDate": "2019-11-12",
       "endDate": "2022-05-10",
-      "expiredDate": "2022-11-10"
+      "expirationDate": "2022-11-10"
     },
     {
       "id": "MicrosoftWindowsDesktop_windows-ent-cpc_20h1-ent-cpc-os",
@@ -105,7 +105,7 @@ Content-Type: application/json
       "sizeInGB": 64,
       "startDate": "2020-05-27",
       "endDate": "2021-12-14",
-      "expiredDate": "2022-06-14"
+      "expirationDate": "2022-06-14"
     }
   ]
 }
