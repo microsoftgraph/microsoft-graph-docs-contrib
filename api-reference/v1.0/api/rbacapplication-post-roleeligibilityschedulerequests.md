@@ -3,7 +3,7 @@ title: "Create roleEligibilityScheduleRequest"
 description: "In PIM, request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

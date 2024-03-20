@@ -3,7 +3,7 @@ title: "taskFileAttachment: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of a file as an attachment to a Microsoft To Do task."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -69,7 +69,7 @@ If successful, this action returns a `200 OK` response code and a new [uploadSes
 ## Examples
 
 ### Request
-The following is an example of a request to create an upload session.
+The following example shows a request to create an upload session.
 
 # [HTTP](#tab/http)
 <!-- {

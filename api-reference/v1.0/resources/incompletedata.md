@@ -3,7 +3,7 @@ author: daspek
 title: incompleteData resource type
 description: The incompleteData facet indicates that a resource was generated with incomplete data.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # incompleteData resource type

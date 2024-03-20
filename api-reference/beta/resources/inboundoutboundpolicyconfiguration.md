@@ -3,7 +3,7 @@ title: "inboundOutboundPolicyConfiguration resource type"
 description: "Defines the inbound and outbound rulesets for particular configurations within cross-tenant access settings."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

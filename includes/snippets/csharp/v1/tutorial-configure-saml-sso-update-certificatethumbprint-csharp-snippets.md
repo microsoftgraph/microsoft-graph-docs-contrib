@@ -11,7 +11,7 @@ using Microsoft.Graph.Models;
 
 var requestBody = new ServicePrincipal
 {
-	PreferredTokenSigningKeyThumbprint = "A7D3C4626B8A84FDA868CCC67D274D402FFD0A10",
+	PreferredTokenSigningKeyThumbprint = "5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

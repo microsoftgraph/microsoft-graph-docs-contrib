@@ -3,7 +3,7 @@ title: "myRole resource type"
 description: "Represents the role assignments to a signed-in user for a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 

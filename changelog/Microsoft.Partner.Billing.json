@@ -123,6 +123,40 @@
       "SubArea": "Partner billing reports"
     },
     {
+      "ChangeList": [                               
+        {
+          "Id": "b9c98ce4-20c9-48d8-9023-52bde6ceb89f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billingReconciliation",
+          "ChangeType": "Addition",
+          "Description": "Added the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingreconciliation?view=graph-rest-beta) resource type.",
+          "Target": "billingReconciliation"
+        },
+        {
+          "Id": "b9c98ce4-20c9-48d8-9023-52bde6ceb89f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billedReconciliation",
+          "ChangeType": "Addition",
+          "Description": "Added the [billedReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billedreconciliation?view=graph-rest-beta) resource and a supported method.",
+          "Target": "billedReconciliation"
+        },
+        {
+          "Id": "b9c98ce4-20c9-48d8-9023-52bde6ceb89f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reconciliation",
+          "ChangeType": "Addition",
+          "Description": "Added the **reconciliation** relationship to the [billing](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billing?view=graph-rest-beta) resource.",
+          "Target": "billing"
+        }
+      ],
+      "Id": "b9c98ce4-20c9-48d8-9023-52bde6ceb89f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-27T08:51:46.3920632Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Partner billing reports"
+    },
+    {
       "ChangeList": [
         {
           "Id": "abf7f5a2-4842-4016-a573-08731f5cb362",
@@ -241,6 +275,40 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-01-31T08:51:46.3920632Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Partner billing reports"
+    },
+    {
+      "ChangeList": [                               
+        {
+          "Id": "8b9489ef-dabc-47c9-982d-45afd83b4b1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billingReconciliation",
+          "ChangeType": "Addition",
+          "Description": "Added the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingreconciliation?view=graph-rest-1.0) resource type.",
+          "Target": "billingReconciliation"
+        },
+        {
+          "Id": "8b9489ef-dabc-47c9-982d-45afd83b4b1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billedReconciliation",
+          "ChangeType": "Addition",
+          "Description": "Added the [billedReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billedreconciliation?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "billedReconciliation"
+        },
+        {
+          "Id": "8b9489ef-dabc-47c9-982d-45afd83b4b1d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reconciliation",
+          "ChangeType": "Addition",
+          "Description": "Added the **reconciliation** relationship to the [billing](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billing?view=graph-rest-1.0) resource.",
+          "Target": "billing"
+        }
+      ],
+      "Id": "8b9489ef-dabc-47c9-982d-45afd83b4b1d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-02-14T08:51:46.3920632Z",
       "WorkloadArea": "Reports",
       "SubArea": "Partner billing reports"
     }

@@ -3,7 +3,7 @@ author: "learafa"
 description: "Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection."
 title: "lisItem: delta"
 ms.localizationpriority: "medium"
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # listItem: delta
@@ -222,11 +222,11 @@ Content-type: application/json
 
 ### Example 2: Last page request
 
-The following is an example of a request that shows the last page in a set and how to call this API to update your local state.
+The following example shows a request that gets the last page in a set and how to call this API to update your local state.
 
 #### Request
 
-The following is an example of a request after the initial request.
+The following example shows a request after the initial request.
 
 
 # [HTTP](#tab/http)
@@ -329,7 +329,7 @@ To retrieve the latest `deltaLink`, call `delta` with the query string parameter
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

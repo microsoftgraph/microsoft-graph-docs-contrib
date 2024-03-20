@@ -3,7 +3,7 @@ title: "educationSubmission: reassign"
 description: "Reassign the submission to the student with feedback for review."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "Get bundle"
 description: "Get a bundle of driveItems."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ You can use the [OData query parameters][odata-parameters] to restrict the shape
 
 ## Request body
 
-Do not supply a request body with this method.
+Don't supply a request body with this method.
 
 ## Response
 
@@ -60,7 +60,7 @@ For information about error responses, see [Microsoft Graph error responses and 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
@@ -139,7 +139,7 @@ Use the `expand` [query string parameter](/graph/query-parameters) to include th
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
@@ -184,10 +184,10 @@ GET https://graph.microsoft.com/v1.0/drive/items/{bundle-id}?expand=children
 
 #### Response
 
-The following example shows the response. This call will return the bundle metadata and a list of children of the bundle.
-If the bundle has no children, it will return an empty collection.
+The following example shows the response. This call returns the bundle metadata and a list of children of the bundle.
+If the bundle has no children, it returns an empty collection.
 
-If the number of children in the bundle is greater than the default page size, the **children@odata.nextLink** property will be returned with a URL that can be
+If the number of children in the bundle is greater than the default page size, the **children@odata.nextLink** property is returned with a URL that can be
 used to request the next page of children in the bundle.
 
 >**Note:** The response object shown here might be shortened for readability.

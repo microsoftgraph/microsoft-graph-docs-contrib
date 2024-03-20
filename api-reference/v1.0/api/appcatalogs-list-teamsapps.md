@@ -3,7 +3,7 @@ title: "List teamsApp"
 description: "List apps from the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -21,16 +21,13 @@ This includes apps from the Microsoft Teams store, as well as apps from your org
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission Type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All<sup>1</sup>, Directory.ReadWrite.All<sup>1</sup> |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "appcatalogs_list_teamsapps" } -->
+[!INCLUDE [permissions-table](../includes/permissions/appcatalogs-list-teamsapps-permissions.md)]
 
 > **Note**: 
-<br><sup>1</sup> These permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
+The Directory.Read.All and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
 
 ## HTTP request
 

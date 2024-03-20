@@ -3,7 +3,7 @@ title: "mobileAppAssignmentSettings resource type"
 description: "Abstract class to contain properties used to assign a mobile app to a group."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

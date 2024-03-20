@@ -3,7 +3,7 @@ title: "Get userRegistrationDetails"
 description: "Read the properties and relationships of a userRegistrationDetails object."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 

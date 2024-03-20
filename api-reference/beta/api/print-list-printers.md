@@ -3,7 +3,7 @@ title: Get printers
 description: Retrieve the list of printers that are registered in the tenant.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

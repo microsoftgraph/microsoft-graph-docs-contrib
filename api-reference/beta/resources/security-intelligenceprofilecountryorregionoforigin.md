@@ -3,7 +3,7 @@ title: "intelligenceProfileCountryOrRegionOfOrigin resource type"
 description: "Represents a country/region of origin for an actor related to a threat or vulnerability outlined in an intelligence profile."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

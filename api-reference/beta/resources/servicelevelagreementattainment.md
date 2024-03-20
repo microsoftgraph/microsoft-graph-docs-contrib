@@ -3,7 +3,7 @@ title: "serviceLevelAgreementAttainment resource type"
 description: "Describes the Microsoft Entra SLA attainment for a tenant for the identified calendar month."
 author: "SarahBar"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

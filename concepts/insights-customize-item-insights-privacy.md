@@ -3,7 +3,7 @@ title: "Customize item insights privacy in Microsoft Graph"
 description: "Configure the visibility of insights derived from Microsoft Graph by using the Microsoft admin center, PowerShell, or the REST API userInsightsSettings resource."
 author: "simonhult"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 ms.custom: scenarios:getting-started
 ---
 
@@ -115,7 +115,6 @@ Use the [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserv
 Keep the following in mind when updating item insights settings:
 - [insights settings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) are available only in the beta endpoint.
 - Get the ID of a Microsoft Entra group from the Microsoft Entra admin center, and make sure the group exists, because the update operation does not check the existence of the group. Specifying a non-existent group in **disabledForGroup** does _not_ disable insights for any users in the organization.
-- Updating settings can take up to 24 hours to be applied across all Microsoft 365 experiences.
 - Regardless of item insights settings, Delve continues to respect Delve tenant and user level [privacy settings](/sharepoint/delve-for-office-365-admins#control-access-to-delve-and-related-features?view=graph-rest-beta&preserve-view=true).
 
 

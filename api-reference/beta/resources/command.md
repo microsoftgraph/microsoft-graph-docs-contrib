@@ -3,7 +3,7 @@ title: "command resource type"
 description: "Set of commands sent to a device."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "myra-ramdenbourg"
 ---
 

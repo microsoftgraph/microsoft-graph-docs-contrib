@@ -3,7 +3,7 @@ title: "participant resource type"
 description: "Represents a participant in a call."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

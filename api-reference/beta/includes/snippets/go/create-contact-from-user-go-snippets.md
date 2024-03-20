@@ -17,27 +17,27 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewContact()
 givenName := "Pavel"
-requestBody.SetGivenName(&givenName)
+requestBody.SetGivenName(&givenName) 
 surname := "Bansky"
-requestBody.SetSurname(&surname)
+requestBody.SetSurname(&surname) 
 
 
 typedEmailAddress := graphmodels.NewTypedEmailAddress()
 address := "pavelb@contoso.com"
-typedEmailAddress.SetAddress(&address)
+typedEmailAddress.SetAddress(&address) 
 name := "Pavel Bansky"
-typedEmailAddress.SetName(&name)
-type := graphmodels.PERSONAL_EMAILTYPE
-typedEmailAddress.SetType(&type)
+typedEmailAddress.SetName(&name) 
+type := graphmodels.PERSONAL_EMAILTYPE 
+typedEmailAddress.SetType(&type) 
 typedEmailAddress1 := graphmodels.NewTypedEmailAddress()
 address := "pavelb@contoso.com"
-typedEmailAddress1.SetAddress(&address)
+typedEmailAddress1.SetAddress(&address) 
 name := "Pavel Bansky"
-typedEmailAddress1.SetName(&name)
-type := graphmodels.OTHER_EMAILTYPE
-typedEmailAddress1.SetType(&type)
+typedEmailAddress1.SetName(&name) 
+type := graphmodels.OTHER_EMAILTYPE 
+typedEmailAddress1.SetType(&type) 
 otherLabel := "Volunteer work"
-typedEmailAddress1.SetOtherLabel(&otherLabel)
+typedEmailAddress1.SetOtherLabel(&otherLabel) 
 
 emailAddresses := []graphmodels.TypedEmailAddressable {
 	typedEmailAddress,
@@ -48,9 +48,9 @@ requestBody.SetEmailAddresses(emailAddresses)
 
 phone := graphmodels.NewPhone()
 number := "+1 732 555 0102"
-phone.SetNumber(&number)
-type := graphmodels.BUSINESS_PHONETYPE
-phone.SetType(&type)
+phone.SetNumber(&number) 
+type := graphmodels.BUSINESS_PHONETYPE 
+phone.SetType(&type) 
 
 phones := []graphmodels.Phoneable {
 	phone,

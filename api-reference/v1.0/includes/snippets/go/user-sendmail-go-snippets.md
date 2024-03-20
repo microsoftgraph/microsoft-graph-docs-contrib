@@ -19,19 +19,19 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphusers.NewItemSendMailPostRequestBody()
 message := graphmodels.NewMessage()
 subject := "Meet for lunch?"
-message.SetSubject(&subject)
+message.SetSubject(&subject) 
 body := graphmodels.NewItemBody()
-contentType := graphmodels.TEXT_BODYTYPE
-body.SetContentType(&contentType)
+contentType := graphmodels.TEXT_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "The new cafeteria is open."
-body.SetContent(&content)
+body.SetContent(&content) 
 message.SetBody(body)
 
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 address := "frannis@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
@@ -43,7 +43,7 @@ message.SetToRecipients(toRecipients)
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
 address := "danas@contoso.com"
-emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
 ccRecipients := []graphmodels.Recipientable {
@@ -52,7 +52,7 @@ ccRecipients := []graphmodels.Recipientable {
 message.SetCcRecipients(ccRecipients)
 requestBody.SetMessage(message)
 saveToSentItems := false
-requestBody.SetSaveToSentItems(&saveToSentItems)
+requestBody.SetSaveToSentItems(&saveToSentItems) 
 
 graphClient.Me().SendMail().Post(context.Background(), requestBody, nil)
 

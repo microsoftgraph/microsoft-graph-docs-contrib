@@ -53,6 +53,7 @@ const bookingService = {
     displayName: 'Bento',
     isLocationOnline: true,
     smsNotificationsEnabled: true,
+    isCustomerAllowedToManageBooking: true,
     languageTag: 'en-US',
     isHiddenFromCustomers: false,
     notes: 'Home-cooked special',
