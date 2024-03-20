@@ -365,38 +365,23 @@
     {
       "name": "Extensions",
       "overview": "/graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true&tabs=http",
-      "childNodes": [
+      "workloads": [
         {
-          "name": "Directory extensions",
-          "workloads": [
-            {
-              "id": "Microsoft.DirectoryServices",
-              "includedResources": [
-                "extensionProperty"
-              ]
-            }
+          "id": "Microsoft.DirectoryServices",
+          "includedResources": [
+            "extensionProperty"
           ]
         },
         {
-          "name": "Open extensions",
-          "workloads": [
-            {
-              "id": "Microsoft.Exchange",
-              "includedResources": [
-                "openTypeExtension"
-              ]
-            }
+          "id": "Microsoft.Exchange",
+          "includedResources": [
+            "openTypeExtension"
           ]
         },
         {
-          "name": "Schema extensions",
-          "workloads": [
-            {
-              "id": "Microsoft.Graph.Extensibility",
-              "includedResources": [
-                "schemaExtension"
-              ]
-            }
+          "id": "Microsoft.Graph.Extensibility",
+          "includedResources": [
+            "schemaExtension"
           ]
         }
       ]
