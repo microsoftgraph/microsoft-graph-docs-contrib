@@ -82,8 +82,8 @@
           "Description": "Added the [businessScenarioTaskTargetBase](https://learn.microsoft.com/en-us/graph/api/resources/businessscenariotasktargetbase?view=graph-rest-beta) resource type.",
           "Target": "businessScenarioTaskTargetBase"
         },
-	{
-          "Id": "bc1f457f-bcdb-441c-be5f-ecbacce38c33",
+	      {
+          "Id": "3b33855d-ac6f-4ee0-89cd-19ee19790b24",
           "ApiChange": "Property",
           "ChangedApiName": "approvalAttachment",
           "ChangeType": "Addition",
@@ -91,10 +91,10 @@
           "Target": "plannerTaskPropertyRule"
         }
       ],
-      "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+      "Id": "3b33855d-ac6f-4ee0-89cd-19ee19790b24",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-01-10T23:04:43.2913535Z",
+      "CreatedDateTime": "2023-12-07T17:42:49.5069025Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": "Business scenarios"
     }
