@@ -37,12 +37,12 @@ In Exchange Online, each workspace is associated with a workspace mailbox. Deriv
 | floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | floorNumber            | Int32                                             | Specifies the floor number that the workspace is on. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the workspace location in latitude, longitude and optionally, altitude coordinates. |
-| id                     | String                                            | Unique identifier for the place. Read-only.  This identifier is not immutable and can change if there are changes to the mailbox or to the tenant configuration. |
+| id                     | String                                            | Unique identifier for the workspace. Read-only.  This identifier is not immutable and can change if there are changes to the mailbox or to the tenant configuration. |
 | isWheelChairAccessible | Boolean                                           | Specifies whether the workspace is wheelchair accessible. |
 | label                  | String                                            | Specifies a descriptive label for the workspace, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the workspace, for example, "quiet workspace". |
 | phone                  | String                                            | The phone number of the workspace. |
-| placeId                | String                                            | Unique, immutable identifier for the place.  Read-only.  The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet. |
+| placeId                | String                                            | Unique, immutable identifier for the workspace.  Read-only.  The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet. |
 | tags                   | String collection                                 | Specifies other features of the workspace; for example, the type of view or furniture type. |
 
 ### bookingType values
