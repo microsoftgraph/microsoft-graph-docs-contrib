@@ -92,6 +92,6 @@ Content-Type: application/json
   "sizeInGB": 64,
   "startDate": "2019-11-12",
   "endDate": "2022-05-10",
-  "expiredDate": "2022-11-10"
+  "expirationDate": "2022-11-10"
 }
 ```
