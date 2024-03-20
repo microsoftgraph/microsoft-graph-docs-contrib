@@ -54,7 +54,7 @@ In the request body, provide a JSON object for the `Query` parameter, and option
 | Parameter    | Type    | Description                                                                                                                      |
 |:-------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------|
 | Query        | String  | Required. The hunting query in Kusto Query Language (KQL). For more information about KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |
-| Timespan     | String  | Optional. The time span for the query in Kusto Query Language (KQL). If provided, the query runs within this timespan. If not provided, the default timespan of 30 days is used, as specified in ISO 8601 format. |
+| Timespan     | String  | Optional. The timespan over which to query data. This is an ISO8601 time period value. This timespan is applied in addition to any that are specified in the query expression. The default value is 30 days. |
 
 ### Timespan format examples
 
