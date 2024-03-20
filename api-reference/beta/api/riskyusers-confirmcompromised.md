@@ -1,5 +1,5 @@
 ---
-title: Confirm riskyUser compromised
+title: riskyUser: confirmCompromised
 description: Confirm a riskyUser object as compromised.
 author: tracyshi
 ms.localizationpriority: medium
