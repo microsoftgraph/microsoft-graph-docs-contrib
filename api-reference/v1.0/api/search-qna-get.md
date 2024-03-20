@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/v1.0/search/qnas/733b26d5-af76-4eea-ac69-1a0ce87
 
 ---
 
-
 ### Response
 
 The following example shows the response.
