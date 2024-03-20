@@ -69,8 +69,6 @@ items:
     href: ../../api/externalconnectors-schema-get.md
 - name: Complex types
   items:
-  - name: Json
-    href: ../../resources/json.md
   - name: Acl
     href: ../../resources/externalconnectors-acl.md
   - name: Activity settings
@@ -87,6 +85,8 @@ items:
     href: ../../resources/externalconnectors-externalitemcontent.md
   - name: Item id resolver
     href: ../../resources/externalconnectors-itemidresolver.md
+  - name: Json
+    href: ../../resources/json.md
   - name: Properties
     href: ../../resources/externalconnectors-properties.md
   - name: Property

@@ -11,8 +11,6 @@ items:
       href: ../../api/search-query.md
   - name: Complex types
     items:
-    - name: Json
-      href: ../../resources/json.md
     - name: Aggregation option
       href: ../../resources/aggregationoption.md
     - name: Alteration response
@@ -25,6 +23,8 @@ items:
       href: ../../resources/bucketaggregationrange.md
     - name: Collapse property
       href: ../../resources/collapseproperty.md
+    - name: Json
+      href: ../../resources/json.md
     - name: Result template
       href: ../../resources/resulttemplate.md
     - name: Result template option

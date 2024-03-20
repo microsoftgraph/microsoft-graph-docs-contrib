@@ -937,18 +937,28 @@ items:
         href: ../../resources/intune-shared-alldevicesassignmenttarget.md
       - name: All licensed users assignment target
         href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
+      - name: All licensed users assignment target
+        href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
       - name: Android minimum operating system
         href: ../../resources/intune-apps-androidminimumoperatingsystem.md
       - name: App configuration setting item
         href: ../../resources/intune-apps-appconfigurationsettingitem.md
       - name: Configuration manager collection assignment target
         href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
+      - name: Configuration manager collection assignment target
+        href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
+      - name: Device and app management assignment target
+        href: ../../resources/intune-shared-deviceandappmanagementassignmenttarget.md
       - name: Device and app management assignment target
         href: ../../resources/intune-shared-deviceandappmanagementassignmenttarget.md
       - name: Exclusion group assignment target
         href: ../../resources/intune-shared-exclusiongroupassignmenttarget.md
+      - name: Exclusion group assignment target
+        href: ../../resources/intune-shared-exclusiongroupassignmenttarget.md
       - name: File encryption info
         href: ../../resources/intune-apps-fileencryptioninfo.md
+      - name: Group assignment target
+        href: ../../resources/intune-shared-groupassignmenttarget.md
       - name: Group assignment target
         href: ../../resources/intune-shared-groupassignmenttarget.md
       - name: iOS device type
@@ -961,14 +971,16 @@ items:
         href: ../../resources/intune-apps-iosstoreappassignmentsettings.md
       - name: iOS VPP app assignment settings
         href: ../../resources/intune-apps-iosvppappassignmentsettings.md
+      - name: macOS LOB app assignment settings
+        href: ../../resources/intune-apps-macoslobappassignmentsettings.md
       - name: macOS LOB child app
         href: ../../resources/intune-apps-macoslobchildapp.md
       - name: macOS minimum operating system
         href: ../../resources/intune-apps-macosminimumoperatingsystem.md
-      - name: macOS LOB app assignment settings
-        href: ../../resources/intune-apps-macoslobappassignmentsettings.md
       - name: Microsoft Store for business app assignment settings
         href: ../../resources/intune-apps-microsoftstoreforbusinessappassignmentsettings.md
+      - name: Mime content
+        href: ../../resources/intune-shared-mimecontent.md
       - name: Mime content
         href: ../../resources/intune-shared-mimecontent.md
       - name: Mobile app assignment settings
@@ -1003,18 +1015,6 @@ items:
         href: ../../resources/intune-apps-windowsminimumoperatingsystem.md
       - name: Windows universal app x app assignment settings
         href: ../../resources/intune-apps-windowsuniversalappxappassignmentsettings.md
-      - name: All licensed users assignment target
-        href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
-      - name: Configuration manager collection assignment target
-        href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
-      - name: Device and app management assignment target
-        href: ../../resources/intune-shared-deviceandappmanagementassignmenttarget.md
-      - name: Exclusion group assignment target
-        href: ../../resources/intune-shared-exclusiongroupassignmenttarget.md
-      - name: Group assignment target
-        href: ../../resources/intune-shared-groupassignmenttarget.md
-      - name: Mime content
-        href: ../../resources/intune-shared-mimecontent.md
   - name: Company terms
     items:
     - name: Terms and conditions
@@ -2459,10 +2459,10 @@ items:
         href: ../../resources/intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md
       - name: Windows defender scan action result
         href: ../../resources/intune-devices-windowsdefenderscanactionresult.md
-      - name: Windows device ad account
-        href: ../../resources/intune-devices-windowsdeviceadaccount.md
       - name: Windows device account
         href: ../../resources/intune-devices-windowsdeviceaccount.md
+      - name: Windows device ad account
+        href: ../../resources/intune-devices-windowsdeviceadaccount.md
       - name: Windows device azure ad account
         href: ../../resources/intune-devices-windowsdeviceazureadaccount.md
       - name: Windows malware category count
@@ -2753,8 +2753,6 @@ items:
         href: ../../api/intune-wip-windowsinformationprotectionnetworklearningsummary-update.md
     - name: Complex types
       items:
-      - name: Json
-        href: ../../resources/json.md
       - name: All devices assignment target
         href: ../../resources/intune-shared-alldevicesassignmenttarget.md
       - name: All licensed users assignment target
@@ -2777,6 +2775,8 @@ items:
         href: ../../resources/intune-mam-iosmobileappidentifier.md
       - name: IP range
         href: ../../resources/iprange.md
+      - name: Json
+        href: ../../resources/json.md
       - name: Key value pair
         href: ../../resources/keyvaluepair.md
       - name: Managed app diagnostic status
@@ -2787,6 +2787,8 @@ items:
         href: ../../resources/intune-mam-mobileappidentifier.md
       - name: Proxied domain
         href: ../../resources/intune-mam-proxieddomain.md
+      - name: Virtual endpoint
+        href: ../../resources/virtualendpoint.md
       - name: Windows information protection app
         href: ../../resources/intune-mam-windowsinformationprotectionapp.md
       - name: Windows information protection data recovery certificate
@@ -2801,8 +2803,6 @@ items:
         href: ../../resources/intune-mam-windowsinformationprotectionresourcecollection.md
       - name: Windows information protection store app
         href: ../../resources/intune-mam-windowsinformationprotectionstoreapp.md
-      - name: Virtual endpoint
-        href: ../../resources/virtualendpoint.md
   - name: Role-based access control (RBAC)
     items:
     - name: Device and app management role assignment
