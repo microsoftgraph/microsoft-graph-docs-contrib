@@ -33,7 +33,7 @@ Represents the audit event entity.
 |actor|[cloudPcAuditActor](../resources/cloudpcauditactor.md)|Microsoft Entra ID user and application associated with the audit event. Read-only.|
 |category|[cloudPcAuditCategory](#cloudpcauditcategory-values)|The category of the audit event. Possible values include `cloudPC` and `unknownFutureValue`. Read-only.|
 |componentName|String|The component name for the audit event. Read-only.|
-|correlationId|String|The client request Id that is used to correlate activity within the system. Read-only.|
+|correlationId|String|The client request ID that is used to correlate activity within the system. Read-only.|
 |displayName|String|The display name for the audit event. Read-only.|
 |id|String|The unique identifier for the audit event. Read-only.|
 |resources|[cloudPcAuditResource](../resources/cloudpcauditresource.md) collection|The list of cloudPcAuditResource objects. Read-only.|
@@ -43,9 +43,9 @@ Represents the audit event entity.
 
 |Member|Description|
 |:---|:---|
-|create|Indicate create operation which is used for creating a target resource.|
-|delete|Indicate delete operation which is used for deleting a target resource.|
-|patch|Indicate patch operation which is used for updating a target resource.|
+|create|Indicate create operation, which is used for creating a target resource.|
+|delete|Indicate delete operation, which is used for deleting a target resource.|
+|patch|Indicate patch operation, which is used for updating a target resource.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcAuditActivityResult values
