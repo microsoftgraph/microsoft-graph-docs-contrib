@@ -21,9 +21,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|SecurityIdentitiesHealth.Read.All, SecurityIdentitiesHealth.ReadWrite.All|
+|Delegated (work or school account)|SecurityIdentitiesHealth.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|SecurityIdentitiesHealth.Read.All, SecurityIdentitiesHealth.ReadWrite.All|
+|Application|SecurityIdentitiesHealth.ReadWrite.All|Not supported.|
 
 ## HTTP request
 
