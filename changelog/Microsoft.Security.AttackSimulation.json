@@ -2070,7 +2070,7 @@
         {
           "Id": "1d8a7d37-11df-4d75-bb3a-737baf2195eb",
           "ApiChange": "Relationship",
-          "ChangedApiName": "trainingCampaigns",
+          "ChangedApiName": "trainingCampaign",
           "ChangeType": "Addition",
           "Description": "Added the **trainingCampaigns** relationship to the [attackSimulationRoot](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationRoot?view=graph-rest-beta) resource.",
           "Target": "attackSimulationRoot"
