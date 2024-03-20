@@ -3,7 +3,7 @@ title: "androidDeviceOwnerLocationMode enum type"
 description: "Android Device Owner Location Mode Type"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

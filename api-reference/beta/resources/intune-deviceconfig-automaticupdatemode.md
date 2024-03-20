@@ -3,7 +3,7 @@ title: "automaticUpdateMode enum type"
 description: "Possible values for automatic update mode."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

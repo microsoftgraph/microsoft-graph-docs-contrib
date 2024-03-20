@@ -59,7 +59,7 @@ The following example shows how to get an export job that was created by the POS
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -142,7 +142,7 @@ The following example shows how to get an export job that was created by the POS
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

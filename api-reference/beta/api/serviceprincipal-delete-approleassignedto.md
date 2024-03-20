@@ -55,7 +55,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of the request to delete an app role assignment from the resource service principal.
+The following example shows a request to delete an app role assignment from the resource service principal.
 
 
 # [HTTP](#tab/http)
@@ -106,7 +106,7 @@ In this example, `{resource-SP-id}` is the id of the resource service principal,
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

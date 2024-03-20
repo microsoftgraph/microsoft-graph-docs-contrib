@@ -85,7 +85,7 @@ Content-type: application/json
 ```
 
 ### Response
-The Here's an example of the response.
+The The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
