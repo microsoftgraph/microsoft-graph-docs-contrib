@@ -54,7 +54,7 @@ The following properties are deprecated:
 
 ### Device and app management | Device updates
 
-Added methods to the Windows Updates API for Windows products, including [retrieval of known issues by time range](/graph/api/resources/windowsupdates-product-getknownissuesbytimerange?view=graph-rest-beta&preserve-view=true), [finding product revisions by catalog ID](/graph/api/resources/windowsupdates-product-findbycatalogid?view=graph-rest-beta&preserve-view=true), and [by knowledge base number](/graph/api/resources/windowsupdates-product-findbykbnumber?view=graph-rest-beta&preserve-view=true).
+Added methods to the Windows Updates API for Windows products, including [retrieval of known issues by time range](/graph/api/windowsupdates-product-getknownissuesbytimerange?view=graph-rest-beta&preserve-view=true), [finding product revisions by catalog ID](/graph/api/windowsupdates-product-findbycatalogid?view=graph-rest-beta&preserve-view=true), and [by knowledge base number](/graph/api/windowsupdates-product-findbykbnumber?view=graph-rest-beta&preserve-view=true).
 
 ### Files
 
