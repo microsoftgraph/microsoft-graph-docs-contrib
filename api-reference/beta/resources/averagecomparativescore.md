@@ -1,6 +1,6 @@
 ---
 title: " averageComparativeScore resource type"
-description: "Contains various different scores based by different scopes (for example, average by industry vertical, average by company seat size, and so on) and control category (Identity, Data, Device, Apps, Infrastructure)."
+description: "Contains various different scores based by different scopes and control category."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: security
@@ -11,7 +11,7 @@ author: "preetikr"
 
 Namespace: microsoft.graph
 
-Contains various scores based on different scopes - such as average by industry vertical or company seat size - and control category (Identity, Data, Device, Apps, Infrastructure).
+Contains various scores based on different scopes - such as average by industry vertical or company size - and control category (Identity, Data, Device, Apps, Infrastructure).
 
 ## Properties
 | Property      | Type      | Description |
@@ -24,7 +24,7 @@ Contains various scores based on different scopes - such as average by industry 
 
 ## JSON representation
 
-The JSON representation shows the resource type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
