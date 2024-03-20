@@ -46,7 +46,7 @@ The [findRooms](/graph/api/user-findrooms) and [findRoomLists](/graph/api/user-f
 | address        | [physicalAddress](physicaladdress.md)             | The street address of the place. |
 | displayName    | String                                            | The name associated with the place. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the place location in latitude, longitude and (optionally) altitude coordinates. |
-| id             | String                                            | Unique identifier for the place. Read-only. |
+| id             | String                                            | Unique identifier for the place. Read-only.  This identifier is not immutable and can change if there are changes to the mailbox or to the tenant configuration. The beta version of this API has a new property added called "placeId" which provides an immutable Id. |
 | phone          | String                                            | The phone number of the place. |
 
 ## Relationships

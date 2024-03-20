@@ -37,7 +37,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude and optionally, altitude coordinates. |
-| id                     | String                                            | Unique identifier for the room. Read-only. |
+| id                     | String                                            | Unique identifier for the place. Read-only.  This identifier is not immutable and can change if there are changes to the mailbox or to the tenant configuration. The beta version of this API has a new property added called "placeId" which provides an immutable Id. |
 | isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |

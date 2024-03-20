@@ -35,9 +35,9 @@ Derived from [place](place.md).
 | displayName    | String                                            | The name associated with the room list. |
 | emailAddress   | String                                            | The email address of the room list. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the roomlist location in latitude, longitude and (optionally) altitude coordinates. |
-| id             | String                                            | Unique identifier for the room list. Read-only. |
+| id             | String                                            | Unique identifier for the place. Read-only.  This identifier is not immutable and can change if there are changes to the mailbox or to the tenant configuration. |
 | phone          | String                                            | The phone number of the room list. |
-| placeId        | String                                            | An alternate immutable unique identifier of the place. |
+| placeId        | String                                            | Unique, immutable identifier for the place.  Read-only.  The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet. |
 
 ## Relationships
 
