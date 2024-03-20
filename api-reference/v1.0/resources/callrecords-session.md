@@ -3,7 +3,7 @@ title: "session resource type"
 description: "Represents a user-user communication or a user-meeting communication in the case of a conference call."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

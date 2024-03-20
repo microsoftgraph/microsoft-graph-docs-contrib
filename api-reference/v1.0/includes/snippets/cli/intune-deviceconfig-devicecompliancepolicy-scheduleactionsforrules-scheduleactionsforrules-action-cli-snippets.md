@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta device-management device-compliance-policies schedule-actions-for-rules post --device-compliance-policy-id {deviceCompliancePolicy-id} --body '{\
+mgc device-management device-compliance-policies schedule-actions-for-rules post --device-compliance-policy-id {deviceCompliancePolicy-id} --body '{\
   "deviceComplianceScheduledActionForRules": [\
     {\
       "@odata.type": "#microsoft.graph.deviceComplianceScheduledActionForRule",\

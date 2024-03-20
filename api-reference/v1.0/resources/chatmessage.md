@@ -4,7 +4,7 @@ description: "Represents an individual chat message in a channel or chat entity.
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # chatMessage resource type

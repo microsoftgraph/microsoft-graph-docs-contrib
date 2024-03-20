@@ -3,7 +3,7 @@ title: "verifiableCredentialVerified resource type"
 description: "Represents the status where the service has validated the verifiable credential that the user presented."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -38,7 +38,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,7 +123,7 @@ Content-Type: application/json
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         }
     }
 }
@@ -133,7 +133,7 @@ Content-Type: application/json
 > 1. Provision the Microsoft Purview eDiscovery application by using [Create ServicePrincpal](../api/serviceprincipal-post-serviceprincipals.md) for the application ID b26e684c-5068-4120-a679-64a5d2c909d9.
 > 2. When the application is provisioned, request user-delegated permissions for discovery.Download.Read from the tenant admin. This request should be made from your third-party application interacting with Microsoft Graph.
 > 3. Make sure the tenant admin approves the request.
-> 4. Add the scope for the application to your existing script and make sure the headers include ("X-AllowWithAADToken", "true");. 
+> 4. Add the scope for the application to your existing script and make sure the headers include ("X-AllowWithAADToken", "true");.
 > By following these steps, the user authorization process will be automated, and you won't encounter a manual interactive sign-in page.
 
 

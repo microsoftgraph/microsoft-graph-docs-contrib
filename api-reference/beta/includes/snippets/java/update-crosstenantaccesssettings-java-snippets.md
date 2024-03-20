@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CrossTenantAccessSettings crossTenantAccessSettings = new CrossTenantAccessSettings();
-crossTenantAccessSettings.networkPacketTaggingStatus = Status.ENABLED;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.networkAccess().settings().crossTenantAccess()
-	.buildRequest()
-	.patch(crossTenantAccessSettings);
+com.microsoft.graph.beta.models.networkaccess.CrossTenantAccessSettings crossTenantAccessSettings = new com.microsoft.graph.beta.models.networkaccess.CrossTenantAccessSettings();
+crossTenantAccessSettings.setOdataType("#microsoft.graph.networkaccess.crossTenantAccessSettings");
+crossTenantAccessSettings.setNetworkPacketTaggingStatus(com.microsoft.graph.beta.models.networkaccess.Status.Enabled);
+com.microsoft.graph.models.networkaccess.CrossTenantAccessSettings result = graphClient.networkAccess().settings().crossTenantAccess().patch(crossTenantAccessSettings);
+
 
 ```

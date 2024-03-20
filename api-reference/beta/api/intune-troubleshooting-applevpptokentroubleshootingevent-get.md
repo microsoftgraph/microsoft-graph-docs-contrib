@@ -2,14 +2,16 @@
 title: "Get appleVppTokenTroubleshootingEvent"
 description: "Read properties and relationships of the appleVppTokenTroubleshootingEvent object."
 author: "jaiprakashmb"
-ms.localizationpriority: medium
-ms.prod: "intune"
+localization_priority: Normal
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
 # Get appleVppTokenTroubleshootingEvent
 
 Namespace: microsoft.graph
+
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -41,7 +43,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -55,7 +57,7 @@ If successful, this method returns a `200 OK` response code and [appleVppTokenTr
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 ```
 
 ### Response

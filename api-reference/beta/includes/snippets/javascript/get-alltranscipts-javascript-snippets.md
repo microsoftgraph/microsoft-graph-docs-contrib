@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let getAllTranscripts = await client.api('/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeeting/getAllTranscripts')
+let getAllTranscripts = await client.api('/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/getAllTranscripts')
 	.version('beta')
 	.filter('meetingOrganizerId eq \'8b081ef6-4792-4def-b2c9-c363a1bf41d5\'')
 	.get();

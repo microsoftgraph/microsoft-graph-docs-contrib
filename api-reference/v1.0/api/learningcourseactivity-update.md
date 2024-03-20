@@ -3,7 +3,7 @@ title: "Update learningCourseActivity"
 description: "Update the properties of a learningCourseActivity object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ PATCH /employeeExperience/learningProviders/{registrationId}/learningCourseActiv
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

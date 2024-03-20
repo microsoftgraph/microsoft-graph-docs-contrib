@@ -30,5 +30,5 @@ To perform basic tasks, see [Get started with the Microsoft Graph CLI](get-start
 
 ## Next steps
 
-- If you don't have a Microsoft 365 account, you can [sign up for the Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program) to get a free developer sandbox, including a Microsoft 365 E5 developer subscription.
+- If you don't have a Microsoft 365 tenant, you might qualify for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
 - If you already have access to a Microsoft 365 tenant, [Install the SDK](installation.md).

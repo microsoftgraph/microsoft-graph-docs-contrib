@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AccessReviewInstanceCollectionPage pendingAccessReviewInstances = graphClient.me().pendingAccessReviewInstances()
-	.buildRequest()
-	.expand("definition")
-	.skip(0)
-	.top(100)
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AccessReviewInstanceCollectionResponse result = graphClient.me().pendingAccessReviewInstances().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"definition"};
+	requestConfiguration.queryParameters.top = 100;
+	requestConfiguration.queryParameters.skip = 0;
+});
+
 
 ```

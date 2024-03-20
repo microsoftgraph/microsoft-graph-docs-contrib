@@ -72,11 +72,39 @@ In order to get a client ID, you need to [register your application](../../auth-
 
 ## Add components
 
-Now, you can use any of the Microsoft Graph Toolkit components as you normally would in your HTML templates. For example, to add the [Person component](../components/person.md), add the following to your template:
+Now, you can register and use any of the Microsoft Graph Toolkit components as you normally would in your HTML templates. For example, to add the [Person component](../components/person.md), update the app to register the component:
+
+
+```TypeScript
+import { Component, OnInit } from '@angular/core';
+import { Providers } from '@microsoft/mgt-element';
+import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+import { registerMgtPersonComponent } from '@microsoft/mgt-components';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+
+    ngOnInit()
+    {
+        Providers.globalProvider = new Msal2Provider({
+            clientId: '<YOUR-CLIENT-ID>'
+        });
+        registerMgtPersonComponent();
+    }
+}
+```
+
+And then add the following to your template:
 
 ```html
 <mgt-person person-query="me" view="twolines"></mgt-person>
 ```
+
+> **Note:** The register component functions should be invoked close to their use in subcomponents. This ensures that in larger applications where code splitting and tree shaking are used during bundling, the weight of those components can be deferred until necessary.
 
 ## Customizing components with Angular
 
@@ -99,7 +127,9 @@ Import the `TemplateHelper` and use the `.setBindingSyntax()` method to set your
 
 ```TypeScript
 import { Component, OnInit } from '@angular/core';
-import { Providers, Msal2Provider, TemplateHelper } from '@microsoft/mgt';
+import { Providers, TemplateHelper } from '@microsoft/mgt-element';
+import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+import { registerMgtPersonComponent } from '@microsoft/mgt-components';
 
 @Component({
     selector: 'app-root',
@@ -112,6 +142,7 @@ export class AppComponent implements OnInit {
     {
         Providers.globalProvider = new Msal2Provider({ clientId: '<YOUR-CLIENT-ID>'})
         TemplateHelper.setBindingSyntax('[[',']]');
+        registerMgtPersonComponent();
     }
 }
 ```

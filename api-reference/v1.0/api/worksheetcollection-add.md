@@ -1,17 +1,17 @@
 ---
-title: "WorksheetCollection: add"
-description: ".activate() on it."
+title: "worksheetCollection: add"
+description: "Add a new worksheet to the workbook."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# WorksheetCollection: add
+# worksheetCollection: add
 
 Namespace: microsoft.graph
 
-Adds a new worksheet to the workbook. The worksheet is added at the end of existing worksheets. If you wish to activate the newly added worksheet, call .activate() on it.
+Add a new worksheet to the workbook. The worksheet is added at the end of existing worksheets. If you want to activate the newly added worksheet, call `.activate()` on it.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -24,15 +24,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/items/{id}/workbook/worksheets
-POST /me/drive/root:/{item-path}:/workbook/worksheets
+POST /me/drive/items/{id}/workbook/worksheets/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/add
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -43,12 +43,12 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookWorksheet](../resources/worksheet.md) object in the response body.
+If successful, this method returns `201 Created` response code and [workbookWorksheet](../resources/worksheet.md) object in the response body.
 
-## Example
-Here's an example of how to call this API.
-##### Request
-Here's an example of the request.
+## Examples
+
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,8 +94,10 @@ Content-type: application/json
 
 ---
 
-##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

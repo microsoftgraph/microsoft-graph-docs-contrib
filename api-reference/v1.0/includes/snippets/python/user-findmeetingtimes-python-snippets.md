@@ -4,7 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.findMeetingTimes.find_meeting_times_request_builder import FindMeetingTimesRequestBuilder
+from msgraph.generated.models.find_meeting_times_post_request_body import FindMeetingTimesPostRequestBody
+from msgraph.generated.models.attendee_base import AttendeeBase
+from msgraph.generated.models.email_address import EmailAddress
+from msgraph.generated.models.location_constraint import LocationConstraint
+from msgraph.generated.models.location_constraint_item import LocationConstraintItem
+from msgraph.generated.models.time_constraint import TimeConstraint
+from msgraph.generated.models.time_slot import TimeSlot
+from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,7 +23,7 @@ request_body = FindMeetingTimesPostRequestBody(
 			type = AttendeeType.Required,
 			email_address = EmailAddress(
 				name = "Alex Wilbur",
-				address = "alexw@contoso.onmicrosoft.com",
+				address = "alexw@contoso.com",
 			),
 		),
 	],

@@ -1,9 +1,9 @@
 ---
 title: "deviceManagementCachedReportConfiguration resource type"
-description: "Entity representing the configuration of a cached report"
+description: "Entity representing the configuration of a cached report."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Entity representing the configuration of a cached report
+Entity representing the configuration of a cached report.
 
 ## Methods
 |Method|Return Type|Description|
@@ -29,15 +29,15 @@ Entity representing the configuration of a cached report
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for this entity|
-|reportName|String|Name of the report. This property is read-only.|
+|id|String|Unique identifier for this entity.|
+|reportName|String|Name of the report.|
 |filter|String|Filters applied on report creation.|
-|select|String collection|Columns selected from the report|
-|orderBy|String collection|Ordering of columns in the report|
-|metadata|String|Caller-managed metadata associated with the report|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the cached report. This property is read-only. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
-|lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed. This property is read-only.|
-|expirationDateTime|DateTimeOffset|Time that the cached report expires. This property is read-only.|
+|select|String collection|Columns selected from the report.|
+|orderBy|String collection|Ordering of columns in the report.|
+|metadata|String|Caller-managed metadata associated with the report.|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the cached report. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed.|
+|expirationDateTime|DateTimeOffset|Time that the cached report expires.|
 
 ## Relationships
 None

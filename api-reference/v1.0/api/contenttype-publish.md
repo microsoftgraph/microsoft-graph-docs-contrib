@@ -4,7 +4,7 @@ title: "contentType: publish"
 description: "Publish a content type present in the content type hub site."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentType: publish
@@ -37,7 +37,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -42,6 +42,10 @@ var requestBody = new CloudPcProvisioningPolicy
 	{
 		Language = "en-US",
 	},
+	WindowsSetting = new CloudPcWindowsSetting
+	{
+		Locale = "en-US",
+	},
 	ProvisioningType = CloudPcProvisioningType.Dedicated,
 };
 

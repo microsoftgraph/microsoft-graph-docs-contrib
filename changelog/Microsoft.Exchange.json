@@ -2347,6 +2347,24 @@
       "CreatedDateTime": "2023-11-09T00:00:00.000Z",
       "WorkloadArea": "Change notifications",
       "SubArea": ""
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b10ba647-3a60-4ca7-8cfb-de38906085b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "iCalUId",
+          "ChangeType": "Addition",
+          "Description": "Added the **iCalUId** property to the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) resource.",
+          "Target": "event"
+        }
+      ],
+      "Id": "b10ba647-3a60-4ca7-8cfb-de38906085b9",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-16T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    }    
   ]
 }

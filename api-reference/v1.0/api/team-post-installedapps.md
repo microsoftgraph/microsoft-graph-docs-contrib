@@ -3,7 +3,7 @@ title: "Add app to team"
 description: "Installs an app to the specified team."
 author: "akjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /teams/{team-id}/installedApps
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -74,7 +74,7 @@ The following example shows a request.
   "sampleKeys": ["87654321-0abc-zqf0-321456789q"]
 }-->
 ```http
-POST /teams/87654321-0abc-zqf0-321456789q/installedApps
+POST https://graph.microsoft.com/v1.0/teams/87654321-0abc-zqf0-321456789q/installedApps
 Content-type: application/json
 
 {
@@ -205,7 +205,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 ```
 
-## See also
+## Related content
 
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

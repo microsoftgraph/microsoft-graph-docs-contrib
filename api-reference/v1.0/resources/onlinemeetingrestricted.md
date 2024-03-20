@@ -3,7 +3,7 @@ title: "onlineMeetingRestricted resource type"
 description: "Indicates the reason or reasons media content from a participant is restricted."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

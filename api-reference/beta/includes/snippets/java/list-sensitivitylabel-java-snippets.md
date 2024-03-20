@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SensitivityLabelCollectionPage sensitivityLabels = graphClient.users("bob@contoso.com").security().informationProtection().sensitivityLabels()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.security.SensitivityLabelCollectionResponse result = graphClient.users().byUserId("{user-id}").security().informationProtection().sensitivityLabels().get();
+
 
 ```

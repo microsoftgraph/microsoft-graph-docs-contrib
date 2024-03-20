@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 RegionalAndLanguageSettings regionalAndLanguageSettings = new RegionalAndLanguageSettings();
-LinkedList<LocaleInfo> authoringLanguagesList = new LinkedList<LocaleInfo>();
-LocaleInfo authoringLanguages = new LocaleInfo();
-authoringLanguages.locale = "en-US";
-authoringLanguagesList.add(authoringLanguages);
-LocaleInfo authoringLanguages1 = new LocaleInfo();
-authoringLanguages1.locale = "es-MX";
-authoringLanguagesList.add(authoringLanguages1);
-regionalAndLanguageSettings.authoringLanguages = authoringLanguagesList;
+LinkedList<LocaleInfo> authoringLanguages = new LinkedList<LocaleInfo>();
+LocaleInfo localeInfo = new LocaleInfo();
+localeInfo.setLocale("en-US");
+authoringLanguages.add(localeInfo);
+LocaleInfo localeInfo1 = new LocaleInfo();
+localeInfo1.setLocale("es-MX");
+authoringLanguages.add(localeInfo1);
+regionalAndLanguageSettings.setAuthoringLanguages(authoringLanguages);
 LocaleInfo defaultRegionalFormat = new LocaleInfo();
-defaultRegionalFormat.locale = "en-US";
-regionalAndLanguageSettings.defaultRegionalFormat = defaultRegionalFormat;
+defaultRegionalFormat.setLocale("en-US");
+regionalAndLanguageSettings.setDefaultRegionalFormat(defaultRegionalFormat);
+RegionalAndLanguageSettings result = graphClient.me().settings().regionalAndLanguageSettings().patch(regionalAndLanguageSettings);
 
-graphClient.me().settings().regionalAndLanguageSettings()
-	.buildRequest()
-	.patch(regionalAndLanguageSettings);
 
 ```

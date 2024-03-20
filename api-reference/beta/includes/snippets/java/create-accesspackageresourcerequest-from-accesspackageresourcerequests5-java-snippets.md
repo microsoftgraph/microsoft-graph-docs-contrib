@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessPackageResourceRequest accessPackageResourceRequest = new AccessPackageResourceRequest();
-accessPackageResourceRequest.catalogId = "beedadfe-01d5-4025-910b-84abb9369997";
-accessPackageResourceRequest.requestType = "AdminRemove";
+accessPackageResourceRequest.setCatalogId("beedadfe-01d5-4025-910b-84abb9369997");
+accessPackageResourceRequest.setRequestType("AdminRemove");
 AccessPackageResource accessPackageResource = new AccessPackageResource();
-accessPackageResource.id = "354078e5-dbce-4894-8af4-0ab274d41662";
-accessPackageResourceRequest.accessPackageResource = accessPackageResource;
+accessPackageResource.setId("354078e5-dbce-4894-8af4-0ab274d41662");
+accessPackageResourceRequest.setAccessPackageResource(accessPackageResource);
+AccessPackageResourceRequest result = graphClient.identityGovernance().entitlementManagement().accessPackageResourceRequests().post(accessPackageResourceRequest);
 
-graphClient.identityGovernance().entitlementManagement().accessPackageResourceRequests()
-	.buildRequest()
-	.post(accessPackageResourceRequest);
 
 ```

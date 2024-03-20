@@ -4,14 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UnifiedGroupSource unifiedGroupSource = new UnifiedGroupSource();
-unifiedGroupSource.additionalDataManager().put("group@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/groups/93f90172-fe05-43ea-83cf-ff785a40d610"));
-unifiedGroupSource.includedSources = EnumSet.of(SourceType.MAILBOX);
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("b0073e4e-4184-41c6-9eb7-8c8cc3e2288b").custodians("0053a61a3b6c42738f7606791716a22a").unifiedGroupSources()
-	.buildRequest()
-	.post(unifiedGroupSource);
+com.microsoft.graph.models.security.UnifiedGroupSource unifiedGroupSource = new com.microsoft.graph.models.security.UnifiedGroupSource();
+unifiedGroupSource.setIncludedSources(EnumSet.of(com.microsoft.graph.models.security.SourceType.Mailbox));
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("group@odata.bind", "https://graph.microsoft.com/v1.0/groups/93f90172-fe05-43ea-83cf-ff785a40d610");
+unifiedGroupSource.setAdditionalData(additionalData);
+com.microsoft.graph.models.security.UnifiedGroupSource result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").custodians().byEdiscoveryCustodianId("{ediscoveryCustodian-id}").unifiedGroupSources().post(unifiedGroupSource);
+
 
 ```

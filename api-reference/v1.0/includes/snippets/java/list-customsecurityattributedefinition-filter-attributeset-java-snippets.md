@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CustomSecurityAttributeDefinitionCollectionPage customSecurityAttributeDefinitions = graphClient.directory().customSecurityAttributeDefinitions()
-	.buildRequest()
-	.filter("attributeSet eq 'Engineering' and status eq 'Available' and type eq 'String'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+CustomSecurityAttributeDefinitionCollectionResponse result = graphClient.directory().customSecurityAttributeDefinitions().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "attributeSet eq 'Engineering' and status eq 'Available' and type eq 'String'";
+});
+
 
 ```

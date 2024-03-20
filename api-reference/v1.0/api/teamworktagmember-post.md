@@ -3,7 +3,7 @@ title: "Create teamworkTagMember"
 description: "Create a new teamworkTagMember object in a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ POST /teams/{team-id}/tags/{teamworkTag-id}/members
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -53,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a [teamwork
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

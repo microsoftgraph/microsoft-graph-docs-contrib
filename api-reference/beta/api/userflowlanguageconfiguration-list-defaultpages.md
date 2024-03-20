@@ -3,7 +3,7 @@ title: "List defaultPages"
 description: "Get the userFlowLanguagePage resources from the defaultPages navigation property."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/defaultPages
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -4,7 +4,7 @@ ms.date: 09/11/2017
 title: FieldValueSet
 ms.localizationpriority: medium
 description: "Represents the column values in a listItem resource."
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

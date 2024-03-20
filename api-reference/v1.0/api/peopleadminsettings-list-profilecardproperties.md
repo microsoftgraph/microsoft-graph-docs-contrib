@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get a collection of [profileCardProperty](../resources/profilecardproperty.md) resources for an organization. Each resource is identified by its **directoryPropertyName** property.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -40,7 +40,7 @@ This method supports the `$select`, `$filter`, and `$orderBy` OData query parame
 
 | Name          |Description                  |
 |:--------------|:----------------------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -123,7 +123,7 @@ Content-type: application/json
           "displayName": "Cost Center",
           "localizations": [
             {
-              "languageTag": "ru-RU",
+              "languageTag": "ru",
               "displayName": "центр затрат"
             }
           ]

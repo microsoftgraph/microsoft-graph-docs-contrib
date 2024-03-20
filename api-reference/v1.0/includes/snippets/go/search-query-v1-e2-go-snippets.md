@@ -25,6 +25,8 @@ entityTypes := []graphmodels.EntityTypeable {
 	searchRequest.SetEntityType(&entityType)
 }
 searchRequest.SetEntityTypes(entityTypes)
+region := "US"
+searchRequest.SetRegion(&region) 
 query := graphmodels.NewSearchQuery()
 queryString := "contoso"
 query.SetQueryString(&queryString) 

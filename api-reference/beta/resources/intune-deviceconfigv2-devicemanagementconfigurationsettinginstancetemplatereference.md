@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationSettingInstanceTemplateReference resource t
 description: "Setting instance template reference information"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

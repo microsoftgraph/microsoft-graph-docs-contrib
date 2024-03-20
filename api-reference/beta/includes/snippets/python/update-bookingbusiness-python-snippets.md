@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.booking_business import BookingBusiness
+from msgraph.generated.models.booking_scheduling_policy import BookingSchedulingPolicy
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -19,7 +21,7 @@ request_body = BookingBusiness(
 	),
 )
 
-result = await graph_client.booking_businesses.by_booking_business_id('bookingBusiness-id').patch(request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').patch(request_body)
 
 
 ```

@@ -3,8 +3,9 @@ title: "governanceResource: register"
 description: "Register a governanceResource object in PIM."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # governanceResource: register
@@ -46,7 +47,7 @@ This method **only** supports the `$select` and `$expand` [OData query parameter
 
 | Name | Description |
 |:---- |:----------- |
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json |
 
 ## Request body

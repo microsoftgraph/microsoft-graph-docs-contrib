@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 GroupSetting groupSetting = new GroupSetting();
-LinkedList<SettingValue> valuesList = new LinkedList<SettingValue>();
-SettingValue values = new SettingValue();
-values.name = "AllowToAddGuests";
-values.value = "false";
-valuesList.add(values);
-groupSetting.values = valuesList;
+LinkedList<SettingValue> values = new LinkedList<SettingValue>();
+SettingValue settingValue = new SettingValue();
+settingValue.setName("AllowToAddGuests");
+settingValue.setValue("false");
+values.add(settingValue);
+groupSetting.setValues(values);
+GroupSetting result = graphClient.groupSettings().byGroupSettingId("{groupSetting-id}").patch(groupSetting);
 
-graphClient.groupSettings("84af2ca5-c274-41bf-86e4-6e374ec4def6")
-	.buildRequest()
-	.patch(groupSetting);
 
 ```

@@ -3,7 +3,7 @@ title: "Activity reports API overview"
 description: "Use the activity reports API in Microsoft Graph to access the reports that Microsoft Entra creates to help you track user activity in a tenant."
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 author: "egreenberg14"
 ms.date: 09/16/2022
 ---
@@ -66,20 +66,14 @@ GET custom security attribute audit logs | [https://graph.microsoft.com/beta/aud
 GET tenant user sign-ins | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
 GET provisioning logs | [https://graph.microsoft.com/beta/auditLogs/provisioning](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/Provisioning&version=beta)
 
-## What licenses do I need?
+## License requirements
 
-Activity reports are available for features that you've licensed. If you have a license for a specific feature, you also have access to the reports.
+Activity reports are available for features that you've licensed. If you have a license for a specific feature, you also have access to the reports. For more information about license requirements for the different activity reports, see [Microsoft Entra audit logs: License and role requirements](/entra/identity/monitoring-health/concept-audit-logs#license-and-role-requirements).
 
-For example, you need a Microsoft Entra ID P1 license to access self-service password audit reports.  To learn more, see [Microsoft Entra ID licensing](https://azure.microsoft.com/pricing/details/active-directory/).
+## Related content
 
-Sign-in reports require a Microsoft Entra ID P1 or P2 license.
-
-To learn more, see [Microsoft Entra pricing](https://azure.microsoft.com/pricing/details/active-directory/).
-
-## Next steps
-
-- [Register your app](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites.
-- To learn how to retrieve audit logs while authenticated using certificates, see [Tutorial: Get data using the Microsoft Entra reporting API with certificates](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).
-- Review the [directoryAudit](directoryaudit.md) resource and actions.
-- Review the [signIn](signin.md) resource and actions.
-- Review the [provisioningObjectSummary](provisioningobjectsummary.md) resource.
+- Start working with the following resources representing the different activity reports:
+  - [directoryAudit](directoryaudit.md) resource type.
+  - [signIn](signin.md) resource type. 
+  - [provisioningObjectSummary](provisioningobjectsummary.md) resource type.
+  - [customSecurityAttributeAudit](customsecurityattributeaudit.md) resource type.

@@ -3,7 +3,7 @@ title: "message: copy"
 description: "Copy a message to a folder."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ If successful, this method returns `201 Created` response code and a [message](.
 Here is an example of how to call this API.
 
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ Content-type: application/json
 
 ##### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

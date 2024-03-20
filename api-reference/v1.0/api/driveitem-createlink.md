@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Share a file with a link
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "You can use createLink action to share a DriveItem via a sharing link."
 doc_type: apiPageType
 ---
@@ -39,7 +39,14 @@ POST /sites/{siteId}/drive/items/{itemId}/createLink
 POST /users/{userId}/drive/items/{itemId}/createLink
 ```
 
-### Request body
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
 
 The body of the request defines properties of the sharing link your application is requesting.
 The request should be a JSON object with the following properties.
@@ -96,7 +103,7 @@ All existing permissions are removed when sharing for the first time i
 }-->
 
 ```http
-POST /me/drive/items/{item-id}/createLink
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/createLink
 Content-type: application/json
 
 {
@@ -178,7 +185,7 @@ To create a company sharable link, use the **scope** parameter with a value of `
 <!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
-POST /me/drive/items/{item-id}/createLink
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/createLink
 Content-Type: application/json
 
 {
@@ -258,7 +265,7 @@ When an embed link is created the `webHtml` property contains the HTML code for 
 <!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
-POST /me/drive/items/{item-id}/createLink
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/createLink
 Content-Type: application/json
 
 {

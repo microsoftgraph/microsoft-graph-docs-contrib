@@ -4,40 +4,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationalActivity educationalActivity = new EducationalActivity();
-educationalActivity.completionMonthYear = new DateOnly(1900,1,1);
-educationalActivity.endMonthYear = new DateOnly(1900,1,1);
+LocalDate completionMonthYear = LocalDate.parse("Date");
+educationalActivity.setCompletionMonthYear(completionMonthYear);
+LocalDate endMonthYear = LocalDate.parse("Date");
+educationalActivity.setEndMonthYear(endMonthYear);
 InstitutionData institution = new InstitutionData();
-institution.description = null;
-institution.displayName = "Colorado State University";
+institution.setDescription(null);
+institution.setDisplayName("Colorado State University");
 PhysicalAddress location = new PhysicalAddress();
-location.type = PhysicalAddressType.BUSINESS;
-location.postOfficeBox = null;
-location.street = "12000 E Prospect Rd";
-location.city = "Fort Collins";
-location.state = "Colorado";
-location.countryOrRegion = "USA";
-location.postalCode = "80525";
-institution.location = location;
-institution.webUrl = "https://www.colostate.edu";
-educationalActivity.institution = institution;
+location.setType(PhysicalAddressType.Business);
+location.setPostOfficeBox(null);
+location.setStreet("12000 E Prospect Rd");
+location.setCity("Fort Collins");
+location.setState("Colorado");
+location.setCountryOrRegion("USA");
+location.setPostalCode("80525");
+institution.setLocation(location);
+institution.setWebUrl("https://www.colostate.edu");
+educationalActivity.setInstitution(institution);
 EducationalActivityDetail program = new EducationalActivityDetail();
-program.abbreviation = "MBA";
-program.activities = null;
-program.awards = null;
-program.description = "Master of Business Administration with a major in Entreprenuership and Finance.";
-program.displayName = "Master of Business Administration";
-program.fieldsOfStudy = null;
-program.grade = "3.9";
-program.notes = null;
-program.webUrl = "https://biz.colostate.edu";
-educationalActivity.program = program;
-educationalActivity.startMonthYear = new DateOnly(1900,1,1);
+program.setAbbreviation("MBA");
+program.setActivities(null);
+program.setAwards(null);
+program.setDescription("Master of Business Administration with a major in Entreprenuership and Finance.");
+program.setDisplayName("Master of Business Administration");
+program.setFieldsOfStudy(null);
+program.setGrade("3.9");
+program.setNotes(null);
+program.setWebUrl("https://biz.colostate.edu");
+educationalActivity.setProgram(program);
+LocalDate startMonthYear = LocalDate.parse("Date");
+educationalActivity.setStartMonthYear(startMonthYear);
+EducationalActivity result = graphClient.me().profile().educationalActivities().post(educationalActivity);
 
-graphClient.me().profile().educationalActivities()
-	.buildRequest()
-	.post(educationalActivity);
 
 ```

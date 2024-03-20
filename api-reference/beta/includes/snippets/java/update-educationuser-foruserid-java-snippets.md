@@ -4,28 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationUser educationUser = new EducationUser();
-LinkedList<RelatedContact> relatedContactsList = new LinkedList<RelatedContact>();
-RelatedContact relatedContacts = new RelatedContact();
-relatedContacts.displayName = "Father Time";
-relatedContacts.emailAddress = "father@time.com";
-relatedContacts.mobilePhone = "4251231234";
-relatedContacts.relationship = ContactRelationship.GUARDIAN;
-relatedContacts.accessConsent = true;
-relatedContactsList.add(relatedContacts);
-RelatedContact relatedContacts1 = new RelatedContact();
-relatedContacts1.displayName = "Mother Nature";
-relatedContacts1.emailAddress = "mother@nature.co.uk";
-relatedContacts1.mobilePhone = "3251231234";
-relatedContacts1.relationship = ContactRelationship.PARENT;
-relatedContacts1.accessConsent = true;
-relatedContactsList.add(relatedContacts1);
-educationUser.relatedContacts = relatedContactsList;
+LinkedList<RelatedContact> relatedContacts = new LinkedList<RelatedContact>();
+RelatedContact relatedContact = new RelatedContact();
+relatedContact.setDisplayName("Father Time");
+relatedContact.setEmailAddress("father@time.com");
+relatedContact.setMobilePhone("4251231234");
+relatedContact.setRelationship(ContactRelationship.Guardian);
+relatedContact.setAccessConsent(true);
+relatedContacts.add(relatedContact);
+RelatedContact relatedContact1 = new RelatedContact();
+relatedContact1.setDisplayName("Mother Nature");
+relatedContact1.setEmailAddress("mother@nature.co.uk");
+relatedContact1.setMobilePhone("3251231234");
+relatedContact1.setRelationship(ContactRelationship.Parent);
+relatedContact1.setAccessConsent(true);
+relatedContacts.add(relatedContact1);
+educationUser.setRelatedContacts(relatedContacts);
+EducationUser result = graphClient.education().users().byEducationUserId("{educationUser-id}").patch(educationUser);
 
-graphClient.education().users("{educationUserId}")
-	.buildRequest()
-	.patch(educationUser);
 
 ```

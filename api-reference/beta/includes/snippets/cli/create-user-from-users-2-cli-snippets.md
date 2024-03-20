@@ -9,7 +9,7 @@ mgc-beta users create --body '{\
   "accountEnabled": true,\
   "displayName": "Adele Vance",\
   "mailNickname": "AdeleV",\
-  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",\
+  "userPrincipalName": "AdeleV@contoso.com",\
   "passwordProfile" : {\
     "forceChangePasswordNextSignIn": true,\
     "password": "xWwvJ]6NMw+bWH-d"\

@@ -3,7 +3,7 @@ title: "authenticationAttributeCollectionPage resource type"
 description: "Represents the attribute collection page that is part of a self-service user flow for external identities."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

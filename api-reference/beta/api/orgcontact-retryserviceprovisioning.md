@@ -3,7 +3,7 @@ title: "orgContact: retryServiceProvisioning"
 description: "Retries orgContact service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -34,12 +34,12 @@ POST /contacts/{id}/retryServiceProvisioning
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

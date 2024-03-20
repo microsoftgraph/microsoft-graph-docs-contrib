@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Chat chat = graphClient.chats("19:ebe3857aa388434bab0cad9d2e09f4de@thread.v2")
-	.buildRequest()
-	.expand("lastMessagePreview")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+Chat result = graphClient.chats().byChatId("{chat-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"lastMessagePreview"};
+});
+
 
 ```

@@ -3,7 +3,7 @@ title: "recommendation: tenantSecureScores"
 description: "Get historical Secure Score data for your Microsoft Entra tenant."
 author: "sacsai"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ GET /directory/recommendations/tenantSecureScores
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.informationProtection.policy.labels.extractLabel.extract_label_request_builder import ExtractLabelRequestBuilder
+from msgraph.generated.models.extract_label_post_request_body import ExtractLabelPostRequestBody
+from msgraph.generated.models.content_info import ContentInfo
+from msgraph.generated.models.key_value_pair import KeyValuePair
 
 graph_client = GraphServiceClient(credentials, scopes)
 

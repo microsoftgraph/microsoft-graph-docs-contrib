@@ -3,7 +3,7 @@ title: "articleIndicator resource type"
 description: "Represents a resource that communicates indicators of threat or compromise related to the contents of an article."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AuthenticationEventsFlowCollectionPage authenticationEventsFlows = graphClient.identity().authenticationEventsFlows()
-	.buildRequest()
-	.filter("microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/any(idp:idp/id eq 'Google-OAUTH')")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AuthenticationEventsFlowCollectionResponse result = graphClient.identity().authenticationEventsFlows().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/any(idp:idp/id eq 'Google-OAUTH')";
+});
+
 
 ```

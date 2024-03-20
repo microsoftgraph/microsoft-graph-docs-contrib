@@ -4,25 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Message message = new Message();
-LinkedList<MultiValueLegacyExtendedProperty> multiValueExtendedPropertiesList = new LinkedList<MultiValueLegacyExtendedProperty>();
-MultiValueLegacyExtendedProperty multiValueExtendedProperties = new MultiValueLegacyExtendedProperty();
-multiValueExtendedProperties.id = "StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette";
-LinkedList<String> valueList = new LinkedList<String>();
-valueList.add("Green");
-valueList.add("Aqua");
-valueList.add("Blue");
-multiValueExtendedProperties.value = valueList;
-multiValueExtendedPropertiesList.add(multiValueExtendedProperties);
-MultiValueLegacyExtendedPropertyCollectionResponse multiValueLegacyExtendedPropertyCollectionResponse = new MultiValueLegacyExtendedPropertyCollectionResponse();
-multiValueLegacyExtendedPropertyCollectionResponse.value = multiValueExtendedPropertiesList;
-MultiValueLegacyExtendedPropertyCollectionPage multiValueLegacyExtendedPropertyCollectionPage = new MultiValueLegacyExtendedPropertyCollectionPage(multiValueLegacyExtendedPropertyCollectionResponse, null);
-message.multiValueExtendedProperties = multiValueLegacyExtendedPropertyCollectionPage;
+LinkedList<MultiValueLegacyExtendedProperty> multiValueExtendedProperties = new LinkedList<MultiValueLegacyExtendedProperty>();
+MultiValueLegacyExtendedProperty multiValueLegacyExtendedProperty = new MultiValueLegacyExtendedProperty();
+multiValueLegacyExtendedProperty.setId("StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette");
+LinkedList<String> value = new LinkedList<String>();
+value.add("Green");
+value.add("Aqua");
+value.add("Blue");
+multiValueLegacyExtendedProperty.setValue(value);
+multiValueExtendedProperties.add(multiValueLegacyExtendedProperty);
+message.setMultiValueExtendedProperties(multiValueExtendedProperties);
+Message result = graphClient.me().messages().byMessageId("{message-id}").patch(message);
 
-graphClient.me().messages("AAMkAGE1M2_as77AACHsLrBBBA=")
-	.buildRequest()
-	.patch(message);
 
 ```
