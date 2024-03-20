@@ -1,13 +1,13 @@
 ---
 author: "vanshisingh"
 description: "Get newly created, updated, or deleted sites without having to perform a full read of the entire sites collection."
-title: "sites: delta"
+title: "site: delta"
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# sites: delta
+# site: delta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
