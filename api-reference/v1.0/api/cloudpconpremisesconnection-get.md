@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcOnPrem
 ### Example 1: Get the default properties of an Azure network connection
 
 #### Request
-
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_cloudpconpremisesconnection"
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/onPremises
 ---
 
 #### Response
-
+The following example shows the response.
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -103,7 +103,7 @@ Content-Type: application/json
 ### Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetail
 
 #### Request
-
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_cloudpconpremisesconnection_withDetails"

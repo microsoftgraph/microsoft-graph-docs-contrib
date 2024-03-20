@@ -15,7 +15,7 @@ Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpre
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-This will trigger a new health check for this [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object and change the healthCheckStatus and [healthCheckStatusDetail](../resources/cloudpconpremisesconnectionstatusdetail.md) properties when check finished.
+It triggers a new health check for this [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object and changes the healthCheckStatus and [healthCheckStatusDetail](../resources/cloudpconpremisesconnectionstatusdetail.md) properties when check finished.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "cloudpconpremisesconnection_runhealthcheck_2"
@@ -65,7 +65,7 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/onPremise
 ---
 
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
