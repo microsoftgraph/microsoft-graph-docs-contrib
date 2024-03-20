@@ -73,7 +73,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
   "displayName": "String",
   "endDate": "String (Date)",
-  "expiredDate": "String (Date)",
+  "expirationDate": "String (Date)",
   "id": "String (identifier)",
   "offer": "String",
   "offerDisplayName": "String",
