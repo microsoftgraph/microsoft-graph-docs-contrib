@@ -1,9 +1,8 @@
 ---
 title: "List healthIssues"
 description: "Get a list of health issue objects and their properties."
-author: "NaamaAlmog"
+author: "amirfeldman"
 ms.localizationpriority: medium
-ms.prod: "security"
 doc_type: apiPageType
 ms.date: 03/20/2024
 ---
@@ -52,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [healthIssue](../resources/healthissue.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [healthIssue](../resources/security-healthissue.md) objects in the response body.
 
 ## Examples
 

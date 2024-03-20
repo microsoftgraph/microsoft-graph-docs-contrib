@@ -1,9 +1,8 @@
 ---
 title: "healthIssue resource type"
 description: "Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity have identified."
-author: "NaamaAlmog"
+author: "amirfeldman"
 ms.localizationpriority: medium
-ms.prod: "security"
 doc_type: resourcePageType
 ms.date: 03/20/2024
 ---
@@ -31,8 +30,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |ID|String|Unique identifier to represent the health issue|
 |displayName|String|The display name of the health issue|
 |issueTypeId|String|The type identifier of the health issue. You can find a comprehensive list of all health issues and their identifiers at the following link: https://go.microsoft.com/fwlink/?linkid=2245397|
-|healthIssueType|[microsoft.graph.security.healthIssueType](#HealthIssueType-values)|The type of the health issue. The possible values are: `sensor`, `global`, `unknownFutureValue`. You can find a comprehensive list of all health issues at the following link: https://go.microsoft.com/fwlink/?linkid=2245397|
-|severity|[microsoft.graph.security.healthIssueSeverity](#healthIssueSeverity-values)|The severity of the health issue. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
+|healthIssueType|[microsoft.graph.security.healthIssueType](#healthissuetype-values)|The type of the health issue. The possible values are: `sensor`, `global`, `unknownFutureValue`. You can find a comprehensive list of all health issues at the following link: https://go.microsoft.com/fwlink/?linkid=2245397|
+|severity|[microsoft.graph.security.healthIssueSeverity](#healthissueseverity-values)|The severity of the health issue. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
 |status|[microsoft.graph.security.healthIssueStatus](#HealthIssueStatus-values)|The status of the health issue. The possible values are: `open`, `closed`, `suppressed`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|The date and time of when the health issue was generated|
 |lastModifiedDateTime|DateTimeOffset|The date and time of when the health issue was last updated|

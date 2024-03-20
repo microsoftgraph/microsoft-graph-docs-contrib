@@ -1,9 +1,8 @@
 ---
 title: "Update healthIssue"
 description: "Update the properties of a microsoft.graph.security.healthIssue object."
-author: "NaamaAlmog"
+author: "amirfeldman"
 ms.localizationpriority: medium
-ms.prod: "security"
 doc_type: apiPageType
 ms.date: 03/20/2024
 ---
@@ -20,12 +19,11 @@ Update the properties of a [microsoft.graph.security.healthIssue](../resources/s
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security-healthissue-update-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/security-healthissue-update-permissions.md)]
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|SecurityIdentitiesHealth.Read.All, SecurityIdentitiesHealth.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|SecurityIdentitiesHealth.Read.All, SecurityIdentitiesHealth.ReadWrite.All|
 
 ## HTTP request
 
@@ -48,24 +46,9 @@ PATCH /security/identities/healthIssues/{healthIssueId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|healthIssueType|microsoft.graph.security.healthIssueType|**TODO: Add Description**. The possible values are: `sensor`, `global`, `unknownFutureValue`. Optional.|
-|issueTypeId|String|**TODO: Add Description** Optional.|
-|severity|microsoft.graph.security.healthIssueSeverity|**TODO: Add Description**. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`. Optional.|
-|status|microsoft.graph.security.healthIssueStatus|**TODO: Add Description**. The possible values are: `open`, `closed`, `suppressed`, `unknownFutureValue`. Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|domainNames|String collection|**TODO: Add Description** Optional.|
-|sensorDNSNames|String collection|**TODO: Add Description** Optional.|
-|description|String|**TODO: Add Description** Required.|
-|recommendations|String collection|**TODO: Add Description** Required.|
-|recommendedActionCommands|String collection|**TODO: Add Description** Required.|
-|additionalInformation|String collection|**TODO: Add Description** Required.|
-
+|status|microsoft.graph.security.healthIssueStatus|The status of the health issue. The possible values are: `open`, `closed`, `suppressed`, `unknownFutureValue`.|
 
 
 ## Response

@@ -1,9 +1,8 @@
 ---
 title: "Get healthIssue"
 description: "Read the properties and relationships of a microsoft.graph.security.healthIssue object."
-author: "NaamaAlmog"
+author: "amirfeldman"
 ms.localizationpriority: medium
-ms.prod: "security"
 doc_type: apiPageType
 ms.date: 03/20/2024
 ---
