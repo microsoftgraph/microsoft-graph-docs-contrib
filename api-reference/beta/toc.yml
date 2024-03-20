@@ -16596,6 +16596,18 @@ items:
                     href: api/security-incident-update.md
                   - name: Create comment for incident
                     href: api/security-incident-post-comments.md
+          - name: Identites
+            items:
+              - name: Health Issue
+                items:
+                  - name: Health Issue
+                    href: resources/security-healthissue.md
+                  - name: List Health Issue
+                    href: api/security-list-healthissue.md
+                  - name: Get Health Issue
+                    href: api/security-healthissue-get.md
+                  - name: Update Health Issue
+                    href: api/security-healthissue-update.md
           - name: Attack simulation and training
             items:
               - name: Simulations
