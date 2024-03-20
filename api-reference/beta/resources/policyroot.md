@@ -17,7 +17,9 @@ Resource type exposing navigation properties for the policies singleton.
 None
 
 ## Properties
-None
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Unique identifier of the policy. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 
