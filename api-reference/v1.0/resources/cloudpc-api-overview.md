@@ -28,7 +28,7 @@ Microsoft Graph controls access to resources via permissions. As a developer, yo
 
 |Use cases|REST resources|See also|
 |:---|:---|:---|
-|List, get, create, delete, and get source images|[cloudPCDeviceImage](../resources/cloudpcdeviceimage.md)|[Device images overview](/windows-365/enterprise/device-images)|
+|List, get, create, delete, and get source images|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|[Device images overview](/windows-365/enterprise/device-images)|
 
 ## Next steps
 - Check out the [overview for Windows 365 Cloud PC on Microsoft Graph](/graph/cloudpc-concept-overview).
