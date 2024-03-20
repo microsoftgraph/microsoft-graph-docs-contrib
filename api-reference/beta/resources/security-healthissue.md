@@ -29,10 +29,10 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |ID|String|Unique identifier to represent the health issue|
 |displayName|String|The display name of the health issue|
-|issueTypeId|String|The type identifier of the health issue. You can find a comprehensive list of all health issues and their identifiers at the following link: https://go.microsoft.com/fwlink/?linkid=2245397|
-|healthIssueType|[microsoft.graph.security.healthIssueType](#healthissuetype-values)|The type of the health issue. The possible values are: `sensor`, `global`, `unknownFutureValue`. You can find a comprehensive list of all health issues at the following link: https://go.microsoft.com/fwlink/?linkid=2245397|
+|issueTypeId|String|The type identifier of the health issue. You can find a comprehensive list of all health issues and their identifiers at the following link: https://go.microsoft.com/fwlink/?linkid=2245397 |
+|healthIssueType|[microsoft.graph.security.healthIssueType](#healthissuetype-values)|The type of the health issue. The possible values are: `sensor`, `global`, `unknownFutureValue`. You can find a comprehensive list of all health issues at the following link: https://go.microsoft.com/fwlink/?linkid=2245397 |
 |severity|[microsoft.graph.security.healthIssueSeverity](#healthissueseverity-values)|The severity of the health issue. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
-|status|[microsoft.graph.security.healthIssueStatus](#HealthIssueStatus-values)|The status of the health issue. The possible values are: `open`, `closed`, `suppressed`, `unknownFutureValue`.|
+|status|[microsoft.graph.security.healthIssueStatus](#healthissuestatus-values)|The status of the health issue. The possible values are: `open`, `closed`, `suppressed`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|The date and time of when the health issue was generated|
 |lastModifiedDateTime|DateTimeOffset|The date and time of when the health issue was last updated|
 |domainNames|String collection|List of the fully qualified domain name of the domains or the sensors the health issue is related to|
