@@ -10291,6 +10291,15 @@ items:
                     href: api/windowsupdates-deploymentaudience-updateaudience.md
                   - name: Update by ID
                     href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+              - name: Product
+                href: resources/windowsupdates-product.md
+                items:
+                  - name: Get known issues by time range
+                    href: api/windowsupdates-product-getknownissuesbytimerange.md 
+                  - name: Find by catalog ID
+                    href: api/windowsupdates-product-findbycatalogid.md
+                  - name: Find by knowledge base number
+                    href: api/windowsupdates-product-findbykbnumber.md
               - name: Resource connection
                 href: resources/windowsupdates-resourceconnection.md
                 items:
