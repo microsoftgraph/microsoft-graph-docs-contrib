@@ -32,11 +32,13 @@ Deleting a **plannerRoster** will also delete the plan and all tasks in the plan
 |[Create plannerRosterMember](../api/plannerroster-post-members.md)|[plannerRosterMember](../resources/plannerrostermember.md)|Create a new plannerRosterMember object.|
 |[List plans](../api/plannerroster-list-plans.md)|[plannerPlan](../resources/plannerplan.md) collection|Get the plannerPlan resources from the plans navigation property.|
 |[List user's rosterPlans](../api/planneruser-list-rosterplans.md)|[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) contained by the [plannerRosters](plannerroster.md) that the user is a member.|
+|[Assign sensitivityLabelAssignment](../api/plannerroster-assign-sensitivitylabel.md)|[[plannerRoster](plannerroster.md)]|set the [sensitivityLabelAssignment](sensitivitylabelassignment.md) on the roster|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier of the **plannerRoster**. Read only. Inherited from [entity](../resources/entity.md)|
+| `assignedSensitivityLabel` | `microsoft.graph.sensitivityLabelAssignment` | The sensitivity label applied to the roster. If mandatory labeling is enabled for the user and no label is specified, the user cannot create the roster. Similarly, if labels are mandatory for the user, the user cannot change the roster's label to null. |
 
 ## Relationships
 |Relationship|Type|Description|

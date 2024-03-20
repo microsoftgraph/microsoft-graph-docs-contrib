@@ -118,3 +118,13 @@ Content-Type: application/json
 }
 ```
 
+### Errors
+
+#### 403 Forbidden
+
+If labels are mandatory for the user, and the created roster would have no sensitivity label, the request will fail, and the **code** property of the error resource type will be "SensitivityLabelsAreMandatory".
+
+If the roster would be created with guest members initially added to the roster, but the proposed sensitivityLabel disallows the addition of guest users, the request will fail, and the **code** property on the error resource type will be "AddingGuestUsersProhibitedByLabel"
+
+If the provided label does not have the correct tenant ID, the request will fail.  The **code** property on the error response will be "TenantIdIsIncorrect"
+
