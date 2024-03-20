@@ -3,7 +3,7 @@ title: "Create cloudPcOnPremisesConnection"
 description: "Create an Azure network connection for provisioning Cloud PCs."
 author: "Emma0727"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

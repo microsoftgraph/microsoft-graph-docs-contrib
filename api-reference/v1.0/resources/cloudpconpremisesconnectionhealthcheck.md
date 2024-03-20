@@ -3,7 +3,7 @@ title: "cloudPcOnPremisesConnectionHealthCheck resource type"
 description: "The result of a Cloud PC Azure network connection health check."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

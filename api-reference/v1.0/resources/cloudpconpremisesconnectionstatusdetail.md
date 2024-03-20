@@ -1,9 +1,9 @@
 ---
 title: "cloudPcOnPremisesConnectionStatusDetail resource type"
 description: "The status details of a Cloud PC Azure network connection."
-author: "wcchen101"
+author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
