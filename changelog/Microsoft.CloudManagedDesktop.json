@@ -2,12 +2,20 @@
     "changelog": [
         {
             "ChangeList": [
+               {
+                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                 "ApiChange": "Resource",
+                 "ChangedApiName": "auditEvents",
+                 "ChangeType": "Addition",
+                 "Description": "Added the **auditEvents** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
+                 "Target": "virtualEndpoint"
+              },
               {
                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
                 "ApiChange": "Resource",
                 "ChangedApiName": "cloudPcAuditEvent",
                 "ChangeType": "Addition",
-                "Description": "Added the [cloudPcAuditEvent](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-1.0) resource type under virtualEndpoint.",
+                "Description": "Added the [cloudPcAuditEvent](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-1.0) resource and its methods.",
                 "Target": "virtualEndpoint"
               },
               {
@@ -41,14 +49,6 @@
                 "ChangeType": "Addition",
                 "Description": "Added the [cloudPcAuditProperty](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditproperty?view=graph-rest-1.0) complex type.",
                 "Target": "cloudPcAuditEvent"
-              },
-              {
-                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "cloudPcAuditActorType",
-                "ChangeType": "Addition",
-                "Description": "Added the [cloudPcAuditActorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditactor?view=graph-rest-1.0#cloudpcauditactortype-values) enumeration.",
-                "Target": "cloudPcAuditActor"
               },
               {
                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",

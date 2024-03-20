@@ -17,11 +17,23 @@ Use the Cloud PC API to provision and manage virtual desktops for employees in a
 
 Inherits from [entity](../resources/entity.md).
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List auditEvents](../api/virtualendpoint-list-auditevents.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|List properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects.|
+
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier (ID) for the virtual endpoint. Read-only. Inherited from [entity](../resources/entity.md).|
+
+## Relationships
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+|auditEvents|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|Cloud PC audit event.|
 
 ## JSON representation
 
