@@ -357,6 +357,12 @@ items:
       href: ../../api/synchronization-synchronizationjob-validatecredentials.md
     - name: provisionOnDemand
       href: ../../api/synchronization-synchronizationjob-provisionondemand.md
+    - name: Bulk upload
+      items:
+      - name: Bulk upload
+        href: ../../resources/synchronization-bulkupload.md
+      - name: Perform bulkUpload
+        href: ../../api/synchronization-synchronizationjob-post-bulkupload.md
   - name: Synchronization schema
     items:
     - name: Synchronization schema

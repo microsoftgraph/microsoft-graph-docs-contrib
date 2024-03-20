@@ -65,6 +65,19 @@
                 "synchronizationSchema"
               ]
             }
+          ],
+          "childNodes": [
+            {
+              "name": "Synchronization job",
+              "workloads": [
+                {
+                  "id": "Microsoft.IAM",
+                  "includedResources": [
+                    "bulkUpload"
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
