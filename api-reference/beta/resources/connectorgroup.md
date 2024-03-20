@@ -34,7 +34,7 @@ After a connector group is created, you can add or move connectors to the connec
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|connectorGroupType|connectorGroupType| Indicates the type of hybrid agent. This pre-set by the system. Possible values are: `applicationProxy`. Read-only. |
+|connectorGroupType|connectorGroupType| Indicates the type of hybrid agent. This pre-set by the system. Possible values are: `applicationProxy`, `syncFabric`. Read-only. |
 |id|string| Unique identifier for this connectorGroup. Read-only. |
 |isDefault|boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is pre-set by the system. Read-only. |
 |name|string| The name associated with the connectorGroup. |
