@@ -32,6 +32,8 @@ This article provides guidance on the allowed configuration for the **arguments*
 | Add user to teams | e440ed8d-25a1-4618-84ce-091ed5be5594 | name: `teamID`<br/>value: a valid group ID or a comma-separated list of teams to which the user will be added as a member. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"` |
 | Enable user account | 6fc52c9d-398b-4305-9763-15f42c1676fc | None |
 | Run a custom task extension | 4262b724-8dba-4fad-afc3-43fcbb497a0e | name: `CustomTaskExtensionID`<br/>value: The ID of the custom task extension |
+| Assign licenses to users (Preview) | 683c87a4-2ad4-420b-97d4-220d90afcd24 | name: `licenses`<br/>value: The ID of the license you want to assign |
+| Remove selected license assignments from user (Preview) | 5fc402a8-daaf-4b7b-9203-da868b05fc5f | name: `licenses`<br/>value: The ID of the license you want to assign |
 | Disable user account | 1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950 | None |
 | Remove user from selected group | 1953a66c-751c-45e5-8bfe-01462c70da3c | name: `groupID`<br/>value: a valid group ID or a comma-separated list of groups that the user is a member of. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"` |
 | Remove users from all groups | b3a31406-2a15-4c9a-b25b-a658fa5f07fc | None |
