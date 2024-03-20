@@ -36,7 +36,6 @@ GET /admin/windows/updates/products/FindByKbNumber(kbNumber={kbNumber})
 
 ## Query parameters
 
-In the request URL, provide the following query parameters with values.
 The following table shows the parameter that must be used with this function.
 
 |Parameter|Type|Description|
