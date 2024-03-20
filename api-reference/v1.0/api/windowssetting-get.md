@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/v1.0/me/settings/windows/{windowsSettingId}
 
 ---
 
-
 ### Response
 
 The following example shows the response.

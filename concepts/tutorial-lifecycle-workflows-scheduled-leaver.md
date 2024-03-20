@@ -107,35 +107,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -206,35 +206,35 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/work
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-scheduledleaver-run-workflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -261,35 +261,35 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workf
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresults-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -341,35 +341,35 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workf
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-scheduledleaver-list-userprocessingresultssummary-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -409,35 +409,35 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/LifecycleWorkflows/workf
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-scheduledleaver-list-taskprocessingresults-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -548,35 +548,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-scheduledleaver-update-workflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

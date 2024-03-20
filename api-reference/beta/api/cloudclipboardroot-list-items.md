@@ -114,7 +114,6 @@ GET https://graph.microsoft.com/beta/me/cloudClipboard/items
 
 ---
 
-
 ### Response
 
 The following example shows the response.

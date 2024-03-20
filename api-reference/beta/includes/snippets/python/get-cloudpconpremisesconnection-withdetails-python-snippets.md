@@ -10,7 +10,7 @@ from msgraph.generated.deviceManagement.virtualEndpoint.onPremisesConnections.it
 graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = CloudPcOnPremisesConnectionItemRequestBuilder.CloudPcOnPremisesConnectionItemRequestBuilderGetQueryParameters(
-		select = ["id","displayName","healthCheckStatus","healthCheckStatusDetails","inUse"],
+		select = ["id","displayName","healthCheckStatus","healthCheckStatusDetail","healthCheckStatusDetails","inUse"],
 )
 
 request_configuration = CloudPcOnPremisesConnectionItemRequestBuilder.CloudPcOnPremisesConnectionItemRequestBuilderGetRequestConfiguration(
