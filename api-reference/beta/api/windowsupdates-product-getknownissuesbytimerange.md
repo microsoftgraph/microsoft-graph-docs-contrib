@@ -36,7 +36,6 @@ GET /admin/windows/updates/products/{id}/GetKnownIssuesByTimeRange(daysInPast={d
 
 ## Query parameters
 
-In the request URL, provide the following query parameters with values.
 The following table shows the parameters that must be used with this function.
 
 |Parameter|Type|Description|
