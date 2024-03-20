@@ -3,7 +3,7 @@ title: "Create ContactFolder"
 description: "Create a new contactFolder as a child of a specified folder. "
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -44,7 +44,7 @@ If successful, this method returns `201 Created` response code and [ContactFolde
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,7 +96,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

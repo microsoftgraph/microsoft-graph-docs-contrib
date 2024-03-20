@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssecurity.NewAlert()
-assignedTo := "secAdmin@contoso.onmicrosoft.com"
+assignedTo := "secAdmin@contoso.com"
 requestBody.SetAssignedTo(&assignedTo) 
 classification := graphmodels.TRUEPOSITIVE_ALERTCLASSIFICATION 
 requestBody.SetClassification(&classification) 

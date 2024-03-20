@@ -3,7 +3,7 @@ title: "synchronization: acquireAccessToken"
 description: "Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application"
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/acquireAccessToken
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

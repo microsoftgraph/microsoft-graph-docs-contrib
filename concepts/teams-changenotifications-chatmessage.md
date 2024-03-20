@@ -3,7 +3,7 @@ title: "Get change notifications for messages in Teams channels and chats using 
 description: "Change notifications enable you to listen to changes to messages in channel or chat"
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
@@ -22,7 +22,7 @@ To track all changes related to messages in a tenant, you can use subscriptions 
 
 ### Subscribe to messages across all channels
 
-To get change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 [!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
@@ -54,7 +54,7 @@ Content-Type: application/json
 
 ### Subscribe to messages across all chats
 
-To get change notifications for all messages across chats in a tenant, subscribe to `/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all messages across chats in a tenant, subscribe to `/chats/getAllMessages`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 [!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
@@ -86,7 +86,7 @@ Content-Type: application/json
 
 ## Subscribe to messages in a channel
 
-To track messages and replies in a channel, you can create a change notification subscription at a channel level by subscribing to `/teams/{team-id}/channels/{channel-id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only mode*.
+To track messages and replies in a channel, you can create a change notification subscription at a channel level by subscribing to `/teams/{team-id}/channels/{channel-id}/messages`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification in both *delegated* and *application-only mode*.
 
 Channel-level subscriptions also support keyword-based search via the `$search` query parameter.
 
@@ -174,7 +174,7 @@ Content-Type: application/json
 
 ## Subscribe to messages in a chat
 
-To track messages in a chat, you can create a change notification subscription at a chat level by subscribing to `/chats/{chat-id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and  *application-only mode*.
+To track messages in a chat, you can create a change notification subscription at a chat level by subscribing to `/chats/{chat-id}/messages`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification in both *delegated* and  *application-only mode*.
 
 Chat-level subscriptions also support keyword-based search via the `$search` query parameter.
 
@@ -261,7 +261,7 @@ Content-Type: application/json
 
 ## Subscribe to changes at the user level
 
-To track messages across all chats a particular user is part of, you can create a change notification subscription at a user level by subscribing to `/users/{user-id}/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only* modes.
+To track messages across all chats a particular user is part of, you can create a change notification subscription at a user level by subscribing to `/users/{user-id}/chats/getAllMessages`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification in both *delegated* and *application-only* modes.
 
 User-level chat messaging subscriptions also support keyword-based search via the `$search` query parameter.
 
@@ -294,7 +294,7 @@ Content-Type: application/json
 ```
 ## Subscribe to messages of any chat in a tenant where a specific Teams app is installed
 
-To get change notifications for all messages across chats in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all messages across chats in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllMessages`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 [!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
@@ -357,7 +357,7 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
 The decrypted notification payload looks like the following. The payload conforms to the [chatMessage](/graph/api/resources/chatMessage?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
@@ -425,8 +425,8 @@ The payload looks like the following. This payload is for a message sent in a ch
 
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message. GET calls always return the current state of the message. If the message is changed between when the notification is sent and when the message is retrieved, the operation returns the updated message.
 
-## See also
-- [Microsoft Graph change notifications](webhooks.md)
+## Related content
+- [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 - [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)

@@ -1,17 +1,20 @@
 ---
-title: "activeUsersBreakdownMetric resource type"
+title: "activeUsersBreakdownMetric resource type (deprecated)"
 description: "Represents breakdown insights of daily and monthly user activity on apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
-# activeUsersBreakdownMetric resource type
+# activeUsersBreakdownMetric resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The `activeUsersBreakdown` resource type and its associated methods is deprecated and will stop returning data on March 9, 2024. Use the [activeUsersMetric](../resources/activeusersmetric.md) resource and its associated methods instead.
 
 Represents breakdown insights of daily and monthly user activity on apps registered in your tenant that is configured for Microsoft Entra External ID for customers.
 

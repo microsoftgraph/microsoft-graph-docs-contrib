@@ -1,9 +1,9 @@
 ---
 title: Get printer
-description: Retrieve the properties and relationships of a printer object.
+description: "Retrieve the properties and relationships of a printer object."
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a [printer](../resources/printer.md
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed-in user must be a [Printer administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
@@ -36,26 +36,26 @@ GET /print/shares/{id}/printer
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters including $select, $expand to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some OData query parameters including $select, $expand to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-for example 
+For example 
 ```http
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [printer](../resources/printer.md) object in the response body.
-By default, the response won't contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 
+By default, the response doesn't contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/print/printers/{id}
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -180,7 +180,7 @@ Content-type: application/json
 }
 ```
 
-Here's an example of the response, when using $select=id,displayName,capabilities
+The following example shows the response, when using $select=id,displayName,capabilities
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

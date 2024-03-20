@@ -175,7 +175,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response shown here might be shortened for readability.
 

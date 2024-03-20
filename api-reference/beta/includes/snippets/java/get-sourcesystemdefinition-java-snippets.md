@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SourceSystemDefinition sourceSystemDefinition = graphClient.external().industryData().sourceSystems("0190210e-8827-4747-6f2b-08dacc885e72")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.industrydata.SourceSystemDefinition result = graphClient.external().industryData().sourceSystems().bySourceSystemDefinitionId("{sourceSystemDefinition-id}").get();
+
 
 ```

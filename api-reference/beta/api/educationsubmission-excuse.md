@@ -1,9 +1,9 @@
 ---
 title: "educationSubmission: excuse"
 description: "Excuse an educationSubmission  object."
-author: "raghuchekuri"
+author: "raghuchek"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -20,13 +20,10 @@ If the `Prefer: include-unknown-enum-members` request header is provided, the ex
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All | 
+<!-- { "blockType": "permissions", "name": "educationsubmission_excuse" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsubmission-excuse-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +34,7 @@ POST /education/classes/{classId}/assignments/{assignmentId}/submissions/{submis
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer  | `include-unknown-enum-members`. Optional.  |
 
 ## Request body
@@ -59,7 +56,7 @@ The following example shows a request that uses the `Prefer: include-unknown-enu
   "name": "educationsubmission_excuse"
 }-->
 
-```http 
+```http
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/28992cce-fac0-4950-a836-5a524ded8599/submissions/02859156-c3c7-876d-7a5c-915bf4f61380/excuse
 Prefer: include-unknown-enum-members
 ```
@@ -180,7 +177,7 @@ The following example shows a request.
   "name": "educationsubmission_excuse_header"
 }-->
 
-```html 
+```http
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/28992cce-fac0-4950-a836-5a524ded8599/submissions/02859156-c3c7-876d-7a5c-915bf4f61380/excuse
 ```
 
@@ -288,7 +285,7 @@ HTTP/1.1 200 Ok
     }
 }
 ```
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 

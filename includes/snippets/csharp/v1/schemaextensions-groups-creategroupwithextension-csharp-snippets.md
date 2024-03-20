@@ -11,19 +11,19 @@ using Microsoft.Graph.Models;
 
 var requestBody = new Group
 {
-	DisplayName = "New Managers March 2017",
-	Description = "New Managers training course for March 2017",
+	DisplayName = "New Managers March 2024",
+	Description = "New Managers training course for March 2024",
 	GroupTypes = new List<string>
 	{
 		"Unified",
 	},
 	MailEnabled = true,
-	MailNickname = "newMan201703",
+	MailNickname = "newMan202403",
 	SecurityEnabled = false,
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"graphlearn_courses" , new 
+			"bellowscollege_courses" , new 
 			{
 				CourseId = "123",
 				CourseName = "New Managers",

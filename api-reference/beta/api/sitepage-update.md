@@ -3,7 +3,7 @@ title: "Update sitePage"
 description: "Update the properties of a sitePage object."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and an updated [site
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -118,7 +118,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.sitePage",
   "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
   "name": "sample.aspx",
-  "webUrl": "SitePages/sample.aspx",
+  "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/sample.aspx",
   "title": "sample",
   "pageLayout": "article",
   "showComments": true,

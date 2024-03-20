@@ -3,7 +3,7 @@ title: "Delete emailThreatSubmissionPolicy"
 description: "Delete an emailThreatSubmissionPolicy object."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ DELETE /security/threatSubmission/emailThreatSubmissionPolicies/{id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

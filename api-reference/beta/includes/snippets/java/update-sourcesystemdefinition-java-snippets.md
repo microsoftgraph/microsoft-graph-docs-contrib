@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SourceSystemDefinition sourceSystemDefinition = new SourceSystemDefinition();
-sourceSystemDefinition.vendor = "LMS Vendor";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.external().industryData().sourceSystems("d1cde272-4585-462c-4725-08dad18eb580")
-	.buildRequest()
-	.patch(sourceSystemDefinition);
+com.microsoft.graph.beta.models.industrydata.SourceSystemDefinition sourceSystemDefinition = new com.microsoft.graph.beta.models.industrydata.SourceSystemDefinition();
+sourceSystemDefinition.setVendor("LMS Vendor");
+com.microsoft.graph.models.industrydata.SourceSystemDefinition result = graphClient.external().industryData().sourceSystems().bySourceSystemDefinitionId("{sourceSystemDefinition-id}").patch(sourceSystemDefinition);
+
 
 ```

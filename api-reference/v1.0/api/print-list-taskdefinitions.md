@@ -3,7 +3,7 @@ title: List taskDefinitions
 description: Retrieve a list of task definitions that the requesting app defined in the tenant.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ Some operators are not supported: `$count`, `$format`, `$search`, `$select`, `$s
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

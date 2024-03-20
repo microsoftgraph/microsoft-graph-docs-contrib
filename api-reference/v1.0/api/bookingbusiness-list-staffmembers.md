@@ -3,7 +3,7 @@ title: "List staffMembers"
 description: "Get a list of bookingStaffMember objects in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -56,10 +56,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinessliststaffmembers",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffMembers
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/staffMembers
 ```
 
 # [C#](#tab/csharp)
@@ -112,7 +112,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers",
+    "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/staffMembers",
     "value":[
         {
             "@odata.type":"#microsoft.graph.bookingStaffMember",
@@ -176,7 +176,7 @@ Content-type: application/json
             "@odata.type":"#microsoft.graph.bookingStaffMember",
             "id":"71d64d0e-7225-49b6-b0b1-070d476cda51",
             "displayName":"Samantha Booth",
-            "emailAddress":"samanthab@contoso.onmicrosoft.com",
+            "emailAddress":"samanthab@contoso.com",
             "availabilityIsAffectedByPersonalCalendar":true,
             "role":"administrator",
             "timeZone":"America/Chicago",

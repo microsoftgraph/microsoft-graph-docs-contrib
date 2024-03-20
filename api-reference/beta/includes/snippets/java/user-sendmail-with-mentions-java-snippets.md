@@ -4,37 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.users.item.sendmail.SendMailPostRequestBody sendMailPostRequestBody = new com.microsoft.graph.beta.users.item.sendmail.SendMailPostRequestBody();
 Message message = new Message();
-message.subject = "Project kickoff";
-LinkedList<Recipient> toRecipientsList = new LinkedList<Recipient>();
-Recipient toRecipients = new Recipient();
+message.setSubject("Project kickoff");
+LinkedList<Recipient> toRecipients = new LinkedList<Recipient>();
+Recipient recipient = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.name = "Samantha Booth";
-emailAddress.address = "samanthab@contoso.onmicrosoft.com";
-toRecipients.emailAddress = emailAddress;
-toRecipientsList.add(toRecipients);
-message.toRecipients = toRecipientsList;
-LinkedList<Mention> mentionsList = new LinkedList<Mention>();
-Mention mentions = new Mention();
+emailAddress.setName("Samantha Booth");
+emailAddress.setAddress("samanthab@contoso.com");
+recipient.setEmailAddress(emailAddress);
+toRecipients.add(recipient);
+message.setToRecipients(toRecipients);
+LinkedList<Mention> mentions = new LinkedList<Mention>();
+Mention mention = new Mention();
 EmailAddress mentioned = new EmailAddress();
-mentioned.name = "Dana Swope";
-mentioned.address = "danas@contoso.onmicrosoft.com";
-mentions.mentioned = mentioned;
-mentionsList.add(mentions);
-MentionCollectionResponse mentionCollectionResponse = new MentionCollectionResponse();
-mentionCollectionResponse.value = mentionsList;
-MentionCollectionPage mentionCollectionPage = new MentionCollectionPage(mentionCollectionResponse, null);
-message.mentions = mentionCollectionPage;
+mentioned.setName("Dana Swope");
+mentioned.setAddress("danas@contoso.com");
+mention.setMentioned(mentioned);
+mentions.add(mention);
+message.setMentions(mentions);
+sendMailPostRequestBody.setMessage(message);
+graphClient.me().sendMail().post(sendMailPostRequestBody);
 
-graphClient.me()
-	.sendMail(UserSendMailParameterSet
-		.newBuilder()
-		.withMessage(message)
-		.withSaveToSentItems(null)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

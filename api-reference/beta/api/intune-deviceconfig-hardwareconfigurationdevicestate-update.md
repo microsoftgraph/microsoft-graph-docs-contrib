@@ -3,7 +3,7 @@ title: "Update hardwareConfigurationDeviceState"
 description: "Update the properties of a hardwareConfigurationDeviceState object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ PATCH /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceR
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -57,6 +59,8 @@ The following table shows the properties that are required when you create the [
 |configurationState|[runState](../resources/intune-shared-runstate.md)|Configuration state from the lastest hardware configuration execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |configurationOutput|String|Output of the hardware configuration execution|
 |configurationError|String|Error from the hardware configuration execution|
+|assignmentFilterIds|String|A list of identifier strings of different assignment filters applied|
+|userId|String|The unique identifier of the Entra user associated with the device for which policy is applied. Read-Only.|
 
 
 
@@ -70,7 +74,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceRunStates/{hardwareConfigurationDeviceStateId}
 Content-type: application/json
-Content-length: 410
+Content-length: 497
 
 {
   "@odata.type": "#microsoft.graph.hardwareConfigurationDeviceState",
@@ -81,7 +85,9 @@ Content-length: 410
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "configurationState": "success",
   "configurationOutput": "Configuration Output value",
-  "configurationError": "Configuration Error value"
+  "configurationError": "Configuration Error value",
+  "assignmentFilterIds": "Assignment Filter Ids value",
+  "userId": "User Id value"
 }
 ```
 
@@ -90,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 459
+Content-Length: 546
 
 {
   "@odata.type": "#microsoft.graph.hardwareConfigurationDeviceState",
@@ -102,6 +108,8 @@ Content-Length: 459
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "configurationState": "success",
   "configurationOutput": "Configuration Output value",
-  "configurationError": "Configuration Error value"
+  "configurationError": "Configuration Error value",
+  "assignmentFilterIds": "Assignment Filter Ids value",
+  "userId": "User Id value"
 }
 ```

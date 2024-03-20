@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to manage administrative answers"
 description: "Use Microsoft Graph to manage administrative search answers in the Microsoft Search experience."
 ms.localizationpriority: high
 author: "jakeost-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: conceptualPageType
 ---
 
@@ -69,11 +69,8 @@ The following table lists the language tags, locales, and the corresponding coun
 |`en-us`| English (United States) | United States - English |
 |`es-us`| Spanish (United States) | United States - Spanish |
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 
 - Learn about [setting up administrative search answers for users in an organization](/graph/search-concept-answers).
-- Drill down on the methods, properties, and relationships of the answer type resources: [bookmarks](search-bookmark.md), [acronyms](search-acronym.md), and [QnAs](search-qna.md).
+- Drill down on the methods, properties, and relationships of the answer type resources: [acronym](search-acronym.md), [bookmark](search-bookmark.md), and [qna](search-qna.md).
 - See the [Microsoft Search API overview](/graph/search-concept-overview).

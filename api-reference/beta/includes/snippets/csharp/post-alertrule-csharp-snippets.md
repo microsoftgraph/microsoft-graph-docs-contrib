@@ -24,6 +24,17 @@ var requestBody = new AlertRule
 		Operator = OperatorType.GreaterOrEqual,
 		Target = 90,
 	},
+	Conditions = new List<RuleCondition>
+	{
+		new RuleCondition
+		{
+			RelationshipType = RelationshipType.Or,
+			ConditionCategory = ConditionCategory.AzureNetworkConnectionCheckFailures,
+			Aggregation = AggregationType.Count,
+			Operator = OperatorType.GreaterOrEqual,
+			ThresholdValue = "90",
+		},
+	},
 	NotificationChannels = new List<NotificationChannel>
 	{
 		new NotificationChannel
@@ -44,22 +55,6 @@ var requestBody = new AlertRule
 					ContactInformation = "serena.davis@contoso.com",
 				},
 			},
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"conditions" , new List<object>
-			{
-				new 
-				{
-					RelationshipType = "or",
-					ConditionCategory = "azureNetworkConnectionCheckFailures",
-					Aggregation = "count",
-					Operator = "greaterOrEqual",
-					ThresholdValue = "90",
-				},
-			}
 		},
 	},
 };

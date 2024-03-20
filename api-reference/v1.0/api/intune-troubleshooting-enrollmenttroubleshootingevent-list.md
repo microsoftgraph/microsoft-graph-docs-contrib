@@ -3,7 +3,7 @@ title: "List enrollmentTroubleshootingEvents"
 description: "List properties and relationships of the enrollmentTroubleshootingEvent objects."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ GET /deviceManagement/troubleshootingEvents
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

@@ -4,18 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryCaseSettings ediscoveryCaseSettings = new EdiscoveryCaseSettings();
-RedundancyDetectionSettings redundancyDetection = new RedundancyDetectionSettings();
-ediscoveryCaseSettings.redundancyDetection = redundancyDetection;
-TopicModelingSettings topicModeling = new TopicModelingSettings();
-ediscoveryCaseSettings.topicModeling = topicModeling;
-OcrSettings ocr = new OcrSettings();
-ediscoveryCaseSettings.ocr = ocr;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("{ediscoveryCaseId}").settings()
-	.buildRequest()
-	.patch(ediscoveryCaseSettings);
+com.microsoft.graph.models.security.EdiscoveryCaseSettings ediscoveryCaseSettings = new com.microsoft.graph.models.security.EdiscoveryCaseSettings();
+ediscoveryCaseSettings.setOdataType("#microsoft.graph.security.ediscoveryCaseSettings");
+com.microsoft.graph.models.security.RedundancyDetectionSettings redundancyDetection = new com.microsoft.graph.models.security.RedundancyDetectionSettings();
+redundancyDetection.setOdataType("microsoft.graph.security.redundancyDetectionSettings");
+ediscoveryCaseSettings.setRedundancyDetection(redundancyDetection);
+com.microsoft.graph.models.security.TopicModelingSettings topicModeling = new com.microsoft.graph.models.security.TopicModelingSettings();
+topicModeling.setOdataType("microsoft.graph.security.topicModelingSettings");
+ediscoveryCaseSettings.setTopicModeling(topicModeling);
+com.microsoft.graph.models.security.OcrSettings ocr = new com.microsoft.graph.models.security.OcrSettings();
+ocr.setOdataType("microsoft.graph.security.ocrSettings");
+ediscoveryCaseSettings.setOcr(ocr);
+com.microsoft.graph.models.security.EdiscoveryCaseSettings result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").settings().patch(ediscoveryCaseSettings);
+
 
 ```

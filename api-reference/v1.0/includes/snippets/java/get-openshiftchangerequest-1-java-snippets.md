@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-OpenShiftChangeRequest openShiftChangeRequest = graphClient.teams("3d88b7a2-f988-4f4b-bb34-d66df66af126").schedule().openShiftChangeRequests("SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+OpenShiftChangeRequest result = graphClient.teams().byTeamId("{team-id}").schedule().openShiftChangeRequests().byOpenShiftChangeRequestId("{openShiftChangeRequest-id}").get();
+
 
 ```

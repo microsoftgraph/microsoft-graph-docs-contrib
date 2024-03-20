@@ -3,7 +3,7 @@ title: "genericError resource type"
 description: "A general-purpose error."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: outlook
+ms.subservice: outlook
 author: "SuryaLashmiS"
 ---
 

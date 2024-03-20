@@ -1,9 +1,8 @@
 ---
 author: spgraph-docs-team
-ms.date: 07/07/2020
 title: Search for files
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Search the hierarchy of items for items matching a query."
 doc_type: apiPageType
 ---
@@ -44,6 +43,12 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 | Parameter | Type  | Description                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | q  | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Example
 

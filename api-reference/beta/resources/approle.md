@@ -3,7 +3,7 @@ title: "appRole resource type"
 description: "Represents an application role."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 

@@ -1,19 +1,20 @@
 ---
 title: "Migrate from Azure Active Directory (Azure AD) Graph to Microsoft Graph"
 description: "Learn how to migrate yor apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph before Azure AD Graph is retired."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
-ms.prod: "applications"
-ms.date: 06/22/2023
+ms.subservice: "entra-applications"
+ms.date: 01/30/2024
+#customer intent: As a developer currently using Azure AD Graph, I want to know why I should migrate my applications to Microsoft Graph.
 ---
 
 # Migrate your apps from Azure AD Graph to Microsoft Graph
 
 
 > [!IMPORTANT]
-> Azure Active Directory (Azure AD) Graph is deprecated. Going forward, we will make no further investment in Azure AD Graph, and Azure AD Graph APIs have no SLA or maintenance commitment beyond security-related fixes. Investments in new features and functionalities will only be made in Microsoft Graph.
+> Azure Active Directory (Azure AD) Graph is deprecated and is in its retirement path. Going forward, we will make no further investment in Azure AD Graph, and Azure AD Graph APIs have no SLA or maintenance commitment beyond security-related fixes. Investments in new features and functionalities will only be made in Microsoft Graph.
 >
 > June 30, 2023 will mark the end of the three-year deprecation period for Azure AD Graph. Before June 30, 2023, existing applications using Azure AD Graph will not be impacted. After June 30, 2023, Azure AD Graph will enter its retirement phase where we will retire it in incremental steps to allow you sufficient time to migrate your applications to Microsoft Graph APIs. The first step in this plan, and at a later date that we will announce, we will block the creation of any new applications using Azure AD Graph.
 >
@@ -53,10 +54,13 @@ The rest of the articles in this section help you migrate your app from Azure AD
 
 Send any other questions, open issues, and feature requests through Microsoft Q&A by using the tag [azure-ad-graph-deprecation](/answers/topics/azure-ad-graph-deprecation.html).
 
-## Next steps
+To get started:
 
-- Walk through the [app migration checklist](migrate-azure-ad-graph-planning-checklist.md) to help you plan the migration.
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
-- Learn more about progress updates and timelines in [Microsoft Graph or the Azure AD Graph](https://developer.microsoft.com/graph/blogs/microsoft-graph-or-azure-ad-graph/).
 - Get [answers to questions](/graph/migrate-azure-ad-graph-faq) you might have about the migration.
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Review the app migration checklist to help you plan the migration](migrate-azure-ad-graph-planning-checklist.md)

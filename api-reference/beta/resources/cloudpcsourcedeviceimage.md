@@ -1,9 +1,9 @@
 ---
 title: "cloudPcSourceDeviceImage resource type"
-description: "The source image associated with your Azure subscription. "
+description: "Represents the source image associated with your Azure subscription."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -13,16 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The source image associated with your Azure subscription.
+Represents the source image associated with your Azure subscription.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of the source image.|
-|displayName|String|The display name for the source image.|
-|subscriptionId|String|The ID of subscription that hosts the source image.|
-|subscriptionDisplayName|String|The display name of subscription that hosts the source image.|
+|displayName|String|The display name for the source image. Read-only.|
+|resourceId|String| The fully qualified unique identifier (ID) of the source image resource in Azure. The ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-only.|
+|subscriptionDisplayName|String|The display name of the subscription that hosts the source image. Read-only.|
+|subscriptionId|String|The unique identifier (ID) of the subscription that hosts the source image. Read-only.|
+|id (deprecated)|String|The unique identifier (ID) of the source image. Read-only. The **id** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **resourceId** property.|
 
 ## Relationships
 
@@ -30,19 +31,20 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcSourceDeviceImage"
 }
 -->
-
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcSourceDeviceImage",
-  "id": "String (identifier)",
   "displayName": "String",
-  "subscriptionId": "String",
-  "subscriptionDisplayName": "String"
+  "id": "String (identifier)",
+  "resourceId": "String (identifier)",
+  "subscriptionDisplayName": "String",
+  "subscriptionId": "String"
 }
 ```

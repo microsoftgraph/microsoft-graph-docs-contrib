@@ -4,19 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ApplePushNotificationCertificate applePushNotificationCertificate = new ApplePushNotificationCertificate();
-applePushNotificationCertificate.appleIdentifier = "Apple Identifier value";
-applePushNotificationCertificate.topicIdentifier = "Topic Identifier value";
-applePushNotificationCertificate.expirationDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:57:57.2481234+00:00");
-applePushNotificationCertificate.certificateUploadStatus = "Certificate Upload Status value";
-applePushNotificationCertificate.certificateUploadFailureReason = "Certificate Upload Failure Reason value";
-applePushNotificationCertificate.certificateSerialNumber = "Certificate Serial Number value";
-applePushNotificationCertificate.certificate = "Certificate value";
+applePushNotificationCertificate.setOdataType("#microsoft.graph.applePushNotificationCertificate");
+applePushNotificationCertificate.setAppleIdentifier("Apple Identifier value");
+applePushNotificationCertificate.setTopicIdentifier("Topic Identifier value");
+OffsetDateTime expirationDateTime = OffsetDateTime.parse("2016-12-31T23:57:57.2481234-08:00");
+applePushNotificationCertificate.setExpirationDateTime(expirationDateTime);
+applePushNotificationCertificate.setCertificateUploadStatus("Certificate Upload Status value");
+applePushNotificationCertificate.setCertificateUploadFailureReason("Certificate Upload Failure Reason value");
+applePushNotificationCertificate.setCertificateSerialNumber("Certificate Serial Number value");
+applePushNotificationCertificate.setCertificate("Certificate value");
+ApplePushNotificationCertificate result = graphClient.deviceManagement().applePushNotificationCertificate().patch(applePushNotificationCertificate);
 
-graphClient.deviceManagement().applePushNotificationCertificate()
-	.buildRequest()
-	.patch(applePushNotificationCertificate);
 
 ```

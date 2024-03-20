@@ -3,8 +3,9 @@ title: "Endpoint resource type"
 description: "Endpoints represent URLs for resources associated with an entity."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "groups"
-author: "Jordanndahl"
+ms.subservice: "entra-groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ---
 
 # Endpoint resource type

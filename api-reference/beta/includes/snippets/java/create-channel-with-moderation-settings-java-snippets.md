@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Channel channel = new Channel();
-channel.displayName = "TestChannelModeration";
-channel.description = "Test channel moderation.";
-channel.membershipType = ChannelMembershipType.STANDARD;
+channel.setDisplayName("TestChannelModeration");
+channel.setDescription("Test channel moderation.");
+channel.setMembershipType(ChannelMembershipType.Standard);
 ChannelModerationSettings moderationSettings = new ChannelModerationSettings();
-moderationSettings.userNewMessageRestriction = UserNewMessageRestriction.EVERYONE_EXCEPT_GUESTS;
-moderationSettings.replyRestriction = ReplyRestriction.EVERYONE;
-moderationSettings.allowNewMessageFromBots = true;
-moderationSettings.allowNewMessageFromConnectors = true;
-channel.moderationSettings = moderationSettings;
+moderationSettings.setUserNewMessageRestriction(UserNewMessageRestriction.EveryoneExceptGuests);
+moderationSettings.setReplyRestriction(ReplyRestriction.Everyone);
+moderationSettings.setAllowNewMessageFromBots(true);
+moderationSettings.setAllowNewMessageFromConnectors(true);
+channel.setModerationSettings(moderationSettings);
+Channel result = graphClient.teams().byTeamId("{team-id}").channels().post(channel);
 
-graphClient.teams("57fb72d0-d811-46f4-8947-305e6072eaa5").channels()
-	.buildRequest()
-	.post(channel);
 
 ```

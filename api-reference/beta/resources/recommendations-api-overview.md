@@ -3,7 +3,7 @@ title: "Use the Microsoft Entra recommendations API to implement Microsoft Entra
 description: "Microsoft Entra recommendations are personalized and actionable insights for you to implement Microsoft Entra ID best practices in your tenant."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ms.date: 02/10/2023
 ---
@@ -67,6 +67,6 @@ The following are some of the most popular requests for working with the Microso
 
 The various recommendations have different license requirements. For more information about licenses for each type of recommendation, see [Microsoft Entra recommendations: Roles and licenses](/azure/active-directory/reports-monitoring/overview-recommendations#roles-and-licenses).
 
-## See also
+## Related content
 
 - [What is Microsoft Entra recommendations (preview)]( /azure/active-directory/reports-monitoring/overview-recommendations)

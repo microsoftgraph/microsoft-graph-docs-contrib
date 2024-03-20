@@ -3,7 +3,7 @@ title: "chat: getAllRetainedMessages"
 description: "Get retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats."
 author: "AgnesLiu"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -23,11 +23,7 @@ Get all retained messages from all [chats](../resources/chatmessage.md) that a u
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "chat-getallretainedmessages-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "chat_getallretainedmessages" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-getallretainedmessages-permissions.md)]
 
 ## HTTP request
@@ -65,7 +61,7 @@ GET /users/{id}/chats/getAllRetainedMessages?$top=50&$filter=lastModifiedDateTim
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -113,6 +109,10 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/chatthisgetallretainedmessages-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chatthisgetallretainedmessages-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -182,6 +182,6 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

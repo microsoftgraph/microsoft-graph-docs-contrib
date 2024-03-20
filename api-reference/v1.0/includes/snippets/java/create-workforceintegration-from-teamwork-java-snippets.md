@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkforceIntegration workforceIntegration = new WorkforceIntegration();
-workforceIntegration.displayName = "displayName-value";
-workforceIntegration.apiVersion = 99;
+workforceIntegration.setDisplayName("displayName-value");
+workforceIntegration.setApiVersion(99);
 WorkforceIntegrationEncryption encryption = new WorkforceIntegrationEncryption();
-encryption.protocol = WorkforceIntegrationEncryptionProtocol.SHARED_SECRET;
-encryption.secret = "secret-value";
-workforceIntegration.encryption = encryption;
-workforceIntegration.isActive = true;
-workforceIntegration.url = "url-value";
-workforceIntegration.supportedEntities = EnumSet.of(WorkforceIntegrationSupportedEntities.NONE);
+encryption.setProtocol(WorkforceIntegrationEncryptionProtocol.SharedSecret);
+encryption.setSecret("secret-value");
+workforceIntegration.setEncryption(encryption);
+workforceIntegration.setIsActive(true);
+workforceIntegration.setUrl("url-value");
+workforceIntegration.setSupportedEntities(EnumSet.of(WorkforceIntegrationSupportedEntities.None));
+WorkforceIntegration result = graphClient.teamwork().workforceIntegrations().post(workforceIntegration);
 
-graphClient.teamwork().workforceIntegrations()
-	.buildRequest()
-	.post(workforceIntegration);
 
 ```

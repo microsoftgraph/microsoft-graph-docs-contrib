@@ -3,7 +3,7 @@ title: "List auditEvents"
 description: "Get a list of the cloudPcAuditEvent objects and their properties."
 author: "ecmadao"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports `$skiptoken`, `$top` and `$filter` OData query parameters t
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "channel: getAllRetainedMessages"
 description: "Get retained messages across all channels in a team."
 author: "AgnesLiu"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -25,11 +25,7 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "channel-getallretainedmessages-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "channel_getallretainedmessages" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-getallretainedmessages-permissions.md)]
 
 ## HTTP request
@@ -62,7 +58,7 @@ This method supports the following OData query parameters to help customize the 
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -110,6 +106,10 @@ GET https://graph.microsoft.com/beta/teams/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/channelthisgetallretainedmessages-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/channelthisgetallretainedmessages-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -222,6 +222,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

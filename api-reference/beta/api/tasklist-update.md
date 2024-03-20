@@ -3,7 +3,7 @@ title: "Update taskList"
 description: "Update the properties of a taskList object."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ PATCH /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]

@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 12/05/2023
 ---

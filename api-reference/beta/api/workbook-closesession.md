@@ -30,7 +30,7 @@ POST /me/drive/root:/{item-path}:/workbook/closeSession
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | workbook-session-id | Workbook session ID to be closed. Required. |
 
 ## Request body
@@ -42,7 +42,7 @@ If successful, this method returns `204 No Content` response code.
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ Content-type: application/json
 Note that workbook-session-id header is required. 
 
 ### Response
-Here is an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response",

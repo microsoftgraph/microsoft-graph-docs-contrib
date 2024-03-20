@@ -3,6 +3,68 @@
     {
       "ChangeList": [
         {
+          "Id": "5ce5e1de-e07b-4994-9098-329cab21b268",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
+          "ChangeType": "Removal",
+          "Description": "Removed the previously deprecated and retired **passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration** resource and its associated methods. Please use the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta) resource and its associated methods instead.",
+          "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "5ce5e1de-e07b-4994-9098-329cab21b268",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-22T00:00:00.4281584Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1cc95663-c7f1-415d-bf58-d4ac20fdc6ee",
+          "ApiChange": "Property",
+          "ChangedApiName": "fido2AuthenticationMethod",
+          "ChangeType": "Removal",
+          "Description": "Removed the previously deprecated and retired **creationDateTime** property from the [fido2AuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethod?view=graph-rest-beta) resource type. Use the **createdDateTime** property instead.",
+          "Target": "fido2AuthenticationMethod"
+        }
+      ],
+      "Id": "5ce5e1de-e07b-4994-9098-329cab21b268",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-22T00:00:00.4281584Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6004ddf4-75a9-4d41-9f60-d401830b80cb",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayAppInformationRequiredState",
+          "ChangeType": "Removal",
+          "Description": "Removed the previously deprecated and retired **displayAppInformationRequiredState** property of the [microsoftAuthenticatorAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta) resource. Use the **displayAppInformationRequiredState** property of the [microsoftAuthenticatorFeatureSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource instead.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        },
+        {
+          "Id": "6004ddf4-75a9-4d41-9f60-d401830b80cb",
+          "ApiChange": "Property",
+          "ChangedApiName": "numberMatchingRequiredState",
+          "ChangeType": "Removal",
+          "Description": "Removed the previously deprecated and retired **numberMatchingRequiredState** property of the [microsoftAuthenticatorAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta) resource. Use the **numberMatchingRequiredState** property of the [microsoftAuthenticatorFeatureSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource instead.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        }
+      ],
+      "Id": "6004ddf4-75a9-4d41-9f60-d401830b80cb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-22T00:00:00.4281584Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
           "ApiChange": "Relationship",
           "ChangedApiName": "authenticationStrengthRoot",
@@ -661,6 +723,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-10-11T21:39:03.3557592Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8197a2e8-16b5-4e9a-874b-9789e92f6542",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateCombinationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateCombinationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateCombinationConfiguration?view=graph-rest-beta) resource. Use this resource type to restrict an authentication strength policy to specific certificate properties.",
+          "Target": "x509CertificateCombinationConfiguration"
+        }
+      ],
+      "Id": "8197a2e8-16b5-4e9a-874b-9789e92f6542",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-17T19:06:35.4148289Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

@@ -77,6 +77,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[team](../resources/team.md) <br />`/teams/{id}` <br />A particular team. | Team.ReadBasic.All, TeamSettings.Read.All | Not supported.  | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported.  |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
 |[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported.  |
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
@@ -97,6 +98,10 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 
 **onlineMeetings** and **presence** subscriptions require [encryption](/graph/webhooks-with-resource-data) for notifications with resource data. Subscription creation fails if [encryptionCertificate](../resources/subscription.md) and [encryptionCertificateId](../resources/subscription.md) aren't specified if resource data is desired in notifications.
 For details about presence and online meeting subscriptions, see [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence) and [Get change notifications for online meetings](/graph/changenotifications-for-onlinemeeting).
+
+### virtualEventWebinar
+
+Subscriptions on virtual events support only basic notifications and are limited to a few entities of a virtual event. For more information about the supported subscription types, see [Get change notifications for Microsoft Teams virtual event updates](/graph/changenotifications-for-virtualevent).
 
 ## HTTP request
 
@@ -131,7 +136,7 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -184,7 +189,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UnifiedRoleAssignmentMultiple unifiedRoleAssignmentMultiple = new UnifiedRoleAssignmentMultiple();
-unifiedRoleAssignmentMultiple.displayName = "NewName";
-unifiedRoleAssignmentMultiple.description = "A new roleAssignment";
+unifiedRoleAssignmentMultiple.setDisplayName("NewName");
+unifiedRoleAssignmentMultiple.setDescription("A new roleAssignment");
+UnifiedRoleAssignmentMultiple result = graphClient.roleManagement().cloudPC().roleAssignments().byUnifiedRoleAssignmentMultipleId("{unifiedRoleAssignmentMultiple-id}").patch(unifiedRoleAssignmentMultiple);
 
-graphClient.roleManagement().cloudPC().roleAssignments("dbe9d288-fd87-41f4-b33d-b498ed207096")
-	.buildRequest()
-	.patch(unifiedRoleAssignmentMultiple);
 
 ```

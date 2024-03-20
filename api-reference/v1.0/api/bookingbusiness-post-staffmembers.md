@@ -3,7 +3,7 @@ title: "Create bookingStaffMember"
 description: "Create a new staff member in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -185,7 +185,7 @@ Content-type: application/json
 
 {
     "@odata.type":"#microsoft.graph.bookingStaffMember",
-    "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers/$entity",
+    "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/staffMembers/$entity",
     "id":"8ee1c803-a1fa-406d-8259-7ab53233f148",
     "displayName":"Dana Swope",
     "emailAddress":"danas@contoso.com",

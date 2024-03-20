@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.multi_tenant_organization_member import MultiTenantOrganizationMember
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -3,7 +3,7 @@ title: "searchEntity: query"
 description: "Run a specified search query. Search results are provided in the response."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ POST /search/query
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -80,6 +80,7 @@ Content-type: application/json
       "contentSources": [
         "/external/connections/connectionfriendlyname"
       ],
+      "region": "US",
       "query": {
         "queryString": "contoso product"
       },
@@ -186,6 +187,7 @@ Content-type: application/json
       "entityTypes": [
         "listItem"
       ],
+      "region": "US",
       "query": {
         "queryString": "contoso",
         "queryTemplate":"{searchTerms} CreatedBy:Bob"
@@ -241,7 +243,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)

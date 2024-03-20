@@ -21,7 +21,7 @@ var requestBody = new CreateForwardPostRequestBody
 			{
 				EmailAddress = new EmailAddress
 				{
-					Address = "danas@contoso.onmicrosoft.com",
+					Address = "danas@contoso.com",
 					Name = "Dana Swope",
 				},
 			},

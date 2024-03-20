@@ -3,7 +3,7 @@ title: "monitoring resource type"
 description: "Represents the entry point entity type to access all resources related to alerts in the Microsoft Endpoint Manager admin center."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

@@ -16,28 +16,28 @@ Along with generating this insight, the people API also provides fuzzy matching 
 The people API is useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the people API in email compose scenarios.
 
 ## Including a person as relevant or "working-with"
- 
+
 For a person to be included as relevant to or "working with" a profile owner in Delve, to be displayed in the owner's profile card, or to be returned by the people API, there must be a _public_ relationship between the person and the profile owner. The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.
 
 ![Image of working with relationships](images/working-with.png)
- 
+
 The following are examples of public relationships:
 
-- Individuals connected in the org chart: manager, direct report, peers (share the same manager) 
+- Individuals connected in the org chart: manager, direct report, peers (share the same manager)
 - Members of a public group or distribution list with fewer than 30 people. Public groups have membership lists that are available in the directory.
- 
+
 If the profile owner communicates with someone and there is _no public relationship_ between them, such as an org chart connection or a group in common, the fact that they've been communicating is _not visible_ to others.
 
 The ranking of people—that is, the order in which they appear on the profile owner's page—is determined by the public communication between the profile owner and the person on the list.
-  
+
 Examples of public interaction include:
-- Sending or receiving emails to/from each other as part of a public group 
+- Sending or receiving emails to/from each other as part of a public group
 - Inviting users to meetings as part of group, or where more than X people are invited
- 
+
 The ranking doesn’t change based on who User A is (the person looking at someone else's page). The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).
- 
+
 In order for User C to appear, the profile owner must be in a relatively small group or distribution list with that user that is public (meaning the membership list is available in the directory).
- 
+
 People external to the organization don't show on the profile owner's list. People they email or meet with, but who aren't part of the same organization, don't show up as people the owner works with either.
 
 ## Disabling "working-with"
@@ -91,11 +91,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "20/1109",
       "profession": "",
-      "userPrincipalName": "LorrieF@contoso.onmicrosoft.com",
-      "imAddress": "sip:LorrieF@contoso.onmicrosoft.com",
+      "userPrincipalName": "LorrieF@contoso.com",
+      "imAddress": "sip:LorrieF@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "LorrieF@contoso.onmicrosoft.com",
+          "address": "LorrieF@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -126,11 +126,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "20/1101",
       "profession": "",
-      "userPrincipalName": "MaynardD@contoso.onmicrosoft.com",
-      "imAddress": "sip:MaynardD@contoso.onmicrosoft.com",
+      "userPrincipalName": "MaynardD@contoso.com",
+      "imAddress": "sip:MaynardD@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "MaynardD@contoso.onmicrosoft.com",
+          "address": "MaynardD@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -161,11 +161,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "14/1102",
       "profession": "",
-      "userPrincipalName": "DarrelH@contoso.onmicrosoft.com",
-      "imAddress": "sip:DarrelH@contoso.onmicrosoft.com",
+      "userPrincipalName": "DarrelH@contoso.com",
+      "imAddress": "sip:DarrelH@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "DarrelH@contoso.onmicrosoft.com",
+          "address": "DarrelH@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -216,11 +216,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "19/2109",
       "profession": "",
-      "userPrincipalName": "FelixC@contoso.onmicrosoft.com",
-      "imAddress": "sip:FelixC@contoso.onmicrosoft.com",
+      "userPrincipalName": "FelixC@contoso.com",
+      "imAddress": "sip:FelixC@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "FelixC@contoso.onmicrosoft.com",
+          "address": "FelixC@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -251,11 +251,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "18/1106",
       "profession": "",
-      "userPrincipalName": "LenoraR@contoso.onmicrosoft.com",
-      "imAddress": "sip:LenoraR@contoso.onmicrosoft.com",
+      "userPrincipalName": "LenoraR@contoso.com",
+      "imAddress": "sip:LenoraR@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "LenoraR@contoso.onmicrosoft.com",
+          "address": "LenoraR@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -286,11 +286,11 @@ Content-type: application/json
       "department": "Finance",
       "officeLocation": "98/2202",
       "profession": "",
-      "userPrincipalName": "ManuelC@contoso.onmicrosoft.com",
-      "imAddress": "sip:ManuelC@contoso.onmicrosoft.com",
+      "userPrincipalName": "ManuelC@contoso.com",
+      "imAddress": "sip:ManuelC@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "ManuelC@contoso.onmicrosoft.com",
+          "address": "ManuelC@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -341,11 +341,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "18/2111",
       "profession": "",
-      "userPrincipalName": "AdrianaR@contoso.onmicrosoft.com",
-      "imAddress": "sip:AdrianaR@contoso.onmicrosoft.com",
+      "userPrincipalName": "AdrianaR@contoso.com",
+      "imAddress": "sip:AdrianaR@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "AdrianaR@contoso.onmicrosoft.com",
+          "address": "AdrianaR@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -376,11 +376,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "131/1104",
       "profession": "",
-      "userPrincipalName": "AlyceC@contoso.onmicrosoft.com",
-      "imAddress": "sip:AlyceC@contoso.onmicrosoft.com",
+      "userPrincipalName": "AlyceC@contoso.com",
+      "imAddress": "sip:AlyceC@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "AlyceC@contoso.onmicrosoft.com",
+          "address": "AlyceC@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -411,11 +411,11 @@ Content-type: application/json
       "department": "Operations",
       "officeLocation": "24/1106",
       "profession": "",
-      "userPrincipalName": "AlyssaC@contoso.onmicrosoft.com",
-      "imAddress": "sip:AlyssaC@contoso.onmicrosoft.com",
+      "userPrincipalName": "AlyssaC@contoso.com",
+      "imAddress": "sip:AlyssaC@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "AlyssaC@contoso.onmicrosoft.com",
+          "address": "AlyssaC@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -538,7 +538,7 @@ Content-type: application/json
       "displayName": "Lorrie Frye",
       "scoredEmailAddresses": [
         {
-          "address": "LorrieF@contoso.onmicrosoft.com",
+          "address": "LorrieF@contoso.com",
           "relevanceScore": 8
         }
       ]
@@ -548,7 +548,7 @@ Content-type: application/json
       "displayName": "Maynard Denman",
       "scoredEmailAddresses": [
         {
-          "address": "MaynardD@contoso.onmicrosoft.com",
+          "address": "MaynardD@contoso.com",
           "relevanceScore": 8
         }
       ]
@@ -558,7 +558,7 @@ Content-type: application/json
       "displayName": "Darrel Halsey",
       "scoredEmailAddresses": [
         {
-          "address": "DarrelH@contoso.onmicrosoft.com",
+          "address": "DarrelH@contoso.com",
           "relevanceScore": 8
         }
       ]
@@ -599,11 +599,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "20/1109",
       "profession": "",
-      "userPrincipalName": "LorrieF@contoso.onmicrosoft.com",
-      "imAddress": "sip:LorrieF@contoso.onmicrosoft.com",
+      "userPrincipalName": "LorrieF@contoso.com",
+      "imAddress": "sip:LorrieF@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "LorrieF@contoso.onmicrosoft.com",
+          "address": "LorrieF@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -634,11 +634,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "20/1101",
       "profession": "",
-      "userPrincipalName": "MaynardD@contoso.onmicrosoft.com",
-      "imAddress": "sip:MaynardD@contoso.onmicrosoft.com",
+      "userPrincipalName": "MaynardD@contoso.com",
+      "imAddress": "sip:MaynardD@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "MaynardD@contoso.onmicrosoft.com",
+          "address": "MaynardD@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -669,11 +669,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "14/1102",
       "profession": "",
-      "userPrincipalName": "DarrelH@contoso.onmicrosoft.com",
-      "imAddress": "sip:DarrelH@contoso.onmicrosoft.com",
+      "userPrincipalName": "DarrelH@contoso.com",
+      "imAddress": "sip:DarrelH@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "DarrelH@contoso.onmicrosoft.com",
+          "address": "DarrelH@contoso.com",
           "relevanceScore": 8
         }
       ],
@@ -717,7 +717,7 @@ Content-type: application/json
       "displayName": "Lorrie Frye",
       "scoredEmailAddresses": [
         {
-          "address": "LorrieF@contoso.onmicrosoft.com",
+          "address": "LorrieF@contoso.com",
           "relevanceScore": 8
         }
       ]
@@ -758,11 +758,11 @@ Content-type: application/json
       "department": "Legal",
       "officeLocation": "19/2106",
       "profession": "",
-      "userPrincipalName": "CliftonC@contoso.onmicrosoft.com",
-      "imAddress": "sip:CliftonC@contoso.onmicrosoft.com",
+      "userPrincipalName": "CliftonC@contoso.com",
+      "imAddress": "sip:CliftonC@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "CliftonC@contoso.onmicrosoft.com",
+          "address": "CliftonC@contoso.com",
           "relevanceScore": 20
         }
       ],
@@ -793,11 +793,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "20/2107",
       "profession": "",
-      "userPrincipalName": "ShereeM@contoso.onmicrosoft.com",
-      "imAddress": "sip:ShereeM@contoso.onmicrosoft.com",
+      "userPrincipalName": "ShereeM@contoso.com",
+      "imAddress": "sip:ShereeM@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "ShereeM@contoso.onmicrosoft.com",
+          "address": "ShereeM@contoso.com",
           "relevanceScore": 10
         }
       ],
@@ -828,11 +828,11 @@ Content-type: application/json
       "department": "Engineering",
       "officeLocation": "23/2102",
       "profession": "",
-      "userPrincipalName": "VincentM@contoso.onmicrosoft.com",
-      "imAddress": "sip:VincentM@contoso.onmicrosoft.com",
+      "userPrincipalName": "VincentM@contoso.com",
+      "imAddress": "sip:VincentM@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "VincentM@contoso.onmicrosoft.com",
+          "address": "VincentM@contoso.com",
           "relevanceScore": 10
         }
       ],
@@ -889,11 +889,11 @@ Content-type: application/json
       "department": "Sales & Marketing",
       "officeLocation": "19/3123",
       "profession": "",
-      "userPrincipalName": "JanT@contoso.onmicrosoft.com",
-      "imAddress": "sip:JanT@contoso.onmicrosoft.com",
+      "userPrincipalName": "JanT@contoso.com",
+      "imAddress": "sip:JanT@contoso.com",
       "scoredEmailAddresses": [
         {
-          "address": "JanT@contoso.onmicrosoft.com",
+          "address": "JanT@contoso.com",
           "relevanceScore": -12.297347783416837
         }
       ],
@@ -954,11 +954,11 @@ Content-type: application/json
       "department": null,
       "officeLocation": null,
       "profession": "",
-      "userPrincipalName": "JewellM@contoso.onmicrosoft.com",
+      "userPrincipalName": "JewellM@contoso.com",
       "imAddress": null,
       "scoredEmailAddresses": [
         {
-          "address": "JewellM@contoso.onmicrosoft.com",
+          "address": "JewellM@contoso.com",
           "relevanceScore": -12.531408487977451
         }
       ],

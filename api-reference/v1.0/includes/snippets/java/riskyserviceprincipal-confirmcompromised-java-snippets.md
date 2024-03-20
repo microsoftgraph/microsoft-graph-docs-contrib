@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> servicePrincipalIdsList = new LinkedList<String>();
-servicePrincipalIdsList.add("9089a539-a539-9089-39a5-899039a58990");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.identityProtection().riskyServicePrincipals()
-	.confirmCompromised(RiskyServicePrincipalConfirmCompromisedParameterSet
-		.newBuilder()
-		.withServicePrincipalIds(servicePrincipalIdsList)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.identityprotection.riskyserviceprincipals.confirmcompromised.ConfirmCompromisedPostRequestBody confirmCompromisedPostRequestBody = new com.microsoft.graph.identityprotection.riskyserviceprincipals.confirmcompromised.ConfirmCompromisedPostRequestBody();
+LinkedList<String> servicePrincipalIds = new LinkedList<String>();
+servicePrincipalIds.add("9089a539-a539-9089-39a5-899039a58990");
+confirmCompromisedPostRequestBody.setServicePrincipalIds(servicePrincipalIds);
+graphClient.identityProtection().riskyServicePrincipals().confirmCompromised().post(confirmCompromisedPostRequestBody);
+
 
 ```

@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.external_item import ExternalItem
+from msgraph.generated.models.acl import Acl
+from msgraph.generated.models.properties import Properties
+from msgraph.generated.models.external_item_content import ExternalItemContent
 
 graph_client = GraphServiceClient(credentials, scopes)
 

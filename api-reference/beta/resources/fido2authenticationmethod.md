@@ -4,7 +4,7 @@ description: "A representation of a FIDO2 security key registered to a user. FID
 author: "calvinlui"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,6 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |id|String|The authentication method identifier.|
 |displayName|String|The display name of the key as given by the user.|
 |createdDateTime|DateTimeOffset|The timestamp when this key was registered to the user.|
-|creationDateTime (Deprecated)|DateTimeOffset|The timestamp when this key was registered to the user.|
 |aaGuid|String|Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.|
 |model|String|The manufacturer-assigned model of the FIDO2 security key.|
 |attestationCertificates|String collection|The attestation certificate(s) attached to this security key.|
@@ -56,7 +55,6 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethod",
   "id": "String (identifier)",
   "displayName": "String",
-  "creationDateTime": "String (timestamp)",
   "createdDateTime": "String (timestamp)",
   "aaGuid": "String",
   "model": "String",

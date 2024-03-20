@@ -3,7 +3,7 @@ title: "sendTestMessage action"
 description: "Sends test message using the specified notificationMessageTemplate in the default locale"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

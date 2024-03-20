@@ -3,7 +3,7 @@ title: "educationSubmission: return"
 description: "This action makes the grade and feedback associated with this submission available to the student."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{subm
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -151,7 +151,7 @@ HTTP/1.1 200 Ok
 }
 ```
 
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 

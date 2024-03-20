@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
 	EmailAddresses = @(
-		"danas@contoso.onmicrosoft.com"
-		"fannyd@contoso.onmicrosoft.com"
+		"danas@contoso.com"
+		"fannyd@contoso.com"
 	)
 	MailTipsOptions = "automaticReplies, mailboxFullStatus"
 }
