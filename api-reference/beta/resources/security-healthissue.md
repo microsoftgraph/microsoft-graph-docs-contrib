@@ -1,6 +1,6 @@
 ---
 title: "healthIssue resource type"
-description: "Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity have identified."
+description: "Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity has identified."
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource corresponds to the latest generation of health issues in the Microsoft Graph security API, Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity have identified.
+This resource corresponds to the latest generation of health issues in the Microsoft Graph security API, Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity has identified.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -35,8 +35,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |status|[microsoft.graph.security.healthIssueStatus](#HealthIssueStatus-values)|The status of the health issue. The possible values are: `open`, `closed`, `suppressed`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|The date and time of when the health issue was generated|
 |lastModifiedDateTime|DateTimeOffset|The date and time of when the health issue was last updated|
-|domainNames|String collection|List of the fully qualified domain name of the domains or the sensors the health issue is relatedto|
-|sensorDNSNames|String collection|List of the dns names of the sensors the health issue is relatedto|
+|domainNames|String collection|List of the fully qualified domain name of the domains or the sensors the health issue is related to|
+|sensorDNSNames|String collection|List of the dns names of the sensors the health issue is related to|
 |description|String|More detailed information on the health issue|
 |recommendations|String collection|This field contains a list of recommended actions that can be taken to resolve the issue. These actions may include instructions on how to investigate the issue further, and they aren't limited to prewritten responses. The recommended actions are intended to provide guidance on how to address the issue effectively and efficiently.|
 |recommendedActionCommands|String collection|This field may contain a list of commands from the product's PowerShell Module that can be used to resolve the issue, if available. If there are no commands that can be used to solve the issue, the field is left empty. The commands, if present, are intended to provide a quick and efficient way to address the issue. These commands are executed in order for the single recommended fix|
@@ -56,7 +56,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
 | open | The issue is opened and should be addressed. |
 | closed | The issue was addressed, either by someone manually closing the issue, by taking an action on the impacted item or automatically by the system. |
-| suppressed | The issue was suppressed manually by an operator to be ignored for time, depending on the type of the health issue. |
+| suppressed | The operator has supressed the issue manually. |
 
 #### HealthIssueType values
 
