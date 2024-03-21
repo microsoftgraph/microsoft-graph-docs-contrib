@@ -431,58 +431,7 @@ Content-type: application/json
 
 ## Step 4: Clean up resources
 
-Delete the resources that you created for this tutorial: the Microsoft 365 group, the access review schedule definition, and the test guest.
-
-### Delete the Microsoft 365 group
-
-The request returns a `204 No Content` response.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-accessreviews-M365group-delete_group"
-}-->
-```http
-DELETE https://graph.microsoft.com/v1.0/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-accessreviews-m365group-delete-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-accessreviews-m365group-delete-group-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-accessreviews-m365group-delete-group-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-accessreviews-m365group-delete-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-accessreviews-m365group-delete-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-accessreviews-m365group-delete-group-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-accessreviews-m365group-delete-group-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-accessreviews-m365group-delete-group-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Delete the access review definition
-
-Since the access review schedule definition is the blueprint for the access review, deleting the definition removes the related settings, instances, and decisions. The request returns a `204 No Content` response.
+In this step, you delete the access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition removes the related settings, instances, and decisions. The request returns a `204 No Content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -526,13 +475,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
-### Delete the guest
-
-```http
-DELETE https://graph.microsoft.com/v1.0/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20
-```
 
 ## Related content
 
