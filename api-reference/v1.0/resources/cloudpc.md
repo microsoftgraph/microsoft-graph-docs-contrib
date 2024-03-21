@@ -1,9 +1,9 @@
 ---
 title: "cloudPC resource type"
-description: "Cloud managed virtual desktops."
+description: "Represents a cloud-managed virtual desktop."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -17,13 +17,13 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.|
-|[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.|
-|[End grace period](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a [cloudPC](../resources/cloudpc.md) object.|
+|[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices in a tenant.|
+|[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a specific [cloudPC](../resources/cloudpc.md) object.|
+|[End grace period](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a specific [cloudPC](../resources/cloudpc.md) object.|
 |[Reboot](../api/cloudpc-reboot.md)|None|Reboot a specific [cloudPC](../resources/cloudpc.md) object.|
-|[Rename](../api/cloudpc-rename.md)|None|Rename a specific [cloudPC](../resources/cloudpc.md) object. Use this API to update the **displayName** for the Cloud PC entity.|
-|[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object. Use this API to check the health status of the Cloud PC and the session host.|
-|[Restore](../api/cloudpc-restore.md)|None|Restore a [cloudPC](../resources/cloudpc.md) object to a previous state from a snapshot.|
+|[Rename](../api/cloudpc-rename.md)|None|Rename a specific [cloudPC](../resources/cloudpc.md) object.|
+|[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object.|
+|[Restore](../api/cloudpc-restore.md)|None|Restore a specific [cloudPC](../resources/cloudpc.md) object to a previous state from a snapshot.|
 
 ## Properties
 
@@ -40,10 +40,18 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |onPremisesConnectionName|String| The on-Premises connection that applied during provisioning of cloud PCs. Read Only.                                                                                                                                                                                                                                |
 |provisioningPolicyId|String| The Cloud PC's provisioning policy ID. 32 characters in GUID format. A policy defines what kind of Cloud PC that the user wants to create. Read Only.                                                                                                                                                                                                                                                                        |
 |provisioningPolicyName|String| The provisioning policy that applied during provisioning of cloud PCs with 120 max size limitation. Read Only.                                                                                                                                                                                                      |
-|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)| The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Default value is `dedicated`.                                                                                                                                      |
+|provisioningType|[cloudPcProvisioningType](#cloudpcprovisioningtype-values)| The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. The default value is `dedicated`.                                                                                                                                      |
 |servicePlanId|String| The Cloud PC's service plan ID. 32 characters in GUID format. For service plan, you can learn more information in https://learn.microsoft.com/entra/identity/users/licensing-service-plan-reference. Read Only.                                                                                               
 |servicePlanName|String| The Cloud PC's service plan name of customer facing Cloud PC entity. Read Only.                                                                                                                                                                                                                                     |
 |userPrincipalName|String| The user principal name (UPN) of the user assigned to the Cloud PC with 113 max size limitation. You can learn more information in https://learn.microsoft.com/entra/identity/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts. Read Only.                       |
+
+### cloudPcProvisioningType values
+
+| Member              | Description                                                                           |
+|:--------------------|:--------------------------------------------------------------------------------------|
+| dedicated           | Indicates that a dedicated license is used for provisioning Cloud PCs. Default value. |
+| shared              | Indicates that a shared license is used for provisioning Cloud PCs.                   |
+| unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.                                      |
 
 ## Relationships
 
