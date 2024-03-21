@@ -89,7 +89,13 @@ Content-Type: application/json
         "isAdminConfigurable": true,
         "allowedToJoin": {
             "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
+        },
+        "localAdmins": {
+            "enableGlobalAdmins": false,
+            "registeringUsers": {
+            "@odata.type": "#microsoft.graph.noDeviceRegistrationMembership"
         }
+      },
     },
     "localAdminPassword": {
       "isEnabled": true

@@ -135,6 +135,14 @@ Content-Type: application/json
         "isAdminConfigurable": true,
         "allowedToJoin": {
             "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
+      },
+        "localAdmins": {
+        "enableGlobalAdmins": true,
+        "registeringUsers": {
+          "@odata.type": "#microsoft.graph.enumeratedDeviceRegistrationMembership",
+          "users": ["3c8ef067-8b96-44de-b2ae-557dfa0f97a0"],
+          "groups": []
+        }
       }
     },
     "localAdminPassword": {
