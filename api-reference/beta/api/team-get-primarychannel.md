@@ -21,6 +21,9 @@ Get the default [channel](../resources/channel.md), **General**, of a [team](../
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+> [!NOTE] 
+> This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All |
@@ -29,8 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!NOTE]
 > The ChannelSettings.Read.Group and ChannelSettings.ReadWrite.Group permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-
-This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
