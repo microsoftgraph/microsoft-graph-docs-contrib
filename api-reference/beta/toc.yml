@@ -1630,7 +1630,7 @@ items:
               - name: Windows settings
                 href: resources/windows-setting-api-overview.md
                 items:
-                  - name: Windows settings
+                  - name: Windows setting
                     href: resources/windowssetting.md
                     items:
                       - name: List

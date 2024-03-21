@@ -15,7 +15,7 @@ The Windows setting API enables users and authorized third parties acting on beh
 
 ## Windows settings
 
-A [**windowsSetting**](../resources/windowssetting.md) represents various settings from the Windows operating system that are stored in the cloud for a given user.
+The [**windowsSetting**](windowssetting.md) resource represents various Windows operating system settings that are stored in the cloud for a given user.
 
 There are two types of [windowsSetting](../resources/windowssetting.md): `roaming` and `backup`. The *settingType* property of a [windowsSetting](../resources/windowssetting.md) object indicates the type of the setting.
 
