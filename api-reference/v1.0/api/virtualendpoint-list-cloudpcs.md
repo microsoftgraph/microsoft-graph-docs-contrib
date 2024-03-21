@@ -1,9 +1,9 @@
 ---
 title: "List cloudPCs"
-description: "List properties and relationships of the cloudPC objects."
+description: "List the cloudPC devices in a tenant."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -12,8 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 List the [cloudPC](../resources/cloudpc.md) devices in a tenant.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -35,7 +33,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## Optional query parameters
 
-This method supports `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,7 +57,7 @@ The following example shows how to get a list of all [cloudPC](../resources/clou
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -70,11 +68,10 @@ Here's an example of the request.
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs
 ```
----
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -106,7 +103,7 @@ Content-Type: application/json
       "userPrincipalName": "dujanjic@contoso.com",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
       "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
-      "provisioningType": "dedicated",
+      "provisioningType": "dedicated"
     }
   ]
 }
@@ -118,7 +115,7 @@ The following example shows how to use the `$top` query parameter to get the top
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -130,11 +127,9 @@ Here's an example of the request.
 GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs?$top=2
 ```
 
----
-
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -168,7 +163,7 @@ Content-Type: application/json
             "managedDeviceName": null,
             "aadDeviceId": null,
             "gracePeriodEndDateTime": null,
-            "provisioningType": "dedicated",
+            "provisioningType": "dedicated"
         },
         {
             "id": "69621742-aad4-4976-990c-d10ff6d73fc1",
@@ -185,7 +180,7 @@ Content-Type: application/json
             "managedDeviceName": null,
             "aadDeviceId": null,
             "gracePeriodEndDateTime": null,
-            "provisioningType": "dedicated",
+            "provisioningType": "dedicated"
         }
     ]
 }
