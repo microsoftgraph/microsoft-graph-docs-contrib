@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: rename"
-description: "Rename a specific Cloud PC."
+description: "Rename a specific Cloud PC object."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Rename a specific Cloud PC. Use this API to update the **displayName** of a Cloud PC entity.
+Rename a specific [cloudPC](../resources/cloudpc.md) object. Use this API to update the **displayName** of a Cloud PC entity.
 
 ## Permissions
 
