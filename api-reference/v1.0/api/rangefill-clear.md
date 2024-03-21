@@ -3,7 +3,7 @@ title: "RangeFill: clear"
 description: "Resets the range background."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

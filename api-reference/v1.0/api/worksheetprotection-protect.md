@@ -3,7 +3,7 @@ title: "WorksheetProtection: protect"
 description: "Protect a worksheet. It throws if the worksheet has been protected."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
