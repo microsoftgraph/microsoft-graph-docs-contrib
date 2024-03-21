@@ -3971,7 +3971,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-02-08T03:30:57.9480878Z",
-      "WorkloadArea": "Sites and lists"
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
     },
     {
       "ChangeList": [
