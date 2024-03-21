@@ -3,7 +3,7 @@ title: "Table: TotalRowRange"
 description: "Gets the range object associated with totals row of the table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

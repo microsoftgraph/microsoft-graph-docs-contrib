@@ -3,7 +3,7 @@ title: "List TableColumnCollection"
 description: "Retrieve a list of tablecolumn objects."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
