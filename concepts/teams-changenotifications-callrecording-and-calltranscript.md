@@ -62,11 +62,14 @@ One of the following permissions is required to subscribe to `communications/onl
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetingTranscript.Read.All            |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | OnlineMeetingTranscript.Read.All            |
+| Application                            |  OnlineMeetingTranscript.Read.Chat*, OnlineMeetingTranscript.Read.All            |
 
-### Example
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-The following example shows how to subscribe to transcripts available for online meetings.
+> [!NOTE]
+> To subscribe to any transcript available for for a particular online meeting using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
+
+### Example 1: Subscribe to transcripts available for a particular online meeting using classic permissions
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -83,7 +86,23 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+### Example 2: Subscribe to transcripts available for a particular online meeting using resource-specific consent permissions
 
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "communications/onlineMeetings/{onlineMeetingId}/transcripts?useResourceSpecificConsentBasedAuthorization=true",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2023-03-20T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
 ## Subscribe to transcripts available at the user level
 
 To get change notifications for any transcript available for any online meeting organized by a specific user, subscribe to `users/{userId}/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
@@ -120,13 +139,13 @@ Content-Type: application/json
 
 ## Subscribe to transcripts available for any meeting where a specific Teams app is installed
 
-To get change notifications for any transcript available for any online meeting where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllTranscripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
+To get change notifications for any transcript available for any online meeting where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllTranscripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
 > [!NOTE]
 > This resource type is available only on the `/beta` endpoint.
 ### Permissions
 
-One of the following permissions is required to subscribe to `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllTranscripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllTranscripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
@@ -139,7 +158,7 @@ One of the following permissions is required to subscribe to `appCatalogs/teamsA
 > [!NOTE]
 > To subscribe to transcripts available for any online meeting where a specific Teams app is installed using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
-### Example 1: Subscribe to transcripts available for any online meeting where a specific Teams app is installed using tenant permissions
+### Example 1: Subscribe to transcripts available for any online meeting where a specific Teams app is installed using classic permissions
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -156,7 +175,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Subscribe to transcripts available for any online meeting where a specific Teams app is installed using only permissions that use resource-specific consent
+### Example 2: Subscribe to transcripts available for any online meeting where a specific Teams app is installed using only resource-specific consent permissions
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -219,11 +238,14 @@ One of the following permissions is required to subscribe to `communications/onl
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetingRecording.Read.All             |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | OnlineMeetingRecording.Read.All             |
+| Application                            | OnlineMeetingRecording.Read.Chat*, OnlineMeetingRecording.Read.All |
 
-### Example
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-The following example shows how to subscribe to recordings available for online meetings.
+> [!NOTE]
+> To subscribe to any recording available for for a particular online meeting, using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
+
+### Example 1: Subscribe to recordings available for a particular online meeting using classic permissions
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -233,6 +255,24 @@ Content-Type: application/json
   "changeType": "created",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "communications/onlineMeetings/{onlineMeetingId}/recordings",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2023-04-11T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
+### Example 2: Subscribe to recordings available for a particular online meeting using only resource-specific consent permissions
+
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "communications/onlineMeetings/{onlineMeetingId}/recordings?useResourceSpecificConsentBasedAuthorization=true",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -277,19 +317,19 @@ Content-Type: application/json
 
 ## Subscribe to recordings available for any meeting where a specific Teams app is installed
 
-To get change notifications for any transcript available for any online meeting where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllrecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
+To get change notifications for any transcript available for any online meeting where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllrecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
 > [!NOTE]
 > This resource type is available only on the `/beta` endpoint.
 ### Permissions
 
-One of the following permissions is required to subscribe to `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllrecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllrecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | OnlineMeetingTranscript.Read.Chat*, OnlineMeetingTranscript.Read.All |
+| Application                            | OnlineMeetingRecording.Read.Chat*, OnlineMeetingRecording.Read.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
