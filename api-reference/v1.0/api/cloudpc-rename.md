@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: rename"
-description: "Rename a specific Cloud PC object."
+description: "Rename a specific cloudPC object."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
