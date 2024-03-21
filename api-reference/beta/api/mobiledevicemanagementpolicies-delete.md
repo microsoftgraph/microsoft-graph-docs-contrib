@@ -3,7 +3,7 @@ title: "Delete mobileDeviceManagementPolicy"
 description: "Delete a mobile device management policy."
 author: "michaelrm97"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ DELETE /policies/mobileDeviceManagementPolicies/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

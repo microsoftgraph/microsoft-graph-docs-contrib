@@ -15,7 +15,7 @@ const application = {
     singleSignOnSettings: {
       kerberosSignOnSettings: {
         kerberosServicePrincipalName: 'HTTP/iwademo.contoso.com',
-   	    kerberosSignOnMappingAttributeType: 'userPrincipalName'
+           kerberosSignOnMappingAttributeType: 'userPrincipalName'
       },
       singleSignOnMode: 'onPremisesKerberos'
     }

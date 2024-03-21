@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -427,7 +427,89 @@
       "SubArea": "Network access"
     },
     {
-      "ChangeList": [    
+      "ChangeList": [
+        {
+          "Id": "d07e2973-2cc0-4915-a7ba-3aab2317db6d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "filteringPolicyAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **filteringPolicyAction** enumeration type.",
+          "Target": "filteringPolicyAction"
+        },
+        {
+          "Id": "d07e2973-2cc0-4915-a7ba-3aab2317db6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [webCategory](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-webCategory?view=graph-rest-beta) resource type.",
+          "Target": "webCategory"
+        },
+        {
+          "Id": "d07e2973-2cc0-4915-a7ba-3aab2317db6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filteringPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [filteringPolicy](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-filteringPolicy?view=graph-rest-beta) resource",
+          "Target": "filteringPolicy"
+        },
+        {
+          "Id": "d07e2973-2cc0-4915-a7ba-3aab2317db6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filteringPolicyLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [filteringPolicyLink](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-filteringPolicyLink?view=graph-rest-beta) resource",
+          "Target": "filteringPolicyLink"
+        },
+        {
+          "Id": "d07e2973-2cc0-4915-a7ba-3aab2317db6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filteringProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the [filteringProfile](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-filteringProfile?view=graph-rest-beta) resource",
+          "Target": "filteringProfile"
+        },
+        {
+          "Id": "d07e2973-2cc0-4915-a7ba-3aab2317db6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filteringRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [filteringRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-filteringRule?view=graph-rest-beta) resource",
+          "Target": "filteringRule"
+        },
+        {
+          "Id": "d07e2973-2cc0-4915-a7ba-3aab2317db6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fqdnFilteringRule",
+          "ChangeType": "Addition",
+          "Description": "Added the **fqdnFilteringRule** resource",
+          "Target": "fqdnFilteringRule"
+        },
+        {
+          "Id": "d07e2973-2cc0-4915-a7ba-3aab2317db6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "internetAccessForwardingRule",
+          "ChangeType": "Addition",
+          "Description": "Added the **internetAccessForwardingRule** resource",
+          "Target": "internetAccessForwardingRule"
+        },
+        {
+          "Id": "d07e2973-2cc0-4915-a7ba-3aab2317db6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webCategoryFilteringRule",
+          "ChangeType": "Addition",
+          "Description": "Added the **webCategoryFilteringRule** resource",
+          "Target": "webCategoryFilteringRule"
+        }
+      ],
+      "Id": "d07e2973-2cc0-4915-a7ba-3aab2317db6d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-14T00:00:00.8891656Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
           "ApiChange": "Resource",

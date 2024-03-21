@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -23,6 +23,48 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-08-10T18:49:04.1521461Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "da2d0de7-1943-476e-9963-526e67fd97ed",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "da2d0de7-1943-476e-9963-526e67fd97ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "room",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-beta) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "da2d0de7-1943-476e-9963-526e67fd97ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workspace",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
+          "Target": "workspace"
+        },
+        {
+          "Id": "da2d0de7-1943-476e-9963-526e67fd97ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roomList",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [roomList](https://learn.microsoft.com/en-us/graph/api/resources/roomlist?view=graph-rest-beta) resource.",
+          "Target": "roomList"
+        }
+      ],
+      "Id": "da2d0de7-1943-476e-9963-526e67fd97ed",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-08T00:26:43.6656685Z",
       "WorkloadArea": "Calendar",
       "SubArea": "Places"
     }

@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.site_page import SitePage
+from msgraph.generated.models.title_area import TitleArea
+from msgraph.generated.models.canvas_layout import CanvasLayout
+from msgraph.generated.models.horizontal_section import HorizontalSection
+from msgraph.generated.models.horizontal_section_column import HorizontalSectionColumn
+from msgraph.generated.models.web_part import WebPart
 
 graph_client = GraphServiceClient(credentials, scopes)
 

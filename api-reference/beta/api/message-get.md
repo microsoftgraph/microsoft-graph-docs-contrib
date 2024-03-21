@@ -3,7 +3,7 @@ title: "Get message"
 description: "Retrieve the properties and relationships of the message object."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -15,25 +15,28 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of the [message](../resources/message.md) object.
 
-For instance, you can get a message and expand all the [mention](../resources/mention.md) instances in the message. See an [example](#example-2-get-all-mentions-in-a-specific-message) below.
+For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message. For an example, see [Example 2](#example-2-get-all-mentions-in-a-specific-message).
 
-You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message). See also an [example](#example-5-get-mime-content) below.
+You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message). For an example, see [Example 5](#example-5-get-mime-content).
 
-There are two scenarios where an app can get a message in another user's mail folder:
+An app can get a message in another user's mail folder under two conditions:
 
-* If the app has application permissions, or,
-* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-share-messages-folders).
+* If the app has application permissions
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or has given delegated access to that user. For details, see [Get Outlook messages in a shared or delegated folder](/graph/outlook-share-messages-folders).
 
-Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
+Because the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "message_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/message-get-permissions.md)]
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadBasic, Mail.Read    |
+|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read    |
+|Application | Mail.ReadBasic.All, Mail.Read |
 
 ## HTTP request
 
@@ -92,7 +95,7 @@ Specifying the `$value` parameter returns the message content in MIME format, an
 ## Examples
 ### Example 1: Get a specific message
 #### Request
-The first example gets the specified message. It does not specify any header to indicate the desired format of the body to be returned.
+The first example gets the specified message. It does not specify any header to indicate the format of the body to be returned.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -139,8 +142,9 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ---
 
 #### Response
-Here is an example of the response. The **body** and **uniqueBody** properties are returned in the default HTML format.
-Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. The **body** and **uniqueBody** properties are returned in the default HTML format.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -218,7 +222,9 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_mentions_in_message",
@@ -237,32 +243,32 @@ Content-type: application/json
   "subject":"Start planning soon",
   "body":{
     "contentType":"HTML",
-    "content":"<html><head></head><body><p><a href=\"mailto:danas@contoso.onmicrosoft.com\">@Dana Swope</a>,<a href=\"mailto:randiw@contoso.onmicrosoft.com\">@Randi Welch</a>, forgot to mention, I will be away&nbsp;this weekend. I can start on Monday though.</p></body></html>"
+    "content":"<html><head></head><body><p><a href=\"mailto:danas@contoso.com\">@Dana Swope</a>,<a href=\"mailto:randiw@contoso.com\">@Randi Welch</a>, forgot to mention, I will be away&nbsp;this weekend. I can start on Monday though.</p></body></html>"
   },
-  "bodyPreview":"@Dana Swope<mailto:danas@contoso.onmicrosoft.com>, @Randi Welch, forgot to mention, I will be away this weekend. I can start on Monday though.",
+  "bodyPreview":"@Dana Swope<mailto:danas@contoso.com>, @Randi Welch, forgot to mention, I will be away this weekend. I can start on Monday though.",
   "sender":{
     "emailAddress":{
       "name":"Samantha Booth",
-      "address":"samanthab@contoso.onmicrosoft.com"
+      "address":"samanthab@contoso.com"
     }
   },
   "from":{
     "emailAddress":{
       "name":"Samantha Booth",
-      "address":"samanthab@contoso.onmicrosoft.com"
+      "address":"samanthab@contoso.com"
     }
   },
   "toRecipients":[
     {
       "emailAddress":{
         "name":"Dana Swope",
-        "address":"danas@contoso.onmicrosoft.com"
+        "address":"danas@contoso.com"
       }
     },
     {
       "emailAddress":{
         "name":"Randi Welch",
-        "address":"randiw@contoso.onmicrosoft.com"
+        "address":"randiw@contoso.com"
       }
     }
   ],
@@ -279,13 +285,13 @@ Content-type: application/json
       "id":"138f4c0a-1130-4776-b780-bf79d73abb3f",
       "mentioned":{
         "name":"Dana Swope",
-        "address":"danas@contoso.onmicrosoft.com"
+        "address":"danas@contoso.com"
       },
       "mentionText":null,
       "clientReference":null,
       "createdBy":{
         "name":"Samantha Booth",
-        "address":"samanthab@contoso.onmicrosoft.com"
+        "address":"samanthab@contoso.com"
       },
       "createdDateTime":"2016-07-21T07:40:20.152Z",
       "serverCreatedDateTime":"2016-07-21T07:40:20.152Z",
@@ -297,13 +303,13 @@ Content-type: application/json
       "id":"7b94df1a-0086-482a-b0da-e62fae12f983",
       "mentioned":{
         "name":"Randi Welch",
-        "address":"randiw@contoso.onmicrosoft.com"
+        "address":"randiw@contoso.com"
       },
       "mentionText":null,
       "clientReference":null,
       "createdBy":{
         "name":"Samantha Booth",
-        "address":"samanthab@contoso.onmicrosoft.com"
+        "address":"samanthab@contoso.com"
       },
       "createdDateTime":"2016-07-21T07:40:20.158Z",
       "serverCreatedDateTime":"2016-07-21T07:40:20.158Z",
@@ -368,8 +374,9 @@ Prefer: outlook.body-content-type="text"
 
 #### Response
 
-Here is an example of the response.
-Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
+The following example shows the response.
+
+>**Note:** The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
 <!-- {
   "blockType": "response",
   "name": "get_message_in_text",
@@ -450,7 +457,9 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 
 #### Response
 
-Here is an example of the response. Note: The number of Internet message headers in the response object has been reduced for brevity.
+The following example shows the response.
+
+>**Note:** The number of Internet message headers in the response object has been reduced for brevity.
 
 <!-- {
   "blockType": "response",
@@ -543,7 +552,7 @@ GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc
 ---
 
 #### Response
-The following is the response. The MIME content begins with the `MIME-Version` header.
+The following example shows the response. The MIME content begins with the `MIME-Version` header.
 <!-- {
   "blockType": "response",
   "name": "get_message_in_mime",
@@ -641,7 +650,7 @@ YW5vdGhlciBtYWlsLg0K
 ```
 
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)
@@ -657,7 +666,8 @@ YW5vdGhlciBtYWlsLg0K
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: get_message_internet_headers/internetMessageHeaders/member/value:\r\n       Expected type String but actual was Binary. Property: value, actual value: 'binary'"
+    "Error: getmessageinternet_headers/internetMessageHeaders/member/value:
+      Expected type String but actual was Binary. Property: value, actual value: 'binary'"
   ]
 }
 -->

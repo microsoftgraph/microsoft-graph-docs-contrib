@@ -3,7 +3,7 @@ title: "Network Access enum values"
 description: "Microsoft Graph Network Access enumeration values"
 author: "moti-ba"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 doc_type: enumTypes
 ---
 
@@ -13,8 +13,6 @@ Namespace: microsoft.graph.networkaccess
 
 ### aggregationFilter values 
 
-
-
 |Member|
 |:---|
 |transactions|
@@ -23,8 +21,6 @@ Namespace: microsoft.graph.networkaccess
 |unknownFutureValue|
 
 ### applicationProtocol values 
-
-
 
 |Member|
 |:---|
@@ -39,8 +35,6 @@ Namespace: microsoft.graph.networkaccess
 
 ### bandwidthCapacityInMbps values 
 
-
-
 |Member|
 |:---|
 |mbps250|
@@ -50,8 +44,6 @@ Namespace: microsoft.graph.networkaccess
 |unknownFutureValue|
 
 ### connectivityState values 
-
-
 
 |Member|
 |:---|
@@ -63,8 +55,6 @@ Namespace: microsoft.graph.networkaccess
 
 ### deviceCategory values 
 
-
-
 |Member|
 |:---|
 |client|
@@ -72,8 +62,6 @@ Namespace: microsoft.graph.networkaccess
 |unknownFutureValue|
 
 ### deviceVendor values 
-
-
 
 |Member|
 |:---|
@@ -96,8 +84,6 @@ Namespace: microsoft.graph.networkaccess
 
 ### dhGroup values 
 
-
-
 |Member|
 |:---|
 |dhGroup14|
@@ -109,8 +95,6 @@ Namespace: microsoft.graph.networkaccess
 
 ### filteringPolicyAction values 
 
-
-
 |Member|
 |:---|
 |block|
@@ -118,8 +102,6 @@ Namespace: microsoft.graph.networkaccess
 |unknownFutureValue|
 
 ### forwardingCategory values 
-
-
 
 |Member|
 |:---|
@@ -130,8 +112,6 @@ Namespace: microsoft.graph.networkaccess
 
 ### forwardingRuleAction values 
 
-
-
 |Member|
 |:---|
 |bypass|
@@ -139,8 +119,6 @@ Namespace: microsoft.graph.networkaccess
 |unknownFutureValue|
 
 ### ikeEncryption values 
-
-
 
 |Member|
 |:---|
@@ -153,8 +131,6 @@ Namespace: microsoft.graph.networkaccess
 
 ### ikeIntegrity values 
 
-
-
 |Member|
 |:---|
 |sha256|
@@ -164,8 +140,6 @@ Namespace: microsoft.graph.networkaccess
 |unknownFutureValue|
 
 ### ipSecEncryption values 
-
-
 
 |Member|
 |:---|
@@ -177,8 +151,6 @@ Namespace: microsoft.graph.networkaccess
 
 ### ipSecIntegrity values 
 
-
-
 |Member|
 |:---|
 |gcmAes128|
@@ -188,8 +160,6 @@ Namespace: microsoft.graph.networkaccess
 |unknownFutureValue|
 
 ### networkDestinationType values 
-
-
 
 |Member|
 |:---|
@@ -202,8 +172,6 @@ Namespace: microsoft.graph.networkaccess
 |unknownFutureValue|
 
 ### networkingProtocol values 
-
-
 
 |Member|
 |:---|
@@ -233,8 +201,6 @@ Namespace: microsoft.graph.networkaccess
 
 ### onboardingStatus values 
 
-
-
 |Member|
 |:---|
 |offboarded|
@@ -246,8 +212,6 @@ Namespace: microsoft.graph.networkaccess
 |unknownFutureValue|
 
 ### pfsGroup values 
-
-
 
 |Member|
 |:---|
@@ -264,8 +228,6 @@ Namespace: microsoft.graph.networkaccess
 
 ### redundancyTier values 
 
-
-
 |Member|
 |:---|
 |noRedundancy|
@@ -273,8 +235,6 @@ Namespace: microsoft.graph.networkaccess
 |unknownFutureValue|
 
 ### region values 
-
-
 
 |Member|
 |:---|
@@ -301,8 +261,6 @@ Namespace: microsoft.graph.networkaccess
 
 ### status values 
 
-
-
 |Member|
 |:---|
 |enabled|
@@ -310,8 +268,6 @@ Namespace: microsoft.graph.networkaccess
 |unknownFutureValue|
 
 ### trafficForwardingType values 
-
-
 
 |Member|
 |:---|
@@ -322,14 +278,54 @@ Namespace: microsoft.graph.networkaccess
 
 ### trafficType values 
 
-
-
 |Member|
 |:---|
 |internet|
 |private|
 |microsoft365|
 |all|
+|unknownFutureValue|
+
+### userType values 
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
+### remoteNetworkStatus values 
+
+|Member|
+|:---|
+|tunnelDisconnected|
+|tunnelConnected|
+|bgpDisconnected|
+|bgpConnected|
+|remoteNetworkAlive|
+|unknownFutureValue|
+
+### remoteNetworkHealthAliveStatus values 
+
+|Member|
+|:---|
+|alive|
+|unknownFutureValue|
+
+### usageStatus values 
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
+### policyRule values  
+
+|Member|
+|:---|
+|forwardingRule|
+|filteringRule|
 |unknownFutureValue|
 
 <!--

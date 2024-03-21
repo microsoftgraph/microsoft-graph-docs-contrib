@@ -3,7 +3,7 @@ title: "Get teamsAppIcon"
 description: "Retrieve an icon associated with a specific definition of a Teams app."
 ms.localizationpriority: medium
 author: "jecha"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -48,7 +48,7 @@ This operation supports the `$select` and `$expand` [OData query parameters](/gr
 
 | Header           | Value                      |
 | :--------------- | :------------------------- |
-| Authorization    | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -348,7 +348,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get hosted content in app's icon](teamworkhostedcontent-get.md)
 - [List apps in catalog](appcatalogs-list-teamsapps.md)

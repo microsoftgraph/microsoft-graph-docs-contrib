@@ -3,7 +3,7 @@ title: "Get workbookOperation"
 description: "Retrieve the properties and relationships of a workbookOperation object."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "apiPageType"
 ---
 
@@ -40,7 +40,7 @@ GET /me/drive/items/{id}/workbook/operations/{operation-id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body

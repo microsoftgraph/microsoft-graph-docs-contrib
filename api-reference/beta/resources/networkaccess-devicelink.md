@@ -3,7 +3,7 @@ title: "deviceLink resource type"
 description: "A device link represents a single customer-premises equipment (CPE) at a physical branch site location that's connected to the Global Secure Access services."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List deviceLinks](../api/networkaccess-branchsite-list-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Get a list of the [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) objects and their properties.|
-|[Create deviceLink](../api/networkaccess-branchsite-post-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md)|Create a new [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object.|
+|[Create deviceLink](../api/networkaccess-branchsite-post-devicelinks.md)|None|Create a new [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object.|
 |[Get deviceLink](../api/networkaccess-devicelink-get.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object.|
 |[Update deviceLink](../api/networkaccess-devicelink-update.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md)|Update the properties of a [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object.|
 |[Delete deviceLink](../api/networkaccess-branchsite-delete-devicelinks.md)|None|Delete a [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object.|

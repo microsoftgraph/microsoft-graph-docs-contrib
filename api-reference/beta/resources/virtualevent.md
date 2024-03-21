@@ -3,7 +3,7 @@ title: "virtualEvent resource type"
 description: "Information about a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a base virtual event. Base type of [virtualEventWebinar](virtualEventWebinar.md).
+Represents a base virtual event. 
+
+This is an abstract type. The base type of [virtualEventWebinar](virtualEventWebinar.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -24,24 +26,24 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[communicationsIdentitySet](communicationsidentityset.md)|Identity information of who created the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
-|description|String|Description of the virtual event.|
-|displayName|String|Display name of the virtual event|
-|endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event.|
+|createdBy|[communicationsIdentitySet](communicationsidentityset.md)|Identity information for the creator of the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
+|description|[itemBody](../resources/itembody.md)|Description of the virtual event.|
+|displayName|String|Display name of the virtual event. |
+|endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones).|
 |id|String|Unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
-|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones).|
 |status|virtualEventStatus|Status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|presenters|[virtualEventPresenter](../resources/virtualeventpresenter.md) collection|Presenters' information of the virtual event.|
-|sessions|[virtualEventSession](../resources/virtualeventsession.md) collection|Sessions of the virtual event.|
+|presenters|[virtualEventPresenter](../resources/virtualeventpresenter.md) collection|The virtual event presenters.|
+|sessions|[virtualEventSession](../resources/virtualeventsession.md) collection|Sessions for the virtual event.|
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -56,7 +58,9 @@ Here's a JSON representation of the resource.
   "createdBy": {
     "@odata.type": "microsoft.graph.communicationsIdentitySet"
   },
-  "description": "String",
+  "description": {
+    "@odata.type": "microsoft.graph.itemBody"
+  },
   "displayName": "String",
   "endDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"

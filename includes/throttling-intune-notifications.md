@@ -1,5 +1,5 @@
 ---
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include

@@ -3,7 +3,7 @@ title: "List applicationTemplates"
 description: "Retrieve a list of applicationtemplate objects."
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -125,18 +125,34 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id" : "id-value",
-      "displayName" : "displayName-value",
-      "homePageUrl" : "homePageUrl-value",
-      "supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
-      "logoUrl" : "logoUrl-value",
-      "categories" : ["categories-value"],
-      "publisher" : "publisher-value",
-      "description" : "description-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applicationTemplates?$select=appCategory,categories",
+    "value": [
+        {
+            "id": "00000007-0000-0000-c000-000000000000",
+            "displayName": "Dynamics CRM Online",
+            "homePageUrl": "http://www.microsoft.com/dynamics/crm",
+            "supportedSingleSignOnModes": [
+                "oidc",
+                "external"
+            ],
+            "supportedProvisioningTypes": [],
+            "logoUrl": "https://az495088.vo.msecnd.net/app-logo/crm_215.png",
+            "categories": [
+                "crm",
+                "productivity",
+                "collaboration",
+                "businessMgmt"
+            ],
+            "publisher": "Microsoft Corporation",
+            "description": null,
+            "supportedClaimConfiguration": null,
+            "informationalUrls": {
+                "singleSignOnDocumentationUrl": null,
+                "appSignUpUrl": "http://go.microsoft.com/fwlink/?LinkId=252780"
+            }
+        }
+    ]
 }
 ```
 

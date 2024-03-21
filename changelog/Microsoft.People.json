@@ -463,11 +463,37 @@
     {
       "ChangeList": [
         {
+          "Id": "c76057f0-1a05-42c7-af8e-df9b17700878",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pronounsSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounsSettings?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "pronounsSettings"
+        },
+        {
+          "Id": "c76057f0-1a05-42c7-af8e-df9b17700878",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "pronouns",
+          "ChangeType": "Addition",
+          "Description": "Added the **pronouns** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-1.0) resource.",
+          "Target": "peopleAdminSettings"
+        }
+      ],
+      "Id": "c76057f0-1a05-42c7-af8e-df9b17700878",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-12-11T12:32:45Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "71ebad7b-fc20-4469-b895-ddeef0ee54a0",
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-beta) operation to the [profilePhoto](https://learn.microsoft.com/en-us/graph/api/resources/profilephoto?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete?view=graph-rest-beta) operation to the [profilePhoto](https://learn.microsoft.com/en-us/graph/api/resources/profilephoto?view=graph-rest-beta) resource.",
           "Target": "profilePhoto"
         },
         {
@@ -475,7 +501,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-beta) operation to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete?view=graph-rest-beta) operation to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         },
         {
@@ -483,7 +509,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-beta) operation to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete?view=graph-rest-beta) operation to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
           "Target": "group"
         }
       ],
@@ -501,7 +527,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the [delete profile photo] (https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-1.0) method to the [profilePhoto](https://learn.microsoft.com/en-us/graph/api/resources/profilephoto?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delete profile photo] (https://learn.microsoft.com/en-us/graph/api/profilephoto-delete?view=graph-rest-1.0) method to the [profilePhoto](https://learn.microsoft.com/en-us/graph/api/resources/profilephoto?view=graph-rest-1.0) resource.",
           "Target": "profilePhoto"
         },
         {
@@ -509,7 +535,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
           "Target": "user"
         },
         {
@@ -517,7 +543,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the [Delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-1.0) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete?view=graph-rest-1.0) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
           "Target": "group"
         }
       ],

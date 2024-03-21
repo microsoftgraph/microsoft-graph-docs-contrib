@@ -1,18 +1,18 @@
 ---
-title: "List policies"
-description: "Retrieve a list of forwarding policy links associated with a specific forwarding profile."
+title: "List forwarding policies"
+description: "Retrieve a list of forwarding policy links that are associated with a specific forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
-# List policies
+# List forwarding policies
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of forwarding policy links associated with a specific forwarding profile.
+Retrieve a list of forwarding policy links that are associated with a specific forwarding profile.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -35,12 +35,12 @@ GET /networkAccess/forwardingProfiles/{forwardingProfileId}/policies/
 ```
 
 ## Optional query parameters
-This method does not support any OData query parameters.
+This method doesn't support any OData query parameters.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -119,34 +119,6 @@ Content-Type: application/json
                 "id": "81e6666b-dcf3-4ee6-9212-adb12df18dab",
                 "name": "Exchange Online",
                 "description": "These properties represent Exchange Online endpoints that should be reachable to use the service.",
-                "version": "1.0.0",
-                "trafficForwardingType": "m365"
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.networkaccess.forwardingPolicyLink",
-            "id": "c0eea492-85f4-4eab-b03a-3a5abb459096",
-            "state": "enabled",
-            "version": "1.0.0",
-            "policy": {
-                "@odata.type": "#microsoft.graph.networkaccess.forwardingPolicy",
-                "id": "d8929d18-b24a-4a67-8c7b-1483029855a0",
-                "name": "SharePoint Online and OneDrive for Business",
-                "description": "These properties represent SharePoint Online and OneDrive for Business endpoints that should be reachable to use the service.",
-                "version": "1.0.0",
-                "trafficForwardingType": "m365"
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.networkaccess.forwardingPolicyLink",
-            "id": "caaa9df8-240c-4db1-ad34-0c9b5ca06918",
-            "state": "enabled",
-            "version": "1.0.0",
-            "policy": {
-                "@odata.type": "#microsoft.graph.networkaccess.forwardingPolicy",
-                "id": "c67e7847-feab-4b13-8163-88c0bac70ad0",
-                "name": "Microsoft 365 Common and Office Online",
-                "description": "These properties represent Microsoft 365 Common and Office Online endpoints that should be reachable to use the service.",
                 "version": "1.0.0",
                 "trafficForwardingType": "m365"
             }

@@ -4,19 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String currentPassword = "xWwvJ]6NMw+bWH-d";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String newPassword = "0eM85N54wFxWwvJ]";
+com.microsoft.graph.users.item.changepassword.ChangePasswordPostRequestBody changePasswordPostRequestBody = new com.microsoft.graph.users.item.changepassword.ChangePasswordPostRequestBody();
+changePasswordPostRequestBody.setCurrentPassword("xWwvJ]6NMw+bWH-d");
+changePasswordPostRequestBody.setNewPassword("0eM85N54wFxWwvJ]");
+graphClient.me().changePassword().post(changePasswordPostRequestBody);
 
-graphClient.me()
-	.changePassword(UserChangePasswordParameterSet
-		.newBuilder()
-		.withCurrentPassword(currentPassword)
-		.withNewPassword(newPassword)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -3,7 +3,7 @@ title: "team resource type"
 description: "A Microsoft Teams team is a collection of channels. "
 author: "AkJo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -143,7 +143,7 @@ The following is a JSON representation of the resource.
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 - [Use the Microsoft Graph API to work with Microsoft Teams](teams-api-overview.md)
 - [Creating a group with a team](/graph/teams-create-group-and-team)

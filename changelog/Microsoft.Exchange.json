@@ -1,5 +1,5 @@
 {
-  "changelog": [ 
+  "changelog": [
     {
       "ChangeList": [
         {
@@ -85,7 +85,7 @@
       "CreatedDateTime": "2022-02-17T00:00:00.000Z",
       "WorkloadArea": "Change notifications",
       "SubArea": ""
-    }, 
+    },
     {
       "ChangeList": [
         {
@@ -207,7 +207,7 @@
       "CreatedDateTime": "2021-10-13T00:00:00.000Z",
       "WorkloadArea": "Personal contacts",
       "SubArea": ""
-    }, 
+    },
     {
       "ChangeList": [
         {
@@ -225,7 +225,7 @@
       "CreatedDateTime": "2021-05-24T00:00:00",
       "WorkloadArea": "Mail",
       "SubArea": "Message"
-    },  
+    },
     {
       "ChangeList": [
         {
@@ -323,7 +323,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **isDraft** property to the [event](https://learn.microsoft.com/en-us/graph/api/resources/event) entity.",
           "Target": "event"
-        }        
+        }
       ],
       "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
       "Cloud": "prd",
@@ -587,7 +587,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "file attachments up to 150MB,event",
           "ChangeType": "Addition",
-          "Description": "Support for [file attachments up to 150MB](outlook-large-attachments.md) for an [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) instance.",
+          "Description": "Support for [file attachments up to 150MB](https://learn.microsoft.com/en-us/graph/outlook-large-attachments) for an [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) instance.",
           "Target": "file attachments up to 150MB,event"
         }
       ],
@@ -605,7 +605,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Adding file attachments up to 150MB,message",
           "ChangeType": "Addition",
-          "Description": "[Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) instance.",
+          "Description": "[Adding file attachments up to 150MB](https://learn.microsoft.com/en-us/graph/outlook-large-attachments) to a [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) instance.",
           "Target": "Adding file attachments up to 150MB,message"
         },
         {
@@ -719,7 +719,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Adding file attachments up to 150MB,message",
           "ChangeType": "Addition",
-          "Description": "[Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) instance.",
+          "Description": "[Adding file attachments up to 150MB](https://learn.microsoft.com/en-us/graph/outlook-large-attachments) to a [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) instance.",
           "Target": "Adding file attachments up to 150MB,message"
         },
         {
@@ -895,7 +895,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Mail.ReadBasic (preview) permission,List Messages,Get Message",
           "ChangeType": "Addition",
-          "Description": "Added support for a new [Mail.ReadBasic (preview) permission](permissions-reference.md#mail-permissions) for [List Messages](https://learn.microsoft.com/en-us/graph/api/user-list-messages?view=graph-rest-beta) and [Get Message](https://learn.microsoft.com/en-us/graph/api/message-get?view=graph-rest-beta).",
+          "Description": "Added support for a new [Mail.ReadBasic (preview) permission](https://learn.microsoft.com/en-us/graph/permissions-reference#mail-permissions) for [List Messages](https://learn.microsoft.com/en-us/graph/api/user-list-messages?view=graph-rest-beta) and [Get Message](https://learn.microsoft.com/en-us/graph/api/message-get?view=graph-rest-beta).",
           "Target": "Mail.ReadBasic (preview) permission,List Messages,Get Message"
         },
         {
@@ -2347,6 +2347,24 @@
       "CreatedDateTime": "2023-11-09T00:00:00.000Z",
       "WorkloadArea": "Change notifications",
       "SubArea": ""
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b10ba647-3a60-4ca7-8cfb-de38906085b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "iCalUId",
+          "ChangeType": "Addition",
+          "Description": "Added the **iCalUId** property to the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) resource.",
+          "Target": "event"
+        }
+      ],
+      "Id": "b10ba647-3a60-4ca7-8cfb-de38906085b9",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-16T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    }    
   ]
 }

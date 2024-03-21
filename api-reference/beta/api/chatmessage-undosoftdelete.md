@@ -2,7 +2,7 @@
 title: "chatMessage: undoSoftDelete"
 description: "Undelete a single message or a message reply in a channel or a chat."
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---
@@ -19,19 +19,25 @@ Undo soft deletion of a single [chatMessage](../resources/chatmessage.md) or a [
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions for channel
-
-<!-- { "blockType": "permissions", "name": "chatmessage_undosoftdelete" } -->
-[!INCLUDE [permissions-table](../includes/permissions/chatmessage-undosoftdelete-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+|Delegated (work or school account)| ChannelMessage.ReadWrite |
+|Delegated (personal Microsoft account)| Not supported |
+|Application| Not supported |
 
 > **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ### Permissions for chat
-
-<!-- { "blockType": "permissions", "name": "chatmessage_undosoftdelete_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/chatmessage-undosoftdelete-2-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+|Delegated (work or school account)| Chat.ReadWrite |
+|Delegated (personal Microsoft account)| Not supported |
+|Application| Not supported |
 
 ## HTTP request
 
@@ -58,7 +64,7 @@ POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/undoSoftDelete
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

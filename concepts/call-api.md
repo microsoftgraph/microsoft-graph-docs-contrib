@@ -3,18 +3,18 @@ title: "Calling the Microsoft Graph API"
 description: "To access and manipulate a Microsoft Graph resource, you call and specify the resource URLs using one of the following operations:   "
 ms.localizationpriority: medium
 author: "ananmishr"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Calling the Microsoft Graph API
 
-To access and manipulate a Microsoft Graph resource, you call and specify the resource URLs using one of the following operations:   
+To access and manipulate a Microsoft Graph resource, you call and specify the resource URLs using one of the following operations:
 
 - GET
 - POST
 - PATCH
 - PUT
-- DELETE 
+- DELETE
 
 All Microsoft Graph API requests use the following basic URL pattern:
 
@@ -54,7 +54,7 @@ The metadata allows you to see and understand the data model of Microsoft Graph,
 You can use the metadata to understand the relationships between entities in Microsoft Graph and establish URLs that navigate between entities.
 This navigation-based interconnectedness gives Microsoft Graph its unique character.
 
-Path URL resource names, query parameters, and action parameters and values are case insensitive. 
+Path URL resource names, query parameters, and action parameters and values are case insensitive.
 However, values you assign, entity IDs, and other base64-encoded values are case-sensitive.
 
 The following sections show a few basic programming pattern calls to the Microsoft Graph API.
@@ -63,16 +63,16 @@ The following sections show a few basic programming pattern calls to the Microso
 
 To view the information about a user, you get the `User` entity from the `users` collection to the specific user identified by its identifier, using an HTTPS GET request.
 For a `User` entity, either the `id` or `userPrincipalName` property can be used as the identifier.
-The following example request uses the `userPrincipalName` value as the user's id. 
+The following example request uses the `userPrincipalName` value as the user's id.
 
-```no-highlight 
-GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
+```no-highlight
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
 If successful, you should get a 200 OK response containing the user resource representation in the payload, as shown as follows:
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 982
@@ -85,9 +85,9 @@ content-length: 982
     "department": "Help Center",
     "displayName": "John Doe",
     "givenName": "John",
-    "userPrincipalName": "john.doe@contoso.onmicrosoft.com",
+    "userPrincipalName": "john.doe@contoso.com",
 
-    ... 
+    ...
 }
 ```
 
@@ -96,14 +96,14 @@ content-length: 982
 To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the _select_ query parameter to the previous request.
 For example:
 
-```no-highlight 
-GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
+```no-highlight
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
 The successful response returns the 200 OK status and a payload of the following format:
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 169
@@ -124,20 +124,20 @@ Here, instead of the entire property sets on the `user` entity, only the `aboutM
 
 ## Traverse to another resource via relationship
 A manager holds a `directReports` relationship with the other users reporting to him or her.
-To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal. 
+To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal.
 
-```no-highlight 
-GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
+```no-highlight
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com/directReports HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
 The successful response returns the 200 OK status and a payload of the following format:
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 152
-    
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
     "@odata.type": "#microsoft.graph.user",
@@ -154,23 +154,23 @@ For example, the `user => messages` relationship enables traversal from a Micros
 The following example shows how to do this in a REST API call:
 
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/me/messages HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
-    
+
 The successful response returns the 200 OK status and a payload of the following format:
 
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 odata-version: 4.0
 content-length: 147
-    
+
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/Messages",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.com')/Messages",
   "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=1&$skip=1",
   "value": [
     {
@@ -190,7 +190,7 @@ content-length: 147
       },
       "BodyPreview": "it was great!",
       "Importance": "Normal",
-            
+
        ...
     }
   ]
@@ -201,16 +201,16 @@ content-length: 147
 In addition to projection from a single entity to its properties, you can also apply the similar `select` query option to an entity collection to project them to a collection of some of their properties.
 For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request:
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
 The successful response returns a 200 OK status code and a payload containing the names and types of the shared files, as shown in the following example:
 
-```no-highlight 
+```no-highlight
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/drive/root/children(name,type)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.com')/drive/root/children(name,type)",
   "value": [
     {
       "@odata.etag": "\"{896A8E4D-27BF-424B-A0DA-F073AE6570E2},2\"",
@@ -232,22 +232,22 @@ The successful response returns a 200 OK status code and a payload containing th
 To find the employees of a specific job title within an organization, you can navigate from the users collection and then specify a _filter_ query option.
 An example is shown as follows:
 
-    
-```no-highlight 
+
+```no-highlight
 GET https://graph.microsoft.com/v1.0/users/?$filter=jobTitle+eq+%27Helper%27 HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
 The successful response returns the 200 OK status code and a list of users with the specified job title (`'Helper'`), as shown in the following example:
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
 odata-version: 4.0
 content-length: 986
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/contoso.onmicrosoft.com/$metadata#users",
+    "@odata.context": "https://graph.microsoft.com/v1.0/contoso.com/$metadata#users",
     "value": [
         {
             "id": "c95e3b3a-c33b-48da-a6e9-eb101e8a4205",
@@ -261,24 +261,24 @@ content-length: 986
             "mailNickname": "Jane",
             "mobile": null,
             "otherMails": [
-                "jane.doe@contoso.onmicrosoft.com"
+                "jane.doe@contoso.com"
             ],
             ......
             "surname": "Doe",
             "usageLocation": "US",
-            "userPrincipalName": "help@contoso.onmicrosoft.com",
+            "userPrincipalName": "help@contoso.com",
             "userType": "Member"
         },
-        
+
         ...
     ]
 }
 ```
 
 ## Call actions or functions
-Microsoft Graph also supports _actions_ and _functions_ to manipulate resources in ways that are not a simple fit with standard HTTP methods. 
+Microsoft Graph also supports _actions_ and _functions_ to manipulate resources in ways that are not a simple fit with standard HTTP methods.
 For example, the following HTTPS POST request lets the signed-in user (`me`) send an email message:
-```no-highlight 
+```no-highlight
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer <access_token>
 content-type: application/json
@@ -294,7 +294,7 @@ content-length: 96
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "garthf@a830edad9050849NDA1.onmicrosoft.com"
+          "address": "garthf@contoso.com"
         }
       }
     ],

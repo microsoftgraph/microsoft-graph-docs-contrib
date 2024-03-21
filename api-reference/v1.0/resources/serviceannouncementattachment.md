@@ -3,7 +3,7 @@ title: "serviceAnnouncementAttachment resource type"
 description: "Represents an attachment associated with a serviceUpdateMessage object."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: resourcePageType
 ---
 

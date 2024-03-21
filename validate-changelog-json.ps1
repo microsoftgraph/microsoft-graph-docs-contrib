@@ -13,11 +13,11 @@ Get-ChildItem -Filter "changelog/*.json" | Where-Object { $schemaFileName -notco
         if(($json | Test-Json -Schema $schema -ErrorAction:SilentlyContinue) -eq $true){
             Write-Host ("Passed Validation : " + $_.Name) -ForegroundColor Green
         } else {
-            $err += "File found with invalid changelog: " + $_.Name + "`nError Details: " + $Error[0].ErrorDetails.Message + "`r`n";
+            $err += "File found with invalid changelog format: " + $_.Name + "`nError Details: " + $Error[0].Exception.Message + "`r`n" + $Error[0].Exception.InnerException.Message + "`r`n";
         }
 
     } else {
-        $err += $_.Name + "`t`t" + $Error[0].Exception.Message + "`r`n";
+        $err += "File found with invalid json format: " + $_.Name + "`nError Details: " + $Error[0].Exception.Message + "`r`n" + $Error[0].Exception.InnerException.Message + "`r`n";
     }
 }
 

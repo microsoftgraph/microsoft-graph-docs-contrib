@@ -4,7 +4,7 @@ description: "Retrieve a list of b2cIdentityUserFlow objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List b2cIdentityUserFlows
@@ -47,7 +47,7 @@ For more information, see [OData query parameters](/graph/query-parameters).
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -265,7 +265,10 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
     "Error: list_b2cUserFlows/container/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: list_b2cUserFlows_expand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+    "Error: listb2cUserFlowsexpand/container/userFlowTypeVersion:
+      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: listb2cUserFlowsexpand/container/userFlowTypeVersion:
+      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
 

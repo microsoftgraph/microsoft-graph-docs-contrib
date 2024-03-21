@@ -3,7 +3,7 @@ title: "Create schema"
 description: "Create the schema for a Microsoft Search connection."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ PATCH /external/connections/{id}/schema
 
 | Name                  | Description                                                        |
 |:----------------------|:-------------------------------------------------------------------|
-| Authorization         | Bearer {token}. Required.                                          |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type          | application/json. Required.                                        |
 | Prefer: respond-async | Use this to cause the request to execute asynchronously. Optional. |
 
@@ -50,13 +50,13 @@ When you register a custom item schema, the **schema** object **must** have the 
 
 If successful, this method returns a `202 Accepted` response code and a URL in the `Location` response header that can be used to [get the operation status](../api/externalconnectors-connectionoperation-get.md).
 
+>**Note:** It can take between 5 and 15 minutes for the schema to get created. We recommend that you use the URL in the `Location` response header to get the operation status.
+
 ## Examples
 
-### Example: Register custom schema asynchronously
+### Request
 
-#### Request
-
-The following example shows a request.
+The following example shows a request to register a custom schema asynchronously.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -132,7 +132,7 @@ Content-type: application/json
 ---
 
 <!-- markdownlint-disable MD024 -->
-#### Response
+### Response
 <!-- markdownlint-enable MD024 -->
 
 The following example shows the response.

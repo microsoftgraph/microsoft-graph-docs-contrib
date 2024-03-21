@@ -3,7 +3,7 @@ title: "Get rule"
 description: "Get the properties and relationships of a messageRule object."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Request body
@@ -45,7 +45,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [messageRule](../resources/messagerule.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules/AQAAAJ5dZ
 ---
 
 ##### Response
-Here is an example of the response. By default, the date-time properties in the response are in UTC.
+The following example shows the response. By default, the date-time properties in the response are in UTC.
 
 Note: The response object shown here might be shortened for readability.
 <!-- {
@@ -123,7 +123,7 @@ Content-type: application/json
       {
         "emailAddress":{
           "name":"Alex Wilbur",
-          "address":"AlexW@contoso.onmicrosoft.com"
+          "address":"AlexW@contoso.com"
         }
       }
     ]

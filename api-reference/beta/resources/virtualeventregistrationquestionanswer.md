@@ -3,7 +3,7 @@ title: "virtualEventRegistrationQuestionAnswer resource type"
 description: "Information about registration question answer of a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Represents the answer(s) of a [virtualEventRegistrationQuestion](../resources/vi
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"

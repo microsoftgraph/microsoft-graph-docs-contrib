@@ -3,7 +3,7 @@ title: "policyLink resource type"
 description: "The link to a policy associated with a specific profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type from which the [forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) resource type is derived.
+This is an abstract type from which the [forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) and [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) resource types are derived.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).

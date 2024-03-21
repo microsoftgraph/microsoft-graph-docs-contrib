@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|Not supported.|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Calendars.ReadWrite|Bookings.Read.All, Calendars.Read|
+|Application|Bookings.Read.All|Bookings.Manage.All, Bookings.ReadWrite.All, Calendars.Read, Calendars.ReadWrite|
 

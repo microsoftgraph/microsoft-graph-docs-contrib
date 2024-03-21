@@ -3,7 +3,7 @@ title: "taskReport resource type"
 description: "Reports on the results of processing tasks in a lifecycle workflow which are aggregated on task and run level"
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

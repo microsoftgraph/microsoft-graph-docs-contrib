@@ -3,7 +3,7 @@ title: "Working with Microsoft Entra resources in Microsoft Graph"
 description: "Microsoft Graph for Microsoft Entra provides REST APIs to help manage your organization, resources, and assets."
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 author: "dkershaw10"
 ms.date: 11/29/2022
 ---
@@ -60,9 +60,6 @@ The following table lists some common use cases for Microsoft Entra resources.
 | Ensure group memberships and application access rights are correct with access reviews. | [access reviews API](../resources/accessreviews-root.md) |[Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 | **Consent requests** | | |
 | Manage the consent request workflow for users attempting to access apps that require admin authorization.  | [Consent requests API](../resources/consentrequests-overview.md) |[Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 Directory resources and APIs can open up new ways for you to engage with users and manage their experiences with Microsoft Graph. To learn more:

@@ -3,7 +3,7 @@ title: "List teamTemplates"
 description: "Get a list of the teamTemplate objects and their properties for a tenant."
 author: "Charlieforce"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports the `$expand`, `$filter`, and `$skipToken` [OData query par
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Get a list of team templates
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 
@@ -134,7 +134,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

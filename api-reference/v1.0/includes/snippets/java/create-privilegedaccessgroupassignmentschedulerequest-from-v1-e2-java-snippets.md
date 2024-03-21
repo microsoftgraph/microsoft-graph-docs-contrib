@@ -4,24 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PrivilegedAccessGroupAssignmentScheduleRequest privilegedAccessGroupAssignmentScheduleRequest = new PrivilegedAccessGroupAssignmentScheduleRequest();
-privilegedAccessGroupAssignmentScheduleRequest.accessId = PrivilegedAccessGroupRelationships.MEMBER;
-privilegedAccessGroupAssignmentScheduleRequest.principalId = "3cce9d87-3986-4f19-8335-7ed075408ca2";
-privilegedAccessGroupAssignmentScheduleRequest.groupId = "2b5ed229-4072-478d-9504-a047ebd4b07d";
-privilegedAccessGroupAssignmentScheduleRequest.action = ScheduleRequestActions.SELF_ACTIVATE;
+privilegedAccessGroupAssignmentScheduleRequest.setAccessId(PrivilegedAccessGroupRelationships.Member);
+privilegedAccessGroupAssignmentScheduleRequest.setPrincipalId("3cce9d87-3986-4f19-8335-7ed075408ca2");
+privilegedAccessGroupAssignmentScheduleRequest.setGroupId("2b5ed229-4072-478d-9504-a047ebd4b07d");
+privilegedAccessGroupAssignmentScheduleRequest.setAction(ScheduleRequestActions.SelfActivate);
 RequestSchedule scheduleInfo = new RequestSchedule();
-scheduleInfo.startDateTime = OffsetDateTimeSerializer.deserialize("2023-02-08T07:43:00Z");
+OffsetDateTime startDateTime = OffsetDateTime.parse("2023-02-08T07:43:00.000Z");
+scheduleInfo.setStartDateTime(startDateTime);
 ExpirationPattern expiration = new ExpirationPattern();
-expiration.type = ExpirationPatternType.AFTER_DURATION;
-expiration.duration = DatatypeFactory.newInstance().newDuration("PT2H");
-scheduleInfo.expiration = expiration;
-privilegedAccessGroupAssignmentScheduleRequest.scheduleInfo = scheduleInfo;
-privilegedAccessGroupAssignmentScheduleRequest.justification = "Activate assignment.";
+expiration.setType(ExpirationPatternType.AfterDuration);
+PeriodAndDuration duration = PeriodAndDuration.ofDuration(Duration.parse("PT2H"));
+expiration.setDuration(duration);
+scheduleInfo.setExpiration(expiration);
+privilegedAccessGroupAssignmentScheduleRequest.setScheduleInfo(scheduleInfo);
+privilegedAccessGroupAssignmentScheduleRequest.setJustification("Activate assignment.");
+PrivilegedAccessGroupAssignmentScheduleRequest result = graphClient.identityGovernance().privilegedAccess().group().assignmentScheduleRequests().post(privilegedAccessGroupAssignmentScheduleRequest);
 
-graphClient.identityGovernance().privilegedAccess().group().assignmentScheduleRequests()
-	.buildRequest()
-	.post(privilegedAccessGroupAssignmentScheduleRequest);
 
 ```

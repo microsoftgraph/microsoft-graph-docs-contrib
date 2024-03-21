@@ -3,7 +3,7 @@ title: "List internalDomainFederations"
 description: "Read the properties of the internalDomainFederation object for the domain."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -22,10 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_list_federationconfiguration" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-list-federationconfiguration-permissions.md)]
 
-The calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-- Security Administrator
-- External Identity Provider Administrator
+[!INCLUDE [rbac-domainfederation-apis-read](../includes/rbac-for-apis/rbac-domainfederation-apis-read.md)]
 
 ## HTTP request
 
@@ -43,10 +40,10 @@ This method does not support OData query parameters to help customize the respon
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -101,7 +98,7 @@ GET https://graph.microsoft.com/beta/domains/{domainsId}/federationConfiguration
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

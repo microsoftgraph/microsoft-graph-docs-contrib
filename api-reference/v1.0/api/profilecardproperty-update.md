@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object, identified by its **directoryPropertyName** property.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | PeopleSettings.ReadWrite.All                |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+<!-- { "blockType": "permissions", "name": "profilecardproperty_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/profilecardproperty-update-permissions.md)]
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
 
@@ -37,7 +36,7 @@ PATCH /admin/people/profileCardProperties/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 > **Note:** To avoid encoding issues that malform the payload, use `Content-Type: application/json; charset=utf-8`.
@@ -48,7 +47,7 @@ PATCH /admin/people/profileCardProperties/{id}
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator has chosen to specify.|
+|annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator chose to specify.|
 |directoryPropertyName|String|The name of the directory property that is intended to surface on the profile card. |
 
 ## Response
@@ -59,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 
 ### Request
 
-The following example adds a localized label `Kostnadssenter` for the locale `nb-NO`.
+The following example adds a localized label `Kostnadssenter` for the locale `no`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,7 +77,7 @@ Content-type: application/json; charset=utf-8
       "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "nb-NO",
+          "languageTag": "no",
           "displayName": "Kostnadssenter"
         }
       ]
@@ -144,11 +143,7 @@ Content-type: application/json; charset=utf-8
       "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "ru-RU",
-          "displayName": "центр затрат"
-        },
-        {
-          "languageTag": "nb-NO",
+          "languageTag": "no",
           "displayName": "Kostnadssenter"
         }
       ]

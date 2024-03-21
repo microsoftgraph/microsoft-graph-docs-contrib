@@ -12,6 +12,7 @@
         "/dotnet",
         "/dynamics-nav",
         "/exchange",
+        "/entra",
         "/graph",
         "/intune-classic",
         "/legal",
@@ -35,6 +36,7 @@
         "/sharepoint",
         "/training",
         "/troubleshoot",
+        "/viva",
         "/windows",
         "/windows-hardware"
     ]

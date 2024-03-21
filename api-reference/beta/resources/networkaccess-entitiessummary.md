@@ -1,9 +1,9 @@
 ---
 title: "entitiesSummary resource type"
-description: "A summary for Global Secure Access entities."
-author: "Moti-ba"
+description: "Contains information about unique connectivity entities."
+author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -13,21 +13,23 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary for Global Secure Access entities that's returned by the [entitiesSummaries](../api/networkaccess-reports-entitiessummaries.md) method.
+Contains information about unique connectivity entities.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceCount|Int64|Count of unique devices that were seen.|
-|trafficType|microsoft.graph.networkaccess.trafficType|Traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
-|userCount|Int64|Count of unique Microsoft Entra users that were seen.|
-|workloadCount|Int64|Count of unique target workloads or hosts that were seen.|
+|deviceCount|Int64|The number of unique devices that were seen.|
+|trafficType|microsoft.graph.networkaccess.trafficType|The traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`.|
+|userCount|Int64|The number of unique Microsoft Entra ID users that were seen.|
+|workloadCount|Int64|The number of unique target workloads/hosts that were seen.|
+
+
 
 ## Relationships
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.entitiesSummary"

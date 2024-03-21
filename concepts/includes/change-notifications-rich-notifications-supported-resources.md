@@ -1,5 +1,6 @@
 ---
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: ric.lewis
 ms.prod: "change-notifications"
 ms.topic: include
@@ -17,9 +18,9 @@ Rich notifications are available for the following resources.
 |--|--|--|
 | Outlook [event][] | Changes to all events in a user's mailbox: `/users/{id}/events` | Requires `$select` to return only a subset of properties in the rich notification. For more information, see [Change notifications for Outlook resources](/graph/outlook-change-notifications-overview). |
 | Outlook [message][] | Changes to all messages in a user's mailbox: `/users/{id}/messages` <br/><br/>Changes to messages in a user's inbox: `/users/{id}/mailFolders/{id}/messages` | Requires `$select` to return only a subset of properties in the rich notification. For more information, see [Change notifications for Outlook resources](/graph/outlook-change-notifications-overview). |
-| Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox: `/users/{id}/contacts` <br/><br/>Changes to all personal contacts in a user's contactFolder: `/users/{id}/contactFolders/{id}/contacts` | Requires `$select` to return only a subset of properties in the rich notification. For more information, see [Change notifications for Outlook resources](/graph/outlook-change-notifications-overview). |
-| Teams [callRecording][] <sup>*<sup> | Any recording becomes available in the tenant: `communications/onlineMeetings/getAllRecordings` <br><br> Any recording becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per organization: 10,000 total subscriptions. |
-| Teams [callTranscript][] | All transcripts in an organization: `communications/onlineMeetings/getAllTranscripts` <br><br> All transcripts for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per organization: 10,000 total subscriptions. |
+| Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox: `/users/{id}/contacts` <br/><br/>Changes to all personal contacts in a user's contactFolder: `/users/{id}/contactFolders/{id}/contacts`| Requires `$select` to return only a subset of properties in the rich notification. For more information, see [Change notifications for Outlook resources](/graph/outlook-change-notifications-overview). |
+| Teams [callRecording][] | All recordings in an organization: `communications/onlineMeetings/getAllRecordings` <br><br> All recordings for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` <br><br> A call recording that becomes available in a meeting organized by a specific user: `users/{id}/onlineMeetings/getAllRecordings` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per app and user combination: 1 <li> Per user (for subscriptions tracking recordings in all onlineMeetings organized by the user): 10 subscriptions. <li> Per organization: 10,000 total subscriptions. |
+| Teams [callTranscript][] | All transcripts in an organization: `communications/onlineMeetings/getAllTranscripts` <br><br> All transcripts for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` <br><br> A call transcript that becomes available in a meeting organized by a specific user: `users/{id}/onlineMeetings/getAllTranscripts` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per app and user combination: 1 <li> Per user (for subscriptions tracking transcripts in all onlineMeetings organized by the user): 10 subscriptions. <li> Per organization: 10,000 total subscriptions. |
 | Teams [channel][] | Changes to channels in all teams: `/teams/getAllChannels`<br/><br/>Changes to channel in a specific team: `/teams/{id}/channels` | - |
 | Teams [chat][] | Changes to any chat in the tenant: `/chats`<br/><br/>Changes to a specific chat: `/chats/{id}` | - |
 | Teams [chatMessage][] | Changes to chat messages in all channels in all teams: `/teams/getAllMessages`<br/><br/>Changes to chat messages in a specific channel: `/teams/{id}/channels/{id}/messages`<br/><br/>Changes to chat messages in all chats: `/chats/getAllMessages`<br/><br/>Changes to chat messages in a specific chat: `/chats/{id}/messages`<br/><br/>Changes to chat messages in all chats a particular user is part of: `/users/{id}/chats/getAllMessages` | Doesn't support using `$select` to return only selected properties. The rich notification consists of all the properties of the changed instance. |
@@ -31,24 +32,12 @@ Rich notifications are available for the following resources.
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [contact]: /graph/api/resources/contact
-[conversation]: /graph/api/resources/conversation
 [conversationmember]: /graph/api/resources/conversationmember
-[driveItem]: /graph/api/resources/driveitem
-[list]: /graph/api/resources/list
-[site]: /graph/api/resources/site
 [event]: /graph/api/resources/event
-[group]: /graph/api/resources/group
 [message]: /graph/api/resources/message
-[user]: /graph/api/resources/user
-[alert]: /graph/api/resources/alert
 [chatMessage]: /graph/api/resources/chatmessage
-[callRecord]: /graph/api/resources/callrecords-callrecord
 [presence]: /graph/api/resources/presence
-[printer]: /graph/api/resources/printer
-[printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [team]: /graph/api/resources/team
-[todoTask]: /graph/api/resources/todotask
 [onlineMeeting]: /graph/api/resources/onlinemeeting
-[baseTask]: /graph/api/resources/basetask
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording

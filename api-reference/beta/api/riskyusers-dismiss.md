@@ -3,7 +3,7 @@ title: Dismiss riskyUser
 description: Dismiss the risk of a riskyUser object.
 author: tracyshi
 ms.localizationpriority: medium
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /riskyUsers/dismiss
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Specify the userIds to dismiss in the request body.
@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 ## Examples
 <!--### Example 1: Dismiss risky users-->
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ HTTP/1.1 204 No Content
 <!--
 ### Example 2: Dismiss a risky user
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -128,7 +128,7 @@ Content-Type: application/json
 ```
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

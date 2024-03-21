@@ -3,7 +3,7 @@ title: "List historyDefinitions"
 description: "Get a list of the accessReviewHistoryDefinition objects."
 author: isabelleatmsft
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ The default page size for this API is 100 **accessReviewHistoryDefinitions** obj
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

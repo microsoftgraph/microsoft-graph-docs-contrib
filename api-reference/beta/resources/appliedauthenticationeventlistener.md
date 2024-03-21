@@ -3,7 +3,7 @@ title: "appliedAuthenticationEventListener resource type"
 description: "Represents the listeners such as Azure Logic Apps and Azure Functions that are triggered by the corresponding events in a sign-in event."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

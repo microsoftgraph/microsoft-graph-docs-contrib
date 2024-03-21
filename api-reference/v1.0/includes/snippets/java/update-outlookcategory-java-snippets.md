@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OutlookCategory outlookCategory = new OutlookCategory();
-outlookCategory.color = CategoryColor.PRESET15;
+outlookCategory.setColor(CategoryColor.Preset15);
+OutlookCategory result = graphClient.me().outlook().masterCategories().byOutlookCategoryId("{outlookCategory-id}").patch(outlookCategory);
 
-graphClient.me().outlook().masterCategories("bac262b7-485d-4739-b436-e31467d64fac")
-	.buildRequest()
-	.patch(outlookCategory);
 
 ```

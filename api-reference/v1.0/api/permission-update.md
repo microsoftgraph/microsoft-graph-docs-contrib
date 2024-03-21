@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Change sharing permissions
 ms.localizationpriority: medium
 description: "Update the properties of a sharing permission by patching the permission resource."
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Update sharing permission
@@ -36,11 +36,13 @@ PATCH /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name          | Type   | Description                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+| if-match      | String. If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 ## Request body
 
@@ -67,7 +69,7 @@ If successful, this method returns a `200 OK` response code and updated [permiss
 
 ## Example
 
-Here is an example of the request that changes the role on the sharing permission to read-only.
+The following example shows a request that changes the role on the sharing permission to read-only.
 
 
 # [HTTP](#tab/http)

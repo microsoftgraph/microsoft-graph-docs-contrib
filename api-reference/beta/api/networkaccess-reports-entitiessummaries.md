@@ -1,9 +1,9 @@
 ---
 title: "reports: entitiesSummaries"
-description: "Provides high-level summaries of entities in the Global Secure Access tenant."
+description: "Get the number of users, devices, and workloads per traffic type in a specified time period."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides high-level summaries of entities in the Global Secure Access tenant.
+Get the number of users, devices, and workloads per traffic type in a specified time period.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -23,7 +23,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-reports-entitiessummaries-permissions.md)]
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
-
 
 ## HTTP request
 
@@ -41,14 +40,14 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Sets the starting date and time.|
-|endDateTime|DateTimeOffset|Sets the ending date and time.|
+|startDateTime|DateTimeOffset|The date and time when the reporting period starts.|
+|endDateTime|DateTimeOffset|The date and time when the reporting period ends.|
 
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -60,7 +59,7 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -68,7 +67,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/reports/entitiesSummaries(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z)?$filter=trafficType eq 'microsoft365'
+GET https://graph.microsoft.com/beta/networkAccess/reports/entitiesSummaries(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z) 
 ```
 
 # [C#](#tab/csharp)
@@ -115,7 +114,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.networkaccess.entitiesSummary)",
   "value": [
+    {
+      "trafficType": "internet",
+      "userCount": 1000,
+      "deviceCount": 8000,
+      "workloadCount": 76000
+    },
     {
       "trafficType": "microsoft365",
       "userCount": 100000,

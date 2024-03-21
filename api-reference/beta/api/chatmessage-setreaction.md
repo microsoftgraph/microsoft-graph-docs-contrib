@@ -2,7 +2,7 @@
 title: "chatMessage: setReaction"
 description: "Set a reaction to a single message or message reply in a channel or a chat."
 author: "sumanac"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---
@@ -19,17 +19,23 @@ Set a reaction to a single [chatMessage](../resources/chatmessage.md) or a [chat
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions for channel
-
-<!-- { "blockType": "permissions", "name": "chatmessage_setreaction" } -->
-[!INCLUDE [permissions-table](../includes/permissions/chatmessage-setreaction-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+|Delegated (work or school account)| ChannelMessage.Send  |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| Not supported. |
 
 ### Permissions for chat
-
-<!-- { "blockType": "permissions", "name": "chatmessage_setreaction_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/chatmessage-setreaction-2-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+|Delegated (work or school account)| Chat.ReadWrite, ChatMessage.Send |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| Not supported. |
 
 ## HTTP request
 
@@ -56,7 +62,7 @@ POST /chats/{chatId}/messages/{chatMessageId}/setReaction
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

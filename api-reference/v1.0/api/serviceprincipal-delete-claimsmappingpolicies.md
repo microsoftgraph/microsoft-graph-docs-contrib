@@ -3,7 +3,7 @@ title: "Remove claimsMappingPolicy"
 description: "Remove a claimsMappingPolicy from a servicePrincipal."
 ms.localizationpriority: medium
 author: "paulgarn"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -41,7 +41,7 @@ DELETE /servicePrincipals(appId='{appId}')/claimsMappingPolicies/{id}/$ref
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

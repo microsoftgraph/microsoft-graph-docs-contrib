@@ -3,7 +3,7 @@ title: "Delete accessPackageAssignmentRequest"
 description: "Delete accessPackageAssignmentRequest."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -17,7 +17,7 @@ Delete an [accessPackageAssignmentRequest](../resources/accesspackageassignmentr
 
 This request can be made to remove a denied or completed request.  You can't delete an access package assignment request if it has any **accessPackageAssignment** objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -28,9 +28,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+> [!NOTE]
+> The `/accessPackageAssignmentRequests` path will be retired soon. Use the `/assignmentRequests` path instead.
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
+DELETE /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageAssignmentRequestId}
 DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}
 ```
 
@@ -38,7 +42,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -52,7 +56,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -100,7 +104,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

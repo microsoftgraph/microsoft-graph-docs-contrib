@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.create_link_post_request_body import CreateLinkPostRequestBody
+from msgraph.generated.models.drive_recipient import DriveRecipient
 
 graph_client = GraphServiceClient(credentials, scopes)
 

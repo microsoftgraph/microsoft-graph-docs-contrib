@@ -35,7 +35,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -56,7 +56,7 @@ If successful, this method returns a `204 NO CONTENT` response code and an updat
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

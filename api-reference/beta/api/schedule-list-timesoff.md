@@ -3,7 +3,7 @@ title: "List timesOff"
 description: "Get the list of timesOff in this schedule."
 author: "aaku"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method supports the $filter [OData query parameter](/graph/query-parameters
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of a request that gets all **timeOff** objects that have a shared version and a draft version between March 11 - March 18, 2019.
+The following example shows a request that gets all **timeOff** objects that have a shared version and a draft version between March 11 - March 18, 2019.
 
 # [HTTP](#tab/http)
 <!-- {

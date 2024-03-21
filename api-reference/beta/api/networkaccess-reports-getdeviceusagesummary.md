@@ -1,9 +1,9 @@
 ---
 title: "reports: getDeviceUsageSummary"
-description: "Device Usage Summary report is a summary of counts around the area of the onboarding and offboarding of the organization devices to the Global Secure Access client."
+description: "Get a summary of device onboarding and offboarding within a specified timeframe. This summary includes the total number of devices, active devices, and inactive devices."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Device Usage Summary report is a summary of counts around the area of the onboarding and offboarding of the organization devices to the Global Secure Access client.
+Get a summary of device onboarding and offboarding within a specified timeframe. This summary includes the total number of devices, active devices, and inactive devices.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -40,15 +40,15 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Sets the starting date and time.|
-|endDateTime|DateTimeOffset|Sets the ending date and time.|
+|startDateTime|DateTimeOffset|The date and time when the reporting period begins.|
+|endDateTime|DateTimeOffset|The date and time when the reporting period ends.|
 |activityPivotDateTime|DateTimeOffset|The time that defines what is an active or inactive device.|
-
+|trafficType|String|Traffic classification. The possible values are: `microsoft365`, `private`,`internet`. Required.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -60,7 +60,7 @@ If successful, this function returns a `200 OK` response code and a [deviceUsage
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "reportsthis.getdeviceusagesummary"
@@ -85,13 +85,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "totalDeviceCount": 545,
-      "activeDeviceCount": 540,
-      "inactiveDeviceCount": 7
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.networkaccess.deviceUsageSummary",
+    "totalDeviceCount": 545,
+    "activeDeviceCount": 540,
+    "inactiveDeviceCount": 7
 }
 ```
 

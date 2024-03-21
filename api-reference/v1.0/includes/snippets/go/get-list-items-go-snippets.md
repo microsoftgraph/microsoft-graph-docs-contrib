@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphsites.SiteItemListItemItemsRequestBuilderGetQueryParameters{
-	Expand: [] string {"fields(select=Name,Color,Quantity)"},
+	Expand: [] string {"fields($select=Name,Color,Quantity)"},
 }
 configuration := &graphsites.SiteItemListItemItemsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

@@ -10,13 +10,13 @@ mgc users messages reply post --user-id {user-id} --message-id {message-id} --bo
     "toRecipients":[\
       {\
         "emailAddress": {\
-          "address":"samanthab@contoso.onmicrosoft.com",\
+          "address":"samanthab@contoso.com",\
           "name":"Samantha Booth"\
         }\
       },\
       {\
         "emailAddress":{\
-          "address":"randiw@contoso.onmicrosoft.com",\
+          "address":"randiw@contoso.com",\
           "name":"Randi Welch"\
         }\
       }\

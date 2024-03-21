@@ -3,7 +3,7 @@ title: "reportRoot: getAzureADApplicationSignInSummary"
 description: "Retrieve the properties and relationships of an applicationSigninSummary object."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

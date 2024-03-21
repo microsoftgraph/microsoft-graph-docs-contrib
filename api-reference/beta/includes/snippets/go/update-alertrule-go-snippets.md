@@ -30,6 +30,24 @@ threshold.SetTarget(&target)
 requestBody.SetThreshold(threshold)
 
 
+ruleCondition := graphmodelsdevicemanagement.NewRuleCondition()
+relationshipType := graphmodels.OR_RELATIONSHIPTYPE 
+ruleCondition.SetRelationshipType(&relationshipType) 
+conditionCategory := graphmodels.AZURENETWORKCONNECTIONCHECKFAILURES_CONDITIONCATEGORY 
+ruleCondition.SetConditionCategory(&conditionCategory) 
+aggregation := graphmodels.COUNT_AGGREGATIONTYPE 
+ruleCondition.SetAggregation(&aggregation) 
+operator := graphmodels.GREATEROREQUAL_OPERATORTYPE 
+ruleCondition.SetOperator(&operator) 
+thresholdValue := "90"
+ruleCondition.SetThresholdValue(&thresholdValue) 
+
+conditions := []graphmodelsdevicemanagement.RuleConditionable {
+	ruleCondition,
+}
+requestBody.SetConditions(conditions)
+
+
 notificationChannel := graphmodelsdevicemanagement.NewNotificationChannel()
 notificationChannelType := graphmodels.PORTAL_NOTIFICATIONCHANNELTYPE 
 notificationChannel.SetNotificationChannelType(&notificationChannelType) 

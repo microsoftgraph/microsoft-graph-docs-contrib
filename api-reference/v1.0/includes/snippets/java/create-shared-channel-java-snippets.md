@@ -4,26 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Channel channel = new Channel();
-channel.displayName = "My First Shared Channel";
-channel.description = "This is my first shared channel";
-channel.membershipType = ChannelMembershipType.SHARED;
-LinkedList<ConversationMember> membersList = new LinkedList<ConversationMember>();
-AadUserConversationMember members = new AadUserConversationMember();
-members.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')"));
-LinkedList<String> rolesList = new LinkedList<String>();
-rolesList.add("owner");
-members.roles = rolesList;
-membersList.add(members);
-ConversationMemberCollectionResponse conversationMemberCollectionResponse = new ConversationMemberCollectionResponse();
-conversationMemberCollectionResponse.value = membersList;
-ConversationMemberCollectionPage conversationMemberCollectionPage = new ConversationMemberCollectionPage(conversationMemberCollectionResponse, null);
-channel.members = conversationMemberCollectionPage;
+channel.setDisplayName("My First Shared Channel");
+channel.setDescription("This is my first shared channel");
+channel.setMembershipType(ChannelMembershipType.Shared);
+LinkedList<ConversationMember> members = new LinkedList<ConversationMember>();
+AadUserConversationMember conversationMember = new AadUserConversationMember();
+conversationMember.setOdataType("#microsoft.graph.aadUserConversationMember");
+LinkedList<String> roles = new LinkedList<String>();
+roles.add("owner");
+conversationMember.setRoles(roles);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("user@odata.bind", "https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')");
+conversationMember.setAdditionalData(additionalData);
+members.add(conversationMember);
+channel.setMembers(members);
+Channel result = graphClient.teams().byTeamId("{team-id}").channels().post(channel);
 
-graphClient.teams("57fb72d0-d811-46f4-8947-305e6072eaa5").channels()
-	.buildRequest()
-	.post(channel);
 
 ```

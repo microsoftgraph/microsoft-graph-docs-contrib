@@ -1,9 +1,9 @@
 ---
 title: "logs resource type"
-description: "Represents network connections that are routed through the Global Secure Access services."
-author: "Moti-ba"
+description: "Global Secure Access network logs."
+author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -13,38 +13,35 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents network connections that are routed through the Global Secure Access services.
-
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Global Secure Access network logs.
 
 ## Methods
-
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List remoteNetworks](../api/networkaccess-remotenetworkhealthstatusevent-list.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|Get a collection of remote network health events.|
+|[List traffic](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get the network access traffic events.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|traffic|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Represents a collection of log entries in the network access traffic log.|
+|remoteNetworks|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|A collection of remote network health events.|
+|traffic|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|A network access traffic log entry that contains comprehensive information about network traffic events.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.networkaccess.logs",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.networkaccess.logs",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.networkaccess.logs"
 }
 ```
 

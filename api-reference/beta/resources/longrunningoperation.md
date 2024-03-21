@@ -1,9 +1,9 @@
 ---
 title: "longRunningOperation resource type"
-description: "The status of a long-running operation."
+description: "Represents the status of a long-running operation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The status of a long-running operation.
+Represents the status of a long-running operation.
 
-Base type of [attackSimulationOperation](../resources/attacksimulationoperation.md) and [validateOperation](../resources/industrydata-validateoperation.md).
+Base type of [attackSimulationOperation](../resources/attacksimulationoperation.md), [engagementAsyncOperation](../resources/engagementasyncoperation.md), and [validateOperation](../resources/industrydata-validateoperation.md).
 
 ## Methods
 
@@ -27,16 +27,16 @@ Base type of [attackSimulationOperation](../resources/attacksimulationoperation.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|createdDateTime|DateTimeOffset|The start time of the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The unique identifier for the operation. |
-|lastActionDateTime|DateTimeOffset|The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastActionDateTime|DateTimeOffset|The time of the last action in the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |resourceLocation|String| URI of the resource that the operation is performed on. |
-|status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
 |statusDetail|String|Details about the status of the operation.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

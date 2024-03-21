@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.security.informationProtection.sensitivityLabels.microsoft.graph.security.evaluateApplication.evaluate_application_request_builder import EvaluateApplicationRequestBuilder
+from msgraph.generated.models.evaluate_application_post_request_body import EvaluateApplicationPostRequestBody
+from msgraph.generated.models.content_info import ContentInfo
+from msgraph.generated.models.key_value_pair import KeyValuePair
+from msgraph.generated.models.labeling_options import LabelingOptions
+from msgraph.generated.models.downgrade_justification import DowngradeJustification
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -76,12 +82,9 @@ request_body = EvaluateApplicationPostRequestBody(
 	),
 )
 
-request_configuration = EvaluateApplicationRequestBuilder.EvaluateApplicationRequestBuilderPostRequestConfiguration(
-headers = {
-		'User-Agent' : "ContosoLobApp/1.0",
-}
+request_configuration = EvaluateApplicationRequestBuilder.EvaluateApplicationRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("User-Agent", "ContosoLobApp/1.0")
 
-)
 
 result = await graph_client.users.by_user_id('user-id').security.information_protection.sensitivity_labels.microsoft_graph_security_evaluate_application.post(request_body, request_configuration = request_configuration)
 

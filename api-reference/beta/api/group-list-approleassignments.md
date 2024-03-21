@@ -3,7 +3,7 @@ title: "List appRoleAssignments granted to a group"
 description: "Retrieve the list of appRoleAssignments that have been granted to a group."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 author: "psignoret"
 ---
 
@@ -39,7 +39,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

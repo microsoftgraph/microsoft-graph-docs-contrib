@@ -1,9 +1,9 @@
 ---
 title: "reports: getCrossTenantSummary"
-description: "A summary of counts of the organization's devices accessing other tenants than your tenant."
+description: "Get a summary of the cross-tenant access patterns."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cross-tenant report is a summary of counts of the organization's devices accessing other tenants than your tenant.
+Get a summary of the cross-tenant access patterns.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -40,15 +40,15 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Sets the starting date and time.|
-|endDateTime|DateTimeOffset|Sets the ending date and time.|
-|discoveryPivotDateTime|DateTimeOffset|The time that defines what is new discovered tenant.|
+|startDateTime|DateTimeOffset|The time and date of the beginning of the report period.|
+|endDateTime|DateTimeOffset|The time and date of the end of the report period.|
+|discoveryPivotDateTime|DateTimeOffset|The time and date when reporting begins. Tenants are reported as newly accessed if and only if they're accessed during the reporting period after this time *and* not accessed during the reporting period before this time.|
 
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -60,7 +60,7 @@ If successful, this function returns a `200 OK` response code and a [crossTenant
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "reportsthis.getcrosstenantsummary"
@@ -85,15 +85,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-      {
-          "authTransactionCount": 5000,
-          "tenantCount": 23,
-          "newTenantCount": 2,
-          "userCount": 300,
-          "deviceCount": 545
-      }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.networkaccess.crossTenantSummary",
+  "authTransactionCount": 150049,
+  "tenantCount": 71,
+  "newTenantCount": 9,
+  "userCount": 85,
+  "deviceCount": 93,
+  "rarelyUsedTenantCount": 12
 }
 ```
 

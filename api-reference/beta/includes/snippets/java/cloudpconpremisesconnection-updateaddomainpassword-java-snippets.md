@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String adDomainPassword = "AdDomainPassword value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.deviceManagement().virtualEndpoint().onPremisesConnections("{Id}")
-	.updateAdDomainPassword(CloudPcOnPremisesConnectionUpdateAdDomainPasswordParameterSet
-		.newBuilder()
-		.withAdDomainPassword(adDomainPassword)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.devicemanagement.virtualendpoint.onpremisesconnections.item.updateaddomainpassword.UpdateAdDomainPasswordPostRequestBody updateAdDomainPasswordPostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.onpremisesconnections.item.updateaddomainpassword.UpdateAdDomainPasswordPostRequestBody();
+updateAdDomainPasswordPostRequestBody.setAdDomainPassword("AdDomainPassword value");
+graphClient.deviceManagement().virtualEndpoint().onPremisesConnections().byCloudPcOnPremisesConnectionId("{cloudPcOnPremisesConnection-id}").updateAdDomainPassword().post(updateAdDomainPasswordPostRequestBody);
+
 
 ```

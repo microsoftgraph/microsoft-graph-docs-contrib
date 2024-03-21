@@ -3,7 +3,7 @@ title: "branch resource type"
 description: "A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access services edge network."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -38,14 +38,14 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |id|String|Identifier for the branch. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|last modified time.|
 |name|String|Name.|
-|region|String|The branch site is created in the specified location.|
-|country|String|The branch site is created in the specified country.|
+|region|String|The branch site is created in the specified location. The possible value are: `eastUS`, `eastUS2`, `westUS`, `westUS2`, `westUS3`, `centralUS`, `northCentralUS`, `southCentralUS`, `northEurope`, `westEurope`, `franceCentral`, `germanyWestCentral`, `switzerlandNorth`, `ukSouth`, `canadaEast`, `canadaCentral`, `southAfricaWest`, `southAfricaNorth`, `uaeNorth`, `australiaEast`, `westCentralUS`, `centralIndia`, `southEastAsia`, `swedenCentral`, `southIndia`, `australiaSouthEast`, `koreaCentral`, `polandCentral`, `brazilSouth`, `japanEast`, `japanWest`, `unknownFutureValue`.|
 |version|String|The branch version.|
+|country (deprecated)|String|The branch site is created in the specified country. **DO NOT USE.**|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|branchConnectivityConfiguration|[microsoft.graph.networkaccess.branchConnectivityConfiguration](../resources/networkaccess-branchconnectivityconfiguration.md) collection|Specifies the connectivity details of all device links associated with a branch.|
+|connectivityConfiguration|[microsoft.graph.networkaccess.branchConnectivityConfiguration](../resources/networkaccess-branchconnectivityconfiguration.md) collection|Specifies the connectivity details of all device links associated with a branch.|
 |deviceLinks|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Each unique CPE device associated with a branch is specified. Supports `$expand`.|
 |forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Each forwarding profile associated with a branch site is specified. Supports `$expand`.|
 

@@ -3,7 +3,7 @@ title: "Overview of custom security attributes using the Microsoft Graph API"
 description: "Learn how to programmatically define your own custom security attributes and assign them to Microsoft Entra objects using the Microsoft Graph API."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: conceptualPageType
 ---
 
@@ -65,16 +65,12 @@ For a list of the limits and constraints for custom security attributes, see [Li
 
 To manage custom security attributes, the calling principal must be assigned one of the following Microsoft Entra roles. By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
-+ [Attribute Definition Reader](/azure/active-directory/roles/permissions-reference#attribute-definition-reader)
-+ [Attribute Definition Administrator](/azure/active-directory/roles/permissions-reference#attribute-definition-administrator)
-+ [Attribute Assignment Reader](/azure/active-directory/roles/permissions-reference#attribute-assignment-reader)
-+ [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference#attribute-assignment-administrator)
++ [Attribute Definition Reader](/entra/identity/role-based-access-control/permissions-reference#attribute-definition-reader)
++ [Attribute Definition Administrator](/entra/identity/role-based-access-control/permissions-reference#attribute-definition-administrator)
++ [Attribute Assignment Reader](/entra/identity/role-based-access-control/permissions-reference#attribute-assignment-reader)
++ [Attribute Assignment Administrator](/entra/identity/role-based-access-control/permissions-reference#attribute-assignment-administrator)
 
 Also, the calling principal must be granted the appropriate [custom security attributes permissions](/graph/permissions-reference#custom-security-attributes-permissions).
-
-## License requirements
-
-Using custom security attributes requires a Microsoft Entra ID P1 or P2 license.
 
 ## Next steps
 

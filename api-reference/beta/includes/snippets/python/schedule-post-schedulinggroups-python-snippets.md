@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.scheduling_group import SchedulingGroup
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SchedulingGroup(
 	display_name = "Cashiers",
 	is_active = True,
+	code = "CashierCode",
 	user_ids = [
 		"c5d0c76b-80c4-481c-be50-923cd8d680a1",
 		"2a4296b3-a28a-44ba-bc66-0274b9b95851",

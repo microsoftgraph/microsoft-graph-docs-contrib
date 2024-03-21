@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PersonAnnotation personAnnotation = new PersonAnnotation();
 ItemBody detail = new ItemBody();
-detail.contentType = BodyType.TEXT;
-detail.content = "I am originally from Australia, but grew up in Moscow, Russia.";
-personAnnotation.detail = detail;
-personAnnotation.displayName = "About Me";
+detail.setContentType(BodyType.Text);
+detail.setContent("I am originally from Australia, but grew up in Moscow, Russia.");
+personAnnotation.setDetail(detail);
+personAnnotation.setDisplayName("About Me");
+PersonAnnotation result = graphClient.me().profile().notes().post(personAnnotation);
 
-graphClient.me().profile().notes()
-	.buildRequest()
-	.post(personAnnotation);
 
 ```

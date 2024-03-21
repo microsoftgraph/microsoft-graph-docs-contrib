@@ -4,23 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 B2xIdentityUserFlow b2xIdentityUserFlow = new B2xIdentityUserFlow();
-b2xIdentityUserFlow.id = "UserFlowWithAPIConnector";
-b2xIdentityUserFlow.userFlowType = UserFlowType.SIGN_UP_OR_SIGN_IN;
-b2xIdentityUserFlow.userFlowTypeVersion = 1;
+b2xIdentityUserFlow.setId("UserFlowWithAPIConnector");
+b2xIdentityUserFlow.setUserFlowType(UserFlowType.SignUpOrSignIn);
+b2xIdentityUserFlow.setUserFlowTypeVersion(1f);
 UserFlowApiConnectorConfiguration apiConnectorConfiguration = new UserFlowApiConnectorConfiguration();
 IdentityApiConnector postFederationSignup = new IdentityApiConnector();
-postFederationSignup.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/v1/identity/apiConnectors/{id}"));
-apiConnectorConfiguration.postFederationSignup = postFederationSignup;
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("@odata.id", "https://graph.microsoft.com/v1/identity/apiConnectors/{id}");
+postFederationSignup.setAdditionalData(additionalData);
+apiConnectorConfiguration.setPostFederationSignup(postFederationSignup);
 IdentityApiConnector postAttributeCollection = new IdentityApiConnector();
-postAttributeCollection.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/v1/identity/apiConnectors/{id}"));
-apiConnectorConfiguration.postAttributeCollection = postAttributeCollection;
-b2xIdentityUserFlow.apiConnectorConfiguration = apiConnectorConfiguration;
+HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
+additionalData1.put("@odata.id", "https://graph.microsoft.com/v1/identity/apiConnectors/{id}");
+postAttributeCollection.setAdditionalData(additionalData1);
+apiConnectorConfiguration.setPostAttributeCollection(postAttributeCollection);
+b2xIdentityUserFlow.setApiConnectorConfiguration(apiConnectorConfiguration);
+B2xIdentityUserFlow result = graphClient.identity().b2xUserFlows().post(b2xIdentityUserFlow);
 
-graphClient.identity().b2xUserFlows()
-	.buildRequest()
-	.post(b2xIdentityUserFlow);
 
 ```

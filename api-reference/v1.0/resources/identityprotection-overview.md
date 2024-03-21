@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph identity protection APIs"
 description: "Use Microsoft Graph to query and receive information about risks detected by Microsoft Entra ID Protection."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: conceptualPageType
 ms.date: 08/17/2022
 ---
@@ -20,18 +20,15 @@ Use the following Microsoft Graph APIs to query user and service principal risks
 
 + [riskDetection](riskdetection.md) - Query Microsoft Graph for a list of both user and sign-in linked risk detections and associated information about the detection. Risk detections in Microsoft Entra ID Protection include any identified suspicious actions related to user accounts in the directory.
 
-    >[!CAUTION]
-    >The **identityRiskEvents** API was deprecated and stopped returning data on January 10, 2020. It was replaced by the [riskDetection](riskdetection.md) API. For more information about the deprecation, see [Deprecation of the identityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
++ [riskyUsers](riskyuser.md) - Query Microsoft Graph for information about users that Microsoft Entra ID Protection detected as risky. User risk represents the probability that a given identity or account is compromised. These risks are calculated offline using Microsoft's internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
 
-+ [riskyUsers](riskyuser.md) - Query Microsoft Graph for information about users that Microsoft Entra ID Protection detected as risky. User risk represents the probability that a given identity or account is compromised. These risks are calculated offline using Microsoft’s internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
-
-+ [signIn](signin.md) - Query Microsoft Graph for information about Microsoft Entra sign-ins with specific properties related to risk state, detail, and level. A sign-in risk represents the probability that a given authentication request isn’t authorized by the identity owner. These risks can be calculated in real-time or calculated offline using Microsoft’s internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
++ [signIn](signin.md) - Query Microsoft Graph for information about Microsoft Entra sign-ins with specific properties related to risk state, detail, and level. A sign-in risk represents the probability that a given authentication request isn't authorized by the identity owner. These risks can be calculated in real-time or calculated offline using Microsoft's internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
 
 ## For service principals
 
 + [servicePrincipalRiskDetection](serviceprincipalriskdetection.md) - Query Microsoft Graph for a list of service principal risk detections and associated information about the detections. Risk detections in Microsoft Entra ID Protection include any identified suspicious actions related to service principal accounts in the directory.
 
-+ [riskyServicePrincipals](riskyserviceprincipal.md) - Query Microsoft Graph for information about service principals that Microsoft Entra ID Protection detected as risky. Service principal risk represents the probability that a given identity or account is compromised. These risks are calculated asynchronously using data and patterns from Microsoft’s internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
++ [riskyServicePrincipals](riskyserviceprincipal.md) - Query Microsoft Graph for information about service principals that Microsoft Entra ID Protection detected as risky. Service principal risk represents the probability that a given identity or account is compromised. These risks are calculated asynchronously using data and patterns from Microsoft's internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
 
 ## What can I do with identity protection APIs in Microsoft Graph?
 
@@ -49,20 +46,14 @@ For specific guidance and additional information, see [Identify and remediate ri
 
 ## What licenses do I need?
 
-Microsoft Entra ID Protection is a premium feature. You need specific licenses to access full details. 
-
-### For users
-You need a Microsoft Entra ID P1 or P2 license to access the Microsoft Graph [riskDetection API](riskdetection.md) (note: P1 licenses receive limited risk information). The [riskyUsers API](riskyuser.md) is only available with a Microsoft Entra ID P2 license. 
-
-### For service principals
-You need a Workload Identities Premium license to access the Microsoft Graph [servicePrincipalRiskDetection API](serviceprincipalriskdetection.md) and the [riskyServicePrincipals API](riskyserviceprincipal.md).
+Microsoft Entra ID Protection for both users and service principals is a premium feature. You need specific licenses to access the full reports. For more information, see [Identity Protection license requirements](/entra/id-protection/overview-identity-protection#license-requirements).
 
 ## How much data is available?
 
 The availability of risk data is governed by the [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 
-## See also
+## Related content
 
 * [About Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 * [Get started with Microsoft Entra ID Protection and Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

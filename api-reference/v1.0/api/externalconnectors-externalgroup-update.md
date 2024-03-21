@@ -3,7 +3,7 @@ title: "Update externalGroup"
 description: "Update the properties of an externalGroup object."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ PATCH /external/connections/{connectionsId}/groups/{externalGroupId}
 
 | Name          | Description                 |
 |:--------------|:----------------------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

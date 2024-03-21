@@ -3,7 +3,7 @@ title: "educationUser: delta"
 description: "Get newly created or updated users without having to perform a full read of the entire user collection."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ GET /education/users/delta
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
