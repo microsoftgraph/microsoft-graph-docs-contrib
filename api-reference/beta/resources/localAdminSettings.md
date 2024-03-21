@@ -3,12 +3,14 @@ title: "localAdminSettings resource type"
 description: "Controls local administrators on AAD joined devices."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 # localAdminSettings resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Controls local administrators on AAD joined devices.
 
