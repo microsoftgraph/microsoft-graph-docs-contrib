@@ -26,6 +26,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Added the ability to list and get [Windows settings](/graph/api/resources/windowssetting) and [Windows settings instances](/graph/api/resources/windowssettinginstance).
 
+### Device and app management | Cloud PC
+
+List, get, end grace period, reboot, rename, restore, and troubleshoot operations available on [cloudPC](../resources/cloudpc.md).
+
 ### Identity and access | Directory management
 
 The organization entity now returns the `CIAM` **tenantType** to identify tenants that are set up as Microsoft Entra ID for customers tenants, a customer identity & access management (CIAM) solution.
