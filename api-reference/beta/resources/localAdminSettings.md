@@ -10,6 +10,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Controls local administrators on AAD joined devices.
 
 ## Properties
