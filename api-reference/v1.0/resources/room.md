@@ -36,20 +36,20 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | emailAddress           | String                                            | Email address of the room. |
 | floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
-| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude and optionally, altitude coordinates. |
-| id                     | String                                            | Unique identifier for the room. Read-only.  This identifier is not immutable and can change if there are changes to the mailbox or to the tenant configuration. The beta version of this API has a new property added called "placeId" which provides an immutable Id. |
+| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude, and optionally, altitude coordinates. |
+| id                     | String                                            | Unique identifier for the room. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. The beta version of this API has a new property added called "placeId" which provides an immutable Id. |
 | isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
 | phone                  | String                                            | The phone number of the room. |
-| tags                   | String collection                                 | Specifies additional features of the room, for example, details like the type of view or furniture type. |
+| tags                   | String collection                                 | Specifies other features of the room, for example, details like the type of view or furniture type. |
 | videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
 
 ### bookingType values
 
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
-| reserved | The room is available only on a first come, first served basis. It cannot be reserved.|
+| reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
 | standard | The room is available and can be reserved. This is the default value. |
 
 ## Relationships
@@ -58,7 +58,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
