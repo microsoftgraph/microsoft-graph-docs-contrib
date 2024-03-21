@@ -13,7 +13,7 @@ Microsoft Teams has a comprehensive set of APIs for performing messaging operati
 
 ## Understanding chatMessage schema
 
-[chatMessage](/graph/api/resources/chatMessage?preserve-view=true) represents messages in Microsoft Teams [chats](/graph/api/resources/chat?preserve-view=true) and [channels](/graph/api/resources/channel?preserve-view=true). In this section, we're be describing various elements of the schema itself.
+[chatMessage](/graph/api/resources/chatMessage?preserve-view=true) represents messages in Microsoft Teams [chats](/graph/api/resources/chat?preserve-view=true) and [channels](/graph/api/resources/channel?preserve-view=true). In this section, we'll be describing various elements of the schema itself.
 
 > **Note:** Examples shared in this document only show the relevant schema elements and not the entire message payload
 
@@ -64,7 +64,7 @@ Example of an attachment with reference to a tab
 ```
 #### card
 
-Cards represent visual elements backed by a predefined schema. Microsoft Teams supports various cards [as defined by Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object). Additionally, Microsoft Teams supports two additional cards
+Cards represent visual elements backed by a predefined schema. Microsoft Teams supports various cards [as defined by Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object&preserve-view=true). Additionally, Microsoft Teams supports two additional cards
 
 - Code snippet - With `contentType` set to `application/vnd.microsoft.card.codesnippet`
 - Announcement card - With `contentType` set to `application/vnd.microsoft.card.announcement`
@@ -368,7 +368,7 @@ Represents the sender of the message. Microsoft Teams supports a variety of send
         }
     },
     ```
-- Bots - Bots using [Microsoft Bot Framework](/azure/bot-service/?view=azure-bot-service-4.0) to write conversational bots
+- Bots - Bots using [Microsoft Bot Framework](/azure/bot-service/?view=azure-bot-service-4.0&preserve-view=true) to write conversational bots
 
     Following example shows the `from` element for a message sent by bot
 
