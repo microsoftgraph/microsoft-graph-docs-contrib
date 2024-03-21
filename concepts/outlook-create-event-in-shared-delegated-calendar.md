@@ -3,7 +3,7 @@ title: "Create Outlook events in a shared or delegated calendar"
 description: "Learn how to create a meeting event in a shared or delegated Outlook calendar. You can share a calendar with other users or grant a delegate to act on your behalf."
 author: "juforan"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Create Outlook events in a shared or delegated calendar
@@ -12,11 +12,11 @@ In Outlook, customers can share a calendar with other users and let them view, c
 
 Programmatically, Microsoft Graph supports reading or writing events in calendars that have been shared by other users, as well as reading the shared calendars, and updating the calendar name for sharees. The support also applies to calendars that have been delegated. The rest of this article walks through creating a meeting event in a shared or delegated calendar. For getting events, refer to [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md).
 
-The walkthrough below uses the example scenario where Alex has delegated his primary calendar to Adele in Outlook, and kept the default Outlook mailbox setting to direct meeting requests and responses to only delegates. (This setting corresponds to the **delegateMeetingMessageDeliveryOptions** property of Alex' [mailboxSettings](/graph/api/resources/mailboxsettings) set as the default value `sendToDelegateOnly`.) 
+The walkthrough below uses the example scenario where Alex has delegated his primary calendar to Adele in Outlook, and kept the default Outlook mailbox setting to direct meeting requests and responses to only delegates. (This setting corresponds to the **delegateMeetingMessageDeliveryOptions** property of Alex' [mailboxSettings](/graph/api/resources/mailboxsettings) set as the default value `sendToDelegateOnly`.)
 
 The walkthrough describes a few subsequent steps:
 1. [Adele gets the calendar that Alex has delegated to her](#step-1-adele-gets-the-delegated-calendar).
-2. [Adele sends a meeting invitation to Christie and Megan on Alex' behalf](#step-2-adele-creates-and-sends-an-invitation-on-alex-behalf). 
+2. [Adele sends a meeting invitation to Christie and Megan on Alex' behalf](#step-2-adele-creates-and-sends-an-invitation-on-alex-behalf).
 3. Christie receives the meeting request, and inspects the associated event in her calenda
 4. [Christie responds tentative to the invitation](#step-4-christie-responds-to-the-meeting-request).
 5. [Adele receives Christie's response message](#step-5-adele-receives-the-response-message).
@@ -30,7 +30,7 @@ If Alex has shared and not delegated his calendar with Adele:
 
 ## Step 1: Adele gets the delegated calendar
 
-Signed in as Adele, get the calendars she has access to and identify the one Alex has delegated to her, so to use it in the next step to create an event in that calendar. 
+Signed in as Adele, get the calendars she has access to and identify the one Alex has delegated to her, so to use it in the next step to create an event in that calendar.
 
 **Microsoft Graph permissions**
 
@@ -109,7 +109,7 @@ Content-type: application/json
             "canEdit": true,
             "owner": {
                 "name": "Adele Vance",
-                "address": "AdeleV@contoso.OnMicrosoft.com"
+                "address": "AdeleV@contoso.com"
             }
         },
         {
@@ -122,7 +122,7 @@ Content-type: application/json
             "canEdit": true,
             "owner": {
                 "name": "Alex Wilber",
-                "address": "AlexW@contoso.OnMicrosoft.com"
+                "address": "AlexW@contoso.com"
             }
         }
     ]
@@ -130,7 +130,7 @@ Content-type: application/json
 ```
 
 > [!NOTE]
-> Signed in as Adele, you can alternatively get the delegated calendar directly from Alex' mailbox, by specifying Alex' identity and the `calendar` shortcut, as in `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar`. The returned calendar ID corresponds to only Alex' mailbox. 
+> Signed in as Adele, you can alternatively get the delegated calendar directly from Alex' mailbox, by specifying Alex' identity and the `calendar` shortcut, as in `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.com/calendar`. The returned calendar ID corresponds to only Alex' mailbox.
 
 ## Step 2: Adele creates and sends an invitation on Alex' behalf
 
@@ -171,14 +171,14 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"meganb@contoso.onmicrosoft.com",
+        "address":"meganb@contoso.com",
         "name": "Megan Bowen"
       },
       "type": "required"
     },
     {
       "emailAddress": {
-        "address":"ChristieC@contoso.onmicrosoft.com",
+        "address":"ChristieC@contoso.com",
         "name": "Christie Cline"
       },
       "type": "required"
@@ -278,26 +278,26 @@ Content-type: application/json
     "sender": {
         "emailAddress": {
             "name": "Adele Vance",
-            "address": "AdeleV@contoso.OnMicrosoft.com"
+            "address": "AdeleV@contoso.com"
         }
     },
     "from": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "AlexW@contoso.OnMicrosoft.com"
+            "address": "AlexW@contoso.com"
         }
     },
     "toRecipients": [
         {
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "MeganB@contoso.OnMicrosoft.com"
+                "address": "MeganB@contoso.com"
             }
         },
         {
             "emailAddress": {
                 "name": "Christie Cline",
-                "address": "ChristieC@contoso.OnMicrosoft.com"
+                "address": "ChristieC@contoso.com"
             }
         }
     ],
@@ -373,7 +373,7 @@ Content-type: application/json
                 },
                 "emailAddress": {
                     "name": "Alex Wilber",
-                    "address": "AlexW@contoso.OnMicrosoft.com"
+                    "address": "AlexW@contoso.com"
                 }
             },
             {
@@ -384,7 +384,7 @@ Content-type: application/json
                 },
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             },
             {
@@ -395,14 +395,14 @@ Content-type: application/json
                 },
                 "emailAddress": {
                     "name": "Christie Cline",
-                    "address": "ChristieC@contoso.OnMicrosoft.com"
+                    "address": "ChristieC@contoso.com"
                 }
             }
         ],
         "organizer": {
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "AlexW@contoso.OnMicrosoft.com"
+                "address": "AlexW@contoso.com"
             }
         }
     }
@@ -583,20 +583,20 @@ Content-type: application/json
     "sender": {
         "emailAddress": {
             "name": "Christie Cline",
-            "address": "ChristieC@contoso.OnMicrosoft.com"
+            "address": "ChristieC@contoso.com"
         }
     },
     "from": {
         "emailAddress": {
             "name": "Christie Cline",
-            "address": "ChristieC@contoso.OnMicrosoft.com"
+            "address": "ChristieC@contoso.com"
         }
     },
     "toRecipients": [
         {
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "AdeleV@contoso.OnMicrosoft.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
@@ -751,7 +751,7 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "MeganB@contoso.OnMicrosoft.com"
+                "address": "MeganB@contoso.com"
             }
         },
         {
@@ -762,14 +762,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Christie Cline",
-                "address": "ChristieC@contoso.OnMicrosoft.com"
+                "address": "ChristieC@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "AlexW@contoso.OnMicrosoft.com"
+            "address": "AlexW@contoso.com"
         }
     }
 }

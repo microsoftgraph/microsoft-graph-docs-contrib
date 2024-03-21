@@ -1,9 +1,9 @@
 ---
 title: "deviceComplianceDeviceOverview resource type"
-description: ""
+description: "Intune Deviceconfig Devicecompliancedeviceoverview Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

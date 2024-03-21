@@ -19,7 +19,7 @@ requestBody := graphmodels.NewCalendarPermission()
 emailAddress := graphmodels.NewEmailAddress()
 name := "Samantha Booth"
 emailAddress.SetName(&name) 
-address := "samanthab@adatum.onmicrosoft.com"
+address := "samanthab@contoso.com"
 emailAddress.SetAddress(&address) 
 requestBody.SetEmailAddress(emailAddress)
 isInsideOrganization := true

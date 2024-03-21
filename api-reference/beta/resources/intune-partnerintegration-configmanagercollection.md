@@ -3,7 +3,7 @@ title: "configManagerCollection resource type"
 description: "A ConfigManager defined collection of devices or users."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ A ConfigManager defined collection of devices or users.
 |[Create configManagerCollection](../api/intune-partnerintegration-configmanagercollection-create.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Create a new [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) object.|
 |[Delete configManagerCollection](../api/intune-partnerintegration-configmanagercollection-delete.md)|None|Deletes a [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md).|
 |[Update configManagerCollection](../api/intune-partnerintegration-configmanagercollection-update.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Update the properties of a [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) object.|
-|[getPolicySummary function](../api/intune-partnerintegration-configmanagercollection-getpolicysummary.md)|[configManagerPolicySummary](../resources/intune-partnerintegration-configmanagerpolicysummary.md)|Not yet documented|
+|[getPolicySummary function](../api/intune-partnerintegration-configmanagercollection-getpolicysummary.md)|[configManagerPolicySummary](../resources/intune-partnerintegration-configmanagerpolicysummary.md)||
 
 ## Properties
 |Property|Type|Description|

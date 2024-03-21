@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.security.cases.ediscoveryCases.item.noncustodialDataSources.noncustodial_data_sources_request_builder import NoncustodialDataSourcesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -3,9 +3,8 @@ title: "Granular delegated admin privileges (GDAP) API overview"
 description: "Granular delegated admin privileges (GDAP) allow Microsoft partners to configure and request granular and time-bound access to their customers' environments, allowing customers to enforce a least-privileged access for Microsoft partners."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
-ms.custom: zt-include
 ---
 
 # Granular delegated admin privileges (GDAP) API overview
@@ -109,11 +108,11 @@ To manage delegated admin relationships, the calling principal must be in the pa
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
-## See also
+## Related content
 
 + [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
 
@@ -124,9 +123,5 @@ To manage delegated admin relationships, the calling principal must be in the pa
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Error: /resources/delegatedadminrelationships-api-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
+  "suppressions": []
 } -->

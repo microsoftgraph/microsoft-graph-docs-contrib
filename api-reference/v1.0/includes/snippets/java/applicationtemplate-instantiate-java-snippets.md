@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String displayName = "Azure AD SAML Toolkit";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.applicationTemplates("229946b9-a9fb-45b8-9531-efa47453ac9e")
-	.instantiate(ApplicationTemplateInstantiateParameterSet
-		.newBuilder()
-		.withDisplayName(displayName)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.applicationtemplates.item.instantiate.InstantiatePostRequestBody instantiatePostRequestBody = new com.microsoft.graph.applicationtemplates.item.instantiate.InstantiatePostRequestBody();
+instantiatePostRequestBody.setDisplayName("Azure AD SAML Toolkit");
+var result = graphClient.applicationTemplates().byApplicationTemplateId("{applicationTemplate-id}").instantiate().post(instantiatePostRequestBody);
+
 
 ```

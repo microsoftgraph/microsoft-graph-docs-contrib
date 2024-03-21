@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.event import Event
+from msgraph.generated.models.response_status import ResponseStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -16,7 +18,6 @@ request_body = Event(
 		time = "2016-10-19T10:37:00Z",
 	),
 	recurrence = None,
-	uid = "iCalUId-value",
 	reminder_minutes_before_start = 99,
 	is_online_meeting = True,
 	online_meeting_provider = OnlineMeetingProviderType.TeamsForBusiness,

@@ -5,7 +5,7 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 |Header|Value|
 |------|-----|
-|Authorization  |Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type  |application/json   |
 
 ## Request body
@@ -50,7 +50,7 @@ If successful, this method returns ```201 Created``` response code and a **taxGr
 
 **Request**
 
-Here is an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/taxGroups
@@ -65,7 +65,7 @@ Content-type: application/json
 
 **Response**
 
-Here is an example of the response. 
+The following example shows the response. 
 
 > **Note**: The response object shown here might be shortened for readability.
 

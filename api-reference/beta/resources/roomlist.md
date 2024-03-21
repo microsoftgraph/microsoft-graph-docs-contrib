@@ -3,7 +3,7 @@ title: "roomList resource type"
 description: "Represents a group of rooms created by the company."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "resourcePageType"
 ---
 
@@ -37,6 +37,7 @@ Derived from [place](place.md).
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the roomlist location in latitude, longitude and (optionally) altitude coordinates. |
 | id             | String                                            | Unique identifier for the room list. Read-only. |
 | phone          | String                                            | The phone number of the room list. |
+| placeId        | String                                            | An alternate immutable unique identifier of the place. |
 
 ## Relationships
 
@@ -69,7 +70,8 @@ The following is a JSON representation of the resource.
   "address": {
     "@odata.type": "microsoft.graph.physicalAddress"
   },
-  "emailAddress": "String"
+  "emailAddress": "String",
+  "placeId": "String (alternate identifier)"
 }
 ```
 

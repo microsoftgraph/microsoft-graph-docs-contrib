@@ -4,7 +4,7 @@ description: "Update the properties of an incident object."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ PATCH /security/incidents/{incidentId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [inci
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -136,7 +136,7 @@ Content-Type: application/json
     "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
     "createdDateTime": "2021-08-13T08:43:35.5533333Z",
     "lastUpdateDateTime": "2021-09-30T09:35:45.1133333Z",
-    "assignedTo": "KaiC@contoso.onmicrosoft.com",
+    "assignedTo": "KaiC@contoso.com",
     "classification": "TruePositive",
     "determination": "MultiStagedAttack",
     "status": "Active",
@@ -147,10 +147,14 @@ Content-Type: application/json
     "comments": [
       {
 		"comment": "Demo incident",
-		"createdBy": "DavidS@contoso.onmicrosoft.com",
+		"createdBy": "DavidS@contoso.com",
 		"createdTime": "2021-09-30T12:07:37.2756993Z"
       }
-    ]
+    ],
+    "systemTags" : [
+        "Defender Experts"
+    ],
+    "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ..."
 }
 ```
 

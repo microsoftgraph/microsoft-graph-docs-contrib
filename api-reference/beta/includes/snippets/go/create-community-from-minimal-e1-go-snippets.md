@@ -18,7 +18,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewCommunity()
 displayName := "Financial Advice for Software Engineers"
 requestBody.SetDisplayName(&displayName) 
-description := "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients."
+description := "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for their clients."
 requestBody.SetDescription(&description) 
 privacy := graphmodels.PUBLIC_COMMUNITYPRIVACY 
 requestBody.SetPrivacy(&privacy) 

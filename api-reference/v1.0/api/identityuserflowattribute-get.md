@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an identityUserFlowAt
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Get identityUserFlowAttribute
@@ -36,7 +36,7 @@ GET /identity/userFlowAttributes/{id}
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

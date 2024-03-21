@@ -12,6 +12,7 @@ mgc-beta device-management virtual-endpoint user-settings create --body '{\
   "localAdminEnabled": true,\
   "restorePointSetting": {\
     "frequencyInHours": 16,\
+    "frequencyType": "sixteenHours",\
     "userRestoreEnabled": true\
   }\
 }\

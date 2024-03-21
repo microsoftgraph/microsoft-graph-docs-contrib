@@ -3,7 +3,7 @@ title: "cloudRealtimeCommunicationInfo resource type"
 description: "Microsoft real-time communication information related to the user."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "rungari"
 ---
 

@@ -3,7 +3,7 @@ title: "Get appManagementPolicy"
 description: "Get an application management policy."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "appmanagementpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/appmanagementpolicy-get-permissions.md)]
 
+[!INCLUDE [rbac-app-auth-method-policy-api-get](../includes/rbac-for-apis/rbac-app-auth-method-policy-api-get.md)]
 
 ## HTTP request
 
@@ -37,7 +38,7 @@ GET /policies/appManagementPolicies/{id}
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -51,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a single [appMan
 
 ### Request
 
-Here's an example of the request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
+The following example shows a request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
 
 - Blocks creating of new passwords after 2019-10-19 at 10:37 AM UTC time.
 - Limits password secrets for apps created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
@@ -103,7 +104,7 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

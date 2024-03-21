@@ -3,7 +3,7 @@ title: "agreementAcceptance resource type"
 description: "Represents the current status of a user within scope of a company's customizable terms of use powered by Microsoft Entra ID Governance."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: AlexFilipin
 ---
 
@@ -13,6 +13,13 @@ Namespace: microsoft.graph
 
 Represents the current status of a user's response to a company's customizable terms of use agreement powered by Microsoft Entra ID Governance.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [List agreementAcceptances for a user](../api/user-list-agreementacceptances.md) | [agreementAcceptance](agreementacceptance.md) | Retrieve a user's agreementAcceptance objects. |
+| [List acceptances](../api/agreement-list-acceptances.md) | [agreementAcceptance](agreementacceptance.md) | Retrieve acceptance for an agreement.  |
+
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -21,7 +28,7 @@ Represents the current status of a user's response to a company's customizable t
 |deviceDisplayName|String|The display name of the device used for accepting the agreement.|
 |deviceId|String|The unique identifier of the device used for accepting the agreement. Supports `$filter` (`eq`) and `eq` for `null` values.|
 |deviceOSType|String|The operating system used to accept the agreement.|
-|deviceOSVersion|String|The operating system version of the device used to accept the agreement.	|
+|deviceOSVersion|String|The operating system version of the device used to accept the agreement.    |
 |expirationDateTime|DateTimeOffset|The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$filter` (`eq`, `ge`, `le`) and `eq` for `null` values.|
 |id|String| The identifier of the agreement acceptance. Read-only. Supports `$filter` (`eq`).|
 |recordedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|

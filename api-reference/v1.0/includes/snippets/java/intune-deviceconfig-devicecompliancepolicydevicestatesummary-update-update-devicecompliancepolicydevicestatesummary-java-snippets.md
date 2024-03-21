@@ -4,21 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceCompliancePolicyDeviceStateSummary deviceCompliancePolicyDeviceStateSummary = new DeviceCompliancePolicyDeviceStateSummary();
-deviceCompliancePolicyDeviceStateSummary.inGracePeriodCount = 2;
-deviceCompliancePolicyDeviceStateSummary.configManagerCount = 2;
-deviceCompliancePolicyDeviceStateSummary.unknownDeviceCount = 2;
-deviceCompliancePolicyDeviceStateSummary.notApplicableDeviceCount = 8;
-deviceCompliancePolicyDeviceStateSummary.compliantDeviceCount = 4;
-deviceCompliancePolicyDeviceStateSummary.remediatedDeviceCount = 5;
-deviceCompliancePolicyDeviceStateSummary.nonCompliantDeviceCount = 7;
-deviceCompliancePolicyDeviceStateSummary.errorDeviceCount = 0;
-deviceCompliancePolicyDeviceStateSummary.conflictDeviceCount = 3;
+deviceCompliancePolicyDeviceStateSummary.setOdataType("#microsoft.graph.deviceCompliancePolicyDeviceStateSummary");
+deviceCompliancePolicyDeviceStateSummary.setInGracePeriodCount(2);
+deviceCompliancePolicyDeviceStateSummary.setConfigManagerCount(2);
+deviceCompliancePolicyDeviceStateSummary.setUnknownDeviceCount(2);
+deviceCompliancePolicyDeviceStateSummary.setNotApplicableDeviceCount(8);
+deviceCompliancePolicyDeviceStateSummary.setCompliantDeviceCount(4);
+deviceCompliancePolicyDeviceStateSummary.setRemediatedDeviceCount(5);
+deviceCompliancePolicyDeviceStateSummary.setNonCompliantDeviceCount(7);
+deviceCompliancePolicyDeviceStateSummary.setErrorDeviceCount(0);
+deviceCompliancePolicyDeviceStateSummary.setConflictDeviceCount(3);
+DeviceCompliancePolicyDeviceStateSummary result = graphClient.deviceManagement().deviceCompliancePolicyDeviceStateSummary().patch(deviceCompliancePolicyDeviceStateSummary);
 
-graphClient.deviceManagement().deviceCompliancePolicyDeviceStateSummary()
-	.buildRequest()
-	.patch(deviceCompliancePolicyDeviceStateSummary);
 
 ```

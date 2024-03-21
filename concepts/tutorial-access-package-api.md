@@ -1,20 +1,20 @@
 ---
 title: "Manage access to resources using the entitlement management APIs in Microsoft Graph"
 description: "Learn how to use Microsoft Graph APIs to develop code to create a package of resources for a marketing campaign that internal users can self-service request."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Mark.Wahl
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 ms.date: 11/01/2022
 #Customer intent: As a developer integrating with Microsoft Graph, I want to understand how to use entitlement management APIs to manage access to resources.
 ---
 
 # Manage access to resources using the entitlement management APIs in Microsoft Graph
 
-Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
+Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Microsoft Entra entitlement management](/entra/id-governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
 
-In this tutorial, you learn how to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
+In this tutorial, you learn how to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.  This tutorial uses the [entitlement management beta APIs](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true); entitlement management also has [v1.0 APIs](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-1.0&preserve-view=true).
 
 > [!NOTE]
 > The response objects shown in this tutorial might be shortened for readability.
@@ -22,10 +22,10 @@ In this tutorial, you learn how to develop code to create a package of resources
 ## Prerequisites
 
 To successfully complete this tutorial, make sure that you have the required prerequisites:
-- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). For this tutorial, one of the following licenses is required in your tenant:
+- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/entra/id-governance/entitlement-management-overview#license-requirements). For this tutorial, one of the following licenses is required in your tenant:
     - Microsoft Entra ID P2
     - Microsoft Entra ID Governance
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 - Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All`.
 
 ## Step 1: Create a user account and a group
@@ -34,7 +34,7 @@ In this step, you create a group named **Marketing resources** in the directory 
 
 ### Create a user account
 
-For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page. Record the value of the **id** property that is returned to be used later in the tutorial.
+For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change contoso.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page. Record the value of the **id** property that is returned to be used later in the tutorial.
 
 #### Request
 
@@ -51,7 +51,7 @@ Content-type: application/json
   "accountEnabled":true,
   "displayName":"Requestor1",
   "mailNickname":"Requestor1",
-  "userPrincipalName":"Requestor1@contoso.onmicrosoft.com",
+  "userPrincipalName":"Requestor1@contoso.com",
   "passwordProfile": {
     "forceChangePasswordNextSignIn":true,
     "password":"Contoso1234"
@@ -130,7 +130,7 @@ Content-type: application/json
 
 ### Create a group
 
-In this tutorial, you create a group named **Marketing resources** that is the target resource for entitlement management. You can use an existing group if you already have one. Record the value of the **id** property that is returned to use later in this tutorial. 
+In this tutorial, you create a group named **Marketing resources** that is the target resource for entitlement management. You can use an existing group if you already have one. Record the value of the **id** property that is returned to use later in this tutorial.
 
 #### Request
 
@@ -218,7 +218,7 @@ An *access package* is a bundle of resources that a team or project needs and is
 
 ### Get the catalog identifier
 
-To add resources to the catalog, you must first get the identifier of it. If you are using the General catalog, run the following request to get its identifier. If you are using a different calalog, change the filter value in the request to the name of your catalog. Record the value of the **id** property that is returned to use later in this tutorial.
+To add resources to the catalog, you must first get the identifier of it. If you are using the General catalog, run the following request to get its identifier. If you are using a different catalog, change the filter value in the request to the name of your catalog. Record the value of the **id** property that is returned to use later in this tutorial.
 
 #### Request
 
@@ -274,7 +274,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageCatalogs",
-  "value": [ 
+  "value": [
     {
       "id": "cec5d6ab-c75d-47c0-9c1c-92e89f66e384",
       "displayName": "General",
@@ -452,7 +452,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
       "originId": "e93e24d1-2b65-4a6c-a1dd-654a12225487",
       "originSystem": "AadGroup",
       "isPendingOnboarding": false,
-      "addedBy": "admin@contoso.onmicrosoft.com",
+      "addedBy": "admin@contoso.com",
       "addedOn": "2020-08-21T19:27:29.967Z"
     }
   ]
@@ -461,7 +461,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### Get resources roles
 
-The access package assigns users to the roles of a resource. The typical role of a group is the member role. Other resources, such as SharePoint Online sites and applications, might have many roles. The typical role of a group used in an access package is the member role. You'll need the member role when you add a resource role to the access package later in this tutorial. 
+The access package assigns users to the roles of a resource. The typical role of a group is the member role. Other resources, such as SharePoint Online sites and applications, might have many roles. The typical role of a group used in an access package is the member role. You'll need the member role when you add a resource role to the access package later in this tutorial.
 
 In the request, use the **id** of the catalog and the **id** of the group resource in the catalog that you recorded to get the **originId** of the Member resource role. Record the value of the **originId** property to use later in this tutorial.
 
@@ -535,7 +535,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
         "originId": "e93e24d1-2b65-4a6c-a1dd-654a12225487",
         "originSystem": "AadGroup",
         "isPendingOnboarding": false,
-        "addedBy": "admin@contoso.onmicrosoft.com",
+        "addedBy": "admin@contoso.com",
         "addedOn": "2020-06-26T17:13:23.723Z",
         "accessPackageResourceScopes": []
       }
@@ -617,9 +617,9 @@ Content-type: application/json
   "description": "Access to resources for the campaign",
   "isHidden": false,
   "isRoleScopesVisible": false,
-  "createdBy": "admin@contoso.onmicrosoft.com",
+  "createdBy": "admin@contoso.com",
   "createdDateTime": "2020-08-21T19:45:33.2042281Z",
-  "modifiedBy": "admin@contoso.onmicrosoft.com",
+  "modifiedBy": "admin@contoso.com",
   "modifiedDateTime": "2020-08-21T19:45:33.2042281Z"
 }
 ```
@@ -645,7 +645,7 @@ Content-type: application/json
     "displayName":"Member",
     "originSystem":"AadGroup",
     "accessPackageResource": {
-      "id":"4a1e21c5-8a76-4578-acb1-641160e076e8","resourceType":"Security Group",  
+      "id":"4a1e21c5-8a76-4578-acb1-641160e076e8","resourceType":"Security Group",
       "originId":"e93e24d1-2b65-4a6c-a1dd-654a12225487","originSystem":"AadGroup"
     }
   },
@@ -699,9 +699,9 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages('88203d16-0e31-41d4-87b2-dd402f1435e9')/accessPackageResourceRoleScopes/$entity",
   "id": "e081321b-2802-4834-a6ca-6f598ce3cdf7_6dbd2209-9d14-4c76-b92b-fcb00e835fe1",
-  "createdBy": "admin@contoso.onmicrosoft.com",
+  "createdBy": "admin@contoso.com",
   "createdDateTime": "2020-08-21T19:56:00.6320729Z",
-  "modifiedBy": "admin@contoso.onmicrosoft.com",
+  "modifiedBy": "admin@contoso.com",
   "modifiedDateTime": "2020-08-21T19:56:00.6320729Z"
 }
 ```
@@ -713,8 +713,8 @@ The access package now has one resource role, which is group membership. The rol
 Now that you created the access package and added resources and roles, you can decide who can access it by creating an access package policy. In this tutorial, you enable the **Requestor1** account that you created to request access to the resources in the access package. For this task, you need these values:
 - **id** of the access package for the value of the **accessPackageId** property
 - **id** of the **Requestor1** user account for the value of the **id** property in **allowedRequestors**
- 
-The value of the **durationInDays** property enables the **Requestor1** account to access the resources in the access package for up to 30 days. Record the value of the **id** property that is returned to use later in this tutorial. 
+
+The value of the **durationInDays** property enables the **Requestor1** account to access the resources in the access package for up to 30 days. Record the value of the **id** property that is returned to use later in this tutorial.
 
 #### Request
 
@@ -805,9 +805,9 @@ Content-type: application/json
   "canExtend": false,
   "durationInDays": 30,
   "expirationDateTime": null,
-  "createdBy": "admin@contoso.onmicrosoft.com",
+  "createdBy": "admin@contoso.com",
   "createdDateTime": "2020-06-29T19:47:44.7399675Z",
-  "modifiedBy": "admin@contoso.onmicrosoft.com",
+  "modifiedBy": "admin@contoso.com",
   "modifiedDateTime": "2020-06-29T19:47:44.7555489Z",
   "accessReviewSettings": null,
   "requestorSettings": {
@@ -1481,16 +1481,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4
 No Content - 204
 ```
 
-## See also
+## Related content
 
 In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do:
 
 - [Working with the Microsoft Entra entitlement management API](/graph/api/resources/entitlementmanagement-overview)
-- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog)
-- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest)
-- [accessPackage](/graph/api/resources/accesspackage)
-- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope)
-- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy)
-- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest)
-- [group](/graph/api/resources/group)
-- [user](/graph/api/resources/user)

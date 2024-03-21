@@ -9,7 +9,7 @@ mgc-beta users inference-classification overrides create --user-id {user-id} --b
   "classifyAs": "focused",\
   "senderEmailAddress": {\
     "name": "Samantha Booth",\
-    "address": "samanthab@adatum.onmicrosoft.com"\
+    "address": "samanthab@contoso.com"\
   }\
 }\
 '

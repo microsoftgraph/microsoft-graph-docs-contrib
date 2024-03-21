@@ -2,7 +2,7 @@
 title: "reportRoot: getFormsUserActivityUserCounts"
 description: "Get a report that provides the total number of designers or responders who perform Microsoft Forms activities over a selected period."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "haoyli"
 doc_type: apiPageType
 ---
@@ -50,7 +50,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -84,7 +84,7 @@ Here's an example that outputs CSV.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/reports/getFormsUserActivityUserCounts(peri
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 ```http
@@ -125,7 +125,7 @@ Here's an example that returns JSON.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -137,7 +137,7 @@ GET https://graph.microsoft.com/beta/reports/getFormsUserActivityUserCounts(peri
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

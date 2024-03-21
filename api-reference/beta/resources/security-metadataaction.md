@@ -3,7 +3,7 @@ title: "metadataAction resource type"
 description: "Represents the metadata to be written or removed from a file."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

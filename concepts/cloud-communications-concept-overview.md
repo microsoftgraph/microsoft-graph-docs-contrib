@@ -3,7 +3,7 @@ title: "Cloud communications API overview"
 description: "Use the cloud communications API in Microsoft Graph to build bots that handle incoming calls, collaborate via group calls, send reminders, and set up meetings."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Cloud communications API overview
@@ -92,16 +92,10 @@ Looking for the API reference for this service?
 - [Cloud communications API in Microsoft Graph v1.0](/graph/api/resources/communications-api-overview?view=graph-rest-1.0&preserve-view=true)
 - [Cloud communications API in Microsoft Graph beta](/graph/api/resources/communications-api-overview?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Related content
 
 - Use bots to [get started](cloud-communications-get-started.md).
 - Learn more about [calls](cloud-communications-calls.md), [media](cloud-communications-media.md), and [online meetings](cloud-communications-online-meetings.md).
 - View the API usage [limits](throttling-limits.md#cloud-communication-service-limits).
 - Learn how to [manage phone numbers](cloud-communications-phone-number.md) for your bots.
-
-## See also
-
-- [Delegated and application permissions](/azure/active-directory/develop/v1-permissions-and-consent)
-- [Calls permissions](./permissions-reference.md)
-- [Online meeting permissions](./permissions-reference.md)
 - [Cloud communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples)

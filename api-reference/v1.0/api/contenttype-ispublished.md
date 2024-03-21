@@ -4,7 +4,7 @@ title: "contentType: isPublished"
 description: "Check the publishing status of a content type in a content type hub site."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentType: isPublished
@@ -34,7 +34,7 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 If successful, this method returns a `200 OK` response code and a Boolean value that specifies the publishing status of the content type.
@@ -46,7 +46,7 @@ Don't supply a request body for this method.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -131,11 +131,9 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Customer booking (preview) | Microsoft Bookings | Targets organizations to enable their users and customers to book services directly on the web or Facebook. Lets business providers manage customer preferences, services and pricing, staff lists and schedules, and other common business information. | [Microsoft Bookings API overview](booking-concept-overview.md) |
 | Financials (preview) | Dynamics 365 Business Central | Enables management of financial data, automation and securing of the supply chain, sales management and improved customer service, management of projects, and optimization of operations with the all-in-one business management solution.| [Business Central API overview](dynamics-business-central-concept-overview.md) |
 
-## Next steps
+## Related content
 
-<!-- Need to update the destination page titles and URLs as Matt's v-team finalize on the examples and featured scenarios content 
--->
-
-- Look under **Learn** in the table of contents to read about services and features that _you_ can use in your scenarios.
+- See [what's new](whats-new-overview.md) in Microsoft Graph.
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use this [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
+- Explore the [integration patterns](/graph/integration-patterns-overview) that apply to your scenario.

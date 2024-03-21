@@ -3,7 +3,7 @@ title: "alertEvidence resource type"
 description: "Represents evidence related to an alert."
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

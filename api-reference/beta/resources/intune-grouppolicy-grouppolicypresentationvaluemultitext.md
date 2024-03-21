@@ -3,7 +3,7 @@ title: "groupPolicyPresentationValueMultiText resource type"
 description: "The entity represents a string value of a multi-line text box presentation on a policy definition."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

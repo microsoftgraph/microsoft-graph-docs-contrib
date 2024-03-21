@@ -3,7 +3,7 @@ title: "Working with Windows 365 Cloud PCs using the Microsoft Graph API"
 description: "The Microsoft Graph API enables programmatic access to Cloud PC information and management actions on your organization."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -24,10 +24,6 @@ With Microsoft Graph, you can provision and manage Cloud PCs in your organizatio
 ## Using Microsoft Graph permissions
 
 Microsoft Graph controls access to resources via permissions. As a developer, you must specify the permissions you need to access Windows 365 resources. Typically, you specify the permissions in the Microsoft Entra admin center. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference).
-
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 - Check out the [overview for Windows 365 Cloud PC on Microsoft Graph](/graph/cloudpc-concept-overview).

@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsResourcePerformance resource type"
 description: "The user experience analytics resource performance entity."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ The user experience analytics resource performance entity.
 |[Create userExperienceAnalyticsResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-create.md)|[userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|Create a new [userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md) object.|
 |[Delete userExperienceAnalyticsResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-delete.md)|None|Deletes a [userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md).|
 |[Update userExperienceAnalyticsResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-update.md)|[userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|Update the properties of a [userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md) object.|
-|[summarizeDeviceResourcePerformance function](../api/intune-devices-userexperienceanalyticsresourceperformance-summarizedeviceresourceperformance.md)|[userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md) collection|Not yet documented|
+|[summarizeDeviceResourcePerformance function](../api/intune-devices-userexperienceanalyticsresourceperformance-summarizedeviceresourceperformance.md)|[userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md) collection||
 
 ## Properties
 |Property|Type|Description|
@@ -44,6 +44,13 @@ The user experience analytics resource performance entity.
 |ramSpikeTimePercentageThreshold|Double|Threshold of ramSpikeTimeScore. Valid values 0 to 100|
 |deviceResourcePerformanceScore|Int32|Resource performance score of a specific device. Valid values 0 to 100|
 |averageSpikeTimeScore|Int32|AverageSpikeTimeScore of a device or a model type. Valid values 0 to 100|
+|machineType|[userExperienceAnalyticsMachineType](../resources/intune-devices-userexperienceanalyticsmachinetype.md)|Helps to identify if device is a physical device or virtual. Possible values are: `unknown`, `physical`, `virtual`, `unknownFutureValue`.|
+|cpuDisplayName|String|The name of the processor on the device, For example, 11th Gen Intel(R) Core(TM) i7.|
+|totalProcessorCoreCount|Int32|The count of cores of the processor of device. Valid values 0 to 512|
+|cpuClockSpeedInMHz|Double|The clock speed of the processor, in MHz. Valid values 0 to 1000000|
+|totalRamInMB|Double|The total RAM of the device, in MB. Valid values 0 to 1000000|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|The type of disk storage used on the device. Possible values are: `unknown`, `hdd`, `ssd`, `unknownFutureValue`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics model. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -72,6 +79,13 @@ Here is a JSON representation of the resource.
   "ramSpikeTimeScore": 1024,
   "ramSpikeTimePercentageThreshold": "4.2",
   "deviceResourcePerformanceScore": 1024,
-  "averageSpikeTimeScore": 1024
+  "averageSpikeTimeScore": 1024,
+  "machineType": "String",
+  "cpuDisplayName": "String",
+  "totalProcessorCoreCount": 1024,
+  "cpuClockSpeedInMHz": "4.2",
+  "totalRamInMB": "4.2",
+  "diskType": "String",
+  "healthStatus": "String"
 }
 ```

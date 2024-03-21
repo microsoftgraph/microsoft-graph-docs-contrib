@@ -3,7 +3,7 @@ title: "Get teamwork."
 description: "Get organization settings for teamwork, such as the region of the organization and the Microsoft Teams enablement status."
 author: "mea"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Get the properties and relationships of a [teamwork](../resources/teamwork.md) o
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission Type                        | Permissions (from least to most privileged)  |
-| :------------------------------------- | :------------------------------------------------------------------------------------------------ |
-| Delegated (work or school account)     | Teamwork.Read.All                                                                                 |
-| Delegated (personal Microsoft account) | Not supported.                                                                                    |
-| Application                            |  Teamwork.Read.All                                                                            |
+<!-- { "blockType": "permissions", "name": "teamwork_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/teamwork-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +34,7 @@ GET /teamwork
 
 | Header           | Value                      |
 | :--------------- | :------------------------- |
-| Authorization    | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -46,6 +43,8 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code along with a [teamwork](../resources/teamwork.md) object in the response body.
+
+[!INCLUDE [supported-regions](../../includes/teamwork-supported-regions.md)]
 
 ## Examples
 
@@ -119,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [licenseDetails: getTeamsLicensingDetails](licenseDetails-getteamslicensingdetails.md)
 - [Get userTeamwork](userteamwork-get.md)

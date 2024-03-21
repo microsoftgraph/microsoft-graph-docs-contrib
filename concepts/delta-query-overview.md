@@ -1,13 +1,13 @@
 ---
 title: "Use delta query to track changes in Microsoft Graph data"
 description: "Use delta query to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 12/28/2023
+ms.date: 01/12/2024
 #customer intent: As a developer, I want to learn how to track changes to specific Microsoft Graph resources, so that I can build apps that process the changes according to the business requirements.
 ---
 
@@ -40,13 +40,13 @@ The typical call pattern is as follows:
 4. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
 
 > [!NOTE]
-> - Resources stored in Microsoft Entra ID (such as users and groups) support "sync from now" scenarios. This allows you to skip steps 1 and 2 (if you're not interested in retrieving the full state of the resource) and ask for the latest `@odata.deltaLink` instead. Append `$deltaToken=latest` to the `delta` function and the response will contain a `@odata.deltaLink` and no resource data. Resources in OneDrive and SharePoint also support this feature but require `token=latest` instead.
-> - `$select` and `$deltaLink` query parameters are supported for some Microsoft Entra resources so that customers can change the properties they want to track for an existing `@odata.deltaLink`. Delta queries with both `$select` and `$skipToken` aren't supported.
+> - Resources stored in Microsoft Entra ID (such as users and groups) support "sync from now" scenarios. This allows you to skip steps 1 and 2 (if you're not interested in retrieving the full state of the resource) and ask for the latest `@odata.deltaLink` instead. Append `$deltatoken=latest` to the `delta` function and the response will contain a `@odata.deltaLink` and no resource data. Resources in OneDrive and SharePoint also support this feature but require `token=latest` instead.
+> - `$select` and `$deltaLink` query parameters are supported for some Microsoft Entra resources so that customers can change the properties they want to track for an existing `@odata.deltaLink`. Delta queries with both `$select` and `$skiptoken` aren't supported.
 
 ### State tokens
 
 A delta query GET response always includes a URL specified in a `@odata.nextLink` or `@odata.deltaLink` response header.
-The `@odata.nextLink` URL includes a `$skipToken`, and a `@odata.deltaLink` URL includes a `$deltaToken`.
+The `@odata.nextLink` URL includes a `$skiptoken`, and a `@odata.deltaLink` URL includes a `$deltatoken`.
 
 These tokens are opaque to the client app but important as follows:
 
@@ -177,7 +177,7 @@ Your application must be prepared for replays, which occur when the same change 
 
 ### Synchronization reset
 
-Delta query can return a response code of `410 Gone` and a **Location** header containing a request URL with an empty `$deltaToken` (same as the initial query). This status usually happens to prevent data inconsistency due to internal maintenance or migration of the target tenant, and is an indication that the application must restart with a full synchronization of the target tenant.
+Delta query can return a response code of `410 Gone` and a **Location** header containing a request URL with an empty `$deltatoken` (same as the initial query). This status usually happens to prevent data inconsistency due to internal maintenance or migration of the target tenant, and is an indication that the application must restart with a full synchronization of the target tenant.
 
 ### Token duration
 
@@ -195,7 +195,9 @@ An app can use Microsoft Graph [change notifications](./webhooks.md) to subscrib
 
 Applications can use this strategy to nearly eliminate (only for supported resources) the need to frequently poll Microsoft Graph and process those changes to keep a local data store in sync, greatly reducing the chances for their requests to be throttled.
 
-## Delta query request examples
+## Related content
+
+Learn more about delta query in the following tutorials:
 
 - [Get incremental changes to events in a calendar view](delta-query-events.md)
 - [Get incremental changes to messages in a folder](./delta-query-messages.md)

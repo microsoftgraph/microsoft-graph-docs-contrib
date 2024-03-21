@@ -3,7 +3,7 @@ title: 'Create horizontalSection'
 description: "Create a horizontalSection in a page"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 # Create horizontalSection
@@ -36,7 +36,7 @@ POST /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/hori
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a created [
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- { "blockType": "ignored" } -->
 

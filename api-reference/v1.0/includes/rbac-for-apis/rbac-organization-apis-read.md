@@ -30,7 +30,7 @@ For delegated scenarios, the signed-in user must have at least one of the follow
 - Mailbox Administrator
 - Microsoft Managed Desktop Administrator
 - Microsoft Store for Business User
-- Modern Commerce User
+- Modern Commerce Administrator
 - Power BI Administrator
 - Power BI Administrator
 - Privileged Authentication Administrator
