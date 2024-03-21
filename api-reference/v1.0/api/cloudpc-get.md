@@ -3,7 +3,7 @@ title: "Get cloudPC"
 description: "Read the properties and relationships of a specific cloudPC object."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -12,8 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Read the properties and relationships of a specific [cloudPC](../resources/cloudpc.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -55,11 +53,9 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 
 ## Examples
 
-### Example 1: Get the default properties of a Cloud PC
+### Request
 
-#### Request
-
-Here's an example of a request.
+The following example shows a request to get the default properties of a Cloud PC.
 
 <!-- {
   "blockType": "request",
@@ -71,11 +67,9 @@ Here's an example of a request.
 GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs/9ec90ff8-fd63-4fb9-ab5a-aa4fdcc43ec9
 ```
 
----
+### Response
 
-#### Response
-
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -105,6 +99,6 @@ Content-Type: application/json
     "userPrincipalName": "pmitchell@contoso.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
-    "provisioningType": "shared",
+    "provisioningType": "shared"
 }
 ```
