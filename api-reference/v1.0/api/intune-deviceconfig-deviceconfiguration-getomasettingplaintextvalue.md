@@ -17,7 +17,10 @@ Not yet documented
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-[!NOTE] This API involves potential secret values so ReadWrite permission is required.
+
+> [!NOTE]
+> This API involves potential secret values; ReadWrite permission is required.
+
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)| DeviceManagementConfiguration.ReadWrite.All|
