@@ -3,7 +3,7 @@ title: "Create resourceRoleScope"
 description: "Create a new accessPackageResourceRoleScope for adding a resource role to an access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Create a new [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) for adding a resource role to an access package. The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the **originId** for the resource role retrieved from the [list of the resource roles](accesspackagecatalog-list-resourceroles.md). Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -34,7 +34,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/resourceRoleS
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -51,9 +51,9 @@ If successful, this method returns a 200-series response code and a new [accessP
 
 #### Request
 
-The following is an example of the request adding a SharePoint Online site role to an access package's list of resource roles.  The access package resource for the site must already have been added to the access package catalog containing this access package.
+The following example shows a request adding a SharePoint Online site role to an access package's list of resource roles.  The access package resource for the site must already have been added to the access package catalog containing this access package.
 
-The request contains an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object. Each type of resource defines the format of the originId field in a resource role. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+The request contains an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object. Each type of resource defines the format of the originId field in a resource role. For a SharePoint Online site, the originId will be the sequence number of the role in the site.  The resource role can be obtained from a request to [retrieve the roles of a resource for a SharePoint Online site collection](accesspackagecatalog-list-resourceroles.md#example-2-retrieving-the-roles-of-a-resource-for-a-sharepoint-online-site-collection).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,9 +67,7 @@ Content-type: application/json
 
 {
     "role": {
-        "id": "6646a29e-da03-49f6-bcd9-dec124492de3",
         "displayName": "Contributors",
-        "description": null,
         "originSystem": "SharePointOnline",
         "originId": "4",
         "resource": {
@@ -77,7 +75,6 @@ Content-type: application/json
         }
     },
     "scope": {
-        "id": "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33",
         "displayName": "Root",
         "description": "Root Scope",
         "originId": "https://contoso.sharepoint.com/portals/Community",
@@ -148,7 +145,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request adding an application's role to an access package's list of resource roles.  The access package resource for the application must already have been added to the access package catalog containing this access package. The `role`, `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md).
+The following example shows a request adding an application's role to an access package's list of resource roles.  The access package resource for the application must already have been added to the access package catalog containing this access package. The `role`, `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -242,7 +239,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request adding membership of a group to an access package's list of resource roles.  The access package resource for the group must already have been added to the access package catalog containing this access package.  The `role`, `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md).
+The following example shows a request adding membership of a group to an access package's list of resource roles.  The access package resource for the group must already have been added to the access package catalog containing this access package.  The `role`, `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md).
 
 # [HTTP](#tab/http)
 <!-- {

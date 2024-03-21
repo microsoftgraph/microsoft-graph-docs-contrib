@@ -3,7 +3,7 @@ title: "cloudPcAuditActor resource type"
 description: "The audit actor represented by the Microsoft Entra user and application associated with the audit event."
 author: "ecmadao"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ The audit actor represented by the Microsoft Entra user and application associat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include `ItPro`, `Application`, `Partner` and `Unknown`.|
+|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include `ItPro`, `Application`, `Partner` and `UnknownFutureValue`.|
 |userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
 |applicationId|String|Microsoft Entra application ID.|
 |applicationDisplayName|String|Name of the application.|
@@ -35,10 +35,10 @@ The audit actor represented by the Microsoft Entra user and application associat
 
 |Member|Description|
 |:---|:---|
-|itPro|The operation was performed by an IT pro.|
-|application|The operation was performed by the application.|
-|partner|The operation was performed by a partner.|
-|unknown|Unknown actor.|
+|itPro|An IT pro performed the operation.|
+|application|The application performed the operation.|
+|partner|A partner performed the operation.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
@@ -46,7 +46,7 @@ None.
 
 ## JSON Representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcAuditActor"

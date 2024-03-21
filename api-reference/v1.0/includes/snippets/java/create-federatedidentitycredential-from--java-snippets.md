@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 FederatedIdentityCredential federatedIdentityCredential = new FederatedIdentityCredential();
-federatedIdentityCredential.name = "testing02";
-federatedIdentityCredential.issuer = "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0";
-federatedIdentityCredential.subject = "a7d388c3-5e3f-4959-ac7d-786b3383006a";
-LinkedList<String> audiencesList = new LinkedList<String>();
-audiencesList.add("api://AzureADTokenExchange");
-federatedIdentityCredential.audiences = audiencesList;
+federatedIdentityCredential.setName("testing02");
+federatedIdentityCredential.setIssuer("https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0");
+federatedIdentityCredential.setSubject("a7d388c3-5e3f-4959-ac7d-786b3383006a");
+LinkedList<String> audiences = new LinkedList<String>();
+audiences.add("api://AzureADTokenExchange");
+federatedIdentityCredential.setAudiences(audiences);
+FederatedIdentityCredential result = graphClient.applications().byApplicationId("{application-id}").federatedIdentityCredentials().post(federatedIdentityCredential);
 
-graphClient.applications("bcd7c908-1c4d-4d48-93ee-ff38349a75c8").federatedIdentityCredentials()
-	.buildRequest()
-	.post(federatedIdentityCredential);
 
 ```

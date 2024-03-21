@@ -143,7 +143,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "delegatedAdminRelationships",
           "ChangeType": "Addition",
-          "Description": "Added the [delegatedAdminRelationships](https://learn.microsoft.com/en-us/graph/api/resources/delegatedadminrelationships?view=graph-rest-beta) navigation property to the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/tenantrelationship?view=graph-rest-beta) resource.",
+          "Description": "Added the [delegatedAdminRelationships](https://learn.microsoft.com/en-us/graph/api/resources/delegatedadminrelationship?view=graph-rest-beta) navigation property to the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/tenantrelationship?view=graph-rest-beta) resource.",
           "Target": "tenantRelationship"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "delegatedAdminServiceManagementDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [delegatedAdminServiceManagementDetails](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminServiceManagementDetails?view=graph-rest-beta) navigation property to the [delegatedAdminCustomer](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminCustomer?view=graph-rest-beta) resource.",
+          "Description": "Added the [delegatedAdminServiceManagementDetails](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminServiceManagementDetail?view=graph-rest-beta) navigation property to the [delegatedAdminCustomer](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminCustomer?view=graph-rest-beta) resource.",
           "Target": "delegatedAdminCustomer"
         },
         {
@@ -235,9 +235,9 @@
       "CreatedDateTime": "2022-05-17T11:15:46.2343525Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Partner customer administration"
-    },    
+    },
     {
-      "ChangeList": 
+      "ChangeList":
       [
         {
           "Id": "143620a9-1156-453f-abf1-816e9c72a5ee",
@@ -380,7 +380,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "delegatedAdminRelationships",
           "ChangeType": "Addition",
-          "Description": "Added the [delegatedAdminRelationships](https://learn.microsoft.com/en-us/graph/api/resources/delegatedadminrelationships?view=graph-rest-1.0) navigation property to the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/tenantrelationship?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delegatedAdminRelationships](https://learn.microsoft.com/en-us/graph/api/resources/delegatedadminrelationship?view=graph-rest-1.0) navigation property to the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/tenantrelationship?view=graph-rest-1.0) resource.",
           "Target": "tenantRelationship"
         },
         {
@@ -396,7 +396,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "delegatedAdminServiceManagementDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [delegatedAdminServiceManagementDetails](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminServiceManagementDetails?view=graph-rest-1.0) navigation property to the [delegatedAdminCustomer](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminCustomer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delegatedAdminServiceManagementDetails](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminServiceManagementDetail?view=graph-rest-1.0) navigation property to the [delegatedAdminCustomer](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminCustomer?view=graph-rest-1.0) resource.",
           "Target": "delegatedAdminCustomer"
         },
         {
@@ -424,7 +424,7 @@
       "SubArea": "Partner customer administration"
     },
     {
-      "ChangeList": [        
+      "ChangeList": [
         {
           "Id": "0b023547-c61c-46df-a15c-a79570c6a0f6",
           "ApiChange": "Member",

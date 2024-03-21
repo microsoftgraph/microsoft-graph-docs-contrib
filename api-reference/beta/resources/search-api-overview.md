@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to query data"
 description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
 ms.localizationpriority: high
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -193,33 +193,35 @@ The search API has the following limitations:
 
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. The following table lists the combinations that are supported.
 
-| Entity Type |acronym     |bookmark     |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     |qna     | site       |
-|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|------------|------------|------------|
-|  acronym    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
-|  bookmark    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
-|  message    |     -      |     -      |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
-| chatMessage |     -      |     -      |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
-|    drive    |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|  driveItem  |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   event     |     -      |     -      |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |     -      |
-|externalItem |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   list      |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|  listItem   |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   person    |     -      |     -      |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |     -      |
-|  qna    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |  True      |     -      |
-|    site     |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
+    | Entity Type  | acronym | bookmark | message | chatMessage | drive | driveItem | event | externalItem | list | listItem | person | qna  | site |
+    |--------------|---------|----------|---------|-------------|-------|-----------|-------|--------------|------|----------|--------|------|------|
+    | acronym      | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | bookmark     | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | chatMessage  | -       | -        | -       | True        | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+    | drive        | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | driveItem    | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | event        | -       | -        | -       | -           | -     | -         | True  | -            | -    | -        | -      | -    | -    |
+    | externalItem | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | list         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | listItem     | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | message      | -       | -        | True    | -           | -     | -         | -     | -            | -    | -        | -      | -    | -    |  
+    | person       | -       | -        | -       | -           | -     | -         | -     | -            | -    | -        | True   | -    | -    |
+    | qna          | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | site         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API doesn't support custom sort for **acronym**,**bookmark**,**message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+- The search API doesn't support custom sort for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
-- The search API doesn't support aggregations for **acronym**,**bookmark**,**message**, **event**, **site**, **person**, **qna**, or **drive**.
+- The search API doesn't support aggregations for **acronym**, **bookmark**, **message**, **event**, **site**, **person**, **qna**, or **drive**.
 
-- The search API doesn't support xrank for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+- The search API doesn't support xrank for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
 - Guest search doesn't support searches for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
+
+- The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema). Use the tenant-level or default [search schema](/sharepoint/manage-search-schema).
 
 ## Schema change deprecation warning
 Effective August 31, 2023, the beta version of the [externalItem](./externalconnectors-externalitem.md) resource in the Microsoft Graph namespace will be deprecated. Going forward, use the version of the resource in the **Microsoft.Graph.ExternalConnectors** namespace. Make sure that you update any namespace dependencies before the specified date. Alternatively, consider transitioning to the v1.0 version of the API.
@@ -240,7 +242,7 @@ We recommend that you update existing apps to use the current property and type 
 | [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
 | [entityTypes](./enums.md)          | Rename enum value | **unknownfuturevalue**  | **unknownFutureValue**  |
 
-## See also
+## Related content
 
 - Learn more about a few key use cases:
   - [Search Teams messages](/graph/search-concept-chat-messages)
@@ -260,6 +262,3 @@ We recommend that you update existing apps to use the current property and type 
 
 - Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

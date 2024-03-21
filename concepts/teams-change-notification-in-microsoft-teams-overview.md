@@ -3,13 +3,13 @@ title: "Change notifications for Microsoft Teams resources"
 description: "Subscribe to resource and resource data changes in Microsoft Teams using the Microsoft Graph API. Learn about change notification types and payloads."
 author: "anandab-msft"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
 # Change notifications for Microsoft Teams resources
 
-Change notifications for Microsoft Teams resources using Microsoft Graph enable you to subscribe to a resource's changes (create, update, and delete). Change notifications provide a low latency model, allowing you to maintain a [subscription](/graph/api/resources/webhooks). You can also get the resource data in the notifications and avoid calling the API to get the payload.
+Change notifications for Microsoft Teams resources using Microsoft Graph enable you to subscribe to a resource's changes (create, update, and delete). Change notifications provide a low latency model, allowing you to maintain a [subscription](/graph/api/resources/change-notifications-api-overview). You can also get the resource data in the notifications and avoid calling the API to get the payload.
 
 > [!NOTE]
 > The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permission to access the resource.
@@ -22,18 +22,16 @@ Microsoft Teams supports two types of change notifications:
 
 * **Change notification to track all changes for a specific resource:** For example, you can subscribe to changes in messages in a particular channel and get notified whenever a message is created, updated, or deleted.
 
-For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).
+For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](change-notifications-overview.md).
 
 ## Supported resources
 
 The following table lists the Microsoft Teams resources that support change notifications and their corresponding resource paths. Apply the resource path for your scenario as specified when [creating a subscription](/graph/api/subscription-post-subscriptions). The type of the resource path payload is the type under the "Resource" column or a collection of that type.
 
-> **Note:** Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
-
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications** |
 |:----------------|:------------|:-----------------------------------------|
-| Teams [callRecording](/graph/api/resources/callrecording)<sup>*<sup> | <li> Any recording becomes available in the tenant: `communications/onlineMeetings/getAllRecordings`  <li>Any recording becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` <li>Any recording becomes available for any meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllRecordings` | Yes |
-| Teams [callTranscript](/graph/api/resources/calltranscript) | <li> All transcripts in an organization: `communications/onlineMeetings/getAllTranscripts` <li> All transcripts for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` <li>Any transcript becomes available for any meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllTranscripts`* | Yes |
+| Teams [callRecording](/graph/api/resources/callrecording) | All recordings in an organization: `communications/onlineMeetings/getAllRecordings`  <br>All recordings for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` <br>A call recording that becomes available in a meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllRecordings` | Yes |
+| Teams [callTranscript](/graph/api/resources/calltranscript) | All transcripts in an organization: `communications/onlineMeetings/getAllTranscripts` <br> All transcripts for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` <br>A call transcript that becomes available in a meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllTranscripts` | Yes |
 | Teams [channel](/graph/api/resources/channel) | Changes to channels in all teams:<br>`/teams/getAllChannels` <br>Changes to channel in a specific team:<br>`/teams/{id}/channels` | Yes |
 | Teams [chat](/graph/api/resources/chat) | Changes to any chat in the tenant:<br>`/chats` <br>Changes to a specific chat:<br>`/chats/{id}`<br/>Changes to any chat in the tenant where a particular Teams app is installed:<br/>`/appCatalogs/teamsApps/{id}/installedToChats` | Yes |
 | Teams [chatMessage](/graph/api/resources/chatMessage) | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages`<br>Changes to chat messages in all chats a particular user is part of:<br>`/users/{id}/chats/getAllMessages`<br>Changes to chat messages in all the chats in the tenant where a particular Teams app is installed:<br>`/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` | Yes |
@@ -73,7 +71,7 @@ For notifications with resource data, the payload looks like the following.  Thi
 }
 ```
 
-For details about validating tokens and decrypting the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+For details about validating tokens and decrypting the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
 The decrypted notification payload looks like the following. The decrypted payload for the previous example conforms to the [chatMessage](/graph/api/resources/chatMessage) schema. The payload is similar to that returned by GET operations.
 
@@ -144,9 +142,9 @@ The previous example shows a notification corresponding to a chat message resour
 > [!NOTE]
 > GET calls always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation returns the updated resource.
 
-## See also
+## Related content
 
-* [Microsoft Graph change notifications](webhooks.md)
+* [Microsoft Graph change notifications](change-notifications-overview.md)
 * [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 * [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
 * [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)

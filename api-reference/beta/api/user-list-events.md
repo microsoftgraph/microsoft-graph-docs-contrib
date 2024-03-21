@@ -3,7 +3,7 @@ title: "List events"
 description: "Get a list of event objects from the user's default calendar or "
 ms.localizationpriority: high
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -137,7 +137,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ---
 
 ##### Response 1
-Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
+The following example shows the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
   "name": "get_events",
@@ -192,7 +192,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Samantha Booth",
-                        "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"samanthab@contoso.com"
                     }
                 },
                 {
@@ -203,14 +203,14 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Dana Swope",
-                        "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"danas@contoso.com"
                     }
                 }
             ],
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+                    "address":"samanthab@contoso.com"
                 }
             }
         }
@@ -268,7 +268,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 ##### Response 2
-Here is an example of the response. The **body** property is returned in text format.
+The following example shows the response. The **body** property is returned in text format.
 
 <!-- {
   "blockType": "response",

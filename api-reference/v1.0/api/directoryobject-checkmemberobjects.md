@@ -3,6 +3,7 @@ title: "directoryObject: checkMemberObjects"
 description: "Check for membership in a list of groups, administrative units, or directory roles for the specified user, group, service principal, organizational contact, device, or directory object."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: "apiPageType"
 ---
@@ -112,7 +113,7 @@ POST /devices/{id}/checkMemberObjects
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

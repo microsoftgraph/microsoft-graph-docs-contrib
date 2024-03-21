@@ -1,9 +1,9 @@
 ---
 title: "List timeOffReasons"
 description: "Get the list of timeOffReasons in a schedule."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ GET /teams/{teamId}/schedule/timeOffReasons
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
@@ -124,6 +124,7 @@ Content-type: application/json
       "createdDateTime": "2019-03-12T22:10:38.242Z",
       "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
       "displayName": "Vacation",
+      "code": "VacationCode",
       "iconType": "plane",
       "isActive": true,
       "lastModifiedBy": {

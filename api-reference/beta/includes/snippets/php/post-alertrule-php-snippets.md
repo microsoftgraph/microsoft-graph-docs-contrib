@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AlertRule();
@@ -22,9 +22,18 @@ $threshold->setAggregation(new AggregationType('count'));
 $threshold->setOperator(new OperatorType('greaterOrEqual'));
 $threshold->setTarget(90);
 $requestBody->setThreshold($threshold);
+$conditionsRuleCondition1 = new RuleCondition();
+$conditionsRuleCondition1->setRelationshipType(new RelationshipType('or'));
+$conditionsRuleCondition1->setConditionCategory(new ConditionCategory('azureNetworkConnectionCheckFailures'));
+$conditionsRuleCondition1->setAggregation(new AggregationType('count'));
+$conditionsRuleCondition1->setOperator(new OperatorType('greaterOrEqual'));
+$conditionsRuleCondition1->setThresholdValue('90');
+$conditionsArray []= $conditionsRuleCondition1;
+$requestBody->setConditions($conditionsArray);
+
 $notificationChannelsNotificationChannel1 = new NotificationChannel();
 $notificationChannelsNotificationChannel1->setNotificationChannelType(new NotificationChannelType('portal'));
-$notificationChannelsNotificationChannel1->setNotificationReceivers([	]);
+$notificationChannelsNotificationChannel1->setNotificationReceivers([]);
 $notificationChannelsArray []= $notificationChannelsNotificationChannel1;
 $notificationChannelsNotificationChannel2 = new NotificationChannel();
 $notificationChannelsNotificationChannel2->setNotificationChannelType(new NotificationChannelType('email'));
@@ -37,18 +46,6 @@ $notificationChannelsNotificationChannel2->setNotificationReceivers($notificatio
 $notificationChannelsArray []= $notificationChannelsNotificationChannel2;
 $requestBody->setNotificationChannels($notificationChannelsArray);
 
-$additionalData = [
-'conditions' => [
-	[
-		'relationshipType' => 'or',
-		'conditionCategory' => 'azureNetworkConnectionCheckFailures',
-		'aggregation' => 'count',
-		'operator' => 'greaterOrEqual',
-		'thresholdValue' => '90',
-	],
-],
-];
-$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->deviceManagement()->monitoring()->alertRules()->post($requestBody)->wait();
 

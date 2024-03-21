@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequest: resume"
 description: "Resume accessPackageAssignmentRequest objects."
 ms.localizationpriority: medium
 author: "vikama-microsoft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state. 
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -24,18 +24,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+> [!NOTE]
+> The `/accessPackageAssignmentRequests` path will be retired soon. Use the `/assignmentRequests` path instead.
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+POST /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageAssignmentRequestId}/resume
 POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{accessPackageAssignmentRequestId}/resume
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -60,7 +64,8 @@ If successful, this action returns a `204 No Content` response code.
 ### Example 1: Resume an access package assignment request
 
 #### Request
-The following is an example of a call to resume an access package assignment request that's waiting for a callback.
+
+The following example shows a request of a call to resume an access package assignment request that's waiting for a callback.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -118,6 +123,7 @@ Content-Type: application/json
 ---
 
 #### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -131,7 +137,8 @@ HTTP/1.1 204 No Content
 ### Example 2: Resume and deny an access package assignment request
 
 #### Request
-The following is an example to resume the processing of an access package assignment request by denying the request that's waiting for a callback. A request cannot be denied at the `assignmentRequestCreated` stage of the callout.
+
+The following example shows a request to resume the processing of an access package assignment request by denying the request that's waiting for a callback. A request cannot be denied at the `assignmentRequestCreated` stage of the callout.
 <!-- {
   "blockType": "request"
 }
@@ -155,6 +162,7 @@ Content-Type: application/json
 
 
 ### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",

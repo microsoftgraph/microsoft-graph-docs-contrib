@@ -4,32 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String memberEntityType = "String";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<String> addMembersList = new LinkedList<String>();
-addMembersList.add("String");
+com.microsoft.graph.beta.admin.windows.updates.deployments.item.audience.microsoftgraphwindowsupdatesupdateaudiencebyid.UpdateAudienceByIdPostRequestBody updateAudienceByIdPostRequestBody = new com.microsoft.graph.beta.admin.windows.updates.deployments.item.audience.microsoftgraphwindowsupdatesupdateaudiencebyid.UpdateAudienceByIdPostRequestBody();
+updateAudienceByIdPostRequestBody.setMemberEntityType("String");
+LinkedList<String> addMembers = new LinkedList<String>();
+addMembers.add("String");
+updateAudienceByIdPostRequestBody.setAddMembers(addMembers);
+LinkedList<String> removeMembers = new LinkedList<String>();
+removeMembers.add("String");
+updateAudienceByIdPostRequestBody.setRemoveMembers(removeMembers);
+LinkedList<String> addExclusions = new LinkedList<String>();
+addExclusions.add("String");
+updateAudienceByIdPostRequestBody.setAddExclusions(addExclusions);
+LinkedList<String> removeExclusions = new LinkedList<String>();
+removeExclusions.add("String");
+updateAudienceByIdPostRequestBody.setRemoveExclusions(removeExclusions);
+graphClient.admin().windows().updates().deployments().byDeploymentId("{deployment-id}").audience().microsoftGraphWindowsUpdatesUpdateAudienceById().post(updateAudienceByIdPostRequestBody);
 
-LinkedList<String> removeMembersList = new LinkedList<String>();
-removeMembersList.add("String");
-
-LinkedList<String> addExclusionsList = new LinkedList<String>();
-addExclusionsList.add("String");
-
-LinkedList<String> removeExclusionsList = new LinkedList<String>();
-removeExclusionsList.add("String");
-
-graphClient.admin().windows().updates().deployments("b5171742-1742-b517-4217-17b5421717b5").audience()
-	.updateAudienceById(DeploymentAudienceUpdateAudienceByIdParameterSet
-		.newBuilder()
-		.withMemberEntityType(memberEntityType)
-		.withAddMembers(addMembersList)
-		.withRemoveMembers(removeMembersList)
-		.withAddExclusions(addExclusionsList)
-		.withRemoveExclusions(removeExclusionsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

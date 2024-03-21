@@ -3,7 +3,7 @@ title: "Get educationRubric attached to educationAssignment"
 description: "Get the educationRubric attached to an educationAssignment, if one exists."
 ms.localizationpriority: medium
 author: "Sureshpadimi88"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -39,7 +39,7 @@ This method supports the `$select` OData query parameters to help customize the 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

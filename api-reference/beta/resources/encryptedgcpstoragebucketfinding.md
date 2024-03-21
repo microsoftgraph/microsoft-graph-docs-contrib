@@ -2,6 +2,7 @@
 title: "encryptedGcpStorageBucketFinding resource type"
 description: "Represents the findings for GCP encrypted storage buckets."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List encryptedGcpStorageBucketFindings](../api/encryptedgcpstoragebucketfinding-list.md)|[encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md) collection|Get a list of the [encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md) objects and their properties.|
+|[List encryptedGcpStorageBucketFinding objects](../api/encryptedgcpstoragebucketfinding-list.md)|[encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md) collection|Get a list of the [encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md) objects and their properties.|
 |[Get encryptedGcpStorageBucketFinding](../api/encryptedgcpstoragebucketfinding-get.md)|[encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md)|Read the properties and relationships of an [encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md) object.|
 
 ## Properties

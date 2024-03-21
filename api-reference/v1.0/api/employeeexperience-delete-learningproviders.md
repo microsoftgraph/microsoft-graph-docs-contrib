@@ -3,7 +3,7 @@ title: "Delete learningProvider"
 description: "Delete a learningProvider resource and remove its registration in Viva Learning for a tenant."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ DELETE /employeeExperience/learningProviders/{learningProviderId}/$ref
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -58,10 +58,6 @@ The following is an example of a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/$ref
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-learningprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-learningprovider-javascript-snippets.md)]

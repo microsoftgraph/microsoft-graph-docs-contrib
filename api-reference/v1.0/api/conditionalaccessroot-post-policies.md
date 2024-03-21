@@ -4,7 +4,7 @@ description: "Create a new conditionalAccessPolicy."
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -42,7 +42,7 @@ POST /identity/conditionalAccess/policies
 
 | Name          | Description      |
 |:--------------|:-----------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -148,7 +148,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -295,7 +295,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -359,7 +359,7 @@ Content-type: application/json
 ### Example 3: Use all conditions and controls
 
 #### Request
-Here's an example of the request to use all the conditions and controls.
+The following example shows a request to use all the conditions and controls.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -504,7 +504,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -691,7 +691,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

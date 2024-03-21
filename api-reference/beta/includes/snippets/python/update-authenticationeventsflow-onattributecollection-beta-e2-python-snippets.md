@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.external_users_self_service_sign_up_events_flow import ExternalUsersSelfServiceSignUpEventsFlow
+from msgraph.generated.models.on_attribute_collection_external_users_self_service_sign_up import OnAttributeCollectionExternalUsersSelfServiceSignUp
+from msgraph.generated.models.authentication_attribute_collection_page import AuthenticationAttributeCollectionPage
+from msgraph.generated.models.authentication_attribute_collection_page_view_configuration import AuthenticationAttributeCollectionPageViewConfiguration
+from msgraph.generated.models.authentication_attribute_collection_input_configuration import AuthenticationAttributeCollectionInputConfiguration
+from msgraph.generated.models.authentication_attribute_collection_option_configuration import AuthenticationAttributeCollectionOptionConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 

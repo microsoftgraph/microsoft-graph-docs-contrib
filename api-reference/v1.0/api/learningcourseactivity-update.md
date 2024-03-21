@@ -3,7 +3,7 @@ title: "Update learningCourseActivity"
 description: "Update the properties of a learningCourseActivity object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 
@@ -38,37 +38,55 @@ PATCH /employeeExperience/learningProviders/{registrationId}/learningCourseActiv
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
 In the request body, use @odata.type to specify the type of [learningCourseActivity](../resources/learningcourseactivity.md) resource ([learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md)), and include the properties of that type to update. 
 
-The following table lists the properties that you can change for an assigned learning course activity (**learningAssignment**).
+The following table lists the properties you can change for an assigned learning course activity (**learningAssignment**).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional.|
-|assignmentType|assignmentType|The assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
-|completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
-|dueDateTime|DateTimeOffset|Due date for the course activity. Optional.|
+|completionPercentage|Int32|The percentage of the course the user completes. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
+|dueDateTime|DateTimeOffset|The due date for the course activity. Optional.|
 |notes|String|Notes for the course activity. Optional.|
 |status|courseStatus|The status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`. Required.|
 
-The following table lists the properties that you can change for a self-initiated learning course activity (**learningSelfInitiated**).
+The following table lists the properties you can change for a self-initiated learning course activity (**learningSelfInitiated**).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
-|status|courseStatus|The status of the course activity. Possible values are: `notStarted`, `inProgress`, `completed`. Required.|
-|startedDateTime|DateTimeOffset|The date and time when the self-initiated course was started by the learner.|
+|status|courseStatus|The status of the course activity. Possible values are: `inProgress`, `completed`. Required.|
+|startedDateTime|DateTimeOffset|The date and time when the learner started the self-initiated course.|
 
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
+
+If unsuccessful, this method returns one of the responses below:
+
+|Scenario|HTTP code|Code|Message|Details|
+|:---|:---|:---|:---|:---|
+|Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
+|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
+|Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
+|Bad request|400|badRequest|This provider isn't enabled for the given tenant.|
+|Bad request|400|badRequest|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.|
+|Bad request|404|notFound|The assignment ID requested doesn’t exist.|
+|Internal server error|500|internalServerError|Internal server error.|
+|Request throttled|429|tooManyRequests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes".}|
+|Service unavailable|503|serviceUnavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}.|
+|Bad request|400|badRequest|Required fields are missing|{"code": "badRequest","message": "Input field {fieldName} is required"}.|
+|Bad request|400|badRequest|Input fields are invalid|{"code": "badRequest","message": "Input field {fieldName} is invalid"}.|
+|Bad request|400|badRequest|badRequest|{"code": "badRequest","message": "Input field {fieldName} shouldn't be empty"}.|
+|Forbidden|403|Forbidden|The provider isn't valid to create course activity for the given learning content|When the registrationId/learningProviderId doesn't match with the provider with which the learningContent is created.|
+|Forbidden|403|Forbidden|The user license is not valid to perform the operation|When the user for which the assignment is being created does not have a premium license.|
 
 ## Examples
 
@@ -76,7 +94,7 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-The following example shows the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -158,7 +176,7 @@ HTTP/1.1 204 No Content
 
 ### Request
 
-The following example shows the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

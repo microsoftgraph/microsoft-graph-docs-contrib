@@ -3,7 +3,7 @@ title: "Get accessPackageAssignmentRequest"
 description: "Retrieve the properties and relationships of an accessPackageAssignmentRequest object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties and relationships of an  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -26,9 +26,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+> [!NOTE]
+> The `/accessPackageAssignmentRequests` path will be retired soon. Use the `/assignmentRequests` path instead.
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
+GET /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageAssignmentRequestId}
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}
 ```
 
@@ -40,7 +44,7 @@ This method supports the `$expand` OData query parameter to expand the relations
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

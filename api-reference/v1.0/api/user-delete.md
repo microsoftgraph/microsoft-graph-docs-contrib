@@ -2,6 +2,7 @@
 title: "Delete a user - Microsoft Graph API"
 description: "Describes the delete method of the user resource (entity) of the Microsoft Graph API (REST)."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -24,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "user_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-delete-permissions.md)]
 
-The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+The calling user must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - User Administrator
 - Privileged Authentication Administrator
@@ -45,7 +46,7 @@ DELETE /users/{id | userPrincipalName}
 
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -59,7 +60,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

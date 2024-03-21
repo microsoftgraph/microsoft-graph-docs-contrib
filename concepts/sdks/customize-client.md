@@ -25,34 +25,8 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ChaosHandlerSnippet":::
 
 ## [PHP](#tab/PHP)
-We currently use [Guzzle](http://guzzlephp.org/) as our HTTP client. You can pass your custom-configured Guzzle client using:
 
-```php
-<?php
-use Microsoft\Graph\Core\GraphClientFactory;
-use Microsoft\Graph\GraphRequestAdapter;
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Core\Authentication\GraphPhpLeagueAuthenticationProvider;
-
-$tokenRequestContext = new ClientCredentialContext(
-    'tenantId',
-    'clientId',
-    'clientSecret'
-);
-$authProvider = new GraphPhpLeagueAuthenticationProvider($tokenRequestContext);
-// Get default middleware stack from SDK
-$handlerStack = GraphClientFactory::getDefaultHandlerStack();
-
-// Add a custom handler or extra handlers not added by default
-// Add Chaos handler to simulate random server failure responses
-$handlerStack->push(KiotaMiddleware::chaos());
-
-$httpClient = GraphClientFactory::createWithMiddleware($handlerStack);
-
-$requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
-$graphServiceClient = new GraphServiceClient($requestAdapter);
-
-```
+:::code language="php" source="./snippets/php/snippets/CustomClients.php" id="ChaosHandlerSnippet":::
 
 ## [Python](#tab/python)
 
@@ -89,24 +63,7 @@ Some environments require client applications to use an HTTP proxy before access
 
 ## [PHP](#tab/PHP)
 
-```php
-<?php
-use Microsoft\Graph\Core\GraphClientFactory;
-use Microsoft\Graph\GraphRequestAdapter;
-
-// Configure proxy URLs on the Guzzle client
-$guzzleConfig = [
-    'proxy' => [
-        'http'  => 'http://proxy-url', // Use this proxy with "http"
-        'https' => 'http://proxy-url', // Use this proxy with "https"
-    ]
-];
-
-$httpClient = GraphClientFactory::createWithConfig($guzzleConfig);
-$requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
-$graphServiceClient = GraphServiceClient::createWithRequestAdapter($requestAdapter);
-
-```
+:::code language="php" source="./snippets/php/snippets/CustomClients.php" id="ProxySnippet":::
 
 ## [Python](#tab/python)
 

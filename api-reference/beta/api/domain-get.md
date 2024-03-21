@@ -3,7 +3,7 @@ title: "Get domain"
 description: "Retrieve the properties and relationships of domain object."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -33,8 +33,6 @@ The work or school account needs to belong to one of the following roles:
 * Service Support Administrator
 * Billing Administrator
 * Mailbox Administrator
-* Partner Tier1 Support
-* Partner Tier2 Support
 * Directory Readers
 * Directory Writers
 * AdHoc License Administrator
@@ -63,7 +61,7 @@ The work or school account needs to belong to one of the following roles:
 * Global Reader
 * Volume Licensing Business Center User
 * Volume Licensing Service Center User
-* Modern Commerce User
+* Modern Commerce Administrator
 * Microsoft Store for Business User
 * Directory Reviewer
 
@@ -84,7 +82,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body

@@ -13,9 +13,19 @@ You can use the `mgt-teams-channel-picker` component to enable searches for Micr
 
 The following example shows the `mgt-teams-channel-picker` component. Start searching for a channel or team to see the results render.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker--teams-channel-picker&source=docs" height="450"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker-html--teams-channel-picker&source=docs" height="450"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker-html--teams-channel-picker&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker-react--teams-channel-picker&source=docs" height="450"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker-react--teams-channel-picker&source=docs).
+
+---
 
 ## Getting the selected channel
 
@@ -100,7 +110,7 @@ For more information about handling events, see [events](../customize-components
 
 ## Templates
 
-`mgt-teams-channel-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+`mgt-teams-channel-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` to one of the following values.
 
 | Data type | Data context  | Description                                                                                                  |
 | --------- | ------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -119,12 +129,13 @@ The following example shows how to use the `error` template.
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions by default.
+This component uses the following Microsoft Graph APIs and permissions by default. For each API called the user must have at least one of the listed permissions.
 
-| API                                                 | Permission            |
-| --------------------------------------------------- | --------------------- |
-| [/me/joinedTeams](/graph/api/user-list-joinedteams) | Team.ReadBasic.All    |
-| [/teams/${id}/channels](/graph/api/channel-list)    | Channel.ReadBasic.All |
+| Configuration | Permission                                                                                                | API                                                 |
+| ------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| default       | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All  | [/me/joinedTeams](/graph/api/user-list-joinedteams)           |
+| default       | Team.ReadBasic.All	TeamSettings.Read.All, TeamSettings.ReadWrite.All                                     | [/teams/${teamId}/photo/$value](/graph/api/profilephoto-get)  |
+| default       | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All                            | [/teams/${id}/channels](/graph/api/channel-list)              |
 
 ## Authentication
 
@@ -155,6 +166,10 @@ The control exposes the following variables that can be localized. For details a
 
 | String name          | Default value                 |
 | -------------------- | ----------------------------- |
+| closeButtonAriaLabel | `remove the selected channel` |
 | inputPlaceholderText | `Select a channel`            |
-| noResultsFound       | `We didn't find any matches.` |
 | loadingMessage       | `Loading...`                  |
+| noResultsFound       | `We didn't find any matches.` |
+| photoFor             | `Teams photo for`             |
+| teamsChannels        | `Teams and channels results`  |
+

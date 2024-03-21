@@ -3,7 +3,7 @@ title: "Microsoft Bookings API overview"
 description: "Microsoft Bookings provides online and mobile apps that make appointment scheduling simple and efficient for organizations and their users and customers."
 author: "arvindmicrosoft"
 ms.localizationpriority: high
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 ms.custom: scenarios:getting-started
 ---
 
@@ -31,7 +31,7 @@ Using the same unified Microsoft Graph REST endpoint, you can access the Booking
 
 Looking for the API reference for this service? See [Microsoft Bookings API in Microsoft Graph](/graph/api/resources/booking-api-overview).
 
-## See also
+## Related content
 
 - [Microsoft Bookings for Microsoft 365](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d)
 - Other [Microsoft 365 business apps](https://www.microsoft.com/microsoft-365)

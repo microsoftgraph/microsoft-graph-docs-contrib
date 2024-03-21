@@ -3,6 +3,374 @@
         {
             "ChangeList": [
                 {
+                  "Id": "45fa9a2d-71fd-4e4d-943e-617cd5d926c7",
+                  "ApiChange": "Method",
+                  "ChangedApiName": "getShiftWorkCloudPcAccessState",
+                  "ChangeType": "Change",
+                  "Description": "Changed the deprecation date for the [getShiftWorkCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getShiftWorkCloudPcAccessState?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource to April 24, 2024. Going forward, use the [getFrontlineCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getFrontlineCloudPcAccessState?view=graph-rest-beta) API.",
+                  "Target": "cloudPC"
+                },
+                {
+                  "Id": "45fa9a2d-71fd-4e4d-943e-617cd5d926c7",
+                  "ApiChange": "Method",
+                  "ChangedApiName": "getSharedUseLicenseUsageReport",
+                  "ChangeType": "Change",
+                  "Description": "Changed the deprecation date of the [getSharedUseLicenseUsageReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getSharedUseLicenseUsageReport?view=graph-rest-beta) method of the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource to April 24, 2024",
+                  "Target": "cloudPcReports"
+                },
+                {
+                  "Id": "45fa9a2d-71fd-4e4d-943e-617cd5d926c7",
+                  "ApiChange": "Method",
+                  "ChangedApiName": "cloudPcSharedUseServicePlan",
+                  "ChangeType": "Change",
+                  "Description": "Changed the deprecation date of the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods to April 24, 2024. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
+                  "Target": "cloudPcSharedUseServicePlan"
+                },
+                {
+                  "Id": "45fa9a2d-71fd-4e4d-943e-617cd5d926c7",
+                  "ApiChange": "Method",
+                  "ChangedApiName": "cloudPcSharedUseServicePlans",
+                  "ChangeType": "Change",
+                  "Description": "Changed the deprecation date of the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods to April 24, 2024. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
+                  "Target": "cloudPcSharedUseServicePlan"
+                },
+                {
+                  "Id": "45fa9a2d-71fd-4e4d-943e-617cd5d926c7",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "cloudPcSharedUseServicePlan",
+                  "ChangeType": "Change",
+                  "Description": "Changed the deprecation date of the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods to April 24, 2024. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
+                  "Target": "cloudPcSharedUseServicePlan"
+                }
+              ],
+              "Id": "45fa9a2d-71fd-4e4d-943e-617cd5d926c7",
+              "Cloud": "Prod",
+              "Version": "beta",
+              "CreatedDateTime": "2024-01-30T23:00:30.7596296Z",
+              "WorkloadArea": "Device and app management",
+              "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
+              {
+                "Id": "d23da4c0-bd4c-4f0f-9b1e-76ee7be8d487",
+                "ApiChange": "Method",
+                "ChangedApiName": "getActionStatusReports",
+                "ChangeType": "Addition",
+                "Description": "Added the [getActionStatusReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getactionstatusreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                "Target": "cloudPcReports"
+              }
+            ],
+            "Id": "d23da4c0-bd4c-4f0f-9b1e-76ee7be8d487",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-08T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
+            {
+              "Id": "5c60ab9e-28a1-4be3-bea7-e8db01da561d",
+              "ApiChange": "Member",
+              "ChangedApiName": "hp",
+              "ChangeType": "Addition",
+              "Description": "Added the `hp` member to the **cloudPcPartnerAgentName** enumeration.",
+              "Target": "cloudPcPartnerAgentName"
+            }
+          ],
+          "Id": "5c60ab9e-28a1-4be3-bea7-e8db01da561d",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-12-11T10:37:44.6523017Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
+            {
+              "Id": "860b04e1-8522-4fe2-8f41-73bad529ea1d",
+              "ApiChange": "Resource",
+              "ChangedApiName": "virtualEndpoint",
+              "ChangeType": "Addition",
+              "Description": "Added the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource type.",
+              "Target": "virtualEndpoint"
+            }
+          ],
+          "Id": "860b04e1-8522-4fe2-8f41-73bad529ea1d",
+          "Cloud": "Prod",
+          "Version": "v1.0",
+          "CreatedDateTime": "2024-01-03T08:16:16.7296291Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "e5352735-c007-4d19-ac03-bbba6d26f455",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "other",
+                    "ChangeType": "Change",
+                    "Description": "Changed the `other` member in the [cloudPcAuditActivityOperationType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-beta#cloudpcauditactivityoperationtype-values) enumeration to `unknownFutureValue`, with value changed from 999 to 3.",
+                    "Target": "cloudPcAuditActivityOperationType"
+                },
+                {
+                    "Id": "e5352735-c007-4d19-ac03-bbba6d26f455",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "other",
+                    "ChangeType": "Change",
+                    "Description": "Changed the `other` member in the [cloudPcAuditActivityResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-beta#cloudpcauditactivityresult-values) enumeration to `unknownFutureValue`, with value change from 999 to 4.",
+                    "Target": "cloudPcAuditActivityResult"
+                },
+                {
+                    "Id": "e5352735-c007-4d19-ac03-bbba6d26f455",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "unknown",
+                    "ChangeType": "Change",
+                    "Description": "Changed the `unknown` member in the [cloudPcAuditActorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-beta#cloudpcauditactortype-values) enumeration to `unknownFutureValue`, with value change from 999 to 3.",
+                    "Target": "cloudPcAuditActorType"
+                },
+                {
+                    "Id": "e5352735-c007-4d19-ac03-bbba6d26f455",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "other",
+                    "ChangeType": "Change",
+                    "Description": "Changed the `other` member in the [cloudPcAuditCategory](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-beta#cloudpcauditcategory-values) enumeration to `unknownFutureValue`, with value change from 999 to 1.",
+                    "Target": "cloudPcAuditCategory"
+                }
+            ],
+            "Id": "e5352735-c007-4d19-ac03-bbba6d26f455",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-02T02:13:21.7336218Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "f387eff5-f855-44a2-a60c-1f0e8e8acf6a",
+                "ApiChange": "Member",
+                "ChangedApiName": "cloudPcUsageCategoryReports",
+                "ChangeType": "Addition",
+                "Description": "Added the `cloudPcUsageCategoryReports` member to the **cloudPcReportName** enumeration.",
+                "Target": "cloudPcReportName"
+              },
+              {
+                "Id": "f387eff5-f855-44a2-a60c-1f0e8e8acf6a",
+                "ApiChange": "Method",
+                "ChangedApiName": "getCloudPcRecommendationReports",
+                "ChangeType": "Addition",
+                "Description": "Added the [getCloudPcRecommendationReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
+                "Target": "cloudPcReports"
+              }
+            ],
+            "Id": "f387eff5-f855-44a2-a60c-1f0e8e8acf6a",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-30T06:07:56.2470117Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcDeviceImageErrorCode",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcDeviceImageErrorCode** enumeration type.",
+                    "Target": "cloudPcDeviceImageErrorCode"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcDeviceImageStatusDetails",
+                    "ChangeType": "Deprecated",
+                    "Description": "Deprecated the **cloudPcDeviceImageStatusDetails** enumeration type. Goind forward, use the **cloudPcDeviceImageErrorCode** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "vmAlreadyAzureAdJoined",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `vmAlreadyAzureAdJoined` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "paidSourceImageNotSupport",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `paidSourceImageNotSupport` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "sourceImageNotSupportCustomizeVMName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `sourceImageNotSupportCustomizeVMName` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "sourceImageSizeExceedsLimitation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `sourceImageSizeExceedsLimitation` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "unknown",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `unknown` member to the **cloudPcDeviceImageOsStatus** enumeration.",
+                    "Target": "cloudPcDeviceImageOsStatus"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "publisherName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **publisherName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "offerName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **offerName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "skuName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **skuName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "recommendedSku",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **recommendedSku** property of the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource. The **recommendedSku** property will stop returning data on January 31, 2024.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "offer",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **offer** property of the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource. The **offer** property will stop returning data on January 31, 2024. Going forward, use the **offerName** property.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "offerDisplayName",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **offerDisplayName** property of the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource. The **offerDisplayName** property will stop returning data on January 31, 2024.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "publisher",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **publisher** property of the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource. The **publisher** property will stop returning data on January 31, 2024. Going forward, use the **publisherName** property.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "sku",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **sku** property of the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource. The **sku** property will stop returning data on January 31, 2024. Going forward, use the **skuName** property.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "skuDisplayName",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **skuDisplayName** property of the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource. The **skuDisplayName** property will stop returning data on January 31, 2024.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "errorCode",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **errorCode** property to the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcDeviceImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "statusDetails",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **statusDetails** property of the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource. The **statusDetails** property will stop returning data on January 31, 2024. Going forward, use the **errorCode** property.",
+                    "Target": "cloudPcDeviceImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "resourceId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **resourceId** property to the [cloudPcSourceDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcSourceDeviceImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "id",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **id** property of the [cloudPcSourceDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta) resource. The **id** property will stop returning data on January 31, 2024. Going forward, use the **resourceId** property.",
+                    "Target": "cloudPcSourceDeviceImage"
+                }
+            ],
+            "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-17T04:22:14.103894Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "aacbebc4-62eb-4fde-a030-381e3359a7ad",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcScopedPermission",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcScopedPermission](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcScopedPermission?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcScopedPermission"
+                },
+                {
+                    "Id": "aacbebc4-62eb-4fde-a030-381e3359a7ad",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "retrieveScopedPermissions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [retrieveScopedPermissions](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-retrievescopedpermissions?view=graph-rest-beta) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                }
+            ],
+            "Id": "aacbebc4-62eb-4fde-a030-381e3359a7ad",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-08T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcCrossRegionDisasterRecoverySetting",
@@ -45,6 +413,104 @@
         {
             "ChangeList": [
                 {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "unknownFutureValue",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `unknownFutureValue` member to the **cloudPcProvisioningPolicyImageType** enumeration.",
+                    "Target": "cloudPcProvisioningPolicyImageType"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcRestorePointFrequencyType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcRestorePointFrequencyType** enumeration type.",
+                    "Target": "cloudPcRestorePointFrequencyType"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "windowsSetting",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **windowsSetting** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "windowsSettings",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **windowsSettings** property of the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource. The **windowsSettings** property will stop returning data on January 31, 2024. Going forward, use the **windowsSetting** property.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "domainJoinType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **domainJoinType** property to the [cloudPcDomainJoinConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcDomainJoinConfiguration"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "type",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **type** property of the [cloudPcDomainJoinConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource. The **type** property will stop returning data on January 31, 2024. Going forward, use the **domainJoinType** property.",
+                    "Target": "cloudPcDomainJoinConfiguration"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "managedType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **managedType** property to the [microsoftManagedDesktop](https://learn.microsoft.com/en-us/graph/api/resources/microsoftManagedDesktop?view=graph-rest-beta) resource.",
+                    "Target": "microsoftManagedDesktop"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "type",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **type** property of the [microsoftManagedDesktop](https://learn.microsoft.com/en-us/graph/api/resources/microsoftManagedDesktop?view=graph-rest-beta) resource. The **type** property will stop returning data on January 31, 2024. Going forward, use the **managedType** property.",
+                    "Target": "microsoftManagedDesktop"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "frequencyType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **frequencyType** property to the [cloudPcRestorePointSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcRestorePointSetting?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcRestorePointSetting"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "frequencyInHours",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **frequencyInHours** property of the [cloudPcRestorePointSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcRestorePointSetting?view=graph-rest-beta) resource. The **frequencyInHours** property will stop returning data on January 31, 2024. Going forward, use the **frequencyType** property.",
+                    "Target": "cloudPcRestorePointSetting"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcWindowsSetting",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcWindowsSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcWindowsSetting?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcWindowsSetting"
+                }
+            ],
+            "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-30T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
                     "ApiChange": "Member",
                     "ChangedApiName": "rawRemoteConnectionReports",
@@ -67,6 +533,24 @@
             "CreatedDateTime": "2023-10-16T06:58:17.7596296Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
+            {
+              "Id": "ef24436a-4e6b-4bc0-977c-e6a039a96fa4",
+              "ApiChange": "Property",
+              "ChangedApiName": "selfServiceEnabled",
+              "ChangeType": "Deprecation",
+              "Description": "Deprecated the **selfServiceEnabled** property of the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource. The **selfServiceEnabled** property will stop returning data on December 1, 2023.",
+              "Target": "cloudPcUserSetting"
+            }
+          ],
+          "Id": "ef24436a-4e6b-4bc0-977c-e6a039a96fa4",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-12-11T08:30:16.9388044Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
         },
       {
             "ChangeList": [
@@ -109,9 +593,8 @@
             "CreatedDateTime": "2023-09-29T10:36:40.1525853Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
-        },  
-
-      {
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "6ec2ebe8-8f0c-4595-a8bb-5a40c631fcb8",
@@ -308,7 +791,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "frontLineServicePlans",
               "ChangeType": "Addition",
-              "Description": "Added the **frontLineServicePlans** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
+              "Description": "Added the **frontLineServicePlans** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
               "Target": "virtualEndpoint"
             }
           ],
@@ -669,6 +1152,14 @@
                     "ChangedApiName": "domainJoinConfigurations",
                     "ChangeType": "Addition",
                     "Description": "Added the **domainJoinConfigurations** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "32581844-a1d3-11ed-a8fc-0242ac120002",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "domainJoinConfiguration",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **domainJoinConfiguration** property of the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource. The **domainJoinConfiguration** property stopped returning data on June 30, 2023. Going forward, use the **domainJoinConfigurations** property.",
                     "Target": "cloudPcProvisioningPolicy"
                 }
             ],
@@ -1636,7 +2127,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "POST",
                     "ChangeType": "Addition",
-                    "Description": "Cloud PC provider supports [create](https://learn.microsoft.com/en-us/graph/rbacapplication-post-roledefinitions?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
+                    "Description": "Cloud PC provider supports [create](https://learn.microsoft.com/en-us/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
                     "Target": "unifiedroledefinition"
                 },
                 {
@@ -1644,7 +2135,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "Patch",
                     "ChangeType": "Addition",
-                    "Description": "Cloud PC provider supports [update](https://learn.microsoft.com/en-us/graph/unifiedroledefinition-update?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
+                    "Description": "Cloud PC provider supports [update](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-update?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
                     "Target": "unifiedroledefinition"
                 },
                 {
@@ -1652,7 +2143,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "DELETE",
                     "ChangeType": "Addition",
-                    "Description": "Cloud PC provider supports [delete](https://learn.microsoft.com/en-us/graph/unifiedroledefinition-delete?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
+                    "Description": "Cloud PC provider supports [delete](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
                     "Target": "unifiedroledefinition"
                 },
                 {
@@ -2478,7 +2969,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "bulkReprovisionCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bulkReprovisionCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkreprovisioncloudpc.md?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [bulkReprovisionCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkreprovisioncloudpc?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 },
                 {
@@ -3358,6 +3849,24 @@
         {
             "ChangeList": [
                 {
+                    "Id": "f00b2e02-6946-43f0-a94e-8c290df45986",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckDeploymentQuotaLimitReached",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckDeploymentQuotaLimitReached` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "f00b2e02-6946-43f0-a94e-8c290df45986",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2023-11-21T07:25:58.9412735Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "b653c0f4-bbc5-4236-b6a3-e440ac4565ab",
                     "ApiChange": "Property",
                     "ChangedApiName": "enableMEMAutoEnroll",
@@ -3476,13 +3985,13 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "retryPartnerAgentInstallation",
                     "ChangeType": "Addition",
-                    "Description": "Added the [retryPartnerAgentInstallation](https://review.learn.microsoft.com/en-us/graph/api/cloudpc-retrypartneragentinstallation?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [retryPartnerAgentInstallation](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrypartneragentinstallation?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
                 },
                 {
                     "Id": "d1f73ee5-882c-4068-b751-5a3d93329c09",
                     "ApiChange": "Property",
-                    "ChangeApiName": "partnerAgentInstallResults",
+                    "ChangedApiName": "partnerAgentInstallResults",
                     "ChangeType": "Addition",
                     "Description": "Added the **partnerAgentInstallResults** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
@@ -3526,7 +4035,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "getShiftWorkCloudPcAccessState",
             "ChangeType": "Addition",
-            "Description": "Added the [getShiftWorkCloudPcAccessState](https://review.learn.microsoft.com/en-us/graph/api/cloudpc-getShiftWorkCloudPcAccessState?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+            "Description": "Added the [getShiftWorkCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getShiftWorkCloudPcAccessState?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
             "Target": "cloudPC"
           },
           {
@@ -3599,7 +4108,7 @@
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
     },
-    {   
+    {
         "ChangeList": [
           {
             "Id": "2107ee19-7ed3-4480-936c-61a372e36751",
@@ -3615,6 +4124,32 @@
         "Version": "beta",
         "CreatedDateTime": "2023-05-24T08:27:16.0017488Z",
         "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+    },
+    {
+        "ChangeList": [
+            {
+                "Id": "a646af91-1226-4824-9e44-e91b7d27ef4a",
+                "ApiChange": "Member",
+                "ChangedApiName": "permissionCheckNoWindows365NetworkUserRole",
+                "ChangeType": "Addition",
+                "Description": "Added the `permissionCheckNoWindows365NetworkUserRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration .",
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+            },
+            {
+                "Id": "a646af91-1226-4824-9e44-e91b7d27ef4a",
+                "ApiChange": "Member",
+                "ChangedApiName": "permissionCheckNoWindows365NetworkInterfaceContributorRole",
+                "ChangeType": "Addition",
+                "Description": "Added the `permissionCheckNoWindows365NetworkInterfaceContributorRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+            }
+        ],
+        "Id": "a646af91-1226-4824-9e44-e91b7d27ef4a",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-12-07T11:14:41.3424906Z",
+        "WorkloadArea": "Devices and apps",
         "SubArea": "Cloud PC"
       },
       {
@@ -3660,8 +4195,26 @@
           "CreatedDateTime": "2023-07-31T09:00:37.9148169Z",
           "WorkloadArea": "Device and app management",
           "SubArea": "Cloud PC"
-        },
-        {
+      },
+      {
+       "ChangeList": [
+         {
+           "Id": "f7fa2818-6c04-45d4-963e-ec5640b80765",
+           "ApiChange": "Property",
+           "ChangedApiName": "errorMessage",
+           "ChangeType": "Addition",
+           "Description": "Added the **errorMessage** property to the [cloudPcPartnerAgentInstallResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcPartnerAgentInstallResult?view=graph-rest-beta) resource.",
+           "Target": "cloudPcPartnerAgentInstallResult"
+         }
+       ],
+       "Id": "f7fa2818-6c04-45d4-963e-ec5640b80765",
+       "Cloud": "Prod",
+       "Version": "beta",
+       "CreatedDateTime": "2024-01-16T07:28:47.8469126Z",
+       "WorkloadArea": "Device and app management",
+       "SubArea": "Cloud PC"
+     },
+     {
         "ChangeList": [
             {
                 "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
@@ -3754,6 +4307,106 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2023-10-09T11:36:16.0017333Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+          "ChangeList": [
+          {
+            "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
+            "ApiChange": "Permission",
+            "ChangedApiName": "CloudPC.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the CloudPC.Read.All application permissions to the getFrontlineCloudPcAccessState method.",
+            "Target": "getFrontlineCloudPcAccessState"
+          },
+          {
+            "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
+            "ApiChange": "Permission",
+            "ChangedApiName": "CloudPC.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the CloudPC.ReadWrite.All application permissions to the getFrontlineCloudPcAccessState method.",
+            "Target": "getFrontlineCloudPcAccessState"
+          }
+        ],
+        "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-02-06T10:52:16.0013428Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "type",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the **type** property of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource. The **type** property stopped returning data on January 31, 2024. Going forward, use the **connectionType** property.",
+            "Target": "cloudPcOnPremisesConnection"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "connectionType",
+            "ChangeType": "Addition",
+            "Description": "Added the **connectionType** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+            "Target": "cloudPcOnPremisesConnection"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "healthCheckStatusDetails",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the **healthCheckStatusDetails** property of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource. The **healthCheckStatusDetails** property stopped returning data on January 31, 2024. Going forward, use the **healthCheckStatusDetail** property.",
+            "Target": "cloudPcOnPremisesConnection"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "healthCheckStatusDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the **healthCheckStatusDetail** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+            "Target": "cloudPcOnPremisesConnection"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "additionalDetails",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the **additionalDetails** property of the [cloudPcOnPremisesConnectionHealthCheck](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta) resource. The **additionalDetails** property stopped returning data on January 31, 2024. Going forward, use the **additionalDetail** property.",
+            "Target": "cloudPcOnPremisesConnectionHealthCheck"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Property",
+            "ChangedApiName": "additionalDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the **additionalDetail** property to the [cloudPcOnPremisesConnectionHealthCheck](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta) resource.",
+            "Target": "cloudPcOnPremisesConnectionHealthCheck"
+          },
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcOnPremisesConnectionStatusDetails",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the [cloudPcOnPremisesConnectionStatusDetails](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetails?view=graph-rest-beta) resource. The **cloudPcOnPremisesConnectionStatusDetails** resource stopped returning data on January 31, 2024. Going forward, use the [cloudPcOnPremisesConnectionStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetail?view=graph-rest-beta) resource.",
+            "Target": "cloudPcOnPremisesConnectionStatusDetails"
+          },            
+          {
+            "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcOnPremisesConnectionStatusDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcOnPremisesConnectionStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetail?view=graph-rest-beta) resource type.",
+            "Target": "cloudPcOnPremisesConnectionStatusDetail"
+          }
+        ],
+        "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-03-15T07:34:41.3424906Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       }

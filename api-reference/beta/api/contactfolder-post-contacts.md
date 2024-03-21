@@ -3,7 +3,7 @@ title: "Create Contact"
 description: "Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -51,7 +51,7 @@ If successful, this method returns `201 Created` response code and [Contact](../
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,7 +108,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,6 +2,7 @@
 title: "awsIdentityAccessManagementKeyAgeFinding resource type"
 description: "View the age of AWS IAM Access Keys."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,9 +21,9 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsIdentityAccessManagementKeyAgeFindings](../api/awsidentityaccessmanagementkeyagefinding-list.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) objects and their properties.|
+|[List awsIdentityAccessManagementKeyAgeFinding objects](../api/awsidentityaccessmanagementkeyagefinding-list.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) objects and their properties.|
 |[Get awsIdentityAccessManagementKeyAgeFinding](../api/awsidentityaccessmanagementkeyagefinding-get.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)|Read the properties and relationships of an [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) object.|
-|[Get awsIdentityAccessManagementKeyAgeFinding-aggregatedSummary](../api/awsidentityaccessmanagementkeyagefinding-aggregatedSummary.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)|Return the total number of an[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)and the total number in a specified authorization system.|
+|[Get aggregatedSummary](../api/awsidentityaccessmanagementkeyagefinding-aggregatedSummary.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)|Return the total number of an[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)and the total number in a specified authorization system.|
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +37,7 @@ Inherits from [finding](../resources/finding.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|awsAccessKey|[awsAccessKey](../resources/awsaccesskey.md)|Represents the Aws access key in an authorization system. Note, because of a limit in our current data model, we do not have all of the standard identity information for the access key's owner.|
+|accessKey|[awsAccessKey](../resources/awsaccesskey.md)|Represents the Aws access key in an authorization system. Note, because of a limit in our current data model, we do not have all of the standard identity information for the access key's owner.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

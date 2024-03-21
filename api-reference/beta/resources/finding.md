@@ -2,6 +2,7 @@
 title: "finding resource type"
 description: "The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

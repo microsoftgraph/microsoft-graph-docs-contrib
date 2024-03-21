@@ -3,7 +3,7 @@ title: "List subscribedSkus"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
 ms.localizationpriority: medium
 author: "frank-masuelli"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -36,11 +36,14 @@ GET /subscribedSkus
 
 This method supports only the `$select` [OData query parameter](/graph//query-parameters) to help customize the response. It does not support `$filter`.
 
+> [!NOTE]
+> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search` parameter.
+
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -54,7 +57,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -149,7 +152,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 

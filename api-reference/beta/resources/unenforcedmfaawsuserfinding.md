@@ -2,6 +2,7 @@
 title: "unenforcedMfaAwsUserFinding resource type"
 description: "View AWS local users without MFA."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List unenforcedMfaAwsUserFindings](../api/unenforcedmfaawsuserfinding-list.md)|[unenforcedMfaAwsUserFinding](../resources/unenforcedmfaawsuserfinding.md) collection|Get a list of the [unenforcedMfaAwsUserFinding](../resources/unenforcedmfaawsuserfinding.md) objects and their properties.|
+|[List unenforcedMfaAwsUserFinding objects](../api/unenforcedmfaawsuserfinding-list.md)|[unenforcedMfaAwsUserFinding](../resources/unenforcedmfaawsuserfinding.md) collection|Get a list of the [unenforcedMfaAwsUserFinding](../resources/unenforcedmfaawsuserfinding.md) objects and their properties.|
 |[Get unenforcedMfaAwsUserFinding](../api/unenforcedmfaawsuserfinding-get.md)|[unenforcedMfaAwsUserFinding](../resources/unenforcedmfaawsuserfinding.md)|Read the properties and relationships of an [unenforcedMfaAwsUserFinding](../resources/unenforcedmfaawsuserfinding.md) object.|
 |[aggregatedSummary](../api/unenforcedMfaAwsUserFinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 

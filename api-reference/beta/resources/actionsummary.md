@@ -2,6 +2,7 @@
 title: "actionSummary resource type"
 description: "Contains information on the number of authorization system actions that have been granted to an identity and the number of actions executed by this identity in the last 90 days."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

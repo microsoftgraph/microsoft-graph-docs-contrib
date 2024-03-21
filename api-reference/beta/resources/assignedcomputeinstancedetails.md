@@ -2,6 +2,7 @@
 title: "assignedComputeInstanceDetails resource type"
 description: "Represents the details of a list of S3 buckets associated with this EC2 instance."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

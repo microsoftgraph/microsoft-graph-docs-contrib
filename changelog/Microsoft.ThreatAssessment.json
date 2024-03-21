@@ -69,7 +69,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "evaluate application,evaluate classification,evaluate removal,extract label,list label,get label",
           "ChangeType": "Addition",
-          "Description": "Added optional request header, User-Agent, to [evaluate application](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta), [evaluate classification](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta), [evaluate removal](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta), [extract label](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta), [list label](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-list-labels?view=graph-rest-beta), and [get label](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-get?view=graph-rest-beta).",
+          "Description": "Added optional request header, User-Agent, to [evaluate application](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta), [evaluate classification](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta), [evaluate removal](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta), [extract label](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta), [list label](https://learn.microsoft.com/en-us/graph/api/informationprotectionpolicy-list-labels?view=graph-rest-beta), and [get label](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-get?view=graph-rest-beta).",
           "Target": "evaluate application,evaluate classification,evaluate removal,extract label,list label,get label"
         }
       ],
@@ -87,7 +87,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "ThreatAssessment.ReadWrite.All,ThreatAssessment.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added new delegated and application permissions [ThreatAssessment.ReadWrite.All](permissions-reference.md#threat-assessment-permissions) and [ThreatAssessment.Read.All](permissions-reference.md#threat-assessment-permissions) to Read and write threat assessment requests",
+          "Description": "Added new delegated and application permissions [ThreatAssessment.ReadWrite.All](https://learn.microsoft.com/en-us/graph/permissions-reference#threat-assessment-permissions) and [ThreatAssessment.Read.All](https://learn.microsoft.com/en-us/graph/permissions-reference#threat-assessment-permissions) to Read and write threat assessment requests",
           "Target": "ThreatAssessment.ReadWrite.All,ThreatAssessment.Read.All"
         }
       ],
@@ -177,7 +177,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "labelId,label",
           "ChangeType": "Change",
-          "Description": "Changed **labelId** property to **label** in [recommendLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
+          "Description": "Changed **labelId** property to **label** in [recommendLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/recommendlabelaction?view=graph-rest-beta).",
           "Target": "recommendLabelAction"
         },
         {
@@ -185,7 +185,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "classificationIds,responsibleSensitivityTypeIds",
           "ChangeType": "Change",
-          "Description": "Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [recommendLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
+          "Description": "Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [recommendLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/recommendlabelaction?view=graph-rest-beta).",
           "Target": "recommendLabelAction"
         },
         {
@@ -193,7 +193,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "actionSource",
           "ChangeType": "Addition",
-          "Description": "Added **actionSource** property to [recommendLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
+          "Description": "Added **actionSource** property to [recommendLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/recommendlabelaction?view=graph-rest-beta).",
           "Target": "recommendLabelAction"
         },
         {
@@ -299,7 +299,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile",
           "ChangeType": "Addition",
-          "Description": "Added the Secure Score APIs to the [security API](https://learn.microsoft.com/en-us/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), including the following resources and operations: [secureScore](https://learn.microsoft.com/en-us/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities), [List secureScores](https://learn.microsoft.com/en-us/graph/api/securescores-list?view=graph-rest-1.0), [secureScoreControlProfile](https://learn.microsoft.com/en-us/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0), [List secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0), [Update secureScoreControlProfile](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0)",
+          "Description": "Added the Secure Score APIs to the [security API](https://learn.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-1.0), including the following resources and operations: [secureScore](https://learn.microsoft.com/en-us/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities), [List secureScores](https://learn.microsoft.com/en-us/graph/api/securescores-list?view=graph-rest-1.0), [secureScoreControlProfile](https://learn.microsoft.com/en-us/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0), [List secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0), [Update secureScoreControlProfile](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0)",
           "Target": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile"
         }
       ],
@@ -351,7 +351,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceInformation",
           "ChangeType": "Addition",
-          "Description": "Introduced new complex type [complianceInformation](https://learn.microsoft.com/en-us/graph/api/complianceInformation/team?view=graph-rest-beta).",
+          "Description": "Introduced new complex type [complianceInformation](https://learn.microsoft.com/en-us/graph/api/resources/complianceInformation?view=graph-rest-beta).",
           "Target": "complianceInformation"
         },
         {
@@ -359,7 +359,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "certificationControl",
           "ChangeType": "Addition",
-          "Description": "Introduced new complex type [certificationControl](https://learn.microsoft.com/en-us/graph/api/certificationControl/team?view=graph-rest-beta).",
+          "Description": "Introduced new complex type [certificationControl](https://learn.microsoft.com/en-us/graph/api/resources/certificationControl?view=graph-rest-beta).",
           "Target": "certificationControl"
         }
       ],
@@ -377,7 +377,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles",
           "ChangeType": "Addition",
-          "Description": "Added the Secure Score APIs to the [security API](https://learn.microsoft.com/en-us/graph/api/resources/securescore-api-overview?view=graph-rest-beta), including the following resources and operations: [secureScores](https://learn.microsoft.com/en-us/graph/api/resources/securescores?view=graph-rest-beta) (and related entities), [List secureScores](https://learn.microsoft.com/en-us/graph/api/securescores-list?view=graph-rest-beta), [secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta), [List secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta), [Update secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)",
+          "Description": "Added the Secure Score APIs to the [security API](https://learn.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations: [secureScores](https://learn.microsoft.com/en-us/graph/api/resources/securescores?view=graph-rest-beta) (and related entities), [List secureScores](https://learn.microsoft.com/en-us/graph/api/securescores-list?view=graph-rest-beta), [secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta), [List secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta), [Update secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)",
           "Target": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles"
         },
         {
@@ -403,7 +403,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType",
           "ChangeType": "Addition",
-          "Description": "Added new enum types: [alertFeedback](https://learn.microsoft.com/en-us/graph/api/resources/alertfeedbackenumtype?view=graph-rest-beta), [alertStatus](https://learn.microsoft.com/en-us/graph/api/resources/alertstatusenumtype?view=graph-rest-beta), [alertType](https://learn.microsoft.com/en-us/graph/api/resources/alerttypeenumtype?view=graph-rest-beta), [applicationPermissionsRequired](https://learn.microsoft.com/en-us/graph/api/resources/applicationpermissionsrequiredenumtype?view=graph-rest-beta), [logonType](https://learn.microsoft.com/en-us/graph/api/resources/logontypeenumtype?view=graph-rest-beta), [processIntegrityLevel](https://learn.microsoft.com/en-us/graph/api/resources/processintegritylevelenumtype?view=graph-rest-beta), [securityNetworkProtocol](https://learn.microsoft.com/en-us/graph/api/resources/securitynetworkprotocolenumtype?view=graph-rest-beta), [userAccountSecurityType](https://learn.microsoft.com/en-us/graph/api/resources/useraccountsecuritytypeenumtype?view=graph-rest-beta), ",
+          "Description": "Added new enum types: **alertFeedback**, **alertStatus**, **alertType**, **applicationPermissionsRequired**, **logonType**, **processIntegrityLevel**, **securityNetworkProtocol**, **userAccountSecurityType**, ",
           "Target": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType"
         }
       ],
@@ -421,7 +421,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API",
           "ChangeType": "Addition",
-          "Description": "Added the [security API](https://learn.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations: [alert](https://learn.microsoft.com/en-us/graph/api/resources/alert?view=graph-rest-beta) (and related entities), [Get alert](https://learn.microsoft.com/en-us/graph/api/alert-get?view=graph-rest-beta), [List alerts](https://learn.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-beta), [Update alert](https://learn.microsoft.com/en-us/graph/api/alert-update?view=graph-rest-beta). Added the following supporting documentation: [Errors](https://learn.microsoft.com/en-us/graph/api/resources/security-error-codes?view=graph-rest-beta), [Security solution integrations using the Microsoft Graph Security API](security-integration.md)",
+          "Description": "Added the [security API](https://learn.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations: [alert](https://learn.microsoft.com/en-us/graph/api/resources/alert?view=graph-rest-beta) (and related entities), [Get alert](https://learn.microsoft.com/en-us/graph/api/alert-get?view=graph-rest-beta), [List alerts](https://learn.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-beta), [Update alert](https://learn.microsoft.com/en-us/graph/api/alert-update?view=graph-rest-beta). Added the following supporting documentation: [Errors](https://learn.microsoft.com/en-us/graph/api/resources/security-error-codes?view=graph-rest-beta), [Security solution integrations using the Microsoft Graph Security API](https://learn.microsoft.com/en-us/graph/security-integration)",
           "Target": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API"
         }
       ],

@@ -3,7 +3,7 @@ title: "cloudPcReports: getConnectionQualityReports"
 description: "Get the overall connection quality reports for all devices within a current tenant during a given time period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ POST /deviceManagement/virtualEndpoint/reports/getConnectionQualityReports
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 |filter|String|OData `$filter` syntax. Supported filters include: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
 |groupBy|String collection|Specify how to group the reports. If used, must have the same contents as the **select** parameter.|
 |orderBy|String collection|Specify how to sort the reports.|
-|search|String|Specifies a String to search|
+|search|String|Specifies a String to search.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. |
 |skip|Int32|Number of records to skip.|
 |top|Int32|The number of top records to return.|
@@ -65,7 +65,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

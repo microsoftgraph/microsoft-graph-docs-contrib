@@ -2,6 +2,7 @@
 title: "permissionsCreepIndex resource type"
 description: "Assigns a score based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

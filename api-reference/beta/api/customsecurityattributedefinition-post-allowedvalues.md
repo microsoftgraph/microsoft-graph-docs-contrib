@@ -3,7 +3,7 @@ title: "Create allowedValue"
 description: "Create a new allowedValue object."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefin
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -121,7 +121,7 @@ Content-Type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

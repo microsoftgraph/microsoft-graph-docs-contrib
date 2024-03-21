@@ -3,7 +3,7 @@ title: "Remove accessPackage from incompatibleAccessPackages"
 description: "Remove a link that indicates an access package is incompatible with a specified access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -34,7 +34,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibl
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body

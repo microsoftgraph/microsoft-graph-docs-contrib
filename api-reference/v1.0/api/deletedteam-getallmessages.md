@@ -3,7 +3,7 @@ title: "deletedTeam: getAllMessages"
 description: "Retrieve all messages across channels in a deleted team."
 author: agnesliu
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Optional query parameters
 
@@ -62,7 +62,7 @@ If successful, this function returns a `200 OK` response code and a [chatMessage
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

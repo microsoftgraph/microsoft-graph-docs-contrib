@@ -3,7 +3,7 @@ title: "organizationalBranding resource type"
 description: "Contains details of the organization's branding."
 author: "quievey"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -52,7 +52,7 @@ You can't change your original configuration's language. However, companies can 
 | favicon | Stream | A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | faviconRelativeUrl | String | A relative url for the favicon above that is combined with a CDN base URL from the **cdnList** to provide the version served by a CDN. Read-only. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | headerBackgroundColor | String | The RGB color to apply to customize the color of the header. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
-| headerLogo | Stream | A company logo that appears in the header of the sign-in page. The allowed types are PNG or JPEG not larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
+| headerLogo | Stream | A company logo that appears in the header of the sign-in page. The allowed types are PNG or JPEG not larger than 245 x 36 pixels. We recommend using a transparent image with no padding around the logo. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | headerLogoRelativeUrl | String | A relative URL for the **headerLogo** property that is combined with a CDN base URL from the **cdnList** to provide the read-only version served by a CDN. Read-only. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | id | String | An identifier that represents the locale specified using culture names. Culture names follow the RFC 1766 standard in the format "languagecode2-country/regioncode2", where "languagecode2" is a lowercase two-letter code derived from ISO 639-1 and "country/regioncode2" is an uppercase two-letter code derived from ISO 3166. For example, U.S. English is `en-US`. The **id** for the default /branding is always the String types `0` or `default`. Read-only. <br/><br/>**NOTE:** Multiple branding for a single locale are currently not supported. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
 | loginPageLayoutConfiguration | [loginPageLayoutConfiguration](loginPageLayoutConfiguration.md) | Represents the layout configuration to be displayed on the login page for a tenant. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |

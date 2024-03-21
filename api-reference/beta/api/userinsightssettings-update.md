@@ -3,7 +3,7 @@ title: "Update userInsightsSettings"
 description: "Update the properties of a userInsightsSettings object."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 
@@ -38,7 +38,7 @@ PATCH /users/{userId}/settings/itemInsights
 
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body

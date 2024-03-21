@@ -3,7 +3,7 @@ title: "cloudPcProvisioningPolicy: assign"
 description: "Assign the Cloud PC provisioning policy to your group."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

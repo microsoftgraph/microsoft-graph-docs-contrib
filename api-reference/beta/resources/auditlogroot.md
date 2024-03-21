@@ -3,7 +3,7 @@ title: "auditLogRoot resource type"
 description: "Contains different types of audit logs. This resource returns a singleton auditLog resource. It doesn't contain any usable properties."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

@@ -2,6 +2,7 @@
 title: "privilegeEscalationAwsRoleFinding resource type"
 description: "AWS roles with privilege escalation."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List privilegeEscalationAwsRoleFindings](../api/privilegeescalationawsrolefinding-list.md)|[privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) collection|Get a list of the [privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) objects and their properties.|
+|[List privilegeEscalationAwsRoleFinding objects](../api/privilegeescalationawsrolefinding-list.md)|[privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) collection|Get a list of the [privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) objects and their properties.|
 |[Get privilegeEscalationAwsRoleFinding](../api/privilegeescalationawsrolefinding-get.md)|[privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md)|Read the properties and relationships of a [privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) object.|
 
 ## Properties

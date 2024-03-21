@@ -3,7 +3,7 @@ title: "Get audioRoutingGroup"
 description: "Retrieve the properties and relationships of an audioRoutingGroup object."
 author: "hanknguyen"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

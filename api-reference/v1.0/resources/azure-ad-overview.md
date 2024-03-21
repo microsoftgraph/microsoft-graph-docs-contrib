@@ -3,7 +3,7 @@ title: "Working with Microsoft Entra resources in Microsoft Graph"
 description: "With Microsoft Graph, you can access Microsoft Entra resources to enable scenarios like managing administrator (directory) roles, inviting external users to an organization, and, if you are a Cloud Solution Provider (CSP), managing your customer's data. Microsoft Graph also provides methods that apps can use to, for example, discover information about users' transitive group and role memberships. "
 ms.localizationpriority: high
 author: "dkershaw10"
-ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 doc_type: conceptualPageType
 ms.date: 07/07/2022
 ---
@@ -46,9 +46,6 @@ The following table lists some common use cases for Microsoft Entra resources.
 | Manage branding for the sign-in experience of an organization. | [organizationalbranding](../resources/organizationalbranding.md) | [Add branding to your organization's Microsoft Entra sign-in page](/azure/active-directory/fundamentals/customize-branding)|
 | **Consent requests** | | |
 | Manage the consent request workflow for users attempting to access apps that require admin authorization.  | [Consent requests API](../resources/consentrequests-overview.md) |[Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 Directory resources and APIs can open up new ways for you to engage with users and manage their experiences with Microsoft Graph. To learn more:

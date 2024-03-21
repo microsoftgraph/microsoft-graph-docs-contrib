@@ -3,7 +3,7 @@ title: "participant: mute"
 description: "Mute a specific participant in the call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.|
 
 ## Request body

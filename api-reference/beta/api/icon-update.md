@@ -4,7 +4,7 @@ description: "Update the properties of icon object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 ---
 
 # Update icon
@@ -31,7 +31,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
@@ -46,7 +46,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `200 OK` response code and an updated [workbookIcon](../resources/workbookicon.md) object in the response body.
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_icon"

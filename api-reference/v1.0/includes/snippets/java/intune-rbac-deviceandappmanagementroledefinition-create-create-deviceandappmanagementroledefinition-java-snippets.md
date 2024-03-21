@@ -4,29 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceAndAppManagementRoleDefinition roleDefinition = new DeviceAndAppManagementRoleDefinition();
-roleDefinition.displayName = "Display Name value";
-roleDefinition.description = "Description value";
-LinkedList<RolePermission> rolePermissionsList = new LinkedList<RolePermission>();
-RolePermission rolePermissions = new RolePermission();
-LinkedList<ResourceAction> resourceActionsList = new LinkedList<ResourceAction>();
-ResourceAction resourceActions = new ResourceAction();
-LinkedList<String> allowedResourceActionsList = new LinkedList<String>();
-allowedResourceActionsList.add("Allowed Resource Actions value");
-resourceActions.allowedResourceActions = allowedResourceActionsList;
-LinkedList<String> notAllowedResourceActionsList = new LinkedList<String>();
-notAllowedResourceActionsList.add("Not Allowed Resource Actions value");
-resourceActions.notAllowedResourceActions = notAllowedResourceActionsList;
-resourceActionsList.add(resourceActions);
-rolePermissions.resourceActions = resourceActionsList;
-rolePermissionsList.add(rolePermissions);
-roleDefinition.rolePermissions = rolePermissionsList;
-roleDefinition.isBuiltIn = true;
+roleDefinition.setOdataType("#microsoft.graph.deviceAndAppManagementRoleDefinition");
+roleDefinition.setDisplayName("Display Name value");
+roleDefinition.setDescription("Description value");
+LinkedList<RolePermission> rolePermissions = new LinkedList<RolePermission>();
+RolePermission rolePermission = new RolePermission();
+rolePermission.setOdataType("microsoft.graph.rolePermission");
+LinkedList<ResourceAction> resourceActions = new LinkedList<ResourceAction>();
+ResourceAction resourceAction = new ResourceAction();
+resourceAction.setOdataType("microsoft.graph.resourceAction");
+LinkedList<String> allowedResourceActions = new LinkedList<String>();
+allowedResourceActions.add("Allowed Resource Actions value");
+resourceAction.setAllowedResourceActions(allowedResourceActions);
+LinkedList<String> notAllowedResourceActions = new LinkedList<String>();
+notAllowedResourceActions.add("Not Allowed Resource Actions value");
+resourceAction.setNotAllowedResourceActions(notAllowedResourceActions);
+resourceActions.add(resourceAction);
+rolePermission.setResourceActions(resourceActions);
+rolePermissions.add(rolePermission);
+roleDefinition.setRolePermissions(rolePermissions);
+roleDefinition.setIsBuiltIn(true);
+RoleDefinition result = graphClient.deviceManagement().roleDefinitions().post(roleDefinition);
 
-graphClient.deviceManagement().roleDefinitions()
-	.buildRequest()
-	.post(roleDefinition);
 
 ```

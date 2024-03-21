@@ -4,39 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Alert> valueList = new LinkedList<Alert>();
-Alert value = new Alert();
-value.assignedTo = "String";
-value.closedDateTime = OffsetDateTimeSerializer.deserialize("String (timestamp)");
-LinkedList<String> commentsList = new LinkedList<String>();
-commentsList.add("String");
-value.comments = commentsList;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.security.alerts.updatealerts.UpdateAlertsPostRequestBody updateAlertsPostRequestBody = new com.microsoft.graph.beta.security.alerts.updatealerts.UpdateAlertsPostRequestBody();
+LinkedList<Alert> value = new LinkedList<Alert>();
+Alert alert = new Alert();
+alert.setAssignedTo("String");
+OffsetDateTime closedDateTime = OffsetDateTime.parse("String (timestamp)");
+alert.setClosedDateTime(closedDateTime);
+LinkedList<String> comments = new LinkedList<String>();
+comments.add("String");
+alert.setComments(comments);
 AlertFeedback feedback = new AlertFeedback();
-value.feedback = feedback;
-value.id = "String (identifier)";
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("@odata.type", "microsoft.graph.alertFeedback");
+feedback.setAdditionalData(additionalData);
+alert.setFeedback(feedback);
+alert.setId("String (identifier)");
 AlertStatus status = new AlertStatus();
-value.status = status;
-LinkedList<String> tagsList = new LinkedList<String>();
-tagsList.add("String");
-value.tags = tagsList;
+HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
+additionalData1.put("@odata.type", "microsoft.graph.alertStatus");
+status.setAdditionalData(additionalData1);
+alert.setStatus(status);
+LinkedList<String> tags = new LinkedList<String>();
+tags.add("String");
+alert.setTags(tags);
 SecurityVendorInformation vendorInformation = new SecurityVendorInformation();
-vendorInformation.provider = "String";
-vendorInformation.vendor = "String";
-value.vendorInformation = vendorInformation;
+vendorInformation.setProvider("String");
+vendorInformation.setVendor("String");
+alert.setVendorInformation(vendorInformation);
+value.add(alert);
+updateAlertsPostRequestBody.setValue(value);
+var result = graphClient.security().alerts().updateAlerts().post(updateAlertsPostRequestBody);
 
-valueList.add(value);
-AlertCollectionResponse alertCollectionResponse = new AlertCollectionResponse();
-alertCollectionResponse.value = valueList;
-AlertCollectionPage alertCollectionPage = new AlertCollectionPage(alertCollectionResponse, null);
-
-graphClient.security().alerts()
-	.updateAlerts(AlertUpdateAlertsParameterSet
-		.newBuilder()
-		.withValue(valueList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

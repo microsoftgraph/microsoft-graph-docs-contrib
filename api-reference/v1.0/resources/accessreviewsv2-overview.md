@@ -1,17 +1,17 @@
 ---
-title: "Microsoft Entra access reviews"
+title: "MOverview of access reviews APIs"
 description: "Use Microsoft Entra access reviews to configure one-time or recurring access reviews for attestation of a principal's access rights to Microsoft Entra resources."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ---
 
-# Microsoft Entra access reviews
+# Overview of access reviews APIs
 
 Namespace: microsoft.graph
 
-Use Microsoft Entra access reviews to configure one-time or recurring access reviews for attestation of a principal's right to access Microsoft Entra resources. The principals are users or applications (service principals). The Microsoft Entra resources include groups, applications (service principals), access packages, and privileged roles. Access reviews is a feature of Microsoft Entra ID Governance.
+Use [Microsoft Entra access reviews](/entra/id-governance/access-reviews-overview) to configure one-time or recurring access reviews for attestation of a principal's right to access Microsoft Entra resources. The principals are users or applications (service principals). The Microsoft Entra resources include groups, applications (service principals), access packages, and privileged roles. Access reviews is a feature of Microsoft Entra ID Governance.
 
 Typical customer scenarios for access reviews include:
 
@@ -27,7 +27,7 @@ The tenant where an access review is being created or managed via the API must h
 
 The following table lists the methods that you can use to interact with access review-related resources.
 
-| Method		   | Return type	|Description|
+| Method           | Return type    |Description|
 |:---------------|:--------|:----------|
 |**Schedule definitions**| | |
 |[List definitions](../api/accessreviewset-list-definitions.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) collection|Get a list of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects and their properties.|
@@ -60,7 +60,7 @@ The following table lists the methods that you can use to interact with access r
 
 ## Role and application permission authorization checks
 
-The following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to manage access reviews.
+The following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to manage access reviews.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
@@ -69,10 +69,6 @@ The following [Microsoft Entra roles](/azure/active-directory/roles/permissions-
 
 In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
 
-## See also
+## Related content
 
-
-- [Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)
-- [Tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Microsoft Entra resources
-- [How an administrator can manage user access with Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [How an administrator can manage guest access with Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [Walk through guided tutorials](/graph/tutorial-accessreviews-securitygroup) to learn how to use the access reviews API to review access to Microsoft Entra resources.

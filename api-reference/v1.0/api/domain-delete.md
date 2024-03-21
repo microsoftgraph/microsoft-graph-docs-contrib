@@ -3,7 +3,7 @@ title: "Delete domain"
 description: "Deletes a domain from a tenant."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,6 @@ The work or school account needs to belong to one of the following roles:
 
 * Global Administrator
 * Domain Name Administrator
-* Partner Tier2 Support
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +44,7 @@ DELETE /domains/{id}
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body

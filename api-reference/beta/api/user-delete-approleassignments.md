@@ -39,7 +39,7 @@ DELETE /users/{id}/appRoleAssignments/{id}
 
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here is an example of the request to delete an app role assignment.
+The following example shows a request to delete an app role assignment.
 
 
 # [HTTP](#tab/http)
@@ -102,7 +102,7 @@ DELETE https://graph.microsoft.com/beta/users/{id}/appRoleAssignments/{id}
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -37,7 +37,7 @@ PATCH /admin/windows/updates/deployments/{deploymentId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -61,7 +61,7 @@ In this example, the deployment is paused by updating the **requestedValue** of 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -163,7 +163,7 @@ In this example, the **settings** property of the deployment is updated to add a
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -2,6 +2,7 @@
 title: "overprovisionedAwsResourceFinding resource type"
 description: "Represents over-provisioned AWS resources."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -21,7 +22,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List overprovisionedAwsResourceFindings](../api/overprovisionedawsresourcefinding-list.md)|[overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md) collection|Get a list of the [overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md) objects and their properties.|
+|[List overprovisionedAwsResourceFinding objects](../api/overprovisionedawsresourcefinding-list.md)|[overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md) collection|Get a list of the [overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md) objects and their properties.|
 |[Get overprovisionedAwsResourceFinding](../api/overprovisionedawsresourcefinding-get.md)|[overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md)|Read the properties and relationships of an [overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md) object.|
 
 ## Properties

@@ -48,8 +48,8 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "azure_docs",
-      "url": "https://github.com/MicrosoftDocs/azure-docs/",
+      "path_to_root": "entra_docs",
+      "url": "https://github.com/MicrosoftDocs/entra-docs/",
       "branch": "main",
       "branch_mapping": {}
     },
@@ -68,6 +68,12 @@
     {
       "path_to_root": "concepts/sdks/snippets/java",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-java",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "concepts/sdks/snippets/php",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-php",
       "branch": "main",
       "branch_mapping": {}
     },

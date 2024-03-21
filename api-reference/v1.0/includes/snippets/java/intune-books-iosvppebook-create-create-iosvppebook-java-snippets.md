@@ -4,32 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IosVppEBook managedEBook = new IosVppEBook();
-managedEBook.displayName = "Display Name value";
-managedEBook.description = "Description value";
-managedEBook.publisher = "Publisher value";
-managedEBook.publishedDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:58:16.1180489+00:00");
+managedEBook.setOdataType("#microsoft.graph.iosVppEBook");
+managedEBook.setDisplayName("Display Name value");
+managedEBook.setDescription("Description value");
+managedEBook.setPublisher("Publisher value");
+OffsetDateTime publishedDateTime = OffsetDateTime.parse("2016-12-31T23:58:16.1180489-08:00");
+managedEBook.setPublishedDateTime(publishedDateTime);
 MimeContent largeCover = new MimeContent();
-largeCover.type = "Type value";
-largeCover.value = Base64.getDecoder().decode("dmFsdWU=");
-managedEBook.largeCover = largeCover;
-managedEBook.informationUrl = "https://example.com/informationUrl/";
-managedEBook.privacyInformationUrl = "https://example.com/privacyInformationUrl/";
-managedEBook.vppTokenId = UUID.fromString("9148ac60-ac60-9148-60ac-489160ac4891");
-managedEBook.appleId = "Apple Id value";
-managedEBook.vppOrganizationName = "Vpp Organization Name value";
-LinkedList<String> genresList = new LinkedList<String>();
-genresList.add("Genres value");
-managedEBook.genres = genresList;
-managedEBook.language = "Language value";
-managedEBook.seller = "Seller value";
-managedEBook.totalLicenseCount = 1;
-managedEBook.usedLicenseCount = 0;
+largeCover.setOdataType("microsoft.graph.mimeContent");
+largeCover.setType("Type value");
+byte[] value = Base64.getDecoder().decode("dmFsdWU=");
+largeCover.setValue(value);
+managedEBook.setLargeCover(largeCover);
+managedEBook.setInformationUrl("https://example.com/informationUrl/");
+managedEBook.setPrivacyInformationUrl("https://example.com/privacyInformationUrl/");
+managedEBook.setVppTokenId(UUID.fromString("9148ac60-ac60-9148-60ac-489160ac4891"));
+managedEBook.setAppleId("Apple Id value");
+managedEBook.setVppOrganizationName("Vpp Organization Name value");
+LinkedList<String> genres = new LinkedList<String>();
+genres.add("Genres value");
+managedEBook.setGenres(genres);
+managedEBook.setLanguage("Language value");
+managedEBook.setSeller("Seller value");
+managedEBook.setTotalLicenseCount(1);
+managedEBook.setUsedLicenseCount(0);
+ManagedEBook result = graphClient.deviceAppManagement().managedEBooks().post(managedEBook);
 
-graphClient.deviceAppManagement().managedEBooks()
-	.buildRequest()
-	.post(managedEBook);
 
 ```

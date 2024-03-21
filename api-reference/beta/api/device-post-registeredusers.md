@@ -3,7 +3,7 @@ title: "Create registeredUser"
 description: "Add a registered user for the device."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "device_post_registeredusers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/device-post-registeredusers-permissions.md)]
 
-The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json): *Global Administrator*, *Intune Administrator*, or *Windows 365 Administrator*.
+The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json): *Global Administrator*, *Intune Administrator*, or *Windows 365 Administrator*.
 
 ## HTTP request
 
@@ -37,7 +37,7 @@ POST /devices(deviceId='{deviceId}')/registeredUsers/$ref
 ## Request headers
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +100,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

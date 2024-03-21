@@ -3,7 +3,7 @@ title: "call: answer"
 description: "Answer an incoming call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ POST /communications/calls/{id}/answer
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required. |
 
 ## Request body
@@ -123,7 +123,7 @@ Content-Length: 211
 ---
 
 #### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response"
@@ -369,7 +369,7 @@ Content-Type: application/json
   "name": "call-answer-app-hosted-media"
 }-->
 ```http
-POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
+POST https://graph.microsoft.com/beta/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
 Content-Type: application/json
 
 {

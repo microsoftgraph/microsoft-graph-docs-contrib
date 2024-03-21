@@ -3,7 +3,7 @@ title: "serviceProvisioningError resource type"
 description: "Represents an abstract base type for service provisioning errors."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "PaulEkirapa"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for service provisioning errors that are information published by a federated service describing a nontransient, service-specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) entities regarding the properties or link from an object that requires an explicit administrator action to resolve.
+An abstract base type that represents information published by a federated service that describes a nontransient, service specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) that requires an explicit administrator action to resolve.
 
 Base type of [serviceProvisioningXmlError](../resources/serviceprovisioningxmlerror.md).
 

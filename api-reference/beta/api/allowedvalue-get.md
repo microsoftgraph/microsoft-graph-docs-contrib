@@ -3,7 +3,7 @@ title: "Get allowedValue"
 description: "Read the properties and relationships of an allowedValue object."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "allowedvalue_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/allowedvalue-get-permissions.md)]
 
-The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+The signed-in user must also be assigned one of the following [directory roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 + Attribute Definition Reader
 + Attribute Definition Administrator
@@ -49,7 +49,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

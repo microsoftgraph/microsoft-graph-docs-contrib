@@ -23,7 +23,7 @@ tag := graphmodelsediscovery.NewTag()
 id := "b4798d14-748d-468e-a1ec-96a2b1d49677"
 tag.SetId(&id) 
 
-tagsToAdd := []graphmodelsediscovery.tagable {
+tagsToAdd := []graphmodelsediscovery.Tagable {
 	tag,
 }
 requestBody.SetTagsToAdd(tagsToAdd)

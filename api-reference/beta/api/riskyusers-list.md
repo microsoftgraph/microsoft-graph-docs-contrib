@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a collection of **ris
 ms.localizationpriority: medium
 author: "tracyshi"
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 # List riskyUsers
 
@@ -33,12 +33,12 @@ GET /riskyUsers
 GET /identityProtection/riskyUsers
 ```
 ## Optional query parameters
-This method supports `$filter` to customize the query response. See the example later in this topic. 
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to customize the query response. The maximum page size with `$top` is 500 objects.
 
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 ### Example 1: List risky users
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/riskyUsers
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -173,7 +173,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers?$filter=riskL
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

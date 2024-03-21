@@ -3,7 +3,7 @@ title: "Update cloudPcExternalPartnerSetting"
 description: "Update the properties of a cloudPcExternalPartnerSetting object."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ PATCH /deviceManagement/virtualEndpoint/externalPartnerSettings/{cloudPcExternal
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

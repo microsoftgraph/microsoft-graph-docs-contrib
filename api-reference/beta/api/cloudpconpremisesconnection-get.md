@@ -3,7 +3,7 @@ title: "Get cloudPcOnPremisesConnection"
 description: "Read the properties and relationships of the cloudPcOnPremisesConnection object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -39,13 +39,13 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## Optional query parameters
 
-This method supports `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcOnPrem
 
 #### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,7 +110,9 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,6 +129,7 @@ Content-Type: application/json
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
     "managedBy": "windows365",
     "type": "hybridAzureADJoin",
+    "connectionType": "hybridAzureADJoin",
     "displayName": "Display Name value",
     "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
     "subscriptionName": "Subscription Name value",
@@ -144,6 +148,7 @@ Content-Type: application/json
 
 #### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -153,7 +158,7 @@ Content-Type: application/json
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,healthCheckStatus,healthCheckStatusDetails,inUse
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,healthCheckStatus,healthCheckStatusDetail,healthCheckStatusDetails,inUse
 ```
 
 # [C#](#tab/csharp)
@@ -192,7 +197,9 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -210,7 +217,64 @@ Content-Type: application/json
     "managedBy": "windows365",
     "displayName": "Display Name value",
     "healthCheckStatus": "failed",
+    "type": "hybridAzureADJoin",
+    "connectionType": "hybridAzureADJoin",
     "healthCheckStatusDetails": {
+      "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
+      "startDateTime": "2020-11-03T12:43:14Z",
+      "endDateTime": "2020-11-03T12:43:32Z",
+      "healthChecks": [
+        {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+          "status": "failed",
+          "displayName": "Display Name value",
+          "startDateTime": "2020-11-03T12:43:14Z",
+          "endDateTime": "2020-11-03T12:43:15Z",
+          "errorType": "dnsCheckFqdnNotFound",
+          "recommendedAction": "We did not find the provided domain name; please re-enter",
+          "additionalDetail": null,
+          "additionalDetails": null,
+          "correlationId": "992e64f0-231c-46b0-8918-c5aed0585f53"
+        },
+        {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+          "status": "passed",
+          "displayName": "Display Name value",
+          "startDateTime": "2020-11-03T12:43:15Z",
+          "endDateTime": "2020-11-03T12:43:26Z",
+          "errorType": null,
+          "recommendedAction": null,
+          "additionalDetail": null,
+          "additionalDetails": null,
+          "correlationId": null
+        },
+        {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+          "status": "failed",
+          "displayName": "Display Name value",
+          "startDateTime": "2020-11-03T12:43:27Z",
+          "endDateTime": "2020-11-03T12:43:32Z",
+          "errorType": "endpointConnectivityCheckUrlNotWhitelisted",
+          "recommendedAction": "Recommended Action value",
+          "additionalDetail": "Additional Details value",
+          "additionalDetails": "Additional Details value",
+          "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
+        },
+        {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+          "status": "passed",
+          "displayName": "Display Name value",
+          "startDateTime": null,
+          "endDateTime": null,
+          "errorType": null,
+          "recommendedAction": null,
+          "additionalDetail": null,
+          "additionalDetails": null,
+          "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
+        }
+      ]
+    },
+    "healthCheckStatusDetail": {
       "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
       "startDateTime": "2020-11-03T12:43:14Z",
       "endDateTime": "2020-11-03T12:43:32Z",
@@ -223,7 +287,8 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:15Z",
           "errorType": "dnsCheckFqdnNotFound",
           "recommendedAction": "We did not find the provided domain name; please re-enter",
-          "additionalDdetails": null,
+          "additionalDetail": null,
+          "additionalDetails": null,
           "correlationId": "992e64f0-231c-46b0-8918-c5aed0585f53"
         },
         {
@@ -234,6 +299,7 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:26Z",
           "errorType": null,
           "recommendedAction": null,
+          "additionalDetail": null,
           "additionalDetails": null,
           "correlationId": null
         },
@@ -245,7 +311,8 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:32Z",
           "errorType": "endpointConnectivityCheckUrlNotWhitelisted",
           "recommendedAction": "Recommended Action value",
-          "additionaldDetails": "Additional Details value",
+          "additionalDetail": "Additional Details value",
+          "additionalDetails": null,
           "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
         },
         {
@@ -256,7 +323,8 @@ Content-Type: application/json
           "endDateTime": null,
           "errorType": null,
           "recommendedAction": null,
-          "additionaldDetails": null,
+          "additionalDetail": null,
+          "additionalDetails": null,
           "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
         }
       ]

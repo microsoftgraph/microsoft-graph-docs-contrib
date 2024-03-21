@@ -2,6 +2,7 @@
 title: "permissionsCreepIndexDistribution resource type"
 description: "Represents the Permissions Creep Index Distribution for the authorization system. PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets: low, medium, high."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

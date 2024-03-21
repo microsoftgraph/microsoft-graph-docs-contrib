@@ -3,11 +3,12 @@ title: "Get bookmark"
 description: "Read the properties and relationships of a bookmark object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
 # Get bookmark
+
 Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -17,6 +18,7 @@ Read the properties and relationships of a [bookmark](../resources/search-bookma
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "search_bookmark_get" } -->
@@ -33,23 +35,28 @@ GET /search/bookmarks/{bookmarksId}
 ```
 
 ## Optional query parameters
-This method supports the `select`, `expand`, `filter`, `orderBy`, `maxTop`, and `count` [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `select`, `expand`, `filter`, `orderBy`, `maxTop`, and `count` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [bookmark](../resources/search-bookmark.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.search.bookmark](../resources/search-bookmark.md) object in the response body.
 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -58,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [bookmark](../
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/search/bookmarks/{bookmarksId}
+GET https://graph.microsoft.com/beta/search/bookmarks/733b26d5-af76-4eea-ac69-1a0ce8716897
 ```
 
 # [C#](#tab/csharp)
@@ -96,6 +103,9 @@ GET https://graph.microsoft.com/beta/search/bookmarks/{bookmarksId}
 ---
 
 ### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -136,4 +146,3 @@ Content-Type: application/json
   "isSuggested": false
 }
 ```
-

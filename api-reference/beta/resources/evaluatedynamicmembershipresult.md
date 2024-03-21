@@ -2,8 +2,9 @@
 title: "evaluateDynamicMembershipResult resource type"
 description: "Represents the result of membership evaluation."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: "resourcePageType"
 ---
 

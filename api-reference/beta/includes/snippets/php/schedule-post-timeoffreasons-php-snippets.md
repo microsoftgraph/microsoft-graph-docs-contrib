@@ -6,11 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TimeOffReason();
 $requestBody->setDisplayName('Vacation');
+$requestBody->setCode('VacationCode');
 $requestBody->setIconType(new TimeOffReasonIconType('plane'));
 $requestBody->setIsActive(true);
 

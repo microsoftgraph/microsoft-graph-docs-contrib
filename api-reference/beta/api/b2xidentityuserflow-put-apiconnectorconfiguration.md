@@ -3,7 +3,7 @@ title: "Configure an API connector in a user flow"
 description: "Enable or disable an API connector to a specific step in a user flow by updating the apiConnectorConfiguration property."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ PUT /identity/b2xUserFlows/{b2xUserFlowId}/apiConnectorConfiguration/{step}/$ref
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +116,7 @@ Content-Type: application/json
 
 #### Response 
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -131,7 +131,7 @@ HTTP/1.1 204 No Content
 
 #### Request 
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -187,7 +187,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -202,7 +202,7 @@ HTTP/1.1 204 No Content
 
 #### Request 
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -256,7 +256,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

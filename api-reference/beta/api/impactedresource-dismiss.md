@@ -3,7 +3,7 @@ title: "impactedResource: dismiss"
 description: "Dismiss a recommendationResource object and update its status to dismissed."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /directory/recommendations/{recommendationId}/impactedResources/{impactedRe
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -58,7 +58,7 @@ If successful, this action returns a `200 OK` response code and a [impactedResou
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

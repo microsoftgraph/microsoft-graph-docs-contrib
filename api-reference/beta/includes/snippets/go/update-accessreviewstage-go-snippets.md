@@ -24,7 +24,7 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-reviewers := []graphmodels.accessReviewReviewerScopeable {
+reviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
 }
 requestBody.SetReviewers(reviewers)
@@ -41,7 +41,7 @@ accessReviewReviewerScope1.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope1.SetQueryType(&queryType) 
 
-fallbackReviewers := []graphmodels.accessReviewReviewerScopeable {
+fallbackReviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
 	accessReviewReviewerScope1,
 }

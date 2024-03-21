@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Contact contact = new Contact();
-contact.givenName = "Pavel";
-contact.surname = "Bansky";
-LinkedList<EmailAddress> emailAddressesList = new LinkedList<EmailAddress>();
-EmailAddress emailAddresses = new EmailAddress();
-emailAddresses.address = "pavelb@fabrikam.onmicrosoft.com";
-emailAddresses.name = "Pavel Bansky";
-emailAddressesList.add(emailAddresses);
-contact.emailAddresses = emailAddressesList;
-LinkedList<String> businessPhonesList = new LinkedList<String>();
-businessPhonesList.add("+1 732 555 0102");
-contact.businessPhones = businessPhonesList;
+contact.setGivenName("Pavel");
+contact.setSurname("Bansky");
+LinkedList<EmailAddress> emailAddresses = new LinkedList<EmailAddress>();
+EmailAddress emailAddress = new EmailAddress();
+emailAddress.setAddress("pavelb@contoso.com");
+emailAddress.setName("Pavel Bansky");
+emailAddresses.add(emailAddress);
+contact.setEmailAddresses(emailAddresses);
+LinkedList<String> businessPhones = new LinkedList<String>();
+businessPhones.add("+1 732 555 0102");
+contact.setBusinessPhones(businessPhones);
+Contact result = graphClient.me().contacts().post(contact);
 
-graphClient.me().contacts()
-	.buildRequest()
-	.post(contact);
 
 ```

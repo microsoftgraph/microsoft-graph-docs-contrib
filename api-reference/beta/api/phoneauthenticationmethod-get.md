@@ -4,7 +4,7 @@ description: "Retrieve a single phoneAuthenticationMethod object."
 ms.localizationpriority: medium
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object. This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -70,7 +70,7 @@ This method does not support optional query parameters to customize the response
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

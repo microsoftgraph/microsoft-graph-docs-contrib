@@ -4,7 +4,7 @@ title: "site: getApplicableContentTypesForList"
 description: "Get site content types that can be added to a list."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # site: getApplicableContentTypesForList
@@ -46,7 +46,7 @@ To list only custom content types, use `$filter=isBuiltin eq false`.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -3,7 +3,7 @@ title: "idleSessionSignOut resource type"
 description: "Represents the idle session sign-out policy settings for SharePoint."
 author: "lfernandez"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: resourcePageType
 ---
 

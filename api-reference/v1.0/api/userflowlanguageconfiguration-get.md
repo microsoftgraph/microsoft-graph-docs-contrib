@@ -3,7 +3,7 @@ title: "Get userFlowLanguageConfiguration"
 description: "Read the properties and relationships of a userFlowLanguageConfiguration object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Read the properties and relationships of a [userFlowLanguageConfiguration](../re
 
 **Note:** Language customization is enabled by default in [Microsoft Entra user flows](../resources/b2xidentityuserflow.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -44,7 +44,7 @@ GET identity/b2xUserFlows/{id}/languages/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

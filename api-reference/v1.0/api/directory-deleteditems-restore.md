@@ -3,7 +3,7 @@ title: "Restore deleted item (directory object)"
 description: "Restore a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Restore a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). If an item was accidentally deleted, you can fully restore the item. However, security groups cannot be restored.
+Restore a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). If an item was accidentally deleted, you can fully restore the item. However, security groups cannot be restored. Also, restoring an application doesn't restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
 
 A recently deleted item remains available for up to 30 days. After 30 days, the item is permanently deleted.
 
@@ -25,9 +25,9 @@ The following table shows the least privileged permission or permissions require
 |:-|:-|:-|:-|
 | [administrativeUnit](../resources/administrativeunit.md) | AdministrativeUnit.ReadWrite.All | Not supported. | AdministrativeUnit.ReadWrite.All |
 | [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
-| [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Not supported. |
+| [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
-| [user](../resources/user.md) | User.ReadWrite.All | Not supported. | Not supported. |
+| [user](../resources/user.md) | User.ReadWrite.All | Not supported. | User.ReadWrite.All |
 
 [!INCLUDE [rbac-deleted-items-restore-apis](../includes/rbac-for-apis/rbac-deleted-items-restore-apis.md)]
 
@@ -40,7 +40,7 @@ POST /directory/deletedItems/{id}/restore
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt; *Required*|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json |
 
 ## Request body

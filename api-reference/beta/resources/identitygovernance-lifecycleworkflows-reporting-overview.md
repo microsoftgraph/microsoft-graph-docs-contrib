@@ -3,7 +3,7 @@ title: "Lifecycle Workflow reporting API Overview"
 description: "You can use Lifecycle Workflows reporting features to gain insight into how lifecycle workflows were processed for users in your organization. Auditable logs are also available to track all events relating to Lifecycle Workflows in your tenant."
 ms.localizationpriority: medium
 author: "AlexFilipin"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 11/17/2022
 ---
@@ -39,14 +39,14 @@ Using this feature requires Microsoft Entra ID Governance licenses. To find the 
 
 ## Role and application permission authorization checks
 
-The following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to read reports in Lifecycle Workflows.
+The following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to read reports in Lifecycle Workflows.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
 | Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All |Global Reader or Lifecycle Workflows Administrator |
 | Create, Update or Delete | LifecycleWorkflows.ReadWrite.All | Lifecycle Workflows Administrator |
 
-## See also
+## Related content
 
 + [What are Lifecycle Workflows?](/azure/active-directory/governance/what-are-lifecycle-workflows)
 + [Overview of Lifecycle Workflows](identitygovernance-lifecycleworkflows-overview.md)

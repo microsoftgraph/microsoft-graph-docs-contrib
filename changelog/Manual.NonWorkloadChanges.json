@@ -651,7 +651,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "permission scopes that require administrator\u0027s consent,admin consent endpoint",
           "ChangeType": "Addition",
-          "Description": "The v2.0 auth endpoint now supports [permission scopes that require administrator\u0027s consent](permissions-reference.md), via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
+          "Description": "The v2.0 auth endpoint now supports [permission scopes that require administrator\u0027s consent](https://learn.microsoft.com/en-us/graph/permissions-reference), via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
           "Target": "permission scopes that require administrator\u0027s consent,admin consent endpoint"
         },
         {

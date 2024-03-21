@@ -3,7 +3,7 @@ title: "identityApiConnector: uploadClientCertificate"
 description: "Upload a PKCS 12 format key (PFX) to an API connectors authentication configuration."
 ms.localizationpriority: medium
 author: "nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration. The input is a base-64 encoded value of the PKCS 12 certificate contents. This method returns an [apiConnector](../resources/identityApiConnector.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -39,7 +39,7 @@ POST /identity/apiconnectors/{id}/uploadClientCertificate
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required. |
 
 ## Request body

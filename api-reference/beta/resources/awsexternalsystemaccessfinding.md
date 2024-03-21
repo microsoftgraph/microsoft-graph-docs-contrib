@@ -2,6 +2,7 @@
 title: "awsExternalSystemAccessFinding resource type"
 description: "Represents findings related to external accounts that are able to access a given AWS account."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsExternalSystemAccessFindings](../api/awsexternalsystemaccessfinding-list.md)|[awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) collection|Get a list of the [awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) objects and their properties.|
+|[List awsExternalSystemAccessFinding objects](../api/awsexternalsystemaccessfinding-list.md)|[awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) collection|Get a list of the [awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) objects and their properties.|
 |[Get awsExternalSystemAccessFinding](../api/awsexternalsystemaccessfinding-get.md)|[awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md)|Read the properties and relationships of an [awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) object.|
 
 ## Properties
@@ -39,7 +40,7 @@ Inherits from [finding](../resources/finding.md).
 |affectedSystem|[authorizationSystem](../resources/authorizationsystem.md)|The system that can be accessed from an external system. Supports `$orderby` (`affectedSystem/authorizationSystemName`) and `$filter` as follows: `$filter=affectedSystem/authorizationSystemId IN ['authorizationSystemIds']`|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

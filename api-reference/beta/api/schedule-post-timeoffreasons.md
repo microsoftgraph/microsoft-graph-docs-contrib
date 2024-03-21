@@ -1,9 +1,9 @@
 ---
 title: "Create timeOffReason"
 description: "Create a new timeOffReason."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ POST /teams/{teamId}/schedule/timeOffReasons
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
@@ -68,6 +68,7 @@ Content-type: application/json
 
 {
   "displayName": "Vacation",
+  "code": "VacationCode",
   "iconType": "plane",
   "isActive": true
 }
@@ -127,6 +128,7 @@ Content-type: application/json
   "createdDateTime": "2019-03-12T22:10:38.242Z",
   "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
   "displayName": "Vacation",
+  "code": "VacationCode",
   "iconType": "plane",
   "isActive": true,
   "lastModifiedBy": {

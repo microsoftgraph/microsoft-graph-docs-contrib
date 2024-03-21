@@ -3,7 +3,7 @@ title: "Delete appRoleAssignment"
 description: "Delete an appRoleAssignment from a service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -17,7 +17,7 @@ Deletes an [appRoleAssignment](../resources/approleassignment.md) that a service
 
 App roles that are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "serviceprincipal_delete_approleassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-delete-approleassignments-permissions.md)]
+
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
 
 ## HTTP request
 
@@ -41,7 +43,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -55,7 +57,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of the request to delete an app role assignment.
+The following example shows a request to delete an app role assignment.
 
 
 # [HTTP](#tab/http)
@@ -104,7 +106,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipal-id}/
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

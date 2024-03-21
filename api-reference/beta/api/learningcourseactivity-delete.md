@@ -3,7 +3,7 @@ title: "Delete learningCourseActivity"
 description: "Delete a learningCourseActivity object by using the course activity ID of either an assignment or a self-initiated activity."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ DELETE /employeeExperience/learningProviders/{registrationId}/learningCourseActi
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

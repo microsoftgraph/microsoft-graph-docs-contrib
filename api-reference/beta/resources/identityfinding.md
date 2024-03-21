@@ -2,6 +2,7 @@
 title: "identityFinding resource type"
 description: "Represents a finding related to an identity such as a user, role, or function in the authorization system."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

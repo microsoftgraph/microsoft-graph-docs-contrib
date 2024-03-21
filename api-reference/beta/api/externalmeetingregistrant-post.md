@@ -3,7 +3,7 @@ title: "Create externalMeetingRegistrant"
 description: "Enroll an external meeting registrant."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ POST /users/{userId}/onlineMeetings/{meetingId}/registration/registrants
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

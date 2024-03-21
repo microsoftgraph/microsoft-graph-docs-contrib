@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AccessPackageAssignmentCollectionPage accessPackageAssignments = graphClient.identityGovernance().entitlementManagement().accessPackageAssignments()
-	.buildRequest()
-	.filter("accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'")
-	.expand("target,accessPackageAssignmentResourceRoles")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AccessPackageAssignmentCollectionResponse result = graphClient.identityGovernance().entitlementManagement().accessPackageAssignments().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'";
+	requestConfiguration.queryParameters.expand = new String []{"target", "accessPackageAssignmentResourceRoles"};
+});
+
 
 ```

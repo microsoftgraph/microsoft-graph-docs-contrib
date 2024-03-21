@@ -3,7 +3,7 @@ title: "sensitivityLabel: extractContentLabel"
 description: "Retrieve the contentLabel using the metadata from a labeled object."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ POST /users/security/informationProtection/sensitivityLabels/extractContentLabel
 
 | Name          | Description                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required.                                                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | Content-type: application/json. Required.                                                                                                                                         |
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is `ApplicationName/Version`. Optional. |
 
@@ -137,6 +137,10 @@ User-agent: ContosoLOBApp/1.0
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sensitivitylabelthisextractcontentlabel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/sensitivitylabelthisextractcontentlabel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

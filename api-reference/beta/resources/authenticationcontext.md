@@ -3,7 +3,7 @@ title: "authenticationContext resource type"
 description: "Describes the conditional access authentication context of a sign-in event."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

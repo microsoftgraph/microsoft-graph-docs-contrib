@@ -3,7 +3,7 @@ title: "Get change notifications for chats using Microsoft Graph"
 description: "Learn how to get notifications for changes (create and update) for chats using Microsoft Graph APIs."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
@@ -18,7 +18,7 @@ Continue with this article about scenarios for the **chat** resource. Or, find o
 
 ## Subscribe to changes in any chat at tenant level
 
-To get change notifications for all changes (create and update) related to any chat in a tenant, subscribe to `/chats`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes (create and update) related to any chat in a tenant, subscribe to `/chats`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 ### Permissions
 
@@ -49,7 +49,7 @@ Content-Type: application/json
 ## Subscribe to changes in a particular chat
 
 
-To get change notifications for all changes related to a particular chat, subscribe to `/chats/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes related to a particular chat, subscribe to `/chats/{id}`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 ### Permissions
 
@@ -109,7 +109,7 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
 The decrypted notification payload looks like the following. The payload conforms to the [chats](/graph/api/resources/chat?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
@@ -152,7 +152,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ## Subscribe to changes in any chat in a tenant where a Teams app is installed
 
-To get change notifications for all changes related to any chat in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes related to any chat in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 [!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
@@ -204,9 +204,9 @@ The following payload describes the information sent in the request for notifica
 
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the chat details. GET calls always return the current state of the chat details. If the chat details were updated between when the notification is sent and when the chat details are retrieved, the operation returns the updated chat details.
 
-## See also
+## Related content
 
-- [Microsoft Graph change notifications](webhooks.md)
+- [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 - [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
 - [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)

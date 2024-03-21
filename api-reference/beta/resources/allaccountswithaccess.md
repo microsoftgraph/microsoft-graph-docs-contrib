@@ -2,6 +2,7 @@
 title: "allAccountsWithAccess resource type"
 description: "Contains information on all external AWS accounts that have access to a storage bucket."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -18,14 +19,13 @@ Contains information on external AWS accounts that have access to a storage buck
 Inherits from [accountsWithAccess](../resources/accountswithaccess.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.allAccountsWithAccess"

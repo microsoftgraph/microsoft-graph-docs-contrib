@@ -2,6 +2,7 @@
 title: "externallyAccessibleAzureBlobContainerFinding resource type"
 description: "Get insights into Azure blob containers that are accessible externally*"
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List externallyAccessibleAzureBlobContainerFindings](../api/externallyaccessibleazureblobcontainerfinding-list.md)|[externallyAccessibleAzureBlobContainerFinding](../resources/externallyaccessibleazureblobcontainerfinding.md) collection|Get a list of the [externallyAccessibleAzureBlobContainerFinding](../resources/externallyaccessibleazureblobcontainerfinding.md) objects and their properties.|
+|[List externallyAccessibleAzureBlobContainerFinding objects](../api/externallyaccessibleazureblobcontainerfinding-list.md)|[externallyAccessibleAzureBlobContainerFinding](../resources/externallyaccessibleazureblobcontainerfinding.md) collection|Get a list of the [externallyAccessibleAzureBlobContainerFinding](../resources/externallyaccessibleazureblobcontainerfinding.md) objects and their properties.|
 |[Get externallyAccessibleAzureBlobContainerFinding](../api/externallyaccessibleazureblobcontainerfinding-get.md)|[externallyAccessibleAzureBlobContainerFinding](../resources/externallyaccessibleazureblobcontainerfinding.md)|Read the properties and relationships of an [externallyAccessibleAzureBlobContainerFinding](../resources/externallyaccessibleazureblobcontainerfinding.md) object.|
 
 ## Properties

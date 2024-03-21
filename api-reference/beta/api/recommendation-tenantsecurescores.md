@@ -3,7 +3,7 @@ title: "recommendation: tenantSecureScores"
 description: "Get historical Secure Score data for your Microsoft Entra tenant."
 author: "sacsai"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -17,11 +17,7 @@ Get the historical Secure Score data for your Microsoft Entra tenant. This API r
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "recommendation-tenantsecurescores-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "recommendation_tenantsecurescores" } -->
 [!INCLUDE [permissions-table](../includes/permissions/recommendation-tenantsecurescores-permissions.md)]
 
 [!INCLUDE [rbac-directory-recommendations-apis-read](../includes/rbac-for-apis/rbac-directory-recommendations-apis-read.md)]
@@ -39,7 +35,7 @@ GET /directory/recommendations/tenantSecureScores
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

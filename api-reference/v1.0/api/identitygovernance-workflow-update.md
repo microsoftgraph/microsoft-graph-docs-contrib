@@ -3,7 +3,7 @@ title: "Update workflow"
 description: "Update the properties of a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object. Only the properties listed in the [request body](identitygovernance-workflow-update.md#request-body) table can be updated. To update any other workflow properties, see [workflow: createNewVersion](identitygovernance-workflow-createnewversion.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -38,7 +38,7 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -63,7 +63,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

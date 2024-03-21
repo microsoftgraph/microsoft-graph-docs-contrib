@@ -3,7 +3,7 @@ title: "impactedResource resource type"
 description: "Represents a Microsoft Entra resource in your tenant that's associated with a Microsoft Entra recommendation."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

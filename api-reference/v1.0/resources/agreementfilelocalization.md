@@ -3,7 +3,7 @@ title: "agreementFileLocalization resource type"
 description: "Represents a localized policy file of a terms-of-use agreement in Microsoft Entra."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: AlexFilipin
 ---
 

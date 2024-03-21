@@ -3,7 +3,7 @@ title: "Delete externalGroupMember"
 description: "Delete an externalGroupMember object."
 author: "snlraju-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ DELETE /external/connections/{connectionId}/groups/{externalGroupId}/members/{ex
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

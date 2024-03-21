@@ -3,7 +3,7 @@ title: "Add a member"
 description: "Use this API to add a member (user, group, or device) to an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
-To add a user, group, or device to an administrative unit, the calling user must be assigned the *Privileged Role Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+To add a user, group, or device to an administrative unit, the calling user must be assigned the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ### Permissions to create a new group
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
@@ -40,7 +40,7 @@ To add a user, group, or device to an administrative unit, the calling user must
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
 
-To create a new group in an administrative unit, the calling user must be assigned the *Privileged Role Administrator* or *Groups Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+To create a new group in an administrative unit, the calling user must be assigned the *Privileged Role Administrator* or *Groups Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -59,7 +59,7 @@ POST /administrativeUnits/{id}/members
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required. |
 
 ### Adding an existing user or group
@@ -147,7 +147,7 @@ In the request body, provide the `id` of the [user](../resources/user.md), [grou
 #### Response
 
 The following example shows the response.
- 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -261,7 +261,7 @@ Content-type: application/json
      "preferredDataLocation": "CAN",
      "preferredLanguage": null,
      "proxyAddresses": [
-         "SMTP:golfassist@contoso.onmicrosoft.com"
+         "SMTP:golfassist@contoso.com"
      ],
      "renewedDateTime": "2018-12-22T02:21:05Z",
      "resourceBehaviorOptions": [],

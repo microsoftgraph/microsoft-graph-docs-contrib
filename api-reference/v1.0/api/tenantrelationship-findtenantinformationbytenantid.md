@@ -3,7 +3,7 @@ title: "tenantRelationship: findTenantInformationByTenantId"
 description: "Given a tenant ID, search for a tenant and read its tenant information."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Given a tenant ID, search for a tenant and read its [tenantInformation](../resources/tenantInformation.md). You can use this API to validate tenant information and use the **tenantId** to [configure cross-tenant cross-tenant access settings between you and the tenant](../resources/crosstenantaccesspolicyconfigurationpartner.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -44,7 +44,7 @@ In the request URL, provide the following query parameters with values. The foll
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -118,6 +118,6 @@ Content-Type: application/json
     "tenantId": "6babcaad-604b-40ac-a9d7-9fd97c0b779f",
     "federationBrandName": null,
     "displayName": "Contoso, Ltd",
-    "defaultDomainName": "CONTOSO18839.onmicrosoft.com"
+    "defaultDomainName": "contoso.com"
 }
 ```

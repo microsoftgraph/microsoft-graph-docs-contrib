@@ -3,7 +3,7 @@ title: "externalUsersSelfServiceSignUpEventsFlow resource type"
 description: "Represents a self-service user flow for external identities within a Microsoft Entra workforce tenant or customer tenant."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -41,6 +41,7 @@ Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.m
 |[Delete listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|-->
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier for the entity. Read-only. Inherited from [entity](../resources/entity.md).|
@@ -49,16 +50,17 @@ Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.m
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Optional. The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |priority|Int32|Optional. The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke when an authentication flow is ready to be initiated. |
-|onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke when authentication methods are ready to be presented to the user. Must have at least one identity provider linked.|
 |onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke when attributes are ready to be collected from the user.|
+|onAttributeCollectionStart|[onAttributeCollectionStartHandler](../resources/onattributecollectionstarthandler.md)|The configuration for what to invoke when attribution collection has started.|
+|onAttributeCollectionSubmit|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|The configuration for what to invoke when attributes have been submitted at the end of attribution collection.|
+|onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke when authentication methods are ready to be presented to the user. Must have at least one identity provider linked.|
 |onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke during user creation.|
-
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -86,8 +88,15 @@ The following is a JSON representation of the resource.
   "onAttributeCollection": {
     "@odata.type": "microsoft.graph.onAttributeCollectionHandler"
   },
+  "onAttributeCollectionStart": {
+    "@odata.type": "microsoft.graph.onAttributeCollectionStartHandler"
+  },
+  "onAttributeCollectionSubmit": {
+    "@odata.type": "microsoft.graph.onAttributeCollectionSubmitHandler"
+  },
   "onUserCreateStart": {
     "@odata.type": "microsoft.graph.onUserCreateStartHandler"
   }
 }
 ```
+

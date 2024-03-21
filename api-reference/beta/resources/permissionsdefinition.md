@@ -2,6 +2,7 @@
 title: "permissionsDefinition resource type"
 description: "An abstract type that represents information about the permissions request, such as the authorization system, the identities making the request, and the actions that the identities need the permissions for."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

@@ -3,7 +3,7 @@ title: "Working with education APIs in Microsoft Graph"
 description: "The education APIs in Microsoft Graph enhance Microsoft 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments, and assignments. This makes it easy for you to build solutions that integrate with educational resources."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 
@@ -116,10 +116,6 @@ The school data sync management APIs support the following scenarios:
 - [Get an upload URL](../api/educationsynchronizationprofile-uploadurl.md)
 - [Get status of a sync](../api/educationsynchronizationprofilestatus-get.md)
 - [Get synchronization errors](../api/educationsynchronizationerrors-get.md)
-
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 
