@@ -75,7 +75,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.security.healthIssue)"
+  "@odata.type": "Collection(microsoft.graph.security.healthIssue)",
+  "name": "get_healthIssues"
 }
 -->
 ``` http
@@ -86,7 +87,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.healthIssue",
-      "id": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+      "ID": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
       "displayName": "Directory Services Object Auditing is not configured as required",
       "healthIssueType": "Global",
       "issueTypeId": "1031",

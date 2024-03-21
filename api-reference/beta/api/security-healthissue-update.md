@@ -62,11 +62,12 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 The following example shows a request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c"],
   "name": "update_healthissue"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/identities/healthIssues/{healthIssueId}
+PATCH https://graph.microsoft.com/beta/security/identities/healthIssues/b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c
 Content-Type: application/json
 
 {
@@ -81,7 +82,9 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "@odata.type": "microsoft.graph.security.healthIssue",
+  "truncated": true,
+  "name": "update_healthissue"
 }
 -->
 ``` http
@@ -90,7 +93,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.healthIssue",
-  "id": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+  "ID": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
   "displayName": "Directory Services Object Auditing is not configured as required",
   "healthIssueType": "Global",
   "issueTypeId": "1031",

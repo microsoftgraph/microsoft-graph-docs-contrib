@@ -60,11 +60,12 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following example shows a request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c"],
   "name": "get_security_healthissue"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/identities/healthIssues/{healthIssueId}
+GET https://graph.microsoft.com/beta/security/identities/healthIssues/b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c
 ```
 
 
@@ -75,7 +76,8 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.healthIssue"
+  "@odata.type": "microsoft.graph.security.healthIssue",
+  "name": "get_security_healthissue"
 }
 -->
 ``` http
@@ -84,7 +86,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.healthIssue",
-  "id": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+  "ID": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
   "displayName": "Directory Services Object Auditing is not configured as required",
   "healthIssueType": "Global",
   "issueTypeId": "1031",

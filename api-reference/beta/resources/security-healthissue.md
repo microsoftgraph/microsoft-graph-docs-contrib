@@ -72,7 +72,7 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "keyProperty": "ID",
   "@odata.type": "microsoft.graph.security.healthIssue",
   "baseType": "microsoft.graph.entity",
   "openType": false
@@ -81,7 +81,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.healthIssue",
-  "id": "String (identifier)",
+  "ID": "String (identifier)",
   "displayName": "String",
   "healthIssueType": "String",
   "issueTypeId": "String",
