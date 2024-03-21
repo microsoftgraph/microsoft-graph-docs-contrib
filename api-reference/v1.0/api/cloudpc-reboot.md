@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: reboot"
-description: "Reboot a specific Cloud PC object."
+description: "Reboot a specific cloudPC object."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
