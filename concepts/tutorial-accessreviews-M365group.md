@@ -1,23 +1,23 @@
 ---
 title: "Review guest access to groups using access reviews APIs"
-description: "Learn how to use the access reviews API to review guest user access to your organization's resources through Microsoft 365 groups in your Microsoft Entra tenant."
+description: "Learn how to use the access reviews API to review guest access to your organization's resources through Microsoft 365 groups in your Microsoft Entra tenant."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
-ms.date: 03/21/2024
+ms.date: 03/22/2024
 #Customer intent: As a developer integrating I want to use the access reviews APIs to review and attest to the access that principals have to resources in my organization, so that I can ensure proper security and compliance in my organization.
 ---
 
 # Review guest access to groups using access reviews APIs
 
-The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. With B2B collaboration, you can use Microsoft 365 groups to efficiently manage access for guest users to resources such as files, notes, calendars, and even Teams conversations. And by using the access reviews API, organizations can periodically attest to principals that have access to such groups and by extension, other resources in the organization.
+The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. With B2B collaboration, you can use Microsoft 365 groups to efficiently manage access for guests to resources such as files, notes, calendars, and even Teams conversations. And by using the access reviews API, organizations can periodically attest to principals that have access to such groups and by extension, other resources in the organization.
 
 In this tutorial, you learn how to:
 
-> * Create a recurring access review of Microsoft 365 groups with guest users.
+> * Create a recurring access review of Microsoft 365 groups with guests.
 > * 
 
 >[!NOTE]
@@ -28,19 +28,19 @@ In this tutorial, you learn how to:
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled. 
-+ A test guest user and a test Microsoft 365 group in your tenant. The guest user should be a member of the Microsoft 365 group.
++ A test guest and a test Microsoft 365 group in your tenant. The guest should be a member of the Microsoft 365 group.
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with an account that has at least the *Identity Governance Administrator* role.
 + Grant yourself the following delegated permissions: `AccessReview.ReadWrite.All`.
 
-## Step 1: Create an access review for all Microsoft 365 groups with guest users
+## Step 1: Create an access review for all Microsoft 365 groups with guests
 
 The following access review series uses following settings:
 + It's a recurring access review and reviewed quarterly.
 + The group owners are the decision makers.
-+ The review scope is limited to only Microsoft 365 groups with guest users.
++ The review scope is limited to only Microsoft 365 groups with guests.
 + It defines a user as the fallback reviewer who can review the access in case the group doesn't have any owners assigned.
 + **autoApplyDecisionsEnabled** is set to `true`. In this case, decisions are applied automatically once the reviewer completes the access review or the access review duration ends. If not enabled, a user must apply the decisions manually after the review completes.
-+ **applyActions** is set to `removeAccessApplyAction`. This action removes denied guest users from the group. The guest user can still sign in to your tenant, but will nolonger be members of the group or have the access privileges that are granted through the group.
++ **applyActions** is set to `removeAccessApplyAction`. This action removes denied guests from the group. The guest can still sign in to your tenant, but won't be members of the group or have the access privileges that are granted through the group.
 
 ### Request
 
@@ -246,7 +246,7 @@ Content-type: application/json
 
 ## Step 2: List instances of the access review
 
-The following query lists all instances of the access review definition. If there are more than one Microsoft 365 groups with guest users in your tenant, this request returns *one instance for every Microsoft 365 group with guest users*.
+The following query lists all instances of the access review definition. If there are more than one Microsoft 365 groups with guests in your tenant, this request returns *one instance for every Microsoft 365 group with guests*.
 
 ### Request
 
@@ -295,7 +295,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
-In this response, the scope includes the test group because it has a guest user. In this response, the access review instance is currently `InProgress`. Because it's a quarterly review, a new review instance is created automatically every three months and the reviewers can apply new decisions.
+In this response, the scope includes the test group because it has a guest. In this response, the access review instance is currently `InProgress`. Because it's a quarterly review, a new review instance is created automatically every three months and the reviewers can apply new decisions.
 
 <!-- {
   "blockType": "response",
@@ -431,7 +431,7 @@ Content-type: application/json
 
 ## Step 4: Clean up resources
 
-Delete the resources that you created for this tutorial — the Microsoft 365 group, the access review schedule definition, and the test guest user.
+Delete the resources that you created for this tutorial: the Microsoft 365 group, the access review schedule definition, and the test guest.
 
 ### Delete the Microsoft 365 group
 
@@ -528,7 +528,7 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 ---
 
 
-### Delete the guest user
+### Delete the guest
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20
