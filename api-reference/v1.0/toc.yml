@@ -1456,12 +1456,12 @@ items:
               - name: Cloud PC
                 href: resources/cloudpc.md
                 items:
-                  - name: EndGracePeriod
-                    href: api/cloudpc-endgraceperiod.md
-                  - name: Get cloud PC
-                    href: api/cloudpc-get.md
-                  - name: List Cloud PCs
+                  - name: List
                     href: api/virtualendpoint-list-cloudpcs.md
+                  - name: Get
+                    href: api/cloudpc-get.md
+                  - name: End grace period
+                    href: api/cloudpc-endgraceperiod.md
                   - name: Reboot
                     href: api/cloudpc-reboot.md
                   - name: Rename
@@ -7403,8 +7403,6 @@ items:
                   items:
                     - name: List
                       href: api/provisioningobjectsummary-list.md
-          - name: Cloud PC provisioning policy
-            href: resources/cloudpcprovisioningpolicy.md
           - name: Microsoft 365 usage reports
             items:
               - name: Overview
