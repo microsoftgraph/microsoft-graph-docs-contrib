@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: restore"
-description: "Restore a specific cloud PC object to a previous state from a snapshot."
+description: "Restore a specific cloudPC object to a previous state from a snapshot."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
