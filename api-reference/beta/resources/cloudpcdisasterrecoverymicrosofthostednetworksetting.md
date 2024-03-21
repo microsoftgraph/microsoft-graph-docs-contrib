@@ -22,7 +22,7 @@ Inherits from [cloudPcDisasterRecoveryNetworkSetting](cloudpcdisasterrecoverynet
 |Property|Type|Description|
 |:---|:---|:---|
 |regionName|Edm.String|Indicates the supported Azure region that the new Cloud PC is put under. Windows 365 service create and manage the underlying virtual network.|
-|regionGroup|microsoft.graph.cloudPcRegionGroup|Indicates the logic geographic group this region belongs to. Multiple regions could belong to one region group. Once a regionGroup was configured for disaster recovery, the new Cloud PC is put under one of the regions under the group based on resource status. For example, Europe region group contains North Europe and West Europe regions. Possible values are: 'default', 'Australia', 'Canada', 'usCentral', 'usEast", 'usWest', 'France', 'Germany', 'Europe', 'unitedKingdom', 'Japan', 'Asia', 'India', 'southAmerica', 'China', 'Africa', 'uae', 'euap', 'usGovernment', 'usGovrnmentDod', 'Norway', 'Switzerland' and 'southKorea'.|
+|regionGroup|microsoft.graph.cloudPcRegionGroup|Indicates the logic geographic group this region belongs to. Multiple regions could belong to one region group. Once a regionGroup was configured for disaster recovery, the new Cloud PC is put under one of the regions under the group based on resource status. For example, Europe region group contains North Europe and West Europe regions. Possible values are: `default`, `Australia`, `Canada`, `usCentral`, `usEast`, `usWest`, `France`, `Germany`, `Europe`, `unitedKingdom`, `Japan`, `Asia`, `India`, `southAmerica`, `China`, `Africa`, `uae`, `euap`, `usGovernment`, `usGovrnmentDod`, `Norway`, `Switzerland` and `southKorea`.|
 
 ## Relationships
 
