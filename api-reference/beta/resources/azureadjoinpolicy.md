@@ -3,7 +3,7 @@ title: "azureADJoinPolicy resource type"
 description: "Represents the policy scope of a Microsoft Entra tenant that controls device registration using Microsoft Entra join."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 # azureADJoinPolicy resource type
