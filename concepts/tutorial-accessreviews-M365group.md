@@ -478,5 +478,5 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 ## Related content
 
 + [Access reviews API](/graph/api/resources/accessreviewsv2-overview)
-+ [What are Microsoft Entra access reviews?](/azure/active-directory/governance/access-reviews-overview)
-+ [Review access to groups and applications in Microsoft Entra access reviews](/azure/active-directory/governance/perform-access-review)
++ [What are Microsoft Entra access reviews?](/entra/id-governance/access-reviews-overview)
++ [Review access to groups and applications in Microsoft Entra access reviews](/entra/id-governance/perform-access-review)
