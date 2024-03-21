@@ -3,7 +3,7 @@ title: "statusDetails resource type"
 description: "Describes the status of the provisioning event and the associated errors."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 

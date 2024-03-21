@@ -3,7 +3,7 @@ title: "List applicationTemplates"
 description: "Retrieve a list of applicationtemplate objects."
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

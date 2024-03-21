@@ -3,7 +3,7 @@ title: "List managedAppProtectionPolicySetItems"
 description: "List properties and relationships of the managedAppProtectionPolicySetItem objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

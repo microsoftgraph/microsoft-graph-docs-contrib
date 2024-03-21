@@ -1,9 +1,9 @@
 ---
 title: "pstnCallLogRow resource type"
 description: "Represents a row of data in the public switched telephone network (PSTN) call log."
-author: "mcm223"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

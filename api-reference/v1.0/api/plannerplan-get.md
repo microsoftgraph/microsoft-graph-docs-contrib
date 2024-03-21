@@ -3,7 +3,7 @@ title: "Get plannerPlan"
 description: "Retrieve the properties and relationships of **plannerplan** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 ---
 
 ##### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

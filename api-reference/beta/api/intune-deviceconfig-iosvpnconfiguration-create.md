@@ -3,7 +3,7 @@ title: "Create iosVpnConfiguration"
 description: "Create a new iosVpnConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

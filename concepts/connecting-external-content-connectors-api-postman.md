@@ -4,7 +4,7 @@ description: "Follow the steps in this guide to try creating a Microsoft Graph c
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Use Postman to try the Microsoft Graph connectors API

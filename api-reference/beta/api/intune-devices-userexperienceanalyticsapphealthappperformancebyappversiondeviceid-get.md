@@ -3,7 +3,7 @@ title: "Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId"
 description: "Read properties and relationships of the userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

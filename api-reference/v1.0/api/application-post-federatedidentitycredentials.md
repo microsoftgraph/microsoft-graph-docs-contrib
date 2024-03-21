@@ -3,7 +3,7 @@ title: "Create federatedIdentityCredential"
 description: "Create a new federatedIdentityCredential object for an application."
 author: "nickludwig"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

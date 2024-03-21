@@ -3,7 +3,7 @@ title: "Create androidDeviceOwnerDerivedCredentialAuthenticationConfiguration"
 description: "Create a new androidDeviceOwnerDerivedCredentialAuthenticationConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

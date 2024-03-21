@@ -2,7 +2,7 @@
 title: "reportRoot: getYammerActivityUserDetail"
 description: "Get details about Yammer activity by user."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---

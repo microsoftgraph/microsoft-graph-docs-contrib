@@ -3,7 +3,7 @@ title: "Update approvalStage"
 description: "Apply approve or deny decision on an approvalStage object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -125,7 +125,7 @@ PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

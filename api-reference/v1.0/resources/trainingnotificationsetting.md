@@ -3,7 +3,7 @@ title: "trainingNotificationSetting resource type"
 description: "Represents a training notification setting."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

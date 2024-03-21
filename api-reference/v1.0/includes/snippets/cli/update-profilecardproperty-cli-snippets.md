@@ -11,7 +11,7 @@ mgc admin people profile-card-properties patch --profile-card-property-id {profi
       "displayName": "Cost Center",\
       "localizations": [\
         {\
-          "languageTag": "nb-NO",\
+          "languageTag": "no",\
           "displayName": "Kostnadssenter"\
         }\
       ]\

@@ -3,7 +3,7 @@ title: "Add attribute (to user flow)"
 description: "Add attribute to an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.  If unsucce
 
 #### Request
 
-The following is an example of a request that adds city as an attribute for attribute collection step of an external identities self-service sign-up user flow. Before you can add an attribute to the attribute collection step, you must first [add it among the attributes to be collected in the user flow](../api/authenticationeventsflow-update.md).
+The following example shows a request that adds city as an attribute for attribute collection step of an external identities self-service sign-up user flow. Before you can add an attribute to the attribute collection step, you must first [add it among the attributes to be collected in the user flow](../api/authenticationeventsflow-update.md).
 
 # [HTTP](#tab/http)
 <!-- {
