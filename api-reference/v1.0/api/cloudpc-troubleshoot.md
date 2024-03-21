@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: troubleshoot"
-description: "Troubleshoot a specific Cloud PC."
+description: "Troubleshoot a specific Cloud PC object."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Troubleshoot a specific Cloud PC. Use this API to check the health status of the Cloud PC and the session host.
+Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object. Use this API to check the health status of the Cloud PC and the session host.
 
 ## Permissions
 
