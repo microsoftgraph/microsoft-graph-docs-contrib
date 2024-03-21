@@ -117,36 +117,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceRegistrationPolicy",
-    "id": "deviceRegistrationPolicy",
-    "displayName": "Device Registration Policy",
-    "description": "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
-    "userDeviceQuota": 50,
-    "multiFactorAuthConfiguration": "0",
-    "azureADRegistration": {
-        "isAdminConfigurable": true,
-        "allowedToRegister": {
-            "@odata.type": "#microsoft.graph.enumeratedDeviceRegistrationMembership",
-            "users": [],
-            "groups": ["3c8ef067-8b96-44de-b2ae-557dfa0f97a0"]
-      }
+  "id": "deviceRegistrationPolicy",
+  "displayName": "Device Registration Policy",
+  "description": "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
+  "userDeviceQuota": 2,
+  "multiFactorAuthConfiguration": "notRequired",
+  "azureADRegistration": {
+    "isAdminConfigurable": false,
+    "allowedToRegister": {
+      "@odata.type": "#microsoft.graph.noDeviceRegistrationMembership"
     },
-    "azureADJoin": {
-        "isAdminConfigurable": true,
-        "allowedToJoin": {
-            "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
-      },
-        "localAdmins": {
-        "enableGlobalAdmins": true,
-        "registeringUsers": {
-          "@odata.type": "#microsoft.graph.enumeratedDeviceRegistrationMembership",
-          "users": ["3c8ef067-8b96-44de-b2ae-557dfa0f97a0"],
-          "groups": []
-        }
-      }
+  },
+  "azureADJoin": {
+    "isAdminConfigurable": true,
+    "allowedToJoin": {
+      "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
     },
-    "localAdminPassword": {
-      "isEnabled": false
+    "localAdmins": {
+      "enableGlobalAdmins": true,
+      "registeringUsers": {
+        "@odata.type": "#microsoft.graph.enumeratedDeviceRegistrationMembership",
+        "users": ["3c8ef067-8b96-44de-b2ae-557dfa0f97a0"],
+        "groups": []
+      }
     }
+  },
+  "localAdminPassword": {
+    "isEnabled": false
+  }
 }
 ```
